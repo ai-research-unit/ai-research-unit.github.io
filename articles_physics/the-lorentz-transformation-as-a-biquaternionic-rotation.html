@@ -57,7 +57,7 @@
 <ol>
 <li>The <strong>boost biquaternion</strong> $\tilde{\Lambda}$, which generates the transformation.</li>
 <li>The <strong>four-velocity biquaternion</strong> $\tilde{U}$, which describes the state of motion.</li>
-<li>The <strong>rotor conjugation</strong> $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, which implements the transformation on four-vectors.</li>
+<li>The <strong>rotor conjugation</strong> $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, which implements the transformation on four-vectors.</li>
 </ol>
 <p>The article is organized as follows. First the $ict$ convention and the Euclidean form of the metric are recalled, because this is what makes the Lorentz transformation a rotation. Then the boost biquaternion is defined and its properties established. The rotor conjugation is stated and verified against the standard component formulas. The relation between the boost biquaternion and the four-velocity is derived. The group structure is identified, and the optical experiments that select this group rather than the Galilean one are recorded, with their ownership marked. Finally, the subtleties introduced by the complex nature of the rotation and by the local complex structure are discussed.</p>
 <p>The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$. Throughout, the symbol $c$ denotes the <strong>speed of light in the medium</strong>, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the <strong>vacuum speed of light</strong>, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $\mathbf{u}$ (or $\mathbf{v}$) is reserved for particle and frame velocities.</p>
@@ -81,7 +81,7 @@ $$</p>
 <h3 id="the-subtlety-of-working-over-math36">The Subtlety of Working Over $\mathbb{C}$</h3>
 <p>The statement "the Lorentz transformation is a rotation" requires care, because we are working over the complex numbers. The key points:</p>
 <p><strong>1. The rotation angle is imaginary.</strong> A boost is a rotation by an <strong>imaginary angle</strong> in a plane that mixes the time direction with a spatial direction. To see this, consider the spatial rotation rotor in the plane $(x^0, x^1)$ by angle $\theta$: it is $\cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\hat{e}_{01}$, where $\hat{e}_{01}$ is the unit bivector for the $(x^0, x^1)$ plane. Substituting $\theta = i\psi$ (imaginary angle) gives $\cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat{e}_{01}$, which is the <strong>boost</strong> rotor in the $(x^0, x^1)$ plane. The boost is therefore a rotation by an imaginary angle, and the parameter $\psi$ (the rapidity) is the "imaginary angle" of the rotation.</p>
-<p><strong>2. The bilinear form is complex.</strong> The quantity preserved by the rotation is the complex bilinear form $(x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$, which is the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. On the real slice, this form can be negative (timelike intervals), positive (spacelike intervals), or zero (null intervals).</p>
+<p><strong>2. The bilinear form is complex.</strong> The quantity preserved by the rotation is the complex bilinear form $(x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$, which is the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$. On the real slice, this form can be negative (timelike intervals), positive (spacelike intervals), or zero (null intervals).</p>
 <p><strong>3. The Euclidean form is only apparent.</strong> The Euclidean appearance of the metric $ds^2 = (x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$ is a consequence of using the imaginary coordinate $x^0 = ict$. On the real slice, the metric is still Lorentzian, because the coordinate $x^0$ is constrained to be imaginary. The "Euclidean" character is a formal device that trades the Lorentzian signature for a complex structure.</p>
 <p>The biquaternion algebra $\mathbb{B} \cong \mathrm{Cl}_{1,3}^+$ is the natural home of these complex rotations: it contains the rotor biquaternions that generate them, and its complex structure encodes the imaginary rotation angles.</p>
 <h2 id="the-boost-biquaternion">The Boost Biquaternion</h2>
@@ -110,17 +110,17 @@ $$</p>
 <p><strong>1. It lies in the Hermitian subspace $\mathbb{M}_+$.</strong> The scalar part $\cosh(\psi/2)$ is <strong>real</strong>, and the vector part $i\sinh(\psi/2)\hat{\mathbf{u}}$ is <strong>purely imaginary</strong>. So $\tilde{\Lambda} \in \mathbb{M}_+$.</p>
 <p><strong>2. It is Hermitian.</strong> Since $\tilde{\Lambda} \in \mathbb{M}_+$, its Hermitian conjugate is</p>
 <p>$$
-\tilde{\Lambda}^\dagger = \bar{\tilde{\Lambda}}^* = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}} = \tilde{\Lambda}.
+\tilde{\Lambda}^{*} = \tilde{\Lambda}^{*} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}} = \tilde{\Lambda}.
 $$</p>
 <p><strong>3. It has unit norm.</strong> The biquaternion norm is</p>
 <p>$$
-\tilde{\Lambda}\bar{\tilde{\Lambda}} = \left(\cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}\right)\left(\cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\hat{\mathbf{u}}\right) = \cosh^2\frac{\psi}{2} - \left(i\sinh\frac{\psi}{2}\right)^2\hat{\mathbf{u}}^2.
+\tilde{\Lambda}\tilde{\Lambda}^{\natural} = \left(\cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}\right)\left(\cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\hat{\mathbf{u}}\right) = \cosh^2\frac{\psi}{2} - \left(i\sinh\frac{\psi}{2}\right)^2\hat{\mathbf{u}}^2.
 $$</p>
 <p>Since $\hat{\mathbf{u}}^2 = -e_0$ and $(i\sinh\frac{\psi}{2})^2 = -\sinh^2\frac{\psi}{2}$, the second term is $-\left(-\sinh^2\frac{\psi}{2}\right)(-e_0) = -\sinh^2\frac{\psi}{2}e_0$. So</p>
 <p>$$
-\tilde{\Lambda}\bar{\tilde{\Lambda}} = \left(\cosh^2\frac{\psi}{2} - \sinh^2\frac{\psi}{2}\right)e_0 = e_0.
+\tilde{\Lambda}\tilde{\Lambda}^{\natural} = \left(\cosh^2\frac{\psi}{2} - \sinh^2\frac{\psi}{2}\right)e_0 = e_0.
 $$</p>
-<p><strong>4. It is a rotor.</strong> In geometric algebra, a <strong>rotor</strong> is an even element that generates a rotation by conjugation. The boost biquaternion $\tilde{\Lambda}$ is the biquaternion form of the Lorentz rotor, and its conjugation action $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ implements the Lorentz transformation on four-vectors.</p>
+<p><strong>4. It is a rotor.</strong> In geometric algebra, a <strong>rotor</strong> is an even element that generates a rotation by conjugation. The boost biquaternion $\tilde{\Lambda}$ is the biquaternion form of the Lorentz rotor, and its conjugation action $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ implements the Lorentz transformation on four-vectors.</p>
 <h3 id="why-the-imaginary-unit-appears">Why the Imaginary Unit Appears</h3>
 <p>The key feature of the boost biquaternion is that the vector part is <strong>purely imaginary</strong> — it is $i\sinh(\psi/2)\hat{\mathbf{u}}$, not $\sinh(\psi/2)\hat{\mathbf{u}}$. The imaginary unit $i$ is what makes the transformation a <strong>boost</strong> rather than a <strong>spatial rotation</strong>.</p>
 <p>Compare:</p>
@@ -137,52 +137,52 @@ $$</p>
 <h2 id="the-rotor-conjugation">The Rotor Conjugation</h2>
 <p>The Lorentz transformation acts on four-vectors by <strong>rotor conjugation</strong>:</p>
 <p>$$
-\tilde{Q}' = \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger.
+\tilde{Q}' = \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*}.
 $$</p>
-<p>For a pure boost, $\tilde{\Lambda}^\dagger = \tilde{\Lambda}$ (Hermitian rotor), so the conjugation reduces to $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}$. For a general Lorentz transformation (boost plus spatial rotation), $\tilde{\Lambda}$ is not Hermitian and the formula $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ must be used.</p>
+<p>For a pure boost, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$ (Hermitian rotor), so the conjugation reduces to $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}$. For a general Lorentz transformation (boost plus spatial rotation), $\tilde{\Lambda}$ is not Hermitian and the formula $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ must be used.</p>
 <p>The same conjugation applies to any four-vector, i.e., to any element of the anti-Hermitian subspace $\mathbb{M}_-$:</p>
 <p>$$
-\tilde{A}' = \tilde{\Lambda}\,\tilde{A}\,\tilde{\Lambda}^\dagger, \qquad \tilde{U}' = \tilde{\Lambda}\,\tilde{U}\,\tilde{\Lambda}^\dagger, \qquad \tilde{P}' = \tilde{\Lambda}\,\tilde{P}\,\tilde{\Lambda}^\dagger, \qquad \tilde{J}' = \tilde{\Lambda}\,\tilde{J}\,\tilde{\Lambda}^\dagger.
+\tilde{A}' = \tilde{\Lambda}\,\tilde{A}\,\tilde{\Lambda}^{*}, \qquad \tilde{U}' = \tilde{\Lambda}\,\tilde{U}\,\tilde{\Lambda}^{*}, \qquad \tilde{P}' = \tilde{\Lambda}\,\tilde{P}\,\tilde{\Lambda}^{*}, \qquad \tilde{J}' = \tilde{\Lambda}\,\tilde{J}\,\tilde{\Lambda}^{*}.
 $$</p>
 <h3 id="properties-of-the-conjugation">Properties of the Conjugation</h3>
-<p><strong>1. It preserves the subspace $\mathbb{M}_-$.</strong> If $\tilde{A} \in \mathbb{M}_-$ and $\tilde{\Lambda}$ is a unit-norm biquaternion, then $\tilde{\Lambda}\tilde{A}\tilde{\Lambda}^\dagger \in \mathbb{M}_-$.</p>
+<p><strong>1. It preserves the subspace $\mathbb{M}_-$.</strong> If $\tilde{A} \in \mathbb{M}_-$ and $\tilde{\Lambda}$ is a unit-norm biquaternion, then $\tilde{\Lambda}\tilde{A}\tilde{\Lambda}^{*} \in \mathbb{M}_-$.</p>
 <p><strong>2. It preserves the biquaternion norm.</strong> Since $\tilde{\Lambda}$ has unit norm, we have</p>
 <p>$$
-\tilde{A}'\bar{\tilde{A}'} = \tilde{\Lambda}\tilde{A}\tilde{\Lambda}^\dagger\,\overline{\tilde{\Lambda}\tilde{A}\tilde{\Lambda}^\dagger} = \tilde{A}\bar{\tilde{A}},
+\tilde{A}'\tilde{A}'^{\natural} = \tilde{\Lambda}\tilde{A}\tilde{\Lambda}^{*}\,\overline{\tilde{\Lambda}\tilde{A}\tilde{\Lambda}^{*}} = \tilde{A}\tilde{A}^{\natural},
 $$</p>
 <p>so the biquaternion norm of the transformed four-vector is the same as the biquaternion norm of the original. This is the biquaternion expression of the Lorentz invariance of the Minkowski interval.</p>
 <p><strong>3. It is a group action.</strong> The composition of two rotor conjugations is another rotor conjugation: if $\tilde{\Lambda}_1$ and $\tilde{\Lambda}_2$ are two unit-norm biquaternions, then</p>
 <p>$$
-\tilde{\Lambda}_2(\tilde{\Lambda}_1\tilde{Q}\tilde{\Lambda}_1^\dagger)\tilde{\Lambda}_2^\dagger = (\tilde{\Lambda}_2\tilde{\Lambda}_1)\tilde{Q}(\tilde{\Lambda}_2\tilde{\Lambda}_1)^\dagger,
+\tilde{\Lambda}_2(\tilde{\Lambda}_1\tilde{Q}\tilde{\Lambda}_1^{*})\tilde{\Lambda}_2^{*} = (\tilde{\Lambda}_2\tilde{\Lambda}_1)\tilde{Q}(\tilde{\Lambda}_2\tilde{\Lambda}_1)^{*},
 $$</p>
 <p>so the product of two rotors generates the composition of the two Lorentz transformations.</p>
 <h3 id="the-action-on-any-biquaternion">The Action on Any Biquaternion</h3>
 <p>The rotor conjugation is written above for four-vectors, and it is worth stating that it is defined on <strong>every</strong> biquaternion, because that is what the field-theory articles need. Put</p>
 <p>$$
-\Phi_{\tilde{\Lambda}}(\tilde{B}) := \tilde{\Lambda}\,\tilde{B}\,\tilde{\Lambda}^{\dagger}
+\Phi_{\tilde{\Lambda}}(\tilde{B}) := \tilde{\Lambda}\,\tilde{B}\,\tilde{\Lambda}^{*}
 \qquad\text{for any } \tilde{B} \in \mathbb{B}.
 $$</p>
-<p>Three properties follow from the fact that $\dagger$ is an involution and reverses products, and each was checked by direct expansion.</p>
-<p><strong>It preserves both sectors.</strong> If $\tilde{B}^{\dagger} = \pm\tilde{B}$ then</p>
+<p>Three properties follow from the fact that ${}^{*}$ is an involution and reverses products, and each was checked by direct expansion.</p>
+<p><strong>It preserves both sectors.</strong> If $\tilde{B}^{*} = \pm\tilde{B}$ then</p>
 <p>$$
-\bigl(\tilde{\Lambda}\tilde{B}\tilde{\Lambda}^{\dagger}\bigr)^{\dagger}
-= \tilde{\Lambda}\,\tilde{B}^{\dagger}\,\tilde{\Lambda}^{\dagger}
-= \pm\,\tilde{\Lambda}\tilde{B}\tilde{\Lambda}^{\dagger},
+\bigl(\tilde{\Lambda}\tilde{B}\tilde{\Lambda}^{*}\bigr)^{\dagger}
+= \tilde{\Lambda}\,\tilde{B}^{*}\,\tilde{\Lambda}^{*}
+= \pm\,\tilde{\Lambda}\tilde{B}\tilde{\Lambda}^{*},
 $$</p>
 <p>so $\Phi_{\tilde{\Lambda}}$ maps $\mathbb{M}_-$ to itself, as the article already states for four-vectors, and equally maps $\mathbb{M}_+$ to itself. The A-field biquaternions of the electro-gravimagnetic programme therefore all transform by the same formula: the potential and the charge–current lie in $\mathbb{M}_-$, and the field strength and the power–force lie in $\mathbb{M}_+$, so each is carried to an element of its own sector by the conjugation whose component form that programme works out boost by boost. No second transformation law is needed, which is the reason the programme's transformation lemma agrees with the corpus's rotor action term for term.</p>
 <p><strong>It is not an algebra automorphism.</strong> For a product,</p>
 <p>$$
-\Phi_{\tilde{\Lambda}}(\tilde{B}\tilde{C}) = \tilde{\Lambda}\tilde{B}\tilde{C}\tilde{\Lambda}^{\dagger},
+\Phi_{\tilde{\Lambda}}(\tilde{B}\tilde{C}) = \tilde{\Lambda}\tilde{B}\tilde{C}\tilde{\Lambda}^{*},
 \qquad
-\Phi_{\tilde{\Lambda}}(\tilde{B})\,\Phi_{\tilde{\Lambda}}(\tilde{C}) = \tilde{\Lambda}\tilde{B}\,\tilde{\Lambda}^{\dagger}\tilde{\Lambda}\,\tilde{C}\tilde{\Lambda}^{\dagger},
+\Phi_{\tilde{\Lambda}}(\tilde{B})\,\Phi_{\tilde{\Lambda}}(\tilde{C}) = \tilde{\Lambda}\tilde{B}\,\tilde{\Lambda}^{*}\tilde{\Lambda}\,\tilde{C}\tilde{\Lambda}^{*},
 $$</p>
-<p>and these differ by the insertion of $\tilde{\Lambda}^{\dagger}\tilde{\Lambda}$. They agree exactly when $\tilde{\Lambda}^{\dagger} = \tilde{\Lambda}^{-1}$, that is, when $\tilde{\Lambda}$ is a <strong>real</strong> quaternion, which is the case of a pure spatial rotation. For a boost the rotor is Hermitian, $\tilde{\Lambda}^{\dagger} = \tilde{\Lambda}$, so $\tilde{\Lambda}^{\dagger}\tilde{\Lambda} = \tilde{\Lambda}^{2} \neq 1$ and the map is not multiplicative. The conjugation is a $\dagger$-conjugation, not the inner automorphism $\tilde{B}\mapsto\tilde{\Lambda}\tilde{B}\tilde{\Lambda}^{-1}$.</p>
-<p><strong>It does not fix the center.</strong> The same fact shows where the formula must not be used. On a central scalar, $\Phi_{\tilde{\Lambda}}(b\,e_0) = b\,\tilde{\Lambda}\tilde{\Lambda}^{\dagger} = b\,\tilde{\Lambda}^2$, which is not central — for a boost it has a vector part proportional to $\hat{\mathbf{u}}$. Central elements are therefore not carried to central elements, and the conjugation is meaningful on the sectors, whose elements are the physical quantities that transform, rather than on the algebra as a whole. This is consistent with the four-vector reading: the invariant object of the conjugation is the biquaternion norm, and the norm is quadratic in a sector element, not linear in an arbitrary one.</p>
+<p>and these differ by the insertion of $\tilde{\Lambda}^{*}\tilde{\Lambda}$. They agree exactly when $\tilde{\Lambda}^{*} = \tilde{\Lambda}^{-1}$, that is, when $\tilde{\Lambda}$ is a <strong>real</strong> quaternion, which is the case of a pure spatial rotation. For a boost the rotor is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, so $\tilde{\Lambda}^{*}\tilde{\Lambda} = \tilde{\Lambda}^{2} \neq 1$ and the map is not multiplicative. The conjugation is a ${}^{*}$-conjugation, not the inner automorphism $\tilde{B}\mapsto\tilde{\Lambda}\tilde{B}\tilde{\Lambda}^{-1}$.</p>
+<p><strong>It does not fix the center.</strong> The same fact shows where the formula must not be used. On a central scalar, $\Phi_{\tilde{\Lambda}}(b\,e_0) = b\,\tilde{\Lambda}\tilde{\Lambda}^{*} = b\,\tilde{\Lambda}^2$, which is not central — for a boost it has a vector part proportional to $\hat{\mathbf{u}}$. Central elements are therefore not carried to central elements, and the conjugation is meaningful on the sectors, whose elements are the physical quantities that transform, rather than on the algebra as a whole. This is consistent with the four-vector reading: the invariant object of the conjugation is the biquaternion norm, and the norm is quadratic in a sector element, not linear in an arbitrary one.</p>
 <h3 id="verification-against-component-formulas">Verification Against Component Formulas</h3>
 <p>The rotor conjugation can be verified against the standard component formulas for a Lorentz boost. Take a four-potential $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$, and apply the rotor conjugation with $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$.</p>
 <p>The scalar part of $\tilde{A}'$ is</p>
 <p>$$
-\mathrm{Sc}(\tilde{\Lambda}\tilde{A}\tilde{\Lambda}^\dagger) = i\gamma\left(\frac{\phi}{c} - \frac{\mathbf{u}\cdot\mathbf{A}}{c}\right) = i\frac{\phi'}{c},
+\mathrm{Sc}(\tilde{\Lambda}\tilde{A}\tilde{\Lambda}^{*}) = i\gamma\left(\frac{\phi}{c} - \frac{\mathbf{u}\cdot\mathbf{A}}{c}\right) = i\frac{\phi'}{c},
 $$</p>
 <p>where the standard relations $\cosh\psi = \gamma$ and $\sinh\psi = \gamma u/c$ have been used. This gives</p>
 <p>$$
@@ -194,7 +194,7 @@ $$</p>
 \mathbf{A}' = \mathbf{A} + \frac{\gamma - 1}{u^2}(\mathbf{u}\cdot\mathbf{A})\mathbf{u} - \gamma\frac{\phi}{c^2}\mathbf{u},
 $$</p>
 <p>which is the standard Lorentz transformation of the vector potential, including the longitudinal projection term and the contribution from the scalar potential.</p>
-<p>So the rotor conjugation $\tilde{A}' = \tilde{\Lambda}\tilde{A}\tilde{\Lambda}^\dagger$ reproduces the standard Lorentz transformation of the four-potential.</p>
+<p>So the rotor conjugation $\tilde{A}' = \tilde{\Lambda}\tilde{A}\tilde{\Lambda}^{*}$ reproduces the standard Lorentz transformation of the four-potential.</p>
 <h2 id="relating-the-boost-biquaternion-to-the-four-velocity">Relating the Boost Biquaternion to the Four-Velocity</h2>
 <p>The two biquaternions $\tilde{U}$ (four-velocity) and $\tilde{\Lambda}$ (boost) are distinct but related. Given the four-velocity</p>
 <p>$$
@@ -202,13 +202,13 @@ $$</p>
 $$</p>
 <p>the associated boost biquaternion is</p>
 <p>$$
-\tilde{\Lambda} = \sqrt{-\frac{i}{c}\bar{\tilde{U}}},
+\tilde{\Lambda} = \sqrt{-\frac{i}{c}\tilde{U}^{\natural}},
 $$</p>
-<p>where the square root is the biquaternion square root (multivalued by sign) and $\bar{\tilde{U}} = \gamma(ic\,e_0 - \mathbf{v})$ is the quaternion conjugate.</p>
+<p>where the square root is the biquaternion square root (multivalued by sign) and $\tilde{U}^{\natural} = \gamma(ic\,e_0 - \mathbf{v})$ is the quaternion conjugate.</p>
 <h3 id="derivation">Derivation</h3>
-<p>The derivation is a direct computation. Define the unit four-velocity $\tilde{u} = \tilde{U}/c = \gamma(i\,e_0 + \mathbf{v}/c)$, so that $\bar{\tilde{u}} = \gamma(i\,e_0 - \mathbf{v}/c)$. Then</p>
+<p>The derivation is a direct computation. Define the unit four-velocity $\tilde{u} = \tilde{U}/c = \gamma(i\,e_0 + \mathbf{v}/c)$, so that $\tilde{u}^{\natural} = \gamma(i\,e_0 - \mathbf{v}/c)$. Then</p>
 <p>$$
--i\bar{\tilde{u}} = -i\gamma(i\,e_0 - \mathbf{v}/c) = \gamma\,e_0 + i\gamma\frac{\mathbf{v}}{c}.
+-i\tilde{u}^{\natural} = -i\gamma(i\,e_0 - \mathbf{v}/c) = \gamma\,e_0 + i\gamma\frac{\mathbf{v}}{c}.
 $$</p>
 <p>On the other hand, the square of the boost biquaternion is</p>
 <p>$$
@@ -217,24 +217,24 @@ $$</p>
 <p>where the identification $\hat{\mathbf{u}} = \hat{\mathbf{v}}$ (boost direction aligned with particle velocity) and the relations $\cosh\psi = \gamma$, $\sinh\psi = \gamma v/c$ have been used.</p>
 <p>Comparing the two expressions,</p>
 <p>$$
-\tilde{\Lambda}^2 = -i\bar{\tilde{u}} = -\frac{i}{c}\bar{\tilde{U}},
+\tilde{\Lambda}^2 = -i\tilde{u}^{\natural} = -\frac{i}{c}\tilde{U}^{\natural},
 $$</p>
 <p>and hence</p>
 <p>$$
-\tilde{\Lambda} = \sqrt{-\frac{i}{c}\bar{\tilde{U}}}.
+\tilde{\Lambda} = \sqrt{-\frac{i}{c}\tilde{U}^{\natural}}.
 $$</p>
 <h3 id="interpretation">Interpretation</h3>
-<p>The formula $\tilde{\Lambda} = \sqrt{-i\bar{\tilde{U}}/c}$ says:</p>
+<p>The formula $\tilde{\Lambda} = \sqrt{-i\tilde{U}^{\natural}/c}$ says:</p>
 <ul>
 <li>The <strong>four-velocity</strong> $\tilde{U}$ describes the state of motion of a particle or frame.</li>
 <li>The <strong>boost biquaternion</strong> $\tilde{\Lambda}$ is the "square root" of the (quaternion conjugate of the) unit four-velocity, up to a factor of $-i/c$.</li>
 </ul>
-<p>The square root is <strong>multivalued by sign</strong>: both $\tilde{\Lambda}$ and $-\tilde{\Lambda}$ square to the same biquaternion. The two branches implement the <strong>same</strong> Lorentz transformation, since $\tilde{\Lambda}$ and $-\tilde{\Lambda}$ differ by the kernel element $-1$ of the two-to-one map $SL(2,\mathbb{C}) \to SO^+(1,3)$; the boost by $-\psi$ is a different element, the quaternion conjugate $\bar{\tilde{\Lambda}}$. The conventional branch is selected by requiring the real scalar part of $\tilde{\Lambda}$ to be positive, i.e., $\cosh(\psi/2) > 0$.</p>
+<p>The square root is <strong>multivalued by sign</strong>: both $\tilde{\Lambda}$ and $-\tilde{\Lambda}$ square to the same biquaternion. The two branches implement the <strong>same</strong> Lorentz transformation, since $\tilde{\Lambda}$ and $-\tilde{\Lambda}$ differ by the kernel element $-1$ of the two-to-one map $SL(2,\mathbb{C}) \to SO^+(1,3)$; the boost by $-\psi$ is a different element, the quaternion conjugate $\tilde{\Lambda}^{\natural}$. The conventional branch is selected by requiring the real scalar part of $\tilde{\Lambda}$ to be positive, i.e., $\cosh(\psi/2) > 0$.</p>
 <h3 id="the-closed-form-rotor-and-the-bisector-property">The Closed-Form Rotor and the Bisector Property</h3>
 <p>For a <strong>simple</strong> Lorentz rotation — a boost, or a rotation, or in general a transformation in a single non-null plane — the rotor can be recovered from the transformation of one vector in the plane, and the recovery has a clean closed form worth recording because it is used in the paravector computation of the boost of a wave (<em>Paravectors and the Geometry of Spacetime</em>, <em>The Boost of a Plane Wave as a Rotation and a Dilation</em>).</p>
 <p>Let $p$ be a non-null Hermitian element lying in the plane of the rotation, so that it commutes with the rotor, and let</p>
 <p>$$
-r \;=\; \tilde{\Lambda}\,p\,\tilde{\Lambda}^\dagger \;=\; \tilde{\Lambda}^2\,p
+r \;=\; \tilde{\Lambda}\,p\,\tilde{\Lambda}^{*} \;=\; \tilde{\Lambda}^2\,p
 $$</p>
 <p>be its image, the second form using the commutation. Then</p>
 <p>$$
@@ -251,15 +251,15 @@ $$</p>
 <h2 id="the-group-structure">The Group Structure</h2>
 <p>The <strong>unit-norm biquaternions</strong> form a group under multiplication. The general element is</p>
 <p>$$
-\tilde{Q} \in \{\tilde{Q} \in \mathbb{B} : \tilde{Q}\bar{\tilde{Q}} = e_0\},
+\tilde{Q} \in \{\tilde{Q} \in \mathbb{B} : \tilde{Q}\tilde{Q}^{\natural} = e_0\},
 $$</p>
 <p>which under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ is the group $SL(2, \mathbb{C})$, the group of $2 \times 2$ complex matrices with determinant $1$. The map from $SL(2, \mathbb{C})$ to the proper orthochronous Lorentz group $SO^+(1,3)$ is $2$-to-$1$, exactly as in the standard matrix formulation.</p>
-<p><strong>Pure boosts</strong> are the <strong>Hermitian</strong> elements of $SL(2,\mathbb{C})$: those satisfying $\tilde{\Lambda}^\dagger = \tilde{\Lambda}$. They do <strong>not</strong> form a subgroup of $SL(2,\mathbb{C})$, because the product of two non-collinear boosts is generally a boost plus a spatial rotation (the Thomas–Wigner rotation), which is not Hermitian. So the set of pure boosts is a symmetric submanifold of $SL(2,\mathbb{C})$, but not a group.</p>
+<p><strong>Pure boosts</strong> are the <strong>Hermitian</strong> elements of $SL(2,\mathbb{C})$: those satisfying $\tilde{\Lambda}^{*} = \tilde{\Lambda}$. They do <strong>not</strong> form a subgroup of $SL(2,\mathbb{C})$, because the product of two non-collinear boosts is generally a boost plus a spatial rotation (the Thomas–Wigner rotation), which is not Hermitian. So the set of pure boosts is a symmetric submanifold of $SL(2,\mathbb{C})$, but not a group.</p>
 <p><strong>Pure spatial rotations</strong> are the elements with <strong>real vector part</strong> (i.e., lying in $\mathbb{H}_{\mathbb{B}}$, the real quaternion subalgebra), satisfying $\tilde{R} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat{\mathbf{n}}$ with $\hat{\mathbf{n}}^2 = -e_0$. These form the subgroup $SU(2) \subset SL(2,\mathbb{C})$.</p>
 <p>The general Lorentz transformation is the product of a boost and a rotation, and corresponds to a general element of $SL(2,\mathbb{C})$.</p>
 <h2 id="active-passive-and-relative-transformations-the-reciprocal-basis">Active, Passive and Relative Transformations; the Reciprocal Basis</h2>
 <p>The word "transformation" hides three different operations, and the algebra states all three with the same rotor. It is worth fixing the three readings, because the source of the paravector literature distinguishes them and the distinction is not visible in the component formulas.</p>
-<p><strong>Active.</strong> The object is transformed and the frame is held fixed: a four-vector $\tilde{Q}$ is carried to $\tilde{Q}' = \tilde{L}\tilde{Q}\tilde{L}^{\dagger}$, with $\tilde{L}$ the rotor of the operation. <strong>Passive.</strong> The frame is changed and the object is fixed: the components of the same object in the new frame are those of $\tilde{L}^{-1}\tilde{Q}\tilde{L}^{-\dagger}$, the inverse conjugation. <strong>Relative.</strong> Two frames are related by a rotor that is the ratio of their eigenspinors: if two worldlines carry eigenspinors $\tilde{\Lambda}_1$ and $\tilde{\Lambda}_2$ (in the sense of <em>The Eigenspinor: The Lorentz Rotor as a Function of Proper Time</em>), then the rotor</p>
+<p><strong>Active.</strong> The object is transformed and the frame is held fixed: a four-vector $\tilde{Q}$ is carried to $\tilde{Q}' = \tilde{L}\tilde{Q}\tilde{L}^{*}$, with $\tilde{L}$ the rotor of the operation. <strong>Passive.</strong> The frame is changed and the object is fixed: the components of the same object in the new frame are those of $\tilde{L}^{-1}\tilde{Q}\tilde{L}^{-{}^{*}}$, the inverse conjugation. <strong>Relative.</strong> Two frames are related by a rotor that is the ratio of their eigenspinors: if two worldlines carry eigenspinors $\tilde{\Lambda}_1$ and $\tilde{\Lambda}_2$ (in the sense of <em>The Eigenspinor: The Lorentz Rotor as a Function of Proper Time</em>), then the rotor</p>
 <p>$$
 \tilde{R}_{2\leftarrow1} = \tilde{\Lambda}_2\tilde{\Lambda}_1^{-1}
 $$</p>
@@ -274,9 +274,9 @@ $$</p>
 <p>$$
 q'^{\mu} = \sum_{\nu} L^{\mu}{}_{\nu}\, q^{\nu},
 \qquad
-L^{\mu}{}_{\nu} = \mathrm{Sc}\!\left(\mathcal{E}^{\mu}\,\tilde{L}\,\mathcal{E}_{\nu}\,\tilde{L}^{\dagger}\right),
+L^{\mu}{}_{\nu} = \mathrm{Sc}\!\left(\mathcal{E}^{\mu}\,\tilde{L}\,\mathcal{E}_{\nu}\,\tilde{L}^{*}\right),
 $$</p>
-<p>and the matrix $L^{\mu}{}_{\nu}$ is the ordinary Lorentz transformation matrix in the basis. The identity is algebraic and was checked numerically: for a hundred random boosts, $\mathrm{Sc}(\mathcal{E}^{\mu}\mathcal{E}_{\nu}) = \delta^{\mu}_{\ \nu}$ exactly and the component formula agrees with the direct computation of $\tilde{L}\tilde{Q}\tilde{L}^{\dagger}$ to machine precision.</p>
+<p>and the matrix $L^{\mu}{}_{\nu}$ is the ordinary Lorentz transformation matrix in the basis. The identity is algebraic and was checked numerically: for a hundred random boosts, $\mathrm{Sc}(\mathcal{E}^{\mu}\mathcal{E}_{\nu}) = \delta^{\mu}_{\ \nu}$ exactly and the component formula agrees with the direct computation of $\tilde{L}\tilde{Q}\tilde{L}^{*}$ to machine precision.</p>
 <p>This is the sense in which the framework "raises and lowers no indices": the metric sits in the coefficients and in the dual basis, and the transformation law is a matrix multiplication without a metric tensor in sight. The reciprocal basis is the device that makes the component formula look ordinary while the geometry stays in the algebra.</p>
 <h2 id="what-fixes-the-transformation-the-experimental-route">What Fixes the Transformation: The Experimental Route</h2>
 <p>Everything so far derives the transformation; nothing so far says what <em>selects</em> it. The algebra of $\mathbb{B}$ contains real and imaginary rotation angles alike, so it expresses a boost rotor with a real angle as readily as one with an imaginary angle, and the choice between them is not a choice the algebra makes. It was made by experiment. This section records the experiments and states their ownership, because a derivation that never says what fixes it invites the reader to mistake the derivation for the evidence.</p>
@@ -343,7 +343,7 @@ $$</p>
 <p><strong>The rotor has an imaginary vector part.</strong> The boost biquaternion $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ has a purely imaginary vector part. In contrast, a spatial rotation rotor has a real vector part.</p>
 </li>
 <li>
-<p><strong>The bilinear form is complex.</strong> The quantity preserved by the rotation is not the real Euclidean norm (which is positive-definite), but the <strong>complex bilinear form</strong> $(x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$, which is the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. On the real slice, this form can be negative, positive, or zero.</p>
+<p><strong>The bilinear form is complex.</strong> The quantity preserved by the rotation is not the real Euclidean norm (which is positive-definite), but the <strong>complex bilinear form</strong> $(x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$, which is the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$. On the real slice, this form can be negative, positive, or zero.</p>
 </li>
 </ol>
 <h3 id="the-euclidean-form-is-only-apparent">The Euclidean Form Is Only Apparent</h3>
@@ -356,7 +356,7 @@ $$</p>
 <h2 id="open-questions">Open Questions</h2>
 <ol>
 <li>
-<p><strong>Higher-rank tensors.</strong> The rotor conjugation $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ applies to four-vectors. How does the biquaternion formulation extend to higher-rank tensors, such as the field-strength tensor $F^{\mu\nu}$ and the energy–momentum tensor $T^{\mu\nu}$?</p>
+<p><strong>Higher-rank tensors.</strong> The rotor conjugation $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ applies to four-vectors. How does the biquaternion formulation extend to higher-rank tensors, such as the field-strength tensor $F^{\mu\nu}$ and the energy–momentum tensor $T^{\mu\nu}$?</p>
 </li>
 <li>
 <p><strong>Spinor transformations.</strong> A spinor transforms under the Lorentz group by a <strong>one-sided</strong> multiplication, not by a rotor conjugation. What is the precise biquaternion form of the spinor transformation, and how does it relate to the Dirac equation?</p>
@@ -375,7 +375,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The Lorentz transformation in biquaternionic form is a <strong>rotation</strong> in the complexified four-dimensional space, implemented by the <strong>rotor conjugation</strong></p>
 <p>$$
-\tilde{Q}' = \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger,
+\tilde{Q}' = \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*},
 $$</p>
 <p>where $\tilde{\Lambda}$ is the <strong>boost biquaternion</strong></p>
 <p>$$
@@ -384,7 +384,7 @@ $$</p>
 <p>For a pure boost, $\tilde{\Lambda} \in \mathbb{M}_+$ (Hermitian, unit norm). The rapidity $\psi$ is related to the velocity $\mathbf{u}$ by $\tanh\psi = u/c$.</p>
 <p>The <strong>four-velocity biquaternion</strong> $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$, which lives in $\mathbb{M}_-$, is related to the boost biquaternion by</p>
 <p>$$
-\tilde{\Lambda} = \sqrt{-\frac{i}{c}\bar{\tilde{U}}},
+\tilde{\Lambda} = \sqrt{-\frac{i}{c}\tilde{U}^{\natural}},
 $$</p>
 <p>the square root being multivalued by sign, with the physical branch selected by $\mathrm{Sc}(\tilde{\Lambda}) > 0$.</p>
 <p>The rotation is <strong>complex</strong> in the sense that the rotation angle (the rapidity) is imaginary in the $ict$ convention. The Euclidean character of the metric is only apparent: the real slice on which the Lorentz transformations act is a complex subspace of $\mathbb{C}^4$, not a real Euclidean space. The Lorentz group $SO(1,3)$ is the subgroup of the complex rotation group $SO(4,\mathbb{C})$ that preserves this slice.</p>
@@ -448,7 +448,7 @@ $$</p>
 <td>Unit vector in boost direction</td>
 </tr>
 <tr>
-<td>$\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$</td>
+<td>$\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$</td>
 <td>Rotor conjugation</td>
 </tr>
 </tbody>

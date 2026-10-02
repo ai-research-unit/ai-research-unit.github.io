@@ -55,7 +55,7 @@
 <p>Because the quaternion algebra is a division algebra, every non-zero element is invertible and the spectrum of a single quaternion is easy to describe; but because it is non-commutative, the left and right eigenvalue problems for quaternionic matrices differ, and the word "spectrum" splits into several inequivalent sets. This article fixes the definitions, describes the spectrum of a quaternion and of a quaternionic matrix, proves the Cayley–Hamilton identity and describes the trace and determinant functionals, classifies the similarity classes and states the eigenvalue dichotomy, computes the eigenspaces, treats the resolvent and the spectral radius, and presents the S-spectrum and the quaternionic spectral theorem. It is the quaternion member of the family's spectral pair; its counterpart is the biquaternion case, where the scalars are central and the spectrum is an ordinary complex two-point set, and the relation between the two is that the biquaternion spectrum is the slice of the quaternion S-sphere.</p>
 <p>The article uses <em>Quaternion Algebra</em> and <em>Quaternion Norm and Invertibility</em> for the algebra, the quaternion norm and invertibility, <em>Quaternion Roots of Minus One</em> for the sphere of imaginary units, <em>Quaternion Automorphisms and Derivations</em> for conjugation and similarity, and <em>Quaternion Exponential and Lie Group Structure</em> for the exponential. The standard results on quaternionic matrices that are not computed here are quoted from the literature and named as standard.</p>
 <p>The corpus's default base is a commutative ring with identity; the spectrum requires a division ring and a topology, so scalars lie in $\mathbb{H}$ or $\mathbb{C}$ and everything below is over $\mathbb{R}$.</p>
-<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = q_0+q_1e_1+q_2e_2+q_3e_3$, with conjugate $\bar{\tilde q}$, scalar part $\mathrm{Sc}\tilde q = q_0$, vector part $\mathrm{Vect}\tilde q = \mathbf{q}$, norm $N(\tilde q) = \tilde q\bar{\tilde q}$ and modulus $|\tilde q| = \sqrt{N(\tilde q)}$. The unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, and $M_n(\mathbb{H})$ acts on column vectors in $\mathbb{H}^n$.</p>
+<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = q_0+q_1e_1+q_2e_2+q_3e_3$, with conjugate $\tilde{q}^{\natural}$, scalar part $\mathrm{Sc}\tilde q = q_0$, vector part $\mathrm{Vect}\tilde q = \mathbf{q}$, norm $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ and modulus $|\tilde q| = \sqrt{N(\tilde q)}$. The unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, and $M_n(\mathbb{H})$ acts on column vectors in $\mathbb{H}^n$.</p>
 <h2 id="the-spectrum-of-a-quaternion">The Spectrum of a Quaternion</h2>
 <p><strong>Definition.</strong> The <strong>spectrum</strong> of a quaternion $\tilde q$ in the algebra is $\sigma_{\mathbb{H}}(\tilde q) = \{\lambda\in\mathbb{H} : \tilde q-\lambda \text{ is not invertible}\}$.</p>
 <p><strong>Theorem.</strong> For every quaternion $\tilde q$, $\sigma_{\mathbb{H}}(\tilde q) = \{\tilde q\}$; the algebra is a division algebra, so $\tilde q-\lambda$ fails to be invertible only when $\tilde q-\lambda = 0$.</p>
@@ -95,7 +95,7 @@ $$</p>
 <h2 id="cayleyhamilton-and-the-trace-and-norm-functionals">Cayley–Hamilton and the Trace and Norm Functionals</h2>
 <p><strong>Definition.</strong> The <strong>trace functional</strong> and <strong>determinant functional</strong> — more precisely the <strong>reduced trace</strong> and <strong>reduced norm</strong> — of a quaternion are</p>
 <p>$$
-T(\tilde q) = 2\mathrm{Sc}\tilde q = 2q_0, \qquad D(\tilde q) = N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2+|\mathbf{q}|^2 .
+T(\tilde q) = 2\mathrm{Sc}\tilde q = 2q_0, \qquad D(\tilde q) = N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+|\mathbf{q}|^2 .
 $$</p>
 <p><strong>Theorem (Cayley–Hamilton for a quaternion).</strong> Every quaternion satisfies</p>
 <p>$$
@@ -167,7 +167,7 @@ $$</p>
 <p>The definition rests on the identity $s^2-2\operatorname{Re}(s)s+|s|^2 = 0$, which holds because $s-\operatorname{Re}(s)$ is pure.</p>
 <p><strong>Theorem.</strong> For every $M\in M_n(\mathbb{H})$ the S-spectrum equals the right spectrum, $\sigma_S(M) = \sigma_R(M)$; hence it is a finite union of similarity classes. For a single quaternion, $\sigma_S([\tilde q]) = [\tilde q]$, a point for real $\tilde q$ and a two-sphere otherwise.</p>
 <p><em>Proof.</em> If $Mv = vs$ then $(M^2-2\operatorname{Re}(s)M+|s|^2I)v = v(s^2-2\operatorname{Re}(s)s+|s|^2) = 0$, so $\sigma_R(M)\subseteq\sigma_S(M)$; the reverse inclusion and the identification with the classes are standard (Rodman 2014). The single-quaternion statement is the sphere of eigenvalues computed above.</p>
-<p><strong>Definition.</strong> $M$ is <strong>normal</strong> if $MM^{*} = M^{*}M$, where ${}^{*}$ is the entrywise quaternion conjugation combined with transposition; <strong>Hermitian</strong> if $M^{*} = M$, and <strong>unitary</strong> if $M^{*}M = I$.</p>
+<p><strong>Definition.</strong> $M$ is <strong>normal</strong> if $MM^{*} = M^{*}M$, where $\bar{\cdot}$ is the entrywise quaternion conjugation combined with transposition; <strong>Hermitian</strong> if $M^{*} = M$, and <strong>unitary</strong> if $M^{*}M = I$.</p>
 <p><strong>Theorem (quaternionic spectral theorem).</strong> If $M\in M_n(\mathbb{H})$ is normal then there is a unitary $U$ and complex numbers $\lambda_1,\dots,\lambda_n$ in a fixed slice with</p>
 <p>$$
 M = U\,\operatorname{diag}(\lambda_1,\dots,\lambda_n)\,U^{*},
@@ -251,7 +251,7 @@ $$</p>
 <td>Quaternion; $q_0 = \mathrm{Sc}\tilde q$, $\mathbf{q} = \mathrm{Vect}\tilde q$</td>
 </tr>
 <tr>
-<td>$N(\tilde q) = \tilde q\bar{\tilde q}$, $\lvert \tilde q\rvert = \sqrt{N(\tilde q)}$</td>
+<td>$N(\tilde q) = \tilde q\tilde{q}^{\natural}$, $\lvert \tilde q\rvert = \sqrt{N(\tilde q)}$</td>
 <td>Quaternion norm and modulus</td>
 </tr>
 <tr>

@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article is the analysis slot of the octonion system. It sets up the differential calculus of octonion-valued functions of an octonion variable: the Cauchy–Riemann operator and its conjugate, their factorisation of the Laplacian, the class of monogenic functions, the exact form taken by the product rule when the algebra is not associative, and the consequences of that defect for the algebraic structure of the class of monogenic functions.</p>
 <p>The article is the octonion member of the analysis slots of this Part, and it follows the model of the analysis of the quaternions and the biquaternions and of the split biquaternions: <em>Quaternion Analysis</em> and <em>Split-Biquaternion Analysis</em>, with the differential operators and the integration of <em>Clifford Modules and the Twisted Cauchy–Riemann Operator</em>. The general theory of hypercomplex analysis in the associative case is that of the Part III companions <em>Clifford Analysis</em>, <em>Clifford Modules and the Twisted Cauchy–Riemann Operator</em> and <em>Clifford Analysis in Several Variables</em>; the present article is the octonion case and states where non-associativity changes the theory rather than restating the general theory. Integration, the special functions and the harmonic analysis are not covered here.</p>
-<p><strong>Conventions.</strong> As throughout the octonion articles, $\mathbb{O}$ has basis $e_0 = 1,e_1,\dots,e_7$ with $e_k^2 = -e_0$ for $k\geq1$, $x = \sum_{k=0}^{7}x_ke_k$ is a variable octonion, $\partial_k = \partial/\partial x_k$, the conjugation is $\bar x$ with $\overline{xy} = \bar y\bar x$, the inner product is $\langle x,y\rangle = \operatorname{Sc}(x\bar y)$, and $\lvert x\rvert^2 = \langle x,x\rangle$ is the norm. The associator is $[x,y,z] = (xy)z - x(yz)$ and the commutator $[x,y] = xy - yx$. Functions are octonion-valued on a domain of $\mathbb{R}^8$ identified with $\mathbb{O}$ by the basis.</p>
+<p><strong>Conventions.</strong> As throughout the octonion articles, $\mathbb{O}$ has basis $e_0 = 1,e_1,\dots,e_7$ with $e_k^2 = -e_0$ for $k\geq1$, $x = \sum_{k=0}^{7}x_ke_k$ is a variable octonion, $\partial_k = \partial/\partial x_k$, the conjugation is $x^{\natural}$ with $(xy)^{\natural} = y^{\natural} x^{\natural}$, the inner product is $\langle x,y\rangle = \operatorname{Sc}(x y^{\natural})$, and $\lvert x\rvert^2 = \langle x,x\rangle$ is the norm. The associator is $[x,y,z] = (xy)z - x(yz)$ and the commutator $[x,y] = xy - yx$. Functions are octonion-valued on a domain of $\mathbb{R}^8$ identified with $\mathbb{O}$ by the basis.</p>
 <h2 id="the-cauchyriemann-operator">The Cauchy–Riemann Operator</h2>
 <h3 id="definition-and-factorisation">Definition and Factorisation</h3>
 <p><strong>Definition.</strong> The <strong>Cauchy–Riemann operator</strong> of the octonion algebra is</p>
@@ -73,7 +73,7 @@ $$</p>
 <h3 id="the-fundamental-solution">The Fundamental Solution</h3>
 <p><strong>Definition.</strong> The <strong>fundamental solution</strong> of $D$ is the function</p>
 <p>$$
-E(x) = \frac{1}{\omega_7}\frac{\bar x}{\lvert x\rvert^8}, \qquad x\neq0,
+E(x) = \frac{1}{\omega_7}\frac{x^{\natural}}{\lvert x\rvert^8}, \qquad x\neq0,
 $$</p>
 <p>where $\omega_7 = \operatorname{vol}(S^7) = \pi^4/3$ is the volume of the unit sphere.</p>
 <p><strong>Theorem.</strong> The function $E$ is left-monogenic and right-monogenic on $\mathbb{R}^8\setminus\{0\}$, homogeneous of degree $1 - 8 = -7$, and it is the fundamental solution of $D$: in the sense of distributions,</p>
@@ -81,8 +81,8 @@ $$</p>
 DE = E D = \delta_0 ,
 $$</p>
 <p>and $\Delta_8E = 0$ away from the origin.</p>
-<p><em>Proof.</em> Away from the origin, $D(\bar x/\lvert x\rvert^8) = 0$ and $(\bar x/\lvert x\rvert^8)D = 0$, by the same computation as in the associative Clifford case: $\bar x$ is the product of seven-tuples of basis elements... the identity is the one used to prove that $\bar x/\lvert x\rvert^n$ is the kernel of the Cauchy–Riemann operator in $\mathbb{R}^n$, and the computation uses the Clifford relations and the identity $\sum_kx_ke_k = x$, $\sum_k e_kx_k = \bar x$ for monomials; it requires no associativity because only products of two basis elements are formed at each step. The constant $\omega_7$ is chosen so that $\int_{\lvert x\rvert = 1}\bar x\,dS/n = 1$ in the distributional sense; the constant is the volume of the unit sphere, computed as $\pi^4/3$ in <em>Octonion Norm and Invertibility</em>.</p>
-<p>The kernel reproduces the quaternionic situation, where the analogous function is $\bar x/\lvert x\rvert^4$, and it is the kernel out of which the Cauchy formula of the next section is built. What differs is not the kernel but the class of functions.</p>
+<p><em>Proof.</em> Away from the origin, $D(x^{\natural}/\lvert x\rvert^8) = 0$ and $(x^{\natural}/\lvert x\rvert^8)D = 0$, by the same computation as in the associative Clifford case: $x^{\natural}$ is the product of seven-tuples of basis elements... the identity is the one used to prove that $x^{\natural}/\lvert x\rvert^n$ is the kernel of the Cauchy–Riemann operator in $\mathbb{R}^n$, and the computation uses the Clifford relations and the identity $\sum_kx_ke_k = x$, $\sum_k e_kx_k = x^{\natural}$ for monomials; it requires no associativity because only products of two basis elements are formed at each step. The constant $\omega_7$ is chosen so that $\int_{\lvert x\rvert = 1}x^{\natural}\,dS/n = 1$ in the distributional sense; the constant is the volume of the unit sphere, computed as $\pi^4/3$ in <em>Octonion Norm and Invertibility</em>.</p>
+<p>The kernel reproduces the quaternionic situation, where the analogous function is $x^{\natural}/\lvert x\rvert^4$, and it is the kernel out of which the Cauchy formula of the next section is built. What differs is not the kernel but the class of functions.</p>
 <h2 id="monogenic-functions">Monogenic Functions</h2>
 <h3 id="definition-and-elementary-properties">Definition and Elementary Properties</h3>
 <p><strong>Definition.</strong> Let $\Omega\subset\mathbb{O}$ be a domain, that is a connected open set. The space of <strong>left-monogenic</strong> functions on $\Omega$ is</p>
@@ -92,20 +92,20 @@ $$</p>
 <p>and the space of <strong>right-monogenic</strong> functions $\mathcal{M}_R(\Omega)$ is defined by $fD = 0$; a function that is both is <strong>two-sided monogenic</strong>.</p>
 <p><strong>Proposition.</strong> On a domain $\Omega$ the following hold.</p>
 <ol>
-<li>The spaces $\mathcal{M}_L(\Omega)$ and $\mathcal{M}_R(\Omega)$ are real vector spaces of harmonic functions and are infinite-dimensional; the constants are monogenic, while the coordinate function $x\mapsto x$ is not, since $Dx = \sum_{k=0}^{7}e_k^2 = -6e_0$, and $x\mapsto\bar x$ is not either, since $D\bar x = 8e_0$.</li>
-<li>The <strong>radial reduction</strong>: for functions of the form $f = u(r) + v(r)\bar x$ with $r = \lvert x\rvert$,</li>
+<li>The spaces $\mathcal{M}_L(\Omega)$ and $\mathcal{M}_R(\Omega)$ are real vector spaces of harmonic functions and are infinite-dimensional; the constants are monogenic, while the coordinate function $x\mapsto x$ is not, since $Dx = \sum_{k=0}^{7}e_k^2 = -6e_0$, and $x\mapsto x^{\natural}$ is not either, since $D x^{\natural} = 8e_0$.</li>
+<li>The <strong>radial reduction</strong>: for functions of the form $f = u(r) + v(r)x^{\natural}$ with $r = \lvert x\rvert$,</li>
 </ol>
 <p>$$
 Df = \frac{u'}{r}\,x + \left(8v + rv'\right),
 $$</p>
 <p>so that $f$ is left-monogenic if and only if $u$ is constant and $v = c\lvert x\rvert^{-8}$. The fundamental solution $E$ is the case $u = 0$, $v = \lvert x\rvert^{-8}/\omega_7$.
-3. The same computation for $g = u(r) + v(r)x$ gives $Dg = \frac{u'}{r}x + \frac{v'}{r}x^2 + v\sum_{k=0}^{7}e_k^2$, and since $x^2 = 2x_0x - \lvert x\rvert^2e_0$ is not a scalar for general $x$, no nonconstant radial function of this ansatz is monogenic; only the $\bar x$ ansatz produces radial solutions.</p>
-<p><em>Proof.</em> (1) The constants are annihilated by $D$, and $Dx$ and $D\bar x$ are the displayed computations, using $e_0^2 = e_0$ and $e_k^2 = -e_0$ for $k\geq1$. (2) Differentiating, $\partial_kf = u'x_k/r + v'x_k\bar x/r + v\bar e_k$, so</p>
+3. The same computation for $g = u(r) + v(r)x$ gives $Dg = \frac{u'}{r}x + \frac{v'}{r}x^2 + v\sum_{k=0}^{7}e_k^2$, and since $x^2 = 2x_0x - \lvert x\rvert^2e_0$ is not a scalar for general $x$, no nonconstant radial function of this ansatz is monogenic; only the $x^{\natural}$ ansatz produces radial solutions.</p>
+<p><em>Proof.</em> (1) The constants are annihilated by $D$, and $Dx$ and $D x^{\natural}$ are the displayed computations, using $e_0^2 = e_0$ and $e_k^2 = -e_0$ for $k\geq1$. (2) Differentiating, $\partial_kf = u'x_k/r + v'x_k x^{\natural}/r + v e_k^{\natural}$, so</p>
 <p>$$
-Df = \frac{u'}{r}\sum_ke_kx_k + \frac{v'}{r}\sum_kx_k(e_k\bar x) + v\sum_ke_k\bar e_k = \frac{u'}{r}x + \frac{v'}{r}x\bar x + 8v ,
+Df = \frac{u'}{r}\sum_ke_kx_k + \frac{v'}{r}\sum_kx_k(e_k x^{\natural}) + v\sum_ke_k e_k^{\natural} = \frac{u'}{r}x + \frac{v'}{r}x x^{\natural} + 8v ,
 $$</p>
-<p>because $\sum_ke_kx_k = x$ for scalar coefficients $x_k$, because the associator with a scalar vanishes, and because $\sum_ke_k\bar e_k = e_0 - \sum_{k\geq1}e_k^2 = 8e_0$. Since $x\bar x = \lvert x\rvert^2 = r^2$, the display follows. (3) The second ansatz gives $\sum_ke_k(x_kx) = x^2$ in place of $x\bar x$, and $x^2$ is scalar only when $x$ lies in a one-dimensional subspace, so no nonconstant radial solution arises.</p>
-<p>The radial reduction is worth isolating, since it is the source of the explicit examples and it shows how sharply the non-commutativity and non-associativity constrain them: the order of the factors in the ansatz matters, because $x\bar x$ is a scalar while $xx$ is not, and the associator-free step $\sum_ke_k(x_k\bar x) = x\bar x$ is the one that makes the kernel monogenic.</p>
+<p>because $\sum_ke_kx_k = x$ for scalar coefficients $x_k$, because the associator with a scalar vanishes, and because $\sum_ke_k e_k^{\natural} = e_0 - \sum_{k\geq1}e_k^2 = 8e_0$. Since $x x^{\natural} = \lvert x\rvert^2 = r^2$, the display follows. (3) The second ansatz gives $\sum_ke_k(x_kx) = x^2$ in place of $x x^{\natural}$, and $x^2$ is scalar only when $x$ lies in a one-dimensional subspace, so no nonconstant radial solution arises.</p>
+<p>The radial reduction is worth isolating, since it is the source of the explicit examples and it shows how sharply the non-commutativity and non-associativity constrain them: the order of the factors in the ansatz matters, because $x x^{\natural}$ is a scalar while $xx$ is not, and the associator-free step $\sum_ke_k(x_k x^{\natural}) = x x^{\natural}$ is the one that makes the kernel monogenic.</p>
 <h3 id="the-failure-of-the-leibniz-rule">The Failure of the Leibniz Rule</h3>
 <p><strong>Theorem (product rule).</strong> For $C^1$ functions $f,g$ on $\Omega$,</p>
 <p>$$
@@ -128,23 +128,23 @@ $$</p>
 <h3 id="left-and-right-monogenic-functions">Left and Right Monogenic Functions</h3>
 <p><strong>Proposition.</strong> For a $C^1$ function $f$ the two operators are related by conjugation,</p>
 <p>$$
-\overline{Df} = \bar fD, \qquad \overline{fD} = \bar D\bar f ,
+(Df)^{\natural} = f^{\natural}D, \qquad (fD)^{\natural} = \bar D f^{\natural} ,
 $$</p>
-<p>so that $f$ is left-monogenic if and only if $\bar f$ is right-monogenic. Consequently</p>
+<p>so that $f$ is left-monogenic if and only if $f^{\natural}$ is right-monogenic. Consequently</p>
 <p>$$
-\mathcal{M}_R(\Omega) = \left\{\bar f : f\in\mathcal{M}_L(\Omega)\right\},
+\mathcal{M}_R(\Omega) = \left\{f^{\natural} : f\in\mathcal{M}_L(\Omega)\right\},
 $$</p>
 <p>and the two classes are conjugate to one another.</p>
-<p><em>Proof.</em> Conjugating $Df = \sum_ke_k\partial_kf$ and using $\overline{\partial_kf} = \partial_k\bar f$ for real coordinates, $\bar e_0 = e_0$ and $\bar e_k = -e_k$ for $k\geq1$, one obtains $\overline{Df} = \sum_k\partial_k\bar f\,\bar e_k = \partial_0\bar f - \sum_{k\geq1}\partial_k\bar f\,e_k = \bar fD$, which is the first identity; the second follows by applying the involution again, since it is an anti-automorphism of order two and carries $0$ to $0$.</p>
+<p><em>Proof.</em> Conjugating $Df = \sum_ke_k\partial_kf$ and using $(\partial_k f)^{\natural} = \partial_k f^{\natural}$ for real coordinates, $e_0^{\natural} = e_0$ and $e_k^{\natural} = -e_k$ for $k\geq1$, one obtains $(Df)^{\natural} = \sum_k\partial_k f^{\natural}\,e_k^{\natural} = \partial_0f^{\natural} - \sum_{k\geq1}\partial_k f^{\natural}\,e_k = f^{\natural}D$, which is the first identity; the second follows by applying the involution again, since it is an anti-automorphism of order two and carries $0$ to $0$.</p>
 <p>Since the algebra is neither commutative nor associative, the classes are not the same in general: a left-monogenic function need not be right-monogenic, and the two-sided monogenic functions are the intersection, which is closed under neither pointwise product in general. In the complex case the two classes coincide; in the quaternion and biquaternion cases they are distinct but related by conjugation, exactly as here.</p>
 <h2 id="the-cauchy-integral-formula">The Cauchy Integral Formula</h2>
 <p><strong>Theorem (Cauchy–Pompeiu).</strong> Let $\Omega\subset\mathbb{O}$ be a bounded domain with smooth boundary $\partial\Omega$ oriented as the boundary of $\Omega$, let $n(y) = \sum_ky_ke_k$ be the outward unit normal at $y\in\partial\Omega$ in the identification of $\mathbb{R}^8$ with $\mathbb{O}$, and let $dS$ be the surface measure. Then for every $f\in C^1(\bar\Omega)$ and every $x\in\Omega$,</p>
 <p>$$
-f(x) = \frac{1}{\omega_7}\int_{\partial\Omega}\frac{\overline{y - x}}{\lvert y - x\rvert^8}\,n(y)\,f(y)\,dS(y) - \frac{1}{\omega_7}\int_{\Omega}\frac{\overline{y - x}}{\lvert y - x\rvert^8}\,(Df)(y)\,dV(y).
+f(x) = \frac{1}{\omega_7}\int_{\partial\Omega}\frac{(y-x)^{\natural}}{\lvert y - x\rvert^8}\,n(y)\,f(y)\,dS(y) - \frac{1}{\omega_7}\int_{\Omega}\frac{(y-x)^{\natural}}{\lvert y - x\rvert^8}\,(Df)(y)\,dV(y).
 $$</p>
 <p>If $f$ is left-monogenic in $\Omega$, the second term vanishes and the <strong>Cauchy integral formula</strong> results:</p>
 <p>$$
-f(x) = \frac{1}{\omega_7}\int_{\partial\Omega}\frac{\overline{y - x}}{\lvert y - x\rvert^8}\,n(y)\,f(y)\,dS(y), \qquad x\in\Omega .
+f(x) = \frac{1}{\omega_7}\int_{\partial\Omega}\frac{(y-x)^{\natural}}{\lvert y - x\rvert^8}\,n(y)\,f(y)\,dS(y), \qquad x\in\Omega .
 $$</p>
 <p><em>Proof.</em> The formula is the standard Cauchy–Pompeiu formula for the octonionic Cauchy–Riemann operator: it follows from Stokes' theorem for the form $E(y-x)n(y)f(y)dS$, whose exterior derivative is computed with the product rule, and the resulting volume integrand is $E(y-x)(Df)(y)$ up to the correction terms, which are total derivatives and integrate to zero. The reader is referred to the sources cited for the details of the Stokes argument in the non-associative case. The passage to the monogenic case is the vanishing of the volume term.</p>
 <p>Two features of the formula are worth recording. First, the order of the factors is part of the statement: the kernel multiplies the normal on the left and the function on the left of that, and a right-monogenic version of the formula requires the conjugate arrangement of the factors given by the conjugacy of the two classes. Second, the formula holds although the algebra is not associative; its proof uses the Clifford relations and Stokes' theorem and does not require the product of two monogenic functions to be monogenic, which is why it survives the failure of the Leibniz rule recorded above.</p>
@@ -153,7 +153,7 @@ $$</p>
 f(0) = \frac{1}{\omega_7r^7}\int_{\lvert y\rvert = r}f(y)\,dS(y),
 $$</p>
 <p>the integral being over the sphere of radius $r$, whose volume is $\omega_7r^7$; hence $f(0)$ is the mean value of $f$ over the sphere, and a non-constant monogenic function has no interior maximum of the modulus, so that the maximum principle holds.</p>
-<p><em>Proof.</em> In the Cauchy formula on the ball, the kernel and the normal are $\bar y/r^8$ and $n(y) = y/r$, and $\bar yy = r^2$, so the integrand reduces to $f(y)/r^9 \cdot r^2 = f(y)/r^7$ up to the constant; dividing by $\omega_7$ gives the mean value. Harmonicity gives the maximum principle.</p>
+<p><em>Proof.</em> In the Cauchy formula on the ball, the kernel and the normal are $y^{\natural}/r^8$ and $n(y) = y/r$, and $y^{\natural}y = r^2$, so the integrand reduces to $f(y)/r^9 \cdot r^2 = f(y)/r^7$ up to the constant; dividing by $\omega_7$ gives the mean value. Harmonicity gives the maximum principle.</p>
 <h2 id="comparison-with-the-associative-clifford-case">Comparison with the Associative Clifford Case</h2>
 <p>The octonionic Cauchy–Riemann operator is a first-order elliptic operator whose square is the Laplacian, and in this it is an operator of the family that the companion article <em>Dirac Differential Operators</em>, written in parallel, treats as mathematics under the classical name. The comparison with the associative Clifford case isolates exactly what the failure of associativity costs, and what it does not.</p>
 <p><strong>Theorem.</strong> Let $A$ be a real associative algebra with a positive definite inner product and an orthonormal basis $f_1,\dots,f_m$ satisfying the Clifford relations, and let $\mathcal{D} = \sum_kf_k\partial_k$ on $A$-valued functions of $m$ variables. Then the left-monogenic functions form a left $A$-module, and for constant $a$ one has $\mathcal{D}(af) = a(\mathcal{D}f)$; the product of two monogenic functions need not be monogenic in this case either.</p>
@@ -161,7 +161,7 @@ $$</p>
 <p>The comparison is therefore precise and asymmetric. The failure of the product of two monogenic functions to be monogenic is <strong>not</strong> a feature of the octonions: it holds already for the associative Clifford algebras. What is peculiar to the octonions is the failure of the <strong>module</strong> property, $D(af)\neq a(Df)$ for constant $a\in\mathbb{O}$, which in the associative case is a triviality and in the octonionic case is a sum of associators; and with it the failure of every structure that presupposes that the solutions are acted on by the coefficient algebra. This is why the octonionic analysis retains the elliptic, harmonic and integral theory — those never multiply two solutions — and loses the module-theoretic theory.</p>
 <p><strong>Remark.</strong> The obstruction has a single algebraic carrier: the associator, which is alternating and vanishes on any two generators, by Artin's theorem. Consequently every statement in the octonionic analysis whose proof would form a product of three elements coming from two distinct subalgebras is suspect, while every statement whose proof uses only one generator, or only two variable elements, stands. The Leibniz defect is the form of the obstruction in one line, and the module failure the form of the obstruction in one sentence.</p>
 <h2 id="summary">Summary</h2>
-<p>The octonionic Cauchy–Riemann operator $D = \sum_{k=0}^{7}e_k\partial_k$, with conjugate $\bar D = \partial_0 - \sum_{k\geq1}e_k\partial_k$, is a first-order elliptic operator satisfying $D\bar D = \bar DD = \Delta_8$, so that every left- or right-monogenic function is harmonic. Its fundamental solution is $E(x) = \bar x/(\omega_7\lvert x\rvert^8)$ with $\omega_7 = \pi^4/3$, homogeneous of degree $-7$, and the Cauchy–Pompeiu formula expresses a $C^1$ function on a domain by an integral over the boundary with the kernel $\overline{y-x}/\lvert y-x\rvert^8$ multiplied on the left by the outward normal, together with a volume term involving $Df$; for left-monogenic functions only the boundary term remains, and the maximum principle follows.</p>
+<p>The octonionic Cauchy–Riemann operator $D = \sum_{k=0}^{7}e_k\partial_k$, with conjugate $\bar D = \partial_0 - \sum_{k\geq1}e_k\partial_k$, is a first-order elliptic operator satisfying $D\bar D = \bar DD = \Delta_8$, so that every left- or right-monogenic function is harmonic. Its fundamental solution is $E(x) = x^{\natural}/(\omega_7\lvert x\rvert^8)$ with $\omega_7 = \pi^4/3$, homogeneous of degree $-7$, and the Cauchy–Pompeiu formula expresses a $C^1$ function on a domain by an integral over the boundary with the kernel $(y-x)^{\natural}/\lvert y-x\rvert^8$ multiplied on the left by the outward normal, together with a volume term involving $Df$; for left-monogenic functions only the boundary term remains, and the maximum principle follows.</p>
 <p>Non-associativity enters the analysis at exactly one place, the product rule, and it changes the theory there. The Leibniz rule acquires the correction terms</p>
 <p>$$
 D(fg) = (Df)g + f(Dg) - \sum_k[e_k,\partial_kf,g] + \sum_k\Bigl([e_k,f]\partial_kg - 2[e_k,f,\partial_kg]\Bigr),
@@ -201,7 +201,7 @@ $$</p>
 <td>Left- and right-monogenic functions, $Df = 0$, $fD = 0$</td>
 </tr>
 <tr>
-<td>$E(x) = \bar x/(\omega_7\lvert x\rvert^8)$</td>
+<td>$E(x) = x^{\natural}/(\omega_7\lvert x\rvert^8)$</td>
 <td>Fundamental solution, $DE = ED = \delta_0$</td>
 </tr>
 <tr>

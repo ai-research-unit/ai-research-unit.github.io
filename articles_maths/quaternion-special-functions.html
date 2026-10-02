@@ -87,9 +87,9 @@ $$</p>
 <p><strong>Remark.</strong> Two moduli occur in the formulae of this article and must not be confused. The <strong>quaternion norm</strong> $\lvert \tilde q\rvert = \sqrt{q_0^2 + \lvert\mathbf q\rvert^2}$ is used in $\lvert \exp \tilde q\rvert = e^{q_0}$ and in the logarithm; the <strong>modulus of the vector part</strong> $\lvert\mathbf q\rvert$ is used in the polar form and in every formula below that separates the two parts. The two agree only when $q_0 = 0$. In the source literature the single symbol $\lvert p\rvert$ carries both meanings, the vector modulus in the polar form of the exponential and the trigonometric functions and the full norm in the logarithm; below the two are written separately.</p>
 <p><strong>Conjugation and the image of a sphere.</strong> Conjugation commutes with the exponential,</p>
 <p>$$
-\exp(\bar{\tilde q}) = \overline{\exp \tilde q},
+\exp(\tilde{q}^{\natural}) = (\exp \tilde q)^{\natural},
 $$</p>
-<p>because the series for $\exp \bar{\tilde q}$ is the conjugate of the series for $\exp \tilde q$ term by term. The scalar-vector form also describes the image of each sphere. For fixed $\lvert \mathbf{q}\rvert = r$, the exponential maps the sphere onto the sphere of radius $e^{q_0}\lvert \sin r\rvert$ centred at the real point $e^{q_0}\cos r$, swept out as the direction $\operatorname{sgn}(\tilde q)$ runs over the unit imaginary sphere; at $r = k\pi$ the image collapses to the single point $(-1)^k e^{q_0}$, so the whole sphere of pure quaternions of modulus $\pi$ is sent to the one point $-1$. This collapse is the geometric reason the exponential is not injective.</p>
+<p>because the series for $\exp \tilde{q}^{\natural}$ is the conjugate of the series for $\exp \tilde q$ term by term. The scalar-vector form also describes the image of each sphere. For fixed $\lvert \mathbf{q}\rvert = r$, the exponential maps the sphere onto the sphere of radius $e^{q_0}\lvert \sin r\rvert$ centred at the real point $e^{q_0}\cos r$, swept out as the direction $\operatorname{sgn}(\tilde q)$ runs over the unit imaginary sphere; at $r = k\pi$ the image collapses to the single point $(-1)^k e^{q_0}$, so the whole sphere of pure quaternions of modulus $\pi$ is sent to the one point $-1$. This collapse is the geometric reason the exponential is not injective.</p>
 <p><strong>de Moivre's formula and the sequential limit.</strong> For every integer $n$,</p>
 <p>$$
 \left(\exp \tilde q\right)^n = \exp(n\tilde q),
@@ -114,7 +114,7 @@ $$</p>
 <p><strong>Caution.</strong> The logarithm is not additive in general, because $\mathbb{H}$ is not commutative. The identity $\log(pq) = \log(p) + \log(\tilde q)$ holds if and only if $p$ and $\tilde q$ commute.</p>
 <p><strong>Conjugation.</strong> The principal logarithm also commutes with conjugation,</p>
 <p>$$
-\log(\bar{\tilde q}) = \overline{\log \tilde q},
+\log(\tilde{q}^{\natural}) = (\log \tilde q)^{\natural},
 $$</p>
 <p>on the domain of the principal branch. The norm $\lvert \tilde q\rvert$ and the argument $\operatorname{Arg}\tilde q$ are unchanged by conjugation, while the direction $\operatorname{sgn}(\tilde q)$ changes sign, and both sides change sign in the vector part.</p>
 <p><strong>Multi-valuedness and the principal branch.</strong> The function above is single-valued on the complement of the non-positive real axis, but it is one branch of a multi-valued function. A <strong>logarithm</strong> of $\tilde q$ is any $\tilde L \in \mathbb{H}$ with $\exp \tilde L = \tilde q$; for $\tilde q$ with non-zero vector part the function above is one solution, and every other solution is obtained from it by adding an integer multiple of the period:</p>
@@ -434,7 +434,7 @@ $$</p>
 <h3 id="the-cauchy-kernel">The Cauchy Kernel</h3>
 <p>The <strong>Cauchy kernel</strong> is the function</p>
 <p>$$
-E(\tilde q) = \frac{\tilde q^{-1}}{|\tilde q|^2} = \frac{\bar{\tilde q}}{|\tilde q|^4}, \qquad \tilde q \neq 0.
+E(\tilde q) = \frac{\tilde q^{-1}}{|\tilde q|^2} = \frac{\tilde{q}^{\natural}}{|\tilde q|^4}, \qquad \tilde q \neq 0.
 $$</p>
 <p>It is the fundamental solution of the Cauchy–Riemann operator:</p>
 <p>$$
@@ -468,7 +468,7 @@ $$</p>
 <p>The quaternion special functions are the named functions that arise in quaternion analysis, in Clifford analysis and in the geometry of the quaternion space. Each is obtained by carrying the corresponding real or complex definition to the quaternion variable by means of the quaternion exponential and the quaternion operations.</p>
 <p>The exponential is defined by its series, and the trigonometric and hyperbolic functions are built from it, with the scalar-vector decomposition of a quaternion taking the place of the real and imaginary parts of a complex number. The scalar-vector form also fixes the modulus and the zeros of each of them, and the same form reads the trigonometric functions as the hyperbolic functions of a rotated variable, which is how the inverse trigonometric functions are obtained from the inverse hyperbolic ones. The same form answers the quantitative questions: it turns the elementary real inequalities into bounds for each function, and it makes the $n$-th roots of a quaternion approach $1$ at a rate fixed by the logarithm, $n(\tilde p^{1/n} - 1) \to \log \tilde p$ and the means of roots converge to the exponential of the mean of the logarithms. Integral representations then supply the gamma and beta functions, the error function, the Airy function as a contour integral, the Bessel functions and the Gauss hypergeometric function, together with the Lambert $W$ function as the inverse of $w \mapsto we^w$.</p>
 <p>The exponential is single-valued and not injective; the logarithm is its multi-valued inverse, with infinitely many branches differing by a multiple of $2\pi \operatorname{sgn}(\tilde q)$, and the power functions inherit that multi-valuedness. The two compositions of the exponential and the logarithm behave differently: the logarithm inverts the exponential everywhere on its domain, while the exponential is inverted by the logarithm only on the region $\lvert \mathrm{Vect}\tilde q\rvert < \pi$, off which the value is shifted by a period.</p>
-<p>The Cauchy kernel $\bar{\tilde q}/\lvert \tilde q\rvert^4$, the fundamental solution of the Cauchy–Riemann operator, opens the last family, the monogenic special functions, and the section on the structure principle states what organises the whole collection: every quaternion special function is defined by a formula involving the quaternion algebra operations and the quaternion exponential, and the properties it has are those the non-commutativity of $\mathbb{H}$ permits.</p>
+<p>The Cauchy kernel $\tilde{q}^{\natural}/\lvert \tilde q\rvert^4$, the fundamental solution of the Cauchy–Riemann operator, opens the last family, the monogenic special functions, and the section on the structure principle states what organises the whole collection: every quaternion special function is defined by a formula involving the quaternion algebra operations and the quaternion exponential, and the properties it has are those the non-commutativity of $\mathbb{H}$ permits.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

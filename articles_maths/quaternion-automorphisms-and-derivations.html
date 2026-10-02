@@ -55,7 +55,7 @@
 <p>Two invariants of an algebra are its group of automorphisms and its Lie algebra of derivations, and for the quaternion algebra both can be computed completely: the automorphism group is the rotation group of the imaginary subspace, and the derivation algebra is the imaginary subspace itself under the commutator bracket. This article establishes those identifications, computes the dimensions, and links the two by the exponential. It is the quaternion member of the family's automorphism-and-derivation pair; its counterpart is the biquaternion case, where the same questions are answered by the projective Lorentz group and by $\mathrm{SO}(1,3)$, and where the distinction between the complex and the real ground field is decisive. Here the ground field is $\mathbb{R}$ throughout, the algebra is central simple over it, and there is no conjugate-linear coset to add.</p>
 <p>The article uses <em>Quaternion Algebra</em> for the algebra and its centre, <em>Quaternion Ideals and Simplicity</em> for the central-simplicity of $\mathbb{H}$ over $\mathbb{R}$, <em>Quaternion Norm and Invertibility</em> for the unit group, and <em>Quaternion Rotations and Reflections</em> for the identification of the unit sphere with the rotation group.</p>
 <p>The results are the case of the standard structure theory of a central simple algebra: over a field $k$, every $k$-algebra automorphism of a finite-dimensional central simple algebra is inner, and every derivation is inner. Those two theorems are cited as standard; the specific computations for $\mathbb{H}$ are shown.</p>
-<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with centre $\mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0$, conjugate $\bar{\tilde q}$, and norm $N(\tilde q) = \tilde q\bar{\tilde q}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : N(\tilde q) = 1\}$. The scalar part of a commutator gives $\mathrm{Sc}([x,y]) = 0$, so $[x,y]\in\operatorname{Im}\mathbb{H}$ always.</p>
+<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with centre $\mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0$, conjugate $\tilde{q}^{\natural}$, and norm $N(\tilde q) = \tilde q\tilde{q}^{\natural}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : N(\tilde q) = 1\}$. The scalar part of a commutator gives $\mathrm{Sc}([x,y]) = 0$, so $[x,y]\in\operatorname{Im}\mathbb{H}$ always.</p>
 <h2 id="automorphisms-of-the-quaternion-algebra">Automorphisms of the Quaternion Algebra</h2>
 <p><strong>Definition.</strong> An <strong>automorphism</strong> of $\mathbb{H}$ is a bijective $\mathbb{R}$-linear map $\sigma : \mathbb{H}\to\mathbb{H}$ with $\sigma(xy) = \sigma(x)\sigma(y)$ and $\sigma(1) = 1$. The automorphisms form a group under composition, written $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H})$.</p>
 <p><strong>Definition.</strong> For a unit $u\in\mathbb{H}$ the map $\iota_u(x) = uxu^{-1}$ is the <strong>inner automorphism</strong> determined by $u$. Since the centre is $\mathbb{R}$, one has $\iota_u = \iota_{\lambda u}$ for every non-zero real $\lambda$, so $\iota_u$ depends only on the class of $u$ in $Sp(1)/\{\pm1\}$.</p>
@@ -66,7 +66,7 @@
 \operatorname{Aut}_{\mathbb{R}}(\mathbb{H})\cong Sp(1)/\{\pm1\} .
 $$</p>
 <p><em>Proof.</em> The algebra $\mathbb{H}$ is central simple over $\mathbb{R}$ by <em>Quaternion Ideals and Simplicity</em>, and the Skolem–Noether theorem states that every $k$-algebra automorphism of a finite-dimensional central simple $k$-algebra is inner; quoting it as standard gives surjectivity of $u\mapsto\iota_u$ onto the automorphism group. The kernel is $\{\pm1\}$ by the proposition, so the first isomorphism theorem gives the displayed isomorphism.</p>
-<p><strong>Remark.</strong> The anti-automorphism $x\mapsto\bar x$ is not an automorphism, since it reverses products, and it is not the identity $\iota_u$ for any unit; it is excluded from the automorphism group. There is no second coset of automorphisms here, because the centre of $\mathbb{H}$ is $\mathbb{R}$, which has no non-trivial field automorphism.</p>
+<p><strong>Remark.</strong> The anti-automorphism $x\mapsto x^{\natural}$ is not an automorphism, since it reverses products, and it is not the identity $\iota_u$ for any unit; it is excluded from the automorphism group. There is no second coset of automorphisms here, because the centre of $\mathbb{H}$ is $\mathbb{R}$, which has no non-trivial field automorphism.</p>
 <h2 id="the-automorphism-group-as-the-rotation-group">The Automorphism Group as the Rotation Group</h2>
 <p><strong>Theorem.</strong> The inner automorphisms are exactly the automorphisms that act on the imaginary subspace as rotations, and there is a canonical isomorphism</p>
 <p>$$
@@ -175,7 +175,7 @@ $$</p>
 <td>Basis, $e_k^2 = -e_0$</td>
 </tr>
 <tr>
-<td>$\bar{\cdot}$</td>
+<td>${}^{\natural}$</td>
 <td>Quaternion conjugation, an anti-automorphism, not in $\operatorname{Aut}$</td>
 </tr>
 <tr>

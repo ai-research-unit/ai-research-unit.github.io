@@ -57,8 +57,8 @@
 <p>$$
 \tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}
 $$</p>
-<p>was shown to have a biquaternion norm $N(\tilde{F}) = \tilde{F}\bar{\tilde{F}}$ whose vanishing is exactly the condition that the field be null: $\mathbf{E}\perp\mathbf{B}$ and $|\mathbf{E}| = c|\mathbf{B}|$ pointwise. A null field strength is a <strong>zero divisor</strong> of the algebra $\mathbb{B}$. That null condition is the algebraic signature of a radiation field. The main result of this article is that it is realized, pointwise, by the acceleration part of the Liénard–Wiechert field: the radiation field is precisely the part of $\tilde{F}$ that squares to zero.</p>
-<p>The conventions are those of the read-list articles throughout, and nothing in them is changed here. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and scalar imaginary $i$ commuting with the quaternion units. The subspaces are $\mathbb{M}_-$ (anti-Hermitian, imaginary scalar and real vector, the material sector), $\mathbb{M}_+$ (Hermitian, real scalar and imaginary vector, the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}}$ (scalars). The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, with $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$, and the symbol $c = 1/\sqrt{\epsilon\mu}$ always denotes the speed of light in the medium, reducing to $c_0$ in vacuum. The charge whose field is being computed is written $q$, and its velocity is written $\mathbf{v}$ (the symbol $v$ is reserved for particle velocities, as in the companion articles).</p>
+<p>was shown to have a biquaternion norm $N(\tilde{F}) = \tilde{F}\tilde{F}^{\natural}$ whose vanishing is exactly the condition that the field be null: $\mathbf{E}\perp\mathbf{B}$ and $|\mathbf{E}| = c|\mathbf{B}|$ pointwise. A null field strength is a <strong>zero divisor</strong> of the algebra $\mathbb{B}$. That null condition is the algebraic signature of a radiation field. The main result of this article is that it is realized, pointwise, by the acceleration part of the Liénard–Wiechert field: the radiation field is precisely the part of $\tilde{F}$ that squares to zero.</p>
+<p>The conventions are those of the read-list articles throughout, and nothing in them is changed here. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and scalar imaginary $i$ commuting with the quaternion units. The subspaces are $\mathbb{M}_-$ (anti-Hermitian, imaginary scalar and real vector, the material sector), $\mathbb{M}_+$ (Hermitian, real scalar and imaginary vector, the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}}$ (scalars). The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, with $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$, and the symbol $c = 1/\sqrt{\epsilon\mu}$ always denotes the speed of light in the medium, reducing to $c_0$ in vacuum. The charge whose field is being computed is written $q$, and its velocity is written $\mathbf{v}$ (the symbol $v$ is reserved for particle velocities, as in the companion articles).</p>
 <p>The article is organized as follows. The first section recalls the retarded solution of the Maxwell article and specializes it to a point charge. The second introduces the retarded null biquaternion and writes the Liénard–Wiechert potentials in biquaternion form, and adds the source's spinor square root and invariant retarded distance. The third computes the field and splits it into a velocity part and an acceleration part. The fourth identifies the acceleration part as the radiation field, and the fifth and sixth extract the radiated power and the angular distribution. A short section treats the radiation-reaction problem, and a closing section records how the two downstream exercises are applications of the construction.</p>
 <p>Two later exercises use this article as their declared foundation: <em>Exercise: The Electromagnetic Field of a Moving Charge</em> and <em>Exercise: The Electromagnetic Field of a Uniformly Moving Charge</em>. The construction below is worked out explicitly enough that both are applications of it, R4 being the case of vanishing acceleration and E1 the general case.</p>
 <h2 id="the-retarded-solution-for-a-point-source">The Retarded Solution for a Point Source</h2>
@@ -207,17 +207,17 @@ $$</p>
 $$</p>
 <p>a real vector, and it is orthogonal to the four-velocity,</p>
 <p>$$
-\mathrm{Sc}\!\left(\frac{d\tilde{U}}{d\tau}\,\bar{\tilde{U}}\right) = 0 ,
+\mathrm{Sc}\!\left(\frac{d\tilde{U}}{d\tau}\,\tilde{U}^{\natural}\right) = 0 ,
 $$</p>
 <p>which is the biquaternion statement that a four-acceleration is orthogonal to its worldline. The same conjugation makes the orthogonality immediate and fixes $\tilde{a}$ as the acceleration in the instantaneous rest frame: at $\boldsymbol{\beta} = 0$ the spinor is the identity and the relation reads $d\tilde{U}/d\tau = \tilde{a}$. The source prints its own acceleration relation with a minus, $\ddot Z = -\tilde{B}\tilde{a}\tilde{B}^+$; the minus is carried by its normalization of the position variable, since the corpus four-velocity and the source's differ by the constant factor $ic$, and the sign above is the one that reduces to the rest-frame acceleration at vanishing velocity.</p>
 <p>These are the source's formulas, transcribed into the conventions of this article and checked component by component; no statement of the earlier sections changes. The spinor square root introduced here is the same decomposition that underlies Weiss's independent route to the Lorentz–Dirac equation in the radiation-reaction section below.</p>
 <h2 id="the-field-of-the-retarded-potential">The Field of the Retarded Potential</h2>
-<p>In the Lorenz gauge the gauge scalar $S = \mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{A})$ vanishes, so the field strength is obtained from the potential by the biquaternionic differentiation rule of the Maxwell article,</p>
+<p>In the Lorenz gauge the gauge scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ vanishes, so the field strength is obtained from the potential by the biquaternionic differentiation rule of the Maxwell article,</p>
 <p>$$
-\tilde{F} = \bar{\tilde{\nabla}}\tilde{A} - \mathrm{Sc}\!\left(\bar{\tilde{\nabla}}\tilde{A}\right)
-= \bar{\tilde{\nabla}}\tilde{A},
+\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)
+= \tilde{\nabla}^{\natural}\tilde{A},
 $$</p>
-<p>with the normalization caveat recorded there: the identification of $\mathbf{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ with the vector part of $\bar{\tilde{\nabla}}\tilde{A}$ fixes the field-strength normalization once and for all, and that is the definition used here. Differentiating the Liénard–Wiechert potential is the standard computation; in the biquaternion formulation it is a single differentiation rather than four, and the result separates into two terms of very different character:</p>
+<p>with the normalization caveat recorded there: the identification of $\mathbf{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ with the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ fixes the field-strength normalization once and for all, and that is the definition used here. Differentiating the Liénard–Wiechert potential is the standard computation; in the biquaternion formulation it is a single differentiation rather than four, and the result separates into two terms of very different character:</p>
 <p>$$
 \mathbf{E} = \mathbf{E}_v + \mathbf{E}_a, \qquad
 \mathbf{B} = \frac{1}{c}\,\hat{\mathbf{R}}\times\mathbf{E}, \qquad
@@ -244,7 +244,7 @@ $$</p>
 \qquad
 \tilde{F}_a = i\sqrt{\epsilon}\,\mathbf{E}_a - \sqrt{\mu}\,\mathbf{H}_a ,
 $$</p>
-<p>with $\mathbf{H}_{v,a} = \mathbf{B}_{v,a}/\mu$. Both parts are pure-vector biquaternions with vanishing scalar part, like every field strength, and both satisfy $\tilde{F} = \bar{\tilde{\nabla}}\tilde{A}$ collectively. The split is not merely a calculational device: as the next two sections show, $\tilde{F}_v$ and $\tilde{F}_a$ have completely different algebraic types.</p>
+<p>with $\mathbf{H}_{v,a} = \mathbf{B}_{v,a}/\mu$. Both parts are pure-vector biquaternions with vanishing scalar part, like every field strength, and both satisfy $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}$ collectively. The split is not merely a calculational device: as the next two sections show, $\tilde{F}_v$ and $\tilde{F}_a$ have completely different algebraic types.</p>
 <h2 id="the-velocity-field">The Velocity Field</h2>
 <p>The field $\tilde{F}_v$ depends only on the position and velocity of the charge at the retarded time, not on its acceleration. It falls as $1/R^2$, exactly as a static field does, and it is the field that is "carried along" by the charge.</p>
 <p>The factor $1-\beta^2 = 1/\gamma^2$ makes $\mathbf{E}_v$ a <strong>contracted</strong> Coulomb field: at $\boldsymbol{\beta} = 0$ it reduces to the ordinary Coulomb field</p>
@@ -283,7 +283,7 @@ I_{2,a} = \mathbf{E}_a\cdot\mathbf{B}_a = 0 .
 $$</p>
 <p>In the biquaternion framework this is the statement that the biquaternion norm of $\tilde{F}_a$ vanishes:</p>
 <p>$$
-N(\tilde{F}_a) = \tilde{F}_a\bar{\tilde{F}}_a = -\epsilon\left(I_{1,a} + 2ic\,I_{2,a}\right) = 0 .
+N(\tilde{F}_a) = \tilde{F}_a\tilde{F}^{\natural}_a = -\epsilon\left(I_{1,a} + 2ic\,I_{2,a}\right) = 0 .
 $$</p>
 <p>A nonzero pure-vector biquaternion with vanishing biquaternion norm is a zero divisor and is nilpotent, since for a pure vector $\tilde{F}_a^2 = -\mathbf{F}_a\cdot\mathbf{F}_a = -N(\tilde{F}_a)$. Hence</p>
 <p>$$
@@ -374,9 +374,9 @@ $$</p>
 $$</p>
 <p>an element of $\mathbb{M}_-$ whose defining property is that it is <strong>orthogonal to the worldline</strong>:</p>
 <p>$$
-\mathrm{Sc}\!\left(\tilde{f}_{\text{rad}}\bar{\tilde{U}}\right) = 0 .
+\mathrm{Sc}\!\left(\tilde{f}_{\text{rad}}\tilde{U}^{\natural}\right) = 0 .
 $$</p>
-<p>This orthogonality is the biquaternion form of the statement that the reaction force does no work in the instantaneous rest frame; it follows from $N(\tilde{U}) = -c^2$ being constant, which gives $\mathrm{Sc}(\ddot{\tilde{U}}\bar{\tilde{U}}) = -N(\dot{\tilde{U}})$.</p>
+<p>This orthogonality is the biquaternion form of the statement that the reaction force does no work in the instantaneous rest frame; it follows from $N(\tilde{U}) = -c^2$ being constant, which gives $\mathrm{Sc}(\ddot{\tilde{U}}\tilde{U}^{\natural}) = -N(\dot{\tilde{U}})$.</p>
 <p>Two caveats should be stated plainly. First, the reformulation does not resolve the well-known pathologies of the equation — the runaway solutions and the pre-acceleration that follow from treating the self-force as a local differential expression. Second, the equation above is a transcription of the standard result into the biquaternion notation; it is not a derivation of the self-force from the biquaternion framework, and the point-charge self-energy divergence is untouched by the change of language. The radiation-reaction problem is thus <strong>represented</strong> cleanly in the framework, but it is not solved by it. A rigorous derivation from Maxwell's theory does exist, however, and it is the subject of the next paragraph.</p>
 <p><strong>A rigorous derivation exists outside the framework.</strong> Whether the point-charge self-force can be derived from Maxwell's theory without adding anything has a positive answer, due to A. Gsponer. The method is to define the retarded potentials, fields and currents as <strong>nonlinear generalized functions</strong> and to carry out every calculation in a <strong>Colombeau algebra</strong> — an algebra in which the product of singular fields is defined, which is indispensable here because the energy–momentum tensor is quadratic in the field and the fields diverge on the worldline. The biquaternion spinor representation of electrodynamics is what makes the four-dimensional integrations exact and closed-form. With those tools the total rate of energy–momentum radiated through a surface enclosing the worldline is shown to be rigorously equal to minus the self-interaction force on the charge,</p>
 <p>$$
@@ -443,7 +443,7 @@ $$</p>
 <td>Real-quaternion and scalar subspaces</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla}, \bar{\tilde{\nabla}}, \Box = \tilde{\nabla}\bar{\tilde{\nabla}}$</td>
+<td>$\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$</td>
 <td>Biquaternionic gradient, conjugate, d'Alembertian</td>
 </tr>
 <tr>
@@ -539,7 +539,7 @@ $$</p>
 <td>Field invariants</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$</td>
+<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>

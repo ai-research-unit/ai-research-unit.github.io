@@ -61,7 +61,7 @@ $$</p>
 <p>where $H(D)$ is the entropy of the demon's memory and $I$ is its mutual information with the gas; since $I \le H(D)$, the bracket is never positive.</p>
 <p>The framework's contribution is the localisation of each step. The correlation and feedback steps belong to the algebra's <strong>reversible class</strong>: a permutation of the joint classical states in the first case, an entropy-neutral quasistatic process in the second, whose single-sector representative is the rotor conjugation that preserves the biquaternion norm and has a vanishing Lyapunov spectrum. The erasure step is a non-unital contraction, which lowers the memory's entropy and exports the difference to the material sector as heat. The second law is restored at the erasure, and it is the framework's reversible/irreversible dichotomy that says where to look. One further framework object, the <strong>idempotent projection</strong> of the companion article <em>Decoherence as Idempotent Projection</em>, appears when the record is required to be definite; whether the irreversibility is charged to that projection or to the erasure is a bookkeeping choice, and the two accounts agree that the cycle gains nothing.</p>
 <p>The treatment is classical. The gas is a classical one-particle gas, the record is a classical bit, and the mutual information is Shannon's. The demon does not need entanglement, and none is used; the quantum demon, whose memory is entangled with the gas, belongs to the informational subcategory of the sibling quantum category, and is cited there rather than developed here.</p>
-<p>The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; $i$ is the central scalar imaginary; the sectors are $\mathbb{M}_+$ (Hermitian, informational) and $\mathbb{M}_-$ (anti-Hermitian, material); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$; a state is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}|\le1$; and entropies are measured in nats.</p>
+<p>The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; $i$ is the central scalar imaginary; the sectors are $\mathbb{M}_+$ (Hermitian, informational) and $\mathbb{M}_-$ (anti-Hermitian, material); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; a state is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}|\le1$; and entropies are measured in nats.</p>
 <h2 id="the-demons-cycle-in-two-sectors">The Demon's Cycle in Two Sectors</h2>
 <h3 id="the-device">The Device</h3>
 <p>The standard realisation is Szilard's engine. A single particle is confined to a box of volume $V$ in contact with a heat bath at temperature $T$, and a removable partition divides the box into two halves. The demon's cycle has four steps.</p>
@@ -89,7 +89,7 @@ $$</p>
 <h3 id="the-correlating-step">The Correlating Step</h3>
 <p>The demon's measurement must leave a record correlated with the gas. In the reversible account — the standard one for thermodynamic bookkeeping — the correlation is created by an interaction that copies the relevant bit of the gas onto a memory prepared in a standard state. For a classical bit this is a controlled copy, and it is reversible: the joint transformation is a permutation of the joint states, so it leaves the joint entropy unchanged while redistributing entropy within it — the record's marginal entropy rises from zero to $\log2$, and the mutual information rises by exactly the same amount. The framework's reversible class is the algebraic representative of such a step. Conjugation by a matrix-unitary rotor,</p>
 <p>$$
-\tilde{\rho} \longmapsto \tilde{R}\,\tilde{\rho}\,\tilde{R}^\dagger , \qquad \tilde{R}\tilde{R}^\dagger = e_0 ,
+\tilde{\rho} \longmapsto \tilde{R}\,\tilde{\rho}\,\tilde{R}^{*} , \qquad \tilde{R}\tilde{R}^{*} = e_0 ,
 $$</p>
 <p>preserves the biquaternion norm, produces no entropy, and has a vanishing Lyapunov spectrum; a permutation of a classical joint distribution shares those three properties, and it is in that sense that the correlating step belongs to the same class. The interaction costs no work and no entropy; what it does is create <strong>mutual information</strong> between the gas and the record.</p>
 <p>Take the gas bit $G$ uniformly distributed over its two values and the memory initialised to a standard value. After the copy the joint distribution is perfectly correlated, and the mutual information is</p>
@@ -337,7 +337,7 @@ $$</p>
 <td>Trace, $\mathrm{Tr}(e_0)=2$</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$</td>
+<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>
@@ -357,7 +357,7 @@ $$</p>
 <td>Heat, temperature, Boltzmann constant</td>
 </tr>
 <tr>
-<td>$\tilde{R}$, $\tilde{R}\tilde{R}^\dagger = e_0$</td>
+<td>$\tilde{R}$, $\tilde{R}\tilde{R}^{*} = e_0$</td>
 <td>Rotor (algebraic representative of the reversible steps)</td>
 </tr>
 <tr>

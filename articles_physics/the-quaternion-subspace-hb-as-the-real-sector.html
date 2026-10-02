@@ -76,7 +76,7 @@ $$</p>
 <p>and as a real vector space $\mathbb{H}_{\mathbb{B}}$ has dimension $4$. Equivalently, since $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the subspace is the image of the inclusion $\mathbb{H} \hookrightarrow \mathbb{B}$, $h \mapsto 1\otimes h$.</p>
 <p>The parameter pattern is the simplest possible: <strong>all four</strong> coefficients are real, and none carries the scalar imaginary. Each of the four complex coefficients $Q_\mu = q_\mu + iq'_\mu$ of a general biquaternion contributes its real part, and the imaginary parts are set to zero.</p>
 <h3 id="the-defining-involution">The Defining Involution</h3>
-<p>The subspace is the fixed space of <strong>complex conjugation</strong> $\tilde{Q}^*$, the antilinear map that fixes the quaternion units and negates the scalar imaginary, $e_\mu^* = e_\mu$ and $i^* = -i$. It is an involution: $(\tilde{Q}^*)^* = \tilde{Q}$. Write the general biquaternion out in full, with the real and the imaginary part of each of its four coefficients,</p>
+<p>The subspace is the fixed space of <strong>complex conjugation</strong> $\bar{\tilde{Q}}$, the antilinear map that fixes the quaternion units and negates the scalar imaginary, $\bar{e}_\mu = e_\mu$ and $\bar{i} = -i$. It is an involution: $\bar{\bar{\tilde{Q}}} = \tilde{Q}$. Write the general biquaternion out in full, with the real and the imaginary part of each of its four coefficients,</p>
 <p>$$
 \tilde{Q} = (q_0 + iq'_0)\,e_0 + (q_1 + iq'_1)\,e_1 + (q_2 + iq'_2)\,e_2 + (q_3 + iq'_3)\,e_3, \qquad q_\mu, q'_\mu \in \mathbb{R}.
 $$</p>
@@ -180,17 +180,17 @@ $$</p>
 <p>The diagonal is $-e_0$ for the three vector units, $e_k^2 = -e_0$, and the off-diagonal entries are antisymmetric, $e_je_k = -e_ke_j$ for $j \neq k$, with the cyclic products $e_1e_2 = e_3$, $e_2e_3 = e_1$, $e_3e_1 = e_2$. The subspace is therefore non-commutative.</p>
 <p><strong>Division algebra.</strong> The biquaternion norm restricted to the subspace is</p>
 <p>$$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = q_0^2 + q_1^2 + q_2^2 + q_3^2,
+N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = q_0^2 + q_1^2 + q_2^2 + q_3^2,
 $$</p>
 <p>a <strong>positive definite</strong> quadratic form of signature $(4,0)$. Since $N(\tilde{Q}) = 0$ forces $\tilde{Q} = 0$, every nonzero element is invertible, with</p>
 <p>$$
-\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}}}{N(\tilde{Q})},
+\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{N(\tilde{Q})},
 $$</p>
 <p>and there are no zero divisors: a product $\tilde{Q}\tilde{R}$ can vanish only if one factor does. The vanishing of the biquaternion norm here cuts out only the origin: the subspace has no light cone.</p>
 <p><strong>Frobenius.</strong> The quaternion algebra is the only four-dimensional real division algebra up to isomorphism. The subspace is therefore not merely <em>a</em> division algebra: as a real algebra it is <em>the</em> four-dimensional one.</p>
 <p><strong>Hermitian parts.</strong> Under Hermitian conjugation, which composes quaternion conjugation with complex conjugation, the unit is fixed and the three vector units change sign,</p>
 <p>$$
-e_0^\dagger = e_0, \qquad e_k^\dagger = -e_k \quad (k = 1,2,3).
+e_0^\dagger = e_0, \qquad e_k^{*} = -e_k \quad (k = 1,2,3).
 $$</p>
 <p>So the scalar direction of the subspace is Hermitian and the three vector directions are anti-Hermitian. This is the algebraic statement that a real scalar is Hermitian while a real spatial direction is not.</p>
 <p><strong>Not closed under the central scalar.</strong> Multiplication by $i$ takes the subspace out of itself: the product $i\tilde{Q}$ of $i$ with a nonzero element $\tilde{Q}$ of the subspace lies outside it. The condition of belonging to $\mathbb{H}_{\mathbb{B}}$ is therefore $\mathbb{R}$-linear and not $\mathbb{C}$-linear, which is exactly what one expects of a sector defined by a conjugation.</p>
@@ -217,7 +217,7 @@ $$</p>
 $$</p>
 <p>a unit quaternion whose scalar part is the cosine of the half-angle. The appearance of the half-angle is the familiar sign ambiguity of the spinor cover, and it is a property of the sector: the rotors form a sphere, not a projective space.</p>
 <h2 id="summary">Summary</h2>
-<p>The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed-point set of complex conjugation, a four-dimensional real subspace of $\mathbb{B}$ spanned by $e_0, e_1, e_2, e_3$ with real coefficients. It is a subalgebra, and as a real algebra it is the unique four-dimensional division algebra. Its biquaternion norm is positive definite of signature $(4,0)$; numerically it is the sum of squares $q_0^2 + q_1^2 + q_2^2 + q_3^2$, which never vanishes on a nonzero element. Every nonzero element is invertible, with $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$, and there are no zero divisors and no light cone.</p>
+<p>The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed-point set of complex conjugation, a four-dimensional real subspace of $\mathbb{B}$ spanned by $e_0, e_1, e_2, e_3$ with real coefficients. It is a subalgebra, and as a real algebra it is the unique four-dimensional division algebra. Its biquaternion norm is positive definite of signature $(4,0)$; numerically it is the sum of squares $q_0^2 + q_1^2 + q_2^2 + q_3^2$, which never vanishes on a nonzero element. Every nonzero element is invertible, with $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$, and there are no zero divisors and no light cone.</p>
 <p>Its unit group is the sphere $S^3 \cong SU(2)$, the group of rotation rotors, which acts on the subspace by conjugation; the pure vector units $e_1, e_2, e_3$ are the rotation generators, closing under commutation as $\mathrm{SU}(2)$.</p>
 <p>The physical reading of the sector is the Euclidean one: with the scalar imaginary unavailable inside it, the four-dimensional geometry it carries has no distinguished time direction, and the Wick rotation is exactly the relabelling that turns the Lorentzian four-vector space into this sector.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -250,11 +250,11 @@ $$</p>
 <td>Quaternion multiplication rules</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = q_0^2 + q_1^2 + q_2^2 + q_3^2$</td>
+<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = q_0^2 + q_1^2 + q_2^2 + q_3^2$</td>
 <td>Biquaternion norm; positive definite, signature $(4,0)$</td>
 </tr>
 <tr>
-<td>$\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$</td>
+<td>$\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$</td>
 <td>Inverse; exists for every nonzero element</td>
 </tr>
 <tr>

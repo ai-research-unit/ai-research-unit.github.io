@@ -99,9 +99,9 @@ $$</p>
 <p><strong>Associative.</strong> Quaternion multiplication is associative: $(pq)r = p(qr)$.</p>
 <p><strong>Conjugation.</strong> The <strong>quaternion conjugate</strong> of $\tilde q$ is</p>
 <p>$$
-\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3,
+\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3,
 $$</p>
-<p>an involution of the algebra that reverses the order of a product, $\overline{pq} = \bar{\tilde q}\,\bar p$.</p>
+<p>an involution of the algebra that reverses the order of a product, $(pq)^{\natural} = \tilde{q}^{\natural}\,\bar p$.</p>
 <p><strong>Division algebra.</strong> Every non-zero quaternion has a two-sided multiplicative inverse, so $\mathbb{H}$ is a division algebra; it is the largest-dimensional associative real division algebra. The inverse is expressed through the quaternion norm, and the quaternion norm, its multiplicativity and the invertibility criterion it supplies are a form and a distance, developed in <em>Quaternion Norm and Invertibility</em> and not here.</p>
 <p><strong>Frobenius theorem.</strong> The quaternion algebra is one of only three finite-dimensional associative real division algebras, the others being $\mathbb{R}$ and $\mathbb{C}$.</p>
 <h3 id="the-vector-part-and-math41">The Vector Part and $\mathbb{R}^3$</h3>
@@ -136,13 +136,13 @@ pq = p_0 q_0 - \mathbf{p} \cdot \mathbf{q} + p_0 \mathbf{q} + q_0 \mathbf{p} + \
 $$</p>
 <h3 id="conjugations">Conjugations</h3>
 <p>There are <strong>three</strong> natural conjugations on $\mathbb{H}$, obtained from the quaternion conjugation together with the negation map:</p>
-<p><strong>Quaternion conjugation</strong> $\bar{\tilde q}$:</p>
+<p><strong>Quaternion conjugation</strong> $\tilde{q}^{\natural}$:</p>
 <p>$$
-\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3.
+\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3.
 $$</p>
-<p><strong>Vector conjugation</strong> $-\bar{\tilde q}$:</p>
+<p><strong>Vector conjugation</strong> $-\tilde{q}^{\natural}$:</p>
 <p>$$
--\bar{\tilde q} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3.
+-\tilde{q}^{\natural} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3.
 $$</p>
 <p><strong>Total conjugation</strong> $-\tilde q$:</p>
 <p>$$
@@ -152,7 +152,7 @@ $$</p>
 <h2 id="the-three-subspaces">The Three Subspaces</h2>
 <p>Each of the three conjugations has a fixed-point set, i.e., a set of quaternions left invariant by the conjugation. Each fixed-point set is a real vector subspace of $\mathbb{H}$. The three subspaces are described below.</p>
 <h3 id="the-real-subspace">The Real Subspace</h3>
-<p>The fixed points of <strong>quaternion conjugation</strong> are the quaternions satisfying $\bar{\tilde q} = \tilde q$. In developed form,</p>
+<p>The fixed points of <strong>quaternion conjugation</strong> are the quaternions satisfying $\tilde{q}^{\natural} = \tilde q$. In developed form,</p>
 <p>$$
 q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3 = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3.
 $$</p>
@@ -167,7 +167,7 @@ $$</p>
 $$</p>
 <p>This is the <strong>real subspace</strong> $\mathbb{R}_{\mathbb{H}}$, a copy of the real number line embedded in $\mathbb{H}$ as the scalar axis. It is a real vector space of dimension $1$. It is a subalgebra of $\mathbb{H}$ (isomorphic to $\mathbb{R}$), and it is the only one of the three fixed-point sets that is an ordered field.</p>
 <h3 id="the-vector-subspace">The Vector Subspace</h3>
-<p>The fixed points of <strong>vector conjugation</strong> are the quaternions satisfying $-\bar{\tilde q} = \tilde q$. In developed form,</p>
+<p>The fixed points of <strong>vector conjugation</strong> are the quaternions satisfying $-\tilde{q}^{\natural} = \tilde q$. In developed form,</p>
 <p>$$
 -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3.
 $$</p>
@@ -203,9 +203,9 @@ $$</p>
 $$</p>
 <p>The two components are obtained from the quaternion conjugation:</p>
 <p>$$
-q_r = \frac{1}{2}(\tilde q + \bar{\tilde q}), \qquad q_v = \frac{1}{2}(\tilde q - \bar{\tilde q}).
+q_r = \frac{1}{2}(\tilde q + \tilde{q}^{\natural}), \qquad q_v = \frac{1}{2}(\tilde q - \tilde{q}^{\natural}).
 $$</p>
-<p>Indeed, $q_r$ is fixed by quaternion conjugation, so it lies in $\mathbb{R}_{\mathbb{H}}$, and $q_v$ satisfies $\bar{\tilde q}_v = -q_v$, so it lies in $\operatorname{Im}\mathbb{H}$.</p>
+<p>Indeed, $q_r$ is fixed by quaternion conjugation, so it lies in $\mathbb{R}_{\mathbb{H}}$, and $q_v$ satisfies $\tilde{q}^{\natural}_v = -q_v$, so it lies in $\operatorname{Im}\mathbb{H}$.</p>
 <p>This gives the direct sum decomposition</p>
 <p>$$
 \mathbb{H} = \mathbb{R}_{\mathbb{H}} \oplus \operatorname{Im}\mathbb{H},
@@ -213,7 +213,7 @@ $$</p>
 <p>where $\operatorname{Im}\mathbb{H}$ is the set of pure quaternions. Both are real vector spaces of dimensions $1$ and $3$, and their direct sum is the full algebra $\mathbb{H}$ of real dimension $4$.</p>
 <p>This is the <strong>scalar-vector decomposition</strong> of a quaternion. It expresses $\tilde q$ as a real number plus a vector in $\mathbb{R}^3$.</p>
 <h2 id="the-conjugate-decomposition">The Conjugate Decomposition</h2>
-<p>The quaternion conjugation $\bar{\cdot}$ is an involution, so it has eigenvalues $+1$ and $-1$. Its eigenspaces are the real subspace $\mathbb{R}_{\mathbb{H}}$ (eigenvalue $+1$) and the vector subspace $\operatorname{Im}\mathbb{H}$ (eigenvalue $-1$). Every quaternion decomposes uniquely as</p>
+<p>The quaternion conjugation ${}^{\natural}$ is an involution, so it has eigenvalues $+1$ and $-1$. Its eigenspaces are the real subspace $\mathbb{R}_{\mathbb{H}}$ (eigenvalue $+1$) and the vector subspace $\operatorname{Im}\mathbb{H}$ (eigenvalue $-1$). Every quaternion decomposes uniquely as</p>
 <p>$$
 \tilde q = q_+ + q_-, \qquad q_+ = q_r, \quad q_- = q_v.
 $$</p>
@@ -278,11 +278,11 @@ $$</p>
 <td>Vector part</td>
 </tr>
 <tr>
-<td>$\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$</td>
+<td>$\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$</td>
 <td>Quaternion conjugate</td>
 </tr>
 <tr>
-<td>$-\bar{\tilde q} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$</td>
+<td>$-\tilde{q}^{\natural} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$</td>
 <td>Vector conjugate</td>
 </tr>
 <tr>
@@ -291,7 +291,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{R}_{\mathbb{H}}$</td>
-<td>Real subspace, fixed-point set of $\bar{\cdot}$</td>
+<td>Real subspace, fixed-point set of ${}^{\natural}$</td>
 </tr>
 <tr>
 <td>$\operatorname{Im}\mathbb{H}$</td>

@@ -102,7 +102,7 @@ $$</p>
 <p>$$
 \tilde{R}(t) \in \mathbb{H}_{\mathbb{B}},
 \qquad
-\tilde{R}\,\tilde{R}^\dagger = e_0 ,
+\tilde{R}\,\tilde{R}^{*} = e_0 ,
 $$</p>
 <p>and a material vector fixed in the body is carried into the laboratory by <strong>rotor conjugation</strong>,</p>
 <p>$$
@@ -113,7 +113,7 @@ $$</p>
 \tilde{R}(t) = \exp\!\left(\frac{\omega t}{2}\,\hat{n}_ke_k\right)
 = \cos\frac{\omega t}{2}\,e_0 + \sin\frac{\omega t}{2}\,\hat{n}_ke_k ,
 $$</p>
-<p>and it rotates every body vector through the angle $\omega t$ about $\hat{\mathbf{n}}$ in the right-handed sense. The rotor is normalized, $N(\tilde{R}) = \tilde{R}\bar{\tilde{R}} = e_0$, and it is a <strong>double cover</strong> of the rotation: $\tilde{R}(\theta + 2\pi,\hat{\mathbf{n}}) = -\tilde{R}(\theta,\hat{\mathbf{n}})$, so that $\pm\tilde{R}$ describe the same orientation and the group of orientations is $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_0\} = SO(3)$.</p>
+<p>and it rotates every body vector through the angle $\omega t$ about $\hat{\mathbf{n}}$ in the right-handed sense. The rotor is normalized, $N(\tilde{R}) = \tilde{R}\tilde{R}^{\natural} = e_0$, and it is a <strong>double cover</strong> of the rotation: $\tilde{R}(\theta + 2\pi,\hat{\mathbf{n}}) = -\tilde{R}(\theta,\hat{\mathbf{n}})$, so that $\pm\tilde{R}$ describe the same orientation and the group of orientations is $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_0\} = SO(3)$.</p>
 <h3 id="the-angular-velocity">The Angular Velocity</h3>
 <p>Differentiating the rotor gives the angular velocity. For the fixed-axis rotor above,</p>
 <p>$$
@@ -122,16 +122,16 @@ $$</p>
 \qquad
 \tilde{\boldsymbol{\omega}} = \omega\,\hat{n}_ke_k .
 $$</p>
-<p>For a general time-dependent rotor the same relation defines the angular velocity, $\tilde{\boldsymbol{\omega}} = 2\,\dot{\tilde{R}}\,\tilde{R}^\dagger$, which is a pure real quaternion because $\tilde{R}\tilde{R}^\dagger = e_0$ implies $\dot{\tilde{R}}\tilde{R}^\dagger + \tilde{R}\dot{\tilde{R}}^\dagger = 0$. The equation $\dot{\tilde{R}} = \tfrac{1}{2}\tilde{\boldsymbol{\omega}}\tilde{R}$ is the biquaternion form of the rigid-body kinematics, and it is the same relation that the Larmor precession uses with $\tilde{\boldsymbol{\omega}}_L = \gamma\mathbf{B}$.</p>
+<p>For a general time-dependent rotor the same relation defines the angular velocity, $\tilde{\boldsymbol{\omega}} = 2\,\dot{\tilde{R}}\,\tilde{R}^{*}$, which is a pure real quaternion because $\tilde{R}\tilde{R}^{*} = e_0$ implies $\dot{\tilde{R}}\tilde{R}^{*} + \tilde{R}\dot{\tilde{R}}^{*} = 0$. The equation $\dot{\tilde{R}} = \tfrac{1}{2}\tilde{\boldsymbol{\omega}}\tilde{R}$ is the biquaternion form of the rigid-body kinematics, and it is the same relation that the Larmor precession uses with $\tilde{\boldsymbol{\omega}}_L = \gamma\mathbf{B}$.</p>
 <p>Acting on a material vector, the rotor equation reproduces the elementary velocity field:</p>
 <p>$$
 \dot{\mathbf{x}} = \tfrac{1}{2}\left[\tilde{\boldsymbol{\omega}},\mathbf{x}\right] = \boldsymbol{\omega}\times\mathbf{x},
 $$</p>
 <p>the commutator of two pure real quaternions being twice their cross product. Every point of the body therefore moves with the velocity of a rigid rotation, and the mechanical angular momentum is $\tilde{\mathbf{L}} = \hat{I}\tilde{\boldsymbol{\omega}}$.</p>
 <h3 id="the-body-frame-and-the-space-frame">The Body Frame and the Space Frame</h3>
-<p>A rotation can be referred to the axes fixed in the laboratory or to the axes fixed in the body, and the two angular velocities are related by the rotor itself. Define the <strong>space-frame</strong> angular velocity by $\tilde{\boldsymbol{\omega}} = 2\dot{\tilde{R}}\tilde{R}^\dagger$ and the <strong>body-frame</strong> angular velocity by</p>
+<p>A rotation can be referred to the axes fixed in the laboratory or to the axes fixed in the body, and the two angular velocities are related by the rotor itself. Define the <strong>space-frame</strong> angular velocity by $\tilde{\boldsymbol{\omega}} = 2\dot{\tilde{R}}\tilde{R}^{*}$ and the <strong>body-frame</strong> angular velocity by</p>
 <p>$$
-\tilde{\boldsymbol{\omega}}_{\rm body} = \tilde{R}^\dagger\,\tilde{\boldsymbol{\omega}}\,\tilde{R} = 2\,\tilde{R}^\dagger\,\dot{\tilde{R}} .
+\tilde{\boldsymbol{\omega}}_{\rm body} = \tilde{R}^{*}\,\tilde{\boldsymbol{\omega}}\,\tilde{R} = 2\,\tilde{R}^{*}\,\dot{\tilde{R}} .
 $$</p>
 <p>The rotor equation then reads in the two frames as</p>
 <p>$$
@@ -187,7 +187,7 @@ $$</p>
 <p>the Barnett magnetization, parallel to the effective field $\mathbf{B}_{\rm eff}$ and therefore along the rotation axis when $\gamma$ is positive and opposed to it when $\gamma$ is negative. The sense is fixed by the sign of $\gamma$, which is what the Einstein–de Haas measurement of the same material returns. The effect is linear in the rotation rate, and the rotation enters the spin's equation exactly as the additional field $\boldsymbol{\omega}/\gamma$: the frame that is at rest for a moment in the applied field $\mathbf{B}$ rotates at $\boldsymbol{\Omega} = -\gamma\mathbf{B}$, and the applied field that would cancel the Barnett field is $-\boldsymbol{\omega}/\gamma$.</p>
 <p>The magnitude of the effect is small. A body rotating at $100$ Hz, $\omega = 628$ rad s$^{-1}$, presents a Barnett field for protons of $|\boldsymbol{\omega}/\gamma_p| = 628/(2.675\times10^8)\approx 2.3\times10^{-6}$ T, a few microtesla. The field is minute, and its observation requires a sensitive magnetometer; the effect was nevertheless detected by Barnett, who observed the magnetization of rotating iron, and it is now observed in rotating paramagnetic salts and in ultracold gases.</p>
 <h3 id="the-rotor-form-of-the-barnett-effect">The Rotor Form of the Barnett Effect</h3>
-<p>In the algebra the Barnett effect is the statement that the <strong>same rotor</strong> that carries the body into the laboratory frame is the rotor whose logarithmic derivative enters the spin's equation of motion. Writing the co-rotating frame by its rotor $\tilde{R}_\omega(t)$ with $\tilde{\boldsymbol{\omega}} = 2\dot{\tilde{R}}_\omega\tilde{R}_\omega^\dagger$, the spin's equation in that frame is</p>
+<p>In the algebra the Barnett effect is the statement that the <strong>same rotor</strong> that carries the body into the laboratory frame is the rotor whose logarithmic derivative enters the spin's equation of motion. Writing the co-rotating frame by its rotor $\tilde{R}_\omega(t)$ with $\tilde{\boldsymbol{\omega}} = 2\dot{\tilde{R}}_\omega\tilde{R}_\omega^{*}$, the spin's equation in that frame is</p>
 <p>$$
 \dot{\mathbf{S}}_{\rm rot} = \mathbf{S}\times\left(\gamma\mathbf{B} + \boldsymbol{\omega}\right),
 $$</p>
@@ -232,7 +232,7 @@ $$</p>
 \mathbf{M} = \chi\,\mathbf{B}_{\rm eff} = \chi\!\left(\mathbf{B} + \frac{\boldsymbol{\omega}}{\gamma}\right),
 $$</p>
 <p>so that a body rotating in zero field is magnetized as if by the field $\boldsymbol{\omega}/\gamma$, the Barnett field. It is the inverse of the Larmor theorem: the frame that is at rest for a moment in the field $\mathbf{B}$ rotates at $\boldsymbol{\Omega} = -\gamma\mathbf{B}$, and the rotation of the body enters the spin's equation exactly as the Barnett field $\boldsymbol{\omega}/\gamma$ does; the applied field that would cancel it is $-\boldsymbol{\omega}/\gamma$.</p>
-<p>The two effects are <strong>reciprocal</strong>, being the two derivatives of the single spin-rotation coupling $U_{\rm rot} = -\boldsymbol{\mu}\cdot\boldsymbol{\Omega}/\gamma$; the same coefficient $1/\gamma$ governs both, so the pair is one measurement of the gyromagnetic factor performed in two directions. The measured value for the ferromagnets is $g\approx 2$, the intrinsic value, and the classical account of that factor is given in the companion article <em>The Classical Origin of g = 2 in Biquaternionic Form</em>. The rotor algebra used throughout — the unit real quaternion $\tilde{R}$, the conjugation $\mathbf{x}\mapsto\tilde{R}\mathbf{x}\tilde{R}^\dagger$, the generator $\dot{\tilde{R}} = \tfrac{1}{2}\tilde{\boldsymbol{\omega}}\tilde{R}$, and the double cover $\tilde{R}(\theta+2\pi) = -\tilde{R}$ — is the classical rigid-body kinematics of the material sector.</p>
+<p>The two effects are <strong>reciprocal</strong>, being the two derivatives of the single spin-rotation coupling $U_{\rm rot} = -\boldsymbol{\mu}\cdot\boldsymbol{\Omega}/\gamma$; the same coefficient $1/\gamma$ governs both, so the pair is one measurement of the gyromagnetic factor performed in two directions. The measured value for the ferromagnets is $g\approx 2$, the intrinsic value, and the classical account of that factor is given in the companion article <em>The Classical Origin of g = 2 in Biquaternionic Form</em>. The rotor algebra used throughout — the unit real quaternion $\tilde{R}$, the conjugation $\mathbf{x}\mapsto\tilde{R}\mathbf{x}\tilde{R}^{*}$, the generator $\dot{\tilde{R}} = \tfrac{1}{2}\tilde{\boldsymbol{\omega}}\tilde{R}$, and the double cover $\tilde{R}(\theta+2\pi) = -\tilde{R}$ — is the classical rigid-body kinematics of the material sector.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -299,7 +299,7 @@ $$</p>
 <td>Orientation rotor, unit real quaternion</td>
 </tr>
 <tr>
-<td>$\mathbf{x}(t) = \tilde{R}\mathbf{x}(0)\tilde{R}^\dagger$</td>
+<td>$\mathbf{x}(t) = \tilde{R}\mathbf{x}(0)\tilde{R}^{*}$</td>
 <td>Rotor conjugation (body vector into the lab)</td>
 </tr>
 <tr>
@@ -307,7 +307,7 @@ $$</p>
 <td>Angular velocity (pure real quaternion)</td>
 </tr>
 <tr>
-<td>$\tilde{\boldsymbol{\omega}} = 2\dot{\tilde{R}}\tilde{R}^\dagger$</td>
+<td>$\tilde{\boldsymbol{\omega}} = 2\dot{\tilde{R}}\tilde{R}^{*}$</td>
 <td>Angular velocity biquaternion</td>
 </tr>
 <tr>

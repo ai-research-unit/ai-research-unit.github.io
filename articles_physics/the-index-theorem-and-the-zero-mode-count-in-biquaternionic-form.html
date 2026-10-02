@@ -57,7 +57,7 @@
 <ul>
 <li><strong>The operator is the framework's.</strong> The Dirac operator in biquaternionic form is built from the biquaternionic gradient $\tilde\nabla=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ and its coupling to the connection, and its square returns the d'Alembertian: the framework's spinor module carries it, and <em>The Dirac Equation in Biquaternionic Form</em> and <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> fix it. The index is a property of that operator.</li>
 <li><strong>The counting is by the topological density, which the framework already has.</strong> The index density is a total derivative whose integral is the instanton number, and the abelian form of the density is the framework's invariant $I_2=\mathbf E\cdot\mathbf B$. This was established in <em>Instantons and Solitons in Biquaternionic Form</em> and is not repeated here.</li>
-<li><strong>The trace is the matrix trace, and the framework's biquaternion norm does not supply it.</strong> The non-abelian index density is $\mathrm{Tr}(F\wedge F)$ with the matrix trace on the gauge factor. The framework's quadratic invariant, the biquaternion norm $N(\tilde F)=\tilde F\bar{\tilde F}$, is a rank-two bilinear of a <em>single</em> algebra element and has no second slot in which to trace two gauge-algebra-valued objects. This is the same rank-two limitation recorded for the topological density, and it controls what the framework can and cannot express about the index.</li>
+<li><strong>The trace is the matrix trace, and the framework's biquaternion norm does not supply it.</strong> The non-abelian index density is $\mathrm{Tr}(F\wedge F)$ with the matrix trace on the gauge factor. The framework's quadratic invariant, the biquaternion norm $N(\tilde F)=\tilde F\tilde F^{\natural}$, is a rank-two bilinear of a <em>single</em> algebra element and has no second slot in which to trace two gauge-algebra-valued objects. This is the same rank-two limitation recorded for the topological density, and it controls what the framework can and cannot express about the index.</li>
 </ul>
 <p>The article states the index theorem as the standard result it is, derives the specialisations that the framework uses, and separates the two.</p>
 <p><strong>Conventions.</strong> We use those of <em>Conventions in the Biquaternion Universe</em> and of the companion gauge articles. The algebra is $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ with $e_k^2=-e_0$, $e_1e_2=e_3$, and central $i$. The material sector is $\mathbb M_-$ and the informational sector is $\mathbb M_+$. The compact gauge algebra is $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{e_1,e_2,e_3\}$ with generators $T_a=\tfrac12 e_a$, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ on the anti-Hermitian convention. The gauge connection and curvature are $\mathcal A_\mu\in\mathrm{SU}(2)$ and $F_{\mu\nu}=\partial_\mu\mathcal A_\nu-\partial_\nu\mathcal A_\mu+i\kappa[\mathcal A_\mu,\mathcal A_\nu]$, with $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$. The topological charge is $Q=\frac{1}{8\pi^2}\int_{\mathbb R^4}\mathrm{Tr}(F\wedge F)\in\mathbb Z$ and the matrix trace $\mathrm{Tr}$ is distinguished from the informational trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. On the Euclidean slice the curvature is written without the explicit factor $i$ in the commutator, as in <em>Instantons and Solitons in Biquaternionic Form</em>.</p>
@@ -85,7 +85,7 @@ $$</p>
 <p>$$
 \mathrm{ind}\,\slashed{D}_R \;=\; n_+ - n_- ,
 $$</p>
-<p>an integer that is invariant under continuous deformations of the connection and the metric because it is an integer-valued continuous function. In the biquaternionic framework the operator is the one built from $\tilde\nabla$; the algebraic form of the massless Dirac equation is $\tilde\nabla\psi=0$, and <em>The Dirac Equation in Biquaternionic Form</em> shows that $\tilde\nabla\bar{\tilde\nabla}=\bar{\tilde\nabla}\tilde\nabla=\Box$ with $\Box=\partial_{ict}^2+\Delta$, so the operator is the square root of the framework's d'Alembertian. The index is the property of this operator that the rest of the article computes.</p>
+<p>an integer that is invariant under continuous deformations of the connection and the metric because it is an integer-valued continuous function. In the biquaternionic framework the operator is the one built from $\tilde\nabla$; the algebraic form of the massless Dirac equation is $\tilde\nabla\psi=0$, and <em>The Dirac Equation in Biquaternionic Form</em> shows that $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$ with $\Box=\partial_{ict}^2+\Delta$, so the operator is the square root of the framework's d'Alembertian. The index is the property of this operator that the rest of the article computes.</p>
 <h2 id="the-atiyahsinger-theorem">The Atiyah–Singer Theorem</h2>
 <p>For a closed even-dimensional spin manifold $M$ and a twisted Dirac operator, the index is the integral of a characteristic class,</p>
 <p>$$
@@ -212,7 +212,7 @@ $$</p>
 <td>Biquaternionic gradient; Dirac operator</td>
 </tr>
 <tr>
-<td>$\Box=\tilde\nabla\bar{\tilde\nabla}=\partial_{ict}^2+\Delta$</td>
+<td>$\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$</td>
 <td>d'Alembertian (series convention)</td>
 </tr>
 <tr>
@@ -276,7 +276,7 @@ $$</p>
 <td>Framework's second invariant; index density in the abelian case</td>
 </tr>
 <tr>
-<td>$N(\tilde F)=\tilde F\bar{\tilde F}$</td>
+<td>$N(\tilde F)=\tilde F\tilde F^{\natural}$</td>
 <td>Biquaternion norm; rank-two, single-slot, does not supply $\mathrm{Tr}(F\wedge F)$</td>
 </tr>
 </tbody>

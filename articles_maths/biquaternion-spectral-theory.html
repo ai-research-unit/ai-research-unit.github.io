@@ -92,7 +92,7 @@ the two roots coinciding exactly when $B = 0$.</p>
 $$
 \tilde{Q}^2 = Q_0^2 e_0 + 2Q_0\mathbf{Q} - B^2 e_0 = 2Q_0\tilde{Q} - (Q_0^2 + B^2)e_0 = 2Q_0\tilde{Q} - N(\tilde{Q})e_0.
 $$</p>
-<p><strong>Corollary 4.2.</strong> If $N(\tilde{Q}) \neq 0$, then $\tilde{Q}^{-1} = (2Q_0e_0 - \tilde{Q})/N(\tilde{Q}) = \bar{\tilde{Q}}/N(\tilde{Q})$.</p>
+<p><strong>Corollary 4.2.</strong> If $N(\tilde{Q}) \neq 0$, then $\tilde{Q}^{-1} = (2Q_0e_0 - \tilde{Q})/N(\tilde{Q}) = \tilde{Q}^{\natural}/N(\tilde{Q})$.</p>
 <p><strong>Proposition 4.3.</strong> The functionals $T, D$ satisfy
 $$
 T(\tilde{P}+\tilde{Q}) = T(\tilde{P})+T(\tilde{Q}), \quad T(\lambda\tilde{Q}) = \lambda T(\tilde{Q}), \quad T(\tilde{P}\tilde{Q}) = T(\tilde{Q}\tilde{P}), \quad T(e_0) = 2,
@@ -139,7 +139,7 @@ $$</p>
 <p><strong>Definition 7.1.</strong> The <strong>resolvent</strong> of $\tilde{Q}$ is $R(\lambda) = (\tilde{Q} - \lambda e_0)^{-1}$, defined for $\lambda \notin \sigma(\tilde{Q})$.</p>
 <p><strong>Proposition 7.2.</strong> For $\lambda \notin \sigma(\tilde{Q})$,
 $$
-R(\lambda) = \frac{(Q_0-\lambda)e_0 - \mathbf{Q}}{(Q_0-\lambda)^2 + B^2} = \frac{\overline{\tilde{Q} - \lambda e_0}}{p_{\tilde{Q}}(\lambda)}.
+R(\lambda) = \frac{(Q_0-\lambda)e_0 - \mathbf{Q}}{(Q_0-\lambda)^2 + B^2} = \frac{(\tilde{Q} - \lambda e_0)^{\natural}}{p_{\tilde{Q}}(\lambda)}.
 $$
 <strong>Proof.</strong> $\tilde{Q} - \lambda e_0$ has conjugate $(Q_0-\lambda)e_0 - \mathbf{Q}$ and norm $(Q_0-\lambda)^2 + B^2 = p_{\tilde{Q}}(\lambda)$; apply Corollary 4.2.</p>
 <p><strong>Corollary 7.3 (analyticity).</strong> $R$ is rational in $\lambda$ with denominator $p_{\tilde{Q}}(\lambda)$, hence holomorphic on $\mathbb{C}\setminus\sigma(\tilde{Q})$, with poles exactly at the two eigenvalues. The pole is simple when $\tilde{Q}$ is diagonalizable, and double when $B = 0$ with $\mathbf{Q} \neq 0$, where $p_{\tilde{Q}} = (\lambda-Q_0)^2$ but the numerator at $\lambda = Q_0$ is $-\mathbf{Q} \neq 0$.</p>
@@ -154,7 +154,7 @@ $$
 <p><strong>Non-injectivity.</strong> Since $2\pi i n e_0$ is central, $\exp(\tilde{Q} + 2\pi i n e_0) = \exp(\tilde{Q})$ for every integer $n$; in particular $\exp(0) = \exp(2\pi i e_0) = e_0$, although $2\pi i e_0 \neq 0$.</p>
 <p><strong>The logarithm.</strong> A <strong>logarithm</strong> of $\tilde{Q}$ is any $\tilde{L}$ with $\exp(\tilde{L}) = \tilde{Q}$. The companion article proves that every invertible biquaternion has one, so $\exp : \mathbb{B} \to \mathbb{B}^\times$ is surjective; not being injective, it has a multivalued inverse, and a branch must be chosen. Non-uniqueness comes from adding a commuting element of the kernel, in particular $2\pi i n e_0$, and from choosing a complex logarithm of each eigenvalue. No continuous, and hence no holomorphic, logarithm can exist on the whole group of units: one applied to $\lambda e_0$ and composed with the determinant would give a continuous logarithm of $\lambda^2$ on $\mathbb{C}^\times$, impossible because $\lambda^2$ winds twice around the origin.</p>
 <h2 id="hermitian-and-normal-elements">Hermitian and Normal Elements</h2>
-<p><strong>Definition 10.1.</strong> $\tilde{Q}$ is <strong>Hermitian</strong> if $\tilde{Q}^\dagger = \tilde{Q}$, <strong>unitary</strong> if $\tilde{Q}^\dagger\tilde{Q} = \tilde{Q}\tilde{Q}^\dagger = e_0$, and <strong>normal</strong> if $\tilde{Q}\tilde{Q}^\dagger = \tilde{Q}^\dagger\tilde{Q}$. Hermitian and unitary elements are normal.</p>
+<p><strong>Definition 10.1.</strong> $\tilde{Q}$ is <strong>Hermitian</strong> if $\tilde{Q}^{*} = \tilde{Q}$, <strong>unitary</strong> if $\tilde{Q}^{*}\tilde{Q} = \tilde{Q}\tilde{Q}^{*} = e_0$, and <strong>normal</strong> if $\tilde{Q}\tilde{Q}^{*} = \tilde{Q}^{*}\tilde{Q}$. Hermitian and unitary elements are normal.</p>
 <p>The Hermitian condition is a subspace condition: writing $\tilde{Q} = \sum_\mu Q_\mu e_\mu$, it says exactly that $Q_0 \in \mathbb{R}$ and $Q_k = iq'_k$ with $q'_k \in \mathbb{R}$. So the Hermitian elements of $\mathbb{B}$ are precisely the elements of the Hermitian subspace $\mathbb{M}_+$, and the anti-Hermitian elements are precisely those of $\mathbb{M}_-$; the Hermitian idempotents $\tilde\Pi_1, \tilde\Pi_2$ of Theorem 11.2 lie in $\mathbb{M}_+$.</p>
 <p><strong>Proposition 10.3.</strong> If $\tilde{Q}$ is Hermitian then $T(\tilde{Q})$, $D(\tilde{Q})$, and both eigenvalues are real.</p>
 <p><strong>Proof.</strong> Hermitian elements have $Q_0 \in \mathbb{R}$ and $Q_k = iq'_k$ with $q'_k \in \mathbb{R}$, so $B^2 = -\sum_k(q'_k)^2$ is real and non-positive, $iB$ is real, and $Q_0 \pm iB \in \mathbb{R}$.</p>
@@ -163,7 +163,7 @@ $$
 <p><strong>Theorem 11.1.</strong> $M \in M_2(\mathbb{C})$ is normal iff $M = U\,\mathrm{diag}(\lambda_1,\lambda_2)\,U^\dagger$ with $U$ unitary and $\lambda_1,\lambda_2 \in \mathbb{C}$ its spectrum; if $M$ is Hermitian the $\lambda_i$ are real, and if $M$ is unitary they have modulus $1$.</p>
 <p><strong>Theorem 11.2 (biquaternion form).</strong> $\tilde{Q}$ is normal iff there are a unitary $\tilde{U} \in \mathbb{B}$ and $\lambda_1,\lambda_2 \in \mathbb{C}$ with
 $$
-\tilde{U}\tilde{Q}\tilde{U}^\dagger = \frac{\lambda_1+\lambda_2}{2}e_0 + \frac{i(\lambda_1-\lambda_2)}{2}e_3.
+\tilde{U}\tilde{Q}\tilde{U}^{*} = \frac{\lambda_1+\lambda_2}{2}e_0 + \frac{i(\lambda_1-\lambda_2)}{2}e_3.
 $$
 Equivalently $\tilde{Q} = \lambda_1\tilde\Pi_1 + \lambda_2\tilde\Pi_2$ with Hermitian idempotents $\tilde\Pi_1,\tilde\Pi_2$ satisfying $\tilde\Pi_1+\tilde\Pi_2 = e_0$, $\tilde\Pi_1\tilde\Pi_2 = 0$, $\tilde\Pi_i^\dagger = \tilde\Pi_i$, $\tilde\Pi_i^2 = \tilde\Pi_i$; for $\lambda_1 \neq \lambda_2$,
 $$

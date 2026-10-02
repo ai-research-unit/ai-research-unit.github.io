@@ -64,7 +64,7 @@ $$</p>
 <p>which is a function of the sector's biquaternion norm. Erasure is the reset of a state to a fixed pointer value; it is a completely positive trace-preserving map of <strong>rank two</strong> in the algebra, and it lowers $\mathcal{S}$ by exactly $\log 2$ for a full bit. The second law, applied to the memory together with its environment, then forces the environment's entropy upward by the same amount, and the heat that carries that entropy is the material cost. The exchange rate is the temperature $T$, and the price is $k_B T \log 2$ per bit.</p>
 <p>The biquaternion content of the article is structural. The two ledgers of the exchange are the biquaternion norms of the two sectors, and the two biquaternion norms are exchanged by the central factor $i$: for every element, $N(i\tilde{Q}) = -N(\tilde{Q})$, so multiplication by $i$ maps the material sector to the informational sector and reverses the sign of the quadratic form. The material ledger and the informational ledger are thus mirror images under the algebra's imaginary unit, and the temperature is the thermodynamic rate at which one is converted into the other. What the framework does <strong>not</strong> supply is the numerical rate itself: $k_B T \log 2$ is a theorem of thermodynamics and statistical mechanics, transcribed here as standard, and the framework's role is to exhibit the two sectors, their entropies, and the exchange of their quadratic forms.</p>
 <p>The treatment is classical. The memory is a classical bit: a state diagonal in a pointer basis, with no coherences, and its entropy is the Shannon entropy of its pointer distribution. The erasure map is the classical reset. Nothing quantum is used, and the standard results of quantum thermodynamics — the entropy of a thermal state, the free-energy balance of a quantum channel — are not developed; where they are cited, they are cited as the standard context.</p>
-<p>The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; $i$ is the central scalar imaginary; the sectors are $\mathbb{M}_+$ (Hermitian states) and $\mathbb{M}_-$ (anti-Hermitian energy-momentum); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$; and the entropy is measured in nats, the thermodynamic entropy being $k_B$ times it.</p>
+<p>The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; $i$ is the central scalar imaginary; the sectors are $\mathbb{M}_+$ (Hermitian states) and $\mathbb{M}_-$ (anti-Hermitian energy-momentum); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and the entropy is measured in nats, the thermodynamic entropy being $k_B$ times it.</p>
 <h2 id="landauers-principle">Landauer's Principle</h2>
 <h3 id="the-statement">The Statement</h3>
 <p>Let a memory have two distinguishable logical states, and let it be in thermal contact with an environment at temperature $T$. If the memory is <strong>erased</strong> — reset to a single standard logical state, whatever its prior logical state — then the heat delivered to the environment satisfies</p>
@@ -114,11 +114,11 @@ $$</p>
 $$</p>
 <p>The temperature is the conversion factor between the two ledgers: it converts energy in $\mathbb{M}_-$ into entropy in the informational currency.</p>
 <h3 id="the-sector-exchange">The Sector Exchange</h3>
-<p>The two sectors' quadratic forms are exchanged by the imaginary unit. Since $i$ is central and the quaternion conjugation fixes it, $\overline{i\tilde{Q}} = i\bar{\tilde{Q}}$, and therefore</p>
+<p>The two sectors' quadratic forms are exchanged by the imaginary unit. Since $i$ is central and the quaternion conjugation fixes it, $\overline{i\tilde{Q}} = i\tilde{Q}^{\natural}$, and therefore</p>
 <p>$$
 N(i\tilde{Q}) = (i\tilde{Q})\,\overline{(i\tilde{Q})}
-= (i\tilde{Q})(i\bar{\tilde{Q}})
-= i^2\,\tilde{Q}\bar{\tilde{Q}}
+= (i\tilde{Q})(i\tilde{Q}^{\natural})
+= i^2\,\tilde{Q}\tilde{Q}^{\natural}
 = -N(\tilde{Q}) .
 $$</p>
 <p>That is, multiplication by $i$ maps $\mathbb{M}_-$ to $\mathbb{M}_+$ and reverses the sign of the biquaternion norm. The energy-momentum vector of a material body, whose biquaternion norm is non-positive, is carried by $i$ to an element of the informational sector whose biquaternion norm is non-negative — the same sign convention that makes the state space of $\mathbb{M}_+$ the future cone of $N$. The two ledgers of the exchange are mirror images under the algebra's imaginary unit.</p>
@@ -206,7 +206,7 @@ $$</p>
 <tbody>
 <tr>
 <td>Reversible gate (rotor conjugation)</td>
-<td>$\tilde{\rho}\mapsto\tilde{R}\tilde{\rho}\tilde{R}^\dagger$, $\tilde{R}\tilde{R}^\dagger=e_0$</td>
+<td>$\tilde{\rho}\mapsto\tilde{R}\tilde{\rho}\tilde{R}^{*}$, $\tilde{R}\tilde{R}^{*}=e_0$</td>
 <td>$0$</td>
 <td>$\{0,0,0\}$</td>
 </tr>
@@ -284,7 +284,7 @@ $$</p>
 <td>Trace, $\mathrm{Tr}(e_0)=2$</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$</td>
+<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>

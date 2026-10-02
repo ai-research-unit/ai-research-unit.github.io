@@ -77,7 +77,7 @@ The modular conjugation <strong>conjugates the scalar imaginary</strong> $i$. Ev
 <li><strong>The character of the modular flow is fixed by the type of the algebra.</strong> For a semifinite factor it is inner for every $t$; for a type III$_1$ factor it is outer for every $t\neq0$. The direction of this statement is frequently reversed in casual retellings, and the reversal matters.</li>
 </ul>
 <p>The article proceeds as follows. The construction and its structural identities come first. Then the two hypotheses, with an explicit failure when separation is dropped. Then the modular flow and its identification with the KMS flow of the parent article. Then the finite-dimensional realization in $\mathbb{B}$ and the closed-form polar decomposition. Then the biquaternion candidate for $S$ and what the framework does and does not supply. Then the type of $\mathbb{B}$ and the inner/outer classification. It closes with the boundary between what is established and what is a gap.</p>
-<p><strong>Conventions.</strong> Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. Hermitian conjugation is $\dagger$, and it is the algebra involution $A\mapsto A^*$ of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, so that $\mathrm{Tr}(e_0)=2$.</p>
+<p><strong>Conventions.</strong> Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. Hermitian conjugation is ${}^{*}$, and it is the algebra involution $A\mapsto A^*$ of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, so that $\mathrm{Tr}(e_0)=2$.</p>
 <h2 id="the-tomitatakesaki-construction">The Tomita–Takesaki Construction</h2>
 <h3 id="cyclic-and-separating-vectors">Cyclic and Separating Vectors</h3>
 <p>Let $M$ be a von Neumann algebra on a Hilbert space $\mathcal{H}$, and let $\Omega\in\mathcal{H}$. The vector is</p>
@@ -160,7 +160,7 @@ and the parent article's algebraic fact that $K$ is a Hermitian element of the a
 <h3 id="the-gns-hilbert-space">The GNS Hilbert Space</h3>
 <p>Take $M=\mathbb{B}\cong M_2(\mathbb{C})$, and let $\tilde\rho\in\mathbb{M}_+$ be positive definite with $\mathrm{Tr}(\tilde\rho)=1$. On the vector space $\mathbb{B}$ put the inner product
 $$
-\langle \tilde{A},\tilde{B}\rangle_{\tilde\rho} := \mathrm{Tr}\big(\tilde\rho\,\tilde{A}^\dagger\tilde{B}\big),
+\langle \tilde{A},\tilde{B}\rangle_{\tilde\rho} := \mathrm{Tr}\big(\tilde\rho\,\tilde{A}^{*}\tilde{B}\big),
 $$
 let $M$ act by left multiplication, $\pi(\tilde{A})\tilde{B}=\tilde{A}\tilde{B}$, and take the vector
 $$
@@ -174,16 +174,16 @@ Because $\tilde\rho$ is positive definite the form is nondegenerate and the stat
 <h3 id="the-tomita-operator-the-modular-operator-and-the-modular-conjugation">The Tomita Operator, the Modular Operator, and the Modular Conjugation</h3>
 <p>Identifying the vector $\pi(\tilde{A})\Omega=\tilde{A}e_0$ with the algebra element $\tilde{A}$ (the Hilbert space is $\mathbb{B}$ itself), the Tomita operator is
 $$
-S_0(\tilde{A}) = \tilde{A}^\dagger .
+S_0(\tilde{A}) = \tilde{A}^{*} .
 $$
-<strong>The Tomita operator of the biquaternion algebra is its Hermitian conjugation.</strong> It is anti-linear because $\dagger$ conjugates the coefficients: for $\tilde{A}=\sum_\mu Q_\mu e_\mu$ one has $\tilde{A}^\dagger=\bar Q_0e_0-\sum_{k=1}^{3}\bar Q_ke_k$, using $e_0^\dagger=e_0$ and $e_k^\dagger=-e_k$. The same conjugation of coefficients is what conjugates $i$, so the anti-linearity of $S_0$ and the conjugation of the scalar imaginary are one and the same operation in this framework.</p>
+<strong>The Tomita operator of the biquaternion algebra is its Hermitian conjugation.</strong> It is anti-linear because ${}^{*}$ conjugates the coefficients: for $\tilde{A}=\sum_\mu Q_\mu e_\mu$ one has $\tilde{A}^{*}=\bar Q_0e_0-\sum_{k=1}^{3}\bar Q_ke_k$, using $e_0^\dagger=e_0$ and $e_k^{*}=-e_k$. The same conjugation of coefficients is what conjugates $i$, so the anti-linearity of $S_0$ and the conjugation of the scalar imaginary are one and the same operation in this framework.</p>
 <p>The Hilbert-space adjoint of the anti-linear $S_0$, defined by
 $$
 \langle S_0\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\overline{\langle\tilde{A},S_0^*\tilde{B}\rangle_{\tilde\rho}},
 $$
 is
 $$
-S_0^*(\tilde{B}) = \tilde\rho\,\tilde{B}^\dagger\tilde\rho^{-1},
+S_0^*(\tilde{B}) = \tilde\rho\,\tilde{B}^{*}\tilde\rho^{-1},
 $$
 whence
 $$
@@ -192,13 +192,13 @@ $$
 $$
 The polar decomposition $S_0=J\Delta^{1/2}$ then gives
 $$
-J(\tilde{A}) = \tilde\rho^{1/2}\tilde{A}^\dagger\tilde\rho^{-1/2}.
+J(\tilde{A}) = \tilde\rho^{1/2}\tilde{A}^{*}\tilde\rho^{-1/2}.
 $$
 The <strong>modular flow</strong> is
 $$
 \sigma_t(\tilde{A}) = \Delta^{it}\tilde{A}\Delta^{-it} = \tilde\rho^{it}\tilde{A}\tilde\rho^{-it},
 $$
-which is an <strong>inner</strong> automorphism of $\mathbb{B}$, implemented by the unitary $\tilde\rho^{it}\in\mathbb{B}$. It preserves Hermitian conjugation, $\sigma_t(\tilde{A}^\dagger)=\sigma_t(\tilde{A})^\dagger$, and hence acts on $\mathbb{M}_+$ and $\mathbb{M}_-$ separately. With
+which is an <strong>inner</strong> automorphism of $\mathbb{B}$, implemented by the unitary $\tilde\rho^{it}\in\mathbb{B}$. It preserves Hermitian conjugation, $\sigma_t(\tilde{A}^{*})=\sigma_t(\tilde{A})^\dagger$, and hence acts on $\mathbb{M}_+$ and $\mathbb{M}_-$ separately. With
 $$
 \tilde K := -\log\tilde\rho \ \in\mathbb{M}_+,
 $$
@@ -226,19 +226,19 @@ $$
 $$
 with $Z=1+e^{-\beta\omega}=1.339596$, in agreement with the partition-function article's $K=\beta H+\log Z\,e_0$ and with that article's partition function.</p>
 <h2 id="the-biquaternion-candidate-for-math219">The Biquaternion Candidate for $S$</h2>
-<p>The framework supplies a natural candidate for $S$, and it is the Hermitian conjugation $\dagger$ itself:
+<p>The framework supplies a natural candidate for $S$, and it is the Hermitian conjugation ${}^{*}$ itself:
 $$
-S_0:\ \tilde{A}\mapsto\tilde{A}^\dagger .
+S_0:\ \tilde{A}\mapsto\tilde{A}^{*} .
 $$
-This is not a choice made to fit the theory; it is the involution that defines the framework's two sectors, $\mathbb{M}_+$ being the $+1$ eigenspace of $\dagger$ and $\mathbb{M}_-$ the $-1$ eigenspace. Two remarks.</p>
-<p><strong>The candidate satisfies the hypotheses.</strong> With $\Omega=e_0$, cyclicity and separation hold automatically, and the state is faithful exactly when $\tilde\rho>0$. So the pair $(\mathbb{B},\Omega)$ with $\dagger$ as the involution is a genuine instance of the construction, not a formal resemblance. It also explains the anti-linearity: the Hermitian conjugation of $\mathbb{B}$ conjugates the coefficients, which is the same operation that conjugates $i$, so the anti-unitary character of $J$ is inherited from the framework's own conjugation rather than imported.</p>
-<p><strong>The state is not supplied.</strong> $S_0$ as a map is state-independent — $\tilde{A}\mapsto\tilde{A}^\dagger$ for every $\tilde\rho$ — but the polar decomposition is not: $\Delta$ and $J$ depend on $\tilde\rho$, through the inner product. And the framework's most distinguished state is the tracial one,
+This is not a choice made to fit the theory; it is the involution that defines the framework's two sectors, $\mathbb{M}_+$ being the $+1$ eigenspace of ${}^{*}$ and $\mathbb{M}_-$ the $-1$ eigenspace. Two remarks.</p>
+<p><strong>The candidate satisfies the hypotheses.</strong> With $\Omega=e_0$, cyclicity and separation hold automatically, and the state is faithful exactly when $\tilde\rho>0$. So the pair $(\mathbb{B},\Omega)$ with ${}^{*}$ as the involution is a genuine instance of the construction, not a formal resemblance. It also explains the anti-linearity: the Hermitian conjugation of $\mathbb{B}$ conjugates the coefficients, which is the same operation that conjugates $i$, so the anti-unitary character of $J$ is inherited from the framework's own conjugation rather than imported.</p>
+<p><strong>The state is not supplied.</strong> $S_0$ as a map is state-independent — $\tilde{A}\mapsto\tilde{A}^{*}$ for every $\tilde\rho$ — but the polar decomposition is not: $\Delta$ and $J$ depend on $\tilde\rho$, through the inner product. And the framework's most distinguished state is the tracial one,
 $$
 \tilde\rho=\tfrac12 e_0 \qquad(\mathbf{r}=0),
 $$
 for which
 $$
-\Delta=1, \qquad J=S_0=\dagger, \qquad \sigma_t=\mathrm{id} :
+\Delta=1, \qquad J=S_0={}^{*}, \qquad \sigma_t=\mathrm{id} :
 $$
 the modular flow is trivial. A nontrivial modular flow requires a nontracial state. The natural family is the thermal states $\tilde\rho=e^{-\beta\tilde H}/\mathrm{Tr}(e^{-\beta\tilde H})$ with $\tilde H\in\mathbb{M}_+$, and for those $\tilde K=-\log\tilde\rho$ generates the flow; but the algebra itself does not select one. <strong>This is a gap, and it is left visible:</strong> the framework supplies $S$, supplies a family of states, and supplies no dynamics that chooses among them.</p>
 <h2 id="the-type-of-the-algebra-and-inner-versus-outer-modular-flow">The Type of the Algebra and Inner Versus Outer Modular Flow</h2>
@@ -295,15 +295,15 @@ assigning to $t$ the class of the modular automorphism in the outer automorphism
 </ul>
 <p><strong>Established (recomputed here).</strong></p>
 <ul>
-<li>$M=\mathbb{B}$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde{A}^\dagger\tilde{B})$ and $\Omega=e_0$, is an instance; $S_0=\dagger$.</li>
-<li>$\Delta(\tilde{A})=\tilde\rho\tilde{A}\tilde\rho^{-1}$, $\Delta^{1/2}(\tilde{A})=\tilde\rho^{1/2}\tilde{A}\tilde\rho^{-1/2}$, $J(\tilde{A})=\tilde\rho^{1/2}\tilde{A}^\dagger\tilde\rho^{-1/2}$, $\sigma_t(\tilde{A})=\tilde\rho^{it}\tilde{A}\tilde\rho^{-it}$.</li>
+<li>$M=\mathbb{B}$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde{A}^{*}\tilde{B})$ and $\Omega=e_0$, is an instance; $S_0={}^{*}$.</li>
+<li>$\Delta(\tilde{A})=\tilde\rho\tilde{A}\tilde\rho^{-1}$, $\Delta^{1/2}(\tilde{A})=\tilde\rho^{1/2}\tilde{A}\tilde\rho^{-1/2}$, $J(\tilde{A})=\tilde\rho^{1/2}\tilde{A}^{*}\tilde\rho^{-1/2}$, $\sigma_t(\tilde{A})=\tilde\rho^{it}\tilde{A}\tilde\rho^{-it}$.</li>
 <li>$J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, $\sigma_t\circ\sigma_s=\sigma_{t+s}$, $d\sigma_t/dt|_{t=0}=-i[\tilde{K},\tilde{A}]$, and $JMJ=M'$.</li>
 <li>$\tilde{K}=-\log\tilde\rho\in\mathbb{M}_+$, and for the thermal single mode $\tilde{K}=\beta\tilde{H}+(\log Z)e_0$, matching the parent and partition-function articles.</li>
 <li>$\mathbb{B}\cong M_2(\mathbb{C})$ is type I$_2$; its modular flow is inner, implemented by $\tilde\rho^{it}\in\mathbb{B}$.</li>
 </ul>
 <p><strong>Interpretation.</strong></p>
 <ul>
-<li>That the framework's Hermitian conjugation $\dagger$ is the natural Tomita operator, and that its coefficient-conjugation is the origin of the anti-unitarity of $J$ and of the conjugation of $i$.</li>
+<li>That the framework's Hermitian conjugation ${}^{*}$ is the natural Tomita operator, and that its coefficient-conjugation is the origin of the anti-unitarity of $J$ and of the conjugation of $i$.</li>
 </ul>
 <p><strong>Gap.</strong></p>
 <ul>
@@ -314,14 +314,14 @@ assigning to $t$ the class of the modular automorphism in the outer automorphism
 </ul>
 <h2 id="summary">Summary</h2>
 <p>The Tomita–Takesaki construction turns a cyclic and separating vector on a von Neumann algebra into an anti-linear involution $S$, and its polar decomposition $S=J\Delta^{1/2}$ into a positive modular operator $\Delta$, an anti-unitary modular conjugation $J$ with $J^2=1$ and $JMJ=M'$, and a modular automorphism group $\sigma_t(A)=\Delta^{it}A\Delta^{-it}$.</p>
-<p>In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde{A}^\dagger\tilde{B})$ and the cyclic separating vector $\Omega=e_0$, the Tomita operator is the Hermitian conjugation,
+<p>In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde{A}^{*}\tilde{B})$ and the cyclic separating vector $\Omega=e_0$, the Tomita operator is the Hermitian conjugation,
 $$
-S_0:\tilde{A}\mapsto\tilde{A}^\dagger,
+S_0:\tilde{A}\mapsto\tilde{A}^{*},
 $$
 and the polar decomposition is
 $$
 \Delta(\tilde{A})=\tilde\rho\tilde{A}\tilde\rho^{-1},\qquad
-J(\tilde{A})=\tilde\rho^{1/2}\tilde{A}^\dagger\tilde\rho^{-1/2},\qquad
+J(\tilde{A})=\tilde\rho^{1/2}\tilde{A}^{*}\tilde\rho^{-1/2},\qquad
 \sigma_t(\tilde{A})=\tilde\rho^{it}\tilde{A}\tilde\rho^{-it}.
 $$
 The identities $J^2=1$, $J\Delta J=\Delta^{-1}$ and $J\,i\,J=-i$ — the modular conjugation conjugates the scalar imaginary — together with the group law of the flow, were verified symbolically and numerically on an explicit faithful state whose Bloch vector was chosen independently of the derivation.</p>
@@ -349,7 +349,7 @@ The identities $J^2=1$, $J\Delta J=\Delta^{-1}$ and $J\,i\,J=-i$ — the modular
 <td>Scalar imaginary, $i^2=-1$</td>
 </tr>
 <tr>
-<td>$\dagger$</td>
+<td>${}^{*}$</td>
 <td>Hermitian conjugation; the Tomita involution $A^*$</td>
 </tr>
 <tr>
@@ -385,7 +385,7 @@ The identities $J^2=1$, $J\Delta J=\Delta^{-1}$ and $J\,i\,J=-i$ — the modular
 <td>Faithful state (positive definite, trace one)</td>
 </tr>
 <tr>
-<td>$\langle\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde{A}^\dagger\tilde{B})$</td>
+<td>$\langle\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde{A}^{*}\tilde{B})$</td>
 <td>GNS inner product on $\mathbb{B}$</td>
 </tr>
 <tr>

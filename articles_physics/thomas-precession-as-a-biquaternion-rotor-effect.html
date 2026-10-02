@@ -65,7 +65,7 @@ $$</p>
 <p>The third step is to <strong>take the continuous limit</strong>. The rest frames at two laboratory times $t$ and $t+dt$ are related by the interval rotor $\tilde{M}=\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}\tilde{\Lambda}_{\mathbf{v}}^{-1}$, whose rotation factor is the Thomas–Wigner rotation of the interval. Expanding the exact product to first order in $dt$ gives $\boldsymbol{\omega}_T$, with the axis $\widehat{\mathbf{a}\times\mathbf{v}}$ and the coefficient $\gamma^{2}/(\gamma+1)$; the "Thomas half" is the value of that coefficient at $\gamma=1$. The whole of the Thomas precession is thus the linearization of a quaternion product.</p>
 <p>Three boundaries are respected. The <strong>Wigner rotation as an information-theoretic object</strong> belongs to the sibling quantum series, <code>Biquaternion Relativistic Quantum Theory</code>, subcategory on informational aspects; the present article is the kinematic statement. The <strong>cover of the Lorentz group</strong> and its topology belong to <code>Biquaternion Relativistic Non Quantum Theory</code>, subcategory <code>generalities</code>; here the cover is used only through the statement that the boost rotors are unit-norm biquaternions and that $SL(2,\mathbb{C})$ is a double cover of $SO^{+}(1,3)$. The <strong>Larmor precession</strong> of a magnetic moment in a magnetic field is a non-relativistic effect and belongs to <code>Biquaternion Non Relativistic Non Quantum Theory</code>, subcategory on effects with intrinsic magnetism; it appears here only as the non-relativistic limit against which the Thomas term is read.</p>
 <p>The article is organized as follows. The next section fixes the boost rotor and the instantaneous rest frame. The following section develops the composition of two boosts and the exact Wigner angle. The next two sections take the continuous limit and identify the Thomas rotor. The remaining sections treat uniform circular motion, the connection to the spin of a relativistic particle, and the factor $\tfrac12$ in the spin–orbit coupling, and separate what the algebra supplies from what is standard relativistic kinematics.</p>
-<p><strong>Conventions.</strong> We use those of the foundational articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^{2}=-e_0$ and $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and the scalar imaginary is $i$, central and with $i^{2}=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector, home of the four-vectors) and $\mathbb{M}_+$ (Hermitian, the informational sector, home of the boost rotors), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the home of the rotation rotors, and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ is the central scalar subspace. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, the quaternion conjugate is $\bar{\tilde{Q}}$, and the Hermitian conjugate is $\tilde{Q}^{\dagger}=\bar{\tilde{Q}}^{*}$. The four-velocity is $\tilde{U}=\gamma(ic\,e_0+\mathbf{v})$ with $N(\tilde{U})=-c^{2}$, the four-momentum is $\tilde{P}=m\tilde{U}=iE/c\,e_0+\mathbf{p}$, and the four-force is $\tilde{K}=d\tilde{P}/d\tau\in\mathbb{M}_-$. Throughout, $\tau$ is proper time, $t$ laboratory time, $\mathbf{v}$ the particle velocity, $\mathbf{a}=d\mathbf{v}/dt$ its laboratory acceleration, $\hat{\mathbf{u}}$ a unit direction, and $\psi$ a rapidity with $\tanh\psi=v/c$. The trace pairing on the informational sector is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.</p>
+<p><strong>Conventions.</strong> We use those of the foundational articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^{2}=-e_0$ and $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and the scalar imaginary is $i$, central and with $i^{2}=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector, home of the four-vectors) and $\mathbb{M}_+$ (Hermitian, the informational sector, home of the boost rotors), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the home of the rotation rotors, and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ is the central scalar subspace. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate is $\tilde{Q}^{\natural}$, and the Hermitian conjugate is \tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}. The four-velocity is $\tilde{U}=\gamma(ic\,e_0+\mathbf{v})$ with $N(\tilde{U})=-c^{2}$, the four-momentum is $\tilde{P}=m\tilde{U}=iE/c\,e_0+\mathbf{p}$, and the four-force is $\tilde{K}=d\tilde{P}/d\tau\in\mathbb{M}_-$. Throughout, $\tau$ is proper time, $t$ laboratory time, $\mathbf{v}$ the particle velocity, $\mathbf{a}=d\mathbf{v}/dt$ its laboratory acceleration, $\hat{\mathbf{u}}$ a unit direction, and $\psi$ a rapidity with $\tanh\psi=v/c$. The trace pairing on the informational sector is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.</p>
 <h2 id="the-boost-rotor-and-the-instantaneous-rest-frame">The Boost Rotor and the Instantaneous Rest Frame</h2>
 <p>The <strong>boost rotor</strong> of a frame moving with velocity $\mathbf{u}$ is the unit-norm biquaternion</p>
 <p>$$
@@ -75,21 +75,21 @@ $$</p>
 \qquad
 \hat{\mathbf{u}}=\frac{\mathbf{u}}{u},
 $$</p>
-<p>which is Hermitian, $\tilde{\Lambda}_{\mathbf{u}}^{\dagger}=\tilde{\Lambda}_{\mathbf{u}}$, lies in $\mathbb{M}_+$, and has unit norm, $\tilde{\Lambda}_{\mathbf{u}}\bar{\tilde{\Lambda}}_{\mathbf{u}}=e_0$. It acts on a four-vector by <strong>rotor conjugation</strong>,</p>
+<p>which is Hermitian, $\tilde{\Lambda}_{\mathbf{u}}^{\dagger}=\tilde{\Lambda}_{\mathbf{u}}$, lies in $\mathbb{M}_+$, and has unit norm, $\tilde{\Lambda}_{\mathbf{u}}\tilde{\Lambda}^{\natural}_{\mathbf{u}}=e_0$. It acts on a four-vector by <strong>rotor conjugation</strong>,</p>
 <p>$$
 \tilde{Q}'\;=\;\tilde{\Lambda}_{\mathbf{u}}\,\tilde{Q}\,\tilde{\Lambda}_{\mathbf{u}}^{\dagger},
 $$</p>
 <p>and the conjugation preserves the material sector $\mathbb{M}_-$. When the four-vector acted upon is a four-velocity $\tilde{U}=\gamma(ic\,e_0+\mathbf{v})$, the conjugation produces the standard parallel–perpendicular Lorentz transformation (Companion article <em>Exercise: Boosting a Four-Velocity and Rapidity Composition</em>, for the composition of boosts and the frame four-velocity), and in the collinear case the rapidities subtract, $v'=c\tanh(\psi_v-\psi_u)$.</p>
-<!-- CONVENTION — boost-rotor direction: the rotor $\tilde{\Lambda}_{\mathbf u}=\cosh(\psi_u/2)+i\sinh(\psi_u/2)\hat{\mathbf u}$, built from $+\mathbf u$ with positive scalar part, carries the laboratory to the frame moving with $+\mathbf u$. For the particle four-velocity $\tilde U$ it is the lab-to-rest rotor and satisfies $\tilde{\Lambda}_{\mathbf v}\tilde U\tilde{\Lambda}_{\mathbf v}^{\dagger}=ic\,e_0$. Its quaternion conjugate is the inverse and is the rest-to-lab rotor. The parent Lorentz-transformation article writes $\tilde{\Lambda}=\sqrt{-(i/c)\bar{\tilde U}}$ without stating the direction; the direction is fixed here as in the boosting exercise and must not be reversed. -->
+<!-- CONVENTION — boost-rotor direction: the rotor $\tilde{\Lambda}_{\mathbf u}=\cosh(\psi_u/2)+i\sinh(\psi_u/2)\hat{\mathbf u}$, built from $+\mathbf u$ with positive scalar part, carries the laboratory to the frame moving with $+\mathbf u$. For the particle four-velocity $\tilde U$ it is the lab-to-rest rotor and satisfies $\tilde{\Lambda}_{\mathbf v}\tilde U\tilde{\Lambda}_{\mathbf v}^{\dagger}=ic\,e_0$. Its quaternion conjugate is the inverse and is the rest-to-lab rotor. The parent Lorentz-transformation article writes $\tilde{\Lambda}=\sqrt{-(i/c)\tilde U^{\natural}}$ without stating the direction; the direction is fixed here as in the boosting exercise and must not be reversed. -->
 
 <p>The rotor associated with a four-velocity is the positive Hermitian square root</p>
 <p>$$
-\tilde{\Lambda}_{\mathbf{v}}=\sqrt{-\frac{i}{c}\,\bar{\tilde{U}}}
+\tilde{\Lambda}_{\mathbf{v}}=\sqrt{-\frac{i}{c}\,\tilde{U}^{\natural}}
 =\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\hat{\mathbf{v}},
 \qquad
 \tilde{\Lambda}_{\mathbf{v}}\,\tilde{U}\,\tilde{\Lambda}_{\mathbf{v}}^{\dagger}=ic\,e_0 ,
 $$</p>
-<p>and it is the <strong>laboratory-to-rest</strong> rotor. The four-velocity fixes the Hermitian representative uniquely only up to sign and leaves the orientation of the rest frame free: if $\tilde{Q}$ is any unit-norm rotor with $\tilde{Q}\tilde{U}\tilde{Q}^{\dagger}=ic\,e_0$, then so is $\tilde{Q}\tilde{R}$ for every rotation $\tilde{R}\in\mathbb{H}_{\mathbb{B}}$, because a rotation fixes the rest four-velocity $ic\,e_0$. A single four-velocity therefore determines a <strong>boost but not a rotation</strong>, and the orientation of the rest frame is not seen by any one of them. The Thomas precession is precisely the statement that this orientation is nevertheless determined by the <strong>worldline</strong>: the rest frames at successive events are related by a rotation, and it is visible only in the comparison of two of them.</p>
+<p>and it is the <strong>laboratory-to-rest</strong> rotor. The four-velocity fixes the Hermitian representative uniquely only up to sign and leaves the orientation of the rest frame free: if $\tilde{Q}$ is any unit-norm rotor with $\tilde{Q}\tilde{U}\tilde{Q}^{*}=ic\,e_0$, then so is $\tilde{Q}\tilde{R}$ for every rotation $\tilde{R}\in\mathbb{H}_{\mathbb{B}}$, because a rotation fixes the rest four-velocity $ic\,e_0$. A single four-velocity therefore determines a <strong>boost but not a rotation</strong>, and the orientation of the rest frame is not seen by any one of them. The Thomas precession is precisely the statement that this orientation is nevertheless determined by the <strong>worldline</strong>: the rest frames at successive events are related by a rotation, and it is visible only in the comparison of two of them.</p>
 <h2 id="the-composition-of-two-boosts-and-the-wigner-rotor">The Composition of Two Boosts and the Wigner Rotor</h2>
 <p>Let</p>
 <p>$$
@@ -119,14 +119,14 @@ $$</p>
 <p>$$
 \tilde{M}
 =\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}\,\tilde{\Lambda}_{\mathbf{v}}^{-1}
-=\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}\,\bar{\tilde{\Lambda}}_{\mathbf{v}},
+=\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}\,\tilde{\Lambda}^{\natural}_{\mathbf{v}},
 \qquad
 d\mathbf{v}=\mathbf{a}\,dt .
 $$</p>
 <p>Indeed, if $\tilde{Q}'=\tilde{\Lambda}_{\mathbf{v}}\tilde{Q}\tilde{\Lambda}_{\mathbf{v}}^{\dagger}$ are the components of a four-vector in the rest frame at $t$, then the components in the rest frame at $t+dt$ are</p>
 <p>$$
 \tilde{Q}''=\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}\tilde{Q}\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}^{\dagger}
-=\tilde{M}\tilde{Q}'\tilde{M}^{\dagger},
+=\tilde{M}\tilde{Q}'\tilde{M}^{*},
 $$</p>
 <p>so $\tilde{M}$ is the transformation between the two rest frames. It is unit-norm, and its polar decomposition</p>
 <p>$$
@@ -175,7 +175,7 @@ $$</p>
 $$</p>
 <p>The factor $\tfrac12$ is not inserted by hand: it is the limit of $\gamma^{2}/(\gamma+1)$, and it arises in the expansion through the cancellation of the $d\psi$ terms in the denominator, which leaves the value $1$ rather than the larger $\cosh\psi$ that a first guess might produce.</p>
 <p>Only the <strong>transverse</strong> acceleration precesses the frame. Since $\mathbf{a}\times\mathbf{v}=\mathbf{a}_\perp\times\mathbf{v}$, a purely longitudinal acceleration gives $\boldsymbol{\omega}_T=0$: it changes the rapidity but not the direction of the velocity, and a boost along the instantaneous direction generates no rotation. This is the first sign that a collinear configuration cannot test the direction of $\boldsymbol{\omega}_T$.</p>
-<p>The result is verified by recomputation on the exact rotor product, not on the linearized formula. The interval rotor $\tilde{M}=\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}\bar{\tilde{\Lambda}}_{\mathbf{v}}$ is formed directly as a $2\times2$ complex matrix in the representation $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, and its polar decomposition $\tilde{M}=\tilde{B}\tilde{R}$, $\tilde{B}=\sqrt{\tilde{M}\tilde{M}^{\dagger}}$, $\tilde{R}=\tilde{B}^{-1}\tilde{M}$, is carried out at $dt=10^{-5}$ for random non-collinear pairs $(\mathbf{v},\mathbf{a})$ with $|\mathbf{v}|<c$. The rotation vector of $\tilde{R}$ agrees with $\boldsymbol{\omega}_T\,dt$ in both magnitude and direction to better than $10^{-10}$ in units $c=1$; the collinear case gives zero on both sides. The sign is testable only off the collinear line, and it is the axis $\mathbf{a}\times\mathbf{v}$ that the exact product selects.</p>
+<p>The result is verified by recomputation on the exact rotor product, not on the linearized formula. The interval rotor $\tilde{M}=\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}\tilde{\Lambda}^{\natural}_{\mathbf{v}}$ is formed directly as a $2\times2$ complex matrix in the representation $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, and its polar decomposition $\tilde{M}=\tilde{B}\tilde{R}$, $\tilde{B}=\sqrt{\tilde{M}\tilde{M}^{*}}$, $\tilde{R}=\tilde{B}^{-1}\tilde{M}$, is carried out at $dt=10^{-5}$ for random non-collinear pairs $(\mathbf{v},\mathbf{a})$ with $|\mathbf{v}|<c$. The rotation vector of $\tilde{R}$ agrees with $\boldsymbol{\omega}_T\,dt$ in both magnitude and direction to better than $10^{-10}$ in units $c=1$; the collinear case gives zero on both sides. The sign is testable only off the collinear line, and it is the axis $\mathbf{a}\times\mathbf{v}$ that the exact product selects.</p>
 <h2 id="the-thomas-rotor">The Thomas Rotor</h2>
 <p>The precession can be written as a rotor conjugation in the same half-angle form used throughout the series. Let $\hat{\boldsymbol{\omega}}_T=\widehat{\mathbf{a}\times\mathbf{v}}$ be the unit axis and $\theta_T(t)$ the accumulated angle, $d\theta_T=\omega_T\,dt$. A spatial triad that is carried rigidly by the instantaneous rest frame rotates relative to the laboratory according to</p>
 <p>$$
@@ -185,7 +185,7 @@ $$</p>
 $$</p>
 <p>and, for constant $\boldsymbol{\omega}_T$, the solution is the rotor conjugation</p>
 <p>$$
-\tilde{\mathbf{r}}(t)=\tilde{R}_T(t)\,\tilde{\mathbf{r}}(0)\,\tilde{R}_T(t)^{\dagger},
+\tilde{\mathbf{r}}(t)=\tilde{R}_T(t)\,\tilde{\mathbf{r}}(0)\,\tilde{R}_T(t)^{*},
 \qquad
 \tilde{R}_T(t)=\exp\!\left(\frac{\theta_T(t)}{2}\,\hat{\omega}_{T,k}e_k\right),
 $$</p>
@@ -239,7 +239,7 @@ $$</p>
 <li>The boost rotor is a Hermitian unit-norm biquaternion in $\mathbb{M}_+$, and a <strong>single</strong> boost contains no rotation; the rotation is created by composition.</li>
 <li>The product of two boost rotors admits a unique polar decomposition $\tilde{B}\tilde{R}$ into a pure boost and a rotation of $\mathbb{H}_{\mathbb{B}}$, and the rotation factor is the Wigner rotation.</li>
 <li>The exact Wigner angle and its axis follow from the quaternion product with $e_je_k=\epsilon_{jkl}e_l$ and $e_k^{2}=-e_0$, without any matrix or tensor apparatus; the whole of the Thomas precession is the first-order term of that product.</li>
-<li>The interval rotor $\tilde{M}=\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}\bar{\tilde{\Lambda}}_{\mathbf{v}}$ is the rotor between neighbouring rest frames, and its rotation factor is the Thomas–Wigner rotor.</li>
+<li>The interval rotor $\tilde{M}=\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}\tilde{\Lambda}^{\natural}_{\mathbf{v}}$ is the rotor between neighbouring rest frames, and its rotation factor is the Thomas–Wigner rotor.</li>
 <li>The half-angle rotor $\tilde{R}_T$ that carries the frame, and its double-valued sign, are the same rotor that acts one-sidedly on the spinor module.</li>
 </ul>
 <p><strong>Standard relativistic kinematics transcribed.</strong></p>
@@ -271,7 +271,7 @@ $$</p>
 <p>The Thomas precession is a <strong>rotor effect</strong>. The transformation from the laboratory to the instantaneous rest frame of a particle of velocity $\mathbf{v}$ is the Hermitian unit-norm biquaternion</p>
 <p>$$
 \tilde{\Lambda}_{\mathbf{v}}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\hat{\mathbf{v}}
-=\sqrt{-\frac{i}{c}\,\bar{\tilde{U}}},
+=\sqrt{-\frac{i}{c}\,\tilde{U}^{\natural}},
 \qquad
 \tanh\psi=\frac{v}{c},
 \qquad
@@ -285,7 +285,7 @@ $$</p>
 $$</p>
 <p>about the normal to the plane of the two boost directions. The rest frames at two neighbouring laboratory times are related by the interval rotor</p>
 <p>$$
-\tilde{M}=\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}\,\bar{\tilde{\Lambda}}_{\mathbf{v}}=\tilde{B}\tilde{R},
+\tilde{M}=\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}\,\tilde{\Lambda}^{\natural}_{\mathbf{v}}=\tilde{B}\tilde{R},
 \qquad
 d\mathbf{v}=\mathbf{a}\,dt,
 $$</p>
@@ -326,11 +326,11 @@ $$</p>
 <td>Real-quaternion subspace; central scalar subspace</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$</td>
+<td>$N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>
-<td>$\bar{\tilde{Q}}$, $\tilde{Q}^\dagger=\bar{\tilde{Q}}^{*}$</td>
+<td>$\tilde{Q}^{\natural}$, \tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}</td>
 <td>Quaternion conjugate, Hermitian conjugate</td>
 </tr>
 <tr>
@@ -382,7 +382,7 @@ $$</p>
 <td>Laboratory acceleration; its part perpendicular to $\mathbf{v}$</td>
 </tr>
 <tr>
-<td>$\tilde{M}=\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}\bar{\tilde{\Lambda}}_{\mathbf{v}}$</td>
+<td>$\tilde{M}=\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}\tilde{\Lambda}^{\natural}_{\mathbf{v}}$</td>
 <td>Interval rotor between neighbouring rest frames</td>
 </tr>
 <tr>

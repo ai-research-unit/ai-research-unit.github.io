@@ -75,13 +75,13 @@ $$</p>
 = -\Big(\sum_k \hat p_k^{\,2}\Big)e_0
 = -\hat p^{\,2}e_0 ,
 $$</p>
-<p>because $e_je_k+e_ke_j=0$ for $j\neq k$. Here $\hat p^{\,2}=\hat{\mathbf p}\cdot\hat{\mathbf p}=-\hbar^2\nabla^2$. Since quaternion conjugation negates the vector part, $\bar{\tilde p}=-\tilde p$, and</p>
+<p>because $e_je_k+e_ke_j=0$ for $j\neq k$. Here $\hat p^{\,2}=\hat{\mathbf p}\cdot\hat{\mathbf p}=-\hbar^2\nabla^2$. Since quaternion conjugation negates the vector part, $\tilde p^{\natural}=-\tilde p$, and</p>
 <p>$$
-\tilde p\,\bar{\tilde p} = N(\tilde p) = -\tilde p^{\,2} = \hat p^{\,2}e_0 = -\hbar^2\nabla^2\,e_0 .
+\tilde p\,\tilde p^{\natural} = N(\tilde p) = -\tilde p^{\,2} = \hat p^{\,2}e_0 = -\hbar^2\nabla^2\,e_0 .
 $$</p>
 <p>The two natural transcriptions therefore agree, and the kinetic energy is</p>
 <p>$$
-\boxed{\;\tilde T = -\frac{1}{2m}\tilde p^{\,2} = \frac{1}{2m}\tilde p\,\bar{\tilde p} = \frac{\hat p^{\,2}}{2m}e_0 . \;}
+\boxed{\;\tilde T = -\frac{1}{2m}\tilde p^{\,2} = \frac{1}{2m}\tilde p\,\tilde p^{\natural} = \frac{\hat p^{\,2}}{2m}e_0 . \;}
 $$</p>
 <p>The explicit minus sign is not decoration. The quaternion square of a pure vector is <strong>minus</strong> its Euclidean square, so writing $\tilde p^{\,2}/(2m)$ without the sign would reverse the kinetic term, leaving a Hamiltonian unbounded below and no bound states at all. The sign is the same algebraic fact — $e_k^2=-e_0$ — that gives the biquaternion norm $N(\tilde H)=h_0^2-|\mathbf h|^2$ on $\mathbb{M}_+$ its Lorentzian signature; for the momentum, whose scalar part is zero, the biquaternion norm is $-\sum_kh_k^2\,e_0$, the negative of the Euclidean square. The kinetic operator is, up to the factor $1/2m$, the biquaternion norm of the momentum.</p>
 <h3 id="the-potential">The potential</h3>
@@ -209,7 +209,7 @@ $$</p>
 </tr>
 <tr>
 <td>Kinetic term $\hat p^2/2m$</td>
-<td>$-\frac{1}{2m}\tilde p^{\,2}=\frac{1}{2m}\tilde p\bar{\tilde p}$</td>
+<td>$-\frac{1}{2m}\tilde p^{\,2}=\frac{1}{2m}\tilde p\tilde p^{\natural}$</td>
 <td>scalar</td>
 </tr>
 <tr>
@@ -241,7 +241,7 @@ $$</p>
 </table></div>
 <p>The spectrum, the eigenfunctions, the quantum numbers and the degeneracies are the standard ones. The biquaternion form is a transcription, and it predicts nothing beyond the standard solution. What it does isolate is three structural facts that the standard notation leaves implicit:</p>
 <ol>
-<li><strong>The kinetic term is a biquaternion-norm object.</strong> It carries an explicit minus sign relative to $\tilde p^{\,2}$, because the quaternion square of a pure vector is minus the Euclidean square. The spinless-looking scalar $\hat p^2/2m$ is really $\frac{1}{2m}\tilde p\bar{\tilde p}$, a quadratic form of the momentum.</li>
+<li><strong>The kinetic term is a biquaternion-norm object.</strong> It carries an explicit minus sign relative to $\tilde p^{\,2}$, because the quaternion square of a pure vector is minus the Euclidean square. The spinless-looking scalar $\hat p^2/2m$ is really $\frac{1}{2m}\tilde p\tilde p^{\natural}$, a quadratic form of the momentum.</li>
 <li><strong>The Hamiltonian is central and the generator is in the material sector.</strong> The observable $\tilde H$ lies in $\mathbb{M}_+$; the generator $\tilde G=-i\tilde H/\hbar$ lies in $\mathbb{M}_-$ along $ie_0$. The entire Coulomb content is carried by the scalar slot, and the vector slots, which the spin occupies, are untouched.</li>
 <li><strong>Orbital and spin operators occupy complementary slots.</strong> The orbital operators are scalar multiples of $e_0$ and central; the spin operators are vector-slot elements. Their commutativity, $[\tilde L_i,\tilde S_j]=0$, is the framework's reason for the separability of the non-relativistic problem, and the reason the total-angular-momentum coupling is not required here.</li>
 </ol>
@@ -274,7 +274,7 @@ $$</p>
 <p>at the next order. The Darwin term, the relativistic kinetic correction and the gyromagnetic factor $g=2$ appear in the same expansion, as the framework's Dirac articles and the Foldy–Wouthuysen exercise develop.</p>
 <p><strong>The framework's algebraic content moves to the vector slots.</strong> In the non-relativistic problem the spin is a spectator and the whole Hamiltonian sits in the scalar slot. Relativistically the spin is dynamical, its slot is occupied by part of the Hamiltonian, and the sector structure — the observable/generator split and the coupling $[\tilde J_i,\tilde J_j]=i\hbar\epsilon_{ijk}\tilde J_k$ — does work that it does not do here. Whether the framework adds anything to the standard Dirac–Coulomb solution beyond that rearrangement is a question for the relativistic article; this article makes no claim about it, and the title is restricted to the non-relativistic case for that reason.</p>
 <h2 id="summary">Summary</h2>
-<p>The non-relativistic hydrogen atom in biquaternionic form is the Coulomb problem for a spinor field. The momentum $\tilde p=-i\hbar\nabla$ is Hermitian in $\mathbb{M}_+$; its quaternion square is minus the Euclidean square, $\tilde p^{\,2}=-\hat p^{\,2}e_0=\hbar^2\nabla^2e_0$, so the kinetic energy is $-\tilde p^{\,2}/(2m)=\tilde p\bar{\tilde p}/(2m)=\hat p^{\,2}/(2m)e_0$. Adding the central scalar potential $-\kappa/r$ gives</p>
+<p>The non-relativistic hydrogen atom in biquaternionic form is the Coulomb problem for a spinor field. The momentum $\tilde p=-i\hbar\nabla$ is Hermitian in $\mathbb{M}_+$; its quaternion square is minus the Euclidean square, $\tilde p^{\,2}=-\hat p^{\,2}e_0=\hbar^2\nabla^2e_0$, so the kinetic energy is $-\tilde p^{\,2}/(2m)=\tilde p\tilde p^{\natural}/(2m)=\hat p^{\,2}/(2m)e_0$. Adding the central scalar potential $-\kappa/r$ gives</p>
 <p>$$
 \tilde H = \left[-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}\right]e_0 = h_0e_0 \in \mathbb{M}_+,
 \qquad
@@ -332,7 +332,7 @@ $$</p>
 <td>Momentum, Hermitian, in $\mathbb{M}_+$</td>
 </tr>
 <tr>
-<td>$\tilde p^{\,2}=-\hat p^{\,2}e_0$, $\tilde p\bar{\tilde p}=\hat p^{\,2}e_0$</td>
+<td>$\tilde p^{\,2}=-\hat p^{\,2}e_0$, $\tilde p\tilde p^{\natural}=\hat p^{\,2}e_0$</td>
 <td>Quaternion square and biquaternion norm of the momentum</td>
 </tr>
 <tr>

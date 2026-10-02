@@ -57,7 +57,7 @@
 <p>Four boundaries are respected. (i) The corpus's own Dirac equation, its square, its reduction to Klein–Gordon and its spinor module belong to <em>The Dirac Equation in Biquaternionic Form</em>, <em>Klein–Gordon from the Dirac Square in Biquaternionic Form</em> and <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>; this article adds the external programme's solution theory and says where it differs. (ii) The corpus's Klein–Gordon propagator and the corpus's massive scalar kernel are the subject of <em>The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</em>; this article uses that kernel only as the contrast that makes the programme's result visible. (iii) The identification of $B$ with a Maxwell field is a claim about the interpretation of $B$, not about the operator, and is not reopened. (iv) Nothing here is a derivation of quantum mechanics or a comparison with measured particle data; the equation is chosen by the programme, and the corpus records what the chosen equation implies.</p>
 <p>Two conventions are load-bearing. The source's <strong>two bigradients</strong> are $\nabla^\pm = \partial_\tau \pm i\nabla$, with $\nabla$ the pure-vector gradient acting by left quaternion multiplication and $\tau = ct$. They are the corpus's gradient pair times $i$,</p>
 <p>$$
-\nabla^+ = i\tilde{\nabla}, \qquad \nabla^- = i\bar{\tilde{\nabla}},
+\nabla^+ = i\tilde{\nabla}, \qquad \nabla^- = i\tilde{\nabla}^{\natural},
 \qquad \partial_\tau = -\frac{i}{c}\partial_t ,
 $$</p>
 <p>which was checked exactly. The source's <strong>wave operator</strong> is therefore minus the corpus's d'Alembertian,</p>
@@ -65,7 +65,7 @@ $$</p>
 \nabla^-\nabla^+ = \nabla^+\nabla^- = \Box_{\text{s}} := \partial_\tau^2 - \Delta = -\,\Box ,
 \qquad \Box = \partial_{ict}^2 + \Delta ,
 $$</p>
-<p>and the two conventions differ in sign, as the d'Alembertian article's table already records for the Weyl-spinor exercise. Consequently the source's mass $m$ in $(\nabla^\pm + m)B = F$ is related to the corpus's central shift by $\kappa = -im$, and the case the source studies — an <strong>imaginary</strong> $m = i\rho$ — is the corpus's <strong>real</strong> $\kappa = \rho$, the case in which the homogeneous equation has non-trivial solutions. Every identification below is stated on the source's side and translated once; the factors of $i$ are not left to the reader.</p>
+<p>and the source's operator differs in sign from the corpus's. Consequently the source's mass $m$ in $(\nabla^\pm + m)B = F$ is related to the corpus's central shift by $\kappa = -im$, and the case the source studies — an <strong>imaginary</strong> $m = i\rho$ — is the corpus's <strong>real</strong> $\kappa = \rho$, the case in which the homogeneous equation has non-trivial solutions. Every identification below is stated on the source's side and translated once; the factors of $i$ are not left to the reader.</p>
 <h2 id="the-matrix-form-and-the-matrix-of-the-gradient">The Matrix Form and the Matrix of the Gradient</h2>
 <p>The source writes its biwave equation in matrix form, $\sum_j D_j\partial_j\,B = G$, and exhibits the four $4\times4$ matrices</p>
 <p>$$
@@ -100,7 +100,7 @@ $$</p>
 <p>This is the KGFSh operator the d'Alembertian article owns, and it is where the programme and the corpus part company in a way worth naming. The corpus's Dirac pair is chirality off-diagonal,</p>
 <p>$$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L , \qquad
-\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
+\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
 \qquad\Longrightarrow\qquad
 \bigl(\Box - \mu^2\bigr)\tilde{\Psi}_{R,L} = 0 ,
 $$</p>
@@ -218,7 +218,7 @@ $$</p>
 <p>where $\tilde{\Pi}_\pm(\hat{\mu})$ is the corpus's rank-one projector, the <strong>pure state</strong> of the informational sector, and $\hat{\mu}$ runs over the unit sphere. The verification is a one-line computation and it was done: $\tilde{\Pi}_-^2 = \tilde{\Pi}_-$; $\tilde{\Pi}_+ + \tilde{\Pi}_- = e_0$; $\tilde{\Pi}_+\tilde{\Pi}_- = 0$; and $\tfrac12(i + \hat{\boldsymbol{\xi}}) = i\tilde{\Pi}_-(\hat{\boldsymbol{\xi}})$ to machine precision for thirty random directions. Five statements follow, and the corpus records them as the algebra's contribution to the programme's "harmonic particles".</p>
 <ol>
 <li><strong>The harmonic bispinor lies in a minimal left ideal.</strong> Since $S = i\tilde{\Pi}_-(\hat{\boldsymbol{\xi}})\varphi$ and the phase $i\varphi$ is central, $S \in \mathbb{B}\tilde{\Pi}_-(\hat{\boldsymbol{\xi}})$: checked as $S\tilde{\Pi}_- = S$. The programme's bispinors are not generic elements of the algebra; their amplitude direction is fixed by a pure state of the corpus's informational sector.</li>
-<li><strong>The amplitude is in the material sector.</strong> $\tilde{\Pi}_-$ is Hermitian, $\tilde{\Pi}_-^\dagger = \tilde{\Pi}_-$, hence in $\mathbb{M}_+$; and $S$ is anti-Hermitian, $S^\dagger = -S$, hence in $\mathbb{M}_-$, the material sector — which is the statement $i\mathbb{M}_+ = \mathbb{M}_-$ the conventions article records. So the programme's harmonic bispinor is the material-sector image of a pure state, and the corpus's sector language carries the whole of the source's "particle" vocabulary for these objects.</li>
+<li><strong>The amplitude is in the material sector.</strong> $\tilde{\Pi}_-$ is Hermitian, $\tilde{\Pi}_-^{*} = \tilde{\Pi}_-$, hence in $\mathbb{M}_+$; and $S$ is anti-Hermitian, $S^{*} = -S$, hence in $\mathbb{M}_-$, the material sector — which is the statement $i\mathbb{M}_+ = \mathbb{M}_-$ the conventions article records. So the programme's harmonic bispinor is the material-sector image of a pure state, and the corpus's sector language carries the whole of the source's "particle" vocabulary for these objects.</li>
 <li><strong>The harmonic bispinor is a zero divisor.</strong> With the corpus's norm $N(\tilde{Q}) = \sum_\mu Q_\mu^2$, $N(S) = \tfrac14(i^2) + \tfrac14|\hat{\boldsymbol{\xi}}|^2 = 0$, so $S$ lies on the zero-divisor cone. The same vanishes under the source's pseudonorm, the sesquilinear form of its Definition 3. So under either reading the programme's bispinor is null: a bispinor field of the programme's "massive" first-order equation is an element of the null cone, which is the algebraic content of the family's lightlike dispersion.</li>
 <li><strong>The normalisation needs one correction.</strong> The source states norm $1$ and pseudonorm $0$. The pseudonorm statement is exact. The norm statement is not, with the source's own factor $\tfrac12$: $|S|^2 = \tfrac12$ and $|S| = 1/\sqrt2$. The unit-norm null representative is $\sqrt2\,S = \tfrac{1}{\sqrt2}(i + \hat{\boldsymbol{\xi}})\,\varphi = \sqrt2\,i\,\tilde{\Pi}_-(\hat{\boldsymbol{\xi}})\,\varphi$, which was checked to have norm $1$ and pseudonorm $0$ and to lie in the same ideal. The corpus records the nullity and the ideal membership as the invariant content and the factor $\sqrt2$ as a normalisation slip in the source.</li>
 <li><strong>The stationary family has the same structure.</strong> For $B = B(\mathbf{x})e^{-i\omega\tau}$ the source sets $\nabla^\pm_\omega = \omega \pm \nabla$ and obtains the $\omega$-spinors</li>
@@ -271,7 +271,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$\nabla^\pm = \partial_\tau \pm i\nabla$, $\tau = ct$</td>
-<td>The source's two bigradients; $\nabla^+ = i\tilde{\nabla}$, $\nabla^- = i\bar{\tilde{\nabla}}$</td>
+<td>The source's two bigradients; $\nabla^+ = i\tilde{\nabla}$, $\nabla^- = i\tilde{\nabla}^{\natural}$</td>
 </tr>
 <tr>
 <td>$\Box_{\text{s}} = \partial_\tau^2 - \Delta = -\Box$</td>

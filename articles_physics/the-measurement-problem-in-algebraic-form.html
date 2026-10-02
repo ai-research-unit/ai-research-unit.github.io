@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The measurement problem is the unresolved question of how the definite, single outcomes of measurement are related to a formalism whose states evolve deterministically and linearly. It has been argued for a century, and it is not settled. The biquaternion framework of the companion articles is a <strong>reformulation of standard quantum mechanics</strong>: it reproduces the standard predictions, introduces no new empirical content, and therefore cannot settle an interpretive or empirical dispute that standard quantum mechanics does not settle. This article proposes no solution.</p>
 <p>What it does is narrower, and worth doing carefully. A reformulation changes which notions are primitive, and the measurement problem is stated in terms of primitive notions. The question here is: <strong>stated in the objects of the framework, what is the measurement problem, and what does the restatement change?</strong></p>
-<p>The answer, in advance, is one change in form and no change in physics. In its usual statement the problem is a clash between <strong>two kinds of time evolution</strong> — a unitary evolution and a projection — with no rule saying when each applies. In the framework both are instances of the <strong>same bilinear operation</strong>, $\tilde{Q} \mapsto \tilde{A} \tilde{Q} \tilde{A}^\dagger$ (with renormalization in the measurement case), applied with an acting element $\tilde{A} \in \mathbb{B}$ of one of two algebraic types: <strong>unitary</strong> ($\tilde{A}\tilde{A}^\dagger = e_0$) or <strong>Hermitian idempotent</strong> ($\tilde{A}^2 = \tilde{A} = \tilde{A}^\dagger$). The two kinds of time evolution are thus one operation form applied to two classes of element. That is an exact restatement, and it moves the centre of gravity of the problem — from a boundary between physical regimes to a choice of acting element — without supplying a rule for the choice.</p>
+<p>The answer, in advance, is one change in form and no change in physics. In its usual statement the problem is a clash between <strong>two kinds of time evolution</strong> — a unitary evolution and a projection — with no rule saying when each applies. In the framework both are instances of the <strong>same bilinear operation</strong>, $\tilde{Q} \mapsto \tilde{A} \tilde{Q} \tilde{A}^{*}$ (with renormalization in the measurement case), applied with an acting element $\tilde{A} \in \mathbb{B}$ of one of two algebraic types: <strong>unitary</strong> ($\tilde{A}\tilde{A}^{*} = e_0$) or <strong>Hermitian idempotent</strong> ($\tilde{A}^2 = \tilde{A} = \tilde{A}^{*}$). The two kinds of time evolution are thus one operation form applied to two classes of element. That is an exact restatement, and it moves the centre of gravity of the problem — from a boundary between physical regimes to a choice of acting element — without supplying a rule for the choice.</p>
 <p>The residue is stated below as the algebraic form of the problem. The companion article <em>Decoherence as Idempotent Projection</em> is then used to say exactly what the framework's dephasing model of decoherence does in this language: it supplies a unique channel that removes the coherences while preserving the outcome statistics, and that channel's output is the <strong>average</strong> of the outcomes, not one of them. The difference between the mixture and the outcome is thereby a difference between a segment of the Bloch ball and an endpoint of that segment. What the framework cannot do is make the endpoint a function of the state. That failure is the selection problem in algebraic form, and no change of notation removes it.</p>
 <p>The article proceeds as follows: the problem in standard terms; the algebraic vocabulary of acting elements; the problem stated in algebraic form; what decoherence supplies; the selection step; the preferred basis and the cut; what the restatement changes, and what it does not.</p>
 <p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; $\mathbb{M}_+$ is the Hermitian subspace of states and observables, $\mathbb{M}_-$ the anti-Hermitian subspace of generators, and $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the central scalar imaginary. Traces are the matrix-representation traces, with $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$ and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.</p>
@@ -81,7 +81,7 @@ $$</p>
 <p>$$
 \tilde\Pi_\pm(\hat{\mu}) = \tfrac{1}{2}\left(e_0 \pm i\,\hat{\mu}\right), \qquad \hat{\mu} \text{ a unit pure real quaternion},
 $$</p>
-<p>with $\tilde\Pi_\pm^2 = \tilde\Pi_\pm$, $\tilde\Pi_\pm^\dagger = \tilde\Pi_\pm$, $\mathrm{Tr}(\tilde\Pi_\pm) = 1$, $\tilde\Pi_+ + \tilde\Pi_- = e_0$, and $\tilde\Pi_+\tilde\Pi_- = 0$. The Born rule is the trace formula</p>
+<p>with $\tilde\Pi_\pm^2 = \tilde\Pi_\pm$, $\tilde\Pi_\pm^{*} = \tilde\Pi_\pm$, $\mathrm{Tr}(\tilde\Pi_\pm) = 1$, $\tilde\Pi_+ + \tilde\Pi_- = e_0$, and $\tilde\Pi_+\tilde\Pi_- = 0$. The Born rule is the trace formula</p>
 <p>$$
 p_\pm = \mathrm{Tr}\!\left(\tilde\Pi_\pm(\hat{\mathbf{h}})\,\tilde{\rho}\right) = \tfrac{1}{2}\left(1 \pm \hat{\mathbf{h}}\cdot\mathbf{r}\right),
 $$</p>
@@ -89,12 +89,12 @@ $$</p>
 <h3 id="one-operation-form-two-kinds-of-element">One Operation Form, Two Kinds of Element</h3>
 <p>The central algebraic observation for the present subject is this. For any $\tilde{A} \in \mathbb{B}$ define the <strong>conjugation</strong></p>
 <p>$$
-\Gamma_{\tilde{A}}: \tilde{Q} \;\longmapsto\; \tilde{A}\,\tilde{Q}\,\tilde{A}^\dagger .
+\Gamma_{\tilde{A}}: \tilde{Q} \;\longmapsto\; \tilde{A}\,\tilde{Q}\,\tilde{A}^{*} .
 $$</p>
 <p>The framework's two fundamental operations are both instances of $\Gamma_{\tilde{A}}$, distinguished only by an algebraic property of $\tilde{A}$:</p>
 <ul>
-<li><strong>Unitary element.</strong> If $\tilde{A} = \tilde{U}$ with $\tilde{U}\tilde{U}^\dagger = e_0$, then $\Gamma_{\tilde{U}}(\tilde{\rho}) = \tilde{U}\tilde{\rho}\tilde{U}^\dagger$ is the reversible evolution of the state (equivalently, of any observable in the Heisenberg picture). It preserves the trace pairing, hence the Born probabilities, and it preserves the biquaternion norm; it is an algebra automorphism. It is generated by a Hermitian element: $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$.</li>
-<li><strong>Idempotent element.</strong> If $\tilde{A} = \tilde\Pi_\pm(\hat{\mathbf{h}})$, then, since $\tilde\Pi_\pm^\dagger = \tilde\Pi_\pm$, the conjugation is the <strong>sandwich</strong></li>
+<li><strong>Unitary element.</strong> If $\tilde{A} = \tilde{U}$ with $\tilde{U}\tilde{U}^{*} = e_0$, then $\Gamma_{\tilde{U}}(\tilde{\rho}) = \tilde{U}\tilde{\rho}\tilde{U}^{*}$ is the reversible evolution of the state (equivalently, of any observable in the Heisenberg picture). It preserves the trace pairing, hence the Born probabilities, and it preserves the biquaternion norm; it is an algebra automorphism. It is generated by a Hermitian element: $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$.</li>
+<li><strong>Idempotent element.</strong> If $\tilde{A} = \tilde\Pi_\pm(\hat{\mathbf{h}})$, then, since $\tilde\Pi_\pm^{*} = \tilde\Pi_\pm$, the conjugation is the <strong>sandwich</strong></li>
 </ul>
 <p>$$
 \Gamma_{\tilde\Pi_\pm}(\tilde{\rho}) = \tilde\Pi_\pm\,\tilde{\rho}\,\tilde\Pi_\pm = p_\pm \tilde\Pi_\pm,
@@ -109,7 +109,7 @@ $$</p>
 <h2 id="the-problem-in-algebraic-form">The Problem in Algebraic Form</h2>
 <p>Fix a state $\tilde{\rho} \in \mathbb{M}_+$ and an observable $\tilde{H} = h_0 e_0 + i\mathbf{h}$ with spectral idempotents $\tilde\Pi_\pm = \tfrac{1}{2}(e_0 \pm i\hat{\mathbf{h}})$ and Born probabilities $p_\pm = \mathrm{Tr}(\tilde\Pi_\pm\tilde{\rho})$. The framework places three algebraic objects at our disposal:</p>
 <ol>
-<li><strong>The reversible evolution</strong> $\Gamma_{\tilde{U}}(\tilde{\rho}) = \tilde{U}\tilde{\rho}\tilde{U}^\dagger$, with $\tilde{U}\tilde{U}^\dagger = e_0$.</li>
+<li><strong>The reversible evolution</strong> $\Gamma_{\tilde{U}}(\tilde{\rho}) = \tilde{U}\tilde{\rho}\tilde{U}^{*}$, with $\tilde{U}\tilde{U}^{*} = e_0$.</li>
 <li><strong>The two conditional outcomes</strong> $\Gamma_{\tilde\Pi_\pm}(\tilde{\rho}) = p_\pm \tilde\Pi_\pm$; normalized, the post-measurement state is $\tilde\Pi_\pm$ itself, produced on the branch labelled $\pm$.</li>
 <li><strong>Their statistical average</strong>, the element</li>
 </ol>
@@ -201,7 +201,7 @@ $$</p>
 </ul>
 <p>The honest summary is a division of labour. The algebraic form makes the <em>structure</em> of the problem unusually explicit: one operation form, two element types, a statistics-preserving average whose output is a mixture, and a selection operation that is not a function of the state. It does not make the problem go away, and the gap left open is exactly the gap that was there before, now with a name in the algebra: the element that would have to select is not in the algebra.</p>
 <h2 id="summary">Summary</h2>
-<p>The measurement problem, stated in the framework's own terms, is the demand that the biquaternion algebra supply a criterion for measurement — and its unsatisfiability. The framework offers a single operation form, $\tilde{Q} \mapsto \tilde{A}\tilde{Q}\tilde{A}^\dagger$, with the acting element either unitary ($\tilde{U}\tilde{U}^\dagger = e_0$, reversible evolution) or Hermitian idempotent ($\tilde{P}^2 = \tilde{P} = \tilde{P}^\dagger$, the projective sandwich). The Born rule is the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The unitary evolution produces no definite outcome; the idempotent sandwich produces one but comes with no rule selecting which idempotent acts, and no rule selecting the idempotent case over the unitary case.</p>
+<p>The measurement problem, stated in the framework's own terms, is the demand that the biquaternion algebra supply a criterion for measurement — and its unsatisfiability. The framework offers a single operation form, $\tilde{Q} \mapsto \tilde{A}\tilde{Q}\tilde{A}^{*}$, with the acting element either unitary ($\tilde{U}\tilde{U}^{*} = e_0$, reversible evolution) or Hermitian idempotent ($\tilde{P}^2 = \tilde{P} = \tilde{P}^{*}$, the projective sandwich). The Born rule is the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The unitary evolution produces no definite outcome; the idempotent sandwich produces one but comes with no rule selecting which idempotent acts, and no rule selecting the idempotent case over the unitary case.</p>
 <p>Decoherence, in the framework's worked dephasing model, is the channel $\Phi^{\mathrm{deph}}_p$ of <em>Decoherence as Idempotent Projection</em>. At full strength it is the trace-preserving conditional expectation onto the pointer subalgebra, and it is the unique coherence-free assignment that reproduces the Born statistics: its output is the mixture $\tilde{\rho}_d = p_+\tilde\Pi_+ + p_-\tilde\Pi_-$, which, for a state $\tilde{\rho}$, is the convex average $p_+\Lambda_+ + p_-\Lambda_-$ of the two selection channels. The mixture is an interior point of the pointer diameter; the outcomes are its endpoints. Decoherence supplies the statistics and the segment, not the endpoint and not the index.</p>
 <p>What the reformulation changes is the form of the statement: two dynamics become one operation form over two element types; the mixture-versus-outcome gap becomes a segment-versus-endpoint gap; the statistics-preserving and selection operations are separated exactly; the provenance-blindness of the state becomes a statement about one subspace; and the form of the Born rule is algebraic. What it does not change is the physics or the difficulty: no outcome is selected, no preferred basis is derived, no cut is fixed, no probability is explained, no regress terminated, no interpretation decided, and no prediction changed. The algebraic form is a sharpened statement of the measurement problem, not a solution to it.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -262,15 +262,15 @@ $$</p>
 <td>Measurement and pointer directions</td>
 </tr>
 <tr>
-<td>$\Gamma_{\tilde{A}}(\tilde{Q}) = \tilde{A}\tilde{Q}\tilde{A}^\dagger$</td>
+<td>$\Gamma_{\tilde{A}}(\tilde{Q}) = \tilde{A}\tilde{Q}\tilde{A}^{*}$</td>
 <td>Conjugation; unitary evolution ($\tilde{A} = \tilde{U}$) or projective sandwich ($\tilde{A} = \tilde\Pi_\pm$)</td>
 </tr>
 <tr>
-<td>$\tilde{U}\tilde{U}^\dagger = e_0$</td>
+<td>$\tilde{U}\tilde{U}^{*} = e_0$</td>
 <td>Unitary element (reversible evolution)</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm^2 = \tilde\Pi_\pm = \tilde\Pi_\pm^\dagger$</td>
+<td>$\tilde\Pi_\pm^2 = \tilde\Pi_\pm = \tilde\Pi_\pm^{*}$</td>
 <td>Hermitian idempotent (orthogonal projection; irreversible)</td>
 </tr>
 <tr>

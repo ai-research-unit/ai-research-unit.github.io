@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Different Ways to Consider Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="different-ways-to-consider-biquaternions"><strong>Different Ways to Consider Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra is a single set of elements, $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, and it carries several structures at once. Someone who asks what the set <em>is</em> gets a different and equally correct answer depending on which scalars are admitted. Admit the reals and it is an algebra of dimension eight. Admit the complex numbers and it is an algebra of dimension four. Admit the quaternions and it is a module of rank two. The three answers describe the same elements, the same addition and the same product; the only thing that changes is the scalar system.</p>
+<p>This article develops the three answers in turn, from the simplest outward, and then asks the question that ties them together: over which rings is $\mathbb{B}$ an algebra in the strict sense? The answer is that $\mathbb{R}$ and $\mathbb{C}$ qualify and $\mathbb{H}$ does not, and the reason is a single structural fact about the centre, treated once the three views are in place. The conclusion is that <strong>the natural structure of the biquaternion algebra is an algebra over $\mathbb{C}$</strong>.</p>
+<p>The general definitions are those of <em>Algebras: A General Introduction</em>, where an algebra is defined over a commutative ring, and of <em>Change of Rings</em>, for extension and restriction of scalars. The basis, the multiplication, the conjugations and the six subspaces are those of <em>Biquaternion Algebra</em> and are not restated.</p>
+<h2 id="the-elements-and-the-three-coordinate-systems">The Elements and the Three Coordinate Systems</h2>
+<p>A general element is written</p>
+<p>$$
+\tilde{Q} = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3, \qquad Q_\mu \in \mathbb{C},
+$$</p>
+<p>with unit $e_0$, quaternion units $e_k$ satisfying $e_k^2 = -e_0$, and a central scalar imaginary $i$, $i^2 = -1$, commuting with every $e_k$.</p>
+<p>The same element is written in three coordinate systems, and all three are used below.</p>
+<p><strong>Real coordinates.</strong> Splitting each complex coefficient as $Q_\mu = q_\mu + iq'_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$ gives a list of eight real numbers on the real basis:</p>
+<p>$$
+\tilde{Q} = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 + q'_0(ie_0) + q'_1(ie_1) + q'_2(ie_2) + q'_3(ie_3).
+$$</p>
+<p><strong>Complex coordinates.</strong> Collecting the eight real numbers into four complex ones gives the developed form, four complex coordinates $(Q_0, Q_1, Q_2, Q_3)$ on the complex basis $\{e_0, e_1, e_2, e_3\}$.</p>
+<p><strong>Quaternionic coordinates.</strong> Collecting them by the scalar imaginary instead gives</p>
+<p>$$
+\tilde{Q} = h_1 + ih_2, \qquad h_1 = \sum_{\mu=0}^{3} q_\mu e_\mu \in \mathbb{H}, \qquad h_2 = \sum_{\mu=0}^{3} q'_\mu e_\mu \in \mathbb{H},
+$$</p>
+<p>a real quaternion plus $i$ times another real quaternion. The decomposition is unique, so in this view an element is a <strong>pair of quaternions</strong>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>coordinates</th>
+<th>basis</th>
+<th>count</th>
+<th>scalars</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real</td>
+<td>$e_0, e_1, e_2, e_3, ie_0, ie_1, ie_2, ie_3$</td>
+<td>$8$</td>
+<td>$\mathbb{R}$</td>
+</tr>
+<tr>
+<td>complex</td>
+<td>$e_0, e_1, e_2, e_3$</td>
+<td>$4$</td>
+<td>$\mathbb{C}$</td>
+</tr>
+<tr>
+<td>quaternionic</td>
+<td>$e_0, ie_0$</td>
+<td>$2$</td>
+<td>$\mathbb{H}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The three rows count the same element against three scalar systems. Each supports one structure, and the rest of the article takes them in turn.</p>
+<h2 id="as-an-algebra-over-math29">As an Algebra over $\mathbb{R}$</h2>
+<h3 id="the-real-algebra-structure">The Real Algebra Structure</h3>
+<p><strong>Definition.</strong> Let $R$ be a ring. An <strong>$R$-algebra</strong> is a ring $A$ together with a ring homomorphism $R \to Z(A)$ into the centre of $A$. The image is required to be central, so that the scalars commute with every element of $A$, and the product is then $R$-bilinear.</p>
+<p><strong>The structure map.</strong> The assignment</p>
+<p>$$
+\mathbb{R} \longrightarrow Z(\mathbb{B}), \qquad r \longmapsto re_0
+$$</p>
+<p>is a unital ring homomorphism and its image is central, since $re_0$ commutes with every element of $\mathbb{B}$. It gives the <strong>real scalar multiplication</strong> $r\tilde{Q} = rQ_0e_0 + rQ_1e_1 + rQ_2e_2 + rQ_3e_3$, applied to the four complex coefficients or, equivalently, to the eight real coordinates term by term. Because the image is central,</p>
+<p>$$
+r(\tilde{P}\tilde{Q}) = (r\tilde{P})\tilde{Q} = \tilde{P}(r\tilde{Q}), \qquad r \in \mathbb{R},
+$$</p>
+<p>so the product is $\mathbb{R}$-bilinear. The algebra is associative, with unit $e_0$.</p>
+<h3 id="the-real-dimension-and-the-real-products">The Real Dimension and the Real Products</h3>
+<p>Over $\mathbb{R}$ the algebra has <strong>dimension eight</strong>, on the real basis of the first section. Its products are fixed by $e_k^2 = -e_0$, by $i^2 = -e_0$ and by the commutation of $i$ with each $e_k$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>value</th>
+<th>reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_je_k$, $j \neq k$</td>
+<td>$\pm e_l$, the third unit</td>
+<td>the quaternion product</td>
+</tr>
+<tr>
+<td>$e_k^2$</td>
+<td>$-e_0$</td>
+<td>the quaternion units</td>
+</tr>
+<tr>
+<td>$(ie_0)^2$</td>
+<td>$-e_0$</td>
+<td>$i^2e_0^2 = (-1)(+e_0)$</td>
+</tr>
+<tr>
+<td>$(ie_k)^2$, $k = 1,2,3$</td>
+<td>$+e_0$</td>
+<td>$i^2e_k^2 = (-1)(-e_0)$</td>
+</tr>
+<tr>
+<td>$ie_k = e_ki$</td>
+<td>the central imaginary</td>
+<td>$i$ is central</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last two rows deserve a remark, and they are the reason the real view is worth having. The four elements $ie_0, ie_1, ie_2, ie_3$ are <strong>not</strong> a second set of quaternion units. The element $ie_0$ is a second imaginary unit, with $(ie_0)^2 = -e_0$; the elements $ie_1, ie_2, ie_3$, by contrast, square to $+e_0$, so each plane $\operatorname{span}_\mathbb{R}\{e_0, ie_k\}$ with $k = 1,2,3$ is a copy of the <strong>split complex numbers</strong> $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$ inside the real algebra. The real view therefore exhibits, side by side, the quaternion subalgebra $\mathbb{H}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0,e_1,e_2,e_3\}$ with its units of square $-e_0$, three split-complex planes with generators of square $+e_0$, and the complex plane $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\}$ generated by an element of square $-e_0$. The sign difference between the two kinds of imaginary direction is stored here and nowhere else.</p>
+<h3 id="the-conjugations-are-real-linear">The Conjugations Are Real-Linear</h3>
+<p>All four conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and $\flat$ either fix or negate real scalars, so all four are $\mathbb{R}$-<strong>linear</strong> maps of the real algebra. Two of them change character when the scalars are enlarged: the bar and the star conjugate the complex coefficients and become $\mathbb{C}$-antilinear in the next section. Over $\mathbb{R}$ there is no such distinction to draw, and this is the view in which the four maps are simplest.</p>
+<h3 id="the-central-imaginary-as-a-complex-structure">The Central Imaginary as a Complex Structure</h3>
+<p>The central element $i$ defines a real-linear map</p>
+<p>$$
+J : \mathbb{B} \to \mathbb{B}, \qquad J(\tilde{Q}) = i\tilde{Q}, \qquad J^2 = -\mathrm{id},
+$$</p>
+<p>because $i^2 = -e_0$. A real algebra carrying a central element of square $-1$ carries a complex structure, and that is exactly how the complex view of the next section is obtained from this one.</p>
+<h2 id="as-an-algebra-over-math87">As an Algebra over $\mathbb{C}$</h2>
+<h3 id="the-complex-algebra-structure">The Complex Algebra Structure</h3>
+<p><strong>The structure map.</strong> The assignment</p>
+<p>$$
+\varphi : \mathbb{C} \longrightarrow Z(\mathbb{B}), \qquad \varphi(z) = ze_0
+$$</p>
+<p>is a unital ring homomorphism with central image, and it gives the <strong>complex scalar multiplication</strong> $z\tilde{Q} = zQ_0e_0 + zQ_1e_1 + zQ_2e_2 + zQ_3e_3$, applied to the four complex coefficients. Because the image is central,</p>
+<p>$$
+z(\tilde{P}\tilde{Q}) = (z\tilde{P})\tilde{Q} = \tilde{P}(z\tilde{Q}), \qquad z \in \mathbb{C},
+$$</p>
+<p>so the product is $\mathbb{C}$-bilinear and $\mathbb{B}$ is a <strong>$\mathbb{C}$-algebra</strong>. This structure is finer than the real one. The field $\mathbb{R}$ sits inside $\mathbb{C}$, the two structure maps compose, every $\mathbb{C}$-linear map is $\mathbb{R}$-linear and not conversely, and the dimensions are related by</p>
+<p>$$
+\dim_\mathbb{R}\mathbb{B} = 2 \dim_\mathbb{C}\mathbb{B} = 8.
+$$</p>
+<p><strong>The gate, in elementary terms.</strong> Giving a $\mathbb{C}$-algebra structure on a real algebra, compatible with its real structure, is the same thing as giving a <strong>central element $j$ with $j^2 = -1$</strong>, the scalar action being $(a + ib)x = ax + bjx$. Centrality is needed exactly at the product: with $j$ not central, the two expressions $(a+bj)(c+dj)$ and $(ac-bd) + (ad+bc)j$ differ by $bjc - bcj$. For $\mathbb{B}$ the element is $j = i$.</p>
+<h3 id="the-complex-multiplication-and-its-table">The Complex Multiplication and Its Table</h3>
+<p>Over $\mathbb{C}$ the basis is $\{e_0, e_1, e_2, e_3\}$, the complex dimension is four, and the product is generated by</p>
+<p>$$
+e_0e_k = e_k, \qquad e_k^2 = -e_0, \qquad e_1e_2 = e_3, \quad e_2e_3 = e_1, \quad e_3e_1 = e_2, \qquad e_je_k = -e_ke_j \ (j \neq k).
+$$</p>
+<p>Compared with the real table, the relations $(ie_k)^2 = +e_0$ have vanished, because $i$ is no longer an element of the algebra but the scalar of the base ring: the square $ie_k \cdot ie_k$ is now computed as $i^2e_k^2 = e_0$ by pulling the scalars out of the product. The complex view is smaller for that same reason: half the generators of the real basis have been promoted to scalars.</p>
+<h3 id="what-the-complex-view-buys">What the Complex View Buys</h3>
+<ul>
+<li><strong>A field of scalars.</strong> $\mathbb{C}$ is a field, so every module is free, every dimension is well defined, and left and right scalar multiplication coincide.</li>
+<li><strong>The two antilinear conjugations.</strong> The bar and the star are $\mathbb{C}$-antilinear, which is what makes a sesquilinear form available alongside the bilinear one.</li>
+<li><strong>The centre is exactly the scalars.</strong> No scalar is lost and no non-scalar is admitted. The next section puts that fact under scrutiny, because it is also the reason the quaternions cannot play the same role.</li>
+</ul>
+<h2 id="as-a-bimodule-over-math118">As a Bimodule over $\mathbb{H}$</h2>
+<h3 id="the-two-actions">The Two Actions</h3>
+<p><strong>Definition.</strong> The <strong>left and right $\mathbb{H}$-actions</strong> on $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$ are</p>
+<p>$$
+h \cdot (z \otimes h') = z \otimes hh', \qquad (z \otimes h') \cdot h = z \otimes h'h .
+$$</p>
+<p>The left action is left multiplication by $1 \otimes h$, the right action is right multiplication by the same element, and both are $\mathbb{R}$-bilinear. They <strong>commute</strong>,</p>
+<p>$$
+(h \cdot x) \cdot h' = z \otimes hh'h' = h \cdot (x \cdot h'),
+$$</p>
+<p>by associativity of the product, so $\mathbb{B}$ is an $\mathbb{H}$-<strong>bimodule</strong>.</p>
+<h3 id="free-of-rank-two">Free of Rank Two</h3>
+<p>In the quaternionic coordinates an element is $x = h_1 + ih_2$ with $h_1, h_2 \in \mathbb{H}$, and the two actions are</p>
+<p>$$
+h \cdot x = (hh_1) + i(hh_2), \qquad x \cdot h = (h_1h) + i(h_2h),
+$$</p>
+<p>using the centrality of $i$. The decomposition $x = h_1 + ih_2$ is unique, so $\{e_0, ie_0\}$ is a basis on the right and on the left at once:</p>
+<p>$$
+\mathbb{B} = \mathbb{H}e_0 \oplus \mathbb{H}(ie_0) \cong \mathbb{H}^2 \quad \text{on each side},
+$$</p>
+<p>and $\mathbb{B}$ is <strong>free of rank two</strong> over $\mathbb{H}$. It is worth noticing which elements serve as the generators: $e_0$ and $ie_0$ span the plane $\mathbb{C}_{\mathbb{B}}$ of the centre. The two free generators over $\mathbb{H}$ are a real basis of the centre of $\mathbb{B}$.</p>
+<h3 id="the-endomorphisms">The Endomorphisms</h3>
+<p>Because $\mathbb{B}$ is free of rank two as a right $\mathbb{H}$-module, its $\mathbb{H}$-linear endomorphisms are the two-by-two matrices over $\mathbb{H}$:</p>
+<p>$$
+\operatorname{End}_\mathbb{H}(\mathbb{B}) \cong M_2(\mathbb{H}).
+$$</p>
+<p>This is the standard description of the endomorphism ring of a free module of rank two over a ring, and it holds over a non-commutative base without change.</p>
+<h3 id="a-bimodule-is-not-an-algebra-over-math146">A Bimodule Is Not an Algebra over $\mathbb{H}$</h3>
+<p>The two actions give the quaternions a reach over $\mathbb{B}$ that is <strong>not</strong> the reach of a scalar field. Multiplication is left $\mathbb{H}$-linear in the first argument and right $\mathbb{H}$-linear in the second,</p>
+<p>$$
+(h \cdot x) \cdot y = h \cdot (x \cdot y), \qquad x \cdot (y \cdot h) = (x \cdot y) \cdot h,
+$$</p>
+<p>but it is <strong>not</strong> fully $\mathbb{H}$-bilinear, since for non-central $h$</p>
+<p>$$
+x \cdot (h \cdot y) - h \cdot (x \cdot y) = (xh - hx)y = [x,h]y,
+$$</p>
+<p>which does not vanish in general. A ring with exactly these properties is an <strong>$\mathbb{H}$-ring</strong>. The failure is measured by the commutator, and the quaternions are not central in $\mathbb{B}$; the next section is about why that matters.</p>
+<h2 id="the-centre-and-which-base-rings-are-legitimate">The Centre, and Which Base Rings Are Legitimate</h2>
+<p>The three views are not on the same footing. Two of them are <strong>algebra</strong> structures, over commutative rings; the third is a module structure. The criterion that separates them is the centrality of the structure map.</p>
+<h3 id="the-centrality-condition">The Centrality Condition</h3>
+<p>An $R$-algebra structure on a ring $A$ is a unital ring homomorphism $R \to Z(A)$, and two things are required of it: the map must exist, and its image must be central. The second requirement is not a technicality, since it is what makes the scalar multiplication $R$-bilinear, exactly as the elementary gate of the complex section demanded a <em>central</em> element of square $-1$. A non-commutative ring can serve as a base ring only if the map kills its non-commutativity, so only if it factors through the quotient by the two-sided ideal generated by the commutators. When the ring is simple, the way $\mathbb{H}$ and $\mathbb{B}$ are, that ideal is either $0$ or the whole ring, because a unital homomorphism out of a simple ring is injective and an image inside a commutative ring is commutative.</p>
+<h3 id="the-centre-is-math164">The Centre Is $\mathbb{C}$</h3>
+<p><strong>Proposition.</strong> The centre of $\mathbb{B}$ is $\mathbb{C}$, the complex line spanned by $e_0$ and $ie_0$:</p>
+<p>$$
+Z(\mathbb{B}) = \mathbb{C} \otimes_{\mathbb{R}} Z(\mathbb{H}) = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{R} = \mathbb{C} = \mathbb{C}_{\mathbb{B}}.
+$$</p>
+<p><strong>Proof.</strong> The centre of a tensor product of algebras over a field is the tensor product of their centres, and $Z(\mathbb{C}) = \mathbb{C}$ while $Z(\mathbb{H}) = \mathbb{R}$. In coordinates, $[\tilde{Q}, e_1] = 2Q_3e_2 - 2Q_2e_3$ vanishes exactly when $Q_2 = Q_3 = 0$, and $[\tilde{Q}, e_2]$ vanishes exactly when $Q_1 = Q_3 = 0$, so centrality forces $Q_1 = Q_2 = Q_3 = 0$; conversely every $Q_0e_0$ is central because $i$ commutes with the units.</p>
+<p>The centre is therefore the <strong>same</strong> $\mathbb{C}$ as the base ring of the complex view. The structure map $\varphi$ has image exactly the centre, and the scalars cannot be enlarged further, because there is no room in the centre for more.</p>
+<h3 id="the-quaternion-factor-is-not-central">The Quaternion Factor Is Not Central</h3>
+<p>The canonical embedding</p>
+<p>$$
+\psi : \mathbb{H} \longrightarrow \mathbb{B}, \qquad \psi(h) = 1 \otimes h
+$$</p>
+<p>is an injective unital ring homomorphism, with image the quaternion subspace $\mathbb{H}_{\mathbb{B}}$. It is a homomorphism into the algebra but not into its centre: $\psi(e_2) = e_2$ fails to commute with $e_1$, since $e_1e_2 = -e_2e_1$. No other map can repair this, because no unital homomorphism $\mathbb{H} \to \mathbb{C}$ exists at all: such a map would be injective by simplicity, and $\mathbb{C}$ cannot contain a copy of the non-commutative ring $\mathbb{H}$. There is no map $\mathbb{H} \to Z(\mathbb{B})$ to serve as a structure map.</p>
+<p>The same argument applies with $\mathbb{B}$ in place of $\mathbb{H}$: the identity map has image all of $\mathbb{B}$, which is not central.</p>
+<h3 id="the-table">The Table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>base ring</th>
+<th>is $\mathbb{B}$ an algebra over it?</th>
+<th>reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>yes</td>
+<td>$\mathbb{R} \subset \mathbb{C} = Z(\mathbb{B})$, so the image is central</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>yes</td>
+<td>$z \mapsto ze_0$ lands on $Z(\mathbb{B}) = \mathbb{C}$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>no</td>
+<td>$\mathbb{H}$ is non-commutative and simple, so no unital homomorphism $\mathbb{H} \to \mathbb{C}$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>no</td>
+<td>the same obstruction, with the identity map in place of $\psi$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="why-the-base-ring-matters-for-the-forms">Why the Base Ring Matters for the Forms</h2>
+<p>Bilinearity is meaningful only relative to a base ring, and the base ring fixes which conjugation may twist a form.</p>
+<p>The <strong>natural sign</strong> ${}^{\natural}$ fixes the complex coefficients and negates the vector units, so it is $\mathbb{C}$-<strong>linear</strong>. A pairing built on it, such as the polarisation $B(\tilde{P}, \tilde{Q}) = \operatorname{Sc}(\tilde{P}\tilde{Q}^{\natural})$ of <em>Biquaternion Norm and Invertibility</em>, is therefore $\mathbb{C}$-<strong>bilinear</strong>, and its scalars may be moved out of either argument. The <strong>star</strong> ${}^{*} = \bar{\cdot} \circ {}^{\natural}$ conjugates the coefficients, so it is $\mathbb{C}$-<strong>antilinear</strong>; it is the involution with respect to which the trace form is Hermitian, which is what makes the inner product $\langle\tilde{P}, \tilde{Q}\rangle = \sum_\mu \bar{P}_\mu Q_\mu$ sesquilinear rather than bilinear, both forms being defined in <em>Biquaternion Algebra</em>.</p>
+<p>Over $\mathbb{H}$ neither construction is available. The natural sign does not commute with the $\mathbb{H}$-action, the scalars cannot be pulled out of either argument, and the failure is the commutator identity of the bimodule section. To call a form "$\mathbb{H}$-bilinear" would be to require the $\mathbb{H}$-scalars to be central, so the phrase has no content for $\mathbb{B}$.</p>
+<h2 id="the-other-structures-carried-by-the-same-set">The Other Structures Carried by the Same Set</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>view of $\mathbb{B}$</th>
+<th>base</th>
+<th>what is added</th>
+<th>article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real algebra</td>
+<td>$\mathbb{R}$</td>
+<td>eight real dimensions, the four real-linear conjugations</td>
+<td><em>Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>complex algebra</td>
+<td>$\mathbb{C}$</td>
+<td>four complex dimensions, the centre as scalars</td>
+<td><em>Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>quaternionic bimodule</td>
+<td>$\mathbb{H}$</td>
+<td>free of rank two on each side, no centrality</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>six subspaces</td>
+<td>$\mathbb{R}$</td>
+<td>the fixed and anti-fixed spaces of the conjugations</td>
+<td><em>Biquaternion Relations Between Subspaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The biquaternion algebra is one set of elements with three basic structures, taken in the order of the scalars they admit.</p>
+<p>As an <strong>$\mathbb{R}$-algebra</strong> it has dimension eight, on the basis $e_0, e_1, e_2, e_3, ie_0, ie_1, ie_2, ie_3$, with $e_k^2 = -e_0$, with $(ie_0)^2 = -e_0$ and $(ie_k)^2 = +e_0$ for $k = 1,2,3$, and with central $i$. Its four conjugations are all real-linear, and the central element $i$ is a complex structure, $J^2 = -\mathrm{id}$.</p>
+<p>As a <strong>$\mathbb{C}$-algebra</strong> it has dimension four, on the basis $e_0, e_1, e_2, e_3$, with $\mathbb{C}$-bilinear product. Its centre is $\mathbb{C}$, the scalars are exactly the centre, and the bar and the star are its antilinear conjugations.</p>
+<p>As a <strong>bimodule over $\mathbb{H}$</strong> it is free of rank two on each side, on the generators $e_0$ and $ie_0$, with commuting left and right actions, with $\operatorname{End}_\mathbb{H}(\mathbb{B}) \cong M_2(\mathbb{H})$, and with an $\mathbb{H}$-ring multiplication that is left linear in the first argument and right linear in the second but not fully bilinear.</p>
+<p>For $\mathbb{C}$ to be the base ring and $\mathbb{H}$ not to be, one fact is responsible, and it is the centre:</p>
+<p>$$
+Z(\mathbb{B}) = \mathbb{C} \otimes_{\mathbb{R}} Z(\mathbb{H}) = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{R} = \mathbb{C} = \mathbb{C}_{\mathbb{B}},
+$$</p>
+<p>the complex line spanned by $e_0$ and $ie_0$. The base ring must map into the centre, so $\mathbb{R}$ and $\mathbb{C}$ qualify and $\mathbb{H}$ does not, since no unital homomorphism $\mathbb{H} \to \mathbb{C}$ exists. The forms follow: the natural sign is $\mathbb{C}$-linear and gives the $\mathbb{C}$-bilinear polarisation, the star is $\mathbb{C}$-antilinear and gives the Hermitian inner product, and neither has an $\mathbb{H}$-analogue.</p>
+<p>$$
+\boxed{\ \text{The natural structure of the biquaternion algebra is an algebra over } \mathbb{C}.\ }
+$$</p>
+<p>The quaternions are present as a bimodule action and not as scalars, and the real algebra is the same object read with the larger scalar field restricted, not a different algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+<td>biquaternion algebra</td>
+</tr>
+<tr>
+<td>$e_0, e_1, e_2, e_3$</td>
+<td>complex basis; $e_0$ the unit, $e_k$ the quaternion units</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>central scalar imaginary, $i^2 = -1$</td>
+</tr>
+<tr>
+<td>$q_\mu, q'_\mu$</td>
+<td>real coordinates, $Q_\mu = q_\mu + iq'_\mu$</td>
+</tr>
+<tr>
+<td>$h_1, h_2$</td>
+<td>quaternionic coordinates, $\tilde{Q} = h_1 + ih_2$</td>
+</tr>
+<tr>
+<td>$Z(A)$</td>
+<td>centre of the ring $A$, the elements commuting with every element of $A$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}} = \mathbb{R}e_0 \oplus \mathbb{R}(ie_0)$</td>
+<td>centre of $\mathbb{B}$, the complex line, $= Z(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_0 + \cdots + \mathbb{R}e_3$</td>
+<td>quaternion subspace, the image of $\psi$</td>
+</tr>
+<tr>
+<td>$\varphi : \mathbb{C} \to \mathbb{B}$, $z \mapsto ze_0$</td>
+<td>the $\mathbb{C}$-algebra structure map, onto the centre</td>
+</tr>
+<tr>
+<td>$\psi : \mathbb{H} \to \mathbb{B}$, $h \mapsto 1 \otimes h$</td>
+<td>the embedding of the quaternion factor, image not central</td>
+</tr>
+<tr>
+<td>$J = L_i$</td>
+<td>the real-linear complex structure, $J^2 = -\mathrm{id}$</td>
+</tr>
+<tr>
+<td>$h \cdot x = z \otimes hh'$, $x \cdot h = z \otimes h'h$</td>
+<td>the left and right $\mathbb{H}$-actions</td>
+</tr>
+<tr>
+<td>$\mathbb{B} \cong \mathbb{H}^2$</td>
+<td>free $\mathbb{H}$-module of rank two on each side, generators $e_0, ie_0$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_\mathbb{H}(\mathbb{B}) \cong M_2(\mathbb{H})$</td>
+<td>the $\mathbb{H}$-linear endomorphisms</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$-ring</td>
+<td>bimodule over $\mathbb{H}$ with multiplication left linear in the first argument and right linear in the second</td>
+</tr>
+<tr>
+<td>$x \cdot (h \cdot y) - h \cdot (x \cdot y) = [x,h]y$</td>
+<td>the failure of full $\mathbb{H}$-bilinearity</td>
+</tr>
+<tr>
+<td>${}^{\natural}$</td>
+<td>natural sign; $\mathbb{C}$-linear, the twist of the $\mathbb{C}$-bilinear polarisation</td>
+</tr>
+<tr>
+<td>${}^{*} = \bar{\cdot} \circ {}^{\natural}$</td>
+<td>star; $\mathbb{C}$-antilinear, the twist of the Hermitian inner product</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I</em> (Springer, 1998), for the definition of an algebra over a ring and the centrality of the base ring.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for base change, the tensor product of algebras and the bimodule structure of an extension.</li>
+<li>Tsit Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2001), for the centre of a tensor product, the simplicity of a division ring, and the impossibility of a unital homomorphism from a simple non-commutative ring into a commutative one.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

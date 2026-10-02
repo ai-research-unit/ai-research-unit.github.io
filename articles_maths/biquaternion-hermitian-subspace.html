@@ -59,14 +59,14 @@
 <h3 id="the-defining-involution">The Defining Involution</h3>
 <p><strong>Definition.</strong> The <strong>Hermitian subspace</strong> is the fixed space of Hermitian conjugation,</p>
 <p>$$
-\mathbb{M}_+ = \left\{ \tilde{Q} \in \mathbb{B} : \tilde{Q}^{\dagger} = \tilde{Q} \right\} , \qquad \tilde{Q}^{\dagger} = \bar{\tilde{Q}}^{*} = Q_0^{*}e_0 - Q_1^{*}e_1 - Q_2^{*}e_2 - Q_3^{*}e_3 .
+\mathbb{M}_+ = \left\{ \tilde{Q} \in \mathbb{B} : \tilde{Q}^{*} = \tilde{Q} \right\} , \qquad \tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = \bar{Q_0}e_0 - \bar{Q_1}e_1 - \bar{Q_2}e_2 - \bar{Q_3}e_3 .
 $$</p>
-<p>Its complementary space, the anti-fixed space of $\dagger$, is the anti-Hermitian subspace $\mathbb{M}_-$, and $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ is the <strong>Hermitian decomposition</strong> of the algebra.</p>
+<p>Its complementary space, the anti-fixed space of ${}^{*}$, is the anti-Hermitian subspace $\mathbb{M}_-$, and $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ is the <strong>Hermitian decomposition</strong> of the algebra.</p>
 <h3 id="the-condition-in-coordinates">The Condition in Coordinates</h3>
-<p>Comparing $\tilde{Q}^{\dagger} = \tilde{Q}$ coefficient by coefficient:</p>
+<p>Comparing $\tilde{Q}^{*} = \tilde{Q}$ coefficient by coefficient:</p>
 <ul>
-<li>$Q_0^{*} = Q_0$, so the scalar coefficient $Q_0 = q_0$ is real;</li>
-<li>$-Q_k^{*} = Q_k$, that is $Q_k^{*} = -Q_k$, so each vector coefficient $Q_k = iq'_k$ is purely imaginary.</li>
+<li>$\bar{Q_0} = Q_0$, so the scalar coefficient $Q_0 = q_0$ is real;</li>
+<li>$-\bar{Q_k} = Q_k$, that is $\bar{Q_k} = -Q_k$, so each vector coefficient $Q_k = iq'_k$ is purely imaginary.</li>
 </ul>
 <p>The subspace is therefore</p>
 <p>$$
@@ -93,7 +93,7 @@ $$</p>
 $$</p>
 <h3 id="the-commutator-lands-in-the-anti-hermitian-subspace">The Commutator Lands in the Anti-Hermitian Subspace</h3>
 <p><strong>Theorem.</strong> For $\tilde{Q}, \tilde{R} \in \mathbb{M}_+$ one has $\tilde{Q}\tilde{R} - \tilde{R}\tilde{Q} \in \mathbb{M}_-$.</p>
-<p><strong>Proof.</strong> $\dagger$ reverses the order of a product and is the identity on $\mathbb{M}_+$, so $(\tilde{Q}\tilde{R})^{\dagger} = \tilde{R}\tilde{Q}$; hence $(\tilde{Q}\tilde{R}-\tilde{R}\tilde{Q})^{\dagger} = \tilde{R}\tilde{Q}-\tilde{Q}\tilde{R} = -(\tilde{Q}\tilde{R}-\tilde{R}\tilde{Q})$, which is the defining condition of the anti-Hermitian subspace.</p>
+<p><strong>Proof.</strong> ${}^{*}$ reverses the order of a product and is the identity on $\mathbb{M}_+$, so $(\tilde{Q}\tilde{R})^{\dagger} = \tilde{R}\tilde{Q}$; hence $(\tilde{Q}\tilde{R}-\tilde{R}\tilde{Q})^{\dagger} = \tilde{R}\tilde{Q}-\tilde{Q}\tilde{R} = -(\tilde{Q}\tilde{R}-\tilde{R}\tilde{Q})$, which is the defining condition of the anti-Hermitian subspace.</p>
 <p>In the formula of the previous paragraph this is the statement that the symmetric part is Hermitian and the antisymmetric part anti-Hermitian, as it must be. The corresponding statement in the other direction is proved in <em>Biquaternion Anti-Hermitian Subspace</em>.</p>
 <h3 id="it-is-a-jordan-algebra">It Is a Jordan Algebra</h3>
 <p><strong>Theorem.</strong> $\mathbb{M}_+$ is closed under the <strong>symmetrized product</strong></p>
@@ -101,7 +101,7 @@ $$</p>
 \tilde{Q} \circ \tilde{R} = \tfrac{1}{2}\left(\tilde{Q}\tilde{R} + \tilde{R}\tilde{Q}\right) ,
 $$</p>
 <p>and with this product it is a Jordan algebra over $\mathbb{R}$, commutative, of degree two.</p>
-<p><strong>Proof.</strong> $(\tilde{Q}\tilde{R}+\tilde{R}\tilde{Q})^{\dagger} = \tilde{R}^{\dagger}\tilde{Q}^{\dagger} + \tilde{Q}^{\dagger}\tilde{R}^{\dagger} = \tilde{R}\tilde{Q} + \tilde{Q}\tilde{R}$, so the symmetrized product of two Hermitian elements is again Hermitian; commutativity is built into the definition, and the product is bilinear, so it makes $\mathbb{M}_+$ a commutative algebra over $\mathbb{R}$ with the Jordan identity.</p>
+<p><strong>Proof.</strong> $(\tilde{Q}\tilde{R}+\tilde{R}\tilde{Q})^{\dagger} = \tilde{R}^{*}\tilde{Q}^{*} + \tilde{Q}^{*}\tilde{R}^{*} = \tilde{R}\tilde{Q} + \tilde{Q}\tilde{R}$, so the symmetrized product of two Hermitian elements is again Hermitian; commutativity is built into the definition, and the product is bilinear, so it makes $\mathbb{M}_+$ a commutative algebra over $\mathbb{R}$ with the Jordan identity.</p>
 <p>Two consequences are read off. First, the subspace is <strong>closed under powers</strong>: $\tilde{Q}^2 = \tilde{Q} \circ \tilde{Q} \in \mathbb{M}_+$, and by induction every positive power of a Hermitian element is Hermitian. Second, the subspace is power-associative but not associative, which is exactly the Jordan axiom pattern; the general theory is in <em>Jordan Algebras</em>.</p>
 <h3 id="the-square-and-higher-powers">The Square and Higher Powers</h3>
 <p><strong>Proposition.</strong> For $\tilde{Q} = q_0e_0 + i\mathbf{q}'$ one has</p>
@@ -154,17 +154,17 @@ $$</p>
 </thead>
 <tbody>
 <tr>
+<td>${}^{\natural}$</td>
+<td>$\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>negates the vector part</td>
+</tr>
+<tr>
 <td>$\bar{\cdot}$</td>
 <td>$\operatorname{diag}(1,-1,-1,-1)$</td>
 <td>negates the vector part</td>
 </tr>
 <tr>
 <td>${}^{*}$</td>
-<td>$\operatorname{diag}(1,-1,-1,-1)$</td>
-<td>negates the vector part</td>
-</tr>
-<tr>
-<td>${}^{\dagger}$</td>
 <td>$+\mathrm{id}$</td>
 <td>the identity, by definition of the subspace</td>
 </tr>
@@ -175,7 +175,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The subspace is invariant under all four. The first two rows coincide: on a Hermitian element quaternion and complex conjugation have the same effect, which is the compatibility $\dagger = {}^{*}\circ\bar{\cdot}$ read on the fixed space of $\dagger$. Reversal negates the subspace, and the subspace it fixes is $\mathbb{M}_-$.</p>
+<p>The subspace is invariant under all four. The first two rows coincide: on a Hermitian element quaternion and complex conjugation have the same effect, which is the compatibility ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ read on the fixed space of ${}^{*}$. Reversal negates the subspace, and the subspace it fixes is $\mathbb{M}_-$.</p>
 <h2 id="relations-to-the-other-five-subspaces">Relations to the Other Five Subspaces</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -243,7 +243,7 @@ $$</p>
 <p>$$
 [\mathbb{M}_+,\mathbb{M}_+] \subseteq \mathbb{M}_- ,
 $$</p>
-<p>since $(\tilde{P}\tilde{Q})^\dagger = \tilde{Q}^\dagger\tilde{P}^\dagger$ gives $[\tilde{P},\tilde{Q}]^\dagger = -[\tilde{P},\tilde{Q}]$ for Hermitian $\tilde{P}, \tilde{Q}$; the computation is §<em>The Commutator Lands in the Anti-Hermitian Subspace</em>. The role of the subspace in the Lie theory is therefore that of a source of brackets rather than that of a Lie subalgebra, and its own structure is the Jordan one of §<em>It Is a Jordan Algebra</em>: under the symmetrized product it is a Jordan algebra isomorphic to $H_2(\mathbb{C})$, of degree two, whose idempotents are the orthogonal projections above, whose trace $\mathrm{Tr}(\tilde{Q}) = 2q_0$ is real, and whose trace form has signature $(1,3)$. The details are in <em>Biquaternion Lie Algebra</em>, <em>Biquaternion Relations Between Subspaces</em> and <em>Jordan Algebras</em>.</p>
+<p>since $(\tilde{P}\tilde{Q})^\dagger = \tilde{Q}^{*}\tilde{P}^{*}$ gives $[\tilde{P},\tilde{Q}]^\dagger = -[\tilde{P},\tilde{Q}]$ for Hermitian $\tilde{P}, \tilde{Q}$; the computation is §<em>The Commutator Lands in the Anti-Hermitian Subspace</em>. The role of the subspace in the Lie theory is therefore that of a source of brackets rather than that of a Lie subalgebra, and its own structure is the Jordan one of §<em>It Is a Jordan Algebra</em>: under the symmetrized product it is a Jordan algebra isomorphic to $H_2(\mathbb{C})$, of degree two, whose idempotents are the orthogonal projections above, whose trace $\mathrm{Tr}(\tilde{Q}) = 2q_0$ is real, and whose trace form has signature $(1,3)$. The details are in <em>Biquaternion Lie Algebra</em>, <em>Biquaternion Relations Between Subspaces</em> and <em>Jordan Algebras</em>.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="a-unit-a-null-element-an-idempotent">A Unit, a Null Element, an Idempotent</h3>
 <p>Take $\tilde{Q} = e_0 + ie_1$. Its biquaternion norm is $N(\tilde{Q}) = 1 - 1 = 0$, so it is a zero divisor and lies on the isotropic cone, and</p>
@@ -262,7 +262,7 @@ $$</p>
 <h3 id="an-element-not-on-the-cone-and-its-inverse">An Element Not on the Cone and Its Inverse</h3>
 <p>For $\tilde{Q} = 2e_0 + i(e_1 + e_2)$ one has $N(\tilde{Q}) = 4 - 2 = 2$, so $\tilde{Q}$ is a unit with</p>
 <p>$$
-\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}}}{N(\tilde{Q})} = \frac{2e_0 - i(e_1+e_2)}{2} = e_0 - \frac{i(e_1+e_2)}{2} ,
+\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{N(\tilde{Q})} = \frac{2e_0 - i(e_1+e_2)}{2} = e_0 - \frac{i(e_1+e_2)}{2} ,
 $$</p>
 <p>again in the subspace, since quaternion conjugation preserves $\mathbb{M}_+$ and the biquaternion norm is a real scalar. The inverse of a Hermitian element of non-zero norm is Hermitian, and the units of the subspace therefore form a group of dimension four.</p>
 <h2 id="summary">Summary</h2>
@@ -278,7 +278,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathbb{M}_+$</td>
-<td>the Hermitian subspace, $\{\tilde{Q} : \tilde{Q}^{\dagger} = \tilde{Q}\}$</td>
+<td>the Hermitian subspace, $\{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\}$</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_-$</td>
@@ -337,7 +337,7 @@ $$</p>
 <td>the Jordan algebra of degree two isomorphic to $\mathbb{M}_+$</td>
 </tr>
 <tr>
-<td>$\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$</td>
+<td>${}^{\natural}, \bar{\cdot}, {}^{*}, \flat$</td>
 <td>the four involutions</td>
 </tr>
 </tbody>

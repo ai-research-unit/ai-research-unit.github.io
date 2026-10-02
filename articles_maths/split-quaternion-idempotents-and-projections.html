@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="split-quaternion-idempotents-and-projections"><strong>Split-Quaternion Idempotents and Projections</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The algebra article defined the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$, its basis $1, e_1, e_2, e_3$, its conjugation, its central product $\tilde q\bar{\tilde q}$ and its distinguished subspaces. This article treats the <strong>idempotents</strong> of $\mathbb{H}_{\mathrm{s}}$ — the elements $\tilde\pi$ with $\tilde\pi^2 = \tilde\pi$ — and the projections and direct sum decompositions they carry.</p>
+<p>The algebra article defined the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$, its basis $1, e_1, e_2, e_3$, its conjugation, its central product $\tilde q\tilde{q}^{\natural}$ and its distinguished subspaces. This article treats the <strong>idempotents</strong> of $\mathbb{H}_{\mathrm{s}}$ — the elements $\tilde\pi$ with $\tilde\pi^2 = \tilde\pi$ — and the projections and direct sum decompositions they carry.</p>
 <p>Idempotents are the algebraic form of a projection, and in $\mathbb{H}_{\mathrm{s}}$ they do four jobs at once:</p>
 <ol>
 <li>they give direct sum decompositions of the algebra into left ideals, and in particular the two minimal left ideals;</li>
@@ -61,10 +61,10 @@
 <li>they drive the Peirce decomposition and the matrix-unit model of the algebra.</li>
 </ol>
 <p>The last two items are developed in the companion articles <em>Split-Quaternion Zero Divisors</em> and <em>Split-Quaternion Ideals and Peirce Decomposition</em>; here they enter only as forward pointers.</p>
-<p><strong>Placement.</strong> The article is third in the Algebra group, after the algebra and before the roots of $-1$, the zero divisors and the ideals, because the ideals and the zero divisors both use the idempotents. Its proofs use only the algebra article and the algebraic product $\tilde q\bar{\tilde q}$; the classification of the non-scalar idempotents is proved here from the quadratic equation, so nothing is quoted from the roots of $-1$ article, which is the companion classification of the opposite sign.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}_{\mathrm{s}} = \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$. A general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, its scalar part is $q_0 = \operatorname{Sc}(\tilde q)$ and its vector part is $\mathbf{v} = q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$. The product $\tilde q\bar{\tilde q}$ lies in the centre and is written</p>
+<p><strong>Placement.</strong> The article is third in the Algebra group, after the algebra and before the roots of $-1$, the zero divisors and the ideals, because the ideals and the zero divisors both use the idempotents. Its proofs use only the algebra article and the algebraic product $\tilde q\tilde{q}^{\natural}$; the classification of the non-scalar idempotents is proved here from the quadratic equation, so nothing is quoted from the roots of $-1$ article, which is the companion classification of the opposite sign.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}_{\mathrm{s}} = \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$. A general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, its scalar part is $q_0 = \operatorname{Sc}(\tilde q)$ and its vector part is $\mathbf{v} = q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$. The product $\tilde q\tilde{q}^{\natural}$ lies in the centre and is written</p>
 <p>$$
-N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2 + q_1^2 - q_2^2 - q_3^2 ;
+N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2 ;
 $$</p>
 <p>it is formed and evaluated here as an algebraic product, and its metrical reading — the signature of the pairings, their isotropy and the group of units — is in <em>Split-Quaternion Norm and Invertibility</em>. The scalar subspace is $S = \mathbb{R}\cdot 1$ and the vector subspace is $V = \operatorname{span}\{e_1, e_2, e_3\}$; on $V$ the square of an element is minus that product, $\mathbf{v}^2 = -N(\mathbf{v})$.</p>
 <h2 id="idempotents-in-an-algebra">Idempotents in an Algebra</h2>
@@ -168,7 +168,7 @@ $$</p>
 <p>$$
 \tilde\pi \bar{\tilde\pi} = \tfrac{1}{4}(1 + \eta)(1 - \eta) = \tfrac{1}{4}(1 - \eta^2) = 0,
 $$</p>
-<p>so the whole idempotent family lies on the zero divisor set $\{\tilde q : \tilde q\bar{\tilde q} = 0\}$. The idempotents are the non-nilpotent points of that set: $\tilde\pi^2 = \tilde\pi \neq 0$, whereas the nilpotents of the algebra are exactly the nonzero vectors of $V$ whose square vanishes, treated in <em>Split-Quaternion Zero Divisors</em>, §<em>Nonzero Nilpotents</em>.</p>
+<p>so the whole idempotent family lies on the zero divisor set $\{\tilde q : \tilde q\tilde{q}^{\natural} = 0\}$. The idempotents are the non-nilpotent points of that set: $\tilde\pi^2 = \tilde\pi \neq 0$, whereas the nilpotents of the algebra are exactly the nonzero vectors of $V$ whose square vanishes, treated in <em>Split-Quaternion Zero Divisors</em>, §<em>Nonzero Nilpotents</em>.</p>
 <h2 id="idempotents-and-the-minimal-left-ideals">Idempotents and the Minimal Left Ideals</h2>
 <p><strong>Proposition.</strong> The left ideals</p>
 <p>$$
@@ -242,7 +242,7 @@ $$</p>
 <td>this article</td>
 </tr>
 <tr>
-<td>$N(\tilde q) = \tilde q\bar{\tilde q}$</td>
+<td>$N(\tilde q) = \tilde q\tilde{q}^{\natural}$</td>
 <td>the central product, formed and evaluated algebraically; the metrical reading is in <em>Split-Quaternion Norm and Invertibility</em></td>
 <td>this article</td>
 </tr>

@@ -53,7 +53,7 @@
         <h1 id="split-quaternion-roots-of-minus-one"><strong>Split-Quaternion Roots of Minus One</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article determines the solutions of the equation $\xi^2 = -1$ in the split-quaternion algebra. It proves that the solutions are exactly the elements of the vector subspace of unit norm, identifies them with the complex structures of the plane, proves that they form a single conjugacy class and describes them as a homogeneous space, relates them to the idempotents and to the zero divisors, and compares the result with the quaternion case.</p>
-<p>The split-quaternion algebra, its basis, its vector subspace $V$, its central product $N(\tilde q) = \tilde q\bar{\tilde q}$, its idempotents $\tilde\pi_\pm$ and its conjugation are assumed from <em>Split-Quaternion Algebra</em>; the metrical reading of $N$ is in <em>Split-Quaternion Norm and Invertibility</em>. The criterion that the units are the elements with $N \neq 0$ and the description of the zero divisors are assumed from <em>Split-Quaternion Norm and Invertibility</em> and <em>Split-Quaternion Zero Divisors</em>; the zero divisor set is not re-described here. The hyperbolic plane that the solution set carries is treated in <em>Split-Quaternions and Hyperbolic Geometry</em>, and the double cover of the Lorentz group that acts on it in <em>Split-Quaternion Rotations and the Lorentz Group</em>. Nothing physical is invoked.</p>
+<p>The split-quaternion algebra, its basis, its vector subspace $V$, its central product $N(\tilde q) = \tilde q\tilde{q}^{\natural}$, its idempotents $\tilde\pi_\pm$ and its conjugation are assumed from <em>Split-Quaternion Algebra</em>; the metrical reading of $N$ is in <em>Split-Quaternion Norm and Invertibility</em>. The criterion that the units are the elements with $N \neq 0$ and the description of the zero divisors are assumed from <em>Split-Quaternion Norm and Invertibility</em> and <em>Split-Quaternion Zero Divisors</em>; the zero divisor set is not re-described here. The hyperbolic plane that the solution set carries is treated in <em>Split-Quaternions and Hyperbolic Geometry</em>, and the double cover of the Lorentz group that acts on it in <em>Split-Quaternion Rotations and the Lorentz Group</em>. Nothing physical is invoked.</p>
 <h2 id="the-equation-and-the-reduction-to-the-vector-subspace">The Equation and the Reduction to the Vector Subspace</h2>
 <p><strong>Theorem (The Solutions).</strong> Let $\xi = q_0 + \mathbf{u}$ with $q_0 \in \mathbb{R}$ and $\mathbf{u} \in V$. Then $\xi^2 = -1$ if and only if</p>
 <p>$$
@@ -131,9 +131,9 @@ $$</p>
 \Big(\tfrac12(1+\eta)\Big)\overline{\Big(\tfrac12(1+\eta)\Big)} = \tfrac14(1+\eta)(1-\eta) = \tfrac14(1-\eta^2) = 0,
 $$</p>
 <p>so the idempotent is a zero divisor, and the same holds for $p_-$.</p>
-<p>For the converse, let $p$ be a non-scalar idempotent, and write $p = \tfrac12 + u$ with $u \in V$. From $p^2 = p$ one gets $u^2 = \tfrac14$, so $N(u) = -\tfrac14$ and $u \neq 0$; putting $\eta = 2u$ gives $\eta \in V$, $\eta^2 = 1$ and $N(\eta) = -1$, so $\eta$ is a root of $+1$ in $V$ and $p = \tfrac12(1 + \eta)$, with $\eta = 2p - 1$ determined by $p$. Also $\bar p = \tfrac12 - u = 1 - p$. Put $\eta = 2p - 1$. Then</p>
+<p>For the converse, let $p$ be a non-scalar idempotent, and write $p = \tfrac12 + u$ with $u \in V$. From $p^2 = p$ one gets $u^2 = \tfrac14$, so $N(u) = -\tfrac14$ and $u \neq 0$; putting $\eta = 2u$ gives $\eta \in V$, $\eta^2 = 1$ and $N(\eta) = -1$, so $\eta$ is a root of $+1$ in $V$ and $p = \tfrac12(1 + \eta)$, with $\eta = 2p - 1$ determined by $p$. Also $p^{\natural} = \tfrac12 - u = 1 - p$. Put $\eta = 2p - 1$. Then</p>
 <p>$$
-\bar{\eta} = 2\bar{p} - 1 = 2(1 - p) - 1 = 1 - 2p = -\eta,
+\bar{\eta} = 2p^{\natural} - 1 = 2(1 - p) - 1 = 1 - 2p = -\eta,
 $$</p>
 <p>so $\eta$ lies in the $-1$ eigenspace of the conjugation, which is $V$; and $\eta^2 = 4p^2 - 4p + 1 = 1$. The element $p$ is recovered from $\eta$ as $\tfrac12(1+\eta)$, so the correspondence is bijective.</p>
 <h3 id="the-roots-are-not-zero-divisors">The Roots Are Not Zero Divisors</h3>

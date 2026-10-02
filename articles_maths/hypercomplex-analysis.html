@@ -95,7 +95,7 @@ D = \sum_{\alpha=0}^{m-1} B_\alpha \,\partial_\alpha, \qquad B_\alpha \in A,
 $$</p>
 <p>where $\partial_\alpha = \partial/\partial x_\alpha$ and $x = \sum_\alpha x_\alpha e_\alpha$ are the coordinates of $x \in A$. Its <strong>conjugate</strong> is a second operator of the same shape,</p>
 <p>$$
-\bar D = \sum_{\alpha=0}^{m-1} \bar B_\alpha \,\partial_\alpha, \qquad \bar B_\alpha \in A.
+\bar D = \sum_{\alpha=0}^{m-1} B_\alpha^{\natural} \,\partial_\alpha, \qquad B_\alpha^{\natural} \in A.
 $$</p>
 <p>The operator $D$ acts on a differentiable function $f : \Omega \to A$ by</p>
 <p>$$
@@ -139,7 +139,7 @@ $$</p>
 <p>$$
 D f = 0 \quad \text{on } \Omega.
 $$</p>
-<p>It is <strong>right regular</strong> if $f D = 0$, where the operator acts on the right, $fD = \sum_\alpha \partial_\alpha f \,\bar B_\alpha$. The two notions coincide when $A$ is commutative.</p>
+<p>It is <strong>right regular</strong> if $f D = 0$, where the operator acts on the right, $fD = \sum_\alpha \partial_\alpha f \,B_\alpha^{\natural}$. The two notions coincide when $A$ is commutative.</p>
 <p><strong>Example.</strong> For $A = \mathbb{C}$ and $D = \partial_0 + i\partial_1$, the left regular functions are the holomorphic functions; for $A = \mathbb{H}$ and the operator above, they are the monogenic functions of quaternion analysis. Both are instances of one definition.</p>
 <p><strong>Proposition (linear structure).</strong> The left regular functions on $\Omega$ form a real vector space. If $f$ is left regular and $a \in A$, then:</p>
 <ol>
@@ -330,7 +330,7 @@ $$</p>
 <td>Generalised Cauchy–Riemann operator</td>
 </tr>
 <tr>
-<td>$\bar D = \sum_\alpha \bar B_\alpha \partial_\alpha$</td>
+<td>$\bar D = \sum_\alpha B_\alpha^{\natural} \partial_\alpha$</td>
 <td>Conjugate operator</td>
 </tr>
 <tr>

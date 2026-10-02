@@ -66,14 +66,14 @@ $$</p>
 <ul>
 <li><strong>The field action.</strong> The scalar action whose Euler–Lagrange equation is the biquaternionic Klein–Gordon equation, and the electromagnetic action whose Euler–Lagrange equation is the biquaternionic Maxwell equation. Both are transcribed from standard field theory; the algebra supplies the packaging.</li>
 <li><strong>The Noether construction.</strong> The general stress–energy of a field, its conservation on shell, and the explicit scalar stress–energy with its positive energy density, verified on a superposition of on-shell modes.</li>
-<li><strong>The electromagnetic tensor as a biquaternion bilinear.</strong> The construction $T^\mu{}_\nu = \tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^\dagger\mathcal{E}_\nu)$, its component table, its symmetry, its tracelessness, and its conservation, including the source term that couples it to matter.</li>
+<li><strong>The electromagnetic tensor as a biquaternion bilinear.</strong> The construction $T^\mu{}_\nu = \tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$, its component table, its symmetry, its tracelessness, and its conservation, including the source term that couples it to matter.</li>
 </ul>
-<p><strong>Boundaries.</strong> This article is classical and non-quantum: it concerns the classical field action, its Noether currents, and the classical conservation laws. The quantisation of these fields, the associated Hilbert-space structures and the generating functionals belong to the sibling categories and to the companion article <em>Canonical Quantization of the Biquaternion Maxwell Field</em>, and they are not developed here. The informational reading of any of these quantities is likewise outside the scope; the stress–energy tensor constructed here is an element of the field's tensor algebra, and its bilinear form takes values in the Hermitian sector $\mathbb{M}_+$ only in the sense that the contraction $\tfrac12\tilde{F}\tilde{F}^\dagger$ is Hermitian, which is recorded in the companion article <em>Maxwell's Equations in the Biquaternionic Formulation</em>. The multipole and spin-direction effects are treated elsewhere in the category.</p>
-<p><strong>Conventions.</strong> We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$ and $e_je_k = -\delta_{jk}e_0+\varepsilon_{jkl}e_l$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector, with basis $\mathcal{E}_\mu\in\{ie_0,e_1,e_2,e_3\}$), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}}$ (the center). The conjugations are $\bar{\cdot}$ (quaternion), ${}^*$ (complex), ${}^\dagger = \bar{\cdot}^{\,*}$ (Hermitian) and ${}^\flat=-\dagger$ (anti-Hermitian). The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, with $\bar{\tilde{\nabla}}=e_0\partial_{ict}-e_1\partial_x-e_2\partial_y-e_3\partial_z$ and</p>
+<p><strong>Boundaries.</strong> This article is classical and non-quantum: it concerns the classical field action, its Noether currents, and the classical conservation laws. The quantisation of these fields, the associated Hilbert-space structures and the generating functionals belong to the sibling categories and to the companion article <em>Canonical Quantization of the Biquaternion Maxwell Field</em>, and they are not developed here. The informational reading of any of these quantities is likewise outside the scope; the stress–energy tensor constructed here is an element of the field's tensor algebra, and its bilinear form takes values in the Hermitian sector $\mathbb{M}_+$ only in the sense that the contraction $\tfrac12\tilde{F}\tilde{F}^{*}$ is Hermitian, which is recorded in the companion article <em>Maxwell's Equations in the Biquaternionic Formulation</em>. The multipole and spin-direction effects are treated elsewhere in the category.</p>
+<p><strong>Conventions.</strong> We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$ and $e_je_k = -\delta_{jk}e_0+\varepsilon_{jkl}e_l$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector, with basis $\mathcal{E}_\mu\in\{ie_0,e_1,e_2,e_3\}$), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}}$ (the center). The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat=-{}^{*}$ (anti-Hermitian). The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, with $\tilde{\nabla}^{\natural}=e_0\partial_{ict}-e_1\partial_x-e_2\partial_y-e_3\partial_z$ and</p>
 <p>$$
-\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \partial_{ict}^2+\Delta = -\frac{1}{c^2}\partial_t^2+\Delta .
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial_{ict}^2+\Delta = -\frac{1}{c^2}\partial_t^2+\Delta .
 $$</p>
-<p>The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The scalar mass parameter is $\mu = mc/\hbar$, so that the scalar equation is $(\Box-\mu^2)\tilde{\Phi}=0$, matching the companion article <em>The Klein–Gordon Equation in Biquaternionic Form</em>. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$, the source is $\tilde{R}=\frac{i\rho}{\sqrt{\epsilon}}e_0+\sqrt{\mu}\,\mathbf{J}$, and the Maxwell equation is $\tilde{\nabla}\tilde{F}=-\tilde{R}$, all as fixed in the companion article <em>Maxwell's Equations in the Biquaternionic Formulation</em>. The energy density is $W=\tfrac12(\epsilon\mathbf{E}^2+\mu\mathbf{H}^2)$ and the Poynting vector is $\mathbf{S}=\mathbf{E}\times\mathbf{H}$. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.</p>
+<p>The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The scalar mass parameter is $\mu = mc/\hbar$, so that the scalar equation is $(\Box-\mu^2)\tilde{\Phi}=0$, matching the companion article <em>The Klein–Gordon Equation in Biquaternionic Form</em>. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$, the source is $\tilde{R}=\frac{i\rho}{\sqrt{\epsilon}}e_0+\sqrt{\mu}\,\mathbf{J}$, and the Maxwell equation is $\tilde{\nabla}\tilde{F}=-\tilde{R}$, all as fixed in the companion article <em>Maxwell's Equations in the Biquaternionic Formulation</em>. The energy density is $W=\tfrac12(\epsilon\mathbf{E}^2+\mu\mathbf{H}^2)$ and the Poynting vector is $\mathbf{S}=\mathbf{E}\times\mathbf{H}$. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.</p>
 <p><strong>A sign warning.</strong> As in the companion exercise <em>Exercise: The Electromagnetic Energy–Momentum Tensor</em>, the mixed component $T^0{}_0$ carries a sign in the $ict$ convention: for the electromagnetic field $T^0{}_0=-W$, while the physical energy density is the contravariant $T^{00}=W$. This article keeps the same convention for the scalar field and states it at each tensor, so that the two fields can be compared without a sign discrepancy.</p>
 <h2 id="the-field-action-in-biquaternion-form">The Field Action in Biquaternion Form</h2>
 <p>The action of a field theory is a functional of the field and its first derivatives,</p>
@@ -91,7 +91,7 @@ $$</p>
 <h3 id="the-scalar-action">The Scalar Action</h3>
 <p>Let $\tilde{\Phi}$ be a biquaternion-valued field and take the Lagrangian density</p>
 <p>$$
-\mathcal{L}_\phi = -\tfrac12\,\partial_\mu\tilde{\Phi}\,\partial^\mu\bar{\tilde{\Phi}} - \tfrac12\mu^2\,\tilde{\Phi}\bar{\tilde{\Phi}} ,
+\mathcal{L}_\phi = -\tfrac12\,\partial_\mu\tilde{\Phi}\,\partial^\mu\tilde{\Phi}^{\natural} - \tfrac12\mu^2\,\tilde{\Phi}\tilde{\Phi}^{\natural} ,
 \qquad
 \mu = \frac{mc}{\hbar} .
 $$</p>
@@ -126,10 +126,10 @@ $$</p>
 \qquad
 \tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0+\sqrt{\mu}\,\mathbf{J},
 \qquad
-\mathrm{Sc}\!\left(\bar{\tilde{\nabla}}\tilde{R}\right)=0 ,
+\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{R}\right)=0 ,
 $$</p>
-<p>the form fixed in the companion article <em>Maxwell's Equations in the Biquaternionic Formulation</em>. Its content is exactly the four component equations together with the integrability condition $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{R})=0$, equivalent to charge conservation.</p>
-<p>The two actions exhibit the same pattern. The kinetic term is the biquaternion norm of the derivative, $-\tfrac12\partial_\mu\tilde{\Phi}\partial^\mu\bar{\tilde{\Phi}}$ for the scalar and $-\tfrac14 F_{\mu\nu}F^{\mu\nu}\propto N(\tilde{F})$ for the electromagnetic field; the equation of motion is the vanishing of the appropriate first-order or second-order operator; and the conservation of the source current is the integrability condition of the equation, not a separate law.</p>
+<p>the form fixed in the companion article <em>Maxwell's Equations in the Biquaternionic Formulation</em>. Its content is exactly the four component equations together with the integrability condition $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{R})=0$, equivalent to charge conservation.</p>
+<p>The two actions exhibit the same pattern. The kinetic term is the biquaternion norm of the derivative, $-\tfrac12\partial_\mu\tilde{\Phi}\partial^\mu\tilde{\Phi}^{\natural}$ for the scalar and $-\tfrac14 F_{\mu\nu}F^{\mu\nu}\propto N(\tilde{F})$ for the electromagnetic field; the equation of motion is the vanishing of the appropriate first-order or second-order operator; and the conservation of the source current is the integrability condition of the equation, not a separate law.</p>
 <h2 id="noethers-theorem-and-the-stressenergy-of-translation">Noether's Theorem and the Stress–Energy of Translation</h2>
 <p>The stress–energy tensor is the Noether current of invariance under spacetime translations. Under an infinitesimal translation $x^\mu\to x^\mu+\epsilon^\mu$ a Lagrangian that depends on $x$ only through the fields changes by</p>
 <p>$$
@@ -187,8 +187,8 @@ $$</p>
 <p>For the electromagnetic field the improved stress–energy tensor has a closed algebraic form in the biquaternion algebra. With the material basis $\mathcal{E}_\mu\in\{ie_0,e_1,e_2,e_3\}$,</p>
 <p>$$
 \boxed{\;
-T^\mu{}_\nu = \frac12\,\mathrm{Sc}\!\left(\tilde{F}\,\mathcal{E}_\mu\,\tilde{F}^\dagger\,\mathcal{E}_\nu\right)
-= \frac14\,\mathrm{Tr}\!\left(\tilde{F}\,\mathcal{E}_\mu\,\tilde{F}^\dagger\,\mathcal{E}_\nu\right) \;}
+T^\mu{}_\nu = \frac12\,\mathrm{Sc}\!\left(\tilde{F}\,\mathcal{E}_\mu\,\tilde{F}^{*}\,\mathcal{E}_\nu\right)
+= \frac14\,\mathrm{Tr}\!\left(\tilde{F}\,\mathcal{E}_\mu\,\tilde{F}^{*}\,\mathcal{E}_\nu\right) \;}
 $$</p>
 <p>The two factors of $\mathcal{E}$ are what turn one biquaternion into a rank-two object: each supplies one vector direction, and the scalar part reads off the component. The construction is that of the companion exercise <em>Exercise: The Electromagnetic Energy–Momentum Tensor</em>, and its components are</p>
 <p>$$
@@ -235,7 +235,7 @@ $$</p>
 \mathbf{H} = \hat{\mathbf{k}}_i\times\mathbf{E}\ \text{per mode},
 $$</p>
 <p>with $\omega_i = c|\mathbf{k}_i|$, $c=1$, $\epsilon=\mu=1$. Evaluating $\partial_\mu T^{\mu\nu}$ by second-order finite differences with step $10^{-3}$ at the event $t=0.6$, $\mathbf{x}=(0.3,-0.7,0.2)$ gave $|\partial_\mu T^{\mu\nu}|$ of order $10^{-7}$, and falling as $h^2$, for all four $\nu$ — the discretisation error — confirming conservation for the interacting cross terms and not merely mode by mode.</p>
-<p><strong>Where the algebra enters.</strong> The bilinear form realizes the two-index object by the two inserted basis elements; the scalar projection extracts the component. This is why the natural object is the mixed tensor $T^\mu{}_\nu$ and not a doubly covariant one, and why no single biquaternion can carry the full tensor — the four-component object $\tilde{W}=\tfrac12\tilde{F}\tilde{F}^\dagger$ carries only the time row, as the exercise shows. The rank-two object with two independent vector directions is the smallest algebraic structure that holds all the components, and the algebra supplies it through the bilinear rather than through a new field.</p>
+<p><strong>Where the algebra enters.</strong> The bilinear form realizes the two-index object by the two inserted basis elements; the scalar projection extracts the component. This is why the natural object is the mixed tensor $T^\mu{}_\nu$ and not a doubly covariant one, and why no single biquaternion can carry the full tensor — the four-component object $\tilde{W}=\tfrac12\tilde{F}\tilde{F}^{*}$ carries only the time row, as the exercise shows. The rank-two object with two independent vector directions is the smallest algebraic structure that holds all the components, and the algebra supplies it through the bilinear rather than through a new field.</p>
 <h2 id="the-conservation-law-for-field-and-matter">The Conservation Law for Field and Matter</h2>
 <p>The conservation law of the preceding section is not closed: the field's four-momentum changes in the presence of charges. The total energy–momentum of field and matter,</p>
 <p>$$
@@ -261,9 +261,9 @@ $$</p>
 <p>$$
 \mathrm{Sc}\!\left(\tilde{\nabla}\tilde{W}\right) = \frac{i}{c}\,\mathbf{J}\cdot\mathbf{E}
 $$</p>
-<p>for the Hermitian form $\tilde{W}=\tfrac12\tilde{F}\tilde{F}^\dagger$, which the companion article <em>Maxwell's Equations in the Biquaternionic Formulation</em> derives and the exercise re-derives by contrast with the failed real form. The pattern is general: the divergence of the field's stress–energy equals minus the four-force density, the divergence of the matter's tensor equals plus it, and the sum is conserved. The field action is what fixes both the field tensor and, through the coupling term, the force that appears on the matter side.</p>
+<p>for the Hermitian form $\tilde{W}=\tfrac12\tilde{F}\tilde{F}^{*}$, which the companion article <em>Maxwell's Equations in the Biquaternionic Formulation</em> derives and the exercise re-derives by contrast with the failed real form. The pattern is general: the divergence of the field's stress–energy equals minus the four-force density, the divergence of the matter's tensor equals plus it, and the sum is conserved. The field action is what fixes both the field tensor and, through the coupling term, the force that appears on the matter side.</p>
 <h2 id="what-the-algebra-supplies-and-what-is-transcribed">What the Algebra Supplies and What Is Transcribed</h2>
-<p><strong>Supplied by the algebra.</strong> The biquaternion bilinear form of the electromagnetic stress–energy, $T^\mu{}_\nu=\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^\dagger\mathcal{E}_\nu)$, with the basis elements of $\mathbb{M}_-$ supplying the two index directions; the identification of the free-field Lagrangian with the biquaternion norm of the field strength, $\tfrac14F_{\mu\nu}F^{\mu\nu}\propto\mathrm{Re}\,N(\tilde{F})$, so that the action is built from the same biquaternion norm that defines the cone; the packaging of the scalar action, whose equation is the biquaternionic Klein–Gordon equation because $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}$ is central and scalar; and the interchange law of the divergence, field action and conserved current that lets the divergence of the field tensor be read as the source term of the matter.</p>
+<p><strong>Supplied by the algebra.</strong> The biquaternion bilinear form of the electromagnetic stress–energy, $T^\mu{}_\nu=\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$, with the basis elements of $\mathbb{M}_-$ supplying the two index directions; the identification of the free-field Lagrangian with the biquaternion norm of the field strength, $\tfrac14F_{\mu\nu}F^{\mu\nu}\propto\mathrm{Re}\,N(\tilde{F})$, so that the action is built from the same biquaternion norm that defines the cone; the packaging of the scalar action, whose equation is the biquaternionic Klein–Gordon equation because $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ is central and scalar; and the interchange law of the divergence, field action and conserved current that lets the divergence of the field tensor be read as the source term of the matter.</p>
 <p><strong>Standard field theory transcribed.</strong> The Euler–Lagrange equations, Noether's theorem, the canonical stress–energy tensor, its improvement to a symmetric gauge-invariant form, the positivity of the scalar energy, the Poynting theorem and the Lorentz four-force are standard. The algebra reproduces them in its own notation; it does not add a conservation law or modify one.</p>
 <p><strong>Interpretation.</strong> The reading of the bilinear as an element whose Hermitian part is a positive energy density, and of the algebra's basis elements as the index directions, is the framework's structural reading; the tensor components themselves are the standard ones. The one genuinely algebraic statement is that the free Lagrangians of the scalar and electromagnetic fields are both the biquaternion norm of their respective objects — the derivative for the scalar and the field strength for the gauge field — so that the action and the causal cone are constructed from the same quadratic form.</p>
 <h2 id="open-questions">Open Questions</h2>
@@ -297,7 +297,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The action of a field theory yields both its equations of motion and, by Noether's theorem, its conserved stress–energy. In biquaternion form the scalar action</p>
 <p>$$
-\mathcal{L}_\phi = -\tfrac12\partial_\mu\tilde{\Phi}\,\partial^\mu\bar{\tilde{\Phi}}-\tfrac12\mu^2\tilde{\Phi}\bar{\tilde{\Phi}},
+\mathcal{L}_\phi = -\tfrac12\partial_\mu\tilde{\Phi}\,\partial^\mu\tilde{\Phi}^{\natural}-\tfrac12\mu^2\tilde{\Phi}\tilde{\Phi}^{\natural},
 \qquad
 \mu=\frac{mc}{\hbar},
 $$</p>
@@ -316,7 +316,7 @@ T_{00}=T^{00}=\frac{1}{2c^2}\dot{\phi}^2+\frac12(\nabla\phi)^2+\frac12\mu^2\phi^
 $$</p>
 <p>verified on a superposition of two on-shell modes. The electromagnetic tensor is the biquaternion bilinear</p>
 <p>$$
-T^\mu{}_\nu = \frac12\,\mathrm{Sc}\!\left(\tilde{F}\mathcal{E}_\mu\tilde{F}^\dagger\mathcal{E}_\nu\right),
+T^\mu{}_\nu = \frac12\,\mathrm{Sc}\!\left(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu\right),
 \qquad
 T^{00}=W,
 \quad
@@ -347,11 +347,11 @@ $$</p>
 <td>Basis of $\mathbb{M}_-$; supplies the tensor index directions</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla},\bar{\tilde{\nabla}}$, $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$</td>
+<td>$\tilde{\nabla},\tilde{\nabla}^{\natural}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$</td>
 <td>Gradient, conjugate gradient, d'Alembertian</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$</td>
+<td>$N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$</td>
 <td>Biquaternion norm; level-1 identity on $\mathbb{C}$</td>
 </tr>
 <tr>
@@ -363,7 +363,7 @@ $$</p>
 <td>Action; $\mathcal{L}$ the Lagrangian density</td>
 </tr>
 <tr>
-<td>$\mathcal{L}_\phi=-\tfrac12\partial_\mu\tilde{\Phi}\partial^\mu\bar{\tilde{\Phi}}-\tfrac12\mu^2\tilde{\Phi}\bar{\tilde{\Phi}}$</td>
+<td>$\mathcal{L}_\phi=-\tfrac12\partial_\mu\tilde{\Phi}\partial^\mu\tilde{\Phi}^{\natural}-\tfrac12\mu^2\tilde{\Phi}\tilde{\Phi}^{\natural}$</td>
 <td>Scalar Lagrangian</td>
 </tr>
 <tr>
@@ -395,7 +395,7 @@ $$</p>
 <td>Maxwell stress</td>
 </tr>
 <tr>
-<td>$T^\mu{}_\nu=\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^\dagger\mathcal{E}_\nu)$</td>
+<td>$T^\mu{}_\nu=\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$</td>
 <td>Electromagnetic stress–energy, biquaternion bilinear</td>
 </tr>
 <tr>

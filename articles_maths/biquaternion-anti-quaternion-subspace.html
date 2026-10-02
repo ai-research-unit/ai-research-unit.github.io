@@ -58,11 +58,11 @@
 <h3 id="the-defining-involution">The Defining Involution</h3>
 <p><strong>Definition.</strong> The <strong>anti-quaternion subspace</strong> is the anti-fixed space of complex conjugation,</p>
 <p>$$
-i\mathbb{H}_{\mathbb{B}} = \left\{ \tilde{Q} \in \mathbb{B} : \tilde{Q}^{*} = -\tilde{Q} \right\} ,
+i\mathbb{H}_{\mathbb{B}} = \left\{ \tilde{Q} \in \mathbb{B} : \bar{\tilde{Q}} = -\tilde{Q} \right\} ,
 $$</p>
-<p>with $\tilde{Q}^{*} = Q_0^{*}e_0 + Q_1^{*}e_1 + Q_2^{*}e_2 + Q_3^{*}e_3$.</p>
+<p>with $\bar{\tilde{Q}} = \bar{Q_0}e_0 + \bar{Q_1}e_1 + \bar{Q_2}e_2 + \bar{Q_3}e_3$.</p>
 <h3 id="the-condition-in-coordinates">The Condition in Coordinates</h3>
-<p>Comparing $\tilde{Q}^{*} = -\tilde{Q}$ coefficient by coefficient gives $Q_\mu^{*} = -Q_\mu$ for each $\mu$, so every coefficient is purely imaginary:</p>
+<p>Comparing $\bar{\tilde{Q}} = -\tilde{Q}$ coefficient by coefficient gives $Q_\bar{\mu} = -Q_\mu$ for each $\mu$, so every coefficient is purely imaginary:</p>
 <p>$$
 \tilde{Q} = i q'_0 e_0 + i q'_1 e_1 + i q'_2 e_2 + i q'_3 e_3 = i\left(q'_0e_0 + q'_1e_1 + q'_2e_2 + q'_3e_3\right) , \qquad q'_\mu \in \mathbb{R} .
 $$</p>
@@ -115,10 +115,10 @@ $$</p>
 <h3 id="units-and-zero-divisors">Units and Zero Divisors</h3>
 <p><strong>Corollary.</strong> Every non-zero element of $i\mathbb{H}_{\mathbb{B}}$ is a unit, with</p>
 <p>$$
-(i\tilde{P})^{-1} = -i\,\frac{\bar{\tilde{P}}}{N(\tilde{P})} ,
+(i\tilde{P})^{-1} = -i\,\frac{\tilde{P}^{\natural}}{N(\tilde{P})} ,
 $$</p>
 <p>which is again an element of $i\mathbb{H}_{\mathbb{B}}$. The group of units of the subspace is $i\mathbb{H}_{\mathbb{B}}\setminus\{0\}$, which retracts onto the sphere $S^3$ of the elements of norm $-1$.</p>
-<p><strong>Proof.</strong> The inverse formula is $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$; with $\tilde{Q} = i\tilde{P}$ one has $\bar{\tilde{Q}} = i\bar{\tilde{P}}$ and $N(\tilde{Q}) = -N(\tilde{P})$, giving the displayed expression, in which $i$ is held by a real quaternion and the result is therefore in the subspace.</p>
+<p><strong>Proof.</strong> The inverse formula is $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$; with $\tilde{Q} = i\tilde{P}$ one has $\tilde{Q}^{\natural} = i\tilde{P}^{\natural}$ and $N(\tilde{Q}) = -N(\tilde{P})$, giving the displayed expression, in which $i$ is held by a real quaternion and the result is therefore in the subspace.</p>
 <p><strong>Corollary.</strong> The anti-quaternion subspace has no zero divisors, and its only idempotent is $0$.</p>
 <p><strong>Proof.</strong> The biquaternion norm vanishes only at the origin, which gives the absence of zero divisors by the general criterion. For the idempotents, suppose $(i\tilde{P})^2 = i\tilde{P}$; the square is $-\tilde{P}^2$, which lies in the quaternion subspace, while $i\tilde{P}$ lies in the anti-quaternion subspace; the two subspaces intersect only at the origin, so $\tilde{P} = 0$.</p>
 <p>The first corollary is what distinguishes the subspace from the sectors and from the vector subspace: like the quaternion subspace and unlike them, it contains no null elements, so every non-zero element is invertible and the subspace contributes no zero divisors to the algebra.</p>
@@ -143,17 +143,17 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\bar{\cdot}$</td>
+<td>${}^{\natural}$</td>
 <td>$\operatorname{diag}(1,-1,-1,-1)$</td>
 <td>quaternion conjugation, leaving the subspace</td>
 </tr>
 <tr>
-<td>${}^{*}$</td>
+<td>$\bar{\cdot}$</td>
 <td>$-\mathrm{id}$</td>
 <td>minus the identity, by definition of the subspace</td>
 </tr>
 <tr>
-<td>${}^{\dagger}$</td>
+<td>${}^{*}$</td>
 <td>$\operatorname{diag}(-1,1,1,1)$</td>
 <td>minus quaternion conjugation</td>
 </tr>
@@ -164,7 +164,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The subspace is invariant under all four. Complex conjugation acts as the negative of the identity, which is its defining property; quaternion conjugation acts on it as it acts on the quaternion subspace, negating the three imaginary vector directions and fixing the central imaginary direction; Hermitian conjugation is the negative of that; and reversal coincides with quaternion conjugation. The last two rows are consistent with $\dagger = {}^{*}\circ\bar{\cdot}$: on the subspace, minus the identity composed with quaternion conjugation is minus quaternion conjugation.</p>
+<p>The subspace is invariant under all four. Complex conjugation acts as the negative of the identity, which is its defining property; quaternion conjugation acts on it as it acts on the quaternion subspace, negating the three imaginary vector directions and fixing the central imaginary direction; Hermitian conjugation is the negative of that; and reversal coincides with quaternion conjugation. The last two rows are consistent with ${}^{*} = \bar{\cdot}\circ{}^{\natural}$: on the subspace, minus the identity composed with quaternion conjugation is minus quaternion conjugation.</p>
 <h2 id="relations-to-the-other-five-subspaces">Relations to the Other Five Subspaces</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -280,7 +280,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$i\mathbb{H}_{\mathbb{B}}$</td>
-<td>the anti-quaternion subspace, $\{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\}$</td>
+<td>the anti-quaternion subspace, $\{\tilde{Q} : \bar{\tilde{Q}} = -\tilde{Q}\}$</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{B}}$</td>
@@ -323,7 +323,7 @@ $$</p>
 <td>the rotation subalgebra, the image of the bracket of the subspace</td>
 </tr>
 <tr>
-<td>$\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$</td>
+<td>${}^{\natural}, \bar{\cdot}, {}^{*}, \flat$</td>
 <td>the four involutions</td>
 </tr>
 </tbody>

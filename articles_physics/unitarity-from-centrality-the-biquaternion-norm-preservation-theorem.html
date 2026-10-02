@@ -52,23 +52,23 @@
       <div class="article-body">
         <h1 id="unitarity-from-centrality-the-biquaternion-norm-preservation-theorem"><strong>Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>Unitarity is the statement that the norm of a state does not change in time. In the biquaternion framework there are two norms on the algebra, and they behave differently: the <strong>Hermitian norm</strong> $\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Q})$, which is positive definite and is the norm that Born probabilities are built from, and the <strong>biquaternion norm</strong> $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, which is central-valued and indefinite. This article asks, for each of them, under exactly which elements of $\mathbb{B}$ the conjugation action
+<p>Unitarity is the statement that the norm of a state does not change in time. In the biquaternion framework there are two norms on the algebra, and they behave differently: the <strong>Hermitian norm</strong> $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})$, which is positive definite and is the norm that Born probabilities are built from, and the <strong>biquaternion norm</strong> $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$, which is central-valued and indefinite. This article asks, for each of them, under exactly which elements of $\mathbb{B}$ the conjugation action
 $$
-\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^\dagger
+\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}
 $$
 preserves it. The answer is a norm-preservation theorem with a single organising theme: <strong>the conditions are conditions on the centre of the algebra.</strong></p>
-<p>Three statements are proved. The first is that $\Gamma_{\tilde{U}}$ preserves the Hermitian norm if and only if $\tilde{U}$ is unitary, $\tilde{U}\tilde{U}^\dagger=e_0$. The second is that $\Gamma_{\tilde{U}}$ scales the biquaternion norm by a <strong>central scalar</strong>,
+<p>Three statements are proved. The first is that $\Gamma_{\tilde{U}}$ preserves the Hermitian norm if and only if $\tilde{U}$ is unitary, $\tilde{U}\tilde{U}^{*}=e_0$. The second is that $\Gamma_{\tilde{U}}$ scales the biquaternion norm by a <strong>central scalar</strong>,
 $$
 N\bigl(\Gamma_{\tilde{U}}\tilde{Q}\bigr)=\bigl|N(\tilde{U})\bigr|^2\,N(\tilde{Q}),
 $$
-so that it preserves the biquaternion norm exactly when $|N(\tilde{U})|=1$, i.e. when $N(\tilde{U})$ lies on the unit circle of the centre $\mathbb{C}_{\mathbb{B}}$. The third is the structural reason behind the word <em>centrality</em> in the title: the product $\tilde{U}^\dagger\tilde{U}$, which measures the failure of $\Gamma_{\tilde{U}}$ to be multiplicative, is central if and only if that failure is a scalar rather than an operator-valued anomaly; and it equals $e_0$ — the case of a genuine algebra automorphism — if and only if $\tilde{U}$ is unitary. Thus</p>
+so that it preserves the biquaternion norm exactly when $|N(\tilde{U})|=1$, i.e. when $N(\tilde{U})$ lies on the unit circle of the centre $\mathbb{C}_{\mathbb{B}}$. The third is the structural reason behind the word <em>centrality</em> in the title: the product $\tilde{U}^{*}\tilde{U}$, which measures the failure of $\Gamma_{\tilde{U}}$ to be multiplicative, is central if and only if that failure is a scalar rather than an operator-valued anomaly; and it equals $e_0$ — the case of a genuine algebra automorphism — if and only if $\tilde{U}$ is unitary. Thus</p>
 <p>$$
-\Gamma_{\tilde{U}}\ \text{is multiplicative} \iff \tilde{U}^\dagger\tilde{U}=e_0 \iff \tilde{U}\ \text{unitary},
+\Gamma_{\tilde{U}}\ \text{is multiplicative} \iff \tilde{U}^{*}\tilde{U}=e_0 \iff \tilde{U}\ \text{unitary},
 $$</p>
-<p>and the intermediate case $\tilde{U}^\dagger\tilde{U}=\lambda e_0$ with central $\lambda$ is a homomorphism up to the central scalar $\lambda$.</p>
+<p>and the intermediate case $\tilde{U}^{*}\tilde{U}=\lambda e_0$ with central $\lambda$ is a homomorphism up to the central scalar $\lambda$.</p>
 <p>The same theme governs the dynamics. The state-vector equation requires a unit $J$ with $J^2=-e_0$ and a Hermitian generator $\tilde{H}$; the flow it generates preserves the Hermitian norm <strong>for every Hermitian $\tilde{H}$</strong> if and only if $J$ commutes with every Hermitian element, i.e. if and only if $J$ is central. The centre contains exactly the two roots $\pm i$, so the norm-preserving unit of the Schrödinger equation is forced to be the scalar imaginary. This is the precise sense of the title: unitarity follows from centrality.</p>
 <p>The article is organised as follows. The two norms are written down and their natures contrasted; the conjugation action and its defect are introduced; the two norm-preservation theorems are proved; the norm-preserving groups are identified as $U(2)$ for the Hermitian norm and $U(1)\cdot SL(2,\mathbb{C})$ for the biquaternion norm, the second containing the first, so that the intersection of the two is $U(2)$ itself while $U(2)\cap SL(2,\mathbb{C})=SU(2)$; the flow version and the forced centrality of the unit are proved; and the standard and algebraic parts of the result are separated. Worked counterexamples show what fails when the centrality hypothesis is dropped.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central $i$ with $i^2=-1$. Conjugations are $\bar{\cdot}$ (quaternion), ${}^{*}$ (complex), $\dagger=\bar{\cdot}\circ{}^{*}$ (Hermitian), and $\flat=-\dagger$. The Hermitian and anti-Hermitian subspaces are
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central $i$ with $i^2=-1$. Conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}={}^{\natural}\circ\bar{\cdot}$ (Hermitian), and $\flat=-{}^{*}$. The Hermitian and anti-Hermitian subspaces are
 $$
 \mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\},
 \qquad
@@ -76,24 +76,24 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_- .
 $$
-The centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}\cong\mathbb{C}$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$, the biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, and on $\mathbb{M}_+$ with $\tilde{H}=h_0e_0+i\mathbf{h}$ one has $N(\tilde{H})=(h_0^2-|\mathbf{h}|^2)e_0$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, under which $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A root of $-e_0$ is an element $\xi$ with $\xi^2=-e_0$. The roots that can serve as the unit of a norm-preserving dynamics are the <strong>anti-Hermitian</strong> ones, $\xi^\dagger=-\xi$; among these the central roots are $\pm i$ and the rest are the unit pure real quaternions. A general root of $-e_0$ need not be anti-Hermitian, as $\xi=e_1+ie_2-e_3$ shows, and the condition of norm preservation at $\tilde{H}=e_0$ is what forces $\xi^\dagger=-\xi$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ and a pure state is $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.</p>
+The centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}\cong\mathbb{C}$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$, the biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$, and on $\mathbb{M}_+$ with $\tilde{H}=h_0e_0+i\mathbf{h}$ one has $N(\tilde{H})=(h_0^2-|\mathbf{h}|^2)e_0$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, under which $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A root of $-e_0$ is an element $\xi$ with $\xi^2=-e_0$. The roots that can serve as the unit of a norm-preserving dynamics are the <strong>anti-Hermitian</strong> ones, $\xi^{*}=-\xi$; among these the central roots are $\pm i$ and the rest are the unit pure real quaternions. A general root of $-e_0$ need not be anti-Hermitian, as $\xi=e_1+ie_2-e_3$ shows, and the condition of norm preservation at $\tilde{H}=e_0$ is what forces $\xi^{*}=-\xi$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ and a pure state is $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.</p>
 <h2 id="the-two-norms">The Two Norms</h2>
 <p>The word "norm" carries two distinct objects in this framework, and the whole article turns on not confusing them.</p>
 <p><strong>The Hermitian norm.</strong> For $\tilde{Q},\tilde{Y}\in\mathbb{B}$ define
 $$
-\langle\tilde{Q},\tilde{Y}\rangle_{\dagger}=\mathrm{Tr}\bigl(\tilde{Q}^\dagger\tilde{Y}\bigr),
+\langle\tilde{Q},\tilde{Y}\rangle_{\dagger}=\mathrm{Tr}\bigl(\tilde{Q}^{*}\tilde{Y}\bigr),
 \qquad
-\|\tilde{Q}\|_{\dagger}^2=\mathrm{Tr}\bigl(\tilde{Q}^\dagger\tilde{Q}\bigr).
+\|\tilde{Q}\|_{\dagger}^2=\mathrm{Tr}\bigl(\tilde{Q}^{*}\tilde{Q}\bigr).
 $$
-Writing $\tilde{Q}=x_0e_0+x_1e_1+x_2e_2+x_3e_3$ with $x_\mu\in\mathbb{C}$ and using $\tilde{Q}^\dagger=x_0^{*}e_0-x_1^{*}e_1-x_2^{*}e_2-x_3^{*}e_3$, one finds
+Writing $\tilde{Q}=x_0e_0+x_1e_1+x_2e_2+x_3e_3$ with $x_\mu\in\mathbb{C}$ and using $\tilde{Q}^{*}=x_0^{*}e_0-x_1^{*}e_1-x_2^{*}e_2-x_3^{*}e_3$, one finds
 $$
 \|\tilde{Q}\|_{\dagger}^2
 =2\bigl(|x_0|^2+|x_1|^2+|x_2|^2+|x_3|^2\bigr)>0\quad(\tilde{Q}\neq0).
 $$
-This form is positive definite of signature $(8,0)$ on the real eight-dimensional algebra. It is the Hilbert–Schmidt form of the matrix model, $\langle \tilde{Q},\tilde{Y}\rangle_\dagger=\mathrm{tr}(M(\tilde{Q})^\dagger M(\tilde{Y}))$ with $\mathrm{tr}$ the ordinary $2\times2$ matrix trace, and its restriction to the state module is the quantity $\mathrm{Tr}(\psi^\dagger\psi)$ that normalizes spinors. This is the norm whose preservation is the unitarity statement of quantum mechanics: the Born probability $\mathrm{Tr}(\tilde{P}\tilde{H})$ is written with the trace, and the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{Q})$ of two states is the boundary case of this norm.</p>
+This form is positive definite of signature $(8,0)$ on the real eight-dimensional algebra. It is the Hilbert–Schmidt form of the matrix model, $\langle \tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{tr}(M(\tilde{Q})^\dagger M(\tilde{Y}))$ with $\mathrm{tr}$ the ordinary $2\times2$ matrix trace, and its restriction to the state module is the quantity $\mathrm{Tr}(\psi^\dagger\psi)$ that normalizes spinors. This is the norm whose preservation is the unitarity statement of quantum mechanics: the Born probability $\mathrm{Tr}(\tilde{P}\tilde{H})$ is written with the trace, and the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{Q})$ of two states is the boundary case of this norm.</p>
 <p><strong>The biquaternion norm.</strong> The second object is
 $$
-N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\bigl(x_0^2+x_1^2+x_2^2+x_3^2\bigr)e_0\in\mathbb{C}_{\mathbb{B}},
+N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\bigl(x_0^2+x_1^2+x_2^2+x_3^2\bigr)e_0\in\mathbb{C}_{\mathbb{B}},
 $$
 a quadratic form with values in the <strong>centre</strong>, not in $\mathbb{R}$. Its coefficient is the determinant of the matrix model, $N(\tilde{Q})e_0=\det M(\tilde{Q})\,e_0$, so $N$ is multiplicative,
 $$
@@ -104,33 +104,33 @@ and it is indefinite on $\mathbb{M}_+$: for $\tilde{H}=h_0e_0+i\mathbf{h}$ one h
 <h2 id="the-conjugation-action-and-its-defect">The Conjugation Action and Its Defect</h2>
 <p>The action studied throughout is conjugation by an invertible element,
 $$
-\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^\dagger,
+\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*},
 \qquad
 \tilde{U}\in\mathbb{B}^{\times}.
 $$
 It has the following elementary properties, each immediate from the definitions.</p>
-<p><strong>It preserves Hermiticity.</strong> Since $\dagger$ is an anti-automorphism,
+<p><strong>It preserves Hermiticity.</strong> Since ${}^{*}$ is an anti-automorphism,
 $$
-\Gamma_{\tilde{U}}(\tilde{Q})^\dagger=\tilde{U}\tilde{Q}^\dagger\tilde{U}^\dagger=\Gamma_{\tilde{U}}\bigl(\tilde{Q}^\dagger\bigr),
+\Gamma_{\tilde{U}}(\tilde{Q})^{*}=\tilde{U}\tilde{Q}^{*}\tilde{U}^{*}=\Gamma_{\tilde{U}}\bigl(\tilde{Q}^{*}\bigr),
 $$
 so Hermitian elements go to Hermitian elements and anti-Hermitian to anti-Hermitian. In particular $\Gamma_{\tilde{U}}$ acts on $\mathbb{M}_+$ and on the state space, and it maps the positive cone to itself, because a congruence by an invertible element preserves the signature.</p>
 <p><strong>It fixes the unit only for unitaries.</strong> Evaluating at $e_0$,
 $$
-\Gamma_{\tilde{U}}(e_0)=\tilde{U}\tilde{U}^\dagger .
+\Gamma_{\tilde{U}}(e_0)=\tilde{U}\tilde{U}^{*} .
 $$
-So the action is unital, $\Gamma_{\tilde{U}}(e_0)=e_0$, if and only if $\tilde{U}\tilde{U}^\dagger=e_0$, i.e. if and only if $\tilde{U}$ is unitary.</p>
-<p><strong>Its defect is $\tilde{U}^\dagger\tilde{U}$.</strong> Compute the product of two images:
+So the action is unital, $\Gamma_{\tilde{U}}(e_0)=e_0$, if and only if $\tilde{U}\tilde{U}^{*}=e_0$, i.e. if and only if $\tilde{U}$ is unitary.</p>
+<p><strong>Its defect is $\tilde{U}^{*}\tilde{U}$.</strong> Compute the product of two images:
 $$
 \Gamma_{\tilde{U}}(\tilde{Q})\,\Gamma_{\tilde{U}}(\tilde{Y})
-=\tilde{U}\tilde{Q}\tilde{U}^\dagger\tilde{U}\tilde{Y}\tilde{U}^\dagger
-=\tilde{U}\tilde{Q}\bigl(\tilde{U}^\dagger\tilde{U}\bigr)\tilde{Y}\tilde{U}^\dagger .
+=\tilde{U}\tilde{Q}\tilde{U}^{*}\tilde{U}\tilde{Y}\tilde{U}^{*}
+=\tilde{U}\tilde{Q}\bigl(\tilde{U}^{*}\tilde{U}\bigr)\tilde{Y}\tilde{U}^{*} .
 $$
-Compare with $\Gamma_{\tilde{U}}(\tilde{Q}\tilde{Y})=\tilde{U}\tilde{Q}\tilde{Y}\tilde{U}^\dagger$. The two agree for all $\tilde{Q},\tilde{Y}$ if and only if
+Compare with $\Gamma_{\tilde{U}}(\tilde{Q}\tilde{Y})=\tilde{U}\tilde{Q}\tilde{Y}\tilde{U}^{*}$. The two agree for all $\tilde{Q},\tilde{Y}$ if and only if
 $$
-\tilde{U}^\dagger\tilde{U}\,\tilde{Y}=\tilde{Y}\qquad\text{for all }\tilde{Y},
+\tilde{U}^{*}\tilde{U}\,\tilde{Y}=\tilde{Y}\qquad\text{for all }\tilde{Y},
 $$
-which holds if and only if $\tilde{U}^\dagger\tilde{U}=e_0$. This is the <strong>defect</strong> of the action.</p>
-<p><strong>The centrality statement.</strong> If the defect is central, $\tilde{U}^\dagger\tilde{U}=\lambda e_0$ with $\lambda\in\mathbb{C}_{\mathbb{B}}$, then it commutes past $\tilde{Y}$ and
+which holds if and only if $\tilde{U}^{*}\tilde{U}=e_0$. This is the <strong>defect</strong> of the action.</p>
+<p><strong>The centrality statement.</strong> If the defect is central, $\tilde{U}^{*}\tilde{U}=\lambda e_0$ with $\lambda\in\mathbb{C}_{\mathbb{B}}$, then it commutes past $\tilde{Y}$ and
 $$
 \Gamma_{\tilde{U}}(\tilde{Q})\Gamma_{\tilde{U}}(\tilde{Y})
 =\lambda\,\Gamma_{\tilde{U}}(\tilde{Q}\tilde{Y}),
@@ -138,32 +138,32 @@ $$
 so that $\Gamma_{\tilde{U}}$ is an algebra homomorphism <strong>up to the central scalar $\lambda$</strong>. The failure of multiplicativity is then a scalar — the same number for every pair $\tilde{Q},\tilde{Y}$ — rather than an operator-valued anomaly that distorts each product differently. Centrality of the defect is exactly the condition that the anomaly is scalar; and the scalar is $1$, i.e. the action is multiplicative, exactly when $\tilde{U}$ is unitary:
 $$
 \Gamma_{\tilde{U}}\text{ multiplicative}
-\iff \tilde{U}^\dagger\tilde{U}=e_0
+\iff \tilde{U}^{*}\tilde{U}=e_0
 \iff \tilde{U}\text{ unitary}.
 $$
-This is the first appearance of the centre in the norm-preservation problem, and it is the structural core of the article. Note that $\tilde{U}^\dagger\tilde{U}$ is automatically <strong>Hermitian and positive</strong>, $(\tilde{U}^\dagger\tilde{U})^\dagger=\tilde{U}^\dagger\tilde{U}$, so when it is central it is $\lambda e_0$ with $\lambda\in\mathbb{R}$ and $\lambda>0$ for $\tilde{U}\neq0$; the central defect is a positive real scalar multiple of the identity, and unitarity is its normalization to $1$.</p>
+This is the first appearance of the centre in the norm-preservation problem, and it is the structural core of the article. Note that $\tilde{U}^{*}\tilde{U}$ is automatically <strong>Hermitian and positive</strong>, $(\tilde{U}^{*}\tilde{U})^{*}=\tilde{U}^{*}\tilde{U}$, so when it is central it is $\lambda e_0$ with $\lambda\in\mathbb{R}$ and $\lambda>0$ for $\tilde{U}\neq0$; the central defect is a positive real scalar multiple of the identity, and unitarity is its normalization to $1$.</p>
 <h2 id="the-norm-preservation-theorem">The Norm-Preservation Theorem</h2>
 <p>The two parts of the theorem are stated and proved separately, because they have different hypotheses and different content.</p>
 <h3 id="part-1-the-hermitian-norm">Part 1: the Hermitian norm</h3>
 <p><strong>Theorem 1.</strong> Let $\tilde{U}\in\mathbb{B}^{\times}$. The conjugation $\Gamma_{\tilde{U}}$ preserves the Hermitian norm for all $\tilde{Q}$,
 $$
-\mathrm{Tr}\bigl(\Gamma_{\tilde{U}}(\tilde{Q})^\dagger\,\Gamma_{\tilde{U}}(\tilde{Q})\bigr)=\mathrm{Tr}\bigl(\tilde{Q}^\dagger\tilde{Q}\bigr)
+\mathrm{Tr}\bigl(\Gamma_{\tilde{U}}(\tilde{Q})^{*}\,\Gamma_{\tilde{U}}(\tilde{Q})\bigr)=\mathrm{Tr}\bigl(\tilde{Q}^{*}\tilde{Q}\bigr)
 \qquad\text{for all }\tilde{Q},
 $$
-if and only if $\tilde{U}$ is unitary, $\tilde{U}^\dagger\tilde{U}=e_0$.</p>
-<p><strong>Proof.</strong> Write $\tilde{Z}=\tilde{U}^\dagger\tilde{U}$, which is Hermitian and positive. Since $\Gamma_{\tilde{U}}(\tilde{Q})^\dagger=\tilde{U}\tilde{Q}^\dagger\tilde{U}^\dagger$,
+if and only if $\tilde{U}$ is unitary, $\tilde{U}^{*}\tilde{U}=e_0$.</p>
+<p><strong>Proof.</strong> Write $\tilde{Z}=\tilde{U}^{*}\tilde{U}$, which is Hermitian and positive. Since $\Gamma_{\tilde{U}}(\tilde{Q})^{*}=\tilde{U}\tilde{Q}^{*}\tilde{U}^{*}$,
 $$
-\mathrm{Tr}\bigl(\Gamma_{\tilde{U}}(\tilde{Q})^\dagger\Gamma_{\tilde{U}}(\tilde{Q})\bigr)
-=\mathrm{Tr}\bigl(\tilde{U}\tilde{Q}^\dagger\tilde{U}^\dagger\tilde{U}\tilde{Q}\tilde{U}^\dagger\bigr)
-=\mathrm{Tr}\bigl(\tilde{Q}^\dagger\tilde{Z}\tilde{Q}\tilde{Z}\bigr),
+\mathrm{Tr}\bigl(\Gamma_{\tilde{U}}(\tilde{Q})^{*}\Gamma_{\tilde{U}}(\tilde{Q})\bigr)
+=\mathrm{Tr}\bigl(\tilde{U}\tilde{Q}^{*}\tilde{U}^{*}\tilde{U}\tilde{Q}\tilde{U}^{*}\bigr)
+=\mathrm{Tr}\bigl(\tilde{Q}^{*}\tilde{Z}\tilde{Q}\tilde{Z}\bigr),
 $$
-using the cyclicity of the trace twice. If $\tilde{Z}=e_0$ this is $\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Q})$, so unitarity is sufficient. Conversely, suppose the identity holds for all $\tilde{Q}$ and take $\tilde{Q}$ rank one, $\tilde{Q}=|\varphi\rangle\langle\varphi|$ in the matrix model. Then $\tilde{Q}^\dagger\tilde{Z}\tilde{Q}=\langle\varphi|\tilde{Z}\varphi\rangle\,|\varphi\rangle\langle\varphi|$ and
+using the cyclicity of the trace twice. If $\tilde{Z}=e_0$ this is $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})$, so unitarity is sufficient. Conversely, suppose the identity holds for all $\tilde{Q}$ and take $\tilde{Q}$ rank one, $\tilde{Q}=|\varphi\rangle\langle\varphi|$ in the matrix model. Then $\tilde{Q}^{*}\tilde{Z}\tilde{Q}=\langle\varphi|\tilde{Z}\varphi\rangle\,|\varphi\rangle\langle\varphi|$ and
 $$
-\mathrm{Tr}\bigl(\tilde{Q}^\dagger\tilde{Z}\tilde{Q}\tilde{Z}\bigr)
+\mathrm{Tr}\bigl(\tilde{Q}^{*}\tilde{Z}\tilde{Q}\tilde{Z}\bigr)
 =\langle\varphi|\tilde{Z}\varphi\rangle\,\mathrm{Tr}\bigl(|\varphi\rangle\langle\varphi|\tilde{Z}\bigr)
 =\langle\varphi|\tilde{Z}\varphi\rangle^2 .
 $$
-The preserved value is $\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Q})=1$, so $\langle\varphi|\tilde{Z}\varphi\rangle^2=1$ for every unit $\varphi$; positivity gives $\langle\varphi|\tilde{Z}\varphi\rangle=1$ for all unit $\varphi$, hence $\tilde{Z}=e_0$.</p>
+The preserved value is $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})=1$, so $\langle\varphi|\tilde{Z}\varphi\rangle^2=1$ for every unit $\varphi$; positivity gives $\langle\varphi|\tilde{Z}\varphi\rangle=1$ for all unit $\varphi$, hence $\tilde{Z}=e_0$.</p>
 <p>The theorem extends from the norm to the pairing by polarization, and it extends to the trace pairing $\mathrm{Tr}(\tilde{Q}\tilde{Y})$ on $\mathbb{M}_+$ by the same argument applied to Hermitian elements. The physical content is that the Born probabilities of two states are preserved under $\Gamma_{\tilde{U}}$ exactly when $\tilde{U}$ is unitary, which is the standard statement of unitarity in the framework's language.</p>
 <h3 id="part-2-the-biquaternion-norm">Part 2: the biquaternion norm</h3>
 <p><strong>Theorem 2.</strong> Let $\tilde{U}\in\mathbb{B}^{\times}$. The conjugation scales the biquaternion norm by a central scalar,
@@ -177,7 +177,7 @@ $$
 \bigl|N(\tilde{U})\bigr|=1 ,
 $$
 i.e. if and only if the biquaternion norm of $\tilde{U}$ lies on the unit circle of the centre.</p>
-<p><strong>Proof.</strong> Under the matrix model, $M(\Gamma_{\tilde{U}}\tilde{Q})=M(\tilde{U})M(\tilde{Q})M(\tilde{U}^\dagger)$, and $M(\tilde{U}^\dagger)=M(\tilde{U})^\dagger$. The determinant is multiplicative and the determinant of the adjoint is the conjugate,
+<p><strong>Proof.</strong> Under the matrix model, $M(\Gamma_{\tilde{U}}\tilde{Q})=M(\tilde{U})M(\tilde{Q})M(\tilde{U}^{*})$, and $M(\tilde{U}^{*})=M(\tilde{U})^\dagger$. The determinant is multiplicative and the determinant of the adjoint is the conjugate,
 $$
 \det M\bigl(\Gamma_{\tilde{U}}\tilde{Q}\bigr)
 =\det M(\tilde{U})\,\det M(\tilde{Q})\,\det M(\tilde{U})^{*}
@@ -187,7 +187,7 @@ Since $\det M(\tilde{Q})=N(\tilde{Q})$ for every $\tilde{Q}$, and since $N(\tild
 <p>Two features of the proof are worth isolating. First, the scaling factor $|N(\tilde{U})|^2$ is a <strong>central</strong> scalar: it is a real non-negative multiple of $e_0$, so it commutes with everything and multiplies the biquaternion norm uniformly. The biquaternion norm of an element is itself central-valued, and its modulus is therefore a classical number; preservation of the biquaternion norm is a condition on that number. This is the second appearance of the centre, and it is of a different kind from the first: there the centre appeared as the condition for the multiplicative anomaly to be scalar, here as the target space of the biquaternion norm itself.</p>
 <p>Second, the hypothesis $|N(\tilde{U})|=1$ is genuinely weaker than unitarity. A unitary $\tilde{U}$ has $|\det M(\tilde{U})|=1$, hence $|N(\tilde{U})|=1$, so every unitary preserves the biquaternion norm; but the converse fails, as the next section's counterexample shows. The two theorems are therefore not equivalent, and the difference between them is the difference between the quantum norm and the determinant.</p>
 <h3 id="putting-the-two-together">Putting the two together</h3>
-<p>The two preservation conditions can be read as statements about the same central defect. With $\tilde{Z}=\tilde{U}^\dagger\tilde{U}$,
+<p>The two preservation conditions can be read as statements about the same central defect. With $\tilde{Z}=\tilde{U}^{*}\tilde{U}$,
 $$
 \tilde{Z}=e_0\ \Longrightarrow\ \Gamma_{\tilde{U}}\text{ is an automorphism}\ \Longrightarrow\ \text{both norms preserved},
 $$
@@ -196,7 +196,7 @@ and the converse implication holds for the Hermitian norm. For the biquaternion 
 <p>The two theorems single out two groups of invertible elements, and their structure makes the relation between the norms explicit.</p>
 <p><strong>The unitaries.</strong> Define
 $$
-U(2)=\bigl\{\tilde{U}\in\mathbb{B}:\ \tilde{U}^\dagger\tilde{U}=e_0\bigr\}.
+U(2)=\bigl\{\tilde{U}\in\mathbb{B}:\ \tilde{U}^{*}\tilde{U}=e_0\bigr\}.
 $$
 By Theorem 1 these are exactly the elements for which $\Gamma_{\tilde{U}}$ preserves the Hermitian norm, and for which $\Gamma_{\tilde{U}}$ is an algebra automorphism fixing the unit. In the matrix model they are the unitary $2\times 2$ matrices; on the state module they are the norm-preserving linear maps; on the Bloch sphere their conjugation image is the rotation group $SO(3)$, with kernel $\{\pm e_0\}$, the double cover of the companion article <em>Angular Momentum and Spin in Biquaternionic Form</em>.</p>
 <p><strong>The unit-norm elements.</strong> Define
@@ -220,15 +220,15 @@ $$
 SU(2)=U(2)\cap SL(2,\mathbb{C})\ \subset\ U(2)\ \subset\ G_N=U(1)\cdot SL(2,\mathbb{C}),
 $$
 with $SU(2)$ the elements that are simultaneously unitary and of unit norm — the quaternionic unit sphere. The chain records the whole norm-preservation structure: the smallest group is the one that preserves both norms <strong>and</strong> the algebra's multiplication; enlarging to $U(2)$ keeps the Hermitian norm and the multiplication but gives up the unit-norm condition; enlarging to $G_N$ keeps only the biquaternion norm.</p>
-<p><strong>A remark on the direction of the two accounts.</strong> Theorem 1 is a statement about the algebra's own conjugation action: it says which inner maps are automorphisms. Theorem 2 is a statement about the determinant: it says that the biquaternion norm detects $\tilde{U}$ only through the central number $N(\tilde{U})$. The two are related by the fact that the unitaries are precisely the elements with $N(\tilde{U})$ a unit-modulus central scalar <strong>and</strong> $\tilde{U}^\dagger\tilde{U}=e_0$, the second condition being the genuinely non-abelian one. In the centre, equality cannot distinguish $U(2)$ from $G_N$; the non-central defect $\tilde{U}^\dagger\tilde{U}$ is what does.</p>
+<p><strong>A remark on the direction of the two accounts.</strong> Theorem 1 is a statement about the algebra's own conjugation action: it says which inner maps are automorphisms. Theorem 2 is a statement about the determinant: it says that the biquaternion norm detects $\tilde{U}$ only through the central number $N(\tilde{U})$. The two are related by the fact that the unitaries are precisely the elements with $N(\tilde{U})$ a unit-modulus central scalar <strong>and</strong> $\tilde{U}^{*}\tilde{U}=e_0$, the second condition being the genuinely non-abelian one. In the centre, equality cannot distinguish $U(2)$ from $G_N$; the non-central defect $\tilde{U}^{*}\tilde{U}$ is what does.</p>
 <h2 id="worked-examples-and-counterexamples">Worked Examples and Counterexamples</h2>
 <p>The following computations exhibit each hypothesis failing when it is dropped. Every one has been recomputed symbolically and confirmed numerically on superpositions, not on a single basis element.</p>
 <p><strong>Example 1: a non-unitary element of unit norm.</strong> Take $\tilde{U}=\mathrm{diag}(\lambda,\lambda^{-1})$ in the matrix model with $\lambda>0$, $\lambda\neq1$; equivalently $\tilde{U}=\cosh t\,e_0+i\sinh t\,e_3$ in the algebra, with $\lambda=e^{t}$, which the matrix model sends to $\mathrm{diag}(e^{t},e^{-t})$. Its determinant is $1$, so $N(\tilde{U})=e_0$ and Theorem 2's hypothesis holds: the biquaternion norm is preserved. But
 $$
-\tilde{U}^\dagger\tilde{U}=\mathrm{diag}(\lambda^2,\lambda^{-2}),
+\tilde{U}^{*}\tilde{U}=\mathrm{diag}(\lambda^2,\lambda^{-2}),
 $$
 which is not central for $\lambda\neq1$, so $\Gamma_{\tilde{U}}$ is not multiplicative and does not preserve the Hermitian norm. Concretely, on the pure state $\tilde{P}=\tfrac12(e_0+i e_1)$ the trace pairing of $\tilde{P}$ with itself is $1$ before and $\mathrm{Tr}(\Gamma_{\tilde{U}}\tilde{P})^2=\tfrac14(\lambda^2+\lambda^{-2})^2=\cosh^2 2t$ after, while the biquaternion norm $N$ stays at $0$ on this null element. The example makes the two norms' disagreement explicit: the biquaternion norm sees only the determinant, and the determinant is blind to $\lambda$.</p>
-<p><strong>Example 2: a central scaling.</strong> Take $\tilde{U}=\lambda_0 e_0$ with $\lambda_0>0$, $\lambda_0\neq1$. This defect is central, $\tilde{U}^\dagger\tilde{U}=\lambda_0^2e_0$, so $\Gamma_{\tilde{U}}$ is a homomorphism up to the central scalar $\lambda_0^2$: for all $\tilde{Q},\tilde{Y}$,
+<p><strong>Example 2: a central scaling.</strong> Take $\tilde{U}=\lambda_0 e_0$ with $\lambda_0>0$, $\lambda_0\neq1$. This defect is central, $\tilde{U}^{*}\tilde{U}=\lambda_0^2e_0$, so $\Gamma_{\tilde{U}}$ is a homomorphism up to the central scalar $\lambda_0^2$: for all $\tilde{Q},\tilde{Y}$,
 $$
 \Gamma_{\tilde{U}}(\tilde{Q})\Gamma_{\tilde{U}}(\tilde{Y})=\lambda_0^2\,\Gamma_{\tilde{U}}(\tilde{Q}\tilde{Y}),
 \qquad
@@ -239,7 +239,7 @@ The biquaternion norm scales as $N(\Gamma_{\tilde{U}}\tilde{Q})=\lambda_0^4N(\ti
 $$
 G=-\hbar^{-1}e_3\,ie_1=-\hbar^{-1}i\,e_3e_1=-\hbar^{-1}i\,e_2 .
 $$
-Now $ie_2$ is Hermitian, since $(ie_2)^\dagger=ie_2$, so $G$ is Hermitian rather than anti-Hermitian, and the one-parameter group it generates is the hyperbolic element
+Now $ie_2$ is Hermitian, since $(ie_2)^{*}=ie_2$, so $G$ is Hermitian rather than anti-Hermitian, and the one-parameter group it generates is the hyperbolic element
 $$
 \exp(Gt)=\cosh(\hbar^{-1}t)\,e_0-\sinh(\hbar^{-1}t)\,ie_2 ,
 $$
@@ -268,14 +268,14 @@ $$
 The norm $\mathrm{Tr}(\psi^\dagger\psi)$ is preserved for all $t$ and all $\psi(0)$ exactly when $G$ is anti-Hermitian,
 $$
 \frac{d}{dt}\mathrm{Tr}\bigl(\psi^\dagger\psi\bigr)
-=\mathrm{Tr}\bigl(\psi^\dagger(G^\dagger+G)\psi\bigr)
+=\mathrm{Tr}\bigl(\psi^\dagger(G^{*}+G)\psi\bigr)
 =0\ \ \text{for all }\psi
-\iff G^\dagger=-G .
+\iff G^{*}=-G .
 $$</p>
 <p><strong>Theorem 3.</strong> Let $J$ be a root of $-e_0$. The flow generated by $G=-\hbar^{-1}J\tilde{H}$ is norm-preserving for <strong>every</strong> Hermitian $\tilde{H}$ if and only if $J$ is central. In that case $J=\pm i$, and the flow is the standard unitary one.</p>
-<p><strong>Proof.</strong> The hypothesis is that $G^\dagger=-G$ for every Hermitian $\tilde{H}$. Since $\tilde{H}^\dagger=\tilde{H}$,
+<p><strong>Proof.</strong> The hypothesis is that $G^{*}=-G$ for every Hermitian $\tilde{H}$. Since $\tilde{H}^{*}=\tilde{H}$,
 $$
-G^\dagger=-\hbar^{-1}\tilde{H}J^\dagger,
+G^{*}=-\hbar^{-1}\tilde{H}J^\dagger,
 \qquad
 -G=+\hbar^{-1}J\tilde{H},
 $$
@@ -288,16 +288,16 @@ so the hypothesis reads $-\tilde{H}J^\dagger=J\tilde{H}$ for every Hermitian $\t
 <p><strong>Standard.</strong> The identification of the Hilbert–Schmidt isometries of a matrix algebra under congruence with the unitary group is standard; the multiplicativity of the determinant and the behaviour of the determinant under the adjoint, $\det(A^\dagger)=\det(A)^{*}$, are standard; the isomorphism of the unit-norm group $SL(2,\mathbb{C})$ with the double cover of the Lorentz group is standard, and so is the fact that the unitary group is the norm-preserving group of quantum mechanics. The companion articles on the Schrödinger equation and on angular momentum already use these facts, and nothing here re-derives them.</p>
 <p><strong>The algebra's.</strong> Three statements are genuinely about $\mathbb{B}$ and its structure, and they are the content the framework adds.</p>
 <p>First, the <strong>coexistence of the two norms on the same eight-real-dimensional algebra</strong> is specific to the biquaternion setting: the Hermitian norm is the Hilbert–Schmidt form of the matrix model, while the biquaternion norm is its determinant, and the two live on the same elements with different target spaces ($\mathbb{R}$ and $\mathbb{C}_{\mathbb{B}}$). A purely complex matrix algebra has the first as its operator norm source and the second as its determinant, but it does not have the second as a <em>norm on the algebra</em> in the sense used here, because the determinant of a complex matrix is not a positive form; the biquaternion realization makes the determinant into a Hermitian-valued quadratic form whose scalar part is the Minkowski form.</p>
-<p>Second, the <strong>centrality criterion for multiplicativity</strong> is the framework's own statement: an inner map of $\mathbb{B}$ given by conjugation is multiplicative exactly when its defect $\tilde{U}^\dagger\tilde{U}$ is the unit, and multiplicative up to a scalar exactly when that defect is central. This is the precise algebraic form of the familiar fact that a non-unitary conjugation is not an automorphism, and it is what makes the word <em>centrality</em> the right one for the phenomenon: the obstruction to multiplicativity is measured by an element of the algebra, and it is scalar exactly when that element lies in the centre.</p>
+<p>Second, the <strong>centrality criterion for multiplicativity</strong> is the framework's own statement: an inner map of $\mathbb{B}$ given by conjugation is multiplicative exactly when its defect $\tilde{U}^{*}\tilde{U}$ is the unit, and multiplicative up to a scalar exactly when that defect is central. This is the precise algebraic form of the familiar fact that a non-unitary conjugation is not an automorphism, and it is what makes the word <em>centrality</em> the right one for the phenomenon: the obstruction to multiplicativity is measured by an element of the algebra, and it is scalar exactly when that element lies in the centre.</p>
 <p>Third, the <strong>forced centrality of the unit in the dynamics</strong> is algebraic in a way that its complex counterpart is not. In the complex theory one simply postulates $i$ and checks that $i\tilde{H}$ is anti-Hermitian; because there is only one imaginary unit available, the question of centrality does not arise. In $\mathbb{B}$ the anti-Hermitian roots of $-e_0$ — the roots that can serve as the unit of a norm-preserving dynamics — are the two central ones $\pm i$ together with the infinitely many unit pure real quaternions, and the requirement of norm preservation for all generators selects the centre. The selection is a theorem in this framework, and it is what connects the norm-preservation theorem to the identification of the centre as the classical sector.</p>
 <p><strong>A limit.</strong> Theorems 1 and 3 are, at bottom, standard facts about the unitary group, dressed in the algebra's coordinates. Their value is not that they produce a new group but that they locate the framework's unitarity precisely: it is the unitarity of the matrix model, its group is $U(2)$ acting by conjugation, and the extra group $G_N=U(1)\cdot SL(2,\mathbb{C})$ that preserves the biquaternion norm is the group of elements whose determinant has modulus one — which is not a group of quantum symmetries but a statement about the determinant. A reader should not read the larger group as a larger class of allowed quantum evolutions; the companion article <em>What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</em> is concerned to prevent exactly that reading.</p>
 <h2 id="summary">Summary</h2>
-<p>The biquaternion algebra carries two quadratic forms, and unambiguity about which one is being preserved is the whole content of the norm-preservation theorem. The Hermitian norm $\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Q})$ is real, positive definite, and preserved by the conjugation action $\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^\dagger$ exactly when $\tilde{U}$ is unitary; that is Theorem 1, and it is the framework's statement of unitarity. The biquaternion norm $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ is central-valued and indefinite, and under the same action it scales by a <strong>central</strong> scalar,</p>
+<p>The biquaternion algebra carries two quadratic forms, and unambiguity about which one is being preserved is the whole content of the norm-preservation theorem. The Hermitian norm $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})$ is real, positive definite, and preserved by the conjugation action $\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}$ exactly when $\tilde{U}$ is unitary; that is Theorem 1, and it is the framework's statement of unitarity. The biquaternion norm $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ is central-valued and indefinite, and under the same action it scales by a <strong>central</strong> scalar,</p>
 <p>$$
 N\bigl(\Gamma_{\tilde{U}}\tilde{Q}\bigr)=\bigl|N(\tilde{U})\bigr|^2N(\tilde{Q}),
 $$</p>
 <p>so it is preserved exactly when $|N(\tilde{U})|=1$; that is Theorem 2, and its group is the seven-real-dimensional $G_N=U(1)\cdot SL(2,\mathbb{C})$, which contains $U(2)$; the intersection is $U(2)$ itself, while $U(2)\cap SL(2,\mathbb{C})=SU(2)$.</p>
-<p>The centrality theme is carried by the defect $\tilde{Z}=\tilde{U}^\dagger\tilde{U}$. The action is multiplicative exactly when $\tilde{Z}=e_0$, i.e. exactly when $\tilde{U}$ is unitary and $\Gamma_{\tilde{U}}$ is an automorphism; when $\tilde{Z}$ is central the multiplicative anomaly collapses to the scalar $\tilde{Z}$, and the centre is precisely the locus where that collapse occurs. The same collapse governs the dynamics: the generator $G=-\hbar^{-1}J\tilde{H}$ is anti-Hermitian for every Hermitian $\tilde{H}$ if and only if the root $J$ of $-e_0$ is central, and the only central roots are $\pm i$, so the unit of the Schrödinger equation is forced into the centre of the algebra. Unitarity, in this framework, is a centrality statement.</p>
+<p>The centrality theme is carried by the defect $\tilde{Z}=\tilde{U}^{*}\tilde{U}$. The action is multiplicative exactly when $\tilde{Z}=e_0$, i.e. exactly when $\tilde{U}$ is unitary and $\Gamma_{\tilde{U}}$ is an automorphism; when $\tilde{Z}$ is central the multiplicative anomaly collapses to the scalar $\tilde{Z}$, and the centre is precisely the locus where that collapse occurs. The same collapse governs the dynamics: the generator $G=-\hbar^{-1}J\tilde{H}$ is anti-Hermitian for every Hermitian $\tilde{H}$ if and only if the root $J$ of $-e_0$ is central, and the only central roots are $\pm i$, so the unit of the Schrödinger equation is forced into the centre of the algebra. Unitarity, in this framework, is a centrality statement.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -320,7 +320,7 @@ $$</p>
 <td>Central scalar imaginary, $i^2=-1$</td>
 </tr>
 <tr>
-<td>$\dagger=\bar{\cdot}\circ{}^{*}$</td>
+<td>${}^{*}={}^{\natural}\circ\bar{\cdot}$</td>
 <td>Hermitian conjugation</td>
 </tr>
 <tr>
@@ -336,23 +336,23 @@ $$</p>
 <td>Trace, $\mathrm{Tr}(e_0)=2$</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$</td>
+<td>$N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$</td>
 <td>Biquaternion norm, centre-valued</td>
 </tr>
 <tr>
-<td>$\langle\tilde{Q},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Y})$</td>
+<td>$\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$</td>
 <td>Hermitian (Hilbert–Schmidt) pairing</td>
 </tr>
 <tr>
-<td>$\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^\dagger$</td>
+<td>$\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}$</td>
 <td>Conjugation action</td>
 </tr>
 <tr>
-<td>$\tilde{Z}=\tilde{U}^\dagger\tilde{U}$</td>
+<td>$\tilde{Z}=\tilde{U}^{*}\tilde{U}$</td>
 <td>Defect of the action</td>
 </tr>
 <tr>
-<td>$U(2)=\{\tilde{U}:\tilde{U}^\dagger\tilde{U}=e_0\}$</td>
+<td>$U(2)=\{\tilde{U}:\tilde{U}^{*}\tilde{U}=e_0\}$</td>
 <td>Unitary group; preserves the Hermitian norm</td>
 </tr>
 <tr>

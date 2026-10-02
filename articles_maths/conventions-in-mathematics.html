@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conventions in Mathematics — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="conventions-in-mathematics"><strong>Conventions in Mathematics</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article gathers the conventions the mathematical articles assume: the symbols, the arithmetic conventions, the shape of a generic element and its coefficients, the marks reserved for the conjugations of an algebra with an involution and for the adjoint of an operator, the typographic rules of the source, and the working conventions of the corpus itself — the menu, the groups inside a category, the article files and the skeleton.</p>
+<p>They are stated once, here, so that no other article need repeat them. How the articles are organised into the six parts and their categories is the subject of the companion article <em>Introduction to Mathematics</em>; this one is the reference for the elements, the marks, the glyphs and the layout.</p>
+<h2 id="notational-conventions">Notational Conventions</h2>
+<p>The conventions below are those used throughout the corpus. They are stated once, here, so that the other articles need not repeat them.</p>
+<h3 id="symbols">Symbols</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}$</td>
+<td>the naturals, integers, rationals, reals, complex numbers</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>the split-complex numbers, $\mathbb{R}[x]/(x^2-1)$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}'$</td>
+<td>the dual numbers, $\mathbb{R}[x]/(x^2)$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>the real quaternions</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}}$</td>
+<td>the split-quaternions, $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternions, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$</td>
+<td>the split-biquaternions, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+</tr>
+<tr>
+<td>$\mathbb{O}$</td>
+<td>the octonions</td>
+</tr>
+<tr>
+<td>$G$</td>
+<td>a group; $R$ a ring; $k$, $F$ a field; $V$ a vector space; $M$ a module; $A$ an algebra</td>
+</tr>
+<tr>
+<td>$\mathrm{G}, \mathrm{H}, \mathrm{SL}_n$</td>
+<td>Lie algebras</td>
+</tr>
+<tr>
+<td>$\mathrm{M}, \mathrm{P}$</td>
+<td>ideals and prime ideals</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}(X), \operatorname{Aut}(X)$</td>
+<td>symmetric group of a set; automorphism group of a structure</td>
+</tr>
+<tr>
+<td>$\operatorname{End}(V), \operatorname{Der}(A), \operatorname{Inn}(A), \operatorname{Out}(A)$</td>
+<td>endomorphisms, derivations, inner and outer automorphisms</td>
+</tr>
+<tr>
+<td>$GL, SL, PGL, O, SO, U, SU, Sp$</td>
+<td>the classical groups</td>
+</tr>
+<tr>
+<td>$T(V), S(V), \Lambda(V), Cl(V,Q)$</td>
+<td>tensor, symmetric, exterior and Clifford algebras</td>
+</tr>
+<tr>
+<td>$V^{\otimes n}, S^n V, \Lambda^n V$</td>
+<td>tensor, symmetric and exterior powers</td>
+</tr>
+<tr>
+<td>$B(v,w), Q(v), N(x)$</td>
+<td>bilinear form, quadratic form, norm</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}, {}^{\natural}, {}^{*}, {}^{\flat}, {}^{\dagger}$</td>
+<td>the conjugations of an algebra with an involution, and the adjoint of an operator; <em>The conjugations and the adjoint</em> below fixes their meanings</td>
+</tr>
+<tr>
+<td>$\tilde\Pi$</td>
+<td>an idempotent, a projector or a pure state, and the minimal left ideal it generates</td>
+</tr>
+<tr>
+<td>$\tilde P, \tilde q, \tilde Q$</td>
+<td>a generic element of the algebra: the quaternion, split-quaternion, biquaternion or split-biquaternion one</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="groups-rings-and-operations">Groups, rings and operations</h3>
+<p>A group is written multiplicatively by default, with unit $e$ and inverse $x^{-1}$, and additively when it is the underlying group of a ring, with zero $0$ and inverse $-x$. A ring is a triple $(R, +, \cdot)$; a ring need not be commutative and need not have a unit, and the article that introduces it says which conventions it adopts. A field is a commutative ring with $1 \neq 0$ in which every nonzero element is invertible. A module is written with its scalars on the left unless the article says otherwise, and the side matters as soon as the ring is non-commutative. Products are written by juxtaposition: $ab$ for the product in a group or an algebra, $fv$ for the action of a scalar on a vector.</p>
+<h3 id="latex-and-typesetting">LaTeX and typesetting</h3>
+<p>The articles are rendered with KaTeX on the page, and the following rules are observed in the source.</p>
+<ul>
+<li>Inline mathematics is written between single dollars, and display mathematics between double dollars on lines of their own.</li>
+<li>Inline mathematics never spans a line break. If a formula is too long, it is displayed.</li>
+<li>Display mathematics inside a list is indented four spaces.</li>
+<li>A prime is never written immediately after a symbol that also carries a subscript: the form <code>q'_0^2</code> is not written. The prime is applied to the symbol first, and the subscript follows it.</li>
+<li>Tables are Markdown tables. A LaTeX array is never used for a table.</li>
+<li>Every heading that introduces a comparison or a classification is a real <code>###</code> heading, and the objects are defined before they are tabulated.</li>
+<li>The macros <code>\dddot</code> and <code>\slashed</code> are available. The characters <code>|</code>, <code>{</code>, <code>}</code>, <code>&lt;</code> and <code>&gt;</code> inside mathematics need no escaping.</li>
+<li>A malformed formula is rendered in red on the page rather than reported as an error, so mathematics is checked by eye and not by the absence of a warning.</li>
+</ul>
+<h2 id="algebraic-conventions">Algebraic Conventions</h2>
+<p>The conventions below fix how the elements themselves are written: the case and the tilde that name its
+algebra, the shape of a generic element and the letters of its coefficients, the marks reserved for the
+conjugations, and the symbol of the idempotents.</p>
+<h3 id="case-and-tildes">Case and tildes</h3>
+<p>A generic element is preferably written so that the glyph alone identifies its algebra. Two features are read together: the <strong>case</strong> separates a real scalar from a complex one, and a <strong>tilde</strong> marks the quaternionic factor.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>Glyph</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the real numbers</td>
+<td>lower case, no tilde</td>
+<td>$q_\mu$, $t$, $x$</td>
+</tr>
+<tr>
+<td>the complex numbers</td>
+<td>upper case, no tilde</td>
+<td>$Q_\mu$, $Z$</td>
+</tr>
+<tr>
+<td>the quaternions and split-quaternions</td>
+<td>lower case, with tilde</td>
+<td>$\tilde q$</td>
+</tr>
+<tr>
+<td>the biquaternions and split-biquaternions</td>
+<td>upper case, with tilde</td>
+<td>$\tilde Q$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The conventions above already read through it, and it is worth saying so explicitly: the coefficients $q_\mu$ are real, the coefficients $Q_\mu = q_\mu + iq'_\mu$ are complex, and a general element of $\mathbb{B}$ is written $\tilde Q$. The case names the scalar sector, the tilde the presence of the quaternion factor, and the two are read independently: $q_\mu$ is a real number, $Z$ a complex, split-complex or dual number, $\tilde q$ a quaternion or split-quaternion, and $\tilde Q$ a biquaternion or split-biquaternion.</p>
+<p>For the commutative two-parameter systems the general element itself is written $Z = a + ib$ — with $j$ in place of $i$ for the split-complex numbers and $\varepsilon$ for the dual numbers — so that the element carries the upper case and its two real coefficients the lower case.</p>
+<p>This is a <strong>preferred convention</strong> — a preference, not a strict rule, not to be enforced by rewriting other articles: the basis $e_0, \dots, e_3$, the central unit $i$, the Euclidean vector $\mathbf{x}$, the coefficients $q_\mu, q'_\mu$, indices such as $\mu, \nu, k$, structure constants, and the individual elements an article defines keep the symbols that article gives them. Where the constructions that share a glyph must be told apart — the complex from the split-complex and the dual, the quaternion from the split-quaternion, the biquaternion from the split-biquaternion — the glyph is qualified by a subscript, as in $\mathbb{H}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{H}_{\mathbb{D}}$.</p>
+<h3 id="the-element-and-its-coefficients">The element and its coefficients</h3>
+<p>The case and the tilde of the glyph are fixed above; the element itself is written as a linear combination of the basis with its coefficients in the scalar sector of the algebra. For the biquaternions, whose basis is $e_0, e_1, e_2, e_3$ with $e_0 = 1$ the unit,</p>
+<p>$$
+\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3, \qquad Q_\mu = q_\mu + iq'_\mu,
+$$</p>
+<p>where the four coefficients $Q_\mu$ are complex, and each of them splits into a real part $q_\mu$ and an imaginary part $q'_\mu$. <strong>The two parts of a coefficient share its letter</strong>, the imaginary part carrying a prime.</p>
+<p>The shape is the same in the quaternion systems; only the coefficient sector changes.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>System</th>
+<th>Generic element</th>
+<th>Coefficients</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$</td>
+<td>real</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>$\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$</td>
+<td>complex, $Q_\mu = q_\mu + iq'_\mu$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$</td>
+<td>$\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$</td>
+<td>split-complex, $Q_\mu = q_\mu + jq'_\mu$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The unit $e_0$ is the identity in each of them. The real and the imaginary part of a coefficient may be read off only where the scalar sector is larger than the reals, which is the case in $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$ and not in $\mathbb{H}$.</p>
+<h3 id="the-conjugations-and-the-adjoint">The conjugations and the adjoint</h3>
+<p>The biquaternion algebra carries four natural involutions, all of them used in the series, together with the adjoint of an operator, which belongs to the operators and not to the algebra:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Map</th>
+<th>Mark</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>complex conjugation</td>
+<td>$\bar{\cdot}$</td>
+<td>the involution of the base, extended to the element</td>
+</tr>
+<tr>
+<td>quaternion conjugation</td>
+<td>${}^{\natural}$</td>
+<td>the intrinsic conjugate: it fixes the scalars and negates the vectors</td>
+</tr>
+<tr>
+<td>Hermitian conjugation</td>
+<td>${}^{*}$</td>
+<td>the involution of the algebra, $\bar{\cdot}\circ{}^{\natural}$</td>
+</tr>
+<tr>
+<td>anti-Hermitian conjugation</td>
+<td>${}^{\flat} = -{}^{*}$</td>
+<td>the negative of the star</td>
+</tr>
+<tr>
+<td>operator adjoint</td>
+<td>${}^{\dagger}$</td>
+<td>the adjoint of an operator, $(L_a)^{\dagger} = L_{a^{*}}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Which of the marks has a sense depends on the system, since a mark degenerates wherever the structure it conjugates is absent. The four examples below fix it system by system.</p>
+<p><strong>The complex numbers $\mathbb{C}$.</strong> Only the bar has a sense, the algebra carrying a single non-trivial involution:</p>
+<p>$$
+\bar Z = a - ib .
+$$</p>
+<p><strong>The split-complex numbers $\mathbb{D}$.</strong> Only the bar has a sense:</p>
+<p>$$
+\bar Z = a - jb , \qquad j^2 = +1 .
+$$</p>
+<p><strong>The quaternions $\mathbb{H}$ and the split-quaternions $\mathbb{H}_{\mathrm{s}}$.</strong> Only the natural sign has a sense, the coefficients being real and the conjugation intrinsic to the quaternion factor, and the same formula is read on the two sets of units:</p>
+<p>$$
+\tilde q^{\natural} = q_0e_0 - q_1e_1 - q_2e_2 - q_3e_3 , \qquad e_k^2 = -e_0 \ (\mathbb{H}) , \qquad e_1^2 = -e_0 , \ e_2^2 = e_3^2 = +e_0 \ (\mathbb{H}_{\mathrm{s}}) .
+$$</p>
+<p><strong>The biquaternions $\mathbb{B}$ and the split-biquaternions.</strong> All four have a sense, the bar conjugating the coefficient, complex in $\mathbb{B}$ and split-complex in the split-biquaternions:</p>
+<p>$$
+\bar{\tilde Q} = \bar Q_0e_0 + \bar Q_1e_1 + \bar Q_2e_2 + \bar Q_3e_3 , \qquad \tilde Q^{\natural} = Q_0e_0 - Q_1e_1 - Q_2e_2 - Q_3e_3 ,
+$$</p>
+<p>$$
+\tilde Q^{*} = \overline{\tilde Q^{\natural}} = \bar Q_0e_0 - \bar Q_1e_1 - \bar Q_2e_2 - \bar Q_3e_3 , \qquad \tilde Q^{\flat} = -\tilde Q^{*} .
+$$</p>
+<p>The dagger is the one mark that acts on an operator and not on an element, so it is the same in every system.</p>
+<h3 id="the-idempotent-convention">The idempotent convention</h3>
+<p>The convention above fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the corpus uses it throughout.</p>
+<p>An <strong>idempotent</strong> of the algebra is an element $\tilde\Pi$ with $\tilde\Pi^2 = \tilde\Pi$; a <strong>projector</strong> is a Hermitian idempotent, $\tilde\Pi^{*} = \tilde\Pi$, and the rank-one projectors of $\mathbb{M}_+$, the Hermitian subspace, are the <strong>pure states</strong>,</p>
+<p>$$
+\tilde\Pi_\pm(\hat\mu) = \tfrac{1}{2}\bigl(e_0 \pm i\,\hat\mu\bigr), \qquad \hat\mu \in \mathbb{R}^3,\ |\hat\mu| = 1 .
+$$</p>
+<p>The involution here is the star on the elements, as <em>The conjugations and the adjoint</em> fixes it; the physics corpus writes the same involution with a dagger, $\tilde\Pi^\dagger = \tilde\Pi$, in <em>Conventions in the Biquaternion Universe</em>, and the two symbols must not be carried across the boundary between the corpora.</p>
+<p>A non-zero idempotent $\tilde\Pi$ generates the <strong>minimal left ideal</strong> $\mathbb{B}\tilde\Pi$; the classification of the idempotents, the polarisation identity, the Peirce decomposition and the projective geometry of the pure states are those of <em>Biquaternion Idempotents and Projections</em> and its companions.</p>
+<p>The upper-case tilde is therefore <strong>split between two roles</strong>, and the split is the reason the convention is stated:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Pi$</td>
+<td>an idempotent, a projector or a pure state, and the minimal left ideal $\mathbb{B}\tilde\Pi$ it generates</td>
+</tr>
+<tr>
+<td>$\tilde P$</td>
+<td>a <em>generic</em> element wherever a statement holds for every element</td>
+</tr>
+</tbody>
+</table></div>
+<p>The generic element keeps its $\tilde P$ in the statements that hold for all elements: the trace pairing $\operatorname{Tr}(\tilde P\tilde Q) = 2\operatorname{Sc}(\tilde P\tilde Q)$, the commutator bracket $[\tilde P, \tilde Q] = \tilde P\tilde Q - \tilde Q\tilde P$, the bilinear form $B(\tilde P, \tilde Q)$ and the multiplicativity $N(\tilde P\tilde Q) = N(\tilde P)N(\tilde Q)$. Both roles are inherited from <em>Biquaternion Idempotents and Projections</em> and its companions, which write the idempotent $\tilde\Pi$ and the generic element $\tilde P$ side by side.</p>
+<p>The convention is one of <strong>notation, not of substance</strong>: an element written $\tilde\Pi$ is not a different kind of object from one written $\tilde Q$, only an element known to be idempotent, and the glyph records that knowledge at the point of use. Where a passage needs a generic idempotent variable it may write $\tilde\Pi$, and where it needs a generic element it writes $\tilde P$ or $\tilde Q$.</p>
+<h2 id="conventions-of-the-corpus-itself">Conventions of the Corpus Itself</h2>
+<p>The corpus has a small number of working conventions that are not mathematical.</p>
+<p><strong>The menus.</strong> Every article is registered in exactly one menu: <code>maths.md</code> for the mathematical corpus and <code>physics.md</code> for the physics corpus. An entry has the form of a link to the article followed by a comment that lists the contents of the article in outline. The mathematical menu opens with the two articles that describe the corpus rather than belonging to one of them — <em>Introduction to Mathematics</em> and this one — placed outside the parts. An entry that begins with <code>+</code> is a <strong>planned</strong> article, one that is registered in the menu and not yet written; an entry without the marker has its article on disk.</p>
+<p><strong>The groups inside a category.</strong> A category of Parts I to IV lists its articles in four groups, each of which adds one thing to the group before it. The group <code>- Theory</code> holds the structure itself, read with the product of its elements. The group <code>- Operator Theory</code> holds the operators on that structure — the left and right multiplications, the derivations, the automorphisms, the actions and the sandwich — and adds an operator layer and nothing else. The group <code>- * Theory</code> holds the same structure read with an involution on its <strong>elements</strong>. The group <code>- * Operator Theory</code> holds the operators built from the <strong>involution</strong>, of which the adjoint is the archetype.</p>
+<p><strong>The two involutions.</strong> The star names the involutive layer in both groups, and the layer of the elements and the layer of the operators are two structures and not one: the involution of <code>- * Theory</code> sits on the elements and the adjoint of <code>- * Operator Theory</code> sits on the operators. They need not coincide: an involution on the elements does not by itself produce an adjoint on the operators, and two adjoints of the same structure may differ — the transpose and the Hermitian adjoint of a matrix are both adjoints, taken with respect to different pairings. When the two do agree the representation is a <code>*</code>-representation, and the agreement is proved in the article, never assumed by the menu.</p>
+<p><strong>The order and the fill rule.</strong> The four groups are placed in the order above, and the group <code>- Applications</code>, which holds the concrete instances of the structure, closes the category. The groups <code>- Operator Theory</code> and <code>- * Operator Theory</code> are present in a category whenever it has an operator layer, and the group <code>- * Theory</code> is present in every category of Parts I to IV, whether or not it yet holds an article.</p>
+<p><strong>The category names and numbers.</strong> The menu numbers its categories, and an article elsewhere in the corpus may address one by number rather than by name: <em>category n</em> means the n-th category of the mathematical menu, read in order. This article refers to categories by <strong>name</strong> throughout, because the names are the stable thing and the numbers shift whenever a category is inserted or split. A reader who meets a bare number in another article can resolve it in the menu.</p>
+<p><strong>The article files.</strong> The corpus is split into two collections, each with its own folder: a mathematical article is a file <code>articles_maths/&lt;slug&gt;.md</code> and a physical article is a file <code>articles_physics/&lt;slug&gt;.md</code>, where the slug is the title in lower case with hyphens in place of spaces and punctuation. The folder and the menu agree — an article lies in the folder whose menu lists it, and no article lies in both.</p>
+<p><strong>The article skeleton.</strong> Every article opens with its title as the first heading, followed by an <em>Introduction</em> that states what the article does and what it assumes, then the thematic sections, and closes with three sections in this order: <em>Summary</em>, <em>Summary of Notation</em>, and <em>Further Reading</em>. The introduction states the article's boundaries — what it deliberately does not cover, and where the reader will find it.</p>
+<p><strong>Cross-references and boundaries.</strong> A concept is introduced once, in the category that owns it, and referred to afterwards rather than restated. Articles do not duplicate the content of other articles; they cite them. Every article that touches a structure belonging to a later part states the deferral explicitly, which is the mechanism by which Rule 1 is enforced.</p>
+<h2 id="summary">Summary</h2>
+<p>The conventions are of two kinds: the mathematical notation, and the working conventions of the corpus.</p>
+<p>A generic element of a number system is written as a linear combination of the basis with its coefficients in
+the scalar sector of the system, the biquaternion element being $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$
+with $Q_\mu = q_\mu + iq'_\mu$. The notation is fixed here above all for the conjugations, which is where the corpus has the most marks to keep apart, and for the number systems, whose glyphs carry two bits each. An algebra with a degree-2 form carries an intrinsic conjugate, the map that negates its vectors and fixes its scalars; it is written with a <strong>natural sign</strong>. The involution of the base extends to the coefficients and is written with a <strong>bar</strong>. Their composite is the Hermitian anti-automorphism that makes the algebra a Hilbert algebra, written with a <strong>star</strong>; its negative is the <strong>anti-Hermitian</strong> conjugation, written <strong>flat</strong>; and the <strong>dagger</strong> is the adjoint, which on the elements of a Hilbert algebra names the same map as the star. The star and the bar commute, $^{*} = \bar{\cdot}\circ{}^{\natural} = {}^{\natural}\circ\bar{\cdot}$, the flat is $\flat = -{}^{*}$, and $\{\mathrm{id}, \bar{\cdot}, {}^{\natural}, {}^{*}\}$ is a Klein four-group while the flat stands outside it. On a base whose involution is the identity the bar is the identity map and the star coincides with the natural sign.</p>
+<p>On the number systems the <strong>case</strong> records whether the commuting scalar sector is larger than the reals and the <strong>tilde</strong> records the presence of the quaternionic factor, and the two are read independently: $a$ is real, $Z$ complex or split-complex or dual, $\tilde q$ quaternion or split-quaternion, and $\tilde Q$ biquaternion or split-biquaternion. The <strong>idempotents</strong> carry a symbol of their own: $\tilde\Pi$ is an idempotent, a projector or a pure state, and the minimal left ideal it generates, while $\tilde P$ is the generic element of a statement that holds for every element. The upper-case tilde is thus split between two roles, and the split is deliberate.</p>
+<p>The working conventions are the corpus's own. Every article is registered in exactly one menu, with a comment that outlines it, and a leading <code>+</code> marks a planned article. The four groups of a category — Theory, Operator Theory, <code>*</code> Theory and <code>*</code> Operator Theory — each add one thing to the group before, the star naming the involutive layer on the elements and then on the operators, so that the last group holds the operators built from the involution, and the group <code>Applications</code> closes the category. A concept is introduced once, in the category that owns it, and is cited afterwards rather than restated; every deferral to a later part is stated explicitly, which is how the ordering rule of <em>Introduction to Mathematics</em> is enforced. Each article opens with its title and an Introduction and closes with Summary, Summary of Notation and Further Reading.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>complex conjugation: the involution of the base, extended to the element</td>
+</tr>
+<tr>
+<td>${}^{\natural}$</td>
+<td>quaternion conjugation: the intrinsic conjugate of the algebra</td>
+</tr>
+<tr>
+<td>${}^{*}$</td>
+<td>Hermitian conjugation, the composite of the bar and the natural sign</td>
+</tr>
+<tr>
+<td>${}^{\flat} = -{}^{*}$</td>
+<td>anti-Hermitian conjugation</td>
+</tr>
+<tr>
+<td>${}^{\dagger}$</td>
+<td>the adjoint of an operator, which on an element may coincide with the star</td>
+</tr>
+<tr>
+<td>$\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}, \mathbb{D}, \mathbb{D}', \mathbb{H}, \mathbb{H}_{\mathrm{s}}, \mathbb{B}, \mathbb{H}_{\mathbb{D}}, \mathbb{O}$</td>
+<td>the number systems of the corpus, in the order the corpus reaches them</td>
+</tr>
+<tr>
+<td>lower case, upper case</td>
+<td>the scalar sector is the reals, or larger than the reals</td>
+</tr>
+<tr>
+<td>tilde</td>
+<td>the presence of the quaternionic factor</td>
+</tr>
+<tr>
+<td>$\tilde\Pi$</td>
+<td>an idempotent, a projector or a pure state, and the minimal left ideal it generates</td>
+</tr>
+<tr>
+<td>$\tilde P$</td>
+<td>the generic element of the algebra, in a statement that holds for every element</td>
+</tr>
+<tr>
+<td><code>- Theory</code>, <code>- Operator Theory</code>, <code>- * Theory</code>, <code>- * Operator Theory</code></td>
+<td>the four groups of a category, in that order</td>
+</tr>
+<tr>
+<td><code>- Applications</code></td>
+<td>the group that closes a category with the concrete instances of its structure</td>
+</tr>
+<tr>
+<td><code>+</code></td>
+<td>a planned article, registered in the menu and not yet written</td>
+</tr>
+<tr>
+<td><code>articles_maths/&lt;slug&gt;.md</code></td>
+<td>the file of a mathematical article; the slug is the title in lower case with hyphens</td>
+</tr>
+<tr>
+<td>Introduction, thematic sections, Summary, Summary of Notation, Further Reading</td>
+<td>the skeleton of every article</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (1853). The original formulation, and the source of the quaternion conjugation and its notation.</li>
+<li>S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636. The biquaternion conjugations and the conventions of the complexified algebra in the applied literature.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998). Algebras with involution, the first and the second kind, and the classification of their involutions.</li>
+<li>Nicolas Bourbaki, <em>Éléments de mathématique</em> (Hermann, then Springer). The model for a notation fixed once and used without variation.</li>
+<li>Donald E. Knuth, <em>The TeXbook</em> (Addison-Wesley, 1984). The typographic conventions the source of the corpus follows.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

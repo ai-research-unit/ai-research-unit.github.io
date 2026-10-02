@@ -57,7 +57,7 @@
 <p>$$
 \tilde{Q} = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3, \qquad Q_\mu \in \mathbb{C},
 $$</p>
-<p>with the quaternion basis $e_0 = 1$, $e_1, e_2, e_3$, and the central complex unit $i$, $i^2 = -1$, commuting with every $e_\mu$. The scalar part of $\tilde{Q}$ is $\mathrm{Sc}\,\tilde{Q} = Q_0$, its vector part is $\mathbf{Q} = Q_1e_1 + Q_2e_2 + Q_3e_3$, and the quaternion conjugate is $\bar{\tilde{Q}} = Q_0e_0 - \mathbf{Q}$. The fixed element used throughout is</p>
+<p>with the quaternion basis $e_0 = 1$, $e_1, e_2, e_3$, and the central complex unit $i$, $i^2 = -1$, commuting with every $e_\mu$. The scalar part of $\tilde{Q}$ is $\mathrm{Sc}\,\tilde{Q} = Q_0$, its vector part is $\mathbf{Q} = Q_1e_1 + Q_2e_2 + Q_3e_3$, and the quaternion conjugate is $\tilde{Q}^{\natural} = Q_0e_0 - \mathbf{Q}$. The fixed element used throughout is</p>
 <p>$$
 \tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3 .
 $$</p>
@@ -110,7 +110,7 @@ $$</p>
 e_1^2 = e_2^2 = e_3^2 = -e_0, \qquad e_1e_2 = e_3, \quad e_2e_1 = -e_3, \quad e_1e_3 = -e_2, \quad e_3e_2 = -e_1 .
 $$</p>
 <h2 id="the-six-subspaces-on-a-concrete-element">The Six Subspaces on a Concrete Element</h2>
-<p>The six distinguished real subspaces are the fixed and anti-fixed spaces of the three commuting involutions $\bar{\cdot}$, ${}^{*}$ and ${}^{\dagger} = \bar{\cdot}\circ{}^{*}$; the fourth conjugation $\flat = -\dagger$ has the same two eigenspaces as ${}^{\dagger}$ with the roles of the fixed and anti-fixed space interchanged, so it contributes no further subspaces. On the fixed element the decompositions are as follows.</p>
+<p>The six distinguished real subspaces are the fixed and anti-fixed spaces of the three commuting involutions ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*} = {}^{\natural}\circ\bar{\cdot}$; the fourth conjugation $\flat = -{}^{*}$ has the same two eigenspaces as ${}^{*}$ with the roles of the fixed and anti-fixed space interchanged, so it contributes no further subspaces. On the fixed element the decompositions are as follows.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -122,27 +122,27 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathbb{C}_{\mathbb{B}}$ (centre)</td>
-<td>$\bar{\tilde{Q}} = \tilde{Q}$</td>
+<td>$\tilde{Q}^{\natural} = \tilde{Q}$</td>
 <td>$(2+i)e_0$</td>
 </tr>
 <tr>
 <td>$\mathrm{Vect}(\mathbb{B})$ (vector)</td>
-<td>$\bar{\tilde{Q}} = -\tilde{Q}$</td>
+<td>$\tilde{Q}^{\natural} = -\tilde{Q}$</td>
 <td>$(1-i)e_1 + 3e_2 + ie_3$</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{B}}$ (quaternion)</td>
-<td>$\tilde{Q}^{*} = \tilde{Q}$</td>
+<td>$\bar{\tilde{Q}} = \tilde{Q}$</td>
 <td>$2e_0 + e_1 + 3e_2$</td>
 </tr>
 <tr>
 <td>$i\mathbb{H}_{\mathbb{B}}$ (anti-quaternion)</td>
-<td>$\tilde{Q}^{*} = -\tilde{Q}$</td>
+<td>$\bar{\tilde{Q}} = -\tilde{Q}$</td>
 <td>$ie_0 - ie_1 + ie_3$</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_+$ (Hermitian)</td>
-<td>$\tilde{Q}^{\dagger} = \tilde{Q}$</td>
+<td>$\tilde{Q}^{*} = \tilde{Q}$</td>
 <td>$2e_0 - ie_1 + ie_3$</td>
 </tr>
 <tr>
@@ -164,18 +164,18 @@ $$</p>
 <h2 id="the-four-conjugations-on-the-concrete-element">The Four Conjugations on the Concrete Element</h2>
 <p>Applying the four conjugations to $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$ gives</p>
 <p>$$
-\bar{\tilde{Q}} = (2+i)e_0 - (1-i)e_1 - 3e_2 - ie_3,
+\tilde{Q}^{\natural} = (2+i)e_0 - (1-i)e_1 - 3e_2 - ie_3,
 $$</p>
 <p>$$
-\tilde{Q}^{*} = (2-i)e_0 + (1+i)e_1 + 3e_2 - ie_3,
+\bar{\tilde{Q}} = (2-i)e_0 + (1+i)e_1 + 3e_2 - ie_3,
 $$</p>
 <p>$$
-\tilde{Q}^{\dagger} = \bar{\tilde{Q}}^{*} = (2-i)e_0 - (1+i)e_1 - 3e_2 + ie_3,
+\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = (2-i)e_0 - (1+i)e_1 - 3e_2 + ie_3,
 $$</p>
 <p>$$
-\tilde{Q}^{\flat} = -\tilde{Q}^{\dagger} = -(2-i)e_0 + (1+i)e_1 + 3e_2 - ie_3 .
+\tilde{Q}^{\flat} = -\tilde{Q}^{*} = -(2-i)e_0 + (1+i)e_1 + 3e_2 - ie_3 .
 $$</p>
-<p>Each is an involution, and the Klein group is visible in the relations $\tilde{Q}^{\dagger} = \bar{\tilde{Q}}^{*} = \tilde{Q}^{*\bar{}}$; the fourth conjugation satisfies $(\tilde{Q}^{\dagger})^{\flat} = -\tilde{Q}$ and $(\tilde{Q}^{\flat})^{\dagger} = -\tilde{Q}$, so it is the composition of $\dagger$ with the central sign $-1$. The fixed points of each involution give one of the six subspaces tabulated above: for instance, the Hermitian part of $\tilde{Q}$ is $\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{\dagger}) = 2e_0 - ie_1 + ie_3$, which agrees with the table.</p>
+<p>Each is an involution, and the Klein group is visible in the relations $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = \overline{\tilde{Q}^{\natural}}$; the fourth conjugation satisfies $(\tilde{Q}^{*})^{\flat} = -\tilde{Q}$ and $(\tilde{Q}^{\flat})^{\dagger} = -\tilde{Q}$, so it is the composition of ${}^{*}$ with the central sign $-1$. The fixed points of each involution give one of the six subspaces tabulated above: for instance, the Hermitian part of $\tilde{Q}$ is $\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{*}) = 2e_0 - ie_1 + ie_3$, which agrees with the table.</p>
 <h2 id="idempotents-and-the-two-minimal-left-ideals">Idempotents and the Two Minimal Left Ideals</h2>
 <p>The standard idempotents $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$ and $\tilde\Pi_2 = \tfrac{1}{2}(e_0 - ie_3)$ satisfy $\tilde\Pi_1^2 = \tilde\Pi_1$, $\tilde\Pi_2^2 = \tilde\Pi_2$, $\tilde\Pi_1\tilde\Pi_2 = \tilde\Pi_2\tilde\Pi_1 = 0$ and $\tilde\Pi_1 + \tilde\Pi_2 = e_0$; they are primitive; and they give the decomposition $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ into two minimal left ideals of real dimension $4$. The verification is carried out in <em>Biquaternion Idempotents and Projections</em>, which owns the idempotents of the series.</p>
 <h2 id="explicit-zero-divisors">Explicit Zero Divisors</h2>
@@ -186,7 +186,7 @@ $$</p>
 <p>Both $\tilde A$ and $\tilde B$ have two nonzero complex coefficients, $\tilde A = e_0 + ie_3$ and $\tilde B = e_0 - ie_3$.</p>
 <p>The computations show all the structural features asserted in <em>Biquaternion Algebra ($\mathbb{B}$)</em> on a single element and on the standard idempotents: the six subspaces split the element into its centre, vector, quaternion, anti-quaternion, Hermitian and anti-Hermitian parts; the four conjugations act as listed; and the two primitive idempotents produce the decomposition $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ into minimal left ideals.</p>
 <h2 id="summary">Summary</h2>
-<p>The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2 = -1$. On the element $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$ the six subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$ and ${}^{\flat} = -\dagger$ act on it as listed.</p>
+<p>The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2 = -1$. On the element $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$ the six subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and ${}^{\flat} = -{}^{*}$ act on it as listed.</p>
 <p>The idempotents $\tilde\Pi_1, \tilde\Pi_2$ of <em>Biquaternion Idempotents and Projections</em> satisfy $\tilde\Pi_1\tilde\Pi_2 = 0$ and give $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ with each summand minimal; the pair $\tilde A = e_0+ie_3$, $\tilde B = e_0-ie_3$ is an explicit zero-divisor pair. As a left module over itself, $\mathbb{B}$ has the decomposition $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ into minimal left ideals.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -218,19 +218,19 @@ $$</p>
 <td>Vector part</td>
 </tr>
 <tr>
-<td>$\bar{\cdot}$</td>
+<td>${}^{\natural}$</td>
 <td>Quaternion conjugation</td>
 </tr>
 <tr>
-<td>${}^{*}$</td>
+<td>$\bar{\cdot}$</td>
 <td>Complex conjugation</td>
 </tr>
 <tr>
-<td>${}^{\dagger} = \bar{\cdot}\circ{}^{*}$</td>
+<td>${}^{*} = {}^{\natural}\circ\bar{\cdot}$</td>
 <td>Hermitian conjugation</td>
 </tr>
 <tr>
-<td>${}^{\flat} = -\dagger$</td>
+<td>${}^{\flat} = -{}^{*}$</td>
 <td>Anti-Hermitian conjugation</td>
 </tr>
 <tr>

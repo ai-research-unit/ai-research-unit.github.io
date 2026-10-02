@@ -58,14 +58,14 @@
 \lambda(v) = \lim_{t\to\infty}\frac{1}{2t}\log\frac{\left|N\!\left(\delta\tilde{\rho}(t)\right)\right|}{\left|N\!\left(\delta\tilde{\rho}(0)\right)\right|},
 $$</p>
 <p>the factor $\tfrac{1}{2}$ being present because the biquaternion norm is quadratic.</p>
-<p>Two classes of dynamics are natural on the sector, and they exhaust what the framework's linear structure supplies. The <strong>reversible</strong> class is rotor conjugation, $\tilde{\rho}\mapsto\tilde{R}\tilde{\rho}\tilde{R}^\dagger$ with $\tilde{R}\tilde{R}^\dagger = e_0$, which is an isometry of the biquaternion norm; and the <strong>irreversible</strong> class is a semigroup of coarse-graining or dephasing channels, whose Bloch action is an affine contraction. The article's central statement is that both classes have <strong>non-positive</strong> Lyapunov spectra. The reversible class is exactly Lyapunov-neutral — every exponent is zero — and the irreversible class is contracting, with exponents set by the contraction coefficients of the channel. In particular the dephasing semigroup of strength $\Gamma$ has the spectrum</p>
+<p>Two classes of dynamics are natural on the sector, and they exhaust what the framework's linear structure supplies. The <strong>reversible</strong> class is rotor conjugation, $\tilde{\rho}\mapsto\tilde{R}\tilde{\rho}\tilde{R}^{*}$ with $\tilde{R}\tilde{R}^{*} = e_0$, which is an isometry of the biquaternion norm; and the <strong>irreversible</strong> class is a semigroup of coarse-graining or dephasing channels, whose Bloch action is an affine contraction. The article's central statement is that both classes have <strong>non-positive</strong> Lyapunov spectra. The reversible class is exactly Lyapunov-neutral — every exponent is zero — and the irreversible class is contracting, with exponents set by the contraction coefficients of the channel. In particular the dephasing semigroup of strength $\Gamma$ has the spectrum</p>
 <p>$$
 \{0,\,-\Gamma,\,-\Gamma\},
 $$</p>
 <p>with the zero along the pointer axis and the two negative exponents in the plane transverse to it. Information is lost at the rate $\Gamma$ in each transverse direction. Because the biquaternion norm is quadratic, the scalar $|N(\delta\tilde{\rho}(t))|$ decays at twice that rate, $e^{-2\Gamma t}$; the Lyapunov exponent defined above carries the compensating factor $\tfrac{1}{2}$, so it is the decay rate of the length $\sqrt{|N|}$ and equals the vector exponent $-\Gamma$. The factor of two is a property of the quadratic form, not of the exponent.</p>
 <p>The article also states what the framework does <strong>not</strong> produce: positive Lyapunov exponents. A positive exponent from linear dynamics would require an expansion, and an expansion carries states out of the Bloch ball, so the linear dynamics of the sector — an isometry in the reversible class, a contraction in the irreversible one — has a non-positive spectrum. The remaining dynamics of the framework is nonlinear, and it lives on a phase space too small to host chaos. The compact coadjoint orbit of the framework is the two-sphere $|\mathbf{S}| = \text{const}$ — the Bloch sphere at the spin-$\tfrac{1}{2}$ radius — a two-dimensional symplectic manifold, and every Hamiltonian flow on a two-dimensional symplectic manifold is integrable, so its exponents vanish; for a Hamiltonian flow a positive exponent first becomes possible at four phase-space dimensions, which the material sector supplies and the informational sector does not. The information loss of the framework is therefore <strong>contraction, not chaos</strong>: the entropy produced in a coarse-graining is the deficit of the contracting directions, and the Kolmogorov–Sinai entropy of the framework's linear flows is zero.</p>
 <p>The treatment is classical and non-relativistic. The exponents are those of a classical flow on a state space, measured with the algebra's biquaternion norm. The tools imported are the standard ones of smooth dynamical systems: the multiplicative ergodic theorem, the contraction of completely positive trace-preserving maps, Pesin's formula, and the integrability of two-dimensional Hamiltonian flows. The connexion to the notion of information used elsewhere in the subcategory is direct: the entropy functional of the companion article <em>Coarse-Graining and the Biquaternion Entropy Functional</em> is a function of the biquaternion norm, and the Lyapunov exponent is the rate of decay of the logarithm of the biquaternion norm of a tangent vector; the two are the same quantity read at a point and along a flow.</p>
-<p>The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; the scalar imaginary $i$ is central; the sectors are $\mathbb{M}_+$ (Hermitian, informational) and $\mathbb{M}_-$ (anti-Hermitian, material); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$; and a state is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$.</p>
+<p>The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; the scalar imaginary $i$ is central; the sectors are $\mathbb{M}_+$ (Hermitian, informational) and $\mathbb{M}_-$ (anti-Hermitian, material); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and a state is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$.</p>
 <h2 id="lyapunov-exponents-the-standard-setting">Lyapunov Exponents: The Standard Setting</h2>
 <h3 id="definition-for-a-flow">Definition for a Flow</h3>
 <p>Let $\phi_t$ be a smooth flow on a manifold $M$ and let $x(t) = \phi_t(x_0)$ be a trajectory. The linearisation of the flow about the trajectory is the family of tangent maps</p>
@@ -95,7 +95,7 @@ $$</p>
 <p>$$
 \tilde{R}(t)\tilde{R}(t)^\dagger = \tilde{R}(t)^\dagger\tilde{R}(t) = e_0 ,
 $$</p>
-<p>generated by a skew-Hermitian element, $\tilde{R}(t) = \exp(t\tilde{G})$ with $\tilde{G}^\dagger = -\tilde{G}$. The state evolves by</p>
+<p>generated by a skew-Hermitian element, $\tilde{R}(t) = \exp(t\tilde{G})$ with $\tilde{G}^{*} = -\tilde{G}$. The state evolves by</p>
 <p>$$
 \tilde{\rho}(t) = \tilde{R}(t)\,\tilde{\rho}(0)\,\tilde{R}(t)^\dagger ,
 $$</p>
@@ -105,13 +105,13 @@ $$</p>
 $$</p>
 <p>The biquaternion norm is invariant under this action, because the rotor is unitary and the biquaternion norm is multiplicative:</p>
 <p>$$
-N\!\left(\tilde{R}\,\tilde{Q}\,\tilde{R}^\dagger\right)
-= \tilde{R}\,\tilde{Q}\,\tilde{R}^\dagger\,\overline{\tilde{R}\,\tilde{Q}\,\tilde{R}^\dagger}
-= \tilde{R}\,\tilde{Q}\,\bar{\tilde{Q}}\,\tilde{R}^\dagger
-= N(\tilde{Q})\,\tilde{R}\tilde{R}^\dagger
+N\!\left(\tilde{R}\,\tilde{Q}\,\tilde{R}^{*}\right)
+= \tilde{R}\,\tilde{Q}\,\tilde{R}^{*}\,\overline{\tilde{R}\,\tilde{Q}\,\tilde{R}^{*}}
+= \tilde{R}\,\tilde{Q}\,\tilde{Q}^{\natural}\,\tilde{R}^{*}
+= N(\tilde{Q})\,\tilde{R}\tilde{R}^{*}
 = N(\tilde{Q}) .
 $$</p>
-<p>The same computation applies to the trace pairing, $\mathrm{Tr}((\tilde{R}\tilde{Q}\tilde{R}^\dagger)^2) = \mathrm{Tr}(\tilde{Q}^2)$, since the conjugation is an algebra automorphism. Therefore</p>
+<p>The same computation applies to the trace pairing, $\mathrm{Tr}((\tilde{R}\tilde{Q}\tilde{R}^{*})^2) = \mathrm{Tr}(\tilde{Q}^2)$, since the conjugation is an algebra automorphism. Therefore</p>
 <p>$$
 \left|N\!\left(\delta\tilde{\rho}(t)\right)\right| = \left|N\!\left(\delta\tilde{\rho}(0)\right)\right|
 \quad\text{for all } t ,
@@ -249,7 +249,7 @@ $$</p>
 <td>Trace, $\mathrm{Tr}(e_0)=2$</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$</td>
+<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>
@@ -269,11 +269,11 @@ $$</p>
 <td>Lyapunov spectrum</td>
 </tr>
 <tr>
-<td>$\tilde{R}(t)$, $\tilde{R}\tilde{R}^\dagger = e_0$</td>
+<td>$\tilde{R}(t)$, $\tilde{R}\tilde{R}^{*} = e_0$</td>
 <td>Matrix-unitary rotor (reversible flow)</td>
 </tr>
 <tr>
-<td>$\tilde{\rho}\mapsto\tilde{R}\tilde{\rho}\tilde{R}^\dagger$</td>
+<td>$\tilde{\rho}\mapsto\tilde{R}\tilde{\rho}\tilde{R}^{*}$</td>
 <td>Rotor conjugation; isometry, $\lambda_k=0$</td>
 </tr>
 <tr>

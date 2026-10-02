@@ -60,22 +60,22 @@
 <h3 id="additive-structure">Additive Structure</h3>
 <p>The quaternion space $\mathbb{H}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^4$. Its <strong>characters</strong> are the continuous homomorphisms into the circle group. Since the additive group of $\mathbb{H}$ is just $\mathbb{R}^4$, the characters are the ordinary four-dimensional Fourier characters:</p>
 <p>$$
-\chi_\xi(\tilde q) = e^{2\pi i \operatorname{Re}(\bar{\xi} \tilde q)}, \qquad \xi \in \mathbb{H},
+\chi_\xi(\tilde q) = e^{2\pi i \operatorname{Re}(\xi^{\natural} \tilde q)}, \qquad \xi \in \mathbb{H},
 $$</p>
 <p>where the exponential is the ordinary complex exponential, and the pairing is</p>
 <p>$$
-\langle \xi, \tilde q \rangle = \operatorname{Re}(\bar{\xi} \tilde q) = \xi_0 q_0 + \xi_1 q_1 + \xi_2 q_2 + \xi_3 q_3.
+\langle \xi, \tilde q \rangle = \operatorname{Re}(\xi^{\natural} \tilde q) = \xi_0 q_0 + \xi_1 q_1 + \xi_2 q_2 + \xi_3 q_3.
 $$</p>
-<p>Note the sign: the quaternion conjugation $\bar{\xi} = \xi_0 - \boldsymbol{\xi}$ gives $\bar{\xi} \tilde q = (\xi_0 - \boldsymbol{\xi})(q_0 + \mathbf{q})$, whose real part is $\xi_0 q_0 + \boldsymbol{\xi} \cdot \mathbf{q}$. So the pairing is the ordinary Euclidean pairing on $\mathbb{R}^4$.</p>
+<p>Note the sign: the quaternion conjugation $\xi^{\natural} = \xi_0 - \boldsymbol{\xi}$ gives $\xi^{\natural} \tilde q = (\xi_0 - \boldsymbol{\xi})(q_0 + \mathbf{q})$, whose real part is $\xi_0 q_0 + \boldsymbol{\xi} \cdot \mathbf{q}$. So the pairing is the ordinary Euclidean pairing on $\mathbb{R}^4$.</p>
 <p>So at the level of the additive group, quaternion harmonic analysis is the same as Fourier analysis on $\mathbb{R}^4$. The non-commutative structure of $\mathbb{H}$ enters only when the algebra structure is used, as in the quaternion Fourier transform and the convolution theorem.</p>
 <h3 id="the-quaternion-characters">The Quaternion Characters</h3>
 <p>The <strong>quaternion characters</strong> are the homomorphisms into the multiplicative group of $\mathbb{H}$:</p>
 <p>$$
-\chi_\xi(\tilde q) = e^{2\pi \omega \operatorname{Re}(\bar{\xi} \tilde q)}, \qquad \xi \in \mathbb{H},
+\chi_\xi(\tilde q) = e^{2\pi \omega \operatorname{Re}(\xi^{\natural} \tilde q)}, \qquad \xi \in \mathbb{H},
 $$</p>
 <p>where $\omega$ is a fixed unit pure quaternion and the exponential is the quaternion exponential. Because $\omega^2 = -1$, this is</p>
 <p>$$
-\chi_\xi(\tilde q) = \cos(2\pi \operatorname{Re}(\bar{\xi} \tilde q)) + \omega \sin(2\pi \operatorname{Re}(\bar{\xi} \tilde q)).
+\chi_\xi(\tilde q) = \cos(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)) + \omega \sin(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)).
 $$</p>
 <p>These characters are <strong>bounded</strong> in the quaternion norm, because they take values on the unit sphere $\mathbb{S}^3$. This is the fundamental difference from the split complex case, where the characters are unbounded, and the similarity with the complex case, where the characters take values in the compact circle.</p>
 <p>So the quaternion case is intermediate between the complex case and the split complex case: the characters are bounded, but the algebra is non-commutative, and the transform depends on the choice of the unit pure quaternion $\omega$.</p>
@@ -83,31 +83,31 @@ $$</p>
 <h3 id="definition">Definition</h3>
 <p>The <strong>quaternion Fourier transform</strong> of a function $f : \mathbb{H} \to \mathbb{H}$ is</p>
 <p>$$
-\hat{f}(\xi) = \int_{\mathbb{H}} f(\tilde q) e^{-2\pi \omega \operatorname{Re}(\bar{\xi} \tilde q)} \, dq,
+\hat{f}(\xi) = \int_{\mathbb{H}} f(\tilde q) e^{-2\pi \omega \operatorname{Re}(\xi^{\natural} \tilde q)} \, dq,
 $$</p>
 <p>where $dq$ is Lebesgue measure on $\mathbb{H} \cong \mathbb{R}^4$, $\omega$ is a fixed unit pure quaternion, and the exponential is the quaternion exponential.</p>
 <p>Because the exponential depends on the choice of $\omega$, there are infinitely many quaternion Fourier transforms, one for each unit pure quaternion. The most common choices are:</p>
 <ul>
-<li><strong>Left-sided transform.</strong> $\hat{f}(\xi) = \int f(\tilde q) e^{-2\pi \omega \operatorname{Re}(\bar{\xi} \tilde q)} \, dq$, with the exponential on the right.</li>
-<li><strong>Right-sided transform.</strong> $\hat{f}(\xi) = \int e^{-2\pi \omega \operatorname{Re}(\bar{\xi} \tilde q)} f(\tilde q) \, dq$, with the exponential on the left.</li>
-<li><strong>Two-sided transform.</strong> $\hat{f}(\xi) = \int e^{-2\pi \omega_1 \operatorname{Re}(\bar{\xi} \tilde q)} f(\tilde q) e^{-2\pi \omega_2 \operatorname{Re}(\bar{\xi} \tilde q)} \, dq$, with two distinct unit pure quaternions $\omega_1$ and $\omega_2$.</li>
+<li><strong>Left-sided transform.</strong> $\hat{f}(\xi) = \int f(\tilde q) e^{-2\pi \omega \operatorname{Re}(\xi^{\natural} \tilde q)} \, dq$, with the exponential on the right.</li>
+<li><strong>Right-sided transform.</strong> $\hat{f}(\xi) = \int e^{-2\pi \omega \operatorname{Re}(\xi^{\natural} \tilde q)} f(\tilde q) \, dq$, with the exponential on the left.</li>
+<li><strong>Two-sided transform.</strong> $\hat{f}(\xi) = \int e^{-2\pi \omega_1 \operatorname{Re}(\xi^{\natural} \tilde q)} f(\tilde q) e^{-2\pi \omega_2 \operatorname{Re}(\xi^{\natural} \tilde q)} \, dq$, with two distinct unit pure quaternions $\omega_1$ and $\omega_2$.</li>
 </ul>
 <p>The three transforms are related but not equivalent, and the choice depends on the application. The two-sided transform is the most general, and it is the one that diagonalizes the quaternion Cauchy–Riemann operator.</p>
 <h3 id="the-structure-of-the-transform">The Structure of the Transform</h3>
 <p>Write $f(\tilde q) = f_0(\tilde q) + f_1(\tilde q) e_1 + f_2(\tilde q) e_2 + f_3(\tilde q) e_3$ with $f_\mu : \mathbb{H} \to \mathbb{R}$. Then the quaternion Fourier transform decomposes into four real Fourier transforms, one for each component, with the kernel depending on the choice of $\omega$.</p>
 <p>For the simplest case $\omega = e_1$, the kernel is</p>
 <p>$$
-e^{-2\pi e_1 \operatorname{Re}(\bar{\xi} \tilde q)} = \cos(2\pi \operatorname{Re}(\bar{\xi} \tilde q)) - e_1 \sin(2\pi \operatorname{Re}(\bar{\xi} \tilde q)).
+e^{-2\pi e_1 \operatorname{Re}(\xi^{\natural} \tilde q)} = \cos(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)) - e_1 \sin(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)).
 $$</p>
 <p>So the transform is</p>
 <p>$$
-\hat{f}(\xi) = \int f(\tilde q) \cos(2\pi \operatorname{Re}(\bar{\xi} \tilde q)) \, dq - e_1 \int f(\tilde q) \sin(2\pi \operatorname{Re}(\bar{\xi} \tilde q)) \, dq.
+\hat{f}(\xi) = \int f(\tilde q) \cos(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)) \, dq - e_1 \int f(\tilde q) \sin(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)) \, dq.
 $$</p>
 <p>The first integral is the cosine transform, and the second is the sine transform. Both are real-valued when $f$ is real-valued, and both are ordinary four-dimensional Fourier transforms. So the quaternion Fourier transform is the ordinary Fourier transform on $\mathbb{R}^4$, tensored with the quaternion algebra.</p>
 <h3 id="basic-properties">Basic Properties</h3>
 <p><strong>Linearity.</strong> The transform is linear over $\mathbb{R}$, but not over $\mathbb{H}$, because $\mathbb{H}$ is non-commutative.</p>
-<p><strong>Translation.</strong> If $f_a(\tilde q) = f(\tilde q - a)$, then $\hat{f}_a(\xi) = \hat{f}(\xi) e^{-2\pi \omega \operatorname{Re}(\bar{\xi} a)}$ for the transform defined above, the kernel factor multiplying on the right because the kernel itself stands on the right.</p>
-<p><strong>Modulation.</strong> If $f_\xi(\tilde q) = e^{2\pi \omega \operatorname{Re}(\bar{\xi} \tilde q)} f(\tilde q)$, then $\hat{f}_\xi(\eta) = \hat{f}(\eta - \xi)$.</p>
+<p><strong>Translation.</strong> If $f_a(\tilde q) = f(\tilde q - a)$, then $\hat{f}_a(\xi) = \hat{f}(\xi) e^{-2\pi \omega \operatorname{Re}(\xi^{\natural} a)}$ for the transform defined above, the kernel factor multiplying on the right because the kernel itself stands on the right.</p>
+<p><strong>Modulation.</strong> If $f_\xi(\tilde q) = e^{2\pi \omega \operatorname{Re}(\xi^{\natural} \tilde q)} f(\tilde q)$, then $\hat{f}_\xi(\eta) = \hat{f}(\eta - \xi)$.</p>
 <p><strong>Scaling.</strong> If $f_\lambda(\tilde q) = f(\lambda \tilde q)$ for $\lambda \in \mathbb{H}^\times$, then</p>
 <p>$$
 \widehat{f_\lambda}(\xi) = \frac{1}{|\lambda|^4} \hat{f}(\bar{\lambda}^{-1}\xi).
@@ -127,7 +127,7 @@ $$</p>
 <h3 id="the-inversion-theorem">The Inversion Theorem</h3>
 <p><strong>Theorem.</strong> If $f \in L^1(\mathbb{H})$ and $\hat{f} \in L^1(\mathbb{H})$, then</p>
 <p>$$
-f(\tilde q) = \int_{\mathbb{H}} \hat{f}(\xi) e^{2\pi \omega \operatorname{Re}(\bar{\xi} \tilde q)} \, d\xi
+f(\tilde q) = \int_{\mathbb{H}} \hat{f}(\xi) e^{2\pi \omega \operatorname{Re}(\xi^{\natural} \tilde q)} \, d\xi
 $$</p>
 <p>for almost every $\tilde q$.</p>
 <p>The inversion formula holds because the kernel is bounded and the transform is essentially the ordinary Fourier transform on $\mathbb{R}^4$.</p>
@@ -306,7 +306,7 @@ $$</p>
 <h3 id="the-cauchy-kernel">The Cauchy Kernel</h3>
 <p>The <strong>Cauchy kernel</strong> is the distribution</p>
 <p>$$
-E(\tilde q) = \frac{\bar{\tilde q}}{|\tilde q|^4},
+E(\tilde q) = \frac{\tilde{q}^{\natural}}{|\tilde q|^4},
 $$</p>
 <p>which satisfies</p>
 <p>$$
@@ -417,7 +417,7 @@ $$</p>
 <h3 id="definition_6">Definition</h3>
 <p>The <strong>quaternion continuous wavelet transform</strong> of $f \in L^2(\mathbb{H})$ with respect to a wavelet $\psi \in L^2(\mathbb{H})$ is</p>
 <p>$$
-W_\psi f(a, b) = \frac{1}{|a|^2} \int_{\mathbb{H}} f(\tilde q) \overline{\psi\left( \frac{\tilde q - b}{a} \right)} \, dq, \qquad a \in \mathbb{H}^\times, \; b \in \mathbb{H}.
+W_\psi f(a, b) = \frac{1}{|a|^2} \int_{\mathbb{H}} f(\tilde q) (\psi\left( \frac{\tilde q - b}{a} \right))^{\natural} \, dq, \qquad a \in \mathbb{H}^\times, \; b \in \mathbb{H}.
 $$</p>
 <p>The parameter $a$ is the <strong>scale</strong>, and $b$ is the <strong>translation</strong>. The wavelet $\psi$ is assumed to satisfy the <strong>admissibility condition</strong></p>
 <p>$$
@@ -473,7 +473,7 @@ $$</p>
 <td>Unit pure quaternion</td>
 </tr>
 <tr>
-<td>$\chi_\xi(\tilde q) = e^{2\pi \omega \operatorname{Re}(\bar{\xi} \tilde q)}$</td>
+<td>$\chi_\xi(\tilde q) = e^{2\pi \omega \operatorname{Re}(\xi^{\natural} \tilde q)}$</td>
 <td>Quaternion character</td>
 </tr>
 <tr>
@@ -501,7 +501,7 @@ $$</p>
 <td>delta distribution</td>
 </tr>
 <tr>
-<td>$E(\tilde q) = \bar{\tilde q}/\lvert \tilde q\rvert^4$</td>
+<td>$E(\tilde q) = \tilde{q}^{\natural}/\lvert \tilde q\rvert^4$</td>
 <td>Cauchy kernel</td>
 </tr>
 <tr>

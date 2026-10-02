@@ -58,21 +58,21 @@
 <p>$$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C}.
 $$</p>
-<p>The quaternion conjugate is denoted $\bar{\tilde{Q}}$, the complex conjugate is denoted $\tilde{Q}^*$, the Hermitian conjugate is denoted $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is denoted $\tilde{Q}^\flat = -\tilde{Q}^\dagger$.</p>
+<p>The quaternion conjugate is denoted $\tilde{Q}^{\natural}$, the complex conjugate is denoted $\bar{\tilde{Q}}$, the Hermitian conjugate is denoted $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is denoted $\tilde{Q}^\flat = -\tilde{Q}^{*}$.</p>
 <h2 id="the-biquaternion-norm">The Biquaternion Norm</h2>
 <h3 id="definition">Definition</h3>
 <p>The <strong>biquaternion norm</strong> of a biquaternion $\tilde{Q}$ is</p>
 <p>$$
-N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2,
+N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2,
 $$</p>
-<p>where $\bar{\tilde{Q}}$ is the quaternion conjugate.</p>
+<p>where $\tilde{Q}^{\natural}$ is the quaternion conjugate.</p>
 <p><strong>Basic properties.</strong></p>
 <ul>
 <li>$N(\tilde{Q})$ is a complex scalar (a complex multiple of $e_0$) in general. It is real on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and on the imaginary translate $i \mathbb{H}_{\mathbb{B}}$; outside their union it need not be real.</li>
 <li>$N(\tilde{Q})$ is not positive-definite: it can vanish for a nonzero biquaternion. The nonzero elements with vanishing norm are the zero divisors, studied in the article on biquaternion zero divisors.</li>
-<li>$N(\tilde{Q})$ is invariant under quaternion conjugation: $N(\bar{\tilde{Q}}) = N(\tilde{Q})$.</li>
-<li>$N(\tilde{Q})$ is complex-conjugated under complex conjugation: $N(\tilde{Q}^*) = N(\tilde{Q})^*$.</li>
-<li>$N(\tilde{Q})$ is complex-conjugated under Hermitian conjugation: $N(\tilde{Q}^\dagger) = N(\bar{\tilde{Q}}^*) = N(\tilde{Q})^*$.</li>
+<li>$N(\tilde{Q})$ is invariant under quaternion conjugation: $N(\tilde{Q}^{\natural}) = N(\tilde{Q})$.</li>
+<li>$N(\tilde{Q})$ is complex-conjugated under complex conjugation: $N(\bar{\tilde{Q}}) = N(\tilde{Q})^*$.</li>
+<li>$N(\tilde{Q})$ is complex-conjugated under Hermitian conjugation: $N(\tilde{Q}^{*}) = N(\overline{\tilde{Q}^{\natural}}) = N(\tilde{Q})^*$.</li>
 </ul>
 <h3 id="the-polarisation-and-the-complex-quadratic-space">The Polarisation and the Complex Quadratic Space</h3>
 <p>$N(\tilde{Q})=\sum_{\mu=0}^{3} Q_\mu^2$ is homogeneous of degree two, hence is a quadratic form on $\mathbb{B}\cong\mathbb{C}^4$. Its polar form is
@@ -83,7 +83,7 @@ the complex bilinear dot product. It is symmetric and non-degenerate, and the qu
 $$
 B(e_\mu,e_\nu)=\delta_{\mu\nu}.
 $$
-So $(\mathbb{B},N)$ is the standard non-degenerate quadratic space of dimension $4$ over $\mathbb{C}$. The form $B$ is complex-bilinear; it is not the Hermitian inner product $\sum_\mu P_\mu^*Q_\mu$ of the basic algebra article.</p>
+So $(\mathbb{B},N)$ is the standard non-degenerate quadratic space of dimension $4$ over $\mathbb{C}$. The form $B$ is complex-bilinear; it is not the Hermitian inner product $\sum_\mu P_\bar{\mu}Q_\mu$ of the basic algebra article.</p>
 <h3 id="multiplicativity">Multiplicativity</h3>
 <p><strong>Theorem.</strong> The biquaternion norm is multiplicative:</p>
 <p>$$
@@ -91,11 +91,11 @@ N(\tilde{Q} \circ \tilde{R}) = N(\tilde{Q}) \, N(\tilde{R}).
 $$</p>
 <p><strong>Proof.</strong> Compute</p>
 <p>$$
-N(\tilde{Q} \circ \tilde{R}) = (\tilde{Q} \tilde{R}) \overline{(\tilde{Q} \tilde{R})} = \tilde{Q} \tilde{R} \bar{\tilde{R}} \bar{\tilde{Q}} = \tilde{Q} N(\tilde{R}) \bar{\tilde{Q}}.
+N(\tilde{Q} \circ \tilde{R}) = (\tilde{Q} \tilde{R}) ((\tilde{Q} \tilde{R}))^{\natural} = \tilde{Q} \tilde{R} \tilde{R}^{\natural} \tilde{Q}^{\natural} = \tilde{Q} N(\tilde{R}) \tilde{Q}^{\natural}.
 $$</p>
-<p>Since $N(\tilde{R})$ is a complex scalar (a multiple of $e_0$) and $e_0$ is central in $\mathbb{B}$, the factor $N(\tilde{R})$ commutes with $\tilde{Q}$ and with $\bar{\tilde{Q}}$. So</p>
+<p>Since $N(\tilde{R})$ is a complex scalar (a multiple of $e_0$) and $e_0$ is central in $\mathbb{B}$, the factor $N(\tilde{R})$ commutes with $\tilde{Q}$ and with $\tilde{Q}^{\natural}$. So</p>
 <p>$$
-\tilde{Q} N(\tilde{R}) \bar{\tilde{Q}} = N(\tilde{R}) \tilde{Q} \bar{\tilde{Q}} = N(\tilde{R}) N(\tilde{Q}).
+\tilde{Q} N(\tilde{R}) \tilde{Q}^{\natural} = N(\tilde{R}) \tilde{Q} \tilde{Q}^{\natural} = N(\tilde{R}) N(\tilde{Q}).
 $$</p>
 <p><strong>Corollary.</strong> If $N(\tilde{Q}) \neq 0$ and $N(\tilde{R}) \neq 0$, then $N(\tilde{Q} \circ \tilde{R}) \neq 0$.</p>
 <p><strong>Corollary.</strong> If $N(\tilde{Q}) = 0$ or $N(\tilde{R}) = 0$, then $N(\tilde{Q} \circ \tilde{R}) = 0$. In particular, the product of a zero divisor with any biquaternion is either zero or a zero divisor.</p>
@@ -131,22 +131,22 @@ $$</p>
 <li>$q_r \perp q_i$ and $N(q_r) = N(q_i)$: the biquaternion norm vanishes. These are exactly the zero divisors, so the criterion $N(\tilde{Q}) = 0$ of the article on biquaternion zero divisors is the statement that the two halves have equal norms and vanishing scalar product; that article splits the same set into the pure and non-pure families by the vanishing of the scalar part.</li>
 </ul>
 <h2 id="the-euclidean-norm-and-the-hermitian-form">The Euclidean Norm and the Hermitian Form</h2>
-<p>The <strong>Hermitian form</strong> $\tilde{Q} \tilde{Q}^\dagger$ is defined, with its basic properties, in <em>Biquaternion Algebra</em>, §<em>The Hermitian Form</em>, immediately before the inner product there. This article reads the metric from it: the Euclidean norm below, and the relation of its scalar part to the biquaternion norm.</p>
+<p>The <strong>Hermitian form</strong> $\tilde{Q} \tilde{Q}^{*}$ is defined, with its basic properties, in <em>Biquaternion Algebra</em>, §<em>The Hermitian Form</em>, immediately before the inner product there. This article reads the metric from it: the Euclidean norm below, and the relation of its scalar part to the biquaternion norm.</p>
 <h3 id="the-euclidean-norm">The Euclidean Norm</h3>
 <p>The <strong>Euclidean norm</strong> of a biquaternion is defined by the scalar part of the Hermitian form:</p>
 <p>$$
-\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^\dagger\right)} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2} = \sqrt{\sum_{\mu=0}^{3} (q_\mu^2 + (q'_\mu)^2)}.
+\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^{*}\right)} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2} = \sqrt{\sum_{\mu=0}^{3} (q_\mu^2 + (q'_\mu)^2)}.
 $$</p>
 <p>It is a genuine norm on the real vector space $\mathbb{B} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one. It is <strong>not</strong> multiplicative with respect to the biquaternion product.</p>
 <p><strong>Notation.</strong> The scalar part of the Hermitian form is often written $\|\tilde{Q}\|_E^2$; the trace version is</p>
 <p>$$
-\mathrm{Tr}\!\left(\tilde{Q} \tilde{Q}^\dagger\right) = 2 \sum_{\mu=0}^{3} |Q_\mu|^2 = 2 \|\tilde{Q}\|_E^2.
+\mathrm{Tr}\!\left(\tilde{Q} \tilde{Q}^{*}\right) = 2 \sum_{\mu=0}^{3} |Q_\mu|^2 = 2 \|\tilde{Q}\|_E^2.
 $$</p>
 <h3 id="relation-between-the-biquaternion-norm-and-the-hermitian-form">Relation Between the Biquaternion Norm and the Hermitian Form</h3>
 <p>The two forms are related as follows:</p>
 <ul>
-<li>The <strong>biquaternion norm</strong> $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is a complex scalar (a multiple of $e_0$), multiplicative, and can vanish for nonzero $\tilde{Q}$.</li>
-<li>The <strong>Hermitian form</strong> $\tilde{Q} \tilde{Q}^\dagger$ is a Hermitian biquaternion whose scalar part is $\sum_\mu |Q_\mu|^2$ (non-negative, vanishing only at $\tilde{Q} = 0$) and whose vector part need not vanish. It is not multiplicative.</li>
+<li>The <strong>biquaternion norm</strong> $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is a complex scalar (a multiple of $e_0$), multiplicative, and can vanish for nonzero $\tilde{Q}$.</li>
+<li>The <strong>Hermitian form</strong> $\tilde{Q} \tilde{Q}^{*}$ is a Hermitian biquaternion whose scalar part is $\sum_\mu |Q_\mu|^2$ (non-negative, vanishing only at $\tilde{Q} = 0$) and whose vector part need not vanish. It is not multiplicative.</li>
 </ul>
 <p>They coincide as biquaternions if and only if $\tilde{Q}$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, i.e. if and only if all the coefficients $Q_\mu$ are real. On the imaginary translate $i \mathbb{H}_{\mathbb{B}}$, the Hermitian form is also scalar-valued, but it equals $+\sum_\mu (q'_\mu)^2 \cdot e_0$, which is the negative of the biquaternion norm; on that subspace the two forms differ by a sign.</p>
 <p>The two forms play different roles:</p>
@@ -159,7 +159,7 @@ $$</p>
 $$
 \operatorname{Re}N=\sum_{\mu=0}^{3}\bigl(q_\mu^2-(q'_\mu)^2\bigr),\qquad \operatorname{Im}N=2\sum_{\mu=0}^{3} q_\mu q'_\mu .
 $$
-Hence the realification $\operatorname{Re}N$ on $\mathbb{R}^8$ is non-degenerate of signature $(4,4)$, a <strong>split</strong> (neutral) signature; in the real basis $e_\mu,ie_\mu$ its matrix is $\operatorname{diag}(1,1,1,1,-1,-1,-1,-1)$. The six distinguished real subspaces $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ (the eigenspaces of the three involutions $\bar{\cdot},{}^{*},\dagger$ of the basic algebra article) give six real forms:</p>
+Hence the realification $\operatorname{Re}N$ on $\mathbb{R}^8$ is non-degenerate of signature $(4,4)$, a <strong>split</strong> (neutral) signature; in the real basis $e_\mu,ie_\mu$ its matrix is $\operatorname{diag}(1,1,1,1,-1,-1,-1,-1)$. The six distinguished real subspaces $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ (the eigenspaces of the three involutions ${}^{\natural},\bar{\cdot},{}^{*}$ of the basic algebra article) give six real forms:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -236,11 +236,11 @@ N(\tilde{Q}) \neq 0.
 $$</p>
 <p><strong>Proof.</strong> Suppose $N(\tilde{Q}) \neq 0$. Define</p>
 <p>$$
-\tilde{R} = \frac{\bar{\tilde{Q}}}{N(\tilde{Q})}.
+\tilde{R} = \frac{\tilde{Q}^{\natural}}{N(\tilde{Q})}.
 $$</p>
 <p>Then</p>
 <p>$$
-\tilde{Q} \circ \tilde{R} = \frac{\tilde{Q} \bar{\tilde{Q}}}{N(\tilde{Q})} = \frac{N(\tilde{Q})}{N(\tilde{Q})} = e_0,
+\tilde{Q} \circ \tilde{R} = \frac{\tilde{Q} \tilde{Q}^{\natural}}{N(\tilde{Q})} = \frac{N(\tilde{Q})}{N(\tilde{Q})} = e_0,
 $$</p>
 <p>so $\tilde{R}$ is a right inverse of $\tilde{Q}$. By the remark above, $\tilde{R}$ is also a left inverse, and hence $\tilde{Q}$ is invertible.</p>
 <p>Conversely, suppose $\tilde{Q}$ is invertible. Applying the biquaternion norm to $\tilde{Q} \circ \tilde{Q}^{-1} = e_0$ and using multiplicativity gives</p>
@@ -251,11 +251,11 @@ $$</p>
 <h3 id="the-inverse-formula">The Inverse Formula</h3>
 <p>When $N(\tilde{Q}) \neq 0$, the inverse is</p>
 <p>$$
-\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}}}{N(\tilde{Q})}.
+\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{N(\tilde{Q})}.
 $$</p>
-<p>This is the biquaternionic analogue of the formula $q^{-1} = \bar{q}/|q|^2$ for quaternions.</p>
+<p>This is the biquaternionic analogue of the formula $q^{-1} = q^{\natural}/|q|^2$ for quaternions.</p>
 <p><strong>Proof.</strong> The verification is the computation in the first part of the proof of the criterion.</p>
-<p><strong>Corollary.</strong> If $\tilde{Q}$ is invertible, then so is $\bar{\tilde{Q}}$, and $(\bar{\tilde{Q}})^{-1} = \overline{\tilde{Q}^{-1}}$.</p>
+<p><strong>Corollary.</strong> If $\tilde{Q}$ is invertible, then so is $\tilde{Q}^{\natural}$, and $(\tilde{Q}^{\natural})^{-1} = (\tilde{Q}^{-1})^{\natural}$.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <h3 id="definition_2">Definition</h3>
 <p>The <strong>group of units</strong> of $\mathbb{B}$ is the set of invertible elements:</p>
@@ -397,7 +397,7 @@ $$</p>
 </ul>
 <p>The two light cones in $\mathbb{M}_+$ and $\mathbb{M}_-$ have the same structure: each is defined by the vanishing of an indefinite quadratic form of signature $(1,3)$ or $(3,1)$, which has real codimension $1$ in the four-dimensional space, so the complement has three connected components. The cone in $\mathrm{Vect}(\mathbb{B})$ is different: the biquaternion norm is complex there, its vanishing imposes two real conditions, the cone has real codimension $2$ in the six-dimensional space, and the complement is connected.</p>
 <h2 id="the-relation-to-the-hermitian-decomposition">The Relation to the Hermitian Decomposition</h2>
-<p>The invertibility criterion is stated in terms of the biquaternion norm $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$. It is worth noting that the biquaternion norm is the complex analogue of the Hermitian form, and the two are related by the Hermitian decomposition</p>
+<p>The invertibility criterion is stated in terms of the biquaternion norm $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$. It is worth noting that the biquaternion norm is the complex analogue of the Hermitian form, and the two are related by the Hermitian decomposition</p>
 <p>$$
 \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-.
 $$</p>
@@ -407,7 +407,7 @@ $$</p>
 <li>For $\tilde{Q} \in \mathbb{M}_-$, the biquaternion norm is real, and it is positive in the spacelike region (outside the light cone) and negative in the timelike region (inside the light cone, which has two connected components).</li>
 <li>For a general $\tilde{Q} = \tilde{Q}_+ + \tilde{Q}_-$ with both components nonzero, the biquaternion norm need not be real, and the invertibility criterion is $N(\tilde{Q}) \neq 0$, which is a condition on both the real and imaginary parts of $N$.</li>
 </ul>
-<p>The <strong>scalar part</strong> of the Hermitian form, by contrast, is always non-negative, and it is positive-definite on all of $\mathbb{B}$: it vanishes only at $\tilde{Q} = 0$. The full Hermitian form $\tilde{Q} \tilde{Q}^\dagger$ is a Hermitian biquaternion whose scalar part is this non-negative quantity; it does not detect the zero divisors, because its scalar part vanishes only at $\tilde{Q} = 0$.</p>
+<p>The <strong>scalar part</strong> of the Hermitian form, by contrast, is always non-negative, and it is positive-definite on all of $\mathbb{B}$: it vanishes only at $\tilde{Q} = 0$. The full Hermitian form $\tilde{Q} \tilde{Q}^{*}$ is a Hermitian biquaternion whose scalar part is this non-negative quantity; it does not detect the zero divisors, because its scalar part vanishes only at $\tilde{Q} = 0$.</p>
 <h2 id="the-commutative-four-dimensional-contrast">The Commutative Four-Dimensional Contrast</h2>
 <p>The criterion of this article is a statement about a non-commutative algebra. It has a commutative counterpart worth recording, because there every object in the criterion can be computed in closed form. The algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, the reduced biquaternion algebra of <em>List of Algebras by Dimension</em>: an element is $q = z_1+z_2e$ with $e^2=+1$ and $z_1,z_2\in\mathbb{C}$, and the multiplicative form on it is the determinant of the two-by-two complex matrix representation, which in the idempotent coordinates is the product of the two components,</p>
 <p>$$
@@ -419,8 +419,8 @@ $$</p>
 <p><strong>The conjugation is not a real-product involution.</strong> The paper defines its norm and conjugation together, and requires the norm to be multiplicative, $\lvert q_1q_2\rvert^2 = \lvert q_1\rvert^2\lvert q_2\rvert^2$ for arbitrary $q_1,q_2$. It reports that this cannot be arranged with a product that is real: with the conjugation chosen so that the product $q q^\ast$ is the natural one, the product "is still an RB and not a real number", and the three further conjugations proposed in its references [12] and [13] fail likewise. None of the four conjugations the paper knows therefore yields a real product, and a ring-valued norm has to serve in place of a scalar product — the same obstruction that forces the complex-valued $N(\tilde{Q})$ on $\mathbb{B}$, recorded in the section above. The paper attributes the failure of the triangle inequality, its one departure from the complex case, to the conjugation being a <strong>nonlinear</strong> operation.</p>
 <p><strong>An unresolved tension, recorded deliberately.</strong> The corpus does not transcribe the printed norm and conjugation: they are set as one-bit equation images with no text layer, and every displayed equation in this source is in that form. That matters here, because the paper's two statements are not obviously compatible. A conjugation paired with a determinant norm by $q q^\ast = N(q)$ would be the map $q^\ast = z_1 - z_2e$, which is linear, not nonlinear; so either the paper's norm is not the determinant transcribed above, or its conjugation is not the one paired with it in that way, or "nonlinear" is used there in a sense the corpus has not fixed. The corpus records the paper's own report and the algebraic facts it has verified, and asserts no formula for the printed pair until a text-layer copy of the source is available.</p>
 <h2 id="summary">Summary</h2>
-<p>The biquaternion norm $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is a complex-valued multiplicative quadratic form on the biquaternion algebra, the <strong>semi-norm</strong> of the literature. It is not positive-definite, and it vanishes on the zero divisors. Of the usual norm axioms only the sign axiom survives: the triangle inequality is inapplicable to a complex value, and the scaling axiom fails for complex scalars, since the square root of $\lambda^2$ lies in the right half-plane and not at $|\lambda|$. The absolute square root $r = \sqrt{|N(\tilde{Q})|}$ is, by contrast, the <strong>unique</strong> multiplicative real norm on the group of units normalised by $r(\lambda e_0) = |\lambda|$ for real $\lambda$. The Hermitian form $\tilde{Q} \tilde{Q}^\dagger$ is a Hermitian biquaternion whose scalar part is the non-negative quantity $\sum_\mu |Q_\mu|^2$; this scalar part defines the Euclidean norm on the underlying real vector space $\mathbb{B} \cong \mathbb{R}^8$. The full Hermitian form is not scalar-valued in general; its vector part vanishes precisely when $\tilde{Q}$ is a complex scalar multiple of a real quaternion, i.e. when $\tilde{Q} = (\alpha + i\beta) A$ with $\alpha, \beta \in \mathbb{R}$ and $A \in \mathbb{H}_{\mathbb{B}}$.</p>
-<p>The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $N(\tilde{Q}) \neq 0$. The inverse is $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$. The group of units $\mathbb{B}^\times$ is an open, connected subset of $\mathbb{B}$, and is a topological group of real dimension $8$ with center $\mathbb{C}^\times$; its topology is in <em>The Biquaternion Unit Group as a Topological Group</em> and its Lie structure in <em>Biquaternion Lie Group and Exponential Structure</em>.</p>
+<p>The biquaternion norm $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is a complex-valued multiplicative quadratic form on the biquaternion algebra, the <strong>semi-norm</strong> of the literature. It is not positive-definite, and it vanishes on the zero divisors. Of the usual norm axioms only the sign axiom survives: the triangle inequality is inapplicable to a complex value, and the scaling axiom fails for complex scalars, since the square root of $\lambda^2$ lies in the right half-plane and not at $|\lambda|$. The absolute square root $r = \sqrt{|N(\tilde{Q})|}$ is, by contrast, the <strong>unique</strong> multiplicative real norm on the group of units normalised by $r(\lambda e_0) = |\lambda|$ for real $\lambda$. The Hermitian form $\tilde{Q} \tilde{Q}^{*}$ is a Hermitian biquaternion whose scalar part is the non-negative quantity $\sum_\mu |Q_\mu|^2$; this scalar part defines the Euclidean norm on the underlying real vector space $\mathbb{B} \cong \mathbb{R}^8$. The full Hermitian form is not scalar-valued in general; its vector part vanishes precisely when $\tilde{Q}$ is a complex scalar multiple of a real quaternion, i.e. when $\tilde{Q} = (\alpha + i\beta) A$ with $\alpha, \beta \in \mathbb{R}$ and $A \in \mathbb{H}_{\mathbb{B}}$.</p>
+<p>The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $N(\tilde{Q}) \neq 0$. The inverse is $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$. The group of units $\mathbb{B}^\times$ is an open, connected subset of $\mathbb{B}$, and is a topological group of real dimension $8$ with center $\mathbb{C}^\times$; its topology is in <em>The Biquaternion Unit Group as a Topological Group</em> and its Lie structure in <em>Biquaternion Lie Group and Exponential Structure</em>.</p>
 <p>The algebra $\mathbb{B}$ is partitioned into three classes: the zero element, the invertible elements, and the zero divisors. Of the six distinguished subspaces, $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors at all; $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a light cone of zero divisors, the invertible elements in each forming a complement of the cone with three connected components; and $\mathrm{Vect}(\mathbb{B})$ contains the nilpotent cone, whose complement is connected.</p>
 <p>The zero divisors themselves are studied in the article on biquaternion zero divisors, and the classification of the roots of $-1$ that underlies the idempotent classification is studied in the article on biquaternion roots of minus one.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -445,23 +445,23 @@ $$</p>
 <td>Complex coefficient</td>
 </tr>
 <tr>
-<td>$\bar{\tilde{Q}}$</td>
+<td>$\tilde{Q}^{\natural}$</td>
 <td>Quaternion conjugate</td>
 </tr>
 <tr>
-<td>$\tilde{Q}^*$</td>
+<td>$\bar{\tilde{Q}}$</td>
 <td>Complex conjugate</td>
 </tr>
 <tr>
-<td>$\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$</td>
+<td>$\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$</td>
 <td>Hermitian conjugate</td>
 </tr>
 <tr>
-<td>$\tilde{Q}^\flat = -\tilde{Q}^\dagger$</td>
+<td>$\tilde{Q}^\flat = -\tilde{Q}^{*}$</td>
 <td>Anti-Hermitian conjugate</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$</td>
+<td>$N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
 <td>Biquaternion norm; the semi-norm of the literature</td>
 </tr>
 <tr>
@@ -469,19 +469,19 @@ $$</p>
 <td>The unique multiplicative real norm on the units</td>
 </tr>
 <tr>
-<td>$\tilde{Q} \tilde{Q}^\dagger$</td>
+<td>$\tilde{Q} \tilde{Q}^{*}$</td>
 <td>Hermitian form (a Hermitian biquaternion); defined in <em>Biquaternion Algebra</em></td>
 </tr>
 <tr>
-<td>$\mathrm{Sc}(\tilde{Q} \tilde{Q}^\dagger) = \sum_\mu |Q_\mu|^2$</td>
+<td>$\mathrm{Sc}(\tilde{Q} \tilde{Q}^{*}) = \sum_\mu |Q_\mu|^2$</td>
 <td>Scalar part of the Hermitian form</td>
 </tr>
 <tr>
-<td>$\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q} \tilde{Q}^\dagger)}$</td>
+<td>$\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q} \tilde{Q}^{*})}$</td>
 <td>Euclidean norm</td>
 </tr>
 <tr>
-<td>$\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$</td>
+<td>$\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$</td>
 <td>Inverse</td>
 </tr>
 <tr>

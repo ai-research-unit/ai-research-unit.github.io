@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article is the geometry slot of the octonion system. It sets out the geometry that the octonion algebra carries on $\mathbb{R}^8$ and on its imaginary part, the almost complex and nearly Kähler structures on the imaginary unit sphere, the octonionic projective plane, and the calibrated forms that the algebra defines. The article is the octonion member of the geometry slots that this Part traverses one number system at a time; it is not the general theory of the geometry of Part II, which is that of the companions <em>Riemannian Geometry</em>, <em>Symmetric Spaces</em> and <em>Homogeneous Spaces</em>, all written in parallel. The projective geometries of the associative systems are the companions <em>Projective Geometry</em> and <em>Quaternion Geometry</em>, and the geometry of the split systems is <em>Split-Biquaternion Geometry</em> and <em>Split-Biquaternions and Hyperbolic Geometry</em>.</p>
 <p>The article takes the multiplication and the associator from <em>Octonion Algebra</em>, the norm, the inner product and the unit sphere from <em>Octonion Norm and Invertibility</em>, the operator theory from <em>Octonion Element Representations</em>, and the groups $G_2$, $F_4$ and the Cayley plane from <em>Octonions and the Exceptional Lie Groups</em>. The differential forms and their integrals are those of <em>Differential Forms and Stokes' Theorem</em>, the fibrations those of <em>Fibre Bundles, Connections and Curvature</em>, and the projective geometry of Part II is the companion <em>Projective Geometry</em>. The exceptional holonomy of Part II is the subject of <em>G2 and Spin(7) Manifolds</em> ; the geometry of the other number systems is <em>Quaternion Geometry</em> , for the split systems, <em>Split-Biquaternion Geometry</em> and <em>Split-Biquaternions and Hyperbolic Geometry</em>, written in this batch. The present article supplies the octonionic geometry that these articles use.</p>
-<p><strong>Conventions.</strong> The octonions are $\mathbb{O}$ with basis $e_0,\dots,e_7$, conjugation $\bar x$, norm $\lvert x\rvert^2 = x\bar x = \langle x,x\rangle$ and inner product $\langle x,y\rangle = \operatorname{Sc}(x\bar y)$. The imaginary subspace is $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$ with orthonormal basis $e_1,\dots,e_7$, and $S^6$ denotes its unit sphere. For $u,v\in\operatorname{Im}\mathbb{O}$ the <strong>cross product</strong> is</p>
+<p><strong>Conventions.</strong> The octonions are $\mathbb{O}$ with basis $e_0,\dots,e_7$, conjugation $x^{\natural}$, norm $\lvert x\rvert^2 = x x^{\natural} = \langle x,x\rangle$ and inner product $\langle x,y\rangle = \operatorname{Sc}(x y^{\natural})$. The imaginary subspace is $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$ with orthonormal basis $e_1,\dots,e_7$, and $S^6$ denotes its unit sphere. For $u,v\in\operatorname{Im}\mathbb{O}$ the <strong>cross product</strong> is</p>
 <p>$$
 u\times v = \operatorname{Vect}(uv) = \tfrac{1}{2}(uv - vu),
 $$</p>
@@ -67,7 +67,7 @@ $$</p>
 u\times(u\times w) = \langle u,w\rangle u - \lvert u\rvert^2w
 $$</p>
 <p>for all imaginary $u,v,w$. Consequently $\operatorname{Im}\mathbb{O}$ with the cross product is the seven-dimensional vector product.</p>
-<p><em>Proof.</em> Both identities are the real-part identities of <em>Octonion Algebra</em> together with the alternation of the associator: expanding $\operatorname{Vect}(uv) = \tfrac12(uv-vu)$ and using $\langle uv,w\rangle = \operatorname{Sc}(uv\bar w)$ reduces each identity to the Fano multiplication table, checked on the basis; the first is the Lagrange identity of the norm and the second is its polarised companion.</p>
+<p><em>Proof.</em> Both identities are the real-part identities of <em>Octonion Algebra</em> together with the alternation of the associator: expanding $\operatorname{Vect}(uv) = \tfrac12(uv-vu)$ and using $\langle uv,w\rangle = \operatorname{Sc}(uv w^{\natural})$ reduces each identity to the Fano multiplication table, checked on the basis; the first is the Lagrange identity of the norm and the second is its polarised companion.</p>
 <p>The first identity says that the cross product has the length of the area of the parallelogram spanned by $u$ and $v$; the second says that for orthonormal $u,w$ the map $v\mapsto u\times v$ is a complex structure on the orthogonal complement of $u$ and a rotation by a right angle in the plane spanned by $u,w$.</p>
 <h3 id="the-associative-three-form">The Associative Three-Form</h3>
 <p><strong>Definition.</strong> The <strong>associative three-form</strong> on $\operatorname{Im}\mathbb{O}$ is</p>
@@ -174,7 +174,7 @@ $$</p>
 <td>Imaginary subspace, orthonormal basis $e_1,\dots,e_7$</td>
 </tr>
 <tr>
-<td>$\langle x,y\rangle = \operatorname{Sc}(x\bar y)$</td>
+<td>$\langle x,y\rangle = \operatorname{Sc}(x y^{\natural})$</td>
 <td>Inner product, Euclidean metric</td>
 </tr>
 <tr>

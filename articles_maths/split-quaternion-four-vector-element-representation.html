@@ -129,7 +129,7 @@ $$</p>
 + (q_0 q_2' + q_0' q_2 + q_1 q_3' - q_1' q_3)\,e_2 + (q_0 q_3' + q_0' q_3 + q_1 q_2' - q_1' q_2)\,e_3 .
 $$</p>
 <p><strong>Proof.</strong> Expand the product bilinearly and read each surviving basis product from the table; for instance the $e_1$-coefficient collects $q_0 q_1'$ from $1 \cdot e_1$, $q_0' q_1$ from $e_1 \cdot 1$, $-q_2 q_3'$ from $e_2 \cdot e_3 = -e_1$, and $q_2' q_3$ from $e_3 \cdot e_2 = e_1$.</p>
-<p>The scalar component of the product, $q_0 q_0' - q_1 q_1' + q_2 q_2' + q_3 q_3'$, is exactly the bilinear form $B(\tilde q,\bar{y})$ evaluated against the conjugate; the remaining coefficients are the antisymmetric remainder. In particular the product is <strong>not</strong> componentwise, and the sign pattern of the scalar component is that of the form $B$ read against the conjugated coordinates.</p>
+<p>The scalar component of the product, $q_0 q_0' - q_1 q_1' + q_2 q_2' + q_3 q_3'$, is exactly the bilinear form $B(\tilde q,y^{\natural})$ evaluated against the conjugate; the remaining coefficients are the antisymmetric remainder. In particular the product is <strong>not</strong> componentwise, and the sign pattern of the scalar component is that of the form $B$ read against the conjugated coordinates.</p>
 <h2 id="the-three-involutions-in-coordinates">The Three Involutions in Coordinates</h2>
 <p>The three involutions act on the four-vector by independent sign changes of the last three components:</p>
 <div class="table-scroll"><table>
@@ -144,7 +144,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>conjugation $\bar{\cdot}$</td>
+<td>conjugation ${}^{\natural}$</td>
 <td>$+$</td>
 <td>$-$</td>
 <td>$-$</td>
@@ -166,7 +166,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>Thus $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ has four-vector $(q_0,-q_1,-q_2,-q_3)$; $\alpha(\tilde q) = q_0 - q_1 e_1 - q_2 e_2 + q_3 e_3$ has $(q_0,-q_1,-q_2,q_3)$; and $\rho(\tilde q) = q_0 + q_1 e_1 + q_2 e_2 - q_3 e_3$ has $(q_0,q_1,q_2,-q_3)$. The scalar component is fixed by all three. The composition $\bar{\cdot} = \alpha\rho$ is the composition of the sign flips, and the three act on the vector triple $(q_1,q_2,q_3)$ by the sign patterns $(-,-,-)$, $(-,-,+)$, $(+,+,-)$, the subgroup of <em>Split-Quaternion Involution Lattice</em>.</p>
+<p>Thus $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ has four-vector $(q_0,-q_1,-q_2,-q_3)$; $\alpha(\tilde q) = q_0 - q_1 e_1 - q_2 e_2 + q_3 e_3$ has $(q_0,-q_1,-q_2,q_3)$; and $\rho(\tilde q) = q_0 + q_1 e_1 + q_2 e_2 - q_3 e_3$ has $(q_0,q_1,q_2,-q_3)$. The scalar component is fixed by all three. The composition ${}^{\natural} = \alpha\rho$ is the composition of the sign flips, and the three act on the vector triple $(q_1,q_2,q_3)$ by the sign patterns $(-,-,-)$, $(-,-,+)$, $(+,+,-)$, the subgroup of <em>Split-Quaternion Involution Lattice</em>.</p>
 <h2 id="the-distinguished-subspaces-in-coordinates">The Distinguished Subspaces in Coordinates</h2>
 <p>The four distinguished subspaces are cut out by coordinate conditions:</p>
 <div class="table-scroll"><table>
@@ -204,7 +204,7 @@ $$</p>
 <h2 id="the-split-quaternion-norm">The Split-Quaternion Norm</h2>
 <p>The split-quaternion norm of $\tilde q$ is</p>
 <p>$$
-N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2 + q_1^2 - q_2^2 - q_3^2,
+N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2,
 $$</p>
 <p>of <strong>signature $(2,2)$</strong>, with polarisation $B(\tilde q,y) = q_0 q_0' + q_1 q_1' - q_2 q_2' - q_3 q_3'$ and matrix $G = \operatorname{diag}(1,1,-1,-1)$ in the coordinate basis. It is indefinite and non-degenerate, the scalar and $e_1$ directions being positive and the $e_2, e_3$ directions negative. Under the matrix model it is the determinant, $N(\tilde q) = \det \Phi(\tilde q)$.</p>
 <p>The restrictions to the distinguished subspaces read off the coordinates:</p>
@@ -245,14 +245,14 @@ $$</p>
 <p>$$
 N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2 \neq 0,
 $$</p>
-<p>and then $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q) = \dfrac{q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3}{q_0^2+q_1^2-q_2^2-q_3^2}$. Equivalently, the element is a unit if and only if the determinant of the matrix model is nonzero.</p>
-<p><strong>Proof.</strong> The identity $\tilde q\bar{\tilde q} = N(\tilde q)$ gives $\tilde q \cdot (\bar{\tilde q}/N(\tilde q)) = 1$ whenever $N(\tilde q) \neq 0$; conversely, if $N(\tilde q) = 0$ with $\tilde q \neq 0$, then $\tilde q\bar{\tilde q} = 0$ with $\bar{\tilde q} \neq 0$, so $\tilde q$ is a zero divisor and cannot be a unit.</p>
+<p>and then $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q) = \dfrac{q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3}{q_0^2+q_1^2-q_2^2-q_3^2}$. Equivalently, the element is a unit if and only if the determinant of the matrix model is nonzero.</p>
+<p><strong>Proof.</strong> The identity $\tilde q\tilde{q}^{\natural} = N(\tilde q)$ gives $\tilde q \cdot (\tilde{q}^{\natural}/N(\tilde q)) = 1$ whenever $N(\tilde q) \neq 0$; conversely, if $N(\tilde q) = 0$ with $\tilde q \neq 0$, then $\tilde q\tilde{q}^{\natural} = 0$ with $\tilde{q}^{\natural} \neq 0$, so $\tilde q$ is a zero divisor and cannot be a unit.</p>
 <p>The non-invertible nonzero four-vectors are exactly those on the <strong>null cone</strong> $q_0^2 + q_1^2 = q_2^2 + q_3^2$; on the vector subspace $q_0 = 0$ this is the light cone $q_1^2 = q_2^2 + q_3^2$ of the Minkowski form, and in the split-complex plane $\mathbb{D}_2$ it is the pair of isotropic lines $q_0 = \pm q_2$.</p>
 <h2 id="the-analogue-of-the-four-vector-representation-of-math167">The Analogue of the Four-Vector Representation of $\mathbb{B}$</h2>
 <p>The biquaternion article <em>Biquaternion Four-Vector Element Representation</em> reads $\tilde q = \sum_\mu Q_\mu e_\mu$ as a quadruple of <strong>complex</strong> coefficients, so that the coefficient space is $\mathbb{C}^4$ of real dimension $8$; two of its six distinguished subspaces are read from the real and imaginary parts of the coefficients, and the split-quaternion norm becomes a complex quadratic form with a positive-definite Euclidean companion. The split-quaternion case is the real, split analogue: the coefficient space is $\mathbb{R}^4$ of real dimension $4$, the coefficients are real, all four distinguished subspaces are read directly from coordinate conditions, and the split-quaternion norm is a single real form of signature $(2,2)$ with no complex companion. The structural parallel is exact — a quadruple, a column, a dual row, the component product, the involutions as sign flips, and the split-quaternion norm in coordinates — but every object is real and indefinite here where it is complex in $\mathbb{B}$. Nothing biquaternion-specific — the central imaginary unit $i$, the real-imaginary splitting of the coefficients, the complex definite companion — is imported.</p>
 <h2 id="summary">Summary</h2>
 <p>The four-vector realization reads a split-quaternion $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ as the quadruple $(q_0,q_1,q_2,q_3) \in \mathbb{R}^4$, an $\mathbb{R}$-linear isomorphism $\mathbb{H}_{\mathrm{s}} \to \mathbb{R}^4$ with no complex structure. The column $X$ is the quadruple written vertically and the row $X^{\mathsf{T}}$ is its dual under the non-degenerate pairing $B$ with matrix $G = \operatorname{diag}(1,1,-1,-1)$.</p>
-<p>The product is computed in components by the displayed formula, whose scalar part is $B(\tilde q,\bar{y})$ and whose vector part is the antisymmetric remainder. The three involutions act by independent sign flips of $(q_1,q_2,q_3)$: conjugation by $(-,-,-)$, the principal involution by $(-,-,+)$, and the reversal by $(+,+,-)$, with the scalar component always fixed. The distinguished subspaces are the coordinate conditions $q_0$-axis ($S$), $\tilde q^0=0$ ($V$), and the $(q_0,q_2)$-, $(q_0,q_3)$-planes ($\mathbb{D}_2, \mathbb{D}_3$). The split-quaternion norm is $q_0^2 + q_1^2 - q_2^2 - q_3^2$ of signature $(2,2)$, restricting to $q_0^2$, $q_1^2-q_2^2-q_3^2$, $q_0^2-q_2^2$ and $q_0^2-q_3^2$ on the four subspaces, and it gives the unit criterion $N \neq 0$ with $\tilde q^{-1} = \bar{\tilde q}/N$. This is the real, indefinite analogue of the complex four-vector representation of $\mathbb{B}$.</p>
+<p>The product is computed in components by the displayed formula, whose scalar part is $B(\tilde q,y^{\natural})$ and whose vector part is the antisymmetric remainder. The three involutions act by independent sign flips of $(q_1,q_2,q_3)$: conjugation by $(-,-,-)$, the principal involution by $(-,-,+)$, and the reversal by $(+,+,-)$, with the scalar component always fixed. The distinguished subspaces are the coordinate conditions $q_0$-axis ($S$), $\tilde q^0=0$ ($V$), and the $(q_0,q_2)$-, $(q_0,q_3)$-planes ($\mathbb{D}_2, \mathbb{D}_3$). The split-quaternion norm is $q_0^2 + q_1^2 - q_2^2 - q_3^2$ of signature $(2,2)$, restricting to $q_0^2$, $q_1^2-q_2^2-q_3^2$, $q_0^2-q_2^2$ and $q_0^2-q_3^2$ on the four subspaces, and it gives the unit criterion $N \neq 0$ with $\tilde q^{-1} = \tilde{q}^{\natural}/N$. This is the real, indefinite analogue of the complex four-vector representation of $\mathbb{B}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -304,7 +304,7 @@ $$</p>
 <td><em>Split-Quaternion Norm and Invertibility</em></td>
 </tr>
 <tr>
-<td>$\bar{\cdot}, \alpha, \rho$</td>
+<td>${}^{\natural}, \alpha, \rho$</td>
 <td>the three involutions as sign flips</td>
 <td><em>Split-Quaternion Subspaces and the Involutions</em></td>
 </tr>
@@ -314,7 +314,7 @@ $$</p>
 <td><em>Split-Quaternion Relations Between Subspaces</em></td>
 </tr>
 <tr>
-<td>$\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$</td>
+<td>$\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$</td>
 <td>the inverse of a unit</td>
 <td><em>Split-Quaternion Norm and Invertibility</em></td>
 </tr>

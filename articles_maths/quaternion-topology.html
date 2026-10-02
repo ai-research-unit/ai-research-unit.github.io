@@ -55,14 +55,14 @@
 <p>This article collects the topology of the quaternion algebra as a space and of its group of units: the topology of the underlying real four-space, its contractibility, the unit sphere, the homotopy type of the units, the low homotopy groups, and the double cover of the rotation group. It is the quaternion member of the family's topology articles; its counterpart is the biquaternion case, whose ambient space carries a null cone of zero divisors and whose group of units is the non-compact $GL_2(\mathbb{C})$. Here there are no zero divisors, the algebra norm and the Euclidean norm coincide, and the unit sphere is a group.</p>
 <p>The article uses <em>Quaternion Algebra</em> for the basis and product, <em>Quaternion Norm and Invertibility</em> for the quaternion norm, division property and unit group, <em>Quaternion Exponential and Lie Group Structure</em> for the polar split of the units and the exponential, and <em>Quaternion Rotations and Reflections</em> for the covering of the rotation group. The standard algebraic topology used is cited rather than reproved.</p>
 <p>The corpus's default base is a commutative ring; the topology here requires the real numbers, and everything is stated over $\mathbb{R}$.</p>
-<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$; the quaternion norm is $N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2+q_1^2+q_2^2+q_3^2$ and the modulus is $|\tilde q| = \sqrt{N(\tilde q)}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : N(\tilde q) = 1\}$.</p>
+<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$; the quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2+q_2^2+q_3^2$ and the modulus is $|\tilde q| = \sqrt{N(\tilde q)}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : N(\tilde q) = 1\}$.</p>
 <h2 id="the-algebra-as-a-topological-space">The Algebra as a Topological Space</h2>
 <p><strong>Theorem.</strong> The linear map</p>
 <p>$$
 \tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3\longmapsto(q_0,q_1,q_2,q_3)
 $$</p>
 <p>is a linear isometry of $(\mathbb{H},|\cdot|)$ onto $\mathbb{R}^4$; the product is bilinear, hence continuous, so $\mathbb{H}$ is a topological algebra over $\mathbb{R}$, and inversion is continuous on the units, so $\mathbb{H}^{\times}$ is a topological group.</p>
-<p><em>Proof.</em> The quaternion norm is positive definite with four positive signs, $N(\tilde q) = \sum_k q_k^2$, so $|\tilde q|$ is the Euclidean norm of the coordinate vector and the map is an isometry. Bilinearity gives continuity of the product, and $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$ is continuous on the complement of $N = 0$, which is $\mathbb{H}^{\times}$ because the quaternion norm is definite.</p>
+<p><em>Proof.</em> The quaternion norm is positive definite with four positive signs, $N(\tilde q) = \sum_k q_k^2$, so $|\tilde q|$ is the Euclidean norm of the coordinate vector and the map is an isometry. Bilinearity gives continuity of the product, and $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$ is continuous on the complement of $N = 0$, which is $\mathbb{H}^{\times}$ because the quaternion norm is definite.</p>
 <p><strong>Corollary.</strong> The algebra norm and the Euclidean norm agree on $\mathbb{H}$, so multiplication is continuous for the Euclidean topology and $\mathbb{H}$ is a normed division algebra; this is the property that fails for the biquaternions, whose norm is indefinite.</p>
 <h2 id="contractibility">Contractibility</h2>
 <p><strong>Theorem.</strong> The quaternion algebra is contractible, hence path-connected and simply connected, with $\pi_n(\mathbb{H}) = 0$ for all $n\geq1$.</p>
@@ -184,7 +184,7 @@ $$</p>
 <td>Modulus, equal to the Euclidean norm</td>
 </tr>
 <tr>
-<td>$N(\tilde q) = \tilde q\bar{\tilde q} = \sum_k q_k^2$</td>
+<td>$N(\tilde q) = \tilde q\tilde{q}^{\natural} = \sum_k q_k^2$</td>
 <td>Definite norm, four positive signs</td>
 </tr>
 <tr>

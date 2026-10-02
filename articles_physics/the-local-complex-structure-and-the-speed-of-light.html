@@ -58,7 +58,7 @@ ds^2=-c^2\,dt^2+d\mathbf x^2
 $$
 is, in this reading, the sign of $i^2$; it is not put into the metric by hand. That much is inherited. This article isolates the structure that does the work and asks what, precisely, it is a structure <em>on</em>. The answer turns on a distinction that is easy to blur: <strong>no global complex structure compatible with the Minkowski metric is available on spacetime, but a local one is</strong>, and the speed of light $c$ is the single scale that converts the local structure into the Minkowski metric.</p>
 <p>The parent of this article is <em>Electromagnetism in Media — The Local Complex Structure at Work</em>, where the local structure is used in a material medium. There the medium supplies the general case and the vacuum is its limit. Here the subject is the structure itself and its relation to the speed of light; the medium appears only as the setting in which the local structure is seen to vary from point to point. The distinction between the global and the local statement is the organising theme, and every step below says which of the two is being claimed.</p>
-<p>Throughout, the notation is inherited unchanged from the read-list articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$ and scalar imaginary $i$ commuting with the quaternion units. The two complementary four-dimensional real subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector; the material sector) and $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector; the informational sector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the scalar subspace is $\mathbb{C}_{\mathbb{B}}$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; in vacuum $c=c_0$. One symbol is introduced here and used only here: $J$ denotes an abstract complex structure, and $J_{\mathbb{B}}$ the specific map $\tilde{Q}\mapsto i\tilde{Q}$ on $\mathbb{B}$.</p>
+<p>Throughout, the notation is inherited unchanged from the read-list articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$ and scalar imaginary $i$ commuting with the quaternion units. The two complementary four-dimensional real subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector; the material sector) and $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector; the informational sector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the scalar subspace is $\mathbb{C}_{\mathbb{B}}$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; in vacuum $c=c_0$. One symbol is introduced here and used only here: $J$ denotes an abstract complex structure, and $J_{\mathbb{B}}$ the specific map $\tilde{Q}\mapsto i\tilde{Q}$ on $\mathbb{B}$.</p>
 <h2 id="two-senses-of-complex-structure">Two Senses of "Complex Structure"</h2>
 <p>A <strong>complex structure</strong> on a real vector space $V$ is a real-linear map $J:V\to V$ with
 $$
@@ -156,7 +156,7 @@ $$
 so the aperture of the local null cone is exactly $c$. These null directions are the zero divisors of the algebra at the point, and they are the local light cone. Read as a statement about the structure alone, this fixes what $c$ has to be for a null signal: of the scales that could be attached to the imaginary time axis, the ones whose zero-divisor cone is the light cone are those with aperture $c$. The null-cone route uses the quadratic form and nothing else.</p>
 <p><strong>Route 2: the characteristics of the wave operator.</strong> The biquaternionic gradient and its quaternion conjugate multiply to the d'Alembertian,
 $$
-\Box=\tilde{\nabla}\bar{\tilde{\nabla}}
+\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}
 =\partial_{ict}^2+\Delta
 =\Delta-\frac{1}{c^2}\,\partial_t^2 ,
 $$
@@ -220,7 +220,7 @@ The wave-operator route uses the field equation and the constitutive relations, 
 <td>Sector decomposition; $i\mathbb{M}_-=\mathbb{M}_+$</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$</td>
+<td>$N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$</td>
 <td>Biquaternion norm; zero divisors where $N=0$</td>
 </tr>
 <tr>
@@ -252,11 +252,11 @@ The wave-operator route uses the field equation and the constitutive relations, 
 <td>Medium speed, vacuum speed</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla}=e_0\partial_{ict}+\nabla$, $\bar{\tilde{\nabla}}$</td>
+<td>$\tilde{\nabla}=e_0\partial_{ict}+\nabla$, $\tilde{\nabla}^{\natural}$</td>
 <td>Biquaternionic gradient and its quaternion conjugate</td>
 </tr>
 <tr>
-<td>$\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$</td>
+<td>$\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$</td>
 <td>d'Alembertian</td>
 </tr>
 <tr>

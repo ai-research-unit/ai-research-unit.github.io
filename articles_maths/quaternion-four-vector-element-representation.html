@@ -55,7 +55,7 @@
 <p>The quaternion four-vector representation is the identification of a quaternion with the ordered quadruple of its four real coordinates. It is the simplest of the representations of the algebra and the one on which the others are read: the column vector of coordinates, its dual row vector, the component form of the product, the coordinate forms of the three involutions and of the scalar and vector subspaces, and the quaternion norm as a sum of four positive squares. This article develops those identifications. It is the quaternion member of the family's coordinate-representation pair; its counterpart is the four-vector representation of the biquaternion algebra, where the four coordinates are complex and the quaternion norm has an indefinite complex signature rather than four positive signs.</p>
 <p>The article is coordinate bookkeeping on the algebra fixed in <em>Quaternion Algebra</em>: the basis $(e_0,e_1,e_2,e_3)$, the multiplication rules, the conjugate and the scalar–vector decomposition are used as given. The matrix forms built from the coordinates are the subject of <em>Quaternion 4x4 Regular Matrix Element Representation</em> and <em>Quaternion 2x2 Matrix Element Representation</em>, and the subspaces in coordinates are from <em>The Scalar and Vector Subspaces of $\mathbb{H}$</em>.</p>
 <p>The corpus's default base is a commutative ring with identity, and the coordinate description holds over such a base; the positivity and the Euclidean interpretation of the quaternion norm are statements over $\mathbb{R}$, and they are flagged where they occur.</p>
-<p>Throughout, a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_\mu\in F$, $\mathrm{Sc}(\tilde q) = q_0$ and $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3$; the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and the quaternion norm is $N(\tilde q) = \tilde q\bar{\tilde q}$. The coordinate map is the $F$-linear isomorphism $\varphi : \mathbb{H}\to F^4$.</p>
+<p>Throughout, a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_\mu\in F$, $\mathrm{Sc}(\tilde q) = q_0$ and $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3$; the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and the quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural}$. The coordinate map is the $F$-linear isomorphism $\varphi : \mathbb{H}\to F^4$.</p>
 <h2 id="the-coordinate-vector">The Coordinate Vector</h2>
 <p><strong>Definition.</strong> The <strong>coordinate map</strong> sends $\tilde q = \sum_{\mu=0}^{3}q_\mu e_\mu$ to the quadruple</p>
 <p>$$
@@ -95,8 +95,8 @@ $$</p>
 <h2 id="the-three-involutions-in-coordinates">The Three Involutions in Coordinates</h2>
 <p><strong>Theorem.</strong> The three involutions act on the coordinate vector by the diagonal sign matrices</p>
 <p>$$
-\varphi(\bar{\tilde q}) = \operatorname{diag}(1,-1,-1,-1)\,[\tilde q], \qquad
-\varphi(-\bar{\tilde q}) = \operatorname{diag}(-1,1,1,1)\,[\tilde q], \qquad
+\varphi(\tilde{q}^{\natural}) = \operatorname{diag}(1,-1,-1,-1)\,[\tilde q], \qquad
+\varphi(-\tilde{q}^{\natural}) = \operatorname{diag}(-1,1,1,1)\,[\tilde q], \qquad
 \varphi(-\tilde q) = -[\tilde q] .
 $$</p>
 <p><em>Proof.</em> Quaternion conjugation negates the three vector coordinates; vector conjugation negates the scalar coordinate; total conjugation is the negation of all four.</p>
@@ -117,8 +117,8 @@ $$</p>
 <p>$$
 N(\tilde q) = q_0^2+q_1^2+q_2^2+q_3^2 = [\tilde q]^{T}[\tilde q],
 $$</p>
-<p>and the associated bilinear form is the standard Euclidean inner product $\mathrm{Sc}(p\bar{\tilde q}) = [p]^{T}[\tilde q]$.</p>
-<p><em>Proof.</em> $\tilde q\bar{\tilde q} = (q_0+\mathbf{q})(q_0-\mathbf{q}) = q_0^2-\mathbf{q}^2 = q_0^2+N(\mathbf{q}) = \sum_\mu q_\mu^2$, and $[\tilde q]^T[\tilde q]$ is that sum. The bilinear form is the polarisation, which is $\mathrm{Sc}(p\bar{\tilde q})$.</p>
+<p>and the associated bilinear form is the standard Euclidean inner product $\mathrm{Sc}(p\tilde{q}^{\natural}) = [p]^{T}[\tilde q]$.</p>
+<p><em>Proof.</em> $\tilde q\tilde{q}^{\natural} = (q_0+\mathbf{q})(q_0-\mathbf{q}) = q_0^2-\mathbf{q}^2 = q_0^2+N(\mathbf{q}) = \sum_\mu q_\mu^2$, and $[\tilde q]^T[\tilde q]$ is that sum. The bilinear form is the polarisation, which is $\mathrm{Sc}(p\tilde{q}^{\natural})$.</p>
 <p><strong>Corollary.</strong> Over $F = \mathbb{R}$ the quaternion norm is positive definite, the coordinate map is an isometry $\mathbb{H}\to\mathbb{R}^4$, and the modulus is the Euclidean length $|\tilde q| = \sqrt{q_0^2+q_1^2+q_2^2+q_3^2}$. In particular the four signs of the quaternion norm are all positive.</p>
 <p><em>Proof.</em> The sum of four squares of real numbers is non-negative and vanishes only at the origin; the remaining statements are the definitions.</p>
 <h2 id="relation-to-the-biquaternion-four-vector-element-representation">Relation to the Biquaternion Four-Vector Element Representation</h2>

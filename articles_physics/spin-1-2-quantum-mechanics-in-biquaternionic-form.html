@@ -151,7 +151,7 @@ $$</p>
 <p>where $\mu = \mu_1 e_1 + \mu_2 e_2 + \mu_3 e_3$ is a unit pure real quaternion, $\mu_1^2 + \mu_2^2 + \mu_3^2 = 1$.</p>
 <p><strong>Properties.</strong> Each such $\tilde\Pi_{1,2}$ satisfies:</p>
 <ol>
-<li><strong>Hermitian:</strong> $\tilde\Pi_{1,2}^\dagger = \tilde\Pi_{1,2}$, since $\tilde\Pi_{1,2} \in \mathbb{M}_+$.</li>
+<li><strong>Hermitian:</strong> $\tilde\Pi_{1,2}^{*} = \tilde\Pi_{1,2}$, since $\tilde\Pi_{1,2} \in \mathbb{M}_+$.</li>
 <li><strong>Idempotent:</strong> $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$.</li>
 <li><strong>Trace one:</strong> $\mathrm{Tr}(\tilde\Pi_{1,2}) = 2\,\mathrm{Sc}(\tilde\Pi_{1,2}) = 1$.</li>
 <li><strong>Rank one:</strong> in the matrix representation, $\tilde\Pi_{1,2}$ maps to a rank-1 projection matrix.</li>
@@ -217,12 +217,12 @@ $$</p>
 <h2 id="the-rotations-and-the-boosts">The Rotations and the Boosts</h2>
 <p>The unitary biquaternions generate the spin rotation group, and the Hermitian biquaternions generate the boost group.</p>
 <h3 id="unitary-biquaternions">Unitary Biquaternions</h3>
-<p>A biquaternion $\tilde{U}$ is <strong>unitary</strong> if $\tilde{U}\tilde{U}^\dagger = e_0$. In the matrix representation, $\tilde{U}$ maps to a unitary matrix. The group of unitary biquaternions is $U(2)$.</p>
+<p>A biquaternion $\tilde{U}$ is <strong>unitary</strong> if $\tilde{U}\tilde{U}^{*} = e_0$. In the matrix representation, $\tilde{U}$ maps to a unitary matrix. The group of unitary biquaternions is $U(2)$.</p>
 <p>The subgroup of $U(2)$ with determinant 1 (in the matrix representation) is $SU(2)$, which is the <strong>spin rotation group</strong>. It acts on the spinor space $\mathbb{C}^2$ by matrix multiplication, and its action on the material space $\mathbb{M}_-$ (by rotor conjugation) is the group of spatial rotations $SO(3)$.</p>
 <p>So the <strong>spin rotations of a spin-1/2 particle are realized in the biquaternion framework by the $SU(2)$ subgroup of unit-norm biquaternions</strong>.</p>
 <h3 id="hermitian-biquaternions">Hermitian Biquaternions</h3>
 <p>The Hermitian biquaternions in $\mathbb{M}_+$ with unit norm are the <strong>boost biquaternions</strong> $\tilde{\Lambda} = \cosh(\psi/2) + i\sinh(\psi/2)\hat{\mathbf{u}}$. They generate the Lorentz boosts, and their action on $\mathbb{M}_-$ is the rotor conjugation.</p>
-<p>In the quantum-mechanical context, the boosts are <strong>not</strong> unitary (they are Hermitian, and their squares are not the identity). They correspond to operations that are non-unitary but still <strong>invertible</strong>: a boost has unit norm, so it inverts to $\bar{\tilde{\Lambda}}$, and it represents a reversible change of state — unlike the genuinely irreversible idempotent projections.</p>
+<p>In the quantum-mechanical context, the boosts are <strong>not</strong> unitary (they are Hermitian, and their squares are not the identity). They correspond to operations that are non-unitary but still <strong>invertible</strong>: a boost has unit norm, so it inverts to $\tilde{\Lambda}^{\natural}$, and it represents a reversible change of state — unlike the genuinely irreversible idempotent projections.</p>
 <p>The full group of unit-norm biquaternions is $SL(2,\mathbb{C})$, which is the double cover of the proper orthochronous Lorentz group $SO^+(1,3)$. It contains $SU(2)$ as the compact subgroup of spatial rotations, and the Hermitian elements as the non-compact set of boosts.</p>
 <p>So the biquaternion framework contains:</p>
 <ul>
@@ -235,7 +235,7 @@ $$</p>
 <h3 id="the-biquaternionic-dirac-equation">The Biquaternionic Dirac Equation</h3>
 <p>The biquaternion Dirac equation (companion article) is the linear, chirality-off-diagonal pair</p>
 <p>$$
-\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R,
+\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
 $$</p>
 <p>where $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ is a biquaternion-valued field with one component per chirality, and $m$ is the mass. In the massless case ($m = 0$), the pair reduces to</p>
 <p>$$
@@ -248,7 +248,7 @@ $$</p>
 <h3 id="what-the-dirac-equation-contains">What the Dirac Equation Contains</h3>
 <p>The biquaternionic Dirac equation contains:</p>
 <ul>
-<li>The <strong>kinematics</strong> of a relativistic spin-1/2 particle: the mass-shell condition $\tilde{k}\bar{\tilde{k}} = -m^2 c^2/\hbar^2$ for plane-wave solutions.</li>
+<li>The <strong>kinematics</strong> of a relativistic spin-1/2 particle: the mass-shell condition $\tilde{k}\tilde{k}^{\natural} = -m^2 c^2/\hbar^2$ for plane-wave solutions.</li>
 <li>The <strong>spin structure</strong>: the polarization biquaternion $\tilde{\Psi}_0$ in the plane-wave solution has two independent components, corresponding to the two spin states.</li>
 <li>The <strong>mass term</strong>: the linear, chirality-off-diagonal mass term $m\tilde{\Psi}_{L,R}$, which couples the two chiral components of the spinor.</li>
 </ul>
@@ -394,7 +394,7 @@ $$</p>
 <td>Lorentz group (double cover)</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L,\ \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$</td>
+<td>$\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L,\ \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$</td>
 <td>Biquaternionic Dirac equation (linear chiral pair)</td>
 </tr>
 </tbody>

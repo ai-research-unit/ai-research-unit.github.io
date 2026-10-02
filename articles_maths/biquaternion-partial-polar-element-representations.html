@@ -180,9 +180,9 @@ $$</p>
 $$</p>
 <p>The modulus is Hermitian positive and the second factor is unitary, so this is the matrix polar decomposition of the biquaternion: $\Phi(H)$ is the unique positive definite Hermitian square root of $\Phi(\tilde{Q})\Phi(\tilde{Q})^\dagger$ and $\Phi(U)$ is the unique unitary factor. Indeed</p>
 <p>$$
-\tilde{Q}\tilde{Q}^\dagger = r^2B\hat{q}\hat{q}^\dagger B^\dagger = r^2B^2 = H^2 ,
+\tilde{Q}\tilde{Q}^{*} = r^2B\hat{q}\hat{q}^\dagger B^\dagger = r^2B^2 = H^2 ,
 $$</p>
-<p>using $\hat{q}\hat{q}^\dagger = e_0$, the Hermitian character of $B$ and $B^2 = S$, so $H = \sqrt{\tilde{Q}\tilde{Q}^\dagger}$ is the Hermitian positive square root, of norm $N(H) = r^2$.</p>
+<p>using $\hat{q}\hat{q}^\dagger = e_0$, the Hermitian character of $B$ and $B^2 = S$, so $H = \sqrt{\tilde{Q}\tilde{Q}^{*}}$ is the Hermitian positive square root, of norm $N(H) = r^2$.</p>
 <h3 id="the-statement_2">The Statement</h3>
 <p>The representation is the standard polar decomposition, and it needs no separate existence theorem: for $\tilde{Q}$ with $N(\tilde{Q})\neq0$ the matrix $\Phi(\tilde{Q})$ is invertible, its polar decomposition is unique, and translating the two factors back through the algebra isomorphism gives $H$ and $U$ above. The modulus $H = rB$ combines the positive real scale with the Hermitian positive boost, and the second factor $U = e^{i\alpha}\hat{q}$ combines the central phase with the rotor.</p>
 <h3 id="the-modulus-is-hermitian-positive">The Modulus Is Hermitian Positive</h3>
@@ -192,7 +192,7 @@ $$</p>
 <p>$$
 \left\{\tilde{Q} : N(\tilde{Q})\neq0\right\},
 $$</p>
-<p>which is the domain of the polar representation itself. It is the only one of the three partial representations with that domain, and its uniqueness is the uniqueness of the matrix polar decomposition: the positive definite Hermitian factor is determined by $\tilde{Q}\tilde{Q}^\dagger$ and the unitary factor is then determined as $H^{-1}\tilde{Q}$.</p>
+<p>which is the domain of the polar representation itself. It is the only one of the three partial representations with that domain, and its uniqueness is the uniqueness of the matrix polar decomposition: the positive definite Hermitian factor is determined by $\tilde{Q}\tilde{Q}^{*}$ and the unitary factor is then determined as $H^{-1}\tilde{Q}$.</p>
 <h3 id="the-published-form-of-the-pairing">The Published Form of the Pairing</h3>
 <p>The pairing $HU$ is the factorisation proved by Sangwine &amp; Hitzer for the unit semi-norm elements and, in the general case, by their Corollary 1, in the reversed word, angle first:</p>
 <p>$$
@@ -320,11 +320,11 @@ $$</p>
 <p>so that $\Psi = (\arg z)e_0$ is a scalar and $\tilde{Q} = |z|\exp\!\big(i(\arg z)e_0\big)$: the complex representation is the ordinary complex polar form of $\mathbb{C}$, with the central scalar imaginary of the algebra in the role of the scalar imaginary of $\mathbb{C}$ and the quaternion modulus collapsed to a scalar. The collapse was checked over $500$ random complex scalars: the vector part of $\tan\Psi$ vanished identically, the modulus reproduced $|z|$ to $6.5\times10^{-14}$, and the angle reproduced $\arg z$ to the last bit.</p>
 <p>The two limits are disjoint, and together they are the reason the two named representations are complementary rather than competing: the Hamilton representation is the one that carries the quaternion polar form into the biquaternions, and the complex representation is the one that carries the complex polar form.</p>
 <h2 id="behaviour-under-the-three-conjugations">Behaviour Under the Three Conjugations</h2>
-<p>The algebra has three nontrivial conjugations: quaternion conjugation $\bar{\cdot}$, the anti-automorphism fixing the centre $\mathbb{C}_{\mathbb{B}}$; complex conjugation $^*$, the automorphism conjugating every coefficient; and Hermitian conjugation $\dagger = \bar{\cdot}\circ{}^*$, the two operations commuting because one acts on the coefficients and the other on the units. The three act differently on the two named representations, and the difference is stated below as a computation rather than as a contrast of styles.</p>
+<p>The algebra has three nontrivial conjugations: quaternion conjugation ${}^{\natural}$, the anti-automorphism fixing the centre $\mathbb{C}_{\mathbb{B}}$; complex conjugation $\bar{\cdot}$, the automorphism conjugating every coefficient; and Hermitian conjugation ${}^{*} = {}^{\natural}\circ\bar{\cdot}$, the two operations commuting because one acts on the coefficients and the other on the units. The three act differently on the two named representations, and the difference is stated below as a computation rather than as a contrast of styles.</p>
 <h3 id="the-hamilton-representation_1">The Hamilton Representation</h3>
-<p>In $\tilde{Q} = R\exp(\xi\Theta)$ the modulus $R$ and the angle $\Theta$ are complex scalars and therefore central, while the axis $\xi$ is pure, so that $\bar{\xi} = -\xi$. Quaternion conjugation fixes the centre and reverses a pure element, complex conjugation is an automorphism and conjugates the three parameters, and Hermitian conjugation does both:</p>
+<p>In $\tilde{Q} = R\exp(\xi\Theta)$ the modulus $R$ and the angle $\Theta$ are complex scalars and therefore central, while the axis $\xi$ is pure, so that $\xi^{\natural} = -\xi$. Quaternion conjugation fixes the centre and reverses a pure element, complex conjugation is an automorphism and conjugates the three parameters, and Hermitian conjugation does both:</p>
 <p>$$
-\overline{\tilde{Q}} = R\exp(-\xi\Theta), \qquad \tilde{Q}^* = R^*\exp(\xi^*\Theta^*), \qquad \tilde{Q}^\dagger = R^*\exp(-\xi^*\Theta^*) .
+(\tilde{Q})^{\natural} = R\exp(-\xi\Theta), \qquad \bar{\tilde{Q}} = \bar{R}\exp(\xi^{\natural}\bar{\Theta}), \qquad \tilde{Q}^{*} = \bar{R}\exp(-\xi^{\natural}\bar{\Theta}) .
 $$</p>
 <div class="table-scroll"><table>
 <thead>
@@ -338,58 +338,58 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>quaternion $\bar{\cdot}$</td>
+<td>quaternion ${}^{\natural}$</td>
 <td>$R$</td>
 <td>$-\xi$</td>
 <td>$\Theta$</td>
 <td>$R\exp(-\xi\Theta)$</td>
 </tr>
 <tr>
-<td>complex $^*$</td>
-<td>$R^*$</td>
-<td>$\xi^*$</td>
-<td>$\Theta^*$</td>
-<td>$R^*\exp(\xi^*\Theta^*)$</td>
+<td>complex $\bar{\cdot}$</td>
+<td>$\bar{R}$</td>
+<td>$\xi^{\natural}$</td>
+<td>$\bar{\Theta}$</td>
+<td>$\bar{R}\exp(\xi^{\natural}\bar{\Theta})$</td>
 </tr>
 <tr>
-<td>Hermitian $\dagger$</td>
-<td>$R^*$</td>
-<td>$-\xi^*$</td>
-<td>$\Theta^*$</td>
-<td>$R^*\exp(-\xi^*\Theta^*)$</td>
+<td>Hermitian ${}^{*}$</td>
+<td>$\bar{R}$</td>
+<td>$-\xi^{\natural}$</td>
+<td>$\bar{\Theta}$</td>
+<td>$\bar{R}\exp(-\xi^{\natural}\bar{\Theta})$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The consistency of the second row is a consequence of $N(\tilde{Q}^*) = N(\tilde{Q})^*$, hence $R(\tilde{Q}^*) = R(\tilde{Q})^*$; the computed defect in that identity was exactly zero over $400$ random elements. Over the same sample the largest defect in the four coefficients of the three identities of the table was $9.9\times10^{-16}$, and the identity $R(\cos\Theta+\xi\sin\Theta) = \tilde{Q}$ itself was verified on the same run to the same order. Only quaternion conjugation and Hermitian conjugation reverse the axis; complex conjugation preserves it and conjugates it.</p>
+<p>The consistency of the second row is a consequence of $N(\bar{\tilde{Q}}) = \overline{N(\tilde{Q})}$, hence $R(\bar{\tilde{Q}}) = \overline{R(\tilde{Q})}$; the computed defect in that identity was exactly zero over $400$ random elements. Over the same sample the largest defect in the four coefficients of the three identities of the table was $9.9\times10^{-16}$, and the identity $R(\cos\Theta+\xi\sin\Theta) = \tilde{Q}$ itself was verified on the same run to the same order. Only quaternion conjugation and Hermitian conjugation reverse the axis; complex conjugation preserves it and conjugates it.</p>
 <h3 id="the-complex-representation_1">The Complex Representation</h3>
-<p>In $\tilde{Q} = Q\exp(i\Psi)$ the modulus $Q$ and the angle $\Psi$ are real quaternions, so $Q^* = Q$ and $\Psi^* = \Psi$, while $\bar{Q}\neq Q$ and $\bar{\Psi}\neq\Psi$ in general; the two factors need not commute, and it is this that makes the complex representation the less symmetric of the two under conjugation.</p>
-<p><strong>Complex conjugation.</strong> Since $^*$ is an automorphism fixing $Q$ and $\Psi$ and conjugating the scalar imaginary,</p>
+<p>In $\tilde{Q} = Q\exp(i\Psi)$ the modulus $Q$ and the angle $\Psi$ are real quaternions, so $\bar{Q} = Q$ and $\bar{\Psi} = \Psi$, while $Q^{\natural}\neq Q$ and $\Psi^{\natural}\neq\Psi$ in general; the two factors need not commute, and it is this that makes the complex representation the less symmetric of the two under conjugation.</p>
+<p><strong>Complex conjugation.</strong> Since $\bar{\cdot}$ is an automorphism fixing $Q$ and $\Psi$ and conjugating the scalar imaginary,</p>
 <p>$$
-\tilde{Q}^* = Q\exp(-i\Psi) :
+\bar{\tilde{Q}} = Q\exp(-i\Psi) :
 $$</p>
-<p>the modulus and the angle are both unchanged and only the sign of the exponent changes. Equivalently, the canonical angle of $\tilde{Q}^*$ is $-\Psi$, because the real and imaginary quaternion parts of $\tilde{Q}^*$ are $(Q_r,-Q_i)$, whence $\tan\Psi(\tilde{Q}^*) = Q_r^{-1}(-Q_i) = -\tan\Psi$. Over $2000$ random elements the residual of that identity was exactly zero.</p>
-<p><strong>Quaternion conjugation.</strong> Since $\bar{\cdot}$ is an anti-automorphism, the two factors exchange order:</p>
+<p>the modulus and the angle are both unchanged and only the sign of the exponent changes. Equivalently, the canonical angle of $\bar{\tilde{Q}}$ is $-\Psi$, because the real and imaginary quaternion parts of $\bar{\tilde{Q}}$ are $(Q_r,-Q_i)$, whence $\tan\Psi(\bar{\tilde{Q}}) = Q_r^{-1}(-Q_i) = -\tan\Psi$. Over $2000$ random elements the residual of that identity was exactly zero.</p>
+<p><strong>Quaternion conjugation.</strong> Since ${}^{\natural}$ is an anti-automorphism, the two factors exchange order:</p>
 <p>$$
-\overline{\tilde{Q}} = \exp(i\bar{\Psi})\,\bar{Q} ,
+(\tilde{Q})^{\natural} = \exp(i\Psi^{\natural})\,Q^{\natural} ,
 $$</p>
-<p>which is not the canonical shape, the modulus of the complex representation being the left factor. Recovering the canonical shape requires the parts of the conjugated element, and the result is not the conjugate angle in general. The parts of $\overline{\tilde{Q}}$ are $(\bar{Q}_r,\bar{Q}_i)$, so its angle $\Psi'$ satisfies</p>
+<p>which is not the canonical shape, the modulus of the complex representation being the left factor. Recovering the canonical shape requires the parts of the conjugated element, and the result is not the conjugate angle in general. The parts of $(\tilde{Q})^{\natural}$ are $(Q_r^{\natural},Q_i^{\natural})$, so its angle $\Psi'$ satisfies</p>
 <p>$$
-\tan\Psi' = \bar{Q}_r^{\,-1}\bar{Q}_i , \qquad\text{whereas}\qquad \overline{\tan\Psi} = \bar{Q}_i\bar{Q}_r^{\,-1} ,
+\tan\Psi' = (Q_r^{\natural})^{-1}Q_i^{\natural} , \qquad\text{whereas}\qquad (\tan\Psi)^{\natural} = Q_i^{\natural}(Q_r^{\natural})^{-1} ,
 $$</p>
-<p>and the two agree exactly when $\bar{Q}_r$ and $\bar{Q}_i$ commute, equivalently when $Q_r$ and $Q_i$ commute. The commuting case was verified to be exact and the non-commuting case to be genuinely different: the element</p>
+<p>and the two agree exactly when $Q_r^{\natural}$ and $Q_i^{\natural}$ commute, equivalently when $Q_r$ and $Q_i$ commute. The commuting case was verified to be exact and the non-commuting case to be genuinely different: the element</p>
 <p>$$
 \tilde{Q} = (1+e_1) + i(e_1+e_2), \qquad N(\tilde{Q}) = 2i, \qquad Q_r = 1+e_1\ \text{invertible} ,
 $$</p>
 <p>has $\tan\Psi = \tfrac12(1+e_1+e_2-e_3)$, conjugate $\tfrac12(1-e_1-e_2+e_3)$, and angle of the conjugated element $\tan\Psi' = \tfrac12(1-e_1-e_2-e_3)$; the two differ in the $e_3$ coefficient alone, the commutator being $Q_rQ_i-Q_iQ_r = 2e_3$.</p>
-<p><strong>Hermitian conjugation.</strong> Combining the two, $\tilde{Q}^\dagger = \exp(-i\bar{\Psi})\bar{Q}$, again with the factors in the reversed order.</p>
+<p><strong>Hermitian conjugation.</strong> Combining the two, $\tilde{Q}^{*} = \exp(-i\Psi^{\natural})\,Q^{\natural}$, again with the factors in the reversed order.</p>
 <h3 id="the-cartan-representation_1">The Cartan Representation</h3>
 <p>For $\tilde{Q} = HU$ with $H$ Hermitian positive and $U$ unitary, Hermitian conjugation gives</p>
 <p>$$
-\tilde{Q}^\dagger = U^\dagger H^\dagger = U^\dagger H = \big(U^\dagger HU\big)U^\dagger ,
+\tilde{Q}^{*} = U^\dagger H^\dagger = U^\dagger H = \big(U^\dagger HU\big)U^\dagger ,
 $$</p>
-<p>so the Hermitian factor of $\tilde{Q}^\dagger$ is the conjugate $U^\dagger HU$ of the original one and the unitary factor is $U^\dagger$. Both factors of the pair therefore change, and here the pairing itself changes: the Cartan pair of $\tilde{Q}^\dagger$ is not a regrouping of the four factors of $\tilde{Q}$, because a Hermitian element and a unitary element multiplied in the other order is not the same element. The identity and the Hermiticity of $U^\dagger HU$ were checked to $3.2\times10^{-15}$ and $2.7\times10^{-15}$ over $400$ random pairs.</p>
+<p>so the Hermitian factor of $\tilde{Q}^{*}$ is the conjugate $U^\dagger HU$ of the original one and the unitary factor is $U^\dagger$. Both factors of the pair therefore change, and here the pairing itself changes: the Cartan pair of $\tilde{Q}^{*}$ is not a regrouping of the four factors of $\tilde{Q}$, because a Hermitian element and a unitary element multiplied in the other order is not the same element. The identity and the Hermiticity of $U^\dagger HU$ were checked to $3.2\times10^{-15}$ and $2.7\times10^{-15}$ over $400$ random pairs.</p>
 <h3 id="what-the-comparison-shows">What the Comparison Shows</h3>
-<p>The two named representations are distinguished by conjugation as sharply as by domain. For the Hamilton representation all three conjugations act on the parameters, $\bar{\cdot}$ and $\dagger$ reversing the axis and $^*$ conjugating the three parameters, and the representation is closed under every one of them. For the complex representation $^*$ touches only the scalar imaginary of the exponent, while $\bar{\cdot}$ and $\dagger$ exchange the order of the two factors, and $\bar{\cdot}$ preserves the angle only when the two quaternion parts of the element commute. A statement about a biquaternion and its conjugates is therefore cheapest in the representation whose conjugation action it needs, and this is a second sense, independent of domain, in which the Hamilton and complex representations are complementary.</p>
+<p>The two named representations are distinguished by conjugation as sharply as by domain. For the Hamilton representation all three conjugations act on the parameters, ${}^{\natural}$ and ${}^{*}$ reversing the axis and $^*$ conjugating the three parameters, and the representation is closed under every one of them. For the complex representation $^*$ touches only the scalar imaginary of the exponent, while ${}^{\natural}$ and ${}^{*}$ exchange the order of the two factors, and ${}^{\natural}$ preserves the angle only when the two quaternion parts of the element commute. A statement about a biquaternion and its conjugates is therefore cheapest in the representation whose conjugation action it needs, and this is a second sense, independent of domain, in which the Hamilton and complex representations are complementary.</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <h3 id="one-element-three-representations">One Element, Three Representations</h3>
 <p>Take $\tilde{Q} = (1+i)e_0+e_1+2e_2$, the generic element of the table above. Its polar representation, computed in the companion article, is</p>
@@ -503,7 +503,7 @@ $$</p>
 <td>Cartan modulus, Hermitian positive, and unitary factor</td>
 </tr>
 <tr>
-<td>$\bar{\cdot}$, $^*$, $\dagger$</td>
+<td>${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$</td>
 <td>quaternion, complex and Hermitian conjugation</td>
 </tr>
 </tbody>

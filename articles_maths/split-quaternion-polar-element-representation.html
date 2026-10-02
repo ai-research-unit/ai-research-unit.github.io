@@ -63,9 +63,9 @@ $$</p>
 <p>$$
 e_1^2 = -1, \qquad e_2^2 = +1, \qquad e_3 = e_1e_2, \qquad e_1e_2 = -e_2e_1,
 $$</p>
-<p>a general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, the split-quaternion norm is</p>
+<p>a general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, the split-quaternion norm is</p>
 <p>$$
-N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2+q_1^2-q_2^2-q_3^2,
+N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2-q_2^2-q_3^2,
 $$</p>
 <p>the identification with $\mathrm{Cl}_{1,1}$ and with $M_2(\mathbb{R})$ is the corpus's, and the element is <strong>timelike</strong> when $N(\tilde q) > 0$, <strong>spacelike</strong> when $N(\tilde q) < 0$ and <strong>lightlike</strong> when $N(\tilde q) = 0$. No physics is invoked.</p>
 <h2 id="the-algebra-and-its-two-involutions">The Algebra and Its Two Involutions</h2>
@@ -104,10 +104,10 @@ $$</p>
 \{\tilde q : \tilde q^{\tau} = \tilde q\} = \operatorname{span}\{1, e_2, e_3\},
 $$</p>
 <p>the three-dimensional subspace of symmetric matrix images, and its anti-fixed space is the line $\mathbb{R}e_1$ of antisymmetric images.</p>
-<p>The transpose involution is distinct from the conjugation that defines the split-quaternion norm, $\bar{\cdot}$, which reads $\tilde q \mapsto q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and negates all three vector units. Both are anti-automorphisms and both fix the scalars; they differ in the sign they give $e_2$ and $e_3$, and this difference is what makes one of them usable here and the other not.</p>
+<p>The transpose involution is distinct from the conjugation that defines the split-quaternion norm, ${}^{\natural}$, which reads $\tilde q \mapsto q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and negates all three vector units. Both are anti-automorphisms and both fix the scalars; they differ in the sign they give $e_2$ and $e_3$, and this difference is what makes one of them usable here and the other not.</p>
 <h3 id="why-the-conjugation-that-defines-the-split-quaternion-norm-cannot-serve">Why the Conjugation That Defines the Split-Quaternion Norm Cannot Serve</h3>
 <p>A polar representation needs a factor that is, in a definite sense, positive. In the matrix picture the positive factor is the symmetric positive definite square root of $XX^{T}$, and the form $XX^{T}$ is positive definite for every invertible $X$ by construction, since $v^{T}XX^{T}v = |X^{T}v|^2 > 0$ for $v \neq 0$ when $X$ is invertible.</p>
-<p>The algebra's own quadratic form does not do this job. For any $\tilde q$ one has $\tilde q\bar{\tilde q} = N(\tilde q)$, a real scalar, and it is negative whenever $\tilde q$ is spacelike: for $\tilde q = e_3$, for instance, $\tilde q\bar{\tilde q} = N(e_3) = -1$. An object with negative scalar value cannot be a positive factor, and there is no way to repair the defect by a sign, since the sign varies over the algebra. The positive object must therefore be built from the transpose involution instead:</p>
+<p>The algebra's own quadratic form does not do this job. For any $\tilde q$ one has $\tilde q\tilde{q}^{\natural} = N(\tilde q)$, a real scalar, and it is negative whenever $\tilde q$ is spacelike: for $\tilde q = e_3$, for instance, $\tilde q\tilde{q}^{\natural} = N(e_3) = -1$. An object with negative scalar value cannot be a positive factor, and there is no way to repair the defect by a sign, since the sign varies over the algebra. The positive object must therefore be built from the transpose involution instead:</p>
 <p>$$
 \Sigma(\tilde q) = \tilde q\,\tilde q^{\tau},
 $$</p>
@@ -349,7 +349,7 @@ $$</p>
 <td>a split quaternion</td>
 </tr>
 <tr>
-<td>$\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$</td>
+<td>$\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$</td>
 <td>the conjugation that defines the split-quaternion norm</td>
 </tr>
 <tr>
@@ -357,7 +357,7 @@ $$</p>
 <td>the transpose involution, the image of the matrix transpose</td>
 </tr>
 <tr>
-<td>$N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2+q_1^2-q_2^2-q_3^2$</td>
+<td>$N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$</td>
 <td>the split-quaternion norm, of signature $(2,2)$</td>
 </tr>
 <tr>

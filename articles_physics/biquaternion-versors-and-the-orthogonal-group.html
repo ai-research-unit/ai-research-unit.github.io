@@ -55,15 +55,15 @@
 <p>The biquaternion algebra is the even part of the Clifford algebra of Minkowski space, and that one fact decides which isometries of the norm the framework can carry. Every operator the algebra supplies is built from one element on each side, so it is an even element of the envelope, and an even element composes an even number of reflections; the isometries it realises are the proper orthochronous Lorentz transformations and no others. The reflections are odd. They lie in the odd slot of the Clifford algebra, a second copy of the algebra sitting beside it, which the algebra does not contain. The orthogonal group is an object of the biquaternion vocabulary, read on the Minkowski sector; the Pin group is not, because its elements include the odd ones, and it belongs to the Clifford envelope rather than to the algebra. Physically this is the statement that the continuous group of rotors, which is connected, cannot reach a discrete symmetry: parity and time reversal are not rotor conjugations, and are obtained from the algebra only by the two discrete operations or from the odd slot of the envelope.</p>
 <p>This article works the biquaternion case of the Clifford group. It fixes the two slots of the envelope and identifies the odd slot as a copy of the algebra containing the Minkowski space; it reads the grading of the versors by the parity of their length, which is the reflection count; it tabulates the four components of $O(1,3)$ against the operations that reach them; it identifies the volume element with the central scalar imaginary up to sign and shows that it acts on Minkowski space as minus the identity through the inner automorphism while acting as the identity through the sandwich; and it separates the two involutions in play, the Hermitian dagger of the algebra and the Clifford conjugation of the envelope, which agree on the real-quaternion slice and nowhere else.</p>
 <p>The general theory is cited and not restated. The Clifford group, its norm, the groups Pin and Spin, the signed inner conjugation $\mathrm{Ad}^{\alpha}_{U}(v)=\alpha(U)vU^{-1}$, the reflection $\rho_u(v)=-uvu^{-1}$ and the Cartan–Dieudonné theorem are the general Clifford articles. The even-part identification $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$, the dictionary of the generators and the volume element are <em>The Clifford Structure of the Biquaternion Algebra</em> and <em>The Dirac Algebra and Biquaternions — A Dictionary</em>. The parity grading of the Dirac algebra by reflection count, the frame $\gamma^{0}$, the exchange of chirality by the odd part and the statement that a reflection has no biquaternion representative are <em>The Reflection and the Rotation in Biquaternionic Form</em>; the grading of the ambient algebra, with the twist as the conjugation by the volume element and the composition of two odd steps, is <em>The Graded Algebra, Fermion Parity and the Two Sectors with Signed Inner Conjugation in Biquaternionic Form</em>; what is added here is where the odd versors live and which components of the orthogonal group the operations of the algebra reach. The sandwich, its kernel and the contrast with the inner automorphism are <em>The Sandwich Action in Subspaces</em> and <em>Biquaternion Rotations and Lorentz Transformations</em>. The rotor, the double covers and the Lorentz action are <em>Biquaternion Rotations and Lorentz Transformations</em> and <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>. The four foundational articles are <em>Introduction to the Biquaternion Universe</em>, <em>Conventions in the Biquaternion Universe</em>, <em>The Hermitian Subspace M+ as the Informational Sector</em> and <em>The Anti-Hermitian Subspace M- as the Material Sector</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The products are $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$ and $e_k^2=-e_0$. The norm and its polar form are $N(\tilde{Q})=\sum_\mu Q_\mu^2=\tilde{Q}\bar{\tilde{Q}}$ and $B(\tilde{P},\tilde{Q})=\sum_\mu P_\mu Q_\mu$. The quaternion conjugation is $\bar{\tilde{Q}}=Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$, the complex conjugation $\tilde{Q}^{*}$ conjugates the four coefficients, and the Hermitian conjugation is their composite, $\tilde{Q}^{\dagger}=\bar{\tilde{Q}}^{*}$; the fixed space of ${}^{\dagger}$ is the Hermitian sector $\mathbb{M}_+$ and its anti-fixed space the anti-Hermitian sector $\mathbb{M}_-$. The Clifford generators are the Dirac matrices of the series' mostly-minus metric, $g=\mathrm{diag}(+1,-1,-1,-1)$, so that $(\gamma^{0})^2=+I$ and $(\gamma^{k})^2=-I$; the dictionary is $e_1\mapsto\gamma^{2}\gamma^{3}$, $e_2\mapsto\gamma^{3}\gamma^{1}$, $e_3\mapsto\gamma^{1}\gamma^{2}$, $i\mapsto-\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}$. The real-quaternion slice $\mathbb{H}_{\mathbb{B}}$ is the set of elements with four real coefficients.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The products are $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$ and $e_k^2=-e_0$. The norm and its polar form are $N(\tilde{Q})=\sum_\mu Q_\mu^2=\tilde{Q}\tilde{Q}^{\natural}$ and $B(\tilde{P},\tilde{Q})=\sum_\mu P_\mu Q_\mu$. The quaternion conjugation is $\tilde{Q}^{\natural}=Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$, the complex conjugation $\tilde{Q}^{*}$ conjugates the four coefficients, and the Hermitian conjugation is their composite, \tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}; the fixed space of ${}^{*}$ is the Hermitian sector $\mathbb{M}_+$ and its anti-fixed space the anti-Hermitian sector $\mathbb{M}_-$. The Clifford generators are the Dirac matrices of the series' mostly-minus metric, $g=\mathrm{diag}(+1,-1,-1,-1)$, so that $(\gamma^{0})^2=+I$ and $(\gamma^{k})^2=-I$; the dictionary is $e_1\mapsto\gamma^{2}\gamma^{3}$, $e_2\mapsto\gamma^{3}\gamma^{1}$, $e_3\mapsto\gamma^{1}\gamma^{2}$, $i\mapsto-\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}$. The real-quaternion slice $\mathbb{H}_{\mathbb{B}}$ is the set of elements with four real coefficients.</p>
 <h2 id="the-form-and-its-isometries">The Form and its Isometries</h2>
 <p><strong>Definition.</strong> The two sectors of the algebra carry the two quadratic forms of the framework. The Hermitian sector is
 $$
-\mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{\dagger}=\tilde{Q}\}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\},
+\mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\},
 $$
 of real dimension four, and the biquaternion norm restricts to it with signature $(1,3)$: for $\tilde{Q}=te_0+i\mathbf{u}$ with $t\in\mathbb{R}$ and $\mathbf{u}\in\mathbb{R}^3$ one has $N(\tilde{Q})=t^2-\lvert\mathbf{u}\rvert^2$. The anti-Hermitian sector is the mirror,
 $$
-\mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{\dagger}=-\tilde{Q}\}=\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\},
+\mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\}=\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\},
 $$
 and the norm restricts to it with signature $(3,1)$.</p>
 <p><strong>Physical reading.</strong> $\mathbb{M}_-$ is the material sector, the space-time of the framework, whose coordinate is the $ict$ one; $\mathbb{M}_+$ is the informational sector. The Lorentz group acts on both, and its action on the material sector is the change of inertial frame. The two sectors carry the two overall signs of the same form, and the statement below is the same for both with the roles of the timelike and spacelike directions exchanged.</p>
@@ -104,11 +104,11 @@ The only part of the Pin group that is an object of the biquaternion algebra is 
 <h2 id="what-the-algebra-reaches-on-the-minkowski-sector">What the Algebra Reaches on the Minkowski Sector</h2>
 <p><strong>Theorem (the sandwich of a unit is proper orthochronous).</strong> Let $\tilde{Q}\in\mathbb{B}$ with $\lvert N(\tilde{Q})\rvert=1$, and let
 $$
-\mathrm{H}_{\tilde{Q}}(U)=\tilde{Q}U\tilde{Q}^{\dagger}
+\mathrm{H}_{\tilde{Q}}(U)=\tilde{Q}U\tilde{Q}^{*}
 $$
 be the rotor conjugation of <em>Biquaternion Rotations and Lorentz Transformations</em>. Then the restriction of $\mathrm{H}_{\tilde{Q}}$ to the Minkowski sector is a linear isometry of signature $(1,3)$ of determinant $+1$ and of positive time orientation. Conversely every proper orthochronous Lorentz transformation is the restriction of a conjugation of this kind, and the map from the norm-one group $\mathbb{B}^{\times}_1$ to $SO^{+}(1,3)$ is two-to-one with kernel $\{\pm e_0\}$.</p>
 <p><strong>Proof.</strong> Under the matrix realisation the conjugation is $X\mapsto M X M^{\dagger}$ with $M=\Phi(\tilde{Q})$, which is the standard action of $SL(2,\mathbb{C})$ on the Hermitian matrices and is a linear isometry of signature $(1,3)$. The condition $\lvert N(\tilde{Q})\rvert=1$ is $\lvert\det M\rvert=1$, and an invertible $M$ with $\lvert\det M\rvert=1$ differs from an element of $SL(2,\mathbb{C})$ by a phase, $M=e^{i\theta}M_0$ with $\det M_0=1$; the phase cancels because $MM^{\dagger}=M_0M_0^{\dagger}$, so the map is that of $M_0$ and is proper orthochronous. The converse and the kernel are the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$ of <em>Biquaternion Rotations and Lorentz Transformations</em>.</p>
-<p><strong>Remark (the isometry condition is exactly the unit norm).</strong> The conjugation multiplies the norm by $\lvert N(\tilde{Q})\rvert^{2}$, since $\tilde{Q}^{\dagger}$ has norm $\overline{N(\tilde{Q})}$ and the norm is multiplicative; so $\lvert N(\tilde{Q})\rvert=1$ is what makes it an isometry of the form, and a zero divisor generates nothing, having no inverse. The series works on the norm-one slice $N=1$, which parametrises the same operators because $N(i\tilde{Q})=-N(\tilde{Q})$ and the operator is blind to the scalar imaginary.</p>
+<p><strong>Remark (the isometry condition is exactly the unit norm).</strong> The conjugation multiplies the norm by $\lvert N(\tilde{Q})\rvert^{2}$, since $\tilde{Q}^{*}$ has norm $\overline{N(\tilde{Q})}$ and the norm is multiplicative; so $\lvert N(\tilde{Q})\rvert=1$ is what makes it an isometry of the form, and a zero divisor generates nothing, having no inverse. The series works on the norm-one slice $N=1$, which parametrises the same operators because $N(i\tilde{Q})=-N(\tilde{Q})$ and the operator is blind to the scalar imaginary.</p>
 <p><strong>Theorem (the four components, and the two discrete operations).</strong> On the Minkowski sector the following operations are isometries, and they fall in the four components of $O(1,3)$:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -121,25 +121,25 @@ be the rotor conjugation of <em>Biquaternion Rotations and Lorentz Transformatio
 </thead>
 <tbody>
 <tr>
-<td>$U\mapsto \tilde{Q}U\tilde{Q}^{\dagger}$, with $\lvert N(\tilde{Q})\rvert=1$</td>
+<td>$U\mapsto \tilde{Q}U\tilde{Q}^{*}$, with $\lvert N(\tilde{Q})\rvert=1$</td>
 <td>$+1$</td>
 <td>$+$</td>
 <td>the identity component $SO^{+}(1,3)$</td>
 </tr>
 <tr>
-<td>$U\mapsto \tilde{Q}\bar{U}\tilde{Q}^{\dagger}$, the argument quaternion-conjugated</td>
+<td>$U\mapsto \tilde{Q}\bar{U}\tilde{Q}^{*}$, the argument quaternion-conjugated</td>
 <td>$-1$</td>
 <td>$+$</td>
 <td>the improper orthochronous coset</td>
 </tr>
 <tr>
-<td>$U\mapsto -\tilde{Q}U\tilde{Q}^{\dagger}$, the result negated</td>
+<td>$U\mapsto -\tilde{Q}U\tilde{Q}^{*}$, the result negated</td>
 <td>$+1$</td>
 <td>$-$</td>
 <td>the proper anti-orthochronous coset</td>
 </tr>
 <tr>
-<td>$U\mapsto -\tilde{Q}\bar{U}\tilde{Q}^{\dagger}$, both at once</td>
+<td>$U\mapsto -\tilde{Q}\bar{U}\tilde{Q}^{*}$, both at once</td>
 <td>$-1$</td>
 <td>$-$</td>
 <td>the improper anti-orthochronous coset</td>
@@ -160,27 +160,27 @@ be the volume element of $\mathrm{Cl}_{1,3}$, written $\Omega$ in the Clifford a
 $$
 \mathrm{Ad}^{\alpha}_{\Omega}(v)=\Omega v\Omega^{-1}=-v ,
 $$
-so that $\Omega$ acts on the Minkowski space as $-\mathrm{id}$, the product of parity with time reversal, of determinant $+1$ and anti-orthochronous. On the Minkowski sector, the copy of the same space inside the algebra, the conjugation by the corresponding element, the central scalar imaginary, is the identity, since $i$ is central and $i^{\dagger}=-i$.</p>
+so that $\Omega$ acts on the Minkowski space as $-\mathrm{id}$, the product of parity with time reversal, of determinant $+1$ and anti-orthochronous. On the Minkowski sector, the copy of the same space inside the algebra, the conjugation by the corresponding element, the central scalar imaginary, is the identity, since $i$ is central and $i^{*}=-i$.</p>
 <p><strong>Proof.</strong> The volume element of an even-dimensional Clifford algebra anticommutes with every generator: moving $\gamma^{j}$ past the monomial $\Omega$, in which it occurs, costs the sign $(-1)^{3}$, so $\gamma^{j}\Omega=-\Omega\gamma^{j}$, and the same for every generator. Hence $\Omega v\Omega^{-1}=-\Omega\Omega^{-1}v=-v$. For the second statement, $i$ commutes with everything, so $\mathrm{H}_{i}(U)=iUi^{\dagger}=iU(-i)=-i^2U=U$.</p>
 <p><strong>Remark (verified).</strong> Both statements were recomputed on the matrix model: the signed inner conjugation of $\Omega$ gave $-v$ on all four generators, and the conjugation by $\pm iI$ gave the identity on the Minkowski sector.</p>
 <p><strong>Physical reading: the volume element and chirality.</strong> The volume element is central in the even part, hence invisible to the rotor conjugation, which is why the rotor conjugation alone carries no chirality: multiplication by $\Omega$ on an even element is multiplication by $-i$ on the biquaternion, so the central scalar imaginary is the pseudoscalar read on the algebra. The chirality operator proper is $\gamma^5=i\Omega$, the volume element up to the factor that makes it an involution rather than a complex structure, as <em>The Clifford Structure of the Biquaternion Algebra</em> records. On the physical space the volume element is not invisible: it anticommutes with the generators and acts on the coordinates as $-\mathrm{id}$, the combined parity and time reversal $PT$, so the same element is the $PT$ of the space and the pseudoscalar of the spinor module.</p>
 <p><strong>Remark (what this says about the determinant-one components).</strong> The volume element is an element of the algebra, and it is even, so the anti-orthochronous part of $SO(1,3)$ is reached by an element of the algebra after all; but it is reached by the inner automorphism and not by the conjugation, and the conjugation by the same element is the identity because the scalar imaginary is central. The algebra's elements therefore supply more of the orthogonal group than the algebra's operator does, and the difference is exactly the replacement of the dagger by the inverse.</p>
 <h2 id="the-two-involutions">The Two Involutions</h2>
-<p><strong>Theorem (the dagger is not the Clifford conjugation).</strong> Let $\mathrm{rev}$ be the reversion of $\mathrm{Cl}_{1,3}$, the anti-automorphism fixing every vector; on the even slot it is the Clifford conjugation. Restricted to $\mathbb{B}$ the two involutions ${}^{\dagger}$ and $\mathrm{rev}$ are different: $\mathrm{rev}$ fixes $e_0$, negates $e_1,e_2,e_3$, fixes $i$ and $\Omega$, and negates the boosts $ie_k$, while ${}^{\dagger}$ fixes $e_0$, negates $e_1,e_2,e_3$, negates $i$, and fixes the boosts $ie_k$. Their composite is the real-structure automorphism $\sigma$ of the algebra, the map $z\otimes h\mapsto\bar{z}\otimes h$ that conjugates the coefficients and fixes the quaternion units,
+<p><strong>Theorem (the dagger is not the Clifford conjugation).</strong> Let $\mathrm{rev}$ be the reversion of $\mathrm{Cl}_{1,3}$, the anti-automorphism fixing every vector; on the even slot it is the Clifford conjugation. Restricted to $\mathbb{B}$ the two involutions ${}^{*}$ and $\mathrm{rev}$ are different: $\mathrm{rev}$ fixes $e_0$, negates $e_1,e_2,e_3$, fixes $i$ and $\Omega$, and negates the boosts $ie_k$, while ${}^{*}$ fixes $e_0$, negates $e_1,e_2,e_3$, negates $i$, and fixes the boosts $ie_k$. Their composite is the real-structure automorphism $\sigma$ of the algebra, the map $z\otimes h\mapsto\bar{z}\otimes h$ that conjugates the coefficients and fixes the quaternion units,
 $$
-\mathrm{rev}={}^{\dagger}\circ\sigma .
+\mathrm{rev}={}^{*}\circ\sigma .
 $$</p>
 <p><strong>Proof.</strong> The dictionary sends $e_k$ to a spatial bivector and $i$ to $-\Omega$. Reversion negates every bivector, so it negates $e_k$ and $ie_k$, and it fixes the identity and the degree-four volume element. The Hermitian dagger negates the coefficients of $e_1,e_2,e_3$ and of $i$, and fixes $i$ times a quaternion unit. The two agree on $e_0$ and on $e_k$, and differ on $i$ and on $ie_k$; the composite therefore fixes the quaternion units and negates $i$, which is the automorphism $z\otimes h\mapsto\bar{z}\otimes h$.</p>
-<p><strong>Remark (verified).</strong> The composite was recomputed: the reversion of the volume element is the volume element, the reversion of $ie_1$ is $-ie_1$, the dagger of $i$ is $-i$, and the identity $\mathrm{rev}={}^{\dagger}\circ\sigma$ held on random elements of the algebra to machine precision. The equality $\mathrm{rev}(\tilde{Q})=\tilde{Q}^{\dagger}$ holds exactly on the real-quaternion slice, since it is equivalent to $\sigma$ fixing the element and $\sigma$ conjugates the four coefficients.</p>
+<p><strong>Remark (verified).</strong> The composite was recomputed: the reversion of the volume element is the volume element, the reversion of $ie_1$ is $-ie_1$, the dagger of $i$ is $-i$, and the identity $\mathrm{rev}={}^{*}\circ\sigma$ held on random elements of the algebra to machine precision. The equality $\mathrm{rev}(\tilde{Q})=\tilde{Q}^{*}$ holds exactly on the real-quaternion slice, since it is equivalent to $\sigma$ fixing the element and $\sigma$ conjugates the four coefficients.</p>
 <p><strong>Corollary (they agree on the real-quaternion slice).</strong> On $\mathbb{H}_{\mathbb{B}}$, the elements with four real coefficients, the coefficient conjugation is the identity and the two involutions coincide. Consequently on that slice the rotor conjugation is the inner automorphism scaled by the norm,
 $$
 \mathrm{H}_{\tilde{Q}}=N(\tilde{Q})\cdot\mathrm{Ad}_{\tilde{Q}},\qquad
 \mathrm{Ad}_{\tilde{Q}}(U)=\tilde{Q}U\tilde{Q}^{-1},
 $$
 and off the slice the two differ, the difference being the coefficient conjugation of the right factor.</p>
-<p><strong>Proof.</strong> The inverse is $\tilde{Q}^{-1}=\bar{\tilde{Q}}/N(\tilde{Q})$, so $N(\tilde{Q})\mathrm{Ad}_{\tilde{Q}}(U)=\tilde{Q}U\bar{\tilde{Q}}$, which is the rotor conjugation for every $\tilde{Q}$ with $\bar{\tilde{Q}}=\tilde{Q}^{\dagger}$, that is on the real-quaternion slice and only there.</p>
+<p><strong>Proof.</strong> The inverse is $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/N(\tilde{Q})$, so $N(\tilde{Q})\mathrm{Ad}_{\tilde{Q}}(U)=\tilde{Q}U\tilde{Q}^{\natural}$, which is the rotor conjugation for every $\tilde{Q}$ with $\tilde{Q}^{\natural}=\tilde{Q}^{*}$, that is on the real-quaternion slice and only there.</p>
 <p><strong>Remark.</strong> The rotor conjugation is the dagger-paired operator and the inner automorphism the inverse-paired one, and the difference is physical: the dagger is the adjoint of the spinor form of the framework, and it is not the Clifford conjugation of the Dirac algebra. The two agree where the four coefficients are real, that is on the real-quaternion slice $\mathbb{H}_{\mathbb{B}}$ which carries the rotation rotors, and differ on the boosts, whose coefficients carry the imaginary unit.</p>
-<p><strong>Remark (the dagger is the Euclidean reversion).</strong> The involution ${}^{\dagger}$ is the reversion of a different Clifford structure on the same algebra: the positive definite one, $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, in which the vectors are the imaginary quaternions $ie_k$, and which is the structure of <em>The Clifford Structure of the Biquaternion Algebra</em>. Reversion fixes vectors, so it fixes the $ie_k$, and it negates the products of three of them, which is why it negates $i$; that is exactly the action of the dagger. The Minkowski reversion is the other one, and the two disagree by the coefficient conjugation and not by a change of basis.</p>
+<p><strong>Remark (the dagger is the Euclidean reversion).</strong> The involution ${}^{*}$ is the reversion of a different Clifford structure on the same algebra: the positive definite one, $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, in which the vectors are the imaginary quaternions $ie_k$, and which is the structure of <em>The Clifford Structure of the Biquaternion Algebra</em>. Reversion fixes vectors, so it fixes the $ie_k$, and it negates the products of three of them, which is why it negates $i$; that is exactly the action of the dagger. The Minkowski reversion is the other one, and the two disagree by the coefficient conjugation and not by a change of basis.</p>
 <h2 id="what-the-algebra-does-not-cover">What the Algebra Does Not Cover</h2>
 <p><strong>The orthogonal group is an object of the algebra; the Pin group is not.</strong> $O(1,3)$ is read on the Minkowski sector, its elements are linear maps of a subspace of the algebra, and the table above exhibits each component as an operation on that subspace. The Pin group is not an object of the algebra: it contains the odd versors, which are the mirrors, and the odd slot of the envelope is a second copy of the algebra rather than a part of it. A row for $\mathrm{Pin}$ in a table of the objects of $\mathbb{B}$ would place an object of $\mathrm{Cl}_{1,3}$ inside $\mathbb{B}$, which is false, and it would give that object two owners, the Clifford articles already owning it.</p>
 <p><strong>What the last cover is.</strong> The double cover the algebra records is the even one, $\mathrm{Spin}(1,3)\to SO^{+}(1,3)$, with kernel $\{\pm e_0\}$; the odd slot records the covers of the improper components, whose mirrors are the odd versors of $\mathrm{Pin}$. The two-to-one cover of the whole orthogonal group by $\mathrm{Pin}$ is a statement about the envelope, and the corresponding statement about the algebra is only about its identity component.</p>
@@ -218,7 +218,7 @@ and off the slice the two differ, the difference being the coefficient conjugati
 </tr>
 <tr>
 <td>$\tilde{Q}$</td>
-<td>An element of $\mathbb{B}$; the rotor conjugation $\mathrm{H}_{\tilde{Q}}(U)=\tilde{Q}U\tilde{Q}^{\dagger}$</td>
+<td>An element of $\mathbb{B}$; the rotor conjugation $\mathrm{H}_{\tilde{Q}}(U)=\tilde{Q}U\tilde{Q}^{*}$</td>
 </tr>
 <tr>
 <td>$\rho_u(v)=-uvu^{-1}$</td>
@@ -234,11 +234,11 @@ and off the slice the two differ, the difference being the coefficient conjugati
 </tr>
 <tr>
 <td>$\mathrm{rev},\sigma$</td>
-<td>The reversion of $\mathrm{Cl}_{1,3}$ fixing every vector; the automorphism conjugating the coefficients, $z\otimes h\mapsto\bar{z}\otimes h$; $\mathrm{rev}={}^{\dagger}\circ\sigma$</td>
+<td>The reversion of $\mathrm{Cl}_{1,3}$ fixing every vector; the automorphism conjugating the coefficients, $z\otimes h\mapsto\bar{z}\otimes h$; $\mathrm{rev}={}^{*}\circ\sigma$</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{B}}$</td>
-<td>The real-quaternion slice, four real coefficients; the slice on which ${}^{\dagger}$ and $\mathrm{rev}$ coincide and $\mathrm{H}_{\tilde{Q}}=N(\tilde{Q})\mathrm{Ad}_{\tilde{Q}}$</td>
+<td>The real-quaternion slice, four real coefficients; the slice on which ${}^{*}$ and $\mathrm{rev}$ coincide and $\mathrm{H}_{\tilde{Q}}=N(\tilde{Q})\mathrm{Ad}_{\tilde{Q}}$</td>
 </tr>
 <tr>
 <td>$P,PT$</td>

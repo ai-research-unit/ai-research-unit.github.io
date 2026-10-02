@@ -57,7 +57,7 @@
 <p>$$
 g_{rr} = \frac{1}{1-|\mathbf{r}|^2} = \frac{1}{4\,\mathrm{Sc}\,N(\tilde{\rho})},
 $$</p>
-<p>where $N(\tilde{\rho}) = \tilde{\rho}\bar{\tilde{\rho}} = \tfrac{1}{4}(1-|\mathbf{r}|^2)e_0$ is the biquaternion norm of the state. The two readings of a state are therefore reciprocal: the biquaternion norm measures how far the state lies inside the future cone, and the Fisher information measures how sharply a displacement of that position can be detected. The Fisher information is minimal at the maximally mixed state, where the biquaternion norm is largest, and it diverges on the boundary, where the biquaternion norm vanishes.</p>
+<p>where $N(\tilde{\rho}) = \tilde{\rho}\tilde{\rho}^{\natural} = \tfrac{1}{4}(1-|\mathbf{r}|^2)e_0$ is the biquaternion norm of the state. The two readings of a state are therefore reciprocal: the biquaternion norm measures how far the state lies inside the future cone, and the Fisher information measures how sharply a displacement of that position can be detected. The Fisher information is minimal at the maximally mixed state, where the biquaternion norm is largest, and it diverges on the boundary, where the biquaternion norm vanishes.</p>
 <p>The boundary is the <strong>zero-divisor cone</strong>. The reciprocity therefore says that the states of maximal information — the states in which an arbitrarily small change of the Bloch radius is detected with arbitrarily high precision — are exactly the pure states, that is, the non-invertible elements of the algebra. The analytic singularity of the logarithm used in the companion article <em>Coarse-Graining and the Biquaternion Entropy Functional</em>, the vanishing of the biquaternion norm, and the divergence of the Fisher information are three descriptions of the same locus.</p>
 <p>The article proceeds as follows. First the biquaternion norm is set down as a quadratic form on states, together with the trace pairing and the Hilbert–Schmidt distance that it induces. Then the classical Fisher information is defined and evaluated for two families: the <strong>spectral family</strong>, whose distribution is the pair of eigenvalues of the state, and the <strong>measurement family</strong> obtained by reading the state along a fixed axis. The spectral family gives the metric $g_{ij} = \hat{r}_i\hat{r}_j/(1-|\mathbf{r}|^2)$, of rank one, whose nonzero eigenvalue is the reciprocal of the biquaternion norm; the measurement family gives the general formula. The Fisher information is then identified as the Hessian of the relative entropy, and the Fisher–Rao geometry of the Bloch ball is worked out. The article closes with the bound supplied by the quantum Fisher information, cited from the standard literature and assigned to the sibling quantum category, and with a statement of what the framework derives and what it imports.</p>
 <p>The treatment is <strong>classical</strong>. The Fisher information used here is the classical one of a family of probability distributions, and the distributions are the outcomes of a fixed classical measurement on the state. The quantum Fisher information appears only at the end, as the upper bound over all measurements; it is a standard result, it is cited as such, and its biquaternion development belongs to the sibling quantum category rather than here.</p>
@@ -68,7 +68,7 @@ $$</p>
 <p>$$
 \tilde{\rho} = \tfrac{1}{2}\left(e_0 + i\,\mathbf{r}\right), \qquad \mathbf{r} \in \mathbb{R}^3, \quad |\mathbf{r}| \le 1 ,
 $$</p>
-<p>with $\mathrm{Tr}(\tilde{\rho}) = 1$ and purity $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1+|\mathbf{r}|^2)$. Its biquaternion norm is the quadratic form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ evaluated on it,</p>
+<p>with $\mathrm{Tr}(\tilde{\rho}) = 1$ and purity $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1+|\mathbf{r}|^2)$. Its biquaternion norm is the quadratic form $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ evaluated on it,</p>
 <p>$$
 N(\tilde{\rho}) = \tfrac{1}{4}\left(1 - |\mathbf{r}|^2\right)e_0 .
 $$</p>
@@ -275,7 +275,7 @@ $$</p>
 <td>Trace, $\mathrm{Tr}(e_0)=2$</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$</td>
+<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>

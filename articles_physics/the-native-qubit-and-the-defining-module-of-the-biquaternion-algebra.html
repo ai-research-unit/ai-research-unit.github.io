@@ -70,9 +70,9 @@ $$</p>
 <p>$$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C},
 $$</p>
-<p>and the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q}) = 2Q_0$. The four conjugations of the algebra — quaternion conjugation, complex conjugation, their composition, and the identity — are fixed in <em>Conventions in the Biquaternion Universe</em>. For the present purpose only two are needed: the quaternion conjugate $\bar{\tilde{Q}} = Q_0e_0 - Q_1e_1-Q_2e_2-Q_3e_3$, and the Hermitian conjugate</p>
+<p>and the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q}) = 2Q_0$. The four conjugations of the algebra — quaternion conjugation, complex conjugation, their composition, and the identity — are fixed in <em>Conventions in the Biquaternion Universe</em>. For the present purpose only two are needed: the quaternion conjugate $\tilde{Q}^{\natural} = Q_0e_0 - Q_1e_1-Q_2e_2-Q_3e_3$, and the Hermitian conjugate</p>
 <p>$$
-\tilde{Q}^\dagger = \bigl(\bar{\tilde{Q}}\bigr)^{*} = Q_0^{*}e_0 - Q_1^{*}e_1 - Q_2^{*}e_2 - Q_3^{*}e_3 ,
+\tilde{Q}^{*} = \bigl(\tilde{Q}^{\natural}\bigr)^{*} = Q_0^{*}e_0 - Q_1^{*}e_1 - Q_2^{*}e_2 - Q_3^{*}e_3 ,
 $$</p>
 <p>which is an anti-linear involution of the algebra.</p>
 <h3 id="the-defining-representation">The defining representation</h3>
@@ -84,7 +84,7 @@ $$</p>
 <p>with $i \mapsto iI_2$ on the central scalar and $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices. The assignment is fixed by <em>Quantum Mechanics in Biquaternionic Form</em> and is the one used throughout this subcategory. Two consequences are worth recording:</p>
 <ul>
 <li>the Hermitian basis of $\mathbb{M}_+$, namely $\{e_0, ie_1, ie_2, ie_3\}$, maps to $\{I_2,\sigma_1,\sigma_2,\sigma_3\}$, so the isomorphism sends traceless Hermitian biquaternions to traceless Hermitian matrices;</li>
-<li>the involution $\dagger$ maps to the matrix Hermitian conjugate.</li>
+<li>the involution ${}^{*}$ maps to the matrix Hermitian conjugate.</li>
 </ul>
 <p>That a complex associative algebra with these generators is isomorphic to $M_2(\mathbb{C})$ is Wedderburn's theorem for $\mathbb{C}$: $\mathbb{B}$ is a finite-dimensional simple complex algebra, hence a full matrix algebra over its unique simple module's endomorphism ring, which here is $\mathbb{C}$.</p>
 <h3 id="the-module-in-components">The module in components</h3>
@@ -105,8 +105,8 @@ $$</p>
 <h3 id="the-hermitian-subspace">The Hermitian subspace</h3>
 <p>The Hermitian and anti-Hermitian subspaces are defined by the involution:</p>
 <p>$$
-\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^\dagger = \tilde{Q}\}, \qquad
-\mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^\dagger = -\tilde{Q}\}, \qquad
+\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\}, \qquad
+\mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\}, \qquad
 \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_- .
 $$</p>
 <p>Both are four-dimensional over $\mathbb{R}$, and multiplication by the central $i$ exchanges them, $i\,\mathbb{M}_+ = \mathbb{M}_-$. Elements of the form $\tilde{H} = h_0e_0 + i\mathbf{h}$ with $h_0\in\mathbb{R}$ and $\mathbf{h}\in\mathbb{R}^3$ span $\mathbb{M}_+$; the corresponding matrices are $h_0I_2 + \mathbf{h}\cdot\boldsymbol{\sigma}$, the general Hermitian $2\times2$ matrix. This is the sense in which states and observables live in $\mathbb{M}_+$: $\mathbb{M}_+$ <strong>is</strong> the real vector space of Hermitian operators of the two-level system, carried by the algebra rather than postulated beside it.</p>
@@ -169,7 +169,7 @@ $$</p>
 <h3 id="the-biquaternion-norm-on-the-module">The biquaternion norm on the module</h3>
 <p>The biquaternion norm of the algebra is</p>
 <p>$$
-N(\tilde{Q}) = \tilde{Q}\,\bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2 .
+N(\tilde{Q}) = \tilde{Q}\,\tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 .
 $$</p>
 <p>On $\mathbb{M}_+$, writing $\tilde{Q} = q_0e_0 + i\mathbf{q}$ with real $q_0,\mathbf{q}$, it evaluates to</p>
 <p>$$
@@ -258,11 +258,11 @@ $$</p>
 <td>Trace</td>
 </tr>
 <tr>
-<td>$\tilde{Q}^\dagger$</td>
+<td>$\tilde{Q}^{*}$</td>
 <td>Hermitian conjugate (anti-linear involution)</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$</td>
+<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>

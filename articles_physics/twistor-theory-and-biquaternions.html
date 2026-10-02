@@ -63,7 +63,7 @@ $$</p>
 <p>where $\omega^A$ is a left-handed (unprimed) two-component spinor and $\pi_{A'}$ a right-handed (primed) one. <strong>Projective twistor space</strong> is $\mathbb{PT} = \mathbb{CP}^3$, whose points are complex lines of twistors. Thus a point of $\mathbb{PT}$ is represented by a pair of two-component spinors, not by a single one: the four components of $Z$ are two spinor components of each chirality.</p>
 <p>Twistor space carries a nondegenerate Hermitian form of signature $(2,2)$. Writing $T = S\oplus\bar{S}$ for the splitting into the unprimed and primed parts, the form is</p>
 <p>$$
-h(Z,Z') = \omega^\dagger \pi' + \pi^\dagger \omega',
+h(Z,Z') = \omega^{*} \pi' + \pi^\dagger \omega',
 $$</p>
 <p>and the group preserving it is $U(2,2)$. Its determinant-one subgroup $SU(2,2)$ is the double cover of the conformal group $SO(2,4)$ of compactified Minkowski space. The conformal group acts <strong>linearly</strong> on $T$; this linearisation of an action that is nonlinear on spacetime is the technical heart of the programme.</p>
 <p>The link to spacetime is the <strong>incidence relation</strong>. A point of complexified Minkowski space is a $2\times 2$ complex matrix $x^{AA'}$ — Hermitian exactly when the point is real — and it cuts out a two-dimensional complex subspace of $T$, hence a projective line $L_x \subset \mathbb{PT}$, by</p>
@@ -102,7 +102,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{B}$</td>
-<td>conjugation, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$</td>
+<td>conjugation, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$</td>
 <td>$S\otimes\bar{S} = (\tfrac12,\tfrac12)$</td>
 </tr>
 <tr>
@@ -121,7 +121,7 @@ $$</p>
 <p>A related caution concerns the symbol $i$. In the framework, $i$ is the <strong>scalar imaginary</strong> of $\mathbb{B}$, and its appearance in the time coordinate $ict$ is what makes the signature Lorentzian. In the incidence relation $\omega = ix\pi$, $i$ is the complex unit of twistor space, and its role is to make the line $L_x$ a real line when $x$ is Hermitian. The two complex structures are not the same structure, and the projective coincidence $\mathbb{P}(\mathbb{B})\cong\mathbb{PT}$ does not equate them.</p>
 <h2 id="the-null-cone-a-genuine-agreement">The Null Cone: A Genuine Agreement</h2>
 <p>The two programmes do agree on one substantive geometric fact: the null cone is the fundamental object, and it is controlled by the two-component spinor.</p>
-<p>On the biquaternion side, the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$ vanishes exactly on the zero divisors, and the nonzero null elements are exactly the rank-one matrices. Projectivising, the null cone of $\mathbb{B}$ is a cone over the <strong>Segre quadric</strong> $\mathbb{P}^1\times\mathbb{P}^1 \subset \mathbb{PT}$, and its two rulings are the two families of chiral spinor lines — the primed and unprimed spinor lines. This is the content of the companion article <em>Biquaternion Topology</em>, and it is not repeated here.</p>
+<p>On the biquaternion side, the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$ vanishes exactly on the zero divisors, and the nonzero null elements are exactly the rank-one matrices. Projectivising, the null cone of $\mathbb{B}$ is a cone over the <strong>Segre quadric</strong> $\mathbb{P}^1\times\mathbb{P}^1 \subset \mathbb{PT}$, and its two rulings are the two families of chiral spinor lines — the primed and unprimed spinor lines. This is the content of the companion article <em>Biquaternion Topology</em>, and it is not repeated here.</p>
 <p>On the twistor side, the same projective space and the same spinor lines appear, now carrying the metric. The incidence relation makes the null separation of two points a statement about the intersection of two lines: the null cone at $x$ is swept out by the points $y$ whose lines $L_y$ meet $L_x$, and this is exactly the condition $\det(x-y)=0$. The Klein correspondence is the dictionary between the two descriptions of the same projective geometry.</p>
 <p>Two qualifications keep the agreement honest. First, the quadrics are different objects. The biquaternion norm $N$ is a <strong>complex bilinear</strong> (symmetric) form on $\mathbb{B}\cong\mathbb{C}^4$, and its null cone is a complex quadric; the twistor form $h$ is <strong>Hermitian</strong> of signature $(2,2)$, and its null set is the real cone that defines the conformal structure. They agree in being governed by the spinor and its two chiralities, not in being the same equation. Second, the agreement is at the level of the algebra of spinors and null directions, which is standard; neither programme owns it.</p>
 <h2 id="where-the-aims-diverge">Where the Aims Diverge</h2>
@@ -160,7 +160,7 @@ $$</p>
 \langle \Psi^{\pm}_{\boldsymbol{\xi}}\rangle = i\,\frac{|H|}{|\boldsymbol{\xi} - E|} ,
 $$</p>
 <p>in which the second is the source's <strong>pseudonorm</strong> and not the Euclidean difference: with the amplitude above, that difference is $-|H|^2/|\boldsymbol{\xi} - E|^2$, and the printed value is $i$ times the square root of its negative. The two agree only at $H = 0$. This is stated once here and used in the table below: its pseudonorm column carries the source's values in that convention, except the static entry, which is the Euclidean difference itself.</p>
-<p>Its energy–momentum biquaternion $\Xi = \Psi \circ \Psi^\dagger = W + iP$ has scalar part $1$ — unit energy density — and a purely imaginary vector part carrying the flux:</p>
+<p>Its energy–momentum biquaternion $\Xi = \Psi \circ \Psi^{*} = W + iP$ has scalar part $1$ — unit energy density — and a purely imaginary vector part carrying the flux:</p>
 <p>$$
 \Xi = 1 + i\,\frac{\varpi\,\mathbf{e} - \mathbf{e} \times H}{|\boldsymbol{\xi} - E|},
 \qquad
@@ -234,7 +234,7 @@ $$</p>
 \qquad
 \mathbf{e} = \mathbf{e}_E ,
 $$</p>
-<p>of unit scalar part, squared norm $2$ and vanishing Euclidean difference — $\|\Xi_\omega\| = \sqrt2$, $\langle\Xi_\omega\rangle = 0$, so $N(\Xi_\omega) = 0$ and the energy–momentum biquaternion is itself a zero divisor, as the $H$-twistor's is — and it was checked on four hundred random coefficients and directions to machine precision. The source prints the numerator as $\omega\mathbf{e} + [\mathbf{e}, E]$ with the invariants $\sqrt2$ and $0$, so this is its printed form under the corpus's bracket. <strong>The three printed energy–momentum biquaternions do not share one bracket</strong>, and the collision is worth recording because each is correct in a different one. The travelling formula's printed $[\mathbf{e}, H]$ is the reverse of the corpus's bracket, $[\mathbf{e}, H] = H\times\mathbf{e} = -\mathbf{e}\times H$, as the note above records; the stationary formula's printed $[\mathbf{e}, E]$ is the corpus's bracket itself, $[\mathbf{e}, E] = \mathbf{e}\times E$, as here. Read in the other's convention each one flips the sign of its cross term: the stationary numerator matches $\mathbf{e}\times E$ in $400/400$ random cases and $E\times\mathbf{e}$ in none, and the travelling numerator matches $-(\mathbf{e}\times H)$ in $219/219$ and $+\mathbf{e}\times H$ in none. Nothing but the bracket distinguishes them, so a reader checking the two against one another must pin it first. The static entry is a different matter: the source prints it as $\Xi_0 = 1 + i[\mathbf{e}, \mathbf{e}_E]$ with $\|\Xi_0\| = \sqrt2$ and vanishing pseudonorm, but the amplitude it prints, $\Psi^{0+} = \frac{-1+i}{\sqrt2}\psi^0\,\mathbf{e}_E$, is a <strong>pure vector</strong> — a complex scalar times a real unit vector, with no scalar part — and the product of a pure vector with its own $\dagger$-conjugate is the real scalar $\|v\|^2$ with vanishing vector part. Computed directly, that printed amplitude gives $\Xi_0 = 1$ exactly in $400/400$ cases, not the stated $1 + i[\mathbf{e}, \mathbf{e}_E]$; the stated invariants $\sqrt2$ and $0$ do hold of $1 + i[\mathbf{e}, \mathbf{e}_E]$, whose vector part has unit modulus, but not of the product the printed amplitude forms. The static energy–momentum is therefore a further symptom of the static section, beside the printed potential, and the corpus carries $\Xi_\omega$ above and not a derived $\Xi_0$.</p>
+<p>of unit scalar part, squared norm $2$ and vanishing Euclidean difference — $\|\Xi_\omega\| = \sqrt2$, $\langle\Xi_\omega\rangle = 0$, so $N(\Xi_\omega) = 0$ and the energy–momentum biquaternion is itself a zero divisor, as the $H$-twistor's is — and it was checked on four hundred random coefficients and directions to machine precision. The source prints the numerator as $\omega\mathbf{e} + [\mathbf{e}, E]$ with the invariants $\sqrt2$ and $0$, so this is its printed form under the corpus's bracket. <strong>The three printed energy–momentum biquaternions do not share one bracket</strong>, and the collision is worth recording because each is correct in a different one. The travelling formula's printed $[\mathbf{e}, H]$ is the reverse of the corpus's bracket, $[\mathbf{e}, H] = H\times\mathbf{e} = -\mathbf{e}\times H$, as the note above records; the stationary formula's printed $[\mathbf{e}, E]$ is the corpus's bracket itself, $[\mathbf{e}, E] = \mathbf{e}\times E$, as here. Read in the other's convention each one flips the sign of its cross term: the stationary numerator matches $\mathbf{e}\times E$ in $400/400$ random cases and $E\times\mathbf{e}$ in none, and the travelling numerator matches $-(\mathbf{e}\times H)$ in $219/219$ and $+\mathbf{e}\times H$ in none. Nothing but the bracket distinguishes them, so a reader checking the two against one another must pin it first. The static entry is a different matter: the source prints it as $\Xi_0 = 1 + i[\mathbf{e}, \mathbf{e}_E]$ with $\|\Xi_0\| = \sqrt2$ and vanishing pseudonorm, but the amplitude it prints, $\Psi^{0+} = \frac{-1+i}{\sqrt2}\psi^0\,\mathbf{e}_E$, is a <strong>pure vector</strong> — a complex scalar times a real unit vector, with no scalar part — and the product of a pure vector with its own ${}^{*}$-conjugate is the real scalar $\|v\|^2$ with vanishing vector part. Computed directly, that printed amplitude gives $\Xi_0 = 1$ exactly in $400/400$ cases, not the stated $1 + i[\mathbf{e}, \mathbf{e}_E]$; the stated invariants $\sqrt2$ and $0$ do hold of $1 + i[\mathbf{e}, \mathbf{e}_E]$, whose vector part has unit modulus, but not of the product the printed amplitude forms. The static energy–momentum is therefore a further symptom of the static section, beside the printed potential, and the corpus carries $\Xi_\omega$ above and not a derived $\Xi_0$.</p>
 <p><strong>Generating scalar potentials.</strong> The structural finding of the paper is that the twistors are not constructed by trial: they possess <strong>generating scalar potentials</strong>. The elementary potentials above solve a single scalar equation — in the non-stationary case $(\Box_A + (\mathbf{F},\mathbf{F}) + 2i(\mathbf{F},\nabla))\psi = 0$ and in the stationary case</p>
 <p>$$
 \left(\Delta \pm 2(\mathbf{F},\nabla) + \omega^2 + (\mathbf{F},\mathbf{F})\right)\psi = 0 ,
@@ -298,7 +298,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{M}_+$</td>
-<td>Hermitian subspace (informational sector), fixed points of $\dagger$</td>
+<td>Hermitian subspace (informational sector), fixed points of ${}^{*}$</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{B}}$</td>
@@ -313,7 +313,7 @@ $$</p>
 <td>Complex bilinear cross-product bracket of vector parts (corpus convention; the source's printed $[\cdot,\cdot]$ reverses it in its travelling formula)</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$</td>
+<td>$N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$</td>
 <td>Biquaternion norm (determinant)</td>
 </tr>
 <tr>
@@ -345,7 +345,7 @@ $$</p>
 <td>Projective twistor space</td>
 </tr>
 <tr>
-<td>$h(Z,Z')=\omega^\dagger\pi'+\pi^\dagger\omega'$</td>
+<td>$h(Z,Z')=\omega^{*}\pi'+\pi^\dagger\omega'$</td>
 <td>Hermitian form of signature $(2,2)$ on $T$</td>
 </tr>
 <tr>
@@ -381,7 +381,7 @@ $$</p>
 <td>Elementary $\boldsymbol{\xi}$-twistor's generating scalar potential and the twistor itself</td>
 </tr>
 <tr>
-<td>$\Xi=\Psi\circ\Psi^\dagger=W+iP$</td>
+<td>$\Xi=\Psi\circ\Psi^{*}=W+iP$</td>
 <td>Energy–momentum biquaternion of a twistor</td>
 </tr>
 <tr>

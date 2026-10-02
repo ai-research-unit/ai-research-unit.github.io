@@ -150,17 +150,17 @@ $$</p>
 <p>so the amplitude has the scalar part $\omega j_0(\omega r)$ and the vector part directed <strong>radially</strong>, $\omega j_1(\omega r)e_x$. This closed form was verified numerically by evaluating the operator $(\omega - \nabla)$ on $j_0(\omega r)$ by central differences and comparing with the right-hand side at random points, with the residual at the finite-difference floor; the identity $j_0' = -j_1$ is exact between the two closed forms.</p>
 <p>The energy–momentum biquaternion of the programme is</p>
 <p>$$
-\tilde{\Xi} = \tfrac12\,\tilde{\Theta}\circ\tilde{\Theta}^{\dagger},
+\tilde{\Xi} = \tfrac12\,\tilde{\Theta}\circ\tilde{\Theta}^{*},
 \qquad
-\tilde{\Theta}^{\dagger} = \bar{s} - \bar{\mathbf{V}} \ \ \text{for}\ \ \tilde{\Theta} = s + \mathbf{V};
+\tilde{\Theta}^{*} = \bar{s} - \bar{\mathbf{V}} \ \ \text{for}\ \ \tilde{\Theta} = s + \mathbf{V};
 $$</p>
-<p>the conjugation negates the vector part and complex-conjugates the coefficients, exactly the corpus's $\dagger$. Its scalar part is the energy density and its vector part the Poynting analogue. For the spherical pulsar,</p>
+<p>the conjugation negates the vector part and complex-conjugates the coefficients, exactly the corpus's ${}^{*}$. Its scalar part is the energy density and its vector part the Poynting analogue. For the spherical pulsar,</p>
 <p>$$
 W_{00}^{\,0} = \tfrac12\,\omega^2\left(j_0^2(\omega r) + j_1^2(\omega r)\right),
 \qquad
 \mathbf P_{00}^{\,0} \equiv 0 .
 $$</p>
-<p>Both were verified numerically, the density against the closed form and the vanishing of $\mathbf P$ against the computed product. The vanishing is not an accident of this solution. Because $\dagger$ negates the vector part, the vector part of $\tilde{\Theta}\tilde{\Theta}^{\dagger}$ is $-s\bar{\mathbf{V}} + \bar{s}\mathbf{V} - [\mathbf{V},\bar{\mathbf{V}}]_{\mathrm{vec}}$, which vanishes identically whenever the amplitude's four components are <strong>real</strong>, as they are for every standing monochromatic solution of this kind. A standing wave has no net energy flux, and the model's expression for it says so algebraically. The programme's reading is that a harmonic particle does not radiate, and on this point the algebra agrees: $\mathbf P \equiv 0$ is a theorem about the conjugation, not a hypothesis.</p>
+<p>Both were verified numerically, the density against the closed form and the vanishing of $\mathbf P$ against the computed product. The vanishing is not an accident of this solution. Because ${}^{*}$ negates the vector part, the vector part of $\tilde{\Theta}\tilde{\Theta}^{*}$ is $-s\bar{\mathbf{V}} + \bar{s}\mathbf{V} - [\mathbf{V},\bar{\mathbf{V}}]_{\mathrm{vec}}$, which vanishes identically whenever the amplitude's four components are <strong>real</strong>, as they are for every standing monochromatic solution of this kind. A standing wave has no net energy flux, and the model's expression for it says so algebraically. The programme's reading is that a harmonic particle does not radiate, and on this point the algebra agrees: $\mathbf P \equiv 0$ is a theorem about the conjugation, not a hypothesis.</p>
 <p>The asymptotics follow from the same two closed forms and are the quantitative content of the model at short and long range. As $r\to 0$, with $j_0(0) = 1$ and $j_1(z)\sim z/3$,</p>
 <p>$$
 \rho_{00}^{\,0} \to \omega ,
@@ -292,7 +292,7 @@ $$</p>
 </ol>
 <h2 id="summary">Summary</h2>
 <p>The 2019 formulation of the electro-gravimagnetic programme takes the <strong>monochromatic</strong> sector of its free charge–current field and proposes to read the solutions as elementary particles. The monochromatic sector is a clean piece of algebra: the free equation is $(\omega+\nabla)\tilde{\Theta}(\mathbf{x},\omega) = 0$, the operator factors so that $(\omega+\nabla)(\omega-\nabla) = \omega^2+\Delta$, and every solution is generated from a Helmholtz potential by the single operator $\omega - \nabla$. The regular Helmholtz solutions are the spherical harmonics, and they split into <strong>pulsars</strong>, from a scalar potential, and <strong>spinors</strong>, from a vector one.</p>
-<p>The spherically symmetric pulsar is $\omega(j_0(\omega r) + j_1(\omega r)e_x)$ with the scalar part $\omega j_0$; the spinor polarised along a fixed axis is $-\omega j_1r_{,1} + \omega(j_0e_1 + j_1(r_{,3}e_2-r_{,2}e_3))$ with scalar part $-\omega j_1r_{,1}$. Both have energy density $\tfrac12\omega^2(j_0^2+j_1^2)$ and both have a vanishing Poynting biquaternion — which is a general property of standing waves under the conjugation $\tilde{\Theta}^{\dagger} = \bar s - \bar{\mathbf{V}}$, and which the programme reads as the statement that a harmonic particle does not radiate. The pulsar's central density is $\omega$; every spinor's is zero; and that one dichotomy, decided by the Bessel asymptotics $j_n(z)\sim z^n/(2n+1)!!$, is the programme's classification of heavy particles from light ones, which it names bosons and leptons. All of these statements were verified numerically, as were the $r^{-1}$ and $r^{-2}$ far-field falloffs, the nodal spheres of the density at $\pi k/\omega$, and the absence of nodes in the energy density.</p>
+<p>The spherically symmetric pulsar is $\omega(j_0(\omega r) + j_1(\omega r)e_x)$ with the scalar part $\omega j_0$; the spinor polarised along a fixed axis is $-\omega j_1r_{,1} + \omega(j_0e_1 + j_1(r_{,3}e_2-r_{,2}e_3))$ with scalar part $-\omega j_1r_{,1}$. Both have energy density $\tfrac12\omega^2(j_0^2+j_1^2)$ and both have a vanishing Poynting biquaternion — which is a general property of standing waves under the conjugation $\tilde{\Theta}^{*} = \bar s - \bar{\mathbf{V}}$, and which the programme reads as the statement that a harmonic particle does not radiate. The pulsar's central density is $\omega$; every spinor's is zero; and that one dichotomy, decided by the Bessel asymptotics $j_n(z)\sim z^n/(2n+1)!!$, is the programme's classification of heavy particles from light ones, which it names bosons and leptons. All of these statements were verified numerically, as were the $r^{-1}$ and $r^{-2}$ far-field falloffs, the nodal spheres of the density at $\pi k/\omega$, and the absence of nodes in the energy density.</p>
 <p>The one construction in the paper that the corpus did not already have is the <strong>convolution</strong>: since a constant-coefficient differential operator commutes with convolution, convolving any monochromatic solution with an arbitrary structural biquaternion $K(\mathbf x)$ yields another solution, and choosing $K$ to be an inhomogeneous lattice of shifted $\delta$-functions produces a lattice of shifted harmonic pulsars — the paper's crystal, body, tissue and filament construction. This part is algebra and it was verified; the naming of the products as crystals is interpretation, and the lattice steps, weights and frequencies are free parameters, as everything else discrete in the programme is.</p>
 <p>What the algebra does not supply is everything the particle reading needs. The Helmholtz equation carries no boundary condition, so no frequency is selected and there is no spectrum; the identification of frequency with mass carries no constant, so no mass is predicted; the algebra has no spin or statistics, so the quantum names are labels on a heavy/light split; and the "hydrogen atom" shares nothing with the corpus's hydrogen articles but the spherical harmonics. The periodic system is placed on the just-intonation scale by hand, and its one testable consequence — that atomic masses stand in the ratios $2^n\gamma_k$ — fails in mass order (helium would be $\tfrac98$ of hydrogen, and is $3.97$ times it) and is vacuous when the octave is free, since the scale's ratios are simple rationals and atomic weights are near integers. The argument that the pure scale is required for commensurability is correct in itself and has nothing in the model to act on.</p>
 <p>The corpus's relation to this part of the programme is therefore the same as to the rest of it, and the same verdict applies with less to be said in praise of the additions: the monochromatic algebra — the factorisation, the Helmholtz correspondence, the pulsar and spinor closed forms, and the convolution that builds periodic structures from a single solution — is a genuine and reusable piece of the biquaternion formalism, and the particle, atom, crystal and periodic-system readings built on it are choices, none of which is forced by that algebra.</p>
@@ -394,11 +394,11 @@ $$</p>
 <td>Direction cosines; $\sum_k r_{,k}^2 = 1$</td>
 </tr>
 <tr>
-<td>$\tilde{\Xi} = \tfrac12\tilde{\Theta}\circ\tilde{\Theta}^{\dagger}$</td>
+<td>$\tilde{\Xi} = \tfrac12\tilde{\Theta}\circ\tilde{\Theta}^{*}$</td>
 <td>Energy–momentum biquaternion</td>
 </tr>
 <tr>
-<td>$\tilde{\Theta}^{\dagger} = \bar s - \bar{\mathbf V}$</td>
+<td>$\tilde{\Theta}^{*} = \bar s - \bar{\mathbf V}$</td>
 <td>Vector-negating, coefficient-conjugating conjugation</td>
 </tr>
 <tr>

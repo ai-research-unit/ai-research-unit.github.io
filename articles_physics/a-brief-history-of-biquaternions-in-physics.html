@@ -123,7 +123,7 @@ $$</p>
 <p>The algebra and its subspaces are established in the companion articles and are recalled here only in the form the history needs. The notation is inherited, not redefined.</p>
 <p>$\mathbb{B}$ is four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$. Its four natural conjugations have as fixed-point sets the distinguished real subspaces used throughout the corpus: the complex subspace $\mathbb{C}_{\mathbb{B}}$ (the complex scalars, the center of $\mathbb{B}$), the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the real quaternions), the Hermitian subspace $\mathbb{M}_{+}$ (real scalar part, imaginary vector part, the informational sector), and the anti-Hermitian subspace $\mathbb{M}_{-}$ (imaginary scalar part, real vector part, the material sector). The natural quadratic form is the biquaternion norm</p>
 <p>$$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2 ,
+N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 ,
 $$</p>
 <p>whose indefinite signature on $\mathbb{M}_{-}$ arises algebraically from $i^2 = -1$ in the imaginary time coefficient $ict$. The null elements $N(\tilde{Q}) = 0$, $\tilde{Q} \neq 0$, are the zero divisors; on $\mathbb{M}_{-}$ they are the light cone.</p>
 <p>The single structural fact that organizes the whole subsequent history is the isomorphism</p>
@@ -132,11 +132,11 @@ $$</p>
 $$</p>
 <p>realized by sending the quaternion units to $-i$ times the Pauli matrices, $e_k \mapsto -i\sigma_k$. Equivalently, $\mathbb{B}$ is the real Clifford algebra $Cl_{3,0}(\mathbb{R})$ — the <strong>Pauli algebra</strong> — and the even subalgebra of the spacetime algebra $Cl_{1,3}$. Under this isomorphism the biquaternion norm is the determinant, $N(\tilde{Q}) = \det\Phi(\tilde{Q})$, and the unit-norm elements</p>
 <p>$$
-SL(2,\mathbb{C}) = \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\}
+SL(2,\mathbb{C}) = \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0\}
 $$</p>
 <p>are the double cover of the proper orthochronous Lorentz group $SO^{+}(1,3)$, acting on $\mathbb{M}_{-}$ by the rotor conjugation</p>
 <p>$$
-\tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{\dagger} .
+\tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*} .
 $$</p>
 <p>These are the facts that make the history intelligible. The algebra of Hamilton's complex quaternions <em>is</em> the algebra of the Pauli matrices; the group of unit biquaternions <em>is</em> the Lorentz double cover; the idempotents $\tilde\Pi_\pm = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ in $\mathbb{M}_{+}$ are the pure states of a two-state system, with $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ as the Born rule written in the algebra (see the companion article <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>). None of these identifications was known to Hamilton.</p>
 <h2 id="cliffords-rotors-position-lines-and-screws">Clifford's Rotors: Position, Lines, and Screws</h2>
@@ -202,7 +202,7 @@ $$</p>
 \rho = e_1\frac{x_1}{x_4} + e_2\frac{x_2}{x_4} + e_3\frac{x_3}{x_4} ,
 $$</p>
 <p>and its tensor, the length of the rotor, is the tangent of the angular distance from the origin to the point. The five constructions are the position-rotor just given; the <strong>equation of a straight line</strong>, built on the perpendicular drawn from the origin to the line; the <strong>rotor along a straight line whose equation is given</strong>; the <strong>rotor joining two points</strong> whose position-rotors are $\alpha$ and $\beta$, namely $mR = \beta - \alpha + \omega\,V\alpha\beta$, with $V$ the vector product; and the <strong>rotor parallel to a given line through a given point</strong> whose position-rotor is $\sigma$. The list is the paper's demonstration that the algebra computes with lines and with screws, and not only with directions.</p>
-<p>The corpus uses "rotor" throughout for the unit-norm element of $\mathbb{B}$ that implements a Lorentz rotation, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$. That is a later and a different sense of the same word: Clifford's rotor is a position-carrying line element, a quantity of the geometry of lines, while the corpus's rotor is an element of the algebra acting on the material sector. The two objects share a name and little else, and the coinage is recorded here because the name runs through the rest of the corpus.</p>
+<p>The corpus uses "rotor" throughout for the unit-norm element of $\mathbb{B}$ that implements a Lorentz rotation, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$. That is a later and a different sense of the same word: Clifford's rotor is a position-carrying line element, a quantity of the geometry of lines, while the corpus's rotor is an element of the algebra acting on the material sector. The two objects share a name and little else, and the coinage is recorded here because the name runs through the rest of the corpus.</p>
 <h2 id="quaternions-in-electromagnetism-and-the-vector-revolt">Quaternions in Electromagnetism, and the Vector Revolt</h2>
 <p>The first substantial physics to use quaternions was electromagnetism. James Clerk Maxwell's <em>A Treatise on Electricity and Magnetism</em> (1873) employed quaternion notation for some of its vector operations, and in the decades after his death the quaternion calculus became a standard language for the field: topics now written with vectors — kinematics in space and Maxwell's equations among them — were described in quaternion terms. Peter Guthrie Tait, Maxwell's friend and the leading quaternionist after Hamilton's death, published an <em>Elementary Treatise on Quaternions</em> in 1867 (written with Hamilton's advice and published after Hamilton's death) and an <em>Introduction to Quaternions</em> with Philip Kelland in 1873. The quaternion product was attractive because the dot and cross products are cut from a single operation, and the quaternion operator $\nabla$ carried gradient, divergence, and curl together.</p>
 <p>The algebra's hold on physics did not last. From the mid-1880s, vector analysis — developed by Josiah Willard Gibbs and Oliver Heaviside — displaced the quaternions in physics and engineering. Heaviside's <em>Electromagnetic Theory</em> (1893) taught the field in vector form, and Gibbs's lectures, published as <em>Vector Analysis</em> by Edwin Bidwell Wilson (1901), gave the notation its textbook. The reasons were practical rather than algebraic: the vector calculus is notationally cleaner, it separates the dot and cross products instead of carrying the full quaternion product, and it suited the needs of electrical engineering and the emerging field theories. The transition was contested — the quaternionists, organized in a Quaternion Association (Alexander Macfarlane was its secretary from 1896, its president in 1909, and edited its <em>Bibliography of Quaternions</em> in 1904), argued the case for years — but the outcome was not close. Michael J. Crowe's <em>A History of Vector Analysis</em> (1967) is the standard account.</p>
@@ -279,7 +279,7 @@ $$</p>
 <td>Scalar imaginary, $i^2 = -1$ (Hamilton's $h$)</td>
 </tr>
 <tr>
-<td>$\bar{\cdot}, {}^{*}, {}^{\dagger}, {}^{\flat}$</td>
+<td>${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$</td>
 <td>The four conjugations</td>
 </tr>
 <tr>
@@ -299,7 +299,7 @@ $$</p>
 <td>Anti-Hermitian subspace (material sector; norm $(3,1)$)</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$</td>
+<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
 <td>Biquaternion norm (zero divisors where $N=0$)</td>
 </tr>
 <tr>
@@ -307,11 +307,11 @@ $$</p>
 <td>Pauli algebra; $\Phi(e_k) = -i\sigma_k$</td>
 </tr>
 <tr>
-<td>$SL(2,\mathbb{C}) = \{\tilde{\Lambda} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\}$</td>
+<td>$SL(2,\mathbb{C}) = \{\tilde{\Lambda} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0\}$</td>
 <td>Unit-norm biquaternions; Lorentz double cover</td>
 </tr>
 <tr>
-<td>$\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$</td>
+<td>$\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$</td>
 <td>Rotor conjugation on $\mathbb{M}_{-}$</td>
 </tr>
 <tr>

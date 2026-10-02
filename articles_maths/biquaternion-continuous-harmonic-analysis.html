@@ -63,7 +63,7 @@ $$</p>
 <p>$$
 \tilde{Q} = Q_0 e_0 + \mathbf{Q}, \qquad \mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
 $$</p>
-<p>The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.</p>
+<p>The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.</p>
 <p><strong>Notation.</strong> To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the scalar imaginary $i$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the division theory article.</p>
 <h2 id="the-fourier-kernel">The Fourier Kernel</h2>
 <h3 id="definition">Definition</h3>
@@ -277,9 +277,9 @@ $$</p>
 $$</p>
 <p>which is a biquaternion-valued multiplier. The precise form depends on the sign convention and on the placement of the root.</p>
 <h3 id="the-convective-derivative">The Convective Derivative</h3>
-<p>The convective derivative $\tilde{D} = \bar{\tilde{U}} \tilde{\nabla}$ becomes multiplication by the biquaternion</p>
+<p>The convective derivative $\tilde{D} = \tilde{U}^{\natural} \tilde{\nabla}$ becomes multiplication by the biquaternion</p>
 <p>$$
-\bar{\tilde{U}} \cdot 2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
+\tilde{U}^{\natural} \cdot 2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
 $$</p>
 <p>which depends on the velocity biquaternion $\tilde{U}$ and on the frequency variables. The multiplier is a biquaternion, and its vanishing determines the dispersion relation of the operator.</p>
 <h3 id="the-general-principle">The General Principle</h3>
@@ -461,7 +461,7 @@ $$</p>
 <td>Vector part of a biquaternion</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$</td>
+<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$</td>
 <td>Biquaternion norm; it vanishes on the zero divisors</td>
 </tr>
 <tr>
@@ -470,10 +470,10 @@ $$</p>
 </tr>
 <tr>
 <td>$\Box = \partial_0^2 + \Delta$</td>
-<td>d'Alembertian, the scalar part of $\tilde{\nabla}\bar{\tilde{\nabla}}$</td>
+<td>d'Alembertian, the scalar part of $\tilde{\nabla}\tilde{\nabla}^{\natural}$</td>
 </tr>
 <tr>
-<td>$\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$</td>
+<td>$\tilde{D} = \tilde{U}^{\natural}\tilde{\nabla}$</td>
 <td>Convective derivative with velocity $\tilde{U}$</td>
 </tr>
 </tbody>

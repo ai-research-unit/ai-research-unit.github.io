@@ -58,12 +58,12 @@
 <h3 id="the-defining-involution">The Defining Involution</h3>
 <p><strong>Definition.</strong> The <strong>vector subspace</strong> is the anti-fixed space of quaternion conjugation,</p>
 <p>$$
-\mathrm{Vect}(\mathbb{B}) = \left\{ \tilde{Q} \in \mathbb{B} : \bar{\tilde{Q}} = -\tilde{Q} \right\} ,
+\mathrm{Vect}(\mathbb{B}) = \left\{ \tilde{Q} \in \mathbb{B} : \tilde{Q}^{\natural} = -\tilde{Q} \right\} ,
 $$</p>
-<p>with $\bar{\tilde{Q}} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3$.</p>
-<p>Together with the centre subspace it gives the <strong>scalar–vector decomposition</strong> $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$, the eigenspace decomposition of $\bar{\cdot}$ for the eigenvalues $+1$ and $-1$.</p>
+<p>with $\tilde{Q}^{\natural} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3$.</p>
+<p>Together with the centre subspace it gives the <strong>scalar–vector decomposition</strong> $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$, the eigenspace decomposition of ${}^{\natural}$ for the eigenvalues $+1$ and $-1$.</p>
 <h3 id="the-condition-in-coordinates">The Condition in Coordinates</h3>
-<p>Comparing $\bar{\tilde{Q}} = -\tilde{Q}$ coefficient by coefficient, the three vector coefficients impose $Q_k = -(-Q_k)$ for $k = 1, 2, 3$, which is no condition at all, while the scalar coefficient imposes $Q_0 = -Q_0$, that is $Q_0 = 0$:</p>
+<p>Comparing $\tilde{Q}^{\natural} = -\tilde{Q}$ coefficient by coefficient, the three vector coefficients impose $Q_k = -(-Q_k)$ for $k = 1, 2, 3$, which is no condition at all, while the scalar coefficient imposes $Q_0 = -Q_0$, that is $Q_0 = 0$:</p>
 <p>$$
 \tilde{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3 , \qquad Q_1, Q_2, Q_3 \in \mathbb{C} .
 $$</p>
@@ -82,8 +82,8 @@ $$</p>
 <p>The two summands are precisely two of the four coordinate blocks of the algebra: $\operatorname{span}\{e_1, e_2, e_3\}$ is also the intersection of the vector subspace with the quaternion subspace and with the anti-Hermitian subspace, and $\operatorname{span}\{ie_1, ie_2, ie_3\}$ is also its intersection with the anti-quaternion subspace and with the Hermitian subspace.</p>
 <h2 id="the-four-descriptions-coincide">The Four Descriptions Coincide</h2>
 <h3 id="it-is-the-kernel-of-the-scalar-part">It Is the Kernel of the Scalar Part</h3>
-<p><strong>Proposition.</strong> $\mathrm{Vect}(\mathbb{B}) = \ker \operatorname{Sc}$, where $\operatorname{Sc}(\tilde{Q}) = Q_0 = \tfrac{1}{2}(\tilde{Q} + \bar{\tilde{Q}})$.</p>
-<p><strong>Proof.</strong> Immediate from the coordinate condition $Q_0 = 0$, and the second expression is the projection onto the fixed space of $\bar{\cdot}$ along the anti-fixed space.</p>
+<p><strong>Proposition.</strong> $\mathrm{Vect}(\mathbb{B}) = \ker \operatorname{Sc}$, where $\operatorname{Sc}(\tilde{Q}) = Q_0 = \tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{\natural})$.</p>
+<p><strong>Proof.</strong> Immediate from the coordinate condition $Q_0 = 0$, and the second expression is the projection onto the fixed space of ${}^{\natural}$ along the anti-fixed space.</p>
 <h3 id="it-is-the-derived-subspace">It Is the Derived Subspace</h3>
 <p><strong>Theorem.</strong> $\mathrm{Vect}(\mathbb{B}) = [\mathbb{B}, \mathbb{B}]$, the complex span of the commutators $\tilde{Q}\tilde{R} - \tilde{R}\tilde{Q}$.</p>
 <p><strong>Proof.</strong> For the basis elements, $[e_j, e_k] = 2 e_{j \times k}$ when $j \neq k$ in cyclic order and $[e_j, e_k] = 0$ when $j = k$, and the products with $i$ are obtained by complex linearity; every bracket is therefore traceless, so $[\mathbb{B}, \mathbb{B}] \subseteq \mathrm{Vect}(\mathbb{B})$. Conversely $e_1 = \tfrac12 [e_2, e_3]$ and its cyclic analogues give the three real vector units as brackets, and $ie_k = i e_k$ is then a complex multiple of a bracket; the six basis elements of the subspace lie in $[\mathbb{B}, \mathbb{B}]$, which therefore contains it.</p>
@@ -91,9 +91,9 @@ $$</p>
 <p><strong>Theorem.</strong> The vector subspace is the Lie algebra of the norm-one group $\{\tilde{Q} : N(\tilde{Q}) = 1\}$: it is the tangent space at $e_0$ of that group.</p>
 <p><strong>Proof.</strong> The norm-one group is a smooth subgroup of the units, so its Lie algebra is its tangent space at the identity, and an element $\tilde{Q}$ lies in that tangent space exactly when the derivative at $t = 0$ of $t \mapsto N(e_0 + t\tilde{Q})$ vanishes. By multiplicativity of the biquaternion norm,</p>
 <p>$$
-N(e_0 + t\tilde{Q}) = (e_0 + t\tilde{Q})(e_0 + t\bar{\tilde{Q}}) = e_0 + t\bigl(\tilde{Q} + \bar{\tilde{Q}}\bigr) + t^2 N(\tilde{Q}) ,
+N(e_0 + t\tilde{Q}) = (e_0 + t\tilde{Q})(e_0 + t\tilde{Q}^{\natural}) = e_0 + t\bigl(\tilde{Q} + \tilde{Q}^{\natural}\bigr) + t^2 N(\tilde{Q}) ,
 $$</p>
-<p>whose linear coefficient is $\tilde{Q} + \bar{\tilde{Q}} = 2\operatorname{Sc}(\tilde{Q})$; this vanishes exactly on the vector subspace.</p>
+<p>whose linear coefficient is $\tilde{Q} + \tilde{Q}^{\natural} = 2\operatorname{Sc}(\tilde{Q})$; this vanishes exactly on the vector subspace.</p>
 <p>The proposition identifies $\mathrm{Vect}(\mathbb{B})$ with the Lie algebra of the norm-one group, a statement developed in <em>Biquaternion Lie Algebra</em> from the side of the group.</p>
 <h2 id="algebra-and-module-structure">Algebra and Module Structure</h2>
 <h3 id="it-is-not-a-subalgebra">It Is Not a Subalgebra</h3>
@@ -125,11 +125,11 @@ $$</p>
 N(\tilde{Q}) = Q_1^2 + Q_2^2 + Q_3^2 ,
 $$</p>
 <p>complex-valued in general, with real restriction of signature $(3, 3)$ in the basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$, since $N(e_k) = 1$ and $N(ie_k) = -1$.</p>
-<p><strong>Proof.</strong> Substituting $Q_0 = 0$ in $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ leaves the three terms; the signs of the real basis vectors are computed from $(ie_k)^2 = i^2 e_k^2 = -(-1) = 1$ for the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$.</p>
+<p><strong>Proof.</strong> Substituting $Q_0 = 0$ in $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ leaves the three terms; the signs of the real basis vectors are computed from $(ie_k)^2 = i^2 e_k^2 = -(-1) = 1$ for the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$.</p>
 <p>Like the centre subspace and unlike the four others, the vector subspace is a subspace on which the biquaternion norm is not real-valued. Its <strong>null elements</strong> are the solutions of $Q_1^2 + Q_2^2 + Q_3^2 = 0$, a complex cone through the origin of real dimension four.</p>
 <h3 id="units-and-zero-divisors">Units and Zero Divisors</h3>
 <p><strong>Theorem.</strong> For $\tilde{Q} \in \mathrm{Vect}(\mathbb{B})$ the following are equivalent: $\tilde{Q}$ is a unit; $N(\tilde{Q}) \neq 0$; $\tilde{Q}$ is not a zero divisor. The zero divisors are exactly the null elements, $\tilde{Q} \neq 0$ with $N(\tilde{Q}) = 0$.</p>
-<p><strong>Proof.</strong> The general invertibility criterion gives the equivalence of the first two; for the third, if $N(\tilde{Q}) \neq 0$ then $\tilde{Q}$ has the inverse $-\bar{\tilde{Q}}/N(\tilde{Q})$, since $\tilde{Q}^2 = -N(\tilde{Q})e_0$ implies $\bar{\tilde{Q}} = -\tilde{Q}$ and hence $\tilde{Q}(-\bar{\tilde{Q}}/N(\tilde{Q})) = -\tilde{Q}(-\tilde{Q})/N(\tilde{Q}) = \tilde{Q}^2/N(\tilde{Q}) = -e_0$; and if $N(\tilde{Q}) = 0$ then $\tilde{Q}^2 = 0$ with $\tilde{Q} \neq 0$, so $\tilde{Q}$ annihilates itself.</p>
+<p><strong>Proof.</strong> The general invertibility criterion gives the equivalence of the first two; for the third, if $N(\tilde{Q}) \neq 0$ then $\tilde{Q}$ has the inverse $-\tilde{Q}^{\natural}/N(\tilde{Q})$, since $\tilde{Q}^2 = -N(\tilde{Q})e_0$ implies $\tilde{Q}^{\natural} = -\tilde{Q}$ and hence $\tilde{Q}(-\tilde{Q}^{\natural}/N(\tilde{Q})) = -\tilde{Q}(-\tilde{Q})/N(\tilde{Q}) = \tilde{Q}^2/N(\tilde{Q}) = -e_0$; and if $N(\tilde{Q}) = 0$ then $\tilde{Q}^2 = 0$ with $\tilde{Q} \neq 0$, so $\tilde{Q}$ annihilates itself.</p>
 <p><strong>Corollary.</strong> Every null vector is nilpotent of index two: $\tilde{Q}^2 = 0$ but $\tilde{Q} \neq 0$. The vector subspace contains no idempotent other than $0$.</p>
 <p><strong>Proof.</strong> The first statement is the square formula with $N(\tilde{Q}) = 0$. For the second, if $\tilde{Q} \in \mathrm{Vect}(\mathbb{B})$ satisfies $\tilde{Q}^2 = \tilde{Q}$, then $-\tilde{Q} = N(\tilde{Q})e_0$ by the square formula, so $\tilde{Q}$ is both a vector element and a central one; the intersection of the two subspaces is the origin, whence $\tilde{Q} = 0$.</p>
 <p>The zero divisors of the vector subspace are called the <strong>pure zero divisors</strong> in <em>Biquaternion Zero Divisors</em>, which develops the classification and the two families of the algebra as a whole.</p>
@@ -145,24 +145,24 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\bar{\cdot}$</td>
+<td>${}^{\natural}$</td>
 <td>$-\mathrm{id}$</td>
 <td>all six signs negative</td>
 </tr>
 <tr>
-<td>${}^{*}$</td>
+<td>$\bar{\cdot}$</td>
 <td>$\operatorname{diag}(1,1,1,-1,-1,-1)$</td>
 <td>real vectors fixed, imaginary vectors negated</td>
 </tr>
 <tr>
-<td>${}^{\dagger}$</td>
+<td>${}^{*}$</td>
 <td>$\operatorname{diag}(-1,-1,-1,1,1,1)$</td>
 <td>real vectors negated, imaginary vectors fixed</td>
 </tr>
 <tr>
 <td>$\flat$</td>
 <td>$\operatorname{diag}(1,1,1,-1,-1,-1)$</td>
-<td>as ${}^{*}$</td>
+<td>as $\bar{\cdot}$</td>
 </tr>
 </tbody>
 </table></div>
@@ -225,7 +225,7 @@ $$</p>
 <p>The vector subspace therefore contains the whole two-real-dimensional family of real roots $\pm\mu$, with $\mu$ a unit element of $\operatorname{span}_\mathbb{R}\{e_1,e_2,e_3\}$, and the whole four-real-dimensional family of non-trivial roots $b\mu + d\nu i$. The real roots lie in the real vector triple, while a non-trivial root mixes a real and an imaginary vector direction and lies in none of the two vector triples alone. These are exactly the roots that generate the non-central idempotents — the Hermitian family from the real roots and the third family from the non-trivial ones — so the vector subspace is where the roots of the algebra live.</p>
 <h3 id="zero-divisors">Zero Divisors</h3>
 <p><strong>Proposition.</strong> The zero divisors of $\mathrm{Vect}(\mathbb{B})$ are exactly the non-zero nilpotents, and they are the pure family in its entirety.</p>
-<p><strong>Proof.</strong> For $\tilde{Q} = Q_1e_1 + Q_2e_2 + Q_3e_3$ one has $\bar{\tilde{Q}} = -\tilde{Q}$ and $\tilde{Q}^2 = -\bigl(\sum_k Q_k^2\bigr)e_0$, so $\tilde{Q}\bar{\tilde{Q}} = \sum_k Q_k^2$ and the criterion $\tilde{Q}\bar{\tilde{Q}} = 0$ reads $\sum_k Q_k^2 = 0$; in that case $\tilde{Q}^2 = 0$.</p>
+<p><strong>Proof.</strong> For $\tilde{Q} = Q_1e_1 + Q_2e_2 + Q_3e_3$ one has $\tilde{Q}^{\natural} = -\tilde{Q}$ and $\tilde{Q}^2 = -\bigl(\sum_k Q_k^2\bigr)e_0$, so $\tilde{Q}\tilde{Q}^{\natural} = \sum_k Q_k^2$ and the criterion $\tilde{Q}\tilde{Q}^{\natural} = 0$ reads $\sum_k Q_k^2 = 0$; in that case $\tilde{Q}^2 = 0$.</p>
 <p>This is the pure case, the nilpotent cone, of <em>Biquaternion Zero Divisors</em>: a complex cone of complex dimension $2$ and real dimension $4$, whose elements have vanishing scalar part, as against the non-pure family of complex multiples of idempotents. The vector subspace is the only one of the six whose zero divisors are all nilpotent — the sectors have null zero divisors that are not nilpotent, and the centre, the quaternion and the anti-quaternion subspaces have none.</p>
 <h3 id="the-lie-algebra-structure">The Lie Algebra Structure</h3>
 <p>The vector subspace is the derived subalgebra of the Lie algebra,</p>
@@ -251,7 +251,7 @@ $$</p>
 <h3 id="a-non-null-vector">A Non-Null Vector</h3>
 <p>For $\tilde{Q} = e_1 + e_2$ one has $N(\tilde{Q}) = 2$, so $\tilde{Q}$ is a unit with $\tilde{Q}^2 = -2e_0$ and</p>
 <p>$$
-\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}}}{2} = -\frac{e_1 + e_2}{2} ,
+\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{2} = -\frac{e_1 + e_2}{2} ,
 $$</p>
 <p>which is again a vector element; the inverse of a non-null vector stays in the subspace, as the formula for the inverse of a pure element requires.</p>
 <h3 id="a-null-vector">A Null Vector</h3>
@@ -279,7 +279,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathrm{Vect}(\mathbb{B})$</td>
-<td>the vector subspace, $\{\tilde{Q} : \bar{\tilde{Q}} = -\tilde{Q}\}$</td>
+<td>the vector subspace, $\{\tilde{Q} : \tilde{Q}^{\natural} = -\tilde{Q}\}$</td>
 </tr>
 <tr>
 <td>$\operatorname{Sc}$</td>
@@ -326,7 +326,7 @@ $$</p>
 <td>the rotation subalgebra $\operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$</td>
 </tr>
 <tr>
-<td>$\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$</td>
+<td>${}^{\natural}, \bar{\cdot}, {}^{*}, \flat$</td>
 <td>the four involutions</td>
 </tr>
 </tbody>

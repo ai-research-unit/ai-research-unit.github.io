@@ -71,16 +71,16 @@ $$</p>
 $$</p>
 <p>obtained from $\tilde{H}\tilde{K}=(h_0k_0+\mathbf{h}\cdot\mathbf{k})e_0+i(h_0\mathbf{k}+k_0\mathbf{h})-\mathbf{h}\times\mathbf{k}$, using $(i\mathbf{h})(i\mathbf{k})=(\mathbf{h}\cdot\mathbf{k})e_0-\mathbf{h}\times\mathbf{k}$. In the basis $\{e_0,ie_1,ie_2,ie_3\}$ the Gram matrix is diagonal, with $\mathrm{Tr}(e_0e_0)=2$, $\mathrm{Tr}(e_0\,ie_k)=0$ and $\mathrm{Tr}(ie_j\,ie_k)=2\delta_{jk}$. The pairing is positive-definite of signature $(4,0)$: up to the factor $2$, the Euclidean inner product on $\mathbb{R}^4$, and the restriction of the Hilbert–Schmidt form.</p>
 <p>Two immediate consequences will be used repeatedly. First, the pairing is bilinear and symmetric: $\mathrm{Tr}(\tilde{H}\tilde{K})=\mathrm{Tr}(\tilde{K}\tilde{H})$, and expansion in the basis gives $\mathrm{Tr}((\alpha\tilde{H}+\beta\tilde{K})\tilde{L})=\alpha\,\mathrm{Tr}(\tilde{H}\tilde{L})+\beta\,\mathrm{Tr}(\tilde{K}\tilde{L})$. Second, it is positive definite, since $\mathrm{Tr}(\tilde{H}^2)=2(h_0^2+|\mathbf{h}|^2)\geq0$ with equality only for $\tilde{H}=0$; the trace pairing is therefore an inner product, not merely a symmetric form.</p>
-<p>Three properties single it out. <strong>Invariance:</strong> under unitary conjugation $\tilde{H}\mapsto\tilde{U}\tilde{H}\tilde{U}^\dagger$ the pairing is invariant; since the unit quaternions rotate $\mathbf{h}$ and fix $h_0$, an invariant symmetric bilinear form must be $\mathrm{B}=A h_0k_0+B\,\mathbf{h}\cdot\mathbf{k}$, so invariance alone leaves two parameters. <strong>Traciality:</strong> requiring the pairing to come from the algebra's product, $\mathrm{B}(\tilde{H},\tilde{K})=f(\tilde{H}\tilde{K})$ with $f$ tracial, forces $f$ to be a multiple of $\mathrm{Tr}$ and hence $A=B$; this is the condition that pins the form down. <strong>Positivity:</strong> $A,B>0$ makes the form positive-definite, capable of producing non-negative probabilities; the scale is fixed by $\mathrm{Tr}(e_0)=2$, though the scale cancels in probabilities, which are ratios. Thus the trace pairing is the unique symmetric pairing compatible with the associative product and positive — but traciality is a genuine assumption, not a consequence of symmetry.</p>
+<p>Three properties single it out. <strong>Invariance:</strong> under unitary conjugation $\tilde{H}\mapsto\tilde{U}\tilde{H}\tilde{U}^{*}$ the pairing is invariant; since the unit quaternions rotate $\mathbf{h}$ and fix $h_0$, an invariant symmetric bilinear form must be $\mathrm{B}=A h_0k_0+B\,\mathbf{h}\cdot\mathbf{k}$, so invariance alone leaves two parameters. <strong>Traciality:</strong> requiring the pairing to come from the algebra's product, $\mathrm{B}(\tilde{H},\tilde{K})=f(\tilde{H}\tilde{K})$ with $f$ tracial, forces $f$ to be a multiple of $\mathrm{Tr}$ and hence $A=B$; this is the condition that pins the form down. <strong>Positivity:</strong> $A,B>0$ makes the form positive-definite, capable of producing non-negative probabilities; the scale is fixed by $\mathrm{Tr}(e_0)=2$, though the scale cancels in probabilities, which are ratios. Thus the trace pairing is the unique symmetric pairing compatible with the associative product and positive — but traciality is a genuine assumption, not a consequence of symmetry.</p>
 <h3 id="it-is-not-the-biquaternion-norm">It Is Not the Biquaternion Norm</h3>
 <p>The other natural quadratic form on $\mathbb{M}_+$ is the <strong>biquaternion norm</strong></p>
 <p>$$
-N(\tilde{H})=\tilde{H}\bar{\tilde{H}}=(h_0^2-|\mathbf{h}|^2)e_0,
+N(\tilde{H})=\tilde{H}\tilde{H}^{\natural}=(h_0^2-|\mathbf{h}|^2)e_0,
 $$</p>
 <p>of signature $(1,3)$, whose future light cone is the positivity cone. The state space is the trace-one slice of that cone; the Born rule is a statement about the trace pairing. Positivity of a state is a biquaternion-norm condition, while Born probabilities are trace-pairing quantities. The Born rule therefore does not follow from the light-cone structure of $\mathbb{M}_+$; it follows from the Euclidean trace pairing, a different form on the same space.</p>
 <p>The two forms are complementary, and the idempotents show it clearly. For $\tilde\Pi_\pm(\hat{\boldsymbol{\mu}})$ one has $h_0=\tfrac12$ and $|\mathbf{h}|=\tfrac12$, so the biquaternion norm vanishes,
 $$
-N(\tilde\Pi_\pm)=\tilde\Pi_\pm\bar{\tilde{P}}_\pm=(h_0^2-|\mathbf{h}|^2)e_0=0,
+N(\tilde\Pi_\pm)=\tilde\Pi_\pm\tilde{P}^{\natural}_\pm=(h_0^2-|\mathbf{h}|^2)e_0=0,
 $$
 placing the idempotents on the boundary of the light cone, while the trace pairing gives $\mathrm{Tr}(\tilde\Pi_\pm)=1$ and $\mathrm{Tr}(\tilde\Pi_\pm^2)=1$. The idempotents are null for the biquaternion norm and unit for the trace pairing; probabilities are read from the second, not the first.</p>
 <h2 id="idempotents-as-projectors">Idempotents as Projectors</h2>
@@ -98,7 +98,7 @@ $$</p>
 <p>$$
 \tilde\Pi_\pm(\hat{\boldsymbol{\mu}})=\tfrac{1}{2}(e_0\pm i\hat{\boldsymbol{\mu}}),\qquad|\hat{\boldsymbol{\mu}}|=1,
 $$</p>
-<p>satisfy $\varphi(\tilde\Pi_+(\hat{\boldsymbol{\mu}}))=\tfrac{1}{2}(I_2+\hat{\boldsymbol{\mu}}\cdot\boldsymbol{\sigma})$ because $\varphi(i\hat{\boldsymbol{\mu}})=\hat{\boldsymbol{\mu}}\cdot\boldsymbol{\sigma}$. This is the standard spin-up projector; it has eigenvalues $1$ and $0$, so the biquaternion idempotent <strong>is</strong> a rank-one projection, and every rank-one projection arises this way. The usual identities hold: $\tilde\Pi_\pm^2=\tilde\Pi_\pm$, $\tilde\Pi_\pm^\dagger=\tilde\Pi_\pm$, $\mathrm{Tr}(\tilde\Pi_\pm)=1$, $\tilde\Pi_++\tilde\Pi_-=e_0$, $\tilde\Pi_+\tilde\Pi_-=0$.</p>
+<p>satisfy $\varphi(\tilde\Pi_+(\hat{\boldsymbol{\mu}}))=\tfrac{1}{2}(I_2+\hat{\boldsymbol{\mu}}\cdot\boldsymbol{\sigma})$ because $\varphi(i\hat{\boldsymbol{\mu}})=\hat{\boldsymbol{\mu}}\cdot\boldsymbol{\sigma}$. This is the standard spin-up projector; it has eigenvalues $1$ and $0$, so the biquaternion idempotent <strong>is</strong> a rank-one projection, and every rank-one projection arises this way. The usual identities hold: $\tilde\Pi_\pm^2=\tilde\Pi_\pm$, $\tilde\Pi_\pm^{*}=\tilde\Pi_\pm$, $\mathrm{Tr}(\tilde\Pi_\pm)=1$, $\tilde\Pi_++\tilde\Pi_-=e_0$, $\tilde\Pi_+\tilde\Pi_-=0$.</p>
 <p>The idempotent property can be checked directly, without invoking the isomorphism. For unit $\hat{\boldsymbol{\mu}}$,
 $$
 \tilde\Pi_+^2=\tfrac14\bigl(e_0+i\hat{\boldsymbol{\mu}}\bigr)^2=\tfrac14\bigl(e_0+2i\hat{\boldsymbol{\mu}}+(i\hat{\boldsymbol{\mu}})(i\hat{\boldsymbol{\mu}})\bigr),
@@ -166,7 +166,7 @@ $$</p>
 \tilde{E}_k=\tfrac13(e_0+i\hat{\mathbf{n}}_k)=\tfrac23\tilde\Pi_+(\hat{\mathbf{n}}_k),\qquad k=0,1,2 .
 $$</p>
 <p>Each is an effect, they sum to $e_0$, and no two are orthogonal; the probabilities are $p_k=\tfrac13(1+\hat{\mathbf{n}}_k\cdot\mathbf{r})$ with $\sum_kp_k=1$. The trace formula thus covers general measurement statistics unchanged. Non-projective measurements are not exotic: they are needed for tasks such as unambiguous discrimination of non-orthogonal states, and the effect formalism is the algebraic home of that possibility.</p>
-<p>The trace formula gives measurement <strong>statistics</strong>, not the post-measurement state; the update requires Kraus operators $\tilde{K}_i$ with $\sum_i\tilde{K}_i^\dagger\tilde{K}_i=e_0$, treated in the companion article on quantum channels, and every POVM with $k$ outcomes has a Neumark dilation to a projective measurement on $\mathbb{B}\otimes_\mathbb{C}M_k(\mathbb{C})\cong M_{2k}(\mathbb{C})$, the article's two- and three-outcome examples living inside $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$.</p>
+<p>The trace formula gives measurement <strong>statistics</strong>, not the post-measurement state; the update requires Kraus operators $\tilde{K}_i$ with $\sum_i\tilde{K}_i^{*}\tilde{K}_i=e_0$, treated in the companion article on quantum channels, and every POVM with $k$ outcomes has a Neumark dilation to a projective measurement on $\mathbb{B}\otimes_\mathbb{C}M_k(\mathbb{C})\cong M_{2k}(\mathbb{C})$, the article's two- and three-outcome examples living inside $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$.</p>
 <h2 id="comparison-with-the-hilbert-space-statement">Comparison with the Hilbert-Space Statement</h2>
 <p>In standard quantum mechanics a state is a density operator $\rho$, an observable is $A=\sum_aaP_a$, and $p(a)=\mathrm{Tr}(P_a\rho)$; for a pure state and a rank-one outcome projector this is $p=|\langle\phi|\psi\rangle|^2$. This is a <strong>postulate</strong>, motivateable by Gleason's theorem, decision theory, or envariance, but not derived from the other postulates. Because $\varphi$ is a $*$-isomorphism with $\mathrm{tr}\circ\varphi=\mathrm{Tr}$, the two formulations agree <strong>exactly</strong>:</p>
 <p>$$
@@ -238,7 +238,7 @@ $$</p>
 <td>Trace pairing, signature $(4,0)$</td>
 </tr>
 <tr>
-<td>$N(\tilde{H}) = \tilde{H}\bar{\tilde{H}} = (h_0^2 - |\mathbf{h}|^2)e_0$</td>
+<td>$N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural} = (h_0^2 - |\mathbf{h}|^2)e_0$</td>
 <td>Biquaternion norm, signature $(1,3)$</td>
 </tr>
 <tr>
@@ -278,7 +278,7 @@ $$</p>
 <td>Trace correspondence</td>
 </tr>
 <tr>
-<td>$\tilde{K}_i$, $\sum_i\tilde{K}_i^\dagger\tilde{K}_i = e_0$</td>
+<td>$\tilde{K}_i$, $\sum_i\tilde{K}_i^{*}\tilde{K}_i = e_0$</td>
 <td>Kraus operators (measurement update)</td>
 </tr>
 </tbody>

@@ -118,7 +118,7 @@ $$</p>
 <p>$$
 \Phi(\tilde{Q}) = (2+i)I_2 + (1-i)(-i\sigma_1) + 3(-i\sigma_2) + i(-i\sigma_3) = \begin{pmatrix} 3+i & -4-i \\ 2-i & 1+i \end{pmatrix},
 $$</p>
-<p>whose trace is $4+2i = 2Q_0$ and whose determinant is $(3+i)(1+i) - (-4-i)(2-i) = 11+2i = N(\tilde{Q})$, so the element is a unit with inverse $\bar{\tilde{Q}}/N$.</p>
+<p>whose trace is $4+2i = 2Q_0$ and whose determinant is $(3+i)(1+i) - (-4-i)(2-i) = 11+2i = N(\tilde{Q})$, so the element is a unit with inverse $\tilde{Q}^{\natural}/N$.</p>
 <h2 id="the-rank-one-elements-and-the-outer-product">The Rank-One Elements and the Outer Product</h2>
 <p>The corollary above says that the zero divisors are the nonzero singular matrices; the matrix form also says what such a matrix is.</p>
 <p><strong>Proposition.</strong> For $\tilde{Q}\neq0$ the following are equivalent: $N(\tilde{Q})=0$; $\Phi(\tilde{Q})$ is singular; $\Phi(\tilde{Q})$ is an outer product
@@ -158,29 +158,29 @@ $$</p>
 <p><strong>Proof.</strong> Cayley–Hamilton for the $2 \times 2$ matrix $\Phi(\tilde{Q})$ reads $\Phi(\tilde{Q})^2 - \operatorname{Tr}\Phi(\tilde{Q})\,\Phi(\tilde{Q}) + \det\Phi(\tilde{Q})\,I = 0$. Substituting $\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$ and $\det\Phi(\tilde{Q}) = N(\tilde{Q})$ and transporting back along the injective map $\Phi$ gives the identity.</p>
 <p><strong>Remark.</strong> This is the identity that reduces every power of $\tilde{Q}$ to a combination of $e_0$ and $\tilde{Q}$, and it is the starting point for the closed forms of the exponential and the trigonometric functions in <em>Biquaternion Elementary Functions</em>.</p>
 <h2 id="the-hermitian-form-and-the-euclidean-norm">The Hermitian Form and the Euclidean Norm</h2>
-<p>The matrix realization carries the conjugate-transpose operation $\dagger$, and with it the Hermitian form of the algebra.</p>
+<p>The matrix realization carries the conjugate-transpose operation ${}^{*}$, and with it the Hermitian form of the algebra.</p>
 <p><strong>Proposition (Hermitian form).</strong> For every biquaternion $\tilde{Q}$,</p>
 <p>$$
-\Phi(\tilde{Q}\tilde{Q}^\dagger) = \Phi(\tilde{Q})\,\Phi(\tilde{Q})^\dagger,
+\Phi(\tilde{Q}\tilde{Q}^{*}) = \Phi(\tilde{Q})\,\Phi(\tilde{Q})^\dagger,
 $$</p>
 <p>a positive semidefinite Hermitian matrix. Its trace is twice the squared Euclidean length of the four-vector:</p>
 <p>$$
-\operatorname{Tr}\bigl(\tilde{Q}\tilde{Q}^\dagger\bigr) = 2 \sum_{\mu=0}^{3} |Q_\mu|^2 = \|\Phi(\tilde{Q})\|_F^2,
+\operatorname{Tr}\bigl(\tilde{Q}\tilde{Q}^{*}\bigr) = 2 \sum_{\mu=0}^{3} |Q_\mu|^2 = \|\Phi(\tilde{Q})\|_F^2,
 $$</p>
 <p>where $\|\cdot\|_F$ is the Frobenius norm, the square root of the sum of the squared moduli of the entries.</p>
-<p><strong>Proof.</strong> Since $\Phi$ is a homomorphism and $\Phi(\tilde{Q}^\dagger) = \Phi(\tilde{Q})^\dagger$ (proved in the next section), the first identity is immediate. For the second, write the four entries of $\Phi(\tilde{Q})$: they are $Q_0 - iQ_3$, $-iQ_1 - Q_2$, $-iQ_1 + Q_2$ and $Q_0 + iQ_3$. Their squared moduli sum to</p>
+<p><strong>Proof.</strong> Since $\Phi$ is a homomorphism and $\Phi(\tilde{Q}^{*}) = \Phi(\tilde{Q})^\dagger$ (proved in the next section), the first identity is immediate. For the second, write the four entries of $\Phi(\tilde{Q})$: they are $Q_0 - iQ_3$, $-iQ_1 - Q_2$, $-iQ_1 + Q_2$ and $Q_0 + iQ_3$. Their squared moduli sum to</p>
 <p>$$
 |Q_0 - iQ_3|^2 + |Q_0 + iQ_3|^2 + |-iQ_1 - Q_2|^2 + |-iQ_1 + Q_2|^2 = 2|Q_0|^2 + 2|Q_3|^2 + 2|Q_1|^2 + 2|Q_2|^2,
 $$</p>
-<p>because the cross terms cancel in each pair and each pair contributes twice the sum of the two squared moduli. The trace of the Hermitian form is twice its scalar part, and the scalar part of $\tilde{Q}\tilde{Q}^\dagger$ is $\sum_\mu |Q_\mu|^2$ by <em>Biquaternion Algebra</em>; the two expressions agree.</p>
+<p>because the cross terms cancel in each pair and each pair contributes twice the sum of the two squared moduli. The trace of the Hermitian form is twice its scalar part, and the scalar part of $\tilde{Q}\tilde{Q}^{*}$ is $\sum_\mu |Q_\mu|^2$ by <em>Biquaternion Algebra</em>; the two expressions agree.</p>
 <p><strong>Definition.</strong> The <strong>Euclidean norm</strong> of a biquaternion is</p>
 <p>$$
-\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}\bigl(\tilde{Q}\tilde{Q}^\dagger\bigr)} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2} = \frac{1}{\sqrt{2}}\,\|\Phi(\tilde{Q})\|_F .
+\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}\bigl(\tilde{Q}\tilde{Q}^{*}\bigr)} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2} = \frac{1}{\sqrt{2}}\,\|\Phi(\tilde{Q})\|_F .
 $$</p>
 <p>It is a positive definite Euclidean norm on the real vector space underlying $\mathbb{B} \cong \mathbb{R}^8$, it is not multiplicative, and it is distinct from the biquaternion norm $N$, which is a complex quadratic form and may vanish on a nonzero element.</p>
 <p><strong>Remark (the inner product).</strong> The Hermitian form has a sesquilinear companion. The <strong>inner product</strong> of two biquaternions is the complex scalar</p>
 <p>$$
-\langle \tilde{P}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_\mu^* Q_\mu = \tfrac{1}{2} \operatorname{Tr}\bigl(\Phi(\tilde{P})^\dagger \Phi(\tilde{Q})\bigr),
+\langle \tilde{P}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_\bar{\mu} Q_\mu = \tfrac{1}{2} \operatorname{Tr}\bigl(\Phi(\tilde{P})^\dagger \Phi(\tilde{Q})\bigr),
 $$</p>
 <p>linear in the second argument and conjugate-linear in the first. Its diagonal value $\langle \tilde{Q}, \tilde{Q}\rangle = \|\tilde{Q}\|_E^2$ is the scalar part of the Hermitian form. This is the coefficient-space statement of <em>Biquaternion Algebra</em> read through the matrix realization.</p>
 <h2 id="the-jordan-structure-of-the-hermitian-subspace">The Jordan Structure of the Hermitian Subspace</h2>
@@ -189,7 +189,7 @@ $$</p>
 \tilde{Q} \circ \tilde{R} = \tfrac{1}{2}\bigl(\tilde{Q}\tilde{R} + \tilde{R}\tilde{Q}\bigr)
 $$</p>
 <p>with $\tfrac{1}{2}(AB + BA)$. Hence $\mathbb{M}_+$ is a Jordan algebra over $\mathbb{R}$, isomorphic through $\Phi$ to the Jordan algebra $H_2(\mathbb{C})$ of Hermitian $2 \times 2$ complex matrices.</p>
-<p><strong>Proof.</strong> The subspace $\mathbb{M}_+$ is the fixed space of $\dagger$ and the Hermitian matrices are the fixed space of the conjugate transpose, and the proposition above shows that $\Phi$ carries $\dagger$ to the conjugate transpose, so $\Phi(\mathbb{M}_+)$ is exactly $H_2(\mathbb{C})$. Since $\Phi$ is $\mathbb{C}$-linear and multiplicative, $\Phi(\tilde{Q} \circ \tilde{R}) = \tfrac{1}{2}\bigl(\Phi(\tilde{Q})\Phi(\tilde{R}) + \Phi(\tilde{R})\Phi(\tilde{Q})\bigr)$.</p>
+<p><strong>Proof.</strong> The subspace $\mathbb{M}_+$ is the fixed space of ${}^{*}$ and the Hermitian matrices are the fixed space of the conjugate transpose, and the proposition above shows that $\Phi$ carries ${}^{*}$ to the conjugate transpose, so $\Phi(\mathbb{M}_+)$ is exactly $H_2(\mathbb{C})$. Since $\Phi$ is $\mathbb{C}$-linear and multiplicative, $\Phi(\tilde{Q} \circ \tilde{R}) = \tfrac{1}{2}\bigl(\Phi(\tilde{Q})\Phi(\tilde{R}) + \Phi(\tilde{R})\Phi(\tilde{Q})\bigr)$.</p>
 <p><strong>Remark.</strong> The symmetrized product is commutative but not associative, which is the Jordan axiom pattern; the Jordan theory of the Hermitian subspace, its powers and its idempotents are developed in <em>Biquaternion Hermitian Subspace</em>.</p>
 <h2 id="the-exponential-and-the-matrix-exponential">The Exponential and the Matrix Exponential</h2>
 <p><strong>Proposition.</strong> Under the isomorphism the biquaternion exponential corresponds to the matrix exponential:</p>
@@ -206,33 +206,33 @@ $$</p>
 <p>The four conjugations of $\mathbb{B}$ act on the matrices, and three of the four are read off at once: quaternion conjugation is the adjugate, Hermitian conjugation is the conjugate transpose, and anti-Hermitian conjugation is its negative. Complex conjugation is the one that requires care.</p>
 <p><strong>Proposition (quaternion conjugation is the adjugate).</strong> For every biquaternion $\tilde{Q}$,</p>
 <p>$$
-\Phi(\bar{\tilde{Q}}) = \operatorname{adj}\bigl(\Phi(\tilde{Q})\bigr), \qquad \det\Phi(\bar{\tilde{Q}}) = N(\bar{\tilde{Q}}) = N(\tilde{Q}),
+\Phi(\tilde{Q}^{\natural}) = \operatorname{adj}\bigl(\Phi(\tilde{Q})\bigr), \qquad \det\Phi(\tilde{Q}^{\natural}) = N(\tilde{Q}^{\natural}) = N(\tilde{Q}),
 $$</p>
-<p>where $\operatorname{adj}(M)$ is the adjugate of $M$, the transpose of the cofactor matrix. Equivalently, $\Phi(\bar{\tilde{Q}}) = \epsilon\, \Phi(\tilde{Q})^{\mathsf{T}} \epsilon^{-1}$ with $\epsilon = i\sigma_2$.</p>
-<p><strong>Proof.</strong> The adjugate of a $2 \times 2$ matrix satisfies $M \operatorname{adj}(M) = \det(M) I$ and has entries the cofactors. Replacing $Q_1, Q_2, Q_3$ by their negatives in the explicit formula for $\Phi(\tilde{Q})$ and comparing with the cofactor matrix gives the identity directly. For the second form, note that $\epsilon \Phi(\tilde{Q})^{\mathsf{T}}\epsilon^{-1}$ equals the adjugate for every $2 \times 2$ matrix $M$, since $\operatorname{adj}(M) = \det(M) M^{-1}$ when $M$ is invertible and the identity is polynomial in the entries. The determinant identity is $N(\bar{\tilde{Q}}) = N(\tilde{Q})$, the invariance of the biquaternion norm under quaternion conjugation.</p>
-<p><strong>Remark (the delicate point: complex conjugation is not entrywise).</strong> Complex conjugation does <strong>not</strong> act entrywise on $\Phi(\tilde{Q})$. The realization is built with the same $i$ that conjugates the coefficients, and the two operations compete: conjugating the entries of $\Phi(\tilde{Q})$ sends $-i\sigma_1 \mapsto +i\sigma_1$, which is the negative of the image of $e_1$, while the image of $e_2$ is a real matrix and is preserved. Entrywise conjugation is therefore not $\Phi(\tilde{Q}^{*})$, and it is not the image of any of the four involutions of the algebra. The correct correspondence dresses the conjugation with the <strong>antisymmetric form</strong></p>
+<p>where $\operatorname{adj}(M)$ is the adjugate of $M$, the transpose of the cofactor matrix. Equivalently, $\Phi(\tilde{Q}^{\natural}) = \epsilon\, \Phi(\tilde{Q})^{\mathsf{T}} \epsilon^{-1}$ with $\epsilon = i\sigma_2$.</p>
+<p><strong>Proof.</strong> The adjugate of a $2 \times 2$ matrix satisfies $M \operatorname{adj}(M) = \det(M) I$ and has entries the cofactors. Replacing $Q_1, Q_2, Q_3$ by their negatives in the explicit formula for $\Phi(\tilde{Q})$ and comparing with the cofactor matrix gives the identity directly. For the second form, note that $\epsilon \Phi(\tilde{Q})^{\mathsf{T}}\epsilon^{-1}$ equals the adjugate for every $2 \times 2$ matrix $M$, since $\operatorname{adj}(M) = \det(M) M^{-1}$ when $M$ is invertible and the identity is polynomial in the entries. The determinant identity is $N(\tilde{Q}^{\natural}) = N(\tilde{Q})$, the invariance of the biquaternion norm under quaternion conjugation.</p>
+<p><strong>Remark (the delicate point: complex conjugation is not entrywise).</strong> Complex conjugation does <strong>not</strong> act entrywise on $\Phi(\tilde{Q})$. The realization is built with the same $i$ that conjugates the coefficients, and the two operations compete: conjugating the entries of $\Phi(\tilde{Q})$ sends $-i\sigma_1 \mapsto +i\sigma_1$, which is the negative of the image of $e_1$, while the image of $e_2$ is a real matrix and is preserved. Entrywise conjugation is therefore not $\Phi(\bar{\tilde{Q}})$, and it is not the image of any of the four involutions of the algebra. The correct correspondence dresses the conjugation with the <strong>antisymmetric form</strong></p>
 <p>$$
 \epsilon = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} = i\sigma_2 = \Phi(-e_2), \qquad \epsilon^{\mathsf{T}} = -\epsilon, \qquad \epsilon^2 = -I :
 $$</p>
 <p>$$
-\Phi(\tilde{Q}^{*}) = \epsilon \, \overline{\Phi(\tilde{Q})} \, \epsilon^{-1}, \qquad \overline{\Phi(\tilde{Q})} \neq \Phi(\tilde{Q}^{*}) \text{ in general}.
+\Phi(\bar{\tilde{Q}}) = \epsilon \, (\Phi(\tilde{Q}))^{\natural} \, \epsilon^{-1}, \qquad (\Phi(\tilde{Q}))^{\natural} \neq \Phi(\bar{\tilde{Q}}) \text{ in general}.
 $$</p>
 <p>For $\tilde{Q} = e_1$ the two sides differ by a sign: $\overline{\Phi(e_1)} = +i\sigma_1 = -\Phi(e_1)$, while $\epsilon \overline{\Phi(e_1)}\epsilon^{-1} = \Phi(e_1)$ because $e_1^* = e_1$. For $\tilde{Q} = e_2$ the matrices agree entrywise, since $\Phi(e_2)$ is real. This is the single place in the matrix realization where the plausible guess is wrong, and it is the reason the correspondence is stated with the antisymmetric form and not with transposition alone.</p>
 <p><strong>Proposition (Hermitian and anti-Hermitian conjugation).</strong> For every biquaternion $\tilde{Q}$,</p>
 <p>$$
-\Phi(\tilde{Q}^\dagger) = \Phi(\tilde{Q})^\dagger, \qquad \Phi(\tilde{Q}^\flat) = -\Phi(\tilde{Q})^\dagger,
+\Phi(\tilde{Q}^{*}) = \Phi(\tilde{Q})^\dagger, \qquad \Phi(\tilde{Q}^\flat) = -\Phi(\tilde{Q})^\dagger,
 $$</p>
 <p>where ${}^\dagger$ on the right is the conjugate transpose.</p>
-<p><strong>Proof.</strong> Hermitian conjugation is the composite $\bar{\cdot} \circ {}^{*}$, so $\Phi(\tilde{Q}^\dagger) = \Phi\bigl(\bar{\tilde{Q}^{*}}\bigr) = \epsilon\,\Phi(\tilde{Q}^{*})^{\mathsf{T}}\,\epsilon^{-1}$, and substituting the correspondence for ${}^{*}$ gives</p>
+<p><strong>Proof.</strong> Hermitian conjugation is the composite ${}^{\natural} \circ \bar{\cdot}$, so $\Phi(\tilde{Q}^{*}) = \Phi\bigl(\bar{\bar{\tilde{Q}}}\bigr) = \epsilon\,\Phi(\bar{\tilde{Q}})^{\mathsf{T}}\,\epsilon^{-1}$, and substituting the correspondence for $\bar{\cdot}$ gives</p>
 <p>$$
-\Phi(\tilde{Q}^\dagger) = \epsilon \bigl( \epsilon \overline{\Phi(\tilde{Q})} \epsilon^{-1} \bigr)^{\mathsf{T}} \epsilon^{-1} = \epsilon^{2}\,\overline{\Phi(\tilde{Q})}^{\mathsf{T}}\,\epsilon^{-2},
+\Phi(\tilde{Q}^{*}) = \epsilon \bigl( \epsilon (\Phi(\tilde{Q}))^{\natural} \epsilon^{-1} \bigr)^{\mathsf{T}} \epsilon^{-1} = \epsilon^{2}\,((\Phi(\tilde{Q}))^{\natural})^{\mathsf{T}}\,\epsilon^{-2},
 $$</p>
-<p>where the inner transposition passes through the two factors because $\epsilon^{-1} = \epsilon^{\mathsf{T}}$ and hence $(\epsilon M \epsilon^{-1})^{\mathsf{T}} = \epsilon M^{\mathsf{T}} \epsilon^{-1}$ for every $M$. Since $\epsilon^{2} = -I$ and $(-I)^{-1} = -I$, the two outer factors multiply to $I$, so $\Phi(\tilde{Q}^\dagger) = \overline{\Phi(\tilde{Q})}^{\mathsf{T}} = \Phi(\tilde{Q})^\dagger$. The statement for $\flat$ is the definition $\flat = -\dagger$.</p>
+<p>where the inner transposition passes through the two factors because $\epsilon^{-1} = \epsilon^{\mathsf{T}}$ and hence $(\epsilon M \epsilon^{-1})^{\mathsf{T}} = \epsilon M^{\mathsf{T}} \epsilon^{-1}$ for every $M$. Since $\epsilon^{2} = -I$ and $(-I)^{-1} = -I$, the two outer factors multiply to $I$, so $\Phi(\tilde{Q}^{*}) = ((\Phi(\tilde{Q}))^{\natural})^{\mathsf{T}} = \Phi(\tilde{Q})^\dagger$. The statement for $\flat$ is the definition $\flat = -{}^{*}$.</p>
 <p><strong>Proposition (the congruence of a unit).</strong> For every unit $\tilde{Q}$ and every $\tilde U$,
 $$
-\Phi\bigl(\tilde{Q}\tilde U\tilde{Q}^{\dagger}\bigr)=\Phi(\tilde{Q})\,\Phi(\tilde U)\,\Phi(\tilde{Q})^{\dagger},
+\Phi\bigl(\tilde{Q}\tilde U\tilde{Q}^{*}\bigr)=\Phi(\tilde{Q})\,\Phi(\tilde U)\,\Phi(\tilde{Q})^{\dagger},
 $$
-read off from the multiplicativity of $\Phi$ and from $\Phi(\tilde{Q}^{\dagger})=\Phi(\tilde{Q})^{\dagger}$. On the unit-norm slice $\Phi(\tilde{Q})$ lies in $SL(2,\mathbb{C})$, and the identity is the action of that group on the matrix algebra by $*$-congruence: it preserves the Hermitian matrices as a set, it multiplies the determinant by $\lvert N(\tilde{Q})\rvert^{2}$, and it moves the null cone transitively. The rank of $\Phi(\tilde U)$, the modulus of the determinant $\lvert N(\tilde U)\rvert$ and the Hermitian signature of the image are its invariants. A congruence preserves the Hermitian matrices exactly when its matrix is unitary up to a scalar, so those congruences form the projective unitary group $PU(2)=PSU(2)\cong SO(3)$.</p>
+read off from the multiplicativity of $\Phi$ and from $\Phi(\tilde{Q}^{*})=\Phi(\tilde{Q})^{\dagger}$. On the unit-norm slice $\Phi(\tilde{Q})$ lies in $SL(2,\mathbb{C})$, and the identity is the action of that group on the matrix algebra by $*$-congruence: it preserves the Hermitian matrices as a set, it multiplies the determinant by $\lvert N(\tilde{Q})\rvert^{2}$, and it moves the null cone transitively. The rank of $\Phi(\tilde U)$, the modulus of the determinant $\lvert N(\tilde U)\rvert$ and the Hermitian signature of the image are its invariants. A congruence preserves the Hermitian matrices exactly when its matrix is unitary up to a scalar, so those congruences form the projective unitary group $PU(2)=PSU(2)\cong SO(3)$.</p>
 <h2 id="the-six-subspaces-in-matrix-form">The Six Subspaces in Matrix Form</h2>
 <p>The six distinguished subspaces of <em>Biquaternion Four-Vector Element Representation</em> have the following matrix characterizations, each developed in its own article in the <strong>Focus on Subspaces</strong> group of the series. Each is defined before it is used, and the table records the image under $\Phi$ of the subspace, not a new object.</p>
 <div class="table-scroll"><table>
@@ -276,7 +276,7 @@ read off from the multiplicativity of $\Phi$ and from $\Phi(\tilde{Q}^{\dagger})
 </tr>
 </tbody>
 </table></div>
-<p><strong>Proof.</strong> The centre and the traceless part are read from the trace and the definition of the centre. For the quaternion subspace, $\tilde{Q}$ has real coefficients if and only if $\Phi(\tilde{Q})$ is fixed by $\epsilon \overline{(\cdot)}\epsilon^{-1}$, which is the condition $M_{21} = -\overline{M_{12}}$ and $M_{22} = \overline{M_{11}}$; write $z = M_{11}$ and $w = M_{12}$. The anti-quaternion subspace is the multiple of the quaternion subspace by $i$, giving $M_{21} = \overline{M_{12}}$ and $M_{22} = -\overline{M_{11}}$, and writing $u = M_{11}$, $v = M_{12}$ gives the displayed form. For $\mathbb{M}_+$ and $\mathbb{M}_-$, the fixed and anti-fixed spaces of $\dagger$ are exactly the matrices equal to, respectively the negative of, their conjugate transpose, by the proposition above.</p>
+<p><strong>Proof.</strong> The centre and the traceless part are read from the trace and the definition of the centre. For the quaternion subspace, $\tilde{Q}$ has real coefficients if and only if $\Phi(\tilde{Q})$ is fixed by $\epsilon \overline{(\cdot)}\epsilon^{-1}$, which is the condition $M_{21} = -\overline{M_{12}}$ and $M_{22} = \overline{M_{11}}$; write $z = M_{11}$ and $w = M_{12}$. The anti-quaternion subspace is the multiple of the quaternion subspace by $i$, giving $M_{21} = \overline{M_{12}}$ and $M_{22} = -\overline{M_{11}}$, and writing $u = M_{11}$, $v = M_{12}$ gives the displayed form. For $\mathbb{M}_+$ and $\mathbb{M}_-$, the fixed and anti-fixed spaces of ${}^{*}$ are exactly the matrices equal to, respectively the negative of, their conjugate transpose, by the proposition above.</p>
 <p>The two middle rows are the matrix form of the real and imaginary coefficient conditions: the quaternion subspace consists of the matrices of the displayed pattern, in which the off-diagonal entries are related by $M_{21} = -\overline{M_{12}}$ and the diagonal entries by $M_{22} = \overline{M_{11}}$, and the anti-quaternion subspace has the same pattern with the two diagonal signs exchanged, $M_{21} = \overline{M_{12}}$ and $M_{22} = -\overline{M_{11}}$. The Hermitian and anti-Hermitian subspaces are the real and imaginary parts of the coefficient space in the matrix picture, and they are the two subspaces on which the biquaternion norm is real and indefinite, as recorded in <em>Biquaternion Four-Vector Element Representation</em>.</p>
 <p><strong>Remark (the two named images).</strong> Two entries of the table carry standard names. The traceless matrices are exactly the Lie algebra $\mathrm{SL}(2,\mathbb{C}) = \mathrm{span}_{\mathbb{C}}\{e_1, e_2, e_3\}$, so $\Phi(\mathrm{Vect}(\mathbb{B})) = \mathrm{SL}(2,\mathbb{C})$, whose compact real form $\mathrm{SU}(2)$ is the image of the real vector triple; and the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ maps onto a four-dimensional real subspace of $M_2(\mathbb{C})$ closed under multiplication, whose nonzero elements are invertible, so that it is a realization of the quaternion division algebra inside $M_2(\mathbb{C})$, with $\det\Phi(\tilde{Q}) = N(\tilde{Q}) > 0$ on it. The Lie-algebra structure is developed in <em>Biquaternion Lie Algebra</em>, and the quaternion subspace in <em>Biquaternion Quaternion Subspace</em>.</p>
 <h3 id="explicit-patterns-and-invariants">Explicit Patterns and Invariants</h3>
@@ -402,7 +402,7 @@ $$</p>
 <p>Taken together, the three statements say that $\mathbb{B}$ is the full endomorphism algebra of a two-dimensional complex space, and that all of its one-sided ideal structure and all of its degeneracies are the corresponding structure of $M_2(\mathbb{C})$ transported along a fixed linear isomorphism. The classification of the conjugations, the trace and the determinant, the Hermitian form and the module $V$ are the parts of that transport that the companion articles use.</p>
 <h2 id="summary">Summary</h2>
 <p>The biquaternion algebra is isomorphic to $M_2(\mathbb{C})$ through the map $\Phi$ fixed by $e_0 \mapsto I$ and $e_k \mapsto -i\sigma_k$, whose explicit form is $\Phi(\tilde{Q}) = \begin{pmatrix} Q_0 - iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & Q_0 + iQ_3 \end{pmatrix}$. The choice is stated once: the Pauli matrices are a shorthand for the images and not the organising device, and every statement is about $\mathbb{B}$ and $M_2(\mathbb{C})$. The trace is $2Q_0$ and the determinant is the biquaternion norm $N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$, so invertibility is non-vanishing norm and the zero divisors are the singular matrices, a nonzero zero divisor being a rank-one matrix $\Phi(\tilde{Q}) = uv^{T}$. The characteristic polynomial is $\lambda^2 - 2Q_0\lambda + N(\tilde{Q})$ and the Cayley–Hamilton identity is $\tilde{Q}^2 - 2Q_0\tilde{Q} + N(\tilde{Q})e_0 = 0$, so every power reduces to a combination of $e_0$ and $\tilde{Q}$. The real norm of the algebra is the absolute determinant, $r(\tilde{Q}) = \sqrt{|\det\Phi(\tilde{Q})|}$, the real scale the polar representations use. The biquaternion exponential corresponds to the matrix exponential, $\Phi(\exp\tilde{Q}) = \exp\Phi(\tilde{Q})$, whence $N(\exp\tilde{Q}) = e^{2Q_0}$; and $\Phi$ carries the Hermitian subspace onto the Hermitian matrices, intertwining the symmetrized product with $\tfrac12(AB + BA)$ as Jordan algebras.</p>
-<p>Quaternion conjugation is the adjugate, Hermitian conjugation is the conjugate transpose, and complex conjugation is <strong>not</strong> entrywise: it is dressed with the antisymmetric form $\epsilon = i\sigma_2 = \Phi(-e_2)$, as $\Phi(\tilde{Q}^*) = \epsilon\overline{\Phi(\tilde{Q})}\epsilon^{-1}$. The Hermitian form $\tilde{Q}\tilde{Q}^\dagger$ has trace twice the squared Euclidean length of the four-vector, and the Euclidean norm is its square root. The six distinguished subspaces are the scalar, traceless, quaternionic, anti-quaternionic, Hermitian and anti-Hermitian matrices. The algebra is simple with centre the scalar matrices and is the full endomorphism algebra of the simple module $V = \mathbb{C}^2$ of complex dimension $2$, on which it acts by matrix multiplication; the minimal left ideals are the column spaces, and $V$ is the only simple module. The two dimensions $2$ of the module and $2$ of the matrix are the same two, because the algebra is the endomorphism algebra of the module.</p>
+<p>Quaternion conjugation is the adjugate, Hermitian conjugation is the conjugate transpose, and complex conjugation is <strong>not</strong> entrywise: it is dressed with the antisymmetric form $\epsilon = i\sigma_2 = \Phi(-e_2)$, as $\Phi(\bar{\tilde{Q}}) = \epsilon(\Phi(\tilde{Q}))^{\natural}\epsilon^{-1}$. The Hermitian form $\tilde{Q}\tilde{Q}^{*}$ has trace twice the squared Euclidean length of the four-vector, and the Euclidean norm is its square root. The six distinguished subspaces are the scalar, traceless, quaternionic, anti-quaternionic, Hermitian and anti-Hermitian matrices. The algebra is simple with centre the scalar matrices and is the full endomorphism algebra of the simple module $V = \mathbb{C}^2$ of complex dimension $2$, on which it acts by matrix multiplication; the minimal left ideals are the column spaces, and $V$ is the only simple module. The two dimensions $2$ of the module and $2$ of the matrix are the same two, because the algebra is the endomorphism algebra of the module.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -450,26 +450,26 @@ $$</p>
 </tr>
 <tr>
 <td>$\epsilon = i\sigma_2 = \Phi(-e_2)$</td>
-<td>Antisymmetric form, $\Phi(\tilde{Q}^*) = \epsilon\overline{\Phi(\tilde{Q})}\epsilon^{-1}$</td>
+<td>Antisymmetric form, $\Phi(\bar{\tilde{Q}}) = \epsilon(\Phi(\tilde{Q}))^{\natural}\epsilon^{-1}$</td>
 </tr>
 <tr>
 <td>$\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$</td>
 <td>Trace of the matrix realization</td>
 </tr>
 <tr>
-<td>$\mathrm{Sc}(\tilde{Q}\tilde{Q}^\dagger) = \sum_\mu Q_\mu^* Q_\mu$</td>
+<td>$\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*}) = \sum_\mu Q_\bar{\mu} Q_\mu$</td>
 <td>Scalar part of the Hermitian form</td>
 </tr>
 <tr>
 <td>$\|\tilde{Q}\|_E$</td>
-<td>Euclidean norm, $\sqrt{\mathrm{Sc}(\tilde{Q}\tilde{Q}^\dagger)}$</td>
+<td>Euclidean norm, $\sqrt{\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})}$</td>
 </tr>
 <tr>
 <td>$\|\cdot\|_F$</td>
 <td>Frobenius norm of a matrix, $\|\Phi(\tilde{Q})\|_F = \sqrt{2}\,\|\tilde{Q}\|_E$</td>
 </tr>
 <tr>
-<td>$\langle \tilde{P}, \tilde{Q}\rangle = \sum_\mu P_\mu^* Q_\mu$</td>
+<td>$\langle \tilde{P}, \tilde{Q}\rangle = \sum_\mu P_\bar{\mu} Q_\mu$</td>
 <td>Hermitian inner product</td>
 </tr>
 <tr>
@@ -489,7 +489,7 @@ $$</p>
 <td>Traceless matrices, the image $\Phi(\mathrm{Vect}(\mathbb{B}))$</td>
 </tr>
 <tr>
-<td>$\bar{\cdot}, {}^{*}, {}^{\dagger}, {}^{\flat}$</td>
+<td>${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$</td>
 <td>Quaternion, complex, Hermitian and anti-Hermitian conjugations</td>
 </tr>
 <tr>

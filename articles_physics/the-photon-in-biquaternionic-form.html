@@ -70,9 +70,9 @@
 <p>A second, less comfortable point belongs in the introduction. Almost every statement the framework makes about "the photon" is a statement about a general massless spin-one field. The algebra does not single the photon out; it describes a massless gluon in the abelian idealization, a massive Proca field if a mass is added, and any other spin-one field by the same objects.</p>
 <p><strong>Conventions.</strong> The notation is inherited unchanged from the read list. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central scalar imaginary $i$ with $i^2=-1$. The material and informational sectors are</p>
 <p>$$
-\mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^\dagger = -\tilde{Q}\} = \mathrm{span}_\mathbb{R}\{ie_0, e_1, e_2, e_3\},
+\mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\} = \mathrm{span}_\mathbb{R}\{ie_0, e_1, e_2, e_3\},
 \qquad
-\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^\dagger = \tilde{Q}\} = \mathrm{span}_\mathbb{R}\{e_0, ie_1, ie_2, ie_3\},
+\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\} = \mathrm{span}_\mathbb{R}\{e_0, ie_1, ie_2, ie_3\},
 $$</p>
 <p>with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The isomorphism with $M_2(\mathbb{C})$ is $\Phi(e_k)=-i\sigma_k$, $\Phi(ie_k)=\sigma_k$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, the field strength is $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$, in which $c=1/\sqrt{\epsilon\mu}$ gives $\tilde{F}=i\mathbf{E}-\mathbf{H}$. The Riemann–Silberstein vector is $\mathbf{V}=\mathbf{E}+ic\mathbf{B}$ with $\mathbf{B}=\mu\mathbf{H}$, so that $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{V}$. The spacetime metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$.</p>
 <h2 id="the-photon-as-the-quantum-of-the-biquaternion-maxwell-field">The Photon as the Quantum of the Biquaternion Maxwell Field</h2>
@@ -120,7 +120,7 @@ $$</p>
 </tr>
 <tr>
 <td>Conserved energy–momentum</td>
-<td>$\tilde{W}=\tfrac12\tilde{F}\tilde{F}^\dagger=W+\tfrac{i}{c}\mathbf{S}\in\mathbb{M}_+$, with $\mathbf{S}$ the <strong>Poynting vector</strong></td>
+<td>$\tilde{W}=\tfrac12\tilde{F}\tilde{F}^{*}=W+\tfrac{i}{c}\mathbf{S}\in\mathbb{M}_+$, with $\mathbf{S}$ the <strong>Poynting vector</strong></td>
 </tr>
 <tr>
 <td>Photon number</td>
@@ -197,7 +197,7 @@ $$</p>
 <h2 id="what-the-framework-does-not-supply">What the Framework Does Not Supply</h2>
 <p>Two things are conspicuously absent, and both were established by the parent articles rather than by this one.</p>
 <p><strong>The ladder.</strong> The photon creation and annihilation operators satisfy $[\hat a_r,\hat a_s^\dagger]=\zeta_r\delta_{rs}(2\pi)^3\delta^{(3)}(\mathbf{k}-\mathbf{k}')$, a bosonic canonical relation. The Fock article proves that no pair $\tilde a,\tilde a^\dagger\in\mathbb{B}$ satisfies $[\tilde a,\tilde a^\dagger]=e_0$: a commutator has vanishing trace, while $\mathrm{Tr}(e_0)=2$, so the only relation of the form $[\tilde a,\tilde a^\dagger]=c\,e_0$ that can hold in $\mathbb{B}$ has $c=0$. The photon's ladder algebra is therefore not native. It is not even a finite-dimensional object: the physical photon number is the transverse sum $\hat N_\gamma=\sum_{r=1}^{2}\int\hat a_r^\dagger\hat a_r$, acting on the symmetric algebra of the transverse polarization module, which is infinite-dimensional. What the algebra supplies here is the module — the transverse polarization plane of the previous sections — and nothing algebraic on top of it. This is a sharper negative than the spin-$\tfrac12$ case, where the algebra carries the one-mode fermionic relation exactly.</p>
-<p><strong>The gauge.</strong> The canonical-quantization article proves that the algebra gives no reason to prefer the Lorenz gauge $S=\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{A})=0$ to any other. The reduction from the four polarization directions of $\mathbb{M}_-$ to the two transverse physical directions is performed by a subsidiary condition, and the subsidiary condition is imported. So the framework's role is asymmetric: it <em>owns</em> the space in which the reduction happens (the material sector and its indefinite norm), and it <em>does not own</em> the principle by which the reduction is made. I regard this as the central unclosed gap of the article, and it is not closed by the polarization results above.</p>
+<p><strong>The gauge.</strong> The canonical-quantization article proves that the algebra gives no reason to prefer the Lorenz gauge $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})=0$ to any other. The reduction from the four polarization directions of $\mathbb{M}_-$ to the two transverse physical directions is performed by a subsidiary condition, and the subsidiary condition is imported. So the framework's role is asymmetric: it <em>owns</em> the space in which the reduction happens (the material sector and its indefinite norm), and it <em>does not own</em> the principle by which the reduction is made. I regard this as the central unclosed gap of the article, and it is not closed by the polarization results above.</p>
 <p>A third imported ingredient is the operator-valued character of the field. The parent articles leave undecided whether the quantized field should be $\mathbb{B}$-valued or valued in a complex-vector module; the polarization results here are indifferent to that choice, because they concern the classical polarization vectors, which are the same either way.</p>
 <h2 id="derived-represented-outside-an-accounting">Derived, Represented, Outside: An Accounting</h2>
 <div class="table-scroll"><table>

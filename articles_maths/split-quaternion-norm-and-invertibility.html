@@ -53,23 +53,23 @@
         <h1 id="split-quaternion-norm-and-invertibility"><strong>Split-Quaternion Norm and Invertibility</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article studies the split-quaternion norm, its isotropy, and the invertibility theory it determines. It proves the criterion that an element is invertible exactly when its split-quaternion norm does not vanish, describes the group of units, classifies the elements, and describes how the invertible elements are distributed among the distinguished subspaces.</p>
-<p>The split-quaternion algebra, its basis, its conjugation $\bar{\cdot}$, its split-quaternion norm $N$, its idempotents $\tilde\pi_\pm$ and its subspaces $S$, $V$, $\mathbb{D}_2$, $\mathbb{D}_3$ are assumed from <em>Split-Quaternion Algebra</em> and are not redefined. The zero divisor set is treated separately in <em>Split-Quaternion Zero Divisors</em>, and the roots of $-1$ in <em>Split-Quaternion Roots of Minus One</em>. Nothing physical is invoked.</p>
+<p>The split-quaternion algebra, its basis, its conjugation ${}^{\natural}$, its split-quaternion norm $N$, its idempotents $\tilde\pi_\pm$ and its subspaces $S$, $V$, $\mathbb{D}_2$, $\mathbb{D}_3$ are assumed from <em>Split-Quaternion Algebra</em> and are not redefined. The zero divisor set is treated separately in <em>Split-Quaternion Zero Divisors</em>, and the roots of $-1$ in <em>Split-Quaternion Roots of Minus One</em>. Nothing physical is invoked.</p>
 <h2 id="the-split-quaternion-norm">The Split-Quaternion Norm</h2>
 <h3 id="the-split-quaternion-norm_1">The Split-Quaternion Norm</h3>
 <p><strong>Definition.</strong> The <strong>split-quaternion norm</strong> of $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ is</p>
 <p>$$
-N(\tilde q) = \tilde q\bar{\tilde q} = \bar{\tilde q}\tilde q = q_0^2 + q_1^2 - q_2^2 - q_3^2,
+N(\tilde q) = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural}\tilde q = q_0^2 + q_1^2 - q_2^2 - q_3^2,
 $$</p>
-<p>where $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ is the conjugation of (<em>Split-Quaternion Algebra</em>, §<em>The Conjugation</em>).</p>
+<p>where $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ is the conjugation of (<em>Split-Quaternion Algebra</em>, §<em>The Conjugation</em>).</p>
 <p>The form is a real quadratic form of <strong>signature $(2,2)$</strong>, read directly from the diagonal expression as two positive and two negative squares. It is <strong>multiplicative</strong>:</p>
 <p>$$
 N(\tilde q y) = N(\tilde q)N(y) \qquad (\tilde q, y \in \mathbb{H}_{\mathrm{s}}).
 $$</p>
-<p><strong>Proof.</strong> The product $\tilde q\bar{\tilde q}$ is fixed by the conjugation, hence central; therefore, for all $\tilde q, y$,</p>
+<p><strong>Proof.</strong> The product $\tilde q\tilde{q}^{\natural}$ is fixed by the conjugation, hence central; therefore, for all $\tilde q, y$,</p>
 <p>$$
-N(\tilde q y) = (\tilde q y)\overline{(\tilde q y)} = \tilde q\, y\bar y\, \bar{\tilde q} = \tilde q \bar{\tilde q}\, y\bar y = N(\tilde q)N(y),
+N(\tilde q y) = (\tilde q y)((\tilde q y))^{\natural} = \tilde q\, y y^{\natural}\, \tilde{q}^{\natural} = \tilde q \tilde{q}^{\natural}\, y y^{\natural} = N(\tilde q)N(y),
 $$</p>
-<p>using $\overline{\tilde q y} = \bar y \bar{\tilde q}$ and the centrality of $y\bar y$.</p>
+<p>using $(\tilde q y)^{\natural} = y^{\natural} \tilde{q}^{\natural}$ and the centrality of $y y^{\natural}$.</p>
 <p>Its polarisation is the bilinear form</p>
 <p>$$
 B(\tilde q, y) = \tfrac{1}{2}\big(N(\tilde q+y) - N(\tilde q) - N(y)\big) = q_0 q_0' + q_1 q_1' - q_2 q_2' - q_3 q_3'
@@ -108,15 +108,15 @@ $$</p>
 </ol>
 <p>When these hold, the inverse is</p>
 <p>$$
-\tilde q^{-1} = \frac{\bar{\tilde q}}{N(\tilde q)} .
+\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{N(\tilde q)} .
 $$</p>
-<p><strong>Proof.</strong> Suppose first that $N(\tilde q) \neq 0$. Then $\bar{\tilde q}/N(\tilde q)$ is a real multiple of $\bar{\tilde q}$, and</p>
+<p><strong>Proof.</strong> Suppose first that $N(\tilde q) \neq 0$. Then $\tilde{q}^{\natural}/N(\tilde q)$ is a real multiple of $\tilde{q}^{\natural}$, and</p>
 <p>$$
-\tilde q \cdot \frac{\bar{\tilde q}}{N(\tilde q)} = \frac{\tilde q\bar{\tilde q}}{N(\tilde q)} = \frac{N(\tilde q)}{N(\tilde q)} = 1, \qquad
-\frac{\bar{\tilde q}}{N(\tilde q)} \cdot \tilde q = \frac{\bar{\tilde q}\tilde q}{N(\tilde q)} = 1,
+\tilde q \cdot \frac{\tilde{q}^{\natural}}{N(\tilde q)} = \frac{\tilde q\tilde{q}^{\natural}}{N(\tilde q)} = \frac{N(\tilde q)}{N(\tilde q)} = 1, \qquad
+\frac{\tilde{q}^{\natural}}{N(\tilde q)} \cdot \tilde q = \frac{\tilde{q}^{\natural}\tilde q}{N(\tilde q)} = 1,
 $$</p>
 <p>so $\tilde q$ is invertible with the displayed inverse. Conversely, suppose $\tilde q$ is invertible, say $\tilde q y = 1$. Applying $N$ and using multiplicativity, $N(\tilde q)N(y) = N(1) = 1$, so $N(\tilde q) \neq 0$. This proves the equivalence of (1) and (2).</p>
-<p><strong>Corollary (Zero Divisors).</strong> A nonzero element is a zero divisor if and only if $N(\tilde q) = 0$. If $N(\tilde q) = 0$ and $\tilde q \neq 0$, then $\tilde q\bar{\tilde q} = 0$ with $\bar{\tilde q} \neq 0$, so $\tilde q$ is a zero divisor; conversely a zero divisor is not a unit, so $N(\tilde q) = 0$ by the criterion.</p>
+<p><strong>Corollary (Zero Divisors).</strong> A nonzero element is a zero divisor if and only if $N(\tilde q) = 0$. If $N(\tilde q) = 0$ and $\tilde q \neq 0$, then $\tilde q\tilde{q}^{\natural} = 0$ with $\tilde{q}^{\natural} \neq 0$, so $\tilde q$ is a zero divisor; conversely a zero divisor is not a unit, so $N(\tilde q) = 0$ by the criterion.</p>
 <p>The criterion has the form the menu names: <strong>invertibility is $N \neq 0$</strong>, and the boundary is the null cone of the split-quaternion norm. Since the split-quaternion norm is multiplicative, the multiplicative structure of the algebra and the invertibility theory are governed by one quadratic form.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <p><strong>Definition.</strong> The <strong>group of units</strong> of the split-quaternion algebra is</p>
@@ -245,7 +245,7 @@ $$</p>
 <p>The eight-dimensional algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table is a real algebra of dimension eight, and it is treated later in Part V, under Split-Biquaternions; nothing of it is used here. The structural difference that decides the comparison is visible from the conventions alone: its coefficients lie in the split-complex ring $\mathbb{D}$, so its norm takes values in $\mathbb{D}$, and $\mathbb{D}$ has zero divisors of its own. An invertibility criterion in that system is a criterion in a ring with zero divisors, and its classification therefore has a third nonzero class — the elements whose norm is a nonzero zero divisor — which does not exist in the present article. The present classification, by contrast, is the dichotomy of <em>The Three-Way Classification</em>, and the reason is exactly that the coefficient field here is $\mathbb{R}$.</p>
 <h2 id="summary">Summary</h2>
 <p>The split-quaternion norm is $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$, of signature $(2,2)$ and multiplicative. The form is isotropic; its isotropic vectors satisfy $q_0^2 + q_1^2 = q_2^2 + q_3^2$, its isotropic lines are the points of a doubly ruled projective null quadric, and on the vector subspace the isotropic lines are the lines of the light cone $q_1^2 = q_2^2 + q_3^2$.</p>
-<p>A nonzero element is invertible exactly when $N(\tilde q) \neq 0$, and then $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$; it is a zero divisor exactly when $N(\tilde q) = 0$. The group of units is $\{N \neq 0\}$, the norm-one subgroup is $U = \{N = 1\} \cong \mathrm{SL}_2(\mathbb{R})$, and $\{N = \pm 1\} = U \sqcup (-U)$ has two components. The units form the two connected components $\{N > 0\}$ and $\{N < 0\}$.</p>
+<p>A nonzero element is invertible exactly when $N(\tilde q) \neq 0$, and then $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$; it is a zero divisor exactly when $N(\tilde q) = 0$. The group of units is $\{N \neq 0\}$, the norm-one subgroup is $U = \{N = 1\} \cong \mathrm{SL}_2(\mathbb{R})$, and $\{N = \pm 1\} = U \sqcup (-U)$ has two components. The units form the two connected components $\{N > 0\}$ and $\{N < 0\}$.</p>
 <p>The classification of the elements is a dichotomy plus the zero element: invertible, or zero divisor, or zero; there is no further class, because the split-quaternion norm takes values in the field $\mathbb{R}$. The invertible elements are distributed as follows: all nonzero scalars are units; in $V$ the units are the spacelike and timelike vectors and the zero divisors are the light cone; in each split-complex subalgebra the units avoid the two isotropic lines; and the four minimal ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$, $\tilde\pi_\pm \mathbb{H}_{\mathrm{s}}$ are totally isotropic. In the eight-dimensional $\mathbb{H}_{\mathbb{D}}$ the norm takes values in a ring with zero divisors, and the corresponding classification has a genuinely third nonzero class; that system is treated later under Split-Biquaternions.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -263,7 +263,7 @@ $$</p>
 <td><em>Split-Quaternion Algebra</em></td>
 </tr>
 <tr>
-<td>$N(\tilde q) = \tilde q\bar{\tilde q}$</td>
+<td>$N(\tilde q) = \tilde q\tilde{q}^{\natural}$</td>
 <td>the split-quaternion norm, signature $(2,2)$</td>
 <td>this article</td>
 </tr>

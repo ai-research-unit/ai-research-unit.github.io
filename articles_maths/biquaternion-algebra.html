@@ -133,46 +133,46 @@ $$</p>
 <p><strong>The four grades.</strong> Read geometrically, the four components of a biquaternion carry four distinct grades: the grade-zero part is the real scalar $S(p)e_0$; the grade-one part is the imaginary pure quaternion $iV(p)$; the grade-two part is the real pure quaternion $V(p)$; and the grade-three part is the imaginary scalar $iS(p)e_0$, the pseudoscalar. The product of two vectors is a bivector and the product of a vector with a bivector is a vector, so the algebra fixes the grades of the product from those of the factors, and the outer product isolates the part contributed by the vector parts.</p>
 <p><strong>Remark (the naming).</strong> The quaternion reading names the three units $e_1,e_2,e_3$ vectors, whereas the geometric reading names them areas of grade two; the geometric vectors are the imaginary quaternions $ie_k$. Sangwine, Ell and Le Bihan record that the axial and polar terminology of physics has added to the confusion, since the two terms suggest different types of vector for one algebraic object. This article keeps the quaternion names in the algebra and defers to <em>The Clifford Structure of the Biquaternion Algebra</em> for the grade names.</p>
 <h3 id="conjugations">Conjugations</h3>
-<p>There are <strong>four</strong> natural conjugations on $\mathbb{B}$. The first three are obtained from the quaternion conjugation $\bar{\cdot}$ and the complex conjugation ${}^*$; the fourth is defined as the negative of Hermitian conjugation:</p>
-<p><strong>Quaternion conjugation</strong> $\bar{\tilde{Q}}$:</p>
+<p>There are <strong>four</strong> natural conjugations on $\mathbb{B}$. The first three are obtained from the quaternion conjugation ${}^{\natural}$ and the complex conjugation $\bar{\cdot}$; the fourth is defined as the negative of Hermitian conjugation:</p>
+<p><strong>Quaternion conjugation</strong> $\tilde{Q}^{\natural}$:</p>
 <p>$$
-\bar{\tilde{Q}} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3.
+\tilde{Q}^{\natural} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3.
 $$</p>
-<p><strong>Complex conjugation</strong> $\tilde{Q}^*$:</p>
+<p><strong>Complex conjugation</strong> $\bar{\tilde{Q}}$:</p>
 <p>$$
-\tilde{Q}^* = Q_0^* e_0 + Q_1^* e_1 + Q_2^* e_2 + Q_3^* e_3.
+\bar{\tilde{Q}} = \bar{Q_0} e_0 + \bar{Q_1} e_1 + \bar{Q_2} e_2 + \bar{Q_3} e_3.
 $$</p>
-<p><strong>Hermitian conjugation</strong> $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$:</p>
+<p><strong>Hermitian conjugation</strong> $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$:</p>
 <p>$$
-\tilde{Q}^\dagger = Q_0^* e_0 - Q_1^* e_1 - Q_2^* e_2 - Q_3^* e_3.
+\tilde{Q}^{*} = \bar{Q_0} e_0 - \bar{Q_1} e_1 - \bar{Q_2} e_2 - \bar{Q_3} e_3.
 $$</p>
-<p><strong>Anti-Hermitian conjugation</strong> $\tilde{Q}^\flat = -\tilde{Q}^\dagger$:</p>
+<p><strong>Anti-Hermitian conjugation</strong> $\tilde{Q}^\flat = -\tilde{Q}^{*}$:</p>
 <p>$$
-\tilde{Q}^\flat = -Q_0^* e_0 + Q_1^* e_1 + Q_2^* e_2 + Q_3^* e_3.
+\tilde{Q}^\flat = -\bar{Q_0} e_0 + \bar{Q_1} e_1 + \bar{Q_2} e_2 + \bar{Q_3} e_3.
 $$</p>
 <p>Each conjugation is an involution: applying it twice returns the original biquaternion. Each therefore splits $\mathbb{B}$ into a fixed space and an anti-fixed space, and each of the two is a real vector subspace of $\mathbb{B}$.</p>
 <h3 id="the-group-of-conjugations">The Group of Conjugations</h3>
-<p>The quaternion conjugation $\bar{\cdot}$ and the complex conjugation ${}^*$ are commuting involutions. They generate the Klein four-group</p>
+<p>The quaternion conjugation ${}^{\natural}$ and the complex conjugation $\bar{\cdot}$ are commuting involutions. They generate the Klein four-group</p>
 <p>$$
-\{\mathrm{id},\bar{\cdot},{}^{*},{}^{\dagger}\}\cong \mathbb{Z}/2\times \mathbb{Z}/2,
+\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}\cong \mathbb{Z}/2\times \mathbb{Z}/2,
 $$</p>
 <p>where</p>
 <p>$$
-\tilde{Q}^\dagger=\bar{\tilde{Q}}^*=\tilde{Q}^{*\bar{}}.
+\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}=\overline{\tilde{Q}^{\natural}}.
 $$</p>
 <p>Thus Hermitian conjugation is the composition of the two commuting generators.</p>
 <p>The anti-Hermitian conjugation is defined by</p>
 <p>$$
-\tilde{Q}^\flat=-\tilde{Q}^\dagger=-\bar{\tilde{Q}}^*.
+\tilde{Q}^\flat=-\tilde{Q}^{*}=-\overline{\tilde{Q}^{\natural}}.
 $$</p>
-<p>It is an involution, since $(\tilde{Q}^\flat)^\flat=\tilde{Q}$, but it is not an algebra anti-automorphism and it is not a member of the Klein four-group above. Composing it with $\dagger$ gives</p>
+<p>It is an involution, since $(\tilde{Q}^\flat)^\flat=\tilde{Q}$, but it is not an algebra anti-automorphism and it is not a member of the Klein four-group above. Composing it with ${}^{*}$ gives</p>
 <p>$$
-(\tilde{Q}^\dagger)^\flat=-\tilde{Q},\qquad
+(\tilde{Q}^{*})^\flat=-\tilde{Q},\qquad
 (\tilde{Q}^\flat)^\dagger=-\tilde{Q}.
 $$</p>
-<p>So $\flat$ is determined by $\dagger$ together with the central sign $-1$. The four natural conjugations are $\bar{\cdot},{}^{*},{}^{\dagger},{}^{\flat}$, but only $\{\mathrm{id},\bar{\cdot},{}^{*},{}^{\dagger}\}$ forms a group under composition.</p>
+<p>So $\flat$ is determined by ${}^{*}$ together with the central sign $-1$. The four natural conjugations are ${}^{\natural},\bar{\cdot},{}^{*},{}^{\flat}$, but only $\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$ forms a group under composition.</p>
 <h2 id="the-six-subspaces">The Six Subspaces</h2>
-<p>The three commuting involutions $\bar{\cdot}$, ${}^{*}$ and ${}^{\dagger}$ (with $\dagger = \bar{\cdot}\circ{}^{*}$) each split $\mathbb{B}$ into a fixed space and an anti-fixed space. The <strong>six</strong> subspaces so obtained are the distinguished real subspaces of $\mathbb{B}$. Four of them are four-dimensional; the remaining two are the two-dimensional <strong>center</strong> and the six-dimensional <strong>vector subspace</strong>. The fourth conjugation $\flat = -\dagger$ is not independent: it has the same two eigenspaces as $\dagger$, with the signs exchanged, so it produces no further subspace.</p>
+<p>The three commuting involutions ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ (with ${}^{*} = {}^{\natural}\circ\bar{\cdot}$) each split $\mathbb{B}$ into a fixed space and an anti-fixed space. The <strong>six</strong> subspaces so obtained are the distinguished real subspaces of $\mathbb{B}$. Four of them are four-dimensional; the remaining two are the two-dimensional <strong>center</strong> and the six-dimensional <strong>vector subspace</strong>. The fourth conjugation $\flat = -{}^{*}$ is not independent: it has the same two eigenspaces as ${}^{*}$, with the signs exchanged, so it produces no further subspace.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -185,31 +185,31 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathbb{C}_{\mathbb{B}}$ (complex, the center)</td>
-<td>$\bar{\tilde{Q}} = \tilde{Q}$</td>
+<td>$\tilde{Q}^{\natural} = \tilde{Q}$</td>
 <td>$e_0,\ ie_0$</td>
 <td>$2$</td>
 </tr>
 <tr>
 <td>$\mathrm{Vect}(\mathbb{B})$ (vector)</td>
-<td>$\bar{\tilde{Q}} = -\tilde{Q}$</td>
+<td>$\tilde{Q}^{\natural} = -\tilde{Q}$</td>
 <td>$e_1,\ e_2,\ e_3,\ ie_1,\ ie_2,\ ie_3$</td>
 <td>$6$</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{B}}$ (quaternion)</td>
-<td>$\tilde{Q}^{*} = \tilde{Q}$</td>
+<td>$\bar{\tilde{Q}} = \tilde{Q}$</td>
 <td>$e_0,\ e_1,\ e_2,\ e_3$</td>
 <td>$4$</td>
 </tr>
 <tr>
 <td>$i\mathbb{H}_{\mathbb{B}}$ (anti-quaternion)</td>
-<td>$\tilde{Q}^{*} = -\tilde{Q}$</td>
+<td>$\bar{\tilde{Q}} = -\tilde{Q}$</td>
 <td>$ie_0,\ ie_1,\ ie_2,\ ie_3$</td>
 <td>$4$</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_+$ (Hermitian)</td>
-<td>$\tilde{Q}^{\dagger} = \tilde{Q}$</td>
+<td>$\tilde{Q}^{*} = \tilde{Q}$</td>
 <td>$e_0,\ ie_1,\ ie_2,\ ie_3$</td>
 <td>$4$</td>
 </tr>
@@ -268,18 +268,18 @@ $$</p>
 <h3 id="the-six-together">The Six Together</h3>
 <p>Of the six subspaces, exactly two are subalgebras: the center $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$ and the quaternion subspace $\mathbb{H}_{\mathbb{B}} \cong \mathbb{H}$. Both are division algebras. The vector subspace is closed under neither multiplication nor left multiplication by $\mathbb{H}_{\mathbb{B}}$; the anti-quaternion subspace is an $\mathbb{H}_{\mathbb{B}}$-module but not a subalgebra; and the two sectors $\mathbb{M}_\pm$ are neither. The six are pairwise distinct as sets, and no two of them are equal; their dimensions $2, 6, 4, 4, 4, 4$ sum to more than $8$, so they necessarily overlap, and how they do so is the subject of <em>Biquaternion Relations Between Subspaces</em>.</p>
 <h2 id="the-quaternion-decomposition">The Quaternion Decomposition</h2>
-<p>The complex conjugation ${}^{*}$ is an involution, and the two subspaces just defined are its eigenspaces: $\mathbb{H}_{\mathbb{B}}$ is the eigenspace of eigenvalue $+1$ and $i\mathbb{H}_{\mathbb{B}}$ the eigenspace of eigenvalue $-1$. Both have real dimension 4, and they are independent, so $\mathbb{B}$ splits as a direct sum of the two.</p>
+<p>The complex conjugation $\bar{\cdot}$ is an involution, and the two subspaces just defined are its eigenspaces: $\mathbb{H}_{\mathbb{B}}$ is the eigenspace of eigenvalue $+1$ and $i\mathbb{H}_{\mathbb{B}}$ the eigenspace of eigenvalue $-1$. Both have real dimension 4, and they are independent, so $\mathbb{B}$ splits as a direct sum of the two.</p>
 <p>Every biquaternion can be written uniquely as</p>
 <p>$$
 \tilde{Q} = \tilde{Q}_r + i \tilde{Q}_i,
 $$</p>
 <p>where $\tilde{Q}_r$ and $\tilde{Q}_i$ are <strong>ordinary quaternions</strong> (elements of $\mathbb{H}$ embedded in $\mathbb{B}$), with real coefficients. The two components are</p>
 <p>$$
-\tilde{Q}_r = \frac{1}{2}(\tilde{Q} + \tilde{Q}^*), \qquad \tilde{Q}_i = \frac{1}{2i}(\tilde{Q} - \tilde{Q}^*).
+\tilde{Q}_r = \frac{1}{2}(\tilde{Q} + \bar{\tilde{Q}}), \qquad \tilde{Q}_i = \frac{1}{2i}(\tilde{Q} - \bar{\tilde{Q}}).
 $$</p>
 <p>Indeed, $\tilde{Q}_r$ is fixed by complex conjugation, so it lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and $\tilde{Q}_i$ is also fixed by complex conjugation. To see the latter, compute</p>
 <p>$$
-\tilde{Q}_i^* = \left(\frac{1}{2i}(\tilde{Q} - \tilde{Q}^*)\right)^* = \frac{-1}{2i}\left(\tilde{Q}^* - \tilde{Q}\right) = \frac{1}{2i}\left(\tilde{Q} - \tilde{Q}^*\right) = \tilde{Q}_i,
+\bar{\tilde{Q}_i} = \left(\frac{1}{2i}(\tilde{Q} - \bar{\tilde{Q}})\right)^* = \frac{-1}{2i}\left(\bar{\tilde{Q}} - \tilde{Q}\right) = \frac{1}{2i}\left(\tilde{Q} - \bar{\tilde{Q}}\right) = \tilde{Q}_i,
 $$</p>
 <p>so $\tilde{Q}_i$ lies in $\mathbb{H}_{\mathbb{B}}$ as well. The sum is $\tilde{Q}_r + i \tilde{Q}_i = \tilde{Q}$.</p>
 <p>This gives the direct sum decomposition</p>
@@ -289,13 +289,13 @@ $$</p>
 <p>where $i\mathbb{H}_{\mathbb{B}}$ is the set of biquaternions of the form $i \tilde{Q}$ with $\tilde{Q} \in \mathbb{H}_{\mathbb{B}}$. Both are real vector spaces of dimension 4, and their direct sum is the full algebra $\mathbb{B}$ of real dimension 8.</p>
 <p>This is the <strong>quaternion decomposition</strong> of a biquaternion. It expresses $\tilde{Q}$ as a quaternion plus the scalar imaginary times another quaternion. It is the natural decomposition when we think of $\mathbb{B}$ as the complexification of $\mathbb{H}$: the first summand is the "real part" and the second is the "imaginary part" of the complexification.</p>
 <h2 id="the-hermitian-decomposition">The Hermitian Decomposition</h2>
-<p>The Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ are the two eigenspaces of the Hermitian conjugation $\dagger$. Every biquaternion decomposes uniquely as the sum of a Hermitian part and an anti-Hermitian part:</p>
+<p>The Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ are the two eigenspaces of the Hermitian conjugation ${}^{*}$. Every biquaternion decomposes uniquely as the sum of a Hermitian part and an anti-Hermitian part:</p>
 <p>$$
 \tilde{Q} = \tilde{Q}_+ + \tilde{Q}_-, \qquad \tilde{Q}_+ \in \mathbb{M}_+, \quad \tilde{Q}_- \in \mathbb{M}_-.
 $$</p>
 <p>The two components are obtained from the Hermitian conjugation:</p>
 <p>$$
-\tilde{Q}_+ = \frac{1}{2}(\tilde{Q} + \tilde{Q}^\dagger), \qquad \tilde{Q}_- = \frac{1}{2}(\tilde{Q} - \tilde{Q}^\dagger).
+\tilde{Q}_+ = \frac{1}{2}(\tilde{Q} + \tilde{Q}^{*}), \qquad \tilde{Q}_- = \frac{1}{2}(\tilde{Q} - \tilde{Q}^{*}).
 $$</p>
 <p>Indeed, $\tilde{Q}_+$ is fixed by Hermitian conjugation, so it lies in $\mathbb{M}_+$, and $\tilde{Q}_-$ satisfies $\tilde{Q}_-^\dagger = -\tilde{Q}_-$, so it lies in $\mathbb{M}_-$. The sum is $\tilde{Q}_+ + \tilde{Q}_- = \tilde{Q}$.</p>
 <p>This gives the direct sum decomposition</p>
@@ -305,13 +305,13 @@ $$</p>
 <p>where $\mathbb{M}_+$ is the Hermitian subspace and $\mathbb{M}_-$ is the anti-Hermitian subspace. Both are real vector spaces of dimension 4, and their direct sum is the full algebra $\mathbb{B}$ of real dimension 8.</p>
 <p>The decomposition is the algebraic analogue of writing a complex number as the sum of its real and imaginary parts. Here, however, both components are biquaternions, and the two subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ are not subalgebras of $\mathbb{B}$; the decomposition is a vector-space decomposition, not an algebra decomposition.</p>
 <h2 id="the-center-and-vector-decomposition">The Center and Vector Decomposition</h2>
-<p>The quaternion conjugation $\bar{\cdot}$ is the third commuting involution. Its eigenspaces are the center $\mathbb{C}_{\mathbb{B}}$ (eigenvalue $+1$) and the vector subspace $\mathrm{Vect}(\mathbb{B})$ (eigenvalue $-1$), of real dimensions 2 and 6. Every biquaternion therefore decomposes uniquely as a scalar plus a pure vector part:</p>
+<p>The quaternion conjugation ${}^{\natural}$ is the third commuting involution. Its eigenspaces are the center $\mathbb{C}_{\mathbb{B}}$ (eigenvalue $+1$) and the vector subspace $\mathrm{Vect}(\mathbb{B})$ (eigenvalue $-1$), of real dimensions 2 and 6. Every biquaternion therefore decomposes uniquely as a scalar plus a pure vector part:</p>
 <p>$$
 \tilde{Q} = \tilde{Q}_{\mathrm{c}} + \tilde{Q}_{\mathrm{v}}, \qquad \tilde{Q}_{\mathrm{c}} = Q_0 e_0 \in \mathbb{C}_{\mathbb{B}}, \quad \tilde{Q}_{\mathrm{v}} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3 \in \mathrm{Vect}(\mathbb{B}),
 $$</p>
 <p>with</p>
 <p>$$
-\tilde{Q}_{\mathrm{c}} = \frac{1}{2}(\tilde{Q} + \bar{\tilde{Q}}), \qquad \tilde{Q}_{\mathrm{v}} = \frac{1}{2}(\tilde{Q} - \bar{\tilde{Q}}).
+\tilde{Q}_{\mathrm{c}} = \frac{1}{2}(\tilde{Q} + \tilde{Q}^{\natural}), \qquad \tilde{Q}_{\mathrm{v}} = \frac{1}{2}(\tilde{Q} - \tilde{Q}^{\natural}).
 $$</p>
 <p>This gives the direct sum decomposition</p>
 <p>$$
@@ -323,12 +323,12 @@ $$</p>
 <p>$$
 \mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i \mathbb{H}_{\mathbb{B}}, \qquad \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-, \qquad \mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})
 $$</p>
-<p>are the eigenspace decompositions of the three pairwise commuting involutions ${}^{*}$, $\dagger$ and $\bar{\cdot}$. They are the only decompositions of this kind: each is determined by one of the three, and $\flat = -\dagger$ reproduces the eigenspaces of $\dagger$ with the signs exchanged and so gives nothing new. That is why there are six subspaces rather than four or eight.</p>
+<p>are the eigenspace decompositions of the three pairwise commuting involutions $\bar{\cdot}$, ${}^{*}$ and ${}^{\natural}$. They are the only decompositions of this kind: each is determined by one of the three, and $\flat = -{}^{*}$ reproduces the eigenspaces of ${}^{*}$ with the signs exchanged and so gives nothing new. That is why there are six subspaces rather than four or eight.</p>
 <p><strong>The four coordinate blocks.</strong> Because the involutions commute, the four-dimensional subspaces are built from four common pieces. Write</p>
 <p>$$
 A_1 = \mathbb{R} e_0, \qquad A_2 = \mathbb{R}(ie_0), \qquad B_1 = \operatorname{span}_{\mathbb{R}}\{e_1, e_2, e_3\}, \qquad B_2 = \operatorname{span}_{\mathbb{R}}\{ie_1, ie_2, ie_3\}.
 $$</p>
-<p>These are the two <strong>scalar blocks</strong> $A_1, A_2$ of dimension 1 and the two <strong>vector blocks</strong> $B_1, B_2$ of dimension 3. The two involutions ${}^{*}$ and $\bar{\cdot}$ are diagonal on them, and every one of the six subspaces is a sum of blocks:</p>
+<p>These are the two <strong>scalar blocks</strong> $A_1, A_2$ of dimension 1 and the two <strong>vector blocks</strong> $B_1, B_2$ of dimension 3. The two involutions $\bar{\cdot}$ and ${}^{\natural}$ are diagonal on them, and every one of the six subspaces is a sum of blocks:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -401,7 +401,7 @@ $$</p>
 \mathbb{M}_+=A_1\oplus B_2, \qquad \mathbb{M}_-=A_2\oplus B_1,
 $$</p>
 <p>which recovers the two displayed factorizations $\mathbb{M}_+ = \mathbb{R} e_0 \oplus \operatorname{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$ and $\mathbb{M}_- = \mathbb{R}(ie_0)\oplus \operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$.</p>
-<p><strong>Action of the conjugations.</strong> The quaternion conjugation $\bar{\cdot}$ commutes with both ${}^*$ and $\dagger$, so it preserves each of the six subspaces, and it acts as $+1$ on the scalar blocks and $-1$ on the vector blocks. Multiplication by the central scalar $i$ interchanges the two summands in every decomposition:</p>
+<p><strong>Action of the conjugations.</strong> The quaternion conjugation ${}^{\natural}$ commutes with both $\bar{\cdot}$ and ${}^{*}$, so it preserves each of the six subspaces, and it acts as $+1$ on the scalar blocks and $-1$ on the vector blocks. Multiplication by the central scalar $i$ interchanges the two summands in every decomposition:</p>
 <p>$$
 i\,\mathbb{H}_{\mathbb{B}}=i\mathbb{H}_{\mathbb{B}},\qquad
 i\,(i\mathbb{H}_{\mathbb{B}})=\mathbb{H}_{\mathbb{B}},
@@ -416,56 +416,56 @@ $$</p>
 i\,\mathbb{C}_{\mathbb{B}}=\mathbb{C}_{\mathbb{B}},\qquad
 i\,\mathrm{Vect}(\mathbb{B})=\mathrm{Vect}(\mathbb{B}).
 $$</p>
-<p>The complex conjugation ${}^*$ fixes $\mathbb{H}_{\mathbb{B}}$ and negates $i\mathbb{H}_{\mathbb{B}}$, while Hermitian conjugation $\dagger$ fixes $\mathbb{M}_+$ and negates $\mathbb{M}_-$. In particular, it is multiplication by $i$, not quaternion conjugation, that swaps $\mathbb{M}_+$ and $\mathbb{M}_-$; the center and the vector subspace are each stable under it.</p>
+<p>The complex conjugation $\bar{\cdot}$ fixes $\mathbb{H}_{\mathbb{B}}$ and negates $i\mathbb{H}_{\mathbb{B}}$, while Hermitian conjugation ${}^{*}$ fixes $\mathbb{M}_+$ and negates $\mathbb{M}_-$. In particular, it is multiplication by $i$, not quaternion conjugation, that swaps $\mathbb{M}_+$ and $\mathbb{M}_-$; the center and the vector subspace are each stable under it.</p>
 <h2 id="the-hermitian-form">The Hermitian Form</h2>
 <h3 id="definition_1">Definition</h3>
 <p>The <strong>Hermitian form</strong> of a biquaternion $\tilde{Q}$ is the biquaternion</p>
 <p>$$
-\tilde{Q} \tilde{Q}^\dagger,
+\tilde{Q} \tilde{Q}^{*},
 $$</p>
-<p>where $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$ is the Hermitian conjugate.</p>
+<p>where $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ is the Hermitian conjugate.</p>
 <p><strong>Basic properties.</strong></p>
 <ul>
-<li>$\tilde{Q} \tilde{Q}^\dagger$ is a <strong>biquaternion</strong>, not a real scalar in general. Its <strong>scalar part</strong> is</li>
+<li>$\tilde{Q} \tilde{Q}^{*}$ is a <strong>biquaternion</strong>, not a real scalar in general. Its <strong>scalar part</strong> is</li>
 </ul>
 <p>$$
-\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^\dagger\right) = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3} (q_\mu^2 + (q'_\mu)^2),
+\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^{*}\right) = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3} (q_\mu^2 + (q'_\mu)^2),
 $$</p>
-<p>with $Q_\mu = q_\mu + i q'_\mu$. This scalar part is non-negative and vanishes if and only if $\tilde{Q} = 0$. The vector part of $\tilde{Q} \tilde{Q}^\dagger$ does not in general vanish: for example, for $\tilde{Q} = e_0 + ie_1$, one has $\tilde{Q}^\dagger = e_0 + ie_1$ and</p>
+<p>with $Q_\mu = q_\mu + i q'_\mu$. This scalar part is non-negative and vanishes if and only if $\tilde{Q} = 0$. The vector part of $\tilde{Q} \tilde{Q}^{*}$ does not in general vanish: for example, for $\tilde{Q} = e_0 + ie_1$, one has $\tilde{Q}^{*} = e_0 + ie_1$ and</p>
 <p>$$
-\tilde{Q} \tilde{Q}^\dagger = (e_0 + ie_1)^2 = 2e_0 + 2ie_1,
+\tilde{Q} \tilde{Q}^{*} = (e_0 + ie_1)^2 = 2e_0 + 2ie_1,
 $$</p>
 <p>which has a nonzero vector part $2ie_1$.</p>
 <ul>
 <li>The Hermitian form is <strong>not</strong> multiplicative with respect to the biquaternion product, and its scalar part does not in general equal the biquaternion norm $N(\tilde{Q}) = \sum_\mu Q_\mu^2$.</li>
-<li>The Hermitian form is <strong>Hermitian</strong> in the sense that $(\tilde{Q} \tilde{Q}^\dagger)^\dagger = \tilde{Q} \tilde{Q}^\dagger$: the Hermitian form of any biquaternion is a Hermitian element of $\mathbb{B}$.</li>
+<li>The Hermitian form is <strong>Hermitian</strong> in the sense that $(\tilde{Q} \tilde{Q}^{*})^\dagger = \tilde{Q} \tilde{Q}^{*}$: the Hermitian form of any biquaternion is a Hermitian element of $\mathbb{B}$.</li>
 </ul>
 <h2 id="the-inner-product">The Inner Product</h2>
 <p>The <strong>inner product</strong> of two biquaternions is the complex scalar</p>
 <p>$$
-\langle \tilde{P}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_\mu^* Q_\mu
+\langle \tilde{P}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_\bar{\mu} Q_\mu
 = \sum_{\mu=0}^{3} (p_\mu q_\mu + p'_\mu q'_\mu) + i \sum_{\mu=0}^{3} (p_\mu q'_\mu - p'_\mu q_\mu),
 $$</p>
 <p>with $Q_\mu = q_\mu + i q'_\mu$. It is <strong>sesquilinear</strong>, linear in the second argument and conjugate-linear in the first,</p>
 <p>$$
-\langle \lambda \tilde{P}, \tilde{Q} \rangle = \lambda^* \langle \tilde{P}, \tilde{Q} \rangle, \qquad
+\langle \lambda \tilde{P}, \tilde{Q} \rangle = \bar{\lambda} \langle \tilde{P}, \tilde{Q} \rangle, \qquad
 \langle \tilde{P}, \lambda \tilde{Q} \rangle = \lambda \langle \tilde{P}, \tilde{Q} \rangle, \qquad \lambda \in \mathbb{C},
 $$</p>
-<p>and <strong>Hermitian</strong>, $\langle \tilde{P}, \tilde{Q} \rangle^* = \langle \tilde{Q}, \tilde{P} \rangle$. It is <strong>non-degenerate</strong>: if $\langle \tilde{P}, \tilde{Q} \rangle = 0$ for every $\tilde{Q}$, then $\tilde{P} = 0$, since testing against the units gives $P_\mu^* = 0$.</p>
+<p>and <strong>Hermitian</strong>, $\langle \tilde{P}, \tilde{Q} \rangle^* = \langle \tilde{Q}, \tilde{P} \rangle$. It is <strong>non-degenerate</strong>: if $\langle \tilde{P}, \tilde{Q} \rangle = 0$ for every $\tilde{Q}$, then $\tilde{P} = 0$, since testing against the units gives $P_\bar{\mu} = 0$.</p>
 <p>The inner product pairs the algebra with its conjugate and is complex-valued in general. Forming it, evaluating it to a scalar, and asking when it vanishes is all that is done with it here; its diagonal value
 $$
-\langle \tilde{Q}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} |Q_\mu|^2 = \mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^\dagger\right)
+\langle \tilde{Q}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} |Q_\mu|^2 = \mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^{*}\right)
 $$
 vanishes only at $\tilde{Q} = 0$.</p>
 <h2 id="summary">Summary</h2>
 <p>The biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$, with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and central scalar imaginary $i$. It is associative, non-commutative, and not a division algebra.</p>
-<p>It carries four natural conjugations, $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$ and $\flat = -\dagger$, of which the first three are commuting involutions and form the Klein four-group together with the identity. The <strong>six</strong> distinguished real subspaces are the eigenspaces of those three involutions:</p>
+<p>It carries four natural conjugations, ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and $\flat = -{}^{*}$, of which the first three are commuting involutions and form the Klein four-group together with the identity. The <strong>six</strong> distinguished real subspaces are the eigenspaces of those three involutions:</p>
 <ul>
-<li>the <strong>center</strong> $\mathbb{C}_{\mathbb{B}} = \{Q_0 e_0\}$, of dimension 2, fixed by $\bar{\cdot}$, a subalgebra isomorphic to $\mathbb{C}$;</li>
-<li>the <strong>vector subspace</strong> $\mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : Q_0 = 0\}$, of dimension 6, the anti-fixed space of $\bar{\cdot}$, the kernel of $\mathrm{Sc}$, and the derived subspace $[\mathbb{B}, \mathbb{B}]$;</li>
-<li>the <strong>quaternion subspace</strong> $\mathbb{H}_{\mathbb{B}}$, of dimension 4, fixed by ${}^{*}$, the subalgebra isomorphic to $\mathbb{H}$;</li>
-<li>the <strong>anti-quaternion subspace</strong> $i\mathbb{H}_{\mathbb{B}}$, of dimension 4, the anti-fixed space of ${}^{*}$, an $\mathbb{H}_{\mathbb{B}}$-module but not a subalgebra;</li>
-<li>the <strong>Hermitian subspace</strong> $\mathbb{M}_+$, of dimension 4, fixed by $\dagger$;</li>
+<li>the <strong>center</strong> $\mathbb{C}_{\mathbb{B}} = \{Q_0 e_0\}$, of dimension 2, fixed by ${}^{\natural}$, a subalgebra isomorphic to $\mathbb{C}$;</li>
+<li>the <strong>vector subspace</strong> $\mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : Q_0 = 0\}$, of dimension 6, the anti-fixed space of ${}^{\natural}$, the kernel of $\mathrm{Sc}$, and the derived subspace $[\mathbb{B}, \mathbb{B}]$;</li>
+<li>the <strong>quaternion subspace</strong> $\mathbb{H}_{\mathbb{B}}$, of dimension 4, fixed by $\bar{\cdot}$, the subalgebra isomorphic to $\mathbb{H}$;</li>
+<li>the <strong>anti-quaternion subspace</strong> $i\mathbb{H}_{\mathbb{B}}$, of dimension 4, the anti-fixed space of $\bar{\cdot}$, an $\mathbb{H}_{\mathbb{B}}$-module but not a subalgebra;</li>
+<li>the <strong>Hermitian subspace</strong> $\mathbb{M}_+$, of dimension 4, fixed by ${}^{*}$;</li>
 <li>the <strong>anti-Hermitian subspace</strong> $\mathbb{M}_-$, of dimension 4, fixed by $\flat$.</li>
 </ul>
 <p>The three involutions give three direct-sum decompositions, $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ and $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$. They are the three pairings of the four coordinate blocks $\mathbb{R}e_0$, $\mathbb{R}(ie_0)$, $\operatorname{span}_\mathbb{R}\{e_1,e_2,e_3\}$, $\operatorname{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$, so there is no fourth. Each of the four four-dimensional subspaces is one scalar block plus one vector block; two distinct subspaces meet in dimension $0$, $1$ or $3$, the dimension $0$ occurring exactly for the three complementary pairs.</p>
@@ -515,52 +515,52 @@ vanishes only at $\tilde{Q} = 0$.</p>
 <td>Complex vector part</td>
 </tr>
 <tr>
-<td>$\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$</td>
+<td>$\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$</td>
 <td>Quaternion conjugate</td>
 </tr>
 <tr>
-<td>$\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$</td>
+<td>$\bar{\tilde{Q}} = \bar{Q_0} e_0 + \mathbf{Q}^*$</td>
 <td>Complex conjugate</td>
 </tr>
 <tr>
-<td>$\tilde{Q}^\dagger = Q_0^* e_0 - \mathbf{Q}^*$</td>
+<td>$\tilde{Q}^{*} = \bar{Q_0} e_0 - \mathbf{Q}^*$</td>
 <td>Hermitian conjugate</td>
 </tr>
 <tr>
-<td>$\tilde{Q}^\flat = -\bar{\tilde{Q}}^* = -\tilde{Q}^\dagger$</td>
+<td>$\tilde{Q}^\flat = -\overline{\tilde{Q}^{\natural}} = -\tilde{Q}^{*}$</td>
 <td>Anti-Hermitian conjugate</td>
 </tr>
 <tr>
-<td>$\tilde{Q} \tilde{Q}^\dagger$</td>
+<td>$\tilde{Q} \tilde{Q}^{*}$</td>
 <td>Hermitian form; a Hermitian biquaternion, defined before the inner product</td>
 </tr>
 <tr>
-<td>$\mathrm{Sc}(\tilde{Q} \tilde{Q}^\dagger) = \sum_\mu |Q_\mu|^2$</td>
+<td>$\mathrm{Sc}(\tilde{Q} \tilde{Q}^{*}) = \sum_\mu |Q_\mu|^2$</td>
 <td>Scalar part of the Hermitian form</td>
 </tr>
 <tr>
-<td>$\langle \tilde{P}, \tilde{Q} \rangle = \sum_\mu P_\mu^* Q_\mu$</td>
+<td>$\langle \tilde{P}, \tilde{Q} \rangle = \sum_\mu P_\bar{\mu} Q_\mu$</td>
 <td>Inner product; a complex scalar, formed and evaluated algebraically</td>
 </tr>
 <tr>
 <td>$\mathbb{C}_{\mathbb{B}}$</td>
-<td>Center (complex subspace), fixed-point set of $\bar{\cdot}$; basis $e_0, ie_0$</td>
+<td>Center (complex subspace), fixed-point set of ${}^{\natural}$; basis $e_0, ie_0$</td>
 </tr>
 <tr>
 <td>$\mathrm{Vect}(\mathbb{B})$</td>
-<td>Vector subspace, anti-fixed-point set of $\bar{\cdot}$; $\{\tilde{Q} : \mathrm{Sc}(\tilde{Q}) = 0\} = [\mathbb{B}, \mathbb{B}]$; basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$</td>
+<td>Vector subspace, anti-fixed-point set of ${}^{\natural}$; $\{\tilde{Q} : \mathrm{Sc}(\tilde{Q}) = 0\} = [\mathbb{B}, \mathbb{B}]$; basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{B}}$</td>
-<td>Quaternion subspace, fixed-point set of ${}^{*}$; basis $e_0, e_1, e_2, e_3$</td>
+<td>Quaternion subspace, fixed-point set of $\bar{\cdot}$; basis $e_0, e_1, e_2, e_3$</td>
 </tr>
 <tr>
 <td>$i\mathbb{H}_{\mathbb{B}}$</td>
-<td>Anti-quaternion subspace, anti-fixed-point set of ${}^{*}$; basis $ie_0, ie_1, ie_2, ie_3$</td>
+<td>Anti-quaternion subspace, anti-fixed-point set of $\bar{\cdot}$; basis $ie_0, ie_1, ie_2, ie_3$</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_+$</td>
-<td>Hermitian subspace, fixed-point set of $\dagger$; basis $e_0, ie_1, ie_2, ie_3$</td>
+<td>Hermitian subspace, fixed-point set of ${}^{*}$; basis $e_0, ie_1, ie_2, ie_3$</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_-$</td>

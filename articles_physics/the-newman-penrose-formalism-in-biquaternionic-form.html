@@ -59,16 +59,16 @@
 <p><strong>Second, the spin coefficients and the Weyl scalars are hosted but not generated.</strong> The twelve spin coefficients are the components in the null basis of a connection valued in $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ — the six-dimensional bivector subspace of $\mathbb{B}$ that the parent article identifies — and the five Weyl scalars are the components of the self-dual Weyl spinor $\Psi_{ABCD} \in \mathrm{Sym}^4 S$, where $S$ is the framework's spinor module. The algebra supplies the tetrad, the dyad, and the home of both objects; it supplies neither the connection nor the Weyl tensor.</p>
 <p><strong>Third, the weights and the classification are representation-theoretic.</strong> Under the boost–spin subgroup of the tetrad rotations the scalars scale with definite <strong>boost weights</strong>, $\Psi_k \mapsto A^{2-k} e^{\,i(2-k)\theta}\,\Psi_k$; the Petrov types are the multiplicity patterns of the principal null directions, equivalently the multiplicity patterns of the roots of the binary quartic $\Psi_{ABCD}k^Ak^Bk^Ck^D$. Both are recomputed on the algebra's own objects.</p>
 <p>The article closes by separating what the framework contains from what remains an agenda. The separation is sharp: the null structure of the tetrad is native, and the curvature that the tetrad is used to describe is not.</p>
-<p>The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the biquaternion norm is $N(\tilde Q) = \tilde Q\bar{\tilde Q}$. The material sector is $\mathbb{M}_- = \{iq_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 : q_\mu \in \mathbb{R}\}$, with four-vector coordinates $(q_0,q_1,q_2,q_3)$, and the bilinear (polar) form on it is</p>
+<p>The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the biquaternion norm is $N(\tilde Q) = \tilde Q\tilde Q^{\natural}$. The material sector is $\mathbb{M}_- = \{iq_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 : q_\mu \in \mathbb{R}\}$, with four-vector coordinates $(q_0,q_1,q_2,q_3)$, and the bilinear (polar) form on it is</p>
 <p>$$
-\langle \tilde Q, \tilde P\rangle \;=\; \mathrm{Sc}\big(\tilde Q\bar{\tilde P}\big) \;=\; -q_0p_0 + q_1p_1 + q_2p_2 + q_3p_3 ,
+\langle \tilde Q, \tilde P\rangle \;=\; \mathrm{Sc}\big(\tilde Q\tilde P^{\natural}\big) \;=\; -q_0p_0 + q_1p_1 + q_2p_2 + q_3p_3 ,
 $$</p>
 <p>of signature $(3,1)$ in the read list's counting — three positive directions and one negative. The matrix realization is the $\mathbb{C}$-algebra isomorphism</p>
 <p>$$
 \Phi : \mathbb{B} \longrightarrow M_2(\mathbb{C}), \qquad
 \Phi(e_0) = I_2, \quad \Phi(e_k) = -i\sigma_k, \quad \Phi(i) = iI_2,
 $$</p>
-<p>so that $N(\tilde Q) = \det\Phi(\tilde Q)$, Hermitian conjugation corresponds to the conjugate transpose, and $\mathbb{M}_-$ corresponds to the anti-Hermitian matrices. The spinor module is $S = \mathbb{C}^2$, the unique simple module of $\mathbb{B}$, on which the algebra acts by left multiplication; the Weyl spinor modules are $S = (\tfrac12,0)$ and its conjugate $\bar S = (0,\tfrac12)$. The rotor group is $\{\tilde\Lambda : \tilde\Lambda\bar{\tilde\Lambda} = e_0\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_0\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.</p>
+<p>so that $N(\tilde Q) = \det\Phi(\tilde Q)$, Hermitian conjugation corresponds to the conjugate transpose, and $\mathbb{M}_-$ corresponds to the anti-Hermitian matrices. The spinor module is $S = \mathbb{C}^2$, the unique simple module of $\mathbb{B}$, on which the algebra acts by left multiplication; the Weyl spinor modules are $S = (\tfrac12,0)$ and its conjugate $\bar S = (0,\tfrac12)$. The rotor group is $\{\tilde\Lambda : \tilde\Lambda\tilde\Lambda^{\natural} = e_0\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde\Lambda\tilde{Q}\tilde\Lambda^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_0\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.</p>
 <h2 id="conventions-signature-and-the-tetrad-normalization">Conventions: Signature and the Tetrad Normalization</h2>
 <p>A null tetrad is defined only up to a six-parameter local Lorentz transformation, and the inner products of its legs are fixed by a convention that must be stated before anything is computed from it. Two conventions are in common use and they differ by signs. This article fixes</p>
 <p>$$
@@ -117,7 +117,7 @@ l = \sqrt2\,i\,p, \qquad n = \sqrt2\,i\,q, \qquad m = \sqrt2\,i\,x, \qquad \bar 
 \tag{4}
 $$</p>
 <p>The two real null directions are the two primitive idempotents, and the complex pair is the off-diagonal pair. The tetrad is the Peirce decomposition of the algebra read as a null frame: the "physical" content of the tetrad — two real null directions — is exactly the idempotent content of $\mathbb{B}$.</p>
-<p>The inner products (1) now follow from (4) and the trace formula $\langle \tilde Q,\tilde P\rangle = \mathrm{Sc}(\tilde Q\bar{\tilde P})$. Because $\bar q = p$ and $p^2=p$,</p>
+<p>The inner products (1) now follow from (4) and the trace formula $\langle \tilde Q,\tilde P\rangle = \mathrm{Sc}(\tilde Q\tilde P^{\natural})$. Because $\bar q = p$ and $p^2=p$,</p>
 <p>$$
 \langle l,n\rangle = (\sqrt2\,i)^2\,\mathrm{Sc}(p\,\bar q) = -2\,\mathrm{Sc}(p^2) = -1 ,
 $$</p>
@@ -325,7 +325,7 @@ $$</p>
 <td>real-quaternion subspace</td>
 </tr>
 <tr>
-<td>$N(\tilde Q)=\tilde Q\bar{\tilde Q}$</td>
+<td>$N(\tilde Q)=\tilde Q\tilde Q^{\natural}$</td>
 <td>biquaternion norm; $N(\tilde Q)=\det\Phi(\tilde Q)$</td>
 </tr>
 <tr>
@@ -333,7 +333,7 @@ $$</p>
 <td>scalar part and trace</td>
 </tr>
 <tr>
-<td>$\langle\tilde Q,\tilde P\rangle=\mathrm{Sc}(\tilde Q\bar{\tilde P})$</td>
+<td>$\langle\tilde Q,\tilde P\rangle=\mathrm{Sc}(\tilde Q\tilde P^{\natural})$</td>
 <td>bilinear form on $\mathbb{M}_-$, signature $(3,1)$</td>
 </tr>
 <tr>

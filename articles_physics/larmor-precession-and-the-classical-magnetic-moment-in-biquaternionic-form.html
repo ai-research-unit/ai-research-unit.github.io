@@ -193,17 +193,17 @@ $$</p>
 $$</p>
 <p>acting on a pure real vector by <strong>rotor conjugation</strong>,</p>
 <p>$$
-\mathbf{v} \;\longmapsto\; \tilde{R}\,\mathbf{v}\,\tilde{R}^\dagger ,
+\mathbf{v} \;\longmapsto\; \tilde{R}\,\mathbf{v}\,\tilde{R}^{*} ,
 \qquad
-\tilde{R}\,\tilde{R}^\dagger = e_0 .
+\tilde{R}\,\tilde{R}^{*} = e_0 .
 $$</p>
-<p>The conjugation rotates $\mathbf{v}$ through the angle $\theta$ about $\hat{\mathbf{n}}$ in the right-handed sense. Two elementary properties are used repeatedly. First, the rotor is normalized, $N(\tilde{R}) = \tilde{R}\bar{\tilde{R}} = e_0$, so the conjugation preserves the biquaternion norm of every vector it acts on. Second, the half-angle makes the rotor a <strong>double cover</strong> of the rotation: $\tilde{R}(\theta + 2\pi,\hat{\mathbf{n}}) = -\tilde{R}(\theta,\hat{\mathbf{n}})$, and the two rotors $\pm\tilde{R}$ produce the same rotation. The rotation group is therefore $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_0\}$, with $\mathbb{H}_{\mathbb{B}}^1$ the group of unit real quaternions, which is $SU(2)$.</p>
+<p>The conjugation rotates $\mathbf{v}$ through the angle $\theta$ about $\hat{\mathbf{n}}$ in the right-handed sense. Two elementary properties are used repeatedly. First, the rotor is normalized, $N(\tilde{R}) = \tilde{R}\tilde{R}^{\natural} = e_0$, so the conjugation preserves the biquaternion norm of every vector it acts on. Second, the half-angle makes the rotor a <strong>double cover</strong> of the rotation: $\tilde{R}(\theta + 2\pi,\hat{\mathbf{n}}) = -\tilde{R}(\theta,\hat{\mathbf{n}})$, and the two rotors $\pm\tilde{R}$ produce the same rotation. The rotation group is therefore $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_0\}$, with $\mathbb{H}_{\mathbb{B}}^1$ the group of unit real quaternions, which is $SU(2)$.</p>
 <!-- CONVENTION — rotor sign and action: the rotation rotor is R(theta,n) = cos(theta/2) e_0 + sin(theta/2) n_k e_k and acts by R v R_dag, rotating a pure real vector by +theta about n in the right-handed sense. Both the sign of the sine and the right-handedness are conventions of the series, fixed by the spatial rotation rotors of *Angular Momentum and Spin in Biquaternionic Form*. A reviewer must not flip the sign of the sine to "make it a rotation by theta": with the sine positive the conjugation is a right-handed rotation by +theta, and all the rotation formulae of the series depend on it. -->
 
 <h3 id="the-precession-as-a-rotor">The Precession as a Rotor</h3>
 <p>The Larmor precession is the rotor conjugation</p>
 <p>$$
-\tilde{\boldsymbol{\mu}}(t) = \tilde{R}_L(t)\,\tilde{\boldsymbol{\mu}}(0)\,\tilde{R}_L(t)^\dagger,
+\tilde{\boldsymbol{\mu}}(t) = \tilde{R}_L(t)\,\tilde{\boldsymbol{\mu}}(0)\,\tilde{R}_L(t)^{*},
 \qquad
 \tilde{R}_L(t) = \exp\!\left(-\,\frac{\gamma B t}{2}\,\hat{B}_k e_k\right),
 $$</p>
@@ -215,7 +215,7 @@ $$</p>
 $$</p>
 <p>and hence</p>
 <p>$$
-\dot{\tilde{\boldsymbol{\mu}}} = \dot{\tilde{R}}_L\,\tilde{\boldsymbol{\mu}}_0\,\tilde{R}_L^\dagger
+\dot{\tilde{\boldsymbol{\mu}}} = \dot{\tilde{R}}_L\,\tilde{\boldsymbol{\mu}}_0\,\tilde{R}_L^{*}
 + \tilde{R}_L\,\tilde{\boldsymbol{\mu}}_0\,\dot{\tilde{R}}_L^\dagger
 = \tfrac{1}{2}\left[\,\tilde{\boldsymbol{\mu}}(t),\;\tilde{\boldsymbol{\omega}}_L\,\right],
 $$</p>
@@ -225,15 +225,15 @@ $$</p>
 <p>The rotor $\tilde{R}_L(t)$ rotates by the angle $-\gamma B t$ about $\hat{\mathbf{B}}$. For a proton, whose $\gamma$ is positive, the moment precesses in the negative sense about the field — clockwise when the field points toward the viewer — which is the standard Larmor sense. The inertia of the moment, in other words, carries it past the field direction rather than dragging it back, and the motion is a precession and not an alignment. The numerical values of the Larmor frequency are the standard ones: $\gamma_p/2\pi = 42.577$ MHz T$^{-1}$ for the proton, so that a field of $1$ T gives $\omega_L = 2\pi\times 42.577$ MHz, and $\gamma_e/2\pi = 28.025$ GHz T$^{-1}$ for the electron's spin.</p>
 <h2 id="the-larmor-theorem">The Larmor Theorem</h2>
 <h3 id="the-rotating-frame">The Rotating Frame</h3>
-<p>The precession law has a second reading, which is the content of the <strong>Larmor theorem</strong>. Consider a frame rotating with angular velocity $\boldsymbol{\Omega}$ with respect to the laboratory, and let $\tilde{\boldsymbol{\mu}}_{\rm rot}$ be the moment as seen in that frame. The moment in the laboratory is obtained by the rotor of the frame, $\tilde{\boldsymbol{\mu}} = \tilde{R}_\Omega\,\tilde{\boldsymbol{\mu}}_{\rm rot}\,\tilde{R}_\Omega^\dagger$ with $\tilde{R}_\Omega = \exp(\tfrac{1}{2}\Omega t\,\hat{\Omega}_k e_k)$, and the derivative separates into the frame's own rotation and the additional motion seen in the frame,</p>
+<p>The precession law has a second reading, which is the content of the <strong>Larmor theorem</strong>. Consider a frame rotating with angular velocity $\boldsymbol{\Omega}$ with respect to the laboratory, and let $\tilde{\boldsymbol{\mu}}_{\rm rot}$ be the moment as seen in that frame. The moment in the laboratory is obtained by the rotor of the frame, $\tilde{\boldsymbol{\mu}} = \tilde{R}_\Omega\,\tilde{\boldsymbol{\mu}}_{\rm rot}\,\tilde{R}_\Omega^{*}$ with $\tilde{R}_\Omega = \exp(\tfrac{1}{2}\Omega t\,\hat{\Omega}_k e_k)$, and the derivative separates into the frame's own rotation and the additional motion seen in the frame,</p>
 <p>$$
 \dot{\tilde{\boldsymbol{\mu}}} = \tfrac{1}{2}\left[\tilde{\boldsymbol{\Omega}},\tilde{\boldsymbol{\mu}}\right]
-+ \tilde{R}_\Omega\left(\dot{\tilde{\boldsymbol{\mu}}}_{\rm rot}\right)\tilde{R}_\Omega^\dagger ,
++ \tilde{R}_\Omega\left(\dot{\tilde{\boldsymbol{\mu}}}_{\rm rot}\right)\tilde{R}_\Omega^{*} ,
 \qquad \tilde{\boldsymbol{\Omega}} = \Omega_k e_k .
 $$</p>
 <p>Substituting the Larmor equation $\dot{\tilde{\boldsymbol{\mu}}} = \tfrac{1}{2}[\tilde{\boldsymbol{\mu}},\tilde{\boldsymbol{\omega}}_L]$ and collecting the generator of the frame's own motion gives</p>
 <p>$$
-\tilde{R}_\Omega\,\dot{\tilde{\boldsymbol{\mu}}}_{\rm rot}\,\tilde{R}_\Omega^\dagger
+\tilde{R}_\Omega\,\dot{\tilde{\boldsymbol{\mu}}}_{\rm rot}\,\tilde{R}_\Omega^{*}
 = \tfrac{1}{2}\left[\tilde{\boldsymbol{\mu}},\,\tilde{\boldsymbol{\omega}}_L + \tilde{\boldsymbol{\Omega}}\right].
 $$</p>
 <p>If the frame rotates at exactly</p>
@@ -284,7 +284,7 @@ $$</p>
 $$</p>
 <p>The equation is solved by the <strong>rotor conjugation</strong></p>
 <p>$$
-\tilde{\boldsymbol{\mu}}(t) = \tilde{R}_L(t)\,\tilde{\boldsymbol{\mu}}(0)\,\tilde{R}_L(t)^\dagger,
+\tilde{\boldsymbol{\mu}}(t) = \tilde{R}_L(t)\,\tilde{\boldsymbol{\mu}}(0)\,\tilde{R}_L(t)^{*},
 \qquad
 \tilde{R}_L(t) = \exp\!\left(-\,\frac{\gamma B t}{2}\,\hat{B}_k e_k\right),
 $$</p>
@@ -376,7 +376,7 @@ $$</p>
 <td>Three-vector rotation through $\theta$ about $\hat{\mathbf{n}}$</td>
 </tr>
 <tr>
-<td>$\tilde{\boldsymbol{\mu}}(t) = \tilde{R}_L\tilde{\boldsymbol{\mu}}(0)\tilde{R}_L^\dagger$</td>
+<td>$\tilde{\boldsymbol{\mu}}(t) = \tilde{R}_L\tilde{\boldsymbol{\mu}}(0)\tilde{R}_L^{*}$</td>
 <td>Precession as rotor conjugation</td>
 </tr>
 <tr>

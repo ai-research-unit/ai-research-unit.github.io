@@ -79,17 +79,17 @@ $$</p>
 <h3 id="the-sector-decomposition-math30">The Sector Decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$</h3>
 <p>Hermitian conjugation is the composition of quaternion and complex conjugation,</p>
 <p>$$
-\tilde{Q}^\dagger = \bar{\tilde{Q}}^{\,*} = \overline{\tilde{Q}^*},
+\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = \bigl(\bar{\tilde{Q}}\bigr)^{\natural},
 $$</p>
 <p>an antilinear involution. Its fixed and anti-fixed spaces are the two sectors:</p>
 <p>$$
-\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^\dagger = \tilde{Q}\}, \qquad \mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^\dagger = -\tilde{Q}\}.
+\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\}, \qquad \mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\}.
 $$</p>
 <p>Each is four-dimensional over $\mathbb{R}$, and together they account for the whole algebra. Neither is a subalgebra: for example $(ie_1)(ie_2) = -e_3$, a product of two elements of $\mathbb{M}_+$ lying in $\mathbb{M}_-$. This is the split with the Lorentzian reading: the anti-Hermitian half is Minkowski space, and the Hermitian half is the space of operators acting on it.</p>
 <h3 id="involutions-and-fixed-spaces">Involutions and Fixed Spaces</h3>
 <p>The splits are visible in the fixed spaces of the algebra's involutions. Complex conjugation and quaternion conjugation commute, and their product is Hermitian conjugation, whose negative is the anti-Hermitian conjugation:</p>
 <p>$$
-\tilde{Q}^\dagger = \bar{\tilde{Q}}^{\,*} = \overline{\tilde{Q}^*}, \qquad \tilde{Q}^\flat = -\tilde{Q}^\dagger .
+\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = \bigl(\bar{\tilde{Q}}\bigr)^{\natural}, \qquad \tilde{Q}^\flat = -\tilde{Q}^{*} .
 $$</p>
 <p>Because they commute, their fixed and anti-fixed spaces fit together as follows.</p>
 <div class="table-scroll"><table>
@@ -104,50 +104,50 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>quaternion conjugation $\bar{\cdot}$</td>
+<td>quaternion conjugation ${}^{\natural}$</td>
 <td>$\mathbb{C}_{\mathbb{B}}$</td>
-<td>$\bar{\cdot}(\tilde{Q}) = \tilde{Q}$</td>
+<td>${}^{\natural}(\tilde{Q}) = \tilde{Q}$</td>
 <td>center</td>
 <td>2</td>
 </tr>
 <tr>
-<td>$-{\bar{\cdot}}$</td>
+<td>$-{{}^{\natural}}$</td>
 <td>$\mathrm{Vect}(\mathbb{B})$</td>
-<td>$\bar{\cdot}(\tilde{Q}) = -\tilde{Q}$</td>
+<td>${}^{\natural}(\tilde{Q}) = -\tilde{Q}$</td>
 <td>vector subspace</td>
 <td>6</td>
 </tr>
 <tr>
-<td>complex conjugation ${}^*$</td>
+<td>complex conjugation $\bar{\cdot}$</td>
 <td>$\mathbb{H}_{\mathbb{B}}$</td>
-<td>${}^*(\tilde{Q}) = \tilde{Q}$</td>
+<td>$\bar{\cdot}(\tilde{Q}) = \tilde{Q}$</td>
 <td>quaternion subspace</td>
 <td>4</td>
 </tr>
 <tr>
-<td>$-{}^{*}$</td>
+<td>$-\bar{\cdot}$</td>
 <td>$i\mathbb{H}_{\mathbb{B}}$</td>
-<td>${}^*(\tilde{Q}) = -\tilde{Q}$</td>
+<td>$\bar{\cdot}(\tilde{Q}) = -\tilde{Q}$</td>
 <td>antiquaternion subspace</td>
 <td>4</td>
 </tr>
 <tr>
-<td>Hermitian conjugation $\dagger$</td>
+<td>Hermitian conjugation ${}^{*}$</td>
 <td>$\mathbb{M}_+$</td>
-<td>$\dagger(\tilde{Q}) = \tilde{Q}$</td>
+<td>${}^{*}(\tilde{Q}) = \tilde{Q}$</td>
 <td>informational sector</td>
 <td>4</td>
 </tr>
 <tr>
-<td>anti-Hermitian conjugation $\flat = -\dagger$</td>
+<td>anti-Hermitian conjugation $\flat = -{}^{*}$</td>
 <td>$\mathbb{M}_-$</td>
-<td>$\dagger(\tilde{Q}) = -\tilde{Q}$</td>
+<td>${}^{*}(\tilde{Q}) = -\tilde{Q}$</td>
 <td>material sector</td>
 <td>4</td>
 </tr>
 </tbody>
 </table></div>
-<p>The six subspaces are the fixed and anti-fixed spaces of the four conjugations: $\mathbb{C}_{\mathbb{B}}$ and $\mathrm{Vect}(\mathbb{B})$ come from quaternion conjugation, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ from complex conjugation, $\mathbb{M}_+$ and $\mathbb{M}_-$ from Hermitian conjugation. Four of them are fixed spaces: $\mathbb{C}_{\mathbb{B}}$ of $\bar{\cdot}$, $\mathbb{H}_{\mathbb{B}}$ of ${}^{*}$, $\mathbb{M}_+$ of $\dagger$ and $\mathbb{M}_-$ of $\flat$. The remaining two are fixed not by a conjugation but by its negative: the vector subspace is the <em>anti</em>-fixed space of quaternion conjugation, equivalently the fixed space of $-{\bar{\cdot}}$, and the antiquaternion subspace is the anti-fixed space of complex conjugation, equivalently the fixed space of $-{}^{*}$. Each of the six is therefore the fixed space of an involution, and the vector subspace, being six-dimensional, is the largest of them.</p>
+<p>The six subspaces are the fixed and anti-fixed spaces of the four conjugations: $\mathbb{C}_{\mathbb{B}}$ and $\mathrm{Vect}(\mathbb{B})$ come from quaternion conjugation, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ from complex conjugation, $\mathbb{M}_+$ and $\mathbb{M}_-$ from Hermitian conjugation. Four of them are fixed spaces: $\mathbb{C}_{\mathbb{B}}$ of ${}^{\natural}$, $\mathbb{H}_{\mathbb{B}}$ of $\bar{\cdot}$, $\mathbb{M}_+$ of ${}^{*}$ and $\mathbb{M}_-$ of $\flat$. The remaining two are fixed not by a conjugation but by its negative: the vector subspace is the <em>anti</em>-fixed space of quaternion conjugation, equivalently the fixed space of $-{{}^{\natural}}$, and the antiquaternion subspace is the anti-fixed space of complex conjugation, equivalently the fixed space of $-\bar{\cdot}$. Each of the six is therefore the fixed space of an involution, and the vector subspace, being six-dimensional, is the largest of them.</p>
 <h3 id="why-exactly-three">Why Exactly Three</h3>
 <p>The count is forced by the block structure, and the argument is short. Write the four blocks</p>
 <p>$$
@@ -242,7 +242,7 @@ $$</p>
 <td>$\mathbb{M}_+$ — informational sector</td>
 <td>4</td>
 <td>$T_{\mathrm{i}} \oplus X_{\mathrm{i}}$</td>
-<td>$\tilde{Q}^\dagger = \tilde{Q}$</td>
+<td>$\tilde{Q}^{*} = \tilde{Q}$</td>
 <td>no</td>
 <td>no</td>
 <td>indefinite, $(1,3)$</td>
@@ -251,7 +251,7 @@ $$</p>
 <td>$\mathbb{M}_-$ — material sector</td>
 <td>4</td>
 <td>$T_{\mathrm{m}} \oplus X_{\mathrm{m}}$</td>
-<td>$\tilde{Q}^\dagger = -\tilde{Q}$</td>
+<td>$\tilde{Q}^{*} = -\tilde{Q}$</td>
 <td>no</td>
 <td>yes — $\mathrm{U}(2)$</td>
 <td>indefinite, $(3,1)$; light cone</td>
@@ -385,9 +385,9 @@ $$</p>
 <thead>
 <tr>
 <th>block</th>
-<th>${}^{*}$</th>
 <th>$\bar{\cdot}$</th>
-<th>$\dagger$</th>
+<th>${}^{\natural}$</th>
+<th>${}^{*}$</th>
 <th>$\flat$</th>
 </tr>
 </thead>
@@ -423,46 +423,46 @@ $$</p>
 </tbody>
 </table></div>
 <p>Each row is a block, and each of the four deserves its own account, because these sign patterns are what the rest of the article is built on.</p>
-<p><strong>$T_{\mathrm{m}} = \mathbb{R}(ie_0)$ — material time, dimension $1$, coordinate $ict$, parameter $q'_0 = ct$.</strong> Its row in the table is $(-,+,-,+)$. The single generator $ie_0$ is <em>imaginary</em>, which makes ${}^{*}$ negate it, and it is a <em>scalar</em>, which makes $\bar{\cdot}$ fix it; the remaining two columns then follow, since $\dagger = \bar{\cdot}\circ{}^{*} = {}^{*}\circ\bar{\cdot}$ inherits the minus from the complex conjugation and picks up none from the quaternion one, while $\flat = -\dagger$ undoes it again. The general element of the block is the single term</p>
+<p><strong>$T_{\mathrm{m}} = \mathbb{R}(ie_0)$ — material time, dimension $1$, coordinate $ict$, parameter $q'_0 = ct$.</strong> Its row in the table is $(-,+,-,+)$. The single generator $ie_0$ is <em>imaginary</em>, which makes $\bar{\cdot}$ negate it, and it is a <em>scalar</em>, which makes ${}^{\natural}$ fix it; the remaining two columns then follow, since ${}^{*} = {}^{\natural}\circ\bar{\cdot} = \bar{\cdot}\circ{}^{\natural}$ inherits the minus from the complex conjugation and picks up none from the quaternion one, while $\flat = -{}^{*}$ undoes it again. The general element of the block is the single term</p>
 <p>$$
 \tilde{Q}_{T_{\mathrm{m}}} = iq'_0\,e_0 = ict\,e_0, \qquad q'_0 = ct \in \mathbb{R},
 $$</p>
 <p>a real parameter carrying the $i$ — exactly the primed slot of the coordinate dictionary. On this element the four involutions read</p>
 <p>$$
 ict \;\xrightarrow{\ *\ }\; -ict, \qquad
-ict \;\xrightarrow{\ \bar{\cdot}\ }\; +ict, \qquad
-ict \;\xrightarrow{\ \dagger\ }\; -ict, \qquad
+ict \;\xrightarrow{\ {}^{\natural}\ }\; +ict, \qquad
+ict \;\xrightarrow{\ {}^{*}\ }\; -ict, \qquad
 ict \;\xrightarrow{\ \flat\ }\; +ict,
 $$</p>
-<p>so complex conjugation reverses the time coordinate while quaternion conjugation leaves it alone. That is the behaviour required of a scalar: $ie_0$ has no vector part for $\bar{\cdot}$ to reverse, so the reversal falls to ${}^{*}$, which is why this is the one block on which ${}^{*}$ negates and $\bar{\cdot}$ acts trivially — the character $(-,+)$. The line is <strong>central</strong>, $ie_0$ being a multiple of the unit, so its elements commute with every element of $\mathbb{B}$; it is one of the two lines common to three of the subspaces, $\mathbb{C}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = \mathbb{R}(ie_0)$. In the biquaternion norm it is the single <strong>negative</strong> direction of the material sector, $N(ie_0) = -1$, against the $+3$ of that sector's space, which is precisely what makes the material sector Lorentzian rather than Euclidean.</p>
-<p><strong>$T_{\mathrm{i}} = \mathbb{R}(e_0)$ — informational time, dimension $1$, coordinate $ct'$, parameter $q_0 = ct'$.</strong> Its row is $(+,+,+,-)$ — the all-plus row, and the only one. The generator $e_0$ is the algebra's unit: it is <em>real</em>, so ${}^{*}$ fixes it; it is a <em>scalar</em>, so $\bar{\cdot}$ fixes it; being both at once it is Hermitian, so $\dagger = \bar{\cdot}\circ{}^{*}$ fixes it too. Only $\flat$, which differs from $\dagger$ by the overall sign, acts on it as a negation. This is therefore the unique block on which the three involutions $\{{}^{*}, \bar{\cdot}, \dagger\}$ act as the identity — the trivial character $(+,+)$ — and the line $\mathbb{R}e_0$ is their common fixed space, appearing as the triple intersection $\mathbb{C}_{\mathbb{B}} \cap \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ = \mathbb{R}e_0$. Its general element is</p>
+<p>so complex conjugation reverses the time coordinate while quaternion conjugation leaves it alone. That is the behaviour required of a scalar: $ie_0$ has no vector part for ${}^{\natural}$ to reverse, so the reversal falls to $\bar{\cdot}$, which is why this is the one block on which $\bar{\cdot}$ negates and ${}^{\natural}$ acts trivially — the character $(-,+)$. The line is <strong>central</strong>, $ie_0$ being a multiple of the unit, so its elements commute with every element of $\mathbb{B}$; it is one of the two lines common to three of the subspaces, $\mathbb{C}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = \mathbb{R}(ie_0)$. In the biquaternion norm it is the single <strong>negative</strong> direction of the material sector, $N(ie_0) = -1$, against the $+3$ of that sector's space, which is precisely what makes the material sector Lorentzian rather than Euclidean.</p>
+<p><strong>$T_{\mathrm{i}} = \mathbb{R}(e_0)$ — informational time, dimension $1$, coordinate $ct'$, parameter $q_0 = ct'$.</strong> Its row is $(+,+,+,-)$ — the all-plus row, and the only one. The generator $e_0$ is the algebra's unit: it is <em>real</em>, so $\bar{\cdot}$ fixes it; it is a <em>scalar</em>, so ${}^{\natural}$ fixes it; being both at once it is Hermitian, so ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ fixes it too. Only $\flat$, which differs from ${}^{*}$ by the overall sign, acts on it as a negation. This is therefore the unique block on which the three involutions $\{\bar{\cdot}, {}^{\natural}, {}^{*}\}$ act as the identity — the trivial character $(+,+)$ — and the line $\mathbb{R}e_0$ is their common fixed space, appearing as the triple intersection $\mathbb{C}_{\mathbb{B}} \cap \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ = \mathbb{R}e_0$. Its general element is</p>
 <p>$$
 \tilde{Q}_{T_{\mathrm{i}}} = q_0\,e_0 = ct'\,e_0, \qquad q_0 = ct' \in \mathbb{R},
 $$</p>
-<p>a real <em>unprimed</em> parameter, the informational time coordinate of the dictionary, and on it ${}^{*}$, $\bar{\cdot}$ and $\dagger$ act as the identity while $\flat$ sends $ct' \mapsto -ct'$. Because $e_0$ is the identity, the line is central and its elements commute with everything. In the biquaternion norm it is the single <strong>positive</strong> direction of the informational sector, $N(e_0) = +1$, against the $-3$ of that sector's space, so the informational sector is the mirror of the material one. This is the block of the <strong>vacuum</strong>: a real multiple of the unit is fixed by every conjugation the algebra has apart from the anti-Hermitian one, which is exactly the sense in which the vacuum is conjugation-invariant, and the reason the articles on the vacuum and on the idempotents single out this line.</p>
-<p><strong>$X_{\mathrm{m}} = \mathbb{R}(e_1,e_2,e_3)$ — material space, dimension $3$, coordinates $x, y, z$, parameters $q_1, q_2, q_3$.</strong> Its row is $(+,-,-,+)$. Each generator $e_k$ is <em>real</em>, so ${}^{*}$ fixes it, and each is a <em>pure quaternion</em>, so $\bar{\cdot}$ reverses it; $\dagger$ reverses it as well and $\flat$ restores it. The general element is</p>
+<p>a real <em>unprimed</em> parameter, the informational time coordinate of the dictionary, and on it $\bar{\cdot}$, ${}^{\natural}$ and ${}^{*}$ act as the identity while $\flat$ sends $ct' \mapsto -ct'$. Because $e_0$ is the identity, the line is central and its elements commute with everything. In the biquaternion norm it is the single <strong>positive</strong> direction of the informational sector, $N(e_0) = +1$, against the $-3$ of that sector's space, so the informational sector is the mirror of the material one. This is the block of the <strong>vacuum</strong>: a real multiple of the unit is fixed by every conjugation the algebra has apart from the anti-Hermitian one, which is exactly the sense in which the vacuum is conjugation-invariant, and the reason the articles on the vacuum and on the idempotents single out this line.</p>
+<p><strong>$X_{\mathrm{m}} = \mathbb{R}(e_1,e_2,e_3)$ — material space, dimension $3$, coordinates $x, y, z$, parameters $q_1, q_2, q_3$.</strong> Its row is $(+,-,-,+)$. Each generator $e_k$ is <em>real</em>, so $\bar{\cdot}$ fixes it, and each is a <em>pure quaternion</em>, so ${}^{\natural}$ reverses it; ${}^{*}$ reverses it as well and $\flat$ restores it. The general element is</p>
 <p>$$
 \tilde{Q}_{X_{\mathrm{m}}} = q_k\,e_k = x\,e_1 + y\,e_2 + z\,e_3 = \mathbf{x},
 $$</p>
 <p>the ordinary three-dimensional vector part of the algebra, with real unprimed parameters $q_k = x_k$. On this block the four involutions read</p>
 <p>$$
 \mathbf{x} \;\xrightarrow{\ *\ }\; \mathbf{x}, \qquad
-\mathbf{x} \;\xrightarrow{\ \bar{\cdot}\ }\; -\mathbf{x}, \qquad
-\mathbf{x} \;\xrightarrow{\ \dagger\ }\; -\mathbf{x}, \qquad
+\mathbf{x} \;\xrightarrow{\ {}^{\natural}\ }\; -\mathbf{x}, \qquad
+\mathbf{x} \;\xrightarrow{\ {}^{*}\ }\; -\mathbf{x}, \qquad
 \mathbf{x} \;\xrightarrow{\ \flat\ }\; \mathbf{x},
 $$</p>
-<p>so quaternion conjugation is the reversal $\mathbf{x} \mapsto -\mathbf{x}$ while complex conjugation does nothing at all. This is why it is $\bar{\cdot}$ and not ${}^{*}$ that isolates the <strong>time-like</strong> directions: $\bar{\cdot}$ is the involution that separates the scalar block from the vector block, and the only one whose action on space is a half-turn. The block is closed under the commutator, $[e_i,e_j] = 2\epsilon_{ijk}e_k$, so it carries the Lie algebra $\mathrm{SU}(2) \cong \mathrm{SO}(3)$ of the rotations that a rotor generates — although it is not closed under the product, since $e_k^2 = -e_0$ leaves the block for $T_{\mathrm{i}}$. It is the <strong>space</strong> of the material sector, $\mathbb{M}_- \cap \mathbb{H}_{\mathbb{B}} = X_{\mathrm{m}}$, and in the biquaternion norm it contributes $+3$, positive definite, the Euclidean half of that sector.</p>
-<p><strong>$X_{\mathrm{i}} = \mathbb{R}(ie_1,ie_2,ie_3)$ — informational space, dimension $3$, coordinates $ix', iy', iz'$, parameters $q'_1, q'_2, q'_3$.</strong> Its row is $(-,-,+,-)$. Each generator $ie_k$ is <em>imaginary</em>, so ${}^{*}$ negates it, and each is a <em>pure quaternion</em>, so $\bar{\cdot}$ negates it as well; the two minus signs cancel in the composite $\dagger = \bar{\cdot}\circ{}^{*}$, which therefore fixes the block, while $\flat = -\dagger$ negates it. This is the one block carrying the character $(-,-)$ — the only block on which two involutions negate — and that cancellation is exactly why its elements are Hermitian without being real. The general element is</p>
+<p>so quaternion conjugation is the reversal $\mathbf{x} \mapsto -\mathbf{x}$ while complex conjugation does nothing at all. This is why it is ${}^{\natural}$ and not $\bar{\cdot}$ that isolates the <strong>time-like</strong> directions: ${}^{\natural}$ is the involution that separates the scalar block from the vector block, and the only one whose action on space is a half-turn. The block is closed under the commutator, $[e_i,e_j] = 2\epsilon_{ijk}e_k$, so it carries the Lie algebra $\mathrm{SU}(2) \cong \mathrm{SO}(3)$ of the rotations that a rotor generates — although it is not closed under the product, since $e_k^2 = -e_0$ leaves the block for $T_{\mathrm{i}}$. It is the <strong>space</strong> of the material sector, $\mathbb{M}_- \cap \mathbb{H}_{\mathbb{B}} = X_{\mathrm{m}}$, and in the biquaternion norm it contributes $+3$, positive definite, the Euclidean half of that sector.</p>
+<p><strong>$X_{\mathrm{i}} = \mathbb{R}(ie_1,ie_2,ie_3)$ — informational space, dimension $3$, coordinates $ix', iy', iz'$, parameters $q'_1, q'_2, q'_3$.</strong> Its row is $(-,-,+,-)$. Each generator $ie_k$ is <em>imaginary</em>, so $\bar{\cdot}$ negates it, and each is a <em>pure quaternion</em>, so ${}^{\natural}$ negates it as well; the two minus signs cancel in the composite ${}^{*} = {}^{\natural}\circ\bar{\cdot}$, which therefore fixes the block, while $\flat = -{}^{*}$ negates it. This is the one block carrying the character $(-,-)$ — the only block on which two involutions negate — and that cancellation is exactly why its elements are Hermitian without being real. The general element is</p>
 <p>$$
 \tilde{Q}_{X_{\mathrm{i}}} = iq'_k\,e_k = i(x'e_1 + y'e_2 + z'e_3) = i\mathbf{x}', \qquad q'_k = x'_k \in \mathbb{R},
 $$</p>
-<p>literally $i$ times the vector part, with primed real parameters. Indeed $X_{\mathrm{i}} = i\,X_{\mathrm{m}}$ as sets: multiplication by $i$ exchanges the two spatial blocks, just as it exchanges the two temporal ones, $T_{\mathrm{m}} \leftrightarrow T_{\mathrm{i}}$. On this block the four involutions read $i\mathbf{x}' \mapsto -i\mathbf{x}'$ for ${}^{*}$ and for $\bar{\cdot}$, and $\mapsto +i\mathbf{x}'$ for $\dagger$ and for $\flat$. In the biquaternion norm the block contributes $-3$, negative definite, the exact counterpart of the $+3$ of material space. Together with $T_{\mathrm{i}}$ it makes up the Hermitian subspace, $\mathbb{M}_+ \cap i\mathbb{H}_{\mathbb{B}} = X_{\mathrm{i}}$.</p>
+<p>literally $i$ times the vector part, with primed real parameters. Indeed $X_{\mathrm{i}} = i\,X_{\mathrm{m}}$ as sets: multiplication by $i$ exchanges the two spatial blocks, just as it exchanges the two temporal ones, $T_{\mathrm{m}} \leftrightarrow T_{\mathrm{i}}$. On this block the four involutions read $i\mathbf{x}' \mapsto -i\mathbf{x}'$ for $\bar{\cdot}$ and for ${}^{\natural}$, and $\mapsto +i\mathbf{x}'$ for ${}^{*}$ and for $\flat$. In the biquaternion norm the block contributes $-3$, negative definite, the exact counterpart of the $+3$ of material space. Together with $T_{\mathrm{i}}$ it makes up the Hermitian subspace, $\mathbb{M}_+ \cap i\mathbb{H}_{\mathbb{B}} = X_{\mathrm{i}}$.</p>
 <p>Reading the $+$ signs column by column gives the table of subspaces back, and each column is worth stating in full.</p>
-<p><strong>${}^{*}$ — complex conjugation, the half split.</strong> It conjugates the central imaginary unit and leaves the quaternion units alone, so on a block it acts by $+1$ where the coordinate is real and by $-1$ where the coordinate carries an explicit $i$. Its column is $(-,+,+,-)$: it negates precisely $T_{\mathrm{m}}$ and $X_{\mathrm{i}}$. Its fixed space is therefore $T_{\mathrm{i}} \oplus X_{\mathrm{m}} = \mathbb{H}_{\mathbb{B}}$, the real quaternions, and its anti-fixed space is the complementary pair $T_{\mathrm{m}} \oplus X_{\mathrm{i}} = i\mathbb{H}_{\mathbb{B}}$; the two together are the half split $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$. This is the involution whose fixed space is a division algebra, and the only one of the four whose two eigenspaces are exchanged by multiplication by $i$.</p>
-<p><strong>$\bar{\cdot}$ — quaternion conjugation, the one that separates time from space.</strong> It fixes the scalar unit and negates the three vector units, so it acts by $+1$ on the two temporal blocks and by $-1$ on the two spatial ones; its column is $(+,+,-,-)$. Its fixed space is therefore $T_{\mathrm{m}} \oplus T_{\mathrm{i}} = \mathbb{C}_{\mathbb{B}}$, the center — the only case among the four where the fixed space is not one of the four-dimensional subspaces — and it is the only involution that treats time and space differently at all. That is why it, rather than ${}^{*}$ or $\dagger$, is the one that isolates the time-like directions, and why it is the involution the classical quaternion conjugate is built from.</p>
-<p><strong>$\dagger = \bar{\cdot}\circ{}^{*}$ — Hermitian conjugation, the sector split.</strong> It negates both <strong>material</strong> blocks and fixes both informational ones, its column being $(-,+,-,+)$; its fixed space is $T_{\mathrm{i}} \oplus X_{\mathrm{i}} = \mathbb{M}_+$, the Hermitian elements. Composing the two previous involutions, it inherits the minus of ${}^{*}$ on the scalar and cancels the two minus signs on the imaginary vectors, which is the arithmetic behind the three-and-one structure of the sector. This is the involution the quantum formalism uses: its fixed space is the observables.</p>
-<p><strong>$\flat = -\dagger$ — anti-Hermitian conjugation, the algebra's real structure.</strong> It is $\dagger$ with the overall sign reversed, so its column $(+,-,+,-)$ is the exact negation of the previous one: it fixes $T_{\mathrm{m}} \oplus X_{\mathrm{m}} = \mathbb{M}_-$ and negates the complementary blocks. Its fixed space is the material sector, the Lorentzian one, and it is the involution whose fixed space is a subspace but not a subalgebra. Note that $\dagger$ and $\flat$ together account for both sectors and for both signs of the same involution — which is the sense in which the two sectors are not two independent structures but the two signs of one.</p>
-<p>The four involutions $\{1, {}^{*}, \bar{\cdot}, \dagger\}$ commute and form a Klein four-group, and the signs of ${}^{*}$ and $\bar{\cdot}$ on the four blocks are exactly its four characters — the remaining two columns then follow from $\dagger = \bar{\cdot}\circ{}^{*}$ and $\flat = -\dagger$. The block decomposition is therefore the decomposition of $\mathbb{B}$ into the four characters of that group action, which is why it is canonical: four blocks, four characters, each occurring once. Note how the pairing works in that light: $\dagger$ and $\flat$ differ by the overall sign and between them separate the two sectors, while ${}^{*}$ separates the two halves. Quaternion conjugation is the one that isolates the time-like directions.</p>
+<p><strong>$\bar{\cdot}$ — complex conjugation, the half split.</strong> It conjugates the central imaginary unit and leaves the quaternion units alone, so on a block it acts by $+1$ where the coordinate is real and by $-1$ where the coordinate carries an explicit $i$. Its column is $(-,+,+,-)$: it negates precisely $T_{\mathrm{m}}$ and $X_{\mathrm{i}}$. Its fixed space is therefore $T_{\mathrm{i}} \oplus X_{\mathrm{m}} = \mathbb{H}_{\mathbb{B}}$, the real quaternions, and its anti-fixed space is the complementary pair $T_{\mathrm{m}} \oplus X_{\mathrm{i}} = i\mathbb{H}_{\mathbb{B}}$; the two together are the half split $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$. This is the involution whose fixed space is a division algebra, and the only one of the four whose two eigenspaces are exchanged by multiplication by $i$.</p>
+<p><strong>${}^{\natural}$ — quaternion conjugation, the one that separates time from space.</strong> It fixes the scalar unit and negates the three vector units, so it acts by $+1$ on the two temporal blocks and by $-1$ on the two spatial ones; its column is $(+,+,-,-)$. Its fixed space is therefore $T_{\mathrm{m}} \oplus T_{\mathrm{i}} = \mathbb{C}_{\mathbb{B}}$, the center — the only case among the four where the fixed space is not one of the four-dimensional subspaces — and it is the only involution that treats time and space differently at all. That is why it, rather than $\bar{\cdot}$ or ${}^{*}$, is the one that isolates the time-like directions, and why it is the involution the classical quaternion conjugate is built from.</p>
+<p><strong>${}^{*} = {}^{\natural}\circ\bar{\cdot}$ — Hermitian conjugation, the sector split.</strong> It negates both <strong>material</strong> blocks and fixes both informational ones, its column being $(-,+,-,+)$; its fixed space is $T_{\mathrm{i}} \oplus X_{\mathrm{i}} = \mathbb{M}_+$, the Hermitian elements. Composing the two previous involutions, it inherits the minus of $\bar{\cdot}$ on the scalar and cancels the two minus signs on the imaginary vectors, which is the arithmetic behind the three-and-one structure of the sector. This is the involution the quantum formalism uses: its fixed space is the observables.</p>
+<p><strong>$\flat = -{}^{*}$ — anti-Hermitian conjugation, the algebra's real structure.</strong> It is ${}^{*}$ with the overall sign reversed, so its column $(+,-,+,-)$ is the exact negation of the previous one: it fixes $T_{\mathrm{m}} \oplus X_{\mathrm{m}} = \mathbb{M}_-$ and negates the complementary blocks. Its fixed space is the material sector, the Lorentzian one, and it is the involution whose fixed space is a subspace but not a subalgebra. Note that ${}^{*}$ and $\flat$ together account for both sectors and for both signs of the same involution — which is the sense in which the two sectors are not two independent structures but the two signs of one.</p>
+<p>The four involutions $\{1, \bar{\cdot}, {}^{\natural}, {}^{*}\}$ commute and form a Klein four-group, and the signs of $\bar{\cdot}$ and ${}^{\natural}$ on the four blocks are exactly its four characters — the remaining two columns then follow from ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ and $\flat = -{}^{*}$. The block decomposition is therefore the decomposition of $\mathbb{B}$ into the four characters of that group action, which is why it is canonical: four blocks, four characters, each occurring once. Note how the pairing works in that light: ${}^{*}$ and $\flat$ differ by the overall sign and between them separate the two sectors, while $\bar{\cdot}$ separates the two halves. Quaternion conjugation is the one that isolates the time-like directions.</p>
 <h2 id="the-intersections">The Intersections</h2>
 <p>Two subspaces $A, B \subseteq \mathbb{B}$ meet in their <strong>intersection</strong></p>
 <p>$$
@@ -590,18 +590,18 @@ $$</p>
 <p>Two subspaces in the same row share their time, two in the same column share their space, and no two of the four are equal. The two splits appear as the two diagonals of this grid — the sectors pair a time with the space of the same sector, the halves pair a time with the space of the other. The whole intersection table is therefore the grid: <strong>for two distinct subspaces, same row gives dimension $1$, same column gives dimension $3$, and differing in both gives $0$.</strong> The vanishing pairs are exactly those differing in both entries, which is what the two splits are, and the four nonzero off-diagonal entries have the dimension of the shared block, $3$ for a shared space and $1$ for a shared time. The dimensions $\{0,1,3\}$ are the three-and-one pattern of the blocks, read as an intersection.</p>
 <h3 id="math455">$\mathbb{H}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} = 0$</h3>
 <p><em>Dimension $0$ — the two halves meet only at the origin.</em></p>
-<p><strong>The generator.</strong> The halves are the $+1$ and $-1$ eigenspaces of complex conjugation, so an element of both satisfies $\tilde{Q} = \tilde{Q}^{*} = -\tilde{Q}^{*}$ and is forced to vanish. <strong>In blocks.</strong> $\mathbb{H}_{\mathbb{B}} = T_{\mathrm{i}} \oplus X_{\mathrm{m}}$ and $i\mathbb{H}_{\mathbb{B}} = T_{\mathrm{m}} \oplus X_{\mathrm{i}}$ share no block either. <strong>Directness.</strong> The vanishing is the directness of the real-and-imaginary split $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, and the unique decomposition it licenses is the split into real and imaginary parts with respect to ${}^{*}$,</p>
+<p><strong>The generator.</strong> The halves are the $+1$ and $-1$ eigenspaces of complex conjugation, so an element of both satisfies $\tilde{Q} = \tilde{Q}^{*} = -\tilde{Q}^{*}$ and is forced to vanish. <strong>In blocks.</strong> $\mathbb{H}_{\mathbb{B}} = T_{\mathrm{i}} \oplus X_{\mathrm{m}}$ and $i\mathbb{H}_{\mathbb{B}} = T_{\mathrm{m}} \oplus X_{\mathrm{i}}$ share no block either. <strong>Directness.</strong> The vanishing is the directness of the real-and-imaginary split $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, and the unique decomposition it licenses is the split into real and imaginary parts with respect to $\bar{\cdot}$,</p>
 <p>$$
 \tilde{Q} = \tfrac12(\tilde{Q} + \tilde{Q}^{*}) + \tfrac12(\tilde{Q} - \tilde{Q}^{*}),
 $$</p>
-<p>the first term in $\mathbb{H}_{\mathbb{B}}$ and the second in $i\mathbb{H}_{\mathbb{B}}$. <strong>Why exactly two zeros.</strong> The two vanishing entries of the intersection table that involve two of the four-dimensional subspaces are exactly the two four-dimensional splits, one for each generator of the commuting pair $(\dagger, {}^{*})$; the two composites produce nonzero entries instead, and the third zero of the table, $\mathbb{C}_{\mathbb{B}} \cap \mathrm{Vect}(\mathbb{B}) = 0$, is the scalar–vector split of the two remaining summands.</p>
+<p>the first term in $\mathbb{H}_{\mathbb{B}}$ and the second in $i\mathbb{H}_{\mathbb{B}}$. <strong>Why exactly two zeros.</strong> The two vanishing entries of the intersection table that involve two of the four-dimensional subspaces are exactly the two four-dimensional splits, one for each generator of the commuting pair $({}^{*}, \bar{\cdot})$; the two composites produce nonzero entries instead, and the third zero of the table, $\mathbb{C}_{\mathbb{B}} \cap \mathrm{Vect}(\mathbb{B}) = 0$, is the scalar–vector split of the two remaining summands.</p>
 <h3 id="math469">$\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ = T_{\mathrm{i}}$</h3>
 <p><em>Dimension $1$ — the vacuum line, shared by the center, the real quaternions and the informational sector.</em></p>
 <p><strong>The constraint.</strong> An element of $\mathbb{M}_+$ is Hermitian, so its scalar coefficient is real and its vector coefficients are purely imaginary; an element of $\mathbb{H}_{\mathbb{B}}$ is all-real. In the intersection the vector coefficients must be imaginary and real at once, hence zero, while the scalar coefficient is real under both conditions and survives. The intersection is the line of real multiples of the identity,</p>
 <p>$$
 \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ = \{\, ct'\,e_0 \;:\; ct' \in \mathbb{R} \,\} = \mathbb{R}e_0 = T_{\mathrm{i}},
 $$</p>
-<p><strong>The vacuum direction.</strong> It is the identity, the global phase, the one element of the algebra fixed by every conjugation except $\flat$. It is the <strong>common fixed line</strong> of the three involutions $\{{}^{*}, \bar{\cdot}, \dagger\}$, which is why it also appears as the triple intersection $\mathbb{C}_{\mathbb{B}} \cap \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ = \mathbb{R}e_0$. Like its counterpart $\mathbb{R}(ie_0)$ it is central, hence commutative and rotationless, and it is the single <strong>positive</strong> direction contributed by the informational sector, $N(e_0) = +1$. <strong>The asymmetry.</strong> The block is the temporal counterpart of the previous entry, and it exhibits the same dimensional asymmetry between the two halves: the informational sector shares its <strong>time</strong> with $\mathbb{H}_{\mathbb{B}}$ in this one-dimensional intersection while sharing its <strong>space</strong> with $i\mathbb{H}_{\mathbb{B}}$ in the three-dimensional one below, whereas the material sector does the reverse.</p>
+<p><strong>The vacuum direction.</strong> It is the identity, the global phase, the one element of the algebra fixed by every conjugation except $\flat$. It is the <strong>common fixed line</strong> of the three involutions $\{\bar{\cdot}, {}^{\natural}, {}^{*}\}$, which is why it also appears as the triple intersection $\mathbb{C}_{\mathbb{B}} \cap \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ = \mathbb{R}e_0$. Like its counterpart $\mathbb{R}(ie_0)$ it is central, hence commutative and rotationless, and it is the single <strong>positive</strong> direction contributed by the informational sector, $N(e_0) = +1$. <strong>The asymmetry.</strong> The block is the temporal counterpart of the previous entry, and it exhibits the same dimensional asymmetry between the two halves: the informational sector shares its <strong>time</strong> with $\mathbb{H}_{\mathbb{B}}$ in this one-dimensional intersection while sharing its <strong>space</strong> with $i\mathbb{H}_{\mathbb{B}}$ in the three-dimensional one below, whereas the material sector does the reverse.</p>
 <h3 id="math481">$\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = X_{\mathrm{m}}$</h3>
 <p><em>Dimension $3$ — the space that the material sector and the quaternion half hold in common.</em></p>
 <p><strong>The constraint.</strong> An element of $\mathbb{M}_-$ is anti-Hermitian, so its scalar coefficient $Q_0$ is purely imaginary and its vector coefficients $Q_k$ are real; an element of $\mathbb{H}_{\mathbb{B}}$ is all-real, so every $Q_\mu$ is real. In the intersection $Q_0$ must be both purely imaginary and real, which forces the scalar to vanish, while the three vector coefficients are real under both conditions and survive untouched. What remains is the real vector part,</p>
@@ -631,11 +631,11 @@ $$</p>
 <p>the $ict$ axis. <strong>Three features distinguish it.</strong> <strong>First</strong>, it lies in the center subspace $\mathbb{C}_{\mathbb{B}}$, since $ie_0$ is a multiple of the unit, so its elements commute with every element of $\mathbb{B}$ and cannot generate a rotation: this is why the temporal direction of that sector enters the algebra as a phase rather than as a generator. <strong>Second</strong>, it is the single <strong>negative</strong> direction in the biquaternion norm, $N(ie_0) = -1$, the origin of the Lorentzian signature of that sector. <strong>Third</strong>, it is the only place where that sector reaches into the imaginary half: intersecting it with $\mathbb{H}_{\mathbb{B}}$ leaves just its space, exactly as intersecting it with $i\mathbb{H}_{\mathbb{B}}$ leaves just this line, so the sector meets the two halves in its time and its space respectively. It is one of the two directions common to three subspaces, $\mathbb{C}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = \mathbb{R}(ie_0)$.</p>
 <h3 id="math520">$\mathbb{M}_+ \cap \mathbb{M}_- = 0$</h3>
 <p><em>Dimension $0$ — the two sectors meet only at the origin.</em></p>
-<p><strong>The eigenvalue argument.</strong> The two sectors are the $+1$ and $-1$ eigenspaces of $\dagger$, so an element lying in both would satisfy $\tilde{Q} = \tilde{Q}^\dagger$ and $\tilde{Q} = -\tilde{Q}^\dagger$ simultaneously, giving $\tilde{Q} = -\tilde{Q}$ and hence $\tilde{Q} = 0$: the two sectors meet only at the origin. <strong>In blocks.</strong> The same conclusion is immediate, because $\mathbb{M}_- = T_{\mathrm{m}} \oplus X_{\mathrm{m}}$ and $\mathbb{M}_+ = T_{\mathrm{i}} \oplus X_{\mathrm{i}}$ have <strong>no block in common</strong>, and an element of an intersection has to vanish on every block outside both subspaces. <strong>Directness.</strong> This vanishing is what makes the sector split <em>direct</em>, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, so the decomposition of an arbitrary element into its Hermitian and anti-Hermitian parts,</p>
+<p><strong>The eigenvalue argument.</strong> The two sectors are the $+1$ and $-1$ eigenspaces of ${}^{*}$, so an element lying in both would satisfy $\tilde{Q} = \tilde{Q}^{*}$ and $\tilde{Q} = -\tilde{Q}^{*}$ simultaneously, giving $\tilde{Q} = -\tilde{Q}$ and hence $\tilde{Q} = 0$: the two sectors meet only at the origin. <strong>In blocks.</strong> The same conclusion is immediate, because $\mathbb{M}_- = T_{\mathrm{m}} \oplus X_{\mathrm{m}}$ and $\mathbb{M}_+ = T_{\mathrm{i}} \oplus X_{\mathrm{i}}$ have <strong>no block in common</strong>, and an element of an intersection has to vanish on every block outside both subspaces. <strong>Directness.</strong> This vanishing is what makes the sector split <em>direct</em>, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, so the decomposition of an arbitrary element into its Hermitian and anti-Hermitian parts,</p>
 <p>$$
-\tilde{Q} = \tfrac12(\tilde{Q} - \tilde{Q}^\dagger) + \tfrac12(\tilde{Q} + \tilde{Q}^\dagger),
+\tilde{Q} = \tfrac12(\tilde{Q} - \tilde{Q}^{*}) + \tfrac12(\tilde{Q} + \tilde{Q}^{*}),
 $$</p>
-<p>is <em>unique</em> rather than merely a spanning, the two terms lying in $\mathbb{M}_-$ and $\mathbb{M}_+$ respectively; equivalently, $\tfrac12(1 \mp \dagger)$ are complementary projections onto the two sectors, with $\tfrac12(1 - \dagger) + \tfrac12(1 + \dagger) = 1$ and the two products zero. <strong>Physical content.</strong> No element of the algebra is at once an observable and a four-vector, and the two sectors are disjoint apart from the origin.</p>
+<p>is <em>unique</em> rather than merely a spanning, the two terms lying in $\mathbb{M}_-$ and $\mathbb{M}_+$ respectively; equivalently, $\tfrac12(1 \mp {}^{*})$ are complementary projections onto the two sectors, with $\tfrac12(1 - {}^{*}) + \tfrac12(1 + {}^{*}) = 1$ and the two products zero. <strong>Physical content.</strong> No element of the algebra is at once an observable and a four-vector, and the two sectors are disjoint apart from the origin.</p>
 <h3 id="each-half-is-assembled-from-one-piece-of-each-sector">Each half is assembled from one piece of each sector</h3>
 <p>The intersections above split $\mathbb{H}_{\mathbb{B}}$ between the two sectors, and the two pieces are complementary within it:</p>
 <p>$$
@@ -712,7 +712,7 @@ $$</p>
 <p>This is precisely the statement that $\mathbb{B}$ is <strong>graded by $\mathbb{Z}/2$</strong> with respect to the split, $\mathbb{H}_{\mathbb{B}}$ being the even part and $i\mathbb{H}_{\mathbb{B}}$ the odd part. The grading is the algebraic reason that $i\mathbb{H}_{\mathbb{B}}$ fails to be a subalgebra while $\mathbb{H}_{\mathbb{B}}$ succeeds: the product of two odd elements lands in the even part, so the odd part is only a module. The same computation in coordinates is $(iq'_1)(iq'_2) = -q'_1q'_2e_3$, which lies in $\mathbb{H}_{\mathbb{B}}$ and not in $i\mathbb{H}_{\mathbb{B}}$.</p>
 <p>Two consequences are worth recording. First, $\mathbb{H}_{\mathbb{B}}$ is a subalgebra and therefore a division algebra, while $\mathbb{B}$ is not; the failure of division in $\mathbb{B}$ comes entirely from the odd part being present. Second, the grading and the sector split are independent: multiplying by $i$, which is central, interchanges the two halves, while $\mathbb{M}_+$ and $\mathbb{M}_-$ are exchanged by $i$ as well. The two four-plus-four structures are swapped by the same element, which is another view of why they cannot be made to align.</p>
 <h2 id="the-biquaternion-norm-on-each-half">The Biquaternion Norm on Each Half</h2>
-<p>The biquaternion norm of the algebra is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. Separating the real and imaginary parts of the coefficients, $Q_\mu = q_\mu + iq'_\mu$, gives</p>
+<p>The biquaternion norm of the algebra is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. Separating the real and imaginary parts of the coefficients, $Q_\mu = q_\mu + iq'_\mu$, gives</p>
 <p>$$
 N(\tilde{Q}) = \left(\sum_\mu q_\mu^2 - \sum_\mu (q'_\mu)^2\right) + 2i\sum_\mu q_\mu q'_\mu .
 $$</p>
@@ -733,8 +733,8 @@ i\,\mathbb{H}_{\mathbb{B}} = i\mathbb{H}_{\mathbb{B}}, \qquad i\,(i\mathbb{H}_{\
 i\,\mathbb{M}_+ = \mathbb{M}_-, \qquad i\,\mathbb{M}_- = \mathbb{M}_+ .
 $$</p>
 <p>So multiplication by $i$ pairs the two halves and pairs the two sectors. In block terms it exchanges $T_{\mathrm{m}} \leftrightarrow T_{\mathrm{i}}$ and $X_{\mathrm{m}} \leftrightarrow X_{\mathrm{i}}$: the material time becomes the informational time, and the material space becomes the informational space.</p>
-<p><strong>Quaternion conjugation preserves everything.</strong> $\bar{\cdot}$ negates the two spatial blocks and leaves the two temporal blocks alone. It therefore maps every one of the subspaces above to itself, and fixes the center pointwise — which is the statement that $\mathbb{C}_{\mathbb{B}}$ is its fixed space.</p>
-<p><strong>Complex conjugation preserves both halves but reverses their roles.</strong> ${}^{*}$ fixes $\mathbb{H}_{\mathbb{B}}$ pointwise and negates $i\mathbb{H}_{\mathbb{B}}$ pointwise; it maps each sector to itself. So of the two splits, the sector split is the one that is <em>not</em> detected by complex conjugation, and the half split is the one that is.</p>
+<p><strong>Quaternion conjugation preserves everything.</strong> ${}^{\natural}$ negates the two spatial blocks and leaves the two temporal blocks alone. It therefore maps every one of the subspaces above to itself, and fixes the center pointwise — which is the statement that $\mathbb{C}_{\mathbb{B}}$ is its fixed space.</p>
+<p><strong>Complex conjugation preserves both halves but reverses their roles.</strong> $\bar{\cdot}$ fixes $\mathbb{H}_{\mathbb{B}}$ pointwise and negates $i\mathbb{H}_{\mathbb{B}}$ pointwise; it maps each sector to itself. So of the two splits, the sector split is the one that is <em>not</em> detected by complex conjugation, and the half split is the one that is.</p>
 <h2 id="summary">Summary</h2>
 <p>The biquaternion algebra admits exactly three decompositions into two distinguished subspaces: $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ into center and vector part, $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ by complex conjugation, and $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ by Hermitian conjugation. They are the three pairings of the four coordinate blocks, so there is no fourth. The algebra carries six distinguished subspaces in all: the two-dimensional center subspace $\mathbb{C}_{\mathbb{B}}$, the six-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})$, and the four four-dimensional ones — $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$. The four involutions pair the six subspaces: quaternion conjugation has the fixed space $\mathbb{C}_{\mathbb{B}}$ and the anti-fixed space $\mathrm{Vect}(\mathbb{B})$, complex conjugation the fixed space $\mathbb{H}_{\mathbb{B}}$ and the anti-fixed space $i\mathbb{H}_{\mathbb{B}}$, and Hermitian conjugation the fixed space $\mathbb{M}_+$ and the anti-fixed space $\mathbb{M}_-$. Each of the six is therefore the fixed space of an involution: one of the four conjugations, or its negative.</p>
 <ul>
@@ -762,7 +762,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{Vect}(\mathbb{B}) = \{Q_1e_1 + Q_2e_2 + Q_3e_3\}$</td>
-<td>The vector subspace: pure-vector elements, $\mathrm{Sc}(\tilde{Q}) = 0$; a complex three-dimensional space, the derived subspace $[\mathbb{B},\mathbb{B}]$, and the anti-fixed space of quaternion conjugation, i.e. the fixed space of $-{\bar{\cdot}}$</td>
+<td>The vector subspace: pure-vector elements, $\mathrm{Sc}(\tilde{Q}) = 0$; a complex three-dimensional space, the derived subspace $[\mathbb{B},\mathbb{B}]$, and the anti-fixed space of quaternion conjugation, i.e. the fixed space of $-{{}^{\natural}}$</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{B}} = \{q_\mu e_\mu\}$</td>
@@ -821,19 +821,19 @@ $$</p>
 <td>Informational space block; coordinates $ix', iy', iz'$, parameters $q'_1, q'_2, q'_3$</td>
 </tr>
 <tr>
-<td>${}^{*}, \bar{\cdot}, \dagger, \flat = -\dagger$</td>
-<td>Complex, quaternion, Hermitian and anti-Hermitian conjugation; the four involutions, with $\dagger = \bar{\cdot}^{\,*}$</td>
+<td>$\bar{\cdot}, {}^{\natural}, {}^{*}, \flat = -{}^{*}$</td>
+<td>Complex, quaternion, Hermitian and anti-Hermitian conjugation; the four involutions, with ${}^{*} = ({}^{\natural})^{\,*}$</td>
 </tr>
 <tr>
-<td>$\{1, {}^{*}, \bar{\cdot}, \dagger\}$</td>
-<td>The four involutions commute and form a Klein four-group; $\dagger = \bar{\cdot}\circ{}^{*}$, and the signs of ${}^{*}$ and $\bar{\cdot}$ on the four blocks are its four characters</td>
+<td>$\{1, \bar{\cdot}, {}^{\natural}, {}^{*}\}$</td>
+<td>The four involutions commute and form a Klein four-group; ${}^{*} = {}^{\natural}\circ\bar{\cdot}$, and the signs of $\bar{\cdot}$ and ${}^{\natural}$ on the four blocks are its four characters</td>
 </tr>
 <tr>
 <td>$T_{\mathrm{m}}, T_{\mathrm{i}}, X_{\mathrm{m}}, X_{\mathrm{i}}$</td>
 <td>The four coordinate blocks of $1 + 1 + 3 + 3 = 8$ real parameters</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$</td>
+<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
 <td>Biquaternion norm; positive definite on $\mathbb{H}_{\mathbb{B}}$, negative definite on $i\mathbb{H}_{\mathbb{B}}$, indefinite on $\mathbb{B}$</td>
 </tr>
 <tr>

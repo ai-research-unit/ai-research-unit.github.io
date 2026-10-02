@@ -63,7 +63,7 @@ $$</p>
 <p>$$
 \tilde{Q} = Q_0 e_0 + \mathbf{Q}, \qquad \mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
 $$</p>
-<p>The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.</p>
+<p>The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.</p>
 <p><strong>Notation.</strong> To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the scalar imaginary $i$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in <em>Biquaternion Zero Divisors</em>.</p>
 <h2 id="the-fourier-kernel">The Fourier Kernel</h2>
 <h3 id="definition">Definition</h3>
@@ -277,9 +277,9 @@ $$</p>
 $$</p>
 <p>which is a biquaternion-valued multiplier. The precise form depends on the sign convention and on the placement of the root.</p>
 <h3 id="the-convective-derivative">The Convective Derivative</h3>
-<p>The convective derivative $\tilde{D} = \bar{\tilde{U}} \tilde{\nabla}$ becomes multiplication by the biquaternion</p>
+<p>The convective derivative $\tilde{D} = \tilde{U}^{\natural} \tilde{\nabla}$ becomes multiplication by the biquaternion</p>
 <p>$$
-\bar{\tilde{U}} \cdot 2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
+\tilde{U}^{\natural} \cdot 2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
 $$</p>
 <p>which depends on the velocity biquaternion $\tilde{U}$ and on the frequency variables. The multiplier is a biquaternion, and its vanishing determines the dispersion relation of the operator.</p>
 <h3 id="the-general-principle">The General Principle</h3>
@@ -362,7 +362,7 @@ $$</p>
 <p>$$
 \|Z(x)\|_E^2 = \sum_{\mu=0}^{3} \lvert Z_\mu(x) \rvert^2 \ge 0 ,
 $$</p>
-<p>so the Euclidean quadratic form is non-negative, and $\|\cdot\|_E$ is the pairing this article already uses for convergence. The Hermitian pairing of <em>The GNS Construction in the Biquaternion Framework</em>, $\mathrm{Tr}(\tilde A^\dagger \tilde B) = 2\sum_\mu \overline{A_\mu}B_\mu$, is the same definite object, and it is the pairing the framework's states are built on. What the exchange costs is the algebra: the Euclidean form is not the norm of the transform, and it does not factor through the product of $\mathbb{B}$.</p>
+<p>so the Euclidean quadratic form is non-negative, and $\|\cdot\|_E$ is the pairing this article already uses for convergence. The Hermitian pairing of <em>The GNS Construction in the Biquaternion Framework</em>, $\mathrm{Tr}(\tilde A^{*} \tilde B) = 2\sum_\mu \overline{A_\mu}B_\mu$, is the same definite object, and it is the pairing the framework's states are built on. What the exchange costs is the algebra: the Euclidean form is not the norm of the transform, and it does not factor through the product of $\mathbb{B}$.</p>
 <p><strong>Physical reading.</strong> The measure is the distribution of the momenta of a mode, and the quadratic form of its transform is the framework's attempt to read a probability off that distribution. The attempt fails exactly where the algebra is biquaternionic: the central imaginary unit is a unit of the algebra with $N(i) = -1$, so the norm cannot be the density of a state, and a Bochner-type theorem cannot be stated with it. The framework therefore builds its states on the Hermitian pairing instead — the Hilbert–Schmidt inner product of <em>The GNS Construction in the Biquaternion Framework</em>, whose positivity is the positivity a state requires. What the definite pairing buys is a state space, and what it costs is the algebra's own norm: the pairing that makes the states exist is not the pairing that makes the algebra.</p>
 <p><strong>Two hypotheses, and the same obstruction as before.</strong> The identity requires central coefficients. For quaternion-valued coefficients the products $z_k \chi_{\omega_k}$ do not reassemble, and the two sides differ by terms of order one on random data: the coefficient has to commute with the kernel, which is a genuine restriction and not a technicality of the proof. It also requires a single root for the transform: with two units, one per variable, the collapse $\bar\chi_\omega \chi_\eta = \chi_{\eta - \omega}$ fails as soon as the two units differ, and the identity is false there. The Bochner-type positivity is therefore a one-root, central-coefficient statement even for $\mathbb{H}$, and for $\mathbb{B}$ it fails under those hypotheses as well.</p>
 <h2 id="the-relation-to-the-discrete-transform">The Relation to the Discrete Transform</h2>
@@ -464,7 +464,7 @@ $$</p>
 <td>Vector part of a biquaternion</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$</td>
+<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$</td>
 <td>Biquaternion norm; it vanishes on the zero divisors</td>
 </tr>
 <tr>
@@ -473,10 +473,10 @@ $$</p>
 </tr>
 <tr>
 <td>$\Box = \partial_0^2 + \Delta$</td>
-<td>d'Alembertian, the scalar part of $\tilde{\nabla}\bar{\tilde{\nabla}}$</td>
+<td>d'Alembertian, the scalar part of $\tilde{\nabla}\tilde{\nabla}^{\natural}$</td>
 </tr>
 <tr>
-<td>$\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$</td>
+<td>$\tilde{D} = \tilde{U}^{\natural}\tilde{\nabla}$</td>
 <td>Convective derivative with velocity $\tilde{U}$</td>
 </tr>
 </tbody>

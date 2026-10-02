@@ -62,7 +62,7 @@
 <p>$$
 D = \partial_0+\mathbf{D} = \sum_{\mu=0}^{3}e_\mu\partial_\mu, \qquad D F = \sum_{\mu=0}^{3}e_\mu\partial_\mu F,
 $$</p>
-<p>acting on the left, with $\mathbf{D} = e_1\partial_1+e_2\partial_2+e_3\partial_3$. Its <strong>conjugate</strong> is $\bar D = \partial_0-\mathbf{D} = \sum_\mu\bar e_\mu\partial_\mu$, obtained by negating the vector part, $\bar e_0 = e_0$, $\bar e_k = -e_k$.</p>
+<p>acting on the left, with $\mathbf{D} = e_1\partial_1+e_2\partial_2+e_3\partial_3$. Its <strong>conjugate</strong> is $\bar D = \partial_0-\mathbf{D} = \sum_\mu e_\mu^{\natural}\partial_\mu$, obtained by negating the vector part, $e_0^{\natural} = e_0$, $e_k^{\natural} = -e_k$.</p>
 <p><strong>Remark.</strong> The Fueter operator is the Cauchy–Riemann operator of <em>Quaternion Regular Functions</em>, under the name used in the Fueter tradition; it is the same operator and this article does not restate its definition independently.</p>
 <h3 id="factorization-of-the-laplacian">Factorization of the Laplacian</h3>
 <p><strong>Theorem.</strong> On $\mathbb{H}$ the operator and its conjugate factor the Laplacian,</p>
@@ -70,7 +70,7 @@ $$</p>
 D\bar D = \bar DD = \Delta_4 ,
 $$</p>
 <p>so $D$ is a square root of $\Delta_4$.</p>
-<p><em>Proof.</em> Expand $D\bar D = \sum_{\mu,\nu}e_\mu\bar e_\nu\partial_\mu\partial_\nu$. The diagonal term is $\sum_\mu e_\mu\bar e_\mu\partial_\mu^2 = \sum_\mu\partial_\mu^2$, since $e_0\bar e_0 = 1$ and $e_k\bar e_k = -e_k^2 = 1$; for $\mu\neq\nu$ the coefficient is $e_\mu\bar e_\nu+e_\nu\bar e_\mu = 0$ by the Clifford relation of <em>Quaternion Regular Functions</em>. Hence all mixed terms cancel, leaving $\Delta_4$; the same argument gives $\bar DD = \Delta_4$.</p>
+<p><em>Proof.</em> Expand $D\bar D = \sum_{\mu,\nu}e_\mu e_\nu^{\natural}\partial_\mu\partial_\nu$. The diagonal term is $\sum_\mu e_\mu e_\mu^{\natural}\partial_\mu^2 = \sum_\mu\partial_\mu^2$, since $e_0e_0^{\natural} = 1$ and $e_k e_k^{\natural} = -e_k^2 = 1$; for $\mu\neq\nu$ the coefficient is $e_\mu e_\nu^{\natural}+e_\nu e_\mu^{\natural} = 0$ by the Clifford relation of <em>Quaternion Regular Functions</em>. Hence all mixed terms cancel, leaving $\Delta_4$; the same argument gives $\bar DD = \Delta_4$.</p>
 <h3 id="relation-to-the-cauchyriemann-operator">Relation to the Cauchy–Riemann Operator</h3>
 <p>Since $\mathbf{D}^2 = -\Delta_3$ on the vector part, the product $(\partial_0+\mathbf{D})(\partial_0-\mathbf{D})$ equals $\partial_0^2+\Delta_3 = \Delta_4$, so the Fueter operator is the four-dimensional Cauchy–Riemann operator up to normalization. On a slice $\mathbb{C}_I$ (below) the part differentiating along the slice is the classical operator $\partial_{x_0}+I\partial_\rho$, so $DF = 0$ is the quaternionic Cauchy–Riemann equation. In the Clifford language of <em>Clifford Algebras in Finite Dimensions</em>, the quaternion algebra is the even subalgebra of $\mathrm{Cl}_{0,3}$,</p>
 <p>$$
@@ -93,7 +93,7 @@ $$</p>
 $$</p>
 <p>one quaternion equation, equivalently four real equations for the four coefficients. The right action gives the same system with $+\mathrm{rot}\,\mathbf{F}$ in the second equation, so the two systems differ only in the sign of the curl and coincide when $\mathrm{rot}\,\mathbf{F} = 0$.</p>
 <p><em>Proof.</em> Multiplication out of $e_\mu\partial_\mu(F_0+\mathbf{F})$ with $\mathbf{a}\mathbf{b} = -\langle\mathbf{a},\mathbf{b}\rangle+\mathbf{a}\times\mathbf{b}$; the right action reverses the order of $e_\mu$ and the differentiated component.</p>
-<p><strong>Corollary.</strong> The system is elliptic, with principal symbol $s(\xi) = \sum_\mu\xi_\mu e_\mu$ invertible for every real $\xi\neq0$, since $s(\xi)\bar s(\xi) = |\xi|^2e_0$; hence Fueter-regular functions are real-analytic.</p>
+<p><strong>Corollary.</strong> The system is elliptic, with principal symbol $s(\xi) = \sum_\mu\xi_\mu e_\mu$ invertible for every real $\xi\neq0$, since $s(\xi)s^{\natural}(\xi) = |\xi|^2e_0$; hence Fueter-regular functions are real-analytic.</p>
 <h3 id="the-debye-type-reformulation-of-the-system">The Debye-Type Reformulation of the System</h3>
 <p>The system can also be written, away from the origin, as identities that trade each first-order equation for a radial derivative of one component and angular derivatives of the others. The rewriting is classical in one complex variable, and it is the source of the name.</p>
 <p><strong>The complex case.</strong> Let $f_0(z) = u(x,y)+iv(x,y)$ be holomorphic on a disc, put $\mathbf{x} = (x,y)$ with $\rho = |\mathbf{x}|>0$, and write $[\mathbf{x}\times\nabla g]_3 = x\,\partial_y g-y\,\partial_x g$ for the out-of-plane component of the two-dimensional cross product. The Cauchy–Riemann relations are equivalent to the two identities</p>

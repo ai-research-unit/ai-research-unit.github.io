@@ -56,7 +56,7 @@
 <p>The division of labour with the companion path-integral article must be stated at once. The companion article <em>The Path Integral in Biquaternionic Form</em> analyses the <strong>algebraic status of the phase</strong>: it shows that the $i$ of $e^{iS/\hbar}$ is the central scalar imaginary, that the exponent lies in the material sector $\mathbb{M}_-$, that the phase is a central unitary element, and that a non-central root would produce a spin rotation rather than a global phase. This article does not repeat that analysis; it takes the centrality of the phase as established and addresses the complementary case, the <strong>relativistic field-theoretic</strong> one: a functional integral over a field configuration space, not a single-particle sum over paths, with the Klein–Gordon quadratic form in the exponent. The non-relativistic single-particle scalar case, which is a sum over paths with a central kernel, belongs to the Schrödinger setting and is not treated here.</p>
 <p>The biquaternion content of the Klein–Gordon path integral is a statement about the <strong>configuration space and the quadratic form</strong> rather than about the phase. The field is a function into the center $\mathbb{C}_{\mathbb{B}}$, as the companion article <em>The Scalar Field in the Center: Why Spin 0 Escapes the Biquaternion State Module</em> establishes; the action is therefore a central scalar functional; the measure is a measure on a space of central-valued functions; and every object built from the Gaussian — the two-point function, the determinant, the effective action — is central and acts on the state module as scalar multiplication. The two structural points that are genuinely the algebra's are the identification of the <strong>mass shell</strong> with a level set of the biquaternion norm, so that the quadratic form in the exponent is the biquaternion norm read on the material sector, and the identification of the <strong>Wick rotation</strong> with the passage from the material sector to the quaternion subspace, which is exactly the passage that makes the Euclidean quadratic form positive definite. The path integral's convergence, and its failure for a negative mass squared, are properties of the biquaternion norm.</p>
 <p>The article is organised as follows. The field configuration space and the action are set up first, and the equation of motion is derived from the action by variation. The generating functional is defined and the free Gaussian is evaluated, first on a finite lattice where it is an ordinary finite-dimensional integral and can be checked exactly, and then in the formal continuum limit. The stationary-phase expansion and the classical field are treated next. The Wick rotation and Euclidean functional are then discussed, with the positivity question. A closing section states the biquaternion reading, and open questions are recorded.</p>
-<p>Throughout, the conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central $i$; $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$ is the center; $\tilde{Q}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-$; $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$; and $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$. The scalar field is $\tilde{\Phi}=\phi\,e_0$ with $\phi$ complex, and the mass parameter is $\mu=mc/\hbar$. The analytic parts use natural units $\hbar=c=1$, as the companion articles do.</p>
+<p>Throughout, the conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central $i$; $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$ is the center; $\tilde{Q}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-$; $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$; and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$. The scalar field is $\tilde{\Phi}=\phi\,e_0$ with $\phi$ complex, and the mass parameter is $\mu=mc/\hbar$. The analytic parts use natural units $\hbar=c=1$, as the companion articles do.</p>
 <ul>
 <li>Companion article <em>The Klein–Gordon Equation in Biquaternionic Form</em>, for the scalar equation, its mass-term sign, and the central scalar operator.</li>
 <li>Companion article <em>The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</em>, for the free two-point function, the four contour prescriptions, and the Euclidean kernel.</li>
@@ -86,9 +86,9 @@ $$</p>
 S[\tilde{\Phi}]
 =\int d^4x\left[-\frac{1}{2}\partial_\mu\phi^*\,\partial^\mu\phi-\frac{1}{2}\mu^2\,|\phi|^2\right],
 $$</p>
-<p>with the index contracted by the level-2 $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$; in biquaternion form, using $\tilde{\Phi}^\dagger=\phi^*e_0$ and $\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})=|\phi|^2$, this is a central scalar functional,</p>
+<p>with the index contracted by the level-2 $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$; in biquaternion form, using $\tilde{\Phi}^{*}=\phi^*e_0$ and $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})=|\phi|^2$, this is a central scalar functional,</p>
 <p>$$
-S[\tilde{\Phi}]=\int d^4x\left[-\frac{1}{2}\mathrm{Sc}\!\left(\partial_\mu\tilde{\Phi}^\dagger\,\partial^\mu\tilde{\Phi}\right)-\frac{1}{2}\mu^2\,\mathrm{Sc}\!\left(\tilde{\Phi}^\dagger\tilde{\Phi}\right)\right]\in\mathbb{C}_{\mathbb{B}} .
+S[\tilde{\Phi}]=\int d^4x\left[-\frac{1}{2}\mathrm{Sc}\!\left(\partial_\mu\tilde{\Phi}^{*}\,\partial^\mu\tilde{\Phi}\right)-\frac{1}{2}\mu^2\,\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\tilde{\Phi}\right)\right]\in\mathbb{C}_{\mathbb{B}} .
 $$</p>
 <p>The action is central because every ingredient in it is: the field is central, the derivatives act coefficient-wise, the metric contraction is a real number, and the trace is the trace formula's scalar projection. It is also real, since the kinetic and mass terms are Hermitian.</p>
 <p>The equation of motion follows by variation. For a variation $\delta\tilde{\Phi}$ vanishing at the boundary,</p>
@@ -113,20 +113,20 @@ $$</p>
 <h3 id="the-biquaternion-norm-reading-of-the-quadratic-form">The biquaternion-norm reading of the quadratic form</h3>
 <p>The quadratic part of the action can be written in a form that displays the algebra. Integrating the kinetic term by parts,</p>
 <p>$$
-S[\tilde{\Phi}]=\frac{1}{2}\int d^4x\;\mathrm{Sc}\!\left(\tilde{\Phi}^\dagger\left(\Box-\mu^2\right)\tilde{\Phi}\right),
+S[\tilde{\Phi}]=\frac{1}{2}\int d^4x\;\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\left(\Box-\mu^2\right)\tilde{\Phi}\right),
 $$</p>
 <p>so the operator in the exponent is exactly the Klein–Gordon operator whose Green's functions the companion article constructs. The mass shell is where the momentum-space symbol vanishes,</p>
 <p>$$
 \frac{\omega^2}{c^2}-\mathbf{k}^2-\mu^2=0
 \qquad\Longleftrightarrow\qquad
-N(\tilde{K})=\tilde{K}\bar{\tilde{K}}=-\mu^2,
+N(\tilde{K})=\tilde{K}\tilde{K}^{\natural}=-\mu^2,
 $$</p>
 <p>a level set of the biquaternion norm on the material four-wavevector $\tilde{K}=i\omega/c\,e_0+\mathbf{k}$. The quadratic form of the path integral is thus the biquaternion norm of $\mathbb{M}_-$, shifted by the mass: the exponent's saddle is the biquaternion norm's level set, and the Gaussian's width is the operator whose symbol is that biquaternion norm minus the mass. This is the sense in which the framework's contribution to the scalar path integral is geometry rather than a new mechanism.</p>
 <h2 id="the-generating-functional-and-the-free-gaussian">The Generating Functional and the Free Gaussian</h2>
 <h3 id="definitions">Definitions</h3>
 <p>The generating functional is</p>
 <p>$$
-Z[J]=\int\mathcal{D}\tilde{\Phi}\;\exp\left(iS[\tilde{\Phi}]+i\int d^4x\;\mathrm{Sc}\!\left(\tilde{J}^\dagger\tilde{\Phi}\right)\right),
+Z[J]=\int\mathcal{D}\tilde{\Phi}\;\exp\left(iS[\tilde{\Phi}]+i\int d^4x\;\mathrm{Sc}\!\left(\tilde{J}^{*}\tilde{\Phi}\right)\right),
 $$</p>
 <p>with a central source $\tilde{J}=J\,e_0$ and a measure $\mathcal{D}\tilde{\Phi}$ on the central-valued configuration space. The correlation functions are the functional derivatives with respect to the source; the normalisation $Z[0]$ is fixed by the requirement that the vacuum expectation of the identity be one. The phase factor is the central unitary element analysed in the companion article <em>The Path Integral in Biquaternionic Form</em>, and the measure is a measure on a space of complex functions, i.e. on a space of pairs of real functions.</p>
 <h3 id="the-finite-dimensional-gaussian-exactly">The finite-dimensional Gaussian, exactly</h3>
@@ -161,7 +161,7 @@ G_E(\tilde{Q}_E)=\left(-\Delta_E+\mu^2\right)^{-1},
 $$</p>
 <p>which is the standard massive Euclidean propagator. The free two-point function of the path integral is therefore the Euclidean kernel</p>
 <p>$$
-\langle\tilde{\Phi}(\tilde{Q}_E)\tilde{\Phi}^\dagger(\tilde{Y}_E)\rangle
+\langle\tilde{\Phi}(\tilde{Q}_E)\tilde{\Phi}^{*}(\tilde{Y}_E)\rangle
 =G_E(\tilde{Q}_E-\tilde{Y}_E)\,e_0,
 $$</p>
 <p>a central scalar times $e_0$, whose closed Yukawa form is given in the companion article on the propagator. The identity of the Gaussian two-point function with the inverse of the quadratic form, verified exactly on the lattice, is the path-integral proof that the free propagator is the Green's function of the Klein–Gordon operator: the two constructions agree by construction once the quadratic form is identified with the operator.</p>
@@ -207,7 +207,7 @@ $$</p>
 <p>$$
 S[\tilde{\Phi}]\;\longmapsto\;iS_E[\tilde{\Phi}],
 \qquad
-S_E[\tilde{\Phi}]=\frac{1}{2}\int d^4x_E\;\mathrm{Sc}\!\left(\tilde{\Phi}^\dagger\left(-\Delta_E+\mu^2\right)\tilde{\Phi}\right),
+S_E[\tilde{\Phi}]=\frac{1}{2}\int d^4x_E\;\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\left(-\Delta_E+\mu^2\right)\tilde{\Phi}\right),
 $$</p>
 <p>and the phase factor becomes a decaying weight,</p>
 <p>$$
@@ -250,7 +250,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The Klein–Gordon path integral is the functional integral over central-valued fields, $\tilde{\Phi}=\phi e_0$ with $\phi$ complex, weighted by the central phase $e^{iS}$ with the action</p>
 <p>$$
-S[\tilde{\Phi}]=\frac{1}{2}\int d^4x\;\mathrm{Sc}\!\left(\tilde{\Phi}^\dagger\left(\Box-\mu^2\right)\tilde{\Phi}\right)
+S[\tilde{\Phi}]=\frac{1}{2}\int d^4x\;\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\left(\Box-\mu^2\right)\tilde{\Phi}\right)
 =\int d^4x\left[-\frac{1}{2}\partial_\mu\phi^*\partial^\mu\phi-\frac{1}{2}\mu^2|\phi|^2\right].
 $$</p>
 <p>Its variation gives the Klein–Gordon equation $(\Box-\mu^2)\phi=0$, verified on a superposition of three on-shell modes to a residual of order $10^{-7}$. The generating functional is defined with a central source, and the free Gaussian is evaluated exactly on a finite lattice,</p>
@@ -311,11 +311,11 @@ $$</p>
 <td>Material four-wavevector, $\in\mathbb{M}_-$</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$</td>
+<td>$N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$</td>
 <td>Biquaternion norm; $N(\tilde{K})=-\mu^2$ is the mass shell</td>
 </tr>
 <tr>
-<td>$\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$</td>
+<td>$\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$</td>
 <td>d'Alembertian, series convention</td>
 </tr>
 <tr>

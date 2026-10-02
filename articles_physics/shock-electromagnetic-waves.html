@@ -60,7 +60,7 @@
 <li><strong>Plasma electrodynamics.</strong> In a plasma, the coupling of the electromagnetic field to the charged matter can produce nonlinear behavior. Shock-like electromagnetic structures are observed in astrophysical and laboratory plasmas.</li>
 </ol>
 <p>This article treats the three regimes. The first is the one relevant to the linear biquaternion Maxwell equations of the companion article; the other two require nonlinear or material extensions of those equations. The article is honest about which results are established and which are the subject of ongoing research.</p>
-<p>The biquaternionic gradient $\tilde{\nabla}$, the field-strength biquaternion $\tilde{F}$, the source biquaternion $\tilde{R}$, and the wave equation $\Box\tilde{F} = -\bar{\tilde{\nabla}}\tilde{R}$ are assumed from the companion article on Maxwell's equations. The conventions are those of that article: $\tilde{\nabla} = e_0 \partial_{ict} + e_1 \partial_x + e_2 \partial_y + e_3 \partial_z$, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$. Throughout, the symbol $c$ denotes the <strong>speed of light in the medium</strong>, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the <strong>vacuum speed of light</strong>, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$.</p>
+<p>The biquaternionic gradient $\tilde{\nabla}$, the field-strength biquaternion $\tilde{F}$, the source biquaternion $\tilde{R}$, and the wave equation $\Box\tilde{F} = -\tilde{\nabla}^{\natural}\tilde{R}$ are assumed from the companion article on Maxwell's equations. The conventions are those of that article: $\tilde{\nabla} = e_0 \partial_{ict} + e_1 \partial_x + e_2 \partial_y + e_3 \partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$. Throughout, the symbol $c$ denotes the <strong>speed of light in the medium</strong>, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the <strong>vacuum speed of light</strong>, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$.</p>
 <h2 id="why-linear-vacuum-maxwell-has-no-shocks">Why Linear Vacuum Maxwell Has No Shocks</h2>
 <h3 id="the-linear-structure">The Linear Structure</h3>
 <p>The biquaternionic Maxwell equation in vacuum is</p>
@@ -71,7 +71,7 @@ $$</p>
 <p>$$
 \tilde{\nabla} \tilde{F} = 0.
 $$</p>
-<p>Applying $\bar{\tilde{\nabla}}$ to both sides and using $\Box = \bar{\tilde{\nabla}}\tilde{\nabla}$ gives the wave equation</p>
+<p>Applying $\tilde{\nabla}^{\natural}$ to both sides and using $\Box = \tilde{\nabla}^{\natural}\tilde{\nabla}$ gives the wave equation</p>
 <p>$$
 \Box \tilde{F} = 0, \qquad \Box = \partial_{ict}^2 + \Delta = \Delta - \frac{1}{c_0^2}\frac{\partial^2}{\partial t^2}.
 $$</p>
@@ -113,7 +113,7 @@ $$</p>
 [\tilde{F}]_S = 0 \qquad \text{(non-characteristic surface, homogeneous medium)}.
 $$</p>
 <p>So a discontinuity cannot propagate on a non-characteristic surface; the field must be continuous across it.</p>
-<p><strong>Consequence for a characteristic surface.</strong> If the surface is <strong>characteristic</strong> (the light cone, $\tilde{n}\bar{\tilde{n}} = 0$), then $\tilde{n}$ is a zero divisor and the jump condition has nontrivial solutions. This is the case of a propagating wave front, treated in the next subsection.</p>
+<p><strong>Consequence for a characteristic surface.</strong> If the surface is <strong>characteristic</strong> (the light cone, $\tilde{n}\tilde{n}^{\natural} = 0$), then $\tilde{n}$ is a zero divisor and the jump condition has nontrivial solutions. This is the case of a propagating wave front, treated in the next subsection.</p>
 <p><strong>Remark on material interfaces.</strong> At a <strong>material interface</strong> (a surface across which the electromagnetic properties $\epsilon$ and $\mu$ jump), the field $\tilde{F}$ can jump even for a non-characteristic surface, because the constitutive relation $\tilde{F} = i\sqrt{\epsilon}\mathbf{E} - \sqrt{\mu}\mathbf{H}$ itself involves quantities that jump. The boundary conditions at such an interface are the standard ones — $[\mathbf{D}]\cdot n = 0$ and $[\mathbf{B}]\cdot n = 0$, with the tangential components of $\mathbf{E}$ and $\mathbf{H}$ continuous — but these follow from the integral form of Maxwell's equations across the interface, not from the jump condition $\tilde{n}[\tilde{F}]_S = 0$ in a homogeneous medium.</p>
 <h3 id="the-light-cone-condition">The Light-Cone Condition</h3>
 <p>If the surface $S$ is a <strong>characteristic</strong> surface (the light cone), the jump condition admits nontrivial solutions. On the light cone, the normal is a zero divisor, and the jump condition becomes the <strong>wave-front condition</strong></p>

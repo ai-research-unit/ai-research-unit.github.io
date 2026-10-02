@@ -64,9 +64,9 @@ $$</p>
 <p>The real number $q_0$ is the <strong>scalar part</strong>, and the triple $(q_1, q_2, q_3)$ is the <strong>vector part</strong>. We write $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $\mathbf{q} \in \mathbb{R}^3$.</p>
 <p>The <strong>modulus</strong> of $\tilde q$ is</p>
 <p>$$
-|\tilde q| = \sqrt{\tilde q \bar{\tilde q}} = \sqrt{q_0^2 + q_1^2 + q_2^2 + q_3^2},
+|\tilde q| = \sqrt{\tilde q \tilde{q}^{\natural}} = \sqrt{q_0^2 + q_1^2 + q_2^2 + q_3^2},
 $$</p>
-<p>where $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ is the quaternion conjugate. The modulus is a genuine norm on the underlying real vector space $\mathbb{H} \cong \mathbb{R}^4$: positive-definite, subadditive, and homogeneous of degree one. It is multiplicative:</p>
+<p>where $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ is the quaternion conjugate. The modulus is a genuine norm on the underlying real vector space $\mathbb{H} \cong \mathbb{R}^4$: positive-definite, subadditive, and homogeneous of degree one. It is multiplicative:</p>
 <p>$$
 |pq| = |p| |\tilde q|.
 $$</p>
@@ -323,7 +323,7 @@ $$</p>
 <p><strong>Ellipticity.</strong> The symbol of $D$ is $\sigma_D(\xi) = \xi_0 + e_1 \xi_1 + e_2 \xi_2 + e_3 \xi_3$, which is invertible for every non-zero $\xi \in \mathbb{R}^4$. So $D$ is elliptic.</p>
 <p><strong>Fundamental solution.</strong> The fundamental solution of $D$ is</p>
 <p>$$
-E(\tilde q) = \frac{\tilde q^{-1}}{|\tilde q|^2} = \frac{\bar{\tilde q}}{|\tilde q|^4},
+E(\tilde q) = \frac{\tilde q^{-1}}{|\tilde q|^2} = \frac{\tilde{q}^{\natural}}{|\tilde q|^4},
 $$</p>
 <p>which satisfies $D E = 2\pi^2 \delta_0$ in the sense of distributions.</p>
 <h3 id="the-relation-to-the-cauchyriemann-operator_1">The Relation to the Cauchy–Riemann Operator</h3>
@@ -453,11 +453,11 @@ $$</p>
 <td>Vector part</td>
 </tr>
 <tr>
-<td>$\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$</td>
+<td>$\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$</td>
 <td>Quaternion conjugate</td>
 </tr>
 <tr>
-<td>$\lvert \tilde q\rvert = \sqrt{\tilde q \bar{\tilde q}}$</td>
+<td>$\lvert \tilde q\rvert = \sqrt{\tilde q \tilde{q}^{\natural}}$</td>
 <td>Modulus</td>
 </tr>
 <tr>

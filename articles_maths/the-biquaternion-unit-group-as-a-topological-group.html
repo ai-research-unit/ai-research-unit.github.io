@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The group of units $\mathbb{B}^\times$ of the biquaternion algebra is an open subset of the algebra, hence a manifold, and it carries both a group structure and the topology of that manifold. This article reads the two together: the units as the complement of the null cone, the polar decomposition, the retraction of the group onto its maximal compact subgroup, and the homotopy groups, generators and universal cover that follow.</p>
 <p>The article is one of the three the boundary draws out of the former joint treatment of the Lie theory: the Lie algebra is <em>Biquaternion Lie Algebra</em> in Algebra, the Lie-group theory and the exponential are <em>Biquaternion Lie Group and Exponential Structure</em> in Analysis, and the topology of the group is here. The ambient topology and the null cone are in <em>Biquaternion Topology</em>, and the norm and invertibility criterion are in <em>Biquaternion Norm and Invertibility</em>.</p>
-<p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})\neq0$ (<em>Biquaternion Norm and Invertibility</em>). Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^3 Q_k e_k$.</p>
+<p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})\neq0$ (<em>Biquaternion Norm and Invertibility</em>). Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^3 Q_k e_k$.</p>
 <hr />
 <h2 id="the-group-of-units">The Group of Units</h2>
 <p>The <strong>group of units</strong> of $\mathbb{B}$ is the set of invertible elements,</p>
@@ -72,7 +72,7 @@ $$</p>
 <p><strong>Two unit spheres.</strong> There are two candidate "unit spheres" in $\mathbb{B}$, and only one of them is a group. The Euclidean sphere $\|\tilde{Q}\|_E=1$ is a genuine sphere $S^7$ but is not a group, since $\|\cdot\|_E$ is not multiplicative and it contains zero divisors (<em>Biquaternion Topology</em>, §<em>The Euclidean unit sphere</em>). The level set $N(\tilde{Q})=1$ is a group but is neither Euclidean nor compact. The condition that makes a level set of a form on $\mathbb{B}$ a subgroup is $N=1$, not $\|\tilde{Q}\|_E=1$.</p>
 <p>The group of units is an open subset of $\mathbb{B}$, hence a manifold of real dimension $8$, but its topology is far from that of a general open set in $\mathbb{R}^8$: it has the homotopy type of a compact group. The polar decomposition exhibits the maximal compact subgroup as a strong deformation retract, and with it determines the homotopy groups and the universal cover. Everything in this part is a statement about $\mathbb{B}^\times$ as a topological group; the topology of the ambient space and of the null cone is in <em>Biquaternion Topology</em>.</p>
 <h2 id="the-retraction-of-math45-onto-its-maximal-compact-subgroup">The Retraction of $\mathbb{B}^\times$ onto Its Maximal Compact Subgroup</h2>
-<p>Every $\tilde{A} \in \mathbb{B}^\times$ has a unique polar decomposition $\tilde{A} = \tilde{U}\tilde{P}$, where $\tilde{U}$ is unitary ($\tilde{U}^\dagger\tilde{U} = e_0$) and $\tilde{P} = (\tilde{A}^\dagger\tilde{A})^{1/2}$ is Hermitian positive definite. For $t\in[0,1]$ put $\tilde{P}_t=(1-t)\tilde{P}+t e_0$ and</p>
+<p>Every $\tilde{A} \in \mathbb{B}^\times$ has a unique polar decomposition $\tilde{A} = \tilde{U}\tilde{P}$, where $\tilde{U}$ is unitary ($\tilde{U}^{*}\tilde{U} = e_0$) and $\tilde{P} = (\tilde{A}^{*}\tilde{A})^{1/2}$ is Hermitian positive definite. For $t\in[0,1]$ put $\tilde{P}_t=(1-t)\tilde{P}+t e_0$ and</p>
 <p>$$
 \tilde{H}(t,\tilde{A})=\tilde{U}\tilde{P}_t.
 $$</p>
@@ -82,7 +82,7 @@ $$</p>
 $$</p>
 <p>So the unitary biquaternions form a strong deformation retract of $\mathbb{B}^\times$, and the two are homotopy equivalent, whence $\pi_n(\mathbb{B}^\times)\cong\pi_n(\mathrm{U}(\mathbb{B}))$ for all $n$, writing $\mathrm{U}(\mathbb{B})$ for the group of unitary biquaternions. Every $\tilde{A}$ is joined to a unitary element, and $\mathrm{U}(\mathbb{B})$ is connected (§<em>The Structure of the Maximal Compact Subgroup</em>), so $\mathbb{B}^\times$ is connected, in agreement with <em>Biquaternion Norm and Invertibility</em>. (The statement that there are two components distinguished by the sign of the determinant concerns the real algebra, not the complex one.) The retraction takes $\mathbb{B}^\times$ onto its maximal compact subgroup, the <strong>unitary biquaternions</strong></p>
 <p>$$
-\mathrm{U}(\mathbb{B}) = \{\tilde{Q}\in\mathbb{B}:\tilde{Q}^\dagger\tilde{Q}=e_0\}.
+\mathrm{U}(\mathbb{B}) = \{\tilde{Q}\in\mathbb{B}:\tilde{Q}^{*}\tilde{Q}=e_0\}.
 $$</p>
 <h2 id="the-retraction-of-the-norm-one-group-onto-its-maximal-compact-subgroup">The Retraction of the Norm-One Group onto Its Maximal Compact Subgroup</h2>
 <p>Let $\tilde{A}\in \mathbb{B}^\times_1$ have polar decomposition $\tilde{A}=\tilde{U}\tilde{P}$. Then $1=N(\tilde{A})=N(\tilde{U})N(\tilde{P})$, with $N(\tilde{U})$ of modulus $1$ and $N(\tilde{P})$ a positive real, so $N(\tilde{U})=N(\tilde{P})=1$, that is $\tilde{U}$ lies in $S^3$. For $t\in[0,1]$ define</p>
@@ -127,7 +127,7 @@ $$</p>
 <p>while $S^3$ and $\mathbb{B}^\times_1$ are their own universal covers. By Hurewicz, $H_1(\mathrm{U}(\mathbb{B}))\cong H_1(\mathbb{B}^\times)\cong\mathbb{Z}$ and $H_1(S^3)=H_1(\mathbb{B}^\times_1)=0$; and $\pi_n(\mathrm{U}(\mathbb{B}))\cong\pi_n(S^3)$ for $n\geq2$.</p>
 <h2 id="summary">Summary</h2>
 <p>The group of units $\mathbb{B}^\times=\{N\neq0\}$ is open and dense in $\mathbb{B}$, its complement the null cone; it is connected and non-compact, of real dimension $8$, with centre $\mathbb{C}^\times e_0$.</p>
-<p>Its topology is that of a compact group. The polar decomposition $\tilde{A}=\tilde{U}\tilde{P}$ gives a strong deformation retraction of $\mathbb{B}^\times$ onto the unitary biquaternions $\mathrm{U}(\mathbb{B})=\{\tilde{Q}^\dagger\tilde{Q}=e_0\}$, and a second retraction takes the norm-one group $\mathbb{B}^\times_1$ onto $S^3$. Hence $\mathbb{B}^\times\simeq\mathrm{U}(\mathbb{B})\simeq S^1\times S^3$ and $\mathbb{B}^\times_1\simeq S^3$, with
+<p>Its topology is that of a compact group. The polar decomposition $\tilde{A}=\tilde{U}\tilde{P}$ gives a strong deformation retraction of $\mathbb{B}^\times$ onto the unitary biquaternions $\mathrm{U}(\mathbb{B})=\{\tilde{Q}^{*}\tilde{Q}=e_0\}$, and a second retraction takes the norm-one group $\mathbb{B}^\times_1$ onto $S^3$. Hence $\mathbb{B}^\times\simeq\mathrm{U}(\mathbb{B})\simeq S^1\times S^3$ and $\mathbb{B}^\times_1\simeq S^3$, with
 $$
 \pi_1(\mathbb{B}^\times)\cong\mathbb{Z},\quad \pi_2(\mathbb{B}^\times)=0,\quad \pi_3(\mathbb{B}^\times)\cong\mathbb{Z},
 $$
@@ -154,7 +154,7 @@ and $\mathbb{B}^\times_1$, $S^3$ simply connected with $\pi_3\cong\mathbb{Z}$. T
 <td>Centre of $\mathbb{B}^\times$; nonzero complex scalars</td>
 </tr>
 <tr>
-<td>$\mathrm{U}(\mathbb{B})=\{\tilde{Q}^\dagger\tilde{Q}=e_0\}$</td>
+<td>$\mathrm{U}(\mathbb{B})=\{\tilde{Q}^{*}\tilde{Q}=e_0\}$</td>
 <td>Unitary biquaternions; maximal compact subgroup of $\mathbb{B}^\times$</td>
 </tr>
 <tr>

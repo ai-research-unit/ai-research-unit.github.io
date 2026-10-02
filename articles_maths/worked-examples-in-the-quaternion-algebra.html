@@ -62,27 +62,27 @@ $$</p>
 <p>$$
 e_1^2 = e_2^2 = e_3^2 = e_1e_2e_3 = -e_0, \qquad e_1e_2 = e_3, \quad e_2e_3 = e_1, \quad e_3e_1 = e_2,
 $$</p>
-<p>and the products in the opposite order are the negatives. A quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, and the quaternion norm $N$ is that of <em>Quaternion Norm and Invertibility</em>, named here and not defined again.</p>
+<p>and the products in the opposite order are the negatives. A quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, and the quaternion norm $N$ is that of <em>Quaternion Norm and Invertibility</em>, named here and not defined again.</p>
 <h2 id="the-three-involutions">The Three Involutions</h2>
 <p><strong>Definition.</strong> The three <strong>involutions</strong> of the quaternion algebra are the real-linear maps</p>
 <p>$$
-\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3, \qquad -\bar{\tilde q} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad -\tilde q = -q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3,
+\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3, \qquad -\tilde{q}^{\natural} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad -\tilde q = -q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3,
 $$</p>
 <p>called quaternion, vector and total conjugation. Each is an involution: applying it twice returns $\tilde q$.</p>
-<p><strong>Proposition.</strong> The three involutions are $\bar{\cdot}$, $-\bar{\cdot}$ and $-\mathrm{id}$: the second is the negative of the first and the third is the negative of the identity, so the three maps together with the identity form the group $\mathbb{Z}/2\times\mathbb{Z}/2$ of sign changes of the scalar and vector parts.</p>
+<p><strong>Proposition.</strong> The three involutions are ${}^{\natural}$, $-{}^{\natural}$ and $-\mathrm{id}$: the second is the negative of the first and the third is the negative of the identity, so the three maps together with the identity form the group $\mathbb{Z}/2\times\mathbb{Z}/2$ of sign changes of the scalar and vector parts.</p>
 <p><em>Proof.</em> The first negates the vector part and fixes the scalar part, $q_0-\mathbf{q}$; the second is its negative, $-q_0+\mathbf{q} = -(q_0-\mathbf{q})$, and so negates the scalar part and fixes the vector part; the third negates both, $-q_0-\mathbf{q}$. Composing the sign changes independently in the two parts gives the Klein four-group.</p>
 <p><strong>Worked values.</strong> For $\tilde q = 1+2e_1-e_2+3e_3$,</p>
 <p>$$
-\bar{\tilde q} = 1-2e_1+e_2-3e_3, \qquad -\bar{\tilde q} = -1+2e_1-e_2+3e_3, \qquad -\tilde q = -1-2e_1+e_2-3e_3 .
+\tilde{q}^{\natural} = 1-2e_1+e_2-3e_3, \qquad -\tilde{q}^{\natural} = -1+2e_1-e_2+3e_3, \qquad -\tilde q = -1-2e_1+e_2-3e_3 .
 $$</p>
 <p><strong>Proposition (fixed-point subspaces).</strong> The fixed points of the three involutions are</p>
 <p>$$
-\{\tilde q : \bar{\tilde q} = \tilde q\} = \mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0, \qquad
-\{\tilde q : -\bar{\tilde q} = \tilde q\} = \operatorname{Im}\mathbb{H}, \qquad
+\{\tilde q : \tilde{q}^{\natural} = \tilde q\} = \mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0, \qquad
+\{\tilde q : -\tilde{q}^{\natural} = \tilde q\} = \operatorname{Im}\mathbb{H}, \qquad
 \{\tilde q : -\tilde q = \tilde q\} = \{0\},
 $$</p>
 <p>of dimensions $1$, $3$ and $0$.</p>
-<p><em>Proof.</em> $\bar{\tilde q} = \tilde q$ gives $\mathbf{q} = 0$; $-\bar{\tilde q} = \tilde q$ gives $q_0 = 0$; $-\tilde q = \tilde q$ gives $\tilde q = -\tilde q$, so $\tilde q = 0$.</p>
+<p><em>Proof.</em> $\tilde{q}^{\natural} = \tilde q$ gives $\mathbf{q} = 0$; $-\tilde{q}^{\natural} = \tilde q$ gives $q_0 = 0$; $-\tilde q = \tilde q$ gives $\tilde q = -\tilde q$, so $\tilde q = 0$.</p>
 <p>So the scalar axis, the imaginary three-space and the origin are the fixed sets, and they are exactly the images of the projections onto the scalar part, the vector part and zero. The first is a subalgebra isomorphic to $\mathbb{R}$; the second is not, because the product of two of its elements has a scalar part.</p>
 <h2 id="the-roots-of-minus-one">The Roots of Minus One</h2>
 <p><strong>Definition.</strong> A <strong>root of $-1$</strong> is a quaternion $\xi$ with $\xi^2 = -1$.</p>
@@ -99,12 +99,12 @@ $$</p>
 <p>because the off-diagonal products cancel in pairs and each square is $-1$. The element $e_2$ is a root, and so is the whole sphere $u_1e_1+u_2e_2+u_3e_3$ with $u_1^2+u_2^2+u_3^2 = 1$.</p>
 <p><strong>The roots of $+1$.</strong> For comparison, $\eta^2 = 1$ has only the solutions $\eta = \pm1$, because $(\eta-1)(\eta+1) = 0$ and there are no zero divisors; in particular $e_2$ is a root of $-1$ but no pure quaternion is a root of $+1$.</p>
 <h2 id="the-conjugation-action">The Conjugation Action</h2>
-<p><strong>Definition.</strong> For a unit quaternion $u$ the <strong>conjugation action</strong>, or adjoint action, is $\operatorname{Ad}_u(x) = uxu^{-1} = ux\bar u$.</p>
+<p><strong>Definition.</strong> For a unit quaternion $u$ the <strong>conjugation action</strong>, or adjoint action, is $\operatorname{Ad}_u(x) = uxu^{-1} = uxu^{\natural}$.</p>
 <p><strong>Worked computation.</strong> Take the unit quaternion</p>
 <p>$$
 u = \exp\!\Bigl(\frac{\pi}{4}e_1\Bigr) = \cos\frac{\pi}{4} + e_1\sin\frac{\pi}{4} = \frac{1+e_1}{\sqrt2},
 $$</p>
-<p>so that $u^{-1} = \bar u = (1-e_1)/\sqrt2$. Then on the imaginary basis,</p>
+<p>so that $u^{-1} = u^{\natural} = (1-e_1)/\sqrt2$. Then on the imaginary basis,</p>
 <p>$$
 u\,e_1\,u^{-1} = e_1, \qquad u\,e_2\,u^{-1} = e_3, \qquad u\,e_3\,u^{-1} = -e_2 .
 $$</p>
@@ -162,12 +162,12 @@ $$</p>
 <td>Worked element $\tilde q = 1+2e_1-e_2+3e_3$</td>
 </tr>
 <tr>
-<td>$\bar{\tilde q}, -\bar{\tilde q}, -\tilde q$</td>
+<td>$\tilde{q}^{\natural}, -\tilde{q}^{\natural}, -\tilde q$</td>
 <td>Quaternion, vector and total conjugation</td>
 </tr>
 <tr>
 <td>$\mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0$</td>
-<td>Fixed space of $\bar{\cdot}$</td>
+<td>Fixed space of ${}^{\natural}$</td>
 </tr>
 <tr>
 <td>$\operatorname{Im}\mathbb{H}$</td>
@@ -178,7 +178,7 @@ $$</p>
 <td>Quaternion norm, from <em>Quaternion Norm and Invertibility</em>; $N(\tilde q) = 15$ for the worked element</td>
 </tr>
 <tr>
-<td>$\operatorname{Ad}_u(x) = ux\bar u$</td>
+<td>$\operatorname{Ad}_u(x) = uxu^{\natural}$</td>
 <td>Conjugation action</td>
 </tr>
 <tr>

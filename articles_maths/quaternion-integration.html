@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article develops the integration theory of quaternion-valued functions of a quaternion variable. It follows <em>Quaternion Analysis</em>, where the quaternion space, its metric, the limits and continuity of quaternion-valued functions, and the two notions of differentiability were set up: the naive difference quotient, which forces the function to be affine, and the Cauchy–Riemann operator, whose kernel is the class of regular functions. Here the integral is constructed and the integral theorems of that class are proved.</p>
 <p>The treatment is mathematical throughout. The independent variable is a quaternion, the values are quaternions, and no physical object is introduced. The quaternion algebra, its basis, its conjugation and its quaternion norm are taken from <em>Quaternion Algebra</em>; the topology of $\mathbb{H}$, the modulus, the Cauchy–Riemann operator and the class of regular functions are taken from <em>Quaternion Analysis</em>. Where a statement is the quaternionic instance of a general theorem of Clifford analysis, the general result is cited and the quaternionic constants are computed; the general shape of the integral theorems is that of <em>Hypercomplex Integration</em> and <em>Regularity and the Cauchy–Riemann Operator</em>.</p>
-<p>Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$. A general quaternion is written $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with quaternion conjugate $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and norm $N(\tilde q) = \tilde q\bar{\tilde q} = |\tilde q|^2 = \sum_\mu q_\mu^2$. The coordinates of a point are also written $x_0, x_1, x_2, x_3$, so that $\tilde q = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$, and $\partial_\mu = \partial/\partial x_\mu$. The <strong>Cauchy–Riemann operator</strong> is</p>
+<p>Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$. A general quaternion is written $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with quaternion conjugate $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and norm $N(\tilde q) = \tilde q\tilde{q}^{\natural} = |\tilde q|^2 = \sum_\mu q_\mu^2$. The coordinates of a point are also written $x_0, x_1, x_2, x_3$, so that $\tilde q = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$, and $\partial_\mu = \partial/\partial x_\mu$. The <strong>Cauchy–Riemann operator</strong> is</p>
 <p>$$
 D = \partial_0 + e_1 \partial_1 + e_2 \partial_2 + e_3 \partial_3,
 $$</p>
@@ -117,15 +117,15 @@ $$</p>
 <h3 id="the-operator-and-its-square">The Operator and its Square</h3>
 <p>The Cauchy–Riemann operator $D$ and its conjugate $\bar{D}$ are first-order operators with constant coefficients; they act on a $C^1$ function by taking its partial derivatives and left-multiplying by the basis elements. Their elementary action on the coordinate functions is</p>
 <p>$$
-Dq = \sum_{\mu=0}^{3} e_\mu e_\mu = e_0 - 3e_0 = -2, \qquad D\bar{\tilde q} = \sum_{\mu=0}^{3} e_\mu \bar{e}_\mu = e_0 + 3e_0 = 4,
+Dq = \sum_{\mu=0}^{3} e_\mu e_\mu = e_0 - 3e_0 = -2, \qquad D\tilde{q}^{\natural} = \sum_{\mu=0}^{3} e_\mu e_\mu^{\natural} = e_0 + 3e_0 = 4,
 $$</p>
-<p>and conjugating the first identity gives $\bar{D}\bar{\tilde q} = -2$ and $\bar{D}\tilde q = 4$. The two constant values $2$ and $4$ recur in the analysis of the operator.</p>
+<p>and conjugating the first identity gives $\bar{D}\tilde{q}^{\natural} = -2$ and $\bar{D}\tilde q = 4$. The two constant values $2$ and $4$ recur in the analysis of the operator.</p>
 <p><strong>Theorem.</strong> The operators satisfy</p>
 <p>$$
 D\bar{D} = \bar{D}D = \partial_0^2 + \partial_1^2 + \partial_2^2 + \partial_3^2 = \Delta,
 $$</p>
 <p>the Laplacian of $\mathbb{R}^4$.</p>
-<p><strong>Proof.</strong> Expand $D\bar{D} = \sum_{\mu,\nu} e_\mu \bar{e}_\nu \partial_\mu\partial_\nu$. The mixed second derivatives commute, so only the symmetric part of $e_\mu\bar{e}_\nu$ contributes. Since $e_\mu\bar{e}_\nu + e_\nu\bar{e}_\mu = 2\delta_{\mu\nu}$ (checking the four cases $\mu = \nu$, and $\mu = 0$ with $\nu = k$, and $\mu = k$, $\nu = l$ distinct imaginary), the sum reduces to $\sum_\mu \partial_\mu^2$. The same computation applies to $\bar{D}D$.</p>
+<p><strong>Proof.</strong> Expand $D\bar{D} = \sum_{\mu,\nu} e_\mu e_\nu^{\natural} \partial_\mu\partial_\nu$. The mixed second derivatives commute, so only the symmetric part of $e_\mu e_\nu^{\natural}$ contributes. Since $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 2\delta_{\mu\nu}$ (checking the four cases $\mu = \nu$, and $\mu = 0$ with $\nu = k$, and $\mu = k$, $\nu = l$ distinct imaginary), the sum reduces to $\sum_\mu \partial_\mu^2$. The same computation applies to $\bar{D}D$.</p>
 <p><strong>Corollary.</strong> If $f$ is left regular or right regular then $\Delta f = 0$: a regular function is harmonic, and each of its four components is a harmonic function of four real variables.</p>
 <p><strong>Proof.</strong> If $Df = 0$ then $\Delta f = \bar{D}Df = 0$; if $fD = 0$ then $\Delta f = (f\bar{D})D = 0$.</p>
 <h3 id="ellipticity">Ellipticity</h3>
@@ -141,29 +141,29 @@ $$</p>
 <p><strong>Definition.</strong> A $C^1$ function $f$ is <strong>left regular</strong> if $Df = 0$ and <strong>right regular</strong> if $fD = 0$, where the right action of the operator is $fD = \partial_0 f + (\partial_1 f)e_1 + (\partial_2 f)e_2 + (\partial_3 f)e_3$.</p>
 <p>The two classes are exchanged by quaternion conjugation. Write $\tilde{f} = \bar{f}$; multiplication by a constant is conjugated into multiplication by the conjugate constant, and conjugation reverses the order of factors, so</p>
 <p>$$
-\overline{Df} = \sum_\mu (\partial_\mu \bar{f}) \bar{e}_\mu = \bar{f}\,\bar{D}, \qquad \overline{fD} = \sum_\mu \bar{e}_\mu (\partial_\mu \bar{f}) = \bar{D}\,\bar{f},
+(Df)^{\natural} = \sum_\mu (\partial_\mu \bar{f}) e_\mu^{\natural} = \bar{f}\,\bar{D}, \qquad (fD)^{\natural} = \sum_\mu e_\mu^{\natural} (\partial_\mu \bar{f}) = \bar{D}\,\bar{f},
 $$</p>
 <p>so $f$ is left $D$-regular if and only if $\bar{f}$ is right $\bar{D}$-regular, and $f$ is right $D$-regular if and only if $\bar{f}$ is left $\bar{D}$-regular. For a non-commutative algebra the two classes are genuinely different: a constant function is both, but a regular function need not be regular on the other side.</p>
-<p><strong>Example.</strong> The function $f(\tilde q) = e_1\bar{\tilde q}$ is left regular but not right regular. On the one hand</p>
+<p><strong>Example.</strong> The function $f(\tilde q) = e_1\tilde{q}^{\natural}$ is left regular but not right regular. On the one hand</p>
 <p>$$
-Df = \sum_{\mu=0}^{3} e_\mu\, \partial_\mu(e_1\bar{\tilde q}) = \sum_{\mu=0}^{3} e_\mu e_1\bar{e}_\mu = e_1 + e_1 - e_1 - e_1 = 0 ,
+Df = \sum_{\mu=0}^{3} e_\mu\, \partial_\mu(e_1\tilde{q}^{\natural}) = \sum_{\mu=0}^{3} e_\mu e_1e_\mu^{\natural} = e_1 + e_1 - e_1 - e_1 = 0 ,
 $$</p>
-<p>since $\partial_\mu\bar{\tilde q} = \bar{e}_\mu$; on the other hand</p>
+<p>since $\partial_\mu\tilde{q}^{\natural} = e_\mu^{\natural}$; on the other hand</p>
 <p>$$
-fD = \sum_{\mu=0}^{3} \partial_\mu(e_1\bar{\tilde q})\, e_\mu = \sum_{\mu=0}^{3} e_1\bar{e}_\mu e_\mu = e_1\sum_{\mu=0}^{3}|\bar{e}_\mu|^2 = 4e_1 \neq 0 .
+fD = \sum_{\mu=0}^{3} \partial_\mu(e_1\tilde{q}^{\natural})\, e_\mu = \sum_{\mu=0}^{3} e_1e_\mu^{\natural} e_\mu = e_1\sum_{\mu=0}^{3}|e_\mu^{\natural}|^2 = 4e_1 \neq 0 .
 $$</p>
-<p>So $e_1\bar{\tilde q}$ lies in the left-regular class and not in the right-regular class, and the two-sided functions are the intersection of the two.</p>
+<p>So $e_1\tilde{q}^{\natural}$ lies in the left-regular class and not in the right-regular class, and the two-sided functions are the intersection of the two.</p>
 <p><strong>Theorem (closure under constant multiplication).</strong> If $f$ is left regular and $b\in\mathbb{H}$ is constant, then $fb$ is left regular. If $f$ is right regular and $a\in\mathbb{H}$ is constant, then $af$ is right regular. In particular a real scalar multiple of a regular function is regular, in the same sense.</p>
 <p><strong>Proof.</strong> Since $b$ is constant, the Leibniz rule gives $D(fb) = \sum_\mu e_\mu(\partial_\mu f)b = (Df)b$, so $Df = 0$ implies $D(fb) = 0$. Similarly $(af)D = \sum_\mu a(\partial_\mu f)e_\mu = a(fD)$.</p>
 <p><strong>Remark.</strong> The two closures are on opposite sides, and neither extends to a general constant on the other side: $D(af) = \sum_\mu e_\mu a\partial_\mu f$ equals $a(Df)$ only when $a$ commutes with each $e_\mu$, that is, only for a real scalar $a$. So the left-regular functions form a right module over $\mathbb{H}$ and a left module over the centre $\mathbb{R}$, and the right-regular functions the mirror image.</p>
 <p>A product of two regular functions need not be regular, because the Leibniz rule for $D$ introduces the derivative of the first factor together with a reordering of the quaternion factors.</p>
-<p><strong>Example.</strong> The left-regular function $e_1\bar{\tilde q}$ has a square that is not left regular. Writing $e_1\bar{\tilde q} = q_1 + q_0e_1 + q_3e_2 - q_2e_3$ and squaring,</p>
+<p><strong>Example.</strong> The left-regular function $e_1\tilde{q}^{\natural}$ has a square that is not left regular. Writing $e_1\tilde{q}^{\natural} = q_1 + q_0e_1 + q_3e_2 - q_2e_3$ and squaring,</p>
 <p>$$
-(e_1\bar{\tilde q})^2 = \bigl(q_1^2 - q_0^2 - q_2^2 - q_3^2\bigr) + 2q_1q_0e_1 + 2q_1q_3e_2 - 2q_1q_2e_3,
+(e_1\tilde{q}^{\natural})^2 = \bigl(q_1^2 - q_0^2 - q_2^2 - q_3^2\bigr) + 2q_1q_0e_1 + 2q_1q_3e_2 - 2q_1q_2e_3,
 $$</p>
 <p>and hence</p>
 <p>$$
-D\bigl((e_1\bar{\tilde q})^2\bigr) = -4q_0,
+D\bigl((e_1\tilde{q}^{\natural})^2\bigr) = -4q_0,
 $$</p>
 <p>which is not identically zero. So the left-regular functions are not closed under multiplication, and the closure theorem above is genuinely only about constant multiplication.</p>
 <h2 id="integration-by-parts-and-the-divergence-theorem">Integration by Parts and the Divergence Theorem</h2>
@@ -184,7 +184,7 @@ $$</p>
 <p>$$
 \int_\Omega \bar{D} f \, dV = \int_{\partial\Omega} \bar{\nu} f \, dS, \qquad \int_\Omega f \bar{D} \, dV = \int_{\partial\Omega} f \bar{\nu} \, dS .
 $$</p>
-<p><strong>Proof.</strong> Replace $e_\mu$ by $\bar{e}_\mu$ throughout the preceding proof.</p>
+<p><strong>Proof.</strong> Replace $e_\mu$ by $e_\mu^{\natural}$ throughout the preceding proof.</p>
 <h3 id="integration-by-parts">Integration by Parts</h3>
 <p><strong>Theorem (integration by parts).</strong> Let $\phi$ be real-valued and $C^1$ on $\bar{\Omega}$ and let $f$ be quaternion-valued and $C^1$ on $\bar{\Omega}$. Then</p>
 <p>$$
@@ -210,20 +210,20 @@ $$</p>
 <h3 id="definition-and-regularity">Definition and Regularity</h3>
 <p><strong>Definition.</strong> The <strong>fundamental solution</strong> of the Cauchy–Riemann operator on $\mathbb{H}$ is the function</p>
 <p>$$
-E(\tilde q) = \frac{\bar{\tilde q}}{|\tilde q|^4} = \frac{\tilde q^{-1}}{|\tilde q|^2}, \qquad \tilde q \neq 0 .
+E(\tilde q) = \frac{\tilde{q}^{\natural}}{|\tilde q|^4} = \frac{\tilde q^{-1}}{|\tilde q|^2}, \qquad \tilde q \neq 0 .
 $$</p>
 <p>It is homogeneous of degree $-3$, since $E(\lambda \tilde q) = \lambda^{-3}E(\tilde q)$ for $\lambda > 0$, and it is real-analytic away from the origin.</p>
 <p><strong>Theorem.</strong> $E$ is both left regular and right regular on $\mathbb{H} \setminus \{0\}$.</p>
-<p><strong>Proof.</strong> The partial derivatives of $E = \bar{\tilde q}|\tilde q|^{-4}$ are $\partial_\mu E = \bar{e}_\mu |\tilde q|^{-4} + \bar{\tilde q}\,\partial_\mu(|\tilde q|^{-4})$, and $\partial_\mu(|\tilde q|^{-4}) = -4 x_\mu |\tilde q|^{-6}$ because $\partial_\mu|\tilde q|^2 = 2x_\mu$. Hence</p>
+<p><strong>Proof.</strong> The partial derivatives of $E = \tilde{q}^{\natural}|\tilde q|^{-4}$ are $\partial_\mu E = e_\mu^{\natural} |\tilde q|^{-4} + \tilde{q}^{\natural}\,\partial_\mu(|\tilde q|^{-4})$, and $\partial_\mu(|\tilde q|^{-4}) = -4 x_\mu |\tilde q|^{-6}$ because $\partial_\mu|\tilde q|^2 = 2x_\mu$. Hence</p>
 <p>$$
-DE = \sum_{\mu=0}^{3} e_\mu \partial_\mu E = \Bigl(\sum_\mu e_\mu \bar{e}_\mu\Bigr)|\tilde q|^{-4} - 4|\tilde q|^{-6}\Bigl(\sum_\mu x_\mu e_\mu\Bigr)\bar{\tilde q} = 4|\tilde q|^{-4} - 4|\tilde q|^{-6}\tilde q\bar{\tilde q},
+DE = \sum_{\mu=0}^{3} e_\mu \partial_\mu E = \Bigl(\sum_\mu e_\mu e_\mu^{\natural}\Bigr)|\tilde q|^{-4} - 4|\tilde q|^{-6}\Bigl(\sum_\mu x_\mu e_\mu\Bigr)\tilde{q}^{\natural} = 4|\tilde q|^{-4} - 4|\tilde q|^{-6}\tilde q\tilde{q}^{\natural},
 $$</p>
-<p>using $\sum_\mu e_\mu\bar{e}_\mu = 4$; since $\tilde q\bar{\tilde q} = |\tilde q|^2$ the two terms cancel and $DE = 0$. The computation of $ED$ is identical with $\bar{e}_\mu e_\mu$ in place of $e_\mu\bar{e}_\mu$ and $\bar{\tilde q}\tilde q$ in place of $\tilde q\bar{\tilde q}$, and also gives $0$.</p>
+<p>using $\sum_\mu e_\mu e_\mu^{\natural} = 4$; since $\tilde q\tilde{q}^{\natural} = |\tilde q|^2$ the two terms cancel and $DE = 0$. The computation of $ED$ is identical with $e_\mu^{\natural} e_\mu$ in place of $e_\mu e_\mu^{\natural}$ and $\tilde{q}^{\natural}\tilde q$ in place of $\tilde q\tilde{q}^{\natural}$, and also gives $0$.</p>
 <p>The conjugate kernel is the fundamental solution of the conjugate operator: with</p>
 <p>$$
-\bar{E}(\tilde q) = \frac{\tilde q}{|\tilde q|^4} = \frac{(\bar{\tilde q})^{-1}}{|\tilde q|^2},
+\bar{E}(\tilde q) = \frac{\tilde q}{|\tilde q|^4} = \frac{(\tilde{q}^{\natural})^{-1}}{|\tilde q|^2},
 $$</p>
-<p>the conjugation identity above, applied to $E$, gives $\bar{E}\,\bar{D} = 0$ on $\mathbb{H}\setminus\{0\}$; the same computation as for $E$, with $\bar{e}_\mu$ in place of $e_\mu$, gives $\bar{D}\bar{E} = 0$ as well. The distributional computation below gives $\bar{D}\bar{E} = \bar{E}\bar{D} = 2\pi^2\delta_0$.</p>
+<p>the conjugation identity above, applied to $E$, gives $\bar{E}\,\bar{D} = 0$ on $\mathbb{H}\setminus\{0\}$; the same computation as for $E$, with $e_\mu^{\natural}$ in place of $e_\mu$, gives $\bar{D}\bar{E} = 0$ as well. The distributional computation below gives $\bar{D}\bar{E} = \bar{E}\bar{D} = 2\pi^2\delta_0$.</p>
 <h3 id="the-distributional-identity">The Distributional Identity</h3>
 <p><strong>Theorem.</strong> In the sense of distributions on $\mathbb{H}$,</p>
 <p>$$
@@ -234,7 +234,7 @@ $$</p>
 <p>$$
 \int_{|\tilde q| = 1} \nu E \, dS = \int_{|\tilde q| = \varepsilon} \nu E \, dS,
 $$</p>
-<p>where on each sphere $\nu = \tilde q/|\tilde q|$ is the normal pointing away from the origin; the inner sphere carries the negative sign in the boundary of the annulus, which is why the two fluxes are equal rather than opposite. On a sphere of radius $s$ one has $E = \bar{\tilde q}/s^4$ and $\nu = \tilde q/s$, so $\nu E = \tilde q\bar{\tilde q}/s^5 = 1/s^3$, and the flux is $\int_{|\tilde q| = s} dS/s^3 = 2\pi^2 s^3/s^3 = 2\pi^2$, independent of $s$. The flux through the shrinking sphere is therefore $2\pi^2$, and this is the mass of the distribution at the origin. The computation of $ED$ is the same with the right-handed divergence theorem, and conjugation gives the two conjugate identities.</p>
+<p>where on each sphere $\nu = \tilde q/|\tilde q|$ is the normal pointing away from the origin; the inner sphere carries the negative sign in the boundary of the annulus, which is why the two fluxes are equal rather than opposite. On a sphere of radius $s$ one has $E = \tilde{q}^{\natural}/s^4$ and $\nu = \tilde q/s$, so $\nu E = \tilde q\tilde{q}^{\natural}/s^5 = 1/s^3$, and the flux is $\int_{|\tilde q| = s} dS/s^3 = 2\pi^2 s^3/s^3 = 2\pi^2$, independent of $s$. The flux through the shrinking sphere is therefore $2\pi^2$, and this is the mass of the distribution at the origin. The computation of $ED$ is the same with the right-handed divergence theorem, and conjugation gives the two conjugate identities.</p>
 <p>The constant $2\pi^2$ is the four-dimensional analogue of the factor $2\pi$ of complex analysis: it is the surface area $\omega_4 = 2\pi^{4/2}/\Gamma(2)$ of $S^3$, and it is the reciprocal of the normalisation constant of the Cauchy kernel below. The function $E$ is therefore the <strong>Cauchy kernel</strong> of the theory, up to the factor $2\pi^2$.</p>
 <h2 id="the-cauchy-integral-formula">The Cauchy Integral Formula</h2>
 <h3 id="the-kernelnormal-product">The Kernel–Normal Product</h3>
@@ -244,18 +244,18 @@ $$</p>
 E(w - y)\,\nu(w) = \nu(w)\,E(w - y) = \frac{1}{|w - y|^3} = \frac{1}{r^3},
 $$</p>
 <p>a positive real scalar independent of the direction of $w - y$.</p>
-<p><strong>Proof.</strong> On the sphere, $\nu(w) = (w - y)/|w - y|$ and $E(w - y) = \overline{(w - y)}/|w - y|^4$. Hence</p>
+<p><strong>Proof.</strong> On the sphere, $\nu(w) = (w - y)/|w - y|$ and $E(w - y) = (w-y)^{\natural}/|w - y|^4$. Hence</p>
 <p>$$
-E(w - y)\nu(w) = \frac{\overline{(w - y)}\,(w - y)}{|w - y|^5} = \frac{|w - y|^2}{|w - y|^5} = \frac{1}{|w - y|^3},
+E(w - y)\nu(w) = \frac{(w-y)^{\natural}\,(w - y)}{|w - y|^5} = \frac{|w - y|^2}{|w - y|^5} = \frac{1}{|w - y|^3},
 $$</p>
-<p>and the opposite order gives the same scalar because $(w - y)\overline{(w - y)} = \overline{(w - y)}(w - y) = |w - y|^2$.</p>
+<p>and the opposite order gives the same scalar because $(w - y)(w-y)^{\natural} = (w-y)^{\natural}(w - y) = |w - y|^2$.</p>
 <p>The collapse of the product to a scalar is special to the quaternion case, where $z\bar{z} = \bar{z}z$ is central, and it is the reason the boundary integrals below can be read as weighted averages of $f$ over the boundary.</p>
 <h3 id="the-cauchypompeiu-representation">The Cauchy–Pompeiu Representation</h3>
 <p><strong>Theorem (Cauchy–Pompeiu).</strong> Let $\Omega$ be a bounded domain with smooth boundary, let $f$ be $C^1$ on $\bar{\Omega}$, and let $y \in \Omega$. Then</p>
 <p>$$
-f(y) = \frac{1}{2\pi^2}\int_{\partial\Omega} \frac{\overline{w - y}}{|w - y|^4}\,\nu(w)\,f(w)\,dS(w) - \frac{1}{2\pi^2}\int_\Omega \frac{\overline{w - y}}{|w - y|^4}\,(Df)(w)\,dV(w).
+f(y) = \frac{1}{2\pi^2}\int_{\partial\Omega} \frac{(w-y)^{\natural}}{|w - y|^4}\,\nu(w)\,f(w)\,dS(w) - \frac{1}{2\pi^2}\int_\Omega \frac{(w-y)^{\natural}}{|w - y|^4}\,(Df)(w)\,dV(w).
 $$</p>
-<p><strong>Proof (sketch).</strong> Fix $y$ and remove from $\Omega$ a closed ball $\overline{B(y,\varepsilon)}$ to obtain $\Omega_\varepsilon$. Apply the divergence theorem to the field with components $F_\mu(w) = E(w - y)\,e_\mu\,f(w)$, where $E(\tilde q) = \bar{\tilde q}/|\tilde q|^4$ is the fundamental solution. Its divergence is</p>
+<p><strong>Proof (sketch).</strong> Fix $y$ and remove from $\Omega$ a closed ball $\overline{B(y,\varepsilon)}$ to obtain $\Omega_\varepsilon$. Apply the divergence theorem to the field with components $F_\mu(w) = E(w - y)\,e_\mu\,f(w)$, where $E(\tilde q) = \tilde{q}^{\natural}/|\tilde q|^4$ is the fundamental solution. Its divergence is</p>
 <p>$$
 \sum_{\mu=0}^{3} \partial_\mu F_\mu = \sum_\mu (\partial_\mu E)\, e_\mu f + E \sum_\mu e_\mu \partial_\mu f = (ED)f + E(Df) = E(Df),
 $$</p>
@@ -268,9 +268,9 @@ $$</p>
 <h3 id="the-cauchy-integral-formula-for-regular-functions">The Cauchy Integral Formula for Regular Functions</h3>
 <p><strong>Theorem (Cauchy integral formula).</strong> Let $f$ be left regular and $C^1$ on a domain containing the closed ball $\overline{B(y, r)}$. Then for every $\tilde q$ with $|\tilde q - y| < r$,</p>
 <p>$$
-f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(y, r)} \frac{\overline{w - \tilde q}}{|w - \tilde q|^4} \, \nu(w) \, f(w) \, dS(w).
+f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(y, r)} \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, \nu(w) \, f(w) \, dS(w).
 $$</p>
-<p><strong>Proof.</strong> Apply the Cauchy–Pompeiu representation with $\Omega = B(y,r)$; since $Df = 0$ throughout $\Omega$, the volume term vanishes and only the boundary term remains. The kernel is $E(w-\tilde q) = \overline{(w-\tilde q)}/|w-\tilde q|^4$ with the normalisation $1/(2\pi^2)$ fixed by the distributional identity $DE = 2\pi^2\delta_0$.</p>
+<p><strong>Proof.</strong> Apply the Cauchy–Pompeiu representation with $\Omega = B(y,r)$; since $Df = 0$ throughout $\Omega$, the volume term vanishes and only the boundary term remains. The kernel is $E(w-\tilde q) = ((w-\tilde q))^{\natural}/|w-\tilde q|^4$ with the normalisation $1/(2\pi^2)$ fixed by the distributional identity $DE = 2\pi^2\delta_0$.</p>
 <p>For a ball centred at the point of evaluation, $\tilde q = y$, the kernel–normal product is the scalar $1/r^3$, and the formula becomes the <strong>mean value property</strong></p>
 <p>$$
 f(y) = \frac{1}{2\pi^2 r^3} \int_{\partial B(y, r)} f(w) \, dS(w).
@@ -279,14 +279,14 @@ $$</p>
 <h3 id="the-right-regular-formula">The Right-Regular Formula</h3>
 <p><strong>Theorem (right-regular Cauchy integral formula).</strong> Let $f$ be right regular and $C^1$ on a domain containing $\overline{B(y,r)}$. Then for $|\tilde q - y| < r$,</p>
 <p>$$
-f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(y, r)} f(w) \, \nu(w) \, \frac{\overline{w - \tilde q}}{|w - \tilde q|^4} \, dS(w).
+f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(y, r)} f(w) \, \nu(w) \, \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, dS(w).
 $$</p>
 <p><strong>Proof.</strong> Let $f$ be right $D$-regular, so that $\bar{f}$ is left $\bar{D}$-regular. The left-handed formula for the conjugate operator $\bar{D}$ reads $\bar{f}(\tilde q) = \frac{1}{2\pi^2}\int_{\partial B}\bar{E}(w-\tilde q)\,\bar{\nu}(w)\,\bar{f}(w)\,dS(w)$, with kernel $\bar{E}$ and conormal element $\bar{\nu}$. Conjugating this identity reverses the order of the factors and uses $\overline{\bar{E}} = E$ and $\overline{\bar{\nu}} = \nu$, giving the displayed formula for $f$; the constant $2\pi^2$ is unchanged.</p>
 <h3 id="the-two-sided-cauchy-integral-formula">The Two-Sided Cauchy Integral Formula</h3>
 <p><strong>Definition.</strong> A function is <strong>two-sided regular</strong> if it is both left regular and right regular.</p>
 <p><strong>Theorem (two-sided Cauchy integral formula).</strong> Let $f$ be two-sided regular and $C^1$ on a domain containing $\overline{B(y,r)}$. Then for $|\tilde q - y| < r$ both formulas hold and they coincide:</p>
 <p>$$
-f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(y, r)} \frac{\overline{w - \tilde q}}{|w - \tilde q|^4} \, \nu(w) \, f(w) \, dS(w) = \frac{1}{2\pi^2} \int_{\partial B(y, r)} f(w) \, \nu(w) \, \frac{\overline{w - \tilde q}}{|w - \tilde q|^4} \, dS(w).
+f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(y, r)} \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, \nu(w) \, f(w) \, dS(w) = \frac{1}{2\pi^2} \int_{\partial B(y, r)} f(w) \, \nu(w) \, \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, dS(w).
 $$</p>
 <p><strong>Proof.</strong> A two-sided regular function is left regular and right regular, so both theorems apply: the first integral equals $f(\tilde q)$ by the left-regular formula and the second equals $f(\tilde q)$ by the right-regular formula, whence the two are equal. The equality is not termwise: when $\tilde q \neq y$ the product $E(w-\tilde q)\nu(w)$ has a non-zero vector part, and only for $\tilde q = y$ does the kernel–normal theorem make it the scalar $1/r^3$.</p>
 <p><strong>Remark.</strong> The kernel $E$ is itself two-sided regular by the theorem of the preceding section, so the two-sided formula can be read as the statement that both the function and the kernel are regular from both sides. In the complex case, where the algebra is commutative, the distinction between the two orders disappears and the two-sided formula reduces to the single classical formula. In the quaternion case the two integrands are genuinely different functions of $w$ for $\tilde q \neq y$; the kernel–normal collapse, and with it the coincidence of the two orders, takes place only at $\tilde q = y$, where the formula becomes the mean value property.</p>
@@ -338,7 +338,7 @@ $$</p>
 </tr>
 <tr>
 <td>fundamental solution $E$</td>
-<td>$\bar{\tilde q}/\lvert \tilde q\rvert^4$, with $DE = ED = 2\pi^2\delta_0$</td>
+<td>$\tilde{q}^{\natural}/\lvert \tilde q\rvert^4$, with $DE = ED = 2\pi^2\delta_0$</td>
 </tr>
 <tr>
 <td>surface area $\omega_m$</td>
@@ -350,7 +350,7 @@ $$</p>
 </tr>
 <tr>
 <td>Cauchy integral formula</td>
-<td>$f(\tilde q) = \frac{1}{2\pi^2}\int_{\partial B}\frac{\overline{w-\tilde q}}{\lvert w-\tilde q\rvert^4}\nu(w)f(w)\,dS$</td>
+<td>$f(\tilde q) = \frac{1}{2\pi^2}\int_{\partial B}\frac{(w-\tilde q)^{\natural}}{\lvert w-\tilde q\rvert^4}\nu(w)f(w)\,dS$</td>
 </tr>
 </tbody>
 </table></div>
@@ -358,9 +358,9 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The integral of a quaternion-valued function is defined componentwise: the domain integral over a domain in $\mathbb{H}$ is the Lebesgue integral of the four components, the path integral along a curve has a left and a right form because of non-commutativity, and the surface integral over a hypersurface is taken against the conormal element $\nu = \sum_\mu n_\mu e_\mu$. The integral is linear, additive, and obeys the fundamental estimate.</p>
 <p>Because the coefficients of the Cauchy–Riemann operator $D = \partial_0 + e_1\partial_1 + e_2\partial_2 + e_3\partial_3$ are constant, $Df = \sum_\mu \partial_\mu(e_\mu f)$ is a divergence, and the divergence theorem reads $\int_\Omega Df\,dV = \int_{\partial\Omega}\nu f\,dS$, with the conjugate identity for $\bar{D}$. The Cauchy–Goursat theorem, that $\int_{\partial\Omega}\nu f\,dS = 0$ for left regular $f$, is an immediate consequence, and it is a statement about a three-dimensional boundary, not about a curve. Left regularity and right regularity are distinct and are exchanged by quaternion conjugation; the operators satisfy $D\bar{D} = \bar{D}D = \Delta$ and $D$ is elliptic.</p>
-<p>The fundamental solution is $E(\tilde q) = \bar{\tilde q}/|\tilde q|^4 = \tilde q^{-1}/|\tilde q|^2$, which is both left and right regular away from the origin and satisfies $DE = ED = 2\pi^2\delta_0$, with $2\pi^2$ the surface area of $S^3$. The kernel–normal product $E(w-y)\nu(w)$ is the scalar $1/|w-y|^3$, so that the Cauchy integral formula</p>
+<p>The fundamental solution is $E(\tilde q) = \tilde{q}^{\natural}/|\tilde q|^4 = \tilde q^{-1}/|\tilde q|^2$, which is both left and right regular away from the origin and satisfies $DE = ED = 2\pi^2\delta_0$, with $2\pi^2$ the surface area of $S^3$. The kernel–normal product $E(w-y)\nu(w)$ is the scalar $1/|w-y|^3$, so that the Cauchy integral formula</p>
 <p>$$
-f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(y,r)} \frac{\overline{w-\tilde q}}{|w-\tilde q|^4}\,\nu(w)\,f(w)\,dS(w)
+f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(y,r)} \frac{(w-\tilde q)^{\natural}}{|w-\tilde q|^4}\,\nu(w)\,f(w)\,dS(w)
 $$</p>
 <p>holds for left regular $f$, its mirror image with the kernel on the right holds for right regular $f$, and the two coincide for two-sided regular functions; this is the two-sided Cauchy integral formula. From it follow the mean value property, the maximum modulus principle, Liouville's theorem, the Cauchy estimates and the identity theorem. The general shape of all of these is that of <em>Hypercomplex Integration</em>, and the quaternion case is the four-dimensional instance of that theory.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -385,11 +385,11 @@ $$</p>
 <td>General quaternion, scalar part $q_0$, vector part $\mathbf{q}$</td>
 </tr>
 <tr>
-<td>$\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$</td>
+<td>$\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$</td>
 <td>Quaternion conjugate</td>
 </tr>
 <tr>
-<td>$N(\tilde q) = \tilde q\bar{\tilde q} = \lvert \tilde q\rvert^2$</td>
+<td>$N(\tilde q) = \tilde q\tilde{q}^{\natural} = \lvert \tilde q\rvert^2$</td>
 <td>Quaternion norm and modulus</td>
 </tr>
 <tr>
@@ -441,7 +441,7 @@ $$</p>
 <td>Conormal surface integral</td>
 </tr>
 <tr>
-<td>$E(\tilde q) = \bar{\tilde q}/\lvert \tilde q\rvert^4 = \tilde q^{-1}/\lvert \tilde q\rvert^2$</td>
+<td>$E(\tilde q) = \tilde{q}^{\natural}/\lvert \tilde q\rvert^4 = \tilde q^{-1}/\lvert \tilde q\rvert^2$</td>
 <td>Fundamental solution and Cauchy kernel</td>
 </tr>
 <tr>

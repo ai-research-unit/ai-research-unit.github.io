@@ -63,9 +63,9 @@ $$</p>
 <p>$$
 \tilde{Q} = Q_0 e_0 + \mathbf{Q}, \qquad \mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
 $$</p>
-<p>The scalar part is $Q_0 \in \mathbb{C}$; the vector part is $\mathbf{Q}$. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, and the biquaternion norm is</p>
+<p>The scalar part is $Q_0 \in \mathbb{C}$; the vector part is $\mathbf{Q}$. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$, and the biquaternion norm is</p>
 <p>$$
-N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2.
+N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2.
 $$</p>
 <p>The scalar imaginary is $i$, which commutes with the quaternion units.</p>
 <h2 id="the-complex-norm-and-the-two-regimes">The Complex Norm and the Two Regimes</h2>
@@ -81,7 +81,7 @@ $$
 and $\hat{n}$ is a root of $-1$: since a pure biquaternion squares to $-\left(\mathbf{Q},\mathbf{Q}\right)e_0$, we have $\hat{n}^2 = \mathbf{Q}^2/B^2 = -e_0$. The choice of square root is a convention: replacing $B$ by $-B$ replaces the axis $\hat{n}$ by $-\hat{n}$, leaving both $\hat{n}^2$ and $\tilde{Q} = Q_0 e_0 + B\hat{n}$ unchanged.</p>
 <p>The biquaternion norm is
 $$
-N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = Q_0^2 + B^2,
+N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = Q_0^2 + B^2,
 $$
 the sum of the square of the scalar part and the square of the complex norm; this is the biquaternion analogue of $|z|^2 = a^2 + b^2$ for $z = a + bi$, with $a$ replaced by $Q_0$ and $b$ by $B$.</p>
 <h3 id="the-two-regimes">The Two Regimes</h3>
@@ -610,7 +610,7 @@ $$</p>
 <td>$B = 0$, $\mathbf{Q} \neq 0$: $\mathbb{C}[\tilde{Q}] \cong \mathbb{C}[\epsilon]/(\epsilon^2)$, $\epsilon = \mathbf{Q}$</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$</td>
+<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$</td>
 <td>Biquaternion norm; $N \neq 0$ is the group of units, the domain of $\log$ and of powers</td>
 </tr>
 </tbody>

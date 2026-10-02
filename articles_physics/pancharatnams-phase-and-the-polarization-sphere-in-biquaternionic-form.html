@@ -61,7 +61,7 @@
 <li>The three-polarizer phase is the same statement for a spherical triangle, and Girard's theorem turns it into a sum of angles.</li>
 </ol>
 <p>The article is classical optics in the algebra. The "state" of a beam is its classical coherence matrix, the connection lives on the classical ray space, and the interference is classical. The companion article on the Berry phase develops the quantum two-level system, which shares the geometry; here the physics is a light beam, two polarizers, and an interferometer.</p>
-<p>The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; $i$ is central, $i^2=-1$; ${}^\dagger$ is Hermitian conjugation; $\mathbb{M}_+$ is the Hermitian sector, $\mathbb{M}_-$ the anti-Hermitian one; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$. The Poincaré sphere is parametrised by the unit Stokes vector $\hat{\mathbf n}=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$.</p>
+<p>The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; $i$ is central, $i^2=-1$; ${}^{*}$ is Hermitian conjugation; $\mathbb{M}_+$ is the Hermitian sector, $\mathbb{M}_-$ the anti-Hermitian one; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$. The Poincaré sphere is parametrised by the unit Stokes vector $\hat{\mathbf n}=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$.</p>
 <p>The companion articles are:
 - Companion article <em>The Symplectic Form and the Biquaternion Norm Cone</em>, for the biquaternion-norm cone and its role as a level set.
 - Companion article <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, for the Hermitian sector, the idempotents, and the cone.
@@ -95,13 +95,13 @@ $$</p>
 <p>$$
 \tilde\rho=\tfrac12\left(S_0e_0+i\,S_1e_1+i\,S_2e_2+i\,S_3e_3\right)
 =\tfrac12\left(S_0e_0+i\,\mathbf S\cdot\tilde e\right),
-\qquad \tilde\rho=\tilde\rho^\dagger .
+\qquad \tilde\rho=\tilde\rho^{*} .
 $$</p>
 <p>The factor $i$ on the vector part is what makes the vector part Hermitian: the units $e_k$ are anti-Hermitian, so $ie_k$ is Hermitian, and the coefficients $S_k$ are real. The scalar part $S_0/2$ is real.</p>
 <h3 id="the-biquaternion-norm">The Biquaternion Norm</h3>
 <p>The biquaternion norm of the coherence biquaternion is</p>
 <p>$$
-N(\tilde\rho)=\tilde\rho\bar{\tilde\rho}
+N(\tilde\rho)=\tilde\rho\tilde\rho^{\natural}
 =\tfrac14\left(S_0^2-S_1^2-S_2^2-S_3^2\right)
 =\tfrac14\left(S_0^2-\mathbf S^2\right).
 $$</p>
@@ -152,9 +152,9 @@ $$</p>
 <p>$$
 \tilde U_{\hat{\mathbf n}}(\alpha) = e^{\alpha\hat{\mathbf n}/2} = \cos\tfrac{\alpha}{2}\,e_0 + \sin\tfrac{\alpha}{2}\,\hat{\mathbf n} \in \mathbb{H}_{\mathbb{B}},
 $$</p>
-<p>acting by $\tilde\rho \mapsto \tilde U\tilde\rho\,\tilde U^{\dagger}$ with $\tilde U^{\dagger} = \tilde U_{\hat{\mathbf n}}(-\alpha) = \tilde U_{\hat{\mathbf n}}^{-1}$. It fixes $S_0$ and the component $\hat{\mathbf n}\cdot\mathbf S$, and rotates the transverse part of $\mathbf S$ about $\hat{\mathbf n}$ by the angle $\alpha$: the phase shifter is a <strong>rotation of the Poincaré sphere</strong>. This is the Faraday effect, with $\hat{\mathbf n}$ the propagation direction and $\alpha$ proportional to the Verdet constant and the path; in a birefringent medium the same rotor has $\hat{\mathbf n}$ the optic axis and $\alpha$ the retardation.</p>
+<p>acting by $\tilde\rho \mapsto \tilde U\tilde\rho\,\tilde U^{*}$ with $\tilde U^{*} = \tilde U_{\hat{\mathbf n}}(-\alpha) = \tilde U_{\hat{\mathbf n}}^{-1}$. It fixes $S_0$ and the component $\hat{\mathbf n}\cdot\mathbf S$, and rotates the transverse part of $\mathbf S$ about $\hat{\mathbf n}$ by the angle $\alpha$: the phase shifter is a <strong>rotation of the Poincaré sphere</strong>. This is the Faraday effect, with $\hat{\mathbf n}$ the propagation direction and $\alpha$ proportional to the Verdet constant and the path; in a birefringent medium the same rotor has $\hat{\mathbf n}$ the optic axis and $\alpha$ the retardation.</p>
 <p><strong>Two kinds of operation.</strong> The polarizer is an idempotent: it projects, lowers the degree of polarization and is not invertible, and applying it twice changes nothing further. The phase shifter is a rotor: it is unitary, preserves the degree of polarization, and is reversible. A general lossless optical element is a product of the two — a rotor for the retardation and a projector for the absorption — and the Jones calculus is this statement in matrix form, while the algebra states it as the two elementary operations of $\mathbb{M}_+$.</p>
-<p><strong>Verification.</strong> For a hundred random axes and states: $\tilde\Pi_{\hat{\mathbf n}}$ idempotent and Hermitian, the complementary pair summing to $e_0$ with vanishing product, the rank-one identity $\tilde\Pi\tilde\rho\tilde\Pi = \mathrm{Tr}(\tilde\rho\tilde\Pi)\tilde\Pi$, the rotor unitary with $\tilde U\tilde U^{\dagger} = e_0$, and the invariance of $S_0$ and $\hat{\mathbf n}\cdot\mathbf S$ under the rotor with the transverse part rotated by $\alpha$ — all to machine precision.</p>
+<p><strong>Verification.</strong> For a hundred random axes and states: $\tilde\Pi_{\hat{\mathbf n}}$ idempotent and Hermitian, the complementary pair summing to $e_0$ with vanishing product, the rank-one identity $\tilde\Pi\tilde\rho\tilde\Pi = \mathrm{Tr}(\tilde\rho\tilde\Pi)\tilde\Pi$, the rotor unitary with $\tilde U\tilde U^{*} = e_0$, and the invariance of $S_0$ and $\hat{\mathbf n}\cdot\mathbf S$ under the rotor with the transverse part rotated by $\alpha$ — all to machine precision.</p>
 <h2 id="pancharatnams-in-phase-criterion">Pancharatnam's In-Phase Criterion</h2>
 <p>Two beams with Jones vectors $\mathbf J_A$ and $\mathbf J_B$ can interfere. The intensity of the sum is</p>
 <p>$$

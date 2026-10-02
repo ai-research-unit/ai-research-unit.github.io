@@ -67,7 +67,7 @@ $$</p>
 <p>$$
 L^2(\mathbb{H}_{\mathrm{s}}, \mathbb{H}_{\mathrm{s}}) \cong \big(L^2(\mathbb{R}^4)\big)^4 ,
 $$</p>
-<p>with the inner product $\langle f,g\rangle = \int \operatorname{Sc}(f\bar g)$, and the algebra acts pointwise on it by left and right multiplication.</p>
+<p>with the inner product $\langle f,g\rangle = \int \operatorname{Sc}(f g^{\natural})$, and the algebra acts pointwise on it by left and right multiplication.</p>
 <p><strong>Proof.</strong> The identification is componentwise, and the scalar product is that of four real functions expressed in the basis.</p>
 <h2 id="the-fourier-transform-of-the-group">The Fourier Transform of the Group</h2>
 <p><strong>Definition.</strong> For $f \in L^1(\mathbb{H}_{\mathrm{s}},\mathbb{H}_{\mathrm{s}})$ the <strong>Fourier transform</strong> is</p>
@@ -123,7 +123,7 @@ $$</p>
 (\tilde q-y)^{-1} = \frac{\overline{\tilde q-y}}{N(\tilde q-y)}
 $$</p>
 <p>exists exactly when $N(\tilde q-y) \neq 0$, that is off the null cone. On the null cone the reciprocal does not exist, the derivation of the inversion formula fails, and the transform is not invertible by a kernel of the same shape.</p>
-<p><strong>Proof.</strong> The inverse of an element is $\bar{u}/N(u)$ by <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>, which likewise gives that $N(u) = 0$ exactly on the zero divisors. The non-multiplicativity of the kernel is immediate from the non-commutativity: $e^{-(\tilde q+y)\xi} \neq e^{-\tilde q\xi}e^{-y\xi}$ unless $\tilde q$ and $\xi$ commute, by <em>Split-Quaternion Elementary Functions</em>, §<em>Non-Commutativity and the One-Variable Case</em>.</p>
+<p><strong>Proof.</strong> The inverse of an element is $u^{\natural}/N(u)$ by <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>, which likewise gives that $N(u) = 0$ exactly on the zero divisors. The non-multiplicativity of the kernel is immediate from the non-commutativity: $e^{-(\tilde q+y)\xi} \neq e^{-\tilde q\xi}e^{-y\xi}$ unless $\tilde q$ and $\xi$ commute, by <em>Split-Quaternion Elementary Functions</em>, §<em>Non-Commutativity and the One-Variable Case</em>.</p>
 <p><strong>Theorem (The Vanishing Determinant, Stated Precisely).</strong> Let $D = e_1\partial_{q_1} + e_2\partial_{q_2} + e_3\partial_{q_3}$ be the vector operator and let the transform be the group transform of the preceding section, whose linearity allows differentiating under the integral. Then</p>
 <p>$$
 \widehat{Df}(\xi) = -2\pi \mathrm{i}\;\xi\, \hat f(\xi),

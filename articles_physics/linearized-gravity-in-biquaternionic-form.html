@@ -72,7 +72,7 @@ $$</p>
 <li><strong>Interpretation and gap, left visible.</strong> The algebra supplies no action and no field equation, so the wave equation is transcribed, not derived; it supplies no representation of diffeomorphism invariance, so the gauge freedom's <em>origin</em> is outside the framework even though its <em>form</em> can be written in the framework's notation. The coupling to matter, whose source is the symmetric rank-two energy–momentum tensor, is not derived, and the coupling constant $8\pi G/c^4$ is not fixed by the algebra. These are labelled as gaps in the sections where they arise.</li>
 </ul>
 <p><strong>What this article is and is not.</strong> It is a computation of how the frame route of the parent article linearizes, and a comparison of the result with standard linearized gravity. It is not a derivation of general relativity from the biquaternion algebra, and it does not claim that the algebra predicts the linearized Einstein equation. The linear theory is transcribed into the framework's notation; the framework's contribution is the sector structure of the carrier and the form of the gauge transformation, both of which are checked, and neither of which is a dynamics.</p>
-<p><strong>Conventions.</strong> The conventions of the read-list articles are inherited without change. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \epsilon_{jkm}e_m$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, the center of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$.</p>
+<p><strong>Conventions.</strong> The conventions of the read-list articles are inherited without change. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \epsilon_{jkm}e_m$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, the center of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$.</p>
 <p>Two further conventions are needed and are fixed once, here. First, the <strong>material basis</strong> of $\mathbb{M}_-$ is</p>
 <p>$$
 \varepsilon_0 = i\,e_0, \qquad \varepsilon_1 = e_1, \qquad \varepsilon_2 = e_2, \qquad \varepsilon_3 = e_3,
@@ -159,17 +159,17 @@ $$</p>
 <h3 id="the-counting">The Counting</h3>
 <p>The frame perturbation has $4 \times 4 = 16$ real components; a symmetric $h_{\mu\nu}$ has $10$. The difference is accounted for by the <strong>local Lorentz transformations</strong> of the frame. If $\tilde{\Lambda} = e_0 + \tilde{G}$ is an infinitesimal unit-norm biquaternion, the frame transforms as</p>
 <p>$$
-\tilde{E}_\mu \;\longmapsto\; \tilde{\Lambda}\tilde{E}_\mu\tilde{\Lambda}^\dagger
-= \tilde{E}_\mu + \tilde{G}\tilde{E}_\mu + \tilde{E}_\mu\tilde{G}^\dagger + O(\tilde{G}^2),
+\tilde{E}_\mu \;\longmapsto\; \tilde{\Lambda}\tilde{E}_\mu\tilde{\Lambda}^{*}
+= \tilde{E}_\mu + \tilde{G}\tilde{E}_\mu + \tilde{E}_\mu\tilde{G}^{*} + O(\tilde{G}^2),
 $$</p>
 <p>and at linear order, with $\tilde{E}_\mu$ replaced by $\varepsilon_\mu$ in the correction,</p>
 <p>$$
-\delta\tilde{E}_\mu \;\longmapsto\; \delta\tilde{E}_\mu + \tilde{G}\varepsilon_\mu + \varepsilon_\mu\tilde{G}^\dagger .
+\delta\tilde{E}_\mu \;\longmapsto\; \delta\tilde{E}_\mu + \tilde{G}\varepsilon_\mu + \varepsilon_\mu\tilde{G}^{*} .
 $$</p>
-<p>The unit-norm condition $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ linearizes to $\tilde{G} + \bar{\tilde{G}} = 0$, which says that $\tilde{G}$ is a <strong>complex pure vector</strong>, $\tilde{G} \in \mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3, ie_1, ie_2, ie_3\}$. This is the six-dimensional traceless subspace that the parent article identifies with the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by the rotation generators $J_k = e_k$ and the boost generators $K_k = ie_k$. Its elements leave the metric perturbation invariant:</p>
+<p>The unit-norm condition $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ linearizes to $\tilde{G} + \tilde{G}^{\natural} = 0$, which says that $\tilde{G}$ is a <strong>complex pure vector</strong>, $\tilde{G} \in \mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3, ie_1, ie_2, ie_3\}$. This is the six-dimensional traceless subspace that the parent article identifies with the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by the rotation generators $J_k = e_k$ and the boost generators $K_k = ie_k$. Its elements leave the metric perturbation invariant:</p>
 <p>$$
-\langle \varepsilon_\mu, \tilde{G}\varepsilon_\nu + \varepsilon_\nu\tilde{G}^\dagger\rangle
-+ \langle \tilde{G}\varepsilon_\mu + \varepsilon_\mu\tilde{G}^\dagger, \varepsilon_\nu\rangle = 0,
+\langle \varepsilon_\mu, \tilde{G}\varepsilon_\nu + \varepsilon_\nu\tilde{G}^{*}\rangle
++ \langle \tilde{G}\varepsilon_\mu + \varepsilon_\mu\tilde{G}^{*}, \varepsilon_\nu\rangle = 0,
 $$</p>
 <p>because the infinitesimal rotor conjugation preserves the bilinear form. This is the kernel of the map $\delta\tilde{E}_\mu \mapsto h_{\mu\nu}$, and it has dimension $6$, so $16 - 6 = 10$, the dimension of the metric. A computation that included an $e_0$ component in $\tilde{G}$ — which the unit-norm condition forbids — gives a nonzero shift of $h$; the restriction to the complex pure vector part is what makes the kernel statement exact. Both the vanishing shift and the failure without the restriction were checked.</p>
 <h3 id="an-external-variant-frame-fields-that-carry-their-own-connection">An External Variant: Frame Fields That Carry Their Own Connection</h3>
@@ -194,7 +194,7 @@ $$</p>
 <p>$$
 \tilde{H} = \sum_{\mu,\nu=0}^{3} h_{\mu\nu}\,\varepsilon_\mu\bar{\varepsilon}_\nu .
 $$</p>
-<p>For symmetric $h_{\mu\nu}$ this element is Hermitian, $\tilde{H}^\dagger = \tilde{H}$, and so lies in the informational sector $\mathbb{M}_+$ rather than the material sector $\mathbb{M}_-$. More importantly, it is not faithful. Computing the products $\varepsilon_\mu\bar{\varepsilon}_\nu$ from the multiplication rules gives</p>
+<p>For symmetric $h_{\mu\nu}$ this element is Hermitian, $\tilde{H}^{*} = \tilde{H}$, and so lies in the informational sector $\mathbb{M}_+$ rather than the material sector $\mathbb{M}_-$. More importantly, it is not faithful. Computing the products $\varepsilon_\mu\bar{\varepsilon}_\nu$ from the multiplication rules gives</p>
 <p>$$
 \tilde{H} = \left(\eta^{\mu\nu}h_{\mu\nu}\right)e_0 = h\,e_0 ,
 $$</p>
@@ -235,7 +235,7 @@ $$</p>
 <p>$$
 \tilde{R}_{\mu\nu} = \tfrac{1}{2}\sum_{\rho,\sigma} R_{\mu\nu\rho\sigma}\,\bar{\varepsilon}^\rho\varepsilon^\sigma .
 $$</p>
-<p>Because antisymmetrization in $\rho\sigma$ is antisymmetrization in the product of two material basis vectors, each $\tilde{R}_{\mu\nu}$ is a complex pure vector, hence an element of the six-dimensional bivector subspace that the parent article identifies with $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$. The gravitational field strength is thus a <strong>Lie-algebra-valued two-form</strong> on the manifold, and every value it takes sits inside $\mathbb{B}$. This is the exact structural analogue of the electromagnetic field strength: the gauge article records that the electromagnetic $\tilde{F} = \mathrm{Vect}(\bar{\tilde{\nabla}}\tilde{A})$ is a single bivector, the curvature of an abelian connection, while the gravitational $\tilde{R}_{\mu\nu}$ is a bivector-valued two-form, the curvature of a connection valued in the non-abelian Lorentz Lie algebra. The identification of $\tilde{R}_{\mu\nu}$ with the curvature of the torsion-free spin connection is the standard tetrad identification, and the parent article records that metric compatibility and the vanishing of torsion are conditions the algebra does not select. The algebra supplies the home for each bivector value; it does not supply the object, because the object is built from $h$, which is not in the algebra.</p>
+<p>Because antisymmetrization in $\rho\sigma$ is antisymmetrization in the product of two material basis vectors, each $\tilde{R}_{\mu\nu}$ is a complex pure vector, hence an element of the six-dimensional bivector subspace that the parent article identifies with $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$. The gravitational field strength is thus a <strong>Lie-algebra-valued two-form</strong> on the manifold, and every value it takes sits inside $\mathbb{B}$. This is the exact structural analogue of the electromagnetic field strength: the gauge article records that the electromagnetic $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is a single bivector, the curvature of an abelian connection, while the gravitational $\tilde{R}_{\mu\nu}$ is a bivector-valued two-form, the curvature of a connection valued in the non-abelian Lorentz Lie algebra. The identification of $\tilde{R}_{\mu\nu}$ with the curvature of the torsion-free spin connection is the standard tetrad identification, and the parent article records that metric compatibility and the vanishing of torsion are conditions the algebra does not select. The algebra supplies the home for each bivector value; it does not supply the object, because the object is built from $h$, which is not in the algebra.</p>
 <p>The physical, gauge-invariant content of the curvature is its <strong>Weyl part</strong>, the ten-component tensor obtained from $R_{\mu\nu\rho\sigma}$ by removing the Ricci and scalar traces. In vacuum the two coincide, because the Ricci part vanishes, and the propagating degrees of freedom are in the Weyl tensor. Its encoding in the biquaternion framework — through the self-dual and anti-self-dual bivectors, or through the five complex Newman–Penrose scalars $\Psi_0, \dots, \Psi_4$ — is a separate problem, and it is not attempted here; it is recorded among the open questions.</p>
 <h2 id="the-field-equation-and-the-trace-reversal-step">The Field Equation and the Trace-Reversal Step</h2>
 <p>The field equation is where the framework's d'Alembertian enters directly, and where the trace-reversal has a clean biquaternionic image. Both are worth displaying.</p>
@@ -291,7 +291,7 @@ $$</p>
 <p><strong>The non-abelian curvature and the gauge article's gap.</strong> The linearized gravitational field strength is a $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$-valued two-form. The gauge article records that the framework supplies non-commutativity but not a compactness or reality condition selecting a gauge algebra. Does the local Lorentz algebra, which is non-compact and selected by the metric, meet that gap, or is it a different structure that the electromagnetic case cannot use?</p>
 </li>
 <li>
-<p><strong>A biquaternionic harmonic condition.</strong> The harmonic condition $\partial^\lambda\bar{h}_{\lambda\nu} = 0$ is four conditions on the frame. Is there a distinguished biquaternionic differential operator — a divergence on $\mathbb{M}_-$-valued one-forms — that produces it naturally, in the way that $S = \mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{A}) = 0$ produces the Lorenz condition for the electromagnetic potential?</p>
+<p><strong>A biquaternionic harmonic condition.</strong> The harmonic condition $\partial^\lambda\bar{h}_{\lambda\nu} = 0$ is four conditions on the frame. Is there a distinguished biquaternionic differential operator — a divergence on $\mathbb{M}_-$-valued one-forms — that produces it naturally, in the way that $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}) = 0$ produces the Lorenz condition for the electromagnetic potential?</p>
 </li>
 <li>
 <p><strong>The Weyl tensor in the algebra.</strong> The propagating content of linearized gravity is the Weyl tensor, and its natural biquaternionic encoding is through the self-dual and anti-self-dual bivectors. Can the five Newman–Penrose scalars be written as components of biquaternion objects, and does the algebra's decomposition into $\mathbb{M}_+$ and $\mathbb{M}_-$ organise them?</p>
@@ -350,7 +350,7 @@ $$</p>
 <td>Flat metric of the material sector</td>
 </tr>
 <tr>
-<td>$\langle\tilde{Q},\tilde{P}\rangle = \mathrm{Sc}(\tilde{Q}\bar{\tilde{P}})$</td>
+<td>$\langle\tilde{Q},\tilde{P}\rangle = \mathrm{Sc}(\tilde{Q}\tilde{P}^{\natural})$</td>
 <td>Bilinear form on $\mathbb{M}_-$</td>
 </tr>
 <tr>
@@ -362,7 +362,7 @@ $$</p>
 <td>Relation of the framework's imaginary time derivative to $\partial_0$</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla}, \bar{\tilde{\nabla}}, \Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \eta^{\mu\nu}\partial_\mu\partial_\nu$</td>
+<td>$\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \eta^{\mu\nu}\partial_\mu\partial_\nu$</td>
 <td>Biquaternionic gradient, conjugate, d'Alembertian</td>
 </tr>
 <tr>

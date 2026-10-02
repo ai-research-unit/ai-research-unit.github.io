@@ -109,7 +109,7 @@ $$</p>
 <p>$$
 h(\lambda u, \mu v) = \overline{\lambda}\, \mu\, h(u, v) \qquad (\lambda, \mu \in \mathbb{K}),
 $$</p>
-<p>and is Hermitian, $h(v, u) = \overline{h(u, v)}$. Over $\mathbb{R}$, where conjugation is the identity, this is a symmetric bilinear form; the interest is over $\mathbb{C}$. The <strong>unitary group</strong> of $h$ is</p>
+<p>and is Hermitian, $h(v, u) = (h(u,v))^{\natural}$. Over $\mathbb{R}$, where conjugation is the identity, this is a symmetric bilinear form; the interest is over $\mathbb{C}$. The <strong>unitary group</strong> of $h$ is</p>
 <p>$$
 \operatorname{U}(V, h) = \{T \in GL(V) : h(Tu, Tv) = h(u, v) \text{ for all } u, v\}.
 $$</p>
@@ -220,7 +220,7 @@ $$</p>
 <p>$$
 h(xa, yb) = \sigma(a)\,h(x, y)\,b, \qquad h(y, x) = \sigma(h(x, y)),
 $$</p>
-<p>. Its isometry group is the <strong>unitary group</strong> $\operatorname{U}(V, h)$ of the Hermitian form. For $D = \mathbb{H}$ and the standard form $h(x, y) = \sum_i \bar{x}_i y_i$ on $\mathbb{H}^n$, the resulting group is the <strong>compact symplectic group</strong> $Sp(n)$, also written $U(n, \mathbb{H})$.</p>
+<p>. Its isometry group is the <strong>unitary group</strong> $\operatorname{U}(V, h)$ of the Hermitian form. For $D = \mathbb{H}$ and the standard form $h(x, y) = \sum_i x^{\natural}_i y_i$ on $\mathbb{H}^n$, the resulting group is the <strong>compact symplectic group</strong> $Sp(n)$, also written $U(n, \mathbb{H})$.</p>
 <p><strong>Warning on notation.</strong> The symbol $Sp$ carries two meanings: $Sp(2m, F)$ is the isometry group of an alternating form over a field, a non-compact group, while $Sp(n)$ is the isometry group of a quaternionic Hermitian form, a compact group. The two agree only through the identification of $Sp(n)$ with the compact real form of $Sp(2n, \mathbb{C})$: the complexification of the quaternionic unitary group is the symplectic group $Sp(2n, \mathbb{C})$.</p>
 <p><strong>Proposition.</strong> $Sp(n)$ is a compact connected group of real dimension $n(2n + 1)$. It is the intersection $Sp(2n, \mathbb{C}) \cap U(2n)$ inside $GL(2n, \mathbb{C})$.</p>
 <p><strong>Proof.</strong> A quaternionic $n \times n$ matrix has $4n^2$ real parameters; the condition $A^{\dagger}A = I$ imposes $n(2n-1)$ independent real equations, leaving dimension $4n^2 - n(2n-1) = n(2n+1)$. Compactness is the closedness and boundedness of the defining condition, as in the complex case. The identification of $Sp(n)$ with $Sp(2n, \mathbb{C}) \cap U(2n)$ is the standard realisation of the quaternions as $2 \times 2$ complex matrices.</p>

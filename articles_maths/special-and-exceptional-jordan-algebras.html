@@ -77,11 +77,11 @@ $$</p>
 <p>where $G$ is a homogeneous polynomial of degree $8$, an alternating sum of monomials in the operators $L_x, L_y, L_z$; the precise expression is recorded by Glennie (1963) and reproduced in the standard references. Its existence proves at once that $\operatorname{J}(X) \neq \operatorname{SJ}(X)$ for $|X| \geq 3$, and hence that some Jordan algebra is exceptional. The Albert algebra below is the concrete witness.</p>
 <h2 id="hermitian-matrices">Hermitian Matrices</h2>
 <h3 id="conjugation-and-hermitian-matrices">Conjugation and Hermitian Matrices</h3>
-<p>Let $D$ be a composition algebra over $R$: a unital $R$-algebra with a conjugation $u \mapsto \bar u$ such that</p>
+<p>Let $D$ be a composition algebra over $R$: a unital $R$-algebra with a conjugation $u \mapsto u^{\natural}$ such that</p>
 <p>$$
-u\bar u = \bar u u \in R, \qquad (uv)\overline{uv} = (u\bar u)(v\bar v),
+u u^{\natural} = u^{\natural} u \in R, \qquad (uv)(uv)^{\natural} = (u u^{\natural})(v v^{\natural}),
 $$</p>
-<p>with $u + \bar u \in R$ for all $u$. The classical examples are $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$; the first three are associative and $\mathbb{O}$ is not. For a matrix $x$ over $D$, let $x^*$ denote the conjugate transpose. The <strong>Hermitian matrices</strong> are</p>
+<p>with $u + u^{\natural} \in R$ for all $u$. The classical examples are $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$; the first three are associative and $\mathbb{O}$ is not. For a matrix $x$ over $D$, let $x^*$ denote the conjugate transpose. The <strong>Hermitian matrices</strong> are</p>
 <p>$$
 H_n(D) = \{x \in M_n(D) : x^* = x\},
 $$</p>
@@ -97,13 +97,13 @@ $$</p>
 <h3 id="matrix-units-and-the-peirce-decomposition">Matrix Units and the Peirce Decomposition</h3>
 <p>Assume $2$ is invertible and let $e_{ii} \in H_n(D)$ be the diagonal matrix with $1$ in the $i$-th place. The $e_{ii}$ are pairwise orthogonal idempotents with $\sum_i e_{ii} = 1$, and the Peirce decomposition (<em>Jordan Algebras</em>) with respect to $e = e_{11}$ is</p>
 <p>$$
-H_n(D) = J_1(e) \oplus J_{1/2}(e) \oplus J_0(e), \qquad J_1(e) = \{u \in D : \bar u = u\}\,e_{11}, \quad J_0(e) = H_{n-1}(D), \quad J_{1/2}(e) = \{\text{the off-diagonal entries of the first row and column}\}.
+H_n(D) = J_1(e) \oplus J_{1/2}(e) \oplus J_0(e), \qquad J_1(e) = \{u \in D : u^{\natural} = u\}\,e_{11}, \quad J_0(e) = H_{n-1}(D), \quad J_{1/2}(e) = \{\text{the off-diagonal entries of the first row and column}\}.
 $$</p>
 <p>This decomposition is the tool with which the structure of $H_n(D)$ is reduced to that of $H_{n-1}(D)$ by induction. For $n = 2$ the middle space is the module $D$ of off-diagonal entries, and the algebra has <strong>degree two</strong> in the sense that every element satisfies a quadratic minimal polynomial; it is a spin factor. For $n \geq 3$ the algebra has degree $n$ and is not a spin factor.</p>
 <h3 id="dimensions">Dimensions</h3>
 <p>The dimension of $H_n(D)$ over $R$ is</p>
 <p>$$
-\dim_R H_n(D) = n \cdot \dim_R \{u \in D : \bar u = u\} + \binom{n}{2} \dim_R D ,
+\dim_R H_n(D) = n \cdot \dim_R \{u \in D : u^{\natural} = u\} + \binom{n}{2} \dim_R D ,
 $$</p>
 <p>the $n$ diagonal entries lying in the fixed field of the conjugation and the $\binom{n}{2}$ off-diagonal entries each contributing a copy of $D$. For a composition algebra the fixed field is $R\cdot1$, of dimension $1$, so $\dim_R H_n(D) = n + \binom{n}{2}\dim_R D$; for $D = \mathbb{R}, \mathbb{C}, \mathbb{H}$ this gives</p>
 <p>$$
@@ -114,18 +114,18 @@ $$</p>
 <h3 id="cayleydickson-doubling">Cayley–Dickson Doubling</h3>
 <p>The octonions are obtained from the quaternions by one doubling. Write $\mathbb{H}$ for the quaternions with basis $1, e_1, e_2, e_3$ and conjugation $\bar{}$, and put</p>
 <p>$$
-\mathbb{O} = \mathbb{H} \oplus \mathbb{H}\ell, \qquad \ell^2 = -1, \qquad \ell x = \bar x\,\ell \quad (x \in \mathbb{H}),
+\mathbb{O} = \mathbb{H} \oplus \mathbb{H}\ell, \qquad \ell^2 = -1, \qquad \ell x = x^{\natural}\,\ell \quad (x \in \mathbb{H}),
 $$</p>
 <p>so that the pair $(a, b)$ is written $a + b\ell$; the multiplication, for $a, b, c, d \in \mathbb{H}$, is the Cayley–Dickson product</p>
 <p>$$
-(a + b\ell)(c + d\ell) = (ac - \bar d\, b) + (da + b\bar c)\,\ell .
+(a + b\ell)(c + d\ell) = (ac - d^{\natural}\, b) + (da + b c^{\natural})\,\ell .
 $$</p>
-<p>The relation $\ell x = \bar x\ell$, which follows from the product, says that $\ell$ anticommutes with the imaginary quaternions $e_1, e_2, e_3$; because $\mathbb{O}$ is not associative, the product is not an associative expansion of the notation $a + b\ell$.</p>
-<p>The conjugation is $\overline{a + b\ell} = \bar a - b\ell$, so $u\bar u = a\bar a + b\bar b \in \mathbb{R}$. The eight elements $1, e_1, e_2, e_3, \ell, e_1\ell, e_2\ell, e_3\ell$ form a basis, so $\dim_{\mathbb{R}} \mathbb{O} = 8$.</p>
-<p><strong>Theorem.</strong> $\mathbb{O}$ is a composition algebra: $(uv)\overline{uv} = (u\bar u)(v\bar v)$ and $(uv)\bar v = u(v\bar v)$ for all $u, v$. It is <strong>alternative</strong>, satisfying $u(uv) = (uu)v$ and $(vu)u = v(uu)$, and it is not associative.</p>
+<p>The relation $\ell x = x^{\natural}\ell$, which follows from the product, says that $\ell$ anticommutes with the imaginary quaternions $e_1, e_2, e_3$; because $\mathbb{O}$ is not associative, the product is not an associative expansion of the notation $a + b\ell$.</p>
+<p>The conjugation is $\overline{a + b\ell} = a^{\natural} - b\ell$, so $uu^{\natural} = a a^{\natural} + b b^{\natural} \in \mathbb{R}$. The eight elements $1, e_1, e_2, e_3, \ell, e_1\ell, e_2\ell, e_3\ell$ form a basis, so $\dim_{\mathbb{R}} \mathbb{O} = 8$.</p>
+<p><strong>Theorem.</strong> $\mathbb{O}$ is a composition algebra: $(uv)(uv)^{\natural} = (u u^{\natural})(vv^{\natural})$ and $(uv) v^{\natural} = u(vv^{\natural})$ for all $u, v$. It is <strong>alternative</strong>, satisfying $u(uv) = (uu)v$ and $(vu)u = v(uu)$, and it is not associative.</p>
 <p>The verification is a direct computation in the eight basis elements; the model above is the one used throughout. Non-associativity is the property that makes the Albert algebra exceptional, and alternativity is the property that keeps it a Jordan algebra.</p>
 <h3 id="coordinates">Coordinates</h3>
-<p>An octonion is written $u = u_0 + \sum_{i=1}^{7} u_i \iota_i$ with $u_i \in \mathbb{R}$ and $\iota_i$ the seven imaginary basis elements $\iota_1 = e_1$, $\iota_2 = e_2$, $\iota_3 = e_3$, $\iota_4 = \ell$, $\iota_5 = e_1\ell$, $\iota_6 = e_2\ell$, $\iota_7 = e_3\ell$. Conjugation negates the imaginary part, $\bar u = u_0 - \sum_i u_i\iota_i$, and $u\bar u = \sum_{i=0}^{7} u_i^2$. The real part is $\operatorname{Re}(u) = \tfrac{1}{2}(u + \bar u) = u_0$, and the imaginary part is $\operatorname{Im}(u) = \tfrac{1}{2}(u - \bar u)$.</p>
+<p>An octonion is written $u = u_0 + \sum_{i=1}^{7} u_i \iota_i$ with $u_i \in \mathbb{R}$ and $\iota_i$ the seven imaginary basis elements $\iota_1 = e_1$, $\iota_2 = e_2$, $\iota_3 = e_3$, $\iota_4 = \ell$, $\iota_5 = e_1\ell$, $\iota_6 = e_2\ell$, $\iota_7 = e_3\ell$. Conjugation negates the imaginary part, $u^{\natural} = u_0 - \sum_i u_i\iota_i$, and $u u^{\natural} = \sum_{i=0}^{7} u_i^2$. The real part is $\operatorname{Re}(u) = \tfrac{1}{2}(u +  u^{\natural}) = u_0$, and the imaginary part is $\operatorname{Im}(u) = \tfrac{1}{2}(u - u^{\natural})$.</p>
 <h2 id="the-albert-algebra">The Albert Algebra</h2>
 <h3 id="definition">Definition</h3>
 <p>The <strong>Albert algebra</strong> is the $27$-dimensional real Jordan algebra</p>
@@ -140,7 +140,7 @@ $$</p>
 <p>This is the value quoted in <em>Jordan Algebras</em>, and the algebra is the unique exceptional simple formally real Jordan algebra.</p>
 <h3 id="the-jordan-identity">The Jordan Identity</h3>
 <p><strong>Theorem (Albert).</strong> $H_3(\mathbb{O})$ with the symmetrised product is a Jordan algebra.</p>
-<p><em>Proof (sketch).</em> Let $x = \sum_{i,j} x_{ij} \otimes E_{ij}$ be a generic Hermitian matrix, with $x_{ii} \in \mathbb{R}$ and $x_{ji} = \bar x_{ij}$. The product $x \circ y = \tfrac{1}{2}(xy + yx)$ is again Hermitian, by the anti-automorphism property of the octonion conjugation, so $\circ$ is a commutative product on $H_3(\mathbb{O})$. The Jordan identity $[L_x, L_{x^2}] = 0$ becomes, after expanding both sides over the eight basis octonions, a polynomial identity of degree four in the entries $x_{ij}$. The reduction uses the alternative laws $u(uv) = (uu)v$ and $(vu)u = v(uu)$, the vanishing of the real part of the associator, $\operatorname{Re}[u,v,w] = 0$, and the composition law $(uv)\overline{uv} = (u\bar u)(v\bar v)$ with $u\bar u$ real, which together bring the two sides to the same normal form. This is the classical theorem of Albert; the finite ingredient is the multiplication table of the eight basis units.</p>
+<p><em>Proof (sketch).</em> Let $x = \sum_{i,j} x_{ij} \otimes E_{ij}$ be a generic Hermitian matrix, with $x_{ii} \in \mathbb{R}$ and $x_{ji} = x^{\natural}_{ij}$. The product $x \circ y = \tfrac{1}{2}(xy + yx)$ is again Hermitian, by the anti-automorphism property of the octonion conjugation, so $\circ$ is a commutative product on $H_3(\mathbb{O})$. The Jordan identity $[L_x, L_{x^2}] = 0$ becomes, after expanding both sides over the eight basis octonions, a polynomial identity of degree four in the entries $x_{ij}$. The reduction uses the alternative laws $u(uv) = (uu)v$ and $(vu)u = v(uu)$, the vanishing of the real part of the associator, $\operatorname{Re}[u,v,w] = 0$, and the composition law $(uv)(uv)^{\natural} = (uu^{\natural})(v v^{\natural})$ with $u u^{\natural}$ real, which together bring the two sides to the same normal form. This is the classical theorem of Albert; the finite ingredient is the multiplication table of the eight basis units.</p>
 <p><strong>Remark.</strong> The same computation fails for $n \geq 4$: the symmetrised product on $H_n(\mathbb{O})$ is not a Jordan product for $n \geq 4$. The reason is that the proof of the Jordan identity for $A^+$ uses the associativity of the entries, which an associative composition algebra ($\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$) supplies and which the octonions supply only up to the alternative laws. The case $n = 3$ escapes because the Hermitian condition pairs every entry with its conjugate transpose, and the associator of octonions has vanishing real part, so the alternative laws suffice for the products that occur; from $n = 4$ onwards the identity contains a product of three off-diagonal octonions whose bracketing matters.</p>
 <h3 id="idempotents">Idempotents</h3>
 <p>The diagonal matrices</p>
@@ -267,7 +267,7 @@ $$</p>
 <td>Composition algebra: $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{O}$</td>
 </tr>
 <tr>
-<td>$u \mapsto \bar u$, $x \mapsto x^*$</td>
+<td>$u \mapsto  u^{\natural}$, $x \mapsto x^*$</td>
 <td>Conjugation, conjugate transpose</td>
 </tr>
 <tr>

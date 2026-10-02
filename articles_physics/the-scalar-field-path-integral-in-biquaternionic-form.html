@@ -69,7 +69,7 @@
 <li>Companion article <em>Noether's Theorem in Biquaternionic Form</em>, for the central scalar action and the current.</li>
 <li>Companion article <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>, for the material four-wavevector and the biquaternion norm.</li>
 </ul>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ and $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$. The scalar field is $\tilde{\Phi}=\phi\,e_0$ with $\phi$ complex, written in real components as $\phi=(\phi_1+i\phi_2)/\sqrt2$, so that $\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})=\frac12(\phi_1^2+\phi_2^2)$ and the kinetic term is $\frac12[(\partial\phi_1)^2+(\partial\phi_2)^2]$ — the component normalization of the companion articles on the quantized field and on symmetry breaking — and the mass parameter is $\mu=mc/\hbar$. Natural units $\hbar=c=1$ are used in the analytical parts. The metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; physical components are written $x=(t,\mathbf{x})$ and $p=(\omega,\mathbf{p})$, with $E_{\mathbf{p}}=\sqrt{\mathbf{p}^2+\mu^2}$.</p>
+<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$. The scalar field is $\tilde{\Phi}=\phi\,e_0$ with $\phi$ complex, written in real components as $\phi=(\phi_1+i\phi_2)/\sqrt2$, so that $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})=\frac12(\phi_1^2+\phi_2^2)$ and the kinetic term is $\frac12[(\partial\phi_1)^2+(\partial\phi_2)^2]$ — the component normalization of the companion articles on the quantized field and on symmetry breaking — and the mass parameter is $\mu=mc/\hbar$. Natural units $\hbar=c=1$ are used in the analytical parts. The metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; physical components are written $x=(t,\mathbf{x})$ and $p=(\omega,\mathbf{p})$, with $E_{\mathbf{p}}=\sqrt{\mathbf{p}^2+\mu^2}$.</p>
 <h2 id="from-the-operator-formalism-to-the-functional-integral">From the Operator Formalism to the Functional Integral</h2>
 <p>The functional integral is derived from the operator formalism by inserting a complete set of field eigenstates at each time. The field operator $\hat{\phi}(\mathbf{x})$ has a continuum of eigenstates,</p>
 <p>$$
@@ -90,7 +90,7 @@ $$</p>
 <p>$$
 \tilde{\Phi}(\tilde{Q})=\phi(\tilde{Q})e_0,
 \qquad
-S[\tilde{\Phi}]=\int d^4x\left[-\mathrm{Sc}\!\left[(\bar{\tilde{\nabla}}\tilde{\Phi}^\dagger)(\tilde{\nabla}\tilde{\Phi})\right]-\mu^2\,\mathrm{Sc}\!\left(\tilde{\Phi}^\dagger\tilde{\Phi}\right)\right],
+S[\tilde{\Phi}]=\int d^4x\left[-\mathrm{Sc}\!\left[(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})\right]-\mu^2\,\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\tilde{\Phi}\right)\right],
 $$</p>
 <p>$$
 Z=\int\mathcal{D}\tilde{\Phi}\;e^{\,iS[\tilde{\Phi}]/\hbar},
@@ -102,7 +102,7 @@ $$</p>
 \frac{\omega^2}{c^2}-\mathbf{k}^2-\mu^2
 =-\left(N(\tilde{K})+\mu^2\right),
 \qquad
-N(\tilde{K})=\tilde{K}\bar{\tilde{K}},
+N(\tilde{K})=\tilde{K}\tilde{K}^{\natural},
 \qquad
 \tilde{K}=i\frac{\omega}{c}\,e_0+\mathbf{k},
 $$</p>
@@ -138,7 +138,7 @@ $$</p>
 <p>A source is added to make the correlation functions the derivatives of a single functional. With a central-valued source $\tilde J=J\,e_0$, and with both source terms present because the complex field and its conjugate are independent,</p>
 <p>$$
 Z[\tilde J]=\int\mathcal{D}\tilde{\Phi}\;\exp\left(iS[\tilde{\Phi}]
-+i\int d^4x\left[\mathrm{Sc}\!\left(\tilde J^\dagger\tilde{\Phi}\right)+\mathrm{Sc}\!\left(\tilde{\Phi}^\dagger\tilde J\right)\right]\right),
++i\int d^4x\left[\mathrm{Sc}\!\left(\tilde J^{*}\tilde{\Phi}\right)+\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\tilde J\right)\right]\right),
 $$</p>
 <p>and the time-ordered correlation functions of the quantized field are its functional derivatives,</p>
 <p>$$
@@ -192,7 +192,7 @@ $$</p>
 <p>$$
 S_E[\tilde{\Phi}]=\int d^4x_E\left[(\partial_\tau\phi^*)(\partial_\tau\phi)
 +\sum_k(\partial_k\phi^*)(\partial_k\phi)+\mu^2\phi^*\phi\right]
-=\int d^4x_E\;\mathrm{Sc}\!\left[\tilde{\Phi}^\dagger(-\Delta_E+\mu^2)\tilde{\Phi}\right],
+=\int d^4x_E\;\mathrm{Sc}\!\left[\tilde{\Phi}^{*}(-\Delta_E+\mu^2)\tilde{\Phi}\right],
 $$</p>
 <p>with $\Delta_E=\partial_\tau^2+\Delta$ the Euclidean Laplacian, and the functional integral becomes</p>
 <p>$$
@@ -212,7 +212,7 @@ $$</p>
 <p>The functional integral makes the vacuum amplitude an integral over configurations and connects directly to the external-background process of the companion article <em>Scalar Pair Creation in Biquaternionic Form</em>. A background that couples through the invariant produces an effective action in which the mass is spacetime-dependent,</p>
 <p>$$
 Z[\tilde\sigma]=\int\mathcal{D}\tilde{\Phi}\;\exp\left(iS[\tilde{\Phi}]
--i g\int d^4x\,\mathrm{Sc}\!\left(\tilde{\Phi}^\dagger\tilde{\Phi}\right)\sigma\right),
+-i g\int d^4x\,\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\tilde{\Phi}\right)\sigma\right),
 $$</p>
 <p>and the <strong>vacuum persistence amplitude</strong> in the background is</p>
 <p>$$
@@ -224,10 +224,10 @@ $$</p>
 <h2 id="interactions-and-the-loop-expansion">Interactions and the Loop Expansion</h2>
 <p>The scalar sector's interaction is a central self-coupling. The renormalizable $U(1)$-symmetric interaction is the square of the invariant,</p>
 <p>$$
-\mathcal{L}_{\mathrm{int}}=-\frac{\lambda}{4}\,\Big(\mathrm{Sc}\!\left(\tilde{\Phi}^\dagger\tilde{\Phi}\right)\Big)^2
+\mathcal{L}_{\mathrm{int}}=-\frac{\lambda}{4}\,\Big(\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\tilde{\Phi}\right)\Big)^2
 =-\frac{\lambda}{16}\left(\phi_1^2+\phi_2^2\right)^2 ,
 $$</p>
-<p>where the second form uses the component normalization stated above, $\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})=\frac12(\phi_1^2+\phi_2^2)$, and the potential is a central scalar polynomial. The generating functional becomes</p>
+<p>where the second form uses the component normalization stated above, $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})=\frac12(\phi_1^2+\phi_2^2)$, and the potential is a central scalar polynomial. The generating functional becomes</p>
 <p>$$
 Z[\tilde J]=\exp\!\left[-i\int d^4x\;\frac{\lambda}{4}\left(\frac{\delta}{i\,\delta J^*}\frac{\delta}{i\,\delta J}\right)^{\!2}\right]Z_0[\tilde J],
 $$</p>
@@ -239,7 +239,7 @@ $$</p>
 <h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>
 <p>Four statements summarise what the framework contributes to the scalar functional integral.</p>
 <p><strong>The configuration space is the center.</strong> The configuration space of the theory is the space of central-valued functions; the action, the source and the measure are central; the state module is a spectator. This is why the scalar functional integral is an ordinary complex functional integral and why no Grassmann or spinor structure appears.</p>
-<p><strong>The quadratic form is the biquaternion norm.</strong> The momentum-space symbol of the Gaussian's operator is $-(N(\tilde{K})+\mu^2)$ with $N(\tilde{K})=\tilde{K}\bar{\tilde{K}}$, and it vanishes on the mass shell, the level set $N(\tilde{K})=-\mu^2$. The shell's geometry, the Gaussian's width and the pole of the propagator are three readings of one algebraic object, and the framework's convention for $\Box$ makes them mutually consistent.</p>
+<p><strong>The quadratic form is the biquaternion norm.</strong> The momentum-space symbol of the Gaussian's operator is $-(N(\tilde{K})+\mu^2)$ with $N(\tilde{K})=\tilde{K}\tilde{K}^{\natural}$, and it vanishes on the mass shell, the level set $N(\tilde{K})=-\mu^2$. The shell's geometry, the Gaussian's width and the pole of the propagator are three readings of one algebraic object, and the framework's convention for $\Box$ makes them mutually consistent.</p>
 <p><strong>The phase is central, and the Wick rotation is a sector relabelling.</strong> The phase $e^{iS/\hbar}$ is a central unitary, so it multiplies the whole configuration space uniformly. The continuation to imaginary time is the relabelling of the material coordinate $\tilde{Q}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-$ by the real coefficient $c\tau$, which is the passage to the quaternion subspace on which the biquaternion norm is positive definite; this is the standard Wick rotation read as a change of sector, and it is what makes the Euclidean Gaussian converge.</p>
 <p><strong>The algebra supplies nothing beyond the center.</strong> There is no bosonic ladder in $\mathbb{B}$, as the companion Fock-space article's trace argument shows, so the mode expansion, the Fock space and the perturbative expansion that the path integral organises are all constructed on an imported module. The functional integral's algebraic content is exhausted by the centrality of the field and the biquaternion-norm geometry of the quadratic form.</p>
 <h2 id="what-is-standard-and-what-is-open">What Is Standard and What Is Open</h2>
@@ -254,7 +254,7 @@ $$</p>
 <li><strong>Empirical content.</strong> Whether the functional integral as written yields a prediction distinguishing the framework from standard scalar field theory is open.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>The scalar functional integral is the sum over central-valued configurations weighted by the central phase $e^{iS/\hbar}$, with the action $S[\tilde{\Phi}]=\int d^4x\,[-\mathrm{Sc}((\bar{\tilde{\nabla}}\tilde{\Phi}^\dagger)(\tilde{\nabla}\tilde{\Phi}))-\mu^2\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})]$. It is derived from the operator formalism by inserting the field-eigenvalue basis at each time, and it is an ordinary functional integral over complex functions because the scalar field is bosonic and its configurations are c-numbers. Its quadratic form has the momentum-space symbol $-(N(\tilde{K})+\mu^2)$, the biquaternion norm of the material four-wavevector shifted by the mass, so the mass shell $N(\tilde{K})=-\mu^2$, the Gaussian's width and the propagator's pole are one object.</p>
+<p>The scalar functional integral is the sum over central-valued configurations weighted by the central phase $e^{iS/\hbar}$, with the action $S[\tilde{\Phi}]=\int d^4x\,[-\mathrm{Sc}((\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi}))-\mu^2\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})]$. It is derived from the operator formalism by inserting the field-eigenvalue basis at each time, and it is an ordinary functional integral over complex functions because the scalar field is bosonic and its configurations are c-numbers. Its quadratic form has the momentum-space symbol $-(N(\tilde{K})+\mu^2)$, the biquaternion norm of the material four-wavevector shifted by the mass, so the mass shell $N(\tilde{K})=-\mu^2$, the Gaussian's width and the propagator's pole are one object.</p>
 <p>The generating functional $Z[\tilde J]$ has for its functional derivatives the time-ordered correlation functions of the field operator, and its free value is the Gaussian $Z[0]\exp(-\int J^*\Delta_F J)$ with $\Delta_F$ the Feynman propagator; the finite-dimensional Gaussian identity was verified by quadrature to a relative difference of $9.7\times10^{-13}$, and the lattice Klein–Gordon inverse to $5.6\times10^{-16}$. The canonical commutator is recovered from the representation $\hat\pi=-i\hbar\delta/\delta\phi$, and the mode expansion and correlators follow. The vacuum persistence amplitude $|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle|^2=|Z[\tilde\sigma]|^2/|Z[0]|^2$ in a background is the functional-integral form of the pair-creation probability, and it agrees with the Bogoliubov computation of the companion pair-creation article; its imaginary part measures the failure of the vacuum to persist.</p>
 <p>The framework's contribution is the centrality of the configuration space, the biquaternion-norm reading of the quadratic form, and the identification of the Wick rotation with the passage to the quaternion subspace. The measure, the determinant's branch and the intrinsic generating functional remain open, and the bosonic gap — no native ladder in $\mathbb{B}$ — persists, as it does throughout the scalar sector.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -299,7 +299,7 @@ $$</p>
 <td>Central scalar action</td>
 </tr>
 <tr>
-<td>$Z[\tilde J]=\int\mathcal{D}\tilde{\Phi}\,e^{\,iS+i\int[\mathrm{Sc}(\tilde J^\dagger\tilde{\Phi})+\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde J)]}$</td>
+<td>$Z[\tilde J]=\int\mathcal{D}\tilde{\Phi}\,e^{\,iS+i\int[\mathrm{Sc}(\tilde J^{*}\tilde{\Phi})+\mathrm{Sc}(\tilde{\Phi}^{*}\tilde J)]}$</td>
 <td>Generating functional</td>
 </tr>
 <tr>
@@ -323,7 +323,7 @@ $$</p>
 <td>Propagator in material notation</td>
 </tr>
 <tr>
-<td>$\tilde{K}=i\omega/c\,e_0+\mathbf{k}$, $N(\tilde{K})=\tilde{K}\bar{\tilde{K}}$</td>
+<td>$\tilde{K}=i\omega/c\,e_0+\mathbf{k}$, $N(\tilde{K})=\tilde{K}\tilde{K}^{\natural}$</td>
 <td>Material four-wavevector and biquaternion norm</td>
 </tr>
 <tr>
@@ -331,7 +331,7 @@ $$</p>
 <td>Momentum representation; yields $[\hat\phi,\hat\pi]=i\hbar\delta^{(3)}$</td>
 </tr>
 <tr>
-<td>$S_E[\tilde\Phi]=\int\mathrm{Sc}(\tilde\Phi^\dagger(-\Delta_E+\mu^2)\tilde\Phi)$</td>
+<td>$S_E[\tilde\Phi]=\int\mathrm{Sc}(\tilde\Phi^{*}(-\Delta_E+\mu^2)\tilde\Phi)$</td>
 <td>Euclidean action (Wick rotation)</td>
 </tr>
 <tr>

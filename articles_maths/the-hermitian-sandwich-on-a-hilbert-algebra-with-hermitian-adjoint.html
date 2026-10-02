@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Hermitian Sandwich on a Clifford Algebra with Hermitian Adjoint — Biquaternion Universe</title>
+  <title>The Hermitian Sandwich on a Hilbert Algebra with Hermitian Adjoint — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -50,15 +50,15 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-hermitian-sandwich-on-a-clifford-algebra-with-hermitian-adjoint"><strong>The Hermitian Sandwich on a Clifford Algebra with Hermitian Adjoint</strong></h1>
+        <h1 id="the-hermitian-sandwich-on-a-hilbert-algebra-with-hermitian-adjoint"><strong>The Hermitian Sandwich on a Hilbert Algebra with Hermitian Adjoint</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The two-sided operators on a Clifford algebra form one family of five members, tabulated in <em>Two-Sided Operators on a Clifford Algebra</em>. Four of them are built from the intrinsic anti-involutions of the algebra, reversion and Clifford conjugation, and are available over every commutative base. The fifth is the <strong>Hermitian sandwich</strong></p>
 <p>$$
 \Theta_x(y) = x\,y\,x^{\dagger},
 $$</p>
-<p>and it is the member that needs an involution of the base: the <strong>dagger</strong> $x^{\dagger} = \sigma(\alpha(x^{r}))$ is defined only when the base ring $A$ carries an involution $\sigma$, and it is introduced in <em>Involutive Clifford Algebras</em>.</p>
+<p>and it is the member that needs an involution of the base: the <strong>dagger</strong> $x^{\dagger} = \sigma(\alpha(x^{r}))$ is defined only when the base ring $A$ carries an involution $\sigma$, and it is introduced in <em>Hilbert Algebras</em>.</p>
 <p>The trade between this member and the four others is exact. The four intrinsic members dress $x$ between a left factor and a right factor that are either an inverse or an intrinsic anti-involution of the algebra; the Hermitian sandwich dresses it between $x$ and the dagger of $x$. Since the dagger is defined on <strong>every</strong> element, $\Theta_x$ is defined for every $x$, invertible or not, and $x \mapsto \Theta_x$ is then a homomorphism of the multiplicative monoid of the algebra rather than of its group of units. In exchange the base and the coefficients enter: the operator is $A$-linear in its argument, it is $\sigma$-semilinear in its parameter up to a norm, and on the <strong>unitary slice</strong> $x^{\dagger}x = 1$ the dagger is the inverse, so the Hermitian sandwich there is the inner conjugation of <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em> and the two theories meet.</p>
-<p>This article treats the operator itself: its domain, its linearity in the argument and in the parameter, its multiplicativity, its parity, its value at the unit, its form on the Clifford group, the elements on which it preserves the quadratic space, and two worked cases. The forms it is built from belong to <em>Hermitian Forms on a Clifford Algebra with Hermitian Adjoint</em>; the form that makes the algebra a Hilbert space is <em>The Blade Form and the Hilbert Structure with Hermitian Adjoint</em>; the slice on which the dagger is the inverse is <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>; the adjoint of the one-sided action on a Clifford module is <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em>; and the biquaternion case, where the sandwich $Q\,x\,Q^{\dagger}$ reproduces the Lorentz action, is <em>The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
+<p>This article treats the operator itself: its domain, its linearity in the argument and in the parameter, its multiplicativity, its parity, its value at the unit, its form on the Clifford group, the elements on which it preserves the quadratic space, and two worked cases. The forms it is built from belong to <em>Hermitian Forms on a Hilbert Algebra with Hermitian Adjoint</em>; the form that makes the algebra a Hilbert space is <em>The Blade Form and the Hilbert Structure with Hermitian Adjoint</em>; the slice on which the dagger is the inverse is <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>; the adjoint of the one-sided action on a Clifford module is <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em>; and the biquaternion case, where the sandwich $Q\,x\,Q^{\dagger}$ reproduces the Lorentz action, is <em>The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
 <h2 id="the-operator">The Operator</h2>
 <h3 id="definition-and-domain">Definition and Domain</h3>
 <p><strong>Definition.</strong> Let $A$ be a commutative ring with involution $\sigma$, let $q$ be a quadratic form on a free $A$-module $V$, and let $\mathrm{Cl}(V,q)$ be its Clifford algebra. The <strong>Hermitian sandwich</strong> of an element $x \in \mathrm{Cl}(V,q)$ is the map</p>
@@ -102,8 +102,8 @@ $$</p>
 </tr>
 <tr>
 <td>conjugation sandwich</td>
-<td>$x\,y\,\bar x$</td>
-<td>$\bar x$</td>
+<td>$x\,y\,x^{\natural}$</td>
+<td>$x^{\natural}$</td>
 <td>every $x$</td>
 </tr>
 <tr>
@@ -127,7 +127,7 @@ $$</p>
 \Theta_{ax}(y) = a\,x\,y\,\sigma(a)\,x^{\dagger} = a\,\sigma(a)\,x\,y\,x^{\dagger} = a\,\sigma(a)\,\Theta_x(y),
 $$</p>
 <p>the middle step by centrality of $a$.</p>
-<p><strong>Remark (a corrected statement of the linearity).</strong> The operator is $A$-linear in the <strong>argument</strong> and picks up $\sigma$ in the <strong>parameter</strong>; it is not $\sigma$-semilinear in the argument. An earlier draft of <em>Involutive Clifford Algebras</em> claimed that $\Theta_x$ is $\sigma$-semilinear in $y$, and that claim is false. Over $\mathbb{C}$ let $A = \mathbb{C}$ with complex conjugation, let $V$ be one-dimensional with $e^{2} = -1$, and put $x = 2 + ie$, $a = i$, $y = 1$. Then</p>
+<p><strong>Remark (a corrected statement of the linearity).</strong> The operator is $A$-linear in the <strong>argument</strong> and picks up $\sigma$ in the <strong>parameter</strong>; it is not $\sigma$-semilinear in the argument. An earlier draft of <em>Hilbert Algebras</em> claimed that $\Theta_x$ is $\sigma$-semilinear in $y$, and that claim is false. Over $\mathbb{C}$ let $A = \mathbb{C}$ with complex conjugation, let $V$ be one-dimensional with $e^{2} = -1$, and put $x = 2 + ie$, $a = i$, $y = 1$. Then</p>
 <p>$$
 \Theta_x(ay) = i\,x\,x^{\dagger} = 5i - 4e, \qquad \Theta_x(y) = x\,x^{\dagger} = 5 + 4ie,
 $$</p>
@@ -175,7 +175,7 @@ $$</p>
 </tr>
 <tr>
 <td>conjugation sandwich</td>
-<td>$x\,\bar x = N(x)$, the Clifford norm</td>
+<td>$x\,x^{\natural} = N(x)$, the Clifford norm</td>
 </tr>
 <tr>
 <td>Hermitian sandwich</td>
@@ -186,15 +186,15 @@ $$</p>
 <p>The inner conjugation is the only member that fixes the unit identically; the signed inner conjugation multiplies it by the parity sign; the conjugation sandwich gives the Clifford norm; and the Hermitian sandwich gives the $\sigma$-conjugate of the norm composed with the $\sigma$-unitary part of $x$, as the next section makes precise.</p>
 <h2 id="on-the-clifford-group">On the Clifford Group</h2>
 <h3 id="the-corrected-identities">The Corrected Identities</h3>
-<p><strong>Theorem.</strong> Let $x$ be an element of the Clifford group $\Gamma(V,q)$, with Clifford norm $N(x) = x\,\bar x = \bar x\,x$, a scalar of $A$. Then</p>
+<p><strong>Theorem.</strong> Let $x$ be an element of the Clifford group $\Gamma(V,q)$, with Clifford norm $N(x) = x\,x^{\natural} = x^{\natural}\,x$, a scalar of $A$. Then</p>
 <p>$$
 x^{\dagger} = \sigma\bigl(N(x)\bigr)\,\sigma(x)^{-1},
 \qquad
 \Theta_x(y) = \sigma\bigl(N(x)\bigr)\; x\,y\,\sigma(x)^{-1}.
 $$</p>
-<p><strong>Proof.</strong> On $\Gamma$ the norm is a scalar, so $\bar x = N(x)x^{-1}$. The dagger is the composite of Clifford conjugation with the ring automorphism $\sigma$, so</p>
+<p><strong>Proof.</strong> On $\Gamma$ the norm is a scalar, so $x^{\natural} = N(x)x^{-1}$. The dagger is the composite of Clifford conjugation with the ring automorphism $\sigma$, so</p>
 <p>$$
-x^{\dagger} = \sigma(\bar x) = \sigma\bigl(N(x)\,x^{-1}\bigr) = \sigma\bigl(N(x)\bigr)\,\sigma(x)^{-1},
+x^{\dagger} = \sigma(x^{\natural}) = \sigma\bigl(N(x)\,x^{-1}\bigr) = \sigma\bigl(N(x)\bigr)\,\sigma(x)^{-1},
 $$</p>
 <p>using that $\sigma$ is multiplicative and that $\sigma(x^{-1}) = \sigma(x)^{-1}$. Substituting into $\Theta_x(y) = x\,y\,x^{\dagger}$ gives the second identity.</p>
 <p><strong>Corollary (the $\sigma$-real case).</strong> If $x \in \Gamma$ satisfies $\sigma(x) = x$, then $\sigma(x)^{-1} = x^{-1}$ and</p>
@@ -206,7 +206,7 @@ $$</p>
 <p>$$
 \sigma\bigl(N(x)\bigr)\,x^{-1} = 3\cdot\tfrac{1}{3}(2 - ie) = 2 - ie \neq x^{\dagger}.
 $$</p>
-<p>The corrected formula returns $3\cdot \frac{1}{3}(2 + ie) = 2 + ie = x^{\dagger}$. The same correction was recorded in <em>Involutive Clifford Algebras</em>, where the two identities were first written.</p>
+<p>The corrected formula returns $3\cdot \frac{1}{3}(2 + ie) = 2 + ie = x^{\dagger}$. The same correction was recorded in <em>Hilbert Algebras</em>, where the two identities were first written.</p>
 <h3 id="the-unitary-slice">The Unitary Slice</h3>
 <p><strong>Definition.</strong> The <strong>unitary slice</strong> of the algebra is</p>
 <p>$$
@@ -222,11 +222,11 @@ $$</p>
 x \in U \ \Longrightarrow \ \Theta_x(y) = x\,y\,x^{-1} = \mathrm{Ad}_x(y).
 $$</p>
 <p>This is the sense in which the Hermitian sandwich is the inverse sandwich of <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em> on the slice where the dagger is invertible. The slice is studied in <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>.</p>
-<p><strong>Proposition (the case of the identity involution).</strong> When $\sigma = \mathrm{id}$ the dagger is Clifford conjugation, $x^{\dagger} = \bar x$, and</p>
+<p><strong>Proposition (the case of the identity involution).</strong> When $\sigma = \mathrm{id}$ the dagger is Clifford conjugation, $x^{\dagger} = x^{\natural}$, and</p>
 <p>$$
 U = \{\, x : N(x) = 1 \,\} = \mathrm{Pin}(V,q).
 $$</p>
-<p><strong>Proof.</strong> If $\bar x\,x = 1$ then $N(x) = x\,\bar x = x\,(\bar x\,x)\,x^{-1} = 1$. Conversely if $x\,\bar x = 1$ then $\bar x = x^{-1}$, so $\bar x\,x = 1$. Hence $U = \{x : N(x) = 1\}$, the definition of the Pin group.</p>
+<p><strong>Proof.</strong> If $x^{\natural}\,x = 1$ then $N(x) = x\,x^{\natural} = x\,(x^{\natural}\,x)\,x^{-1} = 1$. Conversely if $x\,x^{\natural} = 1$ then $x^{\natural} = x^{-1}$, so $x^{\natural}\,x = 1$. Hence $U = \{x : N(x) = 1\}$, the definition of the Pin group.</p>
 <h2 id="preservation-of-the-quadratic-space">Preservation of the Quadratic Space</h2>
 <p><strong>Proposition.</strong> Let $x \in \Gamma(V,q)$. Then $\Theta_x$ maps the vector space $V$ to itself, and</p>
 <p>$$
@@ -240,7 +240,7 @@ $$</p>
 <h3 id="an-odd-element-with-complex-coefficients">An Odd Element with Complex Coefficients</h3>
 <p>Let $A = \mathbb{C}$ with complex conjugation, let $V = \mathbb{C}$ with $e^{2} = -1$, so that $\mathrm{Cl}(V,q)$ has basis $1, e$, and let $x = 2 + ie$. Then</p>
 <p>$$
-\bar x = \alpha(2 + ie) = 2 - ie, \qquad x^{\dagger} = \sigma(\bar x) = 2 + ie, \qquad N(x) = x\,\bar x = 3 .
+x^{\natural} = \alpha(2 + ie) = 2 - ie, \qquad x^{\dagger} = \sigma(x^{\natural}) = 2 + ie, \qquad N(x) = x\,x^{\natural} = 3 .
 $$</p>
 <p>The operator is $\Theta_x(y) = x\,y\,(2 + ie)$. On the two basis elements,</p>
 <p>$$
@@ -248,7 +248,7 @@ $$</p>
 $$</p>
 <p>and on the scalar $a = i$ it gives $\Theta_x(i) = i(5+4ie) = 5i - 4e$, the value used above to refute $\sigma$-semilinearity in the argument. On the unit, the corrected Clifford-group identity reads $x^{\dagger} = \sigma(N(x))\sigma(x)^{-1} = 3\cdot\frac{1}{3}(2+ie) = 2+ie$, while the incorrect formula $3 x^{-1}$ gives $2 - ie$.</p>
 <h3 id="an-even-element-and-a-similarity">An Even Element and a Similarity</h3>
-<p>Let $q$ be the form on $\mathbb{R}^{2}$ with $e_1^{2} = 1$, $e_2^{2} = -1$, and let $x = 2 + 3e_1e_2$, an even element. Then $\bar x = 2 - 3e_1e_2$ and, since $(e_1e_2)^{2} = 1$ in this algebra,</p>
+<p>Let $q$ be the form on $\mathbb{R}^{2}$ with $e_1^{2} = 1$, $e_2^{2} = -1$, and let $x = 2 + 3e_1e_2$, an even element. Then $x^{\natural} = 2 - 3e_1e_2$ and, since $(e_1e_2)^{2} = 1$ in this algebra,</p>
 <p>$$
 N(x) = (2 + 3e_1e_2)(2 - 3e_1e_2) = 4 - 9 = -5 .
 $$</p>
@@ -262,7 +262,7 @@ $$</p>
 <p>$$
 \Theta_x(y) = x\,y\,x^{\dagger}, \qquad x^{\dagger} = \sigma(\alpha(x^{r})),
 $$</p>
-<p>the member whose right factor is the dagger and which therefore needs an involution $\sigma$ of the base, introduced in <em>Involutive Clifford Algebras</em>. It is defined for <strong>every</strong> element of the algebra, invertible or not, because the dagger is. It is $A$-linear in its argument $y$, and in its parameter it obeys $\Theta_{ax} = a\sigma(a)\Theta_x$; it is <strong>not</strong> $\sigma$-semilinear in the argument, and the earlier claim to that effect is corrected, with the counterexample $\Theta_x(i) = 5i-4e$ over $\mathbb{C}$. It is multiplicative, $\Theta_{xz} = \Theta_x \circ \Theta_z$, so $x \mapsto \Theta_x$ is a monoid homomorphism into the endomorphisms, which is the structural gain over the inverse sandwiches: the operators are defined on all of the algebra, and the invertibility migrates to the unitary slice. For homogeneous $x$ the operator preserves the parity, and for even $x$ it preserves the degree. Its value at the unit is $\Theta_x(1) = x\,x^{\dagger}$.</p>
+<p>the member whose right factor is the dagger and which therefore needs an involution $\sigma$ of the base, introduced in <em>Hilbert Algebras</em>. It is defined for <strong>every</strong> element of the algebra, invertible or not, because the dagger is. It is $A$-linear in its argument $y$, and in its parameter it obeys $\Theta_{ax} = a\sigma(a)\Theta_x$; it is <strong>not</strong> $\sigma$-semilinear in the argument, and the earlier claim to that effect is corrected, with the counterexample $\Theta_x(i) = 5i-4e$ over $\mathbb{C}$. It is multiplicative, $\Theta_{xz} = \Theta_x \circ \Theta_z$, so $x \mapsto \Theta_x$ is a monoid homomorphism into the endomorphisms, which is the structural gain over the inverse sandwiches: the operators are defined on all of the algebra, and the invertibility migrates to the unitary slice. For homogeneous $x$ the operator preserves the parity, and for even $x$ it preserves the degree. Its value at the unit is $\Theta_x(1) = x\,x^{\dagger}$.</p>
 <p>On the Clifford group the identities are $x^{\dagger} = \sigma(N(x))\,\sigma(x)^{-1}$ and $\Theta_x = \sigma(N(x))\,x(\cdot)\sigma(x)^{-1}$; the simpler $x^{\dagger} = \sigma(N(x))x^{-1}$ and $\Theta_x = \sigma(N(x))\mathrm{Ad}^{\alpha}_x$ hold only for $\sigma$-real $x$, and the failure for a non-$\sigma$-real homogeneous element is worked out. On the <strong>unitary slice</strong> $U = \{x : x^{\dagger}x = 1\}$, which is a group and equals $\mathrm{Pin}(V,q)$ when $\sigma = \mathrm{id}$, the dagger is the inverse and the Hermitian sandwich is exactly the inner conjugation, so the two theories meet there. On the Clifford group the operator maps $V$ to $V$ as $\sigma(N(x))$ times a twisted conjugation, so it is an isometry of the quadratic space precisely when $\sigma(N(x))^{2} = 1$, and it gives no isometries of $V$ beyond the orthogonal group.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -290,7 +290,7 @@ $$</p>
 <td>Grade involution</td>
 </tr>
 <tr>
-<td>$\bar x = \alpha(x^{r})$</td>
+<td>$x^{\natural} = \alpha(x^{r})$</td>
 <td>Clifford conjugation</td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ $$</p>
 <td>Parameter rule, $a$ central</td>
 </tr>
 <tr>
-<td>$\Gamma(V,q)$, $N(x) = x\bar x$</td>
+<td>$\Gamma(V,q)$, $N(x) = x x^{\natural}$</td>
 <td>Clifford group and Clifford norm</td>
 </tr>
 <tr>

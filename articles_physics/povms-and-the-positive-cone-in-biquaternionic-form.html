@@ -68,7 +68,7 @@ $$</p>
 $$</p>
 <p>and the biquaternion norm is</p>
 <p>$$
-N(\tilde{H}) = \tilde{H}\bar{\tilde{H}} = h_0^2 - |\mathbf{h}|^2 = \det M(\tilde{H}),
+N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural} = h_0^2 - |\mathbf{h}|^2 = \det M(\tilde{H}),
 $$</p>
 <p>a real scalar. The two conditions $N(\tilde{H})\geq0$ and $h_0\geq0$ are together equivalent to $h_0\geq|\mathbf{h}|$, so the set of positive elements is the future light cone of the biquaternion norm:</p>
 <p>$$
@@ -133,13 +133,13 @@ $$</p>
 <h3 id="the-post-measurement-state">The post-measurement state</h3>
 <p>A general measurement is specified not only by the outcome probabilities but by the state left behind. If the effect is written in a Kraus form</p>
 <p>$$
-\tilde{E}_y = \tilde{M}_y^\dagger\tilde{M}_y , \qquad \tilde{M}_y\in\mathbb{B},
+\tilde{E}_y = \tilde{M}_y^{*}\tilde{M}_y , \qquad \tilde{M}_y\in\mathbb{B},
 $$</p>
-<p>then the unnormalized post-measurement state is $\tilde{M}_y\tilde{\rho}\tilde{M}_y^\dagger$ and the normalized state is</p>
+<p>then the unnormalized post-measurement state is $\tilde{M}_y\tilde{\rho}\tilde{M}_y^{*}$ and the normalized state is</p>
 <p>$$
-\tilde{\rho}_y = \frac{\tilde{M}_y\tilde{\rho}\tilde{M}_y^\dagger}{\mathrm{Tr}(\tilde{M}_y\tilde{\rho}\tilde{M}_y^\dagger)} .
+\tilde{\rho}_y = \frac{\tilde{M}_y\tilde{\rho}\tilde{M}_y^{*}}{\mathrm{Tr}(\tilde{M}_y\tilde{\rho}\tilde{M}_y^{*})} .
 $$</p>
-<p>The outcome probability is $p_y = \mathrm{Tr}(\tilde{M}_y\tilde{\rho}\tilde{M}_y^\dagger) = \mathrm{Tr}(\tilde{\rho}\tilde{E}_y)$, and the resolution of the identity is $\sum_y\tilde{M}_y^\dagger\tilde{M}_y = e_0$. The measurement is therefore an <strong>instrument</strong>: a family of completely positive maps indexed by the outcome, one of which occurs. This is the measurement side of the channel formalism of the companion article <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>; a measurement followed by discarding the outcome is the channel $\Phi(\tilde{\rho}) = \sum_y\tilde{M}_y\tilde{\rho}\tilde{M}_y^\dagger$.</p>
+<p>The outcome probability is $p_y = \mathrm{Tr}(\tilde{M}_y\tilde{\rho}\tilde{M}_y^{*}) = \mathrm{Tr}(\tilde{\rho}\tilde{E}_y)$, and the resolution of the identity is $\sum_y\tilde{M}_y^{*}\tilde{M}_y = e_0$. The measurement is therefore an <strong>instrument</strong>: a family of completely positive maps indexed by the outcome, one of which occurs. This is the measurement side of the channel formalism of the companion article <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>; a measurement followed by discarding the outcome is the channel $\Phi(\tilde{\rho}) = \sum_y\tilde{M}_y\tilde{\rho}\tilde{M}_y^{*}$.</p>
 <h3 id="naimark-dilation">Naimark dilation</h3>
 <p>Every POVM on the defining module $S$ is the compression of a projective measurement on a larger module. There is an ancillary space $\mathbb{C}^d$, an isometry $V:S\to S\otimes\mathbb{C}^d$, and a PVM $\{\tilde{F}_y\}$ on the larger space such that</p>
 <p>$$
@@ -183,7 +183,7 @@ $$</p>
 <li><strong>Effects</strong> are the elements of the operator interval $[0,e_0]$, i.e. the cone intersected with its reflection through $\tfrac12 e_0$; in coefficients, $|\mathbf{a}|\leq\min(a_0,1-a_0)$.</li>
 <li><strong>POVMs</strong> are resolutions of the identity by effects; <strong>PVMs</strong> are the resolutions by idempotents, i.e. by extreme effects.</li>
 <li><strong>Probabilities</strong> are the trace pairing $p_y = \mathrm{Tr}(\tilde{\rho}\tilde{E}_y)$, and the pairing is the one under which the cone is self-dual.</li>
-<li><strong>Post-measurement states</strong> are the Kraus images $\tilde{M}_y\tilde{\rho}\tilde{M}_y^\dagger$, normalized.</li>
+<li><strong>Post-measurement states</strong> are the Kraus images $\tilde{M}_y\tilde{\rho}\tilde{M}_y^{*}$, normalized.</li>
 </ul>
 <p>The general measurement is a convex decomposition of the identity into effects that are not extreme. The idempotents remain the extreme effects, and the projective measurement remains the extreme case; what the general measurement adds is the ability to have more outcomes than the dimension of the module, which is exactly what is needed for tasks such as state discrimination with more than two candidate states.</p>
 <h2 id="what-the-framework-does-and-does-not-claim">What the Framework Does and Does Not Claim</h2>
@@ -239,7 +239,7 @@ $$</p>
 <td>Central scalar imaginary</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$</td>
+<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>
@@ -275,11 +275,11 @@ $$</p>
 <td>Born rule for a POVM</td>
 </tr>
 <tr>
-<td>$\tilde{E}_y = \tilde{M}_y^\dagger\tilde{M}_y$</td>
+<td>$\tilde{E}_y = \tilde{M}_y^{*}\tilde{M}_y$</td>
 <td>Kraus form of an effect</td>
 </tr>
 <tr>
-<td>$\tilde{\rho}_y = \tilde{M}_y\tilde{\rho}\tilde{M}_y^\dagger/p_y$</td>
+<td>$\tilde{\rho}_y = \tilde{M}_y\tilde{\rho}\tilde{M}_y^{*}/p_y$</td>
 <td>Post-measurement state</td>
 </tr>
 <tr>

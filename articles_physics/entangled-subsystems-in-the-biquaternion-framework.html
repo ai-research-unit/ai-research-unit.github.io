@@ -107,11 +107,11 @@ $$</p>
 <h3 id="no-signaling-as-a-partial-trace-identity">No-signaling as a partial-trace identity</h3>
 <p>The last observation is the algebraic content of the no-communication theorem. If Alice applies a local unitary operation $\tilde{U}\otimes e_0$ to the joint state, the reduced state of particle 2 is unchanged:</p>
 <p>$$
-\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_0)\,\tilde{\rho}\,(\tilde{U}^\dagger\otimes e_0)\right) = \mathrm{Tr}_1(\tilde{\rho}),
+\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_0)\,\tilde{\rho}\,(\tilde{U}^{*}\otimes e_0)\right) = \mathrm{Tr}_1(\tilde{\rho}),
 $$</p>
 <p>where $\mathrm{Tr}_1$ denotes the partial trace over particle 1. This is a direct consequence of the cyclicity of the trace: for any element $\tilde{\rho} = \sum_i a_i\otimes b_i$ of the tensor product,</p>
 <p>$$
-\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_0)\,\tilde{\rho}\,(\tilde{U}^\dagger\otimes e_0)\right) = \sum_i \mathrm{Tr}_\mathbb{B}(\tilde{U}a_i\tilde{U}^\dagger)\,b_i = \sum_i \mathrm{Tr}_\mathbb{B}(a_i)\,b_i = \mathrm{Tr}_1(\tilde{\rho}).
+\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_0)\,\tilde{\rho}\,(\tilde{U}^{*}\otimes e_0)\right) = \sum_i \mathrm{Tr}_\mathbb{B}(\tilde{U}a_i\tilde{U}^{*})\,b_i = \sum_i \mathrm{Tr}_\mathbb{B}(a_i)\,b_i = \mathrm{Tr}_1(\tilde{\rho}).
 $$</p>
 <p>No-signaling is not a dynamical theorem in this reading; it is the cyclicity of the trace, applied to the partial trace. It says that correlations are real, that they are a property of the joint state, and that no local operation on one factor can be detected by measurements on the other.</p>
 <h2 id="the-five-debates-revisited">The Five Debates, Revisited</h2>
@@ -128,7 +128,7 @@ $$</p>
 <p>The measurement problem is the fact that standard quantum mechanics has two kinds of time evolution — unitary and projective — and the formalism does not say when each applies. Various solutions have been proposed (many-worlds, decoherence, collapse models, relational quantum mechanics), but there is no consensus.</p>
 <p>The biquaternion framework has something structural to offer here. In standard quantum mechanics, unitary evolution and projective collapse are different postulates, governing different types of process. In the biquaternion framework, both are properties of <em>acting elements</em> of the algebra:</p>
 <ul>
-<li><strong>Unitary elements</strong> $\tilde{U}$ satisfy $\tilde{U}\tilde{U}^\dagger = e_0$ and generate reversible evolution by rotor conjugation.</li>
+<li><strong>Unitary elements</strong> $\tilde{U}$ satisfy $\tilde{U}\tilde{U}^{*} = e_0$ and generate reversible evolution by rotor conjugation.</li>
 <li><strong>Idempotent elements</strong> $\tilde\Pi$ satisfy $\tilde\Pi^2 = \tilde\Pi$ and generate irreversible projection by the sandwich operation.</li>
 </ul>
 <p>The reversible/irreversible dichotomy is not an additional postulate; it is the algebraic dichotomy between two classes of elements of one algebra. This is a genuine reframing: the measurement problem is no longer "two incompatible dynamics glued together" but "one algebra with two classes of elements."</p>
@@ -269,7 +269,7 @@ $$</p>
 <td>Correlation function</td>
 </tr>
 <tr>
-<td>$\tilde{U}\tilde{U}^\dagger = e_0$</td>
+<td>$\tilde{U}\tilde{U}^{*} = e_0$</td>
 <td>Unitary element (reversible evolution)</td>
 </tr>
 <tr>

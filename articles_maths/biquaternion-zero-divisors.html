@@ -58,7 +58,7 @@
 <p>$$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C}.
 $$</p>
-<p>The quaternion conjugate is denoted $\bar{\tilde{Q}}$, the complex conjugate is denoted $\tilde{Q}^*$, the Hermitian conjugate is denoted $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is denoted $\tilde{Q}^\flat = -\tilde{Q}^\dagger$. The product $\tilde{Q}\bar{\tilde{Q}}$ lies in the scalar line $\mathbb{C}_{\mathbb{B}}$; its vanishing is the algebraic condition that decides the zero divisors, and it is never read here as a length.</p>
+<p>The quaternion conjugate is denoted $\tilde{Q}^{\natural}$, the complex conjugate is denoted $\bar{\tilde{Q}}$, the Hermitian conjugate is denoted $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is denoted $\tilde{Q}^\flat = -\tilde{Q}^{*}$. The product $\tilde{Q}\tilde{Q}^{\natural}$ lies in the scalar line $\mathbb{C}_{\mathbb{B}}$; its vanishing is the algebraic condition that decides the zero divisors, and it is never read here as a length.</p>
 <h2 id="definition-and-criterion">Definition and Criterion</h2>
 <h3 id="definition">Definition</h3>
 <p>A biquaternion $\tilde{Q}$ is a <strong>zero divisor</strong> if it is <strong>nonzero</strong> and there exists a <strong>nonzero</strong> biquaternion $\tilde{R}$ such that</p>
@@ -67,41 +67,41 @@ $$</p>
 $$</p>
 <p>The requirement that both $\tilde{Q}$ and $\tilde{R}$ be nonzero is essential. In particular, the element $\tilde{Q} = 0$ is <strong>not</strong> a zero divisor, even though $0 \circ \tilde{R} = 0$ for any $\tilde{R}$.</p>
 <h3 id="criterion">Criterion</h3>
-<p><strong>Theorem.</strong> A nonzero biquaternion $\tilde{Q}$ is a zero divisor if and only if the product $\tilde{Q}\bar{\tilde{Q}}$ vanishes:</p>
+<p><strong>Theorem.</strong> A nonzero biquaternion $\tilde{Q}$ is a zero divisor if and only if the product $\tilde{Q}\tilde{Q}^{\natural}$ vanishes:</p>
 <p>$$
-\tilde{Q}\bar{\tilde{Q}} = 0.
+\tilde{Q}\tilde{Q}^{\natural} = 0.
 $$</p>
-<p><strong>Proof.</strong> Suppose $\tilde{Q} \neq 0$ and $\tilde{Q}\bar{\tilde{Q}} = 0$. Then $\tilde{Q} \bar{\tilde{Q}} = 0$. Since $\tilde{Q} \neq 0$, we also have $\bar{\tilde{Q}} \neq 0$. So $\tilde{R} = \bar{\tilde{Q}}$ is a nonzero biquaternion with $\tilde{Q} \circ \tilde{R} = 0$. Hence $\tilde{Q}$ is a zero divisor.</p>
-<p>Conversely, suppose $\tilde{Q}$ is a zero divisor: there exists $\tilde{R} \neq 0$ with $\tilde{Q} \circ \tilde{R} = 0$. If $\tilde{Q}\bar{\tilde{Q}} \neq 0$, then $\tilde{Q}$ is invertible by the invertibility criterion, and multiplying $\tilde{Q} \circ \tilde{R} = 0$ on the left by $\tilde{Q}^{-1}$ gives $\tilde{R} = 0$, contradicting $\tilde{R} \neq 0$. So $\tilde{Q}\bar{\tilde{Q}} = 0$.</p>
+<p><strong>Proof.</strong> Suppose $\tilde{Q} \neq 0$ and $\tilde{Q}\tilde{Q}^{\natural} = 0$. Then $\tilde{Q} \tilde{Q}^{\natural} = 0$. Since $\tilde{Q} \neq 0$, we also have $\tilde{Q}^{\natural} \neq 0$. So $\tilde{R} = \tilde{Q}^{\natural}$ is a nonzero biquaternion with $\tilde{Q} \circ \tilde{R} = 0$. Hence $\tilde{Q}$ is a zero divisor.</p>
+<p>Conversely, suppose $\tilde{Q}$ is a zero divisor: there exists $\tilde{R} \neq 0$ with $\tilde{Q} \circ \tilde{R} = 0$. If $\tilde{Q}\tilde{Q}^{\natural} \neq 0$, then $\tilde{Q}$ is invertible by the invertibility criterion, and multiplying $\tilde{Q} \circ \tilde{R} = 0$ on the left by $\tilde{Q}^{-1}$ gives $\tilde{R} = 0$, contradicting $\tilde{R} \neq 0$. So $\tilde{Q}\tilde{Q}^{\natural} = 0$.</p>
 <h3 id="the-three-way-classification">The Three-Way Classification</h3>
 <p>Combining the criterion for invertibility from the preceding article with the criterion for zero divisors, the elements of $\mathbb{B}$ are partitioned into three classes:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Condition on $\tilde{Q}\bar{\tilde{Q}}$</th>
+<th>Condition on $\tilde{Q}\tilde{Q}^{\natural}$</th>
 <th>Condition on $\tilde{Q}$</th>
 <th>Conclusion</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde{Q}\bar{\tilde{Q}} \neq 0$</td>
+<td>$\tilde{Q}\tilde{Q}^{\natural} \neq 0$</td>
 <td>(automatically $\tilde{Q} \neq 0$)</td>
 <td>$\tilde{Q}$ is invertible</td>
 </tr>
 <tr>
-<td>$\tilde{Q}\bar{\tilde{Q}} = 0$</td>
+<td>$\tilde{Q}\tilde{Q}^{\natural} = 0$</td>
 <td>$\tilde{Q} = 0$</td>
 <td>$\tilde{Q}$ is the zero element</td>
 </tr>
 <tr>
-<td>$\tilde{Q}\bar{\tilde{Q}} = 0$</td>
+<td>$\tilde{Q}\tilde{Q}^{\natural} = 0$</td>
 <td>$\tilde{Q} \neq 0$</td>
 <td>$\tilde{Q}$ is a zero divisor</td>
 </tr>
 </tbody>
 </table></div>
-<p>The zero divisors are exactly the nonzero elements on which $\tilde{Q}\bar{\tilde{Q}}$ vanishes.</p>
+<p>The zero divisors are exactly the nonzero elements on which $\tilde{Q}\tilde{Q}^{\natural}$ vanishes.</p>
 <h3 id="the-algebra-is-not-a-division-algebra">The Algebra Is Not a Division Algebra</h3>
 <p>By definition, a <strong>division algebra</strong> is an algebra in which every nonzero element is invertible. For the finite-dimensional algebra $\mathbb{B}$, this is equivalent to containing no zero divisors: if every nonzero element is invertible, then no nonzero element can annihilate another; and conversely, if there are no zero divisors, then by the criterion above every nonzero element has an inverse.</p>
 <p>The biquaternion algebra $\mathbb{B}$ contains zero divisors, so it is <strong>not</strong> a division algebra. This is in contrast to the Frobenius theorem, which states that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$.</p>
@@ -121,14 +121,14 @@ $$</p>
 <p>The non-pure case is studied in the section on non-pure zero divisors below.</p>
 <h3 id="why-the-scalar-part-is-the-right-invariant">Why the Scalar Part Is the Right Invariant</h3>
 <p>The scalar part is the natural invariant because the scalar imaginary $i$ is central in $\mathbb{B}$: the scalar part is the component of the element in the central direction, and the vector part is the component perpendicular to it. The two cases of zero divisors — pure and non-pure — are distinguished by whether this central component vanishes.</p>
-<p>In the <strong>pure case</strong>, the product $\tilde{Q}\bar{\tilde{Q}}$ reduces to</p>
+<p>In the <strong>pure case</strong>, the product $\tilde{Q}\tilde{Q}^{\natural}$ reduces to</p>
 <p>$$
-\tilde{Q}\bar{\tilde{Q}} = (\mathbf{Q}, \mathbf{Q}) = Q_1^2 + Q_2^2 + Q_3^2,
+\tilde{Q}\tilde{Q}^{\natural} = (\mathbf{Q}, \mathbf{Q}) = Q_1^2 + Q_2^2 + Q_3^2,
 $$</p>
-<p>a complex scalar. The vanishing of $\tilde{Q}\bar{\tilde{Q}}$ is the condition $(\mathbf{Q}, \mathbf{Q}) = 0$, which has nontrivial complex solutions (the nilpotents).</p>
-<p>In the <strong>non-pure case</strong>, the product $\tilde{Q}\bar{\tilde{Q}}$ contains the scalar contribution $Q_0^2$ in addition to the vector contribution:</p>
+<p>a complex scalar. The vanishing of $\tilde{Q}\tilde{Q}^{\natural}$ is the condition $(\mathbf{Q}, \mathbf{Q}) = 0$, which has nontrivial complex solutions (the nilpotents).</p>
+<p>In the <strong>non-pure case</strong>, the product $\tilde{Q}\tilde{Q}^{\natural}$ contains the scalar contribution $Q_0^2$ in addition to the vector contribution:</p>
 <p>$$
-\tilde{Q}\bar{\tilde{Q}} = Q_0^2 + (\mathbf{Q}, \mathbf{Q}),
+\tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + (\mathbf{Q}, \mathbf{Q}),
 $$</p>
 <p>and the vanishing condition allows the scalar and vector contributions to cancel. The resulting solutions are the complex multiples of the idempotents.</p>
 <p>The two cases are structurally distinct, and they lead to two different families of zero divisors.</p>
@@ -144,16 +144,16 @@ $$</p>
 $$</p>
 <p>The vector part vanishes, because $\epsilon_{jkl}$ is antisymmetric in $j, k$ while $Q_j Q_k$ is symmetric. Therefore</p>
 <p>$$
-\tilde{Q}^2 = -(Q_1^2 + Q_2^2 + Q_3^2) e_0 = -\tilde{Q}\bar{\tilde{Q}} e_0.
+\tilde{Q}^2 = -(Q_1^2 + Q_2^2 + Q_3^2) e_0 = -\tilde{Q}\tilde{Q}^{\natural} e_0.
 $$</p>
 <h3 id="the-criterion">The Criterion</h3>
 <p><strong>Theorem.</strong> The following three conditions on a nonzero pure biquaternion $\tilde{Q}$ are equivalent:</p>
 <ol>
 <li>$\tilde{Q}$ is a zero divisor.</li>
-<li>$\tilde{Q}\bar{\tilde{Q}} = 0$, i.e. $Q_1^2 + Q_2^2 + Q_3^2 = 0$.</li>
+<li>$\tilde{Q}\tilde{Q}^{\natural} = 0$, i.e. $Q_1^2 + Q_2^2 + Q_3^2 = 0$.</li>
 <li>$\tilde{Q}^2 = 0$.</li>
 </ol>
-<p><strong>Proof.</strong> The equivalence of (1) and (2) is the general criterion for zero divisors. The equivalence of (2) and (3) follows from the computation of the square above: $\tilde{Q}^2 = -\tilde{Q}\bar{\tilde{Q}} e_0$ vanishes if and only if $\tilde{Q}\bar{\tilde{Q}} = 0$.</p>
+<p><strong>Proof.</strong> The equivalence of (1) and (2) is the general criterion for zero divisors. The equivalence of (2) and (3) follows from the computation of the square above: $\tilde{Q}^2 = -\tilde{Q}\tilde{Q}^{\natural} e_0$ vanishes if and only if $\tilde{Q}\tilde{Q}^{\natural} = 0$.</p>
 <p>A biquaternion satisfying $\tilde{Q}^2 = 0$ is called a <strong>nilpotent</strong>, so in the pure case, the zero divisors are exactly the nonzero nilpotents.</p>
 <h3 id="properties">Properties</h3>
 <p>A pure zero divisor $\tilde{Q}$ has the following properties.</p>
@@ -191,11 +191,11 @@ $$</p>
 $$</p>
 <p>where $(\mathbf{Q}, \mathbf{Q}) = Q_1^2 + Q_2^2 + Q_3^2$.</p>
 <h3 id="the-relation-to-the-scalar-part">The Relation to the Scalar Part</h3>
-<p>The product $\tilde{Q}\bar{\tilde{Q}}$ is</p>
+<p>The product $\tilde{Q}\tilde{Q}^{\natural}$ is</p>
 <p>$$
-\tilde{Q}\bar{\tilde{Q}} = Q_0^2 + (\mathbf{Q}, \mathbf{Q}).
+\tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + (\mathbf{Q}, \mathbf{Q}).
 $$</p>
-<p>So the condition $\tilde{Q}\bar{\tilde{Q}} = 0$ is equivalent to</p>
+<p>So the condition $\tilde{Q}\tilde{Q}^{\natural} = 0$ is equivalent to</p>
 <p>$$
 (\mathbf{Q}, \mathbf{Q}) = -Q_0^2.
 $$</p>
@@ -231,7 +231,7 @@ $$</p>
 <h2 id="the-roots-of-minus-one">The Roots of Minus One</h2>
 <p>The non-pure zero divisors are complex multiples of idempotents, and the idempotents are classified by the roots of $-1$. Those roots are classified in <em>Biquaternion Square Roots of Minus One, Zero and Plus One</em>, and the resulting classification of the idempotents is the subject of <em>Biquaternion Idempotents and Projections</em>; neither is restated here.</p>
 <h2 id="distribution-of-the-zero-divisors">Distribution of the Zero Divisors</h2>
-<p>A zero divisor is an element on which $\tilde{Q}\bar{\tilde{Q}}$ vanishes, so which subspaces contain zero divisors is the algebraic question of where that polynomial vanishes. Algebraically: $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain none, since $\tilde{Q}\bar{\tilde{Q}}$ is a sum of squares of real coefficients there and vanishes only at $\tilde{Q}=0$; $\mathrm{Vect}(\mathbb{B})$ and $i\mathbb{H}_{\mathbb{B}}$ contain the nilpotents, on which it vanishes for nonzero $\tilde{Q}$; and $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a null cone.</p>
+<p>A zero divisor is an element on which $\tilde{Q}\tilde{Q}^{\natural}$ vanishes, so which subspaces contain zero divisors is the algebraic question of where that polynomial vanishes. Algebraically: $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain none, since $\tilde{Q}\tilde{Q}^{\natural}$ is a sum of squares of real coefficients there and vanishes only at $\tilde{Q}=0$; $\mathrm{Vect}(\mathbb{B})$ and $i\mathbb{H}_{\mathbb{B}}$ contain the nilpotents, on which it vanishes for nonzero $\tilde{Q}$; and $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a null cone.</p>
 <h2 id="structure-of-the-zero-divisors">Structure of the Zero Divisors</h2>
 <p>We now summarize the structure of the zero divisors of $\mathbb{B}$ in terms of the pure/non-pure distinction.</p>
 <h3 id="the-pure-case_1">The Pure Case</h3>
@@ -241,7 +241,7 @@ Q_1^2 + Q_2^2 + Q_3^2 = 0,
 $$</p>
 <p>and in that case $\tilde{Q}^2 = 0$. So the pure zero divisors are exactly the nonzero nilpotents. They form the zero divisors whose scalar part vanishes.</p>
 <h3 id="the-non-pure-case_1">The Non-Pure Case</h3>
-<p>A non-pure biquaternion $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_0 \neq 0$ is a zero divisor if and only if $\tilde{Q}\bar{\tilde{Q}} = 0$, and in that case</p>
+<p>A non-pure biquaternion $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_0 \neq 0$ is a zero divisor if and only if $\tilde{Q}\tilde{Q}^{\natural} = 0$, and in that case</p>
 <p>$$
 \tilde{Q}^2 = 2 Q_0 \tilde{Q}.
 $$</p>
@@ -299,7 +299,7 @@ $$</p>
 <h2 id="the-zero-divisor-set">The Zero Divisor Set</h2>
 <p>The zero divisor set $\mathcal{Z} \subset \mathbb{B}$ is</p>
 <p>$$
-\mathcal{Z} = \{\tilde{Q} \in \mathbb{B} : \tilde{Q} \neq 0, \; \tilde{Q}\bar{\tilde{Q}} = 0\}.
+\mathcal{Z} = \{\tilde{Q} \in \mathbb{B} : \tilde{Q} \neq 0, \; \tilde{Q}\tilde{Q}^{\natural} = 0\}.
 $$</p>
 <p>It is the complement of the invertible elements in the complement of the zero element:</p>
 <p>$$
@@ -307,11 +307,11 @@ $$</p>
 $$</p>
 <p><strong>Basic properties.</strong></p>
 <ul>
-<li>$\mathcal{Z}$ is a cone away from the origin: if $\tilde{Q} \in \mathcal{Z}$ and $\alpha \in \mathbb{C} \setminus \{0\}$, then $\alpha \tilde{Q} \in \mathcal{Z}$, because $(\alpha \tilde{Q})\overline{(\alpha \tilde{Q})} = \alpha^2 \tilde{Q}\bar{\tilde{Q}} = 0$.</li>
+<li>$\mathcal{Z}$ is a cone away from the origin: if $\tilde{Q} \in \mathcal{Z}$ and $\alpha \in \mathbb{C} \setminus \{0\}$, then $\alpha \tilde{Q} \in \mathcal{Z}$, because $(\alpha \tilde{Q})((\alpha \tilde{Q}))^{\natural} = \alpha^2 \tilde{Q}\tilde{Q}^{\natural} = 0$.</li>
 </ul>
-<p><strong>Dimension.</strong> The zero divisor set has <strong>real dimension $6$</strong> (equivalently, <strong>complex dimension $3$</strong> as a complex algebraic cone in $\mathbb{C}^4$). The reasoning is the following. The vanishing $\tilde{Q}\bar{\tilde{Q}} = 0$ is a single complex-valued polynomial equation in the four complex coefficients $(Q_0, Q_1, Q_2, Q_3)$, or equivalently two real equations in the eight real coordinates. The solution set of $\tilde{Q}\bar{\tilde{Q}} = 0$ is therefore a <strong>complex hypersurface</strong> in $\mathbb{C}^4$ of complex dimension $4 - 1 = 3$, hence real dimension $2 \cdot 3 = 6$.</p>
+<p><strong>Dimension.</strong> The zero divisor set has <strong>real dimension $6$</strong> (equivalently, <strong>complex dimension $3$</strong> as a complex algebraic cone in $\mathbb{C}^4$). The reasoning is the following. The vanishing $\tilde{Q}\tilde{Q}^{\natural} = 0$ is a single complex-valued polynomial equation in the four complex coefficients $(Q_0, Q_1, Q_2, Q_3)$, or equivalently two real equations in the eight real coordinates. The solution set of $\tilde{Q}\tilde{Q}^{\natural} = 0$ is therefore a <strong>complex hypersurface</strong> in $\mathbb{C}^4$ of complex dimension $4 - 1 = 3$, hence real dimension $2 \cdot 3 = 6$.</p>
 <h2 id="summary">Summary</h2>
-<p>The zero divisors of the biquaternion algebra are the nonzero elements on which $\tilde{Q}\bar{\tilde{Q}}$ vanishes. They split into two families:</p>
+<p>The zero divisors of the biquaternion algebra are the nonzero elements on which $\tilde{Q}\tilde{Q}^{\natural}$ vanishes. They split into two families:</p>
 <ul>
 <li>The <strong>pure zero divisors</strong>, which have vanishing scalar part and satisfy $Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the nonzero nilpotents: their square is zero, and their annihilator contains themselves. They form a complex cone of real dimension $4$.</li>
 <li>The <strong>non-pure zero divisors</strong>, which have nonzero scalar part and satisfy $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the nonzero complex multiples of the nontrivial idempotents of $\mathbb{B}$: their square is $2 Q_0 \tilde{Q}$, and their annihilator contains $\tilde{Q} - 2 Q_0 e_0$. They form a complex cone of real dimension $6$.</li>
@@ -341,7 +341,7 @@ $$</p>
 <td>Complex coefficient</td>
 </tr>
 <tr>
-<td>$$\tilde{Q}\bar{\tilde{Q}} = 0$$</td>
+<td>$$\tilde{Q}\tilde{Q}^{\natural} = 0$$</td>
 <td>Algebraic criterion for a zero divisor</td>
 </tr>
 <tr>

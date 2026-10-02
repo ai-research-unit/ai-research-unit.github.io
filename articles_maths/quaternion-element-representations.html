@@ -80,7 +80,7 @@ $$</p>
 <p>Because $\mathbb{H}$ is not commutative, there are two distinct regular representations:</p>
 <p><strong>Left regular representation.</strong> $\rho_L(\tilde q) r = \tilde q r$.</p>
 <p><strong>Right regular representation.</strong> $\rho_R(\tilde q) r = r \tilde q$. This is a right action rather than a left one: $\rho_R(\tilde q) \rho_R(\tilde q') = \rho_R(\tilde q' \tilde q)$.</p>
-<p>Composing the right action with the anti-automorphism $\tilde q \mapsto \bar{\tilde q}$ gives a left representation $\rho_R(\tilde q) r = r \bar{\tilde q}$, and the map $r \mapsto \bar{r}$ intertwines it with $\rho_L$, so the two regular representations are isomorphic.</p>
+<p>Composing the right action with the anti-automorphism $\tilde q \mapsto \tilde{q}^{\natural}$ gives a left representation $\rho_R(\tilde q) r = r \tilde{q}^{\natural}$, and the map $r \mapsto \bar{r}$ intertwines it with $\rho_L$, so the two regular representations are isomorphic.</p>
 <h2 id="representations-of-the-algebra">Representations of the Algebra</h2>
 <h3 id="the-classification-theorem">The Classification Theorem</h3>
 <p><strong>Theorem.</strong> Let $F$ be a field of characteristic not two over which $\mathbb{H}$ is a division algebra. Every finite-dimensional representation of $\mathbb{H}$ over $F$ is isomorphic to a direct sum of copies of the regular representation:</p>
@@ -177,13 +177,13 @@ $$</p>
 <p>So $\mathbb{H}$ is a <strong>semisimple</strong> algebra: every representation is a direct sum of irreducibles, and the indecomposables coincide with the irreducibles. This is a general feature of simple algebras over fields, and it is the reason the representation theory is so simple.</p>
 <h2 id="the-dual-representation">The Dual Representation</h2>
 <h3 id="definition_4">Definition</h3>
-<p>The <strong>dual</strong> (or contragredient) representation of a representation $\rho$ on $V$ is the representation $\rho^*$ on the dual space $V^* = \operatorname{Hom}_F(V, F)$ defined by</p>
+<p>The <strong>dual</strong> (or contragredient) representation of a representation $\rho$ on $V$ is the representation $\bar{\rho}$ on the dual space $V^* = \operatorname{Hom}_F(V, F)$ defined by</p>
 <p>$$
-(\rho^*(\tilde q) f)(v) = f(\rho(\tilde q) v), \qquad \tilde q \in \mathbb{H}, \; f \in V^*, \; v \in V.
+(\bar{\rho}(\tilde q) f)(v) = f(\rho(\tilde q) v), \qquad \tilde q \in \mathbb{H}, \; f \in V^*, \; v \in V.
 $$</p>
 <h3 id="basic-properties_1">Basic Properties</h3>
 <p><strong>Duality is an involution.</strong> $(V^*)^* \cong V$ for finite-dimensional $V$.</p>
-<p><strong>Duality is exact.</strong> It preserves direct sums: $(V \oplus W)^* \cong V^* \oplus W^*$.</p>
+<p><strong>Duality is exact.</strong> It preserves direct sums: $(V \oplus W)^* \cong V^* \oplus \bar{W}$.</p>
 <p><strong>The dual of an irreducible is irreducible.</strong> $\rho_{\mathrm{reg}}^* \cong \rho_{\mathrm{reg}}$.</p>
 <p><strong>The dual of the regular representation is the regular representation.</strong> $\rho_{\mathrm{reg}}^* \cong \rho_{\mathrm{reg}}$.</p>
 <h3 id="the-pairing">The Pairing</h3>
@@ -193,7 +193,7 @@ $$</p>
 $$</p>
 <p>satisfies</p>
 <p>$$
-\langle \rho^*(\tilde q) f, v \rangle = \langle f, \rho(\tilde q) v \rangle.
+\langle \bar{\rho}(\tilde q) f, v \rangle = \langle f, \rho(\tilde q) v \rangle.
 $$</p>
 <p>This is the definition of the dual representation, written as a pairing.</p>
 <h2 id="tensor-products">Tensor Products</h2>

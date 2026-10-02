@@ -55,12 +55,12 @@
 <p>A classical system whose parameters are cycled slowly acquires, besides the phase it would have from its own dynamics, an extra angle that depends only on the cycle. This is <strong>Hannay's angle</strong>, found by Hannay in 1985 as the classical counterpart of Berry's adiabatic phase. The setting is a Hamiltonian written in action-angle variables, $H(\theta,I;R)$, in which $R$ is a set of parameters that vary slowly and return to their starting values. The action $I$ is an adiabatic invariant; the angle $\theta$ advances with the instantaneous frequency and, after a closed cycle of $R$, carries an additional shift that is a functional of the cycle alone. Hannay's angle is the <strong>classical geometric phase</strong>.</p>
 <p>This article develops the subject in the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The algebra enters through the simplest nontrivial adiabatic classical system, the classical spin on its coadjoint orbit. Its state is a real pure quaternion $\tilde S$ with $N(\tilde S)=\mathbf S^2$, its dynamics is the rotor flow of the companion articles, and the adiabatic transport of the spin direction defines a rotor whose <strong>holonomy</strong> is the Hannay angle. The rotor description makes the geometry of the effect explicit:</p>
 <ol>
-<li>The spin direction is the image of a fixed axis under a rotor, $\hat{\mathbf n}=\tilde Re_3\bar{\tilde R}$.</li>
+<li>The spin direction is the image of a fixed axis under a rotor, $\hat{\mathbf n}=\tilde Re_3\tilde R^{\natural}$.</li>
 <li>Adiabatic following chooses a rotor field over the sphere of directions; the Hannay angle is minus the accumulated twist of that rotor about the direction, equivalently the holonomy of the transport.</li>
 <li>For a cycle of direction that subtends a solid angle $\Omega$, the twist accumulates to $-\Omega$ and the Hannay angle is $\Omega$; the spinor holonomy is half of it, by the double cover.</li>
 </ol>
 <p>The article is classical. The relation to the quantum Berry phase is used as the standard statement $-\partial\gamma/\partial I$ relating the two phases, and the Berry phase itself is not developed; the companion article on the Berry phase owns the quantum side. No state space, no measurement, and no commutator appear.</p>
-<p>The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; $i$ is central, $i^2=-1$; $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The rotor is $\tilde R\in\mathbb{H}_{\mathbb{B}}$ with $N(\tilde R)=e_0$, acting by $\tilde{Q}\mapsto\tilde R\tilde{Q}\bar{\tilde R}$; the body-frame angular velocity is $\tilde\omega_b=+2\bar{\tilde R}\dot{\tilde R}$, the logarithmic derivative that makes the body axes turn by $d\tilde e_k/dt=\boldsymbol\omega\times\tilde e_k$ in the corpus rotation convention. The coadjoint orbit of the spin is the level set $N(\tilde S)=S^2$ of the biquaternion norm, with the Poisson bracket $\{S_i,S_j\}=\varepsilon_{ijk}S_k$.</p>
+<p>The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; $i$ is central, $i^2=-1$; $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The rotor is $\tilde R\in\mathbb{H}_{\mathbb{B}}$ with $N(\tilde R)=e_0$, acting by $\tilde{Q}\mapsto\tilde R\tilde{Q}\tilde R^{\natural}$; the body-frame angular velocity is $\tilde\omega_b=+2\tilde R^{\natural}\dot{\tilde R}$, the logarithmic derivative that makes the body axes turn by $d\tilde e_k/dt=\boldsymbol\omega\times\tilde e_k$ in the corpus rotation convention. The coadjoint orbit of the spin is the level set $N(\tilde S)=S^2$ of the biquaternion norm, with the Poisson bracket $\{S_i,S_j\}=\varepsilon_{ijk}S_k$.</p>
 <p>The companion articles are:
 - Companion article <em>Rigid-Body Dynamics and the Biquaternion Rotor</em>, for the rotor, the angular velocity, and the Euler-angle parametrisation.
 - Companion article <em>Similitudes Between Biquaternion Rotors and Hamiltonian Flow</em>, for the rotor flow and the coadjoint orbit.
@@ -110,7 +110,7 @@ $$</p>
 $$</p>
 <p>and the orbit is the level set $N(\tilde S)=S^2$, a sphere of radius $S$. The symplectic form is the Souriau form of the companion article, and the Poisson bracket is $\{S_i,S_j\}=\varepsilon_{ijk}S_k$. A Hamiltonian linear in the spin,</p>
 <p>$$
-H=\boldsymbol\omega\cdot\mathbf S=\tfrac12\,\mathrm{Sc}\!\left(\bar{\tilde\omega}\,\tilde S+\bar{\tilde S}\,\tilde\omega\right),
+H=\boldsymbol\omega\cdot\mathbf S=\tfrac12\,\mathrm{Sc}\!\left(\tilde\omega^{\natural}\,\tilde S+\tilde S^{\natural}\,\tilde\omega\right),
 $$</p>
 <p>generates the flow</p>
 <p>$$
@@ -120,7 +120,7 @@ $$</p>
 <h3 id="the-slow-parameter-and-the-rotor">The Slow Parameter and the Rotor</h3>
 <p>Let the field direction vary slowly: $\boldsymbol\omega(t)=\omega_0\hat{\mathbf n}(\epsilon t)$ with $|\boldsymbol\omega|=\omega_0$ constant and $\epsilon\ll1$. The spin follows the direction adiabatically, and the direction defines a rotor field</p>
 <p>$$
-\hat{\mathbf n}=\tilde R\,e_3\,\bar{\tilde R},\qquad \tilde R\in\mathbb{H}_{\mathbb{B}},\quad N(\tilde R)=e_0 ,
+\hat{\mathbf n}=\tilde R\,e_3\,\tilde R^{\natural},\qquad \tilde R\in\mathbb{H}_{\mathbb{B}},\quad N(\tilde R)=e_0 ,
 $$</p>
 <p>defined up to the rotations about $e_3$ (the one-parameter subgroup generated by $e_3$). This freedom is exactly the freedom of a frame about the direction, and the Hannay angle is the statement of how it is fixed by the adiabatic transport.</p>
 <p>The <strong>adiabatic (geodesic) rotor</strong> is the rotor that carries $e_3$ to $\hat{\mathbf n}$ by the shortest rotation, the one of least angle; the remaining freedom of rotating about $\hat{\mathbf n}$ is fixed by that requirement, and the residual turn about the direction relative to parallel transport is what the Hannay angle measures. For a direction of polar angle $\theta_0$ and azimuth $\phi$,</p>
@@ -129,10 +129,10 @@ $$</p>
 \qquad
 \hat{\mathbf m}=\frac{e_3\times\hat{\mathbf n}}{\sin\theta_0}=-\sin\phi\,e_1+\cos\phi\,e_2 ,
 $$</p>
-<p>which satisfies $\tilde R_ge_3\bar{\tilde R}_g=\hat{\mathbf n}$ directly.</p>
+<p>which satisfies $\tilde R_ge_3\tilde R^{\natural}_g=\hat{\mathbf n}$ directly.</p>
 <h2 id="the-rotor-holonomy-and-the-solid-angle">The Rotor Holonomy and the Solid Angle</h2>
 <h3 id="the-twist-of-the-geodesic-frame">The Twist of the Geodesic Frame</h3>
-<p>The body-frame angular velocity of the geodesic rotor is $\tilde\omega_b=+2\bar{\tilde R}_g\dot{\tilde R}_g$. Along a cycle of constant polar angle $\theta_0$ with azimuth $\phi(t)$ increasing, a direct computation gives</p>
+<p>The body-frame angular velocity of the geodesic rotor is $\tilde\omega_b=+2\tilde R^{\natural}_g\dot{\tilde R}_g$. Along a cycle of constant polar angle $\theta_0$ with azimuth $\phi(t)$ increasing, a direct computation gives</p>
 <p>$$
 \tilde\omega_b=-\dot\phi\left(\sin\theta_0\cos\phi\,e_1+\sin\theta_0\sin\phi\,e_2+(1-\cos\theta_0)\,e_3\right),
 $$</p>
@@ -154,9 +154,9 @@ $$</p>
 $$</p>
 <p>around the loop. The curvature of this connection is $d\mathcal A=\sin\theta\,d\theta\wedge d\phi$, the area form of the unit sphere, so the holonomy equals the enclosed area, the solid angle — by Stokes' theorem. This is the classical geometric phase written as a holonomy, and it is independent of the speed of the cycle and of the details of the path, depending only on the enclosed area.</p>
 <h3 id="the-body-frame-reading-of-the-connection">The Body-Frame Reading of the Connection</h3>
-<p>The connection one-form is visible in the rotor itself. For a rotor field $\tilde R(t)$ with body-frame angular velocity $\tilde\omega_b=+2\bar{\tilde R}\dot{\tilde R}$, the algebra-valued one-form</p>
+<p>The connection one-form is visible in the rotor itself. For a rotor field $\tilde R(t)$ with body-frame angular velocity $\tilde\omega_b=+2\tilde R^{\natural}\dot{\tilde R}$, the algebra-valued one-form</p>
 <p>$$
-\bar{\tilde R}\,d\tilde R=+\tfrac12\,\tilde\omega_b\,dt
+\tilde R^{\natural}\,d\tilde R=+\tfrac12\,\tilde\omega_b\,dt
 $$</p>
 <p>is the pullback of the connection, and the Hannay angle is the integral of its component along the generator that stabilises the direction. Writing $\tilde\omega_b=\omega_b^{\parallel}\hat{\mathbf n}+\tilde\omega_b^{\perp}$ with $\tilde\omega_b^{\perp}$ the part orthogonal to $\hat{\mathbf n}$, the angle is $-\int\omega_b^{\parallel}dt$; the orthogonal part is the precession that changes the direction and carries no phase. This is exactly the rigid-body statement of the preceding article: the twist of a transported frame about its own axis is the component of the body angular velocity along that axis, and the Hannay angle is minus the accumulated twist, because the transported frame is the one that is carried and the geodesic frame is the one that is referred to the direction. The parallel-transport prescription — set the twist to zero and measure the holonomy — is the same prescription that makes the transport of a rigid body or a swinging plane geometrically meaningful.</p>
 <h3 id="the-sign-and-the-orientation">The Sign and the Orientation</h3>
@@ -234,7 +234,7 @@ $$</p>
 <ul>
 <li>Action-angle variables $(\theta,I)$ with slowly cycled parameters $R$ have an adiabatic invariant $I$ and an angle $\theta$ that acquires, after a closed cycle, the Hannay angle $\Delta\theta_k=-\partial_k\oint\mathcal A_\mu dR^\mu$, the action-derivative of the Berry phase.</li>
 <li>The classical spin is a point of the coadjoint orbit $N(\tilde S)=S^2$, with $H=\boldsymbol\omega\cdot\mathbf S$ generating the rotor flow $\dot{\mathbf S}=\boldsymbol\omega\times\mathbf S$.</li>
-<li>The direction $\hat{\mathbf n}=\tilde Re_3\bar{\tilde R}$ defines a rotor field; the geodesic (shortest) rotor is $\tilde R_g=\cos\frac{\theta_0}{2}+\sin\frac{\theta_0}{2}\hat{\mathbf m}$ with $\hat{\mathbf m}$ in the plane perpendicular to $e_3$, and its body-frame twist about the direction is $\omega_b^{\parallel}=-(1-\cos\theta_0)\dot\phi$, so that the Hannay angle is $-\oint\omega_b^{\parallel}dt=\Omega$.</li>
+<li>The direction $\hat{\mathbf n}=\tilde Re_3\tilde R^{\natural}$ defines a rotor field; the geodesic (shortest) rotor is $\tilde R_g=\cos\frac{\theta_0}{2}+\sin\frac{\theta_0}{2}\hat{\mathbf m}$ with $\hat{\mathbf m}$ in the plane perpendicular to $e_3$, and its body-frame twist about the direction is $\omega_b^{\parallel}=-(1-\cos\theta_0)\dot\phi$, so that the Hannay angle is $-\oint\omega_b^{\parallel}dt=\Omega$.</li>
 <li>Integrating the twist around a cycle of solid angle $\Omega$ gives Hannay's angle $\Delta\theta_{\mathrm{Hannay}}=\Omega$, the holonomy of the connection $\mathcal A=(1-\cos\theta)d\phi$ with curvature $\sin\theta\,d\theta\wedge d\phi$.</li>
 <li>The exact rotating-frame solution of the uniformly precessing field gives the same $\Omega$.</li>
 <li>The spinor phase is half the classical angle, $\gamma=-\Omega/2$ for spin-$\tfrac12$, the factor $2$ being the double cover $\tilde R\to-\tilde R$; the general relation is $\gamma=-S\Omega$ and $\Delta\theta=-\partial_S\gamma=\Omega$.</li>
@@ -279,7 +279,7 @@ $$</p>
 <td>Classical spin on its coadjoint orbit</td>
 </tr>
 <tr>
-<td>$\hat{\mathbf n}=\tilde Re_3\bar{\tilde R}$</td>
+<td>$\hat{\mathbf n}=\tilde Re_3\tilde R^{\natural}$</td>
 <td>Slowly varying direction</td>
 </tr>
 <tr>
@@ -287,7 +287,7 @@ $$</p>
 <td>Geodesic (untwisted) rotor field</td>
 </tr>
 <tr>
-<td>$\tilde\omega_b=+2\bar{\tilde R}\dot{\tilde R}$</td>
+<td>$\tilde\omega_b=+2\tilde R^{\natural}\dot{\tilde R}$</td>
 <td>Body-frame angular velocity (twist)</td>
 </tr>
 <tr>

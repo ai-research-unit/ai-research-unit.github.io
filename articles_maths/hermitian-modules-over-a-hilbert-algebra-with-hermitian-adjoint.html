@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hermitian Clifford Modules with Hermitian Adjoint — Biquaternion Universe</title>
+  <title>Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -50,7 +50,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="hermitian-clifford-modules-with-hermitian-adjoint"><strong>Hermitian Clifford Modules with Hermitian Adjoint</strong></h1>
+        <h1 id="hermitian-modules-over-a-hilbert-algebra-with-hermitian-adjoint"><strong>Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A Clifford module is a module over a Clifford algebra, and the spinor module of <em>Spin Representations and Clifford Modules with Inner Conjugation</em> and <em>Spinors as Minimal Left Ideals with Inner Conjugation</em> is the archetype. When the algebra carries a dagger, a module can carry the corresponding Hermitian structure, and the two are tied together by a single axiom: the Clifford action must be <strong>self-adjoint</strong> with respect to the form, in the sense that</p>
 <p>$$
@@ -58,14 +58,14 @@
 $$</p>
 <p>for every $x$ in the algebra and every pair $s, t$ of elements of the module. This is the module-level form of the operator identity of <em>The Blade Form and the Hilbert Structure with Hermitian Adjoint</em>, and it is the condition that makes the Dirac operator formally self-adjoint, the condition that makes the Clifford action a representation by skew-adjoint operators on the vectors, and the condition under which the unitary slice acts by unitaries.</p>
 <p>This article treats the definition, the fundamental example of the algebra as a module over itself, the adjoint condition and the unitarity of the slice, the uniqueness of the invariant form on an irreducible module, and the criterion for positivity. The last point carries a correction that is easy to get wrong and is stated with an example: the naive restriction of the scalar form $\mathrm{Sc}(s^{\dagger}t)$ to a minimal left ideal is <strong>invariant</strong> but is <strong>totally isotropic</strong> in the split signatures, so the Hermitian structure on a general spinor module requires a spinor adjoint and not merely the restriction of the scalar form.</p>
-<p>The algebra and its dagger are <em>Involutive Clifford Algebras</em>; the operator on the algebra and the correction of its parameter rule are <em>The Hermitian Sandwich on a Clifford Algebra with Hermitian Adjoint</em>; the forms on the algebra and their non-degeneracy are <em>Hermitian Forms on a Clifford Algebra with Hermitian Adjoint</em>; the scalar forms and the adjoint of multiplication are <em>The Blade Form and the Hilbert Structure with Hermitian Adjoint</em>; positivity is <em>Positivity and the Hermitian Cone of a Clifford Algebra with Hermitian Adjoint</em>; the slice is <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>; the spinor module and its minimal-ideal description are <em>Spin Representations and Clifford Modules with Inner Conjugation</em> and <em>Spinors as Minimal Left Ideals with Inner Conjugation</em>; the operators built from the module are <em>Dirac Differential Operators</em>, <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em> and <em>Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</em>; and the biquaternion model is <em>Modules over the Biquaternion Algebra</em>.</p>
+<p>The algebra and its dagger are <em>Hilbert Algebras</em>; the operator on the algebra and the correction of its parameter rule are <em>The Hermitian Sandwich on a Hilbert Algebra with Hermitian Adjoint</em>; the forms on the algebra and their non-degeneracy are <em>Hermitian Forms on a Hilbert Algebra with Hermitian Adjoint</em>; the scalar forms and the adjoint of multiplication are <em>The Blade Form and the Hilbert Structure with Hermitian Adjoint</em>; positivity is <em>Positivity and the Hermitian Cone of a Hilbert Algebra with Hermitian Adjoint</em>; the slice is <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>; the spinor module and its minimal-ideal description are <em>Spin Representations and Clifford Modules with Inner Conjugation</em> and <em>Spinors as Minimal Left Ideals with Inner Conjugation</em>; the operators built from the module are <em>Dirac Differential Operators</em>, <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em> and <em>Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</em>; and the biquaternion model is <em>Modules over the Biquaternion Algebra</em>.</p>
 <h2 id="hermitian-clifford-modules">Hermitian Clifford Modules</h2>
 <h3 id="the-definition">The Definition</h3>
 <p><strong>Definition.</strong> Let $(S, +, \cdot)$ be a left module over $\mathrm{Cl}(V,q)$, with scalar field $A$ carrying an involution $\sigma$. A <strong>Hermitian form</strong> on $S$ is a map $(\cdot,\cdot) : S\times S \to A$ with</p>
 <p>$$
 (s, ta) = (s,t)a, \qquad (sa, t) = \sigma(a)(s,t) \quad \text{when } S \text{ is a right module}, \qquad (t,s) = \sigma\bigl((s,t)\bigr),
 $$</p>
-<p>and which is $A$-linear in the second argument and $\sigma$-semilinear in the first, in the convention of <em>Hermitian Forms on a Clifford Algebra with Hermitian Adjoint</em>. A <strong>Hermitian Clifford module</strong> is a Clifford module $S$ with a Hermitian form such that</p>
+<p>and which is $A$-linear in the second argument and $\sigma$-semilinear in the first, in the convention of <em>Hermitian Forms on a Hilbert Algebra with Hermitian Adjoint</em>. A <strong>Hermitian Clifford module</strong> is a Clifford module $S$ with a Hermitian form such that</p>
 <p>$$
 (x\cdot s, t) = (s, x^{\dagger}\cdot t) \qquad \text{for all } x \in \mathrm{Cl}(V,q), \ s, t \in S .
 $$</p>
@@ -83,7 +83,7 @@ $$</p>
 (x,y) = \mathrm{Sc}\bigl(x^{\dagger}y\bigr)
 $$</p>
 <p>is a Hermitian Clifford module. The form is $\sigma$-sesquilinear and Hermitian, it is non-degenerate, and it is positive definite exactly when the dagger is a positive involution, that is when the quadratic form is negative definite.</p>
-<p><strong>Proof.</strong> The form is Hermitian by the proposition of <em>Hermitian Forms on a Clifford Algebra with Hermitian Adjoint</em>. For the adjointness, left multiplication by $z$ gives</p>
+<p><strong>Proof.</strong> The form is Hermitian by the proposition of <em>Hermitian Forms on a Hilbert Algebra with Hermitian Adjoint</em>. For the adjointness, left multiplication by $z$ gives</p>
 <p>$$
 (z\cdot x, y) = \mathrm{Sc}\bigl((zx)^{\dagger}y\bigr) = \mathrm{Sc}\bigl(x^{\dagger}z^{\dagger}y\bigr) = \bigl(x, z^{\dagger}\cdot y\bigr),
 $$</p>

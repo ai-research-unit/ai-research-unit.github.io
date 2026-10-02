@@ -53,17 +53,17 @@
         <h1 id="split-biquaternion-anti-hermitian-subspace"><strong>Split-Biquaternion Anti-Hermitian Subspace</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ carries four linear involutions, and four of the resulting fixed spaces are its distinguished real subspaces. This article treats the <strong>anti-Hermitian subspace</strong> $\mathbb{M}_-$, the fixed space of anti-Hermitian conjugation: its definition, its basis, the failure of closure under multiplication, the symmetrized product that carries it into $\mathbb{M}_+$, the Lie structure it acquires under the commutator, the forms on it, its roots of $-1$, the action of the four involutions and its intersections with the other subspaces. Its complementary partner $\mathbb{M}_+$ is treated in <em>Split-Biquaternion Hermitian Subspace</em>; the comparative tables are in <em>Split-Biquaternion Relations Between Subspaces</em> and <em>Split-Biquaternion Involution Lattice</em>.</p>
-<p>The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article and the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra. Throughout, elements are written $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{D}$, and the conjugations are $\bar{\cdot}$ (quaternion), ${}^{*}$ (split complex), ${}^{\dagger} = {}^{*}\circ\bar{\cdot}$ (Hermitian) and ${}^{\flat} = -{}^{\dagger}$ (anti-Hermitian). The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, and the Hermitian form has scalar part $\sum_\mu (q_\mu^2 - q'^2_\mu)$.</p>
+<p>The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article and the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra. Throughout, elements are written $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{D}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, and the Hermitian form has scalar part $\sum_\mu (q_\mu^2 - q'^2_\mu)$.</p>
 <h2 id="definition-and-basis">Definition and Basis</h2>
 <p><strong>Definition.</strong> The <strong>anti-Hermitian subspace</strong> is the fixed space of anti-Hermitian conjugation,</p>
 <p>$$
-\mathbb{M}_- = \left\{ \tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \tilde{Q}^{\flat} = \tilde{Q} \right\}, \qquad \tilde{Q}^\flat = -\tilde{Q}^\dagger = -\bar{\tilde{Q}}^{*}.
+\mathbb{M}_- = \left\{ \tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \tilde{Q}^{\flat} = \tilde{Q} \right\}, \qquad \tilde{Q}^\flat = -\tilde{Q}^{*} = -\overline{\tilde{Q}^{\natural}}.
 $$</p>
 <h3 id="the-condition-in-coordinates">The Condition in Coordinates</h3>
-<p>Comparing $-\bar{\tilde{Q}}^{*} = \tilde{Q}$ coefficient by coefficient:</p>
+<p>Comparing $-\overline{\tilde{Q}^{\natural}} = \tilde{Q}$ coefficient by coefficient:</p>
 <ul>
-<li>the coefficient of $e_0$ gives $-Q_0^{*} = Q_0$, that is $Q_0^{*} = -Q_0$, so $Q_0 = j r_0$ is <strong>purely split-imaginary</strong>;</li>
-<li>the coefficient of $e_k$ gives $Q_k^{*} = Q_k$, so $Q_k = q_k$ is <strong>real</strong>.</li>
+<li>the coefficient of $e_0$ gives $-\bar{Q_0} = Q_0$, that is $\bar{Q_0} = -Q_0$, so $Q_0 = j r_0$ is <strong>purely split-imaginary</strong>;</li>
+<li>the coefficient of $e_k$ gives $\bar{Q_k} = Q_k$, so $Q_k = q_k$ is <strong>real</strong>.</li>
 </ul>
 <p>The subspace is therefore the set of elements with purely split-imaginary scalar part and real vector part,</p>
 <p>$$
@@ -133,7 +133,7 @@ $$</p>
 <p>The signatures of the Hermitian form on the two sectors are complementary, $(1,3)$ on $\mathbb{M}_+$ and $(3,1)$ on $\mathbb{M}_-$; the map $j$ of the correspondence above exchanges the two.</p>
 <h3 id="units-zero-divisors-and-nilpotents">Units, Zero Divisors and Nilpotents</h3>
 <p><strong>Theorem.</strong> For $\tilde{Q} \in \mathbb{M}_-$ the following are equivalent: $\tilde{Q}$ is a unit; $N(\tilde{Q}) \neq 0$; $\tilde{Q} \neq 0$. Hence $\mathbb{M}_-$ contains no zero divisor and no nilpotent.</p>
-<p><strong>Proof.</strong> The split-biquaternion norm is positive definite, vanishing only at the origin, so every nonzero element is a unit, with inverse $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$. A nilpotent $\tilde{Q} \neq 0$ would require $\tilde{Q}^2 = 0$, that is $r_0^2 = |\mathbf{u}|^2$ and $r_0\mathbf{u} = 0$, forcing $\tilde{Q} = 0$.</p>
+<p><strong>Proof.</strong> The split-biquaternion norm is positive definite, vanishing only at the origin, so every nonzero element is a unit, with inverse $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$. A nilpotent $\tilde{Q} \neq 0$ would require $\tilde{Q}^2 = 0$, that is $r_0^2 = |\mathbf{u}|^2$ and $r_0\mathbf{u} = 0$, forcing $\tilde{Q} = 0$.</p>
 <p>As on $\mathbb{M}_+$, the isotropic cone of the Hermitian form consists of units, not zero divisors: the two sectors together contain no zero divisor at all, and the zero divisors of $\mathbb{H}_{\mathbb{D}}$ are confined to the two four-dimensional subspaces $Z_+$ and $Z_-$ of <em>Split-Biquaternion Zero Divisors</em>.</p>
 <h3 id="the-roots-of-minus-one">The Roots of Minus One</h3>
 <p><strong>Theorem.</strong> The roots of $-1$ in $\mathbb{M}_-$ are the unit pure real quaternions,</p>
@@ -146,13 +146,13 @@ $$</p>
 <h2 id="the-image-in-the-two-halves">The Image in the Two Halves</h2>
 <p>Under the idempotent-decomposition isomorphism $\varphi : \mathbb{H}_{\mathbb{D}} \to \mathbb{H} \oplus \mathbb{H}$, an anti-Hermitian element $\tilde{Q} = j r_0 e_0 + \mathbf{u}$ has components</p>
 <p>$$
-\tilde{Q}_+ = r_0 + \mathbf{u}, \qquad \tilde{Q}_- = -r_0 + \mathbf{u} = -\overline{\tilde{Q}_+}.
+\tilde{Q}_+ = r_0 + \mathbf{u}, \qquad \tilde{Q}_- = -r_0 + \mathbf{u} = -(\tilde{Q}_+)^{\natural}.
 $$</p>
 <p>The image of $\mathbb{M}_-$ is therefore the set of <strong>anti-conjugate pairs</strong></p>
 <p>$$
-\varphi(\mathbb{M}_-) = \left\{ (h, -\bar{h}) : h \in \mathbb{H} \right\} \cong \mathbb{H},
+\varphi(\mathbb{M}_-) = \left\{ (h, -h^{\natural}) : h \in \mathbb{H} \right\} \cong \mathbb{H},
 $$</p>
-<p>a real four-dimensional subspace of $\mathbb{H} \oplus \mathbb{H}$. Together with the image $(h, \bar{h})$ of $\mathbb{M}_+$ it exhibits the Hermitian decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{M}_+ \oplus \mathbb{M}_-$ as the decomposition of a pair $(h_1, h_2)$ into its conjugate-symmetric and conjugate-antisymmetric parts.</p>
+<p>a real four-dimensional subspace of $\mathbb{H} \oplus \mathbb{H}$. Together with the image $(h, h^{\natural})$ of $\mathbb{M}_+$ it exhibits the Hermitian decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{M}_+ \oplus \mathbb{M}_-$ as the decomposition of a pair $(h_1, h_2)$ into its conjugate-symmetric and conjugate-antisymmetric parts.</p>
 <h2 id="the-four-involutions-on-it">The Four Involutions on It</h2>
 <p>In the basis $je_0, e_1, e_2, e_3$ the four involutions act diagonally:</p>
 <div class="table-scroll"><table>
@@ -165,17 +165,17 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\bar{\cdot}$</td>
+<td>${}^{\natural}$</td>
 <td>$\operatorname{diag}(1, -1, -1, -1)$</td>
 <td>negates the vector part</td>
 </tr>
 <tr>
-<td>${}^{*}$</td>
+<td>$\bar{\cdot}$</td>
 <td>$\operatorname{diag}(-1, 1, 1, 1)$</td>
 <td>negates the scalar part</td>
 </tr>
 <tr>
-<td>${}^{\dagger}$</td>
+<td>${}^{*}$</td>
 <td>$-\mathrm{id}$</td>
 <td>minus the identity</td>
 </tr>
@@ -224,9 +224,9 @@ $$</p>
 <h2 id="the-analysis-on-the-anti-hermitian-subspace">The Analysis on the Anti-Hermitian Subspace</h2>
 <p>The anti-Hermitian subspace is not a subalgebra, so, like the Hermitian subspace, it carries no intrinsic multiplicative function theory; the analysis on it is the restriction of the ambient analysis of <em>Split-Biquaternion Analysis</em> to a four-dimensional subspace. The symmetrized product of two elements of $\mathbb{M}_-$ lies in $\mathbb{M}_+$, so the functions on $\mathbb{M}_-$ acquire a bracket, the commutator, rather than a pointwise product, and the intrinsic differential structure is the Lie-theoretic one of <em>Split-Biquaternion Anti-Hermitian Subspace</em>. The second-order operator obtained from the restriction of the ambient operators is the wave operator of the restricted Lorentzian form $-q'^2_0 + \sum_k q_k^2$ of signature $(3,1)$.</p>
 <h2 id="the-geometry-of-the-anti-hermitian-subspace">The Geometry of the Anti-Hermitian Subspace</h2>
-<p>The anti-Hermitian subspace is the negative eigenspace of the involution ${}^{\dagger}$ of the algebra, and geometrically the invariant four-plane of the corresponding linear involution of $\mathbb{R}^8$. It is a Lorentzian subspace of the Hermitian scalar form: $g$ restricts to $-q'^2_0 + \sum_k q_k^2$ of signature $(3,1)$, while the split-biquaternion norm restricts to the positive definite form $q'^2_0 + \sum_k q_k^2$ of signature $(4,0)$ recorded in the notation table above. The null cone of $g$ is again cut out by $q'^2_0 = \sum_k q_k^2$; the restricted form being indefinite of signature $(3,1)$, it has isotropic lines, and their projectivisation in $\mathbb{P}(\mathbb{M}_-)$ is a two-sphere. The motions it carries are the same Lorentz group $SO(1,3)$, realised on $\mathbb{M}_-$ rather than on $\mathbb{M}_+$; the two subspaces are interchanged by multiplication by $j$, since $(j\tilde Q)^{\dagger} = -j\tilde Q^{\dagger}$.</p>
+<p>The anti-Hermitian subspace is the negative eigenspace of the involution ${}^{*}$ of the algebra, and geometrically the invariant four-plane of the corresponding linear involution of $\mathbb{R}^8$. It is a Lorentzian subspace of the Hermitian scalar form: $g$ restricts to $-q'^2_0 + \sum_k q_k^2$ of signature $(3,1)$, while the split-biquaternion norm restricts to the positive definite form $q'^2_0 + \sum_k q_k^2$ of signature $(4,0)$ recorded in the notation table above. The null cone of $g$ is again cut out by $q'^2_0 = \sum_k q_k^2$; the restricted form being indefinite of signature $(3,1)$, it has isotropic lines, and their projectivisation in $\mathbb{P}(\mathbb{M}_-)$ is a two-sphere. The motions it carries are the same Lorentz group $SO(1,3)$, realised on $\mathbb{M}_-$ rather than on $\mathbb{M}_+$; the two subspaces are interchanged by multiplication by $j$, since $(j\tilde Q)^{\dagger} = -j\tilde{Q}^{*}$.</p>
 <h2 id="summary">Summary</h2>
-<p>The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed space of anti-Hermitian conjugation, the set of elements $\tilde{Q} = j r_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with purely split-imaginary scalar part and real vector part; it is a real vector space of dimension $4$ with basis $je_0, e_1, e_2, e_3$. It is <strong>not</strong> a subalgebra — $(je_0)^2 = e_0$ leaves it — but the symmetrized product of two of its elements is Hermitian, the commutator is $2\,\mathbf{u}\times\mathbf{v}$, a pure real quaternion, and under that bracket $\mathbb{M}_-$ is a <strong>Lie subalgebra</strong> with bracket image the three-dimensional $\mathrm{SO}(3)$. Multiplication by $j$ is a linear isomorphism $\mathbb{M}_- \to \mathbb{M}_+$, and the square of an anti-Hermitian element is Hermitian. The split-biquaternion norm restricts to the positive definite form $N = r_0^2 + q_1^2 + q_2^2 + q_3^2$ of signature $(4,0)$, so $\mathbb{M}_-$ contains no zero divisor and no nilpotent; the indefinite form is the Hermitian form, of signature $(3,1)$ and isotropic cone $r_0^2 = q_1^2 + q_2^2 + q_3^2$, whose nonzero points are all units. The roots of $-1$ in the subspace are the unit pure real quaternions, a two-sphere $S^2$, the same roots as in the quaternion subspace. The image under $\varphi$ is the set of anti-conjugate pairs $(h, -\bar{h})$ in $\mathbb{H} \oplus \mathbb{H}$. Of the four involutions, anti-Hermitian conjugation fixes the subspace pointwise, quaternion and split complex conjugations negate the vector and scalar parts respectively, and Hermitian conjugation is minus the identity; the subspace is complementary to $\mathbb{M}_+$.</p>
+<p>The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed space of anti-Hermitian conjugation, the set of elements $\tilde{Q} = j r_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with purely split-imaginary scalar part and real vector part; it is a real vector space of dimension $4$ with basis $je_0, e_1, e_2, e_3$. It is <strong>not</strong> a subalgebra — $(je_0)^2 = e_0$ leaves it — but the symmetrized product of two of its elements is Hermitian, the commutator is $2\,\mathbf{u}\times\mathbf{v}$, a pure real quaternion, and under that bracket $\mathbb{M}_-$ is a <strong>Lie subalgebra</strong> with bracket image the three-dimensional $\mathrm{SO}(3)$. Multiplication by $j$ is a linear isomorphism $\mathbb{M}_- \to \mathbb{M}_+$, and the square of an anti-Hermitian element is Hermitian. The split-biquaternion norm restricts to the positive definite form $N = r_0^2 + q_1^2 + q_2^2 + q_3^2$ of signature $(4,0)$, so $\mathbb{M}_-$ contains no zero divisor and no nilpotent; the indefinite form is the Hermitian form, of signature $(3,1)$ and isotropic cone $r_0^2 = q_1^2 + q_2^2 + q_3^2$, whose nonzero points are all units. The roots of $-1$ in the subspace are the unit pure real quaternions, a two-sphere $S^2$, the same roots as in the quaternion subspace. The image under $\varphi$ is the set of anti-conjugate pairs $(h, -h^{\natural})$ in $\mathbb{H} \oplus \mathbb{H}$. Of the four involutions, anti-Hermitian conjugation fixes the subspace pointwise, quaternion and split complex conjugations negate the vector and scalar parts respectively, and Hermitian conjugation is minus the identity; the subspace is complementary to $\mathbb{M}_+$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -250,10 +250,10 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{M}_+$</td>
-<td>Hermitian subspace, fixed space of ${}^{\dagger}$</td>
+<td>Hermitian subspace, fixed space of ${}^{*}$</td>
 </tr>
 <tr>
-<td>$\bar{\cdot}, {}^{*}, {}^{\dagger}, {}^{\flat}$</td>
+<td>${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$</td>
 <td>The four conjugations</td>
 </tr>
 <tr>
@@ -289,7 +289,7 @@ $$</p>
 <td>Lorentz group acting on the anti-Hermitian subspace</td>
 </tr>
 <tr>
-<td>$(j\tilde{Q})^{\dagger} = -j\tilde{Q}^{\dagger}$</td>
+<td>$(j\tilde{Q})^{\dagger} = -j\tilde{Q}^{*}$</td>
 <td>Multiplication by $j$ swaps $\mathbb{M}_\pm$</td>
 </tr>
 </tbody>

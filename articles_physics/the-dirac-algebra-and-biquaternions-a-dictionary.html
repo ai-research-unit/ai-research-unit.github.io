@@ -67,7 +67,7 @@ $$</p>
 <p>$$
 e_1^2 = e_2^2 = e_3^2 = -e_0, \qquad e_1e_2 = e_3, \qquad e_2e_3 = e_1, \qquad e_3e_1 = e_2,
 $$</p>
-<p>and $e_je_k = -e_ke_j$ for $j \neq k$. The scalar imaginary $i$ satisfies $i^2 = -1$ and commutes with every $e_\mu$. The conjugations are the ones defined in <em>Biquaternion Algebra</em>: quaternion conjugation $\bar{\cdot}$ ($e_0 \mapsto e_0$, $e_k \mapsto -e_k$), complex conjugation ${}^*$ ($i \mapsto -i$), Hermitian conjugation $\dagger = \bar{\cdot}^{\,*}$, and the anti-Hermitian conjugation $\flat = -\dagger$. Multiplication is the complex-linear extension of the quaternion product, with the scalar–vector form</p>
+<p>and $e_je_k = -e_ke_j$ for $j \neq k$. The scalar imaginary $i$ satisfies $i^2 = -1$ and commutes with every $e_\mu$. The conjugations are the ones defined in <em>Biquaternion Algebra</em>: quaternion conjugation ${}^{\natural}$ ($e_0 \mapsto e_0$, $e_k \mapsto -e_k$), complex conjugation $\bar{\cdot}$ ($i \mapsto -i$), Hermitian conjugation ${}^{*} = ({}^{\natural})^{\,*}$, and the anti-Hermitian conjugation $\flat = -{}^{*}$. Multiplication is the complex-linear extension of the quaternion product, with the scalar–vector form</p>
 <p>$$
 \tilde{Q}\circ\tilde{R} = Q_0R_0 - (\mathbf{Q},\mathbf{R}) + Q_0\mathbf{R} + R_0\mathbf{Q} + [\mathbf{Q},\mathbf{R}].
 $$</p>
@@ -467,13 +467,13 @@ $$</p>
 $$</p>
 <p>the sign $+$ on the scalar and the pseudoscalar following from the even number of transpositions. Under the dictionary this is exactly quaternion conjugation:</p>
 <p>$$
-\Phi(\bar{\tilde{Q}}) = \mathrm{rev}\bigl(\Phi(\tilde{Q})\bigr),
+\Phi(\tilde{Q}^{\natural}) = \mathrm{rev}\bigl(\Phi(\tilde{Q})\bigr),
 $$</p>
-<p>checked on the eight real basis elements, whose images under $\bar{\cdot}$ carry precisely the signs $+$ on $e_0, i$ and $-$ on $e_k, ie_k$ that reversal carries on $I_4, \omega$ and the bivectors.</p>
+<p>checked on the eight real basis elements, whose images under ${}^{\natural}$ carry precisely the signs $+$ on $e_0, i$ and $-$ on $e_k, ie_k$ that reversal carries on $I_4, \omega$ and the bivectors.</p>
 <h3 id="the-biquaternion-norm">The biquaternion norm</h3>
-<p>The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. Its Clifford image is the product with the reversal,</p>
+<p>The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$. Its Clifford image is the product with the reversal,</p>
 <p>$$
-\Phi(\tilde{Q})\,\mathrm{rev}\bigl(\Phi(\tilde{Q})\bigr) = \Phi\bigl(\tilde{Q}\bar{\tilde{Q}}\bigr),
+\Phi(\tilde{Q})\,\mathrm{rev}\bigl(\Phi(\tilde{Q})\bigr) = \Phi\bigl(\tilde{Q}\tilde{Q}^{\natural}\bigr),
 $$</p>
 <p>which is central. When the biquaternion norm is <strong>real</strong> — in particular on both $\mathbb{M}_-$ and $\mathbb{M}_+$ — this is a scalar matrix,</p>
 <p>$$
@@ -481,7 +481,7 @@ $$</p>
 $$</p>
 <p>verified with general real coefficients on each sector. For the material four-vectors this is the Minkowski interval. Writing $\tilde{V} = i v_0 e_0 + v_1e_1 + v_2e_2 + v_3e_3 \in \mathbb{M}_-$,</p>
 <p>$$
-N(\tilde{V}) = \tilde{V}\bar{\tilde{V}} = -v_0^2 + v_1^2 + v_2^2 + v_3^2 = -c^2t^2 + \mathbf{x}^2,
+N(\tilde{V}) = \tilde{V}\tilde{V}^{\natural} = -v_0^2 + v_1^2 + v_2^2 + v_3^2 = -c^2t^2 + \mathbf{x}^2,
 $$</p>
 <p>which is the invariant interval of the companion articles. So the interval is the Clifford biquaternion norm constructed with the reversal, and the minus sign in the time direction is the $ict$ metric sign $\eta^{00} = -1$ — the sign of $-g$, not of the generators' metric.</p>
 <h3 id="the-matrix-representation-and-the-trace">The matrix representation and the trace</h3>
@@ -500,7 +500,7 @@ $$</p>
 <p><strong>Mechanism one: multiplication, on the module.</strong> A spinor is an element of the minimal left ideal $S = \mathbb{B}p$, $p = \tfrac12(e_0+ie_3)$, and $\mathbb{B}$ acts on it by left multiplication, $\psi\mapsto \rho(\tilde B)\psi$. Since $\mathbb{B} = \mathrm{End}(S)$, <em>every</em> complex-linear operator on the spinor module is some biquaternion, and this mechanism carries the whole half-integer-spin sector: the Dirac field, its two Weyl halves, the chirality projectors (central idempotents of the complexified algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$, not of $\mathbb{B}$ itself), the mass $m$ and the central phase $\lambda = e^{i\theta}$ (central elements), and the gradient $\tilde{\nabla}$ when it acts on a field.</p>
 <p><strong>Mechanism two: conjugation, on the algebra.</strong> A four-vector is not in the module but in the algebra: the material sector $\mathbb{M}_- = \mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$. A Lorentz transformation acts on it by the rotor conjugation</p>
 <p>$$
-\tilde{Q} \;\mapsto\; \tilde\Lambda\,\tilde{Q}\,\tilde\Lambda^\dagger,
+\tilde{Q} \;\mapsto\; \tilde\Lambda\,\tilde{Q}\,\tilde\Lambda^{*},
 \qquad \tilde\Lambda\in\mathbb{B},\quad N(\tilde\Lambda)=1,
 $$</p>
 <p>not by multiplication. This mechanism carries the integer-spin sector: the four-vector, the gauge potential, the field strength, the four-current, and the rotors themselves as points of $SL(2,\mathbb{C})$.</p>
@@ -549,7 +549,7 @@ $$</p>
 <tr>
 <td>four-vector (momentum, position)</td>
 <td>$\mathbb{M}_-\subset\mathbb{B}$</td>
-<td>conjugation $\tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$</td>
+<td>conjugation $\tilde\Lambda\tilde{Q}\tilde\Lambda^{*}$</td>
 <td>$1$</td>
 </tr>
 <tr>
@@ -581,7 +581,7 @@ $$</p>
 <p>$$
 \Phi(\tilde{\nabla})\,\mathrm{rev}\bigl(\Phi(\tilde{\nabla})\bigr) = \Box\,I_4,
 $$</p>
-<p>which is the image of $\tilde{\nabla}\bar{\tilde{\nabla}} = \Box$, since reversal corresponds to quaternion conjugation. Its symbol squares to the biquaternion norm: $\Phi(\tilde{k})\,\mathrm{rev}(\Phi(\tilde{k})) = (k_0^2 + k_1^2 + k_2^2 + k_3^2)I_4$.</p>
+<p>which is the image of $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$, since reversal corresponds to quaternion conjugation. Its symbol squares to the biquaternion norm: $\Phi(\tilde{k})\,\mathrm{rev}(\Phi(\tilde{k})) = (k_0^2 + k_1^2 + k_2^2 + k_3^2)I_4$.</p>
 <p>The gamma-matrix Dirac operator is the <strong>odd</strong> element</p>
 <p>$$
 \not\partial = \gamma^\mu\partial_\mu, \qquad \not\partial^2 = \bigl(-(1/c^2)\partial_t^2 + \Delta\bigr)I_4 = \Box\,I_4,
@@ -661,7 +661,7 @@ $$</p>
 <td>Clifford reversal anti-automorphism</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$</td>
+<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>

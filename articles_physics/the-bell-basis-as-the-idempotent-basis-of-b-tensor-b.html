@@ -190,7 +190,7 @@ $$</p>
 <p>The first row is the singlet idempotent $P_{\mathrm{singlet}}$ already fixed by the entangled-subsystems article; the other three rows are its companions. <em>Exercise: The Correlation Function of the Bell States</em> verified that each $P_\epsilon$ with $\epsilon_1\epsilon_2\epsilon_3=+1$ is idempotent and of trace one, so we do not repeat that computation. Two further properties are worth recording.</p>
 <p><strong>The $P_\epsilon$ are Hermitian.</strong> For $k=1,2,3$ the Hermitian conjugate of $e_k$ is $-e_k$, so</p>
 <p>$$
-(e_k\otimes e_k)^\dagger=(-e_k)\otimes(-e_k)=e_k\otimes e_k .
+(e_k\otimes e_k)^{*}=(-e_k)\otimes(-e_k)=e_k\otimes e_k .
 $$</p>
 <p>The tensor terms are therefore individually Hermitian, the coefficients $\epsilon_k$ and $\tfrac14$ are real, and $P_\epsilon^\dagger=P_\epsilon$. Each $P_\epsilon$ is a legitimate state, not merely an algebraic idempotent.</p>
 <p><strong>The $P_\epsilon$ lie in the physical subspace.</strong> The Hermitian subspace $\mathbb{M}_+$ has real basis $e_0,ie_1,ie_2,ie_3$. Hence</p>
@@ -211,7 +211,7 @@ $$</p>
 S_1:=-e_1\otimes e_1,\qquad S_3:=-e_3\otimes e_3 .
 $$</p>
 <p>They have three elementary properties, each a direct computation.</p>
-<p><strong>Hermiticity.</strong> As in the previous section, $(e_k\otimes e_k)^\dagger=e_k\otimes e_k$, so $S_1^\dagger=S_1$ and $S_3^\dagger=S_3$.</p>
+<p><strong>Hermiticity.</strong> As in the previous section, $(e_k\otimes e_k)^{*}=e_k\otimes e_k$, so $S_1^\dagger=S_1$ and $S_3^\dagger=S_3$.</p>
 <p><strong>Involution.</strong> Using $(e_k\otimes e_k)^2=e_k^2\otimes e_k^2=(-e_0)\otimes(-e_0)=e_0\otimes e_0$, we get</p>
 <p>$$
 S_1^2=S_3^2=e_0\otimes e_0 .
@@ -337,11 +337,11 @@ P=\tfrac{1}{4}\left(\lambda_0\,e_0\otimes e_0+\lambda_1\,e_1\otimes e_1+\lambda_
 $$</p>
 <p>Imposing $P^2=P$ and $\mathrm{Tr}(P)=1$ determines the coefficients completely. The trace gives $\lambda_0=1$. The coefficient of $e_0\otimes e_0$ in $P^2$ is $\tfrac{1}{16}\sum_\mu\lambda_\mu^2$, which must equal $\tfrac14\lambda_0=\tfrac14$, so $\sum_\mu\lambda_\mu^2=4$. The coefficient of $e_l\otimes e_l$ (for $l=1,2,3$, where $\{j,k,l\}=\{1,2,3\}$) is $\tfrac{1}{16}\left(2\lambda_l+2\lambda_j\lambda_k\right)$, which must equal $\tfrac14\lambda_l$, so $\lambda_j\lambda_k=\lambda_l$. Multiplying the three relations by $\lambda_1,\lambda_2,\lambda_3$ respectively gives $\lambda_1^2=\lambda_2^2=\lambda_3^2=\lambda_1\lambda_2\lambda_3$; combined with $\lambda_0=1$ and $\sum_\mu\lambda_\mu^2=4$ this yields $\lambda_1^2=\lambda_2^2=\lambda_3^2=1$. Hence each $\lambda_k=\pm1$ and $\lambda_1\lambda_2\lambda_3=+1$. (For the four sign patterns, the direct verification of idempotency is the computation in <em>Exercise: The Correlation Function of the Bell States</em>.) So there are exactly <strong>four</strong> diagonal-form idempotents <strong>of trace one</strong>, and they are the four Bell idempotents. No other trace-one diagonal idempotent exists.</p>
 <h3 id="the-bell-idempotents-inside-the-continuum-of-maximally-entangled-states">The Bell idempotents inside the continuum of maximally entangled states</h3>
-<p>The diagonal-form condition is genuinely restrictive. The maximally entangled pure states of two qubits form a continuum: for any unitary element $\tilde U$ of $\mathbb{B}$ with $\tilde U\tilde U^\dagger=e_0$, acting on the first factor,</p>
+<p>The diagonal-form condition is genuinely restrictive. The maximally entangled pure states of two qubits form a continuum: for any unitary element $\tilde U$ of $\mathbb{B}$ with $\tilde U\tilde U^{*}=e_0$, acting on the first factor,</p>
 <p>$$
-P\;=\;(\tilde U\otimes e_0)\,P_{\Phi^+}\,(\tilde U^\dagger\otimes e_0)
+P\;=\;(\tilde U\otimes e_0)\,P_{\Phi^+}\,(\tilde U^{*}\otimes e_0)
 $$</p>
-<p>is again a rank-one idempotent, and its partial traces are still $\tfrac{1}{2}e_0$, because $\mathrm{Tr}_2(P)=U(\tfrac12 e_0)U^\dagger=\tfrac12 e_0$ with the central scalar $\tfrac12 e_0$ invariant. A generic such $P$ is <strong>not</strong> diagonal in the tensor basis.</p>
+<p>is again a rank-one idempotent, and its partial traces are still $\tfrac{1}{2}e_0$, because $\mathrm{Tr}_2(P)=U(\tfrac12 e_0)U^{*}=\tfrac12 e_0$ with the central scalar $\tfrac12 e_0$ invariant. A generic such $P$ is <strong>not</strong> diagonal in the tensor basis.</p>
 <p>A concrete example makes the point. Take $\tilde U=\tfrac{3}{5}e_0+\tfrac{4}{5}e_1$, a unit real quaternion. The resulting rank-one idempotent has partial trace $\tfrac{1}{2}e_0$ and is therefore maximally entangled, but its tensor expansion contains the off-diagonal terms</p>
 <p>$$
 \tfrac{6}{25}\,e_3\otimes e_2+\tfrac{6}{25}\,e_2\otimes e_3,

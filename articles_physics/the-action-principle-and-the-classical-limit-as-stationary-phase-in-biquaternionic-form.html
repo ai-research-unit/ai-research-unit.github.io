@@ -59,7 +59,7 @@
 <li><strong>The action is central-valued.</strong> For a real-quaternion configuration the Lagrangian is central, so the action is a complex scalar and its phase is unambiguous. There is no ordering question in the exponent, and the stationary-phase construction applies directly.</li>
 <li><strong>The rotor action and its geodesic principle.</strong> For a rotor-valued configuration — a path in the group of unit real quaternions — the action built from the biquaternion norm of the velocity is the energy of a geodesic on the group, and the classical path is a one-parameter subgroup. This is the first place where the algebra's noncommutativity produces the classical equations rather than merely expressing them, and it is the bridge to the rigid-body article.</li>
 </ol>
-<p>The conventions are those of the read list, unchanged from the preceding article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$; $i$ is central with $i^2=-1$; $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The configuration is a real quaternion $\tilde q$, its conjugate momentum is $\tilde p=\partial L/\partial\dot{\tilde q}$, the phase-space biquaternion is $\tilde Z=\tilde q+i\tilde p$, and the scalar pairing is $\mathrm{Sc}(\bar{\tilde a}\tilde b)=\sum_\mu a_\mu b_\mu$. The rotor is $\tilde R\in\mathbb{H}_{\mathbb{B}}$ with $N(\tilde R)=\tilde R\bar{\tilde R}=e_0$, and it acts by conjugation $\tilde{Q}\mapsto\tilde R\tilde{Q}\tilde R^\dagger$.</p>
+<p>The conventions are those of the read list, unchanged from the preceding article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$; $i$ is central with $i^2=-1$; $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The configuration is a real quaternion $\tilde q$, its conjugate momentum is $\tilde p=\partial L/\partial\dot{\tilde q}$, the phase-space biquaternion is $\tilde Z=\tilde q+i\tilde p$, and the scalar pairing is $\mathrm{Sc}(\tilde a^{\natural}\tilde b)=\sum_\mu a_\mu b_\mu$. The rotor is $\tilde R\in\mathbb{H}_{\mathbb{B}}$ with $N(\tilde R)=\tilde R\tilde R^{\natural}=e_0$, and it acts by conjugation $\tilde{Q}\mapsto\tilde R\tilde{Q}\tilde R^{*}$.</p>
 <p>The companion articles used below are:
 - Companion article <em>Lagrangian and Hamiltonian Mechanics in Biquaternionic Form</em>, for the action, the Euler–Lagrange equation, the Legendre transform, and the phase-space biquaternion.
 - Companion article <em>Similitudes Between Biquaternion Rotors and Hamiltonian Flow</em>, for the rotor conjugation and the flow on the coadjoint orbit.
@@ -124,20 +124,20 @@ $$</p>
 $$</p>
 <p>which is the four real equations of the preceding article. The boundary term is the part that does not vanish when the endpoints are free. Writing $\tilde p=\partial L/\partial\dot{\tilde q}$, it is</p>
 <p>$$
-\delta S_{\text{bdry}}=\left[\mathrm{Sc}\!\left(\overline{\tilde p}\;\delta\tilde q\right)\right]_{t_1}^{t_2}
-=\mathrm{Sc}(\bar{\tilde p}_2\,d\tilde q_2)-\mathrm{Sc}(\bar{\tilde p}_1\,d\tilde q_1).
+\delta S_{\text{bdry}}=\left[\mathrm{Sc}\!\left(\bar{\tilde p}\;\delta\tilde q\right)\right]_{t_1}^{t_2}
+=\mathrm{Sc}(\tilde p^{\natural}_2\,d\tilde q_2)-\mathrm{Sc}(\tilde p^{\natural}_1\,d\tilde q_1).
 $$</p>
-<p>The quantity $\theta=\mathrm{Sc}(\bar{\tilde p}\,d\tilde q)$ is the <strong>symplectic potential</strong> in biquaternion form, and the boundary term says that the on-shell action is a <strong>generating function</strong> of the canonical transformation between the initial and final phase-space points: $dS=\theta_2-\theta_1$. The exterior derivative of this potential is the symplectic form up to the standard sign convention of the symplectic potential — explicitly, $d\theta=d\mathrm{Sc}(\bar{\tilde p}\,d\tilde q)=d\mathbf p\wedge d\mathbf q=-\omega$ for the canonical form $\omega=\sum_k dq_k\wedge dp_k$ — and the symplectic form, with its conventions fixed, is the subject of the next article; here it is enough to record that the boundary term of the action variation already contains it.</p>
+<p>The quantity $\theta=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$ is the <strong>symplectic potential</strong> in biquaternion form, and the boundary term says that the on-shell action is a <strong>generating function</strong> of the canonical transformation between the initial and final phase-space points: $dS=\theta_2-\theta_1$. The exterior derivative of this potential is the symplectic form up to the standard sign convention of the symplectic potential — explicitly, $d\theta=d\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)=d\mathbf p\wedge d\mathbf q=-\omega$ for the canonical form $\omega=\sum_k dq_k\wedge dp_k$ — and the symplectic form, with its conventions fixed, is the subject of the next article; here it is enough to record that the boundary term of the action variation already contains it.</p>
 <h3 id="the-phase-space-action">The Phase-Space Action</h3>
 <p>The same statement in phase-space variables uses the action</p>
 <p>$$
-S_{\mathrm{ps}}[\tilde q,\tilde p]=\int_{t_1}^{t_2}\left[\mathrm{Sc}\!\left(\bar{\tilde p}\,\dot{\tilde q}\right)-H(\tilde q,\tilde p)\right]dt .
+S_{\mathrm{ps}}[\tilde q,\tilde p]=\int_{t_1}^{t_2}\left[\mathrm{Sc}\!\left(\tilde p^{\natural}\,\dot{\tilde q}\right)-H(\tilde q,\tilde p)\right]dt .
 $$</p>
 <p>Varying $\tilde q$ and $\tilde p$ independently and integrating by parts,</p>
 <p>$$
 \delta S_{\mathrm{ps}}=\int\mathrm{Sc}\!\left[\overline{\left(\dot{\tilde q}-\partial_{\tilde p}H\right)}\;\delta\tilde p\right]dt
 +\int\mathrm{Sc}\!\left[\overline{\left(-\dot{\tilde p}-\partial_{\tilde q}H\right)}\;\delta\tilde q\right]dt
-+\left[\mathrm{Sc}(\bar{\tilde p}\,\delta\tilde q)\right]_{t_1}^{t_2}.
++\left[\mathrm{Sc}(\tilde p^{\natural}\,\delta\tilde q)\right]_{t_1}^{t_2}.
 $$</p>
 <p>Stationarity for arbitrary $\delta\tilde q,\delta\tilde p$ gives <strong>Hamilton's equations</strong></p>
 <p>$$
@@ -153,16 +153,16 @@ $$</p>
 <p>and suppose the unperturbed path is a classical path, so that the bulk term of the variation vanishes. Then the variation reduces to the boundary term,</p>
 <p>$$
 \epsilon\int\frac{d}{dt}\Lambda\,dt=\delta S_{\text{bdry}}
-=\left[\mathrm{Sc}\!\left(\bar{\tilde p}\,\delta\tilde q\right)\right]_{t_1}^{t_2},
+=\left[\mathrm{Sc}\!\left(\tilde p^{\natural}\,\delta\tilde q\right)\right]_{t_1}^{t_2},
 \qquad \delta\tilde q=\epsilon\,Q ,
 $$</p>
-<p>so $\mathrm{Sc}(\bar{\tilde p}\,Q)-\Lambda$ is the same at $t_1$ and $t_2$:</p>
+<p>so $\mathrm{Sc}(\tilde p^{\natural}\,Q)-\Lambda$ is the same at $t_1$ and $t_2$:</p>
 <p>$$
-\frac{d}{dt}\left[\mathrm{Sc}\!\left(\bar{\tilde p}\,Q\right)-\Lambda\right]=0 .
+\frac{d}{dt}\left[\mathrm{Sc}\!\left(\tilde p^{\natural}\,Q\right)-\Lambda\right]=0 .
 $$</p>
-<p>The conserved charge is read off the boundary term. For time translation, $Q=\dot{\tilde q}$ and $\Lambda=L$, giving the energy $H=\mathrm{Sc}(\bar{\tilde p}\dot{\tilde q})-L$. For a configuration-space rotation generated by the rotor, $Q=[\tilde G,\tilde q]$ and $\Lambda=0$, giving</p>
+<p>The conserved charge is read off the boundary term. For time translation, $Q=\dot{\tilde q}$ and $\Lambda=L$, giving the energy $H=\mathrm{Sc}(\tilde p^{\natural}\dot{\tilde q})-L$. For a configuration-space rotation generated by the rotor, $Q=[\tilde G,\tilde q]$ and $\Lambda=0$, giving</p>
 <p>$$
-\mathrm{Sc}\!\left(\bar{\tilde p}\,[\tilde G,\tilde q]\right)=2\,\mathrm{Sc}\!\left(\bar{\tilde G}\,\tilde q\,\tilde p\right)=2\,\mathbf G\cdot\mathbf L ,
+\mathrm{Sc}\!\left(\tilde p^{\natural}\,[\tilde G,\tilde q]\right)=2\,\mathrm{Sc}\!\left(\tilde G^{\natural}\,\tilde q\,\tilde p\right)=2\,\mathbf G\cdot\mathbf L ,
 $$</p>
 <p>twice the component of the angular momentum $\tilde L=\tilde q\tilde p$ along $\tilde G$, for the pure-vector configuration on which the cross product and the angular momentum are defined; the factor $2$ is the same one that appears in the commutator, $[\tilde G,\tilde q]=2\,\tilde G\times\tilde q$. The construction is the biquaternion form of the standard Noether argument, and its content is that the boundary term of the action variation is the conservation law.</p>
 <h2 id="the-second-variation-and-stability">The Second Variation and Stability</h2>
@@ -204,17 +204,17 @@ $$</p>
 S_{\mathrm{rot}}[\tilde R]=\frac{\lambda}{2}\int \mathrm{Sc}\!\left(\dot{\tilde R}\,\bar{\dot{\tilde R}}\right)dt
 =\frac{\lambda}{2}\int N(\dot{\tilde R})\,dt ,
 $$</p>
-<p>the rotational kinetic energy of a body with a single principal moment $\lambda$. Varying $\tilde R$ subject to the constraint $N(\tilde R)=e_0$ means varying within the group; writing $\delta\tilde R=\tilde R\,\delta\tilde\Xi$ with $\delta\tilde\Xi$ a pure real quaternion vanishing at the endpoints (the constraint $\mathrm{Sc}(\bar{\tilde R}\delta\tilde R)=0$ forces $\delta\tilde\Xi$ to have zero scalar part), the first variation of the action becomes</p>
+<p>the rotational kinetic energy of a body with a single principal moment $\lambda$. Varying $\tilde R$ subject to the constraint $N(\tilde R)=e_0$ means varying within the group; writing $\delta\tilde R=\tilde R\,\delta\tilde\Xi$ with $\delta\tilde\Xi$ a pure real quaternion vanishing at the endpoints (the constraint $\mathrm{Sc}(\tilde R^{\natural}\delta\tilde R)=0$ forces $\delta\tilde\Xi$ to have zero scalar part), the first variation of the action becomes</p>
 <p>$$
 \delta S_{\mathrm{rot}}=\lambda\int\mathrm{Sc}\!\left(\dot{\tilde R}\,\overline{\delta\dot{\tilde R}}\right)dt
 =-\lambda\int\mathrm{Sc}\!\left(\ddot{\tilde R}\,\overline{\delta\tilde R}\right)dt
-=\lambda\int\mathrm{Sc}\!\left(\bar{\tilde R}\,\ddot{\tilde R}\;\delta\tilde\Xi\right)dt ,
+=\lambda\int\mathrm{Sc}\!\left(\tilde R^{\natural}\,\ddot{\tilde R}\;\delta\tilde\Xi\right)dt ,
 $$</p>
-<p>using $\delta\tilde R=\tilde R\,\delta\tilde\Xi$, $\overline{\delta\tilde R}=-\delta\tilde\Xi\,\bar{\tilde R}$, and the cyclicity of the scalar part. Stationarity for all pure $\delta\tilde\Xi$ gives</p>
+<p>using $\delta\tilde R=\tilde R\,\delta\tilde\Xi$, $\overline{\delta\tilde R}=-\delta\tilde\Xi\,\tilde R^{\natural}$, and the cyclicity of the scalar part. Stationarity for all pure $\delta\tilde\Xi$ gives</p>
 <p>$$
-\mathrm{Ve}\!\left(\bar{\tilde R}\,\ddot{\tilde R}\right)=0 ,
+\mathrm{Ve}\!\left(\tilde R^{\natural}\,\ddot{\tilde R}\right)=0 ,
 $$</p>
-<p>the <strong>geodesic equation on the group</strong>. Writing $\tilde\eta=\bar{\tilde R}\dot{\tilde R}$, a real pure quaternion by the constraint — its scalar part is $\tfrac{1}{2}\tfrac{d}{dt}N(\tilde R)=0$ — one has $\bar{\tilde R}\ddot{\tilde R}=\dot{\tilde\eta}+\tilde\eta^2$ with $\tilde\eta^2$ a real scalar; the equation therefore says that the vector part of $\dot{\tilde\eta}$ vanishes, and since $\tilde\eta$ is pure real for all $t$ this is $\dot{\tilde\eta}=0$. Equivalently, the equation with the constraint is $\frac{d}{dt}(\bar{\tilde R}\dot{\tilde R})=0$: the <strong>body angular velocity is constant</strong>. Its solutions are the one-parameter subgroups, and the <strong>classical rotor path is</strong></p>
+<p>the <strong>geodesic equation on the group</strong>. Writing $\tilde\eta=\tilde R^{\natural}\dot{\tilde R}$, a real pure quaternion by the constraint — its scalar part is $\tfrac{1}{2}\tfrac{d}{dt}N(\tilde R)=0$ — one has $\tilde R^{\natural}\ddot{\tilde R}=\dot{\tilde\eta}+\tilde\eta^2$ with $\tilde\eta^2$ a real scalar; the equation therefore says that the vector part of $\dot{\tilde\eta}$ vanishes, and since $\tilde\eta$ is pure real for all $t$ this is $\dot{\tilde\eta}=0$. Equivalently, the equation with the constraint is $\frac{d}{dt}(\tilde R^{\natural}\dot{\tilde R})=0$: the <strong>body angular velocity is constant</strong>. Its solutions are the one-parameter subgroups, and the <strong>classical rotor path is</strong></p>
 <p>$$
 \boxed{\;\tilde R(t)=\tilde R(0)\,\exp\!\left(+\tfrac{1}{2}\tilde\omega_b t\right),\qquad \tilde\omega_b\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-,\;}
 $$</p>
@@ -266,7 +266,7 @@ $$</p>
 <h3 id="rotor-paths-and-the-geometric-phase-of-the-sum">Rotor Paths and the Geometric Phase of the Sum</h3>
 <p>The rotor action of the preceding section adds a feature that a scalar configuration cannot show. Its critical points are the one-parameter subgroups $\tilde R(t)=\tilde R(0)\exp(+\tfrac12\tilde\omega_bt)$, and about each of them the fluctuation operator is again built from the biquaternion norm. The group of unit quaternions is compact and not simply connected, $\pi_1(SU(2))=\mathbb{Z}_2$, so the critical paths joining a given pair of endpoints are not unique — the geodesics of a bi-invariant metric on a group occur in several families — and they fall into the two homotopy classes. The stationary-phase sum over rotor paths therefore carries the relative phases $e^{iS[\tilde R_c]/\hbar}$ of these critical paths. The transport of a rotor along a path is a parallel transport for a connection on the group, and the failure of the transport to be path-independent is its <strong>holonomy</strong>: the extra group element picked up around a closed loop. That holonomy, and the Hannay angle that an adiabatic classical system accumulates because of it, is the subject of the companion article <em>Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form</em>; it is a classical geometric phase, and the rotor action is the classical object whose stationary-phase sum carries it.</p>
 <h2 id="the-hamiltonjacobi-equation-and-the-classical-phase">The Hamilton–Jacobi Equation and the Classical Phase</h2>
-<p>The action of a classical trajectory, regarded as a function of its endpoint, is Hamilton's <strong>principal function</strong> $W(\tilde q,t)$. Differentiating the relation $dW=\mathrm{Sc}(\bar{\tilde p}\,d\tilde q)-E\,dt$ with the definition $\tilde p=\partial_{\tilde q}W$ gives the <strong>Hamilton–Jacobi equation</strong></p>
+<p>The action of a classical trajectory, regarded as a function of its endpoint, is Hamilton's <strong>principal function</strong> $W(\tilde q,t)$. Differentiating the relation $dW=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)-E\,dt$ with the definition $\tilde p=\partial_{\tilde q}W$ gives the <strong>Hamilton–Jacobi equation</strong></p>
 <p>$$
 \frac{\partial W}{\partial t}+H\!\left(\tilde q,\frac{\partial W}{\partial\tilde q}\right)=0 .
 $$</p>
@@ -284,10 +284,10 @@ $$</p>
 <li>The principle is not restricted to finitely many coordinates: for a continuum the Lagrangian becomes a density and the Euler–Lagrange equations become field equations.</li>
 <li>A non-conservative load cannot enter a potential, so no $T-V$ Lagrangian contains it and the plain form fails. The principle is then extended by virtual work, or replaced by <strong>Herglotz's principle</strong>, whose action solves $\dot S=L$ and whose Euler–Lagrange–Herglotz equation carries the dissipative term; the energy is replaced by a weighted conserved quantity, and the Hamiltonian form becomes a contact system on $(\tilde q,\tilde p,S)$.</li>
 <li>The geodesic flow of the biquaternion-norm metric is a Hamiltonian flow, with Hamiltonian $H=N(\tilde p)/2m$. The free particle is the abelian case of the correspondence that the rotor articles exhibit on the coadjoint orbit.</li>
-<li>Its first variation is the sum of a bulk term and a boundary term. The bulk term vanishes for all variations exactly when the quaternion Euler–Lagrange equation $\frac{d}{dt}\partial_{\dot{\tilde q}}L-\partial_{\tilde q}L=0$ holds. The boundary term is the symplectic potential $\theta=\mathrm{Sc}(\bar{\tilde p}\,d\tilde q)$, and on shell $dS=\theta_2-\theta_1$: the action generates the canonical transformation between its endpoints.</li>
-<li>The phase-space action $\int[\mathrm{Sc}(\bar{\tilde p}\dot{\tilde q})-H]dt$ has Hamilton's equations as its critical-point equations.</li>
+<li>Its first variation is the sum of a bulk term and a boundary term. The bulk term vanishes for all variations exactly when the quaternion Euler–Lagrange equation $\frac{d}{dt}\partial_{\dot{\tilde q}}L-\partial_{\tilde q}L=0$ holds. The boundary term is the symplectic potential $\theta=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$, and on shell $dS=\theta_2-\theta_1$: the action generates the canonical transformation between its endpoints.</li>
+<li>The phase-space action $\int[\mathrm{Sc}(\tilde p^{\natural}\dot{\tilde q})-H]dt$ has Hamilton's equations as its critical-point equations.</li>
 <li>The second variation defines the Jacobi operator $\mathcal{J}\delta\tilde q=-m\,\delta\ddot{\tilde q}-V''\delta\tilde q$ and the geodesic-deviation equation $m\ddot\xi+V''\xi=0$; conjugate points are where the classical extremum ceases to be a strict minimum.</li>
-<li>The free rotor action $\frac{\lambda}{2}\int N(\dot{\tilde R})dt$ on the group of unit quaternions has the geodesic equation $\mathrm{Ve}(\ddot{\tilde R}\bar{\tilde R})=0$, whose solutions are the one-parameter subgroups $\tilde R(t)=\tilde R(0)\exp(+\tfrac12\tilde\omega_bt)$: the free rigid body's motion.</li>
+<li>The free rotor action $\frac{\lambda}{2}\int N(\dot{\tilde R})dt$ on the group of unit quaternions has the geodesic equation $\mathrm{Ve}(\ddot{\tilde R}\tilde R^{\natural})=0$, whose solutions are the one-parameter subgroups $\tilde R(t)=\tilde R(0)\exp(+\tfrac12\tilde\omega_bt)$: the free rigid body's motion.</li>
 <li>The stationary-phase lemma evaluates an oscillatory sum over trajectories as a sum over the critical points of the action, weighted by $e^{iS[\tilde q_c]/\hbar}$ and the fluctuation factor. The classical content is the identification of the critical points with the classical paths; the statement is a theorem about an integral and is not a quantisation.</li>
 <li>The action as a function of its endpoint is Hamilton's principal function, and its eikonal equation is the Hamilton–Jacobi equation $\partial_tW+H(\tilde q,\partial_{\tilde q}W)=0$.</li>
 </ul>
@@ -318,11 +318,11 @@ $$</p>
 <td>Conjugate momentum</td>
 </tr>
 <tr>
-<td>$\theta=\mathrm{Sc}(\bar{\tilde p}\,d\tilde q)$</td>
+<td>$\theta=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$</td>
 <td>Symplectic potential (boundary term)</td>
 </tr>
 <tr>
-<td>$S_{\mathrm{ps}}=\int[\mathrm{Sc}(\bar{\tilde p}\dot{\tilde q})-H]dt$</td>
+<td>$S_{\mathrm{ps}}=\int[\mathrm{Sc}(\tilde p^{\natural}\dot{\tilde q})-H]dt$</td>
 <td>Phase-space action</td>
 </tr>
 <tr>
@@ -338,7 +338,7 @@ $$</p>
 <td>Deviation field; $\mathcal{J}\xi=0$ is the Jacobi/geodesic-deviation equation</td>
 </tr>
 <tr>
-<td>$N(\tilde q)=\tilde q\bar{\tilde q}$</td>
+<td>$N(\tilde q)=\tilde q\tilde q^{\natural}$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>

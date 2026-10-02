@@ -68,7 +68,7 @@ $$</p>
 $$</p>
 <p>Each coefficient $\hat p_k$ is purely imaginary as a complex scalar, and each is paired with a real quaternion unit, so $\tilde p$ has a purely imaginary vector part: it is <strong>Hermitian</strong>,</p>
 <p>$$
-\tilde p^\dagger = \tilde p, \qquad \tilde p \in \mathbb{M}_+.
+\tilde p^{*} = \tilde p, \qquad \tilde p \in \mathbb{M}_+.
 $$</p>
 <p>The quaternion square of the momentum is computed with $e_j e_k + e_k e_j = -2\delta_{jk}e_0$, valid because the spatial components commute:</p>
 <p>$$
@@ -78,13 +78,13 @@ $$</p>
 $$</p>
 <p>the cross terms cancelling by antisymmetry of $\epsilon_{jkl}$ against the symmetric product $\hat p_j \hat p_k$. The biquaternion norm of the momentum is therefore</p>
 <p>$$
-\tilde p\,\bar{\tilde p} = -\tilde p^{\,2} = \hat{\mathbf p}^2\, e_0,
+\tilde p\,\tilde p^{\natural} = -\tilde p^{\,2} = \hat{\mathbf p}^2\, e_0,
 \qquad
-\bar{\tilde p} = -\tilde p,
+\tilde p^{\natural} = -\tilde p,
 $$</p>
 <p>so that the same quadratic object appears with either sign according to whether it is the square or the biquaternion norm. The kinetic energy is the biquaternion norm up to the sign that makes it positive:</p>
 <p>$$
-\tilde T = -\frac{\tilde p^2}{2m} = \frac{\tilde p\,\bar{\tilde p}}{2m} = \frac{\hat{\mathbf p}^2}{2m}\,e_0 .
+\tilde T = -\frac{\tilde p^2}{2m} = \frac{\tilde p\,\tilde p^{\natural}}{2m} = \frac{\hat{\mathbf p}^2}{2m}\,e_0 .
 $$</p>
 <p>This is the first instance of a pattern that recurs throughout the subcategory: <strong>the kinetic term is the biquaternion norm of the momentum</strong>, and its reality and positivity are statements about the biquaternion norm on the Hermitian subspace.</p>
 <h3 id="the-equation">The equation</h3>
@@ -134,7 +134,7 @@ $$</p>
 <p>$$
 \tilde p^{\,2}\psi_{\mathbf k} = \hbar^2 \mathbf k^2 \psi_{\mathbf k} = -\hbar^2 k^2\,\psi_{\mathbf k},
 \qquad
-\tilde p\,\bar{\tilde p}\,\psi_{\mathbf k} = \hbar^2 k^2\,\psi_{\mathbf k}.
+\tilde p\,\tilde p^{\natural}\,\psi_{\mathbf k} = \hbar^2 k^2\,\psi_{\mathbf k}.
 $$</p>
 <p>The operator $\hbar\mathbf k$ is a real quaternion, so $\tilde p$ is diagonalised on the plane waves by left multiplication in the vector slots; the two spinor components share the same eigenvalue. The phase $e^{i(\mathbf k\cdot\mathbf x-\omega t)}$ is the standard Schrödinger phase; what the biquaternion reading adds is that the <strong>imaginary unit in it is the canonical central one</strong>, not a chosen complex structure.</p>
 <h3 id="dispersion-and-the-location-of-the-wave-vector">Dispersion and the location of the wave vector</h3>
@@ -152,7 +152,7 @@ $$</p>
 $$</p>
 <p>whose biquaternion norm is</p>
 <p>$$
-N(\tilde K) = \tilde K \bar{\tilde K} = -\frac{\omega^2}{c^2} + k^2
+N(\tilde K) = \tilde K \tilde K^{\natural} = -\frac{\omega^2}{c^2} + k^2
 = k^2\left(1 - \frac{\hbar^2 k^2}{4m^2c^2}\right).
 $$</p>
 <p>For the non-relativistic dispersion the wave four-vector is <strong>spacelike</strong> for every $k < 2mc/\hbar$, so the free non-relativistic particle never sits on the light cone: its wave four-vector is not a zero divisor. It touches the null cone only at $k = 2mc/\hbar$, where $\hbar k = 2mc$ and the non-relativistic dispersion is already outside its domain. The free non-relativistic solutions therefore live strictly inside the invertible (spacelike) region of $\mathbb{M}_-$; the null cone, which the last article of this subcategory treats as a physical locus, is reached only by genuinely massless propagation. This is the material-sector counterpart of the fact that the free particle has $E = p^2/2m$ rather than $E = pc$.</p>
@@ -298,9 +298,9 @@ $$</p>
 $$</p>
 <p>a central unitary element in the framework's sense,</p>
 <p>$$
-\tilde U\tilde U^\dagger = e_0 .
+\tilde U\tilde U^{*} = e_0 .
 $$</p>
-<p>It is not a unit-norm element of the Lorentz group: for a central element $\lambda e_0$ the condition $\tilde\Lambda\bar{\tilde\Lambda} = e_0$ reads $\lambda^2 = 1$, so $\lambda = \pm1$, whereas $e^{-iE t/\hbar}$ has unit modulus but is not $\pm1$ at generic times. The two notions of unit — $\tilde U\tilde U^\dagger = e_0$ for the unitary group and $\tilde\Lambda\bar{\tilde\Lambda} = e_0$ for the rotor group — must be kept apart, and the free evolution belongs to the first, exactly as the path-integral phase does. In particular, the free evolution operator preserves the trace form $\mathrm{Tr}(\psi^\dagger\psi)$ and preserves the sector assignment of a field that begins in $\mathbb{M}_+$.</p>
+<p>It is not a unit-norm element of the Lorentz group: for a central element $\lambda e_0$ the condition $\tilde\Lambda\tilde\Lambda^{\natural} = e_0$ reads $\lambda^2 = 1$, so $\lambda = \pm1$, whereas $e^{-iE t/\hbar}$ has unit modulus but is not $\pm1$ at generic times. The two notions of unit — $\tilde U\tilde U^{*} = e_0$ for the unitary group and $\tilde\Lambda\tilde\Lambda^{\natural} = e_0$ for the rotor group — must be kept apart, and the free evolution belongs to the first, exactly as the path-integral phase does. In particular, the free evolution operator preserves the trace form $\mathrm{Tr}(\psi^\dagger\psi)$ and preserves the sector assignment of a field that begins in $\mathbb{M}_+$.</p>
 <h2 id="the-module-factor-and-the-meaning-of-a-spin-0-field">The Module Factor and the Meaning of a Spin-0 Field</h2>
 <p>The free problem displays the subcategory's central convention most clearly, so it is worth stating in full.</p>
 <p>The framework's state module $\mathbb{B}\tilde P \cong \mathbb{C}^2$ is the algebra's generic two-state module. The free Hamiltonian is central, so the free dynamics acts on it as the identity; the two components are exactly degenerate and no relative phase accumulates. For a spin-0 problem the module factor can therefore be fixed once and for all, and the physical content is carried by the scalar envelope. The vector-slot elements $\tilde S_k = \tfrac{\hbar}{2}ie_k$, which the companion articles on angular momentum and on the hydrogen atom use as the algebra's spin operators, are conserved by the free evolution and generate no motion; a spin orientation, if one is attached to the module, is a spectator of the free dynamics. The genuinely spinorial effects — precession in a magnetic field, Stern–Gerlach splitting, resonance — require a Hamiltonian that is <strong>not</strong> central, and they belong to the sibling spin subcategories, not here.</p>
@@ -312,7 +312,7 @@ $$</p>
 <p><strong>What the biquaternion notation provides.</strong></p>
 <ul>
 <li><strong>Centrality of the free Hamiltonian, made manifest.</strong> The free Hamiltonian is literally a scalar multiple of $e_0$: $\tilde H = h_0 e_0 \in \mathbb{C}_{\mathbb{B}}$. The free evolution is therefore a central phase, the free propagator is a central element, and the module factor is frozen. In a representation in which the two components were written as an arbitrary pair, this would have to be checked by hand; here it is a one-line consequence of $\tilde H \in \mathbb{C}_{\mathbb{B}}$.</li>
-<li><strong>The kinetic term as a biquaternion norm.</strong> $\tilde T = -\tilde p^2/2m = \tilde p\bar{\tilde p}/2m$. The sign that makes the kinetic energy positive is the sign of the biquaternion norm on the Hermitian subspace, and the reality of the kinetic term is the statement that $\tilde p$ is Hermitian.</li>
+<li><strong>The kinetic term as a biquaternion norm.</strong> $\tilde T = -\tilde p^2/2m = \tilde p\tilde p^{\natural}/2m$. The sign that makes the kinetic energy positive is the sign of the biquaternion norm on the Hermitian subspace, and the reality of the kinetic term is the statement that $\tilde p$ is Hermitian.</li>
 <li><strong>A canonical complex structure.</strong> The phase $e^{i(\mathbf k\cdot\mathbf x-\omega t)}$ uses the central scalar imaginary, which the algebra supplies; it is not a chosen complex structure. This is the free-particle instance of the property that the path-integral phase is central and canonical.</li>
 <li><strong>A material-sector location for the dispersion.</strong> The wave four-vector $\tilde K = i\omega/c\,e_0 + \mathbf k$ is an element of $\mathbb{M}_-$, and its biquaternion norm $N(\tilde K) = k^2(1 - \hbar^2k^2/4m^2c^2)$ shows that the free non-relativistic solutions are spacelike and off the null cone — the cone that the last article of the subcategory treats as a physical locus.</li>
 <li><strong>The probability from the trace, not from the biquaternion norm.</strong> The positivity of $\rho = \mathrm{Tr}(\psi^\dagger\psi)$ is a property of the trace pairing on $\mathbb{M}_+$, while the biquaternion norm of the same spinor vanishes identically because the state module lies on the zero divisor cone. The two quadratic structures of the algebra play distinct roles, and the free problem exhibits both at once.</li>
@@ -332,7 +332,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The free biquaternion Schrödinger equation is $i\hbar\partial_t\psi = \tilde H\psi$ with</p>
 <p>$$
-\tilde H = \frac{\hat{\mathbf p}^2}{2m}\,e_0 = \frac{\tilde p\bar{\tilde p}}{2m} = -\frac{\tilde p^2}{2m} \in \mathbb{R}e_0 \subset \mathbb{M}_+,
+\tilde H = \frac{\hat{\mathbf p}^2}{2m}\,e_0 = \frac{\tilde p\tilde p^{\natural}}{2m} = -\frac{\tilde p^2}{2m} \in \mathbb{R}e_0 \subset \mathbb{M}_+,
 \qquad
 \tilde p = -i\hbar\nabla,
 $$</p>
@@ -342,7 +342,7 @@ $$</p>
 <p>$$
 K_0(\mathbf x,t) = \left(\frac{m}{2\pi i\hbar t}\right)^{3/2}\exp\!\left(\frac{im|\mathbf x|^2}{2\hbar t}\right)
 $$</p>
-<p>is central, is a complex scalar times $e_0$, and satisfies the composition law, verified numerically on a two-packet superposition to a relative error of order $10^{-14}$. The free evolution operator $\tilde U = e^{-i\tilde Ht/\hbar}$ is a central unitary, $\tilde U\tilde U^\dagger = e_0$, but not a unit-norm rotor. The framework thus supplies the phase, its canonical imaginary unit, the sector location, and the trace-based probability; it does not supply the position operator, the module's dynamics, or any non-central correction, none of which the free problem requires.</p>
+<p>is central, is a complex scalar times $e_0$, and satisfies the composition law, verified numerically on a two-packet superposition to a relative error of order $10^{-14}$. The free evolution operator $\tilde U = e^{-i\tilde Ht/\hbar}$ is a central unitary, $\tilde U\tilde U^{*} = e_0$, but not a unit-norm rotor. The framework thus supplies the phase, its canonical imaginary unit, the sector location, and the trace-based probability; it does not supply the position operator, the module's dynamics, or any non-central correction, none of which the free problem requires.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -389,7 +389,7 @@ $$</p>
 <td>Momentum component</td>
 </tr>
 <tr>
-<td>$\tilde p^2 = -\hat{\mathbf p}^2 e_0$, $\tilde p\bar{\tilde p} = \hat{\mathbf p}^2 e_0$</td>
+<td>$\tilde p^2 = -\hat{\mathbf p}^2 e_0$, $\tilde p\tilde p^{\natural} = \hat{\mathbf p}^2 e_0$</td>
 <td>Quaternion square and biquaternion norm of the momentum</td>
 </tr>
 <tr>
@@ -397,7 +397,7 @@ $$</p>
 <td>Free Hamiltonian; central</td>
 </tr>
 <tr>
-<td>$\tilde T = -\tilde p^2/2m = \tilde p\bar{\tilde p}/2m$</td>
+<td>$\tilde T = -\tilde p^2/2m = \tilde p\tilde p^{\natural}/2m$</td>
 <td>Kinetic energy as a biquaternion norm</td>
 </tr>
 <tr>

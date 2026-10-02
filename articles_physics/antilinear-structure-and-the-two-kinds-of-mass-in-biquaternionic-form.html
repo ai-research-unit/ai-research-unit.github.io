@@ -55,8 +55,8 @@
 <p>A mass term is the only term of a field equation that carries no derivative, and that single fact fixes its algebraic shape. Every other term pairs the field with a gradient; a term with no derivative has nothing to differentiate, so it must pair the field with <em>another field</em> — and since a free equation is written in terms of one field, that other field must be a <strong>conjugate</strong> of it. The only freedom left is <em>which</em> conjugate. That choice is not cosmetic. It is what separates the two kinds of mass, and it is why the words "mass" and "conjugation" belong in the same sentence.</p>
 <p>The framework carries several conjugations, and they are easy to conflate because two of them are antilinear and both are called a real structure: the algebra's $\flat$ and the <strong>charge conjugation</strong> $\mathcal{C}$ that lives on the spinor module. This article separates them and settles what each is for. Its claims:</p>
 <ul>
-<li><strong>Established, and recomputed below.</strong> The biquaternion algebra carries three antilinear involutions — complex conjugation $^{*}$, Hermitian conjugation $^{\dagger}=\bar{\cdot}^{\,*}$, and the anti-Hermitian conjugation $\flat=-\dagger$ — alongside the <em>linear</em> quaternion conjugation $\bar{\cdot}$. Their fixed spaces are four distinct subspaces, of real dimensions $2, 4, 4$ and $4$, and only the last two of them are the framework's sectors. In particular the one involution that is <strong>linear</strong>, quaternion conjugation, is the one whose fixed space is <em>not</em> a sector.</li>
-<li><strong>Established, and recomputed below.</strong> The <strong>Dirac mass</strong> is linear and couples the two chiralities, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$; it pairs no field with its own conjugate. The <strong>Majorana mass</strong> is antilinear and pairs a field with its own conjugate, and it is physical: its reality condition has a four-real-dimensional solution space and it preserves the mass shell $p^2 = m^2$.</li>
+<li><strong>Established, and recomputed below.</strong> The biquaternion algebra carries three antilinear involutions — complex conjugation $\bar{\cdot}$, Hermitian conjugation ${}^{*}=\overline{\cdot^{\natural}}$, and the anti-Hermitian conjugation $\flat=-{}^{*}$ — alongside the <em>linear</em> quaternion conjugation ${}^{\natural}$. Their fixed spaces are four distinct subspaces, of real dimensions $2, 4, 4$ and $4$, and only the last two of them are the framework's sectors. In particular the one involution that is <strong>linear</strong>, quaternion conjugation, is the one whose fixed space is <em>not</em> a sector.</li>
+<li><strong>Established, and recomputed below.</strong> The <strong>Dirac mass</strong> is linear and couples the two chiralities, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$; it pairs no field with its own conjugate. The <strong>Majorana mass</strong> is antilinear and pairs a field with its own conjugate, and it is physical: its reality condition has a four-real-dimensional solution space and it preserves the mass shell $p^2 = m^2$.</li>
 <li><strong>Established, and recomputed below.</strong> The retired single-field equation $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ fails, and it fails <strong>on the dispersion</strong>: its central-phase plane waves have nullity $0$ on the timelike shell and nullity $4$ on the spacelike shell, so its solutions lie on the spacelike locus. This is reproduced here from the block representation by pure real arithmetic.</li>
 <li>
 <p><strong>The distinction the whole article turns on.</strong> The diagnosis of that failure is the <em>pairing</em>, not the antilinearity. A Majorana mass is also antilinear and is perfectly physical. What the retired equation did was use the <strong>algebra's</strong> real structure $\flat$ as though it were the mass of a field on the <strong>module</strong> — and the two are different real structures on different spaces.</p>
@@ -75,18 +75,18 @@ $$</p>
 <p>Two involutions generate the rest.</p>
 <p><strong>Quaternion conjugation</strong> reverses the vector part and fixes the center:</p>
 <p>$$
-\bar{\tilde{Q}} = (a_0 + ib_0)e_0 - (a_1 + ib_1)e_1 - (a_2 + ib_2)e_2 - (a_3 + ib_3)e_3 .
+\tilde{Q}^{\natural} = (a_0 + ib_0)e_0 - (a_1 + ib_1)e_1 - (a_2 + ib_2)e_2 - (a_3 + ib_3)e_3 .
 $$</p>
-<p>It is $\mathbb{C}$-<strong>linear</strong>, because it fixes $i$, and it is an anti-automorphism, $\overline{\tilde{A}\tilde{B}} = \bar{\tilde{B}}\,\bar{\tilde{A}}$.</p>
+<p>It is $\mathbb{C}$-<strong>linear</strong>, because it fixes $i$, and it is an anti-automorphism, $(\tilde{A}\tilde{B})^{\natural} = \tilde{B}^{\natural}\,\tilde{A}^{\natural}$.</p>
 <p><strong>Complex conjugation</strong> negates the scalar imaginary and fixes the units:</p>
 <p>$$
-\tilde{Q}^{*} = (a_0 - ib_0)e_0 + (a_1 - ib_1)e_1 + (a_2 - ib_2)e_2 + (a_3 - ib_3)e_3 .
+\bar{\tilde{Q}} = (a_0 - ib_0)e_0 + (a_1 - ib_1)e_1 + (a_2 - ib_2)e_2 + (a_3 - ib_3)e_3 .
 $$</p>
-<p>It is $\mathbb{C}$-<strong>antilinear</strong>, $(\alpha\tilde{A})^{*} = \alpha^{*}\tilde{A}^{*}$, and it is an automorphism, $(\tilde{A}\tilde{B})^{*} = \tilde{A}^{*}\tilde{B}^{*}$.</p>
+<p>It is $\mathbb{C}$-<strong>antilinear</strong>, $\overline{(\alpha\tilde{A})} = \bar{\alpha}\,\bar{\tilde{A}}$, and it is an automorphism, $\overline{(\tilde{A}\tilde{B})} = \bar{\tilde{A}}\,\bar{\tilde{B}}$.</p>
 <p>Composing them gives the two Hermitian conjugations of the series. Because one factor is linear and the other antilinear, each composite is antilinear:</p>
 <p>$$
-\tilde{Q}^\dagger = \bar{\tilde{Q}}^{\,*} = \big(\tilde{Q}^{*}\big)\bar{\ } , \qquad
-\tilde{Q}^\flat = -\tilde{Q}^\dagger .
+\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = \big(\bar{\tilde{Q}}\big)^{\natural} , \qquad
+\tilde{Q}^\flat = -\tilde{Q}^{*} .
 $$</p>
 <p>Both are anti-automorphisms; the second carries a sign, $(\tilde{A}\tilde{B})^\flat = -\tilde{B}^\flat\tilde{A}^\flat$, and that sign is its only departure from an ordinary anti-automorphism. The two differ by the central sign alone, and that sign is what moves the fixed space from one sector to the other.</p>
 <div class="table-scroll"><table>
@@ -101,28 +101,28 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\bar{\tilde{Q}}$</td>
+<td>$\tilde{Q}^{\natural}$</td>
 <td>$e_k \mapsto -e_k$, $i \mapsto i$</td>
 <td>linear</td>
 <td>anti-automorphism</td>
 <td>$\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ (center), real dim $2$</td>
 </tr>
 <tr>
-<td>$\tilde{Q}^{*}$</td>
+<td>$\bar{\tilde{Q}}$</td>
 <td>$e_k \mapsto e_k$, $i \mapsto -i$</td>
 <td>antilinear</td>
 <td>automorphism</td>
 <td>$\mathbb{H}_{\mathbb{B}}$, real dim $4$</td>
 </tr>
 <tr>
-<td>$\tilde{Q}^{\dagger} = \bar{\tilde{Q}}^{\,*}$</td>
+<td>$\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$</td>
 <td>$e_k \mapsto -e_k$, $i \mapsto -i$</td>
 <td>antilinear</td>
 <td>anti-automorphism</td>
 <td>$\mathbb{M}_+$, real dim $4$</td>
 </tr>
 <tr>
-<td>$\tilde{Q}^{\flat} = -\tilde{Q}^{\dagger}$</td>
+<td>$\tilde{Q}^{\flat} = -\tilde{Q}^{*}$</td>
 <td>$e_k \mapsto -e_k$, $i \mapsto -i$, with a sign</td>
 <td>antilinear</td>
 <td>anti-automorphism with twist</td>
@@ -148,7 +148,7 @@ $$</p>
 <p>$$
 \text{mass} \;\sim\; \tilde{\Psi}^{\,\bullet}\,\tilde{\Psi} \quad\text{or}\quad \tilde{\Psi}\,\tilde{\Psi}^{\,\bullet},
 $$</p>
-<p>with $\bullet$ one of $\bar{\cdot}$, $*$, $\dagger$, $\flat$. The involutions are not interchangeable — they have different fixed spaces — so <strong>each choice of involution is a different kind of mass</strong>. That is the whole content of the phrase "the two kinds of mass": the kinds are indexed by the conjugation, not by a numerical value.</p>
+<p>with $\bullet$ one of ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$, $\flat$. The involutions are not interchangeable — they have different fixed spaces — so <strong>each choice of involution is a different kind of mass</strong>. That is the whole content of the phrase "the two kinds of mass": the kinds are indexed by the conjugation, not by a numerical value.</p>
 <p>Two of those choices are realised in physics, and they are the two extremes of the table.</p>
 <p><strong>The identity-like choice gives the Dirac mass.</strong> The pairing that uses the <em>chiral partner</em> rather than a conjugation asks for no involution at all: it pairs $\tilde{\Psi}_L$ with $\tilde{\Psi}_R$, two independent halves of one field. It is linear, and it is the mass term of the Dirac equation.</p>
 <p><strong>The conjugation choice gives the Majorana mass.</strong> The pairing that uses the field's own conjugate, $\tilde{\Psi}$ with $\tilde{\Psi}^{\,\bullet}$, requires the field to <em>equal</em> its conjugate — a <strong>reality condition</strong> that halves the field's independent components. It is antilinear, and it is the mass term of a Majorana fermion.</p>
@@ -217,11 +217,11 @@ $$</p>
 <p>Both are masses; neither is a mistake. The two rows of the table are what the phrase "two kinds of mass" names, and the reason they are both called a mass is that both are non-derivative bilinears — the argument of the previous section.</p>
 <p>In biquaternionic form the Dirac mass is the linear chiral pair of the parent article,</p>
 <p>$$
-\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
+\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
 $$</p>
-<!-- CONVENTION — the massive equation, canonical form. This linear, chirality-off-diagonal pair IS the biquaternionic Dirac mass for m ≠ 0; the derived articles state it in this orientation (∇̃ acting on Ψ_R, ∇̄̃ on Ψ_L). Two standing facts. (i) The mass term is LINEAR: the continuous central phase (fermion number) passes through it, so the vector U(1) is exact for the massive field, and what the mass breaks is the AXIAL symmetry. (ii) It is NOT the antilinear single-field equation ∇̃Ψ = mΨ♭ of the next section: that equation belongs to the algebra's real structure ♭ and is a different equation. Do not replace this pair by the antilinear form; this article exists to state the distinction. -->
+<!-- CONVENTION — the massive equation, canonical form. This linear, chirality-off-diagonal pair IS the biquaternionic Dirac mass for m ≠ 0; the derived articles state it in this orientation (∇̃ acting on Ψ_R, ∇̃^♮ on Ψ_L). Two standing facts. (i) The mass term is LINEAR: the continuous central phase (fermion number) passes through it, so the vector U(1) is exact for the massive field, and what the mass breaks is the AXIAL symmetry. (ii) It is NOT the antilinear single-field equation ∇̃Ψ = mΨ♭ of the next section: that equation belongs to the algebra's real structure ♭ and is a different equation. Do not replace this pair by the antilinear form; this article exists to state the distinction. -->
 
-<p>the massless case being $\tilde{\nabla}\tilde{\Psi} = 0$. Applying $\bar{\tilde{\nabla}}$ to the first and substituting the second, with $\bar{\tilde{\nabla}}\tilde{\nabla} = \Box$, gives the Klein–Gordon equation for each chirality,</p>
+<p>the massless case being $\tilde{\nabla}\tilde{\Psi} = 0$. Applying $\tilde{\nabla}^{\natural}$ to the first and substituting the second, with $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$, gives the Klein–Gordon equation for each chirality,</p>
 <p>$$
 \Box\tilde{\Psi}_R = m^2\tilde{\Psi}_R ,
 $$</p>
@@ -233,7 +233,7 @@ $$</p>
 <li>coupling the <strong>two chiralities</strong> requires a right multiplication by the <em>other</em> chirality — linear, off-diagonal, the Dirac mass;</li>
 <li>pairing the field with <strong>its own conjugate</strong> requires an involution of the field — antilinear, the Majorana mass.</li>
 </ul>
-<p>A single equation with a single field and a single mass term can realise the second. It cannot realise the first, because the first needs two independent chiralities and hence two fields, which is what the pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$ provides.</p>
+<p>A single equation with a single field and a single mass term can realise the second. It cannot realise the first, because the first needs two independent chiralities and hence two fields, which is what the pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ provides.</p>
 <h2 id="two-real-structures-on-two-different-spaces">Two Real Structures, on Two Different Spaces</h2>
 <p>This is the section on which the retired equation's diagnosis turns, and it separates two objects that the word "conjugation" hides.</p>
 <p>The framework calls $\flat$ the algebra's <strong>real structure</strong>. The neutrino companion constructs charge conjugation $\mathcal{C}$ on the spinor module and calls it a real structure too. Both are antilinear, both are involutions up to sign, and both pair an object with its own conjugate. They are nevertheless <strong>different maps on different spaces</strong>, and neither may stand in for the other:</p>
@@ -278,7 +278,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The third row and the fourth row are the substance. The fixed spaces have the <em>same real dimension four</em>, which is why the two are so easy to identify — and why the identification is wrong. The neutrino companion tests it on the equation and reports the obstruction: <strong>the Dirac operator does not preserve $\mathbb{M}_-$.</strong> Left multiplication by a spatial generator carries an element of $\mathbb{M}_-$ out of the subspace, because the gradient is a sum of odd Clifford elements while $\mathbb{M}_-$ is an even-algebra subspace. A reality condition that the kinetic operator does not respect cannot be imposed on a field: the constrained field would not stay constrained under time evolution. So $\mathbb{M}_-$ is a perfectly good real form <em>of the algebra</em> — Lorentz-stable under the rotor action $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ — and simultaneously not the Majorana reality condition <em>of the module</em>, despite the matching dimension count.</p>
+<p>The third row and the fourth row are the substance. The fixed spaces have the <em>same real dimension four</em>, which is why the two are so easy to identify — and why the identification is wrong. The neutrino companion tests it on the equation and reports the obstruction: <strong>the Dirac operator does not preserve $\mathbb{M}_-$.</strong> Left multiplication by a spatial generator carries an element of $\mathbb{M}_-$ out of the subspace, because the gradient is a sum of odd Clifford elements while $\mathbb{M}_-$ is an even-algebra subspace. A reality condition that the kinetic operator does not respect cannot be imposed on a field: the constrained field would not stay constrained under time evolution. So $\mathbb{M}_-$ is a perfectly good real form <em>of the algebra</em> — Lorentz-stable under the rotor action $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ — and simultaneously not the Majorana reality condition <em>of the module</em>, despite the matching dimension count.</p>
 <p>The moral is the one this article exists to record:</p>
 <p>$$
 \boxed{\ \text{the algebra's } \flat \text{ and the module's } \mathcal{C} \text{ are different real structures; the dimension count does not identify them.}\ }
@@ -307,12 +307,12 @@ $$</p>
 <h2 id="the-retired-equation-the-diagnosis-is-the-dispersion">The Retired Equation: The Diagnosis Is the Dispersion</h2>
 <p>The series previously wrote the massive equation as a single <strong>antilinear</strong> equation in one field,</p>
 <p>$$
-\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat , \qquad \tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger ,
+\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat , \qquad \tilde{\Psi}^\flat = -\tilde{\Psi}^{*} ,
 $$</p>
 <!-- CONVENTION — verified, do not "fix". The claim that the retired equation ∇̃Ψ = mΨ♭ has its central-phase plane waves on the SPACELIKE locus is deliberate and is re-derived in this section (pure real arithmetic, no libraries): the two-frequency system for a single-mode field has nullity 0 on the timelike shell k₀² = k² + m² and nullity 4 on the spacelike shell k² = k₀² + m². So the spacelike dispersion is a property of that equation, not a typo, and it is exactly why the equation was retired as the mass term. Do not relocate it to the physical mass shell. -->
 
 <p>using the algebra's real structure. The equation is well formed; what disqualifies it is not its shape but its solutions.</p>
-<p>Take the central-phase plane-wave ansatz of the parent article, in the block gamma representation of the canonical-quantization and spin–statistics articles, with $\tilde{\Psi} = \tilde{\Psi}_0\exp(i\,\mathrm{Sc}(\tilde{k}\bar{\tilde{Q}})) = \tilde{\Psi}_0e^{i\theta}$ and $\tilde{k} = ik_0e_0 + e_1k_1 + e_2k_2 + e_3k_3$, $k_0 = \omega/c$. A single phase cannot satisfy the equation: $\tilde{\nabla}$ multiplies the phase by $+ik$, while $\flat$ conjugates the phase, so the two sides carry $e^{+i\theta}$ and $e^{-i\theta}$ and cannot match. The equation's solutions are therefore necessarily <strong>two-frequency</strong> superpositions,</p>
+<p>Take the central-phase plane-wave ansatz of the parent article, in the block gamma representation of the canonical-quantization and spin–statistics articles, with $\tilde{\Psi} = \tilde{\Psi}_0\exp(i\,\mathrm{Sc}(\tilde{k}\tilde{Q}^{\natural})) = \tilde{\Psi}_0e^{i\theta}$ and $\tilde{k} = ik_0e_0 + e_1k_1 + e_2k_2 + e_3k_3$, $k_0 = \omega/c$. A single phase cannot satisfy the equation: $\tilde{\nabla}$ multiplies the phase by $+ik$, while $\flat$ conjugates the phase, so the two sides carry $e^{+i\theta}$ and $e^{-i\theta}$ and cannot match. The equation's solutions are therefore necessarily <strong>two-frequency</strong> superpositions,</p>
 <p>$$
 \tilde{\Psi} = \tilde{\Psi}_0\,e^{i\theta} + \tilde{\Psi}_1\,e^{-i\theta},
 $$</p>
@@ -320,12 +320,12 @@ $$</p>
 <p>Since $\flat$ is antilinear and $i^\flat = -i$, the conjugation acts on the two modes by</p>
 <p>$$
 \tilde{\nabla}\tilde{\Psi} = i\tilde{k}\tilde{\Psi}_0e^{i\theta} - i\tilde{k}\tilde{\Psi}_1e^{-i\theta}, \qquad
-\tilde{\Psi}^\flat = -\tilde{\Psi}_0^\dagger e^{-i\theta} - \tilde{\Psi}_1^\dagger e^{i\theta} ,
+\tilde{\Psi}^\flat = -\tilde{\Psi}_0^{*} e^{-i\theta} - \tilde{\Psi}_1^{*} e^{i\theta} ,
 $$</p>
 <p>and matching exponentials gives the two matrix equations</p>
 <p>$$
-i\tilde{k}\tilde{\Psi}_0 + m\tilde{\Psi}_1^{\dagger} = 0, \qquad
-i\tilde{k}\tilde{\Psi}_1 - m\tilde{\Psi}_0^{\dagger} = 0 .
+i\tilde{k}\tilde{\Psi}_0 + m\tilde{\Psi}_1^{*} = 0, \qquad
+i\tilde{k}\tilde{\Psi}_1 - m\tilde{\Psi}_0^{*} = 0 .
 $$</p>
 <p>These are $16$ real linear equations in the $16$ real unknowns $(\tilde{\Psi}_0,\tilde{\Psi}_1)$. Their nullity, computed by elimination and quoted for a representative momentum, is</p>
 <div class="table-scroll"><table>
@@ -366,7 +366,7 @@ $$</p>
 <p>So the correct statement is narrower than "the antilinear equation was wrong", and sharper than "the antilinear equation was a slip". The framework had <strong>two</strong> real structures and used one where the other was meant; the dispersion is the physical signature of the substitution.</p>
 <h2 id="what-the-antilinear-structure-is-for">What the Antilinear Structure Is For</h2>
 <p>The algebra's real structure is retained, and the companion articles use the antilinear structure in four ways, none of which is a Dirac mass.</p>
-<p><strong>The $\mathbb{M}_\pm$ split itself.</strong> The material and informational sectors are the fixed spaces of $\flat$ and $\dagger$, and the framework's identification of $\mathbb{M}_-$ with material space is the statement that the field is anti-Hermitian. The sign convention by which $\flat$ acts as $+$ on $\mathbb{M}_-$ and $-$ on $\mathbb{M}_+$ <em>is</em> the convention that makes $\mathbb{M}_-$ the material sector; the two are one convention seen twice.</p>
+<p><strong>The $\mathbb{M}_\pm$ split itself.</strong> The material and informational sectors are the fixed spaces of $\flat$ and ${}^{*}$, and the framework's identification of $\mathbb{M}_-$ with material space is the statement that the field is anti-Hermitian. The sign convention by which $\flat$ acts as $+$ on $\mathbb{M}_-$ and $-$ on $\mathbb{M}_+$ <em>is</em> the convention that makes $\mathbb{M}_-$ the material sector; the two are one convention seen twice.</p>
 <p><strong>Bilinear pairings and the trace.</strong> The invariant pairings of the series are built on $\flat$, and their order-reversing-with-a-twist character, $(\tilde{A}\tilde{B})^\flat = -\tilde{B}^\flat\tilde{A}^\flat$, is what makes the trace a scalar and not a matrix.</p>
 <p><strong>Kramers degeneracy and antiunitary symmetry.</strong> An antiunitary operator squaring to $-1$ forces every level to be at least doubly degenerate. The theorem is available to the antilinear maps alone — no linear involution yields the conclusion, whatever its spectrum. The framework's real structure is itself an involution, $\flat^2 = +1$, so it is not an operator of that kind: the degeneracy belongs to the antilinear symmetries built on the structure, and the theorem is the sharpest reason the distinction between an antilinear symmetry and a linear one has content.</p>
 <p><strong>The discrete symmetries.</strong> Charge conjugation and time reversal are antilinear, and the CPT companion establishes that the antilinearity is forced — a <em>linear</em> time reversal is not a symmetry of the Dirac equation. The internal matrices of $C$, $P$ and $T$ are Clifford elements, and their grades decide which chirality each carries to: $C$ and $P$ are odd and exchange the chiral halves, $T$ is even and preserves them, so $CPT$ is even and preserves them. The grade governs the chirality; the linearity governs the spacetime parity, since an antilinear map multiplies the induced determinant by $-1$ — the point recorded in <em>The Reflection and the Rotation in Biquaternionic Form</em>.</p>
@@ -412,11 +412,11 @@ $$</p>
 <td>Biquaternion algebra; real dim $8$, complex dim $4$</td>
 </tr>
 <tr>
-<td>$\bar{\tilde{Q}}$, $\tilde{Q}^{*}$, $\tilde{Q}^{\dagger}$, $\tilde{Q}^{\flat}$</td>
+<td>$\tilde{Q}^{\natural}$, $\bar{\tilde{Q}}$, $\tilde{Q}^{*}$, $\tilde{Q}^{\flat}$</td>
 <td>Quaternion, complex, Hermitian, anti-Hermitian conjugations</td>
 </tr>
 <tr>
-<td>$\tilde{Q}^\flat = -\tilde{Q}^\dagger$</td>
+<td>$\tilde{Q}^\flat = -\tilde{Q}^{*}$</td>
 <td>The algebra's real structure; antilinear involution</td>
 </tr>
 <tr>
@@ -424,23 +424,23 @@ $$</p>
 <td>Anti-Hermitian (material) sector, real dim $4$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^\dagger = \tilde{Q}\}$</td>
+<td>$\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\}$</td>
 <td>Hermitian (informational) sector, real dim $4$</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}} = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\}$</td>
+<td>$\mathbb{H}_{\mathbb{B}} = \{\tilde{Q} : \bar{\tilde{Q}} = \tilde{Q}\}$</td>
 <td>Real-quaternion sector, real dim $4$</td>
 </tr>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}} = \{\tilde{Q} : \bar{\tilde{Q}} = \tilde{Q}\}$</td>
+<td>$\mathbb{C}_{\mathbb{B}} = \{\tilde{Q} : \tilde{Q}^{\natural} = \tilde{Q}\}$</td>
 <td>Center, real dim $2$</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla}$, $\bar{\tilde{\nabla}}$</td>
-<td>Biquaternionic gradient and its conjugate; $\tilde{\nabla}\bar{\tilde{\nabla}} = \Box$</td>
+<td>$\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$</td>
+<td>Biquaternionic gradient and its conjugate; $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$</td>
+<td>$\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$</td>
 <td>The Dirac mass: linear, chirality-off-diagonal</td>
 </tr>
 <tr>

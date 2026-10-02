@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>One-Sided Operators on a Clifford Algebra with Signed Hermitian Adjoint — Biquaternion Universe</title>
+  <title>One-Sided Operators on a Hilbert Algebra with Signed Hermitian Adjoint — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -50,22 +50,22 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="one-sided-operators-on-a-clifford-algebra-with-signed-hermitian-adjoint"><strong>One-Sided Operators on a Clifford Algebra with Signed Hermitian Adjoint</strong></h1>
+        <h1 id="one-sided-operators-on-a-hilbert-algebra-with-signed-hermitian-adjoint"><strong>One-Sided Operators on a Hilbert Algebra with Signed Hermitian Adjoint</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>Every two-sided operator of <em>Two-Sided Operators on a Clifford Algebra</em> is the product of a left multiplication and a right multiplication, and the signed Hermitian sandwich of <em>Two-Sided Operators on a Clifford Algebra with Signed Hermitian Adjoint</em> factors accordingly:</p>
+<p>Every two-sided operator of <em>Two-Sided Operators on a Clifford Algebra</em> is the product of a left multiplication and a right multiplication, and the signed Hermitian sandwich of <em>Two-Sided Operators on a Hilbert Algebra with Signed Hermitian Adjoint</em> factors accordingly:</p>
 <p>$$
 \Theta^{\alpha}_x=\Lambda^{\alpha}_x\circ R_{x^{\dagger}},
 \qquad
 \Lambda^{\alpha}_x(y)=\alpha(x)\,y,\qquad R_{x^{\dagger}}(y)=y\,x^{\dagger}.
 $$</p>
-<p>The <strong>signed left multiplication</strong> $\Lambda^{\alpha}_x$ is the one that carries the parity sign, and the <strong>dagger right multiplication</strong> $R_{x^{\dagger}}$ is the one that carries the involution of the base. This article treats the two factors separately. It is the Hermitian counterpart of <em>One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>, where the right factor is the inverse right multiplication $R_{x^{-1}}$; the general theory of the two one-sided families is <em>One-Sided Operators on a Clifford Algebra with Hermitian Adjoint</em> and <em>One-Sided Operators on a Clifford Algebra</em>, and nothing of it is reproved.</p>
+<p>The <strong>signed left multiplication</strong> $\Lambda^{\alpha}_x$ is the one that carries the parity sign, and the <strong>dagger right multiplication</strong> $R_{x^{\dagger}}$ is the one that carries the involution of the base. This article treats the two factors separately. It is the Hermitian counterpart of <em>One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>, where the right factor is the inverse right multiplication $R_{x^{-1}}$; the general theory of the two one-sided families is <em>One-Sided Operators on a Hilbert Algebra with Hermitian Adjoint</em> and <em>One-Sided Operators on a Clifford Algebra</em>, and nothing of it is reproved.</p>
 <p>The two factors have opposite linear behaviour, and that is the first structural fact. The signed left multiplication is defined on the whole algebra and is $\sigma$-free, so it is linear in its parameter, $\Lambda^{\alpha}_{ax}=a\,\Lambda^{\alpha}_x$. The dagger right multiplication is $\sigma$-<strong>semilinear</strong> in its parameter, $R_{(ax)^{\dagger}}=\sigma(a)R_{x^{\dagger}}$, because the dagger is. The product of the two rules is the parameter rule of the two-sided operator,</p>
 <p>$$
 \Theta^{\alpha}_{ax}=\Lambda^{\alpha}_{ax}R_{(ax)^{\dagger}}=a\,\sigma(a)\,\Lambda^{\alpha}_xR_{x^{\dagger}}=a\,\sigma(a)\,\Theta^{\alpha}_x,
 $$</p>
 <p>so the semilinearity of the Hermitian family is entirely in the right factor and the sign is entirely in the left one.</p>
 <p>The second fact is that the adjoint of each one-sided operator, for the form $(x,y)=\mathrm{Sc}(x^{\dagger}y)$, is the one-sided operator of the dagger: $\Lambda^{\alpha}_x$ has adjoint $\Lambda^{\alpha}_{x^{\dagger}}$, and $R_{x^{\dagger}}$ has adjoint $R_{(x^{\dagger})^{\dagger}}=R_x$. On the unitary slice the adjoint is the inverse, and that is where the one-sided operators become unitary and the whole family collapses.</p>
-<p>The algebra, the dagger and the involution of the base are <em>Involutive Clifford Algebras</em>; the general two one-sided families, their composition laws, their mutual commutants and the adjoint theorem are <em>One-Sided Operators on a Clifford Algebra with Hermitian Adjoint</em>; the two-sided operator and its parameter rule are <em>Two-Sided Operators on a Clifford Algebra with Signed Hermitian Adjoint</em>; the module consequences are <em>Pin Representations and Clifford Modules with Signed Hermitian Adjoint</em>; the ideal-theoretic consequences are <em>Spinors as Minimal Left Ideals with Signed Hermitian Adjoint</em>. Nothing owned by those entries is re-derived.</p>
+<p>The algebra, the dagger and the involution of the base are <em>Hilbert Algebras</em>; the general two one-sided families, their composition laws, their mutual commutants and the adjoint theorem are <em>One-Sided Operators on a Hilbert Algebra with Hermitian Adjoint</em>; the two-sided operator and its parameter rule are <em>Two-Sided Operators on a Hilbert Algebra with Signed Hermitian Adjoint</em>; the module consequences are <em>Pin Representations and Hermitian Modules with Signed Hermitian Adjoint</em>; the ideal-theoretic consequences are <em>Spinors as Minimal Left Ideals with Signed Hermitian Adjoint</em>. Nothing owned by those entries is re-derived.</p>
 <p><strong>Conventions.</strong> $A$ is a commutative ring with involution $\sigma$, $V$ is free of finite rank with a non-degenerate $q$, $x^{\dagger}=\sigma(\alpha(x^{r}))$, $\varepsilon_x=(-1)^{|x|}$, $U=\{x:x^{\dagger}x=1\}$. The forms are on the regular module: $(x,y)=\mathrm{Sc}(x^{\dagger}y)$ for the dagger, and the adjoint of an operator is written ${}^{*}$.</p>
 <h2 id="the-signed-left-multiplication">The Signed Left Multiplication</h2>
 <p><strong>Definition.</strong> For $x\in\mathrm{Cl}(V,q)$ the <strong>signed left multiplication</strong> by $x$ is the $A$-linear map</p>
@@ -160,7 +160,7 @@ $$</p>
 <p>$$
 R_{(ax)^{\dagger}}=\sigma(a)\,R_{x^{\dagger}}=-i\,R_{x^{\dagger}},
 $$</p>
-<p>so the two-sided parameter rule is $\Theta^{\alpha}_{ax}=a\sigma(a)\Theta^{\alpha}_x=i(-i)\Theta^{\alpha}_x=\Theta^{\alpha}_x$: the phase of the parameter cancels in the two-sided operator exactly because the left factor is linear and the right factor is antilinear. This is the one-sided form of the semilinearity correction of <em>The Hermitian Sandwich on a Clifford Algebra with Hermitian Adjoint</em>.</p>
+<p>so the two-sided parameter rule is $\Theta^{\alpha}_{ax}=a\sigma(a)\Theta^{\alpha}_x=i(-i)\Theta^{\alpha}_x=\Theta^{\alpha}_x$: the phase of the parameter cancels in the two-sided operator exactly because the left factor is linear and the right factor is antilinear. This is the one-sided form of the semilinearity correction of <em>The Hermitian Sandwich on a Hilbert Algebra with Hermitian Adjoint</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>The signed Hermitian sandwich factors into a <strong>signed left multiplication</strong> and a <strong>dagger right multiplication</strong>,</p>
 <p>$$

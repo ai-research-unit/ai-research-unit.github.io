@@ -65,7 +65,7 @@ The determinant is a formal infinite product of the operator's eigenvalues, and 
 <ul>
 <li><strong>Established (algebra): the fundamental determinant is the biquaternion norm.</strong> In the isomorphism $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ the determinant of the image of $\tilde Q$ is the scalar part of the biquaternion norm,
 $$
-\det\Phi(\tilde Q) = \mathrm{Sc}\big(\tilde Q\bar{\tilde Q}\big) = N(\tilde Q),
+\det\Phi(\tilde Q) = \mathrm{Sc}\big(\tilde Q\tilde Q^{\natural}\big) = N(\tilde Q),
 $$
 a central scalar. Left multiplication and right multiplication by $\tilde Q$ on $\mathbb{B}$ regarded as a four-complex-dimensional space therefore have the same determinant, the square of the fundamental one:
 $$
@@ -87,7 +87,7 @@ the heat-kernel and Seeley–DeWitt expansion that evaluates $\zeta(0)$ and $\ze
 <li><strong>The physical faces.</strong> Two structural consequences are recorded here because later articles use them: the <strong>phase</strong> of a non-Hermitian determinant (the fermion determinant of a chiral or $\theta$-dependent operator) is the framework's route to the $\theta$ vacuum of <em>The Theta Vacuum in Biquaternionic Form</em>, and the <strong>conformal variation</strong> of the determinant is the trace anomaly of <em>The Trace Anomaly in Biquaternionic Form</em>.</li>
 </ul>
 <p>The article proceeds as follows. A section defines the determinant of a module operator and the fundamental determinant of an algebra element. A section proves the regular-representation identity and verifies it. A section connects the determinant to the Gaussian integral and the one-loop action. A section treats regularization, and a section the fermionic determinant and its phase. A section treats the conformal variation, and a section separates what is established from what is interpretation.</p>
-<p><strong>Conventions.</strong> We use those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$; the isomorphism is $\Phi(e_k)=-i\sigma_k$; the biquaternion norm is $N(\tilde Q)=\tilde Q\bar{\tilde Q}\in\mathbb{C}_{\mathbb{B}}$; the trace is $\mathrm{Tr}(\tilde{Q})=2\mathrm{Sc}(\tilde{Q})$; the real bilinear form is $\langle\tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^\dagger\tilde Y)$, positive on $\mathbb{M}_+$ and negative on $\mathbb{M}_-$; the sectors are $\mathbb{M}_-$ (anti-Hermitian) and $\mathbb{M}_+$ (Hermitian). The central kinetic operator is $\tilde K=\Box-m^2$ with $\Box=\tilde\nabla\bar{\tilde\nabla}=\partial_{ict}^2+\Delta$, and the wave biquaternion is $\tilde k=iEe_0+\mathbf{p}$ with $\tilde k\bar{\tilde k}=-p^2$. The Dirac operator and its mass term are linear and chirality-off-diagonal, $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\bar{\tilde\nabla}\tilde\Psi_L=m\tilde\Psi_R$, as <em>Conventions in the Biquaternion Universe</em> fixes.</p>
+<p><strong>Conventions.</strong> We use those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$; the isomorphism is $\Phi(e_k)=-i\sigma_k$; the biquaternion norm is $N(\tilde Q)=\tilde Q\tilde Q^{\natural}\in\mathbb{C}_{\mathbb{B}}$; the trace is $\mathrm{Tr}(\tilde{Q})=2\mathrm{Sc}(\tilde{Q})$; the real bilinear form is $\langle\tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde Y)$, positive on $\mathbb{M}_+$ and negative on $\mathbb{M}_-$; the sectors are $\mathbb{M}_-$ (anti-Hermitian) and $\mathbb{M}_+$ (Hermitian). The central kinetic operator is $\tilde K=\Box-m^2$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$, and the wave biquaternion is $\tilde k=iEe_0+\mathbf{p}$ with $\tilde k\tilde k^{\natural}=-p^2$. The Dirac operator and its mass term are linear and chirality-off-diagonal, $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$, as <em>Conventions in the Biquaternion Universe</em> fixes.</p>
 <h2 id="the-determinant-of-a-module-operator">The Determinant of a Module Operator</h2>
 <p>Let $S''$ be a linear operator on the biquaternion module, and suppose for the moment that its spectrum is discrete and its determinant exists. Then
 $$
@@ -96,7 +96,7 @@ $$
 \log\det S'' = \sum_n \log\lambda_n = \mathrm{Tr}\log S'' ,
 $$
 the second equality making sense on the principal branch. The operator acts on the module $\mathbb{B}\tilde\Pi(\hat{\boldsymbol\mu})\cong\mathbb{C}^2$ per mode, so each $\lambda_n$ is a two-fold object: the module contributes two complex dimensions, and the determinant is taken over both.</p>
-<p><strong>The central case.</strong> If $S''=\kappa\,e_0$ is a central scalar (for instance the free kinetic operator at a given mode, $\kappa=\tilde k\bar{\tilde k}+m^2=\mathcal{M}(\tilde k)$, whose Lorentzian continuation differs from the action's operator $\Box-m^2$ only by the overall sign that the module's even dimension absorbs), then on the module it is multiplication by $\kappa$ on $\mathbb{C}^2$, and
+<p><strong>The central case.</strong> If $S''=\kappa\,e_0$ is a central scalar (for instance the free kinetic operator at a given mode, $\kappa=\tilde k\tilde k^{\natural}+m^2=\mathcal{M}(\tilde k)$, whose Lorentzian continuation differs from the action's operator $\Box-m^2$ only by the overall sign that the module's even dimension absorbs), then on the module it is multiplication by $\kappa$ on $\mathbb{C}^2$, and
 $$
 \det\big(\kappa\,e_0\big)\Big|_{\text{module}} = \kappa^2 .
 $$
@@ -110,10 +110,10 @@ with $\tilde m$ implementing the chirality-off-diagonal mass, is a module operat
 <p>The determinant of a <em>single</em> algebra element is an algebraic quantity, and it turns out to be the biquaternion norm.</p>
 <p><strong>Proposition.</strong> For every $\tilde Q\in\mathbb{B}$,
 $$
-\det\Phi(\tilde Q) = \mathrm{Sc}\big(\tilde Q\bar{\tilde Q}\big) = N(\tilde Q),
+\det\Phi(\tilde Q) = \mathrm{Sc}\big(\tilde Q\tilde Q^{\natural}\big) = N(\tilde Q),
 $$
 where $\Phi$ is the isomorphism onto $M_2(\mathbb{C})$ and $N$ is the biquaternion norm.</p>
-<p><strong>Proof.</strong> Both sides are polynomial functions of the four coefficients of $\tilde Q$, so it suffices to check on a basis. On $\Phi(e_0)=I_2$ both sides are $1$; on $\Phi(e_k)=-i\sigma_k$, $\det(-i\sigma_k)=1$ while $N(e_k)=e_k\bar e_k=-e_k^2=e_0$, giving $1$; and both sides are multiplicative, $\det(\Phi(\tilde A)\Phi(\tilde B))=\det\Phi(\tilde A)\det\Phi(\tilde B)$ and $N(\tilde A\tilde B)=\tilde A\tilde B\overline{\tilde A\tilde B}=\tilde A\,N(\tilde B)\,\bar{\tilde A}=\tilde A\bar{\tilde A}\,N(\tilde B)=N(\tilde A)N(\tilde B)$ using the centrality of $N(\tilde B)$. A basis check plus multiplicativity on a generating set establishes the identity on the whole algebra.</p>
+<p><strong>Proof.</strong> Both sides are polynomial functions of the four coefficients of $\tilde Q$, so it suffices to check on a basis. On $\Phi(e_0)=I_2$ both sides are $1$; on $\Phi(e_k)=-i\sigma_k$, $\det(-i\sigma_k)=1$ while $N(e_k)=e_k\bar e_k=-e_k^2=e_0$, giving $1$; and both sides are multiplicative, $\det(\Phi(\tilde A)\Phi(\tilde B))=\det\Phi(\tilde A)\det\Phi(\tilde B)$ and $N(\tilde A\tilde B)=\tilde A\tilde B\bar{\tilde A\tilde B}=\tilde A\,N(\tilde B)\,\tilde A^{\natural}=\tilde A\tilde A^{\natural}\,N(\tilde B)=N(\tilde A)N(\tilde B)$ using the centrality of $N(\tilde B)$. A basis check plus multiplicativity on a generating set establishes the identity on the whole algebra.</p>
 <p>The determinant of $\tilde Q$ is thus the <strong>biquaternion norm</strong>, the same object that supplies the Minkowski interval of <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>.</p>
 <p><strong>Proposition (regular representation).</strong> Left multiplication $L_{\tilde Q}:\tilde{R}\mapsto\tilde Q\tilde R$ and right multiplication $R_{\tilde Q}:\tilde{R}\mapsto \tilde R\tilde Q$ on $\mathbb{B}$ regarded as a four-complex-dimensional space both have determinant
 $$
@@ -122,7 +122,7 @@ $$</p>
 <p><strong>Proof.</strong> Under the isomorphism $\Phi$, left multiplication becomes left multiplication by the matrix $P=\Phi(\tilde Q)$ on $M_2(\mathbb{C})$, which is $P\otimes I_2$ in the basis $E_{ij}$ of matrix units; its determinant is $(\det P)^2$. Right multiplication becomes right multiplication by $P$, which is $I_2\otimes P^T$ in the same basis, with the same determinant $(\det P)^2$. By the previous proposition $\det P=N(\tilde Q)$, so both determinants equal $N(\tilde Q)^2$.</p>
 <p><strong>Verification.</strong> With $\tilde Q=(0.7+0.2i,\,0.3-0.5i,\,-0.2+0.4i,\,0.1+0.6i)$ in the basis $(e_0,e_1,e_2,e_3)$, the $2\times2$ representation gives
 $$
-\det\Phi(\tilde Q) = -0.180000-0.060000\,i = \mathrm{Sc}\big(\tilde Q\bar{\tilde Q}\big),
+\det\Phi(\tilde Q) = -0.180000-0.060000\,i = \mathrm{Sc}\big(\tilde Q\tilde Q^{\natural}\big),
 $$
 to the accuracy shown, confirming the first proposition, and the $4\times4$ left and right multiplication matrices give
 $$
@@ -149,7 +149,7 @@ $$
 where $\mathrm{Tr}$ is the trace pairing. The determinant and the effective action are thus the same object, and the determinant's regularization is the effective action's regularization.</p>
 <p><strong>The free case.</strong> For the free biquaternion scalar, $S''=\tilde K$ is central and mode-diagonal, and
 $$
-\Gamma_1 = \frac12\sum_{\text{modes}}\log\big(\tilde k\bar{\tilde k}+m^2\big)^2
+\Gamma_1 = \frac12\sum_{\text{modes}}\log\big(\tilde k\tilde k^{\natural}+m^2\big)^2
 = \sum_{\text{modes}}\log\big(k_E^2+m^2\big)
 \qquad\text{(Euclidean)},
 $$
@@ -158,7 +158,7 @@ the exponent $2$ being the module's two complex dimensions, which cancels the $\
 <p>In a translation-invariant background the operator is diagonal in momentum, and the determinant becomes a product over modes. For the central scalar operator on the module,
 $$
 \det\big(\Box-m^2\big)\Big|_{\text{module}}
-= \prod_k\Big(\tilde k\bar{\tilde k}+m^2\Big)^2
+= \prod_k\Big(\tilde k\tilde k^{\natural}+m^2\Big)^2
 = \prod_k\big(k_E^2+m^2\big)^2
 $$
 in the Euclidean continuation, the square being the module's two complex dimensions and the overall sign of the continuation cancelling in it. The product diverges, and only <strong>ratios</strong> of determinants of operators of the same type are scheme-independent. The ratio
@@ -193,7 +193,7 @@ and the small-$t$ expansion $K(t)\sim(4\pi t)^{-d/2}\sum_n a_n t^n$ gives $\zeta
 <p>The determinant of a fermionic fluctuation operator is the place where the framework's non-central mass term has its clearest consequence.</p>
 <p><strong>The Grassmann integral.</strong> Integrating out a fermion gives a determinant rather than an inverse square root,
 $$
-\int\mathcal{D}\bar{\tilde\Psi}\mathcal{D}\tilde\Psi\;e^{\,\bar{\tilde\Psi}\mathcal{D}\tilde\Psi} = \det\mathcal{D},
+\int\mathcal{D}\tilde\Psi^{\natural}\mathcal{D}\tilde\Psi\;e^{\,\tilde\Psi^{\natural}\mathcal{D}\tilde\Psi} = \det\mathcal{D},
 \qquad
 \mathcal{D} = i\partial\!\!\!/ - m ,
 $$
@@ -224,7 +224,7 @@ $$
 the trace of the energy-momentum tensor being the conformal variation of the one-loop effective action. That this is non-vanishing for a conformally invariant classical theory is the <strong>trace anomaly</strong>, and it is the statement that the regularization of the determinant breaks the classical symmetry. Its coefficient is the Seeley–DeWitt coefficient $a_{d/2}$, and in the biquaternion framework that coefficient carries the module's dimension and the sector structure. The computation and the interpretation of the anomaly are article 11; this article records the determinant-side origin.</p>
 <h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
 <p><strong>Established (algebra).</strong>
-- The fundamental determinant of an element is the biquaternion norm, $\det\Phi(\tilde Q)=N(\tilde Q)=\mathrm{Sc}(\tilde Q\bar{\tilde Q})$; verified and proved.
+- The fundamental determinant of an element is the biquaternion norm, $\det\Phi(\tilde Q)=N(\tilde Q)=\mathrm{Sc}(\tilde Q\tilde Q^{\natural})$; verified and proved.
 - Left and right multiplication by $\tilde Q$ on the algebra have equal determinant $N(\tilde Q)^2$; verified and proved.
 - A central operator's determinant on the two-complex-dimensional module is the square of its single-complex-dimension value, $\det(\kappa e_0)|_{\text{module}}=\kappa^2$; a non-central operator's determinant does not factor.</p>
 <p><strong>Standard, and transcribed.</strong>
@@ -237,7 +237,7 @@ the trace of the energy-momentum tensor being the conformal variation of the one
 <h2 id="summary">Summary</h2>
 <p>The functional determinant of a biquaternion operator is a determinant on the module, and the algebra contributes two structural facts to it. The determinant of a single algebra element is the <strong>biquaternion norm</strong>,
 $$
-\det\Phi(\tilde Q) = N(\tilde Q) = \mathrm{Sc}\big(\tilde Q\bar{\tilde Q}\big),
+\det\Phi(\tilde Q) = N(\tilde Q) = \mathrm{Sc}\big(\tilde Q\tilde Q^{\natural}\big),
 $$
 so the singular elements are the zero divisors, i.e. the light cone; and left and right multiplication on the algebra both have determinant
 $$
@@ -263,11 +263,11 @@ Both were verified: for $\tilde Q=(0.7+0.2i,\,0.3-0.5i,\,-0.2+0.4i,\,0.1+0.6i)$,
 <td>Isomorphism onto $M_2(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$N(\tilde Q)=\tilde Q\bar{\tilde Q}$</td>
+<td>$N(\tilde Q)=\tilde Q\tilde Q^{\natural}$</td>
 <td>Biquaternion norm (central); equals the fundamental determinant</td>
 </tr>
 <tr>
-<td>$\det\Phi(\tilde Q)=N(\tilde Q)=\mathrm{Sc}(\tilde Q\bar{\tilde Q})$</td>
+<td>$\det\Phi(\tilde Q)=N(\tilde Q)=\mathrm{Sc}(\tilde Q\tilde Q^{\natural})$</td>
 <td>Determinant of an algebra element</td>
 </tr>
 <tr>
