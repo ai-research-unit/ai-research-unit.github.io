@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — The Three Internal Constants (S21) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-three-internal-constants-s21">Charon — The Three Internal Constants (S21)</h1>
+<p><em>Audits §3.5 and §4.8 of <code>CHARON_IDEAS_AND_CLAIMS.md</code>, against RC ch. III (scans 051, 052, 053) and Esp §VI (scan 058).</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The register's verdict on §4.8 — <em>"FALS as stated: six fundamental constants computed should be read as one output, five inputs"</em> — is right, and this article proves it instead of counting it.</strong></p>
+<p><strong>The corpus's three "internal constants" of the imaginary sheet are, in closed form,</strong></p>
+<p>$$\alpha = \frac{m + 3\mu - 2\tau}{4\pi^{2}}, \qquad
+\beta = -\frac{h}{4\pi^{3}c}\cdot\frac{\tau + m - 2\mu}{\tau - \mu}, \qquad
+T_{0} = \frac{2h}{c^{2}(\tau-\mu)}$$</p>
+<p><strong>where $m$, $\mu$, $\tau$ are the three measured charged-lepton masses.</strong> <strong>The decisive line is the first: $\alpha$ contains no $h$ and no $c$.</strong> <strong>The $h/c^{2}T_{0}$ term in (3-68) is identically $(\tau-\mu)/2$, because $T_{0}$ <em>is</em> that term inverted — so the two cancelling is not a coincidence, it is the algebra of a definition.</strong> <strong>A constant that emerges from a system containing $h$ and $c$ cannot be independent of them unless the system was solved rather than derived, and here the solution is one line of substitution.</strong></p>
+<p><strong>So the register's "five inputs" is not a count that happens to come out that way; it is what the printed equations say, and this article exhibits it.</strong></p>
+<h2 id="what-the-corpus-claims">What the Corpus Claims</h2>
+<p><strong>§3.5 — the three internal constants are computed from the three measured charged-lepton masses: $\alpha = -1{,}46\times10^{-25}$ g, $\beta = -1{,}74\times10^{-39}$ g cm, $T_{0} = 2h/[c^{2}(\tau-\mu)]$.</strong> RC (3-68). <strong>Tag: [MATH] (definition), [SPEC] (physics).</strong> The register's gloss: <em>"Note the word 'computed': they are </em><em>defined</em><em> by inverting the equations using measured m, μ, τ. This is important for judging the 'parameter-free' claim (§10.1)."</em></p>
+<p><strong>§4.8 — the lepton model is "entirely devoid of arbitrary parameters".</strong> Esp §VI. <strong>Tag: [FALS] as stated.</strong> The register: <em>"Count the inputs honestly: c, h, m_e, m_μ, m_τ are measured and used; α, β, T₀ are then defined by those inputs; ξ, l₀ are fixed by one closure condition. The genuine outputs are e (§7.1) and the lepton tower (falsified). 'Six fundamental constants computed' should be read as 'one output, five inputs'."</em></p>
+<h2 id="1-the-corpus-counts-its-own-inputs">1. The Corpus Counts Its Own Inputs</h2>
+<p><strong>The corpus states the count itself, in the same section that prints (3-68), and this is the article's textual anchor.</strong> RC 051:</p>
+<blockquote>
+<p><em>"Une première analyse du Système $E$ montre que, pour calculer l'ensemble des solutions particulières, nous avons besoin des valeurs de </em><em>cinq</em><em> des paramètres mentionnés ci-dessus, avec bien entendu leurs valeurs propres des trois leptons chargés connus ($m$, $\mu$ et $\tau$). Les équations (3-53) du Système $E$ fournissent alors facilement, </em><em>en fonction de ces paramètres bien mesurés par l'expérience</em><em>, les valeurs des trois principaux paramètres inconnus, à savoir $\alpha$, $\beta$ et $T_{0}$."</em></p>
+</blockquote>
+<p><strong>Five measured parameters in, three constants out, and the corpus says so before it prints them.</strong> <strong>The five are $c$, $h$, $m$, $\mu$, $\tau$ — cosmology's two universal constants and the three lepton masses the model is meant to explain.</strong></p>
+<p><strong>And RC 053 says what "computed" means, in the corpus's own word:</strong> <em>"Rappelons que les constantes $\alpha$, $\beta$ et $T_{0}$ du modèle éonique ont été </em><em>calculées</em><em> (3-68) en supposant que les 3 premières valeurs $n = 0$, $1$ et $2$ … correspondaient respectivement au positron, au muon et au tau."</em> <strong>"Calculées" here is "solved for", and the assumption named is the identification of the three leptons with the first three integers.</strong> <strong>So the corpus's "computed" and the register's "defined" are the same claim in two vocabularies, and the corpus's is the more precise of the two.</strong></p>
+<h2 id="2-the-inversion-and-its-closed-form">2. The Inversion, and Its Closed Form</h2>
+<p><strong>Transcribed (3-68), RC 051:</strong></p>
+<p>$$(3\text{-}68)\quad
+\left\{
+\begin{aligned}
+\alpha &= \frac{m + \mu}{4\pi^{2}} - \frac{h}{\pi^{2}c^{2}T_{0}} = -1{,}46\cdot10^{-25}\ \mathrm{g} \\
+\beta &= \frac{(\mu - m)c^{2}T_{0} - 2h}{8\pi^{3}c} = -1{,}74\cdot10^{-39}\ \mathrm{g\,cm} \\
+T_{0} &= \frac{2h}{c^{2}(\tau-\mu)} = 4{,}93\cdot10^{-24}\ \mathrm{s}
+\end{aligned}
+\right.$$</p>
+<p><strong>$T_{0}$ is given outright, so the system is triangular and the elimination takes two lines.</strong> <strong>Substituting $T_{0}$ into $\alpha$ and $\beta$:</strong></p>
+<p>$$\frac{h}{c^{2}T_{0}} = \frac{h}{c^{2}}\cdot\frac{c^{2}(\tau-\mu)}{2h} = \frac{\tau-\mu}{2}
+\qquad\Longrightarrow\qquad
+\boxed{\ \alpha = \frac{m + 3\mu - 2\tau}{4\pi^{2}}\ }$$</p>
+<p>$$\beta = \frac{(\mu-m)\frac{2h}{\tau-\mu} - 2h}{8\pi^{3}c} = \frac{2h\left[\frac{\mu-m}{\tau-\mu} - 1\right]}{8\pi^{3}c}
+\qquad\Longrightarrow\qquad
+\boxed{\ \beta = -\frac{h}{4\pi^{3}c}\cdot\frac{\tau + m - 2\mu}{\tau-\mu}\ }$$</p>
+<p><strong>Both are exact, and both are the same expressions S37 reached from the <em>Système L</em> side.</strong> <strong>S37's $\beta = -h(1-\varepsilon)/(4\pi^{3}c)$ with $\varepsilon = (\mu-m)/(\tau-\mu)$ is this expression, since $1 - \varepsilon = (\tau + m - 2\mu)/(\tau-\mu)$.</strong> <strong>Two independent routes — S37 through L7, L8 and L16, this article through (3-68) — give the same closed form, which is a real internal consistency of the corpus.</strong></p>
+<h2 id="3-the-decisive-line-math44-contains-no-math45-and-no-math46">3. The Decisive Line: $\alpha$ Contains No $h$ and No $c$</h2>
+<p><strong>This is the finding, and it is a one-line observation with a long reach.</strong></p>
+<p><strong>Every occurrence of $h$ and $c$ in the $\alpha$ equation comes through the single term $h/(\pi^{2}c^{2}T_{0})$ — and $T_{0}$ was <em>defined</em> as $2h/[c^{2}(\tau-\mu)]$ precisely so that this term is the pure number $(\tau-\mu)/(2\pi^{2})$.</strong> <strong>So the corpus's first internal constant of the imaginary sheet is a linear combination of the three lepton masses divided by $4\pi^{2}$, and nothing else:</strong></p>
+<p>$$\alpha = \frac{m + 3\mu - 2\tau}{4\pi^{2}}$$</p>
+<p><strong>No $h$. No $c$. No $\xi$. No $l_{0}$. No solution of any system.</strong> <strong>If $\alpha$ had been derived from the Système $E$ — a system whose equations contain $h$ and $\xi = \Omega_{0}c/\hbar$ — the result would carry them, or the cancellation would be a theorem of the system that the corpus would have had to prove.</strong> <strong>It is not a theorem; it is the definition of $T_{0}$ substituted back.</strong></p>
+<p><strong>The corollary is worth stating because it is the sharpest form of §4.8's failure.</strong> <strong>$\alpha$ is not merely fitted; it is <em>nothing but</em> the lepton masses.</strong> <strong>Its value moves whenever they are remeasured, and the corpus's own two books already disagree about it for exactly that reason (§4).</strong></p>
+<h2 id="4-verified-and-the-value-tracks-the-masses">4. Verified — and the Value Tracks the Masses</h2>
+<p><strong>Evaluated at 2024 masses ($m = 0{,}510999$ MeV, $\mu = 105{,}658$ MeV, $\tau = 1776{,}86$ MeV):</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>from the closed form</th>
+<th>as printed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\alpha$</td>
+<td>$-1{,}46133\times10^{-25}$ g</td>
+<td>$-1{,}46\times10^{-25}$ g (RC 051)</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>$-1{,}66995\times10^{-39}$ g cm</td>
+<td>$-1{,}74\times10^{-39}$ g cm (RC 051)</td>
+</tr>
+<tr>
+<td>$T_{0}$</td>
+<td>$4{,}9493\times10^{-24}$ s</td>
+<td>$4{,}93\times10^{-24}$ s (RC 051)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>And evaluated at the corpus's own 1983 masses ($\tau = 1784{,}2$ MeV):</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>1983 masses</th>
+<th>RC (1987) prints</th>
+<th>Esp (1983) prints</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\alpha$</td>
+<td>$-1{,}46796\times10^{-25}$ g</td>
+<td>$-1{,}46\times10^{-25}$ g</td>
+<td>$-1{,}472\times10^{-25}$ g</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>$-1{,}67044\times10^{-39}$ g cm</td>
+<td>$-1{,}74\times10^{-39}$ g cm</td>
+<td>$-1{,}7\times10^{-39}$ g cm</td>
+</tr>
+<tr>
+<td>$T_{0}$</td>
+<td>$4{,}9277\times10^{-24}$ s</td>
+<td>$4{,}93\times10^{-24}$ s</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three things follow, and all three belong in the register.</strong></p>
+<ol>
+<li><strong>RC's printed $\alpha = -1{,}46\times10^{-25}$ is the value <em>today's</em> masses give, not the value its own decade's masses give (which is $-1{,}4680\times10^{-25}$, printing as $-1{,}47$).</strong> <strong>Recorded as an observation, not as an error: $\alpha$ is a mass combination, so a book published in 1987 and a measurement programme that ran for forty years after it disagree at the third figure, and the corpus's figure is the one that aged well.</strong></li>
+<li><strong>Esp's printed $\alpha = -1{,}472\times10^{-25}$ is $0{,}27\,\%$ from the 1983 mass value, and RC's is $0{,}55\,\%$ from it.</strong> <strong>The two books' $\alpha$'s differ by $0{,}8\,\%$ while the underlying mass inputs differ by $0{,}44\,\%$ in $T_{0}$ — so the discrepancy between the books is the mass measurement's, amplified by the fact that $\alpha$ is a difference of two nearly cancelling terms (§5).</strong></li>
+<li><strong>The printed $\beta = -1{,}74\times10^{-39}$ is not reproduced by the printed formula at any mass set: it is $4{,}0\,\%$ from the closed form, and S37 has already priced that $4{,}0\,\%$.</strong> <strong>This article does not re-open it; the point here is that the same $4{,}0\,\%$ is what makes $\beta$ the corpus's best <em>near</em>-miss rather than a hit (S37: carrying the derived $\beta$ turns G-C's $+4{,}38\,\%$ into $+2{,}11\,\%$).</strong></li>
+</ol>
+<h2 id="5-the-nesting-none-of-the-three-carries-independent-information">5. The Nesting: None of the Three Carries Independent Information</h2>
+<p><strong>The register's count said "five inputs, one output". The closed forms say something slightly different and slightly worse for the corpus: the three constants are <em>nested restatements</em> of the five, with no independent content at any level.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>constant</th>
+<th>decomposition</th>
+<th>dominant term</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\alpha$</td>
+<td>$(m+\mu)/(4\pi^{2}) - (\tau-\mu)/(2\pi^{2})$ = $+4{,}794\times10^{-27} - 1{,}5093\times10^{-25}$</td>
+<td><strong>the mass difference, $31{,}5\times$ the other term</strong></td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>$-h/(4\pi^{3}c)$ corrected by $(\tau+m-2\mu)/(\tau-\mu)$</td>
+<td><strong>$h/c$ alone, to $6{,}3\,\%$</strong></td>
+</tr>
+<tr>
+<td>$T_{0}$</td>
+<td>$2h/[c^{2}(\tau-\mu)]$</td>
+<td><strong>$h$, $c$, and the mass difference: nothing else</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So $\alpha$ is $97\,\%$ a mass difference, $\beta$ is $94\,\%$ the pure constant combination $h/c$ (S37's finding), and $T_{0}$ is $h$, $c$ and one mass difference exactly.</strong> <strong>$\alpha$'s two terms are a small mass sum and a large mass difference, which is why $\alpha$ inherits the sensitivity of a subtraction and why §4's three values move together.</strong></p>
+<p><strong>And the tower closes the argument, because (3-76) turns the input back into a "result" in one line.</strong> <strong>RC 053's (3-76) is $m_{n} = \mu + 2(n-1)h/(c^{2}T_{0})$, and its spacing is</strong></p>
+<p>$$\frac{2h}{c^{2}T_{0}} = \frac{2h}{c^{2}}\cdot\frac{c^{2}(\tau-\mu)}{2h} = \tau - \mu \qquad\text{identically}$$</p>
+<p><strong>So the charged-lepton tower's step is $\tau-\mu$ by definition, and the "arithmetic progression with equal spacing $\approx 1{,}67$ GeV" that §4.3 marks [FALS] is the fitted input printed back as a prediction.</strong> <strong>This article does not own §4.3 or R7; it records that the closed form shows <em>why</em> the tower cannot be evidence, which is the missing sentence in the register's R7 entry.</strong></p>
+<h2 id="6-a-third-internal-inconsistency-and-it-is-in-math137s-own-section">6. A Third Internal Inconsistency, and It Is in $T_{0}$'s Own Section</h2>
+<p><strong>RC 053's (3-75) and (3-75-a) give the éon neutrino's energy as</strong></p>
+<p>$$W_{n} = 2\left(n + \tfrac{1}{2}\right)\frac{h}{T_{0}} \qquad\text{printed numerically as}\qquad W_{n} = 2\left(n + \tfrac{1}{2}\right)\times 0{,}832\ \mathrm{GeV}$$</p>
+<p><strong>which requires $h/T_{0} = 0{,}832$ GeV.</strong> <strong>From the printed $T_{0} = 4{,}93\times10^{-24}$ s,</strong></p>
+<p>$$\frac{h}{T_{0}} = 0{,}83888\ \mathrm{GeV}$$</p>
+<p><strong>a difference of $0{,}82\,\%$ — so the corpus's own printed $T_{0}$ and its own printed energy coefficient do not close at the printed precision.</strong> <strong>Either (3-75-a)'s coefficient carries a transcription digit, or the $T_{0}$ used for it was $\approx 4{,}97\times10^{-24}$ s.</strong> <strong>Filed in the check queue against scans 053 and, for the parallel table, Esp 058.</strong> <strong>It is mild in itself and it is the third instance of the same pattern in this block — S20's $\mathcal{R}$, S20's $R''$, and now $h/T_{0}$ — which is why it is worth recording rather than smoothing over: the éon's numbers are quoted at a precision their own equations do not support.</strong></p>
+<h2 id="7-what-a-derivation-of-math149-would-have-looked-like">7. What a Derivation of $\alpha$ Would Have Looked Like</h2>
+<p><strong>The register's S6 requires the success criteria to be stated in advance, so this article states the one that applies here — not for $\alpha$'s gate, which is S35's and S37's, but for the ledger's sake.</strong></p>
+<p><strong>A derivation of $\alpha$ from the Système $E$ would be an expression for $\alpha$ containing $h$ and $\xi$ in a combination that is not forced to cancel, obtained from (3-53) without first defining $T_{0}$ in terms of $\tau-\mu$.</strong> <strong>The corpus's route cannot produce such an expression, because it <em>begins</em> by fixing $T_{0}$ from the measured mass difference and then eliminates.</strong> <strong>So the honest description of RC (3-68) is: three equations, one of which is a definition, solved for the other two.</strong> <strong>That is precisely §3.5's "[MATH] (definition), [SPEC] (physics)", and the article's contribution is to show the definition is <em>load-bearing rather than incidental</em>.</strong></p>
+<p><strong>The positive half, which must be stated with it.</strong> <strong>The inversion itself is competent, the closed forms are exact, and S37's <em>Système L</em> route gives the same $\beta$ by a different path — so the corpus's constant algebra is internally coherent.</strong> <strong>What it is not is parameter-free, and the two printed sentences that claim otherwise (§4.8's, and Esp's "entièrement dépourvue de paramètres arbitraires") are the claims to correct.</strong></p>
+<h2 id="8-verdict">8. Verdict</h2>
+<p><strong>§3.5 and §4.8 both stand; the article supplies the proof of §4.8 and the corrected wording of §3.5.</strong></p>
+<ul>
+<li><strong>Confirmed, with closed form:</strong> $\alpha = (m+3\mu-2\tau)/(4\pi^{2})$ — <strong>no $h$, no $c$, no $\xi$</strong>; $\beta = -h(\tau+m-2\mu)/[4\pi^{3}c(\tau-\mu)]$, agreeing with S37's <em>Système L</em> result; $T_{0} = 2h/[c^{2}(\tau-\mu)]$.</li>
+<li><strong>Confirmed from the corpus's own text:</strong> the five inputs are counted by RC 051 itself, and RC 053's <em>"calculées"</em> means solved-for.</li>
+<li><strong>New:</strong> $\alpha$ is $97\,\%$ a mass difference and $\beta$ $94\,\%$ the pure $h/c$ combination, so none of the three constants carries information beyond $h$, $c$, $m$, $\mu$, $\tau$ — and (3-76)'s tower spacing is $\tau-\mu$ identically, which is why the tower cannot be evidence for the model.</li>
+<li><strong>Recorded:</strong> RC's $\alpha$ is the value today's masses give and not its own decade's; the two books' $\alpha$'s differ by the mass measurement's own drift; the printed $\beta$ is $4{,}0\,\%$ from the corpus's formula (S37's pricing stands, not reopened here).</li>
+<li><strong>Check queue:</strong> (3-75-a)'s $0{,}832$ GeV against the printed $T_{0}$ ($0{,}82\,\%$ apart).</li>
+<li><strong>§4.8 wording:</strong> keep <strong>[FALS] as stated</strong>; replace the register's <em>"read as one output, five inputs"</em> with <strong>"the five inputs are stated by the corpus, the three constants are their nested restatements, and $\alpha$'s independence of $h$ and $c$ is the algebra of the definition."</strong></li>
+<li><strong>§3.5's tag is unchanged</strong> — <strong>[MATH] (definition), [SPEC] (physics)</strong> — and the article's result is that "definition" is the operative word, not a formality.</li>
+</ul>
+<p><strong>Part S / Part P.</strong> <strong>Part S: the inversion, the closed forms, the counting, the comparison with S37's route — audited algebra.</strong> <strong>Part P: the claim that these constants are properties of an imaginary micro-universe</strong> — because the object whose constants they are is the one §3.7 deletes (S17, P8). <strong>The algebra survives; the physics does not.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<ul>
+<li><strong>$m$, $\mu$, $\tau$</strong> — the measured electron, muon and tau masses. <strong>Charon writes the positron's mass $m_{0}$ for $m$; (3-68) uses $m$ and $m_{0}$ interchangeably. The series writes $m$.</strong></li>
+<li><strong>$\alpha$, $\beta$</strong> — the éon's two internal constants. <strong>$[\![\alpha]\!] = \mathrm{g}$ (a mass), $[\![\beta]\!] = \mathrm{g\,cm}$ (a mass-length).</strong></li>
+<li><strong>$T_{0}$</strong> — the éon's pulsation period, claimed common to all charged leptons by Axiom 7 (§10.1). <strong>Fitted: $2h/[c^{2}(\tau-\mu)]$.</strong></li>
+<li><strong>$\varepsilon$</strong> — S37's abbreviation, $(\mu-m)/(\tau-\mu) = 0{,}0629$. <strong>$\beta = -h(1-\varepsilon)/(4\pi^{3}c)$; S37's form and this article's are the same expression.</strong></li>
+<li><strong>$n$</strong> — the integer labelling the charged leptons, $n = 0, 1, 2$ for $e$, $\mu$, $\tau$. <strong>The corpus's "assumption" in RC 053.</strong></li>
+<li><strong>(3-53)</strong> — the Système $E$; <strong>(3-68)</strong> — the three constants; <strong>(3-76)</strong> — the tower; <strong>(3-75-a)</strong> — the energy coefficient $0{,}832$ GeV.</li>
+<li><strong>"calculées"</strong> — the corpus's word at RC 053. <strong>Translated as "solved for", which is what the equations show.</strong></li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S20</strong> — the radius spectrum these constants generate, and the conditioning that follows.</li>
+<li><strong>S22</strong> — $\xi$, $l_{0}$, and the closure condition: the <em>other</em> input the count must include.</li>
+<li><strong>S37</strong> — the <em>Système L</em> route to the same $\beta$, and the pricing of the $4{,}0\,\%$.</li>
+<li><strong>S35, G-C</strong> — the gate that asks whether $\alpha$ appears only once $\beta$ is fitted. <strong>It does not; this article shows why that does not make $\alpha$ a computation.</strong></li>
+<li><strong>S34, S41</strong> — the input/output ledger, where this article's counting is the éon-side entry.</li>
+<li><strong>§4.3, R7</strong> — the charged-lepton tower: [FALS], and now visibly a restated input.</li>
+<li><strong>P8</strong> — the massless neutrino, on which the éon solution the constants belong to depends.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: The Spin Ladder — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-spin-ladder"><strong>Charon: The Spin Ladder</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This is a post-mortem article. Its subject is a claim that is now disproved, and its purpose is to record that fact with the claim's own words, the observation that settled it, and the list of what breaks when it falls. It is the first of two such articles on Charon's <strong>pulse</strong>, the quantity he introduced himself as "cette grandeur physique nouvelle" (Esp 011) — see its companion, P24, for the other.</p>
+<p>The claim is short and it is printed. Because the action at every point of Charon's space is quantised at $\pm nh$, and because that action is shared exactly equally between a <strong>spin</strong> and a <strong>pulse</strong>, the integer $n$ of the lepton ladder is the particle's spin. Esp 052 states it in a table:</p>
+<blockquote>
+<p>électron : $n = 0$, c'est-à-dire spin $1/2\,h$
+muon : $n = 1$, c'est-à-dire spin $3/2\,h$
+lepton tau : $n = 2$, c'est-à-dire spin $5/2\,h$</p>
+</blockquote>
+<p><strong>The verdict is [FALS].</strong> The muon and the tau are both measured to have spin $\tfrac12\hbar$, and the corpus's ladder gives them $\tfrac32\hbar$ and $\tfrac52\hbar$. The electron, the first row of the table, is right; the second row is wrong by a factor of three, and the third by a factor of five.</p>
+<p>Two things make this article the more damaging of the pair, and both are stated below rather than only asserted. First, it is not a case of old physics outrun by new data: the muon was established as a spin-$\tfrac12$ particle some <strong>twenty-five years before</strong> <em>L'Esprit et la Relativité complexe</em> was published, and its spin had been measured by methods that do not depend on any theory Charon disputes. A claim contradicted by long-standing measurement at publication is a different kind of error from a claim the future refuted, and the register's rules require both to be recorded, but only one of them is an error Charon could have caught by reading a data table. Second, the escape routes that would save the claim — that "spin" here means an internal quantum number, that the ladder is a label rather than a spin — are closed by the corpus's own sentences, and not by this reader's preferences.</p>
+<p>What survives is worth setting out at the top so that the article is not read as an attack on the whole quantification. The <strong>mass</strong> ladder survives, as a fit: the lepton mass equations use only the <em>sum</em> of the two halves, so the three charged-lepton masses are still reproduced once the period $T$ is fitted (S11 §4.1). The <strong>parity rule</strong> survives, because it is imported from Pauli's theorem and is correct. And the <strong>reconciliation argument</strong> — the reason a second half-integral component exists at all — survives, and is the strongest thing in the quantification. What dies is precisely the identification that this article is about: the integer on the ladder is <em>not</em> the particle's spin.</p>
+<p><strong>A note on sources.</strong> The claim is inventory §2.3 and it is audited in S11 §3.2 and §5.5. The passages are Esp 011 (the decomposition of $\pm nh$ and the naming of the pulse), Esp (111) (the equipartition $S^{2} = P^{2} = \tfrac14n^{2}h^{2}$), Esp 031 (the extension of the spin identification to the neutrinos attached to each lepton), and the page-052 ladder itself, transcribed and confirmed against the scan in the current session. The measured spins are those of the Particle Data Group. S11 remains the constructive article on the quantification; this one records a single dead claim inside it.</p>
+<p><strong>Conventions.</strong> Gaussian cgs. $\hbar = h/2\pi$. The ladder's integer is written $n$ as the corpus writes it; where it is necessary to distinguish it from the action quantum number the corpus's own symbol $n_{\text{axiom}}$ is used, as in S11 §3.2. "Spin" without qualification means the particle's measured spin unless a corpus identification is being quoted.</p>
+<h2 id="part-1-the-claim-and-the-three-steps-that-produce-it">Part 1 — The claim, and the three steps that produce it</h2>
+<p>The claim is the last step of a chain, and the chain should be followed because the first two steps are sound. Nothing here is a defect of logic; the defect is in the world.</p>
+<p><strong>Step one — the action is quantised.</strong> Axiome 3 states that the action at every point is an integer multiple of $h$, $\pm nh$. This is required, and S11 §1.1 sets out the corpus's own reductio: a point with rigorously zero momentum would not be the image of a physical point. Step one is not in question here.</p>
+<p><strong>Step two — the integer splits into two half-integral halves.</strong> Dirac's four-component condition requires a half-integral action at each point. An integer multiple of $h$ cannot <em>be</em> a single half-integral object, so it must be assembled from two of them: a spin $\pm\tfrac12nh$ and a pulse $\pm\tfrac12nh$. This is the reconciliation argument, and it is genuinely good — it is the reason the pulse is not an arbitrary extra field, and it is the strongest thing the quantification does. Step two is also not in question here, and it is the reason a post-mortem on the <em>ladder</em> is not a post-mortem on the pulse's existence.</p>
+<p><strong>Step three — the two halves are exactly equal, and the equality makes the ladder a spin ladder.</strong> The equality is Axiome 4:</p>
+<p>$$S^{2} = P^{2} = \tfrac14 n^{2}h^{2} \qquad (111),$$</p>
+<p>admitted by the corpus with the word "admettrons" rather than derived, and used as equation L15 of the Système L. With the equality in hand, the parity rule — itself imported from Pauli's spin–statistics theorem and correct — puts the charged leptons on <strong>odd</strong> action rungs, $n_{\text{axiom}} = 1, 3, 5$. The spin is half the action, so the $n$-th charged lepton has spin $\tfrac12n_{\text{axiom}}\hbar$. That is the ladder:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>model $n$</th>
+<th>$n_{\text{axiom}}$</th>
+<th>spin from the model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 (electron)</td>
+<td>1</td>
+<td>$\tfrac12\hbar$</td>
+</tr>
+<tr>
+<td>1 (muon)</td>
+<td>3</td>
+<td>$\tfrac32\hbar$</td>
+</tr>
+<tr>
+<td>2 (tau)</td>
+<td>5</td>
+<td>$\tfrac52\hbar$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The arithmetic of step three is not in doubt either. Given steps one and two, and given Axiome 4, the table follows. The question is whether the world agrees, and it does not.</p>
+<h2 id="part-2-the-observation-that-settles-it">Part 2 — The observation that settles it</h2>
+<p>Charged-lepton spins are measured, not inferred, and all three are $\tfrac12$. The muon's is the decisive one, because the model gives it $\tfrac32\hbar$.</p>
+<p>The muon's spin was determined by its weak decay. The decay spectrum of $\mu \to e\bar\nu_e\nu_\mu$ fixes the spin of the muon, and the result admits no reading other than $\tfrac12$; the muon's anomalous magnetic moment, measured to high precision and in agreement with the standard-model prediction to many digits, is an independent and far sharper statement of the same fact. A spin-$\tfrac32$ muon would not decay as the muon decays, and would not have the magnetic moment the muon has. The tau's spin, $\tfrac12$, follows from its decay topology. The electron's, $\tfrac12$, agrees with the model's first row and always did.</p>
+<p><strong>Not late data.</strong> The muon's spin was established in the 1950s — the muon was known to be spin-$\tfrac12$ with a $g$-factor of 2 long before the parameter $g-2$ became a precision industry, and the decay analysis that fixes the spin is older still. <em>L'Esprit</em> was published in 1983 and RC in 1987. So the model assigned the muon a spin of $\tfrac32\hbar$ at a time when that value had been excluded for a quarter of a century by a measurement requiring no theory that Charon contested. The register distinguishes claims disproved by later data from claims that were wrong when written; this is the second kind.</p>
+<p>It is worth stating why this is easy to miss, because it is a general lesson and not a small one. <strong>The first row of the table is right.</strong> The electron is the particle everyone checks, its spin is $\tfrac12\hbar$ as the model says, and a reader who verifies the first line and stops will conclude that the ladder works. The failure is one rung up, and it is a failure by a factor of three.</p>
+<h2 id="part-3-the-escape-routes-and-why-the-corpus-closes-them">Part 3 — The escape routes, and why the corpus closes them</h2>
+<p>A reader who wants to keep the ladder has exactly one defence, and it is not unreasonable in itself: that the "spin" of the ladder is an <em>internal</em> quantum number of the model, a label, and not the particle's observed spin. If that were true, the muon's measured spin would be irrelevant to the ladder, and the claim would survive in a weaker form. S11 §3.2 puts the defence and then closes it, with the corpus's own words, in three steps.</p>
+<p><strong>The corpus writes "c'est-à-dire spin".</strong> The page-052 table does not say "$n = 1$" and leave the reader to guess; it says "muon : $n = 1$, c'est-à-dire spin $3/2\,h$". The sentence identifies the ladder's integer with the spin. That is not this reader's gloss on a symbol; it is the book's own translation of it.</p>
+<p><strong>The model's spin is defined geometrically.</strong> In Charon's construction, the spin is the angular momentum of the image's rotation about $M'$ on the phase surface — a physical angular momentum with the dimensions of action, not an abstract label. S11 §1.2 sets out the geometry. So when the model calls the ladder's integer a spin, it is calling it the thing the geometry defines, and the geometry defines a rotation.</p>
+<p><strong>The identification is extended to the neutrinos.</strong> Esp 031 makes the same identification one level down, saying that the neutrinos attached to each lepton are distinguished "tant par leur énergie que par leur spin (qui est le spin de la particule à laquelle ils correspondent)". So the corpus means the spin, twice, at two levels of the construction.</p>
+<p>The honest statement of what this leaves is not that the corpus <em>could not</em> have decoupled its two sliders. The mass ladder needs one integer, the spin assignment needs another, and nothing in the axioms forces them to be the same integer — S11 §3.2 says so, and says that the decoupled programme "has not been written". But the corpus does not write it. It uses one integer, one ladder, with masses and spins rising together, and by doing so it buys the mass tower at the price of the muon's spin. The price is not payable.</p>
+<h2 id="part-4-what-dies-and-what-survives">Part 4 — What dies, and what survives</h2>
+<p><strong>Dies.</strong> The equipartition, <strong>as stated</strong>. Axiome 4, taken with the parity rule, produces a definite, checkable and false statement about the muon's spin. This is its one definite empirical consequence, and it is the one the corpus prints in a table. The lepton model's <strong>spin slider</strong>, and the coefficient $k_S$ that goes with it, lose their basis: the slider was the ladder's integer read as a spin, and that reading is gone.</p>
+<p><strong>Shares a root with the tower, and does not die with it.</strong> The mass tower predicts charged leptons at 3.45, 5.12, 6.79 GeV and onward — about fifty-nine of them below 100 GeV — and LEP found none; that is P1's subject. The tower's <strong>step</strong> is $2h/(c^{2}T)$, and that factor of two <em>is</em> the equipartition: remove the pulse, give all the action to the spin, and the step becomes $h/(c^{2}T)$, half as large. So the tower and the muon's spin have one root, the second half of every action. But the two verdicts are independent, and the register keeps them independent: the tower dies on LEP's null result, the spin ladder dies on the muon's measured spin, and neither verdict needs the other. A reader who revives the tower with a different step does not thereby revive the spin assignment.</p>
+<p><strong>Survives — the masses, as a fit.</strong> The lepton mass equations (219)–(221) contain only the <strong>sum</strong> $S + P = 2(n+\tfrac12)h$. They never see the split. So the three charged-lepton masses are still reproduced once the period $T$ is fitted to the measured $\tau - \mu$ difference, exactly as before, because the factor of two that the split supplies can be traded into $T$ with the fit unchanged. The ladder survives as a <strong>mass</strong> ladder and not as a spin ladder. S11 §4.1 is where that is shown, and it is the reason this article is a post-mortem on a claim rather than on the leptonic model.</p>
+<p><strong>Survives — the parity rule.</strong> It is imported from Pauli's theorem and it is correct. It is not Charon's, and it is not harmed by being used in a wrong argument.</p>
+<p><strong>Survives — the reconciliation argument.</strong> The reason a second half-integral component exists (Part 1, step two) stands. It is an argument about arithmetic, not a claim about nature, and nothing measured touches it. This is why the pulse is not moved to a post-mortem wholesale, and why the register treats its three jobs separately: the founding job stands, the equipartition and the gravity mechanism do not.</p>
+<p><strong>The lesson.</strong> The diagnosis of Axiome 4 is not "wrong". It is <strong>untestable where it was meant to show and false where it could be checked</strong>. The mass sector, where the programme had numbers, cannot see the split at all (S11 §4.1). The spin sector, where it could be seen, shows the split to be wrong. An assumption with that pair of properties is not doing physics, and the ladder is the record of what such an assumption looks like when it is written down as a table of predictions.</p>
+<h2 id="summary">Summary</h2>
+<p>Charon's quantisation splits the integer action $\pm nh$ at each point into a spin $\pm\tfrac12nh$ and a pulse $\pm\tfrac12nh$ (Esp 011), and Axiome 4 makes the two halves exactly equal, $S^{2} = P^{2} = \tfrac14n^{2}h^{2}$ (111). With the parity rule, which puts the charged leptons on odd rungs, the split makes the lepton ladder's integer the particle's <strong>spin</strong>, and Esp 052 prints the result: "électron : $n = 0$, c'est-à-dire spin $1/2\,h$; muon : $n = 1$, c'est-à-dire spin $3/2\,h$; lepton tau : $n = 2$, c'est-à-dire spin $5/2\,h$".</p>
+<p><strong>The claim is false.</strong> The muon and the tau are measured spin-$\tfrac12$; the model gives them $\tfrac32\hbar$ and $\tfrac52\hbar$. The muon's spin is fixed by its decay and its magnetic moment, and the value was known a quarter of a century before the book was published, so this is not a claim overtaken by new data — it was contradicted when it was written. The escape route that "spin" means an internal label is closed by the corpus's own sentences: it writes "c'est-à-dire spin", its spin is a geometric angular momentum, and it extends the identification to the attached neutrinos (Esp 031).</p>
+<p>What dies is the equipartition <strong>as stated</strong>, together with the lepton model's spin slider and its $k_S$. What survives is more than the reader might expect. The <strong>masses</strong> survive, because (219)–(221) use only the sum $S+P$ and the factor of two can be moved into the fitted period $T$ — so the ladder stands as a <em>mass</em> ladder (S11 §4.1). The <strong>parity rule</strong> survives, because it is Pauli's. And the <strong>reconciliation argument</strong> survives, because it is arithmetic and it is correct: an integer action cannot be a single half-integral object, so a second half-integral component is genuinely forced. That argument is the pulse's founding job, and it is untouched by this verdict.</p>
+<p>The verdict of the pair of articles, then, is not that the pulse should never have been introduced. It is that the pulse was made to carry a claim about measurement — the spin of the muon — that its own structure could not support, and a second claim about gravity (P24) that fails by ninety-eight orders of magnitude. The first job the pulse was given was a good one. The other two are recorded here so that the rebuilt theory carries its own refutation.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$n$</td>
+<td>the corpus's ladder integer: electron 0, muon 1, tau 2</td>
+</tr>
+<tr>
+<td>$n_{\text{axiom}}$</td>
+<td>the action quantum number; odd for charged leptons by the parity rule; $n_{\text{axiom}} = 2n+1$</td>
+</tr>
+<tr>
+<td>$h$, $\hbar$</td>
+<td>Planck's constant and its reduced form, $\hbar = h/2\pi$</td>
+</tr>
+<tr>
+<td>$\pm nh$</td>
+<td>the quantised action at a point (Axiome 3)</td>
+</tr>
+<tr>
+<td>$(111)$</td>
+<td>$S^{2} = P^{2} = \tfrac14n^{2}h^{2}$, the equipartition (Axiome 4)</td>
+</tr>
+<tr>
+<td>$S$, $P$</td>
+<td>the spin and pulse actions of a point</td>
+</tr>
+<tr>
+<td>$S_e$, $S_\mu$, $P_e$, $P_\mu$</td>
+<td>the electron's and muon's spin and pulse actions, (223), (224), (229), (230)</td>
+</tr>
+<tr>
+<td>$T$, $T_0$</td>
+<td>the model's fitted period and the fundamental period at a point</td>
+</tr>
+<tr>
+<td>$k_S$, $k_P$</td>
+<td>the relativistic spin and pulse coefficients; $k_S = k_P$ is L15</td>
+</tr>
+<tr>
+<td>$(219)$–$(221)$</td>
+<td>the mass equations; they contain only the sum $S+P$</td>
+</tr>
+<tr>
+<td>$2h/(c^{2}T)$</td>
+<td>the mass-ladder step; the factor 2 is the equipartition</td>
+</tr>
+<tr>
+<td>Esp 011, 031, 052</td>
+<td>the decomposition and naming of the pulse; the neutrino spin extension; the ladder table</td>
+</tr>
+<tr>
+<td>L15</td>
+<td>the equipartition as one of the twenty equations of the Système L</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>J. E. Charon, <em>L'Esprit et la Relativité complexe</em> (1983), Esp 011, for the decomposition of $\pm nh$ and the naming of the pulse; Esp (111), for the equipartition; Esp 031, for the extension of the spin identification to the neutrinos; and Esp 052, for the ladder table this article quotes.</li>
+<li>J. E. Charon, <em>La Relativité complexe</em> (1987), for the Système L and equation L15, the equipartition written among the model's twenty equations.</li>
+<li>W. Pauli, "The connection between spin and statistics," <em>Physical Review</em> <strong>58</strong> (1940) 716, for the spin–statistics theorem from which the parity rule is imported — the step of the argument that is not Charon's and that survives this verdict.</li>
+<li>R. L. Workman <em>et al.</em> (Particle Data Group), <em>Progress of Theoretical and Experimental Physics</em> <strong>2022</strong>, 083C01, for the charged-lepton spins ($\tfrac12$, $\tfrac12$, $\tfrac12$) and the muon's anomalous magnetic moment that settle the claim.</li>
+<li>R. E. Marshak and E. C. G. Sudarshan, <em>Introduction to Elementary Particle Physics</em> (1961), and the muon-decay literature of the 1950s that fixed the muon's spin, for the dated statement that places this claim in the second class of the register's verdicts — wrong when written, not overtaken.</li>
+<li>S11, <code>charon-s11-quantised-action-spin-and-pulse</code>, §1.4, §3.2, §4.1 and §5.5, for the reconciliation argument that survives, the audit of this claim, the proof that the mass sector cannot see the split, and the three-job grading of the pulse.</li>
+<li>P24, <code>charon-p24-gravity-from-a-pulsating-boundary</code>, for the pulse's other dead claim.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — Axiom 3 and the Passage to RGQ (S15) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-axiom-3-and-the-passage-to-rgq-s15">Charon — Axiom 3 and the Passage to RGQ (S15)</h1>
+<p><em>Audits §2.3 of <code>CHARON_IDEAS_AND_CLAIMS.md</code>, against the quantification axiom and RC (2-70)–(2-72) (scan 032), with RC 047.</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The corpus's third axiom is the one that makes it a quantum theory: at every real point the action is quantised at $\pm nh$ and splits exactly equally between a spin $\pm n\hbar/2$ and a "pulse" $\pm n\hbar/2$.</strong> <strong>From it, plus the curvature law, the corpus obtains its quantum equation — the passage to what it calls RGQ, the <em>Relativité générale quantifiée</em>.</strong></p>
+<p><strong>This article does two things.</strong> <strong>First it audits the axiom, and the finding is structural: the axiom is stated as one sentence but contains four independent assertions, of which one is established physics borrowed, one is a free choice, one is an ontological commitment, and one is a definition.</strong> <strong>Second it audits the passage, and the finding is a genuine positive: the substitution that produces the quantum equation is <em>exact</em>, and it has an elegant geometric meaning — the corpus's curvature at a point equals the inverse square of the reduced Compton wavelength of the mass there.</strong></p>
+<p><strong>And the article records the corpus's worst-foundational defect, because it lands squarely on this axiom: the axioms cannot be enumerated.</strong></p>
+<h2 id="what-the-corpus-claims">What the Corpus Claims</h2>
+<p><strong>§2.3 — at every real point $P$ the action is quantised at $\pm nh$, split exactly equally between a spin $\pm n\hbar/2$ and a "pulse" $\pm n\hbar/2$.</strong> RC ch. II §IV.1. <strong>Tag: [SPEC].</strong></p>
+<p><strong>The axiom, verbatim (RC 032), so that its exact scope can be seen:</strong></p>
+<blockquote>
+<p><strong>"L'action en chaque point $P$ du Réel est quantifiée à la valeur $\pm nh$, où $n$ est un entier non nul et $h$ la constante de Planck; cette action se partage entre un spin $\pm n\hbar/2$ et un pulse $\pm n\hbar/2$ ($h = 2\pi\hbar$). Si $n$ est pair $P$ est un boson; si $n$ est impair $P$ est un fermion."</strong></p>
+</blockquote>
+<p><strong>And the corpus immediately supplies the reason the object is not at $P$ itself</strong> — a point has zero volume, so the action cannot be <em>contained</em> there — <strong>and defines the action density (2-70):</strong></p>
+<p>$$(2\text{-}70)\quad U_{P} = \left(\frac{\pm nh}{V_{4}}\right)_{P} ,$$</p>
+<p><strong>with $V_{4}$ the four-dimensional hypervolume of the imaginary micro-universe at $P$, extended over one pulsation period.</strong> <strong>$U$ then obeys (2-71):</strong></p>
+<p>$$(2\text{-}71)\quad \Box^{2}U + (R - 4\Lambda)U = \Box^{2}U + \frac{M_{0}^{2}c^{2}}{\hbar^{2}}U = 0 ,$$</p>
+<p><strong>with the curvature law (2-72): $R = \xi^{2}\rho^{2} + 4\Lambda$.</strong></p>
+<h2 id="finding-1-the-axiom-is-four-assertions-not-one">Finding 1 — The Axiom Is Four Assertions, Not One</h2>
+<p><strong>Read as printed, "axiom 3" asserts:</strong></p>
+<ol>
+<li><strong>the action at every real point is an integer multiple of $h$</strong> — an ontological claim about what exists at a point;</li>
+<li><strong>that action splits <em>exactly equally</em> between spin and pulse</strong> — a free choice, and the load-bearing one;</li>
+<li><strong>even $n$ ⟹ boson, odd $n$ ⟹ fermion</strong> — the spin–statistics rule;</li>
+<li><strong>the object so quantised is a <em>density</em> at a point, carried by the imaginary micro-universe</strong> (2-70) — a definition, and one that imports the whole micro-universe ontology.</li>
+</ol>
+<p><strong>Of these, (3) is established physics — the spin–statistics theorem — and it is <em>imported</em>, not derived.</strong> <strong>Nothing in the corpus's argument forces integer action to yield the observed statistics; the corpus's derivation of "fermion from a fused pair of half-integer states" is an argument for <em>consistency</em>, not for uniqueness.</strong> <strong>(1) is a commitment; (2) is the free choice; (4) is a definition of $U$ rather than a dynamical claim.</strong></p>
+<p><strong>And on (2) the programme's own S11 audit has already ruled.</strong> <strong>The equipartition is <em>unobservable in the mass sector</em></strong> — the lepton mass equations contain only the sum $S + P = 2(n+\tfrac{1}{2})h$, so the factor 2 can be traded into the fitted $T$ with the fit unchanged — <strong>and where it <em>is</em> observable it is false: the parity rule puts the muon and tau on spin-$\tfrac{3}{2}$ and spin-$\tfrac{5}{2}$ rungs, while both are measured spin-$\tfrac{1}{2}$.</strong> <strong>That consequence is post-mortem as P23.</strong> <strong>So the axiom's one distinctive assertion is either invisible to measurement or contradicted by it.</strong></p>
+<h2 id="finding-2-the-axioms-cannot-be-enumerated-and-that-is-a-foundational-defect">Finding 2 — The Axioms Cannot Be Enumerated, and That Is a Foundational Defect</h2>
+<p><strong>This is the article's hardest finding and it is a defect of exactly the kind the programme's ambition could not afford.</strong></p>
+<p><strong>The corpus presents an axiomatic reconstruction of physics — three axioms, not two.</strong> <strong>But the axiomatics does not survive contact with the printed text.</strong> <strong>The register's own correction list records:</strong> <strong>"Axiome 3 is two different axioms"</strong> — the label designates different statements in different sections; <strong>"Axiome 5 unprinted"</strong>; <strong>a stray "axiome 6" reference in Esp 087</strong>; <strong>Axiome 4 (the spin–pulse equality $S^{2} = P^{2} = \tfrac{1}{4}n^{2}h^{2}$) is <em>admitted</em> rather than derived</strong>; <strong>Axiome 2 (stationary action) is never applied to the split (S14 generalises this: it is not applied to the $U$ equation either)</strong>; <strong>and the 1983 book prints the self-contradictory $\hbar = 2\pi\hbar$ twice</strong>, which RC prints correctly. <strong>The register's adopted rule — never cite an axiom by number — is the correct response.</strong></p>
+<p><strong>Why this is a foundational defect and not a proofreading complaint.</strong> <strong>An axiomatic reconstruction is checkable exactly to the extent that its axioms can be listed.</strong> <strong>If the axiom set cannot be enumerated from the corpus, then the programme's central claim — that physics rests on a small set of stated principles — cannot be evaluated, and the claim is thereby not made good rather than merely unproven.</strong> <strong>A reader cannot ask "which axiom forbids this?" because the numbers do not resolve to statements.</strong> <strong>This is the ambition-versus-delivery gap in its most concrete form: the corpus promised a foundation and printed an index.</strong></p>
+<p><strong>And it is worth contrasting with what the corpus does well, because the contrast is instructive.</strong> <strong>Where the corpus states a <em>named</em> principle with a sentence — the quantification axiom quoted above; the Cartan conditions (S7); the zero-total-energy stipulation (S50) — the principle is clear, quotable and testable.</strong> <strong>It is the <em>numbering</em> that is unstable, not the physics.</strong> <strong>So the defect is real but repairable in principle: the corpus's principles can be recovered by quotation, which is exactly why this programme cites pages and not axiom numbers.</strong></p>
+<h2 id="finding-3-the-passage-to-rgq-is-a-substitution-and-it-is-exact">Finding 3 — The Passage to RGQ Is a Substitution, and It Is Exact</h2>
+<p><strong>The passage from the axiom to the quantum equation runs through the curvature law, and the substitution closes exactly.</strong></p>
+<ul>
+<li><strong>By (2-70), $U = \pm nh/V_{4}$ — the action per unit four-volume.</strong></li>
+<li><strong>By (2-72), $R - 4\Lambda = \xi^{2}\rho^{2}$</strong>, and the corpus's normalisation is $M_{0} = \Omega_{0}\rho$ with $\xi \equiv \Omega_{0}c/\hbar$.</li>
+<li><strong>Therefore $M_{0}^{2}c^{2}/\hbar^{2} = (\Omega_{0}c/\hbar)^{2}\rho^{2} = \xi^{2}\rho^{2} = R - 4\Lambda$, exactly — an identity, not an approximation.</strong></li>
+<li><strong>So (2-71)'s identification is exact, and the quantum equation is the Klein–Gordon equation for a scalar whose mass term is <em>read off the curvature of space at the point</em>.</strong></li>
+</ul>
+<p><strong>The identity has an elegant geometric reading, which the programme has not recorded before and which is worth a line in its own right.</strong> <strong>Substituting $\rho = M_{0}/\Omega_{0}$: $R - 4\Lambda = (M_{0}c/\hbar)^{2}$, so $1/\sqrt{R - 4\Lambda}$ is the reduced Compton wavelength $\hbar/M_{0}c$ of the mass at that point.</strong> <strong>Numerically, at the electron's proper density $\rho_{e} = m_{e}/\Omega_{0} = 3{,}7297\times10^{13}$ g cm$^{-3}$: $R - 4\Lambda = \xi^{2}\rho_{e}^{2} = 6{,}7060\times10^{20}$ cm$^{-2}$, whose curvature radius is $3{,}8616\times10^{-11}$ cm — against $\hbar/m_{e}c = 3{,}8616\times10^{-11}$ cm.</strong> <strong>The two agree to the last figure shown, and the agreement is <em>exact</em>, not approximate: with $\xi \equiv \Omega_{0}c/\hbar$ the two expressions are one identity written twice.</strong> <strong>The residual that appears if one mixes the corpus's rounded printed values is $0{,}05\,\%$, which is the rounding of $\xi$ and $\Omega_{0}$ and not a physics gap.</strong> <strong>So the corpus's "curvature at a point" is $(2\pi/\text{Compton wavelength})^{2}$: mass <em>is</em> curvature in this framework, with $\xi$'s definition $\xi \equiv \Omega_{0}c/\hbar$ being precisely the choice that makes the two agree.</strong> <strong>A definition made to work — and it works.</strong></p>
+<h2 id="finding-4-what-the-passage-does-not-deliver">Finding 4 — What the Passage Does Not Deliver</h2>
+<p><strong>Three limits, stated so that the positive above is not overread.</strong></p>
+<ul>
+<li><strong>It is a scalar equation.</strong> Klein–Gordon describes spin-0. <strong>The electron needs spin-$\tfrac{1}{2}$, which the corpus obtains from the <em>fusion</em> machinery of de Broglie's school — the $16^{2} = 256$ component count and its relatives (§2.6, S12's subject) — not from the passage to RGQ.</strong> <strong>So "the passage to RGQ" does not by itself quantise the electron, and the corpus's spin sector inherits the fusion machinery's problems (P23, P24).</strong></li>
+<li><strong>The quantisation is in the interpretation, not the dynamics.</strong> $U$'s <em>value</em> is quantised by (2-70), but $U$'s <em>equation</em> is the standard Klein–Gordon equation. <strong>Any massive scalar obeys the same equation. So the "quantum" content of RGQ is one relation, $U = \pm nh/V_{4}$, and it is a definition of $U$.</strong></li>
+<li><strong>No new prediction follows.</strong> The equation is standard, its mass term is fixed by $\rho$, and $\rho$ is an input (S34's ledger). <strong>So RGQ differs from the Klein–Gordon equation by an interpretation of $U$ and by nothing observable</strong> — unless the micro-universe sector supplies a difference, which is the business of S17–S28 and, so far, of P23 and P24.</li>
+</ul>
+<h2 id="verdict">Verdict</h2>
+<p><strong>One free choice, one borrowed theorem, one stable equation, and a foundation that cannot be listed.</strong></p>
+<ul>
+<li><strong>What is genuinely to the corpus's credit.</strong> <strong>(a)</strong> The <em>existence</em> argument behind the axiom is the strongest thing the quantification does: an integer total action cannot be carried by a single half-integral object, so <em>some</em> pairing is needed, and the corpus supplies one. <strong>(b)</strong> The passage to RGQ is carried out <em>exactly</em> — the mass term is not fitted but substituted, and the substitution is an identity. <strong>(c)</strong> The resulting geometric reading, <strong>curvature = $1/(\text{reduced Compton wavelength})^{2}$</strong>, is elegant, dimensionally correct, and verified numerically here to better than $0{,}1\,\%$. <strong>That is a real result of the framework, and the register does not currently carry it.</strong> <strong>(d)</strong> The axiom's derivable consequence (even/odd $\leftrightarrow$ boson/fermion) is correct physics.</li>
+<li><strong>Where it fails.</strong> <strong>(a)</strong> The distinctive assertion — exact spin–pulse equipartition — is invisible to the mass measurements that could test it and contradicted by the spins of the muon and the tau it predicts (P23). <strong>(b)</strong> The axiomatics cannot be enumerated, so the "axiomatic" claim cannot be checked; Axiome 4 is admitted, Axiome 3 is two axioms, Axiome 5 is unprinted. <strong>(c)</strong> The passage to RGQ delivers the Klein–Gordon equation's content with a geometric mass term and <strong>no observable difference from Klein–Gordon itself.</strong></li>
+<li><strong>Net.</strong> <strong>§2.3 stays [SPEC], with the split tagged [PARTIAL] for the spin-ladder failure (§2.3's register note already carries this). And this article adds the positive: the mass term of RGQ is exactly the curvature, in the sense that curvature equals the inverse squared reduced Compton wavelength — an identity the corpus earned by its choice of $\xi$, and the framework's cleanest internal consistency.</strong></li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<ul>
+<li><strong>$n$</strong> — a non-zero integer; <strong>the total action at $P$ is $\pm nh$</strong>; <strong>$n$ even ⟹ boson, $n$ odd ⟹ fermion</strong>.</li>
+<li><strong>spin, pulse</strong> — the two halves of the action, each $\pm n\hbar/2$; <strong>"pulse"</strong> is the corpus's term for the second (radial pulsation) degree of freedom of a point, with no standard counterpart.</li>
+<li><strong>$U$</strong> — the action density, $U = dA/dV_{4}$, quantised by (2-70) as $U_{P} = (\pm nh/V_{4})_{P}$.</li>
+<li><strong>$V_{4}$</strong> — four-dimensional hypervolume of the imaginary micro-universe at $P$, over one pulsation $T$.</li>
+<li><strong>$\xi$</strong> — $\equiv \Omega_{0}c/\hbar$, the lepton-sector constant (RC 051 (3-70)); it is the choice of $\xi$ that makes $R - 4\Lambda = (M_{0}c/\hbar)^{2}$.</li>
+<li><strong>RGQ</strong> — <em>Relativité générale quantifiée</em>, the corpus's name for its quantised framework; the "passage to RGQ" is the substitution chain (2-70)+(2-72)$\to$(2-71).</li>
+<li><strong>Axiome 4</strong> — the spin–pulse equality $S^{2} = P^{2} = \tfrac{1}{4}n^{2}h^{2}$; <strong>admitted, not derived</strong>; the "facteur 2".</li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S11</strong> — the three jobs the quantification was given, and the audit that makes P23 and P24 post-mortem.</li>
+<li><strong>S12</strong> — the oscillator equation $U$ obeys and the fusion machinery's $16^{2n}$ count.</li>
+<li><strong>S13</strong> — the sign freedom of $T_{\alpha}^{\ \alpha}$, the other half of RC 029's geometric/physical split.</li>
+<li><strong>S14</strong> — why the equation for $U$ comes from an identification rather than from a variational principle.</li>
+<li><strong>S16</strong> — where this axiom's silent choices sit in the formalism block's ledger.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

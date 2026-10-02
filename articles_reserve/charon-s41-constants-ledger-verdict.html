@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — The Constants Ledger: Verdict (S41) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-constants-ledger-verdict-s41">Charon — The Constants Ledger: Verdict (S41)</h1>
+<p><em>Closes the constants block S34–S40. Applies rule R6's three questions separately to every row, records what each article of the block changed in the ledger, gives the final count, and states what is left open. Feeds S59.</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The register's S41 entry is one line — <em>"Tally with rule R6. Feeds S59"</em> — and the line is precise about the job: not a summary of the chains, which is S34 Part 5, and not the count, which is S34 Part 4, but the <em>tally</em>: rule R6's three questions asked of every row, one at a time, and the ledger's state after the block has been written rather than before.</strong> Eight articles have now passed over this ledger — S34 the table, S35 the coupling, S36 the ladder, S37 the parameter the coupling hangs on, S38 the hadron mass, S39 Newton's constant, S40 the one prediction — and several of them changed a row's status. <strong>This article is the place where the changes are collected and the final count is struck.</strong></p>
+<p><strong>The verdict, before the evidence, in four sentences.</strong> The <em>Système L</em> is <strong>coherent</strong>: twenty equations, seeded at six measured values, closed on themselves and self-consistent to a two-per-cent residual whose well is fifty deep (S31). It is <strong>reproducible</strong>: given those seeds and the <em>Système L</em>'s own $\beta$, every number in the electromagnetic chain comes back — the corpus's printed $\alpha$ exactly from its printed inputs, and the corrected arithmetic better (S35). Its <strong>correspondence with nature is real and short</strong>: one number is compared with an independently measured constant and agrees to two per cent ($e$ and $\alpha$), one mass is compared with the proton and agrees to a quarter of a per cent (conditional on $\xi$), one radius agrees at the ten-per-cent level under a hard-coded boundary, and exactly one quantity in the whole programme is a <em>prediction</em> rather than a fit ($\dot G/G$). <strong>And the count of independent outputs is zero</strong>, which is the block's final answer to the corpus's claim to compute the constants of physics.</p>
+<p><strong>What changed during the block, which is why this article is not a reprint of S34.</strong> Five rows moved. <strong>$e$:</strong> S34 established it is one of the six seeds; S35 showed the <em>agreement</em> of the coupling is inherited from $\beta$, so the 2,3 % is not the corpus's result but the distance between two measured sectors bridged by one fitted number. <strong>$\beta$:</strong> S37 put it in closed form, $\beta = -h(1-\varepsilon)/(4\pi^{3}c)$ with $\varepsilon = (\mu-m)/(\tau-\mu)$, and thereby removed the last suspicion of circularity while sharpening the count — the electromagnetic comparison uses no electromagnetic input. <strong>The ladder:</strong> S36 showed the electromagnetic force depends on $\gamma$ alone and not on the pulsation at all, so the model's central dynamical object is absent from its own charge computation. <strong>The nucleon mass:</strong> S38 classified it as an output conditional on two constants, where the sweep cannot fail, and the test lands on $\xi$. <strong>$G$:</strong> S39 withdrew the derivation and made it an input, agreeing with the corpus's other book (RC 082), and S40 then gave the one row that survives as a prediction.</p>
+<h2 id="1-the-block-and-what-each-article-changed">1. The block, and what each article changed</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>row</th>
+<th>what it changed in the ledger</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>S34</strong></td>
+<td>the whole table</td>
+<td>the count: 1 defined ($c$), 5 measured seeds ($h,m,\mu,\tau_{2},e$), 1 suggested ($\xi$), 0 independent outputs; $e$ moves from "the one output" to "one of the six seeds"</td>
+</tr>
+<tr>
+<td><strong>S35</strong></td>
+<td>$\alpha$, $e$</td>
+<td>the four-row grid; $\alpha \propto \beta^{5/4}$; the agreement is inherited from $\beta$; the register's §10.1 arithmetic slip corrected</td>
+</tr>
+<tr>
+<td><strong>S36</strong></td>
+<td>the (246)–(264) ladder</td>
+<td>the ladder is complete and exact where checkable; its only free number is $\gamma$; the time average is a no-op, so no radius, mass or phase enters the charge</td>
+</tr>
+<tr>
+<td><strong>S37</strong></td>
+<td>$\beta$, $\gamma$</td>
+<td>closed form from the lepton masses alone; no electromagnetic input; $\gamma = (\tau-2\mu+m)/(4\pi^{3}(\tau-\mu))$; $\gamma$ dimensionless by algebra, not by cgs bookkeeping; the nearness of $\gamma$ to $\alpha$ is a fact about numbers</td>
+</tr>
+<tr>
+<td><strong>S38</strong></td>
+<td>the nucleon mass</td>
+<td>OUTPUT, conditional on $\xi$ and $T_{0}$; the sweep is a plateau ($0{,}9\,\%$ across the span) while $\xi$'s two printed values span $5{,}1\,\%$; the selection is derived from (352)–(353)</td>
+</tr>
+<tr>
+<td><strong>S39</strong></td>
+<td>$G$</td>
+<td><strong>withdrawn as an output</strong>: $G$ is an INPUT; the hadron model's computation fails its own calibration by forty orders; the corpus's own other book treats $G$ as observed</td>
+</tr>
+<tr>
+<td><strong>S40</strong></td>
+<td>$\dot G/G$</td>
+<td>the one PREDICTION; the derivation closes; the value to quote is $1{,}6\times10^{-14}$ yr$^{-1}$ (13× below the lunar-laser-ranging bound), not the printed $5\times10^{-16}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two register-level corrections are the block's residue in the list itself.</strong> S35 corrected §10.1's <em>"$\times23{,}6 = 7{,}565\times10^{-3}$"</em>, which merged two rows (the as-printed and the corrected) and closed on neither. S37 corrected the <em>"circular"</em> reading of S35 in the corpus's favour: since $\beta$ does not depend on $e$, the final comparison relates the charged-lepton spectrum to $\alpha_{\mathrm{f}}$ — two independently measured sectors — and the chain tests the <em>Système L</em>'s internal consistency rather than assuming its conclusion.</p>
+<h2 id="2-rule-r6-applied-the-three-questions-one-row-at-a-time">2. Rule R6 applied: the three questions, one row at a time</h2>
+<p><strong>The rule's whole point is that a pass on one question is never reported as a pass on another, and the ledger is where that discipline has teeth, because the same row can be perfect on the first two and empty on the third.</strong> The tests are S6's: <em>coherence</em> (the formalism closes), <em>reproducibility</em> (the number follows), <em>correspondence</em> (the number matches nature).</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>row</th>
+<th>value (corpus)</th>
+<th>coherence</th>
+<th>reproducibility</th>
+<th>correspondence</th>
+<th>owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$c$</td>
+<td>defined by the units</td>
+<td>—</td>
+<td>tautological</td>
+<td><strong>none</strong> — a tautology is not a comparison</td>
+<td>S34</td>
+</tr>
+<tr>
+<td>$h$</td>
+<td>$6{,}61\times10^{-27}$ (1970s)</td>
+<td>—</td>
+<td>exact by construction</td>
+<td><strong>input</strong>, compared to nothing</td>
+<td>S34</td>
+</tr>
+<tr>
+<td>$m$, $\mu$</td>
+<td>1970s values</td>
+<td>—</td>
+<td>exact by construction</td>
+<td><strong>input</strong></td>
+<td>S34</td>
+</tr>
+<tr>
+<td>$\tau_{2}$</td>
+<td>$0{,}95\,\%$ high for its date</td>
+<td>—</td>
+<td>exact by construction</td>
+<td><strong>input</strong>, and the seed with the largest deviation</td>
+<td>S34</td>
+</tr>
+<tr>
+<td>$e$</td>
+<td>$4{,}91\times10^{-10}$ esu</td>
+<td><strong>yes</strong> (inside the closing system)</td>
+<td><strong>yes</strong> (S35: chain and arithmetic)</td>
+<td><strong>2,3 % on the charge, 4,8 % on the coupling</strong> — real, and inherited from $\beta$</td>
+<td>S35</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>$7{,}65\times10^{-3}$ vs $7{,}2974\times10^{-3}$</td>
+<td><strong>yes</strong></td>
+<td><strong>yes</strong></td>
+<td>$+3{,}64\,\%$ coupling / $+1{,}82\,\%$ charge corrected; $+4{,}80\,\%$ / $+2{,}38\,\%$ as printed</td>
+<td>S35</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>$-1{,}70\times10^{-39}$ cgs</td>
+<td><strong>yes</strong> — two independent routes (S37)</td>
+<td><strong>yes</strong> — closed form from the masses</td>
+<td><strong>none directly</strong>; it is the bridge to $\alpha$'s correspondence</td>
+<td>S37</td>
+</tr>
+<tr>
+<td>$\gamma$</td>
+<td>$7{,}716\times10^{-3}$ printed</td>
+<td><strong>yes</strong> — algebraically dimensionless</td>
+<td><strong>yes</strong> — $7{,}6915\times10^{-3}$ from $\beta$</td>
+<td><strong>none</strong>; $\alpha_{\mathrm{f}}/\gamma = 0{,}9863$ is a statement about numbers</td>
+<td>S37</td>
+</tr>
+<tr>
+<td>$\xi$/$\Omega_{0}$/$l_{0}$</td>
+<td>$6{,}467\times10^{-4}$</td>
+<td><strong>yes</strong> — one degree of freedom in three forms</td>
+<td><strong>yes</strong></td>
+<td><strong>input</strong> — the corpus's <em>"suggestion"</em> from $M_{0}$</td>
+<td>S22, S34</td>
+</tr>
+<tr>
+<td>$T_{0}$</td>
+<td>$4{,}93\times10^{-24}$ s</td>
+<td><strong>yes</strong></td>
+<td><strong>yes</strong></td>
+<td><strong>fitted then defining</strong> — the muon–tau spacing</td>
+<td>S21</td>
+</tr>
+<tr>
+<td>$M_{H}$</td>
+<td>$1{,}6766\times10^{-24}$ g</td>
+<td><strong>yes</strong></td>
+<td><strong>yes</strong></td>
+<td><strong>$+0{,}24\,\%$ on $m_{p}$ under one $\xi$, $+5{,}4\,\%$ under the other</strong> — real, conditional</td>
+<td>S38</td>
+</tr>
+<tr>
+<td>$R_{H}$, $\lambda_{f}$</td>
+<td>$0{,}92$ fm, $2$ fm</td>
+<td><strong>yes</strong></td>
+<td><strong>yes</strong></td>
+<td>$+9{,}3\,\%$ against the proton charge radius, $+30\,\%$ against $\hbar/m_{\pi}c$ — order-of-magnitude, under a hard-coded boundary</td>
+<td>S26</td>
+</tr>
+<tr>
+<td>$G$</td>
+<td>$(5{,}4\pm2{,}7)\times10^{-8}$ cgs</td>
+<td><strong>no</strong> — the field equation's own length is forty orders from it</td>
+<td><strong>no</strong> — a $\pm50\,\%$ bar is the integration's spread</td>
+<td><strong>INPUT</strong> (RC 082 §4)</td>
+<td>S39, S40</td>
+</tr>
+<tr>
+<td>$\dot G/G$</td>
+<td>$5\times10^{-16}$ yr$^{-1}$ (model: $1{,}6\times10^{-14}$)</td>
+<td><strong>yes</strong> — the derivation closes with one printed sign corrected</td>
+<td><strong>yes</strong> — five printed numbers reproduced</td>
+<td><strong>PREDICTION</strong>, allowed: 13× below the LLR bound $2{,}1\times10^{-13}$</td>
+<td>S40</td>
+</tr>
+<tr>
+<td>$2/3$ (fractional charge)</td>
+<td>the saturation geometry</td>
+<td><strong>yes</strong></td>
+<td><strong>yes</strong> — the geometry is the ladder's own</td>
+<td><strong>none</strong> — the quark identification dies at P4</td>
+<td>S47, S48</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the table down the last column and the ledger's shape appears: the corpus's strongest results are coherent and reproducible <em>by construction</em>, and its correspondence is confined to three rows — two of them conditional on inputs and one of them a prediction.</strong> That is the tally, and it is not a dismissal: a formalism whose only correspondence claim is a single allowed prediction is still a formalism that made a prediction, and R6 asks no more of a theory than that the three questions be answered honestly and separately.</p>
+<h2 id="3-the-count-final">3. The count, final</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>item</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>defined</strong></td>
+<td>$c$</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>measured seeds</strong></td>
+<td>$h$, $m$, $\mu$, $\tau_{2}$, $e$</td>
+<td>5</td>
+</tr>
+<tr>
+<td><strong>suggested seed</strong></td>
+<td>$\xi$ (equivalently $\Omega_{0}$, $l_{0}$)</td>
+<td>1 degree of freedom</td>
+</tr>
+<tr>
+<td><strong>fitted then defining</strong></td>
+<td>$T_{0}$</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>nested restatements</strong></td>
+<td>$\alpha$, $\beta$, $T_{0}$ — each a closed form in the seeds (S21, S37)</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>built from the corpus's premises</strong></td>
+<td>the hadron solution, the mass integral, the ladder (246)–(264), the saturation geometry</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>independent outputs</strong></td>
+<td>—</td>
+<td><strong>0</strong></td>
+</tr>
+<tr>
+<td><strong>conditional outputs</strong></td>
+<td>$M_{H}$ (on $\xi$, $T_{0}$)</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>misreported inputs misreported as outputs, now withdrawn</strong></td>
+<td>$G$, and the lepton tower if it is counted</td>
+<td>1 (+1 dead)</td>
+</tr>
+<tr>
+<td><strong>live predictions</strong></td>
+<td>$\dot G/G$</td>
+<td><strong>1</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The corpus's own claim — five constants plus the charge, computed — becomes: one defined constant, five measured seeds, one suggested degree of freedom, one fitted period, zero independent outputs, one conditional output, one prediction.</strong> Every deviation in the electromagnetic sector is a deviation of a <em>restatement</em> of the seeds, which is why the largest of them settles at the residual's own size: the search box is $\pm10\,\%$, the residual $\chi_{L} = 2\,\%$, and the reported charge deviation $2{,}3\,\%$ are the same number read three ways (S31, S34).</p>
+<h2 id="4-what-the-block-leaves-open">4. What the block leaves open</h2>
+<p><strong>Recorded, so that no later article quietly closes or quietly repeats them.</strong></p>
+<ol>
+<li><strong>The $2\pi$ of (264): misprint or transcription?</strong> Resolvable only from the printed page or the 1977 edition; the internal evidence settles which equation is right — (266), which reproduces the corpus's own number — but not which one the compositor set (S35, S36).</li>
+<li><strong>RC 052's graph-1 temperature column</strong>, which satisfies (245)'s scaling to $2\,\%$ along the trajectory and misses its value by $3{,}17\times10^{7}$; filed to S20 (S36 §9).</li>
+<li><strong>The two units-$L$ conversion puzzles</strong> of the 058 table — $A$'s implied unit of $1{,}64\times10^{28}$ and the two $W_{0}$'s implied $3{,}73\times10^{-7} = \alpha c^{2}(R_{0}/cT)^{2}$; neither is a natural unit of the corpus's list and nothing in S30–S41 depends on them (S32).</li>
+<li><strong>The two blank rows</strong> of the 058 table — $\tau_{on}(n = 2)$, which would carry $3{,}1976\times10^{-24}$ g and $21{,}72$, and $W_{0\tau}$ (S32).</li>
+<li><strong>The step-5 refinement loop</strong>, described and not evidenced as run to convergence: the published number is the first $729$-point grid (S31).</li>
+<li><strong>The 1983 book's internal $5{,}1\,\%$ split</strong>, its printed mass curve needing $\xi = 6{,}8\times10^{-4}$ while its printed density needs $6{,}467\times10^{-4}$ (S27, S38).</li>
+<li><strong>RC 055 §4's fitted éon eccentricity</strong> $E = 0{,}36$, which does not close on the flat reading of (3-110) by $2{,}7\,\%$ (S37).</li>
+<li><strong>The missing integrands of Esp (220)–(221)</strong>, which block S43 until the images are re-read (register §8 item 1).</li>
+</ol>
+<p><strong>One absence is structural rather than open, and it belongs in this tally because the ledger's rows all inherit it: the corpus has no perturbation sector.</strong> Nothing in it propagates a deviation, which is why its coherence is a property of exact solutions and its correspondence a property of single numbers.</p>
+<h2 id="5-verdict">5. Verdict</h2>
+<p><strong>On rule R6, item by item, the ledger's tally is: two correspondences at the per-cent level or better ($\alpha$'s two per cent, inherited from the lepton spectrum through $\beta$; the nucleon mass's quarter per cent, conditional on $\xi$), one at the ten-per-cent level under a hard-coded boundary (the proton radius), one withdrawn claim ($G$), and one prediction ($\dot G/G$).</strong> Everything else in the ledger is coherence and reproducibility, which the corpus has in unusual measure for its genre and which no amount of it converts into a correspondence.</p>
+<p><strong>On rule R1, the count is final: one defined constant, five measured seeds, one suggested degree of freedom, one fitted period, zero independent outputs, one conditional output, one prediction.</strong> The corpus's phrase — that the system <em>"ne dépend en fait d'aucun paramètre"</em> — fails on its own pages (S33, S34), and the sentence that should replace it is the one S33 supplies: <strong>a closed consistency system with six measured anchors and one suggested constant.</strong></p>
+<p><strong>And the sentence the programme should carry out of this block, in the register's own terms: the constants are not computed, they are <em>confirmed</em> — and one quantity, $\dot G/G \simeq 1{,}6\times10^{-14}$ yr$^{-1}$ at the corpus's own present radius, is <em>predicted</em>, which is why it is the only row in the table that new data could decide.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>The register gave S41 one line and rule R6, and the tally is now struck. <strong>The block's changes to the ledger are five:</strong> $e$ stays a seed and its agreement is shown to be inherited from $\beta$ (S35); $\beta$ acquires a closed form in the lepton masses with no electromagnetic input (S37); the ladder is shown to depend on $\gamma$ alone, with the pulsation absent from it (S36); the nucleon mass is classified as an output conditional on two constants whose freedom is the larger of the two (S38); and $G$ is withdrawn as an output and returned to the input column, agreeing with the corpus's other book (S39, S40).</p>
+<p><strong>Rule R6's three questions, answered separately for every row, give the ledger its final shape:</strong> coherence and reproducibility in unusual measure, and correspondence confined to three rows — $\alpha$ at two per cent, inherited; $M_{H}$ at a quarter per cent, conditional on $\xi$; the proton radius at ten per cent, under a boundary hard-coded to move at $c$ — plus one withdrawn claim and one prediction. <strong>The final count is one defined constant, five measured seeds, one suggested degree of freedom, one fitted period, zero independent outputs, one conditional output and one prediction.</strong></p>
+<p><strong>Eight items are left open, listed in §4 so that no later article closes or repeats them silently</strong>, and one structural absence is recorded: the corpus has no perturbation sector, so its coherence is exact-solution coherence and its correspondence is single-number correspondence.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1, R2, R6</td>
+<td>the register's rules: input/output accounting; pre-registration; the three questions kept apart</td>
+</tr>
+<tr>
+<td>$\chi_{L}$</td>
+<td>the <em>Système L</em>'s residual, $2\,\%$; its well's depth is $\min\chi_{i}/\chi_{L} = 50$</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>the <em>Système L</em>'s blackbody coefficient; the bridge from the lepton spectrum to $\alpha$</td>
+</tr>
+<tr>
+<td>$\gamma$</td>
+<td>$-c\beta/h$; the ladder's only free number</td>
+</tr>
+<tr>
+<td>$\xi$</td>
+<td>the coupling $\Omega_{0}c/\hbar$, in three equivalent forms with $\Omega_{0}$ and $l_{0}$</td>
+</tr>
+<tr>
+<td>$M_{H}$</td>
+<td>the nucleon mass from the swept mass curve</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S34</strong> <code>charon-s34-the-input-output-ledger.md</code> — the ledger this article closes: the table, the seeds, the chains and the axiom ledger.</li>
+<li><strong>S35</strong> <code>charon-s35-alpha-recomputed.md</code> — the flagship, and the source of the four-row arithmetic grid.</li>
+<li><strong>S36</strong> <code>charon-s36-the-force-integral-246-to-264.md</code> — the ladder built rung by rung.</li>
+<li><strong>S37</strong> <code>charon-s37-the-beta-gamma-chain.md</code> — $\beta$ in closed form, and the removal of the circularity objection.</li>
+<li><strong>S38</strong> <code>charon-s38-the-nucleon-mass-as-output.md</code> — the nucleon mass as a conditional output.</li>
+<li><strong>S39</strong> <code>charon-s39-g-from-the-hadron-model.md</code> and <strong>S40</strong> <code>charon-s40-gdot-over-g.md</code> — the withdrawn claim and the one prediction.</li>
+<li><strong>S31</strong> <code>charon-s31-the-chi-squared-well.md</code> — the residual and the depth that fix the precision of every row.</li>
+<li><strong>S6</strong> — the criteria and rules whose application this article is.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

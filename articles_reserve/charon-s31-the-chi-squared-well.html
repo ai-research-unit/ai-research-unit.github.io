@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — The $\chi$-Squared Well (S31) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-math0-squared-well-s31">Charon — The $\chi$-Squared Well (S31)</h1>
+<p><em>Audits the numerical method of the Système $L$: Esp 057 §1–§6 and the recovered paragraph at the head of Esp 058 (scans 057–058), with the solution table of Esp 058. The method behind S32's table and S34's ledger.</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The method is honest, well posed and reported with unusual frankness; the number it reports does not mean what it looks like it means, and what it does mean is smaller and worth having.</strong> The corpus's numerical claim is that a system of twenty equations, <em>"ne dépendant d'aucun paramètre"</em> (Esp 056), has a <em>"profond puits de minimisation"</em> at the measured values of the six principal constants. <strong>The method section, two pages later, begins by putting those six values in by hand and confines the search to $\pm10\,\%$ of them — and the corpus says so in its own words.</strong> So the result is not a derivation of the constants and not a fit to data; it is a <strong>self-consistency test</strong>, and this article says exactly how strong a test it is.</p>
+<p><strong>What the test is, stated precisely, because the corpus's own notation blurs it.</strong> The reduced system $L'$ is <em>solved forward</em>: given six seeds, $\alpha$ comes from L7 $+$ L8, $\beta$ from L8 $-$ L7, $T$ from L8 at $n = 1,2$, and $K = +1$, $A$ and $R(R_{0})$ from L2–L6 and L1. The six equations dropped from $L$ are then evaluated at that solution, and their normalised misfit is the scalar $\chi$. <strong>There is no least-squares fit against measured data anywhere in the procedure: there is a map from six seeds to an internal-inconsistency residual, and the search locates its minimum.</strong> That is a real and non-trivial experiment, and it is not the experiment the corpus's reputation claims.</p>
+<p><strong>Three results this article adds.</strong></p>
+<p><strong>(1) The residual $\chi_{L} = 2\,\%$ has no absolute meaning, and the invariant is the depth $50$.</strong> The corpus defines $\chi^{2} = \frac{1}{6}\sum(F_{i}/\varepsilon_{i})^{2}$ and <strong>never specifies the scales $\varepsilon_{i}$</strong>, while also writing $\chi$ rather than $\chi^{2}$ in the ratio that gives the well's depth. <strong>So $2\,\%$ is a level in a normalisation chosen by the author, and the scale-free statement the corpus makes is that the best of the 728 other parameter sets is $50$ times worse.</strong> Both of those are stated as they are, with the arithmetic consequences.</p>
+<p><strong>(2) The depth is a sharpness measurement, and it is the corpus's strongest numerical result.</strong> The nearest other sets in the grid are $\pm10\,\%$ away along one axis, so $\min\chi_{i}/\chi_{L} = 50$ says that <strong>moving any single one of the six seeds by $10\,\%$ makes the six dropped equations at least $50$ times worse</strong>. The well is narrower than $10\,\%$ in every direction. <strong>That is a statement of local rigidity, it is measurable, and it is the honest headline of the corpus's numerical chapter</strong> — not the "computation of the constants".</p>
+<p><strong>(3) The corpus's arithmetic is sound, and it is now verified in three independent ways.</strong> $T$, $\alpha$ and $\beta$ are recomputed here from closed forms that follow from the corpus's own L7 and L8 by addition and subtraction, and they reproduce the printed table to $0{,}3\,\%$–$1{,}8\,\%$; <strong>and $\beta$ is confirmed by a second, completely different route</strong> — the blackbody temperature range of Esp 058 §17 with the corpus's own (245) — to $1{,}2\,\%$ (§4.3). <strong>The arithmetic is not where the model is weak; the inference is.</strong></p>
+<p><strong>And one structural finding that belongs here rather than in S32's table: the six equations the residual is over include two definitions.</strong> They are L11, L12 at $n = 1,2$, L14, L15 and L17 (Esp 057 §2). <strong>L15 <em>is</em> the spin–pulse equipartition and L17 <em>is</em> the definition of the elementary length.</strong> So the corpus's self-consistency well is, among other things, a test of $\xi$'s <em>"suggestion"</em> against the lepton's geometry — and S30's independent computation of L17's misfit, $2{,}6\,\%$ in $l_{0}$, is the same order as the reported $\chi_{L} = 2\,\%$ (§3.5).</p>
+<h2 id="what-the-corpus-claims">What the Corpus Claims</h2>
+<p><strong>Esp 057 §1–§6, the method, in the corpus's words:</strong></p>
+<blockquote>
+<p><strong>1)</strong> Donnons-nous un ensemble de six valeurs numériques, dans un système d'unités physiques donné (cgs par exemple), correspondant respectivement aux valeurs des six paramètres : $h, c, m, \mu, \tau_2$ et $e$. Appelons $P_0$ l'ensemble de ces six paramètres initialement choisis.</p>
+<p><strong>2)</strong> On constate alors que, $P_0$ étant donné, on peut rechercher la solution exacte non pas du Système $L$ mais d'un Système $L'$ obtenu en supprimant six des équations de $L$, à savoir : $L11, L12\ (n=1,2), L14, L15$ et $L17$. Cette solution $L'$ est obtenue facilement sur ordinateur; on commence par calculer $\alpha$ par addition de $L7$ et $L8$, puis $\beta$ par soustraction de $L7$ à $L8$, en se servant de $L16$. $L8$, considéré avec $n = 1$ et $n = 2$, donne aussi : $T = 2h/[c^{2}(\tau-\mu)]$.</p>
+<p><strong>3)</strong> Soient $F_i = 0$ ($i = 1$ à $6$) les six équations dont le système $L'$ ne tient pas compte […] On peut calculer l'« écart » entre la solution $L'$ et la solution $L$ en introduisant une fonction d'écart $\chi$ définie comme suit : $\chi^{2} = \frac{1}{6}\sum_{i=1}^{6}(F_i/\varepsilon_i)^{2}$ où $F_i/\varepsilon_i$ est non dimensionnel.</p>
+<p><strong>4)</strong> […] choisissons un ensemble $P_0$ numériquement identique aux valeurs numériques expérimentales que l'on obtient pour ces six paramètres. Puis choisissons pour la variation de ces paramètres des « plages » comprises entre le double et la moitié de la valeur « naturelle » de $P_0$. Enfin discrétisons le calcul en choisissant, par exemple, cinq valeurs régulièrement espacées entre $P_0$ et les deux extréma des plages de variation. Nous disposons ainsi maintenant de $11^{6} = 1\,771\,561$ ensembles $P_i$. […] Le rapport $\min\chi_{i}/\chi_{L}$ ($i \ne L$) sera une mesure de la « profondeur » du puits.</p>
+<p><strong>6)</strong> Nous avons procédé au calcul effectif sur ordinateur […] cependant, essentiellement pour des raisons de temps de calcul,</p>
+</blockquote>
+<p><strong>Esp 058, the recovered paragraph that completes §6 — and the frankest page in the book:</strong></p>
+<blockquote>
+<p>[…] nous nous sommes limité à choisir pour chaque paramètre des plages de variation de seulement $\pm10\,\%$ par rapport aux valeurs numériques connues expérimentalement, avec une seule valeur des paramètres aux deux extréma de chaque plage de variation. Cela conduit pratiquement à tester $3^{6} = 729$ ensembles de paramètres $P_i$. On constate bien effectivement un profond puits de minimisation de la fonction d'écart $\chi$ pour l'ensemble des six paramètres $P_i$ correspondant aux valeurs expérimentales de ces paramètres. L'approximation de la solution $L$ calculée vaut : $\chi_{L} = 2\,\%$. Par ailleurs, ce puits est unique dans la région analysée, et le rapport exprimant la « profondeur » du puits vaut : $\min\chi_{i}/\chi_{L} = 50$.</p>
+</blockquote>
+<p><strong>Tags.</strong> The <em>experiment</em> is <strong>[MATH]</strong>: a parameterised map, a box, a grid, a scalar residual, a reported minimum. The <em>inference</em> drawn from it — that the System $L$ computes the constants — is <strong>[SPEC]</strong> and is what S33 and S34 refuse. Note also <strong>what the paragraph does not claim: it does not claim a global minimum, it does not claim the residual is zero, and it does not claim the search was exhaustive.</strong> All three abstentions are to the corpus's credit.</p>
+<p><strong>Scope.</strong> S30 states the system; S32 gives the constants one row each; S34 counts inputs and outputs; S33 tests the parameter-freedom claim as such. <strong>This article audits the method and recomputes the published solution's arithmetic.</strong></p>
+<h2 id="1-the-method-step-by-step">1. The Method, Step by Step</h2>
+<p><strong>The procedure is complete and reproducible in principle, and this section states it in the order it is used so that S32's table can be checked against it.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>what the corpus does</th>
+<th>what it needs</th>
+<th>what it returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>chooses the six seeds $P_{0}$</td>
+<td>the measured $h, c, m, \mu, \tau_{2}, e$</td>
+<td>a starting point</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>solves $L'$ = $L$ minus (L11, L12 at $n=1,2$, L14, L15, L17)</td>
+<td>$P_{0}$</td>
+<td>$\alpha$, $\beta$, $T$, $K$, $A$, $R(R_{0})$ and every integral of the system</td>
+</tr>
+<tr>
+<td><strong>2a</strong></td>
+<td>$\alpha$ by <strong>addition</strong> of L7 and L8</td>
+<td>$m$, $\mu$, $h$, $c$, $T$</td>
+<td>$\alpha$</td>
+</tr>
+<tr>
+<td><strong>2b</strong></td>
+<td>$\beta$ by <strong>subtraction</strong> of L7 from L8</td>
+<td>$\mu$, $m$, $h$, $c$, $T$</td>
+<td>$\beta$</td>
+</tr>
+<tr>
+<td><strong>2c</strong></td>
+<td>$T = 2h/[c^{2}(\tau-\mu)]$ from L8 at $n = 1,2$</td>
+<td>$\mu$, $\tau$, $h$, $c$</td>
+<td>$T$</td>
+</tr>
+<tr>
+<td><strong>2d</strong></td>
+<td>$K = +1$, $A(R_{0})$, $R(R_{0})$ from L2–L6 and L1</td>
+<td>the above</td>
+<td>the waveform and the geometry</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>evaluates the six dropped equations as $F_{i}$</td>
+<td>the $L'$ solution</td>
+<td>$\chi^{2} = \frac{1}{6}\sum(F_{i}/\varepsilon_{i})^{2}$</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>searches a box about $P_{0}$ on a grid</td>
+<td>a box, a grid, $\chi$</td>
+<td>$\min\chi_{i}$ and the depth ratio</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>refines about the best $P_{L}$ and repeats</td>
+<td>—</td>
+<td>convergence "vers la solution exacte"</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td>reports the executed run</td>
+<td>—</td>
+<td>$\chi_{L} = 2\,\%$, depth $50$, uniqueness in the region analysed</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two features of the method are worth isolating because they decide what the result can mean.</strong></p>
+<p><strong>(a) It is forward computation plus residual evaluation, not fitting.</strong> Once $P$ is given, <em>everything</em> in $L'$ is computed — there is no iterative adjustment inside step 2. So $\chi$ is a <strong>function of the six seeds</strong>, and the search is over a six-dimensional parameter space of <em>inputs</em>, not of fitted coefficients. <strong>The corpus's language — <em>"la solution numérique du Système L"</em> — is therefore fair: what is being located is a self-consistent point of a system, and the point it finds is the experimental one.</strong></p>
+<p><strong>(b) The six dropped equations are not an arbitrary six.</strong> They are L11, L12 at $n = 1,2$, L14, L15 and L17, and S30 gives what each one is. <strong>The list is dominated by the pulse side of the model</strong> (L11, L12 = the electron's and the heavy leptons' pulse actions; L14 = the pulse relativistic coefficient $k_{P}$), plus <strong>L15, the equipartition $k_{S} = k_{P}$</strong>, plus <strong>L17, the definition of the elementary length.</strong> <em>The spin side (L9, L10, L13) is solved, the pulse side is tested.</em></p>
+<h2 id="2-the-seeds-and-the-window">2. The Seeds, and the Window</h2>
+<h3 id="21-the-six-and-what-three-of-them-are">2.1 The six, and what three of them are</h3>
+<p><strong>The seeds are $h, c, m, \mu, \tau_{2}$ and $e$</strong> — Esp 057 §1, read from the scan and confirmed on the printed book (register §13.4). <strong>Three of the six are the measured charged-lepton masses</strong> ($m$ the electron, $\mu$ the muon, $\tau_{2}$ the tau, by the corpus's own (244)); one is Planck's constant at its 1970s value; one is the speed of light; and one is the elementary charge.</p>
+<p><strong>That list is the whole of the constants claim, and it is stated before the search begins.</strong> S34's ledger is the consequence: a system whose six inputs are the six constants it is claimed to compute cannot, by itself, compute them. <strong>The reader who wants the shortest possible evidence for rule R1 has it here, in the corpus's step 1.</strong></p>
+<h3 id="22-math142-is-among-the-seeds-and-the-corpuss-5-1-is-about-182">2.2 $e$ is among the seeds, and the corpus's <em>"5 + 1"</em> is about §18.2</h3>
+<p><strong>Esp 056 says the system computes five principal constants directly and <em>"conduit également au calcul de la charge électrique élémentaire $e$"</em> by way of §18.2.</strong> Esp 057 §1 puts $e$ in the seed set. <strong>Both statements are in the corpus; they are consistent only if the computation of $e$ is the §18.2 chain and the seed is its starting value.</strong> S35 owns that chain and its $2{,}3\,\%$/$4{,}8\,\%$; <strong>the point for this article is that the numerical search never computes $e$ at all.</strong> $\chi$ does not contain $e$; the dropped six are the pulse and normalisation equations. <strong>So the well's depth says nothing about the elementary charge, favourably or unfavourably.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>seed</th>
+<th>symbol</th>
+<th>put in as</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$h$</td>
+<td>$6{,}61\times10^{-27}$ erg·s</td>
+<td>the 1970s measured Planck constant</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$c$</td>
+<td>$3\times10^{10}$ cm/s</td>
+<td>the measured speed of light</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$m$</td>
+<td>$9{,}11\times10^{-28}$ g</td>
+<td>electron own-mass, measured</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\mu$</td>
+<td>$1{,}884\times10^{-25}$ g</td>
+<td>muon own-mass, measured</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$\tau_{2}$</td>
+<td>$3{,}1976\times10^{-24}$ g</td>
+<td>tau own-mass, measured ($T$ is fitted to it)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$e$</td>
+<td>measured</td>
+<td>elementary charge, and <strong>not in $\chi$</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="23-the-window-math164-proposed-math165-executed">2.3 The window: $\pm100\,\%$ proposed, $\pm10\,\%$ executed</h3>
+<p><strong>The corpus describes three windows and executes the narrowest.</strong> This matters, and it is stated plainly on the corpus's own page.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>window</th>
+<th>discretisation</th>
+<th>grid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Esp 057 §4 (the <em>ideal</em>)</td>
+<td><em>"entre le double et la moitié"</em>, i.e. $\pm100\,\%$</td>
+<td>$5$ values between $P_{0}$ and each extremum, plus $P_{0}$: $11$ per axis</td>
+<td>$11^{6} = \mathbf{1\,771\,561}$</td>
+</tr>
+<tr>
+<td>Esp 057 §5 (the <em>refinement</em>)</td>
+<td>$\pm20\,\%$</td>
+<td>$5$ values per half: $11$ per axis</td>
+<td>$11^{6}$</td>
+</tr>
+<tr>
+<td>Esp 058 (the <em>executed run</em>)</td>
+<td>$\mathbf{\pm10\,\%}$</td>
+<td><strong>one value at each end</strong>: $3$ per axis</td>
+<td>$3^{6} = \mathbf{729}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three grid sizes are arithmetically exact as printed</strong> ($11^{6} = 1\,771\,561$, $5^{6} = 15\,625$, $3^{6} = 729$ — the corpus's two stated grids are correct to the unit). <strong>And the published number comes from the $729$-point grid, not from the $1{,}77$-million-point one.</strong> The corpus says why (<em>"essentiellement pour des raisons de temps de calcul"</em>) and does not pretend otherwise. <strong>So the claim under test is a local claim, and the corpus's own wording limits it correctly: <em>"ce puits est unique dans la région analysée"</em>.</strong></p>
+<h2 id="3-the-residual-what-the-math184-is-and-is-not">3. The Residual: What the $2\,\%$ Is and Is Not</h2>
+<h3 id="31-the-definition-and-the-two-ambiguities-in-it">3.1 The definition, and the two ambiguities in it</h3>
+<p>$$\chi^{2} = \frac{1}{6}\sum_{i=1}^{6}\left(\frac{F_i}{\varepsilon_i}\right)^{2}, \qquad \frac{F_i}{\varepsilon_i}\ \text{non dimensionnel}$$</p>
+<p><strong>The $\varepsilon_{i}$ are normalisation scales, and the corpus never says what they are.</strong> Two consequences, and both must be stated because the corpus's own sentence about $2\,\%$ depends on them.</p>
+<ol>
+<li><strong>The level of $\chi$ is not a physical quantity.</strong> A residual of $2\,\%$ in units of $\varepsilon_{i}$ becomes $20\,\%$ if the $\varepsilon_{i}$ are ten times smaller, and $0{,}2\,\%$ if they are ten times larger. <strong>The only reading of the $2\,\%$ that is scale-free is the reading in which each $\varepsilon_{i}$ is the natural magnitude of its own equation</strong> — in which case <em>"the six dropped equations are satisfied to about $2\,\%$ of their own size"</em> is what the number asserts. <strong>The corpus never says that, and it is the charitable reading; it is offered here as such.</strong></li>
+<li><strong>The ratio $50$ is invariant and is the well's content.</strong> Whatever the $\varepsilon_{i}$, $\min\chi_{i}/\chi_{L}$ is a ratio of two residuals in the same normalisation. <strong>So the corpus's scale-free statement is the depth, not the level.</strong></li>
+</ol>
+<p><strong>The second ambiguity is the square.</strong> The corpus defines $\chi^{2}$ and then writes <em>"le rapport $\min\chi_{i}/\chi_{L} = 50$"</em> and <em>"$\chi_{L} = 2\,\%$"</em>. <strong>If $\chi$ in those sentences means the same object as $\chi^{2}$ above, the depth is $50$ in the squared quantity; if it means its square root, the depth is $50$ in the residual and $2\,500$ in the square.</strong> Both readings are recorded; <strong>the article uses $50$ in $\chi$ and says $2\,500$ in $\chi^{2}$ where the distinction matters</strong>, since $50$ is what the corpus prints.</p>
+<h3 id="32-what-the-residual-is-a-residual-of">3.2 What the residual is a residual <em>of</em></h3>
+<p><strong>A residual is only as meaningful as the equations it measures, and here they can be named.</strong> They are L11, L12 at $n = 1,2$, L14, L15 and L17 — that is:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>dropped equation</th>
+<th>what it is</th>
+<th>what its residual measures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>L11</strong></td>
+<td>the electron's pulse action ($\leftrightarrow$ (229))</td>
+<td>whether the pulse action closes at $\frac{1}{2}h$</td>
+</tr>
+<tr>
+<td><strong>L12</strong> ($n=1,2$)</td>
+<td>the heavy leptons' pulse actions ($\leftrightarrow$ (230))</td>
+<td>the same at $\left(n+\frac{1}{2}\right)h$</td>
+</tr>
+<tr>
+<td><strong>L14</strong></td>
+<td>$k_{P} = \overline{(1-R'^{2}/c^{2})^{-1/2}}$</td>
+<td>the pulse relativistic coefficient</td>
+</tr>
+<tr>
+<td><strong>L15</strong></td>
+<td>$k_{S} = k_{P}$ — <strong>the equipartition</strong></td>
+<td>whether spin and pulse share the action equally</td>
+</tr>
+<tr>
+<td><strong>L17</strong></td>
+<td>$\int dt/R^{3} = T/l_{0}^{3}$ — <strong>the definition of $l_{0}$</strong></td>
+<td>whether the lepton's geometry returns the elementary length taken from $M_{0}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three things follow, and the third is the one the register does not yet carry.</strong></p>
+<p><strong>(a) The masses are not what $\chi$ measures.</strong> L7 and L8 are <em>solved</em>, not residual: $\alpha$, $\beta$ and $T$ are computed from them, so the lepton masses are satisfied identically by construction. <strong>The corpus's deviations on $m$, $\mu$ and $\tau_{2}$ (S32's table) are therefore not residuals of this fit at all</strong> — they are the distances between the seeds and the measurements, which is a different thing and is dealt with in S34.</p>
+<p><strong>(b) The equipartition is being tested.</strong> $k_{S} = k_{P}$ is one of the six, and it is the corpus's own <em>"facteur 2"</em> — the term that makes the kinetic energy $2(n+\frac{1}{2})h/T$, hence the tower step $2h/(c^{2}T)$ (register §13.2). <strong>So the well says the spin–pulse equipartition holds to the $\chi_{L}$ level at the experimental point and is bad elsewhere: the equipartition is not an identity in the corpus's system but a satisfied constraint.</strong> That is a positive result for the corpus's internal economy, and it has never been stated.</p>
+<p><strong>(c) The elementary length is inside the residual, and S30 computes its misfit independently.</strong> L17 is the equation that would <em>compute</em> $l_{0}$ from the lepton's own radii; the corpus's $l_{0}$ was taken from the nucleon mass as a <em>"suggestion"</em> (Esp 057). <strong>S30 §3.3 computed that misfit without any fitting: with the printed $R_{0}$, $\mathcal{R}$ and a constant-speed cycle, L17 returns $l_{0} = 1{,}7127\times10^{-14}$ cm against the printed $1{,}7577\times10^{-14}$ cm — $2{,}6\,\%$.</strong> That is the same order as $\chi_{L} = 2\,\%$, which is exactly what one expects if L17 is one of the residual's six equations and its $\varepsilon$ is the equation's own scale. <strong>Two independent computations of the same defect agree, and the agreement is a check on both.</strong></p>
+<h3 id="33-the-depth-and-the-sharpness-it-implies">3.3 The depth, and the sharpness it implies</h3>
+<p><strong>The depth is the article's most useful number, and it can be read in one more way than the corpus reads it.</strong> On the executed $3^{6}$ grid, the points nearest to the centre are one axis-step away, i.e. $\pm10\,\%$ in a single seed; all the other $728$ are further. So</p>
+<p>$$\min_{i \ne L}\frac{\chi_{i}}{\chi_{L}} = 50 \qquad\Longrightarrow\qquad \text{a }10\,\%\text{ shift in any single seed worsens the six dropped equations by at least a factor }50$$</p>
+<p><strong>so the self-consistent point is pinned to better than $10\,\%$ in every direction, and in the residual's own measure it is pinned considerably tighter.</strong> In $\chi^{2}$ terms the nearest rivals are $2{,}500$ times worse. <strong>This is a measurement of local rigidity, it involves no assumption about $\varepsilon_{i}$, and it is the strongest numerical statement the corpus makes about the lepton model.</strong> <em>It is also a statement about the model, not about nature</em> — see §5.</p>
+<h3 id="34-the-uniqueness-claim-correctly-scoped-and-the-grids-granularity">3.4 The uniqueness claim, correctly scoped, and the grid's granularity</h3>
+<p><strong>The corpus's uniqueness claim is <em>"ce puits est unique dans la région analysée"</em>, and it is correctly scoped — but "the analysed region" is narrower than the box suggests.</strong> With three points per axis, the region analysed is the $3^{6}$ grid, not the continuous $\pm10\,\%$ box; a second shallow minimum between grid points would not be seen. <strong>Two things follow.</strong></p>
+<ul>
+<li><strong>The claim as printed is safe and should be quoted with its qualifier.</strong> <em>Unique in the analysed region</em> is what the search supports.</li>
+<li><strong>The granularity is coarse enough that "the minimum is at the experimental point" should be read as "the central grid point is the best of the $729$".</strong> The corpus's step 5 is exactly the iterative refinement that would sharpen this, and <strong>whether the refinement loop was ever run to convergence is not stated on either page.</strong> <em>Recorded as an open item: the corpus reports the first grid's result and describes the refinement without saying it was executed.</em></li>
+</ul>
+<p><strong>One further caution, in the corpus's favour rather than against it.</strong> A depth of $50$ over $729$ points would be unimpressive if the other $728$ points were far away and the function smooth; it is impressive here precisely because the nearest neighbours are $10\,\%$ away and the depth is $50$. <strong>No statistical model of "expected depth" is offered here, because the corpus's $\chi$ is a deterministic function of the six seeds and not a random variable.</strong></p>
+<h2 id="4-the-arithmetic-recomputed">4. The Arithmetic, Recomputed</h2>
+<h3 id="41-the-three-closed-forms-the-method-implies">4.1 The three closed forms the method implies</h3>
+<p><strong>Esp 057 §2 says $\alpha$ comes from adding L7 and L8, $\beta$ from subtracting them, and $T$ from L8 at $n = 1,2$. Carrying those operations out exactly, with L16 to evaluate $\int dt/R = 2\pi/c$, gives</strong> (S30 §5.1):</p>
+<p>$$T = \frac{2h}{c^{2}(\tau-\mu)}, \qquad \alpha = \frac{m + 3\mu - 2\tau}{4\pi^{2}}, \qquad \beta = -\frac{h}{4\pi^{3}c}\left(1 - \varepsilon\right), \qquad \varepsilon = \frac{\mu-m}{\tau-\mu} = 0{,}06292$$</p>
+<p><strong>These are exact algebraic consequences of the corpus's own three instructions — not a model of them and not a fit.</strong> Note that $\alpha$ is a pure mass combination: $T$ cancels. <strong>That is the algebraic statement of rule R1's verdict for $\alpha$: the lepton model's internal density constant is a restatement of the three measured lepton masses.</strong></p>
+<h3 id="42-against-the-published-table">4.2 Against the published table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>closed form, today's masses</th>
+<th>closed form, the corpus's own printed masses</th>
+<th>Esp 058 table</th>
+<th>deviation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T$</td>
+<td>$4{,}94934\times10^{-24}$ s</td>
+<td>$\mathbf{4{,}89997\times10^{-24}}$ s</td>
+<td>$4{,}9\times10^{-24}$ s</td>
+<td>$+1{,}0\,\%$ / $-0{,}001\,\%$</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>$-1{,}46133\times10^{-25}$</td>
+<td>$\mathbf{-1{,}47653\times10^{-25}}$</td>
+<td>$-1{,}472\times10^{-25}$</td>
+<td>$-0{,}7\,\%$ / $+0{,}3\,\%$</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>$-1{,}66995\times10^{-39}$</td>
+<td>$\mathbf{-1{,}67104\times10^{-39}}$</td>
+<td>$-1{,}7\times10^{-39}$</td>
+<td>$-1{,}8\,\%$ / $-1{,}7\,\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the middle column, because it is the fair comparison: the corpus's printed table is computed from the corpus's printed masses, and against those its arithmetic is right to a third of a per cent in $\alpha$ and to a hundredth of a per cent in $T$.</strong> The first column shows what the same formulae give with today's masses — which is the number S35 needs, because $\beta$ is what fixes $\alpha$ there. <strong>S21's $\beta$ — reached from the éon's system — is the same expression, so the two chapters agree exactly on the internal constant that carries the $\alpha$ agreement.</strong></p>
+<h3 id="43-math294-confirmed-by-a-second-independent-route">4.3 $\beta$ confirmed by a second, independent route</h3>
+<p><strong>The recomputation above uses the lepton mass difference. Esp 058's own temperature range can be used instead, and it agrees.</strong> The table prints the blackbody temperature varying between $\theta_{0} = 1{,}526\times10^{13}$ K at $R_{0}$ and $\theta_{\max} = 2{,}479\times10^{12}$ K at $\mathcal{R}$; the corpus's (245) is $D_{E} = \beta c^{2}/R^{4} = \pm a\theta^{4}$. <strong>Eliminating $D_{E}$ and using the printed radii:</strong></p>
+<p>$$|\beta| = \frac{a\,\theta_{0}^{4}R_{0}^{4}}{c^{2}} = 1{,}6897\times10^{-39}, \qquad |\beta| = \frac{a\,\theta_{\max}^{4}\mathcal{R}^{4}}{c^{2}} = 1{,}6876\times10^{-39}$$</p>
+<p><strong>The two ends of the printed temperature range give the same $\beta$ to $0{,}1\,\%$ of each other</strong> — which is itself a check that $\theta \propto 1/R$, as $D_{E}\propto R^{-4}$ requires — <strong>and $1{,}6897\times10^{-39}$ is $1{,}2\,\%$ from the closed form's $-1{,}66995\times10^{-39}$.</strong> So the corpus's own blackbody data reproduce the internal constant that its own lepton-mass difference gives. <strong>This is a third independent verification of the published solution's arithmetic, and $\beta$ is now the best-corroborated number in the lepton sector.</strong></p>
+<p><strong>Two remarks, so that the check is not over-read.</strong> The agreement is between two <em>printed</em> quantities and one <em>derived</em> one, so it corroborates the corpus's internal consistency and not the physics of a blackbody inside a closed micro-universe. <strong>And the printed $\rho$ range is the $\alpha$ check in the same sense</strong> (S32): $\rho = |\alpha|/R^{3}$ gives $3{,}10\times10^{17}$ and $1{,}33\times10^{15}$ g cm⁻³, which are the printed <em>"$3{,}1\times10^{17}$ et $1{,}33\times10^{15}$"</em> exactly. <strong>The table of Esp 058 is internally consistent to a part in a few hundred, and that is now established on three independent pairs.</strong></p>
+<h2 id="5-what-the-corpus-gives-away-and-why-it-helps">5. What the Corpus Gives Away, and Why It Helps</h2>
+<p><strong>The recovered paragraph at the head of Esp 058 is the frankest passage in the corpus, and it should be quoted wherever the constants are discussed.</strong></p>
+<ul>
+<li>It says the search was <strong>limited</strong> to $\pm10\,\%$ (the corpus's word is <em>"limité"</em>);</li>
+<li>it says the ranges are <em>"par rapport aux valeurs numériques connues expérimentalement"</em>;</li>
+<li>it says the minimum is found <em>"pour l'ensemble des six paramètres $P_{i}$ correspondant aux valeurs expérimentales de ces paramètres"</em>;</li>
+<li>it reports the residual as $2\,\%$, not as zero;</li>
+<li>it restricts uniqueness to <em>"la région analysée"</em>.</li>
+</ul>
+<p><strong>Every one of those five sentences is a limitation the corpus states against itself.</strong> S34 draws the ledger from them, and this article's contribution is to say what they do <em>not</em> damage: <strong>the experiment is well posed and its result — a sharp self-consistency well at the measured lepton parameters — is real.</strong></p>
+<p><strong>What the well does establish, in one sentence.</strong> <em>Given</em> the six measured constants, the lepton model's twenty equations are mutually consistent to the per-cent level, and that consistency point is isolated in its own parameter space by a factor $50$ per $10\,\%$. <strong>What it does not establish:</strong> that the constants are computed. <strong>The distance between those two sentences is rule R1, and it is measured here.</strong></p>
+<h2 id="6-the-two-grids-and-what-the-choice-costs">6. The Two Grids, and What the Choice Costs</h2>
+<p><strong>The corpus is explicit that the wider grid was not run, and the cost of that choice can be stated exactly.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$\pm100\,\%$ grid (proposed)</th>
+<th>$\pm10\,\%$ grid (executed)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>points</td>
+<td>$1\,771\,561$</td>
+<td>$729$</td>
+</tr>
+<tr>
+<td>what it could find</td>
+<td>a second well anywhere in $[0{,}5P_{0},\,2P_{0}]$</td>
+<td>a second well at grid resolution inside $\pm10\,\%$</td>
+</tr>
+<tr>
+<td>cost in the corpus's own terms</td>
+<td><em>"essentiellement pour des raisons de temps de calcul"</em></td>
+<td>—</td>
+</tr>
+<tr>
+<td>consequence for the claim</td>
+<td>global uniqueness (not claimed)</td>
+<td><strong>local uniqueness (claimed, and supported)</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the corpus's claim is exactly as strong as its grid, and it says so.</strong> A reader who wants the stronger claim can price the missing run: the $\pm100\,\%$ grid is $2\,430$ times the executed one. <strong>Nothing in this article suggests the corpus should have run it: the honest claim is the one printed.</strong></p>
+<p><strong>One consequence of the choice that is not on the corpus's page, and it is the interesting one.</strong> Because the box is $\pm10\,\%$ about the <em>measured</em> values, the well's existence inside the box is guaranteed by construction for any model whose residual is smooth and smallest near the seeds. <strong>What is <em>not</em> guaranteed, and what the depth $50$ measures, is that the well is sharp.</strong> So the corpus's own result, read strictly, is a statement about sharpness — which is a statement about the model's rigidity — and it is the only reading of the numerical chapter that survives without the $\varepsilon_{i}$.</p>
+<h2 id="7-verdict">7. Verdict</h2>
+<p><strong>The method is well posed, honestly reported, correctly scoped, and its arithmetic verified; its inference is not entitled, and its strongest result is not the one it advertises.</strong></p>
+<ul>
+<li><strong>Confirmed (§13.3):</strong> the seeds are six measured values (Esp 057 §1, §4); the search was $\pm10\,\%$ (Esp 058); $3^{6} = 729$ and $11^{6} = 1\,771\,561$ are exact; $\chi_{L} = 2\,\%$ and $\min\chi_{i}/\chi_{L} = 50$ as printed; uniqueness only <em>"dans la région analysée"</em>.</li>
+<li><strong>New — the $\chi_{L} = 2\,\%$ level has no absolute meaning</strong> because the normalisation scales $\varepsilon_{i}$ are never specified; <strong>the invariant is the depth $50$.</strong> Both readings of the corpus's $\chi$ vs $\chi^{2}$ ambiguity are given, and the depth is $50$ in $\chi$, i.e. $2\,500$ in $\chi^{2}$.</li>
+<li><strong>New — the depth is a <em>sharpness</em> measurement</strong>, and it is the corpus's strongest numerical result: a $10\,\%$ error in any single seed worsens the six dropped equations by a factor $\ge 50$. <strong>The well is narrower than $10\,\%$ in every direction.</strong></li>
+<li><strong>New — $\chi$ is not about the masses and not about $e$.</strong> L7 and L8 are solved, not residual; the six dropped equations are the pulse actions, $k_{P}$, <strong>the equipartition L15</strong> and <strong>the elementary-length definition L17</strong>. <strong>So the well tests the spin–pulse equipartition and the $\xi$ suggestion, and it never touches the elementary charge.</strong></li>
+<li><strong>New — the corpus's arithmetic is verified three ways:</strong> the closed forms $T = 2h/[c^{2}(\tau-\mu)]$, $\alpha = (m+3\mu-2\tau)/(4\pi^{2})$, $\beta = -h(1-\varepsilon)/(4\pi^{3}c)$ reproduce the printed table to $0{,}3\,\%$–$1{,}8\,\%$ from the corpus's own printed masses; <strong>$\beta$ is confirmed independently from the printed blackbody temperature range via (245), to $1{,}2\,\%$</strong>; and $\rho = |\alpha|/R^{3}$ reproduces the printed density range exactly.</li>
+<li><strong>New — an independent computation of one of the six residuals exists.</strong> S30's L17 misfit, $2{,}6\,\%$ in $l_{0}$ from the printed radii alone, is the same order as $\chi_{L} = 2\,\%$. <strong>Two independent computations of the same defect, agreeing, is a check on both.</strong></li>
+<li><strong>Recorded, not resolved:</strong> whether the step-5 refinement loop was ever run to convergence is not stated on either page. <strong>The published number comes from the first $729$-point grid.</strong></li>
+<li><strong>Tag:</strong> the experiment <strong>[MATH]</strong>, the inference <strong>[SPEC]</strong>. <strong>§13.3's verdict stands unqualified, and it is the corpus's own words that carry it.</strong></li>
+</ul>
+<p><strong>Part S / Part P.</strong> <strong>Part S: the method, the seeds list, the grid sizes, the residual's definition and its six equations, and the recomputed arithmetic — all checkable.</strong> <strong>Part P: the reading that a self-consistency well at the measured point is a computation of the constants</strong> — because the six constants are the six inputs, and the residual is not zero.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The method is well posed, honestly reported and correctly scoped; what it proves is a sharpness property, not the computation of the constants.</strong> The six seeds are the six measured values (Esp 057 §1), the search is $\pm10\,\%$ (Esp 058), $3^{6} = 729$ and $11^{6} = 1\,771\,561$ are exact, $\chi_{L} = 2\,\%$, and uniqueness is claimed only <em>"dans la région analysée"</em>. <strong>Because the normalisation scales $\varepsilon_{i}$ are never specified, the <em>level</em> $2\,\%$ has no absolute meaning; the scale-free invariant is the depth, and a depth of $50$ against neighbours $10\,\%$ away says that moving any single seed by a tenth worsens the six dropped equations by a factor $\ge 50$. That is the corpus's strongest numerical result.</strong> The six dropped equations are named — the pulse actions, $k_{p}$, the equipartition L15 and the elementary-length definition L17 — so the residual never measures the lepton masses and never touches $e$. <strong>And the published arithmetic is verified three ways: $T$, $\alpha$, $\beta$ from closed forms ($0{,}3$–$1{,}8\,\%$), $\beta$ again from the printed blackbody range via (245) ($1{,}2\,\%$), and $\rho = |\alpha|/R^{3}$ exactly. S30's independent L17 misfit, $2{,}6\,\%$, is the same order as $\chi_{L}$.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<ul>
+<li><strong>$P_{0}$, $P_{i}$, $P_{L}$</strong> — the seed set (the measured six), a grid point, and the best grid point. <strong>$P_{0}$ is <em>"numériquement identique aux valeurs numériques expérimentales"</em>.</strong></li>
+<li><strong>$L'$</strong> — the reduced system, $L$ minus L11, L12 ($n=1,2$), L14, L15, L17. <strong>Solved forward in step 2.</strong></li>
+<li><strong>$F_{i}$</strong> — the six dropped equations, evaluated at the $L'$ solution; $F_{i} = 0$ at the exact solution.</li>
+<li><strong>$\varepsilon_{i}$</strong> — the corpus's normalisation scales, <strong>never specified</strong>; they make $F_{i}/\varepsilon_{i}$ non-dimensional. <strong>The $\chi_{L} = 2\,\%$ level is meaningless without them; the depth $50$ is not.</strong></li>
+<li><strong>$\chi$, $\chi_{L}$</strong> — the residual, defined as $\chi^{2} = \frac{1}{6}\sum(F_{i}/\varepsilon_{i})^{2}$; $\chi_{L} = 2\,\%$ at $P_{L}$ ($= P_{0}$). <strong>The corpus writes $\chi$ where it defines $\chi^{2}$; both readings are given in §3.1.</strong></li>
+<li><strong>$\min\chi_{i}/\chi_{L} = 50$</strong> — the well's depth; $i \ne L$ over the $728$ other grid points. <strong>$2\,500$ in the squared quantity.</strong></li>
+<li><strong>$\alpha$, $\beta$, $T$</strong> — the internal constants and the pulsation period; this article's closed forms are $T = 2h/[c^{2}(\tau-\mu)]$, $\alpha = (m+3\mu-2\tau)/(4\pi^{2})$, $\beta = -h(1-\varepsilon)/(4\pi^{3}c)$.</li>
+<li><strong>$\varepsilon$</strong> — the abbreviation $(\mu-m)/(\tau-\mu) = 0{,}06292$; <strong>S37's, used here for $\beta$'s closed form.</strong></li>
+<li><strong>"dans la région analysée"</strong> — the corpus's own qualifier on uniqueness. <strong>Quote it.</strong></li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S30</strong> — the system, its counts and its definitions; <strong>§3.2(c) here depends on S30 §3.3</strong>, and L17's misfit is computed there.</li>
+<li><strong>S21</strong> — the éon's $\alpha$, $\beta$, $T_{0}$; <strong>§4.1's $\beta$ is the same expression</strong>, which is a cross-check between the two chapters.</li>
+<li><strong>S32</strong> — the six constants, one row each; §3.2 says which deviations this article's residual does and does not generate.</li>
+<li><strong>S33</strong> — the parameter-freedom claim, tested on this method.</li>
+<li><strong>S34</strong> — the ledger; the corpus's five self-limitations (§5) are its raw material.</li>
+<li><strong>S35, S37</strong> — where the recomputed $\beta$ is used, and why the $\alpha$ agreement is inherited rather than achieved.</li>
+<li><strong>§13.2, R7, P1</strong> — the equipartition L15, which §3.2 shows is one of the tested equations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

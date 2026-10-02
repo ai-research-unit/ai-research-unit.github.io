@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — Saturation and the No-Diholon Rule (S28) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-saturation-and-the-no-diholon-rule-s28">Charon — Saturation and the No-Diholon Rule (S28)</h1>
+<p><em>Audits §5.6 and §5.7 of <code>CHARON_IDEAS_AND_CLAIMS.md</code>, against RC ch. IV §II.2 (scans 067–068) and the range (4-30). </em><em>[BRIDGE]</em>**</p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The conclusion of both claims survives; the reason given for one of them does not, and it is a reason that can be counted.</strong> The corpus says two things about how holons meet. <strong>§5.6:</strong> two holons cannot combine into a third stable Form — the strong interaction works at the mutual boundary and nowhere else. <strong>§5.7:</strong> that interaction saturates, <em>"une sphère donnée en pulsation ne pouvant avoir une «intersection» avec plus de quelques sphères analogues"</em>, of the order of two or three. <strong>The first is right in spirit and modern physics agrees with it; the second states a number that is empirically reasonable and derives it from a geometry that gives twelve.</strong></p>
+<p><strong>The number is where this article is decided.</strong> The corpus's argument is <em>"des considérations géométriques simples concernant les formes sphériques de même rayon"</em>. <strong>Those considerations have an exact answer, known since 1953: twelve equal spheres can touch a thirteenth, and no more.</strong> So the geometry the corpus invokes permits <strong>twelve</strong> simultaneous contacts, not three; and for the geometric bound to <em>be</em> three, the neighbouring holons would have to sit with their centres at $0{,}53$ of the touching distance — that is, with their centres inside the central lump. <strong>The corpus's "$2$ ou $3$" is not a consequence of its geometry.</strong> What it is a consequence of is nuclear saturation, which is empirical, and which brackets the number between $1{,}8$ and $4{,}1$ neighbours — so the number is right, the derivation is not, and this article's job is to separate the two.</p>
+<p><strong>Three things the corpus does not compute, and this article does.</strong> <strong>(1) The duty cycle of contact.</strong> The corpus's §2.3 states that two interacting holons <em>"sont donc séparées par une distance égale à deux fois leur rayon"</em>, as if contact were permanent. Both radii pulsate, and at the top of the corpus's own contact window the two boundaries touch only at the instant of maximum radius: <strong>the fraction of the period during which they intersect is half at the middle of the range and zero at its top</strong> (§5). <strong>(2) The deuteron.</strong> The corpus itself offers <em>"la paire stable de deux nucléons liés entre eux par interaction forte"</em> as its example, so the pair can be measured against the model: the observed neutron–proton separation is <strong>$2{,}14$ times the corpus's own range</strong>, and the pair spends only <strong>$33\,\%$</strong> of the time inside it (§6). <strong>(3) The gravitational alternative</strong>, which the corpus excludes by an enormous margin: at contact, gravity contributes $2{,}9\times10^{-37}$ of the deuteron's binding energy.</p>
+<p><strong>And the two claims are one claim, which is why they are audited together.</strong> Both say that the strong interaction is a <em>boundary</em> phenomenon. That is the [SPEC] core, and it is the thing the corpus never tests. <strong>The bridge this article carries</strong> is the one from the hadron block (S24–S27) to everything that uses a boundary later: the same boundary is $G$'s source in S39 and the wave's source in S40, and the same range sets the scale of the nuclear sizes quoted there.</p>
+<h2 id="what-the-corpus-claims">What the Corpus Claims</h2>
+<p><strong>§5.6 — no stable superposition of two holonic forms; the strong interaction acts only at the mutual boundary.</strong> RC ch. IV §II.2.2–2.3. <strong>Tag: [MIX].</strong> The register's gloss: <em>"the conclusion is right in spirit (hadrons are colour singlets; there is no stable bound 'diholon'), but the reason given is geometric, not colour confinement. [SPEC] as an explanation, [EST]-adjacent as a statement."</em></p>
+<p><strong>§5.7 — strong-interaction saturation: a holon can intersect only ~2–3 others at once.</strong> RC ch. IV. <strong>Tag: [MIX].</strong> The register's gloss: <em>"'Saturation' of nuclear forces is [EST] empirically (nuclear binding saturates; short-range repulsion). The number 2–3 is asserted geometrically."</em></p>
+<p><strong>The corpus, in full.</strong> RC 068 §2.1-b and §2.2–2.3:</p>
+<blockquote>
+<p>$b)$ Par ailleurs, des considérations géométriques simples concernant les formes sphériques de même rayon suggèrent une saturation de l'interaction forte, une sphère donnée en pulsation ne pouvant avoir une «intersection» avec plus de quelques sphères analogues. Cette saturation des interactions fortes du holon, ce dernier ne pouvant interagir simultanément avec plus de quelques autres holons (de l'ordre de 2 ou 3), est également bien vérifiée par l'expérience.</p>
+<p><strong>2.2. Pas de superposition stable des formes holoniques.</strong> Nous avons vu ci-dessus (§ II. 5) que la Forme holonique, de volume $\Omega_0$, était la seule Forme microscopique stable pouvant spontanément prendre place dans l'espace du Réel. L'interaction forte ne peut donc conduire à une autre Forme stable, résultant d'une sorte de «superposition» des deux structures holoniques en interaction. En d'autres termes, l'interaction forte se limite à la frontière des Formes holoniques.</p>
+<p><strong>2.3.</strong> Les deux holons sont donc séparées par une distance égale à deux fois leur rayon (§ 2-1). Chaque holon est soumis à l'accélération géodésique de l'autre holon; un exemple serait la paire stable de deux nucléons liés entre eux par interaction forte.</p>
+</blockquote>
+<p><strong>Three claims, one per paragraph, and they must not be merged.</strong> (1) <em>Saturation</em>: not more than a few simultaneous intersections. (2) <em>No new Form</em>: the strong interaction cannot create a third stable Form by superposition; it is confined to the boundary. (3) <em>The pair</em>: the strong-bound two-nucleon pair is an example, the two holons at a distance of twice their radius. <strong>The third is the corpus admitting that the bound state itself exists</strong> — so §5.6 is not the claim that two nucleons cannot bind; it is the claim that they cannot <em>fuse</em>, which is a different and much more defensible statement.</p>
+<p><strong>Scope.</strong> S26 owns the range $\lambda_f = 2R_{H\max}$ and its decomposition; S24 owns the lump; S25 owns the holon-plus-lepton composition; P4 owns the six levels and P21 the density $\rho_H$. <strong>What is left, and what is audited here, is the interaction between two lumps: how many, how often, and whether a pair of them can become a new object.</strong></p>
+<h2 id="1-the-range-these-claims-live-on">1. The Range These Claims Live On</h2>
+<p><strong>The number is the corpus's own, and it is the radius rather than the range that carries the content.</strong> RC 068 §2.1-a gives</p>
+<p>$$\lambda_f = 2R_{H\max} = 2 \times 9{,}2\cdot10^{-14} = 1{,}84\cdot10^{-13}\ \text{cm}
+\tag{4-30}$$</p>
+<p><em>"soit environ 2 fermis (ce qui est la portée correcte observée)"</em>. <strong>Recomputed from the system</strong> rather than from the printed radius — $R_{H} = 1{,}7435\times10^{-14}$ cm and $cT_{0}/2 = 0{,}7390$ fm (S23, S26) — the maximum radius is $0{,}9133$ fm and</p>
+<p>$$\lambda_f = 2R_{H\max} = 1{,}8267\ \text{fm}
+\tag{4-30 bis}$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>printed / quoted</th>
+<th>recomputed</th>
+<th>deviation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R_{H\max}$</td>
+<td>$9{,}2\times10^{-14}$ cm (RC 068)</td>
+<td>$9{,}1334\times10^{-14}$ cm</td>
+<td>$-0{,}72\,\%$</td>
+</tr>
+<tr>
+<td>$\lambda_f = 2R_{H\max}$</td>
+<td>$1{,}84\times10^{-13}$ cm</td>
+<td>$1{,}8267$ fm</td>
+<td>$-0{,}72\,\%$</td>
+</tr>
+<tr>
+<td>$\lambda_f$ in the text</td>
+<td><em>"environ 2 fermis"</em></td>
+<td>$1{,}827$ fm</td>
+<td>$+9{,}5\,\%$</td>
+</tr>
+<tr>
+<td>$2R_{H}$ (contact at the minimum)</td>
+<td>—</td>
+<td>$0{,}349$ fm</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the corpus's range sentence is three numbers, two of which are the same number to $0{,}7\,\%$ and the third of which is $9{,}5\,\%$ larger than both.</strong> That is not a defect — <em>"environ"</em> is doing its work — but it matters for §5.7, because the saturation argument is about <em>"plus de quelques sphères analogues"</em>, and the count depends on which of the three radii the neighbours are placed at. <strong>This article uses the recomputed $1{,}8267$ fm wherever a length is needed</strong>, and says so each time.</p>
+<p><strong>The window, not a number, is the honest form of the range.</strong> S26's finding stands: RC 068's contact criterion is satisfied for <em>any</em> separation between $2R_{H}$ and $2R_{H\max}$, that is for <strong>$0{,}35$–$1{,}83$ fm</strong>, with a mean of $1{,}09$ fm, and the corpus quotes the top of it. <strong>Every count in this article is therefore a count at a stated separation</strong>, and the tables give the separation.</p>
+<h2 id="2-57-the-saturation-number">2. §5.7 — the Saturation Number</h2>
+<h3 id="21-what-the-corpus-argues">2.1 What the corpus argues</h3>
+<p>The argument is one sentence long and is purely geometric: equal spheres of the same radius, each one of them in pulsation, arranged around a given sphere. <em>"Une sphère donnée en pulsation ne pouvant avoir une «intersection» avec plus de quelques sphères analogues"</em> — a pulsating sphere cannot intersect more than a few analogous spheres.</p>
+<p><strong>Two things are being conflated in the sentence</strong>, and separating them is what makes the claim testable. (1) <strong>A packing bound:</strong> how many non-overlapping equal spheres can be placed around one of them at a given centre distance. (2) <strong>An intersection count:</strong> how many of them can <em>overlap the central one at the same instant</em>. Packing bounds simultaneous overlap from above; the corpus quotes a number as if the two were the same, and the number it quotes is far below both bounds.</p>
+<h3 id="22-the-geometry-actually-gives-twelve">2.2 The geometry actually gives twelve</h3>
+<p><strong>The packing question has an exact answer.</strong> Place equal spheres of radius $R$ with their centres at distance $d$ from a central equal sphere. The most they can be, with no two of them overlapping, is the <em>kissing number</em> of the arrangement: <strong>$12$ at $d = 2R$</strong>, the classical Newton–Gregory problem, proved by Schütte and van der Waerden in 1953. For smaller $d$ the number rises quickly: the standard spherical-cap estimate</p>
+<p>$$n_{\max}(d) \le \frac{2}{1-\cos\theta}, \qquad \sin\theta = \frac{R}{d}$$</p>
+<p>gives $14{,}9$ at $d = 2R$ (where the exact value is $12$), $11{,}9$ at $d = 1{,}8R$, and $7{,}9$ at $d = 1{,}5R$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>centre distance $d$</th>
+<th>$n_{\max}$ (cap estimate)</th>
+<th>exact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2{,}0\,R$ (touching)</td>
+<td>$14{,}9$</td>
+<td><strong>$12$</strong> (kissing number)</td>
+</tr>
+<tr>
+<td>$1{,}8\,R$</td>
+<td>$11{,}9$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$1{,}5\,R$</td>
+<td>$7{,}9$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$1{,}2\,R$</td>
+<td>$4{,}5$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$1{,}0607\,R$</td>
+<td>$3{,}00$</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the corpus's geometry permits twelve contacts, and its number is four times smaller than that.</strong> <em>"Quelques"</em> is doing a great deal of work in the corpus's sentence: read geometrically it is $12$, not $3$.</p>
+<h3 id="23-what-would-have-to-be-true-for-the-geometry-to-give-three">2.3 What would have to be true for the geometry to give three</h3>
+<p><strong>The cap estimate can be inverted, and the answer is instructive.</strong> For $n_{\max} = 3$ one needs $\cos\theta = 1/3$, hence $\theta = 70{,}53^{\,\circ}$ and</p>
+<p>$$d = \frac{R_{H\max}}{\sin\theta} = 1{,}0607\,R_{H\max} = 0{,}9687\ \text{fm}.$$</p>
+<p><strong>At that separation the neighbours are not arranged around the central lump; they are inside it.</strong> $d = 0{,}53 \times 2R_{H\max}$, so two lumps at that distance overlap by almost half their diameter at maximum radius — and the central lump's <em>minimum</em> radius is $R_{H} = 0{,}174$ fm, which is $5{,}6$ times smaller than $d$. <strong>The configuration that gives the corpus's number is three holons mutually interpenetrating, which is precisely the "superposition" that §5.6 forbids.</strong> The geometric argument of §5.7 and the stability argument of §5.6 cannot both be right as stated; §5.6's premise excludes the configuration §5.7's number requires.</p>
+<p><strong>That is the article's main negative result for §5.7, and it is a result about the corpus's argument rather than about the corpus's physics.</strong> The corpus's <em>conclusion</em> — that a holon interacts strongly with few neighbours at a time — is not infected. What is infected is the claim that simple spherical geometry gives it.</p>
+<h3 id="24-the-number-is-empirically-right-for-a-reason-the-corpus-does-not-give">2.4 The number is empirically right, for a reason the corpus does not give</h3>
+<p><strong>The physical statement behind "saturation" is real, and it is measurable.</strong> Nuclear binding energy per nucleon is flat at $\approx 8$ MeV from $A \approx 30$ upward: each nucleon is bound by its nearest neighbours only, because the nuclear force has a short range and a hard core, and because Pauli exclusion blocks the rest. <strong>How many neighbours is a definite quantity, and it can be counted from the saturation density</strong> $n_{0} = 0{,}16$ fm⁻³:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>interaction range</th>
+<th>neighbours within range at $n_{0}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1{,}40$ fm ($\hbar/m_{\pi}c$, one-pion range)</td>
+<td>$1{,}8$</td>
+</tr>
+<tr>
+<td>$1{,}83$ fm (the corpus's $\lambda_f$)</td>
+<td>$4{,}1$</td>
+</tr>
+<tr>
+<td>mean spacing at $n_{0}$</td>
+<td>$1{,}14$ fm</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The corpus's <em>"de l'ordre de 2 ou 3"</em> sits inside that bracket</strong> — $1{,}8$ to $4{,}1$ — and the corpus is entitled to its [EST] half: the number is right. <strong>What is not entitled is the derivation.</strong> The corpus argues from <em>"formes sphériques de même rayon"</em>; the physical reason is the range and the hard core of the two-nucleon force plus Fermi statistics, none of which is geometric in the corpus's sense, and one of which (the hard core) is the opposite of a geometric argument — it is a <em>repulsion</em> discovered in the 1950s from phase shifts, not from sphere packing.</p>
+<p><strong>The honest verdict for §5.7 is therefore asymmetric, and the asymmetry is worth stating precisely.</strong> The number is <em>[EST]</em> — empirically bracketed and about right. The inference from geometry is <em>[OUT]</em> — it gives twelve, and the number it would have to give requires an interpenetration the model forbids. <strong>The claim as a whole stays [MIX], with the mixture now located.</strong></p>
+<h3 id="25-the-duty-cycle-of-contact-what-the-corpus-does-not-compute">2.5 The duty cycle of contact — what the corpus does not compute</h3>
+<p><strong>The corpus's §2.3 says the two interacting holons are <em>"séparées par une distance égale à deux fois leur rayon"</em>, which is the picture of two billiard balls resting against each other.</strong> Both holons pulsate, and the corpus's own saturation argument is about <em>intersections</em>: the geometric condition for the strong interaction is that the two Formes overlap, and overlap is intermittent.</p>
+<p><strong>For a radius pulsating between $R_{H}$ and $R_{H\max}$ at constant speed</strong> — the profile S23 and S26 use, $V_{r} = \pm c$ — the radius passes through each value twice per period with a uniform distribution in $[R_{H}, R_{H\max}]$, and the fractional contact time for two holons whose centres are a distance $d$ apart is</p>
+<p>$$\tau(d) = 1 - \frac{d - 2R_{H}}{cT_{0}} \qquad (2R_{H} \le d \le 2R_{H\max})$$</p>
+<p><strong>evaluated at the corpus's own numbers</strong> ($2R_{H} = 0{,}349$ fm, $cT_{0} = 1{,}4788$ fm):</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>separation $d$</th>
+<th>position in the window</th>
+<th>contact fraction of the period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0{,}349$ fm</td>
+<td>bottom of the window</td>
+<td>$1{,}00$</td>
+</tr>
+<tr>
+<td>$1{,}000$ fm</td>
+<td>—</td>
+<td>$0{,}56$</td>
+</tr>
+<tr>
+<td>$1{,}089$ fm</td>
+<td>mean of the window</td>
+<td><strong>$0{,}50$</strong></td>
+</tr>
+<tr>
+<td>$1{,}500$ fm</td>
+<td>—</td>
+<td>$0{,}22$</td>
+</tr>
+<tr>
+<td>$1{,}827$ fm</td>
+<td>top of the window</td>
+<td>$0{,}00$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the corpus's picture of a pair held at a fixed separation for the whole period is not available for any separation above the bottom of the window, and the corpus quotes the top.</strong> A bound pair held at the top of the window would be in strong interaction for an instant per period and in gravitational interaction for the rest — and §6 shows what the gravitational interaction is worth. <strong>A pair held around the middle of the window is in contact half the time</strong>, which is the only configuration in which the corpus's mechanism does any work at all, and the corpus never selects it.</p>
+<p><strong>The duty cycle is also the cleanest way to say what the model predicts for the bound state's shape.</strong> The strong interaction is on for a duty cycle $\tau$ and off otherwise, so the binding has to be carried by an interaction that is present a fraction of the time, with no restoring force in the off-phase; the corpus's own geodesic-acceleration mechanism supplies a force during contact and nothing between contacts. <strong>That is a statement about stability the corpus does not make and does not test</strong> (§6 gives the observable that tests it).</p>
+<h2 id="3-56-no-stable-superposition">3. §5.6 — No Stable Superposition</h2>
+<h3 id="31-the-corpuss-ground-and-what-it-assumes">3.1 The corpus's ground, and what it assumes</h3>
+<p><strong>The premise is Esp §II.5's:</strong> the holon, <em>"de volume $\Omega_0$"</em>, is <em>"la seule Forme microscopique stable pouvant spontanément prendre place dans l'espace du Réel"</em>. From it the corpus concludes that no <em>other</em> stable Form can result from a superposition of two interacting holons, and that the strong interaction is therefore limited to the boundary.</p>
+<p><strong>The premise is [SPEC] and it is the whole of the argument.</strong> It does not follow from the Système $H$, from the field equation, or from any solution; S24's integration shows the holon <em>is</em> a solution once the sign is corrected, which is a different statement from its being the <em>only</em> stable microscopic Form. <strong>A uniqueness claim about the space of stable solutions needs the space, and the corpus never defines it.</strong> So §5.6's explanation is [SPEC] and can be labelled as such without further work — but its <em>conclusion</em> can be tested, and that is the interesting part.</p>
+<h3 id="32-what-modern-physics-says-and-it-agrees-with-the-conclusion">3.2 What modern physics says, and it agrees with the conclusion</h3>
+<p><strong>The corpus's conclusion is that there is no stable compact object formed by fusing two hadrons.</strong> Tested against what is known:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>statement</th>
+<th>status today</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>no confirmed stable dibaryon (a bound six-quark lump)</td>
+<td><strong>stands</strong> — decades of searches; the H-dibaryon is not a confirmed bound state</td>
+</tr>
+<tr>
+<td>the two-nucleon bound state exists (deuteron, $B = 2{,}2246$ MeV)</td>
+<td><strong>stands</strong>, and the corpus admits it (§2.3)</td>
+</tr>
+<tr>
+<td>near-threshold resonances exist rather than new lumps</td>
+<td><strong>stands</strong> — $d^{*}(2380)$ (WASA-at-COSY 2014, ELPH 2016), $M \approx 2380$ MeV, $\Gamma \approx 70$ MeV, a $\Delta\Delta$ (hexaquark) candidate that decays</td>
+</tr>
+<tr>
+<td>hadrons are colour singlets; the nuclear force is a <em>residual</em> colour interaction</td>
+<td><strong>stands</strong> — and this is the reason the corpus's geometry is not</td>
+</tr>
+<tr>
+<td>interacting nucleons can fuse into one compact Form</td>
+<td><strong>does not stand</strong> — no such object is observed</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the corpus's conclusion is right, and it is right for thirty years of reasons that are not its reason.</strong> A colour-singlet dibaryon is not forbidden by the counting rules (two colour-singlet baryons are a colour singlet), and the reason there is no bound compact hexaquark is dynamical: the residual colour interaction is weak compared with the $\Delta$-excitation scale, and the candidate states sit at or above threshold with widths of tens of MeV. <strong>The register's gloss is confirmed on both halves: [EST]-adjacent as a statement, [SPEC] as an explanation.</strong></p>
+<h3 id="33-the-deuteron-which-the-corpus-itself-names">3.3 The deuteron, which the corpus itself names</h3>
+<p><strong>The corpus offers the strong-bound two-nucleon pair as its example (§2.3), so the pair can be measured against the model, and it is where the boundary picture stops working.</strong></p>
+<p><strong>The corpus's picture.</strong> Two holons bind by geodesic acceleration at contact, <em>"séparées par une distance égale à deux fois leur rayon"</em> — that is, at $d$ between $0{,}349$ and $1{,}827$ fm, and at a fixed $d$ for a stable pair.</p>
+<p><strong>The measured pair.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>value</th>
+<th>source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>deuteron binding energy</td>
+<td>$2{,}2246$ MeV</td>
+<td>measured</td>
+</tr>
+<tr>
+<td>deuteron charge rms radius</td>
+<td>$2{,}1300$ fm</td>
+<td>measured</td>
+</tr>
+<tr>
+<td>rms neutron–proton separation $\sqrt{\langle r^{2}\rangle}$</td>
+<td>$3{,}913$ fm</td>
+<td>from $r_{d}^{2} = r_{p}^{2} + \tfrac{1}{4}\langle r^{2}\rangle$, $r_{p} = 0{,}8414$ fm</td>
+</tr>
+<tr>
+<td>asymptotic decay length $\kappa^{-1} = \hbar c/\sqrt{2\mu E_{B}}$</td>
+<td>$4{,}319$ fm</td>
+<td>$\mu = m_{N}/2$</td>
+</tr>
+<tr>
+<td>ratio $\sqrt{\langle r^{2}\rangle}/\lambda_f$</td>
+<td>$\mathbf{2{,}14}$</td>
+<td>this article</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The pair is twice as large as the corpus's range.</strong> $\sqrt{\langle r^{2}\rangle} = 3{,}91$ fm against $\lambda_f = 1{,}83$ fm; the two nucleons are, on average, twice as far apart as the distance at which the corpus's strong interaction exists at all. <strong>And the tail is the measured part:</strong> the asymptotic decay length $4{,}32$ fm is the deuteron's best-determined size parameter, and it is $2{,}4$ times $\lambda_f$.</p>
+<p><strong>How much of the time is the pair inside the range?</strong> With the standard Hulthén form $\psi \propto (e^{-\alpha r} - e^{-\beta r})/r$, $\alpha = \kappa = 0{,}2315$ fm⁻¹ and $\beta = 1{,}4049$ fm⁻¹,</p>
+<p>$$\frac{\int_{0}^{1{,}827}\psi^{2}r^{2}dr}{\int_{0}^{\infty}\psi^{2}r^{2}dr} = 0{,}329$$</p>
+<p><strong>so the two nucleons are within the corpus's strong range $33\,\%$ of the time</strong> (and within $2R_{H}$ only $1{,}0\,\%$ of the time). <strong>The number depends on the wavefunction model and the model is crude</strong> — a realistic Argonne or Nijmegen deuteron with $5{,}7\,\%$ $D$-state will differ by a few points — <strong>but the order of the effect is not model-dependent: a bound state whose size is twice the interaction range has most of its probability outside it.</strong></p>
+<p><strong>That is what §5.6's boundary-only premise cannot accommodate.</strong> A contact-only interaction can bind a pair held at contact; it cannot produce a state whose wavefunction extends to $4{,}3$ fm, because there is nothing in the corpus's picture beyond $1{,}83$ fm except gravity (§3.4). <strong>The measured deuteron is bound by $2{,}2246$ MeV, and the corpus's boundary interaction is available for a third of the time at a separation where the model's own duty cycle is $0{,}33$</strong> — a coincidence of the two numbers, and both are computed here, so the coincidence is worth noting and no more.</p>
+<p><strong>The corpus's answer would be that the pair oscillates through the contact window</strong>, and that is fair: the duty-cycle table shows that a pair whose <em>centre</em> distance is fixed at the mean of the window is in contact half the time, and a bound pair with relative motion sweeps the window. <strong>But a bound state needs a force outside the contact phase</strong>, and the model has none: the corpus's §2.2 states that what lies outside is gravity, and gravity at nuclear density is astronomically small.</p>
+<h3 id="34-gravity-at-contact-which-the-corpuss-own-22-leaves-as-the-only-alternative">3.4 Gravity at contact, which the corpus's own §2.2 leaves as the only alternative</h3>
+<p><strong>The corpus's §2.2 says the strong interaction is confined to the boundary, and S29's audit of RC ch. IV is that everything outside the boundary is gravitational.</strong> The two nucleons at contact are therefore, on the corpus's own account, held by contact forces during contact and by gravity the rest of the time. <strong>The gravitational energy at $d = \lambda_f$ between two nucleon masses is</strong></p>
+<p>$$U_{\text{grav}} = \frac{Gm_{N}^{2}}{2R_{H\max}} = 1{,}02\times10^{-42}\ \text{erg} = 6{,}4\times10^{-37}\ \text{MeV}$$</p>
+<p><strong>which is $2{,}9\times10^{-37}$ of the deuteron's $2{,}2246$ MeV.</strong> So the off-phase of the contact duty cycle carries no force whatsoever: <strong>the model's bound pair is held by a contact interaction that is present a fraction of the time and by a force $37$ orders of magnitude too small to matter in between.</strong> That is the sharpest form of §5.6's problem, and it is arithmetic from the corpus's own numbers.</p>
+<h2 id="4-one-word-two-claims">4. One Word, Two Claims</h2>
+<p><strong>The corpus uses <em>"saturation"</em> for two different things, and they should not be merged.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>electrostatic saturation</th>
+<th>strong-interaction saturation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>where</td>
+<td>RC 056 §5, ch. III §V.5</td>
+<td>RC 068 §2.1-b</td>
+</tr>
+<tr>
+<td>claim</td>
+<td>for $r \le 2l_{0}$ the electrostatic exchange is shared among several nearby éons, so the effective charge becomes fractional</td>
+<td>a holon can intersect only a few others at once</td>
+</tr>
+<tr>
+<td>what it produces</td>
+<td>the $1/3$ and $2/3$ charges of the quarks</td>
+<td>the short range and the limit on simultaneous binding</td>
+</tr>
+<tr>
+<td>status</td>
+<td><strong>owned by P4 and §6.1</strong> — the six levels and the fractionary charges; the numbers work out as arithmetical fractions and the physical identification fails</td>
+<td><strong>[MIX], this article</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two share the word and nothing else.</strong> The electrostatic version is a <em>many-body</em> effect at $r \le 2l_{0} = 3{,}5\times10^{-14}$ cm, which is $19$ times the holon's minimum radius; the strong version is a <em>geometric counting</em> statement at $r \le 2R_{H\max}$. <strong>The electrostatic one is the load-bearing one for the quark programme, and it is P4's; the strong one is cosmetic.</strong> Nothing in S25 or P4 depends on the number audited here, and nothing here depends on the fractional charges.</p>
+<p><strong>One further consequence of keeping them apart, and it is worth recording.</strong> The register's §5.7 quotes the corpus as <em>"RC ch. IV"</em> without a section; the sentence audited here is §II.2.1-b, and the <em>"2 ou 3"</em> is in that one sentence only. <strong>A later pass looking for the number should look at RC 068, not at RC 056</strong>, and the two must not be cited as one claim.</p>
+<h2 id="5-verdict">5. Verdict</h2>
+<p><strong>§5.6 holds as a statement and fails as an explanation; §5.7's number holds and its derivation fails.</strong></p>
+<ul>
+<li><strong>Confirmed:</strong> no stable compact di-baryon is observed, and the near-threshold objects that do exist ($d^{*}(2380)$) decay; the deuteron exists and the corpus says so; the strong interaction between colour-singlet hadrons is a residual interaction whose short range is real.</li>
+<li><strong>Corrected (§5.7, the article's main negative result): the geometric argument gives twelve, not three.</strong> The kissing number of equal spheres is $12$ (Schütte–van der Waerden 1953), the cap estimate gives $14{,}9$ at touching; to obtain $n_{\max} = 3$ the neighbours must sit at $0{,}53$ of the touching distance, that is inside the central lump, which is the configuration §5.6 forbids.</li>
+<li><strong>The number is right anyway, for a reason the corpus does not give.</strong> At nuclear saturation density the count of neighbours within $\hbar/m_{\pi}c = 1{,}40$ fm is $1{,}8$, and within the corpus's own $1{,}83$ fm it is $4{,}1$; <em>"de l'ordre de 2 ou 3"</em> sits inside the bracket. <strong>The corpus's [EST] half stands and its geometric half does not.</strong></li>
+<li><strong>New — the contact duty cycle.</strong> At the top of the corpus's window $\tau = 0$; at the mean of the window $\tau = 0{,}50$; at the bottom $\tau = 1$. The corpus's §2.3 picture of a pair fixed at twice its radius is available only at the bottom of the window, which the corpus never selects.</li>
+<li><strong>New — the deuteron measures the boundary premise and does not fit it.</strong> $\sqrt{\langle r^{2}\rangle} = 3{,}91$ fm $= 2{,}14\,\lambda_f$; the tail scale is $4{,}32$ fm $= 2{,}4\,\lambda_f$; the pair is inside $\lambda_f$ for $33\,\%$ of the time (Hulthén).</li>
+<li><strong>New — the alternative is empty.</strong> Gravity at contact is $2{,}9\times10^{-37}$ of the binding energy, so the off-phase of the duty cycle carries no force.</li>
+<li><strong>Two claims, two saturations, one word:</strong> the electrostatic saturation ($r \le 2l_{0}$, fractional charge) is P4's and §6.1's; the strong-interaction saturation is this article's. <strong>Recorded so that a later pass does not merge them, and the register's §5.7 citation located precisely at RC 068 §II.2.1-b.</strong></li>
+<li><strong>Bridge status:</strong> this article carries the hadron block's boundary to the two places that use it as a <em>source</em> — S39 ($G$) and S40 ($\dot G/G$) — and states that the boundary interaction's duty cycle and range are what those articles inherit.</li>
+<li><strong>Tags unchanged:</strong> §5.6 <strong>[MIX]</strong>, §5.7 <strong>[MIX]</strong>, with the mixture now located: the conclusions are [EST]-adjacent and the explanations are [SPEC] or [OUT].</li>
+</ul>
+<p><strong>Part S / Part P.</strong> <strong>Part S: the range arithmetic, the geometry of packing, the neighbour counts, the duty cycle, the deuteron comparison — all computed and all checkable.</strong> <strong>Part P: the claim that the strong interaction is a boundary phenomenon at all</strong> — because a boundary-only interaction cannot produce the measured deuteron, and no force other than gravity exists outside the boundary in the model.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>Both claims survive as statements and fail as explanations, and the failures are arithmetic.</strong> §5.6's conclusion — no stable compact di-baryon, the strong interaction confined to the boundary — is confirmed by the corpus of hadron physics, and the corpus's own §2.3 admits the bound pair (the deuteron) that the boundary picture cannot bind. §5.7's <em>"de l'ordre de 2 ou 3"</em> is empirically bracketed by nuclear saturation ($1{,}8$ to $4{,}1$ neighbours within the range at $n_{0} = 0{,}16$ fm⁻³) and derived from a geometry that gives <strong>twelve</strong> (the kissing number). <strong>The two paragraphs contradict each other</strong>: the configuration that would make the geometry give three requires interpenetration, which §5.6 forbids. <strong>And the pair the corpus names measures the premise: $\sqrt{\langle r^{2}\rangle} = 3{,}91$ fm $= 2{,}14\,\lambda_{f}$, inside the range $33\,\%$ of the time, with gravity at contact worth $2{,}9\times10^{-37}$ of the binding energy in the off-phase.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<ul>
+<li><strong>$\lambda_f$</strong> — the strong-interaction range, $2R_{H\max}$ (RC (4-30)); printed $1{,}84\times10^{-13}$ cm, recomputed $1{,}827$ fm.</li>
+<li><strong>$R_{H}$, $R_{H\max}$</strong> — the holon's minimum and maximum radius; $R_{H\max} = R_{H} + cT_{0}/2$, with $R_{H} = 1{,}7435\times10^{-14}$ cm and $cT_{0}/2 = 0{,}7390$ fm.</li>
+<li><strong>$\tau(d)$</strong> — this article's contact <em>duty cycle</em>, the fraction of the pulsation period during which two holons with centre separation $d$ overlap.</li>
+<li><strong>Kissing number</strong> — the maximum number of non-overlapping equal spheres in contact with a central equal sphere; <strong>12</strong>, proved by Schütte and van der Waerden (1953). <strong>Not the corpus's number.</strong></li>
+<li><strong>$n_{0}$</strong> — nuclear saturation density, $0{,}16$ fm⁻³ (established physics, not the corpus's).</li>
+<li><strong>$\kappa^{-1}$</strong> — the deuteron's asymptotic decay length, $\hbar c/\sqrt{2\mu E_{B}} = 4{,}319$ fm.</li>
+<li><strong>$(4\text{-}30)$</strong> — the corpus's range equation; <strong>RC 068 §II.2.1-b</strong>, the saturation sentence; <strong>RC 068 §II.2.2–2.3</strong>, the no-superposition claim and the two-nucleon example.</li>
+<li><strong>"saturation"</strong> — two distinct corpus claims (§4); the electrostatic one is P4's.</li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S24</strong> — the holon itself, whose solution this article's two lumps are made of.</li>
+<li><strong>S25</strong> — the holon-plus-lepton composite, where the six levels and the fractionary charges live.</li>
+<li><strong>S26</strong> — the range $\lambda_f = 2R_{H\max}$ and its decomposition; the contact window $0{,}35$–$1{,}83$ fm used throughout §2.5 and §3.3.</li>
+<li><strong>S23</strong> — the boundary-at-$c$ condition, which is the constant-speed pulsation this article's duty cycle assumes.</li>
+<li><strong>S29, S39, S40</strong> — gravity from the same boundary: the force that is the only candidate outside $\lambda_f$, and the one measured here at $2{,}9\times10^{-37}$ of the deuteron's binding.</li>
+<li><strong>P4, §6.1</strong> — the six levels and the <em>other</em> saturation; do not merge the two (§4).</li>
+<li><strong>§5.5, P21</strong> — $\rho_H$, the density that must not be quoted as the density of a nucleon.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

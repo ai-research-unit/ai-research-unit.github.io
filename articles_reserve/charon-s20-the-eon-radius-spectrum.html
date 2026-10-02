@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — The Éon Radius Spectrum (S20) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-eon-radius-spectrum-s20">Charon — The Éon Radius Spectrum (S20)</h1>
+<p><em>Audits §3.4 and §3.5 of <code>CHARON_IDEAS_AND_CLAIMS.md</code>, against RC ch. III (scans 044, 045, 051, 052).</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The register's verdict on §3.4 is right and the article keeps it: $T_{0}$ is fixed from the measured lepton mass difference, so the éon's radii are a fit and not a prediction.</strong> <strong>This article adds the arithmetic the register does not carry — how the three numbers are actually produced — and, with it, one finding that changes how the block should be read.</strong></p>
+<p><strong>The finding is that the éon's maximum radius is the most ill-conditioned number in the corpus.</strong> <strong>Evaluated at the corpus's own printed three-figure $\beta$, its own evolution equation gives $\mathcal{R} = 4{,}49\times10^{-14}$ cm where the corpus prints $4{,}82\times10^{-14}$; the value that reproduces the print is $\beta = 1{,}74202\times10^{-39}$ g cm, and the amplification factor is $\approx 62$.</strong> <strong>The printed pair is therefore consistent only if $\beta$ is read to four figures, and the corpus carries three.</strong> <strong>The mechanism is exact and checkable: the éon's $\Lambda$ is a difference of two nearly equal terms, and the éon's parameters sit pinned against their own existence bounds — $\beta$ at $99{,}1\,\%$ of the ceiling, $\xi$ at $98{,}4\,\%$, $R_{0}$ at $67{,}2\,\%$.</strong></p>
+<p><strong>This matters beyond the éon.</strong> <strong>The register's proposed tightening of gate G-B — <em>"the model's own turning points, not merely expansion"</em> — is decided here, and it is decided in the model's favour at four-figure precision and against it at the model's own printed precision.</strong> <strong>The article records which, and why, so that G-B′ is not read as either a pass or a failure.</strong></p>
+<h2 id="what-the-corpus-claims">What the Corpus Claims</h2>
+<p><strong>§3.4 — the éon's minimum and maximum radii come out as $R_{0} = 8{,}01\times10^{-15}$ cm, $R_{\max} = 4{,}82\times10^{-14}$ cm, $T_{0} = 4{,}93\times10^{-24}$ s.</strong> RC (3-72), (3-68). <strong>Tag: [SPEC] (fit).</strong> The register's gloss: <em>"$T_{0}$ is fixed from the measured lepton mass difference, so this is not a prediction. The radii are then derived. There is no independent way to observe an imaginary micro-universe, so these numbers are unfalsifiable today."</em></p>
+<p><strong>§3.5 — the three internal constants are computed from the three measured charged-lepton masses.</strong> RC (3-68). <strong>Tag: [MATH] (definition), [SPEC] (physics).</strong> S21 owns §3.5; this article owns what the three constants <em>do</em> — the radius spectrum they generate.</p>
+<h2 id="1-the-chain-and-who-chose-what">1. The Chain, and Who Chose What</h2>
+<p><strong>RC 051 states the production order in one paragraph, and the order is the whole story.</strong> <em>"Pour tout choix d'une valeur du rayon minimum initial $R_{0}$, ou pour tout choix du paramètre $\xi = \Omega_{0}c/\hbar$, il y a une solution et une seule du Système $E$, pourvu que ce choix satisfasse les deux conditions suivantes"</em> — and then: <em>"Utilisant alors l'équation fondamentale d'évolution (3-32) avec cette valeur (3-71) de $\xi$, nous calculons pour le rayon initial $R_{0}$ à $\tau = 0$ et le rayon maximum $\mathcal{R}$ à $\tau = T_{0}/2$."</em></p>
+<p><strong>So the structure is:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>source</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_{0} = 2h/[c^{2}(\tau-\mu)]$</td>
+<td>(3-68)</td>
+<td><strong>fitted to the measured lepton mass difference</strong></td>
+</tr>
+<tr>
+<td>$\alpha$, $\beta$</td>
+<td>(3-68)</td>
+<td><strong>defined by inversion</strong> (S21)</td>
+</tr>
+<tr>
+<td>$\xi$</td>
+<td>(3-71), $(3\text{-}49\text{-}a)$</td>
+<td><strong>fixed by the closure $l_{0} = R_{H}$</strong> (S22)</td>
+</tr>
+<tr>
+<td>$R_{0}$, $\mathcal{R}$</td>
+<td>(3-72), from (3-32)</td>
+<td><strong>outputs of the evolution equation at that $\xi$</strong></td>
+</tr>
+<tr>
+<td>$\rho$, $\theta$, $R''$ at both ends</td>
+<td>RC 052 table</td>
+<td>outputs of the same solution</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One choice ($\xi$, equivalently the closure), one fit ($T_{0}$), and everything else follows.</strong> <strong>So $R_{0}$ is not itself fitted, and it is not itself free: it is a function of a quantity that the closure fixed.</strong> <strong>That is a slightly more favourable reading than "the radii are then derived", and it is the correct one — but it does not help, because the quantity the closure fixed was itself fixed using $T_{0}$ (S22).</strong></p>
+<h2 id="2-math42-verified-and-dated">2. $T_{0}$ Verified, and Dated</h2>
+<p><strong>$T_{0} = 2h/[c^{2}(\tau-\mu)]$ evaluated at the corpus's own 1983 masses gives $4{,}9277\times10^{-24}$ s against the printed $4{,}93\times10^{-24}$ s. Verified.</strong></p>
+<p><strong>Evaluated at 2024 masses it gives $4{,}9493\times10^{-24}$ s — $0{,}44\,\%$ higher.</strong> <strong>The corpus's $T_{0}$ was right for its decade and is now $0{,}4\,\%$ low, and the reason no larger correction is needed is that the quantity is a difference of two heavy masses, which the last forty years of measurement moved by very little.</strong> <strong>Per rule R4 the verdict is dated, and the date is the corpus's favour: nothing here depended on a measurement that has since moved.</strong></p>
+<h2 id="3-the-existence-bounds-and-where-the-solution-sits">3. The Existence Bounds, and Where the Solution Sits</h2>
+<p><strong>RC 051 gives two bounds on the choice, and the corpus's own values sit at the top of both.</strong></p>
+<p><strong>From (3-69-1a):</strong></p>
+<p>$$0 \le R_{0} \le \frac{\beta}{\alpha} = 11{,}91\cdot10^{-15}\ \mathrm{cm}$$</p>
+<p><strong>Verified: $\beta/\alpha = 1{,}1918\times10^{-14}$ cm at the printed (3-68) values.</strong> <strong>And $R_{0} = 8{,}01\times10^{-15}$ cm sits at $\mathbf{67{,}2\,\%}$ of it.</strong></p>
+<p><strong>From (3-69-1b):</strong></p>
+<p>$$0 \le \xi \le \frac{R_{0}^{2}\sqrt{3}}{\sqrt{\beta^{2}/R_{0}^{2} - \alpha^{2}}}$$</p>
+<p><strong>Verified: the ceiling evaluates to $6{,}9089\times10^{-4}$ cgs, and the printed $\xi = 6{,}8\times10^{-4}$ sits at $\mathbf{98{,}4\,\%}$ of it.</strong></p>
+<p><strong>And the third ceiling is implicit in (3-69-2), which the corpus imposes <em>because</em> the existence conditions demand a negative $\Lambda$.</strong> <strong>$\Lambda \le 0$ is equivalent to</strong></p>
+<p>$$\frac{\beta^{2}}{R_{0}^{2}} \le \alpha^{2} + \frac{3R_{0}^{4}}{\xi^{2}} \qquad\Longrightarrow\qquad |\beta| \le R_{0}\sqrt{\alpha^{2} + \frac{3R_{0}^{4}}{\xi^{2}}} = 1{,}755333\times10^{-39}\ \mathrm{g\,cm}$$</p>
+<p><strong>Verified.</strong> <strong>And the printed $\beta = 1{,}74\times10^{-39}$ sits at $\mathbf{99{,}13\,\%}$ of that ceiling.</strong> <strong>As $|\beta|$ approaches it, $\Lambda \to 0$ and the two turning points of (3-32) merge: the pulsation amplitude goes to zero.</strong></p>
+<p><strong>This is the structural fact the register does not carry, and it is the reason for everything in §5. The éon is not a comfortable solution of the corpus's own equations; it is a near-critical one, with two of its three parameters pinned within $2\,\%$ of the boundary of the region where the model exists at all.</strong></p>
+<h2 id="4-the-turning-point-at-math66-is-an-identity-and-math67-falls-out-of-it">4. The Turning Point at $R_{0}$ Is an Identity, and $K = +1$ Falls Out of It</h2>
+<p><strong>The corpus states $K = +1$ twice — RC (3-36) and Esp (201) — as the requirement that the micro-universe be a finite space.</strong> <strong>It is also exactly what the corpus's own $\Lambda$ normalisation requires, and the identity is worth writing down because it makes the whole block checkable.</strong></p>
+<p><strong>Substituting (3-69-2) into (3-32) and evaluating at $R = R_{0}$:</strong></p>
+<p>$$\frac{R'^{2}}{c^{2}}\bigg|_{R_{0}} = \frac{1}{3}\frac{\xi^{2}}{R_{0}^{4}}\left(\alpha^{2} - \frac{\beta^{2}}{R_{0}^{2}}\right) + K + \frac{1}{3}\left[\frac{\xi^{2}}{R_{0}^{6}}\left(\frac{\beta^{2}}{R_{0}^{2}} - \alpha^{2}\right) - \frac{3}{R_{0}^{2}}\right]R_{0}^{2} = K - 1$$</p>
+<p><strong>The two bracketed terms cancel identically, term by term, for any $\alpha$, $\beta$, $\xi$.</strong> <strong>So (3-69-2) is not an independent existence condition at all: it is the statement that $R_{0}$ is a turning point when $K = +1$.</strong> <strong>Said the other way round — which is the corpus's own direction — the requirement that $R_{0}$ be a turning point, combined with $K = +1$, <em>forces</em> the printed $\Lambda$.</strong></p>
+<p><strong>This is a positive result for the block and the register does not have it. The corpus's "conditions d'existence (3-35) et (3-36)" and its $\Lambda$ normalisation are one statement, not three, and the identity is exact.</strong> <strong>It also does all the checking work: (3-32) with the printed $\Lambda$ and $K = +1$ must have $R_{0}$ as a root, and it does, at machine precision, for any parameter values — so every remaining question in this article is a question about the <em>other</em> root.</strong></p>
+<h2 id="5-the-finding-math84-is-hypersensitive-and-the-printed-math85-does-not-reproduce-it">5. The Finding: $\mathcal{R}$ Is Hypersensitive, and the Printed $\beta$ Does Not Reproduce It</h2>
+<p><strong>Method.</strong> <strong>Put $\alpha = -1{,}46\times10^{-25}$ g, $\beta = -1{,}74\times10^{-39}$ g cm, $\xi = 6{,}8\times10^{-4}$ cgs, $R_{0} = 8{,}01\times10^{-15}$ cm (all as printed in RC 051), $\Lambda$ from (3-69-2), $K = +1$, and factor (3-32) as a cubic in $u = R^{2}$.</strong> <strong>Since $u_{0} = R_{0}^{2}$ is a root by §4, the two remaining roots come from a quadratic, so the test is exact rather than numerical.</strong></p>
+<p><strong>Result.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\beta$ (g cm)</th>
+<th>$\Lambda$ (cm$^{-2}$)</th>
+<th>$\mathcal{R}$ (cm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$-1{,}74\times10^{-39}$ (printed)</td>
+<td>$-1{,}4624\times10^{27}$</td>
+<td>$4{,}4870\times10^{-14}$</td>
+</tr>
+<tr>
+<td>$-1{,}74202\times10^{-39}$</td>
+<td>$-1{,}2724\times10^{27}$</td>
+<td>$\mathbf{4{,}8200\times10^{-14}}$</td>
+</tr>
+<tr>
+<td>— RC 052 table —</td>
+<td></td>
+<td>$4{,}85\times10^{-14}$</td>
+</tr>
+<tr>
+<td>— (3-72) —</td>
+<td></td>
+<td>$4{,}82\times10^{-14}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So: the corpus's printed $\beta$ gives $\mathcal{R} = 4{,}49\times10^{-14}$ cm, $6{,}9\,\%$ below the printed $4{,}82$; and the $\beta$ that gives $4{,}82$ is $1{,}74202\times10^{-39}$, a difference of $0{,}12\,\%$ from the printed $1{,}74$.</strong></p>
+<p><strong>The rounding is legitimate — $1{,}74202$ prints as $1{,}74$ at three significant figures — and that is exactly the point.</strong> <strong>The éon's $\mathcal{R}$ is not a quantity that three-figure $\beta$ determines: the corpus's own third figure on $\beta$ is worth $7\,\%$ on $\mathcal{R}$.</strong> <strong>The finding is about the model's conditioning, not about a misprint, and the article states it that way throughout.</strong></p>
+<p><strong>The amplification factor is therefore</strong></p>
+<p>$$\frac{d\ln\mathcal{R}}{d\ln\beta} = \mathbf{62}$$</p>
+<p><strong>— a $0{,}1\,\%$ change in $\beta$ moves the éon's maximum radius by $6\,\%$.</strong> <strong>And RC 052's table gives a <em>third</em> value, $4{,}85\times10^{-14}$, which is consistent with neither.</strong></p>
+<p><strong>The 1983 set behaves identically, which is what shows the property is the éon's and not a page's.</strong> <strong>Esp 058's solution table gives $R_{0} = 7{,}8\times10^{-15}$ cm, $\mathcal{R} = 4{,}8\times10^{-14}$ cm, $\xi = 6{,}467\times10^{-4}$ cgs, $\alpha = -1{,}472\times10^{-25}$ g, $\beta = -1{,}7\times10^{-39}$ g cm.</strong> <strong>From the printed $\beta = 1{,}70\times10^{-39}$ the equation gives $\mathcal{R} = 4{,}7056\times10^{-14}$; the $\beta$ that gives the printed $4{,}8\times10^{-14}$ is $1{,}70049\times10^{-39}$, which prints as $1{,}70$.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>set</th>
+<th>printed $\beta$</th>
+<th>$\mathcal{R}$ from the equation</th>
+<th>$\beta$ giving the printed $\mathcal{R}$</th>
+<th>elasticity</th>
+<th>$\beta$ vs its ceiling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1987 (RC 051/052)</td>
+<td>$1{,}74\times10^{-39}$</td>
+<td>$4{,}487\times10^{-14}$</td>
+<td>$1{,}74202\times10^{-39}$</td>
+<td>$61{,}6$</td>
+<td>$99{,}13\,\%$</td>
+</tr>
+<tr>
+<td>1983 (Esp 058)</td>
+<td>$1{,}70\times10^{-39}$</td>
+<td>$4{,}706\times10^{-14}$</td>
+<td>$1{,}70049\times10^{-39}$</td>
+<td>$68{,}5$</td>
+<td>$99{,}25\,\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two editions, two parameter sets, the same structure: the printed pair is consistent to the rounding of $\beta$'s third figure, the amplification is $\approx 62$–$69$, and the parameter sits within $1\,\%$ of the ceiling in both.</strong></p>
+<p><strong>Register consequence: the note in §13 that treats "$4{,}82$ printed against $4{,}85$ tabulated, $0{,}6\,\%$" as a scan-checking item is superseded.</strong> <strong>The $0{,}6\,\%$ is not the question, and no scan can settle it: both printed values lie inside the window that three-figure $\beta$ leaves open, and the honest statement is that the éon's $\mathcal{R}$ is not determined at the precision the corpus writes.</strong></p>
+<p><strong>And a consequence for the citation rule, which is sharper than S5's Hazard 5 stated it.</strong> <strong>Mixing the books' parameter sets does not shift the solution — it removes it.</strong> <strong>The 1983 $R_{0} = 7{,}8\times10^{-15}$ with the 1987 $\xi$, $\alpha$, $\beta$ drives $\Lambda$ <em>positive</em>, $\Lambda = +9{,}10\times10^{27}$ cm$^{-2}$, and (3-32) then has no second turning point at all.</strong> <strong>So "cite one book at a time" is not a presentational preference: the éon's existence is edition-specific, and the two sets are not interchangeable.</strong></p>
+<h2 id="6-why-math170-is-a-near-cancellation-and-the-parameters-are-pinned">6. Why: $\Lambda$ Is a Near-Cancellation, and the Parameters Are Pinned</h2>
+<p><strong>The mechanism is transparent once written out.</strong> <strong>$\Lambda$ from (3-69-2) is a difference of two terms of the same size:</strong></p>
+<p>$$\frac{\xi^{2}}{R_{0}^{6}}\left(\frac{\beta^{2}}{R_{0}^{2}} - \alpha^{2}\right) = +4{,}53\cdot10^{28}\ \mathrm{cm^{-2}}, \qquad \frac{3}{R_{0}^{2}} = 4{,}68\cdot10^{28}\ \mathrm{cm^{-2}}, \qquad \Lambda = -1{,}46\cdot10^{27}\ \mathrm{cm^{-2}}$$</p>
+<p><strong>$\Lambda$ is $3\,\%$ of either term.</strong> <strong>An $8\,\%$ change in $\beta^{2}$ moves the first term by $3{,}6\times10^{27}$ cm$^{-2}$ — two and a half times the whole of $\Lambda$.</strong> <strong>So $\Lambda$ inherits an amplification of roughly $30$ from the subtraction, and $\mathcal{R}$ inherits a further amplification because the éon sits against the ceiling of §3, where the two roots of the cubic are close.</strong></p>
+<p><strong>The two amplifications compound, and they are the reason for the $62$.</strong> <strong>This is a structural property of the corpus's éon, not a defect of a particular printed figure, and it is the kind of property that a rebuilt statement must record: a solution whose parameters are pinned against its own existence bounds cannot be quoted to three figures.</strong></p>
+<h2 id="7-the-tables-math184-does-not-reproduce-either">7. The Table's $R''(R_{0})$ Does Not Reproduce Either</h2>
+<p><strong>RC 052's table gives $R''$ at both turning points: $+1{,}04\times10^{35}$ cm s$^{-2}$ at $R_{0}$ and $-1{,}8\times10^{34}$ cm s$^{-2}$ at $\mathcal{R}$.</strong></p>
+<p><strong>The transcription of (3-33) was checked before being used, and it is exactly the derivative of (3-32):</strong></p>
+<p>$$R'' = \frac{c^{2}}{6R^{3}}\left[2\xi^{2}\frac{\beta^{2}}{R_{0}^{4}} - \xi^{2}\alpha^{2}\left(\frac{3}{R_{0}^{2}} - \frac{2}{R^{2}}\right) + 2\Lambda R^{4}\right] \;=\; \frac{c^{2}}{2}\frac{d}{dR}\left(\frac{R'^{2}}{c^{2}}\right)$$</p>
+<p><strong>The algebra checks out term by term, so the transcription is not the suspect.</strong> <strong>Evaluated at the printed parameters it gives</strong></p>
+<p>$$R''(R_{0}) = 1{,}50\times10^{35}\ \mathrm{cm\,s^{-2}} \qquad\text{against the printed } 1{,}04\times10^{35}$$</p>
+<p><strong>and the $\beta$ that would give $1{,}04\times10^{35}$ is $1{,}636\times10^{-39}$ g cm — $6{,}0\,\%$ from the $\beta$ that reproduces $\mathcal{R}$.</strong></p>
+<p><strong>So the table's two entries are not mutually consistent under the corpus's own equations: no single $\beta$ produces both.</strong> <strong>Again the honest reading is ill-conditioning rather than an arithmetic error, and again it is not repairable from the printed page — but it is recorded, because a rebuilt statement that quotes the éon's $R''$ would be quoting a number that its own equation does not give.</strong></p>
+<p><strong>Gate G-B′.</strong> <strong>The gate the register proposes reads <em>"the model's own turning points, not merely expansion"</em>. The verdict is: </strong>passed in form at four-figure $\beta$<strong> — the corpus's equation does have $R_{0}$ and $\mathcal{R} = 4{,}82\times10^{-14}$ cm as its two turning points, exactly, when $\beta$ is read to four figures — </strong>and <em>not</em> passed on the table's $R''$ entry, which no single $\beta$ produces.<strong> </strong>Per rule R2′, this is reported as a new gate's own verdict and it does not revise G-B, which stands.**</p>
+<h2 id="8-two-regularities-recovered-from-the-printed-table">8. Two Regularities Recovered From the Printed Table</h2>
+<p><strong>Both turning points of RC 052's table carry a density and a temperature, and the printed values satisfy two relations the corpus does not state.</strong></p>
+<p><strong>First, the density is $\rho = \alpha/R^{3}$:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>printed $\rho$</th>
+<th>$\alpha/R^{3}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>at $R_{0} = 8{,}01\times10^{-15}$</td>
+<td>$-2{,}9\times10^{17}$</td>
+<td>$-2{,}84\times10^{17}$</td>
+</tr>
+<tr>
+<td>at $\mathcal{R} = 4{,}82\times10^{-14}$</td>
+<td>$-1{,}3\times10^{15}$</td>
+<td>$-1{,}3038\times10^{15}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One constant reproduces both entries across a factor $218$ in $\rho$, and the second is exact to all printed figures.</strong> <strong>So the éon's "density" is the constant $\alpha$ spread over the volume $R^{3}$ — the same $\alpha$ as in (3-68) — and the negative sign is the imaginary sheet's (S2).</strong></p>
+<p><strong>Second, the temperature satisfies $\theta R = 3{,}76\times10^{-9}$ K cm at both ends ($3{,}7647\times10^{-9}$ at $R_{0}$, $3{,}7596\times10^{-9}$ at $\mathcal{R}$ — agreeing to $0{,}14\,\%$).</strong> <strong>So $\theta \propto 1/R$ exactly, over the same factor-of-six range in $R$.</strong></p>
+<p><strong>Neither definition is printed in the transcription, so both are recorded as regularities of the printed table and filed in the check queue rather than asserted as the corpus's definitions.</strong> <strong>They are worth having because they are the block's internal consistency, and because $\rho = \alpha/R^{3}$ shows how little independent content the éon's density carries.</strong></p>
+<h2 id="9-and-the-eons-boundary-does-not-move-at-math231">9. And the Éon's Boundary Does Not Move at $c$</h2>
+<p><strong>The corpus's other pulsation law — the boundary moves at exactly $\pm c$ — gives the préon $\mathcal{R}/R_{0} = e^{\pi} = 23{,}14$ (S18) and the holon $R_{H\max} = R_{H} + cT_{0}/2$ (S23).</strong></p>
+<p><strong>Applied to the éon it fails immediately, and the numbers are the proof.</strong> <strong>With $T_{0} = 4{,}93\times10^{-24}$ s,</strong></p>
+<p>$$\frac{cT_{0}}{2} = 7{,}39\cdot10^{-14}\ \mathrm{cm} \qquad\text{while the éon's amplitude is}\qquad \mathcal{R} - R_{0} = 4{,}02\cdot10^{-14}\ \mathrm{cm} = \mathbf{54{,}4\,\%}\ \text{of it}$$</p>
+<p><strong>So the éon's boundary moves at no more than $54{,}4\,\%$ of $c$ on average, and RC 044 itself says why: <em>"la condition initiale $R' = dR/d\tau = \pm c$ concerne seulement le cas d'un micro-univers Imaginaire où la densité propre $\rho$ est nulle (seulement un neutrino, pas de courbure riemannienne scalaire, pas de photons thermiques)."</em></strong> <strong>The radius ratio $\mathcal{R}/R_{0} = 6{,}02$ (printed) or $6{,}01$ (from $\beta = 1{,}742\times10^{-39}$) is the éon's own number, equally far from $e^{\pi}$ and from $1 + cT_{0}/2R_{0} = 10{,}2$.</strong></p>
+<p><strong>That is the direct bridge to S23, and it is the cleanest three-way comparison in the corpus: three micro-structures, three pulsation laws, three amplitude ratios, and only one of the three laws is derived.</strong></p>
+<h2 id="10-verdict">10. Verdict</h2>
+<p><strong>§3.4 and §3.5 stand in substance, and both need their arithmetic restated.</strong></p>
+<ul>
+<li><strong>Confirmed:</strong> $T_{0}$ is fitted to $\tau - \mu$; $R_{0}$ and $\mathcal{R}$ are outputs of (3-32) at the closure-fixed $\xi$; the block is unfalsifiable today.</li>
+<li><strong>Verified and exact:</strong> $T_{0} = 4{,}9277\times10^{-24}$ s from the corpus's own masses (printed $4{,}93$), $+0{,}44\,\%$ at 2024 masses; the identity $R'^{2}(R_{0}) = c^{2}(K-1)$, which makes (3-69-2) and $K = +1$ one statement rather than three.</li>
+<li><strong>New, and the article's finding:</strong> the éon's $\mathcal{R}$ is ill-conditioned in $\beta$ with elasticity $\mathbf{62}$ (1987 set) and $\mathbf{68}$ (1983 set); the printed three-figure $\beta$ gives $4{,}49\times10^{-14}$ cm, not the printed $4{,}82\times10^{-14}$; the table's $4{,}85$ is a third value; the table's $R''(R_{0})$ requires a $\beta$ $6{,}0\,\%$ away. <strong>The cause is that $\Lambda$ is a $3\,\%$ difference of two large terms and the parameters sit at $99{,}13\,\%$ ($\beta$), $98{,}42\,\%$ ($\xi$) and $67{,}2\,\%$ ($R_{0}$) of their existence ceilings — with the other edition at $99{,}25\,\%$ of its own $\beta$ ceiling.</strong></li>
+<li><strong>Superseded:</strong> the register's $0{,}6\,\%$ "$4{,}82$ vs $4{,}85$" note as a scan-checking item. <strong>No scan settles it.</strong></li>
+<li><strong>Sharpened:</strong> S5's Hazard 5 citation rule. <strong>Mixing the editions removes the solution rather than shifting it: the 1983 $R_{0}$ with the 1987 $\xi$, $\alpha$, $\beta$ gives $\Lambda = +9{,}10\times10^{27}$ cm$^{-2} > 0$, and (3-32) then has no second turning point at all.</strong></li>
+<li><strong>Recovered:</strong> $\rho = \alpha/R^{3}$ and $\theta R = 3{,}76\times10^{-9}$ K cm — the printed table's internal consistency, definitions not transcribed.</li>
+<li><strong>Corrected in the register's favour:</strong> $R_{0}$ is not "then derived" from nothing; it is the solution of the corpus's own equation at a closure-fixed parameter, and the identity of §4 shows the whole block is internally consistent at that level.</li>
+</ul>
+<p><strong>Part S / Part P, as the block's boundary (S17's rule, applied here once).</strong> <strong>The <em>equation</em>, the <em>turning points</em>, the <em>identity</em> and the <em>conditioning analysis</em> are Part S: they are audited mathematics about a stipulated model.</strong> <strong>The <em>object</em> — a charged imaginary micro-universe with an observable radius spectrum — is Part P, because its load-bearing ingredient is the massless internal neutrino and §3.7 is [FALS] (P8).</strong> <strong>For S20 specifically: the numbers survive as a record of what the model computes; they do not survive as numbers of nature.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<ul>
+<li><strong>$R$, $R'$, $R''$</strong> — the éon's spatial radius and its first two $\tau$-derivatives. <strong>$R' = dR/d\tau$, not $dR/dt$.</strong></li>
+<li><strong>$R_{0}$, $\mathcal{R}$</strong> — the minimum radius (at $\tau = 0$) and the maximum (at $\tau = T_{0}/2$). <strong>$8{,}01\times10^{-15}$ cm and $4{,}82\times10^{-14}$ cm as printed.</strong></li>
+<li><strong>$T_{0}$</strong> — the éon's pulsation period, $2h/[c^{2}(\tau-\mu)]$. <strong>Fitted; $4{,}93\times10^{-24}$ s.</strong></li>
+<li><strong>$\alpha$, $\beta$</strong> — the éon's two internal constants, from (3-68). <strong>$[\![\alpha]\!] = \mathrm{g}$, $[\![\beta]\!] = \mathrm{g\,cm}$; $\rho = \alpha/R^{3}$.</strong></li>
+<li><strong>$\xi$</strong> — $\Omega_{0}c/\hbar$, the corpus's third parameter, fixed by the closure $l_{0} = R_{H}$. <strong>$[\![\xi]\!] = \mathrm{cm^{2}/g}$.</strong></li>
+<li><strong>$\Lambda$</strong> — the micro-universe's "cosmological" constant from (3-69-2). <strong>Negative; $1{,}46\times10^{27}$ cm$^{-2}$ in magnitude; not the cosmological $\Lambda$ of S10.</strong></li>
+<li><strong>(3-32)</strong> — the first integral of the evolution equation; <strong>(3-33)</strong>, its exact derivative for $R''$.</li>
+<li><strong>$u = R^{2}$</strong> — the variable in which (3-32) is a cubic, hence solvable in closed form given the root $u_{0}$.</li>
+<li><strong>$K$</strong> — the spatial curvature constant. <strong>$K = +1$ at RC (3-36) and Esp (201).</strong></li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S21</strong> — the three internal constants, where $\alpha$ is shown to be a pure mass combination.</li>
+<li><strong>S22</strong> — $l_{0}$, $\Omega_{0}$, $\xi$, and the closure that fixes them: the choice this article takes as given.</li>
+<li><strong>S23</strong> — the boundary-at-$c$ condition, the three pulsation laws, and the $0{,}92$ fm built from them.</li>
+<li><strong>S18</strong> — the préon's $e^{\pi}$ and $\sqrt{\varphi}$, the derived counterparts.</li>
+<li><strong>S34, S41</strong> — the input/output ledger this block feeds.</li>
+<li><strong>P8</strong> — §3.7, the massless neutrino that deletes the model whose radii these are.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

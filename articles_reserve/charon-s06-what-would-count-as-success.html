@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: What Would Count as Success — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-what-would-count-as-success"><strong>Charon: What Would Count as Success</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article pre-registers the criteria. It states, before any further calculation is done, <strong>what would count as the Charon sub-theory succeeding and what would count as it failing</strong>, in a form that could have been applied in 1987 and can be applied in 2026.</p>
+<p>The register's own diagnosis fixes the need. <em>"The failure mode of the original program was not bad physics. It was arithmetic presented as prediction."</em> The corpus derives a chain, arrives at a number, and compares it with a constant it had already fed in at the start; the comparison then reads in the book as a confirmation. <strong>A reassessment that does not fix its criteria in advance will reproduce exactly that error at one remove</strong>, and it will do so in good faith, because every individual step can look correct.</p>
+<p><strong>This article is therefore a pre-registration, and its deliverable is the gate register of Part 3.</strong> It works with the register's rules of engagement — R1 input/output accounting, R2 pre-registration, R3 recomputation, R4 dated verdicts, R5 tag discipline, R6 the three questions kept apart — and it adds one rule the register does not yet state, and one piece of vocabulary.</p>
+<p><strong>One page, and no calculations.</strong> Every gate in Part 3 is quoted from the register as fixed; Part 4 records the verdicts dated, in two data vintages; Part 5 says what failure looks like in advance; Part 6 says what a pre-registration cannot do.</p>
+<h2 id="part-1-the-four-ways-a-reassessment-cheats">Part 1 — The four ways a reassessment cheats</h2>
+<p>Rule R2 remedies three of them. The fourth is new here, and it is the reason this article is not merely a restatement of the register's §7.</p>
+<ol>
+<li><strong>Arithmetic presented as prediction.</strong> The chain closes, a number appears, and the number is called a prediction although its inputs were measured constants. <strong>The corpus's error; it is why the ledger (S34) counts one defined constant, five measured seeds, one suggested and zero independent outputs.</strong></li>
+<li><strong>The tolerance chosen after the residual is seen.</strong> A model that is 4% away is a confirmation "to within 5%" only if 5% was fixed before the computation. <strong>Remedy: R2 — state target, input set and tolerance before computing.</strong></li>
+<li><strong>The input list assembled after the number is seen.</strong> The remedy is the ledger of rule R1, and its practical content is that <strong>an input named in the final comparison must have been named before it was used</strong>.</li>
+<li><strong>The criterion revised after the verdict — in either direction.</strong> A gate that is <em>loosened</em> after a failure is a goalpost moved to hide the failure; a gate that is <em>tightened</em> after a pass is a goalpost moved to manufacture a failure, and <strong>both are moves</strong>. <strong>The rule the register does not state, and this article does:</strong></li>
+</ol>
+<blockquote>
+<p><strong>R2′ — Revision creates a new gate.</strong> <em>A criterion may be revised, but a revised criterion is a new gate with a new date. The original gate's verdict stands, is reported, and is not erased. A tightening after a pass and a loosening after a failure are the same move and both are recorded as moves.</em></p>
+</blockquote>
+<p><strong>Part 3 carries the one amendment this series proposes, and it is filed under R2′: G-B's tightening.</strong> The proposed tightened gate is a <em>new</em> gate, and the original G-B's verdict stands as originally stated.</p>
+<h2 id="part-2-the-three-questions-made-operational">Part 2 — The three questions, made operational</h2>
+<p>Rule R6 says <em>coherence</em>, <em>reproducibility</em> and <em>correspondence</em> are never merged. <strong>To be usable as a criterion, each must have an explicit test.</strong> These are the series' tests.</p>
+<p><strong>Coherence — does the formalism close?</strong> Test: every step of the chain follows from the corpus's own definitions and equations, with no unmarked postulate; and where the corpus's printed equations and its own definitions disagree, <strong>the definition wins and the disagreement is recorded</strong>. Pass condition: the chain closes under the corpus's own definitions. <strong>This is decidable only because S5's hazard list exists</strong> — the notation, the units, the two books' constants, the axioms' unstable numbering. <strong>A coherence pass is silent about the world.</strong></p>
+<p><strong>Reproducibility — does the number follow?</strong> Test: recompute the number independently, from the corpus's own printed inputs, with the input list fixed in advance, and check the arithmetic. Pass condition: the corpus's printed value is recovered from the corpus's own printed inputs, <strong>and the arithmetic is checked</strong> — because the corpus's printed arithmetic and its printed inputs give different answers in at least one place. <strong>A reproducibility pass means the number is a consequence of the corpus. It is still silent about the world.</strong></p>
+<p><strong>Correspondence — does the number match nature?</strong> Test: compare with the measurement <strong>at the tolerance fixed in advance</strong>, against the data of the claim's own decade and against today's data, separately (rule R4). Pass condition: the difference lies inside the pre-stated tolerance, with the tolerance fixed by the measurement's precision and not by the residual. <strong>This is the only one of the three that speaks about the world.</strong></p>
+<p><strong>The flagship α case, run through the three tests, is the clearest example of why they must not be merged.</strong> <em>Coherence</em>: passes — the chain (245)→(268) reproduces every step. <em>Reproducibility</em>: passes — the corpus's printed $\alpha = 7{,}65\times10^{-3}$ is recovered exactly from its own printed inputs. <em>Correspondence</em>: <strong>the honest figures are +3,64% on the coupling and +1,82% on the charge with correct arithmetic, or +4,80% and +2,38% reproducing its printed arithmetic</strong> — so the model is <strong>3–5% away and stays 3–5% away at any precision</strong>, because the distance is set by $\beta$ (S35, S37). <strong>A reader told only "passed" would conclude that the corpus's fine-structure number had been confirmed. It has not: it has been shown to follow from a postulated law, and to sit 3–5% from the measured value.</strong> That sentence is what R6 exists to force.</p>
+<h2 id="part-3-the-gate-register-as-pre-registered">Part 3 — The gate register, as pre-registered</h2>
+<p><strong>These are the criteria, fixed before the articles were written.</strong> They are quoted from the register's §7, which is their pre-registration date; the source column names the article that decides each.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>gate</th>
+<th>condition</th>
+<th>pre-registered tolerance / input set</th>
+<th>consequence if failed</th>
+<th>owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>G-A</strong></td>
+<td>a dictionary maps both sectors without contradiction</td>
+<td>the full dictionary of register §2; no tolerance, it is a formal question</td>
+<td>the two frameworks are different theories — stop and say so</td>
+<td>S2</td>
+</tr>
+<tr>
+<td><strong>G-B</strong></td>
+<td>the geometric source tensor admits an expanding solution, <strong>or its failure is proved</strong></td>
+<td>the corpus's own $\rho$, $M$, $R$; the pulsation period to the corpus's own stated precision</td>
+<td>if it cannot expand, the cosmology is dead in the rebuilt theory</td>
+<td>S9</td>
+</tr>
+<tr>
+<td><strong>G-C</strong></td>
+<td>$\alpha$ is reproduced <strong>with the input list stated in advance</strong> (rule R2)</td>
+<td>the corpus's printed inputs, two-figure; the failure condition is <em>"$\alpha$ only appears once $\beta$ is fitted"</em></td>
+<td>a fit must be reported as a fit, not as a computation</td>
+<td>S35, S37</td>
+</tr>
+<tr>
+<td><strong>G-D</strong></td>
+<td>at least one number survives comparison with 2020s data</td>
+<td>today's data; no tolerance until a candidate number is named</td>
+<td>the programme is historical only</td>
+<td>S40</td>
+</tr>
+<tr>
+<td><strong>G-E</strong></td>
+<td>the rebuilt theory makes at least one <strong>new</strong> testable statement</td>
+<td>none yet — the statement must exist before a tolerance can be fixed</td>
+<td>otherwise the sub-theory is a reformulation and must be labelled as such</td>
+<td>S58–S63</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two notes on the register's own pre-registration, both in the register's favour.</strong></p>
+<ul>
+<li><strong>G-B is stated in the strong form</strong> — "admits an expanding solution, <strong>or its failure is proved</strong>" — which is the correct form for a gate: <strong>it can be lost as well as won.</strong> A criterion that can only be won is not a criterion.</li>
+<li><strong>G-C's failure condition is stated as a state of affairs, not as a number</strong> — <em>"$\alpha$ only appears once $\beta$ is fitted"</em> — which is the right kind of condition for a pre-registration about <em>method</em>, and it is what makes the verdict decidable: S37 shows $\beta$ is determined in closed form from the lepton masses and that <strong>no electromagnetic input reaches it</strong>, so the failure condition is not met.</li>
+</ul>
+<p><strong>The one amendment, filed under R2′.</strong> The register proposes tightening G-B to <em>"require the model's own turning points, not merely expansion"</em>. <strong>That is a tightening after a pass, so under R2′ it creates a new gate — call it G-B′ — and G-B's original verdict stands.</strong> G-B: <strong>passed</strong>, with the bounce at $R_0$ derived, $K = +1$ derived and also stated in the 1987 book, and the pulsation reproducible at $0.3\%$. G-B′: <strong>to be decided</strong>, and it is a harder criterion than the one the register fixed in advance. <strong>Reporting G-B′ as if it had been the gate all along would be the exact move rule R2′ forbids.</strong></p>
+<h2 id="part-4-the-verdicts-dated">Part 4 — The verdicts, dated</h2>
+<p>Rule R4 requires each judgment to be rendered against two data vintages. <strong>A claim that fails on 2020s data and passes on 1980s data is [FALS] with a date; a claim that cannot be decided in either is [OUT] with the reason.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>gate</th>
+<th>verdict</th>
+<th>against its own decade's data</th>
+<th>against 2020s data</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>G-A</strong></td>
+<td><strong>PASSED (refined)</strong></td>
+<td>the question is algebraic and the data are irrelevant</td>
+<td>same</td>
+<td>[EST]; S2</td>
+</tr>
+<tr>
+<td><strong>G-B</strong></td>
+<td><strong>PASSED</strong></td>
+<td>the pulsation and $K = +1$ are read in the corpus's own numbers</td>
+<td>unchanged — the result is internal to the model</td>
+<td>[MATH]/[SPEC]; S9</td>
+</tr>
+<tr>
+<td><strong>G-C</strong></td>
+<td><strong>PASSED IN FORM, after correction</strong></td>
+<td>$\alpha$'s value moved by 0,028 points between 1/137 and CODATA; <strong>the verdict does not move</strong></td>
+<td>unchanged: 3–5% away, set by $\beta$</td>
+<td>[MIX]; S35, S37</td>
+</tr>
+<tr>
+<td><strong>G-D</strong></td>
+<td><strong>OPEN</strong></td>
+<td>the candidate did not exist as a test</td>
+<td>one candidate, $\dot G/G$ (S40), against the LLR bound</td>
+<td>[SPEC]</td>
+</tr>
+<tr>
+<td><strong>G-E</strong></td>
+<td><strong>OPEN</strong></td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The vocabulary, defined here because the series uses it and has not defined it.</strong> <em>Passed</em> means the gate's condition is met. <em>Passed in form</em> means <strong>the gate's stated failure condition is not met, and the gate's purpose is nevertheless served by the article's own labelling</strong> — so G-C's failure condition ("$\alpha$ only appears once $\beta$ is fitted") is not met, while the result is still not a computation of $\alpha$, and S35 says so in its own text. <em>Refined</em> means <strong>the gate's condition is unchanged and the finding is about what the dictionary maps</strong> — S2 did not weaken G-A, it discovered that the objects being mapped needed a per-quantity rule. <strong>Neither "passed in form" nor "refined" is a pass, and no article may report them as one.</strong></p>
+<p><strong>One further dated element the register does not require but the three-question rule does.</strong> For every numerical claim the series records <strong>which vintage of measurement was available to the corpus</strong>, so that a failure is not read as a failure of its own decade's physics. <strong>The clearest case in the corpus is the lepton tower</strong> (P1, R7): the charged-lepton mass tower is dead against LEP-era and 2020s bounds, and its three lowest rungs reproduce with $T$ fitted — so the <em>fit</em> is retained as a fit and the <em>prediction</em> is filed dead, with its date.</p>
+<h2 id="part-5-what-failure-looks-like-stated-in-advance">Part 5 — What failure looks like, stated in advance</h2>
+<p><strong>Each gate's consequence column already says what losing it costs.</strong> The register's own two programme-level statements are worth separating from the per-gate ones, because they are the statements that would end the programme rather than a block of it.</p>
+<ul>
+<li><strong>If G-D fails</strong> — that is, if $\dot G/G$ (R5, S40) is closed by measurement at a value outside the model's band — <strong>then no number in the corpus survives comparison with 2020s data, and the programme is historical.</strong> The sub-theory would still be a <em>speculative reconstruction</em>, and the register's instruction is to label it as such rather than to look for a softer test.</li>
+<li><strong>If G-E fails</strong> — no new testable statement — <strong>then the sub-theory is a reformulation.</strong> This is the more likely of the two outcomes and it is not a scandal: a reformulation that is coherent, that computes, and whose failures are dated is a legitimate result. <strong>What is not legitimate is calling a reformulation a theory of everything</strong>, and it is why the register's §16 reassessment outranks every constants article.</li>
+</ul>
+<p><strong>And the failure conditions of the blocks are already stated in their articles, which is the point of writing them as audits.</strong> F1's uniqueness theorem means the source must carry everything (S7); F2's tension with Friedmann–Lemaître is a real local defect that the block survives (S8, S9); F3's quadratic law is the most falsifiable structural claim in the programme and no measurement tests it (S10); the pulse's two claims are dead and its existence argument lives (S11, P23, P24). <strong>A block whose failure condition is not stated in advance is not audited, it is described.</strong></p>
+<h2 id="part-6-what-a-pre-registration-cannot-do">Part 6 — What a pre-registration cannot do</h2>
+<p><strong>It cannot supply a criterion where there is no measurement to compare against.</strong> Three parts of the corpus have no data-vintage at all: the mind material beyond the EPR interpretation (S53–S57), the numerologies of the fine-structure constant that are neither derivational nor testable, and the cosmological claims whose subject — the negative vacuum, continuous creation, the universal age $\tau$ — is not the kind of thing an experiment reports. <strong>For these, the correct label is [SPEC] or [PHIL] and the correct action is to say so; a criterion that can never be applied is not a gate.</strong></p>
+<p><strong>It cannot manufacture a prediction.</strong> G-E's honesty is that it begins empty. The series' one live candidate, $\dot G/G$ (R5, S40), is a <em>prediction in the corpus's own sense</em> — a stated value for a quantity nobody had measured — and G-E's answer will be decided by whether the series can name a second one, or whether the first is all.</p>
+<p><strong>And it cannot substitute for recomputation.</strong> Rule R2 fixes the criteria; rule R3 supplies the checks. <strong>Where rule R3 stops — the integrands of (220)–(221) are missing from the scan, so S43 cannot be written — the correct outcome is a stopped article and a register entry, not an estimate.</strong></p>
+<h2 id="summary">Summary</h2>
+<p><strong>The register's diagnosis is that the corpus's failure mode was arithmetic presented as prediction, so this article pre-registers what success and failure would be, in a form that could have been applied in 1987 and can be applied in 2026.</strong> Its deliverable is the gate register of Part 3: <strong>G-A</strong> (a dictionary maps both sectors without contradiction — no tolerance, a formal question, owned by S2); <strong>G-B</strong> (the source tensor admits an expanding solution <strong>or its failure is proved</strong> — owned by S9); <strong>G-C</strong> ($\alpha$ is reproduced with the input list stated in advance, the failure condition being "<em>$\alpha$ only appears once $\beta$ is fitted</em>" — owned by S35 and S37); <strong>G-D</strong> (at least one number survives comparison with 2020s data — owned by S40); <strong>G-E</strong> (the rebuilt theory makes at least one new testable statement — owned by the consolidation block). <strong>All five were fixed before the articles that decide them were written, and G-B is in the correct strong form, losable as well as winnable.</strong></p>
+<p><strong>One rule is added, because the register's R2 covers only three of the four ways a reassessment cheats.</strong> <strong>R2′ — revision creates a new gate: a revised criterion is a new gate with a new date, the original verdict stands and is reported, and a tightening after a pass and a loosening after a failure are the same move.</strong> The one amendment this series proposes is filed under it: the proposed tightening of G-B to require the model's own turning points is <strong>G-B′, a new gate, while G-B's original verdict — passed, with the bounce derived, $K = +1$ derived, and the pulsation reproducible at $0.3\%$ — stands as originally stated.</strong></p>
+<p><strong>The three questions are made operational.</strong> <em>Coherence</em>: the chain closes under the corpus's own definitions, the definition winning where the corpus's printings disagree — decidable only because S5's hazard list exists. <em>Reproducibility</em>: the printed value is recovered independently from the corpus's printed inputs, with the arithmetic checked. <em>Correspondence</em>: the difference from measurement lies inside the tolerance fixed in advance, against both data vintages. <strong>The flagship $\alpha$ case passes the first two and fails the third at 3–5%, and the reason this article exists is that a reader told only "passed" would conclude the opposite of the truth.</strong></p>
+<p><strong>The verdicts are dated.</strong> <strong>G-A passed (refined)</strong>, the question being algebraic and data-independent. <strong>G-B passed.</strong> <strong>G-C passed in form, after correction</strong> — its stated failure condition is not met, because S37 shows $\beta$ is a closed form in the lepton masses with no electromagnetic input, while the result is still a postulated law and not a computation. <strong>G-D and G-E are open.</strong> The vocabulary is fixed here: <strong>"passed in form" and "refined" are not passes, and no article may report them as one.</strong></p>
+<p><strong>What failure looks like is stated in advance.</strong> If G-D fails, no number survives against 2020s data and the programme is historical. If G-E fails, the sub-theory is a reformulation — the more likely outcome and a legitimate one, provided it is named as such. <strong>What a pre-registration cannot do is supply a criterion where there is no measurement, manufacture a prediction, or replace recomputation:</strong> where rule R3 stops — the missing integrands of (220)–(221) — the correct outcome is a stopped article, not an estimate.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td>input/output accounting: every number labelled INPUT (measured, fed in) or OUTPUT (no freedom left)</td>
+</tr>
+<tr>
+<td>R2, <strong>R2′</strong></td>
+<td>pre-registration of target, input set and tolerance; <strong>revision creates a new gate</strong> (added by this article)</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>recomputation from the corpus; where a figure cannot be recomputed, say so and stop</td>
+</tr>
+<tr>
+<td>R4</td>
+<td>dated verdicts: the claim's own decade's data and today's data, recorded separately</td>
+</tr>
+<tr>
+<td>R5</td>
+<td>tag discipline: [EST], [OUT], [SPEC], [FALS], [MIX], [MATH], [PHIL], traced to a numbered inventory item</td>
+</tr>
+<tr>
+<td>R6</td>
+<td>the three questions never merged: coherence, reproducibility, correspondence</td>
+</tr>
+<tr>
+<td>G-A … G-E</td>
+<td>the five pre-registered gates; G-B′ is the proposed tightened successor to G-B</td>
+</tr>
+<tr>
+<td><em>passed in form</em></td>
+<td>the stated failure condition is not met <strong>and</strong> the gate's purpose is served by the article's own labelling — <strong>not a pass</strong></td>
+</tr>
+<tr>
+<td><em>refined</em></td>
+<td>the gate's condition is unchanged; the finding concerns what its object actually is — <strong>not a pass</strong></td>
+</tr>
+<tr>
+<td>input set</td>
+<td>the measured quantities a computation is allowed to use, named before it is run</td>
+</tr>
+<tr>
+<td>tolerance</td>
+<td>the difference from measurement inside which correspondence is claimed, fixed by the measurement's precision, not by the residual</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><code>UPDATED_CHARON_THEORY_2026_ARTICLE_LIST.md</code> §1 for the rules of engagement this article works from, and <strong>§7 for the gates as pre-registered</strong> — the primary source of Part 3.</li>
+<li>S2, <code>charon-s02-dictionary-reel-imaginaire-to-m-plus-m-minus</code>, for G-A and for the refined sense in which it passed.</li>
+<li>S9, for G-B — the expanding solution, the derived bounce and the reproduced pulsation.</li>
+<li>S34, <code>charon-s34-constants-ledger-method</code>, S35 and S37, for rule R1's count, G-C, and the demonstration that $\beta$ is a closed form in the lepton masses.</li>
+<li>S40, for G-D and the one live prediction, $\dot G/G$.</li>
+<li>S58–S63, for G-E and the consolidation block that must answer whether the sub-theory makes any new testable statement.</li>
+<li>S5, <code>charon-s05-notation-and-units</code>, for the hazard list without which the coherence test of Part 2 is not decidable.</li>
+<li>S16, <code>charon-s16-state-of-the-rebuilt-formalism</code>, for the "closes by selection — six choices and one exact identity" statement that Part 5's "reformulation" verdict would quantify.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

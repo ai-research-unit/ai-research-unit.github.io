@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$G$ From the Hadron Model: The Corpus's Second Value of Newton's Constant, and the Calibration It Fails — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-from-the-hadron-model-the-corpuss-second-value-of-newtons-constant-and-the-calibration-it-fails"><strong>$G$ From the Hadron Model: The Corpus's Second Value of Newton's Constant, and the Calibration It Fails</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The corpus states Newton's constant twice, and the two statements are not the same kind of thing.</strong> The cosmology takes $G$ from observation and uses it as an input — the third of the Système C's three measured values, $G_{a} = 6{,}67\times10^{-8}$ cgs, with the whole time-dependence of $G$ then following from the model (S40). The hadron model, in <em>L'Esprit et la Relativité complexe</em> §VIII.10.3, does something else: it <strong>computes</strong> $G$ from the nucleon, and reports</p>
+<p>$$\boxed{\ G = (5{,}4 \pm 2{,}7)\times10^{-8}\ \mathrm{cgs}\ } \qquad (\text{Esp (377)–(379)})$$</p>
+<p>against the measured $6{,}674\times10^{-8}$ cgs. <strong>The central value is $19\,\%$ low, and the bar is $\pm50\,\%$.</strong></p>
+<p><strong>This article is the account of that number, and its conclusion is that the number is not evidence.</strong> The chain is short, it is arithmetically clean, and three things are wrong with it that compound. <strong>(1)</strong> A $\pm50\,\%$ uncertainty band is not the precision of a derivation but the span of an order-of-magnitude coincidence. <strong>(2)</strong> The chain is <em>exactly</em> proportional to $1/d_{0}$, the nucleon's central density, and the value the corpus uses is <strong>$2037$ times</strong> a density a nuclear physicist would recognise; move it and the same chain misses $G$ by more than three orders of magnitude. <strong>(3)</strong> The mechanism does not deliver the <strong>universality</strong> of gravitation: its coupling is a per-particle quantity, and the corpus checks the chain for the nucleon only.</p>
+<p><strong>And there is a fourth finding, which is the sharpest and which is the reason this article is worth writing.</strong> The corpus's own field equation has a strength of its own — it is written with no $8\pi G/c^{4}$ — and that strength generates a gravitational length of $7{,}6\times10^{-13}$ cm, where the route the corpus actually uses gives $1{,}07\times10^{-52}$ cm. <strong>Forty orders of magnitude apart, in the same theory, for the same constant.</strong> The corpus never compares them. This article does, and the comparison leaves a forced choice: either the field equation is not the source of gravity, or $\xi$ is not what the lepton sector says it is.</p>
+<p><strong>So the verdict is that $G$ is an input in the corpus, not an output</strong> — the same verdict S40 reaches from the cosmology, arrived at independently from the hadron side, and it means the corpus's <em>one</em> computed fundamental constant remains the fine-structure constant and not $G$. <strong>The $\pm50\,\%$ agreement is a real thing to have had in 1983 and it is not a derivation of Newton's constant.</strong></p>
+<p><strong>Conventions.</strong> $c$, $\hbar$, $G$ in Gaussian cgs; $G$ is Newton's constant and <strong>never</strong> the corpus's $\gamma$, which is S37's dimensionless coefficient. $\xi = \Omega_{0}c/\hbar = 6{,}8\times10^{-4}$ cm$^{2}$ g$^{-1}$ is the corpus's universal constant, defined at Esp (2-18-a) and named ξ in Graph 3's legend (RC 062). $d_{0} = 5{,}5\times10^{17}$ g cm$^{-3}$ is the corpus's nucleon <strong>central</strong> density — not its mean density, and the distinction carries the whole of §4 below. $d_{c} \simeq 7\times10^{-32}$ g cm$^{-3}$ is the cosmic density that fixes the pulsation's amplitude. $l_{r} = (4 \pm 2)\times10^{-38}$ is the dimensionless gravitational length that the hadron system's numerical integration yields, and $L = l_{r}/(\xi d_{0})$ is the length the corpus identifies with $G\mu/c^{2}$.</p>
+<h2 id="what-the-corpus-claims-and-how-it-gets-there">What the Corpus Claims, and How It Gets There</h2>
+<p><strong>The claim is stated in three equations, and the corpus gives all three.</strong></p>
+<p>$$(377)\quad L = \frac{l_{r}}{\xi d_{0}}, \qquad (378)\quad L = \frac{G\mu}{c^{2}}, \qquad (379)\quad G = \frac{c^{2}l_{r}}{\xi d_{0}\mu},$$</p>
+<p>where $\mu$ is the nucleon's mass. <strong>Read the third one carefully, because everything in this article follows from its shape.</strong> $G$ is the product of three things: the constant $c^{2}$, the dimensionless number $l_{r}$ obtained by integrating the hadron system, and the single quantity $1/(\xi d_{0}\mu)$ made of the corpus's own ξ and the nucleon's central density and mass.</p>
+<p><strong>The route to $l_{r}$ is a numerical integration.</strong> The hadron model is non-dimensionalised by $x = \xi d_{0}r$ and $d = d_{0}\delta$ (Esp 338), so the system (342)–(348) is dimensionless with $\delta = 1$ at the centre by construction; the radial pulsation enters through the pulse quantisation $pD_{T} = \tfrac{1}{2}nh$ (Esp 343). Integrating gives the dimensionless gravitational length $l_{r} = (4\pm2)\times10^{-38}$, and dividing by $\xi d_{0}$ gives $L = (1\pm0{,}5)\times10^{-52}$ cm. <strong>Then (378) identifies that length with $G\mu/c^{2}$ — and that identification is postulated, not derived.</strong></p>
+<p><strong>The arithmetic is clean.</strong> With $\xi = 6{,}8\times10^{-4}$ and $d_{0} = 5{,}5\times10^{17}$ g cm$^{-3}$, $\xi d_{0} = 3{,}7400\times10^{14}$ cm$^{-2}$; and with $l_{r} = 4\times10^{-38}$ and $\mu = 1{,}6726\times10^{-24}$ g,</p>
+<p>$$G = \frac{c^{2}l_{r}}{\xi d_{0}\mu} = \frac{8{,}9876\times10^{20}\times4\times10^{-38}}{3{,}7400\times10^{14}\times1{,}6726\times10^{-24}} = 5{,}75\times10^{-8}\ \mathrm{cgs},$$</p>
+<p>which is the corpus's central value within its own rounding — its $5{,}4\times10^{-8}$ corresponds to $l_{r} \approx 3{,}8\times10^{-38}$, inside the integration's band. <strong>The band $l_{r} \in [2,\,6]\times10^{-38}$ maps to $G \in [2{,}9,\,8{,}6]\times10^{-8}$ cgs, which is the corpus's $(5{,}4\pm2{,}7)\times10^{-8}$ to its own rounding.</strong> Every number reproduces. <strong>The chain is not wrong. It is bought.</strong></p>
+<h2 id="the-four-findings">The Four Findings</h2>
+<h3 id="1-a-math63-bar-is-not-a-derivation">1. A $\pm50\,\%$ bar is not a derivation</h3>
+<p><strong>The measured value is $G = 6{,}674\times10^{-8}$ cgs, with a relative uncertainty of $2\times10^{-5}$.</strong> The corpus's value agrees with it at $19\,\%$ on the central value and carries a $\pm50\,\%$ band. <strong>The band is $25\,000$ times wider than the measurement it is compared with</strong>, which is the arithmetic statement of what the number is worth: the corpus is not competing with the measurement, it is landing in its neighbourhood.</p>
+<p><strong>The band is honest, and that is the point.</strong> It comes from the numerical integration's own spread in $l_{r}$ — a factor of three, $2$ to $6$ — so the corpus is reporting its integration's precision rather than dressing it up. <strong>But a prediction whose error bar is a factor three wide has not fixed the constant; it has bounded it.</strong> The distinction matters because the register's tag for this claim (§7.4) is <em>"an order-of-magnitude coincidence, not a derivation"</em>, and the numbers bear that out to the letter.</p>
+<h3 id="2-math72-exactly-and-the-math73-used-is-2000-times-the-defensible-one">2. $G \propto 1/d_{0}$ exactly, and the $d_{0}$ used is 2000 times the defensible one</h3>
+<p><strong>This is the finding that converts a soft claim into a hard one, and it is exact rather than statistical.</strong></p>
+<p><strong>(379) is linear in $1/d_{0}$, with no other $d_{0}$-dependence anywhere in the chain</strong> — and this is worth stating precisely, because it would be easy to assume the dimensionless integration hides one. The dimensionless $l_{r}$ is a property of the universal dimensionless system (348), whose density variable is normalised to $\delta = 1$ at the centre; <strong>it does not depend on $d_{0}$ at all.</strong> So $L \propto 1/d_{0}$, and via (378) so is $G$:</p>
+<p>$$G \;\propto\; \frac{1}{d_{0}} \quad\text{exactly, one-to-one.}$$</p>
+<p><strong>Now bring in the corpus's own central density.</strong> Charon takes the nucleon's central density to be $d_{0} = 5{,}5\times10^{17}$ g cm$^{-3}$. <strong>Nuclear saturation density is $2{,}7\times10^{14}$ g cm$^{-3}$.</strong> The ratio is $2037$. Recompute the same chain at a saturation-level central density and, since the coupling is exactly $G \propto 1/d_{0}$,</p>
+<p>$$G\big|_{d_{0} = 2{,}7\times10^{14}} = 5{,}4\times10^{-8}\times2037 = 1{,}1\times10^{-4}\ \mathrm{cgs},$$</p>
+<p>which is <strong>$1650$ times the measured value, or three orders of magnitude and more.</strong> <strong>The agreement on $G$ is therefore not evidence for the mechanism; it is evidence that the mechanism has been fed the central density that makes it agree.</strong></p>
+<p><strong>And the required density is itself the problem.</strong> A central density of $5{,}5\times10^{17}$ g cm$^{-3}$ is about $2000\times$ nuclear saturation — the density of a neutron star's core, not of a nucleon. <strong>The corpus needs a density three orders above anything a nuclear physicist would defend, and it needs it precisely because $G$ is inversely proportional to it.</strong> This is a falsification conditional on the nuclear physics being right, and the coupling is exact, so it is not a matter of degree: <strong>the mechanism's success and the corpus's central density stand or fall together.</strong></p>
+<h3 id="3-universality-is-not-delivered">3. Universality is not delivered</h3>
+<p><strong>A theory of gravity must give one $G$ for every particle. The corpus's mechanism makes $G$ a per-particle quantity, and the corpus never notices.</strong></p>
+<p><strong>(379) can be rewritten with the particle's own quantities on the left:</strong></p>
+<p>$$G\mu = \frac{c^{2}l_{r}}{\xi d_{0}} .$$</p>
+<p>Everything on the right except the particle's central density is a constant of the programme. <strong>So for $G$ to be a single number, the product $d_{0}\mu$ must be the same for every particle — that is, the central density must be <em>inversely</em> proportional to the mass.</strong> Nothing in the corpus says this, and the corpus computes the chain for the nucleon only.</p>
+<p><strong>Two alternatives, both fatal, and they bracket the possibilities.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>if the corpus meant…</th>
+<th>then</th>
+<th>consequence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$d_{0}$ the same for all particles</td>
+<td>$G \propto 1/\mu$</td>
+<td>a proton and an electron gravitate differently by $1836$</td>
+</tr>
+<tr>
+<td>$d_{0}$ rising with mass (a naive "mass per volume" reading)</td>
+<td>$G \propto 1/\mu^{2}$</td>
+<td>the discrepancy is squared</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Either way, the universality of gravitation is not a consequence of the mechanism but a further requirement on $d_{0}$ that the corpus never checks.</strong> This is the same structural failure as §2 in a different guise: a fitted quantity carrying the result, and a physical requirement on it that is never tested. <strong>It is a hand-off this article inherits from S29 and now discharges: the answer is that the corpus's $G$ is a nucleon-only statement, and the corpus never claims otherwise because it never asks.</strong></p>
+<h3 id="4-the-calibration-check-the-field-equations-own-strength-forty-orders-away">4. The calibration check: the field equation's own strength, forty orders away</h3>
+<p><strong>This is the finding that decides the article, and it does not depend on any of the three above.</strong></p>
+<p><strong>The corpus's field equation carries no $8\pi G/c^{4}$.</strong> Its source is $\xi^{2}\rho^{2}$ and its strength is fixed by $\xi$ alone — nothing in it is calibrated to gravity. <strong>So the field equation has a strength of its own, and it can be read off and compared with the strength the corpus actually uses:</strong></p>
+<p>$$l_{\mathrm{field}} \sim \xi^{2}d_{0}^{2}r_{T}^{3} = 7{,}6\times10^{-13}\ \mathrm{cm}, \qquad l_{\mathrm{norm}} = \frac{l_{r}}{\xi d_{0}} = 1{,}07\times10^{-52}\ \mathrm{cm}.$$</p>
+<p><strong>The ratio is $7{,}1\times10^{39}$ — forty orders of magnitude, in the same theory, for the same constant.</strong> The field equation's own gravitational length is a tenth of a picometre; the length the corpus normalises $G$ against is $10^{-52}$ cm. <strong>No re-rounding, no numerical improvement and no choice of $l_{r}$ inside its band can bridge this</strong>, because the band spans a factor of three and the gap spans a factor $10^{40}$.</p>
+<p><strong>The same disagreement, stated in densities rather than lengths, is easier to see.</strong> Because the source is quadratic in the density, the parameter-free field equation reproduces general relativity's strength at exactly one density,</p>
+<p>$$\rho_{*} = \frac{8\pi G}{c^{2}\xi^{2}} = 4{,}0\times10^{-21}\ \mathrm{g\ cm^{-3}},$$</p>
+<p>and a quadratic source cannot do better at any other density — the mismatch grows as the square of the departure. <strong>Where does $4{,}0\times10^{-21}$ g cm$^{-3}$ sit?</strong> The cosmic density that fixes the pulsation's amplitude is $d_{c} \simeq 7\times10^{-32}$ g cm$^{-3}$, and the nucleon's central density is $5{,}5\times10^{17}$ g cm$^{-3}$: <strong>the density the field equation needs is $5{,}7\times10^{10}$ times the one the mechanism actually feeds it, and $10^{38}$ times smaller than the other.</strong> It is a perfectly ordinary density — roughly an interstellar medium at its denser end — and it is neither of the two the corpus has in play. <strong>The field equation's strength has nothing to do with either of the densities the mechanism uses.</strong></p>
+<p><strong>So the article's central claim is this: the corpus computes $G$ from a normalisation that its own field equation does not supply.</strong> (379) is true as arithmetic, and it is not a consequence of the field equation — it is a <em>separate</em> postulate grafted onto a theory whose own gravitational strength is a different number by forty orders. <strong>The forced choice, and it is genuinely forced:</strong></p>
+<ul>
+<li><strong>Either the field equation is not the source of gravity</strong> — in which case the mechanism's gravity comes from (378)'s postulated identification $L = G\mu/c^{2}$ and from nowhere else, $G$ is a normalisation rather than a prediction, and the derivation is withdrawn; <strong>or</strong></li>
+<li><strong>$\xi$ is not the $\xi$ of the lepton sector</strong> — in which case the corpus's universal constant has two values, and the lepton-sector results that depend on it (S35's $\alpha$ chain among them) lose a foundation.</li>
+</ul>
+<p><strong>There is no third option, because the two lengths differ by a factor $10^{40}$ and the only quantities available to reconcile them are $\xi$ and $d_{0}$.</strong> And $d_{0}$ is excluded by §2: it is already $2000\times$ the defensible density, and it would have to move by $10^{40}$.</p>
+<h3 id="5-the-corpus-both-inputs-and-outputs-math137">5. The corpus both inputs and outputs $G$</h3>
+<p><strong>And the two statements must be put side by side, because they are the corpus's own.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>value of $G$ (cgs)</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the cosmology (RC 082)</td>
+<td>$6{,}67\times10^{-8}$</td>
+<td><strong>MEASURED INPUT</strong> — the third observed value of the Système C</td>
+</tr>
+<tr>
+<td>the hadron model (Esp 377–379)</td>
+<td>$(5{,}4 \pm 2{,}7)\times10^{-8}$</td>
+<td><strong>computed</strong>, from $\xi$, $d_{0}$, $\mu$ and $l_{r}$</td>
+</tr>
+<tr>
+<td>the measurement</td>
+<td>$6{,}674\times10^{-8}$</td>
+<td>the comparison</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The cosmology's need is itself evidence against the hadron model's claim.</strong> S40's Step 2 establishes that the framework supplies the <em>form</em> of gravity's coupling and not its <em>value</em>, and RC 082 confirms it from the other direction by feeding $G_{a}$ in as observed data. <strong>So the corpus's own cosmological method treats $G$ as something it cannot compute — while its hadron chapter computes it.</strong> A programme that both inputs and outputs the same constant owes an account of why, and the corpus does not give one.</p>
+<p><strong>The two readings can be made consistent, and the consistent reading is that $G$ is an input.</strong> If §4's first horn is taken — the field equation is not the source of gravity — then the hadron model's $G$ is a normalisation of a length against a measured $G$, not a computation of it, and there is no second value: (379) becomes a <em>consistency</em> statement about the hadron system's dimensionless $l_{r}$, of exactly the kind S29 found for the strong-force range and the hadron mass. <strong>That is the reading this article recommends, and it costs the corpus nothing except the claim to have computed $G$.</strong></p>
+<h2 id="verdict">Verdict</h2>
+<p><strong>$G = (5{,}4\pm2{,}7)\times10^{-8}$ cgs is an order-of-magnitude coincidence, and the corpus's own field equation proves it.</strong></p>
+<p><strong>The chain is clean and every number reproduces.</strong> (377)–(379) give $5{,}75\times10^{-8}$ cgs from the corpus's own $\xi$, $d_{0}$, $\mu$ and $l_{r}$; the integration's band maps onto the quoted $(5{,}4\pm2{,}7)\times10^{-8}$. <strong>Nothing in the arithmetic fails, and this article does not claim otherwise.</strong></p>
+<p><strong>But the number is bought four times over.</strong></p>
+<ol>
+<li><strong>The bar is $\pm50\,\%$</strong> — a factor three in $l_{r}$, and $25\,000$ times wider than the measurement being compared with. <strong>Not a derivation; a bound.</strong></li>
+<li><strong>$G \propto 1/d_{0}$ exactly</strong>, and $d_{0} = 5{,}5\times10^{17}$ g cm$^{-3}$ is $2037\times$ nuclear saturation. <strong>At a defensible density the same chain misses $G$ by more than three orders.</strong></li>
+<li><strong>Universality is not delivered.</strong> The coupling is per-particle; a proton and an electron would gravitate differently by $1836$ unless $d_{0}\mu$ is constant, which the corpus never checks.</li>
+<li><strong>The field equation's own strength is forty orders from the normalisation used.</strong> $l_{\mathrm{field}} \sim 7{,}6\times10^{-13}$ cm against $l_{\mathrm{norm}} = 1{,}07\times10^{-52}$ cm; equivalently, the parameter-free equation matches general relativity's strength only at $\rho_{*} = 4{,}0\times10^{-21}$ g cm$^{-3}$, which is neither of the two densities the mechanism has in play.</li>
+</ol>
+<p><strong>Finding 4 forces a choice, and the article's position is the first horn.</strong> Either the field equation is not the source of gravity — in which case (378) is a postulated identification, $G$ is an input and the derivation is withdrawn — or $\xi$ has two values, which would cost the lepton sector. <strong>The first horn is the cheap one, and it agrees with what the cosmology already does.</strong></p>
+<p><strong>So $G$ joins the corpus's list of inputs.</strong> The programme's count stands where S34 left it — <strong>one defined, five measured seeds, one suggested, zero independent outputs</strong> — and the hadron chapter does not add a computed fundamental constant to it. <strong>The corpus's one computed constant remains the fine-structure constant, and its status is the one S35 and S37 settled: a postulated law that reproduces an independent constant to $2\,\%$.</strong></p>
+<p><strong>What survives is worth keeping, and it is not the number.</strong> The hadron model does produce a <em>dimensionless</em> gravitational length $l_{r}$ from a system that contains no gravitational constant; <strong>that $l_{r}$ is a genuine numerical output of the corpus's own equations, and the question it raises — why the ratio of a hadronic length to the nucleon's own scale should be anywhere near $G\mu/c^{2}$ — is not answered by the forty-orders calculation, which concerns the field equation's strength and not $l_{r}$.</strong> That question is the thing to take from this article, and it is a better question than the number was.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<ul>
+<li><strong>$G$</strong> — Newton's constant, cgs. Measured $6{,}674\times10^{-8}$; the corpus's cosmological input $G_{a} = 6{,}67\times10^{-8}$ (RC 082, S40); the corpus's hadron-model value $(5{,}4\pm2{,}7)\times10^{-8}$ (Esp 377–379), the subject of this article. <strong>$G$ here is never the corpus's $\gamma$</strong>, which is S37's dimensionless coefficient.</li>
+<li><strong>$\xi$</strong> — the corpus's universal constant, $\xi = \Omega_{0}c/\hbar = 6{,}8\times10^{-4}$ cm$^{2}$ g$^{-1}$, dimensionally a specific volume (a length over a mass). Defined at Esp (2-18-a); printed in plain letters in Graph 3's legend (RC 062). <strong>The calibration check of §4 turns entirely on $\xi$</strong>, because it is the only quantity other than $d_{0}$ that could reconcile the two lengths.</li>
+<li><strong>$d_{0}$</strong> — the nucleon's <strong>central</strong> density, $5{,}5\times10^{17}$ g cm$^{-3}$; not its mean density. Nuclear saturation density is $2{,}7\times10^{14}$ g cm$^{-3}$. <strong>$G \propto 1/d_{0}$ exactly</strong>, which is §2.</li>
+<li><strong>$d_{c} \simeq 7\times10^{-32}$ g cm$^{-3}$</strong> — the cosmic density that fixes the pulsation's amplitude through the boundary condition $a(x_{T}) = \delta_{c}$ of Esp (374). <strong>Not the density the field equation needs</strong>: that is $\rho_{*} = 4{,}0\times10^{-21}$ g cm$^{-3}$.</li>
+<li><strong>$l_{r} = (4\pm2)\times10^{-38}$</strong> — the dimensionless gravitational length from integrating the hadron system (342)–(348). <strong>Dimensionless, and independent of $d_{0}$</strong> — which is what makes the $1/d_{0}$ sensitivity of §2 exact.</li>
+<li><strong>$L$</strong> — the length $l_{r}/(\xi d_{0}) = (1\pm0{,}5)\times10^{-52}$ cm, identified by postulate (378) with $G\mu/c^{2}$. <strong>$L$ is the quantity that carries the whole result</strong>, and (378) is the postulate.</li>
+<li><strong>$\mu$</strong> — the nucleon's mass, $1{,}6726\times10^{-24}$ g. Enters only in (378), through the postulated identification; <strong>it never enters through the wave.</strong></li>
+<li><strong>$\rho_{*} = 8\pi G/(c^{2}\xi^{2}) = 4{,}0\times10^{-21}$ g cm$^{-3}$</strong> — the one density at which the parameter-free field equation, whose source is $\xi^{2}\rho^{2}$, reproduces general relativity's strength. It is $5{,}7\times10^{10}$ times $d_{c}$ and $10^{38}$ times smaller than $d_{0}$. <strong>This symbol is this article's, not the corpus's.</strong></li>
+<li><strong>$l_{\mathrm{field}}$, $l_{\mathrm{norm}}$</strong> — the field equation's own gravitational length, $\xi^{2}d_{0}^{2}r_{T}^{3} = 7{,}6\times10^{-13}$ cm, and the normalisation length $1{,}07\times10^{-52}$ cm. Their ratio is $7{,}1\times10^{39}$. <strong>Both symbols are this article's.</strong></li>
+<li><strong>$r_{T}$</strong> — the hadron system's outer turning point, the radius at which the pulsation's boundary condition is imposed.</li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><code>UPDATED_CHARON_THEORY_2026_ARTICLE_LIST.md</code>: the S39 entry, which states the four items this article must answer; §7.4 of <code>CHARON_IDEAS_AND_CLAIMS.md</code> for the register's tag and the $(5{,}4\pm2{,}7)\times10^{-8}$ figure; §5 of <code>CHARON_IDEAS_AND_CLAIMS.md</code> for the inventory verdicts on $d_{0}$ and on the hadron mass; §16.1 for the corpus's one live prediction, which is <em>not</em> affected by this article.</li>
+<li>J. E. Charon, <em>L'Esprit et la Relativité complexe</em> (Albin Michel, Paris, 1983): Esp §VIII.10.3 for the chain (377)–(379); Esp 342–348 for the dimensionless hadron system; Esp 338 for the normalisation $x = \xi d_{0}r$, $d = d_{0}\delta$; Esp 343 for the pulse quantisation $pD_{T} = \tfrac{1}{2}nh$; Esp 374 and §10.1 for the boundary condition that fixes the pulsation's amplitude at $d_{c}$; Esp (2-18-a) for $\xi$.</li>
+<li>S29, <code>charon-s29-gravity-from-a-pulsating-boundary</code>, for the mechanism this article audits: the $1/r^{2}$ falloff of the mean-square source density, the recalculation of $\xi^{2}d_{0}^{2}$ and $\xi^{2}\rho_{c}^{2}$, the derivation of $l_{r}$ and $L$, the $1/d_{0}$ sensitivity, the universality requirement, and the first statement of the forty-orders calibration. <strong>The calibration check is S29's finding; this article is where it is decided.</strong></li>
+<li>S40, <code>charon-s40-gdot-over-g</code>, for the cosmological $G$: rule R1 (the value is an input, only the drift is an output), Step 2's argument that the framework supplies the form of gravity's coupling and not its value, and the $\dot G/G$ prediction.</li>
+<li>S34, <code>charon-s34-the-input-output-ledger</code>, for the seed count this article confirms; S35 and S37 for the fine-structure constant, the corpus's one computed constant; S5, <code>charon-s05-notation-and-units</code>, for ξ, $d_{0}$ and the corpus's other constants.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

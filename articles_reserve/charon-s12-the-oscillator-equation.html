@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — The Oscillator Equation (S12) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-oscillator-equation-s12">Charon — The Oscillator Equation (S12)</h1>
+<p><em>Audits §2.5, §2.6 and §9.1 of <code>CHARON_IDEAS_AND_CLAIMS.md</code>, against RC ch. II §3.5 (scans 020, 032, 033, 035, 036) and Esp §XI (scan 028). Marked </em><em>[BRIDGE]</em><em> in the register — see §8 for what this article adds and what it does not.</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The corpus gives every point of the real sheet an "oscillator" $\Sigma$: an amplitude $U$ obeying a wave equation, whose mass term is supplied by the local curvature.</strong> That is the whole of the micro-physical claim on this page, and it has two parts of very different quality. <strong>The equation is correct, standard, and — in one reading — elegant: it says that the geometry tells the field how heavy it is.</strong> <strong>The machinery around it, the de Broglie "fusion" tower, is a 1930s method read in a 1950s way, and its load-bearing claim — that the tower stores a memory — is an interpretation of a fact about solution spaces.</strong></p>
+<p><strong>This article does four things the register's [BRIDGE] marking would otherwise cut:</strong> it fixes the corpus's own notation for the wave operator, which is a trap; it separates the equation's correct content from the fusion tower's; it records that the corpus prints its component count <strong>three different ways</strong>; and it says where the memory claim's store actually lives.</p>
+<h2 id="what-the-corpus-claims">What the Corpus Claims</h2>
+<p><strong>§2.5 — the oscillator $\Sigma$ at each point $P$ obeys $\Box U + (M_{0}^{2}c^{2}/\hbar^{2})U = 0$.</strong> RC (2-71), (2-74). <strong>Tag: [MATH].</strong> Klein–Gordon for a massive scalar; the corpus correctly identifies it with the "fusion" equation of the spin $n/2$ states of de Broglie's school; the <em>mathematics</em> is [EST] and the physical identification [SPEC].</p>
+<p><strong>§2.6 — the higher-spin fusion equations (de Broglie, Petiau, Bhabha): a spin-2 state has $16\times16 = 256$ components.</strong> <strong>Tag: [MATH] (historical).</strong> Largely displaced by standard tensor/spinor methods and by gauge formulations; the corpus's use is faithful, its payoff is not.</p>
+<p><strong>§9.1 — a spin-1 field has no memory; a higher-spin "sigma" field does. Its number of initial conditions is $16^{2n}$.</strong> RC ch. I §3.5. <strong>Tag: [SPEC] (the arithmetic is fine).</strong> "4.3 billion components at $n = 4$" is arithmetic; the physical claim is [SPEC].</p>
+<h2 id="1-the-equation-and-a-trap-in-its-notation">1. The Equation, and a Trap in Its Notation</h2>
+<p><strong>The corpus writes the equation, twice and identically:</strong></p>
+<p>$$\Box^{2}U + \xi^{2}\rho^{2}U = \Box^{2}U + \frac{M_{0}^{2}c^{2}}{\hbar^{2}}U = 0 \tag{2-74}$$</p>
+<p><strong>and it defines the operator itself, twice:</strong></p>
+<p>$$\Box^{2} = \eta^{\alpha\beta}\partial_{\alpha}\partial_{\beta} \qquad\text{(RC 022)},\qquad \Box^{2} = \frac{1}{c^{2}}\frac{\partial^{2}}{\partial t^{2}} - \nabla^{2} \qquad\text{(RC 069)}$$</p>
+<p><strong>So $\Box^{2}$ is the ordinary second-order d'Alembertian, and the superscript is part of the corpus's <em>name</em> for it, not a power.</strong> <strong>This is a trap and it is worth one line in S5's list: a reader who takes the notation at face value makes (2-74) fourth-order, obtains the dispersion relation $(k^{2} - \omega^{2}/c^{2})^{2} = M_{0}^{2}c^{2}/\hbar^{2}$ with its spurious sign branch, and concludes the corpus is wrong about something it never wrote.</strong> The corpus's own two definitions settle it. <strong>This is Hazard 7 in S5.</strong></p>
+<p><strong>Given the correct reading, (2-74) is Klein–Gordon, exactly.</strong> $\Box U + (M_{0}^{2}c^{2}/\hbar^{2})U = 0$ with the mass term supplied by the curvature. <strong>And S15's result then applies: because $\xi \equiv \Omega_{0}c/\hbar$, the substitution $\rho = M_{0}/\Omega_{0}$ gives $R - 4\Lambda = (M_{0}c/\hbar)^{2}$ exactly, so the corpus's oscillator frequency is the inverse of the <em>reduced Compton wavelength at that point</em>.</strong></p>
+<p><strong>In one line, and it is the best line in this block: the corpus's field is a Klein–Gordon field whose mass-squared is the local curvature.</strong> The geometry tells the field how heavy it is. <strong>That is a coherent and unusual idea, it is stated in the corpus's own equations, and no canonical-quantisation paper contains it.</strong></p>
+<h2 id="2-what-the-oscillators-frequency-is-and-why-it-is-not-a-new-number">2. What the Oscillator's Frequency Is — and Why It Is Not a New Number</h2>
+<p><strong>The rest frequency follows from (2-74): $\nu = M_{0}c^{2}/h$.</strong> For a point of proper mass $m$ that is the de Broglie phase frequency $\nu = mc^{2}/h$, and the pulsation period is</p>
+<p>$$T = \frac{h}{mc^{2}} = 2\pi \times \frac{\hbar}{mc^{2}}$$</p>
+<p><strong>Verified at the electron: $T = 8{,}0933\times10^{-21}$ s, which is exactly $2\pi \times$ the Compton time $\hbar/m_{e}c^{2}$.</strong> <strong>So the corpus's "pulsation of the micro-universe" is, numerically, the particle's own quantum phase cycle — one turn of the phase $\exp(-imc^{2}t/\hbar)$. This is the link to §2.7's $\psi$ as a phase wave, and it is the reason the pulsation is not an extra physical process: it is de Broglie's clock, read geometrically (S54 owns the $\psi$ side of that).</strong></p>
+<p><strong>And the cost is the same as elsewhere in this block: $M_{0}$ is an input.</strong> $M_{0} = \Omega_{0}\rho$, and $\rho$ is the density the corpus takes from the geometry (S34's ledger), so the oscillator's characteristic frequency is fixed by a number the theory does not predict. <strong>The equation is standard, its mass is geometric, and its mass <em>value</em> is borrowed.</strong></p>
+<h2 id="3-the-fusion-machinery-the-credit-stated-plainly">3. The Fusion Machinery — the Credit, Stated Plainly</h2>
+<p><strong>(2-74) is described as the "fusion" equation of a spin $nh/2$ with a pulse $nh/2$ (RC 032), and this is the de Broglie programme of the 1930s–50s — de Broglie's <em>fusion</em> of Dirac states, with Petiau, Bhabha and Tonnelat.</strong> <strong>Two things the corpus says about it are true and worth recording as credit:</strong></p>
+<ul>
+<li><strong>RC 020 is honest about the provenance</strong>: <em>"un tel champ électromagnétique «de fusion», ou champ sigma, représentent des états de spin éventuellement plus grands que 1, se trouve avoir été déjà analysé mathématiquement dans le détail (mais pour des raisons et des objectifs cependant tout autres) par Louis de Broglie et ses collaborateurs dès les années 1950."</em> <strong>The corpus does not claim to have invented the mathematics, and names its source.</strong></li>
+<li><strong>RC 035 correctly notes the two containment facts</strong>: that the action-$h$ system (2-81) contains the ordinary Dirac equations, obtained by "fusion" of two half-integer states; and that Maxwell is the $\rho = 0$ case of (2-81-a). <strong>Both are true statements about the fusion formalism.</strong></li>
+</ul>
+<p><strong>The price, which the corpus does not state.</strong> The fusion programme was displaced, for two reasons that are properties of the physics rather than of taste: <strong>high-spin <em>elementary</em> fields with a finite number of components are excluded as free massless fields (Weinberg–Witten), and in the Standard Model the observed higher-spin states are either composite or the constrained gauge fields of a local symmetry.</strong> A tower of elementary $16^{n}$-component fusion fields carrying a <em>memory</em> is neither. <strong>So the corpus's use of the machinery is a faithful use of a superseded method, and the method's success in reproducing Dirac and Maxwell is a success it shares with every other bookkeeping scheme that contains them.</strong></p>
+<h2 id="4-the-count-in-91-the-corpus-prints-it-three-ways">4. The Count in §9.1 — the Corpus Prints It Three Ways</h2>
+<p><strong>§9.1 states the count as $16^{2n}$, notes that the arithmetic is standard, and quotes "4.3 billion components at $n = 4$".</strong> <strong>The corpus prints that count in three places, and the three do not agree.</strong> The table gives the rule each printing implies.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>source</th>
+<th>as printed</th>
+<th>rule implied</th>
+<th>$n=1$</th>
+<th>$n=2$</th>
+<th>$n=4$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RC 015</td>
+<td>$16^{2n}$, <em>"16 conditions initiales pour $n = 1/2$, 256 pour $n = 2$, 4,3 milliards pour $n = 4$"</em></td>
+<td>$16^{2n}$, $n$ = half the spin</td>
+<td>16 ($n=\tfrac12$)</td>
+<td>256 ($n=1$)</td>
+<td>$4{,}29\times10^{9}$ ($n=4$)</td>
+</tr>
+<tr>
+<td>RC 036</td>
+<td>$16^{2^{n}}$ for a state of action $2^{n}h$</td>
+<td>$16^{2^{n}}$</td>
+<td>16 ($n=0$)</td>
+<td>256 ($n=1$)</td>
+<td>$1{,}84\times10^{19}$ ($n=4$)</td>
+</tr>
+<tr>
+<td>Esp 028</td>
+<td><em>"16 composantes pour $n = 1$..., 256 composantes pour $n = 2$"</em></td>
+<td>$16^{n}$, $n$ = action number</td>
+<td>16</td>
+<td>256</td>
+<td>65536</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The physically right rule is the third, and it is right for a simple reason: each fusion step composes a four-component Dirac state with the accumulated one, so the component count quadruples per doubling of the action.</strong> With total action $nh$ the count is $(4)^{2n} = 16^{n}$: <strong>$16$ at $n = 1$, $256$ at $n = 2$, $65536$ at $n = 4$, $4{,}295\times10^{9}$ at $n = 8$.</strong> <strong>So Esp 028's rule is correct; RC 015's rule is correct only under a different meaning of $n$, and its own list silently switches meaning between its $n = 1/2$ and $n = 2$ entries; RC 036's $16^{2^{n}}$ is a third rule that is a different number again.</strong></p>
+<p><strong>Where that leaves §9.1.</strong> The tag is right — the count <em>is</em> a straightforward consequence of the fusion formalism, and the arithmetic is fine — <strong>but "fine" only once $n$ is fixed, and the corpus never fixes it.</strong> <strong>§9.1's own quotation of "4.3 billion at $n = 4$" inherits RC 015's convention (in which $n = 4$ is spin 8, not action 4), so the register's number and Esp's number are counts of different things.</strong> <strong>This is a variant of S5's Hazard 3, and the article recommends extending that hazard: never cite a component count without its $n$ and its rule (Hazard 8).</strong> No physical conclusion of the corpus turns on it — <strong>but "the sigma field has 4.3 billion initial conditions" is exactly the kind of number a reader will try to check, and as printed it cannot be checked.</strong></p>
+<h2 id="5-the-memory-claim-real-containment-and-an-interpreted-store">5. The Memory Claim — Real Containment, and an Interpreted Store</h2>
+<p><strong>§9.1's physics is this, and the corpus states it in three places</strong>: a spin-1 field has no memory, a higher-spin fusion field does, because <strong>the spin-$n$ fusion state <em>contains</em> all lower spin states as a superposition</strong> (RC 035, Esp 098), and because <strong>the imaginary time is negentropic, so new initial conditions add to old ones rather than replacing them</strong>. RC 044 is explicit that the sigma field is the one thing <em>not</em> reset each pulsation: <em>"La présence de ce champ sigma démontre que l'âge Imaginaire n'est pas véritablement un âge cyclique, c'est-à-dire qu'il n'y a pas un « retour cyclique » du temps dans le monde Imaginaire (le monde de la mémoire)."</em></p>
+<p><strong>The containment is real mathematics.</strong> A fusion tower of action $nh$ contains the equations of action $(n-1)h$, so a solution can be embedded in a larger one without the smaller being erased. <strong>That is a genuine structural fact and it is the corpus's strongest argument on this page.</strong></p>
+<p><strong>The memory is an interpretation of it, and the gap is specific.</strong> <strong>The containment is a statement about the <em>space of solutions<em>: it says the tower is nested.</em><em> A memory requires three things beyond nesting: </em><em>(i) a distinguished direction of accumulation</em><em> — supplied here by the negentropic imaginary time; </em><em>(ii) a record that is </em>readable</em></strong> — the corpus's $\psi$ wave "exploring" the real spacetime, RC 015; and <strong>(iii) a physical interaction that writes and reads it</strong>. <strong>The corpus supplies (i), gestures at (ii), and nowhere defines (iii).</strong> <strong>A nested space of solutions is not a store; it is the capacity for one.</strong> The article records the distinction because the register's tag depends on it: <strong>[SPEC] is right, and the reason is not vagueness but a missing read-out mechanism.</strong> <strong>S57 owns the mind side of this; S12 owns the physics, and the physics is that the store was supposed to be the fusion tower.</strong></p>
+<h2 id="6-what-the-article-adds-for-the-registers-cut-decision">6. What the Article Adds, for the Register's Cut Decision</h2>
+<p><strong>The register marks S12 [BRIDGE] and recommends cutting it, on the ground that <code>canonical-quantization-of-the-biquaternion-klein-gordon-field</code> and <code>the-classical-harmonic-oscillator-and-the-two-sector-structure-…</code> already cover the Klein–Gordon oscillator.</strong> <strong>That is true of the oscillator as canonical quantisation, and this article therefore does not present one.</strong> <strong>What it adds is four corpus-specific items, none of which appears in either duplicate:</strong></p>
+<ol>
+<li><strong>the corpus's $\Box^{2}$ notation and its trap</strong> — a definition the corpus gives twice and that no external article would know to give;</li>
+<li><strong>mass = local curvature</strong>, $R - 4\Lambda = (M_{0}c/\hbar)^{2}$, i.e. a Klein–Gordon field whose mass-squared is the geometry's, which is a Charon claim and not a general one;</li>
+<li><strong>that the fusion count is printed three ways</strong> and that §9.1's own number inherits an unfixed $n$;</li>
+<li><strong>that the memory claim's store is a solution space</strong>, and what a store additionally requires.</li>
+</ol>
+<p><strong>On that basis the article earns its place as an audit of a <em>claim</em>, not as a restatement of Klein–Gordon</strong> — and the register's cut recommendation should be read as conditional on S12 remaining an audit. <strong>If it were ever reduced to the equation alone, the register's judgement would be right.</strong></p>
+<h2 id="verdict">Verdict</h2>
+<p><strong>The oscillator equation is the corpus's most ordinary equation, and that is the point.</strong> <strong>Klein–Gordon with a mass supplied by the local curvature, in a notation ($\Box^{2}$) that looks fourth-order but is defined by the corpus itself as the ordinary d'Alembertian.</strong> <strong>Nothing in it is wrong; almost nothing in it is Charon's.</strong></p>
+<p><strong>Two things are.</strong> <strong>First, the reading mass = local curvature, $R - 4\Lambda = (M_{0}c/\hbar)^{2}$ exactly</strong> — <strong>a definition ($\xi \equiv \Omega_{0}c/\hbar$) that was <em>made</em> to hold and does hold, which is a real result about the framework and the block's second exact identity after S15's.</strong> <strong>Second, the claim that the fusion ladder stores memory</strong>, which is [SPEC] in the register and stays [SPEC] here, <strong>for a precise reason found in this pass: the corpus supplies a nested solution space — the capacity for a store — and never supplies a read-out.</strong></p>
+<p><strong>And one defect belongs to the notation rather than the physics: the same fusion count is printed under three conventions for $n$, which are three different numbers</strong> (S5, Hazard 8). <strong>No physical result changes, but a count cannot be checked without its $n$.</strong></p>
+<p><strong>On the register's question of whether to cut S12: keep it, as an audit.</strong> <strong>The article adds the $\Box^{2}$ definition, the mass = curvature reading, the three-way count and the memory/store distinction — none of which is in the two articles §5 names as already covering Klein–Gordon.</strong> <strong>No canonical quantisation appears in it at all, deliberately.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<ul>
+<li><strong>$U$</strong> — the action density $U = dA/dV_{4}$; the amplitude of the oscillator $\Sigma$ and (S8) the generator of the geometric source. <strong>The same object; S8 and S12 are two halves of the corpus's geometric quantum mechanics.</strong></li>
+<li><strong>$\Box^{2}$</strong> — the corpus's symbol for the ordinary second-order d'Alembertian, $\eta^{\alpha\beta}\partial_{\alpha}\partial_{\beta}$. <strong>Not the square of an operator</strong> (Hazard 7).</li>
+<li><strong>$\Sigma$</strong> — the oscillator at $P$; its "structure" is the fusion tower of §2.6.</li>
+<li><strong>$\sigma$ field</strong> — the corpus's name for the fusion electromagnetic field; its higher spin states are the storage of §9.1.</li>
+<li><strong>$16^{n}$</strong> — the component count for total action $nh$; <strong>the three printings are tabulated in §4</strong> (Hazard 8).</li>
+<li><strong>$M_{0}$</strong> — proper mass at $P$, $M_{0} = \Omega_{0}\rho$; it supplies the oscillator's mass term.</li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S8</strong> — the other half: what $U$ does to the geometry, via the quantum-potential ratio in (47).</li>
+<li><strong>S15</strong> — the exact passage to the quantum equation, and the curvature–Compton identity that gives this equation its mass.</li>
+<li><strong>S14</strong> — why the equation for $U$ is <em>selected</em> rather than derived, and the exponent-2 question in (2-8).</li>
+<li><strong>S5</strong> — Hazards 7 and 8, and the rule for citing counts and operators.</li>
+<li><strong>S54, S57</strong> — the $\psi$ phase wave and the mind, which own the interpretation this article refuses.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

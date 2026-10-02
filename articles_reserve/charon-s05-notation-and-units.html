@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: Notation and Units — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-notation-and-units"><strong>Charon: Notation and Units</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Every article in this series quotes a book that was written in another notation, in another unit system, and in another frame of mind about what a symbol is for. This article is the one notation file for the Charon series. It states the corpus's own conventions, lists its symbols with their values and units, fixes the vocabulary, and gives the map from the corpus's notation into the biquaternion one. It is meant to be read before any Charon article is written or edited, and it has the same two readers as its companion <em>Conventions in the Biquaternion Universe</em>: a writer who needs to know which symbol to use, and a reader who meets a symbol that looks wrong.</p>
+<p><strong>What this article adds, in one line.</strong> The companion article <em>Conventions in the Biquaternion Universe</em> fixes the <strong>biquaternion</strong> side of the dictionary — the algebra, its basis, its four involutions, its six subspaces, its metric levels. This article fixes the <strong>Charon</strong> side: the corpus's symbols, its cgs/Gaussian units, its Riemannian-real convention, its axiom numbering, and its vocabulary. It is marked <strong>[BRIDGE]</strong> in the register for exactly that reason, and the division is clean: no biquaternion convention is restated here, and no Charon convention is restated there.</p>
+<p>The article is organised in six parts. Part 1 gives the corpus's own conventions. Part 2 is the symbol dictionary. Part 3 is the vocabulary. Part 4 is the bridge to the biquaternion conventions. Part 5 is a list of hazards — places where the corpus's notation is ambiguous or internally inconsistent, with the rule this series adopts for each. Part 6 collects the numerical constants with their units.</p>
+<p>One warning applies throughout, and it is the same one the companion article gives. <strong>A convention recorded here is not a claim that the alternative is wrong.</strong> Several of these choices are freely made. What is not free is consistency: once a convention is fixed, the dependent articles inherit it.</p>
+<h2 id="part-1-the-corpuss-own-conventions">Part 1 — The corpus's own conventions</h2>
+<h3 id="the-space-and-its-two-sheets">The space, and its two sheets</h3>
+<p>Charon works in what he calls a <strong>complex Riemannian space</strong>, and the name carries two commitments that must be taken separately.</p>
+<p>The first is that his space is <strong>complexified</strong>: to each real point $M$ of a four-dimensional real manifold he attaches an imaginary counterpart, and a physical quantity has a real part, written with a dot over the bar and a subscript, and an imaginary part. The two parts are not a calculational device that may be dropped at the end. They are the corpus's two <strong>sheets</strong>, and the corpus writes them <em>Réel</em> and <em>Imaginaire</em>, capitalised. The real sheet carries form and extension; the imaginary sheet carries the micro-universe and, in the corpus's own accounting, the energy.</p>
+<p>The second is that the real sheet is <strong>Riemannian</strong>, not Lorentzian. This is easy to miss and it matters. Charon's notation $x^\mu$ with the index running over four values, and his use of the letter $R$ for a scalar curvature and $G$ for a metric determinant, read like general relativity, and most of his machinery is general relativity. But he does not assume a Minkowski signature on the real sheet; the sheet is a Riemannian four-manifold, all four directions of the same sign, and the Lorentzian structure is meant to come out of the complexification. A reader who supplies a Minkowski metric by habit will find that some of his equations carry the wrong signs, and will be wrong about why.</p>
+<p><strong>This is the first place the two frameworks must be compared rather than identified.</strong> In the biquaternion framework the Lorentzian signature is an <em>output</em> of the conventions and not an input (see <em>Conventions in the Biquaternion Universe</em>, "The Metric: Three Levels"): the level-1 norm has the identity Gram matrix, and the Minkowski interval appears only when the material sector is written with the time coordinate $ict$, where the minus sign comes from $i^{2} = -1$ alone. Charon reaches the same structural position by a different route — a complexified space whose real section is Riemannian — and the two routes agree in spirit. What they do not do is use the same symbols for it.</p>
+<h3 id="signature-and-indices">Signature and indices</h3>
+<p>The series adopts the following for all Charon articles, and states them here so that a later article need not.</p>
+<p><strong>Indices.</strong> Greek indices run over the four values $0, 1, 2, 3$ and are tensor indices of the complex space. Latin indices $k, j, l$ run over the three spatial values $1, 2, 3$. A bracketed index such as $(1)$ refers to an equation number in the corpus and never to a component; equation numbers are quoted exactly as the corpus prints them, with the chapter prefix where the corpus uses one: Esp (111) for <em>L'Esprit</em>, RC (3-78) for <em>La Relativité complexe</em> chapter III. Where a scan number is needed it is written as a three-digit scan label, Esp 052. This is the citation convention of the whole series.</p>
+<p><strong>Time coordinates.</strong> Three distinct time symbols are in play and they must not be conflated: $t$ is the real time of the real sheet; $\tilde t$ is the imaginary time; and $\tau$ is the <strong>age of the universe</strong>, which the corpus's Axiome 6 makes universal for all electromagnetic observers. The corpus also writes $ict$ in the manner of the older literature when it wants a Lorentzian-looking coordinate; that $i$ is the complexification's, not a separate convention.</p>
+<p><strong>Metrics.</strong> Two objects are needed and they are not the same. The <strong>complex norm</strong> of the space, $N$, is the biquaternion-type norm of the coefficients; the <strong>Riemannian metric</strong> $G_{\alpha\beta}$ of the real sheet, with determinant $G$, is what enters the curvature and the wave equation. The corpus writes $G$ for the determinant and $R$ for the scalar curvature; both letters are also used elsewhere in the corpus, and the collisions are listed in Part 5.</p>
+<p><strong>Nothing is assumed about the Lorentzian signature.</strong> Where a Charon article needs a Minkowski metric for a comparison with standard literature, it says so at that point and uses the series' $ict$ form $\eta = \mathrm{diag}(-1,+1,+1,+1)$, which is the companion article's level-2 convention.</p>
+<h3 id="units-the-cgsgaussian-habit">Units: the cgs/Gaussian habit</h3>
+<p>The corpus is written in <strong>Gaussian cgs</strong>, and every numerical value it prints is in cgs. This is not an incidental choice and it propagates into the physics.</p>
+<p><strong>The units in use.</strong> Length in centimetres, mass in grams, time in seconds, energy in ergs, action in erg seconds, density in g cm$^{-3}$. Charge is in Gaussian electrostatic units and the Coulomb constant does not appear: the fine-structure constant is $e^{2}/\hbar c$, the force between charges is $q_1q_2/r^{2}$, and Maxwell's equations carry their factors of $4\pi$ inside the fields rather than in the constants. The gravitational constant is written $G$ in cgs, $6{,}674\times10^{-8}$ cm$^{3}$ g$^{-1}$ s$^{-2}$, and in the corpus's equations it appears as $8\pi G/c^{2}$ or its reciprocal depending on the chapter.</p>
+<p><strong>What the habit does to the reader.</strong> Three traps follow, and every Charon article must avoid them.</p>
+<p>The first is the factor $4\pi$. In cgs, the field of a point charge is $e/r^{2}$ and the field of a sphere is $4\pi\rho\,r/3$; an article that imports a formula from a source using SI or Heaviside–Lorentz units will have the factor $4\pi$ in the wrong place. The second is the absence of $\mu_0$ and $\epsilon_0$, so that a formula from an SI source cannot be transcribed term by term. The third is dimensional checking, which is the practical defence: in Gaussian cgs every constant has dimensions built from cm, g, s, and erg, and an expression whose dimensions do not come out is wrong regardless of its provenance. The series checks dimensions in every Charon article before checking anything else.</p>
+<p><strong>Where natural units are used, and why it must be said.</strong> The corpus sometimes sets $c = \hbar = 1$ for a numerical exercise, and says so. Esp 018 notes that a numerical test was run in those units, which is why a discrepancy there is not a discrepancy in the physics. Any Charon article that quotes a natural-unit number must say that it is one, and must restore the units before comparing with anything measured.</p>
+<h3 id="the-elementary-length-and-the-quantum-volume">The elementary length and the quantum volume</h3>
+<p>Two constants generate most of the corpus's numbers, and they are stated here with their relations.</p>
+<p>The <strong>elementary length</strong> $l_0$ is the corpus's cut-off for the divergences of a point charge, used in the manner of the older literature: the field of a point charge is taken to be regularised for $r \geq l_0$. The corpus identifies it with a hadronic radius, $l_0 = R_H$.</p>
+<p>The <strong>quantum volume</strong> $\Omega_0$ is the sphere of radius $l_0$,</p>
+<p>$$\Omega_0 = \tfrac{4}{3}\pi l_0^{3}.$$</p>
+<p>The <strong>leptonic constant</strong> $\xi$ is defined by the corpus at Esp (49), and it is the coupling that turns a density into a curvature:</p>
+<p>$$\xi = \frac{\Omega_0 c}{\hbar}.$$</p>
+<p>Three derived constants follow in the lepton model: the two integration constants $\alpha$ and $\beta$, and the fundamental period $T_0$ of the proper density at a point, Esp (132),</p>
+<p>$$T_0 = \frac{nh}{\Omega_0 c^{2} d}.$$</p>
+<p>$T_0$ depends on the local density $d$ through that formula, so the corpus's Axiome 7 — that observable extended particles resonate at a common own-pulsation $\omega_0$ — is a <strong>further postulate and not a consequence of (132)</strong>. The series must keep that distinction, because it is the reason the charge is the same for every particle.</p>
+<p><strong>A numerical inconsistency that must be recorded.</strong> The four quotients $l_0$, $\Omega_0$, $\xi$ and the identity $\Omega_0 = \tfrac{4}{3}\pi l_0^{3}$ are not all satisfied by the numbers the corpus prints. Part 6 gives the table; the discrepancy is between $2\%$ and $7\%$ depending on which three of the four are taken as primary. The series's rule is stated there.</p>
+<h2 id="part-2-the-symbol-dictionary">Part 2 — The symbol dictionary</h2>
+<p>The corpus's symbols are collected here by family. Each entry gives the symbol, what it means, its type, and the equation or section where the corpus defines it. Where the series adds a qualifier to the corpus's symbol, the rule is given in Part 5.</p>
+<h3 id="geometric-and-field-quantities">Geometric and field quantities</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+<th>type</th>
+<th>source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho$</td>
+<td>proper density of the real sheet at a point</td>
+<td>scalar field, g cm$^{-3}$</td>
+<td>RC ch. II; Esp (47)</td>
+</tr>
+<tr>
+<td>$u^\alpha$</td>
+<td>unit four-velocity of the proper frame at $M$</td>
+<td>four-vector</td>
+<td>Esp (50)</td>
+</tr>
+<tr>
+<td>$V_{\alpha\beta}$</td>
+<td>$u_\alpha u_\beta$, the rank-2 object the corpus builds from $u$</td>
+<td>tensor</td>
+<td>Esp (50)</td>
+</tr>
+<tr>
+<td>$T_{\alpha\beta}$</td>
+<td>the "physical tensor", $\xi^{2}\rho^{2}u_\alpha u_\beta$; <strong>not</strong> an energy–momentum tensor</td>
+<td>tensor</td>
+<td>RC (4-2); Esp (334)</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>Riemannian scalar curvature of the complex space</td>
+<td>scalar, cm$^{-2}$</td>
+<td>Esp (53)</td>
+</tr>
+<tr>
+<td>$G_{\alpha\beta}$, $G$</td>
+<td>metric of the real sheet and its determinant</td>
+<td>tensor, scalar</td>
+<td>RC ch. II</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>cosmological constant, named by the curvature law and not fixed by it</td>
+<td>constant, cm$^{-2}$</td>
+<td>Esp (55); RC (3-45)</td>
+</tr>
+<tr>
+<td>$\xi$</td>
+<td>leptonic constant, $\Omega_0 c/\hbar$</td>
+<td>constant, cgs</td>
+<td>Esp (49)</td>
+</tr>
+<tr>
+<td>$\Omega_0$</td>
+<td>quantum volume, $\tfrac{4}{3}\pi l_0^{3}$</td>
+<td>constant, cm$^{3}$</td>
+<td>Esp (50)</td>
+</tr>
+<tr>
+<td>$l_0$</td>
+<td>elementary length; identified with the hadronic radius $R_H$</td>
+<td>constant, cm</td>
+<td>Esp (49)</td>
+</tr>
+<tr>
+<td>$U$</td>
+<td>action density; $\bar U$ its real part</td>
+<td>scalar, erg s cm$^{-3}$</td>
+<td>Esp (29)</td>
+</tr>
+<tr>
+<td>$\Sigma$</td>
+<td>the oscillator at each point $P$</td>
+<td>object</td>
+<td>RC (2-71)</td>
+</tr>
+<tr>
+<td>$\psi$</td>
+<td>the corpus's phase wave associated with $\Sigma$</td>
+<td>field</td>
+<td>RC ch. II</td>
+</tr>
+<tr>
+<td>$M$, $M'$</td>
+<td>the real point and its imaginary image on the boundary $\Gamma$</td>
+<td>objects</td>
+<td>Esp Annexe 6</td>
+</tr>
+<tr>
+<td>$\Gamma$</td>
+<td>the boundary of a particle, where the proper density falls to zero</td>
+<td>surface</td>
+<td>RC ch. IV</td>
+</tr>
+<tr>
+<td>$R_T$, $r_T$</td>
+<td>the radius of the boundary</td>
+<td>length, cm</td>
+<td>RC ch. IV</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>the corpus's "pulsation propre" of a hadron, global and $r$-independent</td>
+<td>angular frequency, s$^{-1}$</td>
+<td>Esp (348)</td>
+</tr>
+<tr>
+<td>$T_0$</td>
+<td>fundamental period of the proper density at a point</td>
+<td>time, s</td>
+<td>Esp (132)</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="leptonic-constants">Leptonic constants</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+<th>value</th>
+<th>source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\alpha$</td>
+<td>first lepton-model integration constant</td>
+<td>$-1{,}46\times10^{-25}$ g</td>
+<td>RC (3-68)</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>second lepton-model integration constant</td>
+<td>$-1{,}74\times10^{-39}$ g cm</td>
+<td>RC (3-68)</td>
+</tr>
+<tr>
+<td>$R_0$</td>
+<td>éon's minimum radius</td>
+<td>$8{,}01\times10^{-15}$ cm</td>
+<td>RC (3-72)</td>
+</tr>
+<tr>
+<td>$R_{\max}$</td>
+<td>éon's maximum radius</td>
+<td>$4{,}82\times10^{-14}$ cm</td>
+<td>RC (3-72)</td>
+</tr>
+<tr>
+<td>$T_0$ (lepton)</td>
+<td>lepton-model period, $2h/(c^{2}(m_\tau - m_\mu))$</td>
+<td>$4{,}93\times10^{-24}$ s</td>
+<td>RC (3-68)</td>
+</tr>
+<tr>
+<td>$l$</td>
+<td>neutrino orbit radius inside the éon, $1{,}272\,R$</td>
+<td>length</td>
+<td>RC §3.2</td>
+</tr>
+<tr>
+<td>$S$, $P$</td>
+<td>the spin and pulse actions of a point</td>
+<td>action, erg s</td>
+<td>Esp (111)</td>
+</tr>
+<tr>
+<td>$k_S$, $k_P$</td>
+<td>relativistic spin and pulse coefficients; L15 sets $k_S = k_P$</td>
+<td>scalars</td>
+<td>Système L</td>
+</tr>
+<tr>
+<td>$n$ (ladder)</td>
+<td>lepton index: electron $0$, muon $1$, tau $2$</td>
+<td>integer</td>
+<td>Esp (219)</td>
+</tr>
+<tr>
+<td>$n$ (action)</td>
+<td>action quantum number of $\pm nh$</td>
+<td>non-zero integer</td>
+<td>Esp Axiome 3</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="hadronic-quantities">Hadronic quantities</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+<th>value</th>
+<th>source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$d_0$</td>
+<td>hadron central density</td>
+<td>$5{,}5\times10^{17}$ g cm$^{-3}$ (Esp)</td>
+<td>Esp §6.1.2</td>
+</tr>
+<tr>
+<td>$\rho_H$, $\rho_{0H}$</td>
+<td>the same quantity as RC prints it</td>
+<td>$5{,}81\times10^{17}$ g cm$^{-3}$</td>
+<td>RC (3-78)</td>
+</tr>
+<tr>
+<td>$d_c$</td>
+<td>cosmic density, the amplitude the boundary condition sets</td>
+<td>$\simeq7\times10^{-32}$ g cm$^{-3}$</td>
+<td>Esp §10.1</td>
+</tr>
+<tr>
+<td>$d_R$</td>
+<td>density at the boundary, $d_R = 0$</td>
+<td>—</td>
+<td>Esp §6.1.2</td>
+</tr>
+<tr>
+<td>$M_E$</td>
+<td>hadron mass from the System $H$</td>
+<td>g</td>
+<td>Esp (360)</td>
+</tr>
+<tr>
+<td>$R_E$</td>
+<td>hadron radius</td>
+<td>cm</td>
+<td>Esp §6.1.2</td>
+</tr>
+<tr>
+<td>$\omega_0$</td>
+<td>the common own-pulsation of observable extended particles</td>
+<td>$1{,}28\times10^{24}$ s$^{-1}$</td>
+<td>Esp Axiome 7</td>
+</tr>
+<tr>
+<td>$\delta M$, $\Delta M$</td>
+<td>gravitational-energy defect and spin-plus-pulse kinetic-energy term</td>
+<td>g</td>
+<td>Esp §6.1.1</td>
+</tr>
+<tr>
+<td>$Z_{\max}$</td>
+<td>maximum hadronic charge number</td>
+<td>$5{,}438$</td>
+<td>Esp Annexe 2</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="cosmological-quantities">Cosmological quantities</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+<th>source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tau$</td>
+<td>universal age of the universe</td>
+<td>Esp Axiome 6</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>temperature of the enclosed radiation</td>
+<td>RC ch. III</td>
+</tr>
+<tr>
+<td>$D_E$</td>
+<td>blackbody energy density inside an éon</td>
+<td>RC (3-80)</td>
+</tr>
+<tr>
+<td>$a$</td>
+<td>radiation constant, $D_E = a\theta^{4}$</td>
+<td>RC (3-80)</td>
+</tr>
+<tr>
+<td>$R(\tau)$</td>
+<td>spatial radius of the imaginary universe</td>
+<td>RC ch. III</td>
+</tr>
+<tr>
+<td>$\dot G/G$</td>
+<td>secular variation of the gravitational constant</td>
+<td>RC ch. V</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="part-3-the-vocabulary">Part 3 — The vocabulary</h2>
+<p>The corpus's three technical nouns are its own coinages or borrowings with changed meanings, and an article that uses them loosely will be read as claiming something the corpus does not claim. Each is defined here, with what it is and what it is not.</p>
+<h3 id="preon-eon-holon">préon, éon, holon</h3>
+<p><strong>préon</strong> — a <strong>neutral</strong> structure in the imaginary sheet, one for each value of the real density $\rho$, and therefore a continuous infinity of them. A préon is not a particle in the compositeness sense: it has no fixed species list, no charge, and no independent existence at a point. The word is a borrowing (Pati–Salam 1974, Harari 1979), and the borrowed object is different — those préons are a small number of species in <strong>real</strong> space. The series keeps the corpus's word only where the corpus's object is meant, and says "compositeness préon" where the literature's object is meant.</p>
+<p><strong>éon</strong> — a <strong>charged</strong> structure in the imaginary sheet: a closed, homogeneous, pulsating micro-universe containing one neutrino on a closed quantised orbit, one for each allowed value of the real density, and therefore a discrete subset of the préons. The word is borrowed from Valentinian gnosticism, where an aeon is an emanation; the borrowing is deliberate and the corpus's use is physical. An éon is not an electron, and the corpus's identification of the stable charged lepton with an éon is a philosophical claim tagged <strong>[PHIL]</strong> in the inventory, not a physical one.</p>
+<p><strong>holon</strong> — a <strong>stationary microstructure in the real sheet</strong>: a compact, approximately spherical region whose scalar curvature (the square of the density) decreases from a maximum at the centre to zero at the periphery, and which has a radial pulsation and a spin each quantised at half-integral action. Holons are the corpus's hadronic constituents. The word is Koestler's (<em>The Ghost in the Machine</em>, 1967), where it means a whole that is also part of a larger whole; the corpus's object is a curvature lump, and the two meanings must not be run together.</p>
+<p><strong>The rule.</strong> The three words are kept because they name three distinct objects of the corpus, and they are translated to the framework's language only where the inventory's dictionary (the register's §2) licenses it. They are never used as synonyms for "particle", "quark" and "gluon"; where the corpus writes "quark" for a holonic layer and "gluon" for a préon, the article says so explicitly, because those are the corpus's borrowings and not the literature's objects.</p>
+<h3 id="the-word-borrowings-and-their-consequence-for-citations">The word borrowings and their consequence for citations</h3>
+<p>Four of the corpus's words are borrowings from other fields with changed objects: <strong>holon</strong> (Koestler), <strong>éon</strong> (gnosticism), <strong>préon</strong> (the 1970s compositeness literature), and <strong>quark/gluon</strong> (Gell-Mann's coinages). The consequence is a citation rule, and it is a rule about honesty rather than style.</p>
+<p><strong>A Charon article that uses one of these words must say whose object it means.</strong> The reason is priority. If an article writes "Charon's préons" without qualification, a reader may take the corpus to be a preon-compositeness model, which it is not, and a reader may take the corpus to have contributed to a literature it did not contribute to. The inventory records the borrowings in §10.10 and the series follows it: the word is defined at first use, the borrowed literature is named, and the corpus's different object is stated. That is also why this series does not let "quark" stand for a holonic layer without a gloss.</p>
+<h2 id="part-4-the-bridge-to-the-biquaternion-conventions">Part 4 — The bridge to the biquaternion conventions</h2>
+<h3 id="what-maps">What maps</h3>
+<p>The dictionary between the two frameworks is the register's §2, and this article does not duplicate it. What belongs here is the part that is <strong>notation</strong>, because it is the part a writer needs.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Charon</th>
+<th>biquaternion framework</th>
+<th>note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>complex Riemannian space, real + imaginary</td>
+<td>biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>the algebra is the complexification; this much is common ground</td>
+</tr>
+<tr>
+<td>the <em>Réel</em> sheet</td>
+<td>a real form of $\mathbb{B}$: $\mathbb{M}_-$ or $\mathbb{M}_+$</td>
+<td><strong>which one is the open question of S2</strong></td>
+</tr>
+<tr>
+<td>the <em>Imaginaire</em> sheet</td>
+<td>the complementary real form</td>
+<td>subject to the same decision</td>
+</tr>
+<tr>
+<td>real coordinate $x^\mu$</td>
+<td>the coefficients $q_\mu$</td>
+<td>real part of $Q_\mu$</td>
+</tr>
+<tr>
+<td>imaginary coordinate (dotted)</td>
+<td>the coefficients $q'_\mu$</td>
+<td>imaginary part of $Q_\mu$, the prime carrying the $i$</td>
+</tr>
+<tr>
+<td>one complexification, $x + ix'$</td>
+<td>the split $Q_\mu = q_\mu + iq'_\mu$ into six subspaces</td>
+<td>the framework subdivides further than the corpus does</td>
+</tr>
+<tr>
+<td>index $\alpha, \beta$ over four values</td>
+<td>$\mu, \nu$ over four values</td>
+<td>the framework index is Greek throughout</td>
+</tr>
+<tr>
+<td>$T_{\alpha\beta}$, $\rho$, $\xi$</td>
+<td>no counterpart; the framework has no $\rho^{2}$ source</td>
+<td>this is a corpus object, not a dictionary entry</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="what-does-not-map">What does not map</h3>
+<p>Three asymmetries must be stated, because each has cost a reader an error.</p>
+<p><strong>The corpus's complexification is coarser.</strong> Charon splits his space into two sheets and stops. The biquaternion algebra's eight real parameters are grouped into <strong>six</strong> subspaces by four involutions, and the corpus's real/imaginary split corresponds to a single one of those involutions, complex conjugation, read on its anti-fixed space. A reader who takes the corpus's two sheets to be the framework's $\mathbb{M}_\pm$ is making a claim that has to be argued, and the
+argument is S2's, not a notation matter — it is now made in S2 Part 1 ("The corpus's mathematical apparatus") and Part 2, and the result is
+that <strong>neither sheet is a sector</strong>: the corpus's partition is the Prime Convention, transversal to $\mathbb{M}_\pm$.</p>
+<p><strong>The corpus has no involution lattice.</strong> Quaternion conjugation, Hermitian conjugation and the anti-Hermitian conjugation $\flat$ have no counterpart in the corpus, and no Charon equation should be given one by translation. The framework's own foundational articles use them; the corpus does not need them and does not have them.</p>
+<p><strong>The corpus's real sheet is Riemannian.</strong> The framework's material sector is the one that carries the Minkowski form when written with $ict$. S2 resolves this: the corpus's <em>Réel</em> is <strong>not</strong> itself a sector, but the material reading is right for its spatial part, so the framework supplies the Lorentzian structure the corpus declines to assume — a
+<strong>result of the bridge and not a restatement of the corpus</strong>. An article that reports it must say which of the two it is doing.</p>
+<h3 id="the-rule-for-a-new-symbol">The rule for a new symbol</h3>
+<p>Where a quantity exists in both frameworks and the two notations differ, the series uses the <strong>framework's</strong> symbol and records the corpus's in the article's own notation table. Where a quantity exists only in the corpus, the series uses the corpus's symbol and does not translate it into framework notation. The reason is that the framework is the series' own language and the corpus is its subject: the subject's symbols are quoted, the language's symbols are used.</p>
+<h2 id="part-5-hazards">Part 5 — Hazards</h2>
+<p>These are the places where the corpus's notation is ambiguous or inconsistent, or where this series has already found an error. Each hazard gives the problem, the evidence, and the rule. They are collected here because every Charon article depends on them, and because a hazard discovered once should not be rediscovered per article.</p>
+<h3 id="hazard-1-the-axiom-numbers-are-not-stable">Hazard 1 — The axiom numbers are not stable</h3>
+<p><strong>Problem.</strong> The corpus numbers its axioms, and the numbering is not the same in the leptonic part and in the cosmological part. The same number is used for two different axioms, and one axiom is given two numbers. The biquaternion series has no axioms and cannot adjudicate; a Charon article that cites "Axiom 3" without qualification cites an ambiguity.</p>
+<p><strong>Evidence, from the corpus.</strong> Axiome 1 is the vanishing divergence of the physical tensor, Esp 015; Axiome 2 is the invariance of the action, Esp 015; Axiome 3 is the quantisation of the action at $\pm nh$, Esp 024, and is the same statement RC §IV.1 names "Axiome de quantification de l'espace-temps" without a number; Axiome 4 is the equipartition of that action between spin and pulse, Esp 026; Axiome 6 is the universality of the age $\tau$, Esp 078; Axiome 7 is the resonance condition $\omega_0 = 1{,}28\times10^{24}$ s$^{-1}$ that makes an extended particle observable, Esp 087. Against that list, the cosmological chapter prints a <strong>different</strong> Axiome 3, that the total energy of the universe is identically zero, Esp 067; and the same chapter calls that same statement "axiome 5" at a later page. Axiome 5 is not otherwise printed in <em>L'Esprit</em> at all. One further muddle is in the corpus: Esp 087 says that "l'axiome 6" generalises the resonance condition to all extended particles, while the printed Axiome 6 is the universal-age statement and the resonance condition is Axiome 7.</p>
+<p><strong>Rule adopted by the series.</strong> <strong>Never cite an axiom by number alone.</strong> Cite it by content and source: "the quantisation axiom (Esp 024; RC §IV.1)", "the equipartition (Esp 026)", "the zero-total-energy axiom (Esp 067, printed there as axiome 3 and as axiome 5)", "the universal-age axiom (Esp 078)", "the resonance axiom (Esp 087)". Where an article has already used a bare number — S11 uses "Axiome 3" for the quantisation and "Axiome 4" for the equipartition — the number is correct for the leptonic chapters and the citation should carry the source with it. A corrected numbering is a job for the input/output ledger (S34), not for this article, because the ledger is the instrument that can hold one row per axiom statement.</p>
+<h3 id="hazard-2-math179-and-math180-both-mean-density">Hazard 2 — $\rho$ and $d$ both mean density</h3>
+<p><strong>Problem.</strong> The corpus writes the proper density as $\rho$ in the field equation and as $d$ in the hadron chapter, and it writes $\rho_n$ for a third thing that is not a density at all.</p>
+<p><strong>Evidence.</strong> $\rho$ is the proper density of the real sheet in $R = \xi^{2}\rho^{2} + 4\Lambda$, Esp (55). $d$ is the local density in the hadron model, $d_0$ at the centre, $d_c$ cosmic and $d_R = 0$ at the boundary, Esp §6.1.2 and §10.1. And $\rho_n = m_n/\Omega_0$ is the corpus's "density" of the $n$-th charged lepton, RC (3-77), which is the ratio of a mass to the fixed quantum volume and <strong>not</strong> a density — the subject of the post-mortem article P21, which shows the table of seven values to be the mass table divided by a constant.</p>
+<p><strong>Rule adopted by the series.</strong> Use $\rho$ for the field-equation density and only for that. Use $d_0$, $d_c$, $d_R$ when quoting the hadron chapter, and never silently replace them by $\rho$. <strong>Never write $\rho_H$ as a physical density</strong>: it is the mis-defined quantity of P21, and an article that needs to quote it says so. A quantity that has a density's dimensions is not necessarily a density, and the corpus supplies the counter-example.</p>
+<h3 id="hazard-3-math198-is-two-different-integers">Hazard 3 — $n$ is two different integers</h3>
+<p><strong>Problem.</strong> The corpus uses $n$ for the action quantum number of $\pm nh$ and for the lepton ladder index, and the two run differently.</p>
+<p><strong>Evidence.</strong> In the quantisation axiom, $n$ is the non-zero integer of $\pm nh$, and the parity rule puts the charged leptons on odd $n$, Esp 024 and Axiome 4. In the lepton model, $n$ is the ladder index: electron $0$, muon $1$, tau $2$, Esp 052. So the electron is $n = 0$ as a ladder index and $n = 1$ as an action number, and a table that mixes them is wrong by a factor of two.</p>
+<p><strong>Rule adopted by the series.</strong> Write $n$ for the ladder index, as the corpus's leptonic chapters do, and $n_{\text{axiom}}$ for the action quantum number, with the relation $n_{\text{axiom}} = 2n + 1$ for charged leptons. S11 §3.2 states the relation and this article fixes the symbol. A Charon article that needs the action number must write the subscript.</p>
+<h3 id="hazard-4-math213-math214-and-the-fitted-period">Hazard 4 — $T$, $T_0$, and the fitted period</h3>
+<p><strong>Problem.</strong> $T_0$ is the fundamental period of the proper density at a point, defined by (132) as $nh/(\Omega_0c^{2}d)$. The lepton model then fits a <strong>period</strong> to the measured $\tau - \mu$ mass difference and calls it $T$. The two are different objects with the same letter and the same symbol shape.</p>
+<p><strong>Evidence.</strong> Esp (132) defines $T_0$ at a point and it depends on the local density. RC (3-68) and the lepton mass equations use the fitted period, $T_0 = 2h/(c^{2}(m_\tau - m_\mu))$ in the corpus's own lepton-model notation, which is a single fitted number for the whole model. S11 §3.1 and §4.1 use both.</p>
+<p><strong>Rule adopted by the series.</strong> Write $T_0$ for the point quantity of (132) and $T_{\text{lep}}$, or "the fitted period", for the lepton-model period, and say which is meant at the first use in every article. The distinction matters for the mass ladder, where the factor of two that Axiome 4 supplies can be traded into $T_{\text{lep}}$ with the fit unchanged — which is why no lepton-mass measurement can test the equipartition (S11 §4.1).</p>
+<h3 id="hazard-5-the-two-books-use-two-different-math224-and-math225">Hazard 5 — The two books use two different $l_0$ and $\xi$</h3>
+<p><strong>Problem.</strong> The corpus defines $\Omega_0 = \tfrac{4}{3}\pi l_0^{3}$ and $\xi = \Omega_0c/\hbar$, and then prints numerical
+values for $l_0$, $\Omega_0$ and $\xi$. The values in the 1983 book and in the 1987 book are <strong>not the same</strong>, and an
+article that takes one value from each creates an apparent inconsistency of a few per cent in a published table.</p>
+<p><strong>Evidence, verified by recomputation.</strong> The discrepancy is <strong>between the two books</strong>, and each book is internally
+consistent to its own rounding.</p>
+<p><em>La Relativité complexe</em> prints a complete trio at RC (3-70), (3-70-a) and (3-71): $l_0 = R_H = 1{,}8\times10^{-14}$ cm,
+$\Omega_0 = \tfrac{4}{3}\pi l_0^{3} = 2{,}44\times10^{-41}$ cm$^3$, and $\xi = \Omega_0c/\hbar = 6{,}8\times10^{-4}$ cgs.
+Recomputed: $\tfrac{4}{3}\pi(1{,}8\times10^{-14})^3 = 2{,}4429\times10^{-41}$ cm$^3$, $+0{,}1\%$ on the printed $\Omega_0$
+— agreement. The same $l_0$ gives $\xi = 6{,}945\times10^{-4}$, $+2{,}1\%$ on the printed $6{,}8\times10^{-4}$; the printed
+value is $\Omega_0c/\hbar$ taken with the <strong>rounded</strong> $2{,}4\times10^{-41}$, which gives $6{,}82\times10^{-4}$, that is
+$6{,}8\times10^{-4}$ at two significant figures. Within its own two-figure bookkeeping RC's trio closes.</p>
+<p><em>L'Esprit</em> works with the pair $l_0 = 1{,}76\times10^{-14}$ cm and $\xi = 6{,}467\times10^{-4}$ cgs, printed together at
+Esp 057 with the combined relation $\xi = \tfrac{4}{3}\pi l_0^{3}c/\hbar$. Recomputed: $l_0 = 1{,}76\times10^{-14}$ gives
+$\xi = 6{,}492\times10^{-4}$, $+0{,}4\%$ on the printed value; and the printed $\xi = 6{,}467\times10^{-4}$ implies
+$l_0 = 1{,}7577\times10^{-14}$ cm, which is what the table rounds to $1{,}76\times10^{-14}$. Within its own rounding Esp's
+pair closes, and Esp prints <strong>no numerical</strong> $\Omega_0$.</p>
+<p><strong>The cross-book difference, which is the hazard.</strong> RC's $l_0 = 1{,}8\times10^{-14}$ cm is $2{,}3\%$ above Esp's; RC's
+$\xi = 6{,}8\times10^{-4}$ is $5{,}1\%$ above Esp's $6{,}467\times10^{-4}$; and RC's printed $\Omega_0 = 2{,}44\times10^{-41}$
+cm$^3$ is $6{,}4\%$ above $\tfrac{4}{3}\pi(1{,}76\times10^{-14})^3 = 2{,}284\times10^{-41}$ cm$^3$. A table built by taking
+$l_0$ from one book and $\Omega_0$ from the other is therefore off by up to $6{,}4\%$, while each book on its own is off by
+at most $0{,}4\%$ (or $2{,}1\%$ for RC's $\xi$, which is two-figure rounding slack).</p>
+<p><strong>This hazard was corrected in the course of the series.</strong> An earlier draft called the corpus's constants "mutually
+inconsistent at the $2$–$7\%$ level", as though one book held all the values at once. It does not: the two books hold two
+sets, and the apparent inconsistency is created by mixing them. The corrected statement is the one above, and it is the one
+the ledger (S34) uses. <em>(A superseded paragraph reproducing the mixing reading was removed from this hazard when it was
+corrected; the arithmetic of the superseded reading is preserved in S34's context, where the correction is recorded.)</em></p>
+<p><strong>Rule adopted by the series.</strong> <strong>One book's set at a time, and say which.</strong> The series' default is <em>L'Esprit</em>'s working
+pair — $l_0 = 1{,}76\times10^{-14}$ cm with $\xi = 6{,}467\times10^{-4}$, and $\Omega_0$ computed as
+$\tfrac{4}{3}\pi l_0^{3} = 2{,}284\times10^{-41}$ cm$^3$ — because it is the pair the lepton model uses and the pair the
+constants ledger quotes. An article that prefers RC's trio must take <strong>all three</strong> of RC's values
+($1{,}8\times10^{-14}$, $2{,}44\times10^{-41}$, $6{,}8\times10^{-4}$) and say so. What no article may do is mix the two
+books, which is how the apparent $2$–$7\%$ inconsistency arose.</p>
+<h3 id="hazard-6-math285-and-math286">Hazard 6 — $h$ and $\hbar$</h3>
+<p><strong>Problem.</strong> The corpus uses $h$ for Planck's constant and $\hbar$ for its reduced form, and at least one printed relation between them is self-contradictory.</p>
+<p><strong>Evidence.</strong> Esp (49 bis) prints $\xi = \Omega_0c/\hbar$ followed by the parenthetical relation $(\hbar = 2\pi\hbar)$, which cannot be read as written since it makes $\hbar$ vanish. The intended relation is the standard $h = 2\pi\hbar$, and RC prints exactly that — in the quantisation axiom, RC
+§IV.1, and again at RC (3-23), $\xi = \Omega_0c/\hbar$ with $(h = 2\pi\hbar)$. <strong>This is the book's own slip and not a
+transcription error:</strong> it appears twice in <em>L'Esprit</em>, at Esp §9 in the introduction and again at Esp (49 bis), in both
+the scan transcription and the <code>.tex</code>. Nothing is flagged for repair; the series simply uses $h = 2\pi\hbar$ and notes
+the corpus's slip.</p>
+<p><strong>Rule adopted by the series.</strong> Write $h$ for Planck's constant and $\hbar = h/2\pi$ for the reduced constant, never the reverse, and where a corpus equation uses one for the other, restore it and record the change. The quantisation axiom's action $\pm nh$ is in units of $h$, while the spin and pulse are $\pm n\hbar/2$, so the two constants are both needed and the reader must be able to tell them apart at sight.</p>
+<h3 id="hazard-7-math301-is-the-dalembertian-not-its-square">Hazard 7 — $\Box^{2}$ is the d'Alembertian, not its square</h3>
+<p><strong>Problem.</strong> The corpus writes the wave operator as $\Box^{2}$ — with a superscript — and a reader who takes the notation at face value reads a <em>fourth-order</em> operator, which changes the physics.</p>
+<p><strong>Evidence.</strong> The corpus defines the operator <strong>three times</strong> and unambiguously. RC 022 prints $\Box^{2} = \eta^{\alpha\beta}\partial_{\alpha}\partial_{\beta}$ (with $\partial_{\alpha} = \partial/\partial y^{\alpha}$); RC 069 prints $\Box^{2} = \frac{1}{c^{2}}\frac{\partial^{2}}{\partial t^{2}} - \nabla^{2}$; and Esp 015's (30) prints $\Box^{2} = \eta^{\alpha\beta}(\partial/\partial x^{\alpha})^{2} = \eta^{\alpha\beta}\partial^{2}_{\alpha\beta}$. <strong>All three are the ordinary second-order d'Alembertian</strong>; the superscript is part of the corpus's name for the operator. The equation of the oscillator, RC (2-74), is therefore Klein–Gordon — $\Box U + (M_{0}^{2}c^{2}/\hbar^{2})U = 0$ — and the corpus is not writing a fourth-order equation.</p>
+<p><strong>A second trap inside the same definition, and it is a convention difference between the books rather than a defect.</strong> The two books take <strong>opposite overall signs</strong> for the normal-form metric: RC (2-7) normalises $g_{\alpha\beta}$ to $\eta_{\alpha\beta} = \mathrm{diag}(-1,-1,-1,+1)$, while Esp 015's (30) uses $\eta^{\alpha\beta} = \mathrm{diag}(1,1,1,-1)$. The overall sign of $\eta$ changes neither the order of the operator nor the content of a Lorentz-invariant equation once the same convention is used throughout, <strong>but it does mean the two printings must not be compared term by term.</strong> A reader who finds $+\eta^{\alpha\beta}\partial^{2}_{\alpha\beta}$ in one book and $-\eta^{\alpha\beta}\partial_{\alpha}\partial_{\beta}$ in the other has found a convention, not a contradiction. As with Hazard 5, the rule is <em>one book's set at a time, and say which</em>.</p>
+<p><strong>The nearby equation has its own migration, filed separately as Hazard 9.</strong> The (2-8)/(2-13)/(2-71) series prints the same first term three ways, and Esp 015's (30) settles it.</p>
+<p><strong>Rule adopted by the series.</strong> Read $\Box^{2}$ as $\Box$ and never as $\Box\Box$. Where the operator is introduced in an article, restate the corpus's own definition. The reading matters in one concrete way: a genuine fourth-order operator would give the dispersion relation $(k^{2} - \omega^{2}/c^{2})^{2} = M_{0}^{2}c^{2}/\hbar^{2}$ with a spurious sign branch, and would make the corpus's "Klein–Gordon" claim false. Under the corpus's own definition there is no contradiction.</p>
+<h3 id="hazard-8-the-fusion-component-counts-math318">Hazard 8 — the fusion component count's $n$</h3>
+<p><strong>Problem.</strong> The corpus's fusion field's number of components grows as a power of 16, and the corpus prints the count under <strong>three different conventions for $n$</strong>, which are three different numbers.</p>
+<p><strong>Evidence.</strong> RC 015 prints $16^{2n}$ with the list <em>"16 conditions initiales pour $n = 1/2$, 256 pour $n = 2$, 4,3 milliards pour $n = 4$"</em> — a list that silently changes the meaning of $n$ between its first and second entries. RC 036 prints $16^{2^{n}}$ for a state of action $2^{n}h$. Esp 028 prints the count as <em>"16 composantes pour $n = 1$ …, 256 composantes pour $n = 2$"</em>, i.e. $16^{n}$ with $n$ the action number. <strong>The physically correct rule is the third</strong>: each fusion step composes a four-component Dirac state with the accumulated one, so the count is $(4)^{2n} = 16^{n}$ for total action $nh$ — $16$ at $n = 1$, $256$ at $n = 2$, $65536$ at $n = 4$, $4{,}29\times10^{9}$ at $n = 8$. <strong>So "4.3 billion components" is $n = 8$ under the correct rule and $n = 4$ under RC 015's, and RC 036's $16^{2^{n}}$ is a third number again ($1{,}8\times10^{19}$ at $n = 4$).</strong></p>
+<p><strong>Rule adopted by the series.</strong> Never cite a component count without its $n$ <strong>and</strong> its rule. Write the count as $16^{n}$ with $n$ the action number in units of $h$, and where the corpus's own figure is quoted, give the convention with it. This is a variant of Hazard 3 and the reason is the same: $n$ is overloaded, and an unqualified count cannot be checked.</p>
+<h3 id="hazard-9-the-simplest-equation-is-printed-four-times-and-only-one-reading-closes">Hazard 9 — The "simplest equation" is printed four times, and only one reading closes</h3>
+<p><strong>Problem.</strong> The equation the corpus selects for the action density $U$ — <em>"l'équation la plus simple"</em> — is printed in both books with its first coefficient term written in different places, so the printed equation is <strong>quadratic in $U$ in one printing and linear in it in another</strong>. A derivation that reads the quadratic printing does not reach the equation the corpus then uses.</p>
+<p><strong>Evidence, from the prints.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>printing</th>
+<th>as printed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Esp 015 (30)</strong></td>
+<td>$\Box^{2}U + C_{1}U + C_{2}U^{2} + \cdots = 0$</td>
+</tr>
+<tr>
+<td><strong>RC 022 (2-8)</strong></td>
+<td>$\Box^{2}U + C_{1}U^{2} + \cdots + C_{n}U^{n} = 0$</td>
+</tr>
+<tr>
+<td><strong>RC 022 (2-13)</strong></td>
+<td>$\Box^{2}U + (R - 4\Lambda)U = 0$</td>
+</tr>
+<tr>
+<td><strong>RC 032 (2-71)</strong></td>
+<td>$\Box^{2}U^{2} + (R - 4\Lambda)U = \Box^{2}U + (M_{0}^{2}c^{2}/\hbar^{2})U = 0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The four readings and the rule adopted by the series.</strong> Read the series as</p>
+<p>$$\Box^{2}U + C_{1}U + C_{2}U^{2} + \cdots = 0 .$$</p>
+<p><strong>Four independent reasons, and they agree.</strong></p>
+<ol>
+<li><strong>The definition-page printing is linear.</strong> Esp (30) is where the corpus <em>introduces</em> the equation, and it prints $C_{1}U$ followed by $C_{2}U^{2}$ — a linear leading term with the nonlinearity starting at the second. <strong>RC 022's (2-8) is the same series with the first $U$ printed one term too high.</strong></li>
+<li><strong>The target form is linear.</strong> (2-13) is $\Box^{2}U + (R-4\Lambda)U = 0$, and (2-12) sets $C_{1} = R-4\Lambda$ with $C_{n} = 0$ for $n > 1$. Under the quadratic reading that leaves $\Box^{2}U + (R-4\Lambda)U^{2} = 0$, <strong>which is not (2-13)</strong> — and (2-13) is the form the corpus needs downstream, since (2-74) is Klein–Gordon and S15 verified that passage exactly.</li>
+<li><strong>The corpus's own dimensional remark excludes the nonlinear reading at every order.</strong> Esp (30) says of the coefficients: <em>"Les $C_1,\;C_2,\;\ldots$ sont des coefficients complexes constants. Notons encore que $C_n$ est homogène à une courbure scalaire ($L^{-2}$)"</em>; RC (2-8) says of $C_{1}$ that it <em>"possède les dimensions d'une courbure scalaire (inverse du carré d'une longueur)"</em>. <strong>Every coefficient is homogeneous to $L^{-2}$.</strong> But $\Box^{2}U$ has the dimensions of $U/L^{2}$, so a term $C_{n}U^{n}$ requires $C_{n}$ of dimensions $L^{-2}U^{1-n}$ — <strong>which is a curvature only for $n = 1$.</strong> The corpus's dimensional statement is therefore compatible with the linear leading term and with nothing else.</li>
+<li><strong>The fourth printing says so itself.</strong> RC (2-71) prints $\Box^{2}U^{2} + (R-4\Lambda)U$ <strong>equal to</strong> $\Box^{2}U + (M_{0}^{2}c^{2}/\hbar^{2})U$ in a single line. <strong>That equals sign is the corpus's own statement that $\Box^{2}U^{2}$ and $\Box^{2}U$ are the same object</strong> — which is true if and only if the 2 is a suprascript slip. And an exponent that appears in three different positions across four printings, and is equated away in one of them, is migrating in transcription and not in the corpus.</li>
+</ol>
+<p><strong>Rule adopted by the series.</strong> Never read (2-8) as nonlinear; write the series linear in $U$ and record the printing. The reason the distinction matters is not cosmetic: a nonlinear (2-8) breaks (2-12)→(2-13), and hence breaks the identification of (2-74) with Klein–Gordon, which is the step the corpus's whole quantum claim rests on. <strong>Full working in S14, which owns the exponent question.</strong></p>
+<p><strong>Two cross-book differences inside the same equation, recorded so the table above is not over-read.</strong> RC calls the $C_{n}$ <strong>real</strong> coefficients characterising the geometry at $P$; Esp calls them <strong>complex constants</strong>. And the two books use opposite overall signs for the normal-form metric (Hazard 7). <strong>Neither difference touches the exponent question</strong>, which is decidable from Esp (30) alone against RC (2-13); but an article that quotes numerical values of the $C_{n}$ must name its book, by Hazard 5's rule.</p>
+<p><strong>This is the same class as Hazard 7</strong> — the corpus's printed equations and its own definitions disagree, and <strong>the definition wins</strong>. It is <em>not</em> the class of Hazard 6, where the slip is the <em>corpus's own</em> (the twice-printed $(\hbar = 2\pi\hbar)$) and is not repaired. Here the slip is the transcription's, and the correct reading is the corpus's.</p>
+<h3 id="hazard-10-esp-039-prints-one-symbol-for-two-different-spaces">Hazard 10 — Esp 039 prints one symbol for two different spaces</h3>
+<p><strong>Problem.</strong> Esp 039 introduces <strong>two</strong> spaces in the same paragraph — an <em>entropic</em> space, defined by the normal hyperbolic metric of general relativity, and a <em>negentropic</em> space, built from it by multiplying the entropic basis vectors by $i = \sqrt{-1}$ — and then prints <strong>the same symbol $(\tilde r, \tilde t)$ for both</strong>, in every occurrence, in both <code>Esp/039.tex</code> and <code>Esp/039_improved.md</code>.</p>
+<p><strong>Evidence.</strong> §1.2's two characterising bullets both begin <em>"un espace $(\tilde r, \tilde t)$"</em>; §1.3 refers to the RGQ observer's frame as $(\tilde r, \tilde t)$ and, in the same sentence, to the space that frame ignores as $(\tilde r, \tilde t)$; and the sentence <em>"Puisqu'on ignore, dans le référentiel $(\tilde r, \tilde t)$, l'espace néguentropique $(\tilde r, \tilde t)$"</em> uses one symbol for a frame and for the space it is said to ignore. <strong>(The two spaces are the corpus's own clear distinction in prose; only the symbol has collapsed.)</strong></p>
+<p><strong>Why this is a transcription collapse and not a corpus slip.</strong> Four reasons, and the fourth is the decisive one. (i) The two spaces are built by <strong>different constructions</strong> — one metric against the same metric with the basis multiplied by $i$ — which is exactly the kind of difference a notation is introduced to record. (ii) The prose distinguishes them <strong>four times on one page</strong>, so the corpus was aware of the difference at the point of writing. (iii) The collapse is <strong>uniform</strong>: every occurrence is $\tilde r, \tilde t$, which is what an OCR pass produces when a diacritic or an overbar is illegible, and not what an author produces when he has just named two different things. (iv) <strong>The <code>.tex</code> and the <code>_improved.md</code> share the defect</strong>, so a second transcription pass over the same source does not settle it. <em>(It is not a hallucination: no text has been invented. It is a distinction that has been lost, which is why the file is a repair target under §13 and not a corruption under §15.)</em></p>
+<p><strong>Consequence for the series, and it is small.</strong> <strong>No physics in the corpus's argument depends on the symbol</strong>, because the two spaces are distinguished at every point by their metrics — which is why S4 can read the passage without resolving it. <strong>But no article may read the collapsed symbol as the corpus's own notation.</strong> An article that needs the two spaces names them $\mathcal{E}$ (entropic) and $\mathcal{N}$ (negentropic), states that the corpus prints one symbol for both, and says which occurrence it is quoting.</p>
+<p><strong>The proposed reading, flagged as a proposal and not a reading.</strong> On internal evidence, the RGQ observer's own frame is the <strong>entropic</strong> space, minimal and unqualified, and the space described in the same breath as "adjacent" and "hidden" is the <strong>negentropic</strong> one; so the likely original is <strong>untilded for the entropic space and tilded for the negentropic</strong> ($(r,t)$ against $(\tilde r, \tilde t)$). <strong>Recorded as a proposal. It requires the page image of Esp 039 to confirm, and no OCR engine is available in the working environment, so the item stays open and is filed in the register's repair list.</strong> Until it is resolved, every article quotes the symbol as printed and marks it.</p>
+<h2 id="part-6-numerical-constants">Part 6 — Numerical constants</h2>
+<p>Every value the corpus supplies, in cgs, with the recomputed figure where this article has checked it. The measured values are the standard 2020s ones, given for the comparisons the series makes.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>corpus value</th>
+<th>recomputed</th>
+<th>units</th>
+<th>source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$c$</td>
+<td>—</td>
+<td>$2{,}9979\times10^{10}$</td>
+<td>cm s$^{-1}$</td>
+<td>standard</td>
+</tr>
+<tr>
+<td>$h$</td>
+<td>—</td>
+<td>$6{,}6261\times10^{-27}$</td>
+<td>erg s</td>
+<td>standard</td>
+</tr>
+<tr>
+<td>$\hbar$</td>
+<td>—</td>
+<td>$1{,}0546\times10^{-27}$</td>
+<td>erg s</td>
+<td>standard</td>
+</tr>
+<tr>
+<td>$l_0$</td>
+<td>$1{,}76\times10^{-14}$ (Esp) / $1{,}8\times10^{-14}$ (RC)</td>
+<td>$1{,}7577\times10^{-14}$ from Esp's $\xi$</td>
+<td>cm</td>
+<td>Esp 057; RC (3-70)</td>
+</tr>
+<tr>
+<td>$\Omega_0$</td>
+<td>$2{,}44\times10^{-41}$ (RC)</td>
+<td>$2{,}284\times10^{-41}$ from Esp's $l_0$</td>
+<td>cm$^{3}$</td>
+<td>RC (3-70-a); Esp (50)</td>
+</tr>
+<tr>
+<td>$\xi$</td>
+<td>$6{,}467\times10^{-4}$ (Esp) / $6{,}8\times10^{-4}$ (RC)</td>
+<td>$6{,}49\times10^{-4}$ from Esp's $l_0$</td>
+<td>cgs</td>
+<td>Esp 057; RC (3-71)</td>
+</tr>
+<tr>
+<td>$R_0$</td>
+<td>$8{,}01\times10^{-15}$</td>
+<td>—</td>
+<td>cm</td>
+<td>RC (3-72)</td>
+</tr>
+<tr>
+<td>$R_{\max}$</td>
+<td>$4{,}82\times10^{-14}$</td>
+<td>—</td>
+<td>cm</td>
+<td>RC (3-72)</td>
+</tr>
+<tr>
+<td>$T_0$ (lepton)</td>
+<td>$4{,}93\times10^{-24}$</td>
+<td>$4{,}95\times10^{-24}$</td>
+<td>s</td>
+<td>RC (3-68)</td>
+</tr>
+<tr>
+<td>$\omega_0$</td>
+<td>$1{,}28\times10^{24}$</td>
+<td>—</td>
+<td>s$^{-1}$</td>
+<td>Esp Axiome 7</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>$-1{,}46\times10^{-25}$</td>
+<td>—</td>
+<td>g</td>
+<td>RC (3-68)</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>$-1{,}74\times10^{-39}$</td>
+<td>—</td>
+<td>g cm</td>
+<td>RC (3-68)</td>
+</tr>
+<tr>
+<td>$l/R$</td>
+<td>$1{,}272$</td>
+<td>$\sqrt{\varphi}$</td>
+<td>—</td>
+<td>RC (3-47-a)</td>
+</tr>
+<tr>
+<td>$m_e$</td>
+<td>$9{,}11\times10^{-28}$</td>
+<td>—</td>
+<td>g</td>
+<td>standard</td>
+</tr>
+<tr>
+<td>$m_\mu$</td>
+<td>$1{,}89\times10^{-25}$</td>
+<td>—</td>
+<td>g</td>
+<td>standard</td>
+</tr>
+<tr>
+<td>$m_\tau$</td>
+<td>$3{,}18\times10^{-24}$</td>
+<td>—</td>
+<td>g</td>
+<td>standard</td>
+</tr>
+<tr>
+<td>$m_\tau - m_\mu$</td>
+<td>$1{,}6712$ GeV</td>
+<td>$2{,}677\times10^{-3}$ erg</td>
+<td>erg</td>
+<td>standard</td>
+</tr>
+<tr>
+<td>$d_0$ (Esp)</td>
+<td>$5{,}5\times10^{17}$</td>
+<td>—</td>
+<td>g cm$^{-3}$</td>
+<td>Esp §6.1.2</td>
+</tr>
+<tr>
+<td>$\rho_H$ (RC)</td>
+<td>$5{,}81\times10^{17}$</td>
+<td>see P21</td>
+<td>g cm$^{-3}$</td>
+<td>RC (3-78)</td>
+</tr>
+<tr>
+<td>$d_c$</td>
+<td>$7\times10^{-32}$</td>
+<td>—</td>
+<td>g cm$^{-3}$</td>
+<td>Esp §10.1</td>
+</tr>
+<tr>
+<td>$d_0/d_c$</td>
+<td>—</td>
+<td>$7{,}9\times10^{48}$</td>
+<td>—</td>
+<td>derived</td>
+</tr>
+<tr>
+<td>$\omega_c$ (closure)</td>
+<td>—</td>
+<td>$1{,}524$ (dimensionless)</td>
+<td>—</td>
+<td>RC (3-45)</td>
+</tr>
+<tr>
+<td>$Z_{\max}$</td>
+<td>$5{,}438$</td>
+<td>—</td>
+<td>—</td>
+<td>Esp Annexe 2</td>
+</tr>
+<tr>
+<td>$G$</td>
+<td>$6{,}674\times10^{-8}$</td>
+<td>—</td>
+<td>cgs</td>
+<td>measured</td>
+</tr>
+<tr>
+<td>$\ell_{\text{Planck}}$</td>
+<td>—</td>
+<td>$1{,}616\times10^{-33}$</td>
+<td>cm</td>
+<td>standard</td>
+</tr>
+<tr>
+<td>$l_0/\ell_{\text{Planck}}$</td>
+<td>$10^{19}$ (stated)</td>
+<td>$1{,}088\times10^{19}$</td>
+<td>—</td>
+<td>derived</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This is the one notation file for the Charon series. It fixes the corpus's own conventions, its symbol dictionary, its vocabulary, the map into the biquaternion notation, and the hazards, so that no other article has to.</p>
+<p><strong>The corpus's conventions.</strong> Charon works in a <strong>complex Riemannian space</strong>: complexified, with a <em>Réel</em> and an <em>Imaginaire</em> sheet, and with a <strong>Riemannian</strong> real section — he does not assume a Minkowski signature, and a reader who supplies one will find wrong-sign equations. His units are <strong>Gaussian cgs</strong> throughout, with $e^{2}/\hbar c$ for the fine-structure constant and $G$ in cgs, and the three resulting traps are the factor $4\pi$, the absent $\epsilon_0$ and $\mu_0$, and dimensional checking, which is the reliable defence. Two constants generate his numbers: the elementary length $l_0$ and the quantum volume $\Omega_0 = \tfrac{4}{3}\pi l_0^{3}$, with $\xi = \Omega_0c/\hbar$.</p>
+<p><strong>The bridge.</strong> The corpus's two sheets correspond to one involution of the biquaternion algebra — complex conjugation on its anti-fixed space — while the framework groups eight real parameters into six subspaces by four involutions. The corpus has no involution lattice and no $\rho^{2}$ source, and both must be left untranslated. <strong>Which of $\mathbb{M}_\pm$ the <em>Réel</em> is remains the open question of S2</strong>, and this article does not settle it; what it settles is that the corpus's real sheet is Riemannian and the framework's material sector supplies the Lorentzian structure, so that the Lorentzian signature is a result of the bridge rather than a restatement of the corpus.</p>
+<p><strong>The hazards, and the rules.</strong> Ten are recorded, each with its evidence and its rule. The <strong>axiom numbers are unstable</strong>: Axiome 3 is the action quantisation in the leptonic chapters and the zero total energy in the cosmological one, and the same statement is called axiome 5 one page later; Axiome 5 is otherwise unprinted; and one section refers to "axiome 6" for a resonance statement that is printed as Axiome 7. The rule is to <strong>cite axioms by content and source, never by number alone</strong>. $\rho$ and $d$ both mean density, while $\rho_n$ means a mass over the quantum volume and is <strong>not</strong> a density (P21); the rule is never to write $\rho_H$ as a physical density. $n$ is both the ladder index and the action number, separated as $n$ and $n_{\text{axiom}}$. $T_0$ at a point and the fitted lepton period are separated as $T_0$ and $T_{\text{lep}}$. The two books use <strong>different</strong> $l_0$ and $\xi$ — RC's trio ($1{,}8\times10^{-14}$, $2{,}44\times10^{-41}$,
+$6{,}8\times10^{-4}$) against Esp's pair ($1{,}76\times10^{-14}$, $6{,}467\times10^{-4}$), $2{,}3\%$ and $5{,}1\%$ apart —
+while each book is internally consistent, so the rule is to take <strong>one book's set at a time</strong>. And <em>L'Esprit</em> twice prints the self-contradictory $(\hbar = 2\pi\hbar)$ where $h = 2\pi\hbar$ is meant — at Esp §9 and
+at Esp (49 bis) — while RC prints it correctly; the slip is the corpus's own, not the transcription's. $\Box^{2}$ is the ordinary d'Alembertian and not its square, so the corpus's oscillator equation is Klein–Gordon and a fourth-order reading of it is a misreading (Hazard 7). And the fusion component count is printed under three conventions for $n$, which are three different numbers, so no count may be cited without its $n$ and its rule (Hazard 8). <strong>The "simplest equation" is printed four times and only the linear reading closes</strong> — Esp (30) prints $C_{1}U + C_{2}U^{2} + \cdots$, RC (2-8) prints $C_{1}U^{2}$ as its first term, (2-13) is linear, and (2-71) equates the two forms in one line; the rule is to read the series linear in $U$ and record the printing (Hazard 9, full working in S14). And <strong>Esp 039 prints one symbol $(\tilde r, \tilde t)$ for both the entropic and the negentropic space</strong>, in every occurrence and in both transcription passes, so the corpus's distinction between the two spaces is lost at the level of the symbol and must be restored by naming them (Hazard 10).</p>
+<p>The article is the base every other Charon article cites, and it is the reason a later one can write $\xi$, $\Omega_0$, $n_{\text{axiom}}$ and $\rho$ without stopping to explain them.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the framework's setting</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$, $\mathbb{M}_-$</td>
+<td>informational and material sectors; which is the corpus's <em>Réel</em> is S2's question</td>
+</tr>
+<tr>
+<td>$q_\mu$, $q'_\mu$</td>
+<td>the eight real parameters; $Q_\mu = q_\mu + iq'_\mu$</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>proper density of the real sheet; the field-equation source density</td>
+</tr>
+<tr>
+<td>$d$, $d_0$, $d_c$, $d_R$</td>
+<td>hadron-chapter density notation: local, central, cosmic, at the boundary</td>
+</tr>
+<tr>
+<td>$\rho_n$, $\rho_H$</td>
+<td>the corpus's mass-over-$\Omega_0$ quantity; <strong>not</strong> a density (P21)</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>Riemannian scalar curvature; also $R(\tau)$, the imaginary universe's radius</td>
+</tr>
+<tr>
+<td>$G$, $G_{\alpha\beta}$</td>
+<td>metric determinant and metric of the real sheet; also $G$, the gravitational constant</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>cosmological constant</td>
+</tr>
+<tr>
+<td>$\xi$</td>
+<td>leptonic constant, $\Omega_0c/\hbar$</td>
+</tr>
+<tr>
+<td>$\Omega_0$</td>
+<td>quantum volume, $\tfrac{4}{3}\pi l_0^{3}$</td>
+</tr>
+<tr>
+<td>$l_0$</td>
+<td>elementary length, identified with $R_H$</td>
+</tr>
+<tr>
+<td>$u^\alpha$, $V_{\alpha\beta}$</td>
+<td>four-velocity and $u_\alpha u_\beta$</td>
+</tr>
+<tr>
+<td>$T_{\alpha\beta}$</td>
+<td>the "physical tensor", $\xi^{2}\rho^{2}u_\alpha u_\beta$; not an energy–momentum tensor</td>
+</tr>
+<tr>
+<td>$S$, $P$</td>
+<td>spin and pulse actions</td>
+</tr>
+<tr>
+<td>$k_S$, $k_P$</td>
+<td>relativistic spin and pulse coefficients; L15 sets them equal</td>
+</tr>
+<tr>
+<td>$n$, $n_{\text{axiom}}$</td>
+<td>ladder index, and action quantum number ($n_{\text{axiom}} = 2n+1$ for charged leptons)</td>
+</tr>
+<tr>
+<td>$T_0$, $T_{\text{lep}}$</td>
+<td>point period of (132), and the fitted lepton-model period</td>
+</tr>
+<tr>
+<td>$\omega$, $\omega_0$</td>
+<td>hadronic own-pulsation, and the common observable own-pulsation</td>
+</tr>
+<tr>
+<td>$\alpha$, $\beta$</td>
+<td>lepton-model integration constants</td>
+</tr>
+<tr>
+<td>$R_0$, $R_{\max}$, $l$</td>
+<td>éon radii and the neutrino orbit $1{,}272R$</td>
+</tr>
+<tr>
+<td>$\tau$, $t$, $\tilde t$</td>
+<td>universal age, real time, imaginary time</td>
+</tr>
+<tr>
+<td>$\Gamma$, $R_T$, $r_T$</td>
+<td>particle boundary and its radius</td>
+</tr>
+<tr>
+<td>$Z_{\max}$</td>
+<td>maximum hadronic charge number, $5{,}438$</td>
+</tr>
+<tr>
+<td>préon, éon, holon</td>
+<td>neutral imaginary structure; charged imaginary micro-universe; real-sheet curvature lump</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Conventions in the Biquaternion Universe</em>, for the biquaternion side of the dictionary: the algebra, the basis, the four involutions, the six subspaces, the three metric levels and the d'Alembertian convention. This article adds the Charon side and restates none of it.</li>
+<li>J. E. Charon, <em>L'Esprit et la Relativité complexe</em> (1983), Esp 015 for Axiomes 1 and 2; Esp 018 for $\xi = \Omega_0c/\hbar$; Esp 024 for Axiome 3 (the quantisation); Esp 026 for Axiome 4 (the equipartition); Esp 049–050 for $l_0$ and $\Omega_0$; Esp 052 for the ladder; Esp 067 for the cosmological "Axiome 3"; Esp 078 for Axiome 6; Esp 087 for Axiome 7; and Esp §6.1.2 and §10.1 for the hadronic densities.</li>
+<li>J. E. Charon, <em>La Relativité complexe</em> (1987), RC §IV.1 for the unnumbered "Axiome de quantification de l'espace-temps"; RC (3-68) for $T_0$, $\alpha$ and $\beta$; RC (3-72) for the éon radii; RC (3-77) and (3-78) for the density definition and its ceiling; and RC (3-80) for the blackbody energy density.</li>
+<li>S11, <code>charon-s11-quantised-action-spin-and-pulse</code>, §1 to §4, for the working use of $\xi$, $\Omega_0$, $n_{\text{axiom}}$ and $T_{\text{lep}}$, and §4.1 for the fitted-period argument that Hazard 4 safeguards.</li>
+<li>S29, <code>charon-s29-gravity-from-a-pulsating-boundary</code>, for the working use of $d_0$, $d_c$ and $\xi$ in the hadron model, and §3.3 for the $G \propto 1/d_0$ result.</li>
+<li>P21, <code>charon-p21-the-density-definition-slide</code>, for the proof that $\rho_n = m_n/\Omega_0$ is not a density — the reason Hazard 2 forbids writing $\rho_H$ as one.</li>
+<li><em>The Six Subspaces</em> and <em>The Prime Convention</em>, in <em>Conventions in the Biquaternion Universe</em>, for the parameter split this article refers to at the bridge.</li>
+<li><em>Progress of Theoretical and Experimental Physics</em> <strong>2022</strong>, 083C01 (Particle Data Group), for the measured constants and charged-lepton masses used in the comparison table.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

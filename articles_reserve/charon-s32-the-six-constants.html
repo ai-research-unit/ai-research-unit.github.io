@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — The Six Constants, One Row Each (S32) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-six-constants-one-row-each-s32">Charon — The Six Constants, One Row Each (S32)</h1>
+<p><em>Audits register §13.5 against the solution table of Esp 058, with the closed forms of S30 §5.1 and the method of S31.</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Five of the six constants the Système $L$ is said to compute are put in by hand, the sixth is not in the system at all, and the one constant that genuinely comes out — the speed of light — comes out of the system's own normalisation equation.</strong> That is the verdict, row by row, and it is the verdict the corpus's own two pages support: Esp 057 §1 seeds $h, c, m, \mu, \tau_{2}$ and $e$; Esp 058's table prints them back. <strong>This article is the row-by-row accounting, and its main discovery is not about the six rows but about the table's two columns.</strong></p>
+<p><strong>The two columns have different epistemic status, and reading them together is what produces the appearance of computation.</strong> The cgs column is the seeds: $c = 3\times10^{10}$, $h = 6{,}61\times10^{-27}$, $m_{0} = 9{,}11\times10^{-28}$, $\mu_{0} = 1{,}884\times10^{-25}$, $\tau_{2} = 3{,}1976\times10^{-24}$. <strong>The units-$L$ column is derived — it is the same quantities expressed in $\alpha$, $R_{0}$ and $T$ — and its agreement with the cgs column is therefore a genuine, checkable internal consistency.</strong> So the table is not one table but two statements: <em>what the corpus fed in</em>, and <em>whether the solution's own natural units are consistent with the numbers the solution produced</em>. <strong>The second is a real test, the article runs it, and the corpus passes it to $0{,}2\,\%$–$1{,}8\,\%$ on every row (§1.2).</strong></p>
+<p><strong>The strongest single verification the article finds is not a constant at all.</strong> The table prints $k_{s} = k_{p} = 1{,}36$ — the spin and pulse relativistic coefficients. <strong>That value is exactly what the printed pulsation amplitude gives if and only if the pulse profile is harmonic:</strong> with $\beta_{\max} = 0{,}861$, $\left\langle(1-\beta^{2})^{-1/2}\right\rangle = 1{,}3632$, against $1{,}36$ printed ($0{,}2\,\%$); a constant-speed profile at the same amplitude gives $1{,}966$, and one at $c$ diverges. <strong>So the printed coefficient confirms the printed amplitude, identifies the pulse profile as harmonic, and confirms the equipartition L15 to better than the table's own rounding</strong> — and it is in tension with the position the text gives for the maximum speed (S30 §3.3). §6.2.</p>
+<p><strong>Row by row, in one table, before the detail:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>row</th>
+<th>constant</th>
+<th>what the corpus does</th>
+<th>what the system does</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$c$</td>
+<td>seeds $3\times10^{10}$ cm/s</td>
+<td><strong>defines</strong> it by L16, $c = 2\pi/\int dt/R$</td>
+<td><strong>the one genuine output</strong> — and it is an output of the model's own normalisation, so it is not a test</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$h$</td>
+<td>seeds $6{,}61\times10^{-27}$ erg·s</td>
+<td>uses it in L7–L12; over-determined</td>
+<td>seed, reused; the units-$L$ value is consistent to $0{,}23\,\%$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$m$ (electron)</td>
+<td>seeds $9{,}11\times10^{-28}$ g</td>
+<td>L7's right-hand side, identically</td>
+<td>seed</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\mu$ (muon)</td>
+<td>seeds $1{,}884\times10^{-25}$ g</td>
+<td>L8 at $n = 1$, identically</td>
+<td>seed</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$\tau_{2}$ (tau)</td>
+<td>seeds $3{,}1976\times10^{-24}$ g</td>
+<td>L8 at $n = 2$ <strong>$=$ (244) $=$ the definition of $T$</strong></td>
+<td>seed, and the tower reproduces it by construction</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$e$</td>
+<td>seeds it, <strong>and L appears in no L-equation</strong></td>
+<td>not returned by the system</td>
+<td><strong>not computed here at all</strong>; §18.2's chain is S35's, and it gives $2{,}3\,\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>And the corpus's own honesty is visible in the same table:</strong> the <em>"$+1$"</em> of Esp 056's <em>"5 + 1 = 6"</em> is a constant the numerical method seeds and $\chi$ never touches (S31 §2.2). <strong>So the five are inputs, the sixth is outside, and the claim of six computed constants has no sixth term.</strong></p>
+<h2 id="the-table-the-register-requires-with-its-seventh-row">The Table the Register Requires, with Its Seventh Row</h2>
+<p><strong>The obligation of this article is a single table with six columns — symbol, meaning, the equation that returns it, Charon's value, the measured value, the deviation — and it is given here before anything else.</strong> Two notes on how to read it. <strong>The "equation" column names where the quantity is <em>fixed</em>, which is not always where it is <em>used</em>; and the seventh row, $\Omega_{0}$, is the register's own required addition, because $\Omega_{0}$, $\xi$ and $l_{0}$ are one degree of freedom and not three.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>symbol</th>
+<th>meaning</th>
+<th>what fixes it</th>
+<th>Charon</th>
+<th>measured (2022)</th>
+<th>deviation</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$c$</td>
+<td>speed of light</td>
+<td><strong>L16</strong> ($c = 2\pi/\int dt/R$), over-determined by L17</td>
+<td>$3\times10^{10}$ cm/s</td>
+<td>$2{,}99792458\times10^{10}$</td>
+<td>$+0{,}07\,\%$</td>
+<td><strong>defined — the one genuine output</strong>, and it is the model's own normalisation</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$h$</td>
+<td>Planck constant</td>
+<td>seeded; used in L7–L12</td>
+<td>$6{,}61\times10^{-27}$ erg·s</td>
+<td>$6{,}62607015\times10^{-27}$</td>
+<td>$-0{,}24\,\%$</td>
+<td><strong>input</strong> (1970s value)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$m$</td>
+<td>electron own-mass</td>
+<td>seeded; L7's right-hand side</td>
+<td>$9{,}11\times10^{-28}$ g</td>
+<td>$9{,}1093837\times10^{-28}$</td>
+<td>$+0{,}007\,\%$</td>
+<td><strong>input</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\mu$</td>
+<td>muon own-mass</td>
+<td>seeded; L8 at $n = 1$</td>
+<td>$1{,}884\times10^{-25}$ g</td>
+<td>$1{,}8835316\times10^{-25}$</td>
+<td>$+0{,}025\,\%$</td>
+<td><strong>input</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td>$\tau_{2}$</td>
+<td>tau own-mass</td>
+<td>seeded; <strong>and it defines $T$</strong>, so L8 at $n = 2$ returns it identically</td>
+<td>$3{,}1976\times10^{-24}$ g</td>
+<td>$3{,}16754\times10^{-24}$</td>
+<td>$+0{,}95\,\%$</td>
+<td><strong>input</strong> (the largest seed deviation, and it is the 1970s measurement)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$e$</td>
+<td>elementary charge</td>
+<td><strong>no L-equation</strong>; §18.2's chain (246)–(268) from $\alpha$, $\beta$, $T$</td>
+<td>$4{,}803\times10^{-10}$ esu (seed)</td>
+<td>$4{,}8032047\times10^{-10}$</td>
+<td>seed $0{,}004\,\%$; <strong>computed: $2{,}3\,\%$ claimed, $+1{,}82\,\%$ on the charge recomputed (S35)</strong></td>
+<td><strong>seeded, and computed downstream</strong> — S35</td>
+</tr>
+<tr>
+<td>7</td>
+<td>$\Omega_{0}$</td>
+<td>« le volume quantique »</td>
+<td>(47)/(49): $\Omega_{0} = \hbar\xi/c = \tfrac{4}{3}\pi l_{0}^{3}$</td>
+<td>$2{,}275\times10^{-41}$ cm³ ($= \hbar\xi/c$, and $\tfrac{4}{3}\pi l_{0}^{3}$ with $l_{0} = 1{,}7577\times10^{-14}$)</td>
+<td>—</td>
+<td>—</td>
+<td><strong>$\equiv \xi \equiv l_{0}$: one degree of freedom, and the corpus's own <em>« suggestion »</em> from $M_{0}$</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading the table forces, stated plainly.</strong> <strong>Four of the six are inputs and not results</strong> — $h$ is the 1970s measured value, $m$, $\mu$, $\tau_{2}$ are the three lepton masses the fit was <em>seeded</em> from (Esp 057 §1), and $e$ is seeded as well (S31 §2.2). <strong>$c$ is defined by the system's own normalisation equation</strong>, so it is an output but not a test of nature. <strong>Only $e$ is compared with nature after the computation, and it comes out at $2{,}3\,\%$</strong> — which is S35's flagship. So the honest title of the result is not <em>"the computation of six constants"</em> but <strong><em>"one defined constant, five measured seeds, one suggested seed, one computed coupling"</em></strong> — rule R1's count, stated by the book itself. <strong>S34 owns the count and refines it; this article owns the rows.</strong></p>
+<p><strong>And the positive half belongs in the same breath, because it is real.</strong> <strong>A single model, given three measured lepton masses, reproduces the charged-lepton spectrum's own relations, returns $l_{0}$ from its own geometry to $2{,}6\,\%$ (S30 §3.3), reproduces the printed relativistic coefficients to $0{,}2\,\%$ (§6.2), and reproduces $e$ to the $2{,}3\,\%$ the corpus claims (S35's recomputation: $+1{,}82\,\%$ on the charge) — with the whole twenty-equation system self-consistent to the $2\,\%$ residual of a well whose depth is $50$ (S31).</strong> <strong>That is a genuine feat of internal consistency and it is not damaged by the input/output count</strong>: the count says what was put in, the consistency says the model does not fall apart. <strong>Both statements are true and neither cancels the other.</strong></p>
+<p><strong>One further remark on row 7, because the corpus's own position is what makes it a row and not a footnote.</strong> Esp 057 states that <em>"cette valeur numérique de $\xi$ déduite de $M_{0}$ n'est bien qu'une « suggestion »"</em>, i.e. the value came from the nucleon mass; and the corpus's position is that the Système $L$ must <em>compute</em> $\xi$ and from it predict $M_{0}$. <strong>S30 §3.3 shows the computation exists inside the system, as L17, and that the printed geometry returns it to $2{,}6\,\%$</strong> — so the suggestion and the computation agree, which is better than the register's reading allowed and worse than "computed" would be. <strong>Row 7 is therefore the one row whose status is genuinely two-sided, and it is flagged as such in S34's ledger.</strong></p>
+<h2 id="what-the-corpus-claims">What the Corpus Claims</h2>
+<p><strong>Esp 058, the table, as transcribed (the header row and the entries used here):</strong></p>
+<blockquote>
+<h2 id="solution-numerique-du-systeme-math110">Solution numérique du Système $L$</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbole</th>
+<th>Définition</th>
+<th>cgs</th>
+<th>unités $L$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$c$</td>
+<td>Vitesse de la lumière</td>
+<td>$3.10^{10}$</td>
+<td>18,846</td>
+</tr>
+<tr>
+<td>$h$</td>
+<td>Constante de Planck</td>
+<td>$6,61.10^{-27}$</td>
+<td>3 617</td>
+</tr>
+<tr>
+<td>$l_0$</td>
+<td>Longueur élémentaire ($\xi = \frac{4}{3}\pi l_0^3\frac{c}{\hbar} = 6,467.10^{-4}$)</td>
+<td>$1,76.10^{-14}$</td>
+<td>$2,256$</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>Période de pulsation</td>
+<td>$4,9.10^{-24}$</td>
+<td>1</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>Densité rayonnement noir : $D_E = \frac{\beta c^2}{R^4}$</td>
+<td>$-1,472.10^{-25}$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>Densité rayt noir : $D_E = \frac{Bc^2}{R^4}$</td>
+<td>$-1,7.10^{-39}$</td>
+<td>$-1,48$</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>Constante leptonique</td>
+<td>$-1,282.10^{27}$</td>
+<td>$-0,078$</td>
+</tr>
+<tr>
+<td>$R_0$</td>
+<td>Rayon minimum</td>
+<td>$7,8.10^{-15}$</td>
+<td>1</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>Rayon maximum</td>
+<td>$4,8.10^{-14}$</td>
+<td>6,154</td>
+</tr>
+<tr>
+<td>$m_0$</td>
+<td>Masse propre de l'électron</td>
+<td>$9,11.10^{-28}$</td>
+<td>0,006 2</td>
+</tr>
+<tr>
+<td>$\mu_0$</td>
+<td>Masse propre du muon</td>
+<td>$1,884.10^{-25}$</td>
+<td>1,28</td>
+</tr>
+<tr>
+<td>$\tau_{on}$ ($n=2$)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>$k_s$</td>
+<td>Coeff. relativiste d'énergie de spin</td>
+<td>1,36</td>
+<td>1,36</td>
+</tr>
+<tr>
+<td>$k_p$</td>
+<td>Coeff. relativiste d'énergie de pulse</td>
+<td>1,36</td>
+<td>1,36</td>
+</tr>
+<tr>
+<td>$W_{0e}$</td>
+<td>Energie « au repos » du neutrino $v_e$</td>
+<td>$0,824.10^{-3}$</td>
+<td>2 209</td>
+</tr>
+<tr>
+<td>$W_{0\mu}$</td>
+<td>Energie « au repos » du neutrino $v_\mu$</td>
+<td>$2,615.10^{-3}$</td>
+<td>7 010</td>
+</tr>
+<tr>
+<td>$W_{0\tau}$</td>
+<td>Masse propre du prochain lepton lourd</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>Signe de la courbure espace lepton</td>
+<td>$+1$</td>
+<td>$+1$</td>
+</tr>
+<tr>
+<td>$\tau_{on}$ ($n=3$)</td>
+<td>Masse propre du « prochain » lepton lourd</td>
+<td>$6,184.10^{-24}$</td>
+<td>42</td>
+</tr>
+</tbody>
+</table></div>
+</blockquote>
+<p><strong>The corpus's gloss on the units-$L$ column, which is what makes it derived and not decorative:</strong></p>
+<blockquote>
+<p>Les unités $L$ : nous avons ainsi nommé le système d'unités qu'aurait choisi un observateur (le Connaissant) qui se trouverait prisonnier dans le micro-univers leptonique fermé (de nouveau la « caverne » de Platon !). Son système « naturel » d'unités serait basé sur les mesures qu'il peut effectuer directement à l'intérieur de son univers : nous avons choisi $\alpha$ pour unité de masse, pour unité de longueur le rayon minimum $R_0$ de l'univers pulsant et pour unité de temps la période de pulsation $T$. […] $$-\rho_0 = R_0 = T = 1\ (= -\alpha)\,.$$</p>
+</blockquote>
+<p><strong>Tag.</strong> The table is <strong>[MATH]</strong> as a table — every entry is a number with a unit — and <strong>[SPEC]</strong> as an argument, because the entry a reader will take as a <em>result</em> is in the cgs column, which is the seed list. <strong>The register's §13.5 and its column-status note are confirmed; what this article adds is the row-by-row accounting and the verifications of §1.2 and §6.</strong></p>
+<p><strong>Scope.</strong> S30 states the system; S31 audits the method; S34 counts inputs and outputs; S35 owns $e$'s chain. <strong>This article is the table: one row each, what the corpus put in, what the system returned, and what the units-$L$ column proves.</strong></p>
+<h2 id="1-the-table-read-properly">1. The Table, Read Properly</h2>
+<h3 id="11-the-cgs-column-is-the-seed-list-and-the-units-math166-column-is-derived">1.1 The cgs column is the seed list, and the units-$L$ column is derived</h3>
+<p><strong>Esp 057 §1 gives six seeds; Esp 058's cgs column prints exactly those six numbers.</strong> That is not an inference: $c = 3\times10^{10}$, $h = 6{,}61\times10^{-27}$, $m_{0} = 9{,}11\times10^{-28}$, $\mu_{0} = 1{,}884\times10^{-25}$, $\tau_{2} = 3{,}1976\times10^{-24}$, and $e$ — with the caveat that the transcription's table rows for $\tau_{on}(n=2)$ and $W_{0\tau}$ are <strong>blank</strong> (§4.2, §6.3). <strong>So the cgs column cannot be evidence of computation: it is evidence of the seed list.</strong></p>
+<p><strong>The units-$L$ column is a different kind of thing, and this is where the corpus's table earns its keep.</strong> The corpus defines the units by three quantities the <em>solution</em> produces — $\alpha$ for mass, $R_{0}$ for length, $T$ for time — and every other entry is that row's quantity divided by the appropriate power of those three. <strong>So the units-$L$ column is a derived column: its agreement with the cgs column tests the solution's internal arithmetic, and its dimensionless ratios ($R/R_{0}$, $cT/R_{0}$, $m/\alpha$, $\mu/\alpha$, $\beta/(\alpha R_{0})$, $l_{0}/R_{0}$, $\tau_{n}/\alpha$) are round numbers the corpus's own equations should produce.</strong> <em>One notation hazard to record: the table uses $R$ for the </em><em>maximum</em><em> radius (so $R$ has $\mathcal{R}$'s role in the table, not the running radius) and $m_{0}$, $\mu_{0}$ for $m$, $\mu$.</em> <strong>S5's hazard pattern; noted, not counted as an error.</strong></p>
+<h3 id="12-the-verification-row-by-row">1.2 The verification, row by row</h3>
+<p><strong>The natural units are $\alpha$ (mass), $R_{0}$ (length) and $T$ (time), so each row of the units-$L$ column must be that row's cgs value divided by the appropriate power of those three, and nothing else.</strong> Done with the table's <em>own</em> cgs values — i.e. testing internal consistency and nothing more — every row closes:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>dimension</th>
+<th>unit used</th>
+<th>table's cgs value ÷ unit</th>
+<th>printed</th>
+<th>deviation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$c$</td>
+<td>cm/s</td>
+<td>$R_{0}/T$</td>
+<td>$18{,}846$</td>
+<td>$18{,}846$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$h$</td>
+<td>erg·s</td>
+<td>$\alpha R_{0}^{2}/T$</td>
+<td>$3\,616{,}6$</td>
+<td>$3\,617$</td>
+<td>$-0{,}01\,\%$</td>
+</tr>
+<tr>
+<td>$l_{0}$</td>
+<td>cm</td>
+<td>$R_{0}$</td>
+<td>$2{,}2564$</td>
+<td>$2{,}256$</td>
+<td>$-0{,}02\,\%$</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>s</td>
+<td>$T$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>g</td>
+<td>$\alpha$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>g·cm</td>
+<td>$\alpha R_{0}$</td>
+<td>$-1{,}4806$</td>
+<td>$-1{,}48$</td>
+<td>$+0{,}04\,\%$</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>cm</td>
+<td>$R_{0}$</td>
+<td>$6{,}1538$</td>
+<td>$6{,}154$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$m_{0}$</td>
+<td>g</td>
+<td>$\alpha$</td>
+<td>$0{,}0061889$</td>
+<td>$0{,}0062$</td>
+<td>$-0{,}18\,\%$</td>
+</tr>
+<tr>
+<td>$\mu_{0}$</td>
+<td>g</td>
+<td>$\alpha$</td>
+<td>$1{,}27989$</td>
+<td>$1{,}28$</td>
+<td>$+0{,}01\,\%$</td>
+</tr>
+<tr>
+<td>$\tau_{on}$ ($n=3$)</td>
+<td>g</td>
+<td>$\alpha$</td>
+<td>$42{,}011$</td>
+<td>$42$</td>
+<td>$+0{,}03\,\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Every row is reproduced from the table's own numbers to the precision the table prints — the one difference above a tenth of a per cent, on $m_{0}$, is the gap between the four digits the ratio has and the two the table prints.</strong> <em>Two rows do not close at all, and are dealt with in §6.3: $A$ and the two $W_{0}$; neither is one of the six constants.</em></p>
+<p><strong>A second, different comparison is the one that carries information: what these ratios become when recomputed from today's measured constants and from the closed forms.</strong> Then the deviations are $0{,}07\,\%$ on $c$ (the 1970s value of $c$ is $0{,}07\,\%$ above today's), $0{,}23\,\%$ on $h$ (the 1970s $h$ is $0{,}23\,\%$ below today's), $0{,}11\,\%$ on $l_{0}$ and $1{,}7\,\%$ on $\beta$ — <strong>the last because $\beta$'s printed value is rounded to two significant figures while S30 §5.1's closed form gives $-1{,}66995\times10^{-39}$.</strong> <em>So the table's internal arithmetic is exact; what varies from row to row is the age of the 1970s measurement and the number of digits printed.</em> §7 keeps the four kinds of comparison apart.</p>
+<p><strong>And the corpus's own gloss on $\rho_{0}$ is exact:</strong> $\rho = \alpha/R^{3}$ gives $\rho_{0} = |\alpha|/R_{0}^{3} = 3{,}1019\times10^{17}$ g cm⁻³, against the <em>"$3{,}1.10^{17}$"</em> of Esp 058 §17. <strong>Three digits, exact.</strong></p>
+<h2 id="2-row-1-math270-the-one-constant-the-system-defines">2. Row 1 — $c$: the One Constant the System Defines</h2>
+<p><strong>$c$ is the only one of the six that the system returns, and it returns it from L16.</strong> L16 is $\int_{0}^{T}dt/R = 2\pi/c$, so $c$ is <em>defined</em> by the solution's geometry and period: $c = 2\pi/\left\langle R^{-1}\right\rangle^{-1}$ — the harmonic mean radius times $2\pi/T$. <strong>L17 provides an over-determined second route, $c = 3\hbar\xi\left\langle R^{-3}\right\rangle/(4\pi)$, and S30 §3.3 shows the two are consistent to $2{,}6\,\%$ on the printed geometry.</strong></p>
+<p><strong>So what does the row establish?</strong></p>
+<ul>
+<li><strong>That $c$ is not an independent input to the geometry</strong> — it is fixed by $R(\tau)$ and $T$, and $T$ is fixed by the lepton mass difference (L8 at $n=1,2$). <strong>Chain: measured lepton masses $\to T \to$ L16 $\to c$.</strong> A reader who follows it will notice that the chain's first link is measured, which is rule R1 again.</li>
+<li><strong>That $c$'s reproduction of $3\times10^{10}$ cm/s is therefore a consistency check and not a derivation of the speed of light.</strong> The check is: does the geometry that the lepton masses force have the harmonic mean radius $cT/2\pi$? <strong>The corpus's solution answers yes to $0{,}07\,\%$ (the units-$L$ row), and S30's independent reading answers yes to $5{,}7\,\%$ in the moment and $2{,}6\,\%$ in $l_{0}$.</strong></li>
+</ul>
+<p><strong>That is the honest content of the row, and it is more than nothing:</strong> the corpus's own geometry and its own normalisation equation agree with the measured speed of light, without $c$ being fed into L16. <strong>The one thing the row cannot claim is that $c$ was computed from the model's principles.</strong></p>
+<h2 id="3-row-2-math295-a-seed-and-what-the-system-does-with-it">3. Row 2 — $h$: a Seed, and What the System Does With It</h2>
+<p><strong>$h$ is seeded at the 1970s value $6{,}61\times10^{-27}$ erg·s (today's $6{,}62607015\times10^{-27}$, so the seed is $0{,}23\,\%$ low), and the system uses it in every action equation: L7, L8, L9–L12.</strong> It is also <em>over-determined</em> by them — six equations contain it — so the corpus's claim that the solution returns $h$ is, read generously, the claim that its value is consistent with the actions.</p>
+<p><strong>And that consistency is checkable in the units-$L$ column.</strong> The natural action unit is $R_{0}^{2}/T$ in mass terms; the table's $3\,617$ is $h$ divided by the corresponding combination of $\alpha$, $R_{0}$ and $T$, and the recomputation gives $3\,625{,}4$ — <strong>$0{,}23\,\%$</strong>, which is precisely the seed's own distance from today's $h$ (<strong>a coincidence of size, not of meaning</strong>, recorded as such).</p>
+<p><strong>So the $h$ row is: seed, reused, over-determined, and consistent.</strong> Its interest for the ledger is that $h$ is the one constant that appears in the <em>quantisation</em> equations (L9–L12) and in the <em>mass</em> equations (L7, L8) at once, which is the structural reason the tower's step is $2h/(c^{2}T)$ and not something else.</p>
+<h2 id="4-rows-35-math314-math315-math316">4. Rows 3–5 — $m$, $\mu$, $\tau_{2}$</h2>
+<h3 id="41-the-three-seeds">4.1 The three seeds</h3>
+<p><strong>All three are the measured charged-lepton masses, in the corpus's own notation, with the signs of §18.1:</strong> $m_{0} = 9{,}11\times10^{-28}$ g (today $9{,}1093837\times10^{-28}$; the seed is $0{,}007\,\%$ high), $\mu_{0} = 1{,}884\times10^{-25}$ g (today $1{,}8835316\times10^{-25}$; $0{,}025\,\%$ high), $\tau_{2} = 3{,}1976\times10^{-24}$ g (today $3{,}16754\times10^{-24}$; <strong>$0{,}95\,\%$ high</strong> — the largest seed deviation in the table, and it is the 1970s tau mass measurement, not an error).</p>
+<p><strong>Their role in the system is not as residuals but as right-hand sides.</strong> L7 says the electron's own-mass equation has $mc^{2}T$ on the right; L8 at $n = 1$ says $\mu c^{2}T$; and Esp 057 §2's $T = 2h/[c^{2}(\tau-\mu)]$ uses the <em>difference</em> $\tau - \mu$. <strong>So $m$ and $\mu$ are satisfied identically, $\tau$ fixes $T$, and the only place the three masses can <em>fail</em> is in the fit's seeds-versus-measurement column, which is not what $\chi$ measures (S31 §3.2(a)).</strong></p>
+<h3 id="42-math336-reproduces-itself-and-the-tables-blank-row">4.2 $\tau_{2}$ reproduces itself, and the table's blank row</h3>
+<p><strong>The corpus's tower (244) is $\tau_{n} = \mu + 2(n-1)h/(c^{2}T)$, and S30 §5.2 shows it is <em>inside</em> L8 at $n = 2$.</strong> With $T$ defined from $\tau - \mu$ in step 2c, the tower at $n = 2$ returns $\mu + (\tau-\mu) = \tau$ exactly — <strong>an identity, not a check.</strong> Evaluated from the <em>printed</em> values ($\mu_{0}$, $h$, $T$) it gives $3{,}19754\times10^{-24}$ g against the seed $3{,}1976\times10^{-24}$ g, i.e. $0{,}002\,\%$ — <strong>the closure is by construction and the number confirms the construction, nothing more.</strong></p>
+<p><strong>And the table's $\tau_{on}(n = 2)$ row is blank.</strong> The transcription shows the symbol row with no definition and no values, while both neighbouring rows ($\mu_{0}$ above, $k_{s}$ below) carry theirs; <strong>the row's values would be $3{,}1976\times10^{-24}$ g and $21{,}72$ in units $L$</strong> ($\tau_{2}/|\alpha| = 21{,}72$). <strong>The blank is recorded as a transcription item and as a candidate for the user's eye, not as a corpus error</strong> — and it is worth noting that the printed $\tau_{on}(n=3)$ row's $42$ is exactly $2 \times 21$, i.e. the tower's constant step in units $L$.</p>
+<h3 id="43-the-towers-first-unseeded-output-and-why-it-is-not-a-success">4.3 The tower's first unseeded output, and why it is not a success</h3>
+<p><strong>Since $n = 2$ is the seed, the tower's first genuine output is $n = 3$.</strong> From the printed $\mu_{0}$, $h$ and $T$: $\tau_{3} = \mu + 4h/(c^{2}T) = 6{,}2068\times10^{-24}$ g $= \mathbf{3{,}4817}$ <strong>GeV</strong>, against the table's printed $6{,}184\times10^{-24}$ g $= 3{,}4690$ GeV, a $-0{,}37\,\%$ difference. <strong>So the table's own $\tau_{3}$ is not quite what the table's own $T$ gives</strong> — the printed value is $0{,}37\,\%$ low, which is the corpus's own rounding and not a defect.</p>
+<p><strong>The state itself is the problem, and it is not this article's finding to make: register R7 and P1 record that a charged lepton at $3{,}47$ GeV does not exist.</strong> LEP's searches closed the charged-lepton spectrum at the $Z$ pole; the corpus's table prints the state anyway, in the same table as the three that do exist. <strong>What this article adds is the row's status: $\tau_{3}$ is the tower's only unseeded output, and it is excluded by experiment.</strong> S43 owns the comparison; <strong>the tower's status is settled there and in S30 §5.2, and this row is the table entry where it shows.</strong></p>
+<h2 id="5-row-6-math376-not-in-the-system">5. Row 6 — $e$: Not in the System</h2>
+<p><strong>$e$ is seeded (Esp 057 §1) and returned by nothing in L.</strong> S30 §4's map makes this visible: the elementary charge appears in no L-equation, and Esp 056's own sentence routes it through §18.2 — <em>"le Système $L$ conduit également au calcul de la charge électrique élémentaire $e$"</em>. <strong>So the row is not a computed constant of the Système $L$ at all; it is a computed constant of the §18.2 chain, with $L$ supplying $\alpha$, $\beta$ and $T$.</strong></p>
+<p><strong>And the §18.2 chain gives $e$ to $2{,}3\,\%$ as the corpus claims</strong> — S35's business, and its own recomputation gives $+1{,}82\,\%$ on the charge ($+3{,}64\,\%$ on the coupling) with correct arithmetic, while reproducing the corpus's printed value exactly from its printed inputs. <strong>Here the row is recorded with its status: seeded, not returned by $L$, computed downstream to $2{,}3\,\%$, and (S31 §2.2) not touched by $\chi$ at all.</strong> <em>So the corpus's "</em>5 des principales constantes $\dots$ et […] également […] $e$<em>" is a statement about two different computations, and the numerical chapter's residual knows nothing about the second.</em></p>
+<h2 id="6-the-tables-other-rows">6. The Table's Other Rows</h2>
+<h3 id="61-math394-math395-math396-math397-math398-math399-math400">6.1 $l_{0}$, $T$, $\alpha$, $\beta$, $A$, $R_{0}$, $R$</h3>
+<p><strong>These are the solution's internal quantities, and they are where the table is most useful.</strong> $T$, $R_{0}$ and $\alpha$ are the natural units by definition; $l_{0}$, $\beta$, $R$ and $h$ close to $0{,}1\,\%$–$1{,}7\,\%$ (§1.2); and $l_{0} = 1{,}76\times10^{-14}$ cm agrees with $\xi$'s implied value $1{,}7577\times10^{-14}$ cm to $0{,}13\,\%$ <strong>and with S30's independent L17 reading to $2{,}6\,\%$.</strong> <strong>$\alpha$, $\beta$ and $T$ are the three S21 computes from the éon's system, and the two chapters agree exactly on all three closed forms</strong> (S30 §5.1); $T$'s value here, $4{,}89997\times10^{-24}$ s from the corpus's own printed masses, is the printed $4{,}9$ s to $0{,}001\,\%$.</p>
+<p><strong>$A$ — the lepton constant, $-1{,}282\times10^{27}$ cgs — does not close under the stated units:</strong> its units-$L$ column entry $-0{,}078$ implies a unit of $1{,}64\times10^{28}$, and that is not $\alpha$, $R_{0}$, $T$, $\alpha R_{0}$, $c$ or any product of them the article can form. <strong>Recorded as an unexplained conversion (§6.3), with the note that $A$ is S20's constant and not one of the six.</strong></p>
+<h3 id="62-math433-the-articles-strongest-verification">6.2 $k_{s} = k_{p} = 1{,}36$: the article's strongest verification</h3>
+<p><strong>The two relativistic coefficients are printed as the same number, and both equalities are checkable from the printed amplitude.</strong></p>
+<p><strong>The pulse coefficient first, because its definition (L14) is one-dimensional:</strong> $k_{P} = \frac{1}{T}\int_{0}^{T}(1-R'^{2}/c^{2})^{-1/2}dt$. <strong>With $|R'|_{\max} = 0{,}861\,c$:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pulse profile</th>
+<th>$k_{P}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>harmonic</strong> ($R' \propto \sin$), $\beta_{\max} = 0{,}861$</td>
+<td>$\frac{2}{\pi}K(\beta_{\max}^{2}) = \mathbf{1{,}3632}$</td>
+</tr>
+<tr>
+<td>constant speed at $0{,}861\,c$</td>
+<td>$(1-0{,}861^{2})^{-1/2} = 1{,}9662$</td>
+</tr>
+<tr>
+<td>constant speed at $c$ (the S23/S26 idealisation)</td>
+<td><strong>diverges</strong></td>
+</tr>
+<tr>
+<td><strong>printed</strong></td>
+<td>$\mathbf{1{,}36}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the printed $k_{p} = 1{,}36$ is the harmonic value to $0{,}2\,\%$</strong>, and the two alternatives are excluded: a constant-speed cycle at the printed amplitude would need $1{,}97$, and at $c$ the integral does not converge at all. <em>(The elliptic integral is elementary: for a harmonic pulse the time average of $(1-\beta^{2})^{-1/2}$ is $\frac{2}{\pi}K(m)$ with $m = \beta_{\max}^{2} = 0{,}7413$, and $K(0{,}7413) = 2{,}14125$.)</em></p>
+<p><strong>Three consequences, in order of strength.</strong></p>
+<p><strong>(1) The printed amplitude is confirmed by an independent printed quantity.</strong> $0{,}861c$ and $k = 1{,}36$ are two numbers on two pages (Esp 058 §17 and the table), and they are related by the corpus's own L14 to $0{,}2\,\%$. <strong>That is a genuine internal consistency of the published solution, and no other reading of the pair produces it.</strong></p>
+<p><strong>(2) The pulse profile is harmonic</strong> — and this is in tension with the text's placement of the maximum speed at $R = 1{,}79\times10^{-14}$ cm, which for a harmonic pulse would be at the mid-radius $2{,}79\times10^{-14}$ cm (S30 §3.3). <strong>Both data cannot describe the same pure profile; the profile must be asymmetric (§6.2's last paragraph).</strong></p>
+<p><strong>(3) The equipartition L15 holds to better than the table's rounding.</strong> $k_{s} = k_{p} = 1{,}36$ printed to three digits means $|k_{s}-k_{p}|/k < 0{,}37\,\%$ — <strong>and L15 is one of the six equations the fit tests (S31 §3.2(b)).</strong> So the corpus's <em>"facteur 2"</em>, the term that makes the tower step $2h/(c^{2}T)$, is satisfied by the published solution at the $0{,}4\,\%$ level while the overall residual is $2\,\%$. <strong>That is the sharpest available answer to "is the equipartition an equation or an identity?" — it is an equation, and it passes.</strong></p>
+<p><strong>One caution so that the verification is not over-read.</strong> The spin coefficient $k_{s}$ comes from L13, whose integrand involves the closed-space angular speed $v_{\nu}$ and not $R'$ alone; <strong>the table prints $k_{s} = k_{p}$, and the harmonic computation above verifies $k_{p}$.</strong> If the corpus's $k_{s}$ is a <em>separate</em> computation from L13 and happens to agree with $k_{p}$ at three digits, <strong>that agreement is a stronger result than this article can certify</strong>, because the angular distribution is not in the reproduction. <strong>Recorded as a bound on the claim: what is verified here is $k_{p}$, and the equality is verified only to the table's rounding.</strong></p>
+<h3 id="63-the-two-math470-rows-and-the-one-conversion-that-does-not-close">6.3 The two $W_{0}$ rows, and the one conversion that does not close</h3>
+<p><strong>The neutrino rest energies are printed as $W_{0e} = 0{,}824\times10^{-3}$ and $W_{0\mu} = 2{,}615\times10^{-3}$ (cgs) and $2\,209$ and $7\,010$ (units $L$).</strong> Three observations:</p>
+<ul>
+<li><strong>The two rows are mutually consistent:</strong> $0{,}824/2{,}615 = 0{,}3151$ and $2\,209/7\,010 = 0{,}31512$. <strong>Ratio preserved, so the pair is internally sound.</strong></li>
+<li><strong>Their units-$L$ column does not follow from $\alpha$, $R_{0}$ and $T$.</strong> The implied unit is $3{,}7302\times10^{-7}$ in the cgs column's unit, and that is not $\alpha$, $\alpha c^{2}$, $h/T$, $mc^{2}$ or $R_{0}^{2}/T$-based; <strong>it equals $\alpha c^{2}(R_{0}/cT)^{2}$ numerically</strong> ($3{,}7301\times10^{-7}$), which is not a combination the corpus's unit list suggests. <strong>Recorded as unexplained.</strong></li>
+<li><strong>These are not constants of the six, and no result in S30–S34 depends on them.</strong> The $W_{0\tau}$ row is blank in the transcription, like the $\tau_{on}(n=2)$ row (§4.2).</li>
+</ul>
+<p><strong>So the table has two conversion puzzles ($A$ and the $W_{0}$'s), both in rows outside the six-constant claim.</strong> They are handed to the register as items to close from a scan if a scan is ever needed; <strong>they are not defects of the solution, they are entries whose units the transcription cannot check.</strong></p>
+<h2 id="7-deviations-and-what-they-are-not">7. Deviations, and What They Are Not</h2>
+<p><strong>The register's §13.5 lists the constants with their deviations, and the deviations need a label.</strong> Three different comparisons are in play, and they must not be mixed:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>comparison</th>
+<th>example</th>
+<th>what it measures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>seed vs seed, reprinted in cgs</strong></td>
+<td>$m_{0} = 9{,}11\times10^{-28}$ printed twice</td>
+<td><strong>nothing</strong> — it is the same number</td>
+</tr>
+<tr>
+<td><strong>solution vs measurement, in units $L$</strong></td>
+<td>$cT/R_{0} = 18{,}8334$ vs $18{,}846$</td>
+<td>the solution's internal arithmetic and the rounding of the cgs column (§1.2)</td>
+</tr>
+<tr>
+<td><strong>seed vs today's measured value</strong></td>
+<td>$\tau_{2} = 3{,}1976\times10^{-24}$ vs $3{,}16754\times10^{-24}$ ($+0{,}95\,\%$)</td>
+<td><strong>the age of the seed</strong>, i.e. a 1970s measurement</td>
+</tr>
+<tr>
+<td><strong>computed vs measured, downstream</strong></td>
+<td>$e$ from §18.2: $2{,}3\,\%$ claimed, $+1{,}82\,\%$ recomputed (S35)</td>
+<td>the only genuine computed-versus-measured comparison in the chapter</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The fourth row is the only one of the four that bears on the model's truth, and it is S35's.</strong> The corpus's chapter reads as if there were many such comparisons; <strong>there is one, and it is not in this table.</strong> That is the accounting this article contributes to S34's ledger.</p>
+<h2 id="8-verdict">8. Verdict</h2>
+<p><strong>Five rows are seeds, one row is a defined output of the system's own normalisation, one row is outside the system, and the table's real content is its derived column.</strong></p>
+<ul>
+<li><strong>Confirmed (§13.5, with the table transcribed and checked):</strong> every entry used here is legible in Esp 058; the natural units are $\alpha$, $R_{0}$, $T$; $\rho_{0} = |\alpha|/R_{0}^{3} = 3{,}1019\times10^{17}$ g cm⁻³ matches the printed $3{,}1\times10^{17}$.</li>
+<li><strong>New — the two columns have different status</strong> (§1.1), <strong>and the units-$L$ column closes to $0{,}07\,\%$–$1{,}7\,\%$ on every row whose dimension is formable</strong> (§1.2): $c$ ($-0{,}07\,\%$), $h$ ($+0{,}23\,\%$), $l_{0}$ ($-0{,}11\,\%$), $\beta$ ($-1{,}7\,\%$), $R/R_{0}$ ($-0{,}003\,\%$), $m/\alpha$ ($-0{,}19\,\%$), $\mu/\alpha$ ($-0{,}03\,\%$), $\tau_{3}/\alpha = 42{,}01$ vs $42$. <strong>The table is internally consistent.</strong></li>
+<li><strong>Row 1, $c$: the only genuine output</strong>, from L16 with L17 over-determining it (S30 §3.3); <strong>but it is the system's own normalisation equation, so the row is a consistency check, not a derivation.</strong> The chain runs measured lepton masses $\to T \to c$.</li>
+<li><strong>Rows 2–5, $h, m, \mu, \tau_{2}$: seeds.</strong> The tau row is also the construction of $T$; the tower at $n = 2$ reproduces it identically, and its first unseeded output ($n = 3$, $3{,}47$ GeV) is excluded by experiment (§4.3, R7, P1, S43).</li>
+<li><strong>Row 6, $e$: not in the system.</strong> Seeded, absent from every L-equation, absent from $\chi$, computed downstream — the corpus's $2{,}3\,\%$, S35's $+1{,}82\,\%$ on the charge (S35). <strong>The <em>"5 + 1 = 6"</em> is a statement about two computations.</strong></li>
+<li><strong>New — the strongest verification in the article is $k_{s} = k_{p} = 1{,}36$.</strong> The harmonic value at the printed amplitude $0{,}861c$ is $1{,}3632$ ($0{,}2\,\%$); a constant-speed profile gives $1{,}966$, and at $c$ the integral diverges. <strong>So the printed amplitude and the printed coefficient confirm each other through L14, the pulse profile is harmonic, and the equipartition L15 passes to better than the table's rounding</strong> — although the equality of $k_{s}$ with $k_{p}$ is only verified to that rounding, since $k_{s}$'s angular integral is not reproduced here.</li>
+<li><strong>New — two conversion puzzles, both outside the six:</strong> $A$'s units-$L$ entry implies a unit of $1{,}64\times10^{28}$, and the $W_{0}$'s imply $3{,}73\times10^{-7}$; neither is a natural unit of the list. <strong>Recorded as unexplained, with no consequence for S30–S34.</strong></li>
+<li><strong>The deviations must be labelled</strong> (§7): reprint, internal arithmetic, seed age, or genuine computed-versus-measured. <strong>Only the fourth bears on the model, and only $e$ is in it.</strong></li>
+<li><strong>Tag:</strong> the table <strong>[MATH]</strong>, the claim that it demonstrates the computation of the constants <strong>[SPEC]</strong>.</li>
+</ul>
+<p><strong>Part S / Part P.</strong> <strong>Part S: the table, its two columns, the row-by-row closure, $\rho_{0}$, $k_{p}$, the tower's definitions — all verified.</strong> <strong>Part P: the reading of the table as six computed constants</strong> — five are seeds, one is the system's own definition of $c$, and the sixth is not in the system.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The six constants are one defined quantity, five measured seeds, one seed computed downstream, and one suggested constant — and the table's derived column is where its real content lies.</strong> $c$ is the only genuine output, defined by L16; $h, m, \mu, \tau_{2}$ are the measured input values (the 1970s ones); $e$ is seeded, absent from every L-equation and from $\chi$, and computed in §18.2 to $2{,}3\,\%$ (S35); $\Omega_{0} = \xi = l_{0}$ is the corpus's own <em>« suggestion »</em>. <strong>The units-$L$ column is derived from $\alpha$, $R_{0}$ and $T$, and every row whose dimension is formable is reproduced from the table's own cgs values — so the table is internally consistent.</strong> <strong>The article's strongest verification is $k_{s} = k_{p} = 1{,}36$: the harmonic profile at the printed amplitude $\beta_{\max} = 0{,}861$ gives $1{,}3632$, a constant-speed profile gives $1{,}966$, and at $c$ the integral diverges.</strong> That identifies the pulse profile as harmonic — in tension with the position the text gives for the maximum speed, so the printed profile is asymmetric — and it shows the equipartition of L15 passing to better than the table's rounding. <strong>The deviations of the chapter fall into four kinds, and only one of them compares a computation with nature.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<ul>
+<li><strong>units $L$</strong> — the corpus's natural units: mass unit $-\alpha$, length unit $R_{0}$, time unit $T$, so that "$\rho_{0} = R_{0} = T = 1\ (=-\alpha)$". <strong>A derived column, not a second solution.</strong></li>
+<li><strong>$m_{0}$, $\mu_{0}$</strong> — the table's names for $m$ (electron) and $\mu$ (muon). <strong>$R$ in the table is the maximum radius</strong>, i.e. $\mathcal{R}$ elsewhere.</li>
+<li><strong>$A$</strong> — the lepton constant, $-1{,}282\times10^{27}$ cgs; <strong>S20's</strong>, and its units-$L$ conversion does not close (§6.1).</li>
+<li><strong>$k_{s}$, $k_{p}$</strong> — the spin and pulse relativistic coefficients, L13 and L14; printed $1{,}36$ each. <strong>$k_{p}$'s harmonic value at $\beta_{\max} = 0{,}861$ is $1{,}3632$.</strong></li>
+<li><strong>$W_{0e}$, $W_{0\mu}$, $W_{0\tau}$</strong> — the neutrino rest energies (L9–L12's $W_{0m}$, $W_{0\tau_{n}}$); their units-$L$ conversion does not close (§6.3).</li>
+<li><strong>$\tau_{on}(n=2)$, $\tau_{on}(n=3)$</strong> — the corpus's table names for $\tau_{2}$ (the tau, a seed) and the tower's next state; <strong>the $(n=2)$ row is blank in the transcription.</strong></li>
+<li><strong>$,0{,}861c$</strong> — <em>"la vitesse maximum de pulsation"</em>, at $R = 1{,}79\times10^{-14}$ cm (Esp 058 §17). <strong>The datum §6.2 verifies against $k_{p}$.</strong></li>
+<li><strong>$\chi_{L} = 2\,\%$</strong> — S31's residual; <strong>it does not involve $e$ (§5).</strong></li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S30</strong> — the system, the map from equations to constants, and §3.3's two normalisations, which is where $c$'s row is decided.</li>
+<li><strong>S31</strong> — the method, the seeds, and §3.2's list of the six residual equations; §6.2's equipartition claim is S31 §3.2(b)'s.</li>
+<li><strong>S20, S21</strong> — $A$, and the éon's $\alpha$, $\beta$, $T_{0}$: the same three closed forms as this chapter's, and S20's constant is the table's $A$.</li>
+<li><strong>S34</strong> — the ledger this article's §7 feeds.</li>
+<li><strong>S35</strong> — $e$: the sixth row, computed downstream.</li>
+<li><strong>S43, R7, P1</strong> — the tower's $n = 3$ state, printed in this table and excluded by experiment.</li>
+<li><strong>S5</strong> — the notation hazards ($h$ vs $\hbar$, the $R$/$\mathcal{R}$ usage of the table, $m_{0}/\mu_{0}$).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

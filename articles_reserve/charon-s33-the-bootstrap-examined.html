@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — The Bootstrap Examined (S33) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-bootstrap-examined-s33">Charon — The Bootstrap Examined (S33)</h1>
+<p><em>Audits Esp 056's parameter-freedom claim — the </em>"bootstrap leptonique"<em> — against Esp 057 §1–§6's method and the counts of S30 and S31.</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim fails as written and survives as a weaker, true statement, and the difference between the two is one sentence long: the system has no free parameter <em>once six measured values are fixed and one suggested value is supplied</em>.</strong> Esp 056 says the Système $L$ <em>"ne dépend en fait d'aucun paramètre, puisque tous ceux qui figurent dans les équations sont finalement calculés par la solution du système d'équations"</em>, and calls it a <strong>lepton bootstrap in Chew's sense</strong>. <strong>The very next page of the corpus puts six numerical values in by hand and confines the search to $\pm10\,\%$ of them, and the page after that names the seventh ($\xi$) as a <em>"suggestion"</em> deduced from the nucleon mass.</strong> So the corpus's own text refutes its own claim, in the same chapter, and the refutation is not a matter of interpretation.</p>
+<p><strong>What is true, and worth stating first because it is not small: the model <em>is</em> closed.</strong> Given the six seeds, everything else — $\alpha$, $\beta$, $T$, $A$, $R_{0}$, $\mathcal{R}$, $l_{0}$, $k_{s}$, $k_{p}$, $W_{0e}$, $W_{0\mu}$, the tower — comes out of the corpus's own equations (S30 §4), and the twenty-equation system is self-consistent to the $2\,\%$ residual of a well whose depth is $50$ (S31). <strong>That is a closure property, it is unusual in a theory of this vintage, and S34's ledger counts it as the chapter's one asset.</strong> <strong>What is not true is the word <em>bootstrap</em>.</strong></p>
+<p><strong>Three things a bootstrap must do, and the corpus's system does none of them as stated</strong> (§5): it must need <strong>no external constants</strong> — the corpus's needs six measured ones and one suggestion; it must make the <strong>existence</strong> of its bound states follow from the same equations — the corpus's takes the lepton's existence and asks for its radius; and it must have a <strong>unique</strong> solution rather than a well inside a box — the corpus's claims uniqueness only <em>"dans la région analysée"</em>. <strong>So the honest formulation is: not a bootstrap, but a closed consistency system with six measured anchors and one suggested constant.</strong> That formulation is weaker, it is supported by everything in S30–S32, and it is what the register should carry.</p>
+<p><strong>And one further point that belongs in an audit of the word rather than of the model.</strong> Chew's bootstrap programme — the S-matrix, nuclear democracy, hadrons as each other's binding forces — was <strong>abandoned by the physics community in the early 1970s</strong>, when asymptotic freedom, the parton picture and colour made quarks the constituents. <strong>The corpus invokes it in 1983</strong>, a decade after the programme had been left behind, and invokes it for <em>leptons</em>, where Chew's own logic was about hadrons. <strong>So the claim's rhetorical support is itself dated, and the audit has to say so</strong> (§6) — not to score a point, but because a reader in 2026 who follows the reference will find a dead programme on the other end of it.</p>
+<h2 id="what-the-corpus-claims">What the Corpus Claims</h2>
+<p><strong>Esp 056, the claim, in full:</strong></p>
+<blockquote>
+<p>Ce qu'il y a de tout à fait remarquable dans le Système $L$ est qu'il ne dépend en fait d'aucun paramètre, puisque tous ceux qui figurent dans les équations sont finalement calculés par la solution du système d'équations. Le Système $L$ décrit donc un micro-univers ne reposant, pour sa représentation dans un modèle, que sur des principes de cohérence globale. En ce sens, nous pouvons dire que le Système $L$ représente un bootstrap leptonique, avec le sens qu'a donné Geoffrey Chew au mot « bootstrap » […] La solution du Système $L$ doit permettre le calcul direct de 5 des principales constantes physiques fondamentales, à savoir $c, h, m, \mu$ et $\tau_2$; par ailleurs, comme nous allons le voir au paragraphe 18.2, le Système $L$ conduit également au calcul de la charge électrique élémentaire $e$.</p>
+</blockquote>
+<p><strong>Esp 057 §1 and §4, which decide the question, and the corpus's own words about them:</strong></p>
+<blockquote>
+<p><strong>1)</strong> Donnons-nous un ensemble de six valeurs numériques […] correspondant respectivement aux valeurs des six paramètres : $h, c, m, \mu, \tau_2$ et $e$. […] <strong>4)</strong> […] choisissons un ensemble $P_0$ numériquement identique aux valeurs numériques expérimentales que l'on obtient pour ces six paramètres.</p>
+</blockquote>
+<p><strong>Esp 057, on $\xi$ — the seventh, and the corpus's own label for it:</strong> <em>"cette valeur numérique de $\xi$ déduite de $M_0$ n'est bien qu'une « suggestion »"</em>.</p>
+<p><strong>Tags.</strong> The <strong>closure</strong> is <strong>[MATH]</strong>. The <strong>claim of parameter-freedom</strong> is <strong>[SPEC]</strong> and, as written, is <strong>refuted by the corpus's own next two pages</strong> — which puts it in the unusual position of a claim whose refutation is a quotation rather than a computation. <strong>Rule R5 requires the trace: this article's verdicts trace to §13.3's findings and to S30–S32.</strong></p>
+<p><strong>Scope.</strong> S30 states the system, S31 audits the numerical method, S32 gives the constant-by-constant table, S34 counts inputs and outputs in the master ledger. <strong>This article is the <em>claim</em> — the sentence, the word, and the three conditions the word implies.</strong></p>
+<h2 id="1-the-claim-split-into-three-parts">1. The Claim, Split Into Three Parts</h2>
+<p><strong>"The Système $L$ depends on no parameter" is three statements in one sentence, and separating them is what makes the audit possible.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>part</th>
+<th>the statement</th>
+<th>where it is tested</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>(a)</strong></td>
+<td><em>no parameter appears in the equations</em></td>
+<td>the roster L1–L17 (S30 §1)</td>
+<td><strong>false as written</strong> — $\alpha$, $\beta$, $A$, $R_{0}$, $\mathcal{R}$, $\xi$, $K$, $T$ all appear; §2</td>
+</tr>
+<tr>
+<td><strong>(b)</strong></td>
+<td><em>everything that appears is computed by the solution</em></td>
+<td>Esp 057 §1 (the seeds) and §2 (the forward solution)</td>
+<td><strong>true relative to the seeds</strong> — $\alpha$, $\beta$, $T$ are closed forms in the seeded masses (S30 §5.1); §3</td>
+</tr>
+<tr>
+<td><strong>(c)</strong></td>
+<td><em>so the six constants are computed</em></td>
+<td>Esp 057 §1, Esp 058's table</td>
+<td><strong>false</strong> — five of the six are seeds and the sixth is not in the system (S32); §4</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read with (a) dropped as a wording slip, the claim becomes (b), and (b) is a real statement about the system.</strong> <strong>Read with (c) attached, it is the constants claim, and S32 settles it row by row.</strong> <strong>So this article's work is: to show that (b) is true, that (c) is not, and that the word <em>bootstrap</em> is about (c)'s kind of claim and not (b)'s.</strong></p>
+<h2 id="2-part-a-aucun-parametre">2. Part (a): "Aucun Paramètre"</h2>
+<p><strong>The equations carry eight symbols that are not numbers, and the corpus's sentence is wrong at the level of what is on the page.</strong> The roster's own header defines $\xi$; L1 carries $\alpha$, $\beta$, $R_{0}$, $K$ and $\Lambda$; L7 and L8 carry $h$, $c$, $m$, $\mu$, $\tau_{n}$; L16 and L17 carry $c$ and $l_{0}$; the actions carry $W_{0m}$ and $W_{0\tau_{n}}$.</p>
+<p><strong>What the corpus means, and it is worth giving it fairly, is that none of those is a <em>free</em> parameter: each is either a definition (S30 §5), an output of the solution, or one of the six seeds.</strong> That is a statement about the <em>system's closure</em>, not about the <em>appearance of symbols</em>, and <strong>it is (b) restated.</strong> So (a) is a wording slip with a substantive claim behind it, and the audit should treat it as (b).</p>
+<h2 id="3-part-b-calcules-par-la-solution-true-relative-to-the-seeds">3. Part (b): "Calculés par la Solution" — True, Relative to the Seeds</h2>
+<p><strong>The forward solution is real and it is the corpus's own (Esp 057 §2), and S30 §5.1 turns three of its steps into closed forms:</strong></p>
+<p>$$T = \frac{2h}{c^{2}(\tau-\mu)}, \qquad \alpha = \frac{m+3\mu-2\tau}{4\pi^{2}}, \qquad \beta = -\frac{h}{4\pi^{3}c}\left(1-\varepsilon\right)$$</p>
+<p><strong>Every symbol on the right-hand side is a measured quantity</strong> ($h$, $c$, the three lepton masses) <strong>or a definition</strong> ($\varepsilon$, $T$). <strong>So the internal constants are consequences of the seeds — exactly, algebraically, with no fitting.</strong> <strong>That is the true content of <em>"calculés par la solution"</em>, and it is a genuine property of the system:</strong> change the seeds and the internal constants change with them, computed rather than adjusted.</p>
+<p><strong>And the same is true of the rest of the output list</strong>: $R_{0}$, $\mathcal{R}$, $A$ and the waveform come from L1–L6; $k_{s}$, $k_{p}$ from L13–L15; $W_{0e}$, $W_{0\mu}$ from L9–L12; $l_{0}$ and $\xi$ from L17; $\tau_{3}$ from (244). <strong>S30 §4's map is the full diagram, and its diagnostic property is that every constant appears on both sides of it</strong> — which is precisely what makes it a closure diagram. <strong>And it is also what makes it unable to <em>test</em> the seeds: a system that computes everything from the seeds cannot also compute the seeds.</strong></p>
+<h2 id="4-part-c-the-six-constants-and-the-count">4. Part (c): the Six Constants, and the Count</h2>
+<p><strong>The count is S34's, and this article states it only far enough to close the claim.</strong> Esp 057 §1 puts in $h, c, m, \mu, \tau_{2}, e$; Esp 057 names $\xi$ as a suggestion from $M_{0}$; <strong>and S32 shows row by row that $h, m, \mu, \tau_{2}$ are the measured input values, $e$ is seeded and computed downstream (§18.2) to the claimed $2{,}3\,\%$ (S35: $+1{,}82\,\%$ on the charge recomputed), and $c$ is defined by the system's own normalisation equation L16.</strong> So:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>count</th>
+<th>items</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>in</strong></td>
+<td>six measured values (Esp 057 §1) $+$ one suggested constant $\xi$ (Esp 057)</td>
+</tr>
+<tr>
+<td><strong>out, internal</strong></td>
+<td>$\alpha$, $\beta$, $T$, $A$, $R_{0}$, $\mathcal{R}$, the waveform, $k_{s}$, $k_{p}$, $W_{0e}$, $W_{0\mu}$ — <strong>all computed from the seeds</strong></td>
+</tr>
+<tr>
+<td><strong>out, and comparable with nature</strong></td>
+<td>$e$ (downstream; $2{,}3\,\%$ claimed, $+1{,}82\,\%$ recomputed — S35); $l_{0}/\xi$ (L17, $2{,}6\,\%$ from its own geometry — S30 §3.3)</td>
+</tr>
+<tr>
+<td><strong>out, and excluded by nature</strong></td>
+<td>$\tau_{3} = 3{,}47$ GeV — the tower's only unseeded state (R7, P1, S43)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the claim of six computed constants has six terms, of which five are inputs, one is a definition, and none is a prediction of a <em>new</em> measured quantity.</strong></p>
+<h2 id="5-chews-bootstrap-and-what-the-corpuss-would-have-to-be">5. Chew's Bootstrap, and What the Corpus's Would Have to Be</h2>
+<p><strong>Chew's programme, compressed to what the corpus is invoking:</strong> the strong interactions are to be understood from a self-consistency condition in which each hadron <em>is</em> a composite of the others, with no elementary constituents; a particle is "elementary" only if it is not generated by the same dynamics that generates everything else; the criterion is <em>nuclear democracy</em>, and the tool was the $S$-matrix with its bootstrap equations. <strong>Three structural requirements follow, and they can be checked against the Système $L$ without any interpretation.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>requirement</th>
+<th>Chew's bootstrap</th>
+<th>the Système $L$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>no external constants</td>
+<td>required absolutely — the hadrons are the forces</td>
+<td><strong>six measured values plus one suggestion</strong>; ✗</td>
+</tr>
+<tr>
+<td>the <em>existence</em> of the objects follows from the dynamics</td>
+<td>required — that is what "generated by the dynamics" means</td>
+<td>the lepton's existence is assumed; the system computes its radius and mass relations; ✗</td>
+</tr>
+<tr>
+<td>a unique solution</td>
+<td>required — the bootstrap equations select the spectrum</td>
+<td>uniqueness claimed only <em>"dans la région analysée"</em>, a $3^{6}$ grid (S31 §3.4); ✗</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>None of the three is met, and the third is the one the corpus's own words concede.</strong> <strong>So the word <em>bootstrap</em> is not supported by the system; what is supported is "a closed, over-determined consistency system anchored on measured values".</strong> <em>The distinction matters for the ledger: a bootstrap's outputs are predictions, a consistency system's outputs are re-expressions, and S34's tags differ accordingly.</em></p>
+<h2 id="6-the-fate-of-the-word-a-dated-programme">6. The Fate of the Word: a Dated Programme</h2>
+<p><strong>A reader who follows <em>"avec le sens qu'a donné Geoffrey Chew au mot bootstrap"</em> will find a programme that no longer exists, and for reasons that were understood before 1983.</strong></p>
+<ul>
+<li><strong>Chew's bootstrap and the $S$-matrix programme were the mainstream route to the strong interaction from the late 1950s to the early 1970s</strong>, and their abandonment was not a philosophical choice: <strong>deep-inelastic scattering (1968–) revealed point-like constituents, and asymptotic freedom (1973) gave QCD a calculable high-energy limit, with colour and confinement accounting for what the bootstrap was meant to explain.</strong> <em>Nuclear democracy</em> was the casualty; quarks were the constituents whose absence the bootstrap programme had required.</li>
+<li><strong>Chew's logic was also about hadrons</strong>, whose strong binding could in principle generate them from each other. <strong>The lepton sector has no analogue of that binding</strong>: the corpus's own L1 makes the lepton a pulsating closed universe whose dynamics are fixed by its own constants, not by the exchange of other leptons. <strong>So even in its own terms, the analogy is one analogy too far.</strong></li>
+</ul>
+<p><strong>Recorded because it is part of the claim's status, and not as a rhetorical point: the corpus's 1983 invocation is a reference to a programme that had already been abandoned, applied to a sector where its central mechanism has no counterpart.</strong> <strong>The system stands or falls on its own equations — and S30, S31 and S32 audit exactly that.</strong></p>
+<h2 id="7-what-survives-the-closure-property-and-the-one-real-test">7. What Survives: the Closure Property, and the One Real Test</h2>
+<p><strong>Two things survive, and the second is where the claim could have earned itself.</strong></p>
+<p><strong>(1) The closure property, exactly as S34 states it: one defined constant, five measured seeds, one suggested constant, and a $2\,\%$ self-consistency residual whose well is $50$ deep.</strong> <strong>That is the chapter's asset</strong> — a single model that reproduces three lepton masses' relations, the charged-lepton geometry's own $l_{0}$ to $2{,}6\,\%$ (S30 §3.3), the printed relativistic coefficients to $0{,}2\,\%$ (S32 §6.2), and $e$ to the $2{,}3\,\%$ the corpus claims (S35: $+1{,}82\,\%$ on the charge). <strong>No bootstrap is needed for that to be worth having.</strong></p>
+<p><strong>(2) The one genuine test of a bootstrap-shaped system is a <em>new state</em>: a state its own dynamics requires and the seeds do not contain.</strong> <strong>The Système $L$ has exactly one such state — the tower's $n = 3$ — and the corpus prints it ($6{,}184\times10^{-24}$ g $= 3{,}47$ GeV), and experiment excludes it</strong> (R7, P1, S43). <strong>So the system's single predictive opportunity was taken and failed</strong>, and that is a cleaner statement of the chapter's standing than either "bootstrap" or "not a bootstrap". <strong>Recorded as the bridge from this article to P1.</strong></p>
+<h2 id="8-verdict">8. Verdict</h2>
+<p><strong>The claim is false as written, its substantive core is true and worth stating precisely, and the word <em>bootstrap</em> is wrong in three separate ways.</strong></p>
+<ul>
+<li><strong>(a) <em>"Aucun paramètre"</em>: false as written.</strong> Eight symbols appear in the equations; the claim is about their being <em>free</em>, not about their appearance (§2). <strong>Wording slip, substantive claim preserved as (b).</strong></li>
+<li><strong>(b) <em>"Calculés par la solution"</em>: true, relative to the seeds.</strong> $T$, $\alpha$, $\beta$ are exact closed forms in the measured seeds (S30 §5.1); the rest of the output list follows from L1–L17 (S30 §4). <strong>A real closure property.</strong></li>
+<li><strong>(c) <em>The six constants</em>: false.</strong> Five are seeds, $c$ is the system's own definition, $e$ is seeded and computed downstream, and $\xi$ is the corpus's own <em>"suggestion"</em> (§4, S32, S34).</li>
+<li><strong>The word <em>bootstrap</em> fails on three counts</strong> (§5): six external measured anchors plus one suggestion; the objects' existence assumed rather than generated; uniqueness only inside a $3^{6}$ grid in a $\pm10\,\%$ box.</li>
+<li><strong>The word is also dated</strong> (§6): Chew's programme was abandoned a decade before 1983, for reasons (partons, asymptotic freedom, colour) that are established physics, and it was about hadrons, where the corpus's own mechanism has no lepton analogue.</li>
+<li><strong>What survives is the closure property</strong> (S34: 1 defined, 5 measured seeds, 1 suggested, 0 independent outputs) <strong>and the one predictive opportunity the system took — the third tower state — which experiment excludes</strong> (R7, P1, S43).</li>
+<li><strong>Tag:</strong> the closure <strong>[MATH]</strong>; the parameter-freedom claim <strong>[SPEC]</strong>, refuted by the corpus's own Esp 057 §1; the Chew identification <strong>[SPEC]</strong>, dated and inapplicable.</li>
+<li><strong>Rule R1's count, in one line:</strong> <em>the Système $L$ is a closed consistency system with six measured anchors and one suggested constant; it computes its internal constants exactly, and it predicts no new measured quantity other than the third tower state, which is excluded.</em></li>
+</ul>
+<p><strong>Part S / Part P.</strong> <strong>Part S: the closure property, the closed forms, the counts, the historical note — all checkable.</strong> <strong>Part P: the parameter-freedom claim and the Chew identification</strong> — the first refuted by the corpus's own next two pages, the second inapplicable to a sector whose mechanism has no counterpart in the programme invoked.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The claim <em>"il ne dépend en fait d'aucun paramètre"</em> is false as written, true in a weaker form, and the word <em>bootstrap</em> is wrong in three separate ways.</strong> Separated into its three parts: (a) <em>no parameter appears</em> — false, eight symbols appear; (b) <em>everything is computed by the solution</em> — <strong>true relative to the seeds</strong>, since $T$, $\alpha$, $\beta$ are exact closed forms in the measured lepton masses; (c) <em>the six constants are computed</em> — false (S32). <strong>Chew's bootstrap needs no external constants, needs its objects' existence to follow from the dynamics, and needs a unique solution; the Système $L$ has six measured anchors plus one suggestion, assumes the lepton, and claims uniqueness only inside a $3^{6}$ grid in a $\pm10\,\%$ box.</strong> <strong>The invocation is also dated: the $S$-matrix bootstrap programme was abandoned a decade before 1983, for reasons (partons, asymptotic freedom, colour) that are established physics.</strong> What survives is the closure property — a closed consistency system with six measured anchors and one suggested constant, self-consistent to the $2\,\%$ residual of a well $50$ deep — and the single predictive opportunity the system took, the third tower state at $3{,}47$ GeV, which experiment excludes (R7, P1, S43).</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<ul>
+<li><strong>parameter-freedom</strong> — Esp 056's claim that the Système $L$ <em>"ne dépend en fait d'aucun paramètre"</em>; split here into (a) appearance, (b) computation from the seeds, (c) the six constants.</li>
+<li><strong>bootstrap</strong> — Chew's self-consistency programme: every hadron composite of the others, no elementary constituents, nuclear democracy, the $S$-matrix. <strong>Three requirements listed in §5; none met.</strong></li>
+<li><strong>the seeds</strong> — $h, c, m, \mu, \tau_{2}, e$ (Esp 057 §1), <em>"numériquement identique aux valeurs numériques expérimentales"</em> (§4).</li>
+<li><strong>the suggestion</strong> — $\xi$, from $M_{0}$ (Esp 057); equivalent to $l_{0}$ and $\Omega_{0}$ (S32's row 7).</li>
+<li><strong>closure property</strong> — S34's formulation: 1 defined, 5 measured seeds, 1 suggested, 0 independent outputs.</li>
+<li><strong>$\tau_{3}$</strong> — the tower's $n = 3$ state, $6{,}184\times10^{-24}$ g $= 3{,}47$ GeV, printed by the corpus and excluded by experiment (R7, P1, S43).</li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S30</strong> — the system, the map from equations to constants, and §5.1's closed forms, which are (b)'s evidence.</li>
+<li><strong>S31</strong> — the method: the seeds, the $\pm10\,\%$ box and the <em>"dans la région analysée"</em> qualifier, which is §5's third row.</li>
+<li><strong>S32</strong> — the six constants row by row; (c) is settled there.</li>
+<li><strong>S34</strong> — the ledger and the exact count.</li>
+<li><strong>S35</strong> — $e$: the one output compared with nature.</li>
+<li><strong>R7, P1, S43</strong> — the third tower state, and the reason §7's "one predictive opportunity" failed.</li>
+<li><strong>S6, §7</strong> — the gate discipline this article's verdicts are written against.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

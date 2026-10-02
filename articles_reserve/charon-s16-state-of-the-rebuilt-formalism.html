@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — State of the Rebuilt Formalism (S16) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-state-of-the-rebuilt-formalism-s16">Charon — State of the Rebuilt Formalism (S16)</h1>
+<p><em>Audits the formalism block S5–S15 as a whole. Feeds S59 (the numerical ledger) and S58 (the rebuilt theory).</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>This article states what the corpus's formalism block — the field equations, the source, the curvature law, the quantisation and the action principle, chapters II and III — actually closes, what does not close, and what was silently chosen.</strong> <strong>It is the block's own balance sheet, and it is written to be the page S59 consults.</strong></p>
+<p><strong>Its relevance to the programme's judgement is direct.</strong> <strong>The corpus's claim is not a collection of results; it is an <em>axiomatic reconstruction</em> — a small number of principles from which physics follows.</strong> <strong>So the honest test of the claim is not whether any one formula is right, but whether the principles close, and whether the closure was <em>derived</em> or <em>chosen</em>.</strong> <strong>That test is run here for the block.</strong></p>
+<h2 id="part-1-what-closes">Part 1 — What Closes</h2>
+<p><strong>Five things close, and four of them are [EST]/[MATH].</strong></p>
+<ol>
+<li><strong>The geometric side is closed by theorem.</strong> <strong>(2-2)–(2-4)</strong> state Cartan's conditions correctly, and the Cartan–Lovelock uniqueness theorem then fixes the left-hand side up to $\Lambda$ <strong>with no room to add anything</strong> — <strong>the corpus's own load-bearing sentence: <em>"Les conditions de Cartan conduisent univoquement à la formulation usuelle de la Relativité générale."</em></strong> <em>(S7.)</em> <strong>[EST]/[MATH].</strong></li>
+<li><strong>The curvature law closes <em>given</em> the source.</strong> <strong>$R = \xi^{2}\rho^{2} + 4\Lambda$ (2-72)</strong> follows from the field equations and the chosen $T_{\alpha\beta}$. <strong>[MATH] within the corpus.</strong></li>
+<li><strong>The quantum equation closes by identification, and is a known equation.</strong> <strong>(2-13): $\Box^{2}U + (R-4\Lambda)U = 0$</strong>, with $R - 4\Lambda = M_{0}^{2}c^{2}/\hbar^{2}$ <strong>exactly</strong>. <strong>This is the Klein–Gordon equation for a massive scalar.</strong> <em>(S14, S15.)</em> <strong>[MATH]/[EST].</strong></li>
+<li><strong>The action-density construction is correct mathematics.</strong> $U = dA/dV_{4}$ with $A$ invariant and $dV_{4}$ of pseudo-scalar weight $-1$ gives $U$ of weight $+1$, <strong>Lorentz-invariant in the normal tangent space $\eta_{P}$</strong> — <strong>and the corpus's weight argument is right.</strong> <em>(S14.)</em> <strong>[MATH].</strong></li>
+<li><strong>The cosmological first integral closes, and it checks numerically.</strong> <strong>$A = S = P = 0$ (5-45)</strong> gives the zero-total-energy identity (5-46), <strong>which S50 verified to the correct factor against the corpus's own published $\rho$, $M$ and $R$.</strong> <strong>This is the block's one identity that can be checked against numbers, and it passes.</strong> <strong>[MATH] within the corpus.</strong></li>
+</ol>
+<p><strong>And the block delivers one genuinely elegant result that the register does not yet carry.</strong> <strong>Since $R - 4\Lambda = (M_{0}c/\hbar)^{2}$ exactly, the corpus's curvature at a point equals the inverse square of the reduced Compton wavelength of the mass there</strong> — verified <em>exactly</em> at the electron's proper density — with $\xi \equiv \Omega_{0}c/\hbar$ the two sides are one identity written twice <em>(S15)</em>. <strong>Mass <em>is</em> curvature in this framework, and $\xi \equiv \Omega_{0}c/\hbar$ is the definition that makes it so.</strong> <strong>A definition made to work, and it works.</strong></p>
+<p><strong>The oscillator is the same equation read dynamically</strong> <em>(S12)</em>: $\Box U + (M_{0}^{2}c^{2}/\hbar^{2})U = 0$ is Klein–Gordon with its mass supplied by the local curvature, and its period is the particle's own de Broglie phase cycle, $T = h/mc^{2}$, verified at the electron. <strong>So the corpus's "pulsation of the micro-universe" is not an extra process; it is the phase clock read geometrically.</strong> <strong>And one notation point belongs here rather than only in S5: the corpus writes the operator $\Box^{2}$ and defines it twice as the <em>ordinary second-order</em> d'Alembertian (Hazard 7), so a fourth-order reading of this equation is a misreading rather than a corpus error.</strong></p>
+<h2 id="part-2-what-does-not-close">Part 2 — What Does Not Close</h2>
+<p><strong>Five things do not close, and they are all in the sector the block was built to carry.</strong></p>
+<ol>
+<li><strong>The source tensor cannot source the cosmology.</strong> <strong>$T_{\alpha\beta} = \xi^{2}\rho^{2}u_{\alpha}u_{\beta}$ is quadratic in the density and has no independent pressure</strong>, so it does not reproduce the standard Friedmann pair — <strong>the tension §2.2 flags and S8 audits.</strong> <strong>Compounded by S7's dimensional finding: the same $\rho^{2}$ form is not a physical energy-momentum tensor except at the single density $\rho_{*} = 8\pi G/(c^{2}\xi^{2}) = 4{,}0\times10^{-21}$ g cm$^{-3}$.</strong> <strong>The block's single load-bearing equation is the one that fails.</strong></li>
+<li><strong>The spin sector fails at its own predictions.</strong> <strong>The fusion machinery's parity rule puts the muon and the tau at spin $\tfrac{3}{2}$ and $\tfrac{5}{2}$; both are measured spin-$\tfrac{1}{2}$</strong> (P23). <strong>And the pulse's claim to source gravity is P24.</strong> <em>(S11, S15.)</em></li>
+<li><strong>The negative-energy licence is spent outside the sector that grants it.</strong> <strong>(2-54) conserves $\rho^{2}$, making $\rho$'s sign non-physical; the cosmology then reads a physical sign into it</strong> <em>(S13)</em> — <strong>a sign that is in fact fixed by a stipulation (S50), not by the licence.</strong></li>
+<li><strong>The axiomatics cannot be enumerated.</strong> <strong>Axiome 3 is two different axioms, Axiome 5 is unprinted, Axiome 4 is admitted rather than derived, Axiome 2 is idle where it was to replace $T_{\mu\nu}$, and the 1983 book prints $\hbar = 2\pi\hbar$.</strong> <em>(S15.)</em> <strong>A foundation that cannot be listed cannot be checked.</strong></li>
+<li><strong>The variational principle does not do the work it was introduced for.</strong> <strong>In the quantum sector the equation $U$ obeys comes from an identification labelled "conditions suffisantes, sinon nécessaires"; in the cosmology the action is used to obtain a first integral.</strong> <em>(S14.)</em></li>
+</ol>
+<h2 id="part-3-the-silent-choices-and-the-ledger">Part 3 — The Silent Choices, and the Ledger</h2>
+<p><strong>This is the article's centrepiece.</strong> <strong>Six choices carry the block, and each is individually reasonable, declared somewhere, and <em>underived</em>.</strong> <strong>They are the block's real content, and a reader who wants to know what the corpus <em>adds</em> to established physics must read this list rather than the equations.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>the choice</th>
+<th>where</th>
+<th>what depends on it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$T_{\alpha\beta} = \xi^{2}\rho^{2}u_{\alpha}u_{\beta}$ — "the simplest form"</td>
+<td>(4-2), Esp (334)</td>
+<td><strong>Everything.</strong> The source's $\rho^{2}$ form is why the coupling moves into the source (S7), why the Friedmann pair fails (S8), and why $G$ cannot be computed (S39)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>the tangent-space identification $\mathbb{T}_{\alpha\alpha}U = -\partial^{2}_{\alpha}U$, $R-4\Lambda = C_{1}$, $C_{n} = 0$</td>
+<td>(2-12)</td>
+<td><strong>The quantum equation.</strong> The corpus labels it <em>"conditions suffisantes, sinon nécessaires"</em> — <strong>sufficient, if not necessary</strong>, its own words</td>
+</tr>
+<tr>
+<td>3</td>
+<td>the "simplest equation" (2-8) linearised</td>
+<td>(2-8), (2-13)</td>
+<td><strong>The same equation's form</strong> — as printed (2-8) is nonlinear in $U$ and (2-13) is linear (open transcription question, S14)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Axiome 4: spin and pulse split the action <em>exactly equally</em></td>
+<td>Esp 024, Axiome 4</td>
+<td><strong>The spin ladder</strong> (and P23); unobservable in the mass sector, false for the muon and tau (S11)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$\xi \equiv \Omega_{0}c/\hbar$</td>
+<td>(3-70)</td>
+<td><strong>The identity curvature $= (M_{0}c/\hbar)^{2}$</strong> — elegant, exact, and a definition rather than a derivation (S15)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>the normalisation $M_{0} = \Omega_{0}\rho$</td>
+<td>ch. II–III</td>
+<td><strong>The units of the whole scheme</strong>, dimensionally meaningful only within it; $(2\text{-}52\text{-}a)$'s "$M_{0}^{2}c^{2} = \Omega_{0}^{2}c^{2}$" reads as this normalisation at $\rho = 1$ (S13)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>And two further choices are generated by the block but belong to the later sectors, and both are already post-mortem or flagged:</strong> <strong>$T_{0}$</strong>, the common pulsation period, fitted to the $\tau$–$\mu$ mass difference <em>(S37)</em>; and <strong>$d_{0}$</strong>, the divisor in the hadron model, withdrawn by S39.</p>
+<p><strong>The cumulative statement, and it is the article's main finding.</strong></p>
+<blockquote>
+<p><strong>Every one of the corpus's six formal choices is individually defensible, and every one is declared somewhere in the printed text. But none is derived, and the choices are where the theory's content lives. The formalism does not <em>generate</em> its physics from principles; it <em>selects</em> it, principle by principle, and says so.</strong></p>
+</blockquote>
+<p><strong>That has a consequence the programme should state plainly.</strong> <strong>A framework whose content is in its choices cannot be assessed as a whole</strong> — there is no single derivation to check — <strong>but it can be assessed <em>choice by choice</em>, because each choice has a downstream consequence that is testable.</strong> <strong>And that is what this programme does: the eight R-chains of §12 each follow one choice to one number.</strong> <strong>So the corpus's structure is simultaneously the reason it cannot deliver its ambition and the reason it can be adjudicated at all.</strong></p>
+<h2 id="part-4-the-balance-sheet">Part 4 — The Balance Sheet</h2>
+<p><strong>The corpus's ambition, stated at its strongest.</strong> <strong>A complexified spacetime, with an imaginary sheet at every real point, unifying the geometric and the quantum without adding a field to the geometric sector — and it takes over Einstein's left-hand side on the strength of a real theorem, deliberately confining its new physics to the source where it can be tested (S7).</strong> <strong>That is an ambitious, coherent and non-trivial programme, and the theorem-backed geometry is a genuinely unusual piece of discipline.</strong></p>
+<p><strong>What it delivers, in numbers and in structure.</strong> <strong><em>One</em> derived number survives the lepton sector ($\alpha$, S35); the block itself produces <em>no</em> number that is not an input; two choices are post-mortem ($T_{0}$, $d_{0}$); the source cannot source the cosmology; and the axiomatics cannot be listed.</strong> <strong>The block's real yields are qualitative, and they are not nothing: an exact geometric reading of mass; two identities that check numerically; a correct weight argument; and a conservation law ($\rho^{2}$) that answers a real objection better than the naive reading does.</strong></p>
+<p><strong>So the honest verdict, and it is the answer to "was the claim delivered as announced".</strong> <strong>The announced claim was an axiomatic reconstruction of physics from a complexified geometry.</strong> <strong>What was delivered is a coherent re-reading of established formalism in geometric language — Klein–Gordon with a geometric mass term, general relativity with a hand-written source — together with a set of declared choices, an unenumerable axiomatics, and no new observable prediction from the block.</strong> <strong>The ambition was to <em>derive</em>; the delivery is to <em>re-interpret and select</em>.</strong> <strong>That is a real gap, and it is the specific gap this article documents.</strong></p>
+<p><strong>And one thing should be said in the corpus's favour, because the balance sheet would otherwise be misleading.</strong> <strong>A programme that reinterprets known formalism and declares its choices can still contain a live idea, and this one does: the curvature-as-mass identity, the $\rho^{2}$ conservation law, and — outside this block — the $\dot{G}/G$ prediction (S40) and the bounce as a physical notion (S51).</strong> <strong>The fault is not that the corpus has nothing; it is that what it has is <em>less</em> than what it claimed, and this programme's job is to say which is which.</strong></p>
+<h2 id="the-blocks-positives-updated-after-s12s19">The Block's Positives, Updated after S12–S19</h2>
+<p><strong>This paragraph is added because the batch that wrote S12, S17, S18 and S19 produced four derivation-level results in the micro-universe block, and this page is the block's ledger, so they belong here and not only in their own articles.</strong> <strong>All four are exact, all four are <em>true of the model</em> rather than of nature, and none of them is the kind of number the corpus could have got wrong without noticing:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>result</th>
+<th>statement</th>
+<th>data in it?</th>
+<th>source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>curvature $=$ Compton</td>
+<td>$R - 4\Lambda = (M_{0}c/\hbar)^{2}$</td>
+<td>none; an identity</td>
+<td>S15</td>
+</tr>
+<tr>
+<td>the phase clock</td>
+<td>the oscillator period is $h/mc^{2}$</td>
+<td>none; an identity</td>
+<td>S12</td>
+</tr>
+<tr>
+<td>$e^{\pi}$</td>
+<td>$R_{\max}/R_{0} = e^{\pi}$, préon</td>
+<td>none; forced by the closure integral</td>
+<td>S18</td>
+</tr>
+<tr>
+<td>the golden ratio</td>
+<td>$Y = \sqrt{\varphi}$, préon orbit</td>
+<td>none; forced by the orbit condition</td>
+<td>S18</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>And one that is <em>not</em> an identity, which is why it belongs in a different column: the charged-lepton mass differences predict $\alpha_{\rm em}$ to $2\,\%$</strong> <em>(S19)</em> — unfitted, cross-sector, and the strongest numerical entry the micro-universe block has. <strong>It is a success of a model whose internal neutrino is falsified (P8), so it must be quoted with its error stated as $2\,\%$ in $e$ ($4\,\%$ in $\alpha_{\rm em}$) and with the fitted eccentricity of S19 §4 kept out of the ledger.</strong> <strong>That eccentricity is P3's parameter and is falsified there — the sharpest single instance in the corpus of the fitted-versus-predicted pattern (P20).</strong></p>
+<p><strong>What this does to the verdict.</strong> <strong>It does not change the verdict.</strong> <strong>Four exact results — five if the cosmology's (5-46) is counted — and still no number the theory derives about nature that is not an input.</strong> <strong>What it changes is the tone the verdict can be stated in: "closes by selection" is the right verdict about the <em>ambition</em>, and it is a verdict about a framework with real internal content — which is why the audit is worth doing choice by choice at all.</strong></p>
+<h2 id="verdict">Verdict</h2>
+<p><strong>A disciplined framework that closes by selection rather than derivation, with six declared choices carrying its content and one elegant identity to its credit.</strong></p>
+<ul>
+<li><strong>Closes:</strong> the geometric side (theorem), the curvature law (given the source), the quantum equation (Klein–Gordon with a geometric mass), the action-density weight argument, and the cosmological first integral (verified numerically by S50).</li>
+<li><strong>Does not close:</strong> the source's fitness as an energy-momentum tensor; the spin sector's own predictions; the negative-energy licence's transfer to the cosmology; the axiomatics; the variational principle's advertised role.</li>
+<li><strong>Silently chosen:</strong> six formal choices, tabulated above, plus $T_{0}$ and $d_{0}$ downstream — <strong>all declared in the text, none derived.</strong></li>
+<li><strong>Yields:</strong> mass = curvature (exact, elegant); the oscillator's period as the de Broglie phase clock; the $\rho^{2}$ conservation law (a real answer to a real objection); and $\Box^{2}$ fixed as the ordinary d'Alembertian, so the oscillator is Klein–Gordon and not a fourth-order equation. <strong>No number of its own.</strong></li>
+<li><strong>Feeds S59</strong> with the ledger of what closes, and <strong>S58</strong> with the choices that any rebuilt statement of the theory must make explicit.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<ul>
+<li><strong>Block</strong> — the formalism of RC ch. II–III and Esp §§I–II: field equations, source, curvature law, quantisation, action principle. <strong>Not</strong> the micro-universe (S17–S28) or the cosmology (S29–S52).</li>
+<li><strong>Silent choice</strong> — a construction the corpus adopts, states, and does not derive; <strong>the block's content lives here.</strong></li>
+<li><strong>Closes / does not close</strong> — whether the construction is internally consistent and reproduces the corpus's own stated requirements, <strong>not</strong> whether it is observed.</li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S7, S8, S10</strong> — the field equations, the source against Friedmann, and the curvature law.</li>
+<li><strong>S11, S12</strong> — the quantisation audit and the oscillator/fusion machinery.</li>
+<li><strong>S13, S14, S15</strong> — the licence, the action principle and the axioms, audited in turn.</li>
+<li><strong>S34, S59</strong> — the input/output ledger for constants, and the numerical ledger this article feeds.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

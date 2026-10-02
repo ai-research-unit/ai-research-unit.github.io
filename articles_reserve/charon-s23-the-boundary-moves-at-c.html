@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — The Boundary Moves at $c$ (S23) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-boundary-moves-at-math0-s23">Charon — The Boundary Moves at $c$ (S23)</h1>
+<p><em>Audits §3.9 and §10.8 of <code>CHARON_IDEAS_AND_CLAIMS.md</code>, against RC ch. III and IV (scans 044, 048, 063, 068) and Esp §VI–VIII.</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The register's verdict on §10.8 — <em>"the 'c at the boundary' condition is a hard-coded closure hypothesis ([SPEC]); the resulting $0{,}92$ fm happens to match the proton size. This is the clearest place where an arbitrary convention yields a real number"</em> — is right about the real sheet and wrong about the imaginary one, and the difference is worth an article because it splits one assumption into two.</strong></p>
+<p><strong>On the imaginary sheet, $R' = \pm c$ is not assumed.</strong> <strong>Setting $\alpha = \beta = \Lambda = 0$ in the evolution equation (3-32) collapses it to $R'^{2}/c^{2} = K$, and with $K = +1$ — the corpus's own finiteness condition (3-36) — that gives $R' = \pm c$ for all $\tau$.</strong> <strong>Two substitutions, no assumption.</strong> <strong>The corpus states it as an initial condition, (3-31), and RC 048 says it "se maintient quel que soit $\tau$"; it is neither initial nor maintained, it is derived.</strong></p>
+<p><strong>On the real sheet, $V_{r} = \pm c$ at the holon's boundary is stated flat, as (4-17-e), and it is exactly as arbitrary as the register says.</strong> <strong>So the correct form of §3.9 is: <em>the condition is derived where the density vanishes and imposed where it does not.</em></strong></p>
+<p><strong>And the second finding is about what the imposed version buys.</strong> <strong>The register calls $0{,}92$ fm <em>"the clearest place where an arbitrary convention yields a real number"</em>, and the article agrees — with the qualification that the real number is <em>one</em> number reported <em>twice</em>: $R_{H\max} = 9{,}19\times10^{-14}$ cm and $\lambda_{f} = 2R_{H\max} = 1{,}84\times10^{-13}$ cm are the same fact, so the "proton-size hit" and the "strong-range hit" that the register counts separately in R2 are a single coincidence.</strong> <strong>And its agreement is $9\,\%$ and order-of-magnitude, not the "correct observed range" the corpus claims.</strong></p>
+<h2 id="what-the-corpus-claims">What the Corpus Claims</h2>
+<p><strong>§3.9 — the pulsating boundary of every structure moves at exactly $\pm c$.</strong> RC (4-17-e); Esp §VII. <strong>Tag: [SPEC].</strong> The register's gloss: <em>"A hard-coded closure condition, not a result. It is what delivers $R_{\max} \approx 0{,}92$ fm (§5.3)."</em></p>
+<p><strong>§10.8 — singular fact: the boundary of every pulsating structure moves at exactly $\pm c$, and $R_{H\max}$ comes out $\approx 0{,}92$ fm.</strong> RC (4-17-e), (4-17-f). <strong>Tag: [MIX].</strong> The register: <em>"The 'c at the boundary' condition is a hard-coded closure hypothesis ([SPEC]); the resulting $0{,}92$ fm happens to match the proton size ([EST]-adjacent)."</em></p>
+<h2 id="1-the-two-numbers-exact-and-they-are-one-number">1. The Two Numbers, Exact, and They Are One Number</h2>
+<p><strong>RC 063:</strong></p>
+<p>$$(4\text{-}17\text{-}e)\quad V_{r} = \pm c, \qquad\qquad
+(4\text{-}17\text{-}f)\quad R_{H\max} = R_{H} + c\frac{T_{0}}{2} = 9{,}2\cdot10^{-14}\ \mathrm{cm}$$</p>
+<p><strong>RC 068:</strong></p>
+<p>$$(4\text{-}30)\quad \lambda_{f} = 2R_{H\max} = 2 \times 9{,}2\cdot10^{-14} = 1{,}84\cdot10^{-13}\ \mathrm{cm}$$</p>
+<p><strong>Both are exact arithmetic from the corpus's own $R_{H} = 1{,}8\times10^{-14}$ cm and $T_{0} = 4{,}93\times10^{-24}$ s:</strong></p>
+<p>$$c\frac{T_{0}}{2} = 7{,}3899\cdot10^{-14}\ \mathrm{cm} \;\Longrightarrow\; R_{H\max} = 9{,}1899\cdot10^{-14}\ \mathrm{cm} \;\text{(printed } 9{,}2\text{)} \;\Longrightarrow\; \lambda_{f} = 1{,}8380\cdot10^{-13}\ \mathrm{cm} \;\text{(printed } 1{,}84\text{)}$$</p>
+<p><strong>And the second of the two is by construction twice the first.</strong> <strong>$\lambda_{f} = 2R_{H\max}$ is not a second result; it is the same quantity.</strong> <strong>So the register's R2 entry, which lists "$R_{H} \approx 0{,}92$ fm" and "$\lambda_{f} \approx 2$ fm" as the chain's outputs, is listing one number in two units of a factor two apart.</strong></p>
+<p><strong>That matters for the count of the program's numerical hits.</strong> <strong>R2 is described in the register as <em>"the best numerical hit in the program"</em>; it is one coincidence, on one assumption, reported twice.</strong></p>
+<h2 id="2-the-narrowing-on-the-imaginary-sheet-the-condition-is-derived">2. The Narrowing: On the Imaginary Sheet the Condition Is Derived</h2>
+<p><strong>RC 044 states (3-32) and, in the same section, restricts the condition:</strong></p>
+<p>$$(3\text{-}32)\quad \frac{R'^{2}}{c^{2}} = \frac{1}{6}\frac{\xi^{2}}{R^{2}}\left[\alpha^{2}\left(\frac{3}{R_{0}^{2}} - \frac{1}{R^{2}}\right) - \frac{2\beta^{2}}{R_{0}^{4}}\right] + K + \frac{1}{3}\Lambda R^{2}$$</p>
+<blockquote>
+<p><em>"(e) Remarquons enfin que la condition initiale $R' = dR/d\tau = \pm c$ concerne seulement le cas d'un micro-universe Imaginaire où la densité propre $\rho$ est nulle (seulement un neutrino, pas de courbure riemannienne scalaire, pas de photons thermiques, voir ci-dessous)."</em></p>
+</blockquote>
+<p><strong>The restriction is the corpus's, and it is exactly the condition under which the derivation becomes trivial.</strong> <strong>At $\rho = 0$ the corpus has $\alpha = \beta = \Lambda = 0$ (RC 048: "les deux paramètres $\alpha$ et $\beta$ sont nuls … l'espace Imaginaire possède donc une densité $\rho$ nulle ($\alpha = 0$), et la température $\theta$ du rayonnement noir est également nulle ($\beta = 0$)").</strong> <strong>Substituting into (3-32):</strong></p>
+<p>$$\frac{R'^{2}}{c^{2}} = 0 + K + 0 = K = +1 \qquad\Longrightarrow\qquad R' = \pm c \quad\text{for all }\tau$$</p>
+<p><strong>So on the imaginary sheet $R' = \pm c$ is a <em>theorem</em> of the corpus's own equation, given the finiteness condition $K = +1$ that (3-36) already imposes for an independent reason.</strong> <strong>(3-31)'s initial condition is redundant for the préon: the equation supplies it.</strong></p>
+<p><strong>Two consequences, both positive and both worth recording.</strong></p>
+<ul>
+<li><strong>The préon's $e^{\pi}$ chain gains a link rather than losing one (S18).</strong> <strong>$R_{\max}/R_{0} = e^{\pi} = 23{,}14069$ follows from the closure integral $\int_{0}^{T}d\tau/R = 2\pi/c$ with a <em>derived</em> linear $R(\tau)$, so the chain "one quantum on a closed orbit in a finite micro-universe $\Rightarrow$ Euler's constant" contains one fewer assumption than S18 could claim.</strong></li>
+<li><strong>The corpus's own words support the reading, even though the corpus does not draw the conclusion.</strong> <strong>RC 048 says of the $\rho = 0$ solution that <em>"cet état $R' = \pm c$ se maintient quel que soit $\tau$"</em> — "maintains itself" — which is what a consequence does, not what an initial condition does.</strong></li>
+</ul>
+<p><strong>So §3.9's universal quantifier fails in two directions at once: the condition is <em>not</em> hard-coded where it is derived, and it is <em>not</em> universal where it is hard-coded.</strong> <strong>The second half is S20's:</strong></p>
+<p><strong>RC 052's éon table gives $R_{0} = 8{,}01\times10^{-15}$ cm and $\mathcal{R} = 4{,}82\times10^{-14}$ cm, so the éon's amplitude is $4{,}02\times10^{-14}$ cm against $cT_{0}/2 = 7{,}39\times10^{-14}$ cm — $54{,}4\,\%$ of it.</strong> <strong>The éon's boundary does not move at $c$, and the corpus's own equation says why: with $\beta \ne 0$ the bracket in (3-32) is not zero, so $R'^{2}/c^{2} = K + (\text{nonzero})$.</strong> <strong>§3.9's "every structure" should read "every structure of zero density".</strong></p>
+<h2 id="3-three-structures-three-pulsation-laws-one-derivation">3. Three Structures, Three Pulsation Laws, One Derivation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>sheet</th>
+<th>amplitude ratio</th>
+<th>law</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>préon</strong> ($\rho = 0$)</td>
+<td>imaginary</td>
+<td>$e^{\pi} = 23{,}14$</td>
+<td>$R' = \pm c$</td>
+<td><strong>derived</strong> from (3-32) at $\alpha = \beta = \Lambda = 0$, $K = +1$</td>
+</tr>
+<tr>
+<td><strong>éon</strong> ($\beta \ne 0$)</td>
+<td>imaginary</td>
+<td>$6{,}01$</td>
+<td>$R'^{2}/c^{2} = K + (\text{bracket})$</td>
+<td><strong>solved</strong> numerically from (3-32); amplitude $54{,}4\,\%$ of $cT_{0}/2$</td>
+</tr>
+<tr>
+<td><strong>holon</strong></td>
+<td>real</td>
+<td>$5{,}11$</td>
+<td>$R_{H\max} = R_{H} + cT_{0}/2$</td>
+<td><strong>imposed</strong> as (4-17-e), with no equation behind it</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three objects the corpus presents under one closure principle, three different laws, and only the first is a consequence of anything.</strong> <strong>The table is the article's summary, and it is also the register's §3.9 entry rewritten: what the corpus has is not one boundary condition applied everywhere but a single condition that is true of the degenerate solution, solved for the charged one, and assumed for the real one.</strong></p>
+<p><strong>And the holon's ratio, $R_{H\max}/R_{H} = 9{,}1899/1{,}8 = 5{,}11$, sits between the other two — which is worth one sentence because it is the reason the block looks coherent.</strong> <strong>The corpus's boundary argument is presented as one mechanism producing three scales; in fact the three ratios are $23{,}14$, $6{,}01$ and $5{,}11$, i.e. one derived number, one solved number, and one that is whatever $cT_{0}/2R_{H} + 1$ happens to be.</strong></p>
+<h2 id="4-what-the-imposed-version-buys-and-what-it-costs">4. What the Imposed Version Buys, and What It Costs</h2>
+<p><strong>Everything in R2 downstream of (4-17-e) rests on two ingredients, and neither is new.</strong></p>
+<p>$$R_{H\max} = R_{H} + \frac{cT_{0}}{2} \qquad\text{where}\qquad R_{H} = l_{0}\ \text{(the closure, S22)},\quad T_{0} = \frac{2h}{c^{2}(\tau-\mu)}\ \text{(the lepton fit, S21)}$$</p>
+<p><strong>So the "arbitrary convention yields a real number" is more precisely: an assumed equation applied to a closure-fixed length and a lepton-fitted period yields a number near the proton size.</strong> <strong>The two ingredients are the two the corpus fitted elsewhere — which is why R2 is a consistency check rather than a prediction, and why the register's own caveat (<em>"the number exists only because the boundary is hard-coded to move at $c$, so it is a consistency check more than a prediction"</em>) is the right verdict.</strong></p>
+<p><strong>The comparison, done honestly:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>corpus</th>
+<th>2020s reference</th>
+<th>ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R_{H\max}$</td>
+<td>$0{,}920$ fm</td>
+<td>proton charge radius $0{,}8414$ fm</td>
+<td>$+9{,}3\,\%$</td>
+</tr>
+<tr>
+<td>$\lambda_{f}$</td>
+<td>$1{,}84$ fm</td>
+<td>$\hbar/m_{\pi^{\pm}}c = 1{,}414$ fm (the textbook strong-interaction range)</td>
+<td>$+30\,\%$</td>
+</tr>
+<tr>
+<td>$\lambda_{f}$</td>
+<td>$1{,}84$ fm</td>
+<td>the nuclear-force range, often quoted as $\sim2$ fm</td>
+<td>$-8\,\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The corpus's own words at RC 068 are <em>"soit environ 2 fermis (ce qui est la portée correcte observée)"</em>.</strong> <strong>Against the pion's Compton wavelength — the range modern treatments quote — the figure is $30\,\%$ high; against the loose "$\sim2$ fm" it is $8\,\%$ low.</strong> <strong>So the hit is real at the order-of-magnitude level, which the register already says, and "correct" overstates it, which the register does not.</strong></p>
+<h2 id="5-a-singular-fact-the-corpus-does-not-notice">5. A Singular Fact the Corpus Does Not Notice</h2>
+<p><strong>$\lambda_{f}$ is dominated by $cT_{0}$, and $cT_{0}$ has a meaning nobody in the corpus remarks on.</strong></p>
+<p>$$\lambda_{f} = 2R_{H} + cT_{0} = 0{,}360\ \mathrm{fm} + 1{,}478\ \mathrm{fm} = 1{,}838\ \mathrm{fm}$$</p>
+<p><strong>The holon's own radius contributes $20\,\%$; the rest is $cT_{0}$, the distance light travels in the fitted éon period.</strong> <strong>And</strong></p>
+<p>$$cT_{0} = 1{,}478\ \mathrm{fm} \qquad\text{against}\qquad \frac{\hbar}{m_{\pi^{\pm}}c} = 1{,}414\ \mathrm{fm}$$</p>
+<p><strong>— $4{,}5\,\%$ apart, and the arithmetic reason is clean:</strong> $cT_{0} = 4\pi m_{\pi}/(\tau-\mu)$ times the pion Compton wavelength, and</p>
+<p>$$\frac{\tau - \mu}{m_{\pi^{\pm}}} = \frac{1671{,}2}{139{,}570} = 11{,}974$$</p>
+<p><strong>so $cT_{0} \approx (\pi/3)\times(\hbar/m_{\pi}c)$ because <em>the muon–tau mass difference is twelve pion masses</em>, to $0{,}2\,\%$.</strong></p>
+<p><strong>Recorded as a coincidence, in the register's P19 sense, and refused as anything else: nothing in the corpus mentions pions, $(\tau-\mu)/m_{\pi} \approx 12$ is a numerical accident of the charged-lepton and pion spectra, and the "strong-force range" hit that R2 counts is largely this accident wearing the holon's parameters.</strong> <strong>It is recorded because a coincidence that a programme does not notice is exactly the kind of thing the ledger exists to keep separate from its results — and because it sharpens the count: R2's hit is $cT_{0}$ near $\hbar/m_{\pi}c$, which is a statement about the lepton mass difference.</strong></p>
+<h2 id="6-verdict">6. Verdict</h2>
+<p><strong>§3.9 stands in part and must be re-stated; §10.8 stands with its count corrected.</strong></p>
+<ul>
+<li><strong>Derived, not assumed, on the imaginary sheet:</strong> at $\rho = 0$, (3-32) with $\alpha = \beta = \Lambda = 0$ and $K = +1$ gives $R' = \pm c$ for all $\tau$.<strong> </strong>So (3-31) is redundant for the préon, RC 044 (e) restricts the condition to exactly this case, and S18's $e^{\pi}$ chain gains a link.<strong> </strong>§3.9 should say <em>"derived where the density vanishes"</em>.**</li>
+<li><strong>Imposed, as the register says, on the real sheet:</strong> <strong>(4-17-e) $V_{r} = \pm c$ at the holon's boundary is stated with no equation behind it.</strong> <strong>§3.9 should say <em>"imposed where it does not"</em>.</strong></li>
+<li><strong>Not universal, contrary to §3.9's wording:</strong> <strong>the éon's amplitude is $54{,}4\,\%$ of $cT_{0}/2$ (S20), so "the boundary of every pulsating structure moves at $\pm c$" is false of one of the three structures the corpus itself tabulates.</strong></li>
+<li><strong>§10.8 confirmed and quantified:</strong> $R_{H\max} = 9{,}1899\times10^{-14}$ cm and $\lambda_{f} = 1{,}8380\times10^{-13}$ cm, both exact from $R_{H}$ and $T_{0}$; <strong>and they are one number, not two</strong> — so R2's "best numerical hit" is one coincidence reported twice.</li>
+<li><strong>Agreement, stated honestly:</strong> $+9{,}3\,\%$ against the proton charge radius, $+30\,\%$ against $\hbar/m_{\pi}c$, $-8\,\%$ against $\sim2$ fm. <strong>Order-of-magnitude, not "correct".</strong></li>
+<li><strong>New, and filed as a coincidence:</strong> $\lambda_{f}$ is essentially $cT_{0} = 1{,}478$ fm, within $4{,}5\,\%$ of the pion Compton wavelength because $(\tau-\mu)/m_{\pi} = 11{,}974$.</li>
+<li><strong>§3.9's tag stays [SPEC]; §10.8's stays [MIX].</strong> <strong>Neither is upgraded: deriving $R' = \pm c$ on the imaginary sheet does not help the real sheet, where the number that matters is produced.</strong></li>
+</ul>
+<p><strong>And the ledger consequence, which is the reason this article sits at the head of R2.</strong> <strong>Three pulsation laws where the corpus presents one principle; a derived condition on a solution that P8 deletes (S17); an imposed condition producing one number reported twice; and that number's neighbours $9\,\%$ and $30\,\%$ away.</strong> <strong>R2's "STANDS" is therefore right and should be read as: the strongest numerical agreement in the program is one $9\,\%$ coincidence built on an assumption, in a block whose imaginary half does not exist in the required form.</strong></p>
+<p><strong>Part S / Part P.</strong> <strong>Part S: the derivation of $R' = \pm c$ at $\rho = 0$; the three-law table; the arithmetic of $R_{H\max}$ and $\lambda_{f}$; the honest comparison; the $cT_{0}$ coincidence as a recorded near-miss.</strong> <strong>Part P: the holon as a physical mechanism</strong> — the claim that a pulsating real-space boundary <em>is</em> the proton and <em>is</em> the strong range, which rests on (4-17-e) and on the Système $H$ (S26, S27). <strong>The condition survives as a device; the mechanism does not, and the article's three-law table is the reason to say so.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<ul>
+<li><strong>$V_{r}$</strong> — the radial velocity of the holon's boundary $\Gamma$, where the proper density vanishes. <strong>(4-17-e) sets it to $\pm c$.</strong></li>
+<li><strong>$R_{H}$, $R_{H\max}$</strong> — the holon's minimum and maximum radii; $1{,}8\times10^{-14}$ cm and $9{,}19\times10^{-14}$ cm. <strong>$l_{0} = R_{H}$ by the coupling (3-49-a).</strong></li>
+<li><strong>$\lambda_{f}$</strong> — the corpus's range of the strong interaction, $2R_{H\max}$. <strong>Not the pion Compton wavelength.</strong></li>
+<li><strong>(4-17-e)/(4-17-f)</strong> — the boundary condition and the linear pulsation law; <strong>(4-30)</strong> — $\lambda_{f}$; <strong>(3-32)</strong> — the imaginary sheet's evolution equation; <strong>(3-31)</strong> — the initial condition $R'(0) = \pm c$; <strong>(3-36)</strong> — $K = +1$.</li>
+<li><strong>$cT_{0}/2$</strong> — the half-period light-travel distance, $7{,}3899\times10^{-14}$ cm; <strong>$cT_{0} = 1{,}478$ fm</strong> is S23's new number.</li>
+<li><strong>$\rho = 0$</strong> — the condition under which the imaginary sheet's $R' = \pm c$ holds; the préon's defining property, and the one §3.7 deletes.</li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S20</strong> — the éon's radii and the fact that its amplitude is $54{,}4\,\%$ of $cT_{0}/2$.</li>
+<li><strong>S22</strong> — $R_{H} = l_{0}$ and the closure that fixes it: one of (4-17-f)'s two ingredients.</li>
+<li><strong>S21</strong> — $T_{0}$, the other ingredient, and the fit it carries.</li>
+<li><strong>S18</strong> — the préon's $e^{\pi}$, whose chain the derivation of §2 shortens.</li>
+<li><strong>S26, S27, R2</strong> — the hadronic block this condition is supposed to deliver, and the chain's later links.</li>
+<li><strong>P8</strong> — the massless neutrino: the condition derived in §2 holds on the solution §3.7 deletes.</li>
+<li><strong>P19</strong> — the register's home for recorded near-misses, where the $cT_{0}$ coincidence belongs.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

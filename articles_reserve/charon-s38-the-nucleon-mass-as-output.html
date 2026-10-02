@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — The Nucleon Mass as a Ledger Entry (S38) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-nucleon-mass-as-a-ledger-entry-s38">Charon — The Nucleon Mass as a Ledger Entry (S38)</h1>
+<p><em>Classifies the nucleon-mass chain (S22 → S23 → S24 → S26 → S27) under rules R1 and R2, and answers the register's question: output, or swept minimum? Audits §5.4 and the R3 chain of register §12.</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The register's question about the nucleon mass is one sentence long — <em>"S27 revisited as a ledger entry: output, or swept minimum?"</em> — and the answer takes two sentences: it is an output of a two-constant chain, and it is a swept minimum in a sense that makes the phrase misleading.</strong> The corpus obtains $M_{H} = 1{,}6766\times10^{-24}$ g from a one-parameter sweep of the central density, and the register's rule R1 asks what was put in. <strong>Put in: two constants ($\xi$ and $T_{0}$), one dictionary, and one selection rule. Out: one number, good to $0{,}24\,\%$ against the proton mass — under one of the two $\xi$'s the corpus prints, and $5{,}4\,\%$ under the other.</strong></p>
+<p><strong>Why this is not the pattern of P20, and where it nevertheless is.</strong> P20 names the corpus's recurring method — <em>sweep a parameter, select a minimum, report a hit</em> — and R3's chain is the one place where a minimum really is selected. <strong>But three features separate it from the pattern as P20 states it.</strong> The dictionary is one-parameter and monotone, so the sweep has no second handle to turn (S27: <em>"sweeping the central density" and "sweeping $\omega$" are the same one-parameter sweep</em>). The selection is <em>derived</em>, not chosen: Esp (352)–(353)'s lifetime bound vanishes at every extremum of $M(d_{0})$, which makes the curve's two extrema the only observable states — the corpus selects a minimum because its own lifetime argument leaves nothing else to select. And the minimum sits <em>outside</em> the window the corpus prints ($\omega = 0{,}105$–$0{,}106$ against the printed $0{,}11 \le \omega \le 0{,}13$), which is a mark of an untuned computation rather than of a search aimed at an answer.</p>
+<p><strong>And the one place it <em>is</em> the pattern, stated in the terms R1 requires: the number's discriminating power does not sit in the sweep.</strong> The mass is $1{,}69107\times10^{-24}$ g at $\omega = 0{,}06$ and $1{,}68103\times10^{-24}$ g at $\omega = 0{,}13$ — <strong>within $0{,}9\,\%$ of the minimum across the whole span of S27's table</strong> — while the two values $\xi$ takes in the corpus's two books differ by $5{,}1\,\%$ and move the mass by the same $5{,}1\,\%$. <strong>So the sweep cannot fail and cannot succeed: the quantity being tested by the comparison with the proton mass is $\xi$, which is an input.</strong> The honest ledger row is therefore <em>output, conditional</em>, with the test landing on the constant rather than on the computation — which is exactly what the corpus itself intended, since Esp 057 calls $\xi$ a <em>"suggestion"</em> deduced from $M_{0}$ (S22, S34).</p>
+<p><strong>What the number is made of, which the ledger should carry because it is the substantive claim.</strong> By the corpus's own decomposition (Esp (359)–(362)), $61{,}1\,\%$ of the nucleon's mass is the spin-and-pulse kinetic term, $16{,}5\,\%$ is the proper-volume correction, and the observed mass lies between the two auxiliary masses in the corpus's own ordering $M_{OE} < M_{E} < M$. <strong>That is a claim about composition rather than about a number, and it is falsifiable in principle: a proton whose mass were mostly rest mass would not fit this decomposition.</strong></p>
+<p><strong>Scope and division of labour.</strong> S24 owns the solution and the shape of the curve, S26 the radius the same solution gives, S22 the constant $\xi$, S21 the period $T_{0}$, S27 the sweep and its numbers. <strong>This article owns the classification: the count, the two tests, the plateau argument, and the ledger row.</strong> No new integration is performed; every number is S27's, cited.</p>
+<h2 id="what-the-corpus-claims">What the Corpus Claims</h2>
+<p><strong>Esp 087's Axiom 7 fixes the clock, verbatim:</strong></p>
+<blockquote>
+<p>Pour qu'un hadron soit observable, c'est-à-dire possède une durée de vie non nulle, il faut que sa pulsation propre $\omega_{0}$ soit en résonance avec la pulsation propre $\omega_{0}$ du modèle leptonique chargé : $\omega_{0} = 1{,}28\cdot10^{24}$ s$^{-1}$.</p>
+</blockquote>
+<p><strong>Esp 088 §6.1.2 turns the axiom into a dictionary and a mass integral:</strong></p>
+<blockquote>
+<p>Avec ces valeurs de $\xi$ et $\omega_{0}$, pour chaque valeur de $\omega \in [0,\infty]$ non dimensionnel, on a, d'après (351), une valeur de la densité centrale $d_{0}$, puis avec le système (348) une solution unique pour $l$, $P$ et $\delta$. On peut alors procéder au calcul de la masse $M_{E}$ … en fonction de $\omega$ ou $d_{0}$; le graphe 6 représente la fonction $M_{E}(d_{0})$. On constate que cette fonction présente un minimum.</p>
+</blockquote>
+<p><strong>And Esp 089 §6.2 fixes the point:</strong> $\omega_{\mu} = 0{,}12$, $d_{0\mu} = 5{,}5\times10^{17}$ g cm$^{-3}$, $R_{\mu} = 1{,}7\times10^{-14}$ cm, with the asymptotic limit $M_{E} \to 1{,}70\times10^{-24}$ g and a maximum $\hat M_{E} = 2{,}12\times10^{-24}$ g at $\hat d_{0} = 8{,}3\times10^{16}$ g cm$^{-3}$.</p>
+<h2 id="1-the-chain-and-who-chose-what">1. The chain, and who chose what</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>link</th>
+<th>what it does</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S22</td>
+<td>$l_{0} = R_{H}$ closes the <em>Système E</em> on the <em>Système H</em>, fixing $\xi$ from the nucleon mass — the <em>"suggestion"</em></td>
+<td><strong>INPUT</strong>, named a suggestion by the corpus</td>
+</tr>
+<tr>
+<td>S23</td>
+<td>the boundary condition $R' = \pm c$ at the holon's surface</td>
+<td><strong>INPUT</strong> (a hard-coded premise, S23's finding)</td>
+</tr>
+<tr>
+<td>S24</td>
+<td>the <em>Système H</em> integration: one terminating solution per $\omega$; curve with one minimum and one maximum</td>
+<td><strong>BUILT</strong>, verified</td>
+</tr>
+<tr>
+<td>S26</td>
+<td>the same solution's radius $R_{H}$</td>
+<td><strong>BUILT</strong>, but a pulsation maximum rather than a static radius</td>
+</tr>
+<tr>
+<td>S21</td>
+<td>$T_{0} = 2h/(c^{2}(\tau-\mu))$, the clock the axiom hands to the hadron</td>
+<td><strong>FITTED</strong> then defining: the muon–tau spacing is the definition</td>
+</tr>
+<tr>
+<td><strong>(352)–(353)</strong></td>
+<td>the lifetime bound $|dM/d\tau| \le c\,(dM/dd_{0})(dd_{0}/dR)$</td>
+<td><strong>BUILT</strong>, and it is the selection rule: it vanishes at every extremum of $M(d_{0})$</td>
+</tr>
+<tr>
+<td>(351)</td>
+<td>$d_{0} = \omega_{0}/(\xi c\,\omega)$</td>
+<td><strong>BUILT</strong>, and monotone, so the sweep is one-parameter</td>
+</tr>
+<tr>
+<td>(360)</td>
+<td>the mass integral $M_{E} = \frac{4\pi}{\xi^{3}d_{0}^{2}}\int_{0}^{x_{\Gamma}}(\delta^{2}+3P^{2})^{1/2}x^{2}dx$</td>
+<td><strong>BUILT</strong></td>
+</tr>
+<tr>
+<td><strong>the sweep</strong></td>
+<td>$\omega$ over $(0,\infty)$</td>
+<td><strong>METHOD</strong>, and it is where R1 must be enforced</td>
+</tr>
+<tr>
+<td><strong>the minimum</strong></td>
+<td>$M_{\min} = M_{E}(d_{0\mu})$</td>
+<td><strong>OUTPUT</strong>, conditional on $\xi$ and $T_{0}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-rule-r1-applied-the-count">2. Rule R1 applied: the count</h2>
+<p><strong>The count is two constants, one rule, one sweep, one number.</strong> $T_{0}$ enters through Axiom 7's resonance as the period of the hadron's own pulsation, with an independent check against the corpus's printed $1{,}28\times10^{24}$ s$^{-1}$: $2\pi/T_{0} = 1{,}2745\times10^{24}$ s$^{-1}$, $0{,}4\,\%$ off. $\xi$ enters through the dictionary (351). The boundary condition $R' = \pm c$ is a third premise (S23).</p>
+<p><strong>What is <em>not</em> in the count is as important: no parameter of the integration is adjusted to land on $1{,}68\times10^{-24}$ g.</strong> Every $\omega$ has exactly one terminating solution (S24's verification), the mass integral has no free coefficient, and the minimum's position is a property of the equations. <strong>So the honest ledger row is: $M_{H} = f(\xi, T_{0})$ with the selection made by the corpus's own lifetime argument — an output whose inputs are two constants that were themselves fixed elsewhere.</strong> That is the answer to the register's question, and it is why the phrase <em>swept minimum</em> understates the chain while <em>output</em> overstates it.</p>
+<h2 id="3-the-sweep-the-plateau-and-where-the-freedom-really-is">3. The sweep, the plateau, and where the freedom really is</h2>
+<p><strong>S27's own table decides this, and it is worth reading as a sensitivity statement rather than as a set of points.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\omega$</th>
+<th>$d_{0}$ ($\xi = 6{,}8\times10^{-4}$)</th>
+<th>$M_{E}$ ($\xi = 6{,}8\times10^{-4}$)</th>
+<th>$M_{E}$ ($\xi = 6{,}467\times10^{-4}$)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0{,}06$</td>
+<td>$1{,}046\times10^{18}$</td>
+<td>$1{,}69107\times10^{-24}$</td>
+<td>$1{,}77814\times10^{-24}$</td>
+</tr>
+<tr>
+<td>$0{,}100$</td>
+<td>$6{,}279\times10^{17}$</td>
+<td>$1{,}67679\times10^{-24}$</td>
+<td>$1{,}76313\times10^{-24}$</td>
+</tr>
+<tr>
+<td><strong>$0{,}105$–$0{,}106$ (minimum)</strong></td>
+<td>$5{,}980\times10^{17}$</td>
+<td><strong>$1{,}67656\times10^{-24}$</strong></td>
+<td><strong>$1{,}76289\times10^{-24}$</strong></td>
+</tr>
+<tr>
+<td>$0{,}120$ (the corpus's $\omega_{\mu}$)</td>
+<td>$5{,}232\times10^{17}$</td>
+<td>$1{,}67815\times10^{-24}$</td>
+<td>$1{,}76456\times10^{-24}$</td>
+</tr>
+<tr>
+<td>$0{,}130$</td>
+<td>$4{,}829\times10^{17}$</td>
+<td>$1{,}68103\times10^{-24}$</td>
+<td>$1{,}76759\times10^{-24}$</td>
+</tr>
+<tr>
+<td>$0{,}750$ (the maximum)</td>
+<td>$8{,}372\times10^{16}$</td>
+<td>$2{,}13089\times10^{-24}$</td>
+<td>$2{,}24059\times10^{-24}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three readings, all of them ledger facts.</strong> (1) <strong>The plateau:</strong> across the rows $\omega = 0{,}06$ to $0{,}13$ — a factor $2{,}2$ in $\omega$ and $2{,}2$ in $d_{0}$ — the mass stays within $0{,}9\,\%$ of its minimum, so no refinement of the sweep can matter and no agreement can be claimed from the sweep's sharpness. (2) <strong>The step in $\xi$:</strong> changing $\xi$ from $6{,}467\times10^{-4}$ to $6{,}8\times10^{-4}$ moves every mass by $5{,}1\,\%$, ten times the size of the hit against the proton mass. (3) <strong>The ordering:</strong> the hit is $+0{,}24\,\%$ on $m_{p} = 1{,}67262\times10^{-24}$ g under the 1987 $\xi$, and $+5{,}4\,\%$ under the 1983 book's own printed value — <strong>so the same chain gives a striking or an unremarkable number depending on which of the corpus's two constants is believed, and S27's finding that the 1983 book's printed mass curve needs $\xi = 6{,}8\times10^{-4}$ while its printed density $d_{0\mu}$ needs $6{,}467\times10^{-4}$ is the reason the ambiguity is internal.</strong></p>
+<p><strong>This is the article's central ledger statement: the nucleon mass is where the corpus's <em>intended</em> check lands — $\xi$ computed, $M_{H}$ verified (S22) — and the arithmetic says the check is real but that it is a check of $\xi$ at the $5\,\%$ level, not of the sweep at the $0{,}2\,\%$ level.</strong></p>
+<h2 id="4-what-the-number-is-made-of">4. What the number is made of</h2>
+<p><strong>The corpus's own decomposition, computed in S27 from Esp (359)–(362):</strong> $M$ (proper volume, kinetic term included), $M_{E}$ (Euclidean volume, kinetic term included), $M_{OE}$ (rest density only), with $\delta M = M - M_{E} > 0$ and $\Delta M = M_{OE} - M_{E} < 0$. At the minimum: <strong>$61{,}1\,\%$ of the observed mass is the spin-and-pulse kinetic energy</strong>, the term $\sqrt{\delta^{2}+3P^{2}}$ over the rest density; the proper-volume factor adds $16{,}5\,\%$; and the observed mass lies between the two auxiliary masses in the corpus's own ordering.</p>
+<p><strong>For the ledger this is the row's real content, and it should be read as a claim about <em>composition</em>.</strong> The corpus does not say that the nucleon's mass comes from a constituent rest mass; it says most of it is the kinetic energy of the quantised radial impulse and the spin, with a large correction from the proper volume. <strong>That is falsifiable in principle and it is the second most substantive structural statement about hadrons in the book after the holon itself (S24).</strong> It also explains why S11's and P23's spin ladder matters here: the kinetic term is where the falsified spin assignment would have entered, and the mass integral uses only the <em>sum</em> $S + P$ (S11 §4.1), so the mass survives the ladder's death while the interpretation of its $61\,\%$ does not.</p>
+<h2 id="5-the-ledger-row">5. The ledger row</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>status (rule R1)</th>
+<th>note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_{0}$</td>
+<td><strong>INPUT</strong>, fitted then defining</td>
+<td>S21: the muon–tau spacing <em>is</em> its definition</td>
+</tr>
+<tr>
+<td>$\xi$</td>
+<td><strong>INPUT</strong>, and named a <em>"suggestion"</em> by the corpus</td>
+<td>S22: taken from $M_{0}$; two printed values, $5{,}1\,\%$ apart</td>
+</tr>
+<tr>
+<td>$R' = \pm c$ at the boundary</td>
+<td><strong>INPUT</strong></td>
+<td>S23: the radius depends on it</td>
+</tr>
+<tr>
+<td>the <em>Système H</em> solution</td>
+<td><strong>BUILT</strong></td>
+<td>S24: unique terminating solution per $\omega$</td>
+</tr>
+<tr>
+<td>the sweep of $\omega$</td>
+<td><strong>METHOD</strong></td>
+<td>one parameter, monotone dictionary, no second handle</td>
+</tr>
+<tr>
+<td>the selection of the minimum</td>
+<td><strong>BUILT</strong></td>
+<td>(352)–(353): the lifetime bound vanishes at every extremum</td>
+</tr>
+<tr>
+<td>$M_{H} = 1{,}6766\times10^{-24}$ g</td>
+<td><strong>OUTPUT, conditional</strong></td>
+<td>$+0{,}24\,\%$ on $m_{p}$ under the 1987 $\xi$; $+5{,}4\,\%$ under the 1983 one</td>
+</tr>
+<tr>
+<td>the mass decomposition</td>
+<td><strong>BUILT</strong></td>
+<td>$61{,}1\,\%$ kinetic, $16{,}5\,\%$ proper-volume</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>On rule R6, three questions kept apart.</strong> <em>Coherence:</em> the chain closes — the dictionary, the solution, the integral and the selection rule are consistent with each other, and the curve's features are reproduced to $\le 0{,}5\,\%$ under one constant. <em>Reproducibility:</em> the number follows from the corpus's own equations at every $\omega$, and the minimum's position is a property of the equations rather than of the search. <em>Correspondence:</em> the comparison with $m_{p}$ is a genuine comparison with nature, at $0{,}24\,\%$ — and it is conditional on $\xi$, whose two printed values span $5{,}1\,\%$, so the correspondence is real but its precision is limited by an input. <strong>Reporting the first two as the third is exactly what the rule forbids, and this chain is where the temptation is strongest, because the number is the best in the programme.</strong></p>
+<h2 id="6-verdict">6. Verdict</h2>
+<p><strong>The nucleon mass is an output of a two-constant chain, and the two constants are where its freedom lives.</strong> It is not P20's pattern in the damaging sense — the dictionary has one handle, the selection is derived from the corpus's own lifetime bound, and the minimum falls outside the window the corpus prints — but it is P20's pattern in the sense that matters for R1: <strong>the result cannot be a test of the sweep, because the sweep's whole span moves the mass by less than one per cent, while the constant it is compared through moves it by five.</strong> So the chain's verdict is: <strong>STANDS as a computation, conditional; and as a test it tests $\xi$.</strong></p>
+<p><strong>Kept, with its caveats:</strong> the numbers ($M_{\min}$, the maximum, the limit, the oscillations, all to $\le 0{,}5\,\%$ under the 1987 $\xi$), the composition claim, the derived selection rule, and the single internal inconsistency of the 1983 book recorded by S27. <strong>Not kept, and struck from the ledger if anyone claims it:</strong> that the nucleon mass is a sharp prediction, or that it verifies the <em>Système H</em> rather than the constant $\xi$ that was suggested from it.</p>
+<p><strong>Rule R2's own requirement — state the target, the input set and the tolerance before computing — is met in form by this chain and in substance by S22's account of the corpus's intention: the intended target was $\xi$, the input set was $T_{0}$, the boundary condition and the hadron solution, and the tolerance was the book's own rounding. The number was never meant to be a prediction, and the register should stop reading it as one.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>The register asked whether the nucleon mass is an output or a swept minimum, and the answer is that it is both in different senses, with the emphasis on the first. <strong>Put in:</strong> the period $T_{0}$ (fitted to the muon–tau spacing and handed to the hadron by Axiom 7, verified at $0{,}4\,\%$ against the corpus's printed $1{,}28\times10^{24}$ s$^{-1}$), the constant $\xi$ (the corpus's own <em>"suggestion"</em>), the boundary premise $R' = \pm c$, and the selection rule. <strong>Built:</strong> the <em>Système H</em> solution, the mass integral, the curve's minimum, maximum and limit. <strong>Out:</strong> $M_{H} = 1{,}6766\times10^{-24}$ g, $+0{,}24\,\%$ on the proton mass under the 1987 $\xi$ and $+5{,}4\,\%$ under the other value the corpus prints.</p>
+<p><strong>The article's three ledger findings.</strong> The sweep is not the freedom: the mass stays within $0{,}9\,\%$ of its minimum across S27's whole table, so the number cannot test the sweep, while the two printed $\xi$'s differ by $5{,}1\,\%$ and move the mass by the same amount — the test lands on the constant. The selection is derived rather than chosen: Esp (352)–(353)'s lifetime bound vanishes at every extremum of $M(d_{0})$, so the curve's extrema are the only observable states and the corpus does not pick a minimum, its own argument does. And the number is mostly kinetic — $61{,}1\,\%$ spin-and-pulse, $16{,}5\,\%$ proper-volume correction, in the corpus's own ordering $M_{OE} < M_{E} < M$ — which is a falsifiable claim about composition rather than a fit.</p>
+<p><strong>Verdict: STANDS as a conditional computation, and as a test it tests $\xi$.</strong> Rule R1's count for the chain is two constants, one premise, one derived selection rule and one output; rule R6's three questions are answered separately, with the correspondence real at $0{,}24\,\%$ and limited by an input quoted to two figures.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\omega$, $\omega_{\mu}$</td>
+<td>dimensionless pulsation of the <em>Système H</em>; the corpus's printed value $0{,}12$</td>
+</tr>
+<tr>
+<td>$\omega_{0}$</td>
+<td>Axiom 7's resonance frequency, $1{,}28\times10^{24}$ s$^{-1}$; $T_{0}$ its period</td>
+</tr>
+<tr>
+<td>$d_{0}$, $d_{0\mu}$</td>
+<td>central density of the hadron solution; its value at the corpus's point</td>
+</tr>
+<tr>
+<td>$\xi$</td>
+<td>the coupling of the paper, $\Omega_{0}c/\hbar$; the corpus's <em>"suggestion"</em></td>
+</tr>
+<tr>
+<td>$M$, $M_{E}$, $M_{OE}$</td>
+<td>proper-volume mass (kinetic included), Euclidean mass, rest-density mass</td>
+</tr>
+<tr>
+<td>(351), (360)</td>
+<td>the dictionary $d_{0} = \omega_{0}/(\xi c\,\omega)$ and the mass integral</td>
+</tr>
+<tr>
+<td>(352)–(353)</td>
+<td>the lifetime bound that selects the curve's extrema</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S27</strong> <code>charon-s27-the-nucleon-mass-minimum.md</code> — the sweep itself: the table, the minimum, the maximum, the two $\xi$'s, and the decomposition computed. This article classifies what S27 computed.</li>
+<li><strong>S24</strong> <code>charon-s24-the-holon-defined.md</code> — the <em>Système H</em> solution whose curve is swept.</li>
+<li><strong>S26</strong> <code>charon-s26-the-proton-radius-and-the-strong-range.md</code> — the radius from the same solution.</li>
+<li><strong>S22</strong> <code>charon-s22-the-elementary-length.md</code> — $\xi$, $l_{0}$ and the closure that fixes them; the source of this article's <em>conditional</em>.</li>
+<li><strong>S21</strong> <code>charon-s21-the-three-internal-constants.md</code> — $T_{0}$ and the fit that defines it.</li>
+<li><strong>S34</strong> <code>charon-s34-the-input-output-ledger.md</code> — where this row sits in the constants ledger.</li>
+<li><strong>P20</strong> <code>charon-p20-fitted-versus-predicted.md</code> — the pattern this chain resembles and departs from.</li>
+<li>Corpus: Esp 087 §Axiome 7 and §5.2, Esp 088 §6.1.2 (351), (360), Esp 089 §6.2, Esp (359)–(362).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

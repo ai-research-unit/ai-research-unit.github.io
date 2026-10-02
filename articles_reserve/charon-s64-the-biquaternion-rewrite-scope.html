@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Biquaternion Rewrite Scope — How Much of the Charon Corpus Can Be Written in the Framework's Language, and What That Buys — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-biquaternion-rewrite-scope-how-much-of-the-charon-corpus-can-be-written-in-the-frameworks-language-and-what-that-buys"><strong>The Biquaternion Rewrite Scope — How Much of the Charon Corpus Can Be Written in the Framework's Language, and What That Buys</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Charon corpus is a physics programme, written in the two books <em>L'Esprit et la Relativité complexe</em> (1983) and <em>La Relativité complexe</em> (1987): complexified general relativity, a quantised cosmology, a leptonic model of memory, and a numerical system — the <em>Système L</em> — that claims to compute the constants of nature. Its mathematics is complexified Riemannian geometry. It contains <strong>no algebra</strong>: across both books there are zero occurrences of <em>quaternion</em>, <em>biquaternion</em>, <em>Hamilton</em>, <em>Clifford</em> or <em>octonion</em>, one occurrence of <em>Cayley</em> (naming matrix calculus at Esp 098), and none of <em>algèbre</em>.</p>
+<p>The biquaternion framework is a different programme. It is built on the algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ — the complexified quaternions, isomorphic as a complex algebra to the two-by-two complex matrices, $M_2(\mathbb{C})$ — with its involutions, its subspaces, its modules and its own gravity series.</p>
+<p>The two programmes describe the same object: an eight-real-dimensional space carrying a complexified metric. This article asks the only question worth asking about that overlap. <strong>How much of the corpus can be written in the framework's language, and what does the rewrite buy?</strong></p>
+<p>The article's answer is that <strong>everything in the corpus is expressible</strong>, that the rewrite is worth doing in <strong>two places only</strong>, and that its most durable deliverable is <strong>a negative result</strong>: the framework's algebra cannot carry the corpus's spin-two memory mechanism. Those three statements are the article. The counting, the two positive cases and the negative one occupy the sections that follow, and the closing sections state why the two programmes are mirror images and what the rewrite cannot move.</p>
+<p>The conventions are those of the companion articles, and are stated here because this article must stand alone. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1$, $e_1$, $e_2$, $e_3$ satisfying $e_k^2 = -e_0$, and a scalar imaginary unit $i$ that commutes with every $e_k$. A general element has four complex coefficients $Q_\mu = q_\mu + iq'_\mu$, so that eight real parameters $q_\mu$ and $q'_\mu$ are carried by $e_\mu$ and by $ie_\mu$. The algebra has four involutions — quaternion conjugation $\bar{\tilde{Q}}$, complex conjugation $\tilde{Q}^{*}$, Hermitian conjugation $\tilde{Q}^{\dagger} = \bar{\tilde{Q}}^{\,*}$, and anti-Hermitian conjugation $\tilde{Q}^{\flat} = -\tilde{Q}^{\dagger}$ — and their fixed and anti-fixed spaces give six named real subspaces. Two of them matter throughout: the <strong>informational subspace</strong> $\mathbb{M}_+$, the fixed space of $\dagger$, and the <strong>material subspace</strong> $\mathbb{M}_-$, the fixed space of $\flat$, with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ as a direct sum of real vector spaces. The <strong>centre</strong> is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$. The material basis is $\varepsilon_0 = ie_0$ and $\varepsilon_k = e_k$, with Gram matrix $\eta_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\rangle = \mathrm{diag}(-1,1,1,1)$ under the bilinear form $\langle\tilde{Q},\tilde{P}\rangle = \mathrm{Sc}(\tilde{Q}\bar{\tilde{P}})$. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ and its d'Alembertian is $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \eta^{\mu\nu}\partial_\mu\partial_\nu$.</p>
+<h2 id="the-question-and-why-its-naive-form-is-worthless">The Question, and Why Its Naive Form Is Worthless</h2>
+<p>The naive form of the question — <em>can this equation be written in biquaternion form?</em> — has the answer <strong>yes</strong> for almost every equation in the corpus, and a <em>yes</em> of that kind carries no information at all. It is worth stating why, because the reason fixes the method.</p>
+<p><strong>What the framework can carry.</strong> Three loadings are available, and between them they cover every kind of object a physics equation uses.</p>
+<ul>
+<li><strong>Scalars.</strong> Any real scalar is available, as a real value of a coefficient $Q_\mu = q_\mu + iq'_\mu$, and the real scalars of the framework sit in its centre $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$.</li>
+<li><strong>Four-vectors.</strong> The subspace $\mathbb{M}_-$ is, as a real vector space with its quadratic form, Minkowski space. Every four-vector of relativistic physics lives in it, and it is also closed under the commutator, so it carries a Lie algebra as well.</li>
+<li><strong>Spinors.</strong> The algebra's defining left module $S$ is two-dimensional over $\mathbb{C}$, and it is the carrier of the Dirac field.</li>
+<li><strong>Symmetric rank-two tensors.</strong> These have no product form in the algebra, but they are <strong>carried</strong>, by an $\mathbb{M}_-$-valued four-vector — the device the gravity series uses for the metric perturbation.</li>
+</ul>
+<p><strong>The consequence.</strong> An equation whose objects are scalars, four-vectors, spinors, or carried rank-two tensors can be transcribed. That is nearly all of them. So <em>expressibility is not the test</em>, and any count that reports only <em>how many equations can be written in the framework</em> is measuring nothing. <strong>The test is what the rewrite buys</strong>, and the grades below are grades of exactly that.</p>
+<p><strong>A second distinction, which this article must keep apart from the first.</strong> To ask whether an equation can be <strong>rewritten</strong> in the framework is not to ask whether it can be <strong>recovered in full</strong> from the corpus. The second question has a separate and affirmative answer, established elsewhere: the corpus's equations are recoverable, and the $\alpha$ derivation, which runs from equation (245) to equation (268), is the worked proof of it. <strong>This article is about the first question only.</strong> Recoverability is a property of the corpus; rewriteability is a relation between the corpus and the framework.</p>
+<h2 id="how-the-rewrite-is-counted">How the Rewrite Is Counted</h2>
+<h3 id="the-population">The Population</h3>
+<p>The corpus carries <strong>522 numbered display equations</strong> in the improved transcriptions, with merged duplicates excluded: <strong>304</strong> in <em>L'Esprit et la Relativité complexe</em> (1983, cited "Esp") and <strong>218</strong> in <em>La Relativité complexe</em> (1987, cited "RC"). The count is of numbered display equations only; inline expressions carry no tag and are not counted.</p>
+<h3 id="the-sample-and-the-cap-on-it">The Sample, and the Cap on It</h3>
+<p>Classifying 522 equations one by one would exceed what this pass is permitted to verify, and pattern-matching them is unsafe — a fact this article records against itself. A first pass, selecting on symbols alone, placed every equation containing an $R$ or a $\rho$ in the geometric or fluid bin; it thereby <strong>overstated the geometric and differential blocks</strong> and reported only 45 % of the corpus as neutral. That method is abandoned.</p>
+<p>The classification below is made instead on a <strong>capped stratified sample of 100</strong> equations — 58 drawn from Esp and 42 from RC, proportional to the two books, taken at even intervals through each book's numbered sequence — and each sampled equation was inspected individually. The cap is the plan's verification limit and is respected exactly. Proportions are then scaled to the population of 522, and every scaled figure in this article is marked as approximate.</p>
+<h3 id="the-three-grades">The Three Grades</h3>
+<p>An equation is placed in the grade that names the <strong>strongest</strong> thing the rewrite does to it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>grade</th>
+<th>the rewrite's effect</th>
+<th>sampled</th>
+<th>scaled to 522</th>
+<th>what it buys</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong></td>
+<td>changes the content</td>
+<td>7</td>
+<td>≈ 37</td>
+<td>the framework <strong>decides</strong> what the corpus left open</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>expressible, direction supplied</td>
+<td>29</td>
+<td>≈ 150</td>
+<td>a cleaner page; one sub-case reaches a live result</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td>expressible, content unchanged</td>
+<td>64</td>
+<td>≈ 330</td>
+<td>nothing — but the rewrite <strong>is</strong> available</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Grade C is the majority, and it is not a failure of expressibility.</strong> It is the block in which the framework's algebra has no purchase: the equation is transcribable, its content is untouched, and the transcription is a relabelling. The three grades are taken in turn.</p>
+<h2 id="grade-a-the-rewrite-that-decides">Grade A — The Rewrite That Decides</h2>
+<p><strong>Grade A contains the equations whose content the rewrite changes</strong>, because the framework's structure answers a question the corpus raised and did not settle. There are about <strong>37</strong> of them, and one family accounts for nearly all: the complexification itself and the partition of its parameters.</p>
+<h3 id="what-the-corpus-did">What the Corpus Did</h3>
+<p>The corpus's setting is a Riemannian four-manifold carrying a <strong>complex</strong> metric, and the whole construction is stated in three lines, RC I.1, and introduced as a <em>convention</em> — the corpus's own words are that it is done <em>"de manière conventionnelle"</em>. In the corpus's own notation the coordinates are written as a real part plus $i$ times a real part,</p>
+<p>$$r = \dot r + i\tilde r, \qquad t = \dot t + i\tilde t,$$</p>
+<p>and the two <em>sheets</em> are then separated by switching off four of the eight real quantities,</p>
+<p>$$\text{RÉEL}:\ \tilde t = \dot r = 0, \qquad \text{IMAGINAIRE}:\ \dot t = \tilde r = 0 .$$</p>
+<p>The partition is stipulated, and nothing in the corpus derives it. The corpus's cited mathematics is Cartan, Souriau, Lichnerowicz, Bergmann and Tonnelat, competently used; its heaviest technical borrowing is the spinor, taken from de Broglie and never connected to its algebraic origin; and at Esp 098 it explicitly names Cayley's and Hermite's matrix calculus as mathematics <em>"déjà proposée depuis relativement longtemps"</em> — choosing matrices over hypercomplex numbers.</p>
+<h3 id="what-the-rewrite-does-to-it">What the Rewrite Does to It</h3>
+<p><strong>A complexified four-dimensional space with a stipulated partition is under-determined as an algebraic object.</strong> The eight real parameters can be grouped in more than one way, and the corpus's grouping is one choice among several. The framework is not: it carries four natural involutions, it names their fixed spaces, and it therefore <strong>nominates</strong> a partition rather than assuming one.</p>
+<p>Written in the framework's parameters, the two partitions stand side by side, and this is the article's central table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>partition</th>
+<th>its eight parameters</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the corpus's RÉEL</td>
+<td>the real parts, $q_0$, $q_1$, $q_2$, $q_3$</td>
+<td>the framework's <strong>Prime Convention</strong></td>
+</tr>
+<tr>
+<td>the corpus's IMAGINAIRE</td>
+<td>the imaginary parts, $q'_0$, $q'_1$, $q'_2$, $q'_3$</td>
+<td>the same convention's other half</td>
+</tr>
+<tr>
+<td>the framework's $\mathbb{M}_-$</td>
+<td>$q'_0$, $q_1$, $q_2$, $q_3$</td>
+<td>the material sector, fixed by $\flat$</td>
+</tr>
+<tr>
+<td>the framework's $\mathbb{M}_+$</td>
+<td>$q_0$, $q'_1$, $q'_2$, $q'_3$</td>
+<td>the informational sector, fixed by $\dagger$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two groupings are transversal.</strong> Each sheet of the corpus is half of each sector: RÉEL takes one parameter from $\mathbb{M}_+$ and three from $\mathbb{M}_-$, and IMAGINAIRE takes one from $\mathbb{M}_-$ and three from $\mathbb{M}_+$. <strong>Neither sheet is a sector</strong>, and neither sector is a sheet. In one line, <strong>the corpus is the framework with the sector structure collapsed onto the Prime Convention</strong>, and the rewrite restores what the collapse hid.</p>
+<h3 id="the-verdict-of-grade-a">The Verdict of Grade A</h3>
+<p><strong>This is the rewrite's one decided gain, and it is a gain of classification rather than of prediction.</strong> The corpus's RÉEL / IMAGINAIRE split and the framework's $\mathbb{M}_-$ / $\mathbb{M}_+$ split are both partitions of the same eight real parameters, they are not the same partition, and the framework's is the one that carries algebraic content because it is defined by an involution.</p>
+<p><strong>The practical consequence is that sector membership must be decided per quantity and never per sheet.</strong> A corpus sentence that books "all energy" on the IMAGINAIRE is right about the energy component and wrong about the momentum, and the corpus's own source tensor — written in RÉEL objects — contradicts its own prose. The rewrite exposes the disagreement; the equations, not the prose, survive it.</p>
+<p>Grade A is the whole of the rewrite's positive algebraic content, and it was already banked before this article: the dictionary between the corpus and the framework is a companion article, and its gate — a dictionary that maps both sectors without contradiction — passes on exactly this reading.</p>
+<h2 id="grade-b-the-rewrite-the-framework-can-supply">Grade B — The Rewrite the Framework Can Supply</h2>
+<p><strong>Grade B contains the equations the framework has the operators for.</strong> There are about <strong>150</strong> of them, and the reason they are expressible is that the framework owns the differential apparatus the corpus's field equations use: the biquaternionic gradient $\tilde{\nabla}$, its conjugate $\bar{\tilde{\nabla}}$, the d'Alembertian $\Box = \eta^{\mu\nu}\partial_\mu\partial_\nu$, the bivector packaging of curvature, and the gauge-curvature–Bianchi identity. With those, the geodesic equation, the Christoffel symbols, the exterior and interior solutions, the trace laws, the spinor matrix equation and the conservation statements all have a home.</p>
+<p><strong>But Grade B splits, and the split is the honest part of the article.</strong> In one sub-case the rewrite produces a cleaner page and nothing more; in the other it puts a corpus equation onto a live framework result.</p>
+<h3 id="b1-imported-content-and-the-framework-says-so">B1 — Imported Content, and the Framework Says So</h3>
+<p><strong>The larger sub-case, about 120 equations, is general relativity proper</strong>: the Einstein tensor, the Bianchi identity, the interior solution, the geodesic equation, the standard trace relations.</p>
+<p>These are expressible, and the rewrite buys a cleaner page. It buys <strong>no result</strong>, and the framework states why in its own words. Its gravity agenda separates three kinds of statement and puts these in the third: the harmonic gauge and its residual freedom, the wave equation, the quadrupole formula and its prefactor, the step from six to two polarisations and the helicity count — <em>"written in the framework's notation by the linearised and wave articles; not derived there."</em> On the parent question the agenda is blunt: the linearised sector <em>"has been carried and transcribed rather than derived"</em>, <em>"the dynamics was imported from general relativity"</em>, and the full non-linear equation <em>"has not yet been reached."</em></p>
+<p><strong>So rewriting the corpus's curvature equations into biquaternion form changes nothing about their status.</strong> The dynamics being imported is the same on both sides of the rewrite. This is the ceiling on most of Grade B, and it is why the rewrite cannot be sold as a derivation engine.</p>
+<h3 id="b2-the-rank-two-carriers-and-the-one-live-lead">B2 — The Rank-Two Carriers, and the One Live Lead</h3>
+<p><strong>The smaller sub-case, about 30 equations, is different, and it is the strongest technical lead this article has.</strong> It exists because the corpus's source tensor is a <strong>symmetric rank-two</strong> object, and the framework carries exactly that kind of object by a device of its own.</p>
+<p><strong>The corpus's two printed forms.</strong> The source tensor is written</p>
+<p>$$T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta \qquad (\text{RC } 3\text{-}23\text{-a}),$$</p>
+<p>and the field equation is written with the same object in place of a computed matter tensor,</p>
+<p>$$R_{\alpha\beta} - \tfrac{1}{2}Rg_{\alpha\beta} = -T_{\alpha\beta} = -\xi^{2}u_\alpha u_\beta \qquad (\text{Esp } 084).$$</p>
+<p>The rest of the corpus's density bookkeeping, its energy-momentum accounting and its four-velocity products belong with these.</p>
+<p><strong>Why the algebra cannot produce it.</strong> A product of two four-vectors is not a four-vector, and in the algebra it gives only two kinds of thing: a <strong>scalar</strong> part, which is the symmetric contraction $\langle\tilde Q,\tilde P\rangle$, and an antisymmetric part, which is the cross product in the vector components. A <strong>symmetric traceless</strong> rank-two object — five independent components, the spin-two carrier — has <strong>no image in the algebra at all</strong>. It cannot be multiplied into existence. Multiply or contract as one likes, the symmetric traceless part must be <strong>carried</strong>, not generated.</p>
+<p><strong>And the framework carries exactly that, by the metric's own device.</strong> In the linearised gravity series the metric perturbation is carried by a frame perturbation $\delta\tilde E_\mu \in \mathbb{M}_-$ through</p>
+<p>$$h_{\mu\nu} = \langle\varepsilon_\mu, \delta\tilde E_\nu\rangle + \langle\delta\tilde E_\mu, \varepsilon_\nu\rangle,$$</p>
+<p>and every symmetric $h_{\mu\nu}$ arises this way. The sixteen frame components split as $16 = 10 + 6$, the six-dimensional kernel being the infinitesimal local Lorentz transformations, which leave the perturbation exactly invariant; the trace-reversal is the frame shift $\bar{\delta\tilde E}_\mu = \delta\tilde E_\mu - \tfrac{1}{4}h\,\varepsilon_\mu$ with $h = 2\langle\varepsilon^\nu, \delta\tilde E_\nu\rangle$; and the trace sits in the centre. This device is listed among the framework's <strong>independently reproduced</strong> results, not among the imported ones.</p>
+<p><strong>The consequence is the article's one placing of a corpus equation onto a live framework result.</strong> Charon's source tensor and the framework's metric perturbation are <strong>carried by the same device</strong>: a symmetric rank-two object on an $\mathbb{M}_-$-valued four-vector, with the same counting and the same trace. The corpus's $T_{\alpha\beta}$ therefore sits on the framework's <strong>spin-two machinery</strong>. Whether the placement can be strengthened — whether a matter source may be written <strong>as</strong> a frame perturbation, rather than merely carried the same way — is <strong>open</strong>, and it is precisely the question the framework's linearised dictionary exists to answer. It is a work order, not a result, and it is stated as such below.</p>
+<h2 id="grade-c-the-rewrite-that-changes-nothing">Grade C — The Rewrite That Changes Nothing</h2>
+<p><strong>Grade C contains the equations that are expressible and whose content the rewrite leaves untouched.</strong> It is the majority — about <strong>330</strong> equations, 64 % of the sample — and the correct statement about it is not that no rewrite exists but that <strong>the rewrite exists and is empty</strong>.</p>
+<p>An earlier reading of this block described it as equations with "no meaningful rewrite", which implied that expressibility failed. <strong>It does not, and the correction is recorded here.</strong> Every equation in Grade C has a biquaternion transcription, for reasons that are structural rather than lucky.</p>
+<h3 id="the-kinds-of-equation-in-grade-c">The Kinds of Equation in Grade C</h3>
+<ul>
+<li><strong>Scalar coefficients</strong> — $\Omega_0$, $\xi$, $l_0$, $\rho$, $R$, the empirical constants and the fitted parameters. Each is a real value of some coefficient $Q_\mu = q_\mu + iq'_\mu$, or of the centre's coefficients.</li>
+<li><strong>Scalar conditions</strong> — $K = +1$, $\Lambda < 0$, $R'^{2} \ge 0$, $D_M/D_{0M} \ge 1$, $P_\rho^{2} \ge 0$. These are conditions on the coefficients of the centre.</li>
+<li><strong>Scalar identities</strong> — $D_\rho + D_E + D_M \equiv 0$, and the contracted conservation statements such as $\nabla_\alpha T^{\alpha}{}_{\beta} \equiv 0$. Statements in the centre, or in the algebra's bivector part.</li>
+<li><strong>Integrals of scalars</strong> — the Planck and Stefan–Boltzmann machinery, the force integrals, the volume and mass integrals, and the normalisation condition $\int_0^T dt/R = 2\pi/c$. Integration is coefficient-wise, and no algebraic structure is involved.</li>
+<li><strong>Comparison numbers</strong> — the computed values set against observation, such as the background temperature $\theta_a = 2{,}7 \pm 0{,}2$ K, the maximal velocity ratio $\beta_{\max} = 0{,}907$, the coupling ratio $2e^{2}/9\hbar c = 1{,}62\times10^{-3}$, and the mass at mid-period $\mathfrak M_{\tau=T/2} = 4{,}40\times10^{54}$ g. Each is a value of a coefficient.</li>
+<li><strong>Definitions and ansätze</strong> — the expansions and definitions the corpus sets up, such as $p = a + bR + k_2R^{2} + \cdots$, $D_\rho = W_\rho/\Omega_0$, and $P_{\rho j}^{2} = P_\rho^{2}/3$ for $j = 1, 2, 3$.</li>
+</ul>
+<h3 id="the-verdict-of-grade-c">The Verdict of Grade C</h3>
+<p><strong>Every equation in this block is transcribable and none of them is changed.</strong> The framework's algebra has no purchase on a Planck integral, on a numerical table, or on a positivity condition on a radius. <strong>The comparison numbers and the definitions and identities are in this class exactly as the integrals are</strong> — which is the correction: the earlier reading had separated them, calling the numbers "not equations" and the definitions "already sector statements". Both are expressible, both are unchanged, and both belong to Grade C.</p>
+<p>The value of recording the block is negative but real. It says where <strong>not</strong> to look for the rewrite's payoff. Thirty percent of the corpus can be made to look like framework mathematics and will mean exactly what it meant before.</p>
+<h2 id="what-the-rewrite-delivers-against-the-corpus-one-negative-result">What the Rewrite Delivers Against the Corpus — One Negative Result</h2>
+<p>The rewrite is not only an assessment of what can be carried. Applied to the corpus's central mechanism, it returns a <strong>negative result</strong>, and the result is durable because the framework's bound is a theorem rather than an opinion.</p>
+<p><strong>The framework's bound.</strong> The algebra's own module category carries <strong>spin zero and spin one-half only</strong>. Spin zero is present in the centre and in the invariants of products of the defining module; spin one-half is the defining module itself; and there is no room in the category for a spin-one or higher module. Every field of higher spin in the framework's series is built by <strong>tensoring the defining module with itself</strong> and imposing the constraints that remove the lower-spin admixture, and spin $j$ requires the $2j$-th tensor power before it can appear even as a pure carrier.</p>
+<p><strong>What the corpus's mechanism needs.</strong> Charon's account of memory rests on electromagnetic radiation held inside a leptonic structure, with the stored information increasing as the <strong>spin of the photons increases</strong>. His own words at Esp 098 are explicit: the action and the information grow <em>"grâce à l'augmentation de spin des photons du rayonnement électromagnétique"</em>, and the higher-spin equations are counted — <em>"Les équations du spin 2 sont au nombre de $16 \times 16 = 256$, et ainsi de suite."</em> The mechanism is spin-two radiation inside a structure, and a spin that rises without limit; Charon also records the corpus's own structural claim that the spin-$n$ state contains a superposition of all lower spin states.</p>
+<p><strong>The rewrite's verdict.</strong> <strong>The algebra cannot carry it.</strong> Spin-two content in the framework is not a module of $\mathbb{B}$: it must be built by tensoring the defining module with itself and imposing constraints, and a rising-spin ladder is a sequence of tensor powers with their constraint structure, not a structure of the algebra. <strong>This does not say the corpus's spin-two equations are mathematically wrong</strong> — they are the de Broglie–Tonnelat higher-spin equations, and the corpus cites both authors. It says the corpus's mechanism has <strong>no home in the algebra</strong>, and can only be carried as a constrained composite. That is a negative the rewrite delivers, and it constrains the mechanism specifically: whatever the leptonic memory is in framework language, it is not an algebraic structure of $\mathbb{B}$.</p>
+<h2 id="what-the-rewrite-cannot-reach">What the Rewrite Cannot Reach</h2>
+<p><strong>One programme in the corpus is untouched by the rewrite, and it is the one the whole corpus exists to support: the numerical system.</strong></p>
+<p>The <em>Système L</em> is a system of about twenty simultaneous equations whose solution is claimed to yield the constants of nature. What the ledger of that system establishes is that the claim is a <strong>closure property and not a derivation</strong>: the elementary charge, which the corpus presents as its one computed output, is among the six values fed in; the parameter search is confined to a window of $\pm 10\,\%$ about the measured values and converges at the measured values; every reported deviation is therefore smaller than the search radius by construction; and the largest of them, 2.3 % on the charge, is the residual of the search itself. The count is one constant defined by the theory's units, five measured seeds, one value taken from a mass by what the corpus itself calls a <em>suggestion</em>, and no independent output.</p>
+<p><strong>None of that is algebra, and no rewrite moves any of it.</strong> A nonlinear real system, a 729-point search grid and a two-percent consistency residual are facts about arithmetic, and they live or die on arithmetic and on observation. Biquaternion form changes not one digit of them. A reader who expects the rewrite to rescue or to break the constants computation will be disappointed in both directions.</p>
+<h2 id="why-the-two-programmes-are-mirror-images">Why the Two Programmes Are Mirror Images</h2>
+<p><strong>The two programmes are complementary in their strengths and their weaknesses, and the complementarity is exact.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>programme</th>
+<th>rich in</th>
+<th>poor in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the biquaternion framework</td>
+<td>algebra: involutions, subspaces, idempotents, modules, tensor powers</td>
+<td>dynamics: no field equation of its own, and no coupling between its sectors</td>
+</tr>
+<tr>
+<td>the Charon corpus</td>
+<td>dynamics: a complete relativistic and quantised programme</td>
+<td>algebra: a stipulated complexification, no algebra at all</td>
+</tr>
+</tbody>
+</table></div>
+<p>The synthesis writes itself: <strong>the corpus's dynamics with the framework's algebra.</strong> Three things are known about it, and they are the article's closing assessment.</p>
+<p><strong>First, one gain is already taken.</strong> Grade A. The framework's involutions decide the corpus's stipulated partition, and the dictionary that results is a companion article.</p>
+<p><strong>Second, one lead is open.</strong> Grade B2. The corpus's source tensor and the framework's metric perturbation share a carrier, and whether a matter source can be written <em>as</em> a frame perturbation is a question the framework's linearised dictionary was built to answer.</p>
+<p><strong>Third, the blocker is structural, and it is the ceiling.</strong> The framework has <strong>no dynamics coupling $\mathbb{M}_+$ to $\mathbb{M}_-$</strong>. Its own account of the sector split is that the split <em>"is a grading of the vector space and not a splitting of the algebra, and multiplication mixes them"</em>, so much so that multiplication by a material element carries an informational element into a material one; the split is a superselection structure of a real form rather than of the algebra's centre. <strong>Charon's whole theory, by contrast, is a proposed inter-sector coupling</strong>: his RÉEL is the material sector, his IMAGINAIRE the informational one, and his formalism is the machinery joining them. Whatever his numbers did, the <strong>structure</strong> of that join is a candidate answer to the framework's largest structural gap — and it is a candidate <em>structure</em>, not a candidate <em>equation</em>, because it cannot be imported into a dynamics the host does not have. <strong>The lead is a research direction, not a computation.</strong></p>
+<p><strong>One near-coincidence is recorded and not relied on.</strong> The two sectors carry eight real parameters between them, and the corpus's seed set is six constants plus the seventh parameter, that is seven quantities. The arithmetic is close and the match is not established. It is noted only so that a later reader does not think it was missed.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>Everything in the corpus is expressible in the framework's language, and that is not the question.</strong> The framework can carry scalars, four-vectors, spinors and carried rank-two tensors, so almost any equation can be transcribed; a transcription that carries no content is measuring nothing. <strong>The question is what the rewrite buys</strong>, and the answer is two positive cases and one large neutral one.</p>
+<p><strong>The rewrite's one decided gain is Grade A, about 37 equations.</strong> A complexified four-dimensional space with a <em>stipulated</em> partition is under-determined as an algebraic object, and the framework's involutions nominate a partition instead of assuming one. The corpus's RÉEL / IMAGINAIRE split turns out to be the framework's <strong>Prime Convention</strong> — the split of the eight real parameters into real and imaginary parts — while the framework's sectors $\mathbb{M}_-$ and $\mathbb{M}_+$ partition the same eight parameters <strong>transversally</strong>. Each sheet is half of each sector, so <strong>sector membership is decided per quantity and never per sheet</strong>, and the corpus is the framework with the sector structure collapsed onto the Prime Convention.</p>
+<p><strong>Grade B, about 150 equations, splits, and the split is the honest part.</strong> About 120 of them are general relativity proper — the Einstein tensor, the Bianchi identity, the interior solution, the geodesic — and the framework's own agenda records that it has <em>carried and transcribed</em> these rather than derived them, that <em>"the dynamics was imported from general relativity"</em>, and that the non-linear question <em>"has not yet been reached."</em> Rewriting them buys a cleaner page and no result; that is the ceiling on most of Grade B.</p>
+<p><strong>The remaining sub-case, about 30 equations, is the article's one live lead.</strong> The corpus's source tensor $T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta$ is symmetric rank-two, and a product of two four-vectors cannot produce it — the algebra yields a scalar part and an antisymmetric part, and the symmetric traceless part has no image in it. So the object must be <strong>carried</strong>, and the framework carries exactly that object by the metric's own device, $h_{\mu\nu} = \langle\varepsilon_\mu,\delta\tilde E_\nu\rangle + \langle\delta\tilde E_\mu,\varepsilon_\nu\rangle$, with $16 = 10 + 6$ and the trace in the centre. <strong>The corpus's source tensor therefore sits on the framework's spin-two machinery.</strong> Whether a matter source can be written <em>as</em> a frame perturbation, rather than merely carried the same way, is open, and it is what the framework's linearised dictionary exists to answer.</p>
+<p><strong>Grade C, about 330 equations and 64 % of the sample, is expressible and unchanged.</strong> The scalar coefficients, the scalar conditions, the scalar identities, the integrals of scalars, the comparison numbers, and the definitions and ansätze all transcribe coefficient-wise, and none of them changes. The correct statement is <strong>"rewrite available, content unchanged"</strong> — not, as an earlier reading had it, "no meaningful rewrite". <strong>The comparison numbers and the definitions and identities belong to this class exactly as the integrals do</strong>, and the article records that correction. The framework's algebra has no purchase on a Planck integral, a numerical table, or a positivity condition on a radius.</p>
+<p><strong>The rewrite also delivers a negative, and it is durable.</strong> The framework's module category carries spin zero and spin one-half only, and spin $j$ requires the $2j$-th tensor power before it can appear even as a pure carrier. Charon's memory mechanism runs on <strong>spin-two radiation</strong> inside a leptonic structure, with the information growing as the photon spin rises, and he counts the equations himself — <em>"Les équations du spin 2 sont au nombre de $16 \times 16 = 256$"</em> (Esp 098). <strong>The algebra cannot carry it.</strong> The corpus's higher-spin equations are the de Broglie–Tonnelat equations and are not wrong; what fails is the placement of the mechanism in the algebra. Whatever the leptonic memory is in framework language, it is not an algebraic structure of $\mathbb{B}$.</p>
+<p><strong>One programme the rewrite cannot touch: the numerical system.</strong> The <em>Système L</em> is a closure property and not a derivation — one constant defined by the theory's units, five measured seeds, one value taken from a mass by what the corpus calls a <em>suggestion</em>, no independent output, a search confined to $\pm10\,\%$ about the measured values and converging there, and a largest deviation, 2.3 % on the charge, that is the search's own residual. A nonlinear real system and a 729-point grid are facts about arithmetic. <strong>Biquaternion form changes not one digit of them.</strong></p>
+<p><strong>The structural conclusion.</strong> The two programmes are mirror images — the framework algebraically rich and dynamically poor, the corpus dynamically rich and algebraically poor — and the synthesis writes itself as <em>the corpus's dynamics with the framework's algebra</em>. One gain is already taken (Grade A), one lead is open (Grade B2), and the blocker is a ceiling: <strong>the framework has no dynamics coupling $\mathbb{M}_+$ to $\mathbb{M}_-$</strong>, its split being <em>"a grading of the vector space and not a splitting of the algebra"</em> under which <em>"multiplication mixes them"</em> — while <strong>the corpus's whole theory is a proposed inter-sector coupling</strong>. That makes the corpus's formalism a candidate <em>structure</em> for the framework's largest gap, and a research direction rather than a computation, because it cannot be imported into a dynamics the host does not have.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The terms this article turns on are its verdict vocabulary, defined here once so that they are not read loosely elsewhere.</p>
+<ul>
+<li><strong>Expressible</strong> — a corpus equation has a transcription in the framework's objects (scalars, four-vectors, spinors, carried rank-two tensors). <em>Expressible says nothing about value</em>: almost everything is expressible, so the word is never a verdict on its own.</li>
+<li><strong>Decided</strong> — the transcription <strong>changes the content</strong>, because the framework's structure settles a question the corpus left open. This is the only kind of rewrite that is a gain, and the article's Grade A is the whole of it.</li>
+<li><strong>Imported</strong> — the transcription is available and the dynamical content was <strong>carried from general relativity</strong>, not derived in the framework. The framework's own agenda uses this word; the article keeps it, because an imported result is not evidence for the framework.</li>
+<li><strong>Carried</strong> — a rank-two object is represented by an auxiliary vector field rather than produced by a product. The metric perturbation is carried by $\delta\tilde E_\mu \in \mathbb{M}_-$; the corpus's source tensor is carried by the same device.</li>
+<li><strong>Unchanged</strong> — the transcription exists and leaves the meaning of the equation intact. Grade C.</li>
+<li><strong>Grade A / B / C</strong> — the three classes of the count: changes the content / expressible and supplied / expressible and unchanged.</li>
+<li><strong>The Prime Convention</strong> — the framework's rule that the prime marks the coefficient carrying $i$, so $Q_\mu = q_\mu + iq'_\mu$ gives $q_\mu$ attached to $e_\mu$ and $q'_\mu$ to $ie_\mu$. The corpus's RÉEL / IMAGINAIRE split <strong>is</strong> this convention.</li>
+<li><strong>Transversal</strong> — two partitions of one set cross, so that neither refines the other. The corpus's sheets and the framework's sectors are transversal, which is why <strong>sector membership is per quantity, not per sheet</strong>.</li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><code>UPDATED_CHARON_THEORY_2026_ARTICLE_LIST.md</code> §17, <em>Biquaternion rewrite scope</em>, the register's summary of this article and its work order; §2, the dictionary of which Grade A is the algebraic content; §10, the separate and affirmative question of recovering the corpus's equations in full; §12, the chains to the corpus's numerical results.</li>
+<li>S2, <code>charon-s02-dictionary-reel-imaginaire-to-m-plus-m-minus</code>, for the complexification (RC I.1 <em>"de manière conventionnelle"</em>), the Prime Convention, the transversality of the two partitions, and the gate that the dictionary passes; S5, <code>charon-s05-notation-and-units</code>, for the corpus's symbols, units and hazards; S34, <code>charon-s34-the-input-output-ledger</code>, for the numerical system this article does not touch.</li>
+<li>J. E. Charon, <em>L'Esprit et la Relativité complexe</em> (1983): Esp 084 for the field equation written with the source tensor; Esp 098 for the memory mechanism, the rising photon spin, and <em>"Les équations du spin 2 sont au nombre de $16 \times 16 = 256$"</em>. <em>La Relativité complexe</em> (1987): RC I.1 for the stipulated partition; RC 037 for the complex-Minkowski picture; RC 3-23-a for $T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta$.</li>
+<li><em>Conventions in the Biquaternion Universe</em> for the four involutions, the six subspaces, the Prime Convention and the metric signature; <em>The Anti-Hermitian Subspace $M_-$ as the Material Sector</em> and <em>The Hermitian Subspace $M_+$ as the Informational Sector</em> for the two sectors; <em>Biquaternion Algebra</em> for the product decomposition and the statement that the product of two four-vectors is not a four-vector; <em>Relations Between Subspaces</em> for the grading and the fact that neither sector is a subalgebra.</li>
+<li><em>Linearized Gravity in Biquaternionic Form</em> for the carrier $h_{\mu\nu} = \langle\varepsilon_\mu,\delta\tilde E_\nu\rangle + \langle\delta\tilde E_\mu,\varepsilon_\nu\rangle$ and the decomposition $16 = 10 + 6$; <em>The Einstein Field Equations under the Biquaternion Framework — A Research Agenda</em> for the three kinds of statement, <em>"carried and transcribed rather than derived"</em> and <em>"the dynamics was imported from general relativity"</em>; <em>Higher Spin from Tensor Products</em> for the module bound and the $2j$-th tensor power; <em>The Material-Informational Split as a Superselection Structure</em> for <em>"multiplication mixes them"</em>.</li>
+<li>L. de Broglie and M.-A. Tonnelat for the higher-spin equations the corpus's memory mechanism invokes; A. Cayley and C. Hermite for the matrix calculus the corpus names at Esp 098 and chooses in place of hypercomplex numbers.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

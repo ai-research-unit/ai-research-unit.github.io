@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: Quantised Action, Spin and Pulse — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-quantised-action-spin-and-pulse"><strong>Charon: Quantised Action, Spin and Pulse</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The three previous articles in this series examined a source tensor, an expansion equation, and the quadratic law that ties them together. All three took one thing on trust, because everything downstream rests on it: the assumption that supplies the source in the first place. This article goes down to that assumption.</p>
+<p>It comes in two parts, and both are axioms in Charon's own numbering. The first is the third axiom, stated on page 024 of <em>L'Esprit et la Relativité complexe</em>: at every point of spacetime the action is quantised at $\pm nh$. The second is the fourth axiom, stated two pages later: that quantised action is divided <strong>exactly in half</strong> between a <em>spin</em>, which is a rotation, and a <em>pulse</em>, which is a radial pulsation of the same point in a space with one extra dimension. Half of the action of every point in the universe, on this axiom, is spent on a motion that has no name in physics.</p>
+<p>The companion inventory tags the pair [SPEC] and states the difficulty in a single line: <em>nothing in established physics forces an exact spin/pulse equipartition.</em> That line is the subject of this article. Four questions are worth separating, and they have four different answers. Why does a point need an action at all? Why two halves rather than one? What forces the two halves equal? And could anyone tell?</p>
+<p>The verdict, stated at the outset because it is not the usual one. The first question has a real argument behind it, and it is Charon's own. The second has a real argument behind it too, and it is the sharpest thing in the whole quantification — it is what reconciles Dirac's half-integral requirement with an integer axiom. The third has no argument at all; the equality is assumed, and the corpus treats it as one of its twenty equations rather than as a consequence of them. And the fourth question has the answer this article did not expect: <strong>the equipartition cannot be seen in the sector where the programme had numbers.</strong> The lepton mass equations contain only the <em>total</em> action, and the period that sets that total's scale is fitted, so no measurement of lepton masses can test the split. What is left, when that is removed, is a spin assignment that the book prints and that the muon and the tau refute.</p>
+<p>Two results here are new to the series and are worth flagging. The first is that the equipartition is <strong>unobservable by construction in the mass sector</strong> — its content there is a factor of two that can be traded against a fitted period, so it is not a fit-independent prediction at all. The second is that the equipartition makes the lepton ladder a <strong>spin ladder</strong>: the parity rule that follows from the same axioms forces the charged leptons onto the odd rungs, giving spins $\tfrac12\hbar$, $\tfrac32\hbar$ and $\tfrac52\hbar$, and the book prints exactly that — "muon : $n = 1$, c'est-à-dire spin $3/2\,h$" — for particles measured to be spin-$\tfrac12$. Both are derived below.</p>
+<p><strong>A note on sources.</strong> Everything below is checked against the improved transcriptions of both books and against <code>UPDATED_CHARON_THEORY_2026_ARTICLE_LIST.md</code> and <code>CHARON_IDEAS_AND_CLAIMS.md</code>. The book citations are the third and fourth axioms with Esp (60 ter), (95)–(111), (132); Esp §§I–III of chapter II for the phase surface and the two moments; Esp 028 §5 for the component count; Esp 031 §3 for the hadron boundary and the two conservations; Esp §§8–12 of chapter V for the lepton model, (218)–(238); and the Système L, Esp 056–058. From the 1987 book: the quantification axiom, ch. II §IV.1; the parity rule and (2-81), ch. II §IV.2; and the σ-photon hierarchy, ch. II §V. No claim here rests on an equation that any earlier article corrected; the corrections concern the cosmological system and the (3-71) coupling, neither of which enters this article.</p>
+<p><strong>Conventions.</strong> Gaussian cgs. $h$ is Planck's constant and $\hbar = h/2\pi$; the corpus writes both, and one repays care: a <strong>spin</strong> in the sense of an angular momentum is measured in units of $\hbar$, while the <strong>action</strong> associated with it is $2\pi$ times as large, in units of $h$. Equation (226) states the conversion explicitly — the actions $S_e$, $P_e$ "valent $2\pi$ fois le spin et le pulse $(n+\tfrac12)\hbar$". So the electron's spin action is $\tfrac12 h$ and its angular momentum is $\tfrac12\hbar$, and both statements are the same statement. $n$ is the integer of the quantisation axiom, $n \neq 0$; $T_0$ is the fundamental period of the proper density at a point, $T_0 = nh/(\Omega_0 c^2 d)$; and $T$ is the <em>different</em> period of the extended lepton model, the one that is fitted and equals $4{,}949\times10^{-24}$ s. The two symbols are not interchangeable and the corpus uses both. $\Omega_0$ is the quantum volume, $\Omega_0 = \tfrac43\pi l_0^3$, and $d$ the proper density at the point.</p>
+<h2 id="part-1-the-two-axioms">Part 1 — The two axioms</h2>
+<h3 id="11-why-a-point-needs-an-action-the-third-axiom">1.1 Why a point needs an action: the third axiom</h3>
+<p>The third axiom is short, and its motivation is stated in one sentence of the introduction, which is worth quoting because it is the whole reason the axiom exists: the description of the Einstein space "ne conserve l'impulsion-énergie ... que s'il existe une action non nulle, définie au signe près, en chaque point de l'espace d'Einstein." Energy–momentum conservation in the real space requires a non-zero action at every real point. The axiom then fixes what that action is:</p>
+<blockquote>
+<p><strong>Axiome 3.</strong> L'action totale en tout point-événement $M$ de la Relativité générale est quantifiée à la valeur $\pm nh$, où $n$ est entier et non nul et $|h|$ une constante.</p>
+</blockquote>
+<p>The 1987 book states the same axiom in its own words, ch. II §IV.1: "L'action en chaque point $P$ du Réel est quantifiée à la valeur $\pm nh$, où $n$ est un entier non nul et $h$ la constante de Planck." Two books, eight years apart, the same sentence.</p>
+<p>There is a reason the axiom cannot be avoided, and the corpus gives it by <em>reductio</em>. If the momentum $p$ at a point $M$ were rigorously zero in $M$'s own rest frame, then $M'_0$ — the point's image in the imaginary space — would not be the image of a physical point at all:</p>
+<blockquote>
+<p>Nous devons alors conclure que le point $M'_0$, qui correspond à un point $M$ de la Relativité générale pour lequel l'impulsion $p$ est rigoureusement nulle, n'est pas l'image d'un point physique.</p>
+</blockquote>
+<p>So a non-zero action at every point is not a decoration; without it the real space is not the trace of anything.</p>
+<p>The axiom is then turned into a relation between three quantities — the proper density $d$ at the point, the period of its pulsation, and the quantum volume — by the chain (101) to (110) of Esp, which is worth following in full because the series will use every link of it:</p>
+<p>$$\left(\frac{E^2}{c^2} - \sum_{j=1}^{3} P_j^2\right)^{1/2} cT_0 = \Omega_0 c^2 dT_0 = \pm nh \quad (n \text{ entier et non nul}) \tag{101}$$</p>
+<p>which gives the fundamental period,</p>
+<p>$$T_0 = \frac{nh}{\Omega_0 c^2 d} , \tag{105}$$</p>
+<p>and, since the proper energy at the point is $W_0 = m_0c^2 = \Omega_0 c^2 d$, the energy relations</p>
+<p>$$W_0^2 = \frac{n^2h^2}{T_0^2} = n^2h^2\nu_0^2 , \qquad W_0 = \pm nh\nu_0 , \qquad W_0 = \pm hN_0 \quad \text{with } N_0 = n\nu_0 . \tag{108–110}$$</p>
+<p>The last form is the de Broglie relation, $W_0 = hN_0$, with the point's frequency $N_0$ an $n$-th harmonic of its fundamental $\nu_0 = 1/T_0$. So the <em>wave</em> character of the model's energy is not added later: it is what the quantisation axiom already says, in the form $W_0 = \pm hN_0$. That is where the oscillator equation of a later article enters, and it is worth noticing that it enters here.</p>
+<p>The dimensional check is clean and worth recording, because it fixes what $\Omega_0$ must be: $\Omega_0 c^2 d$ has the dimensions $\mathrm{cm^3}\cdot\mathrm{cm^2\,s^{-2}}\cdot\mathrm{g\,cm^{-3}} = \mathrm{g\,cm^2\,s^{-2}}$, an energy; multiplied by $T_0$ it is an action, and equals $\pm nh$. So the quantum volume is a volume and not a parameter of convenience — the same conclusion the article on the source tensor reached from (47), by a different route.</p>
+<h3 id="12-the-phase-surface-and-the-two-motions">1.2 The phase surface, and the two motions</h3>
+<p>Having a non-zero action at every point, Charon has to say what the point's image is <em>doing</em>. He considers two possibilities and rejects the first on a specific ground. The rejected route is de Broglie's: take the proper mass to be <em>variable</em>, $M_0 = \Omega_0\rho_M$, which gives the Klein–Gordon equation $\Box^2 U + (c^2/\hbar^2)M_0^2U = 0$ and a quantum potential. Charon rejects it because "elle ne répond pas aux critères de la Relativité complexe": $M_0$ introduces a quantum potential but "n'introduit nullement le spin associé à $M$, qui est une caractéristique physique que doit nécessairement faire apparaître une véritable quantification." The objection is that a quantum potential gives you the probability business but not the spin, and the programme needs both.</p>
+<p>So he takes the other route. The proper density is, by (74), a periodic function of imaginary time, and therefore of the imaginary spatial coordinates too. There is consequently, in the neighbourhood of $M'_0$, a phase surface $\Gamma$ whose points all carry the same quadratic density $d^2$:</p>
+<p>$$\rho_{M_T}^2 = \langle\rho_{M_0}^2\rangle = d^2 = m_0^2/\Omega_0^2 , \tag{97}$$</p>
+<p>a surface "en pulsation dans l'espace imaginaire autour de $M'_0$", which coincides with $M'_0$ itself every $T/2$. On that surface the image $M'_T$ has <strong>two</strong> motions, and this is the geometric origin of the two components:</p>
+<ul>
+<li>a <strong>rotation</strong> about $M'_0 \equiv M$, to which a moment of angular momentum corresponds — and Charon names the angular-momentum vector of that rotation the <strong>spin</strong> $\mathbf{S}$ of the point;</li>
+<li>a <strong>radial pulsation</strong>, the surface breathing in and out, to which a linear momentum corresponds — and he names the vector of that motion the <strong>pulse</strong> $\mathbf{P}$.</li>
+</ul>
+<p>The two vectors are perpendicular by construction:</p>
+<p>$$\mathbf{P}\cdot\mathbf{S} = 0 \quad \forall \tilde t .$$</p>
+<p>So the corpus's two components are not two arbitrary quantities bolted on: they are the <em>tangential</em> and the <em>radial</em> degrees of freedom of a closed curve, one rotating and one breathing. Any closed orbit in a plane has both. That is the strongest thing that can be said in favour of the <em>existence</em> of two components, and it is a real argument, not a restatement.</p>
+<p>Two further features of the construction matter downstream and belong here. The first is that the <em>direction</em> of $\mathbf{S}$ and $\mathbf{P}$ in the imaginary space is not determined by anything in the real space — the position of $M'_T$ on $\Gamma$ is "indéterminée" — and the corpus makes that indeterminacy the origin of the probabilistic reading of quantum mechanics. That is the subject of a later article on the Born rule; what belongs here is that the indeterminacy is attached to the <em>directions</em> of the two vectors whose magnitudes are fixed. The second is that the vectors' magnitudes are fixed, and the fixing is the fourth axiom.</p>
+<h3 id="13-the-fourth-axiom-equipartition">1.3 The fourth axiom: equipartition</h3>
+<p>Here is the axiom, verbatim, from Esp 026, together with the paragraph that follows it:</p>
+<blockquote>
+<p><strong>Axiome 4.</strong> L'action totale $\pm nh$ en tout point $M$ de la carte Relativité générale est, dans le référentiel propre de ce point $M$, également partagée entre le spin et le pulse.</p>
+<p>Les normes de chacun des deux vecteurs $\mathbf{S}$ et $\mathbf{P}$ de directions indéterminées en $M$ sont donc égales et valent : $S^2 = P^2 = \tfrac14 n^2h^2$ ($h = 2\pi\hbar$). (111)</p>
+<p>Ceci signifie à son tour, d'après (102) et (105), qu'il y a <em>équipartition</em> de l'impulsion-énergie du point $M$ sur $\Gamma$ entre ses deux mouvements de spin et de pulse.</p>
+</blockquote>
+<p>Three things are being asserted, and it is worth separating them because the corpus's later language runs them together. The <strong>action</strong> is split equally: each half carries $\tfrac12 nh$. The <strong>energy–momentum</strong> is split equally, which (111) says follows from (102) and (105). And the split is exact, in the point's own rest frame — the qualifier matters, because it is the rest frame that gives the split a meaning.</p>
+<p>The word "donc" in the second paragraph — the norms are equal <em>therefore</em> — is the whole logical situation of this article. (111) is derived from Axiome 4, not Axiome 4 from (111). And Axiome 4 itself is introduced two pages earlier with the word "admettrons": "Nous admettrons l'axiome suivant." The equipartition is admitted.</p>
+<p>Its content, in the units the lepton model will use, is a factor of two. Because the spin action and the pulse action are each $\tfrac12 nh$, the total action of a point at the quantisation level $n$ is their sum, $nh$, and the corpus's lepton model writes the pair explicitly. Equation (223) gives the electron's spin action and (229) its pulse action:</p>
+<p>$$S_e = \left(n_e + \tfrac12\right)h , \qquad P_e = \left(n_e + \tfrac12\right)h , \qquad n_e = 0 ,$$</p>
+<p>both equal, each $\tfrac12 h$ for the electron, and both doubled by the equipartition into the total $h$ that appears in the mass equation. The general form for the $n$-th charged lepton is $S = P = (n+\tfrac12)h$, and the passage to the axiom's label is $n_{\text{axiom}} = 2n + 1$: the electron's rung is the axiom's $n = 1$, the muon's is $n = 3$. That mapping is used in Part 3, and it is what makes the ladder a spin ladder.</p>
+<h3 id="14-the-nearest-thing-to-a-derivation-diracs-four-components">1.4 The nearest thing to a derivation: Dirac's four components</h3>
+<p>There is one argument in the corpus that comes close to deriving something, and it is worth stating carefully, because it is the strongest support the equipartition has and it still does not reach the equality.</p>
+<p>The argument runs as follows, from Esp 028. Dirac's analysis shows that a wave function with <strong>four</strong> components conserves energy–momentum only if there exists, at every point of the space occupied by a particle, a <strong>half-integral</strong> spin $\pm\tfrac12 n\hbar$. Charon accepts the requirement and draws the consequence for his own scheme: since the point must carry a half-integral action, and since Axiome 3 says the <em>total</em> action at the point is the <strong>integer</strong> $\pm nh$, the integer action cannot be carried by a single half-integral object. An integer is not half-integral. So the integer must be <em>built</em> from half-integral pieces, and that is where the second piece comes from:</p>
+<blockquote>
+<p>Or nous avons vu que, en RGQ, nous devons postuler (notre axiome 3) en tout point $M$ une action entière $\pm n\hbar$, cette action étant également partagée entre un spin $\pm\frac12 n\hbar$ et un pulse $\pm\frac12 n\hbar$.</p>
+</blockquote>
+<p>This is the best motivation for the pulse in the corpus, and it is a <em>structural</em> one: the pulse exists in order to reconcile Dirac's half-integral requirement with the axiom's integer total. That is a genuine argument, and it is why the earlier article's dismissal of the de Broglie route was not arbitrary — the second half-integral object is not a quantum potential in disguise, it is the other half of an integer.</p>
+<p>But it stops one step short, and the step it stops short of is exactly the step this article is about. What the argument establishes is that the integer total must be expressible as <strong>two half-integral pieces</strong>. It does not establish that the two pieces are <em>equal</em>. An action of $3h$ can be split as $\tfrac12h + \tfrac52h$, or as $\tfrac32h + \tfrac32h$; both are two half-integral pieces and both sum to $3h$. The fusion arithmetic that produces the corpus's component counts requires both factors to be half-integral — it needs each factor to be a four-component object — and that requirement is met by the asymmetric splits as well as by the symmetric one. So the counting fixes the <em>parity</em> of each half and says nothing about their equality.</p>
+<p>The equality is therefore the one thing in the quantification that is not argued for. The corpus's own language concedes this: in the introductory summary of the programme, Charon writes that the action will appear "constituée <strong>pour moitié</strong> d'un moment cinétique de rotation (spin) et <strong>pour moitié</strong> d'une pulsation périodique radiale (pulse). Chacune de ces deux grandeurs sera quantifiée à $\pm\tfrac12 nh$." The two "pour moitié" are the assumption, stated as though it were a description. Part 4 asks whether anyone could tell that it is an assumption.</p>
+<h2 id="part-2-what-the-corpus-does-with-the-two-halves">Part 2 — What the corpus does with the two halves</h2>
+<h3 id="21-fusion-and-the-component-counts">2.1 Fusion, and the component counts</h3>
+<p>With two half-integral actions identified, the corpus can describe a point of total action $\pm nh$ by <em>fusing</em> them, and the arithmetic of the fusion is the mathematical content of the second half of the quantification. The electron's spin is a Dirac spinor, four components; the pulse is the same kind of object, four components; and their fusion is a $4 \times 4 = 16$-component object. Charon states the ladder at Esp 028:</p>
+<blockquote>
+<p>soit 16 composantes pour $n=1$ (spin $\pm\frac12\hbar$ + pulse $\pm\frac12\hbar$), 256 composantes pour $n=2$ (spin $\pm\hbar$ + pulse $\pm\hbar$) etc.</p>
+</blockquote>
+<p>and the 1987 book generalises it: an object of total action $2^nh$ is described by equations $\Sigma_{2^n}$ with $16^{2^n}$ components, and — the important structural property — "les équations pour la structure $\Sigma_{2^n}$ contiennent les équations pour la structure $\Sigma_{2^{n-1}}$", so a state of total action $2^nh$ contains the states $2h$, $4h$, $8h$, … up to $2^nh$. That nesting is what makes the corpus's σ-photon a <em>cumulative</em> particle, the "photon" that accumulates the memory of all the levels below it.</p>
+<p>Two comments belong here, and the inventory has already made the first. This is standard mathematics of its period — the de Broglie fusion method and the Petiau–Bhabha equations of the 1930s and 1940s — and Charon uses it faithfully. It is tagged [MATH] (historical) for that reason, and the tag is right: the fusion is correct arithmetic on a formulation that was subsequently displaced. The second comment is the one this article needs: <strong>the component count is a consequence of the split being half-integral, not of its being equal.</strong> The $4\times4$ is what two half-integral factors give. It is not evidence for Axiome 4.</p>
+<h3 id="22-the-parity-rule-and-where-it-comes-from">2.2 The parity rule, and where it comes from</h3>
+<p>The 1987 book draws the spin–statistics consequence in a single line of the axiom itself: "Si $n$ est pair $P$ est un boson; si $n$ est impair $P$ est un fermion." Even action quantum number, boson; odd, fermion.</p>
+<p>It is worth seeing that this is not an independent result but the standard spin–statistics theorem wearing the corpus's notation. The spin of a point at level $n$ is $\tfrac12 n\hbar$ — that is the equipartition, the half of the action that is rotational. For odd $n$ this is a half-integer multiple of $\hbar$; for even $n$ it is an integer multiple. Half-integer angular momentum is a fermion and integer angular momentum is a boson, which is Pauli's theorem. So the parity rule is <strong>imported and correct</strong> — and it is imported, not derived, exactly as the inventory says. The corpus's contribution is not the rule but its packaging: because the total action is what labels the point, the parity of a <em>number</em> carries the statistics of a <em>particle</em>.</p>
+<p>The rule is used, and it is worth recording where, because these are the places the second half of the action becomes visible in the physics rather than in the arithmetic. The σ-photon of §2.1 is the even case at $2^nh$. The intermediate vector boson of the weak interaction is a pair $(\nu_e, \nu_\mu)$ "de spin total entier" — an integer-spin composite, transient, "si instable qu'on peut le qualifier de virtuel" — and the corpus's identification of it is right in structure and, as a later article records against the post-mortem list, wrong in identity, since $W^\pm$ and $Z$ were found at CERN in 1983 and are not neutrino pairs. And the gluon is a preon–antipreon pair with spins $+\hbar/2$ and $-\hbar/2$, so that its "spin et pulse global tous deux nuls" — an integer-spin (here scalar), electrically neutral, massless carrier built from two half-integral constituents, which is how the corpus gets a boson out of a pair of fermions without breaking the parity rule. Each of these is the parity rule doing real work.</p>
+<h3 id="23-the-two-moments-conserved-separately">2.3 The two moments, conserved separately</h3>
+<p>The two halves are not only equal in magnitude; they are separately conserved, and the corpus states the consequence in a passage that matters more for this article than for any other in the series. From Esp 031:</p>
+<blockquote>
+<p>Soulignons enfin que, compte tenu de notre axiome 2 de conservation de l'impulsion-énergie, les résultats qui précèdent conservent séparément le moment angulaire associé au spin et le moment linéaire associé au pulse. […] Ceci expliquerait qu'on ait pu expérimentalement mettre en évidence la conservation du spin, au cours d'interactions entre particules, sans se préoccuper parallèlement de la conservation du pulse (qui est également et automatiquement vérifiée dans le formalisme de la RGQ).</p>
+</blockquote>
+<p>Read that last parenthesis carefully, because it is the seed of Part 4. The pulse's conservation is <strong>automatically</strong> satisfied. Nothing measured it; nothing needed to. The corpus presents this as a virtue — it explains why spin conservation was found in experiment without anyone looking for a pulse — and as an explanation it is coherent. But it is also a frank admission that the second half of every action in the universe has, so far, left no trace in any experiment except one that did not need to look for it. Part 4 asks what trace it <em>could</em> leave.</p>
+<h3 id="24-what-the-pulse-is-claimed-to-do">2.4 What the pulse is claimed to do</h3>
+<p>The corpus does not leave the pulse without physical consequences, and it names three. The first is a radial pulsation of a particle's boundary. Since every point of a particle carries a pulse, and the boundary $\Gamma$ of a particle is a locus of such points, the boundary itself should pulsate radially:</p>
+<blockquote>
+<p>On doit également logiquement admettre que la conséquence du pulse $\pm\frac12 nh$ de chaque point $M$ constituant une particule est de produire une pulsation radiale, caractérisée par l'action $\pm\frac12 nh$, de la frontière $\Gamma$ de cette particule.</p>
+</blockquote>
+<p>The second is offered as its corroboration, and it is the sort of thing this programme does well: the measured form factors of the neutron and the proton are consistent with a boundary that is "mal définie" — ill-defined — in high-energy electron–nucleon scattering, which a pulsating boundary would produce. The third is the largest and the most speculative: the same radial pulsation "pourrait être responsable de la création du potentiel gravitationnel créé par cette particule", with the earlier work cited.</p>
+<p>The division of labour that follows is stated in the introduction and is worth setting out, because it is the model's answer to why there are two interactions that look so different. The spin "jouerait alors un rôle essentiel au niveau des interactions électromagnétiques et nucléaires", while "on devrait tenir compte du pulse au niveau des interactions gravitationnelles." The spin is the gauge sector; the pulse is the gravitational sector. So the pulse is not merely an extra quantum number — it is where the programme puts gravity.</p>
+<p>That is a strong claim and it should be labelled as what it is. It is testable in principle, it is untested in fact, and its support in the corpus is the author's own earlier work rather than an independent observation. It is the only route by which the pulse's own action could ever be seen directly, and Part 4 returns to it; §5.5 collects all three jobs the pulse was given and grades them.</p>
+<h3 id="25-the-lepton-model-l15-and-the-factor-of-two">2.5 The lepton model: L15 and the factor of two</h3>
+<p>The place where the equipartition becomes a <em>number</em> is the lepton model, and there it enters twice. The first entry is in the mass equations themselves. Equation (220), for the electron, and (221), for the muon, read</p>
+<p>$$\int_0^T 2\pi^2c^2\left(\alpha - \frac{\beta}{R}\right)dt + S_e + P_e = \int_0^T 2\pi^2c^2\left(\alpha - \frac{\beta}{R}\right)dt + 2\left(n_e+\tfrac12\right)h = m_0c^2T , \tag{220}$$</p>
+<p>with the muon's twin carrying $\alpha + \beta/R$, $2(n_\mu+\tfrac12)h$ and $\mu_0c^2T$. The corpus states the meaning of the factor in the sentence immediately after: "Le facteur 2 indique l'équipartition du spin et du pulse du modèle leptonic." The kinetic term is the <em>sum</em> of a spin action and a pulse action, each $(n+\tfrac12)h$, and the sum is what the factor 2 is.</p>
+<p>The second entry is in the Système L, the twenty-equation system of Esp 056–058, where the equipartition is one of the equations:</p>
+<p>$$L15: \quad k_S = k_P ,$$</p>
+<p>the relativistic coefficients of the spin and the pulse energies equal. This is worth stressing because it settles a question the inventory leaves open. The equipartition is not a <em>consequence</em> of the lepton model; it is an <strong>input to it</strong>, one of the twenty equations the model is asked to solve. Esp 053 says the same thing in the neutrino section, deriving nothing and asserting the needed relation: "D'après notre axiome 4 il doit y avoir équipartition entre les énergies de spin et de pulse du neutrino … cela signifie encore qu'il nous faut avoir : $k_S = k_p$ (238)." And Esp 053 §11 says it in three words for the whole ladder: "Pour chacun de ces leptons, le pulse est égal au spin (notre axiome 4)."</p>
+<p>The factor of two has a numerical consequence that the next Part uses. Because the electron's kinetic term is $2(0+\tfrac12)h = h$ and the muon's is $2(1+\tfrac12)h = 3h$, the <em>step</em> between successive leptons is $2h$, and the fitted period follows from the mass difference. The Système L records this in the form</p>
+<p>$$T = \frac{2h}{c^2(\tau-\mu)} = 4{,}949\times10^{-24}\ \mathrm{s} ,$$</p>
+<p>against the table's $4{,}9\times10^{-24}$ s. This article has recomputed it: with $\tau - \mu = 1{,}671202$ GeV, the formula gives $4{,}9493\times10^{-24}$ s. The agreement with the corpus's own table is exact to the figures printed. So the factor 2 of the equipartition is <em>inside</em> the fitted period, and Part 4 makes that observation do the work.</p>
+<h2 id="part-3-the-ladder-and-what-the-axiom-buys">Part 3 — The ladder, and what the axiom buys</h2>
+<h3 id="31-the-mass-slider">3.1 The mass slider</h3>
+<p>The lepton model turns the quantisation axiom into a mass formula, and the article on the lepton tower has already followed it. What matters for this article is only that the formula reads, from (236) and its restatement (244),</p>
+<p>$$m_{0\tau} = m_{0\mu} + \frac{2(n_\tau - n_\mu)h}{c^2T} , \qquad \text{equivalently} \qquad \tau_n = \mu + \frac{2(n-1)h}{c^2T} ,$$</p>
+<p>with $n$ taking the values $0, 1, 2, \dots$ for electron, muon, tau, and the next. Turning it into numbers, with $T = 4{,}949\times10^{-24}$ s so that the step is the measured $\tau - \mu$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>lepton</th>
+<th>mass</th>
+<th>PDG</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>electron</td>
+<td>$0{,}511$ MeV</td>
+<td>$0{,}5110$ MeV</td>
+<td>input</td>
+</tr>
+<tr>
+<td>1</td>
+<td>muon</td>
+<td>$105{,}66$ MeV</td>
+<td>$105{,}658$ MeV</td>
+<td>input</td>
+</tr>
+<tr>
+<td>2</td>
+<td>tau</td>
+<td>$1{,}7769$ GeV</td>
+<td>$1{,}7769$ GeV</td>
+<td>fitted — $T$ was chosen to make it so</td>
+</tr>
+<tr>
+<td>3</td>
+<td>"next"</td>
+<td>$3{,}4481$ GeV</td>
+<td>—</td>
+<td>excluded</td>
+</tr>
+<tr>
+<td>4</td>
+<td>"next"</td>
+<td>$5{,}1193$ GeV</td>
+<td>—</td>
+<td>excluded</td>
+</tr>
+</tbody>
+</table></div>
+<p>The step is $1{,}6712$ GeV. At the table's rounded $T = 4{,}93\times10^{-24}$ s it is $1{,}6778$ GeV and the rungs move to $1{,}7834$, $3{,}4612$, $5{,}1389$ GeV; the difference between the two ways of quoting $T$ is $0{,}4\%$, and it is the whole difference between the two towers the register records. Nothing in this Part depends on which is used.</p>
+<h3 id="32-the-spin-slider-and-the-muon">3.2 The spin slider, and the muon</h3>
+<p>Here is the result this Part was written for, and it follows from the axioms without any new assumption.</p>
+<p>The charged leptons are fermions, so by the parity rule of §2.2 their action quantum number $n_{\text{axiom}}$ is <strong>odd</strong>. The successive charged leptons are at successive available rungs, so they sit at $n_{\text{axiom}} = 1, 3, 5$, which is the same statement as the model's $n = 0, 1, 2$. The spin is half the action, so the spin of the $n$-th charged lepton is $\tfrac12 n_{\text{axiom}}\hbar$:</p>
+<p>$$\text{electron}: \tfrac12\hbar , \qquad \text{muon}: \tfrac32\hbar , \qquad \text{tau}: \tfrac52\hbar .$$</p>
+<p>In the model's own labelling this is the statement that the lepton's spin action is $(n+\tfrac12)h$, and the angular momentum is $(n+\tfrac12)\hbar$. The corpus prints it, in the ladder on page 052 that this session transcribed and verified:</p>
+<blockquote>
+<p>électron : $n = 0$, c'est-à-dire spin $1/2\,h$
+muon : $n = 1$, c'est-à-dire spin $3/2\,h$
+lepton tau : $n = 2$, c'est-à-dire spin $5/2\,h$</p>
+</blockquote>
+<p><strong>The electron matches and the muon does not.</strong> The electron is measured to be spin-$\tfrac12$, and the model's first rung gives $\tfrac12\hbar$: correct. The muon is measured to be spin-$\tfrac12$ and the model's second rung gives $\tfrac32\hbar$: not correct. The tau is measured to be spin-$\tfrac12$ and the model gives $\tfrac52\hbar$. Charged-lepton spins are measured, not inferred: $\tfrac12$ for all three, and the muon's is pinned by its own decay and by $g-2$. A spin-$\tfrac32$ muon would not decay as the muon decays.</p>
+<p>This is the kind of place where the reader is owed the strongest defence of the corpus before the defect is recorded, so here it is, and it fails. The defence would be that "spin" in the ladder is an <em>internal</em> quantum number and not the particle's observed spin. Three things foreclose it. The book writes "c'est-à-dire spin", which identifies the two. The model's spin is defined geometrically as the angular momentum of the image's rotation about $M'$, which is a physical angular momentum. And Esp 053 extends the identification to the neutrinos attached to each lepton: those neutrinos "se distinguant l'un de l'autre tant par leur énergie que par leur spin (qui est le spin de la particule à laquelle ils correspondent)." So the corpus means the spin.</p>
+<p>What the corpus <em>could</em> have done, and did not, is decouple the two sliders. The mass ladder needs one integer and the spin assignment needs another, and nothing in the axioms forces them to be the same integer. But the corpus identifies them — one integer $n$, one ladder, masses and spins rising together — and by doing so it buys the tower at the price of the muon's spin. That price is recorded, and it is not payable: the muon's spin is not negotiable.</p>
+<p>It is worth adding why this is easy to miss, because it is a general lesson about the corpus. The electron rung is <em>right</em>, and the electron is the particle everyone checks. The first row of the table agrees with experiment, and the first row is where a reader stops.</p>
+<h3 id="33-the-step-and-lep">3.3 The step, and LEP</h3>
+<p>The mass ladder of §3.1 has been dead since the LEP programme closed, and the article on the lepton tower is its post-mortem. What belongs here is only the connection to this article, and it is short.</p>
+<p>The tower's step is $2h/(c^2T)$, and that 2 is the equipartition. Remove the pulse — give all the action to the spin — and the step becomes $h/(c^2T)$, half as large. So the ladder's <em>scale</em> is set by the same axiom that sets the muon's spin, and the two failures have one root: the second half of every action. With the step at $1{,}6712$ GeV, the model predicts about <strong>59</strong> charged leptons below $100$ GeV, at $3{,}45$, $5{,}12$, $6{,}79$, $8{,}46$ GeV and onward. LEP searched to about $100$ GeV and found none. The three known charged leptons are accommodated only because $T$ was fitted to the $\tau-\mu$ difference, which makes the tau's "prediction" a restatement of its input.</p>
+<p>So the position at the end of Part 3 is this. The equipartition, taken with the parity rule, produces a definite, checkable, wrong statement about the muon's spin. That is one definite empirical consequence, and it is false.</p>
+<h2 id="part-4-can-the-equipartition-be-seen">Part 4 — Can the equipartition be seen?</h2>
+<h3 id="41-the-mass-sector-cannot-see-it">4.1 The mass sector cannot see it</h3>
+<p>The natural expectation, after Part 3, is that the equipartition is a falsified assumption — the muon's spin has killed it. That expectation is too quick, because the mass sector, which is where the programme had its numbers, turns out to be blind to the split, and it is worth showing why in detail.</p>
+<p>Look again at (220) and (221). The parts of those equations that carry the equipartition are $S_e + P_e$ and $S_\mu + P_\mu$, and each is a sum:</p>
+<p>$$S_e + P_e = 2\left(n_e+\tfrac12\right)h , \qquad S_\mu + P_\mu = 2\left(n_\mu+\tfrac12\right)h .$$</p>
+<p>The mass equations see the <strong>sum</strong>. They do not see the split. If the electron's action were carried entirely by the spin — $S_e = h$, $P_e = 0$ — the sum would be unchanged and the mass equations would be unchanged. If it were split $\tfrac14h$ and $\tfrac34h$, again unchanged. The distinction between spin and pulse is invisible to every equation whose left-hand side is the total action, and the lepton mass equations are exactly such equations.</p>
+<p>That would be the end of it if the total action's <em>scale</em> were independently known. It is not: the step is $2h/(c^2T)$, and $T$ is fitted to the measured $\tau-\mu$ difference. So the factor 2 of the equipartition can be moved into $T$ and the fit is identical. A model without the pulse would have the step $h/(c^2T')$ with $T' = T/2 = 2{,}4747\times10^{-24}$ s, would fit all three lepton masses exactly as well, and would be the same model measured in different units. The mass data determine the product $2h/c^2T$, not the 2.</p>
+<p>This is the article's first new result, and it should be stated plainly. <strong>Axiome 4 is not testable through the lepton masses, even in principle.</strong> The sector that gave the programme its lepton tower and its fitted constant $\beta$ contains no observable that distinguishes an equal spin/pulse split from an unequal one, because the only thing that enters is the sum, and the sum's scale is fixed by a fitted period. Anyone hoping to refute the equipartition with lepton data — or to confirm it — is looking in a place where it leaves no mark.</p>
+<h3 id="42-what-is-left">4.2 What is left</h3>
+<p>Remove the mass sector and the equipartition's footprint is small. It consists of five things, and they sort cleanly into the untestable and the wrong.</p>
+<p><strong>The spin assignment.</strong> Testable, tested, wrong for the muon and the tau (§3.2). This is the strongest.</p>
+<p><strong>L15, the internal consistency condition $k_S = k_P$.</strong> This is a <em>check</em> on the fit, not a prediction: the twenty-equation system is asked to produce equal coefficients for the spin and the pulse energies, and the fit's residual (the corpus's own $\chi_L = 2\%$) is what it is. A confrontation between L15 and a measured quantity would test the equipartition; there is no such quantity, because both $k_S$ and $k_P$ are internal to the lepton model.</p>
+<p><strong>The pulsation of a particle's boundary, and its form-factor corroboration.</strong> In principle testable, and the corpus's claim is modest — that a pulsating boundary is <em>consistent</em> with the diffuse high-energy form factors. Consistency is not a signature; a static boundary with a soft edge is equally consistent. So this neither confirms nor refutes.</p>
+<p><strong>Gravity from the pulsation.</strong> This is the only place where the pulse is claimed to do something no other mechanism does, and it is therefore the only live test. It is also the least supported: the corpus cites the author's own earlier work, and the intervening decades have not produced a pulsation-driven gravitational-potential signature. As a prediction it is unrefuted and untested; as support for the equipartition it is a promissory note.</p>
+<p><strong>The fusion counts, and the parity rule.</strong> The first is mathematics and the second is imported physics (§2.1, §2.2). Neither is evidence about the equality of the halves.</p>
+<p>So the honest tally is: one definite consequence, false; one internal consistency condition, unfalsifiable from outside; two effects that are either consistent-with-anything or unsupported; and two imported pieces. That is a thin empirical record for the axiom on which the programme's entire particle sector rests — and it is worth saying that the thinness is not an accident of the presentation. It follows from §4.1: the one sector with numbers cannot see the split, so the split's only hope of a test was always the spin, and the spin is wrong.</p>
+<h3 id="43-what-would-force-it">4.3 What would force it</h3>
+<p>The question the inventory asks is what forces the equipartition, and having answered that nothing in the corpus does, it is worth asking what <em>could</em>, because the corpus contains a principle that was never turned on this question.</p>
+<p>That principle is Axiome 2, the stationary action: $\delta\int_{V_4}U\,dV_4 = 0$, together with the definition of the action density $U = dA/dV_4$. The programme's whole claim to originality rests on deriving its equations from a variational principle rather than postulating them — that is the point of the axiom, and it is the same principle the article on the source tensor used to explain why the field equation has the form it has. The split of the action between spin and pulse is a division of that action, and a division of an action is exactly the sort of thing a variational principle could determine: the equal split would be justified if it were the stationary point of the total action over the allowed divisions, or if the two halves entered $U$ symmetrically so that no asymmetric division could extremise it.</p>
+<p>The corpus never performs that calculation. It postulates the split (Axiome 4) and then uses a variational principle for other purposes. So the honest statement of the gap is not merely that the equality is unproven; it is that <strong>the programme's own strongest instrument, the one it advertises as its method, is never applied to its most load-bearing assumption.</strong> That is the open item this article hands forward, and it is a concrete one: write down $U$ for a point of action $\pm nh$ as a functional of the split, and extremise. If the equal split is the extremum, Axiome 4 becomes a theorem of the framework. If it is not, the axiom is the framework's free choice and should be counted as a parameter — which would change the programme's own parameter count, the subject of rule R1.</p>
+<p>Two other things would force or refute it more directly, and both are worth naming for completeness. A setting in which a point's energy–momentum could be measured in its <strong>own rest frame</strong> would probe the split directly, since that is the frame in which the axiom asserts the equality; no such measurement exists, because no experiment reaches a point's rest frame below the particle scale. And any detection of a <strong>radial pulsation</strong> of a particle's boundary, or of the gravitational-potential signature the corpus attributes to the pulse, would confirm the pulse's existence, though not necessarily its equality with the spin.</p>
+<h2 id="part-5-what-it-is-worth">Part 5 — What it is worth</h2>
+<h3 id="51-motivated-assumed-committed">5.1 Motivated, assumed, committed</h3>
+<p>Separation is the fairest treatment, so here it is, in four grades.</p>
+<p><strong>Motivated, and correctly.</strong> The <em>existence</em> of a non-zero action at every point, and of a second half-integral component. The first is required by energy–momentum conservation (§1.1), and the second is required to reconcile Dirac's half-integral condition with an integer axiom (§1.4). These two are the strongest structural arguments in the quantification, and the second is genuinely elegant: it is the reason the pulse is not an arbitrary extra field.</p>
+<p><strong>Motivated, and correctly, in its geometry.</strong> The identification of the two components with the tangential and radial motions of an image on a pulsating phase surface (§1.2). A closed curve in a plane has both degrees of freedom, and the corpus's $\mathbf{P}\cdot\mathbf{S} = 0$ is the statement that they are the two orthogonal ones. Nothing here is forced, but nothing here is arbitrary either.</p>
+<p><strong>Assumed.</strong> The equality of the two halves. It is Axiome 4, admitted with the word "admettrons", and it is one of the twenty equations of the Système L rather than a consequence of them (§2.5). This is the article's subject, and the grade is not a criticism so much as a classification: an axiom is allowed to be an axiom.</p>
+<p><strong>Committed.</strong> The consequences that follow from the assumption and could be wrong. The spin assignment $\tfrac12\hbar$, $\tfrac32\hbar$, $\tfrac52\hbar$ (wrong for the muon and tau); the parity rule (imported, and right); the mass-ladder step $2h/(c^2T)$ (and the tower that died with it); and gravity located in the pulse (untested).</p>
+<h3 id="52-is-it-required-no">5.2 Is it required? No</h3>
+<p>Nothing in established physics requires an exact spin/pulse equipartition, and this is the inventory's [SPEC] tag stated in full. The reason is structural rather than empirical. Standard physics has exactly one conserved action per point — the particle's — and it is carried by a spin whose magnitude is fixed by the spin–statistics theorem and the representation theory of the Lorentz group. There is no second half-integral object, no second conserved moment, and no reason to expect one. A point's angular momentum and its linear momentum are different objects and are not equal in any frame, which is the ordinary-mechanics statement of why the corpus's equality is unfamiliar: the corpus measures both in action units and asserts that the two actions are equal, which is a statement about a radial pulsation that standard physics does not have.</p>
+<p>So the equipartition is best described as a <strong>structural alternative with no counterpart</strong>, not as a correction or a completion of anything. It is not numerology, because there is no number in it, and the equal split is not fitted. It is not a reformulation, because standard physics has no pulse to reformulate. And it is not obviously wrong, because its consequences are either untestable (§4.1) or, where testable, rest on identifications the corpus makes and could have declined to make (§3.2). That is a narrow window, and it is the honest one.</p>
+<h3 id="53-what-would-break-it">5.3 What would break it</h3>
+<p>Three tests, and the third is the one that has already fired.</p>
+<p><strong>A derivation from Axiome 2, or its failure.</strong> If $U$, extremised over the split, selects the equal division, the axiom is a theorem; if it does not, the axiom is a free parameter and the programme's parameter count rises by one. This is the cheapest test in the sense that it needs no experiment — it needs the calculation the corpus never did.</p>
+<p><strong>A measurement of the split.</strong> Any observable that separates the spin's action from the pulse's in a single point would do it. §4.1 shows the lepton masses cannot; no other measurement in the corpus can either. So this test is, for now, unavailable, and it is worth stating that unavailability as a defect of the programme's falsifiability rather than of the world.</p>
+<p><strong>The spin assignment.</strong> This is the test that has fired. The corpus's own axioms assign the muon the spin $\tfrac32\hbar$ and the tau $\tfrac52\hbar$; both are measured to be $\tfrac12\hbar$. A reader is entitled to ask whether this kills the equipartition or only the identification of the ladder's integer with the particle's spin; the corpus forecloses the second reading in its own words (§3.2), so it kills the equipartition <em>as stated</em>. What survives is the weaker programme in which the two sliders are independent — and that programme has not been written.</p>
+<h3 id="54-what-the-framework-can-take">5.4 What the framework can take</h3>
+<p>Three things, and one that must not be taken.</p>
+<p><strong>Take the reconciliation argument.</strong> The observation that an integer action cannot be a single half-integral object, so that an integer axiom plus Dirac's condition forces a <em>second</em> half-integral component, is correct and worth keeping whatever happens to the pulse. Any framework that postulates an integer action at a point and wants Dirac particles in it faces the same arithmetic, and the arithmetic is on the corpus's side.</p>
+<p><strong>Take the orthogonality, and the indeterminacy it carries.</strong> The construction of two orthogonal vectors of fixed magnitude and unfixed direction, on a surface whose phase is unknowable from the real space, is a clean way to attach an indeterminacy to a deterministic magnitude — and it is the corpus's actual mechanism for the probabilistic reading of quantum mechanics. Whether that mechanism survives is a question for the Born-rule article; that it is a <em>mechanism</em>, and not an assertion, is worth recording here.</p>
+<p><strong>Take the warning in §4.1.</strong> The most transferable lesson of this article is not about spins. It is that a fitted scale can hide a structural assumption, and that a sector which appears to test a model can be blind to the very assumption the model rests on. The lepton mass equations look like they test the equipartition; they cannot, because they see only the sum and the sum's scale is fitted. Any reader of a model with a fitted constant should ask which of its structural choices that constant absorbs. Here the answer is: the factor of two that the whole quantification is built on.</p>
+<p><strong>Do not take the pulse as a free extra.</strong> The pulse is not a second quantum number that can be appended to a standard model and left alone: its three jobs come as a package, and taking the pulse means taking them. §5.5 sets the three out and grades them, and it is there that the account of what to keep belongs.</p>
+<h3 id="55-the-pulses-three-jobs-and-what-each-costs">5.5 The pulse's three jobs, and what each costs</h3>
+<p>The pulse was introduced to do one job. It has since been asked to do three, and separating them is the fairest way to decide what to keep.</p>
+<p><strong>Job 1 — carry the second half-integral component.</strong> This is the founding job (§1.4). An integer action cannot be a single half-integral object, so something has to carry the other half, and Dirac's four-component condition supplies the reason. The argument survives, and it is the strongest thing in the quantification. Whatever else is cut, this is not the reason to cut it.</p>
+<p><strong>Job 2 — make the two halves equal.</strong> This is Axiome 4, admitted with the word "admettrons" rather than derived (§1.3). It is structural rather than decorative: the corpus's own spin and pulse equations on page 052 are consistent only if the two relativistic coefficients agree (§2.5), so the equality is written into the model rather than tested by it. And it cannot be tested where it would show, because the lepton mass equations contain only the sum and the factor of two can be absorbed into the fitted period (§4.1). The result is an assumption that is at once structural and invisible.</p>
+<p><strong>Job 3 — cause gravity.</strong> The radial pulsation of $\Gamma$ is claimed to create the particle's gravitational potential: "la pulsation radiale ... pourrait être responsable de la création du potentiel gravitationnel créé par cette particule" (§2.4). The companion article on gravity (S29) examines that claim and finds it fails on two independent counts. The pulsation's own mean-square source is $10^{98}$ times smaller than matter's, so it cannot source the field at all; and the profile it does predict gives a force falling as $1/r$ rather than $1/r^{2}$. Nor can the failure be repaired, because the amplitude is pinned to the cosmic density by the mechanism's own boundary condition, and raising it would replace the wave with the particle.</p>
+<p><strong>What keeping it costs.</strong> Three commitments come with the pulse, and they are worth naming rather than leaving implicit. Every point of the spacetime must pulsate radially in the imaginary space, which is a heavy ontological commitment for a quantity that nothing measures directly. Recombining the two halves needs the fusion apparatus of §2.1, with the component counts and their consistency conditions. And the pulse carries the period $T_0$ into the cosmology and into the mass ladder, bringing a vocabulary of its own with it.</p>
+<p><strong>What is idle is not the pulse.</strong> It is easy to read the gravity article and conclude that the pulse does nothing. The reverse is true. The pulse has its own equations in the lepton sector, and it supplies the period the mass ladder is built on. What are idle are the <em>equality</em> and the <em>gravitational role</em>. The pulse itself is doing work, and a programme that cuts the two idle claims keeps the pulse's equations intact.</p>
+<p><strong>The verdict.</strong> Taken together, the three jobs put the pulse in the worst of both positions. Where it was meant to be observable, in the lepton masses, it is invisible (§4.1); where it was testable, in gravity, it is wrong (§2.4, and the companion article). An assumption that is unfalsifiable in the place it matters and false in the place it can be checked is the signature of an over-reach rather than of a bad starting idea. So the treatment that follows from this article is not to discard the pulse but to demote it: keep the reconciliation argument of §1.4 as bookkeeping, and strip the two empirical claims. Those two claims now have their post-mortem articles in the register — <strong>P23</strong> for the spin ladder and <strong>P24</strong> for gravity — and S11 is flagged [PARTIAL] there, since it keeps its standing for Job 1 and for the non-pulse content. That costs one fitted number and one postulate, and it leaves the rest of the programme — the cosmology, the lepton model, the $\alpha$ chain, the $\rho^{2}$ curvature law — untouched.</p>
+<h2 id="summary">Summary</h2>
+<p>Charon's quantification rests on two axioms. The third says the action at every point is quantised at $\pm nh$; it is required, and the corpus's own reductio shows why — a point with rigorously zero momentum is not the image of a physical point. The fourth says that action is shared <em>exactly equally</em> between a <strong>spin</strong>, the tangential rotation of the point's image on a pulsating phase surface, and a <strong>pulse</strong>, the radial breathing of the same surface. The two vectors are perpendicular, their norms are equal, and their directions are indeterminate — which is where the programme puts the origin of quantum probability.</p>
+<p>The existence of the second component has a genuinely good argument: an integer action cannot be a single half-integral object, and Dirac's four-component condition requires a half-integral action at every point, so the integer must be assembled from two half-integral pieces (§1.4). That is the strongest thing the quantification does. It does not reach the <em>equality</em>, because an action of $3h$ splits into two half-integral pieces in more than one way; the equality is Axiome 4, admitted with the word "admettrons" and used as one of the twenty equations of the Système L, not derived from them.</p>
+<p>Two results in this article are new. The first is that <strong>the equipartition is unobservable in the mass sector</strong>. The lepton mass equations contain only the sum $S+P = 2(n+\tfrac12)h$, and the step $2h/(c^2T)$ has $T$ fitted to the measured $\tau-\mu$ difference, so the factor 2 can be moved into $T$ with the fit unchanged. No measurement of lepton masses can test the split, even in principle (§4.1). The second is that <strong>the equipartition makes the lepton ladder a spin ladder</strong>. The parity rule — itself imported from Pauli's theorem — forces the charged leptons onto odd action rungs, so their spins are $\tfrac12\hbar$, $\tfrac32\hbar$, $\tfrac52\hbar$, and the book prints exactly that on page 052: "muon : $n = 1$, c'est-à-dire spin $3/2\,h$". The muon and the tau are measured to be spin-$\tfrac12$, and the corpus's own words foreclose reading the assignment as an internal quantum number (§3.2).</p>
+<p>So the verdict on the equipartition is narrower than either enthusiasm or dismissal. It is <strong>motivated in its existence, assumed in its equality, and invisible in the one sector where the programme had numbers.</strong> Its single definite empirical consequence is false. Its only live test was the claim that gravity comes from the radial pulsation; the companion article on gravity has now run that test, and it fails (§5.5). And the programme's own strongest instrument — the stationary action of Axiome 2 — is never applied to it. That is where the axiom stands: not refuted by the failure of the lepton tower, which is a different question, but standing on an assumption that its own method could have tested and did not.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$n$</td>
+<td>the integer of the quantisation axiom, $n \neq 0$; total action $\pm nh$</td>
+</tr>
+<tr>
+<td>$\mathbf{S}$</td>
+<td>the spin: angular momentum of the image's rotation about $M'$, $\mathbf{P}\cdot\mathbf{S}=0$</td>
+</tr>
+<tr>
+<td>$\mathbf{P}$</td>
+<td>the pulse: vector of the image's radial pulsation on the phase surface</td>
+</tr>
+<tr>
+<td>$\Gamma$</td>
+<td>the phase surface of constant quadratic density $d^2$ around $M'$</td>
+</tr>
+<tr>
+<td>$d$</td>
+<td>proper density at the point, $d^2 = m_0^2/\Omega_0^2$</td>
+</tr>
+<tr>
+<td>$\Omega_0$</td>
+<td>the quantum volume, $\Omega_0 = \tfrac43\pi l_0^3$</td>
+</tr>
+<tr>
+<td>$l_0$</td>
+<td>the elementary length, $1{,}7577\times10^{-14}$ cm</td>
+</tr>
+<tr>
+<td>$T_0$</td>
+<td>fundamental period of the proper density at a point, $T_0 = nh/(\Omega_0c^2d)$</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>period of the lepton model, fitted: $4{,}949\times10^{-24}$ s</td>
+</tr>
+<tr>
+<td>$W_0$</td>
+<td>proper energy at the point, $W_0 = m_0c^2 = \Omega_0c^2d = \pm hN_0$</td>
+</tr>
+<tr>
+<td>$N_0$, $\nu_0$</td>
+<td>proper frequency $N_0 = n\nu_0$ and fundamental $\nu_0 = 1/T_0$</td>
+</tr>
+<tr>
+<td>$S_e$, $P_e$, $S_\mu$, $P_\mu$</td>
+<td>the electron's and muon's spin and pulse actions, (223), (224), (229), (230)</td>
+</tr>
+<tr>
+<td>$k_S$, $k_P$</td>
+<td>the relativistic coefficients of the spin and pulse energies; $k_S = k_P$ is L15</td>
+</tr>
+<tr>
+<td>(111)</td>
+<td>$S^2 = P^2 = \tfrac14n^2h^2$, the equipartition</td>
+</tr>
+<tr>
+<td>(220), (221)</td>
+<td>electron and muon mass equations; the factor 2 is the equipartition</td>
+</tr>
+<tr>
+<td>(236), (244)</td>
+<td>the heavy-lepton mass formula, $m_{0\tau} = m_{0\mu} + 2(n_\tau-n_\mu)h/(c^2T)$</td>
+</tr>
+<tr>
+<td>(238)</td>
+<td>$k_S = k_P$, the equipartition in the neutrino sector</td>
+</tr>
+<tr>
+<td>Axiomes 2, 3, 4</td>
+<td>stationary action; quantised action; equipartition</td>
+</tr>
+<tr>
+<td>Esp 052</td>
+<td>the spin ladder: $n = 0, 1, 2$ with spins $\tfrac12h$, $\tfrac32h$, $\tfrac52h$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>P. A. M. Dirac, "The quantum theory of the electron," <em>Proceedings of the Royal Society</em> <strong>A117</strong> (1928) 610, for the four-component spinor whose energy–momentum conservation is the premise of §1.4.</li>
+<li>P. A. M. Dirac, "Relativistic wave equations," <em>Proceedings of the Royal Society</em> <strong>A155</strong> (1936) 447, for the matrix wave equations of higher spin that the fusion method generalises.</li>
+<li>L. de Broglie, "Sur la théorie des particules de spin quelconque," <em>Comptes Rendus de l'Académie des Sciences</em> <strong>202</strong> (1936) 1451, and J. Petiau, same volume, 1740, for the fusion method and the wave equations of half-integral action that §2.1 uses.</li>
+<li>N. Kemmer and H. J. Bhabha, "Relativistic wave equations for the elementary particles," <em>Reviews of Modern Physics</em> <strong>17</strong> (1945) 200, for the systematic formulation the component counts come from.</li>
+<li>W. Pauli, "The connection between spin and statistics," <em>Physical Review</em> <strong>58</strong> (1940) 716, for the theorem that makes the parity rule of §2.2 imported rather than derived.</li>
+<li>M. Fierz and W. Pauli, "On relativistic wave equations for particles of arbitrary spin in an electromagnetic field," <em>Proceedings of the Royal Society</em> <strong>A173</strong> (1939) 211, and W. Rarita and J. Schwinger, <em>Physical Review</em> <strong>60</strong> (1941) 61, for why a spin-$\tfrac32$ particle is not a description of the muon — the consistency problems that make §3.2 a refutation and not merely a mismatch.</li>
+<li>R. L. Workman <em>et al.</em> (Particle Data Group), <em>Progress of Theoretical and Experimental Physics</em> <strong>2022</strong>, 083C01, for the lepton spins ($\tfrac12$, $\tfrac12$, $\tfrac12$) and masses that §3.2 and §3.1 compare against.</li>
+<li>The LEP Collaborations, "Search for new particles," in the LEP electroweak and Higgs working-group reports (1989–2000), for the exclusion of the charged leptons the tower predicts in §3.3.</li>
+<li>D. Bohm, "A suggested interpretation of the quantum theory in terms of 'hidden' variables," <em>Physical Review</em> <strong>85</strong> (1952) 166, for the pilot-wave reading whose quantum potential Charon examines and sets aside in §1.2.</li>
+<li>L. de Broglie, "La mécanique ondulatoire et la structure atomique de la matière et du rayonnement," <em>Journal de Physique et le Radium</em> <strong>8</strong> (1927) 225, for the original phase-wave argument that the point's proper frequency $N_0$ and the relation $W_0 = hN_0$ belong to.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

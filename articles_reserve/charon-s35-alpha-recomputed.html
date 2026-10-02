@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fine-Structure Constant, Recomputed — The Charon Corpus's $\alpha$ Derivation, Step by Step — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fine-structure-constant-recomputed-the-charon-corpuss-math0-derivation-step-by-step"><strong>The Fine-Structure Constant, Recomputed — The Charon Corpus's $\alpha$ Derivation, Step by Step</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Charon corpus is a programme in complexified general relativity, and its most quotable claim is numerical: that a system of equations it calls the <em>Système L</em>, joined to an electromagnetic model of two interacting leptonic structures, <strong>computes the elementary charge to within 2.3 %</strong>. The claim is stated on one page of <em>L'Esprit et la Relativité complexe</em> (1983, cited "Esp"), at equations (265)–(268), and it rests on a chain of about twenty equations running from (245) to (268).</p>
+<p>This article recomputes that chain, step by step, and reports what it is worth.</p>
+<p><strong>The result, in one paragraph.</strong> The chain is <strong>complete and arithmetically sound</strong>. Every step reproduces, including the corpus's own final number: its printed $\alpha = 7{,}65\times10^{-3}$ is recovered exactly from its own inputs. Two defects change the number — a spurious factor $2\pi$ in (264) and a wrong integral in (265) — and the second of them, once corrected, <strong>improves</strong> the agreement. The honest figures are <strong>$+3{,}6\,\%$ on the coupling $\alpha$ and $+1{,}8\,\%$ on the charge $e$</strong> with correct arithmetic, or <strong>$+4{,}8\,\%$ and $+2{,}4\,\%$</strong> reproducing the corpus's printed arithmetic. The corpus's own "2.3 %" is the <em>charge</em> error and is <strong>0.5 points worse than the truth</strong>, because it was computed from two-figure rounded inputs.</p>
+<p><strong>And the number that decides the verdict is not $\alpha$ but $\beta$.</strong> The coupling depends on the corpus's free parameter as $\alpha \propto \beta^{5/4}$ exactly. The value of $\beta$ that would reproduce $\alpha$ exactly is $-1{,}64\times10^{-39}$ cgs against the corpus's $-1{,}70\times10^{-39}$ — <strong>3.5 % away</strong> — and $1{,}25 \times 3{,}5\,\% = 4{,}4\,\%$ is the observed coupling error. <strong>The 4 % agreement is therefore inherited from $\beta$, not achieved by the model.</strong> And $\beta$ is not free: it is a solution of the <em>Système L</em>, whose inputs include the measured elementary charge. The comparison at the end of the chain is consequently a <strong>consistency check of the <em>Système L</em>'s own seed set</strong>, not a prediction. <strong>(Corrected by S37, in the corpus's favour — see the correction block in "And $\beta$ Is Not Free" below: $\beta$ does not depend on $e$, so the seed $e$ does not reach it and the comparison is <em>not</em> circular. The corrected verdict is that of a postulated law reproducing an independent constant to $2\,\%$.)</strong></p>
+<p>The article is organised as follows. The next section states what the corpus claims, verbatim. Then the chain is set out and its final ladder recomputed in full, then its four defects, then the charge-versus-coupling question that the corpus's "2.3 %" turns on, then the sensitivity analysis that decides the verdict, then the input/output ledger, then the re-run against the modern value of $\alpha$. The closing sections summarise.</p>
+<p><strong>Conventions.</strong> The corpus's own notation is kept throughout: $\alpha = e^{2}/\hbar c$ is the fine-structure constant, $e$ the elementary charge in Gaussian cgs, $\beta$ the corpus's radiation-density coefficient (defined at (245) by $D_E = \beta c^{2}/R^{4} = \pm a\theta^{4}$), $\gamma = -c\beta/h$, and $K$ the corpus's symbol for what (257) defines as the Boltzmann constant. Values quoted from the corpus are given with the corpus's French decimal comma; recomputed values use the point. Deviations are quoted <strong>twice wherever they could be confused</strong> — once against the charge $e$ and once against the coupling $\alpha$ — because $\alpha \propto e^{2}$ and the two differ by a factor of two. The measured value used for the corpus's own comparison is $1/137 = 7{,}2993\times10^{-3}$, which is what (267) prints; the modern value and its effect are in a section of their own.</p>
+<h2 id="what-the-corpus-claims">What the Corpus Claims</h2>
+<p>The claim is made in four equations and one sentence. The equations are printed as</p>
+<p>$$\frac{e^{2}}{\hbar c} = \frac{8\,\pi^{3}}{3}\left(\frac{15\,\gamma}{8\,\pi^{5}}\right)^{5/4} \times 23{,}6 = 7{,}65\,10^{-3} \qquad (266),$$</p>
+<p>$$\left(\frac{e^{2}}{\hbar c}\right)_{\mathrm{exp}} = \frac{1}{137} = 7{,}30\,10^{-3} \qquad (267),$$</p>
+<p>and the sentence that follows them is the claim:</p>
+<blockquote>
+<p><em>"Ainsi, le Système $L$, joint au modèle électromagnétique que nous venons d'analyser, calcule la valeur de la charge électrique élémentaire $e$ à moins de $2{,}3\,\%$ près"</em> — "Thus the <em>Système L</em>, joined to the electromagnetic model we have just analysed, computes the value of the elementary electric charge $e$ to within 2.3 %."</p>
+</blockquote>
+<p>The two values compared in (268) are $e_{\mathrm{calc}} = 4{,}91\times10^{-10}$ cgs against $e_{\mathrm{obs}} = 4{,}80\times10^{-10}$ cgs. Their ratio is $4{,}91/4{,}80 - 1 = +2{,}29\,\%$, which is where the "2.3 %" comes from.</p>
+<p><strong>Note at once what the sentence is about, and what the equations above it show.</strong> The sentence is about the <strong>charge</strong> $e$. The equations above it compare <strong>couplings</strong> $\alpha$. Those are different quantities, and the printed comparison of the couplings shows $(7{,}65-7{,}30)/7{,}30 = +4{,}79\,\%$, not 2.3 %. The two figures are both correct, and they are not the same figure. This article returns to the point in a section of its own; it is the single most consequential thing in the chain.</p>
+<p><strong>A boundary note, to keep this article inside its scope.</strong> The derivation splits into three ladders — the interaction model (246)–(251), the force integral (252)–(264), and the evaluation (265)–(268). The companion article S36 owns the first two, including the derivation of the $2\pi$ defect and of the integral. <strong>This article owns the third</strong> — the evaluation, the error, and the verdict — and quotes the earlier ladders only where the evaluation needs them.</p>
+<h2 id="the-chain-and-the-ladder-it-delivers">The Chain, and the Ladder It Delivers</h2>
+<p>The chain is complete and every step has been verified. It is set out here in Charon's own order, with the status of each equation.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Eq</th>
+<th>Content</th>
+<th>Status after recomputation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(245)</td>
+<td>$D_E = \beta c^{2}/R^{4} = \pm a\theta^{4}$ — defines $\beta$</td>
+<td>definition</td>
+</tr>
+<tr>
+<td>(246)</td>
+<td>photon count in a lepton, $(4/3)\pi R^{3}n_\nu\,d\nu$</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>(247)–(248)</td>
+<td>momentum-exchange count × solid angle $kR^{2}/4\pi r^{2}$</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>(249)</td>
+<td>mean cross-section $\overline{\sigma} = \pi R^{2}\tfrac{2}{\pi}\int_0^{\pi/2}\sin^{2}\alpha\,d\alpha = \pi R^{2}/2$</td>
+<td><strong>verified</strong></td>
+</tr>
+<tr>
+<td>(250)</td>
+<td>$k = \pi/2$, so the mean solid angle is $R^{2}/8r^{2}$</td>
+<td><strong>verified</strong></td>
+</tr>
+<tr>
+<td>(251)</td>
+<td>force on each lepton, $(4/3)\pi R^{3}n_\nu(R^{2}/8r^{2})(2h\nu/c)(\nu/2)$</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>(252)</td>
+<td>total force $(\pi/6)(h/c)(1/r^{2})R^{5}\int\nu^{2}n_\nu\,d\nu$</td>
+<td>verified, <strong>with a defect</strong></td>
+</tr>
+<tr>
+<td>(253)–(255)</td>
+<td>time average; $\lambda_1 = 2\pi R$; $\nu_1 = c/2\pi R$</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>(256)–(258)</td>
+<td>Planck distribution; $x = h\nu/K\theta$; $x_1$ independent of $R$</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>(259)</td>
+<td>$K = (15ac^{3}h^{3}/8\pi^{5})^{1/4}$</td>
+<td><strong>verified — this is Boltzmann's constant</strong></td>
+</tr>
+<tr>
+<td>(260)</td>
+<td>$\beta = -1{,}7\times10^{-39}$ cgs, from the <em>Système L</em></td>
+<td><strong>input, fitted</strong></td>
+</tr>
+<tr>
+<td>(261)</td>
+<td>$x_1 = (-\pi h/30c\beta)^{1/4} = 1{,}92$</td>
+<td><strong>verified: $1{,}9209$</strong></td>
+</tr>
+<tr>
+<td>(262)</td>
+<td>$R^{5}\theta^{5} = (hc\gamma/a)^{5/4}$</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>(263)</td>
+<td>$\gamma = -c\beta/h = 7{,}716\times10^{-3}$</td>
+<td><strong>verified: $7{,}6915\times10^{-3}$</strong></td>
+</tr>
+<tr>
+<td>(264)</td>
+<td>$\overline{F} = (8\pi^{3}ch/3r^{2})(15\gamma/8\pi^{5})^{5/4}\int$</td>
+<td><strong>carries a spurious $2\pi$</strong></td>
+</tr>
+<tr>
+<td>(265)</td>
+<td>$\int_{1{,}92}^{\infty}x^{4}/(e^{x}-1)\,dx = 23{,}6$</td>
+<td><strong>verified: $23{,}4323$</strong></td>
+</tr>
+<tr>
+<td>(266)</td>
+<td>$\alpha = (8\pi^{3}/3)(15\gamma/8\pi^{5})^{5/4} \times 23{,}6 = 7{,}65\times10^{-3}$</td>
+<td><strong>verified exactly</strong></td>
+</tr>
+<tr>
+<td>(267)</td>
+<td>experimental $1/137 = 7{,}30\times10^{-3}$</td>
+<td>textbook</td>
+</tr>
+<tr>
+<td>(268)</td>
+<td>$e_{\mathrm{calc}} = 4{,}91\times10^{-10}$ vs $e_{\mathrm{obs}} = 4{,}80\times10^{-10}$ cgs</td>
+<td>verified</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The verdict of the table: nothing in the chain is missing, and everything reproaches numerically.</strong> What remains is to show the substitutions, and to separate the two defects that change the number from the three that do not.</p>
+<h2 id="the-geometry-math77-and-the-mean-solid-angle">The Geometry: $k = \pi/2$ and the Mean Solid Angle</h2>
+<h3 id="the-mean-cross-section">The Mean Cross-Section</h3>
+<p>Equation (249) computes a mean cross-section by averaging over the geometry of two intersecting spheres:</p>
+<p>$$\overline{\sigma} = \pi R^{2}\,\frac{2}{\pi}\int_0^{\pi/2}\sin^{2}\alpha\,d\alpha = \frac{\pi R^{2}}{2}.$$</p>
+<p>The angular average is</p>
+<p>$$\frac{2}{\pi}\int_0^{\pi/2}\sin^{2}\alpha\,d\alpha = \frac{2}{\pi}\cdot\frac{\pi}{4} = \frac{1}{2},$$</p>
+<p>so $\overline{\sigma} = \pi R^{2}/2$ exactly, and comparing with the parametrisation $\sigma = kR^{2}$ gives</p>
+<p>$$k = \frac{\pi}{2}.$$</p>
+<p><strong>Both verified.</strong> The mean solid angle follows at once, since (248) is $kR^{2}/4\pi r^{2}$ with $k = \pi/2$:</p>
+<p>$$\frac{kR^{2}}{4\pi r^{2}} = \frac{(\pi/2)R^{2}}{4\pi r^{2}} = \frac{R^{2}}{8r^{2}},$$</p>
+<p>which is the expression (250) uses. <strong>The geometry is correct, and the factor $\pi/2$ is not a fit.</strong></p>
+<h3 id="the-force-on-one-lepton-and-the-math87">The Force on One Lepton, and the $\pi/6$</h3>
+<p>Equation (251) assembles the force per lepton from four factors: the number of photons, $(4/3)\pi R^{3}n_\nu$; the fractional solid angle, $R^{2}/8r^{2}$; the momentum transferred, $2h\nu/c$; and the inverse interaction duration, $\nu/2$. Multiplying,</p>
+<p>$$\frac{4}{3}\pi R^{3} \cdot \frac{R^{2}}{8r^{2}} \cdot \frac{2h\nu}{c} \cdot \frac{\nu}{2} = \frac{4}{3}\cdot\frac{1}{8}\cdot 2 \cdot \frac{1}{2}\cdot\pi\,\frac{h}{c}\frac{R^{5}}{r^{2}}\nu^{2} = \frac{\pi}{6}\,\frac{h}{c}\,\frac{1}{r^{2}}\,R^{5}\nu^{2},$$</p>
+<p><strong>so the $\pi/6$ of (252) is $(4/3)(1/8)(2)(1/2)\pi$ exactly</strong>, verified numerically as $0.5235987756$ against $\pi/6 = 0.5235987756$. The integration over frequencies then gives (252).</p>
+<h2 id="the-planck-substitution-and-where-the-math97-comes-from">The Planck Substitution, and Where the $4\pi^{2}/3$ Comes From</h2>
+<p>The step that produces the numerical prefactor of the final formula is the substitution of the Planck distribution and the three relations (259), (262) and (263). It is worth writing out in full, because the whole of the corpus's final number depends on it and because it is where the spurious $2\pi$ enters.</p>
+<p><strong>The substitution.</strong> Inserting the Planck distribution (256), $n_\nu\,d\nu = (8\pi\nu^{2}/c^{3})\,d\nu/(e^{x}-1)$, and using $x = h\nu/K\theta$ so that $\nu = xK\theta/h$ and $d\nu = (K\theta/h)\,dx$, the frequency integral becomes</p>
+<p>$$\int_{\nu_1}^{\infty}\nu^{2}n_\nu\,d\nu = \frac{8\pi}{c^{3}}\int\nu^{4}\frac{d\nu}{e^{x}-1} = \frac{8\pi}{c^{3}}\left(\frac{K\theta}{h}\right)^{5}\int_{x_1}^{\infty}\frac{x^{4}}{e^{x}-1}\,dx = \frac{8\pi}{c^{3}}\left(\frac{K\theta}{h}\right)^{5}I,$$</p>
+<p>with $I$ the integral of (265).</p>
+<p><strong>The two relations that remove $R$ and $\theta$.</strong> From (259), $K^{5} = (15ac^{3}h^{3}/8\pi^{5})^{5/4}$, and from (262), $\theta^{5} = (hc\gamma/a)^{5/4}/R^{5}$. Their product is</p>
+<p>$$(K\theta)^{5} = \left(\frac{15ac^{3}h^{3}}{8\pi^{5}}\right)^{5/4}\left(\frac{hc\gamma}{a}\right)^{5/4}\frac{1}{R^{5}} = \left(\frac{15c^{4}h^{4}\gamma}{8\pi^{5}}\right)^{5/4}\frac{1}{R^{5}},$$</p>
+<p><strong>and the radiation constant $a$ cancels between the two</strong>, which is why nothing in the final formula depends on it.</p>
+<p><strong>The assembly.</strong> Substituting into (252), $\overline{F} = (\pi/6)(h/c)(1/r^{2})R^{5}(8\pi/c^{3})(K\theta/h)^{5}I$,</p>
+<p>$$\overline{F}\,r^{2} = \frac{\pi}{6}\cdot\frac{h}{c}\cdot\frac{8\pi}{c^{3}}\cdot\frac{1}{h^{5}}\cdot(c^{4}h^{4})^{5/4}\left(\frac{15\gamma}{8\pi^{5}}\right)^{5/4}\frac{I}{R^{5}}\cdot R^{5} = \frac{4\pi^{2}}{3}\,c\,h\left(\frac{15\gamma}{8\pi^{5}}\right)^{5/4}\int_{1{,}92}^{\infty}\frac{x^{4}}{e^{x}-1}\,dx .$$</p>
+<p><strong>So the coefficient of $\overline{F}r^{2}$ is $4\pi^{2}ch/3$, and this is where the corpus's printed (264) disagrees</strong>: as transcribed, (264) has $8\pi^{3}ch/3$. The ratio of the two is</p>
+<p>$$\frac{8\pi^{3}/3}{4\pi^{2}/3} = 2\pi \quad\text{exactly (numerically } 6{,}283185).$$</p>
+<p><strong>The spurious $2\pi$ is therefore identified, and the rest of the chain settles which writing is right.</strong> Dividing $\overline{F}r^{2} = e^{2}$ by $\hbar c$ introduces $h/\hbar = 2\pi$, so the correct final prefactor is $(4\pi^{2}/3)\cdot 2\pi = 8\pi^{3}/3$ — <strong>which is exactly the prefactor of the corpus's own (266).</strong> The corpus's two printed equations are therefore mutually inconsistent by $2\pi$: if (264) already carried the $8\pi^{3}$, the final prefactor of (266) would have to be $16\pi^{4}/3$. Since (266) is the equation that produces the corpus's published number, <strong>(266) is right and (264) as transcribed is the slip.</strong> A reader who took (264) literally and then divided by $\hbar c$ would obtain $\alpha = 4{,}79\times10^{-2}$, an error of <strong>$+556\,\%$</strong> — a $6{,}3\times$ failure reported where the corpus has a 4 % agreement. This is, as the register puts it, the one defect that could have made a careless reader report a failure instead of an agreement.</p>
+<p><strong>One honest limit on the claim.</strong> The recomputation shows that (264) and (266) cannot both be right, and that (266) is the one that reproduces the corpus's number. It <strong>cannot</strong> distinguish a misprint in the 1983 book from a transcriptional slip in the recovered text: the two would look identical here. The internal-consistency argument is the strongest evidence available without the printed page, and the point stays open in the register's terms.</p>
+<h2 id="the-temperature-is-boltzmanns-constant-and-the-integral-is-not-math129">The Temperature Is Boltzmann's Constant, and the Integral Is Not $23{,}6$</h2>
+<h3 id="the-identity-behind-259">The Identity Behind (259)</h3>
+<p>Equation (259) introduces $K$ from the radiation constant, $K = (15ac^{3}h^{3}/8\pi^{5})^{1/4}$, and (257) defines it as the constant in $x = h\nu/K\theta$ — which is the Boltzmann constant written in a different arrangement. The recomputation confirms it exactly:</p>
+<p>$$K = \left(\frac{15ac^{3}h^{3}}{8\pi^{5}}\right)^{1/4} = 1{,}380649\times10^{-16}\ \mathrm{erg/K} = k_B,$$</p>
+<p>against the modern $k_B = 1{,}380649\times10^{-16}$ erg/K, a ratio of $1{,}00000$. So (259) is not a new constant but <strong>the standard Stefan–Boltzmann relation $k_B^{4} = 15ah^{3}c^{3}/8\pi^{5}$</strong>, inverted. Charon's (259) is a textbook identity, correctly used, and the corpus says as much by citing it as <em>"la relation bien connue"</em>.</p>
+<p><strong>This is the point of the identity for the ledger.</strong> Because $K$ is derived from $a$, and $a$ is measured, <strong>$K$ is an input wearing the costume of an output.</strong> It enters the chain looking derived and it is not.</p>
+<h3 id="the-integral-recomputed">The Integral, Recomputed</h3>
+<p>Equation (265) evaluates the integral numerically as $23{,}6$. The recomputation, by fine trapezoidal quadrature over $(1{,}92,\ 60)$ with the tail beyond 60 negligible at the working precision, gives</p>
+<p>$$\int_{1{,}92}^{\infty}\frac{x^{4}}{e^{x}-1}\,dx = 23{,}432258 \ldots$$</p>
+<p><strong>so the corpus's $23{,}6$ is $+0{,}72\,\%$ high.</strong> Two refinements were checked and both are negligible: evaluating from the exact lower limit $x_1 = 1{,}9209$ rather than the rounded $1{,}92$ gives $23{,}4302$, a shift of $0{,}009\,\%$; and doubling the quadrature resolution leaves the first six digits unchanged.</p>
+<p><strong>The correction works in the corpus's favour.</strong> Carrying $23{,}4323$ instead of $23{,}6$ lowers the model's $\alpha$ by $0{,}7\,\%$, and since $\alpha$ is $4{,}8\,\%$ <em>above</em> the measured value, lowering it <strong>improves the agreement</strong>. Charon's rounded integral was arguing against him.</p>
+<h3 id="the-lower-limit-is-independent-of-math156">The Lower Limit Is Independent of $R$</h3>
+<p>One structural point in the ladder deserves recording, because it is what makes the evaluation possible. Equation (258) gives $x_1$ without reference to the lepton radius,</p>
+<p>$$x_1 = \frac{hc}{2\pi K}\left(\frac{-a}{\beta c^{2}}\right)^{1/4},$$</p>
+<p>and substituting (259) reduces it, in four lines of algebra, to the form (261) uses:</p>
+<p>$$x_1 = \frac{hc}{2\pi}\left(\frac{8\pi^{5}}{15ac^{3}h^{3}}\right)^{1/4}\left(\frac{-a}{\beta c^{2}}\right)^{1/4} = \left[\left(\frac{hc}{2\pi}\right)^{4}\frac{-8\pi^{5}}{15c^{5}h^{3}\beta}\right]^{1/4} = \left(\frac{-\pi h}{30c\beta}\right)^{1/4}.$$</p>
+<p><strong>Verified: the two forms are algebraically identical, and numerically $x_1 = 1{,}9209$ against the corpus's rounded $1{,}92$.</strong> So the ladder closes: $\beta$ fixes $x_1$, $x_1$ fixes the lower limit of a universal integral, and the integral is what carries the model's number.</p>
+<h2 id="the-final-substitution-and-the-charge">The Final Substitution, and the Charge</h2>
+<h3 id="the-substitution-in-full">The Substitution, in Full</h3>
+<p>With the coefficient established, the final steps are three lines. From (266),</p>
+<p>$$\frac{e^{2}}{\hbar c} = \frac{8\pi^{3}}{3}\left(\frac{15\gamma}{8\pi^{5}}\right)^{5/4} \times 23{,}6 = 7{,}65\times10^{-3},$$</p>
+<p>and the charge follows from $\alpha = e^{2}/\hbar c$ by $e = \sqrt{\alpha\hbar c}$, which is how (268) obtains $4{,}91\times10^{-10}$ cgs.</p>
+<h3 id="everything-recomputed">Everything Recomputed</h3>
+<p>The recomputation is best shown as a grid, because the two defects and the corpus's own arithmetic select different rows and the differences matter. All four combinations of the printed and recomputed $\gamma$ with the printed and recomputed integral are given; $e$ is in cgs.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\gamma$</th>
+<th>integral</th>
+<th>$\alpha$</th>
+<th>$\alpha$ vs $1/137$</th>
+<th>$e$ (cgs)</th>
+<th>$e$ vs $4{,}8032\times10^{-10}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>printed $7{,}716\times10^{-3}$</td>
+<td>printed $23{,}6$</td>
+<td>$7{,}6495\times10^{-3}$</td>
+<td>$+4{,}80\,\%$</td>
+<td>$4{,}9177\times10^{-10}$</td>
+<td>$+2{,}38\,\%$</td>
+</tr>
+<tr>
+<td>printed $7{,}716\times10^{-3}$</td>
+<td>corrected $23{,}4323$</td>
+<td>$7{,}5952\times10^{-3}$</td>
+<td>$+4{,}05\,\%$</td>
+<td>$4{,}9002\times10^{-10}$</td>
+<td>$+2{,}02\,\%$</td>
+</tr>
+<tr>
+<td>recomputed $7{,}6915\times10^{-3}$</td>
+<td>printed $23{,}6$</td>
+<td>$7{,}6193\times10^{-3}$</td>
+<td>$+4{,}38\,\%$</td>
+<td>$4{,}9080\times10^{-10}$</td>
+<td>$+2{,}18\,\%$</td>
+</tr>
+<tr>
+<td>recomputed $7{,}6915\times10^{-3}$</td>
+<td>corrected $23{,}4323$</td>
+<td>$7{,}5651\times10^{-3}$</td>
+<td>$+3{,}64\,\%$</td>
+<td>$4{,}8905\times10^{-10}$</td>
+<td>$+1{,}82\,\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the first and last rows, because they are the two readings that matter.</strong></p>
+<ul>
+<li><strong>The first row reproduces the corpus.</strong> With its printed $\gamma$ and its printed integral, the formula gives $\alpha = 7{,}6495\times10^{-3}$, which is the corpus's printed $7{,}65\times10^{-3}$ to the printed precision.</li>
+<li><strong>The last row is the correct arithmetic.</strong> Using $\gamma = -c\beta/h$ as the corpus defines it, and the exact integral, gives $\alpha = 7{,}5651\times10^{-3}$: <strong>$+3{,}64\,\%$ on the coupling and $+1{,}82\,\%$ on the charge.</strong></li>
+</ul>
+<p><strong>One bookkeeping difference, stated so that it is not mistaken for a disagreement.</strong> The charge errors of the last row are computed here against the measured charge $e = 4{,}8032\times10^{-10}$ cgs, giving $+1{,}82\,\%$. The register's §10.3 table quotes $+1{,}80\,\%$ for the same row, because it takes the comparison charge from $\sqrt{(1/137)\hbar c} = 4{,}8038\times10^{-10}$ cgs. The two comparison values differ by $0{,}013\,\%$ and the two errors by $0{,}02$ points; neither is wrong, and the coupling row is identical either way, being compared against $1/137$ directly.</p>
+<p><strong>Note the register correction this table forces.</strong> The register's §10.1 states that $(8\pi^{3}/3)(15\gamma/8\pi^{5})^{5/4} \times 23{,}6 = 7{,}565\times10^{-3}$. That arithmetic does not close: with $\gamma = 7{,}6915\times10^{-3}$ and the integral at $23{,}6$ the value is $7{,}619\times10^{-3}$, as the third row shows. The value $7{,}565\times10^{-3}$ belongs to the <strong>corrected</strong> integral. The register's §10.3 table is right; §10.1 conflates the two rows, and it has been corrected. The other half of §10.1's sentence — that $7{,}565\times10^{-3}$ "is Charon's (266) exactly" — is too strong in the other direction: the corpus prints $7{,}65\times10^{-3}$, which is reproduced by the <strong>first</strong> row, $7{,}6495\times10^{-3}$, and only matched by $7{,}565\times10^{-3}$ to $1{,}1\,\%$.</p>
+<h2 id="the-corpuss-23-measures-the-charge-not-the-coupling">The Corpus's "2.3 %" Measures the Charge, Not the Coupling</h2>
+<p>The single most consequential thing in the chain is one word: <strong>which quantity the "2.3 %" is about.</strong> The corpus compared couplings in (266)–(267) and then stated the error of the charge. Both figures are right, and they are not the same figure.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>corpus's printed pair</th>
+<th>the exchange rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>charge $e$</td>
+<td>$4{,}91 / 4{,}80 - 1 = +2{,}29\,\%$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>coupling $\alpha = e^{2}/\hbar c$</td>
+<td>$(7{,}65 - 7{,}30)/7{,}30 = +4{,}79\,\%$</td>
+<td>$\alpha \propto e^{2}$, so coupling error $= 2 \times$ charge error</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rule is exact to first order: the relative error on the coupling is twice the relative error on the charge</strong>, because $\alpha$ is the square of a charge in units where $\hbar c$ is fixed. The corpus's two printed figures bear this out, $2 \times 2{,}29\,\% = 4{,}58\,\%$ against the printed coupling ratio $4{,}79\,\%$, the difference being the rounding of $4{,}91$ and $7{,}65$ to two figures.</p>
+<p><strong>Three consequences, and they are the article's headline.</strong></p>
+<ol>
+<li><strong>The corpus's "2.3 %" is true of the charge and false of $\alpha$.</strong> The sentence stands immediately beneath a coupling comparison that shows 4.8 %. Reading the claim as a statement about $\alpha$ — which is what the equations above it invite, and what a reader will take from it — overstates the agreement by about a factor of two. The register records this as S34's first hand-off item, and S35 is the article that discharges it.</li>
+<li><strong>The corpus undersold the charge.</strong> The true charge error with correct arithmetic is $+1{,}82\,\%$, not $2{,}3\,\%$. The corpus's 2.3 % is a <strong>rounding artefact</strong>: it computed the ratio from $4{,}91$ and $4{,}80$, two-figure values of $4{,}8905$ and $4{,}8032$. Charon's number is worse than his model.</li>
+<li><strong>Both figures must be quoted together, always.</strong> An article that reports "2.3 %" without naming the charge, or "4.8 %" without naming the coupling, is misleading in one direction or the other. The formula $\alpha \propto e^{2}$ is the whole of the explanation and costs one line.</li>
+</ol>
+<h2 id="the-number-that-decides-math247">The Number That Decides: $\alpha \propto \beta^{5/4}$</h2>
+<p><strong>Everything above reproduces the corpus given $\beta$, and this section is about $\beta$.</strong> The result is that the 4 % agreement is not a property of the model at all; it is a property of one number.</p>
+<h3 id="the-coupling-is-a-power-of-the-corpuss-free-parameter">The Coupling Is a Power of the Corpus's Free Parameter</h3>
+<p>Since $\gamma = -c\beta/h$ and the final formula is $\alpha = (8\pi^{3}/3)(15\gamma/8\pi^{5})^{5/4}I$, the coupling depends on $\beta$ as a pure power:</p>
+<p>$$\alpha \;\propto\; (-\beta)^{5/4}.$$</p>
+<p><strong>Verified exactly:</strong> scaling $\beta$ by $1{,}10$ scales $\alpha$ by $1{,}12653 = 1{,}10^{5/4}$, and by $1{,}01$ scales it by $1{,}01252 = 1{,}01^{5/4}$. So a relative error $\delta$ in $\beta$ produces a relative error $\tfrac{5}{4}\delta$ in $\alpha$, and nothing else in the chain has any freedom.</p>
+<h3 id="the-math264-that-would-reproduce-math265-exactly">The $\beta$ That Would Reproduce $\alpha$ Exactly</h3>
+<p>Inverting the relation gives the value of $\beta$ that would make the model exact with the corpus's own printed arithmetic:</p>
+<p>$$\beta_{\alpha\text{-exact}} = -1{,}6426\times10^{-39}\ \text{cgs}, \qquad \text{against the corpus's } \beta = -1{,}70\times10^{-39}$$</p>
+<p><strong>— a gap of $3{,}49\,\%$.</strong> And the consistency of the two routes is the point: $\tfrac{5}{4} \times 3{,}49\,\% = 4{,}37\,\% \approx$ the observed coupling error of $4{,}80\,\%$. <strong>The 4 % is the same number as the $\beta$ gap, seen through the $\tfrac{5}{4}$ power.</strong></p>
+<p><strong>So the agreement is inherited, not achieved.</strong> The model does not compute $\alpha$; it reproduces $\alpha$ to whatever accuracy $\beta$ happens to be fixed. A single significant figure suffices to see it: at two figures, the corpus's $\beta$ is $-1{,}7\times10^{-39}$ and the $\alpha$-matching value is $-1{,}6\times10^{-39}$. <strong>One digit in $\beta$ fixes the coupling to within 4 %.</strong> A model whose only free parameter determines its answer to that accuracy on one significant figure has demonstrated the proportionality, not a computation.</p>
+<h3 id="and-math281-is-not-free">And $\beta$ Is Not Free</h3>
+<p>$\beta$ is not derived anywhere in the chain. Equation (260) states it as an input — <em>"obtenue par la résolution du Système $L$"</em>, obtained by solving the <em>Système L</em> — and the <em>Système L</em> is the corpus's numerical system whose <strong>six seeded values are $h$, $c$, $m$, $\mu$, $\tau_2$ and $e$, and which Esp 057 §4 states are taken <em>"numériquement identique aux valeurs numériques expérimentales"</em></strong>. The companion ledger S34 establishes that seed list and the search's $\pm10\,\%$ window about the measured values.</p>
+<p><strong>The consequence is a loop, and it is worth stating in one line.</strong> The measured elementary charge is one of the six seeds of the system whose solution is $\beta$; $\beta$ fixes $\gamma$; $\gamma$ fixes the model's $\alpha$; and the model's $\alpha$ is then compared against the measured $\alpha$, which is the very charge seeded in. <strong>Both sides of the comparison trace back to the same seed set.</strong> The chain therefore tests the <em>Système L</em>'s <strong>internal consistency</strong>, not the electromagnetic model's agreement with nature. The tracing of $\beta$ through the <em>Système L</em> in full is the companion article S37's task; what belongs to this article is the statement that the comparison at the end of the chain is not independent.</p>
+<blockquote>
+<p><strong>Correction, added after S37 — one line: $\beta$ does not depend on $e$.</strong> S37 traces $\beta$ through the <em>Système L</em> and finds it in closed form: $L7$, $L8$ and $L16$ give $\beta = -h(1-\varepsilon)/(4\pi^{3}c)$ with $\varepsilon = (\mu-m)/(\tau-\mu)$, a function of $m$, $\mu$, $\tau$, $h$ and $c$ and of <strong>no electromagnetic quantity at all</strong>. The seed $e$ therefore does not reach $\beta$; the model's side of the final comparison contains no measured charge; and <strong>the chain is not circular.</strong> It compares the charged-lepton spectrum with $\alpha$ — two independently measured sectors. <strong>The corrected verdict: not a fit to a free parameter, because no free parameter is left once the lepton masses are measured; not a derivation, because $L7$, $L8$ and $L16$ are postulated; but a postulated law that reproduces an independent constant to $2\,\%$.</strong> <strong>Gate G-C, reconsidered:</strong> its failure condition is <em>"$\alpha$ only appears once $\beta$ is fitted"</em>, and $\beta$ is not fitted but determined; the condition is not met, so the gate is passed in form — <strong>but not in the sense that would make the result a computation of $\alpha$</strong>, because the equations that determine $\beta$ are postulated. The paragraphs above and below are left as written, since the reasoning that produced the circularity reading is part of the record; <strong>S37 is the article of record on the point.</strong></p>
+</blockquote>
+<h2 id="the-ledger-every-number-and-what-it-is">The Ledger: Every Number, and What It Is</h2>
+<p>Rule R1 of the register requires every number entering a chain to be tagged as an input or an output. The chain has eleven numbers, and the ledger is small enough to state in full.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>number</th>
+<th>value</th>
+<th>where it comes from</th>
+<th>tag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$c$</td>
+<td>$2{,}99792458\times10^{10}$ cm/s</td>
+<td>defined by the units</td>
+<td><strong>DEFINED</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>$h$</td>
+<td>$6{,}62607015\times10^{-27}$ erg s</td>
+<td>measured; a defining constant of SI</td>
+<td><strong>DEFINED</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>$\hbar$</td>
+<td>$h/2\pi$</td>
+<td>derived from $h$</td>
+<td><strong>DERIVED</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>$a$</td>
+<td>$7{,}5657\times10^{-15}$ erg cm$^{-3}$ K$^{-4}$</td>
+<td>measured (Stefan–Boltzmann)</td>
+<td><strong>MEASURED</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td>$K$</td>
+<td>$1{,}380649\times10^{-16}$ erg/K</td>
+<td>derived from $a$ by (259) — it is $k_B$</td>
+<td><strong>DERIVED, but an input in disguise</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td>$\beta$</td>
+<td>$-1{,}70\times10^{-39}$ cgs</td>
+<td>solution of the <em>Système L</em>, whose seeds include the measured $e$ and lepton masses</td>
+<td><strong>FITTED</strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td>$\gamma$</td>
+<td>$7{,}6915\times10^{-3}$ (printed $7{,}716\times10^{-3}$)</td>
+<td>$-c\beta/h$, from #6</td>
+<td><strong>DERIVED</strong></td>
+</tr>
+<tr>
+<td>8</td>
+<td>$x_1$</td>
+<td>$1{,}9209$ (printed $1{,}92$)</td>
+<td>from #6 via (261), algebraically identical to (258)</td>
+<td><strong>DERIVED</strong></td>
+</tr>
+<tr>
+<td>9</td>
+<td>$I$</td>
+<td>$23{,}4323$ (printed $23{,}6$)</td>
+<td>the universal integral (265)</td>
+<td><strong>DERIVED, with a slip</strong></td>
+</tr>
+<tr>
+<td>10</td>
+<td>$\alpha_{\mathrm{meas}}$</td>
+<td>$1/137 = 7{,}2993\times10^{-3}$</td>
+<td>measured</td>
+<td><strong>MEASURED</strong></td>
+</tr>
+<tr>
+<td>11</td>
+<td>$e_{\mathrm{obs}}$</td>
+<td>$4{,}80\times10^{-10}$ cgs</td>
+<td>measured</td>
+<td><strong>MEASURED</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The ledger's verdict: the model has exactly one free input, and it is fitted.</strong> Items 1, 2 and 4 are measured standards; 3, 5, 7, 8 and 9 are derived; 10 and 11 are the measurements the result is compared against; and <strong>#6 is the only number the model supplies</strong>. Everything else in the chain is either a standard constant or a function of $\beta$.</p>
+<p><strong>Against the register's gate G-C — "$\alpha$ is reproduced with the input list stated in advance; if $\alpha$ only appears once $\beta$ is fitted, the result is a fit and must be reported as one" — the gate is not passed.</strong> $\alpha$ appears only once $\beta$ is fixed, $\beta$ is fitted, and the fit's seed set contains the same measured charge against which the result is compared. <strong>The result is a fit, and this article reports it as one.</strong> The chain is sound, the arithmetic holds, and the number is downstream of $\beta$ — and $\beta$ is downstream of the charged-lepton masses and of $e$ itself. <strong>Two clauses are corrected by S37 — see the correction above: $\beta$ is not fitted but determined in closed form by the lepton masses, and $e$ does not reach it. The gate's failure condition is therefore not met: the result is neither a fit nor a computation, but a postulated law that reproduces an independent constant to $2\,\%$.</strong></p>
+<h2 id="the-modern-value-does-not-move-the-verdict">The Modern Value Does Not Move the Verdict</h2>
+<p>The register asks this article to re-run the chain with the modern value of $\alpha$ instead of the corpus's printed $1/137$, since the two differ. They do, and the difference is negligible.</p>
+<p>The corpus compares against $1/137 = 7{,}2993\times10^{-3}$. The modern value is $\alpha = 7{,}2973526\times10^{-3}$ — that is, $1/\alpha = 137{,}035999$, and the printed $1/137$ is <strong>$+0{,}026\,\%$ high</strong> against it. Re-running both rows of the evaluation table:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>arithmetic</th>
+<th>error vs $1/137$</th>
+<th>error vs the modern value</th>
+<th>shift</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>printed ($7{,}6495\times10^{-3}$)</td>
+<td>$+4{,}80\,\%$</td>
+<td>$+4{,}83\,\%$</td>
+<td>$0{,}028$ points</td>
+</tr>
+<tr>
+<td>corrected ($7{,}5651\times10^{-3}$)</td>
+<td>$+3{,}64\,\%$</td>
+<td>$+3{,}67\,\%$</td>
+<td>$0{,}027$ points</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The shift is three hundredths of a percentage point, against a model error forty times larger.</strong> Four decades of improvement in the measurement of $\alpha$ — from $1/137$ to a value known to ten significant figures — moves Charon's agreement by $0{,}03$ points. <strong>The verdict is not a precision question.</strong> The model is $3$–$5\,\%$ away, and it will be $3$–$5\,\%$ away at any future precision, because the distance is set by $\beta$ and by nothing measured since.</p>
+<p><strong>The difference in the corpus's own favour is worth one line.</strong> Had Charon used the modern value, his coupling error would have been $4{,}83\,\%$ rather than $4{,}80\,\%$ — the model is slightly <em>further</em> from the modern value than from $1/137$, because $1/137$ is itself slightly high.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The corpus's $\alpha$ chain is complete, arithmetically sound, and reproducible in full.</strong> Every step from (245) to (268) has been recomputed: the mean cross-section gives $k = \pi/2$ exactly; the force assembly gives the $\pi/6$ exactly; the temperature relation (259) is the Stefan–Boltzmann identity and yields Boltzmann's constant to $1{,}00000$; the lower limit (258) reduces algebraically to (261) and gives $x_1 = 1{,}9209$; and the final substitution reproduces the corpus's own printed $\alpha = 7{,}65\times10^{-3}$ <strong>exactly</strong> from its own printed inputs.</p>
+<p><strong>Two defects change the number.</strong> Equation (264) carries a spurious $2\pi$ — its printed $8\pi^{3}ch/3$ against the re-derived $4\pi^{2}ch/3$, a ratio of exactly $2\pi$ — and the corpus's own (266) is the equation that settles which writing is right, since its prefactor $8\pi^{3}/3$ is $(4\pi^{2}/3)(2\pi)$ and its value reproduces the published number. A reader who took (264) literally would report a $+556\,\%$ failure, a $6{,}3\times$ error. Equation (265) gives the integral as $23{,}6$ where it is $23{,}4323$, $+0{,}72\,\%$ high — <strong>and correcting it improves the agreement.</strong> Three further defects do not change the number: (252) drops $n_\nu$ from its integrand, (253) and (264) keep a stray $dt$, and two different equations are both numbered (260).</p>
+<p><strong>The honest figures are stated twice, because they are two quantities.</strong> With correct arithmetic the model gives $\alpha = 7{,}5651\times10^{-3}$, which is $+3{,}64\,\%$ on the <strong>coupling</strong> and $+1{,}82\,\%$ on the <strong>charge</strong>; reproducing the corpus's printed arithmetic gives $+4{,}80\,\%$ and $+2{,}38\,\%$. <strong>The corpus's "2.3 %" is the charge error, computed from two-figure rounded inputs, and it is true of the charge and false of $\alpha$</strong> — the printed comparison immediately above it shows $4{,}79\,\%$. Since $\alpha \propto e^{2}$, the coupling error is twice the charge error, and the two figures must always be quoted together.</p>
+<p><strong>The number that decides the verdict is $\beta$, and it decides it against the claim.</strong> The coupling depends on the corpus's free parameter as $\alpha \propto \beta^{5/4}$ exactly, verified. The $\beta$ that would reproduce $\alpha$ exactly is $-1{,}64\times10^{-39}$ cgs against the corpus's $-1{,}70\times10^{-39}$ — <strong>$3{,}49\,\%$ away</strong> — and $\tfrac{5}{4} \times 3{,}49\,\% = 4{,}37\,\%$ is the observed coupling error. <strong>One significant figure in $\beta$ fixes the coupling to within 4 %</strong>, so the agreement is inherited, not achieved. And $\beta$ is not free: it is a solution of the <em>Système L</em>, whose seeded values include the measured $e$ and the measured charged-lepton masses, so <strong>the comparison at the end of the chain is a consistency check of the system's own seed set rather than a prediction.</strong> The ledger has exactly one free input, it is fitted, and <strong>register gate G-C is not passed: the result is a fit, and it is reported here as a fit.</strong> <strong>Corrected by S37 — see the correction above: $\beta$ is not free, but neither is it fitted.</strong> $L7$, $L8$ and $L16$ determine it in closed form from $m$, $\mu$ and $\tau$, with no electromagnetic input, so <strong>no free input is left once the lepton masses are measured</strong>; the gate's failure condition is not met; and <strong>the verdict of record is S37's — not a fit, not a derivation, but a postulated law that reproduces an independent constant to $2\,\%$.</strong></p>
+<p><strong>A table of eleven numbers, a complete re-derivation, and a $\beta$ that decides everything — that is the evaluation of the 2.3 %.</strong> The model is not wrong, the arithmetic is not wrong, and the number is not a computation of $\alpha$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The article's status tags, used in the ledger and inherited by the rest of the constants cluster.</p>
+<ul>
+<li><strong>DEFINED</strong> — fixed by the theory's own units or by an SI definition; agreement with experiment on such a quantity carries no information.</li>
+<li><strong>MEASURED</strong> — an experimental value, used as an input.</li>
+<li><strong>DERIVED</strong> — computed within the chain from other entries of the ledger.</li>
+<li><strong>FITTED</strong> — obtained by adjusting a free parameter until a measurement is reproduced; the number so obtained is not evidence for the theory. <strong>Corrected by S37: $\beta$ is <em>not</em> fitted.</strong> It is determined in closed form by the lepton masses ($L7$, $L8$, $L16$), with no free parameter left once those are measured. The tag survives for the definitions below, which the correction does not touch.</li>
+<li><strong>INPUT IN DISGUISE</strong> — a quantity that enters through a formula and looks derived, but whose formula contains a measured constant and nothing else. Here $K$: it is Boltzmann's constant, obtained from the measured radiation constant $a$ by (259).</li>
+<li><strong>INHERITED AGREEMENT</strong> — an agreement that follows from the accuracy with which a fitted input is fixed, rather than from the model. The $\alpha$ agreement is inherited from $\beta$ through $\alpha \propto \beta^{5/4}$. <strong>Qualified by S37:</strong> $\beta$ is not fitted, so "inherited" here means inherited from the <em>lepton</em> masses, which are measured independently of the Coulomb test — <strong>not circular</strong>. The agreement remains inherited rather than achieved, but it is a transmission from one measured sector to another, which is a weaker and more interesting claim.</li>
+<li><strong>CHARGE / COUPLING ERROR</strong> — the two must be distinguished: $\alpha = e^{2}/\hbar c$, so a relative error on the charge produces <strong>twice</strong> that relative error on the coupling. The corpus's "2.3 %" is a charge error; the printed comparison of couplings shows 4.8 %.</li>
+</ul>
+<p>The article's symbols, where they differ from common usage: $\beta$ is the corpus's radiation-density coefficient, defined by (245) as $D_E = \beta c^{2}/R^{4} = \pm a\theta^{4}$, and it is <strong>not</strong> a velocity ratio; $\gamma = -c\beta/h$ is the corpus's derived combination, dimensionless and numerically within 5 % of $\alpha$, a near-coincidence taken up in S37; $K$ is the corpus's symbol for Boltzmann's constant; and $x_1$ is the lower limit of the universal integral, $x_1 = (-\pi h/30c\beta)^{1/4}$, independent of the lepton radius $R$.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><code>UPDATED_CHARON_THEORY_2026_ARTICLE_LIST.md</code> §11, <em>The flagship: what "evaluating the 2.3 %" requires</em>, for the register's statement of the task; §10.1–10.3 for the ladder reconstruction and the defects; §12 for the chains; §7 for gate G-C.</li>
+<li>J. E. Charon, <em>L'Esprit et la Relativité complexe</em> (Albin Michel, Paris, 1983): Esp 060 for (245)–(249) and the geometry of the interaction model; Esp 061 for (250)–(264), including the two equations both numbered (260) and the printed (264); Esp 062 for (265)–(268) and the sentence claiming the 2.3 %; Esp 057 §1 and §4 for the <em>Système L</em>'s six seeded values and their experimental status; Esp 058 for the $\pm10\,\%$ search and its residual.</li>
+<li>S34, <code>charon-s34-the-input-output-ledger</code>, for the seed list, the search window, and the input/output status of $e$; its first hand-off item is the charge-versus-coupling rule this article discharges.</li>
+<li>S36, <code>charon-s36-the-force-integral-246-to-264</code>, for the derivation of the ladder (246)–(264) from first principles and the full treatment of the $2\pi$ defect; S37, <code>charon-s37-the-beta-gamma-chain</code>, for the tracing of $\beta$ through the <em>Système L</em>, which is what turns this article's verdict from a statement about the chain into a statement about the model; S32, <code>charon-s32-the-six-constants</code>, for the per-constant computation; S38 for the nucleon mass as a ledger entry.</li>
+<li>S5, <code>charon-s05-notation-and-units</code>, for the corpus's symbols and units, and Hazard 6 for the $(\hbar = 2\pi\hbar)$ slip that the $h/\hbar = 2\pi$ step of this chain must not repeat.</li>
+<li>C. Cohen-Tannoudji, B. Diu and F. Laloe, <em>Mécanique quantique</em>, or any statistical-mechanics text, for the Stefan–Boltzmann relation $k_B^{4} = 15ah^{3}c^{3}/8\pi^{5}$ that underlies (259); the CODATA recommended values for $\alpha$, $e$, $h$, $\hbar$ and $k_B$ used in the recomputation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

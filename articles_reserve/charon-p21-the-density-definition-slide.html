@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: The Density Definition Slide — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-density-definition-slide"><strong>Charon: The Density Definition Slide</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This post-mortem article exists to stop a mistake from propagating. It records a single quantity, $\rho_H = 5{,}81\times10^{17}$ g cm$^{-3}$, which Charon calls the maximum central density of a hadron, and it shows that the quantity is not a density at all. The register lists it as a trap: any later article that quotes $\rho_H$ as a physical density is quoting a definitional artefact, and one article in the programme — the derivation of $G$ — is currently built on it.</p>
+<p>The claim is printed twice, as a formula and as a table. RC (3-77) defines the density of a particle by</p>
+<p>$$\rho_n = \frac{m_n}{\Omega_0},$$</p>
+<p>with $\Omega_0$ the elementary cell — the quantum volume, $\Omega_0 = 2{,}44\times10^{-41}$ cm$^{3}$ held <strong>fixed</strong> — and RC (3-78) gives the ceiling:</p>
+<p>$$\rho_{0H} = 5{,}81\times10^{17}\ \mathrm{g\ cm^{-3}}.$$</p>
+<p>The text is emphatic that this is a maximum: the density "n'est pas infinie : cette densité est maximum au centre de la structure et n'excède jamais" the value above. A table follows, the "successive densities" of the charged leptons that can sit in a hadronic structure.</p>
+<p><strong>The verdict is [OUT] — numerically unrealistic and definitionally wrong.</strong> The number is about $2{,}150$ times nuclear saturation density and about $580$ times a neutron-star core. It is not the density of a nucleon. And the reason is not a numerical slip but the definition: because $\Omega_0$ is <strong>fixed</strong>, $\rho_n = m_n/\Omega_0$ is the particle's mass written in other units, so "central density" means "mass per elementary cell". Two consequences follow that this article establishes. The "six levels of density" that the corpus reads as six quark levels are, to the last digit, the six masses of the charged-lepton tower — the tower that LEP has already killed (P1). And the hadronic quantity $d_0$ that the derivation of $G$ uses is this same object, which is why R4's $G$ inherits the defect.</p>
+<p><strong>A note on sources.</strong> The claim is inventory §5.5, sourced to RC (3-77), (3-78) and (4-19-a) and to Esp §6.1.2. The table of successive densities is RC 053. The related chains are R11 (<code>S24 → P21 → P4</code>), which the register marks <strong>DIES at P21</strong>, and R4 ($G$), which S29 has already rated "STANDS, weakly". The nuclear and astrophysical comparison values are the standard ones: nuclear saturation density $2{,}7\times10^{14}$ g cm$^{-3}$, a neutron-star core of order $10^{15}$ g cm$^{-3}$.</p>
+<p><strong>Conventions.</strong> Gaussian cgs. $\rho_n$ is the corpus's density assigned to the $n$-th charged lepton, $m_n$ its mass, $\Omega_0$ the quantum volume, $l_0$ the elementary length, $d_0$ the hadron's central density in the hadron chapter, $\rho_H$ the same quantity as the chapter prints it. The corpus's masses are used as printed.</p>
+<h2 id="part-1-the-claim-and-the-two-equations-it-rests-on">Part 1 — The claim, and the two equations it rests on</h2>
+<p>Two lines of the 1987 book produce the number, and they should be read together, because the first is the definition that the second makes look like a measurement.</p>
+<p><strong>The definition.</strong> RC (3-77) is $\rho_n = m_n/\Omega_0$. It is introduced as the real-space counterpart of a curvature: "à toute densité particulière $\rho_n$ de l'espace Réel ... est associée dans l'espace Imaginaire un micro-univers chargé (éon)". The density label $n$ is the <em>mass</em> label $n$ — the same index that runs up the lepton ladder. The equation is not solving a field equation for a density profile; it is dividing a mass by a volume.</p>
+<p><strong>The ceiling.</strong> RC (3-78) then states that the density in a localised structure "n'est pas infinie" and never exceeds $\rho_{0H} = 5{,}81\times10^{17}$ g cm$^{-3}$. The reader is invited to take this as a physical saturation — the hadron's centre cannot be denser than this — and the chapter's language supports that reading: the density "est maximum au centre de la structure".</p>
+<p><strong>Why the two lines must be read together.</strong> If $\Omega_0$ were the <em>local</em> volume element, $\rho_n = m_n/\Omega_0$ would be a genuine local density and $\rho_{0H}$ a genuine ceiling. But $\Omega_0$ is a <strong>constant of the theory</strong> — the quantum volume, built from the elementary length and the same in every equation of the programme. With $\Omega_0$ fixed, $\rho_n$ is a strictly increasing function of $m_n$ and of nothing else. The "density" axis and the "mass" axis are the same axis, rescaled by the constant $1/\Omega_0$.</p>
+<p><strong>The table.</strong> RC 053 prints seven values and they reproduce the definition exactly. Recomputed with $\Omega_0 = 2{,}44\times10^{-41}$ cm$^{3}$, every printed density is $m_n/\Omega_0$ to the figures given:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>particle</th>
+<th>mass (g)</th>
+<th>printed density (g cm$^{-3}$)</th>
+<th>$m_n/\Omega_0$</th>
+<th>ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>positron</td>
+<td>$9{,}11\times10^{-28}$</td>
+<td>$3{,}73\times10^{13}$</td>
+<td>$3{,}73\times10^{13}$</td>
+<td>$1{,}001$</td>
+</tr>
+<tr>
+<td>1</td>
+<td>muon</td>
+<td>$1{,}89\times10^{-25}$</td>
+<td>$7{,}78\times10^{15}$</td>
+<td>$7{,}75\times10^{15}$</td>
+<td>$0{,}996$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>tau</td>
+<td>$3{,}18\times10^{-24}$</td>
+<td>$1{,}30\times10^{17}$</td>
+<td>$1{,}30\times10^{17}$</td>
+<td>$1{,}003$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$m_3$</td>
+<td>$6{,}18\times10^{-24}$</td>
+<td>$2{,}53\times10^{17}$</td>
+<td>$2{,}53\times10^{17}$</td>
+<td>$1{,}001$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$m_4$</td>
+<td>$9{,}18\times10^{-24}$</td>
+<td>$3{,}76\times10^{17}$</td>
+<td>$3{,}76\times10^{17}$</td>
+<td>$1{,}001$</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$m_5$</td>
+<td>$1{,}22\times10^{-23}$</td>
+<td>$4{,}99\times10^{17}$</td>
+<td>$4{,}99\times10^{17}$</td>
+<td>$1{,}000$</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$m_6$</td>
+<td>$1{,}52\times10^{-23}$</td>
+<td>$6{,}22\times10^{17}$</td>
+<td>$6{,}22\times10^{17}$</td>
+<td>$1{,}000$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The ratio column is the point. There is no independent density information in the table: each entry is the mass beside it, divided by the same constant. The table is a mass table.</p>
+<h2 id="part-2-why-the-number-is-so-large">Part 2 — Why the number is so large</h2>
+<p>The slide would be harmless if $\Omega_0$ happened to be a plausible cell volume for a nucleon. It is not, and the size of the error is worth stating because it is what turns a definitional remark into a trap.</p>
+<p>$\Omega_0 = 2{,}44\times10^{-41}$ cm$^{3}$ corresponds to a cell radius of $1{,}80\times10^{-14}$ cm. A nucleon of radius $0{,}84$ fm has a volume of $2{,}48\times10^{-39}$ cm$^{3}$. <strong>The elementary cell is about one hundred times smaller than a nucleon.</strong> So dividing a nucleon's mass by the cell volume, rather than by the nucleon's own volume, inflates the answer by that factor of a hundred — and the rest of the gap comes from the choice of "mass" itself, which in the table is the mass of a <em>lepton</em>, not of a nucleon.</p>
+<p>Comparing the printed ceiling with real densities gives the size of the problem:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>comparison</th>
+<th>value (g cm$^{-3}$)</th>
+<th>$\rho_H$ in units of it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nuclear saturation density</td>
+<td>$2{,}7\times10^{14}$</td>
+<td>$2{,}150$</td>
+</tr>
+<tr>
+<td>a neutron-star core</td>
+<td>$\sim10^{15}$</td>
+<td>$\sim580$</td>
+</tr>
+<tr>
+<td>a nucleon, $1u$ in its own volume</td>
+<td>$\sim6{,}7\times10^{14}$</td>
+<td>$\sim870$</td>
+</tr>
+</tbody>
+</table></div>
+<p>A number three orders of magnitude above nuclear saturation density is not a description of a nucleon, and it is not a saturation point either: nothing in the model is saturating, because the quantity that rises is a mass and the volume it is divided by is a constant.</p>
+<p><strong>A secondary tension in $\Omega_0$ itself.</strong> The programme defines the quantum volume from the elementary length as $\Omega_0 = \tfrac43\pi l_0^{3}$, with $l_0 = 1{,}7577\times10^{-14}$ cm; that gives $2{,}275\times10^{-41}$ cm$^{3}$, not $2{,}44\times10^{-41}$. The two figures differ by $7\%$, so the table reproduces $m_n/\Omega_0$ only with the value RC uses, and an article that recomputes the density from $l_0$ will not reproduce the book's rows. This is a small matter beside the slide, but it should be recorded: the corpus's $\Omega_0$ and its $l_0$ are not mutually consistent at print.</p>
+<h2 id="part-3-what-the-six-levels-turn-out-to-be">Part 3 — What the "six levels" turn out to be</h2>
+<p>The corpus draws a large conclusion from the table, and the table cannot support it. RC 053 closes with:</p>
+<blockquote>
+<p>Il existerait ainsi six « niveaux » successifs de leptons chargés pouvant figurer dans une structure hadronique : on pressent déjà ici les six niveaux de quarks ($u, d, s, b, t$) qui vont prendre place dans le hadron ...</p>
+</blockquote>
+<p>and the introduction of the hadron chapter (RC 014) makes it a structural claim: the quarks "se disposent dans la structure holonique selon six « couches » (ou niveaux) ... Ces six niveaux des quarks correspondent à des densités croissantes de la structure holonique de la périphérie du Réel vers son centre".</p>
+<p><strong>The rows are the lepton tower.</strong> The masses in the table are not free: $m_3$ through $m_6$ are the members of the arithmetic lepton tower of (234)/(244), the ladder $m_n = m_\mu + 2(n-1)h/(c^{2}T)$. Converting the printed masses gives the tower's own predictions:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>row</th>
+<th>mass (g)</th>
+<th>energy</th>
+<th>the tower's predicted value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_3$</td>
+<td>$6{,}18\times10^{-24}$</td>
+<td>$3{,}47$ GeV</td>
+<td>$3{,}45$ GeV</td>
+</tr>
+<tr>
+<td>$m_4$</td>
+<td>$9{,}18\times10^{-24}$</td>
+<td>$5{,}15$ GeV</td>
+<td>$5{,}12$ GeV</td>
+</tr>
+<tr>
+<td>$m_5$</td>
+<td>$1{,}22\times10^{-23}$</td>
+<td>$6{,}83$ GeV</td>
+<td>$6{,}79$ GeV</td>
+</tr>
+<tr>
+<td>$m_6$</td>
+<td>$1{,}52\times10^{-23}$</td>
+<td>$8{,}51$ GeV</td>
+<td>$8{,}46$ GeV</td>
+</tr>
+</tbody>
+</table></div>
+<p>The agreement with the tower is to the rounding of the printed figures. So the "six levels of density" are the six rungs of the mass ladder, relabelled as positions in a hadron. The corpus says so in substance — "la profonde parenté entre les quarks et les leptons chargés" — but reads the identity as support for the levels rather than as a warning about them.</p>
+<p><strong>Why the identity is fatal rather than supportive.</strong> If the levels are the tower, then they inherit the tower's verdict. LEP searched for charged leptons to about $100$ GeV and found none, and a fourth charged lepton is excluded today to far higher energies; that is P1, and it is dead. The register's chain R11 runs <code>S24 → P21 → P4</code> and records <strong>DIES at P21</strong> for exactly this reason: the definition is wrong at P21, and even a repaired definition would leave the level-to-quark identification dying at P4, since the six flavour labels the corpus lists are the quarks of a sector whose own identifications are largely dead.</p>
+<p><strong>And a detail that shows the reading is strained.</strong> The passage names six levels but prints five labels: "les six niveaux de quarks ($u, d, s, b, t$)". The charm quark is missing from the list. This is a slip in the corpus, not this reader's inference, and it is recorded here because a claim about "six levels" that cannot list six should not be used as a structural argument.</p>
+<h2 id="part-4-what-dies-and-what-survives">Part 4 — What dies, and what survives</h2>
+<p><strong>Dies — the number, as a density.</strong> $\rho_H = 5{,}81\times10^{17}$ g cm$^{-3}$ is not the central density of a hadron. It is the mass of a charged lepton divided by the quantum volume, and it is two to three orders of magnitude above any density a nucleon has. <strong>Any article that treats it as a physical density, or that derives a physical result from it, inherits the error.</strong></p>
+<p><strong>Dies — the six levels.</strong> The six "levels of density" are the six rungs of the lepton tower, so they die with it. R11 dies at P21 on the definition and would die at P4 on the identification.</p>
+<p><strong>Dies — a part of R4, the derivation of $G$.</strong> This is the trap, and it is live. The hadron model's central density $d_0$ is the same object as $\rho_H$: it is the quantity the corpus sweeps, and S29 has shown that the model's $G$ comes out proportional to $1/d_0$. So a $G$ that rests on $\rho_H$ rests on a mis-defined quantity, and the fact that the resulting number is close to the measured $G$ is a statement about the value chosen for a fitting input, not about the mechanism. The register's own P20 ("fitted versus predicted") is the general form of this objection; P21 is its sharpest instance, because here the fitted quantity is not even the thing it is named after.</p>
+<p><strong>Survives — the definition, read correctly.</strong> There is nothing wrong with defining a quantity $\rho_n = m_n/\Omega_0$ and calling it something. The error is in the <em>name</em> and in the inference drawn from it. Read as "mass in units of the quantum volume", the equation is trivial and harmless, and RC (3-77) can be kept with a corrected label.</p>
+<p><strong>Survives — the curvature-side relation.</strong> $R = \xi^{2}\rho^{2} + 4\Lambda$ is a separate equation and is not touched here; if $\rho$ is a cell-normalised quantity then the curvature law is a statement about that quantity, and its own audit (S10) stands on its own terms. What P21 forbids is quoting $5{,}81\times10^{17}$ as a <em>hadronic</em> density in an article that also wants the curvature law to be about the real space of a real nucleon.</p>
+<p><strong>Survives — the warning as a method.</strong> The most transferable content of this article is not about hadrons. It is that a quantity can be named after a physical thing, be dimensionally correct, be tabulated to three figures, and still not be that thing — because a fixed constant in its definition has converted it into something else. The programme contains at least two such quantities ($\rho_H$ here, and the period $T$ of S11 §4.1, which absorbs a factor of two), and a reader of any of its numbers should ask what constant has been divided out.</p>
+<h2 id="summary">Summary</h2>
+<p>Charon defines the density of a particle as $\rho_n = m_n/\Omega_0$ with the quantum volume $\Omega_0 = 2{,}44\times10^{-41}$ cm$^{3}$ held fixed (RC 3-77), and gives as the maximum central density of a hadron $\rho_{0H} = 5{,}81\times10^{17}$ g cm$^{-3}$ (RC 3-78). <strong>The verdict is [OUT]: the quantity is not a density.</strong> Because $\Omega_0$ is a constant, $\rho_n$ is the mass written in other units — the RC 053 table reproduces $m_n/\Omega_0$ for all seven rows to the printed figures — and "central density" means "mass per elementary cell".</p>
+<p>The number is about $2{,}150$ times nuclear saturation density and about $580$ times a neutron-star core, and the size of the error is explained by the definition: the cell is about one hundred times smaller than a nucleon, so dividing a mass by the cell volume inflates the answer by that factor. Nothing is saturating; a mass is being divided by a constant.</p>
+<p>The "six levels of density" that the corpus reads as six quark levels are the six rungs of the arithmetical lepton tower: $m_3$ to $m_6$ are $3{,}47$, $5{,}15$, $6{,}83$ and $8{,}51$ GeV, against the tower's printed $3{,}45$, $5{,}12$, $6{,}79$ and $8{,}46$. So the levels die with the tower at P1, and the register's R11 dies at P21 on the definition and would die at P4 on the identification. The passage also names six levels and prints five quark labels, the charm being absent.</p>
+<p>What survives is the equation read correctly — a harmless mass-in-cell-volume — and the curvature law, which is audited separately. What does not survive is any use of $\rho_H$ as a physical density. That matters because the derivation of $G$ uses it: S29 has shown $G \propto 1/d_0$ with $d_0$ this same quantity, so R4's "STANDS, weakly" should now read "is a normalised check whose input is a mis-defined density". This article is a post-mortem on a number, and its practical purpose is to stop that number being used.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho_n$</td>
+<td>the corpus's density assigned to the $n$-th charged lepton, RC (3-77)</td>
+</tr>
+<tr>
+<td>$m_n$</td>
+<td>the mass of the $n$-th charged lepton; $m_3$–$m_6$ are tower members</td>
+</tr>
+<tr>
+<td>$\Omega_0$</td>
+<td>the quantum volume, $\Omega_0 = 2{,}44\times10^{-41}$ cm$^{3}$ as RC uses it; <strong>fixed</strong></td>
+</tr>
+<tr>
+<td>$l_0$</td>
+<td>the elementary length, $1{,}7577\times10^{-14}$ cm; $\tfrac43\pi l_0^{3}$ gives a $7\%$ smaller $\Omega_0$</td>
+</tr>
+<tr>
+<td>$\rho_{0H}$, $\rho_H$</td>
+<td>the printed maximum central hadronic density, $5{,}81\times10^{17}$ g cm$^{-3}$</td>
+</tr>
+<tr>
+<td>$d_0$</td>
+<td>the hadron's central density in Esp §6.1.2; the quantity S29 shows $G \propto 1/d_0$</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>scalar curvature of the complex space; $R = \xi^{2}\rho^{2} + 4\Lambda$</td>
+</tr>
+<tr>
+<td>$\xi$</td>
+<td>the leptonic constant</td>
+</tr>
+<tr>
+<td>(3-77), (3-78)</td>
+<td>the definition and the ceiling, RC ch. III</td>
+</tr>
+<tr>
+<td>(4-19-a)</td>
+<td>the hadron-chapter reference for the same quantity</td>
+</tr>
+<tr>
+<td>(234), (244)</td>
+<td>the lepton tower the table's masses belong to</td>
+</tr>
+<tr>
+<td>R11, R4</td>
+<td>the register's density-level chain (dies here) and its $G$ chain</td>
+</tr>
+<tr>
+<td>Esp §6.1.2</td>
+<td>the hadron mass and radius as functions of the central density $d_0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>J. E. Charon, <em>La Relativité complexe</em> (1987), RC (3-77) and (3-78), for the definition and the ceiling; RC 053, for the table of successive densities this article recomputes; RC 014, for the "six couches" of quarks and the increasing-density ordering.</li>
+<li>J. E. Charon, <em>L'Esprit et la Relativité complexe</em> (1983), Esp §6.1.2, for the hadron's mass and radius as functions of the central density $d_0$ — the same quantity under its other name.</li>
+<li>S29, <code>charon-s29-gravity-from-a-pulsating-boundary</code>, §3.3, for the proof that the model's $G$ is proportional to $1/d_0$, which is what makes this article's trap live.</li>
+<li>S10, <code>charon-s10-the-quadratic-curvature-law</code>, for the curvature law $R = \xi^{2}\rho^{2} + 4\Lambda$ and its own audit; P21 constrains how that law may be applied to a real nucleon.</li>
+<li>P1, <code>charon-p01-the-arithmetic-lepton-tower</code>, for the LEP verdict that kills the four masses the density table is built from.</li>
+<li>P4, <code>charon-p04-six-levels-and-six-flavours</code>, for the level-to-quark identification, which would fail even with a repaired definition.</li>
+<li>P20, <code>charon-p20-fitted-versus-predicted</code>, for the general pattern of which this article is the sharpest instance.</li>
+<li>R. L. Workman <em>et al.</em> (Particle Data Group), <em>Progress of Theoretical and Experimental Physics</em> <strong>2022</strong>, 083C01, for the nucleon radius and the charged-lepton exclusions against which the ceiling is compared.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

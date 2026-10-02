@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — The Variational Formulation (S14) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-variational-formulation-s14">Charon — The Variational Formulation (S14)</h1>
+<p><em>Audits §2.9 of <code>CHARON_IDEAS_AND_CLAIMS.md</code>, against RC (2-5)–(2-13) (scan 022), RC (5-41)–(5-46) (scan 077), and Esp (30) (scan 015).</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The corpus's second axiom is that energy conservation is imposed by a stationary-action principle on a local action density $U = dA/dV_{4}$, not by postulating an energy-momentum tensor.</strong> <strong>§2.9 tags this [MIX]: the variational mathematics is standard, the claim that it <em>replaces</em> $T_{\mu\nu}$ as physical content is not.</strong></p>
+<p><strong>This article checks the axiom against its two uses in the corpus and finds that they differ in kind.</strong> <strong>In the quantum derivation the variational principle is declared and then not used</strong> — the equation for $U$ is obtained by an <em>identification</em>, not by extremising anything. <strong>In the cosmology it is genuinely used, and it works</strong>: it yields the corpus's best-verified identity (5-46). <strong>So axiom 2 is idle where the corpus's quantum claim needed it, and load-bearing where it yields an integral. That asymmetry is the finding.</strong></p>
+<h2 id="what-the-corpus-claims">What the Corpus Claims</h2>
+<p><strong>§2.9 — energy conservation is imposed via a stationary-action principle on a local action density $U = dA/dV_{4}$, not via a postulated $T_{\mu\nu}$.</strong> RC (2-5)–(2-6). <strong>Tag: [MIX].</strong></p>
+<p><strong>The objects, in the corpus's own words.</strong></p>
+<ul>
+<li><strong>RC (2-6): $U = dA/dV_{4}$</strong> — <em>"un lagrangien local ... une densité quadridimensionnelle d'action, représentant l'action élémentaire $dA$ contenue dans un volume élémentaire d'espace-temps $dV_{4}$. $U$ est une fonction holomorphe ... des coordonnées d'espace-temps."</em></li>
+<li><strong>RC (2-7)</strong> defines the <em>normal tangent space</em> $\eta_{P}$ by diagonalising and normalising the metric to signature $(-,-,-,+)$, <strong>and the corpus makes a weight argument that is correct</strong>: $A$ is an invariant and $dV_{4}$ a pseudo-scalar of weight $-1$, <strong>so $U$ is a pseudo-scalar of weight $+1$ and an invariant under Lorentz transformations in $\eta_{P}$.</strong> <strong>That is correct differential geometry and it is worth recording.</strong></li>
+</ul>
+<h2 id="the-two-uses-and-they-differ-in-kind">The Two Uses, and They Differ in Kind</h2>
+<h3 id="use-1-the-quantum-derivation-declared-then-not-used">Use 1 — the quantum derivation: declared, then not used</h3>
+<p><strong>The corpus's chain to the equation for $U$ proceeds as follows, and at no point is an action extremised.</strong></p>
+<ol>
+<li><strong>RC (2-8)</strong> — the equation $U$ is to satisfy in the normal tangent space is <em>"l'équation </em><em>la plus simple</em><em>"</em>: $\Box^{2}U + C_{1}U^{2} + \dots + C_{n}U^{n} = 0$, with the $C_{n}$ real coefficients characterising the geometry at $P$, and $C_{1}$ having <em>"les dimensions d'une courbure scalaire"</em>.</li>
+<li><strong>RC (2-9)</strong> contracts the field equations: $g^{\alpha\beta}T_{\alpha\beta} - (R - 4\Lambda) = 0$; <strong>(2-10)</strong> is the same in $\eta_{P}$; <strong>(2-11)</strong> multiplies each term by $U$.</li>
+<li><strong>RC (2-12)</strong> then <em>identifies</em> (2-11) with (2-8), and the corpus labels the identification: <em>"L'identification une nouvelle fois </em><em>la plus simple</em><em> (conditions suffisantes, sinon nécessaires)"</em>. It reads: $\mathbb{T}_{\alpha\alpha}\cdot U = -\partial^{2}_{\alpha}U$, $R - 4\Lambda = C_{1}$, $C_{n} = 0$ for $n > 1$.</li>
+<li><strong>RC (2-13)</strong> follows: $\Box^{2}U + (R - 4\Lambda)U = 0$.</li>
+</ol>
+<p><strong>Two findings, and the first is a defect of the derivation rather than of the physics.</strong></p>
+<ul>
+<li><strong>The stationary-action principle is not applied.</strong> A variational derivation would write a Lagrangian and extremise it. <strong>The corpus instead writes a <em>single-term</em> action density $U = dA/dV_{4}$ and then chooses $U$'s equation by "simplicity".</strong> <strong>Axiom 2 is therefore idle exactly where the corpus's quantum claim needed it</strong>: the equation $U$ obeys is selected, not derived. <strong>The register already flags the neighbouring case — "Axiome 2 (stationary action) is never applied to the split" — and this article generalises it: axiom 2 is not applied to the derivation of the $U$ equation either.</strong> <strong>So the axiom which is supposed to <em>replace</em> the energy-momentum tensor does no work in the sector where the tensor was supposed to be replaced.</strong></li>
+<li><strong>And the printed (2-8) does not reduce to the printed (2-13) — unless one exponent has wandered, and it has.</strong> <strong>(2-8) is nonlinear as printed</strong> — its first written term is $C_{1}U^{2}$, and the series runs to $C_{n}U^{n}$ — <strong>while (2-13) is linear in $U$.</strong> Setting $C_{n} = 0$ for $n>1$ and $C_{1} = R - 4\Lambda$ then leaves $\Box^{2}U + (R-4\Lambda)U^{2} = 0$, <strong>which is not (2-13)</strong>. <strong>So as printed, the corpus's chain (2-8) → (2-12) → (2-13) does not close.</strong>
+  <strong>Four independent arguments say the defect is a stray exponent 2 on $C_{1}U$, and together they settle it.</strong> <strong>(i) Downstream use:</strong> (2-13) becomes (2-74), the Klein–Gordon equation, and S15 verified the passage exactly — a nonlinear (2-13) would break that, so (2-13) is the form the corpus needs. <strong>(ii) The corpus's own dimensional remark, which excludes the nonlinear reading at <em>every</em> order:</strong> it states that $C_{1}$ <em>"possède les dimensions d'une courbure scalaire (inverse du carré d'une longueur)"</em>, and Esp (30) states it of <strong>all</strong> the coefficients, <em>"$C_n$ est homogène à une courbure scalaire ($L^{-2}$)"</em>. <strong>With $\Box^{2}U$ of dimension $U/L^{2}$, a term $C_{n}U^{n}$ requires $C_{n}$ of dimension $L^{-2}U^{1-n}$, which is a curvature only for $n = 1$.</strong> <strong>The corpus's own parenthetical therefore describes the linear term — and it excludes the printed nonlinearity at every order, not merely at the first.</strong> <strong>(iii) Two further printings wander, in opposite directions</strong> — RC 032's (2-71) prints $\Box^{2}U^{2} + (R-4\Lambda)U = \Box^{2}U + (M_{0}^{2}c^{2}/\hbar^{2})U = 0$, <strong>the same exponent 2 now on the $\Box^{2}U$ term and equated away in the same line</strong>, and <strong>Esp 015's (30), the page on which the equation is <em>introduced</em>, prints the linear form in full</strong>: $\Box^{2}U + C_{1}U + C_{2}U^{2} + \cdots = 0$. <strong>(iv) The pattern is the signature of migration, not of error.</strong> Three placements of the same 2 across four printings, with the introduction-page printing linear and the target form linear, is what an exponent does in transcription. <strong>A corpus that had intended a nonlinear series would not have written the linear form on the page where it defines the equation, nor the linear target, nor the equals sign.</strong>
+  <strong>Conclusion: read the series as $C_{1}U + C_{2}U^{2} + \dots$, which is what (2-12) requires, what (2-13) prints, and what Esp (30) prints at the point of definition.</strong> <strong>Recorded as a closed OCR item rather than an open question, and filed in S5's Hazard list as Hazard 9: the four printings of (2-8), (30), (2-13) and (2-71) disagree on where the square sits, and only one reading closes the chain.</strong> <em>(The scan check is no longer needed. Esp (30) is legible in both transcription passes, and (2-71)'s line supplies the corpus's own statement that the two forms are the same object.)</em></li>
+</ul>
+<h3 id="use-2-the-cosmology-genuinely-used-and-it-works">Use 2 — the cosmology: genuinely used, and it works</h3>
+<p><strong>In chapter V the corpus does something different, and it is a real variational statement.</strong> RC (5-41):</p>
+<p>$$(5\text{-}41)\quad A = \int_{0}^{T} 2\pi^{2}c^{2}R^{3}\left(\frac{D_{\rho}}{c^{2}} + \frac{D_{M}}{R^{4}}\right)d\tau \;+\; 2\pi(S + P) = 0 ,$$</p>
+<p><strong>with $S$ the <em>spin</em> of the universe over one period of its pulsation (5-43) and $P$ its <em>pulse</em> (5-44)</strong> — each <em>"l'action totale (divisée par $2\pi$)"</em> associated with one of the two motions of every point of real space. <strong>And then RC (5-45):</strong></p>
+<p>$$(5\text{-}45)\quad A = S = P = 0 .$$</p>
+<p><strong>This is the corpus's conservation principle in action form, and it is what it looks like when the axiom is actually used.</strong> <strong>Its output is (5-46), the zero-total-energy identity — and S50 verified that identity numerically against the corpus's own published $\rho$, $M$ and $R$, recovering the corpus's own numbers to the factor it should.</strong> <strong>So where the variational principle is used, it produces the corpus's single best-verified formal identity.</strong></p>
+<p><strong>But note what it is used <em>for<em>.</em><em> </em><em>RC 077 obtains (5-45) from the equations of motion; it is a first integral, not a new principle.</em>* </em></strong>"A variational principle used to integrate equations already known is a mathematical convenience, not physical content."<strong> </strong>And that is precisely the gap §2.9's [MIX] tag names: the mathematics is standard and correct, and the claim that it <em>replaces</em> $T_{\mu\nu}$ as the physical content is not established anywhere in either use.**</p>
+<h2 id="findings">Findings</h2>
+<ol>
+<li><strong>Axiom 2 is declared but idle in the derivation of the $U$ equation.</strong> The equation is chosen by "simplicity" and fixed by an identification (2-12), not derived from stationarity. <strong>The axiom does not do the job it was introduced for.</strong></li>
+<li><strong>The "simplest equation" step is the least controlled step in the corpus.</strong> (2-12) is labelled <em>"conditions suffisantes, sinon nécessaires"</em> — <strong>the corpus's own admission that a sufficient condition is being used as if necessary</strong> — and it is the same identification S7 records as the first of the programme's recurring "simple declared choice" pattern.</li>
+<li><strong>A stray exponent 2 wanders between four printings of the same equation</strong> — (2-8)'s $C_{1}U^{2}$, (2-13)'s $(R-4\Lambda)U$, (2-71)'s $\Box^{2}U^{2}$, and Esp (30)'s linear $C_{1}U + C_{2}U^{2} + \cdots$ — <strong>and only the reading $C_{1}U + C_{2}U^{2} + \dots$ closes the chain (2-8) → (2-12) → (2-13).</strong> The corpus's own dimensional remark on the $C_{n}$ supports it independently, and excludes the nonlinear reading at every order. <strong>Closed: the definition-page printing and the target form agree, and (2-71) equates the two forms itself. Filed as S5's Hazard 9.</strong></li>
+<li><strong>Where the axiom <em>is</em> used, it works</strong> — (5-45) is a genuine stationary action and its output (5-46) checks numerically (S50). <strong>Credit.</strong></li>
+<li><strong>The weight argument (2-6)–(2-7) is correct mathematics</strong> — $U$ = dA/dV₄ with $A$ invariant and $dV_{4}$ of weight −1 gives $U$ of weight +1, Lorentz-invariant in $\eta_{P}$. <strong>Credit, and it is the cleanest technical result in this block.</strong></li>
+<li><strong>What the axiom therefore delivers is an integral and a re-interpretation; what it does not deliver is a replacement for $T_{\mu\nu}$.</strong> §2.9's [MIX] tag stands, with the two halves now separated.</li>
+</ol>
+<h2 id="verdict">Verdict</h2>
+<p><strong>A real axiom, correctly applicable in one sector, idle in the sector that needed it, and nowhere doing what the corpus says it does.</strong></p>
+<ul>
+<li><strong>What is to the corpus's credit.</strong> <strong>(a)</strong> The action-density construction (2-6)–(2-7) is correct, including the pseudo-scalar weight argument. <strong>(b)</strong> The cosmological action (5-41) with $A = S = P = 0$ is a <em>genuine</em> extremal statement, and it yields (5-46) — <strong>an identity which S50 confirmed against the corpus's own published numbers.</strong> <strong>(c)</strong> The corpus labels its own weakest step honestly ("conditions suffisantes, sinon nécessaires"). <strong>A programme that flags its own soft joints is a programme whose soft joints can be tested.</strong></li>
+<li><strong>Where it fails.</strong> The axiom is introduced as a <em>replacement</em> for the postulated energy-momentum tensor; <strong>but the source tensor is still written down by hand (S7/§2.2), and in the quantum sector the equation comes from an identification rather than from the principle.</strong> <strong>So the corpus both keeps the postulated tensor and does not apply the principle that was to replace it.</strong> <strong>The claim is not thereby false; it is simply not made good anywhere, and §2.9's [MIX] is the correct verdict.</strong></li>
+<li><strong>Net.</strong> <strong>§2.9's mathematics is [EST]; its role as the theory's physical foundation is unestablished.</strong> <strong>The article's contribution: the axiom's two uses differ in kind, and the one that works yields an integral while the one that was supposed to yield the physics does not use it.</strong></li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<ul>
+<li><strong>$U$</strong> — the local action density, $U = dA/dV_{4}$ (2-6); a pseudo-scalar of weight $+1$; invariant in the normal tangent space $\eta_{P}$.</li>
+<li><strong>$dV_{4}$</strong> — elementary 4-volume of spacetime; <strong>$A$</strong> — the action, an invariant.</li>
+<li><strong>$\eta_{P}$, $\eta_{\alpha\beta}$</strong> — the <em>normal tangent space</em> at $P$ and its metric, signature $(-,-,-,+)$ (2-7).</li>
+<li><strong>$C_{1}, \dots, C_{n}$</strong> — real coefficients of the "simplest equation" (2-8), characterising the local geometry; <strong>$C_{1}$ has the dimensions of a scalar curvature</strong>.</li>
+<li><strong>$S$, $P$</strong> — the spin and the pulse of the universe as a whole, (5-43) and (5-44), each <em>"l'action totale divisée par $2\pi$"</em>.</li>
+<li><strong>$\mathbb{T}_{\alpha\beta}$</strong> — the geometric tensor expressed in $\eta_{P}$.</li>
+<li>Bridge: the companion item <code>the-action-principle-and-the-classical-limit-…</code> in the other programme owns the classical limit of the action principle; <strong>this article owns the corpus's <em>use</em> of it and the question of what it replaces.</strong> Neither duplicates the other.</li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S7</strong> — the geometric side is closed by theorem, so the source must carry everything; and why the source's form, not its conservation, is the first problem.</li>
+<li><strong>S10</strong> — the curvature law $R = \xi^{2}\rho^{2} + 4\Lambda$ that (2-9)–(2-13) produces.</li>
+<li><strong>S15</strong> — the quantification axiom, which is the other half of the passage to RGQ, and the reason the axioms cannot be enumerated.</li>
+<li><strong>S50</strong> — the numeric verification of (5-46), the action principle's one checkable output.</li>
+<li><strong>S5, <code>charon-s05-notation-and-units</code></strong> — Hazard 7 for the corpus's $\Box^{2}$ notation, and <strong>Hazard 9 for the four printings of the "simplest equation"</strong>, which is this article's Finding 3 stated as a rule for the whole series.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

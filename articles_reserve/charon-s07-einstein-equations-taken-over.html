@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Einstein's Equations Taken Over: Why the Corpus Has No Room to Hide on the Left, and What That Costs — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="einsteins-equations-taken-over-why-the-corpus-has-no-room-to-hide-on-the-left-and-what-that-costs"><strong>Einstein's Equations Taken Over: Why the Corpus Has No Room to Hide on the Left, and What That Costs</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The corpus does not modify general relativity's field equations. It takes them over unchanged, with $\Lambda$ left free, and it says why in one sentence.</strong></p>
+<blockquote>
+<p><em>"Les conditions de Cartan conduisent univoquement à la formulation usuelle de la Relativité générale, formulation qui demeure valable pour la Relativité complexe."</em> (RC 022)</p>
+</blockquote>
+<p>$$(2\text{-}4)\quad R_{\alpha\beta} - \tfrac{1}{2}R\,g_{\alpha\beta} + \Lambda g_{\alpha\beta} = -\,T_{\alpha\beta},$$</p>
+<p>with the Cartan conditions stated in full at RC 021: the spacetime is a four-dimensional Riemannian metric space (2-2); the geometric tensor $T_{\alpha\beta}$ is expressible in terms of the metric and its partial derivatives up to second order; and it satisfies the conservation identities $\nabla_{\alpha}T^{\alpha}_{\ \beta} \equiv 0$ identically (2-3).</p>
+<p><strong>This is the strongest <em>positive</em> item in the whole programme, and it is also the reason the programme carries all its risk on one equation.</strong> The uniqueness of the left-hand side is not a preference of Charon's and not a convenience — it is a theorem, and this article is where it is stated, checked and priced. <strong>This article is registered as a bridge, because its payload is a <em>transfer of responsibility</em>: the geometric side is closed by theorem, so every failure of the corpus is a failure of the source tensor $T_{\alpha\beta} = \xi^{2}\rho^{2}u_{\alpha}u_{\beta}$ — the equation S8 audits and S39 finally breaks.</strong></p>
+<p><strong>And the pricing is exact, because leaving the left side untouched has one unavoidable consequence that the corpus never states as plainly as it should.</strong> A physical energy-momentum tensor carries the coupling $8\pi G/c^{4}$; the corpus's tensor carries nothing, because it is not an energy-momentum tensor at all but a <em>curvature-dimension</em> object built from $\xi$ and $\rho$. <strong>So the corpus's four-dimensional equation is dimensionally complete with the coupling written as the number $1$, and the strength of gravity has been moved — silently — into the definition of $T_{\alpha\beta}$.</strong> Everything that follows in the programme about the <em>value</em> of $G$ therefore has to be obtained from $\xi$ and $\rho$, and S39 shows that attempt failing by forty orders of magnitude. <strong>That is not a defect imported from outside: it is the direct consequence of the choice this article documents.</strong></p>
+<p><strong>Conventions.</strong> The metric signature is the corpus's own, $\eta_{\alpha\beta} = \mathrm{diag}(-1,-1,-1,+1)$ (2-7), so that $R_{\alpha\beta}$ and $T_{\alpha\beta}$ are real. $\alpha,\beta,\gamma\ldots$ run $1$ to $4$. $R_{\alpha\beta}$ is the Ricci tensor and $R = g^{\alpha\beta}R_{\alpha\beta}$ the Riemannian scalar. $\xi = \Omega_{0}c/\hbar = 6{,}8\times10^{-4}$ cm$^{2}$ g$^{-1}$ is the corpus's universal constant, dimensionally an area per unit mass; $\rho$ is a proper <em>mass</em> density; $\Omega_{0}$ is the elementary volume. <strong>$T_{\alpha\beta}$ in this article always means the corpus's geometric tensor, never a physical energy-momentum tensor</strong>, because RC 022 is explicit that the corpus declines that identification — which is this article's §4.</p>
+<h2 id="1-what-the-theorems-actually-say">1. What the Theorems Actually Say</h2>
+<p><strong>The corpus's three conditions are the hypotheses of a real uniqueness theorem, and the corpus states them correctly.</strong> Stripped of the corpus's vocabulary:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the corpus's condition</th>
+<th>what it is mathematically</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(2-2) a four-dimensional Riemannian metric $ds^{2} = g_{\alpha\beta}dy^{\alpha}dy^{\beta}$</td>
+<td>a metric theory of gravity in four dimensions</td>
+</tr>
+<tr>
+<td>(2-2-b) the tensor is "expressible in terms of the $g_{\alpha\beta}$ and their partial derivatives up to second order"</td>
+<td>a <em>second-order</em> field equation, quadratic in metric derivatives at most</td>
+</tr>
+<tr>
+<td>(2-3) $\nabla_{\alpha}T^{\alpha}_{\ \beta} \equiv 0$</td>
+<td>a divergence-free (conserved) rank-2 tensor</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The conclusion is that the most general such tensor is a combination of the Einstein tensor and the metric, with constant coefficients.</strong> That is the Cartan–Lovelock uniqueness theorem. The modern attribution is Lovelock (1971, 1972); the requirement that the equations be second order goes back to Vermeil (1917), Weyl (1918) and Cartan (1922), whose name the corpus uses. <strong>Charon's citation of Cartan is historically reasonable and the mathematics is standard and correct.</strong> This article records the check and moves on: <strong>the register's tags for §2.1 ([EST] as the equation) and §2.8 ([EST]/[MATH]) are both correct.</strong></p>
+<p><strong>Why uniqueness matters more here than anywhere else in the programme.</strong> The corpus's freedom is not unlimited, and this is the page that proves it. Once the three conditions are accepted:</p>
+<ul>
+<li><strong>There is no room for a modified left-hand side.</strong> Not a "better" curvature term, not an $\alpha R^{2}$ correction, not a modified Newtonian constant multiplying an otherwise standard geometry. Any such modification violates condition two (it becomes fourth order) or condition three.</li>
+<li><strong>$\Lambda$ is the one free constant of the geometric side.</strong> It is a genuinely free parameter — a coefficient in the combination the theorem allows — and the corpus uses it. This is the single degree of freedom the geometric side offers, and <strong>S51 shows it is the one the corpus's bounce depends on.</strong></li>
+<li><strong>Everything else must be said about the right-hand side.</strong> The corpus's positive programme — the pulsating holon, the geometric source, the cosmology — is entirely a theory of $T_{\alpha\beta}$.</li>
+</ul>
+<p><strong>So the sentence the corpus writes about Cartan is not decoration. It is the load-bearing sentence of the whole framework, and it is the reason the corpus's case must be argued at S8 and not at S7.</strong></p>
+<h2 id="2-the-theorem-is-conditional-and-the-corner-is-small">2. The Theorem Is Conditional, and the Corner Is Small</h2>
+<p><strong>A uniqueness theorem is only as strong as its hypotheses, and every modern alternative to general relativity is a way of dropping one of them.</strong> The corpus's "no room" claim is exactly true <em>as stated</em>, and the honest way to state it is to list what it excludes and what each escape costs:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the hypothesis</th>
+<th>what leaving it allows</th>
+<th>the corpus's exposure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>four dimensions</td>
+<td>Lovelock–Cartan terms in $D>4$ (Gauss–Bonnet)</td>
+<td>none — the corpus is four-dimensional and says so</td>
+</tr>
+<tr>
+<td>metric theory</td>
+<td>Palatini and metric-affine formulations; torsion</td>
+<td>none on the left side; <strong>but the corpus's own source tensor is defined geometrically, so this is an area it cannot use either</strong></td>
+</tr>
+<tr>
+<td>second-order in the metric</td>
+<td>$f(R)$, $f(R_{\alpha\beta}R^{\alpha\beta})$, Gauss–Bonnet — all fourth order</td>
+<td>none — a fourth-order equation is not available under condition two</td>
+</tr>
+<tr>
+<td>no extra fields</td>
+<td>scalar–tensor (Brans–Dicke), vector–tensor, Horndeski</td>
+<td><strong>the corpus's escape route, and the one it declines</strong>: it adds no fundamental scalar to the geometry</td>
+</tr>
+<tr>
+<td>no non-metricity</td>
+<td>teleparallel $f(T)$, symmetric teleparallel $f(Q)$</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the fourth row carefully, because it is the corpus's real intellectual choice.</strong> The one door the corpus could have walked through — adding a fundamental scalar field to the geometric sector, which is what Brans–Dicke does and what every scalar-tensor gravity does — is the door it leaves closed. <strong>Instead it keeps the geometry pristine and puts its new physics in an exotic <em>source</em>.</strong> That is a more disciplined position than most alternative-gravity programmes, and it is worth saying so: the corpus does not insulate itself from test by inventing new geometric terms.</p>
+<p><strong>And that is what makes S8 the whole theory.</strong> A programme with pristine geometry and an exotic source stands or falls on whether the source is consistent with the field equations it is inserted into. <strong>RC 022 makes the point itself, and this is the sharpest sentence on the page:</strong></p>
+<blockquote>
+<p><em>"Quant à $T_{\alpha\beta}$, $RC$ ne fait pas comme $RG$ l'hypothèse que $T_{\alpha\beta}$ représente un tenseur impulsion-énergie, comme l'avait postulé Einstein."</em></p>
+</blockquote>
+<p><strong>The corpus knows it has declined the identification, and it says so out loud.</strong> A standard energy-momentum tensor is a physical object whose conservation follows from the matter's equations of motion; the corpus's $T_{\alpha\beta}$ is a geometric expression in $\rho$ and $u_{\alpha}$ whose conservation is <em>imposed</em> by a variational principle. <strong>S8 is where that choice is tested, and it is the register's "sharpest internal tension in the program" for exactly this reason.</strong></p>
+<h2 id="3-what-conservation-means-here-and-the-honest-caveat">3. What "Conservation" Means Here, and the Honest Caveat</h2>
+<p><strong>The corpus does not obtain $\nabla_{\alpha}T^{\alpha}_{\ \beta} = 0$ from matter dynamics. It imposes it, by a stationary-action principle, and this is one of the places it is most transparent about what it is doing.</strong></p>
+<p>$$(2\text{-}5)\quad \delta\int_{V_{4}}U\,dV_{4} = 0, \qquad (2\text{-}6)\quad U = \frac{dA}{dV_{4}},$$</p>
+<p>where $U$ is a local action density — the elementary action $dA$ in an elementary four-volume $dV_{4}$ — required to be a holomorphic function of the spacetime coordinates $r$ and $t$. <strong>The register's §2.9 tags this [MIX] and is right to: the variational formulation is standard, the claim that it <em>replaces</em> the energy-momentum tensor as the physical content is the corpus's own.</strong></p>
+<p><strong>The corpus then makes an identification it openly calls sufficient and not necessary, and this deserves to be quoted precisely because it is the most epistemically careful sentence in the formalism.</strong> Writing $\mathbb{T}_{\alpha\beta}$ for the normal components of the tensor in the tangent space $\eta_{P}$, the corpus multiplies (2-9) by the invariant $U$ and identifies the result with the simplest equation $U$ can satisfy in the tangent space, its own words being <em>"l'identification une nouvelle fois la plus simple (conditions suffisantes, sinon nécessaires)"</em>:</p>
+<p>$$\mathbb{T}_{\alpha\alpha}\cdot U = -\,\partial^{2}_{\alpha}U, \qquad R - 4\Lambda = C_{1}, \qquad C_{n} = 0 \ \ (n>1).$$</p>
+<p><strong>Two things follow, and they point opposite ways.</strong></p>
+<ul>
+<li><strong>In the corpus's favour</strong>: it flags the weakness itself. An author who writes "sufficient, if not necessary" about his own identification is not overclaiming, and the register should record that this choice is <em>declared</em> rather than smuggled. That is the difference between a speculation and an error.</li>
+<li><strong>Against it</strong>: the identification is what fixes the <em>form</em> of the source's coupling, and it is chosen for simplicity. So the corpus's central physical choice — that $T_{\alpha\beta} = \xi^{2}\rho^{2}u_{\alpha}u_{\beta}$ — rests on an ansatz selected because no simpler one was available, and the equation for $U$ it produces, $\Box^{2}U + C_{1}U^{2} + \dots = 0$ (2-8), is a <em>nonlinear</em> invariant equation of the kind the corpus then specialises.</li>
+</ul>
+<p><strong>This is the same structure as the programme's other soft joints — the lepton ladder's fitted $T_{0}$ (S37), the hadron chain's divisor $d_{0}$ (S39), the cosmological $\Lambda$'s sign (S51) — and S7 is where it is first met: a simple choice, declared as a choice, on which everything downstream depends.</strong></p>
+<h2 id="4-the-real-cost-the-coupling-constant-has-been-moved-into-the-source">4. The Real Cost: the Coupling Constant Has Been Moved Into the Source</h2>
+<p><strong>This is the finding this article exists to state, and it is a dimensional check that the corpus never performs.</strong></p>
+<p><strong>Is the corpus's (2-4) dimensionally consistent as it stands?</strong> It is, and the reason is worth spelling out because it is the whole story. Compute the dimensions:</p>
+<p>$$\xi = \frac{\Omega_{0}c}{\hbar}\ \left[\frac{L^{2}}{M}\right], \quad \rho\ \left[\frac{M}{L^{3}}\right] \quad\Longrightarrow\quad \xi\rho\ \left[\frac{1}{L}\right] \quad\Longrightarrow\quad \xi^{2}\rho^{2}\ \left[\frac{1}{L^{2}}\right],$$</p>
+<p>and $1/L^{2}$ is the dimension of a curvature. <strong>So the corpus's $T_{\alpha\beta}$ has the dimensions of $R_{\alpha\beta}$, and (2-4) balances with no coupling constant at all.</strong> The equation is not missing a factor; it is written in the corpus's own units, in which the source is dimensionless in the sense that matters — the geometric tensor <em>is</em> a curvature.</p>
+<p><strong>Now compare with the physical equation.</strong> If $T^{\mathrm{phys}}_{\alpha\beta}$ is a genuine energy-momentum tensor — dimension of an energy density — then the standard equation reads $R_{\alpha\beta} - \tfrac{1}{2}Rg_{\alpha\beta} = -(8\pi G/c^{4})T^{\mathrm{phys}}_{\alpha\beta}$. For the corpus's equation to be the same equation, one must have</p>
+<p>$$\xi^{2}\rho^{2}u_{\alpha}u_{\beta} \;=\; \frac{8\pi G}{c^{4}}\,T^{\mathrm{phys}}_{\alpha\beta}.$$</p>
+<p><strong>The identification the corpus declines is not free, and this equation is the invoice.</strong> Gravity's coupling does not disappear from the theory; it is absorbed into the <em>definition</em> of the geometric source. <strong>Therefore any claim that the corpus has <em>computed</em> $G$ has to be a claim that $\xi^{2}\rho^{2}$ reproduces $(8\pi G/c^{4})\times$ (an energy density) — which is exactly the claim Esp (377)–(379) makes, and exactly the claim S39 breaks.</strong></p>
+<p><strong>And there is a structural reason it had to break, which belongs here because it is visible already at this page and does not depend on any numerical work.</strong> The corpus's source is <strong>quadratic</strong> in the density, $\propto\rho^{2}$. Any physical energy-momentum tensor's time-time component is <strong>linear</strong> in the energy density: for the cosmological fluid it is $\varepsilon = \rho c^{2}$, dust. Set the two proportional and the <em>only</em> solution is a single density,</p>
+<p>$$\frac{8\pi G}{c^{4}}\,\rho c^{2} = \xi^{2}\rho^{2} \quad\Longrightarrow\quad \rho_{*} = \frac{8\pi G}{c^{2}\xi^{2}} = 4{,}0\times10^{-21}\ \mathrm{g\ cm^{-3}},$$</p>
+<p>which is S39's number. <strong>A quadratic source can match a linear one at one density and nowhere else</strong>, and $4{,}0\times10^{-21}$ g cm$^{-3}$ is neither the cosmic density the pulsation's amplitude sits at ($7\times10^{-32}$) nor the nucleon's central density the corpus normalises against ($5{,}5\times10^{17}$). <strong>So the corpus's source is of the wrong functional form to be an energy-momentum tensor at all densities, and this is a consequence of the ansatz chosen at this page, not of the arithmetic done forty pages later.</strong></p>
+<p><strong>That is the bridge.</strong> S7's job is to state that the geometric side is closed by theorem and that therefore everything depends on the source; and the source, by its $\rho^{2}$ form, cannot be a physical energy-momentum tensor except at one density.</p>
+<p><strong>S8 and S10 carry the case from here.</strong> <strong>S8</strong> puts $T_{\alpha\beta} = \xi^{2}\rho^{2}u_{\alpha}u_{\beta}$ against the Friedmann pair — which is why the register calls it the sharpest internal tension in the programme; <strong>S10</strong> derives the curvature law $R = \xi^{2}\rho^{2} + 4\Lambda$ that the same tensor implies once the pair is imposed, and shows what the law cannot do. <strong>Then S29 and S39 audit the source against the strength of gravity, and S40 uses the answer.</strong> The corpus's position is principled, and it is a position from which there is no retreat onto the left-hand side.</p>
+<h2 id="5-math83-and-where-its-freedom-is-spent">5. $\Lambda$, and Where Its Freedom Is Spent</h2>
+<p><strong>The one free constant the theorem leaves is $\Lambda$, and the corpus uses it in a way that is worth isolating here, because it is the only geometric freedom in the whole programme.</strong></p>
+<p>RC 022 states it as <em>"$\Lambda$ une constante réelle (constante cosmologique)"</em> — a real constant. And the corpus's cosmology then <strong>fixes its sign by an existence argument</strong>: the conditions (3-69-1) for the Système E to have a solution, imposed by the existence conditions (3-35) and (3-36), require</p>
+<p>$$(3\text{-}69\text{-}2)\quad \Lambda = \frac{\xi^{2}}{R_{0}^{6}}\left(\frac{\beta^{2}}{R_{0}^{2}} - \alpha^{2}\right) - \frac{3}{R_{0}^{2}} \;\le\; 0.$$</p>
+<p><strong>S51 shows what this costs</strong>, and this article only needs to record the structural fact: <strong>the corpus's one free geometric constant is not left free.</strong> It is required to be negative in order that the rest of the system have a solution — and observation has since measured a <em>positive</em> vacuum energy density (§8.5). <strong>So the corpus spends the theorem's single degree of freedom, and spends it in the one direction the data have since excluded.</strong></p>
+<p><strong>And there is a clean way to say why the sign matters so much here and would not matter in a standard cosmology.</strong> In general relativity a nonzero $\Lambda$ is a <em>dynamical</em> term: it changes the expansion history, and either sign admits solutions. In the corpus it is worse than dynamical, because §3 above shows the corpus's $\Lambda$ is not independent of the source: it is connected to $\rho$'s sign and magnitude through the zero-total-energy condition, so a positive $\Lambda$ is not merely a different history, it is a <strong>different sign for the vacuum density</strong> — and hence, through S51, no bounce. <strong>One sign change in the only free geometric constant removes the bounce and the whole early history with it.</strong> That is the price of taking the left-hand side over unchanged, and it is the price this article was written to name.</p>
+<h2 id="verdict">Verdict</h2>
+<p><strong>Unchanged, correctly stated, and expensive. The corpus's left-hand side is general relativity's, by theorem, and that is both its strongest claim and the origin of its hardest problem.</strong></p>
+<p><strong>What is right, and it is a real strength.</strong></p>
+<ol>
+<li><strong>The conditions are the hypotheses of a genuine uniqueness theorem</strong> (Cartan 1922; Lovelock 1971) and the corpus states them correctly. <strong>§2.1's [EST] and §2.8's [EST]/[MATH] tags are confirmed.</strong></li>
+<li><strong>The corpus does not insulate itself by inventing geometric terms.</strong> The one door the theorem leaves open — a fundamental scalar in the geometric sector, as in Brans–Dicke and every scalar–tensor theory — is left closed, and the geometric side is kept pristine. <strong>The corpus's new physics is confined to the source, where it can be tested.</strong></li>
+<li><strong>$\Lambda$ is correctly identified as the sole geometric freedom</strong>, and the corpus's handling of it is deliberate rather than casual.</li>
+</ol>
+<p><strong>What it costs, in three statements, each of which is verified above.</strong></p>
+<ol>
+<li><strong>The coupling constant has been moved into $T_{\alpha\beta}$, not eliminated from the theory.</strong> $(8\pi G/c^{4})T^{\mathrm{phys}}_{\alpha\beta} = \xi^{2}\rho^{2}u_{\alpha}u_{\beta}$ is the invoice. <strong>So every claim about the value of $G$ is a claim about $\xi$, $\rho$ and $u_{\alpha}$ — which is why S39's forty-orders failure is this page's consequence.</strong></li>
+<li><strong>The source's $\rho^{2}$ form cannot be a physical energy-momentum tensor except at one density</strong>, $\rho_{*} = 8\pi G/(c^{2}\xi^{2}) = 4{,}0\times10^{-21}$ g cm$^{-3}$, because a quadratic source cannot match a linear one anywhere else. <strong>The mismatch is visible at (2-4) and needs no numerical work to anticipate.</strong> S39 supplies the number.</li>
+<li><strong>The only free constant is required to be negative by the corpus's own existence conditions</strong>, and observation gives the opposite sign. <strong>So the theorem's single degree of freedom is spent, and spent wrongly</strong> — with the bounce as the collateral (S51).</li>
+</ol>
+<p><strong>And the transfer of responsibility is the article's real payload.</strong> Because the left-hand side is closed by theorem, <strong>no failure of the corpus can be repaired on the geometric side.</strong> Every defect this programme has found — the $\rho^{2}$ source that cannot be an energy-momentum tensor (S8, S39), the negative vacuum that observation forbids (S50, S51), the $2\pi$ of the lepton chain (S35), the four per cent of $\beta$ (S37) — is a defect of the right-hand side, and the right-hand side is one equation. <strong>That is not a weakness of the corpus's logic; it is the shape of its position, and stating it once, here, is what this article is for.</strong></p>
+<p><strong>And it locates the corpus's balance sheet.</strong> Charon made a serious attempt at a complex-space unified physics, and this page shows both halves of it. <strong>What is good is genuinely good and unusual</strong>: the geometry is taken over on the strength of a real uniqueness theorem, the new physics is confined to the source where it can be tested, and the framework's one free geometric constant is handled deliberately rather than casually. <strong>What is flawed is flawed in a specific, diagnosable way</strong> — one equation, the source, is asked to do work that its functional form cannot do, and every defect the programme has found lands there. <strong>A framework with a single load-bearing equation is a framework whose flaws can be named one by one</strong>, which is why this corpus can be assessed claim by claim at all — and why the assessment is worth doing.</p>
+<p><strong>Overlap note (register [BRIDGE]).</strong> This article covers the <em>uniqueness</em> content of §2.1/§2.8 and its price. The companion item <code>stress-energy-conservation-laws-…</code> in the other programme covers the conservation <em>identities</em> and the variational principle as such. <strong>The boundary: this article owns the geometric side's uniqueness and the fate of the coupling constant; the companion owns $\nabla_{\alpha}T^{\alpha}_{\ \beta} = 0$ as an identity and its relation to matter's equations of motion.</strong> Neither should duplicate the other's section.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<ul>
+<li><strong>$R_{\alpha\beta}$, $R$, $g_{\alpha\beta}$</strong> — the Ricci tensor, the Riemannian scalar $g^{\alpha\beta}R_{\alpha\beta}$, and the metric, all as in general relativity. <strong>Nothing in this article is a generalisation of them</strong>, which is its subject.</li>
+<li><strong>$\Lambda$</strong> — the cosmological constant, a real constant (RC 022), <strong>the only free coefficient the uniqueness theorem leaves</strong> — and, in the corpus, required to be $\le 0$ by (3-69-2). <strong>Not</strong> the observed $\Lambda > 0$.</li>
+<li><strong>$T_{\alpha\beta}$</strong> — <strong>the corpus's geometric tensor</strong>, never a physical energy-momentum tensor. Dimensionally a curvature: $T_{\alpha\beta} = \xi^{2}\rho^{2}u_{\alpha}u_{\beta}$ with $\xi\rho$ of dimension $1/L$. The article's central relation is $\xi^{2}\rho^{2}u_{\alpha}u_{\beta} = (8\pi G/c^{4})T^{\mathrm{phys}}_{\alpha\beta}$.</li>
+<li><strong>$\xi$</strong> — the corpus's universal constant, $\xi = \Omega_{0}c/\hbar = 6{,}8\times10^{-4}$ cm$^{2}$ g$^{-1}$ — dimensionally $L^{2}/M$, an area per unit mass. <strong>It is what makes the coupling disappear from (2-4) and it is where the coupling goes.</strong></li>
+<li><strong>$\rho$</strong> — a proper <em>mass</em> density, dimension $M/L^{3}$; in the cosmology $\rho = \alpha/R^{3}$. <strong>Distinct from $D_{\rho}$</strong>, the potential-energy density of S50 — a trap, since the two share the letter.</li>
+<li><strong>$U$, $A$, $dV_{4}$</strong> — the local action density $U = dA/dV_{4}$, the elementary action, and the elementary four-volume; $U$ is required holomorphic (2-6). The stationary-action principle (2-5) is how the corpus imposes conservation.</li>
+<li><strong>$\mathbb{T}_{\alpha\beta}$</strong> — the components of $T_{\alpha\beta}$ in the normal tangent space $\eta_{P}$ of (2-7), i.e. with the metric diagonalised and normalised at the point $P$.</li>
+<li><strong>$\rho_{*} = 8\pi G/(c^{2}\xi^{2}) = 4{,}0\times10^{-21}$ g cm$^{-3}$</strong> — the one density at which a $\rho^{2}$ source can match a dust energy density. <strong>This article's symbol and S39's number</strong>; it does not appear in the corpus.</li>
+<li><strong>$2l$, $r$</strong> — the Schwarzschild radius and the radial coordinate, used in the corpus's Schwarzschild metric (5-56) and its identification $R(\tau) = 2GM(\tau)/c^{2}$ (5-58). <strong>Named here only to mark where the geometry of (2-4) is specialised in the cosmology</strong>; the identification itself is S40's territory.</li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><code>UPDATED_CHARON_THEORY_2026_ARTICLE_LIST.md</code>: the S7 entry and its [BRIDGE] tag; §12.1's chains <code>S7 → S8 → S10 → S50 → S51 → S40</code> and <code>S7 → S8 → S26 → S27 → S39</code>, both of which begin here; §2.1 and §2.8 of <code>CHARON_IDEAS_AND_CLAIMS.md</code> for the two tags this article confirms; §16 for the priority that makes these chains the programme's spine.</li>
+<li>J. E. Charon, <em>La Relativité complexe</em> (Albin Michel, Paris, 1987): <strong>RC 021 §II.1 for the Cartan conditions (2-2) and (2-3)</strong>; <strong>RC 022 for (2-4) itself, the conservation (2-3), the stationary-action principle (2-5)–(2-6), the tangent-space diagonalisation (2-7), the invariant equation (2-8), and the "sufficient, if not necessary" identification</strong>; RC 074 ch. V for the use made of $\Lambda$ and the cosmological tensor (3-23-a) = (5-9); RC 051 (3-69-1) and (3-69-2) for the required sign of $\Lambda$.</li>
+<li>S8, <code>charon-s08-the-geometric-source-tensor</code>, for the audit of $T_{\alpha\beta} = \xi^{2}\rho^{2}u_{\alpha}u_{\beta}$ against the Friedmann pair — <strong>the article this one hands off to, and the register's "sharpest internal tension"</strong>; S10, <code>charon-s10-the-quadratic-curvature-law</code>, for the dimensional link; S50, <code>charon-s50-zero-total-energy</code>, for the identity that ties $\Lambda$'s sign to $\rho$'s; S51, <code>charon-s51-the-bounce-instead-of-a-singularity</code>, for what the sign of $\Lambda$ buys; S39, <code>charon-s39-g-from-the-hadron-model</code>, for the forty-orders failure and $\rho_{*}$; S40, <code>charon-s40-gdot-over-g</code>, whose Step 2 uses the conclusion that the framework supplies the form of gravity's coupling and not its value.</li>
+<li>Lovelock, <em>The Einstein tensor and its generalizations</em> (1971, 1972) for the uniqueness theorem; Vermeil (1917), Weyl (1918) and Cartan (1922) for the second-order requirement the corpus cites under Cartan's name. Brans–Dicke (1961) for the scalar-tensor sector the corpus declines to enter; for the $R^{2}$ and $f(R)$ escapes, the fourth-order literature.</li>
+<li>The companion item <code>stress-energy-conservation-laws-…</code> in the other programme, for the conservation identities and the variational principle as such — see the boundary stated in the Verdict.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

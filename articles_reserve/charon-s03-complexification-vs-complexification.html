@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: Complexification vs Complexification — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-complexification-vs-complexification"><strong>Charon: Complexification vs Complexification</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The register asks a direct question, and this article answers it. S3 is listed as <em>"(was A3) — Is Charon's complexification the same operation as the biquaternion one, a restriction, or a different operation? Audits §1.1, §1.2."</em></p>
+<p><strong>The answer is that the disjunction is false as posed, and the answer is different at each of three levels.</strong> As an operation on <em>real vector spaces</em> the two complexifications are <strong>literally the same</strong>: both are $\mathbb{C}\otimes_{\mathbb{R}}(\cdot)$ applied to a four-dimensional real space, and the two outputs are isomorphic complex vector spaces. As an operation on <em>algebras</em> they are <strong>different</strong>: the framework complexifies the quaternion algebra $\mathbb{H}$, the corpus complexifies a four-dimensional real space carrying no product beyond the commutative one, and the outputs are $\mathbb{C}\otimes\mathbb{H}\cong M_2(\mathbb{C})$, which is simple and non-commutative, against $\mathbb{C}^{4}$, which is commutative. And as an operation on <em>complex structures</em> they are again different, in a way that matters physically: <strong>the framework's complex structure is local — a field, fixed by the electromagnetic properties of the medium at each point — while the corpus's is global and stipulated, a single constant $i$.</strong></p>
+<p><strong>The register's three candidate answers therefore each hold at one level and fail at another, and the level that decides the sector question is the algebra level.</strong> There the corpus's object is <strong>strictly poorer</strong>, and the poverty is not a matter of choice: <strong>a commutative object has exactly one conjugation, and it is the conjugation that produces the corpus's two sheets, not the framework's two sectors.</strong> S2 established that the corpus's sheets are the Prime Convention and are transversal to the sectors, by set arithmetic on the eight parameters and by the corpus's own horizon premise. <strong>This article reaches the same conclusion from the algebra side and adds what the set arithmetic could not see: the corpus could not have chosen the sectors, because the object it complexifies does not have them.</strong></p>
+<p>The article audits inventory §1.1 (the doubling of the universe) and §1.2 (the horizon argument). Part 1 fixes the objects. Part 2 does the comparison at the three levels. Part 3 derives the conjugation consequence and re-derives S2's result. Part 4 takes up the corpus's matrix near-miss at Esp 098. Part 5 reads the complex structure as local against global, which is the article's new finding. Part 6 states what this does to the register's dictionary table.</p>
+<p><strong>A note on sources.</strong> The corpus side is RC ch. I, RC (2-2)–(2-13) and Esp §V, §II, 098, all read in the scans. The framework side is <em>Conventions in the Biquaternion Universe</em>, <em>Introduction to the Biquaternion Universe</em>, <em>Biquaternion Algebra</em>, and <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>. Notation follows S5.</p>
+<h2 id="part-1-the-two-objects-fixed">Part 1 — The two objects, fixed</h2>
+<h3 id="what-the-corpus-complexifies">What the corpus complexifies</h3>
+<p>The corpus works in what it calls a <strong>complex Riemannian space</strong>, and its own opening states the construction without ambiguity: <em>"au lieu de choisir ces dimensions purement réelles (espace) ou purement imaginaires (temps) ... chacune de ces quatre dimensions est ... précisément une dimension « complexe » au sens mathématique, c'est-à-dire à la fois réelle et imaginaire"</em> (RC 007, chapter I). Each of four coordinates is written</p>
+<p>$$x^{\alpha} = \dot x^{\alpha} + i\,\ddot x^{\alpha}, \qquad \alpha = 1,\dots,4$$</p>
+<p>(Esp (22), Esp 015), and Esp (23) writes the line element as $ds^{2} = G_{\alpha\beta}dy^{\alpha}dy^{\beta} = \eta_{\alpha\beta}dx^{\alpha}dx^{\beta}$ with $G$ complex and $\eta$ real-diagonal.</p>
+<p><strong>The object, stated formally.</strong> A <strong>four-dimensional real vector space</strong> $V\cong\mathbb{R}^{4}$ — the corpus's coordinates — carrying an inner product of Euclidean type ($\eta$ "à composantes réelles et diagonales", Esp 015) and <strong>no other structure</strong>. The corpus <strong>stipulates</strong> the real/imaginary partition: RC I.1 says the conventions are fixed <em>"de manière conventionnelle"</em> (S2, Part 7).</p>
+<p><strong>What is complexified, then, is $V$ itself, with its componentwise structure and nothing more.</strong></p>
+<h3 id="what-the-framework-complexifies">What the framework complexifies</h3>
+<p>The framework's object is the <strong>real quaternion algebra</strong> $\mathbb{H}$, and the complexification is</p>
+<p>$$\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H},$$</p>
+<p>the biquaternion algebra, with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^{2} = -e_0$, and a general element $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ with complex coefficients $Q_\mu = q_\mu + iq'_\mu$.</p>
+<p><strong>The one structural fact that everything below turns on.</strong> As a complex algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, the $2\times2$ complex matrices: <strong>non-commutative, simple, with a two-sided ideal structure of exactly one block.</strong> As a complex vector space it is four-dimensional, so $\mathbb{B}\cong\mathbb{C}^{4}$. <strong>Those two sentences are both true and they are the whole article.</strong></p>
+<h2 id="part-2-the-three-levels">Part 2 — The three levels</h2>
+<h3 id="level-1-the-operation-on-real-vector-spaces-identical">Level 1 — the operation on real vector spaces: identical</h3>
+<p>Both sides apply the functor $\mathbb{C}\otimes_{\mathbb{R}}(\cdot)$ to a four-dimensional real space. Whatever else differs, $\dim_{\mathbb{C}}\mathbb{C}\otimes_{\mathbb{R}}V = 4 = \dim_{\mathbb{C}}\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$. <strong>Moreover the inputs are <em>isomorphic</em> as real vector spaces — $V\cong\mathbb{R}^{4}\cong\mathbb{H}$ — so their complexifications are isomorphic as complex vector spaces:</strong></p>
+<p>$$\mathbb{C}\otimes_{\mathbb{R}}V \;\cong\; \mathbb{C}^{4} \;\cong\; \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H} \qquad (\text{as } \mathbb{C}\text{-vector spaces}).$$</p>
+<p><strong>At this level the register's "same construction" is exactly right</strong>, and it is the row of the dictionary table that reads <em>"$x = \dot x + i\ddot x$ | $Q = q + iq'$, eight real parameters | same construction"</em>. <strong>The corpus's four complex coordinates correspond coefficient-wise to the framework's four complex coefficients, one for one, and the correspondence is an isomorphism of complex vector spaces.</strong> Nothing about the corpus's $i$ and the framework's $i$ is different here: both are the central scalar imaginary of a complex vector space.</p>
+<h3 id="level-2-the-operation-on-algebras-different-and-the-difference-is-the-input">Level 2 — the operation on algebras: different, and the difference is the input</h3>
+<p>The functors agree; <strong>the objects they are applied to do not.</strong> $\mathbb{H}$ is a division algebra; $V$ with its componentwise product is commutative with zero divisors. Complexifying preserves that difference, because $\mathbb{C}\otimes_{\mathbb{R}}(\cdot)$ is a change of base ring and does not alter the multiplication table:</p>
+<p>$$\mathbb{C}^{4}\ \text{is commutative}, \qquad \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})\ \text{is not}.$$</p>
+<p><strong>This kills the "restriction" horn of the register's question, cleanly.</strong> To read the corpus's complexification as a real restriction of the framework's, one would have to find $\mathbb{C}^{4}$ sitting inside $M_2(\mathbb{C})$ as a subalgebra. It does not: <strong>the largest commutative subalgebra of $M_2(\mathbb{C})$ has complex dimension 2</strong> (a quadratic extension of $\mathbb{C}$, or the diagonal matrices), and $\mathbb{C}^{4}$ has dimension 4. So the corpus's object is <strong>not a sub-object of the framework's algebra</strong>; it is what is left of it when the multiplication is discarded. The relation is a <strong>forgetful</strong> one — the same underlying complex vector space, a strictly poorer algebra.</p>
+<p><strong>The register's words for the decision of S2 are therefore exact, and this article can now say why they are exact.</strong> <em>"The corpus is the framework with the sector structure collapsed onto the Prime Convention."</em> <strong>Collapsing a partition is a set operation; what licenses it is an algebra operation — the discarding of the quaternion product.</strong> Part 3 gives the mechanism.</p>
+<h3 id="level-3-the-operation-on-complex-structures-local-against-global">Level 3 — the operation on complex structures: local against global</h3>
+<p><strong>This is the level at which the corpus's own text supplies an inconsistency, and it is the article's new finding.</strong></p>
+<p><strong>The framework's complex structure is local.</strong> In the framework's own statement: <em>"The complex structure — the identification of which direction is 'real' and which is 'imaginary' — is </em><em>local</em><em>, determined by the electromagnetic properties of the medium at each point"</em>; in vacuum it reduces to the familiar $ict$, and $c = 1/\sqrt{\epsilon\mu}$ "plays the role of the local scale factor of the complex structure". A complex structure that varies from point to point is a <strong>field</strong> on the manifold.</p>
+<p><strong>The corpus's complex structure is global and stipulated.</strong> RC I.1 fixes it <em>"de manière conventionnelle"</em>, and the corpus never makes $i$ a function of position. Its $i$ is the plain $\sqrt{-1}$ of complexified coordinates.</p>
+<p><strong>Three formal consequences, and the corpus states the third itself.</strong></p>
+<ol>
+<li><strong>A constant complex structure on $\mathbb{R}^{4}$ carries no local information.</strong> All complex structures on $\mathbb{R}^{4}$ that are constant are linearly conjugate — the space of complex structures $GL(4,\mathbb{R})/GL(2,\mathbb{C})$ is connected — so a global complex structure on a contractible four-manifold can be removed by a change of coordinates: it is a convention, and a convention cannot by itself produce physics. <strong>This is why the corpus's complexification is under-determined as a physical object, and it is the algebraic form of S2's "under-determined as an algebraic object".</strong></li>
+<li><strong>A local complex structure cannot be removed that way.</strong> A field $J(x)$ with $J^{2} = -1$ is a genuine geometric structure: it need not be constant, need not be integrable, and cannot be gauged away on a manifold where it varies. <strong>This is the framework's position, and it is where a local complex structure could carry new physics — the framework's own article records a sector coupling as the open question.</strong></li>
+<li><strong>And the corpus needs the local reading, because its central argument is local.</strong> Its justification for complexification is <em>"les vecteurs de base sur les 4 axes du référentiel sont tous multipliés par $i$ quand on traverse $r = r_s$"</em> (Esp 039 §1.2) — <strong>a change of complex structure at a place, at the horizon.</strong> The same book elsewhere multiplies the base vectors by $i$ pointwise to build the negentropic space (Esp 039 §1.2, second bullet: multiplied by $i$ "les vecteurs de base des coordonnées entropiques").</li>
+</ol>
+<p><strong>So the corpus complexifies globally and justifies locally.</strong> Its stipulated $i$ is a constant; its argument for needing a complex spacetime is a <em>position-dependent</em> operation of $i$. <strong>The framework's complexification is local throughout. That is the sharpest formal difference between the two operations, it is not a difference the corpus chose, and it is printed in the corpus's two central passages.</strong> Part 5 records what follows.</p>
+<h2 id="part-3-the-conjugation-and-the-re-derivation-of-s2-from-the-algebra">Part 3 — The conjugation, and the re-derivation of S2 from the algebra</h2>
+<h3 id="a-commutative-complexification-has-exactly-one-conjugation-and-it-is-the-wrong-one">A commutative complexification has exactly one conjugation, and it is the wrong one</h3>
+<p>On the framework's algebra there are two involutions that matter: the <strong>quaternion conjugate</strong> $\bar{\tilde Q}$ (negating $e_1, e_2, e_3$) and the <strong>Hermitian conjugation</strong> $\dagger$, whose composition with the scalar complex conjugate gives the anti-Hermitian conjugation $\flat$. <strong>Their fixed spaces are the sectors</strong>:</p>
+<p>$$\mathbb{M}_+ = \{\tilde Q : \tilde Q^{\dagger} = \tilde Q\}, \qquad \mathbb{M}_- = \{\tilde Q : \tilde Q^{\flat} = \tilde Q\} = \{\tilde Q : \tilde Q^{\dagger} = -\tilde Q\}.$$</p>
+<p><strong>Both involutions require the quaternion units</strong>: $\bar{\tilde Q}$ is defined by negating $e_1, e_2, e_3$, and it is what makes $\dagger$ an involution with two non-trivial eigenspaces. On the corpus's object there are no units to negate. <strong>The only involution $\mathbb{C}^{4}$ carries is coefficient-wise complex conjugation</strong>, whose $\pm1$ eigenspaces are</p>
+<p>$$\{q_0, q_1, q_2, q_3\} \qquad\text{and}\qquad \{q'_0, q'_1, q'_2, q'_3\} —$$</p>
+<p><strong>the corpus's <em>Réel</em> and <em>Imaginaire</em>, i.e. the Prime Convention.</strong></p>
+<p><strong>This is the mechanism S2 lacked.</strong> S2 showed by set arithmetic that the corpus's partition is the Prime Convention and not the sector partition, and that the two are transversal. <strong>The algebra shows why: the corpus's object admits one conjugation, and it produces the sheets. The sectors are the fixed spaces of involutions that exist only because the quaternion product exists.</strong> The corpus is not a theory that chose the wrong partition; it is a theory whose object offers only one partition. <strong>In the register's idiom, the collapse of the sector structure onto the Prime Convention was not a decision. It was a consequence of complexifying a commutative object.</strong></p>
+<h3 id="the-eight-parameters-re-derived">The eight parameters, re-derived</h3>
+<p>The cross-check is immediate and it agrees with S2's tables. Complexifying $V$ gives eight real parameters $(q_\mu, q'_\mu)$; the corpus's conjugation splits them $4+4$ by "carries the $i$". In $\mathbb{B}$ the same eight parameters split instead into</p>
+<p>$$\mathbb{M}_- = \{q'_0, q_1, q_2, q_3\}, \qquad \mathbb{M}_+ = \{q_0, q'_1, q'_2, q'_3\},$$</p>
+<p>by the $\dagger$-eigenspace. <strong>The two partitions cross, each corpus sheet being one parameter of one sector and three of the other</strong> — S2's transversality result, now read as the comparison of two conjugations on one underlying complex vector space.</p>
+<h2 id="part-4-the-matrix-near-miss-at-esp-098">Part 4 — The matrix near-miss at Esp 098</h2>
+<p>The corpus knew the matrix option and took it, which has been read as narrowing the gap to the framework. <strong>It narrows nothing, and it is worth saying why, because the misreading is natural.</strong></p>
+<p>Esp 098 names Cayley's and Hermite's matrix calculus as mathematics <em>"déjà proposée depuis relativement longtemps"</em> and the corpus chooses matrices over hypercomplex numbers. <strong>Two things follow.</strong></p>
+<ul>
+<li><strong>The choice of <em>matrices</em> was not the framework's choice.</strong> The framework's algebra <em>is</em> a matrix algebra — $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, the non-commutative $2\times2$ complex matrices. <strong>The gap between the two frameworks is not "matrices versus hypercomplex numbers"; it is <em>which</em> matrices, and the corpus's $\mathbb{C}^{4}$ is not a matrix algebra at all.</strong> Where $\mathbb{C}^{4}$ is used <em>as</em> a matrix space, it is used as a space of representations (a module) and not as an algebra — and a module has no multiplication to generate a conjugation.</li>
+<li><strong>The corpus's own words are the tell.</strong> It calls the matrix calculus a <em>tool</em> that has been available for a long time, and the corpus's heaviest technical borrowing remains the spinor, taken from de Broglie and never connected to its algebraic origin (S2, Part 7). <strong>The corpus used the matrix <em>calculus</em>; the framework uses the matrix <em>algebra</em>.</strong> The difference is exactly the product.</li>
+</ul>
+<p><strong>Recorded as a credit and a miss.</strong> The credit is that the corpus reached for matrices at all, in 1983, and got the differential geometry right with them. The miss is that the one algebraic feature that would have produced the sectors — a non-commutative product on the complexified object — was available in the literature it cites and was not taken up.</p>
+<h2 id="part-5-what-the-localglobal-difference-does-to-the-registers-question">Part 5 — What the local/global difference does to the register's question</h2>
+<p><strong>The register's question has three candidate answers and the corpus's text supports a different one at each level.</strong> Stated as a ledger:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>level</th>
+<th>register's candidate</th>
+<th>verdict</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the operation on real vector spaces</td>
+<td>"the same operation"</td>
+<td><strong>true</strong></td>
+<td>same functor, isomorphic inputs, isomorphic outputs</td>
+</tr>
+<tr>
+<td>the operation on algebras</td>
+<td>"a restriction"</td>
+<td><strong>false</strong></td>
+<td>$\mathbb{C}^{4}$ is not a subalgebra of $M_2(\mathbb{C})$; the largest commutative subalgebra there is two-dimensional</td>
+</tr>
+<tr>
+<td>the operation on complex structures</td>
+<td>"a different operation"</td>
+<td><strong>true</strong>, and the interesting one</td>
+<td>framework: a local field $J(x)$; corpus: a stipulated global constant $i$ — and the corpus's own argument needs the local reading</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The register's dictionary row should be annotated accordingly.</strong> <em>"same construction"</em> is correct at level 1 and false at level 2, and the two sentences above are the annotation. <strong>The series' rule that follows: never write the corpus's complexification as "the same as" the framework's without saying at which level.</strong> An article that needs the identification should write <em>"the same complexification of a real four-space, with the quaternion product absent"</em>, which is both short and exact.</p>
+<p><strong>What this does not change.</strong> S1's ontology claims are untouched: the doubling and its per-quantity sector assignment (O1, O2) stand on S2's set arithmetic and the corpus's horizon premise, neither of which uses the algebra. S4's question — whether the second sheet is forced, licensed or posited — is also untouched, but <strong>S4 inherits the level-3 finding</strong>: a <em>global</em> second sheet is a convention, a <em>local</em> one is a structure, and the corpus's justification is written in the local idiom. That is for S4 to weigh.</p>
+<h2 id="part-6-what-this-article-adds-in-one-line">Part 6 — What this article adds, in one line</h2>
+<p><strong>It converts S2's set-arithmetic result into an algebraic one, and it separates the three levels the register's question conflated.</strong> In one line for the register: <em>the corpus complexifies the same real four-space the framework does, but without the quaternion product, so it has one conjugation instead of two involutions, hence one partition of the eight parameters instead of the sector structure — and its complex structure, unlike the framework's, is stipulated global while its own justification is local.</em></p>
+<h2 id="summary">Summary</h2>
+<p><strong>The register asked whether Charon's complexification is the same operation as the biquaternion one, a restriction, or a different operation, and the honest answer is that the disjunction is false as posed: each candidate is right at one level and wrong at another.</strong></p>
+<p><strong>Level 1, real vector spaces: identical.</strong> Both sides apply $\mathbb{C}\otimes_{\mathbb{R}}(\cdot)$ to a four-dimensional real space, and since a real four-space and $\mathbb{H}$ are isomorphic as real vector spaces, $\mathbb{C}\otimes_{\mathbb{R}}V\cong\mathbb{C}^{4}\cong\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ as complex vector spaces. <strong>The corpus's four complex coordinates correspond one-for-one to the framework's four complex coefficients.</strong> The register's "same construction" row is exactly right here.</p>
+<p><strong>Level 2, algebras: different, and the difference is entirely in the input.</strong> The framework complexifies the quaternion division algebra, the corpus complexifies a space whose only product is the commutative one, and complexification preserves that: $\mathbb{C}^{4}$ is commutative, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ is not. <strong>The register's "restriction" horn is therefore closed rather than merely unlikely: $\mathbb{C}^{4}$ is not a subalgebra of the framework's algebra — the largest commutative subalgebra of $M_2(\mathbb{C})$ is two-dimensional — so the corpus's object is not a sub-object of the framework's, it is what remains of it when the product is discarded.</strong></p>
+<p><strong>The conjugation consequence, which is the mechanism behind S2.</strong> A commutative complexification carries exactly one conjugation, coefficient-wise complex conjugation, whose fixed spaces are the corpus's <em>Réel</em> and <em>Imaginaire</em> — the Prime Convention. The framework's sectors are the fixed spaces of involutions that exist <strong>only because the quaternion units $e_1, e_2, e_3$ exist to be negated</strong>. <strong>So the corpus's collapse of the sector structure onto the Prime Convention was not a decision but a consequence of complexifying a commutative object</strong>; S2's transversality result follows immediately, and its set arithmetic is thereby explained rather than merely exhibited.</p>
+<p><strong>Level 3, complex structures: different, and this is the article's new finding.</strong> The framework's complex structure is <strong>local</strong> — a field fixed by the electromagnetic properties of the medium at each point, reducing to $ict$ in vacuum. The corpus's is <strong>global and stipulated</strong> (RC I.1: <em>"de manière conventionnelle"</em>). A constant complex structure on a contractible four-manifold is removable by a change of coordinates, so a global one is a convention and cannot by itself produce physics; a local one cannot be removed and is a genuine geometric structure. <strong>And the corpus needs the local reading, because its central justification for complexifying is local: the base vectors are multiplied by $i$ when the horizon at $r = r_s$ is crossed, and again pointwise in building the negentropic space.</strong> So the corpus <strong>complexifies globally and justifies locally</strong>, while the framework is local throughout — a difference printed in the corpus's two central passages and inherited by S4.</p>
+<p><strong>The matrix near-miss closes nothing.</strong> Esp 098 shows the corpus knew Cayley's and Hermite's matrix calculus and chose matrices over hypercomplex numbers, which is often read as narrowing the gap to the framework. <strong>It does not: the framework's algebra <em>is</em> a matrix algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, and $\mathbb{C}^{4}$ is not a matrix algebra at all.</strong> The corpus used the matrix <em>calculus</em>; the framework uses the matrix <em>algebra</em>; and the difference is exactly the product.</p>
+<p><strong>The verdict, for the register.</strong> <em>Same complexification of a real four-space, with the quaternion product absent; hence one conjugation instead of two, one partition instead of the sector structure, and a global complex structure where the framework's is local.</em> The dictionary row should be annotated "same construction at the vector-space level, not at the algebra level", and no article should write the identification without saying which level it means.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V\cong\mathbb{R}^{4}$</td>
+<td>the corpus's real four-space: four coordinates, Euclidean-type $\eta$, no product</td>
+</tr>
+<tr>
+<td>$x^{\alpha} = \dot x^{\alpha} + i\ddot x^{\alpha}$</td>
+<td>the corpus's complexified coordinate (Esp (22)); the split is the Prime Convention</td>
+</tr>
+<tr>
+<td>$G_{\alpha\beta}$, $\eta_{\alpha\beta}$</td>
+<td>the corpus's complex metric and its real-diagonal normal form (Esp (23))</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>the real quaternion algebra: $e_0 = 1$, $e_k^{2} = -e_0$, non-commutative, a division ring</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\otimes_{\mathbb{R}}(\cdot)$</td>
+<td>the complexification functor: change of base ring, multiplication table preserved</td>
+</tr>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$</td>
+<td>the biquaternion algebra, as a complex algebra the $2\times2$ complex matrices</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^{4}$</td>
+<td>the corpus's complexified object; as an algebra, commutative, with zero divisors</td>
+</tr>
+<tr>
+<td>$\bar{\tilde Q}$, $\dagger$, $\flat$</td>
+<td>the quaternion conjugate, the Hermitian conjugation, and $-\dagger$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-,\mathbb{M}_+$</td>
+<td>the fixed spaces of $\flat$ and $\dagger$: the sectors, $\{q'_0,q_k\}$ and $\{q_0,q'_k\}$</td>
+</tr>
+<tr>
+<td>coefficient-wise conjugation</td>
+<td>the only involution $\mathbb{C}^{4}$ has; its fixed spaces are the corpus's sheets</td>
+</tr>
+<tr>
+<td>$J$, $J(x)$</td>
+<td>a complex structure ($J^{2} = -1$); constant in the corpus, local in the framework</td>
+</tr>
+<tr>
+<td>$c = 1/\sqrt{\epsilon\mu}$</td>
+<td>the framework's local scale factor of the complex structure</td>
+</tr>
+<tr>
+<td>the Prime Convention</td>
+<td>the framework's name for the $q$/$q'$ split — the corpus's sheets</td>
+</tr>
+<tr>
+<td>the forgetful relation</td>
+<td>same underlying complex vector space, strictly poorer algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Biquaternion Algebra</em> and <em>Conventions in the Biquaternion Universe</em>, for $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, its identification with $M_2(\mathbb{C})$, the involutions $\bar{\cdot}$, $\dagger$, $\flat$, and the sector definitions used in Part 3.</li>
+<li><em>Introduction to the Biquaternion Universe</em>, for the eight real parameters, the two sectors, the norm and its three metric levels, and the statement that the complex structure is local — the source of Part 2's level 3.</li>
+<li><em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>, for the material sector's own account of $\dagger$- and $\flat$-eigenspaces, which Part 3 uses.</li>
+<li>S2, <code>charon-s02-dictionary-reel-imaginaire-to-m-plus-m-minus</code>, for the set-arithmetic result this article re-derives algebraically, and for the "under-determined as an algebraic object" statement of Part 2.</li>
+<li>S1, <code>charon-s01-what-the-sub-theory-claims</code>, for the ontology claims (O1, O2) this article leaves untouched.</li>
+<li>S4, <code>charon-s04-status-of-the-second-sheet</code>, which inherits this article's level-3 finding: a global second sheet is a convention, a local one is a structure.</li>
+<li>S5, <code>charon-s05-notation-and-units</code>, Part 4, for the bridge between the corpus's symbols and the framework's, of which this article is the algebraic completion.</li>
+<li>J. E. Charon, <em>La Relativité complexe</em> (1987), chapter I (scan 007) for the complexification and its stipulated conventions, and <em>L'Esprit et la Relativité complexe</em> (1983), §V and scans 015, 039 and 098 for the complex coordinates, the horizon argument, and the matrix-calculus near-miss.</li>
+<li><code>CHARON_IDEAS_AND_CLAIMS.md</code> §1.1 and §1.2 for the inventory items audited here, and §11.1 for the "same two signatures" sub-claim that S2 settles.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

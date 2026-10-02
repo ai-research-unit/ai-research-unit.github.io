@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — The Force Integral, (246)–(264), Built Rung by Rung (S36) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-force-integral-246264-built-rung-by-rung-s36">Charon — The Force Integral, (246)–(264), Built Rung by Rung (S36)</h1>
+<p><em>Builds the electromagnetic ladder of Esp §§18.1–18.2 from the corpus's own premises, one rung at a time, and audits it for completeness. S35 owns the number and the verdict on $\alpha$; this article owns the derivation, the dimension test and the ladder's cost.</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The register gave S36 two possible lives: the full from-first-principles derivation of the ladder (246)–(264), or an appendix to S35. The derivation is written here, and it is worth its own number, because the audit of a derivation is not the audit of a number.</strong> S35 evaluates the chain and reports the verdict on $\alpha$; what neither S35 nor register §10 does is go rung by rung and ask what each rung <em>costs</em> — what is built from the corpus's own premises, what is imported from textbook thermodynamics, what is defined rather than derived, and what is simply wrong on the page. That accounting is this article's content, and it produces four results which are not in S35.</p>
+<p><strong>First: the ladder is complete.</strong> Every rung between the two closed universes of §18.1 and the coupling of (266) can be written out, and only three rungs are not either pure geometry or algebra: Planck's distribution (256), the radiation-constant identity (259), and — the only one that is the model's own — the blackbody relation (245), $D_{E} = \beta c^{2}/R^{4} = \pm a\theta^{4}$. <strong>Everything in the electromagnetic model of the lepton hangs on that one line, and the line is a postulate.</strong> So the ladder's correspondence with nature is the correspondence of exactly one number, $\beta$, and through $\gamma = -c\beta/h$ of the lepton spectrum (S37).</p>
+<p><strong>Second, and new: the time average of (253) is a no-op.</strong> Equation (245) fixes $R^{4}\theta^{4} = |\beta|c^{2}/a$ at <em>every</em> instant of the pulsation, hence $\theta \propto 1/R$ and $R^{5}\theta^{5} = (|\beta|c^{2}/a)^{5/4}$ — which is exactly (262). <strong>The whole $R$- and $\theta$-dependence of the ladder cancels into that constant, so the force integrand is independent of $\tau$ and the corpus's <em>"force moyenne"</em> is the instantaneous force.</strong> The $R$ that seems to survive in (252) is cancelled by the $\theta^{5}$ that the Planck substitution brings in, and the stray $dt$ left in (264) is the residue of an average that has nothing to average. <strong>The consequence belongs to S42 and is one of that article's findings: nothing in the ladder — no radius, no period, no phase — enters the charge, so the charge is one number for every éon.</strong></p>
+<p><strong>Third: (261) is exact, and its exactness is a two-line proof.</strong> The closed form $x_{1} = (-\pi h/30c\beta)^{1/4} = 1{,}92$ is not a numerical coincidence of (258) and (259): the two routes give the same coefficient because $\frac{1}{2\pi}(8\pi^{5}/15)^{1/4} = (\pi/30)^{1/4}$, which reduces to $(8\cdot30/15)^{1/4} = 16^{1/4} = 2$. <strong>Verified exactly; and the numerical value is reproduced by both routes to four figures.</strong></p>
+<p><strong>Fourth: the $2\pi$ of (264), read at the ladder's level.</strong> The force rung is $\overline{F}r^{2} = \frac{4\pi^{2}}{3}ch(15\gamma/8\pi^{5})^{5/4}I$ with the dimensions of a force times an area — verified in cgs, $1{,}024756\times10^{-20}$ at the printed $\gamma$. The printed (264) carries $\frac{8\pi^{3}}{3}ch$, exactly $2\pi$ times that, and the $2\pi$ is the $h \to \hbar$ of the <em>final</em> rung, since $h/\hbar = 2\pi$: the corpus's (266) states $\frac{8\pi^{3}}{3} = \frac{4\pi^{2}}{3}(2\pi)$ and reproduces its own printed $7{,}65\times10^{-3}$. <strong>So the printed (264) is the last rung's prefactor published under the force rung's label: two rungs collapsed into one line, which is S35's finding re-derived at the level of the derivation itself.</strong></p>
+<p><strong>And one printed table that (245) does not reproduce</strong>, recorded and filed to S20 (§9): RC 052's graph-1 temperature column is internally consistent with (245)'s <em>scaling</em> and wrong by a factor $3{,}17\times10^{7}$ in value.</p>
+<h2 id="what-the-corpus-claims">What the Corpus Claims</h2>
+<p>The ladder, in the corpus's order, with each rung's content and its status as this article finds it:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Eq</th>
+<th>content</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(245)</td>
+<td>$D_{E} = \beta c^{2}/R^{4} = \pm a\theta^{4}$</td>
+<td><strong>POSTULATE</strong> — the model's own, and the ladder's only one</td>
+</tr>
+<tr>
+<td>(246)</td>
+<td>photon count in one lepton, $\frac{4}{3}\pi R^{3}n_{\nu}d\nu$</td>
+<td>built (volume)</td>
+</tr>
+<tr>
+<td>(247)–(248)</td>
+<td>fraction of them able to exchange momentum, $kR^{2}/4\pi r^{2}$</td>
+<td>built (counting)</td>
+</tr>
+<tr>
+<td>(249)–(250)</td>
+<td>mean cross-section $\overline{\sigma} = \pi R^{2}/2$, hence $k = \pi/2$ and $R^{2}/8r^{2}$</td>
+<td><strong>built, and it is a real integral</strong></td>
+</tr>
+<tr>
+<td>(251)–(252)</td>
+<td>force on each lepton, $(\pi/6)(h/c)(1/r^{2})R^{5}\int\nu^{2}n_{\nu}d\nu$</td>
+<td>built; <strong>the printed (252) drops $n_{\nu}$</strong></td>
+</tr>
+<tr>
+<td>(253)–(255)</td>
+<td>time average; $\lambda_{1} = 2\pi R$, $\nu_{1} = c/2\pi R$</td>
+<td>built; <strong>the average is a no-op</strong></td>
+</tr>
+<tr>
+<td>(256)</td>
+<td>Planck's distribution</td>
+<td><strong>imported</strong> (standard), with a $k_{0}$ typo for $K\theta$</td>
+</tr>
+<tr>
+<td>(257)–(258)</td>
+<td>$x = h\nu/K\theta$; $x_{1}$ independent of $R$</td>
+<td>built — and $R$-independent by construction</td>
+</tr>
+<tr>
+<td>(259)</td>
+<td>$K = (15ac^{3}h^{3}/8\pi^{5})^{1/4}$</td>
+<td><strong>imported identity</strong> — the radiation constant $a$, rearranged</td>
+</tr>
+<tr>
+<td>(260)/(261)</td>
+<td>$\beta$ from the <em>Système L</em>; $x_{1} = (-\pi h/30c\beta)^{1/4} = 1{,}92$</td>
+<td>(261) <strong>derived from (258)+(259) and exact</strong></td>
+</tr>
+<tr>
+<td>(262)–(263)</td>
+<td>$R^{5}\theta^{5} = (\beta c^{2}/(-a))^{5/4} = (hc\gamma/a)^{5/4}$; $\gamma = -c\beta/h$</td>
+<td>built — (245) raised to the $5/4$</td>
+</tr>
+<tr>
+<td>(264)</td>
+<td>$\overline{F} = \frac{8\pi^{3}ch}{3r^{2}}(15\gamma/8\pi^{5})^{5/4}\int$</td>
+<td>assembled; <strong>the $2\pi$ belongs to the final rung</strong></td>
+</tr>
+<tr>
+<td>(265)</td>
+<td>$\int_{1{,}92}^{\infty}x^{4}/(e^{x}-1)dx = 23{,}6$</td>
+<td>numeric; recomputed <strong>$23{,}4323$</strong> ($+0{,}72\,\%$)</td>
+</tr>
+<tr>
+<td>(266)–(268)</td>
+<td>$e^{2}/\hbar c = 7{,}65\times10^{-3}$; $e = 4{,}91\times10^{-10}$ esu</td>
+<td>evaluated in S35</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="1-the-premises-and-the-one-line-everything-hangs-on">1. The premises, and the one line everything hangs on</h2>
+<p><strong>Esp 059 §18.1 states the setting, and it is the setting of a closed universe rather than of a field theory.</strong> The leptons <em>are</em> the negentropic spacetime $(\tilde r,\tilde t)$, not objects in it; nothing can be transported from one lepton to another, because the only space connecting them is the observable one, in which each lepton is a point. <strong>So every interaction between two leptons must be virtual, and the model must build the electromagnetic force out of what is available inside each closed universe: its own blackbody radiation.</strong> The corpus's route is the exchange of photons whose <em>sign of energy</em> flips, granted or refused by the conservation of momentum-energy, with like signs repelling and opposite signs attracting.</p>
+<p><strong>What makes that a force rather than a picture is (245):</strong> the energy density of the internal blackbody is tied to the spatial radius of the micro-universe by $D_{E} = \beta c^{2}/R^{4}$, and equated to $\pm a\theta^{4}$. Read either way, it says that the internal temperature is not free: $R\theta = (|\beta|c^{2}/a)^{1/4}$ is a constant of the motion. <strong>Every rung below is fed by this relation, and nothing in §§18.1–18.3 supplies it.</strong> It is the model's own postulate, and the article's first ledger line is that the electromagnetic model of the lepton has exactly one.</p>
+<h2 id="2-rung-1-the-photon-count-and-the-geometry-246250-built">2. Rung 1: the photon count and the geometry, (246)–(250), built</h2>
+<p><strong>The count is a volume statement with one observer-dependent choice, and the corpus makes the choice explicitly.</strong> The lepton's spatial volume as seen by an observer in the quasi-Euclidean $(\dot r,t)$ is $\frac{4}{3}\pi R^{3}$, <em>"et non $2\pi^{2}R^{3}$"</em> — the corpus's own parenthesis, against the closed-universe volume used elsewhere in the same book (S4's finding that the $2\pi^{2}R^{3}$ reappears in the cosmological action). <strong>The choice is right for this calculation and it is made, not derived</strong>, and it is the reason a factor $4/3$ rather than $2\pi^{2}$ runs through the ladder.</p>
+<p><strong>Then the geometric fraction.</strong> The photons of the first lepton capable of exchanging momentum with the second without generating angular momentum are those inside a solid angle $kR^{2}/4\pi r^{2}$, and the corpus determines $k$ by integrating the cross-section over the geometry of the figure: the cross-section vanishes for photons on the line of centres and equals $\pi R^{2}$ on the orthogonal segment, so</p>
+<p>$$\overline{\sigma} = \pi R^{2}\frac{2}{\pi}\int_{0}^{\pi/2}\sin^{2}\alpha\,d\alpha = \frac{\pi R^{2}}{2}$$</p>
+<p><strong>and the integral is $1/2$ exactly</strong> — $\frac{2}{\pi}\cdot\frac{\pi}{4} = \frac{1}{2}$, verified. Hence $k = \pi/2$ and the mean solid angle</p>
+<p>$$\frac{kR^{2}}{4\pi r^{2}} = \frac{(\pi/2)R^{2}}{4\pi r^{2}} = \frac{R^{2}}{8r^{2}}$$</p>
+<p><strong>verified</strong>. <strong>This is the one rung of the ladder that is pure geometry, and it is genuinely built</strong>: the corpus's $\overline{\sigma}$ is not quoted from anywhere, and the figure's construction reproduces it.</p>
+<h2 id="3-rung-2-the-force-251252-built-with-one-fatal-omission-on-the-page">3. Rung 2: the force, (251)–(252) — built, with one fatal omission on the page</h2>
+<p><strong>The per-photon force is built from the exchange's kinematics.</strong> In one virtual exchange the photon's momentum goes from $h\nu/c$ to $-h\nu/c$, so $2h\nu/c$ is delivered; the interaction's duration is $2/\nu$; the force per photon is therefore $h\nu^{2}/c$ — a momentum per unit time, in cgs $\mathrm{g\,cm\,s^{-2}}$. Multiplying by the population and the geometric fraction:</p>
+<p>$$F_{\nu R} = \frac{4}{3}\pi R^{3}n_{\nu}\cdot\frac{R^{2}}{8r^{2}}\cdot\frac{2h\nu}{c}\cdot\frac{\nu}{2} = \frac{\pi}{6}\frac{h}{c}\frac{R^{5}}{r^{2}}n_{\nu}\nu^{2}$$</p>
+<p><strong>and the coefficient checks: $\frac{4}{3}\pi\cdot\frac{1}{8}\cdot2\cdot\frac{1}{2} = \frac{\pi}{6}$ exactly.</strong> Integrating over the spectrum gives the corpus's (252), whose printed form is</p>
+<p>$$F_{R} = \frac{\pi}{6}\frac{h}{c}\frac{1}{r^{2}}R^{5}\int_{\nu_{1}}^{\infty}\nu^{2}\,d\nu \qquad\text{(as printed: } n_{\nu} \text{ is missing)}$$</p>
+<p><strong>The omission is not cosmetic and it is visible without any arithmetic: with $n_{\nu}$ the rung is a force, without it is a momentum per unit length.</strong> $\int\nu^{2}d\nu$ has the dimensions of $\mathrm{s^{-3}}$, so the printed line reads $\mathrm{g\,cm\,s^{-1}}$, while $F_{R}$ must read $\mathrm{g\,cm\,s^{-2}}$. <strong>This is register §10.2's defect 2, and the dimension test fixes both its identity and its harmlessness: the chain restores $n_{\nu}$ implicitly at the next step, because the Planck substitution cannot be performed without it.</strong></p>
+<h2 id="4-rung-3-the-time-average-253255-and-why-the-average-does-nothing">4. Rung 3: the time average, (253)–(255) — and why the average does nothing</h2>
+<p><strong>The corpus's (253) averages the force over one radial pulsation of the micro-universe, with period $T$; (254)–(255) fix the cut-off of the spectrum at the longest wavelength that fits in the lepton, $\lambda_{1} = 2\pi R$, hence $\nu_{1} = c/2\pi R$.</strong> Both are built: the cut-off is a statement about a closed cavity, and it is the reason $\nu_{1}$ scales with $1/R$.</p>
+<p><strong>Now the finding.</strong> Substituting the Planck distribution into $\int\nu^{2}n_{\nu}d\nu$ turns the integral into $(8\pi/c^{3})(K\theta/h)^{5}I$ with $I$ a pure number — the fifth power, because $\nu^{2}n_{\nu}d\nu \propto \nu^{4}d\nu$ and $d\nu \propto \theta$. <strong>Multiplied by the $R^{5}$ of (252) this is $(8\pi K^{5}/c^{3}h^{5})R^{5}\theta^{5}I$, and by (245) $R^{5}\theta^{5}$ is the constant $(|\beta|c^{2}/a)^{5/4}$.</strong> So the whole $R$-dependence of the force cancels — the $R^{5}$ against the $\theta^{5}$ — and</p>
+<p>$$F_{R}r^{2} = \frac{4\pi^{2}}{3}ch\left(\frac{15\gamma}{8\pi^{5}}\right)^{5/4}I$$</p>
+<p><strong>contains neither $R$, nor $\theta$, nor the period.</strong> The integrand of (253) is therefore independent of $\tau$ and the average is trivial: $\frac{1}{T}\int_{0}^{T}dt = 1$, so the corpus's <em>"force moyenne"</em> is the force at every instant. <strong>The pulsation, which is the model's central dynamical object and the one thing the corpus's leptons do, does not enter its own electromagnetic force at all.</strong> The stray $dt$ inside (264)'s integral is the archaeological trace of the average that had nothing to average, and it is harmless for that reason — which is a better explanation of register §10.2's defect 3 than "left over from the time average".</p>
+<p><strong>Recorded here because S42 uses it:</strong> since the force depends on $\gamma$ alone, and $\gamma = -c\beta/h$ with one $\beta$ for the whole <em>Système E</em> (RC (3-68)), the charge is a function of the model's one blackbody coupling and of pure numbers. <strong>It does not depend on which éon is considered, on its mass, on its radius or on its phase.</strong></p>
+<h2 id="5-rung-4-planck-the-change-of-variable-and-an-invariance-that-is-built-in">5. Rung 4: Planck, the change of variable, and an invariance that is built in</h2>
+<p><strong>The Planck distribution (256) is imported, verbatim and standard</strong> — $n_{\nu}d\nu = \frac{8\pi\nu^{2}}{c^{3}}\frac{d\nu}{e^{h\nu/K\theta}-1}$ — with the corpus's transcription printing $e^{h\nu/k_{0}}-1$, where $k_{0}$ is a typo for the product $K\theta$ (the text itself says <em>"$K$ désignant ici la constante de Boltzmann"</em>). <strong>Defect 6, transcriptional, no consequence.</strong></p>
+<p><strong>The change of variable (257) is textbook; the resulting (258) is where the ladder becomes computable, and its stated property is true by construction.</strong> With $x = h\nu/K\theta$ and the cut-off $\nu_{1} = c/2\pi R$,</p>
+<p>$$x_{1} = \frac{h\nu_{1}}{K\theta} = \frac{hc}{2\pi K}\left(\frac{-a}{\beta c^{2}}\right)^{1/4} = 1{,}92$$</p>
+<p><strong>is independent of $R$ because both $\nu_{1}$ and $\theta$ scale as $1/R$</strong> ($\nu_{1}$ from the cavity, $\theta$ from (245)); their ratio cannot see $R$. <strong>Verified: the expression returns $1{,}9209$ with modern constants and $1{,}9181$ with the corpus's rounded ones.</strong> That invariance is what allows (265) to be a pure number, and therefore what allows the whole ladder to end in a number rather than in a function of the pulsation.</p>
+<h2 id="6-rung-5-the-two-identities-and-why-261-is-exact">6. Rung 5: the two identities, and why (261) is exact</h2>
+<p><strong>The corpus calls (259) a <em>"relation bien connue"</em>, and it is — but its content is narrower than the phrase suggests.</strong> $K = (15ac^{3}h^{3}/8\pi^{5})^{1/4}$ is the definition of the radiation constant $a = 8\pi^{5}K^{4}/(15c^{3}h^{3})$, rearranged; it carries no physics beyond the Stefan–Boltzmann law and the mode count already inside the Planck distribution. <strong>Verified: the expression returns $K = 1{,}380647\times10^{-16}$ against the measured $1{,}380649\times10^{-16}$ — six digits, as an identity should.</strong></p>
+<p><strong>Then (261) is not a coincidence, and this is the article's third new result.</strong> Eliminating $K$ between (258) and (259) leaves</p>
+<p>$$x_{1} = \frac{1}{2\pi}\left(\frac{8\pi^{5}}{15}\right)^{1/4}\left(\frac{h}{c|\beta|}\right)^{1/4},$$</p>
+<p><strong>and the corpus's printed $(-\pi h/30c\beta)^{1/4}$ has the same coefficient, because $\frac{1}{2\pi}(8\pi^{5}/15)^{1/4} = (\pi/30)^{1/4}$ reduces to $(8\cdot30/15)^{1/4} = 16^{1/4} = 2$ — verified exactly, to twelve figures.</strong> So the corpus's closed form is the <em>same equation</em> as its own two definitions with the constants cancelled, and the numerical agreement ($1{,}9209$ by both routes with modern constants, $1{,}918$–$1{,}919$ with the corpus's rounded ones) is what an identity should give. <strong>A reader who feared that the corpus's $1{,}92$ was fitted to make the well come out right can drop the fear: the number is a function of $\beta$ and of $h$, $c$, $K$, $a$.</strong></p>
+<p><strong>Finally (262)–(263).</strong> $R^{5}\theta^{5} = (\beta c^{2}/(-a))^{5/4} = (hc\gamma/a)^{5/4}$ is (245) raised to the $5/4$ power, with $\gamma$ defined in the process by $\gamma = -c\beta/h$; <strong>verified algebraically, and the two printed forms are the same number because $hc\gamma = |\beta|c^{2}$.</strong> Numerically the corpus prints $\gamma = 7{,}716\times10^{-3}$ while its own $\beta$ gives $7{,}6915\times10^{-3}$ ($-0{,}32\,\%$) — S35's unexplained $0{,}3\,\%$, and S37's business.</p>
+<h2 id="7-rung-6-assembling-264-and-where-the-math165-belongs">7. Rung 6: assembling (264), and where the $2\pi$ belongs</h2>
+<p><strong>Substituting (259)'s $K$ and the constant $R^{5}\theta^{5}$ of (262) into (252) gives the force rung</strong>, and the algebra is short enough to display: the $a$ of (259) cancels the $a^{-5/4}$ of (262), leaving</p>
+<p>$$\overline{F}r^{2} = \frac{4\pi^{2}}{3}ch\left(\frac{15\gamma}{8\pi^{5}}\right)^{5/4}\int_{1{,}92}^{\infty}\frac{x^{4}}{e^{x}-1}\,dx .$$</p>
+<p><strong>The dimension test, in cgs and with no $c = \hbar = 1$: $ch(15\gamma/8\pi^{5})^{5/4}$ has the units of a force times an area, $\mathrm{g\,cm^{3}\,s^{-2}}$, and the numerical prefactor is $1{,}024756\times10^{-20}$ at the printed $\gamma$.</strong> So the force rung is right, and it is a <em>force</em>, which the printed (252) taken literally is not.</p>
+<p><strong>The printed (264) has $\frac{8\pi^{3}}{3}ch$ in place of $\frac{4\pi^{2}}{3}ch$ — the ratio is $2\pi = 6{,}283185$, exactly.</strong> That factor is the $h \to \hbar$ of the final step: the coupling is obtained by dividing $\overline{F}r^{2}$ by $\hbar c$, and $h/\hbar = 2\pi$, so</p>
+<p>$$\frac{e^{2}}{\hbar c} = \frac{8\pi^{3}}{3}\left(\frac{15\gamma}{8\pi^{5}}\right)^{5/4}\int ,$$</p>
+<p><strong>which is the corpus's own (266), and its own (266) states the arithmetic — $\frac{8\pi^{3}}{3} = \frac{4\pi^{2}}{3}(2\pi)$ — and reproduces the printed $7{,}65\times10^{-3}$.</strong> <strong>So at the ladder's level the "2π defect" is not an error of physics but a collapse of two rungs into one line: (264) carries the label of the force and the prefactor of the coupling.</strong> Two readings remain open and cannot be separated from a transcription — the printed page may have $\frac{4\pi^{2}}{3}$ at (264) and the transcription $\frac{8\pi^{3}}{3}$, or the corpus may have printed the final prefactor early. Register §11 item 4 stays open, and it needs the paper copy or the 1977 edition.</p>
+<p><strong>The end-to-end arithmetic, for the record, with S35's authority:</strong> reproducing the corpus's own printed inputs ($\gamma = 7{,}716\times10^{-3}$, $I = 23{,}6$) returns $\alpha = 7{,}649543\times10^{-3}$ and $e = 4{,}9177\times10^{-10}$ esu; with the corpus's own $\beta$ and the corrected integral ($\gamma = 7{,}6915\times10^{-3}$, $I = 23{,}4323$) it returns $\alpha = 7{,}565095\times10^{-3}$ and $e = 4{,}8905\times10^{-10}$ esu, against $4{,}8032\times10^{-10}$ observed. <strong>Both rows verified; the second is the honest one, and the correction improves the agreement ($+3{,}64\,\%$ on the coupling, $+1{,}82\,\%$ on the charge).</strong></p>
+<h2 id="8-the-ladders-completeness-rung-by-rung">8. The ladder's completeness, rung by rung</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rung</th>
+<th>what it is</th>
+<th>status</th>
+<th>what it costs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(245)</td>
+<td>the internal blackbody tied to $R$ by $\beta$</td>
+<td><strong>postulate</strong></td>
+<td>the model's one physical assumption here</td>
+</tr>
+<tr>
+<td>(246)–(248)</td>
+<td>volume seen by the entropic observer; momentum-exchanging fraction</td>
+<td><strong>built</strong></td>
+<td>the $4\pi R^{3}/3$ choice is made, not derived</td>
+</tr>
+<tr>
+<td>(249)–(250)</td>
+<td>the geometric integral, $\overline{\sigma} = \pi R^{2}/2$, $k = \pi/2$</td>
+<td><strong>built</strong></td>
+<td>none — an exact integral</td>
+</tr>
+<tr>
+<td>(251)</td>
+<td>the per-photon force $h\nu^{2}/c$</td>
+<td><strong>built</strong></td>
+<td>momentum transfer $2h\nu/c$ and duration $2/\nu$ are the exchange's kinematics</td>
+</tr>
+<tr>
+<td>(252)</td>
+<td>the spectral force</td>
+<td>built <strong>after restoring $n_{\nu}$</strong></td>
+<td>the printed line is dimensionally a momentum per length</td>
+</tr>
+<tr>
+<td>(253)–(255)</td>
+<td>the pulsation average and the cavity cut-off</td>
+<td>built, <strong>and the average is trivial</strong></td>
+<td>the pulsation drops out — the ladder does not use the model's own dynamics</td>
+</tr>
+<tr>
+<td>(256)</td>
+<td>Planck's distribution</td>
+<td><strong>imported</strong></td>
+<td>textbook; $k_{0}$ typo</td>
+</tr>
+<tr>
+<td>(257)–(258)</td>
+<td>the change of variable; $x_{1}$</td>
+<td>built</td>
+<td>$x_{1}$ is $R$-free by construction</td>
+</tr>
+<tr>
+<td>(259)</td>
+<td>the radiation-constant identity</td>
+<td><strong>imported</strong></td>
+<td>reproduces $K$ to six digits</td>
+</tr>
+<tr>
+<td>(261)</td>
+<td>$x_{1} = (-\pi h/30c\beta)^{1/4}$</td>
+<td><strong>derived and exact</strong></td>
+<td>coefficient identity $16^{1/4} = 2$</td>
+</tr>
+<tr>
+<td>(262)–(263)</td>
+<td>(245) to the $5/4$; the definition of $\gamma$</td>
+<td>built</td>
+<td>$\gamma$ is the model's one number here</td>
+</tr>
+<tr>
+<td>(264)</td>
+<td>the force, and the collapse with the final rung</td>
+<td>assembled</td>
+<td>the $2\pi$ is $h \to \hbar$</td>
+</tr>
+<tr>
+<td>(265)</td>
+<td>the integral</td>
+<td>numeric</td>
+<td>$23{,}4323$, printed $23{,}6$ ($+0{,}72\,\%$)</td>
+</tr>
+<tr>
+<td>(266)–(268)</td>
+<td>the coupling and the charge</td>
+<td>S35's</td>
+<td>the verdict is inherited from $\beta$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>On rule R6, kept apart as the rule requires: the ladder is <em>coherent</em> — every rung closes on the next, one defect in the transcription aside — and it is <em>reproducible</em> given $\gamma$, since the corpus's printed $\alpha$ comes back exactly from its printed inputs. Its <em>correspondence</em> with nature is not the ladder's own: $\gamma$ is fixed by $\beta$, $\beta$ is fixed in closed form by the measured lepton masses (S37), so the comparison of $\alpha$ with $1/137$ compares the lepton spectrum with the electromagnetic coupling. That is a real comparison — two independently measured sectors — and it is not a derivation of either. S34 and S35 own the verdict; this article supplies its derivation-level reason.</strong></p>
+<h2 id="9-one-printed-table-that-245-does-not-reproduce">9. One printed table that (245) does not reproduce</h2>
+<p><strong>RC 052's graph-1 table gives the éon's state at the two turning points: $R = 8{,}01\times10^{-15}$ cm with $\theta = 4{,}7\times10^{5}$, and $R = 4{,}85\times10^{-14}$ cm with $\theta = 7{,}8\times10^{4}$.</strong> Checked against (245) it behaves in two ways at once. <strong>The scaling is right:</strong> $R^{4}\theta^{4}$ is constant along the trajectory to $2\,\%$ ($2{,}0087\times10^{-34}$ at the first point against $2{,}0481\times10^{-34}$ at the second), which is what (245) demands and is a non-trivial internal check of the corpus's own integration. <strong>The value is not:</strong> (245) with $\beta = 1{,}7\times10^{-39}$ requires $\theta = 1{,}4883\times10^{13}$ at $R_{0}$ — a factor $3{,}17\times10^{7}$ above the printed column; equivalently the printed $\theta$ would give $x_{1} = 6{,}08\times10^{7}$ instead of the corpus's own $1{,}92$, and a $\beta$ of $1{,}7\times10^{-69}$ rather than $1{,}7\times10^{-39}$.</p>
+<p><strong>Recorded, not adjudicated, and filed to S20, which owns that table.</strong> Three readings are possible and the transcription cannot separate them: a column in different units, a column computed with a different $a$, or a misprint. <strong>What matters for this article is that the ladder does not use the table.</strong> The ladder uses (245) with the corpus's $\beta$, and that pair returns $x_{1} = 1{,}92$ exactly (§5) — so the discrepancy is <em>between two of the corpus's own printed objects</em>, not inside the chain, and the chain is unaffected. It is the same class of finding as the register's existing record that the table's $R''(R_{0})$ entry does not reproduce either.</p>
+<h2 id="10-verdict">10. Verdict</h2>
+<p><strong>The register asked whether S36 keeps its number. It does, and the reason is that the derivation carries an audit S35 does not: what the ladder imports, what it defines, what it gets wrong on the page, and what it never uses.</strong> The three-ladder split of §10.6 stands.</p>
+<p><strong>The ladder, in one line: built from the corpus's premises except for one postulate, one textbook distribution and one rearranged definition; exact wherever it can be checked symbolically; and completely independent of the pulsation.</strong></p>
+<p><strong>Four findings, all recomputed.</strong> (1) <strong>The average is a no-op</strong>: $R^{5}\theta^{5}$ is a constant of the motion by (245), so (253) averages a $\tau$-independent integrand, and the pulsation plays no part in the electromagnetic force. (2) <strong>$x_{1}$ is exact</strong>, not fitted: the coefficient identity reduces to $16^{1/4} = 2$, and both routes give $1{,}9209$. (3) <strong>The $2\pi$ is a collapsed rung</strong>, not a physics error: the force rung is $\frac{4\pi^{2}}{3}ch$, dimensionally a force times an area at $1{,}024756\times10^{-20}$ cgs, and the $2\pi$ is the $h \to \hbar$ of the coupling; which of the two printed pages carries which prefactor is still open. (4) <strong>The ladder's only free number is $\gamma$</strong>, and therefore $\beta$, and therefore the lepton spectrum — so its correspondence is inherited (S34, S35, S37), and its universality across leptons is not (S42).</p>
+<p><strong>Tag: the ladder [MATH], the postulate that feeds it [SPEC], the verdict inherited from S35. Rule R3 honours its limit: the two defects whose resolution needs the printed page — (264)'s prefactor and the graph-1 temperature column — are recorded as open, not resolved.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>The register's S36 exists to carry the full from-first-principles derivation of the ladder (246)–(264), and this article writes it: the photon count from the closed-universe volume, the geometric mean cross-section $\overline{\sigma} = \pi R^{2}/2$ with $k = \pi/2$ verified as an exact integral, the per-photon force $h\nu^{2}/c$ from the exchange's own kinematics, the Planck substitution and the change of variable to $x = h\nu/K\theta$, the two imported identities (the radiation constant and Planck's law), the assembly into $\overline{F}r^{2} = \frac{4\pi^{2}}{3}ch(15\gamma/8\pi^{5})^{5/4}I$, and the evaluation.</p>
+<p><strong>Its four results.</strong> The time average of (253) is a no-op, because (245) makes $R^{5}\theta^{5}$ a constant of the motion, so the model's pulsation never enters its own electromagnetic force. The closed form (261) is exact, its coefficient identity reducing to $16^{1/4} = 2$. The $2\pi$ of (264) is the $h \to \hbar$ of the final rung, so the printed line collapses two rungs rather than misstating one. And the ladder's only free number is $\gamma$, hence $\beta$, hence the measured lepton spectrum — which is why its agreement with $1/137$ is inherited rather than achieved (S34, S35, S37), and why the charge it computes is one number for every éon (S42).</p>
+<p><strong>Its cost, stated once:</strong> the electromagnetic model of the lepton rests on a single postulate, (245), which ties the internal blackbody temperature to the pulsating radius. Everything else in the ladder is geometry, counting, algebra or textbook thermodynamics — and the chain reproduces the corpus's printed $\alpha$ exactly from the corpus's printed inputs.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$, $\theta$</td>
+<td>the leptonic micro-universe's spatial radius and internal blackbody temperature</td>
+</tr>
+<tr>
+<td>$n_{\nu}d\nu$</td>
+<td>number density of photons with frequency in $d\nu$</td>
+</tr>
+<tr>
+<td>$\overline{\sigma}$, $k$</td>
+<td>mean cross-section $\pi R^{2}/2$ and its coefficient $k = \pi/2$</td>
+</tr>
+<tr>
+<td>$\nu_{1}$, $\lambda_{1}$</td>
+<td>cavity cut-off, $\nu_{1} = c/2\pi R$, $\lambda_{1} = 2\pi R$</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>Boltzmann's constant (the corpus's $K$; its $k_{0}$ is a typo for $K\theta$)</td>
+</tr>
+<tr>
+<td>$a$</td>
+<td>radiation constant, $4\sigma/c$</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>the <em>Système L</em>'s blackbody coefficient, $-1{,}7\times10^{-39}$ cgs</td>
+</tr>
+<tr>
+<td>$\gamma$</td>
+<td>$-c\beta/h$, the ladder's only free number</td>
+</tr>
+<tr>
+<td>$x_{1}$</td>
+<td>$h\nu_{1}/K\theta$, the integral's lower limit, $1{,}92$</td>
+</tr>
+<tr>
+<td>$I$</td>
+<td>$\int_{1{,}92}^{\infty}x^{4}/(e^{x}-1)dx$, recomputed $23{,}4323$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S35</strong> <code>charon-s35-alpha-recomputed.md</code> — the number and the verdict; the flagship this article supplies the derivation for, and the owner of the four-row arithmetic grid.</li>
+<li><strong>S34</strong> <code>charon-s34-the-input-output-ledger.md</code> — the status of every constant, and of $\beta$ as an input.</li>
+<li><strong>S37</strong> <code>charon-s37-the-beta-gamma-chain.md</code> — where $\gamma$ comes from, in closed form.</li>
+<li><strong>S31</strong> <code>charon-s31-the-chi-squared-well.md</code> — the same chain's role in the <em>Système L</em>'s residual.</li>
+<li><strong>S42</strong> <code>charon-s42-leptons-as-eons.md</code> — the consequence drawn from §4: nothing in the ladder depends on which éon is considered.</li>
+<li><strong>S20</strong> <code>charon-s20-the-eon-radius-spectrum.md</code> — the owner of RC 052's graph-1 table, to which §9's discrepancy is filed.</li>
+<li><strong>S6</strong> — rules R2, R3 and R6, applied in §8 and §10.</li>
+<li>Corpus: Esp 059 §18.1, Esp 060 §18.2, Esp 061 (the ladder), Esp 062 §18.2–18.3; RC 052 §3 for the graph-1 table.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

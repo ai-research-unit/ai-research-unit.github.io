@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The $\beta$–$\gamma$ Chain — What Sets the Coupling in the Charon Corpus, and the Closed Form Behind It — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-math0math1-chain-what-sets-the-coupling-in-the-charon-corpus-and-the-closed-form-behind-it"><strong>The $\beta$–$\gamma$ Chain — What Sets the Coupling in the Charon Corpus, and the Closed Form Behind It</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The companion article S35 recomputed the Charon corpus's derivation of the fine-structure constant and found that it holds: the corpus's printed $\alpha = 7{,}65\times10^{-3}$ comes back exactly from its own printed inputs, with an honest agreement of $+3{,}6\,\%$ on the coupling and $+1{,}8\,\%$ on the charge. It also found that the model has one input worth watching, the constant $\beta$, on which the coupling depends as $\alpha \propto \beta^{5/4}$ exactly — so that one significant figure in $\beta$ fixes the coupling to within 4 %. S35 could say no more about $\beta$, because $\beta$ arrives in the $\alpha$ chain by assertion: <em>"obtenue par la résolution du Système $L$"</em>, obtained by solving the <em>Système L</em>.</p>
+<p><strong>This article traces $\beta$, and the tracing changes the picture.</strong> $\beta$ is <strong>not a free parameter and not a fitted one</strong>: the corpus gives it in closed form, and the closed form contains nothing but the three charged-lepton masses along with $h$ and $c$. The corpus's lepton equations $L7$, $L8$ and $L16$ — quoted at Esp 056 and combined at Esp 057 — yield $\beta$ exactly, and the same closed form is printed at RC (3-68). The result of the tracing is a <strong>one-line expression for the corpus's whole $\alpha$ claim</strong>:</p>
+<p>$$\alpha \;\approx\; \frac{1}{4\pi^{3}}\cdot\frac{\tau - 2\mu + m}{\tau - \mu},$$</p>
+<p><strong>a pure number built from $4\pi^{3}$ and the charged-lepton mass ratios.</strong> That is what the corpus's electromagnetic model, its <em>Système L</em> and its lepton quantisation condition amount to when they are put together and simplified. The article derives it, checks it against both books, and asks what it is worth.</p>
+<p><strong>Four further findings, each stated where it belongs and gathered here so that the reader knows what is coming.</strong></p>
+<ol>
+<li><strong>$\beta$ has an exact closed form in the lepton masses</strong>, $\beta = -h(1-\varepsilon)/(4\pi^{3}c)$ with $\varepsilon = (\mu-m)/(\tau-\mu)$ — and $\gamma = -c\beta/h$ is therefore the pure dimensionless number $(1-\varepsilon)/(4\pi^{3})$.</li>
+<li><strong>The corpus's second book independently confirms S35's $2\pi$ correction.</strong> RC 055 derives the same force with the coefficient $4\pi^{2}/3$, where Esp's printed (264) has $8\pi^{3}/3$. The two are the same stage of the same calculation, and RC's is the correct one.</li>
+<li><strong>The corpus's three printed $\gamma$ values are explained.</strong> Esp's $7{,}716\times10^{-3}$ is reproduced exactly — using the corpus's own rounded $c = 3\times10^{10}$ and $h = 6{,}61\times10^{-27}$.</li>
+<li><strong>A fitted shape parameter.</strong> RC 055 §4 introduces an eccentricity $E = 0{,}36$ chosen to make the charge come out exactly, and its own arithmetic does not close. This is the corpus's second instance of a post-hoc fit, and it is a stronger one than $\beta$.</li>
+</ol>
+<p><strong>Conventions.</strong> The corpus uses $\alpha$ and $\beta$ for two different pairs of quantities, and the collision matters. In the <strong>lepton sector</strong> — Esp 056–058, RC 051 — $\alpha$ is a mass, $-1{,}47\times10^{-25}$ g, and $\beta$ is a mass-length, $-1{,}7\times10^{-39}$ g cm; they are coefficients of the evolution equation and of $D_E = \beta c^{2}/R^{4}$. In the <strong>electromagnetic chain</strong> of Esp (245)–(268), $\alpha$ is the fine-structure constant $e^{2}/\hbar c$. <strong>This article writes $\alpha_{\mathrm{f}}$ for the fine-structure constant</strong> wherever the two could be confused, and $\beta$ always means the lepton-sector mass-length. Masses: $m$ is the electron, $\mu$ the muon and $\tau$ the tau, in cgs. Values quoted from the corpus keep the corpus's decimal comma.</p>
+<h2 id="what-the-corpus-says-math51-is">What the Corpus Says $\beta$ Is</h2>
+<p>$\beta$ appears in the corpus twice over, and both appearances are needed.</p>
+<p><strong>On the electromagnetic side</strong>, (245) defines it implicitly through the radiation energy density,</p>
+<p>$$D_{E} = \frac{\beta c^{2}}{R^{4}} = \pm a\theta^{4} \qquad (\text{Esp } 245),$$</p>
+<p>so that $\beta$ is the coefficient that fixes the black-body energy as a function of the lepton radius. Dimensionally this makes $\beta$ a mass-length, g cm.</p>
+<p><strong>On the lepton side</strong>, $\beta$ is a coefficient of the evolution equation, and RC (3-68) prints it alongside its two companions:</p>
+<p>$$(3\text{-}68)\quad
+\begin{cases}
+\alpha = \dfrac{m+\mu}{4\pi^{2}} - \dfrac{h}{\pi^{2}c^{2}T_{0}} = -1{,}46\cdot10^{-25}\ \mathrm{g},\\[2mm]
+\beta = \dfrac{(\mu-m)c^{2}T_{0} - 2h}{8\pi^{3}c} = -1{,}74\cdot10^{-39}\ \mathrm{g}\cdot\mathrm{cm},\\[2mm]
+T_{0} = \dfrac{2h}{c^{2}(\tau-\mu)} = 4{,}93\cdot10^{-24}\ \mathrm{s}.
+\end{cases}$$</p>
+<p><strong>The two $\beta$'s are the same quantity.</strong> Esp's $D_E = \beta c^{2}/R^{4}$ makes $\beta$ a mass-length, which is exactly RC's unit; Esp adopts $-1{,}7\times10^{-39}$ and RC prints $-1{,}74\times10^{-39}$; and the corpus's own solution table at Esp 058 lists $\beta = -1{,}7\times10^{-39}$ beside $\alpha = -1{,}472\times10^{-25}$, the same pair RC's (3-68) prints. <strong>So the corpus has one $\beta$, quoted to two figures, and RC (3-68) is where it comes from.</strong></p>
+<p><strong>And RC (3-68) is a closed form, not a fit.</strong> Its right-hand sides contain $m$, $\mu$, $\tau$, $h$, $c$ and nothing else. That is the whole of this article's finding in one line, and the remainder of the article is the derivation, the simplification and the consequences.</p>
+<h2 id="math71-is-not-a-free-parameter-math72-math73-and-math74">$\beta$ Is Not a Free Parameter: $L7$, $L8$ and $L16$</h2>
+<h3 id="the-three-equations">The Three Equations</h3>
+<p>The <em>Système L</em> is stated at Esp 056 as a numbered list, and three of its entries do all the work here. In the corpus's notation,</p>
+<p>$$L7:\quad \int_{0}^{T} 2\pi^{2}c^{2}\left(\alpha - \frac{\beta}{R}\right)dt + h = mc^{2}T,$$</p>
+<p>$$L8:\quad \int_{0}^{T} 2\pi^{2}c^{2}\left(\alpha + \frac{\beta}{R}\right)dt + 2\left(n + \tfrac{1}{2}\right)h = \tau_{n}c^{2}T,$$</p>
+<p>$$L16:\quad \int_{0}^{T}\frac{dt}{R} = \frac{2\pi}{c},$$</p>
+<p>with $n = 0$ the electron, $n = 1$ the muon and $n = 2$ the tau. <strong>Esp 057 §2 states the method in one sentence:</strong> <em>"on commence par calculer $\alpha$ par addition de $L7$ et $L8$, puis $\beta$ par soustraction de $L7$ à $L8$, en se servant de $L16$."</em> The addition gives $\alpha$, the subtraction gives $\beta$, and $L16$ supplies the integral that closes both.</p>
+<h3 id="the-difference-gives-math91">The Difference Gives $\beta$</h3>
+<p>Subtracting $L7$ from $L8$ at $n = 1$ — the muon — the $\alpha$ terms cancel and the two powers of $R$ add:</p>
+<p>$$\int_{0}^{T}4\pi^{2}c^{2}\,\frac{\beta}{R}\,dt + 2\left(\tfrac{3}{2}\right)h - h = \mu c^{2}T \quad\Longrightarrow\quad 4\pi^{2}c^{2}\beta\int_{0}^{T}\frac{dt}{R} + 2h = \mu c^{2}T - mc^{2}T .$$</p>
+<p>With $L16$, $\int dt/R = 2\pi/c$, so the first term is $8\pi^{3}c\beta$ and</p>
+<p>$$\boxed{\ \beta = \frac{(\mu-m)c^{2}T - 2h}{8\pi^{3}c}\ }\qquad\text{— RC (3-68), exactly.}$$</p>
+<p><strong>The corpus's closed form is $L8 - L7$ with $L16$. Nothing is fitted, and no further input enters.</strong> <strong>So $eta$ is not fitted and not free: it is a closed form in the three lepton masses.</strong></p>
+<h3 id="the-addition-gives-math105-and-the-lepton-pair-gives-math106">The Addition Gives $\alpha$, and the Lepton Pair Gives $T$</h3>
+<p>The same two equations yield the corpus's lepton-sector $\alpha$. Adding $L7$ and $L8$ at $n = 1$, the $\beta$ terms cancel:</p>
+<p>$$\int_{0}^{T}4\pi^{2}c^{2}\alpha\,dt + h + 3h = (m+\mu)c^{2}T \quad\Longrightarrow\quad \alpha = \frac{m+\mu}{4\pi^{2}} - \frac{h}{\pi^{2}c^{2}T},$$</p>
+<p><strong>again RC (3-68) exactly.</strong> And the period follows from $L8$ taken at $n = 2$ and $n = 1$, where the $\alpha$ and $\beta$ terms cancel identically and only the quantisation terms survive:</p>
+<p>$$2\left(2+\tfrac{1}{2}\right)h - 2\left(1+\tfrac{1}{2}\right)h = (\tau-\mu)c^{2}T \quad\Longrightarrow\quad T_{0} = \frac{2h}{c^{2}(\tau-\mu)} .$$</p>
+<p><strong>This is the third line of (3-68), and the corpus's own note at Esp 057 says exactly this</strong> — <em>"$L8$, considéré avec $n=1$ et $n=2$, donne aussi $T = 2h/c^{2}(\tau-\mu)$."</em></p>
+<p><strong>So all three of RC (3-68)'s outputs are $L7$, $L8$ and $L16$.</strong> Evaluated with the corpus's 1983 masses ($m = 9{,}11\times10^{-28}$, $\mu = 1{,}884\times10^{-25}$, $\tau$ inferred at $3{,}179\times10^{-24}$ g from the corpus's own $T_{0}$), the three reproduce the corpus's printed values:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>(3-68) output</th>
+<th>corpus prints</th>
+<th>recomputed</th>
+<th>agreement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_{0}$</td>
+<td>$4{,}93\times10^{-24}$ s</td>
+<td>$4{,}9301\times10^{-24}$ s</td>
+<td>exact to the printed figures</td>
+</tr>
+<tr>
+<td>$\alpha$ (lepton sector)</td>
+<td>$-1{,}46\times10^{-25}$ g</td>
+<td>$-1{,}4672\times10^{-25}$ g</td>
+<td>$0{,}5\,\%$</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>$-1{,}74\times10^{-39}$ g cm</td>
+<td>$-1{,}6704\times10^{-39}$ g cm</td>
+<td><strong>$4{,}0\,\%$</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first two close, and the third does not.</strong> $\beta$ is the corpus's own formula evaluated at the corpus's own masses, and it misses the printed $-1{,}74$ by 4 %. This is the discrepancy the scan-risk register already records; this article confirms it and now explains what it costs, in the section on the eccentricity and in the one on the coupling.</p>
+<h2 id="the-closed-form-exactly">The Closed Form, Exactly</h2>
+<p>The three lines of (3-68) simplify further, and the simplification is worth doing because it turns the corpus's numerical claim into an algebraic one.</p>
+<p><strong>Eliminate $T_{0}$ from $\beta$.</strong> Substituting $T_{0} = 2h/[c^{2}(\tau-\mu)]$ into $\beta = [(\mu-m)c^{2}T_{0} - 2h]/(8\pi^{3}c)$,</p>
+<p>$$(\mu-m)c^{2}T_{0} = \frac{2h(\mu-m)}{\tau-\mu}, \qquad
+\beta = \frac{2h\left[\dfrac{\mu-m}{\tau-\mu} - 1\right]}{8\pi^{3}c} = -\frac{h}{4\pi^{3}c}\left(1-\varepsilon\right),
+\qquad \varepsilon \equiv \frac{\mu-m}{\tau-\mu}.$$</p>
+<p><strong>So the corpus's $\beta$ is $h/(4\pi^{3}c)$, times a single lepton-mass ratio.</strong> Verified identically: the two expressions for $\beta$ agree to all digits of the working precision.</p>
+<p><strong>The ratio is small, and that is the point.</strong> With the measured masses $\varepsilon = 0{,}0627$, so</p>
+<p>$$\beta = -1{,}7821\times10^{-39}\times(1-0{,}0627) = -1{,}6704\times10^{-39}\ \mathrm{g\ cm},$$</p>
+<p>against $-h/(4\pi^{3}c) = -1{,}7821\times10^{-39}$. <strong>The corpus's $\beta$ is a combination of $h$ and $c$ alone, corrected by 6 % for the lepton spectrum.</strong> That is why it is so insensitive to the masses: recomputing $\beta$ with modern CODATA lepton masses instead of the corpus's 1983 values shifts it by <strong>$0{,}02\,\%$</strong>, from $-1{,}6704$ to $-1{,}6700\times10^{-39}$.</p>
+<p><strong>This settles S35's open question about the provenance of $\beta$.</strong> S35 could only say that $\beta$ comes from the <em>Système L</em> and that the <em>Système L</em>'s seeds include $e$. The tracing shows something sharper and, for the corpus, better: <strong>$\beta$ does not depend on $e$ at all.</strong> It is a function of $m$, $\mu$, $\tau$, $h$ and $c$. The charge $e$ is a seed of the <em>Système L</em>, but it is not a seed of $\beta$.</p>
+<h2 id="math174-and-why-the-corpuss-three-printed-values-differ">$\gamma$, and Why the Corpus's Three Printed Values Differ</h2>
+<p>$\gamma$ is defined at Esp (263) and RC (3-103) as a rescaling of $\beta$:</p>
+<p>$$\gamma = -\frac{c\beta}{h} \qquad (\text{Esp }263,\ \text{RC }3\text{-}103).$$</p>
+<p><strong>Substituting the closed form gives $\gamma$ exactly, with no dimensional input left:</strong></p>
+<p>$$\gamma = -\frac{c}{h}\cdot\left[-\frac{h}{4\pi^{3}c}(1-\varepsilon)\right] = \frac{1-\varepsilon}{4\pi^{3}} = \frac{\tau-2\mu+m}{4\pi^{3}(\tau-\mu)} .$$</p>
+<p><strong>Verified identically.</strong> Two consequences, and the second is the more important.</p>
+<p><strong>First, $\gamma$ is dimensionless in every unit system, and not by cancellation of cgs.</strong> The corpus's own quantity $c\beta/h$ has dimensions $(\mathrm{cm/s})(\mathrm{g\ cm})/(\mathrm{g\ cm^{2}/s})$, which is $1$ — the units cancel identically, in cgs, SI or any other system, because $\beta$ and $h/c$ carry the same dimension. <strong>The register's note that $\gamma$ "lands near $\alpha$ by a coincidence of cgs bookkeeping" is therefore wrong and has been corrected.</strong> Both $\gamma$ and $\alpha_{\mathrm{f}}$ are pure numbers, and their nearness is a statement about numbers, not about units. The corrected account of the nearness is in the next section.</p>
+<p><strong>Second, $\gamma$ depends on the lepton spectrum through one ratio, and barely at all.</strong> With $\varepsilon = 0{,}0627$, $1-\varepsilon = 0{,}9373$ and</p>
+<p>$$\gamma = \frac{0{,}9373}{4\pi^{3}} = \frac{0{,}9373}{124{,}025} = 7{,}5574\times10^{-3}.$$</p>
+<p><strong>Now the three printed values are all explained.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\gamma$</th>
+<th>value</th>
+<th>where it comes from</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the exact closed form</td>
+<td>$7{,}5574\times10^{-3}$</td>
+<td>$(1-\varepsilon)/(4\pi^{3})$ with measured masses</td>
+</tr>
+<tr>
+<td><strong>Esp (263)'s printed value</strong></td>
+<td>$7{,}716\times10^{-3}$</td>
+<td>$-c\beta/h$ with the corpus's <strong>rounded table values</strong> $c = 3\times10^{10}$, $h = 6{,}61\times10^{-27}$ and $\beta = -1{,}7\times10^{-39}$ — <strong>reproduced exactly</strong></td>
+</tr>
+<tr>
+<td>the same with CODATA $c$, $h$</td>
+<td>$7{,}6915\times10^{-3}$</td>
+<td>$-c\beta/h$ with $\beta = -1{,}7\times10^{-39}$ — S35's value</td>
+</tr>
+<tr>
+<td>RC (3-103)'s printed value</td>
+<td>$7{,}72\times10^{-3}$</td>
+<td>the same formula with RC's own rounded constants</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So S35's unexplained $0{,}3\,\%$ gap between Esp's $7{,}716\times10^{-3}$ and the CODATA recomputation $7{,}6915\times10^{-3}$ is the corpus's rounding of $c$ and $h$, and nothing else.</strong> Esp (263) is not arithmetically wrong; it is arithmetically right at the precision of the table it used.</p>
+<p><strong>One caution, which the $\alpha$ chain makes necessary.</strong> The three values are not interchangeable, because the coupling depends on $\gamma^{5/4}$: the exact $\gamma$ is $2{,}1\,\%$ below Esp's printed $\gamma$, and that difference propagates into the coupling as $1{,}25\times2{,}1\,\% = 2{,}6\,\%$. <strong>An article that mixes the printed $\gamma$ with the closed-form $\beta$ will misstate the model's agreement by a couple of points</strong>, in the corpus's favour. The four-row grid of S35 is the safe form, and this is the reason.</p>
+<h2 id="a-second-book-and-the-disappearance-of-the-math221">A Second Book, and the Disappearance of the $2\pi$</h2>
+<p><strong>The corpus derives the same force twice, in two books, and the two versions settle S35's $2\pi$ question.</strong></p>
+<p>S35 found that Esp's printed (264) carries a spurious factor $2\pi$: as transcribed it reads $\overline{F} = (8\pi^{3}ch/3r^{2})(15\gamma/8\pi^{5})^{5/4}\int$, where the re-derivation gives $4\pi^{2}ch/3$ at that stage, the corpus's own (266) confirming $4\pi^{2}/3$ by its prefactor $8\pi^{3}/3 = (4\pi^{2}/3)(2\pi)$. The claim was made on internal consistency, and S35 could not check it against the printed page.</p>
+<p><strong>RC 055 §3 derives the same quantity with the coefficient printed correctly.</strong> Its equation (3-101) reads</p>
+<p>$$(3\text{-}101)\quad \overline{F} = \frac{4\pi^{2}}{3}\cdot\frac{1}{h^{4}c^{4}}\cdot\frac{K^{5}}{r^{2}}\int_{0}^{T_{0}}R^{5}\theta^{5}\int_{1{,}91}^{\infty}\frac{x^{4}}{e^{x}-1}\,dx\,d\tau,$$</p>
+<p><strong>with the coefficient $4\pi^{2}/3$ — the value S35's re-derivation requires.</strong> RC then collapses $K^{5}$ and $R^{5}\theta^{5}$ into the same $(15\gamma/8\pi^{5})^{5/4}$ of the same two constants, and the $h \to \hbar$ step introduces the $2\pi$ that turns $4\pi^{2}/3$ into $8\pi^{3}/3$ — which is what RC's (3-104) and (3-106) then carry. <strong>So RC's chain contains the $2\pi$ once, where it belongs, and Esp's (264) as transcribed contains it twice.</strong></p>
+<p><strong>This is an independent corroboration, and it is the strongest kind available without the printed page.</strong> The question S35 left open was whether Esp's (264) is a misprint in the 1983 book or a slip in the recovered text. RC 055 does not answer that directly, but it establishes beyond arithmetic doubt that <strong>the $8\pi^{3}ch/3$ reading of (264) is not what the corpus's own calculation intends</strong>, because the same author, in the same programme, wrote $4\pi^{2}/3$ at the same stage. The correction stands, and the remaining question — misprint or transcription — stays open.</p>
+<p><strong>The two books also disagree in their numbers, harmlessly.</strong> RC's integral is $23{,}46$ from the lower limit $x_l = 1{,}91$, where Esp's is $23{,}6$ from $x_1 = 1{,}92$; RC's $\gamma$ is $7{,}72\times10^{-3}$ where Esp's is $7{,}716\times10^{-3}$; and RC's printed result is $\alpha_{\mathrm{f}} = 7{,}60\times10^{-3}$ against Esp's $7{,}65\times10^{-3}$. Recomputed, RC's combination gives $7{,}609\times10^{-3}$, reproducing its printed value. <strong>And RC states its own error the same way Esp does</strong> — <em>"à $1{,}9$ pour cent près"</em>, with (3-108) comparing the <strong>charges</strong> $e_{\mathrm{calc}} = 4{,}89\times10^{-10}$ and $e_{\mathrm{obs}} = 4{,}80\times10^{-10}$, whose ratio is $+1{,}88\,\%$, while the coupling ratio printed immediately above is $+4{,}11\,\%$. <strong>Both books state the charge error, and neither states the coupling error, which is twice as large.</strong> S35's central distinction therefore holds for the corpus as a whole and not for one page of it.</p>
+<h2 id="the-math255-chain-in-one-line">The $\alpha$ Chain in One Line</h2>
+<p><strong>The closed form of $\gamma$, substituted into S35's final equation, collapses the corpus's $\alpha$ claim to a single expression.</strong> From S35,</p>
+<p>$$\alpha_{\mathrm{f}} = \frac{8\pi^{3}}{3}\left(\frac{15\gamma}{8\pi^{5}}\right)^{5/4}I, \qquad \gamma = \frac{\tau-2\mu+m}{4\pi^{3}(\tau-\mu)}, \qquad I = 23{,}4323 .$$</p>
+<p>Evaluating the prefactor, one finds</p>
+<p>$$\alpha_{\mathrm{f}} = 0{,}9863\,\gamma = 0{,}9863\cdot\frac{1}{4\pi^{3}}\cdot\frac{\tau-2\mu+m}{\tau-\mu},$$</p>
+<p><strong>verified: the ratio of the model's output to $\gamma$ is $0{,}986254$, so the corpus's entire electromagnetic chain is, to $1{,}4\,\%$, the statement</strong></p>
+<p>$$\boxed{\ \alpha_{\mathrm{f}} \;\approx\; \frac{1}{4\pi^{3}}\cdot\frac{\tau-2\mu+m}{\tau-\mu}\ }$$</p>
+<p><strong>— a pure number times a ratio of charged-lepton masses, with no measured constant anywhere in it except the masses.</strong></p>
+<p><strong>Three things follow, and they are the article's assessment of the claim.</strong></p>
+<p><strong>First, the scale of the claim is a pure number.</strong> Since $\varepsilon = 0{,}0627$ is small, the model is essentially asserting</p>
+<p>$$\alpha_{\mathrm{f}} \approx \frac{1}{4\pi^{3}} = \frac{1}{124{,}03} \quad\text{against the measured}\quad \frac{1}{137{,}04},$$</p>
+<p>and then correcting the $+10{,}5\,\%$ miss down to $+2\,\%$ through the lepton ratio and the prefactor. <strong>The corpus's electromagnetic model is, at bottom, a claim that $\alpha$ is $1/4\pi^{3}$ — the reciprocal of $4\pi^{3}$, a number built out of the geometry of the interaction — brought closer by the lepton spectrum.</strong> Whether that is deep or numerological is a judgement the reader can now make on the correct evidence, which is this formula and not the printed $2{,}3\,\%$.</p>
+<p><strong>Second, the fit's depth is now visible and it is one formula against one number.</strong> The model maps two measured dimensionless ratios — $m/\tau$ and $\mu/\tau$, or equivalently the single combination $\varepsilon$ — onto one measured dimensionless number, $\alpha_{\mathrm{f}}$. There is one relation and one target, and the relation's <em>form</em> comes from the corpus's own axioms: the $\pi^{2}$'s from $L7$ and $L8$, the $2\pi$ from $L16$, the $4\pi^{3}$ from the combination, the $\tfrac{5}{4}$ power from the Stefan–Boltzmann chain, and the $23{,}4323$ from a universal integral. <strong>The formula could have been otherwise in every one of those places, and it succeeds to $2$–$3\,\%$.</strong> That is not a derivation of $\alpha$, and it is not nothing: it is a non-trivial numerical relation between the charged-lepton spectrum and the electromagnetic coupling, produced by a specific and independently motivated construction.</p>
+<p><strong>Third, and this is where S35's verdict needs refining.</strong> S35 said that the comparison at the end of the chain is a consistency check of the <em>Système L</em>'s own seed set, because both sides trace to the same seeds. <strong>The tracing corrects that in the corpus's favour.</strong> $\beta$ depends on $m$, $\mu$ and $\tau$ and <strong>not on $e$</strong>; the model's side of the comparison therefore uses no electromagnetic quantity at all. The comparison is between <strong>the charged-lepton spectrum</strong> and <strong>$\alpha_{\mathrm{f}}$</strong>, two independently measured sectors — and $\alpha_{\mathrm{f}}$ enters the lepton masses only through radiative corrections three orders below the agreement being claimed. <strong>So the chain is not circular in the way S35 said.</strong> What it is, is a formula of the corpus's own construction that takes one measured sector and reproduces an independent measured number to $2$–$3\,\%$.</p>
+<p><strong>And that changes the shape of the verdict without softening it.</strong> S35 concluded that the result is a fit. The tracing shows the more precise statement: <strong>the result is not a fit to a free parameter, because there is no free parameter — but neither is it a derivation, because the formula is postulated rather than derived.</strong> The corpus's own axioms, $L7$, $L8$ and $L16$, are chosen; $\alpha$ follows from them; and the agreement is the agreement of those axioms with nature. That is the honest description, and it is a genuine improvement on "fitted": a postulated law that reproduces an independent constant to 2 % is a candidate, not a curve-fit.</p>
+<p><strong>One numerical consequence of the tracing, in the corpus's favour.</strong> Esp adopts $\beta = -1{,}7\times10^{-39}$ for the $\alpha$ chain, but its own <em>Système L</em> and RC's own closed form give $-1{,}6704\times10^{-39}$. Carrying the derived value through S35's formula gives $\alpha_{\mathrm{f}} = 7{,}4535\times10^{-3}$, an error of $+2{,}11\,\%$ on the coupling against $+4{,}38\,\%$ for the adopted value. <strong>Charon's own formula was worth two percentage points, and he did not collect them</strong>, because he rounded $\beta$ to one significant figure before using it.</p>
+<h2 id="the-eccentricity-a-fitted-shape-parameter-and-the-gap-in-it">The Eccentricity: a Fitted Shape Parameter, and the Gap in It</h2>
+<p><strong>RC 055 §4 is the corpus's clearest instance of tuning, and it is not $\beta$.</strong></p>
+<p>Having obtained $e_{\mathrm{calc}} = 4{,}89\times10^{-10}$ against $e_{\mathrm{obs}} = 4{,}80\times10^{-10}$, RC does not leave the $1{,}9\,\%$ standing. It attributes it to the spherical symmetry of the model, and repairs it by making the éon a spheroid:</p>
+<p>$$(3\text{-}110)\quad \overline{\sigma} = \frac{\pi R^{2}}{2}(1-E^{2})^{1/2} = \frac{\pi rR}{2}, \qquad k \equiv \frac{r}{R} = (1-E^{2})^{1/2},$$</p>
+<p>and then states that <em>"le même calcul que ci-dessus, utilisant cette nouvelle section efficace (3-110), fournit alors la valeur expérimentale exacte de la charge $e$ pour"</em></p>
+<p>$$(3\text{-}111)\quad \frac{r}{R} = 0{,}933, \qquad (3\text{-}112)\quad E = 0{,}36 .$$</p>
+<p><strong>The structure is a fit, and RC presents it as one.</strong> The eccentricity is not derived; it is chosen so that the charge comes out exactly. This is a <strong>free shape parameter introduced to absorb a numerical disagreement</strong>, and it is a stronger instance of the phenomenon than $\beta$ — because $\beta$, though it needed tracing, turned out to be determined.</p>
+<p><strong>And on the flat reading of (3-110) the arithmetic does not close.</strong> Since the force is proportional to the mean cross-section, the eccentricity multiplies $\alpha_{\mathrm{f}}$ by $k$; to bring $e$ from $4{,}89$ to $4{,}80\times10^{-10}$ exactly requires $k = 0{,}9578$, and to bring $\alpha_{\mathrm{f}}$ to $1/137$ exactly requires $k = 0{,}9593$. <strong>RC prints $0{,}933$, which is $2{,}7\,\%$ away, and would put $e$ at $4{,}74\times10^{-10}$ — below the observed value, turning a $+1{,}9\,\%$ error into a $-1{,}3\,\%$ one.</strong></p>
+<p><strong>Open, and worth one sentence of honest statement.</strong> Either the eccentricity enters the force somewhere besides (3-110) — a spheroid's volume scales as $k^{2}$ and would give a different dependence — or the printed $0{,}933$ is a slip for $\approx0{,}96$. On the reading of (3-110) the second is the likelier; but the article does not claim it, because the dependence of the corpus's force on the éon's shape is the corpus's own to define and (3-110) may not be the whole of it. <strong>What is not in doubt is the structural finding: the corpus's best agreement is obtained by fitting a shape.</strong> The eccentricity is recorded here so that the $1{,}9\,\%$ of RC and the $2{,}3\,\%$ of Esp are not quoted as if no parameter had been spent on them.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The corpus's $\beta$ is not a free parameter, and the tracing settles S35's open question.</strong> $\beta$ is the difference $L8 - L7$ of the <em>Système L</em> with $L16$ supplying the closing integral, and the same closed form is printed at RC (3-68): $\beta = [(\mu-m)c^{2}T_{0} - 2h]/(8\pi^{3}c)$ with $T_{0} = 2h/[c^{2}(\tau-\mu)]$. Evaluated at the corpus's own masses it gives $-1{,}6704\times10^{-39}$ g cm against the printed $-1{,}74\times10^{-39}$ — the formula and the printed figure disagree by $4{,}0\,\%$, which is the discrepancy the scan-risk register records and which this article now prices.</p>
+<p><strong>The closed form simplifies to two exact expressions.</strong> $\beta = -h(1-\varepsilon)/(4\pi^{3}c)$ and $\gamma = -c\beta/h = (1-\varepsilon)/(4\pi^{3}) = (\tau-2\mu+m)/(4\pi^{3}(\tau-\mu))$, with $\varepsilon = (\mu-m)/(\tau-\mu) = 0{,}0627$ — both verified identically. <strong>So $\beta$ is $h/(4\pi^{3}c)$ corrected by 6 % for the lepton spectrum, and $\gamma$ is a pure dimensionless number built from $4\pi^{3}$ and the charged-lepton mass ratios.</strong> $\gamma$'s units cancel identically in any system, which corrects the register's "cgs bookkeeping" note: the nearness of $\gamma$ to $\alpha_{\mathrm{f}}$ is a statement about numbers. Esp's printed $7{,}716\times10^{-3}$ is <strong>reproduced exactly</strong> from the corpus's rounded table values $c = 3\times10^{10}$ and $h = 6{,}61\times10^{-27}$, which is the whole of the $0{,}3\,\%$ gap S35 could not explain.</p>
+<p><strong>The corpus's second book confirms S35's $2\pi$ correction.</strong> RC 055 §3, deriving the same force, prints the coefficient $4\pi^{2}/3$ at the stage where Esp's (264) carries $8\pi^{3}/3$; RC then introduces the $2\pi$ once, at the $h\to\hbar$ step, and its (3-104) and (3-106) carry $8\pi^{3}/3$. <strong>The corpus's own later calculation requires S35's correction</strong>, and the only question left is whether Esp's slip is in the book or in the recovered text.</p>
+<p><strong>The whole $\alpha$ claim collapses to one line.</strong> $\alpha_{\mathrm{f}} = 0{,}9863\,\gamma$, so the corpus's electromagnetic model, its <em>Système L</em> and its lepton quantisation together assert</p>
+<p>$$\alpha_{\mathrm{f}} \approx \frac{1}{4\pi^{3}}\cdot\frac{\tau-2\mu+m}{\tau-\mu} \approx \frac{1}{4\pi^{3}} = \frac{1}{124{,}03},$$</p>
+<p>corrected down from a $+10{,}5\,\%$ miss to $+2\,\%$ by the lepton ratio and the prefactor. <strong>That is the correct form of the corpus's claim, and it is stated here so that it can be judged.</strong></p>
+<p><strong>S35's verdict is refined, in the corpus's favour.</strong> $\beta$ depends on $m$, $\mu$ and $\tau$ and <strong>not on $e$</strong>, so the model's side of the comparison uses no electromagnetic quantity: the chain relates the charged-lepton spectrum to $\alpha_{\mathrm{f}}$, two independently measured sectors, and is <strong>not</strong> circular as S35 stated. But it is still not a derivation: $L7$, $L8$ and $L16$ are postulated, the $\pi$-powers and the $\tfrac{5}{4}$ power and the integral come from that postulation, and every one of them could have been otherwise. <strong>The precise verdict is therefore neither "a fit to a free parameter" nor "a computation", but this: a postulated law, with no free parameter left in it once the lepton masses are measured, that reproduces an independent constant to 2 %.</strong></p>
+<p><strong>And the corpus's best result was available to it and not taken.</strong> Esp adopts $\beta = -1{,}7\times10^{-39}$ after rounding, where its own <em>Système L</em> gives $-1{,}6704\times10^{-39}$; carrying the derived value gives $+2{,}11\,\%$ on the coupling instead of $+4{,}38\,\%$. <strong>RC 055 §4 then spends a free parameter — an éon eccentricity $E = 0{,}36$, chosen, not derived — to convert the residual into exactness</strong>, and on the flat reading of (3-110) its own printed $r/R = 0{,}933$ does not close, needing $\approx0{,}96$. The eccentricity, not $\beta$, is where the corpus's fitting is visible.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<ul>
+<li><strong>$\alpha$, $\beta$, $T_{0}$</strong> — in the <strong>lepton sector</strong> (Esp 056–058, RC 051, RC (3-68)) these are the evolution-equation coefficients: $\alpha$ a mass ($-1{,}47\times10^{-25}$ g, also the maximum lepton density unit), $\beta$ a mass-length ($-1{,}7\times10^{-39}$ g cm, the coefficient of $D_{E} = \beta c^{2}/R^{4}$), $T_{0}$ the pulsation period ($4{,}93\times10^{-24}$ s). <strong>None of them is a coupling.</strong></li>
+<li><strong>$\alpha_{\mathrm{f}}$</strong> — the fine-structure constant $e^{2}/\hbar c$, the subject of Esp (245)–(268) and RC 055 §3. The collision of the two $\alpha$'s is the corpus's, not this article's; the subscript is added here to remove it.</li>
+<li><strong>$\gamma$</strong> — the rescaled coefficient $\gamma = -c\beta/h$ of Esp (263) and RC (3-103), dimensionless. Exact closed form $\gamma = (1-\varepsilon)/(4\pi^{3})$.</li>
+<li><strong>$\varepsilon$</strong> — the single lepton-spectrum combination $\varepsilon = (\mu-m)/(\tau-\mu)$, equal to $0{,}0627$. This is the <em>only</em> way the lepton masses enter the corpus's $\alpha$ claim.</li>
+<li><strong>$L7$, $L8$, $L16$</strong> — the corpus's lepton quantisation equations: $L7$ and $L8$ are the mass equations for $n$ and the spin term $2(n+\tfrac{1}{2})h$, and $L16$ is the closure relation $\int_{0}^{T}dt/R = 2\pi/c$. Their sum is $\alpha$, their difference is $\beta$, and $L8(n{=}2)-L8(n{=}1)$ is $T_{0}$.</li>
+<li><strong>$k$, $E$</strong> — the éon's shape parameters at RC (3-110)–(3-112): $k = r/R$ the axial ratio and $E$ the eccentricity, with $k = (1-E^{2})^{1/2}$. Introduced at RC 055 §4 as a fit.</li>
+<li><strong>"Reproduced exactly"</strong> — used here in the strict sense: a printed figure recovered to its printed precision from its printed inputs. Esp's $\gamma = 7{,}716\times10^{-3}$ is reproduced exactly this way by the table's rounded $c$ and $h$.</li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><code>UPDATED_CHARON_THEORY_2026_ARTICLE_LIST.md</code>: the S37 entry; §10.1 and §10.3 for the $\alpha$ ladder and the $2\pi$ defect; §15 for the scan-risk note on RC's $\beta = -1{,}74\times10^{-39}$ and the $-1{,}670\times10^{-39}$ from the book's own formula; §16 for what the corpus reaches that established theory does not.</li>
+<li>J. E. Charon, <em>L'Esprit et la Relativité complexe</em> (Albin Michel, Paris, 1983): Esp 056 for the <em>Système L</em> and the equations $L7$, $L8$ and $L16$; Esp 057 §1–§2 for the method (the $11^{6} = 1\,771\,561$-set design, the $\pm10\,\%$ executed search, and the sentence <em>"on commence par calculer $\alpha$ par addition de $L7$ et $L8$, puis $\beta$ par soustraction de $L7$ à $L8$"</em>); Esp 058 for the solution table and the six seeded parameters $h$, $c$, $m$, $\mu$, $\tau_{2}$, $e$; Esp (263) for the printed $\gamma$; Esp (264)–(268) for the $\alpha$ chain.</li>
+<li>J. E. Charon, <em>La Relativité complexe</em> (Albin Michel, Paris, 1987): RC (3-68) for the closed forms of $\alpha$, $\beta$ and $T_{0}$; RC (3-69-1) and (3-69-2) for the existence conditions on $R_{0}$ and $\xi$; RC 055 §3 for the parallel derivation with the coefficient $4\pi^{2}/3$, the integral $23{,}46$ and the printed result $7{,}60\times10^{-3}$; RC 055 §4 for the eccentricity and (3-108)–(3-112).</li>
+<li>S35, <code>charon-s35-alpha-recomputed</code>, for the chain this article completes — the four-row evaluation grid, the charge-versus-coupling rule, and the $2\pi$ defect this article corroborates; S34, <code>charon-s34-the-input-output-ledger</code>, for the seed list and the search window; S36, <code>charon-s36-the-force-integral-246-to-264</code>, for the derivation of the ladder from first principles; S5, <code>charon-s05-notation-and-units</code>, for the corpus's symbols and Hazard 6.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — The Éon Closure Condition and the Golden Ratio (S18) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-eon-closure-condition-and-the-golden-ratio-s18">Charon — The Éon Closure Condition and the Golden Ratio (S18)</h1>
+<p><em>Audits §3.2 and §10.7 of <code>CHARON_IDEAS_AND_CLAIMS.md</code>, against RC ch. III §V.1 and §VI.2 (scans 048, 049, 052).</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The register calls the golden ratio's appearance in the corpus a "singular fact" and "genuine curiosity ... unmotivated ... worth recording, not worth building on", and asks whether the closure condition is forced.</strong> <strong>This article answers that question, and the answer is better than the register expects: the golden ratio is <em>derived</em> — it is the unique positive root of the corpus's closure condition — so it is not numerology.</strong></p>
+<p><strong>And the answer's second half is the finding. The golden ratio is forced <em>by</em> the condition, and the condition is stipulated: it is the corpus's own one-quantum Bohr–Sommerfeld rule applied to a geometric ratio in a pulsating background.</strong> <strong>So the correct statement is neither "mysterious" nor "meaningless" but "a derived consequence of a stipulated quantisation" — three claims, each checkable, and the register currently holds only the wrong one.</strong></p>
+<p><strong>There is also a register error to correct, and it is substantive: the orbit at $l = 1{,}272\,R$ belongs to the <em>préon</em>, not the éon.</strong></p>
+<h2 id="what-the-corpus-claims">What the Corpus Claims</h2>
+<p><strong>§3.2 — the éon is a closed, homogeneous, pulsating micro-universe containing one neutrino on a closed quantised orbit at $l = 1{,}272\,R$.</strong> RC ch. III. <strong>Tag: [SPEC].</strong> The register's gloss: the number comes from the golden ratio, $Y = \sqrt{\varphi} = 1{,}2720$ with $\varphi = (1+\sqrt{5})/2$; "singular fact"; "beautiful, and unmotivated by any data".</p>
+<p><strong>§10.7 — singular fact: the golden ratio appears in the closure condition.</strong> RC (3-47-a). <strong>Tag: [MATH], unmotivated.</strong> "A genuine curiosity. Worth recording, not worth building on."</p>
+<h2 id="1-the-two-conditions-stated-exactly">1. The Two Conditions, Stated Exactly</h2>
+<p><strong>The corpus's Système $E$ (RC 048 (3-53)) contains, besides the evolution equation, two conditions that do the geometric work:</strong></p>
+<p>$$(3\text{-}58)\quad \int_{0}^{T}\frac{d\tau}{R} = \frac{2\pi}{c} \qquad\qquad (3\text{-}42)\quad \frac{1}{T}\int_{0}^{T}\frac{Y^{2}}{\sqrt{1+Y^{2}}}\,d\tau = 1,\qquad 0 \le Y \le \pi$$</p>
+<p><strong>with (3-31) the initial condition $R'(0) = \pm c$ and (3-35)/(3-36) the existence conditions.</strong> <strong>(3-58) is the corpus's "condition complémentaire" for the pulsation; (3-42) is the closure condition for the neutrino's orbit, and $Y$ is the orbit's radius in units of $R(\tau)$: $l = YR$.</strong></p>
+<h2 id="2-the-first-condition-gives-math10-and-it-is-exact">2. The First Condition Gives $e^{\pi}$, and It Is Exact</h2>
+<p><strong>For the préon, (3-31) holds for all $\tau$: $R = R_{0} + c\tau$ on the rising half and $R = R_{0} + c(T-\tau)$ on the falling half. Hence</strong></p>
+<p>$$\int_{0}^{T}\frac{d\tau}{R} = 2\int_{0}^{T/2}\frac{d\tau}{R_{0}+c\tau} = \frac{2}{c}\ln\frac{R_{\max}}{R_{0}}$$</p>
+<p><strong>and setting that equal to $2\pi/c$ gives $\ln(R_{\max}/R_{0}) = \pi$, i.e. (3-59)</strong></p>
+<p>$$\frac{R}{R_{0}} = e^{\pi} = 23{,}14069$$</p>
+<p><strong>which the corpus prints as 23,14 — verified, exactly, with no data entering.</strong> <strong>A pulsating micro-universe whose boundary moves at $c$ and satisfies the closure integral is obliged to have this radius ratio, and it is a pleasant fact that the corpus's closure condition produces Euler's constant in this way.</strong></p>
+<p><strong>And the same condition applied to the <em>éon</em> gives something else, which is the cleanest way to see that the two objects are different solutions: the éon's $R(\tau)$ is not linear (its $R'$ is not $\pm c$), and its radius ratio is $R_{\max}/R_{0} = 4{,}85\times10^{-14}/8{,}01\times10^{-15} = 6{,}055$, not $23{,}14$.</strong> <strong>So (3-58) is satisfied by the éon with a different $R(\tau)$, and $e^{\pi}$ is a préon number.</strong></p>
+<h2 id="3-the-second-condition-gives-the-golden-ratio-and-the-golden-ratio-is-forced">3. The Second Condition Gives the Golden Ratio, and the Golden Ratio Is Forced</h2>
+<p><strong>By (3-61-b) the orbit is at a fixed ratio $l = YR(\tau)$ for <em>all</em> $\tau$, so the integrand of (3-42) is constant and the integral collapses to an algebraic equation:</strong></p>
+<p>$$\frac{Y^{2}}{\sqrt{1+Y^{2}}} = 1 \quad\Longrightarrow\quad Y^{4} = 1 + Y^{2} \quad\Longrightarrow\quad Y^{4} - Y^{2} - 1 = 0$$</p>
+<p><strong>With $u = Y^{2}$ this is $u^{2} - u - 1 = 0$, whose positive root is $\varphi = (1+\sqrt{5})/2$ — the golden ratio, and the negative root $u = -1/\varphi$ is rejected by $u = Y^{2} > 0$. Hence</strong></p>
+<p>$$(3\text{-}61\text{-}a)\quad Y = \sqrt{\varphi} = 1{,}2720196 \qquad\qquad (3\text{-}61\text{-}b)\quad l = 1{,}272\,R(\tau)\ \ (\forall\tau)$$</p>
+<p><strong>Verified to twelve decimal places: $Y^{2}/\sqrt{1+Y^{2}} = 1{,}000000000000$.</strong> <strong>So the golden ratio is not decoration, not chosen, and not numerology: it is the unique positive root of the corpus's own closure equation.</strong> <strong>This is a stronger statement than §10.7's "genuine curiosity", and the article says so plainly because it is the most elegant result in the micro-universe block.</strong></p>
+<p><strong>And it comes with an exact identity that makes the whole configuration cohere.</strong> The radial velocity of the boundary relative to the orbit is (3-62) $v/c = Y/\sqrt{1+Y^{2}}$; substituting $Y^{2} = \varphi$ gives $1 + Y^{2} = 1 + \varphi = \varphi^{2}$, so</p>
+<p>$$\frac{v}{c} = \frac{\sqrt{\varphi}}{\varphi} = \frac{1}{\sqrt{\varphi}} = 0{,}786151 \quad\text{(corpus 0,786)},\qquad \left(\frac{v}{c}\right)^{2} = \frac{1}{\varphi} = 0{,}618034$$</p>
+<p><strong>So $l/R = \sqrt{\varphi}$ and $(v/c)^{2} = 1/\varphi$ are the same statement, and both are exact.</strong> <strong>This is the micro-universe block's counterpart to S15's curvature–Compton identity: a derivation-level result, worth a line in S41's ledger, and true of a stipulated model rather than of nature.</strong></p>
+<h2 id="4-but-the-condition-is-the-free-element-and-that-is-the-finding">4. But the Condition Is the Free Element — and That Is the Finding</h2>
+<p><strong>The golden ratio is forced <em>by</em> (3-42), so everything depends on what (3-42) is. It is not derived in the corpus. It is stated, and the corpus itself files it with the postulates: RC 047 lists (3-37-a), (3-42), (3-49) and (3-51) together as the <em>"conditions complémentaires"</em>, alongside the existence and initial conditions.</strong></p>
+<p><strong>What (3-42) says physically, and its ancestry.</strong> <strong>The condition says that the neutrino's motion on the closed orbit carries exactly one quantum of action per pulsation, with the right-hand side equal to 1 — the lowest quantum.</strong> <strong>Its classical ancestor is exact and recognisable: it is Bohr–Sommerfeld quantisation, $\oint p\,dq = nh$, at $n = 1$, applied to a closed orbit.</strong> <strong>What is Charon's is the choice to apply it to a geometric ratio $Y$ in a background whose radius is itself oscillating, and the choice of $n = 1$.</strong></p>
+<p><strong>So the correct three-part statement, and this is the article's finding:</strong></p>
+<ol>
+<li><strong>the golden ratio is derived, not invented</strong> — it is the unique positive root of $Y^{2}/\sqrt{1+Y^{2}} = 1$;</li>
+<li><strong>the equation it is derived from is a stipulated quantisation</strong>, of exactly the kind the old quantum theory used, and the corpus labels it a complementary condition;</li>
+<li><strong>no data enter anywhere in the chain</strong> — not in (3-58), not in (3-42), not in $Y$ — <strong>so the derivation's elegance is not evidence for it.</strong></li>
+</ol>
+<p><strong>In one compressed sentence, which is the form the register should carry: <em>the golden ratio is where "one quantum on a closed orbit in a pulsating micro-universe" has its fixed point, and it is forced — by a chosen rule.</em></strong> §10.7 should be upgraded from "curiosity" to "a derived result of a stipulated condition", and the positive half added, because "unmotivated" is now known to be half-wrong: the number <em>is</em> motivated, its axiom is not.</p>
+<h2 id="5-the-register-error-to-correct-math48-belongs-to-the-preon-not-the-eon">5. The Register Error to Correct: $1{,}272$ Belongs to the Préon, Not the Éon</h2>
+<p><strong>§3.2 attributes the orbit $l = 1{,}272R$ to the <em>éon</em>. §10.7 cites "§3.2's $l = 1{,}272R$". Both are wrong about the object.</strong></p>
+<ul>
+<li><strong>RC 049 derives $Y = 1{,}272$ in the <em>préon</em> section (ch. III §V.1).</strong> The text's justification is the préon's defining property, in the corpus's own words: <em>"Nous avons ici $R'^{2} = c^{2}$"</em> — and the paragraph ends by naming the model: <em>"Nous nommons PRÉON ce modèle de micro-univers Imaginaire électriquement neutre, caractérisé dans l'équation fondamentale d'évolution par $\alpha = \beta = \Lambda = 0$."</em></li>
+<li><strong>The éon's orbit is different and the corpus gives its number.</strong> RC 052 §2 states the éon version of (3-42),</li>
+</ul>
+<p>$$(3\text{-}73)\quad \frac{1}{T_{0}}\int_{0}^{T}\frac{Y^{2}R'^{2}/c^{2}}{\sqrt{1+Y^{2}R'^{2}/c^{2}}} = 1,$$</p>
+<p><strong>and its solution (3-74-a): $Y = 2{,}27$.</strong> <strong>The éon is described as having "bien toujours une orbite quantifiée pour le mouvement du neutrino éonique, quel que soit la solution particulière $n$ considérée", with the same constraint $0 \le Y \le \pi$.</strong></p>
+<p><strong>So the corpus contains two orbit numbers, for two different objects, and the register carries one of them and attributes it to the wrong one:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>orbit condition</th>
+<th>solution</th>
+<th>$(v/c)$ at the orbit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>préon</strong> ($R' = \pm c$)</td>
+<td>(3-42)/(3-61)</td>
+<td>$Y = \sqrt{\varphi} = 1{,}2720$</td>
+<td>$1/\sqrt{\varphi} = 0{,}786$</td>
+</tr>
+<tr>
+<td><strong>éon</strong> ($R' \neq c$)</td>
+<td>(3-73)</td>
+<td>$Y = 2{,}27$</td>
+<td>$R'$-dependent</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>This is a substantive correction rather than a typographical one, and its consequence is sharp: the golden ratio is a property of the <em>neutral</em> solution — the general solution, valid at every point of any proper mass — and not of the charged leptons' micro-universes.</strong> <strong>Combined with S17's finding that the préon's defining property is maintained by the falsified massless neutrino, the correction cuts both ways: the golden ratio is more general than the register thought (it belongs to the solution at every point) and more precarious (that solution is the one §3.7 deletes).</strong></p>
+<p><strong>One small citation note, for the register's queue rather than for correction: §10.7 and S5's constant table cite RC (3-47-a) for $Y = 1{,}272$. The transcription of RC 049 numbers it (3-61) / (3-61-a) / (3-61-b), and RC (3-47-a) is in RC 050, where it is the gluon mass condition. The two may be a chapter-numbering difference between editions; the safe citation is scan 049, equations (3-58), (3-59), (3-61-a).</strong></p>
+<h2 id="6-the-eons-math66-a-unification-and-an-open-check">6. The Éon's $Y = 2{,}27$, a Unification, and an Open Check</h2>
+<p><strong>The two orbit conditions have the same shape, and the article's reading of it is this.</strong> <strong>Write $Z \equiv Y^{2}\langle R'^{2}/c^{2}\rangle$ for the orbit, where $\langle\cdot\rangle$ is the pulsation average. Then both conditions read $Z/\sqrt{1+Z} = 1$, hence $Z = \varphi$ — the <em>same</em> golden-ratio equation, with the radial motion entering through the mean square.</strong></p>
+<ul>
+<li><strong>For the préon, $\langle R'^{2}/c^{2}\rangle = 1$ exactly, so $Y^{2} = \varphi$ and $Y = 1{,}2720$</strong> — this is the exact case, and it is verified.</li>
+<li><strong>For the éon, the corpus's $Y = 2{,}27$ is therefore equivalent to $\langle R'^{2}/c^{2}\rangle = \varphi/Y^{2} = 1{,}618034/5{,}1529 = 0{,}3140$.</strong> <strong>That is a checkable statement about the éon's explicit solution $R(\tau)$.</strong></li>
+</ul>
+<p><strong>Flagged as an open item, and honestly bounded: the check cannot be made from the transcriptions.</strong> RC 052 gives the éon's $R$ only at its two turning points ($8{,}01\times10^{-15}$ and $4{,}85\times10^{-14}$ cm, with $R' = 0$ at both and $R'' = +1{,}04\times10^{35}$ and $-1{,}8\times10^{34}$ cm s$^{-2}$) plus a figure that was not transcribed. <strong>So the éon's $Y = 2{,}27$ is recorded as the corpus's value, and the unification $Z = \varphi$ is recorded as this article's reading, not as a corpus result. With the éon's $R(\tau)$ — obtainable from the scan of RC 052's graph, or by integrating (3-53) with $\alpha$, $\beta$, $T_{0}$ from (3-68) — the check is $\langle R'^{2}/c^{2}\rangle = 0{,}3140$.</strong></p>
+<p><strong>And one coincidence to record only in order to pre-empt it.</strong> <strong>$0{,}3140$ is within $0{,}05\,\%$ of $\pi/10 = 0{,}314159$.</strong> <strong>Two things must be said at once: the agreement is startling, and nothing in the corpus suggests $\pi/10$, so it is not a result.</strong> <strong>It is recorded here because a number derived from a corpus equation and matching a transcendental to three figures is precisely the sort of thing the rest of this programme exists to keep out of the ledger, and the discipline is to note it and move on.</strong> ($1/\pi = 0{,}31831$ is $1{,}4\,\%$ away and is noted for the same reason.)</p>
+<h2 id="7-verdict">7. Verdict</h2>
+<p><strong>§3.2 and §10.7 both stand in substance and both need correction in detail.</strong></p>
+<ul>
+<li><strong>Confirmed and strengthened:</strong> the golden ratio appears in the closure condition, and it is <em>derived</em> — the unique positive root of (3-42). <strong>The exact companions: $R_{\max}/R_{0} = e^{\pi}$ from (3-58), and $(v/c)^{2} = 1/\varphi$ from (3-62).</strong></li>
+<li><strong>Corrected:</strong> the orbit at $1{,}272R$ belongs to the préon; the éon's is $Y = 2{,}27$ (RC 052 (3-74-a)).</li>
+<li><strong>Clarified:</strong> "unmotivated" is half-right. The <em>number</em> is motivated — forced by the condition; the <em>condition</em> is stipulated and carries no data.</li>
+<li><strong>To be checked:</strong> the éon's $\langle R'^{2}/c^{2}\rangle = 0{,}3140$ (needs $R(\tau)$ from the scan); and the two citation points in §5.</li>
+<li><strong>Tag recommendation:</strong> §10.7 from "[MATH], unmotivated" to <strong>"[MATH]; derived from a stipulated quantisation; no data enter"</strong> — and §3.2's gloss corrected as above.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<ul>
+<li><strong>$\varphi$</strong> — the golden ratio, $(1+\sqrt{5})/2 = 1{,}618034$. <strong>It enters as $\varphi = Y^{2}$, not as $Y$.</strong></li>
+<li><strong>$Y$</strong> — the neutrino's orbit radius in units of $R(\tau)$, $l = YR$. <strong>Préon: $Y = \sqrt{\varphi} = 1{,}2720$. Éon: $Y = 2{,}27$.</strong></li>
+<li><strong>(3-58)</strong> — the pulsation closure integral $\int_{0}^{T}d\tau/R = 2\pi/c$; <strong>gives $e^{\pi}$ for the préon.</strong></li>
+<li><strong>(3-42)/(3-73)</strong> — the orbit closure conditions for the préon and the éon respectively.</li>
+<li><strong>(3-31)</strong> — the initial condition $R'(0) = \pm c$, which the préon maintains for all $\tau$ and the éon does not.</li>
+<li><strong>$R_{0}$, $R_{\max}$, $T_{0}$</strong> — the éon's minimum radius, maximum radius and period; $8{,}01\times10^{-15}$ cm, $4{,}85\times10^{-14}$ cm, $4{,}93\times10^{-24}$ s.</li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S17</strong> — the préon/éon distinction, and why the préon's defining property is the falsified one.</li>
+<li><strong>S12</strong> — the oscillator whose period is the préon's $h/mc^{2}$.</li>
+<li><strong>S20, S21</strong> — the éon's radii and the three internal constants, where $T_{0}$ is shown to be fitted.</li>
+<li><strong>S15</strong> — the curvature–Compton identity, the companion derivation-level result.</li>
+<li><strong>P8</strong> — the massless neutrino, on which the préon solution depends.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

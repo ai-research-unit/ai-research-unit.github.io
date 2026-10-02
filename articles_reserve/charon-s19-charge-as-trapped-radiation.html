@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — Charge as Trapped Radiation (S19) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-charge-as-trapped-radiation-s19">Charon — Charge as Trapped Radiation (S19)</h1>
+<p><em>Audits §3.3 of <code>CHARON_IDEAS_AND_CLAIMS.md</code>, against RC ch. III §VII (scans 053, 054, 055) and Esp §VI.18.</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>This article reports the best numerical result in the corpus's micro-universe block, and then reports how the corpus gives it away.</strong></p>
+<p><strong>The good part:</strong> the corpus computes the elementary charge from the blackbody radiation trapped inside an éon, with no free parameter in the chain, and lands <strong>2 % high</strong> on $e$. <strong>The calculation is not numerology: every ingredient is either a measured constant or derived inside the model, and the one genuinely clever step — an infra-red cut-off $\nu \ge c/2\pi R$ imposed by the éon's finite size, which makes the cut-off frequency <em>independent of the éon's radius</em> — is correct algebra.</strong> <strong>The corpus deserves the credit and the article gives it.</strong></p>
+<p><strong>The bad part:</strong> the corpus then attributes the 2 % to a departure from spherical symmetry, introduces an eccentricity $E$ of the éon, and reports that $E = 0{,}36$ gives the charge <em>exactly</em>. <strong>That is a fit, not a prediction; and — verified here — the printed eccentricity overshoots, landing 2.8 % <em>below</em> $e$ where it should land on it.</strong> <strong>The honest headline is the unfitted 2 %, not the fitted 0 %.</strong></p>
+<p><strong>And the deepest point is structural.</strong> In established physics charge is a U(1) gauge quantum number; <strong>its quantisation and its <em>ratios</em> are what the gauge principle explains, and the corpus's mechanism addresses neither — it reproduces the one quantity that is a free input in the standard picture, and does not touch the quantities the standard picture predicts.</strong> <strong>That is the wrong way round for a mechanism whose whole claim is that charge is not primitive.</strong></p>
+<h2 id="what-the-corpus-claims">What the Corpus Claims</h2>
+<p><strong>§3.3 — charge is not primitive; it is blackbody radiation trapped inside the éon.</strong> RC ch. III §VII; Esp §VI.18. <strong>Tag: [SPEC].</strong> The register's note: in established physics electric charge is a U(1) gauge quantum number, quantised because of anomaly cancellation and gauge invariance, not because of enclosed light; "his mechanism produces the right <em>value</em> (§3.6) but not the right <em>reason</em>".</p>
+<h2 id="1-the-mechanism">1. The Mechanism</h2>
+<p><strong>The setup (RC 053 §VII.1).</strong> In the corpus, the electromagnetic interaction between two charged particles is <em>"un échange de photons virtuels entre les rayonnements noirs enfermés dans chacun des micro-univers Imaginaires chargés (éons)"</em> — an exchange of virtual photons between the trapped photon gases of two éons. <strong>So charge is not a primitive property of a point; it is the strength of that exchange, and it lives in the éon's thermal content.</strong> <strong>This is why the neutral/charged split is the temperature split: $\beta \neq 0 \Leftrightarrow \theta \neq 0 \Leftrightarrow$ charged (S17).</strong></p>
+<p><strong>The ingredients, in the corpus's order.</strong></p>
+<ol>
+<li><strong>The trapped spectrum is Planckian</strong> (3-94), $n_{\nu}d\nu = (8\pi\nu^{2}/c^{3})\,d\nu/(e^{h\nu/K\theta}-1)$, with the energy density (3-80) $D_{E} = \pm\beta c^{2}/R^{4} = a\theta^{4}$.</li>
+<li><strong>A finite-size infra-red cut-off (3-82)–(3-84).</strong> No photon in the éon may have wavelength exceeding the éon's "greatest distance" $2\pi R$: $\lambda_{\max} = c/\nu_{1} \le 2\pi R$, hence $\nu \ge \nu_{1} = c/2\pi R$. <strong>The spectral integral is therefore truncated at $x_{1} = h\nu_{1}/K\theta$ from below.</strong></li>
+<li><strong>An averaged cross-section (3-86)–(3-89).</strong> The exchange's solid-angle factor is $kR^{2}/4\pi r^{2}$; averaging over the approach $r-R$ to $r$ gives $\bar{\sigma} = \pi R^{2}/2$ and hence $k = \pi/2$ — <strong>the corpus's own geometric averaging, and the only step in the chain that is a choice rather than a derivation.</strong></li>
+<li><strong>The Coulomb form from flux dilution.</strong> The $1/r^{2}$ in (3-86) is solid-angle dilution of a flux, which is the legitimate way the Coulomb field's form arises; <strong>so the force's $1/r^{2}$ is not arbitrary, and the article says so.</strong></li>
+<li><strong>The result (3-104)/(3-106):</strong></li>
+</ol>
+<p>$$\overline{F} = \frac{8\pi^{3}c\hbar}{3r^{2}}\left(\frac{15\gamma}{8\pi^{5}}\right)^{5/4}\int_{1{,}91}^{\infty}\frac{x^{4}}{e^{x}-1}dx = \frac{e^{2}}{r^{2}},\qquad \gamma = -\frac{c\beta}{h}$$</p>
+<h2 id="2-the-numerical-result-and-it-is-the-best-in-the-block">2. The Numerical Result, and It Is the Best in the Block</h2>
+<p><strong>Every step of the arithmetic was recomputed, and the chain is correct.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>corpus</th>
+<th>recomputed</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\gamma = -c\beta/h$</td>
+<td>$7{,}72\times10^{-3}$</td>
+<td>$7{,}87\times10^{-3}$ from $\beta = -1{,}74\times10^{-39}$</td>
+<td>consistent with the corpus's rounding of $\beta$</td>
+</tr>
+<tr>
+<td>the cut-off (3-100)</td>
+<td>$x_{1} = (\pi h/30c|\beta|)^{1/4} = 1{,}91$</td>
+<td>$1{,}9103$</td>
+<td><strong>exact — see §3</strong></td>
+</tr>
+<tr>
+<td>the integral (3-105)</td>
+<td>$\int_{1{,}91}^{\infty}x^{4}dx/(e^{x}-1) = 23{,}46$</td>
+<td>$23{,}455$</td>
+<td><strong>confirmed</strong></td>
+</tr>
+<tr>
+<td>the coupling (3-106)</td>
+<td>$e^{2}/\hbar c = 7{,}60\times10^{-3}$</td>
+<td>$7{,}608\times10^{-3}$</td>
+<td><strong>confirmed</strong></td>
+</tr>
+<tr>
+<td>observation (3-107)</td>
+<td>$1/137 = 7{,}299\times10^{-3}$</td>
+<td>$7{,}2993\times10^{-3}$</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>error</strong></td>
+<td><strong>$1{,}9\,\%$ (in $e$)</strong></td>
+<td><strong>$2{,}1\,\%$ in $e$; $4{,}2\,\%$ in $e^{2}/\hbar c$</strong></td>
+<td>see below</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two remarks on the last row, because the corpus's own error statements disagree.</strong> (3-106) compares $e^{2}/\hbar c$ with $1/137$ — <strong>that is a $4{,}2\,\%$ discrepancy in the coupling</strong> — while (3-108) compares $e = 4{,}89\times10^{-10}$ with the observed $4{,}80\times10^{-10}$ and calls it $1{,}9\,\%$ — <strong>that is the discrepancy in $e$, which is half of it.</strong> Both are right about different quantities, and <strong>an article that quotes "1.9 %" without saying "in $e$" understates the miss by a factor two. The article records the honest figure: $2\,\%$ in $e$, $4\,\%$ in $\alpha_{\rm em}$.</strong></p>
+<p><strong>Why the result is worth crediting, in three sentences.</strong> <strong>(i) There is no free parameter in the chain that produces it:</strong> $\beta$ is fixed by the charged-lepton masses through (3-68) (S21), the cut-off $x_{1}$ is computed from $\beta$ alone by (3-100), and $\bar{\sigma}$'s coefficient is the corpus's own geometric average. <strong>So the corpus's claim is that the charged-lepton mass differences predict the fine-structure constant to 2 % — a cross-sector relation, not an identity.</strong> <strong>(ii) The one clever step is genuinely clever:</strong> the cut-off $x_{1}$ is <em>independent of $R$</em> (3-97), so an entire class of éon solutions shares it. <strong>(iii) It is not an identity-type success</strong> — unlike $R - 4\Lambda = (M_{0}c/\hbar)^{2}$ (S15) or $\rho_{n} = m_{n}/\Omega_{0}$, this relates $\alpha_{\rm em}$ to the lepton spectrum, and the corpus did not have to arrange it.</p>
+<p><strong>And the caveats, all of which the article states with the credit.</strong> <strong>(a)</strong> A 2 % miss is enormous by modern standards — $\alpha_{\rm em}$ is known to $\sim10^{-10}$ relative — so the agreement is with a 1980s evaluation of $e$ and not with a coincidence of theory. <strong>(b)</strong> It is not a prediction of $\alpha_{\rm em}$, because $\beta$ and $T_{0}$ are pinned by the <em>measured</em> $\tau-\mu$ and $m+\mu$ (S21): the relation is an internal consistency among fitted inputs. <strong>(c)</strong> The result uses $\beta$'s magnitude but not the corpus's own $\alpha$ constant, so it does not test the éon's density sector. <strong>(d)</strong> It rests upstream on the massless internal neutrino (P8) — see §5.</p>
+<p><strong>The corpus's own sign logic, recorded as bookkeeping.</strong> $\beta$'s sign distinguishes particles from antiparticles, and two energy densities of opposite sign repel while like signs attract (RC 054). <strong>This asserts the observed sign rule rather than deriving it</strong> — in the standard picture the sign rule <em>is</em> the statement that like charges repel, i.e. a property of the gauge coupling; here it is an extra postulate about which sign of $D_{E}$ attracts which. <strong>Recorded, not counted as a success.</strong></p>
+<h2 id="3-the-one-elegant-step-verified">3. The One Elegant Step, Verified</h2>
+<p><strong>The infra-red cut-off deserves its own paragraph because it is the corpus's best algebra, and because a reader will suspect a fudge.</strong> <strong>(3-97) gives the cut-off in terms of the éon's radius and temperature, $x_{1} = (hc/2\pi K)(a/|\beta|c^{2})^{1/4}$, and the corpus's (3-98) supplies Boltzmann's constant from the Stefan–Boltzmann relation, $K = (15ac^{3}h^{3}/8\pi^{5})^{1/4}$.</strong></p>
+<p><strong>Two checks.</strong> <strong>(i) (3-98) is the standard Stefan–Boltzmann relation solved for $K$</strong> — from $a = 8\pi^{5}K^{4}/(15h^{3}c^{3})$ — <strong>and evaluating it gives $K = 1{,}38069\times10^{-16}$ erg K$^{-1}$ against the measured $1{,}38065\times10^{-16}$. So the corpus derives the Boltzmann constant correctly to five figures, which is a nontrivial consistency check on its own constants $a$, $c$, $h$.</strong> <strong>(ii) Substituting (3-98) into (3-97) collapses every $\pi$ except one and gives (3-100)</strong></p>
+<p>$$x_{1} = \left(\frac{\pi h}{30\,c\,|\beta|}\right)^{1/4} = 1{,}9103$$</p>
+<p><strong>verified, and — the elegant part — <em>independent of $R$, $\theta$ and $K$</em>. So the truncation point of the Planck integral is a function of $\beta$ alone.</strong> <strong>That is why the calculation can land within 2 % of $\alpha_{\rm em}$ on the strength of a lepton-mass difference: the éon's geometry drops out and only $\beta$ survives.</strong></p>
+<h2 id="4-the-eccentricity-and-the-2-that-was-absorbed">4. The Eccentricity, and the 2 % That Was Absorbed</h2>
+<p><strong>RC 055 §4 is where the corpus gives the result away.</strong> It attributes the 2 % to the assumption of spherical symmetry: the éon should be a spheroid, with a small semi-axis $r$ and a large one $R$, eccentricity $E$ defined by $k = r/R = (1-E^{2})^{1/2}$ (3-109). The averaged cross-section becomes (3-110)</p>
+<p>$$\bar{\sigma} = \frac{\pi R^{2}}{2}(1-E^{2})^{1/2} = \frac{\pi rR}{2}$$</p>
+<p><strong>and the corpus reports (3-111) that the same calculation with this correction <em>"fournit alors la valeur expérimentale exacte de la charge $e$"</em> for $r/R = 0{,}933$, i.e. $E = 0{,}36$.</strong></p>
+<p><strong>Verified, and the printed number does not do what the text says.</strong> <strong>Since $e^{2}$ scales linearly with $\bar{\sigma}$, and $\bar{\sigma}$ is the only $E$-dependent quantity in (3-104)–(3-106)</strong> — the cut-off $x_{1}$ is $R$-independent (§3), $R^{5}\theta^{5}$ is $R$-independent by (3-102), and the integral is a pure number — <strong>the correction multiplies the corpus's own result by $(1-E^{2})^{1/2}$:</strong></p>
+<p>$$e^{2}/\hbar c:\quad 7{,}608\times10^{-3} \times 0{,}933 = 7{,}098\times10^{-3} \quad\text{against}\quad 1/137 = 7{,}2993\times10^{-3}$$</p>
+<p><strong>So the printed eccentricity takes the charge 2.8 % <em>below</em> the observed value, having started 2 % above it.</strong> <strong>The eccentricity that would land exactly is $(1-E^{2})^{1/2} = 0{,}9595$, i.e. $E = 0{,}282$ and $r/R = 0{,}9595$ — not $E = 0{,}36$, $r/R = 0{,}933$.</strong></p>
+<p><strong>Stated fairly, with the alternative that would rescue the corpus.</strong> If other factors also depend on $E$ — the cut-off $x_{1}$ depends on $R$, and $R$ is $E$-dependent in a spheroid; the éon's perturbation might change $\theta(R)$ — then the printed $E$ could be right and this scaling argument too narrow. <strong>The transcriptions give no $E$-dependence beyond (3-110), so resolving it needs the corpus's own working, i.e. the pages following RC 055 §4. Recorded in the register's check queue.</strong></p>
+<p><strong>And the structural point, which holds either way: $E$ is a free parameter, so "exact" is a fit.</strong> <strong>The honest headline is the unfitted 2 %.</strong> <strong>This is the clearest single instance in the corpus of the fitted-versus-predicted pattern the programme records as P20</strong> — a model meets the data, then meets it better with one more free number, and the second meeting is the one reported.</p>
+<p><strong>And the eccentricity is load-bearing in three places at once, which is the article's second finding.</strong> $E = 0{,}36$ is not a technical detail:</p>
+<ul>
+<li><strong>it fixes the charge "exactly"</strong> (this section);</li>
+<li><strong>it gives the electron a real size</strong> — §4.7 and <strong>P3</strong> mark that claim <strong>[FALS]</strong>: the electron is point-like below $10^{-18}$ m and $g-2$ agrees with QED to ten digits, while the eccentricity's scale sits orders of magnitude above the bound;</li>
+<li><strong>it makes the éon a spheroid</strong>, which is what the corpus's "spin of the éon" requires.</li>
+</ul>
+<p><strong>So the same parameter is fitted in three places, and it is falsified in the one place that is observable.</strong> <strong>A reader who takes the charge result seriously should take P3 seriously too, and the corpus cannot have the first without the third.</strong></p>
+<h2 id="5-against-established-physics-quantisation-ratios-and-the-missing-argument">5. Against Established Physics: Quantisation, Ratios, and the Missing Argument</h2>
+<p><strong>In established physics, electric charge is the conserved Noether charge of a U(1) gauge symmetry.</strong> <strong>Three distinct things are then true, and it matters which of them the corpus addresses.</strong></p>
+<ol>
+<li><strong>The quantisation of charge</strong> — why every particle's charge is an integer multiple of a single $e$, with quarks at $e/3$ and $2e/3$ — <strong>follows from the consistency of the quantum theory</strong>: U(1) gauge invariance of the Standard Model and the cancellation of gauge and mixed anomalies. <strong>It is a result, not an assumption.</strong> (Dirac's monopole quantisation is the dual statement in the presence of monopoles.)</li>
+<li><strong>The ratios</strong> — why quarks carry $1/3$ and $2/3$, why $\Sigma Q = 0$ within each generation (which is why hydrogen is neutral), why charge is universal across generations — <strong>are also consequences of anomaly cancellation.</strong></li>
+<li><strong>The value of $e$ is <em>not</em> derived.</strong> It is a running coupling, measured, with no derivation in the Standard Model. <strong>It is the one free input of the three.</strong></li>
+</ol>
+<p><strong>The corpus's mechanism addresses only the third, and it addresses it to 2 %.</strong> <strong>That is a real achievement and the register should say so; it is also, structurally, the wrong target.</strong> <strong>A mechanism proposing that "charge is not primitive" needs to explain (1) and (2), which the standard picture already explains, and it does not:</strong> <strong>it cannot say why charges are quantised</strong> — the corpus's charge is a continuous function of the éon's thermal parameters, and its integrality is inherited from the <em>discreteness of the éon family</em>, which is a different statement; <strong>and it cannot say why the quark charges are $1/3$ and $2/3$</strong> — that is P4's six-level claim, and P4's level structure gives densities, not charges. <strong>And charge universality across generations is stipulated, not derived: all éons share $T_{0}$ (§4.2, [SPEC]).</strong></p>
+<p><strong>Sharpened in one line, which is the form §3.3's gloss should carry: the corpus reproduces the one quantity that is a free input in the standard picture and does not address the quantities (quantisation and ratios) that the standard picture explains — which is the wrong way round for a claim that charge is derivative.</strong></p>
+<p><strong>And there is a step in the mechanism that is never argued, which the article records as its third finding.</strong> <strong>The éon's trapped photon gas is a source of <em>energy and momentum</em> and of nothing else, because the photon is electrically neutral.</strong> <strong>So what the corpus computes, before naming it, is a <em>force between two neutral thermal structures</em> — a Casimir- or van-der-Waals-type interaction, set by the trapped-radiation energy and the finite-size spectrum.</strong> <strong>The identification of that force with the Coulomb force is the load-bearing step, and the corpus supports it by magnitude alone: it shows that at the éon's parameters the computed force has the right $1/r^{2}$ coefficient.</strong> <strong>It never shows that its exchange force has the Coulomb form for arbitrary states, or that a neutral body can source a U(1) field at all.</strong> <strong>The $1/r^{2}$ is legitimate (flux dilution, §1 item 4); the <em>rename</em> is the unargued step.</strong> <strong>This is the deepest of the article's three findings, and it is why the 2 % should be read as agreement in magnitude within a formalism whose premise is not established.</strong></p>
+<h2 id="6-the-eccentricitys-other-life-and-the-register-consequences">6. The Eccentricity's Other Life, and the Register Consequences</h2>
+<ul>
+<li><strong>§3.3's [SPEC] stands</strong>, with the credit and the caveats in §2 stated separately: <strong>the unfitted 2 % in $e$ belongs in S41's ledger as the micro-universe block's strongest numerical entry</strong> (with the note that it is a fitted-input relation, not a prediction), <strong>and the fitted eccentricity does not belong in the ledger at all.</strong></li>
+<li><strong>New open item for the check queue: the eccentricity correction.</strong> Either the printed $E = 0{,}36$ over-corrects by 2.8 % under (3-110) alone, or an unprinted $E$-dependence accompanies it. <strong>Needs the scan of RC 055 §4 onward.</strong></li>
+<li><strong>The section should be cross-referenced to P3 and P20</strong>, because the parameter is shared with the electron-size claim and the pattern is the fitted-versus-predicted one.</li>
+<li><strong>The error statement should be corrected: $2\,\%$ in $e$, $4\,\%$ in $\alpha_{\rm em}$</strong>, and articles that quote "1.9 %" should say which quantity they mean.</li>
+<li><strong>New positive to record: the Stefan–Boltzmann check on $K$</strong> — (3-98) reproduces the Boltzmann constant to five figures from $a$, $c$, $h$ — <strong>and the $R$-independence of the cut-off (3-100), which is the model's one genuinely elegant step.</strong></li>
+<li><strong>The charge mechanism's upstream dependence on §3.7 (P8) should be recorded</strong>, since a 2 % success of a model whose internal neutrino is falsified is exactly the case that needs both statements in the same paragraph.</li>
+</ul>
+<h2 id="verdict">Verdict</h2>
+<p><strong>Record the arithmetic as a real success and the mechanism as post-mortem, and say which is which in the same paragraph.</strong> <strong>What is real: the cut-off (3-100) verified exact, the truncated Planck integral confirmed, and the coupling landing $2\,\%$ in $e$ from inputs that come from the charged-lepton masses — the micro-universe block's only cross-sector relation, and its strongest numerical entry (S41).</strong> <strong>And the one elegant step is genuinely elegant: the cut-off is $R$-independent, so the lepton spectrum alone fixes it.</strong></p>
+<p><strong>What is not real: the identification.</strong> <strong>The éon's trapped photon gas sources energy and momentum and nothing else — the photon is electrically neutral — so what the corpus computes before naming it is a force between two <em>neutral</em> thermal structures, and the step from that to the Coulomb force is an unargued rename supported by magnitude alone.</strong> <strong>The $1/r^{2}$ is legitimate; the charge is not.</strong></p>
+<p><strong>And the fitted version of the result must stay out.</strong> <strong>RC 055 §4's "exact" charge needs $E = 0{,}282$ where it prints $E = 0{,}36$, and that same eccentricity is the electron's finite size (§4.7), which is P3 and is [FALS].</strong> <strong>So the honest headline is the unfitted $2\,\%$, the same parameter is fitted in three places and falsified in the one place that is observable, and the whole mechanism rests upstream on the internal neutrino that does not exist in the required form (P8).</strong> <strong>Part P, with the arithmetic credited.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<ul>
+<li><strong>$D_{E}$</strong> — the éon's trapped-radiation energy density, $D_{E} = \pm\beta c^{2}/R^{4} = a\theta^{4}$; <strong>its sign distinguishes photons from antiphotons, and opposite signs repel (RC 054).</strong></li>
+<li><strong>$\beta$</strong> — the éon's radiation coefficient; <strong>$\beta = 0 \Leftrightarrow \theta = 0 \Leftrightarrow$ neutral</strong>; $\gamma \equiv -c\beta/h$.</li>
+<li><strong>$\bar{\sigma} = \pi R^{2}/2$</strong> — the corpus's averaged electrostatic cross-section (3-88), whose coefficient $k = \pi/2$ comes from an averaging over the approach; <strong>the one choice in the chain.</strong></li>
+<li><strong>$x_{1}$</strong> — the infra-red cut-off $h\nu_{1}/K\theta$ with $\nu_{1} = c/2\pi R$; $x_{1} = (\pi h/30c|\beta|)^{1/4} = 1{,}91$, <strong>independent of $R$</strong>.</li>
+<li><strong>$E$, $r/R$</strong> — the éon's eccentricity and axis ratio; <strong>the fitted parameter shared with the electron-size claim (P3).</strong></li>
+<li><strong>$e^{2}/\hbar c$</strong> — the fine-structure constant in the corpus's Gaussian units; <strong>the quantity (3-106) computes.</strong></li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S17</strong> — the éon's definition as the charged solution, and the préon's dependence on §3.7.</li>
+<li><strong>S20, S21</strong> — where $\beta$ and $T_{0}$ come from, and the sense in which they are fitted.</li>
+<li><strong>S41</strong> — the constants ledger, where the 2 % belongs and "exact" does not.</li>
+<li><strong>P3</strong> — the electron's size from the same eccentricity; <strong>P20</strong> — the fitted-versus-predicted pattern; <strong>P1</strong> — the lepton tower; <strong>P8</strong> — the massless internal neutrino.</li>
+<li><strong>S15</strong> — the curvature–Compton identity, the block's companion exact result.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

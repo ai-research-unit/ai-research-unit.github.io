@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: The Status of the Second Sheet — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-status-of-the-second-sheet"><strong>Charon: The Status of the Second Sheet</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The register asks: <strong>"The load-bearing move: is a second populated sheet forced, licensed, or posited? Re-read the horizon argument against Kruskal and 't Hooft's complex GR. Audits §1.2."</strong></p>
+<p><strong>The answer is that it is licensed and posited, and not forced.</strong> The corpus's argument gives the second sheet a <em>natural language</em> — the exchange of space and time across a Schwarzschild horizon — and then the corpus <strong>posits</strong> it, in its own words, as <em>"un de ses axiomes de base"</em> and as a <em>"représentation non locale"</em>. Nothing in general relativity or in the data requires a second populated spacetime, and nothing forbids one. <strong>The article's finding is sharper than that verdict, and it is new: the argument's force depends on rejecting the coordinate-independent reading of the horizon, and Charon rejects it explicitly and by name</strong> — Novikov, Eddington–Finkelstein, Kruskal–Szekeres, all of them, at Esp 115. His stated reason is that the Schwarzschild metric is only valid where $T_{\alpha\beta} = 0$ and therefore cannot describe his region I. <strong>That reason is category-mismatched</strong>: his region I is a collapsing star's interior, where $T \ne 0$, while the extensions he rejects are statements about the <em>vacuum</em> manifold. So the second sheet is purchased by a rejection that does not do the work it is asked to do.</p>
+<p><strong>A second finding, and it connects this article to the cosmology.</strong> The interior region Charon reads as a separate universe has spatial 3-volume $2\pi^{2}R^{3}$ at each instant of its own time — the volume of a closed $K = +1$ three-sphere, Esp 039 §1.2. <strong>That is the same $2\pi^{2}R^{3}$ that appears in the cosmological action</strong> (RC (5-41); S14). <strong>So Charon's second sheet and his closed-universe cosmology are the same structure, and the verdict of this article propagates to S50, S51 and S52.</strong></p>
+<p><strong>What this article adds, in the one line the register requires of a [BRIDGE].</strong> The register marks S4 as a bridge, duplicated by the framework's introductory article. <strong>What is not in the framework's articles is the contents of the corpus's own Annexe 7</strong> — the rejection of the extension, quoted in Part 3 — <strong>and the observation that the second sheet and the closed universe are one structure.</strong> The framework's article owns the complex geometry; <strong>this article owns the corpus's argument for populating it, and its verdict.</strong></p>
+<p><strong>Sources.</strong> The corpus side is Esp §V.1 (scan 039 §1.2–1.3) and Esp Annexe 7 (scans 114–115); the register's §1.2 and its [MIX] tag; S2, Part 3, for the result that the sheets are the Prime Convention; S3 for the local/global distinction. The general-relativity side is the standard reading of the Schwarzschild solution and its maximal extension. <strong>The register asks for a comparison against complex general relativity; the article records that literature as context — see Part 2, final note — and states plainly that the series draws no technical result from it.</strong></p>
+<h2 id="part-1-what-the-corpus-says">Part 1 — What the corpus says</h2>
+<h3 id="the-argument-in-the-corpuss-words">The argument, in the corpus's words</h3>
+<p>Esp 039 §1.2 sets up a Schwarzschild frame about an arbitrary point of the space of quantised general relativity (RGQ), takes the vacuum solution</p>
+<p>$$ds^{2} = \left(1 - \frac{2I}{r}\right)c^{2}dt^{2} - r^{2}(d\theta^{2} + \sin^{2}\theta\,d\phi^{2}) - \left(1 - \frac{2I}{r}\right)^{-1}dr^{2},$$</p>
+<p>with $r_s = 2I$ the Schwarzschild radius, and argues as follows. <strong>The components $g_{tt}$ and $g_{rr}$ change sign when $r = r_s$ is crossed</strong>, so $r$ and $t$ are successively of the space type and the time type, and <em>"ceci peut être interprété en disant que les vecteurs de base sur les 4 axes du référentiel sont tous multipliés par $i = \sqrt{-1}$ quand on traverse $r = r_s$"</em>. The corpus then draws the conclusion:</p>
+<blockquote>
+<p><em>"Cette remarque constitue l'un des meilleurs arguments pour démontrer qu'un espace-temps complexe est nécessaire pour effectuer une représentation complète des phénomènes physiques"</em>, because a spacetime that is not <em>rigorously empty</em> requires the coexistence at each point of two complementary spacetimes: <strong>an entropic space</strong> $(\tilde r, \tilde t)$, the ordinary hyperbolic metric, and a <strong>negentropic space</strong>, obtained by multiplying the entropic basis vectors by $i$.</p>
+</blockquote>
+<p>Two further statements complete the picture. <strong>The projection argument</strong> (Esp 039 §1.3): since an observer working in the entropic coordinates ignores the negentropic space, that space's phenomena <em>"vont être « cachés » et confondus au point mathématique $M_0$"</em>, so the corpus is <em>"contraint de proposer ce qu'on nomme généralement une représentation non locale de $M_0$"</em>. <strong>And the corpus says what kind of move this is</strong>: <em>"La Relativité complexe, qui suppose la complexité de l'espace physique comme un de ses axiomes de base, justifie un tel type de représentation non locale."</em></p>
+<p><strong>Two counts on the argument, stated before it is criticised.</strong> The Schwarzschild radius it computes for the Sun is correct to its one printed figure: <em>"$M = 2.10^{33}$ g ... $r_S = 3.10^{5}$ cm"</em> (Esp 114), and $2GM/c^{2}$ with $M = 2\times10^{33}$ g gives $2{,}97\times10^{5}$ cm. And the corpus's $2\pi^{2}R^{3}$ for the interior observer's spatial volume is the standard 3-volume of a three-sphere of radius $R$. <strong>Neither number is at issue.</strong></p>
+<h3 id="the-horizon-surface-that-the-exterior-observer-sees">The horizon "surface" that the exterior observer sees</h3>
+<p>Esp 039 §1.2 closes with a computation; the corpus gives it the Wheeler attribution:</p>
+<p>$$\tilde S = \int_{r = 2I} |g_{tt}g_{\phi\phi}|\,dt\,d\phi = 0 .$$</p>
+<p><strong>The computation is correct and its content is standard.</strong> At $r = 2I$ the component $g_{tt} = 1 - 2I/r$ <strong>vanishes identically</strong>, so the integrand vanishes and the integral is zero for any metric of this form. <strong>What this establishes is that the horizon is a null hypersurface</strong> — which is established physics. <strong>It is not an independent argument for a second universe</strong>; it is the null character of the horizon, re-expressed as a vanishing of a "surface" measured with the metric component that vanishes there.</p>
+<h3 id="annexe-7-the-corpuss-position-on-the-extension">Annexe 7: the corpus's position on the extension</h3>
+<p>Esp 114–115 are the corpus's own appendix on the Schwarzschild metric and the formation of "hole-universes", and they are the decisive text for this article. Esp 114 sets out the standard argument — the metric is valid only where the physical tensor vanishes, so the sole region of validity is $r_S \le R \le r$; when a contracting star reaches $R = r_S$ the space separates into region I ($r \le R = r_S$, where $T_{\alpha\beta} \ne 0$ and the metric $S$ is inapplicable) and region II ($r > R$). Charon reads region I as closed on itself, a <em>univers-trou</em>.</p>
+<p>Then Esp 115 closes the discussion with the corpus's rejection:</p>
+<blockquote>
+<p><em>"nous contestons la validité des résultats des recherches concernant la prétendue « pathologie » de la métrique $S$ autour de $r = r_s$. La métrique $S$, pas plus que les métriques équivalentes obtenues par de simples changements de coordonnées (métriques de Novikov, Eddington-Finkelstein, Kruskal-Szekeres...) ne nous paraissent exploitables dans leurs résultats dans la mesure où elles prétendent représenter ce qui se passe dans la région I pour laquelle $T_{\alpha\beta}$ est très différent de zéro."</em></p>
+</blockquote>
+<p><strong>So the corpus knows the standard literature, names it, and declines it</strong> — and the reason it gives is that those metrics "pretend to represent what happens in region I, for which $T_{\alpha\beta}$ is very different from zero".</p>
+<h2 id="part-2-what-the-general-theory-says-about-the-same-surface">Part 2 — What the general theory says about the same surface</h2>
+<p>Three statements, each established, and each of which the corpus's argument has to get past.</p>
+<p><strong>The horizon is a null surface, not a curvature singularity.</strong> The geometric invariants are finite at $r = r_s$: the Kretschmann scalar $R_{\alpha\beta\gamma\delta}R^{\alpha\beta\gamma\delta} = 48I^{2}/r^{6}$ diverges only as $r \to 0$, not at $r = 2I$. Nothing local happens to an infalling body at the horizon. <strong>The change of sign of $g_{tt}$ and $g_{rr}$ is a property of the static chart</strong>, in which the timelike Killing vector is normalised to unit length; the invariant content is that $\partial_t$ becomes spacelike inside, so <strong>no static observers exist there</strong>.</p>
+<p><strong>The maximal analytic extension continues the vacuum solution through the surface.</strong> Kruskal–Szekeres coordinates cover the whole vacuum manifold: region I (the exterior), region II (the future interior), region III (a second exterior), region IV (the past interior). <strong>Region III is a second exterior region — so the corpus's "two types of space" is not a fantasy — but it is a region of <em>one</em> analytic manifold.</strong> It is not reached from region I through the horizon (the horizon is a one-way, null surface), and the extension is a statement about the vacuum solution, canonical and standard, not a licence to populate a second spacetime.</p>
+<p><strong>The corpus's stated reason for rejecting the extension does not reach it.</strong> Charon objects that the metric $S$ is not valid in "region I, where $T_{\alpha\beta} \ne 0$". <strong>That is true, and it is about the interior of a star.</strong> His region I is $r \le R = r_S$, a region of high density — matter and radiation — which the vacuum metric cannot describe. <strong>The extensions he names are statements about the vacuum manifold, where $T_{\alpha\beta} = 0$ and where the metric is valid by his own criterion.</strong> Region I as he defines it — the star's interior — is <em>not</em> Kruskal's region II, which is the vacuum interior of the maximally extended solution. <strong>Two different objects share the name "interior", and the objection to the first has been used, by a slip of the same name, against the second.</strong></p>
+<p><strong>One further correction, small but load-bearing for the "multiplied by $i$" reading.</strong> Crossing $r = r_s$ changes the type of <strong>two</strong> of the four coordinates — $r$ becomes timelike and $t$ spacelike — while the angular directions remain spacelike. So "the base vectors on the 4 axes are <strong>all</strong> multiplied by $i$" is stronger than the mathematics. The clean statement is that the <em>metric's overall sign is not flipped</em> while two of its four diagonal entries change sign; a complex tetrad can absorb that change, and <strong>absorbing a signature flip into a complex frame is a rewrite, not a second spacetime.</strong></p>
+<p><strong>A note on complex general relativity, since the register asks for the comparison.</strong> Complex, complexified and biquaternion metrics have a long history as a <em>representation</em> — Einstein, Schrödinger and Lanczos in the classical period, and later work on complex metrics in quantum gravity — and the register records that precedent as the reason inventory §1.1 is tagged [SPEC] <em>with</em> real precedent rather than dismissed. <strong>The series draws no technical result from that literature</strong>, and the article says so rather than trading on it: what the argument has to get past is the standard reading of the Schwarzschild horizon, which is Part 2's first three statements, and <strong>no established reading of a complex metric takes it to license a second populated spacetime.</strong> Registering a deliberate citation of that literature is a prerequisite (§8), not a result of this article.</p>
+<h2 id="part-3-the-finding-the-second-sheet-is-purchased-by-a-rejection">Part 3 — The finding: the second sheet is purchased by a rejection</h2>
+<p>Put the corpus's own two passages side by side. The <em>justification</em> for the second sheet is the horizon argument: the basis vectors are multiplied by $i$ on crossing $r = r_s$, therefore a complex spacetime is necessary. The <em>annexe</em> is a rejection of the coordinate-change readings — Novikov, Eddington–Finkelstein, Kruskal–Szekeres — on the ground that they claim to describe region I, where the metric is invalid.</p>
+<p><strong>The annexe is what keeps the horizon argument viable, and the annexe's reason does not hold.</strong> If the maximal extension is accepted, the horizon is a null surface of one analytic manifold, the "sign flip" is a chart statement, and the argument yields at most a natural language for complexification — not a second populated sheet. <strong>If the extension is rejected, the two-region picture survives and the second sheet has a home.</strong> So:</p>
+<blockquote>
+<p><strong>The corpus's second sheet is not a consequence of its horizon argument. It is a consequence of its horizon argument plus its rejection of the extension — and the rejection is stated on grounds that apply to the stellar interior and not to the vacuum extension it is aimed at.</strong></p>
+</blockquote>
+<p><strong>And the rejection is not a whim.</strong> It is a deliberate position, printed in an appendix, with the literature named. <strong>This is why the register's [MIX] tag is right and can now be made precise:</strong> the premise of the argument is [EST], the rejection of the extension is [SPEC] and arguably [OUT], and the conclusion — a populated second sheet — inherits the [SPEC]. <strong>The register's own word for the conclusion is "licensed": this article's finding is that what licenses it is not the horizon alone but the horizon read through a deliberate refusal of the standard reading.</strong></p>
+<h2 id="part-4-one-structure-not-two-the-second-sheet-is-the-closed-universe">Part 4 — One structure, not two: the second sheet is the closed universe</h2>
+<p>The interior observer's spatial volume, in the corpus's own words, is <em>"$2\pi^{2}R^{3}$"</em> at each instant of his own time, with $R$ the sphere defined by the Schwarzschild radius $r_s = 2I$ (Esp 039 §1.2). <strong>$2\pi^{2}R^{3}$ is the 3-volume of a three-sphere of radius $R$ — a closed, $K = +1$ spatial section.</strong> And the same $2\pi^{2}c^{2}R^{3}$ is the coefficient that carries the corpus's cosmological action,</p>
+<p>$$A = \int_{0}^{T} 2\pi^{2}c^{2}R^{3}\left(\frac{D_\rho}{c^{2}} + \frac{D_M}{R^{4}}\right)d\tau + 2\pi(S+P) = 0,$$</p>
+<p>which the corpus uses to obtain $A = S = P = 0$ and its zero-total-energy identity (RC (5-41), (5-45), (5-46); S14, S50).</p>
+<p><strong>The consequence is a structural statement about the whole programme.</strong> Charon's region I — the "hole-universe" behind the horizon — <strong>is the same object as his closed cosmological model</strong>: a closed $K = +1$ three-space of volume $2\pi^{2}R^{3}$, with a quantised radial pulsation, whose interior is the material world. <strong>The micro-universe, the holon and the cosmos are the same construction at three scales.</strong> (This is exactly the repetition S11 records for the pulse, and S18 for the closure.)</p>
+<p><strong>So this article's verdict propagates.</strong> If the second sheet is posited rather than forced, then the closed-universe reading of the region behind the horizon is posited with it, and the cosmology that uses the same $2\pi^{2}R^{3}$ — S50 the zero-total-energy identity, S51 $R_i \approx 6\times10^{24}$ cm, S52 the cycle — <strong>rests on a spatial section whose closedness is, at that scale, a hypothesis of the same family.</strong> S50's identity still verifies numerically (it is an identity of the corpus's own numbers) and gate G-B still passes (the bounce is derived and the pulsation reproduces to $0.3\%$). <strong>What this article adds is that the <em>closedness of the region behind the horizon</em> is not independently established, and that the cosmology's $K = +1$ should be recorded as sharing that status rather than inheriting a derivation it does not have.</strong></p>
+<h2 id="part-5-the-verdict">Part 5 — The verdict</h2>
+<p><strong>Forced? No.</strong> No theorem and no datum requires a second populated spacetime. The Cartan–Lovelock uniqueness (S7) constrains the left-hand side of the field equations; it says nothing about the number of manifolds. The horizon is a null surface within one spacetime. <strong>Nothing in general relativity, and nothing in the data, forces the second sheet.</strong></p>
+<p><strong>Licensed? Yes.</strong> The horizon argument gives the corpus a natural language in which its complexification is not arbitrary: the exchange of which direction carries the $i$ is exactly the sector structure, and S2 uses that premise as the definition of the dictionary. <strong>The licence is real and it is what makes the programme worth rebuilding.</strong> It is also, per S3, a licence for the <em>local</em> reading — a complex structure that varies — while the corpus's own $i$ is stipulated global.</p>
+<p><strong>Posited? Yes, and the corpus says so.</strong> <em>"La Relativité complexe, qui suppose la complexité de l'espace physique comme un de ses axiomes de base"</em> (Esp 039 §1.3). <strong>An axiom of the theory and a representation, by the corpus's own description.</strong> The register's inventory tags §1.2 [MIX] with the conclusion [SPEC]; <strong>this article's verdict is that the [SPEC] is a <em>posited</em> [SPEC], and that the corpus is more honest about it than its critics have been.</strong></p>
+<p><strong>One consequence for gate G-A, stated so it is not confused.</strong> G-A is about the <em>dictionary</em> — whether a map exists from the corpus's structures to the framework's without contradiction — and S2 passed it in a refined form. <strong>G-A is unaffected by this article: the dictionary maps what the corpus <em>wrote</em>, whether or not the corpus was entitled to write it.</strong> What S4 decides is not a gate but the status of a premise, and the honest record is: <strong>the second sheet is a legitimate working hypothesis with a supported natural language and no support from data, and it should be labelled as such wherever it is used</strong> — which is what Part S does, and what the framework's own informational-sector article already says of $\mathbb{M}_+$'s physical realisation (S2, Part 7).</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The register asked whether a second populated sheet is forced, licensed or posited, and the answer is licensed and posited, not forced.</strong> The corpus's argument is that crossing a Schwarzschild horizon swaps the types of $r$ and $t$ and multiplies the basis vectors by $i$, so a complex spacetime is <em>necessary for a complete representation</em>; the corpus itself calls this <em>"un de ses axiomes de base"</em> and the resulting description a <em>"représentation non locale"</em> (Esp 039 §1.2–1.3).</p>
+<p><strong>The argument's premise is established physics and its conclusion is not.</strong> The sign change of $g_{tt}$ and $g_{rr}$ is real; the horizon is a null surface across which the curvature invariants are finite; the invariant content of the sign flip is that no static observers exist inside; and the maximal analytic extension continues the vacuum solution through the surface as <strong>one</strong> manifold, whose second exterior region is the corpus's "two types of space" without the second universe. Two corrections follow: crossing changes the type of <strong>two</strong> of the four coordinates, not all four, so "every basis vector is multiplied by $i$" is stronger than the mathematics; and the corpus's own computation $\tilde S = \int_{r=2I}|g_{tt}g_{\phi\phi}|\,dtd\phi = 0$ is correct but establishes only that <strong>the horizon is null</strong>, which is standard.</p>
+<p><strong>The finding is that the second sheet is purchased by a rejection.</strong> At Esp 115 the corpus explicitly declines the coordinate-change readings of the horizon — Novikov, Eddington–Finkelstein, Kruskal–Szekeres — on the ground that they claim to describe region I, <em>where $T_{\alpha\beta} \ne 0$</em>. <strong>That ground is category-mismatched:</strong> the corpus's region I is a collapsing star's interior, while the extensions it rejects are statements about the <em>vacuum</em> manifold, where its own criterion of validity holds. <strong>Two different objects share the name "interior", and the objection to one has been carried by the name to the other.</strong> So the horizon argument yields, at most, a natural language for complexification; what yields the populated second sheet is the horizon argument <strong>plus</strong> the rejection of the extension.</p>
+<p><strong>And the second sheet is the closed universe.</strong> The interior observer's spatial volume is $2\pi^{2}R^{3}$, the 3-volume of a closed $K = +1$ three-sphere — the same $2\pi^{2}c^{2}R^{3}$ that carries the cosmological action (5-41) whose output (5-46) is the corpus's best-verified identity. <strong>The hole behind the horizon, the micro-universe, and the cosmological model are one construction at three scales, and this article's verdict propagates to S50, S51 and S52: the closedness of the spatial section should be recorded as a hypothesis of the same family, not as a derived result.</strong></p>
+<p><strong>The verdict, for the register.</strong> <em>The second sheet is posited, licensed by the horizon argument as read through a deliberate refusal of the maximal extension, and not forced by anything; gate G-A is untouched, because the dictionary maps what the corpus wrote whether or not it was entitled to write it; and the corpus is clearer about the status of its own axiom than the register's dilemma assumed.</em></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$r_s = 2I$</td>
+<td>the Schwarzschild radius; the corpus writes the integration constant $2I$</td>
+</tr>
+<tr>
+<td>region I, region II</td>
+<td>the corpus's names for the star's interior ($r \le R = r_s$, $T \ne 0$) and the exterior ($r > R$)</td>
+</tr>
+<tr>
+<td>entropic space, negentropic space</td>
+<td>the corpus's two complementary spacetimes, the second built by multiplying the first's basis vectors by $i$</td>
+</tr>
+<tr>
+<td>$(\tilde r, \tilde t)$</td>
+<td>the coordinate pair Esp 039 uses for <strong>both</strong> spaces — a collapsed distinction in the transcription; see S5</td>
+</tr>
+<tr>
+<td>$2\pi^{2}R^{3}$</td>
+<td>the 3-volume of a closed three-sphere of radius $R$; the interior observer's spatial volume, and the coefficient of the cosmological action</td>
+</tr>
+<tr>
+<td>$K = +1$</td>
+<td>the closed spatial curvature signature of the corpus's cosmological and hole-universe models</td>
+</tr>
+<tr>
+<td>$\tilde S = \int_{r=2I}\lvert g_{tt}g_{\phi\phi}\rvert\,dtd\phi$</td>
+<td>the corpus's "surface" seen by the exterior observer; zero because $g_{tt}(r_s) = 0$</td>
+</tr>
+<tr>
+<td>$T_{\alpha\beta}$</td>
+<td>the physical (geometric) tensor; $\ne 0$ inside a star, $= 0$ in the vacuum manifold</td>
+</tr>
+<tr>
+<td>Kruskal–Szekeres</td>
+<td>the maximal analytic extension of the vacuum Schwarzschild solution; regions I, II, III, IV of one manifold</td>
+</tr>
+<tr>
+<td>G-A</td>
+<td>the register's dictionary gate, passed in refined form by S2; unaffected by this article</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the Biquaternion Universe</em>, for the complex geometry the register names as S4's duplication — <strong>this article's one-line addition is the corpus's own Annexe 7 and the identification of the second sheet with the closed universe.</strong></li>
+<li>S2, <code>charon-s02-dictionary-reel-imaginaire-to-m-plus-m-minus</code>, Part 3 and Part 7, for the result that the corpus's premise <em>is</em> the map, and for the honest position on $\mathbb{M}_+$'s physical realisation that Part 5 inherits.</li>
+<li>S3, <code>charon-s03-complexification-vs-complexification</code>, for the level-3 finding this article uses: the framework's complex structure is local, the corpus's is a stipulated global constant, and the corpus's own horizon argument is written in the local idiom.</li>
+<li>S7, <code>charon-s07-einstein-equations-taken-over</code>, for the Cartan–Lovelock uniqueness theorem, which constrains the left-hand side and says nothing about the number of manifolds.</li>
+<li>S14, <code>charon-s14-the-variational-formulation</code>, and S50, for the cosmological action (5-41) and the zero-total-energy identity (5-46) whose coefficient $2\pi^{2}c^{2}R^{3}$ Part 4 identifies with the interior volume.</li>
+<li>S51 and S52, for the initial radius and the cycle, whose closed spatial sections Part 4 is the first to connect to this argument.</li>
+<li>S5, <code>charon-s05-notation-and-units</code>, for the notation of the corpus's two spaces, and for the hazard this article records: Esp 039 prints the same symbol for the entropic and the negentropic space.</li>
+<li>J. E. Charon, <em>L'Esprit et la Relativité complexe</em> (1983), §V.1 (scan 039) and Annexe 7 (scans 114–115), for the horizon argument, the projection argument, the corpus's own description of its move as an axiom and a representation, and the rejection of the extension quoted in Part 3.</li>
+<li><code>CHARON_IDEAS_AND_CLAIMS.md</code> §1.2 for the inventory item audited here, and §1.1 for the precedent note on complex metrics; <code>UPDATED_CHARON_THEORY_2026_ARTICLE_LIST.md</code> §7 for gate G-A and §8 for the prerequisite this article registers.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

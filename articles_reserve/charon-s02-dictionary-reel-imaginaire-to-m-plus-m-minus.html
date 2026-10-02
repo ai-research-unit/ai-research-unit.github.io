@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: The Dictionary, Réel/Imaginaire to M+/M− — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-dictionary-reelimaginaire-to-mm"><strong>Charon: The Dictionary, Réel/Imaginaire to M+/M−</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This is the article on which the rest of the Charon programme depends, and it is the one the register calls the decider of gate G-A. The question is simple to state and was, until now, unresolved: <strong>Charon's complex space has two sheets, the <em>Réel</em> and the <em>Imaginaire</em>, and the biquaternion framework has two real sectors, $\mathbb{M}_+$ and $\mathbb{M}_-$ — is the one pair the other pair?</strong> The register records the question as a dilemma, in these words: <em>"Charon books all energy on the imaginary sheet and all geometry on the real sheet. The biquaternion framework puts material energy in $\mathbb{M}_-$. So either the energy column swaps, or Charon's real sheet is $\mathbb{M}_+$ because it carries form rather than energy. This decides whether the two frameworks are the same theory."</em></p>
+<p><strong>The answer this article establishes is that the dilemma is a false dilemma.</strong> Charon's <em>Réel</em>/<em>Imaginaire</em> split is <strong>not</strong> the framework's $\mathbb{M}_+$/$\mathbb{M}_-$ split, and no choice between the two horns of the register's dilemma is needed, because neither horn is available. The corpus's split is the <strong>real-part / imaginary-part</strong> split of the eight real parameters — what the companion <em>Conventions in the Biquaternion Universe</em> calls the Prime Convention — while the framework's sectors are a <em>different</em> partition of the same eight parameters, in which each sector takes <strong>two</strong> primed and <strong>two</strong> unprimed parameters. The two partitions are <strong>transversal</strong>: each of the corpus's sheets is half of each framework sector.</p>
+<p>Two consequences follow, and they are the article's substance. First, <strong>gate G-A passes</strong>, in a refined form: the dictionary maps both sectors without contradiction, but a quantity's sector membership must be decided <strong>per quantity</strong> and never per sheet. Second, <strong>the energy question dissolves</strong>: the corpus's statement that energy is booked on the <em>Imaginaire</em> is <em>correct</em> as a statement about the eight parameters — the time component of a four-momentum carries the $i$, and the imaginary coefficient parts are Charon's <em>Imaginaire</em> — and the framework's statement that material energy sits in $\mathbb{M}_-$ is also correct, and there is no conflict, because $\mathbb{M}_-$ contains the imaginary <em>time</em> parameter ($q'_0$) together with three <em>real</em> space parameters ($q_k$). An observable four-momentum cannot be confined to one corpus sheet, and the corpus's bookkeeping sentence was never a claim that it could.</p>
+<p>The article is organised as follows. Part 1 states what is to be mapped, on both sides. Part 2 works out the two partitions of the eight parameters and shows they are transversal. Part 3 states the decision. Part 4 gives the dictionary entry by entry. Part 5 resolves the energy question. Part 6 gives the verdict on gate G-A. Part 7 lists what this article deliberately does not decide.</p>
+<p><strong>A note on sources.</strong> The corpus side is inventory §1 (core ontology), §11.1 (the "same two signatures" sub-claim) and §1.3 (the energy bookkeeping), sourced to RC chapters I–III and Esp §V. The framework side is <em>Conventions in the Biquaternion Universe</em>, <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>, and <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>. Notation follows the series' companion article S5, <em>Charon: Notation and Units</em>.</p>
+<p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$, quaternion units $e_k^{2} = -e_0$, and central scalar imaginary $i$. A general element is $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ with $Q_\mu = q_\mu + iq'_\mu$ and $q_\mu, q'_\mu$ real — the <strong>eight real parameters</strong>. The two sectors are the fixed spaces of the Hermitian and anti-Hermitian conjugations, $\mathbb{M}_+ = \{\tilde Q : \tilde Q^\dagger = \tilde Q\}$ and $\mathbb{M}_- = \{\tilde Q : \tilde Q^\flat = \tilde Q\}$ with $\tilde Q^\flat = -\tilde Q^\dagger$. Charon's real sheet is written <em>Réel</em> and his imaginary sheet <em>Imaginaire</em>, as in S5.</p>
+<h2 id="part-1-what-is-to-be-mapped">Part 1 — What is to be mapped</h2>
+<h3 id="the-corpuss-side">The corpus's side</h3>
+<p>Charon complexifies spacetime at every point and calls the result a <strong>complex Riemannian space</strong> (S5, "The space, and its two sheets"). Its structure, for the purposes of this article, is four statements.</p>
+<p><strong>The sheets.</strong> To each real point $M$ the corpus attaches an imaginary partner, and every physical quantity has a real part and an imaginary part. The corpus writes a coordinate as $x = \dot x + i\ddot x$, with the dotted part on the <em>Réel</em> and the doubly-dotted part on the <em>Imaginaire</em>. The register's table gives this row as <em>"$x = \dot x + i\ddot x$ | $Q = q + iq'$, eight real parameters | same construction"</em> — and that row is the one this article builds on, because it is the row that is exact.</p>
+<p><strong>The justification.</strong> The corpus does not introduce the second sheet for its own sake. Its stated reason (inventory §1.2) is that <strong>crossing a non-empty Schwarzschild horizon swaps space and time</strong>: inside $r = r_s$ the Killing vector $\partial/\partial t$ becomes spacelike and $\partial/\partial r$ timelike, and every frame vector is multiplied by $i$. The register calls this <em>"the cleanest formal carry-over"</em>, and this article agrees and goes further: <strong>it is the map.</strong> Part 3 uses it as the definition of the dictionary rather than as an analogy.</p>
+<p><strong>The bookkeeping.</strong> The corpus allocates its two sheets as follows (inventory §1.3): the <em>Réel</em> carries no energy and no momentum and carries only <em>Formes</em>, the Riemannian curvature shapes; all energy and action are booked on the <em>Imaginaire</em>; the <em>Réel</em> is entropic and the <em>Imaginaire</em> negentropic; and the time arrow reverses on going from <em>Réel</em> to <em>Imaginaire</em> (§1.5).</p>
+<p><strong>What the corpus does <em>not</em> say.</strong> Two things it does not say must be recorded here, because the record's absence has caused the register's dilemma. The corpus never says that a four-vector lies wholly in one sheet. And it never says that its two sheets are exhaustive in the sense the framework's two sectors are — that is, it never claims that a quantity with both a real and an imaginary part has one component in each <em>sector</em>, only that it has one component in each <em>sheet</em>. The distinction is the whole of Part 2.</p>
+<h3 id="the-corpuss-mathematical-apparatus">The corpus's mathematical apparatus</h3>
+<p>Part 3's decision is easier to accept once it is seen that the corpus never had the structure that would make the register's question well-formed. This subsection records what the corpus's mathematics <strong>is</strong>, and — more useful to a reader of the register — what it is not.</p>
+<p><strong>The apparatus is complexified Riemannian geometry, and it is stipulated.</strong> Charon's setting is a Riemannian four-manifold carrying a <strong>complex</strong> metric. The whole construction is stated in three lines, RC I.1, and introduced as a <em>convention</em>:</p>
+<p>$$r = \dot r + i\tilde r, \qquad t = \dot t + i\tilde t,$$</p>
+<p>$$\text{RÉEL}:\ \tilde t = \dot r = 0, \qquad \text{IMAGINAIRE}:\ \dot t = \tilde r = 0,$$</p>
+<p>the words being <em>"nous procédons de manière conventionnelle à la partition suivante"</em> — the partition is made by convention. In <em>L'Esprit</em> the same step is taken on the metric: the complex space $C$ has $G_{\alpha\beta} = \dot G_{\alpha\beta} + i\tilde G_{\alpha\beta}$, against the real Einstein space $E$ with its $g_{\alpha\beta}$ (Esp §9, eq. (1)). Everything beneath it is general relativity in standard form: Esp 012 works through the variational principle $\delta\int R\sqrt{-g}\,d^{4}x = 0$, the geodesic equation $u^{\alpha}\nabla_{\alpha}u_{\beta} = 0$, and the divergence argument that motivates a quadratic source, without a single non-standard step.</p>
+<p><strong>Complexified Minkowski, not quaternion.</strong> Where the corpus needs the flat limit it uses the older $ict$ picture, and RC 037 states it with the axes' basis vectors made explicit: the time axis $ct$ has basis vector $1$ and the space axis $r$ has basis vector $i = \sqrt{-1}$, so that $c^{2}d\tau^{2} = ds^{2} = c^{2}dt^{2} - dr^{2}$ can be read straight off the figure. That is complexified Minkowski space in the pre-quaternion convention. <strong>The corpus contains no quaternion, no biquaternion, and no hypercomplex algebra of any kind</strong>, and it never names Hamilton or Clifford. The counts, as matching lines over the improved transcriptions with the merged duplicates excluded:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>word</th>
+<th><em>L'Esprit</em> (119 scans)</th>
+<th><em>La Relativité complexe</em> (88 scans)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>quaternion, biquaternion, Hamilton, octonion, Clifford</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><em>algèbre</em> (any algebra)</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><em>hermitien</em></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Cayley</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Hermite</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><em>matrice</em> / <em>matriciel</em></td>
+<td>6 / 3</td>
+<td>2 / 0</td>
+</tr>
+<tr>
+<td><em>spineur</em></td>
+<td>15</td>
+<td>3</td>
+</tr>
+<tr>
+<td><em>espace complexe</em></td>
+<td>48</td>
+<td>0</td>
+</tr>
+<tr>
+<td><em>riemannien</em></td>
+<td>48</td>
+<td>53</td>
+</tr>
+<tr>
+<td>Minkowski</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Cartan</td>
+<td>4</td>
+<td>3</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two entries in that table deserve a word. <em>Espace complexe</em> is the 1983 book's name for the construct and is <strong>absent from the 1987 book</strong>, which speaks of <em>la Relativité complexe</em> and of the complex space in other words; the register's citation of "RC ch. I–III" for the complex space is correct, but the <em>name</em> is Esp's. And <em>spineur</em> is the corpus's heaviest technical borrowing, discussed below.</p>
+<p><strong>What he does cite is Riemannian geometry and general relativity.</strong> The bibliographies contain Cartan's <em>Leçons sur la géométrie des espaces de Riemann</em> [Esp, ref. 15], Souriau's <em>Géométrie et Relativité</em>, Lichnerowicz's <em>Théories relativistes de la gravitation et de l'électromagnétisme</em>, Bergmann, and Tonnelat on unified field theory — the standard French general-relativity lineage, competently used. Cartan recurs where it matters: the corpus singles out its geometric tensor by <em>"les conditions de Cartan"</em> (RC 021, RC 022), and inventory §11.4 records that this use is <strong>correct</strong> — Cartan–Lovelock uniqueness. What is absent from both bibliographies is any work on complex, hypercomplex or quaternion algebra, and any work on the algebraic structure of the complexification itself.</p>
+<p><strong>Two near-misses are worth recording</strong>, because each shows that he knew a ready-made algebraic tool existed and chose not to take it. The first is the spinor. The corpus leans on spinors heavily, and Esp 011 says the general spinor formalism "can be transposed without any change" into the complex space; but he takes spinors from de Broglie's <em>méthode de fusion</em> [Esp, ref. 8], treats them as the <em>"éléments non géométriques supplémentaires"</em> he must postulate (Esp 020), and never connects them to their algebraic origin. The second is matrix calculus: Esp 098 observes that the mathematics for the leptonic model was <em>"déjà proposée depuis relativement longtemps, et pour un objectif complètement différent"</em>, and names <strong>Cayley's</strong> matrix calculus, <strong>Hermite's</strong> development of it, and its later use by Born, Jordan and Heisenberg — an explicit recognition that the tool was pre-existing, and an explicit choice of matrices over hypercomplex numbers.</p>
+<p><strong>The consequence for the register's question.</strong> A complexified four-dimensional space with a <strong>stipulated</strong> real/imaginary partition is <strong>under-determined as an algebraic object</strong>. Its eight real parameters admit four involutions and six subspaces, and the physics depends on which structure is nominated. The corpus nominates none: it fixes the partition by convention, uses the $+i$ of complexified Minkowski, and stops. So when the register asks whether Charon's <em>Réel</em> is $\mathbb{M}_+$ or $\mathbb{M}_-$, it asks a question the corpus's own construction cannot answer — and, as Part 2 shows by set arithmetic, does not need to answer. The question was ill-posed in exactly the way a stipulated complexification makes it ill-posed, and the transversality of Part 2 is the framework's way of saying so.</p>
+<p><strong>An assessment, recorded as an assessment.</strong> Why the foundations were left in that state has a plausible explanation in how the work was done. Charon was a physicist writing general-relativistic and quantised-geometric arguments, and later writing for a general readership (<em>L'Esprit, cet inconnu</em>, 1977; <em>L'Être et le Verbe</em>, 1983; <em>Les Lumières de l'invisible</em>, 1985). Both bibliographies are physics and geometry, with two philosophy-of-physics titles in the 1987 book (Skolimowski's <em>The Theatre of the Mind</em>, d'Espagnat's <em>A la recherche du Réel</em>), and the 1987 acknowledgement thanks Einstein and Newton and names no one else. <strong>There is no sign of a mathematical collaborator anywhere in the corpus.</strong> A geometer as co-author would plausibly have forced the question this article has to settle — which involution, which subspace, and what the partition is a partition <em>of</em> — and would have removed the ambiguity at its source, rather than leaving it for a 2026 reconstruction. This is a judgement about <strong>practice, not physics</strong>, and it is labelled as such: the failure mode the register names in its rules of engagement was <strong>arithmetic presented as prediction</strong> (R1, and the §12 triage), not geometry, and a cleaner foundation would not have saved the lepton tower, $Z_{\max}$ or the 300-Myr era from the data that killed them. What better mathematics would have done is what this article does: make the <strong>surviving</strong> parts — the ontology, the formalism, the curvature law, the input/output ledgers — legible enough to rebuild.</p>
+<h3 id="the-frameworks-side">The framework's side</h3>
+<p>The framework's side is four-sector structure, and the companion articles fix it. What this article needs from them is three facts.</p>
+<p><strong>The sectors, by which direction carries the $i$.</strong> A general element is in $\mathbb{M}_-$ if and only if it has the form</p>
+<p>$$\tilde Q = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3,$$</p>
+<p>with scalar part <strong>purely imaginary</strong> (the time coordinate $ict$) and vector part <strong>real</strong> (the three spatial coordinates). A general element is in $\mathbb{M}_+$ if and only if it has the form</p>
+<p>$$\tilde Q = q_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3,$$</p>
+<p>with scalar part <strong>real</strong> (the informational time $ct'$) and vector part <strong>purely imaginary</strong> (the informational space $ix'$). So the two sectors are distinguished by one thing only: <strong>in $\mathbb{M}_-$ the scalar, that is the time direction, carries the $i$; in $\mathbb{M}_+$ the three vector, that is the space directions, carry it.</strong></p>
+<p><strong>What each sector is for.</strong> $\mathbb{M}_-$ contains the four-position, four-velocity, four-momentum, four-force, four-potential and four-current of a relativistic system; it is "the natural home of the four-vectors of relativistic physics". $\mathbb{M}_+$ contains the identity, the boost biquaternions, the Hermitian forms and the idempotents; its rank-one projectors are the pure states of a two-state system, and it acts on $\mathbb{M}_-$ by <strong>rotor conjugation</strong>. In one line: $\mathbb{M}_-$ is where a physics four-vector lives, $\mathbb{M}_+$ is where an operator or a state lives.</p>
+<p><strong>The form.</strong> The level-1 biquaternion norm $N(\tilde Q) = \tilde Q\bar{\tilde Q} = \sum_\mu Q_\mu^{2}$ has the identity Gram matrix, so on $\mathbb{B}$ there is no minus sign in the form itself. A minus appears only when an element is read on a <em>real</em> basis, and the two sectors read the one form differently: $\mathbb{M}_-$ on its basis $\{ie_0, e_1, e_2, e_3\}$ gives $(-,+,+,+)$, and $\mathbb{M}_+$ on its basis $\{e_0, ie_1, ie_2, ie_3\}$ gives $(+,-,-,-)$. The two readings are mirror images through the identity $N(i\tilde Q) = -N(\tilde Q)$. This is the framework's answer to the corpus's "same two signatures" sub-claim (inventory §11.1), and it is recorded in Part 4: the sub-claim is <strong>correct at level 1 and exact at level 2 in the mirror sense</strong>.</p>
+<h2 id="part-2-the-two-partitions-of-eight-parameters">Part 2 — The two partitions of eight parameters</h2>
+<p>Everything in this Part is set arithmetic on eight elements, and it is worked here because the whole decision turns on it and because doing it by inspection is how the error arose.</p>
+<h3 id="the-corpuss-partition">The corpus's partition</h3>
+<p>The corpus writes every coordinate as a real part plus $i$ times an imaginary part, and puts the real parts on the <em>Réel</em> and the imaginary parts on the <em>Imaginaire</em>. In the framework's symbols that is the partition</p>
+<p>$$\text{Réel} = \{q_0, q_1, q_2, q_3\}, \qquad \text{Imaginaire} = \{q'_0, q'_1, q'_2, q'_3\}.$$</p>
+<p>This is a $4 + 4$ split of the eight parameters, and it is what the register's table calls "the same construction" as $Q = q + iq'$. <strong>It is the framework's Prime Convention, and the Prime Convention is not a sector statement.</strong></p>
+<h3 id="the-frameworks-partition">The framework's partition</h3>
+<p>The framework's sectors are a <em>different</em> $4 + 4$ split of the same eight parameters:</p>
+<p>$$\mathbb{M}_- = \{q'_0,\; q_1,\; q_2,\; q_3\}, \qquad \mathbb{M}_+ = \{q_0,\; q'_1,\; q'_2,\; q'_3\}.$$</p>
+<p>Each sector takes <strong>one primed parameter and three unprimed ones</strong> — the primed one being the time for $\mathbb{M}_-$ and the three spaces for $\mathbb{M}_+$. Neither sector is a set of "the primed parameters" or "the unprimed parameters".</p>
+<h3 id="the-two-partitions-are-transversal">The two partitions are transversal</h3>
+<p>The two partitions cross. Grouping the eight parameters by <em>which coordinate</em> they belong to (time, $\mu = 0$; space, $\mu = k$) and by <em>whether they carry the $i$</em>, gives four atoms of two parameters each, and the sectors cut across them:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>real part $q$</th>
+<th>imaginary part $q'$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>time</strong> ($\mu = 0$)</td>
+<td>$q_0$ — belongs to $\mathbb{M}_+$</td>
+<td>$q'_0$ — belongs to $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td><strong>space</strong> ($\mu = k$)</td>
+<td>$q_k$ — belongs to $\mathbb{M}_-$</td>
+<td>$q'_k$ — belongs to $\mathbb{M}_+$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The same crossing read the other way:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$\mathbb{M}_-$</th>
+<th>$\mathbb{M}_+$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>time</strong></td>
+<td>$q'_0$</td>
+<td>$q_0$</td>
+</tr>
+<tr>
+<td><strong>space</strong></td>
+<td>$q_k$</td>
+<td>$q'_k$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two counts follow directly, and they are the article's central arithmetic. The corpus's <strong>Réel</strong> is $\{q_0\} \cup \{q_k\}$: <strong>one</strong> parameter of $\mathbb{M}_+$ (the real time $q_0$) and <strong>three</strong> parameters of $\mathbb{M}_-$ (the real space $q_k$). The corpus's <strong>Imaginaire</strong> is $\{q'_0\} \cup \{q'_k\}$: <strong>one</strong> parameter of $\mathbb{M}_-$ (the imaginary time $q'_0$) and <strong>three</strong> parameters of $\mathbb{M}_+$ (the imaginary space $q'_k$). So <strong>each corpus sheet is half of each framework sector</strong>, and the sectors are recovered as $\mathbb{M}_- = (\text{Réel} \cap \mathbb{M}_-) \cup (\text{Imaginaire} \cap \mathbb{M}_-)$ and likewise for $\mathbb{M}_+$.</p>
+<p><strong>The consequence is immediate and it is the reason the register's dilemma has no horns.</strong> The question "is Charon's <em>Réel</em> $\mathbb{M}_+$ or $\mathbb{M}_-$?" has no answer, because <em>Réel</em> <strong>is</strong> both, in the proportion three parameters to one. The question presupposes that the corpus's sheets and the framework's sectors are the same kind of thing, and they are not: the sheets are a partition by "carries the $i$", the sectors are a partition by "is the direction whose coordinate carries the $i$". Two different equivalence relations on the same eight parameters give two different partitions, and these two happen to be transversal.</p>
+<h2 id="part-3-the-decision">Part 3 — The decision</h2>
+<h3 id="the-corpuss-own-premise-is-the-map">The corpus's own premise <em>is</em> the map</h3>
+<p>The decision does not have to be made by analogy, because the corpus states the map itself and the register already identifies it. Inventory §1.2 gives the corpus's justification for the second sheet: <strong>crossing a non-empty Schwarzschild horizon swaps space and time.</strong> The register's dictionary table records the framework side of that row as <em>"the local complex structure deciding which direction carries the $i$"</em>, and calls it the cleanest carry-over.</p>
+<p>Read together, those two statements are one statement, and it is the definition of the dictionary:</p>
+<blockquote>
+<p><strong>The corpus's <em>Réel</em>/<em>Imaginaire</em> split is the framework's real-part/imaginary-part split; the corpus's space/time exchange is the framework's exchange of which direction carries the $i$; and the framework's two sectors are the two sides of that exchange.</strong></p>
+</blockquote>
+<p>The framework's $\mathbb{M}_-$ is "time carries the $i$, space does not"; $\mathbb{M}_+$ is "space carries the $i$, time does not". Passing between them is exactly the swap the corpus invokes to justify a second spacetime. So the corpus's premise, read exactly, supplies the sector structure — and what it supplies is not "the <em>Réel</em> is a sector" but "<strong>the two sheets together carry the sector structure, and the sector structure is the space/time exchange</strong>".</p>
+<h3 id="why-the-two-horns-of-the-dilemma-are-both-unavailable">Why the two horns of the dilemma are both unavailable</h3>
+<p>The register's first horn is that <strong>the energy column swaps</strong> — that Charon's energy should be re-assigned from the <em>Imaginaire</em> to $\mathbb{M}_-$. Part 5 shows this is not needed and not possible: no swap of a bookkeeping column can move an observable four-momentum into one sheet, because a four-momentum has a time component and three space components and the corpus's sheets separate exactly those.</p>
+<p>The register's second horn is that <strong>Charon's real sheet is $\mathbb{M}_+$ because it carries form rather than energy.</strong> This fails on the framework's own definition: $\mathbb{M}_+$ is the sector whose <strong>space</strong> directions carry the $i$, so an element of $\mathbb{M}_+$ has an imaginary vector part — it is extended in an imaginary space. The corpus's <em>Réel</em> is the real-coordinate sheet, and the corpus's three real spatial directions are $q_k$, which is $\mathbb{M}_-$, not $\mathbb{M}_+$. A sheet that carries three <em>real</em> spatial parameters cannot be $\mathbb{M}_+$.</p>
+<p>Nor is the first horn's mirror-image available — that the <em>Réel</em> is $\mathbb{M}_-$ outright — for the same arithmetic: the <em>Réel</em> carries $q_0$, the real time, and $\mathbb{M}_-$ has no real time parameter.</p>
+<h3 id="the-decision-stated">The decision, stated</h3>
+<p><strong>Decision.</strong> The corpus's <em>Réel</em> and <em>Imaginaire</em> are <strong>not</strong> framework sectors. They are the real-coefficient and imaginary-coefficient halves of the eight parameters — the framework's Prime Convention — and the framework's sectors $\mathbb{M}_\pm$ cut across them. The dictionary is therefore <strong>not</strong> a map from the corpus's sheets to the framework's sectors; it is a map from <strong>quantities</strong> to sectors, decided per quantity, using the corpus's own space/time-exchange premise. The corpus's two-sheet structure is a <strong>coarser</strong> structure than the framework's four-sector-plus-involutions structure: it is what remains of the framework when the sector partition is replaced by the partition into real and imaginary coefficient parts.</p>
+<p><strong>One line, for the register.</strong> <em>The corpus is the framework with the sector structure collapsed onto the Prime Convention.</em></p>
+<h2 id="part-4-the-dictionary-entry-by-entry">Part 4 — The dictionary, entry by entry</h2>
+<p>The rule is the one Part 3 states: decide per quantity, using the corpus's own exchange premise. The table below is the article's working deliverable. Where an entry needs an argument it is given below the table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>corpus quantity</th>
+<th>sector</th>
+<th>argument</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>four-position $x^\mu$</td>
+<td>$\mathbb{M}_-$</td>
+<td>the four-position of physics is $\tilde Q = ict\,e_0 + \mathbf{x}$, an $\mathbb{M}_-$ element</td>
+</tr>
+<tr>
+<td>four-velocity $u^\alpha$</td>
+<td>$\mathbb{M}_-$</td>
+<td>four-vectors of relativistic physics are $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>four-momentum $p^\mu$, the internal neutrino's $W_0$</td>
+<td>$\mathbb{M}_-$</td>
+<td>same</td>
+</tr>
+<tr>
+<td>proper density $\rho$</td>
+<td>$\mathbb{M}_-$</td>
+<td>a density on the material spatial directions $q_k$</td>
+</tr>
+<tr>
+<td>$T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta$</td>
+<td>$\mathbb{M}_-$</td>
+<td>product of $\mathbb{M}_-$ objects; the corpus's source tensor is an $\mathbb{M}_-$ tensor</td>
+</tr>
+<tr>
+<td>metric $G_{\alpha\beta}$, scalar curvature $R$, $\Lambda$</td>
+<td>$\mathbb{M}_-$</td>
+<td>the geometry of the material space; the corpus's <em>Réel</em> geometry is $\mathbb{M}_-$'s</td>
+</tr>
+<tr>
+<td>$\xi$, $\Omega_0$, $l_0$, $\alpha$, $\beta$</td>
+<td>sector-neutral</td>
+<td>pure scalars and coupling constants; no sector content</td>
+</tr>
+<tr>
+<td>spin $S$</td>
+<td>$\mathbb{M}_+$</td>
+<td>a rotation; $\mathbb{M}_+$ acts on $\mathbb{M}_-$ by rotor conjugation</td>
+</tr>
+<tr>
+<td>the "prime" $i$ of the corpus's $x = \dot x + i\ddot x$</td>
+<td><strong>not a sector</strong></td>
+<td>it is the Prime Convention's $i$, the same $i$ that appears in $Q_\mu = q_\mu + iq'_\mu$</td>
+</tr>
+<tr>
+<td>the micro-universe, the internal neutrino as a state</td>
+<td>$\mathbb{M}_+$</td>
+<td>internal state of a two-state-type system; $\mathbb{M}_+$ is the state/operator sector</td>
+</tr>
+<tr>
+<td>memory, negentropy, the éon as Knower</td>
+<td>$\mathbb{M}_+$</td>
+<td>informational; inventory §11.7</td>
+</tr>
+<tr>
+<td>the pulsation (radial), the pulse $P$</td>
+<td><strong>to be argued</strong></td>
+<td>see the note below; S11 §5.5 owns this</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-entries-that-need-an-argument">The entries that need an argument</h3>
+<p><strong>The geometry is $\mathbb{M}_-$'s, and this is a change to the register.</strong> The register's dictionary row reads <em>"real sector carries curvature, no energy (§1.3) | geometry sits with the metric | the one mapping that must be argued, not assumed"</em>. The argument is now available and it goes the other way from a naive reading of the row: the metric, the scalar curvature and $\Lambda$ are properties of the <strong>material</strong> space — the space whose real directions are $q_k$ — and that is $\mathbb{M}_-$. So the corpus's <em>Réel</em> geometry is $\mathbb{M}_-$'s geometry, and the register's note "geometry sits with the metric" is right while its placement of that geometry in $\mathbb{M}_+$ is not. The corpus's <em>Réel</em> is where the geometry is <em>written</em>; the framework's $\mathbb{M}_-$ is where it <em>belongs</em>, because $\mathbb{M}_-$ is the sector that owns the real spatial directions.</p>
+<p><strong>The spin is $\mathbb{M}_+$'s.</strong> The framework's $\mathbb{M}_+$ acts on $\mathbb{M}_-$ by rotor conjugation, and the corpus's spin is a rotation of the image about $M'$ on the phase surface (S11 §1.2). A rotation generator is an $\mathbb{M}_+$ object in the framework's own account of rotors. This is the one entry where the corpus's allocation and the framework's agree in an unexpected way: the corpus books the spin on the <em>Imaginaire</em> as an action, and the framework books rotations in $\mathbb{M}_+$ — and the spin's action is $\tfrac12n\hbar$, whose parameters include $q'_k$, the imaginary space, which is $\mathbb{M}_+$. So both say $\mathbb{M}_+$, by different routes. The entry is recorded as a <strong>confirmation</strong>, not an adjustment.</p>
+<p><strong>The pulse is left open.</strong> The corpus's pulse is a radial oscillation of the boundary — an oscillation in the real spatial direction — which points to $\mathbb{M}_-$, while its half-integral action and its role in the equipartition (S11 §1.4) point to the same $q'_k$ argument that puts the spin in $\mathbb{M}_+$. The two readings disagree and S11 §5.5 is the article that owns the pulse's three jobs. This article does not decide it, and says so rather than guessing.</p>
+<h3 id="the-same-two-signatures-sub-claim">The "same two signatures" sub-claim</h3>
+<p>Inventory §11.1 notes that the corpus's sub-claim that the two sectors carry the <strong>same</strong> metric signature <em>"is the strongest formal version of it"</em>. The framework settles the sub-claim, and it settles it in the corpus's favour at the level that matters. At level 1 the complex-linear norm $N$ has the identity Gram matrix, so the form is the same on both sectors and there is no minus sign to differ about. At level 2, read on each sector's real basis, the readings are $(-,+,+,+)$ for $\mathbb{M}_-$ and $(+,-,-,-)$ for $\mathbb{M}_+$, which are negatives of one another — the mirror relation $N(i\tilde Q) = -N(\tilde Q)$. So the sub-claim is <strong>correct at level 1</strong>, <strong>mirror-exact at level 2</strong>, and <strong>wrong only if "signature" is read as the level-3 Clifford metric</strong>, which is a translation tool and not a framework convention (S5 and the companion article both say so). Recorded as a <strong>pass</strong> for the corpus.</p>
+<h2 id="part-5-the-energy-question-resolved">Part 5 — The energy question, resolved</h2>
+<p>This Part resolves the register's dilemma, and it resolves it by showing that the corpus's bookkeeping sentence is <strong>true of the parameters and was never a claim about sectors</strong>.</p>
+<h3 id="the-corpuss-sentence-read-exactly">The corpus's sentence, read exactly</h3>
+<p>The corpus says: the <em>Réel</em> carries no energy and no momentum; all energy and action are booked on the <em>Imaginaire</em> (inventory §1.3). Now put an observable four-momentum in the framework's language. In $\mathbb{M}_-$ it is</p>
+<p>$$\tilde P = m\tilde U = i\,p'_0\,e_0 + p_1e_1 + p_2e_2 + p_3e_3,$$</p>
+<p>with $p'_0 = E/c$. Its <strong>time</strong> component is $ip'_0$: it carries the $i$, and therefore by Part 2 it lies among the <strong>imaginary coefficient parts</strong>, which is the corpus's <em>Imaginaire</em>. Its <strong>space</strong> components are $p_1, p_2, p_3$: they are real, and therefore lie among the <strong>real coefficient parts</strong>, which is the corpus's <em>Réel</em>.</p>
+<p><strong>So the corpus's sentence is exactly right about the energy and exactly wrong about the momentum</strong>, if "energy and momentum" is read as two components of one object. The energy component is on the <em>Imaginaire</em>; the momentum components are on the <em>Réel</em>; and the corpus asserted both to be on the <em>Imaginaire</em>. The assertion is not a physical error. It is a consequence of the corpus's split being by "carries the $i$" rather than by sector, and the corpus had no obligation to notice, because it never claimed that a four-vector lies in one sheet.</p>
+<h3 id="why-no-swap-is-available">Why no swap is available</h3>
+<p>This is the reason the register's first horn is closed rather than merely unnecessary. To "swap the energy column" one would have to move the corpus's energy assignment from the <em>Imaginaire</em> to $\mathbb{M}_-$. But the corpus's <em>Imaginaire</em> is not a sector, so there is nothing to move <em>from</em>: the energy component $q'_0$ is in $\mathbb{M}_-$ <strong>already</strong>, and the momentum components $q_k$ are in $\mathbb{M}_-$ <strong>already</strong>, and the corpus simply filed them in two different sheets. $\mathbb{M}_-$ holds the energy and the momentum of the material world, which is what the framework says it holds. The corpus's filing system is coarser; the physics underneath it is the same.</p>
+<h3 id="what-the-corpus-got-wrong-in-words">What the corpus got wrong, in words</h3>
+<p>One thing should be stated plainly, because a reader of the corpus will otherwise be misled. The corpus's sentence <em>"the real sector carries no energy and no momentum"</em> is <strong>false as written</strong>, on the framework's reading, and it is false for a reason internal to the corpus as well. Charon's own source tensor is $T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta$, built from the unit four-velocity $u^\alpha$ — a four-vector, whose space components are real — and from the proper density $\rho$ of the real space. So the corpus's <em>energy-momentum content</em> is written in terms of <em>Réel</em> objects, while the corpus's prose says the <em>Réel</em> carries no energy or momentum. The prose and the equations disagree, and the equations are right. This is recorded as a <strong>correction to the corpus's verbal bookkeeping</strong>, not as a refutation of anything Charon computed.</p>
+<h3 id="what-the-corpuss-negentropy-claim-becomes">What the corpus's negentropy claim becomes</h3>
+<p>One consequence is worth drawing, because it is the most philosophically loaded part of the corpus. The corpus's assertion that the <em>Imaginaire</em> is negentropic, and that action can grow there by itself (inventory §1.4), is an assertion about the imaginary coefficient parts — the same set that contains the energy component of every four-momentum and also, under Part 4, the spin and the micro-universe's internal states. In the framework those land in <strong>two different sectors</strong>: the energy component $q'_0$ in $\mathbb{M}_-$, the spin and the internal states in $\mathbb{M}_+$. So the corpus's single negentropic sheet is a <strong>conflation</strong> of the material time direction with the informational sector, and the framework separates them: the material time component is not where information is stored, and $\mathbb{M}_+$ is. The corpus's intuition — that there is a domain where action grows and information is not erased — survives, and it is an intuition about $\mathbb{M}_+$, which is precisely the sector the framework calls informational. The corpus reached the right domain by the wrong partition.</p>
+<h2 id="part-6-the-verdict-on-gate-g-a">Part 6 — The verdict on gate G-A</h2>
+<p>The register's gate G-A reads: <em>"A dictionary maps both sectors without contradiction. Consequence if failed: the two frameworks are different theories; stop and say so."</em></p>
+<p><strong>G-A passes, in a refined form, and the refinement is the article's result.</strong></p>
+<p>The dictionary maps both sectors without contradiction, provided the corpus's sheets are <strong>not</strong> identified with the sectors. Every corpus quantity of consequence can be assigned a sector by the per-quantity rule of Part 4, and the assignments are consistent: the observable content ($\rho$, $u^\alpha$, $T_{\alpha\beta}$, the metric, $R$, $\Lambda$, the four-position) is $\mathbb{M}_-$; the state, operator, spin and memory content is $\mathbb{M}_+$; the coupling constants are sector-neutral. The corpus's verbal bookkeeping disagrees with its own equations in the one place Part 5 identifies, and the equations' reading is the consistent one.</p>
+<p><strong>Why this is a pass and not a failure.</strong> The two frameworks are descriptions of the <em>same</em> complexified space: the same algebra $\mathbb{B}$, the same eight real parameters, the same complexification, and — as Part 3 shows using the corpus's own premise — the same space/time exchange at the base of the sector structure. They differ in <strong>how finely they partition</strong> that space. The framework partitions it into two sectors by which direction carries the $i$; the corpus partitions it into two sheets by which <em>coefficient part</em> carries the $i$. A coarser partition of one space is not a different theory, and the corpus's partition is the coarser one.</p>
+<p><strong>The register's dilemma, resolved.</strong> The register asked which way the energy column should go. The answer is that there is no energy column to swap, because the corpus does not have the framework's sectors and therefore cannot put energy in the wrong one. The concrete corrections are three, and they are all to the corpus's <em>prose</em> and to the register's <em>table</em>:</p>
+<ol>
+<li>The register's dictionary row <em>"two sheets RÉEL/IMAGINAIRE | two subspaces M+/M−"</em> records an identification that does not hold. The sheets are the Prime Convention; the sectors are transversal to them. The row should read: <em>two sheets = the real/imaginary part split; the sectors cut across it.</em></li>
+<li>The register's row <em>"real sector carries curvature, no energy | geometry sits with the metric"</em> should separate the two clauses: the geometry of the material space is $\mathbb{M}_-$'s (Part 4), while the corpus's statement that the <em>Réel</em> carries no energy is false as written (Part 5).</li>
+<li>The register's open-tension note, which poses the dilemma, should be replaced by the resolution <em>"the corpus is the framework with the sector structure collapsed onto the Prime Convention"</em>.</li>
+</ol>
+<p><strong>What would have made G-A fail.</strong> It is worth stating the counterfactual, because it sharpens what the pass means. G-A would have failed if no consistent per-quantity assignment of sectors existed — if, for instance, the corpus's energy-momentum content had required both $\mathbb{M}_-$ and $\mathbb{M}_+$ for the <em>same</em> component, or if the corpus's premise had contradicted the framework's sector rule. Neither happens: the assignment exists, and it is the corpus's own exchange premise that generates it.</p>
+<h2 id="part-7-what-this-article-does-not-decide">Part 7 — What this article does not decide</h2>
+<p><strong>The pulse's sector.</strong> Part 4 leaves it open, on the ground that two readings disagree and S11 §5.5 owns the pulse. A reader who needs it should read S11 §5.5 and the note here together.</p>
+<p><strong>Whether $\mathbb{M}_+$ is physically realised.</strong> The framework's own informational-sector article states its honest position: the algebraic identification of $\mathbb{M}_+$ with the qubit operator algebra is established, but whether the structure is <em>physically realised</em> as a distinct sector is a hypothesis. This article inherits that position and does not strengthen it. The corpus's <em>Imaginaire</em> is <em>evidence of a kind</em> for the realisation — the corpus independently posited a second domain and put information-like content in it — and that is worth recording as supporting the hypothesis, not as establishing it.</p>
+<p><strong>The fine structure of the corpus's own complexification.</strong> Whether the corpus's $x = \dot x + i\ddot x$ is <em>literally</em> the framework's $Q = q + iq'$, or only isomorphic to it under a convention the corpus did not state, is left to S3 (<em>Complexification vs complexification</em>), which is the article the register assigns to it.</p>
+<p><strong>The Clifford-vector subtlety.</strong> The framework's conventions article identifies a Clifford vector with $\gamma^{0}\Phi(w)$ for $w \in \mathbb{M}_+$, while the material-sector article places the four-position in $\mathbb{M}_-$ as a biquaternion. These are two levels — a Dirac-algebra translation and a biquaternion sector statement — and they are not in conflict, but they are easy to conflate. The point is flagged here and belongs to the conventions article, not to this one.</p>
+<p><strong>The pulse's own bookkeeping.</strong> Whether the pulse is $\mathbb{M}_-$ or $\mathbb{M}_+$ (Part 4) also bears on whether the corpus's equipartition is a <em>within-sector</em> statement — in which case it is a partition of $\mathbb{M}_-$'s action between two of the sector's own directions — or a <em>cross-sector</em> statement. S11 §4.1 and §5.5 are the owners, and the question is recorded so that S11 need not rediscover it.</p>
+<h2 id="summary">Summary</h2>
+<p>The register asked whether Charon's <em>Réel</em> is $\mathbb{M}_+$ or $\mathbb{M}_-$, and posed it as a dilemma with two horns, either of which would decide whether the two frameworks are the same theory. <strong>The dilemma is false.</strong> Charon's <em>Réel</em>/<em>Imaginaire</em> split is the split of the eight real parameters into real parts $\{q_0, q_1, q_2, q_3\}$ and imaginary parts $\{q'_0, q'_1, q'_2, q'_3\}$ — the framework's Prime Convention. The framework's sectors are a <em>different</em> partition, $\mathbb{M}_- = \{q'_0, q_1, q_2, q_3\}$ and $\mathbb{M}_+ = \{q_0, q'_1, q'_2, q'_3\}$, in which each sector takes one primed and three unprimed parameters. <strong>The two partitions are transversal:</strong> the corpus's <em>Réel</em> is one parameter of $\mathbb{M}_+$ (the real time) and three of $\mathbb{M}_-$ (the real space); the corpus's <em>Imaginaire</em> is one of $\mathbb{M}_-$ (the imaginary time) and three of $\mathbb{M}_+$ (the imaginary space). So each sheet is half of each sector, the question "which sector is the <em>Réel</em>" has no answer, and neither horn of the register's dilemma is available: there is no energy column to swap, and a sheet carrying three <em>real</em> spatial parameters cannot be $\mathbb{M}_+$.</p>
+<p><strong>The map is the corpus's own premise.</strong> Inventory §1.2 gives the corpus's reason for the second sheet: crossing a Schwarzschild horizon swaps space and time, multiplying every frame vector by $i$. The framework's $\mathbb{M}_-$ is "the time direction carries the $i$" and $\mathbb{M}_+$ is "the space directions carry it", so the corpus's own justification <strong>is</strong> the sector structure. What it supplies is not "the <em>Réel</em> is a sector" but "the two sheets together carry the sectors, and the sectors are the space/time exchange".</p>
+<p><strong>The energy question dissolves.</strong> A four-momentum in $\mathbb{M}_-$ is $\tilde P = ip'_0e_0 + p_ke_k$: its time component carries the $i$ and so lies among the imaginary coefficient parts, which is the corpus's <em>Imaginaire</em>; its space components are real and lie on the <em>Réel</em>. The corpus's sentence "all energy is booked on the <em>Imaginaire</em>" is therefore <strong>right about the energy component and wrong about the momentum</strong>, and its own source tensor $T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta$ is written in <em>Réel</em> objects while the prose says the <em>Réel</em> carries none. The prose and the equations disagree; the equations are right; and the correction is to the corpus's <strong>verbal bookkeeping</strong>, not to anything it computed. The corpus's negentropy intuition survives, relocated: it is an intuition about $\mathbb{M}_+$, reached by the wrong partition.</p>
+<p><strong>Why the question was ill-posed, on the corpus's side.</strong> The corpus's mathematics is complexified Riemannian geometry with the real/imaginary partition <strong>stipulated</strong> (RC I.1: <em>"de manière conventionnelle"</em>), in the $ict$ Minkowski convention, and it contains <strong>no quaternion, biquaternion or hypercomplex algebra at all</strong> — zero occurrences of quaternion, biquaternion, Hamilton, octonion and Clifford across both books, and zero of <em>algèbre</em>. Its cited mathematics is Cartan, Souriau, Lichnerowicz, Bergmann and Tonnelat, competently used; its heaviest technical borrowing is the spinor, taken from de Broglie and never connected to its algebraic origin. A stipulated complexification is <strong>under-determined as an algebraic object</strong>, so the register's question could not be answered from the corpus, and — as Part 2 shows — did not need to be. What he knew and declined is instructive: he names Cayley's and Hermite's matrix calculus at Esp 098 as mathematics <em>"déjà proposée depuis relativement longtemps"</em>, and chooses matrices over hypercomplex numbers.</p>
+<p><strong>The verdict.</strong> Gate G-A <strong>passes in a refined form</strong>: the dictionary maps both sectors without contradiction, once sector membership is decided <strong>per quantity</strong> and never per sheet. In one line, <em>the corpus is the framework with the sector structure collapsed onto the Prime Convention</em>. The observable content ($\rho$, $u^\alpha$, $T_{\alpha\beta}$, the metric, $R$, $\Lambda$) is $\mathbb{M}_-$; the spin, the internal states, the memory and the negentropy are $\mathbb{M}_+$; the coupling constants are sector-neutral; the pulse is left to S11. Three corrections to the register follow, and they are stated in Part 6: the row identifying the sheets with the sectors does not hold, the row on the <em>Réel</em>'s geometry must be split from the false claim about its energy, and the open-tension note should be replaced by the resolution. Left undecided, deliberately: the pulse's sector, whether $\mathbb{M}_+$ is physically realised, and whether the corpus's complexification is literally the framework's.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$q_\mu$, $q'_\mu$</td>
+<td>the eight real parameters; $Q_\mu = q_\mu + iq'_\mu$, the prime carrying the $i$</td>
+</tr>
+<tr>
+<td><em>Réel</em></td>
+<td>the corpus's real sheet: the parameters $\{q_0, q_1, q_2, q_3\}$</td>
+</tr>
+<tr>
+<td><em>Imaginaire</em></td>
+<td>the corpus's imaginary sheet: the parameters $\{q'_0, q'_1, q'_2, q'_3\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>anti-Hermitian fixed space, <em>scalar imaginary / vector real</em>: $\{q'_0, q_1, q_2, q_3\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Hermitian fixed space, <em>scalar real / vector imaginary</em>: $\{q_0, q'_1, q'_2, q'_3\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_\pm$</td>
+<td>the framework's two sectors, the fixed spaces of $\dagger$ and $\flat$</td>
+</tr>
+<tr>
+<td>the Prime Convention</td>
+<td>the framework's name for the $q$/$q'$ split, which is the corpus's sheets</td>
+</tr>
+<tr>
+<td>transversality</td>
+<td>the two partitions cross, so each corpus sheet is half of each sector</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)$</td>
+<td>the biquaternion norm $\tilde Q\bar{\tilde Q}$, identity Gram matrix at level 1</td>
+</tr>
+<tr>
+<td>$x = \dot x + i\ddot x$</td>
+<td>the corpus's complex coordinate; the split is the Prime Convention, not a sector</td>
+</tr>
+<tr>
+<td>$\tilde P = ip'_0e_0 + p_ke_k$</td>
+<td>a four-momentum in $\mathbb{M}_-$; $p'_0 = E/c$</td>
+</tr>
+<tr>
+<td>$T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta$</td>
+<td>the corpus's source tensor, an $\mathbb{M}_-$ object</td>
+</tr>
+<tr>
+<td>$R = \xi^{2}\rho^{2} + 4\Lambda$</td>
+<td>the curvature law of the material space, $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>rotor conjugation</td>
+<td>the action of $\mathbb{M}_+$ on $\mathbb{M}_-$, where the spin lives</td>
+</tr>
+<tr>
+<td>G-A</td>
+<td>the register's gate: "a dictionary maps both sectors without contradiction"</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Conventions in the Biquaternion Universe</em>, for the algebra, the basis, the four involutions, the six subspaces, the Prime Convention, and the three metric levels on which Part 4's "same two signatures" entry rests.</li>
+<li><em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>, for the sector's definition, its imaginary scalar and real vector parts, and the four-vectors of relativistic physics that live in it — the basis of Part 5.</li>
+<li><em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, for the real scalar and imaginary vector parts, the idempotents, the rotor action on $\mathbb{M}_-$, and the article's honest position that physical realisation of $\mathbb{M}_+$ remains a hypothesis — which Part 7 inherits.</li>
+<li>J. E. Charon, <em>La Relativité complexe</em> (1987), chapters I–III, and <em>L'Esprit et la Relativité complexe</em> (1983), §V, for the complex Riemannian space, the two sheets, the energy bookkeeping, and the horizon argument of §1.2 that Part 3 promotes to the definition of the map.</li>
+<li>S5, <code>charon-s05-notation-and-units</code>, for the corpus's symbols, units and hazards, and Part 4 of that article for the bridge this article completes.</li>
+<li>S3, <code>charon-s03-complexification-vs-complexification</code>, for the question this article deliberately leaves open: whether the corpus's complexification is literally the framework's.</li>
+<li>S11, <code>charon-s11-quantised-action-spin-and-pulse</code>, §1.4, §4.1 and §5.5, for the spin and pulse whose sector assignment Part 4 leaves partly open.</li>
+<li><code>CHARON_IDEAS_AND_CLAIMS.md</code> §1.1–1.5 and §11.1, for the inventory items this article settles: the doubling of the universe, the horizon justification, the energy bookkeeping, the negentropy claim, and the "same two signatures" sub-claim; and §11.4 for its verdict on the Cartan conditions, which Part 1 cites.</li>
+<li>The corpus's own foundation passages, for Part 1's account of the apparatus: RC I.1 for the stipulated partition, RC 037 for the $ict$ Minkowski picture, Esp §9 and eq. (1) for the complex metric $G_{\alpha\beta}$ against the Einstein $g_{\alpha\beta}$, Esp 011 and Esp 020 for the spinors, Esp 098 for the matrix-calculus near-miss, and the bibliographies at Esp refs. 15 and 8 and RC 087.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

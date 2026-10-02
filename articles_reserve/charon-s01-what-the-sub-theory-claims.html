@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: What the Sub-Theory Claims — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-what-the-sub-theory-claims"><strong>Charon: What the Sub-Theory Claims</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This is the reference page of the series. Its job is to state, in one place and without argument, <strong>what the Charon sub-theory claims</strong> and <strong>what the status of each claim is</strong>, so that no other article has to carry the whole picture and no reader has to assemble it from fifteen drafts.</p>
+<p>The register's purpose fixes the frame: rebuild Jean E. Charon's program as a <strong>sub-theory</strong> in the language of the biquaternion universe, redo his calculus in full detail, and only then judge his numbers. <strong>Two ingredients are kept separate throughout, and this article separates them once, explicitly.</strong> <em>Established physics</em> is ground truth. The <em>biquaternion universe</em> is not established; it is internally consistent, and it is used here as the working language, not as a result. Every statement below says which of the two it is.</p>
+<p><strong>The article audits inventory §1.1, §1.3 and §2.1–2.3</strong>, which are respectively the doubling of the universe, the energy bookkeeping of the two sheets, and the three formal claims that open the formalism: Einstein's equations taken over unchanged, the geometric source tensor, and the quantisation of the action. It is a statement article: it adds no new calculation, and it corrects, on the corpus's own equations, the one claim in its scope that the corpus states wrongly (§1.3's bookkeeping). Everything it asserts is sourced to a numbered inventory item or to an already-drafted article.</p>
+<p><strong>What this article is not.</strong> It is not the register, which is organised by status and holds eighty-seven proposed articles; it is not S16, which audits the <em>rebuilt</em> formalism and reports what closes and what does not; and it is not a defence. It is the one-paragraph-per-claim statement that the register's Part S supposes a reader already has.</p>
+<h2 id="part-1-the-ontology">Part 1 — The ontology</h2>
+<h3 id="o1-spacetime-is-complexified-the-observable-universe-is-doubled-at-every-point">O1 — Spacetime is complexified: the observable universe is doubled at every point</h3>
+<p><strong>The claim (inventory §1.1).</strong> <code>UNIVERSE = RÉEL ∪ IMAGINAIRE</code>. Each real point $P$ has a whole micro-universe attached in an imaginary sector. The corpus writes a coordinate as $x = \dot x + i\ddot x$, with the dotted part on the <em>Réel</em> and the doubly-dotted part on the <em>Imaginaire</em>, and it carries this double bookkeeping through every equation. RC ch. I–III; Esp §V.</p>
+<p><strong>Tag: [SPEC], with a real precedent.</strong> This is the load-bearing move of the whole program. Complex, biquaternion and complexified metrics were studied as serious options by Einstein, Schrödinger and Lanczos, and later in 't Hooft's complex general relativity and in Euclidean quantum field theory. <strong>No experiment forces or supports the doubling</strong>, and it is a <em>representation</em> choice rather than a discovery. The precedent makes it respectable; it does not make it established.</p>
+<p><strong>The correction the series made (S2).</strong> The corpus's two sheets are <strong>not</strong> the framework's two sectors. The corpus's <em>Réel</em>/<em>Imaginaire</em> split is the split of the eight real parameters into real parts $\{q_0,q_1,q_2,q_3\}$ and imaginary parts $\{q'_0,q'_1,q'_2,q'_3\}$ — the framework's <strong>Prime Convention</strong> — while the framework's sectors are a <em>different</em> partition of the same eight parameters, $\mathbb{M}_- = \{q'_0, q_1, q_2, q_3\}$ and $\mathbb{M}_+ = \{q_0, q'_1, q'_2, q'_3\}$. The two partitions are <strong>transversal</strong>: each corpus sheet is half of each framework sector. <strong>Sector membership is therefore decided per quantity, never per sheet,</strong> and the statement "the universe is doubled" becomes, in the framework's language, the statement that <em>one complexified space has two real four-dimensional subspaces</em>.</p>
+<h3 id="o2-the-two-sheets-are-allocated-as-form-and-energy-and-this-allocation-is-half-wrong">O2 — The two sheets are allocated as form and energy, and this allocation is half wrong</h3>
+<p><strong>The claim (inventory §1.3, §1.4, §1.5).</strong> The real sheet carries no energy and no momentum, only <em>Formes</em> — Riemannian curvature shapes; all energy and action are booked on the imaginary sheet; the real sheet is entropic and the imaginary sheet negentropic; and the time arrow reverses on passing from one to the other.</p>
+<p><strong>Tag: [SPEC], and the energy sentence is false as written.</strong> The framework makes the defect exact. A four-momentum in $\mathbb{M}_-$ is $\tilde P = i p'_0 e_0 + p_k e_k$ with $p'_0 = E/c$: <strong>its time component carries the $i$ and so lies among the imaginary coefficient parts, which is the corpus's <em>Imaginaire</em>; its three space components are real and lie on the <em>Réel</em>.</strong> So the corpus's sentence "all energy is booked on the <em>Imaginaire</em>" is <strong>right about the energy component and wrong about the momentum</strong>, and the corpus's own source tensor $T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta$ — quoted in the very same chapter — is written in <em>Réel</em> objects while the prose says the <em>Réel</em> carries no energy. <strong>The prose and the equations disagree, and the equations are right; the correction is to the corpus's verbal bookkeeping and to nothing it computed</strong> (S2, Part 5).</p>
+<p><strong>What survives of the allocation.</strong> The geometry is $\mathbb{M}_-$'s, since $\mathbb{M}_-$ owns the three real spatial directions $q_k$ on which the metric, $R$ and $\Lambda$ are defined. The spin, the internal states, the memory and the negentropy are $\mathbb{M}_+$'s — the corpus reaches the spin's corner by a different route, and the two routes agree (S2, Part 4). The coupling constants are sector-neutral. <strong>The negentropy intuition survives, relocated:</strong> it is an intuition about $\mathbb{M}_+$, arrived at through the wrong partition. The "no energy on the real sheet" clause is <strong>not</strong> repaired; it is withdrawn.</p>
+<h3 id="o3-the-second-sheet-is-posited-not-forced">O3 — The second sheet is posited, not forced</h3>
+<p><strong>The claim (inventory §1.2).</strong> The corpus's stated reason for the doubling is that <strong>crossing a non-empty Schwarzschild horizon swaps space and time</strong>: inside $r = r_s$ the Killing vector $\partial/\partial t$ becomes spacelike and $\partial/\partial r$ timelike, and the corpus reads this as every frame vector being multiplied by $i$. RC I; Esp §V.1.</p>
+<p><strong>Tag: [MIX], and the mix is sharp.</strong> The <em>premise</em> is [EST] — the sign change of $g_{tt}$ and $g_{rr}$ across $r = r_s$ is real, and so is the change of type of the coordinates $r$ and $t$. The <em>conclusion</em> — that this licenses a second, physically populated spacetime — is [SPEC]. The corpus itself says it is an axiom and a representation ("<em>La Relativité complexe, qui suppose la complexité de l'espace physique comme un de ses axiomes de base, justifie un tel type de représentation non locale</em>", Esp 039 §1.3), and in its Annexe 7 it explicitly <strong>rejects</strong> the coordinate-change readings of the horizon — Novikov, Eddington–Finkelstein, Kruskal–Szekeres — as inexploitable in the interior. <strong>So the second sheet is licensed as a natural language and posited as an axiom; it is not forced by any theorem or any datum.</strong> S4 owns the full reading of this argument.</p>
+<h2 id="part-2-the-formalism">Part 2 — The formalism</h2>
+<p>The formalism is five statements and one axiom list. The five are what a 2026 paper can write down; the axiomatics is where the corpus's numbering fails.</p>
+<h3 id="f1-einsteins-equations-are-taken-over-unchanged-with-math27-left-free">F1 — Einstein's equations are taken over unchanged, with $\Lambda$ left free</h3>
+<p><strong>The claim (inventory §2.1, §2.8).</strong> The left-hand side of the field equations is Einstein's, and the corpus's reason for leaving it alone is a theorem, not a preference: <strong>the Cartan conditions</strong> — second-order, linear in the second derivatives of $g$, and conserved — admit $R_{\alpha\beta} - \tfrac12 g_{\alpha\beta}R + \Lambda g_{\alpha\beta}$ and nothing else, up to $\Lambda$. RC (2-2)–(2-5); Esp §II.</p>
+<p><strong>Tag: [EST] as the equation, [MATH] as the theorem.</strong> This is the <strong>Cartan–Lovelock uniqueness theorem</strong> (Lovelock, 1971) and the corpus states it correctly. <strong>It has a hard consequence that the corpus accepted and the series confirms (S7): there is no room to modify the left-hand side. Everything the corpus wants to say beyond general relativity must be said on the right-hand side</strong> — in the source tensor. That is exactly where the corpus put it, and it is why F2 carries the whole weight of the program.</p>
+<h3 id="f2-the-source-is-purely-geometric-math31-with-no-matter-field">F2 — The source is purely geometric: $T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta$, with no matter field</h3>
+<p><strong>The claim (inventory §2.2).</strong> The source of the curvature is a tensor built from the proper density $\rho$ and the unit velocity $u^\alpha$ alone. There is no separate matter Lagrangian. RC ch. II, IV (4-2); Esp (334).</p>
+<p><strong>Tag: [SPEC], with a flagged technical tension, and the tension has been re-examined.</strong> The inventory notes that a $\rho^{2}$-dust of this form cannot source a Friedmann–Lemaître expansion in the usual way: it has no independent pressure and the wrong scaling in the scale factor. <strong>That comment is correct as a strict statement about the standard Friedmann pair, and it is not fatal.</strong> S8 audits the tensor's construction and S9 redoes the confrontation in full algebra: <strong>the model does expand, the bounce at $R_0$ is derived rather than assumed, $K = +1$ is derived and is also stated in the 1987 book, and the pulsation is reproducible to $0.3\%$</strong> — which is what closes gate G-B, affirmatively (register §7). <strong>So the tension is real and local; the claim it was thought to kill survives.</strong></p>
+<h3 id="f3-the-scalar-curvature-is-quadratic-in-the-density-math38">F3 — The scalar curvature is quadratic in the density: $R = \xi^{2}\rho^{2} + 4\Lambda$</h3>
+<p><strong>The claim (inventory §1.6).</strong> The scalar curvature of the material space is quadratic in the proper density, not linear in it. RC (2-28), (4-18); and in the quantised form $R = (\Omega_0^{2}c^{2}/\hbar^{2})\rho^{2} + 4\Lambda$, RC (2-72).</p>
+<p><strong>Tag: [SPEC], and this is the program's most original structural move.</strong> Three consequences the corpus draws from it are worth naming because they are the reason it is not an arbitrary amendment: (i) a negative $\rho$ contributes a <strong>positive</strong> curvature term, so $+\rho$ and $-\rho$ never cancel; (ii) there is therefore no "creation from nothing" paradox in the model; (iii) mass is proportional to $\rho$. <strong>Nothing in established physics requires curvature to be quadratic in density, and nothing forbids it either: it is a genuinely distinct, self-consistent alternative, and it is falsifiable in principle by any direct probe of the $\rho \leftrightarrow R$ relation</strong> (S10). The identity $\xi = \Omega_0 c/\hbar$ connects this law to the constants of Part 3; it is the corpus's own, printed at Esp (49).</p>
+<h3 id="f4-the-action-is-quantised-and-split-equally-between-a-spin-and-a-pulse">F4 — The action is quantised, and split equally between a spin and a pulse</h3>
+<p><strong>The claim (inventory §2.3).</strong> At every real point $P$ the action is quantised at $\pm nh$, and it is split <strong>exactly equally</strong> between a spin $\pm n\hbar/2$ and a <em>pulse</em> $\pm n\hbar/2$; $n$ even gives a boson, $n$ odd a fermion. RC §IV.1 ("Axiome de quantification de l'espace-temps"); Esp §I and Esp 024, 026.</p>
+<p><strong>Tag: [SPEC].</strong> <strong>The half-integer pairing is the seed of everything downstream</strong> — the spin-statistics rule, the holon's radial pulsation, the period $T_0$, the lepton ladder. <strong>Nothing in established physics forces spin and pulse to be equal in magnitude</strong>, and the series must say plainly what the axiom does and does not buy (S11):</p>
+<ul>
+<li><strong>The equipartition is unobservable in the mass sector.</strong> The lepton mass equations contain only the <em>sum</em> $S + P = 2(n+\tfrac12)h$, and the ladder's step $2h/(c^{2}T)$ has $T$ fitted, so the factor 2 can be traded into $T$ with the fit unchanged. <strong>No lepton-mass measurement can test the split.</strong></li>
+<li><strong>The split makes the ladder a spin ladder, and that consequence is false.</strong> The parity rule puts the charged leptons on odd rungs, hence spins $\tfrac12\hbar, \tfrac32\hbar, \tfrac52\hbar$; the muon and the tau are measured spin-½. <strong>That claim is post-mortem</strong> (P23).</li>
+<li><strong>The other dead claim of the pulse</strong> — that the radial pulsation sources gravity — is <strong>P24</strong>.</li>
+<li><strong>What survives is the existence argument</strong>: an integer action cannot be a single half-integral object. That is the strongest thing the quantification does, and it is why the axiom is retained in Part S while its two consequences are filed in Part P.</li>
+</ul>
+<h3 id="f5-the-oscillator-obeys-the-kleingordon-equation">F5 — The oscillator obeys the Klein–Gordon equation</h3>
+<p><strong>The claim (inventory §2.5).</strong> An oscillator $\Sigma$ at each point obeys $\Box U + (M_0^{2}c^{2}/\hbar^{2})U = 0$, which the corpus calls the fusion equation of spin-$n/2$ states of de Broglie's school. RC (2-71), (2-74).</p>
+<p><strong>Tag: [MATH].</strong> This is the <strong>Klein–Gordon equation for a massive scalar</strong>, correctly identified. Two notation facts are load-bearing and are settled in S5's hazard list: the corpus writes the d'Alembertian as $\Box^{2}$ with a superscript and <strong>defines it as the ordinary second-order operator</strong>, three times (RC 022, RC 069, Esp 015 (30)) — so the equation is not fourth-order; and the series $C_1U + C_2U^{2} + \dots$ that the corpus's "simplest equation" prints has a <strong>stray exponent 2 that migrates between four printings</strong>, the linear reading being the one that closes the corpus's own chain and the one Esp (30) prints at the point of definition (S5 Hazard 9; S12, S14). <strong>The mathematics here is established; the physics the corpus attaches to it — the fusion, the store, the memory — is separate and is [SPEC]</strong> (S12).</p>
+<h3 id="f6-the-axioms-listed-by-content-and-not-by-number">F6 — The axioms, listed by content and not by number</h3>
+<p>The corpus's axiomatics cannot be cited by number (S5, Hazard 1: "Axiome 3" names two different axioms, one axiom carries two numbers, and Axiome 5 is never printed). The series therefore cites axioms by content and source:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>axiom</th>
+<th>statement</th>
+<th>source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the conservation axiom</td>
+<td>$\nabla_\alpha T^{\alpha\beta} = 0$</td>
+<td>Esp 015 Axiome 1</td>
+</tr>
+<tr>
+<td>the stationary-action axiom</td>
+<td>$\delta \int_{V_4} U\,dV_4 = 0$ with $U = dA/dV_4$</td>
+<td>Esp 015 Axiome 2</td>
+</tr>
+<tr>
+<td>the quantisation axiom</td>
+<td>the action at each real point is $\pm nh$, split between spin and pulse; parity gives boson/fermion</td>
+<td>Esp 024 Axiome 3; RC §IV.1</td>
+</tr>
+<tr>
+<td>the equipartition axiom</td>
+<td>spin and pulse carry equal action</td>
+<td>Esp 026 Axiome 4</td>
+</tr>
+<tr>
+<td>the zero-total-energy axiom</td>
+<td>the total energy of the universe is identically zero</td>
+<td>Esp 067 (printed there as "axiome 3" and later as "axiome 5")</td>
+</tr>
+<tr>
+<td>the universal-age axiom</td>
+<td>the age $\tau$ is the same for all electromagnetic observers</td>
+<td>Esp 078 Axiome 6</td>
+</tr>
+<tr>
+<td>the resonance axiom</td>
+<td>an extended particle is observable only if its own pulsation resonates with $\omega_0 = 1{,}28\times10^{24}\,\mathrm{s}^{-1}$</td>
+<td>Esp 087 (printed as Axiome 7, its text citing "l'axiome 6")</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Reading.</strong> Two of these seven — the conservation axiom and the stationary-action axiom — are ordinary physics restated ([EST]). <strong>The stationary-action axiom is nevertheless idle where it was introduced to work: the equation for $U$ is selected by a "simplicity" criterion rather than derived from stationarity, and the corpus says so itself</strong> (<em>"conditions suffisantes, sinon nécessaires"</em>, RC (2-12)); where the axiom is used, in the cosmology, it yields a genuine first integral (S14). The quantisation axiom and the equipartition are [SPEC]. The three late axioms — zero total energy, universal age, resonance — are [SPEC] and each carries an independent problem stated in its own article.</p>
+<h2 id="part-3-the-microstructure-in-one-paragraph">Part 3 — The microstructure, in one paragraph</h2>
+<p>The corpus's second half is a model of matter, and it is a <em>consequence</em> rather than a claim of the formalism: the imaginary micro-universe is an <strong>éon</strong> when its density and blackbody temperature are both non-zero and a <strong>préon</strong> when they vanish, the micro-universe sits on a closed orbit, and a charged particle's charge is the blackbody radiation trapped inside the éon (S17, S18, S19). In the real sheet the same content appears as the <strong>holon</strong>, a compact closed $K=+1$ lump with a quantised radial pulsation (S24), and hadrons are holons with their associated quarks and gluons (S25–S28). <strong>The closure condition at $l = 1.272\,R$ and the golden-ratio relation it involves are derived, and the micro-universe block survives nearly intact</strong> (inventory §3, §5). <strong>The constants are then extracted by the corpus's input/output method: a small number of measured seeds are fed into a closed system whose remaining constants are fixed by the closure, and the comparison is made afterwards.</strong> The method is the asset — the ledger (S34) establishes that the count is <strong>one defined constant, five measured seeds, one suggested, and zero independent outputs</strong> — and the <em>identifications</em> built on top of it (the lepton tower, the six quark levels, the boson identities) are the part of the program that failed (P1–P8).</p>
+<h2 id="part-4-the-status-ledger-of-the-sub-theory">Part 4 — The status ledger of the sub-theory</h2>
+<p>One line per block. <strong>The column "tag" is the status of the <em>subject</em>, and a "survives in part" entry names the part that survives.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>block</th>
+<th>what it claims</th>
+<th>tag</th>
+<th>owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ontology: the doubling (§1.1)</td>
+<td>the universe has a second, imaginary partner at every point</td>
+<td>[SPEC]</td>
+<td>S1, S2, S4</td>
+</tr>
+<tr>
+<td>ontology: the bookkeeping (§1.3)</td>
+<td>the real sheet carries form, the imaginary sheet carries energy</td>
+<td><strong>[SPEC] — half false as written</strong></td>
+<td>S2</td>
+</tr>
+<tr>
+<td>ontology: the horizon argument (§1.2)</td>
+<td>crossing a horizon swaps space and time and so forces a complex spacetime</td>
+<td>[MIX]: premise [EST], conclusion [SPEC]</td>
+<td>S4</td>
+</tr>
+<tr>
+<td>the field equations (§2.1, §2.8)</td>
+<td>Einstein's left side, unchanged, $\Lambda$ free</td>
+<td><strong>[EST]/[MATH]</strong></td>
+<td>S7</td>
+</tr>
+<tr>
+<td>the source tensor (§2.2)</td>
+<td>a purely geometric source $T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta$</td>
+<td>[SPEC] with a technical tension</td>
+<td>S8, S9</td>
+</tr>
+<tr>
+<td>the curvature law (§1.6)</td>
+<td>$R = \xi^{2}\rho^{2} + 4\Lambda$</td>
+<td>[SPEC], the most original move</td>
+<td>S10</td>
+</tr>
+<tr>
+<td>quantisation (§2.3)</td>
+<td>action $\pm nh$ split between spin and pulse</td>
+<td>[SPEC]; two of its consequences are post-mortem</td>
+<td>S11, P23, P24</td>
+</tr>
+<tr>
+<td>the oscillator (§2.5, §2.6, §2.7)</td>
+<td>Klein–Gordon for $U$; higher-spin fusion equations</td>
+<td>[MATH] with [SPEC] physics attached</td>
+<td>S12, S13</td>
+</tr>
+<tr>
+<td>the axioms (§2.9, §10)</td>
+<td>seven axiom statements, unstable numbering</td>
+<td>[EST] two, [SPEC] five</td>
+<td>S14, S15</td>
+</tr>
+<tr>
+<td>the micro-universe (§3)</td>
+<td>éon, préon, the closed orbit, charge as trapped radiation</td>
+<td>[SPEC], survives nearly intact</td>
+<td>S17–S23</td>
+</tr>
+<tr>
+<td>hadrons (§5)</td>
+<td>holon, hadron = holon + lepton, proton radius, nucleon mass</td>
+<td>[SPEC], survives</td>
+<td>S24–S29</td>
+</tr>
+<tr>
+<td>the Système L (§6)</td>
+<td>a closed system of equations determining the constants</td>
+<td>closure real; parameter-freedom not</td>
+<td>S30–S33</td>
+</tr>
+<tr>
+<td>the constants ledger (§7)</td>
+<td>the input/output method and its numbers</td>
+<td>[MIX]: method is the asset</td>
+<td>S34–S41</td>
+</tr>
+<tr>
+<td>leptons (§4)</td>
+<td>the mass ladder and the charged-lepton tower</td>
+<td><strong>tower [FALS]</strong>, the rest stands</td>
+<td>S42–S46, P1–P8</td>
+</tr>
+<tr>
+<td>quarks and colour (§6)</td>
+<td>six levels, colour, confinement from the holon</td>
+<td><strong>largely [FALS]</strong></td>
+<td>S47–S49, P9–P15</td>
+</tr>
+<tr>
+<td>cosmology (§8)</td>
+<td>bounce yes; antimatter era, negative vacuum, continuous creation, universal age, finite $Z_{\max}$</td>
+<td><strong>largely [FALS]</strong>, bounce stands</td>
+<td>S50–S52, P9–P15</td>
+</tr>
+<tr>
+<td>measurement and mind (§9)</td>
+<td>the $\psi$ wave, the Born rule, the memory, the EPR reading</td>
+<td>[SPEC]/[PHIL]; <strong>the EPR reading is [FALS]</strong></td>
+<td>S53–S57, P16</td>
+</tr>
+<tr>
+<td>consolidation (§11, §16)</td>
+<td>the $\dot G/G$ prediction and the reassessment</td>
+<td>the one live candidate</td>
+<td>S58–S63</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The table's headline is the one the register makes.</strong> About <strong>72%</strong> of the program's written structure survives as legitimate material — established, or speculative but not contradicted — and <strong>28%</strong> is a record of what was wrong. <strong>The split is clean at the level of the numbers: no surviving number depends on a disproved article, and no disproved number depends on a surviving one</strong> (§12.2), with two qualifications the register records. <strong>(i) The cyclic model (S52) stands while resting on the antimatter era, which is [FALS].</strong> <strong>(ii) The closedness of the spatial section is a hypothesis, not a derivation (S4)</strong> — the region behind the horizon, the micro-universe and the cosmological model are one construction, and its $K = +1$ character (and the interior observer's $2\pi^{2}R^{3}$ with it) is not independently established — so S50, S51 and S52 should carry it as a hypothesis of the same family rather than as a derived result. <strong>Neither qualification moves a verdict; both change how a verdict is reported.</strong></p>
+<h2 id="part-5-what-the-sub-theory-is-and-what-it-is-not">Part 5 — What the sub-theory is, and what it is not</h2>
+<p><strong>It is.</strong> A one-sector-per-quantity reading of a complexified spacetime, with a geometric source, a curvature quadratic in the density, and a quantised action that is split between an ordinary spin and a radial pulse; together with a micro-universe model, a holon model of hadrons, and an input/output method for extracting constants. <strong>Its equations can be written in the framework's language; its numbers can be recomputed; and its failures can be dated.</strong></p>
+<p><strong>It is not the biquaternion framework.</strong> In one line from S2: <em>the corpus is the framework with the sector structure collapsed onto the Prime Convention.</em> The corpus's mathematics is complexified Riemannian geometry with the real/imaginary partition <strong>stipulated</strong> — RC I.1 says "<em>de manière conventionnelle</em>" — in the $ict$ Minkowski convention, and it contains <strong>no quaternion, biquaternion or hypercomplex algebra anywhere</strong>: zero occurrences of quaternion, biquaternion, Hamilton, octonion, Clifford and <em>algèbre</em> across both books. Its cited mathematics is Cartan, Souriau, Lichnerowicz, Bergmann and Tonnelat, competently used; its heaviest technical borrowing is the spinor, taken from de Broglie and never connected to its algebraic origin. <strong>A stipulated complexification is under-determined as an algebraic object</strong>, which is why the register's questions about it could not be answered from the corpus, and did not need to be.</p>
+<p><strong>It is not complete, and it does not close by derivation.</strong> S16 audits the rebuilt formalism and reports the honest position: the structure closes <strong>by selection</strong> — six choices and one exact identity — not by a principle that forces it. <strong>A sub-theory that closes by selection is a legitimate object of study and is not a theory of everything.</strong></p>
+<p><strong>It does not claim any number is a prediction.</strong> The ledger's count is one defined constant, five measured seeds, one suggested, and zero independent outputs (S34); the flagship α claim is <strong>a postulated law that reproduces an independent constant to 2%</strong>, not a fit and not a computation (S35, S37); and the corpus's own count of five inputs and one output survives as a description of the <em>method</em>. <strong>The one live candidate for a prediction in the whole corpus is $\dot G/G$</strong> (§16.1, S40), and it is the reason S40 outranks every constants article.</p>
+<h2 id="part-6-the-two-ingredients-stated-once">Part 6 — The two ingredients, stated once</h2>
+<p><strong>Established physics is ground truth.</strong> Where the corpus restates it correctly — the Cartan–Lovelock uniqueness, the Klein–Gordon equation, the Lorentz transformation of the tetrad across a horizon, the de Broglie fusion mathematics, the mass defect — the series records a <strong>credit</strong> and does not re-derive it. <strong>The biquaternion universe is the working language, not a result.</strong> Its algebraic identifications (that $\mathbb{M}_-$ carries the four-vectors of relativity and $\mathbb{M}_+$ the operator algebra of quantum mechanics) are established mathematics; <strong>whether the structure is physically realised is a hypothesis, and this series inherits that position and does not strengthen it.</strong></p>
+<p><strong>The rule that follows, and it is the rule this article exists to make usable.</strong> Every statement is labelled. A claim is [EST] if established physics says it; [SPEC] if no accepted evidence decides it and nothing currently contradicts it; [FALS] if observation contradicts it; [MIX] if a correct core is packaged inside a wrong or speculative claim, in which case the useful part is named explicitly. <strong>A pass on coherence is never reported as a pass on reproducibility, and a pass on reproducibility is never reported as a pass on correspondence</strong> (rule R6, S6).</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The sub-theory claims an ontology, a formalism, and a model of matter.</strong> The ontology is that spacetime is complexified and that a second, imaginary partner is attached to every real point; <strong>the series corrects the corpus's bookkeeping here — the corpus's two <em>sheets</em> are the framework's Prime Convention, are transversal to the framework's two <em>sectors</em>, and sector membership must be decided per quantity (S2); and the corpus's sentence assigning all energy to the imaginary sheet is right about the energy component and wrong about the momentum, its own source tensor contradicting it in the same chapter.</strong></p>
+<p><strong>The formalism is five statements.</strong> Einstein's left-hand side is taken over unchanged and cannot be otherwise, by the Cartan–Lovelock uniqueness theorem, which puts the whole program on the right-hand side (F1, [EST]/[MATH], S7). The source is purely geometric, $T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta$, whose flagged tension with Friedmann–Lemaître is real and local and does not kill it, since the model does expand, bounce at a derived $R_0$, and pulsate to $0.3\%$ (F2, [SPEC], S8, S9). The scalar curvature is quadratic in the density, $R = \xi^{2}\rho^{2} + 4\Lambda$ — the program's most original structural move and its most falsifiable one (F3, [SPEC], S10). The action is quantised at $\pm nh$ and split equally between a spin and a pulse — the seed of everything downstream, unobservable in the mass sector, and the source of two claims that are now post-mortem (F4, [SPEC], S11, P23, P24). The oscillator obeys Klein–Gordon, with the corpus's $\Box^{2}$ notation and its stray exponent 2 both settled against the corpus's own definitions (F5, [MATH], S12, S14).</p>
+<p><strong>The axiomatics is seven statements that cannot be cited by number</strong>, two of them ordinary physics restated and one — the stationary action — idle exactly where it was introduced to work (F6, S5 Hazard 1, S14). <strong>The model of matter</strong> — éon and préon, the closed orbit, charge as trapped blackbody radiation, the holon, the hadron as holon plus lepton, the Système L and the constants ledger — <strong>is [SPEC] and survives nearly intact</strong>, while the <em>identifications</em> built on top of the ledger's method (the lepton tower, the six quark levels, the boson identities) and the cosmology beyond the bounce are the [FALS] blocks.</p>
+<p><strong>The one-line verdict, for the register.</strong> <em>The sub-theory is stateable, its ontology and formalism are coherent, its micro-universe model and its input/output method survive, its particle identifications and its cosmology fail, and nothing it computed stands or falls with anything else it computed.</em> It is a <strong>sub-theory of the biquaternion framework, not a rival of it</strong>, and it closes by selection rather than by derivation (S16).</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Réel</em>, <em>Imaginaire</em></td>
+<td>the corpus's two sheets: real-coefficient and imaginary-coefficient halves of the eight parameters</td>
+</tr>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>the biquaternion algebra; eight real parameters $q_\mu, q'_\mu$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>the material sector, $\{q'_0, q_1, q_2, q_3\}$: imaginary time, real space</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>the informational sector, $\{q_0, q'_1, q'_2, q'_3\}$: real time, imaginary space</td>
+</tr>
+<tr>
+<td>the Prime Convention</td>
+<td>the framework's $q$/$q'$ split — which is exactly the corpus's two sheets</td>
+</tr>
+<tr>
+<td>transversality</td>
+<td>the two partitions cross, so each corpus sheet is half of each sector</td>
+</tr>
+<tr>
+<td>$T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta$</td>
+<td>the geometric source tensor; an $\mathbb{M}_-$ object</td>
+</tr>
+<tr>
+<td>$R = \xi^{2}\rho^{2} + 4\Lambda$</td>
+<td>the curvature law of the material space; $\rho$ the proper density, $\Lambda$ the cosmological constant</td>
+</tr>
+<tr>
+<td>$\xi = \Omega_0c/\hbar$</td>
+<td>the coupling turning a density into a curvature; $\Omega_0$ the quantum volume</td>
+</tr>
+<tr>
+<td>$\pm nh$</td>
+<td>the quantised action at a point; split into a spin and a pulse of $\pm n\hbar/2$ each</td>
+</tr>
+<tr>
+<td>$U = dA/dV_4$</td>
+<td>the local action density, and the oscillator field of F5</td>
+</tr>
+<tr>
+<td>$\Box^{2}$</td>
+<td>the corpus's name for the ordinary d'Alembertian $\Box$</td>
+</tr>
+<tr>
+<td>[EST], [SPEC], [FALS], [MIX], [MATH], [PHIL]</td>
+<td>the status tags of <code>CHARON_IDEAS_AND_CLAIMS.md</code> §0</td>
+</tr>
+<tr>
+<td>R1, R2, R6</td>
+<td>input/output accounting, pre-registration, and the three questions kept apart (S6)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>S2, <code>charon-s02-dictionary-reel-imaginaire-to-m-plus-m-minus</code>, for the correction to O1 and O2 and the result that the sheets are the Prime Convention — the article on which every entry in Part 4's first three rows depends.</li>
+<li>S3, <code>charon-s03-complexification-vs-complexification</code>, for whether the corpus's complexification is the framework's operation, which is the one thing Part 1 leaves to another article.</li>
+<li>S4, <code>charon-s04-status-of-the-second-sheet</code>, for O3 in full, against Kruskal and complex general relativity.</li>
+<li>S5, <code>charon-s05-notation-and-units</code>, for the notation, units and hazards that F5 and F6 cite.</li>
+<li>S6, <code>charon-s06-what-would-count-as-success</code>, for the pre-registered criteria — the gates G-A to G-E — that make the tags of Part 4 decidable in advance.</li>
+<li>S7, S8, S9, S10, S11, S12, S14, S15, for the articles that own F1 to F6 respectively.</li>
+<li>S16, <code>charon-s16-state-of-the-rebuilt-formalism</code>, for what the rebuilt formalism closes and what it does not — the "closes by selection" statement of Part 5.</li>
+<li>S34, S35, S37 and S40, for the ledger's count, the flagship α claim, the trace of $\beta$, and the one live prediction.</li>
+<li><code>CHARON_IDEAS_AND_CLAIMS.md</code> §0 for the tags, §1.1–1.6 for the ontology, §2.1–2.3 and §2.8–2.9 for the formalism, §11–12 for the counts and triage; and RC ch. I–II with Esp §I, §II and §V for the corpus's own statement of what it claims.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

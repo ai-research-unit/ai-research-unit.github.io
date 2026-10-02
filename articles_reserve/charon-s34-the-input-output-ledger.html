@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: The Input/Output Ledger — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-inputoutput-ledger"><strong>Charon: The Input/Output Ledger</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The register calls this article the most useful in the list, and the reason is that it answers the one question a reader of Charon has to settle before any other: <strong>when the corpus says it computes the constants of physics, is anything actually computed?</strong> The corpus's claim is large and specific. A system of twenty equations, said to depend on no adjustable parameter, is claimed to return the speed of light, Planck's constant, the electron mass, the muon mass, the tau mass and the elementary charge, and to return them to a fraction of a percent.</p>
+<p><strong>The verdict, stated once, before the evidence.</strong> Nothing is predicted. All six constants are <strong>put in</strong>. The self-consistency search of the <em>Système L</em> is run over a <strong>±10 % box about the experimental values</strong>, and its minimum is reported <strong>at</strong> the experimental values, in the corpus's own words (Esp 058). The seventh parameter, $\xi$, is called a <em>"suggestion"</em> by the corpus itself and is taken from the nucleon mass (Esp 057). So the ledger holds one defined constant ($c$), five measured seeds ($h$, $m$, $\mu$, $\tau_2$, $e$), one suggested seed ($\xi$), and a <strong>self-consistency residual of 2 %</strong> — which is exactly the size of the largest deviation the corpus reports ($e$, 2.3 %). What survives is not a derivation of the constants. It is a <strong>consistency check that passes at the percent level</strong>, and it is worth having. Stating exactly how much smaller that is than the claim is this article's job.</p>
+<p><strong>Why the count matters more than any single number.</strong> The corpus's reputation rests on the constants: they are the part of the work that a reader can check, and the part its own author put first. The ledger is where that rests on something measurable. Every later article in the constants cluster — S35 on $\alpha$, S36 on the force integral, S37 on the $\beta/\gamma$ chain, S38 on the nucleon mass, S39 on $G$, S40 on $\dot G/G$ — is a row or a chain in this table, and every one of them inherits the input/output status fixed here. Rule R1 of the register states the governing principle: <strong>a computation is not a derivation, and the first thing to report about any number is whether it was put in.</strong></p>
+<p><strong>The article is organised in seven parts.</strong> Part 1 states what the <em>Système L</em> is and how it is solved, including the seeding step that decides the whole ledger. Part 2 gives the six constants one row each. Part 3 treats the seventh parameter, $\Omega_0$. Part 4 does the accounting and states the count. Part 5 extends the ledger to every other number in the programme, with the chain that reaches it. Part 6 is the axiom ledger, which S5 defers to this article. Part 7 is the verdict, per rules R1 and R6.</p>
+<p><strong>Scope.</strong> This article states <strong>status</strong>, not <strong>derivation</strong>. The per-constant detail is S32's, the numerical method is S31's, the flagships are S35 and S36, and the gravity entries are S39 and S40. Where this article fixes a value it cites the corpus page; where it reports a deviation it recomputes it; where it disagrees with the register's provisional table it says so and gives the reason.</p>
+<h2 id="part-1-what-the-systeme-l-is-and-how-it-is-solved">Part 1 — What the Système L is, and how it is solved</h2>
+<p>The detail is S30's and S31's. The parts that decide the ledger are four, and they are stated here because the accounting in Part 4 depends on them.</p>
+<h3 id="11-the-system">1.1 The system</h3>
+<p>$3n + 14 = 20$ equations at $n = 1, 2$, roster <strong>L1–L17</strong> (pulsation dynamics, boundary conditions, the electron and muon mass equations, the spin and pulse actions, the relativistic coefficients, the integral normalisations). $K = +1$ is forced by L2–L6. The corpus asserts (Esp 056) that the system <em>"ne dépend en fait d'aucun paramètre"</em> and is a lepton bootstrap in Chew's sense. That assertion is what the ledger tests.</p>
+<h3 id="12-the-seeds-the-step-that-decides-everything">1.2 The seeds — the step that decides everything</h3>
+<p>Esp 057 §1 is explicit, and the list is worth quoting because it settles the whole article. The method begins:</p>
+<blockquote>
+<p><em>"Donnons-nous un ensemble de six valeurs numériques … correspondant respectivement aux valeurs des six paramètres : $h, c, m, \mu, \tau_2$ et $e$."</em></p>
+</blockquote>
+<p>Esp 057 §4 then states where those six values come from, and it is not a guess:</p>
+<blockquote>
+<p><em>"choisissons un ensemble $P_0$ numériquement identique aux valeurs numériques expérimentales que l'on obtient pour ces six paramètres"</em></p>
+</blockquote>
+<p>— an initial set numerically <strong>identical to the experimental values</strong> of the six. So the six inputs are the measured $h$, the measured $c$, and the measured masses and charge of the electron, muon and tau. The register's S32 records the same six, reading them as the five principal constants plus the elementary charge whose computation Esp 056 announces, <em>"5 + 1 = 6"</em>.</p>
+<p><strong>$e$ is one of the six seeds.</strong> This is the decisive fact in the article. The elementary charge is the one constant the corpus presents as computed rather than fitted — it is the $+1$ in <em>"5 + 1 = 6"</em> — and it is also, by the corpus's own step 1, one of the six values fed in from experiment.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>seed</th>
+<th>symbol</th>
+<th>put in as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Planck's constant</td>
+<td>$h$</td>
+<td>measured value of the 1970s</td>
+</tr>
+<tr>
+<td>2</td>
+<td>speed of light</td>
+<td>$c$</td>
+<td>measured value</td>
+</tr>
+<tr>
+<td>3</td>
+<td>electron own-mass</td>
+<td>$m$</td>
+<td>measured</td>
+</tr>
+<tr>
+<td>4</td>
+<td>muon own-mass</td>
+<td>$\mu$</td>
+<td>measured</td>
+</tr>
+<tr>
+<td>5</td>
+<td>tau own-mass</td>
+<td>$\tau_2$</td>
+<td>measured (and $T$ is fitted to it)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>elementary charge</td>
+<td>$e$</td>
+<td><strong>measured</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="13-the-search-and-its-box">1.3 The search, and its box</h3>
+<p>The system is not solved directly. A reduced system $L'$ is solved, obtained by dropping six equations ($L11$, $L12$ at $n = 1, 2$, $L14$, $L15$, $L17$); then $\alpha$ is obtained by <strong>adding</strong> L7 and L8, $\beta$ by <strong>subtracting</strong> them, and $T = 2h/(c^{2}(\tau - \mu))$ from L8 at $n = 1$ and $2$; then $K = +1$, $A$ and $R(R_0)$ follow from L2–L6 and L1. The departure of $L'$ from $L$ is measured by a scalar residual</p>
+<p>$$\chi^{2} = \frac{1}{6}\sum_{i=1}^{6}\left(\frac{F_i}{\varepsilon_i}\right)^{2},$$</p>
+<p>which vanishes when the two systems agree.</p>
+<p>The search for that vanishing point is what decides the ledger's verdict, and Esp 057 §4 and Esp 058 state its extent. Esp 057 §4 proposes the ideal: ranges <em>"comprises entre le double et la moitié"</em> of the natural value, discretised into five values, giving $11^{6} = 1\,771\,561$ parameter sets. Esp 058 then reports what was actually done, and the sentence is the one to remember:</p>
+<blockquote>
+<p><em>"nous nous sommes limité à choisir pour chaque paramètre des plages de variation de seulement ±10 % </em><em>par rapport aux valeurs numériques connues expérimentalement</em><em>, avec une seule valeur des paramètres aux deux extréma de chaque plage de variation. Cela conduit pratiquement à tester $3^{6} = 729$ ensembles …"</em></p>
+</blockquote>
+<p>So the executed search is <strong>±10 % about the measured values</strong>, three points per axis, 729 sets. And where the minimum was found:</p>
+<blockquote>
+<p><em>"On constate bien effectivement un profond puits de minimisation de la fonction d'écart $\chi$ </em><em>pour l'ensemble des six paramètres $P_i$ correspondant aux valeurs expérimentales de ces paramètres</em><em>."</em></p>
+</blockquote>
+<p><strong>The well is at the experimental values, and it is looked for only within ±10 % of them.</strong> The uniqueness claim is correspondingly restricted: <em>"ce puits est unique </em><em>dans la région analysée</em><em>"</em>. With $\chi_L = 2\,\%$ and $\min \chi_i/\chi_L = 50$.</p>
+<h3 id="14-what-that-does-to-every-deviation-in-the-table">1.4 What that does to every deviation in the table</h3>
+<p>A deviation reported by a search whose box is ±10 % about the answer, and whose minimum is at the answer, is a statement about <strong>the width of the well</strong>, not about agreement with nature. The consequences are immediate and they govern Part 2:</p>
+<ul>
+<li>every deviation the corpus reports ($0.007\,\%$, $0.02\,\%$, $0.07\,\%$, $0.24\,\%$, $0.95\,\%$, $2.3\,\%$) is <strong>smaller than the 10 % box</strong> the search was confined to, so none of them is evidence of anything except that the solver converged;</li>
+<li>the largest of them, $e$'s $2.3\,\%$, is <strong>the same figure as the residual</strong> $\chi_L = 2\,\%$ at the precision both are quoted, which is the corpus telling us its own precision limit;</li>
+<li>the claim of uniqueness is a claim <strong>within a ±10 % box</strong>, not globally.</li>
+</ul>
+<p>Two recomputations from the published solution table (Esp 058) confirm the corpus's arithmetic is sound and its rounding is honest: $T = 4{,}949\times10^{-24}$ s against the table's $4{,}9\times10^{-24}$ ($1{,}0\,\%$), and $\alpha = -1{,}461\times10^{-25}$ against the table's $-1{,}472\times10^{-25}$ ($0{,}7\,\%$). <strong>The arithmetic is fine. It is the inference that fails.</strong></p>
+<h2 id="part-2-the-six-constants-one-row-each">Part 2 — The six constants, one row each</h2>
+<p>Six columns are mandatory: symbol, meaning, the equation that returns it, the corpus's value, the measured value, the deviation. The status column is this article's addition and is the one that matters.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>constant</th>
+<th>equation</th>
+<th>corpus</th>
+<th>measured</th>
+<th>deviation</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$c$</td>
+<td>L1 with normalisations (L16, L17)</td>
+<td>$3\times10^{10}$ cm/s</td>
+<td>$2{,}99792458\times10^{10}$</td>
+<td>$0{,}07\,\%$</td>
+<td><strong>DEFINED</strong> — exact by the theory's own units</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$h$</td>
+<td>L7, L8</td>
+<td>$6{,}61\times10^{-27}$ erg·s</td>
+<td>$6{,}62607\times10^{-27}$</td>
+<td>$-0{,}24\,\%$</td>
+<td><strong>SEED</strong> — the 1970s measured value</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$m$ (electron)</td>
+<td>L7</td>
+<td>$9{,}11\times10^{-28}$ g</td>
+<td>$9{,}109384\times10^{-28}$</td>
+<td>$+0{,}007\,\%$</td>
+<td><strong>SEED</strong> — measured</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\mu$ (muon)</td>
+<td>L8 ($n = 1$)</td>
+<td>$1{,}884\times10^{-25}$ g</td>
+<td>$1{,}883532\times10^{-25}$</td>
+<td>$+0{,}02\,\%$</td>
+<td><strong>SEED</strong> — measured</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$\tau_2$ (tau)</td>
+<td>L8 ($n = 2$), (244)</td>
+<td>$3{,}1976\times10^{-24}$ g ($1{,}794$ GeV)</td>
+<td>$3{,}16754\times10^{-24}$ ($1{,}7769$ GeV)</td>
+<td>$0{,}95\,\%$</td>
+<td><strong>SEED</strong> — measured; $T$ fitted to it</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$e$</td>
+<td>§18.2, (246)–(268)</td>
+<td>$\alpha = e^{2}/\hbar c$ at $7{,}65\times10^{-3}$</td>
+<td>$7{,}2974\times10^{-3}$</td>
+<td>$2{,}3\,\%$ on $e$, $4{,}8\,\%$ on $\alpha$</td>
+<td><strong>RESIDUAL</strong> — and it is also seed 6</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Row 1, $c$: defined, not measured.</strong> $c$ comes out at $3\times10^{10}$ cm/s to $0{,}07\,\%$ because the system is written in units that make it so. This is not a result and the table should say so plainly. A theory that fixes $c$ by construction and then reports agreement with $c$ has reported a tautology.</p>
+<p><strong>Rows 2–4, $h$, $m$, $\mu$: seeds, and the deviations are the well's width.</strong> $h$ is the <em>1970s</em> measured value, now superseded; its $-0{,}24\,\%$ is against that older measurement, not against today's. The electron and muon masses are two of the three numbers the search was anchored to, and their sub-$0{,}1\,\%$ agreement is what "anchored" means.</p>
+<p><strong>Row 5, $\tau_2$: a seed whose small deviation hides the fit.</strong> The $0{,}95\,\%$ on the tau mass looks like the weakest of the mass agreements and is actually the most informative row: the corpus states at Esp 057 that $T$ is determined from L8 at $n = 1, 2$, that is, <strong>from the muon and tau masses together</strong>. The tau mass's deviation is therefore not independent evidence — it is the residual of a fit in which the tau mass was one of the two points.</p>
+<p><strong>Row 6, $e$: the row the corpus built its claim on, and it is a seed.</strong> The corpus presents $e$ as the $+1$, the constant computed rather than fitted. Esp 057 §1 lists $e$ among the six values put in. Its $2{,}3\,\%$ deviation is the well's own residual $\chi_L = 2\,\%$ read to one more digit. <strong>$e$ is not an output; it is the depth to which the well was resolved.</strong> The register's provisional table (S32) marks this row "the one output" and says "four of the six are inputs, not results". The evidence in Esp 057 §1 and Esp 058 supports a stricter reading: <strong>all six are inputs, and $e$ is the one whose residual is large enough to see.</strong></p>
+<p><strong>A note on the deviation quoted for $e$. Its 2.3 % is the error on the <em>charge</em>, and the error on the <em>coupling</em> is twice as large in percentage terms.</strong> Since $\alpha \propto e^{2}$, a charge that is $2{,}2\,\%$ high makes $\alpha$ $4{,}5$–$4{,}8\,\%$ high, and it is the coupling, not the charge, that the corpus quotes as $7{,}65\times10^{-3}$ against the measured $7{,}2974\times10^{-3}$. The reconstruction in §10 of the register gives $7{,}565\times10^{-3}$ and $e = 4{,}891\times10^{-10}$ esu from the chain, that is $+3{,}7\,\%$ on the coupling; and it finds that the integral in (264) should be $23{,}4323$ rather than the printed $23{,}6$, which <em>improves</em> the agreement to $1{,}8\,\%$ on $e$ and $3{,}6\,\%$ on $\alpha$. Reporting "2.3 %" for $\alpha$ therefore understates the coupling error by a factor of about two. That correction belongs to S35 and S36; the ledger needs the number right because the row is quoted elsewhere.</p>
+<p><strong>One more number belongs in this table, and it is not free.</strong> $\xi$. Part 3 treats it.</p>
+<h2 id="part-3-the-seventh-parameter-math146-math147-and-math148-are-one-degree-of-freedom">Part 3 — The seventh parameter: $\Omega_0$, $\xi$ and $l_0$ are one degree of freedom</h2>
+<p>The constants ledger has a seventh entry, and the corpus's own text says what it is. The definition begins with the field equation (Esp (47)):</p>
+<p>$$\Omega_0^{2}c^{2}\rho^{2}u_\alpha u_\beta = -\,\hbar^{2}\,\frac{\nabla_\alpha\partial_\beta\left(U/\sqrt{-G}\right)}{U/\sqrt{-G}},$$</p>
+<p>where the right side is a <strong>ratio</strong> of a derivative of the amplitude to the amplitude, so a volume is needed on the left if the two sides are to match dimensionally. That volume is $\Omega_0$, <em>« le volume quantique »</em>, and the corpus gives it three forms which are one form:</p>
+<ul>
+<li>(49): $\xi = \Omega_0c/\hbar$;</li>
+<li>Esp 053 §13: $\Omega_0 = \tfrac{4}{3}\pi l_0^{3}$;</li>
+<li>Esp 057/058: $\xi = \tfrac{4}{3}\pi l_0^{3}c/\hbar = 6{,}467\times10^{-4}$ cgs, hence $l_0 = 1{,}76\times10^{-14}$ cm.</li>
+</ul>
+<p><strong>So $\Omega_0$, $\xi$ and $l_0$ are a single degree of freedom, and the ledger gains exactly one item, not three.</strong> Equation (59) then turns that one item into mass: $M_0 = \Omega_0\rho$, $E = \Omega_0c^{2}\rho u_4$, $P_j = \Omega_0c\rho u_j$.</p>
+<p><strong>Where its value came from is stated by the corpus, and it is not a computation.</strong> Esp 057 says the nucleon mass <em>suggests</em> $\xi = 6{,}467\times10^{-4}$ cgs, and then says so explicitly:</p>
+<blockquote>
+<p><em>"cette valeur numérique de $\xi$ déduite de $M_0$ n'est bien qu'une « suggestion » pour entamer le calcul de la solution exacte du Système $L$ : c'est ce Système $L$ qui doit directement calculer $\xi$, d'où on déduira ensuite $M_0$ … comme une vérification du formalisme général"</em></p>
+</blockquote>
+<p>In other words: the value of $\xi$ was taken from the nucleon mass $M_0$ — the quantity it is later supposed to <em>predict</em> — as a starting suggestion, and the corpus says the <em>Système L</em> is what must compute it directly. <strong>Until that computation is exhibited, $\xi$ is an input</strong>, and the corpus is honest about it. This is the item rule R1 requires to be itemised, and it is the item the corpus itself flags.</p>
+<h3 id="31-the-two-books-print-two-different-values-the-corrected-hazard">3.1 The two books print two different values — the corrected hazard</h3>
+<p>The values of $l_0$, $\Omega_0$ and $\xi$ are not the same in the two books, and the difference has to be stated correctly, because a table that mixes them is wrong by up to $6{,}4\,\%$. S5 Hazard 5 carries the full evidence; the ledger needs the two sets.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th><em>La Relativité complexe</em> (1987)</th>
+<th><em>L'Esprit</em> (1983)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$l_0$</td>
+<td>$1{,}8\times10^{-14}$ cm (RC 3-70)</td>
+<td>$1{,}76\times10^{-14}$ cm (Esp 057)</td>
+</tr>
+<tr>
+<td>$\Omega_0 = \tfrac{4}{3}\pi l_0^{3}$</td>
+<td>$2{,}44\times10^{-41}$ cm$^{3}$ (RC 3-70-a)</td>
+<td><em>not printed numerically</em></td>
+</tr>
+<tr>
+<td>$\xi = \Omega_0c/\hbar$</td>
+<td>$6{,}8\times10^{-4}$ cgs (RC 3-71)</td>
+<td>$6{,}467\times10^{-4}$ cgs (Esp 057)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Each book is internally consistent to its own rounding, and the books differ.</strong> Recomputed: RC's $l_0$ gives $\Omega_0 = 2{,}4429\times10^{-41}$ cm$^3$ ($+0{,}1\,\%$ on RC's printed value — agreement) and $\xi = 6{,}945\times10^{-4}$, which is $+2{,}1\,\%$ on RC's printed $6{,}8\times10^{-4}$; that printed value is $\Omega_0c/\hbar$ taken with the <strong>rounded</strong> $2{,}4\times10^{-41}$, giving $6{,}82\times10^{-4}$, that is $6{,}8\times10^{-4}$ at two significant figures. Esp's $l_0$ gives $\xi = 6{,}492\times10^{-4}$, $+0{,}4\,\%$ on Esp's printed value, and Esp's printed $\xi$ implies $l_0 = 1{,}7577\times10^{-14}$ cm, which is what its table rounds to $1{,}76\times10^{-14}$. The cross-book differences are $2{,}3\,\%$ in $l_0$, $5{,}1\,\%$ in $\xi$, and $6{,}4\,\%$ between RC's $\Omega_0$ and $\tfrac{4}{3}\pi(1{,}76\times10^{-14})^{3}$.</p>
+<p><strong>Rule for the ledger.</strong> One book's set at a time. <strong>The ledger's default is Esp's working pair</strong> — $l_0 = 1{,}76\times10^{-14}$ cm, $\xi = 6{,}467\times10^{-4}$, with $\Omega_0$ computed as $\tfrac{4}{3}\pi l_0^{3} = 2{,}284\times10^{-41}$ cm$^{3}$ — because it is the pair the lepton model actually uses and the pair Esp 057 prints together. An article that prefers RC's trio must take <strong>all three</strong> of RC's values and say so.</p>
+<p><strong>A note on the $(h = 2\pi\hbar)$ slip, for the same reason.</strong> S5 Hazard 6 records that <em>L'Esprit</em> prints $(\hbar = 2\pi\hbar)$ twice (Esp §9 and Esp (49 bis)) where $h = 2\pi\hbar$ is meant, and that RC prints it correctly. That slip touches this ledger's $\xi$ row, since $\xi = \Omega_0c/\hbar$ is written with $\hbar$ and the quantisation axiom is written with $h$. The ledger uses $h = 2\pi\hbar$ throughout.</p>
+<h3 id="32-the-row">3.2 The row</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>item</th>
+<th>definition</th>
+<th>value</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td>$\Omega_0$, $\xi$, $l_0$</td>
+<td>(47), (59), (49), Esp 053 §13</td>
+<td>$l_0 = 1{,}76\times10^{-14}$ cm, $\xi = 6{,}467\times10^{-4}$, $\Omega_0 = \tfrac{4}{3}\pi l_0^{3} = 2{,}284\times10^{-41}$ cm$^{3}$</td>
+<td><strong>SUGGESTED</strong> — taken from $M_0$, which it is meant to predict</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="part-4-the-accounting">Part 4 — The accounting</h2>
+<p>The corpus's claim is <em>"5 + 1 = 6"</em>: five principal constants computed directly, plus the elementary charge. The ledger's count is different, and it is the article's central finding.</p>
+<h3 id="41-the-count">4.1 The count</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>item</th>
+<th>status</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$c$</td>
+<td><strong>DEFINED</strong></td>
+<td>fixed by the theory's own units; agreement with $c$ is a tautology</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$h$</td>
+<td><strong>SEED</strong></td>
+<td>measured value fed in</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$m$</td>
+<td><strong>SEED</strong></td>
+<td>measured</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\mu$</td>
+<td><strong>SEED</strong></td>
+<td>measured</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$\tau_2$</td>
+<td><strong>SEED</strong></td>
+<td>measured, and $T$ is fitted to it</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$e$</td>
+<td><strong>SEED</strong> (and the row with the largest residual)</td>
+<td>measured; fed in at Esp 057 §1</td>
+</tr>
+<tr>
+<td>7</td>
+<td>$\xi$ / $\Omega_0$ / $l_0$</td>
+<td><strong>SUGGESTED</strong></td>
+<td>taken from $M_0$; the corpus calls it a suggestion</td>
+</tr>
+<tr>
+<td>—</td>
+<td>any constant computed from these without further measurement</td>
+<td><strong>none found</strong></td>
+<td>the search is confined to ±10 % about the seeds</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The honest title of the corpus's result is therefore not "the computation of six constants".</strong> It is: <strong>one defined constant, five measured seeds, one suggested seed, and a consistency residual of 2 %.</strong> The register's provisional formulation — "one output, $e$, from five inputs" — marks the right structure but places $e$ on the wrong side. Esp 057 §1 puts $e$ with the inputs; Esp 058 reports the well at the experimental values. The ledger states the stricter reading and cites the pages.</p>
+<h3 id="42-the-precision-argument-which-is-the-decisive-one">4.2 The precision argument, which is the decisive one</h3>
+<p>Even on the reading most favourable to the corpus — that $e$ is an output — the arithmetic of precision settles it. The ledger's own rows show the model taking inputs known to four or more digits and returning an output good to two:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>measured precision</th>
+<th>model reproduces it to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the six seeds ($c$, $h$, $m$, $\mu$, $\tau_2$, $e$)</td>
+<td>parts in $10^{4}$ or better</td>
+<td>fed in, so exact by construction</td>
+</tr>
+<tr>
+<td>$e$, treated as an output</td>
+<td>about $1$ part in $10^{10}$</td>
+<td>$2{,}3\,\%$, about $1$ part in $43$</td>
+</tr>
+</tbody>
+</table></div>
+<p>A procedure that takes four-digit inputs and returns a two-digit answer has <strong>not computed</strong> the answer; it has <strong>bounded</strong> it. And the bound it reaches is the bound of its own tolerance: the search box is $\pm10\,\%$, the residual is $2\,\%$, and the reported deviations are $\le2{,}3\,\%$. The three numbers are the same number, and it is the solver's tolerance.</p>
+<p><strong>The single most important correction in the ledger is therefore this.</strong> The 2.3 % has been quoted as if it were an achievement of the model. It is not an achievement and it is not a failure; it is <strong>the model telling us its precision limit</strong>, and it is the same limit the $\chi_L$ row states. Any geometry with a few adjustable pieces, seeded at the answer, can land inside 2.3 %.</p>
+<h3 id="43-the-positive-half-which-is-real-and-should-not-be-buried">4.3 The positive half, which is real and should not be buried</h3>
+<p>The strict count is not a dismissal, and the ledger would be dishonest if it read as one. Three things stand:</p>
+<ul>
+<li><strong>A single system of twenty equations is satisfied simultaneously by all six constants at their measured values.</strong> The well is not shallow — $\min \chi_i/\chi_L = 50$ within the analysed region — and it was not put there by hand after the fact. That is a genuine and non-trivial closure property of the formalism.</li>
+<li><strong>Four of the six reproduce to better than a quarter of a percent</strong>, and the two that reproduce less well are the two with the most fitted content ($\tau_2$ through $T$, $e$ through $\beta$).</li>
+<li><strong>The residual is stated by the corpus itself</strong> ($\chi_L = 2\,\%$), and the search procedure is described in enough detail to be repeated. The honesty is unusual for the genre.</li>
+</ul>
+<p>So the correct sentence is: <strong>a real closure property, reported at its true precision, and described as a derivation when it is a consistency check.</strong> The result is kept; the claim is what fails. That is rule R1's verdict, and it is the register's S31/S33 verdict; Part 4 makes it a ledger entry.</p>
+<h3 id="44-what-follows-for-the-rest-of-the-constants-cluster">4.4 What follows for the rest of the constants cluster</h3>
+<p>Every later article in the cluster inherits a status from this table, and the hand-offs are worth setting down so they are not re-litigated:</p>
+<ul>
+<li><strong>S35 ($\alpha$ recomputed, the flagship).</strong> $\alpha$ is the coupling of seed 6, and the row's status is <strong>RESIDUAL</strong>. S35 must show the chain (246)–(268) step by step and report the $\alpha$ deviation as the coupling error, about twice the charge error the corpus quotes.</li>
+<li><strong>S36 (the force integral).</strong> Belongs to the same chain. Its deliverable is the $2\pi$ defect in (264) and the corrected integral $23{,}4323$; that correction <em>improves</em> the agreement, which is why it matters to the ledger.</li>
+<li><strong>S37 (the $\beta/\gamma$ chain).</strong> $\beta = -1{,}7\times10^{-39}$ comes from the <em>Système L</em> (Esp 058 table), so it is downstream of the seeds; $\gamma = -c\beta/h$ gives $7{,}692\times10^{-3}$ against the quoted $7{,}716\times10^{-3}$ ($-0{,}3\,\%$) and is dimensionless near $\alpha$ by a coincidence of cgs bookkeeping. <strong>It is $\beta$ that makes $\alpha$ an output of an input</strong>, and S37 must trace $\beta$, not $\gamma$.</li>
+<li><strong>S38 (the nucleon mass).</strong> $M_{\min} = 1{,}68\times10^{-24}$ g comes from a swept minimum over $0{,}11 \le \omega \le 0{,}13$ — <strong>FITTED</strong>, and weaker than the register's earlier reading.</li>
+<li><strong>S39 ($G$ from the hadron model).</strong> $G = (5{,}4 \pm 2{,}7)\times10^{-8}$ cgs is a $\pm50\,\%$ bar, which is <strong>not a derivation</strong>; and S39 must additionally confront the calibration check that the field equation's own gravitational length is forty orders from the value it computes. Either $G$ is an <strong>INPUT</strong> and the derivation is withdrawn, or $\xi$ is not the lepton-sector $\xi$. S39 must say which.</li>
+<li><strong>S40 ($\dot G/G$).</strong> The one row that is a <strong>PREDICTION</strong> rather than a fit. See Part 5.</li>
+</ul>
+<h2 id="part-5-the-wider-ledger-every-other-number-with-its-chain">Part 5 — The wider ledger: every other number, with its chain</h2>
+<p>The six constants are not the only numbers in the programme. This part lists the rest with the chain that reaches each, so that a reader can see at a glance which numbers stand. The chains are the register's §12, and each is only as good as its weakest link: <strong>if a chain passes through a Part P article, the number dies with it.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>result</th>
+<th>value</th>
+<th>chain</th>
+<th>status</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>R1</strong> $\alpha = e^{2}/\hbar c$</td>
+<td>$7{,}65\times10^{-3}$ (measured $7{,}2974\times10^{-3}$)</td>
+<td>S1→…→S31→<strong>S34</strong>→S36→S37→S35</td>
+<td><strong>RESIDUAL</strong></td>
+<td><strong>STANDS as a consistency check; FAILS as a computation of $\alpha$</strong></td>
+</tr>
+<tr>
+<td><strong>R2</strong> proton radius, strong range</td>
+<td>$R_H \approx 0{,}92$ fm, $\lambda_f \approx 2$ fm</td>
+<td>S17→S22→S23→S24→S26</td>
+<td><strong>CONSISTENCY</strong></td>
+<td><strong>STANDS</strong> — the best numerical hit; but S23 shows the boundary is hard-coded to move at $c$</td>
+</tr>
+<tr>
+<td><strong>R3</strong> nucleon mass</td>
+<td>$M_{\min} = 1{,}68\times10^{-24}$ g</td>
+<td>S22→S24→S26→S27→S38→<strong>S34</strong></td>
+<td><strong>FITTED</strong></td>
+<td><strong>STANDS, weakly</strong> — a swept minimum</td>
+</tr>
+<tr>
+<td><strong>R4</strong> gravitational constant</td>
+<td>$G = (5{,}4\pm2{,}7)\times10^{-8}$ cgs</td>
+<td>S7→S8→S26→S27→S39</td>
+<td><strong>FITTED / INPUT</strong></td>
+<td><strong>STANDS, weakly — and weaker still</strong>: a $\pm50\,\%$ bar, and the input $d_0$ is mis-defined (P21)</td>
+</tr>
+<tr>
+<td><strong>R5</strong> $\dot G/G$</td>
+<td>$5\times10^{-16}$ yr$^{-1}$</td>
+<td>S7→S8→S10→S50→S51→S40</td>
+<td><strong>LIVE PREDICTION</strong></td>
+<td><strong>STANDS — the only live prediction</strong>; see below</td>
+</tr>
+<tr>
+<td><strong>R6</strong> fractional charge $2/3$</td>
+<td>the saturation geometry</td>
+<td>S19→S35→S47→S48</td>
+<td><strong>MECHANISM</strong></td>
+<td><strong>STANDS as a mechanism</strong>; the quark identification dies at P4</td>
+</tr>
+<tr>
+<td><strong>R7</strong> charged-lepton tower</td>
+<td>$3{,}45$, $5{,}12$, $6{,}79$ GeV …</td>
+<td>S20→S21→P1→P2</td>
+<td><strong>FALSIFIED</strong></td>
+<td><strong>DIES at P1</strong> — LEP found nothing to ~100 GeV; the first three fit only because $T$ was fitted to $\tau-\mu$</td>
+</tr>
+<tr>
+<td><strong>R8</strong> quarkonium mass zero</td>
+<td>—</td>
+<td>P4→P5→P6</td>
+<td><strong>FALSIFIED</strong></td>
+<td><strong>DIES</strong> — entirely Part P</td>
+</tr>
+<tr>
+<td><strong>R9</strong> finite redshift</td>
+<td>$Z_{\max} = 4{,}736$ (Esp) / $5{,}438$ (RC)</td>
+<td>S51→P12→P13</td>
+<td><strong>FALSIFIED</strong></td>
+<td><strong>DIES at P12</strong> — the record is $z = 14{,}32$ (JADES-GS-z14-0, 2024)</td>
+</tr>
+<tr>
+<td><strong>R10</strong> 303 Myr antimatter era</td>
+<td>—</td>
+<td>P9→P12</td>
+<td><strong>FALSIFIED</strong></td>
+<td><strong>DIES</strong></td>
+</tr>
+<tr>
+<td><strong>R11</strong> density levels, $\rho_H = 5{,}81\times10^{17}$ g/cm$^{3}$</td>
+<td>—</td>
+<td>S24→P21→P4</td>
+<td><strong>FALSIFIED</strong></td>
+<td><strong>DIES at P21</strong> — definitionally wrong (mass per cell, not a density)</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="51-the-cosmological-rows-which-are-ledger-entries-too">5.1 The cosmological rows, which are ledger entries too</h3>
+<p>The cosmology carries its own numbers, and they belong in this table because they carry verdicts. The detail is S50–S52 and the cosmology articles; the statuses are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>value</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>total energy of the universe identically zero</td>
+<td>—</td>
+<td><strong>MIX</strong> — a real GR statement (ADM mass of a closed universe) in Charon's own version</td>
+</tr>
+<tr>
+<td>no initial singularity, bounce at finite radius</td>
+<td>$R_i = 6\times10^{24}$ cm ($\approx1{,}9$ Gpc)</td>
+<td><strong>SPEC</strong> — live idea, non-standard implementation</td>
+</tr>
+<tr>
+<td>cyclic universe, half-period to maximum</td>
+<td>$\approx2371$ Gyr</td>
+<td><strong>SPEC</strong></td>
+</tr>
+<tr>
+<td>first ~303 Myr antimatter, then a "bang"</td>
+<td>—</td>
+<td><strong>FALSIFIED</strong> — excluded by the absence of annihilation backgrounds and by the CMB</td>
+</tr>
+<tr>
+<td>"empty space" has negative density</td>
+<td>$\rho = -2{,}9\times10^{-32}$ g/cm$^{3}$</td>
+<td><strong>FALSIFIED</strong> — dark energy is positive and about $200\times$ larger in magnitude</td>
+</tr>
+<tr>
+<td>matter created continuously</td>
+<td>$\approx10^{5}\,M_\odot$/s</td>
+<td><strong>FALSIFIED</strong> — $4\times10^{22}\,M_\odot$ over the age of the universe</td>
+</tr>
+<tr>
+<td>universal age $\tau$ ("Axiom 6")</td>
+<td>—</td>
+<td><strong>FALSIFIED</strong> — contradicts look-back time, the CMB at $z = 1100$, and supernova time dilation</td>
+</tr>
+<tr>
+<td>mass of the universe now</td>
+<td>$\approx1{,}14\times10^{56}$ g</td>
+<td><strong>CONSISTENCY</strong> — right order of magnitude, not a test</td>
+</tr>
+<tr>
+<td>closed universe</td>
+<td>$K = +1$</td>
+<td><strong>DISFAVOURED</strong> — Planck 2018 gives $\Omega_k = 0{,}0007\pm0{,}0019$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One row above is not like the others, and the ledger must say so.</strong> R5, $\dot G/G \simeq 5\times10^{-16}$ yr$^{-1}$, is <strong>the only entry in the whole programme whose endpoint is a prediction rather than a fit</strong>. It is dated, falsifiable, and still allowed: current bounds on $|\dot G/G|$ from lunar laser ranging, binary pulsars and ephemerides are around $10^{-12}$–$10^{-13}$ yr$^{-1}$, some $200$–$300$ times looser than Charon's value. Dirac's naive $G \propto 1/t$ gives $\sim7\times10^{-11}$ yr$^{-1}$ and is excluded; Charon's $G$ is small early, peaks about $6\,\%$ above today at $607$ Myr, then relaxes, which is why the present rate is tiny. <strong>This is the only chain new data could confirm</strong>, and it is fully written out in S40.</p>
+<h2 id="part-6-the-axiom-ledger">Part 6 — The axiom ledger</h2>
+<p>S5 records that the corpus's axiom numbering is unstable, and refers the problem here. The ledger keeps one row per <strong>statement</strong>, with its printed number, which is the only way to cite it safely.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>statement</th>
+<th>printed as</th>
+<th>source</th>
+<th>note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vanishing divergence of the physical tensor</td>
+<td>Axiome 1</td>
+<td>Esp 015</td>
+<td>stable</td>
+</tr>
+<tr>
+<td>invariance of the action</td>
+<td>Axiome 2</td>
+<td>Esp 015</td>
+<td>stable</td>
+</tr>
+<tr>
+<td><strong>quantisation of the action at $\pm nh$</strong></td>
+<td><strong>Axiome 3</strong> (leptonic chapters)</td>
+<td>Esp 024</td>
+<td>RC §IV.1 states the same thing unnumbered, as <em>"Axiome de quantification de l'espace-temps"</em></td>
+</tr>
+<tr>
+<td>equipartition of the action between spin and pulse</td>
+<td>Axiome 4</td>
+<td>Esp 026</td>
+<td>stable</td>
+</tr>
+<tr>
+<td><strong>total energy of the universe identically zero</strong></td>
+<td><strong>"Axiome 3"</strong> (cosmological chapter)</td>
+<td>Esp 067</td>
+<td><strong>collides with the action-quantisation Axiome 3</strong>; the same chapter calls it <em>"axiome 5"</em> a page later</td>
+</tr>
+<tr>
+<td>—</td>
+<td>"Axiome 5"</td>
+<td>—</td>
+<td><strong>not otherwise printed in <em>L'Esprit</em></strong></td>
+</tr>
+<tr>
+<td>universality of the age $\tau$</td>
+<td>Axiome 6</td>
+<td>Esp 078</td>
+<td>Esp 087 mistakenly calls the resonance condition "axiome 6"</td>
+</tr>
+<tr>
+<td>resonance condition $\omega_0 = 1{,}28\times10^{24}$ s$^{-1}$</td>
+<td>Axiome 7</td>
+<td>Esp 087</td>
+<td>what makes an extended particle observable</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rule, which is S5's and is repeated here because this table is where it is applied: cite axioms by content and source, never by number alone.</strong> The same number names two different physical statements, one number is unused, and one reference points at the wrong statement.</p>
+<h2 id="part-7-the-verdict">Part 7 — The verdict</h2>
+<p><strong>On rule R1, the count.</strong> The corpus's <em>"5 + 1 = 6"</em> becomes, in the ledger: <strong>1 defined, 5 seeded from measurement, 1 suggested, 0 computed independently.</strong> The claim <em>"ne dépend en fait d'aucun paramètre"</em> fails, and it fails on the corpus's own evidence: Esp 057 §1 lists $e$ among the six values put in, Esp 058 confines the search to $\pm10\,\%$ about the experimental values, and the same page reports the well <strong>at</strong> the experimental values. Esp 057 calls $\xi$ a <em>"suggestion"</em>. <strong>The result is a closure property; the claim is what fails.</strong></p>
+<p><strong>On rule R6, the chains.</strong> The programme's numbers split cleanly. The six chains that stay in Part S — $\alpha$ as a consistency check, the proton radius, the nucleon mass, $G$, $\dot G/G$, fractional charge as a mechanism — stand, each with the caveat Part 5 gives. The five that pass through a Part P article — the lepton tower, quarkonium, $Z_{\max}$, the 303 Myr era, the density levels — die with their link. <strong>No surviving number depends on a disproved article, and no disproved number contaminates a surviving one.</strong> That is the register's clean split, and the ledger confirms it row by row.</p>
+<p><strong>The one line to remember.</strong> Charon's constants are not computed, they are <strong>confirmed</strong>: a twenty-equation system, seeded at the measured values of the six constants and searched within ten percent of them, is found to close on itself to two percent. That is a real and non-trivial property of the formalism, and it is the reason this programme keeps the <em>Système L</em> rather than discarding it. It is also, at two digits against inputs at four, not a derivation of anything — and the number the corpus quotes as its triumph, 2.3 % on the elementary charge, is the depth of its own well.</p>
+<h2 id="summary">Summary</h2>
+<p>The register asked for one table that shows, for every constant, how it is computed and whether it was put in. The table is in Parts 2, 3 and 5, and the count is in Part 4.</p>
+<p><strong>The six constants of the <em>Système L</em> are all inputs.</strong> $c$ is defined by the theory's units; $h$, $m$, $\mu$, $\tau_2$ and $e$ are the six values Esp 057 §1 puts in, taken <em>"numériquement identique[s] aux valeurs numériques expérimentales"</em> per Esp 057 §4. The elementary charge, which the corpus presents as the one constant it computes, is one of those six, and the corpus's own §1 says so.</p>
+<p><strong>The search cannot do better than its box, and its box is the answer.</strong> Esp 058 confines the parameter search to $\pm10\,\%$ about the measured values and reports the minimisation well <strong>at</strong> the measured values. Every deviation in the table is therefore smaller than the search radius by construction, and the largest of them, $e$'s $2{,}3\,\%$, is the residual $\chi_L = 2\,\%$ that the same page reports, to the
+precision at which both are quoted.</p>
+<p><strong>The seventh parameter is an input by the corpus's own admission.</strong> $\Omega_0$, $\xi$ and $l_0$ are one degree of freedom, and Esp 057 says its value was taken from the nucleon mass as a <em>"suggestion"</em>, with the <em>Système L</em> left to compute it directly later. That computation is not exhibited.</p>
+<p><strong>Two corrections belong to this ledger, and both were made here.</strong> The $l_0$ / $\Omega_0$ / $\xi$ values <strong>differ between the two books</strong> — RC's trio ($1{,}8\times10^{-14}$, $2{,}44\times10^{-41}$, $6{,}8\times10^{-4}$) against Esp's pair ($1{,}76\times10^{-14}$, $6{,}467\times10^{-4}$) — with each book internally consistent and the cross-book gap up to $6{,}4\,\%$; the rule is one book's set at a time. And the deviation for $\alpha$ is <strong>twice</strong> the deviation quoted for $e$, because the error on a coupling is the square of the error on a charge, so "2.3 %" understates $\alpha$ as the corpus quotes it.</p>
+<p><strong>The verdict, per the register's rules.</strong> R1: <strong>a closure property, not a derivation</strong> — 1 defined, 5 measured seeds, 1 suggested seed, 0 independent outputs, and a $2\,\%$ consistency residual. R6: the numeric chains split cleanly, with six standing in Part S and five dying in Part P, and no contamination in either direction. The single live prediction the programme contains is $\dot G/G \simeq 5\times10^{-16}$ yr$^{-1}$, which belongs to S40.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The ledger's status tags, used in the tables above and inherited by the rest of the constants cluster.</p>
+<ul>
+<li><strong>DEFINED</strong> — fixed by the theory's own units; agreement with experiment on such a quantity carries no information.</li>
+<li><strong>SEED</strong> — a measured value fed into a search as its starting point. A deviation reported against a seed measures the search's convergence, not the theory's agreement with nature.</li>
+<li><strong>SUGGESTED</strong> — a value the corpus itself labels provisional or <em>« suggestion »</em>, taken from a quantity the formalism is meant to predict.</li>
+<li><strong>RESIDUAL</strong> — the difference between a search's converged value and its starting seed, at the search's own tolerance. Not an output.</li>
+<li><strong>FITTED</strong> — obtained by adjusting a free parameter until a measurement is reproduced; the number so obtained is not evidence for the theory.</li>
+<li><strong>CONSISTENCY</strong> — a number that agrees with observation but could not have come out otherwise, because the agreement was imposed.</li>
+<li><strong>MECHANISM</strong> — a structure that reproduces something real but whose identification with the observed object is not established.</li>
+<li><strong>LIVE PREDICTION</strong> — a number that could still be falsified by data; the corpus contains one.</li>
+<li><strong>FALSIFIED</strong> — contradicted by observation.</li>
+<li><strong>DISFAVOURED</strong> — in mild tension with observation.</li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><code>CHARON_IDEAS_AND_CLAIMS.md</code> §7 for the inventory's own numbers-and-tests section — §7.1 on $\alpha$ as a <em>[MIX]</em>, §7.2 on $\dot G/G$ as <em>[SPEC]</em> and still allowed, §7.3–7.4 on $G$ and its value from the hadron model, §7.5 on $Z_{\max}$ as the strongest falsification, §7.6 on the quasar-density peak; and §8 for the cosmology ledger of Part 5.1.</li>
+<li><code>UPDATED_CHARON_THEORY_2026_ARTICLE_LIST.md</code> §12 for the chains reproduced in Part 5, §11 for the flagship accounting behind Part 2's row 6, and §10 for the (245)–(268) reconstruction.</li>
+<li>J. E. Charon, <em>L'Esprit et la Relativité complexe</em> (1983): Esp 056 for the statement of the <em>Système L</em>, Esp 057 §1 for the six seeds and §4 for the experimental starting point and the $11^{6}$ proposal, Esp 058 for the executed $\pm10\,\%$, $3^{6} = 729$ search, the well at the experimental values, $\chi_L = 2\,\%$ and $\min\chi_i/\chi_L = 50$, and the solution table; Esp 015, 024, 026, 067, 078, 087 for the axioms of Part 6; Esp 053 §13 and Esp (47), (49), (59) for $\Omega_0$.</li>
+<li>J. E. Charon, <em>La Relativité complexe</em> (1987): RC (3-68) for $\alpha$, $\beta$ and $T$; RC (3-70), (3-70-a), (3-71) for $l_0$, $\Omega_0$ and $\xi$; RC §IV.1 for the unnumbered quantisation axiom; RC ch. V for the cosmology.</li>
+<li>S5, <code>charon-s05-notation-and-units</code>, Hazard 5 for the two books' $l_0/\Omega_0/\xi$ sets, Hazard 6 for the $(\hbar = 2\pi\hbar)$ slip, and Part 6 for the constants table this article uses.</li>
+<li>S30, <code>charon-s30-the-systeme-l-statement</code>, for the roster L1–L17 and $K = +1$; S31, <code>charon-s31-the-chi-squared-well</code>, for the method and the $\chi$ well in full; S32, <code>charon-s32-the-six-constants</code>, for the per-constant computation; S33, <code>charon-s33-the-bootstrap-examined</code>, for the parameter-freedom claim and its failure.</li>
+<li>S35, <code>charon-s35-alpha-recomputed</code>, and S36, <code>charon-s36-the-force-integral-246-to-264</code>, for the $\alpha$ chain and the $2\pi$ defect; S37, <code>charon-s37-the-beta-gamma-chain</code>, for the trace of $\beta$; S38 for the nucleon mass; S39 for $G$ and its calibration check; S40, <code>charon-s40-gdot-over-g</code>, for the one live prediction.</li>
+<li>P21, <code>charon-p21-the-density-definition-slide</code>, for why $\rho_H$ is not a density, which is what makes R11 and part of R4 die.</li>
+<li><em>Progress of Theoretical and Experimental Physics</em> <strong>2022</strong>, 083C01 (Particle Data Group), for the measured constants and charged-lepton masses used in the comparison tables, and JADES-GS-z14-0 (2024) for the current redshift record that ends R9.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
