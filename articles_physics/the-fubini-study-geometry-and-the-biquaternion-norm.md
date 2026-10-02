@@ -25,11 +25,11 @@ The article proceeds as follows. The state space and its two forms are recalled;
 
 **Conventions.** The notation is inherited unchanged from the read list. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$ and $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central scalar imaginary $i$ with $i^2=-1$. The Hermitian and anti-Hermitian subspaces are
 $$
-\mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^\dagger=\tilde{Q}\}=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\},
+\mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\}=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\},
 \qquad
-\mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^\dagger=-\tilde{Q}\}=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\},
+\mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\}=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\},
 $$
-with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, with $\mathrm{Tr}(e_0)=2$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, so that on $\mathbb{M}_+$, with $\tilde{H}=h_0e_0+i\mathbf{h}$,
+with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, with $\mathrm{Tr}(e_0)=2$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$, so that on $\mathbb{M}_+$, with $\tilde{H}=h_0e_0+i\mathbf{h}$,
 $$
 N(\tilde{H})=\bigl(h_0^2-|\mathbf{h}|^2\bigr)e_0 .
 $$
@@ -54,9 +54,9 @@ is positive definite, of signature $(4,0)$; it is the Euclidean pairing on $\mat
 
 **The biquaternion norm and its polarization.**
 $$
-N(\tilde{H})=\tilde{H}\bar{\tilde{H}}=\bigl(h_0^2-|\mathbf{h}|^2\bigr)e_0,
+N(\tilde{H})=\tilde{H}\tilde{H}^{\natural}=\bigl(h_0^2-|\mathbf{h}|^2\bigr)e_0,
 \qquad
-B(\tilde{H},\tilde{K})=\tfrac12\bigl(\tilde{H}\bar{\tilde{K}}+\tilde{K}\bar{\tilde{H}}\bigr)=\bigl(h_0k_0-\mathbf{h}\cdot\mathbf{k}\bigr)e_0,
+B(\tilde{H},\tilde{K})=\tfrac12\bigl(\tilde{H}\tilde{K}^{\natural}+\tilde{K}\tilde{H}^{\natural}\bigr)=\bigl(h_0k_0-\mathbf{h}\cdot\mathbf{k}\bigr)e_0,
 $$
 is indefinite, of signature $(1,3)$; its future cone is the positivity cone of the states, and its boundary is the pure states.
 
@@ -86,7 +86,7 @@ and its rays $[\psi]=\mathbb{C}\psi$ constitute the projective line $\mathbb{P}^
 $$
 \tilde\Pi_\psi=\frac{\psi\,\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)} .
 $$
-Since $\tilde\Pi_\psi\psi=\psi$ and $\tilde\Pi_\psi^\dagger=\tilde\Pi_\psi$, this is a Hermitian idempotent of trace one; it depends only on the ray, and the map $[\psi]\mapsto\tilde\Pi_\psi$ is a bijection from $\mathbb{P}^1(\mathbb{C})$ onto the pure states. Composing the two bijections,
+Since $\tilde\Pi_\psi\psi=\psi$ and $\tilde\Pi_\psi^{*}=\tilde\Pi_\psi$, this is a Hermitian idempotent of trace one; it depends only on the ray, and the map $[\psi]\mapsto\tilde\Pi_\psi$ is a bijection from $\mathbb{P}^1(\mathbb{C})$ onto the pure states. Composing the two bijections,
 $$
 \mathbb{P}^1(\mathbb{C})\ \cong\ S^2\ \cong\ \{\text{pure states}\},
 $$
@@ -176,7 +176,7 @@ the second term removing the phase direction. With
 $$
 d\psi=\Bigl(-\tfrac12\sin\tfrac{\theta}{2}\,d\theta\Bigr)p+e^{i\varphi}\Bigl(\tfrac12\cos\tfrac{\theta}{2}\,d\theta+i\sin\tfrac{\theta}{2}\,d\varphi\Bigr)y ,
 $$
-from which $\partial_\varphi\psi=i\,e^{i\varphi}\sin\tfrac{\theta}{2}\,y$. Using the trace formula $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, the normalization $\mathrm{Tr}(\psi^\dagger\psi)=1$, and the matrix-unit relations $p^2=p$, $y^2=x^2=0$, $xy=p$, $yx=e_0-p$ with $y^\dagger=x$, the four first derivatives are
+from which $\partial_\varphi\psi=i\,e^{i\varphi}\sin\tfrac{\theta}{2}\,y$. Using the trace formula $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, the normalization $\mathrm{Tr}(\psi^\dagger\psi)=1$, and the matrix-unit relations $p^2=p$, $y^2=x^2=0$, $xy=p$, $yx=e_0-p$ with $y^{*}=x$, the four first derivatives are
 $$
 \mathrm{Tr}\!\left(\psi^\dagger\partial_\theta\psi\right)=0,
 \qquad
@@ -345,11 +345,11 @@ The interior of the ball carries the standard Bures metric, whose boundary restr
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_0,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $\dagger$ | Hermitian conjugation, $\dagger=\bar{\cdot}\circ{}^{*}$ |
+| ${}^{*}$ | Hermitian conjugation, ${}^{*}={}^{\natural}\circ\bar{\cdot}$ |
 | $\mathbb{M}_+$ | Hermitian subspace, $\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace, $\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
+| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ | State, $|\mathbf{r}|\leq1$ |
 | $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$ | Pure state (idempotent), $|\hat{\mu}|=1$ |
 | $\mathbb{B}p$, $p=\tfrac12(e_0+ie_3)$ | State module, $\cong\mathbb{C}^2$ |

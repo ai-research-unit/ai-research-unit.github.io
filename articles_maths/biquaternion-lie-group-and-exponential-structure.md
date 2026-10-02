@@ -6,7 +6,7 @@ The group of units $\mathbb{B}^\times$ is a real Lie group, and its exponential 
 
 The exponential itself — its series, its closed form, the logarithm and the power functions — is computed in *Biquaternion Elementary Functions*, and only its group-theoretic consequences are used here; the Lie algebra is in Algebra, and the topology of the group is in *The Biquaternion Unit Group as a Topological Group*. 
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})\neq0$ (*Biquaternion Norm and Invertibility*). Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^3 Q_k e_k$.
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})\neq0$ (*Biquaternion Norm and Invertibility*). Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^3 Q_k e_k$.
 
 ---
 
@@ -42,9 +42,9 @@ $S^3$ is the maximal compact subgroup of $\mathbb{B}^\times_1$, with Lie algebra
 
 ## The Unitary Subgroup and the Defining Module
 
-The algebra acts on the defining module $\mathbb{C}^2$ by the defining representation, in which a biquaternion acts as its $2\times2$ matrix $\Phi(\tilde{Q})$ (*Biquaternion 2×2 Matrix Element Representation*). The elements that preserve the standard Hermitian form of $\mathbb{C}^2$ are exactly those with $\tilde{Q}^{\dagger}\tilde{Q}=e_0$, and they form a compact subgroup of the group of units,
+The algebra acts on the defining module $\mathbb{C}^2$ by the defining representation, in which a biquaternion acts as its $2\times2$ matrix $\Phi(\tilde{Q})$ (*Biquaternion 2×2 Matrix Element Representation*). The elements that preserve the standard Hermitian form of $\mathbb{C}^2$ are exactly those with $\tilde{Q}^{*}\tilde{Q}=e_0$, and they form a compact subgroup of the group of units,
 $$
-U(2)=\{\tilde{Q}\in\mathbb{B}^{\times}:\tilde{Q}^{\dagger}\tilde{Q}=e_0\},
+U(2)=\{\tilde{Q}\in\mathbb{B}^{\times}:\tilde{Q}^{*}\tilde{Q}=e_0\},
 $$
 of real dimension $4$. The determinant-one elements inside it are the unit quaternions:
 $$

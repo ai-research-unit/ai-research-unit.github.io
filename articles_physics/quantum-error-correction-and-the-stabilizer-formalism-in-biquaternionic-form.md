@@ -30,7 +30,7 @@ which is an idempotent of the tensor-product algebra. The whole theory of stabil
 The central result is the **Knill–Laflamme error-correction condition**. An error set $\{\tilde{E}_a\}$ is correctable by the code with projector $\tilde\Pi$ exactly when
 
 $$
-\tilde\Pi\,\tilde{E}_a^\dagger\tilde{E}_b\,\tilde\Pi = c_{ab}\,\tilde\Pi
+\tilde\Pi\,\tilde{E}_a^{*}\tilde{E}_b\,\tilde\Pi = c_{ab}\,\tilde\Pi
 \qquad \text{for all } a,b ,
 $$
 
@@ -70,7 +70,7 @@ $$
 Three facts, all consequences of the group structure, make it a projector:
 
 - **Idempotent.** Since $S$ is a group, $\left(\sum_{\tilde{g}\in S}\tilde{g}\right)^2 = \sum_{\tilde{h}\in S}|S|\,\tilde{h} = |S|\sum_{\tilde{g}}\tilde{g}$, so $\tilde\Pi^2 = \tilde\Pi$.
-- **Hermitian and positive.** Each $\tilde{g}$ is Hermitian, so $\tilde\Pi^\dagger = \tilde\Pi$; and $\tilde\Pi$ is a sum of commuting involutions, hence it is a positive element of $\mathbb{M}_+^{\otimes n}$ with eigenvalues $0$ and $1$.
+- **Hermitian and positive.** Each $\tilde{g}$ is Hermitian, so $\tilde\Pi^{*} = \tilde\Pi$; and $\tilde\Pi$ is a sum of commuting involutions, hence it is a positive element of $\mathbb{M}_+^{\otimes n}$ with eigenvalues $0$ and $1$.
 - **Trace.** $\mathrm{Tr}(\tilde\Pi) = |S|^{-1}\mathrm{Tr}(e_0^{\otimes n}) = 2^n/|S| = 2^k$, the dimension of the code space.
 
 Thus the code space is the image of an idempotent of the algebra, and its dimension is $2^k$: the code encodes $k$ logical qubits into $n$ physical qubits. The projector is a **Peirce component** of the commutative subalgebra spanned by $S$; it is the maximal idempotent whose stabilizer is all of $S$.
@@ -86,7 +86,7 @@ An **error** is an element $\tilde{E}_a$ of the Pauli group, typically a tensor 
 The code with projector $\tilde\Pi$ corrects the error set $\{\tilde{E}_a\}$ if and only if
 
 $$
-\tilde\Pi\,\tilde{E}_a^\dagger\tilde{E}_b\,\tilde\Pi = c_{ab}\,\tilde\Pi
+\tilde\Pi\,\tilde{E}_a^{*}\tilde{E}_b\,\tilde\Pi = c_{ab}\,\tilde\Pi
 \qquad \text{for all } a,b,
 $$
 
@@ -94,15 +94,15 @@ where $c = (c_{ab})$ is a Hermitian matrix of numbers, independent of the encode
 
 ### Why it is necessary
 
-Suppose the code can correct the errors $\{\tilde{E}_a\}$, so that there is a recovery map $\mathcal{R}$ with $\mathcal{R}(\tilde{E}_a\tilde{\rho}\tilde{E}_a^\dagger) = p_a\tilde{\rho}$ for every encoded $\tilde{\rho} = \tilde\Pi\tilde{\rho}\tilde\Pi$ and some probability $p_a>0$. Linearity of the recovery forces the relation $c_{ab}$: for two errors and two encoded states, the recovery must reproduce $\tilde{\rho}$ from both $\tilde{E}_a\tilde{\rho}\tilde{E}_b^\dagger$ and $\tilde{E}_b\tilde{\rho}\tilde{E}_a^\dagger$, and the only way the recovery can act identically on the whole code space is if the operators $\tilde\Pi\tilde{E}_a^\dagger\tilde{E}_b\tilde\Pi$ are all proportional on the code space, i.e. multiples of $\tilde\Pi$. Equivalently: if two different errors had distinguishable effects on the code space, no single recovery could undo both.
+Suppose the code can correct the errors $\{\tilde{E}_a\}$, so that there is a recovery map $\mathcal{R}$ with $\mathcal{R}(\tilde{E}_a\tilde{\rho}\tilde{E}_a^{*}) = p_a\tilde{\rho}$ for every encoded $\tilde{\rho} = \tilde\Pi\tilde{\rho}\tilde\Pi$ and some probability $p_a>0$. Linearity of the recovery forces the relation $c_{ab}$: for two errors and two encoded states, the recovery must reproduce $\tilde{\rho}$ from both $\tilde{E}_a\tilde{\rho}\tilde{E}_b^{*}$ and $\tilde{E}_b\tilde{\rho}\tilde{E}_a^{*}$, and the only way the recovery can act identically on the whole code space is if the operators $\tilde\Pi\tilde{E}_a^{*}\tilde{E}_b\tilde\Pi$ are all proportional on the code space, i.e. multiples of $\tilde\Pi$. Equivalently: if two different errors had distinguishable effects on the code space, no single recovery could undo both.
 
 ### Why it is sufficient
 
-If the condition holds, diagonalize the Hermitian matrix $c = u\,d\,u^\dagger$ with $d$ diagonal. Then the rotated error operators $\tilde{F}_\alpha = \sum_a u_{a\alpha}\tilde{E}_a$ satisfy $\tilde\Pi\tilde{F}_\alpha^\dagger\tilde{F}_\beta\tilde\Pi = d_\alpha\delta_{\alpha\beta}\tilde\Pi$. The errors $\{\tilde{F}_\alpha\}$ therefore map the code space to mutually orthogonal subspaces, $\tilde{F}_\alpha\tilde\Pi\tilde{F}_\beta^\dagger = 0$ for $\alpha\neq\beta$, and each acts within its subspace in a way that depends only on $\alpha$. A measurement that identifies which subspace the state fell into — the **syndrome measurement** — followed by an operation that reverses $\tilde{F}_\alpha$ on that subspace restores the encoded state. This is the standard construction, and it is a statement about the algebra: the condition says that the error operators, restricted to the Peirce component $\tilde\Pi$, form a set of "orthogonal" block actions.
+If the condition holds, diagonalize the Hermitian matrix $c = u\,d\,u^\dagger$ with $d$ diagonal. Then the rotated error operators $\tilde{F}_\alpha = \sum_a u_{a\alpha}\tilde{E}_a$ satisfy $\tilde\Pi\tilde{F}_\alpha^{*}\tilde{F}_\beta\tilde\Pi = d_\alpha\delta_{\alpha\beta}\tilde\Pi$. The errors $\{\tilde{F}_\alpha\}$ therefore map the code space to mutually orthogonal subspaces, $\tilde{F}_\alpha\tilde\Pi\tilde{F}_\beta^{*} = 0$ for $\alpha\neq\beta$, and each acts within its subspace in a way that depends only on $\alpha$. A measurement that identifies which subspace the state fell into — the **syndrome measurement** — followed by an operation that reverses $\tilde{F}_\alpha$ on that subspace restores the encoded state. This is the standard construction, and it is a statement about the algebra: the condition says that the error operators, restricted to the Peirce component $\tilde\Pi$, form a set of "orthogonal" block actions.
 
 ### The condition in the algebra
 
-The condition is naturally stated in the tensor-product algebra. $\tilde\Pi$ is an idempotent of $\mathbb{M}_+^{\otimes n}$; the errors are elements of the Pauli group; the sandwich $\tilde\Pi\tilde{E}_a^\dagger\tilde{E}_b\tilde\Pi$ is an element of the algebra, and the condition says it is scalar on the code. The numbers $c_{ab}$ form the **Gram matrix** of the error operators restricted to the code space, and correcting the errors means that this Gram matrix is all the code sees of the errors: the encoded state is not resolved.
+The condition is naturally stated in the tensor-product algebra. $\tilde\Pi$ is an idempotent of $\mathbb{M}_+^{\otimes n}$; the errors are elements of the Pauli group; the sandwich $\tilde\Pi\tilde{E}_a^{*}\tilde{E}_b\tilde\Pi$ is an element of the algebra, and the condition says it is scalar on the code. The numbers $c_{ab}$ form the **Gram matrix** of the error operators restricted to the code space, and correcting the errors means that this Gram matrix is all the code sees of the errors: the encoded state is not resolved.
 
 ## The Three-Qubit Bit-Flip Code
 
@@ -177,7 +177,7 @@ The following were verified by explicit computation with the $32\times32$ matric
 
 - **Commutativity and independence.** All four generators commute pairwise, so $S$ is abelian; the group has order $16$ and the projector has trace $2$.
 - **Idempotency.** $\tilde\Pi^2 = \tilde\Pi$, with spectrum in $\{0,1\}$ and $\mathrm{Tr}(\tilde\Pi) = 2$, so the code space is two-dimensional.
-- **Knill–Laflamme for every single-qubit error.** The error set $\{e_0^{\otimes5}\}\cup\{X_i,Y_i,Z_i\}_{i=1}^{5}$ has sixteen elements. For every pair $a,b$ of these sixteen, the sandwich $\tilde\Pi\tilde{E}_a^\dagger\tilde{E}_b\tilde\Pi$ was found to be a multiple of $\tilde\Pi$, to machine precision. The five-qubit code therefore corrects **an arbitrary single-qubit error**.
+- **Knill–Laflamme for every single-qubit error.** The error set $\{e_0^{\otimes5}\}\cup\{X_i,Y_i,Z_i\}_{i=1}^{5}$ has sixteen elements. For every pair $a,b$ of these sixteen, the sandwich $\tilde\Pi\tilde{E}_a^{*}\tilde{E}_b\tilde\Pi$ was found to be a multiple of $\tilde\Pi$, to machine precision. The five-qubit code therefore corrects **an arbitrary single-qubit error**.
 - **Perfection.** The fifteen nontrivial single-qubit errors have fifteen distinct nonzero syndromes,
 
 $$
@@ -188,7 +188,7 @@ so the syndrome measurement identifies the error uniquely. This is the sense in 
 
 ### The code as an idempotent
 
-Both codes have the same algebraic shape: a stabilizer group $S$, a code idempotent $\tilde\Pi = |S|^{-1}\sum_{\tilde{g}\in S}\tilde{g}$ in $\mathbb{M}_+^{\otimes n}$, and errors whose Gram matrix on the code is scalar. The five-qubit code is the smallest case in which the error set is the full single-qubit Pauli set and the code is perfect, and it is the algebraically cleanest illustration of the Knill–Laflamme condition: the error subspaces are the images of the idempotents $\tilde{F}_\alpha\tilde\Pi\tilde{F}_\alpha^\dagger$ for an orthonormalized error basis, and they tile the full space.
+Both codes have the same algebraic shape: a stabilizer group $S$, a code idempotent $\tilde\Pi = |S|^{-1}\sum_{\tilde{g}\in S}\tilde{g}$ in $\mathbb{M}_+^{\otimes n}$, and errors whose Gram matrix on the code is scalar. The five-qubit code is the smallest case in which the error set is the full single-qubit Pauli set and the code is perfect, and it is the algebraically cleanest illustration of the Knill–Laflamme condition: the error subspaces are the images of the idempotents $\tilde{F}_\alpha\tilde\Pi\tilde{F}_\alpha^{*}$ for an orthonormalized error basis, and they tile the full space.
 
 ### The projector as a group-algebra idempotent
 
@@ -215,7 +215,7 @@ Verified for the two codes: the images of the four group-algebra idempotents of 
 **What it does.**
 
 - It identifies the code space with the image of an idempotent $\tilde\Pi = |S|^{-1}\sum_{\tilde{g}\in S}\tilde{g}$ of the tensor-product algebra $\mathbb{M}_+^{\otimes n}$, where $S$ is a finite commutative group of involutions; the code projector is a Peirce component of a commutative subalgebra.
-- It states the Knill–Laflamme condition as a condition on the sandwich $\tilde\Pi\tilde{E}_a^\dagger\tilde{E}_b\tilde\Pi$, i.e. on the Gram matrix of the errors restricted to the code.
+- It states the Knill–Laflamme condition as a condition on the sandwich $\tilde\Pi\tilde{E}_a^{*}\tilde{E}_b\tilde\Pi$, i.e. on the Gram matrix of the errors restricted to the code.
 - It identifies the syndrome measurement with the projection onto the joint eigen-idempotents of the generators, a Peirce decomposition of the commutative subalgebra.
 - It verifies idempotency, trace, Knill–Laflamme, and syndrome distinctness for the three-qubit bit-flip code and the five-qubit perfect code by explicit computation.
 
@@ -250,7 +250,7 @@ $$
 An error set $\{\tilde{E}_a\}$ is correctable if and only if the **Knill–Laflamme condition**
 
 $$
-\tilde\Pi\tilde{E}_a^\dagger\tilde{E}_b\tilde\Pi = c_{ab}\tilde\Pi
+\tilde\Pi\tilde{E}_a^{*}\tilde{E}_b\tilde\Pi = c_{ab}\tilde\Pi
 $$
 
 holds for all $a,b$: the error operators, restricted to the code, have a scalar Gram matrix and cannot resolve the encoded state. The syndrome measurement is the joint measurement of the commuting generators, i.e. the projection onto the joint eigen-idempotents of a commutative subalgebra.
@@ -269,7 +269,7 @@ Two codes were constructed and verified. The three-qubit bit-flip code has $S$ g
 | $\tilde\Pi = \lvert S\rvert^{-1}\sum_{\tilde{g}\in S}\tilde{g}$ | Code projector (idempotent) |
 | $\tilde\Pi^2=\tilde\Pi$, $\mathrm{Tr}(\tilde\Pi) = 2^k$ | Code properties ($k$ logical qubits) |
 | $\tilde{E}_a$ | Error operator (Pauli group element) |
-| $\tilde\Pi\tilde{E}_a^\dagger\tilde{E}_b\tilde\Pi = c_{ab}\tilde\Pi$ | Knill–Laflamme condition |
+| $\tilde\Pi\tilde{E}_a^{*}\tilde{E}_b\tilde\Pi = c_{ab}\tilde\Pi$ | Knill–Laflamme condition |
 | $\tilde{g}_i$ | Stabilizer generators (measured for syndromes) |
 | $Z_1Z_2=(ie_3)\otimes(ie_3)\otimes e_0$ | Generator of the three-qubit code |
 | $XZZXe_0,\ e_0XZZX,\ Xe_0XZZ,\ ZXe_0XZ$ | Five-qubit code generators |

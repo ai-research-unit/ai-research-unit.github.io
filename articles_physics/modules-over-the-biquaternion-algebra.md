@@ -92,7 +92,7 @@ The module $S$ is consequently a bimodule ${}_\mathbb{B}S_\mathbb{C}$: the left 
 The dual is not a new module. With $S^*=\operatorname{Hom}_\mathbb{C}(S,\mathbb{C})$ carrying the contragredient action, quaternion conjugation identifies $\mathbb{B}^{\mathrm{op}}$ with $\mathbb{B}$, and $S^*\cong S$. In the matrix model the identification is the adjugate, and with $\varepsilon=i\sigma_2$ one has, for every $\tilde{Q}\in\mathbb{B}$,
 
 $$
-\Phi\bigl(\bar{\tilde{Q}}\bigr)=\varepsilon\,\Phi(\tilde{Q})^{\mathrm{T}}\,\varepsilon^{-1},
+\Phi\bigl(\tilde{Q}^{\natural}\bigr)=\varepsilon\,\Phi(\tilde{Q})^{\mathrm{T}}\,\varepsilon^{-1},
 $$
 
 so quaternion conjugation on $\mathbb{B}$ is transposition in the basis selected by $\varepsilon$: the row space is the dual of the column space, the same module $S$.
@@ -139,7 +139,7 @@ The biquaternion algebra has, up to isomorphism, exactly one simple left module,
 | $\operatorname{End}_\mathbb{B}(S)=\mathbb{C}$ | Schur; only the scalars intertwine |
 | $\operatorname{End}_\mathbb{C}(S)=\mathbb{B}$ | Double centralizer |
 | ${}_\mathbb{B}S_\mathbb{C}$ | Standard bimodule; $S^*\cong S$ |
-| $\Phi(\bar{\tilde{Q}})=\varepsilon\Phi(\tilde{Q})^{\mathrm{T}}\varepsilon^{-1}$ | Quaternion conjugation as the adjugate; $\varepsilon=i\sigma_2$ |
+| $\Phi(\tilde{Q}^{\natural})=\varepsilon\Phi(\tilde{Q})^{\mathrm{T}}\varepsilon^{-1}$ | Quaternion conjugation as the adjugate; $\varepsilon=i\sigma_2$ |
 | $\operatorname{Mod}(\mathbb{B})\cong\operatorname{Mod}(\mathbb{C})$ | Morita equivalence; the field is the centre $\mathbb{C}e_0$ |
 | $\tilde{Q}=ict\,e_0+\mathbf{x}$ | Material four-position; an algebra element acting on $S$, not a module element |
 

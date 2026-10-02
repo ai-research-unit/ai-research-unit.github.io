@@ -361,7 +361,7 @@ Reversion is an anti-involution: it satisfies $(xy)^{r} = y^{r}x^{r}$ and $(x^{r
 The **Clifford conjugation** anti-involution is the map
 
 $$
-x \mapsto \bar{x}
+x \mapsto x^{\natural}
 $$
 
 that reverses the order of the factors and multiplies each vector factor by $-1$. On a product of generators, it acts as
@@ -370,7 +370,7 @@ $$
 e_{i_1} e_{i_2} \cdots e_{i_k} \mapsto (-1)^k e_{i_k} \cdots e_{i_2} e_{i_1}.
 $$
 
-Clifford conjugation is also an anti-involution: it satisfies $\overline{xy} = \bar{y} \bar{x}$ and $\overline{\bar{x}} = x$.
+Clifford conjugation is also an anti-involution: it satisfies $(xy)^{\natural} = y^{\natural} x^{\natural}$ and $\overline{x^{\natural}} = x$.
 
 ## 22. The Grade Involution
 

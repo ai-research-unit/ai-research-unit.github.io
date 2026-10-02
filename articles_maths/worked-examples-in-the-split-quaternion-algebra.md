@@ -7,7 +7,7 @@ This article collects explicit computations in the split-quaternion algebra $\ma
 
 The article is a companion to the structural articles of the category. Its purpose is to put the abstract statements on concrete elements, so that the reader can carry each of them back to a computation. It introduces no new result; the statements it illustrates are those of *Split-Quaternion Algebra*, *Split-Quaternion Idempotents and Projections*, *Split-Quaternion Zero Divisors*, *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Rotations and the Lorentz Group*.
 
-**Conventions.** A split-quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_0, q_1, q_2, q_3 \in \mathbb{R}$ and the products $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$. Its conjugation is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and its central product is $N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2 + q_1^2 - q_2^2 - q_3^2$, formed and evaluated algebraically and read metrically in *Split-Quaternion Norm and Invertibility*. The elements $\tilde\pi_\pm = \tfrac{1}{2}(1 \pm e_2)$ are the standard idempotents.
+**Conventions.** A split-quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_0, q_1, q_2, q_3 \in \mathbb{R}$ and the products $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$. Its conjugation is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and its central product is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2$, formed and evaluated algebraically and read metrically in *Split-Quaternion Norm and Invertibility*. The elements $\tilde\pi_\pm = \tfrac{1}{2}(1 \pm e_2)$ are the standard idempotents.
 
 ## The Basis Products
 
@@ -53,7 +53,7 @@ so the product is $\tilde q y = 2 + e_1 + e_2 + 3e_3$; the coefficient of $e_1$ 
 
 ## The Three Involutions and Their Eigenspaces
 
-Three involutions act on the algebra. The **conjugation** $\bar{\cdot}$ negates the vector part, the **principal involution** $\alpha$ is the automorphism
+Three involutions act on the algebra. The **conjugation** ${}^{\natural}$ negates the vector part, the **principal involution** $\alpha$ is the automorphism
 
 $$
 \alpha(e_1) = -e_1, \qquad \alpha(e_2) = -e_2, \qquad \alpha(e_3) = e_3,
@@ -68,18 +68,18 @@ $$
 On a general element they read
 
 $$
-\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3, \qquad
+\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3, \qquad
 \alpha(\tilde q) = q_0 - q_1 e_1 - q_2 e_2 + q_3 e_3, \qquad
 \rho(\tilde q) = q_0 + q_1 e_1 + q_2 e_2 - q_3 e_3,
 $$
 
-and the three are related by $\bar{\tilde q} = \alpha(\rho(\tilde q)) = \rho(\alpha(\tilde q))$.
+and the three are related by $\tilde{q}^{\natural} = \alpha(\rho(\tilde q)) = \rho(\alpha(\tilde q))$.
 
 **Example (eigenspaces).** Each involution is diagonalisable with eigenvalues $\pm 1$.
 
 | involution | $+1$ eigenspace | $-1$ eigenspace | dimensions |
 |---|---|---|---|
-| $\bar{\cdot}$ | $S = \mathbb{R}\cdot 1$ | $V = \operatorname{span}\{e_1,e_2,e_3\}$ | $1, 3$ |
+| ${}^{\natural}$ | $S = \mathbb{R}\cdot 1$ | $V = \operatorname{span}\{e_1,e_2,e_3\}$ | $1, 3$ |
 | $\alpha$ | $\operatorname{span}\{1, e_3\}$ | $\operatorname{span}\{e_1, e_2\}$ | $2, 2$ |
 | $\rho$ | $\operatorname{span}\{1, e_1, e_2\}$ | $\mathbb{R} e_3$ | $3, 1$ |
 
@@ -151,16 +151,16 @@ a pair in which neither factor is a nilpotent.
 
 ## The Unit Criterion Worked
 
-**Criterion (from *Split-Quaternion Norm and Invertibility*).** A nonzero $\tilde q$ is invertible if and only if $N(\tilde q) \neq 0$, and then $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$. It is recalled here only to be applied.
+**Criterion (from *Split-Quaternion Norm and Invertibility*).** A nonzero $\tilde q$ is invertible if and only if $N(\tilde q) \neq 0$, and then $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$. It is recalled here only to be applied.
 
 **Example (a unit of positive norm).** For $\tilde q = 2 + e_1$, the split-quaternion norm is $N(\tilde q) = 4 + 1 = 5$, and
 
 $$
-\tilde q^{-1} = \frac{\bar{\tilde q}}{N(\tilde q)} = \frac{2 - e_1}{5}, \qquad
+\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{N(\tilde q)} = \frac{2 - e_1}{5}, \qquad
 (2 + e_1)\frac{2 - e_1}{5} = \frac{4 - e_1^2}{5} = \frac{5}{5} = 1 .
 $$
 
-**Example (a unit of norm one).** For $y = 1 + e_1 + e_2$, the split-quaternion norm is $N(y) = 1 + 1 - 1 = 1$, so $y^{-1} = \bar{y} = 1 - e_1 - e_2$; indeed $y\bar{y} = (1+e_1+e_2)(1-e_1-e_2) = 1$. Since $N(y) = 1$, the element is a unit split-quaternion.
+**Example (a unit of norm one).** For $y = 1 + e_1 + e_2$, the split-quaternion norm is $N(y) = 1 + 1 - 1 = 1$, so $y^{-1} = y^{\natural} = 1 - e_1 - e_2$; indeed $y y^{\natural} = (1+e_1+e_2)(1-e_1-e_2) = 1$. Since $N(y) = 1$, the element is a unit split-quaternion.
 
 **Example (a unit of negative norm).** For $z = e_2$, the split-quaternion norm is $N(z) = -1$, and $z^{-1} = \bar{z}/N(z) = (-e_2)/(-1) = e_2$, consistent with $e_2^2 = 1$. 
 
@@ -184,11 +184,11 @@ The idempotents $\tilde\pi_\pm$ are verified to be orthogonal, complete and of z
 |---|---|---|
 | $\mathbb{H}_{\mathrm{s}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | a general split-quaternion | *Split-Quaternion Algebra* |
-| $\bar{\cdot}$, $\alpha$, $\rho$ | conjugation, principal involution, reversal | *Split-Quaternion Algebra* |
+| ${}^{\natural}$, $\alpha$, $\rho$ | conjugation, principal involution, reversal | *Split-Quaternion Algebra* |
 | $\tilde\pi_\pm = \tfrac{1}{2}(1\pm e_2)$ | the standard idempotents | *Split-Quaternion Idempotents and Projections* |
 | $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$ | the two minimal left ideals | *Split-Quaternion Idempotents and Projections* |
-| $N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2+q_1^2-q_2^2-q_3^2$ | the central product, formed and evaluated algebraically | *Split-Quaternion Algebra* |
-| $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$ | the inverse of a unit | *Split-Quaternion Norm and Invertibility* |
+| $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$ | the central product, formed and evaluated algebraically | *Split-Quaternion Algebra* |
+| $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$ | the inverse of a unit | *Split-Quaternion Norm and Invertibility* |
 
 ## Further Reading
 

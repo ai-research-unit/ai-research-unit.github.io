@@ -8,7 +8,7 @@ This article writes the Rarita–Schwinger system in biquaternionic form and red
 
 Two features of the standard theory are recorded and read in the algebra. First, in the massless case the system has a gauge freedom $\psi_\mu\to\psi_\mu+\partial_\mu\epsilon$, with $\epsilon$ an arbitrary Dirac spinor; the freedom removes the spin-$\tfrac12$ branches that the representation theory places in the field, leaving the two helicities $\pm\tfrac32$. Second, in the massive case the constraint structure is more rigid and the minimal coupling is known to be inconsistent: the field propagates acausally in an external electromagnetic background, the Velo–Zwanziger obstruction, and a consistent interacting theory requires either a gravitational background or a gauge principle. The framework represents these facts; it does not remove them.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central scalar imaginary $i$, gradient $\tilde{\nabla}=e_0\partial_{ict}+\nabla$ with conjugate $\bar{\tilde{\nabla}}$ and d'Alembertian $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$. The Clifford generators are used as a translation tool with the mostly-minus metric $g=\mathrm{diag}(+1,-1,-1,-1)$, so that $(\gamma^0)^2=+I_4$, $(\gamma^k)^2=-I_4$, and $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, and the Dirac representation $\gamma^0=\mathrm{diag}(I_2,-I_2)$, $\gamma^k=\big(\begin{smallmatrix}0&\sigma^k\\-\sigma^k&0\end{smallmatrix}\big)$ is used for the explicit rest-frame computation. The chirality operator is $\gamma_5 = i_{\mathrm{Cl}}\gamma^0\gamma^1\gamma^2\gamma^3$, with $i_{\mathrm{Cl}}$ the scalar imaginary of the complexified Clifford algebra rather than the biquaternion imaginary, and the total antisymmetrizations are $\gamma^{\mu\nu}=\tfrac12[\gamma^\mu,\gamma^\nu]$ and $\gamma^{\mu\nu\rho}=\tfrac1{3!}\sum_{\mathrm{perms}}\pm\gamma^\mu\gamma^\nu\gamma^\rho$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central scalar imaginary $i$, gradient $\tilde{\nabla}=e_0\partial_{ict}+\nabla$ with conjugate $\tilde{\nabla}^{\natural}$ and d'Alembertian $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$. The Clifford generators are used as a translation tool with the mostly-minus metric $g=\mathrm{diag}(+1,-1,-1,-1)$, so that $(\gamma^0)^2=+I_4$, $(\gamma^k)^2=-I_4$, and $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, and the Dirac representation $\gamma^0=\mathrm{diag}(I_2,-I_2)$, $\gamma^k=\big(\begin{smallmatrix}0&\sigma^k\\-\sigma^k&0\end{smallmatrix}\big)$ is used for the explicit rest-frame computation. The chirality operator is $\gamma_5 = i_{\mathrm{Cl}}\gamma^0\gamma^1\gamma^2\gamma^3$, with $i_{\mathrm{Cl}}$ the scalar imaginary of the complexified Clifford algebra rather than the biquaternion imaginary, and the total antisymmetrizations are $\gamma^{\mu\nu}=\tfrac12[\gamma^\mu,\gamma^\nu]$ and $\gamma^{\mu\nu\rho}=\tfrac1{3!}\sum_{\mathrm{perms}}\pm\gamma^\mu\gamma^\nu\gamma^\rho$.
 
 ## The Standard Rarita–Schwinger Field
 
@@ -275,10 +275,10 @@ The massive case is also where the known difficulty lives. The constraint analys
 Because each component satisfies the Dirac equation, each component satisfies the Klein–Gordon equation on squaring, exactly as in the spin-$\tfrac12$ case. For a biquaternion plane wave of the component,
 
 $$
-\tilde{\Psi}_\mu = \tilde{\Psi}_{\mu,0}\,e^{\,i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})},
+\tilde{\Psi}_\mu = \tilde{\Psi}_{\mu,0}\,e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})},
 $$
 
-the Dirac equation on the component requires $\tilde{K}\bar{\tilde{K}} = -m^2c^2/\hbar^2$ in the normalization of the companion Dirac article, that is,
+the Dirac equation on the component requires $\tilde{K}\tilde{K}^{\natural} = -m^2c^2/\hbar^2$ in the normalization of the companion Dirac article, that is,
 
 $$
 \frac{\omega^2}{c^2} - \mathbf{k}^2 = \frac{m^2c^2}{\hbar^2},

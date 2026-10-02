@@ -9,7 +9,7 @@ $$
 N(xy) = N(x)N(y), \qquad N(1) = 1 ,
 $$
 
-and a **normed division algebra** is an algebra with such a map in which $N(x)\neq0$ for $x\neq0$. The condition is purely algebraic: the norm is a multiplicative function to the ground field, and the requirements mention only the multiplication of $A$ and the field $k$. A real algebra with a multiplicative norm satisfying the extra condition of **anisotropy** is a division algebra, because $x^{-1} = \bar x/N(x)$ for the involution $\bar x$ determined by $N$; the existence of such a norm is a strong restriction on the dimension. **Hurwitz' theorem** states that a finite-dimensional real normed division algebra has dimension $1$, $2$, $4$ or $8$, and that the algebras are, up to isomorphism, the reals, the complexes, the quaternions and the octonions.
+and a **normed division algebra** is an algebra with such a map in which $N(x)\neq0$ for $x\neq0$. The condition is purely algebraic: the norm is a multiplicative function to the ground field, and the requirements mention only the multiplication of $A$ and the field $k$. A real algebra with a multiplicative norm satisfying the extra condition of **anisotropy** is a division algebra, because $x^{-1} = x^{\natural}/N(x)$ for the involution $x^{\natural}$ determined by $N$; the existence of such a norm is a strong restriction on the dimension. **Hurwitz' theorem** states that a finite-dimensional real normed division algebra has dimension $1$, $2$, $4$ or $8$, and that the algebras are, up to isomorphism, the reals, the complexes, the quaternions and the octonions.
 
 The article is an application of the category *Topology on Linear Algebras*, and it reads the normed division algebras of Algebra through the multiplicative norm and the form that this part supplies. It follows the structure theory developed in Algebra — the definition of an algebra of *Algebras*, the division algebras of *Division Algebras*, the examples of *Examples of Algebras* — and it builds the systems that the theorem classifies, from the real numbers to the octonions, by the doubling, computing each norm from the doubling itself. The same systems are studied in their own right, together with the biquaternions and the dual numbers, in the synthetic articles of Part VI; those articles are named here for orientation only. It develops the definition of a multiplicative norm and the involution it determines, the **Cayley–Dickson doubling** and the norm bookkeeping that accompanies it, the chain
 
@@ -21,7 +21,7 @@ with the property lost at each step, the Hurwitz theorem and its equivalence wit
 
 That boundary is stated once and used throughout. The polarisation of a multiplicative norm, the associated bilinear form, its nondegeneracy and its signature, the classification of the composition algebras over a general field, and the Clifford algebras of a form are all treated in *Topology on Linear Algebras with a degree-2 form*, the form category of this part. The proofs below therefore use only the multiplicativity of $N$, the multiplication of $A$ and explicit computation in the doubling; where the classical argument of Hurwitz uses the polarised form, the article says so and defers. Likewise, the identification of the norm-one elements with spheres, the group structure of the units of the norm and the topological restrictions on the dimension belong to this part and to Part III; what is established here is the algebraic chain, the algebraic restrictions and the sums-of-squares identities.
 
-Throughout, $k$ is a field of characteristic $\neq2$; $A$ is a finite-dimensional $k$-algebra with identity; an **involution** on $A$ is a $k$-linear map $x\mapsto\bar x$ with $\overline{xy} = \bar y\bar x$ and $\bar{\bar x} = x$; a norm is **anisotropic** if $N(x) = 0$ only for $x = 0$; and $N$ is the corpus's norm $N(\tilde Q) = \tilde Q\bar{\tilde Q}$ read as a multiplicative map, with the shift and the signature of the associated form left to *Topology on Linear Algebras with a degree-2 form*.
+Throughout, $k$ is a field of characteristic $\neq2$; $A$ is a finite-dimensional $k$-algebra with identity; an **involution** on $A$ is a $k$-linear map $x\mapsto x^{\natural}$ with $(xy)^{\natural} = y^{\natural} x^{\natural}$ and $\bar{x^{\natural}} = x$; a norm is **anisotropic** if $N(x) = 0$ only for $x = 0$; and $N$ is the corpus's norm $N(\tilde Q) = \tilde Q\tilde{Q}^{\natural}$ read as a multiplicative map, with the shift and the signature of the associated form left to *Topology on Linear Algebras with a degree-2 form*.
 
 ## Multiplicative Norms and Involutions
 
@@ -31,37 +31,37 @@ Throughout, $k$ is a field of characteristic $\neq2$; $A$ is a finite-dimensiona
 
 *Proof.* The kernel of a non-zero linear map has codimension one, and $N(1) = 1$ gives $1\notin V$, so $A = k1\oplus V$. If $v\in V$ were a unit with inverse $w$, then $1 = N(1) = N(vw) = N(v)N(w) = 0$, a contradiction.
 
-**Remark.** The multiplicative norm has a companion identity in every example of the article, namely $(u+v)\overline{(u+v)} = N(u) + N(v) + u\bar v + v\bar u$, obtained by expanding $(u+v)(\bar u+\bar v)$ and using $\overline{u\bar v} = v\bar u$; the middle terms are scalars, and the expression of $N(u+v)$ as a sum of squares, that is the **polarisation** of $N$ to a bilinear form $g(u,v) = N(u+v)-N(u)-N(v)$, is the passage from the multiplicative map of this article to the quadratic form of *Topology on Linear Algebras with a degree-2 form*. Every statement below that would use the polarisation is flagged, and the polarised form, its signature and its nondegeneracy are treated in *Topology on Linear Algebras with a degree-2 form*.
+**Remark.** The multiplicative norm has a companion identity in every example of the article, namely $(u+v)\overline{(u+v)} = N(u) + N(v) + u v^{\natural} + v u^{\natural}$, obtained by expanding $(u+v)(u^{\natural}+v^{\natural})$ and using $(u v^{\natural})^{\natural} = v u^{\natural}$; the middle terms are scalars, and the expression of $N(u+v)$ as a sum of squares, that is the **polarisation** of $N$ to a bilinear form $g(u,v) = N(u+v)-N(u)-N(v)$, is the passage from the multiplicative map of this article to the quadratic form of *Topology on Linear Algebras with a degree-2 form*. Every statement below that would use the polarisation is flagged, and the polarised form, its signature and its nondegeneracy are treated in *Topology on Linear Algebras with a degree-2 form*.
 
-**Definition.** Let $A$ be normed with involution and norm $N$ satisfying $x\bar x = \bar xx = N(x)\,1$ for all $x$. The **norm-one elements** are the elements $u\in A$ with $N(u) = 1$; they form a set $A_1$ closed under multiplication and containing $1$, and if $A$ is associative they form a group, with $u^{-1} = \bar u$.
+**Definition.** Let $A$ be normed with involution and norm $N$ satisfying $x x^{\natural} = x^{\natural}x = N(x)\,1$ for all $x$. The **norm-one elements** are the elements $u\in A$ with $N(u) = 1$; they form a set $A_1$ closed under multiplication and containing $1$, and if $A$ is associative they form a group, with $u^{-1} = u^{\natural}$.
 
-**Proposition.** Let $A$ be a normed algebra with involution, with $x\bar x = \bar xx = N(x)1$ and $N$ anisotropic, and let $A_1$ be its norm-one elements. Then:
+**Proposition.** Let $A$ be a normed algebra with involution, with $x x^{\natural} = x^{\natural}x = N(x)1$ and $N$ anisotropic, and let $A_1$ be its norm-one elements. Then:
 
 1. if $A$ is associative, $A_1$ is a group;
 2. if $A$ is alternative, $A_1$ is a **Moufang loop**: the multiplication is a loop, and the Moufang identities $u(v(uw)) = ((uv)u)w$ and $(uv)(wu) = u(vw)u$ hold;
 3. in either case the associativity of $A_1$ is exactly the associativity of $A$.
 
-*Proof.* Statement 1: $N(1) = 1$ gives $1\in A_1$, closure under multiplication is multiplicativity, and $u^{-1} = \bar u$ satisfies $u\bar u = 1$ and lies in $A_1$ because $N(\bar u) = N(u) = 1$. Statement 2 is the standard theorem that the norm-one set of a normed algebra with an anisotropic multiplicative norm and an involution is a Moufang loop when the algebra is alternative; statement 3 is immediate from the definitions. The identification of $A_1$ with the unit sphere, and the Lie-theoretic and differential structure on it, requires the distance and is treated in this part and in Part III.
+*Proof.* Statement 1: $N(1) = 1$ gives $1\in A_1$, closure under multiplication is multiplicativity, and $u^{-1} = u^{\natural}$ satisfies $u u^{\natural} = 1$ and lies in $A_1$ because $N(u^{\natural}) = N(u) = 1$. Statement 2 is the standard theorem that the norm-one set of a normed algebra with an anisotropic multiplicative norm and an involution is a Moufang loop when the algebra is alternative; statement 3 is immediate from the definitions. The identification of $A_1$ with the unit sphere, and the Lie-theoretic and differential structure on it, requires the distance and is treated in this part and in Part III.
 
-**Example (the four real cases).** For $A = \mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ with the standard conjugation and $N(\tilde Q) = \tilde Q\bar{\tilde Q}$ read as a multiplicative map, $A_1$ is the two-element group, the group of complex numbers of modulus one, and the group of quaternions of norm one. For the octonions $A_1$ is the Moufang loop of norm-one octonions, which is not a group. For the split systems $\mathbb{D}$ and $\mathbb{H}_{\mathbb{D}}$ the standard involution still satisfies $x\bar x = N(x)1$, but the norm is isotropic: for $\mathbb{D}$ one has $\pi_+\pi_- = 0$ for the idempotents $\pi_\pm = \tfrac12(1\pm j)$, so $N(\pi_+) = N(\pi_-) = 0$ and the algebra is not anisotropic; for $\mathbb{H}_{\mathbb{D}}$ the same failure occurs along the idempotent decomposition. The split systems are therefore normed but not normed division algebras, and *Dual Numbers Algebra* andrecord the corresponding degenerations.
+**Example (the four real cases).** For $A = \mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ with the standard conjugation and $N(\tilde Q) = \tilde Q\tilde{Q}^{\natural}$ read as a multiplicative map, $A_1$ is the two-element group, the group of complex numbers of modulus one, and the group of quaternions of norm one. For the octonions $A_1$ is the Moufang loop of norm-one octonions, which is not a group. For the split systems $\mathbb{D}$ and $\mathbb{H}_{\mathbb{D}}$ the standard involution still satisfies $x x^{\natural} = N(x)1$, but the norm is isotropic: for $\mathbb{D}$ one has $\pi_+\pi_- = 0$ for the idempotents $\pi_\pm = \tfrac12(1\pm j)$, so $N(\pi_+) = N(\pi_-) = 0$ and the algebra is not anisotropic; for $\mathbb{H}_{\mathbb{D}}$ the same failure occurs along the idempotent decomposition. The split systems are therefore normed but not normed division algebras, and *Dual Numbers Algebra* andrecord the corresponding degenerations.
 
 ## The Cayley–Dickson Doubling
 
-**Definition.** Let $A$ be a normed $k$-algebra with involution $x\mapsto\bar x$ and norm $N$ satisfying $x\bar x = \bar xx = N(x)1$. The **double** $\mathrm{CD}(A)$ is the $k$-module $A\oplus A$ with the multiplication, conjugation and norm
+**Definition.** Let $A$ be a normed $k$-algebra with involution $x\mapsto x^{\natural}$ and norm $N$ satisfying $x x^{\natural} = x^{\natural}x = N(x)1$. The **double** $\mathrm{CD}(A)$ is the $k$-module $A\oplus A$ with the multiplication, conjugation and norm
 
 $$
-(a,b)(c,d) = (ac - \bar db,\ da + b\bar c), \qquad \overline{(a,b)} = (\bar a,-b), \qquad N\bigl((a,b)\bigr) = N(a) + N(b) .
+(a,b)(c,d) = (ac - d^{\natural}b,\ da + b c^{\natural}), \qquad \overline{(a,b)} = (a^{\natural},-b), \qquad N\bigl((a,b)\bigr) = N(a) + N(b) .
 $$
 
-**Proposition.** Let $A$ be a normed $k$-algebra with involution, $x\bar x = \bar xx = N(x)1$, and $\dim_kA = n$. Then the double $\mathrm{CD}(A)$ is a $k$-algebra with identity $(1,0)$, an involution, and a linear map $N$ as displayed; the identity $(a,b)\overline{(a,b)} = N((a,b))(1,0)$ holds identically in $\mathrm{CD}(A)$; and $N$ is multiplicative on $\mathrm{CD}(A)$ if and only if $A$ is associative.
+**Proposition.** Let $A$ be a normed $k$-algebra with involution, $x x^{\natural} = x^{\natural}x = N(x)1$, and $\dim_kA = n$. Then the double $\mathrm{CD}(A)$ is a $k$-algebra with identity $(1,0)$, an involution, and a linear map $N$ as displayed; the identity $(a,b)\overline{(a,b)} = N((a,b))(1,0)$ holds identically in $\mathrm{CD}(A)$; and $N$ is multiplicative on $\mathrm{CD}(A)$ if and only if $A$ is associative.
 
 *Proof.* The algebra axioms and the involution axioms are direct computations from the displayed formula. For the norm: expanding,
 
 $$
-(a,b)\overline{(a,b)} = (a\bar a + \bar{(-b)}b,\ (-b)a + b\bar a) = (N(a) + N(b),\ ba - ba) = N\bigl((a,b)\bigr)(1,0),
+(a,b)\overline{(a,b)} = (a a^{\natural} + \bar{(-b)}b,\ (-b)a + b a^{\natural}) = (N(a) + N(b),\ ba - ba) = N\bigl((a,b)\bigr)(1,0),
 $$
 
-which uses $\bar{(-b)} = -b$ and $b\bar b = N(b)$; this gives the displayed identity without any hypothesis on $A$. The multiplicativity criterion is the classical theorem on the Cayley–Dickson doubling, that the double of a normed algebra is normed exactly when the base algebra is associative; it is stated and proved in the standard theory of the composition algebras, and the proof uses the polarisation of $N$ to a bilinear form and is therefore, in the ordering of this corpus, an argument of this part. The article uses only the resulting criterion and verifies the cases of the chain by explicit computation in the next section.
+which uses $\bar{(-b)} = -b$ and $b b^{\natural} = N(b)$; this gives the displayed identity without any hypothesis on $A$. The multiplicativity criterion is the classical theorem on the Cayley–Dickson doubling, that the double of a normed algebra is normed exactly when the base algebra is associative; it is stated and proved in the standard theory of the composition algebras, and the proof uses the polarisation of $N$ to a bilinear form and is therefore, in the ordering of this corpus, an argument of this part. The article uses only the resulting criterion and verifies the cases of the chain by explicit computation in the next section.
 
 **Theorem (the doubling of the chain).** Starting from $\mathbb{R}$ with its identity involution and $N(\lambda) = \lambda^2$, the doubling produces, successively,
 
@@ -110,7 +110,7 @@ $$
 
 by the two antisymmetries and the left alternative law, which is the flexible law. Power-associativity follows: the subalgebra generated by a single element $x$ is spanned by the powers of $x$, and the alternative laws give $(x^ix^j)x^k = x^i(x^jx^k)$ by induction on the total degree.
 
-**Remark.** The passage from the octonions to the sedenions loses the multiplicative norm, and with it the involution identity $x\bar x = N(x)1$ as a statement about an anisotropic norm; the sedenions therefore have zero divisors. The chain of the doublings nevertheless continues indefinitely as a sequence of algebras, each a double of the previous one; what stops at the octonions is not the doubling but the multiplicative norm, hence the normed division algebras. The chain of the **finite-dimensional real division algebras** stops earlier if associativity is demanded: by **Frobenius' theorem** the associative ones are exactly $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, as recorded in *Division Algebras*.
+**Remark.** The passage from the octonions to the sedenions loses the multiplicative norm, and with it the involution identity $x x^{\natural} = N(x)1$ as a statement about an anisotropic norm; the sedenions therefore have zero divisors. The chain of the doublings nevertheless continues indefinitely as a sequence of algebras, each a double of the previous one; what stops at the octonions is not the doubling but the multiplicative norm, hence the normed division algebras. The chain of the **finite-dimensional real division algebras** stops earlier if associativity is demanded: by **Frobenius' theorem** the associative ones are exactly $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, as recorded in *Division Algebras*.
 
 ## The Hurwitz Theorem
 
@@ -174,7 +174,7 @@ Summing up the application: the algebras are a linear space with a multiplicatio
 
 ## Summary
 
-A **multiplicative norm** on a finite-dimensional $k$-algebra $A$ with identity is a linear map $N : A\to k$ with $N(xy) = N(x)N(y)$ and $N(1) = 1$; it is **anisotropic** if $N(x)\neq0$ for $x\neq0$, and $A$ is a **normed division algebra** if it carries an anisotropic multiplicative norm together with the involution satisfying $x\bar x = \bar xx = N(x)1$. With the anisotropic norm the inverse is $\bar x/N(x)$, the norm-one elements $A_1$ form a group when $A$ is associative and a Moufang loop when $A$ is merely alternative, and the split systems $\mathbb{D}$, $\mathbb{H}_{\mathbb{D}}$ and the split octonions are normed but isotropic, hence have zero divisors. The **Cayley–Dickson doubling** $\mathrm{CD}(A) = A\oplus A$ with $(a,b)(c,d) = (ac-\bar db,\,da+b\bar c)$, $\overline{(a,b)} = (\bar a,-b)$ and $N((a,b)) = N(a)+N(b)$ is a normed algebra whenever the criterion of associativity and commutativity of $A$ is met, and iterating it from $\mathbb{R}$ produces
+A **multiplicative norm** on a finite-dimensional $k$-algebra $A$ with identity is a linear map $N : A\to k$ with $N(xy) = N(x)N(y)$ and $N(1) = 1$; it is **anisotropic** if $N(x)\neq0$ for $x\neq0$, and $A$ is a **normed division algebra** if it carries an anisotropic multiplicative norm together with the involution satisfying $x x^{\natural} = x^{\natural}x = N(x)1$. With the anisotropic norm the inverse is $x^{\natural}/N(x)$, the norm-one elements $A_1$ form a group when $A$ is associative and a Moufang loop when $A$ is merely alternative, and the split systems $\mathbb{D}$, $\mathbb{H}_{\mathbb{D}}$ and the split octonions are normed but isotropic, hence have zero divisors. The **Cayley–Dickson doubling** $\mathrm{CD}(A) = A\oplus A$ with $(a,b)(c,d) = (ac-d^{\natural}b,\,da+bc^{\natural})$, $\overline{(a,b)} = (a^{\natural},-b)$ and $N((a,b)) = N(a)+N(b)$ is a normed algebra whenever the criterion of associativity and commutativity of $A$ is met, and iterating it from $\mathbb{R}$ produces
 
 $$
 \mathbb{R}\to\mathbb{C}\to\mathbb{H}\to\mathbb{O}\to\mathbb{S},
@@ -189,11 +189,11 @@ with the multiplicativity of the norm holding through the octonions and failing 
 | $k$ | field of characteristic $\neq2$ |
 | $N : A\to k$ | multiplicative norm, $N(xy) = N(x)N(y)$, $N(1)=1$ |
 | $A_1$ | norm-one elements, $N(u)=1$ |
-| $x\mapsto\bar x$ | involution, $x\bar x = \bar xx = N(x)1$ |
-| $x^{-1} = \bar x/N(x)$ | inverse in a normed division algebra |
+| $x\mapsto x^{\natural}$ | involution, $x x^{\natural} = x^{\natural}x = N(x)1$ |
+| $x^{-1} = x^{\natural}/N(x)$ | inverse in a normed division algebra |
 | anisotropic | $N(x)\neq0$ for $x\neq0$ |
 | $\mathrm{CD}(A) = A\oplus A$ | Cayley–Dickson double |
-| $(a,b)(c,d) = (ac-\bar db,\ da+b\bar c)$ | multiplication in the double |
+| $(a,b)(c,d) = (ac-d^{\natural}b,\ da+bc^{\natural})$ | multiplication in the double |
 | $N((a,b)) = N(a)+N(b)$ | norm in the double |
 | $\mathbb{R},\mathbb{C},\mathbb{H},\mathbb{O},\mathbb{S}$ | reals, complexes, quaternions, octonions, sedenions |
 | $\mathbb{D}$, $\mathbb{H}_{\mathbb{D}}$ | split complex numbers, split biquaternions (isotropic norm) |

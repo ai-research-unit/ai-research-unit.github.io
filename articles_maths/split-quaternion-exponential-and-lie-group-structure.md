@@ -37,9 +37,9 @@ $$
 \mathbb{H}_{\mathrm{s}}^\times = \{\, \tilde q : N(\tilde q) \neq 0 \,\} \cong GL_2(\mathbb{R}),
 $$
 
-with inverse $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$. The group has exactly **two connected components**, $\{N > 0\}$ and $\{N < 0\}$, the sign of the split-quaternion norm separating them.
+with inverse $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$. The group has exactly **two connected components**, $\{N > 0\}$ and $\{N < 0\}$, the sign of the split-quaternion norm separating them.
 
-**Proof.** $\tilde q\bar{\tilde q} = N(\tilde q)$ shows that $N(\tilde q)\neq0$ implies invertibility, and $N(\tilde q y) = N(\tilde q)N(y)$ shows that the non-units are exactly the nonzero null elements. The continuous surjection $N : \mathbb{H}_{\mathrm{s}}^\times \to \mathbb{R}^\times$ maps onto the two components of $\mathbb{R}^\times$, and the level set $\{N>0\}$ is connected (it retracts onto $U$), as is $\{N<0\}$; so the group has two components.
+**Proof.** $\tilde q\tilde{q}^{\natural} = N(\tilde q)$ shows that $N(\tilde q)\neq0$ implies invertibility, and $N(\tilde q y) = N(\tilde q)N(y)$ shows that the non-units are exactly the nonzero null elements. The continuous surjection $N : \mathbb{H}_{\mathrm{s}}^\times \to \mathbb{R}^\times$ maps onto the two components of $\mathbb{R}^\times$, and the level set $\{N>0\}$ is connected (it retracts onto $U$), as is $\{N<0\}$; so the group has two components.
 
 The identity component $\{N>0\} \cong GL_2^+(\mathbb{R})$ is the part of the group acting by the orientation-preserving half of the Lorentz action; the component $\{N<0\}$ acts by Lorentz transformations reversing time orientation, as in *Split-Quaternion Rotations and the Lorentz Group*.
 

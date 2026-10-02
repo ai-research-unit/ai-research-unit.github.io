@@ -14,7 +14,7 @@ $$
 \Phi(e_0) = I_2, \qquad \Phi(e_k) = -i\sigma_k, \qquad \Phi(i) = iI_2 ,
 $$
 
-and the biquaternion norm is $N(\tilde Q) = \tilde Q\bar{\tilde Q}$, a complex number equal to the determinant of $\Phi(\tilde Q)$. The Hermitian and anti-Hermitian subspaces are $\mathbb{M}_+ = \{\tilde Q : \tilde Q^\dagger = \tilde Q\}$ and $\mathbb{M}_-$; the real form of the source's algebra is the corpus's $\mathrm{Cl}_{1,3}(\mathbb{R}) \cong M_2(\mathbb{H})$, whose complexification is $M_4(\mathbb{C})$. The conventions and the subspaces are the subjects of *Conventions in the Biquaternion Universe*, *The Hermitian Subspace M+ as the Informational Sector* and *The Anti-Hermitian Subspace M- as the Material Sector*, and the matrix dictionary is *The Dirac Algebra and Biquaternions: A Dictionary*.
+and the biquaternion norm is $N(\tilde Q) = \tilde Q\tilde Q^{\natural}$, a complex number equal to the determinant of $\Phi(\tilde Q)$. The Hermitian and anti-Hermitian subspaces are $\mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\}$ and $\mathbb{M}_-$; the real form of the source's algebra is the corpus's $\mathrm{Cl}_{1,3}(\mathbb{R}) \cong M_2(\mathbb{H})$, whose complexification is $M_4(\mathbb{C})$. The conventions and the subspaces are the subjects of *Conventions in the Biquaternion Universe*, *The Hermitian Subspace M+ as the Informational Sector* and *The Anti-Hermitian Subspace M- as the Material Sector*, and the matrix dictionary is *The Dirac Algebra and Biquaternions: A Dictionary*.
 
 ## The Source, Its Bundle, and Its Structural Group
 
@@ -54,7 +54,7 @@ $$
 with the same imaginary squares, i.e. the source's unit-norm condition and the source's mass shell are the two faces of one identity. Both were verified: $\Phi(\tilde Q)$ reproduces the printed $Q$ exactly, and over forty random four-momenta
 
 $$
-\tilde Q\bar{\tilde Q} = N(\tilde Q)\,I_2 , \qquad N(\tilde Q) = \frac{p_0^2-\mathbf p^2}{m^2},
+\tilde Q\tilde Q^{\natural} = N(\tilde Q)\,I_2 , \qquad N(\tilde Q) = \frac{p_0^2-\mathbf p^2}{m^2},
 $$
 
 with a worst deviation of $1.4\times10^{-14}$ off the mass shell and $1.1\times10^{-14}$ on it. The source's Eq. (19) is the normalised form of $N(\tilde Q) = 1$.
@@ -62,10 +62,10 @@ with a worst deviation of $1.4\times10^{-14}$ off the mass shell and $1.1\times1
 The placement of $\tilde Q$ in the corpus's subspaces is the part the source does not say and the corpus can. With $a_0$ real and the $a_k$ imaginary, $\tilde Q = a_0 + i\boldsymbol\beta\!\cdot\!\mathbf e$ with all four coefficients real; that is a Hermitian biquaternion,
 
 $$
-\tilde Q^\dagger = \tilde Q ,
+\tilde Q^{*} = \tilde Q ,
 $$
 
-so the source's structural object is an element of the **informational sector** $\mathbb{M}_+$. The verification gives a residual of $0$ for $\tilde Q^\dagger - \tilde Q$ and a vector part with vanishing real components. Its norm is the $\mathbb{M}_+$ norm, of signature $(1,3)$ in the basis $(e_0, ie_1, ie_2, ie_3)$ because $(ie_k)^2 = +e_0$, and the mass shell is the level set $N = 1$. The corpus's own material four-momentum $\tilde P = ip_0 + \mathbf p\!\cdot\!\mathbf e$ is in the other sector, $\mathbb{M}_-$, and carries the same physical content in the opposite normalisation, $N(\tilde P) = -m^2$. The two descriptions are the corpus's two-sided structure, and the source's $Q$ and $A - iB$ are the first of them.
+so the source's structural object is an element of the **informational sector** $\mathbb{M}_+$. The verification gives a residual of $0$ for $\tilde Q^{*} - \tilde Q$ and a vector part with vanishing real components. Its norm is the $\mathbb{M}_+$ norm, of signature $(1,3)$ in the basis $(e_0, ie_1, ie_2, ie_3)$ because $(ie_k)^2 = +e_0$, and the mass shell is the level set $N = 1$. The corpus's own material four-momentum $\tilde P = ip_0 + \mathbf p\!\cdot\!\mathbf e$ is in the other sector, $\mathbb{M}_-$, and carries the same physical content in the opposite normalisation, $N(\tilde P) = -m^2$. The two descriptions are the corpus's two-sided structure, and the source's $Q$ and $A - iB$ are the first of them.
 
 **A reading the corpus declines.** Because the printed $a_k$ are imaginary, the source's $Q$ is Hermitian, with a real diagonal and two conjugate off-diagonal entries. A reader who takes the printed sum $a_0^2+a_1^2+a_2^2+a_3^2=1$ with **real** $a_k$ obtains a different object, whose shell would be Euclidean, $p_0^2 + \mathbf p^2 = m^2$, and which the corpus's four-momentum reading excludes. The imaginary coefficients are not a typographical accident: they are what makes the printed relation match the printed relativistic relation. The point is recorded because the two readings coexist in the printed page and only one of them is the source's.
 
@@ -214,7 +214,7 @@ One claim does not reproduce, and the paper's own equations are what defeat it: 
 | $Q = a_0\sigma_0 - i\boldsymbol\sigma\!\cdot\!\mathbf a = A - iB$ | The source's $2\times2$ spinorial matrix; equals $\Phi(\tilde Q)$ |
 | $\tilde Q = a_0 + \mathbf a\!\cdot\!\mathbf e$, $a_0 = p_0/m$, $\mathbf a = i\mathbf p/m$ | The biquaternion behind $Q$; Hermitian, of unit norm on the mass shell |
 | $a_0^2+a_1^2+a_2^2+a_3^2 = 1$ | The source's Eq. (19); with imaginary $a_k$ it is $N(\tilde Q) = 1$ and the mass shell |
-| $N(\tilde Q) = \tilde Q\bar{\tilde Q} = \det\Phi(\tilde Q)$ | The biquaternion norm; the source's $N = 1$, the corpus's $N(\tilde P) = -m^2$ in $\mathbb{M}_-$ |
+| $N(\tilde Q) = \tilde Q\tilde Q^{\natural} = \det\Phi(\tilde Q)$ | The biquaternion norm; the source's $N = 1$, the corpus's $N(\tilde P) = -m^2$ in $\mathbb{M}_-$ |
 | $G^+ = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}$ | The source's conjugate transpose: ordinary transpose with quaternionic conjugation, not the matrix adjoint; identical to the ordinary transpose whenever $B$ is symmetric, i.e. whenever the coefficient of $\sigma_2$ vanishes, which is the slice on which $G^+G = I_4$ is the Euclidean orthogonality condition |
 | $G = A\,I_4 + B\,J$, $J^2 = -I_4$ | The source's Eq. (4); equivalently $G = I_2\otimes A + J_2\otimes B$ |
 | $G' = UGU^{-1}$ | The Majorana-transformed structural group; real and symmetric |

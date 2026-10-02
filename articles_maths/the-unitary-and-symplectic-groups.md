@@ -55,7 +55,7 @@ $$
 h(\lambda u, \mu v) = \overline{\lambda}\, \mu\, h(u, v) \qquad (\lambda, \mu \in \mathbb{K}),
 $$
 
-and is Hermitian, $h(v, u) = \overline{h(u, v)}$. Over $\mathbb{R}$, where conjugation is the identity, this is a symmetric bilinear form; the interest is over $\mathbb{C}$. The **unitary group** of $h$ is
+and is Hermitian, $h(v, u) = (h(u,v))^{\natural}$. Over $\mathbb{R}$, where conjugation is the identity, this is a symmetric bilinear form; the interest is over $\mathbb{C}$. The **unitary group** of $h$ is
 
 $$
 \operatorname{U}(V, h) = \{T \in GL(V) : h(Tu, Tv) = h(u, v) \text{ for all } u, v\}.
@@ -235,7 +235,7 @@ $$
 h(xa, yb) = \sigma(a)\,h(x, y)\,b, \qquad h(y, x) = \sigma(h(x, y)),
 $$
 
-. Its isometry group is the **unitary group** $\operatorname{U}(V, h)$ of the Hermitian form. For $D = \mathbb{H}$ and the standard form $h(x, y) = \sum_i \bar{x}_i y_i$ on $\mathbb{H}^n$, the resulting group is the **compact symplectic group** $Sp(n)$, also written $U(n, \mathbb{H})$.
+. Its isometry group is the **unitary group** $\operatorname{U}(V, h)$ of the Hermitian form. For $D = \mathbb{H}$ and the standard form $h(x, y) = \sum_i x^{\natural}_i y_i$ on $\mathbb{H}^n$, the resulting group is the **compact symplectic group** $Sp(n)$, also written $U(n, \mathbb{H})$.
 
 **Warning on notation.** The symbol $Sp$ carries two meanings: $Sp(2m, F)$ is the isometry group of an alternating form over a field, a non-compact group, while $Sp(n)$ is the isometry group of a quaternionic Hermitian form, a compact group. The two agree only through the identification of $Sp(n)$ with the compact real form of $Sp(2n, \mathbb{C})$: the complexification of the quaternionic unitary group is the symplectic group $Sp(2n, \mathbb{C})$.
 

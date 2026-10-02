@@ -8,22 +8,22 @@ This article carries out that work. The result is a two-term product formula, bi
 
 $$
 \boxed{\;\tilde{K} = -\,q\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{U}\,\tilde{F}\right),\qquad
-P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac{1}{2}\left(\tilde{Q} - \tilde{Q}^\dagger\right).\;}
+P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac{1}{2}\left(\tilde{Q} - \tilde{Q}^{*}\right).\;}
 $$
 
 The projection $P_{\mathbb{M}_-}$ is the anti-Hermitian part, and it lands in the material sector $\mathbb{M}_-$ automatically. Written out, the formula is
 
 $$
-\tilde{K} = -\,\frac{q\sqrt{\mu}}{2}\left(\tilde{U}\,\tilde{F} + \tilde{F}^\dagger\,\tilde{U}\right),
+\tilde{K} = -\,\frac{q\sqrt{\mu}}{2}\left(\tilde{U}\,\tilde{F} + \tilde{F}^{*}\,\tilde{U}\right),
 $$
 
-or, since $\tilde{F}^\dagger = -\tilde{F}^*$,
+or, since $\tilde{F}^{*} = -\tilde{F}^*$,
 
 $$
 \tilde{K} = -\,\frac{q\sqrt{\mu}}{2}\left(\tilde{U}\,\tilde{F} - \tilde{F}^*\,\tilde{U}\right).
 $$
 
-Here $\tilde{F}^\dagger$ is the Hermitian conjugate of the field strength and $\tilde{F}^*$ its complex conjugate. The appearance of the conjugate field is not a technicality: $\tilde{F}$ and $\tilde{F}^\dagger$ are (up to constant factors) the self-dual and anti-self-dual halves of the field tensor, and the formula pairs the four-velocity with both halves. This is the sense in which the result "involves the representation theory of $\mathbb{B}$" — but, as the derivation below shows, the formula itself lives entirely inside $\mathbb{B}$ and needs no Clifford algebra beyond the identification $\mathbb{B}\cong\mathbb{C}\ell_{1,3}^{+}$.
+Here $\tilde{F}^{*}$ is the Hermitian conjugate of the field strength and $\tilde{F}^*$ its complex conjugate. The appearance of the conjugate field is not a technicality: $\tilde{F}$ and $\tilde{F}^{*}$ are (up to constant factors) the self-dual and anti-self-dual halves of the field tensor, and the formula pairs the four-velocity with both halves. This is the sense in which the result "involves the representation theory of $\mathbb{B}$" — but, as the derivation below shows, the formula itself lives entirely inside $\mathbb{B}$ and needs no Clifford algebra beyond the identification $\mathbb{B}\cong\mathbb{C}\ell_{1,3}^{+}$.
 
 **A note on notation.** The companion article *The Field-Strength Biquaternion and Its Invariants* fixes the symbol $\tilde{F}$ for the field-strength biquaternion "once and for all". The companion article *Relativistic Mechanics in Biquaternionic Form* instead used $\tilde{F}$ for the four-force and wrote $\tilde{F}_{\text{EM}}$ for the field. To remove the collision this article adopts, and recommends for the corpus, the letter $\tilde{K}$ for the **four-force biquaternion** (the Minkowski force), reserving $\tilde{F}$ for the field strength. Thus
 
@@ -33,7 +33,7 @@ $$
 
 and the field strength keeps the canonical form $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ of the field-strength article.
 
-The conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and the scalar imaginary is $i$ (central, $i^2 = -1$). The conjugate of a biquaternion $\tilde{Q} = \tilde{Q}_0e_0 + \tilde{Q}_1e_1 + \tilde{Q}_2e_2 + \tilde{Q}_3e_3$ is $\bar{X} = \tilde{Q}_0e_0 - \mathbf{Q}$, its complex conjugate is $\tilde{Q}^* = \sum_\mu \tilde{Q}_\mu^* e_\mu$, and its Hermitian conjugate is $\tilde{Q}^\dagger = \bar{X}^{\,*} = \sum_\mu \tilde{Q}_\mu^* e_\mu$ with the vector components negated. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, $\mathbf{v}$ is the particle velocity, $\mathbf{u}$ is a frame (boost) velocity, and $\mathbf{B} = \mu\mathbf{H}$ is the magnetic induction.
+The conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and the scalar imaginary is $i$ (central, $i^2 = -1$). The conjugate of a biquaternion $\tilde{Q} = \tilde{Q}_0e_0 + \tilde{Q}_1e_1 + \tilde{Q}_2e_2 + \tilde{Q}_3e_3$ is $\bar{X} = \tilde{Q}_0e_0 - \mathbf{Q}$, its complex conjugate is $\tilde{Q}^* = \sum_\mu \tilde{Q}_\mu^* e_\mu$, and its Hermitian conjugate is $\tilde{Q}^{*} = \bar{X}^{\,*} = \sum_\mu \tilde{Q}_\mu^* e_\mu$ with the vector components negated. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, $\mathbf{v}$ is the particle velocity, $\mathbf{u}$ is a frame (boost) velocity, and $\mathbf{B} = \mu\mathbf{H}$ is the magnetic induction.
 
 ## The Lorentz Four-Force in Component Form
 
@@ -92,30 +92,30 @@ The four-force is a four-vector, and it lives in the same subspace as the four-v
 **1. Anti-Hermiticity.** Because the scalar part of $\tilde{K}$ is purely imaginary and its vector part is real, it satisfies
 
 $$
-\tilde{K}^\dagger = -\tilde{K}.
+\tilde{K}^{*} = -\tilde{K}.
 $$
 
 This is the defining property of $\mathbb{M}_-$. Equivalently, $\tilde{K}$ has no Hermitian part:
 
 $$
-\tfrac{1}{2}\left(\tilde{K} + \tilde{K}^\dagger\right) = 0.
+\tfrac{1}{2}\left(\tilde{K} + \tilde{K}^{*}\right) = 0.
 $$
 
 The whole content of the four-force is in its anti-Hermitian half. The same is true of $\tilde{U}$ and $\tilde{P}$, and this is why $\mathbb{M}_-$ is called the material sector: it is the subspace of four-vectors.
 
-**2. Orthogonality to the four-momentum.** The four-momentum has fixed biquaternion norm, $\tilde{P}\bar{\tilde{P}} = -m^2c^2$, along the worldline. Differentiating and using $\tilde{K} = d\tilde{P}/d\tau$ gives
+**2. Orthogonality to the four-momentum.** The four-momentum has fixed biquaternion norm, $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$, along the worldline. Differentiating and using $\tilde{K} = d\tilde{P}/d\tau$ gives
 
 $$
-\tilde{K}\bar{\tilde{P}} + \tilde{P}\bar{\tilde{K}} = 0,
+\tilde{K}\tilde{P}^{\natural} + \tilde{P}\tilde{K}^{\natural} = 0,
 $$
 
 the biquaternion form of the Minkowski orthogonality $K^\mu P_\mu = 0$. The four-force changes the direction of the four-momentum but not its norm. This is examined further in the section on invariants.
 
 ## The Product Problem
 
-The natural first guess is that the four-force is obtained by multiplying the field strength by the four-velocity and taking a real or imaginary part, in analogy with the way the field energy is obtained from $\tilde{F}\tilde{F}^\dagger$. That guess fails, and it is worth seeing exactly why, because the failure dictates the shape of the correct formula.
+The natural first guess is that the four-force is obtained by multiplying the field strength by the four-velocity and taking a real or imaginary part, in analogy with the way the field energy is obtained from $\tilde{F}\tilde{F}^{*}$. That guess fails, and it is worth seeing exactly why, because the failure dictates the shape of the correct formula.
 
-The field strength is a pure-vector biquaternion, $\tilde{F} = \mathbf{F}$ with $\mathbf{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$, so its quaternion conjugate is $\bar{\tilde{F}} = -\tilde{F}$. For a pure vector $\mathbf{a}$ and the four-velocity $\tilde{U} = i\gamma c + \gamma\mathbf{v}$, the quaternion product rule $\mathbf{a}\mathbf{b} = -\mathbf{a}\cdot\mathbf{b} + \mathbf{a}\times\mathbf{b}$ gives
+The field strength is a pure-vector biquaternion, $\tilde{F} = \mathbf{F}$ with $\mathbf{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$, so its quaternion conjugate is $\tilde{F}^{\natural} = -\tilde{F}$. For a pure vector $\mathbf{a}$ and the four-velocity $\tilde{U} = i\gamma c + \gamma\mathbf{v}$, the quaternion product rule $\mathbf{a}\mathbf{b} = -\mathbf{a}\cdot\mathbf{b} + \mathbf{a}\times\mathbf{b}$ gives
 
 $$
 \tilde{F}\tilde{U} = i\gamma c\,\tilde{F} - \gamma\left(\tilde{F}\cdot\mathbf{v}\right) + \gamma\left(\tilde{F}\times\mathbf{v}\right),
@@ -133,23 +133,23 @@ $$
 
 The product $\tilde{F}\tilde{U}$ has scalar part $-\gamma\,\tilde{F}\cdot\mathbf{v}$, which is a **complex** number in general, and vector part $i\gamma c\,\tilde{F} + \gamma\,\tilde{F}\times\mathbf{v}$. Its real part therefore has a **real** scalar part, whereas the four-force has a **purely imaginary** scalar part. Consequently $\operatorname{Re}(\tilde{F}\tilde{U})$ does not lie in $\mathbb{M}_-$ at all: it cannot be the four-force, for the elementary reason that it is the wrong kind of biquaternion. This is the precise content of the statement in the relativistic-mechanics article that the four-force is "not simply the real part of $\tilde{F}\circ\tilde{U}$".
 
-There is a second obstruction. The field strength mixes $\mathbf{E}$ and $\mathbf{B}$ with the fixed weights $\sqrt{\epsilon}$, $\sqrt{\mu}$ and with opposite reality properties — the electric part imaginary, the magnetic part real — whereas the four-force requires $\mathbf{E}$ and the magnetic force $\mathbf{v}\times\mathbf{B}$ to enter with the *same* coefficient $\gamma q$. A single product of $\tilde{F}$ with $\tilde{U}$ keeps these weights locked together. Separating them requires the conjugate field $\tilde{F}^\dagger$, in which the relative sign of the electric and magnetic parts is reversed:
+There is a second obstruction. The field strength mixes $\mathbf{E}$ and $\mathbf{B}$ with the fixed weights $\sqrt{\epsilon}$, $\sqrt{\mu}$ and with opposite reality properties — the electric part imaginary, the magnetic part real — whereas the four-force requires $\mathbf{E}$ and the magnetic force $\mathbf{v}\times\mathbf{B}$ to enter with the *same* coefficient $\gamma q$. A single product of $\tilde{F}$ with $\tilde{U}$ keeps these weights locked together. Separating them requires the conjugate field $\tilde{F}^{*}$, in which the relative sign of the electric and magnetic parts is reversed:
 
 $$
 \tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H},
 \qquad
-\tilde{F}^\dagger = i\sqrt{\epsilon}\,\mathbf{E} + \sqrt{\mu}\,\mathbf{H}.
+\tilde{F}^{*} = i\sqrt{\epsilon}\,\mathbf{E} + \sqrt{\mu}\,\mathbf{H}.
 $$
 
-The combination that extracts $\mathbf{E}$ is $\tilde{F} + \tilde{F}^\dagger = 2i\sqrt{\epsilon}\,\mathbf{E}$; the combination that extracts $\mathbf{B}$ is $\tilde{F}^\dagger - \tilde{F} = 2\sqrt{\mu}\,\mathbf{H} = 2\mathbf{B}/\sqrt{\mu}$. So the correct product formula must involve both $\tilde{F}$ and $\tilde{F}^\dagger$. This is the technical reason the earlier article anticipated "the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$": the two objects $\tilde{F}$ and $\tilde{F}^\dagger$ are the self-dual and anti-self-dual halves of the field tensor, and the Lorentz force pairs the four-velocity with both.
+The combination that extracts $\mathbf{E}$ is $\tilde{F} + \tilde{F}^{*} = 2i\sqrt{\epsilon}\,\mathbf{E}$; the combination that extracts $\mathbf{B}$ is $\tilde{F}^{*} - \tilde{F} = 2\sqrt{\mu}\,\mathbf{H} = 2\mathbf{B}/\sqrt{\mu}$. So the correct product formula must involve both $\tilde{F}$ and $\tilde{F}^{*}$. This is the technical reason the earlier article anticipated "the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$": the two objects $\tilde{F}$ and $\tilde{F}^{*}$ are the self-dual and anti-self-dual halves of the field tensor, and the Lorentz force pairs the four-velocity with both.
 
-**A different route.** The obstruction above is real but it is not the only way to the force. If one lets the boost rotor of the particle depend on proper time — the **eigenspinor** $\tilde\Lambda(\tau)$ of *The Eigenspinor: The Lorentz Rotor as a Function of Proper Time* — then the force arises from a **linear** source rather than a product: $\dot{\tilde\Lambda} = \tfrac12\tilde\Omega\tilde\Lambda$ with $\tilde\Omega = -(q/m)\tilde{F}^\dagger$, and the equation of motion is $\dot{\tilde{P}} = P_{\mathbb{M}_-}(\tilde\Omega\tilde{P})$. The force is still not a single product of $\tilde{F}$ with $\tilde{U}$, so the finding of this section stands; what the eigenspinor shows is that the product formula of the next section is a *derived* corollary of a linear evolution, not the primitive statement of the law. The two routes agree on every configuration, and the agreement was checked in the eigenspinor article.
+**A different route.** The obstruction above is real but it is not the only way to the force. If one lets the boost rotor of the particle depend on proper time — the **eigenspinor** $\tilde\Lambda(\tau)$ of *The Eigenspinor: The Lorentz Rotor as a Function of Proper Time* — then the force arises from a **linear** source rather than a product: $\dot{\tilde\Lambda} = \tfrac12\tilde\Omega\tilde\Lambda$ with $\tilde\Omega = -(q/m)\tilde{F}^{*}$, and the equation of motion is $\dot{\tilde{P}} = P_{\mathbb{M}_-}(\tilde\Omega\tilde{P})$. The force is still not a single product of $\tilde{F}$ with $\tilde{U}$, so the finding of this section stands; what the eigenspinor shows is that the product formula of the next section is a *derived* corollary of a linear evolution, not the primitive statement of the law. The two routes agree on every configuration, and the agreement was checked in the eigenspinor article.
 
 ## The Biquaternion Product Formula
 
 We now derive the formula. The derivation is elementary: invert the product identities above to obtain the electric and magnetic fields in terms of the symmetrized and antisymmetrized products of $\tilde{F}$ and $\tilde{U}$, substitute into the component form, and collect terms.
 
-**Step 1: the fields from the products.** From the identities of the previous section, and the same identities with $\tilde{F}$ replaced by $\tilde{F}^\dagger$,
+**Step 1: the fields from the products.** From the identities of the previous section, and the same identities with $\tilde{F}$ replaced by $\tilde{F}^{*}$,
 
 $$
 \operatorname{Sc}\!\left(\tilde{F}\tilde{U} + \tilde{U}\tilde{F}\right) = -2\gamma\,\tilde{F}\cdot\mathbf{v},
@@ -160,27 +160,27 @@ $$
 (Here $\tilde{F}\cdot\mathbf{v}$ is the scalar biquaternion $\sum_k F_k v_k$ and $\tilde{F}\times\mathbf{v}$ the pure-vector biquaternion with components $\epsilon_{jkl}F_j v_l$.) The electric and magnetic fields are recovered from
 
 $$
-\mathbf{E} = \frac{\tilde{F} + \tilde{F}^\dagger}{2i\sqrt{\epsilon}},
+\mathbf{E} = \frac{\tilde{F} + \tilde{F}^{*}}{2i\sqrt{\epsilon}},
 \qquad
-\mathbf{B} = \mu\mathbf{H} = \frac{\sqrt{\mu}}{2}\left(\tilde{F}^\dagger - \tilde{F}\right).
+\mathbf{B} = \mu\mathbf{H} = \frac{\sqrt{\mu}}{2}\left(\tilde{F}^{*} - \tilde{F}\right).
 $$
 
 **Step 2: the scalar part.** The scalar part of the four-force is
 
 $$
 \operatorname{Sc}(\tilde{K}) = i\,\frac{\gamma q}{c}\,\mathbf{E}\cdot\mathbf{v}
-= \frac{\gamma q}{2c\sqrt{\epsilon}}\left(\tilde{F} + \tilde{F}^\dagger\right)\cdot\mathbf{v}
+= \frac{\gamma q}{2c\sqrt{\epsilon}}\left(\tilde{F} + \tilde{F}^{*}\right)\cdot\mathbf{v}
 = -\,\frac{q}{4c\sqrt{\epsilon}}\,
-\operatorname{Sc}\!\left(S + S^\dagger\right),
+\operatorname{Sc}\!\left(S + S^{*}\right),
 $$
 
 where
 
 $$
 S = \tilde{F}\tilde{U} + \tilde{U}\tilde{F}, \qquad
-S^\dagger = \tilde{F}^\dagger\tilde{U} + \tilde{U}\tilde{F}^\dagger .
+S^{*} = \tilde{F}^{*}\tilde{U} + \tilde{U}\tilde{F}^{*} .
 $$
-Here $S^\dagger$ denotes the expression obtained from $S$ by the replacement $\tilde F\to\tilde F^\dagger$, not the Hermitian conjugate of $S$; the two differ by a sign, since $\tilde U^\dagger = -\tilde U$ gives $\left(\tilde F\tilde U+\tilde U\tilde F\right)^\dagger = -\left(\tilde F^\dagger\tilde U+\tilde U\tilde F^\dagger\right)$. The derivation below uses $S^\dagger$ in this replacement sense throughout.
+Here $S^{*}$ denotes the expression obtained from $S$ by the replacement $\tilde F\to\tilde F^{*}$, not the Hermitian conjugate of $S$; the two differ by a sign, since $\tilde U^{*} = -\tilde U$ gives $\left(\tilde F\tilde U+\tilde U\tilde F\right)^\dagger = -\left(\tilde F^{*}\tilde U+\tilde U\tilde F^{*}\right)$. The derivation below uses $S^{*}$ in this replacement sense throughout.
 
 **Step 3: the vector part.** The vector part of the four-force is
 
@@ -191,15 +191,15 @@ $$
 The first term is
 
 $$
-\gamma q\,\mathbf{E} = \frac{\gamma q}{2i\sqrt{\epsilon}}\left(\tilde{F} + \tilde{F}^\dagger\right)
-= -\,\frac{q}{4c\sqrt{\epsilon}}\operatorname{Vect}\!\left(S + S^\dagger\right),
+\gamma q\,\mathbf{E} = \frac{\gamma q}{2i\sqrt{\epsilon}}\left(\tilde{F} + \tilde{F}^{*}\right)
+= -\,\frac{q}{4c\sqrt{\epsilon}}\operatorname{Vect}\!\left(S + S^{*}\right),
 $$
 
-using $\operatorname{Vect}(S + S^\dagger) = 2i\gamma c\,(\tilde{F} + \tilde{F}^\dagger)$, and the second is
+using $\operatorname{Vect}(S + S^{*}) = 2i\gamma c\,(\tilde{F} + \tilde{F}^{*})$, and the second is
 
 $$
 \gamma q\,\mathbf{v}\times\mathbf{B}
-= \frac{\gamma q\sqrt{\mu}}{2}\,\mathbf{v}\times\left(\tilde{F}^\dagger - \tilde{F}\right)
+= \frac{\gamma q\sqrt{\mu}}{2}\,\mathbf{v}\times\left(\tilde{F}^{*} - \tilde{F}\right)
 = \frac{q\sqrt{\mu}}{4}\left(A - A^\dagger\right),
 $$
 
@@ -207,13 +207,13 @@ where
 
 $$
 A = \tilde{F}\tilde{U} - \tilde{U}\tilde{F}, \qquad
-A^\dagger = \tilde{F}^\dagger\tilde{U} - \tilde{U}\tilde{F}^\dagger .
+A^\dagger = \tilde{F}^{*}\tilde{U} - \tilde{U}\tilde{F}^{*} .
 $$
 
 **Step 4: collect.** Adding the scalar and vector parts gives the **master identity**
 
 $$
-\tilde{K} = -\,\frac{q}{4c\sqrt{\epsilon}}\left(S + S^\dagger\right)
+\tilde{K} = -\,\frac{q}{4c\sqrt{\epsilon}}\left(S + S^{*}\right)
 + \frac{q\sqrt{\mu}}{4}\left(A - A^\dagger\right),
 $$
 
@@ -221,8 +221,8 @@ which, expanded in the four products, is
 
 $$
 \boxed{\;
-\tilde{K} = \frac{q}{4}\!\left(\sqrt{\mu} - \frac{1}{c\sqrt{\epsilon}}\right)\!\left(\tilde{F}\tilde{U} + \tilde{U}\tilde{F}^\dagger\right)
-- \frac{q}{4}\!\left(\sqrt{\mu} + \frac{1}{c\sqrt{\epsilon}}\right)\!\left(\tilde{U}\tilde{F} + \tilde{F}^\dagger\tilde{U}\right).
+\tilde{K} = \frac{q}{4}\!\left(\sqrt{\mu} - \frac{1}{c\sqrt{\epsilon}}\right)\!\left(\tilde{F}\tilde{U} + \tilde{U}\tilde{F}^{*}\right)
+- \frac{q}{4}\!\left(\sqrt{\mu} + \frac{1}{c\sqrt{\epsilon}}\right)\!\left(\tilde{U}\tilde{F} + \tilde{F}^{*}\tilde{U}\right).
 \;}
 $$
 
@@ -238,27 +238,27 @@ With this relation the coefficient of the first bracket vanishes identically, an
 
 $$
 \boxed{\;
-\tilde{K} = -\,\frac{q\sqrt{\mu}}{2}\left(\tilde{U}\tilde{F} + \tilde{F}^\dagger\tilde{U}\right)
-= -\,\frac{q}{2c\sqrt{\epsilon}}\left(\tilde{U}\tilde{F} + \tilde{F}^\dagger\tilde{U}\right).
+\tilde{K} = -\,\frac{q\sqrt{\mu}}{2}\left(\tilde{U}\tilde{F} + \tilde{F}^{*}\tilde{U}\right)
+= -\,\frac{q}{2c\sqrt{\epsilon}}\left(\tilde{U}\tilde{F} + \tilde{F}^{*}\tilde{U}\right).
 \;}
 $$
 
-The two coefficients are equal, $\sqrt{\mu} = 1/(c\sqrt{\epsilon})$, so either may be used. Since $\tilde{F}^\dagger = -\tilde{F}^*$, the formula may also be written
+The two coefficients are equal, $\sqrt{\mu} = 1/(c\sqrt{\epsilon})$, so either may be used. Since $\tilde{F}^{*} = -\tilde{F}^*$, the formula may also be written
 
 $$
 \tilde{K} = -\,\frac{q\sqrt{\mu}}{2}\left(\tilde{U}\tilde{F} - \tilde{F}^*\tilde{U}\right).
 $$
 
-**Step 6: the projection form.** Because $\tilde{U}\in\mathbb{M}_-$ and $\tilde{U}^\dagger = -\tilde{U}$, the Hermitian conjugate of the product is
+**Step 6: the projection form.** Because $\tilde{U}\in\mathbb{M}_-$ and $\tilde{U}^{*} = -\tilde{U}$, the Hermitian conjugate of the product is
 
 $$
-\left(\tilde{U}\tilde{F}\right)^\dagger = \tilde{F}^\dagger\tilde{U}^\dagger = -\,\tilde{F}^\dagger\tilde{U}.
+\left(\tilde{U}\tilde{F}\right)^\dagger = \tilde{F}^{*}\tilde{U}^{*} = -\,\tilde{F}^{*}\tilde{U}.
 $$
 
 The bracket is therefore twice the anti-Hermitian part of $\tilde{U}\tilde{F}$:
 
 $$
-\tilde{U}\tilde{F} + \tilde{F}^\dagger\tilde{U}
+\tilde{U}\tilde{F} + \tilde{F}^{*}\tilde{U}
 = \tilde{U}\tilde{F} - \left(\tilde{U}\tilde{F}\right)^\dagger
 = 2\,P_{\mathbb{M}_-}\!\left(\tilde{U}\tilde{F}\right),
 $$
@@ -268,7 +268,7 @@ and the formula becomes the single statement
 $$
 \tilde{K} = -\,q\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{U}\tilde{F}\right),
 \qquad
-P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac{1}{2}\left(\tilde{Q} - \tilde{Q}^\dagger\right).
+P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac{1}{2}\left(\tilde{Q} - \tilde{Q}^{*}\right).
 $$
 
 This is the cleanest form of the result. It says that the Lorentz four-force is, up to the constant $q\sqrt{\mu}$, the **projection of the product $\tilde{U}\tilde{F}$ onto the material sector** $\mathbb{M}_-$. No real part is taken, and no Clifford algebra outside $\mathbb{B}$ is needed.
@@ -276,17 +276,17 @@ This is the cleanest form of the result. It says that the Lorentz four-force is,
 **Reading by sector.** The projection form has a transparent physical reading. Split the field strength into its Hermitian and anti-Hermitian parts,
 
 $$
-\tilde{F}^{(+)} = \tfrac{1}{2}\left(\tilde{F} + \tilde{F}^\dagger\right) = i\sqrt{\epsilon}\,\mathbf{E}
+\tilde{F}^{(+)} = \tfrac{1}{2}\left(\tilde{F} + \tilde{F}^{*}\right) = i\sqrt{\epsilon}\,\mathbf{E}
 \;\in\;\mathbb{M}_+,
 \qquad
-\tilde{F}^{(-)} = \tfrac{1}{2}\left(\tilde{F} - \tilde{F}^\dagger\right) = -\sqrt{\mu}\,\mathbf{H}
+\tilde{F}^{(-)} = \tfrac{1}{2}\left(\tilde{F} - \tilde{F}^{*}\right) = -\sqrt{\mu}\,\mathbf{H}
 \;\in\;\mathbb{M}_-,
 $$
 
 the electric part in the informational (Hermitian) sector and the magnetic part in the material (anti-Hermitian) sector. Then
 
 $$
-\tilde{U}\tilde{F} + \tilde{F}^\dagger\tilde{U}
+\tilde{U}\tilde{F} + \tilde{F}^{*}\tilde{U}
 = \left\{\tilde{U}, \tilde{F}^{(+)}\right\} + \left[\tilde{U}, \tilde{F}^{(-)}\right],
 $$
 
@@ -304,15 +304,15 @@ The electric field couples to the four-velocity through the **anticommutator**, 
 *Particle at rest.* With $\mathbf{v} = 0$ we have $\gamma = 1$ and $\tilde{U} = ic$. Then
 
 $$
-\tilde{K} = -\,\frac{q\sqrt{\mu}}{2}\left(ic\,\tilde{F} + \tilde{F}^\dagger ic\right)
-= -\,\frac{iq\sqrt{\mu}c}{2}\left(\tilde{F} + \tilde{F}^\dagger\right)
+\tilde{K} = -\,\frac{q\sqrt{\mu}}{2}\left(ic\,\tilde{F} + \tilde{F}^{*} ic\right)
+= -\,\frac{iq\sqrt{\mu}c}{2}\left(\tilde{F} + \tilde{F}^{*}\right)
 = -\,\frac{iq\sqrt{\mu}c}{2}\left(2i\sqrt{\epsilon}\,\mathbf{E}\right)
 = q\sqrt{\mu}\,c\sqrt{\epsilon}\,\mathbf{E} = q\,\mathbf{E},
 $$
 
 since $c\sqrt{\epsilon\mu} = 1$. The scalar part vanishes, as it must for a particle at rest.
 
-*Pure magnetic field.* With $\mathbf{E} = 0$ we have $\tilde{F}^\dagger = -\tilde{F} = \sqrt{\mu}\,\mathbf{H}$, and
+*Pure magnetic field.* With $\mathbf{E} = 0$ we have $\tilde{F}^{*} = -\tilde{F} = \sqrt{\mu}\,\mathbf{H}$, and
 
 $$
 \tilde{K} = -\,\frac{q\sqrt{\mu}}{2}\left(-\sqrt{\mu}\,\tilde{U}\mathbf{H} + \sqrt{\mu}\,\mathbf{H}\tilde{U}\right)
@@ -340,23 +340,23 @@ $$
 with $E = \gamma mc^2$ and $\mathbf{p} = \gamma m\mathbf{v}$, and they satisfy the normalization and mass-shell conditions
 
 $$
-\tilde{U}\bar{\tilde{U}} = -c^2,
+\tilde{U}\tilde{U}^{\natural} = -c^2,
 \qquad
-\tilde{P}\bar{\tilde{P}} = -m^2c^2.
+\tilde{P}\tilde{P}^{\natural} = -m^2c^2.
 $$
 
 The four-force is the proper-time derivative $\tilde{K} = d\tilde{P}/d\tau$, and the product formula expresses it directly in terms of $\tilde{U}$ and the field:
 
 $$
 \tilde{K} = -\,q\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{U}\tilde{F}\right)
-= -\,\frac{q}{2c\sqrt{\epsilon}}\left(\tilde{U}\tilde{F} + \tilde{F}^\dagger\tilde{U}\right).
+= -\,\frac{q}{2c\sqrt{\epsilon}}\left(\tilde{U}\tilde{F} + \tilde{F}^{*}\tilde{U}\right).
 $$
 
 The four-force is thus built from the same ingredients as the four-momentum — the four-velocity and the field — and inherits its membership in $\mathbb{M}_-$ from the projection.
 
 Three consequences follow at once.
 
-**Orthogonality.** Differentiating the mass shell, $\frac{d}{d\tau}(\tilde{P}\bar{\tilde{P}}) = \tilde{K}\bar{\tilde{P}} + \tilde{P}\bar{\tilde{K}} = 0$. In components this is the familiar $K^\mu P_\mu = 0$, which for the Lorentz force reads
+**Orthogonality.** Differentiating the mass shell, $\frac{d}{d\tau}(\tilde{P}\tilde{P}^{\natural}) = \tilde{K}\tilde{P}^{\natural} + \tilde{P}\tilde{K}^{\natural} = 0$. In components this is the familiar $K^\mu P_\mu = 0$, which for the Lorentz force reads
 
 $$
 \left(i\frac{\gamma P_{\text{mech}}}{c}\right)\left(i\gamma mc\right) + \left(\gamma\mathbf{f}\right)\cdot\left(\gamma m\mathbf{v}\right)
@@ -365,7 +365,7 @@ $$
 
 since $\mathbf{f}\cdot\mathbf{v} = q(\mathbf{E} + \mathbf{v}\times\mathbf{B})\cdot\mathbf{v} = q\,\mathbf{E}\cdot\mathbf{v} = P_{\text{mech}}$. The cancellation is exact.
 
-**Conservation of rest mass.** Since $\tilde{P}\bar{\tilde{P}} = -m^2c^2$ is constant along the worldline, the rest mass is unchanged by the Lorentz force. The force can rotate the four-momentum in $\mathbb{M}_-$ but cannot change its biquaternion norm.
+**Conservation of rest mass.** Since $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ is constant along the worldline, the rest mass is unchanged by the Lorentz force. The force can rotate the four-momentum in $\mathbb{M}_-$ but cannot change its biquaternion norm.
 
 **The non-relativistic limit.** For $|\mathbf{v}| \ll c$ the scalar part of $\tilde{K}$ is negligible relative to the vector part, and the four-force reduces to the Newtonian Lorentz force $q(\mathbf{E} + \mathbf{v}\times\mathbf{B})$.
 
@@ -382,7 +382,7 @@ $$
 They are the real and imaginary parts of the biquaternion norm of the field,
 
 $$
-N(\tilde{F}) = \tilde{F}\bar{\tilde{F}} = -\epsilon\left(I_1 + 2ic\,I_2\right),
+N(\tilde{F}) = \tilde{F}\tilde{F}^{\natural} = -\epsilon\left(I_1 + 2ic\,I_2\right),
 $$
 
 and they are invariant under the proper orthochronous Lorentz group. It is natural to ask what these field invariants imply for the *motion* of a charged particle. The answer has two parts, and it is worth separating them carefully.
@@ -392,7 +392,7 @@ and they are invariant under the proper orthochronous Lorentz group. It is natur
 The motion's own invariant is the **mass shell**,
 
 $$
-\tilde{P}\bar{\tilde{P}} = -m^2c^2,
+\tilde{P}\tilde{P}^{\natural} = -m^2c^2,
 $$
 
 which, as shown above, is preserved by the Lorentz force because the force is orthogonal to the four-momentum. This invariant is independent of the field: every charged particle retains its rest mass, whatever the field. In the biquaternion framework this is the statement that the four-force lies in $\mathbb{M}_-$ and is orthogonal to $\tilde{P}$ in the biquaternion norm.
@@ -402,7 +402,7 @@ which, as shown above, is preserved by the Lorentz force because the force is or
 The biquaternion norm of the four-force itself,
 
 $$
-N(\tilde{K}) = \tilde{K}\bar{\tilde{K}} = -\left(K^0\right)^2 + \left|\mathbf{K}\right|^2,
+N(\tilde{K}) = \tilde{K}\tilde{K}^{\natural} = -\left(K^0\right)^2 + \left|\mathbf{K}\right|^2,
 $$
 
 is a Lorentz scalar; it is not conserved along the motion. Substituting the component form,
@@ -476,7 +476,7 @@ so $k\cdot P$ is constant along the worldline. This is the invariant of the moti
 Because the four-force is a four-vector, it transforms under the Lorentz group by the same **rotor conjugation** as every other element of $\mathbb{M}_-$:
 
 $$
-\tilde{K}' = \tilde{\Lambda}\,\tilde{K}\,\tilde{\Lambda}^\dagger,
+\tilde{K}' = \tilde{\Lambda}\,\tilde{K}\,\tilde{\Lambda}^{*},
 $$
 
 where $\tilde{\Lambda}$ is the unit-norm biquaternion of the boost, and $\tilde{K}' = d\tilde{P}'/d\tau$ is the force measured in the boosted frame (the proper time is invariant). This is the statement that the force transforms in the **vector representation** of the Lorentz group.
@@ -501,15 +501,15 @@ $$
 \mathbf{K}' = \mathbf{K} + \frac{\gamma_u - 1}{u^2}\left(\mathbf{u}\cdot\mathbf{K}\right)\mathbf{u} - \gamma_u\,\frac{K^0}{c}\,\mathbf{u}.
 $$
 
-Written in the biquaternion variables, with $\tilde{K} = K^0e_0 + \mathbf{K}$ and $\tilde{K}' = K'^0e_0 + \mathbf{K}'$, these are exactly the components of $\tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger$. The verification is direct: the rotor conjugation and the component formulas agree to machine precision at random boosts and random forces (maximum discrepancy of order $10^{-15}$).
+Written in the biquaternion variables, with $\tilde{K} = K^0e_0 + \mathbf{K}$ and $\tilde{K}' = K'^0e_0 + \mathbf{K}'$, these are exactly the components of $\tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}$. The verification is direct: the rotor conjugation and the component formulas agree to machine precision at random boosts and random forces (maximum discrepancy of order $10^{-15}$).
 
 **How the field transforms.** The field strength is *not* a four-vector, and it does not transform like one. Under the same boost it transforms in the rank-two (bivector) representation,
 
 $$
-\tilde{F}' = \bar{\tilde{\Lambda}}\,\tilde{F}\,\tilde{\Lambda},
+\tilde{F}' = \tilde{\Lambda}^{\natural}\,\tilde{F}\,\tilde{\Lambda},
 $$
 
-with $\bar{\tilde{\Lambda}}$ the quaternion conjugate of the rotor (equivalently $\tilde{\Lambda}^{-1}$ for a unit-norm rotor). This reproduces the standard field transformation
+with $\tilde{\Lambda}^{\natural}$ the quaternion conjugate of the rotor (equivalently $\tilde{\Lambda}^{-1}$ for a unit-norm rotor). This reproduces the standard field transformation
 
 $$
 \mathbf{E}' = \gamma_u\left(\mathbf{E} + \mathbf{u}\times\mathbf{B}\right) - \frac{\gamma_u - 1}{u^2}\left(\mathbf{u}\cdot\mathbf{E}\right)\mathbf{u},
@@ -521,11 +521,11 @@ $$
 
 and it is this bivector rule — not the vector rule — that leaves the field invariants $I_1$ and $I_2$ unchanged. The distinction between the vector and bivector transformation laws is the algebraic expression of the fact that four-vectors live in $\mathbb{M}_-$ while the field strength does not.
 
-**Covariance of the product formula.** The product formula is manifestly covariant under pure boosts, in the following precise sense. Apply the vector rule to the four-velocity, $\tilde{U}' = \tilde{\Lambda}\tilde{U}\tilde{\Lambda}^\dagger$, and the bivector rule to the field, $\tilde{F}' = \bar{\tilde{\Lambda}}\tilde{F}\tilde{\Lambda}$. Then the right-hand side of the product formula transforms into the right-hand side computed with the primed fields, and equals $\tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger$:
+**Covariance of the product formula.** The product formula is manifestly covariant under pure boosts, in the following precise sense. Apply the vector rule to the four-velocity, $\tilde{U}' = \tilde{\Lambda}\tilde{U}\tilde{\Lambda}^{*}$, and the bivector rule to the field, $\tilde{F}' = \tilde{\Lambda}^{\natural}\tilde{F}\tilde{\Lambda}$. Then the right-hand side of the product formula transforms into the right-hand side computed with the primed fields, and equals $\tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}$:
 
 $$
 -q\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{U}'\tilde{F}'\right)
-= \tilde{\Lambda}\left[-q\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{U}\tilde{F}\right)\right]\tilde{\Lambda}^\dagger
+= \tilde{\Lambda}\left[-q\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{U}\tilde{F}\right)\right]\tilde{\Lambda}^{*}
 = \tilde{K}'.
 $$
 
@@ -625,12 +625,12 @@ which is the contraction $K^\mu = qF^{\mu\nu}u_\nu$ written in the biquaternion 
 
 $$
 \boxed{\;\tilde{K} = -\,q\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{U}\tilde{F}\right)
-= -\,\frac{q\sqrt{\mu}}{2}\left(\tilde{U}\tilde{F} + \tilde{F}^\dagger\tilde{U}\right).\;}
+= -\,\frac{q\sqrt{\mu}}{2}\left(\tilde{U}\tilde{F} + \tilde{F}^{*}\tilde{U}\right).\;}
 $$
 
-Equivalently, $\tilde{K} = -\frac{q}{2c\sqrt{\epsilon}}(\tilde{U}\tilde{F} + \tilde{F}^\dagger\tilde{U})$, since $\sqrt{\mu} = 1/(c\sqrt{\epsilon})$; and since $\tilde{F}^\dagger = -\tilde{F}^*$, the formula may be written $-\frac{q\sqrt{\mu}}{2}(\tilde{U}\tilde{F} - \tilde{F}^*\tilde{U})$. The conjugate field is essential: it carries the anti-self-dual half of the field tensor, and the electric and magnetic contributions can be separated only by combining the two halves. This resolves the open question recorded in the relativistic-mechanics article, and fixes the force notation: the four-force is written $\tilde{K}$, while $\tilde{F}$ is reserved for the field strength.
+Equivalently, $\tilde{K} = -\frac{q}{2c\sqrt{\epsilon}}(\tilde{U}\tilde{F} + \tilde{F}^{*}\tilde{U})$, since $\sqrt{\mu} = 1/(c\sqrt{\epsilon})$; and since $\tilde{F}^{*} = -\tilde{F}^*$, the formula may be written $-\frac{q\sqrt{\mu}}{2}(\tilde{U}\tilde{F} - \tilde{F}^*\tilde{U})$. The conjugate field is essential: it carries the anti-self-dual half of the field tensor, and the electric and magnetic contributions can be separated only by combining the two halves. This resolves the open question recorded in the relativistic-mechanics article, and fixes the force notation: the four-force is written $\tilde{K}$, while $\tilde{F}$ is reserved for the field strength.
 
-The structural consequences are these. The four-force is orthogonal to the four-momentum, $\tilde{K}\bar{\tilde{P}} + \tilde{P}\bar{\tilde{K}} = 0$, so the mass shell $\tilde{P}\bar{\tilde{P}} = -m^2c^2$ is preserved and the rest mass is unchanged by the Lorentz force. The force's biquaternion norm $N(\tilde{K})$ is a Lorentz scalar equal to $q^2\mathbf{E}_{\text{rest}}^2$, the squared electric field in the particle's rest frame. The field invariants $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$ and $I_2 = \mathbf{E}\cdot\mathbf{B}$ classify the field as null, electric, magnetic, or generic, and thereby fix the simplest possible shape of the force and, for a uniform field, the characteristic rates of the motion: the eigenvalues of the field matrix solve $\lambda^4 - (I_1/c^2)\lambda^2 - I_2^2/c^2 = 0$. In the null case a null eigenvector $k$ of the field matrix gives one further invariant of the motion, $k\cdot P$. Finally, under boosts the four-force transforms in the vector representation, $\tilde{K}' = \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger$, while the field transforms in the bivector representation, $\tilde{F}' = \bar{\tilde{\Lambda}}\tilde{F}\tilde{\Lambda}$, and the product formula is covariant under the pair.
+The structural consequences are these. The four-force is orthogonal to the four-momentum, $\tilde{K}\tilde{P}^{\natural} + \tilde{P}\tilde{K}^{\natural} = 0$, so the mass shell $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ is preserved and the rest mass is unchanged by the Lorentz force. The force's biquaternion norm $N(\tilde{K})$ is a Lorentz scalar equal to $q^2\mathbf{E}_{\text{rest}}^2$, the squared electric field in the particle's rest frame. The field invariants $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$ and $I_2 = \mathbf{E}\cdot\mathbf{B}$ classify the field as null, electric, magnetic, or generic, and thereby fix the simplest possible shape of the force and, for a uniform field, the characteristic rates of the motion: the eigenvalues of the field matrix solve $\lambda^4 - (I_1/c^2)\lambda^2 - I_2^2/c^2 = 0$. In the null case a null eigenvector $k$ of the field matrix gives one further invariant of the motion, $k\cdot P$. Finally, under boosts the four-force transforms in the vector representation, $\tilde{K}' = \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}$, while the field transforms in the bivector representation, $\tilde{F}' = \tilde{\Lambda}^{\natural}\tilde{F}\tilde{\Lambda}$, and the product formula is covariant under the pair.
 
 At the level of densities the companion programme replaces the per-particle force by the power–force biquaternion $\tilde{\mathcal F} = -\tilde{\Theta}\circ\boldsymbol{\mathcal A}'$, whose scalar part is a power density and whose vector part splits into a Coulomb, a gravitational, a Lorentz and an electromass term; it is the density counterpart of the same product, with the per-particle $\tilde{K}$ and the per-volume $\tilde{\mathcal F}$ kept strictly apart.
 
@@ -642,11 +642,11 @@ At the level of densities the companion programme replaces the per-particle forc
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
-| $\tilde{Q}^\dagger = \bar{X}^{\,*}$ | Hermitian conjugate |
+| $\tilde{Q}^{*} = \bar{X}^{\,*}$ | Hermitian conjugate |
 | $\tilde{Q}^*$, $\bar{X}$ | Complex conjugate, quaternion conjugate |
-| $P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac12(\tilde{Q} - \tilde{Q}^\dagger)$ | Projection onto $\mathbb{M}_-$ (anti-Hermitian part) |
+| $P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac12(\tilde{Q} - \tilde{Q}^{*})$ | Projection onto $\mathbb{M}_-$ (anti-Hermitian part) |
 | $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ | Field-strength biquaternion (pure vector) |
-| $\tilde{F}^\dagger = i\sqrt{\epsilon}\,\mathbf{E} + \sqrt{\mu}\,\mathbf{H}$ | Hermitian conjugate of the field strength |
+| $\tilde{F}^{*} = i\sqrt{\epsilon}\,\mathbf{E} + \sqrt{\mu}\,\mathbf{H}$ | Hermitian conjugate of the field strength |
 | $\mathbf{E}, \mathbf{H}, \mathbf{B} = \mu\mathbf{H}$ | Electric field, magnetic field, magnetic induction |
 | $\epsilon, \mu$ | Permittivity and permeability of the medium |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |

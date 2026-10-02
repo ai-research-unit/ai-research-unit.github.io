@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article develops Fueter theory in the split biquaternion setting: the Fueter operator, the functions it defines, the construction that produces them from holomorphic functions of one complex variable, and the relation to the biquaternion and split quaternion theories. It follows *Split-Biquaternion Analysis* and *Split-Biquaternion Regular Functions*, where the Cauchy–Riemann operator $\tilde{\nabla}$ and its conjugate $\bar{\tilde{\nabla}}$ were constructed, and it uses the algebra and the zero divisors of *Split-Biquaternion Algebra* and *Split-Biquaternion Zero Divisors*.
+This article develops Fueter theory in the split biquaternion setting: the Fueter operator, the functions it defines, the construction that produces them from holomorphic functions of one complex variable, and the relation to the biquaternion and split quaternion theories. It follows *Split-Biquaternion Analysis* and *Split-Biquaternion Regular Functions*, where the Cauchy–Riemann operator $\tilde{\nabla}$ and its conjugate $\tilde{\nabla}^{\natural}$ were constructed, and it uses the algebra and the zero divisors of *Split-Biquaternion Algebra* and *Split-Biquaternion Zero Divisors*.
 
 The treatment is purely mathematical, and no theorem is asserted beyond its hypotheses. Throughout the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_1^2 = e_2^2 = e_3^2 = -e_0$, the central split complex unit is $j$ with $j^2 = +e_0$, and a split biquaternion is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu = q_\mu + jq'_\mu \in \mathbb{D}$. On the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ the coordinates are real, $\tilde{Q} = \sum_\mu q_\mu e_\mu$, with $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3$, $\rho = \|\mathbf{q}\|_E$, $\hat{\mathbf{q}} = \mathbf{q}/\rho$, and $\partial_\mu = \partial/\partial q_\mu$.
 
@@ -17,13 +17,13 @@ $$
 \tilde{\nabla} = \sum_{\mu=0}^{3} e_\mu \partial_\mu = \partial_0 + \mathbf{D} , \qquad \mathbf{D} = e_1\partial_1 + e_2\partial_2 + e_3\partial_3 ,
 $$
 
-acting on the left. Its **conjugate** is obtained by negating the vector part, $\bar{\tilde{\nabla}} = \partial_0 - \mathbf{D}$. This is the split biquaternion case of the Cauchy–Riemann operator; the older name for it in the physics literature is not used here.
+acting on the left. Its **conjugate** is obtained by negating the vector part, $\tilde{\nabla}^{\natural} = \partial_0 - \mathbf{D}$. This is the split biquaternion case of the Cauchy–Riemann operator; the older name for it in the physics literature is not used here.
 
 ### Factorization of the Laplacian
 
-**Proposition.** On the quaternion subspace, $\tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \Delta_4 e_0$, where $\Delta_4 = \sum_{\mu=0}^{3}\partial_\mu^2$.
+**Proposition.** On the quaternion subspace, $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Delta_4 e_0$, where $\Delta_4 = \sum_{\mu=0}^{3}\partial_\mu^2$.
 
-**Proof.** Expand $\tilde{\nabla}\bar{\tilde{\nabla}} = \sum_{\mu,\nu} e_\mu\bar{e}_\nu\partial_\mu\partial_\nu$ with $\bar{e}_0 = e_0$ and $\bar{e}_k = -e_k$. The diagonal term is $\sum_\mu e_\mu\bar{e}_\mu\partial_\mu^2 = \Delta_4 e_0$, since $e_k\bar{e}_k = -e_k^2 = e_0$; the off-diagonal coefficient $e_\mu\bar{e}_\nu + e_\nu\bar{e}_\mu$ vanishes by anticommutativity of the units. The same argument gives $\bar{\tilde{\nabla}}\tilde{\nabla}$.
+**Proof.** Expand $\tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_{\mu,\nu} e_\mu e_\nu^{\natural}\partial_\mu\partial_\nu$ with $e_0^{\natural} = e_0$ and $e_k^{\natural} = -e_k$. The diagonal term is $\sum_\mu e_\mu e_\mu^{\natural}\partial_\mu^2 = \Delta_4 e_0$, since $e_k e_k^{\natural} = -e_k^2 = e_0$; the off-diagonal coefficient $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural}$ vanishes by anticommutativity of the units. The same argument gives $\tilde{\nabla}^{\natural}\tilde{\nabla}$.
 
 ### Relation to the Cauchy–Riemann Operator
 
@@ -61,7 +61,7 @@ the quaternionic Cauchy–Riemann–Fueter system, one algebra equation equivale
 
 **Proposition.** Every left- or right-regular function is harmonic for the four-dimensional Laplacian: $\Delta_4\tilde{F} = 0$ componentwise.
 
-**Proof.** If $\tilde{\nabla}\tilde{F} = 0$, then $\Delta_4\tilde{F} = \bar{\tilde{\nabla}}(\tilde{\nabla}\tilde{F}) = 0$; if $\tilde{F}\tilde{\nabla} = 0$, then $\Delta_4\tilde{F} = (\tilde{F}\tilde{\nabla})\bar{\tilde{\nabla}} = 0$ with the operators acting on the right.
+**Proof.** If $\tilde{\nabla}\tilde{F} = 0$, then $\Delta_4\tilde{F} = \tilde{\nabla}^{\natural}(\tilde{\nabla}\tilde{F}) = 0$; if $\tilde{F}\tilde{\nabla} = 0$, then $\Delta_4\tilde{F} = (\tilde{F}\tilde{\nabla})\tilde{\nabla}^{\natural} = 0$ with the operators acting on the right.
 
 Consequently every regular function is real-analytic and satisfies the maximum principle, Liouville's theorem, the identity theorem and the Cauchy estimates on the quaternion subspace, where the system is elliptic. Since each component is harmonic, the **mean value property** holds: for $\tilde{F}$ regular near the closed ball $\bar{B}(\tilde{Q}_0,r)$,
 
@@ -141,7 +141,7 @@ For real Taylor coefficients, term-by-term application of $\Delta_4$ gives the i
 
 ## The Split Biquaternionic Case
 
-On the quaternion subspace the theory is the classical one with split biquaternion coefficients, because the subspace is a division algebra: $N(\tilde{Q}) = \sum_\mu q_\mu^2$ is positive definite, so every nonzero element is invertible and the fundamental solution $\tilde{G} = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$ is regular off the origin. This is the definite case of the firmest kind: the Cauchy theory there has a single singularity, the origin.
+On the quaternion subspace the theory is the classical one with split biquaternion coefficients, because the subspace is a division algebra: $N(\tilde{Q}) = \sum_\mu q_\mu^2$ is positive definite, so every nonzero element is invertible and the fundamental solution $\tilde{G} = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ is regular off the origin. This is the definite case of the firmest kind: the Cauchy theory there has a single singularity, the origin.
 
 On the full algebra the coefficient ring is the split complex algebra $\mathbb{D}$ rather than the complex field, and this changes the geometry of the singular set without changing the equations. The zero divisors are the union $Z = \mathbb{H}\tilde\Pi_+ \cup \mathbb{H}\tilde\Pi_-$ of the two four-dimensional ideals, so the singular set of the naive inverse is a union of two linear subspaces rather than the quadric hypersurface of the biquaternion case. In particular the Fueter operator is elliptic over the real coordinates of a four-dimensional subspace, but the pointwise inversion of $\tilde{Q}$ fails on $Z$, and a domain for the Cauchy theory of the full algebra must avoid $Z$, not merely the origin. On the indefinite subspaces the second-order operator is the wave operator of signature $(3,1)$ or $(1,3)$, so the axial coefficients satisfy a wave-type system rather than a Laplace system; the null cone of the relevant real form is the characteristic set.
 
@@ -153,7 +153,7 @@ The split quaternion theory, by contrast, is the four-dimensional algebra $\math
 
 ## Summary
 
-The Fueter operator $\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$ and its conjugate factor the four-dimensional Laplacian on the quaternion subspace, $\tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \Delta_4e_0$, and left-regularity $\tilde{\nabla}\tilde{F} = 0$ and right-regularity $\tilde{F}\tilde{\nabla} = 0$ differ only in the sign of the curl term of the componentwise system, coinciding for axially symmetric functions; every regular function is harmonic, hence real-analytic on the quaternion subspace, and satisfies the mean value property. On the full algebra regularity is the pair of quaternionic regularities of the two idempotent components, a splitting with no counterpart in the simple biquaternion algebra. The Fueter construction sends a holomorphic $f_0$ to the induced function $\Delta_4\tilde{f}_0 = 2u_\rho/\rho + \hat{\mathbf{q}}(2v_\rho/\rho - 2v/\rho^2)$, which is both left- and right-regular; it is $\mathbb{C}$-linear with the affine functions as kernel, hence injective exactly for holomorphic functions whose Taylor coefficients vanish to order two, and the Fueter–Sce theorem extends it to odd-dimensional Clifford algebras with the power $(n-1)/2$ under the hypotheses of holomorphic convergence, order-two vanishing and odd dimension. The imaginary units of the full algebra form the four-dimensional manifold $S^2\times S^2$ rather than a sphere, so the slice approach must select one root at a time. On the quaternion subspace the origin is the only singularity; on the full algebra the coefficient ring is the split complex algebra and the singular set is the union of the two ideals, a union of two linear four-spaces rather than a quadric, this being the exact difference from the biquaternion theory, whose singular set is the six-dimensional null quadric and whose operator loses ellipticity over $\mathbb{C}$.
+The Fueter operator $\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$ and its conjugate factor the four-dimensional Laplacian on the quaternion subspace, $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Delta_4e_0$, and left-regularity $\tilde{\nabla}\tilde{F} = 0$ and right-regularity $\tilde{F}\tilde{\nabla} = 0$ differ only in the sign of the curl term of the componentwise system, coinciding for axially symmetric functions; every regular function is harmonic, hence real-analytic on the quaternion subspace, and satisfies the mean value property. On the full algebra regularity is the pair of quaternionic regularities of the two idempotent components, a splitting with no counterpart in the simple biquaternion algebra. The Fueter construction sends a holomorphic $f_0$ to the induced function $\Delta_4\tilde{f}_0 = 2u_\rho/\rho + \hat{\mathbf{q}}(2v_\rho/\rho - 2v/\rho^2)$, which is both left- and right-regular; it is $\mathbb{C}$-linear with the affine functions as kernel, hence injective exactly for holomorphic functions whose Taylor coefficients vanish to order two, and the Fueter–Sce theorem extends it to odd-dimensional Clifford algebras with the power $(n-1)/2$ under the hypotheses of holomorphic convergence, order-two vanishing and odd dimension. The imaginary units of the full algebra form the four-dimensional manifold $S^2\times S^2$ rather than a sphere, so the slice approach must select one root at a time. On the quaternion subspace the origin is the only singularity; on the full algebra the coefficient ring is the split complex algebra and the singular set is the union of the two ideals, a union of two linear four-spaces rather than a quadric, this being the exact difference from the biquaternion theory, whose singular set is the six-dimensional null quadric and whose operator loses ellipticity over $\mathbb{C}$.
 
 ## Summary of Notation
 
@@ -164,8 +164,8 @@ The Fueter operator $\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$ and its conjug
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$, $Q_\mu \in \mathbb{D}$ | Split biquaternion; real coefficients on the quaternion subspace |
 | $\mathbf{q} = \sum_k q_ke_k$, $\rho = \|\mathbf{q}\|_E$, $\hat{\mathbf{q}} = \mathbf{q}/\rho$ | Vector part, its modulus, its direction |
 | $\tilde{\nabla} = \partial_0 + \mathbf{D}$, $\mathbf{D} = \sum_k e_k\partial_k$ | Fueter operator, acting on the left |
-| $\bar{\tilde{\nabla}} = \partial_0 - \mathbf{D}$ | Conjugate Fueter operator |
-| $\Delta_4 = \sum_\mu\partial_\mu^2$ | Four-dimensional Laplacian, $\tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \Delta_4e_0$ |
+| $\tilde{\nabla}^{\natural} = \partial_0 - \mathbf{D}$ | Conjugate Fueter operator |
+| $\Delta_4 = \sum_\mu\partial_\mu^2$ | Four-dimensional Laplacian, $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Delta_4e_0$ |
 | $\tilde{F}$ left-regular / right-regular | $\tilde{\nabla}\tilde{F} = 0$ / $\tilde{F}\tilde{\nabla} = 0$ |
 | $I$, $\mathbb{C}_I = \mathbb{R}+I\mathbb{R}$ | Imaginary unit, $I^2 = -1$; slice |
 | $A, B$ | Axial coefficients, $\tilde{F} = A(q_0,\rho) + \hat{\mathbf{q}}B(q_0,\rho)$ |

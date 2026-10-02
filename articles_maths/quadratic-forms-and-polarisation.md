@@ -107,7 +107,7 @@ $$
 
 is a quadratic form, and its polar form has Gram matrix $\operatorname{diag}(a_1, \ldots, a_n)$.
 
-**Example (the norms).** The norm $N(z) = z\bar{z}$ on the complex numbers is the quadratic form $a^2 + b^2$ on $\mathbb{R}^2$; its polar form is the Euclidean inner product. The norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ on the quaternions is the form $x_0^2 + x_1^2 + x_2^2 + x_3^2$ on $\mathbb{R}^4$. These are the standard examples of positive-definite forms and are treated systematically.
+**Example (the norms).** The norm $N(z) = z\bar{z}$ on the complex numbers is the quadratic form $a^2 + b^2$ on $\mathbb{R}^2$; its polar form is the Euclidean inner product. The norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ on the quaternions is the form $x_0^2 + x_1^2 + x_2^2 + x_3^2$ on $\mathbb{R}^4$. These are the standard examples of positive-definite forms and are treated systematically.
 
 **Example (the hyperbolic plane).** On $R^2$ the form
 

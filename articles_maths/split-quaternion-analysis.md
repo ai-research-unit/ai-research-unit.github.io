@@ -39,7 +39,7 @@ The Euclidean norm makes the algebra a normed algebra up to the constant $\sqrt{
 
 **Definition.** A function $f : \mathbb{H}_{\mathrm{s}} \to \mathbb{H}_{\mathrm{s}}$ has **limit** $L$ at $q_0$ when for every $\varepsilon > 0$ there is $\delta > 0$ with $|f(\tilde q)-L| < \varepsilon$ whenever $0 < |\tilde q - q_0| < \delta$; and $f$ is **continuous** at $q_0$ when the limit there is $f(q_0)$.
 
-**Theorem (Continuity of the Algebraic Operations).** The maps $(\tilde q,y) \mapsto \tilde q+y$, $(\tilde q,y)\mapsto \tilde q y$, $\tilde q \mapsto \lambda \tilde q$, $\tilde q\mapsto \bar{\tilde q}$, $\tilde q \mapsto \operatorname{Sc}(\tilde q)$ and $\tilde q \mapsto \operatorname{Vec}(\tilde q)$ are continuous on $\mathbb{H}_{\mathrm{s}}$, and $\tilde q \mapsto \tilde q^{-1}$ is continuous on the open set of units.
+**Theorem (Continuity of the Algebraic Operations).** The maps $(\tilde q,y) \mapsto \tilde q+y$, $(\tilde q,y)\mapsto \tilde q y$, $\tilde q \mapsto \lambda \tilde q$, $\tilde q\mapsto \tilde{q}^{\natural}$, $\tilde q \mapsto \operatorname{Sc}(\tilde q)$ and $\tilde q \mapsto \operatorname{Vec}(\tilde q)$ are continuous on $\mathbb{H}_{\mathrm{s}}$, and $\tilde q \mapsto \tilde q^{-1}$ is continuous on the open set of units.
 
 **Proof.** The sum and scalar product are linear in the coordinates; the product satisfies $|\tilde q y - q_0y_0| \leq |\tilde q-q_0||y| + |q_0||y-y_0|$ for the coordinate norm up to a constant, hence is continuous; the involutions and the projections are linear in the coordinates. For the inverse, $\tilde q^{-1}-q_0^{-1} = \tilde q^{-1}(q_0-\tilde q)q_0^{-1}$ and $\tilde q \mapsto \tilde q^{-1}$ is bounded near $q_0$ by the continuity of the coordinates of the inverse, which are rational functions of the coordinates with denominator $N(\tilde q)$.
 
@@ -126,7 +126,7 @@ which is the zero divisor set of the algebra in the vector subspace.
 **Theorem (The Inverse and Its Singular Set).** The function $\tilde q \mapsto \tilde q^{-1}$ is defined and continuous on the open set of units and has no extension to the null cone. In coordinates, if $\tilde q = q_0 + v$ with $v \in V$, then
 
 $$
-\tilde q^{-1} = \frac{\bar{\tilde q}}{N(\tilde q)} = \frac{q_0 - v}{q_0^2 - N(v)},
+\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{N(\tilde q)} = \frac{q_0 - v}{q_0^2 - N(v)},
 $$
 
 which blows up as the denominator tends to zero, and the limit depends on the direction of approach: along a null direction the inverse is unbounded, and along the split-complex subalgebra directions the denominator vanishes on the isotropic lines.
@@ -201,7 +201,7 @@ The quaternion column is the content of *Quaternion Analysis*, and the split-com
 
 The algebra is a normed algebra up to the constant $\sqrt{2}$ in the Euclidean norm, with the product topology of $\mathbb{R}^4$, the units open and the zero divisors closed. Limits and continuity are the coordinatewise notions of the four real coordinates. The naive derivative fails already for $\tilde q \mapsto \tilde q^2$, because the difference quotient involves the conjugate $hxh^{-1}$, and it fails again near the null cone, where $h$ need not be invertible.
 
-The natural operators are the vector operator $D = e_1\partial_{q_1} + e_2\partial_{q_2} + e_3\partial_{q_3}$, whose square is the wave operator of the form of signature $(2,1)$ with characteristic variety the null cone, and the coordinate operators of the Peirce calculus. The operator is hyperbolic, so there is no elliptic theory of monogenic functions: the contrast with *Clifford Analysis* is the indefiniteness of the form, and the zero divisors are exactly the characteristic directions. Power series converge on a ball and may be evaluated coordinatewise, but the identity theorem fails because of the nilpotents. The inverse is given by $\bar{\tilde q}/N(\tilde q)$ and has its singular set on the null cone, where removable singularities fail. The corresponding analysis of the division-algebra case is that of *Quaternion Analysis*, and of the two-dimensional case that of *Split-Complex Integration*; the operators of the definite case are those of Part III.
+The natural operators are the vector operator $D = e_1\partial_{q_1} + e_2\partial_{q_2} + e_3\partial_{q_3}$, whose square is the wave operator of the form of signature $(2,1)$ with characteristic variety the null cone, and the coordinate operators of the Peirce calculus. The operator is hyperbolic, so there is no elliptic theory of monogenic functions: the contrast with *Clifford Analysis* is the indefiniteness of the form, and the zero divisors are exactly the characteristic directions. Power series converge on a ball and may be evaluated coordinatewise, but the identity theorem fails because of the nilpotents. The inverse is given by $\tilde{q}^{\natural}/N(\tilde q)$ and has its singular set on the null cone, where removable singularities fail. The corresponding analysis of the division-algebra case is that of *Quaternion Analysis*, and of the two-dimensional case that of *Split-Complex Integration*; the operators of the definite case are those of Part III.
 
 ## Summary of Notation
 
@@ -212,7 +212,7 @@ The natural operators are the vector operator $D = e_1\partial_{q_1} + e_2\parti
 | $D = e_1\partial_{q_1} + e_2\partial_{q_2} + e_3\partial_{q_3}$ | the vector operator | this article |
 | $D^2 = \Box_{(2,1)}$ | the wave operator of signature $(2,1)$ | this article |
 | $q_1^2-q_2^2-q_3^2=0$ | the characteristic variety, equal to the zero divisor set | *Split-Quaternion Zero Divisors* |
-| $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$ | the inverse, singular on the null cone | *Split-Quaternion Algebra* |
+| $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$ | the inverse, singular on the null cone | *Split-Quaternion Algebra* |
 | power series $\sum q_2_nx^n$ | convergence on a ball, evaluation coordinatewise | this article |
 | $\mathrm{Cl}_{2,2}$ | the Clifford algebra of the full form, different from $\mathbb{H}_{\mathrm{s}}$ | *Clifford Algebras in Finite Dimensions* |
 

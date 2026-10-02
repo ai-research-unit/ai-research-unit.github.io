@@ -24,10 +24,10 @@ The real number $q_0$ is the **scalar part**, and the triple $(q_1, q_2, q_3)$ i
 The **modulus** of $\tilde q$ is
 
 $$
-|\tilde q| = \sqrt{\tilde q \bar{\tilde q}} = \sqrt{q_0^2 + q_1^2 + q_2^2 + q_3^2},
+|\tilde q| = \sqrt{\tilde q \tilde{q}^{\natural}} = \sqrt{q_0^2 + q_1^2 + q_2^2 + q_3^2},
 $$
 
-where $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ is the quaternion conjugate. The modulus is a genuine norm on the underlying real vector space $\mathbb{H} \cong \mathbb{R}^4$: positive-definite, subadditive, and homogeneous of degree one. It is multiplicative:
+where $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ is the quaternion conjugate. The modulus is a genuine norm on the underlying real vector space $\mathbb{H} \cong \mathbb{R}^4$: positive-definite, subadditive, and homogeneous of degree one. It is multiplicative:
 
 $$
 |pq| = |p| |\tilde q|.
@@ -466,7 +466,7 @@ $$
 **Fundamental solution.** The fundamental solution of $D$ is
 
 $$
-E(\tilde q) = \frac{\tilde q^{-1}}{|\tilde q|^2} = \frac{\bar{\tilde q}}{|\tilde q|^4},
+E(\tilde q) = \frac{\tilde q^{-1}}{|\tilde q|^2} = \frac{\tilde{q}^{\natural}}{|\tilde q|^4},
 $$
 
 which satisfies $D E = 2\pi^2 \delta_0$ in the sense of distributions.
@@ -542,8 +542,8 @@ The article develops what that notion supports: contour integrals along paths, p
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | General quaternion |
 | $q_0$ | Scalar part |
 | $\mathbf{q}$ | Vector part |
-| $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
-| $\lvert \tilde q\rvert = \sqrt{\tilde q \bar{\tilde q}}$ | Modulus |
+| $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
+| $\lvert \tilde q\rvert = \sqrt{\tilde q \tilde{q}^{\natural}}$ | Modulus |
 | $B(q_0, r)$ | Open ball of radius $r$ |
 | $D = \partial_{x_0} + e_1 \partial_{x_1} + e_2 \partial_{x_2} + e_3 \partial_{x_3}$ | Cauchy–Riemann operator |
 | $D f = 0$ | Monogenic equation |

@@ -117,19 +117,19 @@ $$
 L = \partial_\mu\phi^*\,\partial^\mu\phi ,
 $$
 
-the conjugate momentum is $L^\mu_\phi = \partial^\mu\phi^*$ and $L^\mu_{\phi^*} = \partial^\mu\phi$, so the current is
+the conjugate momentum is $L^\mu_\phi = \partial^\mu\phi^*$ and $L^\mu_{\bar{\phi}} = \partial^\mu\phi$, so the current is
 
 $$
-j^\mu = i\bigl(\phi\,\partial^\mu\phi^* - \phi^*\partial^\mu\phi\bigr).
+j^\mu = i\bigl(\phi\,\partial^\mu\phi^* - \bar{\phi}\partial^\mu\phi\bigr).
 $$
 
 Its divergence computed off shell is
 
 $$
-\partial_\mu j^\mu = i\bigl(\phi\,\Box\phi^* - \phi^*\Box\phi\bigr),
+\partial_\mu j^\mu = i\bigl(\phi\,\Box\phi^* - \bar{\phi}\Box\phi\bigr),
 $$
 
-which is precisely $-E_\phi\xi^\phi - E_{\phi^*}\xi^{\phi^*}$ and therefore vanishes on shell. The identity was checked on a superposition of two on-shell plane waves with null wave vectors, where the divergence is $2.2\times10^{-13}$. This current is the ancestor of the electric four-current of a complex field, and the corpus's *Noether's Theorem in Biquaternionic Form* carries its biquaternion image, the material-sector current $\tilde{J}$.
+which is precisely $-E_\phi\xi^\phi - E_{\bar{\phi}}\xi^{\bar{\phi}}$ and therefore vanishes on shell. The identity was checked on a superposition of two on-shell plane waves with null wave vectors, where the divergence is $2.2\times10^{-13}$. This current is the ancestor of the electric four-current of a complex field, and the corpus's *Noether's Theorem in Biquaternionic Form* carries its biquaternion image, the material-sector current $\tilde{J}$.
 
 ## The Second Theorem
 
@@ -223,7 +223,7 @@ $$
 \partial_\nu j^\nu = \partial_\nu E^\nu \equiv 0 .
 $$
 
-The conservation of the source is therefore not an independent law but an **integrability condition**: the equation has no solution unless the source is conserved. This is the second-theorem route to charge conservation. The corpus reaches the same conclusion inside the biquaternion algebra, where the single equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ requires $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{R})=0$, which expands to $\partial_t\rho+\mathrm{div}\,\mathbf{J}=0$; the identity of the second theorem and the biquaternion integrability condition are the same statement in two notations.
+The conservation of the source is therefore not an independent law but an **integrability condition**: the equation has no solution unless the source is conserved. This is the second-theorem route to charge conservation. The corpus reaches the same conclusion inside the biquaternion algebra, where the single equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ requires $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{R})=0$, which expands to $\partial_t\rho+\mathrm{div}\,\mathbf{J}=0$; the identity of the second theorem and the biquaternion integrability condition are the same statement in two notations.
 
 ## Worked Example: a Local Symmetry with a Rigid Subgroup
 
@@ -295,7 +295,7 @@ The names are frequently reversed in the literature and in informal use. The rev
 
 Noether's two theorems classify the symmetries of an action by the nature of their parameters and return two different objects. A symmetry whose parameters are constants — of the first kind, $k$ of them — gives $k$ conserved currents $j^\mu_a = L^\mu_i\xi^i_a - F^\mu_a$, divergence-free on shell, and hence $k$ conserved charges. A symmetry whose parameters are arbitrary functions — of the second kind, $q$ of them — gives no charge: it gives $q$ differential identities among the Euler–Lagrange expressions, valid off shell, which say that the equations are not independent, that at most $N-q$ of them are independent, and that a gauge condition is needed to determine the evolution.
 
-Both theorems follow from one identity, $\delta L = E_i\delta u^i + \partial_\mu(L^\mu_i\delta u^i)$, read with the two kinds of variation. The identity of the second theorem, $b^iE_i - \partial_\mu(a^{i\mu}E_i)\equiv0$ in the first-order case, is checked on the Maxwell field, where it is $\partial_\nu\partial_\mu F^{\mu\nu}\equiv0$ with residual exactly zero, and on a Stueckelberg-type field with a rigid subgroup, where it is verified to $9\times10^{-14}$ against a scale of $3.7$. The Maxwell identity forces the source to be conserved, $\partial_\nu j^\nu=0$, turning charge conservation into an integrability condition; the same conclusion is reached inside the biquaternion algebra from $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{R})=0$. A local symmetry contributes a conservation law only through a rigid subgroup, and it has one only when the algebraic part $b^i$ of its transformation does not vanish.
+Both theorems follow from one identity, $\delta L = E_i\delta u^i + \partial_\mu(L^\mu_i\delta u^i)$, read with the two kinds of variation. The identity of the second theorem, $b^iE_i - \partial_\mu(a^{i\mu}E_i)\equiv0$ in the first-order case, is checked on the Maxwell field, where it is $\partial_\nu\partial_\mu F^{\mu\nu}\equiv0$ with residual exactly zero, and on a Stueckelberg-type field with a rigid subgroup, where it is verified to $9\times10^{-14}$ against a scale of $3.7$. The Maxwell identity forces the source to be conserved, $\partial_\nu j^\nu=0$, turning charge conservation into an integrability condition; the same conclusion is reached inside the biquaternion algebra from $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{R})=0$. A local symmetry contributes a conservation law only through a rigid subgroup, and it has one only when the algebraic part $b^i$ of its transformation does not vanish.
 
 ## Summary of Notation
 

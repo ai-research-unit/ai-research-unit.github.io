@@ -27,7 +27,7 @@ $$
 
 Each of the two sets is a four-dimensional real subspace, and they meet only at the origin.
 
-**Proof.** The split-biquaternion norm is multiplicative and the inverse formula $\tilde{Q}^{-1} = \bar{\tilde{Q}}N(\tilde{Q})^{-1}$ holds, so $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})$ is a unit of $\mathbb{D}$; the non-units are the elements whose split-biquaternion norm is $0$ or a nonzero zero divisor of $\mathbb{D}$. Since $N(\tilde{Q}) = N_+(\tilde{Q})\tilde\Pi_+ + N_-(\tilde{Q})\tilde\Pi_-$ with $N_\pm(\tilde{Q}) = \sum_\mu (q_\mu\pm q'_\mu)^2$, the split-biquaternion norm is a zero divisor of $\mathbb{D}$ exactly when one of $N_\pm$ vanishes, and a sum of squares vanishes exactly when all its terms do, that is when $\tilde{Q}_\pm = 0$.
+**Proof.** The split-biquaternion norm is multiplicative and the inverse formula $\tilde{Q}^{-1} = \tilde{Q}^{\natural}N(\tilde{Q})^{-1}$ holds, so $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})$ is a unit of $\mathbb{D}$; the non-units are the elements whose split-biquaternion norm is $0$ or a nonzero zero divisor of $\mathbb{D}$. Since $N(\tilde{Q}) = N_+(\tilde{Q})\tilde\Pi_+ + N_-(\tilde{Q})\tilde\Pi_-$ with $N_\pm(\tilde{Q}) = \sum_\mu (q_\mu\pm q'_\mu)^2$, the split-biquaternion norm is a zero divisor of $\mathbb{D}$ exactly when one of $N_\pm$ vanishes, and a sum of squares vanishes exactly when all its terms do, that is when $\tilde{Q}_\pm = 0$.
 
 **Definition.** An element is of **rank one** if it generates a minimal left ideal, that is if the left ideal $\mathbb{H}_{\mathbb{D}}\tilde{Q}$ is one of the two minimal left ideals.
 
@@ -87,7 +87,7 @@ The split biquaternion algebra carries the split complex norm $N = \sum_\mu Q_\m
 
 | Symbol | Meaning |
 |---|---|
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Split complex norm |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Split complex norm |
 | $R(\tilde{Q}), I(\tilde{Q})$ | Real part (Euclidean, $(8,0)$) and imaginary part ($(4,4)$) of $N$ |
 | $g(\tilde{Q}) = \sum_\mu(q_\mu^2 - q'^2_\mu)$ | Hermitian scalar form, signature $(4,4)$ |
 | $Z = \mathbb{H}\tilde\Pi_+\cup\mathbb{H}\tilde\Pi_-$ | Zero divisor locus, union of two ideals |

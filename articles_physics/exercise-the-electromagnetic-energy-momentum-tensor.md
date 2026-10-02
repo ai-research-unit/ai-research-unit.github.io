@@ -4,53 +4,53 @@
 
 This is an exercise in the electromagnetism series. It constructs the **electromagnetic energy–momentum tensor** from the field-strength biquaternion $\tilde F$, and it uses the framework and the notation of the companion article *The Field-Strength Biquaternion and Its Invariants* together with its parent, *Maxwell's Equations in the Biquaternionic Formulation*. Those two articles are the parents of this exercise: they fix the field strength, the medium conventions, and the Hermitian form. What follows applies them. The three universal articles — *Introduction to the Biquaternion Universe*, *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — supply the algebra and the fixed-point subspace names, which are inherited without change.
 
-**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and the product rule $e_j e_k = -\delta_{jk}e_0 + \epsilon_{jkm}e_m$; the scalar imaginary $i$ with $i^2 = -1$, commuting with the quaternion units; the anti-Hermitian subspace $\mathbb{M}_-$ with basis $\mathcal{E}_\mu \in \{ie_0, e_1, e_2, e_3\}$ and the Hermitian subspace $\mathbb{M}_+$; the quaternion conjugate $\bar{\cdot}$, the complex conjugate ${}^*$, and the Hermitian conjugate ${}^\dagger = \bar{\cdot}^{\,*}$; the biquaternionic gradient $\tilde\nabla = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ with $\Box = \tilde\nabla\bar{\tilde\nabla}$; the trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$; the field-strength biquaternion $\tilde F = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$; the energy density $W$; the Poynting vector $\mathbf{S} = \mathbf{E}\times\mathbf{H}$; and the medium speed of light $c = 1/\sqrt{\epsilon\mu}$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\mathbf{v}$ is reserved for particle and frame velocities.
+**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and the product rule $e_j e_k = -\delta_{jk}e_0 + \epsilon_{jkm}e_m$; the scalar imaginary $i$ with $i^2 = -1$, commuting with the quaternion units; the anti-Hermitian subspace $\mathbb{M}_-$ with basis $\mathcal{E}_\mu \in \{ie_0, e_1, e_2, e_3\}$ and the Hermitian subspace $\mathbb{M}_+$; the quaternion conjugate ${}^{\natural}$, the complex conjugate $\bar{\cdot}$, and the Hermitian conjugate ${}^{*} = ({}^{\natural})^{\,*}$; the biquaternionic gradient $\tilde\nabla = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ with $\Box = \tilde\nabla\tilde\nabla^{\natural}$; the trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$; the field-strength biquaternion $\tilde F = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$; the energy density $W$; the Poynting vector $\mathbf{S} = \mathbf{E}\times\mathbf{H}$; and the medium speed of light $c = 1/\sqrt{\epsilon\mu}$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\mathbf{v}$ is reserved for particle and frame velocities.
 
-**What is to be shown.** (1) Why the four-component biquaternionic energy–momentum cannot be the energy–momentum *tensor*, and why the real form $\tilde W = W + \frac{1}{c}\mathbf{S}$ fails the conservation test that the Hermitian form $\frac{1}{2}\tilde F\tilde F^\dagger$ passes. (2) The bilinear construction of the rank-two tensor from $\tilde F$ and the basis of $\mathbb{M}_-$. (3) The tracelessness of $T^{\mu\nu}$. (4) The conservation law $\partial_\mu T^{\mu\nu} = -f^\nu$. (5) The rank-one form of $T^{\mu\nu}$ for a plane wave. Each problem is stated and solved in full; the value of an exercise is in the solutions.
+**What is to be shown.** (1) Why the four-component biquaternionic energy–momentum cannot be the energy–momentum *tensor*, and why the real form $\tilde W = W + \frac{1}{c}\mathbf{S}$ fails the conservation test that the Hermitian form $\frac{1}{2}\tilde F\tilde F^{*}$ passes. (2) The bilinear construction of the rank-two tensor from $\tilde F$ and the basis of $\mathbb{M}_-$. (3) The tracelessness of $T^{\mu\nu}$. (4) The conservation law $\partial_\mu T^{\mu\nu} = -f^\nu$. (5) The rank-one form of $T^{\mu\nu}$ for a plane wave. Each problem is stated and solved in full; the value of an exercise is in the solutions.
 
 **The result.** The tensor is the scalar part of a bilinear in the field strength,
 $$
-\boxed{\;T^\mu{}_\nu = \frac{1}{2}\,\mathrm{Sc}\!\left(\tilde F\,\mathcal{E}_\mu\,\tilde F^\dagger\,\mathcal{E}_\nu\right)\;}
+\boxed{\;T^\mu{}_\nu = \frac{1}{2}\,\mathrm{Sc}\!\left(\tilde F\,\mathcal{E}_\mu\,\tilde F^{*}\,\mathcal{E}_\nu\right)\;}
 $$
 whose mixed components are $T^0{}_0 = -W$, $T^0{}_j = \frac{1}{c}S_j$, $T^j{}_0 = -\frac{1}{c}S_j$, $T^j{}_k = -\sigma_{jk}$, with $\sigma_{jk}$ the Maxwell stress. Raising the second index gives a symmetric tensor; it is traceless, and it is conserved with the four-force density as source.
 
-An exercise built on parents tests them. The four-component energy–momentum is the case in point, and Problem 1 states it plainly: the real form $\tilde W = W + \frac{1}{c}\mathbf{S}$ and its claimed conservation law $\tilde\nabla\tilde W = -\tilde P$ do not reproduce the Poynting theorem, while the Hermitian form $\frac{1}{2}\tilde F\tilde F^\dagger$ that the parents state does. The failing form is displayed, the failure is demonstrated by computation on a free plane wave, and the construction is then redone in the form that works.
+An exercise built on parents tests them. The four-component energy–momentum is the case in point, and Problem 1 states it plainly: the real form $\tilde W = W + \frac{1}{c}\mathbf{S}$ and its claimed conservation law $\tilde\nabla\tilde W = -\tilde P$ do not reproduce the Poynting theorem, while the Hermitian form $\frac{1}{2}\tilde F\tilde F^{*}$ that the parents state does. The failing form is displayed, the failure is demonstrated by computation on a free plane wave, and the construction is then redone in the form that works.
 
 ## The Problem
 
-A symmetric rank-two tensor in four dimensions has ten independent components: the trace and nine traceless parts. A biquaternion has four complex coefficients, that is eight real dimensions. So **no single biquaternion can be $T^{\mu\nu}$**; a biquaternion-valued object can carry at most four of the six independent spatial-stress components. The parents supply exactly such an object — the four-component biquaternionic energy–momentum $\tilde W = \frac{1}{2}\tilde F\tilde F^\dagger$ — and the exercise tests both it and the real form $\tilde W = W + \frac{1}{c}\mathbf{S}$ with which it is easily confused. The problem is therefore not to write $T^{\mu\nu}$ as one biquaternion, which is impossible, but to write it as a **biquaternion bilinear**: a quadratic expression in $\tilde F$ that carries two vector directions, one for each index.
+A symmetric rank-two tensor in four dimensions has ten independent components: the trace and nine traceless parts. A biquaternion has four complex coefficients, that is eight real dimensions. So **no single biquaternion can be $T^{\mu\nu}$**; a biquaternion-valued object can carry at most four of the six independent spatial-stress components. The parents supply exactly such an object — the four-component biquaternionic energy–momentum $\tilde W = \frac{1}{2}\tilde F\tilde F^{*}$ — and the exercise tests both it and the real form $\tilde W = W + \frac{1}{c}\mathbf{S}$ with which it is easily confused. The problem is therefore not to write $T^{\mu\nu}$ as one biquaternion, which is impossible, but to write it as a **biquaternion bilinear**: a quadratic expression in $\tilde F$ that carries two vector directions, one for each index.
 
-The natural pair of directions is supplied by the basis $\mathcal{E}_\mu$ of $\mathbb{M}_-$. Inserting $\mathcal{E}_\mu$ and $\mathcal{E}_\nu$ into the Hermitian form $\tilde F(\,\cdot\,)\tilde F^\dagger$ and taking the scalar part produces exactly one component for each ordered pair $(\mu,\nu)$, and it produces them all from a single expression. The problems below verify that this construction is the standard energy–momentum tensor, component by component.
+The natural pair of directions is supplied by the basis $\mathcal{E}_\mu$ of $\mathbb{M}_-$. Inserting $\mathcal{E}_\mu$ and $\mathcal{E}_\nu$ into the Hermitian form $\tilde F(\,\cdot\,)\tilde F^{*}$ and taking the scalar part produces exactly one component for each ordered pair $(\mu,\nu)$, and it produces them all from a single expression. The problems below verify that this construction is the standard energy–momentum tensor, component by component.
 
 ## Problem 1: The Four-Component Object, and the Failure of the Real Form
 
-**Statement.** (a) Recompute the Hermitian form $\tilde F\tilde F^\dagger$ in terms of the energy density $W$ and the Poynting vector $\mathbf{S}$. (b) Compare it with the real form $\tilde W = W + \frac{1}{c}\mathbf{S}$ and locate the difference. (c) For the real form, compute the scalar part of $\tilde\nabla\tilde W$ for general fields and check whether the equation $\tilde\nabla\tilde W = -\tilde P$ expands to the Poynting theorem $\partial_t W + \mathrm{div}\,\mathbf{S} + \mathbf{J}\cdot\mathbf{E} = 0$. (d) Identify the four-component object whose scalar divergence does give the energy law.
+**Statement.** (a) Recompute the Hermitian form $\tilde F\tilde F^{*}$ in terms of the energy density $W$ and the Poynting vector $\mathbf{S}$. (b) Compare it with the real form $\tilde W = W + \frac{1}{c}\mathbf{S}$ and locate the difference. (c) For the real form, compute the scalar part of $\tilde\nabla\tilde W$ for general fields and check whether the equation $\tilde\nabla\tilde W = -\tilde P$ expands to the Poynting theorem $\partial_t W + \mathrm{div}\,\mathbf{S} + \mathbf{J}\cdot\mathbf{E} = 0$. (d) Identify the four-component object whose scalar divergence does give the energy law.
 
-**Solution (a).** With $\mathbf{F} = \tilde F = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ a pure vector, the quaternion conjugate is $\bar{\tilde F} = -\mathbf{F}$ and the Hermitian conjugate is
+**Solution (a).** With $\mathbf{F} = \tilde F = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ a pure vector, the quaternion conjugate is $\tilde F^{\natural} = -\mathbf{F}$ and the Hermitian conjugate is
 $$
-\tilde F^\dagger = \overline{\tilde F}^{\,*} = (-\mathbf{F})^* = -\mathbf{F}^* = i\sqrt{\epsilon}\,\mathbf{E} + \sqrt{\mu}\,\mathbf{H},
+\tilde F^{*} = \bar{\tilde F}^{\,*} = (-\mathbf{F})^* = -\mathbf{F}^* = i\sqrt{\epsilon}\,\mathbf{E} + \sqrt{\mu}\,\mathbf{H},
 $$
 using that $\mathbf{E}$ and $\mathbf{H}$ are real. For two pure vectors, $\mathbf{F}\mathbf{G} = -\mathbf{F}\cdot\mathbf{G} + \mathbf{F}\times\mathbf{G}$, so
 $$
-\tilde F\tilde F^\dagger = -\mathbf{F}\cdot\tilde F^\dagger + \mathbf{F}\times\tilde F^\dagger .
+\tilde F\tilde F^{*} = -\mathbf{F}\cdot\tilde F^{*} + \mathbf{F}\times\tilde F^{*} .
 $$
 The dot product is
 $$
-\mathbf{F}\cdot\tilde F^\dagger = (i\sqrt{\epsilon})^2\mathbf{E}^2 - (\sqrt{\mu})^2\mathbf{H}^2 + i\sqrt{\epsilon\mu}\left(\mathbf{E}\cdot\mathbf{H} - \mathbf{H}\cdot\mathbf{E}\right) = -\epsilon\,\mathbf{E}^2 - \mu\,\mathbf{H}^2 = -2W,
+\mathbf{F}\cdot\tilde F^{*} = (i\sqrt{\epsilon})^2\mathbf{E}^2 - (\sqrt{\mu})^2\mathbf{H}^2 + i\sqrt{\epsilon\mu}\left(\mathbf{E}\cdot\mathbf{H} - \mathbf{H}\cdot\mathbf{E}\right) = -\epsilon\,\mathbf{E}^2 - \mu\,\mathbf{H}^2 = -2W,
 $$
 and the cross product is
 $$
-\mathbf{F}\times\tilde F^\dagger = (i\sqrt{\epsilon}\mathbf{E} - \sqrt{\mu}\mathbf{H})\times(i\sqrt{\epsilon}\mathbf{E} + \sqrt{\mu}\mathbf{H}) = 2i\sqrt{\epsilon\mu}\,\mathbf{E}\times\mathbf{H} = \frac{2i}{c}\,\mathbf{S},
+\mathbf{F}\times\tilde F^{*} = (i\sqrt{\epsilon}\mathbf{E} - \sqrt{\mu}\mathbf{H})\times(i\sqrt{\epsilon}\mathbf{E} + \sqrt{\mu}\mathbf{H}) = 2i\sqrt{\epsilon\mu}\,\mathbf{E}\times\mathbf{H} = \frac{2i}{c}\,\mathbf{S},
 $$
 the $\mathbf{E}\times\mathbf{E}$ and $\mathbf{H}\times\mathbf{H}$ terms vanishing and the two mixed terms adding. Therefore
 $$
-\boxed{\;\tilde F\tilde F^\dagger = 2W\,e_0 + \frac{2i}{c}\,\mathbf{S}\;}
+\boxed{\;\tilde F\tilde F^{*} = 2W\,e_0 + \frac{2i}{c}\,\mathbf{S}\;}
 $$
 with
 $$
 W = \frac{1}{2}\left(\epsilon\,\mathbf{E}^2 + \mu\,\mathbf{H}^2\right), \qquad \mathbf{S} = \mathbf{E}\times\mathbf{H}.
 $$
-This is an element of $\mathbb{M}_+$: its scalar part $2W$ is real and its vector part $\frac{2i}{c}\mathbf{S}$ is purely imaginary. Its scalar part is twice the energy density, and its vector part carries the Poynting vector. This agrees with the parent article *The Field-Strength Biquaternion and Its Invariants*, whose contrast between the biquaternion norm and the Hermitian form gives $\tilde F\tilde F^\dagger = 2We_0 + \frac{2i}{c}\mathbf{S}$ and $\tilde F^\dagger\tilde F = 2We_0 - \frac{2i}{c}\mathbf{S}$.
+This is an element of $\mathbb{M}_+$: its scalar part $2W$ is real and its vector part $\frac{2i}{c}\mathbf{S}$ is purely imaginary. Its scalar part is twice the energy density, and its vector part carries the Poynting vector. This agrees with the parent article *The Field-Strength Biquaternion and Its Invariants*, whose contrast between the biquaternion norm and the Hermitian form gives $\tilde F\tilde F^{*} = 2We_0 + \frac{2i}{c}\mathbf{S}$ and $\tilde F^{*}\tilde F = 2We_0 - \frac{2i}{c}\mathbf{S}$.
 
 **Solution (b).** The parents state the biquaternionic energy–momentum in the Hermitian form of part (a). The form it is easily miswritten in is the real form
 $$
@@ -58,7 +58,7 @@ $$
 $$
 with a **real** scalar part and a **real** vector part — an element of the quaternion subspace $\mathbb{H}_\mathbb{B}$. The comparison with part (a) shows that the two differ by a factor of $i$ on the Poynting part:
 $$
-\frac{1}{2}\tilde F\tilde F^\dagger = W + \frac{i}{c}\,\mathbf{S} \;\in\;\mathbb{M}_+, \qquad \tilde W = W + \frac{1}{c}\,\mathbf{S} \;\in\;\mathbb{H}_\mathbb{B}.
+\frac{1}{2}\tilde F\tilde F^{*} = W + \frac{i}{c}\,\mathbf{S} \;\in\;\mathbb{M}_+, \qquad \tilde W = W + \frac{1}{c}\,\mathbf{S} \;\in\;\mathbb{H}_\mathbb{B}.
 $$
 Only one of them can be the object whose biquaternionic gradient is the power–force density. The rest of this problem tests which.
 
@@ -88,19 +88,19 @@ using $\partial_zS_z = c\,\partial_zW = -\partial_tW$. This is nonzero whenever 
 
 **Solution (d).** The object whose scalar divergence does give the energy law is the Hermitian form itself, halved:
 $$
-\tilde W_{\mathrm{corr}} = \frac{1}{2}\tilde F\tilde F^\dagger = W\,e_0 + \frac{i}{c}\,\mathbf{S} \;\in\;\mathbb{M}_+ .
+\tilde W_{\mathrm{corr}} = \frac{1}{2}\tilde F\tilde F^{*} = W\,e_0 + \frac{i}{c}\,\mathbf{S} \;\in\;\mathbb{M}_+ .
 $$
 For it,
 $$
 \mathrm{Sc}\!\left(\tilde\nabla\tilde W_{\mathrm{corr}}\right) = -\frac{i}{c}\partial_tW - \frac{i}{c}\,\mathrm{div}\,\mathbf{S} = -\frac{i}{c}\left(\partial_tW + \mathrm{div}\,\mathbf{S}\right) = \frac{i}{c}\,\mathbf{J}\cdot\mathbf{E},
 $$
-using the Poynting theorem for the last equality. The factor $i$ is now uniform, as it must be in the $ict$ convention for a temporal component, and the real statement $\partial_tW + \mathrm{div}\,\mathbf{S} + \mathbf{J}\cdot\mathbf{E} = 0$ is recovered. So the four-component object whose scalar divergence gives the energy law is the Hermitian form $\tilde W_{\mathrm{corr}} = \frac{1}{2}\tilde F\tilde F^\dagger$, which is the object the parents state, and the real form differs from it by $\mathbf{S}\to i\mathbf{S}$. Even so, $\tilde W_{\mathrm{corr}}$ has only four components and therefore carries only the energy density and the energy flux; the stress is not in it. That is the subject of the next problem.
+using the Poynting theorem for the last equality. The factor $i$ is now uniform, as it must be in the $ict$ convention for a temporal component, and the real statement $\partial_tW + \mathrm{div}\,\mathbf{S} + \mathbf{J}\cdot\mathbf{E} = 0$ is recovered. So the four-component object whose scalar divergence gives the energy law is the Hermitian form $\tilde W_{\mathrm{corr}} = \frac{1}{2}\tilde F\tilde F^{*}$, which is the object the parents state, and the real form differs from it by $\mathbf{S}\to i\mathbf{S}$. Even so, $\tilde W_{\mathrm{corr}}$ has only four components and therefore carries only the energy density and the energy flux; the stress is not in it. That is the subject of the next problem.
 
 ## Problem 2: The Tensor as a Biquaternion Bilinear
 
 **Statement.** With $\mathcal{E}_\mu \in \{ie_0, e_1, e_2, e_3\}$ the basis of $\mathbb{M}_-$ and $\tilde{Q} = Q^\mu\mathcal{E}_\mu$ a four-vector, so that the $Q^\mu$ are its physical components, define
 $$
-T^\mu{}_\nu = \frac{1}{2}\,\mathrm{Sc}\!\left(\tilde F\,\mathcal{E}_\mu\,\tilde F^\dagger\,\mathcal{E}_\nu\right) = \frac{1}{4}\,\mathrm{Tr}\!\left(\tilde F\,\mathcal{E}_\mu\,\tilde F^\dagger\,\mathcal{E}_\nu\right).
+T^\mu{}_\nu = \frac{1}{2}\,\mathrm{Sc}\!\left(\tilde F\,\mathcal{E}_\mu\,\tilde F^{*}\,\mathcal{E}_\nu\right) = \frac{1}{4}\,\mathrm{Tr}\!\left(\tilde F\,\mathcal{E}_\mu\,\tilde F^{*}\,\mathcal{E}_\nu\right).
 $$
 Show that $T^0{}_0 = -W$, $T^0{}_j = \frac{1}{c}S_j$, $T^j{}_0 = -\frac{1}{c}S_j$, and $T^j{}_k = -\sigma_{jk}$, where
 $$
@@ -110,22 +110,22 @@ is the Maxwell stress tensor. Then show that $T^{\mu\nu} = \eta^{\nu\alpha}T^\mu
 
 **Solution.** Two identities are needed. The first is the Hermitian form of Problem 1,
 $$
-\tilde F\tilde F^\dagger = 2W\,e_0 + \frac{2i}{c}\,\mathbf{S}.
+\tilde F\tilde F^{*} = 2W\,e_0 + \frac{2i}{c}\,\mathbf{S}.
 $$
-The second is the same bilinear with one basis element inserted between the field and its conjugate. Because $\mathbf{F}\mathbf{G} = -\mathbf{F}\cdot\mathbf{G} + \mathbf{F}\times\mathbf{G}$ for pure vectors, and because $e_j\tilde F^\dagger = -F^\dagger_j + \mathbf{e}_j\times\tilde F^\dagger$ with $F^\dagger_j = i\sqrt{\epsilon}E_j + \sqrt{\mu}H_j$, one has
+The second is the same bilinear with one basis element inserted between the field and its conjugate. Because $\mathbf{F}\mathbf{G} = -\mathbf{F}\cdot\mathbf{G} + \mathbf{F}\times\mathbf{G}$ for pure vectors, and because $e_j\tilde F^{*} = -F^{*}_j + \mathbf{e}_j\times\tilde F^{*}$ with $F^{*}_j = i\sqrt{\epsilon}E_j + \sqrt{\mu}H_j$, one has
 $$
-\tilde F e_j\tilde F^\dagger = -F^\dagger_j\,\mathbf{F} + \mathbf{F}\left(\mathbf{e}_j\times\tilde F^\dagger\right)
-= \underbrace{-\mathbf{F}\cdot\left(\mathbf{e}_j\times\tilde F^\dagger\right)}_{\text{scalar}} \;+\; \underbrace{\left[-F^\dagger_j\mathbf{F} + \mathbf{F}\times\left(\mathbf{e}_j\times\tilde F^\dagger\right)\right]}_{\text{vector}} .
+\tilde F e_j\tilde F^{*} = -F^{*}_j\,\mathbf{F} + \mathbf{F}\left(\mathbf{e}_j\times\tilde F^{*}\right)
+= \underbrace{-\mathbf{F}\cdot\left(\mathbf{e}_j\times\tilde F^{*}\right)}_{\text{scalar}} \;+\; \underbrace{\left[-F^{*}_j\mathbf{F} + \mathbf{F}\times\left(\mathbf{e}_j\times\tilde F^{*}\right)\right]}_{\text{vector}} .
 $$
-For the scalar part, $\mathbf{F}\cdot(\mathbf{e}_j\times\tilde F^\dagger) = \epsilon_{jmn}F_nF^\dagger_m = -\epsilon_{jmn}F_nF^*_m$. Writing $\epsilon_{jmn}F_nF^*_m = i\,\epsilon_{jmn}\mathrm{Im}(F_nF^*_m)$ (the symmetric part is annihilated by $\epsilon_{jmn}$), and using $\mathrm{Im}(F_nF^*_m) = \sqrt{\epsilon\mu}\,(H_nE_m - E_nH_m) = -\sqrt{\epsilon\mu}\,\epsilon_{nmk}S_k$ together with $\epsilon_{jmn}\epsilon_{nmk} = -2\delta_{jk}$, the scalar part is $+\frac{2i}{c}S_j$. For the vector part, use the identity $\mathbf{F}\times(\mathbf{e}_j\times\tilde F^\dagger) = \mathbf{e}_j(\mathbf{F}\cdot\tilde F^\dagger) - \tilde F^\dagger(\mathbf{F}\cdot\mathbf{e}_j) = -2W\mathbf{e}_j - F_j\tilde F^\dagger$, so its $e_m$ component is
+For the scalar part, $\mathbf{F}\cdot(\mathbf{e}_j\times\tilde F^{*}) = \epsilon_{jmn}F_nF^\dagger_m = -\epsilon_{jmn}F_nF^*_m$. Writing $\epsilon_{jmn}F_nF^*_m = i\,\epsilon_{jmn}\mathrm{Im}(F_nF^*_m)$ (the symmetric part is annihilated by $\epsilon_{jmn}$), and using $\mathrm{Im}(F_nF^*_m) = \sqrt{\epsilon\mu}\,(H_nE_m - E_nH_m) = -\sqrt{\epsilon\mu}\,\epsilon_{nmk}S_k$ together with $\epsilon_{jmn}\epsilon_{nmk} = -2\delta_{jk}$, the scalar part is $+\frac{2i}{c}S_j$. For the vector part, use the identity $\mathbf{F}\times(\mathbf{e}_j\times\tilde F^{*}) = \mathbf{e}_j(\mathbf{F}\cdot\tilde F^{*}) - \tilde F^{*}(\mathbf{F}\cdot\mathbf{e}_j) = -2W\mathbf{e}_j - F_j\tilde F^{*}$, so its $e_m$ component is
 $$
--F^\dagger_jF_m - 2W\delta_{jm} - F_jF^\dagger_m = 2\,\mathrm{Re}\!\left(F_jF^*_m\right) - 2W\delta_{jm} = 2\left(\epsilon E_jE_m + \mu H_jH_m - W\delta_{jm}\right) = 2\sigma_{jm},
+-F^{*}_jF_m - 2W\delta_{jm} - F_jF^\dagger_m = 2\,\mathrm{Re}\!\left(F_jF^*_m\right) - 2W\delta_{jm} = 2\left(\epsilon E_jE_m + \mu H_jH_m - W\delta_{jm}\right) = 2\sigma_{jm},
 $$
-using $F^\dagger = -F^*$ and $\mathrm{Re}(F_jF^*_m) = \epsilon E_jE_m + \mu H_jH_m$. Hence
+using $F^{*} = -F^*$ and $\mathrm{Re}(F_jF^*_m) = \epsilon E_jE_m + \mu H_jH_m$. Hence
 $$
-\boxed{\;\tilde F e_j\tilde F^\dagger = \frac{2i}{c}S_j\,e_0 + 2\sigma_{jm}\,e_m .\;}
+\boxed{\;\tilde F e_j\tilde F^{*} = \frac{2i}{c}S_j\,e_0 + 2\sigma_{jm}\,e_m .\;}
 $$
-Now multiply by $\mathcal{E}_\nu$ on the right and take the scalar part. For $\mu = 0$, use $\mathcal{E}_0 = ie_0$ and $\tilde F\mathcal{E}_0\tilde F^\dagger = i\tilde F\tilde F^\dagger = 2iWe_0 - \frac{2}{c}\mathbf{S}$:
+Now multiply by $\mathcal{E}_\nu$ on the right and take the scalar part. For $\mu = 0$, use $\mathcal{E}_0 = ie_0$ and $\tilde F\mathcal{E}_0\tilde F^{*} = i\tilde F\tilde F^{*} = 2iWe_0 - \frac{2}{c}\mathbf{S}$:
 $$
 T^0{}_0 = \frac{1}{2}\mathrm{Sc}\!\left(2iWe_0\,ie_0\right) = \frac{1}{2}\left(2i^2W\right) = -W,
 $$
@@ -149,7 +149,7 @@ T^{00} = W, \qquad T^{0j} = T^{j0} = \frac{1}{c}S_j, \qquad T^{jk} = -\sigma_{jk
 $$
 because $T^{0j} = \eta^{jj}T^0{}_j = \frac{1}{c}S_j$ and $T^{j0} = \eta^{00}T^j{}_0 = (-1)(-\frac{1}{c}S_j) = \frac{1}{c}S_j$, and $T^{jk} = \eta^{kk}T^j{}_k = -\sigma_{jk}$ is symmetric because $\sigma$ is. This is the standard electromagnetic energy–momentum tensor in the medium: $W$ is the energy density, $\frac{1}{c}\mathbf{S}$ the energy flux and the momentum density times $c$, and $-\sigma_{jk}$ the momentum flux.
 
-**Remark on what the construction is.** The insertion of $\mathcal{E}_\mu$ and $\mathcal{E}_\nu$ is what turns a single biquaternion into a rank-two object: each basis element supplies one vector direction, and the scalar part reads off the component. The two indices are treated differently by the algebra — the first through the Hermitian form $\tilde F(\,\cdot\,)\tilde F^\dagger$, the second through right multiplication and scalar projection — which is why the natural object is $T^\mu{}_\nu$ (mixed) and not the doubly-covariant tensor. The parents' four-component $\tilde W = \frac{1}{2}\tilde F\tilde F^\dagger$ is the time row of $T$, up to the factor $i$ carried by $\mathcal{E}_0 = ie_0$: $T^0{}_\nu = \frac{i}{2}\mathrm{Sc}(\tilde F\tilde F^\dagger\mathcal{E}_\nu) = i\,\mathrm{Sc}(\tilde W\mathcal{E}_\nu)$. The full tensor needs all sixteen entries; twelve of them — the six independent stress components and their partners — are simply absent from any four-component object.
+**Remark on what the construction is.** The insertion of $\mathcal{E}_\mu$ and $\mathcal{E}_\nu$ is what turns a single biquaternion into a rank-two object: each basis element supplies one vector direction, and the scalar part reads off the component. The two indices are treated differently by the algebra — the first through the Hermitian form $\tilde F(\,\cdot\,)\tilde F^{*}$, the second through right multiplication and scalar projection — which is why the natural object is $T^\mu{}_\nu$ (mixed) and not the doubly-covariant tensor. The parents' four-component $\tilde W = \frac{1}{2}\tilde F\tilde F^{*}$ is the time row of $T$, up to the factor $i$ carried by $\mathcal{E}_0 = ie_0$: $T^0{}_\nu = \frac{i}{2}\mathrm{Sc}(\tilde F\tilde F^{*}\mathcal{E}_\nu) = i\,\mathrm{Sc}(\tilde W\mathcal{E}_\nu)$. The full tensor needs all sixteen entries; twelve of them — the six independent stress components and their partners — are simply absent from any four-component object.
 
 ## Problem 3: Tracelessness
 
@@ -199,7 +199,7 @@ $$
 $$
 gives $\partial_\mu T^{\mu k} = -f_k$. The four component statements combine into $\partial_\mu T^{\mu\nu} = -f^\nu$.
 
-Both component equations were checked by direct symbolic recomputation from the definition $T^\mu{}_\nu = \frac{1}{2}\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^\dagger\mathcal{E}_\nu)$ together with Maxwell's equations. The energy component was checked against the Poynting identity above and, independently, by substituting the time derivatives from the Ampère–Maxwell and Faraday laws into $\partial_\mu T^{\mu\nu}$ and simplifying; the three momentum components were checked in the same way, giving exactly $-\left(\rho\mathbf{E} + \mathbf{J}\times\mathbf{B}\right)_k$. The plane wave of Problem 1 is a special case: it has $\mathbf{J} = 0$ and its divergence vanishes, as Problem 5 confirms directly.
+Both component equations were checked by direct symbolic recomputation from the definition $T^\mu{}_\nu = \frac{1}{2}\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$ together with Maxwell's equations. The energy component was checked against the Poynting identity above and, independently, by substituting the time derivatives from the Ampère–Maxwell and Faraday laws into $\partial_\mu T^{\mu\nu}$ and simplifying; the three momentum components were checked in the same way, giving exactly $-\left(\rho\mathbf{E} + \mathbf{J}\times\mathbf{B}\right)_k$. The plane wave of Problem 1 is a special case: it has $\mathbf{J} = 0$ and its divergence vanishes, as Problem 5 confirms directly.
 
 **Source-free field.** When $\rho = 0$ and $\mathbf{J} = 0$, the divergence vanishes, $\partial_\mu T^{\mu\nu} = 0$: energy and momentum are conserved. This is the standard statement, now with the tensor built from $\tilde F$ rather than quoted from the tensor calculus.
 
@@ -284,7 +284,7 @@ the **general force equation**, which under continuity conditions on the four-cu
 
 The electromagnetic energy–momentum tensor is constructed from the field-strength biquaternion as the bilinear
 $$
-T^\mu{}_\nu = \frac{1}{2}\,\mathrm{Sc}\!\left(\tilde F\,\mathcal{E}_\mu\,\tilde F^\dagger\,\mathcal{E}_\nu\right),
+T^\mu{}_\nu = \frac{1}{2}\,\mathrm{Sc}\!\left(\tilde F\,\mathcal{E}_\mu\,\tilde F^{*}\,\mathcal{E}_\nu\right),
 $$
 with $\mathcal{E}_\mu \in \{ie_0,e_1,e_2,e_3\}$ the basis of the material subspace $\mathbb{M}_-$. Its mixed components are
 $$
@@ -294,7 +294,7 @@ with $W = \frac{1}{2}(\epsilon\mathbf{E}^2 + \mu\mathbf{H}^2)$ the energy densit
 
 The tensor is traceless, $T^\mu{}_\mu = -W - \sigma_{kk} = 0$, and it is conserved: $\partial_\mu T^{\mu0} = -\frac{1}{c}\mathbf{E}\cdot\mathbf{J}$ and $\partial_\mu T^{\mu k} = -(\rho\mathbf{E} + \mathbf{J}\times\mathbf{B})_k$, equivalently $\partial_\mu T^{\mu\nu} = -f^\nu$ with the four-force density. For a source-free field the divergence vanishes; for the free plane wave the tensor has rank one, $T^{\mu\nu}\propto k^\mu k^\nu$.
 
-The exercise also settles the form of the four-component *biquaternionic energy–momentum*. The real form $\tilde W = W + \frac{1}{c}\mathbf{S}$ and its claimed conservation law $\tilde\nabla\tilde W = -\tilde P$ do not survive recomputation: the time-derivative term acquires a factor $i$ from $\partial_{ict}$ that the divergence term does not carry, and the equation fails already on a free plane wave, where it gives $\frac{1-i}{c}\partial_tW$ instead of zero. The consistent four-component object is the Hermitian form the parents state, $\frac{1}{2}\tilde F\tilde F^\dagger = W + \frac{i}{c}\mathbf{S} \in \mathbb{M}_+$, whose scalar divergence gives the energy law; but no four-component object can carry the spatial stress, which is the rank-two tensor built above.
+The exercise also settles the form of the four-component *biquaternionic energy–momentum*. The real form $\tilde W = W + \frac{1}{c}\mathbf{S}$ and its claimed conservation law $\tilde\nabla\tilde W = -\tilde P$ do not survive recomputation: the time-derivative term acquires a factor $i$ from $\partial_{ict}$ that the divergence term does not carry, and the equation fails already on a free plane wave, where it gives $\frac{1-i}{c}\partial_tW$ instead of zero. The consistent four-component object is the Hermitian form the parents state, $\frac{1}{2}\tilde F\tilde F^{*} = W + \frac{i}{c}\mathbf{S} \in \mathbb{M}_+$, whose scalar divergence gives the energy law; but no four-component object can carry the spatial stress, which is the rank-two tensor built above.
 
 ## Summary of Notation
 
@@ -306,19 +306,19 @@ The exercise also settles the form of the four-component *biquaternionic energy�
 | $\mathbb{M}_-, \mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\mathcal{E}_\mu \in \{ie_0, e_1, e_2, e_3\}$ | Basis of $\mathbb{M}_-$ |
-| $\tilde\nabla$, $\bar{\tilde\nabla}$, $\Box = \tilde\nabla\bar{\tilde\nabla}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
+| $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box = \tilde\nabla\tilde\nabla^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
 | $\tilde F = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ | Field-strength biquaternion (pure vector) |
 | $\mathbf{E}, \mathbf{H}, \mathbf{B} = \mu\mathbf{H}$ | Electric field, magnetic field, magnetic induction |
 | $\epsilon, \mu$, $c = 1/\sqrt{\epsilon\mu}$ | Permittivity, permeability, speed of light in the medium |
 | $W = \frac{1}{2}(\epsilon\mathbf{E}^2 + \mu\mathbf{H}^2)$ | Electromagnetic energy density |
 | $\mathbf{S} = \mathbf{E}\times\mathbf{H}$ | Poynting vector (energy flux) |
 | $\sigma_{jk} = \epsilon E_jE_k + \mu H_jH_k - W\delta_{jk}$ | Maxwell stress tensor |
-| $\tilde F\tilde F^\dagger = 2We_0 + \frac{2i}{c}\mathbf{S}$ | Hermitian form (energy–momentum four-vector) |
-| $T^\mu{}_\nu = \frac{1}{2}\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^\dagger\mathcal{E}_\nu)$ | Electromagnetic energy–momentum tensor (mixed) |
+| $\tilde F\tilde F^{*} = 2We_0 + \frac{2i}{c}\mathbf{S}$ | Hermitian form (energy–momentum four-vector) |
+| $T^\mu{}_\nu = \frac{1}{2}\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$ | Electromagnetic energy–momentum tensor (mixed) |
 | $T^{\mu\nu} = \eta^{\nu\alpha}T^\mu{}_\alpha$ | Symmetric energy–momentum tensor |
 | $\eta = \mathrm{diag}(-1,1,1,1)$ | Minkowski metric |
 | $f^\nu = (\frac{1}{c}\mathbf{E}\cdot\mathbf{J},\,\rho\mathbf{E}+\mathbf{J}\times\mathbf{B})$ | Four-force density (source) |
-| $N(\tilde F) = \tilde F\bar{\tilde F}$ | Biquaternion norm (vanishes for a null field) |
+| $N(\tilde F) = \tilde F\tilde F^{\natural}$ | Biquaternion norm (vanishes for a null field) |
 | $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula |
 
 ## Further Reading

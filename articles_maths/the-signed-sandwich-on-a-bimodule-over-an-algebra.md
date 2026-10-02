@@ -1,0 +1,222 @@
+
+# __The Signed Sandwich on a Bimodule over an Algebra__
+
+## Introduction
+
+A two-sided operator on a module dresses one element between a left and a right factor: for $a, b \in A$ the **unsigned sandwich** is $S_{a,b}(x)=a x b$. When the algebra and the module carry a **grade involution** $\alpha$ — an order-two automorphism that preserves the products — the sandwich can be twisted in the middle, and the **signed sandwich** is $S^{\alpha}_{a,b}(x)=a\,\alpha(x)\,b$. The twist is a single substitution of $\alpha(x)$ for $x$, and it is the operator form of the parity sign the graded structures carry: an element of odd degree changes sign under $\alpha$, and the sandwich records that sign in the middle factor.
+
+The article defines the two sandwiches, computes how each is built from the one-sided multiplications of *Left and Right Multiplication of a Module*, proves the exact relation between them, $S^{\alpha}_{a,b}=S_{a,b}\circ\alpha$, and works out the composition rule. The rule is the graded one: a product of two signed sandwiches is unsigned, and the whole family of sandwiches is $\mathbb{Z}/2$-graded by the parity of the twist. The article then specialises to the **reflections**, the signed sandwiches $r_u=S^{\alpha}_{u,u^{-1}}$ by a unit, and determines when such an operator is an involution.
+
+The article assumes the module theory of *Modules over an Algebra* and the operator layer of *Left and Right Multiplication of a Module* and *Module Endomorphisms*. The reflected operators are developed further in *Reflections as Signed Two-Sided Operators on a Bimodule over an Algebra*, and the involution of the elements $\sigma$, the dagger built from it and the adjoint belong to the `* Theory` and `* Operator Theory` groups: none of them occurs here. The article stays inside Part I — no distance, norm, form, topology or limit — and the word *reflection* names an operator of order two, with no geometric reading. Throughout, $R$ is a commutative ring with $1 \neq 0$; $A$ is a unital associative $R$-algebra, not assumed commutative; $\alpha$ is a grade involution of $A$; ${}_A M_A$ is an $(A,A)$-bimodule carrying the compatible grade involution $\alpha$; and $L_a$, $R_b$ are the one-sided multiplications.
+
+## The Unsigned Sandwich
+
+### Definition
+
+**Definition.** For $a, b \in A$ the **unsigned sandwich** with parameters $a$ and $b$ is the additive map
+
+$$
+S_{a,b} : M \to M, \qquad S_{a,b}(x) = a\,x\,b .
+$$
+
+It is the composite $S_{a,b}=L_a\circ R_b=R_b\circ L_a$ of a left and a right multiplication by elements of $A$, and it is **quadratic** in its parameters: it is linear in neither $a$ nor $b$ alone when $A$ is noncommutative, since $S_{aa',b}(x)=a\bigl(a'xb\bigr)=S_{a,b}(a'x)$.
+
+**Proposition.** For all $a,b,c,d \in A$,
+
+$$
+S_{a,b}\circ S_{c,d} = S_{ac,\,db}, \qquad S_{a,b}(1)=ab \quad (\text{on } {}_A A_A).
+$$
+
+*Proof.* $S_{a,b}(S_{c,d}(x))=a(cxd)b=(ac)x(db)=S_{ac,db}(x)$; the value at the unit is the definition. $\square$
+
+### The operator monoid
+
+**Proposition.** The unsigned sandwiches form a submonoid of $\operatorname{End}_R(M)$ under composition, with identity $S_{1,1}=\mathrm{id}_M$; if $a$ and $b$ are units then $S_{a,b}$ is invertible with
+
+$$
+S_{a,b}^{-1}=S_{a^{-1}\!,\,b^{-1}} .
+$$
+
+*Proof.* The composition law is closure, and $S_{1,1}=\mathrm{id}_M$. If $a,b$ are units then $S_{a,b}S_{a^{-1},b^{-1}}=S_{1,1}=S_{a^{-1},b^{-1}}S_{a,b}$ by the law. $\square$
+
+The converse is not claimed: an element of $A$ that is not a unit may act invertibly on a small module, and then the sandwich it defines is invertible even though its parameter is not. For the regular bimodule $M={}_A A_A$ the converse is a statement about units of $A$ and is not needed here.
+
+The kernel of the operator is the additive subgroup $\ker S_{a,b}=\{x : axb=0\}$, and the operator vanishes exactly when $aMb=0$; in a noncommutative algebra the single product $ab$ does not control the operator, the reason being the same $2\times2$ example as in *Left and Right Multiplication in a Ring*.
+
+### The diagonal case
+
+**Proposition.** For a unit $u \in A^{\times}$ the diagonal sandwich is the inner conjugation
+
+$$
+S_{u,u^{-1}}(x)=uxu^{-1},
+$$
+
+and $S_{u,u^{-1}}S_{v,v^{-1}}=S_{uv,(uv)^{-1}}$, so the diagonal sandwiches reproduce the group $A^{\times}$ acting by conjugation.
+
+*Proof.* Immediate from the definitions and the composition law. $\square$
+
+## The Grade Involution
+
+### Definition on the algebra and on the module
+
+**Definition.** A **grade involution** of $A$ is an algebra automorphism $\alpha$ with $\alpha^{2}=\mathrm{id}$; it is **trivial** when $\alpha=\mathrm{id}$. A **graded bimodule** over $(A,\alpha)$ is an $(A,A)$-bimodule $M$ together with an additive map, again written $\alpha : M \to M$, such that
+
+$$
+\alpha^{2}=\mathrm{id}, \qquad \alpha(amb)=\alpha(a)\,\alpha(m)\,\alpha(b) \quad (a,b \in A,\ m \in M).
+$$
+
+When $2$ is invertible in $A$ and in the action on $M$ the pair splits,
+
+$$
+M=M_{\bar0}\oplus M_{\bar1}, \qquad M_{\bar0}=\{x : \alpha(x)=x\}, \qquad M_{\bar1}=\{x : \alpha(x)=-x\},
+$$
+
+the **even** and the **odd** parts, and $A_i M_j \subseteq M_{i+j}$; the bimodule is then **graded** in the sense of the $\mathbb{Z}/2$-grading. The grading is that of *Superalgebras and Graded Structures*, which owns it; only its order-two operator is used here.
+
+**Proposition.** The even part $M_{\bar0}$ is an $(A_{\bar0},A_{\bar0})$-bimodule and the odd part $M_{\bar1}$ is an $(A_{\bar0},A_{\bar0})$-bimodule with products into $M_{\bar0}$; the products satisfy $A_i M_j \subseteq M_{i+j}$.
+
+*Proof.* Read the compatibility $\alpha(amb)=\alpha(a)\alpha(m)\alpha(b)$: if $a,b$ are even and $m$ is even, $amb$ is even; if one factor is odd the sign flips accordingly. $\square$
+
+### Conjugation by the grade involution
+
+**Proposition.** For all $a,b \in A$,
+
+$$
+\alpha\,L_a\,\alpha^{-1}=L_{\alpha(a)}, \qquad \alpha\,R_b\,\alpha^{-1}=R_{\alpha(b)}, \qquad \alpha\,S_{a,b}\,\alpha^{-1}=S_{\alpha(a),\alpha(b)} .
+$$
+
+*Proof.* $\alpha(L_a(\alpha^{-1}(x)))=\alpha(a\,\alpha^{-1}(x))=\alpha(a)\,x=L_{\alpha(a)}(x)$ by the compatibility; the right case is the mirror, and the sandwich case is the two together. $\square$
+
+Thus the grade involution acts on the monoid of sandwiches by the simultaneous substitution $a\mapsto\alpha(a)$, $b\mapsto\alpha(b)$, and it fixes $S_{a,b}$ exactly when both parameters are even.
+
+## The Signed Sandwich
+
+### Definition and the relation to the unsigned one
+
+**Definition.** For $a,b \in A$ the **signed sandwich** is
+
+$$
+S^{\alpha}_{a,b} : M \to M, \qquad S^{\alpha}_{a,b}(x)=a\,\alpha(x)\,b .
+$$
+
+It is the composite $S^{\alpha}_{a,b}=L_a\circ R_b\circ\alpha=S_{a,b}\circ\alpha$ of the unsigned sandwich with the grade involution, and it is additive.
+
+**Theorem.** For all $a,b \in A$,
+
+$$
+S^{\alpha}_{a,b}=S_{a,b}\circ\alpha, \qquad\text{and}\qquad S^{\alpha}_{a,b}=\alpha\circ S_{\alpha^{-1}(a),\,\alpha^{-1}(b)} .
+$$
+
+In particular the signed and the unsigned sandwiches coincide exactly when $\alpha=\mathrm{id}$, and $S^{\alpha}_{a,b}(x)=S_{a,b}(\alpha(x))$ for every $x$.
+
+*Proof.* $S_{a,b}(\alpha(x))=a\alpha(x)b=S^{\alpha}_{a,b}(x)$, which is the first identity; for the second, $\alpha(S_{\alpha^{-1}(a),\alpha^{-1}(b)}(x))=\alpha(\alpha^{-1}(a)\,x\,\alpha^{-1}(b))=a\,\alpha(x)\,b$. $\square$
+
+The signed sandwich is linear in each parameter, $S^{\alpha}_{a+a',b}=S^{\alpha}_{a,b}+S^{\alpha}_{a',b}$, and it is the **middle** argument that carries the twist; the parameters do not.
+
+### The graded composition rule
+
+The compositions of signed and unsigned sandwiches follow the parity of the twist. This is the sign rule of the grading in operator form.
+
+**Theorem.** For all $a,b,c,d \in A$,
+
+$$
+S_{a,b}\circ S_{c,d}=S_{ac,\,db}, \qquad S^{\alpha}_{a,b}\circ S_{c,d}=S^{\alpha}_{a\alpha(c),\,\alpha(d)b},
+$$
+
+$$
+S_{a,b}\circ S^{\alpha}_{c,d}=S^{\alpha}_{ac,\,db}, \qquad S^{\alpha}_{a,b}\circ S^{\alpha}_{c,d}=S_{a\alpha(c),\,\alpha(d)b}.
+$$
+
+Thus the product of two sandwiches of the same parity is unsigned and the product of two of opposite parity is signed: the family $\{S_{a,b}\}\cup\{S^{\alpha}_{a,b}\}$ is a monoid graded by $\mathbb{Z}/2$, the unsigned sandwiches even and the signed ones odd.
+
+*Proof.* The first line is the unsigned law. For the second, $S^{\alpha}_{a,b}S_{c,d}=S_{a,b}\alpha S_{c,d}=S_{a,b}S_{\alpha(c),\alpha(d)}\alpha=S^{\alpha}_{a\alpha(c),\alpha(d)b}$, using the conjugation identity and $S_{a,b}S_{c',d'}=S_{ac',d'b}$. The third is $S_{a,b}S_{c,d}\alpha=S_{ac,db}\alpha=S^{\alpha}_{ac,db}$. The fourth is $S_{a,b}\alpha S_{c,d}\alpha=S_{a,b}S_{\alpha(c),\alpha(d)}=S_{a\alpha(c),\alpha(d)b}$, the two grade involutions cancelling. $\square$
+
+**Corollary.** If the parameters are units then the signed sandwich is invertible, and
+
+$$
+\bigl(S^{\alpha}_{a,b}\bigr)^{-1}=S^{\alpha}_{\alpha(a)^{-1}\!,\,\alpha(b)^{-1}} \qquad (a,b \in A^{\times}).
+$$
+
+*Proof.* $S^{\alpha}_{a,b}=S_{a,b}\alpha$ and $\alpha$ is invertible with $\alpha^{-1}=\alpha$; the inverse is $\alpha\,S_{a,b}^{-1}=\alpha\,S_{a^{-1},b^{-1}}=S^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}}$ by the conjugation identity. $\square$
+
+**Proposition (the diagonal case).** For a unit $u$,
+
+$$
+r_u=S^{\alpha}_{u,u^{-1}}, \qquad r_u(x)=u\,\alpha(x)\,u^{-1},
+$$
+
+the **signed inner conjugation** by $u$, and
+
+$$
+r_u^{2}=S_{u\alpha(u),\,(u\alpha(u))^{-1}}=\operatorname{conj}_{u\alpha(u)} .
+$$
+
+*Proof.* The first display is the definition. For the square, the fourth composition rule gives $r_u^{2}=S^{\alpha}_{u\alpha(u),\,\alpha(u^{-1})u^{-1}}$; here $\alpha(u^{-1})=\alpha(u)^{-1}$, so the second parameter is $\alpha(u)^{-1}u^{-1}=(u\alpha(u))^{-1}$, and the composite is the unsigned diagonal sandwich $S_{w,w^{-1}}$ with $w=u\alpha(u)$, that is, the inner conjugation by $w$. $\square$
+
+The square lands in the unsigned sandwiches even though the reflection is signed, which is the parity rule in its simplest instance.
+
+## Reflections Realised by the Signed Sandwich
+
+### Definition and the involutive case
+
+**Definition.** A **reflection** of the graded bimodule $(M,\alpha)$ is a signed two-sided operator $r_u=S^{\alpha}_{u,u^{-1}}$ by a unit $u$; it is a genuine reflection, that is, an operator of order two, exactly when $r_u^{2}=\mathrm{id}_M$.
+
+**Definition.** The **centralizer of the bimodule** is
+
+$$
+C_A(M)=\{w \in A : wx=xw \text{ for all } x \in M\},
+$$
+
+the elements that act the same way from either side; it is a subalgebra of $A$ containing $Z(A)$, and it equals $Z(A)$ when $M$ is faithful.
+
+**Theorem.** Let $u \in A^{\times}$ and put $w=u\alpha(u)$. The signed inner conjugation $r_u$ is a reflection if and only if $w \in C_A(M)$, and then it is the inner automorphism $\operatorname{conj}_w$ of order two,
+
+$$
+r_u^{2}=\mathrm{id}_M \iff u\,\alpha(u) \in C_A(M).
+$$
+
+*Proof.* By the proposition above, $r_u^{2}=\operatorname{conj}_w$, and an inner conjugation is the identity exactly when the conjugating element acts centrally on the module, which is the definition of $C_A(M)$; when $w \in C_A(M)$ the map is the identity. Conversely $r_u^{2}=\mathrm{id}$ says $wx=xw$ for all $x$, so $w \in C_A(M)$. $\square$
+
+**Corollary.** If $u$ is fixed by $\alpha$ then $w=u^{2}$; if $u$ is negated by $\alpha$ and $2$ is invertible then $w=-u^{2}$; in either case $w$ is central as soon as $u^{2}$ is, and then $r_u$ is a reflection.
+
+*Proof.* Substitute $\alpha(u)=\pm u$. If $\alpha(u)=u$ then $u\alpha(u)=u^{2}$; if $\alpha(u)=-u$ then $u\alpha(u)=-u^{2}$. A unit and its negative are central together. $\square$
+
+### Examples
+
+**(a) The trivial grade involution.** If $\alpha=\mathrm{id}$ then $S^{\alpha}_{a,b}=S_{a,b}$, every sandwich is even, the composition rule is the unsigned one, and $r_u=\operatorname{conj}_u$ with $r_u^{2}=\operatorname{conj}_{u^{2}}$: the criterion becomes $u^{2} \in C_A(M)$.
+
+**(b) The matrix algebra with an even/odd grading.** Let $A=M_2(k)$ and $\alpha(X)=JXJ^{-1}$ with $J=\operatorname{diag}(1,-1)$, so $\alpha^{2}=\mathrm{id}$, and let $M=A$ with $\alpha$ acting entrywise; the even part is the diagonal matrices and the odd part the off-diagonal ones. For $u=E_{12}+E_{21}$ one has $\alpha(u)=-u$ and $u^{2}=I$, so $u\alpha(u)=-I \in Z(A)$ and $r_u$ is a reflection; explicitly $r_u(x)=u\alpha(x)u^{-1}$ and $r_u^{2}(x)=(-I)x(-I)^{-1}=x$.
+
+**(c) The degenerate case.** Let $A=M_2(k)$, $\alpha=\mathrm{id}$ and $u=E_{12}+I$. Then $u^{2}=I+2E_{12}$ is not central, so $r_u=\operatorname{conj}_u$ has $r_u^{2}=\operatorname{conj}_{u^{2}}\neq\mathrm{id}$: the operator is an automorphism of infinite order, not a reflection. The failure is exactly the non-centrality of $u\alpha(u)$.
+
+**(d) A trivial action on the module.** If the grade involution fixes every element of $M$, then $S^{\alpha}_{a,b}=S_{a,b}$ for all $a,b$, whatever $\alpha$ does on $A$: the grading is invisible to the operators, and the criterion reduces to the unsigned one, $u^{2} \in C_A(M)$.
+
+## Summary
+
+Let $A$ be an $R$-algebra with a grade involution $\alpha$ and ${}_A M_A$ a bimodule carrying the compatible action of $\alpha$. The **unsigned sandwich** is $S_{a,b}(x)=axb=L_aR_b$, with $S_{a,b}S_{c,d}=S_{ac,db}$ and inverses $S_{a^{-1},b^{-1}}$ on the units, and the **signed sandwich** is $S^{\alpha}_{a,b}(x)=a\alpha(x)b=S_{a,b}\alpha$. The grade involution conjugates one-sided multiplications and sandwiches as $\alpha S_{a,b}\alpha^{-1}=S_{\alpha(a),\alpha(b)}$. The composition rule is graded: $S_{a,b}S_{c,d}=S_{ac,db}$ and $S^{\alpha}_{a,b}S^{\alpha}_{c,d}=S_{a\alpha(c),\alpha(d)b}$ are unsigned, while $S^{\alpha}_{a,b}S_{c,d}=S^{\alpha}_{a\alpha(c),\alpha(d)b}$ and $S_{a,b}S^{\alpha}_{c,d}=S^{\alpha}_{ac,db}$ are signed. The diagonal signed sandwich $r_u=S^{\alpha}_{u,u^{-1}}$ is the signed inner conjugation $x\mapsto u\alpha(x)u^{-1}$, and its square is the inner conjugation by $u\alpha(u)$; it is a reflection exactly when $u\alpha(u)$ lies in the centralizer $C_A(M)$ of the bimodule, which is $Z(A)$ for a faithful module. The case $\alpha=\mathrm{id}$ reduces everything to the unsigned theory, and the failure in the degenerate case is the non-centrality of $u\alpha(u)$. No involution of the elements, no dagger and no adjoint occurs; those belong to the `* Theory` and `* Operator Theory` groups of the category.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $A$ | unital associative $R$-algebra, not assumed commutative |
+| ${}_A M_A$ | $(A,A)$-bimodule |
+| $\alpha$ | grade involution, an automorphism of $A$ and of $M$ with $\alpha^{2}=\mathrm{id}$ |
+| $M_{\bar0}, M_{\bar1}$ | even and odd parts of the graded bimodule |
+| $S_{a,b}(x)=axb$ | unsigned sandwich, the two-sided operator $L_aR_b$ |
+| $S^{\alpha}_{a,b}(x)=a\alpha(x)b$ | signed sandwich |
+| $S^{\alpha}_{a,b}=S_{a,b}\circ\alpha$ | the signed sandwich is the unsigned one at $\alpha$ |
+| $S_{a,b}S_{c,d}=S_{ac,db}$ | composition of unsigned sandwiches |
+| $S^{\alpha}_{a,b}S^{\alpha}_{c,d}=S_{a\alpha(c),\alpha(d)b}$ | composition of two signed sandwiches is unsigned |
+| $r_u=S^{\alpha}_{u,u^{-1}}$ | reflection, the signed inner conjugation by a unit |
+| $r_u^{2}=\operatorname{conj}_{u\alpha(u)}$ | a reflection is an involution iff $u\alpha(u) \in C_A(M)$ |
+| $C_A(M)$ | centralizer of the bimodule, $\{w : wx=xw \text{ for all } x\}$ |
+| $L_a$, $R_b$ | left and right multiplications of the module |
+
+## Further Reading
+
+- Nicolas Bourbaki, *Algebra I*, Chapters 1–3 (Springer, 1998), for derivations, automorphisms of order two and the grading an order-two automorphism defines.
+- Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, American Mathematical Society Colloquium Publications 44 (1998), for involutions and the two-sided operators built from them.
+- Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the sandwich action and the reflections it realises.
+- Pertti Lounesto, *Clifford Algebras and Spinors*, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, second edition, 2001), for the graded structure of a Clifford algebra and the parity sign its involutions carry.
+- T. Y. Lam, *Lectures on Modules and Rings* (Springer, 1999), for bimodules, inner conjugations and centralizers of a module.

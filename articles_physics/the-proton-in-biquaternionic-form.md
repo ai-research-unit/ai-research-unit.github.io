@@ -18,7 +18,7 @@ The consequence for the proton is stated at the outset, because the article depe
 
 This is a deliberately modest accounting, and it is the honest one. The sharpest test the proton offers is its charge: the framework's charge operator must give $+1$ for the proton where the corresponding operator gives $0$ for the neutron. The operator carries both values, and that is a genuine, checkable statement about its spectrum; but the *selection* of $+1$ and $0$ is not a framework result. The negative half of that sentence is the more useful one, and it is stated plainly rather than smoothed over with a derivation the algebra does not supply.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_1e_2=e_3$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ is the complex scalar subspace, which is the center of the algebra. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, its quaternion conjugate is $\bar{\tilde{\nabla}}=e_0\partial_{ict}-e_1\partial_x-e_2\partial_y-e_3\partial_z$, and $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\bar{\tilde{\nabla}}\tilde{\nabla}$. The abelian potential and field strength are $\tilde{A}=i\phi/c\,e_0+\mathbf{A}$ and $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. The matrix realization is $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ with $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$; the spinor module is $S=\mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, carrying the left-handed Weyl representation $(\tfrac12,0)$, and $\bar{S}=(0,\tfrac12)$ is its conjugate; the Dirac module is $\Delta=S\oplus\bar{S}$, $\dim_\mathbb{C}\Delta=4$.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_1e_2=e_3$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ is the complex scalar subspace, which is the center of the algebra. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural}=e_0\partial_{ict}-e_1\partial_x-e_2\partial_y-e_3\partial_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$. The abelian potential and field strength are $\tilde{A}=i\phi/c\,e_0+\mathbf{A}$ and $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. The matrix realization is $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ with $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$; the spinor module is $S=\mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, carrying the left-handed Weyl representation $(\tfrac12,0)$, and $\bar{S}=(0,\tfrac12)$ is its conjugate; the Dirac module is $\Delta=S\oplus\bar{S}$, $\dim_\mathbb{C}\Delta=4$.
 
 ## The Proton as a Spin-$\tfrac{1}{2}$ Biquaternion Dirac Field
 
@@ -27,7 +27,7 @@ The proton enters the framework the way any massive spin-$\tfrac12$ fermion does
 $$
 \tilde{\nabla}\tilde{\Psi}_R=m_p\,\tilde{\Psi}_L,
 \qquad
-\bar{\tilde{\nabla}}\tilde{\Psi}_L=m_p\,\tilde{\Psi}_R,
+\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m_p\,\tilde{\Psi}_R,
 $$
 
 or, equivalently, as a field $\Psi\in\Delta$ in the spinor module satisfying the standard Dirac equation. In this section we record what is structural about placing it there and what is not.
@@ -41,19 +41,19 @@ $$
 
 so it carries spin $\tfrac12$, and a rotation by $2\pi$ acts as $-e_0$ on the module while acting as $+e_0$ on the four-vectors of $\mathbb{M}_-$. The half-integral, double-valued character of the proton's spin is therefore a representation-theoretic consequence of where the field lives, and *not* of anything proton-specific. What the framework does **not** derive is why this composite object has spin $\tfrac12$: that is angular-momentum addition among constituents in standard physics, and the framework has no constituent structure to add. The correct statement is the conditional one — *if* the proton is modelled as a field in the module, its spin is $\tfrac12$.
 
-**The mass term is structural; the mass value is not.** The proton mass appears exactly once, as the coefficient of the linear mass term $m_p$ that couples the two chiral halves, $\tilde{\nabla}\tilde{\Psi}_R=m_p\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L=m_p\tilde{\Psi}_R$; it is the only mass term in the free equation. The algebra's real structure $\flat=-\dagger$ is a different object: for $\tilde{\Psi}=\tilde{\Psi}_++\tilde{\Psi}_-$ with $\tilde{\Psi}_\pm\in\mathbb{M}_\pm$ one has $\tilde{\Psi}^{\flat}=-\tilde{\Psi}_++\tilde{\Psi}_-$, so $\flat$ acts as $+1$ on the material part and $-1$ on the informational part.
+**The mass term is structural; the mass value is not.** The proton mass appears exactly once, as the coefficient of the linear mass term $m_p$ that couples the two chiral halves, $\tilde{\nabla}\tilde{\Psi}_R=m_p\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m_p\tilde{\Psi}_R$; it is the only mass term in the free equation. The algebra's real structure $\flat=-{}^{*}$ is a different object: for $\tilde{\Psi}=\tilde{\Psi}_++\tilde{\Psi}_-$ with $\tilde{\Psi}_\pm\in\mathbb{M}_\pm$ one has $\tilde{\Psi}^{\flat}=-\tilde{\Psi}_++\tilde{\Psi}_-$, so $\flat$ acts as $+1$ on the material part and $-1$ on the informational part.
 
 The value $m_p=938.272$ MeV, or $1.6726\times10^{-27}$ kg, is not a consequence of the algebra or of the equation. It is a parameter, and the framework is scale-free until it is supplied. Equivalently, the free proton field carries the mass-shell relation
 
 $$
 \tilde{P}=m_p\tilde{U},
 \qquad
-\tilde{P}\bar{\tilde{P}}=-m_p^2c^2,
+\tilde{P}\tilde{P}^{\natural}=-m_p^2c^2,
 $$
 
 in the corpus's four-momentum convention $\tilde{P}=iE/c\,e_0+\mathbf{p}$: the *form* of the mass shell is structural, the number in it is an import.
 
-**The free equation contains no charge.** Neither the linear chiral mass pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L=m\tilde{\Psi}_R$ nor the standard Dirac equation it transcribes contains a coupling.
+**The free equation contains no charge.** Neither the linear chiral mass pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ nor the standard Dirac equation it transcribes contains a coupling.
 
 Charge enters only when the field is coupled to a four-potential, through minimal substitution. Two immediate consequences follow and they are the theme of the next section. First, the proton and the neutron satisfy the same free equation with the same operator; whatever distinguishes them is an inserted coupling and not a structure of the equation. Second, the framework's ability to state the proton's charge is the ability of its charge operator to *carry* the value $+1$, not an ability to produce it.
 
@@ -222,7 +222,7 @@ The table sorts the proton's properties by the status they have in the framework
 
 ## Summary
 
-The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, $\tilde{\nabla}\tilde{\Psi}_R=m_p\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L=m_p\tilde{\Psi}_R$, and the framework makes three structural statements about it. The spin-$\tfrac12$ representation content follows from the unique simple module of $\mathbb{B}\cong M_2(\mathbb{C})$; the mass term is the chirality-mixing linear pair of the two chiral halves; and, being massive,
+The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, $\tilde{\nabla}\tilde{\Psi}_R=m_p\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m_p\tilde{\Psi}_R$, and the framework makes three structural statements about it. The spin-$\tfrac12$ representation content follows from the unique simple module of $\mathbb{B}\cong M_2(\mathbb{C})$; the mass term is the chirality-mixing linear pair of the two chiral halves; and, being massive,
 
 the proton is forced by the mass selection rule $q_L=q_R$ to be vector-like, so the general charge operator $Q=q_LP_L+q_RP_R$ on the Dirac module collapses to
 
@@ -249,12 +249,12 @@ What the framework does not supply is everything that makes the proton a proton.
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ | Center of the algebra; abelian (electric-charge) factor |
 | $\tilde{\nabla} = e_0\partial_{ict} + e_k\partial_k$ | Biquaternionic gradient (Dirac operator) |
-| $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$ | d'Alembertian |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
 | $\Phi:\mathbb{B}\to M_2(\mathbb{C})$, $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$ | Faithful matrix representation used in the checks |
 | $S=\mathbb{C}^2=(\tfrac12,0)$ | Unique simple left $\mathbb{B}$-module (left-handed Weyl) |
 | $\bar{S}=(0,\tfrac12)$ | Conjugate right-handed Weyl module |
 | $\Delta=S\oplus\bar{S}$ | Dirac spinor module, $\dim_\mathbb{C}\Delta=4$ |
-| $\tilde{\Psi}$, $\tilde{\Psi}^{\flat}=-\tilde{\Psi}^{\dagger}$ | Biquaternion Dirac field and anti-Hermitian conjugate |
+| $\tilde{\Psi}$, $\tilde{\Psi}^{\flat}=-\tilde{\Psi}^{*}$ | Biquaternion Dirac field and anti-Hermitian conjugate |
 | $m_p$ | Proton mass (a parameter) |
 | $\gamma_5=\mathrm{diag}(-I_2,I_2)$ | Chirality operator, $\gamma_5^2=I_4$ |
 | $P_L=\tfrac12(I_4-\gamma_5)$, $P_R=\tfrac12(I_4+\gamma_5)$ | Chiral projectors |

@@ -32,10 +32,10 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C},
 $$
 
-and the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q}) = 2Q_0$. The four conjugations of the algebra — quaternion conjugation, complex conjugation, their composition, and the identity — are fixed in *Conventions in the Biquaternion Universe*. For the present purpose only two are needed: the quaternion conjugate $\bar{\tilde{Q}} = Q_0e_0 - Q_1e_1-Q_2e_2-Q_3e_3$, and the Hermitian conjugate
+and the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q}) = 2Q_0$. The four conjugations of the algebra — quaternion conjugation, complex conjugation, their composition, and the identity — are fixed in *Conventions in the Biquaternion Universe*. For the present purpose only two are needed: the quaternion conjugate $\tilde{Q}^{\natural} = Q_0e_0 - Q_1e_1-Q_2e_2-Q_3e_3$, and the Hermitian conjugate
 
 $$
-\tilde{Q}^\dagger = \bigl(\bar{\tilde{Q}}\bigr)^{*} = Q_0^{*}e_0 - Q_1^{*}e_1 - Q_2^{*}e_2 - Q_3^{*}e_3 ,
+\tilde{Q}^{*} = \bigl(\tilde{Q}^{\natural}\bigr)^{*} = Q_0^{*}e_0 - Q_1^{*}e_1 - Q_2^{*}e_2 - Q_3^{*}e_3 ,
 $$
 
 which is an anti-linear involution of the algebra.
@@ -52,7 +52,7 @@ $$
 with $i \mapsto iI_2$ on the central scalar and $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices. The assignment is fixed by *Quantum Mechanics in Biquaternionic Form* and is the one used throughout this subcategory. Two consequences are worth recording:
 
 - the Hermitian basis of $\mathbb{M}_+$, namely $\{e_0, ie_1, ie_2, ie_3\}$, maps to $\{I_2,\sigma_1,\sigma_2,\sigma_3\}$, so the isomorphism sends traceless Hermitian biquaternions to traceless Hermitian matrices;
-- the involution $\dagger$ maps to the matrix Hermitian conjugate.
+- the involution ${}^{*}$ maps to the matrix Hermitian conjugate.
 
 That a complex associative algebra with these generators is isomorphic to $M_2(\mathbb{C})$ is Wedderburn's theorem for $\mathbb{C}$: $\mathbb{B}$ is a finite-dimensional simple complex algebra, hence a full matrix algebra over its unique simple module's endomorphism ring, which here is $\mathbb{C}$.
 
@@ -84,8 +84,8 @@ whose image is the ray of the spinor $(\cos\!\frac{\theta}{2}, e^{i\varphi}\sin\
 The Hermitian and anti-Hermitian subspaces are defined by the involution:
 
 $$
-\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^\dagger = \tilde{Q}\}, \qquad
-\mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^\dagger = -\tilde{Q}\}, \qquad
+\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\}, \qquad
+\mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\}, \qquad
 \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_- .
 $$
 
@@ -189,7 +189,7 @@ when $\mathbf{r}\neq0$, and is the maximally mixed state $\tfrac12 e_0$ when $\m
 The biquaternion norm of the algebra is
 
 $$
-N(\tilde{Q}) = \tilde{Q}\,\bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2 .
+N(\tilde{Q}) = \tilde{Q}\,\tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 .
 $$
 
 On $\mathbb{M}_+$, writing $\tilde{Q} = q_0e_0 + i\mathbf{q}$ with real $q_0,\mathbf{q}$, it evaluates to
@@ -271,8 +271,8 @@ What the module does not supply is the composition rule for several qubits: the 
 | $S = \mathbb{C}^2$ | Defining (spinor) module of $\mathbb{B}$ |
 | $\rho_S$ | The defining representation of $\mathbb{B}$ on $S$ |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
-| $\tilde{Q}^\dagger$ | Hermitian conjugate (anti-linear involution) |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $\tilde{Q}^{*}$ | Hermitian conjugate (anti-linear involution) |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\tilde\Pi_\pm(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$ | Rank-one idempotents (pure states) |
 | $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ | State with Bloch vector $\mathbf{r}$, $|\mathbf{r}|\le1$ |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = \langle u|\hat{H}|u\rangle$ | Trace pairing (Born rule) |

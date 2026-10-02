@@ -231,7 +231,7 @@ which is verified to be the projector onto the rotated highest-weight state for 
 
 The coherent states have three equivalent descriptions, and the equivalence is the content of this subsection:
 
-- they are the orbit of the highest-weight idempotent under the adjoint action of the unit quaternions, $P\mapsto\tilde R P\tilde R^\dagger$;
+- they are the orbit of the highest-weight idempotent under the adjoint action of the unit quaternions, $P\mapsto\tilde R P\tilde R^{*}$;
 - they are the **symmetrised products of two fundamental idempotents**,
 $$
   \rho_{\mathrm{coh}}(\hat n)=P_{\mathrm{sym}}\left(\tilde\Pi(\hat n)\otimes \tilde\Pi(\hat n)\right)P_{\mathrm{sym}},

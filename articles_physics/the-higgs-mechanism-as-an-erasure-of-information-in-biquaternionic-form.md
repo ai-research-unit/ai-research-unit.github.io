@@ -13,7 +13,7 @@ The reason the two statements do not contradict each other is the subject of the
 
 The article proceeds as follows. The symmetric phase is set up with its circle of degenerate vacua, and the informational status of the phase is fixed. The erasure is then shown to be the elimination of a gauge direction, with the invariant content of the vacuum isolated. The relocation of the information into the longitudinal mode and the mass is then derived, with the mass coefficient recomputed on a generic connection. The symmetry-breaking map is read as a channel — unitary on the full degrees of freedom and many-to-one only on the gauge-invariant ones — and compared with the loss of confinement and with the redundancy of the gauge orbit. The vacuum is then read as a stable record, in the structure of einselection, and the Landauer comparison is drawn. A ledger separates the framework's own construction from the imports.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$, and central scalar imaginary $i$; the material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; the centre is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$. The gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$. The connection is $\tilde{A} = \sum_\mu A_\mu e_\mu = i\phi/c\,e_0 + \mathbf{A}\in\mathbb{M}_-$; it transforms as $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$; the coupling is $\kappa = q/\hbar$ with $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial_\mu + i\kappa A_\mu$. The scalar is the **complex central field** $\tilde{\Phi} = \varphi\,e_0$, $\varphi\in\mathbb{C}$. The amplitude symbol $\varphi$ is kept distinct from the connection's scalar potential $\phi$. The scalar part is $\mathrm{Sc}$, the trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$, and $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. The $ict$ coordinates are $x_\mu = (ict,x,y,z)$, so $\partial_0 = \partial_{ict} = -i\partial_t/c$, and the Lorentz-invariant contraction of two four-vectors is $g^{\mu\nu}U_\mu^*V_\nu$ with
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$, and central scalar imaginary $i$; the material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; the centre is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$. The gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The connection is $\tilde{A} = \sum_\mu A_\mu e_\mu = i\phi/c\,e_0 + \mathbf{A}\in\mathbb{M}_-$; it transforms as $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$; the coupling is $\kappa = q/\hbar$ with $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial_\mu + i\kappa A_\mu$. The scalar is the **complex central field** $\tilde{\Phi} = \varphi\,e_0$, $\varphi\in\mathbb{C}$. The amplitude symbol $\varphi$ is kept distinct from the connection's scalar potential $\phi$. The scalar part is $\mathrm{Sc}$, the trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$, and $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. The $ict$ coordinates are $x_\mu = (ict,x,y,z)$, so $\partial_0 = \partial_{ict} = -i\partial_t/c$, and the Lorentz-invariant contraction of two four-vectors is $g^{\mu\nu}U_\mu^*V_\nu$ with
 
 $$
 g = \mathrm{diag}(-1,+1,+1,+1)
@@ -25,7 +25,7 @@ on these coordinates, the same convention in which the Maxwell density is $-\tfr
 
 ### Two Real Fields and a Circle of Minima
 
-The framework's scalar is the complex central field $\tilde{\Phi} = \varphi\,e_0$, and its gauge-invariant content is the single real combination $\varphi^*\varphi = \mathrm{Sc}[\tilde{\Phi}^\dagger\tilde{\Phi}] = |\varphi|^2$. Take the potential
+The framework's scalar is the complex central field $\tilde{\Phi} = \varphi\,e_0$, and its gauge-invariant content is the single real combination $\varphi^*\varphi = \mathrm{Sc}[\tilde{\Phi}^{*}\tilde{\Phi}] = |\varphi|^2$. Take the potential
 
 $$
 V(\varphi^*\varphi) = \beta\left(\varphi^*\varphi - \frac{v^2}{2}\right)^2,
@@ -54,7 +54,7 @@ Two facts of the framework make the actual situation different, and they are the
 
 **The phase is not an observable.** The action is invariant under $\varphi\mapsto e^{i\alpha}\varphi$, and the action of the central phase on a state of the informational sector is trivial. The framework's sharpest statement of this is the one made in the gauge-orbit companion: a central phase acts on $\tilde{\rho}\in\mathbb{M}_+$ by $\tilde{\rho}\mapsto\lambda\tilde{\rho}\lambda^\dagger = |\lambda|^2\tilde{\rho} = \tilde{\rho}$, so it is not merely that no measurement distinguishes the phases — no Hermitian observable is conjugate to the phase at all. The phase is a **non-variable** of the informational sector.
 
-**The gauge-invariant content of the vacuum is a single number.** Because $\varphi$ is central, the product $\tilde{\Phi}\tilde{\Phi}^\dagger = |\varphi|^2 e_0$ is the entire gauge-invariant content of the vacuum, and it is independent of the phase. This was checked for the generic complex value $\varphi = 0.8 - 0.35i$ under phase rotations $e^{i\alpha}$ for $\alpha = 0.3, 1.7, -2.2$: $\tilde{\Phi}\tilde{\Phi}^\dagger$ was unchanged to within $3\times10^{-16}$ in every case. The circle of vacua collapses, for every observable, to the single number $|\varphi| = v/\sqrt{2}$.
+**The gauge-invariant content of the vacuum is a single number.** Because $\varphi$ is central, the product $\tilde{\Phi}\tilde{\Phi}^{*} = |\varphi|^2 e_0$ is the entire gauge-invariant content of the vacuum, and it is independent of the phase. This was checked for the generic complex value $\varphi = 0.8 - 0.35i$ under phase rotations $e^{i\alpha}$ for $\alpha = 0.3, 1.7, -2.2$: $\tilde{\Phi}\tilde{\Phi}^{*}$ was unchanged to within $3\times10^{-16}$ in every case. The circle of vacua collapses, for every observable, to the single number $|\varphi| = v/\sqrt{2}$.
 
 The two facts together give the article's first accounting. The phase direction carries no physical information, so the erasure of the phase from the observable description erases nothing physical. What the vacuum does carry — the magnitude $v$ — is untouched. The word "erasure" is therefore correct about the description and incorrect about the physics, and the remainder of the article locates the physics that is relocated rather than erased.
 
@@ -161,10 +161,10 @@ so the gauge-invariant kinetic term becomes a quadratic form in the connection,
 $$
 -\,g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)\Big|_{\mathrm{vac}}
 = -\,\frac{q^2v^2}{2\hbar^2}\,g^{\mu\nu}A_\mu^*A_\nu
-= -\,\frac{q^2v^2}{2\hbar^2}\,\mathrm{Sc}\!\left(\bar{\tilde{A}}\tilde{A}\right),
+= -\,\frac{q^2v^2}{2\hbar^2}\,\mathrm{Sc}\!\left(\tilde{A}^{\natural}\tilde{A}\right),
 $$
 
-the last step using the material-sector reality condition $\tilde{A}\in\mathbb{M}_-$, which makes $g^{\mu\nu}A_\mu^*A_\nu = A_0^2+\mathbf{A}^2 = \mathrm{Sc}(\bar{\tilde{A}}\tilde{A})$ — the two sides differ for a connection with four unconstrained complex components, so the reality condition is what lets the covariant-derivative form and the biquaternion form be identified. Comparing with the Proca normalization $-\tfrac12 M_A^2\,\mathrm{Sc}(\bar{\tilde{A}}\tilde{A})$ gives the mass
+the last step using the material-sector reality condition $\tilde{A}\in\mathbb{M}_-$, which makes $g^{\mu\nu}A_\mu^*A_\nu = A_0^2+\mathbf{A}^2 = \mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})$ — the two sides differ for a connection with four unconstrained complex components, so the reality condition is what lets the covariant-derivative form and the biquaternion form be identified. Comparing with the Proca normalization $-\tfrac12 M_A^2\,\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})$ gives the mass
 
 $$
 M_A^2 = \frac{q^2v^2}{\hbar^2},
@@ -172,7 +172,7 @@ M_A^2 = \frac{q^2v^2}{\hbar^2},
 M_A = \frac{qv}{\hbar}.
 $$
 
-This was recomputed by two independent routes on an explicit non-axis-aligned connection, $A_0 = 0.37i$, $A_1 = 0.82$, $A_2 = -0.51$, $A_3 = 0.29$ — with $A_0$ imaginary and $A_1,A_2,A_3$ real, as $\tilde{A}\in\mathbb{M}_-$ requires — at the generic parameter values $\kappa = q/\hbar = 0.7$ and $v = 1.3$. Directly from $-g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)$ at the vacuum the kinetic density was $-0.3642397850$; independently, the biquaternion prediction $-\tfrac12\kappa^2v^2\,\mathrm{Sc}(\bar{\tilde{A}}\tilde{A})$ was $-0.3642397850$ as well. The two routes agree to all digits and confirm $M_A^2 = q^2v^2/\hbar^2$, with $qv/\hbar = 0.910000$. The mass is gauge invariant, because it is read from a gauge-invariant term; the phase is invisible in it, because it depends only on $v$.
+This was recomputed by two independent routes on an explicit non-axis-aligned connection, $A_0 = 0.37i$, $A_1 = 0.82$, $A_2 = -0.51$, $A_3 = 0.29$ — with $A_0$ imaginary and $A_1,A_2,A_3$ real, as $\tilde{A}\in\mathbb{M}_-$ requires — at the generic parameter values $\kappa = q/\hbar = 0.7$ and $v = 1.3$. Directly from $-g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)$ at the vacuum the kinetic density was $-0.3642397850$; independently, the biquaternion prediction $-\tfrac12\kappa^2v^2\,\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})$ was $-0.3642397850$ as well. The two routes agree to all digits and confirm $M_A^2 = q^2v^2/\hbar^2$, with $qv/\hbar = 0.910000$. The mass is gauge invariant, because it is read from a gauge-invariant term; the phase is invisible in it, because it depends only on $v$.
 
 The informational reading is that the mass is the **record** of the breaking. The vacuum family is a circle, but every member yields the same $v$, hence the same mass. The information that survives is a single gauge-invariant number; the phase information that the erasure removed was never physical, and the physical information that the breaking produced is $v$, recorded in $M_A$ and in $m_h$. This is a compression of the description, not a loss of physics.
 
@@ -277,7 +277,7 @@ This distinguishes the mechanism from the two neighbours. Unlike confinement, wh
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material and informational sectors |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$ | Centre; the complex scalar subspace |
 | $\tilde{\Phi} = \varphi\,e_0 \in \mathbb{C}_{\mathbb{B}}$ | Complex central scalar |
-| $\varphi^*\varphi = \mathrm{Sc}[\tilde{\Phi}^\dagger\tilde{\Phi}] = |\varphi|^2$ | Gauge-invariant content of the scalar |
+| $\varphi^*\varphi = \mathrm{Sc}[\tilde{\Phi}^{*}\tilde{\Phi}] = |\varphi|^2$ | Gauge-invariant content of the scalar |
 | $V = \beta(\varphi^*\varphi - v^2/2)^2$ | Potential; minimum the circle $|\varphi| = v/\sqrt{2}$ |
 | $v$ | Vacuum expectation value; the gauge-invariant record of the breaking |
 | $h,\ \theta$ | Radial and angular (would-be Goldstone) fields |
@@ -288,7 +288,7 @@ This distinguishes the mechanism from the two neighbours. Unlike confinement, wh
 | $\Gamma = -(\hbar/qv)\theta$ | Gauge function of the unitary gauge |
 | $\mathcal{A}_\mu = A_\mu + (\hbar/qv)\partial_\mu\theta$ | Gauge-invariant combination carrying the mass |
 | $M_A^2 = q^2v^2/\hbar^2$, $M_A = qv/\hbar$ | Gauge-field (Proca) mass; the record |
-| $-\tfrac12 M_A^2\,\mathrm{Sc}(\bar{\tilde{A}}\tilde{A})$ | Proca mass term |
+| $-\tfrac12 M_A^2\,\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})$ | Proca mass term |
 | $2+2 = 1+3$ | Degree-of-freedom balance; conservation |
 | $S(\tilde{\rho}\|\tilde{\sigma})$ | Relative entropy; invariant under the re-encoding |
 | $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$, $|\mathbf{r}|\leq1$ | State of the informational sector (Bloch ball) |

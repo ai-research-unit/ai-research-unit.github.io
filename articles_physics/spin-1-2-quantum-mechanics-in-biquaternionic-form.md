@@ -166,7 +166,7 @@ where $\mu = \mu_1 e_1 + \mu_2 e_2 + \mu_3 e_3$ is a unit pure real quaternion, 
 
 **Properties.** Each such $\tilde\Pi_{1,2}$ satisfies:
 
-1. **Hermitian:** $\tilde\Pi_{1,2}^\dagger = \tilde\Pi_{1,2}$, since $\tilde\Pi_{1,2} \in \mathbb{M}_+$.
+1. **Hermitian:** $\tilde\Pi_{1,2}^{*} = \tilde\Pi_{1,2}$, since $\tilde\Pi_{1,2} \in \mathbb{M}_+$.
 2. **Idempotent:** $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$.
 3. **Trace one:** $\mathrm{Tr}(\tilde\Pi_{1,2}) = 2\,\mathrm{Sc}(\tilde\Pi_{1,2}) = 1$.
 4. **Rank one:** in the matrix representation, $\tilde\Pi_{1,2}$ maps to a rank-1 projection matrix.
@@ -270,7 +270,7 @@ The unitary biquaternions generate the spin rotation group, and the Hermitian bi
 
 ### Unitary Biquaternions
 
-A biquaternion $\tilde{U}$ is **unitary** if $\tilde{U}\tilde{U}^\dagger = e_0$. In the matrix representation, $\tilde{U}$ maps to a unitary matrix. The group of unitary biquaternions is $U(2)$.
+A biquaternion $\tilde{U}$ is **unitary** if $\tilde{U}\tilde{U}^{*} = e_0$. In the matrix representation, $\tilde{U}$ maps to a unitary matrix. The group of unitary biquaternions is $U(2)$.
 
 The subgroup of $U(2)$ with determinant 1 (in the matrix representation) is $SU(2)$, which is the **spin rotation group**. It acts on the spinor space $\mathbb{C}^2$ by matrix multiplication, and its action on the material space $\mathbb{M}_-$ (by rotor conjugation) is the group of spatial rotations $SO(3)$.
 
@@ -280,7 +280,7 @@ So the **spin rotations of a spin-1/2 particle are realized in the biquaternion 
 
 The Hermitian biquaternions in $\mathbb{M}_+$ with unit norm are the **boost biquaternions** $\tilde{\Lambda} = \cosh(\psi/2) + i\sinh(\psi/2)\hat{\mathbf{u}}$. They generate the Lorentz boosts, and their action on $\mathbb{M}_-$ is the rotor conjugation.
 
-In the quantum-mechanical context, the boosts are **not** unitary (they are Hermitian, and their squares are not the identity). They correspond to operations that are non-unitary but still **invertible**: a boost has unit norm, so it inverts to $\bar{\tilde{\Lambda}}$, and it represents a reversible change of state — unlike the genuinely irreversible idempotent projections.
+In the quantum-mechanical context, the boosts are **not** unitary (they are Hermitian, and their squares are not the identity). They correspond to operations that are non-unitary but still **invertible**: a boost has unit norm, so it inverts to $\tilde{\Lambda}^{\natural}$, and it represents a reversible change of state — unlike the genuinely irreversible idempotent projections.
 
 The full group of unit-norm biquaternions is $SL(2,\mathbb{C})$, which is the double cover of the proper orthochronous Lorentz group $SO^+(1,3)$. It contains $SU(2)$ as the compact subgroup of spatial rotations, and the Hermitian elements as the non-compact set of boosts.
 
@@ -300,7 +300,7 @@ The identification extends from a single spin-1/2 particle to a **spin-1/2 field
 The biquaternion Dirac equation (companion article) is the linear, chirality-off-diagonal pair
 
 $$
-\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R,
+\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
 $$
 
 where $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ is a biquaternion-valued field with one component per chirality, and $m$ is the mass. In the massless case ($m = 0$), the pair reduces to
@@ -321,7 +321,7 @@ The Dirac equation is the equation of motion for a single spin-1/2 field. Its so
 
 The biquaternionic Dirac equation contains:
 
-- The **kinematics** of a relativistic spin-1/2 particle: the mass-shell condition $\tilde{k}\bar{\tilde{k}} = -m^2 c^2/\hbar^2$ for plane-wave solutions.
+- The **kinematics** of a relativistic spin-1/2 particle: the mass-shell condition $\tilde{k}\tilde{k}^{\natural} = -m^2 c^2/\hbar^2$ for plane-wave solutions.
 - The **spin structure**: the polarization biquaternion $\tilde{\Psi}_0$ in the plane-wave solution has two independent components, corresponding to the two spin states.
 - The **mass term**: the linear, chirality-off-diagonal mass term $m\tilde{\Psi}_{L,R}$, which couples the two chiral components of the spinor.
 
@@ -417,7 +417,7 @@ The identification is not an analogy. It is the same mathematics, expressed in t
 | $\mathrm{Tr}(P\tilde{H}) = 2\mathrm{Sc}(P\tilde{H})$ | Born-rule expectation value |
 | $SU(2)$ | Spin rotation group |
 | $SL(2,\mathbb{C})$ | Lorentz group (double cover) |
-| $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L,\ \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Biquaternionic Dirac equation (linear chiral pair) |
+| $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L,\ \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Biquaternionic Dirac equation (linear chiral pair) |
 
 ## Further Reading
 

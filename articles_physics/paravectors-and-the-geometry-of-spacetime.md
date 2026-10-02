@@ -37,7 +37,7 @@ shows that the paravector space is exactly $\mathbb{M}_+$: the identification is
 | corpus basis | $p_0 e_0$ | $i(p_1e_1 + p_2e_2 + p_3e_3)$ |
 | paravector basis | $p_0 e_0$ | $p_1\gamma_1 + p_2\gamma_2 + p_3\gamma_3$ |
 
-**The conjugations.** On paravectors the quaternion conjugate $\bar{\cdot}$ negates the vector part and leaves the scalar part alone, since $\bar{\gamma}_k = \overline{ie_k} = i\bar{e}_k = -ie_k = -\gamma_k$. This is precisely the **Clifford conjugate** of the algebra of physical space, $p \mapsto \bar p = p_0 - \mathbf p$. Because $\mathbb{M}_+$ is the fixed space of the Hermitian conjugation, $\bar p = p^\dagger$ for a paravector; the reversion, whose action on the paravector generators is the identity, coincides with the Hermitian conjugation on $\mathbb{M}_+$ and is the operation the source writes with a dagger.
+**The conjugations.** On paravectors the quaternion conjugate ${}^{\natural}$ negates the vector part and leaves the scalar part alone, since $\bar{\gamma}_k = \overline{ie_k} = i\bar{e}_k = -ie_k = -\gamma_k$. This is precisely the **Clifford conjugate** of the algebra of physical space, $p \mapsto \bar p = p_0 - \mathbf p$. Because $\mathbb{M}_+$ is the fixed space of the Hermitian conjugation, $\bar p = p^\dagger$ for a paravector; the reversion, whose action on the paravector generators is the identity, coincides with the Hermitian conjugation on $\mathbb{M}_+$ and is the operation the source writes with a dagger.
 
 **The form.** The biquaternion norm of a paravector is real and reads
 
@@ -75,10 +75,10 @@ The unimodularity is the paravector form of the constant length of the four-velo
 $$
 \tilde U = ic\,\bar u,
 \qquad\text{equivalently}\qquad
-u = -\frac{i}{c}\,\bar{\tilde U},
+u = -\frac{i}{c}\,\tilde U^{\natural},
 $$
 
-which is the corpus's relation $\tilde\Lambda^2 = -\frac{i}{c}\bar{\tilde U}$ of *The Lorentz Transformation as a Biquaternionic Rotation* written for $u = \tilde\Lambda^2$. The paravector $u$ is Hermitian and its time component is real; the four-velocity $\tilde U$ is anti-Hermitian and its time component is imaginary. The two are not related by the central $i$ alone — that would reverse the spatial sign — but by $i$ followed by the quaternion conjugate, which is what the change of time convention does.
+which is the corpus's relation $\tilde\Lambda^2 = -\frac{i}{c}\tilde U^{\natural}$ of *The Lorentz Transformation as a Biquaternionic Rotation* written for $u = \tilde\Lambda^2$. The paravector $u$ is Hermitian and its time component is real; the four-velocity $\tilde U$ is anti-Hermitian and its time component is imaginary. The two are not related by the central $i$ alone — that would reverse the spatial sign — but by $i$ followed by the quaternion conjugate, which is what the change of time convention does.
 
 **The boost rotor is a paravector.** The corpus's boost rotor is $\tilde\Lambda = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\hat{\mathbf u}$ with $\hat{\mathbf u}$ a unit real vector; in the paravector basis it is
 
@@ -94,7 +94,7 @@ L^2 = \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\hat{\mathbf v}\right)^2
 = \cosh w\,e_0 + \sinh w\,\hat{\mathbf v} \;=\; u,
 $$
 
-using $\hat{\mathbf v}^2 = e_0$. This is the corpus's relation $u = \tilde\Lambda^2 = -\frac{i}{c}\bar{\tilde U}$ read in the paravector basis: the square of the boost rotor is the **proper velocity** $u$, a paravector, and the four-velocity $\tilde U$ is its companion under the change of time convention. The relation $u\bar u = e_0$ is the statement that the four-velocity has fixed length.
+using $\hat{\mathbf v}^2 = e_0$. This is the corpus's relation $u = \tilde\Lambda^2 = -\frac{i}{c}\tilde U^{\natural}$ read in the paravector basis: the square of the boost rotor is the **proper velocity** $u$, a paravector, and the four-velocity $\tilde U$ is its companion under the change of time convention. The relation $u\bar u = e_0$ is the statement that the four-velocity has fixed length.
 
 ## The Boost Rule
 
@@ -130,10 +130,10 @@ $$
 
 Adding the two gives the rule.
 
-The corresponding statement in the series' conventions is the rotor conjugation on the Hermitian subspace. Writing $p$ for the Hermitian element $p_0e_0 + i\mathbf p_e$ and $\tilde\Lambda$ for the corpus boost rotor, the two are the same element ($L = \tilde\Lambda$) and the same operation ($L\,p\,L^\dagger = \tilde\Lambda\,p\,\tilde\Lambda^\dagger$, the reversion being the identity on $\mathbb{M}_+$), so that
+The corresponding statement in the series' conventions is the rotor conjugation on the Hermitian subspace. Writing $p$ for the Hermitian element $p_0e_0 + i\mathbf p_e$ and $\tilde\Lambda$ for the corpus boost rotor, the two are the same element ($L = \tilde\Lambda$) and the same operation ($L\,p\,L^\dagger = \tilde\Lambda\,p\,\tilde\Lambda^{*}$, the reversion being the identity on $\mathbb{M}_+$), so that
 
 $$
-\tilde\Lambda\,\tilde{Q}\,\tilde\Lambda^\dagger = u\,p_\parallel + p_\perp,
+\tilde\Lambda\,\tilde{Q}\,\tilde\Lambda^{*} = u\,p_\parallel + p_\perp,
 \qquad \tilde{Q} = p = p_0e_0 + i\mathbf p_e ,
 $$
 

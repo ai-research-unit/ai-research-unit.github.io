@@ -112,7 +112,7 @@ The two families are therefore interchanged by a change of sign of the split-qua
 **Theorem (The Identities That Hold and the Identities That Fail).** The identities
 
 $$
-\exp \tilde q \exp(-\tilde q) = 1, \qquad \overline{\exp \tilde q} = \exp \bar{\tilde q}, \qquad \cos^2 v + \sin^2 v = 1, \qquad \cosh^2 v - \sinh^2 v = 1
+\exp \tilde q \exp(-\tilde q) = 1, \qquad (\exp \tilde q)^{\natural} = \exp \tilde{q}^{\natural}, \qquad \cos^2 v + \sin^2 v = 1, \qquad \cosh^2 v - \sinh^2 v = 1
 $$
 
 hold, the last two for every $v \in V$ with $N(v) \neq 0$, in both signs of the split-quaternion norm. The addition formulas
@@ -185,7 +185,7 @@ so $1$ is a root of unity of every order, while $e_2 = \tilde\pi_+ - \tilde\pi_-
 
 **Proof.** In a commutative subalgebra the binomial theorem applies to the series, and the subalgebra is isomorphic to $\mathbb{C}$ or to $\mathbb{D}$ according to the sign of $\xi^2$.
 
-**Theorem (The General Case).** For general $\tilde q,y$ the identities fail: $\exp(\tilde q+y) \neq \exp \tilde q\exp y$ unless $\tilde q y = y\tilde q$, and the failure is exactly the Baker–Campbell–Hausdorff correction. The conjugation however always behaves well: $\overline{\exp \tilde q} = \exp\bar{\tilde q}$, $N(\exp \tilde q) = e^{2\operatorname{Sc}(\tilde q)}$, and $\exp \tilde q$ is a unit for every $\tilde q$.
+**Theorem (The General Case).** For general $\tilde q,y$ the identities fail: $\exp(\tilde q+y) \neq \exp \tilde q\exp y$ unless $\tilde q y = y\tilde q$, and the failure is exactly the Baker–Campbell–Hausdorff correction. The conjugation however always behaves well: $(\exp \tilde q)^{\natural} = \exp\tilde{q}^{\natural}$, $N(\exp \tilde q) = e^{2\operatorname{Sc}(\tilde q)}$, and $\exp \tilde q$ is a unit for every $\tilde q$.
 
 **Proof.** The failure of the addition formula is the non-commutativity of the series; the conjugation identity and the split-quaternion norm formula are the theorems above.
 
@@ -205,7 +205,7 @@ so $1$ is a root of unity of every order, while $e_2 = \tilde\pi_+ - \tilde\pi_-
 | kernel of $\exp$ | $\{0\} \cup 2\pi\mathbb{Z}\cdot\Sigma$ | $\Sigma$ the root set of $-1$ |
 | $\cos^2v+\sin^2v$ | $1$ | $v \in V$, $N(v) \neq 0$ |
 | $\cosh^2v-\sinh^2v$ | $1$ | $v \in V$, $N(v) \neq 0$ |
-| $\overline{\exp \tilde q}$ | $\exp\bar{\tilde q}$ | all $\tilde q$ |
+| $(\exp \tilde q)^{\natural}$ | $\exp\tilde{q}^{\natural}$ | all $\tilde q$ |
 | $\exp(\tilde q+y)$ | $\exp \tilde q\exp y$ | if and only if $\tilde q y = y\tilde q$ |
 | $\log(1+v)$ | $v$ | $v$ nilpotent |
 | $(\tilde\pi_+ + \lambda \tilde\pi_-)^n$ | $\tilde\pi_+ + \lambda^n\tilde\pi_-$ | $\lambda = \pm1$ |

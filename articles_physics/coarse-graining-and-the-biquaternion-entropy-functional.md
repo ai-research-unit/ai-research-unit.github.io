@@ -10,7 +10,7 @@ $$
 \mathcal{S}(\tilde{\rho}) = -2\,\mathrm{Sc}\!\left(\tilde{\rho}\log\tilde{\rho}\right).
 $$
 
-The article's central result is that this functional depends on the state **only through its biquaternion norm**. With $N(\tilde{\rho}) = \tilde{\rho}\bar{\tilde{\rho}} = \tfrac{1}{4}(1-|\mathbf{r}|^2)e_0$, one has $|\mathbf{r}| = \sqrt{1 - 4\,\mathrm{Sc}\,N(\tilde{\rho})}$, and therefore
+The article's central result is that this functional depends on the state **only through its biquaternion norm**. With $N(\tilde{\rho}) = \tilde{\rho}\tilde{\rho}^{\natural} = \tfrac{1}{4}(1-|\mathbf{r}|^2)e_0$, one has $|\mathbf{r}| = \sqrt{1 - 4\,\mathrm{Sc}\,N(\tilde{\rho})}$, and therefore
 
 $$
 \mathcal{S}(\tilde{\rho}) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,N(\tilde{\rho})}\right),
@@ -56,10 +56,10 @@ and conversely every idempotent of $\mathbb{M}_+$ has this form. The complementa
 
 ### The Biquaternion Norm of a State
 
-The biquaternion norm of the algebra is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. On the state it evaluates to a scalar multiple of the identity:
+The biquaternion norm of the algebra is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. On the state it evaluates to a scalar multiple of the identity:
 
 $$
-N(\tilde{\rho}) = \tilde{\rho}\bar{\tilde{\rho}} = \left(\tfrac{1}{2}\right)^2 + \left(\tfrac{i r_1}{2}\right)^2 + \left(\tfrac{i r_2}{2}\right)^2 + \left(\tfrac{i r_3}{2}\right)^2 = \tfrac{1}{4}\left(1 - |\mathbf{r}|^2\right)e_0 .
+N(\tilde{\rho}) = \tilde{\rho}\tilde{\rho}^{\natural} = \left(\tfrac{1}{2}\right)^2 + \left(\tfrac{i r_1}{2}\right)^2 + \left(\tfrac{i r_2}{2}\right)^2 + \left(\tfrac{i r_3}{2}\right)^2 = \tfrac{1}{4}\left(1 - |\mathbf{r}|^2\right)e_0 .
 $$
 
 This single identity carries the geometry of the state space. The biquaternion norm is **positive** in the interior of the Bloch ball, **zero** on its boundary, and **negative** outside it, so that the state space is exactly the trace-one slice of the future cone of the biquaternion norm. The boundary of the state space is the **zero-divisor cone**: the pure states are the elements of $\mathbb{M}_+$ that fail to be invertible. The biquaternion norm therefore measures how far inside the cone a state lies, and its vanishing is the algebraic statement of purity.
@@ -429,7 +429,7 @@ The fine-grained value is also the minimum over all preparations of the state, $
 | $\tilde\Pi_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$ | Idempotent (pure state, rank-one projector) |
 | $\lambda_\pm = \tfrac{1}{2}(1\pm|\mathbf{r}|)$ | Eigenvalues (pointer probabilities) of the state |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_0)=2$ | Trace |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $N(\tilde{\rho}) = \tfrac{1}{4}(1-|\mathbf{r}|^2)e_0$ | Biquaternion norm of a state |
 | $\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}(|\mathbf{r}|^2-1)e_0$ | Deviation from idempotency (mixedness) |
 | $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1+|\mathbf{r}|^2)$ | Purity |
@@ -445,7 +445,7 @@ The fine-grained value is also the minimum over all preparations of the state, $
 | $r_\parallel = \hat{\mathbf{n}}\cdot\mathbf{r}$, $r_\perp(t) = e^{-\Gamma t}r_\perp(0)$, $r(t)^2 = r_\parallel^2 + r_\perp(t)^2$ | Axial and instantaneous transverse components of the dephasing flow |
 | $\mathbf{r}\mapsto(1-p)\mathbf{r} + p(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}}$ | Dephasing at strength $p\in[0,1]$ |
 | $\dot{\mathcal{S}} = \Gamma (r_\perp(t)^2/r(t))\,\mathrm{artanh}\,r(t)$ | Entropy production rate of continuous dephasing (instantaneous $r_\perp$) |
-| $\tilde{U}(t)$, $\tilde{U}\tilde{U}^\dagger = e_0$ | Matrix-unitary rotor (reversible flow) |
+| $\tilde{U}(t)$, $\tilde{U}\tilde{U}^{*} = e_0$ | Matrix-unitary rotor (reversible flow) |
 | $H(w) = -\sum_a w_a\log w_a$ | Preparation entropy |
 
 ## Further Reading

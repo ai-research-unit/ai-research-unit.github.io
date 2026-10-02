@@ -14,11 +14,11 @@ The findings are stated in advance.
 4. **The information content is a rotation angle.** Everything a boost can do to a spin is summarised by the pair (angle, axis) of its Wigner rotation; the angle vanishes for collinear boosts and is maximal for transverse ones, and the entropy it can imprint on a transverse spin is $h((1+\cos\alpha)/2)$.
 5. **A closed loop of boosts leaves a rotation.** The product of boosts around a closed path in velocity space is a pure rotation about the normal to the path, with an angle that grows with the area; this is the Thomas–Wigner holonomy, the curvature of the boost connection, and the relativistic content of Thomas precession.
 
-The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\Phi$ with $e_k\mapsto-i\sigma_k$, $i\mapsto iI_2$. The boost rotor is
+The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\Phi$ with $e_k\mapsto-i\sigma_k$, $i\mapsto iI_2$. The boost rotor is
 $$
 \tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat{\mathbf{u}} = e^{(\psi/2)\,i\hat{\mathbf{u}}}, \qquad N(\tilde{\Lambda}) = 1 ,
 $$
-with $\psi$ the rapidity and $\hat{\mathbf{u}}$ the boost direction; the four-velocity of a particle boosted from rest is $\tilde{U} = ic\,\tilde{\Lambda}^{-1}\tilde{\Lambda}^{-1\dagger}$. The Wigner rotation is $\tilde{W}(\tilde{\Lambda},\tilde{U}) = \tilde{\Lambda}_{\tilde{U}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{U}}^{-1}\in SU(2)$ with $\tilde{U}' = \tilde{\Lambda}\tilde{U}\tilde{\Lambda}^\dagger$.
+with $\psi$ the rapidity and $\hat{\mathbf{u}}$ the boost direction; the four-velocity of a particle boosted from rest is $\tilde{U} = ic\,\tilde{\Lambda}^{-1}\tilde{\Lambda}^{-1{}^{*}}$. The Wigner rotation is $\tilde{W}(\tilde{\Lambda},\tilde{U}) = \tilde{\Lambda}_{\tilde{U}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{U}}^{-1}\in SU(2)$ with $\tilde{U}' = \tilde{\Lambda}\tilde{U}\tilde{\Lambda}^{*}$.
 
 The companion articles supply the pieces:
 - Companion article *The Relativistic Qubit in Biquaternionic Form*, for the little group, the Wigner rotation, and the two actions of the unit-norm group.
@@ -55,11 +55,11 @@ every unit-norm rotor being uniquely the product of a compact factor (a unit rea
 
 A boost acts on the two sectors differently. On the material sector it acts by congruence,
 $$
-\tilde{Q}\ \longmapsto\ \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger , \qquad \tilde{Q}\in\mathbb{M}_- ,
+\tilde{Q}\ \longmapsto\ \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*} , \qquad \tilde{Q}\in\mathbb{M}_- ,
 $$
-which preserves the biquaternion norm because $N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger) = N(\tilde{\Lambda})N(\tilde{Q})N(\tilde{\Lambda}^\dagger) = N(\tilde{Q})$: the interval, the mass shell, and the light cone are all invariant. On the informational sector it acts on the spinor by left multiplication, and that action is not unitary: $\tilde{\Lambda}^\dagger\tilde{\Lambda} = e_0$ fails for a boost, so the spinor norm is scaled,
+which preserves the biquaternion norm because $N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}) = N(\tilde{\Lambda})N(\tilde{Q})N(\tilde{\Lambda}^{*}) = N(\tilde{Q})$: the interval, the mass shell, and the light cone are all invariant. On the informational sector it acts on the spinor by left multiplication, and that action is not unitary: $\tilde{\Lambda}^{*}\tilde{\Lambda} = e_0$ fails for a boost, so the spinor norm is scaled,
 $$
-\langle\tilde{\Lambda}u|\tilde{\Lambda}u\rangle = \langle u|\tilde{\Lambda}^\dagger\tilde{\Lambda}|u\rangle = \langle u|u\rangle + i\sinh\psi\,\langle u|\hat{\mathbf{u}}|u\rangle .
+\langle\tilde{\Lambda}u|\tilde{\Lambda}u\rangle = \langle u|\tilde{\Lambda}^{*}\tilde{\Lambda}|u\rangle = \langle u|u\rangle + i\sinh\psi\,\langle u|\hat{\mathbf{u}}|u\rangle .
 $$
 A boost therefore has a trivial action on four-vectors and a non-trivial, non-unitary action on spinors. The physically unitary spin operation is neither of these; it is the little-group part extracted below.
 
@@ -69,7 +69,7 @@ A boost therefore has a trivial action on four-vectors and a non-trivial, non-un
 
 Let $\tilde{\Lambda}_1$ and $\tilde{\Lambda}_2$ be two boost rotors with non-collinear directions. Their product $\tilde{\Lambda} = \tilde{\Lambda}_2\tilde{\Lambda}_1$ is unit-norm, $N(\tilde{\Lambda}) = 1$, because the biquaternion norm is multiplicative; but it is not Hermitian,
 $$
-\tilde{\Lambda}^\dagger = \tilde{\Lambda}_1^\dagger\tilde{\Lambda}_2^\dagger = \tilde{\Lambda}_1\tilde{\Lambda}_2 \neq \tilde{\Lambda}_2\tilde{\Lambda}_1 \quad\text{unless } [\tilde{\Lambda}_1,\tilde{\Lambda}_2] = 0 .
+\tilde{\Lambda}^{*} = \tilde{\Lambda}_1^{*}\tilde{\Lambda}_2^{*} = \tilde{\Lambda}_1\tilde{\Lambda}_2 \neq \tilde{\Lambda}_2\tilde{\Lambda}_1 \quad\text{unless } [\tilde{\Lambda}_1,\tilde{\Lambda}_2] = 0 .
 $$
 The product of two boosts is therefore not a boost, and the deviation from Hermiticity is a deviation from pure boosting. The Cartan decomposition turns that deviation into a rotation: write
 $$
@@ -79,7 +79,7 @@ with $\tilde{\Lambda}_{\mathrm{boost}}$ a pure boost and $\tilde{W}$ a compact f
 $$
 \tilde{W} = \tilde{\Lambda}_{\tilde{U}}\,\tilde{\Lambda}_2\tilde{\Lambda}_1
 $$
-satisfies $\tilde{W}(ic\,e_0)\tilde{W}^\dagger = ic\,e_0$, hence lies in the stabilizer; being unit-norm it is a unit real quaternion,
+satisfies $\tilde{W}(ic\,e_0)\tilde{W}^{*} = ic\,e_0$, hence lies in the stabilizer; being unit-norm it is a unit real quaternion,
 $$
 \tilde{W}\in SU(2), \qquad \tilde{W} = \cos\frac{\alpha}{2}e_0 + \sin\frac{\alpha}{2}\hat{\mathbf{n}} .
 $$
@@ -94,12 +94,12 @@ a rotation about the axis normal to the plane of the two boost directions, by an
 
 ### The cocycle condition
 
-The Wigner rotation of a composition is not additive, but it obeys a composition law inherited from the group. Writing $\tilde{W}(\tilde{\Lambda},\tilde{U})$ for the rotation and using $\tilde{U}'' = \tilde{\Lambda}_2\tilde{\Lambda}_1\tilde{U}\tilde{\Lambda}_1^\dagger\tilde{\Lambda}_2^\dagger$, a direct calculation gives
+The Wigner rotation of a composition is not additive, but it obeys a composition law inherited from the group. Writing $\tilde{W}(\tilde{\Lambda},\tilde{U})$ for the rotation and using $\tilde{U}'' = \tilde{\Lambda}_2\tilde{\Lambda}_1\tilde{U}\tilde{\Lambda}_1^{*}\tilde{\Lambda}_2^{*}$, a direct calculation gives
 $$
 \tilde{W}(\tilde{\Lambda}_2\tilde{\Lambda}_1,\tilde{U})
 = \tilde{W}(\tilde{\Lambda}_2,\tilde{\Lambda}_1\tilde{U})\;\tilde{W}(\tilde{\Lambda}_1,\tilde{U}) .
 $$
-This is a **one-cocycle condition**: the rotation of the composed transformation is the rotation of the second evaluated at the momentum carried by the first, composed with the rotation of the first. The derivation is immediate from the definition. Writing $\tilde{U}_1 = \tilde{\Lambda}_1\tilde{U}\tilde{\Lambda}_1^\dagger$ and $\tilde{U}'' = \tilde{\Lambda}_2\tilde{\Lambda}_1\tilde{U}\tilde{\Lambda}_1^\dagger\tilde{\Lambda}_2^\dagger$, one has
+This is a **one-cocycle condition**: the rotation of the composed transformation is the rotation of the second evaluated at the momentum carried by the first, composed with the rotation of the first. The derivation is immediate from the definition. Writing $\tilde{U}_1 = \tilde{\Lambda}_1\tilde{U}\tilde{\Lambda}_1^{*}$ and $\tilde{U}'' = \tilde{\Lambda}_2\tilde{\Lambda}_1\tilde{U}\tilde{\Lambda}_1^{*}\tilde{\Lambda}_2^{*}$, one has
 $$
 \tilde{W}(\tilde{\Lambda}_2,\tilde{U}_1)\,\tilde{W}(\tilde{\Lambda}_1,\tilde{U})
 = \tilde{\Lambda}_{\tilde{U}''}\tilde{\Lambda}_2\tilde{\Lambda}_{\tilde{U}_1}^{-1}\;\tilde{\Lambda}_{\tilde{U}_1}\tilde{\Lambda}_1\tilde{\Lambda}_{\tilde{U}}^{-1}
@@ -123,7 +123,7 @@ $$
 $$
 which is a **controlled unitary** in the standard sense of quantum information: the momentum plays the role of the control and the spin of the target, and the operation on the target is the branch-dependent Wigner rotation. When the branch momenta are orthogonal, the spin channel obtained by tracing the momentum is
 $$
-\tilde{\rho}\ \longmapsto\ \sum_i q_i\,\tilde{W}_i\,\tilde{\rho}\,\tilde{W}_i^\dagger ,
+\tilde{\rho}\ \longmapsto\ \sum_i q_i\,\tilde{W}_i\,\tilde{\rho}\,\tilde{W}_i^{*} ,
 $$
 a mixed-unitary channel whose Kraus operators are the branch rotations.
 
@@ -237,7 +237,7 @@ $$
 $$
 and the compact factor is the **Wigner rotation**
 $$
-\tilde{W}(\tilde{\Lambda},\tilde{U}) = \tilde{\Lambda}_{\tilde{U}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{U}}^{-1}, \qquad \tilde{U}' = \tilde{\Lambda}\tilde{U}\tilde{\Lambda}^\dagger ,
+\tilde{W}(\tilde{\Lambda},\tilde{U}) = \tilde{\Lambda}_{\tilde{U}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{U}}^{-1}, \qquad \tilde{U}' = \tilde{\Lambda}\tilde{U}\tilde{\Lambda}^{*} ,
 $$
 obeying the cocycle condition $\tilde{W}(\tilde{\Lambda}_2\tilde{\Lambda}_1,\tilde{U}) = \tilde{W}(\tilde{\Lambda}_2,\tilde{\Lambda}_1\tilde{U})\tilde{W}(\tilde{\Lambda}_1,\tilde{U})$. For a boost along $x$ of rapidity $1$ followed by one along $y$ of rapidity $0.5$, the rotation is $0.99366\,e_0+0.11246\,e_3$, an angle of $12.9146^\circ$ about $\hat{\mathbf{z}}$.
 

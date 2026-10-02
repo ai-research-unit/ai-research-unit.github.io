@@ -132,30 +132,30 @@ The formula has the same shape as the quaternion product: scalar part, vector pa
 
 ### Conjugations
 
-There are **four** natural conjugations on $\mathbb{B}$. The first three come from the quaternion conjugation $\bar{\cdot}$ and the complex conjugation ${}^*$; the fourth is the negative of the Hermitian conjugation.
+There are **four** natural conjugations on $\mathbb{B}$. The first three come from the quaternion conjugation ${}^{\natural}$ and the complex conjugation $\bar{\cdot}$; the fourth is the negative of the Hermitian conjugation.
 
-**Quaternion conjugation** $\bar{\tilde{Q}}$:
-
-$$
-\bar{\tilde{Q}} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3 .
-$$
-
-**Complex conjugation** $\tilde{Q}^*$:
+**Quaternion conjugation** $\tilde{Q}^{\natural}$:
 
 $$
-\tilde{Q}^* = Q_0^* e_0 + Q_1^* e_1 + Q_2^* e_2 + Q_3^* e_3 .
+\tilde{Q}^{\natural} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3 .
 $$
 
-**Hermitian conjugation** $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$:
+**Complex conjugation** $\bar{\tilde{Q}}$:
 
 $$
-\tilde{Q}^\dagger = Q_0^* e_0 - Q_1^* e_1 - Q_2^* e_2 - Q_3^* e_3 .
+\bar{\tilde{Q}} = \bar{Q}_0 e_0 + \bar{Q}_1 e_1 + \bar{Q}_2 e_2 + \bar{Q}_3 e_3 .
 $$
 
-**Anti-Hermitian conjugation** $\tilde{Q}^\flat = -\tilde{Q}^\dagger$:
+**Hermitian conjugation** $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$:
 
 $$
-\tilde{Q}^\flat = -Q_0^* e_0 + Q_1^* e_1 + Q_2^* e_2 + Q_3^* e_3 .
+\tilde{Q}^{*} = \bar{Q}_0 e_0 - \bar{Q}_1 e_1 - \bar{Q}_2 e_2 - \bar{Q}_3 e_3 .
+$$
+
+**Anti-Hermitian conjugation** $\tilde{Q}^\flat = -\tilde{Q}^{*}$:
+
+$$
+\tilde{Q}^\flat = -\bar{Q}_0 e_0 + \bar{Q}_1 e_1 + \bar{Q}_2 e_2 + \bar{Q}_3 e_3 .
 $$
 
 Each conjugation is an involution: applying it twice returns the biquaternion. Each therefore splits $\mathbb{B}$ into a fixed space and an anti-fixed space, and each of the two is a real vector subspace of $\mathbb{B}$.
@@ -164,32 +164,32 @@ Each conjugation is an involution: applying it twice returns the biquaternion. E
 
 | conjugation | fixes | negates | physical role |
 |---|---|---|---|
-| $\bar{\cdot}$ | $\mathbb{C}_{\mathbb{B}}$ (complex time) | $\mathrm{Vect}(\mathbb{B})$ (complex space) | separates the time coordinates from the spatial ones |
-| ${}^{*}$ | $\mathbb{H}_{\mathbb{B}}$ (real sector) | $i\mathbb{H}_{\mathbb{B}}$ (imaginary sector) | separates the real coefficients from the coefficients that carry $i$ |
-| ${}^{\dagger}$ | $\mathbb{M}_+$ (informational) | $\mathbb{M}_-$ (material) | separates the informational sector from the material one |
-| ${}^{\flat} = -{}^{\dagger}$ | $\mathbb{M}_-$ (material) | $\mathbb{M}_+$ (informational) | the defining involution of the material sector |
+| ${}^{\natural}$ | $\mathbb{C}_{\mathbb{B}}$ (complex time) | $\mathrm{Vect}(\mathbb{B})$ (complex space) | separates the time coordinates from the spatial ones |
+| $\bar{\cdot}$ | $\mathbb{H}_{\mathbb{B}}$ (real sector) | $i\mathbb{H}_{\mathbb{B}}$ (imaginary sector) | separates the real coefficients from the coefficients that carry $i$ |
+| ${}^{*}$ | $\mathbb{M}_+$ (informational) | $\mathbb{M}_-$ (material) | separates the informational sector from the material one |
+| ${}^{\flat} = -{}^{*}$ | $\mathbb{M}_-$ (material) | $\mathbb{M}_+$ (informational) | the defining involution of the material sector |
 
-The last two lines are the same involution with the two eigenspaces exchanged, and that is why the fourth conjugation adds no subspace: the pair $\dagger,\flat$ produces the two sectors, but it produces them once.
+The last two lines are the same involution with the two eigenspaces exchanged, and that is why the fourth conjugation adds no subspace: the pair ${}^{*},\flat$ produces the two sectors, but it produces them once.
 
 ### The Group of Conjugations
 
 The quaternion conjugation and the complex conjugation are commuting involutions. They generate the Klein four-group
 
 $$
-\{\mathrm{id}, \bar{\cdot}, {}^{*}, {}^{\dagger}\} \cong \mathbb{Z}/2 \times \mathbb{Z}/2,
+\{\mathrm{id}, {}^{\natural}, \bar{\cdot}, {}^{*}\} \cong \mathbb{Z}/2 \times \mathbb{Z}/2,
 \qquad\text{with}\qquad
-\tilde{Q}^\dagger = \bar{\tilde{Q}}^{*} = \tilde{Q}^{*\bar{}} .
+\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = \bigl(\bar{\tilde{Q}}\bigr)^{\natural} .
 $$
 
 So Hermitian conjugation is the composition of the two commuting generators, and there is no fourth independent involution of this kind.
 
-The anti-Hermitian conjugation is defined by $\tilde{Q}^\flat = -\tilde{Q}^\dagger$. It is an involution, since $(\tilde{Q}^\flat)^\flat = \tilde{Q}$, but it is **not** an algebra anti-automorphism, and it is not a member of the Klein group above. Composing it with $\dagger$ gives
+The anti-Hermitian conjugation is defined by $\tilde{Q}^\flat = -\tilde{Q}^{*}$. It is an involution, since $(\tilde{Q}^\flat)^\flat = \tilde{Q}$, but it is **not** an algebra anti-automorphism, and it is not a member of the Klein group above. Composing it with ${}^{*}$ gives
 
 $$
-(\tilde{Q}^\dagger)^\flat = -\tilde{Q}, \qquad (\tilde{Q}^\flat)^\dagger = -\tilde{Q},
+(\tilde{Q}^{*})^\flat = -\tilde{Q}, \qquad (\tilde{Q}^\flat)^{*} = -\tilde{Q},
 $$
 
-so $\flat$ is $\dagger$ together with the central sign $-1$. Under a product it behaves as
+so $\flat$ is ${}^{*}$ together with the central sign $-1$. Under a product it behaves as
 
 $$
 (\tilde{Q}\tilde{R})^\flat = -\tilde{R}^\flat \tilde{Q}^\flat ,
@@ -199,17 +199,17 @@ an anti-automorphism only up to the sign. This is the algebraic reason the mater
 
 ## The Six Subspaces
 
-The three commuting involutions $\bar{\cdot}$, ${}^{*}$ and ${}^{\dagger}$ each split $\mathbb{B}$ into a fixed space and an anti-fixed space. The **six** subspaces so obtained are the distinguished real subspaces of the algebra: four of dimension 4, together with the two-dimensional **center** and the six-dimensional **vector subspace**. The fourth conjugation produces no further subspace, as explained above.
+The three commuting involutions ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ each split $\mathbb{B}$ into a fixed space and an anti-fixed space. The **six** subspaces so obtained are the distinguished real subspaces of the algebra: four of dimension 4, together with the two-dimensional **center** and the six-dimensional **vector subspace**. The fourth conjugation produces no further subspace, as explained above.
 
 The table gives each subspace under its **algebraic** name, from the property that defines it, and its **physical** name, from the role it plays in the series; the physical interpretation is a column of the same table because in this series it is part of the definition of the object.
 
 | subspace | physical interpretation | defining condition | real basis | $\dim_{\mathbb{R}}$ | physical coordinates |
 |---|---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ (centre) | complex time sector | $\bar{\tilde{Q}} = \tilde{Q}$ | $e_0,\ ie_0$ | $2$ | $ct',\ ict$ |
-| $\mathrm{Vect}(\mathbb{B})$ (vector) | complex space sector | $\bar{\tilde{Q}} = -\tilde{Q}$ | $e_1,\ e_2,\ e_3,\ ie_1,\ ie_2,\ ie_3$ | $6$ | $x,\ y,\ z,\ ix',\ iy',\ iz'$ |
+| $\mathbb{C}_{\mathbb{B}}$ (centre) | complex time sector | $\tilde{Q}^{\natural} = \tilde{Q}$ | $e_0,\ ie_0$ | $2$ | $ct',\ ict$ |
+| $\mathrm{Vect}(\mathbb{B})$ (vector) | complex space sector | $\tilde{Q}^{\natural} = -\tilde{Q}$ | $e_1,\ e_2,\ e_3,\ ie_1,\ ie_2,\ ie_3$ | $6$ | $x,\ y,\ z,\ ix',\ iy',\ iz'$ |
 | $\mathbb{H}_{\mathbb{B}}$ (quaternion) | real sector | $\tilde{Q}^{*} = \tilde{Q}$ | $e_0,\ e_1,\ e_2,\ e_3$ | $4$ | $ct',\ x,\ y,\ z$ |
 | $i\mathbb{H}_{\mathbb{B}}$ (anti-quaternion) | imaginary sector | $\tilde{Q}^{*} = -\tilde{Q}$ | $ie_0,\ ie_1,\ ie_2,\ ie_3$ | $4$ | $ict,\ ix',\ iy',\ iz'$ |
-| $\mathbb{M}_+$ (Hermitian) | informational sector | $\tilde{Q}^{\dagger} = \tilde{Q}$ | $e_0,\ ie_1,\ ie_2,\ ie_3$ | $4$ | $ct',\ ix',\ iy',\ iz'$ |
+| $\mathbb{M}_+$ (Hermitian) | informational sector | $\tilde{Q}^{*} = \tilde{Q}$ | $e_0,\ ie_1,\ ie_2,\ ie_3$ | $4$ | $ct',\ ix',\ iy',\ iz'$ |
 | $\mathbb{M}_-$ (anti-Hermitian) | material sector | $\tilde{Q}^{\flat} = \tilde{Q}$ | $ie_0,\ e_1,\ e_2,\ e_3$ | $4$ | $ict,\ x,\ y,\ z$ |
 
 Each of the six has its own article in the **Focus on Subspaces** group of the series:
@@ -297,7 +297,7 @@ $$
 with the components obtained from the conjugation,
 
 $$
-\tilde{Q}_+ = \frac{1}{2}\left(\tilde{Q} + \tilde{Q}^{\dagger}\right), \qquad \tilde{Q}_- = \frac{1}{2}\left(\tilde{Q} - \tilde{Q}^{\dagger}\right),
+\tilde{Q}_+ = \frac{1}{2}\left(\tilde{Q} + \tilde{Q}^{*}\right), \qquad \tilde{Q}_- = \frac{1}{2}\left(\tilde{Q} - \tilde{Q}^{*}\right),
 $$
 
 giving the direct sum
@@ -323,7 +323,7 @@ $$
 with
 
 $$
-\tilde{Q}_{\mathrm{c}} = \frac{1}{2}\left(\tilde{Q} + \bar{\tilde{Q}}\right), \qquad \tilde{Q}_{\mathrm{v}} = \frac{1}{2}\left(\tilde{Q} - \bar{\tilde{Q}}\right),
+\tilde{Q}_{\mathrm{c}} = \frac{1}{2}\left(\tilde{Q} + \tilde{Q}^{\natural}\right), \qquad \tilde{Q}_{\mathrm{v}} = \frac{1}{2}\left(\tilde{Q} - \tilde{Q}^{\natural}\right),
 $$
 
 giving
@@ -344,7 +344,7 @@ $$
 \mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})
 $$
 
-are the eigenspace decompositions of the three pairwise commuting involutions ${}^{*}$, $\dagger$ and $\bar{\cdot}$. They are the only decompositions of this kind: each is determined by one of the three, and $\flat = -\dagger$ reproduces the eigenspaces of $\dagger$ with the signs exchanged and gives nothing new. That is why there are six subspaces rather than four or eight.
+are the eigenspace decompositions of the three pairwise commuting involutions $\bar{\cdot}$, ${}^{*}$ and ${}^{\natural}$. They are the only decompositions of this kind: each is determined by one of the three, and $\flat = -{}^{*}$ reproduces the eigenspaces of ${}^{*}$ with the signs exchanged and gives nothing new. That is why there are six subspaces rather than four or eight.
 
 **The four coordinate blocks.** Because the involutions commute, the four-dimensional subspaces are built from four common pieces:
 
@@ -402,7 +402,7 @@ $$
 
 Every pair that is not one of these three shares blocks, hence meets in dimension 1 or 3. In physical terms, the two sectors meet in nothing, and each of them meets the centre in one time coordinate and the vector subspace in one vector block.
 
-**Action of the conjugations.** The quaternion conjugation commutes with both ${}^{*}$ and $\dagger$, so it preserves each of the six subspaces, acting as $+1$ on the scalar blocks and $-1$ on the vector blocks. Multiplication by the central scalar $i$ interchanges the two summands in every decomposition:
+**Action of the conjugations.** The quaternion conjugation commutes with both $\bar{\cdot}$ and ${}^{*}$, so it preserves each of the six subspaces, acting as $+1$ on the scalar blocks and $-1$ on the vector blocks. Multiplication by the central scalar $i$ interchanges the two summands in every decomposition:
 
 $$
 i\,\mathbb{H}_{\mathbb{B}}=i\mathbb{H}_{\mathbb{B}},\qquad i\,(i\mathbb{H}_{\mathbb{B}})=\mathbb{H}_{\mathbb{B}},
@@ -429,7 +429,7 @@ which is $ict\,e_0 + \mathbf{x}$ with $ct = ct'$ and $\mathbf{x} = -\mathbf{x}'$
 The **biquaternion norm** of a biquaternion is
 
 $$
-N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2 ,
+N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 ,
 $$
 
 a complex number in general, central, **multiplicative**,
@@ -461,7 +461,7 @@ The vanishing of the biquaternion norm is the light cone: $N(ict\,e_0 + x e_1) =
 The **Hermitian form** of a biquaternion is
 
 $$
-\tilde{Q} \tilde{Q}^\dagger =
+\tilde{Q} \tilde{Q}^{*} =
 \left( \sum_{\mu=0}^{3} |Q_\mu|^2 \right) e_0
 + \left( Q_0^* \mathbf{Q} - Q_0 \mathbf{Q}^* - [\mathbf{Q}, \mathbf{Q}^*] \right),
 $$
@@ -469,23 +469,23 @@ $$
 where $\mathbf{Q}^{*}$ is the coefficient-wise conjugate of the vector part and $[\mathbf{Q},\mathbf{Q}^{*}]$ the complex bilinear cross product of the multiplication formula. In terms of the real and imaginary coefficient vectors, $\mathbf{q} = \sum_k q_k e_k$ and $\mathbf{q}' = \sum_k q'_k e_k$, with $[\mathbf{q},\mathbf{q}']$ the ordinary cross product,
 
 $$
-\tilde{Q} \tilde{Q}^\dagger =
+\tilde{Q} \tilde{Q}^{*} =
 \left( \sum_{\mu=0}^{3} |Q_\mu|^2 \right) e_0
 + 2i\left( q_0 \mathbf{q}' - q'_0 \mathbf{q} + [\mathbf{q}, \mathbf{q}'] \right),
 $$
 
 using $[\mathbf{Q},\mathbf{Q}^{*}] = -2i[\mathbf{q},\mathbf{q}']$ and $Q_0^{*}\mathbf{Q} - Q_0\mathbf{Q}^{*} = 2i(q_0\mathbf{q}' - q'_0\mathbf{q})$.
 
-So the vector terms are not free: they are the vector part of the product, built from $\mathbf{Q}$, $\mathbf{Q}^{*}$ and $Q_0$. The result is generally a **biquaternion**, not a scalar, and it is Hermitian: $\tilde{Q}\tilde{Q}^\dagger$ is fixed by $\dagger$, hence lies in the informational sector $\mathbb{M}_+$. Its scalar part is
+So the vector terms are not free: they are the vector part of the product, built from $\mathbf{Q}$, $\mathbf{Q}^{*}$ and $Q_0$. The result is generally a **biquaternion**, not a scalar, and it is Hermitian: $\tilde{Q}\tilde{Q}^{*}$ is fixed by ${}^{*}$, hence lies in the informational sector $\mathbb{M}_+$. Its scalar part is
 
 $$
-\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^\dagger\right) = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3} \left(q_\mu^2 + (q'_\mu)^2\right),
+\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^{*}\right) = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3} \left(q_\mu^2 + (q'_\mu)^2\right),
 $$
 
 non-negative, vanishing only for $\tilde{Q} = 0$. Its vector part vanishes exactly when the four coefficients are real multiples of one complex number, $Q_\mu = \lambda r_\mu$ with $\lambda \in \mathbb{C}$ and $r_\mu \in \mathbb{R}$; equivalently, when every ratio $Q_\mu/Q_\nu$ of nonzero coefficients is real. For example, $\tilde{Q} = e_0 + ie_1$ has coefficients $Q_0 = 1$ and $Q_1 = i$, not real multiples of one another, so
 
 $$
-\tilde{Q}^\dagger = e_0 + ie_1, \qquad \tilde{Q}\tilde{Q}^\dagger = (e_0 + ie_1)^2 = 2e_0 + 2ie_1 ,
+\tilde{Q}^{*} = e_0 + ie_1, \qquad \tilde{Q}\tilde{Q}^{*} = (e_0 + ie_1)^2 = 2e_0 + 2ie_1 ,
 $$
 
 with a nonzero vector part. Note that for this element the **biquaternion norm** vanishes instead, $N(\tilde{Q}) = 1 + i^2 = 0$: the two forms are different objects, and an element can be a zero divisor of the biquaternion norm and a perfectly ordinary element for the Hermitian form.
@@ -493,7 +493,7 @@ with a nonzero vector part. Note that for this element the **biquaternion norm**
 The corresponding **Euclidean norm** on the underlying real space is
 
 $$
-\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}\!\left(\tilde{Q}\tilde{Q}^\dagger\right)} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2} ,
+\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}\!\left(\tilde{Q}\tilde{Q}^{*}\right)} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2} ,
 $$
 
 positive-definite, subadditive and homogeneous of degree one, and **not** multiplicative with respect to the algebra product.
@@ -525,7 +525,7 @@ $$
 On the diagonal it is real and non-negative,
 
 $$
-\langle \tilde{Q}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} |Q_\mu|^2 = \mathrm{Sc}\!\left(\tilde{Q}\tilde{Q}^\dagger\right),
+\langle \tilde{Q}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} |Q_\mu|^2 = \mathrm{Sc}\!\left(\tilde{Q}\tilde{Q}^{*}\right),
 $$
 
 vanishing only for $\tilde{Q} = 0$.
@@ -536,8 +536,8 @@ vanishing only for $\tilde{Q} = 0$.
 
 The three quadratic objects are distinct and each is used for a different job:
 
-- **Biquaternion norm:** $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. Complex in general, central, multiplicative, capable of vanishing for nonzero $\tilde{Q}$. It controls the multiplicative structure: the rotors are its unit elements, and it carries the metric of the material sector.
-- **Hermitian form:** $\tilde{Q}\tilde{Q}^\dagger$, an element of the informational sector whose scalar part is $\sum_\mu |Q_\mu|^2$ and whose vector part is generally nonzero. Not multiplicative. It carries the positive-definite norm used by the operator and informational side of the series.
+- **Biquaternion norm:** $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. Complex in general, central, multiplicative, capable of vanishing for nonzero $\tilde{Q}$. It controls the multiplicative structure: the rotors are its unit elements, and it carries the metric of the material sector.
+- **Hermitian form:** $\tilde{Q}\tilde{Q}^{*}$, an element of the informational sector whose scalar part is $\sum_\mu |Q_\mu|^2$ and whose vector part is generally nonzero. Not multiplicative. It carries the positive-definite norm used by the operator and informational side of the series.
 - **Inner product:** $\langle \tilde{P},\tilde{Q}\rangle = \sum_\mu P_\mu^* Q_\mu$, complex in general, Hermitian, linear in the second argument. Its diagonal value equals the scalar part of the Hermitian form, and its imaginary part carries the relative phase of a pair.
 
 The biquaternion norm controls the multiplicative structure, the scalar part of the Hermitian form (equivalently the diagonal of the inner product) controls the topological structure — continuity, completeness, the Euclidean topology — and the full inner product adds the phase.
@@ -567,18 +567,18 @@ The material signature is the $ict$ metric of the series, $-c^2t^2 + \mathbf{x}^
 
 The biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$, with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and central scalar imaginary $i$. It is associative, non-commutative and not a division algebra.
 
-It carries four natural conjugations, $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$ and $\flat = -\dagger$, of which the first three are commuting involutions and form the Klein four-group together with the identity. The **six** distinguished real subspaces are the eigenspaces of those three involutions:
+It carries four natural conjugations, ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and $\flat = -{}^{*}$, of which the first three are commuting involutions and form the Klein four-group together with the identity. The **six** distinguished real subspaces are the eigenspaces of those three involutions:
 
-- the **center** $\mathbb{C}_{\mathbb{B}} = \{Q_0 e_0\}$, of dimension 2, fixed by $\bar{\cdot}$, a subalgebra isomorphic to $\mathbb{C}$; the complex time sector, carrying $ct'$ and $ict$;
-- the **vector subspace** $\mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : Q_0 = 0\}$, of dimension 6, the anti-fixed space of $\bar{\cdot}$, the kernel of the scalar part and the derived subspace $[\mathbb{B},\mathbb{B}]$; the complex space sector, carrying $x,y,z$ and $ix',iy',iz'$;
-- the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, of dimension 4, fixed by ${}^{*}$, the subalgebra isomorphic to $\mathbb{H}$; the real sector, carrying $ct',x,y,z$;
-- the **anti-quaternion subspace** $i\mathbb{H}_{\mathbb{B}}$, of dimension 4, the anti-fixed space of ${}^{*}$, an $\mathbb{H}_{\mathbb{B}}$-module but not a subalgebra; the imaginary sector, carrying $ict,ix',iy',iz'$;
-- the **Hermitian subspace** $\mathbb{M}_+$, of dimension 4, fixed by $\dagger$; the informational sector, carrying $ct',ix',iy',iz'$;
+- the **center** $\mathbb{C}_{\mathbb{B}} = \{Q_0 e_0\}$, of dimension 2, fixed by ${}^{\natural}$, a subalgebra isomorphic to $\mathbb{C}$; the complex time sector, carrying $ct'$ and $ict$;
+- the **vector subspace** $\mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : Q_0 = 0\}$, of dimension 6, the anti-fixed space of ${}^{\natural}$, the kernel of the scalar part and the derived subspace $[\mathbb{B},\mathbb{B}]$; the complex space sector, carrying $x,y,z$ and $ix',iy',iz'$;
+- the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, of dimension 4, fixed by $\bar{\cdot}$, the subalgebra isomorphic to $\mathbb{H}$; the real sector, carrying $ct',x,y,z$;
+- the **anti-quaternion subspace** $i\mathbb{H}_{\mathbb{B}}$, of dimension 4, the anti-fixed space of $\bar{\cdot}$, an $\mathbb{H}_{\mathbb{B}}$-module but not a subalgebra; the imaginary sector, carrying $ict,ix',iy',iz'$;
+- the **Hermitian subspace** $\mathbb{M}_+$, of dimension 4, fixed by ${}^{*}$; the informational sector, carrying $ct',ix',iy',iz'$;
 - the **anti-Hermitian subspace** $\mathbb{M}_-$, of dimension 4, fixed by $\flat$; the material sector, carrying $ict,x,y,z$.
 
 The three involutions give three direct-sum decompositions, $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ and $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$, which are the three pairings of the four coordinate blocks $\mathbb{R}e_0$, $\mathbb{R}(ie_0)$, $\operatorname{span}_\mathbb{R}\{e_1,e_2,e_3\}$, $\operatorname{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$; there is no fourth. Each of the four four-dimensional subspaces is one scalar block plus one vector block, and two distinct subspaces meet in dimension $0$, $1$ or $3$, the dimension $0$ occurring exactly for the three complementary pairs. Multiplication by the central $i$ swaps the two sectors and preserves the centre and the vector subspace.
 
-On the algebra sit three quadratic objects, kept apart throughout: the **biquaternion norm** $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, multiplicative and capable of vanishing for nonzero $\tilde{Q}$, which is the level-1 form and reproduces the Minkowski interval on the material coordinate and the opposite signature on the informational one; the **Hermitian form** $\tilde{Q}\tilde{Q}^\dagger$, an element of the informational sector whose scalar part is $\sum_\mu |Q_\mu|^2$; and the complex **inner product** $\langle \tilde{P},\tilde{Q}\rangle = \sum_\mu P_\mu^* Q_\mu$, whose diagonal value is that scalar part and whose imaginary part carries the relative phase of a pair.
+On the algebra sit three quadratic objects, kept apart throughout: the **biquaternion norm** $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, multiplicative and capable of vanishing for nonzero $\tilde{Q}$, which is the level-1 form and reproduces the Minkowski interval on the material coordinate and the opposite signature on the informational one; the **Hermitian form** $\tilde{Q}\tilde{Q}^{*}$, an element of the informational sector whose scalar part is $\sum_\mu |Q_\mu|^2$; and the complex **inner product** $\langle \tilde{P},\tilde{Q}\rangle = \sum_\mu P_\mu^* Q_\mu$, whose diagonal value is that scalar part and whose imaginary part carries the relative phase of a pair.
 
 ## Summary of Notation
 
@@ -599,18 +599,18 @@ On the algebra sit three quadratic objects, kept apart throughout: the **biquate
 | $i\mathbf{x}' = i x' e_1 + i y' e_2 + i z' e_3$ | Imaginary spatial vector |
 | $ict\,e_0 + \mathbf{x}$ | Material coordinate (four-position) |
 | $c\,t'\,e_0 + i\mathbf{x}'$ | Informational coordinate |
-| $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$ | Quaternion conjugate |
+| $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$ | Quaternion conjugate |
 | $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$ | Complex conjugate |
-| $\tilde{Q}^\dagger = Q_0^* e_0 - \mathbf{Q}^*$ | Hermitian conjugate |
-| $\tilde{Q}^\flat = -\bar{\tilde{Q}}^{*} = -\tilde{Q}^\dagger$ | Anti-Hermitian conjugate |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm, the level-1 form |
-| $\mathrm{Sc}(\tilde{Q}\tilde{Q}^\dagger) = \sum_\mu |Q_\mu|^2$ | Scalar part of the Hermitian form |
+| $\tilde{Q}^{*} = Q_0^* e_0 - \mathbf{Q}^*$ | Hermitian conjugate |
+| $\tilde{Q}^\flat = -\tilde{Q}^{*}$ | Anti-Hermitian conjugate |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, the level-1 form |
+| $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*}) = \sum_\mu |Q_\mu|^2$ | Scalar part of the Hermitian form |
 | $\langle \tilde{P},\tilde{Q}\rangle = \sum_\mu P_\mu^* Q_\mu$ | Inner product |
-| $\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q}\tilde{Q}^\dagger)}$ | Euclidean norm |
-| $\mathbb{C}_{\mathbb{B}}$ | Centre, fixed-point set of $\bar{\cdot}$: complex time sector, basis $e_0, ie_0$ |
-| $\mathrm{Vect}(\mathbb{B})$ | Vector subspace, anti-fixed set of $\bar{\cdot}$: complex space sector, basis $e_1,e_2,e_3,ie_1,ie_2,ie_3$ |
-| $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace, fixed-point set of ${}^{*}$: real sector, basis $e_0,e_1,e_2,e_3$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | Anti-quaternion subspace, anti-fixed set of ${}^{*}$: imaginary sector, basis $ie_0,ie_1,ie_2,ie_3$ |
+| $\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})}$ | Euclidean norm |
+| $\mathbb{C}_{\mathbb{B}}$ | Centre, fixed-point set of ${}^{\natural}$: complex time sector, basis $e_0, ie_0$ |
+| $\mathrm{Vect}(\mathbb{B})$ | Vector subspace, anti-fixed set of ${}^{\natural}$: complex space sector, basis $e_1,e_2,e_3,ie_1,ie_2,ie_3$ |
+| $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace, fixed-point set of $\bar{\cdot}$: real sector, basis $e_0,e_1,e_2,e_3$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | Anti-quaternion subspace, anti-fixed set of $\bar{\cdot}$: imaginary sector, basis $ie_0,ie_1,ie_2,ie_3$ |
 | $\mathbb{M}_+$ | Hermitian subspace: informational sector, basis $e_0,ie_1,ie_2,ie_3$ |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace: material sector, basis $ie_0,e_1,e_2,e_3$ |
 | $A_1,A_2,B_1,B_2$ | The four coordinate blocks $\mathbb{R}e_0$ ($ct'$), $\mathbb{R}(ie_0)$ ($ict$), $\operatorname{span}_\mathbb{R}\{e_1,e_2,e_3\}$ ($x,y,z$), $\operatorname{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$ ($ix',iy',iz'$) |

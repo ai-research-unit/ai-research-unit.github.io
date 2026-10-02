@@ -10,7 +10,7 @@ The biquaternion content of the Klein–Gordon path integral is a statement abou
 
 The article is organised as follows. The field configuration space and the action are set up first, and the equation of motion is derived from the action by variation. The generating functional is defined and the free Gaussian is evaluated, first on a finite lattice where it is an ordinary finite-dimensional integral and can be checked exactly, and then in the formal continuum limit. The stationary-phase expansion and the classical field are treated next. The Wick rotation and Euclidean functional are then discussed, with the positivity question. A closing section states the biquaternion reading, and open questions are recorded.
 
-Throughout, the conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central $i$; $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$ is the center; $\tilde{Q}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-$; $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$; and $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$. The scalar field is $\tilde{\Phi}=\phi\,e_0$ with $\phi$ complex, and the mass parameter is $\mu=mc/\hbar$. The analytic parts use natural units $\hbar=c=1$, as the companion articles do.
+Throughout, the conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central $i$; $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$ is the center; $\tilde{Q}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-$; $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$; and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$. The scalar field is $\tilde{\Phi}=\phi\,e_0$ with $\phi$ complex, and the mass parameter is $\mu=mc/\hbar$. The analytic parts use natural units $\hbar=c=1$, as the companion articles do.
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the scalar equation, its mass-term sign, and the central scalar operator.
 - Companion article *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*, for the free two-point function, the four contour prescriptions, and the Euclidean kernel.
@@ -50,10 +50,10 @@ S[\tilde{\Phi}]
 =\int d^4x\left[-\frac{1}{2}\partial_\mu\phi^*\,\partial^\mu\phi-\frac{1}{2}\mu^2\,|\phi|^2\right],
 $$
 
-with the index contracted by the level-2 $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$; in biquaternion form, using $\tilde{\Phi}^\dagger=\phi^*e_0$ and $\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})=|\phi|^2$, this is a central scalar functional,
+with the index contracted by the level-2 $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$; in biquaternion form, using $\tilde{\Phi}^{*}=\phi^*e_0$ and $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})=|\phi|^2$, this is a central scalar functional,
 
 $$
-S[\tilde{\Phi}]=\int d^4x\left[-\frac{1}{2}\mathrm{Sc}\!\left(\partial_\mu\tilde{\Phi}^\dagger\,\partial^\mu\tilde{\Phi}\right)-\frac{1}{2}\mu^2\,\mathrm{Sc}\!\left(\tilde{\Phi}^\dagger\tilde{\Phi}\right)\right]\in\mathbb{C}_{\mathbb{B}} .
+S[\tilde{\Phi}]=\int d^4x\left[-\frac{1}{2}\mathrm{Sc}\!\left(\partial_\mu\tilde{\Phi}^{*}\,\partial^\mu\tilde{\Phi}\right)-\frac{1}{2}\mu^2\,\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\tilde{\Phi}\right)\right]\in\mathbb{C}_{\mathbb{B}} .
 $$
 
 The action is central because every ingredient in it is: the field is central, the derivatives act coefficient-wise, the metric contraction is a real number, and the trace is the trace formula's scalar projection. It is also real, since the kinetic and mass terms are Hermitian.
@@ -89,7 +89,7 @@ with $|\mathbf{k}_n|=(1.3,2.1,0.8)$ along the directions $(0.2,-0.5,0.7)$, $(-0.
 The quadratic part of the action can be written in a form that displays the algebra. Integrating the kinetic term by parts,
 
 $$
-S[\tilde{\Phi}]=\frac{1}{2}\int d^4x\;\mathrm{Sc}\!\left(\tilde{\Phi}^\dagger\left(\Box-\mu^2\right)\tilde{\Phi}\right),
+S[\tilde{\Phi}]=\frac{1}{2}\int d^4x\;\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\left(\Box-\mu^2\right)\tilde{\Phi}\right),
 $$
 
 so the operator in the exponent is exactly the Klein–Gordon operator whose Green's functions the companion article constructs. The mass shell is where the momentum-space symbol vanishes,
@@ -97,7 +97,7 @@ so the operator in the exponent is exactly the Klein–Gordon operator whose Gre
 $$
 \frac{\omega^2}{c^2}-\mathbf{k}^2-\mu^2=0
 \qquad\Longleftrightarrow\qquad
-N(\tilde{K})=\tilde{K}\bar{\tilde{K}}=-\mu^2,
+N(\tilde{K})=\tilde{K}\tilde{K}^{\natural}=-\mu^2,
 $$
 
 a level set of the biquaternion norm on the material four-wavevector $\tilde{K}=i\omega/c\,e_0+\mathbf{k}$. The quadratic form of the path integral is thus the biquaternion norm of $\mathbb{M}_-$, shifted by the mass: the exponent's saddle is the biquaternion norm's level set, and the Gaussian's width is the operator whose symbol is that biquaternion norm minus the mass. This is the sense in which the framework's contribution to the scalar path integral is geometry rather than a new mechanism.
@@ -109,7 +109,7 @@ a level set of the biquaternion norm on the material four-wavevector $\tilde{K}=
 The generating functional is
 
 $$
-Z[J]=\int\mathcal{D}\tilde{\Phi}\;\exp\left(iS[\tilde{\Phi}]+i\int d^4x\;\mathrm{Sc}\!\left(\tilde{J}^\dagger\tilde{\Phi}\right)\right),
+Z[J]=\int\mathcal{D}\tilde{\Phi}\;\exp\left(iS[\tilde{\Phi}]+i\int d^4x\;\mathrm{Sc}\!\left(\tilde{J}^{*}\tilde{\Phi}\right)\right),
 $$
 
 with a central source $\tilde{J}=J\,e_0$ and a measure $\mathcal{D}\tilde{\Phi}$ on the central-valued configuration space. The correlation functions are the functional derivatives with respect to the source; the normalisation $Z[0]$ is fixed by the requirement that the vacuum expectation of the identity be one. The phase factor is the central unitary element analysed in the companion article *The Path Integral in Biquaternionic Form*, and the measure is a measure on a space of complex functions, i.e. on a space of pairs of real functions.
@@ -160,7 +160,7 @@ $$
 which is the standard massive Euclidean propagator. The free two-point function of the path integral is therefore the Euclidean kernel
 
 $$
-\langle\tilde{\Phi}(\tilde{Q}_E)\tilde{\Phi}^\dagger(\tilde{Y}_E)\rangle
+\langle\tilde{\Phi}(\tilde{Q}_E)\tilde{\Phi}^{*}(\tilde{Y}_E)\rangle
 =G_E(\tilde{Q}_E-\tilde{Y}_E)\,e_0,
 $$
 
@@ -230,7 +230,7 @@ On $\mathbb{H}_{\mathbb{B}}$ the biquaternion norm is positive definite, and thi
 $$
 S[\tilde{\Phi}]\;\longmapsto\;iS_E[\tilde{\Phi}],
 \qquad
-S_E[\tilde{\Phi}]=\frac{1}{2}\int d^4x_E\;\mathrm{Sc}\!\left(\tilde{\Phi}^\dagger\left(-\Delta_E+\mu^2\right)\tilde{\Phi}\right),
+S_E[\tilde{\Phi}]=\frac{1}{2}\int d^4x_E\;\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\left(-\Delta_E+\mu^2\right)\tilde{\Phi}\right),
 $$
 
 and the phase factor becomes a decaying weight,
@@ -282,7 +282,7 @@ Four statements summarise what the framework contributes to the Klein–Gordon p
 The Klein–Gordon path integral is the functional integral over central-valued fields, $\tilde{\Phi}=\phi e_0$ with $\phi$ complex, weighted by the central phase $e^{iS}$ with the action
 
 $$
-S[\tilde{\Phi}]=\frac{1}{2}\int d^4x\;\mathrm{Sc}\!\left(\tilde{\Phi}^\dagger\left(\Box-\mu^2\right)\tilde{\Phi}\right)
+S[\tilde{\Phi}]=\frac{1}{2}\int d^4x\;\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\left(\Box-\mu^2\right)\tilde{\Phi}\right)
 =\int d^4x\left[-\frac{1}{2}\partial_\mu\phi^*\partial^\mu\phi-\frac{1}{2}\mu^2|\phi|^2\right].
 $$
 
@@ -312,8 +312,8 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $\tilde{Q}_E=c\tau\,e_0+\mathbf{x}$ | Euclidean coordinate, $\in\mathbb{H}_{\mathbb{B}}$ |
 | $\tilde{\Phi}=\phi e_0$ | Scalar (spin-$0$) field, valued in the center |
 | $\tilde{K}=i\omega/c\,e_0+\mathbf{k}$ | Material four-wavevector, $\in\mathbb{M}_-$ |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm; $N(\tilde{K})=-\mu^2$ is the mass shell |
-| $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$ | d'Alembertian, series convention |
+| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $N(\tilde{K})=-\mu^2$ is the mass shell |
+| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$ | d'Alembertian, series convention |
 | $\mu=mc/\hbar$ | Mass parameter ($\mu=m$ in natural units) |
 | $\Omega_{\mathbf{k}}=\sqrt{\mathbf{k}^2+\mu^2}$ | On-shell frequency, natural units |
 | $S[\tilde{\Phi}]$ | Klein–Gordon action, central scalar |

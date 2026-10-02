@@ -8,7 +8,7 @@ $$
 Q_g(\tilde x) = \mathrm{Sc}(g\tilde xg\tilde x) = \mathrm{Sc}\bigl((g\tilde x)^2\bigr).
 $$
 
-This article studies that form, which is called here a **quaternion metric**. It is an indefinite form on $\mathbb{H}$, non-degenerate, of signature $(1,3)$ for every nonzero $g$, and it is the interval form that the source of the construction proposes as a generalisation of the Minkowski interval that keeps Hamilton's multiplication rules intact, in place of the Riemannian strategy of varying them. It is not the quaternion norm $N(\tilde x) = \tilde x\bar{\tilde x}$ and it is not a distance; the word *metric* is used in its differential-geometric sense of a quadratic form on a space of displacements, and the name records that the form is built from a quaternion.
+This article studies that form, which is called here a **quaternion metric**. It is an indefinite form on $\mathbb{H}$, non-degenerate, of signature $(1,3)$ for every nonzero $g$, and it is the interval form that the source of the construction proposes as a generalisation of the Minkowski interval that keeps Hamilton's multiplication rules intact, in place of the Riemannian strategy of varying them. It is not the quaternion norm $N(\tilde x) = \tilde x\tilde{x}^{\natural}$ and it is not a distance; the word *metric* is used in its differential-geometric sense of a quadratic form on a space of displacements, and the name records that the form is built from a quaternion.
 
 The article turns on one identity: $Q_g = \omega\circ L_g$, where $\omega$ is the Minkowski form of the algebra and $L_g$ is left multiplication by $g$. Everything follows from it. The form is non-degenerate of signature $(1,3)$ for every nonzero $g$; all the forms of the family are isometric to one another; the family is the image of the single form $\omega$ under precomposition with the left multiplications; and the isometry group of $Q_g$ is the conjugate of the Lorentz group by $L_g$. The Gram matrix of $Q_g$ is computed in closed form and its determinant is $-N(g)^4$, so the non-degeneracy is visible a second time, quantitatively.
 
@@ -16,7 +16,7 @@ The treatment is mathematical throughout. No physical object is introduced, no s
 
 The bilinear and quadratic-form vocabulary, the polarisation and the notion of isometry are from *Bilinear Forms* and *Quadratic Forms and Polarisation*; the algebra, the conjugate and the scalar–vector decomposition are from *Quaternion Algebra*; the norm, the inner product and the group of units are from *Quaternion Norm and Invertibility*; the forms with values in an algebra that are the norms are from *Quadratic Forms over Algebras and Norms*; the determinant of the left regular representation is pointed to in *Quaternion 4x4 Regular Matrix Element Representation*; the split-quaternion form of signature $(2,2)$ used for contrast is from *Split-Quaternion Norm and Invertibility*.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$. A quaternion is $\tilde x = x_0e_0 + x_1e_1 + x_2e_2 + x_3e_3$, with **scalar part** $\mathrm{Sc}\,\tilde x = x_0$ and **vector part** $\mathbf x = \mathrm{Vect}\,\tilde x = x_1e_1+x_2e_2+x_3e_3$; the conjugate is $\bar{\tilde x} = x_0e_0 - \mathbf x$, the quaternion norm is $N(\tilde x) = \tilde x\bar{\tilde x} = x_0^2+x_1^2+x_2^2+x_3^2$, and the modulus is $|\tilde x| = \sqrt{N(\tilde x)}$. The four real numbers $x_0,x_1,x_2,x_3$ form the coordinate vector of $\tilde x$, also written $x = (x_0,x_1,x_2,x_3)$; the meaning is clear from the context. The multiplication is written without a dot, and the scalar part is written $\mathrm{Sc}$ and the vector part $\mathrm{Vect}$.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$. A quaternion is $\tilde x = x_0e_0 + x_1e_1 + x_2e_2 + x_3e_3$, with **scalar part** $\mathrm{Sc}\,\tilde x = x_0$ and **vector part** $\mathbf x = \mathrm{Vect}\,\tilde x = x_1e_1+x_2e_2+x_3e_3$; the conjugate is $\tilde{x}^{\natural} = x_0e_0 - \mathbf x$, the quaternion norm is $N(\tilde x) = \tilde x\tilde{x}^{\natural} = x_0^2+x_1^2+x_2^2+x_3^2$, and the modulus is $|\tilde x| = \sqrt{N(\tilde x)}$. The four real numbers $x_0,x_1,x_2,x_3$ form the coordinate vector of $\tilde x$, also written $x = (x_0,x_1,x_2,x_3)$; the meaning is clear from the context. The multiplication is written without a dot, and the scalar part is written $\mathrm{Sc}$ and the vector part $\mathrm{Vect}$.
 
 ## The Minkowski Form of the Algebra
 
@@ -68,7 +68,7 @@ $$
 
 **Proposition.** $L_g$ and $R_g$ are bijective for $g\neq0$, with $L_g^{-1} = L_{g^{-1}}$ and $R_g^{-1} = R_{g^{-1}}$, and $L_{pq} = L_pL_q$, $R_{pq} = R_qR_p$.
 
-*Proof.* Multiplication is associative and every nonzero quaternion is invertible by *Quaternion Norm and Invertibility*, with $g^{-1} = \bar g/N(g)$; this gives the inverses and the composition rules directly from the definitions.
+*Proof.* Multiplication is associative and every nonzero quaternion is invertible by *Quaternion Norm and Invertibility*, with $g^{-1} = g^{\natural}/N(g)$; this gives the inverses and the composition rules directly from the definitions.
 
 ## The Form of a Quaternion
 
@@ -238,13 +238,13 @@ The quaternion norm $N(\tilde x) = x_0^2+x_1^2+x_2^2+x_3^2$ of *Quaternion Norm 
 
 ### The Forms with Values in an Algebra
 
-*Quadratic Forms over Algebras and Norms* studies forms whose values lie in the algebra, of which the quaternion norm $N(\tilde x) = \tilde x\bar{\tilde x}$ is the quaternion case, together with the composition laws $N(\tilde x\tilde y) = N(\tilde x)N(\tilde y)$ and the Cayley–Dickson doubling that they support. A quaternion metric takes its values in the base field and carries no composition law; the two theories intersect in the single form $\omega = Q_{e_0}$, which is the Minkowski form of the algebra and is not the norm.
+*Quadratic Forms over Algebras and Norms* studies forms whose values lie in the algebra, of which the quaternion norm $N(\tilde x) = \tilde x\tilde{x}^{\natural}$ is the quaternion case, together with the composition laws $N(\tilde x\tilde y) = N(\tilde x)N(\tilde y)$ and the Cayley–Dickson doubling that they support. A quaternion metric takes its values in the base field and carries no composition law; the two theories intersect in the single form $\omega = Q_{e_0}$, which is the Minkowski form of the algebra and is not the norm.
 
 ### The Other Four-Dimensional Forms of the Corpus
 
 | algebra | form | values | signature | in the family $Q_g$? |
 |---|---|---|---|---|
-| $\mathbb{H}$ | quaternion norm $N(\tilde x)=\tilde x\bar{\tilde x}$ | $\mathbb{R}$ | $(4,0)$ | no, definite |
+| $\mathbb{H}$ | quaternion norm $N(\tilde x)=\tilde x\tilde{x}^{\natural}$ | $\mathbb{R}$ | $(4,0)$ | no, definite |
 | $\mathbb{H}$ | quaternion metric $Q_g$, $g\neq0$ | $\mathbb{R}$ | $(1,3)$ | yes, the family itself |
 | $\mathbb{H}_{\mathrm{s}}$ | determinant form | $\mathbb{R}$ | $(2,2)$ | no, wrong algebra and signature |
 | $\mathbb{B}$ | biquaternion norm | $\mathbb{C}$ | complex | no, complex-valued |
@@ -269,8 +269,8 @@ The form is neither the quaternion norm of the algebra, which is positive defini
 | $e_0=1,e_1,e_2,e_3$ | Basis, $e_k^2=-e_0$, $e_1e_2=e_3$ |
 | $\tilde x = x_0e_0+\mathbf x$ | Quaternion, scalar part $x_0$, vector part $\mathbf x$ |
 | $\mathrm{Sc},\mathrm{Vect}$ | Scalar and vector part functionals |
-| $\bar{\tilde x}$ | Quaternion conjugate |
-| $N(\tilde x)=\tilde x\bar{\tilde x}$ | Quaternion norm (from *Quaternion Norm and Invertibility*) |
+| $\tilde{x}^{\natural}$ | Quaternion conjugate |
+| $N(\tilde x)=\tilde x\tilde{x}^{\natural}$ | Quaternion norm (from *Quaternion Norm and Invertibility*) |
 | $L_g(\tilde x)=g\tilde x$, $R_g(\tilde x)=\tilde x g$ | Left and right multiplication |
 | $\omega(\tilde x)=\mathrm{Sc}(\tilde x^2)=x_0^2-x_1^2-x_2^2-x_3^2$ | Minkowski form of the algebra |
 | $\beta_\omega$ | Its polar form |

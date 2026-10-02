@@ -9,7 +9,7 @@ The treatment is purely mathematical. The independent variables are four real va
 
 Every claim is either proved or stated as a definition. Where a computation is long, all steps are shown.
 
-The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$, its conjugations, its four fixed-point subspaces, the Euclidean norm, the split-biquaternion gradient $\tilde{\nabla}$, the quaternion conjugate $\bar{\tilde{\nabla}}$, the d'Alembertian $\Box$, the square $\tilde{\nabla}^2$, and the convective derivative $\tilde{D}$ are assumed from the preceding articles.
+The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$, its conjugations, its four fixed-point subspaces, the Euclidean norm, the split-biquaternion gradient $\tilde{\nabla}$, the quaternion conjugate $\tilde{\nabla}^{\natural}$, the d'Alembertian $\Box$, the square $\tilde{\nabla}^2$, and the convective derivative $\tilde{D}$ are assumed from the preceding articles.
 
 The idempotents of the split complex algebra are $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
@@ -170,10 +170,10 @@ Multiplying by $e_\mu e_\nu$ and summing gives the result.
 **Theorem (divergence theorem for the quaternion conjugate).** Under the same hypotheses,
 
 $$
-\int_\Omega \bar{\tilde{\nabla}} \tilde{F} \, dV = \int_{\partial \Omega} \bar{\tilde{n}} \tilde{F} \, dS,
+\int_\Omega \tilde{\nabla}^{\natural} \tilde{F} \, dV = \int_{\partial \Omega} \tilde{n}^{\natural} \tilde{F} \, dS,
 $$
 
-where $\bar{\tilde{n}} = n_0 e_0 - \sum_{k=1}^{3} n_k e_k$ is the quaternion conjugate of the outward unit normal.
+where $\tilde{n}^{\natural} = n_0 e_0 - \sum_{k=1}^{3} n_k e_k$ is the quaternion conjugate of the outward unit normal.
 
 **Proof.** This is the same computation as above, with the signs of the vector components reversed.
 
@@ -184,23 +184,23 @@ where $\bar{\tilde{n}} = n_0 e_0 - \sum_{k=1}^{3} n_k e_k$ is the quaternion con
 **Theorem (first Green's formula).** Let $\tilde{F}$ and $\tilde{G}$ be twice continuously differentiable split-biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\partial_{\tilde{n}} = \sum_\mu n_\mu \partial_{q_\mu}$ be the scalar normal derivative. Then
 
 $$
-\int_\Omega \left[ \sum_{\mu=0}^{3} (\partial_\mu \tilde{F})\, \overline{(\partial_\mu \tilde{G})} + \tilde{F}\, \overline{\Box \tilde{G}} \right] dV = \int_{\partial \Omega} \tilde{F}\, \overline{\partial_{\tilde{n}} \tilde{G}} \, dS.
+\int_\Omega \left[ \sum_{\mu=0}^{3} (\partial_\mu \tilde{F})\, ((\partial_\mu \tilde{G}))^{\natural} + \tilde{F}\, (\Box \tilde{G})^{\natural} \right] dV = \int_{\partial \Omega} \tilde{F}\, (\partial_{\tilde{n}} \tilde{G})^{\natural} \, dS.
 $$
 
-**Proof.** Apply the ordinary divergence theorem in $\mathbb{R}^4$ to the split-biquaternion-valued field with components $\tilde{F}\,\overline{\partial_\mu \tilde{G}}$: it gives $\int_\Omega \partial_\mu(\tilde{F}\,\overline{\partial_\mu \tilde{G}})\,dV = \int_{\partial\Omega} n_\mu \tilde{F}\,\overline{\partial_\mu \tilde{G}}\,dS$. The product rule expands the volume integrand as $(\partial_\mu\tilde{F})\,\overline{\partial_\mu \tilde{G}} + \tilde{F}\,\overline{\partial_\mu^2 \tilde{G}}$, the second term because $\partial_\mu$ is real and therefore commutes with the conjugation. Summing over $\mu$ replaces $\sum_\mu \partial_\mu^2$ by $\Box$ and $\sum_\mu n_\mu \partial_\mu$ by $\partial_{\tilde{n}}$.
+**Proof.** Apply the ordinary divergence theorem in $\mathbb{R}^4$ to the split-biquaternion-valued field with components $\tilde{F}\,(\partial_\mu \tilde{G})^{\natural}$: it gives $\int_\Omega \partial_\mu(\tilde{F}\,(\partial_\mu \tilde{G})^{\natural})\,dV = \int_{\partial\Omega} n_\mu \tilde{F}\,(\partial_\mu \tilde{G})^{\natural}\,dS$. The product rule expands the volume integrand as $(\partial_\mu\tilde{F})\,(\partial_\mu \tilde{G})^{\natural} + \tilde{F}\,(\partial_\mu^2 \tilde{G})^{\natural}$, the second term because $\partial_\mu$ is real and therefore commutes with the conjugation. Summing over $\mu$ replaces $\sum_\mu \partial_\mu^2$ by $\Box$ and $\sum_\mu n_\mu \partial_\mu$ by $\partial_{\tilde{n}}$.
 
 ### Second Green's Formula
 
 **Theorem (second Green's formula).** Under the same hypotheses,
 
 $$
-\int_\Omega \left[ \tilde{F}\, \overline{\Box \tilde{G}} - (\Box \tilde{F})\, \bar{\tilde{G}} \right] dV = \int_{\partial \Omega} \left[ \tilde{F}\, \overline{\partial_{\tilde{n}} \tilde{G}} - (\partial_{\tilde{n}} \tilde{F})\, \bar{\tilde{G}} \right] dS.
+\int_\Omega \left[ \tilde{F}\, (\Box \tilde{G})^{\natural} - (\Box \tilde{F})\, \tilde{G}^{\natural} \right] dV = \int_{\partial \Omega} \left[ \tilde{F}\, (\partial_{\tilde{n}} \tilde{G})^{\natural} - (\partial_{\tilde{n}} \tilde{F})\, \tilde{G}^{\natural} \right] dS.
 $$
 
 **Proof.** For each $\mu$ the product rule gives
 
 $$
-\partial_\mu \left[ \tilde{F}\, \overline{\partial_\mu \tilde{G}} - (\partial_\mu \tilde{F})\, \bar{\tilde{G}} \right] = \tilde{F}\, \overline{\partial_\mu^2 \tilde{G}} - (\partial_\mu^2 \tilde{F})\, \bar{\tilde{G}},
+\partial_\mu \left[ \tilde{F}\, (\partial_\mu \tilde{G})^{\natural} - (\partial_\mu \tilde{F})\, \tilde{G}^{\natural} \right] = \tilde{F}\, (\partial_\mu^2 \tilde{G})^{\natural} - (\partial_\mu^2 \tilde{F})\, \tilde{G}^{\natural},
 $$
 
 the two mixed terms being the same product and cancelling. Summing over $\mu$ makes the left side the divergence of a split-biquaternion-valued field, whose volume integral is the stated volume integrand and whose boundary integral, by the ordinary divergence theorem and $\sum_\mu n_\mu \partial_\mu = \partial_{\tilde{n}}$, is the stated surface term. The conjugation is inert throughout because $\partial_\mu$ is real.
@@ -221,7 +221,7 @@ $$
 \partial_\mu \left[ (\partial_\mu \tilde{F}) \tilde{G} - \tilde{F} (\partial_\mu \tilde{G}) \right] = (\partial_\mu^2 \tilde{F}) \tilde{G} - \tilde{F} (\partial_\mu^2 \tilde{G}),
 $$
 
-the two mixed terms cancelling. Summing over $\mu$ makes the left side a divergence whose volume integral is the stated volume integrand, and whose boundary integral, by the ordinary divergence theorem and $\sum_\mu n_\mu \partial_\mu = \partial_{\tilde{n}}$, is the stated surface term. This is the conjugate pairing of the second Green formula above, i.e. the second Green formula with $\tilde{G}$ replaced by $\bar{\tilde{G}}$ up to the sign of both sides.
+the two mixed terms cancelling. Summing over $\mu$ makes the left side a divergence whose volume integral is the stated volume integrand, and whose boundary integral, by the ordinary divergence theorem and $\sum_\mu n_\mu \partial_\mu = \partial_{\tilde{n}}$, is the stated surface term. This is the conjugate pairing of the second Green formula above, i.e. the second Green formula with $\tilde{G}$ replaced by $\tilde{G}^{\natural}$ up to the sign of both sides.
 
 ## The Fundamental Solution
 
@@ -230,10 +230,10 @@ the two mixed terms cancelling. Summing over $\mu$ makes the left side a diverge
 The **fundamental solution** of the gradient operator $\tilde{\nabla}$ is the split-biquaternion-valued function
 
 $$
-\tilde{G}(\tilde{Q}) = \frac{\bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4},
+\tilde{G}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4},
 $$
 
-where $\bar{\tilde{Q}}$ is the quaternion conjugate of $\tilde{Q}$ and $\|\tilde{Q}\|_E^4 = (\|\tilde{Q}\|_E^2)^2$ is the fourth power of the Euclidean norm.
+where $\tilde{Q}^{\natural}$ is the quaternion conjugate of $\tilde{Q}$ and $\|\tilde{Q}\|_E^4 = (\|\tilde{Q}\|_E^2)^2$ is the fourth power of the Euclidean norm.
 
 The function $\tilde{G}$ is defined for $\tilde{Q} \neq 0$. It is homogeneous of degree $-3$: $\tilde{G}(\lambda \tilde{Q}) = \lambda^{-3} \tilde{G}(\tilde{Q})$ for $\lambda > 0$.
 
@@ -247,7 +247,7 @@ $$
 \tilde{\nabla} \tilde{G}(\tilde{Q}) = 0.
 $$
 
-**Proof.** Write $\tilde{Q} = \sum_\mu x_\mu e_\mu$ and $\|\tilde{Q}\|_E^2 = \sum_\mu x_\mu^2$. The quaternion conjugate is $\bar{\tilde{Q}} = x_0 e_0 - \sum_k x_k e_k$. So
+**Proof.** Write $\tilde{Q} = \sum_\mu x_\mu e_\mu$ and $\|\tilde{Q}\|_E^2 = \sum_\mu x_\mu^2$. The quaternion conjugate is $\tilde{Q}^{\natural} = x_0 e_0 - \sum_k x_k e_k$. So
 
 $$
 \tilde{G}(\tilde{Q}) = \frac{x_0 e_0 - \sum_k x_k e_k}{(\sum_\mu x_\mu^2)^2}.
@@ -256,16 +256,16 @@ $$
 A direct computation gives
 
 $$
-\tilde{\nabla} \tilde{G} = \sum_\mu e_\mu \partial_\mu \left( \frac{\bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4} \right) = \frac{\tilde{\nabla} \bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4} + \bar{\tilde{Q}} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right).
+\tilde{\nabla} \tilde{G} = \sum_\mu e_\mu \partial_\mu \left( \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4} \right) = \frac{\tilde{\nabla} \tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4} + \tilde{Q}^{\natural} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right).
 $$
 
-The first term is $\sum_\mu e_\mu \partial_\mu \bar{\tilde{Q}} = \sum_\mu e_\mu \bar{e}_\mu = e_0 - e_1^2 - e_2^2 - e_3^2 = e_0 + e_0 + e_0 + e_0 = 4 e_0$. The second term is
+The first term is $\sum_\mu e_\mu \partial_\mu \tilde{Q}^{\natural} = \sum_\mu e_\mu e_\mu^{\natural} = e_0 - e_1^2 - e_2^2 - e_3^2 = e_0 + e_0 + e_0 + e_0 = 4 e_0$. The second term is
 
 $$
-\bar{\tilde{Q}} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right) = \bar{\tilde{Q}} \sum_\mu e_\mu \partial_\mu \left( \frac{1}{\|\tilde{Q}\|_E^4} \right) = \bar{\tilde{Q}} \sum_\mu e_\mu \left( -\frac{4 x_\mu}{\|\tilde{Q}\|_E^6} \right) = -\frac{4 \bar{\tilde{Q}} \tilde{Q}}{\|\tilde{Q}\|_E^6}.
+\tilde{Q}^{\natural} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right) = \tilde{Q}^{\natural} \sum_\mu e_\mu \partial_\mu \left( \frac{1}{\|\tilde{Q}\|_E^4} \right) = \tilde{Q}^{\natural} \sum_\mu e_\mu \left( -\frac{4 x_\mu}{\|\tilde{Q}\|_E^6} \right) = -\frac{4 \tilde{Q}^{\natural} \tilde{Q}}{\|\tilde{Q}\|_E^6}.
 $$
 
-Since $\bar{\tilde{Q}} \tilde{Q} = \|\tilde{Q}\|_E^2 e_0$, the second term is $-4 \|\tilde{Q}\|_E^2 / \|\tilde{Q}\|_E^6 \cdot e_0 = -4 e_0 / \|\tilde{Q}\|_E^4$. So the two terms cancel, and $\tilde{\nabla} \tilde{G} = 0$.
+Since $\tilde{Q}^{\natural} \tilde{Q} = \|\tilde{Q}\|_E^2 e_0$, the second term is $-4 \|\tilde{Q}\|_E^2 / \|\tilde{Q}\|_E^6 \cdot e_0 = -4 e_0 / \|\tilde{Q}\|_E^4$. So the two terms cancel, and $\tilde{\nabla} \tilde{G} = 0$.
 
 ### The Distributional Gradient
 
@@ -289,10 +289,10 @@ $$
 \int_{\|\tilde{Q}\|_E > \varepsilon} \tilde{G} (\tilde{\nabla} \phi) \, dV = \int_{\|\tilde{Q}\|_E = \varepsilon} \tilde{G} \tilde{n} \phi \, dS - \int_{\|\tilde{Q}\|_E > \varepsilon} (\tilde{\nabla} \tilde{G}) \phi \, dV = \int_{\|\tilde{Q}\|_E = \varepsilon} \tilde{G} \tilde{n} \phi \, dS.
 $$
 
-On the sphere $\|\tilde{Q}\|_E = \varepsilon$, the outward unit normal of the region $\|\tilde{Q}\|_E > \varepsilon$ points away from the origin, i.e. inward across this inner sphere, so $\tilde{n} = -\tilde{Q}/\varepsilon$, and $\tilde{G} = \bar{\tilde{Q}}/\varepsilon^4$. So
+On the sphere $\|\tilde{Q}\|_E = \varepsilon$, the outward unit normal of the region $\|\tilde{Q}\|_E > \varepsilon$ points away from the origin, i.e. inward across this inner sphere, so $\tilde{n} = -\tilde{Q}/\varepsilon$, and $\tilde{G} = \tilde{Q}^{\natural}/\varepsilon^4$. So
 
 $$
-\tilde{G} \tilde{n} = \frac{\bar{\tilde{Q}}}{\varepsilon^4} \cdot \left(-\frac{\tilde{Q}}{\varepsilon}\right) = -\frac{\|\tilde{Q}\|_E^2}{\varepsilon^5} e_0 = -\frac{\varepsilon^2}{\varepsilon^5} e_0 = -\frac{1}{\varepsilon^3} e_0.
+\tilde{G} \tilde{n} = \frac{\tilde{Q}^{\natural}}{\varepsilon^4} \cdot \left(-\frac{\tilde{Q}}{\varepsilon}\right) = -\frac{\|\tilde{Q}\|_E^2}{\varepsilon^5} e_0 = -\frac{\varepsilon^2}{\varepsilon^5} e_0 = -\frac{1}{\varepsilon^3} e_0.
 $$
 
 So
@@ -457,7 +457,7 @@ where each of the two residues is the quaternion residue of the corresponding co
 
 The zero divisor set of $\mathbb{H}_{\mathbb{D}}$ is the union of two four-dimensional linear subspaces $Z_+$ and $Z_-$. In the integration theory, the zero divisors play the following roles.
 
-**In the fundamental solution.** The fundamental solution $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$ is defined for every $\tilde{Q} \neq 0$, including the nonzero zero divisors, since its denominator is the Euclidean norm. On the split complex directions the identity $\bar{\tilde{Q}}\tilde{Q} = \|\tilde{Q}\|_E^2 e_0$ fails (for $\tilde{Q} = 1 + j$ one has $\bar{\tilde{Q}}\tilde{Q} = 2 + 2j \neq 2$), and with it the proof that $\tilde{\nabla}\tilde{G} = 0$; the only singularity of $\tilde{G}$ is the origin.
+**In the fundamental solution.** The fundamental solution $\tilde{G}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ is defined for every $\tilde{Q} \neq 0$, including the nonzero zero divisors, since its denominator is the Euclidean norm. On the split complex directions the identity $\tilde{Q}^{\natural}\tilde{Q} = \|\tilde{Q}\|_E^2 e_0$ fails (for $\tilde{Q} = 1 + j$ one has $\tilde{Q}^{\natural}\tilde{Q} = 2 + 2j \neq 2$), and with it the proof that $\tilde{\nabla}\tilde{G} = 0$; the only singularity of $\tilde{G}$ is the origin.
 
 **In the Cauchy integral formula.** The formula requires the function $\tilde{F}$ to be continuously differentiable on the domain. If the domain intersects the zero divisor set, the formula requires care, because the proof that the kernel is annihilated by the gradient fails on the intersection.
 
@@ -469,11 +469,11 @@ The zero divisor set of $\mathbb{H}_{\mathbb{D}}$ is the union of two four-dimen
 
 The integration theory developed in this article is the split biquaternion analogue of the Cauchy integral theory in complex analysis and of the Fueter theory in quaternionic analysis.
 
-**Complex analysis.** In complex analysis, the Cauchy integral formula expresses the value of a holomorphic function at an interior point in terms of its boundary values, with the kernel $1/(z - z_0)$. The split biquaternion analogue uses the kernel $\tilde{G}(\tilde{Q} - \tilde{Q}_0) = \overline{(\tilde{Q} - \tilde{Q}_0)}/\|\tilde{Q} - \tilde{Q}_0\|_E^4$, which is the fundamental solution of the gradient operator in four dimensions.
+**Complex analysis.** In complex analysis, the Cauchy integral formula expresses the value of a holomorphic function at an interior point in terms of its boundary values, with the kernel $1/(z - z_0)$. The split biquaternion analogue uses the kernel $\tilde{G}(\tilde{Q} - \tilde{Q}_0) = ((\tilde{Q} - \tilde{Q}_0))^{\natural}/\|\tilde{Q} - \tilde{Q}_0\|_E^4$, which is the fundamental solution of the gradient operator in four dimensions.
 
 **Quaternionic analysis.** In Fueter's quaternionic analysis, the analogue of the Cauchy integral formula involves the kernel $q^{-1}/\|q\|^2$ and the quaternion-valued integration over the boundary of a domain in $\mathbb{R}^4$. The split biquaternion case is the generalization to split complex coefficients, and the idempotent decomposition reduces it to two copies of the quaternion case.
 
-**Clifford analysis.** The general Clifford analysis on $\mathbb{R}^n$ uses the kernel $x^{-1}/\|x\|^{n-2}$, equivalently $\bar{x}/\|x\|^n$ (homogeneous of degree $1 - n$), and the Clifford algebra-valued integration. The split biquaternion case is the case $n = 4$ of this general theory, with the specific structure of the even subalgebra of a definite (Euclidean) Clifford algebra.
+**Clifford analysis.** The general Clifford analysis on $\mathbb{R}^n$ uses the kernel $x^{-1}/\|x\|^{n-2}$, equivalently $x^{\natural}/\|x\|^n$ (homogeneous of degree $1 - n$), and the Clifford algebra-valued integration. The split biquaternion case is the case $n = 4$ of this general theory, with the specific structure of the even subalgebra of a definite (Euclidean) Clifford algebra.
 
 ## The Relation to the Split Complex Case
 
@@ -509,7 +509,7 @@ The following questions are not answered in this article and are left for later 
 
 The integral of a split-biquaternion-valued function on a four-dimensional subspace $V \subset \mathbb{H}_{\mathbb{D}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas. Because the algebra is not commutative, transposing the gradient off a product requires the right gradient $\overleftarrow{\nabla}$, and the identities are stated in the forms that hold for general split-biquaternion-valued fields.
 
-The **fundamental solution** of the gradient operator is $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla}\tilde{G} = 2\pi^2 \delta_0 e_0$, the distributional identity established above.
+The **fundamental solution** of the gradient operator is $\tilde{G}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla}\tilde{G} = 2\pi^2 \delta_0 e_0$, the distributional identity established above.
 
 ## Summary of Notation
 
@@ -521,14 +521,14 @@ The **fundamental solution** of the gradient operator is $\tilde{G}(\tilde{Q}) =
 | $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{D}$ |
 | $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ | General split biquaternion |
 | $Q_\mu = q_\mu + j q'_\mu$, $F_\mu = u_\mu + j v_\mu$ | Split complex coefficients and values |
-| $\bar{\cdot}, {}^*, {}^\dagger, {}^\flat$ | The four conjugations |
-| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Split-Biquaternion norm |
+| ${}^{\natural}, \bar{\cdot}, {}^\dagger, {}^\flat$ | The four conjugations |
+| $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$ | Idempotent components |
 | $V$ | A four-dimensional real subspace, coordinates $x_0, \dots, x_3$ |
 | $\Omega \subset V$ | Domain of integration |
 | $\partial \Omega$ | Boundary of $\Omega$ |
 | $\int_\Omega \tilde{F} \, dV$ | Integral of $\tilde{F}$ over $\Omega$ |
-| $\tilde{\nabla}, \bar{\tilde{\nabla}}, \Box, \tilde{\nabla}^2, \tilde{D}$ | Gradient, conjugate gradient, d'Alembertian, gradient square, convective derivative |
+| $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box, \tilde{\nabla}^2, \tilde{D}$ | Gradient, conjugate gradient, d'Alembertian, gradient square, convective derivative |
 | $\tilde{E}$ | Fundamental solution of $\Box$ |
 | $\tilde{K}$ | Cauchy kernel |
 | $\mathrm{Res}(\tilde{F}, \tilde{Q}_0)$ | Residue at an isolated singularity |

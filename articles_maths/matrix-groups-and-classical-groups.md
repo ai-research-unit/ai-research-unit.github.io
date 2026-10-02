@@ -13,7 +13,7 @@ $$
 
 the Hermitian case reading the same way with the form sesquilinear in the second variable and the alternating case with $\beta$ alternating; the symmetric, Hermitian and alternating forms give the three classical families. That is all that is taken from outside this article. The general construction of $O(V, g)$, $U(V, h)$ and $Sp(V, \omega)$ from a form, including the four families $A$, $B$, $C$, $D$ and the quaternionic unitary group, is not covered here. What is assumed here is the definition of a form and of its isometry group, and what is supplied here is: the explicit matrix conditions, the determinant constraints, the compactness and the centres, the realisation of $SU(2)$ as the unit quaternions, and the double covers $SU(2) \to SO(3)$ and $SU(2) \times SU(2) \to SO(4)$.
 
-Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $K$ a field; $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ when only those are meant. The quaternion algebra is $\mathbb{H}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, the norm is $N(q) = q \bar q$ and $\mathrm{Sc}$, $\mathrm{Vect}$ are the scalar and vector parts. No physics is invoked: the rotation groups appear here as groups of linear transformations preserving a form, never as symmetry groups of a physical system.
+Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $K$ a field; $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ when only those are meant. The quaternion algebra is $\mathbb{H}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, the norm is $N(q) = q q^{\natural}$ and $\mathrm{Sc}$, $\mathrm{Vect}$ are the scalar and vector parts. No physics is invoked: the rotation groups appear here as groups of linear transformations preserving a form, never as symmetry groups of a physical system.
 
 ## Matrices, Determinants and the Two Linear Groups
 
@@ -83,7 +83,7 @@ $$
 h(x, y) = \sum_{i=1}^{n} \overline{x_i} y_i ,
 $$
 
-which is $\mathbb{C}$-linear in the second argument, conjugate-linear in the first, and satisfies $h(y, x) = \overline{h(x, y)}$. Over $\mathbb{R}$ it is the standard symmetric form again; the new case is $\mathbb{K} = \mathbb{C}$.
+which is $\mathbb{C}$-linear in the second argument, conjugate-linear in the first, and satisfies $h(y, x) = (h(x,y))^{\natural}$. Over $\mathbb{R}$ it is the standard symmetric form again; the new case is $\mathbb{K} = \mathbb{C}$.
 
 **Definition.** The **unitary group** is $U(n) = \{A \in GL_n(\mathbb{C}) : h(Ax, Ay) = h(x, y) \text{ for all } x, y\}$, and the **special unitary group** is $SU(n) = U(n) \cap SL_n(\mathbb{C})$.
 
@@ -109,13 +109,13 @@ The quotient $PSU(n) = SU(n)/Z(SU(n))$ is the **projective special unitary group
 
 ### Quaternionic Hermitian Forms
 
-Let $\mathbb{H}$ be the quaternion algebra, with conjugation $\bar q$, norm $N(q) = q \bar q = |q|^2$, and real part $\mathrm{Sc}(q) = \tfrac{1}{2}(q + \bar q)$. On $\mathbb{H}^n$ define
+Let $\mathbb{H}$ be the quaternion algebra, with conjugation $q^{\natural}$, norm $N(q) = q q^{\natural} = |q|^2$, and real part $\mathrm{Sc}(q) = \tfrac{1}{2}(q + q^{\natural})$. On $\mathbb{H}^n$ define
 
 $$
 h(x, y) = \sum_{i=1}^{n} \overline{x_i} y_i \in \mathbb{H},
 $$
 
-which is $\mathbb{H}$-linear in the second argument and conjugate-linear in the first in the sense $h(x \lambda, y) = \bar\lambda h(x,y)$. It takes values in $\mathbb{H}$, which is not commutative, so it is not a Hermitian form over a field; the property that survives is $h(y,x) = \overline{h(x,y)}$ together with the reality of $h(x,x) = \sum_i N(x_i) \in \mathbb{R}_{\geq 0}$.
+which is $\mathbb{H}$-linear in the second argument and conjugate-linear in the first in the sense $h(x \lambda, y) = \bar\lambda h(x,y)$. It takes values in $\mathbb{H}$, which is not commutative, so it is not a Hermitian form over a field; the property that survives is $h(y,x) = (h(x,y))^{\natural}$ together with the reality of $h(x,x) = \sum_i N(x_i) \in \mathbb{R}_{\geq 0}$.
 
 **Definition.** The **compact symplectic group** or **quaternionic unitary group** is
 
@@ -162,7 +162,7 @@ $$
 \det \rho(q) = z \bar z + w \bar w = N(q) .
 $$
 
-**Proof.** Multiplicativity is the identity $(z + wj)(z' + w'j) = (zz' - w\bar w') + (zw' + w\bar z')j$, obtained from $jz' = \bar z' j$ and $j^2 = -1$, which is exactly the matrix product $\rho(z + wj)\rho(z' + w'j) = \rho((z + wj)(z' + w'j))$; the entries of the product matrix are $zz' - w\bar w'$, $zw' + w\bar z'$, $-\overline{zw' + w\bar z'}$ and $\overline{zz' - w\bar w'}$. So $\rho$ is a homomorphism, and it is injective because $q \neq 0$ has an inverse, namely $\bar q / N(q)$. The determinant is $z\bar z - w(-\bar w) = |z|^2 + |w|^2 = N(q)$.
+**Proof.** Multiplicativity is the identity $(z + wj)(z' + w'j) = (zz' - w\bar w') + (zw' + w\bar z')j$, obtained from $jz' = \bar z' j$ and $j^2 = -1$, which is exactly the matrix product $\rho(z + wj)\rho(z' + w'j) = \rho((z + wj)(z' + w'j))$; the entries of the product matrix are $zz' - w\bar w'$, $zw' + w\bar z'$, $-\overline{zw' + w\bar z'}$ and $\overline{zz' - w\bar w'}$. So $\rho$ is a homomorphism, and it is injective because $q \neq 0$ has an inverse, namely $q^{\natural} / N(q)$. The determinant is $z\bar z - w(-\bar w) = |z|^2 + |w|^2 = N(q)$.
 
 **Example.** With the Pauli matrices
 
@@ -182,7 +182,7 @@ $$
 \mathbb{H}^1 \longrightarrow SU(2), \qquad \mathbb{H}^1 = S^3 .
 $$
 
-**Proof.** For $q \in \mathbb{H}^1$ the matrix $\rho(q)$ is unitary, since $\rho(q)^* \rho(q) = \rho(\bar q)\rho(q) = \rho(\bar q q) = \rho(1) = I$, and it has determinant $N(q) = 1$, so the image lies in $SU(2)$. Conversely, if $A = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$ is unitary of determinant $1$ then $|z|^2 + |w|^2 = 1$, so $A = \rho(q)$ with $q = z + wj$ of norm $1$. The map is a homeomorphism because it is a continuous bijection between compact Hausdorff spaces.
+**Proof.** For $q \in \mathbb{H}^1$ the matrix $\rho(q)$ is unitary, since $\rho(q)^* \rho(q) = \rho(q^{\natural})\rho(q) = \rho(q^{\natural} q) = \rho(1) = I$, and it has determinant $N(q) = 1$, so the image lies in $SU(2)$. Conversely, if $A = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$ is unitary of determinant $1$ then $|z|^2 + |w|^2 = 1$, so $A = \rho(q)$ with $q = z + wj$ of norm $1$. The map is a homeomorphism because it is a continuous bijection between compact Hausdorff spaces.
 
 **Corollary.** $SU(2) \cong Sp(1) \cong \mathbb{H}^1 \cong S^3$; consequently $SU(2)$ is connected and simply connected, and its centre is $\{\pm I\}$, corresponding to the quaternions $\pm 1$.
 
@@ -194,7 +194,7 @@ Thus the three families $A$, $B$, $C$ meet at the bottom: the compact symplectic
 
 Identify $\mathbb{R}^3$ with the space of pure quaternions $\mathrm{Vect}(\mathbb{H}) = \{x \in \mathbb{H} : \mathrm{Sc}(x) = 0\}$.
 
-**Theorem.** For $u \in \mathbb{H}^1$ the map $\varphi_u(x) = u x \bar u$ restricts to a rotation of the pure quaternions, $\varphi_u \in SO(3)$, and
+**Theorem.** For $u \in \mathbb{H}^1$ the map $\varphi_u(x) = u x  u^{\natural}$ restricts to a rotation of the pure quaternions, $\varphi_u \in SO(3)$, and
 
 $$
 \varphi : \mathbb{H}^1 \longrightarrow SO(3), \qquad u \longmapsto \varphi_u,
@@ -202,7 +202,7 @@ $$
 
 is a continuous surjective homomorphism with kernel $\{\pm 1\}$. Hence $SO(3) \cong \mathbb{H}^1/\{\pm 1\} \cong SU(2)/\{\pm I\} = PSU(2)$.
 
-**Proof.** If $x$ is pure and $u$ is a unit then $u x \bar u$ is pure, because $\overline{u x \bar u} = u \bar x \bar u = -u x \bar u$, conjugation reversing the scalar sign; the norms agree, $N(ux\bar u) = N(u)N(x)N(u) = N(x)$, so $\varphi_u$ preserves the standard form of $\mathbb{R}^3$; and $\varphi$ is a homomorphism because the map is the conjugation action of the group of units on the algebra, which is multiplicative in $u$. The image lies in $SO(3)$ rather than merely in $O(3)$: the map $u \mapsto \varphi_u$ is continuous and $\mathbb{H}^1 = S^3$ is connected, so the image lies in the identity component. If $u$ lies in the kernel then $ux = xu$ for all pure $x$, in particular for $x = e_1, e_2, e_3$, so $u$ commutes with $e_1, e_2, e_3$ and hence lies in the centre of $\mathbb{H}$, which is $\mathbb{R}$; with $N(u) = 1$ this gives $u = \pm 1$. Thus the kernel has order two and the image is a compact connected subgroup of dimension $3$; as $SO(3)$ is connected of dimension $3$, the image is open and closed and therefore all of $SO(3)$.
+**Proof.** If $x$ is pure and $u$ is a unit then $u x  u^{\natural}$ is pure, because $\overline{u x  u^{\natural}} = u x^{\natural}  u^{\natural} = -u x u^{\natural}$, conjugation reversing the scalar sign; the norms agree, $N(ux u^{\natural}) = N(u)N(x)N(u) = N(x)$, so $\varphi_u$ preserves the standard form of $\mathbb{R}^3$; and $\varphi$ is a homomorphism because the map is the conjugation action of the group of units on the algebra, which is multiplicative in $u$. The image lies in $SO(3)$ rather than merely in $O(3)$: the map $u \mapsto \varphi_u$ is continuous and $\mathbb{H}^1 = S^3$ is connected, so the image lies in the identity component. If $u$ lies in the kernel then $ux = xu$ for all pure $x$, in particular for $x = e_1, e_2, e_3$, so $u$ commutes with $e_1, e_2, e_3$ and hence lies in the centre of $\mathbb{H}$, which is $\mathbb{R}$; with $N(u) = 1$ this gives $u = \pm 1$. Thus the kernel has order two and the image is a compact connected subgroup of dimension $3$; as $SO(3)$ is connected of dimension $3$, the image is open and closed and therefore all of $SO(3)$.
 
 **Corollary.** The homomorphism $\varphi$ is a two-to-one covering, the two preimages of a rotation being antipodal unit quaternions $u$ and $-u$; consequently $SO(3)$ is homeomorphic to the quotient of $S^3$ by the antipodal map, that is, to the real projective space $\mathbb{RP}^3$, and $\pi_1(SO(3)) \cong \mathbb{Z}/2\mathbb{Z}$.
 
@@ -217,16 +217,16 @@ The proposition explains the two-to-one cover: the quaternions $u$ and $-u$ give
 **Example.** Take $u = \cos(\pi/4) + \sin(\pi/4)e_3 = (1 + e_3)/\sqrt 2$, so the expected rotation is through $\pi/2$ about the $e_3$-axis. Using $e_3 e_1 = e_2$, $e_1 e_3 = -e_2$, $e_2 e_3 = e_1$ and $e_3 e_2 = -e_1$, one computes $e_3 e_1 e_3 = e_2 e_3 = e_1$, hence
 
 $$
-u \, e_1 \, \bar u = \tfrac{1}{2}(1 + e_3) e_1 (1 - e_3) = \tfrac{1}{2}(e_1 + e_2)(1 - e_3) = \tfrac{1}{2}(e_1 + e_2 + e_2 - e_1) = e_2 ,
+u \, e_1 \, u^{\natural} = \tfrac{1}{2}(1 + e_3) e_1 (1 - e_3) = \tfrac{1}{2}(e_1 + e_2)(1 - e_3) = \tfrac{1}{2}(e_1 + e_2 + e_2 - e_1) = e_2 ,
 $$
 
-and similarly $u e_2 \bar u = -e_1$ and $u e_3 \bar u = e_3$. So $\varphi_u$ is the rotation of the $(e_1, e_2)$-plane through $\pi/2$, as predicted. Squaring, $u^2 = \tfrac{1}{2}(1 + e_3)^2 = e_3$, and indeed $\varphi_{e_3}$ is the rotation through $\pi$ about $e_3$, with trace $4 \cdot 0^2 - 1 = -1 = 1 + 2\cos \pi$. The example also shows that the quaternion product computes the composite of rotations: $\varphi_{u v} = \varphi_u \circ \varphi_v$ because $\varphi$ is a homomorphism.
+and similarly $u e_2  u^{\natural} = -e_1$ and $u e_3  u^{\natural} = e_3$. So $\varphi_u$ is the rotation of the $(e_1, e_2)$-plane through $\pi/2$, as predicted. Squaring, $u^2 = \tfrac{1}{2}(1 + e_3)^2 = e_3$, and indeed $\varphi_{e_3}$ is the rotation through $\pi$ about $e_3$, with trace $4 \cdot 0^2 - 1 = -1 = 1 + 2\cos \pi$. The example also shows that the quaternion product computes the composite of rotations: $\varphi_{u v} = \varphi_u \circ \varphi_v$ because $\varphi$ is a homomorphism.
 
 ### SO(4) from Two Copies of SU(2)
 
 Now let $\mathbb{H} \cong \mathbb{R}^4$ and consider the two-sided action.
 
-**Theorem.** For $u, v \in \mathbb{H}^1$ the map $\psi_{(u,v)}(q) = u q \bar v$ is an orthogonal transformation of $\mathbb{R}^4$ of determinant $1$, and
+**Theorem.** For $u, v \in \mathbb{H}^1$ the map $\psi_{(u,v)}(q) = u q v^{\natural}$ is an orthogonal transformation of $\mathbb{R}^4$ of determinant $1$, and
 
 $$
 \psi : \mathbb{H}^1 \times \mathbb{H}^1 \longrightarrow SO(4), \qquad (u,v) \longmapsto \psi_{(u,v)},
@@ -238,7 +238,7 @@ $$
 SO(4) \cong (\mathbb{H}^1 \times \mathbb{H}^1)/\{\pm(1,1)\} \cong (SU(2) \times SU(2))/\{\pm(I,I)\}.
 $$
 
-**Proof.** The map $\psi_{(u,v)}$ preserves the norm because $N(uq\bar v) = N(u)N(q)N(v) = N(q)$, so it is orthogonal; it is the composite of left multiplication by $u$ and right multiplication by $\bar v$, and each of these has real determinant $1$: the maps $u \mapsto L_u$ and $v \mapsto R_v$ are continuous from the connected group $\mathbb{H}^1 = S^3$ into the orthogonal group $O(4)$ of $\mathbb{H} \cong \mathbb{R}^4$, so their images lie in the identity component $SO(4)$. The map is a homomorphism because each factor acts multiplicatively. Its kernel consists of the pairs with $uq = qv$ for all $q$; taking $q = 1$ gives $u = v$, and then $uq = qu$ for all $q$, so $u$ is central and, being a unit of norm $1$, is $\pm 1$. Thus the kernel has order $2$ and the image is a connected compact subgroup of dimension $6$, equal to $\dim SO(4)$; a connected subgroup of a connected group of the same dimension is open and closed, so the image is all of $SO(4)$.
+**Proof.** The map $\psi_{(u,v)}$ preserves the norm because $N(uqv^{\natural}) = N(u)N(q)N(v) = N(q)$, so it is orthogonal; it is the composite of left multiplication by $u$ and right multiplication by $ v^{\natural}$, and each of these has real determinant $1$: the maps $u \mapsto L_u$ and $v \mapsto R_v$ are continuous from the connected group $\mathbb{H}^1 = S^3$ into the orthogonal group $O(4)$ of $\mathbb{H} \cong \mathbb{R}^4$, so their images lie in the identity component $SO(4)$. The map is a homomorphism because each factor acts multiplicatively. Its kernel consists of the pairs with $uq = qv$ for all $q$; taking $q = 1$ gives $u = v$, and then $uq = qu$ for all $q$, so $u$ is central and, being a unit of norm $1$, is $\pm 1$. Thus the kernel has order $2$ and the image is a connected compact subgroup of dimension $6$, equal to $\dim SO(4)$; a connected subgroup of a connected group of the same dimension is open and closed, so the image is all of $SO(4)$.
 
 **Corollary.** $SO(4)$ is not simple: the image of each factor is a normal subgroup isomorphic to $S^3/\{\pm 1\} = SU(2)/\{\pm I\} = SO(3)$, the two images intersect in $\{\pm I\}$ and together generate $SO(4)$, and the quotient by either of them is the other factor, $S^3 = SU(2)$; the quotient by the centre $\{\pm I\}$ is $SO(3) \times SO(3)$.
 
@@ -287,7 +287,7 @@ The definitions are collected here, with the invariants used throughout. In the 
 
 The classical groups are the transformation groups of a vector space equipped with a form, and their matrix forms are read off from the preservation of the form. The orthogonal group $O(n)$ is $\{A : A^TA = I\}$, compact, with $\det A = \pm 1$, and its kernel-of-determinant $SO(n)$ is the connected component of the identity, isomorphic to $S^1$ when $n = 2$. The unitary group $U(n) = \{A : A^*A = I\}$ is compact and connected with determinant of modulus one, and $U(n) \cong (SU(n) \times U(1))/\mu_n$, while the centres are the scalar matrices, so $Z(SU(n)) \cong \mathbb{Z}/n\mathbb{Z}$. The compact symplectic group $Sp(n)$ is the quaternionic unitary group, of dimension $n(2n+1)$, contained in $SU(2n)$; the two uses of the symbol $Sp$ in the literature are distinguished by rank versus the dimension of the space acted on.
 
-The representations of the quaternion algebra make the lowest cases explicit. The map $\rho(z + wj) = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$ is an algebra isomorphism of $\mathbb{H}$ with a subalgebra of $M_2(\mathbb{C})$ and has determinant $N(q)$, so the unit quaternions are exactly $SU(2)$, a group isomorphic to $S^3$ and to $Sp(1)$. Conjugation by a unit quaternion is a rotation of the pure quaternions with trace $4a^2 - 1$, hence a rotation through the angle determined by $a = \cos(\theta/2)$ and an axis given by the vector part: the assignment $u \mapsto (x \mapsto ux\bar u)$ is a surjective homomorphism $\mathbb{H}^1 \to SO(3)$ with kernel $\{\pm 1\}$, exhibiting $SO(3) \cong \mathbb{RP}^3 = SU(2)/\{\pm I\}$ and the two-to-one cover. The two-sided action $(u,v) \mapsto (q \mapsto uq\bar v)$ gives the surjection $\mathbb{H}^1 \times \mathbb{H}^1 \to SO(4)$ with kernel $\{\pm(1,1)\}$, so $SO(4) \cong (SU(2) \times SU(2))/\{\pm(I,I)\}$ and $SO(4)$ is not simple. The remaining low-dimensional coincidences, $SO(5) \cong Sp(2)/\{\pm I\}$ and $SO(6) \cong SU(4)/\{\pm I\}$, follow the same pattern at the level of root systems and are cited as standard.
+The representations of the quaternion algebra make the lowest cases explicit. The map $\rho(z + wj) = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$ is an algebra isomorphism of $\mathbb{H}$ with a subalgebra of $M_2(\mathbb{C})$ and has determinant $N(q)$, so the unit quaternions are exactly $SU(2)$, a group isomorphic to $S^3$ and to $Sp(1)$. Conjugation by a unit quaternion is a rotation of the pure quaternions with trace $4a^2 - 1$, hence a rotation through the angle determined by $a = \cos(\theta/2)$ and an axis given by the vector part: the assignment $u \mapsto (x \mapsto ux u^{\natural})$ is a surjective homomorphism $\mathbb{H}^1 \to SO(3)$ with kernel $\{\pm 1\}$, exhibiting $SO(3) \cong \mathbb{RP}^3 = SU(2)/\{\pm I\}$ and the two-to-one cover. The two-sided action $(u,v) \mapsto (q \mapsto uqv^{\natural})$ gives the surjection $\mathbb{H}^1 \times \mathbb{H}^1 \to SO(4)$ with kernel $\{\pm(1,1)\}$, so $SO(4) \cong (SU(2) \times SU(2))/\{\pm(I,I)\}$ and $SO(4)$ is not simple. The remaining low-dimensional coincidences, $SO(5) \cong Sp(2)/\{\pm I\}$ and $SO(6) \cong SU(4)/\{\pm I\}$, follow the same pattern at the level of root systems and are cited as standard.
 
 ## Summary of Notation
 
@@ -303,12 +303,12 @@ The representations of the quaternion algebra make the lowest cases explicit. Th
 | $PSU(n)$ | $SU(n)/Z(SU(n))$ |
 | $Sp(n)$ | Compact symplectic (quaternionic unitary) group, $A^*A = I$ over $\mathbb{H}$ |
 | $Sp(2n, K)$ | Symplectic group of an alternating form, as in the companion article |
-| $\mathbb{H}$, $N(q) = q\bar q$, $\mathrm{Sc}$, $\mathrm{Vect}$ | Quaternions, norm, scalar and vector parts |
+| $\mathbb{H}$, $N(q) = q q^{\natural}$, $\mathrm{Sc}$, $\mathrm{Vect}$ | Quaternions, norm, scalar and vector parts |
 | $\mathbb{H}^1 = S^3$ | Unit quaternions; also written $Sp(1)$ |
 | $\rho(z + wj) = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$ | Representation of $\mathbb{H}$ in $M_2(\mathbb{C})$, determinant $N(q)$ |
 | $\sigma_x, \sigma_y, \sigma_z$ | Pauli matrices; $\rho(e_1) = i\sigma_z$, $\rho(e_2) = i\sigma_y$, $\rho(e_3) = i\sigma_x$ |
-| $\varphi_u(x) = u x \bar u$ | Rotation by a unit quaternion; kernel $\{\pm 1\}$ of $\mathbb{H}^1 \to SO(3)$ |
-| $\psi_{(u,v)}(q) = u q \bar v$ | The map $\mathbb{H}^1 \times \mathbb{H}^1 \to SO(4)$, kernel $\{\pm(1,1)\}$ |
+| $\varphi_u(x) = u x u^{\natural}$ | Rotation by a unit quaternion; kernel $\{\pm 1\}$ of $\mathbb{H}^1 \to SO(3)$ |
+| $\psi_{(u,v)}(q) = u q  v^{\natural}$ | The map $\mathbb{H}^1 \times \mathbb{H}^1 \to SO(4)$, kernel $\{\pm(1,1)\}$ |
 | $S^{n-1}$, $\mathbb{RP}^3$ | Unit sphere; $SO(3) \cong \mathbb{RP}^3$ |
 | $Z(G)$ | Centre of a group |
 | $\mathbb{Z}/n\mathbb{Z}$, $\mu_n$ | Cyclic group of order $n$; $n$-th roots of unity |

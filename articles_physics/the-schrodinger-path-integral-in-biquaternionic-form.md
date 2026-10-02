@@ -24,7 +24,7 @@ $$
 \psi(t) = \tilde U(t)\,\psi(0),
 $$
 
-and because $\tilde H$ is central, $\tilde U(t)$ is a central unitary element of $\mathbb{B}$: it commutes with every biquaternion and satisfies $\tilde U\tilde U^\dagger=e_0$. The evolution operator is a semigroup in time,
+and because $\tilde H$ is central, $\tilde U(t)$ is a central unitary element of $\mathbb{B}$: it commutes with every biquaternion and satisfies $\tilde U\tilde U^{*}=e_0$. The evolution operator is a semigroup in time,
 
 $$
 \tilde U(t_1+t_2) = \tilde U(t_2)\,\tilde U(t_1),

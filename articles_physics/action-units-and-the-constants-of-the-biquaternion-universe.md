@@ -14,7 +14,7 @@ That much is already recorded, in one line, by the companion article *The Empiri
 
 The article is a **limitation statement**, of the same species as the companion articles *Conventions in the Biquaternion Universe* and *The Empirical Status of the Biquaternion Framework*: its content is what the algebra supplies and what it does not. It adds no physics, and it derives no constant. It is written because the corpus makes the dimensional remarks piecemeal — the Stern–Gerlach article records that $\hbar$ is supplied from outside, the electron article that the mass and the charge are inserted, the $g-2$ article that the algebra fixes the ratio and not the scale — and those remarks have no common home. The home is here.
 
-The conventions are those of the companion articles, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$ and $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; the scalar imaginary is $i$, central, with $i^2=-1$. The material sector is $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\}$ (imaginary scalar, real vector), the informational sector is $\mathbb{M}_+=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\}$ (real scalar, imaginary vector), the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$, the trace is normalized by $\mathrm{Tr}(e_0)=2$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The material coordinate is $\tilde{Q}=ict\,e_0+\mathbf{x}$, the biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, and the series d'Alembertian is $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; $\hbar=h/2\pi$ is the reduced Planck constant, $h$ the Planck constant, and $k_B$ the Boltzmann constant.
+The conventions are those of the companion articles, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$ and $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; the scalar imaginary is $i$, central, with $i^2=-1$. The material sector is $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\}$ (imaginary scalar, real vector), the informational sector is $\mathbb{M}_+=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\}$ (real scalar, imaginary vector), the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, the trace is normalized by $\mathrm{Tr}(e_0)=2$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The material coordinate is $\tilde{Q}=ict\,e_0+\mathbf{x}$, the biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, and the series d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; $\hbar=h/2\pi$ is the reduced Planck constant, $h$ the Planck constant, and $k_B$ the Boltzmann constant.
 
 The companion articles used below are:
 
@@ -60,7 +60,7 @@ There is an exception worth noting, because it is the only place where the algeb
 The biquaternion norm of a general element is
 
 $$
-N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=Q_0^2+Q_1^2+Q_2^2+Q_3^2 .
+N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=Q_0^2+Q_1^2+Q_2^2+Q_3^2 .
 $$
 
 This is a sum of four squares. It is a single scalar, and it is meaningful as a sum only if its four terms carry the same unit. It follows that **the four coefficients of a single element of $\mathbb{B}$ must share one unit**, whatever that unit is. The constraint is not imposed from outside and it is not a convention of the series; it is a property of the algebra's quadratic form. It applies to every element of the algebra that carries a physical interpretation, and it applies in both sectors.
@@ -98,7 +98,7 @@ $$
 and its four coefficients are all inverse lengths, because $ict$ and $x,y,z$ are all lengths. Its biquaternion norm is the d'Alembertian,
 
 $$
-\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta=\Delta-\frac{1}{c^2}\,\partial_t^2 ,
+\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta=\Delta-\frac{1}{c^2}\,\partial_t^2 ,
 $$
 
 a sum of four terms of dimension inverse length squared. The $c^{-2}$ in the last expression is not a choice of units; it is the scale of the imaginary time axis reappearing, exactly as the biquaternion-norm route requires.
@@ -106,7 +106,7 @@ a sum of four terms of dimension inverse length squared. The $c^{-2}$ in the las
 The same reasoning constrains the mass parameter of a first-order equation. The companion article *Conventions in the Biquaternion Universe* writes the massive Dirac pair as
 
 $$
-\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L=m\tilde{\Psi}_R .
+\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R .
 $$
 
 Since $\tilde{\nabla}$ carries the dimension of inverse length, the parameter $m$ in this pair carries the same dimension once units are restored. In the second-order case the framework writes that dimension explicitly, as the inverse Compton length,
@@ -207,7 +207,7 @@ $$
 +\bigl(\underbrace{q_0\mathbf{p}+p_0\mathbf{q}+\mathbf{q}\times\mathbf{p}}_{\text{vector part}}\bigr).
 $$
 
-The scalar part is $q_0p_0-\mathbf{q}\cdot\mathbf{p}$, the contraction of the configuration with the momentum. The corpus's scalar pairing is the conjugate version of it, $\mathrm{Sc}(\bar{\tilde q}\tilde p)=\sum_\mu q_\mu p_\mu$ — the pairing the companion article's conventions define, and the one whose momentum-differential is the symplectic potential. In the **pure-vector case** $q_0=p_0=0$ — a particle in three dimensions, the case that carries the spatial reading — the product collapses to
+The scalar part is $q_0p_0-\mathbf{q}\cdot\mathbf{p}$, the contraction of the configuration with the momentum. The corpus's scalar pairing is the conjugate version of it, $\mathrm{Sc}(\tilde q^{\natural}\tilde p)=\sum_\mu q_\mu p_\mu$ — the pairing the companion article's conventions define, and the one whose momentum-differential is the symplectic potential. In the **pure-vector case** $q_0=p_0=0$ — a particle in three dimensions, the case that carries the spatial reading — the product collapses to
 
 $$
 \tilde q\,\tilde p=-\mathbf{q}\cdot\mathbf{p}+\mathbf{q}\times\mathbf{p},
@@ -241,12 +241,12 @@ Two limits are worth naming. When no force acts — a rigid body with no net for
 
 ### The Same Unit, Because It Is the Same Object
 
-Both parts of $\tilde q\tilde p$ have the dimensions of length × momentum, which is action. But the framework's statement is stronger than a dimensional coincidence: the angular momentum is a **part of the same algebra element** whose scalar part is the contraction of the configuration with the momentum. There is no independent quantity "angular momentum" with a separately guaranteed unit; there is one biquaternion, of one dimension, whose two parts are read as two things. The two readings differ only in the conjugate convention on one factor — $\tilde q\tilde p$ has scalar part $q_0p_0-\mathbf q\cdot\mathbf p$, while $\mathrm{Sc}(\bar{\tilde q}\tilde p)=\sum_\mu q_\mu p_\mu$ is the Euclidean pairing — and that convention is fixed by the companion articles.
+Both parts of $\tilde q\tilde p$ have the dimensions of length × momentum, which is action. But the framework's statement is stronger than a dimensional coincidence: the angular momentum is a **part of the same algebra element** whose scalar part is the contraction of the configuration with the momentum. There is no independent quantity "angular momentum" with a separately guaranteed unit; there is one biquaternion, of one dimension, whose two parts are read as two things. The two readings differ only in the conjugate convention on one factor — $\tilde q\tilde p$ has scalar part $q_0p_0-\mathbf q\cdot\mathbf p$, while $\mathrm{Sc}(\tilde q^{\natural}\tilde p)=\sum_\mu q_\mu p_\mu$ is the Euclidean pairing — and that convention is fixed by the companion articles.
 
 The same product appears at the other end of the theory. The symplectic potential of the companion article *The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form* is
 
 $$
-\theta=\mathrm{Sc}\bigl(\bar{\tilde p}\,d\tilde q\bigr) ,
+\theta=\mathrm{Sc}\bigl(\tilde p^{\natural}\,d\tilde q\bigr) ,
 $$
 
 momentum contracted with a configuration displacement, again of dimension action; and on shell the differential of the action is the difference of the pairing at the two endpoints, $dS=\theta_2-\theta_1$. The action variable of a periodic orbit,
@@ -326,7 +326,7 @@ The algebra's quadratic form nevertheless constrains units, and the constraint i
 
 The constants that physics supplies enter at different points, and the point of entry is what each constant is for. $c$ enters inside the biquaternion norm and is the only constant whose *role* the algebra fixes, its value remaining empirical and local in a medium. $\hbar$ enters in the exponent $e^{iS/\hbar}$, making the classical limit a statement about the dimensionless ratio $S/\hbar$ and supplying the unit of the operator algebra, as the spin observable $\tilde{S}_3=\tfrac{\hbar}{2}ie_3$ displays. $k_B$ enters in the thermal strip of width $\beta=\hbar/(k_BT)$, converting a temperature into a time and giving the algebraic imaginary-time direction a size. $G$, $m$ and $e$ enter at points the algebra does not single out: the gravitational term, the mass shell, and the gauge coupling.
 
-The pairing whose integral is the action and the angular momentum share a unit because in the framework they are the scalar and vector parts of one product. For a configuration $\tilde q$ and its conjugate momentum $\tilde p$, the product in the pure-vector case is $\tilde q\tilde p=-\mathbf{q}\cdot\mathbf{p}+\mathbf{q}\times\mathbf{p}$: the scalar part is the contraction of the configuration with the momentum, the vector part the angular momentum, and both are of dimension action. The symplectic potential pairs a momentum with a configuration displacement, $\theta=\mathrm{Sc}(\bar{\tilde p}\,d\tilde q)$, its boundary values give the on-shell action differential $dS=\theta_2-\theta_1$, and the action variable $\oint p\,dq$ is that pairing around a cycle. The two parts are quantised by one phase periodicity — the scalar pairing by the Bohr–Sommerfeld condition $2\pi\hbar(n+\tfrac12)=h(n+\tfrac12)$, in quanta of the action $h$, and the vector part by the spin spectrum in units of $\hbar$ — and the $2\pi$ that separates the two named quanta is the period of the central phase, not a second constant. This is a reading of a known dimensional identity, not a derivation of $\hbar$.
+The pairing whose integral is the action and the angular momentum share a unit because in the framework they are the scalar and vector parts of one product. For a configuration $\tilde q$ and its conjugate momentum $\tilde p$, the product in the pure-vector case is $\tilde q\tilde p=-\mathbf{q}\cdot\mathbf{p}+\mathbf{q}\times\mathbf{p}$: the scalar part is the contraction of the configuration with the momentum, the vector part the angular momentum, and both are of dimension action. The symplectic potential pairs a momentum with a configuration displacement, $\theta=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$, its boundary values give the on-shell action differential $dS=\theta_2-\theta_1$, and the action variable $\oint p\,dq$ is that pairing around a cycle. The two parts are quantised by one phase periodicity — the scalar pairing by the Bohr–Sommerfeld condition $2\pi\hbar(n+\tfrac12)=h(n+\tfrac12)$, in quanta of the action $h$, and the vector part by the spin spectrum in units of $\hbar$ — and the $2\pi$ that separates the two named quanta is the period of the central phase, not a second constant. This is a reading of a known dimensional identity, not a derivation of $\hbar$.
 
 The action family has more than one member: Hamilton's action in time, the abbreviated action along a path, and the action variable around a cycle. All of them have the dimension of action because each pairs a momentum with a displacement, and the corpus already carries Hamilton's characteristic function as the abbreviated action and the action variable as its per-coordinate form. Hamilton's and Maupertuis's principles have reversed constraints — fixed events against fixed energy — and on the stationary path the two actions are related by the Legendre transform in the time–energy pair, $S=S_0-E\,\Delta t$; for a rigid body with no net force they coincide, and both reduce to Fermat's principle of least time. In neither form is the stationary value a maximum, so "least action" is a misnomer.
 
@@ -343,16 +343,16 @@ The framework's guideline follows from the dichotomy: a dimensionful constant is
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Informational (real scalar, imaginary vector) and material (imaginary scalar, real vector) sectors |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ | Center; real-quaternion subspace |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$ | Biquaternion norm; a sum of four commensurable squares |
+| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; a sum of four commensurable squares |
 | $\tilde{Q}=ict\,e_0+\mathbf{x}$ | Material coordinate; the temporal coefficient is a length |
 | $\tilde{\nabla}=e_0\partial_{ict}+\nabla$ | Biquaternionic gradient; coefficients of inverse length |
-| $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$ | d'Alembertian |
+| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$ | d'Alembertian |
 | $\mu=mc/\hbar$ | Inverse Compton length; the mass parameter as an inverse length |
 | $\tilde{q}$, $\tilde{p}$ | Configuration quaternion and conjugate momentum, both real quaternions |
 | $\tilde{q}\tilde{p}=(q_0p_0-\mathbf{q}\cdot\mathbf{p})+(q_0\mathbf{p}+p_0\mathbf{q}+\mathbf{q}\times\mathbf{p})$ | The product carrying the contraction and the angular momentum |
 | $\tilde{q}\tilde{p}=-\mathbf{q}\cdot\mathbf{p}+\mathbf{q}\times\mathbf{p}$ | Pure-vector case: scalar part the contraction, vector part $\mathbf{L}=\mathbf{q}\times\mathbf{p}$ |
-| $\mathrm{Sc}(\bar{\tilde q}\tilde p)=\sum_\mu q_\mu p_\mu$ | Scalar pairing (the conjugate convention; $\mathrm{Sc}(\bar{\tilde p}\,d\tilde q)$ is its differential) |
-| $\theta=\mathrm{Sc}(\bar{\tilde{p}}\,d\tilde{q})$, $dS=\theta_2-\theta_1$ | Symplectic potential and the action differential |
+| $\mathrm{Sc}(\tilde q^{\natural}\tilde p)=\sum_\mu q_\mu p_\mu$ | Scalar pairing (the conjugate convention; $\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$ is its differential) |
+| $\theta=\mathrm{Sc}(\tilde{p}^{\natural}\,d\tilde{q})$, $dS=\theta_2-\theta_1$ | Symplectic potential and the action differential |
 | $I_k=\oint p_k\,dq_k$ | Action variable; the abbreviated action of one coordinate around its cycle |
 | $S_0=\int\mathbf p\cdot d\mathbf q$, $S=S_0-E\,\Delta t$ | Abbreviated action (Maupertuis), stationary at fixed energy; the two actions differ by a Legendre transform in the time–energy pair |
 | $\mathcal{W}$ | Hamilton's characteristic function, $H(\tilde q,\partial_{\tilde q}\mathcal{W})=E$; the abbreviated action as endpoint function |

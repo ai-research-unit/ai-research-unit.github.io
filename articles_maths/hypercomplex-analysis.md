@@ -76,7 +76,7 @@ $$
 where $\partial_\alpha = \partial/\partial x_\alpha$ and $x = \sum_\alpha x_\alpha e_\alpha$ are the coordinates of $x \in A$. Its **conjugate** is a second operator of the same shape,
 
 $$
-\bar D = \sum_{\alpha=0}^{m-1} \bar B_\alpha \,\partial_\alpha, \qquad \bar B_\alpha \in A.
+\bar D = \sum_{\alpha=0}^{m-1} B_\alpha^{\natural} \,\partial_\alpha, \qquad B_\alpha^{\natural} \in A.
 $$
 
 The operator $D$ acts on a differentiable function $f : \Omega \to A$ by
@@ -147,7 +147,7 @@ $$
 D f = 0 \quad \text{on } \Omega.
 $$
 
-It is **right regular** if $f D = 0$, where the operator acts on the right, $fD = \sum_\alpha \partial_\alpha f \,\bar B_\alpha$. The two notions coincide when $A$ is commutative.
+It is **right regular** if $f D = 0$, where the operator acts on the right, $fD = \sum_\alpha \partial_\alpha f \,B_\alpha^{\natural}$. The two notions coincide when $A$ is commutative.
 
 **Example.** For $A = \mathbb{C}$ and $D = \partial_0 + i\partial_1$, the left regular functions are the holomorphic functions; for $A = \mathbb{H}$ and the operator above, they are the monogenic functions of quaternion analysis. Both are instances of one definition.
 
@@ -330,7 +330,7 @@ Regular functions form a real vector space, are closed under right multiplicatio
 | $\Omega$ | Open (or domain: open connected) subset of $A$ |
 | $f : \Omega \to A$ | Hypercomplex-valued function |
 | $D = \sum_\alpha B_\alpha \partial_\alpha$ | Generalised Cauchy–Riemann operator |
-| $\bar D = \sum_\alpha \bar B_\alpha \partial_\alpha$ | Conjugate operator |
+| $\bar D = \sum_\alpha B_\alpha^{\natural} \partial_\alpha$ | Conjugate operator |
 | $B_jB_k + B_kB_j = -2\delta_{jk}$ | Clifford relations on the coefficients |
 | $Df = 0$ | Left regularity (monogenicity) |
 | $fD = 0$ | Right regularity |

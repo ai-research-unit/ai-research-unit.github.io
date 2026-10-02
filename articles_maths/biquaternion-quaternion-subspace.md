@@ -13,16 +13,16 @@ The article follows the same plan as its companion *Biquaternion Centre Subspace
 **Definition.** The **quaternion subspace** is the fixed space of complex conjugation,
 
 $$
-\mathbb{H}_{\mathbb{B}} = \left\{ \tilde{Q} \in \mathbb{B} : \tilde{Q}^{*} = \tilde{Q} \right\} ,
+\mathbb{H}_{\mathbb{B}} = \left\{ \tilde{Q} \in \mathbb{B} : \bar{\tilde{Q}} = \tilde{Q} \right\} ,
 $$
 
-where $\tilde{Q}^{*} = Q_0^{*} e_0 + Q_1^{*} e_1 + Q_2^{*} e_2 + Q_3^{*} e_3$ is the coefficient-wise complex conjugate.
+where $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \bar{Q_1} e_1 + \bar{Q_2} e_2 + \bar{Q_3} e_3$ is the coefficient-wise complex conjugate.
 
-The complementary space, the anti-fixed space of ${}^{*}$, is the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, and $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ is the **quaternion decomposition** of the algebra.
+The complementary space, the anti-fixed space of $\bar{\cdot}$, is the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, and $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ is the **quaternion decomposition** of the algebra.
 
 ### The Condition in Coordinates
 
-Comparing $\tilde{Q}^{*} = \tilde{Q}$ coefficient by coefficient gives $Q_\mu^{*} = Q_\mu$ for each $\mu = 0, 1, 2, 3$, that is, each coefficient is real:
+Comparing $\bar{\tilde{Q}} = \tilde{Q}$ coefficient by coefficient gives $Q_\bar{\mu} = Q_\mu$ for each $\mu = 0, 1, 2, 3$, that is, each coefficient is real:
 
 $$
 \tilde{Q} = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 , \qquad q_0, q_1, q_2, q_3 \in \mathbb{R} .
@@ -100,7 +100,7 @@ $$
 N(\tilde{Q}) = q_0^2 + q_1^2 + q_2^2 + q_3^2 , \qquad N(\tilde{Q}) \geq 0 , \ \ N(\tilde{Q}) = 0 \iff \tilde{Q} = 0 ,
 $$
 
-with $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \bar{\tilde{Q}}\tilde{Q}$, and it is the square of the Euclidean norm on the four real coordinates.
+with $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \tilde{Q}^{\natural}\tilde{Q}$, and it is the square of the Euclidean norm on the four real coordinates.
 
 **Proof.** Setting $Q_\mu = q_\mu$ in $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ gives the displayed sum of squares, non-negative and vanishing only at the origin; multiplicativity is the multiplicativity of the biquaternion norm of $\mathbb{B}$.
 
@@ -111,12 +111,12 @@ The subspace is one of four on which the biquaternion norm is real — the other
 **Corollary.** Every non-zero element of $\mathbb{H}_{\mathbb{B}}$ is a unit, with
 
 $$
-\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}}}{N(\tilde{Q})} = \frac{q_0e_0 - q_1e_1 - q_2e_2 - q_3e_3}{q_0^2+q_1^2+q_2^2+q_3^2} ,
+\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{N(\tilde{Q})} = \frac{q_0e_0 - q_1e_1 - q_2e_2 - q_3e_3}{q_0^2+q_1^2+q_2^2+q_3^2} ,
 $$
 
 and the group of units is $\mathbb{H}_{\mathbb{B}} \setminus \{0\} \cong \mathbb{R}^4 \setminus \{0\}$.
 
-**Proof.** The inverse formula is the general formula $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$ with a non-zero denominator.
+**Proof.** The inverse formula is the general formula $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$ with a non-zero denominator.
 
 **Corollary.** The idempotents of $\mathbb{H}_{\mathbb{B}}$ are $0$ and $e_0$.
 
@@ -128,12 +128,12 @@ In the basis $e_0, e_1, e_2, e_3$ the four involutions act diagonally:
 
 | involution | matrix | effect |
 |---|---|---|
-| $\bar{\cdot}$ | $\operatorname{diag}(1,-1,-1,-1)$ | quaternion conjugation on the subspace |
-| ${}^{*}$ | $+\mathrm{id}$ | the identity, by definition of the subspace |
-| ${}^{\dagger}$ | $\operatorname{diag}(1,-1,-1,-1)$ | as quaternion conjugation |
+| ${}^{\natural}$ | $\operatorname{diag}(1,-1,-1,-1)$ | quaternion conjugation on the subspace |
+| $\bar{\cdot}$ | $+\mathrm{id}$ | the identity, by definition of the subspace |
+| ${}^{*}$ | $\operatorname{diag}(1,-1,-1,-1)$ | as quaternion conjugation |
 | $\flat$ | $\operatorname{diag}(-1,1,1,1)$ | minus quaternion conjugation |
 
-The subspace is invariant under all four. Complex conjugation fixes it pointwise, which is its defining property; quaternion and Hermitian conjugations coincide on it and act as the standard quaternion conjugation, an anti-automorphism of the subspace; reversal acts as the negative of that. In particular $\bar{\cdot}$ restricted to $\mathbb{H}_{\mathbb{B}}$ is the operation that inverts every pure imaginary unit and fixes the scalars, and the relations $(e_j e_k)^{*} = e_j e_k$ for the products show that ${}^{*}$ is not merely linear but an algebra automorphism of the whole of $\mathbb{B}$.
+The subspace is invariant under all four. Complex conjugation fixes it pointwise, which is its defining property; quaternion and Hermitian conjugations coincide on it and act as the standard quaternion conjugation, an anti-automorphism of the subspace; reversal acts as the negative of that. In particular ${}^{\natural}$ restricted to $\mathbb{H}_{\mathbb{B}}$ is the operation that inverts every pure imaginary unit and fixes the scalars, and the relations $(e_j e_k)^{*} = e_j e_k$ for the products show that $\bar{\cdot}$ is not merely linear but an algebra automorphism of the whole of $\mathbb{B}$.
 
 ## Relations to the Other Five Subspaces
 
@@ -253,10 +253,10 @@ The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex 
 
 | symbol | meaning |
 |---|---|
-| $\mathbb{H}_{\mathbb{B}}$ | the quaternion subspace, $\{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\}$ |
+| $\mathbb{H}_{\mathbb{B}}$ | the quaternion subspace, $\{\tilde{Q} : \bar{\tilde{Q}} = \tilde{Q}\}$ |
 | $\mathbb{C}_{\mathbb{B}}$ | the centre subspace |
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace |
-| $i\mathbb{H}_{\mathbb{B}}$ | the anti-quaternion subspace, the anti-fixed space of ${}^{*}$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | the anti-quaternion subspace, the anti-fixed space of $\bar{\cdot}$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the Hermitian and anti-Hermitian subspaces |
 | $q_0, q_1, q_2, q_3$ | the four real coefficients of an element of the subspace |
 | $N(\tilde{Q})$ | the biquaternion norm, $q_0^2+q_1^2+q_2^2+q_3^2$ on the subspace |
@@ -264,7 +264,7 @@ The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex 
 | $S^2$ | the two-sphere of roots of $-1$ in the subspace, $|\mu| = 1$ |
 | $\tilde\Pi = \tfrac12(e_0 + \mu i)$ | a Hermitian idempotent, the image of a root of the subspace |
 | $\mathrm{K} = \operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ | the rotation subalgebra, the derived Lie algebra of the subspace |
-| $\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$ | the four involutions |
+| ${}^{\natural}, \bar{\cdot}, {}^{*}, \flat$ | the four involutions |
 
 ## Further Reading
 

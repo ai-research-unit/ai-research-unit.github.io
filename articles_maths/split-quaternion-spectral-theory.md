@@ -7,7 +7,7 @@ The split-quaternion algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ is 
 
 This article defines the spectrum, discusses left and right eigenvalues, states the eigenvalue dichotomy, the Cayley–Hamilton theorem and the trace and determinant functionals, the eigenspaces and their dimensions, the resolvent and the spectral radius, and the relation to the biquaternion spectral theory. It relies on *Split-Quaternion Norm and Invertibility* for the invertibility criterion and on *Split-Quaternion Zero Divisors* for the singular elements. "Spectrum" without qualification always means the set of roots of the characteristic polynomial of the element, analysed over $\mathbb{C}$. No physics is invoked.
 
-**Conventions.** A general element is $\tilde q = q_0 + \mathbf v$ with $q_0 = \operatorname{Sc}(\tilde q)\in\mathbb{R}$ and $\mathbf v = q_1e_1+q_2e_2+q_3e_3\in V$; $N(\tilde q) = q_0^2+N(\mathbf v)$, $N(\mathbf v) = q_1^2-q_2^2-q_3^2$. The **trace** and **determinant** functionals are $T(\tilde q) = \tilde q + \bar{\tilde q} = 2q_0$ and $D(\tilde q) = \tilde q\bar{\tilde q} = N(\tilde q)$.
+**Conventions.** A general element is $\tilde q = q_0 + \mathbf v$ with $q_0 = \operatorname{Sc}(\tilde q)\in\mathbb{R}$ and $\mathbf v = q_1e_1+q_2e_2+q_3e_3\in V$; $N(\tilde q) = q_0^2+N(\mathbf v)$, $N(\mathbf v) = q_1^2-q_2^2-q_3^2$. The **trace** and **determinant** functionals are $T(\tilde q) = \tilde q + \tilde{q}^{\natural} = 2q_0$ and $D(\tilde q) = \tilde q\tilde{q}^{\natural} = N(\tilde q)$.
 
 ## The Spectrum of a Split Quaternion
 
@@ -74,7 +74,7 @@ The dichotomy is the signature in the spectrum of the indefiniteness of $N$: the
 **Definition.** The **trace** and **determinant** functionals of $\mathbb{H}_{\mathrm{s}}$ are
 
 $$
-T(\tilde q) = 2q_0 = \tilde q + \bar{\tilde q}, \qquad D(\tilde q) = N(\tilde q) = \tilde q\bar{\tilde q} .
+T(\tilde q) = 2q_0 = \tilde q + \tilde{q}^{\natural}, \qquad D(\tilde q) = N(\tilde q) = \tilde q\tilde{q}^{\natural} .
 $$
 
 Both are real-valued; $T$ is linear and $D$ is multiplicative, $D(\tilde q y) = D(\tilde q)D(y)$, and $D(\tilde q) \neq 0$ is exactly invertibility.
@@ -116,7 +116,7 @@ a right ideal of $\mathbb{H}_{\mathrm{s}}$, stable under right multiplication be
 **Definition.** For $\lambda \notin \sigma(\tilde q)$ the **resolvent** is
 
 $$
-R(\lambda) = (\tilde q-\lambda)^{-1} = \frac{\overline{\tilde q-\lambda}}{N(\tilde q-\lambda)} = \frac{\bar{\tilde q} - \lambda}{N(\tilde q) - 2q_0\lambda + \lambda^2}.
+R(\lambda) = (\tilde q-\lambda)^{-1} = \frac{(\tilde q-\lambda)^{\natural}}{N(\tilde q-\lambda)} = \frac{\tilde{q}^{\natural} - \lambda}{N(\tilde q) - 2q_0\lambda + \lambda^2}.
 $$
 
 **Theorem.** The resolvent is a $\mathbb{H}_{\mathrm{s}}$-valued rational function of $\lambda$ whose poles are exactly the points of $\sigma(\tilde q)$, and it satisfies
@@ -127,7 +127,7 @@ $$
 
 the resolvent identity and commutativity with $\tilde q$, on the common domain of definition.
 
-**Proof.** The inverse formula is the standard $y^{-1} = \bar y/N(y)$ of *Split-Quaternion Norm and Invertibility* applied to $y = \tilde q-\lambda$, and $N(\tilde q-\lambda) = \lambda^2-2q_0\lambda+N(\tilde q) = p_{\tilde q}(\lambda)$ is the characteristic polynomial, so the denominator vanishes exactly on $\sigma(\tilde q)$. The resolvent identity is the algebraic identity for inverses of non-commuting factors that do commute here, since $\tilde q$ commutes with every polynomial in $\tilde q$.
+**Proof.** The inverse formula is the standard $y^{-1} = y^{\natural}/N(y)$ of *Split-Quaternion Norm and Invertibility* applied to $y = \tilde q-\lambda$, and $N(\tilde q-\lambda) = \lambda^2-2q_0\lambda+N(\tilde q) = p_{\tilde q}(\lambda)$ is the characteristic polynomial, so the denominator vanishes exactly on $\sigma(\tilde q)$. The resolvent identity is the algebraic identity for inverses of non-commuting factors that do commute here, since $\tilde q$ commutes with every polynomial in $\tilde q$.
 
 **Remark.** $R$ is analytic in $\lambda$ off $\sigma(\tilde q)$ in the sense of $\mathbb{H}_{\mathrm{s}}$-valued functions of a **real or complex central** variable $\lambda$; because $\lambda$ is central, the calculus of one real or complex variable applies to $R$ componentwise. There is no analogue of the Cauchy integral of a non-central variable here.
 
@@ -155,11 +155,11 @@ Equivalently, with the eigenvalues $\lambda_\pm = q_0\pm\sqrt{-N(\mathbf v)}$, $
 
 The definite spectral theorem has no direct analogue, and the reason is the indefinite form.
 
-**Definition.** An element is **symmetric** (Hermitian for the conjugation $\bar{\cdot}$) if $\bar{\tilde q} = \tilde q$, and **normal** if $\tilde q\bar{\tilde q} = \bar{\tilde q} \tilde q$.
+**Definition.** An element is **symmetric** (Hermitian for the conjugation ${}^{\natural}$) if $\tilde{q}^{\natural} = \tilde q$, and **normal** if $\tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q$.
 
-**Theorem.** The symmetric elements are exactly the scalars, $\tilde q = q_0$, because $\bar{\tilde q} = q_0 - \mathbf v$ equals $\tilde q = q_0+\mathbf v$ only for $\mathbf v = 0$. Every element is normal, since $\tilde q\bar{\tilde q} = \bar{\tilde q} \tilde q = N(\tilde q)e_0$ holds identically. Thus the symmetric elements are the scalar line, and the "unitarily diagonalisable" class is the whole algebra only in the trivial sense that all elements are diagonalisable over $\mathbb{C}$ by similarity.
+**Theorem.** The symmetric elements are exactly the scalars, $\tilde q = q_0$, because $\tilde{q}^{\natural} = q_0 - \mathbf v$ equals $\tilde q = q_0+\mathbf v$ only for $\mathbf v = 0$. Every element is normal, since $\tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q = N(\tilde q)e_0$ holds identically. Thus the symmetric elements are the scalar line, and the "unitarily diagonalisable" class is the whole algebra only in the trivial sense that all elements are diagonalisable over $\mathbb{C}$ by similarity.
 
-**Proof.** The symmetric statement is immediate; normality follows from $\tilde q\bar{\tilde q} = N(\tilde q)$ being central.
+**Proof.** The symmetric statement is immediate; normality follows from $\tilde q\tilde{q}^{\natural} = N(\tilde q)$ being central.
 
 **Remark.** The involutions $\alpha$ and $\rho$ of *Split-Quaternion Subspaces and the Involutions* have larger fixed spaces, $\operatorname{span}\{1,e_2,e_3\}$ and $\operatorname{span}\{1,e_1,e_2\}$, and the indefinite form makes neither of them a positive-definite Hermitian structure; a genuine spectral theorem in the sense of Hilbert space theory requires a definite form, which $\mathbb{H}_{\mathrm{s}}$ does not carry. What replaces it is the direct-sum (Peirce) decomposition of *Split-Quaternion Ideals and Peirce Decomposition*, which is a decomposition tailored to an idempotent rather than to a Hermitian element.
 
@@ -177,21 +177,21 @@ The split-quaternion case, by contrast, has real eigenvalues $q_0\pm\sqrt{-N(\ma
 
 ## Summary
 
-The spectrum of $\tilde q = q_0+\mathbf v$ is the zero set of the characteristic polynomial $p_{\tilde q}(\lambda) = \lambda^2-2q_0\lambda+N(\tilde q)$, namely $\sigma(\tilde q) = \{q_0\pm\sqrt{-N(\mathbf v)}\}$, with $\tilde q$ singular exactly when $0\in\sigma(\tilde q)$, i.e. $N(\tilde q)=0$. The **eigenvalue dichotomy** is decided by the sign of $N(\mathbf v)$: a distinct real pair for spacelike $\mathbf v$, a complex-conjugate pair for timelike $\mathbf v$, and a real double root for null $\mathbf v$; the spectrum over $\mathbb{R}$ may be empty. Left and right eigenvalues with central scalars coincide with the real spectrum, while the right spectrum in the full algebra is a union of conjugacy classes. The trace and determinant functionals are $T(\tilde q)=2q_0$ and $D(\tilde q)=N(\tilde q)$, and Cayley–Hamilton reads $\tilde q^2-2q_0\tilde q+N(\tilde q)=0$, reducing all powers to a linear expression and making every null element square-zero. Eigenspaces are lines for distinct eigenvalues, two-dimensional for the null elements, and the whole algebra for scalars. The resolvent $R(\lambda) = (\bar{\tilde q}-\lambda)/(\lambda^2-2q_0\lambda+N(\tilde q))$ has poles exactly on the spectrum and satisfies the resolvent identity, and the spectral radius is $|q_0|+\sqrt{|N(\mathbf v)|}$, $\sqrt{q_0^2+N(\mathbf v)}$ or $|q_0|$ according to the sign of $N(\mathbf v)$. Symmetric elements are the scalars and every element is normal, so there is no definite spectral theorem; the Peirce decomposition replaces it. Compared with the biquaternion theory, the spectra have the same polynomial shape but the split vector norm makes the eigenvalue type depend on the sign of the indefinite form.
+The spectrum of $\tilde q = q_0+\mathbf v$ is the zero set of the characteristic polynomial $p_{\tilde q}(\lambda) = \lambda^2-2q_0\lambda+N(\tilde q)$, namely $\sigma(\tilde q) = \{q_0\pm\sqrt{-N(\mathbf v)}\}$, with $\tilde q$ singular exactly when $0\in\sigma(\tilde q)$, i.e. $N(\tilde q)=0$. The **eigenvalue dichotomy** is decided by the sign of $N(\mathbf v)$: a distinct real pair for spacelike $\mathbf v$, a complex-conjugate pair for timelike $\mathbf v$, and a real double root for null $\mathbf v$; the spectrum over $\mathbb{R}$ may be empty. Left and right eigenvalues with central scalars coincide with the real spectrum, while the right spectrum in the full algebra is a union of conjugacy classes. The trace and determinant functionals are $T(\tilde q)=2q_0$ and $D(\tilde q)=N(\tilde q)$, and Cayley–Hamilton reads $\tilde q^2-2q_0\tilde q+N(\tilde q)=0$, reducing all powers to a linear expression and making every null element square-zero. Eigenspaces are lines for distinct eigenvalues, two-dimensional for the null elements, and the whole algebra for scalars. The resolvent $R(\lambda) = (\tilde{q}^{\natural}-\lambda)/(\lambda^2-2q_0\lambda+N(\tilde q))$ has poles exactly on the spectrum and satisfies the resolvent identity, and the spectral radius is $|q_0|+\sqrt{|N(\mathbf v)|}$, $\sqrt{q_0^2+N(\mathbf v)}$ or $|q_0|$ according to the sign of $N(\mathbf v)$. Symmetric elements are the scalars and every element is normal, so there is no definite spectral theorem; the Peirce decomposition replaces it. Compared with the biquaternion theory, the spectra have the same polynomial shape but the split vector norm makes the eigenvalue type depend on the sign of the indefinite form.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
 | $\mathbb{H}_{\mathrm{s}}$, $\tilde q=q_0+\mathbf v$ | the split-quaternion algebra and a general element | *Split-Quaternion Algebra* |
-| $T(\tilde q) = 2q_0 = \tilde q+\bar{\tilde q}$ | the trace functional | this article |
-| $D(\tilde q) = N(\tilde q) = \tilde q\bar{\tilde q}$ | the determinant / norm functional | *Split-Quaternion Norm and Invertibility* |
+| $T(\tilde q) = 2q_0 = \tilde q+\tilde{q}^{\natural}$ | the trace functional | this article |
+| $D(\tilde q) = N(\tilde q) = \tilde q\tilde{q}^{\natural}$ | the determinant / norm functional | *Split-Quaternion Norm and Invertibility* |
 | $\sigma(\tilde q) = \{q_0\pm\sqrt{-N(\mathbf v)}\}$ | the spectrum over $\mathbb{C}$ | this article |
 | $\sigma_{\mathbb{R}}(\tilde q)$, $\sigma_L(\tilde q)$, $\sigma_R(\tilde q)$ | real, left and right spectra | this article |
 | $p_{\tilde q}(\lambda) = \lambda^2-2q_0\lambda+N(\tilde q)$ | the characteristic polynomial | this article |
 | $\tilde q^2-2q_0\tilde q+N(\tilde q)=0$ | Cayley–Hamilton | this article |
 | $E_\lambda$ | the eigenspace, a left ideal | this article |
-| $R(\lambda) = (\bar{\tilde q}-\lambda)/(\lambda^2-2q_0\lambda+N(\tilde q))$ | the resolvent | this article |
+| $R(\lambda) = (\tilde{q}^{\natural}-\lambda)/(\lambda^2-2q_0\lambda+N(\tilde q))$ | the resolvent | this article |
 | $\rho(\tilde q)$ | the spectral radius, by cases on $\operatorname{sgn}N(\mathbf v)$ | this article |
 | $N(\mathbf v) = q_1^2-q_2^2-q_3^2$ | the restricted norm, signature $(2,1)$ | *Split-Quaternion Scalar and Vector Subspaces* |
 | zero divisors $=\{N=0\}$ | the singular elements, spectrum containing $0$ | *Split-Quaternion Zero Divisors* |

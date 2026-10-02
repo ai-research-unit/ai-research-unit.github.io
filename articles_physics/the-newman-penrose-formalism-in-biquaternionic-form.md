@@ -16,10 +16,10 @@ Three claims organise the discussion.
 
 The article closes by separating what the framework contains from what remains an agenda. The separation is sharp: the null structure of the tetrad is native, and the curvature that the tetrad is used to describe is not.
 
-The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the biquaternion norm is $N(\tilde Q) = \tilde Q\bar{\tilde Q}$. The material sector is $\mathbb{M}_- = \{iq_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 : q_\mu \in \mathbb{R}\}$, with four-vector coordinates $(q_0,q_1,q_2,q_3)$, and the bilinear (polar) form on it is
+The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the biquaternion norm is $N(\tilde Q) = \tilde Q\tilde Q^{\natural}$. The material sector is $\mathbb{M}_- = \{iq_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 : q_\mu \in \mathbb{R}\}$, with four-vector coordinates $(q_0,q_1,q_2,q_3)$, and the bilinear (polar) form on it is
 
 $$
-\langle \tilde Q, \tilde P\rangle \;=\; \mathrm{Sc}\big(\tilde Q\bar{\tilde P}\big) \;=\; -q_0p_0 + q_1p_1 + q_2p_2 + q_3p_3 ,
+\langle \tilde Q, \tilde P\rangle \;=\; \mathrm{Sc}\big(\tilde Q\tilde P^{\natural}\big) \;=\; -q_0p_0 + q_1p_1 + q_2p_2 + q_3p_3 ,
 $$
 
 of signature $(3,1)$ in the read list's counting — three positive directions and one negative. The matrix realization is the $\mathbb{C}$-algebra isomorphism
@@ -29,7 +29,7 @@ $$
 \Phi(e_0) = I_2, \quad \Phi(e_k) = -i\sigma_k, \quad \Phi(i) = iI_2,
 $$
 
-so that $N(\tilde Q) = \det\Phi(\tilde Q)$, Hermitian conjugation corresponds to the conjugate transpose, and $\mathbb{M}_-$ corresponds to the anti-Hermitian matrices. The spinor module is $S = \mathbb{C}^2$, the unique simple module of $\mathbb{B}$, on which the algebra acts by left multiplication; the Weyl spinor modules are $S = (\tfrac12,0)$ and its conjugate $\bar S = (0,\tfrac12)$. The rotor group is $\{\tilde\Lambda : \tilde\Lambda\bar{\tilde\Lambda} = e_0\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_0\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
+so that $N(\tilde Q) = \det\Phi(\tilde Q)$, Hermitian conjugation corresponds to the conjugate transpose, and $\mathbb{M}_-$ corresponds to the anti-Hermitian matrices. The spinor module is $S = \mathbb{C}^2$, the unique simple module of $\mathbb{B}$, on which the algebra acts by left multiplication; the Weyl spinor modules are $S = (\tfrac12,0)$ and its conjugate $\bar S = (0,\tfrac12)$. The rotor group is $\{\tilde\Lambda : \tilde\Lambda\tilde\Lambda^{\natural} = e_0\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde\Lambda\tilde{Q}\tilde\Lambda^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_0\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
 
 ## Conventions: Signature and the Tetrad Normalization
 
@@ -101,7 +101,7 @@ $$
 
 The two real null directions are the two primitive idempotents, and the complex pair is the off-diagonal pair. The tetrad is the Peirce decomposition of the algebra read as a null frame: the "physical" content of the tetrad — two real null directions — is exactly the idempotent content of $\mathbb{B}$.
 
-The inner products (1) now follow from (4) and the trace formula $\langle \tilde Q,\tilde P\rangle = \mathrm{Sc}(\tilde Q\bar{\tilde P})$. Because $\bar q = p$ and $p^2=p$,
+The inner products (1) now follow from (4) and the trace formula $\langle \tilde Q,\tilde P\rangle = \mathrm{Sc}(\tilde Q\tilde P^{\natural})$. Because $\bar q = p$ and $p^2=p$,
 
 $$
 \langle l,n\rangle = (\sqrt2\,i)^2\,\mathrm{Sc}(p\,\bar q) = -2\,\mathrm{Sc}(p^2) = -1 ,
@@ -329,9 +329,9 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 | $\mathbb{B}$ | biquaternion algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_0,e_1,e_2,e_3$, scalar imaginary $i$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | anti-Hermitian and Hermitian subspaces of $\mathbb{B}$; material and informational sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | real-quaternion subspace |
-| $N(\tilde Q)=\tilde Q\bar{\tilde Q}$ | biquaternion norm; $N(\tilde Q)=\det\Phi(\tilde Q)$ |
+| $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ | biquaternion norm; $N(\tilde Q)=\det\Phi(\tilde Q)$ |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | scalar part and trace |
-| $\langle\tilde Q,\tilde P\rangle=\mathrm{Sc}(\tilde Q\bar{\tilde P})$ | bilinear form on $\mathbb{M}_-$, signature $(3,1)$ |
+| $\langle\tilde Q,\tilde P\rangle=\mathrm{Sc}(\tilde Q\tilde P^{\natural})$ | bilinear form on $\mathbb{M}_-$, signature $(3,1)$ |
 | $\Phi$ | matrix realization $\mathbb{B}\to M_2(\mathbb{C})$, $\Phi(e_k)=-i\sigma_k$ |
 | $S$, $\bar S$ | spinor module and its conjugate, $S\cong\mathbb{C}^2$ |
 | $\mathrm{Sym}^4 S$ | self-dual Weyl spinors, complex dimension $5$ |

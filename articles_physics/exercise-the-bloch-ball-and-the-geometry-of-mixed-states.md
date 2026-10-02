@@ -12,7 +12,7 @@ $$
 \tilde{\rho} = \tfrac{1}{2}\bigl(e_0 + i\mathbf{r}\bigr), \qquad \mathbf{r} = r_1 e_1 + r_2 e_2 + r_3 e_3 \in \mathbb{R}^3,
 $$
 
-with $\mathbf{r}$ the **Bloch vector**; it is a state exactly when $|\mathbf{r}| \leq 1$, i.e. when it lies in the closed unit ball $B^3$. The biquaternion norm on the trace-one slice is $\tilde{\rho}\bar{\tilde{\rho}} = \tfrac{1}{4}(1 - |\mathbf{r}|^2)e_0$. The eigenvalues are $\lambda_\pm = \tfrac{1}{2}(1 \pm |\mathbf{r}|)$. The purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\mathbf{r}|^2)$ and the linear entropy is $S_{\mathrm{lin}}(\tilde{\rho}) = 1 - \mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 - |\mathbf{r}|^2)$. The von Neumann entropy is $S(\tilde{\rho}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$. The trace pairing on the slice is
+with $\mathbf{r}$ the **Bloch vector**; it is a state exactly when $|\mathbf{r}| \leq 1$, i.e. when it lies in the closed unit ball $B^3$. The biquaternion norm on the trace-one slice is $\tilde{\rho}\tilde{\rho}^{\natural} = \tfrac{1}{4}(1 - |\mathbf{r}|^2)e_0$. The eigenvalues are $\lambda_\pm = \tfrac{1}{2}(1 \pm |\mathbf{r}|)$. The purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\mathbf{r}|^2)$ and the linear entropy is $S_{\mathrm{lin}}(\tilde{\rho}) = 1 - \mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 - |\mathbf{r}|^2)$. The von Neumann entropy is $S(\tilde{\rho}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$. The trace pairing on the slice is
 
 $$
 \mathrm{Tr}(\tilde{\rho}\tilde{\sigma}) = \tfrac{1}{2}\bigl(1 + \mathbf{r}\cdot\mathbf{s}\bigr), \qquad \tilde{\sigma} = \tfrac{1}{2}\bigl(e_0 + i\mathbf{s}\bigr),
@@ -242,7 +242,7 @@ $$
 \tilde{\rho} = \tfrac12 e_0,
 $$
 
-the maximally mixed state. Its purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac12(1+0) = \tfrac12$, the minimum on the ball; its linear entropy is $\tfrac12$, the maximum; its biquaternion norm is $\tilde{\rho}\bar{\tilde{\rho}} = \tfrac14 e_0$, whose scalar coefficient $\tfrac14$ is the largest attainable on the slice; and its von Neumann entropy is $\log 2$, the maximum. In the spectral form it is the equal mixture $\tfrac12\tilde\Pi_+(\hat{\boldsymbol{\mu}}) + \tfrac12\tilde\Pi_-(\hat{\boldsymbol{\mu}})$ of the complementary idempotents along **any** axis, and it is the unique state invariant under the full unitary group $U(2)$, which acts on the ball by rotations. It is also the barycenter: the uniform average of the pure states over the boundary sphere is
+the maximally mixed state. Its purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac12(1+0) = \tfrac12$, the minimum on the ball; its linear entropy is $\tfrac12$, the maximum; its biquaternion norm is $\tilde{\rho}\tilde{\rho}^{\natural} = \tfrac14 e_0$, whose scalar coefficient $\tfrac14$ is the largest attainable on the slice; and its von Neumann entropy is $\log 2$, the maximum. In the spectral form it is the equal mixture $\tfrac12\tilde\Pi_+(\hat{\boldsymbol{\mu}}) + \tfrac12\tilde\Pi_-(\hat{\boldsymbol{\mu}})$ of the complementary idempotents along **any** axis, and it is the unique state invariant under the full unitary group $U(2)$, which acts on the ball by rotations. It is also the barycenter: the uniform average of the pure states over the boundary sphere is
 
 $$
 \frac{1}{4\pi}\int_{S^2}\tilde\Pi(\hat{\boldsymbol{\mu}})\,d\Omega
@@ -255,7 +255,7 @@ because the mean of the unit vector over the sphere vanishes.
 (b) The boundary is $|\mathbf{r}| = 1$. For these states the biquaternion norm vanishes,
 
 $$
-\tilde{\rho}\bar{\tilde{\rho}} = \tfrac14(1 - |\mathbf{r}|^2)e_0 = 0 \quad\Longleftrightarrow\quad |\mathbf{r}| = 1,
+\tilde{\rho}\tilde{\rho}^{\natural} = \tfrac14(1 - |\mathbf{r}|^2)e_0 = 0 \quad\Longleftrightarrow\quad |\mathbf{r}| = 1,
 $$
 
 so a boundary state is a zero divisor of $\mathbb{B}$; the deviation from idempotency,

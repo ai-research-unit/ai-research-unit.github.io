@@ -24,10 +24,10 @@ For the rotors the doubling is familiar and the two readings are both two-sided 
 The two actions on a four-vector are worth naming explicitly, since both are used below. For $\tilde{\Lambda}$ even with $N(\tilde{\Lambda}) = 1$, the rotor conjugation
 
 $$
-\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger
+\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}
 $$
 
-implements the Lorentz transformation of the material vector $\tilde{Q}\in\mathbb{M}_-$. For a pure boost the rotor is Hermitian, $\tilde{\Lambda}^\dagger = \tilde{\Lambda}$, and the action reduces to $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}$; for a general element of $SL(2,\mathbb{C})$ the general form is required. Both facts are those of *The Lorentz Transformation as a Biquaternionic Rotation*. In the Clifford representation the same action is the conjugation $x\mapsto\Lambda x\Lambda^{-1}$ by $\Phi(\tilde{\Lambda})$, which is legitimate because in that representation a unit element satisfies $\Phi(\tilde{\Lambda})^\dagger = \Phi(\tilde{\Lambda})^{-1}$.
+implements the Lorentz transformation of the material vector $\tilde{Q}\in\mathbb{M}_-$. For a pure boost the rotor is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, and the action reduces to $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}$; for a general element of $SL(2,\mathbb{C})$ the general form is required. Both facts are those of *The Lorentz Transformation as a Biquaternionic Rotation*. In the Clifford representation the same action is the conjugation $x\mapsto\Lambda x\Lambda^{-1}$ by $\Phi(\tilde{\Lambda})$, which is legitimate because in that representation a unit element satisfies $\Phi(\tilde{\Lambda})^\dagger = \Phi(\tilde{\Lambda})^{-1}$.
 
 The odd elements are not in $\mathbb{B}$, so they have no biquaternion representative. They lie in the odd part of $\mathrm{Cl}_{1,3}$ and act on vectors by the two-sided map of the Pin group,
 
@@ -96,7 +96,7 @@ $$
 
 the identity together with the spacelike bivectors, which generate the spatial rotations.
 
-The decisive consequence concerns the **metric**. The biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ evaluated on the two sector bases gives
+The decisive consequence concerns the **metric**. The biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ evaluated on the two sector bases gives
 
 $$
 N \text{ on } (e_0, ie_1, ie_2, ie_3) = \mathrm{diag}(+1,-1,-1,-1) = g,
@@ -132,18 +132,18 @@ Among the four generators, $\gamma^0$ is unique in this. The spatial generators 
 The frame completes the Clifford reading of the conjugations of $\mathbb{B}$. Clifford reversal $\mathrm{rev}$, the anti-automorphism that reverses the order of the factors in a product, acts on the biquaternions as **quaternion conjugation**:
 
 $$
-\mathrm{rev}\big(\Phi(\tilde{Q})\big) = \Phi(\bar{\tilde{Q}}) .
+\mathrm{rev}\big(\Phi(\tilde{Q})\big) = \Phi(\tilde{Q}^{\natural}) .
 $$
 
 Composing the reversal with the frame conjugation gives the Hermitian conjugation:
 
 $$
-\Phi(\tilde{Q}^\dagger) = \gamma^0\,\mathrm{rev}\big(\Phi(\tilde{Q})\big)\,\gamma^0 .
+\Phi(\tilde{Q}^{*}) = \gamma^0\,\mathrm{rev}\big(\Phi(\tilde{Q})\big)\,\gamma^0 .
 $$
 
-So the two elementary conjugations of the algebra have separate Clifford readings — reversal for the quaternion conjugation, the frame for the complex one — and $\dagger$ is their composite. Verified on generic elements.
+So the two elementary conjugations of the algebra have separate Clifford readings — reversal for the quaternion conjugation, the frame for the complex one — and ${}^{*}$ is their composite. Verified on generic elements.
 
-There is a consequence worth recording, because it bears on the mass term. The algebra's real structure is the anti-Hermitian conjugation $\flat = -\dagger$, and the identity above shows that $\gamma^0$ is *inside* it: the frame, with its sector-exchanging and reflection properties, is one of the two ingredients of $\flat$. A formulation of the mass built on $\flat$ therefore carries the frame, but in the guise of a reality condition rather than of a generator; the linear and chirality-off-diagonal mass term of *The Dirac Equation in Biquaternionic Form* displays it openly instead. This is an observation about how the frame is packaged, not a derivation; it is stated here because it is the reason the frame is easy to overlook.
+There is a consequence worth recording, because it bears on the mass term. The algebra's real structure is the anti-Hermitian conjugation $\flat = -{}^{*}$, and the identity above shows that $\gamma^0$ is *inside* it: the frame, with its sector-exchanging and reflection properties, is one of the two ingredients of $\flat$. A formulation of the mass built on $\flat$ therefore carries the frame, but in the guise of a reality condition rather than of a generator; the linear and chirality-off-diagonal mass term of *The Dirac Equation in Biquaternionic Form* displays it openly instead. This is an observation about how the frame is packaged, not a derivation; it is stated here because it is the reason the frame is easy to overlook.
 
 ## The Spaces of Rotations and of Reflections
 
@@ -162,7 +162,7 @@ Two subfamilies are worth separating, because the series uses them differently:
 | subfamily | condition | biquaternion form | character |
 |---|---|---|---|
 | spatial rotations | $\tilde{\Lambda}$ real quaternion | $\cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat{e}_{jk}$ | group $SU(2)$ |
-| pure boosts | $\tilde{\Lambda}$ Hermitian, $\tilde{\Lambda}^\dagger = \tilde{\Lambda}$ | $\cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ | symmetric submanifold, not a group |
+| pure boosts | $\tilde{\Lambda}$ Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$ | $\cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ | symmetric submanifold, not a group |
 
 The boosts do not close under multiplication — the product of two non-collinear boosts is a boost plus a Thomas–Wigner rotation — so they form a submanifold of $SL(2,\mathbb{C})$ rather than a subgroup. The two families are exponentials of the two sector algebras: the boosts of elements of $\mathbb{M}_+$, namely the timelike bivectors $i\hat{\mathbf{u}}$, and the spatial rotations of elements of $\mathbb{H}_{\mathbb{B}}$, namely the spacelike bivectors $\hat{e}_{jk}$.
 
@@ -324,7 +324,7 @@ The claims of this article, in order.
 
 3. **The frame and the metric.** Every vector is $\gamma^0\Phi(w)$ with $w\in\mathbb{M}_+$, and $\Phi(\mathbb{M}_+)$ is the identity together with the timelike bivectors — the boost sector. The biquaternion norm on the Hermitian basis is $g = \mathrm{diag}(+1,-1,-1,-1)$, and on the material basis $\eta = -g$. The Clifford metric is the biquaternion norm of the objects the generators represent, so the mostly-minus convention is forced rather than chosen.
 
-4. **Conjugation by $\gamma^0$ is complex conjugation.** $\gamma^0\Phi(\tilde{Q})\gamma^0 = \Phi(\tilde{Q}^*)$, the sector-exchanging conjugation. Together with reversal, which is quaternion conjugation, it composes into $\dagger$. The real structure $\flat = -\dagger$ therefore carries the frame within it.
+4. **Conjugation by $\gamma^0$ is complex conjugation.** $\gamma^0\Phi(\tilde{Q})\gamma^0 = \Phi(\tilde{Q}^*)$, the sector-exchanging conjugation. Together with reversal, which is quaternion conjugation, it composes into ${}^{*}$. The real structure $\flat = -{}^{*}$ therefore carries the frame within it.
 
 5. **Rotations and reflections have different spaces.** The rotations are the unit-norm biquaternions, a group of dimension $6$ with the bivectors as Lie algebra. The reflections are the odd unit elements, a single coset of dimension $3$ organised by their $\mathbb{M}_+$ normals, not a group. Together they are $\mathrm{Pin}(1,3)$. **Anti-linear maps shift the correspondence by one:** their determinant carries an extra $-1$, so an even internal matrix acts as a reflection and an odd one as a proper transformation — which is how $T$ (even) is a reflection while $C$ (odd) is not.
 
@@ -348,11 +348,11 @@ The claims of this article, in order.
 | $\tilde\Pi_{L,R} = \tfrac12(1\pm\gamma_5)$ | Chirality projectors, rank $2$ |
 | $\gamma^0$ | The frame; the reflection whose normal is $e_0$ |
 | $\rho(u) : x\mapsto -uxu^{-1}$ | Pin action of an odd unit element |
-| $\mathrm{rev}(\Phi(\tilde{Q})) = \Phi(\bar{\tilde{Q}})$ | Clifford reversal is quaternion conjugation |
-| $\Phi(\tilde{Q}^\dagger) = \gamma^0\mathrm{rev}(\Phi(\tilde{Q}))\gamma^0$ | Hermitian conjugation |
+| $\mathrm{rev}(\Phi(\tilde{Q})) = \Phi(\tilde{Q}^{\natural})$ | Clifford reversal is quaternion conjugation |
+| $\Phi(\tilde{Q}^{*}) = \gamma^0\mathrm{rev}(\Phi(\tilde{Q}))\gamma^0$ | Hermitian conjugation |
 | $\gamma^0\Phi(\tilde{Q})\gamma^0 = \Phi(\tilde{Q}^*)$ | Conjugation by the frame is complex conjugation |
 | $\tilde{\Lambda}$, $N(\tilde{\Lambda}) = 1$ | Rotor, unit-norm biquaternion; $SL(2,\mathbb{C})$ |
-| $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ | Rotor conjugation on $\mathbb{M}_-$ |
+| $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation on $\mathbb{M}_-$ |
 | $\mathbb{M}_+$ | Hermitian sector; $\Phi(\mathbb{M}_+)$ = identity + timelike bivectors (boosts) |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion sector; $\Phi(\mathbb{H}_{\mathbb{B}})$ = identity + spacelike bivectors (spatial rotations) |
 | $\det M$ | Two-reflection criterion: $\det M = 0$ iff $\tilde{\Lambda}$ fixes a plane |

@@ -21,10 +21,10 @@ $$
 e_1^2 = -1, \qquad e_2^2 = +1, \qquad e_3 = e_1e_2, \qquad e_1e_2 = -e_2e_1,
 $$
 
-a general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, the split-quaternion norm is
+a general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, the split-quaternion norm is
 
 $$
-N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2+q_1^2-q_2^2-q_3^2,
+N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2-q_2^2-q_3^2,
 $$
 
 the identification with $\mathrm{Cl}_{1,1}$ and with $M_2(\mathbb{R})$ is the corpus's, and the element is **timelike** when $N(\tilde q) > 0$, **spacelike** when $N(\tilde q) < 0$ and **lightlike** when $N(\tilde q) = 0$. No physics is invoked.
@@ -86,13 +86,13 @@ $$
 
 the three-dimensional subspace of symmetric matrix images, and its anti-fixed space is the line $\mathbb{R}e_1$ of antisymmetric images.
 
-The transpose involution is distinct from the conjugation that defines the split-quaternion norm, $\bar{\cdot}$, which reads $\tilde q \mapsto q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and negates all three vector units. Both are anti-automorphisms and both fix the scalars; they differ in the sign they give $e_2$ and $e_3$, and this difference is what makes one of them usable here and the other not.
+The transpose involution is distinct from the conjugation that defines the split-quaternion norm, ${}^{\natural}$, which reads $\tilde q \mapsto q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and negates all three vector units. Both are anti-automorphisms and both fix the scalars; they differ in the sign they give $e_2$ and $e_3$, and this difference is what makes one of them usable here and the other not.
 
 ### Why the Conjugation That Defines the Split-Quaternion Norm Cannot Serve
 
 A polar representation needs a factor that is, in a definite sense, positive. In the matrix picture the positive factor is the symmetric positive definite square root of $XX^{T}$, and the form $XX^{T}$ is positive definite for every invertible $X$ by construction, since $v^{T}XX^{T}v = |X^{T}v|^2 > 0$ for $v \neq 0$ when $X$ is invertible.
 
-The algebra's own quadratic form does not do this job. For any $\tilde q$ one has $\tilde q\bar{\tilde q} = N(\tilde q)$, a real scalar, and it is negative whenever $\tilde q$ is spacelike: for $\tilde q = e_3$, for instance, $\tilde q\bar{\tilde q} = N(e_3) = -1$. An object with negative scalar value cannot be a positive factor, and there is no way to repair the defect by a sign, since the sign varies over the algebra. The positive object must therefore be built from the transpose involution instead:
+The algebra's own quadratic form does not do this job. For any $\tilde q$ one has $\tilde q\tilde{q}^{\natural} = N(\tilde q)$, a real scalar, and it is negative whenever $\tilde q$ is spacelike: for $\tilde q = e_3$, for instance, $\tilde q\tilde{q}^{\natural} = N(e_3) = -1$. An object with negative scalar value cannot be a positive factor, and there is no way to repair the defect by a sign, since the sign varies over the algebra. The positive object must therefore be built from the transpose involution instead:
 
 $$
 \Sigma(\tilde q) = \tilde q\,\tilde q^{\tau},
@@ -354,9 +354,9 @@ in which $b$ is the unique symmetric positive definite element with $b^{\tau} = 
 |---|---|
 | $\mathbb{H}_{\mathrm{s}}$ | the split-quaternion algebra, basis $1,e_1,e_2,e_3$, $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$ |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | a split quaternion |
-| $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | the conjugation that defines the split-quaternion norm |
+| $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | the conjugation that defines the split-quaternion norm |
 | $\tilde q^{\tau} = q_0 e_0 - q_1 e_1 + q_2 e_2 + q_3 e_3$ | the transpose involution, the image of the matrix transpose |
-| $N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, of signature $(2,2)$ |
+| $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, of signature $(2,2)$ |
 | $\Phi$ | the isomorphism $\mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$ |
 | $\Sigma = \tilde q\tilde q^{\tau}$, $P = \sqrt{\Sigma}$ | the positive element and its symmetric positive definite square root |
 | $r = \sqrt{|N(\tilde q)|}$ | the modulus |

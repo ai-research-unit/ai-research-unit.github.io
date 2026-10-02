@@ -11,7 +11,7 @@ Four boundaries are respected. (i) The corpus's own Dirac equation, its square, 
 Two conventions are load-bearing. The source's **two bigradients** are $\nabla^\pm = \partial_\tau \pm i\nabla$, with $\nabla$ the pure-vector gradient acting by left quaternion multiplication and $\tau = ct$. They are the corpus's gradient pair times $i$,
 
 $$
-\nabla^+ = i\tilde{\nabla}, \qquad \nabla^- = i\bar{\tilde{\nabla}},
+\nabla^+ = i\tilde{\nabla}, \qquad \nabla^- = i\tilde{\nabla}^{\natural},
 \qquad \partial_\tau = -\frac{i}{c}\partial_t ,
 $$
 
@@ -22,7 +22,7 @@ $$
 \qquad \Box = \partial_{ict}^2 + \Delta ,
 $$
 
-and the two conventions differ in sign, as the d'Alembertian article's table already records for the Weyl-spinor exercise. Consequently the source's mass $m$ in $(\nabla^\pm + m)B = F$ is related to the corpus's central shift by $\kappa = -im$, and the case the source studies — an **imaginary** $m = i\rho$ — is the corpus's **real** $\kappa = \rho$, the case in which the homogeneous equation has non-trivial solutions. Every identification below is stated on the source's side and translated once; the factors of $i$ are not left to the reader.
+and the source's operator differs in sign from the corpus's. Consequently the source's mass $m$ in $(\nabla^\pm + m)B = F$ is related to the corpus's central shift by $\kappa = -im$, and the case the source studies — an **imaginary** $m = i\rho$ — is the corpus's **real** $\kappa = \rho$, the case in which the homogeneous equation has non-trivial solutions. Every identification below is stated on the source's side and translated once; the factors of $i$ are not left to the reader.
 
 ## The Matrix Form and the Matrix of the Gradient
 
@@ -70,7 +70,7 @@ This is the KGFSh operator the d'Alembertian article owns, and it is where the p
 
 $$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L , \qquad
-\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
+\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
 \qquad\Longrightarrow\qquad
 \bigl(\Box - \mu^2\bigr)\tilde{\Psi}_{R,L} = 0 ,
 $$
@@ -238,7 +238,7 @@ $$
 where $\tilde{\Pi}_\pm(\hat{\mu})$ is the corpus's rank-one projector, the **pure state** of the informational sector, and $\hat{\mu}$ runs over the unit sphere. The verification is a one-line computation and it was done: $\tilde{\Pi}_-^2 = \tilde{\Pi}_-$; $\tilde{\Pi}_+ + \tilde{\Pi}_- = e_0$; $\tilde{\Pi}_+\tilde{\Pi}_- = 0$; and $\tfrac12(i + \hat{\boldsymbol{\xi}}) = i\tilde{\Pi}_-(\hat{\boldsymbol{\xi}})$ to machine precision for thirty random directions. Five statements follow, and the corpus records them as the algebra's contribution to the programme's "harmonic particles".
 
 1. **The harmonic bispinor lies in a minimal left ideal.** Since $S = i\tilde{\Pi}_-(\hat{\boldsymbol{\xi}})\varphi$ and the phase $i\varphi$ is central, $S \in \mathbb{B}\tilde{\Pi}_-(\hat{\boldsymbol{\xi}})$: checked as $S\tilde{\Pi}_- = S$. The programme's bispinors are not generic elements of the algebra; their amplitude direction is fixed by a pure state of the corpus's informational sector.
-2. **The amplitude is in the material sector.** $\tilde{\Pi}_-$ is Hermitian, $\tilde{\Pi}_-^\dagger = \tilde{\Pi}_-$, hence in $\mathbb{M}_+$; and $S$ is anti-Hermitian, $S^\dagger = -S$, hence in $\mathbb{M}_-$, the material sector — which is the statement $i\mathbb{M}_+ = \mathbb{M}_-$ the conventions article records. So the programme's harmonic bispinor is the material-sector image of a pure state, and the corpus's sector language carries the whole of the source's "particle" vocabulary for these objects.
+2. **The amplitude is in the material sector.** $\tilde{\Pi}_-$ is Hermitian, $\tilde{\Pi}_-^{*} = \tilde{\Pi}_-$, hence in $\mathbb{M}_+$; and $S$ is anti-Hermitian, $S^{*} = -S$, hence in $\mathbb{M}_-$, the material sector — which is the statement $i\mathbb{M}_+ = \mathbb{M}_-$ the conventions article records. So the programme's harmonic bispinor is the material-sector image of a pure state, and the corpus's sector language carries the whole of the source's "particle" vocabulary for these objects.
 3. **The harmonic bispinor is a zero divisor.** With the corpus's norm $N(\tilde{Q}) = \sum_\mu Q_\mu^2$, $N(S) = \tfrac14(i^2) + \tfrac14|\hat{\boldsymbol{\xi}}|^2 = 0$, so $S$ lies on the zero-divisor cone. The same vanishes under the source's pseudonorm, the sesquilinear form of its Definition 3. So under either reading the programme's bispinor is null: a bispinor field of the programme's "massive" first-order equation is an element of the null cone, which is the algebraic content of the family's lightlike dispersion.
 4. **The normalisation needs one correction.** The source states norm $1$ and pseudonorm $0$. The pseudonorm statement is exact. The norm statement is not, with the source's own factor $\tfrac12$: $|S|^2 = \tfrac12$ and $|S| = 1/\sqrt2$. The unit-norm null representative is $\sqrt2\,S = \tfrac{1}{\sqrt2}(i + \hat{\boldsymbol{\xi}})\,\varphi = \sqrt2\,i\,\tilde{\Pi}_-(\hat{\boldsymbol{\xi}})\,\varphi$, which was checked to have norm $1$ and pseudonorm $0$ and to lie in the same ideal. The corpus records the nullity and the ideal membership as the invariant content and the factor $\sqrt2$ as a normalisation slip in the source.
 5. **The stationary family has the same structure.** For $B = B(\mathbf{x})e^{-i\omega\tau}$ the source sets $\nabla^\pm_\omega = \omega \pm \nabla$ and obtains the $\omega$-spinors
@@ -296,7 +296,7 @@ The bispinors carry the algebra's own content. The amplitude of a plane-wave bis
 
 | Symbol | Meaning |
 |---|---|
-| $\nabla^\pm = \partial_\tau \pm i\nabla$, $\tau = ct$ | The source's two bigradients; $\nabla^+ = i\tilde{\nabla}$, $\nabla^- = i\bar{\tilde{\nabla}}$ |
+| $\nabla^\pm = \partial_\tau \pm i\nabla$, $\tau = ct$ | The source's two bigradients; $\nabla^+ = i\tilde{\nabla}$, $\nabla^- = i\tilde{\nabla}^{\natural}$ |
 | $\Box_{\text{s}} = \partial_\tau^2 - \Delta = -\Box$ | The source's wave operator, minus the corpus's d'Alembertian |
 | $\bigl(\nabla^\pm + m\bigr)B = F$ | The source's first-order equation; the corpus's generalized Maxwell–Dirac equation with $\kappa = -im$ |
 | $\Box_{\text{s}} + m^2 + 2m\partial_\tau = (\partial_\tau+m)^2-\Delta = e^{-m\tau}\Box_{\text{s}}e^{m\tau}$ | The KGFSh operator and its conjugation form |

@@ -1,0 +1,106 @@
+
+# __The Conjugate Symmetry and the Critical Line__
+
+## Introduction
+
+The conjugate symmetry of a completed $L$-function is the involution $\kappa(s)=1-\bar s$ of the Riemann sphere, and the critical line is its fixed set, $\Re s=1/2$. This article studies the involution, the way it acts on the zeros of the completion, and the counting function of the zeros, and it states the Riemann hypothesis in the form in which it is a statement about the fixed set of $\kappa$. The functional equation of *The Functional Equation and the Conjugate Symmetry of an L-Function* is the analytic input; the positivity form of the same symmetry is *Positivity and the Explicit Formula*; the operator reading of the zeros is *Hermitian Forms and the Zeta Function*. Nothing here reads a distance as an object.
+
+## The Involution
+
+### Definition and elementary properties
+
+**Definition.** The **conjugate symmetry** is
+$$
+\kappa(s)=1-\bar s .
+$$
+The **critical line** is $\Re s=1/2$, the **critical strip** is $0\le\Re s\le1$, and the **conjugate reflection** of a function is $F^\dagger(s)=\overline{F(\bar s)}$.
+
+**Theorem.** The map $\kappa$ is an anti-holomorphic involution of the Riemann sphere, $\kappa^2=\mathrm{id}$, its fixed set is the critical line, and it commutes with the conjugation $s\mapsto\bar s$; together they generate the Klein four-group
+$$
+\{s,\ \bar s,\ 1-s,\ 1-\bar s\}
+$$
+acting on the Riemann sphere, with fixed set the union of the critical line and the real line.
+
+**Proof.** $\kappa(\kappa(s))=1-\overline{(1-\bar s)}=s$; the fixed set is $\Re s=1/2$; the conjugation has fixed set the real axis; the two commute since $\overline{1-\bar s}=1-s$. The group generated is the Klein four-group because $\kappa$ and the conjugation are distinct commuting involutions.
+
+**Theorem.** The conjugate symmetry is the reflection that exchanges the abscissae of absolute convergence $\sigma_a$ and $1-\sigma_a$, and it exchanges the ordinates by $t\mapsto-t$; on the critical strip it is the reflection across the middle line.
+
+**Proof.** $\kappa$ sends $s=\sigma+it$ to $1-\sigma+it$, so it replaces the real part $\sigma$ by $1-\sigma$ and keeps the imaginary part; the statement about the abscissae is the functional equation of the completion, which is regular on the lines $\sigma=\sigma_a$. The ordinate statement is the definition.
+
+### The action on the zeros
+
+**Theorem.** Let $\Lambda_f$ satisfy the functional equation with real coefficients, $\Lambda_f(\kappa(s))=\epsilon\overline{\Lambda_f(s)}$, $|\epsilon|=1$. Then the multiset $Z$ of zeros of $\Lambda_f$ is invariant under $\kappa$ and under the conjugation,
+$$
+Z=\kappa(Z)=\overline Z,\qquad \operatorname{ord}_\rho\Lambda_f=\operatorname{ord}_{\kappa(\rho)}\Lambda_f=\operatorname{ord}_{\bar\rho}\Lambda_f ,
+$$
+so the zeros other than the real ones occur in the quadruples $\rho,\bar\rho,1-\rho,1-\bar\rho$; a zero on the critical line occurs together with its conjugate, and a zero on the real axis occurs together with $1-\rho$.
+
+**Proof.** Apply the functional equation at $s=\rho$; the gamma factor is nonvanishing at a genuine zero, so each zero of $L$ produces the reflected zero with the same order; the conjugation symmetry is the reality of the coefficients. The orbit of $\rho$ under the Klein four-group is the displayed quadruple, with coincidences when $\rho$ lies on a fixed set.
+
+## The Counting Function
+
+### Definition and symmetry
+
+**Definition.** For $T>0$ the **counting function** is
+$$
+N(T)=\#\{\rho:\Lambda_f(\rho)=0,\ 0<\Re\rho<1,\ 0<\Im\rho\le T\},
+$$
+counted with multiplicity.
+
+**Theorem.** The conjugate symmetry acts on the count by
+$$
+N(T)-N(-T)=O(1),\qquad N(T)=\overline N(-T),
+$$
+the reflection $s\mapsto1-s$ preserves the strip and reverses the sign of the ordinate, and the count of the zeros off the critical line is even for each quadruple; precisely, writing $N_0(T)$ for the zeros on the critical line and $N_\pm(T)$ for the zeros in the two halves of the strip off the line, the symmetry gives $N_+(T)=N_-(T)$ and $N_\pm(T)$ even in the quadruple sense.
+
+**Proof.** $\kappa$ and the conjugation preserve the strip and act on the ordinate by $t\mapsto-t$ and $t\mapsto-t$ respectively, so the count satisfies the displayed identities; the quadruples contribute equally to the two halves of the strip off the line, whence the parity statement.
+
+### The Riemann–von Mangoldt formula
+
+**Theorem (Riemann–von Mangoldt).** For the completed zeta function,
+$$
+N(T)=\frac{T}{2\pi}\log\frac{T}{2\pi e}+O(\log T),
+$$
+and the same formula with the parameters of the completion holds for a general $\Lambda_f$, the main term being $\frac{T}{\pi}\log\frac{TN^{1/d}}{2\pi e d}$ for degree $d$.
+
+**Proof.** The argument principle applied to $\Lambda_f$ on the boundary of the rectangle with corners $-1-\varepsilon$, $2+\varepsilon$, $2+\varepsilon+iT$, $-1-\varepsilon+iT$, together with the functional equation to transfer the zeros from the left half-strip to the right; this is the classical computation of *Zeta Functions*.
+
+**Corollary.** If the Riemann hypothesis holds, then $N(T)=N_0(T)$ for every $T$, the error $N(T)-\frac{T}{2\pi}\log\frac{T}{2\pi e}$ is the fluctuation of the count of the critical zeros, and the conjugate symmetry of the zeros is the statement that the multiset $Z$ is a single orbit of the Klein four-group intersected with the critical line.
+
+## Worked Examples
+
+**Example (the zeta function).** $\Lambda(s)=\pi^{-s/2}\Gamma(s/2)\zeta(s)$ satisfies $\Lambda(s)=\Lambda(1-s)$; the critical line is $\Re s=1/2$, the trivial zeros are at the negative even integers, and the first nontrivial zeros are at $\frac12\pm14.13\dots i$.
+
+**Example (a Dirichlet character).** For primitive $\chi$ the sign is a root of unity and the zero symmetry is under $\kappa$ composed with the conjugation when $\chi$ is real, and under a general Klein four-group orbit otherwise.
+
+**Example (a normalised eigenform).** For the Hecke $L$-function the completion is real on the critical line when $\epsilon=\pm1$, and the zeros off the line occur in the four orbits of the Klein group; the first examples have all their zeros on the line up to the verified height.
+
+## Failure of the Degenerate Cases
+
+The symmetry fails to constrain the zeros in four degenerate configurations. First, when the coefficients are not real the reflection acts on the dual $L$-function and the orbit of a zero of $\Lambda_f$ is an orbit of the pair $(\Lambda_f,\Lambda_{f^*})$, which need not have fixed points on the critical line. Second, the trivial zeros created by the poles of the gamma factor are not symmetric under $\kappa$ to other nontrivial zeros; they are symmetric to the poles of $\Lambda_f$, so the statement "the zeros come in quadruples" is true for the nontrivial ones. Third, a zero on the real axis is fixed by the conjugation and paired by $\kappa$ with $1-\rho$; it does not produce a quadruple but a pair, and the Riemann hypothesis excludes such zeros in the open strip. Fourth, if the completion has a pole in the critical strip the count is the count of the zeros of a meromorphic function with a pole, and the argument principle is applied to the function with the pole removed. These are the boundary cases of the symmetry.
+
+## Summary
+
+The conjugate symmetry $\kappa(s)=1-\bar s$ is an anti-holomorphic involution of the Riemann sphere with fixed set the critical line $\Re s=1/2$; with the conjugation it generates the Klein four-group whose orbits are the quadruples $\rho,\bar\rho,1-\rho,1-\bar\rho$ of the zeros of a completed $L$-function with real coefficients. The counting function satisfies $N(T)-N(-T)=O(1)$ and the Riemann–von Mangoldt formula $N(T)=\frac{T}{2\pi}\log\frac{T}{2\pi e}+O(\log T)$, with the general degree-$d$ analogue. The Riemann hypothesis is the statement that every zero in the critical strip is fixed by $\kappa$, and the degenerate cases are the non-reality of the coefficients, the trivial zeros from the gamma factor, the zeros on the real axis and the poles of the completion inside the strip.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\kappa(s)=1-\bar s$ | Conjugate symmetry |
+| $\Re s=1/2$ | Critical line |
+| $0\le\Re s\le1$ | Critical strip |
+| $F^\dagger(s)=\overline{F(\bar s)}$ | Conjugate reflection |
+| $Z$ | Multiset of zeros |
+| $\rho,\bar\rho,1-\rho,1-\bar\rho$ | Klein orbit |
+| $N(T)$ | Counting function |
+| $N_0(T)$, $N_\pm(T)$ | Zeros on the line, off the line |
+| $\frac{T}{2\pi}\log\frac{T}{2\pi e}$ | Riemann–von Mangoldt main term |
+
+## Further Reading
+
+- Harold Edwards, *Riemann's Zeta Function* (Academic Press, 1974), for the counting function and the argument principle.
+- Hugh Montgomery, *Topics in Multiplicative Number Theory* (Springer, 1971), for the Riemann–von Mangoldt formula in general.
+- Henryk Iwaniec and Emmanuel Kowalski, *Analytic Number Theory* (American Mathematical Society, 2004), for the general $L$-function count.
+- Andrew Odlyzko, *The $10^{20}$-th Zero of the Riemann Zeta Function* (Numerische Mathematik, 1987), for the numerical evidence on the critical line.
+- Karl Sabbagh, *The Riemann Hypothesis: The Greatest Unsolved Problem in Mathematics* (Farrar, Straus and Giroux, 2003), for the historical form of the conjecture.

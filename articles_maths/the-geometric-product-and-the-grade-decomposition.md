@@ -154,7 +154,7 @@ The three standard involutions of the Clifford algebra are homogeneous of degree
 |---|---|---|
 | grade involution $\alpha$ | $(-1)^k$ | automorphism |
 | reversion $x\mapsto x^{r}$ | $(-1)^{k(k-1)/2}$ | anti-automorphism |
-| Clifford conjugation $x\mapsto\bar x=\alpha(x^{r})$ | $(-1)^{k(k+1)/2}$ | anti-automorphism |
+| Clifford conjugation $x\mapsto x^{\natural}=\alpha(x^{r})$ | $(-1)^{k(k+1)/2}$ | anti-automorphism |
 
 The signs are those recorded in *Clifford Algebras in Finite Dimensions*; the table places them on the grades of the present article. In particular the grade involution is the identity on $\mathrm{Cl}^0$ and minus the identity on $\mathrm{Cl}^1$, and reversion fixes the vectors and sends a bivector to its negative.
 
@@ -213,7 +213,7 @@ The outer product alone gives the exterior algebra, recovered here from the Clif
 | $u\wedge w=\langle uw\rangle_{k+l}$ | Outer product |
 | $\alpha$ | Grade involution, $(-1)^k$ on $\mathrm{Cl}_k$ |
 | $x^{r}$ | Reversion, $(-1)^{k(k-1)/2}$ on $\mathrm{Cl}_k$ |
-| $\bar x=\alpha(x^{r})$ | Clifford conjugation, $(-1)^{k(k+1)/2}$ on $\mathrm{Cl}_k$ |
+| $x^{\natural}=\alpha(x^{r})$ | Clifford conjugation, $(-1)^{k(k+1)/2}$ on $\mathrm{Cl}_k$ |
 
 ## Further Reading
 

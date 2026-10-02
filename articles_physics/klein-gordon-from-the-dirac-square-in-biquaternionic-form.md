@@ -5,19 +5,19 @@
 The biquaternionic Dirac equation is first order. Its mass term is the linear, chirality-off-diagonal pair
 
 $$
-\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R,
+\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
 $$
 
-and the companion article *The Dirac Equation in Biquaternionic Form* records, in a single paragraph, that applying $\bar{\tilde{\nabla}}$ to the first member and substituting the second gives $\Box\tilde{\Psi}_R = m^2\tilde{\Psi}_R$, so that each chiral component satisfies the Klein–Gordon equation. That paragraph is the hinge between the two halves of this category: it is where the relativistic quantum theory of spin $0$ and the relativistic quantum theory of spin $\tfrac12$ meet. The present article is the door that hangs on that hinge. It reconstructs the passage in full — the square of the Dirac operator, in the spinor module and in the algebra — and it settles what the passage does and does not carry.
+and the companion article *The Dirac Equation in Biquaternionic Form* records, in a single paragraph, that applying $\tilde{\nabla}^{\natural}$ to the first member and substituting the second gives $\Box\tilde{\Psi}_R = m^2\tilde{\Psi}_R$, so that each chiral component satisfies the Klein–Gordon equation. That paragraph is the hinge between the two halves of this category: it is where the relativistic quantum theory of spin $0$ and the relativistic quantum theory of spin $\tfrac12$ meet. The present article is the door that hangs on that hinge. It reconstructs the passage in full — the square of the Dirac operator, in the spinor module and in the algebra — and it settles what the passage does and does not carry.
 
-The question it answers is sharp because the companion article on the Klein–Gordon equation asked the mirror-image question and returned a negative result. *The Klein–Gordon Equation in Biquaternionic Form* showed that the second-order operator $\Box - m^2c^2/\hbar^2$ has **no first-order scalar square root inside the algebra** $\mathbb{B}$: the simplest attempt, $(\bar{\tilde{\nabla}} + \mu)(\tilde{\nabla} - \mu)$, leaves the first-order residual $2\mu\boldsymbol{\nabla}$, with $\boldsymbol{\nabla} = e_k\partial_k$ the vector part of the gradient, and with general constant biquaternion coefficients the residual $(A+B)\partial_{ict} + \sum_j(Ae_j - e_jB)\partial_j$ cannot be cancelled either, since cancellation would require an element anticommuting with all three $e_j$ and none exists. If the Klein–Gordon operator has no first-order square root, how does a first-order equation — the Dirac pair — imply it? The answer, worked out below, is that the square root is **not scalar**: it is the gradient acting on the spinor module, and the mass term is off-diagonal between the two chiral halves. The scalar obstruction of the spin-$0$ article is exactly the evidence that the square root must be spinor-valued.
+The question it answers is sharp because the companion article on the Klein–Gordon equation asked the mirror-image question and returned a negative result. *The Klein–Gordon Equation in Biquaternionic Form* showed that the second-order operator $\Box - m^2c^2/\hbar^2$ has **no first-order scalar square root inside the algebra** $\mathbb{B}$: the simplest attempt, $(\tilde{\nabla}^{\natural} + \mu)(\tilde{\nabla} - \mu)$, leaves the first-order residual $2\mu\boldsymbol{\nabla}$, with $\boldsymbol{\nabla} = e_k\partial_k$ the vector part of the gradient, and with general constant biquaternion coefficients the residual $(A+B)\partial_{ict} + \sum_j(Ae_j - e_jB)\partial_j$ cannot be cancelled either, since cancellation would require an element anticommuting with all three $e_j$ and none exists. If the Klein–Gordon operator has no first-order square root, how does a first-order equation — the Dirac pair — imply it? The answer, worked out below, is that the square root is **not scalar**: it is the gradient acting on the spinor module, and the mass term is off-diagonal between the two chiral halves. The scalar obstruction of the spin-$0$ article is exactly the evidence that the square root must be spinor-valued.
 
 Three boundaries are respected. The Klein–Gordon **propagator** and the **scalar path integral** are the subject of the spin-$0$ companions and are not treated here. The d'Alembertian and its Green's functions are the subject of *the generalities*, and the involution lattice is not reopened. What is treated here is the algebraic transfer from the first-order pair to the second-order equation, the kernel it produces, and the sense in which the transfer is irreversible.
 
 Two conventions are load-bearing and are stated once. The d'Alembertian is the series convention,
 
 $$
-\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \partial_{ict}^2 + \Delta = \Delta - \frac{1}{c^2}\partial_t^2,
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial_{ict}^2 + \Delta = \Delta - \frac{1}{c^2}\partial_t^2,
 $$
 
 with $\partial_{ict}^2 = -c^{-2}\partial_t^2$. The mass parameter of the operator pair is measured in inverse-length units; restoring $\hbar$ and $c$, it is the inverse reduced Compton wavelength
@@ -26,7 +26,7 @@ $$
 \mu = \frac{mc}{\hbar},
 $$
 
-so that the mass-shell condition reads $\tilde{K}\bar{\tilde{K}} = -\mu^2$ and the second-order equation reads $(\Box - \mu^2)\tilde{\Phi} = 0$. In natural units $\hbar = c = 1$ the two symbols coincide and the corpus writes $m$ for both; where the distinction matters below, $\mu$ is written explicitly. This is the same parameter the Klein–Gordon article calls $\mu$, and the sign of $\Box$ is the series sign, not the opposite sign of *Exercise: Chirality and the Weyl Spinors*.
+so that the mass-shell condition reads $\tilde{K}\tilde{K}^{\natural} = -\mu^2$ and the second-order equation reads $(\Box - \mu^2)\tilde{\Phi} = 0$. In natural units $\hbar = c = 1$ the two symbols coincide and the corpus writes $m$ for both; where the distinction matters below, $\mu$ is written explicitly. This is the same parameter the Klein–Gordon article calls $\mu$, and the sign of $\Box$ is the series sign, not the opposite sign of *Exercise: Chirality and the Weyl Spinors*.
 
 ## The Matrix Square
 
@@ -71,16 +71,16 @@ The identity is not yet the statement that the Dirac equation implies Klein–Go
 The biquaternionic equation is not the single equation $(\not\partial - m)\psi = 0$ but the pair
 
 $$
-\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R,
+\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
 $$
 
-whose two members carry the two chiral halves. The reduction is a two-line computation. Apply $\bar{\tilde{\nabla}}$ to the first member:
+whose two members carry the two chiral halves. The reduction is a two-line computation. Apply $\tilde{\nabla}^{\natural}$ to the first member:
 
 $$
-\bar{\tilde{\nabla}}\tilde{\nabla}\tilde{\Psi}_R = \bar{\tilde{\nabla}}\!\left(m\tilde{\Psi}_L\right) = m\,\bar{\tilde{\nabla}}\tilde{\Psi}_L = m^2\tilde{\Psi}_R,
+\tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{\Psi}_R = \tilde{\nabla}^{\natural}\!\left(m\tilde{\Psi}_L\right) = m\,\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m^2\tilde{\Psi}_R,
 $$
 
-where the middle equality uses that $m$ is a scalar and the last uses the second member. Since $\bar{\tilde{\nabla}}\tilde{\nabla} = \Box$ is central, this is
+where the middle equality uses that $m$ is a scalar and the last uses the second member. Since $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$ is central, this is
 
 $$
 \left(\Box - m^2\right)\tilde{\Psi}_R = 0 .
@@ -94,7 +94,7 @@ $$
 
 Three features of this reduction deserve to be named, because they are what the algebra contributes and not merely what it transcribes.
 
-First, the reduction uses the **two different gradients**. It is the passage from $\tilde{\nabla}$ to $\bar{\tilde{\nabla}}$ — from the operator to its quaternion conjugate — that produces a central scalar. This is the algebraic content of the matrix statement that a square root must be paired with its conjugate to square to a scalar: $\not\partial$ alone squares to $g^{\mu\nu}\partial_\mu\partial_\nu = -\Box$, and it is the anticommutator that makes the result central; in the algebra the pairing $\tilde{\nabla},\bar{\tilde{\nabla}}$ is the concrete form of that anticommutator. The square is the biquaternion norm $N(\tilde{\nabla}) = \tilde{\nabla}\bar{\tilde{\nabla}}$, exactly as $\tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is the biquaternion norm of a biquaternion — the observation the Klein–Gordon article makes about its own operator.
+First, the reduction uses the **two different gradients**. It is the passage from $\tilde{\nabla}$ to $\tilde{\nabla}^{\natural}$ — from the operator to its quaternion conjugate — that produces a central scalar. This is the algebraic content of the matrix statement that a square root must be paired with its conjugate to square to a scalar: $\not\partial$ alone squares to $g^{\mu\nu}\partial_\mu\partial_\nu = -\Box$, and it is the anticommutator that makes the result central; in the algebra the pairing $\tilde{\nabla},\tilde{\nabla}^{\natural}$ is the concrete form of that anticommutator. The square is the biquaternion norm $N(\tilde{\nabla}) = \tilde{\nabla}\tilde{\nabla}^{\natural}$, exactly as $\tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is the biquaternion norm of a biquaternion — the observation the Klein–Gordon article makes about its own operator.
 
 Second, the reduction eliminates **both** members of the pair at once. It is not that one chiral half obeys Klein–Gordon and the other does not; the off-diagonal mass couples them so that squaring forces each half onto the same second-order shell. This is the biquaternion reading of the matrix statement that the mass term is off-diagonal: a diagonal mass term would square to a diagonal mass term, but the off-diagonal form is what makes the cross terms cancel between the two members and leaves the single central operator $\Box$.
 
@@ -107,13 +107,13 @@ The matrix reduction is the transcription of a purely biquaternionic statement, 
 $$
 \tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z,
 \qquad
-\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z,
+\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z,
 $$
 
 and their product is central and scalar:
 
 $$
-\tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \partial_x^2 + \partial_y^2 + \partial_z^2 = \Box .
+\tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \partial_x^2 + \partial_y^2 + \partial_z^2 = \Box .
 $$
 
 The cancellation of the cross terms is the quaternion multiplication table: with $\boldsymbol{\nabla} = e_1\partial_x + e_2\partial_y + e_3\partial_z$ the vector part of the gradient, the two factors enter with opposite signs and $\boldsymbol{\nabla}\boldsymbol{\nabla} = -|\boldsymbol{\nabla}|^2 e_0$ has no vector remainder. This is why $\Box$ is scalar and central, and why it acts on a biquaternion field coefficient by coefficient,
@@ -127,19 +127,19 @@ with no mixing of components. The spin-$0$ article records this as the reason it
 The mass term, by contrast, is **not central**: it is the off-diagonal coupling of the two chiral halves, the two central ideals of $\mathbb{B}\cong M_2(\mathbb{C})$. Because it is off-diagonal, it does not commute with the chirality but does commute with the central $\Box$; squaring the pair moves the mass across one gradient and leaves the central operator behind. In the algebra the reduction is therefore
 
 $$
-\bar{\tilde{\nabla}}\!\left(\tilde{\nabla}\tilde{\Psi}_R\right) = \bar{\tilde{\nabla}}\tilde{\nabla}\tilde{\Psi}_R = \Box\tilde{\Psi}_R
+\tilde{\nabla}^{\natural}\!\left(\tilde{\nabla}\tilde{\Psi}_R\right) = \tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{\Psi}_R = \Box\tilde{\Psi}_R
 \quad\text{and}\quad
-m\bar{\tilde{\nabla}}\tilde{\Psi}_L = m^2\tilde{\Psi}_R ,
+m\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m^2\tilde{\Psi}_R ,
 $$
 
-and the equality of the two expressions is the equation $(\Box - m^2)\tilde{\Psi}_R = 0$. Nothing in this step uses a gamma matrix, a spinor index, or a complex dimension count; it is the quaternion conjugation identity $\tilde{\nabla}\bar{\tilde{\nabla}} = \Box$ applied to the pair.
+and the equality of the two expressions is the equation $(\Box - m^2)\tilde{\Psi}_R = 0$. Nothing in this step uses a gamma matrix, a spinor index, or a complex dimension count; it is the quaternion conjugation identity $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$ applied to the pair.
 
 ## Why the Square Root Is Spinor-Valued
 
 The companion article on the Klein–Gordon equation proves an obstruction that appears, at first sight, to contradict the reduction just performed. Its theorem is that the scalar operator $\Box - \mu^2$ does not factor into first-order **scalar** operators inside $\mathbb{B}$. The proof is one line of the multiplication table. For constant biquaternion coefficients,
 
 $$
-(\bar{\tilde{\nabla}} + A)(\tilde{\nabla} + B)
+(\tilde{\nabla}^{\natural} + A)(\tilde{\nabla} + B)
 = \Box + (A+B)\partial_{ict} + \sum_{j=1}^{3}\left(Ae_j - e_jB\right)\partial_j + AB,
 $$
 
@@ -148,17 +148,17 @@ so cancelling the first-order terms requires $B = -A$ together with $Ae_j + e_jA
 The two results are consistent, and their consistency is the whole point. The Dirac square root is **not** a scalar factor of the form $\tilde{\nabla} + A$ multiplying another scalar factor. It is an operator on the two chiral halves. Write the pair, with $\Psi = (\tilde{\Psi}_L,\tilde{\Psi}_R)^{\mathsf T}$, as
 
 $$
-\mathcal{D}_\mp = \begin{pmatrix} \mp m & \tilde{\nabla} \\ \bar{\tilde{\nabla}} & \mp m\end{pmatrix},
+\mathcal{D}_\mp = \begin{pmatrix} \mp m & \tilde{\nabla} \\ \tilde{\nabla}^{\natural} & \mp m\end{pmatrix},
 \qquad
 \mathcal{D}_-\Psi = 0 ,
 $$
 
-so that $\mathcal{D}_-$ is the Dirac pair and $\mathcal{D}_+$ its opposite-mass partner. Because $m$ is central — it commutes with $\tilde{\nabla}$ and with $\bar{\tilde{\nabla}}$ — the two matrices multiply cleanly:
+so that $\mathcal{D}_-$ is the Dirac pair and $\mathcal{D}_+$ its opposite-mass partner. Because $m$ is central — it commutes with $\tilde{\nabla}$ and with $\tilde{\nabla}^{\natural}$ — the two matrices multiply cleanly:
 
 $$
 \mathcal{D}_-\mathcal{D}_+
-= \begin{pmatrix} -m & \tilde{\nabla} \\ \bar{\tilde{\nabla}} & -m\end{pmatrix}
-\begin{pmatrix} m & \tilde{\nabla} \\ \bar{\tilde{\nabla}} & m\end{pmatrix}
+= \begin{pmatrix} -m & \tilde{\nabla} \\ \tilde{\nabla}^{\natural} & -m\end{pmatrix}
+\begin{pmatrix} m & \tilde{\nabla} \\ \tilde{\nabla}^{\natural} & m\end{pmatrix}
 = \begin{pmatrix} \Box - m^2 & 0 \\ 0 & \Box - m^2\end{pmatrix}
 = \left(\Box - m^2\right)I ,
 $$
@@ -168,7 +168,7 @@ the off-diagonal entries cancelling because the mass passes through the gradient
 Equivalently, with $\mathcal{Q}$ the off-diagonal part alone,
 
 $$
-\mathcal{Q} = \begin{pmatrix} 0 & \tilde{\nabla} \\ \bar{\tilde{\nabla}} & 0\end{pmatrix},
+\mathcal{Q} = \begin{pmatrix} 0 & \tilde{\nabla} \\ \tilde{\nabla}^{\natural} & 0\end{pmatrix},
 \qquad
 \mathcal{Q}^2 = \Box\,I,
 \qquad
@@ -181,7 +181,7 @@ It is worth recording the matrix counterpart, because it isolates the same mecha
 $$
 \tilde{\nabla}^2 = \left(\partial_{ict}^2 - |\boldsymbol{\nabla}|^2\right)e_0 + 2\partial_{ict}\boldsymbol{\nabla} ,
 $$
-with the vector remainder $2\partial_{ict}\boldsymbol{\nabla}$. The conjugate removes that remainder: writing $\tilde{\nabla} = \partial_{ict}e_0 + \boldsymbol{\nabla}$ and $\bar{\tilde{\nabla}} = \partial_{ict}e_0 - \boldsymbol{\nabla}$, the product $\tilde{\nabla}\bar{\tilde{\nabla}}$ contains the two cross terms $-\partial_{ict}\boldsymbol{\nabla}$ and $+\boldsymbol{\nabla}\partial_{ict}$, which cancel because the scalar and vector parts commute, leaving $\partial_{ict}^2e_0 - \boldsymbol{\nabla}\boldsymbol{\nabla} = (\partial_{ict}^2 + |\boldsymbol{\nabla}|^2)e_0 = \Box$. The conjugate is the algebra's image of the Clifford anticommutator, and it is why the correct algebraic statement is $\tilde{\nabla}\bar{\tilde{\nabla}} = \Box$ rather than $\tilde{\nabla}^2 = \Box$.
+with the vector remainder $2\partial_{ict}\boldsymbol{\nabla}$. The conjugate removes that remainder: writing $\tilde{\nabla} = \partial_{ict}e_0 + \boldsymbol{\nabla}$ and $\tilde{\nabla}^{\natural} = \partial_{ict}e_0 - \boldsymbol{\nabla}$, the product $\tilde{\nabla}\tilde{\nabla}^{\natural}$ contains the two cross terms $-\partial_{ict}\boldsymbol{\nabla}$ and $+\boldsymbol{\nabla}\partial_{ict}$, which cancel because the scalar and vector parts commute, leaving $\partial_{ict}^2e_0 - \boldsymbol{\nabla}\boldsymbol{\nabla} = (\partial_{ict}^2 + |\boldsymbol{\nabla}|^2)e_0 = \Box$. The conjugate is the algebra's image of the Clifford anticommutator, and it is why the correct algebraic statement is $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$ rather than $\tilde{\nabla}^2 = \Box$.
 
 ### The Square in the Reduced Theory
 
@@ -189,12 +189,12 @@ The reduction to one spatial dimension isolates the mechanism without the bookke
 
 $$
 \tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x, \qquad
-\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x,
+\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x,
 \qquad
 \Box = \partial_{ict}^2 + \partial_x^2 .
 $$
 
-The chiral pair retains its form, and the reduction gives $(\Box - m^2)\tilde{\Psi}_{L,R} = 0$ exactly as before. The two-dimensional spinor module has the two chiral halves as its two one-dimensional factors, and the mass is again the off-diagonal coupling. The plane-wave substitution now gives $\tilde{K} = i\omega/c\,e_0 + k e_1$, $\tilde{K}\bar{\tilde{K}} = -\omega^2/c^2 + k^2 = -\mu^2$, hence the 1+1-dimensional dispersion $\omega^2 = k^2c^2 + \mu^2c^2$. Everything the three-dimensional case does, the reduced case does with a single wave number, and the second-order operator is again central.
+The chiral pair retains its form, and the reduction gives $(\Box - m^2)\tilde{\Psi}_{L,R} = 0$ exactly as before. The two-dimensional spinor module has the two chiral halves as its two one-dimensional factors, and the mass is again the off-diagonal coupling. The plane-wave substitution now gives $\tilde{K} = i\omega/c\,e_0 + k e_1$, $\tilde{K}\tilde{K}^{\natural} = -\omega^2/c^2 + k^2 = -\mu^2$, hence the 1+1-dimensional dispersion $\omega^2 = k^2c^2 + \mu^2c^2$. Everything the three-dimensional case does, the reduced case does with a single wave number, and the second-order operator is again central.
 
 The reduced form is the one in which the **factorisation** is most visible. Writing the chiral pair as two coupled first-order equations and eliminating one half produces a single second-order equation for the other; conversely, the second-order equation can be recovered from the pair but not the pair from it. This is the setting in which the supersymmetric reading of the first-order operator becomes transparent, because the two halves of the pair are then the two components of a two-component object and the off-diagonal mass is a two-by-two matrix, which the companion article on supersymmetric quantum mechanics exploits.
 
@@ -209,7 +209,7 @@ $$
 \qquad \mathbf{k} = k_1e_1 + k_2e_2 + k_3e_3,
 $$
 
-and take the phase $\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}}) = -\omega t + \mathbf{k}\cdot\mathbf{x}$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
+and take the phase $\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = -\omega t + \mathbf{k}\cdot\mathbf{x}$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
 
 $$
 \partial_t \longmapsto -i\omega, \qquad \partial_{x_j}\longmapsto ik_j, \qquad \partial_{ict} \longmapsto -\frac{\omega}{c},
@@ -219,20 +219,20 @@ and therefore
 
 $$
 \tilde{\nabla} \longmapsto -\frac{\omega}{c}e_0 + i\mathbf{k}, \qquad
-\bar{\tilde{\nabla}} \longmapsto -\frac{\omega}{c}e_0 - i\mathbf{k}, \qquad
+\tilde{\nabla}^{\natural} \longmapsto -\frac{\omega}{c}e_0 - i\mathbf{k}, \qquad
 \Box \longmapsto \frac{\omega^2}{c^2} - \mathbf{k}^2 .
 $$
 
 The biquaternion norm of the wave biquaternion is
 
 $$
-N(\tilde{K}) = \tilde{K}\bar{\tilde{K}} = \left(i\frac{\omega}{c}\right)^2 + \mathbf{k}^2 = -\frac{\omega^2}{c^2} + \mathbf{k}^2 = -\Box ,
+N(\tilde{K}) = \tilde{K}\tilde{K}^{\natural} = \left(i\frac{\omega}{c}\right)^2 + \mathbf{k}^2 = -\frac{\omega^2}{c^2} + \mathbf{k}^2 = -\Box ,
 $$
 
 the last equality holding on the plane wave, so the second-order equation $(\Box - \mu^2)\tilde{\Psi} = 0$ is the mass-shell condition
 
 $$
-\tilde{K}\bar{\tilde{K}} = -\mu^2,
+\tilde{K}\tilde{K}^{\natural} = -\mu^2,
 \qquad\text{equivalently}\qquad
 \omega^2 = \mathbf{k}^2c^2 + \mu^2c^2,
 $$
@@ -248,7 +248,7 @@ The same count can be read off the algebra. The square is the diagonal operator 
 Setting $\mu = 0$ removes the coupling and separates the two halves:
 
 $$
-\tilde{\nabla}\tilde{\Psi}_R = 0, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L = 0 .
+\tilde{\nabla}\tilde{\Psi}_R = 0, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = 0 .
 $$
 
 Each is a first-order equation whose square is the massless $\Box$, so each chirality separately obeys $\Box\tilde{\Psi} = 0$. The reduction, however, now carries no information: at $\mu = 0$ the pair is two independent first-order equations, and squaring either one loses the chirality that distinguished it from the other. This is the degenerate case of the general statement, and it is the biquaternion form of the standard fact that a massless Dirac field is two independent Weyl fields, each of which satisfies the massless Klein–Gordon equation. The spin-$0$ article's operator is exactly the square of each Weyl operator.
@@ -271,11 +271,11 @@ The identities below were checked by direct computation on explicit $4\times4$ m
 
 ## Summary
 
-The biquaternionic Dirac equation is the first-order pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$. Applying $\bar{\tilde{\nabla}}$ to the first member and substituting the second gives $\Box\tilde{\Psi}_R = m^2\tilde{\Psi}_R$, and symmetrically for $\tilde{\Psi}_L$; both chiral halves obey the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{\Psi} = 0$ with the series d'Alembertian. In the spinor module this is the matrix identity $(i\not\partial + m)(i\not\partial - m) = \Box - m^2$, which follows from the anticommutator alone, $(i\not\partial)^2 = -g^{\mu\nu}\partial_\mu\partial_\nu = \Box$.
+The biquaternionic Dirac equation is the first-order pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$. Applying $\tilde{\nabla}^{\natural}$ to the first member and substituting the second gives $\Box\tilde{\Psi}_R = m^2\tilde{\Psi}_R$, and symmetrically for $\tilde{\Psi}_L$; both chiral halves obey the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{\Psi} = 0$ with the series d'Alembertian. In the spinor module this is the matrix identity $(i\not\partial + m)(i\not\partial - m) = \Box - m^2$, which follows from the anticommutator alone, $(i\not\partial)^2 = -g^{\mu\nu}\partial_\mu\partial_\nu = \Box$.
 
-The square root is not scalar. The companion article on the Klein–Gordon equation proves that $\Box - \mu^2$ has no first-order scalar factorisation in $\mathbb{B}$, because a scalar coefficient would have to anticommute with all three quaternion units and none does. The Dirac square root escapes the obstruction by being operator-valued and off-diagonal: it is the conjugate pair $(\tilde{\nabla},\bar{\tilde{\nabla}})$ acting on the two chiral halves, coupled by the mass, and the pairing is the algebra's image of the Clifford anticommutator. Written as the matrix $\mathcal{D}_\mp$ defined above, the operator identity is $\mathcal{D}_-\mathcal{D}_+ = (\Box - m^2)I$; written as $\mathcal{Q}\Psi = m\Psi$ with $\mathcal{Q}$ the off-diagonal part, the square is the operator identity $\mathcal{Q}^2 = \Box\,I$. The scalar no-go and the spinor square root are the same multiplication table read in two directions.
+The square root is not scalar. The companion article on the Klein–Gordon equation proves that $\Box - \mu^2$ has no first-order scalar factorisation in $\mathbb{B}$, because a scalar coefficient would have to anticommute with all three quaternion units and none does. The Dirac square root escapes the obstruction by being operator-valued and off-diagonal: it is the conjugate pair $(\tilde{\nabla},\tilde{\nabla}^{\natural})$ acting on the two chiral halves, coupled by the mass, and the pairing is the algebra's image of the Clifford anticommutator. Written as the matrix $\mathcal{D}_\mp$ defined above, the operator identity is $\mathcal{D}_-\mathcal{D}_+ = (\Box - m^2)I$; written as $\mathcal{Q}\Psi = m\Psi$ with $\mathcal{Q}$ the off-diagonal part, the square is the operator identity $\mathcal{Q}^2 = \Box\,I$. The scalar no-go and the spinor square root are the same multiplication table read in two directions.
 
-The square carries the mass shell $\tilde{K}\bar{\tilde{K}} = -\mu^2$, hence $E^2 = \mathbf{p}^2c^2 + m^2c^4$, and the mass-squared coefficient of the second-order operator; it does not carry the sign of the mass, the chirality of each half, or the four linear relations that select the first-order solution space from the larger second-order one. For fixed three-momentum the first-order equation has a four-dimensional complex solution space and the second-order equation a strictly larger one, so the square is a necessary and not a sufficient condition. The Klein–Gordon operator is the diagonal — the bosonic shadow — of a graded first-order object whose off-diagonal entries are the biquaternionic Dirac operator and its conjugate.
+The square carries the mass shell $\tilde{K}\tilde{K}^{\natural} = -\mu^2$, hence $E^2 = \mathbf{p}^2c^2 + m^2c^4$, and the mass-squared coefficient of the second-order operator; it does not carry the sign of the mass, the chirality of each half, or the four linear relations that select the first-order solution space from the larger second-order one. For fixed three-momentum the first-order equation has a four-dimensional complex solution space and the second-order equation a strictly larger one, so the square is a necessary and not a sufficient condition. The Klein–Gordon operator is the diagonal — the bosonic shadow — of a graded first-order object whose off-diagonal entries are the biquaternionic Dirac operator and its conjugate.
 
 ## Summary of Notation
 
@@ -286,11 +286,11 @@ The square carries the mass shell $\tilde{K}\bar{\tilde{K}} = -\mu^2$, hence $E^
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) sectors |
 | $\tilde{\nabla} = e_0\partial_{ict} + e_k\partial_k$ | Biquaternionic gradient (the Dirac operator) |
-| $\bar{\tilde{\nabla}}$ | Quaternion conjugate gradient |
-| $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \partial_{ict}^2 + \Delta$ | d'Alembertian, series convention |
+| $\tilde{\nabla}^{\natural}$ | Quaternion conjugate gradient |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial_{ict}^2 + \Delta$ | d'Alembertian, series convention |
 | $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$, $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | Four-wavevector and four-position |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
-| $\tilde{K}\bar{\tilde{K}} = -m^2c^2/\hbar^2$ | Mass-shell condition |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $\tilde{K}\tilde{K}^{\natural} = -m^2c^2/\hbar^2$ | Mass-shell condition |
 | $\mu = mc/\hbar$ | Mass parameter of the operator pair (inverse reduced Compton wavelength) |
 | $\gamma^\mu$, $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ | Dirac matrices and Clifford metric |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric (level-3 tool) |
@@ -303,7 +303,7 @@ The square carries the mass shell $\tilde{K}\bar{\tilde{K}} = -\mu^2$, hence $E^
 | $\mathcal{Q}$ | Off-diagonal part of $\mathcal{D}_\mp$; $\mathcal{Q}^2 = \Box\,I$ |
 | $(\not\partial)^2 = g^{\mu\nu}\partial_\mu\partial_\nu = -\Box$ | Square of the slash |
 | $(i\not\partial + m)(i\not\partial - m) = \Box - m^2$ | The Dirac square (matrix form) |
-| $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Linear, chirality-off-diagonal mass pair |
+| $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Linear, chirality-off-diagonal mass pair |
 | $u^{(r)}(\mathbf{p})$, $v^{(r)}(\mathbf{p})$ | Positive- and negative-frequency spinors |
 | $E^2 = \mathbf{p}^2c^2 + m^2c^4$ | Dispersion relation |
 

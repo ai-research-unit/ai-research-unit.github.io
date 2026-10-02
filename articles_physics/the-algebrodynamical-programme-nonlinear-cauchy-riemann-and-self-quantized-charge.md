@@ -166,7 +166,7 @@ $$
 
 where $A_\mu = 2G_\mu$ is the electromagnetic four-potential identified in the preceding section and the potential fixes the whole connection: its Weyl part and its torsion alike. In this language the integrability condition of the spinor equation is $R_{\mu\nu}\psi = 0$ with $R_{\mu\nu} = \partial_{[\mu}\Gamma_{\nu]} - [\Gamma_\mu,\Gamma_\nu]$, and the weak self-duality of the preceding section is the statement that the self-dual part of $R_{\mu\nu}$ vanishes.
 
-**The unitary field, and why the geometry is real.** The connection just written is complex. Squaring the matrix field to the *unitary field* $U(x)=F(x)F^\dagger(x)$ replaces it by a real one. If $F$ obeys the covariant-constancy condition then $U$ obeys the same-shaped condition,
+**The unitary field, and why the geometry is real.** The connection just written is complex. Squaring the matrix field to the *unitary field* $U(x)=F(x)F^{*}(x)$ replaces it by a real one. If $F$ obeys the covariant-constancy condition then $U$ obeys the same-shaped condition,
 
 $$
 \partial_\nu U^\mu = \Delta^\mu_{\ \nu\rho}(x)\,U^\rho(x), \qquad

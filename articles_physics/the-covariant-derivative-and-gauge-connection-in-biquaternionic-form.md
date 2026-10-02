@@ -14,7 +14,7 @@ $$
 D = \tilde{\nabla} + \frac{iq}{\hbar}\tilde{A}, \qquad D_\mu = \partial_\mu + \frac{iq}{\hbar}A_\mu,
 $$
 
-together with the identification of the field strength with the curvature, $\tilde{F} = \mathrm{Vect}(\bar{\tilde{\nabla}}\tilde{A})$. This article takes the connection $\tilde{A}$ and the covariant derivative $D$ produced by that localization and studies them as objects in their own right. Nothing inherited from the gauge principle is rederived, renamed, or corrected here; the transformation law, the covariance, and the curvature identity are used as input.
+together with the identification of the field strength with the curvature, $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$. This article takes the connection $\tilde{A}$ and the covariant derivative $D$ produced by that localization and studies them as objects in their own right. Nothing inherited from the gauge principle is rederived, renamed, or corrected here; the transformation law, the covariance, and the curvature identity are used as input.
 
 The article develops the two objects in four directions that the gauge principle article did not pursue.
 
@@ -33,7 +33,7 @@ The division between what is established and what is interpretation is kept expl
 - **Interpretation.** Reading $\tilde{A}$ as a connection on a bundle, the covariant derivative as parallel transport, and $\bar D D$ as the biquaternion form of the identity "square of a Dirac operator equals Laplacian plus curvature" are geometric readings of algebraic content. They are labelled as interpretation wherever they occur.
 - **Gaps, left visible.** The non-abelian extension, the reality and compactness conditions that would select a compact gauge algebra, and the covariant wave operator for a charged scalar are not settled here; each is stated as a gap where it arises and collected in the open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, which is the center of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$. The connection is $\tilde{A} = \sum_{\mu=0}^{3} A_\mu e_\mu = i\phi/c\,e_0 + \mathbf{A}$, with $A_0 = i\phi/c$ purely imaginary and $A_1, A_2, A_3$ real, so that $\tilde{A} \in \mathbb{M}_-$; the field strength is $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H} = \mathrm{Vect}(\bar{\tilde{\nabla}}\tilde{A})$ and the Maxwell equation is $\tilde{\nabla}\tilde{F} = -\tilde{R}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, which is the center of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The connection is $\tilde{A} = \sum_{\mu=0}^{3} A_\mu e_\mu = i\phi/c\,e_0 + \mathbf{A}$, with $A_0 = i\phi/c$ purely imaginary and $A_1, A_2, A_3$ real, so that $\tilde{A} \in \mathbb{M}_-$; the field strength is $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ and the Maxwell equation is $\tilde{\nabla}\tilde{F} = -\tilde{R}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
 
 ## The Covariant Derivative and Its Components
 
@@ -136,7 +136,7 @@ $$
 \Omega' = \Omega - \frac{iq}{\hbar}\tilde{\nabla}\Gamma,
 $$
 
-which, with $\Omega = \frac{iq}{\hbar}\tilde{A}$, is the inherited transformation law. The compensating field is therefore not an assumption added to the theory: once the phase is localized, the requirement of covariance leaves no freedom in the transformation of the connection. The forcing is stated within the left-action convention that the gauge principle produces; with a right action the same argument gives the mirror derivative, and the mixed insertion is not covariant at all. The parent's massive equation is written with the left action, $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$ and $\bar{\tilde\nabla}\tilde\Psi_L = m\tilde\Psi_R$, and the linear mass term passes the central phase through, so the left action is the natural one for the charged massive field and it is the form the minimal-coupling article states. The choice between the left and right actions for a general matter field is a choice of matter representation, raised as an open question by that article and left open here. The specialization of the chain rule to the exponential was checked by finite differences at a point not used to motivate it, and the algebraic form $\Omega' = \Omega - (\tilde{\nabla}\lambda)\lambda^{-1}$ was checked exactly on random central phases in a truncated ring.
+which, with $\Omega = \frac{iq}{\hbar}\tilde{A}$, is the inherited transformation law. The compensating field is therefore not an assumption added to the theory: once the phase is localized, the requirement of covariance leaves no freedom in the transformation of the connection. The forcing is stated within the left-action convention that the gauge principle produces; with a right action the same argument gives the mirror derivative, and the mixed insertion is not covariant at all. The parent's massive equation is written with the left action, $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$ and $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$, and the linear mass term passes the central phase through, so the left action is the natural one for the charged massive field and it is the form the minimal-coupling article states. The choice between the left and right actions for a general matter field is a choice of matter representation, raised as an open question by that article and left open here. The specialization of the chain rule to the exponential was checked by finite differences at a point not used to motivate it, and the algebraic form $\Omega' = \Omega - (\tilde{\nabla}\lambda)\lambda^{-1}$ was checked exactly on random central phases in a truncated ring.
 
 The centrality of $\lambda$ is what makes the transformation law *additive*. Left and right multiplication by $\lambda$ agree, so no conjugation appears and the gauge group is abelian. It is the center of $\mathbb{B}$ that supplies the group, and the center is one complex dimension; the gauge group is $U(1)$.
 
@@ -146,10 +146,10 @@ The reality of the gauge function is inherited as well. A real $\Gamma$ keeps $\
 
 The transformation law makes the connection's status precise.
 
-**The connection is not gauge invariant.** Its entire gauge orbit is the set $\{\tilde{A} - \tilde{\nabla}\Gamma\}$. The scalar part of $\bar{\tilde{\nabla}}\tilde{A}$,
+**The connection is not gauge invariant.** Its entire gauge orbit is the set $\{\tilde{A} - \tilde{\nabla}\Gamma\}$. The scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$,
 
 $$
-S = \mathrm{Sc}\!\left(\bar{\tilde{\nabla}}\tilde{A}\right) = \partial_{ict}A_0 + \mathrm{div}\,\mathbf{A},
+S = \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = \partial_{ict}A_0 + \mathrm{div}\,\mathbf{A},
 $$
 
 transforms as $S' = S - \Box\Gamma$, so $S$ is a pure-gauge quantity; the Lorenz gauge $S = 0$ is a choice, not a condition. This is the gauge scalar of the Maxwell article, inherited unchanged.
@@ -157,10 +157,10 @@ transforms as $S' = S - \Box\Gamma$, so $S$ is a pure-gauge quantity; the Lorenz
 **Pure-gauge connections are flat.** If $\tilde{A} = \tilde{\nabla}\Gamma$ for a scalar function $\Gamma$, then
 
 $$
-\tilde{F} = \mathrm{Vect}\!\left(\bar{\tilde{\nabla}}\tilde{\nabla}\Gamma\right) = 0,
+\tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma\right) = 0,
 $$
 
-because $\bar{\tilde{\nabla}}\tilde{\nabla}\Gamma = \Box\Gamma\, e_0$ is a pure scalar and has no vector part. A connection that is a gradient carries no curvature. This was checked for complex as well as real $\Gamma$.
+because $\tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma = \Box\Gamma\, e_0$ is a pure scalar and has no vector part. A connection that is a gradient carries no curvature. This was checked for complex as well as real $\Gamma$.
 
 **A single point can always be made connection-free.** Given any connection $\tilde{A}$ and any point $\tilde{Q}_0$, choose the real, affine gauge function
 
@@ -195,10 +195,10 @@ This is the gauge principle article's commutator identity, inherited here. Three
 
 **The commutator closes on the algebra.** Although $D_\mu$ is an operator and not an element of $\mathbb{B}$, its commutator with $D_\nu$ is multiplication by the biquaternion $\frac{iq}{\hbar}F_{\mu\nu}$ — a scalar multiple of a field. The failure of covariant derivatives to commute is thus an algebraic object, not a differential one, and it can be contracted with the basis to form the field-strength biquaternion.
 
-**The contraction is the field strength.** Reading off the components of $\bar{\tilde{\nabla}}\tilde{A}$ gives
+**The contraction is the field strength.** Reading off the components of $\tilde{\nabla}^{\natural}\tilde{A}$ gives
 
 $$
-\tilde{F} = \mathrm{Vect}\!\left(\bar{\tilde{\nabla}}\tilde{A}\right)
+\tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)
 = \frac{1}{2}\sum_{\mu,\nu=0}^{3} F_{\mu\nu}\,\bar{e}_\mu e_\nu,
 \qquad
 \tilde{F} = \frac{\hbar}{2iq}\sum_{\mu,\nu=0}^{3}[D_\mu, D_\nu]\,\bar{e}_\mu e_\nu ,
@@ -206,7 +206,7 @@ $$
 
 with $\bar{e}_0 = e_0$ and $\bar{e}_k = -e_k$. The first identity is purely algebraic in the derivatives and is the gauge principle article's curvature identity; the second is its restatement as a commutator of covariant derivatives. Both were recomputed on random connections.
 
-**The curvature is gauge invariant and is not in the material sector.** Because $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ and $\mathrm{Vect}(\bar{\tilde{\nabla}}\tilde{\nabla}\Gamma) = 0$, $\tilde{F}$ is unchanged by a gauge transformation. It is nevertheless not an element of $\mathbb{M}_-$: it has vanishing scalar part and a vector part that is neither purely real nor purely imaginary, as the Maxwell article records. The connection is a material-sector object; its curvature is not.
+**The curvature is gauge invariant and is not in the material sector.** Because $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ and $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma) = 0$, $\tilde{F}$ is unchanged by a gauge transformation. It is nevertheless not an element of $\mathbb{M}_-$: it has vanishing scalar part and a vector part that is neither purely real nor purely imaginary, as the Maxwell article records. The connection is a material-sector object; its curvature is not.
 
 Because $\tilde{F}$ is built from $\tilde{A}$ by differentiation, the homogeneous Maxwell equations are identities rather than equations of motion — the Bianchi identity of the connection. The biquaternion form of that identity and the non-abelian completion of the curvature are the subjects of separate planned companions and are not claimed here. (In particular, the one-line equation $\tilde{\nabla}\tilde{F} = 0$ is *not* the Bianchi identity; it is the full source-free Maxwell system. This was checked and recorded in the gauge principle companion so that it is not written by mistake.)
 
@@ -217,18 +217,18 @@ The commutator of two covariant derivatives is first order. The *square* of the 
 Define the **quaternion conjugate** of the covariant derivative by conjugating the basis and leaving the complex scalar coefficients alone:
 
 $$
-\bar D := \sum_\mu \bar{e}_\mu D_\mu = \bar{\tilde{\nabla}} + \frac{iq}{\hbar}\bar{\tilde{A}},
+\bar D := \sum_\mu \bar{e}_\mu D_\mu = \tilde{\nabla}^{\natural} + \frac{iq}{\hbar}\tilde{A}^{\natural},
 \qquad
-\bar{\tilde{A}} = A_0 e_0 - A_1 e_1 - A_2 e_2 - A_3 e_3 .
+\tilde{A}^{\natural} = A_0 e_0 - A_1 e_1 - A_2 e_2 - A_3 e_3 .
 $$
 
-Here $\bar{\tilde{A}} \neq -\tilde{A}$ in general; quaternion conjugation is not charge conjugation, and $\bar D$ is the quaternion conjugate of the operator, not the operator for the opposite charge. With this definition the exact operator identity
+Here $\tilde{A}^{\natural} \neq -\tilde{A}$ in general; quaternion conjugation is not charge conjugation, and $\bar D$ is the quaternion conjugate of the operator, not the operator for the opposite charge. With this definition the exact operator identity
 
 $$
 \bar D D = \sum_{\mu=0}^{3} D_\mu^{2} + \frac{iq}{\hbar}\tilde{F}
 $$
 
-holds, where $D_\mu^2$ means $D_\mu D_\mu$ and $\sum_\mu D_\mu^2 = \sum_\mu\left(\partial_\mu + \frac{iq}{\hbar}A_\mu\right)^2$ is the **covariant d'Alembertian**. The identity was checked on random connections and random fields, on constant and on non-constant potentials, and reduces to $\bar{\tilde{\nabla}}\tilde{\nabla} = \Box$ when $\tilde{A} = 0$.
+holds, where $D_\mu^2$ means $D_\mu D_\mu$ and $\sum_\mu D_\mu^2 = \sum_\mu\left(\partial_\mu + \frac{iq}{\hbar}A_\mu\right)^2$ is the **covariant d'Alembertian**. The identity was checked on random connections and random fields, on constant and on non-constant potentials, and reduces to $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$ when $\tilde{A} = 0$.
 
 The derivation is short. Expanding the product,
 
@@ -267,7 +267,7 @@ The boundary can be drawn as in the companion articles.
 
 The word "connection" is used in the framework for two different objects, and conflating them is an error worth naming.
 
-The connection of this article is **one-sided**: $D_\mu = \partial_\mu + \frac{iq}{\hbar}A_\mu$ acts by left multiplication, and it can be written this way only because the abelian connection is central, so left and right multiplication agree. The connection of the curved-spacetime article of the corpus is **two-sided**: a biquaternionic covariant derivative on the material sector must be written $D_\mu\tilde{Q} = \partial_\mu\tilde{Q} + \tilde{\Gamma}_\mu\tilde{Q} + \tilde{Q}\tilde{\Gamma}_\mu^\dagger$, because the Lorentz generators act on $\mathbb{M}_-$ by the two-sided infinitesimal action $G\tilde{Q} + \tilde{Q}G^\dagger$ and not by the commutator; the two differ precisely for the boosts. The gauge connection of this article is a $U(1)$ connection of the center; the gravitational connection lies in the six-dimensional traceless subspace of $\mathbb{B}$. They are distinct objects that happen to share a name, and no relation between them is asserted here.
+The connection of this article is **one-sided**: $D_\mu = \partial_\mu + \frac{iq}{\hbar}A_\mu$ acts by left multiplication, and it can be written this way only because the abelian connection is central, so left and right multiplication agree. The connection of the curved-spacetime article of the corpus is **two-sided**: a biquaternionic covariant derivative on the material sector must be written $D_\mu\tilde{Q} = \partial_\mu\tilde{Q} + \tilde{\Gamma}_\mu\tilde{Q} + \tilde{Q}\tilde{\Gamma}_\mu^{*}$, because the Lorentz generators act on $\mathbb{M}_-$ by the two-sided infinitesimal action $G\tilde{Q} + \tilde{Q}G^{*}$ and not by the commutator; the two differ precisely for the boosts. The gauge connection of this article is a $U(1)$ connection of the center; the gravitational connection lies in the six-dimensional traceless subspace of $\mathbb{B}$. They are distinct objects that happen to share a name, and no relation between them is asserted here.
 
 The distinction has a consequence the corpus had not recorded, and an external source names it. For an internal gauge force — this article's abelian case, and the non-abelian case it opens onto — the substitution $\partial_\mu \to D_\mu$ gives the same physics whether it is applied to the action or to the Euler–Lagrange equations, because the internal generators commute with $\gamma^a$. For the standard gravitational coupling in the vierbein formulation, the two procedures **do not commute**: the varied equation acquires an anticommutator $\{\gamma^a,S^{cd}\}$ term that the substituted equation does not, because the Lorentz generator satisfies $[\gamma^c,S^{ab}] = V^{ab}{}_d\gamma^d$ rather than commuting. J. Fredsted (arXiv:1906.12200v3 [physics.gen-ph], 2019) proves the mismatch and reads it as a tension with the equivalence principle; the construction is recorded, with its world-index repair, in *Curved Spacetime and the Biquaternion Framework*. It is the sharpest available answer to the question this section raises: the one-sided central connection of this article is exactly the case in which localization is unambiguous, and the two-sided gravitational connection is exactly the case in which it is not.
 
@@ -324,8 +324,8 @@ with the scalar part the covariant d'Alembertian and the vector part the curvatu
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ | Center of the algebra; source of the abelian gauge group |
 | $\tilde{\nabla} = e_0\partial_{ict} + e_k\partial_k$ | Biquaternionic gradient |
-| $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_k\partial_k$ | Quaternion-conjugate gradient |
-| $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$ | d'Alembertian |
+| $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_k\partial_k$ | Quaternion-conjugate gradient |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian |
 | $\tilde{A} = \sum_\mu A_\mu e_\mu = i\phi/c\,e_0 + \mathbf{A}$ | Connection / potential biquaternion, in $\mathbb{M}_-$ |
 | $\Gamma$ | Real scalar gauge function |
 | $\lambda = e^{iq\Gamma/\hbar}$ | Local central phase (abelian) |
@@ -333,11 +333,11 @@ with the scalar part the covariant d'Alembertian and the vector part the curvatu
 | $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ | Gauge transformation of the connection |
 | $D = \tilde{\nabla} + \frac{iq}{\hbar}\tilde{A} = \sum_\mu e_\mu D_\mu$ | Covariant derivative |
 | $D_\mu = \partial_\mu + \frac{iq}{\hbar}A_\mu$ | Components; $\partial_0 = \partial_{ict}$ |
-| $\bar D = \bar{\tilde{\nabla}} + \frac{iq}{\hbar}\bar{\tilde{A}}$ | Quaternion conjugate of $D$ |
-| $\bar{\tilde{A}} = A_0e_0 - A_ke_k$ | Quaternion conjugate of the connection |
+| $\bar D = \tilde{\nabla}^{\natural} + \frac{iq}{\hbar}\tilde{A}^{\natural}$ | Quaternion conjugate of $D$ |
+| $\tilde{A}^{\natural} = A_0e_0 - A_ke_k$ | Quaternion conjugate of the connection |
 | $[D_\mu, f] = \partial_\mu f$ | Derivation property |
-| $S = \mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{A})$, $S' = S - \Box\Gamma$ | Gauge scalar; pure gauge |
-| $\tilde{F} = \mathrm{Vect}(\bar{\tilde{\nabla}}\tilde{A}) = \frac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ | Field strength = curvature, gauge invariant |
+| $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, $S' = S - \Box\Gamma$ | Gauge scalar; pure gauge |
+| $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}) = \frac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ | Field strength = curvature, gauge invariant |
 | $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ | Abelian curvature components |
 | $[D_\mu, D_\nu] = \frac{iq}{\hbar}F_{\mu\nu}$ | Curvature as commutator |
 | $\sum_\mu D_\mu^2 = \mathrm{Sc}(\bar D D)$ | Covariant d'Alembertian |

@@ -11,7 +11,7 @@ $$
 
 with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$, $e_3 = e_1 e_2$. This article describes two standard invariants: the group of algebra **automorphisms** and the Lie algebra of **derivations**. Because the algebra is central simple over $\mathbb{R}$, both invariants are as small as the structure permits: every automorphism is inner and every derivation is inner, so there are no outer automorphisms and no exotic derivations.
 
-We use the conventions of the algebra article: the conjugation $\bar{\cdot}$, the principal involution $\alpha$ and the reversal $\rho$; the split-quaternion norm $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$; the vector subspace $V = \operatorname{span}\{e_1,e_2,e_3\}$, with bracket algebra $\mathrm{SL}_2(\mathbb{R})$. A general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. No physics is invoked, and everything below is standard structure theory of a central simple real algebra.
+We use the conventions of the algebra article: the conjugation ${}^{\natural}$, the principal involution $\alpha$ and the reversal $\rho$; the split-quaternion norm $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$; the vector subspace $V = \operatorname{span}\{e_1,e_2,e_3\}$, with bracket algebra $\mathrm{SL}_2(\mathbb{R})$. A general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. No physics is invoked, and everything below is standard structure theory of a central simple real algebra.
 
 ## Standing Facts: Simplicity and the Centre
 
@@ -53,7 +53,7 @@ which is also the image of the norm-one group $U = \{N = 1\}$ under $g \mapsto \
 
 **Invariants.** Every automorphism preserves the split-quaternion norm, $N(\sigma(\tilde q)) = N(\tilde q)$, because $\iota_g$ is inner and $N$ is multiplicative; hence it preserves the group of units, the zero-divisor set, the rank-one idempotents and the subspaces defined by $N$. It also preserves the centre pointwise.
 
-**Example.** For $g = e_3$, with $e_3^{-1} = e_3$ (since $N(e_3) = -1$ and $\bar{e_3} = -e_3$, so $e_3^{-1} = -e_3/(-1) = e_3$), the inner automorphism acts on the vector subspace by $\iota_{e_3}(e_1) = -e_1$, $\iota_{e_3}(e_2) = -e_2$, $\iota_{e_3}(e_3) = e_3$, the matrix $\operatorname{diag}(-1,-1,1)$ in the basis $e_1,e_2,e_3$. This transformation is in $SO(2,1)$ but not in its identity component: it fixes the spacelike direction $e_3$ and reverses the sheet of the timelike hyperboloid.
+**Example.** For $g = e_3$, with $e_3^{-1} = e_3$ (since $N(e_3) = -1$ and $e_3^{\natural} = -e_3$, so $e_3^{-1} = -e_3/(-1) = e_3$), the inner automorphism acts on the vector subspace by $\iota_{e_3}(e_1) = -e_1$, $\iota_{e_3}(e_2) = -e_2$, $\iota_{e_3}(e_3) = e_3$, the matrix $\operatorname{diag}(-1,-1,1)$ in the basis $e_1,e_2,e_3$. This transformation is in $SO(2,1)$ but not in its identity component: it fixes the spacelike direction $e_3$ and reverses the sheet of the timelike hyperboloid.
 
 ## Derivations
 
@@ -103,7 +103,7 @@ The exceptional phenomena that produce outer automorphisms elsewhere — the out
 
 ### Anti-Automorphisms
 
-The conjugations $\bar{\cdot}$ and $\rho$ are **anti**-automorphisms, satisfying $\overline{\tilde q y} = \bar{y}\,\bar{\tilde q}$, and are not automorphisms, so they do not appear in $\mathrm{Aut}(\mathbb{H}_{\mathrm{s}})$. Together with the automorphism $\alpha$ they make up the involution group of the algebra, treated in *Split-Quaternion Involution Lattice*. In the Clifford description of *Split-Quaternion Other Algebraic Element Representations*, the two are the reversal and the Clifford conjugation; the existence of anti-automorphisms outside $\mathrm{Aut}$ is the standard asymmetry between an algebra and its opposite, and it is not an outer automorphism phenomenon.
+The conjugations ${}^{\natural}$ and $\rho$ are **anti**-automorphisms, satisfying $(\tilde q y)^{\natural} = y^{\natural}\,\tilde{q}^{\natural}$, and are not automorphisms, so they do not appear in $\mathrm{Aut}(\mathbb{H}_{\mathrm{s}})$. Together with the automorphism $\alpha$ they make up the involution group of the algebra, treated in *Split-Quaternion Involution Lattice*. In the Clifford description of *Split-Quaternion Other Algebraic Element Representations*, the two are the reversal and the Clifford conjugation; the existence of anti-automorphisms outside $\mathrm{Aut}$ is the standard asymmetry between an algebra and its opposite, and it is not an outer automorphism phenomenon.
 
 ## The Lie Algebra Statement
 
@@ -137,7 +137,7 @@ $$
 \mathrm{Aut}(\mathbb{H}_{\mathrm{s}}) \cong \mathrm{PGL}_2(\mathbb{R}) \cong SO(2,1),
 $$
 
-of dimension $3$, with identity component $\mathrm{Aut}^0 \cong \mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$ and a unique nontrivial component; every automorphism preserves the split-quaternion norm and the centre. There are no outer automorphisms, $\mathrm{Out}(\mathbb{H}_{\mathrm{s}}) = 1$; the anti-automorphisms $\bar{\cdot}$ and $\rho$ are not automorphisms and belong to the involution group instead.
+of dimension $3$, with identity component $\mathrm{Aut}^0 \cong \mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$ and a unique nontrivial component; every automorphism preserves the split-quaternion norm and the centre. There are no outer automorphisms, $\mathrm{Out}(\mathbb{H}_{\mathrm{s}}) = 1$; the anti-automorphisms ${}^{\natural}$ and $\rho$ are not automorphisms and belong to the involution group instead.
 
 Every derivation is inner, so $\mathrm{Der}(\mathbb{H}_{\mathrm{s}}) = \mathrm{ad}(\mathbb{H}_{\mathrm{s}}) \cong \mathbb{H}_{\mathrm{s}}/\mathbb{R} \cong V \cong \mathrm{SL}_2(\mathbb{R}) \cong \mathrm{SO}(2,1)$, the traceless matrices under the commutator bracket, of real dimension $3$; every derivation vanishes on the centre and annihilates the split-quaternion norm, and the map $a \mapsto \mathrm{ad}_a$ has kernel the centre. The derivation algebra is the Lie algebra of the automorphism group. The contrast with the biquaternion case is exact: there the real automorphism group is strictly larger than the complex one and has a nontrivial outer part, here the group is a single inner group of dimension $3$ with two components; the two systems nevertheless share the same derivation shape, the traceless matrices under the bracket.
 
@@ -154,7 +154,7 @@ Every derivation is inner, so $\mathrm{Der}(\mathbb{H}_{\mathrm{s}}) = \mathrm{a
 | $\mathrm{ad}_a(\tilde q) = [a,\tilde q]$ | the inner derivation by $a$ | this article |
 | $V, \mathrm{SL}_2(\mathbb{R})$ | the vector subspace and the traceless matrices | *Split-Quaternion Scalar and Vector Subspaces* |
 | $N(\tilde q) = q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, invariant under automorphisms and derivations | *Split-Quaternion Norm and Invertibility* |
-| $\alpha, \rho, \bar{\cdot}$ | the involutions; $\rho, \bar{\cdot}$ are anti-automorphisms | *Split-Quaternion Subspaces and the Involutions* |
+| $\alpha, \rho, {}^{\natural}$ | the involutions; $\rho, {}^{\natural}$ are anti-automorphisms | *Split-Quaternion Subspaces and the Involutions* |
 | $U = \{N=1\}$ | the norm-one group, mapping onto $\mathrm{SO}^{+}(2,1)$ | *Split-Quaternion Norm and Invertibility* |
 
 ## Further Reading

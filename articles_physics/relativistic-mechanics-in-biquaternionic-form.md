@@ -13,7 +13,7 @@ The purpose is not to derive new physics. The purpose is to rewrite the establis
 
 These identities are algebraic, not physical. They are the reason the biquaternion algebra is the natural home of relativistic mechanics.
 
-The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_0 \partial_{ict} + e_1 \partial_x + e_2 \partial_y + e_3 \partial_z$. Its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0 \partial_{ict} - e_1 \partial_x - e_2 \partial_y - e_3 \partial_z$. The Minkowski metric has signature $(-,+,+,+)$, so that $\partial_{ict}^2 = -\partial_t^2/c^2$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $v$ (or $\mathbf{v}$) is reserved for particle and frame velocities.
+The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_0 \partial_{ict} + e_1 \partial_x + e_2 \partial_y + e_3 \partial_z$. Its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0 \partial_{ict} - e_1 \partial_x - e_2 \partial_y - e_3 \partial_z$. The Minkowski metric has signature $(-,+,+,+)$, so that $\partial_{ict}^2 = -\partial_t^2/c^2$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $v$ (or $\mathbf{v}$) is reserved for particle and frame velocities.
 
 ## The Four-Position
 
@@ -44,7 +44,7 @@ Here $\overline{d\tilde{Q}} = ic\,dt\,e_0 - d\mathbf{x}$ is the quaternion conju
 **The biquaternion norm on $\mathbb{M}_-$.** For a general element of the anti-Hermitian subspace, $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ with $Q_0 = i q'_0$ imaginary and $\mathbf{Q} = q_1 e_1 + q_2 e_2 + q_3 e_3$ real, the biquaternion norm is
 
 $$
-\tilde{Q}\bar{\tilde{Q}} = Q_0^2 + |\mathbf{Q}|^2 = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2,
+\tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + |\mathbf{Q}|^2 = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2,
 $$
 
 which is a real scalar of signature $(3, 1)$. This is the quadratic form used throughout this article, for the interval and for the four-vector normalizations.
@@ -74,7 +74,7 @@ $$
 The four-velocity satisfies the **normalization condition**
 
 $$
-\tilde{U}\bar{\tilde{U}} = \gamma^2\left(-c^2 + \mathbf{v}^2\right) = -c^2,
+\tilde{U}\tilde{U}^{\natural} = \gamma^2\left(-c^2 + \mathbf{v}^2\right) = -c^2,
 $$
 
 which is the biquaternion form of the standard relativistic normalization $u^\mu u_\mu = -c^2$. The normalization is the statement that the four-velocity has a **fixed negative norm** determined by the speed of light. It is a **constraint**, not an identity: not every biquaternion satisfies it, only the four-velocities of physical particles.
@@ -94,13 +94,13 @@ where $m$ is the rest mass, $E = \gamma m c^2$ is the relativistic energy, and $
 The four-momentum satisfies the **mass-shell relation**
 
 $$
-\tilde{P}\bar{\tilde{P}} = m^2 \tilde{U}\bar{\tilde{U}} = -m^2 c^2.
+\tilde{P}\tilde{P}^{\natural} = m^2 \tilde{U}\tilde{U}^{\natural} = -m^2 c^2.
 $$
 
 Expanding in components,
 
 $$
-\tilde{P}\bar{\tilde{P}} = \left(i\frac{E}{c}\right)^2 + \mathbf{p}^2 = -\frac{E^2}{c^2} + \mathbf{p}^2 = -m^2 c^2,
+\tilde{P}\tilde{P}^{\natural} = \left(i\frac{E}{c}\right)^2 + \mathbf{p}^2 = -\frac{E^2}{c^2} + \mathbf{p}^2 = -m^2 c^2,
 $$
 
 which is the standard relativistic energy–momentum relation
@@ -109,7 +109,7 @@ $$
 E^2 = \mathbf{p}^2 c^2 + m^2 c^4.
 $$
 
-The mass-shell relation is the **constraint that defines the physical four-momenta**. In the biquaternion language, it is the statement that the **biquaternion norm of the four-momentum is a fixed negative constant**, determined by the rest mass and the speed of light. Particles of different masses lie on different shells (different values of $\tilde{P}\bar{\tilde{P}}$); massless particles lie on the **null shell** $\tilde{P}\bar{\tilde{P}} = 0$, corresponding to the light cone.
+The mass-shell relation is the **constraint that defines the physical four-momenta**. In the biquaternion language, it is the statement that the **biquaternion norm of the four-momentum is a fixed negative constant**, determined by the rest mass and the speed of light. Particles of different masses lie on different shells (different values of $\tilde{P}\tilde{P}^{\natural}$); massless particles lie on the **null shell** $\tilde{P}\tilde{P}^{\natural} = 0$, corresponding to the light cone.
 
 ## The Four-Force
 
@@ -121,10 +121,10 @@ $$
 
 where $\tau$ is the **proper time** of the particle, defined by $d\tau = dt/\gamma$. The four-force biquaternion lies in the anti-Hermitian subspace $\mathbb{M}_-$, like $\tilde{P}$.
 
-Since $\tilde{P}\bar{\tilde{P}} = -m^2 c^2$ is constant along the worldline, differentiating gives
+Since $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ is constant along the worldline, differentiating gives
 
 $$
-\tilde{F}\bar{\tilde{P}} + \tilde{P}\bar{\tilde{F}} = 0,
+\tilde{F}\tilde{P}^{\natural} + \tilde{P}\tilde{F}^{\natural} = 0,
 $$
 
 which is the biquaternion form of the standard orthogonality condition $f^\mu p_\mu = 0$: the four-force is orthogonal to the four-momentum. This is the reason the four-force can change the direction of the four-momentum but not its norm, and hence not the rest mass.
@@ -166,13 +166,13 @@ $$
 where $\rho$ is the charge density and $\mathbf{j}$ is the current density. The current biquaternion lies in $\mathbb{M}_-$ (imaginary scalar part, real vector part). The **conservation of charge** is expressed by the biquaternion equation
 
 $$
-\mathrm{Sc}\!\left(\bar{\tilde{\nabla}}\tilde{J}\right) = 0,
+\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = 0,
 $$
 
-where $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$ is the quaternion conjugate of the biquaternionic gradient. Expanding the scalar part,
+where $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$ is the quaternion conjugate of the biquaternionic gradient. Expanding the scalar part,
 
 $$
-\mathrm{Sc}\!\left(\bar{\tilde{\nabla}}\tilde{J}\right) = \partial_{ict}(ic\rho) + \mathrm{div}\,\mathbf{j} = \frac{\partial \rho}{\partial t} + \mathrm{div}\,\mathbf{j},
+\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = \partial_{ict}(ic\rho) + \mathrm{div}\,\mathbf{j} = \frac{\partial \rho}{\partial t} + \mathrm{div}\,\mathbf{j},
 $$
 
 so the condition is the standard continuity equation
@@ -181,17 +181,17 @@ $$
 \frac{\partial \rho}{\partial t} + \mathrm{div}\,\mathbf{j} = 0.
 $$
 
-The condition is the **scalar part** of $\bar{\tilde{\nabla}}\tilde{J} = 0$. The full equation $\bar{\tilde{\nabla}}\tilde{J} = 0$ is stronger, because the vector part of $\bar{\tilde{\nabla}}\tilde{J}$ does not vanish in general: it involves the spatial derivatives of $\rho$ and $\mathbf{j}$, and it does not correspond to a standard physical conservation law. So the continuity equation is the scalar projection of the biquaternion conservation law.
+The condition is the **scalar part** of $\tilde{\nabla}^{\natural}\tilde{J} = 0$. The full equation $\tilde{\nabla}^{\natural}\tilde{J} = 0$ is stronger, because the vector part of $\tilde{\nabla}^{\natural}\tilde{J}$ does not vanish in general: it involves the spatial derivatives of $\rho$ and $\mathbf{j}$, and it does not correspond to a standard physical conservation law. So the continuity equation is the scalar projection of the biquaternion conservation law.
 
 ## The Klein–Gordon Equation
 
 The **Klein–Gordon equation** for a relativistic scalar field $\tilde{\Phi}$ of mass $m$ is
 
 $$
-\left(\tilde{\nabla}\bar{\tilde{\nabla}} - \frac{m^2 c^2}{\hbar^2}\right)\tilde{\Phi} = 0.
+\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - \frac{m^2 c^2}{\hbar^2}\right)\tilde{\Phi} = 0.
 $$
 
-Here $\tilde{\nabla}\bar{\tilde{\nabla}} = \Box = \partial_{ict}^2 + \Delta$ is the d'Alembertian in the biquaternion form, and $\hbar$ is the reduced Planck constant. Expanding,
+Here $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box = \partial_{ict}^2 + \Delta$ is the d'Alembertian in the biquaternion form, and $\hbar$ is the reduced Planck constant. Expanding,
 
 $$
 \Box\tilde{\Phi} = \frac{m^2 c^2}{\hbar^2}\tilde{\Phi},
@@ -204,7 +204,7 @@ which is the standard Klein–Gordon equation $(\Box - m^2 c^2/\hbar^2)\phi = 0$
 The **Dirac equation** for a relativistic spinor field $\tilde{\Psi}$ of mass $m$ is the linear, chirality-off-diagonal pair
 
 $$
-\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R,
+\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
 $$
 
 where $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ carries one component per chirality. In the massless case ($m = 0$), the pair reduces to
@@ -213,7 +213,7 @@ $$
 \tilde{\nabla}\tilde{\Psi} = 0,
 $$
 
-which is identical in form to the source-free biquaternion Maxwell equation. The mass term $m\tilde{\Psi}_{L,R}$ couples the two chiralities, and each chirality satisfies the Klein–Gordon equation; the anti-Hermitian conjugation $\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger$ is the algebra's real structure, not the mass term, and the single-field equation $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ is a separate real-linear (Majorana-type) equation whose plane waves lie on the spacelike locus. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
+which is identical in form to the source-free biquaternion Maxwell equation. The mass term $m\tilde{\Psi}_{L,R}$ couples the two chiralities, and each chirality satisfies the Klein–Gordon equation; the anti-Hermitian conjugation $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ is the algebra's real structure, not the mass term, and the single-field equation $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ is a separate real-linear (Majorana-type) equation whose plane waves lie on the spacelike locus. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
 
 ## Summary of the Ten Formulas
 
@@ -221,24 +221,24 @@ which is identical in form to the source-free biquaternion Maxwell equation. The
 |---|---|---|
 | Four-position | $\tilde{Q} = ic\,t\,e_0 + \mathbf{x}$ | — |
 | Invariant interval | $ds^2 = d\tilde{Q}\,\overline{d\tilde{Q}}$ | $= -c^2 dt^2 + d\mathbf{x}^2$ |
-| Four-velocity | $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ | $\tilde{U}\bar{\tilde{U}} = -c^2$ |
-| Four-momentum | $\tilde{P} = m\tilde{U}$ | $\tilde{P}\bar{\tilde{P}} = -m^2 c^2$ |
-| Mass-shell relation | $\tilde{P}\bar{\tilde{P}} = -m^2 c^2$ | — |
-| Four-force | $\tilde{F} = d\tilde{P}/d\tau$ | $\tilde{F}\bar{\tilde{P}} + \tilde{P}\bar{\tilde{F}} = 0$ |
+| Four-velocity | $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ | $\tilde{U}\tilde{U}^{\natural} = -c^2$ |
+| Four-momentum | $\tilde{P} = m\tilde{U}$ | $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ |
+| Mass-shell relation | $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ | — |
+| Four-force | $\tilde{F} = d\tilde{P}/d\tau$ | $\tilde{F}\tilde{P}^{\natural} + \tilde{P}\tilde{F}^{\natural} = 0$ |
 | Action | $S = -mc\int\sqrt{-\,d\tilde{Q}\,\overline{d\tilde{Q}}}$ | — |
-| Current | $\tilde{J} = ic\rho\,e_0 + \mathbf{j}$ | $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{J}) = 0$ |
-| Klein–Gordon | $(\tilde{\nabla}\bar{\tilde{\nabla}} - m^2c^2/\hbar^2)\tilde{\Phi} = 0$ | — |
-| Dirac | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L,\ \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | — |
+| Current | $\tilde{J} = ic\rho\,e_0 + \mathbf{j}$ | $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ |
+| Klein–Gordon | $(\tilde{\nabla}\tilde{\nabla}^{\natural} - m^2c^2/\hbar^2)\tilde{\Phi} = 0$ | — |
+| Dirac | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L,\ \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | — |
 
 ## Structural Observations
 
 **The four-vectors live in $\mathbb{M}_-$.** The four-position, four-velocity, four-momentum, four-force, four-potential, and four-current all lie in the anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part). This subspace is the biquaternion image of the Minkowski four-vector space, and it is closed under the natural Lorentz-covariant operations (addition, scalar multiplication by real numbers, and rotor conjugation).
 
-**The mass-shell relation is a norm condition.** The statement $\tilde{P}\bar{\tilde{P}} = -m^2 c^2$ is the statement that the **biquaternion norm** of the four-momentum is a fixed negative constant. Massless particles satisfy $\tilde{P}\bar{\tilde{P}} = 0$, which is the condition that the four-momentum lies on the **zero divisor cone** of the algebra (see the companion article on biquaternion zero divisors). So the light cone of Minkowski space is, in the biquaternion language, the **zero divisor set** of the algebra.
+**The mass-shell relation is a norm condition.** The statement $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ is the statement that the **biquaternion norm** of the four-momentum is a fixed negative constant. Massless particles satisfy $\tilde{P}\tilde{P}^{\natural} = 0$, which is the condition that the four-momentum lies on the **zero divisor cone** of the algebra (see the companion article on biquaternion zero divisors). So the light cone of Minkowski space is, in the biquaternion language, the **zero divisor set** of the algebra.
 
-**The conserved current is a scalar projection of the biquaternion conservation law.** The continuity equation is the scalar part of $\bar{\tilde{\nabla}}\tilde{J} = 0$. The full biquaternion equation is stronger, and the vector part of $\bar{\tilde{\nabla}}\tilde{J}$ does not have an independent physical interpretation as a conservation law.
+**The conserved current is a scalar projection of the biquaternion conservation law.** The continuity equation is the scalar part of $\tilde{\nabla}^{\natural}\tilde{J} = 0$. The full biquaternion equation is stronger, and the vector part of $\tilde{\nabla}^{\natural}\tilde{J}$ does not have an independent physical interpretation as a conservation law.
 
-**The wave equations are factorization.** The Klein–Gordon and Dirac equations are related by the factorization $\tilde{\nabla}\bar{\tilde{\nabla}} = \Box$. The Dirac equation is the **first-order factor** of the Klein–Gordon equation, and the mass term is the term that distinguishes the massive case from the massless one. This factorization is the biquaternion form of the standard Dirac factorization of the Klein–Gordon operator.
+**The wave equations are factorization.** The Klein–Gordon and Dirac equations are related by the factorization $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$. The Dirac equation is the **first-order factor** of the Klein–Gordon equation, and the mass term is the term that distinguishes the massive case from the massless one. This factorization is the biquaternion form of the standard Dirac factorization of the Klein–Gordon operator.
 
 ## The Tensor-Dynamics Reading, and the Question of Extra Terms
 
@@ -280,7 +280,7 @@ The ten basic formulas of relativistic mechanics — four-position, invariant in
 
 - The invariant interval is the biquaternion norm of the four-position displacement biquaternion.
 - The four-velocity, four-momentum, four-force, four-potential, and four-current lie in the anti-Hermitian subspace $\mathbb{M}_-$.
-- The mass-shell relation is the biquaternion-norm condition $\tilde{P}\bar{\tilde{P}} = -m^2 c^2$.
+- The mass-shell relation is the biquaternion-norm condition $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$.
 - The light cone is the zero divisor set of the algebra.
 - The conserved current is characterized by the scalar part of the quaternion-conjugate gradient vanishing.
 - The wave equations are the factorization of the d'Alembertian.
@@ -302,10 +302,10 @@ These identities are algebraic, not physical. They are the reason the biquaterni
 | $\tilde{P} = m\tilde{U}$ | Four-momentum biquaternion |
 | $\tilde{F} = d\tilde{P}/d\tau$ | Four-force biquaternion |
 | $\tilde{J} = ic\rho\,e_0 + \mathbf{j}$ | Four-current biquaternion |
-| $\tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm (scalar quadratic form) |
+| $\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm (scalar quadratic form) |
 | $\tilde{\nabla} = e_0\partial_{ict} + \sum_k e_k\partial_k$ | Biquaternionic gradient |
-| $\bar{\tilde{\nabla}} = e_0\partial_{ict} - \sum_k e_k\partial_k$ | Quaternion-conjugate gradient |
-| $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$ | d'Alembertian |
+| $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - \sum_k e_k\partial_k$ | Quaternion-conjugate gradient |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
 | $\tau$ | Proper time |
 | $m$ | Rest mass |
 

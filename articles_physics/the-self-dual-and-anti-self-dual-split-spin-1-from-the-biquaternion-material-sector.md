@@ -14,14 +14,14 @@ The two halves are then the two eigenspaces of that single complex structure, an
 
 The article is organised as follows. The first section recalls why integer spin requires a representation that the spinor module does not provide: the four-vector representation of the Lorentz group is $(\tfrac12,\tfrac12)$, which on restriction to rotations contains spin one and spin zero, while the antisymmetric tensor representation is $(1,0)\oplus(0,1)$, which is pure spin one. The second identifies the carrier inside the algebra: the six-dimensional real vector part $\mathrm{Vect}(\mathbb{B})$, which is at once the real field-strength space and the Lorentz Lie algebra. The third defines the Hodge dual on it and proves the identity above, which is linear in the field and therefore holds for a superposition of fields and not only for a single Fourier mode. The fourth constructs the projectors and the split, the fifth reads off the spin content of each half, and the sixth connects the split to duality rotations and to the two helicities of the massless field. A closing section states where the split sits in the algebra's module category and where it does not, which is the boundary that the final article of this subcategory draws in general.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and central scalar imaginary $i$. The gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, with conjugate $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, so that $\tilde{\nabla}\bar{\tilde{\nabla}} = \Box = \partial_{ict}^2 + \Delta$. The potential and field strength are
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and central scalar imaginary $i$. The gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, with conjugate $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, so that $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box = \partial_{ict}^2 + \Delta$. The potential and field strength are
 
 $$
 \tilde{A} = \frac{i\phi}{c}\,e_0 + \mathbf{A}, \qquad
-\tilde{F} = \bar{\tilde{\nabla}}\tilde{A} - \mathrm{Sc}\!\left(\bar{\tilde{\nabla}}\tilde{A}\right) = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H},
+\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H},
 $$
 
-with $\mathbf{H}$ the magnetic field and $\mathbf{B} = \mu\mathbf{H}$ the magnetic induction, and $c = 1/\sqrt{\epsilon\mu}$ the speed of light in the medium. The normalization of the potential is the one for which the two expressions for $\tilde{F}$ in the display agree, a constant multiple of $\tilde{A}$ being absorbed in it; the field strength itself is fixed unambiguously by the tensor formula $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$, as the companion field-strength article records. The Lorentz rotor acts by conjugation, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, and the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$.
+with $\mathbf{H}$ the magnetic field and $\mathbf{B} = \mu\mathbf{H}$ the magnetic induction, and $c = 1/\sqrt{\epsilon\mu}$ the speed of light in the medium. The normalization of the potential is the one for which the two expressions for $\tilde{F}$ in the display agree, a constant multiple of $\tilde{A}$ being absorbed in it; the field strength itself is fixed unambiguously by the tensor formula $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$, as the companion field-strength article records. The Lorentz rotor acts by conjugation, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, and the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$.
 
 ## Integer Spin and the Representation It Needs
 
@@ -302,9 +302,9 @@ The split is pure integer spin. The self-dual half is the symmetric square of th
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathrm{Vect}(\mathbb{B})$ | Complex three-dimensional vector part, real dimension six |
-| $\tilde{\nabla}, \bar{\tilde{\nabla}}$ | Biquaternionic gradient and its quaternion conjugate; $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2+\Delta$ |
+| $\tilde{\nabla}, \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate; $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2+\Delta$ |
 | $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$ | Four-potential biquaternion |
-| $\tilde{F} = \bar{\tilde{\nabla}}\tilde{A} - \mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{A})$ | Field-strength biquaternion, pure vector |
+| $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ | Field-strength biquaternion, pure vector |
 | $\mathbf{E}, \mathbf{H}, \mathbf{B}=\mu\mathbf{H}$ | Electric field, magnetic field, magnetic induction |
 | $\epsilon,\mu$, $c=1/\sqrt{\epsilon\mu}$ | Medium constants and speed of light in the medium |
 | $\mathbf{V} = \mathbf{E}+ic\mathbf{B}$ | Riemann–Silberstein vector, $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{V}$ |
@@ -313,7 +313,7 @@ The split is pure integer spin. The self-dual half is the symmetric square of th
 | $\tilde\Pi_{sd,asd} = \tfrac12(1\pm i\star)$ | Projectors onto the self-dual ($\star=-i$) and anti-self-dual ($\star=+i$) halves |
 | $(1,0)$, $(0,1)$ | The two three-dimensional complex Lorentz representations |
 | $S$ | Defining (spinor) module, $\mathrm{Sym}^2(S)\cong(1,0)$ |
-| $\tilde{\Lambda}\in SL(2,\mathbb{C})$ | Lorentz rotor, $\tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0$ |
+| $\tilde{\Lambda}\in SL(2,\mathbb{C})$ | Lorentz rotor, $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$ |
 
 ## Further Reading
 

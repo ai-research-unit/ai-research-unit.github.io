@@ -18,7 +18,7 @@ The article develops the following.
 
 The exchange discussed here is the classical exchange of signals. It is not the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; the two share the algebra, and the information in question is carried by null displacements of $\mathbb{M}_-$.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements $i\alpha\,e_0+\mathbf{a}$ of imaginary scalar part and real vector part. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, the material coordinate is $\tilde{Q} = ic\,t\,e_0 + \mathbf{x}$, and the $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict}+\nabla$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements were checked in the four-component coefficient representation $\tilde{Q} = Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with complex coefficients, and the frequency exchange was checked on a superposition of two wavevectors.
+**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements $i\alpha\,e_0+\mathbf{a}$ of imaginary scalar part and real vector part. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, the material coordinate is $\tilde{Q} = ic\,t\,e_0 + \mathbf{x}$, and the $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict}+\nabla$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements were checked in the four-component coefficient representation $\tilde{Q} = Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with complex coefficients, and the frequency exchange was checked on a superposition of two wavevectors.
 
 ## Signals as Null Displacements
 
@@ -76,14 +76,14 @@ $$
 A signal therefore satisfies $\Delta u = 0$ or $\Delta v = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$ propagating along $\hat{\mathbf{k}}$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
 
 $$
-\Phi = \mathrm{Sc}\!\left(\tilde{K}\bar{\tilde{Q}}\right) = \mathbf{k}\cdot\mathbf{x} - \omega t = -\omega\left(t - \frac{\hat{\mathbf{k}}\cdot\mathbf{x}}{c}\right) = -\omega\,u,
+\Phi = \mathrm{Sc}\!\left(\tilde{K}\tilde{Q}^{\natural}\right) = \mathbf{k}\cdot\mathbf{x} - \omega t = -\omega\left(t - \frac{\hat{\mathbf{k}}\cdot\mathbf{x}}{c}\right) = -\omega\,u,
 $$
 
 is the retarded coordinate multiplied by the frequency. The algebra's phase invariant is thus the statement that an exchange is labelled by a single null coordinate, and it is this coordinate that the signal carries from emitter to receiver.
 
 ### Relays and Superpositions
 
-If $A \rightsquigarrow B$ and $B \rightsquigarrow C$ are two light exchanges, the sum $\tilde{Q}_{BA}+\tilde{Q}_{CB}$ is the displacement from $A$ to $C$ by a relay, and by the transitivity result of the companion article it is future-directed nonspacelike. It is strictly timelike unless the two legs are collinear and in the same direction, in which case it is null; a bent light path through $B$ no longer covers its ends at speed $c$, which is why a relay of two signals can carry information from $A$ to $C$ only within the cone. The linearity of the wave operator makes the same point for superpositions: since the transformation $\tilde{K} \mapsto \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger$ is linear, a superposition of two wavevectors transforms componentwise, and each component carries its own Doppler factor. A numerical check on a two-component superposition confirms that the transformed superposition is the sum of the transformed components, so the frequency exchange below applies to each monochromatic component of a general signal independently.
+If $A \rightsquigarrow B$ and $B \rightsquigarrow C$ are two light exchanges, the sum $\tilde{Q}_{BA}+\tilde{Q}_{CB}$ is the displacement from $A$ to $C$ by a relay, and by the transitivity result of the companion article it is future-directed nonspacelike. It is strictly timelike unless the two legs are collinear and in the same direction, in which case it is null; a bent light path through $B$ no longer covers its ends at speed $c$, which is why a relay of two signals can carry information from $A$ to $C$ only within the cone. The linearity of the wave operator makes the same point for superpositions: since the transformation $\tilde{K} \mapsto \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}$ is linear, a superposition of two wavevectors transforms componentwise, and each component carries its own Doppler factor. A numerical check on a two-component superposition confirms that the transformed superposition is the sum of the transformed components, so the frequency exchange below applies to each monochromatic component of a general signal independently.
 
 ## Clocks and Proper Time
 
@@ -369,13 +369,13 @@ The exchange of information and the synchronisation of clocks are built from the
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
 | $\tilde{Q} = ic\,t\,e_0+\mathbf{x}$ | Material four-position |
 | $\tilde{Q}_{BA} = \tilde{Q}_B-\tilde{Q}_A$ | Displacement from $A$ to $B$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict$-coordinate metric |
 | $\mathrm{Sc}$ | Scalar projection |
 | $\hat{\mathbf{n}}$ | Propagation direction |
 | $u = t-\hat{\mathbf{n}}\cdot\mathbf{x}/c$, $v = t+\hat{\mathbf{n}}\cdot\mathbf{x}/c$ | Retarded and advanced radar coordinates |
 | $\tilde{K} = i\omega/c\,e_0+\mathbf{k}$ | Four-wavevector |
-| $\Phi = \mathrm{Sc}(\tilde{K}\bar{\tilde{Q}}) = -\omega u$ | Plane-wave phase |
+| $\Phi = \mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = -\omega u$ | Plane-wave phase |
 | $\tau$, $\Delta\tau$ | Proper time |
 | $\tilde{U} = \gamma(ic\,e_0+\mathbf{v})$, $N(\tilde{U})=-c^2$ | Clock four-velocity |
 | $\beta = u/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |

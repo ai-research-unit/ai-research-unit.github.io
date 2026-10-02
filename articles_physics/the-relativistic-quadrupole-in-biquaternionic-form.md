@@ -20,7 +20,7 @@ The article is classical throughout, and the scope is the *relativistic* quadrup
 - Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the potential and field-strength biquaternions.
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for $\tilde{F}$, the Riemann–Silberstein vector, and the self-dual decomposition.
 
-Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$; the central scalar imaginary is $i$, $i^2 = -1$; the material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$; the biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + \boldsymbol{\nabla}$ with $\boldsymbol{\nabla} = e_1\partial_x + e_2\partial_y + e_3\partial_z$, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$, so the monopole is $D^{(0)}$, the dipole and every vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
+Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$; the central scalar imaginary is $i$, $i^2 = -1$; the material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$; the biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + \boldsymbol{\nabla}$ with $\boldsymbol{\nabla} = e_1\partial_x + e_2\partial_y + e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$, so the monopole is $D^{(0)}$, the dipole and every vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
 
 ## The Quadrupole as a Higher Multipole
 
@@ -94,7 +94,7 @@ $$
 \mathbf{F}(\hat{\mathbf{n}}) = \int\mathbf{J} - ik\int(\hat{\mathbf{n}}\cdot\mathbf{x}')\mathbf{J} - \frac{k^2}{2}\int(\hat{\mathbf{n}}\cdot\mathbf{x}')^2\mathbf{J} + \ldots
 $$
 
-Each successive term adds one order of $kr'$ and one unit of angular momentum. The four-vector potential $\tilde{A}$ and the field-strength biquaternion $\tilde{F} = \bar{\tilde{\nabla}}\tilde{A} - \mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{A})$ inherit this expansion term by term.
+Each successive term adds one order of $kr'$ and one unit of angular momentum. The four-vector potential $\tilde{A}$ and the field-strength biquaternion $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ inherit this expansion term by term.
 
 ### The Decomposition of the First-Order Term
 
@@ -205,7 +205,7 @@ a boosted piece plus a contraction piece. The second piece is the reason the tra
 The transformation above shows that the electric quadrupole of one frame is a mixture of the electric and magnetic quadrupoles of another, and the same holds at every order: a boost mixes $E_l$ with $M_l$. The reason is structural. At the level of the field this is the mixing of the two sectors of the field strength, since a boost mixes $\mathbf{E}$ and $\mathbf{B}$, that is, the Hermitian and anti-Hermitian halves of $\tilde{F}$:
 
 $$
-\tilde{F}' = \bar{\tilde{\Lambda}}\,\tilde{F}\,\tilde{\Lambda} ,
+\tilde{F}' = \tilde{\Lambda}^{\natural}\,\tilde{F}\,\tilde{\Lambda} ,
 $$
 
 with $\tilde{\Lambda}$ the boost biquaternion of $\mathbb{M}_+$. The two multipole types are parity classes — an electric $l$-pole has parity $(-1)^l$, a magnetic $l$-pole parity $(-1)^{l+1}$ — and a boost does not preserve parity, so it rotates the two types into one another. What it does leave alone is the chiral splitting: the two halves of the self-dual field strength are the two helicities, and they transform independently.
@@ -310,9 +310,9 @@ Two algebraic decompositions of $\tilde{F}$ organise the multipole series, and b
 The **Hermitian decomposition** separates the electric and magnetic halves,
 
 $$
-\tfrac{1}{2}\left(\tilde{F}+\tilde{F}^\dagger\right) = i\sqrt{\epsilon}\,\mathbf{E}\in\mathbb{M}_+ ,
+\tfrac{1}{2}\left(\tilde{F}+\tilde{F}^{*}\right) = i\sqrt{\epsilon}\,\mathbf{E}\in\mathbb{M}_+ ,
 \qquad
-\tfrac{1}{2}\left(\tilde{F}-\tilde{F}^\dagger\right) = -\sqrt{\mu}\,\mathbf{H}\in\mathbb{M}_- .
+\tfrac{1}{2}\left(\tilde{F}-\tilde{F}^{*}\right) = -\sqrt{\mu}\,\mathbf{H}\in\mathbb{M}_- .
 $$
 
 The electric and magnetic quadrupole **fields** are the two summands. For a static source the correspondence with the quadrupole types is exact — a static charge distribution gives a purely Hermitian field strength, so the electric quadrupole field is Hermitian, and a stationary current gives a purely anti-Hermitian one, so the magnetic quadrupole field is anti-Hermitian. A radiating quadrupole of either type has both a Hermitian and an anti-Hermitian part. A boost does not preserve this split: it mixes the electric and magnetic fields. The same boost mixes the multipole types, and that is a statement about parity rather than about the two fields: $E_2$ and $M_2$ have opposite parity, and a boost does not preserve parity.
@@ -322,14 +322,14 @@ The **self-dual decomposition** combines the two halves into the two chiralities
 $$
 \tilde{F} = i\sqrt{\epsilon}\,\mathbf{V} ,
 \qquad
-\tilde{F}^\dagger = i\sqrt{\epsilon}\,\mathbf{V}^* ,
+\tilde{F}^{*} = i\sqrt{\epsilon}\,\mathbf{V}^* ,
 \qquad
 \mathbf{V} = \mathbf{E}+ic\mathbf{B} ,
 \qquad
 \mathbf{V}^* = \mathbf{E}-ic\mathbf{B} ,
 $$
 
-with $\mathbf{V}$ the self-dual and $\mathbf{V}^*$ the anti-self-dual combination; for the real field the dagger produces the second from the first, since $\tilde{F}^\dagger = i\sqrt{\epsilon}\,\mathbf{E}+\sqrt{\mu}\,\mathbf{H} = i\sqrt{\epsilon}\,\mathbf{V}^*$. The self-dual half transforms independently under the Lorentz group, in one of its two complex three-dimensional representations; this is the object that a boost rotates as a whole, and the two chiral halves it defines are the two helicities of the radiation. The decomposition of the full multipole series along these two halves is the general problem of higher multipoles.
+with $\mathbf{V}$ the self-dual and $\mathbf{V}^*$ the anti-self-dual combination; for the real field the dagger produces the second from the first, since $\tilde{F}^{*} = i\sqrt{\epsilon}\,\mathbf{E}+\sqrt{\mu}\,\mathbf{H} = i\sqrt{\epsilon}\,\mathbf{V}^*$. The self-dual half transforms independently under the Lorentz group, in one of its two complex three-dimensional representations; this is the object that a boost rotates as a whole, and the two chiral halves it defines are the two helicities of the radiation. The decomposition of the full multipole series along these two halves is the general problem of higher multipoles.
 
 ### The Radiation Field as a Zero Divisor
 
@@ -340,7 +340,7 @@ I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2 = 0 ,
 \qquad
 I_2 = \mathbf{E}\cdot\mathbf{B} = 0 ,
 \qquad
-N(\tilde{F}) = \tilde{F}\bar{\tilde{F}} = 0 .
+N(\tilde{F}) = \tilde{F}\tilde{F}^{\natural} = 0 .
 $$
 
 The field-strength biquaternion of a radiation field is therefore a **zero divisor** of $\mathbb{B}$: the quadrupole radiation field, like every radiation field, is null. The near-zone quadrupole field is not, and the transition between the two is the transition from the non-null field of a bound source to the null field of its radiation.
@@ -383,11 +383,11 @@ The quadrupole moment is not an algebra element: it is a rank-two tensor, outsid
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B})$ | Center and complex vector part of $\mathbb{B}$ |
 | $\tilde{\nabla} = e_0\partial_{ict}+\boldsymbol{\nabla}$ | Biquaternionic gradient |
-| $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2+\Delta$ | d'Alembertian (series convention) |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2+\Delta$ | d'Alembertian (series convention) |
 | $\tilde{A} = i\phi/c\,e_0+\mathbf{A}$ | Four-potential, an element of $\mathbb{M}_-$ |
 | $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$ | Field-strength biquaternion (pure vector) |
 | $\mathbf{V} = \mathbf{E}+ic\mathbf{B}$ | Riemann–Silberstein vector, $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{V}$ |
-| $\mathbf{V}^* = \mathbf{E}-ic\mathbf{B}$ | Anti-self-dual combination, $\tilde{F}^\dagger = i\sqrt{\epsilon}\,\mathbf{V}^*$ for the real field |
+| $\mathbf{V}^* = \mathbf{E}-ic\mathbf{B}$ | Anti-self-dual combination, $\tilde{F}^{*} = i\sqrt{\epsilon}\,\mathbf{V}^*$ for the real field |
 | $\rho$, $\mathbf{J}$ | Charge and current densities |
 | $q$, $\mathbf{p}$, $\mathbf{m}$ | Monopole, dipole and magnetic dipole moments |
 | $D_{ij} = \int\rho\,x_ix_j\,d^3x$ | Second moment of the charge |
@@ -401,9 +401,9 @@ The quadrupole moment is not an algebra element: it is a rank-two tensor, outsid
 | $k = \omega/c$ | Wavenumber |
 | $\hat{\mathbf{n}} = \mathbf{x}/r$ | Unit radial vector |
 | $\gamma$, $\beta = |\mathbf{v}|/c$ | Lorentz factor and speed ratio |
-| $\tilde{\Lambda}\in\mathbb{M}_+$ | Boost biquaternion, $\tilde{F}' = \bar{\tilde{\Lambda}}\tilde{F}\tilde{\Lambda}$ |
+| $\tilde{\Lambda}\in\mathbb{M}_+$ | Boost biquaternion, $\tilde{F}' = \tilde{\Lambda}^{\natural}\tilde{F}\tilde{\Lambda}$ |
 | $\star$ | Hodge dual, $\star(\mathbf{E},\mathbf{B}) = (c\mathbf{B},-\mathbf{E}/c)$ |
-| $N(\tilde{F}) = \tilde{F}\bar{\tilde{F}}$ | Biquaternion norm; vanishes for a radiation field |
+| $N(\tilde{F}) = \tilde{F}\tilde{F}^{\natural}$ | Biquaternion norm; vanishes for a radiation field |
 
 ## Further Reading
 

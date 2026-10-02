@@ -115,7 +115,7 @@ The algebra and its subspaces are established in the companion articles and are 
 $\mathbb{B}$ is four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$. Its four natural conjugations have as fixed-point sets the distinguished real subspaces used throughout the corpus: the complex subspace $\mathbb{C}_{\mathbb{B}}$ (the complex scalars, the center of $\mathbb{B}$), the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the real quaternions), the Hermitian subspace $\mathbb{M}_{+}$ (real scalar part, imaginary vector part, the informational sector), and the anti-Hermitian subspace $\mathbb{M}_{-}$ (imaginary scalar part, real vector part, the material sector). The natural quadratic form is the biquaternion norm
 
 $$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2 ,
+N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 ,
 $$
 
 whose indefinite signature on $\mathbb{M}_{-}$ arises algebraically from $i^2 = -1$ in the imaginary time coefficient $ict$. The null elements $N(\tilde{Q}) = 0$, $\tilde{Q} \neq 0$, are the zero divisors; on $\mathbb{M}_{-}$ they are the light cone.
@@ -129,13 +129,13 @@ $$
 realized by sending the quaternion units to $-i$ times the Pauli matrices, $e_k \mapsto -i\sigma_k$. Equivalently, $\mathbb{B}$ is the real Clifford algebra $Cl_{3,0}(\mathbb{R})$ — the **Pauli algebra** — and the even subalgebra of the spacetime algebra $Cl_{1,3}$. Under this isomorphism the biquaternion norm is the determinant, $N(\tilde{Q}) = \det\Phi(\tilde{Q})$, and the unit-norm elements
 
 $$
-SL(2,\mathbb{C}) = \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\}
+SL(2,\mathbb{C}) = \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0\}
 $$
 
 are the double cover of the proper orthochronous Lorentz group $SO^{+}(1,3)$, acting on $\mathbb{M}_{-}$ by the rotor conjugation
 
 $$
-\tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{\dagger} .
+\tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*} .
 $$
 
 These are the facts that make the history intelligible. The algebra of Hamilton's complex quaternions *is* the algebra of the Pauli matrices; the group of unit biquaternions *is* the Lorentz double cover; the idempotents $\tilde\Pi_\pm = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ in $\mathbb{M}_{+}$ are the pure states of a two-state system, with $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ as the Born rule written in the algebra (see the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*). None of these identifications was known to Hamilton.
@@ -184,7 +184,7 @@ $$
 
 and its tensor, the length of the rotor, is the tangent of the angular distance from the origin to the point. The five constructions are the position-rotor just given; the **equation of a straight line**, built on the perpendicular drawn from the origin to the line; the **rotor along a straight line whose equation is given**; the **rotor joining two points** whose position-rotors are $\alpha$ and $\beta$, namely $mR = \beta - \alpha + \omega\,V\alpha\beta$, with $V$ the vector product; and the **rotor parallel to a given line through a given point** whose position-rotor is $\sigma$. The list is the paper's demonstration that the algebra computes with lines and with screws, and not only with directions.
 
-The corpus uses "rotor" throughout for the unit-norm element of $\mathbb{B}$ that implements a Lorentz rotation, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$. That is a later and a different sense of the same word: Clifford's rotor is a position-carrying line element, a quantity of the geometry of lines, while the corpus's rotor is an element of the algebra acting on the material sector. The two objects share a name and little else, and the coinage is recorded here because the name runs through the rest of the corpus.
+The corpus uses "rotor" throughout for the unit-norm element of $\mathbb{B}$ that implements a Lorentz rotation, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$. That is a later and a different sense of the same word: Clifford's rotor is a position-carrying line element, a quantity of the geometry of lines, while the corpus's rotor is an element of the algebra acting on the material sector. The two objects share a name and little else, and the coinage is recorded here because the name runs through the rest of the corpus.
 
 ## Quaternions in Electromagnetism, and the Vector Revolt
 
@@ -301,15 +301,15 @@ The word "rotor" is Clifford's, coined in 1873 for a quantity having position �
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra (complex quaternions) |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ (Hamilton's $h$) |
-| $\bar{\cdot}, {}^{*}, {}^{\dagger}, {}^{\flat}$ | The four conjugations |
+| ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
 | $\mathbb{C}_{\mathbb{B}}$ | Complex subspace (complex scalars; center of $\mathbb{B}$) |
 | $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace (real quaternions; norm $(4,0)$) |
 | $\mathbb{M}_{+}$ | Hermitian subspace (informational sector; norm $(1,3)$) |
 | $\mathbb{M}_{-}$ | Anti-Hermitian subspace (material sector; norm $(3,1)$) |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm (zero divisors where $N=0$) |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm (zero divisors where $N=0$) |
 | $\mathbb{B} \cong M_2(\mathbb{C}) \cong Cl_{3,0}(\mathbb{R})$ | Pauli algebra; $\Phi(e_k) = -i\sigma_k$ |
-| $SL(2,\mathbb{C}) = \{\tilde{\Lambda} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\}$ | Unit-norm biquaternions; Lorentz double cover |
-| $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$ | Rotor conjugation on $\mathbb{M}_{-}$ |
+| $SL(2,\mathbb{C}) = \{\tilde{\Lambda} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0\}$ | Unit-norm biquaternions; Lorentz double cover |
+| $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation on $\mathbb{M}_{-}$ |
 | $\tilde\Pi_\pm = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ | Idempotent (pure state of $\mathbb{M}_{+}$) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
 | $\mathbf{E} + ic\mathbf{B}$ | Riemann–Silberstein vector (Silberstein, 1907) |

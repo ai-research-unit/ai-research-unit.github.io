@@ -25,7 +25,7 @@ $$
 All four coefficients are **real**. The quadratic form
 
 $$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = q_0^2 + q_1^2 + q_2^2 + q_3^2
+N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = q_0^2 + q_1^2 + q_2^2 + q_3^2
 $$
 
 has signature $(4, 0)$. The subspace is a subalgebra of $\mathbb{B}$ isomorphic to the quaternion algebra $\mathbb{H}$, and it is a division algebra: every nonzero element is invertible, and there are no zero divisors.

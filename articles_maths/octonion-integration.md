@@ -7,7 +7,7 @@ This article is the integration slot of the octonion system. It treats the integ
 
 The article is the octonion member of the integration slots of this Part and follows the model of the *Quaternion Integration* and *Split-Biquaternion Integration*, together with the Cauchy theory of *Clifford Modules and the Twisted Cauchy–Riemann Operator*. It takes the operator $D$, the kernel $E$, the monogenic class and the Cauchy–Pompeiu formula from *Octonion Analysis* and does not repeat them; the object here is the integral as an operation. The harmonic analysis on $\mathbb{O}$ is the subject, and the functions of the next slot.
 
-**Conventions.** As in *Octonion Analysis*: $\mathbb{O}$ with basis $e_0,\dots,e_7$, variable $x = \sum_kx_ke_k$, partial derivatives $\partial_k$, conjugation $\bar\cdot$, inner product $\langle x,y\rangle = \operatorname{Sc}(x\bar y)$, norm $\lvert x\rvert^2 = x\bar x$; the Cauchy–Riemann operator is $D = \sum_{k=0}^{7}e_k\partial_k$ and its conjugate $\bar D = \partial_0 - \sum_{k\geq1}e_k\partial_k$, with $D\bar D = \bar DD = \Delta_8$; the kernel is $E(x) = \bar x/(\omega_7\lvert x\rvert^8)$, $\omega_7 = \operatorname{vol}S^7 = \pi^4/3$; $\mathcal{M}_L$ and $\mathcal{M}_R$ are the left- and right-monogenic classes. Integrals are taken with respect to the Euclidean volume and surface measures $dV$ and $dS$, and a domain is a bounded connected open set with smooth boundary, oriented as the boundary of the domain, with outward unit normal $n$.
+**Conventions.** As in *Octonion Analysis*: $\mathbb{O}$ with basis $e_0,\dots,e_7$, variable $x = \sum_kx_ke_k$, partial derivatives $\partial_k$, conjugation $\bar\cdot$, inner product $\langle x,y\rangle = \operatorname{Sc}(x y^{\natural})$, norm $\lvert x\rvert^2 = x x^{\natural}$; the Cauchy–Riemann operator is $D = \sum_{k=0}^{7}e_k\partial_k$ and its conjugate $\bar D = \partial_0 - \sum_{k\geq1}e_k\partial_k$, with $D\bar D = \bar DD = \Delta_8$; the kernel is $E(x) = x^{\natural}/(\omega_7\lvert x\rvert^8)$, $\omega_7 = \operatorname{vol}S^7 = \pi^4/3$; $\mathcal{M}_L$ and $\mathcal{M}_R$ are the left- and right-monogenic classes. Integrals are taken with respect to the Euclidean volume and surface measures $dV$ and $dS$, and a domain is a bounded connected open set with smooth boundary, oriented as the boundary of the domain, with outward unit normal $n$.
 
 ## Integrals of Octonion-Valued Functions
 
@@ -41,7 +41,7 @@ $$
 \int_{\partial\Omega}f(y)n(y)\,dS(y) = \int_\Omega (fD)(y)\,dV(y) .
 $$
 
-*Proof.* The first identity is the classical divergence theorem applied to the eight real components of $f$: the normal component $n_kf$ has divergence $\partial_kf$, and assembling the eight identities with the basis elements and the signs of $\bar D$ gives the display. The order of the factors is the order of the multiplication by the constant basis elements in the assembly. The second identity is the same statement with the roles of the basis elements reversed, that is, it is the first identity applied to the conjugate function and conjugated back, using the conjugacy $\overline{Df} = \bar fD$ of *Octonion Analysis*.
+*Proof.* The first identity is the classical divergence theorem applied to the eight real components of $f$: the normal component $n_kf$ has divergence $\partial_kf$, and assembling the eight identities with the basis elements and the signs of $\bar D$ gives the display. The order of the factors is the order of the multiplication by the constant basis elements in the assembly. The second identity is the same statement with the roles of the basis elements reversed, that is, it is the first identity applied to the conjugate function and conjugated back, using the conjugacy $(Df)^{\natural} = f^{\natural}D$ of *Octonion Analysis*.
 
 The divergence theorem is the fundamental integration identity of the octonionic calculus, and it is the form in which the operator meets the integral. Its content is the same as in the real case: what is new is only the bookkeeping of the order of the factors, fixed by the position of $\bar D$ or of $D$ in the identity.
 
@@ -55,29 +55,29 @@ with the multiplication by the scalar $u$ on the left of $v$ in both terms.
 
 *Proof.* Apply the divergence theorem to the product $uv$ and use $\bar D(uv) = (\bar Du)v + u(\bar Dv)$. The product rule in this form holds because $u$ and its partial derivatives are real scalars, hence central and associative with everything.
 
-**Remark.** For octonion-valued $u$ the same computation acquires associator corrections: the difference between $\bar D(uv)$ and $(\bar Du)v + u(\bar Dv)$ is a sum of terms each of which is an associator with one factor $e_k$ or $\bar e_k$, exactly as in the product rule of *Octonion Analysis* for $D$ in place of $\bar D$, and it vanishes identically only in the associative case. The classical Green identity in its displayed form is therefore a statement about a scalar weight; for two octonion-valued functions it holds only up to those correction terms.
+**Remark.** For octonion-valued $u$ the same computation acquires associator corrections: the difference between $\bar D(uv)$ and $(\bar Du)v + u(\bar Dv)$ is a sum of terms each of which is an associator with one factor $e_k$ or $e_k^{\natural}$, exactly as in the product rule of *Octonion Analysis* for $D$ in place of $\bar D$, and it vanishes identically only in the associative case. The classical Green identity in its displayed form is therefore a statement about a scalar weight; for two octonion-valued functions it holds only up to those correction terms.
 
 ## The Cauchy Integral Theorem
 
 **Theorem (Cauchy integral theorem).** Let $f$ be left-monogenic on a domain $\Omega$ containing a closed hypersurface $\Sigma$ bounding a domain $\Omega_\Sigma$, and let $x\notin\bar\Omega_\Sigma$. Then
 
 $$
-\int_\Sigma \frac{\overline{y - x}}{\lvert y - x\rvert^8}\,n(y)\,f(y)\,dS(y) = 0 ,
+\int_\Sigma \frac{(y-x)^{\natural}}{\lvert y - x\rvert^8}\,n(y)\,f(y)\,dS(y) = 0 ,
 $$
 
-and more generally the integral $\int_\Sigma K_x(y)\,n(y)f(y)dS(y)$ depends only on the homology class of $\Sigma$ in $\Omega\setminus\{x\}$, where $K_x(y) = \overline{y-x}/\lvert y-x\rvert^8$ and $n$ is the outer normal of the region bounded.
+and more generally the integral $\int_\Sigma K_x(y)\,n(y)f(y)dS(y)$ depends only on the homology class of $\Sigma$ in $\Omega\setminus\{x\}$, where $K_x(y) = (y-x)^{\natural}/\lvert y-x\rvert^8$ and $n$ is the outer normal of the region bounded.
 
 *Proof.* The integrand is $E(y-x)n(y)f(y)$, and its divergence with respect to $y$ is computed by the product rule; for $y\neq x$ the kernel is monogenic on both sides, and the terms combine to a divergence, so Stokes' theorem makes the integral depend only on the homology class. The argument is the standard one of the Cauchy theory of the octonionic operator, with the sources cited; the cancellations happen before any product of two monogenic functions is formed.
 
 **Corollary.** The kernel is normalised by the sphere: for every $r>0$,
 
 $$
-\frac{1}{\omega_7}\int_{\lvert y\rvert = r}\frac{\bar y}{r^8}\,\frac{y}{r}\,dS(y) = e_0 ,
+\frac{1}{\omega_7}\int_{\lvert y\rvert = r}\frac{y^{\natural}}{r^8}\,\frac{y}{r}\,dS(y) = e_0 ,
 $$
 
 so that the integral of the kernel against the outer normal over a sphere is the identity, independently of the radius.
 
-*Proof.* Apply the Cauchy integral formula of *Octonion Analysis* to the constant function $f = e_0$ and $x = 0$; the left side is the displayed integral. Alternatively, compute it directly: $\bar yy = r^2$, so the integrand is $r^{-7}e_0dS$ and the integral is $\omega_7r^7\cdot r^{-7}e_0 = \omega_7e_0$.
+*Proof.* Apply the Cauchy integral formula of *Octonion Analysis* to the constant function $f = e_0$ and $x = 0$; the left side is the displayed integral. Alternatively, compute it directly: $y^{\natural}y = r^2$, so the integrand is $r^{-7}e_0dS$ and the integral is $\omega_7r^7\cdot r^{-7}e_0 = \omega_7e_0$.
 
 The corollary exhibits the sphere as the cycle that detects the singularity of the kernel, in exact analogy with the complex and quaternionic cases; it is the source of the Cauchy formula and of the "winding" of a general cycle relative to a point.
 
@@ -195,7 +195,7 @@ The single structural difference from the associative cases is therefore the fai
 |---|---|
 | $\mathbb{O}$, $e_0,\dots,e_7$ | Octonion algebra and basis, $e_k^2 = -e_0$ for $k\geq1$ |
 | $D = \sum_{k=0}^{7}e_k\partial_k$, $\bar D$ | Cauchy–Riemann operator and its conjugate |
-| $E(x) = \bar x/(\omega_7\lvert x\rvert^8)$ | Kernel, $DE = ED = \delta_0$ |
+| $E(x) = x^{\natural}/(\omega_7\lvert x\rvert^8)$ | Kernel, $DE = ED = \delta_0$ |
 | $\omega_7 = \pi^4/3$ | Volume of $S^7$ |
 | $n$, $dS$, $dV$ | Outward unit normal, surface and volume measures |
 | $\mathcal{M}_L$, $\mathcal{M}_R$ | Left- and right-monogenic functions |

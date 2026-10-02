@@ -1,0 +1,173 @@
+
+# __The Surgery Operator__
+
+## Introduction
+
+**Surgery** cuts an embedded product $S^k\times D^{n-k}$ out of an $n$-manifold and glues back the other product $D^{k+1}\times S^{n-k-1}$ along the common boundary $S^k\times S^{n-k-1}$. The operation changes the manifold, and this article reads it as an **operator** on the manifold: it defines the operator, computes its effect on the homology, exhibits the chain-level operation it induces, and states the obstruction that decides whether a manifold can be surgered into another.
+
+The operator is the second of the operator group, and it is the local operation behind the whole classification theory of manifolds: the trace of a surgery is a handle, the connected sum is a surgery in dimension zero, and the middle-dimensional case is where the intersection form and the obstruction live. The article keeps the operation elementary and topological — discs, products and attaching maps, with no smooth structure — so that it stays in this Part.
+
+**The article assumes** the homology and cohomology of a manifold, the intersection form and the signature of *Poincaré Duality*, the boundary operator and the chain complexes of *Simplicial and Singular Homology*, and the fundamental group and its cell attachments of *The Fundamental Group and Covering Spaces* and *CW Complexes and Cellular Approximation*, all of *Algebraic Topology*.
+
+**The boundaries of the article.** The general theory — the surgery exact sequence, the Wall $L$-groups, the structure set, the $h$- and $s$-cobordism theorems and the group of homotopy spheres — is *Cobordism and Surgery Theory*, and is cited here rather than developed. The attachment of a single handle and its Morse-theoretic reading are *The Handle Operator*, the local companion of this article. The equivariant version, in which the surgery respects an involution, is *Involutions on Manifolds and Equivariant Surgery*. The normal bundle of a non-framed embedding, and the Pontryagin–Thom theory of the normal invariants, use the fibre bundles of Part III and are named there; the article works with product neighbourhoods. Smooth structures and the analytic proofs of the obstruction theorems are Part III, and no physics is invoked.
+
+## The Surgery Operator
+
+**Definition.** Let $M$ be a closed connected oriented $n$-manifold. A **surgery datum** is an embedding
+$$
+\varphi : S^k \times D^{n-k} \longrightarrow M
+$$
+of a product of a $k$-sphere and an $(n-k)$-disc into the interior of $M$, with $0 \leq k \leq n-1$. Writing $N = \varphi(S^k\times D^{n-k})$ for its image, the **surgered manifold** is
+$$
+M' = \bigl(M \setminus \operatorname{int}N\bigr) \;\cup_{\ \varphi|_{S^k\times S^{n-k-1}}\ } \; D^{k+1}\times S^{n-k-1},
+$$
+the two pieces glued along the common boundary $S^k\times S^{n-k-1}$ by the restriction of $\varphi$. The **surgery operator** is the assignment $S_\varphi : [M]\mapsto[M']$ carrying a manifold to the manifold obtained by the surgery, and its **trace** is the $(n+1)$-manifold with boundary
+$$
+W = M\times[0,1] \;\cup_{\ S^k\times D^{n-k}\times\{1\}\ } \; D^{k+1}\times D^{n-k},
+$$
+in which a $(k+1)$-handle is attached to the top of $M\times[0,1]$.
+
+**Proposition (the surgered manifold is a manifold and the trace is a bordism).** The surgered space $M'$ is a closed connected oriented $n$-manifold, and $\partial W = M \sqcup (-M')$, so that $W$ is an oriented bordism from $M$ to $M'$.
+
+**Proof.** The two pieces glued are manifolds with boundary and the gluing is by a homeomorphism of the boundary components, so $M'$ is a manifold; the orientation is inherited because the gluing reverses the boundary orientation on one side. The boundary of the handle $D^{k+1}\times D^{n-k}$ is $S^k\times D^{n-k} \cup D^{k+1}\times S^{n-k-1}$, and the first piece is glued to the top of $M\times[0,1]$ while the second is one of the two components of the bottom of the handle; the remaining boundary of $W$ is the copy of $M$ at time zero together with the second product, which is exactly $M'$.
+
+**Remark (the trace has two handle descriptions).** The trace $W$ has two decompositions, and both are used below:
+$$
+W \;\simeq\; M \cup_{\alpha} e^{k+1}, \qquad W \;\simeq\; M' \cup_{\beta} e^{\,n-k},
+$$
+where $\alpha$ is the **attaching sphere** $\varphi(S^k\times\{0\})$ and $\beta$ the **belt sphere** $\varphi(\{0\}\times S^{n-k-1})$. The first describes the surgery as the addition of a $(k+1)$-cell to $M$, the second as the addition of an $(n-k)$-cell to $M'$.
+
+## The Effect on the Homology
+
+**Definition.** The class that the surgery acts on is
+$$
+\alpha = \varphi_*[S^k] \in H_k(M;\mathbb{Z}),
+$$
+the image of the fundamental class of the $k$-sphere under the embedding of the core.
+
+**Proposition (the pair $ (W,M) $ has a single nonzero group).** The relative homology of the trace vanishes except in one degree:
+$$
+H_i(W,M;\mathbb{Z}) \;\cong\; \begin{cases} \mathbb{Z}, & i = k+1,\\ 0, & i \neq k+1,\end{cases}
+$$
+and the generator is the core cell $D^{k+1}\times\{0\}$ of the handle, whose boundary is the attaching sphere $\alpha$. By Poincaré–Lefschetz duality the same holds for $(W,M')$ with $n-k$ in place of $k+1$.
+
+**Proof.** The pair $(W,M)$ is homotopy equivalent to the pair $(M\cup_\alpha e^{k+1}, M)$ of *CW Complexes and Cellular Approximation*, whose relative homology is that of a single cell by the cellular boundary formula. The second statement is the same computation applied to the other handle description.
+
+**Theorem (the effect of a surgery on the homology).** Let $2k \leq n-3$, so that the surgery is **below the middle dimension**, and suppose the attaching class $\alpha$ is nonzero. Then:
+**(a)** in degree $k$ the surgery kills the class,
+$$
+H_k(M';\mathbb{Z}) \cong H_k(M;\mathbb{Z})\big/\langle\alpha\rangle ;
+$$
+**(b)** in the intermediate degrees the homology is unchanged,
+$$
+H_i(M';\mathbb{Z}) \cong H_i(M;\mathbb{Z}), \qquad k+2 \leq i \leq n-k-2 \quad\text{and}\quad i = k+1 ;
+$$
+**(c)** in the complementary degree $n-k-1$ the belt sphere $\beta$ spans the kernel of the natural map, so that $H_{n-k-1}(M';\mathbb{Z})/\langle\beta\rangle \cong H_{n-k-1}(M;\mathbb{Z})$, which is the Poincaré dual of (a).
+
+**Proof.** From the description $W\simeq M\cup_\alpha e^{k+1}$, the long exact sequence of the pair $(W,M)$ reads
+$$
+0 \longrightarrow H_{k+1}(M) \longrightarrow H_{k+1}(W) \longrightarrow \mathbb{Z} \xrightarrow{\ \alpha\ } H_k(M) \longrightarrow H_k(W) \longrightarrow 0
+$$
+and gives $H_i(W)\cong H_i(M)$ for $i \leq k-1$ and for $i \geq k+2$, together with $H_k(W)\cong H_k(M)/\langle\alpha\rangle$ and $H_{k+1}(W)$ an extension of the kernel of $\alpha$ by $H_{k+1}(M)$, which is $H_{k+1}(M)$ itself because $\alpha\neq0$. From the description $W\simeq M'\cup_\beta e^{\,n-k}$ the same sequence with the roles exchanged gives $H_i(W)\cong H_i(M')$ for $i \leq n-k-2$ and for $i \geq n-k+1$, and $H_{n-k-1}(W)\cong H_{n-k-1}(M')/\langle\beta\rangle$. Comparing the two descriptions in the overlap $k+1 \leq i \leq n-k-2$, which is nonempty because $2k \leq n-3$, gives (b); degree $k$ lies in the second range because $2k \leq n-3$ implies $k \leq n-k-2$, so $H_k(M')\cong H_k(W)\cong H_k(M)/\langle\alpha\rangle$, which is (a); and the comparison in degree $n-k-1$ gives (c).
+
+**Remark (the vanishing attaching class).** If $\alpha = 0$ the group $H_k$ is unchanged but the surgery creates a free $\mathbb{Z}$ in $H_{k+1}$, and dually in $H_{n-k-1}$: the exact sequence above has $\alpha = 0$, so $H_{k+1}(W)\cong H_{k+1}(M)\oplus\mathbb{Z}$. The simplest instance is the connected sum, for which $k=0$ and the attaching class of two points with opposite signs is zero.
+
+**Corollary (killing a class in homotopy, below the middle).** If $2k \leq n-2$ and $M$ is simply connected, the surgery may be chosen so that the class $\alpha$ is the image of a class in $\pi_k(M)$ and $\pi_k(M') = \pi_k(M)/\langle\alpha\rangle$, while $\pi_i(M')\cong\pi_i(M)$ for $i < k$. In particular a simply connected manifold of dimension $n \geq 5$ is surgered below the middle dimension into one whose homotopy groups vanish up to the middle.
+
+**Proof sketch.** A class in $\pi_k(M)$ is represented by a sphere whose normal product neighbourhood exists by the tubular-neighbourhood theorem; performing the surgery kills the class, and the trace $M\cup e^{k+1}$ shows that no lower homotopy group is affected because the attaching of a $(k+1)$-cell above the range of $\pi_i$ for $i<k$ cannot change it. The iteration over a generating set of $\pi_k$ completes the argument.
+
+## The Algebraic Surgery on the Chain Complex
+
+The effect on the homology is the shadow of an operation on the chain complex, and that operation is the one the classification theory uses.
+
+**Definition.** Let $C_*$ be the cellular chain complex of $M$, and let $c_\alpha \in C_k$ be a chain representing the attaching class. The **elementary expansion** of $C_*$ along $c_\alpha$ is the complex
+$$
+C'_* = C_* \oplus \mathbb{Z}\langle e_{k+1}\rangle \oplus \mathbb{Z}\langle e_k\rangle, \qquad \partial e_{k+1} = e_k + c_\alpha, \qquad \partial e_k = 0 .
+$$
+Its inverse operation, an **elementary collapse**, deletes a pair of generators $e_k, e_{k+1}$ with $\partial e_{k+1} = e_k + c_\alpha$ for a chain $c_\alpha \in C_{k-1}$.
+
+**Theorem (the surgery is an elementary expansion).** The chain complex of $M'$ is chain-homotopy equivalent to the elementary expansion of the chain complex of $M$ along the attaching chain; equivalently, the pair $(W,M)$ provides the homotopy, and the surgery operator on the chain level is the elementary expansion. Under this equivalence the homology computation of the preceding section is the algebra of the expansion.
+
+**Proof sketch.** The cellular chain complex of $W$ relative to $M$ is $\mathbb{Z}\langle e_{k+1}\rangle$ with $\partial e_{k+1} = c_\alpha$; the inclusion of $M$ and of $M'$ into $W$ are homotopy equivalences in the complementary dimensions by the two handle descriptions, and the chain-level difference between $C_*(M')$ and $C_*(M)$ is exactly the pair of extra generators. The statement is the algebraic form of the handle addition, and it is the reason the surgery obstruction is defined on the chain complex: two manifolds are related by surgery exactly when their (intersection-form-complexes) are related by elementary expansions and collapses.
+
+**Remark (the middle-dimension case).** When the surgery is *in* the middle dimension, $n = 2m$ and $k = m-1$ or $k = m$, the degrees $k$ and $n-k$ coincide or differ by one, and the effect on $H_m$ is no longer an isomorphism plus a quotient: it is an **elementary operation on the intersection form**, adding or subtracting a hyperbolic plane. On $H_m(M;\mathbb{Z})$ with the intersection form $Q$ of *Poincaré Duality*, a middle-dimensional surgery replaces $Q$ by $Q\oplus\langle 1,-1\rangle$ (a hyperbolic plane) up to the identification, and the elementary collapse removes such a summand. This is the precise sense in which the surgery operator acts on the form, and it is the reason the obstruction to surgery in the middle dimension is an invariant of a form and not of a homology group.
+
+## The Operator on the Bordism Class
+
+Surgery is compatible with bordism, and it descends to the bordism groups; the trace exhibits it as a relation between bordant manifolds.
+
+**Definition.** The **oriented bordism group** $\Omega_n^{SO}$ of a point is the set of closed oriented $n$-manifolds modulo the equivalence of being the two ends of an oriented $(n+1)$-manifold with boundary. The class of a manifold is written $[M]$.
+
+**Proposition (surgery does not change the bordism class).** If $M'$ is obtained from $M$ by a surgery, then $[M'] = [M]$ in $\Omega_n^{SO}$; the trace $W$ is the bordism that exhibits the relation. Conversely, if $\Omega_{n+1}$ is built from handles, then any bordism can be decomposed into surgeries.
+
+**Proof.** Immediate from $\partial W = M\sqcup(-M')$; the converse is the handle decomposition of a bordism, which is the subject of *The Handle Operator*.
+
+**Remark (why the operator is the right unit of the classification).** Because surgery preserves the bordism class and changes the manifold in a controlled way, the classification of manifolds up to bordism and up to homeomorphism is organised by the operator: the bordism class carries the normal data and the surgery obstruction carries the difference between two manifolds with the same normal data. The passage from the geometric operation to the algebraic obstruction is the content of the surgery exact sequence below, and the operator on the bordism group is the homotopy-theoretic side of that sequence.
+
+## The Surgery Obstruction
+
+The operator can be reversed only when an obstruction vanishes, and the obstruction is the subject of the surgery exact sequence.
+
+**Definition.** A **normal map** is a pair $(f,b)$ of a degree-one map $f : M \to X$ of closed $n$-manifolds and a map $b$ of the stable normal data. The **surgery obstruction** of a normal map is an element
+$$
+\sigma(f,b) \in L_n\bigl(\mathbb{Z}[\pi_1(X)]\bigr)
+$$
+of the Wall surgery obstruction group of the group ring of the fundamental group with its involution; it is the obstruction to modifying $(f,b)$ by surgeries, below and in the middle dimension, into a homotopy equivalence.
+
+**Theorem (Wall; the surgery exact sequence).** Let $X$ be a closed $n$-manifold with $n \geq 5$ and fundamental group $\pi$. There is a long exact sequence of pointed sets
+$$
+\cdots \longrightarrow L_{n+1}(\mathbb{Z}[\pi]) \longrightarrow \mathcal{S}(X) \longrightarrow [X, G/O] \longrightarrow L_n(\mathbb{Z}[\pi]) ,
+$$
+in which $\mathcal{S}(X)$ is the structure set of the homotopy equivalences to $X$ modulo $h$-cobordism, the third term is the set of normal invariants and the maps are the surgery obstruction and the action of the surgery group. Consequently a normal map is normally bordant to a homotopy equivalence if and only if its obstruction in $L_n(\mathbb{Z}[\pi])$ vanishes, and the structure set measures the ambiguity.
+
+**Proposition (the two cases of the obstruction).** The surgery obstruction group is
+$$
+L_{4k}(\mathbb{Z}[\pi]) = \mathbb{Z} \ \text{(for } \pi = 1), \qquad L_{4k+2}(\mathbb{Z}[\pi]) = \mathbb{Z}/2 \ \text{(for } \pi = 1),
+$$
+and the obstruction is the **signature** of the middle-dimensional intersection form in the first case and the **Kervaire invariant** (the Arf invariant of the form over $\mathbb{F}_2$) in the second.
+
+**Proof sketch.** The obstruction is an element of the Witt group of $\varepsilon$-quadratic forms over $\mathbb{Z}[\pi]$, with $\varepsilon = (-1)^n$; over $\mathbb{Z}$ the Witt group of symmetric forms is generated by the signature and that of the quadratic forms is $\mathbb{Z}/2$, detected by the Arf invariant. The identification of the middle-dimensional intersection form with such a form is the content of the elementary-operation remark above.
+
+**Remark (the dimension hypothesis).** The surgery exact sequence and the conclusion that the vanishing of the obstruction produces a homotopy equivalence are theorems for $n \geq 5$: they rest on the $h$-cobordism theorem, whose proof needs the Whitney trick in the middle dimension. In dimensions three and four the operation is still defined and the obstruction group is still computed, but the conclusion fails, and the low-dimensional phenomena — geometrisation in dimension three and the exotic structures in dimension four — are those of *Low-Dimensional Topology*. The full discussion is *Cobordism and Surgery Theory*.
+
+## Examples
+
+**Example (the connected sum).** Let $k = 0$: the surgery datum is an embedding $S^0\times D^n \hookrightarrow M$, the disjoint union of two open discs, and the surgered manifold is the connected sum $M\#(S^1\times S^{n-1})$: the two discs are removed and a cylinder is glued in. The attaching sphere is a pair of points whose sum is zero in $H_0$, so this is the vanishing case $\alpha = 0$ of the remark: $H_0$ is unchanged, and the operation creates a free $\mathbb{Z}$ in degrees $1$ and $n-1$, the homology of the added $S^1\times S^{n-1}$ factor. For $M = S^n$ the result is $S^1\times S^{n-1}$, with the two new classes; more generally the connected sum $M\#N$ is a composition of surgeries, and the signature is additive, $\sigma(M\#N) = \sigma(M)+\sigma(N)$, by the middle-dimensional computation.
+
+**Example (the sphere and the unknot).** Let $M = S^n$ and let the surgery be on the standard product $S^k\times D^{n-k}$ inside $S^n = \partial(D^{k+1}\times D^{n-k})$. The surgered manifold is $S^{k+1}\times S^{n-k-1}$, and the attaching sphere is null-homotopic for $k<n$, so this is the vanishing case $\alpha = 0$: the homology change is the creation of the two classes $[S^{k+1}]$ and $[S^{n-k-1}]$, as the remark predicts.
+
+**Example (the trace of a surgered sphere).** With $M = S^1\times S^4$, $n = 5$ and $k = 1$, the surgery on the circle $S^1\times\{0\}$ has complement the disc $S^1\times D^4$ and produces $S^5$; the attaching class $\alpha$ generates $H_1(S^1\times S^4)=\mathbb{Z}$ and is killed, the intermediate degree $2$ and the complementary degree $3$ remain zero, and the change is the disappearance of the class of $S^4$: the homology is that of the sphere. The example is the simplest in which the surgery is not a connected sum and the attaching class is nonzero.
+
+**Example (the middle-dimensional obstruction).** Let $n=4$ and $M$ a closed simply connected four-manifold; the intersection form $Q$ on $H_2(M)$ is a unimodular symmetric form. A surgery in the middle dimension is an elementary operation on $Q$, and the obstruction to making $M$ a sphere-like manifold is the signature and the parity of $Q$. The classification of the forms and its manifold-theoretic consequences are *Low-Dimensional Topology* and *Cobordism and Surgery Theory*; the operation itself is the middle-dimensional case of the operator defined here.
+
+## Summary
+
+A surgery removes an embedded product $S^k\times D^{n-k}$ from an $n$-manifold and glues back $D^{k+1}\times S^{n-k-1}$, and the surgery operator $S_\varphi$ carries a manifold to the surgered manifold $M'$. Its trace $W$ is the bordism traced by the operation and admits the two descriptions $W\simeq M\cup_\alpha e^{k+1}\simeq M'\cup_\beta e^{n-k}$, with $\alpha$ the attaching sphere and $\beta$ the belt sphere. The relative homology of the trace vanishes except in degree $k+1$, where it is $\mathbb{Z}$, and the long exact sequences of the two descriptions give the effect on the homology: below the middle dimension ($2k\leq n-3$) the surgery kills the class $\alpha$, so $H_k(M')\cong H_k(M)/\langle\alpha\rangle$, it leaves the intermediate degrees $k+1 \leq i \leq n-k-2$ unchanged, and it changes the complementary degree by the dual statement. On the chain complex the operation is an elementary expansion (equivalently a collapse), and in the middle dimension it is an elementary operation on the intersection form, adding or removing a hyperbolic plane. The obstruction to reversing the operation is the Wall surgery obstruction in $L_n(\mathbb{Z}[\pi_1])$, which is the signature in dimension $4k$ and the Kervaire invariant in dimension $4k+2$, and the surgery exact sequence relates it to the structure set and the normal invariants; the conclusions hold in dimension at least five, and the low-dimensional exceptions are those of the geometric topology of this Part.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\varphi : S^k\times D^{n-k}\hookrightarrow M$ | the surgery datum; a framed embedding |
+| $M' = (M\setminus\operatorname{int}N)\cup(D^{k+1}\times S^{n-k-1})$ | the surgered manifold |
+| $S_\varphi$ | the surgery operator, $[M]\mapsto[M']$ |
+| $W = M\times I\cup_{\text{handle}} D^{k+1}\times D^{n-k}$ | the trace of the surgery, an oriented bordism $M\rightsquigarrow M'$ |
+| $\alpha = \varphi_*[S^k]$, $\beta$ | the attaching sphere class in $H_k(M)$; the belt sphere class in $H_{n-k-1}(M')$ |
+| $W\simeq M\cup_\alpha e^{k+1}\simeq M'\cup_\beta e^{n-k}$ | the two handle descriptions of the trace |
+| $H_i(W,M)\cong\mathbb{Z}$ at $i=k+1$, $0$ else | the relative homology of the trace |
+| $H_k(M')\cong H_k(M)/\langle\alpha\rangle$ | the class killed by a below-the-middle surgery |
+| elementary expansion / collapse | the chain-level surgery operator, $C'_*=C_*\oplus\mathbb{Z}e_{k+1}\oplus\mathbb{Z}e_k$ |
+| $Q\mapsto Q\oplus\langle1,-1\rangle$ | the middle-dimensional surgery operation on the intersection form |
+| $L_n(\mathbb{Z}[\pi])$, $L_{4k}=\mathbb{Z}$, $L_{4k+2}=\mathbb{Z}/2$ | the Wall surgery obstruction groups for $\pi$ trivial |
+| $\sigma(f,b)\in L_n(\mathbb{Z}[\pi])$ | the surgery obstruction of a normal map; signature or Kervaire invariant |
+| $\mathcal{S}(X)$, $[X,G/O]$ | the structure set and the normal invariants of the surgery exact sequence |
+
+## Further Reading
+
+- C. T. C. Wall, *Surgery on Compact Manifolds* (Academic Press, 1970; American Mathematical Society, 1999), for the surgery obstruction, the elementary operations on forms and the exact sequence.
+- John Milnor, *Lectures on the $h$-Cobordism Theorem* (Princeton University Press, 1965), for the handle addition, the trace and the Whitney trick in the middle dimension.
+- Andrew Ranicki, *Algebraic and Geometric Surgery* (Oxford University Press, 2002), for the algebraic surgery, the elementary expansions and collapses, and the chain-level formulation.
+- Sergey Novikov, "Homotopically Equivalent Smooth Manifolds", *Izvestiya Akademii Nauk SSSR* 29 (1965), 365–474, for the normal invariants and the surgery exact sequence.
+- William Browder, *Surgery on Simply-Connected Manifolds* (Springer, 1972), for the single-obstruction theory in the simply connected case.
+- Michel Kervaire and John Milnor, "Groups of Homotopy Spheres I", *Annals of Mathematics* 77 (1963), 504–537, for the Kervaire invariant, the $bP$ subgroups and the obstruction computed on spheres.
+- Robion Kirby and Laurence Siebenmann, *Foundational Essays on Topological Manifolds, Smoothings and Triangulations* (Princeton University Press, 1977), for the topological and piecewise-linear surgery and the obstruction in the non-smooth categories.

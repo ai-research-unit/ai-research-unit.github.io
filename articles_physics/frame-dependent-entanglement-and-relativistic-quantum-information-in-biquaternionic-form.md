@@ -70,7 +70,7 @@ Consider two massive particles with sharp four-velocities $\tilde{U}_1,\tilde{U}
 $$
 |\Psi\rangle = |\tilde{U}_1\rangle\otimes|\tilde{U}_2\rangle\otimes|\chi\rangle , \qquad |\chi\rangle\in S\otimes S ,
 $$
-and a Lorentz transformation $\tilde{\Lambda}$ maps the momentum labels to $\tilde{U}_j' = \tilde{\Lambda}\tilde{U}_j\tilde{\Lambda}^\dagger$ and applies to the spin the Wigner rotations of the two particles,
+and a Lorentz transformation $\tilde{\Lambda}$ maps the momentum labels to $\tilde{U}_j' = \tilde{\Lambda}\tilde{U}_j\tilde{\Lambda}^{*}$ and applies to the spin the Wigner rotations of the two particles,
 $$
 |\Psi\rangle \ \longmapsto\ |\tilde{U}_1'\rangle\otimes|\tilde{U}_2'\rangle\otimes\bigl(\tilde{W}_1\otimes\tilde{W}_2\bigr)|\chi\rangle ,
 \qquad
@@ -133,7 +133,7 @@ $$
 $$
 rotations about a common axis $\hat{\mathbf{n}}$ by opposite angles, and the channel is
 $$
-\tilde{\rho}_A \ \longmapsto\ \tfrac12\bigl(\tilde{W}_{A,+}\tilde{\rho}_A\tilde{W}_{A,+}^\dagger + \tilde{W}_{A,-}\tilde{\rho}_A\tilde{W}_{A,-}^\dagger\bigr).
+\tilde{\rho}_A \ \longmapsto\ \tfrac12\bigl(\tilde{W}_{A,+}\tilde{\rho}_A\tilde{W}_{A,+}^{*} + \tilde{W}_{A,-}\tilde{\rho}_A\tilde{W}_{A,-}^{*}\bigr).
 $$
 Writing the Bloch vector of $\tilde{\rho}_A$ as $\mathbf{r} = r_\parallel\hat{\mathbf{n}} + \mathbf{r}_\perp$, the two rotated copies differ only in the sign of the rotation and their average is
 $$
@@ -174,7 +174,7 @@ The comparison of the two tables isolates the origin of the effect: what matters
 
 The channel of the previous subsection is **unital**: each branch rotates the identity into the identity,
 $$
-\sum_i q_i\,\tilde{W}_i\,e_0\,\tilde{W}_i^\dagger = \sum_i q_i\,e_0 = e_0 ,
+\sum_i q_i\,\tilde{W}_i\,e_0\,\tilde{W}_i^{*} = \sum_i q_i\,e_0 = e_0 ,
 $$
 because every Wigner rotor is unitary. The maximally mixed spin state is therefore fixed, and the fully mixed state is a fixed point of every frame transformation. A consequence is worth recording: for the state $|\chi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$ the marginal of each particle is maximally mixed, and it remains maximally mixed under the boost, so the entire frame dependence of the concurrence is invisible in the single-particle marginals. The effect is a change in the *correlations* of the pair, not in the statistics of either particle alone. This is also why the boost cannot be used to signal: the marginal of the un-boosted particle is untouched, by the cyclicity of the partial trace, and the change in the joint state is only visible to an observer who has access to both particles and knows the momentum distribution.
 
@@ -194,7 +194,7 @@ $$
 \mathcal{C}\bigl((\tilde{\Lambda}\otimes\tilde{\Lambda})\psi\bigr)
 = \bigl|\det\tilde{\Lambda}\bigr|^2\,\mathcal{C}(\psi) = \mathcal{C}(\psi).
 $$
-The unnormalized concurrence is therefore exactly $SL(2,\mathbb{C})\otimes SL(2,\mathbb{C})$-invariant. What is not invariant is the **normalized** concurrence $\mathcal{C}(\psi)/\langle\psi|\psi\rangle$, because the spinor norm is not preserved by a boost: $\langle\tilde{\Lambda}\psi|\tilde{\Lambda}\psi\rangle = \langle\psi|\tilde{\Lambda}^\dagger\tilde{\Lambda}|\psi\rangle \neq\langle\psi|\psi\rangle$ for a single boosted factor. This is the sharpest way to state the origin of the frame dependence in the framework. The invariant is a bilinear pairing of spinors, and a boost preserves it as a bilinear form; but the physically normalized state divides by a norm that the boost changes, and the ratio is frame-dependent. For a sharp momentum the normalization is common to both branches and cancels; for a momentum superposition the branch norms differ and the ratio does not.
+The unnormalized concurrence is therefore exactly $SL(2,\mathbb{C})\otimes SL(2,\mathbb{C})$-invariant. What is not invariant is the **normalized** concurrence $\mathcal{C}(\psi)/\langle\psi|\psi\rangle$, because the spinor norm is not preserved by a boost: $\langle\tilde{\Lambda}\psi|\tilde{\Lambda}\psi\rangle = \langle\psi|\tilde{\Lambda}^{*}\tilde{\Lambda}|\psi\rangle \neq\langle\psi|\psi\rangle$ for a single boosted factor. This is the sharpest way to state the origin of the frame dependence in the framework. The invariant is a bilinear pairing of spinors, and a boost preserves it as a bilinear form; but the physically normalized state divides by a norm that the boost changes, and the ratio is frame-dependent. For a sharp momentum the normalization is common to both branches and cancels; for a momentum superposition the branch norms differ and the ratio does not.
 
 ## The Wigner Angle and Its Momentum Dependence
 

@@ -5,14 +5,14 @@
 The electron is the object on which the relativistic quantum theory of this series is calibrated. It is the particle of Dirac's 1928 equation, the spin-$\tfrac{1}{2}$ system whose magnetic moment is measured to twelve significant figures, and the fermion whose two chiral halves the Standard Model treats differently. In the biquaternion framework of these articles the electron is the standard realization of the **biquaternion Dirac field** $\tilde{\Psi}$: an element of $\mathbb{B}$, equivalently a field in the spinor module on which $\mathbb{B}\cong M_2(\mathbb{C})$ acts, satisfying the linear, chirality-off-diagonal pair
 
 $$
-\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R,
+\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
 $$
 
-with $m = m_e$ the electron mass and massless limit $\tilde{\nabla}\tilde{\Psi} = 0$. Each chiral component satisfies the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{\Psi} = 0$. The anti-Hermitian conjugation $\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger$ is the algebra's real structure, not the mass term.
+with $m = m_e$ the electron mass and massless limit $\tilde{\nabla}\tilde{\Psi} = 0$. Each chiral component satisfies the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{\Psi} = 0$. The anti-Hermitian conjugation $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ is the algebra's real structure, not the mass term.
 
 A framework that reformulates known physics can be read in two very different ways. Read generously, every correct statement about the electron becomes a statement the framework "contains"; read carefully, most of those statements are properties of the Dirac equation that the framework merely transcribes, and the specific numbers attached to the electron must be inserted by hand. This article takes the second reading and asks a single question: **which properties of the electron are consequences of the biquaternion structure, which are consequences of the Dirac equation the framework contains, which are parameters inserted from outside, and which lie outside the framework altogether?**
 
-The answer, stated plainly at the outset, is the following. The framework *forces* the electron's spin-$\tfrac{1}{2}$ representation content and its tree-level gyromagnetic factor $g=2$; it *contains* the chirality decomposition, the mass term as the linear coupler of the two chiralities (the algebra's two central ideals), and the Zitterbewegung with its scale; it *inserts* the mass $m_e$, the charge $e$, and the unit $\hbar$; and it does *not* contain the anomalous magnetic moment, the weak chiral coupling, or a derivation of the mass or charge values. The electron is not an element of either subspace $\mathbb{M}_\pm$: its spin state, its current, and its Coulomb field are distributed across both, the operation that exchanges the two subspaces is the central $i$ (the rest-energy phase), and the algebra's real structure $\flat = -\dagger$ acts on them with opposite signs, while the mass term couples the two chiralities.
+The answer, stated plainly at the outset, is the following. The framework *forces* the electron's spin-$\tfrac{1}{2}$ representation content and its tree-level gyromagnetic factor $g=2$; it *contains* the chirality decomposition, the mass term as the linear coupler of the two chiralities (the algebra's two central ideals), and the Zitterbewegung with its scale; it *inserts* the mass $m_e$, the charge $e$, and the unit $\hbar$; and it does *not* contain the anomalous magnetic moment, the weak chiral coupling, or a derivation of the mass or charge values. The electron is not an element of either subspace $\mathbb{M}_\pm$: its spin state, its current, and its Coulomb field are distributed across both, the operation that exchanges the two subspaces is the central $i$ (the rest-energy phase), and the algebra's real structure $\flat = -{}^{*}$ acts on them with opposite signs, while the mass term couples the two chiralities.
 
 A second, less comfortable point belongs in the introduction. Almost every statement the framework makes about "the electron" is a statement about a general structureless spin-$\tfrac{1}{2}$ field. The algebra does not single the electron out. Its mass, its charge, and the identity of its antiparticle are the inputs that make the general field into *this* field.
 
@@ -24,11 +24,11 @@ $$
 \tilde{\nabla} = e_0\,\partial_{ict} + e_1\,\partial_x + e_2\,\partial_y + e_3\,\partial_z.
 $$
 
-Hermitian conjugation $\tilde{Q}^\dagger = \bar{\tilde{Q}}^{*}$ defines the two sectors by their fixed points,
+Hermitian conjugation \tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} defines the two sectors by their fixed points,
 
 $$
-\mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^\dagger = -\tilde{Q}\}, \qquad
-\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^\dagger = \tilde{Q}\}, \qquad
+\mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\}, \qquad
+\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\}, \qquad
 \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-,
 $$
 
@@ -39,7 +39,7 @@ The electron field carries the electron's data in the following objects.
 | Electron datum | Biquaternion object |
 |---|---|
 | The field | $\tilde{\Psi}\in\mathbb{B}$, equivalently a four-component Dirac spinor $\psi$ |
-| Free equation | $\tilde{\nabla}\tilde{\Psi}_R = m_e\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m_e\tilde{\Psi}_R$ |
+| Free equation | $\tilde{\nabla}\tilde{\Psi}_R = m_e\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m_e\tilde{\Psi}_R$ |
 | Mass | the coefficient $m_e$ of the linear, chirality-off-diagonal mass pair |
 | Charge | the coupling $q=-e$ inserted in the gradient (see below) |
 | Spin state | an idempotent $\tilde\Pi_+(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 + i\hat{\mathbf{n}})\in\mathbb{M}_+$ |
@@ -54,17 +54,17 @@ The placement of these objects already contains the article's main structural ob
 The electron mass appears in the free equation as the coefficient of the linear, chirality-off-diagonal mass pair
 
 $$
-\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R .
+\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R .
 $$
 
 Three statements are worth separating: how the mass couples the two chiralities, how the algebra's real structure acts on the two sectors, and what phase the mass puts between the sectors.
 
 **It mixes the chiralities.** The spinor module of the electron is the direct sum of the left-handed and right-handed Weyl halves — the two central ideals of $\mathbb{B}$ — and the mass term couples them: without it, the electron would be two independent massless Weyl fields. The electron's mass is therefore represented, in the framework, as a chirality-mixing term, and this is the structural origin, in the biquaternion reading, of the fact that a lone Weyl field cannot carry a mass. The coupling is necessarily off-diagonal: left multiplication preserves each central ideal, so no combination of the form $a\tilde{\Psi}_L + b\tilde{\Psi}_R$ relates them, and the mass is the off-diagonal pair above.
 
-**The real structure acts on the two sectors with opposite signs.** For $\tilde{\Psi} = \tilde{\Psi}_+ + \tilde{\Psi}_-$ with $\tilde{\Psi}_\pm\in\mathbb{M}_\pm$ one has $\tilde{\Psi}_\pm^\dagger = \pm\tilde{\Psi}_\pm$, hence
+**The real structure acts on the two sectors with opposite signs.** For $\tilde{\Psi} = \tilde{\Psi}_+ + \tilde{\Psi}_-$ with $\tilde{\Psi}_\pm\in\mathbb{M}_\pm$ one has $\tilde{\Psi}_\pm^{*} = \pm\tilde{\Psi}_\pm$, hence
 
 $$
-\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger = -\tilde{\Psi}_+ + \tilde{\Psi}_-,
+\tilde{\Psi}^\flat = -\tilde{\Psi}^{*} = -\tilde{\Psi}_+ + \tilde{\Psi}_-,
 $$
 
 so $\flat$ acts as $-1$ on the $\mathbb{M}_+$ part and $+1$ on the $\mathbb{M}_-$ part. It **preserves** each sector and marks it with a sign: it is diagonal on the sector decomposition, not an exchange of the two sectors. This is a property of the algebra's real structure, not of the mass term: a coupling built on $\flat$ pairs the field with its conjugate — a Majorana-type mass $m\tilde{\Psi}^\flat$, whose central-phase plane waves sit on the spacelike locus — and it is not the electron's mass. The operation that exchanges the two sectors is multiplication by the central $i$, $i\mathbb{M}_\pm = \mathbb{M}_\mp$. Verified from the fixed-point definitions.
@@ -129,7 +129,7 @@ in the notation of the companion solutions article. Its plane-wave solutions com
 
 $$
 \tilde{K} = i\,\frac{\omega}{c}\,e_0 + \mathbf{k}, \qquad
-N(\tilde{K}) = \tilde{K}\bar{\tilde{K}} = -\frac{\omega^2}{c^2} + \mathbf{k}^2 = -\frac{m_e^2c^2}{\hbar^2},
+N(\tilde{K}) = \tilde{K}\tilde{K}^{\natural} = -\frac{\omega^2}{c^2} + \mathbf{k}^2 = -\frac{m_e^2c^2}{\hbar^2},
 $$
 
 which is $E^2 = \mathbf{p}^2c^2 + m_e^2c^4$ under $E = \hbar\omega$, $\mathbf{p} = \hbar\mathbf{k}$. The parent Dirac article writes the wave biquaternion with a *real* time component in one paragraph and follows it with an "or equivalently" chain whose clauses are mutually inconsistent; that cluster is recorded as an open item in the parent's companion and is not reproduced here. The form above is the one used by the companion solutions article and the one consistent with the mass shell.
@@ -222,7 +222,7 @@ Two gaps are structural and cannot be closed by better notation: the mass value 
 
 ## Summary
 
-The electron is the biquaternion Dirac field, satisfying the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R = m_e\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m_e\tilde{\Psi}_R$, and its spinor-module transcription, the standard Dirac equation. Its mass appears as the coefficient of that off-diagonal chirality coupling; the algebra's real structure $\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger$ acts on the two sectors with opposite signs, and the rest-energy phase $e^{-im_ec^2t/\hbar} = \cos(m_ec^2t/\hbar)e_0 - \sin(m_ec^2t/\hbar)(ie_0)$ rotates the two sectors into one another at $m_ec^2/\hbar$. Its charge is inserted at the gradient by minimal coupling, which for the linear mass pair is exactly gauge covariant; the conserved current is then derived and lies in $\mathbb{M}_-$, while the static Coulomb field of a point charge is a purely imaginary vector and lies in $\mathbb{M}_+$.
+The electron is the biquaternion Dirac field, satisfying the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R = m_e\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m_e\tilde{\Psi}_R$, and its spinor-module transcription, the standard Dirac equation. Its mass appears as the coefficient of that off-diagonal chirality coupling; the algebra's real structure $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ acts on the two sectors with opposite signs, and the rest-energy phase $e^{-im_ec^2t/\hbar} = \cos(m_ec^2t/\hbar)e_0 - \sin(m_ec^2t/\hbar)(ie_0)$ rotates the two sectors into one another at $m_ec^2/\hbar$. Its charge is inserted at the gradient by minimal coupling, which for the linear mass pair is exactly gauge covariant; the conserved current is then derived and lies in $\mathbb{M}_-$, while the static Coulomb field of a point charge is a purely imaginary vector and lies in $\mathbb{M}_+$.
 
 The framework derives the electron's spin-$\tfrac{1}{2}$ representation content from the unique irreducible module of $\mathbb{B}\cong M_2(\mathbb{C})$, and the spin state and observable structure from the idempotents of $\mathbb{M}_+$ with the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$; the magnitude $\hbar/2$ is a normalisation. It derives the tree-level gyromagnetic factor $g=2$ from the $1/2m_e$ coefficient produced by eliminating the small component, giving $\boldsymbol{\mu}_e = -(e/m_e)\mathbf{S}$ and one Bohr magneton $\mu_B = e\hbar/2m_e = 9.274010\times10^{-24}$ J T$^{-1}$; the anomalous part $a\approx\alpha/2\pi$ is outside the equation. It reproduces the Zitterbewegung at $\omega_Z = 2m_ec^2/\hbar = 1.55269\times10^{21}$ rad s$^{-1}$ and amplitude $\hbar/(2m_ec) = 193.1$ fm, and the companion article's test shows the trembling is the second harmonic of the sector rotation, not a signature of either sector. It contains the two-chirality structure and the mass term as the chirality-mixing coupling, but not the weak $V-A$ coupling of the left-handed electron.
 
@@ -238,7 +238,7 @@ The electron is not an element of either sector: state-like and field-strength-l
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace |
 | $\tilde{\nabla} = e_0\partial_{ict} + e_k\partial_k$ | Biquaternionic gradient (Dirac operator) |
-| $\tilde{\Psi}$, $\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
+| $\tilde{\Psi}$, $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\tilde\Pi_+(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 + i\hat{\mathbf{n}})$ | Spin-state idempotent in $\mathbb{M}_+$ |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
 | $\tilde{J} = ic\,j^0 e_0 + \mathbf{j}$ | Conserved four-current, in $\mathbb{M}_-$ |

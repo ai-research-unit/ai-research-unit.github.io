@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A symmetry that reverses time is not represented by a unitary operator on the state space; it is represented by an **antiunitary** one, and that one word carries the whole of Kramers' theorem. The companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form* establishes that the biquaternion algebra carries three antilinear involutions — complex conjugation $^*$, Hermitian conjugation $^\dagger$, and the anti-Hermitian conjugation $\flat=-\dagger$ — alongside the *linear* quaternion conjugation, that their fixed spaces are four distinct subspaces, and that the algebra's real structure $\flat$ and the module's charge conjugation $\mathcal{C}$ are **different real structures on different spaces**. The companion article *Spin-1/2 Quantum Mechanics in Biquaternionic Form* and the spin–statistics companion fix the $2\pi$ covering sign. This article puts those two ingredients together.
+A symmetry that reverses time is not represented by a unitary operator on the state space; it is represented by an **antiunitary** one, and that one word carries the whole of Kramers' theorem. The companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form* establishes that the biquaternion algebra carries three antilinear involutions — complex conjugation $\bar{\cdot}$, Hermitian conjugation ${}^{*}$, and the anti-Hermitian conjugation $\flat=-{}^{*}$ — alongside the *linear* quaternion conjugation, that their fixed spaces are four distinct subspaces, and that the algebra's real structure $\flat$ and the module's charge conjugation $\mathcal{C}$ are **different real structures on different spaces**. The companion article *Spin-1/2 Quantum Mechanics in Biquaternionic Form* and the spin–statistics companion fix the $2\pi$ covering sign. This article puts those two ingredients together.
 
 It establishes four things.
 
@@ -15,7 +15,7 @@ It establishes four things.
 
 The article closes with what breaks the symmetry, and with the framework's standing disclaimer: the algebra names the axis along which the symmetry is lost, and does not choose it.
 
-**Conventions.** From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, $e_0=1$, $e_k^2=-e_0$, $e_1e_2=e_3$ and cyclic, central $i$ with $i^\dagger=-i$; the antilinear involutions $\tilde{Q}^*$ (complex conjugation), $\tilde{Q}^\dagger=\bar{\tilde{Q}}^{\,*}$ (Hermitian), $\tilde{Q}^\flat=-\tilde{Q}^\dagger$ (anti-Hermitian), and the linear quaternion conjugation $\bar{\tilde{Q}}$; $\flat(\tilde\Psi)=+\tilde\Psi$ on $\mathbb{M}_-$ and $-\tilde\Psi$ on $\mathbb{M}_+$; $\mathbb{M}_-=i\,\mathbb{M}_+$; $\mathrm{Tr}=2\,\mathrm{Sc}$; the module carries $(i\gamma^\mu\partial_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$; the spin generators are $\tilde S_k=\tfrac{\hbar}{2}ie_k$ with $[\tilde S_a,\tilde S_b]=i\hbar\epsilon_{abc}\tilde S_c$, and the rotation by angle $\theta$ about the unit direction $n$ in the module is $R(\theta)=\exp(\tfrac{\theta}{2}\,n\cdot e)$ with $R(2\pi)=-e_0$; the dictionary representative is $\Phi(e_k)=-i\sigma_k$, $\Phi(ie_k)=\sigma_k$.
+**Conventions.** From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, $e_0=1$, $e_k^2=-e_0$, $e_1e_2=e_3$ and cyclic, central $i$ with $i^{*}=-i$; the antilinear involutions $\bar{\tilde{Q}}$ (complex conjugation), \tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}} (Hermitian), $\tilde{Q}^\flat=-\tilde{Q}^{*}$ (anti-Hermitian), and the linear quaternion conjugation $\tilde{Q}^{\natural}$; $\flat(\tilde\Psi)=+\tilde\Psi$ on $\mathbb{M}_-$ and $-\tilde\Psi$ on $\mathbb{M}_+$; $\mathbb{M}_-=i\,\mathbb{M}_+$; $\mathrm{Tr}=2\,\mathrm{Sc}$; the module carries $(i\gamma^\mu\partial_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$; the spin generators are $\tilde S_k=\tfrac{\hbar}{2}ie_k$ with $[\tilde S_a,\tilde S_b]=i\hbar\epsilon_{abc}\tilde S_c$, and the rotation by angle $\theta$ about the unit direction $n$ in the module is $R(\theta)=\exp(\tfrac{\theta}{2}\,n\cdot e)$ with $R(2\pi)=-e_0$; the dictionary representative is $\Phi(e_k)=-i\sigma_k$, $\Phi(ie_k)=\sigma_k$.
 
 ## Antiunitary Maps and the Two Spaces
 
@@ -29,7 +29,7 @@ $$
 
 so that $|\langle\mathcal T u,\mathcal T v\rangle|=|\langle u,v\rangle|$ and the map is a symmetry of the ray space. Every antiunitary map is of the form $\mathcal T=UK$ with $U$ unitary and $K$ a fixed antilinear involution; the pair $(U,K)$ is not unique, but the *sign* of $\mathcal T^2$ is a property of $\mathcal T$ alone.
 
-**The algebra's antilinear structure.** The companion article tabulates three antilinear involutions, $\dagger$, $\flat$ and $^*$, with fixed spaces of real dimensions $4$, $4$ and $4$ — the two-real-dimensional fixed space belongs to quaternion conjugation, which is linear; the two sectors are the fixed spaces of $\flat$ ($\mathbb{M}_-$) and $\dagger$ ($\mathbb{M}_+$), and $\flat$ acts on them as $+$ and $-$. Antilinearity is therefore not an add-on to the framework; it is present three times over, and the sectors are among its fixed spaces.
+**The algebra's antilinear structure.** The companion article tabulates three antilinear involutions, ${}^{*}$, $\flat$ and $^*$, with fixed spaces of real dimensions $4$, $4$ and $4$ — the two-real-dimensional fixed space belongs to quaternion conjugation, which is linear; the two sectors are the fixed spaces of $\flat$ ($\mathbb{M}_-$) and ${}^{*}$ ($\mathbb{M}_+$), and $\flat$ acts on them as $+$ and $-$. Antilinearity is therefore not an add-on to the framework; it is present three times over, and the sectors are among its fixed spaces.
 
 **The discipline.** Antiunitarity on the algebra and antiunitarity on the module are different statements, exactly as the mass article insists for the two real structures. A map like $\flat$ is an involution of $\mathbb{B}$; a time-reversal operator is a map of the module. The construction below uses both and does not identify them: the *algebra* supplies the rotation element $U$ and the conjugation the module carries, and the *product* is the module's $\mathcal T$. The one place where the algebra becomes indispensable is the sign, because $U^2$ is an element of $\mathbb{B}$ and its value can be read off there.
 
@@ -53,7 +53,7 @@ $$
 
 The first says the rotation element of the spinor module is **real** under the algebra's complex conjugation — it is built from the quaternion units, which complex conjugation fixes, and not from the central $i$, which it reverses. The second says it squares to minus the identity, because the imaginary quaternion units do.
 
-**The sign.** With the module's conjugation $K$ — the antilinear involution that realizes the algebra's $^*$ on the module and turns $\dagger$ into the Hermitian adjoint — define
+**The sign.** With the module's conjugation $K$ — the antilinear involution that realizes the algebra's $^*$ on the module and turns ${}^{*}$ into the Hermitian adjoint — define
 
 $$
 \mathcal T=U\,K .
@@ -184,7 +184,7 @@ The value of $\mathcal T^2$ is not a detail of the operator; it selects the symm
 
 The three rows are the three ways a complex Hilbert space can be given a real structure: none, a real structure (a conjugation $K$ with $K^2=1$), and a quaternionic structure (an antiunitary $J$ with $J^2=-1$). Only the last enforces a degeneracy, and the reason is the one the proof exhibits: $J^2=-1$ is what makes the partner orthogonal to its source, whereas a real structure's partner is not orthogonal to it in general and no degeneracy follows. The opposite-sign verification above is the second row of the table realized: a real symmetric matrix has no enforced degeneracy.
 
-The biquaternion reading is that the algebra contains the units for exactly the third row and the involutions for the second. Its three imaginary elements $e_k$ square to $-e_0$ and supply candidate $J$'s; its involutions $^*$, $\dagger$, $\flat$ have fixed spaces of real dimensions $4,4,4$ and supply real structures, though as the mass article insists, an *algebra* involution is not yet a *module* conjugation. The unitary class is the absence of any such structure, and it is the generic class in the sense that a perturbation breaking the antiunitary symmetry removes the degeneracy without restoring it.
+The biquaternion reading is that the algebra contains the units for exactly the third row and the involutions for the second. Its three imaginary elements $e_k$ square to $-e_0$ and supply candidate $J$'s; its involutions $^*$, ${}^{*}$, $\flat$ have fixed spaces of real dimensions $4,4,4$ and supply real structures, though as the mass article insists, an *algebra* involution is not yet a *module* conjugation. The unitary class is the absence of any such structure, and it is the generic class in the sense that a perturbation breaking the antiunitary symmetry removes the degeneracy without restoring it.
 
 ## What Breaks the Symmetry
 
@@ -271,7 +271,7 @@ The same antiunitary $J$ with $J^2=-e_0$ is a quaternionic structure, and the co
 | $\{v,\mathcal Tv\}$ | Kramers doublet (degenerate, orthogonal pair) |
 | $\langle\mathcal Tv,v\rangle=0$, $H(\mathcal Tv)=E(\mathcal Tv)$ | Proof identities (recomputed, error $0$) |
 | $H_{\text{field}}=-\boldsymbol\mu\cdot\mathbf B$ | $\mathcal T$-odd perturbation; lifts the degeneracy |
-| $\tilde Q^*,\tilde Q^\dagger,\tilde Q^\flat=-\tilde Q^\dagger$ | The algebra's three antilinear involutions (companion) |
+| $\tilde Q^*,\tilde Q^{*},\tilde Q^\flat=-\tilde Q^{*}$ | The algebra's three antilinear involutions (companion) |
 | $\flat=+$ on $\mathbb{M}_-$, $- $ on $\mathbb{M}_+$ | Sector action of the algebra's real structure |
 | $J^2=-e_0$, $J=UK$ | Quaternionic structure of the state space |
 | $\dim_\mathbb{C}\{M:[\mathcal T,M]=0\}=2$ | Quaternionic line; commutant computed by rank |

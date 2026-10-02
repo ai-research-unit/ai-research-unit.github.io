@@ -15,7 +15,7 @@ Physically, those four jobs are one subject read four ways. An idempotent is a *
 
 The material here was previously distributed over the articles on ideals, on zero divisors, on the roots of $-1$ and over worked examples; it is collected here because the four statements above are one subject. Its proofs use only the algebra and norm articles: the roots of $-1$ enter as a parameter set whose classification is quoted from *Biquaternion Square Roots of Minus One, Zero and Plus One*, and the relations to the zero divisors and to the ideals are forward pointers.
 
-**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ and $e_1e_2 = e_3$, central scalar imaginary $i$, and $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. The scalar part is $Q_0$; a pure element is written $\mathbf{B} = B_1e_1+B_2e_2+B_3e_3$, and on pure elements the bilinear form is $(\mathbf{A},\mathbf{B}) = \sum_{k=1}^{3}A_kB_k$, so that $\mathbf{B}^2 = -(\mathbf{B},\mathbf{B})e_0$. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ and decides invertibility; the material coordinate is $ict\,e_0+\mathbf{x}$ and the informational coordinate is $ct'\,e_0+i\mathbf{x}'$.
+**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ and $e_1e_2 = e_3$, central scalar imaginary $i$, and $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. The scalar part is $Q_0$; a pure element is written $\mathbf{B} = B_1e_1+B_2e_2+B_3e_3$, and on pure elements the bilinear form is $(\mathbf{A},\mathbf{B}) = \sum_{k=1}^{3}A_kB_k$, so that $\mathbf{B}^2 = -(\mathbf{B},\mathbf{B})e_0$. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ and decides invertibility; the material coordinate is $ict\,e_0+\mathbf{x}$ and the informational coordinate is $ct'\,e_0+i\mathbf{x}'$.
 
 ## 1. Idempotents in an Algebra
 
@@ -124,7 +124,7 @@ Consequently the **complementary pairs** $\{\tilde\Pi, e_0-\tilde\Pi\}$ are in b
 Substituting the three families of roots:
 
 - **Trivial roots** $\xi = \pm i$: $\tilde\Pi = 0$ or $\tilde\Pi = e_0$, the trivial idempotents. Physically these are the degenerate projectors: no state and everything.
-- **Real roots** $\xi = \pm\mu$ with $\mu$ a unit pure real quaternion: $\tilde\Pi = \tfrac12e_0\pm\tfrac12\mu i$. Since $\mu i$ is Hermitian when $\mu$ is, $(\mu i)^\dagger = \mu i$, these are the **Hermitian idempotents**. They lie in the informational sector $\mathbb{M}_+$ and are the **rank-one projectors**: the pure states of a qubit, and the one-mode vacua. The family is parametrised by the unit sphere of pure real quaternions, that is by $\hat{\boldsymbol\mu}\in S^2$,
+- **Real roots** $\xi = \pm\mu$ with $\mu$ a unit pure real quaternion: $\tilde\Pi = \tfrac12e_0\pm\tfrac12\mu i$. Since $\mu i$ is Hermitian when $\mu$ is, $(\mu i)^{*} = \mu i$, these are the **Hermitian idempotents**. They lie in the informational sector $\mathbb{M}_+$ and are the **rank-one projectors**: the pure states of a qubit, and the one-mode vacua. The family is parametrised by the unit sphere of pure real quaternions, that is by $\hat{\boldsymbol\mu}\in S^2$,
 $$
   \tilde\Pi(\hat{\boldsymbol\mu}) = \tfrac{1}{2}\left(e_0+i\hat{\boldsymbol\mu}\right),
 $$
@@ -149,7 +149,7 @@ $$
 
 This is the algebraic content of the statement that idempotents are projections: the idempotent is the projection, its complement the complementary projection, and the algebra splits into their images.
 
-A **Hermitian idempotent**, $\tilde\Pi^\dagger = \tilde\Pi$, is an **orthogonal** projection with respect to the Hermitian form, and it is the kind that occurs in the spectral decomposition of a Hermitian element. Since $\tilde\Pi^\dagger = \bar{\tilde\Pi}^*$, the Hermitian idempotents are exactly the second family of Section 4 and lie in $\mathbb{M}_+$.
+A **Hermitian idempotent**, $\tilde\Pi^{*} = \tilde\Pi$, is an **orthogonal** projection with respect to the Hermitian form, and it is the kind that occurs in the spectral decomposition of a Hermitian element. Since $\tilde\Pi^{*} = \tilde\Pi^{*}$, the Hermitian idempotents are exactly the second family of Section 4 and lie in $\mathbb{M}_+$.
 
 **Physical reading: the projection, the state and the measurement.** The Hermitian idempotents of $\mathbb{M}_+$ are the pure states, and the pairing of one with an observable gives the Born probability through the trace; the spectral decomposition of an observable is a sum of orthogonal Hermitian idempotents. The two objects called "projection" must be kept apart here as well: the **idempotent element** $\tilde\Pi$ is a state, and the **sandwich** $\tilde{\rho}\mapsto\tilde\Pi\tilde{\rho}\tilde\Pi$ is the measurement operation; the operation squares to itself only in the idealised case, while the state is idempotent by definition. The passage from a pure state (idempotent) to a mixed state (not idempotent) is the subject of *Decoherence as Idempotent Projection*, and the pairing with the Born rule is in *Quantum Mechanics in Biquaternionic Form*.
 
@@ -180,7 +180,7 @@ The derivation, from the square relation $\tilde{Q}^2 = 2Q_0\tilde{Q}$ that the 
 **Physical reading: the one-particle modules.** The summands are the modules on which the states of the theory live; they are the two-complex-dimensional one-particle (spinor) spaces. Both summands are copies of the **same** defining module, since $M_2(\mathbb{C})$ has a single simple module up to isomorphism, and this is the point at which a common misreading has to be blocked: the ideal decomposition $\mathbb{B} = \mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ is **not** a chirality decomposition. The spinor module's chiral decomposition is a different decomposition of a different object. Three decompositions of the framework are in play and must not be conflated:
 
 - the **ideal (Peirce) decomposition**, $\mathbb{B} = \mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$, by the primitive idempotents, acting on the **algebra** by right multiplication, with two summands that are *both* copies of the defining module;
-- the **sector decomposition**, by Hermitian conjugation $\dagger$, splitting the **algebra** into $\mathbb{M}_-$ and $\mathbb{M}_+$, with projectors $\tilde{Q}\mapsto\tfrac12(\tilde{Q}\mp\tilde{Q}^\dagger)$;
+- the **sector decomposition**, by Hermitian conjugation ${}^{*}$, splitting the **algebra** into $\mathbb{M}_-$ and $\mathbb{M}_+$, with projectors $\tilde{Q}\mapsto\tfrac12(\tilde{Q}\mp\tilde{Q}^{*})$;
 - the **chiral decomposition**, by $\gamma_5$, splitting the **spinor module** $\Delta$ into $S\oplus\bar{S}$, with projectors $\tilde\Pi_L, \tilde\Pi_R$.
 
 The three share no projector: $\tilde\Pi_L$ is not $\tilde\Pi_1$ or $\tilde\Pi_2$, and the sector split is not the chirality split; the comparison is made in full in *Chiral Fermions in the Biquaternion Framework*. The module itself — its dual, its conjugate and the reality conditions on it — is developed in *The Spinor Module in Biquaternionic Form and Its Lorentz Action* and *The Native Qubit and the Defining Module of the Biquaternion Algebra*.
@@ -218,7 +218,7 @@ Physically, the Hermitian idempotents are the pure states: the rank-one projecto
 | $(\mathbf{A},\mathbf{B}) = \sum_kA_kB_k$ | Bilinear form on the pure part, $\mathbf{B}^2 = -(\mathbf{B},\mathbf{B})e_0$ |
 | $\mathbb{M}_+$ | Informational sector, containing the Hermitian idempotents |
 | $\mathbb{M}_-$ | Material sector |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm; $N(\tilde\Pi) = 0$ for every nontrivial idempotent |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $N(\tilde\Pi) = 0$ for every nontrivial idempotent |
 
 ## Further Reading
 

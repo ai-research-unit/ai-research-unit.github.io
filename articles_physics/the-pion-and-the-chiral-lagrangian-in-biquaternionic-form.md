@@ -13,7 +13,7 @@ $$
 an isovector whose three components are simultaneously the three components of a material-sector vector. The chiral field is the group element
 
 $$
-\tilde U = \exp\!\left(\frac{\tilde\pi}{f_\pi}\right) \in \mathbb{H}^1_{\mathbb{B}} , \qquad \tilde U\bar{\tilde U} = e_0 ,
+\tilde U = \exp\!\left(\frac{\tilde\pi}{f_\pi}\right) \in \mathbb{H}^1_{\mathbb{B}} , \qquad \tilde U\tilde U^{\natural} = e_0 ,
 $$
 
 and the chiral Lagrangian is the biquaternion norm of its derivative. The construction is therefore the framework's principal chiral model of the companion article, with the decay constant of two-flavour QCD.
@@ -22,9 +22,9 @@ The findings are the following.
 
 - **Established, and recomputed below.** The pion triplet is the adjoint of the compact $\mathrm{SU}(2)$ inside the material sector, and the chiral field $\tilde U = \exp(\tilde\pi/f_\pi)$ is a unit real quaternion. The trace identities $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$ and, for the standard generators $T_a = \tfrac{i}{2}e_a$, $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$, together with $[T_a,T_b] = i\varepsilon_{abc}T_c$, hold and were checked from the complex $2\times2$ representation $\Phi(e_a) = -i\sigma_a$. Expanding the biquaternion chiral Lagrangian,
 $$
-\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{4}\,\mathrm{Tr}\!\left(\partial_\mu\tilde U\,\partial_\mu\tilde U^\dagger\right),
+\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{4}\,\mathrm{Tr}\!\left(\partial_\mu\tilde U\,\partial_\mu\tilde U^{*}\right),
 $$
-gives the canonical pion kinetic term $\tfrac12[(\partial_t\pi^a)^2-(\nabla\pi^a)^2]$ with coefficient exactly one; verified numerically. The mass term $\propto\mathrm{Tr}(M\tilde U + M\tilde U^\dagger)$ gives the standard Gell-Mann–Oakes–Renner relation $m_\pi^2 f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$, equivalently $m_\pi^2 = B_0(m_u+m_d)$ with $B_0 = -\langle\bar qq\rangle/f_\pi^2$.
+gives the canonical pion kinetic term $\tfrac12[(\partial_t\pi^a)^2-(\nabla\pi^a)^2]$ with coefficient exactly one; verified numerically. The mass term $\propto\mathrm{Tr}(M\tilde U + M\tilde U^{*})$ gives the standard Gell-Mann–Oakes–Renner relation $m_\pi^2 f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$, equivalently $m_\pi^2 = B_0(m_u+m_d)$ with $B_0 = -\langle\bar qq\rangle/f_\pi^2$.
 - **Interpretation.** Reading the pion's isospin triplet as the adjoint of the framework's material-sector $\mathrm{SU}(2)$, and the chiral field as a unit real quaternion, is the interpretive link between the framework's compact group and the pion's quantum numbers. The interpretation is exact at the level of the unbroken subgroup and is labelled where the chiral group is involved.
 - **Gap, left visible.** The framework's center is vector-like: the algebra supplies the diagonal isospin $SU(2)_V$ and its adjoint action on the pion triplet, but it does not supply the axial currents, the anomaly, or the Wess–Zumino–Witten term, which belong to the spinor and general-gauge sectors. The chiral Lagrangian is therefore realised as a geometric construction on the framework's group manifold, with the axial-current algebra and the anomaly imported from the standard treatment.
 
@@ -95,9 +95,9 @@ so the triplet's invariant length is the quaternion norm up to sign — the same
 $$
 \tilde\pi\in\mathrm{SU}(2)\subset\mathbb{M}_- ,
 \qquad
-\tilde\pi^\dagger = -\tilde\pi ,
+\tilde\pi^{*} = -\tilde\pi ,
 \qquad
-\tilde\pi=-\bar{\tilde\pi} .
+\tilde\pi=-\tilde\pi^{\natural} .
 $$
 
 The last identity is the statement that the pion triplet has no central component — it is a pure imaginary quaternion (a vector) with real coefficients, $\tilde\pi = \pi^ae_a$ with $\pi^a$ real — which is what makes it an isovector rather than a mixture with the singlet. A would-be flavour-singlet scalar would instead be central, $\propto e_0$ or $\propto ie_0$; the pion is not, and this is the algebraic content of "the pion is an isovector".
@@ -145,11 +145,11 @@ Under the chiral group the field transforms as $\tilde U\mapsto g_L\tilde U g_R^
 **The two-derivative Lagrangian.** It is
 
 $$
-\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{4}\,\mathrm{Tr}\!\left(\partial_\mu\tilde U\,\partial_\mu\tilde U^\dagger\right)
+\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{4}\,\mathrm{Tr}\!\left(\partial_\mu\tilde U\,\partial_\mu\tilde U^{*}\right)
 = -\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\overline{\partial_\mu\tilde U}\,\partial_\mu\tilde U\right),
 $$
 
-the second form using $\mathrm{Tr} = 2\mathrm{Sc}$ and $U^\dagger = \bar U$ for a unit real quaternion. The overall minus sign is the sign convention that makes the kinetic term positive; the standard literature writes the same term with a plus and a mostly-minus contraction. Expanding,
+the second form using $\mathrm{Tr} = 2\mathrm{Sc}$ and $U^{*} = U^{\natural}$ for a unit real quaternion. The overall minus sign is the sign convention that makes the kinetic term positive; the standard literature writes the same term with a plus and a mostly-minus contraction. Expanding,
 
 $$
 \partial_\mu\tilde U = \frac{1}{f_\pi}\partial_\mu\tilde\pi + O(\pi^2),
@@ -176,7 +176,7 @@ The pions are massless only in the chiral limit. The quark masses break the symm
 **The mass term.** The symmetry-breaking term is the one that transforms like the quark mass matrix: at lowest order in the derivative expansion and first order in $M = \mathrm{diag}(m_u,m_d)$,
 
 $$
-\mathcal{L}_\pi^{\text{mass}} = \frac{f_\pi^2 B_0}{2}\,\mathrm{Tr}\!\left(M\tilde U + M^\dagger\tilde U^\dagger\right),
+\mathcal{L}_\pi^{\text{mass}} = \frac{f_\pi^2 B_0}{2}\,\mathrm{Tr}\!\left(M\tilde U + M^\dagger\tilde U^{*}\right),
 $$
 
 with $B_0$ a constant with the dimensions of mass setting the scale of the condensate. Its normalisation is fixed so that the constant term $f_\pi^2 B_0\,\mathrm{Tr}(M)$ is the vacuum energy shift of the quark masses, and the parameter $B_0$ is ${-}\langle\bar qq\rangle/f_\pi^2$. Expanding $\tilde U = \exp(\tilde\pi/f_\pi)$ to second order and using $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$ with $M$ diagonal, the quadratic term is
@@ -289,19 +289,19 @@ the chiral field is the unit real quaternion
 $$
 \tilde U = \exp\!\left(\frac{\tilde\pi}{f_\pi}\right)\in\mathbb{H}^1_{\mathbb{B}},
 \qquad
-\tilde U\bar{\tilde U} = e_0 ,
+\tilde U\tilde U^{\natural} = e_0 ,
 $$
 
 and the leading chiral Lagrangian is the biquaternion norm of its derivative,
 
 $$
-\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{4}\,\mathrm{Tr}\!\left(\partial_\mu\tilde U\,\partial_\mu\tilde U^\dagger\right)
+\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{4}\,\mathrm{Tr}\!\left(\partial_\mu\tilde U\,\partial_\mu\tilde U^{*}\right)
 = \frac12\left[(\partial_t\pi^a)^2-(\nabla\pi^a)^2\right] + O(\pi^4),
 $$
 
 with the coefficient exactly one, fixed by the trace identity $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$ for $T_a = \tfrac{i}{2}e_a$ (equivalently $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$ and $\mathrm{Sc}(\overline{e_a}e_b) = \delta_{ab}$). These identities were checked from the representation $\Phi(e_a) = -i\sigma_a$, and the kinetic coefficient was verified directly, the biquaternion norm divided by $(\epsilon/f_\pi)^2$ coming out exactly $1$.
 
-The quark mass matrix adds the symmetry-breaking term $\frac{f_\pi^2B_0}{2}\mathrm{Tr}(M\tilde U + M^\dagger\tilde U^\dagger)$ with $B_0 = -\langle\bar qq\rangle/f_\pi^2$, whose quadratic part gives $m_{\pi^\pm}^2 = m_{\pi^0}^2 = B_0(m_u+m_d)$ in the isospin limit and hence the Gell-Mann–Oakes–Renner relation $m_\pi^2 f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$. For the illustrative inputs $m_\pi = 139.6$ MeV, $f_\pi = 92.1$ MeV, $m_u+m_d = 7.0$ MeV, the relation gives $B_0 = 2.784$ GeV and $|\langle\bar qq\rangle|^{1/3} = 286.9$ MeV, of the standard order.
+The quark mass matrix adds the symmetry-breaking term $\frac{f_\pi^2B_0}{2}\mathrm{Tr}(M\tilde U + M^\dagger\tilde U^{*})$ with $B_0 = -\langle\bar qq\rangle/f_\pi^2$, whose quadratic part gives $m_{\pi^\pm}^2 = m_{\pi^0}^2 = B_0(m_u+m_d)$ in the isospin limit and hence the Gell-Mann–Oakes–Renner relation $m_\pi^2 f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$. For the illustrative inputs $m_\pi = 139.6$ MeV, $f_\pi = 92.1$ MeV, $m_u+m_d = 7.0$ MeV, the relation gives $B_0 = 2.784$ GeV and $|\langle\bar qq\rangle|^{1/3} = 286.9$ MeV, of the standard order.
 
 The framework supplies the pion's adjoint isovector assignment, the geometric chiral field as a rotor, the decay-constant normalisation through its trace, and the soft limit as a property of the derivative expansion. It does not supply the axial current, the anomaly, the Wess–Zumino–Witten term or the flavour-singlet mass, because its center is vector-like; those are imported from the spinor and general-gauge sectors, and the flavour-singlet and three-flavour extensions remain open.
 
@@ -321,9 +321,9 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$, $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$, $\mathrm{Sc}(\overline{e_a}e_b) = \delta_{ab}$ | Trace identities fixing the normalisation |
 | $\tilde U = \exp(\tilde\pi/f_\pi)\in\mathbb{H}^1_{\mathbb{B}}$ | Chiral field (unit real quaternion) |
 | $\tilde U\mapsto g_L\tilde U g_R^{-1}$ | Chiral transformation; diagonal $SU(2)_V$ unbroken |
-| $\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{4}\mathrm{Tr}(\partial_\mu\tilde U\partial_\mu\tilde U^\dagger)$ | Leading chiral Lagrangian |
+| $\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{4}\mathrm{Tr}(\partial_\mu\tilde U\partial_\mu\tilde U^{*})$ | Leading chiral Lagrangian |
 | $f_\pi$ | Pion decay constant ($\approx 92.1$ MeV) |
-| $\mathcal{L}_\pi^{\text{mass}} = \frac{f_\pi^2B_0}{2}\mathrm{Tr}(M\tilde U+M^\dagger\tilde U^\dagger)$ | Explicit-breaking mass term |
+| $\mathcal{L}_\pi^{\text{mass}} = \frac{f_\pi^2B_0}{2}\mathrm{Tr}(M\tilde U+M^\dagger\tilde U^{*})$ | Explicit-breaking mass term |
 | $M = \mathrm{diag}(m_u,m_d)$ | Quark mass matrix |
 | $B_0 = -\langle\bar qq\rangle/f_\pi^2$ | Condensate scale parameter |
 | $m_\pi^2 = B_0(m_u+m_d)$, $m_\pi^2f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$ | Pion mass and the Gell-Mann–Oakes–Renner relation |

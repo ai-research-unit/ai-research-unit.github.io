@@ -6,7 +6,7 @@ This article describes the group of units $\mathbb{B}^\times$ of the biquaternio
 
 **Scope.** This is the topological part of the Lie-theoretic block. The Lie algebra is in *Biquaternion Lie Algebra*, the topology is here, and the Lie-group theory is in *Biquaternion Lie Group and Exponential Structure*; the motions the group generates are geometry. Nothing here is a statement about the smooth structure, which belongs with the Lie group.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})\neq0$. The conjugations are $\bar{\cdot}$ (quaternion), ${}^{*}$ (complex), ${}^{\dagger}=\bar{\cdot}{}^{*}$ (Hermitian), and the Hermitian form is $\tilde{Q}\tilde{Q}^\dagger$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})\neq0$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}={}^{\natural}\bar{\cdot}$ (Hermitian), and the Hermitian form is $\tilde{Q}\tilde{Q}^{*}$.
 
 ## The Group of Units
 
@@ -14,7 +14,7 @@ $$
 \mathbb{B}^\times=\{\tilde{Q}\in\mathbb{B} : N(\tilde{Q})\neq0\}
 $$
 
-is a group under multiplication, because $N(\tilde{P}\tilde{Q})=N(\tilde{P})N(\tilde{Q})$ and $N(e_0)=1$: the product of two units has nonzero norm, and the inverse is $\tilde{Q}^{-1}=\bar{\tilde{Q}}/N(\tilde{Q})$. It is an open dense subset of $\mathbb{B}$ and its boundary is the null cone (*Biquaternion Topology*, §*The null cone as the boundary of the group of units*).
+is a group under multiplication, because $N(\tilde{P}\tilde{Q})=N(\tilde{P})N(\tilde{Q})$ and $N(e_0)=1$: the product of two units has nonzero norm, and the inverse is $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/N(\tilde{Q})$. It is an open dense subset of $\mathbb{B}$ and its boundary is the null cone (*Biquaternion Topology*, §*The null cone as the boundary of the group of units*).
 
 **Dimension.** $\mathbb{B}^\times$ has complex dimension $4$ and real dimension $8$; the units are exactly the elements of nonzero norm.
 
@@ -32,7 +32,7 @@ is a subgroup, the **norm-one group**. It is a noncompact real $6$-manifold.
 
 ## The Retraction of $\mathbb{B}^\times$ onto Its Maximal Compact Subgroup
 
-Every $\tilde{A}\in\mathbb{B}^\times$ has a unique polar decomposition $\tilde{A}=\tilde{U}\tilde{P}$, where $\tilde{U}$ is unitary ($\tilde{U}^\dagger\tilde{U}=e_0$) and $\tilde{P}=(\tilde{A}^\dagger\tilde{A})^{1/2}$ is Hermitian positive definite. For $t\in[0,1]$ put $\tilde{P}_t=(1-t)\tilde{P}+te_0$ and
+Every $\tilde{A}\in\mathbb{B}^\times$ has a unique polar decomposition $\tilde{A}=\tilde{U}\tilde{P}$, where $\tilde{U}$ is unitary ($\tilde{U}^{*}\tilde{U}=e_0$) and $\tilde{P}=(\tilde{A}^{*}\tilde{A})^{1/2}$ is Hermitian positive definite. For $t\in[0,1]$ put $\tilde{P}_t=(1-t)\tilde{P}+te_0$ and
 
 $$
 \tilde{H}(t,\tilde{A})=\tilde{U}\tilde{P}_t .
@@ -41,7 +41,7 @@ $$
 The eigenvalues of $\tilde{P}_t$ are $(1-t)\lambda+t$ with $\lambda>0$, hence positive, so $\tilde{P}_t$ is positive definite and $\tilde{H}(t,\tilde{A})\in\mathbb{B}^\times$; the map $\tilde{H}$ is continuous. Moreover $\tilde{H}(0,\tilde{A})=\tilde{A}$, $\tilde{H}(1,\tilde{A})=\tilde{U}$, and $\tilde{H}(t,\tilde{U})=\tilde{U}$ for unitary $\tilde{U}$. So the unitary biquaternions form a strong deformation retract of $\mathbb{B}^\times$, and the two are homotopy equivalent, whence $\pi_n(\mathbb{B}^\times)\cong\pi_n(\mathrm{U}(\mathbb{B}))$ for all $n$, writing $\mathrm{U}(\mathbb{B})$ for the group of unitary biquaternions. Every $\tilde{A}$ is joined to a unitary element, and $\mathrm{U}(\mathbb{B})$ is connected, so $\mathbb{B}^\times$ is connected. The retraction takes $\mathbb{B}^\times$ onto its maximal compact subgroup,
 
 $$
-\mathrm{U}(\mathbb{B})=\{\tilde{Q}\in\mathbb{B} : \tilde{Q}^\dagger\tilde{Q}=e_0\} .
+\mathrm{U}(\mathbb{B})=\{\tilde{Q}\in\mathbb{B} : \tilde{Q}^{*}\tilde{Q}=e_0\} .
 $$
 
 **Physical reading.** The deformation is the removal of the boost: the Hermitian positive-definite factor $\tilde{P}$ carries the boost and the unitary factor $\tilde{U}$ the rotation and the phase, so retracting $\tilde{P}$ to the identity leaves the rotation and the phase untouched. This is why the topology of the motion group is the topology of its maximal compact subgroup, and why the non-compact directions contribute no homotopy. In the $ict$ convention the removal is the removal of the time–space mixing: on the material four-position $\tilde{Q}=ict\,e_0+\mathbf{x}$ the factor $\tilde{P}$ is what carries the rapidity and moves $ict$ toward $x_k$, and setting $\tilde{P}=e_0$ sets the rapidity to zero and leaves a pure rotation of $\mathbf{x}$.
@@ -116,7 +116,7 @@ The group of units $\mathbb{B}^\times$ is the complement of the null cone, of re
 |---|---|
 | $\mathbb{B}^\times=\{\tilde{Q} : N(\tilde{Q})\neq0\}$ | Group of units; open and dense, boundary the null cone |
 | $\mathbb{B}^\times_1=\{\tilde{Q} : N(\tilde{Q})=1\}$ | Norm-one group; noncompact real $6$-manifold, $\simeq S^3$ |
-| $\mathrm{U}(\mathbb{B})=\{\tilde{Q} : \tilde{Q}^\dagger\tilde{Q}=e_0\}$ | Unitary biquaternions, the maximal compact subgroup |
+| $\mathrm{U}(\mathbb{B})=\{\tilde{Q} : \tilde{Q}^{*}\tilde{Q}=e_0\}$ | Unitary biquaternions, the maximal compact subgroup |
 | $\tilde{A}=\tilde{U}\tilde{P}$ | Polar decomposition; $\tilde{U}$ unitary, $\tilde{P}$ Hermitian positive definite |
 | $\mathrm{U}(\mathbb{B})\cong(S^1\times S^3)/\{\pm e_0\}$ | Maximal compact subgroup as a group |
 | $\mathrm{U}(\mathbb{B})\cong S^1\times S^3$ | Homeomorphism, not a group isomorphism |

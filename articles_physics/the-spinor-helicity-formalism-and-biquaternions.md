@@ -28,7 +28,7 @@ The division between what is established, what is transcribed, and what is left 
 
 The article is organized as follows. The next section identifies the massless momentum as a zero divisor and shows its image is rank one. The section after that turns rank one into the factorisation and identifies it with spinor helicity. A section derives the brackets as the invariant symplectic pairing and records the one identity that links them to the momenta. The following section treats the little group, the reality condition, and helicity as its weight. A section states the Parke–Taylor formula and checks its little-group weights on concrete cases. The next section shows that the massless limit is singular. A section separates what the algebra supplies from what it only transcribes, and a short section records the gaps. The article closes with open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The conjugations are the quaternion conjugate $\bar{\tilde Q}$, the complex conjugate $\tilde Q^{*}$, and the Hermitian conjugate $\tilde Q^\dagger = \bar{\tilde Q}^{\,*}$. The subspaces are $\mathbb{M}_- = \{\tilde Q : \tilde Q^\dagger = -\tilde Q\}$ (material, anti-Hermitian), $\mathbb{M}_+ = \{\tilde Q : \tilde Q^\dagger = \tilde Q\}$ (informational, Hermitian), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$ (the centre). The matrix realization is
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The conjugations are the quaternion conjugate $\tilde Q^{\natural}$, the complex conjugate $\bar{\tilde Q}$, and the Hermitian conjugate $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$. The subspaces are $\mathbb{M}_- = \{\tilde Q : \tilde Q^{*} = -\tilde Q\}$ (material, anti-Hermitian), $\mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\}$ (informational, Hermitian), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$ (the centre). The matrix realization is
 
 $$
 \Phi:\;\tilde Q = \sum_{\mu=0}^{3}Q_\mu e_\mu \;\longmapsto\;
@@ -40,7 +40,7 @@ Q_0 - iQ_3 & -iQ_1 - Q_2\\[2pt]
 \Phi(e_0)=I_2,\quad \Phi(e_k)=-i\sigma_k,\quad \Phi(i)=iI_2,
 $$
 
-satisfying $\Phi(\tilde Q\tilde R) = \Phi(\tilde Q)\Phi(\tilde R)$, $\det\Phi(\tilde Q) = N(\tilde Q) = \tilde Q\bar{\tilde Q} = \sum_\mu Q_\mu^2$, and $\Phi(\tilde Q^\dagger) = \Phi(\tilde Q)^\dagger$. The **spinor module** is $S = \mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, with its conjugate module $\bar S$; the invariant symplectic pairing is $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\,\phi$ with $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$. The four-momentum is $\tilde P = iE/c\,e_0 + \mathbf p \in \mathbb{M}_-$, with biquaternion norm $N(\tilde P) = -E^2/c^2 + \mathbf p^2 = -m^2c^2$ on the mass shell, and $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium. The trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$ is inherited unchanged.
+satisfying $\Phi(\tilde Q\tilde R) = \Phi(\tilde Q)\Phi(\tilde R)$, $\det\Phi(\tilde Q) = N(\tilde Q) = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$, and $\Phi(\tilde Q^{*}) = \Phi(\tilde Q)^\dagger$. The **spinor module** is $S = \mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, with its conjugate module $\bar S$; the invariant symplectic pairing is $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\,\phi$ with $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$. The four-momentum is $\tilde P = iE/c\,e_0 + \mathbf p \in \mathbb{M}_-$, with biquaternion norm $N(\tilde P) = -E^2/c^2 + \mathbf p^2 = -m^2c^2$ on the mass shell, and $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium. The trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$ is inherited unchanged.
 
 ## The Massless Momentum as a Zero Divisor
 
@@ -55,7 +55,7 @@ $$
 an element of $\mathbb{M}_-$: its scalar part is purely imaginary and its vector part is real. Its biquaternion norm is
 
 $$
-N(\tilde P) \;=\; \tilde P\bar{\tilde P} \;=\; -\frac{E^2}{c^2} + \mathbf p^2 \;=\; -m^2c^2 .
+N(\tilde P) \;=\; \tilde P\tilde P^{\natural} \;=\; -\frac{E^2}{c^2} + \mathbf p^2 \;=\; -m^2c^2 .
 $$
 
 Two consequences follow immediately.
@@ -178,7 +178,7 @@ $$
 \lambda \;\longmapsto\; t\,\lambda, \qquad \tilde\lambda \;\longmapsto\; t^{-1}\,\tilde\lambda, \qquad |t|=1,
 $$
 
-a $U(1)$. This is the group of the spinor-helicity little-group scaling. It is also realized geometrically inside the framework: the rotation about the momentum axis is the rotor $\tilde R = \cos(\theta/2) + \sin(\theta/2)\,\hat{\mathbf p}$ in the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, with $\hat{\mathbf p} = \mathbf p/|\mathbf p|$; it commutes with $\tilde P$, since $iE/c$ is central and $\hat{\mathbf p}$ commutes with $\mathbf p$. Hence $\tilde R\tilde P\tilde R^\dagger = \tilde P$ — verified by the vanishing of the commutator and the unitarity relation $\tilde R\tilde R^\dagger = e_0$ — and on the spinor module $\Phi(\tilde R)$ acts by a phase,
+a $U(1)$. This is the group of the spinor-helicity little-group scaling. It is also realized geometrically inside the framework: the rotation about the momentum axis is the rotor $\tilde R = \cos(\theta/2) + \sin(\theta/2)\,\hat{\mathbf p}$ in the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, with $\hat{\mathbf p} = \mathbf p/|\mathbf p|$; it commutes with $\tilde P$, since $iE/c$ is central and $\hat{\mathbf p}$ commutes with $\mathbf p$. Hence $\tilde R\tilde P\tilde R^{*} = \tilde P$ — verified by the vanishing of the commutator and the unitarity relation $\tilde R\tilde R^{*} = e_0$ — and on the spinor module $\Phi(\tilde R)$ acts by a phase,
 
 $$
 \Phi(\tilde R)\,\lambda = e^{\pm i\theta/2}\,\lambda \quad \text{on the two eigen-components},
@@ -292,7 +292,7 @@ Two things are deliberately not claimed. The framework does not derive the Parke
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\Phi(\tilde Q)$ | Matrix realization, $\mathbb{B}\cong M_2(\mathbb{C})$ |
-| $N(\tilde Q)=\tilde Q\bar{\tilde Q}=\sum_\mu Q_\mu^2=\det\Phi(\tilde Q)$ | Biquaternion norm |
+| $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2=\det\Phi(\tilde Q)$ | Biquaternion norm |
 | $\mathbb{M}_-$ | Material (anti-Hermitian) subspace, four-vectors |
 | $\mathbb{M}_+$ | Informational (Hermitian) subspace |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, rotation rotors |

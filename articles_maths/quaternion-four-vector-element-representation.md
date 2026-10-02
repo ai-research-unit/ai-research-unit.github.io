@@ -9,7 +9,7 @@ The article is coordinate bookkeeping on the algebra fixed in *Quaternion Algebr
 
 The corpus's default base is a commutative ring with identity, and the coordinate description holds over such a base; the positivity and the Euclidean interpretation of the quaternion norm are statements over $\mathbb{R}$, and they are flagged where they occur.
 
-Throughout, a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_\mu\in F$, $\mathrm{Sc}(\tilde q) = q_0$ and $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3$; the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and the quaternion norm is $N(\tilde q) = \tilde q\bar{\tilde q}$. The coordinate map is the $F$-linear isomorphism $\varphi : \mathbb{H}\to F^4$.
+Throughout, a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_\mu\in F$, $\mathrm{Sc}(\tilde q) = q_0$ and $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3$; the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and the quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural}$. The coordinate map is the $F$-linear isomorphism $\varphi : \mathbb{H}\to F^4$.
 
 ## The Coordinate Vector
 
@@ -72,8 +72,8 @@ $$
 **Theorem.** The three involutions act on the coordinate vector by the diagonal sign matrices
 
 $$
-\varphi(\bar{\tilde q}) = \operatorname{diag}(1,-1,-1,-1)\,[\tilde q], \qquad
-\varphi(-\bar{\tilde q}) = \operatorname{diag}(-1,1,1,1)\,[\tilde q], \qquad
+\varphi(\tilde{q}^{\natural}) = \operatorname{diag}(1,-1,-1,-1)\,[\tilde q], \qquad
+\varphi(-\tilde{q}^{\natural}) = \operatorname{diag}(-1,1,1,1)\,[\tilde q], \qquad
 \varphi(-\tilde q) = -[\tilde q] .
 $$
 
@@ -108,9 +108,9 @@ $$
 N(\tilde q) = q_0^2+q_1^2+q_2^2+q_3^2 = [\tilde q]^{T}[\tilde q],
 $$
 
-and the associated bilinear form is the standard Euclidean inner product $\mathrm{Sc}(p\bar{\tilde q}) = [p]^{T}[\tilde q]$.
+and the associated bilinear form is the standard Euclidean inner product $\mathrm{Sc}(p\tilde{q}^{\natural}) = [p]^{T}[\tilde q]$.
 
-*Proof.* $\tilde q\bar{\tilde q} = (q_0+\mathbf{q})(q_0-\mathbf{q}) = q_0^2-\mathbf{q}^2 = q_0^2+N(\mathbf{q}) = \sum_\mu q_\mu^2$, and $[\tilde q]^T[\tilde q]$ is that sum. The bilinear form is the polarisation, which is $\mathrm{Sc}(p\bar{\tilde q})$.
+*Proof.* $\tilde q\tilde{q}^{\natural} = (q_0+\mathbf{q})(q_0-\mathbf{q}) = q_0^2-\mathbf{q}^2 = q_0^2+N(\mathbf{q}) = \sum_\mu q_\mu^2$, and $[\tilde q]^T[\tilde q]$ is that sum. The bilinear form is the polarisation, which is $\mathrm{Sc}(p\tilde{q}^{\natural})$.
 
 **Corollary.** Over $F = \mathbb{R}$ the quaternion norm is positive definite, the coordinate map is an isometry $\mathbb{H}\to\mathbb{R}^4$, and the modulus is the Euclidean length $|\tilde q| = \sqrt{q_0^2+q_1^2+q_2^2+q_3^2}$. In particular the four signs of the quaternion norm are all positive.
 

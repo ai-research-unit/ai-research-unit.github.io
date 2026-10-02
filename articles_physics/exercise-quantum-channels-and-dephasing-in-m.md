@@ -13,7 +13,7 @@ The article is therefore a sequence of independent problems, each in its own sec
 5. Composition of channels, and the growth of the Kraus rank.
 6. The Bloch-ball contraction and the increase of the von Neumann entropy under dephasing.
 
-The conventions are those of the companion articles. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; $i$ is the central scalar imaginary. The Hermitian subspace $\mathbb{M}_+$ consists of the elements $\tilde{H} = h_0 e_0 + i\mathbf{h}$ with real $h_0$ and $\mathbf{h} \in \mathbb{R}^3$. A state is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}| \leq 1$, and $\mathbf{r}$ is its Bloch vector. The trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, so the Born rule is $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \mathbf{r}\cdot\mathbf{h}$. A **channel** is a completely positive, trace-preserving map with a Kraus representation $\Phi(\tilde{Q}) = \sum_l \tilde{K}_l\tilde{Q}\tilde{K}_l^\dagger$ and normalization $\sum_l \tilde{K}_l^\dagger\tilde{K}_l = e_0$, and the Choi matrix is $J(\Phi) = \sum_{jk}\tilde{E}_{jk}\otimes\Phi(\tilde{E}_{jk})$ as in the parent. The dephasing channel along the unit pure real quaternion $\hat{\mathbf{n}}$ is
+The conventions are those of the companion articles. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; $i$ is the central scalar imaginary. The Hermitian subspace $\mathbb{M}_+$ consists of the elements $\tilde{H} = h_0 e_0 + i\mathbf{h}$ with real $h_0$ and $\mathbf{h} \in \mathbb{R}^3$. A state is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}| \leq 1$, and $\mathbf{r}$ is its Bloch vector. The trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, so the Born rule is $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \mathbf{r}\cdot\mathbf{h}$. A **channel** is a completely positive, trace-preserving map with a Kraus representation $\Phi(\tilde{Q}) = \sum_l \tilde{K}_l\tilde{Q}\tilde{K}_l^{*}$ and normalization $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_0$, and the Choi matrix is $J(\Phi) = \sum_{jk}\tilde{E}_{jk}\otimes\Phi(\tilde{E}_{jk})$ as in the parent. The dephasing channel along the unit pure real quaternion $\hat{\mathbf{n}}$ is
 $$
 \Phi^{\mathrm{deph}}_p(\tilde{\rho})
 := (1-p)\,\tilde{\rho}
@@ -35,11 +35,11 @@ and compute $\Phi^{\mathrm{deph}}_p(\tilde{\rho})$ for the general state $\tilde
 $$
 \alpha^2 = (i\hat{\mathbf{n}})^2 = i^2\hat{\mathbf{n}}^2 = (-1)(-e_0) = e_0,
 \qquad
-\alpha^\dagger = (i\hat{\mathbf{n}})^\dagger = -i\,\hat{\mathbf{n}}^\dagger = -i(-\hat{\mathbf{n}}) = \alpha,
+\alpha^\dagger = (i\hat{\mathbf{n}})^{*} = -i\,\hat{\mathbf{n}}^\dagger = -i(-\hat{\mathbf{n}}) = \alpha,
 $$
-so $\alpha^2 = e_0$ and $\alpha$ is Hermitian, as the idempotent structure requires. Trace preservation is immediate: because $\tilde\Pi_\pm$ are Hermitian idempotents, $\tilde{K}_1^\dagger\tilde{K}_1 = p\,\tilde\Pi_+$ and $\tilde{K}_2^\dagger\tilde{K}_2 = p\,\tilde\Pi_-$, whence
+so $\alpha^2 = e_0$ and $\alpha$ is Hermitian, as the idempotent structure requires. Trace preservation is immediate: because $\tilde\Pi_\pm$ are Hermitian idempotents, $\tilde{K}_1^{*}\tilde{K}_1 = p\,\tilde\Pi_+$ and $\tilde{K}_2^{*}\tilde{K}_2 = p\,\tilde\Pi_-$, whence
 $$
-\tilde{K}_0^\dagger\tilde{K}_0 + \tilde{K}_1^\dagger\tilde{K}_1 + \tilde{K}_2^\dagger\tilde{K}_2
+\tilde{K}_0^{*}\tilde{K}_0 + \tilde{K}_1^{*}\tilde{K}_1 + \tilde{K}_2^{*}\tilde{K}_2
 = (1-p)\,e_0 + p\,(\tilde\Pi_+ + \tilde\Pi_-) = e_0 .
 $$
 
@@ -126,13 +126,13 @@ $$
 $$
 At $p=2$ the first operator vanishes, $\tilde{K}_0=0$, and the pair collapses to the single operator $\tilde{K}_1=i\hat{\mathbf{n}}$, which is unitary; that endpoint lies outside the parent's physical range $0\le p\le 1$.
 
-Trace preservation holds because $(i\hat{\mathbf{n}})^\dagger(i\hat{\mathbf{n}}) = (i\hat{\mathbf{n}})^2 = i^2\hat{\mathbf{n}}^2 = e_0$, so $\tilde{K}_0^\dagger\tilde{K}_0 + \tilde{K}_1^\dagger\tilde{K}_1 = (1-\tfrac{p}{2})e_0 + \tfrac{p}{2}e_0 = e_0$. The action is
+Trace preservation holds because $(i\hat{\mathbf{n}})^{*}(i\hat{\mathbf{n}}) = (i\hat{\mathbf{n}})^2 = i^2\hat{\mathbf{n}}^2 = e_0$, so $\tilde{K}_0^{*}\tilde{K}_0 + \tilde{K}_1^{*}\tilde{K}_1 = (1-\tfrac{p}{2})e_0 + \tfrac{p}{2}e_0 = e_0$. The action is
 $$
 \Phi(\tilde{\rho}) = \left(1-\tfrac{p}{2}\right)\tilde{\rho} + \tfrac{p}{2}\,(i\hat{\mathbf{n}})\,\tilde{\rho}\,(i\hat{\mathbf{n}}).
 $$
 Since $(i\hat{\mathbf{n}})\tilde{\rho}(i\hat{\mathbf{n}}) = -\hat{\mathbf{n}}\tilde{\rho}\hat{\mathbf{n}} = \tfrac{1}{2}\left(e_0 - i\mathbf{r} + 2i(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}}\right)$, this reproduces $\mathbf{r}' = (1-p)\mathbf{r} + p(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}}$, as required.
 
-**Conclusion.** The three-operator representation of Problem 1 is valid but **not minimal**: for $0<p<1$ the span of $\{\tilde{K}_0,\tilde{K}_1,\tilde{K}_2\}$ is two-dimensional, since $\tilde{K}_0 = \sqrt{1-p}\,(\tilde\Pi_+ + \tilde\Pi_-)$. The minimal representation given above has two operators. Consistently with the parent's dichotomy, dephasing has Kraus rank one at $p=0$ (the identity) and Kraus rank two for $0<p\le1$, and is therefore irreversible throughout the physical range except at its identity endpoint. The formal continuation to $p\in(1,2]$ is completely positive but leaves that range, and at $p=2$ it degenerates: $\tilde{K}_0=0$ and the channel reduces to the unitary conjugation $\tilde{\rho}\mapsto(i\hat{\mathbf{n}})\tilde{\rho}(i\hat{\mathbf{n}})^\dagger$, of Kraus rank one and reversible.
+**Conclusion.** The three-operator representation of Problem 1 is valid but **not minimal**: for $0<p<1$ the span of $\{\tilde{K}_0,\tilde{K}_1,\tilde{K}_2\}$ is two-dimensional, since $\tilde{K}_0 = \sqrt{1-p}\,(\tilde\Pi_+ + \tilde\Pi_-)$. The minimal representation given above has two operators. Consistently with the parent's dichotomy, dephasing has Kraus rank one at $p=0$ (the identity) and Kraus rank two for $0<p\le1$, and is therefore irreversible throughout the physical range except at its identity endpoint. The formal continuation to $p\in(1,2]$ is completely positive but leaves that range, and at $p=2$ it degenerates: $\tilde{K}_0=0$ and the channel reduces to the unitary conjugation $\tilde{\rho}\mapsto(i\hat{\mathbf{n}})\tilde{\rho}(i\hat{\mathbf{n}})^{*}$, of Kraus rank one and reversible.
 
 ## Problem 3: A Positive Map That Is Not Completely Positive
 
@@ -188,11 +188,11 @@ $$
 $$
 Here $\tilde{K}_0$ is Hermitian (it is an element of $\mathbb{M}_+$), while $\tilde{K}_1$ is not. Trace preservation follows from
 $$
-\tilde{K}_0^\dagger\tilde{K}_0 = \frac{1+s^2}{2}\,e_0 + i\,\frac{1-s^2}{2}\,e_3,
+\tilde{K}_0^{*}\tilde{K}_0 = \frac{1+s^2}{2}\,e_0 + i\,\frac{1-s^2}{2}\,e_3,
 \qquad
-\tilde{K}_1^\dagger\tilde{K}_1 = \frac{\gamma}{2}\left(e_0 - ie_3\right),
+\tilde{K}_1^{*}\tilde{K}_1 = \frac{\gamma}{2}\left(e_0 - ie_3\right),
 $$
-whose sum is $e_0$, since $1 + s^2 + \gamma = 2$ and $1 - s^2 - \gamma = 0$. A direct quaternion expansion of $\tilde{K}_0\tilde{\rho}\tilde{K}_0^\dagger + \tilde{K}_1\tilde{\rho}\tilde{K}_1^\dagger$ for $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ gives $\tfrac{1}{2}(e_0 + i\mathbf{r}')$ with exactly the Bloch map stated above; the $\tilde{K}_1$ term contributes the population $\tfrac{\gamma}{4}(1-r_3)(e_0 + ie_3)$ that is transferred to the ground state.
+whose sum is $e_0$, since $1 + s^2 + \gamma = 2$ and $1 - s^2 - \gamma = 0$. A direct quaternion expansion of $\tilde{K}_0\tilde{\rho}\tilde{K}_0^{*} + \tilde{K}_1\tilde{\rho}\tilde{K}_1^{*}$ for $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ gives $\tfrac{1}{2}(e_0 + i\mathbf{r}')$ with exactly the Bloch map stated above; the $\tilde{K}_1$ term contributes the population $\tfrac{\gamma}{4}(1-r_3)(e_0 + ie_3)$ that is transferred to the ground state.
 
 **Fixed states.** Set $r_1 = r_2 = 0$ and $z = \gamma + (1-\gamma)z$, giving $z = 1$. For every $\gamma>0$ the channel has the **unique** fixed state
 $$
@@ -320,8 +320,8 @@ The two canonical channels illustrate the two faces of irreversibility. Dephasin
 | $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ | State; $\mathbf{r}$ the Bloch vector |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
 | $\tilde\Pi_\pm(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 \pm i\hat{\mathbf{n}})$ | Idempotents along $\hat{\mathbf{n}}$ |
-| $\Phi(\tilde{Q}) = \sum_l \tilde{K}_l\tilde{Q}\tilde{K}_l^\dagger$ | Kraus representation |
-| $\sum_l \tilde{K}_l^\dagger\tilde{K}_l = e_0$ | Trace-preservation condition |
+| $\Phi(\tilde{Q}) = \sum_l \tilde{K}_l\tilde{Q}\tilde{K}_l^{*}$ | Kraus representation |
+| $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_0$ | Trace-preservation condition |
 | $J(\Phi) = \sum_{jk}\tilde{E}_{jk}\otimes\Phi(\tilde{E}_{jk})$ | Choi matrix; Kraus rank $=\mathrm{rank}\,J$ |
 | $\Phi^{\mathrm{deph}}_p$ | Dephasing channel along $\hat{\mathbf{n}}$ |
 | $\mathbf{r} \mapsto (1-p)\mathbf{r} + p(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}}$ | Dephasing Bloch map |

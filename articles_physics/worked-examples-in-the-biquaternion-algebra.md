@@ -8,7 +8,7 @@ This article works the computations of the biquaternion algebra out on explicit 
 $$
 \tilde{Q}=Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3,\qquad Q_\mu\in\mathbb{C},
 $$
-with the quaternion basis $e_0=1,e_1,e_2,e_3$ and the central complex unit $i$, $i^2=-1$, commuting with every $e_\mu$. The scalar part is $\mathrm{Sc}\,\tilde{Q}=Q_0$, the vector part is $\mathbf{Q}=Q_1e_1+Q_2e_2+Q_3e_3$, and the quaternion conjugate is $\bar{\tilde{Q}}=Q_0e_0-\mathbf{Q}$. The fixed element used throughout is
+with the quaternion basis $e_0=1,e_1,e_2,e_3$ and the central complex unit $i$, $i^2=-1$, commuting with every $e_\mu$. The scalar part is $\mathrm{Sc}\,\tilde{Q}=Q_0$, the vector part is $\mathbf{Q}=Q_1e_1+Q_2e_2+Q_3e_3$, and the quaternion conjugate is $\tilde{Q}^{\natural}=Q_0e_0-\mathbf{Q}$. The fixed element used throughout is
 $$
 \tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3 .
 $$
@@ -30,15 +30,15 @@ In physics these eight real components are the eight real numbers a general elem
 
 ## The Six Subspaces on a Concrete Element
 
-The six distinguished real subspaces are the fixed and anti-fixed spaces of the three commuting involutions $\bar{\cdot}$, ${}^{*}$ and ${}^{\dagger}=\bar{\cdot}\circ{}^{*}$; the fourth conjugation $\flat=-\dagger$ has the same two eigenspaces as ${}^{\dagger}$ with the roles exchanged, so it contributes no further subspaces. On the fixed element:
+The six distinguished real subspaces are the fixed and anti-fixed spaces of the three commuting involutions ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}={}^{\natural}\circ\bar{\cdot}$; the fourth conjugation $\flat=-{}^{*}$ has the same two eigenspaces as ${}^{*}$ with the roles exchanged, so it contributes no further subspaces. On the fixed element:
 
 | Subspace | Defining condition | Component of $\tilde{Q}$ |
 |---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ (centre) | $\bar{\tilde{Q}}=\tilde{Q}$ | $(2+i)e_0$ |
-| $\mathrm{Vect}(\mathbb{B})$ (vector) | $\bar{\tilde{Q}}=-\tilde{Q}$ | $(1-i)e_1+3e_2+ie_3$ |
+| $\mathbb{C}_{\mathbb{B}}$ (centre) | $\tilde{Q}^{\natural}=\tilde{Q}$ | $(2+i)e_0$ |
+| $\mathrm{Vect}(\mathbb{B})$ (vector) | $\tilde{Q}^{\natural}=-\tilde{Q}$ | $(1-i)e_1+3e_2+ie_3$ |
 | $\mathbb{H}_{\mathbb{B}}$ (quaternion) | $\tilde{Q}^{*}=\tilde{Q}$ | $2e_0+e_1+3e_2$ |
 | $i\mathbb{H}_{\mathbb{B}}$ (anti-quaternion) | $\tilde{Q}^{*}=-\tilde{Q}$ | $ie_0-ie_1+ie_3$ |
-| $\mathbb{M}_+$ (Hermitian) | $\tilde{Q}^{\dagger}=\tilde{Q}$ | $2e_0-ie_1+ie_3$ |
+| $\mathbb{M}_+$ (Hermitian) | $\tilde{Q}^{*}=\tilde{Q}$ | $2e_0-ie_1+ie_3$ |
 | $\mathbb{M}_-$ (anti-Hermitian) | $\tilde{Q}^{\flat}=\tilde{Q}$ | $ie_0+e_1+3e_2$ |
 
 The scalar-vector decomposition reads $\tilde{Q}=(2+i)e_0+\bigl((1-i)e_1+3e_2+ie_3\bigr)$, and the quaternion-anti-quaternion decomposition reads
@@ -57,18 +57,18 @@ and the two pieces are distinguished by the signs: $\tilde{Q}_+$ has real scalar
 
 Applying the four conjugations to $\tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3$ gives
 $$
-\bar{\tilde{Q}}=(2+i)e_0-(1-i)e_1-3e_2-ie_3,
+\tilde{Q}^{\natural}=(2+i)e_0-(1-i)e_1-3e_2-ie_3,
 $$
 $$
 \tilde{Q}^{*}=(2-i)e_0+(1+i)e_1+3e_2-ie_3,
 $$
 $$
-\tilde{Q}^{\dagger}=\bar{\tilde{Q}}{}^{*}=(2-i)e_0-(1+i)e_1-3e_2+ie_3,
+\tilde{Q}^{*}=\tilde{Q}^{\natural}\bar{\cdot}=(2-i)e_0-(1+i)e_1-3e_2+ie_3,
 $$
 $$
-\tilde{Q}^{\flat}=-\tilde{Q}^{\dagger}=-(2-i)e_0+(1+i)e_1+3e_2-ie_3 .
+\tilde{Q}^{\flat}=-\tilde{Q}^{*}=-(2-i)e_0+(1+i)e_1+3e_2-ie_3 .
 $$
-Each is an involution, and the Klein group is visible in $\tilde{Q}^{\dagger}=\bar{\tilde{Q}}{}^{*}=\tilde{Q}^{*\bar{}}$; the fourth conjugation satisfies $(\tilde{Q}^{\dagger})^{\flat}=-\tilde{Q}$, so it is the composition of $\dagger$ with the central sign $-1$. The fixed points of each involution give the six subspaces above: for instance the Hermitian part of $\tilde{Q}$ is $\tfrac12(\tilde{Q}+\tilde{Q}^{\dagger})=2e_0-ie_1+ie_3$, which agrees with the table.
+Each is an involution, and the Klein group is visible in $\tilde{Q}^{*}=\tilde{Q}^{\natural}\bar{\cdot}=\tilde{Q}^{*{}^{\natural}}$; the fourth conjugation satisfies $(\tilde{Q}^{*})^{\flat}=-\tilde{Q}$, so it is the composition of ${}^{*}$ with the central sign $-1$. The fixed points of each involution give the six subspaces above: for instance the Hermitian part of $\tilde{Q}$ is $\tfrac12(\tilde{Q}+\tilde{Q}^{*})=2e_0-ie_1+ie_3$, which agrees with the table.
 
 **Physical reading.** The quaternion conjugation reverses the spatial part and leaves the time slot, so it is the **spatial reversal** of the four-vector; the complex conjugation conjugates the coefficients $Q_\mu=q_\mu+iq'_\mu$, so it exchanges the material and informational readings of each slot and is the **sector exchange**; the Hermitian conjugation is the composition, the adjoint of a four-vector, and it is the involution that selects the observables.
 
@@ -88,7 +88,7 @@ $$
 
 which is nonzero, so $\tilde{Q}$ is a unit, with inverse
 $$
-\tilde{Q}^{-1}=\frac{\bar{\tilde{Q}}}{N(\tilde{Q})}=\frac{(2+i)e_0-(1-i)e_1-3e_2-ie_3}{11+2i}.
+\tilde{Q}^{-1}=\frac{\tilde{Q}^{\natural}}{N(\tilde{Q})}=\frac{(2+i)e_0-(1-i)e_1-3e_2-ie_3}{11+2i}.
 $$
 
 The element is neither purely material nor purely informational: its norm is complex with both parts nonzero, so it does not lie on either real sector and is not null. The material part $\tilde{Q}_-$ of the Hermitian decomposition has norm $N(\tilde{Q}_-)=\sum_\mu(Q_-)_\mu^2=(i)^2+1+9=i^2+10=9$, a spacelike interval in the $ict$ coordinate; the informational part has norm $N(\tilde{Q}_+)=4+(-i)^2+(i)^2=4-1-1=2$.
@@ -107,7 +107,7 @@ Both $\tilde A$ and $\tilde B$ have two nonzero complex coefficients. Moreover $
 
 ## Summary
 
-The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2=-1$. On the element $\tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3$ the six subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$ and ${}^{\flat}=-\dagger$ act on it as listed. The element has norm $N(\tilde{Q})=11+2i$, so it is a unit with $\tilde{Q}^{-1}=\bar{\tilde{Q}}/(11+2i)$; its material part has norm $9$ and its informational part norm $2$. The idempotents $\tilde\Pi_1,\tilde\Pi_2$ satisfy $\tilde\Pi_1\tilde\Pi_2=0$ and give $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ with each summand minimal; the pair $\tilde A=e_0+ie_3$, $\tilde B=e_0-ie_3$ is an explicit zero-divisor pair, both factors null.
+The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2=-1$. On the element $\tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3$ the six subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and ${}^{\flat}=-{}^{*}$ act on it as listed. The element has norm $N(\tilde{Q})=11+2i$, so it is a unit with $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/(11+2i)$; its material part has norm $9$ and its informational part norm $2$. The idempotents $\tilde\Pi_1,\tilde\Pi_2$ satisfy $\tilde\Pi_1\tilde\Pi_2=0$ and give $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ with each summand minimal; the pair $\tilde A=e_0+ie_3$, $\tilde B=e_0-ie_3$ is an explicit zero-divisor pair, both factors null.
 
 ## Summary of Notation
 
@@ -117,11 +117,11 @@ The multiplication of $\mathbb{B}$ is the quaternion table with complex coeffici
 | $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ | Developed form, $Q_\mu\in\mathbb{C}$ |
 | $i$ | Central complex unit, $i^2=-1$ |
 | $\mathrm{Sc}\,\tilde{Q}=Q_0$, $\mathbf{Q}=\sum_{k=1}^3Q_ke_k$ | Scalar and vector parts |
-| $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}=\bar{\cdot}\circ{}^{*}$, ${}^{\flat}=-\dagger$ | The four conjugations |
+| ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}={}^{\natural}\circ\bar{\cdot}$, ${}^{\flat}=-{}^{*}$ | The four conjugations |
 | $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | The six subspaces |
 | $\tilde\Pi_1=\tfrac12(e_0+ie_3),\ \tilde\Pi_2=\tfrac12(e_0-ie_3)$ | Orthogonal primitive idempotents; chiral projectors |
 | $N(\tilde{Q})=11+2i$ | Norm of the fixed element; nonzero, so a unit |
-| $\tilde{Q}^{-1}=\bar{\tilde{Q}}/N(\tilde{Q})$ | Inverse of the fixed element |
+| $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/N(\tilde{Q})$ | Inverse of the fixed element |
 | $\tilde A=e_0+ie_3,\ \tilde B=e_0-ie_3$ | Null zero-divisor pair, $\tilde A\tilde B=0$ |
 
 ## Further Reading

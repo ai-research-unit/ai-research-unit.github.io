@@ -53,8 +53,8 @@ Every $\tilde A\in\mathbb{B}$ decomposes uniquely as
 
 $$
 \tilde A=\tilde A_{H}+\tilde A_{X},\qquad
-\tilde A_{H}=\tfrac12(\tilde A+\tilde A^\dagger)\in\mathbb{M}_+,\qquad
-\tilde A_{X}=\tfrac12(\tilde A-\tilde A^\dagger)\in\mathbb{M}_- .
+\tilde A_{H}=\tfrac12(\tilde A+\tilde A^{*})\in\mathbb{M}_+,\qquad
+\tilde A_{X}=\tfrac12(\tilde A-\tilde A^{*})\in\mathbb{M}_- .
 $$
 
 This is the Hermitian/anti-Hermitian decomposition, and it is the matrix decomposition of an operator into its self-adjoint and skew-adjoint parts. It is also the operation performed by the complex structure: since $i\mathbb{M}_\pm=\mathbb{M}_\mp$, multiplication by $i$ is exactly the map that exchanges the two sectors. The complexification that defines $\mathbb{B}$ and the two-sector decomposition are therefore the same structure.
@@ -153,7 +153,7 @@ $$
 
 Each of these ladder operators is the sum of one $\mathbb{M}_+$ element and one $\mathbb{M}_-$ element of equal magnitude, and conjugation flips the sign of the $\mathbb{M}_-$ part while leaving the $\mathbb{M}_+$ part fixed. The general complex amplitude has the same shape, though not necessarily the same weights: $\tilde a=\tilde{Q}+i\tilde P$ has $\mathbb{M}_+$ part $\tilde{Q}$ and $\mathbb{M}_-$ part $i\tilde P$, and $\tilde a^\dagger=\tilde{Q}-i\tilde P$ differs from $\tilde a$ only in the sign of the $\mathbb{M}_-$ part. Raising and lowering operators are therefore, exactly, the elements with both sector components nonzero: they sit off the sector axis, and the ladder sits at equal distance from both sectors. This is the precise version of the claim that the raising and lowering structure "lives between" the sectors, and it is correct.
 
-Two further properties are inherited from the algebra and worth recording. First, the ladder operators are nilpotent and null, $\tilde a_{\mathrm{tr}}^2=0$ and $N(\tilde a_{\mathrm{tr}})=\tilde a_{\mathrm{tr}}\bar{\tilde a}_{\mathrm{tr}}=0$, so they lie on the biquaternion-norm cone; this is the same zero-divisor cone that is the light cone of $\mathbb{M}_-$ and the boundary of the state space in $\mathbb{M}_+$, and it is established for the ladder operators in the angular-momentum article, so we do not rederive it. Second, the $\mathbb{M}_-$ part of the amplitude is a generator, not an observable: it is $i$ times the Hermitian quadrature $\tilde P$, and the factor of $i$ that turns $\tilde P$ into a generator is the same factor that exchanges the sectors.
+Two further properties are inherited from the algebra and worth recording. First, the ladder operators are nilpotent and null, $\tilde a_{\mathrm{tr}}^2=0$ and $N(\tilde a_{\mathrm{tr}})=\tilde a_{\mathrm{tr}}\tilde a^{\natural}_{\mathrm{tr}}=0$, so they lie on the biquaternion-norm cone; this is the same zero-divisor cone that is the light cone of $\mathbb{M}_-$ and the boundary of the state space in $\mathbb{M}_+$, and it is established for the ladder operators in the angular-momentum article, so we do not rederive it. Second, the $\mathbb{M}_-$ part of the amplitude is a generator, not an observable: it is $i$ times the Hermitian quadrature $\tilde P$, and the factor of $i$ that turns $\tilde P$ into a generator is the same factor that exchanges the sectors.
 
 ## The Phase Is the Sector Exchange
 
@@ -180,7 +180,7 @@ $$
 
 Both $\tilde K_1$ and $\tilde K_2$ are Hermitian elements of $\mathbb{M}_+$, while the bracket is $i$ times a Hermitian element and therefore lies in $\mathbb{M}_-$. So the oscillator's dynamical algebra is not contained in either sector: its generators are in $\mathbb{M}_+$ and its brackets are in $\mathbb{M}_-$, and the factor of $i$ that carries a bracket across is exactly the sector exchange. In this sense the "$su(1,1)$ of squeezing" is an algebra that lives between the sectors, even though no oscillator itself does.
 
-The generator content is sharper still. A squeeze, $\tilde{Q}\mapsto\tilde{Q}\cosh r-\tilde P\sinh r$, $\tilde P\mapsto\tilde P\cosh r-\tilde{Q}\sinh r$, is a hyperbolic transformation of the phase plane: it scales the two null combinations $\tilde{Q}\pm\tilde P$ by $e^{\mp r}$. A Lorentz boost in the $(t,x)$ plane of $\mathbb{M}_-$ does the same thing to the null combinations $ct\pm x$. Concretely, the boost rotor $\tilde\Lambda=\cosh(\psi/2)\,e_0+i\sinh(\psi/2)e_1$ lies in $\mathbb{M}_+$ and acts on $\tilde{Q}_{4}=ict\,e_0+x\,e_1\in\mathbb{M}_-$ by rotor conjugation $\tilde{Q}_4\mapsto\tilde\Lambda\tilde{Q}_4\tilde\Lambda^\dagger$; computing the result gives
+The generator content is sharper still. A squeeze, $\tilde{Q}\mapsto\tilde{Q}\cosh r-\tilde P\sinh r$, $\tilde P\mapsto\tilde P\cosh r-\tilde{Q}\sinh r$, is a hyperbolic transformation of the phase plane: it scales the two null combinations $\tilde{Q}\pm\tilde P$ by $e^{\mp r}$. A Lorentz boost in the $(t,x)$ plane of $\mathbb{M}_-$ does the same thing to the null combinations $ct\pm x$. Concretely, the boost rotor $\tilde\Lambda=\cosh(\psi/2)\,e_0+i\sinh(\psi/2)e_1$ lies in $\mathbb{M}_+$ and acts on $\tilde{Q}_{4}=ict\,e_0+x\,e_1\in\mathbb{M}_-$ by rotor conjugation $\tilde{Q}_4\mapsto\tilde\Lambda\tilde{Q}_4\tilde\Lambda^{*}$; computing the result gives
 
 $$
 ct'=\cosh\psi\,ct-\sinh\psi\,x,\qquad x'=\cosh\psi\,x-\sinh\psi\,ct,

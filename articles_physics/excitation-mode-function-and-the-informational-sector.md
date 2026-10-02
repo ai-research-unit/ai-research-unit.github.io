@@ -23,9 +23,9 @@ Because "the informational sector carries the state" is precisely the kind of cl
 **Conventions.** The notation is inherited unchanged from the read list. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$ and $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central scalar imaginary $i$ with $i^2=-1$. The material and informational sectors are
 
 $$
-\mathbb{M}_-=\{\tilde Q:\tilde Q^\dagger=-\tilde Q\}=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\},
+\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\},
 \qquad
-\mathbb{M}_+=\{\tilde Q:\tilde Q^\dagger=\tilde Q\}=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\},
+\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=\tilde Q\}=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\},
 $$
 
 with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The isomorphism with $M_2(\mathbb{C})$ is $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, hence $\Phi(ie_k)=\sigma_k$, and the trace is normalized by $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_0)=2$. The **spinor module** is the minimal left ideal $\mathbb{B}p$, with
@@ -92,7 +92,7 @@ $$
 
 These are the one-mode operators of the Fock-space and harmonic-oscillator articles, written in the module realization of this article.
 
-Two remarks about the operators are needed before the sector question is posed. First, the **excitation operator is not Hermitian**: $\tilde a^\dagger=x^\dagger=y\neq\tilde a$ and $\tilde a^\dagger\neq-\tilde a$, since $\tilde a$ has the Hermitian part $\tfrac12 ie_1$ and the anti-Hermitian part $-\tfrac12 e_2$, so it lies in neither sector. Creation and annihilation operators are not observables, and no sector claim about them is being made. What lies in a sector is the number operator $\tilde N$, which is Hermitian, and the state, which is Hermitian and positive. Second, the number operator is an **idempotent**: $\tilde N^2=\tilde N$ and $\tilde N^\dagger=\tilde N$. It is a projector, and it is the operator form of the occupation "one". The pair $\{e_0-\tilde N,\tilde N\}$ is the pair of orthogonal idempotents $p,q$ whose Peirce decomposition splits the spinor module into its two components.
+Two remarks about the operators are needed before the sector question is posed. First, the **excitation operator is not Hermitian**: $\tilde a^\dagger=x^{*}=y\neq\tilde a$ and $\tilde a^\dagger\neq-\tilde a$, since $\tilde a$ has the Hermitian part $\tfrac12 ie_1$ and the anti-Hermitian part $-\tfrac12 e_2$, so it lies in neither sector. Creation and annihilation operators are not observables, and no sector claim about them is being made. What lies in a sector is the number operator $\tilde N$, which is Hermitian, and the state, which is Hermitian and positive. Second, the number operator is an **idempotent**: $\tilde N^2=\tilde N$ and $\tilde N^{*}=\tilde N$. It is a projector, and it is the operator form of the occupation "one". The pair $\{e_0-\tilde N,\tilde N\}$ is the pair of orthogonal idempotents $p,q$ whose Peirce decomposition splits the spinor module into its two components.
 
 ## Three Objects, Three Homes
 
@@ -116,7 +116,7 @@ of the mode, and the occupation-number observable $\tilde N$, that are elements 
 
 The assertions to be checked are now explicit. Each is verified by recomputation from the definitions, on randomly generated elements as well as on the cases that suggested them.
 
-**A1. The occupation-number operator is in $\mathbb{M}_+$.** With $\tilde N=\tfrac12(e_0-ie_3)$, compute $\tilde N^\dagger=\tfrac12(e_0^\dagger+(-ie_3)^\dagger)=\tfrac12(e_0-ie_3)=\tilde N$, so $\tilde N\in\mathbb{M}_+$. Its square is $\tilde N^2=\tfrac14(e_0-ie_3)^2=\tfrac14(e_0^2-2ie_3+(ie_3)^2)=\tfrac14(e_0-2ie_3+e_0)=\tfrac12(e_0-ie_3)=\tilde N$, using $(ie_3)^2=e_0$. So the number operator is a Hermitian idempotent — a projector onto the occupied state — and it lies in $\mathbb{M}_+$. The same two computations with $\mu$ any unit pure real quaternion, $\tilde N_\mu=\tfrac12(e_0-i\mu)$, give $\tilde N_\mu^\dagger=\tilde N_\mu$ and $\tilde N_\mu^2=\tilde N_\mu$; this was checked on twenty random unit $\mu$, not only on $\mu=e_3$.
+**A1. The occupation-number operator is in $\mathbb{M}_+$.** With $\tilde N=\tfrac12(e_0-ie_3)$, compute $\tilde N^{*}=\tfrac12(e_0^\dagger+(-ie_3)^{*})=\tfrac12(e_0-ie_3)=\tilde N$, so $\tilde N\in\mathbb{M}_+$. Its square is $\tilde N^2=\tfrac14(e_0-ie_3)^2=\tfrac14(e_0^2-2ie_3+(ie_3)^2)=\tfrac14(e_0-2ie_3+e_0)=\tfrac12(e_0-ie_3)=\tilde N$, using $(ie_3)^2=e_0$. So the number operator is a Hermitian idempotent — a projector onto the occupied state — and it lies in $\mathbb{M}_+$. The same two computations with $\mu$ any unit pure real quaternion, $\tilde N_\mu=\tfrac12(e_0-i\mu)$, give $\tilde N_\mu^{*}=\tilde N_\mu$ and $\tilde N_\mu^2=\tilde N_\mu$; this was checked on twenty random unit $\mu$, not only on $\mu=e_3$.
 
 **A2. The vacuum projector is in $\mathbb{M}_+$.** The complement $e_0-\tilde N=\tfrac12(e_0+ie_3)=p$ is Hermitian and idempotent by the same computation, so $p\in\mathbb{M}_+$. More generally $\tfrac12(e_0+i\mu)$ is Hermitian, idempotent, and of trace one for every unit pure quaternion $\mu$. These are the pure-state projectors of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and the single-mode occupation basis is exactly this pair.
 
@@ -124,7 +124,7 @@ The assertions to be checked are now explicit. Each is verified by recomputation
 $$
 \tilde\rho^2-\tilde\rho=\tfrac14\big(|\mathbf r|^2-1\big)e_0,\qquad
 \mathrm{Tr}(\tilde\rho)=1,\qquad
-\tilde\rho^\dagger=\tilde\rho,
+\tilde\rho^{*}=\tilde\rho,
 $$
 and the eigenvalues are $\lambda_\pm=\tfrac12(1\pm|\mathbf r|)$, so positivity is exactly $|\mathbf r|\leq1$. These identities were checked on thirty random $\mathbf r$, including the interior point $\mathbf r=(0.6,-0.2,0.3)$ and the boundary point $\mathbf r=(1,0,0)$, not only on $\mathbf r=0$. The set of such $\tilde\rho$ is the Bloch ball, a three-dimensional subset of the four-dimensional real space $\mathbb{M}_+$.
 
@@ -146,7 +146,7 @@ The phrase "the state space is $\mathbb{M}_+$" invites the reading that $\mathbb
 - **$\mathbb{M}_+$ is not a complex vector space.** Multiplication by $i$ exchanges the sectors, $i\mathbb{M}_+=\mathbb{M}_-$, so $\mathbb{M}_+$ has no complex structure inherited from $\mathbb{B}$. It is a real vector space of dimension four.
 - **$\mathbb{M}_+$ is not closed under multiplication.** $(ie_1)(ie_2)=-e_3\in\mathbb{M}_-$ is the standard counterexample. The product of two Hermitian elements is Hermitian only if they commute; the symmetrized product $\tfrac12(\tilde P\tilde H+\tilde H\tilde P)$ does remain in $\mathbb{M}_+$, which is the sense in which $\mathbb{M}_+$ is a Jordan (not associative) algebra.
 - **$\mathbb{M}_+$ is a real Hilbert space under the trace pairing.** On the basis $\{e_0,ie_1,ie_2,ie_3\}$ one has $\mathrm{Tr}(ie_j\,ie_k)=2\delta_{jk}$ and $\mathrm{Tr}(e_0\,ie_k)=0$, so the pairing $\langle\tilde P,\tilde H\rangle=\tfrac12\mathrm{Tr}(\tilde P\tilde H)=\mathrm{Sc}(\tilde P\tilde H)$ is the standard Euclidean inner product in the four real coordinates $(p_0,p_1,p_2,p_3)$, hence positive definite. In this sense $\mathbb{M}_+$ is a four-dimensional real Hilbert space, and $\Phi$ identifies it with the Hermitian $2\times2$ matrices with the Hilbert–Schmidt product.
-- **$\mathbb{M}_+$ is not a Hilbert space under the biquaternion norm.** The biquaternion norm $N(\tilde Q)=\tilde Q\bar{\tilde Q}$ restricts to $N(h_0e_0+i\mathbf h)=h_0^2-|\mathbf h|^2$, of signature $(1,3)$; it is indefinite, and it vanishes on the cone $h_0^2=|\mathbf h|^2$. The positivity condition on states is the biquaternion-norm (light-cone) condition, not the trace-pairing one, so the two natural forms on $\mathbb{M}_+$ do different work.
+- **$\mathbb{M}_+$ is not a Hilbert space under the biquaternion norm.** The biquaternion norm $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ restricts to $N(h_0e_0+i\mathbf h)=h_0^2-|\mathbf h|^2$, of signature $(1,3)$; it is indefinite, and it vanishes on the cone $h_0^2=|\mathbf h|^2$. The positivity condition on states is the biquaternion-norm (light-cone) condition, not the trace-pairing one, so the two natural forms on $\mathbb{M}_+$ do different work.
 
 The correct statement is therefore: $\mathbb{M}_+$ is a four-dimensional **real** Hilbert space under the Hilbert–Schmidt (trace) pairing, whose elements are the Hermitian operators on the two-dimensional module; the density matrices of one fermionic mode form a three-dimensional subset of it; and it is not the module itself, which is a complex two-dimensional space of state vectors. The qualification "in the sense of the trace pairing" is not optional, because under the other natural form the space is not even positive definite.
 
@@ -185,7 +185,7 @@ The mismatch is a real finding and is stated as one. It does not contradict the 
 
 The counting is only half the structural statement; the other half is the exact location of the definite solution, and it is not $\mathbb{M}_+$.
 
-The spinor module is realized inside the algebra as the minimal left ideal $\mathbb{B}p$, with $p=\tfrac12(e_0+ie_3)$ and basis $\{p,y\}$, $y=\tfrac12(ie_1+e_2)$. A general spinor is therefore $\tilde\psi=\psi_1p+\psi_2y$ with $\psi_1,\psi_2\in\mathbb{C}$, a four-real-dimensional space. Its Hermitian conjugate is $\tilde\psi^\dagger=\overline{\psi_1}\,p+\overline{\psi_2}\,x$, using $y^\dagger=x$ and $p^\dagger=p$. The condition $\tilde\psi^\dagger=\tilde\psi$ forces, comparing coefficients in the independent directions $p,x,y$,
+The spinor module is realized inside the algebra as the minimal left ideal $\mathbb{B}p$, with $p=\tfrac12(e_0+ie_3)$ and basis $\{p,y\}$, $y=\tfrac12(ie_1+e_2)$. A general spinor is therefore $\tilde\psi=\psi_1p+\psi_2y$ with $\psi_1,\psi_2\in\mathbb{C}$, a four-real-dimensional space. Its Hermitian conjugate is $\tilde\psi^{*}=\overline{\psi_1}\,p+\overline{\psi_2}\,x$, using $y^{*}=x$ and $p^\dagger=p$. The condition $\tilde\psi^{*}=\tilde\psi$ forces, comparing coefficients in the independent directions $p,x,y$,
 
 $$
 \psi_2=0\qquad\text{and}\qquad \psi_1=\overline{\psi_1}\ \ (\psi_1\in\mathbb{R}).
@@ -230,7 +230,7 @@ $\mathbb{M}_+$ is a four-dimensional real Hilbert space under the trace pairing 
 | $\tilde a=x$, $\tilde a^\dagger=y$ | One-mode ladder operators in $\mathbb{B}$ |
 | $\tilde N=\tilde a^\dagger\tilde a=\tfrac12(e_0-i\mu)$ | Occupation-number operator (idempotent, in $\mathbb{M}_+$) |
 | $\tilde\rho=\tfrac12(e_0+i\mathbf r)$, $|\mathbf r|\leq1$ | Density matrix of one mode (Bloch ball $\subset\mathbb{M}_+$) |
-| $N(\tilde Q)=\tilde Q\bar{\tilde Q}$ | Biquaternion norm; signature $(1,3)$ on $\mathbb{M}_+$ |
+| $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ | Biquaternion norm; signature $(1,3)$ on $\mathbb{M}_+$ |
 | $\mathrm{Sc}(\tilde P\tilde H)$ | Hilbert–Schmidt pairing on $\mathbb{M}_+$ (positive definite) |
 
 ## Further Reading

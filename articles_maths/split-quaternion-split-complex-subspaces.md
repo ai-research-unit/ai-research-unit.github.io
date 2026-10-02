@@ -154,7 +154,7 @@ The biquaternion algebra $\mathbb{B}$ is a $\mathbb{C}$-algebra: its centre $\ma
 
 **Example (a unit of the second plane).** For $\tilde q = 2 + e_3$, the split-quaternion norm is $N = 4 - 1 = 3$, so $\tilde q$ is a unit with inverse $(2 - e_3)/3$.
 
-**Example (the twisted multiplication).** Take $z_1 = 1$, $z_2 = e_2$, $w_1 = 1$, $w_2 = 0$ in $\mathbb{H}_{\mathrm{s}} = \mathbb{D}_2 \oplus \mathbb{D}_2 e_1$. Then $(1 + e_2 e_1)(1) = 1 + e_2 e_1 = 1 - e_1 e_2 = 1 - e_3$, while treating $e_1$ as commuting with $\mathbb{D}_2$ would give $1 + e_3$; the sign is the twist $e_1 e_2 = \bar{e_2}\, e_1$. This is the concrete content of the twisted formula above.
+**Example (the twisted multiplication).** Take $z_1 = 1$, $z_2 = e_2$, $w_1 = 1$, $w_2 = 0$ in $\mathbb{H}_{\mathrm{s}} = \mathbb{D}_2 \oplus \mathbb{D}_2 e_1$. Then $(1 + e_2 e_1)(1) = 1 + e_2 e_1 = 1 - e_1 e_2 = 1 - e_3$, while treating $e_1$ as commuting with $\mathbb{D}_2$ would give $1 + e_3$; the sign is the twist $e_1 e_2 = e_2^{\natural}\, e_1$. This is the concrete content of the twisted formula above.
 
 **Example (the isotropic lines).** For the first plane, $(1 + e_2)(1 - e_2) = 0$; for the second, $(1 + e_3)(1 - e_3) = 0$. The four lines $\mathbb{R}(1\pm e_2)$, $\mathbb{R}(1\pm e_3)$ are the split-complex traces of the null cone.
 

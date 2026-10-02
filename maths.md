@@ -1,7 +1,10 @@
 # __AI Maths__
 
-### <a href="articles_maths/introduction-and-mathematical-conventions.html">Introduction and Mathematical Conventions</a>
-<!-- the entry point to the corpus: what the six parts are and what each does; the five-slot spine Foundations, Groups, Rings and Fields, Linear Spaces and Linear Algebras shared by Parts I to III, and the further subjects each part adds after it, with geometry read along the same slots; the object ladder; the three rules of the ordering and the category rule of the reading unit; distance as the boundary between algebra and topology, the derivative and the measure as the boundary between topology and analysis, and geometry as the second intent of the same structure; the boundary tests that state what each part may not use; the synthetic progression of Part VI; the method of successive paths by which the corpus is learnt, a cycle through the six parts at one depth and then again one rung deeper; the transversal catalogues of Part V; the exclusion of physics; the notational and corpus conventions. -->
+### <a href="articles_maths/introduction-to-mathematics.html">Introduction to Mathematics</a>
+<!-- the entry point to the corpus: what the six parts are and what each does; the five-slot spine Foundations, Groups, Rings and Fields, Linear Spaces and Linear Algebras shared by Parts I to III, and the further subjects each part adds after it, with geometry read along the same slots; the object ladder; the three rules of the ordering and the category rule of the reading unit, with the groups inside a category and the split of the involution on the elements from the adjoint on the operators; distance as the boundary between algebra and topology, the derivative and the measure as the boundary between topology and analysis, and geometry as the second intent of the same structure; the boundary tests that state what each part may not use; the synthetic progression of Part VI; the method of successive paths by which the corpus is learnt, a cycle through the six parts at one depth and then again one rung deeper; the transversal catalogues of Part V; the exclusion of physics. The notation and the corpus conventions are in *Conventions in Mathematics*. -->
+
+### <a href="articles_maths/conventions-in-mathematics.html">Conventions in Mathematics</a>
+<!-- the conventions every article assumes, stated once: the symbols; the arithmetic conventions; the marks of an algebra with an involution, the bar for the complex conjugation of the scalars, the natural sign for the intrinsic quaternion conjugation, the star for the Hermitian conjugation, the flat for its negative, and the dagger reserved for the adjoint of an operator; the number systems and their glyphs, the case for the scalar sector and the tilde for the quaternionic factor, and how the two are read with the marks to give the conjugate of a glyph; the typography of the source; and the conventions of the corpus itself, the menu and its `+` marker, the five groups of a category, the article files and the skeleton, and the discipline of citing rather than restating. -->
 
 ## PART I : ALGEBRA
 
@@ -39,7 +42,62 @@
 ###<a href="articles_maths/universal-properties-and-categories.html">Universal Properties and Categories</a>
 <!-- objects and morphisms; the categories of sets, of groups, of rings and of modules over a fixed ring; functors, natural transformations and equivalence of categories; initial and terminal objects; universal properties and universal objects, with existence and uniqueness formulated as a single statement; products, coproducts, free objects, quotients and localisations as universal constructions; the universal properties this corpus relies on: the free group, the tensor product, the symmetric and exterior algebras, the fraction field, the completion; adjunction in outline. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/operators-on-a-lattice.html">Operators on a Lattice</a>
+<!-- the lattice endomorphisms and the maps preserving the meet and the join; the congruences read as kernels and the quotient as an operator; the lattice of congruences and the operator view of a lattice. -->
+
+### <a href="articles_maths/the-converse-relation-as-an-operator.html">The Converse Relation as an Operator</a>
+<!-- the passage $R\mapsto R^{-1}$ as an operator on relations; its behaviour under composition, inclusion and iteration; the pairs of mutually converse relations and the symmetrisation. -->
+
+### <a href="articles_maths/endomorphisms-of-a-relational-structure.html">Endomorphisms of a Relational Structure</a>
+<!-- the maps preserving a relation; the endomorphism monoid and its group of units, the automorphism group of the structure; the embeddings and the strong endomorphisms. -->
+
+### <a href="articles_maths/closure-operators-and-the-consequence-operator.html">Closure Operators and the Consequence Operator</a>
+<!-- closure as extensive, idempotent and monotone; the Galois connection to the family of closed sets; the consequence operator of a logic, its finitary part and the compactness of the closure. -->
+
+### <a href="articles_maths/the-order-automorphism-group.html">The Order Automorphism Group</a>
+<!-- $\operatorname{Aut}(P)$ of a poset and its action on the elements and on the ideals; the fixed-point structure; the group as a subgroup of $\operatorname{Sym}(P)$, with the linear and the affine orders as the extreme cases. -->
+
+### <a href="articles_maths/operators-on-a-poset.html">Operators on a Poset</a>
+<!-- monotone, antitone and residuated maps; the monoid of monotone maps with the constant maps and the identity; the Galois connections as pairs of residuated maps. -->
+
 ### - * Theory
+
+### <a href="articles_maths/orthocomplemented-lattices-and-the-involution.html">Orthocomplemented Lattices and the Involution</a>
+<!-- the complement as an order-reversing involution; the De Morgan laws; the failure of the complement in a general lattice and the passage to a semiorthocomplement. -->
+
+### <a href="articles_maths/orthomodular-lattices.html">Orthomodular Lattices</a>
+<!-- orthomodularity as the weak modular law; the failure of distributivity; the projection lattice of a Hilbert space, forward-referenced to Part II. -->
+
+### <a href="articles_maths/relation-algebras-and-the-converse.html">Relation Algebras and the Converse</a>
+<!-- the relation algebra axioms; the converse as the involution and composition as the product; the residuals and the Peircean law. -->
+
+### <a href="articles_maths/involutive-categories-and-the-dagger-functor.html">Involutive Categories and the Dagger Functor</a>
+<!-- the dagger as a contravariant involution on the morphisms; dagger categories, dagger functors and unitary morphisms; the self-adjoint morphisms and the dagger-theoretic analogues of the algebraic notions. -->
+
+### <a href="articles_maths/boolean-algebras-with-an-involution.html">Boolean Algebras with an Involution</a>
+<!-- the complement as the involution; involutive Boolean algebras and their homomorphisms; the representation and the fixed part. -->
+
+### <a href="articles_maths/groupoids-with-an-involution.html">Groupoids with an Involution</a>
+<!-- inversion on a groupoid as the canonical instance; the involutive structure, its orbits and its fixed elements; the non-abelian case and what the involution does not fix. -->
+
+### <a href="articles_maths/involutive-set-theory-and-the-symmetric-difference.html">Involutive Set Theory and the Symmetric Difference</a>
+<!-- symmetric difference as the product and the complement as the involution; the Boolean ring of sets and its self-adjoint part; the identification with the Boolean algebras of this category. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-converse-as-an-adjoint.html">The Converse as an Adjoint</a>
+<!-- the converse $R^{-1}$ as the adjoint of $R$ under the pairing of relations; the Galois reading and the associated unit and counit. -->
+
+### <a href="articles_maths/involutions-of-the-operator-layer.html">Involutions of the Operator Layer</a>
+<!-- the involution acting on the operators themselves; the adjoint operation, its fixed elements and its behaviour with respect to composition and order. -->
+
+### <a href="articles_maths/the-converse-relation-as-an-adjoint.html">The Converse Relation as an Adjoint</a>
+<!-- the converse as the adjoint to composition; its compatibility with the involution on the operator layer. -->
+
+### <a href="articles_maths/the-involution-on-the-closure-operators.html">The Involution on the Closure Operators</a>
+<!-- the complement of a closure operator and the dual interior operator; the involution and the Galois connection it reverses. -->
 
 ## Groups
 
@@ -84,10 +142,80 @@
 ###<a href="articles_maths/finite-simple-groups-of-lie-type.html">Finite Simple Groups of Lie Type</a>
 <!-- the Chevalley, Steinberg, Suzuki–Ree and twisted groups as abstract finite groups; the classification of the finite simple groups of Lie type; the orders of the groups; the algebraic-group structure, the Zariski topology and the building-theoretic constructions belong to Part II. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/inner-conjugation-and-the-class-operator.html">Inner Conjugation and the Class Operator</a>
+<!-- inner conjugation $x\mapsto gxg^{-1}$ as an operator on a group; the orbits, which are the conjugacy classes, the class operator and the class equation; the action on the subgroups and on the normal subgroups. -->
+
+### <a href="articles_maths/the-action-of-a-group-on-itself.html">The Action of a Group on Itself</a>
+<!-- the regular action of a group on itself by left translation; the two-sided action by left and right translation and the associated permutation representation; the kernel and its triviality, Cayley's theorem. -->
+
+### <a href="articles_maths/the-conjugation-representation.html">The Conjugation Representation</a>
+<!-- conjugation as a homomorphism $G\to\operatorname{Aut}(G)$; the inner automorphisms and the outer automorphisms as the quotient; the action of the group on its own conjugacy classes. -->
+
+### <a href="articles_maths/left-and-right-multiplication-in-a-group.html">Left and Right Multiplication in a Group</a>
+<!-- the one-sided actions $x\mapsto ax$ and $x\mapsto xa$; their commutation and the generation of the two-sided action; the regular representation they define. -->
+
+### <a href="articles_maths/the-cayley-action.html">The Cayley Action</a>
+<!-- the action of a group on itself by left translation read as a faithful permutation action; the embedding $G\hookrightarrow\operatorname{Sym}(G)$ and the regular representation as its linearisation. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-a-group.html">The Signed Sandwich on a Group</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on a group; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-a-group.html">Reflections as Signed Two-Sided Operators on a Group</a>
+<!-- the reflections of a group read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-a-group.html">The Signed Left Multiplication on a Group</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on a group; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-a-group.html">The Graded Action on a Module over a Group</a>
+<!-- the action of a graded module over a group; the compatibility of the action with the grading and the sign rule it imposes. -->
+
 ### - * Theory
 
 ### <a href="articles_maths/involutive-groups.html">Involutive Groups</a>
 <!-- an involutive group, that is a group with an involution, an anti-automorphism of order two; the notion presupposes no commutativity, and unlike a ring a group always carries one, the inversion, which is the canonical isomorphism with the opposite group, so the informative object is the set of involutions, in bijection with the involutive automorphisms through $\sigma \mapsto \sigma\iota$ and with the split extensions by $C_2$, while an anti-automorphism is an automorphism exactly when the group is abelian. The general structure: the fixed set $A^\sigma$, a subgroup exactly when its elements commute pairwise, and the inverted set $I(\sigma) = G^{\sigma\iota}$, which always is one; the conjugate products $g\sigma(g)$ and $\sigma(g)g$, which are only conjugate and need not be fixed; real, strongly real and ambivalent elements, with $S_n$ and $D_n$ ambivalent and strongly real, $Q_8$ ambivalent with only $\pm 1$ as products of two elements of order two, and $A_4$ not ambivalent; $\sigma$-stable subgroups and the induced involution on a quotient, with the image of the fixed set possibly strict; products, the swap with fixed set the diagonal, and the graph of an anti-isomorphism as the fixed set of a twisted involution; the semidirect product by an involutive automorphism, the split and non-split extensions, with the dihedral and dicyclic examples and the groups of order $2p$; and the involutions read off a presentation, the inversion and the word reversal in a free group, the Coxeter inversion together with the diagram automorphisms, and the inversion and reversal automorphisms of the braid groups, which are torsion-free and have no elements of order two. **An additional structure on the group, not a rung of any chain; it stands in the Theory list immediately after *Group Cohomology*, the last article it draws on, and before *The Classification of Finite Simple Groups*, so that every article it uses precedes it and the classification still closes the category.** The geometry of the spaces built from a fixed subgroup is Part IV, and the representation-theoretic treatment of the real elements is later still. -->
+
+### <a href="articles_maths/involutions-and-the-fixed-point-subgroup.html">Involutions and the Fixed-Point Subgroup</a>
+<!-- the fixed-point set of an involution of a group and when it is a subgroup; the inversion as the canonical involution, whose fixed set is central and generally not a subgroup. -->
+
+### <a href="articles_maths/involutive-group-actions.html">Involutive Group Actions</a>
+<!-- a group acting on an involutive structure and preserving the involution; the induced involution on the fixed points and on the quotients. -->
+
+### <a href="articles_maths/free-involutions-and-the-quotient.html">Free Involutions and the Quotient</a>
+<!-- a fixed-point-free involution of a group; the quotient and the double cover it defines, with the antipodal and the dihedral examples. -->
+
+### <a href="articles_maths/the-commuting-algebra-of-an-involution.html">The Commuting Algebra of an Involution</a>
+<!-- the elements commuting with an involutive automorphism; the centraliser, its relation to the fixed subgroup and its place in the semidirect product. -->
+
+### <a href="articles_maths/the-centre-of-an-involutive-group.html">The Centre of an Involutive Group</a>
+<!-- the centre of a group with an involution and the involution it inherits; the compatibility of the involution with centrality and with the commutator subgroup. -->
+
+### <a href="articles_maths/involutions-and-the-word-problem.html">Involutions and the Word Problem</a>
+<!-- the word problem for a group presented with an involution; the effect of the involution on the presentation and the decidability of the word problem. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/involutions-on-the-operator-layer.html">Involutions on the Operator Layer</a>
+<!-- the involution induced on the operators of a group, the adjoint operation arising from inversion; its fixed elements and its behaviour with respect to composition. -->
+
+### <a href="articles_maths/the-group-inversion-as-an-adjoint.html">The Group Inversion as an Adjoint</a>
+<!-- inversion as the adjoint of left multiplication under the natural pairing; the unit and the counit and the identification with the involution of the group algebra. -->
+
+### <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-a-group.html">The Adjoint of the Left Multiplication on a Group</a>
+<!-- the adjoint of the left multiplication on a group with respect to the natural pairing of the category; its explicit expression and its compatibility with the involution. -->
+
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-a-group.html">The Signed Adjoint Sandwich on a Group</a>
+<!-- the adjoint of the signed sandwich on a group; the explicit expression of the adjoint and the unitarity condition $u^{*}u = uu^{*} = 1$ it defines. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-a-group.html">The Signed Adjoint of the Reflection on a Group</a>
+<!-- the adjoint of a reflection read as a signed operator on a group; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-a-group.html">The Signed Adjoint of the Left Multiplication on a Group</a>
+<!-- the adjoint of the signed left multiplication on a group; its explicit expression and its relation to the signed sandwich. -->
+
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-group.html">The Graded Adjoint Action on a Module over a Group</a>
+<!-- the adjoint action of a graded module over a group; its compatibility with the grading and the sign rule. -->
 
 ### - Applications
 
@@ -236,10 +364,86 @@
 ###<a href="articles_maths/real-algebraic-geometry.html">Real Algebraic Geometry</a>
 <!-- real algebraic sets and semialgebraic sets; the Tarski–Seidenberg theorem; the relation to the real-closed fields of this part. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/derivations-of-a-ring.html">Derivations of a Ring</a>
+<!-- the derivations of a ring as the operators satisfying the Leibniz rule; the Lie algebra they form and the inner derivations. -->
+
+### <a href="articles_maths/inner-automorphisms-of-a-ring.html">Inner Automorphisms of a Ring</a>
+<!-- the automorphisms $x\mapsto uxu^{-1}$ by a unit; the inner automorphism group and the failure of commutativity in the non-commutative case. -->
+
+### <a href="articles_maths/left-and-right-multiplication-in-a-ring.html">Left and Right Multiplication in a Ring</a>
+<!-- the one-sided multiplication operators $x\mapsto ax$ and $x\mapsto xa$; their commutation up to the commutator $[a,b]$. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-a-ring.html">The Signed Sandwich on a Ring</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on a ring; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-a-ring.html">Reflections as Signed Two-Sided Operators on a Ring</a>
+<!-- the reflections of a ring read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-frobenius-operator-on-a-field-of-characteristic-p.html">The Frobenius Operator on a Field of Characteristic p</a>
+<!-- the Frobenius $x\mapsto x^p$ in characteristic $p$; additivity, the fixed field, and the perfect and imperfect cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-a-ring.html">The Signed Left Multiplication on a Ring</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on a ring; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-a-ring.html">The Graded Action on a Module over a Ring</a>
+<!-- the action of a graded module over a ring; the compatibility of the action with the grading and the sign rule it imposes. -->
+
 ### - * Theory
 
 ### <a href="articles_maths/involutive-rings.html">Involutive Rings</a>
-<!-- an involutive ring, that is a ring with an involution, an anti-automorphism of order two; the notion presupposes no commutativity, and it is the same datum as an order-two isomorphism $A \to A^{\mathrm{op}}$, so every ring with an involution is isomorphic to its opposite ring, while in the commutative case the opposite ring is the ring itself and the notion degenerates to an automorphism of order dividing two. The general structure: the fixed set $A^\sigma$ and the symmetric and skew elements, with $A = \mathrm{Sym} \oplus \mathrm{Skew}$ as abelian groups when $2$ is invertible, and the failure without commutativity of the multiplicative grading and of the closedness of $A^\sigma$ under multiplication; $\sigma$-ideals, the induced involution on a quotient and on a product, and $\sigma$-prime ideals and $\sigma$-prime rings, with the sufficient elementwise condition $aAb^{*} \neq 0$, with prime implying $\sigma$-prime and with the converse failing. The commutative case: $\sigma$ an automorphism of order two, $R = R^\sigma \oplus R^-$ with the characteristic-two failure, the conjugate product $x\sigma(x)$ and the conjugate sum $x+\sigma(x)$, the monic quadratic and the integrality of $R$ over $R^\sigma$, the affine involutions of $R[x]$ and their fixed subrings, localization and $\operatorname{Frac}(R)^\sigma = \operatorname{Frac}(R^\sigma)$, fields with involution as quadratic Galois extensions, quadratic in one characteristic and Artin–Schreier in the other, the exclusion of nontrivial order-preserving involutions of an ordered field, a table of examples, and the fixed ring $k[x^2,xy,y^2]$ of $k[x,y]$ as a ring that is not a unique factorisation domain. **An additional structure on the ring, not a rung of either chain; it stands at the seam between the commutative half and the non-commutative chain, after *Algebraically Closed Fields* and before *Semiprime Rings*.** The forms attached to an involution, the classification of the involutions of a central simple algebra, and everything a form or a pairing defines, are *Involutive Clifford Algebras*, in Part II. -->
+<!-- an involutive ring, that is a ring with an involution, an anti-automorphism of order two; the notion presupposes no commutativity, and it is the same datum as an order-two isomorphism $A \to A^{\mathrm{op}}$, so every ring with an involution is isomorphic to its opposite ring, while in the commutative case the opposite ring is the ring itself and the notion degenerates to an automorphism of order dividing two. The general structure: the fixed set $A^\sigma$ and the symmetric and skew elements, with $A = \mathrm{Sym} \oplus \mathrm{Skew}$ as abelian groups when $2$ is invertible, and the failure without commutativity of the multiplicative grading and of the closedness of $A^\sigma$ under multiplication; $\sigma$-ideals, the induced involution on a quotient and on a product, and $\sigma$-prime ideals and $\sigma$-prime rings, with the sufficient elementwise condition $aAb^{*} \neq 0$, with prime implying $\sigma$-prime and with the converse failing. The commutative case: $\sigma$ an automorphism of order two, $R = R^\sigma \oplus R^-$ with the characteristic-two failure, the conjugate product $x\sigma(x)$ and the conjugate sum $x+\sigma(x)$, the monic quadratic and the integrality of $R$ over $R^\sigma$, the affine involutions of $R[x]$ and their fixed subrings, localization and $\operatorname{Frac}(R)^\sigma = \operatorname{Frac}(R^\sigma)$, fields with involution as quadratic Galois extensions, quadratic in one characteristic and Artin–Schreier in the other, the exclusion of nontrivial order-preserving involutions of an ordered field, a table of examples, and the fixed ring $k[x^2,xy,y^2]$ of $k[x,y]$ as a ring that is not a unique factorisation domain. **An additional structure on the ring, not a rung of either chain; it stands at the seam between the commutative half and the non-commutative chain, after *Algebraically Closed Fields* and before *Semiprime Rings*.** The forms attached to an involution, the classification of the involutions of a central simple algebra, and everything a form or a pairing defines, are *Hilbert Algebras*, in Part II. -->
+
+### <a href="articles_maths/matrix-rings-with-an-involution.html">Matrix Rings with an Involution</a>
+<!-- the transpose, the conjugate transpose and the symplectic involution on a matrix ring; the classification of the involutions of $M_n(R)$. -->
+
+### <a href="articles_maths/rings-with-a-semilinear-involution.html">Rings with a Semilinear Involution</a>
+<!-- a semilinear involution with respect to a ring automorphism; the $\sigma$-semilinear case and the failure of the naive identities. -->
+
+### <a href="articles_maths/involutions-of-a-group-ring.html">Involutions of a Group Ring</a>
+<!-- the involutions of a group ring induced by the inversion and by an involution of the group; the twisted group ring and the compatibility with the coefficients. -->
+
+### <a href="articles_maths/involutive-local-rings.html">Involutive Local Rings</a>
+<!-- local rings with an involution; the involution on the maximal ideal and on the residue field, and the lifting of the residue involution. -->
+
+### <a href="articles_maths/involutions-of-a-polynomial-ring-and-the-symmetric-part.html">Involutions of a Polynomial Ring and the Symmetric Part</a>
+<!-- the involutions of $R[x]$, chiefly $x\mapsto -x$; the symmetric part and the graded decomposition it induces. -->
+
+### <a href="articles_maths/the-skew-field-of-a-ring-with-involution.html">The Skew Field of a Ring with Involution</a>
+<!-- the skew elements $\{x : x^* = -x\}$ against the symmetric elements; their interaction with the product and with the trace. -->
+
+### <a href="articles_maths/involutions-of-a-central-simple-algebra.html">Involutions of a Central Simple Algebra</a>
+<!-- the involutions of a central simple algebra; the first and the second kind, the transpose and the symplectic types, and the classifying invariants. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/involutions-of-the-endomorphism-ring.html">Involutions of the Endomorphism Ring</a>
+<!-- the involution induced on $\operatorname{End}(V)$ by a nondegenerate pairing; the adjoint of an endomorphism and the unitary elements it defines. -->
+
+### <a href="articles_maths/the-transpose-as-an-adjoint.html">The Transpose as an Adjoint</a>
+<!-- the transpose as the adjoint with respect to the natural pairing; the identification of the dual map and the trace duality. -->
+
+### <a href="articles_maths/star-derivations-and-the-skew-derivations.html">Star-Derivations and the Skew Derivations</a>
+<!-- the derivations commuting with the involution and the skew derivations; the Lie structure of the self-adjoint and the skew elements. -->
+
+### <a href="articles_maths/matrix-rings-and-the-adjoint.html">Matrix Rings and the Adjoint</a>
+<!-- the adjoint in a matrix ring with involution; the self-adjoint matrices, the group of unitary elements and the trace pairing. -->
+
+### <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-a-ring.html">The Adjoint of the Left Multiplication on a Ring</a>
+<!-- the adjoint of the left multiplication on a ring with respect to the natural pairing of the category; its explicit expression and its compatibility with the involution. -->
+
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-a-ring.html">The Signed Adjoint Sandwich on a Ring</a>
+<!-- the adjoint of the signed sandwich on a ring; the explicit expression of the adjoint and the unitarity condition $u^{*}u = uu^{*} = 1$ it defines. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-a-ring.html">The Signed Adjoint of the Reflection on a Ring</a>
+<!-- the adjoint of a reflection read as a signed operator on a ring; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-a-ring.html">The Signed Adjoint of the Left Multiplication on a Ring</a>
+<!-- the adjoint of the signed left multiplication on a ring; its explicit expression and its relation to the signed sandwich. -->
+
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-ring.html">The Graded Adjoint Action on a Module over a Ring</a>
+<!-- the adjoint action of a graded module over a ring; its compatibility with the grading and the sign rule. -->
 
 ### - Applications
 
@@ -307,10 +511,77 @@
 ### <a href="articles_maths/localization-and-completion-of-modules.html">Localization and Completion of Modules</a>
 <!-- $S^{-1}M$, $I$-adic completion, flatness, behaviour under closure of the base. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/endomorphisms-of-a-linear-space.html">Endomorphisms of a Linear Space</a>
+<!-- the endomorphism algebra of a vector space; its units, the general linear group, and its place as the first operator algebra. -->
+
+### <a href="articles_maths/the-transpose-of-a-linear-map.html">The Transpose of a Linear Map</a>
+<!-- the transpose of a linear map on the dual; the contravariant functor it defines and the double dual. -->
+
+### <a href="articles_maths/algebras-of-endomorphisms.html">Algebras of Endomorphisms</a>
+<!-- the subalgebras of $\operatorname{End}(V)$, the centralisers and the commutants; the double centraliser theorem. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-a-linear-space.html">The Signed Sandwich on a Linear Space</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on a linear space; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-a-linear-space.html">Reflections as Signed Two-Sided Operators on a Linear Space</a>
+<!-- the reflections of a linear space read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-a-linear-space.html">The Signed Left Multiplication on a Linear Space</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on a linear space; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-a-linear-space.html">The Graded Action on a Module over a Linear Space</a>
+<!-- the action of a graded module over a linear space; the compatibility of the action with the grading and the sign rule it imposes. -->
+
 ### - * Theory
 
 ### <a href="articles_maths/involutive-linear-spaces.html">Involutive Linear Spaces</a>
-<!-- a linear or semilinear map of order two on a linear space, form-free: the decomposition $V = V_+ \oplus V_-$ and the type $(p,q)$, the trace $p-q$ and the determinant $(-1)^q$, the $n+1$ conjugacy classes and the orbit $\operatorname{GL}(V)/(\operatorname{GL}(V_+) \times \operatorname{GL}(V_-))$, the Gaussian-binomial count over a finite field of odd order, the collapse in characteristic two where every involution is unipotent, the induced involutions on the dual, on tensor and exterior powers and on $\operatorname{End}_F(V)$, and the semilinear and antilinear involutions with the two signs of the square. No form, no norm, no distance: the form a linear involution preserves belongs to *Involutive Clifford Algebras*, and the $\mathbb{Z}/2$-grading to *Superalgebras and Graded Structures*. **An additional structure on a linear space, not a rung of any chain; it stands in the Theory list immediately after *Extension of Scalars*, the last article it draws on.** -->
+<!-- a linear or semilinear map of order two on a linear space, form-free: the decomposition $V = V_+ \oplus V_-$ and the type $(p,q)$, the trace $p-q$ and the determinant $(-1)^q$, the $n+1$ conjugacy classes and the orbit $\operatorname{GL}(V)/(\operatorname{GL}(V_+) \times \operatorname{GL}(V_-))$, the Gaussian-binomial count over a finite field of odd order, the collapse in characteristic two where every involution is unipotent, the induced involutions on the dual, on tensor and exterior powers and on $\operatorname{End}_F(V)$, and the semilinear and antilinear involutions with the two signs of the square. No form, no norm, no distance: the form a linear involution preserves belongs to *Hilbert Algebras*, and the $\mathbb{Z}/2$-grading to *Superalgebras and Graded Structures*. **An additional structure on a linear space, not a rung of any chain; it stands in the Theory list immediately after *Extension of Scalars*, the last article it draws on.** -->
+
+### <a href="articles_maths/involutions-of-the-dual-space.html">Involutions of the Dual Space</a>
+<!-- the involution induced on the dual by an involution of the space; the transposed involution and its fixed part. -->
+
+### <a href="articles_maths/involutions-of-the-endomorphism-algebra.html">Involutions of the Endomorphism Algebra</a>
+<!-- the adjoint involution on $\operatorname{End}(V)$ from a nondegenerate pairing; the unitary elements it defines. -->
+
+### <a href="articles_maths/involutions-of-a-graded-linear-space.html">Involutions of a Graded Linear Space</a>
+<!-- the grade involution and the graded decomposition; the parity and the super-structure it defines. -->
+
+### <a href="articles_maths/modules-over-an-involutive-ring.html">Modules over an Involutive Ring</a>
+<!-- modules over a ring with involution; the induced involution on the endomorphisms and the modules over the ring. -->
+
+### <a href="articles_maths/involutions-of-a-tensor-power.html">Involutions of a Tensor Power</a>
+<!-- the involutions induced on the tensor powers by an involution of the space; the symmetric and the exterior parts and the flip. -->
+
+### <a href="articles_maths/involutive-subspaces-and-the-decomposition.html">Involutive Subspaces and the Decomposition</a>
+<!-- the subspaces stable under an involution and the decomposition into the fixed and the anti-fixed parts. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-adjoint-of-an-endomorphism.html">The Adjoint of an Endomorphism</a>
+<!-- the adjoint of an endomorphism with respect to a nondegenerate pairing; existence, uniqueness and the resulting involutions of $\operatorname{End}(V)$. -->
+
+### <a href="articles_maths/unitary-endomorphisms.html">Unitary Endomorphisms</a>
+<!-- the endomorphisms preserving a nondegenerate pairing; the group of unitary elements, its Lie algebra and the self-adjoint operators. -->
+
+### <a href="articles_maths/the-involution-on-the-dual-operator.html">The Involution on the Dual Operator</a>
+<!-- the involution on the dual and the adjoint of the transpose; the compatibility of the two dualities. -->
+
+### <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-a-linear-space.html">The Adjoint of the Left Multiplication on a Linear Space</a>
+<!-- the adjoint of the left multiplication on a linear space with respect to the natural pairing of the category; its explicit expression and its compatibility with the involution. -->
+
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-a-linear-space.html">The Signed Adjoint Sandwich on a Linear Space</a>
+<!-- the adjoint of the signed sandwich on a linear space; the explicit expression of the adjoint and the unitarity condition $u^{*}u = uu^{*} = 1$ it defines. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-a-linear-space.html">The Signed Adjoint of the Reflection on a Linear Space</a>
+<!-- the adjoint of a reflection read as a signed operator on a linear space; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-a-linear-space.html">The Signed Adjoint of the Left Multiplication on a Linear Space</a>
+<!-- the adjoint of the signed left multiplication on a linear space; its explicit expression and its relation to the signed sandwich. -->
+
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-linear-space.html">The Graded Adjoint Action on a Module over a Linear Space</a>
+<!-- the adjoint action of a graded module over a linear space; its compatibility with the grading and the sign rule. -->
 
 ### - Applications
 
@@ -437,10 +708,83 @@
 ###<a href="articles_maths/descent-theory.html">Descent Theory</a>
 <!-- descent for sheaves and for modules; the relation to Grothendieck topologies; the geometric applications belong to Part II. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/the-sandwich-operator-on-an-algebra.html">The Sandwich Operator on an Algebra</a>
+<!-- the two-sided multiplication $x\mapsto axb$ on an algebra; the associator and its relation to the left and the right multiplication. -->
+
+### <a href="articles_maths/the-commutator-operator.html">The Commutator Operator</a>
+<!-- the commutator $x\mapsto [a,x]$ as an inner derivation; the inner derivations and the centre as their kernel. -->
+
+### <a href="articles_maths/the-hochschild-differential-as-an-operator.html">The Hochschild Differential as an Operator</a>
+<!-- the Hochschild differential and its square-zero property; the cochain complex and the cohomology it defines. -->
+
+### <a href="articles_maths/left-and-right-multiplication.html">Left and Right Multiplication</a>
+<!-- the one-sided multiplications of an algebra and the anti-homomorphism onto the opposite algebra; the associator as the obstruction to their commutation. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-an-algebra.html">The Signed Sandwich on an Algebra</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on an algebra; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-an-algebra.html">Reflections as Signed Two-Sided Operators on an Algebra</a>
+<!-- the reflections of an algebra read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-an-algebra.html">The Signed Left Multiplication on an Algebra</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on an algebra; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-an-algebra.html">The Graded Action on a Module over an Algebra</a>
+<!-- the action of a graded module over an algebra; the compatibility of the action with the grading and the sign rule it imposes. -->
+
 ### - * Theory
 
 ### <a href="articles_maths/involutive-linear-algebras.html">Involutive Linear Algebras</a>
-<!-- an involution of an algebra, that is an anti-automorphism of order two, form-free, together with the involutive automorphism that preserves the product: the definition, the opposite algebra with the coset $\operatorname{Anti}(A)=\sigma\operatorname{Aut}(A)$, the centre, the group of units and the two conjugate elements $a+\sigma(a)$ and $a\sigma(a)$; the decomposition $A=A^+\oplus A^-$ when $2\neq0$ and its collapse in characteristic two, where the symmetric and the skew elements coincide; the skew elements as a Lie algebra under the commutator, so that $A^-\oplus A^+$ is a $\mathbb{Z}/2$-graded Lie algebra, and the symmetric elements as a Jordan algebra under $x\circ y=\tfrac12(xy+yx)$, a subalgebra exactly when its elements commute pairwise, so that the fixed set of an anti-automorphism is a Jordan algebra and may still be an algebra (the diagonal matrices inside the upper triangular ones) while the fixed set of an involutive automorphism is always a subalgebra and the algebra is $\mathbb{Z}/2$-graded; the induced involution on a quotient by a $\sigma$-stable ideal, the exchange involution on $A\times A^{\mathrm{op}}$ whose fixed set is the diagonal, whose swap on $A\times A$ is instead an involutive automorphism, and the tensor product $\sigma\otimes\tau$ with its symmetric and skew parts; and the scalars, that is the $\varsigma$-semilinear involutions, the restriction to $F\cdot1$, the first and the second kind by the centre, and the descent $(B\otimes_FK)^{\mathrm{id}\otimes\varsigma}=B\otimes1$ for a quadratic extension. No form, no norm, no distance: the adjoint involutions, the orthogonal and the symplectic type and the trace and the reduced norm belong to *Involutive Clifford Algebras*, and the graded algebra to *Superalgebras and Graded Structures*. -->
+<!-- an involution of an algebra, that is an anti-automorphism of order two, form-free, together with the involutive automorphism that preserves the product: the definition, the opposite algebra with the coset $\operatorname{Anti}(A)=\sigma\operatorname{Aut}(A)$, the centre, the group of units and the two conjugate elements $a+\sigma(a)$ and $a\sigma(a)$; the decomposition $A=A^+\oplus A^-$ when $2\neq0$ and its collapse in characteristic two, where the symmetric and the skew elements coincide; the skew elements as a Lie algebra under the commutator, so that $A^-\oplus A^+$ is a $\mathbb{Z}/2$-graded Lie algebra, and the symmetric elements as a Jordan algebra under $x\circ y=\tfrac12(xy+yx)$, a subalgebra exactly when its elements commute pairwise, so that the fixed set of an anti-automorphism is a Jordan algebra and may still be an algebra (the diagonal matrices inside the upper triangular ones) while the fixed set of an involutive automorphism is always a subalgebra and the algebra is $\mathbb{Z}/2$-graded; the induced involution on a quotient by a $\sigma$-stable ideal, the exchange involution on $A\times A^{\mathrm{op}}$ whose fixed set is the diagonal, whose swap on $A\times A$ is instead an involutive automorphism, and the tensor product $\sigma\otimes\tau$ with its symmetric and skew parts; and the scalars, that is the $\varsigma$-semilinear involutions, the restriction to $F\cdot1$, the first and the second kind by the centre, and the descent $(B\otimes_FK)^{\mathrm{id}\otimes\varsigma}=B\otimes1$ for a quadratic extension. No form, no norm, no distance: the adjoint involutions, the orthogonal and the symplectic type and the trace and the reduced norm belong to *Hilbert Algebras*, and the graded algebra to *Superalgebras and Graded Structures*. -->
+
+### <a href="articles_maths/opposite-algebras-and-anti-isomorphisms.html">Opposite Algebras and Anti-Isomorphisms</a>
+<!-- the opposite algebra and the anti-isomorphisms onto it; an involution as an isomorphism $A\to A^{\mathrm{op}}$. -->
+
+### <a href="articles_maths/involutions-of-the-tensor-algebra.html">Involutions of the Tensor Algebra</a>
+<!-- the involutions of the tensor algebra and of its quotients; the extension of an involution of the space and the sign rules. -->
+
+### <a href="articles_maths/involutions-of-a-free-algebra.html">Involutions of a Free Algebra</a>
+<!-- the involutions of a free algebra; the reversal of words as the canonical anti-involution and the involutions of its quotients. -->
+
+### <a href="articles_maths/involutive-graded-algebras.html">Involutive Graded Algebras</a>
+<!-- algebras with a grading and an involution compatible with it; the graded involution and the super-involution. -->
+
+### <a href="articles_maths/unitary-elements-of-an-involutive-algebra.html">Unitary Elements of an Involutive Algebra</a>
+<!-- the elements with $u^*u = uu^* = 1$; the group of unitary elements, its Lie algebra of skew elements and their relation to the self-adjoint part. -->
+
+### <a href="articles_maths/the-self-adjoint-part-of-an-algebra.html">The Self-Adjoint Part of an Algebra</a>
+<!-- the self-adjoint elements $H(A)$ and their Jordan structure under the symmetrised product; the symmetric and the skew parts. -->
+
+### <a href="articles_maths/involutions-of-a-path-algebra.html">Involutions of a Path Algebra</a>
+<!-- the involutions of a path algebra; the reversal of the arrows and the compatibility with the relations of the quiver. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/involutions-of-the-operator-algebra.html">Involutions of the Operator Algebra</a>
+<!-- the involution on the algebra of operators of an algebra; the adjoint with respect to the category's pairing and its fixed elements. -->
+
+### <a href="articles_maths/the-adjoint-in-an-involutive-algebra.html">The Adjoint in an Involutive Algebra</a>
+<!-- the adjoint operation attached to a pairing on an involutive algebra; the left and the right adjoints and the relation between them. -->
+
+### <a href="articles_maths/unitary-operators-of-an-involutive-algebra.html">Unitary Operators of an Involutive Algebra</a>
+<!-- the operators preserved by the involution; the group of unitary operators and its relation to the unitary elements of the algebra. -->
+
+### <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-an-algebra.html">The Adjoint of the Left Multiplication on an Algebra</a>
+<!-- the adjoint of the left multiplication on an algebra with respect to the natural pairing of the category; its explicit expression and its compatibility with the involution. -->
+
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-an-algebra.html">The Signed Adjoint Sandwich on an Algebra</a>
+<!-- the adjoint of the signed sandwich on an algebra; the explicit expression of the adjoint and the unitarity condition $u^{*}u = uu^{*} = 1$ it defines. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-an-algebra.html">The Signed Adjoint of the Reflection on an Algebra</a>
+<!-- the adjoint of a reflection read as a signed operator on an algebra; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-an-algebra.html">The Signed Adjoint of the Left Multiplication on an Algebra</a>
+<!-- the adjoint of the signed left multiplication on an algebra; its explicit expression and its relation to the signed sandwich. -->
+
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-an-algebra.html">The Graded Adjoint Action on a Module over an Algebra</a>
+<!-- the adjoint action of a graded module over an algebra; its compatibility with the grading and the sign rule. -->
 
 ### - Applications
 
@@ -495,7 +839,93 @@
 
 ###<a href="articles_maths/macdonald-and-hall-littlewood-polynomials.html">Macdonald and Hall–Littlewood Polynomials</a>
 <!-- the Macdonald polynomials and their properties; the relation to the symmetric functions and to the double affine Hecke algebras; the Hall–Littlewood polynomials as the one-parameter deformation of the Schur functions. -->
+
+### - Operator Theory
+
+### <a href="articles_maths/multiplication-operators-on-a-commutative-algebra.html">Multiplication Operators on a Commutative Algebra</a>
+<!-- the multiplication operators of a commutative algebra; the regular representation and the Gelfand transform read as an operator. -->
+
+### <a href="articles_maths/the-jordan-multiplication-operators.html">The Jordan Multiplication Operators</a>
+<!-- the operators $x\mapsto a\circ x$ of the symmetrised product; the Jordan algebra generated by them. -->
+
+### <a href="articles_maths/operators-on-the-symmetric-algebra.html">Operators on the Symmetric Algebra</a>
+<!-- the operators of the symmetric algebra; the symmetric powers and the action of the symmetric group. -->
+
+### <a href="articles_maths/the-derivations-of-a-commutative-algebra.html">The Derivations of a Commutative Algebra</a>
+<!-- the derivations of a commutative algebra; the module structure of the derivation space and the Kähler differentials. -->
+
+### <a href="articles_maths/the-polarisation-operator.html">The Polarisation Operator</a>
+<!-- the polarisation of a Jordan product; the recovery of the multilinear map and the operator it defines. -->
+
+### <a href="articles_maths/the-left-and-right-multiplication-operators-on-a-jordan-algebra.html">The Left and Right Multiplication Operators on a Jordan Algebra</a>
+<!-- the one-sided multiplication in a Jordan algebra; the commutativity of the two and the quadratic representation. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-a-jordan-algebra.html">The Signed Sandwich on a Jordan Algebra</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on a jordan algebra; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-a-jordan-algebra.html">Reflections as Signed Two-Sided Operators on a Jordan Algebra</a>
+<!-- the reflections of a jordan algebra read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-a-jordan-algebra.html">The Signed Left Multiplication on a Jordan Algebra</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on a jordan algebra; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-a-jordan-algebra.html">The Graded Action on a Module over a Jordan Algebra</a>
+<!-- the action of a graded module over a jordan algebra; the compatibility of the action with the grading and the sign rule it imposes. -->
+
 ### - * Theory
+
+### <a href="articles_maths/jordan-algebras-with-an-involution.html">Jordan Algebras with an Involution</a>
+<!-- a Jordan algebra with a conjugate-linear involution that preserves the Jordan product: the self-adjoint part $H(J)$, the decomposition $J=H(J)\oplus iH(J)$, the formal reality of the involution, and the realisation of a special Jordan algebra as the symmetrisation of an associative $\ast$-algebra. -->
+
+### <a href="articles_maths/the-symmetric-algebra-with-an-involution.html">The Symmetric Algebra with an Involution</a>
+<!-- the involution induced on the symmetric algebra; the extension from the space and the symmetric part. -->
+
+### <a href="articles_maths/commutative-algebras-with-an-involution.html">Commutative Algebras with an Involution</a>
+<!-- commutative algebras with an involution; the fixed subalgebra and the descent to the self-adjoint part. -->
+
+### <a href="articles_maths/real-forms-and-the-descent-of-an-algebra.html">Real Forms and the Descent of an Algebra</a>
+<!-- real forms of a complex algebra with involution; the descent along the involution and the classification of the forms. -->
+
+### <a href="articles_maths/formally-real-algebras-and-the-sum-of-squares.html">Formally Real Algebras and the Sum of Squares</a>
+<!-- formally real algebras and the failure of a nonzero sum of squares to vanish; the order they carry. -->
+
+### <a href="articles_maths/the-symmetric-powers-of-an-involutive-module.html">The Symmetric Powers of an Involutive Module</a>
+<!-- the induced involution on the symmetric powers; the fixed and the skew parts and the graded decomposition. -->
+
+### <a href="articles_maths/jordan-triples-with-an-involution.html">Jordan Triples with an Involution</a>
+<!-- the Jordan triple system with an involution; the tripotents and the Peirce decomposition. -->
+
+### <a href="articles_maths/involution-invariant-ideals-of-the-symmetric-algebra.html">Involution-Invariant Ideals of the Symmetric Algebra</a>
+<!-- the ideals stable under the involution; the descent of the involution to a quotient and the structure of the quotient. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/involutions-of-the-multiplication-operators.html">Involutions of the Multiplication Operators</a>
+<!-- the involution on the multiplication operators of a commutative algebra; the adjoint with respect to the trace pairing. -->
+
+### <a href="articles_maths/adjoints-in-a-commutative-involutive-algebra.html">Adjoints in a Commutative Involutive Algebra</a>
+<!-- the adjoint operation in a commutative algebra with involution; the self-adjoint elements and the skew elements. -->
+
+### <a href="articles_maths/the-involution-on-the-multiplication-operators.html">The Involution on the Multiplication Operators</a>
+<!-- the induced involution on the multiplication operators; the fixed elements and the relation to the algebra involution. -->
+
+### <a href="articles_maths/the-adjoint-in-the-symmetric-algebra.html">The Adjoint in the Symmetric Algebra</a>
+<!-- the adjoint in the symmetric algebra with respect to its pairing; the self-adjoint operators and the algebraic differential operators they generate. -->
+
+### <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-a-jordan-algebra.html">The Adjoint of the Left Multiplication on a Jordan Algebra</a>
+<!-- the adjoint of the left multiplication on a jordan algebra with respect to the natural pairing of the category; its explicit expression and its compatibility with the involution. -->
+
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-a-jordan-algebra.html">The Signed Adjoint Sandwich on a Jordan Algebra</a>
+<!-- the adjoint of the signed sandwich on a jordan algebra; the explicit expression of the adjoint and the unitarity condition $u^{*}u = uu^{*} = 1$ it defines. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-a-jordan-algebra.html">The Signed Adjoint of the Reflection on a Jordan Algebra</a>
+<!-- the adjoint of a reflection read as a signed operator on a jordan algebra; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-a-jordan-algebra.html">The Signed Adjoint of the Left Multiplication on a Jordan Algebra</a>
+<!-- the adjoint of the signed left multiplication on a jordan algebra; its explicit expression and its relation to the signed sandwich. -->
+
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-jordan-algebra.html">The Graded Adjoint Action on a Module over a Jordan Algebra</a>
+<!-- the adjoint action of a graded module over a jordan algebra; its compatibility with the grading and the sign rule. -->
 
 ## Anti-symmetric Linear Algebras
 
@@ -540,7 +970,89 @@
 ###<a href="articles_maths/poisson-and-gerstenhaber-algebras.html">Poisson and Gerstenhaber Algebras</a>
 <!-- Poisson algebras and the properties of the bracket; the relation to the symplectic and Poisson forms of Part II; the Gerstenhaber algebras and their relation to Hochschild cohomology. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/derivations-of-a-lie-algebra.html">Derivations of a Lie Algebra</a>
+<!-- the derivations of a Lie algebra; the inner derivations of the adjoint representation and the outer derivations. -->
+
+### <a href="articles_maths/the-casimir-operator.html">The Casimir Operator</a>
+<!-- the Casimir operator of a semisimple Lie algebra; its centrality, its eigenvalues and its use in representation theory. -->
+
+### <a href="articles_maths/the-cartan-operator.html">The Cartan Operator</a>
+<!-- the Cartan operator of a Lie algebra; the Cartan subalgebra, the root decomposition and the Killing form. -->
+
+### <a href="articles_maths/the-exterior-derivative-on-the-lie-algebra.html">The Exterior Derivative on the Lie Algebra</a>
+<!-- the Cartan formula and the exterior derivative on the Lie algebra complex; the Chevalley–Eilenberg differential. -->
+
+### <a href="articles_maths/the-killing-form-operator.html">The Killing Form Operator</a>
+<!-- the operator defined by the Killing form; its invariance and the semisimplicity criterion it gives. -->
+
+### <a href="articles_maths/the-adjoint-action-of-a-lie-algebra.html">The Adjoint Action of a Lie Algebra</a>
+<!-- the adjoint action $x\mapsto \operatorname{ad}_x$; the Jacobi identity as its derivation property and the centre as its kernel. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-a-graded-algebra.html">The Signed Sandwich on a Graded Algebra</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on a graded algebra; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-a-graded-algebra.html">Reflections as Signed Two-Sided Operators on a Graded Algebra</a>
+<!-- the reflections of a graded algebra read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-a-graded-algebra.html">The Signed Left Multiplication on a Graded Algebra</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on a graded algebra; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-a-graded-algebra.html">The Graded Action on a Module over a Graded Algebra</a>
+<!-- the action of a graded module over a graded algebra; the compatibility of the action with the grading and the sign rule it imposes. -->
+
 ### - * Theory
+
+### <a href="articles_maths/the-cartan-involution-and-the-cartan-decomposition.html">The Cartan Involution and the Cartan Decomposition</a>
+<!-- the Cartan involution of a real semisimple Lie algebra and the Cartan decomposition; the maximal compact subalgebra. -->
+
+### <a href="articles_maths/real-forms-of-a-complex-lie-algebra.html">Real Forms of a Complex Lie Algebra</a>
+<!-- the real forms of a complex Lie algebra; the conjugation and the classification by the Satake diagram. -->
+
+### <a href="articles_maths/involutive-lie-superalgebras.html">Involutive Lie Superalgebras</a>
+<!-- Lie superalgebras with an involution; the compatibility with the parity and the super-involution. -->
+
+### <a href="articles_maths/involutions-of-the-exterior-algebra.html">Involutions of the Exterior Algebra</a>
+<!-- the involutions of the exterior algebra; the grade involution, the Hodge star and the reversal. -->
+
+### <a href="articles_maths/the-hodge-star-and-the-real-structure-of-the-exterior-algebra.html">The Hodge Star and the Real Structure of the Exterior Algebra</a>
+<!-- the Hodge star as an involution up to sign; the real and the complex structures it defines on the exterior algebra. -->
+
+### <a href="articles_maths/involutions-of-the-universal-enveloping-algebra.html">Involutions of the Universal Enveloping Algebra</a>
+<!-- the involutions of the enveloping algebra; the extension of the Cartan involution and the principal anti-automorphism. -->
+
+### <a href="articles_maths/graded-lie-algebras-with-an-involution.html">Graded Lie Algebras with an Involution</a>
+<!-- graded Lie algebras with an involution; the graded Cartan involution and the symmetric pair it defines. -->
+
+### <a href="articles_maths/symmetric-pairs-of-a-lie-algebra.html">Symmetric Pairs of a Lie Algebra</a>
+<!-- the symmetric pairs $(\mathfrak g,\mathfrak k)$ from an involution; the classification and the associated symmetric spaces, forward-referenced to Part IV. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-casimir-operator-and-the-involution.html">The Casimir Operator and the Involution</a>
+<!-- the Casimir operator under the involution; its self-adjointness under the involution. -->
+
+### <a href="articles_maths/involutions-of-the-enveloping-algebra.html">Involutions of the Enveloping Algebra</a>
+<!-- the adjoint involution on the enveloping algebra; the star structure and the unitary representations. -->
+
+### <a href="articles_maths/the-involution-on-the-exterior-derivative.html">The Involution on the Exterior Derivative</a>
+<!-- the involution and the exterior derivative; the induced involution on the cochain complex. -->
+
+### <a href="articles_maths/the-adjoint-representation-and-the-involution.html">The Adjoint Representation and the Involution</a>
+<!-- the adjoint representation under an involution; the symplectic and the orthogonal types and the self-dual representations. -->
+
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-a-graded-algebra.html">The Signed Adjoint Sandwich on a Graded Algebra</a>
+<!-- the adjoint of the signed sandwich on a graded algebra; the explicit expression of the adjoint and the unitarity condition $u^{*}u = uu^{*} = 1$ it defines. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-a-graded-algebra.html">The Signed Adjoint of the Reflection on a Graded Algebra</a>
+<!-- the adjoint of a reflection read as a signed operator on a graded algebra; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-a-graded-algebra.html">The Signed Adjoint of the Left Multiplication on a Graded Algebra</a>
+<!-- the adjoint of the signed left multiplication on a graded algebra; its explicit expression and its relation to the signed sandwich. -->
+
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-graded-algebra.html">The Graded Adjoint Action on a Module over a Graded Algebra</a>
+<!-- the adjoint action of a graded module over a graded algebra; its compatibility with the grading and the sign rule. -->
 
 ### - Applications
 
@@ -599,7 +1111,62 @@
 ###<a href="articles_maths/cluster-algebras.html">Cluster Algebras</a>
 <!-- cluster algebras and their seeds; the Laurent phenomenon; the relation to quiver representations. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/left-and-right-multiplication-of-a-module.html">Left and Right Multiplication of a Module</a>
+<!-- the one-sided actions of an algebra on a module; their commutation and the representation they define. -->
+
+### <a href="articles_maths/module-endomorphisms.html">Module Endomorphisms</a>
+<!-- the endomorphisms of a module; the endomorphism ring, its units and the density theorem. -->
+
+### <a href="articles_maths/the-endomorphism-algebra-of-a-module.html">The Endomorphism Algebra of a Module</a>
+<!-- the endomorphism algebra of a module over an algebra; its structure and its centre. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-a-bimodule-over-an-algebra.html">The Signed Sandwich on a Bimodule over an Algebra</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on a bimodule over an algebra; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-a-bimodule-over-an-algebra.html">Reflections as Signed Two-Sided Operators on a Bimodule over an Algebra</a>
+<!-- the reflections of a bimodule over an algebra read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-a-module-over-an-algebra.html">The Signed Left Multiplication on a Module over an Algebra</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on a module over an algebra; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-a-bimodule-over-an-algebra.html">The Graded Action on a Module over a Bimodule over an Algebra</a>
+<!-- the action of a graded module over a module over an algebra; the compatibility of the action with the grading and the sign rule it imposes. -->
+
 ### - * Theory
+
+### <a href="articles_maths/modules-over-an-involutive-algebra.html">Modules over an Involutive Algebra</a>
+<!-- modules over an algebra with involution; the induced involution on the endomorphisms. -->
+
+### <a href="articles_maths/the-adjoint-of-a-module-homomorphism.html">The Adjoint of a Module Homomorphism</a>
+<!-- the adjoint of a homomorphism with respect to the pairings; the transpose and the left and the right adjoints. -->
+
+### <a href="articles_maths/the-involution-on-the-endomorphism-ring-of-a-module.html">The Involution on the Endomorphism Ring of a Module</a>
+<!-- the involution induced on the endomorphism ring by a pairing; the self-adjoint endomorphisms and the unitary elements. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-adjoint-of-the-sandwich-on-a-bimodule-over-an-algebra.html">The Adjoint of the Sandwich on a Bimodule over an Algebra</a>
+<!-- the adjoint of the two-sided action on a bimodule; its explicit expression and its compatibility with the involution. -->
+
+### <a href="articles_maths/module-operators-with-an-involution.html">Module Operators with an Involution</a>
+<!-- the operators of a module with an involution; the self-adjoint and the unitary operators. -->
+
+### <a href="articles_maths/involutions-of-the-module-endomorphism-ring.html">Involutions of the Module Endomorphism Ring</a>
+<!-- the involutions of the endomorphism ring of a module; the adjoint from a pairing and the fixed part. -->
+
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-a-bimodule-over-an-algebra.html">The Signed Adjoint Sandwich on a Bimodule over an Algebra</a>
+<!-- the adjoint of the signed sandwich on a bimodule over an algebra; the explicit expression of the adjoint and the unitarity condition $u^{*}u = uu^{*} = 1$ it defines. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-a-bimodule-over-an-algebra.html">The Signed Adjoint of the Reflection on a Bimodule over an Algebra</a>
+<!-- the adjoint of a reflection read as a signed operator on a bimodule over an algebra; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-a-module-over-an-algebra.html">The Signed Adjoint of the Left Multiplication on a Module over an Algebra</a>
+<!-- the adjoint of the signed left multiplication on a module over an algebra; its explicit expression and its relation to the signed sandwich. -->
+
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-bimodule-over-an-algebra.html">The Graded Adjoint Action on a Module over a Bimodule over an Algebra</a>
+<!-- the adjoint action of a graded module over a module over an algebra; its compatibility with the grading and the sign rule. -->
 
 ### - Applications
 
@@ -648,7 +1215,65 @@
 ### <a href="articles_maths/graph-theory.html">Graph Theory</a>
 <!-- graphs as sets with a relation: vertices, edges, the directed and the undirected case, morphisms, subgraphs and induced subgraphs; paths and cycles, connectedness and the components; trees and forests, spanning trees, and the characterisations of a tree; the graph distance as the number of edges on a shortest path, with the diameter, the growth and the geodesic properties that a Cayley graph is read through below; bipartite graphs, matchings and colourings, at the level the group-theoretic articles use; the standard families (the complete, the path, the cycle and the bipartite graphs, and the Dynkin diagrams as graphs); the Cayley graph, the word metric and the Bass–Serre tree are constructed in *Topology on Groups*, where the group acts on them. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/continuous-maps-as-operators.html">Continuous Maps as Operators</a>
+<!-- a continuous map read as an operator between spaces; the functoriality, the composition and the induced map on the algebra of open sets. -->
+
+### <a href="articles_maths/the-orbit-map.html">The Orbit Map</a>
+<!-- the quotient map of a group action as an operator; its universal property and the identification of the quotient topology. -->
+
+### <a href="articles_maths/operators-on-a-fixed-set.html">Operators on a Fixed Set</a>
+<!-- the closure and the interior as operators on the power set; the Kuratowski closure axioms and the monoid they generate. -->
+
+### <a href="articles_maths/continuous-maps-and-the-orbit-map.html">Continuous Maps and the Orbit Map</a>
+<!-- the orbit map of a group action as a continuous operator; the induced map on the quotient and the fixed points. -->
+
+### <a href="articles_maths/operators-on-a-boolean-algebra.html">Operators on a Boolean Algebra</a>
+<!-- the operators on the Boolean algebra of a space; the interior and the closure as a pair of adjoint operators. -->
+
+### <a href="articles_maths/the-boundary-operator-of-a-simplex.html">The Boundary Operator of a Simplex</a>
+<!-- the boundary of a simplex as an operator; the square-zero property and the chain complex it starts. -->
+
 ### - * Theory
+
+### <a href="articles_maths/involutions-on-a-topological-space-and-the-fixed-set.html">Involutions on a Topological Space and the Fixed Set</a>
+<!-- a continuous involution of a space; the fixed set and its closedness, and the orbit space as the quotient. -->
+
+### <a href="articles_maths/spaces-with-an-involution-and-the-orbit-space.html">Spaces with an Involution and the Orbit Space</a>
+<!-- the orbit space of a continuous involution; the quotient map, its universal property and the failure of the quotient to be Hausdorff in general. -->
+
+### <a href="articles_maths/the-orbit-space-of-a-free-involution.html">The Orbit Space of a Free Involution</a>
+<!-- a fixed-point-free continuous involution; the two-fold covering, the orbit space and the classification by the classifying space. -->
+
+### <a href="articles_maths/equivariant-maps-and-equivariant-homotopy.html">Equivariant Maps and Equivariant Homotopy</a>
+<!-- maps commuting with the involution; the equivariant homotopy relation and the equivariant homotopy category. -->
+
+### <a href="articles_maths/two-fold-coverings-and-the-borel-construction.html">Two-Fold Coverings and the Borel Construction</a>
+<!-- two-fold coverings as the orbit spaces of free involutions; the Borel construction and the homotopy quotient. -->
+
+### <a href="articles_maths/involutive-uniform-spaces.html">Involutive Uniform Spaces</a>
+<!-- uniform spaces with an involution; the compatibility with the uniform structure and the induced involution on the completion. -->
+
+### <a href="articles_maths/involutive-proximity-spaces.html">Involutive Proximity Spaces</a>
+<!-- proximity spaces with an involution; the compatibility with the proximity relation and the fixed sets. -->
+
+### <a href="articles_maths/borsuk-s-theorem-and-the-antipodal-involution.html">Borsuk's Theorem and the Antipodal Involution</a>
+<!-- the antipodal involution of the sphere and Borsuk's antipodal theorem; the fixed-point-free action and the degree of the antipodal map. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/equivariant-operators-under-a-continuous-involution.html">Equivariant Operators under a Continuous Involution</a>
+<!-- the operators commuting with a continuous involution; their adjoints, their fixed elements and their equivariance. -->
+
+### <a href="articles_maths/the-involution-on-the-cohomology-operators.html">The Involution on the Cohomology Operators</a>
+<!-- the involution induced on the cohomology operators by an involution of the space; the fixed part and its relation to the equivariant cohomology. -->
+
+### <a href="articles_maths/the-antipodal-map-and-the-adjoint.html">The Antipodal Map and the Adjoint</a>
+<!-- the antipodal map as an operator and its adjoint; the degree and the pairing it defines. -->
+
+### <a href="articles_maths/hermitian-pairings-on-a-topological-space.html">Hermitian Pairings on a Topological Space</a>
+<!-- Hermitian pairings on the cohomology of a space with an involution; the signature and the fixed part. -->
 
 ## Topology on Groups
 
@@ -699,10 +1324,62 @@
 ###<a href="articles_maths/bruhat-tits-theory.html">Bruhat–Tits Theory</a>
 <!-- the Bruhat–Tits building of a reductive group over a local field. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/operators-on-a-topological-group.html">Operators on a Topological Group</a>
+<!-- the continuous operators of a topological group; the homeomorphism group and the action by translation. -->
+
+### <a href="articles_maths/convolution-on-a-topological-group.html">Convolution on a Topological Group</a>
+<!-- convolution as a product on the space of functions; its associativity, its continuity and the algebra it generates. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-a-topological-group.html">The Signed Sandwich on a Topological Group</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on a topological group; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-a-topological-group.html">Reflections as Signed Two-Sided Operators on a Topological Group</a>
+<!-- the reflections of a topological group read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-a-topological-group.html">The Signed Left Multiplication on a Topological Group</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on a topological group; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-a-topological-group.html">The Graded Action on a Module over a Topological Group</a>
+<!-- the action of a graded module over a topological group; the compatibility of the action with the grading and the sign rule it imposes. -->
+
 ### - * Theory
 
 ### <a href="articles_maths/involutive-topological-groups.html">Involutive Topological Groups</a>
 <!-- an involutive topological group, that is a topological group with a continuous involution, an anti-automorphism of order two; continuity is a genuine hypothesis, the inversion and the inner involutions being continuous for free and an outer one being able to fail; the fixed and the inverted sets are closed, so the inverted subgroup is a closed subgroup; a continuous involution exchanges the left and the right uniformities and therefore extends to the completion, which is again involutive; the quotient by the inverted subgroup embeds in the fixed set, and the embedding is a homeomorphism onto a closed piece of it when the group is compact; the split extension by $C_2$ is a topological group exactly when the involutive automorphism is continuous; on an abelian group the topological involutions are the continuous automorphisms of order two. -->
+
+### <a href="articles_maths/the-fixed-point-subgroup-of-a-continuous-involution.html">The Fixed-Point Subgroup of a Continuous Involution</a>
+<!-- the fixed-point set of a continuous involution of a group; when it is a closed subgroup and the structure of the quotient. -->
+
+### <a href="articles_maths/involutive-compact-groups.html">Involutive Compact Groups</a>
+<!-- compact groups with a continuous involution; the fixed subgroup, the quotient and the representation-theoretic consequences. -->
+
+### <a href="articles_maths/involutive-profinite-groups.html">Involutive Profinite Groups</a>
+<!-- profinite groups with a continuous involution; the fixed subgroup and the Galois-theoretic examples. -->
+
+### <a href="articles_maths/involutions-and-pontryagin-duality.html">Involutions and Pontryagin Duality</a>
+<!-- an involution of a locally compact abelian group and the dual involution; the compatibility with Pontryagin duality. -->
+
+### <a href="articles_maths/involutive-group-actions-on-a-space.html">Involutive Group Actions on a Space</a>
+<!-- a group with an involution acting equivariantly on a space; the induced involution on the quotient and on the cohomology. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-a-topological-group.html">The Adjoint of the Left Multiplication on a Topological Group</a>
+<!-- the adjoint of the left multiplication on a topological group with respect to the form of the category; its explicit expression and its compatibility with the involution. -->
+
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-a-topological-group.html">The Signed Adjoint Sandwich on a Topological Group</a>
+<!-- the adjoint of the signed sandwich on a topological group; the explicit form of the adjoint and the unitarity condition it defines. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-a-topological-group.html">The Signed Adjoint of the Reflection on a Topological Group</a>
+<!-- the adjoint of a reflection read as a signed operator on a topological group; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-a-topological-group.html">The Signed Adjoint of the Left Multiplication on a Topological Group</a>
+<!-- the adjoint of the signed left multiplication on a topological group; its explicit expression and its relation to the signed sandwich. -->
+
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-topological-group.html">The Graded Adjoint Action on a Module over a Topological Group</a>
+<!-- the adjoint action of a graded module over a topological group; its compatibility with the grading and the sign rule. -->
 
 ## Topology on Rings and Fields
 
@@ -735,10 +1412,86 @@
 ###<a href="articles_maths/perfectoid-spaces.html">Perfectoid Spaces</a>
 <!-- perfectoid spaces and their properties; the relation to the adic spaces of this part and to the algebraic number theory of Part I. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/operators-on-a-topological-ring.html">Operators on a Topological Ring</a>
+<!-- the continuous operators of a topological ring; the units, the topological automorphisms and the action on the ideals. -->
+
+### <a href="articles_maths/the-completion-operator.html">The Completion Operator</a>
+<!-- the completion as an operator on a topological ring; its functoriality and its universal property. -->
+
+### <a href="articles_maths/the-residue-operator-of-a-valued-field.html">The Residue Operator of a Valued Field</a>
+<!-- the residue map of a valued field as an operator; its kernel, the valuation ring and the residue field. -->
+
+### <a href="articles_maths/the-frobenius-automorphism-of-a-finite-field.html">The Frobenius Automorphism of a Finite Field</a>
+<!-- the Frobenius as an operator of a finite field; its order and its fixed field. -->
+
+### <a href="articles_maths/the-valuation-operator.html">The Valuation Operator</a>
+<!-- the valuation as a multiplicative operator to the value group; its extension to the completion and the tropical reading. -->
+
+### <a href="articles_maths/operators-on-a-non-archimedean-field.html">Operators on a Non-Archimedean Field</a>
+<!-- the operators of a non-Archimedean field; the valuation ring, the residual operators and the spherical completeness. -->
+
+### <a href="articles_maths/the-left-and-right-multiplication-operators-on-a-topological-ring.html">The Left and Right Multiplication Operators on a Topological Ring</a>
+<!-- the one-sided multiplications of a topological ring; their continuity and the failure of their commutation. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-a-topological-ring.html">The Signed Sandwich on a Topological Ring</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on a topological ring; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-a-topological-ring.html">Reflections as Signed Two-Sided Operators on a Topological Ring</a>
+<!-- the reflections of a topological ring read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-a-topological-ring.html">The Signed Left Multiplication on a Topological Ring</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on a topological ring; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-a-topological-ring.html">The Graded Action on a Module over a Topological Ring</a>
+<!-- the action of a graded module over a topological ring; the compatibility of the action with the grading and the sign rule it imposes. -->
+
 ### - * Theory
 
 ### <a href="articles_maths/involutive-topological-rings-and-fields.html">Involutive Topological Rings and Fields</a>
 <!-- an involutive topological ring, that is a topological ring with a continuous involution, an anti-automorphism of order two; continuity is a genuine hypothesis, free for the discrete and the indiscrete topology, for the identity, and for an involution that preserves the ideal of a linear topology, and failing on $\mathbb{R}[x]$ with the $(x)$-adic topology for $f(x)\mapsto f(b-x)$ with $b\neq0$ and on $\mathbb{Q}(\sqrt{2})$ with the topology from $\mathbb{R}$ for the conjugation; the fixed and the skew sets are closed, being equalizers, so a dense fixed set forces the trivial involution, and closedness is the whole gain, the fixed set of a continuous anti-automorphism being closed without being a subring; the averaging map is continuous when $2$ is invertible and makes the fixed set a retract, so that the additive group splits topologically into the fixed and the skew parts; the $I$-adic criterion $\sigma(I)^m\subseteq I$ gives continuity whenever the involution preserves the ideal defining the topology, and the involution then extends to a continuous involution of the $I$-adic completion, whose fixed set is the closure of the fixed set when $2$ is invertible, as in $\mathbb{Z}_p[i]=\mathbb{Z}_p[X]/(X^2+1)$ with $X\mapsto-X$ and $\mathbb{R}[[x]]$ with $f(x)\mapsto f(-x)$; a $\sigma$-stable closed ideal gives a Hausdorff quotient carrying the involution, whose fixed set can be strictly larger than the image of the fixed set, as $\mathbb{Z}[i]/(2)$ shows, while the completion introduces no such new fixed element; on a topological field the fixed field of a continuous involution is a closed subfield of index two and a topological field in the subspace topology with open unit group, on an ordered field the identity is the only monotone involution and every nontrivial one is non-monotone, and $\mathbb{C}$ with the usual topology and the conjugation is the model continuous case. **An additional structure on the topological ring, not a rung of any chain; it stands immediately after *Topological Rings and Fields*, whose $I$-adic topologies, linear topologies, neighbourhoods of zero and completions it uses, and before *Absolute Values, Valuations and Completions*, which owns the $p$-adic fields and the valuation topologies that are named here and not used.** -->
+
+### <a href="articles_maths/the-involution-and-the-completion-of-a-ring.html">The Involution and the Completion of a Ring</a>
+<!-- an involution of a topological ring and its extension to the completion; the continuity and the fixed elements. -->
+
+### <a href="articles_maths/involutive-valued-fields.html">Involutive Valued Fields</a>
+<!-- valued fields with an involution; the compatibility of the involution with the valuation and the residue involution. -->
+
+### <a href="articles_maths/involutive-local-fields.html">Involutive Local Fields</a>
+<!-- local fields with an involution; the fixed field, the ramification and the norm form. -->
+
+### <a href="articles_maths/involutions-of-a-non-archimedean-field.html">Involutions of a Non-Archimedean Field</a>
+<!-- the involutions of a non-Archimedean field; the fixed field and the induced involution on the residue field. -->
+
+### <a href="articles_maths/involutive-topological-division-rings.html">Involutive Topological Division Rings</a>
+<!-- topological division rings with an involution; the topology and the self-adjoint elements. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-involution-on-bounded-operators-of-a-ring.html">The Involution on Bounded Operators of a Ring</a>
+<!-- the involution on the bounded operators of a topological ring; the fixed elements and the topological compatibility. -->
+
+### <a href="articles_maths/adjoints-under-the-residue-pairing.html">Adjoints under the Residue Pairing</a>
+<!-- the adjoint with respect to the residue pairing; its explicit form and the self-adjoint elements. -->
+
+### <a href="articles_maths/the-adjoint-under-a-hermitian-valuation.html">The Adjoint under a Hermitian Valuation</a>
+<!-- the adjoint defined by a Hermitian valuation; the unitary elements and the norm form. -->
+
+### <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-a-topological-ring.html">The Adjoint of the Left Multiplication on a Topological Ring</a>
+<!-- the adjoint of the left multiplication on a topological ring with respect to the form of the category; its explicit expression and its compatibility with the involution. -->
+
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-a-topological-ring.html">The Signed Adjoint Sandwich on a Topological Ring</a>
+<!-- the adjoint of the signed sandwich on a topological ring; the explicit form of the adjoint and the unitarity condition it defines. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-a-topological-ring.html">The Signed Adjoint of the Reflection on a Topological Ring</a>
+<!-- the adjoint of a reflection read as a signed operator on a topological ring; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-a-topological-ring.html">The Signed Adjoint of the Left Multiplication on a Topological Ring</a>
+<!-- the adjoint of the signed left multiplication on a topological ring; its explicit expression and its relation to the signed sandwich. -->
+
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-topological-ring.html">The Graded Adjoint Action on a Module over a Topological Ring</a>
+<!-- the adjoint action of a graded module over a topological ring; its compatibility with the grading and the sign rule. -->
 
 ### - Applications
 
@@ -770,10 +1523,92 @@
 ###<a href="articles_maths/topological-tensor-products.html">Topological Tensor Products</a>
 <!-- completed tensor products; the relation to the balanced product of Part I and to the nuclear spaces of this part. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/bounded-operators-on-a-topological-vector-space.html">Bounded Operators on a Topological Vector Space</a>
+<!-- the continuous linear operators; the boundedness on a normed space and the operator norm. -->
+
+### <a href="articles_maths/the-dual-operator.html">The Dual Operator</a>
+<!-- the transpose of a continuous operator on the dual; the weak-* continuity and the double dual. -->
+
+### <a href="articles_maths/operators-on-a-locally-convex-space.html">Operators on a Locally Convex Space</a>
+<!-- the continuous operators of a locally convex space; the topology of bounded convergence. -->
+
+### <a href="articles_maths/bounded-operators-and-the-operator-norm.html">Bounded Operators and the Operator Norm</a>
+<!-- the bounded operators as a normed algebra; the operator norm and its completeness. -->
+
+### <a href="articles_maths/the-dual-operator-and-the-weak-topology.html">The Dual Operator and the Weak Topology</a>
+<!-- the transpose and the weak topology; the compatibility of the operator with the weak and the weak-* topologies. -->
+
+### <a href="articles_maths/the-projection-operator-on-a-locally-convex-space.html">The Projection Operator on a Locally Convex Space</a>
+<!-- the projections of a locally convex space; the complemented subspaces and the failure of complementation in general. -->
+
+### <a href="articles_maths/the-left-and-right-multiplication-operators-on-a-topological-vector-space.html">The Left and Right Multiplication Operators on a Topological Vector Space</a>
+<!-- the one-sided multiplications on a topological vector space; their continuity and the module structure. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-a-topological-vector-space.html">The Signed Sandwich on a Topological Vector Space</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on a topological vector space; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-a-topological-vector-space.html">Reflections as Signed Two-Sided Operators on a Topological Vector Space</a>
+<!-- the reflections of a topological vector space read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-a-topological-vector-space.html">The Signed Left Multiplication on a Topological Vector Space</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on a topological vector space; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-a-topological-vector-space.html">The Graded Action on a Module over a Topological Vector Space</a>
+<!-- the action of a graded module over a topological vector space; the compatibility of the action with the grading and the sign rule it imposes. -->
+
 ### - * Theory
 
 ### <a href="articles_maths/involutive-topological-linear-spaces.html">Involutive Topological Linear Spaces</a>
 <!-- a topological linear space with a continuous semilinear involution $\theta$ relative to a continuous involution $\varsigma$ of the ring of scalars; the linear case $\varsigma=\mathrm{id}$ and the antilinear case over $\mathbb{C}$ with the conjugation; continuity at the origin, the homeomorphism and the uniform continuity; the criterion for a linear topology, that for every $n$ there is $m$ with $\theta(U_m)\subseteq U_n$, the automatic continuity of every linear involution for an $I$-adic topology and the criterion $\varsigma(I)^m\subseteq I$ for the semilinear ones, and the discontinuous $f(x)\mapsto f(b-x)$ with $b\neq0$ on $\mathbb{C}[x]$ with the $(x)$-adic topology and $f(x)\mapsto f(1-x)$ on the sparse linear topology of $K[x]$; the fixed and the negated subspaces as closed equalizers, the fixed subspace a topological module over the closed fixed subring $R^\varsigma$, a dense fixed subspace forcing the trivial involution, and the topological direct sum $V=V^\theta\oplus V^-$ by the continuous averaging maps when $2$ is invertible; the quotient by a closed stable subspace with the induced involution, its fixed subspace the image of the fixed subspace over a field of characteristic not two and strictly larger for the module $\mathbb{Z}[i]$ with the $(2)$-adic topology; the unique extension to the completion $\widehat V=\varprojlim_n V/U_n$, of the same kind, with fixed subspace the closure of the fixed subspace; and the semilinear case over a topological field, where the fixed field $F^\varsigma$ is a closed subfield of index two and the fixed space is a closed topological vector space over it, the real form over $\mathbb{C}$ having real dimension the complex dimension. -->
+
+### <a href="articles_maths/locally-convex-spaces-with-an-involution.html">Locally Convex Spaces with an Involution</a>
+<!-- locally convex spaces with an involution; the fixed and the anti-fixed subspaces and the induced topology. -->
+
+### <a href="articles_maths/the-involution-and-the-dual-pairing.html">The Involution and the Dual Pairing</a>
+<!-- an involution and the dual pairing; the transposed involution and the Hermitian forms. -->
+
+### <a href="articles_maths/involutive-normed-spaces.html">Involutive Normed Spaces</a>
+<!-- normed spaces with an involution; the compatibility with the norm and the self-dual case. -->
+
+### <a href="articles_maths/involutive-banach-spaces.html">Involutive Banach Spaces</a>
+<!-- Banach spaces with an involution; the adjoint and the unitary operators. -->
+
+### <a href="articles_maths/involutive-frechet-spaces.html">Involutive Fréchet Spaces</a>
+<!-- Fréchet spaces with an involution; the metrisability and the induced involution on the dual. -->
+
+### <a href="articles_maths/involutive-nuclear-spaces.html">Involutive Nuclear Spaces</a>
+<!-- nuclear spaces with an involution; the tensor product and the induced involution. -->
+
+### <a href="articles_maths/the-involution-on-a-topological-tensor-product.html">The Involution on a Topological Tensor Product</a>
+<!-- the involution induced on a topological tensor product; the completion and the flip. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-adjoint-of-a-bounded-operator.html">The Adjoint of a Bounded Operator</a>
+<!-- the adjoint of a bounded operator on a Hilbert space; its existence by Riesz and the involution it defines. -->
+
+### <a href="articles_maths/involutions-of-the-bounded-operators.html">Involutions of the Bounded Operators</a>
+<!-- the involutions of the algebra of bounded operators; the adjoint from a form and the classical groups. -->
+
+### <a href="articles_maths/the-dual-pairing-and-the-adjoint.html">The Dual Pairing and the Adjoint</a>
+<!-- the adjoint defined by the dual pairing; the reflexive cases and the identification of the two adjoints. -->
+
+### <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-a-topological-vector-space.html">The Adjoint of the Left Multiplication on a Topological Vector Space</a>
+<!-- the adjoint of the left multiplication on a topological vector space with respect to the form of the category; its explicit expression and its compatibility with the involution. -->
+
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-a-topological-vector-space.html">The Signed Adjoint Sandwich on a Topological Vector Space</a>
+<!-- the adjoint of the signed sandwich on a topological vector space; the explicit form of the adjoint and the unitarity condition it defines. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-a-topological-vector-space.html">The Signed Adjoint of the Reflection on a Topological Vector Space</a>
+<!-- the adjoint of a reflection read as a signed operator on a topological vector space; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-a-topological-vector-space.html">The Signed Adjoint of the Left Multiplication on a Topological Vector Space</a>
+<!-- the adjoint of the signed left multiplication on a topological vector space; its explicit expression and its relation to the signed sandwich. -->
+
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-topological-vector-space.html">The Graded Adjoint Action on a Module over a Topological Vector Space</a>
+<!-- the adjoint action of a graded module over a topological vector space; its compatibility with the grading and the sign rule. -->
 
 ## Topology on Linear Algebras
 
@@ -796,6 +1631,41 @@
 
 ###<a href="articles_maths/normed-division-algebras-and-the-hurwitz-theorem.html">Normed Division Algebras and the Hurwitz Theorem</a>
 <!-- the four normed division algebras $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$; the Hurwitz theorem that there are no others; the Cayley–Dickson construction and the loss of structure at each step, from order to commutativity to associativity. -->
+
+### - Operator Theory
+
+### <a href="articles_maths/operators-on-a-banach-algebra.html">Operators on a Banach Algebra</a>
+<!-- the operators of a Banach algebra; the multipliers, the derivations and the automatic continuity. -->
+
+### <a href="articles_maths/left-and-right-multiplication-in-a-banach-algebra.html">Left and Right Multiplication in a Banach Algebra</a>
+<!-- the one-sided multiplications of a Banach algebra; their continuity and the regular representation. -->
+
+### <a href="articles_maths/the-operator-algebra-of-a-banach-space.html">The Operator Algebra of a Banach Space</a>
+<!-- the algebra of bounded operators of a Banach space; its completeness and its closed subalgebras. -->
+
+### <a href="articles_maths/the-gelfand-transform-as-an-operator.html">The Gelfand Transform as an Operator</a>
+<!-- the Gelfand transform as an algebra homomorphism; its kernel, the radical and the commutative case. -->
+
+### <a href="articles_maths/operators-on-a-c-algebra.html">Operators on a C*-Algebra</a>
+<!-- the operators of a $C^*$-algebra; the positive elements, the states and the GNS representation. -->
+
+### <a href="articles_maths/multipliers-of-a-banach-algebra.html">Multipliers of a Banach Algebra</a>
+<!-- the multiplier algebra; the strict topology and the relation to the double centraliser. -->
+
+### <a href="articles_maths/the-left-and-right-multiplication-operators-on-a-banach-algebra.html">The Left and Right Multiplication Operators on a Banach Algebra</a>
+<!-- the one-sided multiplication operators on a Banach algebra; their norms and the module structure. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-a-banach-algebra.html">The Signed Sandwich on a Banach Algebra</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on a banach algebra; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-a-banach-algebra.html">Reflections as Signed Two-Sided Operators on a Banach Algebra</a>
+<!-- the reflections of a banach algebra read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-an-involutive-banach-algebra.html">The Signed Left Multiplication on an Involutive Banach Algebra</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on an involutive banach algebra; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-an-involutive-banach-algebra.html">The Graded Action on a Module over an Involutive Banach Algebra</a>
+<!-- the action of a graded module over an involutive banach algebra; the compatibility of the action with the grading and the sign rule it imposes. -->
 
 ### - * Theory
 
@@ -825,6 +1695,56 @@
 
 ###<a href="articles_maths/kk-theory.html">KK-Theory</a>
 <!-- KK-theory and its properties; the relation to the K-theory of operator algebras and to the index theory of Part IV. -->
+
+### <a href="articles_maths/involutive-banach-algebras-and-the-gelfand-naimark-theorem.html">Involutive Banach Algebras and the Gelfand–Naimark Theorem</a>
+<!-- involutive Banach algebras and the Gelfand–Naimark theorem; the embedding into the operators of a Hilbert space. -->
+
+### <a href="articles_maths/states-and-positive-functionals-on-an-involutive-algebra.html">States and Positive Functionals on an Involutive Algebra</a>
+<!-- the states and the positive functionals; their relation to the representations and the GNS construction. -->
+
+### <a href="articles_maths/the-spectrum-of-a-self-adjoint-element.html">The Spectrum of a Self-Adjoint Element</a>
+<!-- the spectrum of a self-adjoint element; its realness and the spectral theorem. -->
+
+### <a href="articles_maths/hermitian-and-self-adjoint-elements-of-a-banach-algebra.html">Hermitian and Self-Adjoint Elements of a Banach Algebra</a>
+<!-- the Hermitian and the self-adjoint elements; their characterisation and the positive cone. -->
+
+### <a href="articles_maths/the-functional-calculus-of-a-self-adjoint-element.html">The Functional Calculus of a Self-Adjoint Element</a>
+<!-- the continuous functional calculus of a self-adjoint element; the spectral mapping theorem. -->
+
+### <a href="articles_maths/involutive-operator-algebras-and-the-commutant.html">Involutive Operator Algebras and the Commutant</a>
+<!-- involutive operator algebras and the commutant; the double commutant theorem and the von Neumann case. -->
+
+### <a href="articles_maths/the-involution-and-the-spectral-radius.html">The Involution and the Spectral Radius</a>
+<!-- the involution and the spectral radius; the $C^*$-identity $\|a^*a\|=\|a\|^2$ and its consequences. -->
+
+### <a href="articles_maths/involutive-frechet-algebras.html">Involutive Fréchet Algebras</a>
+<!-- Fréchet algebras with an involution; the continuity of the involution and the spectral theory. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/adjoints-in-a-banach-algebra.html">Adjoints in a Banach Algebra</a>
+<!-- the adjoints in a Banach algebra with involution; the self-adjoint and the unitary elements. -->
+
+### <a href="articles_maths/the-involution-on-the-operator-algebra.html">The Involution on the Operator Algebra</a>
+<!-- the involution on the algebra of operators; the adjoint operation and its fixed elements. -->
+
+### <a href="articles_maths/self-adjoint-operators-of-a-banach-algebra.html">Self-Adjoint Operators of a Banach Algebra</a>
+<!-- the self-adjoint operators of a Banach algebra; their spectral theory and the order they carry. -->
+
+### <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-an-involutive-banach-algebra.html">The Adjoint of the Left Multiplication on an Involutive Banach Algebra</a>
+<!-- the adjoint of the left multiplication on an involutive banach algebra with respect to the form of the category; its explicit expression and its compatibility with the involution. -->
+
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-a-banach-algebra.html">The Signed Adjoint Sandwich on a Banach Algebra</a>
+<!-- the adjoint of the signed sandwich on a banach algebra; the explicit form of the adjoint and the unitarity condition it defines. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-a-banach-algebra.html">The Signed Adjoint of the Reflection on a Banach Algebra</a>
+<!-- the adjoint of a reflection read as a signed operator on a banach algebra; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-an-involutive-banach-algebra.html">The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra</a>
+<!-- the adjoint of the signed left multiplication on an involutive banach algebra; its explicit expression and its relation to the signed sandwich. -->
+
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-an-involutive-banach-algebra.html">The Graded Adjoint Action on a Module over an Involutive Banach Algebra</a>
+<!-- the adjoint action of a graded module over an involutive banach algebra; its compatibility with the grading and the sign rule. -->
 
 ## Topology on Linear Algebras with a degree-2 form
 
@@ -891,9 +1811,18 @@
 <!-- the two-sided operator $\Phi^{\theta,c}_x(y)=\theta(x)yc(x)$, its composition law, its parity and its value at the unit; the five members indexed by the right factor, the inner conjugation and the signed inner conjugation on the units, the reversion and Clifford-conjugation sandwiches on the whole algebra and the Hermitian sandwich over an involutive base; preservation of the quadratic space $\Phi_x(V)\subseteq V$, the scaling of the conjugation sandwich by the Clifford norm on the Clifford group and the failure of a merely central scale. -->
 
 ### <a href="articles_maths/one-sided-operators-on-a-clifford-algebra.html">One-Sided Operators on a Clifford Algebra</a>
-<!-- the factors of the two-sided family: the left multiplication $y\mapsto\theta(x)y$ and the right multiplication $y\mapsto y\,c(x)$ attached to an automorphism and an anti-automorphism; the composition laws and the exception by which the plain right multiplication is a representation of the opposite algebra, $R_{xz}=R_zR_x$; the commutation of the two families and the return to the two-sided operator $\Phi^{\theta,c}_x=\Lambda^{\theta}_x\mathrm P^{c}_x$; the value at the unit and the parity; the variants as conjugates by the intrinsic anti-involutions; injectivity, the annihilators as kernels and the ideals as images; the mutual commutants $\{L_a\}'=\{R_b\}$ and the algebra generated, which is $\mathrm{End}_F$ exactly when the Clifford algebra is central simple; the reason a non-scalar one-sided operator cannot preserve the space of vectors, which forces the pairing of the two factors; the Hermitian adjoint is the concern of *One-Sided Operators on a Clifford Algebra with Hermitian Adjoint*. -->
+<!-- the factors of the two-sided family: the left multiplication $y\mapsto\theta(x)y$ and the right multiplication $y\mapsto y\,c(x)$ attached to an automorphism and an anti-automorphism; the composition laws and the exception by which the plain right multiplication is a representation of the opposite algebra, $R_{xz}=R_zR_x$; the commutation of the two families and the return to the two-sided operator $\Phi^{\theta,c}_x=\Lambda^{\theta}_x\mathrm P^{c}_x$; the value at the unit and the parity; the variants as conjugates by the intrinsic anti-involutions; injectivity, the annihilators as kernels and the ideals as images; the mutual commutants $\{L_a\}'=\{R_b\}$ and the algebra generated, which is $\mathrm{End}_F$ exactly when the Clifford algebra is central simple; the reason a non-scalar one-sided operator cannot preserve the space of vectors, which forces the pairing of the two factors; the Hermitian adjoint is the concern of *One-Sided Operators on a Hilbert Algebra with Hermitian Adjoint*. -->
 
 ### - Theory, Two-Sided Operator with Inner Conjugation
+
+### <a href="articles_maths/the-sandwich-on-a-clifford-algebra.html">The Sandwich on a Clifford Algebra</a>
+<!-- the two-sided sandwich $x\mapsto axb$ on a Clifford algebra; the versor action and its relation to the twisted conjugation. -->
+
+### <a href="articles_maths/the-two-sided-operators-and-the-spin-group.html">The Two-Sided Operators and the Spin Group</a>
+<!-- the two-sided operators generated by the versors; the spin group as the group of invertible two-sided operators. -->
+
+### <a href="articles_maths/the-inner-conjugation-on-the-two-sided-operators.html">The Inner Conjugation on the Two-Sided Operators</a>
+<!-- the inner conjugation $x\mapsto axa^{-1}$ on a Clifford algebra; the twisted action and the orthogonal group. -->
 
 ### <a href="articles_maths/the-spinor-norm-and-the-structure-of-the-orthogonal-group-with-inner-conjugation.html">The Spinor Norm and the Structure of the Orthogonal Group with Inner Conjugation</a>
 <!-- the spinor norm from the orthogonal group to the square classes of the field, defined on a reflection in a vector by the value of the form on that vector; its well-definedness as a homomorphism; the spinorial kernel, the products of two reflections and the chain of subgroups; the theorem of Dieudonné identifying the reduced group with the commutator subgroup, quoted; the cases of the definite real forms, the sum of four squares over $\mathbb{Q}$, and the indefinite forms. -->
@@ -912,6 +1841,15 @@
 
 ### - Theory, One-Sided Operator with Inner Conjugation
 
+### <a href="articles_maths/left-multiplication-and-the-clifford-module-structure.html">Left Multiplication and the Clifford Module Structure</a>
+<!-- left multiplication as a representation of the Clifford algebra; the module structure and its irreducibility in the even dimensions. -->
+
+### <a href="articles_maths/the-one-sided-action-and-the-spin-representation.html">The One-Sided Action and the Spin Representation</a>
+<!-- the one-sided action and the spin representation; the minimal left ideals and the spinors they carry. -->
+
+### <a href="articles_maths/right-multiplication-and-the-opposite-algebra.html">Right Multiplication and the Opposite Algebra</a>
+<!-- right multiplication and the opposite algebra; the bimodule structure and the commutant of the left action. -->
+
 ### <a href="articles_maths/spin-representations-and-clifford-modules-with-inner-conjugation.html">Spin Representations and Clifford Modules with Inner Conjugation</a>
 <!-- Clifford modules, the spinor module, the complex spin representation and its dimension, chirality and half-spin representations. -->
 
@@ -928,6 +1866,15 @@
 <!-- the three eight-dimensional representations $8_v$, $8_s$, $8_c$ and the uniqueness of the coincidence of their dimensions at $n=8$; the invariant trilinear form as the Clifford action composed with the invariant pairing; the outer automorphism group $S_3$ from the diagram $D_4$; the fixed-point subgroup $G_2$ and the chain $\mathrm{Spin}(8)\supset G_2\supset\mathrm{Spin}(7)$; the octonionic model with the three products $xy$, $\bar xy$, $x\bar y$ and the alternative laws; why no other dimension admits a triality. -->
 
 ### - Theory, Two-Sided Operator with Signed Inner Conjugation
+
+### <a href="articles_maths/the-graded-multiplication-operators.html">The Graded Multiplication Operators</a>
+<!-- the multiplication operators twisted by the grading; the sign rule and the super-structure. -->
+
+### <a href="articles_maths/two-sided-operators-with-the-signed-product.html">Two-Sided Operators with the Signed Product</a>
+<!-- the two-sided operators with the signed product $x\mapsto a\alpha(x)b$; the reflections they realise. -->
+
+### <a href="articles_maths/the-sandwich-with-the-signed-product.html">The Sandwich with the Signed Product</a>
+<!-- the signed sandwich on a Clifford algebra; the versor action and the reflections it produces. -->
 
 ### <a href="articles_maths/two-sided-operators-on-a-clifford-algebra-with-signed-inner-conjugation.html">Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</a>
 <!-- the two-sided operator $\mathrm{Ad}^{\alpha}_x(y)=\alpha(x)yx^{-1}$, the member of the family whose left factor carries the grade involution; the parity sign $\mathrm{Ad}^{\alpha}_x=\varepsilon_x\mathrm{Ad}_x$ with $\varepsilon_x=(-1)^k$, so that it is the inner conjugation on the even part and its negative on the odd part; bijectivity, the composition law, commutation with the grade involution and multiplicativity up to the sign; the kernel $F^{\times}$ against the kernel $Z(\mathrm{Cl})^{\times}$ of the inner conjugation, with the central volume element satisfying $\mathrm{Ad}^{\alpha}_\omega=-\mathrm{id}$ while $\mathrm{Ad}_\omega=\mathrm{id}$; the reflection $\mathrm{Ad}^{\alpha}_u=\rho_u$ against $\mathrm{Ad}_u=-\rho_u$, and the reason the minus is what makes the kernel of $\mathrm{Pin}\to O$ the two elements $\{\pm1\}$. -->
@@ -949,6 +1896,12 @@
 
 ### - Theory, One-Sided Operator with Signed Inner Conjugation
 
+### <a href="articles_maths/the-signed-action-on-a-clifford-module.html">The Signed Action on a Clifford Module</a>
+<!-- the signed one-sided action on a Clifford module; its compatibility with the grading. -->
+
+### <a href="articles_maths/one-sided-operators-with-the-signed-product.html">One-Sided Operators with the Signed Product</a>
+<!-- the one-sided operators with the signed product; their fixed elements and the reflections. -->
+
 ### <a href="articles_maths/one-sided-operators-on-a-clifford-algebra-with-signed-inner-conjugation.html">One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</a>
 <!-- the signed left multiplication $\Lambda^{\alpha}_x(y)=\alpha(x)y$ and the inverse right multiplication $R_{x^{-1}}(y)=yx^{-1}$ as the two one-sided factors of the signed inner conjugation; $\Lambda^{\alpha}_x=\varepsilon_xL_x=\alpha L_x\alpha$, the value $\alpha(x)$ at the unit and the parity; the composition laws of the two families; the pairings $L_xR_{x^{-1}}=\mathrm{Ad}_x$ and $\Lambda^{\alpha}_xR_{x^{-1}}=\mathrm{Ad}^{\alpha}_x$, so that the whole sign sits in the left factor; the reflection $\rho_u$ against $-\rho_u$ produced by the two pairings; the kernels and the images, which do not see the sign; the reason no one-sided operator can preserve the space of vectors. -->
 
@@ -960,21 +1913,80 @@
 
 ### - * Theory
 
-### <a href="articles_maths/involutive-clifford-algebras.html">Involutive Clifford Algebras</a>
-<!-- involutions of a ring and their two kinds; sesquilinear and Hermitian forms; the trace form and reduced norm of an algebra; the intrinsic anti-involutions of a Clifford algebra, reversion and Clifford conjugation; the involution of the base and the induced dagger $x^\dagger=\sigma(\alpha(x^r))$; the Hermitian forms on the algebra and the blade form; the Hermitian sandwich $xyx^\dagger$, its domain and the unitary slice on which it is the inner conjugation; the unitary and compact geometry. -->
+### <a href="articles_maths/hilbert-algebras.html">Hilbert Algebras</a>
+<!-- the structure: an associative algebra with an involution $\dagger$ and a positive definite sesquilinear form $\langle x,y\rangle=\tau(x^\dagger y)$ satisfying the adjoint axiom $\langle xy,z\rangle=\langle y,x^\dagger z\rangle$, equivalently $\langle x^\dagger y,z\rangle=\langle y,xz\rangle$; the left regular representation as a $\ast$-representation; the positive cone $\{\sum_i x_i^\dagger x_i\}$ and the positivity of the involution; the intrinsic anti-involutions reversion $x^r$ and the conjugate $\alpha(x^r)$, their signs $(-1)^{k(k-1)/2}$ and $(-1)^{k(k+1)/2}$ on a $k$-blade, the involution of the base and the induced dagger $x^\dagger=\sigma(\alpha(x^r))$ with the conjugate reversion $x^{r,\sigma}$, the Klein four-group on the biquaternions; the trace form, its Hermitian Gram matrix $H^\dagger=\sigma(H)^T=H$, its radical and non-degeneracy, and its positivity, $\operatorname{Trd}(\tilde Q\tilde Q^\dagger)=2\sum_\mu|Q_\mu|^2$; the polar form of the reduced norm. The operators built from the dagger are in the group `- * Operator Theory`, and the completion, the GNS construction and the modular theory are later articles of this group. -->
 
+### <a href="articles_maths/indefinite-inner-product-spaces.html">Indefinite Inner Product Spaces</a>
+<!-- the general theory of spaces with a non-degenerate indefinite Hermitian form; the Gram matrix, the inertia, the signature and its classification over $\mathbb{R}$ and $\mathbb{C}$, and the radical; the finite-dimensional case; the fundamental decomposition; the existence of a fundamental symmetry. -->
+
+### <a href="articles_maths/krein-spaces.html">Krein Spaces</a>
+<!-- the complete case: an indefinite Hermitian form admitting a fundamental decomposition into a positive and a negative part, both complete; the signature $(p,q)$ with $p$ or $q$ possibly infinite; the topological structure induced by the decomposition; the distinction from a Hilbert space. -->
+
+### <a href="articles_maths/pontryagin-spaces.html">Pontryagin Spaces</a>
+<!-- the case of finite rank of negativity $\Pi_\kappa$; the finite-dimensional spectral theorem for self-adjoint operators on a Pontryagin space; the finite-dimensional $\mathbb{C}^{p,q}$ and its linear algebra; the role of $\kappa$. -->
+
+### <a href="articles_maths/the-fundamental-symmetry.html">The Fundamental Symmetry</a>
+<!-- the operator $J$ with $J^2=\mathrm{id}$ and $J^\dagger=J$ that defines the positive-definite inner product from the indefinite form; the fundamental decomposition as the eigenspaces of $J$; the non-uniqueness of $J$; $J$ as the bridge between the indefinite and the positive cases. -->
+
+### <a href="articles_maths/krein-algebras.html">Krein Algebras</a>
+<!-- the indefinite analogue of a Hilbert algebra: a $\ast$-algebra with an indefinite sesquilinear form compatible with the product; the $J$-positivity condition; the relation to Hilbert algebras through $J$; the $J$-positive cone and the $J$-order structure. -->
+
+### <a href="articles_maths/the-indefinite-gns-construction.html">The Indefinite GNS Construction</a>
+<!-- the Krein-space representation from an indefinite state or weight; the difference from the standard GNS construction; the role of the fundamental symmetry in selecting a positive-definite inner product. -->
+
+### <a href="articles_maths/krein-von-neumann-algebras.html">Krein–von Neumann Algebras</a>
+<!-- the operator algebras on Krein spaces; the $J$-representations of $\ast$-algebras; the $J$-commutant and the $J$-bicommutant theorem; the modular theory in the indefinite setting. -->
+
+### <a href="articles_maths/the-indefinite-modular-operator.html">The Indefinite Modular Operator</a>
+<!-- the analogue of the Tomita–Takesaki modular operator for Krein spaces; the construction from a $J$-cyclic and $J$-separating vector; the $J$-modular operator and the $J$-modular conjugation. -->
+
+### <a href="articles_maths/krein-tomita-takesaki-theory.html">Krein–Tomita–Takesaki Theory</a>
+<!-- the indefinite Tomita–Takesaki theorem; the modular group and the modular flow for a Krein–von Neumann algebra; the $J$-modular automorphism group; the $J$-KMS condition. -->
+
+### <a href="articles_maths/the-completion-of-a-hilbert-algebra.html">The Completion of a Hilbert Algebra</a>
+<!-- the completion of a Hilbert algebra; the Hilbert space it defines and the involution it carries. -->
+
+### <a href="articles_maths/the-left-and-the-right-regular-representation.html">The Left and the Right Regular Representation</a>
+<!-- the left and the right regular representations of a Hilbert algebra; their commutation and the von Neumann algebra they generate. -->
+
+### <a href="articles_maths/the-gns-construction.html">The GNS Construction</a>
+<!-- the GNS construction from a state; the cyclic representation and the irreducibility criterion. -->
+
+### <a href="articles_maths/self-adjoint-elements-and-the-positive-cone.html">Self-Adjoint Elements and the Positive Cone</a>
+<!-- the self-adjoint elements and the positive cone; the order and the square roots. -->
+
+### <a href="articles_maths/the-modular-operator-and-tomita-takesaki-theory.html">The Modular Operator and Tomita-Takesaki Theory</a>
+<!-- the modular operator of a von Neumann algebra; the Tomita–Takesaki theorem and the modular conjugation. -->
+
+### <a href="articles_maths/the-modular-group-and-the-kms-condition.html">The Modular Group and the KMS Condition</a>
+<!-- the modular group and the KMS condition; the KMS states and the modular automorphism. -->
+
+### <a href="articles_maths/von-neumann-algebras-and-the-hilbert-algebra-completeness.html">Von Neumann Algebras and the Hilbert Algebra Completeness</a>
+<!-- von Neumann algebras and the completeness of a Hilbert algebra; the standard form and the left Hilbert algebra. -->
 ### - * Theory, Two-Sided Operator with Hermitian Adjoint
+
+### <a href="articles_maths/hermitian-adjoints-on-a-hilbert-algebra.html">Hermitian Adjoints on a Hilbert Algebra</a>
+<!-- the Hermitian adjoint on a Hilbert algebra; the involution and the self-adjoint elements. -->
+
+### <a href="articles_maths/the-adjoint-of-the-left-and-the-right-multiplication.html">The Adjoint of the Left and the Right Multiplication</a>
+<!-- the adjoint of the one-sided multiplications; its explicit form and the modular conjugation. -->
+
+### <a href="articles_maths/the-adjoint-of-the-sandwich-on-a-hilbert-algebra.html">The Adjoint of the Sandwich on a Hilbert Algebra</a>
+<!-- the adjoint of the two-sided action; the modular operator and the unitarity condition. -->
+
+### <a href="articles_maths/the-two-sided-operators-and-the-modular-conjugation.html">The Two-Sided Operators and the Modular Conjugation</a>
+<!-- the two-sided operators and the modular conjugation $J$; the standard form and the self-duality. -->
 
 ### <a href="articles_maths/the-blade-form-and-the-hilbert-structure-with-hermitian-adjoint.html">The Blade Form and the Hilbert Structure with Hermitian Adjoint</a>
 <!-- the blade basis and the scalar forms it defines; the trace form $\mathrm{Sc}(x^{\dagger}y)$ and the Hilbert structure on the algebra; the invariance of the forms under the anti-involutions; the adjoints of the left and the right multiplication for the dagger form and for the reversion form, and the parity sign that separates them. -->
 
-### <a href="articles_maths/hermitian-forms-on-a-clifford-algebra-with-hermitian-adjoint.html">Hermitian Forms on a Clifford Algebra with Hermitian Adjoint</a>
+### <a href="articles_maths/hermitian-forms-on-a-hilbert-algebra-with-hermitian-adjoint.html">Hermitian Forms on a Hilbert Algebra with Hermitian Adjoint</a>
 <!-- the canonical Hermitian form $\mathrm{Sc}(x^{\dagger}y)$ of an anti-involution and the Hermitian forms on the algebra; the Gram matrix, the radical and the isometry group; the congruence $H\mapsto S^{\dagger}HS$ and the two-sided operators attached to a form; the passage to the unitary Witt group. -->
 
 ### <a href="articles_maths/hermitian-forms-over-an-involution-ring-and-the-unitary-witt-group-with-hermitian-adjoint.html">Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</a>
 <!-- Hermitian forms over a ring with an involution, their congruence classification, the unitary Witt group and the Wall group; the discriminant and the Hasse-type invariants; the Hermitian forms carried by a Clifford algebra as the instance of the theory. -->
 
-### <a href="articles_maths/the-hermitian-sandwich-on-a-clifford-algebra-with-hermitian-adjoint.html">The Hermitian Sandwich on a Clifford Algebra with Hermitian Adjoint</a>
+### <a href="articles_maths/the-hermitian-sandwich-on-a-hilbert-algebra-with-hermitian-adjoint.html">The Hermitian Sandwich on a Hilbert Algebra with Hermitian Adjoint</a>
 <!-- the Hermitian sandwich $\Theta_x(y)=x\,y\,x^{\dagger}$, its linearity in the argument and its semilinearity in the parameter up to the norm rule, its multiplicativity, its value at the unit; the identities on the Clifford group with the correction, the unitary slice on which it is the inner conjugation, the preservation of the quadratic space and the two worked cases. -->
 
 ### <a href="articles_maths/the-hermitian-sandwich-in-the-biquaternion-algebra-with-hermitian-adjoint.html">The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint</a>
@@ -983,7 +1995,7 @@
 ### <a href="articles_maths/the-unitary-slice-and-the-compact-real-form-with-hermitian-adjoint.html">The Unitary Slice and the Compact Real Form with Hermitian Adjoint</a>
 <!-- the unitary slice $U=\{x:x^{\dagger}x=1\}$ on which the dagger is the inverse and the Hermitian sandwich is the inner conjugation; the shape of the slice recording the signature; the compact real form, the identity involution with $U=\mathrm{Pin}$, and the definite case over $\mathbb{C}$ and $\mathbb{H}$. -->
 
-### <a href="articles_maths/positivity-and-the-hermitian-cone-of-a-clifford-algebra-with-hermitian-adjoint.html">Positivity and the Hermitian Cone of a Clifford Algebra with Hermitian Adjoint</a>
+### <a href="articles_maths/positivity-and-the-hermitian-cone-of-a-hilbert-algebra-with-hermitian-adjoint.html">Positivity and the Hermitian Cone of a Hilbert Algebra with Hermitian Adjoint</a>
 <!-- the positive involution of the algebra; the self-adjoint and skew elements and the decomposition of the algebra; the cone of the elements $x^{\dagger}x$ and the criterion that the dagger is positive; the polar decomposition and the Cartan involution of the group of units. -->
 
 ### <a href="articles_maths/self-adjoint-and-skew-operators-with-hermitian-adjoint.html">Self-Adjoint and Skew Operators with Hermitian Adjoint</a>
@@ -1001,21 +2013,42 @@
 ### <a href="articles_maths/mixed-inner-conjugation-and-hermitian-adjoint.html">Mixed Inner Conjugation and Hermitian Adjoint</a>
 <!-- the four two-sided operators formed by the independent choices of the left twist, identity or signed, and the right factor, inverse or dagger; the interaction of the involutive and the orthogonal structure; the two defects between the members and the signed Hermitian sandwich $\alpha(x)yx^{\dagger}$. -->
 
-### <a href="articles_maths/completely-positive-maps-of-a-clifford-algebra-with-hermitian-adjoint.html">Completely Positive Maps of a Clifford Algebra with Hermitian Adjoint</a>
+### <a href="articles_maths/completely-positive-maps-of-a-hilbert-algebra-with-hermitian-adjoint.html">Completely Positive Maps of a Hilbert Algebra with Hermitian Adjoint</a>
 <!-- the Clifford algebra with a positive involution as a finite-dimensional $C^{*}$-algebra; Choi's theorem, the Kraus form of a completely positive map and the innerness of the automorphisms of a full matrix algebra, read in the Clifford language. -->
+
+### <a href="articles_maths/j-self-adjoint-and-j-unitary-operators.html">J-Self-Adjoint and J-Unitary Operators</a>
+<!-- the operators that are self-adjoint or unitary with respect to the indefinite form; the relation $T^\dagger = JT^{*}J$ to the Hilbert adjoint; the $J$-self-adjoint, $J$-unitary, $J$-projection and $J$-normal operators; the $J$-positive cone; the failure of the real spectrum in general. -->
+
+### <a href="articles_maths/spectral-theory-on-krein-spaces.html">Spectral Theory on Krein Spaces</a>
+<!-- the spectrum of a bounded $J$-self-adjoint operator on a Krein space; the real-symmetric property of the spectrum and the possible complex eigenvalues in conjugate pairs; the Pontryagin case; the general unbounded theory is deferred to *Analysis on Linear Spaces* (Part III), which owns the spectral theorem and the resolvent. -->
+
+### <a href="articles_maths/definitizable-operators-and-the-krein-naimark-theorem.html">Definitizable Operators and the Krein–Naĭmark Theorem</a>
+<!-- the definitizable operator: some polynomial $p(T)$ is positive definite in the Krein sense; the bounded case; the Krein–Naĭmark theorem on the similarity to a Hilbert-space self-adjoint operator; the critical points; the general spectral function is deferred to *Analysis on Linear Spaces* (Part III). -->
+
+### <a href="articles_maths/the-hermitian-sandwich-on-a-krein-space.html">The Hermitian Sandwich on a Krein Space</a>
+<!-- the dagger sandwich $H_Q(T) = QTQ^\dagger$ with respect to the indefinite form; the preservation of the form; the kernel and the image; the contrast with the Hilbert case. -->
 
 ### - * Theory, One-Sided Operator with Hermitian Adjoint
 
-### <a href="articles_maths/one-sided-operators-on-a-clifford-algebra-with-hermitian-adjoint.html">One-Sided Operators on a Clifford Algebra with Hermitian Adjoint</a>
+### <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-a-hilbert-algebra.html">The Adjoint of the Left Multiplication on a Hilbert Algebra</a>
+<!-- the adjoint of the left multiplication; the Tomita operator $S$ and its polar decomposition. -->
+
+### <a href="articles_maths/the-hilbert-adjoint-on-a-hilbert-module.html">The Hilbert Adjoint on a Hilbert Module</a>
+<!-- the Hilbert adjoint on a Hilbert module; the induced involution and the self-adjoint operators. -->
+
+### <a href="articles_maths/adjoints-of-the-intertwiners-of-a-hilbert-algebra.html">Adjoints of the Intertwiners of a Hilbert Algebra</a>
+<!-- the adjoints of the intertwiners; the commutant and the standard form. -->
+
+### <a href="articles_maths/one-sided-operators-on-a-hilbert-algebra-with-hermitian-adjoint.html">One-Sided Operators on a Hilbert Algebra with Hermitian Adjoint</a>
 <!-- the left and right multiplications and their graded and anti-involution variants; the composition laws, the commutation and the two-sided operator as their product; the adjoint $L_a^{*}=L_{a^{\dagger}}$ and $R_b^{*}=R_{b^{\dagger}}$ with respect to $\mathrm{Sc}(x^{\dagger}y)$, and the self-adjoint, skew and unitary criteria; the double centraliser, the images as ideals and the annihilators as kernels. -->
 
-### <a href="articles_maths/hermitian-clifford-modules-with-hermitian-adjoint.html">Hermitian Clifford Modules with Hermitian Adjoint</a>
+### <a href="articles_maths/hermitian-modules-over-a-hilbert-algebra-with-hermitian-adjoint.html">Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint</a>
 <!-- the Clifford module carrying a form for which the action is self-adjoint, $(x\cdot s,t)=(s,x^{\dagger}\cdot t)$; the two-point function, the positivity and the self-adjointness axiom; the reducibility and the module-level form. -->
 
 ### <a href="articles_maths/the-adjoint-of-the-one-sided-action-with-hermitian-adjoint.html">The Adjoint of the One-Sided Action with Hermitian Adjoint</a>
 <!-- the adjoint of the action $\rho(x)^{*}=\rho(x^{\dagger})$; the resulting $\ast$-structure on the operator algebra, the rule for the adjoint of a composite and the reversal of the factors; the vectors acting skew-adjointly; the elementary algebraic reason the Dirac operator is formally self-adjoint. -->
 
-### <a href="articles_maths/bilinear-operators-on-a-clifford-module-with-hermitian-adjoint.html">Bilinear Operators on a Clifford Module with Hermitian Adjoint</a>
+### <a href="articles_maths/bilinear-operators-on-a-hermitian-module-with-hermitian-adjoint.html">Bilinear Operators on a Hermitian Module with Hermitian Adjoint</a>
 <!-- operators built from two spinors; the completeness of the Clifford action and the Fierz identity; the bilinear covariants $(s,\Gamma^{A}t)$ spanning the bilinear forms and reconstructing every endomorphism; the adjoint of a bilinear operator. -->
 
 ### <a href="articles_maths/invariant-operators-and-intertwiners-with-hermitian-adjoint.html">Invariant Operators and Intertwiners with Hermitian Adjoint</a>
@@ -1032,27 +2065,39 @@
 
 ### - * Theory, Two-Sided Operator with Signed Hermitian Adjoint
 
-### <a href="articles_maths/two-sided-operators-on-a-clifford-algebra-with-signed-hermitian-adjoint.html">Two-Sided Operators on a Clifford Algebra with Signed Hermitian Adjoint</a>
+### <a href="articles_maths/the-signed-adjoint-of-the-sandwich-on-a-hilbert-algebra.html">The Signed Adjoint of the Sandwich on a Hilbert Algebra</a>
+<!-- the adjoint of the signed sandwich; the modular conjugation and the sign rule. -->
+
+### <a href="articles_maths/adjoints-of-the-graded-operators-of-a-hilbert-algebra.html">Adjoints of the Graded Operators of a Hilbert Algebra</a>
+<!-- the adjoints of the graded operators; the compatibility with the grading and the modular structure. -->
+
+### <a href="articles_maths/two-sided-operators-on-a-hilbert-algebra-with-signed-hermitian-adjoint.html">Two-Sided Operators on a Hilbert Algebra with Signed Hermitian Adjoint</a>
 <!-- the two-sided operator $\Theta^{\alpha}_x(y)=\alpha(x)yx^{\dagger}$, the signed Hermitian member whose left factor carries the grade involution and whose right factor carries the dagger; the parity sign $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$ with $\varepsilon_x=(-1)^k$, so that it is the Hermitian sandwich on the even part and its negative on the odd part; bijectivity, the composition law and the parameter rule $\Theta^{\alpha}_{ax}=a\sigma(a)\Theta^{\alpha}_x$; the action on the Clifford group, $\Theta^{\alpha}_x=\varepsilon_x\sigma(N(x))\,x(\ )\sigma(x)^{-1}$, an isometry exactly when $\sigma(N(x))^2=1$ and otherwise a similarity of ratio $\sigma(N(x))^2$; the kernel of the invertible elements with central dagger, $F^{\times}\cap U$ on the slice against the kernel $F^{\times}$ of the signed inner conjugation; the reflection $\Theta^{\alpha}_u=-q(u)\rho_u$, which is $\rho_u$ exactly on the slice; the slice reduction $\Theta^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$ for $x^{\dagger}=x^{-1}$; the biquaternion dictionary $\tilde{Q}x\tilde{Q}^{\dagger}$ and the Lorentz group. -->
 
-### <a href="articles_maths/the-grading-of-the-clifford-algebra-with-signed-hermitian-adjoint.html">The Grading of the Clifford Algebra with Signed Hermitian Adjoint</a>
+### <a href="articles_maths/the-grading-of-a-hilbert-algebra-with-signed-hermitian-adjoint.html">The Grading of a Hilbert Algebra with Signed Hermitian Adjoint</a>
 <!-- why the signed Hermitian member is not a second structure: the sign is the parity, $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$; the dagger is even, so $\Theta^{\alpha}_x\Theta^{\alpha}_z=\varepsilon_x\varepsilon_z\Theta^{\alpha}_{xz}$ and two odd steps compose to the ordinary Hermitian sandwich, $\Theta^{\alpha}_x\Theta^{\alpha}_z=\Theta_{xz}$ for $x,z$ odd; the odd part of the unitary slice as a coset and $U/U^0\cong\mathbb{Z}/2$; the algebra as a free rank-two module over its even part; the even-ness of the Hermitian form, so that the two parity sectors are orthogonal; the determinants $\det\mathrm{Ad}^{\alpha}_x=\varepsilon_x$ against $\det\mathrm{Ad}_x=(\varepsilon_x)^{n+1}$, and the comparison by the scalar $\sigma(N(x))$ off the unitary slice. -->
 
-### <a href="articles_maths/the-clifford-pin-and-spin-groups-with-signed-hermitian-adjoint.html">The Clifford, Pin and Spin Groups with Signed Hermitian Adjoint</a>
+### <a href="articles_maths/the-pin-and-spin-groups-with-signed-hermitian-adjoint.html">The Pin and Spin Groups with Signed Hermitian Adjoint</a>
 <!-- the Hermitian formulation of the covering groups: the Clifford group $\Gamma$, the Hermitian Clifford group $\Gamma_{\dagger}=\{x\in\Gamma:\sigma(N(x))^2=1\}$ where the Hermitian sandwich is an isometry, and the unitary slice $U$ where the dagger is the inverse; $\Gamma_{\dagger}=\mathrm{Pin}$ and $U\cap\Gamma=\{N=1\}$ for the trivial involution, the two coinciding for a definite form in the corpus's convention; the reflections as the odd elements, $\Theta^{\alpha}_u=\rho_u$ for $q(u)=-1$; the double cover $\{\pm1\}\to\mathrm{Pin}\to O$ and $\{\pm1\}\to\mathrm{Spin}\to SO$, Cartan–Dieudonné, the low-dimensional groups, and the indefinite and degenerate cases. -->
 
 ### <a href="articles_maths/versors-rotors-and-the-sandwich-action-with-signed-hermitian-adjoint.html">Versors, Rotors and the Sandwich Action with Signed Hermitian Adjoint</a>
 <!-- versors and rotors under the signed Hermitian sandwich: the dagger of a versor is a versor of the same length and parity, so the sandwich has versors on both sides; the form of the operator on the Clifford group, $\Theta^{\alpha}_x=\varepsilon_x\sigma(N(x))\,x(\ )\sigma(x)^{-1}$; the rotor as an even $\sigma$-real versor of norm with $\sigma(N)=1$, for which the Hermitian sandwich is the plain rotation $RvR^{-1}$; the two actions and the half angle against the full angle; the adjointness axiom $(x\cdot s,t)=(s,x^{\dagger}\cdot t)$ on a Hermitian Clifford module, with the dagger entering the module side as the adjoint and never as a rotation; the similarity of ratio $\sigma(N(x))^2$ off the slice. -->
 
-### <a href="articles_maths/reflection-groups-and-clifford-algebras-with-signed-hermitian-adjoint.html">Reflection Groups and Clifford Algebras with Signed Hermitian Adjoint</a>
+### <a href="articles_maths/reflection-groups-and-the-pin-lift-with-signed-hermitian-adjoint.html">Reflection Groups and the Pin Lift with Signed Hermitian Adjoint</a>
 <!-- the reflection of a root as a signed Hermitian sandwich: $\Theta^{\alpha}_u=-q(u)\rho_u$, so the reflection is realised exactly on the unitary slice, by the slice-normalised root $q(u_\alpha)=-1$; the Hermitian Clifford lift $\Gamma_\Phi=\langle u_\alpha\rangle\subseteq U\cap\Gamma_{\dagger}$; its finiteness, the twofold cover $\Gamma_\Phi\to W_\Phi$, the orders $|\Gamma_\Phi|=2|W_\Phi|$ and $|\Gamma_\Phi^0|=|W_\Phi|$, and the even part covering the rotation subgroup; the cases $A_1$, $A_2$ and $A_3$, the Hurwitz units and the $24$-cell. -->
 
 ### - * Theory, One-Sided Operator with Signed Hermitian Adjoint
 
-### <a href="articles_maths/one-sided-operators-on-a-clifford-algebra-with-signed-hermitian-adjoint.html">One-Sided Operators on a Clifford Algebra with Signed Hermitian Adjoint</a>
+### <a href="articles_maths/the-signed-adjoint-on-a-hilbert-module.html">The Signed Adjoint on a Hilbert Module</a>
+<!-- the adjoint of the signed action on a Hilbert module; the self-adjointness condition. -->
+
+### <a href="articles_maths/adjoints-of-the-signed-action-of-a-hilbert-algebra.html">Adjoints of the Signed Action of a Hilbert Algebra</a>
+<!-- the adjoints of the signed action; the modular operator and the sign rule. -->
+
+### <a href="articles_maths/one-sided-operators-on-a-hilbert-algebra-with-signed-hermitian-adjoint.html">One-Sided Operators on a Hilbert Algebra with Signed Hermitian Adjoint</a>
 <!-- the signed left multiplication $\Lambda^{\alpha}_x(y)=\alpha(x)y$ and the dagger right multiplication $R_{x^{\dagger}}(y)=yx^{\dagger}$ as the two one-sided factors of the signed Hermitian sandwich; $\Lambda^{\alpha}_x=\varepsilon_xL_x=\alpha L_x\alpha$, the value $\alpha(x)$ at the unit and the parity; the composition laws, the commutation, and the adjoints $(\Lambda^{\alpha}_x)^{*}=\Lambda^{\alpha}_{x^{\dagger}}$ and $(R_{x^{\dagger}})^{*}=R_x$ for the form $\mathrm{Sc}(x^{\dagger}y)$; the split of linearity, the left factor linear and the right factor $\sigma$-semilinear in the parameter, giving $\Theta^{\alpha}_{ax}=a\sigma(a)\Theta^{\alpha}_x$; the reflection $\rho_u$ against $-q(u)\rho_u$; the kernels and the images, which see the involution but not the sign. -->
 
-### <a href="articles_maths/pin-representations-and-clifford-modules-with-signed-hermitian-adjoint.html">Pin Representations and Clifford Modules with Signed Hermitian Adjoint</a>
+### <a href="articles_maths/pin-representations-and-hermitian-modules-with-signed-hermitian-adjoint.html">Pin Representations and Hermitian Modules with Signed Hermitian Adjoint</a>
 <!-- the pin representation on a Hermitian Clifford module: the restriction of the algebra action to the whole Pin group, one-sided by construction, with the adjoint $\rho(x)^{*}=\rho(x^{\dagger})$ and unitarity on the unitary slice; the intertwining identities $\rho(x)\rho(v)\rho(x)^{*}=\rho(\Theta_x(v))$ and $\rho(\Theta^{\alpha}_x(v))=\varepsilon_x\rho(x)\rho(v)\rho(x)^{*}$; the module form of the reflection $\rho(u)\rho(v)\rho(u)^{*}=\rho(-q(u)\rho_u(v))$, which is $\rho_u$ on the slice, with $\rho(u)^2=-\mathrm{id}$ there; the chirality, the Hermitian-orthogonal chiral halves, the kernel, the real modules and the definite case. -->
 
 ### <a href="articles_maths/spinors-as-minimal-left-ideals-with-signed-hermitian-adjoint.html">Spinors as Minimal Left Ideals with Signed Hermitian Adjoint</a>
@@ -1115,7 +2160,62 @@
 ###<a href="articles_maths/degree-theory-and-the-brouwer-fixed-point-theorem.html">Degree Theory and the Brouwer Fixed Point Theorem</a>
 <!-- the degree of a map between spheres; the Brouwer fixed point theorem; the Jordan–Brouwer separation theorem; the hairy ball theorem; the Lefschetz fixed point theorem. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/the-transfer-map.html">The Transfer Map</a>
+<!-- the transfer of a covering; its relation to the boundary and its composition with the projection. -->
+
+### <a href="articles_maths/equivariant-maps-as-operators.html">Equivariant Maps as Operators</a>
+<!-- equivariant maps as operators on the equivariant chain complexes; the functoriality and the induced maps on the equivariant homology. -->
+
+### <a href="articles_maths/the-boundary-operator.html">The Boundary Operator</a>
+<!-- the boundary operator of a chain complex; the square-zero property and the homology it defines. -->
+
+### <a href="articles_maths/the-cup-product-as-an-operator.html">The Cup Product as an Operator</a>
+<!-- the cup product as an operator on cohomology; its graded commutativity and the Leibniz rule. -->
+
+### <a href="articles_maths/the-suspension-operator.html">The Suspension Operator</a>
+<!-- the suspension as an operator on homology; the suspension isomorphism and its compatibility with the boundary. -->
+
+### <a href="articles_maths/the-boundary-operator-of-a-simplicial-complex.html">The Boundary Operator of a Simplicial Complex</a>
+<!-- the boundary operator of a simplicial complex; the simplicial chain complex and its homology. -->
+
 ### - * Theory
+
+### <a href="articles_maths/equivariant-cohomology.html">Equivariant Cohomology</a>
+<!-- the equivariant cohomology of a space with a group action; the Borel construction and the spectral sequence. -->
+
+### <a href="articles_maths/equivariant-homotopy-theory.html">Equivariant Homotopy Theory</a>
+<!-- equivariant homotopy theory; the equivariant homotopy groups and the fixed-point functors. -->
+
+### <a href="articles_maths/equivariant-k-theory.html">Equivariant K-Theory</a>
+<!-- equivariant K-theory; the representation ring and the Atiyah–Segal completion theorem. -->
+
+### <a href="articles_maths/the-mod-2-cohomology-of-an-involution.html">The Mod 2 Cohomology of an Involution</a>
+<!-- the mod 2 cohomology of an involution; the fixed set and the Smith theory. -->
+
+### <a href="articles_maths/smith-theory-and-the-fixed-sets-of-periodic-maps.html">Smith Theory and the Fixed Sets of Periodic Maps</a>
+<!-- the Smith theory of periodic maps; the fixed sets and their homology. -->
+
+### <a href="articles_maths/the-transfer-and-the-involution.html">The Transfer and the Involution</a>
+<!-- the transfer map under an involution; its compatibility and the induced map on the fixed set. -->
+
+### <a href="articles_maths/the-gysin-sequence-of-a-two-fold-covering.html">The Gysin Sequence of a Two-Fold Covering</a>
+<!-- the Gysin sequence of a two-fold covering; the exactness and the Euler class. -->
+
+### <a href="articles_maths/the-cohomology-of-an-orbit-space.html">The Cohomology of an Orbit Space</a>
+<!-- the cohomology of an orbit space; its comparison with the equivariant cohomology. -->
+
+### <a href="articles_maths/equivariant-obstruction-theory.html">Equivariant Obstruction Theory</a>
+<!-- equivariant obstruction theory; the equivariant obstruction classes and the extension problem. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/equivariant-operators-and-the-transfer.html">Equivariant Operators and the Transfer</a>
+<!-- the equivariant operators and the transfer; the adjointness relation and the fixed part. -->
+
+### <a href="articles_maths/the-borel-construction-on-operators.html">The Borel Construction on Operators</a>
+<!-- the Borel construction on operators; the homotopy quotient and the induced involution. -->
 
 ## Sheaves and Cohomology
 
@@ -1136,7 +2236,53 @@
 ###<a href="articles_maths/sheaves-in-algebraic-geometry.html">Sheaves in Algebraic Geometry</a>
 <!-- the structure sheaf of a scheme; the sheaf of Kähler differentials $\Omega^1_{X/k}$ and the algebraic de Rham complex it generates; the canonical sheaf $\omega_X$ and Serre duality. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/operators-on-a-sheaf.html">Operators on a Sheaf</a>
+<!-- the endomorphisms of a sheaf; the sheaf of operators and its stalks. -->
+
+### <a href="articles_maths/the-restriction-and-extension-operators.html">The Restriction and Extension Operators</a>
+<!-- the restriction and the extension by zero; their adjointness and the exactness they preserve. -->
+
+### <a href="articles_maths/the-coboundary-operator.html">The Coboundary Operator</a>
+<!-- the coboundary of a sheaf complex; the square-zero property and the sheaf cohomology. -->
+
+### <a href="articles_maths/the-sheaf-of-operators.html">The Sheaf of Operators</a>
+<!-- the sheaf of operators of a sheaf; its sections and its local structure. -->
+
+### <a href="articles_maths/the-cup-product-on-sheaf-cohomology.html">The Cup Product on Sheaf Cohomology</a>
+<!-- the cup product on sheaf cohomology; the graded ring it defines. -->
+
 ### - * Theory
+
+### <a href="articles_maths/equivariant-sheaves-and-descent.html">Equivariant Sheaves and Descent</a>
+<!-- equivariant sheaves and descent; the equivariant structure and the fixed sheaf. -->
+
+### <a href="articles_maths/sheaves-with-a-real-structure.html">Sheaves with a Real Structure</a>
+<!-- sheaves with a real structure; the descent and the real points. -->
+
+### <a href="articles_maths/the-involution-on-the-structure-sheaf.html">The Involution on the Structure Sheaf</a>
+<!-- an involution of the structure sheaf; the induced involution on the cohomology. -->
+
+### <a href="articles_maths/cohomology-with-an-involution.html">Cohomology with an Involution</a>
+<!-- cohomology with an involution; the fixed part and the invariants. -->
+
+### <a href="articles_maths/equivariant-derived-categories.html">Equivariant Derived Categories</a>
+<!-- equivariant derived categories; the equivariant derived category and the forgetful functor. -->
+
+### <a href="articles_maths/galois-descent-for-sheaves.html">Galois Descent for Sheaves</a>
+<!-- Galois descent for sheaves; the descent data and the effective descent. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-involution-on-the-coboundary.html">The Involution on the Coboundary</a>
+<!-- the involution on the coboundary operator; its compatibility and the induced involution on cohomology. -->
+
+### <a href="articles_maths/hermitian-pairings-of-sheaves.html">Hermitian Pairings of Sheaves</a>
+<!-- Hermitian pairings of sheaves; the adjoint and the self-adjoint endomorphisms. -->
+
+### <a href="articles_maths/descent-and-the-involution-on-the-cohomology.html">Descent and the Involution on the Cohomology</a>
+<!-- descent and the involution on the cohomology; the fixed part and the Galois action. -->
 
 ## Algebraic Geometry
 
@@ -1157,7 +2303,53 @@
 ###<a href="articles_maths/stacks.html">Stacks</a>
 <!-- algebraic stacks and their moduli; the relation to the descent theory of Part I and to the moduli spaces of this part. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/operators-on-a-variety.html">Operators on a Variety</a>
+<!-- the operators of a variety; the endomorphisms of the structure sheaf and the vector fields. -->
+
+### <a href="articles_maths/the-galois-action-as-an-operator.html">The Galois Action as an Operator</a>
+<!-- the Galois action on a variety over a field; the induced action on the points and on the cohomology. -->
+
+### <a href="articles_maths/the-frobenius-operator.html">The Frobenius Operator</a>
+<!-- the Frobenius as an operator in characteristic $p$; its fixed points and its role in the Weil conjectures. -->
+
+### <a href="articles_maths/the-pullback-operator-of-a-morphism.html">The Pullback Operator of a Morphism</a>
+<!-- the pullback of a morphism on the structure sheaf; its functoriality and the adjunction with the pushforward. -->
+
+### <a href="articles_maths/the-divisor-operator.html">The Divisor Operator</a>
+<!-- the divisor map as an operator; the divisors and the Picard group. -->
+
+### <a href="articles_maths/the-sheaf-of-differential-operators.html">The Sheaf of Differential Operators</a>
+<!-- the sheaf of differential operators; the $\mathcal D$-module structure and the symbol. -->
+
 ### - * Theory
+
+### <a href="articles_maths/real-structures-on-varieties-and-galois-descent.html">Real Structures on Varieties and Galois Descent</a>
+<!-- real structures on varieties and Galois descent; the real points and the fixed locus. -->
+
+### <a href="articles_maths/the-weil-restriction-and-the-trace-form.html">The Weil Restriction and the Trace Form</a>
+<!-- the Weil restriction of scalars and the trace form; the adjunction and the norm. -->
+
+### <a href="articles_maths/real-algebraic-varieties.html">Real Algebraic Varieties</a>
+<!-- real algebraic varieties; the real points, the real spectrum and the Nash structure. -->
+
+### <a href="articles_maths/the-galois-action-on-the-cohomology.html">The Galois Action on the Cohomology</a>
+<!-- the Galois action on the cohomology; the Galois representations and the invariants. -->
+
+### <a href="articles_maths/involutions-on-a-scheme-and-the-quotient.html">Involutions on a Scheme and the Quotient</a>
+<!-- involutions on a scheme and the quotient; the fixed subscheme and the categorical quotient. -->
+
+### <a href="articles_maths/real-structures-on-a-curve.html">Real Structures on a Curve</a>
+<!-- real structures on a curve; the real points and the classification by the genus. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/real-structures-on-the-operator-layer.html">Real Structures on the Operator Layer</a>
+<!-- real structures on the operator layer; the descent and the fixed operators. -->
+
+### <a href="articles_maths/galois-descent-for-the-operator-layer.html">Galois Descent for the Operator Layer</a>
+<!-- Galois descent for the operators; the descent data and the effective descent. -->
 
 ## Geometric Topology
 
@@ -1190,9 +2382,61 @@
 ###<a href="articles_maths/floer-homology.html">Floer Homology</a>
 <!-- Floer homology and its properties; the relation to the symplectic topology of this part and to the algebraic topology of this part. -->
 
-## PART III : ANALYSIS
+### - Operator Theory
+
+### <a href="articles_maths/the-involution-as-an-operator-on-the-homology.html">The Involution as an Operator on the Homology</a>
+<!-- an involution of a manifold as an operator on the homology; the fixed part and the Smith theory. -->
+
+### <a href="articles_maths/the-surgery-operator.html">The Surgery Operator</a>
+<!-- the surgery operator on a manifold; its effect on the homology and the surgery obstruction. -->
+
+### <a href="articles_maths/the-involution-on-the-homology.html">The Involution on the Homology</a>
+<!-- the involution induced on the homology; the fixed and the anti-fixed parts and the intersection form. -->
+
+### <a href="articles_maths/the-dehn-twist-as-an-operator.html">The Dehn Twist as an Operator</a>
+<!-- the Dehn twist as an operator on the homology; its action and its place in the mapping class group. -->
+
+### <a href="articles_maths/the-mapping-class-group-action.html">The Mapping Class Group Action</a>
+<!-- the action of the mapping class group on the homology; the symplectic representation and its kernel. -->
+
+### <a href="articles_maths/the-handle-operator.html">The Handle Operator</a>
+<!-- the attachment of a handle as an operator; the change of the homology and the Morse-theoretic reading. -->
 
 ### - * Theory
+
+### <a href="articles_maths/involutions-on-manifolds-and-equivariant-surgery.html">Involutions on Manifolds and Equivariant Surgery</a>
+<!-- involutions on manifolds and equivariant surgery; the fixed set and the surgery obstruction. -->
+
+### <a href="articles_maths/the-classification-of-involutions-on-surfaces.html">The Classification of Involutions on Surfaces</a>
+<!-- the classification of involutions on surfaces; the quotient orbifold and the Nielsen theory. -->
+
+### <a href="articles_maths/amphichiral-knots-and-the-orientation-reversing-involution.html">Amphichiral Knots and the Orientation-Reversing Involution</a>
+<!-- amphichiral knots and the orientation-reversing involution; the symmetry and the knot invariants. -->
+
+### <a href="articles_maths/equivariant-knot-theory.html">Equivariant Knot Theory</a>
+<!-- equivariant knot theory; the periodic knots and the equivariant invariants. -->
+
+### <a href="articles_maths/free-involutions-and-lens-spaces.html">Free Involutions and Lens Spaces</a>
+<!-- free involutions and lens spaces; the quotient and the classification. -->
+
+### <a href="articles_maths/periodic-maps-and-the-smith-theory.html">Periodic Maps and the Smith Theory</a>
+<!-- periodic maps and the Smith theory; the fixed sets and their homology. -->
+
+### <a href="articles_maths/involutions-and-the-cobordism-of-group-actions.html">Involutions and the Cobordism of Group Actions</a>
+<!-- involutions and the cobordism of group actions; the equivariant cobordism groups. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-involution-on-the-homology-operators.html">The Involution on the Homology Operators</a>
+<!-- the involution on the homology operators; the fixed part and the equivariant signature. -->
+
+### <a href="articles_maths/hermitian-pairings-and-the-signature.html">Hermitian Pairings and the Signature</a>
+<!-- Hermitian pairings and the signature; the symmetric and the antisymmetric forms. -->
+
+### <a href="articles_maths/hermitian-pairings-and-the-equivariant-signature.html">Hermitian Pairings and the Equivariant Signature</a>
+<!-- Hermitian pairings and the equivariant signature; the fixed part and the $G$-signature theorem. -->
+
+## PART III : ANALYSIS
 
 ## Foundations of Analysis
 
@@ -1222,7 +2466,56 @@
 ###<a href="articles_maths/potential-theory.html">Potential Theory</a>
 <!-- harmonic functions and the Dirichlet problem; potentials and capacity. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/the-integral-operator.html">The Integral Operator</a>
+<!-- the integral operator with kernel $K$; its boundedness on $L^2$, the Hilbert–Schmidt case and the compactness. -->
+
+### <a href="articles_maths/convolution-operators.html">Convolution Operators</a>
+<!-- the convolution operators on a function space; the Fourier multiplier they define and their boundedness. -->
+
+### <a href="articles_maths/the-fourier-operator.html">The Fourier Operator</a>
+<!-- the Fourier transform as an operator; the Plancherel theorem and the unitary equivalence it realises. -->
+
+### <a href="articles_maths/the-translation-operator.html">The Translation Operator</a>
+<!-- the translation as an operator on a function space; its continuity, its spectrum and the characters as eigenvectors. -->
+
+### <a href="articles_maths/the-difference-operator.html">The Difference Operator</a>
+<!-- the finite difference as an operator; the shift, the discrete derivative and the relation to the difference equation. -->
+
 ### - * Theory
+
+### <a href="articles_maths/positive-definite-functions-and-hermitian-kernels.html">Positive Definite Functions and Hermitian Kernels</a>
+<!-- positive definite functions and Hermitian kernels; Bochner's theorem and the correspondence between them. -->
+
+### <a href="articles_maths/reproducing-kernel-hilbert-spaces.html">Reproducing Kernel Hilbert Spaces</a>
+<!-- reproducing kernel Hilbert spaces; the kernel, the evaluation functionals and the Aronszajn theorem. -->
+
+### <a href="articles_maths/hermitian-measures-and-complex-measures.html">Hermitian Measures and Complex Measures</a>
+<!-- Hermitian and complex measures; the polar decomposition and the Hermitian part. -->
+
+### <a href="articles_maths/the-fourier-transform-and-conjugate-symmetry.html">The Fourier Transform and Conjugate Symmetry</a>
+<!-- the Fourier transform and conjugate symmetry; the real and the Hermitian functions and the symmetry of the spectrum. -->
+
+### <a href="articles_maths/positive-definite-distributions.html">Positive Definite Distributions</a>
+<!-- positive definite distributions; the Bochner–Schwartz theorem and the measure they define. -->
+
+### <a href="articles_maths/hermitian-kernels-and-the-integral-operator.html">Hermitian Kernels and the Integral Operator</a>
+<!-- Hermitian kernels and the integral operator they define; the self-adjointness and the positivity. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-adjoint-of-an-integral-operator.html">The Adjoint of an Integral Operator</a>
+<!-- the adjoint of an integral operator under the $L^2$ pairing; the kernel of the adjoint and the Hermitian case. -->
+
+### <a href="articles_maths/hermitian-integral-kernels.html">Hermitian Integral Kernels</a>
+<!-- Hermitian kernels; the self-adjointness of the integral operator and the spectral theory of the kernel. -->
+
+### <a href="articles_maths/involutions-of-the-convolution-operators.html">Involutions of the Convolution Operators</a>
+<!-- the involution on the convolution operators; the adjoint under the group pairing and the unitary multipliers. -->
+
+### <a href="articles_maths/the-adjoint-of-the-fourier-operator.html">The Adjoint of the Fourier Operator</a>
+<!-- the adjoint of the Fourier transform; its unitarity up to a constant and the inversion formula. -->
 
 ## Analysis on Groups
 
@@ -1267,7 +2560,73 @@
 ###<a href="articles_maths/the-langlands-program.html">The Langlands Program</a>
 <!-- the Langlands program and its conjectures; the relation to automorphic forms and to the Galois representations of Part I. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/convolution-on-a-group.html">Convolution on a Group</a>
+<!-- convolution on a group; the algebra $L^1(G)$, the approximate identities and the Fourier transform. -->
+
+### <a href="articles_maths/the-group-algebra-as-an-algebra-of-operators.html">The Group Algebra as an Algebra of Operators</a>
+<!-- the group algebra acting on itself by convolution; the regular representation and the enveloping von Neumann algebra. -->
+
+### <a href="articles_maths/the-plancherel-operator.html">The Plancherel Operator</a>
+<!-- the Plancherel transform as an operator; the unitary equivalence between $L^2(G)$ and the direct integral over the dual. -->
+
+### <a href="articles_maths/the-left-and-right-regular-representation.html">The Left and Right Regular Representation</a>
+<!-- the left and the right regular representations; their commutation and the von Neumann algebra they generate. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-the-group-algebra.html">The Signed Sandwich on the Group Algebra</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on the group algebra; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-the-group-algebra.html">Reflections as Signed Two-Sided Operators on the Group Algebra</a>
+<!-- the reflections of the group algebra read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-the-group-algebra.html">The Signed Left Multiplication on the Group Algebra</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on the group algebra; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-the-group-algebra.html">The Graded Action on a Module over the Group Algebra</a>
+<!-- the action of a graded module over the group algebra; the compatibility of the action with the grading and the sign rule it imposes. -->
+
 ### - * Theory
+
+### <a href="articles_maths/the-group-algebra-as-an-involutive-algebra.html">The Group Algebra as an Involutive Algebra</a>
+<!-- the group algebra as an involutive algebra; the involution $f^*(x)=\overline{f(x^{-1})}$ and the $C^*$-completion. -->
+
+### <a href="articles_maths/positive-definite-functions-and-the-gelfand-raikov-theorem.html">Positive Definite Functions and the Gelfand–Raikov Theorem</a>
+<!-- positive definite functions and the Gelfand–Raikov theorem; the embedding of the group into the unitaries of its group algebra. -->
+
+### <a href="articles_maths/spherical-functions-and-the-zonal-spherical-function.html">Spherical Functions and the Zonal Spherical Function</a>
+<!-- spherical functions on a Gelfand pair; the zonal spherical function and the decomposition of the representation. -->
+
+### <a href="articles_maths/unitary-representations-and-the-plancherel-theorem.html">Unitary Representations and the Plancherel Theorem</a>
+<!-- the unitary representations and the Plancherel theorem; the measure on the dual and the inversion formula. -->
+
+### <a href="articles_maths/hermitian-forms-and-the-group-algebra.html">Hermitian Forms and the Group Algebra</a>
+<!-- Hermitian forms on the group algebra; the positivity and the unitary representations they define. -->
+
+### <a href="articles_maths/the-involution-on-the-measure-algebra.html">The Involution on the Measure Algebra</a>
+<!-- the involution on the algebra of measures; the adjoint of convolution and the unimodular case. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/hermitian-operators-on-a-group-algebra.html">Hermitian Operators on a Group Algebra</a>
+<!-- the Hermitian operators on a group algebra; the self-adjoint elements and the positive functionals. -->
+
+### <a href="articles_maths/unitary-representations-and-the-adjoint.html">Unitary Representations and the Adjoint</a>
+<!-- unitary representations and the adjoint of a representation operator; the unitarity condition and the invariants. -->
+
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-the-group-algebra.html">The Signed Adjoint Sandwich on the Group Algebra</a>
+<!-- the adjoint of the signed sandwich on the group algebra; the explicit form of the adjoint and the unitarity condition it defines. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-the-group-algebra.html">The Signed Adjoint of the Reflection on the Group Algebra</a>
+<!-- the adjoint of a reflection read as a signed operator on the group algebra; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-the-group-algebra.html">The Signed Adjoint of the Left Multiplication on the Group Algebra</a>
+<!-- the adjoint of the signed left multiplication on the group algebra; its explicit expression and its relation to the signed sandwich. -->
+
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-the-group-algebra.html">The Graded Adjoint Action on a Module over the Group Algebra</a>
+<!-- the adjoint action of a graded module over the group algebra; its compatibility with the grading and the sign rule. -->
+### <a href="articles_maths/the-adjoint-of-a-convolution-operator.html">The Adjoint of a Convolution Operator</a>
+<!-- the adjoint of a convolution operator under the Haar pairing; its explicit expression and the involutive algebra structure it gives. -->
 
 ## Analysis on Rings and Fields
 
@@ -1318,7 +2677,83 @@
 ###<a href="articles_maths/modular-forms.html">Modular Forms</a>
 <!-- modular forms and their properties; the modular group and its congruence subgroups; the relation to the elliptic curves of Part I and to the automorphic forms of this part. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/the-hecke-operator.html">The Hecke Operator</a>
+<!-- the Hecke operators on modular forms; the Hecke algebra, the eigenforms and the correspondence. -->
+
+### <a href="articles_maths/multiplication-operators-on-an-l-function.html">Multiplication Operators on an L-Function</a>
+<!-- the multiplication operators on an $L$-function; the Euler factors and the functional equation as an operator. -->
+
+### <a href="articles_maths/the-euler-product-operator.html">The Euler Product Operator</a>
+<!-- the Euler product as an operator; its convergence and its action on the coefficients. -->
+
+### <a href="articles_maths/the-shift-operator-on-the-coefficients.html">The Shift Operator on the Coefficients</a>
+<!-- the shift on the coefficients of a Dirichlet series; its spectrum and the analytic continuation. -->
+
+### <a href="articles_maths/the-shift-operator-on-a-dirichlet-series.html">The Shift Operator on a Dirichlet Series</a>
+<!-- the shift on a Dirichlet series; its relation to the functional equation and the zero distribution. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-the-algebra-of-arithmetic-functions.html">The Signed Sandwich on the Algebra of Arithmetic Functions</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on the algebra of arithmetic functions; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-the-algebra-of-arithmetic-functions.html">Reflections as Signed Two-Sided Operators on the Algebra of Arithmetic Functions</a>
+<!-- the reflections of the algebra of arithmetic functions read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-the-algebra-of-arithmetic-functions.html">The Signed Left Multiplication on the Algebra of Arithmetic Functions</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on the algebra of arithmetic functions; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-the-algebra-of-arithmetic-functions.html">The Graded Action on a Module over the Algebra of Arithmetic Functions</a>
+<!-- the action of a graded module over the algebra of arithmetic functions; the compatibility of the action with the grading and the sign rule it imposes. -->
+
 ### - * Theory
+
+### <a href="articles_maths/the-functional-equation-and-the-conjugate-symmetry-of-an-l-function.html">The Functional Equation and the Conjugate Symmetry of an L-Function</a>
+<!-- the functional equation of an $L$-function and its conjugate symmetry; the reflection across the critical line. -->
+
+### <a href="articles_maths/hermitian-forms-over-a-local-field.html">Hermitian Forms over a Local Field</a>
+<!-- Hermitian forms over a local field; the classification and the Hasse invariant. -->
+
+### <a href="articles_maths/the-conjugate-symmetry-and-the-critical-line.html">The Conjugate Symmetry and the Critical Line</a>
+<!-- conjugate symmetry and the critical line; the zeros and the symmetry of the completed $L$-function. -->
+
+### <a href="articles_maths/positivity-and-the-explicit-formula.html">Positivity and the Explicit Formula</a>
+<!-- positivity and the explicit formula; the Weil positivity criterion and its consequences. -->
+
+### <a href="articles_maths/conjugate-orthogonality-and-the-hecke-characters.html">Conjugate Orthogonality and the Hecke Characters</a>
+<!-- conjugate orthogonality of the Hecke characters; the orthogonality relations and the Dirichlet characters. -->
+
+### <a href="articles_maths/hermitian-forms-and-the-zeta-function.html">Hermitian Forms and the Zeta Function</a>
+<!-- Hermitian forms and the zeta function; the positivity and the Hilbert–Pólya heuristic. -->
+
+### <a href="articles_maths/involutions-of-a-rigid-analytic-space.html">Involutions of a Rigid Analytic Space</a>
+<!-- involutions of a rigid analytic space; the quotient and the descent of the analytic structure. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-adjoint-of-the-hecke-operator.html">The Adjoint of the Hecke Operator</a>
+<!-- the adjoint of a Hecke operator; the Petersson inner product and the self-adjointness. -->
+
+### <a href="articles_maths/hermitian-pairings-of-an-l-function.html">Hermitian Pairings of an L-Function</a>
+<!-- Hermitian pairings of an $L$-function; the conjugate symmetry and the pairing on the critical line. -->
+
+### <a href="articles_maths/the-conjugate-symmetry-of-the-hecke-operator.html">The Conjugate Symmetry of the Hecke Operator</a>
+<!-- the conjugate symmetry of the Hecke operator; the reality of the eigenvalues and the Ramanujan conjecture. -->
+
+### <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-the-algebra-of-arithmetic-functions.html">The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions</a>
+<!-- the adjoint of the left multiplication on the algebra of arithmetic functions with respect to the form of the category; its explicit expression and its compatibility with the involution. -->
+
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-the-algebra-of-arithmetic-functions.html">The Signed Adjoint Sandwich on the Algebra of Arithmetic Functions</a>
+<!-- the adjoint of the signed sandwich on the algebra of arithmetic functions; the explicit form of the adjoint and the unitarity condition it defines. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-the-algebra-of-arithmetic-functions.html">The Signed Adjoint of the Reflection on the Algebra of Arithmetic Functions</a>
+<!-- the adjoint of a reflection read as a signed operator on the algebra of arithmetic functions; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-the-algebra-of-arithmetic-functions.html">The Signed Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions</a>
+<!-- the adjoint of the signed left multiplication on the algebra of arithmetic functions; its explicit expression and its relation to the signed sandwich. -->
+
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-the-algebra-of-arithmetic-functions.html">The Graded Adjoint Action on a Module over the Algebra of Arithmetic Functions</a>
+<!-- the adjoint action of a graded module over the algebra of arithmetic functions; its compatibility with the grading and the sign rule. -->
 
 ## Analysis on Linear Spaces
 
@@ -1369,7 +2804,95 @@
 ### <a href="articles_maths/symmetric-tensors-and-spherical-harmonics.html">Symmetric Tensors and Spherical Harmonics</a>
 <!-- symmetric tensors and the symmetric powers; harmonic polynomials and the Laplacian; spherical harmonics as the harmonic polynomials restricted to the sphere; the decomposition of the polynomial algebra into harmonic layers and the dimensions of the layers. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/bounded-operators-on-a-hilbert-space.html">Bounded Operators on a Hilbert Space</a>
+<!-- the bounded operators on a Hilbert space; the $C^*$-algebra, the adjoint and the weak operator topology. -->
+
+### <a href="articles_maths/compact-operators.html">Compact Operators</a>
+<!-- the compact operators; their spectral theory, the Schatten classes and their role as an ideal. -->
+
+### <a href="articles_maths/the-spectral-operator.html">The Spectral Operator</a>
+<!-- the operator of multiplication by the spectral variable; the spectral theorem read as a statement about it. -->
+
+### <a href="articles_maths/operators-on-a-banach-space.html">Operators on a Banach Space</a>
+<!-- the bounded operators on a Banach space; the operator norm, the spectrum and the functional calculus. -->
+
+### <a href="articles_maths/the-left-and-right-multiplication-operators-on-a-hilbert-space.html">The Left and Right Multiplication Operators on a Hilbert Space</a>
+<!-- the one-sided multiplications on a Hilbert space; their adjoints and the rank-one decomposition. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-a-hilbert-space.html">The Signed Sandwich on a Hilbert Space</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on a hilbert space; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-a-hilbert-space.html">Reflections as Signed Two-Sided Operators on a Hilbert Space</a>
+<!-- the reflections of a hilbert space read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-a-hilbert-space.html">The Signed Left Multiplication on a Hilbert Space</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on a hilbert space; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-a-hilbert-space.html">The Graded Action on a Module over a Hilbert Space</a>
+<!-- the action of a graded module over a hilbert space; the compatibility of the action with the grading and the sign rule it imposes. -->
+
 ### - * Theory
+
+### <a href="articles_maths/hilbert-spaces.html">Hilbert Spaces</a>
+<!-- Hilbert spaces; the inner product, the completeness, the orthonormal bases and the projection theorem. -->
+
+### <a href="articles_maths/sesquilinear-forms-and-the-lax-milgram-theorem.html">Sesquilinear Forms and the Lax–Milgram Theorem</a>
+<!-- sesquilinear forms and the Lax–Milgram theorem; the boundedness and the coercivity. -->
+
+### <a href="articles_maths/dirichlet-forms-and-the-hermitian-dirichlet-principle.html">Dirichlet Forms and the Hermitian Dirichlet Principle</a>
+<!-- Dirichlet forms and the Hermitian Dirichlet principle; the minimisation and the associated semigroup. -->
+
+### <a href="articles_maths/self-adjoint-operators-and-the-spectral-theorem.html">Self-Adjoint Operators and the Spectral Theorem</a>
+<!-- self-adjoint operators and the spectral theorem; the spectral measure and the functional calculus. -->
+
+### <a href="articles_maths/unitary-operators-and-the-spectral-measure.html">Unitary Operators and the Spectral Measure</a>
+<!-- unitary operators and the spectral measure; the spectrum on the unit circle and the Stone theorem. -->
+
+### <a href="articles_maths/hermitian-operators-and-the-numerical-range.html">Hermitian Operators and the Numerical Range</a>
+<!-- Hermitian operators and the numerical range; the spectral containment and the Toeplitz–Hausdorff theorem. -->
+
+### <a href="articles_maths/the-adjoint-of-an-unbounded-operator.html">The Adjoint of an Unbounded Operator</a>
+<!-- the adjoint of an unbounded operator; the domain, the graph and the closedness. -->
+
+### <a href="articles_maths/positive-operators-and-the-square-root.html">Positive Operators and the Square Root</a>
+<!-- positive operators and the square root; the order on the self-adjoint operators and the polar decomposition. -->
+
+### <a href="articles_maths/the-friedrichs-extension-of-a-hermitian-form.html">The Friedrichs Extension of a Hermitian Form</a>
+<!-- the Friedrichs extension of a Hermitian form; the self-adjoint extension and the variational characterisation. -->
+
+### <a href="articles_maths/the-general-spectral-theorem-on-a-krein-space.html">The General Spectral Theorem on a Krein Space</a>
+<!-- the spectral theorem for a general $J$-self-adjoint or definitizable operator on a Krein space; the spectral function and its critical points; the unbounded case; the relation to the bounded and finite-dimensional cases of Part II. -->
+
+### <a href="articles_maths/the-resolvent-of-a-j-self-adjoint-operator.html">The Resolvent of a J-Self-Adjoint Operator</a>
+<!-- the resolvent set and the resolvent of a $J$-self-adjoint operator; the resolvent identity and the analytic properties; the growth of the resolvent at the spectrum and the real-symmetric property. -->
+
+### <a href="articles_maths/spectral-measures-and-the-krein-naimark-dilation.html">Spectral Measures and the Krein–Naĭmark Dilation</a>
+<!-- the spectral measure of a $J$-self-adjoint operator and the dilation to a self-adjoint operator on a larger Hilbert space; the existence and the uniqueness; the comparison with the Hilbert spectral measure. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/self-adjoint-operators.html">Self-Adjoint Operators</a>
+<!-- the self-adjoint operators; their spectra, the order they carry and the spectral theorem. -->
+
+### <a href="articles_maths/unitary-operators.html">Unitary Operators</a>
+<!-- the unitary operators; the group they form and the spectral theorem for the unitary case. -->
+
+### <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-a-hilbert-space.html">The Adjoint of the Left Multiplication on a Hilbert Space</a>
+<!-- the adjoint of the left multiplication on a hilbert space with respect to the form of the category; its explicit expression and its compatibility with the involution. -->
+
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-a-hilbert-space.html">The Signed Adjoint Sandwich on a Hilbert Space</a>
+<!-- the adjoint of the signed sandwich on a hilbert space; the explicit form of the adjoint and the unitarity condition it defines. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-a-hilbert-space.html">The Signed Adjoint of the Reflection on a Hilbert Space</a>
+<!-- the adjoint of a reflection read as a signed operator on a hilbert space; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-a-hilbert-space.html">The Signed Adjoint of the Left Multiplication on a Hilbert Space</a>
+<!-- the adjoint of the signed left multiplication on a hilbert space; its explicit expression and its relation to the signed sandwich. -->
+
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-hilbert-space.html">The Graded Adjoint Action on a Module over a Hilbert Space</a>
+<!-- the adjoint action of a graded module over a hilbert space; its compatibility with the grading and the sign rule. -->
 
 ## Analysis on Linear Algebras
 
@@ -1414,7 +2937,53 @@
 ###<a href="articles_maths/cyclic-cohomology.html">Cyclic Cohomology</a>
 <!-- cyclic cohomology as the dual of cyclic homology; the pairing with K-theory and the Chern character in its cyclic form; the relation to the cyclic homology of Part I and to the K-theory of Part II and the index theory of Part IV. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/the-dirac-operator.html">The Dirac Operator</a>
+<!-- the Dirac operator of Clifford analysis; its square, the Laplacian, and the monogenic functions. -->
+
+### <a href="articles_maths/the-cauchy-integral-operator.html">The Cauchy Integral Operator</a>
+<!-- the Cauchy integral operator of Clifford analysis; the Cauchy kernel and the boundary values. -->
+
+### <a href="articles_maths/the-fischer-operator.html">The Fischer Operator</a>
+<!-- the Fischer operator of the Fischer decomposition; the harmonic and the monogenic parts. -->
+
+### <a href="articles_maths/operators-on-a-clifford-module.html">Operators on a Clifford Module</a>
+<!-- the operators on a Clifford module; the Clifford multiplication and the intertwiners. -->
+
 ### - * Theory
+
+### <a href="articles_maths/hermitian-clifford-analysis-and-the-hermitian-monogenic-functions.html">Hermitian Clifford Analysis and the Hermitian Monogenic Functions</a>
+<!-- Hermitian Clifford analysis and the Hermitian monogenic functions; the conjugate Cauchy–Riemann operator. -->
+
+### <a href="articles_maths/the-hermitian-dirac-operator-and-the-fischer-decomposition.html">The Hermitian Dirac Operator and the Fischer Decomposition</a>
+<!-- the Hermitian Dirac operator and the Fischer decomposition; the refinement by the Hermitian structure. -->
+
+### <a href="articles_maths/hermitian-quaternionic-analysis-and-the-conjugate-cauchy-riemann-operator.html">Hermitian Quaternionic Analysis and the Conjugate Cauchy–Riemann Operator</a>
+<!-- Hermitian quaternionic analysis and the conjugate Cauchy–Riemann operator; the monogenic and the anti-monogenic functions. -->
+
+### <a href="articles_maths/hermitian-fueter-theory.html">Hermitian Fueter Theory</a>
+<!-- Hermitian Fueter theory; the Fueter operator and the regular functions of a quaternionic variable. -->
+
+### <a href="articles_maths/the-hermitian-cauchy-integral-and-the-boundary-values.html">The Hermitian Cauchy Integral and the Boundary Values</a>
+<!-- the Hermitian Cauchy integral and its boundary values; the Plemelj formulae. -->
+
+### <a href="articles_maths/hermitian-hilbert-modules-over-a-clifford-algebra.html">Hermitian Hilbert Modules over a Clifford Algebra</a>
+<!-- Hermitian Hilbert modules over a Clifford algebra; the inner product and the induced adjoint. -->
+
+### <a href="articles_maths/positive-definite-kernels-in-clifford-analysis.html">Positive Definite Kernels in Clifford Analysis</a>
+<!-- positive definite kernels in Clifford analysis; the reproducing kernel and the Bergman kernel. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-hermitian-dirac-operator.html">The Hermitian Dirac Operator</a>
+<!-- the Hermitian Dirac operator; its self-adjointness with respect to the Hermitian form. -->
+
+### <a href="articles_maths/the-hermitian-cauchy-kernel-as-an-adjoint.html">The Hermitian Cauchy Kernel as an Adjoint</a>
+<!-- the Hermitian Cauchy kernel as an adjoint; its pairing properties and the jump relations. -->
+
+### <a href="articles_maths/adjoints-on-a-clifford-module.html">Adjoints on a Clifford Module</a>
+<!-- the adjoints on a Clifford module; the Clifford-adjoint and the Hermitian-adjoint. -->
 
 ## Convexity and Order
 
@@ -1423,7 +2992,113 @@
 ### <a href="articles_maths/jordan-algebras-and-the-positive-cone.html">Jordan Algebras and the Positive Cone</a>
 <!-- the positive cone of a formally real Jordan algebra and the order it defines; the spectral resolution and the functional calculus; the order unit and the order-unit norm; the cone of a matrix algebra and the second-order cone of a spin factor; the JB-algebra axioms and the Jordan–Banach classification; symmetric cones, homogeneity and self-duality, and the structure group, with the Albert cone as the exceptional case. -->
 
+### <a href="articles_maths/convex-sets-and-the-convex-hull.html">Convex Sets and the Convex Hull</a>
+<!-- convex sets and the convex hull; the extreme points and the Krein–Milman theorem. -->
+
+### <a href="articles_maths/convex-functions-and-the-legendre-transform.html">Convex Functions and the Legendre Transform</a>
+<!-- convex functions and the Legendre transform; the conjugacy and the subdifferential. -->
+
+### <a href="articles_maths/ordered-vector-spaces-and-the-order-unit.html">Ordered Vector Spaces and the Order Unit</a>
+<!-- ordered vector spaces and the order unit; the positive cone and the order topology. -->
+
+### <a href="articles_maths/cones-extremal-rays-and-the-choquet-theory.html">Cones, Extremal Rays and the Choquet Theory</a>
+<!-- cones, extremal rays and the Choquet theory; the integral representation of a point. -->
+
+### <a href="articles_maths/helly-s-theorem-and-the-approximation-of-convex-sets.html">Helly's Theorem and the Approximation of Convex Sets</a>
+<!-- Helly's theorem and the approximation of convex sets; the finite intersection property. -->
+
+### - Operator Theory
+
+### <a href="articles_maths/positive-operators-on-an-ordered-space.html">Positive Operators on an Ordered Space</a>
+<!-- the positive operators of an ordered space; the order and the monotonicity. -->
+
+### <a href="articles_maths/the-cone-of-positive-operators.html">The Cone of Positive Operators</a>
+<!-- the cone of positive operators; its extreme rays and the order unit it defines. -->
+
+### <a href="articles_maths/the-order-unit-as-an-operator.html">The Order Unit as an Operator</a>
+<!-- the order unit as an operator; the order topology and the state space. -->
+
+### <a href="articles_maths/the-order-projection.html">The Order Projection</a>
+<!-- the order projection of an ordered vector space; the band decomposition and the Riesz space structure. -->
+
+### <a href="articles_maths/operators-on-a-convex-set.html">Operators on a Convex Set</a>
+<!-- the operators of a convex set; the affine maps and the Choquet boundary. -->
+
+### <a href="articles_maths/the-support-function-operator.html">The Support Function Operator</a>
+<!-- the support function as an operator on convex sets; the duality and the polar. -->
+
+### <a href="articles_maths/the-left-and-right-multiplication-operators-on-an-ordered-algebra.html">The Left and Right Multiplication Operators on an Ordered Algebra</a>
+<!-- the one-sided multiplications of an ordered algebra; their positivity and their commutation. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-an-ordered-algebra.html">The Signed Sandwich on an Ordered Algebra</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on an ordered algebra; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-an-ordered-algebra.html">Reflections as Signed Two-Sided Operators on an Ordered Algebra</a>
+<!-- the reflections of an ordered algebra read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-an-ordered-algebra.html">The Signed Left Multiplication on an Ordered Algebra</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on an ordered algebra; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-an-ordered-algebra.html">The Graded Action on a Module over an Ordered Algebra</a>
+<!-- the action of a graded module over an ordered algebra; the compatibility of the action with the grading and the sign rule it imposes. -->
+
 ### - * Theory
+
+### <a href="articles_maths/the-positive-cone-of-an-involutive-algebra.html">The Positive Cone of an Involutive Algebra</a>
+<!-- the positive cone of an involutive algebra; the order and the Hilbert cone. -->
+
+### <a href="articles_maths/jb-algebras-and-the-gelfand-naimark-theorem.html">JB*-Algebras and the Gelfand–Naimark Theorem</a>
+<!-- JB*-algebras and the Gelfand–Naimark theorem; the Jordan analogue of the $C^*$-theory. -->
+
+### <a href="articles_maths/hermitian-elements-and-the-order-unit.html">Hermitian Elements and the Order Unit</a>
+<!-- the Hermitian elements and the order unit; the order they inherit. -->
+
+### <a href="articles_maths/the-cone-of-positive-functionals.html">The Cone of Positive Functionals</a>
+<!-- the cone of positive functionals; the states and the extreme points. -->
+
+### <a href="articles_maths/positive-definite-forms-and-the-order.html">Positive Definite Forms and the Order</a>
+<!-- positive definite forms and the order; the cone they define. -->
+
+### <a href="articles_maths/the-jordan-algebra-of-self-adjoint-elements.html">The Jordan Algebra of Self-Adjoint Elements</a>
+<!-- the Jordan algebra of self-adjoint elements; the symmetrised product and the order. -->
+
+### <a href="articles_maths/ordered-involutive-algebras.html">Ordered Involutive Algebras</a>
+<!-- ordered involutive algebras; the compatibility of the order with the involution. -->
+
+### <a href="articles_maths/the-hilbert-cone-of-an-involutive-algebra.html">The Hilbert Cone of an Involutive Algebra</a>
+<!-- the Hilbert cone of an involutive algebra; the positivity and the $JBW$ structure. -->
+
+### <a href="articles_maths/positive-definite-forms-on-an-ordered-space.html">Positive Definite Forms on an Ordered Space</a>
+<!-- positive definite forms on an ordered space; the representation and the order. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-adjoint-of-a-positive-operator.html">The Adjoint of a Positive Operator</a>
+<!-- the adjoint of a positive operator; the self-adjointness and the order. -->
+
+### <a href="articles_maths/self-adjoint-elements-and-the-order.html">Self-Adjoint Elements and the Order</a>
+<!-- the self-adjoint elements and the order; the order unit and the state space. -->
+
+### <a href="articles_maths/positive-functionals-and-self-adjointness.html">Positive Functionals and Self-Adjointness</a>
+<!-- the positive functionals and self-adjointness; the states and the Kadison inequality. -->
+
+### <a href="articles_maths/the-involution-on-the-order-automorphisms.html">The Involution on the Order Automorphisms</a>
+<!-- the involution on the order automorphisms; the group it defines and the fixed elements. -->
+
+### <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-an-ordered-algebra.html">The Adjoint of the Left Multiplication on an Ordered Algebra</a>
+<!-- the adjoint of the left multiplication on an ordered algebra with respect to the form of the category; its explicit expression and its compatibility with the involution. -->
+
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-an-ordered-algebra.html">The Signed Adjoint Sandwich on an Ordered Algebra</a>
+<!-- the adjoint of the signed sandwich on an ordered algebra; the explicit form of the adjoint and the unitarity condition it defines. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-an-ordered-algebra.html">The Signed Adjoint of the Reflection on an Ordered Algebra</a>
+<!-- the adjoint of a reflection read as a signed operator on an ordered algebra; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-an-ordered-algebra.html">The Signed Adjoint of the Left Multiplication on an Ordered Algebra</a>
+<!-- the adjoint of the signed left multiplication on an ordered algebra; its explicit expression and its relation to the signed sandwich. -->
+
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-an-ordered-algebra.html">The Graded Adjoint Action on a Module over an Ordered Algebra</a>
+<!-- the adjoint action of a graded module over an ordered algebra; its compatibility with the grading and the sign rule. -->
 
 ## Smooth Manifolds and Differential Topology
 
@@ -1434,6 +3109,7 @@
 
 ### <a href="articles_maths/differential-forms-and-stokes-theorem.html">Differential Forms and Stokes' Theorem</a>
 <!-- exterior calculus, the exterior derivative, Stokes' theorem, the determinant via $\Lambda^n V$. -->
+
 ### <a href="articles_maths/sheaves-and-the-de-rham-complex.html">Sheaves and the de Rham Complex</a>
 <!-- the de Rham complex as a resolution of the constant sheaf; the de Rham theorem; the comparison of de Rham and singular cohomology; the Poincare lemma as a local statement; a Part II invariant computed by a Part III analytic resolution, using the forms and the exterior derivative of the preceding article. -->
 
@@ -1446,7 +3122,56 @@
 ###<a href="articles_maths/differential-topology.html">Differential Topology</a>
 <!-- transversality and Sard's theorem; degree theory; cobordism in outline; the relation to the algebraic topology of Part II. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/differential-operators-on-a-manifold.html">Differential Operators on a Manifold</a>
+<!-- the differential operators of a manifold; the symbol, the order and the jet bundles. -->
+
+### <a href="articles_maths/the-covariant-derivative.html">The Covariant Derivative</a>
+<!-- the covariant derivative of a connection; the curvature and the parallel transport. -->
+
+### <a href="articles_maths/the-lie-derivative.html">The Lie Derivative</a>
+<!-- the Lie derivative along a vector field; its action on forms and the Cartan formula. -->
+
+### <a href="articles_maths/the-exterior-derivative.html">The Exterior Derivative</a>
+<!-- the exterior derivative; the $d^2=0$ property and the de Rham complex. -->
+
+### <a href="articles_maths/the-codifferential.html">The Codifferential</a>
+<!-- the codifferential as the formal adjoint of $d$; the Hodge Laplacian and the harmonic forms. -->
+
 ### - * Theory
+
+### <a href="articles_maths/hermitian-vector-bundles-and-the-chern-connection.html">Hermitian Vector Bundles and the Chern Connection</a>
+<!-- Hermitian vector bundles and the Chern connection; the compatibility with the metric and the holomorphic structure. -->
+
+### <a href="articles_maths/chern-classes-of-a-hermitian-bundle.html">Chern Classes of a Hermitian Bundle</a>
+<!-- the Chern classes of a Hermitian bundle; the Chern–Weil construction. -->
+
+### <a href="articles_maths/hermitian-metrics-and-the-levi-civita-connection.html">Hermitian Metrics and the Levi-Civita Connection</a>
+<!-- Hermitian metrics and the Levi-Civita connection; the metric compatibility and the torsion-freeness. -->
+
+### <a href="articles_maths/real-structures-on-a-smooth-manifold.html">Real Structures on a Smooth Manifold</a>
+<!-- real structures on a smooth manifold; the antiholomorphic involution and the real points. -->
+
+### <a href="articles_maths/hermitian-manifolds-and-the-canonical-connection.html">Hermitian Manifolds and the Canonical Connection</a>
+<!-- Hermitian manifolds and the canonical connection; the Chern connection of the tangent bundle. -->
+
+### <a href="articles_maths/hermitian-structures-and-the-almost-complex-structure.html">Hermitian Structures and the Almost Complex Structure</a>
+<!-- Hermitian structures and the almost complex structure; the integrability and the Nijenhuis tensor. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-formal-adjoint-of-a-differential-operator.html">The Formal Adjoint of a Differential Operator</a>
+<!-- the formal adjoint of a differential operator; the integration by parts and the Lagrange identity. -->
+
+### <a href="articles_maths/hermitian-connections-and-the-adjoint.html">Hermitian Connections and the Adjoint</a>
+<!-- Hermitian connections and the adjoint; the metric compatibility of the adjoint connection. -->
+
+### <a href="articles_maths/the-l2-adjoint-of-a-differential-operator.html">The L2 Adjoint of a Differential Operator</a>
+<!-- the $L^2$ adjoint of a differential operator; the domain, the boundary conditions and the closedness. -->
+
+### <a href="articles_maths/hermitian-metrics-and-the-codifferential.html">Hermitian Metrics and the Codifferential</a>
+<!-- Hermitian metrics and the codifferential; the adjoint of $d$ and the Hodge Laplacian. -->
 
 ## Differential Equations
 
@@ -1512,7 +3237,53 @@
 ###<a href="articles_maths/stochastic-partial-differential-equations.html">Stochastic Partial Differential Equations</a>
 <!-- stochastic partial differential equations; the relation to the stochastic differential equations of this part and to the partial differential equations. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/differential-operators.html">Differential Operators</a>
+<!-- the differential operators of a differential equation; the order, the symbol and the formal adjoint. -->
+
+### <a href="articles_maths/the-green-operator.html">The Green Operator</a>
+<!-- the Green operator of a boundary value problem; the Green function and the inverse it provides. -->
+
+### <a href="articles_maths/the-sturm-liouville-operator.html">The Sturm–Liouville Operator</a>
+<!-- the Sturm–Liouville operator; the self-adjoint form, the eigenvalues and the eigenfunction expansion. -->
+
+### <a href="articles_maths/the-resolvent-operator.html">The Resolvent Operator</a>
+<!-- the resolvent operator; the resolvent set, the spectrum and the analytic dependence. -->
+
+### <a href="articles_maths/the-fundamental-solution-operator.html">The Fundamental Solution Operator</a>
+<!-- the fundamental solution as an operator; the convolution and the parametrices. -->
+
 ### - * Theory
+
+### <a href="articles_maths/self-adjoint-boundary-value-problems-and-the-sturm-liouville-theory.html">Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory</a>
+<!-- self-adjoint boundary value problems and the Sturm–Liouville theory; the reality of the eigenvalues and the completeness. -->
+
+### <a href="articles_maths/sesquilinear-forms-and-the-weak-formulation-of-an-elliptic-problem.html">Sesquilinear Forms and the Weak Formulation of an Elliptic Problem</a>
+<!-- sesquilinear forms and the weak formulation of an elliptic problem; the Lax–Milgram theorem. -->
+
+### <a href="articles_maths/the-dirichlet-principle-and-the-hermitian-functional.html">The Dirichlet Principle and the Hermitian Functional</a>
+<!-- the Dirichlet principle and the Hermitian functional; the minimiser and its regularity. -->
+
+### <a href="articles_maths/variational-methods-and-the-hermitian-form.html">Variational Methods and the Hermitian Form</a>
+<!-- variational methods and the Hermitian form; the critical points and the Euler–Lagrange equation. -->
+
+### <a href="articles_maths/self-adjoint-elliptic-operators-and-the-spectral-theorem.html">Self-Adjoint Elliptic Operators and the Spectral Theorem</a>
+<!-- self-adjoint elliptic operators and the spectral theorem; the discrete spectrum and the Weyl law. -->
+
+### <a href="articles_maths/the-adjoint-problem-and-the-green-function.html">The Adjoint Problem and the Green Function</a>
+<!-- the adjoint problem and the Green function; the symmetry and the reciprocity. -->
+
+### <a href="articles_maths/the-lagrange-identity-and-the-self-adjoint-system.html">The Lagrange Identity and the Self-Adjoint System</a>
+<!-- the Lagrange identity and the self-adjoint system; the boundary terms and the Green formula. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/self-adjoint-sturm-liouville-operators.html">Self-Adjoint Sturm–Liouville Operators</a>
+<!-- the self-adjoint Sturm–Liouville operators; the boundary conditions and the eigenfunction expansion. -->
+
+### <a href="articles_maths/the-adjoint-boundary-condition.html">The Adjoint Boundary Condition</a>
+<!-- the adjoint boundary condition; the pairing of the boundary data and the self-adjointness. -->
 
 ## Lie Groups
 
@@ -1554,7 +3325,71 @@
 ###<a href="articles_maths/arithmetic-groups.html">Arithmetic Groups</a>
 <!-- arithmetic groups and their properties; the relation to lattices in Lie groups and to the algebraic number theory of Part I. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/operators-on-a-lie-group.html">Operators on a Lie Group</a>
+<!-- the operators of a Lie group; the invariant operators and the convolution algebra. -->
+
+### <a href="articles_maths/the-casimir-operator-of-a-lie-group.html">The Casimir Operator of a Lie Group</a>
+<!-- the Casimir operator of a Lie group; its bi-invariance and its role in the representation theory. -->
+
+### <a href="articles_maths/the-exponential-map-as-an-operator.html">The Exponential Map as an Operator</a>
+<!-- the exponential map as an operator; its local invertibility and the Campbell–Hausdorff formula. -->
+
+### <a href="articles_maths/the-regular-representation-of-a-lie-group.html">The Regular Representation of a Lie Group</a>
+<!-- the regular representation of a Lie group; the left and the right translations and the enveloping algebra. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-a-lie-algebra.html">The Signed Sandwich on a Lie Algebra</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on a lie algebra; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-a-lie-algebra.html">Reflections as Signed Two-Sided Operators on a Lie Algebra</a>
+<!-- the reflections of a lie algebra read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-a-lie-algebra.html">The Signed Left Multiplication on a Lie Algebra</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on a lie algebra; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-a-lie-algebra.html">The Graded Action on a Module over a Lie Algebra</a>
+<!-- the action of a graded module over a lie algebra; the compatibility of the action with the grading and the sign rule it imposes. -->
+
 ### - * Theory
+
+### <a href="articles_maths/real-forms-of-a-complex-lie-group-and-the-cartan-involution.html">Real Forms of a Complex Lie Group and the Cartan Involution</a>
+<!-- real forms of a complex Lie group and the Cartan involution; the classification and the symmetric space. -->
+
+### <a href="articles_maths/unitary-representations-of-a-lie-group.html">Unitary Representations of a Lie Group</a>
+<!-- the unitary representations of a Lie group; the irreducible decomposition and the Plancherel measure. -->
+
+### <a href="articles_maths/the-cartan-decomposition-and-the-cartan-involution.html">The Cartan Decomposition and the Cartan Involution</a>
+<!-- the Cartan decomposition and the Cartan involution; the maximal compact subgroup. -->
+
+### <a href="articles_maths/hermitian-lie-groups-and-the-bounded-domain.html">Hermitian Lie Groups and the Bounded Domain</a>
+<!-- Hermitian Lie groups and the bounded domain; the Harish-Chandra realisation. -->
+
+### <a href="articles_maths/the-involution-on-the-enveloping-algebra-of-a-lie-group.html">The Involution on the Enveloping Algebra of a Lie Group</a>
+<!-- the involution on the enveloping algebra; the star structure and the unitary representations. -->
+
+### <a href="articles_maths/unitary-representations-and-the-orbit-method.html">Unitary Representations and the Orbit Method</a>
+<!-- unitary representations and the orbit method; the coadjoint orbits and the Kirillov correspondence. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/hermitian-forms-on-a-lie-algebra.html">Hermitian Forms on a Lie Algebra</a>
+<!-- Hermitian forms on a Lie algebra; their invariance and the unitary representations they define. -->
+
+### <a href="articles_maths/unitary-representations-and-the-adjoint-operator.html">Unitary Representations and the Adjoint Operator</a>
+<!-- unitary representations and the adjoint operator; the unitarity of the representation and the self-adjoint generators. -->
+
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-a-lie-algebra.html">The Signed Adjoint Sandwich on a Lie Algebra</a>
+<!-- the adjoint of the signed sandwich on a lie algebra; the explicit form of the adjoint and the unitarity condition it defines. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-a-lie-algebra.html">The Signed Adjoint of the Reflection on a Lie Algebra</a>
+<!-- the adjoint of a reflection read as a signed operator on a lie algebra; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-a-lie-algebra.html">The Signed Adjoint of the Left Multiplication on a Lie Algebra</a>
+<!-- the adjoint of the signed left multiplication on a lie algebra; its explicit expression and its relation to the signed sandwich. -->
+
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-lie-algebra.html">The Graded Adjoint Action on a Module over a Lie Algebra</a>
+<!-- the adjoint action of a graded module over a lie algebra; its compatibility with the grading and the sign rule. -->
 
 ## Probability and Ergodic Theory
 
@@ -1593,7 +3428,83 @@
 ###<a href="articles_maths/random-walks-on-groups.html">Random Walks on Groups</a>
 <!-- random walks on groups and their properties; recurrence and transience; the relation to the geometric group theory of Part II and to the measure-theoretic probability of this part. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/the-markov-operator.html">The Markov Operator</a>
+<!-- the Markov operator of a chain; the invariant measure and the ergodicity. -->
+
+### <a href="articles_maths/the-transition-operator.html">The Transition Operator</a>
+<!-- the transition operator of a process; the semigroup property and the generator. -->
+
+### <a href="articles_maths/the-ergodic-operator.html">The Ergodic Operator</a>
+<!-- the ergodic operator of a measure-preserving transformation; the mean ergodic theorem. -->
+
+### <a href="articles_maths/the-conditional-expectation-operator.html">The Conditional Expectation Operator</a>
+<!-- the conditional expectation as an operator; its projection property and the martingale convergence. -->
+
+### <a href="articles_maths/the-shift-operator-of-a-process.html">The Shift Operator of a Process</a>
+<!-- the shift of a process; its ergodicity, its mixing and the Bernoulli case. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-the-algebra-of-random-variables.html">The Signed Sandwich on the Algebra of Random Variables</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on the algebra of random variables; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-the-algebra-of-random-variables.html">Reflections as Signed Two-Sided Operators on the Algebra of Random Variables</a>
+<!-- the reflections of the algebra of random variables read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-the-algebra-of-random-variables.html">The Signed Left Multiplication on the Algebra of Random Variables</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on the algebra of random variables; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-the-algebra-of-random-variables.html">The Graded Action on a Module over the Algebra of Random Variables</a>
+<!-- the action of a graded module over the algebra of random variables; the compatibility of the action with the grading and the sign rule it imposes. -->
+
 ### - * Theory
+
+### <a href="articles_maths/reversible-markov-chains-and-time-reversal.html">Reversible Markov Chains and Time Reversal</a>
+<!-- reversible Markov chains and time reversal; the detailed balance and the self-adjointness. -->
+
+### <a href="articles_maths/non-commutative-probability-and-the-involutive-algebra-of-random-variables.html">Non-Commutative Probability and the Involutive Algebra of Random Variables</a>
+<!-- non-commutative probability and the involutive algebra of random variables; the free independence. -->
+
+### <a href="articles_maths/the-reversibility-of-a-stationary-process.html">The Reversibility of a Stationary Process</a>
+<!-- the reversibility of a stationary process; its invariance under time reversal. -->
+
+### <a href="articles_maths/the-involution-on-the-algebra-of-random-variables.html">The Involution on the Algebra of Random Variables</a>
+<!-- the involution on the algebra of random variables; the complex conjugation and the real random variables. -->
+
+### <a href="articles_maths/the-covariance-function-and-hermitian-positivity.html">The Covariance Function and Hermitian Positivity</a>
+<!-- the covariance function and Hermitian positivity; the positive definiteness and the spectral measure. -->
+
+### <a href="articles_maths/the-characteristic-function-and-conjugate-symmetry.html">The Characteristic Function and Conjugate Symmetry</a>
+<!-- the characteristic function and conjugate symmetry; the reality of the distribution. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-adjoint-of-the-markov-operator.html">The Adjoint of the Markov Operator</a>
+<!-- the adjoint of the Markov operator; the time reversal and the stationary measure. -->
+
+### <a href="articles_maths/the-involution-on-the-operator-algebra-of-a-process.html">The Involution on the Operator Algebra of a Process</a>
+<!-- the involution on the operator algebra of a process; the adjoint and the self-adjoint elements. -->
+
+### <a href="articles_maths/the-adjoint-of-the-transition-operator.html">The Adjoint of the Transition Operator</a>
+<!-- the adjoint of the transition operator; the reversed chain and the detailed balance. -->
+
+### <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-the-algebra-of-random-variables.html">The Adjoint of the Left Multiplication on the Algebra of Random Variables</a>
+<!-- the adjoint of the left multiplication on the algebra of random variables with respect to the form of the category; its explicit expression and its compatibility with the involution. -->
+
+### <a href="articles_maths/reversible-operators-and-self-adjointness.html">Reversible Operators and Self-Adjointness</a>
+<!-- the reversible operators and self-adjointness; the refinement of the spectrum by the reversing symmetry. -->
+
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-the-algebra-of-random-variables.html">The Signed Adjoint Sandwich on the Algebra of Random Variables</a>
+<!-- the adjoint of the signed sandwich on the algebra of random variables; the explicit form of the adjoint and the unitarity condition it defines. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-the-algebra-of-random-variables.html">The Signed Adjoint of the Reflection on the Algebra of Random Variables</a>
+<!-- the adjoint of a reflection read as a signed operator on the algebra of random variables; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-the-algebra-of-random-variables.html">The Signed Adjoint of the Left Multiplication on the Algebra of Random Variables</a>
+<!-- the adjoint of the signed left multiplication on the algebra of random variables; its explicit expression and its relation to the signed sandwich. -->
+
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-the-algebra-of-random-variables.html">The Graded Adjoint Action on a Module over the Algebra of Random Variables</a>
+<!-- the adjoint action of a graded module over the algebra of random variables; its compatibility with the grading and the sign rule. -->
 
 ## Dynamical Systems
 
@@ -1623,9 +3534,58 @@
 ###<a href="articles_maths/dynamics-and-number-theory.html">Dynamics and Number Theory</a>
 <!-- the dynamics of arithmetic origin; the Gauss map and continued fractions; the relation to the homogeneous dynamics of this part. -->
 
-## PART IV : GEOMETRY
+### - Operator Theory
+
+### <a href="articles_maths/the-evolution-operator.html">The Evolution Operator</a>
+<!-- the evolution operator of a dynamical system; the semigroup property and the generator. -->
+
+### <a href="articles_maths/the-koopman-operator.html">The Koopman Operator</a>
+<!-- the Koopman operator; its unitarity for a measure-preserving flow and the spectral theory of the dynamics. -->
+
+### <a href="articles_maths/the-transfer-operator.html">The Transfer Operator</a>
+<!-- the transfer operator of a map; the Perron–Frobenius operator and its spectrum. -->
+
+### <a href="articles_maths/the-flow-operator.html">The Flow Operator</a>
+<!-- the flow as a one-parameter group of operators; the generator and the Lie derivative. -->
+
+### <a href="articles_maths/the-poincare-map.html">The Poincaré Map</a>
+<!-- the Poincaré return map as an operator; the reduction of a flow to a discrete system. -->
 
 ### - * Theory
+
+### <a href="articles_maths/reversible-dynamical-systems-and-time-reversal-symmetry.html">Reversible Dynamical Systems and Time-Reversal Symmetry</a>
+<!-- reversible dynamical systems and time-reversal symmetry; the reversing involution. -->
+
+### <a href="articles_maths/equivariant-dynamics-under-an-involution.html">Equivariant Dynamics under an Involution</a>
+<!-- equivariant dynamics under an involution; the fixed-point subspace and the reduced dynamics. -->
+
+### <a href="articles_maths/symmetric-periodic-orbits-and-the-involution.html">Symmetric Periodic Orbits and the Involution</a>
+<!-- symmetric periodic orbits and the involution; their existence and the Birkhoff theory. -->
+
+### <a href="articles_maths/reversible-systems-and-the-kam-theorem.html">Reversible Systems and the KAM Theorem</a>
+<!-- reversible systems and the KAM theorem; the persistence of the invariant tori. -->
+
+### <a href="articles_maths/equivariant-bifurcation-theory.html">Equivariant Bifurcation Theory</a>
+<!-- equivariant bifurcation theory; the symmetry-breaking and the equivariant branching lemma. -->
+
+### <a href="articles_maths/invariant-tori-under-an-involution.html">Invariant Tori under an Involution</a>
+<!-- invariant tori under an involution; their existence and their symmetry. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-adjoint-of-the-koopman-operator.html">The Adjoint of the Koopman Operator</a>
+<!-- the adjoint of the Koopman operator; the Perron–Frobenius operator and the duality. -->
+
+### <a href="articles_maths/reversible-operators-and-the-involution.html">Reversible Operators and the Involution</a>
+<!-- the reversible operators and the involution; the reversing symmetry and the spectrum. -->
+
+### <a href="articles_maths/time-reversal-and-the-transfer-operator.html">Time Reversal and the Transfer Operator</a>
+<!-- time reversal and the transfer operator; the self-adjointness and the reversibility. -->
+
+### <a href="articles_maths/the-involution-on-the-flow-operator.html">The Involution on the Flow Operator</a>
+<!-- the involution on the flow operator; the reversing symmetry of the flow. -->
+
+## PART IV : GEOMETRY
 
 ## Foundations of Geometry
 
@@ -1649,7 +3609,56 @@
 ###<a href="articles_maths/gromov-hausdorff-convergence.html">Gromov–Hausdorff Convergence</a>
 <!-- Gromov–Hausdorff convergence and its properties; the relation to the metric geometry and to the Riemannian geometry of this part. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/isometries-as-operators.html">Isometries as Operators</a>
+<!-- isometries read as operators; the group they form and the action on the tangent bundle. -->
+
+### <a href="articles_maths/the-geodesic-flow-operator.html">The Geodesic Flow Operator</a>
+<!-- the geodesic flow as an operator; the Hamiltonian formulation and the Jacobi fields. -->
+
+### <a href="articles_maths/the-curvature-operator.html">The Curvature Operator</a>
+<!-- the curvature operator of a Riemannian manifold; the sectional and the Ricci curvature it encodes. -->
+
+### <a href="articles_maths/the-shape-operator.html">The Shape Operator</a>
+<!-- the shape operator of a hypersurface; the principal curvatures and the second fundamental form. -->
+
+### <a href="articles_maths/the-parallel-transport-operator.html">The Parallel Transport Operator</a>
+<!-- parallel transport as an operator; the holonomy and its relation to the curvature. -->
+
 ### - * Theory
+
+### <a href="articles_maths/the-geodesic-symmetry-and-locally-symmetric-spaces.html">The Geodesic Symmetry and Locally Symmetric Spaces</a>
+<!-- the geodesic symmetry and locally symmetric spaces; the reflection at a point and the Cartan theory. -->
+
+### <a href="articles_maths/riemannian-symmetric-spaces-and-the-involution.html">Riemannian Symmetric Spaces and the Involution</a>
+<!-- Riemannian symmetric spaces and the involution; the decomposition and the classification. -->
+
+### <a href="articles_maths/isometric-involutions-and-the-two-fold-quotient-of-a-riemannian-manifold.html">Isometric Involutions and the Two-Fold Quotient of a Riemannian Manifold</a>
+<!-- isometric involutions and the two-fold quotient of a Riemannian manifold; the covering and the fixed set. -->
+
+### <a href="articles_maths/isometric-involutions-and-the-fixed-point-set.html">Isometric Involutions and the Fixed-Point Set</a>
+<!-- isometric involutions and their fixed-point set; the totally geodesic components. -->
+
+### <a href="articles_maths/real-structures-on-a-riemannian-manifold.html">Real Structures on a Riemannian Manifold</a>
+<!-- real structures on a Riemannian manifold; the isometric involution and the real points. -->
+
+### <a href="articles_maths/hermitian-manifolds-and-the-geodesic-involution.html">Hermitian Manifolds and the Geodesic Involution</a>
+<!-- Hermitian manifolds and the geodesic involution; the compatibility with the complex structure. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-adjoint-of-the-geodesic-operator.html">The Adjoint of the Geodesic Operator</a>
+<!-- the adjoint of the geodesic operator; the Jacobi equation and the self-adjointness. -->
+
+### <a href="articles_maths/isometric-involutions-on-the-operator-layer.html">Isometric Involutions on the Operator Layer</a>
+<!-- isometric involutions on the operator layer; the adjoint and the fixed operators. -->
+
+### <a href="articles_maths/the-involution-on-the-curvature-operator.html">The Involution on the Curvature Operator</a>
+<!-- the involution on the curvature operator; the skew-symmetry and the symmetry of the curvature tensor. -->
+
+### <a href="articles_maths/hermitian-manifolds-and-the-adjoint.html">Hermitian Manifolds and the Adjoint</a>
+<!-- Hermitian manifolds and the adjoint; the metric adjoint and the complex structure. -->
 
 ## Geometry on Groups
 
@@ -1673,7 +3682,71 @@
 ###<a href="articles_maths/symmetry-point-and-crystallographic-groups.html">Symmetry, Point and Crystallographic Groups</a>
 <!-- the symmetry group of a figure in Euclidean space as a subgroup of the isometry group; the orthogonal group and the reflections and rotations it contains, with the distance and the measure these require; the finite point groups and their classification in two and three dimensions; the polyhedral and dihedral families and their realisation inside $O(3)$; the discrete and crystallographic groups of Euclidean space, their lattices and the Bieberbach theorems; the classical groups as the continuous families of symmetry, with forward references to the articles on $O$, $U$ and $Sp$. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/operators-on-a-symmetry-group.html">Operators on a Symmetry Group</a>
+<!-- the operators of a symmetry group; the action on the space and the equivariant operators. -->
+
+### <a href="articles_maths/the-symmetry-operators-of-a-space.html">The Symmetry Operators of a Space</a>
+<!-- the symmetry operators of a space; the group, the orbits and the invariants. -->
+
+### <a href="articles_maths/the-convolution-operator-on-a-symmetric-space.html">The Convolution Operator on a Symmetric Space</a>
+<!-- the convolution operator on a symmetric space; the spherical functions and the spherical transform. -->
+
+### <a href="articles_maths/the-translation-operator-on-a-symmetry-group.html">The Translation Operator on a Symmetry Group</a>
+<!-- the translation operator on a group; the invariance and the ergodicity for a lattice. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-a-symmetry-group.html">The Signed Sandwich on a Symmetry Group</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on a symmetry group; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-a-symmetry-group.html">Reflections as Signed Two-Sided Operators on a Symmetry Group</a>
+<!-- the reflections of a symmetry group read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-a-symmetry-group.html">The Signed Left Multiplication on a Symmetry Group</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on a symmetry group; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-a-symmetry-group.html">The Graded Action on a Module over a Symmetry Group</a>
+<!-- the action of a graded module over a symmetry group; the compatibility of the action with the grading and the sign rule it imposes. -->
+
 ### - * Theory
+
+### <a href="articles_maths/the-unitary-group-and-the-hermitian-symmetric-space.html">The Unitary Group and the Hermitian Symmetric Space</a>
+<!-- the unitary group and the Hermitian symmetric space; the bounded realisation and the Harish-Chandra embedding. -->
+
+### <a href="articles_maths/unitary-groups-and-their-involution.html">Unitary Groups and Their Involution</a>
+<!-- unitary groups and their involution; the Cartan involution and the symmetric space. -->
+
+### <a href="articles_maths/the-orthogonal-group-and-the-involutive-automorphism.html">The Orthogonal Group and the Involutive Automorphism</a>
+<!-- the orthogonal group and the involutive automorphism; the symmetric space and the fixed subgroup. -->
+
+### <a href="articles_maths/hermitian-symmetric-spaces-and-the-group-involution.html">Hermitian Symmetric Spaces and the Group Involution</a>
+<!-- Hermitian symmetric spaces and the group involution; the classification and the complex structure. -->
+
+### <a href="articles_maths/the-involution-on-the-symmetry-group-of-a-space.html">The Involution on the Symmetry Group of a Space</a>
+<!-- the involution on the symmetry group of a space; the induced action on the space and the fixed points. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-adjoint-of-a-symmetry-operator.html">The Adjoint of a Symmetry Operator</a>
+<!-- the adjoint of a symmetry operator; the unitarity and the invariant form. -->
+
+### <a href="articles_maths/unitary-operators-of-a-symmetry-group.html">Unitary Operators of a Symmetry Group</a>
+<!-- the unitary operators of a symmetry group; the group they form and the representations. -->
+
+### <a href="articles_maths/the-involution-on-the-translation-operators.html">The Involution on the Translation Operators</a>
+<!-- the involution on the translation operators; the adjoint and the reversing symmetry. -->
+
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-a-symmetry-group.html">The Signed Adjoint Sandwich on a Symmetry Group</a>
+<!-- the adjoint of the signed sandwich on a symmetry group; the explicit form of the adjoint and the unitarity condition it defines. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-a-symmetry-group.html">The Signed Adjoint of the Reflection on a Symmetry Group</a>
+<!-- the adjoint of a reflection read as a signed operator on a symmetry group; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-a-symmetry-group.html">The Signed Adjoint of the Left Multiplication on a Symmetry Group</a>
+<!-- the adjoint of the signed left multiplication on a symmetry group; its explicit expression and its relation to the signed sandwich. -->
+
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-symmetry-group.html">The Graded Adjoint Action on a Module over a Symmetry Group</a>
+<!-- the adjoint action of a graded module over a symmetry group; its compatibility with the grading and the sign rule. -->
 
 ## Geometry on Rings and Fields
 
@@ -1697,7 +3770,78 @@
 ###<a href="articles_maths/mobius-and-lie-sphere-geometry.html">Möbius and Lie Sphere Geometry</a>
 <!-- Möbius geometry and its properties; the relation to the conformal geometry and to the Lie sphere geometry of this part; the Lie sphere geometry and its relation to the Möbius geometry. -->
 
+### - Operator Theory
+
+#### Two-Sided Operator
+
+### <a href="articles_maths/operators-on-a-projective-space.html">Operators on a Projective Space</a>
+<!-- the operators of a projective space; the projectivities and the action of the general linear group. -->
+
+### <a href="articles_maths/the-mobius-transformation-as-an-operator.html">The Möbius Transformation as an Operator</a>
+<!-- the Möbius transformation as an operator; the cross-ratio and the action on hyperbolic space. -->
+
+#### One-Sided Operator
+
+### <a href="articles_maths/the-projection-operator.html">The Projection Operator</a>
+<!-- the projection operator of a projective space; the centre of projection and the perspectivity. -->
+
+#### Signed Two-Sided Operator
+
+### <a href="articles_maths/the-conformal-operator.html">The Conformal Operator</a>
+<!-- the conformal operator of a geometry; the conformal group and the Weyl tensor. -->
+
+### <a href="articles_maths/geodesic-reflection-as-an-operator.html">Geodesic Reflection as an Operator</a>
+<!-- the geodesic reflection as an operator; the inversion and the symmetry of a geodesic. -->
+
+#### Signed One-Sided Operator
+
+### <a href="articles_maths/operators-on-hyperbolic-space.html">Operators on Hyperbolic Space</a>
+<!-- the operators of hyperbolic space; the isometry group and the geodesic flow. -->
+
 ### - * Theory
+
+### <a href="articles_maths/unitary-geometry-over-a-field-with-involution.html">Unitary Geometry over a Field with Involution</a>
+<!-- unitary geometry over a field with involution; the Hermitian forms and the unitary group. -->
+
+### <a href="articles_maths/hermitian-forms-and-unitary-geometry.html">Hermitian Forms and Unitary Geometry</a>
+<!-- Hermitian forms and unitary geometry; the classification and the Witt theorem. -->
+
+### <a href="articles_maths/real-structures-on-a-projective-space.html">Real Structures on a Projective Space</a>
+<!-- real structures on a projective space; the involution and the real points. -->
+
+### <a href="articles_maths/orthogonal-geometry-and-the-involution.html">Orthogonal Geometry and the Involution</a>
+<!-- orthogonal geometry and the involution; the polarity and the quadric. -->
+
+### <a href="articles_maths/hermitian-spaces-over-a-local-field.html">Hermitian Spaces over a Local Field</a>
+<!-- Hermitian spaces over a local field; the classification and the invariants. -->
+
+### - * Operator Theory
+
+#### Two-Sided Operator with Adjoint
+
+### <a href="articles_maths/the-adjoint-under-a-hermitian-pairing.html">The Adjoint under a Hermitian Pairing</a>
+<!-- the adjoint under a Hermitian pairing; its explicit form and the self-adjoint elements. -->
+
+### <a href="articles_maths/hermitian-structures-and-the-projection-operator.html">Hermitian Structures and the Projection Operator</a>
+<!-- Hermitian structures and the projection operator; the orthogonal projection and the adjoint. -->
+
+### <a href="articles_maths/the-involution-on-the-mobius-operators.html">The Involution on the Möbius Operators</a>
+<!-- the involution on the Möbius operators; the complex conjugation and the real Möbius transformations. -->
+
+#### One-Sided Operator with Adjoint
+
+### <a href="articles_maths/involutions-of-the-projection-operators.html">Involutions of the Projection Operators</a>
+<!-- the involutions of the projection operators; the central projections and the perspectivities. -->
+
+#### Signed Two-Sided Operator with Adjoint
+
+### + <a href="articles_maths/the-signed-adjoint-of-the-conformal-operator.html">The Signed Adjoint of the Conformal Operator</a>
+<!-- the signed adjoint of the conformal operator; the sign-reversing adjoint and the unitarity condition it defines. -->
+
+#### Signed One-Sided Operator with Adjoint
+
+### + <a href="articles_maths/the-signed-adjoint-of-the-geodesic-reflection.html">The Signed Adjoint of the Geodesic Reflection</a>
+<!-- the signed adjoint of the geodesic reflection; the self-adjointness of the reflection and its failure in the degenerate case. -->
 
 ## Geometry on Linear Spaces
 
@@ -1739,7 +3883,83 @@
 ###<a href="articles_maths/calabi-yau-manifolds.html">Calabi–Yau Manifolds</a>
 <!-- Calabi–Yau manifolds and their properties; the relation to the Kähler geometry of this part. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/operators-on-a-complex-manifold.html">Operators on a Complex Manifold</a>
+<!-- the operators of a complex manifold; the holomorphic and the antiholomorphic operators. -->
+
+### <a href="articles_maths/the-bergman-operator.html">The Bergman Operator</a>
+<!-- the Bergman operator of a domain; the Bergman kernel and the Bergman projection. -->
+
+### <a href="articles_maths/the-almost-complex-operator.html">The Almost Complex Operator</a>
+<!-- the almost complex operator; the complex structure and its integrability. -->
+
+### <a href="articles_maths/the-kahler-form-operator.html">The Kähler Form Operator</a>
+<!-- the Kähler form as an operator; the Lefschetz decomposition and the Hodge–Riemann relations. -->
+
+### <a href="articles_maths/the-curvature-operator-of-a-complex-manifold.html">The Curvature Operator of a Complex Manifold</a>
+<!-- the curvature operator of a complex manifold; the Chern and the Kähler curvature. -->
+
+### <a href="articles_maths/the-left-and-right-multiplication-operators-on-a-complex-vector-space.html">The Left and Right Multiplication Operators on a Complex Vector Space</a>
+<!-- the one-sided multiplications on a complex vector space; the complex structure and the operators. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-a-complex-vector-space.html">The Signed Sandwich on a Complex Vector Space</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on a complex vector space; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-a-complex-vector-space.html">Reflections as Signed Two-Sided Operators on a Complex Vector Space</a>
+<!-- the reflections of a complex vector space read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-a-complex-vector-space.html">The Signed Left Multiplication on a Complex Vector Space</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on a complex vector space; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-a-complex-vector-space.html">The Graded Action on a Module over a Complex Vector Space</a>
+<!-- the action of a graded module over a complex vector space; the compatibility of the action with the grading and the sign rule it imposes. -->
+
 ### - * Theory
+
+### <a href="articles_maths/hermitian-symmetric-spaces-and-the-bergman-metric.html">Hermitian Symmetric Spaces and the Bergman Metric</a>
+<!-- Hermitian symmetric spaces and the Bergman metric; the bounded domain and its automorphisms. -->
+
+### <a href="articles_maths/real-structures-on-a-complex-manifold.html">Real Structures on a Complex Manifold</a>
+<!-- real structures on a complex manifold; the antiholomorphic involution and the real points. -->
+
+### + <a href="articles_maths/complex-manifolds-with-an-antiholomorphic-involution.html">Complex Manifolds with an Antiholomorphic Involution</a>
+<!-- complex manifolds with an antiholomorphic involution; the quotient and the real forms. -->
+
+### + <a href="articles_maths/kahler-manifolds-and-the-hermitian-form.html">Kähler Manifolds and the Hermitian Form</a>
+<!-- Kähler manifolds and the Hermitian form; the closedness and the Kähler identities. -->
+
+### + <a href="articles_maths/the-involution-on-a-complex-vector-space.html">The Involution on a Complex Vector Space</a>
+<!-- the involution on a complex vector space; the real structure and the conjugation. -->
+
+### + <a href="articles_maths/hermitian-geometry-and-the-unitary-group.html">Hermitian Geometry and the Unitary Group</a>
+<!-- Hermitian geometry and the unitary group; the Hermitian forms and the unitary frames. -->
+
+### - * Operator Theory
+
+### + <a href="articles_maths/the-adjoint-of-a-hermitian-operator.html">The Adjoint of a Hermitian Operator</a>
+<!-- the adjoint of a Hermitian operator; its explicit form and the self-adjointness. -->
+
+### + <a href="articles_maths/involutions-of-the-bergman-operator.html">Involutions of the Bergman Operator</a>
+<!-- the involutions of the Bergman operator; the conjugate symmetry and the self-adjointness. -->
+
+### + <a href="articles_maths/the-involution-on-the-kahler-operator.html">The Involution on the Kähler Operator</a>
+<!-- the involution on the Kähler operator; the Hodge star and the complex conjugation. -->
+
+### + <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-a-complex-vector-space.html">The Adjoint of the Left Multiplication on a Complex Vector Space</a>
+<!-- the adjoint of the left multiplication on a complex vector space with respect to the form of the category; its explicit expression and its compatibility with the involution. -->
+
+### + <a href="articles_maths/the-signed-adjoint-sandwich-on-a-complex-vector-space.html">The Signed Adjoint Sandwich on a Complex Vector Space</a>
+<!-- the adjoint of the signed sandwich on a complex vector space; the explicit form of the adjoint and the unitarity condition it defines. -->
+
+### + <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-a-complex-vector-space.html">The Signed Adjoint of the Reflection on a Complex Vector Space</a>
+<!-- the adjoint of a reflection read as a signed operator on a complex vector space; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### + <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-a-complex-vector-space.html">The Signed Adjoint of the Left Multiplication on a Complex Vector Space</a>
+<!-- the adjoint of the signed left multiplication on a complex vector space; its explicit expression and its relation to the signed sandwich. -->
+
+### + <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-complex-vector-space.html">The Graded Adjoint Action on a Module over a Complex Vector Space</a>
+<!-- the adjoint action of a graded module over a complex vector space; its compatibility with the grading and the sign rule. -->
 
 ## Geometry on Linear Algebras
 
@@ -1772,7 +3992,80 @@
 ### <a href="articles_maths/curves-and-surfaces-in-the-biquaternion-moving-frame.html">Curves and Surfaces in the Biquaternion Moving Frame</a>
 <!-- the moving frame as one rotor $r$ of the real quaternion subspace of $\mathbb{B}$ with $v_k=r\gamma_kr^{\dagger}$; the affine connection one-form $\mathrm d\iota=2r^{\dagger}\mathrm dr=\iota_1e_1+\iota_2e_2+\iota_3e_3$ and the frame equation $\mathrm dv_k=r(\mathrm Dv_k)r^{\dagger}$ with $\mathrm Dv_k=\tfrac12(\mathrm d\iota\gamma_k-\gamma_k\mathrm d\iota)$; the Frenet frame as the frame with $\mathrm dx=\mathrm ds\,v_1$ and $\iota_2=0$, the Frenet equations $\mathrm d\iota_F=\tau\mathrm ds\,e_1+\rho\mathrm ds\,e_3$ and the invariants $\rho$ and $\tau$ read from $\dot x\wedge\ddot x$ and from the trivector, with the helix worked; the coframe and the two fundamental forms of a surface, $\Pi=-\mathrm Dv_3\cdot\mathrm dx=L_{11}\omega_1^2+2L_{12}\omega_1\omega_2+L_{22}\omega_2^2$, the Gaussian and mean curvatures $K=L_{11}L_{22}-L_{12}^2$ and $H=\tfrac12(L_{11}+L_{22})$, the theorema egregium $K=(a_1b_2-a_2b_1)/(A_1B_2-A_2B_1)$; the Darboux frame with the relative torsion, the normal curvature and the geodesic curvature; the integrability of the frame, the structure equation $\partial_v\iota_1-\partial_u\iota_2=\iota_1\wedge\iota_2$ and the symmetry $L_{12}=L_{21}$ as the Gauss and Codazzi–Mainardi equations; the curvature lines, the asymptotic lines and the geodesics, with the sphere worked; the classical local theory in three dimensions, whose Riemannian generalisation is *Curvature and Geodesics* and whose exterior and contraction algebra is Part II. -->
 
+### - Operator Theory
+
+### <a href="articles_maths/the-spinor-operator.html">The Spinor Operator</a>
+<!-- the spinor operator on a spin manifold; the spin connection and the Dirac operator it defines. -->
+
+### <a href="articles_maths/the-twistor-operator.html">The Twistor Operator</a>
+<!-- the twistor operator; the twistor space and the Penrose transform. -->
+
+### <a href="articles_maths/the-clifford-multiplication-operator.html">The Clifford Multiplication Operator</a>
+<!-- the Clifford multiplication as an operator; the spinor bundle and the Dirac operator. -->
+
+### <a href="articles_maths/the-codifferential-on-a-spinor-bundle.html">The Codifferential on a Spinor Bundle</a>
+<!-- the codifferential on a spinor bundle; the adjoint of the spin connection and the Dirac operator. -->
+
+### <a href="articles_maths/the-penrose-operator.html">The Penrose Operator</a>
+<!-- the Penrose operator; the twistor equation and its conformal invariance. -->
+
+### <a href="articles_maths/the-left-and-right-multiplication-operators-on-a-clifford-algebra.html">The Left and Right Multiplication Operators on a Clifford Algebra</a>
+<!-- the one-sided multiplications on a Clifford algebra; the spin representation and the opposite algebra. -->
+
+### <a href="articles_maths/the-signed-sandwich-on-a-clifford-algebra.html">The Signed Sandwich on a Clifford Algebra</a>
+<!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on a clifford algebra; the reflections it realises and its relation to the unsigned sandwich. -->
+
+### <a href="articles_maths/reflections-as-signed-two-sided-operators-on-a-clifford-algebra.html">Reflections as Signed Two-Sided Operators on a Clifford Algebra</a>
+<!-- the reflections of a clifford algebra read as signed two-sided operators; the correspondence between reflections and the elements acting by an involution, and its failure in the degenerate cases. -->
+
+### <a href="articles_maths/the-signed-left-multiplication-on-a-clifford-algebra.html">The Signed Left Multiplication on a Clifford Algebra</a>
+<!-- the signed one-sided action $x\mapsto a\,\alpha(x)$ on a clifford algebra; its relation to the unsigned left multiplication and the elements it fixes. -->
+
+### <a href="articles_maths/the-graded-action-on-a-module-over-a-clifford-algebra.html">The Graded Action on a Module over a Clifford Algebra</a>
+<!-- the action of a graded module over a clifford algebra; the compatibility of the action with the grading and the sign rule it imposes. -->
+
 ### - * Theory
+
+### <a href="articles_maths/twistor-spaces-and-the-hermitian-structure-of-a-conformal-manifold.html">Twistor Spaces and the Hermitian Structure of a Conformal Manifold</a>
+<!-- twistor spaces and the Hermitian structure of a conformal manifold; the twistor correspondence. -->
+
+### + <a href="articles_maths/hermitian-spin-geometry-and-the-twistor-correspondence.html">Hermitian Spin Geometry and the Twistor Correspondence</a>
+<!-- Hermitian spin geometry and the twistor correspondence; the Hermitian structure on the spinor bundle. -->
+
+### + <a href="articles_maths/quaternionic-geometry-and-the-conjugate-structure.html">Quaternionic Geometry and the Conjugate Structure</a>
+<!-- quaternionic geometry and the conjugate structure; the quaternionic Kähler case. -->
+
+### + <a href="articles_maths/hyperkahler-manifolds-and-the-twistor-space.html">Hyperkähler Manifolds and the Twistor Space</a>
+<!-- hyperkähler manifolds and the twistor space; the twistor family of complex structures. -->
+
+### + <a href="articles_maths/hermitian-clifford-structures.html">Hermitian Clifford Structures</a>
+<!-- Hermitian Clifford structures; the compatibility of the Clifford action with the Hermitian metric. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-adjoint-of-the-clifford-multiplication.html">The Adjoint of the Clifford Multiplication</a>
+<!-- the adjoint of the Clifford multiplication; the metric adjoint and its relation to the grading. -->
+
+### + <a href="articles_maths/involutions-of-the-twistor-operator.html">Involutions of the Twistor Operator</a>
+<!-- the involutions of the twistor operator; the conjugate symmetry and the self-adjointness. -->
+
+### + <a href="articles_maths/the-adjoint-of-the-twistor-operator.html">The Adjoint of the Twistor Operator</a>
+<!-- the adjoint of the twistor operator; the formal adjoint and the twistor equation. -->
+
+### <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-a-clifford-algebra.html">The Adjoint of the Left Multiplication on a Clifford Algebra</a>
+<!-- the adjoint of the left multiplication on a clifford algebra with respect to the form of the category; its explicit expression and its compatibility with the involution. -->
+
+### + <a href="articles_maths/the-signed-adjoint-sandwich-on-a-clifford-algebra.html">The Signed Adjoint Sandwich on a Clifford Algebra</a>
+<!-- the adjoint of the signed sandwich on a clifford algebra; the explicit form of the adjoint and the unitarity condition it defines. -->
+
+### + <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-a-clifford-algebra.html">The Signed Adjoint of the Reflection on a Clifford Algebra</a>
+<!-- the adjoint of a reflection read as a signed operator on a clifford algebra; the self-adjointness of the reflections and its failure in the degenerate case. -->
+
+### + <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-a-clifford-algebra.html">The Signed Adjoint of the Left Multiplication on a Clifford Algebra</a>
+<!-- the adjoint of the signed left multiplication on a clifford algebra; its explicit expression and its relation to the signed sandwich. -->
+
+### + <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-clifford-algebra.html">The Graded Adjoint Action on a Module over a Clifford Algebra</a>
+<!-- the adjoint action of a graded module over a clifford algebra; its compatibility with the grading and the sign rule. -->
 
 ## Synthesis of Geometry and Analysis
 
@@ -1799,9 +4092,46 @@
 ### <a href="articles_maths/spectral-triples-and-noncommutative-geometry.html">Spectral Triples and Noncommutative Geometry</a>
 <!-- a spectral triple $(A,H,D)$ and its axioms; the operator $D$ as the metric datum and the distance formula it defines; the real structure and the KO-dimension; the commutative case, where a spin manifold is recovered from its algebra of functions; the local index formula; the spectral dimension and the heat kernel asymptotics; the finite-dimensional examples. -->
 
-## PART V : CATALOGUES
+### - Operator Theory
+
+### <a href="articles_maths/the-signature-operator.html">The Signature Operator</a>
+<!-- the signature operator of a manifold; its square, the Hodge Laplacian, and the signature theorem. -->
+
+### <a href="articles_maths/the-hodge-laplacian.html">The Hodge Laplacian</a>
+<!-- the Hodge Laplacian; the harmonic forms and the Hodge decomposition. -->
+
+### <a href="articles_maths/the-dirac-operator-on-a-manifold.html">The Dirac Operator on a Manifold</a>
+<!-- the Dirac operator on a spin manifold; the Atiyah–Singer index and the Lichnerowicz formula. -->
 
 ### - * Theory
+
+### <a href="articles_maths/polarised-hodge-structures-and-the-hodge-riemann-relations.html">Polarised Hodge Structures and the Hodge–Riemann Relations</a>
+<!-- polarised Hodge structures and the Hodge–Riemann relations; the positivity and the period domain. -->
+
+### <a href="articles_maths/the-hermitian-index-theorem-and-the-signature-operator.html">The Hermitian Index Theorem and the Signature Operator</a>
+<!-- the Hermitian index theorem and the signature operator; the Hirzebruch signature and the Chern character. -->
+
+### <a href="articles_maths/hermitian-metrics-and-the-hodge-theory.html">Hermitian Metrics and the Hodge Theory</a>
+<!-- Hermitian metrics and the Hodge theory; the Hodge decomposition and the Dolbeault cohomology. -->
+
+### <a href="articles_maths/the-signature-operator-and-the-involution.html">The Signature Operator and the Involution</a>
+<!-- the signature operator and the involution; the equivariant signature and the $G$-signature theorem. -->
+
+### <a href="articles_maths/the-involution-on-the-space-of-connections.html">The Involution on the Space of Connections</a>
+<!-- the involution on the space of connections; the action of the bundle automorphisms and the real connections. -->
+
+### - * Operator Theory
+
+### <a href="articles_maths/the-adjoint-of-the-signature-operator.html">The Adjoint of the Signature Operator</a>
+<!-- the adjoint of the signature operator; the self-adjointness and the index. -->
+
+### + <a href="articles_maths/the-dirac-operator-and-its-adjoint.html">The Dirac Operator and Its Adjoint</a>
+<!-- the Dirac operator and its adjoint; the self-adjointness and the index theorem. -->
+
+### + <a href="articles_maths/hermitian-pairings-and-the-index.html">Hermitian Pairings and the Index</a>
+<!-- Hermitian pairings and the index; the index pairing and the Hermitian structure. -->
+
+## PART V : CATALOGUES
 
 ## Catalogue of Algebra
 
@@ -2628,6 +4958,9 @@
 ### <a href="articles_maths/biquaternion-algebra.html">Biquaternion Algebra</a>
 <!-- $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the two views over $\mathbb{C}$ and over $\mathbb{R}$; the basis $e_0,e_1,e_2,e_3$ and the central imaginary $i$; the multiplication; the outer product $\tfrac12(pq-qp)=V(p)\times V(q)$ and the four grades; the four conjugations and the group they form; the six distinguished subspaces — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ — introduced here and developed in the synthetic articles at the end of the category; the quaternion, Hermitian and centre–vector decompositions and the relations between the three; the Hermitian form $\tilde{Q}\tilde{Q}^\dagger$; the centre $\mathbb{C}$. The Hermitian form $\tilde{Q}\tilde{Q}^\dagger$ is defined here, immediately before the inner product; the norm and the Euclidean norm are the metric read from it and belong to *Biquaternion Norm and Invertibility*; the inner product is formed and evaluated here as an algebraic pairing — its scalar, its vanishing and its non-degeneracy — with no length or sign read from it. -->
 
+### <a href="articles_maths/different-ways-to-consider-biquaternions.html">Different Ways to Consider Biquaternions</a>
+<!-- the same set of elements read with the scalars of three rings, in that order: as an algebra over $\mathbb{R}$ (dimension eight, real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, with $(ie_0)^2=-e_0$ but $(ie_k)^2=+e_0$ for $k=1,2,3$, so that each $\operatorname{span}\{e_0,ie_k\}$ is a split-complex plane while the centre is not; the four conjugations all real-linear; the central $i$ as a complex structure $J^2=-\mathrm{id}$); as an algebra over $\mathbb{C}$ (dimension four on $e_0,e_1,e_2,e_3$ with $\mathbb{C}$-bilinear product, the structure map $z\mapsto ze_0$ onto the centre, the elementary gate of a central element of square $-1$, the bar and star antilinear); and as a bimodule over $\mathbb{H}$ (commuting left and right actions, free of rank two on each side on the generators $e_0,ie_0$, the $\mathbb{H}$-ring multiplication and the failure of full $\mathbb{H}$-bilinearity $x\cdot(h\cdot y)-h\cdot(x\cdot y)=[x,h]y$); then the centre, which decides the base-ring question — $Z(\mathbb{B})=\mathbb{C}=\mathbb{C}_{\mathbb{B}}$, the structure maps $\varphi:\mathbb{C}\to\mathbb{B}$ and $\psi:\mathbb{H}\to\mathbb{B}$ whose image is not central, the non-existence of a unital homomorphism $\mathbb{H}\to\mathbb{C}$, and the four-row table $\mathbb{R}$ yes, $\mathbb{C}$ yes, $\mathbb{H}$ no, $\mathbb{B}$ no; why the base ring fixes the forms, the natural sign $\mathbb{C}$-linear and the star $\mathbb{C}$-antilinear; the other structures carried by the same set; and the conclusion that the natural structure is an algebra over $\mathbb{C}$. -->
+
 ### <a href="articles_maths/biquaternion-idempotents-and-projections.html">Biquaternion Idempotents and Projections</a>
 <!-- idempotents and the direct sum decompositions they carry; orthogonal, complete and primitive idempotents and the primitivity criterion; the standard idempotents $p$ and $q$ as the diagonal matrix units; the classification of the idempotents of $\mathbb{B}$; the bijection $\xi\mapsto\tfrac12(e_0+\xi i)$ from the roots of $-1$ onto the idempotents, with complementary pairs for $\{\xi,-\xi\}$; idempotents as projections and the Hermitian idempotents as orthogonal projections; the non-pure zero divisors as complex multiples of idempotents; the dimension of the idempotent set. -->
 
@@ -2674,11 +5007,13 @@
 
 ### <a href="articles_maths/one-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html">One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</a>
 <!-- the left and the right multiplications $L_a(y)=ay$ and $R_b(y)=yb$: linearity and injectivity in the parameter; $L_aL_b=L_{ab}$, $R_aR_b=R_{ba}$ and $L_aR_b=R_bL_a$; $\Theta_a=L_aR_{a^{\dagger}}$; the adjoints $(L_a)^{*}=L_{a^{\dagger}}$ and the faithful $*$-representation on the Hilbert space of the scalar form, two copies of the standard module; the type criteria $L_a$ self-adjoint exactly on $\mathbb{M}_+$, skew-adjoint exactly on $\mathbb{M}_-$, unitary and isometric exactly on the slice $U$; the Lie algebra $L_{\mathbb{M}_-}$ and $e^{L_a}=L_{e^{a}}$; the double centraliser theorem, the commutant of the left multiplications being the right multiplications, and the bicommutant the scalars; the characterisation of the scalar form as a Hermitian Clifford module; the mixed operators $L_aR_b$ and when they are two-sided.-->
+
 ### <a href="articles_maths/the-enveloping-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure</a>
 <!-- the enveloping algebra $\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_\mathbb{C}\mathbb{B}^{\mathrm{op}}$ and the sandwich action $(x\otimes y^{\mathrm{op}})\cdot z=xzy$; $\mathbb{B}^{\mathrm e}\cong\mathrm{End}_\mathbb{C}(\mathbb{B})\cong M_4(\mathbb{C})$, faithful and exhausting the $\mathbb{C}$-linear operators; the Conway operator basis $e_n[\,]e_m$ with $(e_n[\,]e_m)(z)=e_nze_m$, the sixteen operators a basis, the composition rule $(a[\,]b)\circ(c[\,]d)=(ac)[\,](db)$ and the one-sided operators as the edge rows; the antisymmetric, diagonal and diagonal-less symmetric functions $A\{a\}$, $D\{d\}$, $S\{s\}$ and their $4\times4$ matrix displays in the coordinate order $(e_1,e_2,e_3,e_0)$; function association, the scalar form $\mathrm{Sc}(XY)$ of signature $(1,3)$ with Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$, $F^{\approx}=DF^{\mathsf T}D$, and $\bar F^{\approx}=DF^{*}D$, which collapses to the source's $G^{-1}=G^{+\approx}=G^{\dagger}$ on the group elements that fix the scalar unit and preserve the vector part; the failure of the method from three to four dimensions; the left and right multiplications $L_a=a\otimes\mathbb 1^{\mathrm{op}}$, $R_b=\mathbb 1\otimes b^{\mathrm{op}}$ as two commuting copies of $\mathbb{B}$ and $\mathbb{B}^{\mathrm{op}}$, of the same algebraic type; the two-sided operators as the elementary tensors; the regular bi-module $_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$ as a left $\mathbb{B}^{\mathrm e}$-module; the $32$-dimensional kernel over $\mathbb{R}$, exactly the redundancy of the central $i$; the reading of the left-versus-right matter-representation question, and Fauser's caution on the iso-spin identification; distinct from the Lie-theoretic *Universal Enveloping Algebras*. -->
 
 ### <a href="articles_maths/bilinear-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html">Bilinear Operators on the Biquaternion Algebra with Hermitian Adjoint</a>
 <!-- bilinear operators on the biquaternion spinor module $S=\mathbb{B}\tilde\Pi_1$: every form is $b_M(s,t)=s^{\dagger}Mt$, Hermitian exactly when $M$ is, with the adjoint of the bilinear operator and the Clifford-equivariant forms as the multiples of the module form by the commutant; the completeness of the action, $L:\mathbb{B}\to\mathrm{End}_\mathbb{C}(S)$ an isomorphism (the Fierz identity, exact because the algebra is a full matrix algebra), so the four blades are a basis of the endomorphisms and the four bilinear covariants $b_\mu=(s,e_\mu t)$ a basis of the forms; the Fierz coefficients $c_\mu=\tfrac12\mathrm{Tr}(e_\mu^{\dagger}M)$ and the orthogonality $\mathrm{Tr}(e_\mu^{\dagger}e_\nu)=2\delta_{\mu\nu}$; the dagger as the reversion of $\mathrm{Cl}_{3,0}$ at the vectors $ie_k$, giving one Hermitian covariant (the scalar, the module form) and three skew-Hermitian ones, a rule stable across the two Clifford structures the algebra carries; the Hermitian forms as the real four-dimensional $\mathbb{R}\{b_0,ib_1,ib_2,ib_3\}\cong\mathbb{M}_+=H_2(\mathbb{C})$ with the cone of positivity and the $1+3$ centre-vector splitting; the slice $U(2)$ permuting the covariants by $\Gamma\mapsto u^{\dagger}\Gamma u$, fixing the scalar and rotating the triplet by the adjoint representation of $SO(3)$, so the invariants are the multiples of the module form; the defect off the slice.-->
+
 ### <a href="articles_maths/the-fierz-kofink-identities-and-the-classification-of-spinors.html">The Fierz–Kofink Identities and the Classification of Spinors</a>
 <!-- the sixteen bilinear covariants $\sigma,\omega,J,K,S$ of a Dirac spinor and the completeness of the Clifford action (the sixteen blades a basis of $M_4(\mathbb{C})$, the four-dimensional completion of the internal Fierz identity of *Bilinear Operators on the Biquaternion Algebra with Hermitian Adjoint*); the scalar Fierz–Kofink identities $J^2=\sigma^2+\omega^2$, $J^2=-K^2$, $J\cdot K=0$, verified on $100$ random spinors, with the tensor identities stated but not reproduced; the Fierz aggregate or boomerang $Z=\sigma+J+iS+K\gamma_5-i\omega\gamma_5$, $Z^2=4\sigma Z$ and the inversion $\psi=Z\xi$; Lounesto's six classes — regular (Dirac, the $\omega=0$ and the $\sigma=0$ types) and singular (flag-dipole, flagpole, dipole) — with explicit representatives for all six, the vector-versus-norm trap for the light-like $K$, and the flag-dipole as the type the usual Dirac–Weyl–Majorana menagerie does not exhaust. -->
 
@@ -2686,7 +5021,7 @@
 <!-- mixed inner conjugation on the biquaternion algebra: the four operators $\Phi^{\theta,\rho}_{\tilde Q}(x)=\theta(\tilde Q)x\rho(\tilde Q)$ with the twist $\theta\in\{\mathrm{id},{}^{*}\}$ (complex conjugation, which is the grade involution of $\mathrm{Cl}_{3,0}$) and the right factor $\rho\in\{\mathrm{inv},{}^{\dagger}\}$; multiplicativity in the parameter and $\mathbb{C}$-linearity in the argument; the horizontal defect $\Phi^{\theta,{}^{\dagger}}=R_{\tilde Q\tilde Q^{\dagger}}\circ\Phi^{\theta,\mathrm{inv}}$ (the right multiplication by the cone element) and the vertical defect $\Phi^{{}^{*},\rho}=L_{{}^{*}(\tilde Q)\tilde Q^{-1}}\circ\Phi^{\mathrm{id},\rho}$ (the twist element, the scalar $(-1)^{g}$ on a homogeneous parameter and $e_0$ exactly on the real quaternions); the adjoint $(\Phi^{\theta,{}^{\dagger}}_{\tilde Q})^{*}=\Phi^{\theta,{}^{\dagger}}_{\tilde Q^{\dagger}}$ and the isometries on the unitary slice; the collapse in two steps, the untwisted pair on $U(2)$ and the twisted pair on the rotation group $SU(2)=U(2)\cap\mathbb{H}_{\mathbb{B}}$, so the central phase $U(1)$ is exactly what the twist detects; the fork between the $\mathrm{Cl}_{1,3}$ reading (grading trivial on the even part) and the $\mathrm{Cl}_{3,0}$ reading (twist $={}^{*}$).-->
 
 ### <a href="articles_maths/hermitian-modules-over-the-biquaternion-algebra-with-hermitian-adjoint.html">Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint</a>
-<!-- the biquaternion instance of the Hermitian Clifford modules of the general series: the Hermitian form on a left module over $\mathbb{B}$, sesquilinear for the dagger, and the adjointness axiom $(x\cdot s,t)=(s,x^{\dagger}\cdot t)$, equivalent to the anti-Hermitian sector acting skew-adjointly and the Hermitian sector self-adjointly, so that the action is a $*$-representation; the regular module $\mathbb{B}$ with the scalar form $\mathrm{Sc}(x^{\dagger}y)=\sum_\mu x_\mu^{*}y_\mu$, positive definite, non-degenerate and unique up to a positive scalar; the simple module $S=\mathbb{B}\tilde{\Pi}_1=\mathbb{C}\{\tilde{\Pi}_1,y\}$ with the restriction of the scalar form, Gram matrix $\frac12 I_2$, positive definite; the self-adjointness of the idempotents $\tilde{\Pi}_1^{\dagger}=\tilde{\Pi}_1$ and the absence of any totally isotropic minimal left ideal in $\mathbb{B}$, against the general isotropic example; the uniqueness of the module form by Schur, with $\mathrm{End}_{\mathbb{B}}(S)\cong\mathbb{C}$; the unitary slice $U(2)$ acting by unitaries, with the non-compact slice $SL(2,\mathbb{C})$ not unitary on the module; the Dirac element $D_{\mathrm{alg}}=\sum_k L_{e_k}$, its restriction $-i(\sigma_1+\sigma_2+\sigma_3)$, the square $-3\,\mathrm{id}$, the positive Hermitian square $3\,\mathrm{id}$, the formal self-adjointness of the differential Dirac operator $D^{*}=D$ and the absence of harmonic spinors in the finite model. The general theory is in *Hermitian Clifford Modules with Hermitian Adjoint* and *Dirac Operators with Hermitian Adjoint*.-->
+<!-- the biquaternion instance of the Hermitian Clifford modules of the general series: the Hermitian form on a left module over $\mathbb{B}$, sesquilinear for the dagger, and the adjointness axiom $(x\cdot s,t)=(s,x^{\dagger}\cdot t)$, equivalent to the anti-Hermitian sector acting skew-adjointly and the Hermitian sector self-adjointly, so that the action is a $*$-representation; the regular module $\mathbb{B}$ with the scalar form $\mathrm{Sc}(x^{\dagger}y)=\sum_\mu x_\mu^{*}y_\mu$, positive definite, non-degenerate and unique up to a positive scalar; the simple module $S=\mathbb{B}\tilde{\Pi}_1=\mathbb{C}\{\tilde{\Pi}_1,y\}$ with the restriction of the scalar form, Gram matrix $\frac12 I_2$, positive definite; the self-adjointness of the idempotents $\tilde{\Pi}_1^{\dagger}=\tilde{\Pi}_1$ and the absence of any totally isotropic minimal left ideal in $\mathbb{B}$, against the general isotropic example; the uniqueness of the module form by Schur, with $\mathrm{End}_{\mathbb{B}}(S)\cong\mathbb{C}$; the unitary slice $U(2)$ acting by unitaries, with the non-compact slice $SL(2,\mathbb{C})$ not unitary on the module; the Dirac element $D_{\mathrm{alg}}=\sum_k L_{e_k}$, its restriction $-i(\sigma_1+\sigma_2+\sigma_3)$, the square $-3\,\mathrm{id}$, the positive Hermitian square $3\,\mathrm{id}$, the formal self-adjointness of the differential Dirac operator $D^{*}=D$ and the absence of harmonic spinors in the finite model. The general theory is in *Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint* and *Dirac Operators with Hermitian Adjoint*.-->
 
 ### <a href="articles_maths/hermitian-forms-over-the-biquaternion-algebra-and-the-unitary-witt-group-with-hermitian-adjoint.html">Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint</a>
 <!-- the biquaternion instance of the classification of Hermitian forms over a $*$-algebra: the Hermitian forms $h(x,y)$ sesquilinear for the dagger and the Hermitian-sesquilinear forms $h(x,ay)$; the matrix model and the Gram matrix, so that the forms of the rank-one module are the Hermitian elements; the unit form $x^{\dagger}y$ of scalar part $\sum_\mu x_\mu^{*}y_\mu$ and Gram matrix the identity, positive definite, with isometry group the slice $U(e_0)=U(2)$; congruence $H\mapsto S^{\dagger}HS$, the change of the form by a linear operator; the representation of a linear operator by a two-sided operator of the sibling articles, $(x,My)=h(M^{*}x,y)$, so that the form theory is the matrix side of the operator theory; Sylvester's law of inertia, the normal form $\mathrm{diag}(1_p,-1_q,0_r)$, the signature, the rank, the discriminant and their congruence invariance; Hermitian additivity and the orthogonality of the components; the hyperbolic plane and the isotropic and totally isotropic subspaces; Witt's theorems, the cancellation and the extension; the unit form as the reference and the uniqueness of the positive definite class; the Witt group $W(\mathbb{B},{}^{\dagger})\cong\mathbb{Z}$ as the group of the non-degenerate forms modulo the hyperbolic ones, generated by the unit form and the form $\mathrm{diag}(1,-1,-1,-1)$; the exclusion of the quaternion norm $N$, complex and not Hermitian for the dagger, which is the indefinite form of the interval and not a form of the dagger; worked examples with the indefinite, the null and the hyperbolic cases.-->
@@ -2695,10 +5030,10 @@
 <!-- the operator-level spectral theory: the identification $\mathbb{B}\otimes\mathbb{B}\cong\mathbb{B}\otimes\mathbb{B}^{\mathrm{op}}\cong M_4(\mathbb{C})$ and the left/right structure; $L_a=R_a$ are regular representations with $\mathrm{spec}(L_a)=\mathrm{spec}(\Phi(a))$ each eigenvalue twice; the Kronecker forms $L_a=\Phi(a)\otimes I$, $R_b=I\otimes\Phi(b)^{T}$, $\Theta_{\tilde{Q}}=\Phi(\tilde{Q})\otimes\overline{\Phi(\tilde{Q})}$; the four spectral rules, the eigenvalues of the left and right multiplications, of the sandwich $\Theta_{\tilde{Q}}$ as the products $\lambda_i\overline{\lambda_j}$, of the derivation $\mathrm{ad}_a$ as the differences $\lambda_i-\lambda_j$, of the Sylvester operator $L_a+R_b$ as the sums $\lambda_i+\mu_j$; the trace, the determinant and the rank as the corresponding functions of the element spectrum; the self-adjointness, unitarity and positivity criteria in terms of the element spectrum, with the phase of the self-adjointness criterion; the signature $(p^2+q^2,2pq)$ of the sandwich of a Hermitian element of inertia $(p,q)$ and the remark that a sandwich is never negative; the norm $\lVert\Theta_{\tilde{Q}}\rVert=\lVert\Phi(\tilde{Q})\rVert^2$; the numerical range and the counterexample. The element spectra are in *Biquaternion Spectral Theory*; here they are the spectra of the operators.-->
 
 ### <a href="articles_maths/completely-positive-maps-of-the-biquaternion-algebra-with-hermitian-adjoint.html">Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint</a>
-<!-- the biquaternion instance of the completely positive maps of a $*$-algebra: the positive cone and the $n$-positive and completely positive notions; the sandwich $\Theta_{\tilde{Q}}$ as a positive and indeed completely positive map, and the transposition as positive and not completely positive; the Choi matrix $C_{\Phi}=\sum_{ij}E_{ij}\otimes\Phi(E_{ij})$ and its equivalence with complete positivity, $C_{\Phi}\succeq0$; the Kraus form $\Phi=\sum_{k=1}^{r}\tilde{Q}_k\,\cdot\,\tilde{Q}_k^{\dagger}$ with $r=\mathrm{rank}\,C_{\Phi}\le4$, so that the completely positive maps are the sums of the two-sided operators of the corpus and the sandwiches are the rank-one ones; the unital and trace-preserving conditions $\sum_k \tilde{Q}_k\tilde{Q}_k^{\dagger}=e_0$ and $\sum_k \tilde{Q}_k^{\dagger}\tilde{Q}_k=e_0$; the unitary single-sandwich case and the reversible maps; the Choi matrix of the transposition as the flip with eigenvalues $(1,1,1,-1)$ and the single negative eigenvalue on the antisymmetric part; the cone of the completely positive maps and its extreme rays; worked examples including the dephasing channel and the rank-one non-unital collapse. The general theory is in *Completely Positive Maps of a Clifford Algebra with Hermitian Adjoint*.-->
+<!-- the biquaternion instance of the completely positive maps of a $*$-algebra: the positive cone and the $n$-positive and completely positive notions; the sandwich $\Theta_{\tilde{Q}}$ as a positive and indeed completely positive map, and the transposition as positive and not completely positive; the Choi matrix $C_{\Phi}=\sum_{ij}E_{ij}\otimes\Phi(E_{ij})$ and its equivalence with complete positivity, $C_{\Phi}\succeq0$; the Kraus form $\Phi=\sum_{k=1}^{r}\tilde{Q}_k\,\cdot\,\tilde{Q}_k^{\dagger}$ with $r=\mathrm{rank}\,C_{\Phi}\le4$, so that the completely positive maps are the sums of the two-sided operators of the corpus and the sandwiches are the rank-one ones; the unital and trace-preserving conditions $\sum_k \tilde{Q}_k\tilde{Q}_k^{\dagger}=e_0$ and $\sum_k \tilde{Q}_k^{\dagger}\tilde{Q}_k=e_0$; the unitary single-sandwich case and the reversible maps; the Choi matrix of the transposition as the flip with eigenvalues $(1,1,1,-1)$ and the single negative eigenvalue on the antisymmetric part; the cone of the completely positive maps and its extreme rays; worked examples including the dephasing channel and the rank-one non-unital collapse. The general theory is in *Completely Positive Maps of a Hilbert Algebra with Hermitian Adjoint*.-->
 
 ### <a href="articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html">Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</a>
-<!-- the biquaternion instance of the positivity of the involution and of the cone: the splitting $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ into the Hermitian and the anti-Hermitian sectors, $H_2(\mathbb{C})$ and $u(2)$, and the self-adjointness of every square $\tilde{Q}^{\dagger}\tilde{Q}$; the positivity $\mathrm{Sc}(\tilde{Q}^{\dagger}\tilde{Q})=\sum_\mu\lvert Q_\mu\rvert^{2}>0$ off zero, and the reason it holds notwithstanding the indefinite norm, namely that the dagger is the reversion of the positive definite structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ and not the Clifford conjugation of $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$; the cone $P=\{\tilde{Q}^{\dagger}\tilde{Q}\}=\{\tilde{Q}\tilde{Q}^{\dagger}\}$ of the positive semidefinite Hermitian elements, closed convex pointed and self-dual for the scalar form, of real dimension four; the interior $P^{\circ}$ as the image of the units, singled out by $N(\tilde{Q})\neq0$, against the older isotropic cone of the sector; the cone as the forward light cone $t\ge\lvert\mathbf{u}\rvert$ of the interval form and its extreme rays $vv^{\dagger}$ on the projective line; the polar decomposition $\tilde{Q}=U\lvert\tilde{Q}\rvert$ with $\lvert\tilde{Q}\rvert\in P$ and $U$ in the slice, unique off the null cone, and its relation to the polar element representation; the Cartan involution $\theta(\tilde{Q})=(\tilde{Q}^{\dagger})^{-1}$ with fixed set $U(2)$, its differential $-{}^{\dagger}$, the Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=u(2)\oplus H_2(\mathbb{C})$ and $\mathbb{B}^{\times}=U(2)\cdot\exp(\mathbb{M}_+)$; the real-quaternion slice as the case where the modulus is scalar. The general theory is in *Positivity and the Hermitian Cone of a Clifford Algebra with Hermitian Adjoint*.-->
+<!-- the biquaternion instance of the positivity of the involution and of the cone: the splitting $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ into the Hermitian and the anti-Hermitian sectors, $H_2(\mathbb{C})$ and $u(2)$, and the self-adjointness of every square $\tilde{Q}^{\dagger}\tilde{Q}$; the positivity $\mathrm{Sc}(\tilde{Q}^{\dagger}\tilde{Q})=\sum_\mu\lvert Q_\mu\rvert^{2}>0$ off zero, and the reason it holds notwithstanding the indefinite norm, namely that the dagger is the reversion of the positive definite structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ and not the Clifford conjugation of $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$; the cone $P=\{\tilde{Q}^{\dagger}\tilde{Q}\}=\{\tilde{Q}\tilde{Q}^{\dagger}\}$ of the positive semidefinite Hermitian elements, closed convex pointed and self-dual for the scalar form, of real dimension four; the interior $P^{\circ}$ as the image of the units, singled out by $N(\tilde{Q})\neq0$, against the older isotropic cone of the sector; the cone as the forward light cone $t\ge\lvert\mathbf{u}\rvert$ of the interval form and its extreme rays $vv^{\dagger}$ on the projective line; the polar decomposition $\tilde{Q}=U\lvert\tilde{Q}\rvert$ with $\lvert\tilde{Q}\rvert\in P$ and $U$ in the slice, unique off the null cone, and its relation to the polar element representation; the Cartan involution $\theta(\tilde{Q})=(\tilde{Q}^{\dagger})^{-1}$ with fixed set $U(2)$, its differential $-{}^{\dagger}$, the Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=u(2)\oplus H_2(\mathbb{C})$ and $\mathbb{B}^{\times}=U(2)\cdot\exp(\mathbb{M}_+)$; the real-quaternion slice as the case where the modulus is scalar. The general theory is in *Positivity and the Hermitian Cone of a Hilbert Algebra with Hermitian Adjoint*.-->
 
 ### <a href="articles_maths/real-spinors-and-reality-conditions-on-the-biquaternion-algebra-with-hermitian-adjoint.html">Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint</a>
 <!-- the biquaternion instance of the reality-condition layer: the defining module $S\cong\mathbb{C}^2$ of $\mathbb{B}\cong M_2(\mathbb{C})$ has **complex type**, and the proof is one line peculiar to the algebra -- the volume element of $\mathrm{Cl}_{3,0}$ is central with $\omega^2=-1$ and acts as $c(\omega)=iI=\Phi(i)$, so the complex structure of the module is itself a Clifford element and an antilinear $J$ commuting with the action is killed by its own antilinearity; the conjugate module $\bar S$, inequivalent to $S$ as a complex module and isomorphic to it as a real representation, and the form $\varepsilon=i\sigma_2=\Phi(-e_2)$ realising $\varepsilon\overline{c}(v)\varepsilon^{-1}=c(\ast(v))$, a $\mathbb{C}$-linear intertwiner against the $e_k$-action but not against the $\gamma_k$-action; the three real forms of $\mathbb{C}\mathrm{l}_3$ on one $\mathbb{C}^2$ (complex $\mathrm{Cl}_{3,0}$, real $\mathrm{Cl}_{2,1}$, quaternionic $\mathrm{Cl}_{0,3}$) and the competing-labelling trap $c(\gamma_k)=i\,c(e_k)$; the ambient four-dimensional cases and the commuting versus charge-conjugation normalisations. -->

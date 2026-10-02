@@ -8,7 +8,7 @@ $$
 \tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma,
 $$
 
-and the field strength $\tilde{F} = \mathrm{Vect}(\bar{\tilde{\nabla}}\tilde{A})$ is unchanged. Two potentials related by such a shift are not two physical configurations; they are two descriptions of one. The set of descriptions of a single configuration,
+and the field strength $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is unchanged. Two potentials related by such a shift are not two physical configurations; they are two descriptions of one. The set of descriptions of a single configuration,
 
 $$
 \mathcal{O}(\tilde{A}) = \bigl\{\tilde{A} - \tilde{\nabla}\Gamma : \Gamma \ \text{a real scalar function}\bigr\},
@@ -26,13 +26,13 @@ The biquaternion framework makes the first of the three exact, because the abeli
 
 The article proceeds as follows. The orbit is defined and its structure as a torsor is established. The orbit is then identified as the fibre of the curvature map, and the counting of physical degrees of freedom is extracted from the rank of that map. The information-theoretic invariance of the orbit is proved through the relative entropy, and the central triviality of the abelian phase is exhibited. The global information of the orbit — its holonomy — is then separated from its local emptiness. A comparison of redundancy, loss and relocation sets the article against its two companions. A closing ledger states what the algebra supplies and what it only transcribes.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$ is the centre of the algebra and $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$ is the centre of the algebra and $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and
 
 $$
-\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \partial_{ict}^2 + \Delta = \Delta - c^{-2}\partial_t^2 ,
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial_{ict}^2 + \Delta = \Delta - c^{-2}\partial_t^2 ,
 $$
 
-the series convention. <!-- CONVENTION — d'Alembertian sign: this is the series \Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta, opposite in sign to the Weyl-spinor exercise's \Box_Weyl = \partial_0^2 - \nabla^2. The two differ by an overall minus, so a mass-term sign written with one is the same equation written with the other. Do not "align" the signs. --> The connection is $\tilde{A} = \sum_{\mu=0}^{3}A_\mu e_\mu = i\phi/c\,e_0 + \mathbf{A} \in \mathbb{M}_-$, with $A_0 = i\phi/c$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa = q/\hbar$, so that $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{A})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
+the series convention. <!-- CONVENTION — d'Alembertian: this is the series \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_0^2 + \Delta_Q, read on the material sector as \partial_{ict}^2 + \Delta = \Delta - c^{-2}\partial_t^2, the same operator as in every companion article. --> The connection is $\tilde{A} = \sum_{\mu=0}^{3}A_\mu e_\mu = i\phi/c\,e_0 + \mathbf{A} \in \mathbb{M}_-$, with $A_0 = i\phi/c$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa = q/\hbar$, so that $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
 
 ## The Gauge Orbit as a Torsor
 
@@ -106,40 +106,40 @@ Two remarks fix the scope. The transformation is an automorphism of the field al
 
 ## The Orbit Is the Fibre of the Curvature Map
 
-The curvature does not depend on which member of the orbit is used. Write the field strength as the vector part of $\bar{\tilde{\nabla}}\tilde{A}$,
+The curvature does not depend on which member of the orbit is used. Write the field strength as the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$,
 
 $$
-\tilde{F} = \mathrm{Vect}\!\left(\bar{\tilde{\nabla}}\tilde{A}\right),
+\tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right),
 $$
 
 the identification inherited from the gauge principle and the covariant-derivative articles. Under a gauge transformation,
 
 $$
-\tilde{F}' = \mathrm{Vect}\!\left(\bar{\tilde{\nabla}}\tilde{A} - \bar{\tilde{\nabla}}\tilde{\nabla}\Gamma\right)
-= \mathrm{Vect}\!\left(\bar{\tilde{\nabla}}\tilde{A}\right) - \mathrm{Vect}\!\left(\Box\Gamma\,e_0\right)
+\tilde{F}' = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A} - \tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma\right)
+= \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) - \mathrm{Vect}\!\left(\Box\Gamma\,e_0\right)
 = \tilde{F},
 $$
 
-because $\bar{\tilde{\nabla}}\tilde{\nabla}\Gamma = \Box\Gamma\,e_0$ is a pure scalar and has no vector part. The orbit is thus the fibre of the map $\tilde{A}\mapsto\tilde{F}$: on any one orbit, the curvature is constant, and along the orbit nothing but the pure-gauge scalar changes.
+because $\tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma = \Box\Gamma\,e_0$ is a pure scalar and has no vector part. The orbit is thus the fibre of the map $\tilde{A}\mapsto\tilde{F}$: on any one orbit, the curvature is constant, and along the orbit nothing but the pure-gauge scalar changes.
 
-The scalar part of $\bar{\tilde{\nabla}}\tilde{A}$ is the gauge scalar
+The scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ is the gauge scalar
 
 $$
-S = \mathrm{Sc}\!\left(\bar{\tilde{\nabla}}\tilde{A}\right) = \partial_{ict}A_0 + \mathrm{div}\,\mathbf{A},
+S = \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = \partial_{ict}A_0 + \mathrm{div}\,\mathbf{A},
 \qquad
 S' = S - \Box\Gamma ,
 $$
 
-so $S$ is pure gauge: its value can be changed at will along the orbit, and the Lorenz condition $S = 0$ is a choice of representative, not a physical statement. The two statements — $\tilde{F}$ invariant, $S$ pure gauge — are the two halves of a single fact: the orbit is the fibre, the curvature is the base, and the scalar part of $\bar{\tilde{\nabla}}\tilde{A}$ is the coordinate along the fibre.
+so $S$ is pure gauge: its value can be changed at will along the orbit, and the Lorenz condition $S = 0$ is a choice of representative, not a physical statement. The two statements — $\tilde{F}$ invariant, $S$ pure gauge — are the two halves of a single fact: the orbit is the fibre, the curvature is the base, and the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ is the coordinate along the fibre.
 
-Both statements were checked on a superposition of three plane-wave modes with generic wavevectors and generic biquaternion amplitudes, using the formal coordinates $x_\mu$ with $x_0 = ict$ and no restriction on the mode wavevectors. The vector part of $\bar{\tilde{\nabla}}\tilde{A}$ was unchanged by a gauge transformation to within $5\times10^{-16}$, and the scalar part shifted by exactly $-\Box\Gamma$, to within $9\times10^{-16}$. The identity
+Both statements were checked on a superposition of three plane-wave modes with generic wavevectors and generic biquaternion amplitudes, using the formal coordinates $x_\mu$ with $x_0 = ict$ and no restriction on the mode wavevectors. The vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ was unchanged by a gauge transformation to within $5\times10^{-16}$, and the scalar part shifted by exactly $-\Box\Gamma$, to within $9\times10^{-16}$. The identity
 
 $$
 \tilde{F} = \frac{1}{2}\sum_{\mu,\nu}F_{\mu\nu}\,\bar{e}_\mu e_\nu ,
 \qquad F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu ,
 $$
 
-was checked against the direct evaluation of $\mathrm{Vect}(\bar{\tilde{\nabla}}\tilde{A})$ on a generic connection and wavevector, agreeing to $5\times10^{-16}$. A connection on the orbit through zero, $\tilde{A} = -\tilde{\nabla}\Gamma$, is flat in the same sense: its vector part came out zero to $2\times10^{-16}$, while its scalar part equalled $-\Box\Gamma$ to $2\times10^{-16}$, which is the shift law's requirement for the member of the orbit that satisfies $S = 0$. For $\tilde{A} = +\tilde{\nabla}\Gamma$ the scalar part is $+\Box\Gamma$; the sign is carried by the direction of the shift, and the orbit's definition $\tilde{A}' = \tilde{A}-\tilde{\nabla}\Gamma$ fixes it.
+was checked against the direct evaluation of $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ on a generic connection and wavevector, agreeing to $5\times10^{-16}$. A connection on the orbit through zero, $\tilde{A} = -\tilde{\nabla}\Gamma$, is flat in the same sense: its vector part came out zero to $2\times10^{-16}$, while its scalar part equalled $-\Box\Gamma$ to $2\times10^{-16}$, which is the shift law's requirement for the member of the orbit that satisfies $S = 0$. For $\tilde{A} = +\tilde{\nabla}\Gamma$ the scalar part is $+\Box\Gamma$; the sign is carried by the direction of the shift, and the orbit's definition $\tilde{A}' = \tilde{A}-\tilde{\nabla}\Gamma$ fixes it.
 
 ### Local Triviality and the Degree-of-Freedom Count
 
@@ -291,7 +291,7 @@ The boundary is drawn as in the companion articles.
 
 ## Summary
 
-The gauge orbit of a biquaternionic connection is the set $\mathcal{O}(\tilde{A}) = \{\tilde{A} - \tilde{\nabla}\Gamma\}$ of descriptions of one physical configuration. It is a torsor for the group of real gauge functions modulo constants: the gradient map has kernel the constants, so the gauge group acts freely and transitively, and there is no preferred representative. It is the fibre of the curvature map, because $\tilde{F} = \mathrm{Vect}(\bar{\tilde{\nabla}}\tilde{A})$ is orbit-invariant while the gauge scalar $S = \mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{A})$ shifts by $-\Box\Gamma$ and is pure gauge. The rank of the pure-gauge map is one per Fourier mode, which yields the standard degree-of-freedom count $4\to3\to2$.
+The gauge orbit of a biquaternionic connection is the set $\mathcal{O}(\tilde{A}) = \{\tilde{A} - \tilde{\nabla}\Gamma\}$ of descriptions of one physical configuration. It is a torsor for the group of real gauge functions modulo constants: the gradient map has kernel the constants, so the gauge group acts freely and transitively, and there is no preferred representative. It is the fibre of the curvature map, because $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is orbit-invariant while the gauge scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ shifts by $-\Box\Gamma$ and is pure gauge. The rank of the pure-gauge map is one per Fourier mode, which yields the standard degree-of-freedom count $4\to3\to2$.
 
 Information-theoretically the orbit is a **redundancy**, not a loss. A gauge transformation is implemented by the central phase $\lambda = e^{iq\Gamma/\hbar}$, which is unitary, so gauge-related backgrounds define unitarily equivalent states and the relative entropy is constant along the orbit,
 
@@ -313,8 +313,8 @@ The orbit's only non-empty content is global. A connection can be gauged to zero
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$ | Centre of the algebra; source of the abelian gauge group $U(1)$ |
 | $\tilde{\nabla} = e_0\partial_{ict} + e_k\partial_k$ | Biquaternionic gradient |
-| $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_k\partial_k$ | Quaternion-conjugate gradient |
-| $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$ | d'Alembertian, series convention |
+| $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_k\partial_k$ | Quaternion-conjugate gradient |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$ | d'Alembertian, series convention |
 | $\tilde{A} = \sum_\mu A_\mu e_\mu = i\phi/c\,e_0 + \mathbf{A} \in \mathbb{M}_-$ | Connection, a material-sector one-form |
 | $\Gamma$ | Real scalar gauge function |
 | $\lambda = e^{iq\Gamma/\hbar}$ | Local central phase |
@@ -322,8 +322,8 @@ The orbit's only non-empty content is global. A connection can be gauged to zero
 | $\mathcal{O}(\tilde{A}) = \{\tilde{A} - \tilde{\nabla}\Gamma\}$ | The gauge orbit |
 | $\mathcal{G}/\mathbb{R}$ | Group of real gauge functions modulo constants; the orbit's torsor group |
 | $K = \sum_\mu k_\mu e_\mu$ | Wavevector biquaternion of the mode $k = (k_0,k_1,k_2,k_3)$; pure-gauge image is the real line $\mathbb{R}(iK)$ |
-| $S = \mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{A}) = \partial_{ict}A_0 + \mathrm{div}\,\mathbf{A}$ | Gauge scalar, pure gauge: $S' = S - \Box\Gamma$ |
-| $\tilde{F} = \mathrm{Vect}(\bar{\tilde{\nabla}}\tilde{A}) = \frac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ | Field strength = curvature, orbit-invariant |
+| $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}) = \partial_{ict}A_0 + \mathrm{div}\,\mathbf{A}$ | Gauge scalar, pure gauge: $S' = S - \Box\Gamma$ |
+| $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}) = \frac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ | Field strength = curvature, orbit-invariant |
 | $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ | Abelian curvature components |
 | $U(C) = \mathcal{P}\exp(i\oint_C A_\mu dx^\mu)$ | Holonomy; global obstruction |
 | $W(C) = \mathrm{Tr}\,U(C)$ | Wilson loop; two-sector bilinear |

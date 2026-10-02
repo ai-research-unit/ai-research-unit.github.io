@@ -5,7 +5,7 @@
 
 This article studies the zero divisors of the split-quaternion algebra. It defines them, proves the criterion $N(\tilde q) = 0$ that identifies them with the null cone, exhibits the two families of minimal one-sided ideals into which the zero divisor set splits, proves the existence of nonzero nilpotents, and describes the distribution of the zero divisors among the distinguished subspaces.
 
-The split-quaternion algebra, its central product $N(\tilde q) = \tilde q\bar{\tilde q}$ and its idempotents $\tilde\pi_\pm$ and subspaces $S$, $V$, $\mathbb{D}_2$, $\mathbb{D}_3$ are assumed from *Split-Quaternion Algebra*, and the metrical reading of $N$ from *Split-Quaternion Norm and Invertibility*. The invertibility criterion is assumed from *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*; it is not re-proved here. The ideal theory of $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ is assumed from *Split-Quaternion Ideals and Peirce Decomposition*. Nothing physical is invoked.
+The split-quaternion algebra, its central product $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ and its idempotents $\tilde\pi_\pm$ and subspaces $S$, $V$, $\mathbb{D}_2$, $\mathbb{D}_3$ are assumed from *Split-Quaternion Algebra*, and the metrical reading of $N$ from *Split-Quaternion Norm and Invertibility*. The invertibility criterion is assumed from *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*; it is not re-proved here. The ideal theory of $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ is assumed from *Split-Quaternion Ideals and Peirce Decomposition*. Nothing physical is invoked.
 
 ## Definition and Criterion
 
@@ -39,7 +39,7 @@ The zero divisors are exactly the elements with a nonzero annihilator: $\tilde q
 
 **Theorem (The Left Annihilator Is a Minimal Left Ideal).** Let $\tilde q \neq 0$ be a zero divisor. Then the left annihilator $P_{\tilde q} = \{\tilde a : \tilde a\tilde q = 0\}$ is a two-dimensional minimal left ideal, and the right annihilator is a two-dimensional minimal right ideal. Consequently the zero divisor set is the union of the nonzero elements of the minimal one-sided ideals, with the origin removed.
 
-**Proof.** The left annihilator is a left ideal, since $\tilde a\tilde q = 0$ implies $\tilde b\tilde a\tilde q = 0$. It is nonzero: the central product is symmetric, $\tilde q\bar{\tilde q} = \bar{\tilde q}\tilde q = N(\tilde q)$, and $N(\tilde q) = 0$ by the criterion, so the conjugate $\bar{\tilde q}$ is nonzero and lies in it. It is proper, because $1 \cdot \tilde q = \tilde q \neq 0$ excludes $\tilde a = 1$. In $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ every nonzero proper left ideal is a minimal left ideal and every minimal left ideal is two-dimensional, by *Split-Quaternion Ideals and Peirce Decomposition*; hence $P_{\tilde q}$ is two-dimensional and minimal. The right annihilator is the image of a left annihilator under the conjugation, which reverses the order of multiplication, so it is a two-dimensional minimal right ideal. Every nonzero element of a left annihilator $P_{\tilde q}$ satisfies $\tilde a\tilde q = 0$ with $\tilde q \neq 0$, hence is a zero divisor; conversely every zero divisor lies in its own annihilator. Since the annihilator depends only on the line $\mathbb{R}\tilde q$, the zero divisor set is the union of the nonzero elements of the minimal left and right ideals.
+**Proof.** The left annihilator is a left ideal, since $\tilde a\tilde q = 0$ implies $\tilde b\tilde a\tilde q = 0$. It is nonzero: the central product is symmetric, $\tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural}\tilde q = N(\tilde q)$, and $N(\tilde q) = 0$ by the criterion, so the conjugate $\tilde{q}^{\natural}$ is nonzero and lies in it. It is proper, because $1 \cdot \tilde q = \tilde q \neq 0$ excludes $\tilde a = 1$. In $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ every nonzero proper left ideal is a minimal left ideal and every minimal left ideal is two-dimensional, by *Split-Quaternion Ideals and Peirce Decomposition*; hence $P_{\tilde q}$ is two-dimensional and minimal. The right annihilator is the image of a left annihilator under the conjugation, which reverses the order of multiplication, so it is a two-dimensional minimal right ideal. Every nonzero element of a left annihilator $P_{\tilde q}$ satisfies $\tilde a\tilde q = 0$ with $\tilde q \neq 0$, hence is a zero divisor; conversely every zero divisor lies in its own annihilator. Since the annihilator depends only on the line $\mathbb{R}\tilde q$, the zero divisor set is the union of the nonzero elements of the minimal left and right ideals.
 
 ## The Two Families
 
@@ -59,7 +59,7 @@ $$
 
 each parametrised by the projective line, are the **two families**; the two families are disjoint.
 
-**Proof.** The left annihilator is the minimal left ideal $P_{\tilde q}$ of the preceding theorem, hence two-dimensional. The right annihilator is the image of the left annihilator of $\bar{\tilde q}$ under the conjugation, which reverses the order of multiplication and preserves $N$, so it has the same properties. The condition $\tilde a(\lambda\tilde q) = 0$ for $\lambda \neq 0$ is the condition $\tilde a\tilde q = 0$, so the annihilator depends only on the zero-divisor line. The algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ has two families of minimal one-sided ideals, the left and the right, each parametrised by the projective line, by *Split-Quaternion Ideals and Peirce Decomposition*. The two annihilator constructions realise the two families.
+**Proof.** The left annihilator is the minimal left ideal $P_{\tilde q}$ of the preceding theorem, hence two-dimensional. The right annihilator is the image of the left annihilator of $\tilde{q}^{\natural}$ under the conjugation, which reverses the order of multiplication and preserves $N$, so it has the same properties. The condition $\tilde a(\lambda\tilde q) = 0$ for $\lambda \neq 0$ is the condition $\tilde a\tilde q = 0$, so the annihilator depends only on the zero-divisor line. The algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ has two families of minimal one-sided ideals, the left and the right, each parametrised by the projective line, by *Split-Quaternion Ideals and Peirce Decomposition*. The two annihilator constructions realise the two families.
 
 **Corollary (Each Zero-Divisor Line Lies in One Ideal of Each Family).** Through each zero-divisor line pass exactly two minimal one-sided ideals, one from each family; the zero divisor set is the union of their nonzero elements. Two ideals of opposite families meet in a line, and two distinct ideals of the same family meet only at the origin.
 
@@ -142,7 +142,7 @@ The table is completed by the following observations.
 
 ## Summary
 
-A nonzero split-quaternion is a zero divisor exactly when $N(\tilde q) = 0$, that is, when $\tilde q\bar{\tilde q} = 0$, and the zero divisor set is the null cone with the origin removed, the union of the minimal one-sided ideals with the origin removed.
+A nonzero split-quaternion is a zero divisor exactly when $N(\tilde q) = 0$, that is, when $\tilde q\tilde{q}^{\natural} = 0$, and the zero divisor set is the null cone with the origin removed, the union of the minimal one-sided ideals with the origin removed.
 
 The zero divisor set splits into the two families of minimal one-sided ideals, each parametrised by the projective line; each ideal is two-dimensional and minimal, and the two families are the two rulings of the projective zero set. Every zero-divisor line lies in exactly one member of each family, the two families are exchanged by the anti-automorphism $\tau$, and the four minimal ideals of the algebra are members of the families.
 
@@ -160,7 +160,7 @@ The algebra has nonzero nilpotents: a nonzero element is nilpotent exactly when 
 | $\tau$ | the anti-automorphism $e_1 \mapsto -e_1$, $e_2, e_3 \mapsto e_2, e_3$ | this article |
 | nilpotent | nonzero $\tilde q$ with $\tilde q^2 = 0$ | this article |
 | $\tilde\pi_\pm = \tfrac12(1 \pm e_2)$ | the non-central idempotents | *Split-Quaternion Algebra* |
-| $N(\tilde q) = \tilde q\bar{\tilde q}$ | the central product, formed algebraically; the metrical reading is in *Split-Quaternion Norm and Invertibility* | *Split-Quaternion Algebra* |
+| $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ | the central product, formed algebraically; the metrical reading is in *Split-Quaternion Norm and Invertibility* | *Split-Quaternion Algebra* |
 
 ## Further Reading
 

@@ -9,7 +9,7 @@ The article uses *Quaternion Algebra* for the basis and product, *Quaternion Nor
 
 The corpus's default base is a commutative ring; the topology here requires the real numbers, and everything is stated over $\mathbb{R}$.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$; the quaternion norm is $N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2+q_1^2+q_2^2+q_3^2$ and the modulus is $|\tilde q| = \sqrt{N(\tilde q)}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : N(\tilde q) = 1\}$.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$; the quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2+q_2^2+q_3^2$ and the modulus is $|\tilde q| = \sqrt{N(\tilde q)}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : N(\tilde q) = 1\}$.
 
 ## The Algebra as a Topological Space
 
@@ -21,7 +21,7 @@ $$
 
 is a linear isometry of $(\mathbb{H},|\cdot|)$ onto $\mathbb{R}^4$; the product is bilinear, hence continuous, so $\mathbb{H}$ is a topological algebra over $\mathbb{R}$, and inversion is continuous on the units, so $\mathbb{H}^{\times}$ is a topological group.
 
-*Proof.* The quaternion norm is positive definite with four positive signs, $N(\tilde q) = \sum_k q_k^2$, so $|\tilde q|$ is the Euclidean norm of the coordinate vector and the map is an isometry. Bilinearity gives continuity of the product, and $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$ is continuous on the complement of $N = 0$, which is $\mathbb{H}^{\times}$ because the quaternion norm is definite.
+*Proof.* The quaternion norm is positive definite with four positive signs, $N(\tilde q) = \sum_k q_k^2$, so $|\tilde q|$ is the Euclidean norm of the coordinate vector and the map is an isometry. Bilinearity gives continuity of the product, and $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$ is continuous on the complement of $N = 0$, which is $\mathbb{H}^{\times}$ because the quaternion norm is definite.
 
 **Corollary.** The algebra norm and the Euclidean norm agree on $\mathbb{H}$, so multiplication is continuous for the Euclidean topology and $\mathbb{H}$ is a normed division algebra; this is the property that fails for the biquaternions, whose norm is indefinite.
 
@@ -134,7 +134,7 @@ The adjoint map $Sp(1)\to SO(3)$ is the universal two-to-one cover, with kernel 
 |---|---|
 | $\mathbb{H}\cong\mathbb{R}^4$ | Quaternion algebra as a topological space; contractible |
 | $\lvert \tilde q\rvert = \sqrt{N(\tilde q)}$ | Modulus, equal to the Euclidean norm |
-| $N(\tilde q) = \tilde q\bar{\tilde q} = \sum_k q_k^2$ | Definite norm, four positive signs |
+| $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \sum_k q_k^2$ | Definite norm, four positive signs |
 | $\mathbb{R}_{\mathbb{H}}, \operatorname{Im}\mathbb{H}$ | Scalar and vector subspaces, $\cong\mathbb{R}$ and $\cong\mathbb{R}^3$ |
 | $S^3 = Sp(1) = \{\lvert \tilde q\rvert = 1\}$ | Unit sphere; compact group, $S^3\subseteq\mathbb{H}^{\times}$ |
 | $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$ | Group of units; $\simeq S^3$ |

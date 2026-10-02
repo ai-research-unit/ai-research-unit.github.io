@@ -56,7 +56,7 @@ $$
 P = \alpha_1\alpha_2\alpha_3\,\alpha_3^\dagger\alpha_2^\dagger\alpha_1^\dagger
 $$
 
-is primitive: $P^2 = P$, $\alpha_iP = 0$, $\omega^\dagger\alpha_i^\dagger = 0$ with $\omega = \alpha_1\alpha_2\alpha_3$, and $P$ has rank one as an $8\times8$ matrix, so that the left ideal $S^u = \mathrm{Cl}(6)P$ is eight-dimensional with basis
+is primitive: $P^2 = P$, $\alpha_iP = 0$, $\omega^{*}\alpha_i^\dagger = 0$ with $\omega = \alpha_1\alpha_2\alpha_3$, and $P$ has rank one as an $8\times8$ matrix, so that the left ideal $S^u = \mathrm{Cl}(6)P$ is eight-dimensional with basis
 
 $$
 \Bigl\{\,P,\ \alpha_1^\dagger P,\ \alpha_2^\dagger P,\ \alpha_3^\dagger P,\

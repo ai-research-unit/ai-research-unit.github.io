@@ -82,34 +82,34 @@ so that the quaternion vector part is the grade-two part and the imaginary quate
 The biquaternion algebra carries four distinguished order-two maps, the **conjugations**
 
 $$
-\bar{\cdot}, \qquad {}^{*}, \qquad {}^{\dagger} = \bar{\cdot}\circ{}^{*}, \qquad {}^{\flat} = -{}^{\dagger},
+{}^{\natural}, \qquad \bar{\cdot}, \qquad {}^{*} = {}^{\natural}\circ\bar{\cdot}, \qquad {}^{\flat} = -{}^{*},
 $$
 
-and $\{\mathrm{id}, \bar{\cdot}, {}^{*}, {}^{\dagger}\}$ is a group isomorphic to the Klein four-group. The formulas, the fixed spaces $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_{+}$, $\mathbb{M}_{-}$ and $\mathrm{Vect}(\mathbb{B})$, and the composition table are *Biquaternion Involution Lattice*, and only what the Clifford reading uses is recalled here. Under the product the four are not of one kind:
+and $\{\mathrm{id}, {}^{\natural}, \bar{\cdot}, {}^{*}\}$ is a group isomorphic to the Klein four-group. The formulas, the fixed spaces $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_{+}$, $\mathbb{M}_{-}$ and $\mathrm{Vect}(\mathbb{B})$, and the composition table are *Biquaternion Involution Lattice*, and only what the Clifford reading uses is recalled here. Under the product the four are not of one kind:
 
 | conjugation | linearity over $\mathbb{R}$ | product rule | kind |
 |---|---|---|---|
-| quaternion conjugation $\bar{\cdot}$ | $\mathbb{C}$-linear | $\overline{\tilde{Q}\tilde{R}} = \bar{\tilde{R}}\,\bar{\tilde{Q}}$ | anti-automorphism of order two |
-| complex conjugation ${}^{*}$ | conjugate-linear | $(\tilde{Q}\tilde{R})^{*} = \tilde{Q}^{*}\tilde{R}^{*}$ | automorphism of order two |
-| Hermitian conjugation ${}^{\dagger}$ | conjugate-linear | $(\tilde{Q}\tilde{R})^{\dagger} = \tilde{R}^{\dagger}\tilde{Q}^{\dagger}$ | anti-automorphism of order two |
+| quaternion conjugation ${}^{\natural}$ | $\mathbb{C}$-linear | $(\tilde{Q}\tilde{R})^{\natural} = \tilde{R}^{\natural}\,\tilde{Q}^{\natural}$ | anti-automorphism of order two |
+| complex conjugation $\bar{\cdot}$ | conjugate-linear | $(\tilde{Q}\tilde{R})^{*} = \bar{\tilde{Q}}\bar{\tilde{R}}$ | automorphism of order two |
+| Hermitian conjugation ${}^{*}$ | conjugate-linear | $(\tilde{Q}\tilde{R})^{\dagger} = \tilde{R}^{*}\tilde{Q}^{*}$ | anti-automorphism of order two |
 | reversal ${}^{\flat}$ | conjugate-linear | $(\tilde{Q}\tilde{R})^{\flat} = -\tilde{R}^{\flat}\tilde{Q}^{\flat}$ | order two, anti-multiplicative up to sign |
 
-Two of them are involutions of the algebra, that is anti-automorphisms of order two; one is a conjugate-linear involutive automorphism; and the fourth is an order-two map that is anti-multiplicative only up to the central sign, hence not an involution. The group has a second reading: with $\mathbb{B} = \mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$ the four maps are $\mathrm{id}\otimes\mathrm{id}$, $\bar{\cdot}_{\mathbb{H}}\otimes\mathrm{id}$, $\mathrm{id}\otimes\mathrm{conj}$ and $\bar{\cdot}_{\mathbb{H}}\otimes\mathrm{conj}$, so the involution group of the algebra is the product of the quaternion conjugation of $\mathbb{H}$ and the complex conjugation of $\mathbb{C}$.
+Two of them are involutions of the algebra, that is anti-automorphisms of order two; one is a conjugate-linear involutive automorphism; and the fourth is an order-two map that is anti-multiplicative only up to the central sign, hence not an involution. The group has a second reading: with $\mathbb{B} = \mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$ the four maps are $\mathrm{id}\otimes\mathrm{id}$, ${}^{\natural}_{\mathbb{H}}\otimes\mathrm{id}$, $\mathrm{id}\otimes\mathrm{conj}$ and ${}^{\natural}_{\mathbb{H}}\otimes\mathrm{conj}$, so the involution group of the algebra is the product of the quaternion conjugation of $\mathbb{H}$ and the complex conjugation of $\mathbb{C}$.
 
 ### The Correspondence with the Clifford Anti-Involutions
 
-The Clifford algebra of the previous sections carries three order-two maps that need no involution of a base ring: reversion $X^{r}$, the grade involution $\alpha$ and their composite, the Clifford conjugation $\bar X = \alpha(X^{r})$; the three together are the sense in which a Clifford algebra is always involutive, and they are the subject of *Involutive Clifford Algebras*.
+The Clifford algebra of the previous sections carries three order-two maps that need no involution of a base ring: reversion $X^{r}$, the grade involution $\alpha$ and their composite, the Clifford conjugation $X^{\natural} = \alpha(X^{r})$; the three together are the sense in which a Clifford algebra is always involutive, and they are the subject of *Involutive Clifford Algebras*.
 
 **Theorem.** Under the isomorphism $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ with $\gamma_k\mapsto ie_k$, the four conjugations of $\mathbb{B}$ are the intrinsic order-two maps of the Clifford algebra:
 
 | conjugation of $\mathbb{B}$ | Clifford partner | sign on a $k$-blade | signs on grades $0,1,2,3$ |
 |---|---|---|---|
-| quaternion conjugation $\bar{\cdot}$ | Clifford conjugation $\bar X = \alpha(X^{r})$ | $(-1)^{k(k+1)/2}$ | $+,-,-,+$ |
-| complex conjugation ${}^{*}$ | grade involution $\alpha$ | $(-1)^{k}$ | $+,-,+,-$ |
-| Hermitian conjugation ${}^{\dagger}$ | reversion $X^{r}$ | $(-1)^{k(k-1)/2}$ | $+,+,-,-$ |
+| quaternion conjugation ${}^{\natural}$ | Clifford conjugation $X^{\natural} = \alpha(X^{r})$ | $(-1)^{k(k+1)/2}$ | $+,-,-,+$ |
+| complex conjugation $\bar{\cdot}$ | grade involution $\alpha$ | $(-1)^{k}$ | $+,-,+,-$ |
+| Hermitian conjugation ${}^{*}$ | reversion $X^{r}$ | $(-1)^{k(k-1)/2}$ | $+,+,-,-$ |
 | reversal ${}^{\flat}$ | $-$reversion $-X^{r}$ | $-(-1)^{k(k-1)/2}$ | $-,-,+,+$ |
 
-**Proof.** Reversion fixes the generators $\gamma_k$ and negates the bivectors, the grade involution negates the generators and fixes the bivectors, and the Clifford conjugation is their composite. Under $\gamma_k\mapsto ie_k$ the generators are the grade-one elements $ie_k$, the bivectors are the grade-two elements, and the volume element $\gamma_1\gamma_2\gamma_3$ is the central scalar imaginary $i$, of grade three. The conjugation fixing the whole grade-one part is ${}^{\dagger}$, since ${}^{\dagger}(ie_k) = ie_k$ for every $k$; the conjugation negating it and fixing the grade-two part is ${}^{*}$, since ${}^{*}(ie_k) = -ie_k$ and ${}^{*}(e_k) = e_k$; their composite is $\bar{\cdot}$, which agrees with both on the generators and is separated from them on the bivectors, where it acts as $-1$ while ${}^{*}$ acts as $+1$. The signs on the four grades, displayed in the last column, agree on both sides, and an order-two map that is multiplicative or anti-multiplicative is determined by its values on a basis of blades.
+**Proof.** Reversion fixes the generators $\gamma_k$ and negates the bivectors, the grade involution negates the generators and fixes the bivectors, and the Clifford conjugation is their composite. Under $\gamma_k\mapsto ie_k$ the generators are the grade-one elements $ie_k$, the bivectors are the grade-two elements, and the volume element $\gamma_1\gamma_2\gamma_3$ is the central scalar imaginary $i$, of grade three. The conjugation fixing the whole grade-one part is ${}^{*}$, since ${}^{*}(ie_k) = ie_k$ for every $k$; the conjugation negating it and fixing the grade-two part is $\bar{\cdot}$, since $\bar{\cdot}(ie_k) = -ie_k$ and $\bar{\cdot}(e_k) = e_k$; their composite is ${}^{\natural}$, which agrees with both on the generators and is separated from them on the bivectors, where it acts as $-1$ while $\bar{\cdot}$ acts as $+1$. The signs on the four grades, displayed in the last column, agree on both sides, and an order-two map that is multiplicative or anti-multiplicative is determined by its values on a basis of blades.
 
 **Remark (the two readings of one conjugation).** In the identification with the even part of the Minkowski algebra, $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$, the two intrinsic anti-involutions of the even part, reversion and Clifford conjugation, coincide there, because they differ by the grade involution, which is the identity on the even part; both equal quaternion conjugation. The other two conjugations use the complex structure that the volume element supplies, and the correspondence of the theorem is therefore read in the $\mathrm{Cl}_{3,0}$ picture, where the volume element is the central scalar that makes the three maps distinct.
 
@@ -127,9 +127,9 @@ of real dimensions $1,3,3,1$.
 
 | conjugation | Clifford partner | fixed space | anti-fixed space |
 |---|---|---|---|
-| quaternion conjugation $\bar{\cdot}$ | Clifford conjugation | $\mathbb{C}_{\mathbb{B}} = \text{grade }0\oplus\text{grade }3$ | $\mathrm{Vect}(\mathbb{B}) = \text{grade }1\oplus\text{grade }2$ |
-| complex conjugation ${}^{*}$ | grade involution | $\mathbb{H}_{\mathbb{B}} = \text{grade }0\oplus\text{grade }2$ | $i\mathbb{H}_{\mathbb{B}} = \text{grade }1\oplus\text{grade }3$ |
-| Hermitian conjugation ${}^{\dagger}$ | reversion | $\mathbb{M}_{+} = \text{grade }0\oplus\text{grade }1$ | $\mathbb{M}_{-} = \text{grade }2\oplus\text{grade }3$ |
+| quaternion conjugation ${}^{\natural}$ | Clifford conjugation | $\mathbb{C}_{\mathbb{B}} = \text{grade }0\oplus\text{grade }3$ | $\mathrm{Vect}(\mathbb{B}) = \text{grade }1\oplus\text{grade }2$ |
+| complex conjugation $\bar{\cdot}$ | grade involution | $\mathbb{H}_{\mathbb{B}} = \text{grade }0\oplus\text{grade }2$ | $i\mathbb{H}_{\mathbb{B}} = \text{grade }1\oplus\text{grade }3$ |
+| Hermitian conjugation ${}^{*}$ | reversion | $\mathbb{M}_{+} = \text{grade }0\oplus\text{grade }1$ | $\mathbb{M}_{-} = \text{grade }2\oplus\text{grade }3$ |
 | reversal ${}^{\flat}$ | $-$reversion | $\mathbb{M}_{-} = \text{grade }2\oplus\text{grade }3$ | $\mathbb{M}_{+} = \text{grade }0\oplus\text{grade }1$ |
 
 **Proof.** Each row is the sign of the theorem read on the grade.
@@ -141,24 +141,24 @@ The Hermitian and anti-Hermitian subspaces are therefore the two halves of the g
 **Theorem.** For $\tilde{Q} = \sum_\mu Q_\mu e_\mu$,
 
 $$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \bar{\tilde{Q}}\tilde{Q} = \Bigl(\sum_\mu Q_\mu^{2}\Bigr)e_0, \qquad \langle \tilde{Q},\tilde{Q}\rangle = \mathrm{Sc}\bigl(\tilde{Q}^{\dagger}\tilde{Q}\bigr) = \sum_\mu \bar Q_\mu Q_\mu = \sum_\mu |Q_\mu|^{2}.
+N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \tilde{Q}^{\natural}\tilde{Q} = \Bigl(\sum_\mu Q_\mu^{2}\Bigr)e_0, \qquad \langle \tilde{Q},\tilde{Q}\rangle = \mathrm{Sc}\bigl(\tilde{Q}^{*}\tilde{Q}\bigr) = \sum_\mu \bar Q_\mu Q_\mu = \sum_\mu |Q_\mu|^{2}.
 $$
 
 The first is complex, central, **multiplicative**, $N(\tilde{P}\tilde{Q}) = N(\tilde{P})N(\tilde{Q})$, **isotropic**, and it is the reduced norm of the algebra, that is the determinant under $\mathbb{B}\cong M_2(\mathbb{C})$; the second is real and **positive definite**, and it is the Hermitian form of the dagger. The conjugations preserve the units and the zero divisors,
 
 $$
-N(\bar{\tilde{Q}}) = N(\tilde{Q}), \qquad N(\tilde{Q}^{*}) = \overline{N(\tilde{Q})}, \qquad N(\tilde{Q}^{\dagger}) = \overline{N(\tilde{Q})},
+N(\tilde{Q}^{\natural}) = N(\tilde{Q}), \qquad N(\bar{\tilde{Q}}) = (N(\tilde{Q}))^{\natural}, \qquad N(\tilde{Q}^{*}) = (N(\tilde{Q}))^{\natural},
 $$
 
 so the group of units $N\neq0$, the norm cone $N = 0$ and the zero-divisor cone are stable under all four.
 
-**Proof.** $\bar{\tilde{Q}} = Q_0e_0 - Q_1e_1 - Q_2e_2 - Q_3e_3$, and the product with $\tilde{Q}$ reduces to $\sum_\mu Q_\mu^{2}$ because $e_k^{2} = -e_0$. The multiplicativity follows from $\bar{\cdot}$ being an anti-automorphism: $N(\tilde{P}\tilde{Q}) = \tilde{P}\tilde{Q}\,\overline{\tilde{Q}}\,\bar{\tilde{P}} = \tilde{P}N(\tilde{Q})\bar{\tilde{P}} = N(\tilde{Q})N(\tilde{P})$, with $N(\tilde{Q})$ central. For the Hermitian form, $e_k^{\dagger} = -e_k$ and $\bar Q_\mu Q_\mu = |Q_\mu|^{2}$, and the sum of the squares is positive unless $\tilde{Q} = 0$.
+**Proof.** $\tilde{Q}^{\natural} = Q_0e_0 - Q_1e_1 - Q_2e_2 - Q_3e_3$, and the product with $\tilde{Q}$ reduces to $\sum_\mu Q_\mu^{2}$ because $e_k^{2} = -e_0$. The multiplicativity follows from ${}^{\natural}$ being an anti-automorphism: $N(\tilde{P}\tilde{Q}) = \tilde{P}\tilde{Q}\,(\tilde{Q})^{\natural}\,\tilde{P}^{\natural} = \tilde{P}N(\tilde{Q})\tilde{P}^{\natural} = N(\tilde{Q})N(\tilde{P})$, with $N(\tilde{Q})$ central. For the Hermitian form, $e_k^{\dagger} = -e_k$ and $\bar Q_\mu Q_\mu = |Q_\mu|^{2}$, and the sum of the squares is positive unless $\tilde{Q} = 0$.
 
-**Proposition.** The element $\tilde{Q}^{\dagger}\tilde{Q}$ is fixed by ${}^{\dagger}$ and has scalar part $\sum_\mu|Q_\mu|^{2}$, so it is Hermitian and positive semidefinite; it is a scalar only for special $\tilde{Q}$, so the definite norm is read from its scalar part and not from the product alone. Complex conjugation produces no norm: $\tilde{Q}\tilde{Q}^{*}$ is fixed by ${}^{*}$ but need not be central, and $\tilde{Q} = e_1 + ie_2$ gives $(e_1 + ie_2)(e_1 + ie_2)^{*} = -2 - 2ie_3$.
+**Proposition.** The element $\tilde{Q}^{*}\tilde{Q}$ is fixed by ${}^{*}$ and has scalar part $\sum_\mu|Q_\mu|^{2}$, so it is Hermitian and positive semidefinite; it is a scalar only for special $\tilde{Q}$, so the definite norm is read from its scalar part and not from the product alone. Complex conjugation produces no norm: $\tilde{Q}\bar{\tilde{Q}}$ is fixed by $\bar{\cdot}$ but need not be central, and $\tilde{Q} = e_1 + ie_2$ gives $(e_1 + ie_2)(e_1 + ie_2)^{*} = -2 - 2ie_3$.
 
-**Proof.** The first statement is $(\tilde{Q}^{\dagger}\tilde{Q})^{\dagger} = \tilde{Q}^{\dagger}\tilde{Q}$ and the computation of the scalar part; the second is the displayed computation.
+**Proof.** The first statement is $(\tilde{Q}^{*}\tilde{Q})^{\dagger} = \tilde{Q}^{*}\tilde{Q}$ and the computation of the scalar part; the second is the displayed computation.
 
-On the unitary slice $U = \{\tilde{Q} : \tilde{Q}^{\dagger}\tilde{Q} = 1\}$ the dagger is the inverse and the Hermitian sandwich is the inner conjugation; $U$ is $U(2)$, its determinant-one part is $SU(2)\cong\mathrm{Spin}(3)$, and $N(\tilde{Q}^{\dagger}\tilde{Q}) = |N(\tilde{Q})|^{2}$ shows that $|N| = 1$ on $U$.
+On the unitary slice $U = \{\tilde{Q} : \tilde{Q}^{*}\tilde{Q} = 1\}$ the dagger is the inverse and the Hermitian sandwich is the inner conjugation; $U$ is $U(2)$, its determinant-one part is $SU(2)\cong\mathrm{Spin}(3)$, and $N(\tilde{Q}^{*}\tilde{Q}) = |N(\tilde{Q})|^{2}$ shows that $|N| = 1$ on $U$.
 
 ### The Type of the Conjugations
 
@@ -166,13 +166,13 @@ On the unitary slice $U = \{\tilde{Q} : \tilde{Q}^{\dagger}\tilde{Q} = 1\}$ the 
 
 **Proof.** The centre is the fixed space of quaternion conjugation, of complex dimension one; the dimension count and the classification of the two kinds and the two types are *Involutive Clifford Algebras*; the last statement is the product rule of the first table.
 
-**Remark (the dagger of the general theory).** Over a base ring with an involution $\sigma$ the article *Involutive Clifford Algebras* forms the dagger $X^{\dagger} = \sigma(\alpha(X^{r}))$. On $\mathrm{Cl}_{3,0}$ the base is $\mathbb{R}$ with the identity involution, so that dagger is $\alpha(X^{r})$, the Clifford conjugation, which under $\gamma_k\mapsto ie_k$ is the **quaternion conjugation** and not the Hermitian conjugation ${}^{\dagger}$ of the biquaternion literature, which is reversion. The glyph ${}^{\dagger}$ therefore denotes two different maps in the two articles, and this article keeps the biquaternion meaning.
+**Remark (the dagger of the general theory).** Over a base ring with an involution $\sigma$ the article *Involutive Clifford Algebras* forms the dagger $X^{\dagger} = \sigma(\alpha(X^{r}))$. On $\mathrm{Cl}_{3,0}$ the base is $\mathbb{R}$ with the identity involution, so that dagger is $\alpha(X^{r})$, the Clifford conjugation, which under $\gamma_k\mapsto ie_k$ is the **quaternion conjugation** and not the Hermitian conjugation ${}^{*}$ of the biquaternion literature, which is reversion. The glyph ${}^{*}$ therefore denotes two different maps in the two articles, and this article keeps the biquaternion meaning.
 
 ### Examples
 
-**Example (the conjugations of a null element, verdict: $\bar{\cdot}$ is $\mathbb{C}$-linear, the other three conjugate-linear).** Let $\tilde{Q} = e_1 + ie_2$. Then $\bar{\tilde{Q}} = -e_1 - ie_2$, $\tilde{Q}^{*} = e_1 - ie_2$, $\tilde{Q}^{\dagger} = -e_1 + ie_2$ and $\tilde{Q}^{\flat} = e_1 - ie_2$. The two norms separate: $N(\tilde{Q}) = 1 + i^{2} = 0$, while $\sum_\mu|Q_\mu|^{2} = 2$. Verdict: $\tilde{Q}$ is a zero divisor whose Hermitian norm is strictly positive, so the isotropic reduced norm and the definite Hermitian norm disagree as sharply as they can; the map $\bar{\cdot}$ is $\mathbb{C}$-linear, the maps ${}^{*}$, ${}^{\dagger}$ and ${}^{\flat}$ are conjugate-linear, and the table above is the complete record of the four.
+**Example (the conjugations of a null element, verdict: ${}^{\natural}$ is $\mathbb{C}$-linear, the other three conjugate-linear).** Let $\tilde{Q} = e_1 + ie_2$. Then $\tilde{Q}^{\natural} = -e_1 - ie_2$, $\bar{\tilde{Q}} = e_1 - ie_2$, $\tilde{Q}^{*} = -e_1 + ie_2$ and $\tilde{Q}^{\flat} = e_1 - ie_2$. The two norms separate: $N(\tilde{Q}) = 1 + i^{2} = 0$, while $\sum_\mu|Q_\mu|^{2} = 2$. Verdict: $\tilde{Q}$ is a zero divisor whose Hermitian norm is strictly positive, so the isotropic reduced norm and the definite Hermitian norm disagree as sharply as they can; the map ${}^{\natural}$ is $\mathbb{C}$-linear, the maps $\bar{\cdot}$, ${}^{*}$ and ${}^{\flat}$ are conjugate-linear, and the table above is the complete record of the four.
 
-**Example (the correspondence on the generators and the bivectors, verdict: four $\mathbb{R}$-linear order-two maps).** Under $\gamma_k\mapsto ie_k$ the generator $\gamma_1$ is the grade-one element $ie_1$, fixed by ${}^{\dagger}$ and negated by $\bar{\cdot}$ and ${}^{*}$; the bivector $\gamma_1\gamma_2$ is the grade-two element $-e_3$, fixed by ${}^{*}$ and negated by $\bar{\cdot}$ and ${}^{\dagger}$; the volume element $\gamma_1\gamma_2\gamma_3$ is the grade-three element $i$, fixed by $\bar{\cdot}$ and ${}^{\flat}$ and negated by ${}^{*}$ and ${}^{\dagger}$. Verdict: all four conjugations are $\mathbb{R}$-linear and of order two, $\bar{\cdot}$ and ${}^{\dagger}$ are anti-automorphisms, ${}^{*}$ is an automorphism, and the example exhibits the sign of each on one element of the three nonzero grades.
+**Example (the correspondence on the generators and the bivectors, verdict: four $\mathbb{R}$-linear order-two maps).** Under $\gamma_k\mapsto ie_k$ the generator $\gamma_1$ is the grade-one element $ie_1$, fixed by ${}^{*}$ and negated by ${}^{\natural}$ and $\bar{\cdot}$; the bivector $\gamma_1\gamma_2$ is the grade-two element $-e_3$, fixed by $\bar{\cdot}$ and negated by ${}^{\natural}$ and ${}^{*}$; the volume element $\gamma_1\gamma_2\gamma_3$ is the grade-three element $i$, fixed by ${}^{\natural}$ and ${}^{\flat}$ and negated by $\bar{\cdot}$ and ${}^{*}$. Verdict: all four conjugations are $\mathbb{R}$-linear and of order two, ${}^{\natural}$ and ${}^{*}$ are anti-automorphisms, $\bar{\cdot}$ is an automorphism, and the example exhibits the sign of each on one element of the three nonzero grades.
 
 ## Summary
 
@@ -182,7 +182,7 @@ The volume element $\omega=\gamma_1\gamma_2\gamma_3$ of $\mathrm{Cl}_{3,0}$ is c
 
 The four Clifford grades are the four biquaternion components: grade zero the real scalar, grade one the imaginary pure quaternion, grade two the real pure quaternion, grade three the imaginary scalar. The quaternion vector part is therefore the grade-two part, and the geometric vector part the grade-one part, a reversal of names that the literature records as a trap.
 
-The algebra is involutive in the Clifford sense. Its four conjugations $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$ and ${}^{\flat}$ are order-two maps, and under $\gamma_k\mapsto ie_k$ they are the intrinsic order-two maps of $\mathrm{Cl}_{3,0}$: quaternion conjugation is the Clifford conjugation $\alpha(X^{r})$, of signs $(-1)^{k(k+1)/2}$ on the grades; complex conjugation is the grade involution $\alpha$, of signs $(-1)^{k}$; Hermitian conjugation is reversion $X^{r}$, of signs $(-1)^{k(k-1)/2}$; and the reversal is the negative of reversion. The fixed spaces are the grade sums: $\mathbb{C}_{\mathbb{B}}$ is the grades zero and three, $\mathbb{H}_{\mathbb{B}}$ the grades zero and two, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_{+}$ the grades zero and one and $\mathbb{M}_{-}$ the grades two and three. Quaternion conjugation is of the first kind and symplectic, while complex conjugation and Hermitian conjugation are of the second kind with fixed field the real scalars; quaternion conjugation produces the isotropic reduced norm $N(\tilde{Q}) = \sum_\mu Q_\mu^{2}$ and Hermitian conjugation the positive definite Hermitian form $\sum_\mu|Q_\mu|^{2}$, whose unitary slice is $U(2)$.
+The algebra is involutive in the Clifford sense. Its four conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and ${}^{\flat}$ are order-two maps, and under $\gamma_k\mapsto ie_k$ they are the intrinsic order-two maps of $\mathrm{Cl}_{3,0}$: quaternion conjugation is the Clifford conjugation $\alpha(X^{r})$, of signs $(-1)^{k(k+1)/2}$ on the grades; complex conjugation is the grade involution $\alpha$, of signs $(-1)^{k}$; Hermitian conjugation is reversion $X^{r}$, of signs $(-1)^{k(k-1)/2}$; and the reversal is the negative of reversion. The fixed spaces are the grade sums: $\mathbb{C}_{\mathbb{B}}$ is the grades zero and three, $\mathbb{H}_{\mathbb{B}}$ the grades zero and two, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_{+}$ the grades zero and one and $\mathbb{M}_{-}$ the grades two and three. Quaternion conjugation is of the first kind and symplectic, while complex conjugation and Hermitian conjugation are of the second kind with fixed field the real scalars; quaternion conjugation produces the isotropic reduced norm $N(\tilde{Q}) = \sum_\mu Q_\mu^{2}$ and Hermitian conjugation the positive definite Hermitian form $\sum_\mu|Q_\mu|^{2}$, whose unitary slice is $U(2)$.
 
 ## Summary of Notation
 
@@ -197,9 +197,9 @@ The algebra is involutive in the Clifford sense. Its four conjugations $\bar{\cd
 | $\Omega=\Gamma_1\Gamma_2\Gamma_3\Gamma_4\,(\Omega^2=-1)$ | Volume element of $\mathrm{Cl}_{3,1}$, central in the even part |
 | $p\wedge q=\tfrac12(pq-qp)=V(p)\times V(q)$ | Outer product; the cross product of the vector parts (*Biquaternion Algebra*) |
 | grade 0 / 1 / 2 / 3 | real scalar / imaginary pure quaternion / real pure quaternion / imaginary scalar |
-| $\bar{\cdot},\ {}^{*},\ {}^{\dagger},\ {}^{\flat}$ | the four conjugations, identified with $\alpha(X^{r})$, $\alpha$, $X^{r}$, $-X^{r}$ on $\mathrm{Cl}_{3,0}$ |
+| ${}^{\natural},\ \bar{\cdot},\ {}^{*},\ {}^{\flat}$ | the four conjugations, identified with $\alpha(X^{r})$, $\alpha$, $X^{r}$, $-X^{r}$ on $\mathrm{Cl}_{3,0}$ |
 | $\mathbb{M}_{+},\ \mathbb{M}_{-}$ | Hermitian and anti-Hermitian subspaces; grade $0\oplus$ grade $1$ and grade $2\oplus$ grade $3$ |
-| $N(\tilde{Q}) = \sum_\mu Q_\mu^{2}$ | reduced norm, $= \tilde{Q}\bar{\tilde{Q}}$, isotropic, multiplicative |
+| $N(\tilde{Q}) = \sum_\mu Q_\mu^{2}$ | reduced norm, $= \tilde{Q}\tilde{Q}^{\natural}$, isotropic, multiplicative |
 | $\tilde F_\star=-i\tilde F$ | Hodge star in the physics convention |
 | $\mathrm{Cl}(\mathbb{B},N)\cong\mathrm{Cl}_4(\mathbb{C})$ | Clifford algebra of the biquaternion norm as a quadratic space; a different algebra (*Biquaternion Norm and Invertibility*) |
 

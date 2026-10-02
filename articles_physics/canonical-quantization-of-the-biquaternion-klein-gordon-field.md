@@ -20,7 +20,7 @@ The article is organised as follows. The next section fixes the classical field,
 - Companion article *Canonical Quantization of the Biquaternion Dirac Field*, for the contrasting constrained quantization and the grading the algebra does not supply.
 - Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the contrasting first-class constraints and the gauge redundancy the algebra does not remove.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, and $i$ is the scalar imaginary with $i^2=-1$, commuting with every $e_k$. The material (anti-Hermitian) and informational (Hermitian) sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The conjugations are $\bar{\cdot}$ (quaternion), ${}^*$ (complex), ${}^\dagger=\bar{\cdot}^{\,*}$ (Hermitian) and ${}^\flat=-\dagger$. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, its quaternion conjugate is $\bar{\tilde{\nabla}}=e_0\partial_{ict}-e_1\partial_x-e_2\partial_y-e_3\partial_z$, and $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\bar{\tilde{\nabla}}\tilde{\nabla}=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$. The trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, normalized so that $\mathrm{Tr}(e_0)=2$ in the matrix representation $\mathbb{B}\cong M_2(\mathbb{C})$. The spacetime metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$ (level 2), and the mass parameter is $\mu=mc/\hbar$. The analytic parts use natural units $\hbar=c=1$, as the parent articles do; dimensionful factors are restored where they carry meaning.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, and $i$ is the scalar imaginary with $i^2=-1$, commuting with every $e_k$. The material (anti-Hermitian) and informational (Hermitian) sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat=-{}^{*}$. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural}=e_0\partial_{ict}-e_1\partial_x-e_2\partial_y-e_3\partial_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$. The trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, normalized so that $\mathrm{Tr}(e_0)=2$ in the matrix representation $\mathbb{B}\cong M_2(\mathbb{C})$. The spacetime metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$ (level 2), and the mass parameter is $\mu=mc/\hbar$. The analytic parts use natural units $\hbar=c=1$, as the parent articles do; dimensionful factors are restored where they carry meaning.
 
 ## The Classical Field and Its Conjugate Momentum
 
@@ -33,8 +33,8 @@ $$
 with $\tilde{Q}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-$. Its action is $S[\tilde{\Phi}]=\int\mathcal{L}\,d^4x$ with the real Lagrangian density established by the companion article *Noether's Theorem in Biquaternionic Form*,
 
 $$
-\mathcal{L}=-\,\mathrm{Sc}\!\left[(\bar{\tilde{\nabla}}\tilde{\Phi}^\dagger)(\tilde{\nabla}\tilde{\Phi})\right]
--\frac{m^2c^2}{\hbar^2}\,\mathrm{Sc}\!\left[\tilde{\Phi}^\dagger\tilde{\Phi}\right]
+\mathcal{L}=-\,\mathrm{Sc}\!\left[(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})\right]
+-\frac{m^2c^2}{\hbar^2}\,\mathrm{Sc}\!\left[\tilde{\Phi}^{*}\tilde{\Phi}\right]
 =-\,(\partial_{ict}\phi^*)(\partial_{ict}\phi)-\sum_k(\partial_k\phi^*)(\partial_k\phi)-\mu^2\phi^*\phi .
 $$
 
@@ -68,7 +68,7 @@ The value space of the field is the center, and the reason is structural rather 
 $$
 \tilde{\Phi}=\frac{1}{\sqrt2}\Big(\underbrace{\phi_1\,e_0}_{\in\,\mathbb{M}_+}+\underbrace{\phi_2\,ie_0}_{\in\,\mathbb{M}_-}\Big),
 \qquad
-\mathrm{Sc}\!\left(\tilde{\Phi}^\dagger\tilde{\Phi}\right)=\frac12\left(\phi_1^2+\phi_2^2\right),
+\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\tilde{\Phi}\right)=\frac12\left(\phi_1^2+\phi_2^2\right),
 $$
 
 with $\phi_1,\phi_2$ the two real scalar fields of the sector in the normalization in which the kinetic term is $\frac12[(\partial\phi_1)^2+(\partial\phi_2)^2]$ — the component normalization that the companion articles on the quantized field and on symmetry breaking use throughout — and the complex structure that makes the two into a single complex field is the central scalar imaginary $i$. The scalar field is, in this precise sense, the field of the center; the spinor module on which the Dirac field lives is not involved.
@@ -78,18 +78,18 @@ The quadratic form of the theory is the biquaternion norm. The material four-wav
 $$
 \tilde{K}=i\frac{\omega}{c}\,e_0+\mathbf{k}\in\mathbb{M}_-,
 \qquad
-\bar{\tilde{K}}=i\frac{\omega}{c}\,e_0-\mathbf{k},
+\tilde{K}^{\natural}=i\frac{\omega}{c}\,e_0-\mathbf{k},
 \qquad
-N(\tilde{K})=\tilde{K}\bar{\tilde{K}}=\left(-\frac{\omega^2}{c^2}+\mathbf{k}^2\right)e_0 ,
+N(\tilde{K})=\tilde{K}\tilde{K}^{\natural}=\left(-\frac{\omega^2}{c^2}+\mathbf{k}^2\right)e_0 ,
 $$
 
-and the plane-wave phase is the scalar part $\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})=\mathbf{k}\cdot\mathbf{x}-\omega t$. Substituting $\tilde{\Phi}=\phi_0e^{i\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})}e_0$ into $\left(\Box-\mu^2\right)\tilde{\Phi}=0$ gives $\omega^2/c^2-\mathbf{k}^2=\mu^2$, which is the mass-shell condition
+and the plane-wave phase is the scalar part $\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})=\mathbf{k}\cdot\mathbf{x}-\omega t$. Substituting $\tilde{\Phi}=\phi_0e^{i\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})}e_0$ into $\left(\Box-\mu^2\right)\tilde{\Phi}=0$ gives $\omega^2/c^2-\mathbf{k}^2=\mu^2$, which is the mass-shell condition
 
 $$
-N(\tilde{K})=\tilde{K}\bar{\tilde{K}}=-\frac{m^2c^2}{\hbar^2}\,e_0 .
+N(\tilde{K})=\tilde{K}\tilde{K}^{\natural}=-\frac{m^2c^2}{\hbar^2}\,e_0 .
 $$
 
-**Verification.** For $\mu=0.7$ and the three on-shell wavevectors $(1.3,0.2,-0.5)$, $(-0.9,0.4,0.1)$, $(0.6,0.6,-0.3)$, the direct biquaternion product gave $\tilde{K}\bar{\tilde{K}}=-0.49\,e_0$ to twelve decimal places in every case, with the vector part vanishing to machine precision, and the phase identity $\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})=\mathbf{k}\cdot\mathbf{x}-\omega t$ was reproduced exactly on an independent four-vector. The mass shell is a level set of the biquaternion norm, in the sense recorded by the parent article.
+**Verification.** For $\mu=0.7$ and the three on-shell wavevectors $(1.3,0.2,-0.5)$, $(-0.9,0.4,0.1)$, $(0.6,0.6,-0.3)$, the direct biquaternion product gave $\tilde{K}\tilde{K}^{\natural}=-0.49\,e_0$ to twelve decimal places in every case, with the vector part vanishing to machine precision, and the phase identity $\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})=\mathbf{k}\cdot\mathbf{x}-\omega t$ was reproduced exactly on an independent four-vector. The mass shell is a level set of the biquaternion norm, in the sense recorded by the parent article.
 
 ## Equal-Time Commutation Relations
 
@@ -139,11 +139,11 @@ The operator $\hat a_{\mathbf{p}}$ annihilates a particle of momentum $\mathbf{p
 The biquaternion form of the expansion is the replacement of the phase $e^{\mp ip\cdot x}$ by a central unitary element built from the material four-wavevector. With $\tilde{K}=iE_{\mathbf{p}}e_0+\mathbf{p}$ in natural units, the identity above gives
 
 $$
-\mathrm{Sc}\!\left(\tilde{K}\bar{\tilde{Q}}\right)=\mathbf{p}\cdot\mathbf{x}-E_{\mathbf{p}}t=-p\cdot x ,
+\mathrm{Sc}\!\left(\tilde{K}\tilde{Q}^{\natural}\right)=\mathbf{p}\cdot\mathbf{x}-E_{\mathbf{p}}t=-p\cdot x ,
 \qquad
-e^{-ip\cdot x}=e^{\,i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})},
+e^{-ip\cdot x}=e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})},
 \qquad
-e^{+ip\cdot x}=e^{-i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})} .
+e^{+ip\cdot x}=e^{-i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})} .
 $$
 
 The exponentials are central, so the mode expansion is a sum of central phases multiplying operators; the field operator at each event is an operator times $e_0$, i.e. it is central-valued as an operator-valued distribution, and the transport of the phase is the framework's own. The normalization $1/\sqrt{2E_{\mathbf{p}}}$ and the measure $d^3p/(2\pi)^3$ are the standard Lorentz-invariant ones and are inherited.
@@ -279,7 +279,7 @@ $$
 \left(\hat a_{\mathbf{p}}e^{-ip\cdot x}+\hat b_{\mathbf{p}}^\dagger e^{+ip\cdot x}\right),
 $$
 
-the phases being central unitaries $e^{\pm i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})}$ built from the material four-wavevector $\tilde{K}=iE_{\mathbf{p}}e_0+\mathbf{p}$; the mode commutators are $[\hat a_{\mathbf{p}},\hat a_{\mathbf{q}}^\dagger]=[\hat b_{\mathbf{p}},\hat b_{\mathbf{q}}^\dagger]=(2\pi)^3\delta^{(3)}(\mathbf{p}-\mathbf{q})$ and all others zero, and they reproduce the equal-time relation. The Fock space is the symmetric algebra of the one-particle space. The Hamiltonian is $:\!\hat H\!:=\int\frac{d^3p}{(2\pi)^3}E_{\mathbf{p}}(\hat a^\dagger\hat a+\hat b^\dagger\hat b)$ after normal ordering, and the normal-ordered charge has particles and antiparticles of opposite sign.
+the phases being central unitaries $e^{\pm i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})}$ built from the material four-wavevector $\tilde{K}=iE_{\mathbf{p}}e_0+\mathbf{p}$; the mode commutators are $[\hat a_{\mathbf{p}},\hat a_{\mathbf{q}}^\dagger]=[\hat b_{\mathbf{p}},\hat b_{\mathbf{q}}^\dagger]=(2\pi)^3\delta^{(3)}(\mathbf{p}-\mathbf{q})$ and all others zero, and they reproduce the equal-time relation. The Fock space is the symmetric algebra of the one-particle space. The Hamiltonian is $:\!\hat H\!:=\int\frac{d^3p}{(2\pi)^3}E_{\mathbf{p}}(\hat a^\dagger\hat a+\hat b^\dagger\hat b)$ after normal ordering, and the normal-ordered charge has particles and antiparticles of opposite sign.
 
 The field's value space is the center $\mathbb{C}_{\mathbb{B}}$, and the algebra supplies no ladder for it: no pair in $\mathbb{B}$ satisfies $[\tilde a,\tilde a^\dagger]=e_0$, since the trace of a commutator vanishes while $\mathrm{Tr}(e_0)=2$. The scalar mode algebra is thus the Weyl algebra of an imported module. The quantization is a transcription of standard canonical quantization into the framework's notation; its distinctive content is the central-valuedness of the field, the biquaternion-norm reading of the mass shell, and the explicit determination that this sector, alone among the three, receives nothing algebraic from $\mathbb{B}$.
 
@@ -292,14 +292,14 @@ The field's value space is the center $\mathbb{C}_{\mathbb{B}}$, and the algebra
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ | Center; the scalar field's value space |
-| $\tilde{Q}=ict\,e_0+\mathbf{x}$, $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Material coordinate, $\in\mathbb{M}_-$, and its biquaternion norm; spacelike means $N>0$ |
+| $\tilde{Q}=ict\,e_0+\mathbf{x}$, $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | Material coordinate, $\in\mathbb{M}_-$, and its biquaternion norm; spacelike means $N>0$ |
 | $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$ | Biquaternionic gradient |
-| $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\bar{\tilde{\nabla}}\tilde{\nabla}=\partial_{ict}^2+\Delta$ | d'Alembertian |
+| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial_{ict}^2+\Delta$ | d'Alembertian |
 | $\tilde{\Phi}=\phi\,e_0$, $\phi=(\phi_1+i\phi_2)/\sqrt2$ | Scalar field, valued in the center; real components |
-| $\mathcal{L}=-\,\mathrm{Sc}[(\bar{\tilde{\nabla}}\tilde{\Phi}^\dagger)(\tilde{\nabla}\tilde{\Phi})]-\mu^2\mathrm{Sc}[\tilde{\Phi}^\dagger\tilde{\Phi}]$ | Scalar Lagrangian density |
+| $\mathcal{L}=-\,\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})]-\mu^2\mathrm{Sc}[\tilde{\Phi}^{*}\tilde{\Phi}]$ | Scalar Lagrangian density |
 | $\mu=mc/\hbar$ | Mass parameter |
 | $\pi=c^{-2}\dot{\phi}^{\,*}$, $\pi^\dagger=c^{-2}\dot{\phi}$ | Conjugate momenta; Legendre transform regular |
-| $\tilde{K}=i\omega/c\,e_0+\mathbf{k}$, $N(\tilde{K})=\tilde{K}\bar{\tilde{K}}$ | Material four-wavevector and biquaternion norm |
+| $\tilde{K}=i\omega/c\,e_0+\mathbf{k}$, $N(\tilde{K})=\tilde{K}\tilde{K}^{\natural}$ | Material four-wavevector and biquaternion norm |
 | $N(\tilde{K})=-m^2c^2/\hbar^2\,e_0$ | Mass-shell condition |
 | $E_{\mathbf{p}}=\sqrt{\mathbf{p}^2+\mu^2}$, $p\cdot x=E_{\mathbf{p}}t-\mathbf{p}\cdot\mathbf{x}$ | On-shell energy and phase (natural units) |
 | $\hat a_{\mathbf{p}},\hat b_{\mathbf{p}}$ | Particle and antiparticle annihilation operators |

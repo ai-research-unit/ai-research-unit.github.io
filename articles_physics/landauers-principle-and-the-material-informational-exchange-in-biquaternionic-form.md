@@ -22,7 +22,7 @@ The biquaternion content of the article is structural. The two ledgers of the ex
 
 The treatment is classical. The memory is a classical bit: a state diagonal in a pointer basis, with no coherences, and its entropy is the Shannon entropy of its pointer distribution. The erasure map is the classical reset. Nothing quantum is used, and the standard results of quantum thermodynamics — the entropy of a thermal state, the free-energy balance of a quantum channel — are not developed; where they are cited, they are cited as the standard context.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; $i$ is the central scalar imaginary; the sectors are $\mathbb{M}_+$ (Hermitian states) and $\mathbb{M}_-$ (anti-Hermitian energy-momentum); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$; and the entropy is measured in nats, the thermodynamic entropy being $k_B$ times it.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; $i$ is the central scalar imaginary; the sectors are $\mathbb{M}_+$ (Hermitian states) and $\mathbb{M}_-$ (anti-Hermitian energy-momentum); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and the entropy is measured in nats, the thermodynamic entropy being $k_B$ times it.
 
 ## Landauer's Principle
 
@@ -104,12 +104,12 @@ The temperature is the conversion factor between the two ledgers: it converts en
 
 ### The Sector Exchange
 
-The two sectors' quadratic forms are exchanged by the imaginary unit. Since $i$ is central and the quaternion conjugation fixes it, $\overline{i\tilde{Q}} = i\bar{\tilde{Q}}$, and therefore
+The two sectors' quadratic forms are exchanged by the imaginary unit. Since $i$ is central and the quaternion conjugation fixes it, $\overline{i\tilde{Q}} = i\tilde{Q}^{\natural}$, and therefore
 
 $$
 N(i\tilde{Q}) = (i\tilde{Q})\,\overline{(i\tilde{Q})}
-= (i\tilde{Q})(i\bar{\tilde{Q}})
-= i^2\,\tilde{Q}\bar{\tilde{Q}}
+= (i\tilde{Q})(i\tilde{Q}^{\natural})
+= i^2\,\tilde{Q}\tilde{Q}^{\natural}
 = -N(\tilde{Q}) .
 $$
 
@@ -237,7 +237,7 @@ The accounting separates the operations of the framework into two classes, and t
 
 | Operation | Algebra | Entropy change | Lyapunov spectrum |
 |---|---|---|---|
-| Reversible gate (rotor conjugation) | $\tilde{\rho}\mapsto\tilde{R}\tilde{\rho}\tilde{R}^\dagger$, $\tilde{R}\tilde{R}^\dagger=e_0$ | $0$ | $\{0,0,0\}$ |
+| Reversible gate (rotor conjugation) | $\tilde{\rho}\mapsto\tilde{R}\tilde{\rho}\tilde{R}^{*}$, $\tilde{R}\tilde{R}^{*}=e_0$ | $0$ | $\{0,0,0\}$ |
 | Coarse-graining | conditional expectation $\Phi$ | $\ge 0$ | $\le 0$ |
 | Erasure | reset to $\tilde\Pi_+(\hat{\mathbf{n}})$ | $-\mathcal{S}(\tilde{\rho})$ on the memory, $+\mathcal{S}(\tilde{\rho})$ on the environment | $-\infty$ (linear part $L=0$) |
 
@@ -285,7 +285,7 @@ Reversible operations — rotor conjugations — preserve the biquaternion norm,
 | $\tilde\Pi_\pm(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0\pm i\hat{\mathbf{n}})$ | Pointer idempotents (logical states) |
 | $\tilde{\rho} = p_+\tilde\Pi_+ + p_-\tilde\Pi_-$ | Classical bit (diagonal state) |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $N(i\tilde{Q}) = -N(\tilde{Q})$ | Sector exchange of the quadratic form |
 | $\mathcal{S}(\tilde{\rho}) = -2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho}) = h(|\mathbf{r}|)$ | Entropy functional (nats) |
 | $h(x) = -\tfrac{1+x}{2}\log\tfrac{1+x}{2} - \tfrac{1-x}{2}\log\tfrac{1-x}{2}$ | Binary entropy, bias argument: $h(0)=\log 2$, $h(1)=0$ |

@@ -30,7 +30,7 @@ The modular conjugation **conjugates the scalar imaginary** $i$. Every sign in t
 
 The article proceeds as follows. The construction and its structural identities come first. Then the two hypotheses, with an explicit failure when separation is dropped. Then the modular flow and its identification with the KMS flow of the parent article. Then the finite-dimensional realization in $\mathbb{B}$ and the closed-form polar decomposition. Then the biquaternion candidate for $S$ and what the framework does and does not supply. Then the type of $\mathbb{B}$ and the inner/outer classification. It closes with the boundary between what is established and what is a gap.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. Hermitian conjugation is $\dagger$, and it is the algebra involution $A\mapsto A^*$ of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, so that $\mathrm{Tr}(e_0)=2$.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. Hermitian conjugation is ${}^{*}$, and it is the algebra involution $A\mapsto A^*$ of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, so that $\mathrm{Tr}(e_0)=2$.
 
 ## The Tomita–Takesaki Construction
 
@@ -133,7 +133,7 @@ Now build $S$ and its polar decomposition explicitly.
 
 Take $M=\mathbb{B}\cong M_2(\mathbb{C})$, and let $\tilde\rho\in\mathbb{M}_+$ be positive definite with $\mathrm{Tr}(\tilde\rho)=1$. On the vector space $\mathbb{B}$ put the inner product
 $$
-\langle \tilde{A},\tilde{B}\rangle_{\tilde\rho} := \mathrm{Tr}\big(\tilde\rho\,\tilde{A}^\dagger\tilde{B}\big),
+\langle \tilde{A},\tilde{B}\rangle_{\tilde\rho} := \mathrm{Tr}\big(\tilde\rho\,\tilde{A}^{*}\tilde{B}\big),
 $$
 let $M$ act by left multiplication, $\pi(\tilde{A})\tilde{B}=\tilde{A}\tilde{B}$, and take the vector
 $$
@@ -149,9 +149,9 @@ Because $\tilde\rho$ is positive definite the form is nondegenerate and the stat
 
 Identifying the vector $\pi(\tilde{A})\Omega=\tilde{A}e_0$ with the algebra element $\tilde{A}$ (the Hilbert space is $\mathbb{B}$ itself), the Tomita operator is
 $$
-S_0(\tilde{A}) = \tilde{A}^\dagger .
+S_0(\tilde{A}) = \tilde{A}^{*} .
 $$
-**The Tomita operator of the biquaternion algebra is its Hermitian conjugation.** It is anti-linear because $\dagger$ conjugates the coefficients: for $\tilde{A}=\sum_\mu Q_\mu e_\mu$ one has $\tilde{A}^\dagger=\bar Q_0e_0-\sum_{k=1}^{3}\bar Q_ke_k$, using $e_0^\dagger=e_0$ and $e_k^\dagger=-e_k$. The same conjugation of coefficients is what conjugates $i$, so the anti-linearity of $S_0$ and the conjugation of the scalar imaginary are one and the same operation in this framework.
+**The Tomita operator of the biquaternion algebra is its Hermitian conjugation.** It is anti-linear because ${}^{*}$ conjugates the coefficients: for $\tilde{A}=\sum_\mu Q_\mu e_\mu$ one has $\tilde{A}^{*}=\bar Q_0e_0-\sum_{k=1}^{3}\bar Q_ke_k$, using $e_0^\dagger=e_0$ and $e_k^{*}=-e_k$. The same conjugation of coefficients is what conjugates $i$, so the anti-linearity of $S_0$ and the conjugation of the scalar imaginary are one and the same operation in this framework.
 
 The Hilbert-space adjoint of the anti-linear $S_0$, defined by
 $$
@@ -159,7 +159,7 @@ $$
 $$
 is
 $$
-S_0^*(\tilde{B}) = \tilde\rho\,\tilde{B}^\dagger\tilde\rho^{-1},
+S_0^*(\tilde{B}) = \tilde\rho\,\tilde{B}^{*}\tilde\rho^{-1},
 $$
 whence
 $$
@@ -168,13 +168,13 @@ $$
 $$
 The polar decomposition $S_0=J\Delta^{1/2}$ then gives
 $$
-J(\tilde{A}) = \tilde\rho^{1/2}\tilde{A}^\dagger\tilde\rho^{-1/2}.
+J(\tilde{A}) = \tilde\rho^{1/2}\tilde{A}^{*}\tilde\rho^{-1/2}.
 $$
 The **modular flow** is
 $$
 \sigma_t(\tilde{A}) = \Delta^{it}\tilde{A}\Delta^{-it} = \tilde\rho^{it}\tilde{A}\tilde\rho^{-it},
 $$
-which is an **inner** automorphism of $\mathbb{B}$, implemented by the unitary $\tilde\rho^{it}\in\mathbb{B}$. It preserves Hermitian conjugation, $\sigma_t(\tilde{A}^\dagger)=\sigma_t(\tilde{A})^\dagger$, and hence acts on $\mathbb{M}_+$ and $\mathbb{M}_-$ separately. With
+which is an **inner** automorphism of $\mathbb{B}$, implemented by the unitary $\tilde\rho^{it}\in\mathbb{B}$. It preserves Hermitian conjugation, $\sigma_t(\tilde{A}^{*})=\sigma_t(\tilde{A})^\dagger$, and hence acts on $\mathbb{M}_+$ and $\mathbb{M}_-$ separately. With
 $$
 \tilde K := -\log\tilde\rho \ \in\mathbb{M}_+,
 $$
@@ -209,21 +209,21 @@ with $Z=1+e^{-\beta\omega}=1.339596$, in agreement with the partition-function a
 
 ## The Biquaternion Candidate for $S$
 
-The framework supplies a natural candidate for $S$, and it is the Hermitian conjugation $\dagger$ itself:
+The framework supplies a natural candidate for $S$, and it is the Hermitian conjugation ${}^{*}$ itself:
 $$
-S_0:\ \tilde{A}\mapsto\tilde{A}^\dagger .
+S_0:\ \tilde{A}\mapsto\tilde{A}^{*} .
 $$
-This is not a choice made to fit the theory; it is the involution that defines the framework's two sectors, $\mathbb{M}_+$ being the $+1$ eigenspace of $\dagger$ and $\mathbb{M}_-$ the $-1$ eigenspace. Two remarks.
+This is not a choice made to fit the theory; it is the involution that defines the framework's two sectors, $\mathbb{M}_+$ being the $+1$ eigenspace of ${}^{*}$ and $\mathbb{M}_-$ the $-1$ eigenspace. Two remarks.
 
-**The candidate satisfies the hypotheses.** With $\Omega=e_0$, cyclicity and separation hold automatically, and the state is faithful exactly when $\tilde\rho>0$. So the pair $(\mathbb{B},\Omega)$ with $\dagger$ as the involution is a genuine instance of the construction, not a formal resemblance. It also explains the anti-linearity: the Hermitian conjugation of $\mathbb{B}$ conjugates the coefficients, which is the same operation that conjugates $i$, so the anti-unitary character of $J$ is inherited from the framework's own conjugation rather than imported.
+**The candidate satisfies the hypotheses.** With $\Omega=e_0$, cyclicity and separation hold automatically, and the state is faithful exactly when $\tilde\rho>0$. So the pair $(\mathbb{B},\Omega)$ with ${}^{*}$ as the involution is a genuine instance of the construction, not a formal resemblance. It also explains the anti-linearity: the Hermitian conjugation of $\mathbb{B}$ conjugates the coefficients, which is the same operation that conjugates $i$, so the anti-unitary character of $J$ is inherited from the framework's own conjugation rather than imported.
 
-**The state is not supplied.** $S_0$ as a map is state-independent — $\tilde{A}\mapsto\tilde{A}^\dagger$ for every $\tilde\rho$ — but the polar decomposition is not: $\Delta$ and $J$ depend on $\tilde\rho$, through the inner product. And the framework's most distinguished state is the tracial one,
+**The state is not supplied.** $S_0$ as a map is state-independent — $\tilde{A}\mapsto\tilde{A}^{*}$ for every $\tilde\rho$ — but the polar decomposition is not: $\Delta$ and $J$ depend on $\tilde\rho$, through the inner product. And the framework's most distinguished state is the tracial one,
 $$
 \tilde\rho=\tfrac12 e_0 \qquad(\mathbf{r}=0),
 $$
 for which
 $$
-\Delta=1, \qquad J=S_0=\dagger, \qquad \sigma_t=\mathrm{id} :
+\Delta=1, \qquad J=S_0={}^{*}, \qquad \sigma_t=\mathrm{id} :
 $$
 the modular flow is trivial. A nontrivial modular flow requires a nontracial state. The natural family is the thermal states $\tilde\rho=e^{-\beta\tilde H}/\mathrm{Tr}(e^{-\beta\tilde H})$ with $\tilde H\in\mathbb{M}_+$, and for those $\tilde K=-\log\tilde\rho$ generates the flow; but the algebra itself does not select one. **This is a gap, and it is left visible:** the framework supplies $S$, supplies a family of states, and supplies no dynamics that chooses among them.
 
@@ -263,15 +263,15 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 
 **Established (recomputed here).**
 
-- $M=\mathbb{B}$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde{A}^\dagger\tilde{B})$ and $\Omega=e_0$, is an instance; $S_0=\dagger$.
-- $\Delta(\tilde{A})=\tilde\rho\tilde{A}\tilde\rho^{-1}$, $\Delta^{1/2}(\tilde{A})=\tilde\rho^{1/2}\tilde{A}\tilde\rho^{-1/2}$, $J(\tilde{A})=\tilde\rho^{1/2}\tilde{A}^\dagger\tilde\rho^{-1/2}$, $\sigma_t(\tilde{A})=\tilde\rho^{it}\tilde{A}\tilde\rho^{-it}$.
+- $M=\mathbb{B}$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde{A}^{*}\tilde{B})$ and $\Omega=e_0$, is an instance; $S_0={}^{*}$.
+- $\Delta(\tilde{A})=\tilde\rho\tilde{A}\tilde\rho^{-1}$, $\Delta^{1/2}(\tilde{A})=\tilde\rho^{1/2}\tilde{A}\tilde\rho^{-1/2}$, $J(\tilde{A})=\tilde\rho^{1/2}\tilde{A}^{*}\tilde\rho^{-1/2}$, $\sigma_t(\tilde{A})=\tilde\rho^{it}\tilde{A}\tilde\rho^{-it}$.
 - $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, $\sigma_t\circ\sigma_s=\sigma_{t+s}$, $d\sigma_t/dt|_{t=0}=-i[\tilde{K},\tilde{A}]$, and $JMJ=M'$.
 - $\tilde{K}=-\log\tilde\rho\in\mathbb{M}_+$, and for the thermal single mode $\tilde{K}=\beta\tilde{H}+(\log Z)e_0$, matching the parent and partition-function articles.
 - $\mathbb{B}\cong M_2(\mathbb{C})$ is type I$_2$; its modular flow is inner, implemented by $\tilde\rho^{it}\in\mathbb{B}$.
 
 **Interpretation.**
 
-- That the framework's Hermitian conjugation $\dagger$ is the natural Tomita operator, and that its coefficient-conjugation is the origin of the anti-unitarity of $J$ and of the conjugation of $i$.
+- That the framework's Hermitian conjugation ${}^{*}$ is the natural Tomita operator, and that its coefficient-conjugation is the origin of the anti-unitarity of $J$ and of the conjugation of $i$.
 
 **Gap.**
 
@@ -284,14 +284,14 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 
 The Tomita–Takesaki construction turns a cyclic and separating vector on a von Neumann algebra into an anti-linear involution $S$, and its polar decomposition $S=J\Delta^{1/2}$ into a positive modular operator $\Delta$, an anti-unitary modular conjugation $J$ with $J^2=1$ and $JMJ=M'$, and a modular automorphism group $\sigma_t(A)=\Delta^{it}A\Delta^{-it}$.
 
-In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde{A}^\dagger\tilde{B})$ and the cyclic separating vector $\Omega=e_0$, the Tomita operator is the Hermitian conjugation,
+In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde{A}^{*}\tilde{B})$ and the cyclic separating vector $\Omega=e_0$, the Tomita operator is the Hermitian conjugation,
 $$
-S_0:\tilde{A}\mapsto\tilde{A}^\dagger,
+S_0:\tilde{A}\mapsto\tilde{A}^{*},
 $$
 and the polar decomposition is
 $$
 \Delta(\tilde{A})=\tilde\rho\tilde{A}\tilde\rho^{-1},\qquad
-J(\tilde{A})=\tilde\rho^{1/2}\tilde{A}^\dagger\tilde\rho^{-1/2},\qquad
+J(\tilde{A})=\tilde\rho^{1/2}\tilde{A}^{*}\tilde\rho^{-1/2},\qquad
 \sigma_t(\tilde{A})=\tilde\rho^{it}\tilde{A}\tilde\rho^{-it}.
 $$
 The identities $J^2=1$, $J\Delta J=\Delta^{-1}$ and $J\,i\,J=-i$ — the modular conjugation conjugates the scalar imaginary — together with the group law of the flow, were verified symbolically and numerically on an explicit faithful state whose Bloch vector was chosen independently of the derivation.
@@ -307,7 +307,7 @@ Two honest limitations. The framework supplies $S$ and a family of faithful stat
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\dagger$ | Hermitian conjugation; the Tomita involution $A^*$ |
+| ${}^{*}$ | Hermitian conjugation; the Tomita involution $A^*$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula; $\mathrm{Tr}(e_0)=2$ |
 | $\mathcal{H},M,\Omega$ | Hilbert space, von Neumann algebra, cyclic separating vector |
@@ -316,7 +316,7 @@ Two honest limitations. The framework supplies $S$ and a family of faithful stat
 | $J$ | Modular conjugation, anti-unitary, $J^2=1$ |
 | $\sigma_t(A)=\Delta^{it}A\Delta^{-it}$ | Modular automorphism group |
 | $\tilde\rho\in\mathbb{M}_+$ | Faithful state (positive definite, trace one) |
-| $\langle\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde{A}^\dagger\tilde{B})$ | GNS inner product on $\mathbb{B}$ |
+| $\langle\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde{A}^{*}\tilde{B})$ | GNS inner product on $\mathbb{B}$ |
 | $\tilde{K}=-\log\tilde\rho$ | Modular Hamiltonian, in $\mathbb{M}_+$ |
 | $F_{AB}(t+i)=F_{BA}(-t)$ | KMS boundary relation (parent article) |
 | $\delta:\mathbb{R}\to\operatorname{Out}(M)$ | Connes invariant, $t\mapsto[\sigma_t]$ |

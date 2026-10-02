@@ -8,7 +8,7 @@ A recent paper by Korolkova, Sánchez-Soto, and Leuchs (arXiv:2405.15692, 2024) 
 
 This article asks a specific question: does the biquaternion framework developed in the companion articles have a natural home for the operational criterion, and if so, does it add anything to it?
 
-The answer to the first part is yes. The framework already distinguishes between two kinds of operation: unitary elements $\tilde{U}$ (with $\tilde{U}\tilde{U}^\dagger = e_0$) generate reversible evolution by rotor conjugation; idempotent elements $\tilde\Pi$ (with $\tilde\Pi^2 = \tilde\Pi$) generate irreversible projection by the sandwich operation. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs — count the idempotents applied to the two partitions — is exactly the framework's reversible/irreversible dichotomy applied to the specific setting of non-separability. The framework gives the criterion an algebraic home.
+The answer to the first part is yes. The framework already distinguishes between two kinds of operation: unitary elements $\tilde{U}$ (with $\tilde{U}\tilde{U}^{*} = e_0$) generate reversible evolution by rotor conjugation; idempotent elements $\tilde\Pi$ (with $\tilde\Pi^2 = \tilde\Pi$) generate irreversible projection by the sandwich operation. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs — count the idempotents applied to the two partitions — is exactly the framework's reversible/irreversible dichotomy applied to the specific setting of non-separability. The framework gives the criterion an algebraic home.
 
 The answer to the second part is a qualified **not yet**. The framework expresses the criterion cleanly, and it suggests a structural reason for *why* the criterion works — the material/informational split $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$. But it does not yet predict anything the operational criterion does not already predict, and it does not yet specify the dynamics of the cross-sector coupling that would be needed to make the structural reason a dynamical reason. The framework sharpens the criterion; it does not extend it.
 
@@ -55,9 +55,9 @@ The paper's key move is to treat the "excitation" as the decisive feature. A mod
 
 The biquaternion framework has a structural feature that maps directly onto this operational criterion. Two kinds of acting element are distinguished in the algebra:
 
-- **Unitary elements** $\tilde{U} \in \mathbb{B}$ satisfy $\tilde{U}\tilde{U}^\dagger = e_0$ and act on states by **rotor conjugation**:
+- **Unitary elements** $\tilde{U} \in \mathbb{B}$ satisfy $\tilde{U}\tilde{U}^{*} = e_0$ and act on states by **rotor conjugation**:
 $$
-\tilde{\rho} \;\longmapsto\; \tilde{U}\,\tilde{\rho}\,\tilde{U}^\dagger.
+\tilde{\rho} \;\longmapsto\; \tilde{U}\,\tilde{\rho}\,\tilde{U}^{*}.
 $$
 The action is reversible. The unitary element is a rotor in the sense of geometric algebra, and its conjugation action is the algebraic form of a basis change, a mode rotation, a filter, or a sorter.
 
@@ -80,7 +80,7 @@ where $\tilde\Pi_A^{(i)}$ and $\tilde\Pi_B^{(j)}$ are the idempotents correspond
 **Classical non-separability: one idempotent, one unitary.** A bipartite state $\tilde{\rho}$ on $\mathbb{B}\otimes\mathbb{B}$ undergoes one unitary filtering operation on partition $A$ and one projective measurement on partition $B$. The conditional probability of outcome $j$ given filter setting $k$ is
 
 $$
-p(j\mid k) = \mathrm{Tr}\!\left(\bigl(e_0\otimes \tilde\Pi_B^{(j)}\bigr)\circ\bigl(\tilde{U}_A^{(k)}\otimes e_0\bigr)\circ \tilde{\rho}\circ\bigl(\tilde{U}_A^{(k)\dagger}\otimes e_0\bigr)\right),
+p(j\mid k) = \mathrm{Tr}\!\left(\bigl(e_0\otimes \tilde\Pi_B^{(j)}\bigr)\circ\bigl(\tilde{U}_A^{(k)}\otimes e_0\bigr)\circ \tilde{\rho}\circ\bigl(\tilde{U}_A^{(k){}^{*}}\otimes e_0\bigr)\right),
 $$
 
 using the cyclicity of the trace. This is a **single trace formula**, preceded by a unitary conjugation. For the classical non-separable states of interest — those in which the excitation is not attached to either partition — the trace over partition $A$ collapses, because $\tilde{U}_A^{(k)}$ acts only on $A$ and the trace is cyclic:
@@ -99,7 +99,7 @@ $$
 
 Two idempotents, or one idempotent and one unitary. The framework's reversible/irreversible dichotomy is the operational criterion, stated in the framework's native vocabulary.
 
-This is not a coincidence. It is a structural fact of the algebra: the two kinds of acting element are distinguished by their algebraic properties ($\tilde{U}\tilde{U}^\dagger = e_0$ vs. $\tilde\Pi^2 = \tilde\Pi$), and their physical roles (reversible evolution vs. irreversible measurement) follow from these properties. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs is thus the *physical content*, in the setting of non-separability, of an algebraic distinction that the framework already contains.
+This is not a coincidence. It is a structural fact of the algebra: the two kinds of acting element are distinguished by their algebraic properties ($\tilde{U}\tilde{U}^{*} = e_0$ vs. $\tilde\Pi^2 = \tilde\Pi$), and their physical roles (reversible evolution vs. irreversible measurement) follow from these properties. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs is thus the *physical content*, in the setting of non-separability, of an algebraic distinction that the framework already contains.
 
 ## The Four Subsets Mapped to the Framework
 
@@ -211,7 +211,7 @@ The paper and the framework are complementary. The paper tells us what to look f
 | $\tilde\Pi_A^{(i)}, \tilde\Pi_B^{(j)}$ | Idempotents on partitions $A,B$ (measurements) |
 | $\tilde{U}_A^{(k)}$ | Unitary on partition $A$ (filter, sorter, basis choice) |
 | $p(i,j) = \mathrm{Tr}((\tilde\Pi_A^{(i)}\otimes \tilde\Pi_B^{(j)})\circ \tilde{\rho})$ | Joint probability, quantum case |
-| $p(j\mid k) = \mathrm{Tr}((e_0\otimes \tilde\Pi_B^{(j)})\circ(\tilde{U}_A^{(k)}\otimes e_0)\circ \tilde{\rho}\circ(\tilde{U}_A^{(k)\dagger}\otimes e_0))$ | Conditional probability, classical case |
+| $p(j\mid k) = \mathrm{Tr}((e_0\otimes \tilde\Pi_B^{(j)})\circ(\tilde{U}_A^{(k)}\otimes e_0)\circ \tilde{\rho}\circ(\tilde{U}_A^{(k){}^{*}}\otimes e_0))$ | Conditional probability, classical case |
 | $\tilde\Pi_A \otimes \tilde\Pi_B$ | Quantum: two idempotents, statistical correlation |
 | $\tilde{U}_A \otimes \tilde\Pi_B$ | Classical: one idempotent, one unitary |
 | $W_{ij} = \langle E_i^* E_j\rangle$ | Coherence matrix (derived element) |

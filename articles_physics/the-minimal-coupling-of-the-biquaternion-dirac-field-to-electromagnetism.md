@@ -16,25 +16,25 @@ $$
 
 The gauge principle article derived $D$ from the localization of the algebra's central phase and verified that $D\tilde{\Psi}$ transforms homogeneously. It applied the result to a general biquaternion field, not specifically to the Dirac field. *The Dirac Equation in Biquaternionic Form* names the minimal coupling of the Dirac field as the subject of the companion treatment (its open question 7); the precise biquaternion form is representation-dependent. This article supplies that statement, and reports what the recomputation gives.
 
-Three results are established here. The first is the coupled equation itself: replacing the gradient in the free biquaternion Dirac equation by the covariant derivative gives $D\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R$, whose components are $\sum_\mu e_\mu(\partial_\mu + \frac{iq}{\hbar}A_\mu)\tilde{\Psi}_R = m\tilde{\Psi}_L$ and its conjugate partner. The second is that this coupling is **exactly gauge covariant, in the massive case as well as the massless one** — $D\tilde{\Psi} = 0$ and the massive chiral pair each hold in every gauge when they hold in one — because the parent's mass term is the linear chiral pair and the central phase passes through it; the axial symmetry, not the phase symmetry, is what the mass breaks. The third is a negative result about the interaction current: the naive gauge-invariant bilinear $i\tilde{\Psi}\tilde{\Psi}^\dagger$ is a material-sector object but is **not conserved** on solutions of the massless equation, so the electromagnetic current of the coupled system is not a pure biquaternion product of this kind.
+Three results are established here. The first is the coupled equation itself: replacing the gradient in the free biquaternion Dirac equation by the covariant derivative gives $D\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R$, whose components are $\sum_\mu e_\mu(\partial_\mu + \frac{iq}{\hbar}A_\mu)\tilde{\Psi}_R = m\tilde{\Psi}_L$ and its conjugate partner. The second is that this coupling is **exactly gauge covariant, in the massive case as well as the massless one** — $D\tilde{\Psi} = 0$ and the massive chiral pair each hold in every gauge when they hold in one — because the parent's mass term is the linear chiral pair and the central phase passes through it; the axial symmetry, not the phase symmetry, is what the mass breaks. The third is a negative result about the interaction current: the naive gauge-invariant bilinear $i\tilde{\Psi}\tilde{\Psi}^{*}$ is a material-sector object but is **not conserved** on solutions of the massless equation, so the electromagnetic current of the coupled system is not a pure biquaternion product of this kind.
 
 The division between what is established and what is interpretation is stated at the outset and kept explicit.
 
-- **Established, and recomputed below.** The minimal-coupling prescription $D = \tilde{\nabla} + \frac{iq}{\hbar}\tilde{A}$ acting on the biquaternion Dirac field by left multiplication; the coupled equation and its component form; the exact gauge covariance of the coupled equation, in the massive case as well as the massless one; the gauge invariance and material-sector membership of $i\tilde{\Psi}\tilde{\Psi}^\dagger$; and the non-conservation of that bilinear.
+- **Established, and recomputed below.** The minimal-coupling prescription $D = \tilde{\nabla} + \frac{iq}{\hbar}\tilde{A}$ acting on the biquaternion Dirac field by left multiplication; the coupled equation and its component form; the exact gauge covariance of the coupled equation, in the massive case as well as the massless one; the gauge invariance and material-sector membership of $i\tilde{\Psi}\tilde{\Psi}^{*}$; and the non-conservation of that bilinear.
 
 - **Interpretation.** Reading the coupled equation as "the Dirac field in a background electromagnetic connection" is a geometric reading of an algebraic construction. The algebra supplies the transformation law and the covariance; the connection/curvature picture is a consistent reading, as in the gauge principle article.
 - **Gaps, left visible.** The biquaternion form of the conserved interaction current is not the naive bilinear, and is not settled here. Whether the left or the right action on the algebra is the physical matter representation is a choice the parent left open. The axial symmetry broken by the mass — and whether it can be gauged — is not treated here. These are stated as gaps in the sections where they arise and collected in the open questions.
 
 The article is organized as follows. The next section recalls the Dirac field and the phase symmetry that is to be localized. The section after that states the minimal-coupling prescription. The following section proves the covariance in the massless case and fixes the sign conventions. The next section treats the massive case, where the linear mass term preserves the covariance and the axial symmetry is what the mass breaks. A section examines the interaction current and the Maxwell source, and reports the negative result. A section relates the construction to the standard spinor-module minimal coupling. A section separates what the algebra supplies from what it only transcribes. The article closes with open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, which is the center of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$. The potential and field strength are $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$ and $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$, the source is $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$, and the Maxwell equation is $\tilde{\nabla}\tilde{F} = -\tilde{R}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The Dirac field is $\tilde{\Psi}\in\mathbb{B}$ with $\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger$ and $\tilde{\Psi}^\dagger = \bar{\tilde{\Psi}}^{\,*}$. The mass term is the linear chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$; the conjugation $\tilde{\Psi}^\flat$ is the algebra's real structure and is **not** the mass. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, which is the center of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The potential and field strength are $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$ and $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$, the source is $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$, and the Maxwell equation is $\tilde{\nabla}\tilde{F} = -\tilde{R}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The Dirac field is $\tilde{\Psi}\in\mathbb{B}$ with $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ and $\tilde{\Psi}^{*} = \tilde{\Psi}^{*}$. The mass term is the linear chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$; the conjugation $\tilde{\Psi}^\flat$ is the algebra's real structure and is **not** the mass. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
 
 ## The Dirac Field and Its Phase Symmetry
 
 The **biquaternion Dirac field** is a biquaternion-valued field $\tilde{\Psi}(\tilde{Q}) \in \mathbb{B}$ satisfying the free equation
 
 $$
-\tilde{\nabla}\tilde{\Psi}_R = m\,\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\,\tilde{\Psi}_R, \qquad \tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger = -\bar{\tilde{\Psi}}^{\,*},
+\tilde{\nabla}\tilde{\Psi}_R = m\,\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\,\tilde{\Psi}_R, \qquad \tilde{\Psi}^\flat = -\tilde{\Psi}^{*} = -\tilde{\Psi}^{*},
 
 $$
 
@@ -92,7 +92,7 @@ $$
 that is,
 
 $$
-\tilde{\nabla}\tilde{\Psi}_R + \frac{iq}{\hbar}\,\tilde{A}\,\tilde{\Psi}_R = m\,\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L + \frac{iq}{\hbar}\,\bar{\tilde{A}}\,\tilde{\Psi}_L = m\,\tilde{\Psi}_R,
+\tilde{\nabla}\tilde{\Psi}_R + \frac{iq}{\hbar}\,\tilde{A}\,\tilde{\Psi}_R = m\,\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L + \frac{iq}{\hbar}\,\tilde{A}^{\natural}\,\tilde{\Psi}_L = m\,\tilde{\Psi}_R,
 $$
 
 and in the massless case
@@ -205,37 +205,37 @@ This is the biquaternion form of the standard fact that a mass term linear in th
 
 ## The Interaction Current and the Maxwell Source
 
-Minimal coupling has a second half: the coupled field must **source** the electromagnetic field. In the biquaternion framework the sourced Maxwell equation is $\tilde{\nabla}\tilde{F} = -\tilde{R}$, and the source $\tilde{R}$ satisfies the integrability condition $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{R}) = 0$, the biquaternionic form of charge conservation.
+Minimal coupling has a second half: the coupled field must **source** the electromagnetic field. In the biquaternion framework the sourced Maxwell equation is $\tilde{\nabla}\tilde{F} = -\tilde{R}$, and the source $\tilde{R}$ satisfies the integrability condition $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{R}) = 0$, the biquaternionic form of charge conservation.
 
 The natural candidate for the current of the Dirac field is the bilinear
 
 $$
-\tilde{J} = i\,\tilde{\Psi}\,\tilde{\Psi}^\dagger .
+\tilde{J} = i\,\tilde{\Psi}\,\tilde{\Psi}^{*} .
 $$
 
 Two of its properties are immediate and exact. It is **gauge invariant**, because for a unimodular central phase
 
 $$
-\left(\lambda\tilde{\Psi}\right)\left(\lambda\tilde{\Psi}\right)^\dagger = \lambda\,\tilde{\Psi}\tilde{\Psi}^\dagger\,\lambda^{*} = |\lambda|^2\,\tilde{\Psi}\tilde{\Psi}^\dagger = \tilde{\Psi}\tilde{\Psi}^\dagger ,
+\left(\lambda\tilde{\Psi}\right)\left(\lambda\tilde{\Psi}\right)^\dagger = \lambda\,\tilde{\Psi}\tilde{\Psi}^{*}\,\lambda^{*} = |\lambda|^2\,\tilde{\Psi}\tilde{\Psi}^{*} = \tilde{\Psi}\tilde{\Psi}^{*} ,
 $$
 
-and it is **anti-Hermitian**, $\tilde{J}^\dagger = -\tilde{J}$, hence an element of the material sector $\mathbb{M}_-$ — the same sector as the source $\tilde{R}' = ic\rho + \mathbf{J}$ of the Maxwell article. Its scalar part is $i\,\mathrm{Sc}(\tilde{\Psi}\tilde{\Psi}^\dagger) = i\,\|\tilde{\Psi}\|_E^2$, a positive imaginary number, matching the $ic\rho$ form of a positive density. It is, by these tests, a plausible current.
+and it is **anti-Hermitian**, $\tilde{J}^{*} = -\tilde{J}$, hence an element of the material sector $\mathbb{M}_-$ — the same sector as the source $\tilde{R}' = ic\rho + \mathbf{J}$ of the Maxwell article. Its scalar part is $i\,\mathrm{Sc}(\tilde{\Psi}\tilde{\Psi}^{*}) = i\,\|\tilde{\Psi}\|_E^2$, a positive imaginary number, matching the $ic\rho$ form of a positive density. It is, by these tests, a plausible current.
 
-**It is not conserved.** The divergence of $\tilde{J}$ in the $ict$ convention is the scalar part of $\bar{\tilde{\nabla}}\tilde{J}$,
+**It is not conserved.** The divergence of $\tilde{J}$ in the $ict$ convention is the scalar part of $\tilde{\nabla}^{\natural}\tilde{J}$,
 
 $$
-\mathrm{Sc}\!\left(\bar{\tilde{\nabla}}\tilde{J}\right) = \partial_{ict}J_0 + \mathrm{div}\,\mathbf{J},
+\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = \partial_{ict}J_0 + \mathrm{div}\,\mathbf{J},
 $$
 
 the quantity that would have to vanish on solutions. It does not. To check this without relying on the case that suggested the candidate, take a field generated from a wave-equation potential: if $\phi$ is a biquaternion whose every component satisfies the scalar wave equation $\Box\phi = 0$, then
 
 $$
-\tilde{\Psi} = \bar{\tilde{\nabla}}\phi
+\tilde{\Psi} = \tilde{\nabla}^{\natural}\phi
 $$
 
-satisfies $\tilde{\nabla}\tilde{\Psi} = \tilde{\nabla}\bar{\tilde{\nabla}}\phi = \Box\phi = 0$, so it is a genuine solution of the massless equation. On such a solution, with $\phi$ built from superposed plane waves so that no accidental cancellation is available, the divergence $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{J})$ is not zero; the computation gives values of order $10^2$ at generic points, for either sign of the bilinear. The naive biquaternion product is therefore **not** the conserved electromagnetic current of the Dirac field.
+satisfies $\tilde{\nabla}\tilde{\Psi} = \tilde{\nabla}\tilde{\nabla}^{\natural}\phi = \Box\phi = 0$, so it is a genuine solution of the massless equation. On such a solution, with $\phi$ built from superposed plane waves so that no accidental cancellation is available, the divergence $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})$ is not zero; the computation gives values of order $10^2$ at generic points, for either sign of the bilinear. The naive biquaternion product is therefore **not** the conserved electromagnetic current of the Dirac field.
 
-**Why, and what the current is instead.** The reason is representation-theoretic. The conserved current of the Dirac field is the spinor-module bilinear $j^\mu = \bar{\psi}\gamma^\mu\psi$ with the **Dirac adjoint** $\bar{\psi} = \psi^\dagger\gamma^0$. The factor $\gamma^0$ is a Clifford-**odd** element; it is not in the even subalgebra $\mathbb{C}\ell_{1,3}^+ \cong \mathbb{B}$, and it is exactly the extra ingredient that the biquaternion formulation needs to recover the four-component Dirac spinor from its pair of Weyl spinors. A bilinear formed only from $\tilde{\Psi}$ and $\tilde{\Psi}^\dagger$ inside $\mathbb{B}$ cannot supply it. The physical current therefore lies partly **outside** the algebra, and the pure-biquaternion form of the interaction current is not given by the naive product. That the electron's current is nevertheless an $\mathbb{M}_-$ four-vector — $\tilde{J} = ic\,j^0e_0 + \mathbf{j}$ with $j^0 = \psi^\dagger\psi$ — is a statement about the spinor-module transcription, not about a product in $\mathbb{B}$.
+**Why, and what the current is instead.** The reason is representation-theoretic. The conserved current of the Dirac field is the spinor-module bilinear $j^\mu = \bar{\psi}\gamma^\mu\psi$ with the **Dirac adjoint** $\bar{\psi} = \psi^\dagger\gamma^0$. The factor $\gamma^0$ is a Clifford-**odd** element; it is not in the even subalgebra $\mathbb{C}\ell_{1,3}^+ \cong \mathbb{B}$, and it is exactly the extra ingredient that the biquaternion formulation needs to recover the four-component Dirac spinor from its pair of Weyl spinors. A bilinear formed only from $\tilde{\Psi}$ and $\tilde{\Psi}^{*}$ inside $\mathbb{B}$ cannot supply it. The physical current therefore lies partly **outside** the algebra, and the pure-biquaternion form of the interaction current is not given by the naive product. That the electron's current is nevertheless an $\mathbb{M}_-$ four-vector — $\tilde{J} = ic\,j^0e_0 + \mathbf{j}$ with $j^0 = \psi^\dagger\psi$ — is a statement about the spinor-module transcription, not about a product in $\mathbb{B}$.
 
 This is the same representation question as the left/right action of the previous sections, met from the current side. The parent Dirac article's open question flags the representation conventions; this article records that they are not idle. The biquaternion form of the conserved current, and the sense in which the sourced Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$ is fed by the Dirac field, remain open.
 
@@ -278,9 +278,9 @@ It is worth separating the two, because they are easily conflated.
 
 2. **The matter representation.** The gauge principle produces a left-action covariant derivative; a right-action mirror is equally covariant, and the mixed insertion is not. Which action — which spinor module — is the physical Dirac field in? What fixes it inside the algebra?
 
-3. **The interaction current.** The naive gauge-invariant bilinear $i\tilde{\Psi}\tilde{\Psi}^\dagger$ is in $\mathbb{M}_-$ but is not conserved. The physical current uses the Clifford-odd $\gamma^0$, outside $\mathbb{B}$. Is there a biquaternion-natural current, perhaps on a restricted module, or is the current irreducibly a representation-level object?
+3. **The interaction current.** The naive gauge-invariant bilinear $i\tilde{\Psi}\tilde{\Psi}^{*}$ is in $\mathbb{M}_-$ but is not conserved. The physical current uses the Clifford-odd $\gamma^0$, outside $\mathbb{B}$. Is there a biquaternion-natural current, perhaps on a restricted module, or is the current irreducibly a representation-level object?
 
-4. **The sourced system.** How does the Dirac current feed the biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$, and does the coupled system close on the algebra or require the spinor module? The integrability condition $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{R}) = 0$ must be recovered from the current.
+4. **The sourced system.** How does the Dirac current feed the biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$, and does the coupled system close on the algebra or require the spinor module? The integrability condition $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{R}) = 0$ must be recovered from the current.
 
 5. **The shared generator.** The internal phase $e^{iq\Gamma/\hbar}$ and the complex time coordinate $ict$ both use the single element $i$ of $\mathbb{B}$. Is this identification content-bearing, or vacuous because the phase is central? (The gauge principle article's open question.)
 
@@ -306,7 +306,7 @@ with the interaction term $\frac{iq}{\hbar}\tilde{A}\tilde{\Psi}$ that the local
 
 The **massless** and the **massive** coupled equations are both exactly gauge covariant: with $\tilde{\Psi}' = e^{iq\Gamma/\hbar}\tilde{\Psi}$ and $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$, one has $D'\tilde{\Psi}' = \lambda D\tilde{\Psi}$, and the parent's linear mass term acquires the same factor $\lambda$, so $D\tilde{\Psi}_R = m\tilde{\Psi}_L$ holds in every gauge when it holds in one. The continuous $U(1)$ of the massless theory survives the mass. The biquaternion form of the statement that a Majorana-type mass term — built on the antilinear real structure $\flat$ — is incompatible with a gauged continuous $U(1)$ is given in the companion articles on the neutrino and on chirality; the standard linear Dirac mass, which is the parent's form, does not have that obstruction, and on the spinor module the standard minimal coupling is recovered.
 
-The interaction current is not a pure biquaternion product. The gauge-invariant, material-sector bilinear $i\tilde{\Psi}\tilde{\Psi}^\dagger$ is not conserved on solutions of the massless equation; the physical current is the spinor-module $j^\mu = \bar{\psi}\gamma^\mu\psi$, whose Dirac adjoint uses the Clifford-odd $\gamma^0$ outside $\mathbb{B}$. The pure-biquaternion form of the current, and the closure of the sourced system, are left as open questions, together with the choice of the left or right matter representation and the axial symmetry of the massive sector.
+The interaction current is not a pure biquaternion product. The gauge-invariant, material-sector bilinear $i\tilde{\Psi}\tilde{\Psi}^{*}$ is not conserved on solutions of the massless equation; the physical current is the spinor-module $j^\mu = \bar{\psi}\gamma^\mu\psi$, whose Dirac adjoint uses the Clifford-odd $\gamma^0$ outside $\mathbb{B}$. The pure-biquaternion form of the current, and the closure of the sourced system, are left as open questions, together with the choice of the left or right matter representation and the axial symmetry of the massive sector.
 
 ## Summary of Notation
 
@@ -318,11 +318,11 @@ The interaction current is not a pure biquaternion product. The gauge-invariant,
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ | Center of the algebra; source of the abelian gauge group |
 | $\tilde{\nabla} = e_0\partial_{ict} + e_k\partial_k$ | Biquaternionic gradient (Dirac operator) |
-| $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_k\partial_k$ | Quaternion-conjugate gradient |
-| $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$ | d'Alembertian |
+| $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_k\partial_k$ | Quaternion-conjugate gradient |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian |
 | $\tilde{\Psi}$ | Biquaternion Dirac field |
-| $\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger$, $\tilde{\Psi}^\dagger = \bar{\tilde{\Psi}}^{\,*}$ | Anti-Hermitian conjugate of the field (the algebra's real structure; **not** the mass) |
-| $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Free biquaternion Dirac equation (massive chiral pair) |
+| $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$, $\tilde{\Psi}^{*} = \tilde{\Psi}^{*}$ | Anti-Hermitian conjugate of the field (the algebra's real structure; **not** the mass) |
+| $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Free biquaternion Dirac equation (massive chiral pair) |
 | $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$ | Connection = potential biquaternion (in $\mathbb{M}_-$) |
 | $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ | Gauge transformation of the connection |
 | $\lambda = e^{iq\Gamma/\hbar}$ | Local central phase; $\Gamma$ real scalar |
@@ -332,7 +332,7 @@ The interaction current is not a pure biquaternion product. The gauge-invariant,
 | $D\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Minimally coupled Dirac equation |
 | $\frac{iq}{\hbar}\tilde{A}\tilde{\Psi}$ | Interaction term |
 | $e^{2iq\Gamma/\hbar}$ | Phase that an antilinear (Majorana-type) mass term would acquire under a local phase; the linear mass term acquires $\lambda$ instead |
-| $\tilde{J} = i\tilde{\Psi}\tilde{\Psi}^\dagger$ | Naive bilinear; gauge invariant, in $\mathbb{M}_-$, **not conserved** |
+| $\tilde{J} = i\tilde{\Psi}\tilde{\Psi}^{*}$ | Naive bilinear; gauge invariant, in $\mathbb{M}_-$, **not conserved** |
 | $j^\mu = \bar{\psi}\gamma^\mu\psi$, $\bar{\psi} = \psi^\dagger\gamma^0$ | Spinor-module conserved current (involves the Clifford-odd $\gamma^0$) |
 | $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$ | Maxwell source biquaternion |
 | $\tilde{\nabla}\tilde{F} = -\tilde{R}$ | Biquaternionic Maxwell equation |

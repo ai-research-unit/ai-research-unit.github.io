@@ -9,7 +9,7 @@ The single fact on which everything rests is the absence of zero divisors: since
 
 The corpus's default base is a commutative ring with identity, and the algebra is defined there by its presentation. The results below are stated over $\mathbb{R}$, where the algebra is a division algebra; the reduction of the equation and the classification of the roots hold over any field of characteristic not $2$ in which the algebra is a division algebra, and the identification of the root sets with level sets of the central product is the statement over $\mathbb{R}$.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$, a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with scalar part $q_0$ and vector part $\mathbf{q}\in\operatorname{Im}\mathbb{H}$, the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, and the quaternion norm $N$, the unit group $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere $Sp(1) = S^3$ are those of *Quaternion Norm and Invertibility*, named here and not defined again.
+Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$, a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with scalar part $q_0$ and vector part $\mathbf{q}\in\operatorname{Im}\mathbb{H}$, the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, and the quaternion norm $N$, the unit group $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere $Sp(1) = S^3$ are those of *Quaternion Norm and Invertibility*, named here and not defined again.
 
 ## The Problem and Its Reduction
 
@@ -148,7 +148,7 @@ The companion equation $\eta^2 = 1$ has only the two solutions $\pm1$, because t
 | $\mathbb{H}$ | The quaternion algebra |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | General quaternion, scalar part $q_0$, vector part $\mathbf{q}$ |
-| $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
+| $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
 | $N$ | Quaternion norm, from *Quaternion Norm and Invertibility* |
 | $\operatorname{Im}\mathbb{H}$ | Pure imaginary quaternions, $\cong\mathbb{R}^3$ |
 | $\Sigma = \{\xi : \xi^2 = -1\} = \operatorname{Im}\mathbb{H}\cap Sp(1)$ | Root set, the level set $\{N = 1\}$ in $\operatorname{Im}\mathbb{H}$ |

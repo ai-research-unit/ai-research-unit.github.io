@@ -4,19 +4,19 @@
 
 This is an exercise in the electromagnetism series. It applies the conventions of *Electromagnetism in Media — The Local Complex Structure at Work*, the article that fixes the medium objects and whose plane-wave section declares that it "fixes the conventions for the later exercise on plane-wave propagation in a medium". The exercise uses the field-strength biquaternion, the source, the medium speed and impedance, and the medium gradient exactly as that article fixes them, with the algebra of the three universal articles and of *Maxwell's Equations in the Biquaternionic Formulation* inherited unchanged. Nothing is renamed and nothing is rederived from the algebra; what is rederived is what the parent asserts about a plane wave.
 
-**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and the product rule $e_j e_k = -\delta_{jk}e_0 + \epsilon_{jkm}e_m$; the scalar imaginary $i$ with $i^2 = -1$, commuting with every $e_k$; the anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar, real vector) and the Hermitian subspace $\mathbb{M}_+$ (real scalar, imaginary vector), with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the scalar subspace $\mathbb{C}_{\mathbb{B}}$; the quaternion conjugate $\bar{\cdot}$, the complex conjugate ${}^*$, and the Hermitian conjugate ${}^\dagger = \bar{\cdot}^{\,*}$; the biquaternionic gradient and its quaternion conjugate
+**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and the product rule $e_j e_k = -\delta_{jk}e_0 + \epsilon_{jkm}e_m$; the scalar imaginary $i$ with $i^2 = -1$, commuting with every $e_k$; the anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar, real vector) and the Hermitian subspace $\mathbb{M}_+$ (real scalar, imaginary vector), with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the scalar subspace $\mathbb{C}_{\mathbb{B}}$; the quaternion conjugate ${}^{\natural}$, the complex conjugate $\bar{\cdot}$, and the Hermitian conjugate ${}^{*} = ({}^{\natural})^{\,*}$; the biquaternionic gradient and its quaternion conjugate
 $$
 \tilde{\nabla} = e_0\,\partial_{ict} + e_1\,\partial_x + e_2\,\partial_y + e_3\,\partial_z,
 \qquad
-\bar{\tilde{\nabla}} = e_0\,\partial_{ict} - e_1\,\partial_x - e_2\,\partial_y - e_3\,\partial_z,
+\tilde{\nabla}^{\natural} = e_0\,\partial_{ict} - e_1\,\partial_x - e_2\,\partial_y - e_3\,\partial_z,
 $$
-with $\partial_{ict} = -\frac{i}{c}\partial_t$ and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \partial_{ict}^2 + \Delta$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ (a pure vector), the source $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$, the Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$, the potential $\tilde{A} = \frac{i\phi}{c}e_0 + \mathbf{A}$, and the medium speed and impedance
+with $\partial_{ict} = -\frac{i}{c}\partial_t$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial_{ict}^2 + \Delta$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ (a pure vector), the source $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$, the Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$, the potential $\tilde{A} = \frac{i\phi}{c}e_0 + \mathbf{A}$, and the medium speed and impedance
 $$
 c = \frac{1}{\sqrt{\epsilon\mu}}, \qquad Z = \sqrt{\frac{\mu}{\epsilon}}, \qquad c_0 = \frac{1}{\sqrt{\epsilon_0\mu_0}}, \qquad n(\omega) = \frac{c_0}{c(\omega)};
 $$
 the constitutive relations $\mathbf{D} = \epsilon\mathbf{E}$ and $\mathbf{B} = \mu\mathbf{H}$, so that $\mathbf{H} = \mathbf{B}/\mu$; the Riemann–Silberstein combination $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{V}$ with $\mathbf{V} = \mathbf{E} + ic\mathbf{B}$; the energy density $W = \frac{1}{2}(\epsilon\,\mathbf{E}^2 + \mu\,\mathbf{H}^2)$, the Poynting vector $\mathbf{S} = \mathbf{E}\times\mathbf{H}$, and the halved Hermitian form
 $$
-\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^\dagger = W\,e_0 + \frac{i}{c}\,\mathbf{S};
+\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W\,e_0 + \frac{i}{c}\,\mathbf{S};
 $$
 and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\mathbf{v}$ is reserved for particle and frame velocities. All of this is the notation contract of the parent articles and is not modified.
 
@@ -148,7 +148,7 @@ $$
 \qquad
 \mathbf{V}_0 = \mathbf{E}_0 + i\,\hat{\mathbf{k}}\times\mathbf{E}_0 ,
 $$
-which is the parent's form of the amplitude. For a pure-vector biquaternion the biquaternion norm is the complex bilinear form $N(\tilde{F}_0) = \tilde{F}_0\bar{\tilde{F}}_0 = \sum_k F_{0k}^2$, and $N(i\sqrt{\epsilon}\mathbf{V}_0) = (i\sqrt{\epsilon})^2\mathbf{V}_0\cdot\mathbf{V}_0 = -\epsilon\,\mathbf{V}_0\cdot\mathbf{V}_0$. Expand the complex dot product:
+which is the parent's form of the amplitude. For a pure-vector biquaternion the biquaternion norm is the complex bilinear form $N(\tilde{F}_0) = \tilde{F}_0\tilde{F}^{\natural}_0 = \sum_k F_{0k}^2$, and $N(i\sqrt{\epsilon}\mathbf{V}_0) = (i\sqrt{\epsilon})^2\mathbf{V}_0\cdot\mathbf{V}_0 = -\epsilon\,\mathbf{V}_0\cdot\mathbf{V}_0$. Expand the complex dot product:
 $$
 \mathbf{V}_0\cdot\mathbf{V}_0 = \mathbf{E}_0^2 - (\hat{\mathbf{k}}\times\mathbf{E}_0)^2 + 2i\,\mathbf{E}_0\cdot(\hat{\mathbf{k}}\times\mathbf{E}_0).
 $$
@@ -188,7 +188,7 @@ using $c^2\mu^2/Z^2 = c^2\epsilon\mu = 1$. This is not identically zero: at $kz 
 
 ## Problem 3: Energy, Flux, and the Energy–Momentum Biquaternion
 
-**Statement.** (a) For the running wave, compute the instantaneous energy density $W$ and Poynting vector $\mathbf{S}$ and show $\mathbf{S} = cW\hat{\mathbf{k}}$. (b) Compute the time averages $\langle W\rangle$ and $\langle\mathbf{S}\rangle$ and verify $|\langle\mathbf{S}\rangle| = c\langle W\rangle$. (c) Compute the energy–momentum biquaternion $\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^\dagger$ for the wave, and show that it is conserved, $\tilde{\nabla}\tilde{W} = 0$, and that it is itself null.
+**Statement.** (a) For the running wave, compute the instantaneous energy density $W$ and Poynting vector $\mathbf{S}$ and show $\mathbf{S} = cW\hat{\mathbf{k}}$. (b) Compute the time averages $\langle W\rangle$ and $\langle\mathbf{S}\rangle$ and verify $|\langle\mathbf{S}\rangle| = c\langle W\rangle$. (c) Compute the energy–momentum biquaternion $\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*}$ for the wave, and show that it is conserved, $\tilde{\nabla}\tilde{W} = 0$, and that it is itself null.
 
 **Solution (a).** In terms of the real instantaneous fields,
 $$
@@ -230,9 +230,9 @@ $$
 $$
 because $\frac{\mu}{Z^2} = \epsilon$. Therefore $c\langle W\rangle = \frac{c\epsilon|\mathbf{E}_0|^2}{2} = \frac{|\mathbf{E}_0|^2}{2Z} = |\langle\mathbf{S}\rangle|$, since $c\epsilon = 1/Z$. This verifies the parent's relation $|\langle\mathbf{S}\rangle| = c\langle W\rangle$.
 
-**Solution (c).** The energy–momentum biquaternion is the halved Hermitian form. Substituting $\mathbf{S} = cW\hat{\mathbf{k}}$ into the general identity $\tilde{F}\tilde{F}^\dagger = 2We_0 + \frac{2i}{c}\mathbf{S}$ gives
+**Solution (c).** The energy–momentum biquaternion is the halved Hermitian form. Substituting $\mathbf{S} = cW\hat{\mathbf{k}}$ into the general identity $\tilde{F}\tilde{F}^{*} = 2We_0 + \frac{2i}{c}\mathbf{S}$ gives
 $$
-\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^\dagger = W\left(e_0 + i\hat{\mathbf{k}}\right).
+\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W\left(e_0 + i\hat{\mathbf{k}}\right).
 $$
 This is an element of $\mathbb{M}_+$, as every Hermitian form is: its scalar part $W$ is real and its vector part $iW\hat{\mathbf{k}}$ is purely imaginary. To compute $\tilde{\nabla}\tilde{W}$, write $\phi = \mathbf{k}\cdot\mathbf{x} - \omega t$ and $W = W(\phi)$, the general form, which reduces to $W = W_0\cos^2\phi$ for an in-phase, linearly polarised wave. For a scalar, the gradient acts as $\tilde{\nabla}W = W_\phi\,\tilde{K}$, with $W_\phi = \partial_\phi W$ and $\tilde{K} = \frac{i\omega}{c}e_0 + \mathbf{k}$ the four-wavevector: in the in-phase case, expanding $W = \frac{W_0}{2}(1 + \cos 2\phi)$, the exponentials $e^{\pm 2i\phi}$ are eigenfunctions with eigenvalues $\pm 2i\tilde{K}$, and their combination reproduces $W_\phi\tilde{K}$. Since $e_0 + i\hat{\mathbf{k}}$ is constant,
 $$
@@ -373,7 +373,7 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace, scalar subspace |
-| $\tilde{\nabla}, \bar{\tilde{\nabla}}, \Box = \tilde{\nabla}\bar{\tilde{\nabla}}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
+| $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
 | $\partial_{ict} = -\frac{i}{c}\partial_t$ | Temporal component of the gradient (medium) |
 | $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ | Field-strength biquaternion (pure vector) |
 | $\tilde{F}_0$ | Plane-wave amplitude of the field strength |
@@ -391,11 +391,11 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 | $\Phi, \Psi$ | Scalar and vector potentials, $c^{-1}\mathcal{A} = \mathrm{grad}\,\Phi + i\,\mathrm{rot}\,\Psi$ |
 | $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$ | Source biquaternion |
 | $\mathbf{V} = \mathbf{E} + ic\mathbf{B}$, $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{V}$ | Riemann–Silberstein vector and the field strength |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm (complex scalar) |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm (complex scalar) |
 | $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$, $I_2 = \mathbf{E}\cdot\mathbf{B}$ | Field invariants (see gap 4 on the medium setting) |
 | $W = \frac{1}{2}(\epsilon\mathbf{E}^2 + \mu\mathbf{H}^2)$ | Electromagnetic energy density |
 | $\mathbf{S} = \mathbf{E}\times\mathbf{H}$ | Poynting vector |
-| $\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^\dagger = W + \frac{i}{c}\mathbf{S}$ | Energy–momentum biquaternion, in $\mathbb{M}_+$ |
+| $\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W + \frac{i}{c}\mathbf{S}$ | Energy–momentum biquaternion, in $\mathbb{M}_+$ |
 | $v_p = \omega/k = c(\omega)$, $v_g = c_0/(n + \omega\,dn/d\omega)$ | Phase and group velocities |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula |
 

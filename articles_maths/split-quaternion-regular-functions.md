@@ -18,7 +18,7 @@ $$
 \bar{\nabla} = e_0 \partial_{q_0} - e_1 \partial_{q_1} - e_2 \partial_{q_2} - e_3 \partial_{q_3} .
 $$
 
-The pair $(\nabla, \bar{\nabla})$ plays the role of $(\partial_{\bar z}, \partial_z)$ in one complex variable. The units satisfy the Clifford relations $e_\mu \bar{e}_\nu + e_\nu \bar{e}_\mu = 2g_{\mu\nu} e_0$ with $g = \operatorname{diag}(1,1,-1,-1)$, so the cross terms cancel and
+The pair $(\nabla, \bar{\nabla})$ plays the role of $(\partial_{\bar z}, \partial_z)$ in one complex variable. The units satisfy the Clifford relations $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 2g_{\mu\nu} e_0$ with $g = \operatorname{diag}(1,1,-1,-1)$, so the cross terms cancel and
 
 $$
 \nabla \bar{\nabla} = \bar{\nabla} \nabla = \Box := \bigl(\partial_{q_0}^2 + \partial_{q_1}^2 - \partial_{q_2}^2 - \partial_{q_3}^2\bigr) e_0 .
@@ -26,7 +26,7 @@ $$
 
 The second-order operator $\Box$ is the **ultrahyperbolic operator** of signature $(2,2)$: a wave operator, not a Laplacian. This single sign difference from the quaternion and biquaternion cases governs the whole of the regularity theory below.
 
-**Proof.** Expand $\nabla\bar{\nabla} = \sum_{\mu,\nu} e_\mu \bar{e}_\nu \partial_\mu\partial_\nu$. The diagonal coefficients are $e_0\bar{e}_0 = e_0$, $e_1\bar{e}_1 = -e_1^2 = e_0$, $e_2\bar{e}_2 = -e_2^2 = -e_0$, $e_3\bar{e}_3 = -e_3^2 = -e_0$, giving the displayed signs; the off-diagonal coefficients come in symmetric pairs $e_\mu\bar{e}_\nu + e_\nu\bar{e}_\mu$, which vanish by the Clifford relations. The same computation with the factors reversed gives $\bar{\nabla}\nabla = \Box$.
+**Proof.** Expand $\nabla\bar{\nabla} = \sum_{\mu,\nu} e_\mu e_\nu^{\natural} \partial_\mu\partial_\nu$. The diagonal coefficients are $e_0e_0^{\natural} = e_0$, $e_1e_1^{\natural} = -e_1^2 = e_0$, $e_2e_2^{\natural} = -e_2^2 = -e_0$, $e_3e_3^{\natural} = -e_3^2 = -e_0$, giving the displayed signs; the off-diagonal coefficients come in symmetric pairs $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural}$, which vanish by the Clifford relations. The same computation with the factors reversed gives $\bar{\nabla}\nabla = \Box$.
 
 ## Regularity and the System of Equations
 
@@ -53,12 +53,12 @@ hold. This is the **split-quaternion Cauchy–Riemann system**, four scalar equa
 **Theorem.** The principal symbol of $\nabla$ is $s(\xi) = \xi_0 + \xi_1 e_1 + \xi_2 e_2 + \xi_3 e_3$, and
 
 $$
-s(\xi)\,\bar{s}(\xi) = \xi_0^2 + \xi_1^2 - \xi_2^2 - \xi_3^2 = N(\xi) e_0,
+s(\xi)\,s^{\natural}(\xi) = \xi_0^2 + \xi_1^2 - \xi_2^2 - \xi_3^2 = N(\xi) e_0,
 $$
 
 which vanishes on the null cone $\mathcal{N}$ and only there. Hence the Cauchy–Riemann system is **not elliptic**: it is of ultrahyperbolic (wave) type, and its characteristic variety is exactly the null cone $\mathcal{N}$, the same set that carries the zero divisors.
 
-**Proof.** The identity $s(\xi)\bar s(\xi) = N(\xi)e_0$ is the Fourier symbol of $\nabla\bar\nabla = \Box$. The symbol vanishes precisely when the quadratic form $N(\xi)$ vanishes, i.e. on the null cone. A first-order system is elliptic exactly when its symbol is invertible off the zero section, which fails here on a three-dimensional cone.
+**Proof.** The identity $s(\xi)s^{\natural}(\xi) = N(\xi)e_0$ is the Fourier symbol of $\nabla\bar\nabla = \Box$. The symbol vanishes precisely when the quadratic form $N(\xi)$ vanishes, i.e. on the null cone. A first-order system is elliptic exactly when its symbol is invertible off the zero section, which fails here on a three-dimensional cone.
 
 **Corollary.** The elliptic tools of the complex theory are unavailable. There is no maximum principle, no mean value property, and no Liouville theorem for regular functions of the full algebra: the equation $\Box F = 0$ admits the plane-wave solutions $F(\tilde q) = f(\tilde q\cdot \xi)$ for every null vector $\xi$, which are bounded and nonconstant on strips and grow without bound in other directions but obey no elliptic constraint.
 
@@ -75,7 +75,7 @@ which vanishes on the null cone $\mathcal{N}$ and only there. Hence the Cauchy�
 **The Cauchy kernel and its singularity.** The candidate fundamental solution is
 
 $$
-G(\tilde q) = \frac{\bar{\tilde q}}{N(\tilde q)^2},
+G(\tilde q) = \frac{\tilde{q}^{\natural}}{N(\tilde q)^2},
 $$
 
 which satisfies $\nabla G = 0$ away from the null set. But because $\mathbb{H}_{\mathrm{s}}$ has zero divisors, $N(\tilde q) = 0$ on the whole cone $\mathcal{N}$, so $G$ is singular on a **three-dimensional cone**, not merely at the origin. This is the first and deepest failure of the complex analogy.
@@ -98,7 +98,7 @@ Right-regular functions are likewise harmonic, and the factorization $\Box = \na
 
 The complex analogy fails precisely where the zero divisors intervene, and this is the content of the present article.
 
-**Theorem.** On a domain meeting the null cone, no regular function that is a genuine inverse of the coordinate behaves as the complex $1/z$ does. The Cauchy kernel $G(\tilde q) = \bar{\tilde q}/N(\tilde q)^2$ is singular on all of $\mathcal{N}$, and the singularity is a three-dimensional cone; there is no way to isolate a punctured neighbourhood by a sphere, because the null cone passes through every neighbourhood.
+**Theorem.** On a domain meeting the null cone, no regular function that is a genuine inverse of the coordinate behaves as the complex $1/z$ does. The Cauchy kernel $G(\tilde q) = \tilde{q}^{\natural}/N(\tilde q)^2$ is singular on all of $\mathcal{N}$, and the singularity is a three-dimensional cone; there is no way to isolate a punctured neighbourhood by a sphere, because the null cone passes through every neighbourhood.
 
 **Proof.** The singular set of $G$ is $\{N(\tilde q) = 0\}$, which is $\mathcal{N}$, of dimension $3$; a frame around a point of $\mathcal{N}$ is not a compact separating surface but is pierced by the cone.
 
@@ -108,13 +108,13 @@ The complex analogy fails precisely where the zero divisors intervene, and this 
 
 ## Relation to the Biquaternion Regular Functions and Clifford Analysis
 
-The biquaternion article *Biquaternion Regular Functions* develops regularity on $\mathbb{B}$ with the **elliptic** operator whose symbol satisfies $s(\xi)\bar s(\xi) = |\xi|^2 e_0$, giving the Clifford analysis of $\mathbb{R}^4$: a maximum principle, a mean value property, a Cauchy integral formula and a fundamental solution $G = \bar{Q}/\|Q\|_E^4$ singular only at the origin. On the biquaternion indefinite subspaces $\mathbb{M}_\pm$ the operator becomes a wave operator and the elliptic tools disappear there.
+The biquaternion article *Biquaternion Regular Functions* develops regularity on $\mathbb{B}$ with the **elliptic** operator whose symbol satisfies $s(\xi)s^{\natural}(\xi) = |\xi|^2 e_0$, giving the Clifford analysis of $\mathbb{R}^4$: a maximum principle, a mean value property, a Cauchy integral formula and a fundamental solution $G = \bar{Q}/\|Q\|_E^4$ singular only at the origin. On the biquaternion indefinite subspaces $\mathbb{M}_\pm$ the operator becomes a wave operator and the elliptic tools disappear there.
 
 The split-quaternion case is the **fully indefinite** one: the form is indefinite, so no subspace through the origin of dimension greater than two is definite and the elliptic theory lives only on definite planes; the symbol vanishes on the whole null cone, the second-order operator is ultrahyperbolic, and the Cauchy kernel is singular on a cone of dimension three. The definiteness that the biquaternion theory retains on its quaternion half is precisely what the split-quaternion algebra lacks. In the language of Clifford analysis, the pair $(\nabla, \bar{\nabla})$ here are the Cauchy–Riemann operators of $\mathrm{Cl}_{2,2}$, and the regularity theory is an indefinite-signature-$(2,2)$ Clifford analysis with a null characteristic variety. Nothing biquaternion-specific — the central imaginary unit $i$, the definite quaternion half, the Euclidean kernel — is imported; the two theories are placed side by side only for comparison.
 
 ## Summary
 
-The split-quaternion Cauchy–Riemann operator $\nabla = \sum_\mu e_\mu\partial_\mu$ and its conjugate $\bar{\nabla}$ satisfy $\nabla\bar{\nabla} = \bar{\nabla}\nabla = \Box$, the ultrahyperbolic operator $\partial_{q_0}^2+\partial_{q_1}^2-\partial_{q_2}^2-\partial_{q_3}^2$ of signature $(2,2)$. A function is regular when $\nabla F = 0$, equivalently when it satisfies the split-quaternion Cauchy–Riemann system of four scalar equations with the signs of the indefinite form. The system is **not elliptic**: its symbol $s(\xi)$ obeys $s(\xi)\bar s(\xi) = N(\xi)e_0$ and vanishes exactly on the null cone, which is the characteristic variety and the zero-divisor set. Every regular function is $\Box$-harmonic, but not conversely. The examples are the constants; the classical holomorphic functions of the elliptic variable $z = q_0+q_1 e_1$; the split-complex conjugates on the hyperbolic planes $\mathbb{D}_2, \mathbb{D}_3$; and the Cauchy kernel $\bar{\tilde q}/N(\tilde q)^2$, singular on the whole null cone. The complex analogy holds on the elliptic subalgebra and fails wherever the null cone intervenes: no maximum principle, no mean value property, no Liouville theorem, and no global Cauchy integral formula on the full algebra. The biquaternion theory, by contrast, retains an elliptic half, and the failure here is exactly the absence of an elliptic subspace of dimension greater than two: the form is indefinite, and the only definite subspaces are the planes.
+The split-quaternion Cauchy–Riemann operator $\nabla = \sum_\mu e_\mu\partial_\mu$ and its conjugate $\bar{\nabla}$ satisfy $\nabla\bar{\nabla} = \bar{\nabla}\nabla = \Box$, the ultrahyperbolic operator $\partial_{q_0}^2+\partial_{q_1}^2-\partial_{q_2}^2-\partial_{q_3}^2$ of signature $(2,2)$. A function is regular when $\nabla F = 0$, equivalently when it satisfies the split-quaternion Cauchy–Riemann system of four scalar equations with the signs of the indefinite form. The system is **not elliptic**: its symbol $s(\xi)$ obeys $s(\xi)s^{\natural}(\xi) = N(\xi)e_0$ and vanishes exactly on the null cone, which is the characteristic variety and the zero-divisor set. Every regular function is $\Box$-harmonic, but not conversely. The examples are the constants; the classical holomorphic functions of the elliptic variable $z = q_0+q_1 e_1$; the split-complex conjugates on the hyperbolic planes $\mathbb{D}_2, \mathbb{D}_3$; and the Cauchy kernel $\tilde{q}^{\natural}/N(\tilde q)^2$, singular on the whole null cone. The complex analogy holds on the elliptic subalgebra and fails wherever the null cone intervenes: no maximum principle, no mean value property, no Liouville theorem, and no global Cauchy integral formula on the full algebra. The biquaternion theory, by contrast, retains an elliptic half, and the failure here is exactly the absence of an elliptic subspace of dimension greater than two: the form is indefinite, and the only definite subspaces are the planes.
 
 ## Summary of Notation
 
@@ -128,7 +128,7 @@ The split-quaternion Cauchy–Riemann operator $\nabla = \sum_\mu e_\mu\partial_
 | $g = \operatorname{diag}(1,1,-1,-1)$ | the Clifford sign matrix | this article |
 | $\mathbb{C} = \mathbb{R}[e_1]$ | the elliptic subalgebra, $z = q_0+q_1 e_1$ | *Split-Quaternion Elementary Functions* |
 | $\mathbb{D}_2, \mathbb{D}_3$ | the split-complex planes, hyperbolic Cauchy–Riemann operators | *Split-Quaternion Split-Complex Subspaces* |
-| $G(\tilde q) = \bar{\tilde q}/N(\tilde q)^2$ | the Cauchy kernel, singular on $\mathcal{N}$ | this article |
+| $G(\tilde q) = \tilde{q}^{\natural}/N(\tilde q)^2$ | the Cauchy kernel, singular on $\mathcal{N}$ | this article |
 | $\mathcal{N} = \{N=0\}$ | the null cone / characteristic set | *Split-Quaternion Zero Divisors* |
 | $N(\tilde q) = q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
 

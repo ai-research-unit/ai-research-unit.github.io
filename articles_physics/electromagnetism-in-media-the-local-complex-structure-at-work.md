@@ -18,9 +18,9 @@ The remaining conventions are those of the read-list articles throughout. The bi
 $$
 \tilde{\nabla}=e_0\,\partial_{ict}+e_1\,\partial_x+e_2\,\partial_y+e_3\,\partial_z,
 \qquad
-\bar{\tilde{\nabla}}=e_0\,\partial_{ict}-e_1\,\partial_x-e_2\,\partial_y-e_3\,\partial_z,
+\tilde{\nabla}^{\natural}=e_0\,\partial_{ict}-e_1\,\partial_x-e_2\,\partial_y-e_3\,\partial_z,
 $$
-and the d'Alembertian is $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}$. Throughout, $c$ denotes the speed of light **in the medium** and $c_0$ the vacuum speed; the divergence and curl are written $\mathrm{div}$ and $\mathrm{rot}$.
+and the d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$. Throughout, $c$ denotes the speed of light **in the medium** and $c_0$ the vacuum speed; the divergence and curl are written $\mathrm{div}$ and $\mathrm{rot}$.
 
 ## Constitutive Relations and the Two Parameters of a Medium
 
@@ -70,7 +70,7 @@ $$
 $$
 and its quaternion conjugate negates the vector part. Multiplying them, the cross terms cancel and
 $$
-\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\bar{\tilde{\nabla}}\tilde{\nabla}
+\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}
 =\partial_{ict}^2+\Delta
 =\Delta-\frac{1}{c^2}\,\partial_t^2,
 $$
@@ -80,7 +80,7 @@ The medium enters this operator in exactly one way: through $c$ in $\partial_{ic
 
 Because $c>0$ is real, the medium rescales the imaginary axis but does not rotate it. The phase of the complex structure is the fixed $i$; its scale is the local $c$. This is the precise sense in which the complex structure is local. In the language of the introduction to the framework, $c$ plays the role of the local scale factor of the complex structure, and the constant vacuum value $c_0$ is the special case in which that scale does not vary. The classical $ict$ convention of Minkowski space is the vacuum limit of the local structure.
 
-Two comments are worth making. First, the factorization $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}$ holds for any real positive $c$, so the algebraic fact on which the biquaternionic Maxwell equation rests is insensitive to the medium. Second, passing from vacuum to medium does not change the algebra $\mathbb{B}$; a medium is not a deformation of the complex structure but a different local scale for its imaginary direction.
+Two comments are worth making. First, the factorization $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ holds for any real positive $c$, so the algebraic fact on which the biquaternionic Maxwell equation rests is insensitive to the medium. Second, passing from vacuum to medium does not change the algebra $\mathbb{B}$; a medium is not a deformation of the complex structure but a different local scale for its imaginary direction.
 
 ## The Field Strength and Its Two Halves
 
@@ -119,9 +119,9 @@ $$
 $$
 The electric half is a pure imaginary vector and is therefore Hermitian; the magnetic half is a pure real vector and is therefore anti-Hermitian. Equivalently,
 $$
-\tfrac{1}{2}\left(\tilde{F}+\tilde{F}^\dagger\right)=i\sqrt{\epsilon}\,\mathbf{E},
+\tfrac{1}{2}\left(\tilde{F}+\tilde{F}^{*}\right)=i\sqrt{\epsilon}\,\mathbf{E},
 \qquad
-\tfrac{1}{2}\left(\tilde{F}-\tilde{F}^\dagger\right)=-\sqrt{\mu}\,\mathbf{H},
+\tfrac{1}{2}\left(\tilde{F}-\tilde{F}^{*}\right)=-\sqrt{\mu}\,\mathbf{H},
 $$
 so the projection of $\tilde{F}$ onto the informational sector $\mathbb{M}_+$ measures the electric field, and its projection onto the material sector $\mathbb{M}_-$ measures the magnetic field.
 
@@ -129,7 +129,7 @@ The split into the two sectors is structural and does not depend on the medium: 
 
 The energy is carried by the Hermitian form. In the parent article,
 $$
-\tilde{F}\tilde{F}^\dagger=2W\,e_0+\frac{2i}{c}\,\mathbf{S},
+\tilde{F}\tilde{F}^{*}=2W\,e_0+\frac{2i}{c}\,\mathbf{S},
 \qquad
 W=\frac{1}{2}\left(\epsilon\,\mathbf{E}^2+\mu\,\mathbf{H}^2\right)=\frac{1}{2}\left\|\tilde{F}\right\|_E^2,
 \qquad
@@ -182,7 +182,7 @@ $$
 $$
 using $\sqrt{\epsilon\mu}=1/c$; likewise the term coupling $\partial_t\mathbf{H}$ to $\mathrm{rot}\,\mathbf{E}$ carries $\sqrt{\mu}/(c\sqrt{\epsilon})=\mu$. The factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ on the fields and the factors $1/\sqrt{\epsilon}$ and $\sqrt{\mu}$ on the source are exactly what is required for the medium to disappear from the equation. The biquaternionic Maxwell equation is therefore medium-independent in form; the medium is entirely in the definitions of $\tilde{F}$, $\tilde{R}$, and the operator $\partial_{ict}$.
 
-Two companion statements from the Maxwell article carry over unchanged. The first is the integrability condition $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{R})=0$, which is the biquaternionic form of charge conservation. The second is the potential formulation: in the Lorenz gauge the potential biquaternion $\tilde{A}=i\phi/c+\mathbf{A}$ satisfies
+Two companion statements from the Maxwell article carry over unchanged. The first is the integrability condition $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{R})=0$, which is the biquaternionic form of charge conservation. The second is the potential formulation: in the Lorenz gauge the potential biquaternion $\tilde{A}=i\phi/c+\mathbf{A}$ satisfies
 $$
 \Box\tilde{A}=-\mu\,\tilde{R}',
 \qquad
@@ -279,11 +279,11 @@ The equivalence is exact and two-way, not a weak-coupling approximation in $\bet
 $$
 \tilde{F}=i\sqrt{\epsilon}\,\overline{\mathbf{V}},
 $$
-the complex conjugate of the source's field, so the magnetic-half sign is the only difference. Second, the source's $D$, with its quaternion units $i_k$, is the spatial part of the parent's gradient: writing $\tilde{\nabla}=\partial_{ict}+\sum_ke_k\partial_k$ and its quaternion conjugate $\bar{\tilde{\nabla}}=\partial_{ict}-\sum_ke_k\partial_k$ (the vector part negated, the object whose product with $\tilde{\nabla}$ gives $\Box$), the source's non-chiral operator is
+the complex conjugate of the source's field, so the magnetic-half sign is the only difference. Second, the source's $D$, with its quaternion units $i_k$, is the spatial part of the parent's gradient: writing $\tilde{\nabla}=\partial_{ict}+\sum_ke_k\partial_k$ and its quaternion conjugate $\tilde{\nabla}^{\natural}=\partial_{ict}-\sum_ke_k\partial_k$ (the vector part negated, the object whose product with $\tilde{\nabla}$ gives $\Box$), the source's non-chiral operator is
 $$
-M_0=\left.M\right|_{\beta=0}=\sqrt{\epsilon\mu}\,\partial_t-iD=i\,\bar{\tilde{\nabla}},
+M_0=\left.M\right|_{\beta=0}=\sqrt{\epsilon\mu}\,\partial_t-iD=i\,\tilde{\nabla}^{\natural},
 $$
-verified to machine zero: $i$ times the **quaternion conjugate** of the parent's gradient. Neither conjugation changes the content of the Maxwell system — the parent's own product $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\bar{\tilde{\nabla}}\tilde{\nabla}$ is independent of which factor comes first — which is why the two single-equation reductions agree where they overlap. What has no counterpart in the parent, and what no conjugation removes, is the chiral term $\beta\sqrt{\epsilon\mu}\,\partial_tD$: the *product* of the scalar time derivative with the vector part of the gradient, a second-order differential operator and not a multiple of $\bar{\tilde{\nabla}}$.
+verified to machine zero: $i$ times the **quaternion conjugate** of the parent's gradient. Neither conjugation changes the content of the Maxwell system — the parent's own product $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$ is independent of which factor comes first — which is why the two single-equation reductions agree where they overlap. What has no counterpart in the parent, and what no conjugation removes, is the chiral term $\beta\sqrt{\epsilon\mu}\,\partial_tD$: the *product* of the scalar time derivative with the vector part of the gradient, a second-order differential operator and not a multiple of $\tilde{\nabla}^{\natural}$.
 
 **The non-chiral limit in the framework's own symbols.** At $\beta=0$ the operator is $M_0=\sqrt{\epsilon\mu}\,\partial_t-iD$, and composed with its complex conjugate it is the d'Alembertian. Because $D^2=-\Delta$ (verified to $1.8\times10^{-15}$ on random wave vectors) and $\partial_t$ commutes with $D$,
 $$
@@ -915,8 +915,8 @@ The equation that the reduction produces has a solution theory of its own, and i
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{C}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}$ | Scalar subspace, real-quaternion subspace |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
-| $\tilde{\nabla},\bar{\tilde{\nabla}}$ | Biquaternionic gradient and its quaternion conjugate |
-| $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\Delta-c^{-2}\partial_t^2$ | d'Alembertian in the medium |
+| $\tilde{\nabla},\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
+| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\Delta-c^{-2}\partial_t^2$ | d'Alembertian in the medium |
 | $\epsilon,\mu$ | Permittivity and permeability of the medium |
 | $\epsilon_0,\mu_0$ | Vacuum permittivity and permeability |
 | $\mathbf{D}=\epsilon\mathbf{E},\ \mathbf{B}=\mu\mathbf{H}$ | Constitutive relations |
@@ -930,7 +930,7 @@ The equation that the reduction produces has a solution theory of its own, and i
 | $\tilde{R}'=ic\rho+\mathbf{J}$ | Source biquaternion of the potential equation |
 | $\mathbf{V}=\mathbf{E}+ic\mathbf{B}$ | Riemann–Silberstein vector |
 | $I_1=\mathbf{E}^2-c^2\mathbf{B}^2,\ I_2=\mathbf{E}\cdot\mathbf{B}$ | Lorentz invariants of the field |
-| $N(\tilde{F})=\tilde{F}\bar{\tilde{F}}$ | Biquaternion norm (complex scalar) |
+| $N(\tilde{F})=\tilde{F}\tilde{F}^{\natural}$ | Biquaternion norm (complex scalar) |
 | $W=\tfrac{1}{2}(\epsilon\mathbf{E}^2+\mu\mathbf{H}^2)$ | Electromagnetic energy density |
 | $\mathbf{S}=\mathbf{E}\times\mathbf{H}$ | Poynting vector |
 | $\mathbf{k},\omega$ | Wavevector and angular frequency |

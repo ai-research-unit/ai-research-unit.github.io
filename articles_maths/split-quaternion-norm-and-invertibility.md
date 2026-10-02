@@ -5,7 +5,7 @@
 
 This article studies the split-quaternion norm, its isotropy, and the invertibility theory it determines. It proves the criterion that an element is invertible exactly when its split-quaternion norm does not vanish, describes the group of units, classifies the elements, and describes how the invertible elements are distributed among the distinguished subspaces.
 
-The split-quaternion algebra, its basis, its conjugation $\bar{\cdot}$, its split-quaternion norm $N$, its idempotents $\tilde\pi_\pm$ and its subspaces $S$, $V$, $\mathbb{D}_2$, $\mathbb{D}_3$ are assumed from *Split-Quaternion Algebra* and are not redefined. The zero divisor set is treated separately in *Split-Quaternion Zero Divisors*, and the roots of $-1$ in *Split-Quaternion Roots of Minus One*. Nothing physical is invoked.
+The split-quaternion algebra, its basis, its conjugation ${}^{\natural}$, its split-quaternion norm $N$, its idempotents $\tilde\pi_\pm$ and its subspaces $S$, $V$, $\mathbb{D}_2$, $\mathbb{D}_3$ are assumed from *Split-Quaternion Algebra* and are not redefined. The zero divisor set is treated separately in *Split-Quaternion Zero Divisors*, and the roots of $-1$ in *Split-Quaternion Roots of Minus One*. Nothing physical is invoked.
 
 ## The Split-Quaternion Norm
 
@@ -14,10 +14,10 @@ The split-quaternion algebra, its basis, its conjugation $\bar{\cdot}$, its spli
 **Definition.** The **split-quaternion norm** of $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ is
 
 $$
-N(\tilde q) = \tilde q\bar{\tilde q} = \bar{\tilde q}\tilde q = q_0^2 + q_1^2 - q_2^2 - q_3^2,
+N(\tilde q) = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural}\tilde q = q_0^2 + q_1^2 - q_2^2 - q_3^2,
 $$
 
-where $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ is the conjugation of (*Split-Quaternion Algebra*, §*The Conjugation*).
+where $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ is the conjugation of (*Split-Quaternion Algebra*, §*The Conjugation*).
 
 The form is a real quadratic form of **signature $(2,2)$**, read directly from the diagonal expression as two positive and two negative squares. It is **multiplicative**:
 
@@ -25,13 +25,13 @@ $$
 N(\tilde q y) = N(\tilde q)N(y) \qquad (\tilde q, y \in \mathbb{H}_{\mathrm{s}}).
 $$
 
-**Proof.** The product $\tilde q\bar{\tilde q}$ is fixed by the conjugation, hence central; therefore, for all $\tilde q, y$,
+**Proof.** The product $\tilde q\tilde{q}^{\natural}$ is fixed by the conjugation, hence central; therefore, for all $\tilde q, y$,
 
 $$
-N(\tilde q y) = (\tilde q y)\overline{(\tilde q y)} = \tilde q\, y\bar y\, \bar{\tilde q} = \tilde q \bar{\tilde q}\, y\bar y = N(\tilde q)N(y),
+N(\tilde q y) = (\tilde q y)((\tilde q y))^{\natural} = \tilde q\, y y^{\natural}\, \tilde{q}^{\natural} = \tilde q \tilde{q}^{\natural}\, y y^{\natural} = N(\tilde q)N(y),
 $$
 
-using $\overline{\tilde q y} = \bar y \bar{\tilde q}$ and the centrality of $y\bar y$.
+using $(\tilde q y)^{\natural} = y^{\natural} \tilde{q}^{\natural}$ and the centrality of $y y^{\natural}$.
 
 Its polarisation is the bilinear form
 
@@ -95,19 +95,19 @@ The isotropic lines are also visible in the vector subspace: the isotropic lines
 When these hold, the inverse is
 
 $$
-\tilde q^{-1} = \frac{\bar{\tilde q}}{N(\tilde q)} .
+\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{N(\tilde q)} .
 $$
 
-**Proof.** Suppose first that $N(\tilde q) \neq 0$. Then $\bar{\tilde q}/N(\tilde q)$ is a real multiple of $\bar{\tilde q}$, and
+**Proof.** Suppose first that $N(\tilde q) \neq 0$. Then $\tilde{q}^{\natural}/N(\tilde q)$ is a real multiple of $\tilde{q}^{\natural}$, and
 
 $$
-\tilde q \cdot \frac{\bar{\tilde q}}{N(\tilde q)} = \frac{\tilde q\bar{\tilde q}}{N(\tilde q)} = \frac{N(\tilde q)}{N(\tilde q)} = 1, \qquad
-\frac{\bar{\tilde q}}{N(\tilde q)} \cdot \tilde q = \frac{\bar{\tilde q}\tilde q}{N(\tilde q)} = 1,
+\tilde q \cdot \frac{\tilde{q}^{\natural}}{N(\tilde q)} = \frac{\tilde q\tilde{q}^{\natural}}{N(\tilde q)} = \frac{N(\tilde q)}{N(\tilde q)} = 1, \qquad
+\frac{\tilde{q}^{\natural}}{N(\tilde q)} \cdot \tilde q = \frac{\tilde{q}^{\natural}\tilde q}{N(\tilde q)} = 1,
 $$
 
 so $\tilde q$ is invertible with the displayed inverse. Conversely, suppose $\tilde q$ is invertible, say $\tilde q y = 1$. Applying $N$ and using multiplicativity, $N(\tilde q)N(y) = N(1) = 1$, so $N(\tilde q) \neq 0$. This proves the equivalence of (1) and (2).
 
-**Corollary (Zero Divisors).** A nonzero element is a zero divisor if and only if $N(\tilde q) = 0$. If $N(\tilde q) = 0$ and $\tilde q \neq 0$, then $\tilde q\bar{\tilde q} = 0$ with $\bar{\tilde q} \neq 0$, so $\tilde q$ is a zero divisor; conversely a zero divisor is not a unit, so $N(\tilde q) = 0$ by the criterion.
+**Corollary (Zero Divisors).** A nonzero element is a zero divisor if and only if $N(\tilde q) = 0$. If $N(\tilde q) = 0$ and $\tilde q \neq 0$, then $\tilde q\tilde{q}^{\natural} = 0$ with $\tilde{q}^{\natural} \neq 0$, so $\tilde q$ is a zero divisor; conversely a zero divisor is not a unit, so $N(\tilde q) = 0$ by the criterion.
 
 The criterion has the form the menu names: **invertibility is $N \neq 0$**, and the boundary is the null cone of the split-quaternion norm. Since the split-quaternion norm is multiplicative, the multiplicative structure of the algebra and the invertibility theory are governed by one quadratic form.
 
@@ -231,7 +231,7 @@ The eight-dimensional algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\ma
 
 The split-quaternion norm is $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$, of signature $(2,2)$ and multiplicative. The form is isotropic; its isotropic vectors satisfy $q_0^2 + q_1^2 = q_2^2 + q_3^2$, its isotropic lines are the points of a doubly ruled projective null quadric, and on the vector subspace the isotropic lines are the lines of the light cone $q_1^2 = q_2^2 + q_3^2$.
 
-A nonzero element is invertible exactly when $N(\tilde q) \neq 0$, and then $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$; it is a zero divisor exactly when $N(\tilde q) = 0$. The group of units is $\{N \neq 0\}$, the norm-one subgroup is $U = \{N = 1\} \cong \mathrm{SL}_2(\mathbb{R})$, and $\{N = \pm 1\} = U \sqcup (-U)$ has two components. The units form the two connected components $\{N > 0\}$ and $\{N < 0\}$.
+A nonzero element is invertible exactly when $N(\tilde q) \neq 0$, and then $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$; it is a zero divisor exactly when $N(\tilde q) = 0$. The group of units is $\{N \neq 0\}$, the norm-one subgroup is $U = \{N = 1\} \cong \mathrm{SL}_2(\mathbb{R})$, and $\{N = \pm 1\} = U \sqcup (-U)$ has two components. The units form the two connected components $\{N > 0\}$ and $\{N < 0\}$.
 
 The classification of the elements is a dichotomy plus the zero element: invertible, or zero divisor, or zero; there is no further class, because the split-quaternion norm takes values in the field $\mathbb{R}$. The invertible elements are distributed as follows: all nonzero scalars are units; in $V$ the units are the spacelike and timelike vectors and the zero divisors are the light cone; in each split-complex subalgebra the units avoid the two isotropic lines; and the four minimal ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$, $\tilde\pi_\pm \mathbb{H}_{\mathrm{s}}$ are totally isotropic. In the eight-dimensional $\mathbb{H}_{\mathbb{D}}$ the norm takes values in a ring with zero divisors, and the corresponding classification has a genuinely third nonzero class; that system is treated later under Split-Biquaternions.
 
@@ -240,7 +240,7 @@ The classification of the elements is a dichotomy plus the zero element: inverti
 | Symbol | Meaning | Article |
 |---|---|---|
 | $\mathbb{H}_{\mathrm{s}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
-| $N(\tilde q) = \tilde q\bar{\tilde q}$ | the split-quaternion norm, signature $(2,2)$ | this article |
+| $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ | the split-quaternion norm, signature $(2,2)$ | this article |
 | $B(\tilde q,y)$ | the polarised bilinear form | this article |
 | isotropic vector, isotropic line | nonzero $\tilde q$ with $N(\tilde q)=0$, and its span | this article |
 | $\mathbb{H}_{\mathrm{s}}^{\times}$ | the group of units $\{N \neq 0\}$ | this article |

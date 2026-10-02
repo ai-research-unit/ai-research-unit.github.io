@@ -8,7 +8,7 @@ The framework enters through two facts that are genuinely its own and one that i
 
 - **The operator is the framework's.** The Dirac operator in biquaternionic form is built from the biquaternionic gradient $\tilde\nabla=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ and its coupling to the connection, and its square returns the d'Alembertian: the framework's spinor module carries it, and *The Dirac Equation in Biquaternionic Form* and *The Spinor Module in Biquaternionic Form and Its Lorentz Action* fix it. The index is a property of that operator.
 - **The counting is by the topological density, which the framework already has.** The index density is a total derivative whose integral is the instanton number, and the abelian form of the density is the framework's invariant $I_2=\mathbf E\cdot\mathbf B$. This was established in *Instantons and Solitons in Biquaternionic Form* and is not repeated here.
-- **The trace is the matrix trace, and the framework's biquaternion norm does not supply it.** The non-abelian index density is $\mathrm{Tr}(F\wedge F)$ with the matrix trace on the gauge factor. The framework's quadratic invariant, the biquaternion norm $N(\tilde F)=\tilde F\bar{\tilde F}$, is a rank-two bilinear of a *single* algebra element and has no second slot in which to trace two gauge-algebra-valued objects. This is the same rank-two limitation recorded for the topological density, and it controls what the framework can and cannot express about the index.
+- **The trace is the matrix trace, and the framework's biquaternion norm does not supply it.** The non-abelian index density is $\mathrm{Tr}(F\wedge F)$ with the matrix trace on the gauge factor. The framework's quadratic invariant, the biquaternion norm $N(\tilde F)=\tilde F\tilde F^{\natural}$, is a rank-two bilinear of a *single* algebra element and has no second slot in which to trace two gauge-algebra-valued objects. This is the same rank-two limitation recorded for the topological density, and it controls what the framework can and cannot express about the index.
 
 The article states the index theorem as the standard result it is, derives the specialisations that the framework uses, and separates the two.
 
@@ -44,7 +44,7 @@ $$
 \mathrm{ind}\,\slashed{D}_R \;=\; n_+ - n_- ,
 $$
 
-an integer that is invariant under continuous deformations of the connection and the metric because it is an integer-valued continuous function. In the biquaternionic framework the operator is the one built from $\tilde\nabla$; the algebraic form of the massless Dirac equation is $\tilde\nabla\psi=0$, and *The Dirac Equation in Biquaternionic Form* shows that $\tilde\nabla\bar{\tilde\nabla}=\bar{\tilde\nabla}\tilde\nabla=\Box$ with $\Box=\partial_{ict}^2+\Delta$, so the operator is the square root of the framework's d'Alembertian. The index is the property of this operator that the rest of the article computes.
+an integer that is invariant under continuous deformations of the connection and the metric because it is an integer-valued continuous function. In the biquaternionic framework the operator is the one built from $\tilde\nabla$; the algebraic form of the massless Dirac equation is $\tilde\nabla\psi=0$, and *The Dirac Equation in Biquaternionic Form* shows that $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$ with $\Box=\partial_{ict}^2+\Delta$, so the operator is the square root of the framework's d'Alembertian. The index is the property of this operator that the rest of the article computes.
 
 ## The Atiyah–Singer Theorem
 
@@ -195,7 +195,7 @@ The index density is a total derivative whose integral equals the instanton char
 | $\mathbb M_+,\mathbb M_-$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb H_{\mathbb B}$ | Real-quaternion subspace |
 | $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$ | Biquaternionic gradient; Dirac operator |
-| $\Box=\tilde\nabla\bar{\tilde\nabla}=\partial_{ict}^2+\Delta$ | d'Alembertian (series convention) |
+| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$ | d'Alembertian (series convention) |
 | $\slashed{D}_R=\gamma^\mu D_\mu$ | Twisted Dirac operator in representation $R$ |
 | $\gamma_5$ | Chirality grading; $\ker\slashed{D}_R=\ker^+\oplus\ker^-$ |
 | $n_\pm$ | Dimensions of the positive/negative chirality zero-mode spaces |
@@ -211,7 +211,7 @@ The index density is a total derivative whose integral equals the instanton char
 | $\Omega_{\mathrm{CS}}$ | Chern–Simons three-form; $d\Omega_{\mathrm{CS}}=\mathrm{Tr}(F\wedge F)$ |
 | $\eta(0)$, $h$ | Eta invariant and boundary zero-mode count (APS) |
 | $I_2=\mathbf E\cdot\mathbf B$ | Framework's second invariant; index density in the abelian case |
-| $N(\tilde F)=\tilde F\bar{\tilde F}$ | Biquaternion norm; rank-two, single-slot, does not supply $\mathrm{Tr}(F\wedge F)$ |
+| $N(\tilde F)=\tilde F\tilde F^{\natural}$ | Biquaternion norm; rank-two, single-slot, does not supply $\mathrm{Tr}(F\wedge F)$ |
 
 ## Further Reading
 

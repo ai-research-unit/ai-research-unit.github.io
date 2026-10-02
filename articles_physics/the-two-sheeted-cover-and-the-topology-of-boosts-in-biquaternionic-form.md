@@ -17,7 +17,7 @@ The **covering group** $SL(2,\mathbb{C})$ is simply connected. As a manifold it 
 $$
 \pi:\ SL(2,\mathbb{C})\ \longrightarrow\ SO^+(1,3),
 \qquad
-\pi(\tilde{\Lambda}):\tilde{Q}\longmapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger,
+\pi(\tilde{\Lambda}):\tilde{Q}\longmapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*},
 $$
 
 is the **universal cover** of the restricted Lorentz group, and the fundamental group of that group is
@@ -34,7 +34,7 @@ The article develops three threads. The first is the manifold structure of the c
 
 **Boundaries.** The physical consequences of the double cover for spinning matter — spinor representations, the transformation law of a spinor under a $2\pi$ rotation, and the observed sign change — belong to the sibling category on relativistic quantum theory and are not developed here. This article is the group-theoretic and geometric statement: what the covering group is, what its fundamental group is, and what the boost manifold is. The structure and representations of the group are treated in the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, and the automorphism characterization in *The Lorentz Group as Biquaternion Norm Automorphisms*.
 
-**Conventions.** We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \varepsilon_{jkl}e_l$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar and real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar and imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}}$ (the center). The conjugations are $\bar{\cdot}$, ${}^*$, ${}^\dagger = \bar{\cdot}^{\,*}$ and ${}^\flat = -\dagger$. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$, restricting to the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ on $\mathbb{M}_-$. A **rotor** is a unit-norm biquaternion, $N(\tilde{\Lambda}) = e_0$, and a general rotor decomposes as
+**Conventions.** We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \varepsilon_{jkl}e_l$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar and real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar and imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}}$ (the center). The conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = ({}^{\natural})^{\,*}$ and ${}^\flat = -{}^{*}$. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$, restricting to the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ on $\mathbb{M}_-$. A **rotor** is a unit-norm biquaternion, $N(\tilde{\Lambda}) = e_0$, and a general rotor decomposes as
 
 $$
 \tilde{\Lambda} = R\,B,
@@ -71,7 +71,7 @@ Every invertible matrix has a unique decomposition into a unitary and a positive
 $$
 \tilde{\Lambda} = R\,B,
 \qquad
-R^\dagger = R^{-1},
+R^{*} = R^{-1},
 \qquad
 B^\dagger = B,
 \qquad
@@ -109,19 +109,19 @@ A simply connected cover of a connected group is its universal cover, so the two
 **Verification.** The polar decomposition was checked numerically on random unit-norm rotors. Writing $\tilde{\Lambda} = RB$, the positive factor is the **left** factor of the pair,
 
 $$
-\tilde{\Lambda}^\dagger\tilde{\Lambda} = B^\dagger R^\dagger R B = B\,R^\dagger R\,B = B^2,
+\tilde{\Lambda}^{*}\tilde{\Lambda} = B^\dagger R^{*} R B = B\,R^{*} R\,B = B^2,
 \qquad
-B = (\tilde{\Lambda}^\dagger\tilde{\Lambda})^{1/2},
+B = (\tilde{\Lambda}^{*}\tilde{\Lambda})^{1/2},
 $$
 
-using $R^\dagger R = e_0$; the other ordering gives $\tilde{\Lambda}\tilde{\Lambda}^\dagger = RB^2R^{-1}$, the conjugated boost $RBR^\dagger$, which is not the boost factor of $\tilde{\Lambda}$. With $R = \tilde{\Lambda}B^{-1}$ the factor $R$ was unitary and lay in $\mathbb{H}_{\mathbb{B}}$, the factor $B$ was Hermitian positive with $N(B)=e_0$, and the reconstruction $RB$ reproduced $\tilde{\Lambda}$ to machine precision. The eigenvalues of $B$ were real and positive, as required for the positive square root.
+using $R^{*} R = e_0$; the other ordering gives $\tilde{\Lambda}\tilde{\Lambda}^{*} = RB^2R^{-1}$, the conjugated boost $RBR^\dagger$, which is not the boost factor of $\tilde{\Lambda}$. With $R = \tilde{\Lambda}B^{-1}$ the factor $R$ was unitary and lay in $\mathbb{H}_{\mathbb{B}}$, the factor $B$ was Hermitian positive with $N(B)=e_0$, and the reconstruction $RB$ reproduced $\tilde{\Lambda}$ to machine precision. The eigenvalues of $B$ were real and positive, as required for the positive square root.
 
 ## The Two-Sheeted Cover
 
 The conjugation map
 
 $$
-\pi(\tilde{\Lambda}):\ \tilde{Q}\ \longmapsto\ \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger
+\pi(\tilde{\Lambda}):\ \tilde{Q}\ \longmapsto\ \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*}
 $$
 
 is a continuous surjective homomorphism from $SL(2,\mathbb{C})$ onto the restricted Lorentz group, and its kernel is
@@ -350,7 +350,7 @@ $$
 SL(2,\mathbb{C}) = \{\tilde{\Lambda} : N(\tilde{\Lambda}) = e_0\} \cong SU(2)\times\mathbb{R}^3 \simeq S^3 ,
 $$
 
-which is simply connected, with $\pi_1 = 0$ and $\pi_3 = \mathbb{Z}$. The conjugation map $\pi(\tilde{\Lambda}):\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ has kernel $\{\pm e_0\}$ and is the universal cover,
+which is simply connected, with $\pi_1 = 0$ and $\pi_3 = \mathbb{Z}$. The conjugation map $\pi(\tilde{\Lambda}):\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ has kernel $\{\pm e_0\}$ and is the universal cover,
 
 $$
 SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_0\},
@@ -382,11 +382,11 @@ with $\omega\approx\tfrac{\psi^2}{2}\sin\theta$ for small rapidity and $\omega\t
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm; level-1 identity on $\mathbb{C}$ |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm; level-1 identity on $\mathbb{C}$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex scalar line (center) |
 | $\tilde{\Lambda}$, $N(\tilde{\Lambda}) = e_0$ | Unit-norm biquaternion; Lorentz rotor |
-| $\pi(\tilde{\Lambda}):\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ | Conjugation action on $\mathbb{M}_-$ |
+| $\pi(\tilde{\Lambda}):\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Conjugation action on $\mathbb{M}_-$ |
 | $\ker\pi = \{\pm e_0\}$, $\pi_1(SO^+(1,3))=\mathbb{Z}/2$ | Two-sheeted universal cover |
 | $SL(2,\mathbb{C}) = \{\tilde{\Lambda}:N(\tilde{\Lambda})=e_0\}\cong SU(2)\times\mathbb{R}^3$ | Covering group manifold |
 | $R(\theta) = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat{\mathbf{n}}$ | Rotation rotor; $R(2\pi)=-e_0$, $R(4\pi)=e_0$ |

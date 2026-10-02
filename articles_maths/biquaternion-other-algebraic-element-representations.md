@@ -133,16 +133,16 @@ The action therefore depends on $\tilde{Q}$ only through its class in the quotie
 
 ### Relation to the Sandwich
 
-For a unitary element the dagger is the inverse, $\tilde{Q}^{\dagger} = \tilde{Q}^{-1}$, so
+For a unitary element the dagger is the inverse, $\tilde{Q}^{*} = \tilde{Q}^{-1}$, so
 
 $$
-\operatorname{H}_{\tilde{Q}} = \operatorname{Ad}_{\tilde{Q}} \qquad (\tilde{Q}^{\dagger}\tilde{Q} = e_0) .
+\operatorname{H}_{\tilde{Q}} = \operatorname{Ad}_{\tilde{Q}} \qquad (\tilde{Q}^{*}\tilde{Q} = e_0) .
 $$
 
 On the unitary elements the sandwich **is** the conjugation action, and it is this automorphism that its multiplicativity criterion detects. For a general unit, written $\tilde{Q} = \lambda\tilde{U}$ with $\lambda$ central and $\tilde{U}$ unitary,
 
 $$
-\operatorname{H}_{\lambda\tilde{U}}(\tilde T) = \lambda\tilde{U}\,\tilde T\,\lambda^{*}\tilde{U}^{\dagger} = |\lambda|^2\operatorname{Ad}_{\tilde{U}}(\tilde T),
+\operatorname{H}_{\lambda\tilde{U}}(\tilde T) = \lambda\tilde{U}\,\tilde T\,\bar{\lambda}\tilde{U}^{*} = |\lambda|^2\operatorname{Ad}_{\tilde{U}}(\tilde T),
 $$
 
 a central dilation of an inner automorphism by the square of the modulus. Off the unitary slice the sandwich is therefore not a second automorphism but one automorphism, scaled; what it loses there is multiplicativity, not its connection with conjugation.
@@ -158,7 +158,7 @@ The centre is fixed pointwise, because its elements are the scalars, and the vec
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | $\tilde{Q}$ a central multiple of a real quaternion |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | $\tilde{Q}$ a central multiple of a real quaternion |
 
-The two rows for the halves and the sectors carry the same condition, and the condition can be read off the element: $\tilde{Q}$ is such a multiple exactly when $\tilde{Q}^{\dagger}\tilde{Q}$ is central, that is, when $\tilde{Q}^{\dagger}$ is a central multiple of $\tilde{Q}^{-1}$, which is what preserving $\mathbb{M}_{\pm}$ requires. This is the same class of operators that *Biquaternion Rotations and Lorentz Transformations* records as the ones preserving the whole subspace structure, and the action here is the automorphism that this class generates. For a unit outside the class the four subspaces are not merely moved among themselves: the image of each is a four-real-dimensional subspace in general position, lying in none of the six.
+The two rows for the halves and the sectors carry the same condition, and the condition can be read off the element: $\tilde{Q}$ is such a multiple exactly when $\tilde{Q}^{*}\tilde{Q}$ is central, that is, when $\tilde{Q}^{*}$ is a central multiple of $\tilde{Q}^{-1}$, which is what preserving $\mathbb{M}_{\pm}$ requires. This is the same class of operators that *Biquaternion Rotations and Lorentz Transformations* records as the ones preserving the whole subspace structure, and the action here is the automorphism that this class generates. For a unit outside the class the four subspaces are not merely moved among themselves: the image of each is a four-real-dimensional subspace in general position, lying in none of the six.
 
 ### The Two Minimal Left Ideals
 
@@ -259,7 +259,7 @@ $$
 
 on which $\tilde{Q}$ acts on each copy as $\Phi(\tilde{Q})$. The two copies are the two minimal left ideals of the section above, $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}(1-\tilde\Pi_1)$, each of real dimension $4$, and in the $\Phi$ picture they are the two column spaces. In a basis of $\mathbb{B}$ made of a basis of $\mathbb{B}\tilde\Pi_1$ followed by a basis of $\mathbb{B}(1-\tilde\Pi_1)$, the left-regular $4\times4$ matrix of $\tilde{Q}$ is therefore block diagonal with $\Phi(\tilde{Q})$ in both diagonal blocks. This is why the $2\times2$ and $4\times4$ accounts of the same algebra cannot disagree about the isomorphism $\Phi$: the second contains the first twice.
 
-**Conjugation and the sandwich.** The conjugation action is the multiplicative core of the dagger sandwich: the two coincide exactly on the unitary elements, $\operatorname{H}_{\tilde{Q}} = \operatorname{Ad}_{\tilde{Q}}$ for $\tilde{Q}^{\dagger}\tilde{Q} = e_0$, and in general $\operatorname{H}_{\lambda\tilde{U}} = |\lambda|^2\operatorname{Ad}_{\tilde{U}}$ for $\tilde{Q} = \lambda\tilde{U}$ with central $\lambda$ and unitary $\tilde{U}$. *Biquaternion Rotations and Lorentz Transformations* reads the sandwich against this reference, and the two differ in exactly two respects: the sandwich is not multiplicative off the unitary slice, and it is not invariant under a rescaling of $\tilde{Q}$ by a central element, so that it distinguishes the class of $\tilde{Q}$ from $\tilde{Q}$ itself.
+**Conjugation and the sandwich.** The conjugation action is the multiplicative core of the dagger sandwich: the two coincide exactly on the unitary elements, $\operatorname{H}_{\tilde{Q}} = \operatorname{Ad}_{\tilde{Q}}$ for $\tilde{Q}^{*}\tilde{Q} = e_0$, and in general $\operatorname{H}_{\lambda\tilde{U}} = |\lambda|^2\operatorname{Ad}_{\tilde{U}}$ for $\tilde{Q} = \lambda\tilde{U}$ with central $\lambda$ and unitary $\tilde{U}$. *Biquaternion Rotations and Lorentz Transformations* reads the sandwich against this reference, and the two differ in exactly two respects: the sandwich is not multiplicative off the unitary slice, and it is not invariant under a rescaling of $\tilde{Q}$ by a central element, so that it distinguishes the class of $\tilde{Q}$ from $\tilde{Q}$ itself.
 
 **Conjugation and the minimal left ideals.** Because it is an automorphism, the conjugation action permutes the two minimal left ideals, and it exchanges them for any unit not commuting with $\tilde\Pi_1$, for instance $ie_1$. A two-sided action either leaves the halving alone, when the acting unit commutes with $\tilde\Pi_1$, or carries $\mathbb{B}\tilde\Pi_1$ to another minimal left ideal, which is its opposite in the special case of $ie_1$ and a third ideal in general.
 
@@ -308,12 +308,12 @@ The matrix, four-vector and regular realizations, the biquaternion norm read in 
 | $i$ | Central scalar imaginary |
 | $Q_\mu = q_\mu + i q'_\mu$ | Complex coefficients of $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ | Quaternion subspace and Hermitian subspace of $\mathbb{B}$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\mathrm{Cl}_{1,3}$ | Clifford algebra of signature $(1,3)$; $\mathbb{B} \cong \mathrm{Cl}_{1,3}^+$ |
 | $\gamma^\mu$ | Clifford generators, $(\gamma^0)^2 = +1$, $(\gamma^j)^2 = -1$ |
 | $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ | Pseudoscalar, $\omega^2 = -1$, central in $\mathrm{Cl}_{1,3}^+$ |
 | $\operatorname{Ad}_{\tilde{Q}}(\tilde T) = \tilde{Q}\tilde T\tilde{Q}^{-1}$ | Conjugation action of a unit, the inner automorphism |
-| $\operatorname{H}_{\tilde{Q}}(\tilde T) = \tilde{Q}\tilde T\tilde{Q}^{\dagger}$ | The dagger sandwich of *Biquaternion Rotations and Lorentz Transformations* |
+| $\operatorname{H}_{\tilde{Q}}(\tilde T) = \tilde{Q}\tilde T\tilde{Q}^{*}$ | The dagger sandwich of *Biquaternion Rotations and Lorentz Transformations* |
 | $\tilde\Pi_1 = \tfrac12(e_0 + ie_3)$ | Idempotent, $\mathbb{B}\tilde\Pi_1$ a minimal left ideal of real dimension $4$ |
 | $\Phi$ | The isomorphism $\mathbb{B} \to M_2(\mathbb{C})$ of *Biquaternion 2×2 Matrix Element Representation*, $\Phi(e_0) = I_2$, $\Phi(e_k) = -i\sigma_k$ |
 | $\mathbb{B}^{n\times m}$ | Array of several biquaternions; for $n = m$ the ring $M_n(\mathbb{B}) \cong M_{2n}(\mathbb{C})$ |

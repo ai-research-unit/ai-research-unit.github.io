@@ -5,7 +5,7 @@
 
 This article studies the norm of the complex algebra and the invertibility of its elements. It follows the basic algebra article, which defined the algebra, its unique nontrivial involution and its two distinguished subspaces. The goal here is to define the norm and the Hermitian form, to establish the criterion for invertibility, and to describe the group of units and its polar split. The complex algebra is the definite two-dimensional member of the tensor family and the base case of the polar series, and the article collects the facts that the other members of the family generalise.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. Throughout, the basis is $1$, $i$ with $i^2 = -1$, a general element is $Z = a + i b$ with $a, b \in \mathbb{R}$, and the involution is complex conjugation $\bar{Z} = a - i b$. The norm of a biquaternion $\tilde{Q}$ is written $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ in that article; here the same symbol is used for the complex norm $N(Z) = Z\bar{Z}$, and the differences between the two are stated wherever they matter.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. Throughout, the basis is $1$, $i$ with $i^2 = -1$, a general element is $Z = a + i b$ with $a, b \in \mathbb{R}$, and the involution is complex conjugation $\bar{Z} = a - i b$. The norm of a biquaternion $\tilde{Q}$ is written $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ in that article; here the same symbol is used for the complex norm $N(Z) = Z\bar{Z}$, and the differences between the two are stated wherever they matter.
 
 ## The Norm
 
@@ -83,7 +83,7 @@ $$
 Z \bar{Z} = a^2 + b^2 .
 $$
 
-It is a real number, non-negative, and vanishes if and only if $Z = 0$. Because $\mathbb{C}$ is commutative and $\bar{\cdot}$ is its only nontrivial involution, the Hermitian form coincides with the norm. There are not two distinct objects here, as there are in the biquaternion algebra, where the Hermitian form $\tilde{Q}\tilde{Q}^{\dagger}$ is a biquaternion whose vector part need not vanish.
+It is a real number, non-negative, and vanishes if and only if $Z = 0$. Because $\mathbb{C}$ is commutative and ${}^{\natural}$ is its only nontrivial involution, the Hermitian form coincides with the norm. There are not two distinct objects here, as there are in the biquaternion algebra, where the Hermitian form $\tilde{Q}\tilde{Q}^{*}$ is a biquaternion whose vector part need not vanish.
 
 ### The Euclidean Norm
 

@@ -1,0 +1,305 @@
+
+# __The Difference Operator__
+
+## Introduction
+
+The difference operator is the translation minus the identity. On a sequence it is the forward difference
+$$
+(\Delta a)_n=a_{n+1}-a_n,
+$$
+and on a function of a real variable with step $h$ it is $(\Delta_ha)(x)=a(x+h)-a(x)$. It is the discrete
+analogue of the derivative, and its calculus is the calculus of finite differences: the $k$-th difference is
+a binomial combination of the values, the inverse operation is summation, and the resulting difference
+equations are solved by the discrete exponential and, more generally, by the diagonalisation of the shift.
+This article develops that calculus as a chapter of operator theory: the difference as an operator on a
+sequence space, the summation that inverts it, the eigenfunctions as characters, and the difference equation
+whose solvability is read from the multiplier. It is the discrete counterpart of the translation article
+preceding it, and the analysis counterpart of the algebraic calculus of special sequences.
+
+The prerequisites are *The Translation Operator*, the previous article of this group, for the shift $\tau_h$
+and the representation of the group, *Measure Theory and Integration* for the sequence spaces $\ell^p$ and
+the summable series, *Fourier Analysis on Euclidean Spaces* for the Fourier series and the periodic
+transform in the form used here, and *Modes of Convergence* for the convergence of series. The Fourier
+series of a sequence and the character theory of $\mathbb Z$ are used as they are available in the
+Fourier article, and the general transform on a locally compact abelian group is *Harmonic Analysis on
+Groups*, in the neighbouring category *Analysis on Groups* of this Part. Nothing about the derivative is
+assumed beyond the definition: the passage from $\Delta_h/h$ to $\partial_j$ is proved here by Taylor's
+formula, and the one-parameter ideas are those of the preceding article. The algebra of the special
+sequences and of the polynomials of the finite difference calculus — the Bernoulli and Euler numbers, the
+Sheffer and Appell sequences, the umbral composition — belongs to *Special Functions* and to *Combinatorial
+Functions and Generating Functions*, later in this Part and in Part I respectively, and is not developed
+here beyond the elementary Newton expansion. The discrete Laplace operator and its maximum principle are
+named and deferred to *Partial Differential Equations*, later in this Part. No geometry is invoked.
+
+## The Difference Operator
+
+### Definition and the Binomial Expansion
+
+**Definition.** On a sequence $a=(a_n)$ the **forward difference** is
+$$
+(\Delta a)_n=a_{n+1}-a_n ,
+$$
+and on functions of a real variable with step $h>0$ it is $(\Delta_ha)(x)=a(x+h)-a(x)$; the **backward
+difference** is $\nabla a_n=a_n-a_{n-1}$ and the **central difference** is
+$(\delta_ha)(x)=a(x+h/2)-a(x-h/2)$. In terms of the translation $\tau_{-h}$ of *The Translation Operator*,
+which is $(\tau_{-h}a)(x)=a(x+h)$,
+$$
+\Delta_h=\tau_{-h}-\mathrm{id},\qquad \nabla_h=\mathrm{id}-\tau_h .
+$$
+
+**Theorem (the binomial expansion of the iterated difference).** For every $m\geq1$,
+$$
+(\Delta^ma)_n=\sum_{j=0}^m(-1)^{m-j}\binom mj a_{n+j},
+$$
+and the same with $a(x+jh)$ and $\Delta_h$ in place of $a_{n+j}$ and $\Delta$.
+
+**Proof.** By induction. For $m=1$ the identity is the definition. If it holds for $m$, then
+$\Delta^{m+1}a=\Delta(\Delta^ma)$ gives, at $n$,
+$$
+\sum_{j=0}^m(-1)^{m-j}\binom mj(a_{n+1+j}-a_{n+j})
+=\sum_{i=0}^{m+1}(-1)^{m+1-i}\Bigl(\binom mi+\binom m{i-1}\Bigr)a_{n+i},
+$$
+with the conventions $\binom m{-1}=\binom m{m+1}=0$, and the bracket is $\binom{m+1}i$ by the Pascal
+relation. $\blacksquare$
+
+**Theorem (the Leibniz rule).** For the product of two sequences,
+$$
+\Delta(ab)=(\tau_{-1}a)\Delta b+b\,\Delta a ,
+$$
+that is, $(\Delta(ab))_n=a_{n+1}(b_{n+1}-b_n)+b_n(a_{n+1}-a_n)$; consequently a product rule for
+$\Delta^m$ holds with binomial coefficients, $\Delta^m(ab)=\sum_{j}\binom mj(\Delta^j a)(\Delta^{m-j}b)$
+shifted by the powers of $\tau_{-1}$.
+
+**Proof.** Expanding $a_{n+1}b_{n+1}-a_nb_n$ as $(a_{n+1}-a_n)b_{n+1}+a_n(b_{n+1}-b_n)$ and comparing with
+the stated form, which uses the identity
+$a_{n+1}b_{n+1}-a_nb_n=a_{n+1}(b_{n+1}-b_n)+b_n(a_{n+1}-a_n)$; the higher rule follows by induction and
+Pascal's relation. $\blacksquare$
+
+### The Difference as a Discrete Derivative
+
+**Theorem (the difference approximates the derivative).** Let $a$ be twice differentiable with bounded second
+derivative near $x$. Then
+$$
+\Delta_ha(x)=a'(x)h+O(h^2),\qquad \frac{\Delta_ha(x)}{h}\to a'(x)\ \ (h\to0),
+$$
+and the central difference is accurate to one further order,
+$\delta_ha(x)=a'(x)h+O(h^3)$. For the second difference,
+$$
+\tau_h a(x)-2a(x)+\tau_{-h}a(x)=a''(x)h^2+O(h^4),\qquad
+\frac{\tau_ha-2a+\tau_{-h}a}{h^2}\to a''(x).
+$$
+
+**Proof.** Both are Taylor's formula with the Lagrange remainder: expanding $a(x\pm h)$ to three terms and
+collecting gives the stated identities. $\blacksquare$
+
+The theorem is the sense in which the difference operator is the discrete generator: the preceding article
+proved that $-\partial_j$ is the generator of the one-parameter group $\tau_{te_j}$, and the difference
+$\Delta_{te_j}$ is its first-order discrete version, the two being related by
+$\Delta_{te_j}=t\partial_j+o(t)=-tA_j+o(t)$ on the domain of $A_j$.
+
+## Summation: The Inverse of the Difference
+
+### The Indefinite Sum
+
+**Definition.** For a sequence $a$ the **summation** (or **indefinite sum**) is
+$$
+(\Sigma a)_n=\sum_{k=0}^{n-1}a_k\quad(n\geq0),\qquad (\Sigma a)_n=-\sum_{k=n}^{-1}a_k\quad(n<0),
+$$
+so that $\Sigma a$ is the partial-sum sequence vanishing at $0$.
+
+**Theorem (the fundamental theorem of finite differences).** $\Sigma$ is a right inverse of $\Delta$ and
+inverts it up to the constants:
+$$
+\Delta\Sigma a=a,\qquad \Sigma\Delta a=a-a_0 .
+$$
+More generally the solutions of $\Delta u=a$ are $u=\Sigma a+c$ with $c$ constant, and the solutions of the
+homogeneous equation $\Delta u=0$ are the constant sequences.
+
+**Proof.** $(\Sigma a)_{n+1}-(\Sigma a)_n=a_n$ by the definition of the partial sum, which is the first
+identity; the second is the telescoping of $a_{k+1}-a_k$ from $k=0$ to $n-1$. If $\Delta u=0$ then
+$u_{n+1}=u_n$ for all $n$, so $u$ is constant, and the difference of two solutions of $\Delta u=a$ is
+constant. $\blacksquare$
+
+Thus summation is the discrete inverse of differentiation, and the constant of the indefinite integral
+becomes the constant of the indefinite sum. The difference from the continuous case is that the
+homogeneous solutions of $\Delta u=0$ on $\mathbb Z$ are the constants, whereas the homogeneous solutions
+of $u'=0$ on $\mathbb R$ are also the constants; the difference appears for the equation
+$\Delta u=\lambda u$ below, whose solutions are the exponentials and not the constants only.
+
+### Summation by Parts
+
+**Theorem (Abel summation by parts).** For sequences $a,b$,
+$$
+\sum_{k=0}^n a_k\,\Delta b_k=a_{n+1}b_{n+1}-a_0b_0-\sum_{k=0}^n(\Delta a_k)\,b_{k+1}.
+$$
+
+**Proof.** Summing the Leibniz identity $\Delta(a_kb_k)=a_{k+1}\Delta b_k+b_k\Delta a_k$ from $k=0$ to $n$
+gives the telescoping $\sum_{k=0}^n\Delta(a_kb_k)=a_{n+1}b_{n+1}-a_0b_0$, that is,
+$\sum_{k=0}^na_{k+1}\Delta b_k=a_{n+1}b_{n+1}-a_0b_0-\sum_{k=0}^nb_k\Delta a_k$, and shifting the index in
+the first sum gives the stated formula. $\blacksquare$
+
+**Corollary (Abel's test and Dirichlet's test).** If the partial sums of a sequence $u$ are bounded and a
+sequence $v$ decreases to $0$, then $\sum u_nv_n$ converges; if $\sum u_n$ converges and $v$ is of bounded
+variation, then $\sum u_nv_n$ converges. Both are the continuous tests in the discrete form given by the
+theorem.
+
+## Eigenfunctions and the Discrete Exponential
+
+### The Eigenvalue Equation
+
+**Theorem.** For a complex number $r$ the geometric sequence $a_n=r^n$ satisfies
+$$
+\Delta(r^n)=(r-1)r^n ,
+$$
+so the eigenfunctions of the difference operator on the functions on $\mathbb Z$ are the geometric
+sequences, with eigenvalues $r-1$; the fixed points of the difference are the constant sequences, $r=1$. For
+the step-$h$ operator on $\mathbb R$ the exponential $e_\xi(x)=e^{2\pi i\xi x}$ satisfies
+$$
+\Delta_he_\xi=(e^{2\pi i\xi h}-1)e_\xi .
+$$
+
+**Proof.** $r^{n+1}-r^n=(r-1)r^n$ and $e^{2\pi i\xi(x+h)}-e^{2\pi i\xi x}=(e^{2\pi i\xi h}-1)e^{2\pi i\xi x}$.
+$\blacksquare$
+
+The theorem says that the characters of the group are the eigenfunctions of the difference operator, exactly
+as they were the eigenfunctions of the translation; the difference is that the eigenvalue is now
+$\overline{e_\xi(h)}-1$ for the translation eigenvalue $\overline{e_\xi(h)}$. On a finite group of order
+$N$ the geometric sequences with $r$ an $N$-th root of unity are periodic, and they form the eigenbasis of
+the periodic difference operator, which is the discrete Fourier transform of *The Fourier Operator* applied
+to the shift.
+
+### The Newton Expansion
+
+**Definition.** For a formal power series or an entire function, the **Newton series** of a sequence $a$ is
+$$
+a_n=\sum_{k\geq0}\binom nk\Delta^ka_0 ,
+$$
+the **binomial transform** of the difference sequence.
+
+**Theorem (Newton's forward difference formula).** The identity holds for every polynomial in $n$, and
+indeed every such polynomial $a$ of degree $d$ has $\Delta^ka_0=0$ for $k>d$ and is recovered from its
+finite difference table. For an entire function the series converges for all $n$ under the growth conditions
+of the interpolation theory.
+
+**Proof.** For a polynomial of degree $d$ the identity follows from the binomial expansion
+$\binom{n+j}{?}$ and is confirmed by the inversion of the two triangular matrices built from the binomial
+coefficients, which are mutually inverse; the general convergence statement is the Newton interpolation
+formula with the remainder controlled by the growth of the function. $\blacksquare$
+
+## The Spectrum and the Fourier Transform
+
+### The Multiplier of the Difference
+
+**Theorem.** On $\ell^2(\mathbb Z)$ the difference $\Delta=\tau_{-1}-\mathrm{id}$ is bounded with
+$\lVert\Delta\rVert=2$, and under the Fourier series $\hat a(\theta)=\sum_na_ne^{-2\pi in\theta}$ it becomes
+multiplication by $e^{2\pi i\theta}-1$:
+$$
+\widehat{\Delta a}(\theta)=(e^{2\pi i\theta}-1)\,\hat a(\theta).
+$$
+Its spectrum is the circle $\{e^{2\pi i\theta}-1:\theta\in\mathbb T\}$, the circle of centre $-1$ and
+radius $1$, and $\Delta$ has no eigenvalues on $\ell^2(\mathbb Z)$.
+
+**Proof.** Boundedness and the norm $2$ are immediate from
+$\lVert\Delta a\rVert_2\leq2\lVert a\rVert_2$ with equality for the alternating sequence and from the fact
+that $\tau_{-1}$ is unitary. The multiplier identity is the transform of the shift identity
+$\widehat{\tau_{-1}a}(\theta)=e^{2\pi i\theta}\hat a(\theta)$ together with linearity. The spectrum of a
+multiplication operator by a continuous function on $L^2(\mathbb T)$ is its range, here the circle of
+centre $-1$; an eigenvalue would require $e^{2\pi i\theta}-1$ to be constant on a set of positive measure,
+which it is not. $\blacksquare$
+
+The same computation gives the operator $\mathrm{id}-\lambda^{-1}\Delta$ the multiplier
+$1-\lambda^{-1}(e^{2\pi i\theta}-1)$, and a difference equation is solved exactly when this multiplier can be
+inverted.
+
+### Difference Equations
+
+**Definition.** A **linear difference equation** with constant coefficients is
+$$
+\sum_{j=0}^dc_ju_{n+j}=g_n ,
+$$
+equivalently $P(\tau_{-1})u=g$ with $P(z)=\sum_jc_jz^j$, the **characteristic polynomial** of the equation;
+the equation is **homogeneous** when $g=0$.
+
+**Theorem (solution by the transfer function).** If $P(e^{2\pi i\theta})\neq0$ for every $\theta$, then
+$P(\tau_{-1})$ is invertible on $\ell^2(\mathbb Z)$, the unique solution is the convolution operator with
+multiplier $1/P(e^{2\pi i\theta})$, and it is the convolution with the sequence whose Fourier series is that
+function. The homogeneous solutions are the geometric sequences $r^n$ for the roots $r$ of $P$, with
+multiplicity handled by the sequences $n^kr^n$; the equation is thus solved by the roots of its
+characteristic polynomial, exactly as a linear differential equation with constant coefficients is solved
+by its exponential solutions.
+
+**Proof.** $P(\tau_{-1})$ is a convolution operator with symbol $P(e^{2\pi i\theta})$, and a multiplier with
+symbol bounded away from $0$ is invertible with inverse the multiplier $1/P$; the homogeneous solutions are
+computed by the eigenvalue equation $\Delta(r^n)=(r-1)r^n$ and its iterates. $\blacksquare$
+
+**Example (the fundamental solution).** For $\Delta u=\delta$, where $\delta$ is the sequence with
+$\delta_0=1$ and $\delta_n=0$ otherwise, a solution is $E_n=\mathbf 1_{\{n\geq1\}}$: indeed
+$E_{n+1}-E_n=1$ for $n=0$ and $0$ for $n\neq0$. This $E$ is the discrete fundamental solution, or Green's
+function, of the difference operator, and the general solution of $\Delta u=g$ is $u=E*g$, the discrete
+convolution. The symbol of $\Delta$ is $e^{2\pi i\theta}-1$, which vanishes at $\theta=0$, and this is why
+$\Delta$ is not invertible on $\ell^2$: the equation $\Delta u=g$ requires the zero mean, $\hat g(0)=0$, and
+then only a decay condition makes $u$ square-summable, so the inverse is unbounded.
+
+## The Continuous and Higher-Dimensional Cases
+
+**Example (the difference operator on $\mathbb R^n$).** For the coordinate direction $j$ the operator
+$\Delta_h^{(j)}=\tau_{-he_j}-\mathrm{id}$ acts on functions of $x\in\mathbb R^n$, and the **discrete
+Laplacian** is
+$$
+L_h=\frac1{h^2}\sum_{j=1}^n\bigl(\tau_{he_j}-2\mathrm{id}+\tau_{-he_j}\bigr),
+$$
+which by the second-difference theorem converges to the Laplacian $\sum_j\partial_j^2$ on smooth
+functions as $h\to0$. The operator $L_h$ is the generator of the simple random walk on the lattice
+$h\mathbb Z^n$ in the sign convention of the heat equation, and the discrete maximum principle for it —
+a function with $L_hf\geq0$ has no interior maximum — is the discrete form of the maximum principle that
+governs the Laplacian. These operators and the difference schemes built from them are the subject of
+*Partial Differential Equations*, later in this Part.
+
+**Example (the periodic case).** On a finite cyclic group of order $N$ the difference operator is the
+circulant matrix with $-1$ on the diagonal and $1$ on the super- and sub-diagonal, with the periodic
+boundary condition in the corner. Its eigenvectors are the discrete characters $k\mapsto e^{2\pi ikn/N}$
+and its eigenvalues are $e^{2\pi in/N}-1$, the discrete version of the transform diagonalisation.
+
+## Summary
+
+The forward difference $\Delta=\tau_{-1}-\mathrm{id}$ is the discrete derivative, with
+$(\Delta a)_n=a_{n+1}-a_n$ and $(\Delta_ha)(x)=a(x+h)-a(x)$; its iterates expand binomially,
+$\Delta^ma_n=\sum_j(-1)^{m-j}\binom mj a_{n+j}$, the Leibniz rule holds, and $\Delta_h/h\to\partial_j$ with
+the second difference giving the second derivative. Its inverse is the summation $\Sigma$, characterised by
+$\Delta\Sigma=\mathrm{id}$ and $\Sigma\Delta a=a-a_0$, with summation by parts as the discrete integration
+by parts and Abel's and Dirichlet's tests as its consequences. The eigenfunctions are the characters, with
+$\Delta(r^n)=(r-1)r^n$ and $\Delta_he_\xi=(e^{2\pi i\xi h}-1)e_\xi$, and the Newton expansion recovers a
+sequence from its differences. Under the Fourier series the difference is multiplication by
+$e^{2\pi i\theta}-1$, so its spectrum is the circle of centre $-1$ and radius $1$ and it has no eigenvalues
+on $\ell^2(\mathbb Z)$; constant-coefficient difference equations are solved by the transfer function and
+the roots of the characteristic polynomial, and the discrete Laplacian on the lattice is the difference
+operator whose continuous limit is the Laplacian.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\Delta$, $\Delta_h$ | Forward difference, $\Delta=\tau_{-1}-\mathrm{id}$ |
+| $\nabla$, $\nabla_h$ | Backward difference, $\nabla=\mathrm{id}-\tau_1$ |
+| $\delta_h$ | Central difference, $\delta_ha(x)=a(x+h/2)-a(x-h/2)$ |
+| $\Delta^m$ | Iterated difference, $\sum_j(-1)^{m-j}\binom mj a_{n+j}$ |
+| $\Sigma$ | Indefinite sum, $(\Sigma a)_n=\sum_{k<n}a_k$ |
+| $r^n$, $e_\xi$ | Eigenfunctions of the difference, eigenvalues $r-1$, $e^{2\pi i\xi h}-1$ |
+| $P(z)$ | Characteristic polynomial of a difference equation |
+| $E=\mathbf 1_{\geq1}$ | Fundamental solution of $\Delta E=\delta$ |
+| $L_h$ | Discrete Laplacian, the lattice second difference |
+
+## Further Reading
+
+- Charles Jordan, *Calculus of Finite Differences* (3rd ed., Chelsea, 1965), for the difference calculus,
+  the Newton expansion and the summation by parts.
+- George Boole, *A Treatise on the Calculus of Finite Differences* (2nd ed., Macmillan, 1872; reprinted
+  Dover, 1960), for the classical theory and the symbolic methods.
+- N. E. Nørlund, *Vorlesungen über Differenzenrechnung* (Springer, 1924), for the difference equations and
+  their solutions.
+- Gian-Carlo Rota, D. Kahaner and A. Odlyzko, *Finite Operator Calculus* (Academic Press, 1975), for the
+  umbral calculus that the article defers to *Special Functions*.
+- Kôsaku Yosida, *Functional Analysis* (6th ed., Springer, 1980), for the difference operators as
+  translation-invariant operators on sequence spaces.
+- Elias M. Stein and Rami Shakarchi, *Fourier Analysis: An Introduction* (Princeton University Press, 2003),
+  for the discrete and periodic transforms that diagonalise the shift and the difference.

@@ -22,16 +22,16 @@ The article is organised as follows. The next section sets up the background and
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the conserved $U(1)$ current $\tilde J\in\mathbb{M}_-$ and the charge.
 - Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material four-wavevector and the biquaternion norm.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ and $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$. Natural units $\hbar=c=1$ are used throughout, with $E_{\mathbf{p}}=\sqrt{\mathbf{p}^2+\mu^2}$ and $\mu=mc/\hbar$; dimensionful factors are restored where they carry meaning. The scalar field is $\tilde{\Phi}=\phi\,e_0$ with $\phi$ complex. A dot denotes $\partial_t$.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$. Natural units $\hbar=c=1$ are used throughout, with $E_{\mathbf{p}}=\sqrt{\mathbf{p}^2+\mu^2}$ and $\mu=mc/\hbar$; dimensionful factors are restored where they carry meaning. The scalar field is $\tilde{\Phi}=\phi\,e_0$ with $\phi$ complex. A dot denotes $\partial_t$.
 
 ## The Background and the Mode Equation
 
-A classical background that couples to the scalar field through the invariant $\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})$ shifts the mass term. Write the background as a central-valued classical field,
+A classical background that couples to the scalar field through the invariant $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$ shifts the mass term. Write the background as a central-valued classical field,
 
 $$
 \tilde\sigma(\tilde{Q})=\sigma(\tilde{Q})\,e_0\in\mathbb{C}_{\mathbb{B}},
 \qquad
-\mathcal{L}_{\mathrm{int}}=-g\,\mathrm{Sc}\!\left(\tilde{\Phi}^\dagger\tilde{\Phi}\right)\sigma ,
+\mathcal{L}_{\mathrm{int}}=-g\,\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\tilde{\Phi}\right)\sigma ,
 $$
 
 so that the effective equation of motion is
@@ -104,10 +104,10 @@ and the same transformation acts on the mode operators. Writing the in-operators
 
 $$
 \hat a_{\mathbf k}^{\mathrm{out}}
-=\alpha_{\mathbf k}\,\hat a_{\mathbf k}^{\mathrm{in}}+\beta_{\mathbf k}^*\,\hat b_{-\mathbf k}^{\mathrm{in}\dagger},
+=\alpha_{\mathbf k}\,\hat a_{\mathbf k}^{\mathrm{in}}+\beta_{\mathbf k}^*\,\hat b_{-\mathbf k}^{\mathrm{in}{}^{*}},
 \qquad
 \hat b_{-\mathbf k}^{\mathrm{out}}
-=\alpha_{\mathbf k}\,\hat b_{-\mathbf k}^{\mathrm{in}}+\beta_{\mathbf k}^*\,\hat a_{\mathbf k}^{\mathrm{in}\dagger},
+=\alpha_{\mathbf k}\,\hat b_{-\mathbf k}^{\mathrm{in}}+\beta_{\mathbf k}^*\,\hat a_{\mathbf k}^{\mathrm{in}{}^{*}},
 $$
 
 with the same $\alpha,\beta$ for the conjugate pair (the coefficients for $+\mathbf k$ and $-\mathbf k$ are equal because the background is homogeneous and isotropic). The transformation is **canonical**: imposing the in-commutators and the out-commutators, and using the reality of the mixing, gives
@@ -129,10 +129,10 @@ and a direct computation gives $[\hat Q,\hat G_{\mathbf k}]=0$, so the backgroun
 
 ## The Number of Created Pairs and the Vacuum Persistence Amplitude
 
-Because the in- and out-mode operators differ, the in-vacuum is not annihilated by the out-annihilation operators. Writing $\hat a^{\mathrm{out}}=\alpha\hat a^{\mathrm{in}}+\beta^*\hat b^{\mathrm{in}\dagger}$ (and the conjugate relation), the in-vacuum contains pairs of out-quanta, and the mean number of particles of momentum $\mathbf k$ in the in-vacuum is
+Because the in- and out-mode operators differ, the in-vacuum is not annihilated by the out-annihilation operators. Writing $\hat a^{\mathrm{out}}=\alpha\hat a^{\mathrm{in}}+\beta^*\hat b^{\mathrm{in}{}^{*}}$ (and the conjugate relation), the in-vacuum contains pairs of out-quanta, and the mean number of particles of momentum $\mathbf k$ in the in-vacuum is
 
 $$
-\langle 0_{\mathrm{in}}|\hat a_{\mathbf k}^{\mathrm{out}\dagger}\hat a_{\mathbf k}^{\mathrm{out}}|0_{\mathrm{in}}\rangle
+\langle 0_{\mathrm{in}}|\hat a_{\mathbf k}^{\mathrm{out}{}^{*}}\hat a_{\mathbf k}^{\mathrm{out}}|0_{\mathrm{in}}\rangle
 =|\beta_{\mathbf k}|^2\,(2\pi)^3\delta^{(3)}(0),
 $$
 
@@ -231,7 +231,7 @@ which is symmetric in $\omega_1\leftrightarrow\omega_2$, vanishes when the frequ
 
 Four statements summarise what the framework contributes to scalar pair creation.
 
-**The background is central.** The driving field is a classical element of $\mathbb{C}_{\mathbb{B}}$; it enters the equation only through the invariant $\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})$, it commutes with every element of the algebra, and it carries no spinor index. Pair creation by a scalar background is therefore a process in the center, and the state module is not acted on by the background.
+**The background is central.** The driving field is a classical element of $\mathbb{C}_{\mathbb{B}}$; it enters the equation only through the invariant $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$, it commutes with every element of the algebra, and it carries no spinor index. Pair creation by a scalar background is therefore a process in the center, and the state module is not acted on by the background.
 
 **The in- and out-modes are the parent's plane waves at two masses.** Each asymptotic region has its own on-shell level set $N(\tilde{K})=-\mu^2-g\sigma_{\mathrm{in/out}}$, and the Bogoliubov coefficients are the overlap of two such plane-wave systems. The mass shell, which is a level set of the biquaternion norm, is time-dependent during the transition and constant on either side.
 
@@ -255,7 +255,7 @@ The standard realizations are worth naming for orientation. Cosmological particl
 
 ## Summary
 
-Scalar pair creation is the production of particle–antiparticle pairs by a classical background that breaks time-translation invariance. In the framework the background is a central-valued classical field $\tilde\sigma=\sigma e_0$ coupling through $\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})$, so a homogeneous background makes the frequency time-dependent, $\ddot u_{\mathbf k}+\omega_{\mathbf k}^2(t)u_{\mathbf k}=0$ with $\omega_{\mathbf k}^2=\mathbf{k}^2+\mu^2+g\sigma(t)$, and the effective mass-squared is the time-dependent level set of the biquaternion norm of the material four-wavevector, $\mu^2+g\sigma=-\mathrm{Sc}(N(\tilde{K}))$. The in- and out-mode decompositions are related by a Bogoliubov transformation mixing $\hat a_{\mathbf k}$ with $\hat b_{-\mathbf k}^\dagger$, with $|\alpha_{\mathbf k}|^2-|\beta_{\mathbf k}|^2=1$.
+Scalar pair creation is the production of particle–antiparticle pairs by a classical background that breaks time-translation invariance. In the framework the background is a central-valued classical field $\tilde\sigma=\sigma e_0$ coupling through $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$, so a homogeneous background makes the frequency time-dependent, $\ddot u_{\mathbf k}+\omega_{\mathbf k}^2(t)u_{\mathbf k}=0$ with $\omega_{\mathbf k}^2=\mathbf{k}^2+\mu^2+g\sigma(t)$, and the effective mass-squared is the time-dependent level set of the biquaternion norm of the material four-wavevector, $\mu^2+g\sigma=-\mathrm{Sc}(N(\tilde{K}))$. The in- and out-mode decompositions are related by a Bogoliubov transformation mixing $\hat a_{\mathbf k}$ with $\hat b_{-\mathbf k}^\dagger$, with $|\alpha_{\mathbf k}|^2-|\beta_{\mathbf k}|^2=1$.
 
 The transformation is charge neutral: its generator $\hat G_{\mathbf k}=\hat a_{\mathbf k}^\dagger\hat b_{-\mathbf k}^\dagger-\hat a_{\mathbf k}\hat b_{-\mathbf k}$ commutes with the $U(1)$ charge, so the background creates pairs and not single quanta. The in-vacuum is a two-mode squeezed state, the mean number of created pairs per mode is $|\beta_{\mathbf k}|^2$, and the vacuum persistence amplitude is $|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle|^2=1/|\alpha_{\mathbf k}|^2=1/(1+|\beta_{\mathbf k}|^2)$, with the continuum product $\exp\big(-\int\frac{d^3k}{(2\pi)^3}\ln(1+|\beta_{\mathbf k}|^2)\big)$. On the sudden-quench background $\omega_1\to\omega_2$ the result is $|\beta|^2=(\omega_2-\omega_1)^2/(4\omega_1\omega_2)$, verified numerically, with $|\alpha|^2-|\beta|^2=1$ to fifteen decimal places.
 
@@ -270,7 +270,7 @@ The process is standard scalar quantum field theory in an external background, t
 | $i$ | Central scalar imaginary |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ | Center; value space of the background |
 | $\tilde{\Phi}=\phi\,e_0$, $\tilde\sigma=\sigma\,e_0$ | Scalar field and central background |
-| $\mathcal{L}_{\mathrm{int}}=-g\,\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})\sigma$ | Central interaction |
+| $\mathcal{L}_{\mathrm{int}}=-g\,\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})\sigma$ | Central interaction |
 | $\omega_{\mathbf k}^2(t)=\mathbf{k}^2+\mu^2+g\sigma(t)$ | Time-dependent frequency |
 | $\tilde{K}_{\mathbf k}(t)=i\omega_{\mathbf k}(t)e_0+\mathbf{k}$ | Material four-wavevector; $N(\tilde{K})$ its biquaternion norm |
 | $\omega_{\mathrm{in}},\omega_{\mathrm{out}}$ | Asymptotic frequencies |

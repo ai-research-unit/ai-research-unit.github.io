@@ -10,7 +10,7 @@ $$
 
 is the Born rule. This article is about the **geometry** of that state space. Its subject is one structural fact, developed in full:
 
-> The state space of a qubit — the Bloch ball — is the intersection of the affine hyperplane $\{\mathrm{Sc} = \tfrac{1}{2}\}$ in $\mathbb{M}_+$ with the future light cone of the biquaternion norm $N(\tilde{H}) = \tilde{H}\bar{\tilde{H}}$.
+> The state space of a qubit — the Bloch ball — is the intersection of the affine hyperplane $\{\mathrm{Sc} = \tfrac{1}{2}\}$ in $\mathbb{M}_+$ with the future light cone of the biquaternion norm $N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural}$.
 
 In the standard formalism the Bloch ball is assembled state by state: one takes the set of positive trace-one operators on a two-dimensional Hilbert space and derives the condition $|\mathbf{r}| \leq 1$ from the positivity of a $2 \times 2$ matrix. In the biquaternion framework the same object appears as a **slice of a cone by a hyperplane**. The three conditions that look independent in the matrix formalism — Hermitian, positive, trace one — become, in the algebra, membership in $\mathbb{M}_+$, a trace normalization, and a single quadratic inequality that is the causal condition of a Lorentzian form. Purity becomes a boundary condition; mixedness becomes the interior of the ball; and the zero divisors of the algebra at trace one, which elsewhere in the series describe light-like propagation, here describe the pure states.
 
@@ -34,7 +34,7 @@ $$
 \{e_0,\; i e_1,\; i e_2,\; i e_3\},
 $$
 
-so that $\mathbb{M}_+$ is a four-dimensional real vector space and the fixed-point set of the Hermitian conjugation $\dagger$. Its **trace** is twice the scalar part:
+so that $\mathbb{M}_+$ is a four-dimensional real vector space and the fixed-point set of the Hermitian conjugation ${}^{*}$. Its **trace** is twice the scalar part:
 
 $$
 \mathrm{Tr}(\tilde{H}) = 2 h_0 .
@@ -42,10 +42,10 @@ $$
 
 ### The Biquaternion Norm
 
-The quaternion conjugate $\bar{\tilde{H}} = h_0 e_0 - i\mathbf{h}$ is again Hermitian, so quaternion conjugation preserves $\mathbb{M}_+$; it leaves the scalar part and negates the imaginary vector part. The **biquaternion norm** is
+The quaternion conjugate $\tilde{H}^{\natural} = h_0 e_0 - i\mathbf{h}$ is again Hermitian, so quaternion conjugation preserves $\mathbb{M}_+$; it leaves the scalar part and negates the imaginary vector part. The **biquaternion norm** is
 
 $$
-N(\tilde{H}) = \tilde{H}\bar{\tilde{H}} = \bigl(h_0^2 - |\mathbf{h}|^2\bigr) e_0 ,
+N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural} = \bigl(h_0^2 - |\mathbf{h}|^2\bigr) e_0 ,
 $$
 
 a real-valued quadratic form on $\mathbb{M}_+$, of **signature $(1,3)$**: the scalar direction $e_0$ is positive, the three imaginary directions $i e_1, i e_2, i e_3$ are negative. This is the mirror image of the signature $(3,1)$ that the same biquaternion norm carries on the anti-Hermitian subspace $\mathbb{M}_-$.
@@ -347,13 +347,13 @@ Three checks are immediate. When both states are pure, $|\mathbf{r}| = |\mathbf{
 
 ## Symmetries of the Slice
 
-The structure just described is preserved by the unitary action. If $\tilde{U}$ is a unitary biquaternion, $\tilde{U}\tilde{U}^\dagger = e_0$, then the conjugation
+The structure just described is preserved by the unitary action. If $\tilde{U}$ is a unitary biquaternion, $\tilde{U}\tilde{U}^{*} = e_0$, then the conjugation
 
 $$
-\tilde{\rho} \;\longmapsto\; \tilde{U}\tilde{\rho}\tilde{U}^\dagger
+\tilde{\rho} \;\longmapsto\; \tilde{U}\tilde{\rho}\tilde{U}^{*}
 $$
 
-fixes the scalar part, hence preserves the trace-one hyperplane, and preserves the Hermitian property; because conjugation by a unitary is an algebra automorphism, it preserves the biquaternion norm $N(\tilde{U}\tilde{\rho}\tilde{U}^\dagger) = N(\tilde{\rho})$, hence preserves the future cone and its boundary. It therefore maps the Bloch ball to itself.
+fixes the scalar part, hence preserves the trace-one hyperplane, and preserves the Hermitian property; because conjugation by a unitary is an algebra automorphism, it preserves the biquaternion norm $N(\tilde{U}\tilde{\rho}\tilde{U}^{*}) = N(\tilde{\rho})$, hence preserves the future cone and its boundary. It therefore maps the Bloch ball to itself.
 
 On the Bloch vector the action is a rotation. The unit quaternions — the elements of $\mathbb{H}_{\mathbb{B}}$ of unit quaternion norm, forming $SU(2)$ — act by rotating the imaginary vector part and fixing the scalar part, so they act on the ball by the rotation group $SO(3)$. The general unitary group $U(2)$ acts through the same rotations, with a central phase that fixes every state. The maximally mixed state is the unique fixed point; the boundary sphere is homogeneous, and the purity radius is a complete invariant of the orbit. The slice is thus not merely a ball but a ball with its rotation group, and the geometry that makes the trace-one slice of the cone into a state space is exactly the geometry that the algebra's unitary group preserves.
 
@@ -396,11 +396,11 @@ Purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\mathbf{r}|^2)$, so t
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{C}_{\mathbb{B}}$ | Complex subspace (center), fixed points of quaternion conjugation |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, fixed points of complex conjugation |
-| $\mathbb{M}_+$ | Hermitian subspace, fixed points of $\dagger$ |
+| $\mathbb{M}_+$ | Hermitian subspace, fixed points of ${}^{*}$ |
 | $\mathbb{M}_-$, with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ | Anti-Hermitian subspace, fixed points of $\flat$ |
 | $\tilde{H} = h_0 e_0 + i\mathbf{h}$ | General Hermitian element |
 | $\mathrm{Tr}(\tilde{H}) = 2 h_0$ | Trace |
-| $N(\tilde{H}) = \tilde{H}\bar{\tilde{H}} = (h_0^2 - |\mathbf{h}|^2)e_0$ | Biquaternion norm, signature $(1,3)$ |
+| $N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural} = (h_0^2 - |\mathbf{h}|^2)e_0$ | Biquaternion norm, signature $(1,3)$ |
 | $\mathrm{Tr}(\tilde{H}\tilde{K}) = 2(h_0 k_0 + \mathbf{h}\cdot\mathbf{k})$ | Trace pairing, signature $(4,0)$ |
 | $\mathcal{S} = \{\mathrm{Sc} = \tfrac{1}{2}\}$ | Trace-one hyperplane |
 | $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ | State, Bloch vector $\mathbf{r}$ |

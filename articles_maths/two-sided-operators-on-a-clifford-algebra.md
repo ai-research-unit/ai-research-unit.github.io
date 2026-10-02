@@ -5,9 +5,9 @@
 
 Every operator used in the geometric layer of a Clifford algebra dresses an element of the algebra between two factors built from a single element, one on the left and one on the right. The reflection and the rotation of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* are the members of that family in which the right factor is the inverse. The other members are used elsewhere in the corpus, so the family is set up here once, with the properties that hold for all of its members, before any single member is singled out.
 
-The family has five members, indexed by the right factor: the **inner conjugation** $x\,y\,x^{-1}$ and the **signed inner conjugation** $\alpha(x)\,y\,x^{-1}$, both defined on the units; the **reversion sandwich** $x\,y\,x^{r}$ and the **conjugation sandwich** $x\,y\,\bar x$, both defined on the whole algebra; and the **Hermitian sandwich** $x\,y\,x^{\dagger}$, defined when the base carries an involution. The first two are the members used by the groups, the middle two need no invertibility, and the last belongs to the involutive theory.
+The family has five members, indexed by the right factor: the **inner conjugation** $x\,y\,x^{-1}$ and the **signed inner conjugation** $\alpha(x)\,y\,x^{-1}$, both defined on the units; the **reversion sandwich** $x\,y\,x^{r}$ and the **conjugation sandwich** $x\,y\,x^{\natural}$, both defined on the whole algebra; and the **Hermitian sandwich** $x\,y\,x^{\dagger}$, defined when the base carries an involution. The first two are the members used by the groups, the middle two need no invertibility, and the last belongs to the involutive theory.
 
-The Clifford algebra, the fundamental relation and the parity grading are from *Clifford Algebras*; the grade involution $\alpha$, reversion $x^{r}$ and Clifford conjugation $\bar x=\alpha(x^{r})$ are from the same entry and from *Clifford Algebras in Finite Dimensions*; the Clifford group $\Gamma(V,q)$, the Clifford norm $N(x)=x\bar x$ and the signed inner conjugation action are from *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the dagger, its involution of the base and the Hermitian sandwich are from *Involutive Clifford Algebras*. Nothing owned by those entries is re-derived. The base is a field $F$ of characteristic not $2$, with $q$ a non-degenerate quadratic form on the finite-dimensional space $V$ and $B$ its polar form.
+The Clifford algebra, the fundamental relation and the parity grading are from *Clifford Algebras*; the grade involution $\alpha$, reversion $x^{r}$ and Clifford conjugation $x^{\natural}=\alpha(x^{r})$ are from the same entry and from *Clifford Algebras in Finite Dimensions*; the Clifford group $\Gamma(V,q)$, the Clifford norm $N(x)=x x^{\natural}$ and the signed inner conjugation action are from *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the dagger, its involution of the base and the Hermitian sandwich are from *Hilbert Algebras*. Nothing owned by those entries is re-derived. The base is a field $F$ of characteristic not $2$, with $q$ a non-degenerate quadratic form on the finite-dimensional space $V$ and $B$ its polar form.
 
 ## The General Operator
 
@@ -52,9 +52,9 @@ The members are told apart by their value on the algebra unit and by their behav
 | inner conjugation | $1$ |
 | signed inner conjugation | $+1$ on $\mathrm{Cl}^0$, $-1$ on $\mathrm{Cl}^1$ |
 | reversion sandwich | $x\,x^{r}$ |
-| conjugation sandwich | $x\,\bar x=N(x)$ |
+| conjugation sandwich | $x\,x^{\natural}=N(x)$ |
 
-**Proof.** Immediate from the definition, since $1$ is the identity and $c(1)=1$; for the signed inner conjugation $\alpha(x)x^{-1}$ equals $x\,x^{-1}=1$ when $x$ is even and $-x\,x^{-1}=-1$ when $x$ is odd; for the conjugation sandwich $x\,\bar x$ is the Clifford norm.
+**Proof.** Immediate from the definition, since $1$ is the identity and $c(1)=1$; for the signed inner conjugation $\alpha(x)x^{-1}$ equals $x\,x^{-1}=1$ when $x$ is even and $-x\,x^{-1}=-1$ when $x$ is odd; for the conjugation sandwich $x\,x^{\natural}$ is the Clifford norm.
 
 **Remark.** The inner conjugation is the only member that fixes the unit identically. The signed inner conjugation fixes it on the even part and negates it on the odd part, which is the same parity sign that distinguishes the two actions of *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*. The anti-involution sandwiches return an element that measures the size of $x$: reversion returns $x\,x^{r}$ and Clifford conjugation returns the Clifford norm.
 
@@ -75,7 +75,7 @@ The family is indexed by the right factor, the left factor being the element its
 | inner conjugation | $x$ | $x^{-1}$ | $x\,y\,x^{-1}$ | the units |
 | signed inner conjugation | $\alpha(x)$ | $x^{-1}$ | $\alpha(x)\,y\,x^{-1}$ | the units |
 | reversion sandwich | $x$ | $x^{r}$ | $x\,y\,x^{r}$ | every $x$ |
-| conjugation sandwich | $x$ | $\bar x$ | $x\,y\,\bar x$ | every $x$ |
+| conjugation sandwich | $x$ | $x^{\natural}$ | $x\,y\,x^{\natural}$ | every $x$ |
 | Hermitian sandwich | $x$ | $x^{\dagger}$ | $x\,y\,x^{\dagger}$ | every $x$ |
 
 The right factors of the last three rows are the standard anti-involutions of the Clifford algebra, and the table carries the first structural fact: invertibility is required by the inverse alone. The first two operators are defined only where the inverse exists, that is on the unit group; the other three are defined on the whole algebra.
@@ -104,15 +104,15 @@ The two members with an anti-involution to the right are the ones that need no i
 
 The **reversion sandwich** $y\mapsto x\,y\,x^{r}$ is defined for every $x$, because reversion is defined on the whole algebra. It fixes the vectors: on $u\in V$ one has $u^{r}=u$. It is the member whose right factor is the identity on $V$.
 
-The **conjugation sandwich** $y\mapsto x\,y\,\bar x$ is defined for every $x$. It negates the vectors, since $\bar u=-u$ for $u\in V$, and its value on the unit is the Clifford norm, $\Phi(1)=x\bar x=N(x)$.
+The **conjugation sandwich** $y\mapsto x\,y\,x^{\natural}$ is defined for every $x$. It negates the vectors, since $u^{\natural}=-u$ for $u\in V$, and its value on the unit is the Clifford norm, $\Phi(1)=x x^{\natural}=N(x)$.
 
 **Proposition.** The reversion sandwich and the conjugation sandwich agree on the even part of the algebra and differ on the odd part by a sign. On the elements of the Clifford group the conjugation sandwich is the inner conjugation scaled by the norm.
 
-**Proof.** For the first statement, $\bar x=\alpha(x^{r})$ and $\alpha$ is the identity on $\mathrm{Cl}^0$; on an odd element $\alpha$ contributes the sign $-1$. The second statement is the scaling proposition of the next section.
+**Proof.** For the first statement, $x^{\natural}=\alpha(x^{r})$ and $\alpha$ is the identity on $\mathrm{Cl}^0$; on an odd element $\alpha$ contributes the sign $-1$. The second statement is the scaling proposition of the next section.
 
 ### The Involutive Member
 
-The **Hermitian sandwich** $y\mapsto x\,y\,x^{\dagger}$ has the dagger to the right. This is the one member that is not available in the general theory: the dagger requires an involution of the base, which is a structure the base need not carry. The member, its definition, its Hermitian forms and the unitary slice on which the dagger is the inverse are treated in *Involutive Clifford Algebras*, and nothing of that theory is used here; with the trivial involution the member reduces to the conjugation sandwich.
+The **Hermitian sandwich** $y\mapsto x\,y\,x^{\dagger}$ has the dagger to the right. This is the one member that is not available in the general theory: the dagger requires an involution of the base, which is a structure the base need not carry. The member, its definition, its Hermitian forms and the unitary slice on which the dagger is the inverse are treated in *Hilbert Algebras*, and nothing of that theory is used here; with the trivial involution the member reduces to the conjugation sandwich.
 
 ## Preservation of the Quadratic Space
 
@@ -128,15 +128,15 @@ For the signed inner conjugation this condition is the definition of the Cliffor
 
 ### The Scaling by the Norm
 
-**Proposition.** Let $x\in\Gamma(V,q)$ and let $N(x)=x\bar x$ be its Clifford norm. Then $\bar x=N(x)\,x^{-1}$ and
+**Proposition.** Let $x\in\Gamma(V,q)$ and let $N(x)=x x^{\natural}$ be its Clifford norm. Then $x^{\natural}=N(x)\,x^{-1}$ and
 
 $$
-x\,y\,\bar x=N(x)\,\bigl(x\,y\,x^{-1}\bigr)
+x\,y\,x^{\natural}=N(x)\,\bigl(x\,y\,x^{-1}\bigr)
 $$
 
 for every $y\in\mathrm{Cl}(V,q)$. The conjugation sandwich on $\Gamma$ is thus the inner conjugation scaled by the norm.
 
-**Proof.** The norm of an element of $\Gamma$ is a scalar, so $x\bar x=N(x)$, and multiplication on the right by $x^{-1}$ gives $\bar x=N(x)\,x^{-1}$. Substituting this expression for $\bar x$ and moving the scalar $N(x)$ to the front gives the identity.
+**Proof.** The norm of an element of $\Gamma$ is a scalar, so $x x^{\natural}=N(x)$, and multiplication on the right by $x^{-1}$ gives $x^{\natural}=N(x)\,x^{-1}$. Substituting this expression for $x^{\natural}$ and moving the scalar $N(x)$ to the front gives the identity.
 
 **Remark.** The scale separates two facts that the inverse sandwich carries at once. On the elements of $\Gamma$ with $N(x)=\pm1$ the conjugation sandwich and the inner conjugation coincide, the restriction to $V$ is an isometry, and the odd and the even elements give the reflections and the rotations. That is the content of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 
@@ -147,19 +147,19 @@ Preservation of $V$ does not follow from the weaker requirement that the scale b
 **Example.** In $\mathrm{Cl}_{3,0}$ the volume element $\omega=e_1e_2e_3$ is central, and for $x=1+\omega$ one has
 
 $$
-x\bar x=2\omega,
+x x^{\natural}=2\omega,
 $$
 
-which is central and not a scalar, while $x\,e_1\,\bar x=2e_2e_3$ is a bivector. Such an $x$ does not preserve $V$ and is not in the Clifford group. The scale must therefore be tested for being a scalar, and the scalar hypothesis on $N(x)$ for $x\in\Gamma$ is not a convenience.
+which is central and not a scalar, while $x\,e_1\,x^{\natural}=2e_2e_3$ is a bivector. Such an $x$ does not preserve $V$ and is not in the Clifford group. The scale must therefore be tested for being a scalar, and the scalar hypothesis on $N(x)$ for $x\in\Gamma$ is not a convenience.
 
 ## Worked Cases
 
 ### An Odd Element
 
-Let $x=e_1+e_2$ in $\mathrm{Cl}_{3,0}$. Then $x$ is odd, $x^{r}=x$, $\bar x=-x$, and
+Let $x=e_1+e_2$ in $\mathrm{Cl}_{3,0}$. Then $x$ is odd, $x^{r}=x$, $x^{\natural}=-x$, and
 
 $$
-N(x)=x\bar x=-2, \qquad x^{-1}=\tfrac{1}{2}(e_1+e_2).
+N(x)=x x^{\natural}=-2, \qquad x^{-1}=\tfrac{1}{2}(e_1+e_2).
 $$
 
 The four defined members act on the vector $e_1$ as follows.
@@ -181,9 +181,9 @@ For the unit rotor $R=e_1e_2$ one has $N(R)=1$, so the norm-one slice applies: t
 
 A **two-sided operator** on a Clifford algebra is the map $\Phi^{\theta,c}_x(y)=\theta(x)\,y\,c(x)$ attached to an automorphism $\theta$ and an anti-automorphism $c$. It is the product of a left translation and a right translation, it is $F$-linear in $y$, and it satisfies the composition law $\Phi_{xz}=\Phi_x\circ\Phi_z$, so that $x\mapsto\Phi_x$ is a homomorphism of the multiplicative monoid on the algebra and of the unit group on the units. Each member preserves the parity grading.
 
-The family has five members, indexed by the right factor. The **inner conjugation** $x\,y\,x^{-1}$ and the **signed inner conjugation** $\alpha(x)\,y\,x^{-1}$ are defined on the units and are the members that act on the quadratic space by isometries; they agree on the even part and differ on the odd part, which is why a reflection needs the graded form while a rotation does not. The **reversion sandwich** $x\,y\,x^{r}$ and the **conjugation sandwich** $x\,y\,\bar x$ are defined on the whole algebra, need no invertibility, fix and negate the vectors respectively, and agree on the even part; the value of the conjugation sandwich at the unit is the Clifford norm. The **Hermitian sandwich** $x\,y\,x^{\dagger}$ requires an involution of the base and belongs to *Involutive Clifford Algebras*.
+The family has five members, indexed by the right factor. The **inner conjugation** $x\,y\,x^{-1}$ and the **signed inner conjugation** $\alpha(x)\,y\,x^{-1}$ are defined on the units and are the members that act on the quadratic space by isometries; they agree on the even part and differ on the odd part, which is why a reflection needs the graded form while a rotation does not. The **reversion sandwich** $x\,y\,x^{r}$ and the **conjugation sandwich** $x\,y\,x^{\natural}$ are defined on the whole algebra, need no invertibility, fix and negate the vectors respectively, and agree on the even part; the value of the conjugation sandwich at the unit is the Clifford norm. The **Hermitian sandwich** $x\,y\,x^{\dagger}$ requires an involution of the base and belongs to *Hilbert Algebras*.
 
-The members differ at the unit by a parity sign and a norm: the inner conjugation fixes $1$, the signed inner conjugation gives $\pm1$ according to parity, the reversion sandwich gives $x\,x^{r}$, and the conjugation sandwich gives $N(x)$. The operators that carry geometry are those with $\Phi_x(V)\subseteq V$, which for the signed inner conjugation is the defining condition of the Clifford group. On $\Gamma$ the conjugation sandwich is the inner conjugation scaled by the norm, $x\,y\,\bar x=N(x)\,(x\,y\,x^{-1})$, so on the slice $N(x)=\pm1$ the two coincide and the odd and even elements give the reflections and the rotations. The scale must be a scalar and not merely central: in $\mathrm{Cl}_{3,0}$ the element $x=1+\omega$ has $x\bar x=2\omega$ central and sends $e_1$ to the bivector $2e_2e_3$, so it is not in the Clifford group.
+The members differ at the unit by a parity sign and a norm: the inner conjugation fixes $1$, the signed inner conjugation gives $\pm1$ according to parity, the reversion sandwich gives $x\,x^{r}$, and the conjugation sandwich gives $N(x)$. The operators that carry geometry are those with $\Phi_x(V)\subseteq V$, which for the signed inner conjugation is the defining condition of the Clifford group. On $\Gamma$ the conjugation sandwich is the inner conjugation scaled by the norm, $x\,y\,x^{\natural}=N(x)\,(x\,y\,x^{-1})$, so on the slice $N(x)=\pm1$ the two coincide and the odd and even elements give the reflections and the rotations. The scale must be a scalar and not merely central: in $\mathrm{Cl}_{3,0}$ the element $x=1+\omega$ has $x x^{\natural}=2\omega$ central and sends $e_1$ to the bivector $2e_2e_3$, so it is not in the Clifford group.
 
 ## Summary of Notation
 
@@ -196,10 +196,10 @@ The members differ at the unit by a parity sign and a norm: the inner conjugatio
 | $x\,y\,x^{-1}$ | Inner conjugation, defined on the units |
 | $\alpha(x)\,y\,x^{-1}$ | Signed inner conjugation, defined on the units |
 | $x\,y\,x^{r}$ | Reversion sandwich, defined for every $x$ |
-| $x\,y\,\bar x$ | Conjugation sandwich, defined for every $x$ |
+| $x\,y\,x^{\natural}$ | Conjugation sandwich, defined for every $x$ |
 | $x\,y\,x^{\dagger}$ | Hermitian sandwich, needs an involution of the base |
 | $\Gamma(V,q)$ | Clifford group, the $x$ with $\Phi_x(V)\subseteq V$ |
-| $N(x)=x\bar x$ | Clifford norm, the value of the conjugation sandwich at $1$ |
+| $N(x)=x x^{\natural}$ | Clifford norm, the value of the conjugation sandwich at $1$ |
 | $\rho_u$ | Reflection in $u^{\perp}$, a value of the signed inner conjugation |
 
 ## Further Reading

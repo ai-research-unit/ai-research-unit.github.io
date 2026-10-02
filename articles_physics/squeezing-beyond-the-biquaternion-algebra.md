@@ -41,7 +41,7 @@ $$
 is a central element of $\mathbb{B}$. Its generator $\tfrac12(\bar\xi a^2-\xi a^{\dagger2})$ is anti-Hermitian, so $S$ is unitary in the framework's sense,
 
 $$
-S\,S^\dagger=e_0 ,
+S\,S^{*}=e_0 ,
 $$
 
 and it is a **unitary central element**, not a unit-norm rotor. It acts on a state-module element by scalar multiplication,
@@ -55,18 +55,18 @@ so it changes the envelope and leaves the module orientation exactly as it was. 
 The standard Bogoliubov transformation follows from the central algebra,
 
 $$
-S^\dagger\,a\,S=a\cosh r-e^{\,i\theta}\sinh r\,a^\dagger ,
+S^{*}\,a\,S=a\cosh r-e^{\,i\theta}\sinh r\,a^\dagger ,
 \qquad
-S^\dagger\,a^\dagger\,S=a^\dagger\cosh r-e^{-i\theta}\sinh r\,a ,
+S^{*}\,a^\dagger\,S=a^\dagger\cosh r-e^{-i\theta}\sinh r\,a ,
 $$
 
 and in terms of quadratures it is the general Bogoliubov dilation. Writing $\hat x$ and $\hat p$ in terms of $a$ and $a^\dagger$ and using their transformation,
 
 $$
-S^\dagger\hat xS=\sqrt{\frac{\hbar}{2m\omega}}\Big[(a+a^\dagger)\cosh r-\sinh r\big(e^{\,i\theta}a^\dagger+e^{-i\theta}a\big)\Big],
+S^{*}\hat xS=\sqrt{\frac{\hbar}{2m\omega}}\Big[(a+a^\dagger)\cosh r-\sinh r\big(e^{\,i\theta}a^\dagger+e^{-i\theta}a\big)\Big],
 $$
 
-which for real $\xi$ ($\theta=0$) reduces to the pure dilation $S^\dagger\hat xS=e^{-r}\hat x$ and $S^\dagger\hat pS=e^{r}\hat p$, while for $\theta=\pi/2$ it becomes a rotation–dilation mixing $\hat x$ and $\hat p$. The transformation is a central Bogoliubov rotation; in the biquaternion reading it is a central automorphism of the oscillator algebra, and it never touches the module. The transformation is standard; the framework's statement is that its generator is central.
+which for real $\xi$ ($\theta=0$) reduces to the pure dilation $S^{*}\hat xS=e^{-r}\hat x$ and $S^{*}\hat pS=e^{r}\hat p$, while for $\theta=\pi/2$ it becomes a rotation–dilation mixing $\hat x$ and $\hat p$. The transformation is a central Bogoliubov rotation; in the biquaternion reading it is a central automorphism of the oscillator algebra, and it never touches the module. The transformation is standard; the framework's statement is that its generator is central.
 
 ### The squeezed vacuum and the uncertainty product
 
@@ -274,7 +274,7 @@ q-deformations, with $[J_+,J_-]=\frac{q^{2J_3}-q^{-2J_3}}{q-q^{-1}}\to2J_3$ as $
 | $a,a^\dagger$ | Central oscillator operators, $[a,a^\dagger]=e_0$ |
 | $S(\xi)=\exp[\frac12(\bar\xi a^2-\xi a^{\dagger2})]$ | Squeeze operator; central unitary |
 | $\xi=re^{i\theta}$ | Squeeze parameter |
-| $S^\dagger aS=a\cosh r-e^{i\theta}\sinh r\,a^\dagger$ | Bogoliubov transformation |
+| $S^{*} aS=a\cosh r-e^{i\theta}\sinh r\,a^\dagger$ | Bogoliubov transformation |
 | $\Delta x^2=\frac{\hbar}{2m\omega}e^{-2r}$, $\Delta p^2=\frac{\hbar m\omega}{2}e^{2r}$ | Squeezed-vacuum variances |
 | $E_k=\epsilon e_k$ | Contracting basis |
 | $\mathrm{Cl}_{p,q}$, $\mathbb{O}$ | Clifford algebras; octonions (non-associative) |

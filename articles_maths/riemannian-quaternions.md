@@ -8,7 +8,7 @@ The article develops three things. The first is the frame and the interval: the 
 
 The treatment is mathematical. No physical object is introduced and no physical interpretation is invoked; the source's reading of one example as a field of a central mass is recorded as the source's and is not used. The algebra is *Quaternion Algebra*; the norm and the scalar product are *Quaternion Norm and Invertibility*; the quadratic-form vocabulary, the polarisation and the diagonal form are *Quadratic Forms and Polarisation*; the fixed-basis form $\mathrm{Sc}(g\tilde xg\tilde x)$ of a single quaternion, which is the sibling of the present construction, is *Quaternion Metrics*; the moving frame of the classical local differential geometry of three dimensions, in the biquaternion calculus, is *Curves and Surfaces in the Biquaternion Moving Frame*, and the Riemannian theory of curvature and the Levi-Civita connection is *Curvature and Geodesics* and *Riemannian Geometry*; nothing of those is re-derived here.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_k^2=-e_0$, $e_1e_2=e_3$. A quaternion is $\tilde x = x_0e_0+\mathbf x$, with scalar part $\mathrm{Sc}\,\tilde x = x_0$ and vector part $\mathbf x = \mathrm{Vect}\,\tilde x$, the conjugate is $\bar{\tilde x} = x_0e_0-\mathbf x$, and the norm is $N(\tilde x) = \tilde x\bar{\tilde x} = x_0^2+|\mathbf x|^2$. The frame elements are written with a hat, $\hat\imath_0,\hat\imath_1,\hat\imath_2,\hat\imath_3$, and their scalar multiples with a plain letter, $\hat\imath_\mu = \imath_\mu e_\mu$ with $\imath_\mu\neq0$ real.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_k^2=-e_0$, $e_1e_2=e_3$. A quaternion is $\tilde x = x_0e_0+\mathbf x$, with scalar part $\mathrm{Sc}\,\tilde x = x_0$ and vector part $\mathbf x = \mathrm{Vect}\,\tilde x$, the conjugate is $\tilde{x}^{\natural} = x_0e_0-\mathbf x$, and the norm is $N(\tilde x) = \tilde x\tilde{x}^{\natural} = x_0^2+|\mathbf x|^2$. The frame elements are written with a hat, $\hat\imath_0,\hat\imath_1,\hat\imath_2,\hat\imath_3$, and their scalar multiples with a plain letter, $\hat\imath_\mu = \imath_\mu e_\mu$ with $\imath_\mu\neq0$ real.
 
 ## The Frame
 
@@ -204,7 +204,7 @@ The construction is the second of the two ways presented in the corpus of making
 | $e_0=1,e_1,e_2,e_3$ | Fixed basis, $e_k^2=-e_0$ |
 | $\tilde x = x_0e_0+\mathbf x$ | Quaternion, scalar part $x_0$, vector part $\mathbf x$ |
 | $\mathrm{Sc},\mathrm{Vect}$ | Scalar and vector part functionals |
-| $N(\tilde x)=\tilde x\bar{\tilde x}$ | Quaternion norm |
+| $N(\tilde x)=\tilde x\tilde{x}^{\natural}$ | Quaternion norm |
 | $\imath_0,\imath_1,\imath_2,\imath_3$ | Frame functions on the domain |
 | $\hat\imath_\mu=\imath_\mu e_\mu$ | Frame elements, $\hat\imath_0^2=\imath_0^2$, $\hat\imath_k^2=-\imath_k^2$ |
 | $w_0,w_1,w_2,w_3$ | Parity weights, $1,\tfrac13,\tfrac13,\tfrac13$ |

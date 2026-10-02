@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The forms considered so far have taken values in the base field. When the space is the underlying vector space of an algebra, the natural quadratic forms are the **norms** $N(x) = x\bar x$, whose values lie in the centre of the algebra, and the vanishing of $N$ controls the multiplicative structure: the non-invertible elements are exactly the zeros of the norm. Closely related are the **composition laws**, identities $N(xy) = N(x)N(y)$ that turn a quadratic form into a multiplicative invariant, and the classical classification of the algebras carrying such a form.
+The forms considered so far have taken values in the base field. When the space is the underlying vector space of an algebra, the natural quadratic forms are the **norms** $N(x) = x x^{\natural}$, whose values lie in the centre of the algebra, and the vanishing of $N$ controls the multiplicative structure: the non-invertible elements are exactly the zeros of the norm. Closely related are the **composition laws**, identities $N(xy) = N(x)N(y)$ that turn a quadratic form into a multiplicative invariant, and the classical classification of the algebras carrying such a form.
 
-This article develops quadratic forms with values in an algebra, the projective quadrics they define, the norms of the algebra of complex numbers, the quaternions and the biquaternions, the Cayley–Dickson doubling that produces the octonions from the quaternions, and the theorem of Hurwitz that a composition law exists only in dimensions one, two, four and eight. The base is a field $F$ of characteristic not $2$. The involution $\bar{\cdot}$ and the reduced norm are from *Involutive Clifford Algebras*; the biquaternion conventions are, and the split complex and dual numbers are from *Dual Numbers Algebra*. The quadratic-form vocabulary and the notion of isometry are from *Bilinear Forms* and *Quadratic Forms and Polarisation*; the Clifford algebra of a norm is not used here but is developed in *Clifford Algebras*.
+This article develops quadratic forms with values in an algebra, the projective quadrics they define, the norms of the algebra of complex numbers, the quaternions and the biquaternions, the Cayley–Dickson doubling that produces the octonions from the quaternions, and the theorem of Hurwitz that a composition law exists only in dimensions one, two, four and eight. The base is a field $F$ of characteristic not $2$. The involution ${}^{\natural}$ and the reduced norm are from *Involutive Clifford Algebras*; the biquaternion conventions are, and the split complex and dual numbers are from *Dual Numbers Algebra*. The quadratic-form vocabulary and the notion of isometry are from *Bilinear Forms* and *Quadratic Forms and Polarisation*; the Clifford algebra of a norm is not used here but is developed in *Clifford Algebras*.
 
 ## Forms with Values in an Algebra
 
@@ -27,7 +27,7 @@ is $A$-valued and bilinear. This is the definition of *Quadratic Forms and Polar
 
 **Definition.** The $A$-valued form $Q$ is **non-degenerate** if the induced map $V \to \operatorname{Hom}_F(V, A)$, $x \mapsto B_Q(x, -)$, is injective, and **strongly non-degenerate** if it is an isomorphism.
 
-Strong non-degeneracy is unavailable for $\dim_F A > 1$: the target $\operatorname{Hom}_F(V, A)$ has $F$-dimension $(\dim_F V)(\dim_F A)$, so no map $V \to \operatorname{Hom}_F(V, A)$ with $\dim_F A > 1$ is an isomorphism, and the two conditions agree only for $\dim_F A = 1$. The notion the applications require is non-degeneracy after extension of scalars: $Q$ is **non-degenerate over $A$** when $x \mapsto B_Q(x, -)$ has trivial kernel and the $A$-bilinear form $B_Q \otimes_F A$ on $V \otimes_F A$ is non-degenerate in the sense of *Bilinear Forms*. For the norms of *Involutive Clifford Algebras* the polar form is $B_N(x, y) = \tfrac{1}{2}\operatorname{Trd}(x\bar y)$, so the condition is the non-degeneracy of the reduced trace pairing. The zeros of a norm carry the multiplicative structure: $N(x) = 0$ for some $x \neq 0$ exactly when $x$ is a zero divisor, so that for a composition algebra the norm is isotropic exactly when the algebra is not a division algebra.
+Strong non-degeneracy is unavailable for $\dim_F A > 1$: the target $\operatorname{Hom}_F(V, A)$ has $F$-dimension $(\dim_F V)(\dim_F A)$, so no map $V \to \operatorname{Hom}_F(V, A)$ with $\dim_F A > 1$ is an isomorphism, and the two conditions agree only for $\dim_F A = 1$. The notion the applications require is non-degeneracy after extension of scalars: $Q$ is **non-degenerate over $A$** when $x \mapsto B_Q(x, -)$ has trivial kernel and the $A$-bilinear form $B_Q \otimes_F A$ on $V \otimes_F A$ is non-degenerate in the sense of *Bilinear Forms*. For the norms of *Involutive Clifford Algebras* the polar form is $B_N(x, y) = \tfrac{1}{2}\operatorname{Trd}(x y^{\natural})$, so the condition is the non-degeneracy of the reduced trace pairing. The zeros of a norm carry the multiplicative structure: $N(x) = 0$ for some $x \neq 0$ exactly when $x$ is a zero divisor, so that for a composition algebra the norm is isotropic exactly when the algebra is not a division algebra.
 
 ### The Quadric
 
@@ -85,15 +85,15 @@ Regarded over $\mathbb{C}$ itself, the form $x^2 + y^2 = (x + iy)(x - iy)$ facto
 
 ### Definition and Properties
 
-Let $\mathbb{H}$ be the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$. The conjugation $\bar{\cdot}$ negates the vector part, and the **norm** is
+Let $\mathbb{H}$ be the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$. The conjugation ${}^{\natural}$ negates the vector part, and the **norm** is
 
 $$
-N(x) = x\bar x = x_0^2 + x_1^2 + x_2^2 + x_3^2, \qquad x = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3.
+N(x) = x x^{\natural} = x_0^2 + x_1^2 + x_2^2 + x_3^2, \qquad x = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3.
 $$
 
 **Proposition.** The norm of $\mathbb{H}$ is positive definite and multiplicative, $N(xy) = N(x)N(y)$; hence $\mathbb{H}$ is a division algebra over $\mathbb{R}$.
 
-**Proof.** Positive definiteness is immediate from the displayed formula. For multiplicativity, $\overline{xy} = \bar y\bar x$, so $N(xy) = xy\,\overline{xy} = xy\bar y\bar x = xN(y)\bar x = N(y)x\bar x = N(x)N(y)$, using that the real number $N(y)$ is central. A nonzero $x$ then has inverse $\bar x/N(x)$.
+**Proof.** Positive definiteness is immediate from the displayed formula. For multiplicativity, $(xy)^{\natural} = y^{\natural} x^{\natural}$, so $N(xy) = xy\,(xy)^{\natural} = xy y^{\natural} x^{\natural} = xN(y)x^{\natural} = N(y)x x^{\natural} = N(x)N(y)$, using that the real number $N(y)$ is central. A nonzero $x$ then has inverse $x^{\natural}/N(x)$.
 
 ### The Quadric in Both Cases
 
@@ -110,7 +110,7 @@ Over $\mathbb{R}$ the norm $x_0^2 + x_1^2 + x_2^2 + x_3^2$ is anisotropic and it
 Let $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ be the biquaternion algebra, with central unit $i$ of square $-1$ and basis $e_0, e_1, e_2, e_3$ over $\mathbb{C}$, the conventions. The **norm** is
 
 $$
-N(\tilde Q) = \tilde Q \bar{\tilde Q} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2, \qquad \tilde Q = \sum_{\mu=0}^{3} Q_\mu e_\mu,
+N(\tilde Q) = \tilde Q \tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2, \qquad \tilde Q = \sum_{\mu=0}^{3} Q_\mu e_\mu,
 $$
 
 a $\mathbb{C}$-valued form that is multiplicative, $N(\tilde Q \tilde R) = N(\tilde Q)N(\tilde R)$.
@@ -133,10 +133,10 @@ a $\mathbb{C}$-valued form that is multiplicative, $N(\tilde Q \tilde R) = N(\ti
 
 The composition algebras of dimensions $1, 2, 4$ and $8$ are built from one another by a single recursive step, which doubles the dimension and keeps the norm multiplicative.
 
-**Definition.** Let $A$ be an algebra over $F$ with an involution $\bar{\cdot}$, and let $A' = A \oplus A$ as an $F$-space. The **double** of $A$ is $A'$ with the multiplication and involution
+**Definition.** Let $A$ be an algebra over $F$ with an involution ${}^{\natural}$, and let $A' = A \oplus A$ as an $F$-space. The **double** of $A$ is $A'$ with the multiplication and involution
 
 $$
-(a, b)(c, d) = (ac - \bar d\, b, \; da + b\bar c), \qquad \overline{(a, b)} = (\bar a, -b).
+(a, b)(c, d) = (ac - d^{\natural}\, b, \; da + b c^{\natural}), \qquad \overline{(a, b)} = (a^{\natural}, -b).
 $$
 
 **Proposition.** The double $A'$ is an algebra with unit $(1, 0)$, the displayed map is an involution of $A'$, and the **double norm**
@@ -145,15 +145,15 @@ $$
 N'(a, b) = (a, b)\overline{(a, b)} = \bigl(N(a) + N(b),\, 0\bigr)
 $$
 
-is the $F$-valued quadratic form $N'(a,b) = N(a) + N(b)$, where $N(a) = a\bar a$ is the norm of $A$.
+is the $F$-valued quadratic form $N'(a,b) = N(a) + N(b)$, where $N(a) = a a^{\natural}$ is the norm of $A$.
 
 **Proof.** The unit: $(1,0)(c,d) = (c - 0, d + 0) = (c,d)$ and $(a,b)(1,0) = (a - 0, 0 + b) = (a,b)$. For the involution one verifies $\overline{(a,b)(c,d)} = \overline{(c,d)}\,\overline{(a,b)}$ and $\overline{\overline{(a,b)}} = (a,b)$ by expanding the definitions. For the norm,
 
 $$
-(a, b)(\bar a, -b) = \bigl(a\bar a - \overline{(-b)}b, \; (-b)a + b\bar{\bar a}\bigr) = \bigl(N(a) + \bar b b, \; -ba + ba\bigr) = \bigl(N(a) + N(b), 0\bigr),
+(a, b)(a^{\natural}, -b) = \bigl(a a^{\natural} - \overline{(-b)}b, \; (-b)a + b(a^{\natural})^{\natural}\bigr) = \bigl(N(a) +  b^{\natural} b, \; -ba + ba\bigr) = \bigl(N(a) + N(b), 0\bigr),
 $$
 
-using $\overline{(-b)} = -\bar b$ and $\bar{\bar a} = a$.
+using $\overline{(-b)} = -b^{\natural}$ and $(a^{\natural})^{\natural} = a$.
 
 **Theorem (Cayley–Dickson).** If $A$ is an associative composition algebra over $F$, then its double $A'$ is a composition algebra with the norm $N'$, and $\dim_F A' = 2\dim_F A$.
 
@@ -177,7 +177,7 @@ $$
 
 **Proof.** The basis is that of the recursive construction, with $e_1, e_2, e_3$ the quaternion units and $e_4 = (0, 1)$ the new generator of the doubling ($e_4^2 = -1$); the two products are computed from the multiplication formula and differ by a sign.
 
-Non-associativity is thus a phenomenon of dimension $8$: the octonions are a division algebra, in which every nonzero element is invertible with inverse $\bar x/N(x)$, and the elements of norm $1$ are closed under multiplication, but they form only a loop, not a group, because the associative law fails. The two-square, four-square and eight-square identities of the next section are the coordinate forms of the multiplicativity of the norms of $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$.
+Non-associativity is thus a phenomenon of dimension $8$: the octonions are a division algebra, in which every nonzero element is invertible with inverse $x^{\natural}/N(x)$, and the elements of norm $1$ are closed under multiplication, but they form only a loop, not a group, because the associative law fails. The two-square, four-square and eight-square identities of the next section are the coordinate forms of the multiplicativity of the norms of $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$.
 
 ### The Split Cases
 
@@ -190,7 +190,7 @@ The doubling above appends a new generator of square $-1$. Allowing a general sc
 **Definition.** Let $A$ be an algebra with involution over $F$ and let $\mu \in F^\times$. The **$\mu$-double** of $A$ is $A_\mu = A \oplus A$ with
 
 $$
-(a, b)(c, d) = (ac + \mu\, \bar d\, b, \; da + b\bar c), \qquad \overline{(a,b)} = (\bar a, -b).
+(a, b)(c, d) = (ac + \mu\,  d^{\natural}\, b, \; da + b c^{\natural}), \qquad \overline{(a,b)} = (a^{\natural}, -b).
 $$
 
 The value $\mu = -1$ recovers the doubling of the previous section. The conjugation is again an involution, and the **norm** of the $\mu$-double is
@@ -201,7 +201,7 @@ $$
 
 so that $N_\mu = N \perp (-\mu)N$ as an orthogonal sum of two copies of $N$, the second scaled by $-\mu$.
 
-**Proof.** As for the doubling: $(a,b)(\bar a, -b) = (a\bar a + \mu\overline{(-b)}b, -ba + b\bar{\bar a}) = (N(a) - \mu N(b), 0)$, using $\overline{(-b)} = -\bar b$.
+**Proof.** As for the doubling: $(a,b)(a^{\natural}, -b) = (a a^{\natural} + \mu\overline{(-b)}b, -ba + b(a^{\natural})^{\natural}) = (N(a) - \mu N(b), 0)$, using $\overline{(-b)} = - b^{\natural}$.
 
 **Proposition.** If the norm $N$ of $A$ is the $n$-fold Pfister form $\langle\!\langle a_1, \ldots, a_n\rangle\!\rangle$, then
 
@@ -242,7 +242,7 @@ $$
 
 The form $N$ is the **norm** of the composition algebra, and the identity is a **composition law**.
 
-**Example.** The field $F$ with $N(x) = x^2$ is a composition algebra of dimension $1$; the complex numbers with $N(z) = z\bar z$ are a composition algebra of dimension $2$; the quaternions with $N(x) = x\bar x$ are one of dimension $4$. The biquaternions over $\mathbb{R}$ are not a composition algebra, because their norm takes values in $\mathbb{C}$ rather than in $\mathbb{R}$; over $\mathbb{C}$, however, $\mathbb{B} \cong M_2(\mathbb{C})$ is a split composition algebra of dimension $4$ with the determinant as its norm.
+**Example.** The field $F$ with $N(x) = x^2$ is a composition algebra of dimension $1$; the complex numbers with $N(z) = z\bar z$ are a composition algebra of dimension $2$; the quaternions with $N(x) = x x^{\natural}$ are one of dimension $4$. The biquaternions over $\mathbb{R}$ are not a composition algebra, because their norm takes values in $\mathbb{C}$ rather than in $\mathbb{R}$; over $\mathbb{C}$, however, $\mathbb{B} \cong M_2(\mathbb{C})$ is a split composition algebra of dimension $4$ with the determinant as its norm.
 
 **Proposition.** In a composition algebra the polar form of the norm satisfies
 
@@ -290,11 +290,11 @@ where $z = (x_1 + x_2e_1 + x_3e_2 + x_4e_3)(y_1 + y_2e_1 + y_3e_2 + y_4e_3)$ is 
 
 A **quadratic form with values in a commutative algebra** $A$ is a function $Q : V \to A$ that is homogeneous of degree two and whose polar form $B_Q(x, y) = \tfrac{1}{2}(Q(x+y) - Q(x) - Q(y))$ is $A$-bilinear. Expanding in a basis of $A$ produces scalar forms whose common zero locus is the **quadric** $\mathcal{Q}(Q) \subseteq \mathbb{P}(V)$.
 
-The **norm** $N(x) = x\bar x$ of an algebra with involution is the central example. For a quadratic field extension $K = F(\sqrt d)$ it is $a^2 - db^2$, anisotropic exactly when $K$ is a field; for a separable extension of degree $n > 2$ it is a form of degree $n$, hence not quadratic. For the complex numbers it is $x^2 + y^2$, positive definite and anisotropic over $\mathbb{R}$ and isotropic over $\mathbb{C}$. For the quaternions it is $x_0^2 + x_1^2 + x_2^2 + x_3^2$, positive definite and multiplicative, making $\mathbb{H}$ a division algebra; over $\mathbb{C}$ the quaternion algebra splits and this form becomes the determinant on $M_2(\mathbb{C})$, whose nonzero zeros are the rank-one matrices and whose quadric is the Segre quadric $\mathbb{P}^1 \times \mathbb{P}^1$. For the biquaternions the norm is $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$, the reduced norm, equal to the determinant under $\mathbb{B} \cong M_2(\mathbb{C})$; it is isotropic and its nonzero zeros are the zero divisors. The norms of the quadratic extension and of the quaternions give the complex and quaternion composition laws $N(xy) = N(x)N(y)$, hence the two-square and four-square identities, and **Hurwitz's theorem** states that a composition algebra has dimension $1, 2, 4$ or $8$, the four anisotropic real cases being $\mathbb{R}, \mathbb{C}, \mathbb{H}$ and the octonions.
+The **norm** $N(x) = x x^{\natural}$ of an algebra with involution is the central example. For a quadratic field extension $K = F(\sqrt d)$ it is $a^2 - db^2$, anisotropic exactly when $K$ is a field; for a separable extension of degree $n > 2$ it is a form of degree $n$, hence not quadratic. For the complex numbers it is $x^2 + y^2$, positive definite and anisotropic over $\mathbb{R}$ and isotropic over $\mathbb{C}$. For the quaternions it is $x_0^2 + x_1^2 + x_2^2 + x_3^2$, positive definite and multiplicative, making $\mathbb{H}$ a division algebra; over $\mathbb{C}$ the quaternion algebra splits and this form becomes the determinant on $M_2(\mathbb{C})$, whose nonzero zeros are the rank-one matrices and whose quadric is the Segre quadric $\mathbb{P}^1 \times \mathbb{P}^1$. For the biquaternions the norm is $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$, the reduced norm, equal to the determinant under $\mathbb{B} \cong M_2(\mathbb{C})$; it is isotropic and its nonzero zeros are the zero divisors. The norms of the quadratic extension and of the quaternions give the complex and quaternion composition laws $N(xy) = N(x)N(y)$, hence the two-square and four-square identities, and **Hurwitz's theorem** states that a composition algebra has dimension $1, 2, 4$ or $8$, the four anisotropic real cases being $\mathbb{R}, \mathbb{C}, \mathbb{H}$ and the octonions.
 
-The recursion behind that list is the **Cayley–Dickson doubling**: on $A' = A \oplus A$ with $(a,b)(c,d) = (ac - \bar db, da + b\bar c)$ and $\overline{(a,b)} = (\bar a, -b)$, the norm $N'(a,b) = N(a) + N(b)$ is multiplicative whenever $A$ is an associative composition algebra, and the dimension doubles. Starting from $\mathbb{R}$ this yields $\mathbb{C}$, $\mathbb{H}$ and the octonions $\mathbb{O}$, whose norm is the sum of eight squares; the double is associative exactly when the algebra doubled is associative and commutative, so associativity survives the first two steps and fails at $\mathbb{H} \to \mathbb{O}$, where $(e_1e_2)e_4 \neq e_1(e_2e_4)$. Replacing the new generator of square $-1$ by one of square $+1$ produces the split composition algebras, and over $\mathbb{R}$ there are exactly two composition algebras in each of the dimensions $2$, $4$ and $8$, one anisotropic and one split.
+The recursion behind that list is the **Cayley–Dickson doubling**: on $A' = A \oplus A$ with $(a,b)(c,d) = (ac - d^{\natural}b, da + bc^{\natural})$ and $\overline{(a,b)} = (a^{\natural}, -b)$, the norm $N'(a,b) = N(a) + N(b)$ is multiplicative whenever $A$ is an associative composition algebra, and the dimension doubles. Starting from $\mathbb{R}$ this yields $\mathbb{C}$, $\mathbb{H}$ and the octonions $\mathbb{O}$, whose norm is the sum of eight squares; the double is associative exactly when the algebra doubled is associative and commutative, so associativity survives the first two steps and fails at $\mathbb{H} \to \mathbb{O}$, where $(e_1e_2)e_4 \neq e_1(e_2e_4)$. Replacing the new generator of square $-1$ by one of square $+1$ produces the split composition algebras, and over $\mathbb{R}$ there are exactly two composition algebras in each of the dimensions $2$, $4$ and $8$, one anisotropic and one split.
 
-The doubling with a general parameter $\mu$ has $(a,b)(c,d) = (ac + \mu\bar db, da + b\bar c)$ and norm $N_\mu = N \perp (-\mu)N$, so that the parameter is appended to the Pfister form: if $N \cong \langle\!\langle a_1, \ldots, a_n\rangle\!\rangle$ then $N_\mu \cong \langle\!\langle a_1, \ldots, a_n, \mu\rangle\!\rangle$. Iterating with $\mu = -1$ gives $\mathbb{C}, \mathbb{H}, \mathbb{O}$ with positive definite norms $\langle\!\langle -1\rangle\!\rangle = \langle 1,1\rangle$, $\langle\!\langle -1,-1\rangle\!\rangle$ and $\langle\!\langle -1,-1,-1\rangle\!\rangle$, while iterating with $\mu = +1$ gives the split complex numbers $\mathbb{D}$, the split quaternions $M_2(\mathbb{R})$ and the split octonions, with isotropic norms from dimension $2$ onwards. **The classification of the composition algebras** states that the composition algebras of dimension at least $2$ are the separable quadratic algebras, the quaternion algebras and the octonion algebras, and that such an algebra is determined up to isomorphism by its norm, the possible norms being exactly the Pfister forms of dimension $2, 4, 8$.
+The doubling with a general parameter $\mu$ has $(a,b)(c,d) = (ac + \mud^{\natural}b, da + b c^{\natural})$ and norm $N_\mu = N \perp (-\mu)N$, so that the parameter is appended to the Pfister form: if $N \cong \langle\!\langle a_1, \ldots, a_n\rangle\!\rangle$ then $N_\mu \cong \langle\!\langle a_1, \ldots, a_n, \mu\rangle\!\rangle$. Iterating with $\mu = -1$ gives $\mathbb{C}, \mathbb{H}, \mathbb{O}$ with positive definite norms $\langle\!\langle -1\rangle\!\rangle = \langle 1,1\rangle$, $\langle\!\langle -1,-1\rangle\!\rangle$ and $\langle\!\langle -1,-1,-1\rangle\!\rangle$, while iterating with $\mu = +1$ gives the split complex numbers $\mathbb{D}$, the split quaternions $M_2(\mathbb{R})$ and the split octonions, with isotropic norms from dimension $2$ onwards. **The classification of the composition algebras** states that the composition algebras of dimension at least $2$ are the separable quadratic algebras, the quaternion algebras and the octonion algebras, and that such an algebra is determined up to isomorphism by its norm, the possible norms being exactly the Pfister forms of dimension $2, 4, 8$.
 
 ## Summary of Notation
 
@@ -310,7 +310,7 @@ The doubling with a general parameter $\mu$ has $(a,b)(c,d) = (ac + \mu\bar db, 
 | $N$, $N_{K/F}$ | Norm; field norm |
 | $K = F(\sqrt d)$ | Separable quadratic extension |
 | $B_N$ | Polar form of the norm, $B_N(x,y) = \tfrac12(N(x+y)-N(x)-N(y))$ |
-| $\bar{\cdot}$ | Conjugation on $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$ |
+| ${}^{\natural}$ | Conjugation on $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$ |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Central complex unit, $i^2 = -1$, in $\mathbb{B}$ |
 | $j$ | Split unit, $j^2 = +1$, in $\mathbb{D}$ and $\mathbb{H}_{\mathbb{D}}$ |
@@ -318,7 +318,7 @@ The doubling with a general parameter $\mu$ has $(a,b)(c,d) = (ac + \mu\bar db, 
 | $\mathbb{H}_{\mathbb{D}}$ | Split biquaternions, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ |
 | $\mathbb{O}$ | Octonions, the double of $\mathbb{H}$ |
 | $A'$ | Double of $A$: $A \oplus A$ with the Cayley–Dickson product |
-| $(a,b)(c,d) = (ac - \bar d b, da + b\bar c)$ | Cayley–Dickson multiplication |
+| $(a,b)(c,d) = (ac -  d^{\natural} b, da + bc^{\natural})$ | Cayley–Dickson multiplication |
 | $N'(a,b) = N(a) + N(b)$ | Norm of the double |
 | $\mu$ | Parameter of the generalised doubling, $\mu \in F^\times$ |
 | $A_\mu$ | $\mu$-double of $A$ |

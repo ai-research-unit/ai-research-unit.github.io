@@ -19,39 +19,39 @@ $$
 e_1^2 = e_2^2 = e_3^2 = e_1e_2e_3 = -e_0, \qquad e_1e_2 = e_3, \quad e_2e_3 = e_1, \quad e_3e_1 = e_2,
 $$
 
-and the products in the opposite order are the negatives. A quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, and the quaternion norm $N$ is that of *Quaternion Norm and Invertibility*, named here and not defined again.
+and the products in the opposite order are the negatives. A quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, and the quaternion norm $N$ is that of *Quaternion Norm and Invertibility*, named here and not defined again.
 
 ## The Three Involutions
 
 **Definition.** The three **involutions** of the quaternion algebra are the real-linear maps
 
 $$
-\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3, \qquad -\bar{\tilde q} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad -\tilde q = -q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3,
+\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3, \qquad -\tilde{q}^{\natural} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad -\tilde q = -q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3,
 $$
 
 called quaternion, vector and total conjugation. Each is an involution: applying it twice returns $\tilde q$.
 
-**Proposition.** The three involutions are $\bar{\cdot}$, $-\bar{\cdot}$ and $-\mathrm{id}$: the second is the negative of the first and the third is the negative of the identity, so the three maps together with the identity form the group $\mathbb{Z}/2\times\mathbb{Z}/2$ of sign changes of the scalar and vector parts.
+**Proposition.** The three involutions are ${}^{\natural}$, $-{}^{\natural}$ and $-\mathrm{id}$: the second is the negative of the first and the third is the negative of the identity, so the three maps together with the identity form the group $\mathbb{Z}/2\times\mathbb{Z}/2$ of sign changes of the scalar and vector parts.
 
 *Proof.* The first negates the vector part and fixes the scalar part, $q_0-\mathbf{q}$; the second is its negative, $-q_0+\mathbf{q} = -(q_0-\mathbf{q})$, and so negates the scalar part and fixes the vector part; the third negates both, $-q_0-\mathbf{q}$. Composing the sign changes independently in the two parts gives the Klein four-group.
 
 **Worked values.** For $\tilde q = 1+2e_1-e_2+3e_3$,
 
 $$
-\bar{\tilde q} = 1-2e_1+e_2-3e_3, \qquad -\bar{\tilde q} = -1+2e_1-e_2+3e_3, \qquad -\tilde q = -1-2e_1+e_2-3e_3 .
+\tilde{q}^{\natural} = 1-2e_1+e_2-3e_3, \qquad -\tilde{q}^{\natural} = -1+2e_1-e_2+3e_3, \qquad -\tilde q = -1-2e_1+e_2-3e_3 .
 $$
 
 **Proposition (fixed-point subspaces).** The fixed points of the three involutions are
 
 $$
-\{\tilde q : \bar{\tilde q} = \tilde q\} = \mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0, \qquad
-\{\tilde q : -\bar{\tilde q} = \tilde q\} = \operatorname{Im}\mathbb{H}, \qquad
+\{\tilde q : \tilde{q}^{\natural} = \tilde q\} = \mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0, \qquad
+\{\tilde q : -\tilde{q}^{\natural} = \tilde q\} = \operatorname{Im}\mathbb{H}, \qquad
 \{\tilde q : -\tilde q = \tilde q\} = \{0\},
 $$
 
 of dimensions $1$, $3$ and $0$.
 
-*Proof.* $\bar{\tilde q} = \tilde q$ gives $\mathbf{q} = 0$; $-\bar{\tilde q} = \tilde q$ gives $q_0 = 0$; $-\tilde q = \tilde q$ gives $\tilde q = -\tilde q$, so $\tilde q = 0$.
+*Proof.* $\tilde{q}^{\natural} = \tilde q$ gives $\mathbf{q} = 0$; $-\tilde{q}^{\natural} = \tilde q$ gives $q_0 = 0$; $-\tilde q = \tilde q$ gives $\tilde q = -\tilde q$, so $\tilde q = 0$.
 
 So the scalar axis, the imaginary three-space and the origin are the fixed sets, and they are exactly the images of the projections onto the scalar part, the vector part and zero. The first is a subalgebra isomorphic to $\mathbb{R}$; the second is not, because the product of two of its elements has a scalar part.
 
@@ -81,7 +81,7 @@ because the off-diagonal products cancel in pairs and each square is $-1$. The e
 
 ## The Conjugation Action
 
-**Definition.** For a unit quaternion $u$ the **conjugation action**, or adjoint action, is $\operatorname{Ad}_u(x) = uxu^{-1} = ux\bar u$.
+**Definition.** For a unit quaternion $u$ the **conjugation action**, or adjoint action, is $\operatorname{Ad}_u(x) = uxu^{-1} = uxu^{\natural}$.
 
 **Worked computation.** Take the unit quaternion
 
@@ -89,7 +89,7 @@ $$
 u = \exp\!\Bigl(\frac{\pi}{4}e_1\Bigr) = \cos\frac{\pi}{4} + e_1\sin\frac{\pi}{4} = \frac{1+e_1}{\sqrt2},
 $$
 
-so that $u^{-1} = \bar u = (1-e_1)/\sqrt2$. Then on the imaginary basis,
+so that $u^{-1} = u^{\natural} = (1-e_1)/\sqrt2$. Then on the imaginary basis,
 
 $$
 u\,e_1\,u^{-1} = e_1, \qquad u\,e_2\,u^{-1} = e_3, \qquad u\,e_3\,u^{-1} = -e_2 .
@@ -151,11 +151,11 @@ The conjugation action of the unit $u = (1+e_1)/\sqrt2$ maps $e_1$ to $e_1$ and 
 | $\mathbb{H}$ | The quaternion algebra |
 | $e_0 = 1, e_1, e_2, e_3$ | Basis, $e_k^2 = -e_0$, $e_1e_2 = e_3$ |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Worked element $\tilde q = 1+2e_1-e_2+3e_3$ |
-| $\bar{\tilde q}, -\bar{\tilde q}, -\tilde q$ | Quaternion, vector and total conjugation |
-| $\mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0$ | Fixed space of $\bar{\cdot}$ |
+| $\tilde{q}^{\natural}, -\tilde{q}^{\natural}, -\tilde q$ | Quaternion, vector and total conjugation |
+| $\mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0$ | Fixed space of ${}^{\natural}$ |
 | $\operatorname{Im}\mathbb{H}$ | Fixed space of $\tilde{\cdot}$ |
 | $N$ | Quaternion norm, from *Quaternion Norm and Invertibility*; $N(\tilde q) = 15$ for the worked element |
-| $\operatorname{Ad}_u(x) = ux\bar u$ | Conjugation action |
+| $\operatorname{Ad}_u(x) = uxu^{\natural}$ | Conjugation action |
 | $R_u$ | Matrix of $\operatorname{Ad}_u$ on $\operatorname{Im}\mathbb{H}$ |
 | $\Phi$ | The isomorphism $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})$ |
 | $L_q$ | Cayley matrix of left multiplication by $\tilde q$ |

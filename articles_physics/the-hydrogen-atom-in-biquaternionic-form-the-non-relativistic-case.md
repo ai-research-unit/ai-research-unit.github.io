@@ -39,16 +39,16 @@ $$
 = -\hat p^{\,2}e_0 ,
 $$
 
-because $e_je_k+e_ke_j=0$ for $j\neq k$. Here $\hat p^{\,2}=\hat{\mathbf p}\cdot\hat{\mathbf p}=-\hbar^2\nabla^2$. Since quaternion conjugation negates the vector part, $\bar{\tilde p}=-\tilde p$, and
+because $e_je_k+e_ke_j=0$ for $j\neq k$. Here $\hat p^{\,2}=\hat{\mathbf p}\cdot\hat{\mathbf p}=-\hbar^2\nabla^2$. Since quaternion conjugation negates the vector part, $\tilde p^{\natural}=-\tilde p$, and
 
 $$
-\tilde p\,\bar{\tilde p} = N(\tilde p) = -\tilde p^{\,2} = \hat p^{\,2}e_0 = -\hbar^2\nabla^2\,e_0 .
+\tilde p\,\tilde p^{\natural} = N(\tilde p) = -\tilde p^{\,2} = \hat p^{\,2}e_0 = -\hbar^2\nabla^2\,e_0 .
 $$
 
 The two natural transcriptions therefore agree, and the kinetic energy is
 
 $$
-\boxed{\;\tilde T = -\frac{1}{2m}\tilde p^{\,2} = \frac{1}{2m}\tilde p\,\bar{\tilde p} = \frac{\hat p^{\,2}}{2m}e_0 . \;}
+\boxed{\;\tilde T = -\frac{1}{2m}\tilde p^{\,2} = \frac{1}{2m}\tilde p\,\tilde p^{\natural} = \frac{\hat p^{\,2}}{2m}e_0 . \;}
 $$
 
 The explicit minus sign is not decoration. The quaternion square of a pure vector is **minus** its Euclidean square, so writing $\tilde p^{\,2}/(2m)$ without the sign would reverse the kinetic term, leaving a Hamiltonian unbounded below and no bound states at all. The sign is the same algebraic fact — $e_k^2=-e_0$ — that gives the biquaternion norm $N(\tilde H)=h_0^2-|\mathbf h|^2$ on $\mathbb{M}_+$ its Lorentzian signature; for the momentum, whose scalar part is zero, the biquaternion norm is $-\sum_kh_k^2\,e_0$, the negative of the Euclidean square. The kinetic operator is, up to the factor $1/2m$, the biquaternion norm of the momentum.
@@ -227,7 +227,7 @@ Under the isomorphism $\Phi$ the transcription is transparent. The field $\psi$ 
 | Standard object | Biquaternion object | Slot |
 |---|---|---|
 | Hamiltonian $-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}$ | $\tilde H = \bigl[-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}\bigr]e_0\in\mathbb{M}_+$ | scalar |
-| Kinetic term $\hat p^2/2m$ | $-\frac{1}{2m}\tilde p^{\,2}=\frac{1}{2m}\tilde p\bar{\tilde p}$ | scalar |
+| Kinetic term $\hat p^2/2m$ | $-\frac{1}{2m}\tilde p^{\,2}=\frac{1}{2m}\tilde p\tilde p^{\natural}$ | scalar |
 | Orbital $\hat L_k$ | $\tilde L_k=\hat L_k e_0$ | scalar |
 | Spin $S_k=\frac{\hbar}{2}\sigma_k$ | $\tilde S_k=\frac{\hbar}{2}ie_k$ | vector |
 | Wavefunction $\psi\in L^2(\mathbb{R}^3)\otimes\mathbb{C}^2$ | spinor field $\psi(\mathbf x)\in\mathbb{B}\tilde P$ | module |
@@ -236,7 +236,7 @@ Under the isomorphism $\Phi$ the transcription is transparent. The field $\psi$ 
 
 The spectrum, the eigenfunctions, the quantum numbers and the degeneracies are the standard ones. The biquaternion form is a transcription, and it predicts nothing beyond the standard solution. What it does isolate is three structural facts that the standard notation leaves implicit:
 
-1. **The kinetic term is a biquaternion-norm object.** It carries an explicit minus sign relative to $\tilde p^{\,2}$, because the quaternion square of a pure vector is minus the Euclidean square. The spinless-looking scalar $\hat p^2/2m$ is really $\frac{1}{2m}\tilde p\bar{\tilde p}$, a quadratic form of the momentum.
+1. **The kinetic term is a biquaternion-norm object.** It carries an explicit minus sign relative to $\tilde p^{\,2}$, because the quaternion square of a pure vector is minus the Euclidean square. The spinless-looking scalar $\hat p^2/2m$ is really $\frac{1}{2m}\tilde p\tilde p^{\natural}$, a quadratic form of the momentum.
 2. **The Hamiltonian is central and the generator is in the material sector.** The observable $\tilde H$ lies in $\mathbb{M}_+$; the generator $\tilde G=-i\tilde H/\hbar$ lies in $\mathbb{M}_-$ along $ie_0$. The entire Coulomb content is carried by the scalar slot, and the vector slots, which the spin occupies, are untouched.
 3. **Orbital and spin operators occupy complementary slots.** The orbital operators are scalar multiples of $e_0$ and central; the spin operators are vector-slot elements. Their commutativity, $[\tilde L_i,\tilde S_j]=0$, is the framework's reason for the separability of the non-relativistic problem, and the reason the total-angular-momentum coupling is not required here.
 
@@ -289,7 +289,7 @@ at the next order. The Darwin term, the relativistic kinetic correction and the 
 
 ## Summary
 
-The non-relativistic hydrogen atom in biquaternionic form is the Coulomb problem for a spinor field. The momentum $\tilde p=-i\hbar\nabla$ is Hermitian in $\mathbb{M}_+$; its quaternion square is minus the Euclidean square, $\tilde p^{\,2}=-\hat p^{\,2}e_0=\hbar^2\nabla^2e_0$, so the kinetic energy is $-\tilde p^{\,2}/(2m)=\tilde p\bar{\tilde p}/(2m)=\hat p^{\,2}/(2m)e_0$. Adding the central scalar potential $-\kappa/r$ gives
+The non-relativistic hydrogen atom in biquaternionic form is the Coulomb problem for a spinor field. The momentum $\tilde p=-i\hbar\nabla$ is Hermitian in $\mathbb{M}_+$; its quaternion square is minus the Euclidean square, $\tilde p^{\,2}=-\hat p^{\,2}e_0=\hbar^2\nabla^2e_0$, so the kinetic energy is $-\tilde p^{\,2}/(2m)=\tilde p\tilde p^{\natural}/(2m)=\hat p^{\,2}/(2m)e_0$. Adding the central scalar potential $-\kappa/r$ gives
 
 $$
 \tilde H = \left[-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}\right]e_0 = h_0e_0 \in \mathbb{M}_+,
@@ -320,7 +320,7 @@ The framework's contribution is therefore structural, not spectral. It identifie
 | $\mathbb{C}_{\mathbb{B}}$ | Centre, $\operatorname{span}_\mathbb{R}\{e_0,ie_0\}$ |
 | $\Phi(e_k)=-i\sigma_k$, $\Phi(ie_k)=\sigma_k$ | Isomorphism with $M_2(\mathbb{C})$ |
 | $\tilde p=-i\hbar\nabla=e_k\hat p_k$, $\hat p_k=-i\hbar\partial_k$ | Momentum, Hermitian, in $\mathbb{M}_+$ |
-| $\tilde p^{\,2}=-\hat p^{\,2}e_0$, $\tilde p\bar{\tilde p}=\hat p^{\,2}e_0$ | Quaternion square and biquaternion norm of the momentum |
+| $\tilde p^{\,2}=-\hat p^{\,2}e_0$, $\tilde p\tilde p^{\natural}=\hat p^{\,2}e_0$ | Quaternion square and biquaternion norm of the momentum |
 | $\tilde T=-\tilde p^{\,2}/(2m)$ | Kinetic energy |
 | $\tilde H=h_0e_0$, $h_0=-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}$ | Coulomb Hamiltonian, central, in $\mathbb{M}_+$ |
 | $\tilde G=-i\tilde H/\hbar\in\mathbb{M}_-$ | Time-translation generator |

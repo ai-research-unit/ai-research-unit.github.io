@@ -13,11 +13,11 @@ $$
 is the strip swept when the material time is complexified, and the periodic identification $t\sim t+i\beta$ that makes it a cylinder is the compactification that defines the Matsubara sum.
 - **Established (algebra).** The Euclidean mass-shell operator is the same central biquaternion-norm object as in the Lorentzian theory,
 $$
-\mathcal{M}_E(\tilde k_E) = \tilde k_E\bar{\tilde k}_E + m^2 = \omega_n^2+\mathbf p^2+m^2 = k_E^2+m^2 ,
+\mathcal{M}_E(\tilde k_E) = \tilde k_E\tilde k^{\natural}_E + m^2 = \omega_n^2+\mathbf p^2+m^2 = k_E^2+m^2 ,
 \qquad
 k_E^2 = \omega_n^2+\mathbf p^2 \ge 0 ,
 $$
-with the Wick-rotated wave biquaternion $\tilde k_E=-\omega_n e_0+\mathbf p$. In Euclidean signature it is positive for all real momenta, so the Euclidean propagator $1/(k_E^2+m^2)$ has no real pole; the Lorentzian mass shell $\tilde k\bar{\tilde k}=-m^2$ maps to $k_E^2=-m^2$, which is reached only at complex Euclidean momentum. This is the framework's statement that the thermal propagator's analytic structure is a statement about the complexification of a material direction.
+with the Wick-rotated wave biquaternion $\tilde k_E=-\omega_n e_0+\mathbf p$. In Euclidean signature it is positive for all real momenta, so the Euclidean propagator $1/(k_E^2+m^2)$ has no real pole; the Lorentzian mass shell $\tilde k\tilde k^{\natural}=-m^2$ maps to $k_E^2=-m^2$, which is reached only at complex Euclidean momentum. This is the framework's statement that the thermal propagator's analytic structure is a statement about the complexification of a material direction.
 - **Established (algebra).** The spin–statistics theorem of the companion article fixes the periodicity: bosonic fields are periodic and fermionic fields antiperiodic on the thermal circle, and the Matsubara frequencies are therefore
 $$
 \omega_n = \frac{2\pi n}{\beta}\ \ (\text{bosons}),
@@ -31,7 +31,7 @@ The findings are recomputed: the bosonic sum rule $(1/\beta)\sum_n(\omega_n^2+E^
 
 The article proceeds as follows. The next section fixes the imaginary time and the thermal circle. A section gives the Matsubara frequencies and the Euclidean propagator. A section derives the partition function and the free energy. A section isolates the framework's structural content. A section treats the Matsubara sums and the thermal factors, and a section the finite-temperature Feynman rules. A section separates what is established from what is interpretation.
 
-**Conventions.** We use those of the companion articles, in particular *The KMS Condition and the Biquaternion Framework*, *The Unruh Effect in Biquaternionic Form*, and *Hawking Radiation in Biquaternionic Form*, whose thermal state this article's formalism must reproduce. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and central scalar imaginary $i$. The material sector is $\mathbb{M}_-$ (anti-Hermitian) and the informational sector is $\mathbb{M}_+$ (Hermitian), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The material coordinate is $\tilde{Q}=ict\,e_0+\mathbf x$, with biquaternion norm $N(\tilde{Q})=-c^2t^2+\mathbf x^2$. The gradient is $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde\nabla\bar{\tilde\nabla}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The Lorentzian wave biquaternion is $\tilde k=iEe_0+\mathbf p$ with quaternion conjugate $\bar{\tilde k}=iEe_0-\mathbf p$ and $\tilde k\bar{\tilde k}=-p^2$. The inverse temperature is $\beta=\hbar/(k_BT)$; the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. Natural units $\hbar=c=k_B=1$ are used in the computations, with $\beta$ and the temperature restored where a physical statement is made.
+**Conventions.** We use those of the companion articles, in particular *The KMS Condition and the Biquaternion Framework*, *The Unruh Effect in Biquaternionic Form*, and *Hawking Radiation in Biquaternionic Form*, whose thermal state this article's formalism must reproduce. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and central scalar imaginary $i$. The material sector is $\mathbb{M}_-$ (anti-Hermitian) and the informational sector is $\mathbb{M}_+$ (Hermitian), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The material coordinate is $\tilde{Q}=ict\,e_0+\mathbf x$, with biquaternion norm $N(\tilde{Q})=-c^2t^2+\mathbf x^2$. The gradient is $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The Lorentzian wave biquaternion is $\tilde k=iEe_0+\mathbf p$ with quaternion conjugate $\tilde k^{\natural}=iEe_0-\mathbf p$ and $\tilde k\tilde k^{\natural}=-p^2$. The inverse temperature is $\beta=\hbar/(k_BT)$; the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. Natural units $\hbar=c=k_B=1$ are used in the computations, with $\beta$ and the temperature restored where a physical statement is made.
 
 ## Imaginary Time and the Thermal Circle
 
@@ -83,21 +83,21 @@ $$
 $$
 and the corresponding four-momentum is $p_E=(\omega_n,\mathbf p)$ with $p_E^2=\omega_n^2+\mathbf p^2$.
 
-**The Euclidean propagator.** In the framework the Lorentzian propagator's denominator is the mass-shell operator $\mathcal{M}(\tilde k)=\tilde k\bar{\tilde k}+m^2=-p^2+m^2$, so under the Matsubara substitution $p^0\to i\omega_n$ the Wick-rotated wave biquaternion is
+**The Euclidean propagator.** In the framework the Lorentzian propagator's denominator is the mass-shell operator $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2=-p^2+m^2$, so under the Matsubara substitution $p^0\to i\omega_n$ the Wick-rotated wave biquaternion is
 $$
 \tilde k_E = i(i\omega_n)e_0+\mathbf p = -\omega_n e_0+\mathbf p ,
 \qquad
-\bar{\tilde k}_E = -\omega_n e_0-\mathbf p ,
+\tilde k^{\natural}_E = -\omega_n e_0-\mathbf p ,
 \qquad
-\tilde k_E\bar{\tilde k}_E = \omega_n^2+\mathbf p^2 = k_E^2 ,
+\tilde k_E\tilde k^{\natural}_E = \omega_n^2+\mathbf p^2 = k_E^2 ,
 $$
 and the Euclidean propagator is
 $$
 D_E(\tilde k_E) = \frac{1}{\mathcal{M}_E(\tilde k_E)} = \frac{1}{k_E^2+m^2} ,
 \qquad
-\mathcal{M}_E(\tilde k_E)=\tilde k_E\bar{\tilde k}_E+m^2 .
+\mathcal{M}_E(\tilde k_E)=\tilde k_E\tilde k^{\natural}_E+m^2 .
 $$
-The operator is central and positive for real Euclidean momenta, $k_E^2+m^2>0$; hence $D_E$ is a bounded, real-analytic function on the Matsubara grid, and it has no pole there. The Lorentzian mass shell $\tilde k\bar{\tilde k}=-m^2$ becomes $k_E^2=-m^2$, reached only at complex momentum. This is the framework's statement of the standard fact that the Euclidean propagator's singularities lie off the real Euclidean axis, and it shows that the analytic structure of the thermal propagator is a statement about the complexified material direction: the circle is a material direction, and the pole is at imaginary circle momentum.
+The operator is central and positive for real Euclidean momenta, $k_E^2+m^2>0$; hence $D_E$ is a bounded, real-analytic function on the Matsubara grid, and it has no pole there. The Lorentzian mass shell $\tilde k\tilde k^{\natural}=-m^2$ becomes $k_E^2=-m^2$, reached only at complex momentum. This is the framework's statement of the standard fact that the Euclidean propagator's singularities lie off the real Euclidean axis, and it shows that the analytic structure of the thermal propagator is a statement about the complexified material direction: the circle is a material direction, and the pole is at imaginary circle momentum.
 
 **Verification.** With $\beta=2$, $E=1.3$, the bosonic sum rule
 $$
@@ -155,7 +155,7 @@ Three statements are the framework's, and they are worth separating from the tra
 
 **The thermal circle is a material direction.** The imaginary direction of the KMS strip is the imaginary direction of the material sector, $\mathbb{M}_-\oplus i\mathbb{M}_-=\mathbb{B}$ in the sense of the Unruh article's complexified Rindler time; the Matsubara circle is the compactification of that direction. Hence the thermal circle is not an artifact of a convergence trick: it is a circle drawn in a direction the algebra already distinguishes. The framework's statement is that the KMS strip and the thermal circle are the same object read analytically and topologically.
 
-**The Euclidean operator is the biquaternion norm.** $\mathcal{M}_E=\tilde k_E\bar{\tilde k}_E+m^2$ is the biquaternion norm of the Wick-rotated wave biquaternion, central, positive in Euclidean signature, and identical in form to the Lorentzian operator. So the thermal propagator is the inverse of a biquaternion norm evaluated on a discrete momentum set. All the algebra's structure — centrality, the module's dimension — passes to the thermal theory unchanged; the temperature enters only through the spacing of the mode set.
+**The Euclidean operator is the biquaternion norm.** $\mathcal{M}_E=\tilde k_E\tilde k^{\natural}_E+m^2$ is the biquaternion norm of the Wick-rotated wave biquaternion, central, positive in Euclidean signature, and identical in form to the Lorentzian operator. So the thermal propagator is the inverse of a biquaternion norm evaluated on a discrete momentum set. All the algebra's structure — centrality, the module's dimension — passes to the thermal theory unchanged; the temperature enters only through the spacing of the mode set.
 
 **Statistics is the grading.** The periodic/antiperiodic split of the thermal circle is the even/odd split of the algebra and of the spinor module. This is a consistency, not a derivation: the framework houses the spin–statistics theorem, as the companion article argues, and the Matsubara frequency sets are its Fourier expression.
 
@@ -219,7 +219,7 @@ The interaction theory is the vacuum perturbation theory with the discrete sums 
 
 **Established (framework).**
 - The Matsubara circle is a compactified material-sector direction; its circumference is the KMS width $\beta$, and the KMS strip and the circle are the same complexified material time.
-- The Euclidean mass-shell operator is the biquaternion norm $\mathcal{M}_E=\tilde k_E\bar{\tilde k}_E+m^2=k_E^2+m^2$, central and positive, with no real pole; the Lorentzian mass shell maps to complex Euclidean momentum.
+- The Euclidean mass-shell operator is the biquaternion norm $\mathcal{M}_E=\tilde k_E\tilde k^{\natural}_E+m^2=k_E^2+m^2$, central and positive, with no real pole; the Lorentzian mass shell maps to complex Euclidean momentum.
 - The two frequency sets are the two grading classes' Fourier spectra; the periodic/antiperiodic split is the even/odd split.
 - The free energy carries the multiplicity of the module trace; the one-loop free energy is $\log Z=-\tfrac12\mathrm{Tr}\log\mathcal{M}_E$.
 
@@ -237,7 +237,7 @@ The interaction theory is the vacuum perturbation theory with the discrete sums 
 
 The Matsubara formalism in biquaternionic form is the Euclidean thermal field theory with the compactified direction identified as a material-sector direction. The thermal circle $\tau\sim\tau+\beta$ has circumference $\beta=\hbar/(k_BT)$, which is the KMS strip width, because both are the complexification of the material time $ict$; the Euclidean mass-shell operator is the central biquaternion norm
 $$
-\mathcal{M}_E(\tilde k_E)=\tilde k_E\bar{\tilde k}_E+m^2=\omega_n^2+\mathbf p^2+m^2=k_E^2+m^2\ge0 ,
+\mathcal{M}_E(\tilde k_E)=\tilde k_E\tilde k^{\natural}_E+m^2=\omega_n^2+\mathbf p^2+m^2=k_E^2+m^2\ge0 ,
 \qquad
 \tilde k_E=-\omega_ne_0+\mathbf p ,
 $$
@@ -264,7 +264,7 @@ were checked numerically ($0.4463328$ and $0.3314319$ against $0.4463329$ and $0
 | $\omega_n=2\pi n/\beta$ | Bosonic Matsubara frequencies |
 | $\bar\omega_n=(2n+1)\pi/\beta$ | Fermionic Matsubara frequencies |
 | $\tilde k_E=-\omega_ne_0+\mathbf p$, $k_E^2=\omega_n^2+\mathbf p^2$ | Wick-rotated wave biquaternion and Euclidean momentum |
-| $\mathcal{M}_E=\tilde k_E\bar{\tilde k}_E+m^2=k_E^2+m^2$ | Euclidean mass-shell operator (biquaternion norm) |
+| $\mathcal{M}_E=\tilde k_E\tilde k^{\natural}_E+m^2=k_E^2+m^2$ | Euclidean mass-shell operator (biquaternion norm) |
 | $D_E=1/(k_E^2+m^2)$ | Euclidean (thermal) propagator |
 | $(1/\beta)\sum_n$ | Matsubara sum replacing $\int dp^0/2\pi$ |
 | $Z=\mathrm{Tr}\,e^{-\beta H}=\int_{\text{per}}\mathcal{D}\tilde\Phi\,e^{-S_E}$ | Thermal partition function |

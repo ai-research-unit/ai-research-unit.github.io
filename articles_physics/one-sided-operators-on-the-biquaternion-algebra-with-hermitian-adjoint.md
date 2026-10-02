@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with the Hermitian conjugation ${}^{\dagger}$ of the physics corpus, carries two one-sided operators for each element:
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with the Hermitian conjugation ${}^{*}$ of the physics corpus, carries two one-sided operators for each element:
 
 $$
 L_{\tilde A}(\tilde V)=\tilde A\,\tilde V ,\qquad R_{\tilde B}(\tilde V)=\tilde V\,\tilde B .
@@ -16,7 +16,7 @@ This article is the physics companion of *One-Sided Operators on the Biquaternio
 
 **Proposition (linearity and composition).** The assignment $\tilde A\mapsto L_{\tilde A}$ is $\mathbb{C}$-linear and injective, and $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$; the assignment $\tilde B\mapsto R_{\tilde B}$ is $\mathbb{C}$-linear and injective too, with $R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}$, and the two families commute: $L_{\tilde A}R_{\tilde B}=R_{\tilde B}L_{\tilde A}$.
 
-**Physical reading.** $L$ is a faithful representation of the algebra on a four-complex-dimensional space with the positive definite form $(\tilde T,\tilde V)=\mathrm{Sc}(\tilde T^{\dagger}\tilde V)$, that is, on **two copies of the spinor module** (*The 2×2 Matrix Element Representation of Biquaternions* (`articles_physics/the-2x2-matrix-element-representation-of-biquaternions.md`), *The Spinor Module in Biquaternionic Form and Its Lorentz Action*). Writing the elements of the algebra as matrices, $L_{\tilde A}$ is the matrix multiplication on the left, which is the standard way the corpus writes the Clifford action and the Dirac matrices; the right multiplications $R_{\tilde B}$ act on the second factor and are the shadow algebra.
+**Physical reading.** $L$ is a faithful representation of the algebra on a four-complex-dimensional space with the positive definite form $(\tilde T,\tilde V)=\mathrm{Sc}(\tilde T^{*}\tilde V)$, that is, on **two copies of the spinor module** (*The 2×2 Matrix Element Representation of Biquaternions* (`articles_physics/the-2x2-matrix-element-representation-of-biquaternions.md`), *The Spinor Module in Biquaternionic Form and Its Lorentz Action*). Writing the elements of the algebra as matrices, $L_{\tilde A}$ is the matrix multiplication on the left, which is the standard way the corpus writes the Clifford action and the Dirac matrices; the right multiplications $R_{\tilde B}$ act on the second factor and are the shadow algebra.
 
 **Proposition (the generator relations).** With the basis $e_{0},e_{1},e_{2},e_{3}$ of the algebra, $e_{0}=1$,
 
@@ -37,18 +37,18 @@ and the commutator closes on the generators, $[L_{e_{1}},L_{e_{2}}]=2L_{e_{3}}$ 
 **Theorem (the adjoints).** For all $\tilde A,\tilde B$,
 
 $$
-(L_{\tilde A})^{*}=L_{\tilde A^{\dagger}},\qquad (R_{\tilde B})^{*}=R_{\tilde B^{\dagger}} .
+(L_{\tilde A})^{*}=L_{\tilde A^{*}},\qquad (R_{\tilde B})^{*}=R_{\tilde B^{*}} .
 $$
 
 **Corollary (the module axiom).** The form is invariant in the sense of a Hermitian module,
 
 $$
-(\tilde A\cdot s,\ t) = (s,\ \tilde A^{\dagger}\cdot t) ,
+(\tilde A\cdot s,\ t) = (s,\ \tilde A^{*}\cdot t) ,
 $$
 
-and $L$ is a faithful $*$-representation of the algebra on the positive definite spinor form. This is the biquaternion instance of the module axiom of *Hermitian Clifford Modules with Hermitian Adjoint* and of *The Adjoint of the One-Sided Action with Hermitian Adjoint*.
+and $L$ is a faithful $*$-representation of the algebra on the positive definite spinor form. This is the biquaternion instance of the module axiom of *Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint* and of *The Adjoint of the One-Sided Action with Hermitian Adjoint*.
 
-**The physical point.** The adjoint of the action is the action of the adjoint element, and **not** the other family: $(L_{\tilde A}s,t)\neq(s,R_{\tilde A^{\dagger}}t)$ in general. It is this asymmetry that makes the positive definite form the right spinor form for the framework: the infinitesimal generators — the material sector elements, which are anti-Hermitian — act by **skew-adjoint** operators, so the exponentials act by unitary ones, and the internal group is compact.
+**The physical point.** The adjoint of the action is the action of the adjoint element, and **not** the other family: $(L_{\tilde A}s,t)\neq(s,R_{\tilde A^{*}}t)$ in general. It is this asymmetry that makes the positive definite form the right spinor form for the framework: the infinitesimal generators — the material sector elements, which are anti-Hermitian — act by **skew-adjoint** operators, so the exponentials act by unitary ones, and the internal group is compact.
 
 ## Skew-Adjoint Generators and the Internal Group
 
@@ -72,7 +72,7 @@ $$
 
 The internal symmetry group of the framework is therefore one-sided, and its compact part is $U(2)$, with determinant-one part $\mathrm{SU}(2)\cong\mathrm{Spin}(3)$ (*The Biquaternion Unit Group as a Topological Group*, *Biquaternion Versors and the Orthogonal Group*).
 
-**Corollary (the phase is visible, unlike the two-sided case).** $L_{\omega \tilde A}=\omega L_{\tilde A}$ for a central phase $\omega$, so the phase is **not** erased: $L_{\omega e_{0}}$ is the scalar operator $\omega\,\mathrm{id}$, which is the identity only for $\omega=1$. The contrast with the two-sided operator is exact and physical: the two-sided sandwich is phase-blind, $\Theta_{\omega\tilde{Q}}=\Theta_{\tilde{Q}}$, because it acts on states and returns the quadratic combination $\tilde{Q}\tilde{Q}^{\dagger}$; the one-sided operator sees the phase because it acts on the amplitude. This is the operator form of the double cover, of $SU(2)$ against $SO(3)$, and of the phase freedom that is a redundancy of the description of a state and not of a state vector.
+**Corollary (the phase is visible, unlike the two-sided case).** $L_{\omega \tilde A}=\omega L_{\tilde A}$ for a central phase $\omega$, so the phase is **not** erased: $L_{\omega e_{0}}$ is the scalar operator $\omega\,\mathrm{id}$, which is the identity only for $\omega=1$. The contrast with the two-sided operator is exact and physical: the two-sided sandwich is phase-blind, $\Theta_{\omega\tilde{Q}}=\Theta_{\tilde{Q}}$, because it acts on states and returns the quadratic combination $\tilde{Q}\tilde{Q}^{*}$; the one-sided operator sees the phase because it acts on the amplitude. This is the operator form of the double cover, of $SU(2)$ against $SO(3)$, and of the phase freedom that is a redundancy of the description of a state and not of a state vector.
 
 ## The Dirac Operator as a One-Sided Operator
 
@@ -84,7 +84,7 @@ $$
 
 with $D^{2}$ the d'Alembertian on the flat algebra and with the kernel the space of the regular functions (*Biquaternion Spin Geometry*, *The Dirac Equation in Biquaternionic Form*).
 
-**Physical reading.** The operator is a sum of one-sided operators, and its formal properties are the one-sided ones: each $L_{e_{\mu}}$ acts on the spinor variable, each $\partial_{\mu}$ acts on the spacetime variable, and the two commute. The self-adjointness of $D$ for the spinor form is the statement $(L_{e_{\mu}})^{*}=L_{e_{\mu}^{\dagger}}$ composed with the formal skew-adjointness of the derivative; the details, including the sign fixing and the role of the timelike basis element, are the subject of the Dirac adjoint, which is *Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint* in the mathematical series and the adjoint conventions of *The Spinor Module in Biquaternionic Form and Its Lorentz Action* in this one. What matters here is that **no two-sided operator enters the Dirac operator**: the dynamics is one-sided, and the two-sided operator is reserved for the transformations of the sectors.
+**Physical reading.** The operator is a sum of one-sided operators, and its formal properties are the one-sided ones: each $L_{e_{\mu}}$ acts on the spinor variable, each $\partial_{\mu}$ acts on the spacetime variable, and the two commute. The self-adjointness of $D$ for the spinor form is the statement $(L_{e_{\mu}})^{*}=L_{e_{\mu}^{*}}$ composed with the formal skew-adjointness of the derivative; the details, including the sign fixing and the role of the timelike basis element, are the subject of the Dirac adjoint, which is *Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint* in the mathematical series and the adjoint conventions of *The Spinor Module in Biquaternionic Form and Its Lorentz Action* in this one. What matters here is that **no two-sided operator enters the Dirac operator**: the dynamics is one-sided, and the two-sided operator is reserved for the transformations of the sectors.
 
 ## The Right Multiplication, the Commutant and the Absence of Invariants
 
@@ -92,7 +92,7 @@ with $D^{2}$ the d'Alembertian on the flat algebra and with the kernel the space
 
 **Physical reading.** The right multiplications form the **commutant** of the Clifford action, hence the shadow algebra that the corpus meets whenever it separates the left and the right structure of a spinor: the chirality projectors, the reality condition and the conjugation of the Dirac equation are written with the right action. The bicommutant theorem has a physical consequence that is easy to state: since the commutant of the Clifford action is generated by the right action and the bicommutant is the scalars, the spinor module is irreducible up to the shadow algebra, so the algebra admits **no invariant operator except the scalars**. Physically this is the statement that the internal space of this algebra has no coarse-grained label that survives the action: every internal observable is a scalar multiple of the identity unless it is written with the shadow algebra, which is the algebraic reason for the framework's absence of superselection sectors, and the algebraic form of the simplicity of the Clifford algebra (see *The Clifford Structure of the Biquaternion Algebra* and the commutant statements of *The 2×2 Matrix Element Representation of Biquaternions* (`articles_physics/the-2x2-matrix-element-representation-of-biquaternions.md`)).
 
-**Corollary (the mixed operators).** The general product $L_{\tilde A}R_{\tilde B}$ has two independent parameters and commutes with nothing in general; it is a two-sided operator only for $\tilde B=\lambda \tilde A^{\dagger}$. Physically, the two-sided operators are the one-parameter specialisations of the mixed family, and the extra parameter of the mixed family is a **relative phase between the left and the right structure**, which the sandwich cannot carry.
+**Corollary (the mixed operators).** The general product $L_{\tilde A}R_{\tilde B}$ has two independent parameters and commutes with nothing in general; it is a two-sided operator only for $\tilde B=\lambda \tilde A^{*}$. Physically, the two-sided operators are the one-parameter specialisations of the mixed family, and the extra parameter of the mixed family is a **relative phase between the left and the right structure**, which the sandwich cannot carry.
 
 ## The Isometry Group, and the Lorentz Action Again
 
@@ -106,26 +106,26 @@ with $D^{2}$ the d'Alembertian on the flat algebra and with the kernel the space
 
 **The informational generator.** For $\tilde A=e_{0}$ the operator is the identity, self-adjoint; for $\tilde A=ie_{1}$, which is Hermitian and of vector part imaginary, $L_{ie_{1}}=iL_{e_{1}}$ is self-adjoint as $i$ times a skew-adjoint operator, and of square $-\mathrm{id}\cdot i^{2}=$ positive: the informational generators act by self-adjoint operators, and the mass term of the framework, which lives in that sector, is therefore a self-adjoint one-sided operator.
 
-**A mixed operator.** $\tilde V\mapsto e_{1}\tilde Ve_{2}$ is neither a two-sided operator nor a symmetry: $L_{e_{1}}R_{e_{2}}(e_{0})=e_{1}e_{2}=e_{3}$, which is anti-Hermitian, while a two-sided operator always sends the identity into the informational sector, $\Theta_{\tilde{Q}}(e_{0})=\tilde{Q}\tilde{Q}^{\dagger}\in\mathbb{M}_+$. The mixed family is the one that changes the relative phase of the two structures.
+**A mixed operator.** $\tilde V\mapsto e_{1}\tilde Ve_{2}$ is neither a two-sided operator nor a symmetry: $L_{e_{1}}R_{e_{2}}(e_{0})=e_{1}e_{2}=e_{3}$, which is anti-Hermitian, while a two-sided operator always sends the identity into the informational sector, $\Theta_{\tilde{Q}}(e_{0})=\tilde{Q}\tilde{Q}^{*}\in\mathbb{M}_+$. The mixed family is the one that changes the relative phase of the two structures.
 
 **A plane-wave spinor.** For a plane-wave solution $\psi$ of the Dirac equation the one-sided action is what the equation uses: the Clifford generators act on the spinor index and the derivative brings down the momentum, $D\psi = i\not{p}\psi$ in the corpus's conventions, and the two-sided operator then acts on the resulting state as the sandwich of the companion article. The two articles together therefore split the physics cleanly: **one-sided for the amplitudes and the dynamics, two-sided for the states and the frames.**
 
 ## Summary
 
-The left and the right multiplications $L_{\tilde A}(\tilde V)=\tilde A\tilde V$ and $R_{\tilde B}(\tilde V)=\tilde V\tilde B$ are the one-sided operators of the biquaternion algebra, and in the physics they are the Clifford action and its shadow. $L$ is a faithful $*$-representation of the algebra on the positive definite spinor form of complex dimension four, that is, on two copies of the spinor module, with the composition law $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$ and the module axiom $(\tilde A\cdot s,t)=(s,\tilde A^{\dagger}\cdot t)$. The type criteria are the ones of the sectors: $L_{\tilde A}$ is self-adjoint exactly on the informational sector, skew-adjoint exactly on the material sector, and unitary and isometric exactly on the slice $U(2)$; consequently the three vector generators are skew-adjoint complex structures with $L_{e_{j}}L_{e_{k}}+L_{e_{k}}L_{e_{j}}=-2\delta_{jk}\mathrm{id}$ and commutators $[L_{e_{j}},L_{e_{k}}]=2\epsilon_{jkl}L_{e_{l}}$, the internal group is compact and one-sided, the exponential stays inside the family, $e^{L_{\tilde A}}=L_{e^{\tilde A}}$, and the phase is **visible** here, $L_{\omega \tilde A}=\omega L_{\tilde A}$, in exact contrast with the phase-blind two-sided sandwich. The Dirac operator is a sum of one-sided operators, $D=\sum_{\mu}L_{e_{\mu}}\partial_{\mu}$, so the dynamics is one-sided and the two-sided operators are reserved for the states and the frames. The double centraliser theorem makes the right multiplications the commutant of the Clifford action and the scalars the bicommutant, so the spinor module is irreducible up to the shadow algebra and the internal space has no coarse-grained invariant. The isometries of the spinor form are $U(2)$ and the Lorentz action is not among them: it is the similarity of the interval, and $U(2)$ is contained in it exactly on the compact part. The pair of articles separates in this way what the physics uses one-sidedly from what it uses two-sidedly, and shows that the doubling of the parameter in the sandwich is exactly what erases the phase and merges the two sectors.
+The left and the right multiplications $L_{\tilde A}(\tilde V)=\tilde A\tilde V$ and $R_{\tilde B}(\tilde V)=\tilde V\tilde B$ are the one-sided operators of the biquaternion algebra, and in the physics they are the Clifford action and its shadow. $L$ is a faithful $*$-representation of the algebra on the positive definite spinor form of complex dimension four, that is, on two copies of the spinor module, with the composition law $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$ and the module axiom $(\tilde A\cdot s,t)=(s,\tilde A^{*}\cdot t)$. The type criteria are the ones of the sectors: $L_{\tilde A}$ is self-adjoint exactly on the informational sector, skew-adjoint exactly on the material sector, and unitary and isometric exactly on the slice $U(2)$; consequently the three vector generators are skew-adjoint complex structures with $L_{e_{j}}L_{e_{k}}+L_{e_{k}}L_{e_{j}}=-2\delta_{jk}\mathrm{id}$ and commutators $[L_{e_{j}},L_{e_{k}}]=2\epsilon_{jkl}L_{e_{l}}$, the internal group is compact and one-sided, the exponential stays inside the family, $e^{L_{\tilde A}}=L_{e^{\tilde A}}$, and the phase is **visible** here, $L_{\omega \tilde A}=\omega L_{\tilde A}$, in exact contrast with the phase-blind two-sided sandwich. The Dirac operator is a sum of one-sided operators, $D=\sum_{\mu}L_{e_{\mu}}\partial_{\mu}$, so the dynamics is one-sided and the two-sided operators are reserved for the states and the frames. The double centraliser theorem makes the right multiplications the commutant of the Clifford action and the scalars the bicommutant, so the spinor module is irreducible up to the shadow algebra and the internal space has no coarse-grained invariant. The isometries of the spinor form are $U(2)$ and the Lorentz action is not among them: it is the similarity of the interval, and $U(2)$ is contained in it exactly on the compact part. The pair of articles separates in this way what the physics uses one-sidedly from what it uses two-sidedly, and shows that the doubling of the parameter in the sandwich is exactly what erases the phase and merges the two sectors.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | The biquaternion algebra; basis $e_{0},e_{1},e_{2},e_{3}$ |
-| ${}^{\dagger}$ | Hermitian conjugation; $Q_{0}^{*}e_{0}-Q_{1}^{*}e_{1}-Q_{2}^{*}e_{2}-Q_{3}^{*}e_{3}$ |
+| ${}^{*}$ | Hermitian conjugation; $Q_{0}^{*}e_{0}-Q_{1}^{*}e_{1}-Q_{2}^{*}e_{2}-Q_{3}^{*}e_{3}$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Informational sector and material sector |
-| $(\tilde T,\tilde V)=\mathrm{Sc}(\tilde T^{\dagger}\tilde V)$ | The positive definite spinor form |
+| $(\tilde T,\tilde V)=\mathrm{Sc}(\tilde T^{*}\tilde V)$ | The positive definite spinor form |
 | $L_{\tilde A}(\tilde V)=\tilde A\tilde V$ | Left multiplication; the Clifford action on the spinor variable |
 | $R_{\tilde B}(\tilde V)=\tilde V\tilde B$ | Right multiplication; the shadow algebra, the commutant |
 | $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$, $L_{\tilde A}R_{\tilde B}=R_{\tilde B}L_{\tilde A}$ | Composition law and commutation |
-| $(L_{\tilde A})^{*}=L_{\tilde A^{\dagger}}$ | The adjoint; the module axiom of the spinor form |
+| $(L_{\tilde A})^{*}=L_{\tilde A^{*}}$ | The adjoint; the module axiom of the spinor form |
 | $L_{e_{k}}$, $e_{k}\in\mathbb{M}_-$ | Skew-adjoint generators, $L_{e_{k}}^{2}=-\mathrm{id}$, $[L_{e_{j}},L_{e_{k}}]=2\epsilon_{jkl}L_{e_{l}}$ |
 | $L_{e_{0}}=\mathrm{id}$, $e_{0}\in\mathbb{M}_+$ | The self-adjoint identity generator |
 | $U=U(2)$ | The slice: unitary and isometric one-sided operators |
@@ -145,4 +145,4 @@ The left and the right multiplications $L_{\tilde A}(\tilde V)=\tilde A\tilde V$
 - *Biquaternion Versors and the Orthogonal Group* (`articles_physics/biquaternion-versors-and-the-orthogonal-group.md`), for $U(2)$ as the automorphisms against $SL(2,\mathbb{C})$ as the similarities.
 - *The Biquaternion Unit Group as a Topological Group* (`articles_physics/the-biquaternion-unit-group-as-a-topological-group.md`), for the topology of $U(2)$ and of the group of units.
 - *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the theorem that no nonzero two-sided operator is skew, which is why the generators are one-sided.
-- *One-Sided Operators on a Clifford Algebra with Hermitian Adjoint* (`articles_maths/one-sided-operators-on-a-clifford-algebra-with-hermitian-adjoint.md`), for the general one-sided theory and the double centraliser.
+- *One-Sided Operators on a Hilbert Algebra with Hermitian Adjoint* (`articles_maths/one-sided-operators-on-a-hilbert-algebra-with-hermitian-adjoint.md`), for the general one-sided theory and the double centraliser.

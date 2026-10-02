@@ -13,7 +13,7 @@ which is the coarsest decomposition of the algebra and the source of nearly ever
 
 The article establishes the definitions and a basis for each subspace; shows that the two descriptions of $S$ and $V$ — as eigenspaces of the conjugation and as the scalar line and the span of the vector units — coincide; examines the algebra and module structure, in particular the failure of $V$ to be a subalgebra and its structure as a Lie algebra under the commutator; restricts the split-quaternion norm to each subspace and identifies the Minkowski form of signature $(2,1)$ on $V$; gives the matrix images of both; follows the three involutions through them; and records their relations with the remaining distinguished subspaces. It closes with worked examples.
 
-**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$, and a general element $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, the split-quaternion norm is $N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2 + q_1^2 - q_2^2 - q_3^2$ with polarisation $B$, and the principal involution $\alpha$ and the reversal $\rho$ are as in *Split-Quaternion Algebra*. The split-complex subalgebras are $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$ and $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$.
+**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$, and a general element $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, the split-quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2$ with polarisation $B$, and the principal involution $\alpha$ and the reversal $\rho$ are as in *Split-Quaternion Algebra*. The split-complex subalgebras are $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$ and $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$.
 
 ## Definition and Basis
 
@@ -33,13 +33,13 @@ Every element has a unique expansion $\tilde q = q_0 + \mathbf{v}$ with $q_0 \in
 
 The scalar and vector subspaces are exactly the eigenspaces of the conjugation.
 
-**Proposition.** For every $\tilde q \in \mathbb{H}_{\mathrm{s}}$, the conjugation satisfies $\bar{\tilde q} = \tilde q$ if and only if $\tilde q \in S$, and $\bar{\tilde q} = -\tilde q$ if and only if $\tilde q \in V$. Hence the scalar–vector decomposition is the eigenspace decomposition
+**Proposition.** For every $\tilde q \in \mathbb{H}_{\mathrm{s}}$, the conjugation satisfies $\tilde{q}^{\natural} = \tilde q$ if and only if $\tilde q \in S$, and $\tilde{q}^{\natural} = -\tilde q$ if and only if $\tilde q \in V$. Hence the scalar–vector decomposition is the eigenspace decomposition
 
 $$
-\mathbb{H}_{\mathrm{s}} = S \oplus V, \qquad S = \{\tilde q : \bar{\tilde q} = \tilde q\}, \qquad V = \{\tilde q : \bar{\tilde q} = -\tilde q\}.
+\mathbb{H}_{\mathrm{s}} = S \oplus V, \qquad S = \{\tilde q : \tilde{q}^{\natural} = \tilde q\}, \qquad V = \{\tilde q : \tilde{q}^{\natural} = -\tilde q\}.
 $$
 
-**Proof.** Since $\bar{1} = 1$ and $\overline{e_k} = -e_k$, the conjugation acts as $+1$ on $S$ and as $-1$ on $V$; conversely, writing $\tilde q = q_0 + \mathbf{v}$, the condition $\bar{\tilde q} = \tilde q$ reads $-2\mathbf{v} = 0$, i.e. $\mathbf{v} = 0$, and the condition $\bar{\tilde q} = -\tilde q$ reads $2q_0 = 0$, i.e. $q_0 = 0$.
+**Proof.** Since $\bar{1} = 1$ and $e_k^{\natural} = -e_k$, the conjugation acts as $+1$ on $S$ and as $-1$ on $V$; conversely, writing $\tilde q = q_0 + \mathbf{v}$, the condition $\tilde{q}^{\natural} = \tilde q$ reads $-2\mathbf{v} = 0$, i.e. $\mathbf{v} = 0$, and the condition $\tilde{q}^{\natural} = -\tilde q$ reads $2q_0 = 0$, i.e. $q_0 = 0$.
 
 The scalar subspace is also the **centre** of the algebra. An element $\tilde q$ commutes with every element if and only if $\mathbf{v} = 0$: commuting with $e_1$ and $e_2$ gives $\mathbf{v}e_1 = e_1\mathbf{v}$ and $\mathbf{v}e_2 = e_2\mathbf{v}$, which force $q_2 = q_3 = 0$ and $q_1 = 0$ respectively, so $\tilde q = q_0$ is scalar. Hence
 
@@ -135,7 +135,7 @@ The three involutions of the algebra act on $S$ and $V$ by the following sign pa
 
 | involution | on $S$ | on $V$ |
 |---|---|---|
-| conjugation $\bar{\cdot}$ | $+1$ | $-1$ |
+| conjugation ${}^{\natural}$ | $+1$ | $-1$ |
 | principal $\alpha$ | $+1$ | $-1$ on $\operatorname{span}\{e_1,e_2\}$, $+1$ on $\mathbb{R}e_3$ |
 | reversal $\rho$ | $+1$ | $+1$ on $\operatorname{span}\{e_1,e_2\}$, $-1$ on $\mathbb{R}e_3$ |
 
@@ -191,10 +191,10 @@ The split-quaternion norm restricts to $N(q_0) = q_0^2$ on $S$, positive definit
 | Symbol | Meaning | Article |
 |---|---|---|
 | $\mathbb{H}_{\mathrm{s}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
-| $S = \mathbb{R}\cdot 1$ | the scalar subspace, the centre, $\{\tilde q : \bar{\tilde q}=\tilde q\}$ | this article |
-| $V = \operatorname{span}\{e_1,e_2,e_3\}$ | the vector subspace, $\{\tilde q : \bar{\tilde q}=-\tilde q\}$ | this article |
+| $S = \mathbb{R}\cdot 1$ | the scalar subspace, the centre, $\{\tilde q : \tilde{q}^{\natural}=\tilde q\}$ | this article |
+| $V = \operatorname{span}\{e_1,e_2,e_3\}$ | the vector subspace, $\{\tilde q : \tilde{q}^{\natural}=-\tilde q\}$ | this article |
 | $\operatorname{Sc}(\tilde q) = q_0$, $\operatorname{Vec}(\tilde q) = \mathbf{v}$ | the scalar and vector parts | this article |
-| $\bar{\cdot}$, $\alpha$, $\rho$ | conjugation, principal involution, reversal | *Split-Quaternion Algebra* |
+| ${}^{\natural}$, $\alpha$, $\rho$ | conjugation, principal involution, reversal | *Split-Quaternion Algebra* |
 | $N(\mathbf{u}) = q_1^2-q_2^2-q_3^2$ on $V$ | the Minkowski form of signature $(2,1)$ | this article |
 | $B(\mathbf{u},\mathbf{v})$ | the polarised bilinear form | *Split-Quaternion Norm and Invertibility* |
 | $[\tilde q,y] = \tilde q y-y\tilde q$ | the commutator bracket | this article |

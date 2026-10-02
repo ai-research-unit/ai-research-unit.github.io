@@ -117,9 +117,9 @@ For one fermionic mode, whose explicit realization is given in the next section,
 
 ## Three Gradings
 
-The word "grading" is used in this corpus for three different structures, and they must not be conflated. The exercise article on the non-relativistic limit already warns that the Foldy–Wouthuysen grading by $\beta$ is not the $\mathbb{M}_\pm$ grading by $\dagger$; a third grading, the fermion parity, is a third thing again.
+The word "grading" is used in this corpus for three different structures, and they must not be conflated. The exercise article on the non-relativistic limit already warns that the Foldy–Wouthuysen grading by $\beta$ is not the $\mathbb{M}_\pm$ grading by ${}^{*}$; a third grading, the fermion parity, is a third thing again.
 
-**1. The fixed-point splitting.** The decomposition $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is the $\pm1$ eigenspace splitting of the Hermitian conjugation $\dagger$. It is a splitting of $\mathbb{B}$ as a real vector space, and it is **not an algebra grading**: the product of two Hermitian elements need not be Hermitian. The smallest counterexample is the one the informational-space article uses to show that $\mathbb{M}_+$ is not a subalgebra,
+**1. The fixed-point splitting.** The decomposition $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is the $\pm1$ eigenspace splitting of the Hermitian conjugation ${}^{*}$. It is a splitting of $\mathbb{B}$ as a real vector space, and it is **not an algebra grading**: the product of two Hermitian elements need not be Hermitian. The smallest counterexample is the one the informational-space article uses to show that $\mathbb{M}_+$ is not a subalgebra,
 
 $$
 (ie_1)(ie_2)=i^2e_1e_2=-e_3\in\mathbb{M}_-,

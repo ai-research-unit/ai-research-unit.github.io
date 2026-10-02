@@ -13,16 +13,16 @@ As in the companion articles, everything here is algebraic and nothing is physic
 **Definition.** The **vector subspace** is the anti-fixed space of quaternion conjugation,
 
 $$
-\mathrm{Vect}(\mathbb{B}) = \left\{ \tilde{Q} \in \mathbb{B} : \bar{\tilde{Q}} = -\tilde{Q} \right\} ,
+\mathrm{Vect}(\mathbb{B}) = \left\{ \tilde{Q} \in \mathbb{B} : \tilde{Q}^{\natural} = -\tilde{Q} \right\} ,
 $$
 
-with $\bar{\tilde{Q}} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3$.
+with $\tilde{Q}^{\natural} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3$.
 
-Together with the centre subspace it gives the **scalar–vector decomposition** $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$, the eigenspace decomposition of $\bar{\cdot}$ for the eigenvalues $+1$ and $-1$.
+Together with the centre subspace it gives the **scalar–vector decomposition** $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$, the eigenspace decomposition of ${}^{\natural}$ for the eigenvalues $+1$ and $-1$.
 
 ### The Condition in Coordinates
 
-Comparing $\bar{\tilde{Q}} = -\tilde{Q}$ coefficient by coefficient, the three vector coefficients impose $Q_k = -(-Q_k)$ for $k = 1, 2, 3$, which is no condition at all, while the scalar coefficient imposes $Q_0 = -Q_0$, that is $Q_0 = 0$:
+Comparing $\tilde{Q}^{\natural} = -\tilde{Q}$ coefficient by coefficient, the three vector coefficients impose $Q_k = -(-Q_k)$ for $k = 1, 2, 3$, which is no condition at all, while the scalar coefficient imposes $Q_0 = -Q_0$, that is $Q_0 = 0$:
 
 $$
 \tilde{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3 , \qquad Q_1, Q_2, Q_3 \in \mathbb{C} .
@@ -54,9 +54,9 @@ The two summands are precisely two of the four coordinate blocks of the algebra:
 
 ### It Is the Kernel of the Scalar Part
 
-**Proposition.** $\mathrm{Vect}(\mathbb{B}) = \ker \operatorname{Sc}$, where $\operatorname{Sc}(\tilde{Q}) = Q_0 = \tfrac{1}{2}(\tilde{Q} + \bar{\tilde{Q}})$.
+**Proposition.** $\mathrm{Vect}(\mathbb{B}) = \ker \operatorname{Sc}$, where $\operatorname{Sc}(\tilde{Q}) = Q_0 = \tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{\natural})$.
 
-**Proof.** Immediate from the coordinate condition $Q_0 = 0$, and the second expression is the projection onto the fixed space of $\bar{\cdot}$ along the anti-fixed space.
+**Proof.** Immediate from the coordinate condition $Q_0 = 0$, and the second expression is the projection onto the fixed space of ${}^{\natural}$ along the anti-fixed space.
 
 ### It Is the Derived Subspace
 
@@ -71,10 +71,10 @@ The two summands are precisely two of the four coordinate blocks of the algebra:
 **Proof.** The norm-one group is a smooth subgroup of the units, so its Lie algebra is its tangent space at the identity, and an element $\tilde{Q}$ lies in that tangent space exactly when the derivative at $t = 0$ of $t \mapsto N(e_0 + t\tilde{Q})$ vanishes. By multiplicativity of the biquaternion norm,
 
 $$
-N(e_0 + t\tilde{Q}) = (e_0 + t\tilde{Q})(e_0 + t\bar{\tilde{Q}}) = e_0 + t\bigl(\tilde{Q} + \bar{\tilde{Q}}\bigr) + t^2 N(\tilde{Q}) ,
+N(e_0 + t\tilde{Q}) = (e_0 + t\tilde{Q})(e_0 + t\tilde{Q}^{\natural}) = e_0 + t\bigl(\tilde{Q} + \tilde{Q}^{\natural}\bigr) + t^2 N(\tilde{Q}) ,
 $$
 
-whose linear coefficient is $\tilde{Q} + \bar{\tilde{Q}} = 2\operatorname{Sc}(\tilde{Q})$; this vanishes exactly on the vector subspace.
+whose linear coefficient is $\tilde{Q} + \tilde{Q}^{\natural} = 2\operatorname{Sc}(\tilde{Q})$; this vanishes exactly on the vector subspace.
 
 The proposition identifies $\mathrm{Vect}(\mathbb{B})$ with the Lie algebra of the norm-one group, a statement developed in *Biquaternion Lie Algebra* from the side of the group.
 
@@ -130,7 +130,7 @@ $$
 
 complex-valued in general, with real restriction of signature $(3, 3)$ in the basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$, since $N(e_k) = 1$ and $N(ie_k) = -1$.
 
-**Proof.** Substituting $Q_0 = 0$ in $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ leaves the three terms; the signs of the real basis vectors are computed from $(ie_k)^2 = i^2 e_k^2 = -(-1) = 1$ for the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$.
+**Proof.** Substituting $Q_0 = 0$ in $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ leaves the three terms; the signs of the real basis vectors are computed from $(ie_k)^2 = i^2 e_k^2 = -(-1) = 1$ for the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$.
 
 Like the centre subspace and unlike the four others, the vector subspace is a subspace on which the biquaternion norm is not real-valued. Its **null elements** are the solutions of $Q_1^2 + Q_2^2 + Q_3^2 = 0$, a complex cone through the origin of real dimension four.
 
@@ -138,7 +138,7 @@ Like the centre subspace and unlike the four others, the vector subspace is a su
 
 **Theorem.** For $\tilde{Q} \in \mathrm{Vect}(\mathbb{B})$ the following are equivalent: $\tilde{Q}$ is a unit; $N(\tilde{Q}) \neq 0$; $\tilde{Q}$ is not a zero divisor. The zero divisors are exactly the null elements, $\tilde{Q} \neq 0$ with $N(\tilde{Q}) = 0$.
 
-**Proof.** The general invertibility criterion gives the equivalence of the first two; for the third, if $N(\tilde{Q}) \neq 0$ then $\tilde{Q}$ has the inverse $-\bar{\tilde{Q}}/N(\tilde{Q})$, since $\tilde{Q}^2 = -N(\tilde{Q})e_0$ implies $\bar{\tilde{Q}} = -\tilde{Q}$ and hence $\tilde{Q}(-\bar{\tilde{Q}}/N(\tilde{Q})) = -\tilde{Q}(-\tilde{Q})/N(\tilde{Q}) = \tilde{Q}^2/N(\tilde{Q}) = -e_0$; and if $N(\tilde{Q}) = 0$ then $\tilde{Q}^2 = 0$ with $\tilde{Q} \neq 0$, so $\tilde{Q}$ annihilates itself.
+**Proof.** The general invertibility criterion gives the equivalence of the first two; for the third, if $N(\tilde{Q}) \neq 0$ then $\tilde{Q}$ has the inverse $-\tilde{Q}^{\natural}/N(\tilde{Q})$, since $\tilde{Q}^2 = -N(\tilde{Q})e_0$ implies $\tilde{Q}^{\natural} = -\tilde{Q}$ and hence $\tilde{Q}(-\tilde{Q}^{\natural}/N(\tilde{Q})) = -\tilde{Q}(-\tilde{Q})/N(\tilde{Q}) = \tilde{Q}^2/N(\tilde{Q}) = -e_0$; and if $N(\tilde{Q}) = 0$ then $\tilde{Q}^2 = 0$ with $\tilde{Q} \neq 0$, so $\tilde{Q}$ annihilates itself.
 
 **Corollary.** Every null vector is nilpotent of index two: $\tilde{Q}^2 = 0$ but $\tilde{Q} \neq 0$. The vector subspace contains no idempotent other than $0$.
 
@@ -152,10 +152,10 @@ In the basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$ the four involutions act diagonal
 
 | involution | matrix | sign pattern |
 |---|---|---|
-| $\bar{\cdot}$ | $-\mathrm{id}$ | all six signs negative |
-| ${}^{*}$ | $\operatorname{diag}(1,1,1,-1,-1,-1)$ | real vectors fixed, imaginary vectors negated |
-| ${}^{\dagger}$ | $\operatorname{diag}(-1,-1,-1,1,1,1)$ | real vectors negated, imaginary vectors fixed |
-| $\flat$ | $\operatorname{diag}(1,1,1,-1,-1,-1)$ | as ${}^{*}$ |
+| ${}^{\natural}$ | $-\mathrm{id}$ | all six signs negative |
+| $\bar{\cdot}$ | $\operatorname{diag}(1,1,1,-1,-1,-1)$ | real vectors fixed, imaginary vectors negated |
+| ${}^{*}$ | $\operatorname{diag}(-1,-1,-1,1,1,1)$ | real vectors negated, imaginary vectors fixed |
+| $\flat$ | $\operatorname{diag}(1,1,1,-1,-1,-1)$ | as $\bar{\cdot}$ |
 
 The subspace is invariant under all four. Quaternion conjugation acts as the negative of the identity, which is the defining property of the subspace; complex conjugation preserves the two coordinate blocks it contains, fixing $\operatorname{span}\{e_k\}$ and negating $\operatorname{span}\{ie_k\}$, and Hermitian conjugation preserves them with the two roles exchanged, negating the first and fixing the second; reversal acts as complex conjugation does.
 
@@ -209,7 +209,7 @@ The vector subspace therefore contains the whole two-real-dimensional family of 
 
 **Proposition.** The zero divisors of $\mathrm{Vect}(\mathbb{B})$ are exactly the non-zero nilpotents, and they are the pure family in its entirety.
 
-**Proof.** For $\tilde{Q} = Q_1e_1 + Q_2e_2 + Q_3e_3$ one has $\bar{\tilde{Q}} = -\tilde{Q}$ and $\tilde{Q}^2 = -\bigl(\sum_k Q_k^2\bigr)e_0$, so $\tilde{Q}\bar{\tilde{Q}} = \sum_k Q_k^2$ and the criterion $\tilde{Q}\bar{\tilde{Q}} = 0$ reads $\sum_k Q_k^2 = 0$; in that case $\tilde{Q}^2 = 0$.
+**Proof.** For $\tilde{Q} = Q_1e_1 + Q_2e_2 + Q_3e_3$ one has $\tilde{Q}^{\natural} = -\tilde{Q}$ and $\tilde{Q}^2 = -\bigl(\sum_k Q_k^2\bigr)e_0$, so $\tilde{Q}\tilde{Q}^{\natural} = \sum_k Q_k^2$ and the criterion $\tilde{Q}\tilde{Q}^{\natural} = 0$ reads $\sum_k Q_k^2 = 0$; in that case $\tilde{Q}^2 = 0$.
 
 This is the pure case, the nilpotent cone, of *Biquaternion Zero Divisors*: a complex cone of complex dimension $2$ and real dimension $4$, whose elements have vanishing scalar part, as against the non-pure family of complex multiples of idempotents. The vector subspace is the only one of the six whose zero divisors are all nilpotent — the sectors have null zero divisors that are not nilpotent, and the centre, the quaternion and the anti-quaternion subspaces have none.
 
@@ -252,7 +252,7 @@ The two computations are the two faces of the product formula, and together they
 For $\tilde{Q} = e_1 + e_2$ one has $N(\tilde{Q}) = 2$, so $\tilde{Q}$ is a unit with $\tilde{Q}^2 = -2e_0$ and
 
 $$
-\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}}}{2} = -\frac{e_1 + e_2}{2} ,
+\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{2} = -\frac{e_1 + e_2}{2} ,
 $$
 
 which is again a vector element; the inverse of a non-null vector stays in the subspace, as the formula for the inverse of a pure element requires.
@@ -285,7 +285,7 @@ The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the anti-fixed space of quate
 
 | symbol | meaning |
 |---|---|
-| $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, $\{\tilde{Q} : \bar{\tilde{Q}} = -\tilde{Q}\}$ |
+| $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, $\{\tilde{Q} : \tilde{Q}^{\natural} = -\tilde{Q}\}$ |
 | $\operatorname{Sc}$ | the scalar-part functional, $\operatorname{Sc}(\tilde{Q}) = Q_0$ |
 | $\mathbf{Q} = (Q_1,Q_2,Q_3)$ | the coefficient triple of a vector element |
 | $(\mathbf{Q},\mathbf{R})$ | the complex bilinear dot product |
@@ -297,7 +297,7 @@ The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the anti-fixed space of quate
 | $\tilde T, \tilde S$ | the off-diagonal Peirce elements $\tfrac12(ie_1 \mp e_2)$, nilpotents of the subspace |
 | $\xi$, $\tilde\Pi$ | a root of $-1$ and an idempotent of $\mathbb{B}$ |
 | $\mathrm{K}$ | the rotation subalgebra $\operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ |
-| $\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$ | the four involutions |
+| ${}^{\natural}, \bar{\cdot}, {}^{*}, \flat$ | the four involutions |
 
 ## Further Reading
 

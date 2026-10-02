@@ -92,12 +92,12 @@ The vanishing of the trace on $V$ is the case $q_0 = 0$.
 **Corollary (Formulas in the Model).** For every $\tilde q$,
 
 $$
-\det \Phi(\bar{\tilde q}) = \det \Phi(\tilde q), \qquad \Phi(\bar{\tilde q}) = \operatorname{adj}\Phi(\tilde q),
+\det \Phi(\tilde{q}^{\natural}) = \det \Phi(\tilde q), \qquad \Phi(\tilde{q}^{\natural}) = \operatorname{adj}\Phi(\tilde q),
 $$
 
 and $\tilde q$ is a unit if and only if $\Phi(\tilde q)$ is invertible, in which case $\Phi(\tilde q^{-1}) = \Phi(\tilde q)^{-1} = \operatorname{adj}\Phi(\tilde q)/\det\Phi(\tilde q)$.
 
-**Proof.** The conjugation is an involution of the algebra, so it preserves the split-quaternion norm: $N(\bar{\tilde q}) = \bar{\tilde q}\tilde q = N(\tilde q)$, and the first identity follows from $\det = N$. The second is the adjugate identity of (*Split-Quaternion Algebra*, §*The Conjugation*). The invertibility statement is the equality $\det\Phi = N$ together with *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*.
+**Proof.** The conjugation is an involution of the algebra, so it preserves the split-quaternion norm: $N(\tilde{q}^{\natural}) = \tilde{q}^{\natural}\tilde q = N(\tilde q)$, and the first identity follows from $\det = N$. The second is the adjugate identity of (*Split-Quaternion Algebra*, §*The Conjugation*). The invertibility statement is the equality $\det\Phi = N$ together with *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*.
 
 ## The Image as a Linear Subspace
 
@@ -196,7 +196,7 @@ The quaternion algebra has no faithful real degree-two representation, because a
 | $\operatorname{Aut}(\mathbb{H}_{\mathrm{s}}) \cong \mathrm{PGL}_2(\mathbb{R})$ | the automorphism group | this article |
 | $\det\Phi(\tilde q) = N(\tilde q)$ | the determinant as norm | this article |
 | $\operatorname{tr}\Phi(\tilde q) = 2\operatorname{Sc}(\tilde q)$ | the trace as twice the scalar part | this article |
-| $\Phi(\bar{\tilde q}) = \operatorname{adj}\Phi(\tilde q)$ | conjugation as the adjugate | this article |
+| $\Phi(\tilde{q}^{\natural}) = \operatorname{adj}\Phi(\tilde q)$ | conjugation as the adjugate | this article |
 | $\mathrm{SL}_2(\mathbb{R})$ | the traceless matrices, the image of $V$ | this article |
 | defining module, $\mathbb{R}^2$ | the simple module of the algebra | this article |
 | $R_\ell, K_\ell$ | the two families of maximal isotropic subspaces | *Split-Quaternion Zero Divisors* |

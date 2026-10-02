@@ -86,7 +86,7 @@ This is the algebraic content of a familiar physical fact. In passing from the D
 
 ## The Quaternion and Matrix Forms of the Parra Spinors
 
-Parra's spinors have a compact quaternion form. With the quaternion basis $1, ik:=ie_k$ ($k=1,2,3$) and quaternion conjugation $\bar{\phantom q}$, the spinor of option $\{r\}$ is
+Parra's spinors have a compact quaternion form. With the quaternion basis $1, ik:=ie_k$ ($k=1,2,3$) and quaternion conjugation $\phantom{q}^{\natural}$, the spinor of option $\{r\}$ is
 
 $$
 \Psi_r = q_{r1} + i\,\bar q_{r2},

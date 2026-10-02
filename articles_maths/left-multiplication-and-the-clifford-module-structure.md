@@ -1,0 +1,105 @@
+# __Left Multiplication and the Clifford Module Structure__
+
+## Introduction
+
+A Clifford algebra is a ring as well as a vector space, so it acts on itself, and it acts on itself from the left. The map that sends an element $x$ to the left multiplication $L_x(y) = x\,y$ is a homomorphism of algebras into the endomorphisms of the underlying vector space, and it turns the algebra into a module over itself – the **regular module** – whose submodules are exactly its left ideals. This article reads the representation theory that follows: what the left multiplication is as a representation, which modules it produces, and when those modules are irreducible.
+
+The operator calculus of the left and the right multiplications – their composition, their commutation, their images and their mutual commutants – is *One-Sided Operators on a Clifford Algebra* and is not repeated here. What this article adds is the reading of that calculus as **module theory**: the regular module, its decomposition into the simple modules, the minimal left ideals as the irreducible objects, and the single structural fact that decides the shape of the representation, namely that in even dimension the Clifford algebra is simple and therefore has exactly one irreducible module up to isomorphism, while in odd dimension it has two.
+
+The algebra, its grading and its ideal structure are *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*; the primitive idempotents, the minimal left ideals they generate and the spinor module are *Spinors as Minimal Left Ideals with Inner Conjugation*, whose constructions are quoted; the complex spin module, its dimension and its chiral splitting are *Spin Representations and Clifford Modules with Inner Conjugation*; the classification of the Clifford algebras, from which the number of simple modules is read, is *The Low-Dimensional Classification* and *Bott Periodicity and the Classification*. The base is a field $F$ of characteristic not $2$ and $q$ is a non-degenerate quadratic form on the finite-dimensional space $V$.
+
+## The Left Regular Representation
+
+### Definition and Faithfulness
+
+**Definition.** The **left regular representation** of the Clifford algebra is
+
+$$
+\rho : \mathrm{Cl}(V,q) \longrightarrow \mathrm{End}_F\bigl(\mathrm{Cl}(V,q)\bigr), \qquad \rho(x) = L_x, \qquad L_x(y) = x\,y .
+$$
+
+**Proposition.** $\rho$ is an injective homomorphism of unital $F$-algebras, and its image is the algebra of left multiplications, a subalgebra of $\mathrm{End}_F(\mathrm{Cl}(V,q))$ isomorphic to $\mathrm{Cl}(V,q)$.
+
+**Proof.** $\rho(xz)(y) = xzy = \rho(x)\bigl(\rho(z)(y)\bigr)$ and $\rho(1) = \mathrm{id}$; if $\rho(x) = 0$ then $x = \rho(x)(1) = 0$. The image is the left multiplication algebra, and it is isomorphic to the algebra by injectivity.
+
+**Remark (the regular module).** The vector space $\mathrm{Cl}(V,q)$ with the action $x \cdot y = xy$ is the **regular left module**. Its submodules are the left ideals of the algebra, its cyclic vectors are the elements whose left multiples fill the module, and the class of $1$ is a cyclic vector: $\mathrm{Cl}(V,q) = \mathrm{Cl}(V,q)\cdot 1$. So the regular module is cyclic, and every finitely generated left module is a quotient of a finite direct sum of copies of it.
+
+### The Module Structure
+
+**Proposition.** A subspace $I \subseteq \mathrm{Cl}(V,q)$ is a submodule of the regular module exactly when it is a left ideal, that is when $\mathrm{Cl}(V,q)\cdot I \subseteq I$. Quotients of the regular module are the left modules $\mathrm{Cl}(V,q)/I$.
+
+**Proof.** The two conditions are the definition of a submodule and the definition of a left ideal.
+
+**Proposition (the annihilator and the image).** For $x \in \mathrm{Cl}(V,q)$ the kernel of $L_x$ is the left annihilator $\mathrm{Ann}(x)$, a left ideal, and the image is the principal left ideal $\mathrm{Cl}(V,q)x$. Both are submodules of the regular module, and $L_x$ is injective exactly when $x$ is not a left zero divisor, in particular when $x$ is a unit.
+
+**Proof.** $L_x(y) = 0$ says $xy = 0$, which is the definition of the left annihilator; the image is the set of $xy$, which is $\mathrm{Cl}(V,q)x$. Injectivity of $L_x$ for a unit $x$ follows from $x^{-1}xy = y$.
+
+## The Simple Modules and the Minimal Left Ideals
+
+**Theorem (semisimplicity).** For a non-degenerate quadratic form $q$ and a base field of characteristic not $2$ the Clifford algebra $\mathrm{Cl}(V,q)$ is semisimple: every left module is a direct sum of simple modules, and the regular module is a direct sum of minimal left ideals.
+
+**Proof.** A finite-dimensional Clifford algebra of a non-degenerate form is a product of full matrix algebras over division rings, by the classification of *Bott Periodicity and the Classification*; a full matrix algebra over a division ring is semisimple, and a product of semisimple algebras is semisimple. The decomposition of the regular module into minimal left ideals is the corresponding decomposition $M_k(D) \cong D^k \oplus \cdots \oplus D^k$.
+
+**Definition.** A **minimal left ideal** is a nonzero left ideal containing no proper nonzero left ideal. A **primitive idempotent** is a nonzero idempotent $\pi$ with $\pi\,\mathrm{Cl}(V,q)\,\pi = F\pi$.
+
+**Theorem (the minimal left ideals are the simple modules).** The map $\pi \mapsto \mathrm{Cl}(V,q)\pi$ is a bijection between the primitive idempotents up to conjugacy and the isomorphism classes of minimal left ideals, and a minimal left ideal is exactly a simple submodule of the regular module. Every simple left module is isomorphic to one of them.
+
+**Proof.** By the classification the algebra is a product of matrix algebras $M_{k_i}(D_i)$ over division rings. In a full matrix algebra $M_k(D)$ the primitive idempotents are the rank-one matrices $e_{ii}$ up to conjugacy, and the left ideal $M_k(D)e_{ii}$ is the space of matrices supported on one column, which is minimal because it is a copy of the simple module $D^k$ and contains no proper nonzero left ideal. A product of algebras decomposes the left ideals componentwise, so the map $\pi \mapsto \mathrm{Cl}\pi$ is a bijection from the primitive idempotents up to conjugacy onto the minimal left ideals. This is the Wedderburn–Artin theorem in the explicit form used here; the passage to an arbitrary base field is the content quoted from the algebra layer. A submodule of a left ideal is a left ideal contained in it, so minimality and simplicity of the module agree.
+
+**Remark (the construction of the ideals).** The idempotent $f = \tfrac12(1+e)$ of a vector with $q(e) = 1$, the Witt basis and the identification of the minimal left ideal with the exterior algebra of the creation operators are *Spinors as Minimal Left Ideals with Inner Conjugation*; this article uses the ideals as the simple modules and does not construct them again.
+
+## Irreducibility in the Even Dimensions
+
+**Theorem (the number of simple modules).** Let $\dim V = n$ and let $q$ be non-degenerate.
+
+- If $n$ is **even**, $\mathrm{Cl}(V,q)$ is a central simple algebra over $F$: it is isomorphic to a full matrix algebra $M_{k}(D)$ over a division algebra $D$ with centre $F$. Consequently it has exactly **one** simple left module up to isomorphism, and the regular module is isotypic, a direct sum of $k$ copies of that simple module.
+- If $n$ is **odd**, the centre of $\mathrm{Cl}(V,q)$ is $F \oplus F\omega$, a two-dimensional commutative algebra. Consequently the algebra is not simple; over a base where $F \oplus F\omega$ splits it is a product of two simple algebras, and it has exactly **two** simple left modules up to isomorphism, exchanged by the automorphism $\omega \mapsto -\omega$ of the centre.
+
+**Proof.** The centre is $F$ in even dimension and $F\oplus F\omega$ in odd dimension, by *Clifford Algebras in Finite Dimensions*. In even dimension the algebra is central simple, and Wedderburn's theorem writes it as $M_k(D)$ with $D$ a division algebra, whose regular module is $k$ copies of the simple module $D^k$. In odd dimension the algebra is not simple because its centre is not a field; the splitting of $F\oplus F\omega$ and the resulting pair of simple quotients are the classification of *Bott Periodicity and the Classification*.
+
+**Corollary (the uniqueness of the spin representation in even dimension).** In even dimension there is one irreducible Clifford module up to isomorphism; every spinor module is a direct sum of copies of the minimal left ideal, and the structure of the representation is the multiplicity alone. In odd dimension the two simple modules are distinguished by the action of the volume element, which is central and acts by two different scalars after the centre is split.
+
+**Remark (multiplicity and the spinor module).** The regular module has multiplicity $k$ over the simple module, where $k$ is the size of the matrix algebra; the irreducible spinor module of the physicists is the simple module, not the regular module, and it is the minimal left ideal that supplies it. This is the sense in which the minimal left ideal and not the algebra is the spinor space, the point made at length in *Spinors as Minimal Left Ideals with Inner Conjugation*.
+
+## Worked Cases
+
+### The Even Case $\mathrm{Cl}_{0,2}(\mathbb{R})$
+
+With $e_1^{2} = e_2^{2} = -1$ the algebra is $\mathbb{H}$, a division algebra, so $k = 1$, $D = \mathbb{H}$, and $\mathrm{Cl} \cong M_1(\mathbb{H})$. The algebra is simple and its centre is $\mathbb{R}$. The regular module is the simple module itself, hence irreducible; every nonzero left ideal is the whole algebra, and the single irreducible module has $\mathbb{R}$-dimension $4$.
+
+### The Even Case $\mathrm{Cl}_{1,1}(\mathbb{R})$
+
+With $e_1^{2} = 1$, $e_2^{2} = -1$ the algebra is $M_2(\mathbb{R})$, so $k = 2$ and $D = \mathbb{R}$. The regular module is $\mathbb{R}^2 \oplus \mathbb{R}^2$, the sum of two copies of the simple module, and the minimal left ideals are the two-dimensional subspaces spanned by the columns of a rank-one idempotent. The algebra is simple, and there is one irreducible module up to isomorphism, of dimension $2$.
+
+### The Odd Case $\mathrm{Cl}_{0,3}(\mathbb{R})$
+
+With $e_j^{2} = -1$ the algebra is $\mathbb{H} \oplus \mathbb{H}$, the centre is $\mathbb{R} \oplus \mathbb{R}\omega$ with $\omega = e_1e_2e_3$ and $\omega^{2} = 1$, so the centre splits and the algebra is a product of two division algebras. It has two simple modules up to isomorphism, each of $\mathbb{R}$-dimension $4$, distinguished by the two eigenvalues $\pm1$ of the action of $\omega$. The regular module is the sum of one copy of each, and this is the algebraic origin of the two chiral halves.
+
+## Summary
+
+The **left regular representation** $\rho(x) = L_x$ is a faithful algebra homomorphism from $\mathrm{Cl}(V,q)$ into its own endomorphisms, and it makes the algebra a module over itself, the **regular module**, whose submodules are the left ideals and which is cyclic on $1$. The kernel of $L_x$ is the left annihilator and its image is the principal left ideal $\mathrm{Cl}(V,q)x$. For a non-degenerate form the algebra is **semisimple**, so the regular module is a direct sum of minimal left ideals, and the minimal left ideals are exactly the simple modules; each is generated by a primitive idempotent, and every simple module is isomorphic to one of them. The construction of those ideals and the Witt basis belong to *Spinors as Minimal Left Ideals with Inner Conjugation*.
+
+The number of simple modules is decided by the dimension, and this is the structural result of the article. In **even** dimension the Clifford algebra is central simple, isomorphic to $M_k(D)$, so it has exactly one simple module up to isomorphism and the regular module is isotypic of multiplicity $k$; the spin representation is unique and its only freedom is multiplicity. In **odd** dimension the centre is $F \oplus F\omega$, the algebra is not simple, and there are two simple modules, distinguished by the central volume element. The operator calculus behind these modules – the composition of the one-sided families, their commutants and the enveloping algebra – is *One-Sided Operators on a Clifford Algebra*.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $L_x(y) = x\,y$ | Left multiplication |
+| $\rho(x) = L_x$ | Left regular representation |
+| $\mathrm{Cl}(V,q)$ as a left module over itself | The regular module, cyclic on $1$ |
+| $I \subseteq \mathrm{Cl}$ | Submodule = left ideal |
+| $\mathrm{Ann}(x)$, $\mathrm{Cl}(V,q)x$ | Kernel and image of $L_x$ |
+| $\pi$, $\pi^{2} = \pi$ | Idempotent; primitive when $\pi\mathrm{Cl}\pi = F\pi$ |
+| $\mathrm{Cl}(V,q)\pi$ | Minimal left ideal, a simple module |
+| $n = \dim V$ | Dimension, even or odd |
+| $F \oplus F\omega$ | Centre in odd dimension, $\omega$ the volume element |
+| $M_k(D)$ | Wedderburn form of the algebra in even dimension |
+
+## Further Reading
+
+- Claude Chevalley, *The Algebraic Theory of Spinors and Clifford Algebras*, Collected Works vol. 2 (Springer, 1997), for the regular representation and the minimal left ideals of a Clifford algebra.
+- H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the module theory of Clifford algebras and the number of simple modules.
+- Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the semisimplicity and the centre in odd dimension.
+- Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for the Wedderburn form of a simple algebra and the decomposition of its regular module.
+- Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd ed. (Cambridge University Press, 2001), for the matrix-algebra models of the low-dimensional Clifford algebras.

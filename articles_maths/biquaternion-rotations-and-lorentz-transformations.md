@@ -6,7 +6,7 @@ The biquaternion norm fixes what a motion is: the isometries of the form are the
 
 The article is the Geometry slot of the Lie-theoretic block: the algebra is *Biquaternion Lie Algebra*, the group and its exponential are *Biquaternion Lie Group and Exponential Structure*, and the topology of the group is *The Biquaternion Unit Group as a Topological Group*. The reflections and the Cartan–Dieudonné theorem are stated generally in *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation* and *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* of Part II, and their biquaternion case is worked here; the Clifford reading of the algebra is *The Clifford Structure of the Biquaternion Algebra*; the transformation group in full is in *Biquaternion Automorphisms and Derivations*; and the finite groups of units, together with the figures they determine, are *Biquaternion Orders and Finite Groups of Units*.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})\neq0$ (*Biquaternion Norm and Invertibility*). Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^3 Q_k e_k$.
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})\neq0$ (*Biquaternion Norm and Invertibility*). Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^3 Q_k e_k$.
 
 ---
 
@@ -39,7 +39,7 @@ and on the imaginary part this is the rotation of $\mathbb{R}^3$ through the ang
 The rotor of the previous section conjugates by a real quaternion and an inverse. The action the corpus uses for the Lorentz transformation of the whole algebra replaces the inverse by the Hermitian conjugate and admits any unit:
 
 $$
-\mathrm{H}_{\tilde{Q}}:\ \mathbb{B}\longrightarrow\mathbb{B},\qquad \mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\,\tilde T\,\tilde{Q}^{\dagger},
+\mathrm{H}_{\tilde{Q}}:\ \mathbb{B}\longrightarrow\mathbb{B},\qquad \mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\,\tilde T\,\tilde{Q}^{*},
 $$
 
 the **dagger sandwich**. Its carrier is the algebra as a real vector space of dimension eight, with basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, and its group is the group of units. Two laws govern it.
@@ -50,7 +50,7 @@ $$
 \mathrm{H}_{\tilde{Q}\tilde{R}}=\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{R}}.
 $$
 
-**Proof.** $\mathrm{H}_{\tilde{Q}}\bigl(\mathrm{H}_{\tilde{R}}(\tilde T)\bigr)=\tilde{Q}\bigl(\tilde{R}\tilde T\tilde{R}^{\dagger}\bigr)\tilde{Q}^{\dagger}=(\tilde{Q}\tilde{R})\tilde T(\tilde{Q}\tilde{R})^{\dagger}=\mathrm{H}_{\tilde{Q}\tilde{R}}(\tilde T)$, using the anti-automorphism property $(\tilde{Q}\tilde{R})^{\dagger}=\tilde{R}^{\dagger}\tilde{Q}^{\dagger}$. Consequently $\tilde{Q}\mapsto\mathrm{H}_{\tilde{Q}}$ is a homomorphism of the group of units into $GL(\mathbb{B})$.
+**Proof.** $\mathrm{H}_{\tilde{Q}}\bigl(\mathrm{H}_{\tilde{R}}(\tilde T)\bigr)=\tilde{Q}\bigl(\tilde{R}\tilde T\tilde{R}^{*}\bigr)\tilde{Q}^{*}=(\tilde{Q}\tilde{R})\tilde T(\tilde{Q}\tilde{R})^{\dagger}=\mathrm{H}_{\tilde{Q}\tilde{R}}(\tilde T)$, using the anti-automorphism property $(\tilde{Q}\tilde{R})^{\dagger}=\tilde{R}^{*}\tilde{Q}^{*}$. Consequently $\tilde{Q}\mapsto\mathrm{H}_{\tilde{Q}}$ is a homomorphism of the group of units into $GL(\mathbb{B})$.
 
 **Proposition (the central rule).** For every central $z$ and every $\tilde T$,
 
@@ -60,17 +60,17 @@ $$
 
 so that a central phase does not change the operator.
 
-**Why the dagger.** The involution $\dagger$ splits the algebra into the Hermitian sector $\mathbb{M}_+$ and the anti-Hermitian sector $\mathbb{M}_-$. Among the two-sided maps $\tilde T\mapsto A\tilde TB$ with $A,B$ invertible, those that carry the fixed space of $\dagger$ into itself are exactly those with $B=\lambda A^{\dagger}$ for a real $\lambda$, and the dagger sandwich is the normalised case $\lambda=1$. A sandwich built from the inverse instead carries $\mathbb{M}_+$ into a different fixed space: the automorphism $\tilde T\mapsto\tilde{Q}\tilde T\tilde{Q}^{-1}$ preserves the fixed spaces of the involution $\dagger$ conjugated by the image of the identity, $z\mapsto\tilde{Q}\tilde{Q}^{\dagger}z^{\dagger}(\tilde{Q}\tilde{Q}^{\dagger})^{-1}$, which is a different involution as soon as $\tilde{Q}$ is not unitary. Since the halves and the sectors are the fixed spaces of the involutions, the subspaces a sandwich preserves are the ones its own involution defines.
+**Why the dagger.** The involution ${}^{*}$ splits the algebra into the Hermitian sector $\mathbb{M}_+$ and the anti-Hermitian sector $\mathbb{M}_-$. Among the two-sided maps $\tilde T\mapsto A\tilde TB$ with $A,B$ invertible, those that carry the fixed space of ${}^{*}$ into itself are exactly those with $B=\lambda A^{\dagger}$ for a real $\lambda$, and the dagger sandwich is the normalised case $\lambda=1$. A sandwich built from the inverse instead carries $\mathbb{M}_+$ into a different fixed space: the automorphism $\tilde T\mapsto\tilde{Q}\tilde T\tilde{Q}^{-1}$ preserves the fixed spaces of the involution ${}^{*}$ conjugated by the image of the identity, $z\mapsto\tilde{Q}\tilde{Q}^{*}\bar{z}(\tilde{Q}\tilde{Q}^{*})^{-1}$, which is a different involution as soon as $\tilde{Q}$ is not unitary. Since the halves and the sectors are the fixed spaces of the involutions, the subspaces a sandwich preserves are the ones its own involution defines.
 
 **Theorem (the two sectors are preserved).** For every unit $\tilde{Q}$, the sandwich maps $\mathbb{M}_+$ to $\mathbb{M}_+$ and $\mathbb{M}_-$ to $\mathbb{M}_-$.
 
-**Proof.** Let $\tilde T\in\mathbb{M}_+$, so that $\tilde T^{\dagger}=\tilde T$. Then
+**Proof.** Let $\tilde T\in\mathbb{M}_+$, so that $\tilde{T}^{*}=\tilde T$. Then
 
 $$
-\left(\tilde{Q}\tilde T\tilde{Q}^{\dagger}\right)^{\dagger}=\tilde{Q}^{\dagger\dagger}\tilde T^{\dagger}\tilde{Q}^{\dagger}=\tilde{Q}\tilde T\tilde{Q}^{\dagger},
+\left(\tilde{Q}\tilde T\tilde{Q}^{*}\right)^{\dagger}=\tilde{Q}^{\dagger{}^{*}}\tilde{T}^{*}\tilde{Q}^{*}=\tilde{Q}\tilde T\tilde{Q}^{*},
 $$
 
-so the image is Hermitian and lies in $\mathbb{M}_+$; for $\tilde T\in\mathbb{M}_-$ one has $\tilde T^{\dagger}=-\tilde T$, and the image is anti-Hermitian.
+so the image is Hermitian and lies in $\mathbb{M}_+$; for $\tilde T\in\mathbb{M}_-$ one has $\tilde{T}^{*}=-\tilde T$, and the image is anti-Hermitian.
 
 **Theorem (the scaling of the norm).** For every unit $\tilde{Q}$ and every $\tilde T$,
 
@@ -78,31 +78,31 @@ $$
 N\bigl(\mathrm{H}_{\tilde{Q}}(\tilde T)\bigr)=\lvert N(\tilde{Q})\rvert^{2}N(\tilde T).
 $$
 
-**Proof.** The biquaternion norm is multiplicative and central, $N(ab)=N(a)N(b)$, and $N(\tilde{Q}^{\dagger})=N(\tilde{Q})^{*}$, because $\dagger$ is the composite of quaternion conjugation, which fixes $N$, with complex conjugation, which conjugates it. Hence $N(\tilde{Q}\tilde T\tilde{Q}^{\dagger})=N(\tilde{Q})N(\tilde T)N(\tilde{Q})^{*}=\lvert N(\tilde{Q})\rvert^{2}N(\tilde T)$.
+**Proof.** The biquaternion norm is multiplicative and central, $N(ab)=N(a)N(b)$, and $N(\tilde{Q}^{*})=N(\tilde{Q})^{*}$, because ${}^{*}$ is the composite of quaternion conjugation, which fixes $N$, with complex conjugation, which conjugates it. Hence $N(\tilde{Q}\tilde T\tilde{Q}^{*})=N(\tilde{Q})N(\tilde T)N(\tilde{Q})^{*}=\lvert N(\tilde{Q})\rvert^{2}N(\tilde T)$.
 
 On the unit-norm slice, where $\lvert N(\tilde{Q})\rvert=1$, the sandwich is an isometry of the biquaternion norm on both sectors: it is the action of $SL(2,\mathbb{C})$ on the Hermitian forms and on the four-vectors, and it is the covering map onto the proper orthochronous Lorentz group. The Lorentz transformation written above as $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$ is the sandwich of a norm-one element, and for it no inverse and no rotation part appear.
 
-**The image of the unit.** Applied to $e_0$ the sandwich returns $\mathrm{H}_{\tilde{Q}}(e_0)=\tilde{Q}\tilde{Q}^{\dagger}$, which is Hermitian and, for a general unit, not central: the centre is not preserved. The image of a traceless element need not be traceless, so the vector subspace is not preserved either.
+**The image of the unit.** Applied to $e_0$ the sandwich returns $\mathrm{H}_{\tilde{Q}}(e_0)=\tilde{Q}\tilde{Q}^{*}$, which is Hermitian and, for a general unit, not central: the centre is not preserved. The image of a traceless element need not be traceless, so the vector subspace is not preserved either.
 
 **The sandwich is not an automorphism.** For general $\tilde T,\tilde Y$,
 
 $$
-\mathrm{H}_{\tilde{Q}}(\tilde T\tilde Y)=\tilde{Q}\tilde T\tilde Y\tilde{Q}^{\dagger}\neq\left(\tilde{Q}\tilde T\tilde{Q}^{\dagger}\right)\left(\tilde{Q}\tilde Y\tilde{Q}^{\dagger}\right)=\mathrm{H}_{\tilde{Q}}(\tilde T)\mathrm{H}_{\tilde{Q}}(\tilde Y),
+\mathrm{H}_{\tilde{Q}}(\tilde T\tilde Y)=\tilde{Q}\tilde T\tilde Y\tilde{Q}^{*}\neq\left(\tilde{Q}\tilde T\tilde{Q}^{*}\right)\left(\tilde{Q}\tilde Y\tilde{Q}^{*}\right)=\mathrm{H}_{\tilde{Q}}(\tilde T)\mathrm{H}_{\tilde{Q}}(\tilde Y),
 $$
 
-because the insertion required between $\tilde T$ and $\tilde Y$ is $\tilde{Q}^{\dagger}\tilde{Q}$, which is the unit exactly when $\tilde{Q}$ is unitary. The map is a linear action of the group of units on the algebra, and it is an action by automorphisms only on that slice; the automorphisms themselves are in *Biquaternion Automorphisms and Derivations*.
+because the insertion required between $\tilde T$ and $\tilde Y$ is $\tilde{Q}^{*}\tilde{Q}$, which is the unit exactly when $\tilde{Q}$ is unitary. The map is a linear action of the group of units on the algebra, and it is an action by automorphisms only on that slice; the automorphisms themselves are in *Biquaternion Automorphisms and Derivations*.
 
 ## The Kernel and the Six Subspaces
 
 **Theorem (the kernel is the central circle).** $\mathrm{H}_{\tilde{Q}}=\mathrm{id}$ if and only if $\tilde{Q}=e^{i\theta}e_0$ for some real $\theta$.
 
-**Proof.** If $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde T$ for every $\tilde T$, then $\tilde T=e_0$ gives $\tilde{Q}\tilde{Q}^{\dagger}=e_0$, so $\tilde{Q}$ is unitary, and an arbitrary $\tilde T$ gives $\tilde{Q}\tilde T=\tilde T\tilde{Q}$, so $\tilde{Q}$ is central; a central unitary is a complex number of modulus one. Conversely such an element acts trivially, its Hermitian conjugate being its inverse.
+**Proof.** If $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde T$ for every $\tilde T$, then $\tilde T=e_0$ gives $\tilde{Q}\tilde{Q}^{*}=e_0$, so $\tilde{Q}$ is unitary, and an arbitrary $\tilde T$ gives $\tilde{Q}\tilde T=\tilde T\tilde{Q}$, so $\tilde{Q}$ is central; a central unitary is a complex number of modulus one. Conversely such an element acts trivially, its Hermitian conjugate being its inverse.
 
 The kernel is therefore the circle $U(1)=\{e^{i\theta}e_0\}$ in the centre, of one real dimension: the sandwich is blind to a central phase and to nothing else. On the unit-norm slice it reduces to the two central signs $\{\pm e_0\}$, the intersection of the circle with that slice, and it is this kernel of order two that is the double cover of the Lorentz group by the rotors.
 
 | operator | group | kernel | parameters lost |
 |---|---|---|---|
-| $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{\dagger}$ | the units of $\mathbb{B}$ | $U(1)\subset\mathbb{C}_{\mathbb{B}}$ | the circle only |
+| $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{*}$ | the units of $\mathbb{B}$ | $U(1)\subset\mathbb{C}_{\mathbb{B}}$ | the circle only |
 | $\mathrm{H}_{\tilde{\Lambda}}(\tilde T)=\tilde{\Lambda}\tilde T\tilde{\Lambda}^{\dagger}$, $N(\tilde{\Lambda})=1$ | the unit-norm slice $SL(2,\mathbb{C})$ | $\{\pm e_0\}$ | the sign |
 
 The action on the six distinguished subspaces is the following. Each entry records whether the image of a general element of the row subspace lies in that same subspace, for a general unit and for a real unit quaternion.
@@ -123,13 +123,13 @@ The two sectors are preserved for every element; the four subspaces of the scala
 1. the sandwich maps each of the six subspaces to itself;
 2. $B=e_0$;
 3. $\tilde{Q}=z\hat{q}$ with $z$ central and $\hat{q}$ a unit real quaternion;
-4. $\tilde{Q}\tilde{Q}^{\dagger}$ is a positive real multiple of $e_0$.
+4. $\tilde{Q}\tilde{Q}^{*}$ is a positive real multiple of $e_0$.
 
 When they hold, $\mathrm{H}_{\tilde{Q}}=\lvert z\rvert^{2}\mathrm{H}_{\hat{q}}$ is a dilation composed with a rotation of the vector space, and every one of the six subspaces is preserved.
 
-**Proof.** $(3)\Rightarrow(4)$: for $\tilde{Q}=z\hat{q}$ one has $\tilde{Q}\tilde{Q}^{\dagger}=\lvert z\rvert^{2}\hat{q}\hat{q}^{\dagger}=\lvert z\rvert^{2}e_0$, since a real quaternion satisfies $\hat{q}^{\dagger}=\bar{\hat{q}}=\hat{q}^{-1}$. $(4)\Rightarrow(3)$: if $\tilde{Q}\tilde{Q}^{\dagger}=\lambda e_0$ with $\lambda>0$ then $\lvert N(\tilde{Q})\rvert=\lambda$, the element $\tilde{Q}/\rho$, with $\rho$ the principal square root of $N(\tilde{Q})$, has unit norm and Hermitian square $e_0$, hence is $e^{i\alpha}\hat{q}$ with $\hat{q}$ a unit real quaternion, and $\tilde{Q}$ is of the form $(3)$. $(2)\Leftrightarrow(3)$ is immediate from the polar form. $(3)\Rightarrow(1)$: a central factor contributes the dilation, which preserves every subspace, and $\mathrm{H}_{\hat{q}}$ is the rotation of the vector space, which does the same. $(1)\Rightarrow(4)$: if the centre is preserved then $\tilde{Q}\tilde{Q}^{\dagger}$ is central; that element is Hermitian positive of norm $\lvert N(\tilde{Q})\rvert^{2}>0$, and a central Hermitian positive element of the algebra is a positive real multiple of $e_0$.
+**Proof.** $(3)\Rightarrow(4)$: for $\tilde{Q}=z\hat{q}$ one has $\tilde{Q}\tilde{Q}^{*}=\lvert z\rvert^{2}\hat{q}\hat{q}^{\dagger}=\lvert z\rvert^{2}e_0$, since a real quaternion satisfies $\hat{q}^{\dagger}=\hat{q}^{\natural}=\hat{q}^{-1}$. $(4)\Rightarrow(3)$: if $\tilde{Q}\tilde{Q}^{*}=\lambda e_0$ with $\lambda>0$ then $\lvert N(\tilde{Q})\rvert=\lambda$, the element $\tilde{Q}/\rho$, with $\rho$ the principal square root of $N(\tilde{Q})$, has unit norm and Hermitian square $e_0$, hence is $e^{i\alpha}\hat{q}$ with $\hat{q}$ a unit real quaternion, and $\tilde{Q}$ is of the form $(3)$. $(2)\Leftrightarrow(3)$ is immediate from the polar form. $(3)\Rightarrow(1)$: a central factor contributes the dilation, which preserves every subspace, and $\mathrm{H}_{\hat{q}}$ is the rotation of the vector space, which does the same. $(1)\Rightarrow(4)$: if the centre is preserved then $\tilde{Q}\tilde{Q}^{*}$ is central; that element is Hermitian positive of norm $\lvert N(\tilde{Q})\rvert^{2}>0$, and a central Hermitian positive element of the algebra is a positive real multiple of $e_0$.
 
-The multiplicative criterion and this one meet on the unitary elements: the operators that are multiplicative are exactly those with $\tilde{Q}\tilde{Q}^{\dagger}=e_0$, which are also the elements fixing the time axis, $\mathrm{H}_{\tilde{Q}}(ie_0)=i\tilde{Q}\tilde{Q}^{\dagger}=ie_0$. On the unit-norm slice the operators preserving the subspace structure form
+The multiplicative criterion and this one meet on the unitary elements: the operators that are multiplicative are exactly those with $\tilde{Q}\tilde{Q}^{*}=e_0$, which are also the elements fixing the time axis, $\mathrm{H}_{\tilde{Q}}(ie_0)=i\tilde{Q}\tilde{Q}^{*}=ie_0$. On the unit-norm slice the operators preserving the subspace structure form
 
 $$
 \left\{\mathrm{H}_{\hat{q}}:\hat{q}\hat{q}^{\dagger}=e_0\right\}\cong SU(2)/\{\pm e_0\}\cong SO(3),
@@ -155,7 +155,7 @@ $$
 \left.\frac{d}{dt}\right|_{t=0}\mathrm{H}_{e_0+tX}(\tilde T)=X\tilde T+\tilde TX^{\dagger}.
 $$
 
-**Proof.** Since $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{\dagger}$, differentiating the product at $\tilde{Q}=e_0$ gives $\dot{\tilde{Q}}\tilde T+\tilde T\dot{\tilde{Q}}^{\dagger}=X\tilde T+\tilde TX^{\dagger}$.
+**Proof.** Since $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{*}$, differentiating the product at $\tilde{Q}=e_0$ gives $\dot{\tilde{Q}}\tilde T+\tilde T\dot{\tilde{Q}}^{\dagger}=X\tilde T+\tilde TX^{\dagger}$.
 
 The formula contains the two symmetries of the algebra in one expression. Along the anti-Hermitian directions, $X^{\dagger}=-X$, the infinitesimal operator is the commutator $[X,\tilde T]$, the infinitesimal rotation; along the Hermitian directions, $X^{\dagger}=X$, it is the anticommutator $X\tilde T+\tilde TX$, the infinitesimal boost. Restricted to the unit-norm slice the operator group is $SL(2,\mathbb{C})$ acting by the sandwich, with Lie algebra $\mathrm{SL}(2,\mathbb{C})$ regarded over $\mathbb{R}$, of real dimension six: the anti-Hermitian generators give the rotations and the Hermitian ones the boosts. The adjoint maps are in *Biquaternion Lie Algebra* and the exponential in *Biquaternion Lie Group and Exponential Structure*.
 
@@ -163,9 +163,9 @@ The formula contains the two symmetries of the algebra in one expression. Along 
 
 The sandwich also realises the **reflections**, on the subspaces where the multiplication is Clifford. Let $v\in\mathbb{B}$ with $N(v)=1$; the reflection in the hyperplane $v^{\perp}$ is the linear map
 $$
-\rho_v(\tilde T)=-v\,\tilde T\,v^{-1}=-v\,\tilde T\,\bar{v},
+\rho_v(\tilde T)=-v\,\tilde T\,v^{-1}=-v\,\tilde T\,v^{\natural},
 $$
-the second equality using $v^{-1}=\bar{v}/N(v)=\bar{v}$ for a norm-one element.
+the second equality using $v^{-1}=v^{\natural}/N(v)=v^{\natural}$ for a norm-one element.
 
 **Theorem.** For $v$ with $N(v)=1$ the map $\rho_v$ preserves the biquaternion norm and its polar form, satisfies $\rho_v(v)=-v$, and fixes pointwise every element that anticommutes with $v$; its square is the conjugation $\rho_v^2(\tilde T)=v^2\tilde Tv^{-2}$.
 
@@ -201,7 +201,7 @@ $$
 \mathbb{B}^{\times} \cong GL_2(\mathbb{C}),
 $$
 
-a connected non-compact complex Lie group of complex dimension $4$ and real dimension $8$, with centre $\mathbb{C}^{\times}$. The unit-norm subgroup is $\mathbb{B}^{\times}_1 \cong SL(2,\mathbb{C})$, of complex dimension $3$ and real dimension $6$, the double cover of the Lorentz group of the preceding section. The unitary biquaternions $\tilde{Q}^{\dagger}\tilde{Q} = e_0$ form $U(2)$, the maximal compact subgroup of $\mathbb{B}^{\times}$, and the unit quaternions form $SU(2) = \mathbb{B}^{\times}_1 \cap U(2)$, the maximal compact subgroup of $SL(2,\mathbb{C})$ and the double cover of $SO(3)$.
+a connected non-compact complex Lie group of complex dimension $4$ and real dimension $8$, with centre $\mathbb{C}^{\times}$. The unit-norm subgroup is $\mathbb{B}^{\times}_1 \cong SL(2,\mathbb{C})$, of complex dimension $3$ and real dimension $6$, the double cover of the Lorentz group of the preceding section. The unitary biquaternions $\tilde{Q}^{*}\tilde{Q} = e_0$ form $U(2)$, the maximal compact subgroup of $\mathbb{B}^{\times}$, and the unit quaternions form $SU(2) = \mathbb{B}^{\times}_1 \cap U(2)$, the maximal compact subgroup of $SL(2,\mathbb{C})$ and the double cover of $SO(3)$.
 
 **Representations of the unit group.** As a reductive group, $GL_2(\mathbb{C})$ has finite-dimensional algebraic (rational) representations parameterised by highest weights $(\lambda_1, \lambda_2) \in \mathbb{Z}^2$ with $\lambda_1 \geq \lambda_2$; the irreducible one is $\operatorname{Sym}^{\lambda_1 - \lambda_2}(\mathbb{C}^2) \otimes (\det)^{\lambda_2}$, of dimension $\lambda_1 - \lambda_2 + 1$, with central character $z \mapsto z^{\lambda_1 + \lambda_2}$. Restriction to $SL(2,\mathbb{C})$ forgets the determinant twist, leaving the highest weight $2j = \lambda_1 - \lambda_2 \geq 0$, that is, the irreducible $V_j$ below with spin $j \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}$.
 
@@ -293,9 +293,9 @@ realised on $L^2(G/P) = L^2(S^2)$ in the case $m = 0$, where $G/P \cong SU(2)/U(
 
 The motions of the biquaternion algebra are the isometries of its biquaternion norm, and they are the rotations and the Lorentz transformations. The unit quaternions $S^3=Sp(1)$ carry the rotations of the definite form by the sandwich $\tilde{Q}\mapsto q\tilde{Q}q^{-1}$, in which the angle is halved and $\pm q$ gives the same rotation: the map $S^3\to SO(3)$ is the double cover $SU(2)\to SO(3)$. Complexifying, the norm-one group $\mathbb{B}^\times_1$ carries the rotations of the indefinite form, and $\mathbb{B}^\times_1/\{\pm e_0\}\cong SO^+(1,3)$ with $\mathbb{B}^\times_1\cong Spin(1,3)$, so that the double cover of the proper orthochronous Lorentz group is realised inside the algebra; the trace-free subalgebra splits into the compact rotation directions and the hyperbolic directions, and it is the boosts generated by the latter that are the isometries of the indefinite form.
 
-The action that carries these motions on the whole algebra is the dagger sandwich $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{\dagger}$. It preserves the two Hermitian sectors and no other pair of the six subspaces, it scales the biquaternion norm by $\lvert N(\tilde{Q})\rvert^{2}$ and preserves it on the unit-norm slice, and its kernel is the central circle $U(1)$, which reduces to $\{\pm e_0\}$ on the slice and is the double cover. It is multiplicative exactly on the unitary elements, its infinitesimal form is $X\tilde T+\tilde TX^{\dagger}$, the commutator along the anti-Hermitian directions and the anticommutator along the Hermitian ones, and the operators preserving the whole subspace structure are exactly the central multiples of the real unit quaternions, giving $SO(3)$ on the slice and $\mathbb{R}_{>0}\times SO(3)$ with the dilations admitted.
+The action that carries these motions on the whole algebra is the dagger sandwich $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{*}$. It preserves the two Hermitian sectors and no other pair of the six subspaces, it scales the biquaternion norm by $\lvert N(\tilde{Q})\rvert^{2}$ and preserves it on the unit-norm slice, and its kernel is the central circle $U(1)$, which reduces to $\{\pm e_0\}$ on the slice and is the double cover. It is multiplicative exactly on the unitary elements, its infinitesimal form is $X\tilde T+\tilde TX^{\dagger}$, the commutator along the anti-Hermitian directions and the anticommutator along the Hermitian ones, and the operators preserving the whole subspace structure are exactly the central multiples of the real unit quaternions, giving $SO(3)$ on the slice and $\mathbb{R}_{>0}\times SO(3)$ with the dilations admitted.
 
-The two-sided action $\tilde{Q}\mapsto u\tilde{Q}v$ with independent unit quaternions preserves the Euclidean form and gives $(S^3\times S^3)/\{\pm e_0\}\cong SO(4)$; the one-sided action is its diagonal restriction. The reflections are the maps $\rho_v(\tilde T)=-v\tilde Tv^{-1}=-v\tilde T\bar v$ with $N(v)=1$, defined on the Clifford vector subspace $\mathrm{Vect}(\mathbb{B})$ and its real form, where orthogonality and anticommutation coincide; on that subspace every isometry is a product of at most three of them, by Cartan–Dieudonné. The construction is that of *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation* and *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* of Part II, and the full symmetry group of the algebra, wider than its isometries, is in *Biquaternion Automorphisms and Derivations*.
+The two-sided action $\tilde{Q}\mapsto u\tilde{Q}v$ with independent unit quaternions preserves the Euclidean form and gives $(S^3\times S^3)/\{\pm e_0\}\cong SO(4)$; the one-sided action is its diagonal restriction. The reflections are the maps $\rho_v(\tilde T)=-v\tilde Tv^{-1}=-v\tilde Tv^{\natural}$ with $N(v)=1$, defined on the Clifford vector subspace $\mathrm{Vect}(\mathbb{B})$ and its real form, where orthogonality and anticommutation coincide; on that subspace every isometry is a product of at most three of them, by Cartan–Dieudonné. The construction is that of *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation* and *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* of Part II, and the full symmetry group of the algebra, wider than its isometries, is in *Biquaternion Automorphisms and Derivations*.
 
 The groups that carry the motions have their own representation theory. The group of units is $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$, of real dimension $8$, with the unit-norm subgroup $\mathbb{B}^{\times}_1\cong SL(2,\mathbb{C})$, the maximal compact subgroups $U(2)$ and $SU(2)$, and the finite-dimensional algebraic representations of $GL_2(\mathbb{C})$ parameterised by the highest weights $(\lambda_1,\lambda_2)$. The finite-dimensional representations of the Lorentz group are the outer products $(m,n)=V_m\boxtimes V_n$ of dimension $(2m+1)(2n+1)$, the polynomial ones being the symmetric powers $V_j$, which the unitary trick recovers from those of $SU(2)$ by complexifying the Lie algebra; the defining representation $V_{1/2}=\mathbb{C}^2$ is the unique simple module of the algebra $M_2(\mathbb{C})$. The defining representation and its conjugate are the two Weyl spinors $(\tfrac12,0)$ and $(0,\tfrac12)$, whose sum is the Dirac spinor and whose tensor product is the four-vector representation $(\tfrac12,\tfrac12)$; the adjoint representation of the Lorentz algebra is $(1,0)\oplus(0,1)$. Tensor products obey the Clebsch–Gordan rule, with the ballot numbers counting the composition factors of the tensor powers of the spinor. Unitarity is preserved by complexification only for the compact form $SU(2)$: the only finite-dimensional unitary representation of $SL(2,\mathbb{C})$ is the trivial one, and the infinite-dimensional unitary representations are the principal series, induced from characters of the Borel subgroup, together with the complementary series.
 
@@ -306,7 +306,7 @@ The groups that carry the motions have their own representation theory. The grou
 | $N(\tilde{Q})$ | Biquaternion norm; the invariant of the motions |
 | $S^3=Sp(1)$ | Unit quaternions; rotors of the definite form |
 | $q\tilde{Q}q^{-1}$ | Sandwich action; rotor conjugation |
-| $\rho_v(\tilde T)=-v\tilde Tv^{-1}=-v\tilde T\bar v$ | Reflection in $v^{\perp}$ on $\mathrm{Vect}(\mathbb{B})$, $N(v)=1$ |
+| $\rho_v(\tilde T)=-v\tilde Tv^{-1}=-v\tilde Tv^{\natural}$ | Reflection in $v^{\perp}$ on $\mathrm{Vect}(\mathbb{B})$, $N(v)=1$ |
 | $v\tilde T+\tilde Tv=-2B(v,\tilde T)e_0$ | Anticommutation as orthogonality on $\mathrm{Vect}(\mathbb{B})$; then $v^{\perp}=\{\tilde T:\tilde Tv=-v\tilde T\}$ |
 | Cartan–Dieudonné | Every isometry of $\mathrm{Vect}(\mathbb{B})$ is at most three reflections $\rho_v$ |
 | $S^3\to SO(3)$ | Double cover $SU(2)\to SO(3)$; $\pm q$ give the same rotation |
@@ -316,7 +316,7 @@ The groups that carry the motions have their own representation theory. The grou
 | $\mathrm{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$ | Hyperbolic (boost) directions |
 | $u\tilde{Q}v$ | Two-sided action; preserves the Euclidean form |
 | $(S^3\times S^3)/\{\pm e_0\}\cong SO(4)$ | Two-sided action as four-dimensional rotations |
-| $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{\dagger}$ | The dagger sandwich; the action of a unit on the algebra |
+| $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{*}$ | The dagger sandwich; the action of a unit on the algebra |
 | $\mathrm{H}_{z\tilde{Q}}=\lvert z\rvert^{2}\mathrm{H}_{\tilde{Q}}$ | Central phase invisible; modulus as the dilation |
 | $N(\mathrm{H}_{\tilde{Q}}(\tilde T))=\lvert N(\tilde{Q})\rvert^{2}N(\tilde T)$ | Scaling of the norm; an isometry on the unit-norm slice |
 | $U(1)=\{e^{i\theta}e_0\}$ | Kernel of the sandwich; $\{\pm e_0\}$ on the unit-norm slice |

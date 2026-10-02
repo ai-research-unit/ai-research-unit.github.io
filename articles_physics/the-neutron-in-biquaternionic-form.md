@@ -8,7 +8,7 @@ The answer is stated at the outset because the pull toward closure is strong. Th
 
 A second honest point belongs here. The series takes the standing position that its predictions agree with standard physics because it is a **reformulation**, not a new theory. For the neutron that position is radical: nothing here distinguishes the framework's neutron from the Standard Model's, and the tree-level spin coupling it inherits gives a **zero** magnetic moment for a neutral structureless Dirac field, which is not the neutron. The neutron is exactly the object on which a colourless reformulation has nothing to say about structure, and the article records the boundary rather than crossing it.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the center of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$. The spinor module is $\Delta = S\oplus\bar{S}$, with $S=\mathbb{C}^2$ the unique simple left $\mathbb{B}$-module, the chirality operator is $\gamma_5 = \mathrm{diag}(-I_2, I_2)$, and the chiral projectors are $P_L=\tfrac12(I_4-\gamma_5)$, $P_R=\tfrac12(I_4+\gamma_5)$. The charge operator inherited from the chiral-fermion article is $Q = q_LP_L + q_RP_R$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. The symbols $SU(3)$, $N_c$, and the word *quark* are **standard-model notation, not framework objects**; they are used only where standard physics is quoted or where an object is named as absent.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the center of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The spinor module is $\Delta = S\oplus\bar{S}$, with $S=\mathbb{C}^2$ the unique simple left $\mathbb{B}$-module, the chirality operator is $\gamma_5 = \mathrm{diag}(-I_2, I_2)$, and the chiral projectors are $P_L=\tfrac12(I_4-\gamma_5)$, $P_R=\tfrac12(I_4+\gamma_5)$. The charge operator inherited from the chiral-fermion article is $Q = q_LP_L + q_RP_R$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. The symbols $SU(3)$, $N_c$, and the word *quark* are **standard-model notation, not framework objects**; they are used only where standard physics is quoted or where an object is named as absent.
 
 ## The Neutron as a Spin-$\tfrac12$ Biquaternion Field
 
@@ -21,7 +21,7 @@ $$
 of the companion articles. A neutron field $\tilde{\Psi}$ is placed in this module, and its free propagation is the biquaternion Dirac equation
 
 $$
-\tilde{\nabla}\tilde{\Psi}_R \;=\; m_n\,\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L \;=\; m_n\,\tilde{\Psi}_R,
+\tilde{\nabla}\tilde{\Psi}_R \;=\; m_n\,\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L \;=\; m_n\,\tilde{\Psi}_R,
 $$
 
 with $m_n$ the neutron mass. The Lorentz group acts on the module through $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group, and a field in it transforms in the spinor representation $(\tfrac12,0)\oplus(0,\tfrac12)$. The representation-theoretic content of spin-$\tfrac12$ — half-integer spin, the double-valued rotation, Lorentz covariance — is inherited from the algebra, and in this sense the framework **represents** a spin-$\tfrac12$ field. Three qualifications are what the neutron actually tests.
@@ -114,7 +114,7 @@ The article's finding is best stated as a ledger, in the manner of the electron 
 | Neutron property | Status | Object or reason |
 |---|---|---|
 | Spin-$\tfrac12$ representation content (generic) | Derived (framework), not neutron-specific | unique simple module $\Delta=S\oplus\bar{S}$, spinor representation $(\tfrac12,0)\oplus(0,\tfrac12)$ |
-| Free Dirac kinematics, mass-shell relation | Derived (framework) | biquaternion Dirac equation, linear chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L=m\tilde{\Psi}_R$ |
+| Free Dirac kinematics, mass-shell relation | Derived (framework) | biquaternion Dirac equation, linear chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ |
 | Neutrality constraint $Q\psi=0$ and its kernel | Derived (framework) | charge operator $Q=q_LP_L+q_RP_R$; kernel trivial unless one chirality charge vanishes |
 | Mass value $m_n$ | Represented | parameter of the equation; not derived |
 | Charge value $0$ | Represented | a constraint/parameter; not derived from quark charges |
@@ -139,7 +139,7 @@ Finally, the standing **empirical-contact** gap applies with full force. Nothing
 
 ## Summary
 
-The neutron is an electrically neutral spin-$\tfrac12$ baryon, and in the biquaternion framework of this series it is represented as a field in the Dirac module $\Delta=S\oplus\bar{S}$ satisfying the linear chiral mass pair $\tilde{\nabla}\tilde{\Psi}_R=m_n\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L=m_n\tilde{\Psi}_R$.
+The neutron is an electrically neutral spin-$\tfrac12$ baryon, and in the biquaternion framework of this series it is represented as a field in the Dirac module $\Delta=S\oplus\bar{S}$ satisfying the linear chiral mass pair $\tilde{\nabla}\tilde{\Psi}_R=m_n\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m_n\tilde{\Psi}_R$.
 
 That representation is generic: the algebra carries any structureless spin-$\tfrac12$ field by the same objects, and the spin-$\tfrac12$ it supplies is a representation, not a construction from constituents.
 
@@ -160,8 +160,8 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ | Center of the algebra |
 | $\tilde{\nabla} = e_0\partial_{ict}+e_k\partial_k$ | Biquaternionic gradient (Dirac operator) |
-| $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$ | d'Alembertian |
-| $\tilde{\Psi}$, $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{\dagger}$ | Biquaternion Dirac field; anti-Hermitian conjugate |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
+| $\tilde{\Psi}$, $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*}$ | Biquaternion Dirac field; anti-Hermitian conjugate |
 | $\Delta = S\oplus\bar{S}$, $S=\mathbb{C}^2$ | Dirac module; unique simple left module |
 | $\gamma_5 = \mathrm{diag}(-I_2,I_2)$ | Chirality operator, $\gamma_5^2=I_4$ |
 | $P_L = \tfrac12(I_4-\gamma_5)$, $P_R = \tfrac12(I_4+\gamma_5)$ | Chiral projectors |

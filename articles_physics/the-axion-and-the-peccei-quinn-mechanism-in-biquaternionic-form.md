@@ -98,7 +98,7 @@ $$
 so that $a$ is the angular field and $f_a$ is the scale of the breaking. The kinetic term of the central scalar is the framework's complex scalar kinetic term,
 
 $$
--\mathrm{Sc}\!\left(\bar{\tilde\nabla}\tilde\Phi^\dagger\,\tilde\nabla\tilde\Phi\right)
+-\mathrm{Sc}\!\left(\tilde\nabla^{\natural}\tilde\Phi^{*}\,\tilde\nabla\tilde\Phi\right)
 = \frac12\left[(\partial_t\rho)^2 - (\nabla\rho)^2\right]
 + \frac{\rho^2}{2f_a^2}\left[(\partial_ta)^2 - (\nabla a)^2\right],
 $$

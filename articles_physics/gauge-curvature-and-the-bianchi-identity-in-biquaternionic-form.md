@@ -15,7 +15,7 @@ The division between what is established and what is interpretation is kept expl
 - **Scope limitation, reported rather than smoothed over.** The reduction "operator commutator $=$ algebra element" is exact. The stronger reading "the curvature *is* a single algebra commutator" is not: $F_{\mu\nu} = \partial_\mu\mathcal{A}_\nu-\partial_\nu\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ contains the exterior-derivative term, which is not a commutator of algebra elements. It is a single commutator of the connection components only when the curl $\partial_\mu\mathcal{A}_\nu-\partial_\nu\mathcal{A}_\mu$ vanishes. This is stated where it arises and carried into the open questions.
 - **Inherited, and not settled here.** The reality class of the connection in the $ict$ direction, and which compact gauge algebra the framework selects, are taken unchanged from the non-abelian article; nothing here resolves them.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the center. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$. The abelian potential and field strength are $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$ and $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$. The gauge algebra of this article is the vector part of the material sector,
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the center. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The abelian potential and field strength are $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$ and $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$. The gauge algebra of this article is the vector part of the material sector,
 $$
 \mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\} \subset \mathbb{M}_-, \qquad [e_a,e_b] = 2\,\varepsilon_{abc}\,e_c,
 $$
@@ -115,9 +115,9 @@ The distinction is not cosmetic. Replacing the two-sided covariant derivative of
 
 Finally, this gauge connection must not be confused with the gravitational connection of the corpus. The gauge connection is **one-sided**: it acts on matter by left multiplication, and on the adjoint-valued curvature by the commutator. The gravitational connection of *Curved Spacetime and the Biquaternion Framework* is **two-sided in a different sense**,
 $$
-D_\mu\tilde{Q} = \partial_\mu\tilde{Q} + \tilde{\Gamma}_\mu\tilde{Q} + \tilde{Q}\tilde{\Gamma}_\mu^\dagger ,
+D_\mu\tilde{Q} = \partial_\mu\tilde{Q} + \tilde{\Gamma}_\mu\tilde{Q} + \tilde{Q}\tilde{\Gamma}_\mu^{*} ,
 $$
-because the infinitesimal Lorentz action on $\mathbb{M}_-$ is $G\tilde{Q} + \tilde{Q}G^\dagger$, not the commutator; the two differ precisely for the boosts. The gauge connection lives in $\mathrm{SU}(2)\subset\mathbb{M}_-$ and is one-sided; the gravitational connection lives in the six-dimensional traceless subspace and is two-sided. They share a name and nothing else, and no relation between them is asserted.
+because the infinitesimal Lorentz action on $\mathbb{M}_-$ is $G\tilde{Q} + \tilde{Q}G^{*}$, not the commutator; the two differ precisely for the boosts. The gauge connection lives in $\mathrm{SU}(2)\subset\mathbb{M}_-$ and is one-sided; the gravitational connection lives in the six-dimensional traceless subspace and is two-sided. They share a name and nothing else, and no relation between them is asserted.
 
 ## The Bianchi Identity
 
@@ -251,7 +251,7 @@ The gauge principle article left open "the sense in which a single biquaternion 
 For the abelian field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H} = \mathbf{F} = \sum_k F_k e_k$, direct computation with the quaternion product gives the exact identities
 
 $$
-\bar{\tilde{\nabla}}\tilde{F}
+\tilde{\nabla}^{\natural}\tilde{F}
 = \mathrm{div}(\mathbf{F})\,e_0 + \partial_0\mathbf{F} - \mathrm{curl}\,\mathbf{F},
 \qquad
 \tilde{\nabla}\tilde{F}
@@ -264,7 +264,7 @@ The structural reason is that the Bianchi identity is a three-index antisymmetri
 
 ## Open Questions
 
-1. **The single-biquaternion Bianchi.** The gap above is the sharpest open question of this article. Is there an algebra-intrinsic operation — a projection or a product with the conjugate gradient — that extracts the cyclic three-index sum from a biquaternion expression, or is the antisymmetric symbol genuinely required? The parent's negative result for $\bar{\tilde{\nabla}}\tilde{F}$ and the recomputed forms of both products suggest the latter, but neither settles it.
+1. **The single-biquaternion Bianchi.** The gap above is the sharpest open question of this article. Is there an algebra-intrinsic operation — a projection or a product with the conjugate gradient — that extracts the cyclic three-index sum from a biquaternion expression, or is the antisymmetric symbol genuinely required? The parent's negative result for $\tilde{\nabla}^{\natural}\tilde{F}$ and the recomputed forms of both products suggest the latter, but neither settles it.
 
 2. **The curvature as one commutator.** The reduction "$[D_\mu,D_\nu] = $ multiplication by $i\kappa F_{\mu\nu}$" is exact, but $F_{\mu\nu}$ itself is a curl plus a commutator, and is a single algebra commutator only when the curl $\partial_\mu\mathcal{A}_\nu-\partial_\nu\mathcal{A}_\mu$ vanishes. Is there a gauge-covariant way to write the full $F_{\mu\nu}$ as a single commutator of algebra-valued objects, or is the split into curl and commutator intrinsic?
 
@@ -300,7 +300,7 @@ $$
 
 with the cyclic order as displayed, equivalently $\varepsilon^{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$. It is the **operator Jacobi identity** with the curvature identity substituted into it: $[D_\lambda,[D_\mu,D_\nu]]+\text{cyclic}=0$ becomes $i\kappa(D_\lambda F_{\mu\nu}+\text{cyclic})=0$. In the coordinate proof a second, algebraic Jacobi identity $[\mathcal{A}_\lambda,[\mathcal{A}_\mu,\mathcal{A}_\nu]]+\text{cyclic}=0$ kills the nested-commutator terms, via the derivation property of the adjoint action. Both identities are exact and were verified on $\mathrm{SU}(2)$; the abelian case is trivially zero and is not evidence.
 
-Two things are left visible. First, a **scope limitation**: the curvature is a curl plus an algebra commutator, and is a single algebra commutator only when the curl $\partial_\mu\mathcal{A}_\nu-\partial_\nu\mathcal{A}_\mu$ vanishes. Second, a **gap**: no single biquaternion equation carries the Bianchi identity without extra structure — the recomputed products $\bar{\tilde{\nabla}}\tilde{F} = \mathrm{div}(\mathbf{F})e_0+\partial_0\mathbf{F}-\mathrm{curl}\,\mathbf{F}$ and $\tilde{\nabla}\tilde{F} = -\mathrm{div}(\mathbf{F})e_0+\partial_0\mathbf{F}+\mathrm{curl}\,\mathbf{F}$ each carry a scalar constraint and a vector equation (eight real equations), not the three-index cyclic sum, and the contracted form $\varepsilon^{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$ requires the antisymmetric symbol.
+Two things are left visible. First, a **scope limitation**: the curvature is a curl plus an algebra commutator, and is a single algebra commutator only when the curl $\partial_\mu\mathcal{A}_\nu-\partial_\nu\mathcal{A}_\mu$ vanishes. Second, a **gap**: no single biquaternion equation carries the Bianchi identity without extra structure — the recomputed products $\tilde{\nabla}^{\natural}\tilde{F} = \mathrm{div}(\mathbf{F})e_0+\partial_0\mathbf{F}-\mathrm{curl}\,\mathbf{F}$ and $\tilde{\nabla}\tilde{F} = -\mathrm{div}(\mathbf{F})e_0+\partial_0\mathbf{F}+\mathrm{curl}\,\mathbf{F}$ each carry a scalar constraint and a vector equation (eight real equations), not the three-index cyclic sum, and the contracted form $\varepsilon^{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$ requires the antisymmetric symbol.
 
 ## Summary of Notation
 
@@ -311,7 +311,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $i$ | Scalar imaginary, $i^2=-1$, central |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; center $\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ |
-| $\tilde{\nabla}, \bar{\tilde{\nabla}}$ | Biquaternionic gradient and its quaternion conjugate |
+| $\tilde{\nabla}, \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
 | $[e_a,e_b]=2\varepsilon_{abc}e_c$ | Commutator on the vector part of $\mathbb{M}_-$ |
 | $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$ | Gauge algebra inside $\mathbb{M}_-$ |
 | $T_a=\tfrac12 e_a$ | Normalized generators, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ |
@@ -340,7 +340,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 - *The Field-Strength Biquaternion and Its Invariants* — the abelian field strength, its pure-vector character, and the biquaternion-norm apparatus that the non-abelian extension does not yet reproduce.
 - *Maxwell's Equations in the Biquaternionic Formulation* — the abelian field equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ whose homogeneous part is the Bianchi identity.
 - *Lie Algebras: A General Introduction* — the Jacobi identity, the adjoint action as a derivation, and the commutator bracket on an associative algebra.
-- *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection $D_\mu\tilde{Q}=\partial_\mu\tilde{Q}+\tilde{\Gamma}_\mu\tilde{Q}+\tilde{Q}\tilde{\Gamma}_\mu^\dagger$, distinct from the one-sided gauge connection of this article.
+- *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection $D_\mu\tilde{Q}=\partial_\mu\tilde{Q}+\tilde{\Gamma}_\mu\tilde{Q}+\tilde{Q}\tilde{\Gamma}_\mu^{*}$, distinct from the one-sided gauge connection of this article.
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the sector basis, the imaginary-scalar/real-vector structure, and the Lie-algebra decomposition on which the gauge algebra rests.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector and the trace formula distinguished here from the matrix trace.
 - *Biquaternion Algebra* and *Quaternion Algebra* — the multiplication rule, the conjugations, and the center used throughout.

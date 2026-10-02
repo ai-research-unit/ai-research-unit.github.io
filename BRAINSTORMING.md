@@ -18,11 +18,80 @@ C existe involution non triviale
 
 
 
+RESTRUCTURE THE INITIAL 2 OPERATORS to Hilbert 
 
 
-General theory
+In the math introduction, you removed the explanation about the split  Theory, Operator Theory, * Theory, † Operator Theory (involution on the operator)
 
-involutive theory
+
+
+
+
+
+
+The biquaternion algebra IS a Krein space,
+with the Hermitian form 
+[
+Q
+,
+Q
+′
+]
+=
+S
+c
+(
+Q
+∗
+Q
+′
+)
+and fundamental symmetry 
+J
+=
+quaternion conjugate.
+This is a different structure from the Lorentz one,
+which uses the bilinear form 
+N
+.
+On the material sector they agree up to sign: 
+[
+T
+,
+T
+]
+=
+−
+N
+(
+T
+,
+T
+)
+.
+So: two forms, two structures, one algebra.
+The biquaternion algebra IS a Krein space,
+with the Hermitian form [Q,Q 
+′
+ ]=Sc(Q 
+∗
+ Q 
+′
+ )
+and fundamental symmetry J=quaternion conjugate.
+This is a different structure from the Lorentz one,
+which uses the bilinear form N.
+On the material sector they agree up to sign: [T,T]=−N(T,T).
+So: two forms, two structures, one algebra.
+​
+ 
+​
+ 
+
+
+
+
+
 
 
 
@@ -5578,5 +5647,861 @@ The *form* of the action uses \(*\) (Hilbert side); the *group* is selected by \
 *\text{ trivial} \iff \text{commutative.}\\
 \text{On non-commutative algebras the two theories can diverge:}\\
 \text{two involutions, two forms, two groups — bridged by the sandwich }QTQ^*.
+\end{array}}
+\]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Two forms on the same space: precision and rewriting
+
+## The starting point, made precise
+
+Earlier drafts said: "a bilinear form encodes symmetry, a sesquilinear form encodes positivity." That is essentially correct, but the distinction has to be stated **relative to a base ring**, and the criterion is not triviality of the involution but its linearity.
+
+\[
+\boxed{
+\begin{array}{c}
+\text{Let } S \text{ be a \*-ring, } M \text{ an } S\text{-module.}\\
+\text{A form } h:M\times M\to T \text{ is, RELATIVE TO } S\text{:}\\[4pt]
+S\text{-bilinear} \iff \text{the involution used is } S\text{-linear,}\\
+S\text{-sesquilinear} \iff \text{the involution used is } S\text{-conjugate-linear.}
+\end{array}}
+\]
+
+So "bilinear vs. sesquilinear" is not an absolute property of a form. It is a property of the triple \((M, S, h)\). The same map can change type when the base ring is changed.
+
+This precision matters most in the biquaternion algebra \(B=\mathbb C\otimes_{\mathbb R}\mathbb H\), where the center is \(\mathbb C\), not \(\mathbb H\), and where the "obvious" non-trivial involution (quaternion conjugation) is \(\mathbb C\)-linear, hence gives a bilinear — not sesquilinear — form.
+
+## The two kinds of operators
+
+When the base structure carries an involution \(*\), it is useful to separate its operators into two classes:
+
+\[
+\boxed{
+\begin{array}{c}
+\text{ordinary operators} : \text{defined without the involution } *,\\
+*\text{-operators} : \text{defined using } * \text{ or compatible with it.}
+\end{array}}
+\]
+
+The two classes coincide only when \(*=\mathrm{id}\). Whenever the involution is non-trivial, they genuinely differ.
+
+This convention applies uniformly to involutive sets, \*-rings, \*-algebras, \*-modules, and dagger categories:
+
+| Structure | Ordinary operators | \*-operators |
+|---|---|---|
+| \*-ring \(A\) | \(L_a\), \(R_a\), addition, scalars | \(a\mapsto a^*\), the adjoint |
+| \*-module \(M\) | \(A\)-linear endomorphisms | adjointable endomorphisms \(T^\dagger\) |
+| Hilbert space \(H\) | bounded operators | self-adjoint, unitary |
+| Biquaternions \(B\) | \(QTQ^{-1}\), \(QTQ^{♮}\) | \(QTQ^*\), \(H_Q(T)\) |
+| Dagger category | morphisms | morphisms with a dagger |
+
+## The adjoint, with the dagger notation
+
+For a form \(h\) on \(V\), the adjoint \(T^\dagger\) of a linear operator \(T\) is defined by
+
+\[
+\boxed{\ h(Tx,y)=h(x,T^\dagger y)\qquad\text{for all }x,y\in V.\ }
+\]
+
+The definition is the same for bilinear and sesquilinear forms. What changes is the **type** of \(T^\dagger\):
+
+\[
+\boxed{
+\begin{array}{c|c|c}
+\text{Form } h & \text{Adjoint } T^\dagger & \text{Group of isometries}\\
+\hline
+\text{bilinear symmetric } B & \text{transpose} & O(V,B)\\
+\text{bilinear antisymmetric } \omega & \text{transpose} & Sp(V,\omega)\\
+\text{sesquilinear positive} & \text{Hermitian adjoint} & U(V,h)\\
+\text{sesquilinear indefinite} & \text{Krein adjoint} & U(V,h)\ \text{(Krein)}
+\end{array}}
+\]
+
+In a Clifford algebra, the natural form is **bilinear** (the trace form), and \(T^\dagger\) is the transpose, related to the reversal anti-automorphism. In a Hilbert space, the form is **sesquilinear**, and \(T^\dagger\) is the Hilbert adjoint, related to the \*-involution.
+
+## The biquaternion case, precisely
+
+\(B=\mathbb C\otimes_{\mathbb R}\mathbb H\) is a **\(\mathbb C\)-algebra**: \(Z(B)=\mathbb C\), so \(\mathbb C\)-scalars are central. It is **not** an \(\mathbb H\)-algebra, because \(\mathbb H\) does not map into \(Z(B)\).
+
+On \(B\), there are:
+
+- **3 non-trivial ring involutions**: \(\bar{\cdot}\) (conjugate-linear over \(\mathbb C\)), \(♮\) (complex-linear), \(*\) (conjugate-linear over \(\mathbb C\));
+- **3 forms**: one \(\mathbb C\)-bilinear and two \(\mathbb C\)-sesquilinear.
+
+\[
+\begin{array}{c|c|c|c}
+\text{Form} & \text{Expression} & \text{Involution} & \text{Type over }\mathbb C\\
+\hline
+N & \mathrm{Sc}(Q\,Q'^{♮})=\sum_\mu Q_\mu Q'_\mu & ♮\ (\mathbb C\text{-linear}) & \mathbb C\text{-bilinear}\\
+\langle\cdot,\cdot\rangle & \mathrm{Sc}(Q^*Q')=\sum_\mu\bar Q_\mu Q'_\mu & *\ (\mathbb C\text{-conj-lin}) & \mathbb C\text{-sesquilinear, +}\\
+[\cdot,\cdot] & \mathrm{Sc}(\bar Q\,Q')=\bar Q_0Q'_0-\bar Q_1Q'_1-\bar Q_2Q'_2-\bar Q_3Q'_3 & \bar\cdot\ (\mathbb C\text{-conj-lin}) & \mathbb C\text{-sesquilinear, --}
+\end{array}
+\]
+
+The biquaternion algebra is thus a rare object where **three forms** coexist for structural reasons: the tensor product \(\mathbb C\otimes_{\mathbb R}\mathbb H\) multiplies the involutions of the two factors (\(2\times 2=4\), of which 3 non-trivial), and each non-trivial involution gives one form.
+
+## Examples where two forms are both essential
+
+The pattern is pervasive. In each case, one form is bilinear (used for symmetry or duality) and one is sesquilinear (used for positivity or probability). The bridge is a fundamental symmetry \(J\), and the adjoint uses the dagger notation.
+
+### 1. Dirac theory
+Spinor space carries
+\[
+\bar\psi\chi = \psi^\dagger\gamma^0\chi \quad\text{(bilinear, Lorentz-invariant)},
+\]
+\[
+\psi^\dagger\chi \quad\text{(sesquilinear, positive-definite)}.
+\]
+The bilinear form appears in the Lagrangian \(\bar\psi(i\gamma^\mu\partial_\mu-m)\psi\). The sesquilinear form gives probabilities. The bridge is \(\gamma^0\), the fundamental symmetry.
+
+### 2. Krein spaces
+A Krein space is a Hilbert space with a fundamental symmetry \(J=J^\dagger=J^{-1}\). It carries
+\[
+[x,y]=\langle Jx,y\rangle \quad\text{(indefinite sesquilinear)},
+\]
+\[
+\langle x,y\rangle \quad\text{(positive sesquilinear)}.
+\]
+The indefinite form defines the physical symmetry group (non-compact); the positive form gives the Hilbert space and spectral theory. Standard in Gupta–Bleuler quantization, BRST cohomology, PT-symmetric quantum mechanics.
+
+### 3. Kähler geometry
+A Kähler manifold carries a Riemannian metric \(g\) (bilinear symmetric), a symplectic form \(\omega\) (bilinear antisymmetric), and a complex structure \(J\). The Hermitian form is \(h=g+i\omega\). All three pieces are needed: \(g\) for lengths, \(\omega\) for Hamiltonian mechanics, \(J\) for complex analysis.
+
+### 4. Geometric quantization
+A classical phase space carries a symplectic form \(\omega\) (bilinear) and a complex structure \(J\). The quantum Hilbert space carries a sesquilinear inner product. Quantization bridges
+\[
+(\text{symplectic bilinear}) + J \;\longrightarrow\; (\text{Hermitian sesquilinear}).
+\]
+Both forms are essential.
+
+### 5. Biquaternions
+As above: \(N\) (bilinear, giving Lorentz), \(\langle\cdot,\cdot\rangle\) (sesquilinear positive, giving Hilbert), \([\cdot,\cdot]\) (sesquilinear indefinite, giving Krein). The dagger sandwich \(H_Q(T)=QTQ^\dagger\) is the bridge.
+
+### 6. Quantum mechanics on complex manifolds
+The Hermitian metric \(h\) gives kinetic energy and the Hilbert space; the symplectic form \(\omega=\mathrm{Im}\,h\) gives canonical commutation relations. Both are essential.
+
+### 7. Representation theory of non-compact groups
+The invariant bilinear form (e.g. Killing form) is indefinite and gives the Lie algebra structure and Casimir. The invariant Hermitian form gives the Hilbert space and unitarity. A representation may be unitarizable with respect to one but not the other.
+
+### 8. Topological quantum field theory
+The state space carries a bilinear pairing \(\langle\cdot,\cdot\rangle:V\otimes V\to\mathbb C\) (from the cobordism) and a Hermitian inner product (from unitarity). Unitarity uses the Hermitian form; the topological structure uses the bilinear pairing.
+
+### 9. Modular theory (Tomita–Takesaki)
+A von Neumann algebra with a cyclic separating vector carries a sesquilinear form from the state and a bilinear form from the modular conjugation \(J\) and modular operator \(\Delta\). The theory is precisely the interplay between them.
+
+### 10. Hodge theory
+On a compact Riemannian manifold, the Poincaré pairing \(H^k\times H^{n-k}\to\mathbb R\) is bilinear, and the \(L^2\) metric on harmonic forms is sesquilinear. Both are needed: the pairing for Poincaré duality, the metric for the Hodge decomposition.
+
+## Why one form for symmetry, one for positivity
+
+The dichotomy is structural, not historical.
+
+**Bilinear forms encode symmetry.** A bilinear form is a tensor \(B\in V^*\otimes V^*\). It is algebraic, defined over any commutative ring, with no conjugation and no order. Its invariance group
+\[
+G_B=\{g\in GL(V):B(gu,gv)=B(u,v)\}
+\]
+is the definition of a classical group: \(O(V,B)\), \(Sp(V,\omega)\), \(O(p,q)\). The invariance condition is polynomial in the matrix entries, so the group is algebraic. This is why bilinear forms are the natural home of **symmetry, duality, invariance**.
+
+**Sesquilinear forms encode positivity.** A sesquilinear form is conjugate-linear in one slot. That conjugation is exactly what makes \(h(u,u)\in\mathbb R\), so that \(h(u,u)>0\) is meaningful. Positivity gives, in sequence: a norm, Cauchy–Schwarz, triangle inequality, completeness, spectral theory, and the Born rule \(|\langle\psi|\phi\rangle|^2\). This is why sesquilinear forms are the natural home of **positivity, norm, probability**.
+
+The structural difference is that a bilinear form lives in \(V^*\otimes V^*\), an algebraic tensor, whereas a sesquilinear form lives in \(\bar V^*\otimes V^*\), where the bar is the involution. The two are genuinely different objects.
+
+## The bridge: fundamental symmetry \(J\)
+
+The two forms are equivalent data once a fundamental symmetry \(J\) is chosen:
+\[
+B(u,v)=\langle Ju,v\rangle,\qquad [u,v]=\langle Ju,v\rangle \text{ for Krein}.
+\]
+The bridge \(J\) is **extra structure**, not supplied by either form alone:
+
+- in Dirac theory, \(J=\gamma^0\);
+- in Krein spaces, \(J\) is the fundamental symmetry;
+- in Kähler geometry, \(J\) is the complex structure;
+- in biquaternions, \(J=♮\) (quaternion conjugate), which relates the positive form to the Krein form by \([Q,Q']=\langle ♮Q,Q'\rangle\).
+
+The fundamental symmetry is a **\*-operator** in the sense developed above: it uses the involution. It is what makes the bilinear and sesquilinear forms interchangeable on the same space.
+
+## The pattern, restated with precision
+
+\[
+\boxed{
+\begin{array}{c}
+\text{Two forms on the same space:}\\
+\text{bilinear} \;=\; \text{symmetry, duality, invariance (algebraic tensor),}\\
+\text{sesquilinear} \;=\; \text{positivity, norm, probability (needs involution).}\\[4pt]
+\text{The two are related by a fundamental symmetry } J: B(u,v)=\langle Ju,v\rangle.\\
+\text{The bridge } J \text{ is a \textasteriskcentered-operator, not an ordinary one.}\\[4pt]
+\text{The bilinear / sesquilinear distinction is RELATIVE to the base ring:}\\
+\text{over } S\text{, it is decided by the } S\text{-linearity of the involution.}\\[4pt]
+\text{Physics needs both: symmetries and probabilities.}\\
+\text{Mathematics needs both: dualities and positivity.}
+\end{array}}
+\]
+
+The biquaternion algebra \(B=\mathbb C\otimes_{\mathbb R}\mathbb H\) is a single instance of this pervasive structure, but a particularly clean one: it is a \(\mathbb C\)-algebra with three non-trivial involutions, three forms, and a quaternion conjugate \(♮\) that plays the role of the fundamental symmetry connecting the positive form to the indefinite one.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Bilinearity and sesquilinear are RELATIVE to the base ring
+
+## The general setting
+
+Let \(S\) be a ring with an involution \(a:S\to S\). Let \(M\) be an \(S\)-module.
+Let \(T\) be an \((S,S)\)-bimodule (the target of the form).
+
+A **sesquilinear form** on \(M\) (relative to \(S\)) is a map
+
+\[
+h:M\times M\to T
+\]
+
+such that, for all \(x,y,z\in M\), \(s\in S\):
+
+\[
+h(x,y+z)=h(x,y)+h(x,z),
+\]
+\[
+h(x,ys)=h(x,y)\,s,
+\]
+\[
+h(xs,y)=a(s)\,h(x,y).
+\]
+
+A **bilinear form** (relative to \(S\)) is the same with \(a=\mathrm{id}\), so the
+third axiom becomes \(h(xs,y)=s\,h(x,y)\).
+
+## The rule
+
+\[
+\boxed{
+\begin{array}{c}
+\text{Relative to } S\text{, a form } h \text{ compatible with the } S\text{-action is:}\\[4pt]
+\text{bilinear} \iff a=\mathrm{id}_S \text{ (the involution on } S \text{ is trivial),}\\
+\text{sesquilinear} \iff a\neq\mathrm{id}_S \text{ (the involution on } S \text{ is non-trivial).}
+\end{array}}
+\]
+
+This statement is always **relative to the base ring \(S\)**. The same underlying
+map \(h\) can be bilinear with respect to one ring of scalars and sesquilinear,
+or neither, with respect to another.
+
+## Why relativity matters : the biquaternion case
+
+In \(B=\mathbb C\otimes_{\mathbb R}\mathbb H\), we have three natural candidates for
+the base ring:
+
+\[
+\mathbb R \;\subset\; \mathbb C \;\subset\; B,
+\]
+
+and \(B\) is also an \(\mathbb H\)-bimodule (though not an \(\mathbb H\)-algebra,
+since \(Z(B)=\mathbb C\neq\mathbb H\)).
+
+Consider the form
+
+\[
+N(Q,Q')=\mathrm{Sc}(Q\cdot Q'^{♮})=\sum_{\mu=0}^{3}Q_\mu Q'_\mu.
+\]
+
+Its type depends entirely on the base ring we choose:
+
+| Base ring \(S\) | Involution on \(S\) | Type of \(N\) over \(S\) | Why |
+|---|---|---|---|
+| \(\mathbb R\) | trivial | \(S\)-bilinear = \(S\)-sesquilinear | only one involution on \(\mathbb R\) |
+| \(\mathbb C\) | \(z\mapsto\bar z\) | \(S\)-bilinear (not sesquilinear) | \(♮\) is \(\mathbb C\)-linear |
+| \(\mathbb H\) | \(q\mapsto\bar q\) | not \(\mathbb H\)-bilinear | \(\mathbb H\) is non-central in \(B\) |
+
+So:
+
+- over \(\mathbb R\), the distinction collapses (bilinear = sesquilinear);
+- over \(\mathbb C\), \(N\) is bilinear and **not** sesquilinear;
+- over \(\mathbb H\), \(N\) is neither in the standard sense, because \(\mathbb H\) does not act centrally.
+
+## The three forms on \(B\), correctly classified over \(\mathbb C\)
+
+Take \(S=\mathbb C\) as the base ring. \(B\) is a \(\mathbb C\)-algebra (since
+\(Z(B)=\mathbb C\)). Then:
+
+| Form | Involution | Linearity over \(\mathbb C\) | Type over \(\mathbb C\) |
+|---|---|---|---|
+| \(N=\mathrm{Sc}(Q\,Q'^{♮})\) | \(♮\) | \(\mathbb C\)-linear | \(\mathbb C\)-**bilinear** |
+| \(\langle Q,Q'\rangle=\mathrm{Sc}(Q^*Q')\) | \(*\) | \(\mathbb C\)-conjugate-linear | \(\mathbb C\)-**sesquilinear** |
+| \([Q,Q']=\mathrm{Sc}(\bar Q\,Q')\) | \(\bar\cdot\) | \(\mathbb C\)-conjugate-linear | \(\mathbb C\)-**sesquilinear** |
+
+The classification is **relative to \(\mathbb C\)**, not absolute.
+
+## Why the earlier rule "trivial vs. non-trivial" fails
+
+The statement "non-trivial involution \(\Rightarrow\) sesquilinear" is **wrong**
+without a base ring fixed. The quaternion conjugate \(♮\) is a **non-trivial**
+involution on \(B\), yet \(N=\mathrm{Sc}(Q\,Q'^{♮})\) is **bilinear over \(\mathbb C\)**.
+
+The correct criterion is not "trivial vs. non-trivial", but:
+
+\[
+\boxed{
+\begin{array}{c}
+\text{Relative to } S\text{:}\\
+a \text{ is } S\text{-linear} \;\Rightarrow\; h \text{ is } S\text{-bilinear},\\
+a \text{ is } S\text{-conjugate-linear} \;\Rightarrow\; h \text{ is } S\text{-sesquilinear.}
+\end{array}}
+\]
+
+For \(♮\) over \(\mathbb C\): \(♮\) is \(\mathbb C\)-linear, so \(N\) is \(\mathbb C\)-bilinear.
+For \(♮\) over \(\mathbb H\): \(♮\) is not even well-defined as an \(\mathbb H\)-linear
+involution because \(\mathbb H\) is not central in \(B\).
+
+## The general statement, fully precise
+
+\[
+\boxed{
+\begin{array}{c}
+\text{Let } S \text{ be a \*-ring, } M \text{ an } S\text{-module, } T \text{ an } (S,S)\text{-bimodule.}\\
+\text{Let } a \text{ be an involution on } S \text{, and let } h:M\times M\to T\\
+\text{be additive in both slots and satisfying } h(xs,y)=a(s)\,h(x,y).\\[4pt]
+\text{Then, RELATIVE TO } S\text{:}\\
+h \text{ is } S\text{-bilinear} \iff a=\mathrm{id}_S,\\
+h \text{ is } S\text{-sesquilinear} \iff a\neq\mathrm{id}_S.\\[4pt]
+\text{The same map } h \text{ can change type when } S \text{ is changed.}
+\end{array}}
+\]
+
+## The biquaternion case as a special instance
+
+The abstract rule specializes as follows:
+
+- \(S=\mathbb C\), \(M=B\), \(T=\mathbb C\);
+- the scalar-part map \(\mathrm{Sc}:B\to\mathbb C\) is \(S\)-linear and allows the explicit formula \(h(Q,Q')=\mathrm{Sc}(Q^a\cdot Q')\);
+- the involution \(a\) on \(\mathbb C\) extended to \(B\) is either \(♮\) (which is \(\mathbb C\)-linear) giving a bilinear form, or \(\bar\cdot\) and \(*\) (which are \(\mathbb C\)-conjugate-linear) giving sesquilinear forms.
+
+In a general \(S\)-module, the target \(T\) may be \(S\) itself, and there may be no
+scalar-part projection. The abstract rule still holds; only the explicit formula
+with \(\mathrm{Sc}\) is specialized to \(B\).
+
+## Summary
+
+\[
+\boxed{
+\begin{array}{c}
+\text{Bilinearity and sesquilinearity are properties relative to a chosen base ring } S.\\
+\text{The same map can be } S_1\text{-bilinear and } S_2\text{-sesquilinear.}\\[4pt]
+\text{The correct criterion is the } S\text{-linearity of the involution, not its non-triviality.}\\[4pt]
+\text{For } B=\mathbb C\otimes_{\mathbb R}\mathbb H \text{ with base ring } \mathbb C\text{:}\\
+N \text{ is } \mathbb C\text{-bilinear (}♮ \text{ is } \mathbb C\text{-linear),}\\
+\langle\cdot,\cdot\rangle \text{ and } [\cdot,\cdot] \text{ are } \mathbb C\text{-sesquilinear (}\bar\cdot, * \text{ are } \mathbb C\text{-conj-linear).}\\[4pt]
+\text{Over } \mathbb R\text{: the distinction collapses (trivial involution).}\\
+\text{Over } \mathbb H\text{: no form is }\mathbb H\text{-bilinear, since } \mathbb H \text{ is not central.}
+\end{array}}
+\]
+
+
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+       INVOLUTIONS AND FORMS ON THE BIQUATERNION ℂ-ALGEBRA  B = ℂ ⊗_ℝ ℍ
+═══════════════════════════════════════════════════════════════════════════════
+
+BASE STRUCTURE
+─────────────────────────────────────────────────────────────────────────────
+  B = ℂ ⊗_ℝ ℍ  is a  ℂ-ALGEBRA  (not an ℍ-algebra).
+  Center : Z(B) = ℂ , so every λ ∈ ℂ is central: λX = Xλ for all X ∈ B.
+  This centrality is what makes "ℂ-bilinear" well-defined.
+
+  Elements      Q = Q₀ e₀ + Q₁ e₁ + Q₂ e₂ + Q₃ e₃ ,   Q_μ ∈ ℂ
+  Units         e₀ = 1 ,  e_k² = −1 (k=1,2,3) ,  e_i e_j = − e_j e_i (i≠j)
+  Scalar part   Sc(Q) = Q₀ ,  ℂ-linear
+  Norm          N(Q) = Q Q^♮ = (Σ Q_μ²) e₀
+
+A NOTE ON NAMES
+─────────────────────────────────────────────────────────────────────────────
+  The indefinite Hermitian form below defines a KREIN space, named after
+  Mark Grigorievich KREIN (1907–1989). Not to be confused with Felix KLEIN.
+
+═══════════════════════════════════════════════════════════════════════════════
+                THE KEY POINT :  ℂ-LINEARITY OF THE INVOLUTION
+═══════════════════════════════════════════════════════════════════════════════
+
+  Let a : B → B be an involution, and define  h(Q,Q') = Sc(Q^a · Q').
+  Because B is a ℂ-algebra and Sc is ℂ-linear, the type of h over ℂ
+  is decided entirely by the ℂ-linearity of a :
+
+  ┌────────────────────────┬──────────────────────────────────────────────┐
+  │  a  is ℂ-LINEAR        │  (λQ)^a = λ Q^a                              │
+  │  ⟹  h is ℂ-BILINEAR   │  h(λQ,Q') = λ h(Q,Q') = h(Q,λQ')            │
+  ├────────────────────────┼──────────────────────────────────────────────┤
+  │  a  is ℂ-CONJ-LINEAR   │  (λQ)^a = λ̄ Q^a                              │
+  │  ⟹  h is ℂ-SESQUILIN.  │  h(λQ,Q') = λ̄ h(Q,Q') ,  h(Q,λQ') = λ h(Q,Q')│
+  └────────────────────────┴──────────────────────────────────────────────┘
+
+  So : bilinear vs. sesquilinear over ℂ  ⇔  ℂ-linear vs. ℂ-conjugate-linear.
+
+═══════════════════════════════════════════════════════════════════════════════
+                      1.  VECTOR-SPACE INVOLUTIONS ON B
+═══════════════════════════════════════════════════════════════════════════════
+
+  From ℂ ⊗_ℝ ℍ (tensor product of two involutive rings), 2×2 = 4 involutions :
+
+  ┌────────┬──────┬──────────────────────────────────────┬────────────────┐
+  │ NAME   │ MARK │ ACTION                               │ ℂ-LINEARITY    │
+  ├────────┼──────┼──────────────────────────────────────┼────────────────┤
+  │ id     │  —   │ Q ↦ Q                                │ ℂ-linear       │
+  │ c.c.   │  ¯   │ Q ↦ Q̄ = Q̄₀e₀+Q̄₁e₁+Q̄₂e₂+Q̄₃e₃      │ ℂ-conj-linear  │
+  │ quat.  │  ♮   │ Q ↦ Q^♮ = Q₀e₀−Q₁e₁−Q₂e₂−Q₃e₃      │ ℂ-linear       │
+  │ Herm.  │  *   │ Q ↦ Q* = Q̄₀e₀−Q̄₁e₁−Q̄₂e₂−Q̄₃e₃      │ ℂ-conj-linear  │
+  └────────┴──────┴──────────────────────────────────────┴────────────────┘
+
+  Relations :  * = c.c. ∘ ♮ = ♮ ∘ c.c.     (they commute)
+  Derived  :   ♭ = −*   is a vector-space involution but NOT a ring involution
+                        (fails anti-multiplicativity: (QQ')^♭ = −Q'^♭ Q^♭).
+
+═══════════════════════════════════════════════════════════════════════════════
+                      2.  RING INVOLUTIONS  (*-involutions)
+═══════════════════════════════════════════════════════════════════════════════
+
+  A ring involution :  (a*)* = a ,  (a+b)* = a*+b* ,  (ab)* = b* a* .
+
+  ┌────────┬──────┬────────────────┬────────────────────────────────────────┐
+  │ NAME   │ MARK │ RING INVOL.?  │ ℂ-LINEARITY                            │
+  ├────────┼──────┼────────────────┼────────────────────────────────────────┤
+  │ id     │  —   │ yes (trivial)  │ ℂ-linear                               │
+  │ c.c.   │  ¯   │ YES            │ ℂ-conjugate-linear                     │
+  │ quat.  │  ♮   │ YES            │ ℂ-linear                               │
+  │ Herm.  │  *   │ YES            │ ℂ-conjugate-linear                     │
+  │ antiH. │  ♭   │ NO             │ ℂ-conjugate-linear (fails (ab)*=b*a*)  │
+  └────────┴──────┴────────────────┴────────────────────────────────────────┘
+
+  →  4 vector-space involutions ,  3 non-trivial ring involutions :  ¯ , ♮ , * .
+
+═══════════════════════════════════════════════════════════════════════════════
+                      3.  THE THREE FORMS OVER ℂ
+═══════════════════════════════════════════════════════════════════════════════
+
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │ FORM 1 — ℂ-BILINEAR NORM  (involution ♮, ℂ-LINEAR)                     │
+  ├─────────────────────────────────────────────────────────────────────────┤
+  │  N(Q,Q') = Sc(Q · Q'^♮) = Σ_μ Q_μ Q'_μ                                  │
+  │                                                                         │
+  │  ℂ-LINEARITY of ♮ :  (λQ)^♮ = λ Q^♮                                     │
+  │  ⟹  N(λQ,Q') = λ N(Q,Q') = N(Q,λQ')          (ℂ-BILINEAR)              │
+  │                                                                         │
+  │  Diagonal     : N(Q,Q) = Σ Q_μ²         (generally complex)             │
+  │  On M⁻        : N(T,T) = −c²t²+x²+y²+z²  signature (3,1)                │
+  │  Unit group   : {Λ : N(Λ)=1} = SL(2,ℂ)                                  │
+  │  Physical     : LORENTZ GROUP. Minkowski interval.                      │
+  │  Role         : SYMMETRY / DUALITY (algebraic, no positivity)           │
+  └─────────────────────────────────────────────────────────────────────────┘
+
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │ FORM 2 — ℂ-SESQUILINEAR POSITIVE  (involution ¯, ℂ-CONJ-LINEAR)        │
+  ├─────────────────────────────────────────────────────────────────────────┤
+  │  ⟨Q,Q'⟩ = Sc(Q̄ · Q') = Σ_μ Q̄_μ Q'_μ                                    │
+  │                                                                         │
+  │  ℂ-CONJ-LINEARITY of ¯ :  (λQ)¯ = λ̄ Q̄                                   │
+  │  ⟹  ⟨λQ,Q'⟩ = λ̄ ⟨Q,Q'⟩ ,  ⟨Q,λQ'⟩ = λ ⟨Q,Q'⟩   (ℂ-SESQUILINEAR)        │
+  │                                                                         │
+  │  Diagonal     : ⟨Q,Q⟩ = Σ |Q_μ|² ≥ 0     (real, positive definite)      │
+  │  On B         : signature (8,0) real                                    │
+  │  On M⁻        : ⟨T,T⟩ = c²t²+x²+y²+z²    positive definite              │
+  │  Unit group   : {U : U*U=e₀} = U(2)                                     │
+  │  Physical     : HILBERT SPACE. Born rule, unitary evolution.            │
+  │  Role         : POSITIVITY / PROBABILITY                                │
+  └─────────────────────────────────────────────────────────────────────────┘
+
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │ FORM 3 — ℂ-SESQUILINEAR INDEFINITE  (involution *, ℂ-CONJ-LINEAR)      │
+  ├─────────────────────────────────────────────────────────────────────────┤
+  │  [Q,Q'] = Sc(Q* · Q') = Q̄₀Q'₀ − Q̄₁Q'₁ − Q̄₂Q'₂ − Q̄₃Q'₃              │
+  │                                                                         │
+  │  ℂ-CONJ-LINEARITY of * :  (λQ)* = λ̄ Q*                                  │
+  │  ⟹  [λQ,Q'] = λ̄ [Q,Q'] ,  [Q,λQ'] = λ [Q,Q']   (ℂ-SESQUILINEAR)        │
+  │                                                                         │
+  │  Diagonal     : [Q,Q] = |Q₀|²−|Q₁|²−|Q₂|²−|Q₃|²                         │
+  │  On B         : signature (2,6) real  (indefinite)                      │
+  │  On M⁻        : [T,T] = c²t²−x²−y²−z²   signature (1,3)                 │
+  │  Fundamental  : J = ♮  (ℂ-linear, J²=id, ⟨·,·⟩-self-adjoint)            │
+  │      symmetry : [Q,Q'] = ⟨ JQ , Q' ⟩                                    │
+  │  Physical     : KREIN SPACE. Gupta–Bleuler, BRST, PT-symmetric QM.      │
+  │  Role         : INDEFINITE POSITIVITY                                    │
+  └─────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+              4.  WHY N IS ℂ-BILINEAR  (explicit computation)
+═══════════════════════════════════════════════════════════════════════════════
+
+  Take λ ∈ ℂ. Three ingredients, all ℂ-linear :
+
+      (a)  ♮ is ℂ-linear          :  (λQ')^♮ = λ Q'^♮
+      (b)  ℂ is central in B      :  λX = Xλ  for all X ∈ B
+      (c)  Sc is ℂ-linear         :  Sc(λX) = λ Sc(X)
+
+  First slot :
+      N(λQ,Q') = Sc((λQ)·Q'^♮)
+               = Sc(λ (Q·Q'^♮))           [centrality]
+               = λ Sc(Q·Q'^♮)             [Sc ℂ-linear]
+               = λ N(Q,Q')
+
+  Second slot :
+      N(Q,λQ') = Sc(Q·(λQ')^♮)
+               = Sc(Q·λ Q'^♮)             [(a)]
+               = Sc(λ Q·Q'^♮)             [centrality]
+               = λ Sc(Q·Q'^♮)             [(c)]
+               = λ N(Q,Q')
+
+  ⟹  λ pulls out on BOTH slots without conjugation  ⟹  N is ℂ-BILINEAR.
+
+  CONTRAST :  for ⟨·,·⟩ and [·,·], the involution conjugates λ :
+      ⟨λQ,Q'⟩ = Sc((λQ)*·Q') = Sc(λ̄ Q*·Q') = λ̄ ⟨Q,Q'⟩
+  ⟹  conjugate-linear in the first slot  ⟹  ℂ-SESQUILINEAR.
+
+═══════════════════════════════════════════════════════════════════════════════
+                      5.  WHAT EACH FORM IS FOR
+═══════════════════════════════════════════════════════════════════════════════
+
+  FORM 1  N        ℂ-bilinear          →  Lorentz group SL(2,ℂ)
+                                              Minkowski metric, symmetry
+
+  FORM 2  ⟨·,·⟩    ℂ-sesqui, positive  →  Hilbert space
+                                              probability, Born rule, U(2)
+
+  FORM 3  [·,·]    ℂ-sesqui, indefinite→  Krein space
+                                              fundamental symmetry J = ♮
+
+  Relations :   [Q,Q'] = ⟨ JQ , Q' ⟩      with J = ♮
+                [T,T]  = − N(T,T)         on the material sector M⁻ (up to sign)
+
+═══════════════════════════════════════════════════════════════════════════════
+                      6.  SUMMARY
+═══════════════════════════════════════════════════════════════════════════════
+
+  B is a ℂ-ALGEBRA.  Its center is ℂ, so ℂ-scalars are central.
+  The type of any form Sc(Q^a · Q') over ℂ is decided by the
+  ℂ-linearity of the involution a :
+
+  VECTOR-SPACE INVOLUTIONS : 4       id ,  ¯ ,  ♮ ,  *    (+ ♭ = −*)
+  RING INVOLUTIONS         : 3       ¯  (ℂ-conj-lin)
+                                     ♮  (ℂ-lin)
+                                     *  (ℂ-conj-lin)
+
+  FORMS OVER ℂ            : 3
+      N       ℂ-BILINEAR        (♮ is ℂ-linear)          →  LORENTZ
+      ⟨·,·⟩   ℂ-SESQUILINEAR    (¯ is ℂ-conj-linear)      →  HILBERT
+      [·,·]   ℂ-SESQUILINEAR    (* is ℂ-conj-linear)      →  KREIN
+
+  The bilinearity of N is not accidental : it is the exact consequence of
+  the ℂ-linearity of the quaternion conjugate ♮ together with the centrality
+  of ℂ in B. The two sesquilinear forms arise from the two ℂ-conjugate-linear
+  involutions ¯ and *.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+X
+X
+X
+X
+X
+
+
+
+
+# A convention: ordinary operators vs. *-operators
+
+## The proposal
+
+In any involutive structure — a set, ring, algebra, module, category — one may
+introduce the following naming convention:
+
+- **ordinary operators** : the operations that do not involve the involution \(*\)
+- **\*-operators**      : the operations that are built from, or compatible with, \(*\)
+
+This is a matter of vocabulary, not of new mathematics. It organizes the
+existing objects into two classes and makes explicit which class uses the
+involution.
+
+## 1. Sets with involution
+
+Let \(X\) be a set with an involution \(*:X\to X\).
+
+| Class | Examples |
+|---|---|
+| ordinary operators | any map \(f:X\to X\) not commuting with \(*\) |
+| \*-operators | maps \(f\) with \(f(x^*)=f(x)^*\) |
+
+The \*-operators are the morphisms of the involutive set. The ordinary operators
+are all the rest.
+
+## 2. \*-rings and \*-algebras
+
+Let \(A\) be a \*-ring (or \*-algebra) with involution \(*\).
+
+| Class | Examples |
+|---|---|
+| ordinary operators | left multiplication \(L_a\), right multiplication \(R_a\), addition, scalar multiplication |
+| \*-operators | the map \(a\mapsto a^*\) itself; the adjoint \(T\mapsto T^*\); the involution on the algebra |
+
+A \*-operator is one that satisfies \(f(a^*)=f(a)^*\), i.e. commutes with the
+involution. An ordinary operator need not.
+
+## 3. Modules with \*-structure
+
+Let \(M\) be an \(A\)-module over a \*-ring \(A\), with a sesquilinear form \(h\).
+
+| Class | Examples |
+|---|---|
+| ordinary operators | \(A\)-linear endomorphisms of \(M\) |
+| \*-operators | adjointable endomorphisms \(T^*\) defined by \(h(Tx,y)=h(x,T^*y)\) |
+
+The ordinary operators form a ring \(\mathrm{End}_A(M)\). The \*-operators form a
+\*-ring \(\mathrm{End}_A^*(M)\subseteq \mathrm{End}_A(M)\), the adjointable ones.
+The inclusion can be strict: not every \(A\)-linear map has an adjoint in the
+module case.
+
+## 4. The biquaternion case
+
+On \(B=\mathbb C\otimes_{\mathbb R}\mathbb H\), with the involutions \(\bar\cdot\),
+\(♮\), \(*\) :
+
+| Class | Examples on \(B\) |
+|---|---|
+| ordinary operators | left mult. \(L_Q\), right mult. \(R_Q\), the transpose \(T^T\) w.r.t. \(N\), inner automorphisms \(T\mapsto QTQ^{-1}\) |
+| \*-operators | the dagger sandwich \(H_Q(T)=QTQ^*\), the adjoint w.r.t. \(\langle\cdot,\cdot\rangle\) or \([\cdot,\cdot]\), the reversal \(T\mapsto T^♮\) |
+
+The distinction is:
+
+- ordinary operators : built from the algebra product alone
+- \*-operators : built from the product *and* the involution \(*\)
+
+So \(T\mapsto QTQ^{-1}\) is an ordinary operator (uses the inverse), while
+\(T\mapsto QTQ^*\) is a \*-operator (uses the involution).
+
+## 5. The formal definition
+
+In a category \(\mathcal C\) with a dagger functor \(†\),
+
+- an **ordinary morphism** is any morphism \(f:X\to Y\);
+- a **\*-morphism** (or dagger morphism, or adjointable morphism) is a morphism
+  that has an adjoint \(f^\dagger:Y\to X\) satisfying the dagger axioms.
+
+In a \*-ring \(A\):
+
+- an **ordinary element** is any \(a\in A\);
+- a **\*-element** is one fixed by \(*\): \(a^*=a\) (self-adjoint).
+
+In a Hilbert module \(E\) over a C\*-algebra:
+
+- an **ordinary operator** is a bounded \(A\)-linear map \(T:E\to E\);
+- a **\*-operator** is an adjointable one (one that has \(T^*\)).
+
+## 6. The convention, stated
+
+\[
+\boxed{
+\begin{array}{c}
+\text{In any involutive structure } (X,*)\text{:}\\[4pt]
+\text{ordinary operators} \;\;:\;\; \text{operations defined without } *,\\
+\text{\textasteriskcentered-operators} \;\;:\;\; \text{operations defined using } *,\\
+\text{or compatible with } *\text{ in the sense } f(x^*)=f(x)^*.\\[4pt]
+\text{The two classes coincide iff } *=\mathrm{id}.\\
+\text{The distinction is meaningful precisely when } *\neq\mathrm{id}.
+\end{array}}
+\]
+
+## 7. Why the convention is useful
+
+- It separates algebraic structure (the product) from involutive structure (the \(*\)).
+- It makes explicit which theorems use only the algebra and which require the involution.
+- It clarifies the biquaternion case: the Lorentz action \(QTQ^{-1}\) is an ordinary operator (Clifford automorphism), while the dagger sandwich \(QTQ^*\) is a \*-operator (uses the Hilbert involution).
+- It generalizes the standard distinction between \(\mathrm{End}(M)\) and \(\mathrm{End}^*(M)\) for modules, and between \(B(H)\) and its self-adjoint part.
+
+## 8. Summary
+
+\[
+\boxed{
+\begin{array}{c}
+\text{Convention:}\\
+\text{ordinary operators} = \text{operations that do not use the involution},\\
+\text{\textasteriskcentered-operators} = \text{operations that do.}\\[4pt]
+\text{Defined for any involutive set, ring, algebra, module, category.}\\
+\text{Coincide only when the involution is trivial.}\\[4pt]
+\text{On } B\text{: ordinary} = L_Q, R_Q, QTQ^{-1}\text{;}\\
+\text{\textasteriskcentered-operators} = QTQ^*\text{, the adjoints, the reversal.}
+\end{array}}
+\]
+
+
+
+
+# The adjoint of an operator, with the dagger notation
+
+## The definition
+
+Let \( V \) be a vector space, and let \( h \) be a form on \( V \) (bilinear or sesquilinear). For a linear operator \( T: V \to V \), the **adjoint** \( T^\dagger \) is defined by
+
+\[
+\boxed{\ h(Tx, y) = h(x, T^\dagger y) \qquad \text{for all } x, y \in V.\ }
+\]
+
+The definition is the same in both cases. What differs is:
+
+- the type of \( h \) (bilinear or sesquilinear),
+- the properties of \( T^\dagger \),
+- the group it generates.
+
+## Case 1: bilinear form (Clifford setting)
+
+Let \( B: V \times V \to k \) be a bilinear form. The adjoint \( T^\dagger \) satisfies
+
+\[
+B(Tx, y) = B(x, T^\dagger y).
+\]
+
+**Matrix form.** If \( B(x,y) = x^T [B]\, y \), then
+
+\[
+[T^\dagger] = [B]^{-1} [T]^T [B].
+\]
+
+**Properties:**
+
+- \( (ST)^\dagger = T^\dagger S^\dagger \),
+- \( (T^\dagger)^\dagger = T \),
+- if \( B \) is symmetric, the group \( \{T : T^\dagger = T\} \) is \( O(V, B) \),
+- if \( B \) is antisymmetric, the group \( \{T : T^\dagger = T\} \) is \( Sp(V, \omega) \).
+
+**In Clifford algebras.** The trace form \( B(a,b) = \mathrm{Sc}(a\, b^\natural) \) is bilinear. The adjoint of left multiplication \( L_a(x) = ax \) is
+
+\[
+(L_a)^\dagger = R_{a^\natural},
+\]
+
+right multiplication by the reversal. The dagger is the operator-theoretic form of the Clifford anti-automorphism.
+
+## Case 2: sesquilinear form (Hilbert setting)
+
+Let \( h: V \times V \to \mathbb{C} \) be a Hermitian sesquilinear form. The adjoint \( T^\dagger \) satisfies
+
+\[
+h(Tx, y) = h(x, T^\dagger y).
+\]
+
+**Matrix form.** If \( h(x,y) = x^\dagger [h]\, y \), then
+
+\[
+[T^\dagger] = [h]^{-1} [T]^\dagger [h].
+\]
+
+**Properties:**
+
+- \( (ST)^\dagger = T^\dagger S^\dagger \),
+- \( (T^\dagger)^\dagger = T \),
+- if \( h \) is positive-definite, the group \( \{T : T^\dagger T = T T^\dagger = I\} \) is \( U(V, h) \),
+- if \( h \) is indefinite, the group is the Krein unitary group \( U(V, h) \).
+
+**In Hilbert spaces.** The inner product \( \langle \cdot, \cdot \rangle \) is sesquilinear. The adjoint \( T^\dagger \) is the standard Hilbert adjoint, and \( B(H) \) is a C\*-algebra with \( \|T^\dagger T\| = \|T\|^2 \).
+
+## The unified table
+
+| Form | Adjoint \( \dagger \) defined by | Group |
+|---|---|---|
+| Bilinear symmetric \( B \) | \( B(Tx,y) = B(x, T^\dagger y) \) | \( O(V,B) \) |
+| Bilinear antisymmetric \( \omega \) | \( \omega(Tx,y) = \omega(x, T^\dagger y) \) | \( Sp(V,\omega) \) |
+| Sesquilinear positive \( h \) | \( h(Tx,y) = h(x, T^\dagger y) \) | \( U(V,h) \) |
+| Sesquilinear indefinite \( h \) | \( h(Tx,y) = h(x, T^\dagger y) \) | \( U(V,h) \) (Krein) |
+
+The definition of \( T^\dagger \) is the same. The form \( h \) is what changes.
+
+## In the biquaternion case
+
+On \( B = \mathbb{C} \otimes \mathbb{H} \), the three forms give three adjoints:
+
+| Form | Adjoint | Defined by | Group |
+|---|---|---|---|
+| \( N \) (bilinear) | \( T^\dagger \) | \( N(TQ, Q') = N(Q, T^\dagger Q') \) | \( SL(2,\mathbb{C}) \) |
+| \( \langle \cdot, \cdot \rangle \) (sesqui positive) | \( T^\dagger \) | \( \langle TQ, Q' \rangle = \langle Q, T^\dagger Q' \rangle \) | \( U(2) \) |
+| \( [\cdot, \cdot] \) (sesqui indefinite) | \( T^\dagger \) | \( [TQ, Q'] = [Q, T^\dagger Q'] \) | Krein unitary |
+
+The **same symbol** \( \dagger \) is used, but it means a different operator in each row, because it is defined relative to a different form. This is the standard convention: the dagger always denotes "adjoint with respect to the relevant form."
+
+## Why the two cases are genuinely different
+
+For a bilinear form:
+
+\[
+B(Tx,y) = B(x, T^\dagger y).
+\]
+
+For a sesquilinear form:
+
+\[
+h(Tx,y) = h(x, T^\dagger y).
+\]
+
+The difference is that in the sesquilinear case, \( h \) is conjugate-linear in one slot, so \( T^\dagger \) involves complex conjugation of the scalars. In the bilinear case, no conjugation appears, so \( T^\dagger \) is purely algebraic.
+
+This is why:
+
+- bilinear forms give **orthogonal** and **symplectic** groups,
+- sesquilinear forms give **unitary** groups.
+
+Both are written with the dagger, but the dagger means different things in the two cases.
+
+## Summary
+
+\[
+\boxed{
+\begin{array}{c}
+\text{The adjoint } T^\dagger \text{ is defined by } h(Tx,y) = h(x, T^\dagger y).\\
+\text{Same equation in both cases.}\\
+\text{For a bilinear form } B\text{: } T^\dagger \text{ is the transpose.}\\
+\text{For a sesquilinear form } h\text{: } T^\dagger \text{ is the Hermitian adjoint.}\\[4pt]
+\text{In Clifford algebras: the trace form is bilinear,}\\
+\text{the dagger is the reversal anti-automorphism.}\\
+\text{In Hilbert spaces: the inner product is sesquilinear,}\\
+\text{the dagger is the Hilbert adjoint.}\\[4pt]
+\text{In } B\text{: the three forms give three adjoints, all written } \dagger,\\
+\text{each defined relative to its own form.}
 \end{array}}
 \]

@@ -74,10 +74,10 @@ The notation $e_0, e_1, e_2, e_3$ avoids all three collisions. It also has the a
 **Conjugation.** The **quaternion conjugate** of $\tilde q$ is
 
 $$
-\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3,
+\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3,
 $$
 
-an involution of the algebra that reverses the order of a product, $\overline{pq} = \bar{\tilde q}\,\bar p$.
+an involution of the algebra that reverses the order of a product, $(pq)^{\natural} = \tilde{q}^{\natural}\,\bar p$.
 
 **Division algebra.** Every non-zero quaternion has a two-sided multiplicative inverse, so $\mathbb{H}$ is a division algebra; it is the largest-dimensional associative real division algebra. The inverse is expressed through the quaternion norm, and the quaternion norm, its multiplicativity and the invertibility criterion it supplies are a form and a distance, developed in *Quaternion Norm and Invertibility* and not here.
 
@@ -135,16 +135,16 @@ $$
 
 There are **three** natural conjugations on $\mathbb{H}$, obtained from the quaternion conjugation together with the negation map:
 
-**Quaternion conjugation** $\bar{\tilde q}$:
+**Quaternion conjugation** $\tilde{q}^{\natural}$:
 
 $$
-\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3.
+\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3.
 $$
 
-**Vector conjugation** $-\bar{\tilde q}$:
+**Vector conjugation** $-\tilde{q}^{\natural}$:
 
 $$
--\bar{\tilde q} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3.
+-\tilde{q}^{\natural} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3.
 $$
 
 **Total conjugation** $-\tilde q$:
@@ -161,7 +161,7 @@ Each of the three conjugations has a fixed-point set, i.e., a set of quaternions
 
 ### The Real Subspace
 
-The fixed points of **quaternion conjugation** are the quaternions satisfying $\bar{\tilde q} = \tilde q$. In developed form,
+The fixed points of **quaternion conjugation** are the quaternions satisfying $\tilde{q}^{\natural} = \tilde q$. In developed form,
 
 $$
 q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3 = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3.
@@ -182,7 +182,7 @@ This is the **real subspace** $\mathbb{R}_{\mathbb{H}}$, a copy of the real numb
 
 ### The Vector Subspace
 
-The fixed points of **vector conjugation** are the quaternions satisfying $-\bar{\tilde q} = \tilde q$. In developed form,
+The fixed points of **vector conjugation** are the quaternions satisfying $-\tilde{q}^{\natural} = \tilde q$. In developed form,
 
 $$
 -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3.
@@ -233,10 +233,10 @@ $$
 The two components are obtained from the quaternion conjugation:
 
 $$
-q_r = \frac{1}{2}(\tilde q + \bar{\tilde q}), \qquad q_v = \frac{1}{2}(\tilde q - \bar{\tilde q}).
+q_r = \frac{1}{2}(\tilde q + \tilde{q}^{\natural}), \qquad q_v = \frac{1}{2}(\tilde q - \tilde{q}^{\natural}).
 $$
 
-Indeed, $q_r$ is fixed by quaternion conjugation, so it lies in $\mathbb{R}_{\mathbb{H}}$, and $q_v$ satisfies $\bar{\tilde q}_v = -q_v$, so it lies in $\operatorname{Im}\mathbb{H}$.
+Indeed, $q_r$ is fixed by quaternion conjugation, so it lies in $\mathbb{R}_{\mathbb{H}}$, and $q_v$ satisfies $\tilde{q}^{\natural}_v = -q_v$, so it lies in $\operatorname{Im}\mathbb{H}$.
 
 This gives the direct sum decomposition
 
@@ -250,7 +250,7 @@ This is the **scalar-vector decomposition** of a quaternion. It expresses $\tild
 
 ## The Conjugate Decomposition
 
-The quaternion conjugation $\bar{\cdot}$ is an involution, so it has eigenvalues $+1$ and $-1$. Its eigenspaces are the real subspace $\mathbb{R}_{\mathbb{H}}$ (eigenvalue $+1$) and the vector subspace $\operatorname{Im}\mathbb{H}$ (eigenvalue $-1$). Every quaternion decomposes uniquely as
+The quaternion conjugation ${}^{\natural}$ is an involution, so it has eigenvalues $+1$ and $-1$. Its eigenspaces are the real subspace $\mathbb{R}_{\mathbb{H}}$ (eigenvalue $+1$) and the vector subspace $\operatorname{Im}\mathbb{H}$ (eigenvalue $-1$). Every quaternion decomposes uniquely as
 
 $$
 \tilde q = q_+ + q_-, \qquad q_+ = q_r, \quad q_- = q_v.
@@ -312,10 +312,10 @@ The commutator $[p,\tilde q] = pq - qp$ gives $\mathbb{H}$ a Lie algebra structu
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | General quaternion |
 | $q_0$ | Scalar part |
 | $\mathbf{q}$ | Vector part |
-| $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
-| $-\bar{\tilde q} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Vector conjugate |
+| $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
+| $-\tilde{q}^{\natural} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Vector conjugate |
 | $-\tilde q = -q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Total conjugate |
-| $\mathbb{R}_{\mathbb{H}}$ | Real subspace, fixed-point set of $\bar{\cdot}$ |
+| $\mathbb{R}_{\mathbb{H}}$ | Real subspace, fixed-point set of ${}^{\natural}$ |
 | $\operatorname{Im}\mathbb{H}$ | Vector subspace, fixed-point set of $\tilde{\cdot}$ |
 | $\mathrm{SO}(3)$ | Lie algebra of rotations |
 

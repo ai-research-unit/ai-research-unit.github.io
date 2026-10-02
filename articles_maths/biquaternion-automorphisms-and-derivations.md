@@ -10,11 +10,11 @@ $$
 
 It carries two structures, distinguished by the ground field. Over $\mathbb{C}$ it is a four-dimensional central simple algebra; over $\mathbb{R}$ the same set is an eight-dimensional algebra, simple but not central. This article describes two standard invariants of $\mathbb{B}$: the group of algebra **automorphisms** and the Lie algebra of **derivations**. Both depend on the ground field, so the two views are kept separate and the field is named at each step.
 
-We use the conventions of the article on the biquaternion algebra throughout: the basis $\{e_0, e_1, e_2, e_3\}$ with $e_k^2 = -e_0$; the central scalar imaginary $i$ with $i^2 = -1$; the conjugations $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger} = \bar{\cdot} \circ {}^{*}$, ${}^{\flat} = -{}^{\dagger}$; and the six distinguished subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$. A general element is $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu \in \mathbb{C}$.
+We use the conventions of the article on the biquaternion algebra throughout: the basis $\{e_0, e_1, e_2, e_3\}$ with $e_k^2 = -e_0$; the central scalar imaginary $i$ with $i^2 = -1$; the conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = {}^{\natural} \circ \bar{\cdot}$, ${}^{\flat} = -{}^{*}$; and the six distinguished subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$. A general element is $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu \in \mathbb{C}$.
 
 **The inverse action and the dagger action.** The automorphisms of this article are the maps $\tilde R\mapsto\tilde{Q}\tilde R\tilde{Q}^{-1}$ built from the inverse. They use the product and the biquaternion norm alone, and for a unit $\tilde{Q}$ they are the inner automorphisms below. A second two-sided action of a unit replaces the inverse by the Hermitian conjugate,
 $$
-\mathrm{H}_{\tilde{Q}}(\tilde R)=\tilde{Q}\tilde R\tilde{Q}^{\dagger},
+\mathrm{H}_{\tilde{Q}}(\tilde R)=\tilde{Q}\tilde R\tilde{Q}^{*},
 $$
 and it is not an automorphism of the algebra: it is multiplicative exactly on the unitary elements, and it preserves the two Hermitian sectors rather than the product. That action is the isometry of the algebra treated in *Biquaternion Rotations and Lorentz Transformations*, and the two maps coincide exactly on the unitary slice.
 
@@ -62,23 +62,23 @@ $$
 $$
 the complex orthogonal group in three variables. The reason is visible in the action. Conjugation fixes the trace, so the scalar coordinate is preserved and the action falls on the three-dimensional traceless part $\tilde{V}=\tilde{Q}-\tfrac12(\mathrm{tr}\tilde{Q})e_0$ as $\tilde{V}\mapsto g\tilde{V}g^{-1}$, which fixes the quadratic form $\det\tilde{V}$; that is the defining representation of $SO(3,\mathbb{C})$. The group is **complex** of complex dimension three, hence of real dimension six, and as a **real** group it is also $SO^+(1,3)$: the two are both $PSL(2,\mathbb{C})$, connected and six-real-dimensional, and are therefore the same real group. So the group that appears here as the abstract automorphism group of the algebra is the restricted Lorentz group. It sits inside the automorphism group of the biquaternion norm, $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_0,e_0)\}$ with $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$, as the **diagonal** $\tilde{A}=\tilde{B}=g$; that placement, and the physical construction built on it in the complexified-coordinates setting, are the subject of the section *The Algebra Automorphisms: the Diagonal, and an Induced Causality* of the companion article *The Lorentz Group as Biquaternion Norm Automorphisms*.
 
-**Corollary (the norm).** Every $\mathbb{C}$-linear automorphism preserves the biquaternion norm, and every $\mathbb{R}$-linear automorphism preserves the real norm $r=\sqrt{|N|}$. For an inner automorphism the complex statement is multiplicativity, $N(g\tilde{Q}g^{-1})=N(g)N(\tilde{Q})N(g)^{-1}=N(\tilde{Q})$; complex conjugation reverses the sign of the imaginary part, $N(\tilde{Q}^{*})=N(\tilde{Q})^{*}$, and so preserves $|N|$ without preserving $N$ itself.
+**Corollary (the norm).** Every $\mathbb{C}$-linear automorphism preserves the biquaternion norm, and every $\mathbb{R}$-linear automorphism preserves the real norm $r=\sqrt{|N|}$. For an inner automorphism the complex statement is multiplicativity, $N(g\tilde{Q}g^{-1})=N(g)N(\tilde{Q})N(g)^{-1}=N(\tilde{Q})$; complex conjugation reverses the sign of the imaginary part, $N(\bar{\tilde{Q}})=N(\tilde{Q})^{*}$, and so preserves $|N|$ without preserving $N$ itself.
 
 **Remark (automorphisms against isometries).** The automorphism group is a proper subgroup of the full isometry group $O(N)$ of the real norm on $\mathbb{B}\cong\mathbb{R}^8$: $PGL(2,\mathbb{C})$ has real dimension $6$, whereas the isometry group of a non-degenerate form of signature $(4,4)$ on $\mathbb{R}^8$ has real dimension $\tfrac{8\cdot7}{2}=28$. The automorphisms are the isometries that also preserve the algebra; the further isometries are not algebra maps.
 
 **Example.** For $g = e_1$, with $e_1^{-1} = -e_1$, conjugation fixes $e_1$, $e_0$, $i$ and reverses the signs of $e_2$ and $e_3$: $\iota_{e_1}(e_1) = e_1$, $\iota_{e_1}(e_2) = -e_2$, $\iota_{e_1}(e_3) = -e_3$. Indeed $e_1 e_2 e_1^{-1} = -(e_1 e_2)e_1 = -e_3 e_1 = -e_2$, using $e_1 e_2 = e_3$ and $e_3 e_1 = e_2$.
 
-**Remark.** Quaternion conjugation satisfies $\overline{\tilde R\tilde T} = \bar{\tilde T}\,\bar{\tilde R}$ and is an **anti-automorphism**, not an automorphism, so it is not in $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$; complex conjugation is an automorphism but is not $\mathbb{C}$-linear, so it is not in $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ either. It reappears over $\mathbb{R}$ below.
+**Remark.** Quaternion conjugation satisfies $(\tilde R\tilde T)^{\natural} = \tilde{T}^{\natural}\,\tilde{R}^{\natural}$ and is an **anti-automorphism**, not an automorphism, so it is not in $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$; complex conjugation is an automorphism but is not $\mathbb{C}$-linear, so it is not in $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ either. It reappears over $\mathbb{R}$ below.
 
 ## Automorphisms over $\mathbb{R}$
 
 Now the ground field is $\mathbb{R}$: $\mathbb{B}$ is eight-dimensional, and automorphisms need only be $\mathbb{R}$-linear, not $\mathbb{C}$-linear, which makes the group strictly larger.
 
-**Automorphisms preserve the center.** If $\sigma$ is an $\mathbb{R}$-algebra automorphism and $z$ is central, then $\sigma(z)\sigma(\tilde R) = \sigma(z\tilde R) = \sigma(\tilde Rz) = \sigma(\tilde R)\sigma(z)$ for every $\tilde R$, so $\sigma(z)$ is central. Thus $\sigma$ restricts to an $\mathbb{R}$-algebra automorphism of $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$; since $\mathbb{C}$ as a real algebra has exactly two automorphisms, the identity and $\kappa(z) = z^{*}$, restriction gives a homomorphism $\rho : \mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \to \mathrm{Aut}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}}) = \{\mathrm{id}, \kappa\} \cong \mathbb{Z}/2$.
+**Automorphisms preserve the center.** If $\sigma$ is an $\mathbb{R}$-algebra automorphism and $z$ is central, then $\sigma(z)\sigma(\tilde R) = \sigma(z\tilde R) = \sigma(\tilde Rz) = \sigma(\tilde R)\sigma(z)$ for every $\tilde R$, so $\sigma(z)$ is central. Thus $\sigma$ restricts to an $\mathbb{R}$-algebra automorphism of $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$; since $\mathbb{C}$ as a real algebra has exactly two automorphisms, the identity and $\kappa(z) = \bar{z}$, restriction gives a homomorphism $\rho : \mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \to \mathrm{Aut}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}}) = \{\mathrm{id}, \kappa\} \cong \mathbb{Z}/2$.
 
 **The kernel is the $\mathbb{C}$-linear part.** An automorphism lies in $\ker \rho$ exactly when it fixes the center pointwise, and an $\mathbb{R}$-linear map fixing $\mathbb{C}_{\mathbb{B}}$ pointwise is automatically $\mathbb{C}$-linear, since it commutes with multiplication by the central element $i$. Hence $\ker \rho = \mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$, the group computed above; these are precisely the inner automorphisms, by Skolem–Noether.
 
-**The conjugation coset.** The map $\rho$ is surjective: $c(\tilde{Q}) = \tilde{Q}^{*}$ is an $\mathbb{R}$-algebra automorphism, since $(\tilde R\tilde T)^{*} = \tilde R^{*}\tilde T^{*}$, and it induces $\kappa$ on the center, since $c(i) = -i$. It is not $\mathbb{C}$-linear, and it is not inner, because inner automorphisms fix the center pointwise while $c(i) = -i \neq i$. So the extension is nontrivial.
+**The conjugation coset.** The map $\rho$ is surjective: $c(\tilde{Q}) = \bar{\tilde{Q}}$ is an $\mathbb{R}$-algebra automorphism, since $(\tilde R\tilde T)^{*} = \bar{\tilde{R}}\bar{\tilde{T}}$, and it induces $\kappa$ on the center, since $c(i) = -i$. It is not $\mathbb{C}$-linear, and it is not inner, because inner automorphisms fix the center pointwise while $c(i) = -i \neq i$. So the extension is nontrivial.
 
 **The full real automorphism group.** There is a short exact sequence $1 \to \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \to \mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \xrightarrow{\rho} \mathbb{Z}/2 \to 1$, split by $c$ because $c^{2} = \mathrm{id}$. Hence
 
@@ -86,7 +86,7 @@ $$
 \mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \cong \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \rtimes \mathbb{Z}/2,
 $$
 
-the generator acting on $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ by $\iota_g \mapsto \iota_{g^{*}}$. Concretely, every real automorphism of $\mathbb{B}$ has exactly one of the two forms $\sigma(\tilde R) = g \tilde R g^{-1}$ or $\sigma(\tilde R) = g\, \tilde R^{*}\, g^{-1}$, with $g \in \mathbb{B}^{\times}$ determined up to a nonzero complex scalar. The first family is the identity coset of $\mathbb{C}$-linear inner automorphisms; the second is the coset of $c$, consisting of **conjugate-linear** automorphisms.
+the generator acting on $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ by $\iota_g \mapsto \iota_{g^{*}}$. Concretely, every real automorphism of $\mathbb{B}$ has exactly one of the two forms $\sigma(\tilde R) = g \tilde R g^{-1}$ or $\sigma(\tilde R) = g\, \bar{\tilde{R}}\, g^{-1}$, with $g \in \mathbb{B}^{\times}$ determined up to a nonzero complex scalar. The first family is the identity coset of $\mathbb{C}$-linear inner automorphisms; the second is the coset of $c$, consisting of **conjugate-linear** automorphisms.
 
 **Dimension and scope.** As a real Lie group, $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B})$ has real dimension $6$ and exactly two connected components, each a copy of $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$; it is larger and is a real group rather than a complex one. Skolem–Noether describes the identity component $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$; the conjugate-linear coset exists because $\mathbb{C}/\mathbb{R}$ has a nontrivial Galois automorphism, and it is not inner.
 
@@ -148,7 +148,7 @@ There is no semilinear analogue for derivations: a derivation cannot conjugate a
 
 ## Worked Examples
 
-**The conjugation involution.** Complex conjugation $c(\tilde{Q}) = \tilde{Q}^{*}$ is an $\mathbb{R}$-algebra automorphism with $c(e_k) = e_k$ ($k = 0,1,2,3$) and $c(i) = -i$; it fixes the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ pointwise, negates the scalar imaginary, satisfies $c^{2} = \mathrm{id}$, preserves the product, and is conjugate-linear over $\mathbb{C}$. It is not inner, because inner automorphisms fix the center pointwise whereas $c(i) = -i$, so it represents the nontrivial coset of $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ in $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B})$.
+**The conjugation involution.** Complex conjugation $c(\tilde{Q}) = \bar{\tilde{Q}}$ is an $\mathbb{R}$-algebra automorphism with $c(e_k) = e_k$ ($k = 0,1,2,3$) and $c(i) = -i$; it fixes the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ pointwise, negates the scalar imaginary, satisfies $c^{2} = \mathrm{id}$, preserves the product, and is conjugate-linear over $\mathbb{C}$. It is not inner, because inner automorphisms fix the center pointwise whereas $c(i) = -i$, so it represents the nontrivial coset of $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ in $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B})$.
 
 **A rotation derivation.** Take $D = D_3 = \tfrac{1}{2}\mathrm{ad}_{e_3}$, so that $D(e_1) = e_2$ and $D(e_2) = -e_1$. Its exponential acts by
 
@@ -186,7 +186,7 @@ In summary: over $\mathbb{C}$ the algebra is central simple, every automorphism 
 | $\mathrm{Vect}(\mathbb{B})$ | Vector subspace, vanishing scalar part |
 | $\mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}$ | Real-quaternion and anti-quaternion subspaces |
 | $\mathbb{M}_+, \mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
-| $\bar{\cdot}, {}^{*}, {}^{\dagger}, {}^{\flat}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugations |
+| ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugations |
 | $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ | Algebra automorphisms over $\mathbb{C}$, $\cong \mathbb{B}^{\times}/\mathbb{C}^{\times}$ |
 | $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B})$ | Algebra automorphisms over $\mathbb{R}$, $\cong \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \rtimes \mathbb{Z}/2$ |
 | $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$ | Derivations over $\mathbb{C}$, $\cong \mathbb{B}/\mathbb{C}_{\mathbb{B}}$ |

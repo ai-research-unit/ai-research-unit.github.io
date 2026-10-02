@@ -13,21 +13,21 @@ $$
 e_k^2 = -e_0 \quad (1\leq k\leq 7).
 $$
 
-Conjugation is the linear map $\bar{\cdot}$ with $\bar{e_0} = e_0$ and $\bar{e_k} = -e_k$. The product of two distinct imaginary basis elements is $\pm e_l$ according to the orientation rule of the next section. All products are written without brackets only where associativity is known; the convention is that $xyz$ abbreviates $(xy)z$, and that a bracket is dropped only inside an associative subalgebra.
+Conjugation is the linear map $\bar{\cdot}$ with $e_0^{\natural} = e_0$ and $e_k^{\natural} = -e_k$. The product of two distinct imaginary basis elements is $\pm e_l$ according to the orientation rule of the next section. All products are written without brackets only where associativity is known; the convention is that $xyz$ abbreviates $(xy)z$, and that a bracket is dropped only inside an associative subalgebra.
 
 ## The Cayley–Dickson Construction
 
 ### The Doubling
 
-**Definition.** Let $A$ be an algebra over $\mathbb{R}$ with an involution $a\mapsto\bar a$ and with $a + \bar a\in\mathbb{R}1$ and $a\bar a\in\mathbb{R}1$ for all $a\in A$. The **Cayley–Dickson double** $\mathrm{CD}(A)$ is the vector space $A\oplus A$ with the product
+**Definition.** Let $A$ be an algebra over $\mathbb{R}$ with an involution $a\mapsto a^{\natural}$ and with $a + a^{\natural}\in\mathbb{R}1$ and $a a^{\natural}\in\mathbb{R}1$ for all $a\in A$. The **Cayley–Dickson double** $\mathrm{CD}(A)$ is the vector space $A\oplus A$ with the product
 
 $$
-(a,b)(c,d) = \left(ac - \bar d b,\ da + b\bar c\right), \qquad a,b,c,d\in A .
+(a,b)(c,d) = \left(ac -  d^{\natural} b,\ da + b c^{\natural}\right), \qquad a,b,c,d\in A .
 $$
 
-**Proposition.** If $A$ is a composition algebra with $N(a) = a\bar a$, then $\mathrm{CD}(A)$ is a composition algebra with $N((a,b)) = N(a) + N(b)$, the conjugation $(\overline{a,b}) = (\bar a,-b)$, and the identity $(1,0)$.
+**Proposition.** If $A$ is a composition algebra with $N(a) = a a^{\natural}$, then $\mathrm{CD}(A)$ is a composition algebra with $N((a,b)) = N(a) + N(b)$, the conjugation $(\overline{a,b}) = (a^{\natural},-b)$, and the identity $(1,0)$.
 
-*Proof.* An expansion using the composition law in $A$ shows $N(xy) = N(x)N(y)$ for $x,y\in \mathrm{CD}(A)$ and $x\bar x = N(x)(1,0)$; the statements about the identity and the conjugation are immediate from the definition.
+*Proof.* An expansion using the composition law in $A$ shows $N(xy) = N(x)N(y)$ for $x,y\in \mathrm{CD}(A)$ and $x x^{\natural} = N(x)(1,0)$; the statements about the identity and the conjugation are immediate from the definition.
 
 The construction is the same one that produces $\mathbb{C}$ from $\mathbb{R}$ and $\mathbb{H}$ from $\mathbb{C}$. It produces $\mathbb{O}$ from $\mathbb{H}$:
 
@@ -38,7 +38,7 @@ $$
 Writing an octonion as a pair $(a,b)$ of quaternions, the product is
 
 $$
-(a,b)(c,d) = (ac - \bar d b,\ da + b\bar c).
+(a,b)(c,d) = (ac - d^{\natural} b,\ da + b c^{\natural}).
 $$
 
 Iterating further produces the sedenions $\mathbb{S} = \mathrm{CD}(\mathbb{O})$, of dimension sixteen, in which $N$ is no longer multiplicative and which contain zero divisors; the octonions are the last normed division algebra, a fact stated precisely in the last section of this article (Hurwitz's theorem).
@@ -95,7 +95,7 @@ $$
 \operatorname{Sc}(x) = x_0, \qquad \operatorname{Vect}(x) = \sum_{k=1}^{7}x_ke_k,
 $$
 
-and the **conjugate** is $\bar x = \operatorname{Sc}(x) - \operatorname{Vect}(x)$; the octonion is **imaginary** or **pure** if $\operatorname{Sc}(x) = 0$, and the imaginary subspace is written $\operatorname{Im}\mathbb{O}$, a real seven-space.
+and the **conjugate** is $x^{\natural} = \operatorname{Sc}(x) - \operatorname{Vect}(x)$; the octonion is **imaginary** or **pure** if $\operatorname{Sc}(x) = 0$, and the imaginary subspace is written $\operatorname{Im}\mathbb{O}$, a real seven-space.
 
 ## Identities
 
@@ -103,13 +103,13 @@ and the **conjugate** is $\bar x = \operatorname{Sc}(x) - \operatorname{Vect}(x)
 
 **Proposition.** The following hold for all $x,y\in\mathbb{O}$ and $\lambda\in\mathbb{R}$:
 
-1. $\overline{\bar x} = x$, $\overline{x + y} = \bar x + \bar y$, $\overline{\lambda x} = \lambda\bar x$;
-2. $x + \bar x = 2\operatorname{Sc}(x)e_0$, so that $x + \bar x\in\mathbb{R}e_0$;
-3. $x\bar x = \bar xx\in\mathbb{R}e_0$, and the scalar $\lvert x\rvert^2 = x\bar x$ is the sum of the squares of the coefficients, $\lvert x\rvert^2 = \sum_{k=0}^{7}x_k^2$;
-4. $\overline{xy} = \bar y\,\bar x$;
-5. $x\bar x = 0$ implies $x = 0$.
+1. $\overline{x^{\natural}} = x$, $(x+y)^{\natural} = x^{\natural} + y^{\natural}$, $(\lambda x)^{\natural} = \lambda x^{\natural}$;
+2. $x + x^{\natural} = 2\operatorname{Sc}(x)e_0$, so that $x + x^{\natural}\in\mathbb{R}e_0$;
+3. $x x^{\natural} = x^{\natural}x\in\mathbb{R}e_0$, and the scalar $\lvert x\rvert^2 = x x^{\natural}$ is the sum of the squares of the coefficients, $\lvert x\rvert^2 = \sum_{k=0}^{7}x_k^2$;
+4. $(xy)^{\natural} = y^{\natural}\,x^{\natural}$;
+5. $x x^{\natural} = 0$ implies $x = 0$.
 
-*Proof.* Statements 1 and 2 are immediate from the definitions. For 3, multiplicativity of the norm in the Cayley–Dickson doubling together with $N(e_0) = 1$ gives $x\bar x = N(x)e_0$, and the displayed coordinate expression follows by expansion; the equality $\bar xx = x\bar x$ follows from $\overline{x\bar x} = x\bar x$ and statement 4. For 4, both sides are bilinear, and the identity is checked on basis elements from the table: for an oriented line $(a,b,c)$ one has $\overline{e_ae_b} = \bar e_c = -e_c$ and $\bar e_b\bar e_a = (-e_b)(-e_a) = e_be_a = -e_c$, and the remaining cases are similar. For 5, use statement 3.
+*Proof.* Statements 1 and 2 are immediate from the definitions. For 3, multiplicativity of the norm in the Cayley–Dickson doubling together with $N(e_0) = 1$ gives $x x^{\natural} = N(x)e_0$, and the displayed coordinate expression follows by expansion; the equality $x^{\natural}x = x x^{\natural}$ follows from $\overline{x x^{\natural}} = x x^{\natural}$ and statement 4. For 4, both sides are bilinear, and the identity is checked on basis elements from the table: for an oriented line $(a,b,c)$ one has $(e_a e_b)^{\natural} = e_c^{\natural} = -e_c$ and $e_b^{\natural} e_a^{\natural} = (-e_b)(-e_a) = e_be_a = -e_c$, and the remaining cases are similar. For 5, use statement 3.
 
 The scalar $\lvert x\rvert^2$ is the **quadratic norm** of $x$; its systematic treatment, the invariance of the associated bilinear form under multiplication, and the invertibility theory, are the subject and are used here only where the multiplication forces them.
 
@@ -164,7 +164,7 @@ where $xyx$ means $(xy)x$.
 **Proposition.** The following further identities hold for all $x,y\in\mathbb{O}$, and are the form in which invertibility is normally used:
 
 $$
-x(\bar xy) = \lvert x\rvert^2 y, \qquad (x\bar y)y = \lvert y\rvert^2 x, \qquad (\bar xy)\bar x = \lvert x\rvert^2 y, \qquad \bar x(xy) = \lvert x\rvert^2 y .
+x(x^{\natural}y) = \lvert x\rvert^2 y, \qquad (x y^{\natural})y = \lvert y\rvert^2 x, \qquad (x^{\natural}y)x^{\natural} = \lvert x\rvert^2 y, \qquad x^{\natural}(xy) = \lvert x\rvert^2 y .
 $$
 
 *Proof.* Expand in coordinates and use the table; the identities express the two-sidedness of the Cayley–Dickson conjugation in the algebra and are the exact substitutes for associativity in the cancellation arguments.
@@ -206,7 +206,7 @@ $$
 
 and it is a **division algebra**: the only octonion $x$ with $xy = 0$ or $yx = 0$ for some $y\neq0$ is $x = 0$.
 
-*Proof.* Non-associativity and non-commutativity are the example and the skew-symmetric entries of the table. Flexibility is the specialisation $x = z$ of the alternating property of the associator. For the division statement, if $xy = 0$ with $y\neq0$ then $x = \lvert y\rvert^{-2}(xy)\bar y = 0$ using the identities of the previous section.
+*Proof.* Non-associativity and non-commutativity are the example and the skew-symmetric entries of the table. Flexibility is the specialisation $x = z$ of the alternating property of the associator. For the division statement, if $xy = 0$ with $y\neq0$ then $x = \lvert y\rvert^{-2}(xy)y^{\natural} = 0$ using the identities of the previous section.
 
 The **centre** of $\mathbb{O}$ is $\mathbb{R}e_0$: an element commuting and associating with every element is a real scalar. The derivation algebra $\operatorname{Der}(\mathbb{O})$ is the exceptional Lie algebra $\mathrm{G}_2$, of dimension fourteen, and the automorphism group is the exceptional Lie group $G_2$; both are treated.
 
@@ -235,7 +235,7 @@ $$
 where the dot and cross products on $\mathbb{R}^7$ are those induced by the octonion product on the imaginary space,
 
 $$
-u\cdot v = \operatorname{Sc}(u\bar v), \qquad u\times v = \operatorname{Vect}(uv), \qquad u,v\in\operatorname{Im}\mathbb{O} .
+u\cdot v = \operatorname{Sc}(uv^{\natural}), \qquad u\times v = \operatorname{Vect}(uv), \qquad u,v\in\operatorname{Im}\mathbb{O} .
 $$
 
 **Proposition.** The dot product is a positive definite symmetric bilinear form on $\mathbb{R}^7$ with $u\cdot u = \lvert u\rvert^2$, the cross product is bilinear and alternating, and the two satisfy, for all $u,v,w\in\mathbb{R}^7$,
@@ -253,7 +253,7 @@ $$
 
 embeds it as a subalgebra of the algebra of $2\times2$ matrices over $\mathbb{O}$ taken with the left-associated product, that is, the product of two such matrices is computed with the brackets fixed on the left.
 
-*Proof.* The properties of the dot and cross products are the standard identities of the seven-dimensional vector product, which follow from the Fano rule; the alternation of the cross product is the skew symmetry of the multiplication table, the scalar triple product identity is the associativity of the scalar part $\operatorname{Sc}((uv)w)$, which holds because the scalar part of a product of three imaginary units is given by the alternating three-form of the orientation, and the triple product identity is its contraction. The dimension and the identity are immediate. The embedding is the identification of the array with the matrix whose entries are the corresponding octonions; the product rule is then obtained by computing the four entries of the product with all brackets on the left and using the identities $u\bar u' = u\cdot u' + u\times u'$ and the like.
+*Proof.* The properties of the dot and cross products are the standard identities of the seven-dimensional vector product, which follow from the Fano rule; the alternation of the cross product is the skew symmetry of the multiplication table, the scalar triple product identity is the associativity of the scalar part $\operatorname{Sc}((uv)w)$, which holds because the scalar part of a product of three imaginary units is given by the alternating three-form of the orientation, and the triple product identity is its contraction. The dimension and the identity are immediate. The embedding is the identification of the array with the matrix whose entries are the corresponding octonions; the product rule is then obtained by computing the four entries of the product with all brackets on the left and using the identities $u u^{\natural}' = u\cdot u' + u\times u'$ and the like.
 
 **Proposition.** The **determinant**
 
@@ -269,9 +269,9 @@ The $2\times2$ Hermitian matrices form a Jordan algebra under the symmetrised pr
 
 ## Summary
 
-The octonion algebra $\mathbb{O}$ is the real vector space of dimension eight with basis $e_0 = 1, e_1,\dots,e_7$, with $e_k^2 = -e_0$ and with the products of distinct imaginary units determined by the orientation of the seven lines of the Fano plane: on a cyclically ordered line $(a,b,c)$ one has $e_ae_b = e_c$, $e_be_c = e_a$, $e_ce_a = e_b$, and reversing any factor negates the product. Equivalently, $\mathbb{O} = \mathbb{H}\oplus\mathbb{H}$ is the Cayley–Dickson double of the quaternions, with product $(a,b)(c,d) = (ac - \bar db, da + b\bar c)$.
+The octonion algebra $\mathbb{O}$ is the real vector space of dimension eight with basis $e_0 = 1, e_1,\dots,e_7$, with $e_k^2 = -e_0$ and with the products of distinct imaginary units determined by the orientation of the seven lines of the Fano plane: on a cyclically ordered line $(a,b,c)$ one has $e_ae_b = e_c$, $e_be_c = e_a$, $e_ce_a = e_b$, and reversing any factor negates the product. Equivalently, $\mathbb{O} = \mathbb{H}\oplus\mathbb{H}$ is the Cayley–Dickson double of the quaternions, with product $(a,b)(c,d) = (ac - d^{\natural}b, da + b c^{\natural})$.
 
-The algebra has identity $e_0$ and is neither commutative nor associative. Its associator $[x,y,z] = (xy)z - x(yz)$ is alternating, so the algebra is alternative and flexible and every subalgebra generated by two elements is associative; it satisfies the Moufang identities $(xyx)z = x(y(xz))$, $z(xyx) = ((zx)y)x$ and $(xy)(zx) = x(yz)x$. Conjugation is an anti-automorphism, $\overline{xy} = \bar y\bar x$, and $x + \bar x$ and $x\bar x$ are real; the scalar $\lvert x\rvert^2 = x\bar x$ is the sum of the squares of the coefficients. The identities $x(\bar xy) = \lvert x\rvert^2y$ and $(x\bar y)y = \lvert y\rvert^2x$ replace associativity in cancellation. The algebra is a division algebra, and by Hurwitz's theorem it is the largest normed division algebra over $\mathbb{R}$. Its subalgebras generated by one and two elements are the copies of $\mathbb{C}$ and $\mathbb{H}$; its Fano lines record the quaternion subalgebras; its centre is $\mathbb{R}e_0$; and it may be presented by Zorn vector matrices, in which the product is expressed by the dot and cross products on $\mathbb{R}^7$.
+The algebra has identity $e_0$ and is neither commutative nor associative. Its associator $[x,y,z] = (xy)z - x(yz)$ is alternating, so the algebra is alternative and flexible and every subalgebra generated by two elements is associative; it satisfies the Moufang identities $(xyx)z = x(y(xz))$, $z(xyx) = ((zx)y)x$ and $(xy)(zx) = x(yz)x$. Conjugation is an anti-automorphism, $(xy)^{\natural} = y^{\natural} x^{\natural}$, and $x + x^{\natural}$ and $x x^{\natural}$ are real; the scalar $\lvert x\rvert^2 = x x^{\natural}$ is the sum of the squares of the coefficients. The identities $x(x^{\natural}y) = \lvert x\rvert^2y$ and $(x y^{\natural})y = \lvert y\rvert^2x$ replace associativity in cancellation. The algebra is a division algebra, and by Hurwitz's theorem it is the largest normed division algebra over $\mathbb{R}$. Its subalgebras generated by one and two elements are the copies of $\mathbb{C}$ and $\mathbb{H}$; its Fano lines record the quaternion subalgebras; its centre is $\mathbb{R}e_0$; and it may be presented by Zorn vector matrices, in which the product is expressed by the dot and cross products on $\mathbb{R}^7$.
 
 ## Summary of Notation
 
@@ -280,15 +280,15 @@ The algebra has identity $e_0$ and is neither commutative nor associative. Its a
 | $\mathbb{O}$ | The octonion algebra, $\dim_{\mathbb{R}} = 8$ |
 | $e_0 = 1, e_1,\dots,e_7$ | Basis, $e_k^2 = -e_0$ for $k\geq1$ |
 | $\mathbb{F}$, $(a,b,c)$ | Fano plane and its cyclically ordered lines |
-| $\bar{x}$ | Conjugation, $\bar e_0 = e_0$, $\bar e_k = -e_k$, $\overline{xy} = \bar y\bar x$ |
+| $x^{\natural}$ | Conjugation, $e_0^{\natural} = e_0$, $e_k^{\natural} = -e_k$, $(xy)^{\natural} = y^{\natural} x^{\natural}$ |
 | $\operatorname{Sc}(x)$, $\operatorname{Vect}(x)$ | Scalar and vector parts, $\operatorname{Im}\mathbb{O} = \operatorname{Vect}(\mathbb{O})$ |
-| $\lvert x\rvert^2 = x\bar x = \bar xx = \sum_kx_k^2$ | Quadratic norm (developed) |
+| $\lvert x\rvert^2 = x x^{\natural} = x^{\natural}x = \sum_kx_k^2$ | Quadratic norm (developed) |
 | $[x,y,z] = (xy)z - x(yz)$ | Associator, alternating |
 | $xyx = (xy)x$ | Abbreviation in the Moufang identities |
 | $\mathrm{CD}(A)$ | Cayley–Dickson double of $A$ |
 | $\mathbb{O} = \mathrm{CD}(\mathbb{H}) = \mathbb{H}\oplus\mathbb{H}$ | The doubling construction |
 | $\operatorname{Der}(\mathbb{O}) = \mathrm{G}_2$, $\operatorname{Aut}(\mathbb{O}) = G_2$ | Derivation algebra and automorphism group |
-| $u\cdot v = \operatorname{Sc}(u\bar v)$, $u\times v = \operatorname{Vect}(uv)$ | Dot and cross products on $\mathbb{R}^7$ |
+| $u\cdot v = \operatorname{Sc}(u v^{\natural})$, $u\times v = \operatorname{Vect}(uv)$ | Dot and cross products on $\mathbb{R}^7$ |
 | $\det\begin{pmatrix}\alpha & u\\ v & \beta\end{pmatrix} = \alpha\beta - u\cdot v$ | Determinant of a Zorn vector matrix |
 
 

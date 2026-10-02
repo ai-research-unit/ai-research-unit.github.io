@@ -19,7 +19,7 @@ The cone is also the characteristic cone of the algebra's wave operator. The sta
 
 The word "information" is used in its physical, signal-theoretic sense: a signal is a physical process passing from one event to another that can carry a message, and the question is which pairs of events can be joined by such a process. This is classical relativistic physics with a causal postulate. It is distinct from the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; the two readings share the algebra and nothing else.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and the central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements of the form $i\alpha\,e_0 + \mathbf{a}$, $\alpha \in \mathbb{R}$, $\mathbf{a} = a_1e_1+a_2e_2+a_3e_3$ real. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, and the material coordinate is $\tilde{Q} = ic\,t\,e_0 + \mathbf{x}$. The $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements below were checked in the four-component coefficient representation $\tilde{Q} = Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with complex coefficients, and on generic configurations rather than on a single null direction.
+**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and the central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements of the form $i\alpha\,e_0 + \mathbf{a}$, $\alpha \in \mathbb{R}$, $\mathbf{a} = a_1e_1+a_2e_2+a_3e_3$ real. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, and the material coordinate is $\tilde{Q} = ic\,t\,e_0 + \mathbf{x}$. The $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements below were checked in the four-component coefficient representation $\tilde{Q} = Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with complex coefficients, and on generic configurations rather than on a single null direction.
 
 ## Events, Displacements and the Causal Order
 
@@ -42,7 +42,7 @@ $$
 and its biquaternion norm is the invariant interval
 
 $$
-N(\tilde{Q}_{qp}) = \tilde{Q}_{qp}\bar{\tilde{Q}}_{qp} = (ic\,\Delta t)^2 + |\Delta\mathbf{x}|^2 = -c^2(\Delta t)^2 + |\Delta\mathbf{x}|^2 .
+N(\tilde{Q}_{qp}) = \tilde{Q}_{qp}\tilde{Q}^{\natural}_{qp} = (ic\,\Delta t)^2 + |\Delta\mathbf{x}|^2 = -c^2(\Delta t)^2 + |\Delta\mathbf{x}|^2 .
 $$
 
 The minus sign in the time–time term is the algebraic consequence of $i^2 = -1$; it is not an independent postulate of the metric. The time orientation of the displacement is carried by the scalar projection,
@@ -99,12 +99,12 @@ $$
 so the material cone is the idempotent-multiple branch of $\mathcal{Z}$ realized over the reals, and the nilpotent branch would require complex spatial components. The cone is therefore the locus at which the algebra fails to be invertible. Off the cone the inverse exists explicitly,
 
 $$
-\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}}}{N(\tilde{Q})}, \qquad N(\tilde{Q}) \ne 0,
+\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{N(\tilde{Q})}, \qquad N(\tilde{Q}) \ne 0,
 $$
 
 so every nonzero displacement is invertible except the null ones.
 
-**The cone is the propagation locus.** The d'Alembertian of the algebra is the biquaternion norm of the gradient, $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$, and a four-wavevector $\tilde{K}$ solves the massless dispersion relation $N(\tilde{K}) = 0$ exactly when it is null. For a null $\tilde{K}$ every function of the phase $\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion.
+**The cone is the propagation locus.** The d'Alembertian of the algebra is the biquaternion norm of the gradient, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and a four-wavevector $\tilde{K}$ solves the massless dispersion relation $N(\tilde{K}) = 0$ exactly when it is null. For a null $\tilde{K}$ every function of the phase $\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion.
 
 Two features of $\mathcal{Z}$ are used below. First, it is the common boundary of the three regions of the classification: $N$ is a continuous real function on $\mathbb{M}_-$, its sign is locally constant off $\mathcal{Z}$, and a continuous path can change the sign only by passing through $\mathcal{Z}$. Second, the complement of $\mathcal{Z} \cup \{0\}$ has exactly three connected components: the spacelike region $N > 0$, and the two components of the timelike region $N < 0$, distinguished by the sign of $t$, called the **future** and the **past**. This is the standard three-component structure of Minkowski space; it is what makes the cone a separating surface and not merely a level set.
 
@@ -115,15 +115,15 @@ Two features of $\mathcal{Z}$ are used below. First, it is the common boundary o
 The Lorentz group acts on the material sector by the rotor conjugation
 
 $$
-\tilde{Q} \;\longmapsto\; \tilde{Q}' = \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger,
+\tilde{Q} \;\longmapsto\; \tilde{Q}' = \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*},
 \qquad
-\tilde{\Lambda} \in \mathbb{B}, \quad \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0,
+\tilde{\Lambda} \in \mathbb{B}, \quad \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0,
 $$
 
-as developed in the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. The biquaternion norm is multiplicative, $N(\tilde{Q}\tilde{R}) = N(\tilde{Q})N(\tilde{R})$, and complex conjugation supplies $N(\tilde{\Lambda}^\dagger) = N(\tilde{\Lambda})^*$. Hence
+as developed in the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. The biquaternion norm is multiplicative, $N(\tilde{Q}\tilde{R}) = N(\tilde{Q})N(\tilde{R})$, and complex conjugation supplies $N(\tilde{\Lambda}^{*}) = N(\tilde{\Lambda})^*$. Hence
 
 $$
-N(\tilde{Q}') = N(\tilde{\Lambda}) \, N(\tilde{Q}) \, N(\tilde{\Lambda}^\dagger)
+N(\tilde{Q}') = N(\tilde{\Lambda}) \, N(\tilde{Q}) \, N(\tilde{\Lambda}^{*})
 = N(\tilde{\Lambda})\,N(\tilde{Q})\,N(\tilde{\Lambda})^*
 = N(\tilde{Q}),
 $$
@@ -189,13 +189,13 @@ $$
 as in the companion article *Relativistic Mechanics in Biquaternionic Form*. For two observers with four-velocities $\tilde{U}_1, \tilde{U}_2$, the contraction
 
 $$
--\,\frac{1}{c^2}\,\mathrm{Sc}\!\left(\tilde{U}_1\bar{\tilde{U}}_2\right)
+-\,\frac{1}{c^2}\,\mathrm{Sc}\!\left(\tilde{U}_1\tilde{U}^{\natural}_2\right)
 = \gamma_1\gamma_2\left(1 - \frac{\mathbf{v}_1\cdot\mathbf{v}_2}{c^2}\right)
 = \gamma_1\gamma_2\left(1 - \beta_1\beta_2\cos\theta\right)
 \equiv \gamma_{\mathrm{rel}}
 $$
 
-is the Lorentz factor of their relative motion, where $\beta_i = |\mathbf{v}_i|/c$ and $\theta$ is the angle between the two velocities. The computation is the direct product of the two four-velocities in the coefficient representation; it uses $\bar{\tilde{U}}_2 = \gamma_2(ic\,e_0 - \mathbf{v}_2)$ and $\mathrm{Sc}((ic\,e_0+\mathbf{v}_1)\cdot(ic\,e_0-\mathbf{v}_2)) = -c^2 + \mathbf{v}_1\cdot\mathbf{v}_2$. The result is frame-independent because it is built from the invariant biquaternion norm, as it must be.
+is the Lorentz factor of their relative motion, where $\beta_i = |\mathbf{v}_i|/c$ and $\theta$ is the angle between the two velocities. The computation is the direct product of the two four-velocities in the coefficient representation; it uses $\tilde{U}^{\natural}_2 = \gamma_2(ic\,e_0 - \mathbf{v}_2)$ and $\mathrm{Sc}((ic\,e_0+\mathbf{v}_1)\cdot(ic\,e_0-\mathbf{v}_2)) = -c^2 + \mathbf{v}_1\cdot\mathbf{v}_2$. The result is frame-independent because it is built from the invariant biquaternion norm, as it must be.
 
 ### The Inequality That Makes the Barrier
 
@@ -293,7 +293,7 @@ $$
 
 A finite composition of boosts has a finite total rapidity $\psi_1+\cdots+\psi_n$, hence a speed strictly below $c$; to reach the cone one would need an infinite rapidity, and no finite sequence of subluminal operations supplies it. This is the sense in which the light cone lies at infinity in the group parameter. The barrier is not a ceiling that a process approaches and stops at; it is a limit that is approached but never attained, and the group is non-compact precisely because its boost parameter is unbounded. The check is elementary: composing the subluminal speed $\beta = 0.9$ with itself $n$ times in the hyperbolic sense gives $\beta_n = \tanh(n\,\mathrm{atanh}\,0.9)$, for which $1-\beta_n \approx 2e^{-2n\,\mathrm{atanh}\,0.9}$; at $n = 5$ the deficit is $8.08\times10^{-7}$, at $n = 10$ it is $3.26\times10^{-13}$, and it remains positive for every finite $n$, becoming indistinguishable from zero in double precision only when the deficit falls below the representable range, near $n = 13$.
 
-The same bound appears in the contraction of a null wavevector with an observer, treated in the companion article *Exercise: The Relativistic Doppler Effect*: the measured frequency $-\mathrm{Sc}(\tilde{K}\bar{\tilde{U}})$ is strictly positive for every future timelike $\tilde{U}$ and every future null $\tilde{K}$, so a light signal cannot be brought to zero frequency by a change of observer. The impossibility of bringing that contraction to zero, the impossibility of closing the relative-velocity deficit, and the vanishing of $N(\tilde{K})$ are three faces of the same cone.
+The same bound appears in the contraction of a null wavevector with an observer, treated in the companion article *Exercise: The Relativistic Doppler Effect*: the measured frequency $-\mathrm{Sc}(\tilde{K}\tilde{U}^{\natural})$ is strictly positive for every future timelike $\tilde{U}$ and every future null $\tilde{K}$, so a light signal cannot be brought to zero frequency by a change of observer. The impossibility of bringing that contraction to zero, the impossibility of closing the relative-velocity deficit, and the vanishing of $N(\tilde{K})$ are three faces of the same cone.
 
 ### The Boundary of the Theorem: a Constant Rapidity
 
@@ -306,12 +306,12 @@ The barrier has an analytic form, and it is the form in which the algebra itself
 $$
 \tilde{\nabla} = e_0\,\partial_{ict} + \nabla,
 \qquad
-\bar{\tilde{\nabla}} = e_0\,\partial_{ict} - \nabla,
+\tilde{\nabla}^{\natural} = e_0\,\partial_{ict} - \nabla,
 \qquad
-\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta = \Delta - \frac{1}{c^2}\partial_t^2,
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta = \Delta - \frac{1}{c^2}\partial_t^2,
 $$
 
-the series' d'Alembertian. For a wave whose phase is the scalar $s = \mathrm{Sc}(\tilde{K}\bar{\tilde{Q}}) = -\omega t + \mathbf{k}\cdot\mathbf{x}$, the chain rule gives the corpus identity
+the series' d'Alembertian. For a wave whose phase is the scalar $s = \mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = -\omega t + \mathbf{k}\cdot\mathbf{x}$, the chain rule gives the corpus identity
 
 $$
 \Box f(s) = N(\tilde{K})\,f''(s),
@@ -331,10 +331,10 @@ $$
 p \preceq q \quad\Longleftrightarrow\quad f(p) \preceq f(q),
 $$
 
-is the composition of a Lorentz transformation, a translation, and a positive dilation. This is the theorem of Aleksandrov and Zeeman; it is cited as a standard result of the causal structure of Minkowski space. In the biquaternion formulation the Lorentz part is the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ with $N(\tilde{\Lambda}) = e_0$, and the translation is the addition of a fixed displacement $\tilde{T} \in \mathbb{M}_-$:
+is the composition of a Lorentz transformation, a translation, and a positive dilation. This is the theorem of Aleksandrov and Zeeman; it is cited as a standard result of the causal structure of Minkowski space. In the biquaternion formulation the Lorentz part is the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $N(\tilde{\Lambda}) = e_0$, and the translation is the addition of a fixed displacement $\tilde{T} \in \mathbb{M}_-$:
 
 $$
-\tilde{Q} \;\longmapsto\; \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger + \tilde{T}.
+\tilde{Q} \;\longmapsto\; \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*} + \tilde{T}.
 $$
 
 The theorem says that the cone, together with the time orientation, determines the allowed transformations up to these two operations. Nothing beyond the causal order is needed to recover the kinematics of the frame changes; the barrier is not only preserved by the relativity group, it characterizes it.
@@ -381,21 +381,21 @@ The conventions and the results taken over from the relativity series are those 
 
 ## Summary
 
-The causal structure of the material sector $\mathbb{M}_-$ is the structure of the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ and of its vanishing set, the light cone.
+The causal structure of the material sector $\mathbb{M}_-$ is the structure of the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ and of its vanishing set, the light cone.
 
 1. **The interval and its sign.** For the displacement $\tilde{Q}_{qp} = ic\,\Delta t\,e_0 + \Delta\mathbf{x}$, the interval is $N(\tilde{Q}_{qp}) = -c^2(\Delta t)^2 + |\Delta\mathbf{x}|^2$, and its sign divides Minkowski space into the spacelike, null and timelike regions. The null set is the light cone, which the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* identifies with the material-sector part of the zero-divisor set of the algebra.
 
 2. **The causal order.** The relation $p \preceq q$, defined by $N(\tilde{Q}_{qp}) \le 0$ with $\Delta t \ge 0$, is a partial order. Transitivity follows from the triangle inequality: a sum of future-directed nonspacelike displacements is future-directed nonspacelike, with equality in $N$ only for null segments that are parallel and equally oriented.
 
-3. **Invariance.** The biquaternion norm is invariant under the rotor conjugation, $N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger) = N(\tilde{Q})$ for $N(\tilde{\Lambda}) = e_0$, so the causal classes are invariant, and the invariant strata — the two sheets of the null cone, the two timelike sheets of a fixed biquaternion norm, and the spacelike region of that biquaternion norm — are the orbits of the restricted Lorentz group.
+3. **Invariance.** The biquaternion norm is invariant under the rotor conjugation, $N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}) = N(\tilde{Q})$ for $N(\tilde{\Lambda}) = e_0$, so the causal classes are invariant, and the invariant strata — the two sheets of the null cone, the two timelike sheets of a fixed biquaternion norm, and the spacelike region of that biquaternion norm — are the orbits of the restricted Lorentz group.
 
 4. **The topological barrier.** The complement of the cone has three connected components, and $N$ can change sign along a continuous path only at the cone. A continuous causal process therefore reaches the elsewhere only by leaving the cone.
 
-5. **The relative-velocity barrier.** The invariant contraction of two future timelike four-velocities satisfies $-\mathrm{Sc}(\tilde{U}_1\bar{\tilde{U}}_2)/c^2 = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta) = \gamma_{\mathrm{rel}} \ge 1$, with equality only for equal velocities; the relative speed is strictly below $c$.
+5. **The relative-velocity barrier.** The invariant contraction of two future timelike four-velocities satisfies $-\mathrm{Sc}(\tilde{U}_1\tilde{U}^{\natural}_2)/c^2 = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta) = \gamma_{\mathrm{rel}} \ge 1$, with equality only for equal velocities; the relative speed is strictly below $c$.
 
 6. **The rapidity barrier.** Boosts compose additively in rapidity, $\beta = \tanh\psi$, so the barrier $\beta = 1$ lies at $\psi = \infty$ and is attained by no finite composition.
 
-7. **The analytic barrier.** The cone is the characteristic cone of $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$, and the standard finite-speed-of-propagation theorem confines the support of a solution to the causal future of its source.
+7. **The analytic barrier.** The cone is the characteristic cone of $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and the standard finite-speed-of-propagation theorem confines the support of a solution to the causal future of its source.
 
 8. **The uniqueness of the structure.** A causal bijection of Minkowski space is a Lorentz transformation composed with a translation, up to a positive dilation (Aleksandrov–Zeeman), so the cone and its time orientation characterize the relativity group rather than merely being preserved by it. The proper orthochronous component is the one realized by the rotor conjugation, and it preserves the time orientation.
 
@@ -411,23 +411,23 @@ The information-theoretic reading is that $J^+(p)$ is the set of events that $p$
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
-| $\bar{\tilde{Q}}, \tilde{Q}^* , \tilde{Q}^\dagger = \bar{\tilde{Q}}^{*}$ | Quaternion, complex and Hermitian conjugation |
+| $\tilde{Q}^{\natural}, \bar{\tilde{Q}} , \tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} | Quaternion, complex and Hermitian conjugation |
 | $\tilde{Q} = ic\,t\,e_0 + \mathbf{x}$ | Material four-position |
 | $\tilde{Q}_{qp} = \tilde{Q}_q - \tilde{Q}_p$ | Displacement from $p$ to $q$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm; the interval on $\mathbb{M}_-$ |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm; the interval on $\mathbb{M}_-$ |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict$-coordinate metric |
 | $\mathrm{Sc}$ | Scalar projection of a biquaternion |
 | $\mathcal{Z}$ | Light cone: the $N=0$ locus of $\mathbb{M}_-$, the material-sector part of the zero-divisor set of $\mathbb{B}$ |
 | $p \preceq q$ | Causal order: $N(\tilde{Q}_{qp})\le 0$ and $\Delta t\ge 0$ |
 | $J^+(p)$, $J^-(p)$, $E(p)$ | Causal future, causal past, and elsewhere of $p$ |
 | $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$, $N(\tilde{\Lambda})=e_0$ | Boost rotor (unit-norm biquaternion) |
-| $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ | Rotor conjugation |
+| $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation |
 | $\tilde{U} = \gamma(ic\,e_0+\mathbf{v})$, $N(\tilde{U})=-c^2$ | Four-velocity |
 | $\beta = |\mathbf{v}|/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |
 | $\psi$, $\tanh\psi=\beta$ | Rapidity |
-| $\gamma_{\mathrm{rel}} = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta)$ | Relative Lorentz factor, $= -\mathrm{Sc}(\tilde{U}_1\bar{\tilde{U}}_2)/c^2$ |
-| $\tilde{\nabla}, \bar{\tilde{\nabla}}$ | Biquaternionic gradient and its conjugate |
-| $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2+\Delta$ | d'Alembertian, series convention |
+| $\gamma_{\mathrm{rel}} = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta)$ | Relative Lorentz factor, $= -\mathrm{Sc}(\tilde{U}_1\tilde{U}^{\natural}_2)/c^2$ |
+| $\tilde{\nabla}, \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its conjugate |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2+\Delta$ | d'Alembertian, series convention |
 | $SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_0\}$ | Restricted Lorentz group |
 
 ## Further Reading

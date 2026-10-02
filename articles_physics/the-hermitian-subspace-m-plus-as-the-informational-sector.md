@@ -19,10 +19,10 @@ The conventions are those of the companion articles. The biquaternion algebra is
 The **Hermitian subspace** $\mathbb{M}_+$ is the fixed-point set of the Hermitian conjugation:
 
 $$
-\mathbb{M}_+ = \{\tilde{Q} \in \mathbb{B} : \tilde{Q}^\dagger = \tilde{Q}\},
+\mathbb{M}_+ = \{\tilde{Q} \in \mathbb{B} : \tilde{Q}^{*} = \tilde{Q}\},
 $$
 
-where $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$. Explicitly, a biquaternion is in $\mathbb{M}_+$ if and only if it has the form
+where $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$. Explicitly, a biquaternion is in $\mathbb{M}_+$ if and only if it has the form
 
 $$
 \tilde{Q} = q_0\,e_0 + i q'_1\,e_1 + i q'_2\,e_2 + i q'_3\,e_3, \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R}.
@@ -51,10 +51,10 @@ As a real vector space, $\mathbb{M}_+$ has dimension $4$. It is **not** a subalg
 The subspace is the fixed space of the **Hermitian conjugation**
 
 $$
-\tilde{Q}^\dagger = \bar{\tilde{Q}}^{\,*},
+\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}},
 $$
 
-which is an involution: applying it twice returns the original element, $(\tilde{Q}^\dagger)^\dagger = \tilde{Q}$. Write the general biquaternion out in full, with the real and the imaginary part of each of its four coefficients,
+which is an involution: applying it twice returns the original element, $(\tilde{Q}^{*})^{*} = \tilde{Q}$. Write the general biquaternion out in full, with the real and the imaginary part of each of its four coefficients,
 
 $$
 \tilde{Q} = (q_0 + iq'_0)\,e_0 + (q_1 + iq'_1)\,e_1 + (q_2 + iq'_2)\,e_2 + (q_3 + iq'_3)\,e_3, \qquad q_\mu, q'_\mu \in \mathbb{R}.
@@ -63,23 +63,23 @@ $$
 Quaternion conjugation negates the three vector units and leaves the unit, the scalar imaginary, and every coefficient untouched,
 
 $$
-\bar{\tilde{Q}} = (q_0 + iq'_0)\,e_0 - (q_1 + iq'_1)\,e_1 - (q_2 + iq'_2)\,e_2 - (q_3 + iq'_3)\,e_3,
+\tilde{Q}^{\natural} = (q_0 + iq'_0)\,e_0 - (q_1 + iq'_1)\,e_1 - (q_2 + iq'_2)\,e_2 - (q_3 + iq'_3)\,e_3,
 $$
 
 and complex conjugation then replaces $i$ by $-i$ throughout, leaving the quaternion units fixed, so that
 
 $$
-\tilde{Q}^\dagger = \bar{\tilde{Q}}^{\,*} = (q_0 - iq'_0)\,e_0 - (q_1 - iq'_1)\,e_1 - (q_2 - iq'_2)\,e_2 - (q_3 - iq'_3)\,e_3 ,
+\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = (q_0 - iq'_0)\,e_0 - (q_1 - iq'_1)\,e_1 - (q_2 - iq'_2)\,e_2 - (q_3 - iq'_3)\,e_3 ,
 $$
 
 so that the scalar coefficient is negated in its imaginary part and each vector coefficient in its real part. Coordinate by coordinate,
 
 | | $q_0$ | $q'_0$ | $q_1$ | $q'_1$ | $q_2$ | $q'_2$ | $q_3$ | $q'_3$ |
 |---|---|---|---|---|---|---|---|---|
-| image under $\dagger$ | $q_0$ | $-q'_0$ | $-q_1$ | $q'_1$ | $-q_2$ | $q'_2$ | $-q_3$ | $q'_3$ |
-| $\tilde{Q}^\dagger = \tilde{Q}$ requires | free | $q'_0 = 0$ | $q_1 = 0$ | free | $q_2 = 0$ | free | $q_3 = 0$ | free |
+| image under ${}^{*}$ | $q_0$ | $-q'_0$ | $-q_1$ | $q'_1$ | $-q_2$ | $q'_2$ | $-q_3$ | $q'_3$ |
+| $\tilde{Q}^{*} = \tilde{Q}$ requires | free | $q'_0 = 0$ | $q_1 = 0$ | free | $q_2 = 0$ | free | $q_3 = 0$ | free |
 
-**The fixed space.** The two sides of $\tilde{Q}^\dagger = \tilde{Q}$ must agree in each of the four units $e_0, e_1, e_2, e_3$, and within a unit they must agree separately in the real and the imaginary part. That is four complex conditions, hence eight real ones, and they read
+**The fixed space.** The two sides of $\tilde{Q}^{*} = \tilde{Q}$ must agree in each of the four units $e_0, e_1, e_2, e_3$, and within a unit they must agree separately in the real and the imaginary part. That is four complex conditions, hence eight real ones, and they read
 
 $$
 q_0 - iq'_0 = q_0 + iq'_0 \iff q'_0 = 0, \qquad
@@ -89,17 +89,17 @@ $$
 the first from the scalar unit and the remaining three from the vector units. The solutions are the elements with $q'_0 = 0$ and $q_1 = q_2 = q_3 = 0$, that is,
 
 $$
-\tilde{Q}^\dagger = \tilde{Q} \iff \tilde{Q} = q_0\,e_0 + iq'_1\,e_1 + iq'_2\,e_2 + iq'_3\,e_3 .
+\tilde{Q}^{*} = \tilde{Q} \iff \tilde{Q} = q_0\,e_0 + iq'_1\,e_1 + iq'_2\,e_2 + iq'_3\,e_3 .
 $$
 
-**Conversely**, every element of this form is fixed. For such an element $\bar{\tilde{Q}} = q_0\,e_0 - iq'_1\,e_1 - iq'_2\,e_2 - iq'_3\,e_3$, hence $\tilde{Q}^\dagger = \bar{\tilde{Q}}^{\,*} = q_0\,e_0 + iq'_1\,e_1 + iq'_2\,e_2 + iq'_3\,e_3 = \tilde{Q}$. The two directions together say that the displayed set is *exactly* the fixed space. The coordinates that survive are the four $q_0, q'_1, q'_2, q'_3$, which is the parametrisation recorded above: the scalar coefficient is real, the three vector coefficients are purely imaginary, and the fixed space is this four-dimensional real subspace, carved out of the eight real coordinates by the four $\mathbb{R}$-linear equations $q'_0 = 0$ and $q_k = 0$.
+**Conversely**, every element of this form is fixed. For such an element $\tilde{Q}^{\natural} = q_0\,e_0 - iq'_1\,e_1 - iq'_2\,e_2 - iq'_3\,e_3$, hence $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = q_0\,e_0 + iq'_1\,e_1 + iq'_2\,e_2 + iq'_3\,e_3 = \tilde{Q}$. The two directions together say that the displayed set is *exactly* the fixed space. The coordinates that survive are the four $q_0, q'_1, q'_2, q'_3$, which is the parametrisation recorded above: the scalar coefficient is real, the three vector coefficients are purely imaginary, and the fixed space is this four-dimensional real subspace, carved out of the eight real coordinates by the four $\mathbb{R}$-linear equations $q'_0 = 0$ and $q_k = 0$.
 
 ### Properties
 
 **Quadratic form.** The biquaternion **biquaternion norm** restricts to a real quadratic form on $\mathbb{M}_+$:
 
 $$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = q_0^2 + (iq'_1)^2 + (iq'_2)^2 + (iq'_3)^2 = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2 = c^2(t')^2 - (x')^2 - (y')^2 - (z')^2.
+N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = q_0^2 + (iq'_1)^2 + (iq'_2)^2 + (iq'_3)^2 = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2 = c^2(t')^2 - (x')^2 - (y')^2 - (z')^2.
 $$
 
 This is a real quadratic form of **signature** $(1,3)$: one positive direction (the temporal one, whose coordinate is $ct'$) and three negative directions (the vector components $q'_1, q'_2, q'_3$). The single positive direction is the temporal one, so the form is Lorentzian with a distinguished timelike axis in the sector's own coordinates.
@@ -130,7 +130,7 @@ In this reading:
 
 - A **state** of the informational sector is an element $\tilde{\rho} \in \mathbb{M}_+$ that is Hermitian, positive, and of trace one.
 - An **observable** of the informational sector is a general Hermitian element $\tilde{Q} \in \mathbb{M}_+$.
-- **Evolution** is generated by rotor conjugation $\tilde{\rho} \mapsto \tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^\dagger$, with $\tilde{\Lambda}$ a unit-norm biquaternion.
+- **Evolution** is generated by rotor conjugation $\tilde{\rho} \mapsto \tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^{*}$, with $\tilde{\Lambda}$ a unit-norm biquaternion.
 - **Measurement** is the idempotent projection $\tilde{\rho} \mapsto \tilde{P}\tilde{\rho}\tilde{P}$.
 - **Expectation values** are given by the trace formula $2\,\mathrm{Sc}(\tilde{\rho}\tilde{Q})$.
 
@@ -173,7 +173,7 @@ The hypothesis raises several concrete questions. We list them here as a researc
 
 **1. Physical reality of the informational sector.** Is $\mathbb{M}_+$ realised physically as a distinct sector, or is it only a mathematical structure that happens to describe the kinematics of a qubit? A genuine physical realisation would require a coupling to the material sector that has observable consequences.
 
-**2. The dynamics of the informational sector.** Beyond the standard quantum dynamics of the operator algebra, does $\mathbb{M}_+$ have its own dynamics as a sector? Are there $\mathbb{M}_+$-valued fields with wave equations? The biquaternion operators $\tilde{\nabla}$, $\bar{\tilde{\nabla}}$, and $\Box$ are available, but it is not clear which (if any) governs $\mathbb{M}_+$-valued fields.
+**2. The dynamics of the informational sector.** Beyond the standard quantum dynamics of the operator algebra, does $\mathbb{M}_+$ have its own dynamics as a sector? Are there $\mathbb{M}_+$-valued fields with wave equations? The biquaternion operators $\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$, and $\Box$ are available, but it is not clear which (if any) governs $\mathbb{M}_+$-valued fields.
 
 **3. The coupling between the two sectors.** Beyond the Lorentz coupling via the rotor conjugation, is there a genuinely new coupling between $\mathbb{M}_+$ and $\mathbb{M}_-$? A new coupling would require an equation or a field that mixes the two sectors in a non-trivial way.
 
@@ -196,27 +196,27 @@ These questions are open, and they constitute the research program associated wi
 The most important structural fact about $\mathbb{M}_+$ is that its elements **act** on the elements of $\mathbb{M}_-$ by **conjugation**:
 
 $$
-\tilde{Q}_- \;\longmapsto\; \tilde{Q}_+\,\tilde{Q}_-\,\tilde{Q}_+^\dagger, \qquad \tilde{Q}_+ \in \mathbb{M}_+, \; \tilde{Q}_- \in \mathbb{M}_-.
+\tilde{Q}_- \;\longmapsto\; \tilde{Q}_+\,\tilde{Q}_-\,\tilde{Q}_+^{*}, \qquad \tilde{Q}_+ \in \mathbb{M}_+, \; \tilde{Q}_- \in \mathbb{M}_-.
 $$
 
 ### Basic Properties of the Action
 
-**1. The image is in $\mathbb{M}_-$.** If $\tilde{Q}_-^\dagger = -\tilde{Q}_-$ (anti-Hermitian) and $\tilde{Q}_+^\dagger = \tilde{Q}_+$ (Hermitian), then
+**1. The image is in $\mathbb{M}_-$.** If $\tilde{Q}_-^{*} = -\tilde{Q}_-$ (anti-Hermitian) and $\tilde{Q}_+^{*} = \tilde{Q}_+$ (Hermitian), then
 
 $$
-(\tilde{Q}_+\tilde{Q}_-\tilde{Q}_+^\dagger)^\dagger = \tilde{Q}_+^{\dagger\dagger}\tilde{Q}_-^\dagger\tilde{Q}_+^\dagger = \tilde{Q}_+(-\tilde{Q}_-)\tilde{Q}_+^\dagger = -\tilde{Q}_+\tilde{Q}_-\tilde{Q}_+^\dagger,
+(\tilde{Q}_+\tilde{Q}_-\tilde{Q}_+^\dagger)^{*} = (\tilde{Q}_+^{*})^{*}\tilde{Q}_-^{*}\tilde{Q}_+^{*} = \tilde{Q}_+(-\tilde{Q}_-)\tilde{Q}_+^{*} = -\tilde{Q}_+\tilde{Q}_-\tilde{Q}_+^{*},
 $$
 
 so the image is anti-Hermitian, i.e., in $\mathbb{M}_-$. The action maps the material space to itself.
 
 **2. The action is linear in $\tilde{Q}_-$.** This follows from the bilinearity of the biquaternion product.
 
-**3. The action preserves the biquaternion norm when $\tilde{Q}_+$ has unit norm.** If $\tilde{Q}_+\bar{\tilde{Q}}_+ = e_0$ — for example a boost biquaternion, or any element of $SL(2,\mathbb{C})$ — then the action preserves $N(\tilde{Q}_-) = \tilde{Q}_-\bar{\tilde{Q}}_-$: by multiplicativity of the biquaternion norm, $N(\tilde{Q}_+\tilde{Q}_-\tilde{Q}_+^\dagger) = N(\tilde{Q}_+)N(\tilde{Q}_-)N(\tilde{Q}_+)^* = N(\tilde{Q}_-)$ when $N(\tilde{Q}_+) = 1$. This is the biquaternion expression of the Lorentz invariance of the Minkowski interval. The condition is on the biquaternion norm and not on $\tilde{Q}_+\tilde{Q}_+^\dagger$: a boost biquaternion is Hermitian, so $\tilde{Q}_+\tilde{Q}_+^\dagger = \tilde{Q}_+^2 = \cosh\tfrac{\psi}{2} + i\sinh\tfrac{\psi}{2}\,\hat{\mathbf{u}} \neq e_0$, and only the rotation rotors satisfy $\tilde{Q}\tilde{Q}^\dagger = e_0$.
+**3. The action preserves the biquaternion norm when $\tilde{Q}_+$ has unit norm.** If $\tilde{Q}_+\tilde{Q}^{\natural}_+ = e_0$ — for example a boost biquaternion, or any element of $SL(2,\mathbb{C})$ — then the action preserves $N(\tilde{Q}_-) = \tilde{Q}_-\tilde{Q}^{\natural}_-$: by multiplicativity of the biquaternion norm, $N(\tilde{Q}_+\tilde{Q}_-\tilde{Q}_+^{*}) = N(\tilde{Q}_+)N(\tilde{Q}_-)N(\tilde{Q}_+)^* = N(\tilde{Q}_-)$ when $N(\tilde{Q}_+) = 1$. This is the biquaternion expression of the Lorentz invariance of the Minkowski interval. The condition is on the biquaternion norm and not on $\tilde{Q}_+\tilde{Q}_+^{*}$: a boost biquaternion is Hermitian, so $\tilde{Q}_+\tilde{Q}_+^{*} = \tilde{Q}_+^2 = \cosh\tfrac{\psi}{2} + i\sinh\tfrac{\psi}{2}\,\hat{\mathbf{u}} \neq e_0$, and only the rotation rotors satisfy $\tilde{Q}\tilde{Q}^{*} = e_0$.
 
 **4. The action is a group action.** Compositions of actions compose:
 
 $$
-\tilde{Q}_{+2}\bigl(\tilde{Q}_{+1}\tilde{Q}_-\tilde{Q}_{+1}^\dagger\bigr)\tilde{Q}_{+2}^\dagger = (\tilde{Q}_{+2}\tilde{Q}_{+1})\,\tilde{Q}_-\,(\tilde{Q}_{+2}\tilde{Q}_{+1})^\dagger.
+\tilde{Q}_{+2}\bigl(\tilde{Q}_{+1}\tilde{Q}_-\tilde{Q}_{+1}^{*}\bigr)\tilde{Q}_{+2}^{*} = (\tilde{Q}_{+2}\tilde{Q}_{+1})\,\tilde{Q}_-\,(\tilde{Q}_{+2}\tilde{Q}_{+1})^{*}.
 $$
 
 ### The Structural Relation: Operators and States
@@ -232,7 +232,7 @@ This is the algebraic content of the reading of $\mathbb{M}_+$ as "informational
 
 The elements of $\mathbb{M}_+$ include two important classes.
 
-**Unit-norm elements** ($\tilde{Q}\bar{\tilde{Q}} = e_0$, i.e. $\tilde{Q} \in SL(2,\mathbb{C})$). These preserve the biquaternion norm and act by **reversible** transformations. Examples: the boost biquaternions $\tilde{\Lambda}$ and the spatial rotation rotors. These correspond to Lorentz transformations. The stronger condition $\tilde{Q}\tilde{Q}^\dagger = e_0$ is satisfied by the rotation rotors, which are real quaternions, but not by the boosts.
+**Unit-norm elements** ($\tilde{Q}\tilde{Q}^{\natural} = e_0$, i.e. $\tilde{Q} \in SL(2,\mathbb{C})$). These preserve the biquaternion norm and act by **reversible** transformations. Examples: the boost biquaternions $\tilde{\Lambda}$ and the spatial rotation rotors. These correspond to Lorentz transformations. The stronger condition $\tilde{Q}\tilde{Q}^{*} = e_0$ is satisfied by the rotation rotors, which are real quaternions, but not by the boosts.
 
 **Idempotent elements** ($\tilde{Q}^2 = \tilde{Q}$). These do not preserve the biquaternion norm (unless $\tilde{Q} = e_0$). They act by **irreversible** projections: $\tilde{Q}_- \mapsto \tilde{P}\tilde{Q}_-\tilde{P}$. Examples: the pure-state projectors $\tilde\Pi_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$. These correspond to quantum-mechanical measurements.
 
@@ -268,7 +268,7 @@ The mathematics of $\mathbb{M}_+$ and its action on $\mathbb{M}_-$ is **structur
 | Observable (Hermitian operator) | Hermitian element $\tilde{Q} \in \mathbb{M}_+$ |
 | Unitary gate $U$ | Unit-norm element $\tilde{\Lambda}$ of $SL(2,\mathbb{C})$ |
 | Expectation value $\mathrm{Tr}(\rho H)$ | Trace formula $2\,\mathrm{Sc}(\tilde{\rho}\tilde{Q})$ |
-| Reversible evolution $U\rho U^\dagger$ | Rotor conjugation $\tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^\dagger$ |
+| Reversible evolution $U\rho U^\dagger$ | Rotor conjugation $\tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^{*}$ |
 | Projective measurement $\rho \mapsto P\rho P$ | Idempotent projection $\tilde{\rho} \mapsto \tilde{P}\tilde{\rho}\tilde{P}$ |
 
 The correspondence is not an analogy. **It is the same mathematics**, expressed in two different notations: the Hermitian elements of the algebra are the operators of a two-state system.
@@ -307,9 +307,9 @@ $$
 \tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat{\mathbf{u}}, \qquad \hat{\mathbf{u}}^2 = -e_0,
 $$
 
-lies in $\mathbb{M}_+$: its scalar part $\cosh(\psi/2)$ is real, and its vector part $i\sinh(\psi/2)\hat{\mathbf{u}}$ is purely imaginary. It is Hermitian ($\tilde{\Lambda}^\dagger = \tilde{\Lambda}$) and has unit norm ($\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$). It acts on $\mathbb{M}_-$ by rotor conjugation, implementing a Lorentz boost.
+lies in $\mathbb{M}_+$: its scalar part $\cosh(\psi/2)$ is real, and its vector part $i\sinh(\psi/2)\hat{\mathbf{u}}$ is purely imaginary. It is Hermitian ($\tilde{\Lambda}^{*} = \tilde{\Lambda}$) and has unit norm ($\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$). It acts on $\mathbb{M}_-$ by rotor conjugation, implementing a Lorentz boost.
 
-The boost biquaternion is a distinguished element of $\mathbb{M}_+$, and it is the **prototype** of an operator acting on the material sector $\mathbb{M}_-$. More generally, every unit-norm biquaternion $\tilde{\Lambda} \in \mathbb{B}$ acts on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$. For pure boosts, $\tilde{\Lambda}$ lies in $\mathbb{M}_+$. For pure spatial rotations, $\tilde{\Lambda}$ lies in $\mathbb{H}_{\mathbb{B}}$. For general Lorentz transformations, $\tilde{\Lambda}$ is a general unit-norm biquaternion in $\mathbb{B}$. The point is that the action of any such rotor on $\mathbb{M}_-$ preserves $\mathbb{M}_-$.
+The boost biquaternion is a distinguished element of $\mathbb{M}_+$, and it is the **prototype** of an operator acting on the material sector $\mathbb{M}_-$. More generally, every unit-norm biquaternion $\tilde{\Lambda} \in \mathbb{B}$ acts on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$. For pure boosts, $\tilde{\Lambda}$ lies in $\mathbb{M}_+$. For pure spatial rotations, $\tilde{\Lambda}$ lies in $\mathbb{H}_{\mathbb{B}}$. For general Lorentz transformations, $\tilde{\Lambda}$ is a general unit-norm biquaternion in $\mathbb{B}$. The point is that the action of any such rotor on $\mathbb{M}_-$ preserves $\mathbb{M}_-$.
 
 ### The Idempotents
 
@@ -321,7 +321,7 @@ $$
 
 lie in $\mathbb{M}_+$: their scalar part $\tfrac{1}{2}$ is real, and their vector part $\pm \tfrac{1}{2} i \hat{\boldsymbol\mu}$ is purely imaginary. They satisfy:
 
-- **Hermitian:** $\tilde\Pi_\pm^\dagger = \tilde\Pi_\pm$, since $\tilde\Pi_\pm(\hat{\boldsymbol\mu}) \in \mathbb{M}_+$.
+- **Hermitian:** $\tilde\Pi_\pm^{*} = \tilde\Pi_\pm$, since $\tilde\Pi_\pm(\hat{\boldsymbol\mu}) \in \mathbb{M}_+$.
 - **Idempotent:** $\tilde\Pi_\pm^2 = \tilde\Pi_\pm$.
 - **Unit trace:** $\mathrm{Tr}(\tilde\Pi_\pm) = 2\,\mathrm{Sc}(\tilde\Pi_\pm) = 1$.
 
@@ -332,7 +332,7 @@ These are the biquaternion analogues of **pure-state density matrices** of quant
 For any biquaternion $\tilde{Q} \in \mathbb{B}$, the **Hermitian form**
 
 $$
-\tilde{Q}\tilde{Q}^\dagger
+\tilde{Q}\tilde{Q}^{*}
 $$
 
 is an element of $\mathbb{M}_+$: it is Hermitian by construction. Its scalar part is $\|\tilde{Q}\|_E^2 = \sum_\mu |Q_\mu|^2$, the Euclidean norm squared, which is non-negative.
@@ -349,15 +349,15 @@ The identity $e_0$ is trivially in $\mathbb{M}_+$. It corresponds to the trivial
 | Identity $e_0$ | Real scalar | Identity operator |
 | Boost biquaternion $\tilde{\Lambda}$ | Hermitian, unit norm | Lorentz boost rotor |
 | Idempotent $\tilde\Pi_\pm(\hat{\boldsymbol\mu})$ | Hermitian, idempotent, trace 1 | Pure state / projector |
-| Hermitian form $\tilde{Q}\tilde{Q}^\dagger$ | Hermitian, positive scalar part | Weight of a state |
+| Hermitian form $\tilde{Q}\tilde{Q}^{*}$ | Hermitian, positive scalar part | Weight of a state |
 
-The common feature of these objects is that they are **Hermitian** (fixed under $\dagger$). This is what defines membership in $\mathbb{M}_+$.
+The common feature of these objects is that they are **Hermitian** (fixed under ${}^{*}$). This is what defines membership in $\mathbb{M}_+$.
 
 ## Summary
 
-The Hermitian subspace $\mathbb{M}_+$ is a four-dimensional real subspace of the biquaternion algebra, consisting of elements with real scalar part and imaginary vector part. Its biquaternion norm has signature $(1,3)$, the temporal direction being the single positive one. It contains the identity, the boost biquaternions, the idempotents $\tilde\Pi_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$, and the Hermitian forms $\tilde{Q}\tilde{Q}^\dagger$.
+The Hermitian subspace $\mathbb{M}_+$ is a four-dimensional real subspace of the biquaternion algebra, consisting of elements with real scalar part and imaginary vector part. Its biquaternion norm has signature $(1,3)$, the temporal direction being the single positive one. It contains the identity, the boost biquaternions, the idempotents $\tilde\Pi_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$, and the Hermitian forms $\tilde{Q}\tilde{Q}^{*}$.
 
-The elements of $\mathbb{M}_+$ act on the material space $\mathbb{M}_-$ by conjugation: $\tilde{Q}_- \mapsto \tilde{Q}_+\tilde{Q}_-\,\tilde{Q}_+^\dagger$. The action is linear, preserves $\mathbb{M}_-$, and preserves the biquaternion norm when $\tilde{Q}_+$ has unit norm. The natural dichotomy between unit-norm and idempotent elements corresponds to the dichotomy between reversible evolution and irreversible measurement.
+The elements of $\mathbb{M}_+$ act on the material space $\mathbb{M}_-$ by conjugation: $\tilde{Q}_- \mapsto \tilde{Q}_+\tilde{Q}_-\,\tilde{Q}_+^{*}$. The action is linear, preserves $\mathbb{M}_-$, and preserves the biquaternion norm when $\tilde{Q}_+$ has unit norm. The natural dichotomy between unit-norm and idempotent elements corresponds to the dichotomy between reversible evolution and irreversible measurement.
 
 The mathematics of $\mathbb{M}_+$ is structurally identical to the mathematics of quantum information theory for a two-state system. The idempotents are pure-state density matrices, the Hermitian elements are observables, the unitary elements are gates, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{Q}) = 2\mathrm{Sc}(\tilde{P}\tilde{Q})$ is the Born rule. The structural correspondence is not an analogy: it is the same mathematics, expressed in the biquaternion algebra.
 
@@ -372,11 +372,11 @@ The **physical hypothesis** is that this mathematics reflects physics: that $\ma
 | $Q_\mu = q_\mu + iq'_\mu$ | Complex coefficient of $e_\mu$: $q_\mu$ its real part, $q'_\mu$ its imaginary part |
 | $\tilde{Q} = q_0e_0 + iq'_ke_k = (ct')\,e_0 + i\mathbf{x}'$ | Informational element, both writings; $q_0 = ct'$, $q'_k = x'_k$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
-| $\tilde{\Lambda} \in \mathbb{B}$, $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ | Lorentz rotor (unit-norm biquaternion) |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
+| $\tilde{\Lambda} \in \mathbb{B}$, $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ | Lorentz rotor (unit-norm biquaternion) |
 | $\tilde\Pi_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$ | Idempotent (pure-state projector) of unit trace |
 | $\tilde{Q}$ | General Hermitian element (observable) |
-| $\tilde{Q}_- \mapsto \tilde{Q}_+\tilde{Q}_-\,\tilde{Q}_+^\dagger$ | Conjugation action of $\mathbb{M}_+$ on $\mathbb{M}_-$ |
+| $\tilde{Q}_- \mapsto \tilde{Q}_+\tilde{Q}_-\,\tilde{Q}_+^{*}$ | Conjugation action of $\mathbb{M}_+$ on $\mathbb{M}_-$ |
 | $\tilde{Q}_+$, $\tilde{Q}_-$ | Hermitian element of $\mathbb{M}_+$ (operator) and anti-Hermitian element of $\mathbb{M}_-$ (acted upon); written $\tilde{Q}$ when only one element is in play |
 | $\mathrm{Tr}(\tilde{P}\tilde{Q}) = 2\mathrm{Sc}(\tilde{P}\tilde{Q})$ | Trace formula (Born rule) |
 | $SL(2,\mathbb{C})$ | Group of unit-norm biquaternions |

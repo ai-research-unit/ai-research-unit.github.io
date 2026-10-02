@@ -344,7 +344,7 @@ are the biquaternion analogues of holomorphic functions and harmonic functions. 
 The **Cauchy kernel** is the fundamental solution of the gradient:
 
 $$
-\tilde{G}(\tilde{Q}) = \frac{\bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4}, \qquad \tilde{Q} \neq 0.
+\tilde{G}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4}, \qquad \tilde{Q} \neq 0.
 $$
 
 It satisfies $\tilde{\nabla}\tilde{G} = 2\pi^2 \delta_0 e_0$ in the sense of distributions, where $\delta_0$ is the delta distribution at the origin.
@@ -443,7 +443,7 @@ Physically the developed part is exactly the part the framework needs. The Besse
 | $P_n, H_n, L_n$ | Legendre, Hermite and Laguerre polynomials (Chebyshev also treated) |
 | ${}_2F_1$ | Hypergeometric function |
 | $\Gamma, \zeta$ | Gamma and zeta functions |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 
 ## Further Reading
 

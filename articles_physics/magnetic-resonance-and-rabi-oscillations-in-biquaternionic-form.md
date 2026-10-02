@@ -76,7 +76,7 @@ which in the algebra is a product of unitaries in the limit of infinitesimal ste
 Define the rotating-frame state and observable by
 
 $$
-\psi_R(t) = \tilde{U}_R(t)^\dagger\,\psi(t),
+\psi_R(t) = \tilde{U}_R(t)^{*}\,\psi(t),
 \qquad
 \tilde{U}_R(t) = \exp\!\left(-\frac{\omega t}{2}e_3\right)
 = \cos\frac{\omega t}{2}\,e_0 - \sin\frac{\omega t}{2}\,e_3 .
@@ -85,7 +85,7 @@ $$
 The rotor $\tilde{U}_R$ is the Larmor rotor taken at the drive frequency $\omega$ rather than at $\omega_0$; it rotates the reference frame at the drive frequency. The Schrödinger equation $i\hbar\dot\psi = \tilde{H}\psi$ becomes $i\hbar\dot\psi_R = \tilde{H}_R\psi_R$ with
 
 $$
-\tilde{H}_R = \tilde{U}_R^\dagger\,\tilde{H}\,\tilde{U}_R - i\hbar\,\tilde{U}_R^\dagger\,\partial_t\tilde{U}_R .
+\tilde{H}_R = \tilde{U}_R^{*}\,\tilde{H}\,\tilde{U}_R - i\hbar\,\tilde{U}_R^{*}\,\partial_t\tilde{U}_R .
 $$
 
 The second term is the "fictitious" term produced by the time dependence of the frame; it is what makes the transformation a change of description rather than a mere relabelling.
@@ -95,10 +95,10 @@ The second term is the "fictitious" term produced by the time dependence of the 
 The three terms of $\tilde{H}$ transform as follows. The longitudinal term is proportional to $ie_3$, which commutes with the rotor, so it is unchanged. The transverse combination is rotated into a fixed direction: using the conjugation rule for a rotor about $e_3$, one finds
 
 $$
-\tilde{U}_R^\dagger\left(ie_1\cos\omega t - ie_2\sin\omega t\right)\tilde{U}_R = ie_1 ,
+\tilde{U}_R^{*}\left(ie_1\cos\omega t - ie_2\sin\omega t\right)\tilde{U}_R = ie_1 ,
 $$
 
-so the drive becomes a static transverse field. The fictitious term computes to $-i\hbar\tilde{U}_R^\dagger\partial_t\tilde{U}_R = +\tfrac{\hbar\omega}{2}ie_3$. Adding the three contributions,
+so the drive becomes a static transverse field. The fictitious term computes to $-i\hbar\tilde{U}_R^{*}\partial_t\tilde{U}_R = +\tfrac{\hbar\omega}{2}ie_3$. Adding the three contributions,
 
 $$
 \boxed{\;\tilde{H}_R = -\frac{\hbar}{2}\Big[(\omega_0-\omega)\,ie_3 + \omega_1\,ie_1\Big] \in \mathbb{M}_+ \;}
@@ -150,7 +150,7 @@ $$
 = \cos\frac{\tilde\Omega t}{2}\,e_0 - \sin\frac{\tilde\Omega t}{2}\;\frac{\omega_1 e_1 + \Delta e_3}{\tilde\Omega} .
 $$
 
-The exponent is a real quaternion, so $\tilde{R}\in\mathbb{H}_{\mathbb{B}}$ is a rotor and the rotation it generates is a spatial rotation of the Bloch vector about $\hat{n}_R$ at the rate $\tilde\Omega$. The state in the laboratory frame is $\tilde{\rho}(t) = \tilde{U}_R(t)\tilde{\rho}_R(t)\tilde{U}_R(t)^\dagger$, and the transition probability is the trace pairing with the fixed idempotent $\tilde\Pi_-(\hat{z})$. Restoring the frame rotor and evaluating the trace gives the standard result
+The exponent is a real quaternion, so $\tilde{R}\in\mathbb{H}_{\mathbb{B}}$ is a rotor and the rotation it generates is a spatial rotation of the Bloch vector about $\hat{n}_R$ at the rate $\tilde\Omega$. The state in the laboratory frame is $\tilde{\rho}(t) = \tilde{U}_R(t)\tilde{\rho}_R(t)\tilde{U}_R(t)^{*}$, and the transition probability is the trace pairing with the fixed idempotent $\tilde\Pi_-(\hat{z})$. Restoring the frame rotor and evaluating the trace gives the standard result
 
 $$
 P_{\downarrow}(t) = \mathrm{Tr}\!\left(\tilde\Pi_-(\hat{z})\,\tilde{\rho}(t)\right)
@@ -243,7 +243,7 @@ $$
 with $\omega_0 = \gamma B_0$ and $\omega_1 = \gamma B_1$. The transformation to the frame rotating with the drive is conjugation by the unit real quaternion $\tilde{U}_R(t) = \exp(-\tfrac{\omega t}{2}e_3)$, and it produces the static effective Hamiltonian
 
 $$
-\tilde{H}_R = \tilde{U}_R^\dagger\tilde{H}\tilde{U}_R - i\hbar\tilde{U}_R^\dagger\partial_t\tilde{U}_R
+\tilde{H}_R = \tilde{U}_R^{*}\tilde{H}\tilde{U}_R - i\hbar\tilde{U}_R^{*}\partial_t\tilde{U}_R
 = -\frac{\hbar}{2}\Big[(\omega_0-\omega)ie_3 + \omega_1 ie_1\Big].
 $$
 

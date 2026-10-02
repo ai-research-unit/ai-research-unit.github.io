@@ -7,7 +7,7 @@ The four distinguished subspaces of $\mathbb{H}_{\mathrm{s}}$ — the scalar lin
 
 Every number below — dimensions of intersections, of sums, and the entries of the tables — is derived from the definitions by comparison of coefficients, so the article doubles as an index of the four subspaces and of the coordinate blocks.
 
-**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$, and a general element $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation $\bar{\cdot}$, the principal involution $\alpha$ and the reversal $\rho$ are as in *Split-Quaternion Subspaces and the Involutions*, and $N$, $B$ are the split-quaternion norm and its polarisation.
+**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$, and a general element $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation ${}^{\natural}$, the principal involution $\alpha$ and the reversal $\rho$ are as in *Split-Quaternion Subspaces and the Involutions*, and $N$, $B$ are the split-quaternion norm and its polarisation.
 
 ## The Three Decompositions
 
@@ -15,7 +15,7 @@ Two of the three involutions split $\mathbb{H}_{\mathrm{s}}$ into distinguished 
 
 | involution | fixed space | anti-fixed space | decomposition |
 |---|---|---|---|
-| $\bar{\cdot}$ | $S = \mathbb{R}\cdot 1$ | $V = \operatorname{span}\{e_1,e_2,e_3\}$ | $\mathbb{H}_{\mathrm{s}} = S \oplus V$ |
+| ${}^{\natural}$ | $S = \mathbb{R}\cdot 1$ | $V = \operatorname{span}\{e_1,e_2,e_3\}$ | $\mathbb{H}_{\mathrm{s}} = S \oplus V$ |
 | $\alpha$ | $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ | $\operatorname{span}\{e_1,e_2\}$ | $\mathbb{H}_{\mathrm{s}} = \mathbb{D}_3 \oplus \operatorname{span}\{e_1,e_2\}$ |
 | $\rho$ | $\operatorname{span}\{1,e_1,e_2\}$ | $\mathbb{R} e_3$ | $\mathbb{H}_{\mathrm{s}} = \operatorname{span}\{1,e_1,e_2\} \oplus \mathbb{R} e_3$ |
 
@@ -25,8 +25,8 @@ The three decompositions are the **scalar–vector** decomposition, and the two 
 
 | subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ | subalgebra | norm |
 |---|---|---|---|---|---|
-| $S$ | $\bar{\tilde q} = \tilde q$ | $1$ | $1$ | yes, $\cong \mathbb{R}$ | $q_0^2$, positive definite |
-| $V$ | $\bar{\tilde q} = -\tilde q$ | $e_1,e_2,e_3$ | $3$ | no (Lie) | $q_1^2-q_2^2-q_3^2$, signature $(2,1)$ |
+| $S$ | $\tilde{q}^{\natural} = \tilde q$ | $1$ | $1$ | yes, $\cong \mathbb{R}$ | $q_0^2$, positive definite |
+| $V$ | $\tilde{q}^{\natural} = -\tilde q$ | $e_1,e_2,e_3$ | $3$ | no (Lie) | $q_1^2-q_2^2-q_3^2$, signature $(2,1)$ |
 | $\mathbb{D}_2$ | closed under products of $1, e_2$ | $1,e_2$ | $2$ | yes, $\cong \mathbb{D}$ | $q_0^2-q_2^2$, signature $(1,1)$ |
 | $\mathbb{D}_3$ | $\alpha(\tilde q) = \tilde q$ | $1,e_3$ | $2$ | yes, $\cong \mathbb{D}$ | $q_0^2-q_3^2$, signature $(1,1)$ |
 
@@ -98,11 +98,11 @@ Each involution preserves each of the four subspaces, and its restriction to a s
 
 | involution | $S$ | $V$ | $\mathbb{D}_2$ | $\mathbb{D}_3$ |
 |---|---|---|---|---|
-| $\bar{\cdot}$ | $0$ of $1$ | $3$ of $3$ | $1$ of $2$ | $1$ of $2$ |
+| ${}^{\natural}$ | $0$ of $1$ | $3$ of $3$ | $1$ of $2$ | $1$ of $2$ |
 | $\alpha$ | $0$ of $1$ | $2$ of $3$ | $1$ of $2$ | $0$ of $2$ |
 | $\rho$ | $0$ of $1$ | $1$ of $3$ | $0$ of $2$ | $1$ of $2$ |
 
-The vanishing rows are the definitions: $\bar{\cdot}$ acts as the identity exactly on $S$, $\alpha$ exactly on $\mathbb{D}_3$, and $\rho$ exactly on $\operatorname{span}\{1,e_1,e_2\} \supset \mathbb{D}_2$. The full multiplicities give the anti-fixed spaces: $\bar{\cdot}$ negates all of $V$, $\alpha$ negates the plane $\operatorname{span}\{e_1,e_2\}$, and $\rho$ negates the line $\mathbb{R} e_3$. The remaining entries are mixed restrictions. The composition rule $\bar{\cdot} = \alpha\rho$ is visible row by row: the coordinates negated by $\bar{\cdot}$ are exactly those negated by one of $\alpha, \rho$ but not both, so the multiplicities compose by symmetric difference.
+The vanishing rows are the definitions: ${}^{\natural}$ acts as the identity exactly on $S$, $\alpha$ exactly on $\mathbb{D}_3$, and $\rho$ exactly on $\operatorname{span}\{1,e_1,e_2\} \supset \mathbb{D}_2$. The full multiplicities give the anti-fixed spaces: ${}^{\natural}$ negates all of $V$, $\alpha$ negates the plane $\operatorname{span}\{e_1,e_2\}$, and $\rho$ negates the line $\mathbb{R} e_3$. The remaining entries are mixed restrictions. The composition rule ${}^{\natural} = \alpha\rho$ is visible row by row: the coordinates negated by ${}^{\natural}$ are exactly those negated by one of $\alpha, \rho$ but not both, so the multiplicities compose by symmetric difference.
 
 ## How the Product and the Commutator Act
 
@@ -149,7 +149,7 @@ The commutator table is the antisymmetrisation of this one: it vanishes on the d
 
 **Example (a product that leaves its subspace).** $e_2 \in \mathbb{D}_2$ and $e_3 \in V$; their product is $e_2 e_3 = -e_1 \notin \mathbb{D}_2$ and $\notin \mathbb{D}_3$ (indeed $e_1 \in V$), consistent with the entry $\mathbb{H}_{\mathrm{s}}$ in the product table.
 
-**Example (a mixed element and its blocks).** For $\tilde q = 2 + 3e_1 - e_2 + 4e_3$ the scalar block is $2$, the vector block is $3e_1 - e_2 + 4e_3$, and the split-complex readings are $2 - e_2 + 4e_3$ in $\mathbb{D}_2$ and $2 + 3e_1 + 4e_3$ modulo the complementary block; the involution images are $\bar{\tilde q} = 2 - 3e_1 + e_2 - 4e_3$, $\alpha(\tilde q) = 2 - 3e_1 + e_2 + 4e_3$, $\rho(\tilde q) = 2 + 3e_1 - e_2 - 4e_3$.
+**Example (a mixed element and its blocks).** For $\tilde q = 2 + 3e_1 - e_2 + 4e_3$ the scalar block is $2$, the vector block is $3e_1 - e_2 + 4e_3$, and the split-complex readings are $2 - e_2 + 4e_3$ in $\mathbb{D}_2$ and $2 + 3e_1 + 4e_3$ modulo the complementary block; the involution images are $\tilde{q}^{\natural} = 2 - 3e_1 + e_2 - 4e_3$, $\alpha(\tilde q) = 2 - 3e_1 + e_2 + 4e_3$, $\rho(\tilde q) = 2 + 3e_1 - e_2 - 4e_3$.
 
 ## The Relation to the Corresponding Article for $\mathbb{B}$
 
@@ -157,9 +157,9 @@ The biquaternion article *Biquaternion Relations Between Subspaces* performs the
 
 ## Summary
 
-The four distinguished subspaces of $\mathbb{H}_{\mathrm{s}}$ are the scalar line $S = \langle 1\rangle$, the vector subspace $V = \langle e_1,e_2,e_3\rangle$, and the two split-complex planes $\mathbb{D}_2 = \langle 1,e_2\rangle$ and $\mathbb{D}_3 = \langle 1,e_3\rangle$. They are the eigenspaces of the involutions, with $\bar{\cdot}$ giving $S \oplus V$, $\alpha$ giving $\mathbb{D}_3 \oplus \operatorname{span}\{e_1,e_2\}$, and $\rho$ giving $\operatorname{span}\{1,e_1,e_2\} \oplus \mathbb{R} e_3$; the finest common decomposition is the coordinate-block decomposition $\mathbb{H}_{\mathrm{s}} = \langle 1\rangle \oplus \langle e_1\rangle \oplus \langle e_2\rangle \oplus \langle e_3\rangle$.
+The four distinguished subspaces of $\mathbb{H}_{\mathrm{s}}$ are the scalar line $S = \langle 1\rangle$, the vector subspace $V = \langle e_1,e_2,e_3\rangle$, and the two split-complex planes $\mathbb{D}_2 = \langle 1,e_2\rangle$ and $\mathbb{D}_3 = \langle 1,e_3\rangle$. They are the eigenspaces of the involutions, with ${}^{\natural}$ giving $S \oplus V$, $\alpha$ giving $\mathbb{D}_3 \oplus \operatorname{span}\{e_1,e_2\}$, and $\rho$ giving $\operatorname{span}\{1,e_1,e_2\} \oplus \mathbb{R} e_3$; the finest common decomposition is the coordinate-block decomposition $\mathbb{H}_{\mathrm{s}} = \langle 1\rangle \oplus \langle e_1\rangle \oplus \langle e_2\rangle \oplus \langle e_3\rangle$.
 
-The intersections are $S \cap V = 0$, $V \cap \mathbb{D}_k = \mathbb{R} e_k$, and $\mathbb{D}_2 \cap \mathbb{D}_3 = S$, with $S$ inside both planes. The sums show that $V$ together with either split-complex plane spans the algebra, while the two planes together span only $\operatorname{span}\{1,e_2,e_3\}$. The involutions act on each subspace by the sign patterns tabulated above, and the composition rule $\bar{\cdot} = \alpha\rho$ composes the multiplicities by symmetric difference. The product is closed on $S, \mathbb{D}_2, \mathbb{D}_3$, sends $V \cdot V$ into $S \oplus V$, and sends the products across the split-complex planes into the whole algebra; the commutator vanishes on the commutative pieces and makes $V$ the Lie algebra $\mathrm{SL}_2(\mathbb{R})$.
+The intersections are $S \cap V = 0$, $V \cap \mathbb{D}_k = \mathbb{R} e_k$, and $\mathbb{D}_2 \cap \mathbb{D}_3 = S$, with $S$ inside both planes. The sums show that $V$ together with either split-complex plane spans the algebra, while the two planes together span only $\operatorname{span}\{1,e_2,e_3\}$. The involutions act on each subspace by the sign patterns tabulated above, and the composition rule ${}^{\natural} = \alpha\rho$ composes the multiplicities by symmetric difference. The product is closed on $S, \mathbb{D}_2, \mathbb{D}_3$, sends $V \cdot V$ into $S \oplus V$, and sends the products across the split-complex planes into the whole algebra; the commutator vanishes on the commutative pieces and makes $V$ the Lie algebra $\mathrm{SL}_2(\mathbb{R})$.
 
 ## Summary of Notation
 
@@ -170,7 +170,7 @@ The intersections are $S \cap V = 0$, $V \cap \mathbb{D}_k = \mathbb{R} e_k$, an
 | $V = \langle e_1,e_2,e_3\rangle$ | the vector subspace | *Split-Quaternion Scalar and Vector Subspaces* |
 | $\mathbb{D}_2 = \langle 1,e_2\rangle$, $\mathbb{D}_3 = \langle 1,e_3\rangle$ | the split-complex planes | *Split-Quaternion Split-Complex Subspaces* |
 | $\langle \cdot \rangle$ | real span of the displayed elements | this article |
-| $\bar{\cdot}$, $\alpha$, $\rho$ | conjugation, principal involution, reversal | *Split-Quaternion Subspaces and the Involutions* |
+| ${}^{\natural}$, $\alpha$, $\rho$ | conjugation, principal involution, reversal | *Split-Quaternion Subspaces and the Involutions* |
 | $B$, $N$ | the polarised form and the split-quaternion norm | *Split-Quaternion Norm and Invertibility* |
 | $[\tilde q,y] = \tilde q y-y\tilde q$ | the commutator | *Split-Quaternion Scalar and Vector Subspaces* |
 

@@ -14,7 +14,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + i q'_\mu \in \mathbb{C},
 $$
 
-with quaternion conjugate $\bar{\tilde{Q}}$, complex conjugate $\tilde{Q}^*$, Hermitian conjugate $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$ and anti-Hermitian conjugate $\tilde{Q}^\flat = -\tilde{Q}^\dagger$. The material coordinate is $\tilde{Q} = ict\,e_0 + \mathbf{x}$ with $\mathbf{x} = x e_1 + y e_2 + z e_3$, and the informational coordinate is $\tilde{Q} = ct'\,e_0 + i\mathbf{x}'$ with $\mathbf{x}' = x' e_1 + y' e_2 + z' e_3$.
+with quaternion conjugate $\tilde{Q}^{\natural}$, complex conjugate $\bar{\tilde{Q}}$, Hermitian conjugate $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ and anti-Hermitian conjugate $\tilde{Q}^\flat = -\tilde{Q}^{*}$. The material coordinate is $\tilde{Q} = ict\,e_0 + \mathbf{x}$ with $\mathbf{x} = x e_1 + y e_2 + z e_3$, and the informational coordinate is $\tilde{Q} = ct'\,e_0 + i\mathbf{x}'$ with $\mathbf{x}' = x' e_1 + y' e_2 + z' e_3$.
 
 ## The Biquaternion Norm
 
@@ -23,16 +23,16 @@ with quaternion conjugate $\bar{\tilde{Q}}$, complex conjugate $\tilde{Q}^*$, He
 The **biquaternion norm** of a biquaternion is
 
 $$
-N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2 ,
+N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 ,
 $$
 
-where $\bar{\tilde{Q}}$ is the quaternion conjugate.
+where $\tilde{Q}^{\natural}$ is the quaternion conjugate.
 
 **Basic properties.**
 
 - $N(\tilde{Q})$ is a complex scalar (a complex multiple of $e_0$) in general. It is real on the real sector $\mathbb{H}_{\mathbb{B}}$ and on the imaginary sector $i\mathbb{H}_{\mathbb{B}}$; outside their union it need not be real.
 - $N(\tilde{Q})$ is not positive-definite: it can vanish for a nonzero biquaternion. Those are the zero divisors, studied in *Biquaternion Zero Divisors*; physically they are the null elements, and the light cone is their locus.
-- $N(\bar{\tilde{Q}}) = N(\tilde{Q})$, $N(\tilde{Q}^*) = N(\tilde{Q})^*$ and $N(\tilde{Q}^\dagger) = N(\tilde{Q})^*$.
+- $N(\tilde{Q}^{\natural}) = N(\tilde{Q})$, $N(\tilde{Q}^*) = N(\tilde{Q})^*$ and $N(\tilde{Q}^{*}) = N(\tilde{Q})^*$.
 
 **Physical reading: this is the metric.** On the material coordinate the biquaternion norm is the Minkowski interval,
 
@@ -62,7 +62,7 @@ $$
 B(e_\mu,e_\nu)=\delta_{\mu\nu}.
 $$
 
-So $(\mathbb{B},N)$ is the standard non-degenerate quadratic space of dimension $4$ over $\mathbb{C}$. The form $B$ is complex-bilinear: it is **not** the Hermitian form $\tilde{P}\tilde{Q}^\dagger$ of the next section, and the two must not be conflated. Geometrically $B$ is the form whose vanishing locus is the null cone, the object the quadric of *Biquaternion Topology* is built from.
+So $(\mathbb{B},N)$ is the standard non-degenerate quadratic space of dimension $4$ over $\mathbb{C}$. The form $B$ is complex-bilinear: it is **not** the Hermitian form $\tilde{P}\tilde{Q}^{*}$ of the next section, and the two must not be conflated. Geometrically $B$ is the form whose vanishing locus is the null cone, the object the quadric of *Biquaternion Topology* is built from.
 
 ### Multiplicativity
 
@@ -75,17 +75,17 @@ $$
 **Proof.** Compute
 
 $$
-N(\tilde{Q}\tilde{R}) = (\tilde{Q}\tilde{R})\overline{(\tilde{Q}\tilde{R})} = \tilde{Q}\tilde{R}\bar{\tilde{R}}\bar{\tilde{Q}} = \tilde{Q}\,N(\tilde{R})\,\bar{\tilde{Q}} .
+N(\tilde{Q}\tilde{R}) = (\tilde{Q}\tilde{R})\overline{(\tilde{Q}\tilde{R})} = \tilde{Q}\tilde{R}\tilde{R}^{\natural}\tilde{Q}^{\natural} = \tilde{Q}\,N(\tilde{R})\,\tilde{Q}^{\natural} .
 $$
 
-Since $N(\tilde{R})$ is a complex scalar and $e_0$ is central, the factor commutes with $\tilde{Q}$ and with $\bar{\tilde{Q}}$, so $\tilde{Q}N(\tilde{R})\bar{\tilde{Q}} = N(\tilde{R})\tilde{Q}\bar{\tilde{Q}} = N(\tilde{R})N(\tilde{Q})$.
+Since $N(\tilde{R})$ is a complex scalar and $e_0$ is central, the factor commutes with $\tilde{Q}$ and with $\tilde{Q}^{\natural}$, so $\tilde{Q}N(\tilde{R})\tilde{Q}^{\natural} = N(\tilde{R})\tilde{Q}\tilde{Q}^{\natural} = N(\tilde{R})N(\tilde{Q})$.
 
 **Corollary.** If either factor has vanishing biquaternion norm, so does the product. In particular the product of a zero divisor with any biquaternion is either zero or a zero divisor: **the null cone is preserved by multiplication**.
 
 **Physical reading: why the rotors work.** An element of unit norm, $N(\tilde{R}) = 1$, is called a **rotor** in the series, and multiplicativity says exactly that a rotor preserves the biquaternion norm of everything it acts on:
 
 $$
-N(\tilde{R}\,\tilde{Q}\,\tilde{R}^{\dagger}) = N(\tilde{R})\,N(\tilde{Q})\,N(\tilde{R}^\dagger) = |N(\tilde{R})|^2 N(\tilde{Q}) = N(\tilde{Q}) .
+N(\tilde{R}\,\tilde{Q}\,\tilde{R}^{*}) = N(\tilde{R})\,N(\tilde{Q})\,N(\tilde{R}^{*}) = |N(\tilde{R})|^2 N(\tilde{Q}) = N(\tilde{Q}) .
 $$
 
 With $N$ read as the interval, this is the invariance of the interval under the transformation, which is the Lorentz transformation of the series; the chain of equalities above is the whole algebraic content of it. The four-velocity and the four-momentum are the standard instances:
@@ -153,24 +153,24 @@ So the criterion $N(\tilde{Q}) = 0$ is the statement that the two halves of the 
 
 ### Definition
 
-The **Hermitian form** of a biquaternion is the biquaternion $\tilde{Q}\tilde{Q}^\dagger$.
+The **Hermitian form** of a biquaternion is the biquaternion $\tilde{Q}\tilde{Q}^{*}$.
 
 - Its **scalar part** is
 
 $$
-\mathrm{Sc}\!\left(\tilde{Q}\tilde{Q}^\dagger\right) = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3}\left(q_\mu^2 + (q'_\mu)^2\right),
+\mathrm{Sc}\!\left(\tilde{Q}\tilde{Q}^{*}\right) = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3}\left(q_\mu^2 + (q'_\mu)^2\right),
 $$
 
-non-negative, vanishing only for $\tilde{Q} = 0$. Its vector part does not vanish in general: for $\tilde{Q} = e_0 + ie_1$, $\tilde{Q}^\dagger = \tilde{Q}$ and $\tilde{Q}\tilde{Q}^\dagger = (e_0+ie_1)^2 = 2e_0 + 2ie_1$. Note that this same element has $N(\tilde{Q}) = 1 + i^2 = 0$: the two forms are distinct, and an element can be a zero divisor for the biquaternion norm and perfectly regular for the Hermitian one.
+non-negative, vanishing only for $\tilde{Q} = 0$. Its vector part does not vanish in general: for $\tilde{Q} = e_0 + ie_1$, $\tilde{Q}^{*} = \tilde{Q}$ and $\tilde{Q}\tilde{Q}^{*} = (e_0+ie_1)^2 = 2e_0 + 2ie_1$. Note that this same element has $N(\tilde{Q}) = 1 + i^2 = 0$: the two forms are distinct, and an element can be a zero divisor for the biquaternion norm and perfectly regular for the Hermitian one.
 - The Hermitian form is **not** multiplicative, and its scalar part is not the biquaternion norm in general.
-- It is **Hermitian**: $(\tilde{Q}\tilde{Q}^\dagger)^\dagger = \tilde{Q}\tilde{Q}^\dagger$, so it lies in the informational sector $\mathbb{M}_+$.
+- It is **Hermitian**: $(\tilde{Q}\tilde{Q}^{*})^{*} = \tilde{Q}\tilde{Q}^{*}$, so it lies in the informational sector $\mathbb{M}_+$.
 
 **Physical reading.** The Hermitian form is the positive-definite object of the pair. Its scalar part is the squared length in the underlying real space, and it vanishes only at the origin; the full form is an element of the informational sector, whose vector part is the part a purely scalar reading of the norm would discard. In the informational side of the series the scalar part is the probabilistic norm and the vector part is the residue that the informational reading has to keep.
 
 ### The Euclidean Norm
 
 $$
-\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}\!\left(\tilde{Q}\tilde{Q}^\dagger\right)} = \sqrt{\sum_{\mu=0}^{3}|Q_\mu|^2} = \sqrt{\sum_{\mu=0}^{3}\left(q_\mu^2 + (q'_\mu)^2\right)} .
+\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}\!\left(\tilde{Q}\tilde{Q}^{*}\right)} = \sqrt{\sum_{\mu=0}^{3}|Q_\mu|^2} = \sqrt{\sum_{\mu=0}^{3}\left(q_\mu^2 + (q'_\mu)^2\right)} .
 $$
 
 It is a genuine norm on the real vector space $\mathbb{B}\cong\mathbb{R}^8$: positive-definite, subadditive and homogeneous of degree one. It is **not** multiplicative.
@@ -178,7 +178,7 @@ It is a genuine norm on the real vector space $\mathbb{B}\cong\mathbb{R}^8$: pos
 The trace version is
 
 $$
-\mathrm{Tr}\!\left(\tilde{Q}\tilde{Q}^\dagger\right) = 2\sum_{\mu=0}^{3}|Q_\mu|^2 = 2\|\tilde{Q}\|_E^2 ,
+\mathrm{Tr}\!\left(\tilde{Q}\tilde{Q}^{*}\right) = 2\sum_{\mu=0}^{3}|Q_\mu|^2 = 2\|\tilde{Q}\|_E^2 ,
 $$
 
 the Frobenius norm squared of the representing matrix under $\mathbb{B}\cong M_2(\mathbb{C})$.
@@ -188,7 +188,7 @@ the Frobenius norm squared of the representing matrix under $\mathbb{B}\cong M_2
 ### Relation Between the Biquaternion Norm and the Hermitian Form
 
 - The **biquaternion norm** $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is a complex scalar, multiplicative, capable of vanishing for nonzero $\tilde{Q}$.
-- The **Hermitian form** $\tilde{Q}\tilde{Q}^\dagger$ is a Hermitian element whose scalar part is $\sum_\mu|Q_\mu|^2$, non-negative and vanishing only at $\tilde{Q} = 0$, with vector part generally nonzero. Not multiplicative.
+- The **Hermitian form** $\tilde{Q}\tilde{Q}^{*}$ is a Hermitian element whose scalar part is $\sum_\mu|Q_\mu|^2$, non-negative and vanishing only at $\tilde{Q} = 0$, with vector part generally nonzero. Not multiplicative.
 
 They coincide as biquaternions exactly when $\tilde{Q}$ lies in the real sector $\mathbb{H}_{\mathbb{B}}$, that is, when all coefficients are real. On the imaginary sector $i\mathbb{H}_{\mathbb{B}}$ the Hermitian form is $+\sum_\mu (q'_\mu)^2\,e_0$, which is the **negative** of the biquaternion norm. So the two forms agree on the real sector, differ by a sign on the imaginary sector, and differ in kind elsewhere.
 
@@ -214,34 +214,34 @@ In a general non-commutative algebra the left, right and two-sided notions diffe
 
 **Theorem.** $\tilde{Q}$ is invertible if and only if $N(\tilde{Q}) \neq 0$.
 
-**Proof.** If $N(\tilde{Q}) \neq 0$, put $\tilde{R} = \bar{\tilde{Q}}/N(\tilde{Q})$. Then $\tilde{Q}\tilde{R} = \tilde{Q}\bar{\tilde{Q}}/N(\tilde{Q}) = e_0$, so $\tilde{R}$ is a right inverse, hence an inverse. Conversely, if $\tilde{Q}$ is invertible, applying $N$ to $\tilde{Q}\tilde{Q}^{-1} = e_0$ and using multiplicativity gives $N(\tilde{Q})N(\tilde{Q}^{-1}) = 1$, so $N(\tilde{Q}) \neq 0$.
+**Proof.** If $N(\tilde{Q}) \neq 0$, put $\tilde{R} = \tilde{Q}^{\natural}/N(\tilde{Q})$. Then $\tilde{Q}\tilde{R} = \tilde{Q}\tilde{Q}^{\natural}/N(\tilde{Q}) = e_0$, so $\tilde{R}$ is a right inverse, hence an inverse. Conversely, if $\tilde{Q}$ is invertible, applying $N$ to $\tilde{Q}\tilde{Q}^{-1} = e_0$ and using multiplicativity gives $N(\tilde{Q})N(\tilde{Q}^{-1}) = 1$, so $N(\tilde{Q}) \neq 0$.
 
 **Physical reading.** For a material element this criterion says: a four-vector is invertible exactly when it is **not null**. The timelike and spacelike four-vectors are invertible; the lightlike ones are the zero divisors. The algebra partitions the material sector by the light cone, and the physics does the same: this is the algebraic counterpart of the statement that a null vector has no rest frame.
 
 ### The Inverse Formula
 
 $$
-\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}}}{N(\tilde{Q})} ,
+\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{N(\tilde{Q})} ,
 $$
 
 the biquaternionic analogue of $q^{-1} = \bar{q}/|q|^2$.
 
-**Corollary.** If $\tilde{Q}$ is invertible, so is $\bar{\tilde{Q}}$, and $(\bar{\tilde{Q}})^{-1} = \overline{\tilde{Q}^{-1}}$.
+**Corollary.** If $\tilde{Q}$ is invertible, so is $\tilde{Q}^{\natural}$, and $(\tilde{Q}^{\natural})^{-1} = \overline{\tilde{Q}^{-1}}$.
 
 **The inverse of a rotor, and the dagger.** For an element of **unit norm**, $N(\tilde{Q}) = 1$, the formula collapses to
 
 $$
-\tilde{Q}^{-1} = \bar{\tilde{Q}} ,
+\tilde{Q}^{-1} = \tilde{Q}^{\natural} ,
 $$
 
-the **quaternion conjugate**. This is the case of every rotor of the series. It is worth naming what the dagger does in comparison, because the two are not the same operation: the dagger equals the quaternion conjugate exactly when $\tilde{Q}$ is **unitary**, $\tilde{Q}\tilde{Q}^\dagger = e_0$, and for a rotor that means the rotation rotors. A boost rotor is Hermitian, $\tilde{B}^\dagger = \tilde{B}$, so its dagger is itself while its inverse is its quaternion conjugate:
+the **quaternion conjugate**. This is the case of every rotor of the series. It is worth naming what the dagger does in comparison, because the two are not the same operation: the dagger equals the quaternion conjugate exactly when $\tilde{Q}$ is **unitary**, $\tilde{Q}\tilde{Q}^{*} = e_0$, and for a rotor that means the rotation rotors. A boost rotor is Hermitian, $\tilde{B}^{*} = \tilde{B}$, so its dagger is itself while its inverse is its quaternion conjugate:
 
 $$
 \tilde{B} = \cosh\frac{\psi}{2}e_0 + i\sinh\frac{\psi}{2}\,e_3, \qquad
-\tilde{B}^{-1} = \bar{\tilde{B}} = \cosh\frac{\psi}{2}e_0 - i\sinh\frac{\psi}{2}\,e_3 \neq \tilde{B}^\dagger = \tilde{B} .
+\tilde{B}^{-1} = \tilde{B}^{\natural} = \cosh\frac{\psi}{2}e_0 - i\sinh\frac{\psi}{2}\,e_3 \neq \tilde{B}^{*} = \tilde{B} .
 $$
 
-For a rotation rotor $\tilde{R}$ with real coefficients the two coincide, $\tilde{R}^{-1} = \bar{\tilde{R}} = \tilde{R}^\dagger$, which is why the two operations are interchangeable in the rotation case and must be distinguished in the boost case. The distinction is also what the series states where it matters: the action $\tilde{Q}\mapsto \tilde{R}\tilde{Q}\tilde{R}^\dagger$ is an inner automorphism in the unitary sector, where $\tilde{R}^\dagger = \tilde{R}^{-1}$, and not elsewhere; see *Similitudes Between Biquaternion Rotors and Hamiltonian Flow*, and the operator article, which takes the dagger sandwich as its subject.
+For a rotation rotor $\tilde{R}$ with real coefficients the two coincide, $\tilde{R}^{-1} = \tilde{R}^{\natural} = \tilde{R}^{*}$, which is why the two operations are interchangeable in the rotation case and must be distinguished in the boost case. The distinction is also what the series states where it matters: the action $\tilde{Q}\mapsto \tilde{R}\tilde{Q}\tilde{R}^{*}$ is an inner automorphism in the unitary sector, where $\tilde{R}^{*} = \tilde{R}^{-1}$, and not elsewhere; see *Similitudes Between Biquaternion Rotors and Hamiltonian Flow*, and the operator article, which takes the dagger sandwich as its subject.
 
 ## The Group of Units
 
@@ -410,11 +410,11 @@ The scalar part of the Hermitian form, by contrast, is non-negative and definite
 
 ## Summary
 
-The biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is a complex-valued multiplicative quadratic form, the semi-norm of the literature. It is the level-1 form and is the metric of the framework: it is the Minkowski interval on the material coordinate and the opposite signature on the informational one. It is not positive-definite and it vanishes on the zero divisors, which on the material sector is the light cone. Of the usual norm axioms only the sign axiom survives; the scaling axiom fails for complex scalars, since $\sqrt{\lambda^2}$ lies in the right half-plane and not at $|\lambda|$. The absolute square root $r = \sqrt{|N(\tilde{Q})|} = \sqrt{|\det\Phi(\tilde{Q})|}$ is the **unique** multiplicative real norm on the units normalised by $r(\lambda e_0) = |\lambda|$ for real $\lambda$, and it is the real scale of the polar representations.
+The biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is a complex-valued multiplicative quadratic form, the semi-norm of the literature. It is the level-1 form and is the metric of the framework: it is the Minkowski interval on the material coordinate and the opposite signature on the informational one. It is not positive-definite and it vanishes on the zero divisors, which on the material sector is the light cone. Of the usual norm axioms only the sign axiom survives; the scaling axiom fails for complex scalars, since $\sqrt{\lambda^2}$ lies in the right half-plane and not at $|\lambda|$. The absolute square root $r = \sqrt{|N(\tilde{Q})|} = \sqrt{|\det\Phi(\tilde{Q})|}$ is the **unique** multiplicative real norm on the units normalised by $r(\lambda e_0) = |\lambda|$ for real $\lambda$, and it is the real scale of the polar representations.
 
-The Hermitian form $\tilde{Q}\tilde{Q}^\dagger$ is a Hermitian biquaternion, an element of the informational sector, whose scalar part $\sum_\mu|Q_\mu|^2$ is non-negative and definite and defines the Euclidean norm on $\mathbb{B}\cong\mathbb{R}^8$; its vector part vanishes exactly when $\tilde{Q} = (\alpha+i\beta)A$ with $\alpha,\beta\in\mathbb{R}$ and $A$ a real quaternion. It is not multiplicative and it does not detect the zero divisors.
+The Hermitian form $\tilde{Q}\tilde{Q}^{*}$ is a Hermitian biquaternion, an element of the informational sector, whose scalar part $\sum_\mu|Q_\mu|^2$ is non-negative and definite and defines the Euclidean norm on $\mathbb{B}\cong\mathbb{R}^8$; its vector part vanishes exactly when $\tilde{Q} = (\alpha+i\beta)A$ with $\alpha,\beta\in\mathbb{R}$ and $A$ a real quaternion. It is not multiplicative and it does not detect the zero divisors.
 
-The invertibility criterion is $N(\tilde{Q})\neq0$, with inverse $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$. On the material sector it says that a four-vector is invertible exactly when it is not null. For a unit-norm element — every rotor — the inverse is the quaternion conjugate, $\tilde{Q}^{-1} = \bar{\tilde{Q}}$, and this coincides with the dagger exactly for the unitary rotors, the rotation rotors; a boost rotor is Hermitian and its dagger is itself, not its inverse.
+The invertibility criterion is $N(\tilde{Q})\neq0$, with inverse $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$. On the material sector it says that a four-vector is invertible exactly when it is not null. For a unit-norm element — every rotor — the inverse is the quaternion conjugate, $\tilde{Q}^{-1} = \tilde{Q}^{\natural}$, and this coincides with the dagger exactly for the unitary rotors, the rotation rotors; a boost rotor is Hermitian and its dagger is itself, not its inverse.
 
 The group of units $\mathbb{B}^\times$ is open, connected and isomorphic to $\mathrm{GL}(2,\mathbb{C})$, a real Lie group of dimension 8 with Lie algebra $\mathbb{B}$ and center $\mathbb{C}^\times$. The algebra is partitioned into the zero element, the invertible elements and the zero divisors, and this is the partition of four-vectors into the null ones and the rest. Of the six subspaces, $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors; $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a cone each, with three-component complements; and $\mathrm{Vect}(\mathbb{B})$ contains the complex nilpotent cone of codimension 2, whose complement is connected.
 
@@ -429,16 +429,16 @@ The zero divisors are studied in *Biquaternion Zero Divisors*, and the classific
 | $Q_\mu = q_\mu + iq'_\mu$ | Complex coefficient |
 | $ict\,e_0+\mathbf{x}$ | Material coordinate |
 | $ct'\,e_0+i\mathbf{x}'$ | Informational coordinate |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm; the level-1 form; the semi-norm of the literature |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm; the level-1 form; the semi-norm of the literature |
 | $N(ict\,e_0+\mathbf{x}) = -c^2t^2+\mathbf{x}^2$ | The interval on the material sector |
 | $N(\tilde{U}) = -c^2$ | Four-velocity |
 | $N(\tilde{P}) = -m^2c^2$ on shell | Four-momentum, the mass shell |
 | $r(\tilde{Q}) = \sqrt{|N(\tilde{Q})|} = \sqrt{|\det\Phi(\tilde{Q})|}$ | The unique multiplicative real norm on the units; the polar scale |
-| $\tilde{Q}\tilde{Q}^\dagger$ | Hermitian form (a Hermitian biquaternion) |
-| $\mathrm{Sc}(\tilde{Q}\tilde{Q}^\dagger) = \sum_\mu|Q_\mu|^2$ | Scalar part of the Hermitian form |
-| $\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q}\tilde{Q}^\dagger)}$ | Euclidean norm |
-| $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$ | Inverse |
-| $\tilde{Q}^{-1} = \bar{\tilde{Q}}$ for $N(\tilde{Q}) = 1$ | Inverse of a rotor |
+| $\tilde{Q}\tilde{Q}^{*}$ | Hermitian form (a Hermitian biquaternion) |
+| $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*}) = \sum_\mu|Q_\mu|^2$ | Scalar part of the Hermitian form |
+| $\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})}$ | Euclidean norm |
+| $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$ | Inverse |
+| $\tilde{Q}^{-1} = \tilde{Q}^{\natural}$ for $N(\tilde{Q}) = 1$ | Inverse of a rotor |
 | $\mathbb{B}^\times$ | Group of units |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | Complex time, real and imaginary sectors: no zero divisors |
 | $\mathbb{M}_-$ | Material sector: the light cone of zero divisors |

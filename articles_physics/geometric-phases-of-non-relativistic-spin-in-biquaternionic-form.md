@@ -200,7 +200,7 @@ $$
 with Hamiltonian $\tilde{H}(t) = -\tfrac{\hbar\omega_L}{2}i\,\hat{n}(t)$ and $\hat{n}(t)_k\tilde{S}_k$ the instantaneous spin along the field. Transforming to the frame that corotates with the field, $\tilde{U}_R(t) = \exp(-\tfrac{\omega t}{2}e_3)$, gives the static effective Hamiltonian
 
 $$
-\tilde{H}_R = \tilde{U}_R^\dagger\tilde{H}\tilde{U}_R - i\hbar\,\tilde{U}_R^\dagger\partial_t\tilde{U}_R
+\tilde{H}_R = \tilde{U}_R^{*}\tilde{H}\tilde{U}_R - i\hbar\,\tilde{U}_R^{*}\partial_t\tilde{U}_R
 = -\frac{\hbar}{2}\Big[\left(\omega_L\cos\theta_0-\omega\right)ie_3 + \omega_L\sin\theta_0\,ie_1\Big],
 $$
 

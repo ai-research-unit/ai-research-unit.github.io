@@ -138,7 +138,7 @@ The first row is the singlet idempotent $P_{\mathrm{singlet}}$ already fixed by 
 **The $P_\epsilon$ are Hermitian.** For $k=1,2,3$ the Hermitian conjugate of $e_k$ is $-e_k$, so
 
 $$
-(e_k\otimes e_k)^\dagger=(-e_k)\otimes(-e_k)=e_k\otimes e_k .
+(e_k\otimes e_k)^{*}=(-e_k)\otimes(-e_k)=e_k\otimes e_k .
 $$
 
 The tensor terms are therefore individually Hermitian, the coefficients $\epsilon_k$ and $\tfrac14$ are real, and $P_\epsilon^\dagger=P_\epsilon$. Each $P_\epsilon$ is a legitimate state, not merely an algebraic idempotent.
@@ -173,7 +173,7 @@ $$
 
 They have three elementary properties, each a direct computation.
 
-**Hermiticity.** As in the previous section, $(e_k\otimes e_k)^\dagger=e_k\otimes e_k$, so $S_1^\dagger=S_1$ and $S_3^\dagger=S_3$.
+**Hermiticity.** As in the previous section, $(e_k\otimes e_k)^{*}=e_k\otimes e_k$, so $S_1^\dagger=S_1$ and $S_3^\dagger=S_3$.
 
 **Involution.** Using $(e_k\otimes e_k)^2=e_k^2\otimes e_k^2=(-e_0)\otimes(-e_0)=e_0\otimes e_0$, we get
 
@@ -322,13 +322,13 @@ Imposing $P^2=P$ and $\mathrm{Tr}(P)=1$ determines the coefficients completely. 
 
 ### The Bell idempotents inside the continuum of maximally entangled states
 
-The diagonal-form condition is genuinely restrictive. The maximally entangled pure states of two qubits form a continuum: for any unitary element $\tilde U$ of $\mathbb{B}$ with $\tilde U\tilde U^\dagger=e_0$, acting on the first factor,
+The diagonal-form condition is genuinely restrictive. The maximally entangled pure states of two qubits form a continuum: for any unitary element $\tilde U$ of $\mathbb{B}$ with $\tilde U\tilde U^{*}=e_0$, acting on the first factor,
 
 $$
-P\;=\;(\tilde U\otimes e_0)\,P_{\Phi^+}\,(\tilde U^\dagger\otimes e_0)
+P\;=\;(\tilde U\otimes e_0)\,P_{\Phi^+}\,(\tilde U^{*}\otimes e_0)
 $$
 
-is again a rank-one idempotent, and its partial traces are still $\tfrac{1}{2}e_0$, because $\mathrm{Tr}_2(P)=U(\tfrac12 e_0)U^\dagger=\tfrac12 e_0$ with the central scalar $\tfrac12 e_0$ invariant. A generic such $P$ is **not** diagonal in the tensor basis.
+is again a rank-one idempotent, and its partial traces are still $\tfrac{1}{2}e_0$, because $\mathrm{Tr}_2(P)=U(\tfrac12 e_0)U^{*}=\tfrac12 e_0$ with the central scalar $\tfrac12 e_0$ invariant. A generic such $P$ is **not** diagonal in the tensor basis.
 
 A concrete example makes the point. Take $\tilde U=\tfrac{3}{5}e_0+\tfrac{4}{5}e_1$, a unit real quaternion. The resulting rank-one idempotent has partial trace $\tfrac{1}{2}e_0$ and is therefore maximally entangled, but its tensor expansion contains the off-diagonal terms
 

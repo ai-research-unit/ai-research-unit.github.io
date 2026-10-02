@@ -8,7 +8,7 @@ Throughout the main body we work on the **quaternion subspace** $\mathbb{H}_{\ma
 
 The physical content of the article is the field-theoretic machinery of conservation laws and Green's functions: the divergence theorem is the conservation of a four-current, the fundamental solution is the Green's function of the d'Alembertian, and the Cauchy integral formula is the representation of a field by its boundary values. Every claim is either proved or stated as a definition. Where a computation is long, all steps are shown.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, central scalar imaginary $i$, and general element $\tilde{Q}=\sum_\mu Q_\mu e_\mu$; on $\mathbb{H}_{\mathbb{B}}$ the coordinates $q_\mu$ are real. Its conjugations, its six distinguished subspaces, the Euclidean norm and the biquaternionic gradient $\tilde{\nabla}$, the quaternion conjugate $\bar{\tilde{\nabla}}$, the d'Alembertian $\Box$ and the convective derivative are assumed from *Biquaternion Algebra* and *Biquaternion Analysis*; the null cone and the zero divisors are *Biquaternion Norm and Invertibility* and *Biquaternion Zero Divisors*.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, central scalar imaginary $i$, and general element $\tilde{Q}=\sum_\mu Q_\mu e_\mu$; on $\mathbb{H}_{\mathbb{B}}$ the coordinates $q_\mu$ are real. Its conjugations, its six distinguished subspaces, the Euclidean norm and the biquaternionic gradient $\tilde{\nabla}$, the quaternion conjugate $\tilde{\nabla}^{\natural}$, the d'Alembertian $\Box$ and the convective derivative are assumed from *Biquaternion Algebra* and *Biquaternion Analysis*; the null cone and the zero divisors are *Biquaternion Norm and Invertibility* and *Biquaternion Zero Divisors*.
 
 ## The Integral of a Biquaternion-Valued Function
 
@@ -143,10 +143,10 @@ Multiplying by $e_\mu e_\nu$ and summing gives the result.
 **Theorem (divergence theorem for the quaternion conjugate).** Under the same hypotheses,
 
 $$
-\int_\Omega \bar{\tilde{\nabla}} \tilde{F} \, dV = \int_{\partial \Omega} \bar{\tilde{n}} \tilde{F} \, dS,
+\int_\Omega \tilde{\nabla}^{\natural} \tilde{F} \, dV = \int_{\partial \Omega} \tilde{n}^{\natural} \tilde{F} \, dS,
 $$
 
-where $\bar{\tilde{n}} = n_0 e_0 - \sum_{k=1}^{3} n_k e_k$ is the quaternion conjugate of the outward unit normal.
+where $\tilde{n}^{\natural} = n_0 e_0 - \sum_{k=1}^{3} n_k e_k$ is the quaternion conjugate of the outward unit normal.
 
 **Proof.** This is the same computation as above, with the signs of the vector components reversed.
 
@@ -169,13 +169,13 @@ $$
 **Theorem (second Green's formula).** Under the same hypotheses,
 
 $$
-\int_\Omega \left[ \tilde{F}\, \overline{\Box \tilde{G}} - (\Box \tilde{F})\, \bar{\tilde{G}} \right] dV = \int_{\partial \Omega} \left[ \tilde{F}\, \overline{\partial_{\tilde{n}} \tilde{G}} - (\partial_{\tilde{n}} \tilde{F})\, \bar{\tilde{G}} \right] dS.
+\int_\Omega \left[ \tilde{F}\, \overline{\Box \tilde{G}} - (\Box \tilde{F})\, \tilde{G}^{\natural} \right] dV = \int_{\partial \Omega} \left[ \tilde{F}\, \overline{\partial_{\tilde{n}} \tilde{G}} - (\partial_{\tilde{n}} \tilde{F})\, \tilde{G}^{\natural} \right] dS.
 $$
 
 **Proof.** For each $\mu$ the product rule gives
 
 $$
-\partial_{q_\mu} \left[ \tilde{F}\, \overline{\partial_{q_\mu} \tilde{G}} - (\partial_{q_\mu} \tilde{F})\, \bar{\tilde{G}} \right] = \tilde{F}\, \overline{\partial_{q_\mu}^2 \tilde{G}} - (\partial_{q_\mu}^2 \tilde{F})\, \bar{\tilde{G}},
+\partial_{q_\mu} \left[ \tilde{F}\, \overline{\partial_{q_\mu} \tilde{G}} - (\partial_{q_\mu} \tilde{F})\, \tilde{G}^{\natural} \right] = \tilde{F}\, \overline{\partial_{q_\mu}^2 \tilde{G}} - (\partial_{q_\mu}^2 \tilde{F})\, \tilde{G}^{\natural},
 $$
 
 the two mixed terms being the same product and cancelling. Summing over $\mu$ makes the left side the divergence of a biquaternion-valued field, whose volume integral is the stated volume integrand and whose boundary integral, by the ordinary divergence theorem and $\sum_\mu n_\mu \partial_{q_\mu} = \partial_{\tilde{n}}$, is the stated surface term. The conjugation is inert throughout because $\partial_{q_\mu}$ is real.
@@ -198,7 +198,7 @@ $$
 
 the two mixed terms being the same product and cancelling. Summing over $\mu$ makes the left side a divergence whose volume integral is the stated volume integrand, $(\Box\tilde{F})\tilde{G} - \tilde{F}(\Box\tilde{G})$; the divergence theorem turns it into the boundary integral, which by $\sum_\mu n_\mu \partial_{q_\mu} = \partial_{\tilde{n}}$ is the stated surface term. The derivative in the surface term is essential and cannot be dropped: for scalar $u,v$ the classical identity the formula must reproduce, $\int_\Omega (v\Delta u - u\Delta v)\,dV = \int_{\partial\Omega} (v\partial_n u - u\partial_n v)\,dS$, has a non-zero right side.
 
-**Remark (the two pairings).** This formula is the second Green formula with $\tilde{G}$ replaced by $\bar{\tilde{G}}$, up to the sign of both sides; the second Green formula carries the conjugation in the pairing, this one in the plain product, and the two have the same content.
+**Remark (the two pairings).** This formula is the second Green formula with $\tilde{G}$ replaced by $\tilde{G}^{\natural}$, up to the sign of both sides; the second Green formula carries the conjugation in the pairing, this one in the plain product, and the two have the same content.
 
 **Physical reading: reciprocity.** Green's formulas are the reciprocity relations between two fields: exchanging the two solutions of the wave equation and subtracting gives a boundary identity, which is the statement that the second-order operator is self-adjoint in the appropriate sense. In the field-theoretic reading they are the algebraic origin of the reciprocity theorems used to compute potentials from boundary data, and they are what makes a Green's function method possible at all.
 
@@ -209,10 +209,10 @@ the two mixed terms being the same product and cancelling. Summing over $\mu$ ma
 The **fundamental solution** of the gradient operator $\tilde{\nabla}$ on $\mathbb{H}_{\mathbb{B}}$ is the biquaternion-valued function
 
 $$
-\tilde{G}(\tilde{Q}) = \frac{\bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4},
+\tilde{G}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4},
 $$
 
-where $\bar{\tilde{Q}}$ is the quaternion conjugate of $\tilde{Q}$ and $\|\tilde{Q}\|_E^4 = (\|\tilde{Q}\|_E^2)^2$ is the fourth power of the Euclidean norm.
+where $\tilde{Q}^{\natural}$ is the quaternion conjugate of $\tilde{Q}$ and $\|\tilde{Q}\|_E^4 = (\|\tilde{Q}\|_E^2)^2$ is the fourth power of the Euclidean norm.
 
 The function $\tilde{G}$ is defined for $\tilde{Q} \neq 0$ in $\mathbb{H}_{\mathbb{B}}$. It is homogeneous of degree $-3$: $\tilde{G}(\lambda \tilde{Q}) = \lambda^{-3} \tilde{G}(\tilde{Q})$ for $\lambda > 0$.
 
@@ -224,7 +224,7 @@ $$
 \tilde{\nabla} \tilde{G}(\tilde{Q}) = 0.
 $$
 
-**Proof.** Write $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $\|\tilde{Q}\|_E^2 = \sum_\mu Q_\mu^2$ (all $Q_\mu$ are real, since $\tilde{Q} \in \mathbb{H}_{\mathbb{B}}$). The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \sum_k Q_k e_k$. So
+**Proof.** Write $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $\|\tilde{Q}\|_E^2 = \sum_\mu Q_\mu^2$ (all $Q_\mu$ are real, since $\tilde{Q} \in \mathbb{H}_{\mathbb{B}}$). The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \sum_k Q_k e_k$. So
 
 $$
 \tilde{G}(\tilde{Q}) = \frac{Q_0 e_0 - \sum_k Q_k e_k}{(\sum_\mu Q_\mu^2)^2}.
@@ -233,12 +233,12 @@ $$
 A direct computation gives
 
 $$
-\tilde{\nabla} \tilde{G} = \sum_\mu e_\mu \frac{\partial}{\partial q_\mu} \left( \frac{\bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4} \right) = \frac{\tilde{\nabla} \bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4} + \bar{\tilde{Q}} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right),
+\tilde{\nabla} \tilde{G} = \sum_\mu e_\mu \frac{\partial}{\partial q_\mu} \left( \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4} \right) = \frac{\tilde{\nabla} \tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4} + \tilde{Q}^{\natural} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right),
 $$
 
-using the product rule and the fact that $\bar{\tilde{Q}}$ and the scalar function $1/\|\tilde{Q}\|_E^4$ commute with the partial derivatives.
+using the product rule and the fact that $\tilde{Q}^{\natural}$ and the scalar function $1/\|\tilde{Q}\|_E^4$ commute with the partial derivatives.
 
-The first term is $\tilde{\nabla}\bar{\tilde{Q}} = \sum_\mu e_\mu \bar e_\mu = e_0 - e_1^2 - e_2^2 - e_3^2 = 4 e_0$, since $\partial_{q_\mu}\bar{\tilde{Q}} = \bar e_\mu$ holds because the coefficients $Q_\mu$ are real.
+The first term is $\tilde{\nabla}\tilde{Q}^{\natural} = \sum_\mu e_\mu \bar e_\mu = e_0 - e_1^2 - e_2^2 - e_3^2 = 4 e_0$, since $\partial_{q_\mu}\tilde{Q}^{\natural} = \bar e_\mu$ holds because the coefficients $Q_\mu$ are real.
 
 For the second term, on $\mathbb{H}_{\mathbb{B}}$ the coefficients are real, so $\partial_{q_\mu}\|\tilde Q\|_E^2 = 2Q_\mu$. Hence
 
@@ -252,13 +252,13 @@ $$
 \tilde{\nabla}\left(\frac{1}{\|\tilde Q\|_E^4}\right) = \sum_\mu e_\mu \left(-\frac{4 Q_\mu}{\|\tilde Q\|_E^6}\right) = -\frac{4\tilde Q}{\|\tilde Q\|_E^6}.
 $$
 
-Multiplying by $\bar{\tilde Q}$ on the left:
+Multiplying by $\tilde Q^{\natural}$ on the left:
 
 $$
-\bar{\tilde Q} \tilde{\nabla}\left(\frac{1}{\|\tilde Q\|_E^4}\right) = -\frac{4\bar{\tilde Q}\tilde Q}{\|\tilde Q\|_E^6}.
+\tilde Q^{\natural} \tilde{\nabla}\left(\frac{1}{\|\tilde Q\|_E^4}\right) = -\frac{4\tilde Q^{\natural}\tilde Q}{\|\tilde Q\|_E^6}.
 $$
 
-On $\mathbb{H}_{\mathbb{B}}$, $\bar{\tilde Q}\tilde Q = \sum_\mu Q_\mu^2 e_0 = \|\tilde Q\|_E^2 e_0$. So this term is $-4\|\tilde Q\|_E^2 e_0/\|\tilde Q\|_E^6 = -4e_0/\|\tilde Q\|_E^4$. Combining both terms:
+On $\mathbb{H}_{\mathbb{B}}$, $\tilde Q^{\natural}\tilde Q = \sum_\mu Q_\mu^2 e_0 = \|\tilde Q\|_E^2 e_0$. So this term is $-4\|\tilde Q\|_E^2 e_0/\|\tilde Q\|_E^6 = -4e_0/\|\tilde Q\|_E^4$. Combining both terms:
 
 $$
 \tilde\nabla\tilde G = \frac{4e_0}{\|\tilde Q\|_E^4} - \frac{4e_0}{\|\tilde Q\|_E^4} = 0.
@@ -286,10 +286,10 @@ $$
 \int_{\|\tilde{Q}\|_E > \varepsilon} \tilde{G} (\tilde{\nabla} \phi) \, dV = \int_{\|\tilde{Q}\|_E = \varepsilon} \tilde{G} \tilde{n} \phi \, dS - \int_{\|\tilde{Q}\|_E > \varepsilon} (\tilde{\nabla} \tilde{G}) \phi \, dV = \int_{\|\tilde{Q}\|_E = \varepsilon} \tilde{G} \tilde{n} \phi \, dS.
 $$
 
-On the sphere $\|\tilde{Q}\|_E = \varepsilon$, the outward unit normal is $\tilde{n} = \tilde{Q}/\varepsilon$, and $\tilde{G} = \bar{\tilde{Q}}/\varepsilon^4$. So
+On the sphere $\|\tilde{Q}\|_E = \varepsilon$, the outward unit normal is $\tilde{n} = \tilde{Q}/\varepsilon$, and $\tilde{G} = \tilde{Q}^{\natural}/\varepsilon^4$. So
 
 $$
-\tilde{G} \tilde{n} = \frac{\bar{\tilde{Q}}}{\varepsilon^4} \cdot \frac{\tilde{Q}}{\varepsilon} = \frac{\|\tilde{Q}\|_E^2}{\varepsilon^5} e_0 = \frac{1}{\varepsilon^3} e_0,
+\tilde{G} \tilde{n} = \frac{\tilde{Q}^{\natural}}{\varepsilon^4} \cdot \frac{\tilde{Q}}{\varepsilon} = \frac{\|\tilde{Q}\|_E^2}{\varepsilon^5} e_0 = \frac{1}{\varepsilon^3} e_0,
 $$
 
 and
@@ -428,7 +428,7 @@ for any $\tilde{Q}_0$ outside the singularities.
 
 The integration theory developed here is the biquaternion analogue of the Cauchy integral theory in complex analysis and of the Fueter theory in quaternionic analysis.
 
-**Complex analysis.** In complex analysis, the Cauchy integral formula expresses the value of a holomorphic function at an interior point in terms of its boundary values, with the kernel $1/(z - z_0)$. The biquaternion analogue uses the kernel $\tilde{G}(\tilde{Q} - \tilde{Q}_0) = (\bar{\tilde{Q}} - \bar{\tilde{Q}}_0)/\|\tilde{Q} - \tilde{Q}_0\|_E^4$, which is the fundamental solution of the gradient operator in four dimensions.
+**Complex analysis.** In complex analysis, the Cauchy integral formula expresses the value of a holomorphic function at an interior point in terms of its boundary values, with the kernel $1/(z - z_0)$. The biquaternion analogue uses the kernel $\tilde{G}(\tilde{Q} - \tilde{Q}_0) = (\tilde{Q}^{\natural} - \tilde{Q}^{\natural}_0)/\|\tilde{Q} - \tilde{Q}_0\|_E^4$, which is the fundamental solution of the gradient operator in four dimensions.
 
 **Quaternionic analysis.** In Fueter's quaternionic analysis, the analogue of the Cauchy integral formula involves the kernel $q^{-1}/\|q\|^2$ and the quaternion-valued integration over the boundary of a domain in $\mathbb{R}^4$. The biquaternion case is the generalisation to complex coefficients, with the additional structure of the four conjugations.
 
@@ -438,7 +438,7 @@ The integration theory developed here is the biquaternion analogue of the Cauchy
 
 The following questions are not answered in this article and are left for later work:
 
-1. **The extension to $\mathbb{M}_+$ and $\mathbb{M}_-$.** The integration theory presented here is for functions on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the four coordinates are real. Extending the theory to the indefinite subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ requires modifying the fundamental solution, because the kernel $\bar{\tilde Q}/\|\tilde Q\|_E^4$ is not annihilated by the framework's gradient on these subspaces. Indeed, on $\mathbb{M}_+$ and $\mathbb{M}_-$, the coefficients $Q_\mu$ include imaginary entries, and the identity $\bar{\tilde Q}\tilde Q = \|\tilde Q\|_E^2 e_0$ fails, so the proof of $\tilde\nabla\tilde G = 0$ does not carry over. Whether a modified kernel exists, and how it relates to the standard Clifford analysis of $\mathbb{R}^{3,1}$ or $\mathbb{R}^{1,3}$, is open.
+1. **The extension to $\mathbb{M}_+$ and $\mathbb{M}_-$.** The integration theory presented here is for functions on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the four coordinates are real. Extending the theory to the indefinite subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ requires modifying the fundamental solution, because the kernel $\tilde Q^{\natural}/\|\tilde Q\|_E^4$ is not annihilated by the framework's gradient on these subspaces. Indeed, on $\mathbb{M}_+$ and $\mathbb{M}_-$, the coefficients $Q_\mu$ include imaginary entries, and the identity $\tilde Q^{\natural}\tilde Q = \|\tilde Q\|_E^2 e_0$ fails, so the proof of $\tilde\nabla\tilde G = 0$ does not carry over. Whether a modified kernel exists, and how it relates to the standard Clifford analysis of $\mathbb{R}^{3,1}$ or $\mathbb{R}^{1,3}$, is open.
 
 2. **The residue theory in the non-commutative case.** The definition of the residue given above is one of several possible definitions. What is the correct definition that makes the residue theorem hold in the strongest form?
 
@@ -454,7 +454,7 @@ The following questions are not answered in this article and are left for later 
 
 The integral of a biquaternion-valued function on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas. Because the algebra is not commutative, transposing the gradient off a product requires the right gradient $\overleftarrow{\nabla}$, and the identities are stated in the forms that hold for general biquaternion-valued fields.
 
-The **fundamental solution** of the gradient operator on $\mathbb{H}_{\mathbb{B}}$ is $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla} \tilde{G} = 0$ away from the origin and $\tilde{\nabla} \tilde{G} = -2\pi^2 \delta_0 e_0$ in the sense of distributions.
+The **fundamental solution** of the gradient operator on $\mathbb{H}_{\mathbb{B}}$ is $\tilde{G}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla} \tilde{G} = 0$ away from the origin and $\tilde{\nabla} \tilde{G} = -2\pi^2 \delta_0 e_0$ in the sense of distributions.
 
 The **Cauchy integral formula** expresses the value of a continuously differentiable function at an interior point in terms of its boundary values and the volume integral of its gradient. For functions satisfying $\tilde{\nabla}\tilde{F} = 0$ (the biquaternion analogue of the Cauchy–Riemann equations), the volume integral vanishes and the value at the interior point is given entirely by the boundary values.
 
@@ -474,11 +474,11 @@ Physically the divergence theorem is the conservation of a four-current, the fun
 | $\partial/\partial q_\mu$ | Ordinary real partial derivative |
 | $\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial q_\mu$ | Biquaternionic gradient (Cauchy–Riemann operator) |
 | $\tilde{F}\overleftarrow{\nabla} = \sum_\mu (\partial \tilde{F}/\partial q_\mu) e_\mu$ | Right gradient of $\tilde{F}$ |
-| $\bar{\tilde{\nabla}}$ | Quaternion conjugate of the gradient |
+| $\tilde{\nabla}^{\natural}$ | Quaternion conjugate of the gradient |
 | $\Box = \partial^2/\partial q_0^2 + \Delta_q$ | d'Alembertian, the wave operator on the material slice |
 | $\tilde{n}$ | Biquaternion-valued outward unit normal |
 | $\partial_{\tilde{n}} = \sum_\mu n_\mu \partial_{q_\mu}$ | Scalar normal derivative in the outward direction |
-| $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$ | Fundamental solution of the gradient; the Green's function |
+| $\tilde{G}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ | Fundamental solution of the gradient; the Green's function |
 | $dV$ | Lebesgue measure on the four real coordinates of $\mathbb{H}_{\mathbb{B}}$ |
 
 ## Further Reading

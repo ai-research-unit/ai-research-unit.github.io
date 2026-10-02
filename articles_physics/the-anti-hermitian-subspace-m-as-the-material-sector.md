@@ -22,7 +22,7 @@ $$
 \mathbb{M}_- = \{\tilde{Q} \in \mathbb{B} : \tilde{Q}^\flat = \tilde{Q}\},
 $$
 
-where $\tilde{Q}^\flat = -\tilde{Q}^\dagger$ and $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$. Explicitly, a biquaternion is in $\mathbb{M}_-$ if and only if it has the form
+where $\tilde{Q}^\flat = -\tilde{Q}^{*}$ and \tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}. Explicitly, a biquaternion is in $\mathbb{M}_-$ if and only if it has the form
 
 $$
 \tilde{Q} = i q'_0\,e_0 + q_1\,e_1 + q_2\,e_2 + q_3\,e_3, \qquad q'_0, q_1, q_2, q_3 \in \mathbb{R}.
@@ -51,7 +51,7 @@ As a real vector space, $\mathbb{M}_-$ has dimension $4$. It is **not** a subalg
 The subspace is the fixed space of the **anti-Hermitian conjugation**
 
 $$
-\tilde{Q}^\flat = -\tilde{Q}^\dagger = -\bar{\tilde{Q}}^{\,*},
+\tilde{Q}^\flat = -\tilde{Q}^{*} = -\tilde{Q}^{*},
 $$
 
 which is an involution: applying it twice returns the original element, $(\tilde{Q}^\flat)^\flat = \tilde{Q}$. Write the general biquaternion out in full, with the real and the imaginary part of each of its four coefficients,
@@ -63,19 +63,19 @@ $$
 The conjugation is the composite of quaternion conjugation and complex conjugation. Quaternion conjugation negates the three vector units and leaves the unit, the scalar imaginary, and every coefficient untouched,
 
 $$
-\bar{\tilde{Q}} = (q_0 + iq'_0)\,e_0 - (q_1 + iq'_1)\,e_1 - (q_2 + iq'_2)\,e_2 - (q_3 + iq'_3)\,e_3,
+\tilde{Q}^{\natural} = (q_0 + iq'_0)\,e_0 - (q_1 + iq'_1)\,e_1 - (q_2 + iq'_2)\,e_2 - (q_3 + iq'_3)\,e_3,
 $$
 
 and complex conjugation then replaces $i$ by $-i$ throughout, leaving the quaternion units fixed, so that
 
 $$
-\bar{\tilde{Q}}^{\,*} = (q_0 - iq'_0)\,e_0 - (q_1 - iq'_1)\,e_1 - (q_2 - iq'_2)\,e_2 - (q_3 - iq'_3)\,e_3 = \tilde{Q}^\dagger .
+\tilde{Q}^{*} = (q_0 - iq'_0)\,e_0 - (q_1 - iq'_1)\,e_1 - (q_2 - iq'_2)\,e_2 - (q_3 - iq'_3)\,e_3 = \tilde{Q}^{*} .
 $$
 
 Negating this gives the anti-Hermitian conjugation itself,
 
 $$
-\tilde{Q}^\flat = -\tilde{Q}^\dagger = (-q_0 + iq'_0)\,e_0 + (q_1 - iq'_1)\,e_1 + (q_2 - iq'_2)\,e_2 + (q_3 - iq'_3)\,e_3 ,
+\tilde{Q}^\flat = -\tilde{Q}^{*} = (-q_0 + iq'_0)\,e_0 + (q_1 - iq'_1)\,e_1 + (q_2 - iq'_2)\,e_2 + (q_3 - iq'_3)\,e_3 ,
 $$
 
 so that the scalar coefficient is negated in its real part and each vector coefficient in its imaginary part. Coordinate by coordinate,
@@ -98,7 +98,7 @@ $$
 \tilde{Q}^\flat = \tilde{Q} \iff \tilde{Q} = iq'_0\,e_0 + q_1\,e_1 + q_2\,e_2 + q_3\,e_3 .
 $$
 
-**Conversely**, every element of this form is fixed. For such an element $\bar{\tilde{Q}} = iq'_0\,e_0 - q_1\,e_1 - q_2\,e_2 - q_3\,e_3$, hence $\tilde{Q}^\dagger = \bar{\tilde{Q}}^{\,*} = -iq'_0\,e_0 - q_1\,e_1 - q_2\,e_2 - q_3\,e_3 = -\tilde{Q}$, and therefore $\tilde{Q}^\flat = -\tilde{Q}^\dagger = \tilde{Q}$. The two directions together say that the displayed set is *exactly* the fixed space. The coordinates that survive are the four $q'_0, q_1, q_2, q_3$, which is the parametrisation recorded above: the scalar coefficient is purely imaginary, the three vector coefficients are real, and the fixed space is this four-dimensional real subspace, carved out of the eight real coordinates by the four $\mathbb{R}$-linear equations $q_0 = 0$ and $q'_k = 0$.
+**Conversely**, every element of this form is fixed. For such an element $\tilde{Q}^{\natural} = iq'_0\,e_0 - q_1\,e_1 - q_2\,e_2 - q_3\,e_3$, hence \tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = -iq'_0\,e_0 - q_1\,e_1 - q_2\,e_2 - q_3\,e_3 = -\tilde{Q}$, and therefore $\tilde{Q}^\flat = -\tilde{Q}^{*} = \tilde{Q}$. The two directions together say that the displayed set is *exactly* the fixed space. The coordinates that survive are the four $q'_0, q_1, q_2, q_3$, which is the parametrisation recorded above: the scalar coefficient is purely imaginary, the three vector coefficients are real, and the fixed space is this four-dimensional real subspace, carved out of the eight real coordinates by the four $\mathbb{R}$-linear equations $q_0 = 0$ and $q'_k = 0$.
 
 ### Properties
 
@@ -107,7 +107,7 @@ The subspace $\mathbb{M}_-$ has the following algebraic properties, established 
 **Quadratic form.** The biquaternion **biquaternion norm** restricts to a real quadratic form on $\mathbb{M}_-$:
 
 $$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = (iq'_0)^2 + q_1^2 + q_2^2 + q_3^2 = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + x^2 + y^2 + z^2.
+N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = (iq'_0)^2 + q_1^2 + q_2^2 + q_3^2 = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + x^2 + y^2 + z^2.
 $$
 
 This is a real quadratic form of **signature** $(3,1)$: three positive directions (the spatial components $q_1, q_2, q_3$) and one negative direction (the temporal one, whose coordinate is $ict$). This is the Minkowski signature, expressed algebraically as a consequence of $i^2 = -1$.
@@ -158,7 +158,7 @@ $$
 
 where $q'_0$ is the (real) time component and $q_1, q_2, q_3$ are the spatial components — the sector-parameter writing on the left, the coordinate writing on the right. This is a double cone in $\mathbb{R}^4$ with apex at the origin.
 
-The nonzero elements of the light cone are **zero divisors** of the biquaternion algebra: they are nonzero elements $\tilde{Q}$ for which there exists a nonzero $\tilde{Y}$ with $\tilde{Q}\tilde{Y} = 0$. The zero divisor structure is intrinsic to the biquaternion algebra and reflects the fact that the light cone is the **characteristic cone** of the wave operator $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$.
+The nonzero elements of the light cone are **zero divisors** of the biquaternion algebra: they are nonzero elements $\tilde{Q}$ for which there exists a nonzero $\tilde{Y}$ with $\tilde{Q}\tilde{Y} = 0$. The zero divisor structure is intrinsic to the biquaternion algebra and reflects the fact that the light cone is the **characteristic cone** of the wave operator $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$.
 
 From the physical point of view, the zero divisors of $\mathbb{M}_-$ are the **null four-vectors**: the four-vectors of light signals, which have zero rest mass and propagate at the speed of light. The massless particles of relativistic physics correspond to the zero divisors of the biquaternion algebra. This is a structural fact of the algebra, not an additional assumption.
 
@@ -169,12 +169,12 @@ From the physical point of view, the zero divisors of $\mathbb{M}_-$ are the **n
 The four-vectors of physics transform under the Lorentz group by **rotor conjugation**:
 
 $$
-\tilde{Q}' = \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger,
+\tilde{Q}' = \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*},
 $$
 
-where $\tilde{\Lambda}$ is a **unit-norm biquaternion**, i.e. an element of the group $SL(2,\mathbb{C}) \subset \mathbb{B}$ satisfying $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$. The rotor $\tilde{\Lambda}$ is Hermitian (i.e. $\tilde{\Lambda}^\dagger = \tilde{\Lambda}$) for a pure boost, and a real quaternion for a pure spatial rotation. For a general Lorentz transformation, $\tilde{\Lambda}$ is a general unit-norm biquaternion in $\mathbb{B}$.
+where $\tilde{\Lambda}$ is a **unit-norm biquaternion**, i.e. an element of the group $SL(2,\mathbb{C}) \subset \mathbb{B}$ satisfying $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$. The rotor $\tilde{\Lambda}$ is Hermitian (i.e. $\tilde{\Lambda}^{*} = \tilde{\Lambda}$) for a pure boost, and a real quaternion for a pure spatial rotation. For a general Lorentz transformation, $\tilde{\Lambda}$ is a general unit-norm biquaternion in $\mathbb{B}$.
 
-The full development of the Lorentz transformation, including the boost biquaternion, its relation to the four-velocity, and its action on the four-potential, is the subject of the companion article. Here we only recall that the rotor conjugation **preserves** $\mathbb{M}_-$: if $\tilde{Q} \in \mathbb{M}_-$ and $\tilde{\Lambda}$ is a unit-norm biquaternion, then $\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger \in \mathbb{M}_-$.
+The full development of the Lorentz transformation, including the boost biquaternion, its relation to the four-velocity, and its action on the four-potential, is the subject of the companion article. Here we only recall that the rotor conjugation **preserves** $\mathbb{M}_-$: if $\tilde{Q} \in \mathbb{M}_-$ and $\tilde{\Lambda}$ is a unit-norm biquaternion, then $\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*} \in \mathbb{M}_-$.
 
 This is the biquaternion expression of the statement that the Lorentz group acts on the four-vector space and leaves it invariant. The rotor $\tilde{\Lambda}$ is a general unit-norm biquaternion in $\mathbb{B}$, Hermitian for pure boosts and real for pure rotations; the space on which the rotor acts is $\mathbb{M}_-$.
 
@@ -209,12 +209,12 @@ The four-vectors share the following structural features, which are the reasons 
 **3. Lorentz covariance.** The four-vectors transform under the Lorentz group by the **rotor conjugation**
 
 $$
-\tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger.
+\tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*}.
 $$
 
 The rotor $\tilde{\Lambda}$ is a unit-norm biquaternion, i.e. an element of the group $SL(2,\mathbb{C}) \subset \mathbb{B}$. The group lives in the full algebra $\mathbb{B}$, not in any single subspace (since $\mathbb{M}_-$ and $\mathbb{M}_+$ are not closed under multiplication). The different types of Lorentz transformation have rotors in different subspaces: **pure boosts** have rotors in $\mathbb{M}_+$ (they are Hermitian), **pure spatial rotations** have rotors in $\mathbb{H}_{\mathbb{B}}$ (they are real quaternions), and **general Lorentz transformations** have rotors in the full algebra $\mathbb{B}$.
 
-**4. Invariant norm.** Each four-vector has an invariant norm under the Lorentz group, equal to the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ evaluated on the four-vector. This is the biquaternion expression of the relativistic invariants: the interval for the four-position, $-c^2$ for the four-velocity, $-m^2 c^2$ for the four-momentum, and $0$ for the four-wavevector of light. The four-potential and the four-current are different in kind: the invariant statements associated with them are the gauge condition $\partial_\mu A^\mu = 0$ and the conservation law $\partial_\mu J^\mu = 0$, which constrain the divergence of the four-vector, not its biquaternion norm. The biquaternion norm $\tilde{A}\bar{\tilde{A}}$ vanishes only for a radiation field in the null gauge, and $\tilde{J}\bar{\tilde{J}}$ vanishes only for a null current, $|\mathbf{j}| = c\rho$.
+**4. Invariant norm.** Each four-vector has an invariant norm under the Lorentz group, equal to the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ evaluated on the four-vector. This is the biquaternion expression of the relativistic invariants: the interval for the four-position, $-c^2$ for the four-velocity, $-m^2 c^2$ for the four-momentum, and $0$ for the four-wavevector of light. The four-potential and the four-current are different in kind: the invariant statements associated with them are the gauge condition $\partial_\mu A^\mu = 0$ and the conservation law $\partial_\mu J^\mu = 0$, which constrain the divergence of the four-vector, not its biquaternion norm. The biquaternion norm $\tilde{A}\tilde{A}^{\natural}$ vanishes only for a radiation field in the null gauge, and $\tilde{J}\tilde{J}^{\natural}$ vanishes only for a null current, $|\mathbf{j}| = c\rho$.
 
 ## Summary
 
@@ -247,10 +247,10 @@ The subspace $\mathbb{M}_-$ is specifically the **representation** of the Lorent
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $s^2 = N(d\tilde{Q}) = d\tilde{Q}\,\overline{d\tilde{Q}}$ | Invariant interval |
-| $\tilde{\Lambda} \in \mathbb{B}$, $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ | Lorentz rotor (unit-norm biquaternion) |
-| $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ | Rotor conjugation |
+| $\tilde{\Lambda} \in \mathbb{B}$, $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ | Lorentz rotor (unit-norm biquaternion) |
+| $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation |
 
 ## Further Reading
 

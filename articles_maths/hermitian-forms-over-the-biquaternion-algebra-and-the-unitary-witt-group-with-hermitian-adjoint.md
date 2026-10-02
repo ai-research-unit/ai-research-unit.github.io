@@ -2,13 +2,13 @@
 
 ## Introduction
 
-Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ be the biquaternion algebra with the Hermitian conjugation ${}^{\dagger}$, fixed space $\mathbb{M}_+$ and anti-fixed space $\mathbb{M}_-$. This article is the biquaternion instance of *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, and the companion of *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*: that article studies the operator $\tilde R\mapsto \tilde R\tilde Y\tilde R^{\dagger}$ on the algebra, this one studies the **forms** on which the congruence $H\mapsto S^{\dagger}HS$ acts, that is, the objects the two-sided operators are made to transform.
+Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ be the biquaternion algebra with the Hermitian conjugation ${}^{*}$, fixed space $\mathbb{M}_+$ and anti-fixed space $\mathbb{M}_-$. This article is the biquaternion instance of *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, and the companion of *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*: that article studies the operator $\tilde R\mapsto \tilde R\tilde Y\tilde{R}^{*}$ on the algebra, this one studies the **forms** on which the congruence $H\mapsto S^{\dagger}HS$ acts, that is, the objects the two-sided operators are made to transform.
 
 The results are the classical ones of a positive involution, made explicit in the matrix model: a Hermitian form on the algebra is a Hermitian matrix, congruence is the dagger congruence, **the invariant is the inertia** (Sylvester's law), every form is congruent to its normal form $\mathrm{diag}(1_{p},-1_{q},0_{r})$, the isometry group of the unit form is the unitary slice $U=U(2)$, and the forms modulo the hyperbolic ones form the **unitary Witt group** $W\cong\mathbb{Z}$, the invariant being the signature. Four facts of the algebra enter and none is special: the algebra is simple, the involution is positive, the centre is $\mathbb{C}$, and the rank-one module over the algebra is $\mathbb{C}^{2}$ in the matrix model.
 
 ## Hermitian Forms on the Algebra
 
-**Definition.** Let $M$ be a right $\mathbb{B}$-module and let $h:M\times M\to\mathbb{B}$ be sesquilinear, $h(\tilde R\lambda+\tilde Y\mu,z)=\lambda^{\dagger}h(\tilde R,z)+\mu^{\dagger}h(\tilde Y,z)$ and $h(\tilde R,\tilde Y\lambda)=h(\tilde R,\tilde Y)\lambda$. The form is **Hermitian** if in addition
+**Definition.** Let $M$ be a right $\mathbb{B}$-module and let $h:M\times M\to\mathbb{B}$ be sesquilinear, $h(\tilde R\lambda+\tilde Y\mu,z)=\bar{\lambda}h(\tilde R,z)+\bar{\mu}h(\tilde Y,z)$ and $h(\tilde R,\tilde Y\lambda)=h(\tilde R,\tilde Y)\lambda$. The form is **Hermitian** if in addition
 
 $$
 h(\tilde Y,\tilde R) = h(\tilde R,\tilde Y)^{\dagger}.
@@ -19,14 +19,14 @@ The form is **non-degenerate** if $h(\tilde R,\tilde Y)=0$ for all $\tilde Y$ im
 **Proposition (the forms of the rank-one module).** Let $M=\mathbb{B}$ with the right action of the algebra on itself. Every Hermitian form on $M$ is
 
 $$
-h_{H}(\tilde R,\tilde Y) = \tilde R^{\dagger}H\,\tilde Y\qquad\text{with } H\in\mathbb{M}_+,
+h_{H}(\tilde R,\tilde Y) = \tilde{R}^{*}H\,\tilde Y\qquad\text{with } H\in\mathbb{M}_+,
 $$
 
 and the map $H\mapsto h_{H}$ is an isomorphism of the Hermitian elements onto the Hermitian forms. In the matrix model $\Phi(H)$ is a Hermitian $2\times2$ matrix and $h_{H}(\tilde R,\tilde Y)=\Phi(\tilde R)^{\dagger}\Phi(H)\Phi(\tilde Y)$.
 
-*Proof.* Sesquilinearity and the Hermitian symmetry give $h(\tilde R,\tilde Y)=\tilde R^{\dagger}h(e_{0},\tilde Y)=\tilde R^{\dagger}h(e_{0},e_{0})\tilde Y$, with $H=h(e_{0},e_{0})\in\mathbb{M}_+$ by the symmetry, and conversely every such $h_{H}$ is a Hermitian form.
+*Proof.* Sesquilinearity and the Hermitian symmetry give $h(\tilde R,\tilde Y)=\tilde{R}^{*}h(e_{0},\tilde Y)=\tilde{R}^{*}h(e_{0},e_{0})\tilde Y$, with $H=h(e_{0},e_{0})\in\mathbb{M}_+$ by the symmetry, and conversely every such $h_{H}$ is a Hermitian form.
 
-**Example (the unit form).** $H=e_{0}$ gives $h_{e_{0}}(\tilde R,\tilde Y)=\tilde R^{\dagger}\tilde Y$, of scalar part $\mathrm{Sc}(\tilde R^{\dagger}\tilde Y)=\sum_{\mu}R_{\mu}^{*}Y_{\mu}$: the **unit form**, positive definite, the form of the Hermitian structure of the algebra and the trace form of the dagger. Its matrix in the basis $e_{\mu}$ is the identity.
+**Example (the unit form).** $H=e_{0}$ gives $h_{e_{0}}(\tilde R,\tilde Y)=\tilde{R}^{*}\tilde Y$, of scalar part $\mathrm{Sc}(\tilde{R}^{*}\tilde Y)=\sum_{\mu}R_{\mu}^{*}Y_{\mu}$: the **unit form**, positive definite, the form of the Hermitian structure of the algebra and the trace form of the dagger. Its matrix in the basis $e_{\mu}$ is the identity.
 
 **Example (the norm form, and why it is not here).** The quaternion norm $N(\tilde R)=\sum_{\mu}R_{\mu}^{2}$ is a quadratic form of the algebra but it is **not** Hermitian for the dagger: $N$ is complex-valued, indefinite and isotropic on the null cone. It is a form of the complex bilinear type, not a form of the dagger, and the two must not be placed in the same classification (*Biquaternion Norm and Invertibility*).
 
@@ -98,12 +98,12 @@ $$
 
 is the **hyperbolic plane**; the forms of inertia $(p+k,q+k,r)$ that are orthogonal sums of a form with the hyperbolic plane are **hyperbolic**. A non-degenerate form with $p=q$ is hyperbolic.
 
-**Definition (the unitary Witt group).** On the non-degenerate Hermitian forms, call two forms **Witt equivalent** if they become isometric after adding hyperbolic planes to each. The classes form the **unitary Witt group** $W(\mathbb{B},{}^{\dagger})$ under the orthogonal sum, the inverse of a class being given by the negation of the form.
+**Definition (the unitary Witt group).** On the non-degenerate Hermitian forms, call two forms **Witt equivalent** if they become isometric after adding hyperbolic planes to each. The classes form the **unitary Witt group** $W(\mathbb{B},{}^{*})$ under the orthogonal sum, the inverse of a class being given by the negation of the form.
 
 **Theorem (the Witt group of the biquaternion algebra is $\mathbb{Z}$).** The signature is a complete invariant of the Witt class, and
 
 $$
-W(\mathbb{B},{}^{\dagger}) \;\cong\; \mathbb{Z},\qquad \text{generated by the class of the unit form } h_{e_{0}} .
+W(\mathbb{B},{}^{*}) \;\cong\; \mathbb{Z},\qquad \text{generated by the class of the unit form } h_{e_{0}} .
 $$
 
 *Proof.* The signature is additive, vanishes on the hyperbolic plane and changes sign under the negation, so it descends to a group homomorphism $W\to\mathbb{Z}$. It is injective because a form with signature zero has $p=q$, hence is hyperbolic, hence is the zero class; and it is surjective because the class of the unit form has signature $2$, so its multiples realise every even integer, while the class of the form $\mathrm{diag}(1,-1,-1,-1)$ has signature $-2$ and realises the negative ones. In the rank-two module the same argument applies with the signature of a $4\times4$ Hermitian matrix.
@@ -128,14 +128,14 @@ $$
 
 ## Summary
 
-A Hermitian form on the rank-one module over the biquaternion algebra is a Hermitian matrix $H$, $h_{H}(\tilde R,\tilde Y)=\tilde R^{\dagger}H\tilde Y$; congruence $H\mapsto S^{\dagger}HS$ is the two-sided operator of the corpus applied to the form, and its equivalence classes are the **inertias** $(p,q,r)$ with $p+q+r=2$, by **Sylvester's law**, with normal form $\mathrm{diag}(1_{p},-1_{q},0_{r})$. The signature $\sigma=p-q$ and the rank are additive under the orthogonal sum. The isometry group of the unit form $h_{e_{0}}(\tilde R,\tilde Y)=\tilde R^{\dagger}\tilde Y$ is the unitary slice $U=U(2)$, and the isometry group of the quaternion norm is a different, non-compact group, because the two forms are of different types. The hyperbolic plane $\mathrm{diag}(1,-1)$ is the null form of the Witt theory, and the non-degenerate forms modulo the hyperbolic ones form the **unitary Witt group $W(\mathbb{B},{}^{\dagger})\cong\mathbb{Z}$**, generated by the unit form and computed by the signature. The $\varepsilon$-Hermitian case is the signed analogue, with the same inertia theory because the twist is an isomorphism of the Hermitian cone.
+A Hermitian form on the rank-one module over the biquaternion algebra is a Hermitian matrix $H$, $h_{H}(\tilde R,\tilde Y)=\tilde{R}^{*}H\tilde Y$; congruence $H\mapsto S^{\dagger}HS$ is the two-sided operator of the corpus applied to the form, and its equivalence classes are the **inertias** $(p,q,r)$ with $p+q+r=2$, by **Sylvester's law**, with normal form $\mathrm{diag}(1_{p},-1_{q},0_{r})$. The signature $\sigma=p-q$ and the rank are additive under the orthogonal sum. The isometry group of the unit form $h_{e_{0}}(\tilde R,\tilde Y)=\tilde{R}^{*}\tilde Y$ is the unitary slice $U=U(2)$, and the isometry group of the quaternion norm is a different, non-compact group, because the two forms are of different types. The hyperbolic plane $\mathrm{diag}(1,-1)$ is the null form of the Witt theory, and the non-degenerate forms modulo the hyperbolic ones form the **unitary Witt group $W(\mathbb{B},{}^{*})\cong\mathbb{Z}$**, generated by the unit form and computed by the signature. The $\varepsilon$-Hermitian case is the signed analogue, with the same inertia theory because the twist is an isomorphism of the Hermitian cone.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $h_{H}(\tilde R,\tilde Y)=\tilde R^{\dagger}H\tilde Y$ | Hermitian form of the rank-one module, $H\in\mathbb{M}_+$ |
-| $h_{e_{0}}(\tilde R,\tilde Y)=\tilde R^{\dagger}\tilde Y$ | The unit form; positive definite; trace form of the dagger |
+| $h_{H}(\tilde R,\tilde Y)=\tilde{R}^{*}H\tilde Y$ | Hermitian form of the rank-one module, $H\in\mathbb{M}_+$ |
+| $h_{e_{0}}(\tilde R,\tilde Y)=\tilde{R}^{*}\tilde Y$ | The unit form; positive definite; trace form of the dagger |
 | $N(\tilde R)=\sum_{\mu}R_{\mu}^{2}$ | The quaternion norm; **not** a Hermitian form of the dagger |
 | $H'\sim H \iff H'=S^{\dagger}HS$ | Congruence; the two-sided operator on the form matrix |
 | $(p,q,r)$ | Inertia: positive, negative and null dimensions |
@@ -143,7 +143,7 @@ A Hermitian form on the rank-one module over the biquaternion algebra is a Hermi
 | $\mathrm{Hyp}=\mathrm{diag}(1,-1)$ | The hyperbolic plane; signature $0$, Witt class $0$ |
 | $U(H)=\{S:S^{\dagger}HS=H\}$ | Isometry group; $U(e_{0})=U(2)$ |
 | $\sigma=p-q$ | Signature; complete invariant of the Witt class |
-| $W(\mathbb{B},{}^{\dagger})\cong\mathbb{Z}$ | The unitary Witt group, generated by the unit form |
+| $W(\mathbb{B},{}^{*})\cong\mathbb{Z}$ | The unitary Witt group, generated by the unit form |
 
 ## Further Reading
 

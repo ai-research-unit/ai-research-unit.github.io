@@ -19,7 +19,7 @@ The three classical families are the isometry groups of the three types of non-d
 | the orthogonal group $\operatorname{O}(V,q)$ | the isometries of a quadratic form $q$, equivalently of its polar form $B$ | *Isometries and Orthogonal Transformations*; *The Unitary and Symplectic Groups* |
 | the special orthogonal group $\operatorname{SO}(V,q)$ | the isometries of determinant $+1$; the kernel of $\det$ on $\operatorname{O}(V,q)$ | *Isometries and Orthogonal Transformations*; *The Rotation Group and Orientation* |
 | the similarity group $GO(V,q)$ | the maps with $q(Tv) = c\,q(v)$ for a multiplier $c$; its multiplier group | *Isometries and Orthogonal Transformations* |
-| the unitary group $\operatorname{U}(V,h)$ | the isometries of a Hermitian form; a sesquilinear form with an involution | *The Unitary and Symplectic Groups*; *Involutive Clifford Algebras* |
+| the unitary group $\operatorname{U}(V,h)$ | the isometries of a Hermitian form; a sesquilinear form with an involution | *The Unitary and Symplectic Groups*; *Hilbert Algebras* |
 | the special unitary group $\operatorname{SU}(V,h)$ | the isometries of determinant one; $\operatorname{SU}(V,h) = \operatorname{U}(V,h) \cap SL(V)$ | *The Unitary and Symplectic Groups* |
 | the symplectic group $\operatorname{Sp}(V,\omega)$ | the isometries of a non-degenerate alternating form; contained in $SL(V)$ by the Pfaffian | *The Unitary and Symplectic Groups*; *Symplectic Forms and Poisson Brackets* |
 | the family of a classical group | the orthogonal, unitary and symplectic groups generate the families $B_n$, $D_n$, $A_n$ and $C_n$ | *The Unitary and Symplectic Groups*; *Root Systems and Classification* |
@@ -46,7 +46,7 @@ A Hermitian form has a signature by the inertia theorem, and its isometry group 
 
 | Object or statement | The property it has | Introduced in |
 |---|---|---|
-| the Hermitian Gram matrix $H$ | $H^\dagger = H$; the form is $h(u,v) = u^\dagger Hv$ | *Involutive Clifford Algebras*; *The Unitary and Symplectic Groups* |
+| the Hermitian Gram matrix $H$ | $H^\dagger = H$; the form is $h(u,v) = u^\dagger Hv$ | *Hilbert Algebras*; *The Unitary and Symplectic Groups* |
 | the inertia theorem for Hermitian forms | a unique signature $(p,r,z)$ with normal form $\operatorname{diag}(I_p,-I_r,0_z)$; non-degenerate when $z = 0$ | *The Unitary and Symplectic Groups* |
 | the group $U(p,r)$ | the isometry group of a Hermitian form of signature $(p,r)$, of real dimension $n^2$ | *The Unitary and Symplectic Groups* |
 | the group $SU(p,r)$ | the determinant-one subgroup, of real dimension $n^2 - 1$ | *The Unitary and Symplectic Groups* |

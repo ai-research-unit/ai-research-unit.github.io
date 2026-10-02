@@ -7,7 +7,7 @@ The algebra article defined the split biquaternion algebra $\mathbb{H}_{\mathbb{
 
 The treatment is purely mathematical. Every claim is either proved or stated as a definition. No physics is invoked. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ is assumed from the basic algebra article, together with its four conjugations, its four fixed-point subspaces $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ and its idempotent decomposition. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$. The quaternion algebra $\mathbb{H}$ is assumed to be a division algebra.
 
-Throughout, a split biquaternion is written $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu = q_\mu + j q'_\mu$ and $q_\mu, q'_\mu \in \mathbb{R}$. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, the split complex conjugate is $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$ with $Q_\mu^* = q_\mu - j q'_\mu$, the Hermitian conjugate is $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$. The split-biquaternion norm $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ is the form of *Split-Biquaternion Norm and Invertibility*, which this article names and does not use.
+Throughout, a split biquaternion is written $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu = q_\mu + j q'_\mu$ and $q_\mu, q'_\mu \in \mathbb{R}$. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$, the split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \mathbf{Q}^*$ with $Q_\bar{\mu} = q_\mu - j q'_\mu$, the Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$. The split-biquaternion norm $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ is the form of *Split-Biquaternion Norm and Invertibility*, which this article names and does not use.
 
 The result that shapes the whole article is that $\mathbb{H}_{\mathbb{D}}$ has **exactly four idempotents**, and that all of them are central. This is a strict contrast with the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, whose idempotents form a four-dimensional family in bijection with the roots of $-1$. The reason is structural: $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ is a product of two division algebras, and a product of division algebras admits only the idempotents that are constant on each factor. This article records that rigidity and its consequences; the parallel study of the *ideals* of the algebra, and of the resulting Peirce decomposition and $\mathbb{H} \oplus \mathbb{H}$ splitting, is the subject of *Split-Biquaternion Ideals and Peirce Decomposition*.
 
@@ -127,7 +127,7 @@ $$
 
 with $\mathbb{H} \tilde\Pi_+ = \mathbb{H}_{\mathbb{D}} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_- = \mathbb{H}_{\mathbb{D}} \tilde\Pi_-$.
 
-A **Hermitian idempotent** is one satisfying $\tilde P^\dagger = \tilde P$; in $\mathbb{B}$ these are the orthogonal projections for the Hermitian form and the ones that occur in the spectral decomposition of a Hermitian element. In $\mathbb{H}_{\mathbb{D}}$ there is no nontrivial Hermitian idempotent: the calculation $\tilde\Pi_\pm^\dagger = \tilde\Pi_\mp$ of the second section shows that the two nontrivial idempotents are interchanged by $\dagger$, and neither is fixed. The idempotent decomposition of $\mathbb{H}_{\mathbb{D}}$ is therefore a decomposition into two ideals that are exchanged by the Hermitian conjugation, not a decomposition into orthogonal projections.
+A **Hermitian idempotent** is one satisfying $\tilde{P}^{*} = \tilde P$; in $\mathbb{B}$ these are the orthogonal projections for the Hermitian form and the ones that occur in the spectral decomposition of a Hermitian element. In $\mathbb{H}_{\mathbb{D}}$ there is no nontrivial Hermitian idempotent: the calculation $\tilde\Pi_\pm^\dagger = \tilde\Pi_\mp$ of the second section shows that the two nontrivial idempotents are interchanged by ${}^{*}$, and neither is fixed. The idempotent decomposition of $\mathbb{H}_{\mathbb{D}}$ is therefore a decomposition into two ideals that are exchanged by the Hermitian conjugation, not a decomposition into orthogonal projections.
 
 ## Idempotents and the Zero Divisors
 
@@ -192,7 +192,7 @@ There are exactly four idempotents, namely $0, \tilde\Pi_+, \tilde\Pi_-, 1$, and
 | $\mathrm{Ann}(\tilde\Pi_\pm) = \mathbb{H} \tilde\Pi_\mp$ | Annihilator of an idempotent |
 | $\xi$, $\mu_\pm$ | Root of $-1$; unit pure real quaternion components |
 | $S^2 \times S^2$ | The topological product form of the root set, established in *Split-Biquaternion Analysis* |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Split-Biquaternion norm, named only; the subject of *Split-Biquaternion Norm and Invertibility* |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Split-Biquaternion norm, named only; the subject of *Split-Biquaternion Norm and Invertibility* |
 
 ## Further Reading
 

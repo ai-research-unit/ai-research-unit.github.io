@@ -81,7 +81,7 @@ i.e. $\mathbb{B}$ acts on the module factor and **trivially** on the multiplicit
 | $\dim_{\mathbb{C}}S$ | $2$ | none |
 | $\dim_{\mathbb{C}}\Delta$ | $4$ | none |
 | Trace formula | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | none |
-| Real structure $\flat=-\dagger$, fixed spaces | $\mathbb{M}_\pm$ | none |
+| Real structure $\flat=-{}^{*}$, fixed spaces | $\mathbb{M}_\pm$ | none |
 | Anomaly conditions (per generation) | all zero | none |
 
 Every entry is fixed by the algebra alone, and none contains $N_g$. A framework that derived the generation number would have to produce the integer from one of these quantities or from a relation among them; no such relation exists, because the multiplicities do not enter any of them.

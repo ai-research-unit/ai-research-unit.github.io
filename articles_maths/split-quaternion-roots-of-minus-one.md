@@ -5,7 +5,7 @@
 
 This article determines the solutions of the equation $\xi^2 = -1$ in the split-quaternion algebra. It proves that the solutions are exactly the elements of the vector subspace of unit norm, identifies them with the complex structures of the plane, proves that they form a single conjugacy class and describes them as a homogeneous space, relates them to the idempotents and to the zero divisors, and compares the result with the quaternion case.
 
-The split-quaternion algebra, its basis, its vector subspace $V$, its central product $N(\tilde q) = \tilde q\bar{\tilde q}$, its idempotents $\tilde\pi_\pm$ and its conjugation are assumed from *Split-Quaternion Algebra*; the metrical reading of $N$ is in *Split-Quaternion Norm and Invertibility*. The criterion that the units are the elements with $N \neq 0$ and the description of the zero divisors are assumed from *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Zero Divisors*; the zero divisor set is not re-described here. The hyperbolic plane that the solution set carries is treated in *Split-Quaternions and Hyperbolic Geometry*, and the double cover of the Lorentz group that acts on it in *Split-Quaternion Rotations and the Lorentz Group*. Nothing physical is invoked.
+The split-quaternion algebra, its basis, its vector subspace $V$, its central product $N(\tilde q) = \tilde q\tilde{q}^{\natural}$, its idempotents $\tilde\pi_\pm$ and its conjugation are assumed from *Split-Quaternion Algebra*; the metrical reading of $N$ is in *Split-Quaternion Norm and Invertibility*. The criterion that the units are the elements with $N \neq 0$ and the description of the zero divisors are assumed from *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Zero Divisors*; the zero divisor set is not re-described here. The hyperbolic plane that the solution set carries is treated in *Split-Quaternions and Hyperbolic Geometry*, and the double cover of the Lorentz group that acts on it in *Split-Quaternion Rotations and the Lorentz Group*. Nothing physical is invoked.
 
 ## The Equation and the Reduction to the Vector Subspace
 
@@ -137,10 +137,10 @@ $$
 
 so the idempotent is a zero divisor, and the same holds for $p_-$.
 
-For the converse, let $p$ be a non-scalar idempotent, and write $p = \tfrac12 + u$ with $u \in V$. From $p^2 = p$ one gets $u^2 = \tfrac14$, so $N(u) = -\tfrac14$ and $u \neq 0$; putting $\eta = 2u$ gives $\eta \in V$, $\eta^2 = 1$ and $N(\eta) = -1$, so $\eta$ is a root of $+1$ in $V$ and $p = \tfrac12(1 + \eta)$, with $\eta = 2p - 1$ determined by $p$. Also $\bar p = \tfrac12 - u = 1 - p$. Put $\eta = 2p - 1$. Then
+For the converse, let $p$ be a non-scalar idempotent, and write $p = \tfrac12 + u$ with $u \in V$. From $p^2 = p$ one gets $u^2 = \tfrac14$, so $N(u) = -\tfrac14$ and $u \neq 0$; putting $\eta = 2u$ gives $\eta \in V$, $\eta^2 = 1$ and $N(\eta) = -1$, so $\eta$ is a root of $+1$ in $V$ and $p = \tfrac12(1 + \eta)$, with $\eta = 2p - 1$ determined by $p$. Also $p^{\natural} = \tfrac12 - u = 1 - p$. Put $\eta = 2p - 1$. Then
 
 $$
-\bar{\eta} = 2\bar{p} - 1 = 2(1 - p) - 1 = 1 - 2p = -\eta,
+\bar{\eta} = 2p^{\natural} - 1 = 2(1 - p) - 1 = 1 - 2p = -\eta,
 $$
 
 so $\eta$ lies in the $-1$ eigenspace of the conjugation, which is $V$; and $\eta^2 = 4p^2 - 4p + 1 = 1$. The element $p$ is recovered from $\eta$ as $\tfrac12(1+\eta)$, so the correspondence is bijective.

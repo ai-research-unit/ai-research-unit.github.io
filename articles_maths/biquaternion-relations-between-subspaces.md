@@ -8,25 +8,25 @@ Every number below — dimensions of intersections, of sums, and the entries of 
 
 ## The Three Decompositions
 
-The three commuting involutions $\bar{\cdot}$, ${}^{*}$ and ${}^{\dagger}$ each split $\mathbb{B}$ into a fixed space and an anti-fixed space, and each split gives a direct-sum decomposition of the algebra into two of the distinguished subspaces:
+The three commuting involutions ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ each split $\mathbb{B}$ into a fixed space and an anti-fixed space, and each split gives a direct-sum decomposition of the algebra into two of the distinguished subspaces:
 
 | involution | fixed space | anti-fixed space | decomposition |
 |---|---|---|---|
-| $\bar{\cdot}$ | $\mathbb{C}_{\mathbb{B}}$ | $\mathrm{Vect}(\mathbb{B})$ | $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ |
-| ${}^{*}$ | $\mathbb{H}_{\mathbb{B}}$ | $i\mathbb{H}_{\mathbb{B}}$ | $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ |
-| ${}^{\dagger}$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ | $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ |
+| ${}^{\natural}$ | $\mathbb{C}_{\mathbb{B}}$ | $\mathrm{Vect}(\mathbb{B})$ | $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ |
+| $\bar{\cdot}$ | $\mathbb{H}_{\mathbb{B}}$ | $i\mathbb{H}_{\mathbb{B}}$ | $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ |
+| ${}^{*}$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ | $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ |
 
-The fourth conjugation, the reversal $\flat = -\dagger$, has the same eigenspaces as $\dagger$ with the signs exchanged: its fixed space is $\mathbb{M}_-$ and its anti-fixed space is $\mathbb{M}_+$, so it produces no subspace beyond those of the table. The three decompositions are the **scalar–vector**, the **quaternion** and the **Hermitian** decomposition of the algebra, and every element has three readings, one per row.
+The fourth conjugation, the reversal $\flat = -{}^{*}$, has the same eigenspaces as ${}^{*}$ with the signs exchanged: its fixed space is $\mathbb{M}_-$ and its anti-fixed space is $\mathbb{M}_+$, so it produces no subspace beyond those of the table. The three decompositions are the **scalar–vector**, the **quaternion** and the **Hermitian** decomposition of the algebra, and every element has three readings, one per row.
 
 ## The Six Subspaces at a Glance
 
 | subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ | subalgebra | norm |
 |---|---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $\bar{\tilde{Q}} = \tilde{Q}$ | $e_0, ie_0$ | $2$ | yes, $\cong \mathbb{C}$ | $Q_0^2$, complex, real signature $(1,1)$ |
-| $\mathrm{Vect}(\mathbb{B})$ | $\bar{\tilde{Q}} = -\tilde{Q}$ | $e_1,e_2,e_3,ie_1,ie_2,ie_3$ | $6$ | no, Lie | $Q_1^2+Q_2^2+Q_3^2$, complex, real signature $(3,3)$ |
-| $\mathbb{H}_{\mathbb{B}}$ | $\tilde{Q}^{*} = \tilde{Q}$ | $e_0,e_1,e_2,e_3$ | $4$ | yes, $\cong \mathbb{H}$ | $q_0^2+q_1^2+q_2^2+q_3^2$, definite positive |
-| $i\mathbb{H}_{\mathbb{B}}$ | $\tilde{Q}^{*} = -\tilde{Q}$ | $ie_0,ie_1,ie_2,ie_3$ | $4$ | no | $-\sum_\mu (q'_\mu)^2$, definite negative |
-| $\mathbb{M}_+$ | $\tilde{Q}^{\dagger} = \tilde{Q}$ | $e_0,ie_1,ie_2,ie_3$ | $4$ | no, Jordan | $q_0^2 - |\mathbf{q}'|^2$, signature $(1,3)$ |
+| $\mathbb{C}_{\mathbb{B}}$ | $\tilde{Q}^{\natural} = \tilde{Q}$ | $e_0, ie_0$ | $2$ | yes, $\cong \mathbb{C}$ | $Q_0^2$, complex, real signature $(1,1)$ |
+| $\mathrm{Vect}(\mathbb{B})$ | $\tilde{Q}^{\natural} = -\tilde{Q}$ | $e_1,e_2,e_3,ie_1,ie_2,ie_3$ | $6$ | no, Lie | $Q_1^2+Q_2^2+Q_3^2$, complex, real signature $(3,3)$ |
+| $\mathbb{H}_{\mathbb{B}}$ | $\bar{\tilde{Q}} = \tilde{Q}$ | $e_0,e_1,e_2,e_3$ | $4$ | yes, $\cong \mathbb{H}$ | $q_0^2+q_1^2+q_2^2+q_3^2$, definite positive |
+| $i\mathbb{H}_{\mathbb{B}}$ | $\bar{\tilde{Q}} = -\tilde{Q}$ | $ie_0,ie_1,ie_2,ie_3$ | $4$ | no | $-\sum_\mu (q'_\mu)^2$, definite negative |
+| $\mathbb{M}_+$ | $\tilde{Q}^{*} = \tilde{Q}$ | $e_0,ie_1,ie_2,ie_3$ | $4$ | no, Jordan | $q_0^2 - |\mathbf{q}'|^2$, signature $(1,3)$ |
 | $\mathbb{M}_-$ | $\tilde{Q}^{\flat} = \tilde{Q}$ | $ie_0,e_1,e_2,e_3$ | $4$ | no, Lie | $|\mathbf{q}|^2 - (q'_0)^2$, signature $(3,1)$ |
 
 Only two of the six are closed under multiplication, and among the remaining four two are closed under the commutator as Lie algebras and one under the symmetrized product as a Jordan algebra; the table names them in the last column.
@@ -100,14 +100,14 @@ Each of the four involutions preserves each of the six subspaces, and its restri
 
 | involution | $\mathbb{C}_{\mathbb{B}}$ | $\mathrm{Vect}(\mathbb{B})$ | $\mathbb{H}_{\mathbb{B}}$ | $i\mathbb{H}_{\mathbb{B}}$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
 |---|---|---|---|---|---|---|
-| $\bar{\cdot}$ | $0$ of $2$ | $6$ of $6$ | $3$ of $4$ | $3$ of $4$ | $3$ of $4$ | $3$ of $4$ |
-| ${}^{*}$ | $1$ of $2$ | $3$ of $6$ | $0$ of $4$ | $4$ of $4$ | $3$ of $4$ | $1$ of $4$ |
-| ${}^{\dagger}$ | $1$ of $2$ | $3$ of $6$ | $3$ of $4$ | $1$ of $4$ | $0$ of $4$ | $4$ of $4$ |
+| ${}^{\natural}$ | $0$ of $2$ | $6$ of $6$ | $3$ of $4$ | $3$ of $4$ | $3$ of $4$ | $3$ of $4$ |
+| $\bar{\cdot}$ | $1$ of $2$ | $3$ of $6$ | $0$ of $4$ | $4$ of $4$ | $3$ of $4$ | $1$ of $4$ |
+| ${}^{*}$ | $1$ of $2$ | $3$ of $6$ | $3$ of $4$ | $1$ of $4$ | $0$ of $4$ | $4$ of $4$ |
 | $\flat$ | $1$ of $2$ | $3$ of $6$ | $1$ of $4$ | $3$ of $4$ | $4$ of $4$ | $0$ of $4$ |
 
-The vanishing entries are the definitions: $\bar{\cdot}$ acts as the identity exactly on the centre, ${}^{*}$ exactly on the quaternion subspace, ${}^{\dagger}$ exactly on $\mathbb{M}_+$, and $\flat$ exactly on $\mathbb{M}_-$. The full multiplicities are the definitions of the complementary subspaces: $\bar{\cdot}$ acts as minus the identity exactly on the vector subspace, ${}^{*}$ as minus the identity exactly on $i\mathbb{H}_{\mathbb{B}}$, ${}^{\dagger}$ as minus the identity exactly on $\mathbb{M}_-$, and $\flat$ as minus the identity exactly on $\mathbb{M}_+$. The remaining entries are the mixed restrictions, which are neither the identity nor its negative.
+The vanishing entries are the definitions: ${}^{\natural}$ acts as the identity exactly on the centre, $\bar{\cdot}$ exactly on the quaternion subspace, ${}^{*}$ exactly on $\mathbb{M}_+$, and $\flat$ exactly on $\mathbb{M}_-$. The full multiplicities are the definitions of the complementary subspaces: ${}^{\natural}$ acts as minus the identity exactly on the vector subspace, $\bar{\cdot}$ as minus the identity exactly on $i\mathbb{H}_{\mathbb{B}}$, ${}^{*}$ as minus the identity exactly on $\mathbb{M}_-$, and $\flat$ as minus the identity exactly on $\mathbb{M}_+$. The remaining entries are the mixed restrictions, which are neither the identity nor its negative.
 
-Two consequences follow from the table alone. First, no subspace other than the centre is fixed pointwise by more than one of the four involutions, and the six subspaces are pairwise distinct as sets. Second, the composition rule $\dagger = {}^{*}\circ\bar{\cdot}$ is visible row by row: the coordinates negated by ${}^{\dagger}$ are exactly those negated by one of ${}^{*}$ and $\bar{\cdot}$ but not by both, so the multiplicities compose by symmetric difference. On the quaternion subspace, for instance, ${}^{*}$ negates none and $\bar{\cdot}$ negates the three vector units, so ${}^{\dagger}$ negates the same three and the multiplicity is $3$; on $\mathbb{M}_+$, ${}^{*}$ and $\bar{\cdot}$ negate the same three coordinates, and those cancel, leaving multiplicity $0$.
+Two consequences follow from the table alone. First, no subspace other than the centre is fixed pointwise by more than one of the four involutions, and the six subspaces are pairwise distinct as sets. Second, the composition rule ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ is visible row by row: the coordinates negated by ${}^{*}$ are exactly those negated by one of $\bar{\cdot}$ and ${}^{\natural}$ but not by both, so the multiplicities compose by symmetric difference. On the quaternion subspace, for instance, $\bar{\cdot}$ negates none and ${}^{\natural}$ negates the three vector units, so ${}^{*}$ negates the same three and the multiplicity is $3$; on $\mathbb{M}_+$, $\bar{\cdot}$ and ${}^{\natural}$ negate the same three coordinates, and those cancel, leaving multiplicity $0$.
 
 ## How the Operations Act on the Splits
 
@@ -163,10 +163,10 @@ The intersection $\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-$ consists of the ele
 The pair $(\mathbb{M}_+,\mathbb{M}_-)$ has intersection zero and dimensions $4$ and $4$, so it spans: every element of $\mathbb{B}$ is the sum of a Hermitian and an anti-Hermitian part,
 
 $$
-\tilde{Q} = \frac{\tilde{Q} + \tilde{Q}^{\dagger}}{2} + \frac{\tilde{Q} - \tilde{Q}^{\dagger}}{2} ,
+\tilde{Q} = \frac{\tilde{Q} + \tilde{Q}^{*}}{2} + \frac{\tilde{Q} - \tilde{Q}^{*}}{2} ,
 $$
 
-and the two summands are unique because the intersection is the origin. The same computation with $\bar{\cdot}$ in place of $\dagger$ gives the scalar–vector decomposition and with ${}^{*}$ the quaternion decomposition; the three are the rows of the first table of the article.
+and the two summands are unique because the intersection is the origin. The same computation with ${}^{\natural}$ in place of ${}^{*}$ gives the scalar–vector decomposition and with $\bar{\cdot}$ the quaternion decomposition; the three are the rows of the first table of the article.
 
 ### A Mixed Element and Its Blocks
 
@@ -185,7 +185,7 @@ The six distinguished subspaces of $\mathbb{B}$ are organized by three decomposi
 | $\mathbb{M}_+, \mathbb{M}_-$ | the Hermitian and anti-Hermitian subspaces |
 | $\langle \cdot \rangle$ | the real span of the listed elements |
 | coordinate block | one of $\langle e_0\rangle$, $\langle e_1,e_2,e_3\rangle$, $\langle ie_1,ie_2,ie_3\rangle$, $\langle ie_0\rangle$ |
-| $\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$ | quaternion, complex, Hermitian conjugation and reversal |
+| ${}^{\natural}, \bar{\cdot}, {}^{*}, \flat$ | quaternion, complex, Hermitian conjugation and reversal |
 | $\mathbf{q} \times \mathbf{r}$, $(\mathbf{q},\mathbf{r})$ | the cross and dot products of vector coefficient triples |
 | $\tilde{Q} \circ \tilde{R}$ | the symmetrized product |
 

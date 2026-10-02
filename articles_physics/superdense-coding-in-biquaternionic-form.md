@@ -57,10 +57,10 @@ e_0,\ e_1,\ e_2,\ e_3 \in Q_8/\{\pm e_0\} \cong \mathbb{Z}_2\times\mathbb{Z}_2 ,
 \text{mapping to } I,\ -i\sigma_1,\ -i\sigma_2,\ -i\sigma_3 .
 $$
 
-Each is unitary, $e_k\,e_k^\dagger = e_k(-e_k) = e_0$, and Hermitian up to the central $i$; each acts on the state by
+Each is unitary, $e_k\,e_k^{*} = e_k(-e_k) = e_0$, and Hermitian up to the central $i$; each acts on the state by
 
 $$
-\tilde{\rho} = P_{\Phi^+} \ \longmapsto\ (e_k\otimes e_0)\,\tilde{\rho}\,(e_k\otimes e_0)^\dagger .
+\tilde{\rho} = P_{\Phi^+} \ \longmapsto\ (e_k\otimes e_0)\,\tilde{\rho}\,(e_k\otimes e_0)^{*} .
 $$
 
 Because $e_k$ is a unit quaternion, the map is an inner automorphism of the first factor tensored with the identity on the second: it is a **local unitary of the algebra**, and it preserves the spectrum, the trace, and the idempotency of the state.
@@ -93,9 +93,9 @@ and likewise among all pairs, with the diagonal equal to one. Orthogonal states 
 **Why conjugation preserves the idempotent structure.** The operation $e_k\otimes e_0$ is unitary and, on each factor, multiplicative; conjugating an idempotent by a unitary returns an idempotent of the same rank, because
 
 $$
-\bigl(U\tilde\PiU^\dagger\bigr)^2 = U\tilde\PiU^\dagger U\tilde\PiU^\dagger = U\tilde\Pi^2U^\dagger = U\tilde\PiU^\dagger,
+\bigl(U\tilde\Pi U^\dagger\bigr)^2 = U\tilde\Pi U^\dagger U\tilde\Pi U^\dagger = U\tilde\Pi^2U^\dagger = U\tilde\Pi U^\dagger,
 \qquad
-\mathrm{Tr}\bigl(U\tilde\PiU^\dagger\bigr) = \mathrm{Tr}(\tilde\Pi) = 1 .
+\mathrm{Tr}\bigl(U\tilde\Pi U^\dagger\bigr) = \mathrm{Tr}(\tilde\Pi) = 1 .
 $$
 
 Hence the image of $P_{\Phi^+}$ is again a rank-one idempotent, i.e. again a pure state, and since the local unitary preserves the algebra it maps the Bell basis into itself. The four images $e_k\otimes e_0$ acting on the resource exhaust the Bell idempotents because the conjugation action of the group $Q_8/\{\pm e_0\}\cong\mathbb{Z}_2\times\mathbb{Z}_2$ on the four-element Bell basis is transitive: the stabilizer of any Bell idempotent in this action is trivial, so the orbit has four elements, one for each coset. This is the algebraic reason no fifth codeword is available and no fourth bit can be sent: the orbit of the resource under the local group has exactly four elements.
@@ -239,7 +239,7 @@ and the decoding is the joint measurement of the commuting stabilizers $S_1 = -e
 | $\epsilon = (\epsilon_1,\epsilon_2,\epsilon_3)$, $\epsilon_1\epsilon_2\epsilon_3=+1$ | Bell sign pattern |
 | $S_1 = -e_1\otimes e_1$, $S_3 = -e_3\otimes e_3$ | Stabilizer observables (decoding) |
 | $S_1P_\epsilon = -\epsilon_1P_\epsilon$, $S_3P_\epsilon=-\epsilon_3P_\epsilon$ | Joint eigenvalues |
-| $(e_k\otimes e_0)\tilde{\rho}(e_k\otimes e_0)^\dagger$ | Local encoding operation |
+| $(e_k\otimes e_0)\tilde{\rho}(e_k\otimes e_0)^{*}$ | Local encoding operation |
 | $\mathrm{Tr}(P_\epsilon P_{\epsilon'}) = \delta_{\epsilon\epsilon'}$ | Orthogonality of codewords |
 | $p_\epsilon = \mathrm{Tr}(\tilde{\rho}P_\epsilon)$ | Decoding probabilities (Born rule) |
 | $1$ bit | Holevo bound for one qubit without entanglement |

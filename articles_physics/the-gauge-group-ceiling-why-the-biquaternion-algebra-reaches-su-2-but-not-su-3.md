@@ -46,15 +46,15 @@ $$
 
 with the centre $\mathbb C_{\mathbb B}=\mathrm{span}_{\mathbb R}\{e_0,ie_0\}$ commuting with everything. Both facts were verified on explicit matrices: the bracket closure gave exactly the six-dimensional space of traceless matrices, and every central element commuted with every algebra element to machine precision.
 
-The group that acts **unitarily** on the algebra is built from its anti-Hermitian part. The anti-Hermitian conjugation $\flat$ and the Hermitian conjugation $\dagger$ of *Conventions in the Biquaternion Universe* split the algebra into the two four-dimensional real subspaces
+The group that acts **unitarily** on the algebra is built from its anti-Hermitian part. The anti-Hermitian conjugation $\flat$ and the Hermitian conjugation ${}^{*}$ of *Conventions in the Biquaternion Universe* split the algebra into the two four-dimensional real subspaces
 
 $$
 \mathbb M_-=\bigl\{x\in\mathbb B:x^\flat=x\bigr\}=\mathrm{span}_{\mathbb R}\{ie_0,e_1,e_2,e_3\},
 \qquad
-\mathbb M_+=\bigl\{x\in\mathbb B:x^\dagger=x\bigr\}=\mathrm{span}_{\mathbb R}\{e_0,ie_1,ie_2,ie_3\},
+\mathbb M_+=\bigl\{x\in\mathbb B:x^{*}=x\bigr\}=\mathrm{span}_{\mathbb R}\{e_0,ie_1,ie_2,ie_3\},
 $$
 
-of real dimensions $4$ and $4$, with $x^\flat=-x^\dagger$ and $x^\dagger=\bar x^{\,*}$; quaternion conjugation alone ($e_k\mapsto-e_k$, $i$ fixed) preserves both sectors but has as its fixed space neither of them — it is the centre $\mathbb C_{\mathbb B}$. The anti-Hermitian sector is the compact, unitary direction: exponentiating it gives the unitary group of the defining module,
+of real dimensions $4$ and $4$, with $x^\flat=-x^{*}$ and $x^{*}=\bar x^{\,*}$; quaternion conjugation alone ($e_k\mapsto-e_k$, $i$ fixed) preserves both sectors but has as its fixed space neither of them — it is the centre $\mathbb C_{\mathbb B}$. The anti-Hermitian sector is the compact, unitary direction: exponentiating it gives the unitary group of the defining module,
 
 $$
 \exp\bigl(\mathbb M_-\bigr)=U(2),
@@ -76,7 +76,7 @@ or $SU(2)\times U(1)$ if the determinant phase is separated, the two being local
 
 - **Unitaries of the defining module.** $\mathbb B\cong M_2(\mathbb C)$ acts on the defining module $S\cong\mathbb C^2$, and the unitaries of this action are $U(2)$.
 - **Automorphisms.** The $\mathbb C$-algebra automorphisms of $\mathbb B\cong M_2(\mathbb C)$ are $PGL(2,\mathbb C)=PSL(2,\mathbb C)$, whose maximal compact subgroup is $PU(2)=SO(3)=SU(2)/\mathbb Z_2$; over $\mathbb R$ the Galois conjugation of $i$ is an additional outer automorphism, and the compact part remains the same. The automorphism group of the imaginary quaternions is $SO(3)=SU(2)/\mathbb Z_2$.
-- **Norm-preserving rotors.** The transformations preserving the biquaternion norm $N(\tilde Q)=\tilde Q\bar{\tilde Q}$ act as left and right quaternion multiplication, $SU(2)_L\times SU(2)_R/\mathbb Z_2=SO(4)$; the diagonal subgroup is the $SU(2)$ of the present gauge theory, and the axial combination is the chirality rotation of *Chiral Fermions in the Biquaternion Framework*, not a gauge group.
+- **Norm-preserving rotors.** The transformations preserving the biquaternion norm $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ act as left and right quaternion multiplication, $SU(2)_L\times SU(2)_R/\mathbb Z_2=SO(4)$; the diagonal subgroup is the $SU(2)$ of the present gauge theory, and the axial combination is the chirality rotation of *Chiral Fermions in the Biquaternion Framework*, not a gauge group.
 - **Stabilisers.** The stabiliser of a unit pure-imaginary element $\hat\mu$, which is the unbroken $U(1)$ of the monopole article, is a maximal torus of $SU(2)$; the pattern of unbroken subgroups is the pattern of $SU(2)$, with a one-dimensional maximal torus.
 
 Four constructions, one ceiling.
@@ -109,10 +109,10 @@ The colour degree of freedom of quantum chromodynamics is an irreducible three-d
 
 The dimension argument is decisive, but it is worth seeing it in the Lie-theoretic form, because that form explains *why* no change of basis, no redefinition of the generators and no clever choice of an invariant subspace can produce an eight-dimensional compact subalgebra.
 
-The conjugation $\dagger$ defines an involution of the real Lie algebra $\mathbb B$ by
+The conjugation ${}^{*}$ defines an involution of the real Lie algebra $\mathbb B$ by
 
 $$
-\theta(x) = -x^\dagger ,
+\theta(x) = -x^{*} ,
 \qquad
 \theta^2=\mathrm{id} ,
 $$
@@ -151,7 +151,7 @@ $$
 
 The largest compact subgroup therefore has dimension four, and it is the $U(2)$ of the intrinsic gauge structure. A compact eight-dimensional subalgebra cannot exist, not because of any particular choice of basis but because the maximal compact dimension is four; this is the Lie-theoretic content of the first of the three arguments. The Cartan relations also expose the non-compact directions: the four-dimensional complement $\mathbb M_+$ fails to be a subalgebra, since $[\mathbb M_+,\mathbb M_+]\subset\mathbb M_-$ takes it out of itself, and it is precisely this non-closure that prevents the eight real dimensions of $\mathbb B$ from organising into a compact eight-dimensional algebra.
 
-For comparison, the matrix algebra over the complex numbers shows how the ceiling lifts. In $M_n(\mathbb C)$ the involution $x\mapsto -x^\dagger$ has maximal compact fixed space $\mathrm{U}(n)$, of real dimension $n^2$, so the largest compact subalgebra grows quadratically. For the biquaternion algebra $n=2$ and the maximum is $4$, which is $SU(2)\times U(1)$ and no more; for the enlarged carrier $M_n(\mathbb B)\cong M_{2n}(\mathbb C)$ the maximum is $(2n)^2$, and $\mathrm{SU}(3)$ of dimension $8$ fits once $(2n)^2\ge8$, i.e. $n\ge2$. The ceiling is thus exactly the statement $n=1$ in this family.
+For comparison, the matrix algebra over the complex numbers shows how the ceiling lifts. In $M_n(\mathbb C)$ the involution $x\mapsto -x^{*}$ has maximal compact fixed space $\mathrm{U}(n)$, of real dimension $n^2$, so the largest compact subalgebra grows quadratically. For the biquaternion algebra $n=2$ and the maximum is $4$, which is $SU(2)\times U(1)$ and no more; for the enlarged carrier $M_n(\mathbb B)\cong M_{2n}(\mathbb C)$ the maximum is $(2n)^2$, and $\mathrm{SU}(3)$ of dimension $8$ fits once $(2n)^2\ge8$, i.e. $n\ge2$. The ceiling is thus exactly the statement $n=1$ in this family.
 
 ## What Would Be Needed to Pass the Ceiling
 
@@ -216,10 +216,10 @@ The ceiling is passed by enlarging the carrier to $M_n(\mathbb B)\cong M_{2n}(\m
 | $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H\cong M_2(\mathbb C)$ | Biquaternion algebra |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_1e_2=e_3$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb C_{\mathbb B}=\mathrm{span}_{\mathbb R}\{e_0,ie_0\}$ | Centre; $U(1)$ factor; fixed space of $\bar{\tilde Q}$ |
+| $\mathbb C_{\mathbb B}=\mathrm{span}_{\mathbb R}\{e_0,ie_0\}$ | Centre; $U(1)$ factor; fixed space of $\tilde Q^{\natural}$ |
 | $\mathbb M_-=\mathrm{span}_{\mathbb R}\{ie_0,e_1,e_2,e_3\}$ | Anti-Hermitian, compact sector; $\mathrm{U}(2)$; fixed space of $\flat$ |
-| $\mathbb M_+=\mathrm{span}_{\mathbb R}\{e_0,ie_1,ie_2,ie_3\}$ | Hermitian, informational sector; fixed space of $\dagger$ |
-| $\flat=-(\cdot)^\dagger$, $\dagger=\bar{\tilde Q}^{\,*}$ | Anti-Hermitian and Hermitian conjugations |
+| $\mathbb M_+=\mathrm{span}_{\mathbb R}\{e_0,ie_1,ie_2,ie_3\}$ | Hermitian, informational sector; fixed space of ${}^{*}$ |
+| $\flat=-(\cdot)^\dagger$, ${}^{*}=\tilde Q^{*}$ | Anti-Hermitian and Hermitian conjugations |
 | $[x,y]=xy-yx$ | Commutator |
 | $[\mathbb B,\mathbb B]=\mathrm{SL}(2,\mathbb C)$ | Derived algebra; real dimension $6$ |
 | $\mathrm{U}(2)=\mathrm{SU}(2)\oplus\mathrm{U}(1)$ | Intrinsic compact gauge algebra; dimension $4$ |

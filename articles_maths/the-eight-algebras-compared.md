@@ -139,8 +139,8 @@ The category compares the eight algebras $\mathbb{R}, \mathbb{C}, \mathbb{D}, \m
 | $j$ | the central split complex unit of $\mathbb{H}_{\mathbb{D}}$, $j^2=+1$ |
 | $\varepsilon$ | the dual unit of $\mathbb{D}'$, $\varepsilon^2=0$ |
 | $\tilde\Pi_\pm=\tfrac12(1\pm j)$ | the idempotents of $\mathbb{D}$ and of $\mathbb{H}_{\mathbb{D}}$ |
-| $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$, ${}^{\flat}$ | quaternion, complex, Hermitian and anti-Hermitian conjugation |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | the norm |
+| ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$, ${}^{\flat}$ | quaternion, complex, Hermitian and anti-Hermitian conjugation |
+| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | the norm |
 | $\operatorname{Aut}$, $\operatorname{Der}$ | the automorphism group and derivation space |
 | $M_n(F)$ | the algebra of $n\times n$ matrices over $F$ |
 | $S^n$ | the unit sphere of $\mathbb{R}^{n+1}$ |

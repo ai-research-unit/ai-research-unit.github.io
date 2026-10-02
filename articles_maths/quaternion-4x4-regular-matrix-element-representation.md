@@ -9,7 +9,7 @@ The article depends on *Quaternion Algebra* for the multiplication table and on 
 
 The corpus's default base is a commutative ring with identity, and the regular representation is defined over such a base whenever the algebra is faithful over itself; the determinant and norm statements are stated over a field $F$, and the positivity of the quaternion norm is the statement over $\mathbb{R}$.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, written $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with conjugate $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and norm $N(\tilde q) = \tilde q\bar{\tilde q}$; the matrix of left multiplication is $L_q$ and the matrix of right multiplication is $R_q$.
+Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, written $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with conjugate $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and norm $N(\tilde q) = \tilde q\tilde{q}^{\natural}$; the matrix of left multiplication is $L_q$ and the matrix of right multiplication is $R_q$.
 
 ## The Left Regular Representation
 
@@ -85,9 +85,9 @@ $$
 
 *Proof.* The first two are the homomorphism property; the third follows from $L_qL_{\tilde q^{-1}} = L_{\tilde q \tilde q^{-1}} = L_1 = I$ for an invertible $\tilde q$.
 
-**Corollary.** The Cayley matrix of a unit quaternion is invertible, and $L_q^{-1} = L_{\bar{\tilde q}}/N(\tilde q)$; in particular the left regular representation restricts to an injective homomorphism of groups $Sp(1)\to O(4)$.
+**Corollary.** The Cayley matrix of a unit quaternion is invertible, and $L_q^{-1} = L_{\tilde{q}^{\natural}}/N(\tilde q)$; in particular the left regular representation restricts to an injective homomorphism of groups $Sp(1)\to O(4)$.
 
-*Proof.* $L_{\bar{\tilde q}/N(\tilde q)} = L_{\bar{\tilde q}}/N(\tilde q)$ and $L_{\bar{\tilde q}}L_q = L_{\bar{\tilde q} \tilde q} = L_{N(\tilde q)} = N(\tilde q)I$, so $L_q^{-1} = L_{\bar{\tilde q}}/N(\tilde q)$. For a unit $N(\tilde q) = 1$ and $L_q^{-1} = L_{\bar{\tilde q}} = L_q^{T}$ by the next theorem, so $L_q\in O(4)$.
+*Proof.* $L_{\tilde{q}^{\natural}/N(\tilde q)} = L_{\tilde{q}^{\natural}}/N(\tilde q)$ and $L_{\tilde{q}^{\natural}}L_q = L_{\tilde{q}^{\natural} \tilde q} = L_{N(\tilde q)} = N(\tilde q)I$, so $L_q^{-1} = L_{\tilde{q}^{\natural}}/N(\tilde q)$. For a unit $N(\tilde q) = 1$ and $L_q^{-1} = L_{\tilde{q}^{\natural}} = L_q^{T}$ by the next theorem, so $L_q\in O(4)$.
 
 ## Determinant and Trace
 
@@ -97,10 +97,10 @@ $$
 \det L_q = N(\tilde q)^2 = (q_0^2+q_1^2+q_2^2+q_3^2)^2, \qquad \operatorname{tr}L_q = 4q_0 .
 $$
 
-*Proof.* The trace is the sum of the diagonal entries $q_0+q_0+q_0+q_0 = 4q_0$. For the determinant, compute $L_q^{T}L_q$. By the next theorem $L_q^{T} = L_{\bar{\tilde q}}$, so
+*Proof.* The trace is the sum of the diagonal entries $q_0+q_0+q_0+q_0 = 4q_0$. For the determinant, compute $L_q^{T}L_q$. By the next theorem $L_q^{T} = L_{\tilde{q}^{\natural}}$, so
 
 $$
-L_q^{T}L_q = L_{\bar{\tilde q}}L_q = L_{\bar{\tilde q} \tilde q} = L_{N(\tilde q)} = N(\tilde q)\,I,
+L_q^{T}L_q = L_{\tilde{q}^{\natural}}L_q = L_{\tilde{q}^{\natural} \tilde q} = L_{N(\tilde q)} = N(\tilde q)\,I,
 $$
 
 whence $(\det L_q)^2 = \det(N(\tilde q)I) = N(\tilde q)^4$, and $\det L_q = N(\tilde q)^2$ by the sign check at $\tilde q = 1$, where $L_1 = I$ and $\det = 1 = N(1)^2$.
@@ -116,22 +116,22 @@ whence $(\det L_q)^2 = \det(N(\tilde q)I) = N(\tilde q)^4$, and $\det L_q = N(\t
 **Theorem.** Transposition of the Cayley matrix is quaternion conjugation:
 
 $$
-L_q^{T} = L_{\bar{\tilde q}}.
+L_q^{T} = L_{\tilde{q}^{\natural}}.
 $$
 
-*Proof.* The transpose of the displayed matrix is obtained by interchanging rows and columns; comparing entrywise with $L_{\bar{\tilde q}}$, the diagonal is unchanged and each off-diagonal entry changes sign in the pattern $-q_1,-q_2,-q_3$ exactly as conjugation negates the vector part.
+*Proof.* The transpose of the displayed matrix is obtained by interchanging rows and columns; comparing entrywise with $L_{\tilde{q}^{\natural}}$, the diagonal is unchanged and each off-diagonal entry changes sign in the pattern $-q_1,-q_2,-q_3$ exactly as conjugation negates the vector part.
 
 **Theorem.** The three involutions of the algebra act on the Cayley matrix by
 
 $$
-L_{\bar{\tilde q}} = L_q^{T}, \qquad L_{-\bar{\tilde q}} = -L_q^{T}, \qquad L_{-\tilde q} = -L_q,
+L_{\tilde{q}^{\natural}} = L_q^{T}, \qquad L_{-\tilde{q}^{\natural}} = -L_q^{T}, \qquad L_{-\tilde q} = -L_q,
 $$
 
 and the identity involution gives $L_q$ itself.
 
-*Proof.* The first is the transposition theorem; the second follows from linearity, $L_{-\bar{\tilde q}} = -L_{\bar{\tilde q}} = -L_q^T$; the third likewise, $L_{-\tilde q} = -L_q$.
+*Proof.* The first is the transposition theorem; the second follows from linearity, $L_{-\tilde{q}^{\natural}} = -L_{\tilde{q}^{\natural}} = -L_q^T$; the third likewise, $L_{-\tilde q} = -L_q$.
 
-**Corollary.** The left regular representation identifies the four linear involutions $\tilde q\mapsto \tilde q,\ \bar{\tilde q},\ -\bar{\tilde q},\ -\tilde q$ with the four matrices $\pm L_q,\ \pm L_q^{T}$, and the fixed spaces of the involutions are the $\pm1$ eigenspaces of these matrices, in agreement with *The Scalar and Vector Subspaces of $\mathbb{H}$*.
+**Corollary.** The left regular representation identifies the four linear involutions $\tilde q\mapsto \tilde q,\ \tilde{q}^{\natural},\ -\tilde{q}^{\natural},\ -\tilde q$ with the four matrices $\pm L_q,\ \pm L_q^{T}$, and the fixed spaces of the involutions are the $\pm1$ eigenspaces of these matrices, in agreement with *The Scalar and Vector Subspaces of $\mathbb{H}$*.
 
 ## The Right Regular Representation
 
@@ -160,7 +160,7 @@ $$
 \det R_q = N(\tilde q)^2, \qquad \operatorname{tr}R_q = 4q_0,
 $$
 
-and it satisfies $R_q^{T} = R_{\bar{\tilde q}}$ together with the relation
+and it satisfies $R_q^{T} = R_{\tilde{q}^{\natural}}$ together with the relation
 
 $$
 R_q = D\,L_q^{T}\,D, \qquad D = \operatorname{diag}(1,-1,-1,-1),
@@ -168,13 +168,13 @@ $$
 
 where $D$ is the matrix of quaternion conjugation.
 
-*Proof.* The trace is $4q_0$ from the diagonal. The relation $R_q^{T} = R_{\bar{\tilde q}}$ is the same entrywise comparison as for $L$. For the last identity, $D$ is the matrix of the linear map $x\mapsto\bar x$, so for every $x$,
+*Proof.* The trace is $4q_0$ from the diagonal. The relation $R_q^{T} = R_{\tilde{q}^{\natural}}$ is the same entrywise comparison as for $L$. For the last identity, $D$ is the matrix of the linear map $x\mapsto x^{\natural}$, so for every $x$,
 
 $$
-D L_q^{T} D x = D L_{\bar{\tilde q}} D x = D\bigl(\bar{\tilde q}\,\bar x\bigr) = \overline{\bar{\tilde q}\,\bar x} = xq = R_q\,x,
+D L_q^{T} D x = D L_{\tilde{q}^{\natural}} D x = D\bigl(\tilde{q}^{\natural}\,x^{\natural}\bigr) = (\tilde{q}^{\natural}\,x^{\natural})^{\natural} = xq = R_q\,x,
 $$
 
-using $L_q^{T} = L_{\bar{\tilde q}}$ and the reversal $\overline{\tilde q_1\tilde q_2} = \bar{\tilde q}_2\,\bar{\tilde q}_1$ of conjugation. Hence $R_q = D L_q^{T} D$, and the determinant is that of $L_q$ because $D^2 = I$.
+using $L_q^{T} = L_{\tilde{q}^{\natural}}$ and the reversal $(\tilde q_1\tilde q_2)^{\natural} = \tilde{q}^{\natural}_2\,\tilde{q}^{\natural}_1$ of conjugation. Hence $R_q = D L_q^{T} D$, and the determinant is that of $L_q$ because $D^2 = I$.
 
 **Proposition.** The left and right representations commute: $L_pR_q = R_qL_p$ for all $p,\tilde q$.
 
@@ -205,16 +205,16 @@ Over the complex field the quaternion algebra becomes the matrix algebra $M_2(\m
 | Matrix size over the base | $4\times4$ real | $8\times8$ real, $4\times4$ complex |
 | Determinant | $N(\tilde q)^2$, a real square | $N(\tilde Q)^2$, a complex square |
 | Trace | $4q_0$ | $4\tilde Q_{\text{scal}}$, complex |
-| Transpose | $L_q^{T} = L_{\bar{\tilde q}}$ | $L_{\tilde Q}^{T} = L_{\bar{\tilde Q}}$ |
+| Transpose | $L_q^{T} = L_{\tilde{q}^{\natural}}$ | $L_{\tilde Q}^{T} = L_{\tilde{Q}^{\natural}}$ |
 | Commutant | $R(\mathbb{H})\cong\mathbb{H}^{\mathrm{op}}$ | $R(\mathbb{B})\cong\mathbb{B}^{\mathrm{op}}$ |
 
 The pattern is the same in both columns, with the complex field replacing the real one and the matrix size doubling in the real counting; the determinant acquires the complex values of the biquaternion norm, and its vanishing locus is the null cone rather than the origin. The biquaternion account is in *Biquaternion 4×4 Regular Matrix Element Representation*.
 
 ## Summary
 
-The left regular representation $L_q(x) = qx$ is an injective algebra homomorphism $\mathbb{H}\to M_4(F)$, whose matrix in the basis $(e_0,e_1,e_2,e_3)$ is the Cayley matrix displayed above; it is the sum $q_0I+\Omega_q$ of a scalar and a skew-symmetric part, it multiplies as the quaternions do, $L_pL_q = L_{pq}$, and it carries units to invertible matrices with $L_q^{-1} = L_{\bar{\tilde q}}/N(\tilde q)$.
+The left regular representation $L_q(x) = qx$ is an injective algebra homomorphism $\mathbb{H}\to M_4(F)$, whose matrix in the basis $(e_0,e_1,e_2,e_3)$ is the Cayley matrix displayed above; it is the sum $q_0I+\Omega_q$ of a scalar and a skew-symmetric part, it multiplies as the quaternions do, $L_pL_q = L_{pq}$, and it carries units to invertible matrices with $L_q^{-1} = L_{\tilde{q}^{\natural}}/N(\tilde q)$.
 
-The determinant and trace of the Cayley matrix are $\det L_q = N(\tilde q)^2$ and $\operatorname{tr}L_q = 4q_0$, computed from the identity $L_q^{T}L_q = N(\tilde q)I$ that also shows $L_q$ to be a positive multiple of an orthogonal matrix. Transposition is quaternion conjugation, $L_q^{T} = L_{\bar{\tilde q}}$, and the three involutions of the algebra act by the four sign combinations $\pm L_q,\pm L_q^{T}$ of the Cayley matrix.
+The determinant and trace of the Cayley matrix are $\det L_q = N(\tilde q)^2$ and $\operatorname{tr}L_q = 4q_0$, computed from the identity $L_q^{T}L_q = N(\tilde q)I$ that also shows $L_q$ to be a positive multiple of an orthogonal matrix. Transposition is quaternion conjugation, $L_q^{T} = L_{\tilde{q}^{\natural}}$, and the three involutions of the algebra act by the four sign combinations $\pm L_q,\pm L_q^{T}$ of the Cayley matrix.
 
 The right regular representation $R_q(x) = xq$ is an injective anti-homomorphism with the same determinant and trace, related to the left one by the identity $R_q = D L_q^{T} D$ with $D$ the conjugation matrix, and the two representations are each other's commutants; the double centraliser theorem makes the left image its own double commutant and shows the two images together to span $M_4(F)$. After complexification the representation becomes the $8\times8$ real or $4\times4$ complex regular representation of the biquaternion algebra, with the same formal identities and a complex-valued determinant.
 
@@ -225,12 +225,12 @@ The right regular representation $R_q(x) = xq$ is an injective anti-homomorphism
 | $\mathbb{H}$ | The quaternion algebra |
 | $F$ | Base field |
 | $e_0 = 1, e_1, e_2, e_3$ | Basis, $e_k^2 = -e_0$ |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion, conjugate $\bar{\tilde q}$, norm $N(\tilde q)$ |
+| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion, conjugate $\tilde{q}^{\natural}$, norm $N(\tilde q)$ |
 | $L_q$ | Cayley matrix of left multiplication $x\mapsto qx$ |
 | $\Omega_q = L_q - q_0I$ | Skew-symmetric part of the Cayley matrix |
 | $R_q$ | Matrix of right multiplication $x\mapsto xq$ |
 | $D = \operatorname{diag}(1,-1,-1,-1)$ | Matrix of conjugation, $R_q = D L_q^{T} D$ |
-| $L_q^{T} = L_{\bar{\tilde q}}$, $R_q^{T} = R_{\bar{\tilde q}}$ | Transposition as conjugation |
+| $L_q^{T} = L_{\tilde{q}^{\natural}}$, $R_q^{T} = R_{\tilde{q}^{\natural}}$ | Transposition as conjugation |
 | $\det L_q = N(\tilde q)^2$, $\operatorname{tr}L_q = 4q_0$ | Determinant and trace |
 | $L_q^{T}L_q = N(\tilde q)I$ | Orthogonality up to the quaternion norm scale |
 | $\mathbb{H}^{\mathrm{op}}$ | Opposite algebra, the commutant of the left image |

@@ -145,7 +145,7 @@ The split biquaternion algebra is a real Lie algebra of dimension $8$ under the 
 | $e^{t\hat{\mathbf{u}}} = \cos t + \sin t\,\hat{\mathbf{u}}$ | Elliptic one-parameter subgroup, $\hat{\mathbf{u}}^2 = -e_0$ |
 | $e^{tj} = \cosh t + \sinh t\,j$ | Hyperbolic one-parameter subgroup, $j^2 = +e_0$ |
 | $\mathbb{H}_{\mathbb{D}}^{\times} \cong \mathbb{R}_{>0}^2\times S^3\times S^3$ | Group of units, connected, dimension $8$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Split-Biquaternion norm |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $G_1 = \{ \tilde{S} : N(\tilde{S}) = e_0 \} = S^3\times S^3 \cong \mathrm{Spin}(4)$ | Norm-one group |
 | $\ker\exp$ | Pairs of quaternions $2\pi k\hat{\mathbf{u}}$ |
 | $\tilde{Q} = r_+\hat{q}_+ \tilde\Pi_+ + r_-\hat{q}_- \tilde\Pi_-$ | Componentwise polar form |

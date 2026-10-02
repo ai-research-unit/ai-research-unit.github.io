@@ -48,7 +48,7 @@ as a direct computation with the multiplication table shows. They satisfy $J_1^2
 **Definition.** A **quaternionic Hermitian structure** on a left $\mathbb{H}$-module $V$ is a quaternion-valued form $h$ with
 
 $$
-h(\lambda v, \mu w) = \lambda\,h(v,w)\,\bar\mu \quad \text{for all } \lambda,\mu \in \mathbb{H}, \qquad \overline{h(w,v)} = h(v,w),
+h(\lambda v, \mu w) = \lambda\,h(v,w)\,\bar\mu \quad \text{for all } \lambda,\mu \in \mathbb{H}, \qquad (h(w,v))^{\natural} = h(v,w),
 $$
 
 positive definite in the sense that $h(v,v)$ is real and positive for $v \neq 0$; the group preserving it is the compact symplectic group $Sp(n)$, of dimension $n(2n+1)$. Equivalently, the real part $g = \mathrm{Re}\,h$ is a Riemannian metric with $g(J_iv,J_iw) = g(v,w)$ for $i=1,2,3$, and the three $J_i$ are then skew-adjoint.

@@ -129,10 +129,10 @@ Each equation is first order, scalar-shifted, and involves only one of the two c
 **A bridge to the field-strength biquaternion.** The combination $\Phi$ is, up to a constant, the object the rest of the series calls the field strength. Let $\mathbf E,\mathbf H$ be the physical fields, $\tilde{\mathbf E}=\mathbf E/\sqrt{\mu}$ and $\tilde{\mathbf H}=\mathbf H/\sqrt{\epsilon}$ the normalised ones entering $\Phi$ (the source's §4 convention), and $\tilde F=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$ the field strength of the rest of the series (the source's §7 convention). With $c=1/\sqrt{\epsilon\mu}$,
 
 $$
-\Phi=\tilde{\mathbf{E}}+i\tilde{\mathbf{H}}=-ic\,\tilde F=ic\,\bar{\tilde F},
+\Phi=\tilde{\mathbf{E}}+i\tilde{\mathbf{H}}=-ic\,\tilde F=ic\,\tilde F^{\natural},
 $$
 
-the two expressions agreeing because $\tilde F$ is a pure vector and $\bar{\tilde F}=-\tilde F$ on the vectors. The chiral system is therefore the statement that $\Phi$ obeys a single first-order quaternionic equation with a scalar shift; the companion combination $\Psi$ obeys the shifted equation of the opposite shift. That is the precise sense in which the reformulation is a diagonalisation of the Maxwell operator by a complex structure already present in the algebra.
+the two expressions agreeing because $\tilde F$ is a pure vector and $\tilde F^{\natural}=-\tilde F$ on the vectors. The chiral system is therefore the statement that $\Phi$ obeys a single first-order quaternionic equation with a scalar shift; the companion combination $\Psi$ obeys the shifted equation of the opposite shift. That is the precise sense in which the reformulation is a diagonalisation of the Maxwell operator by a complex structure already present in the algebra.
 
 ## Two Wavenumbers and Optical Activity
 
@@ -172,7 +172,7 @@ D_{3\pm\alpha}=D_3\pm\alpha,
 \Delta+\alpha^2=-(D_3+\alpha)(D_3-\alpha),
 $$
 
-the factorisation being the same computation as $\Box=\tilde\nabla\bar{\tilde\nabla}$ one dimension lower. The family $D_{3\pm\alpha}$ is the classical **Helmholtz–Dirac** family of Clifford analysis — the splitting, the shifted kernel and the radiation condition are set up in *Clifford Analysis*, and this article only uses them — and its four standard facts, which the authors use and attribute to Kravchenko and Shapiro [1996], are the following.
+the factorisation being the same computation as $\Box=\tilde\nabla\tilde\nabla^{\natural}$ one dimension lower. The family $D_{3\pm\alpha}$ is the classical **Helmholtz–Dirac** family of Clifford analysis — the splitting, the shifted kernel and the radiation condition are set up in *Clifford Analysis*, and this article only uses them — and its four standard facts, which the authors use and attribute to Kravchenko and Shapiro [1996], are the following.
 
 **The kernel.** With $\Theta_\alpha$ the fundamental solution of the Helmholtz operator, $(\Delta+\alpha^2)\Theta_\alpha=\delta$, chosen as
 

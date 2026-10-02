@@ -34,13 +34,13 @@ Equivalently, $\mathbb{C}_{\mathbb{B}}$ is the image of the complex numbers unde
 
 ### The Defining Involution
 
-The subspace is the fixed space of **quaternion conjugation** $\bar{\tilde{Q}}$, the map that fixes the unit and the scalar imaginary and negates the three vector units,
+The subspace is the fixed space of **quaternion conjugation** $\tilde{Q}^{\natural}$, the map that fixes the unit and the scalar imaginary and negates the three vector units,
 
 $$
 e_0 \mapsto e_0, \qquad e_k \mapsto -e_k, \qquad i \mapsto i .
 $$
 
-It is an involution: $\overline{\bar{\tilde{Q}}} = \tilde{Q}$. Write the general biquaternion out in full, with the real and the imaginary part of each of its four coefficients,
+It is an involution: $\overline{\tilde{Q}^{\natural}} = \tilde{Q}$. Write the general biquaternion out in full, with the real and the imaginary part of each of its four coefficients,
 
 $$
 \tilde{Q} = (q_0 + iq'_0)\,e_0 + (q_1 + iq'_1)\,e_1 + (q_2 + iq'_2)\,e_2 + (q_3 + iq'_3)\,e_3, \qquad q_\mu, q'_\mu \in \mathbb{R}.
@@ -49,17 +49,17 @@ $$
 The conjugation leaves every coefficient untouched and reverses the sign of each of the three vector units,
 
 $$
-\bar{\tilde{Q}} = (q_0 + iq'_0)\,e_0 - (q_1 + iq'_1)\,e_1 - (q_2 + iq'_2)\,e_2 - (q_3 + iq'_3)\,e_3 ,
+\tilde{Q}^{\natural} = (q_0 + iq'_0)\,e_0 - (q_1 + iq'_1)\,e_1 - (q_2 + iq'_2)\,e_2 - (q_3 + iq'_3)\,e_3 ,
 $$
 
 so that the scalar coefficient is untouched and every vector coefficient changes sign. Coordinate by coordinate,
 
 | | $q_0$ | $q'_0$ | $q_1$ | $q'_1$ | $q_2$ | $q'_2$ | $q_3$ | $q'_3$ |
 |---|---|---|---|---|---|---|---|---|
-| image under $\bar{\cdot}$ | $q_0$ | $q'_0$ | $-q_1$ | $-q'_1$ | $-q_2$ | $-q'_2$ | $-q_3$ | $-q'_3$ |
-| $\bar{\tilde{Q}} = \tilde{Q}$ requires | free | free | $q_1 = 0$ | $q'_1 = 0$ | $q_2 = 0$ | $q'_2 = 0$ | $q_3 = 0$ | $q'_3 = 0$ |
+| image under ${}^{\natural}$ | $q_0$ | $q'_0$ | $-q_1$ | $-q'_1$ | $-q_2$ | $-q'_2$ | $-q_3$ | $-q'_3$ |
+| $\tilde{Q}^{\natural} = \tilde{Q}$ requires | free | free | $q_1 = 0$ | $q'_1 = 0$ | $q_2 = 0$ | $q'_2 = 0$ | $q_3 = 0$ | $q'_3 = 0$ |
 
-**The fixed space.** The two sides of $\bar{\tilde{Q}} = \tilde{Q}$ must agree in each of the four units $e_0, e_1, e_2, e_3$, and within a unit they must agree separately in the real and the imaginary part. That is four complex conditions, hence eight real ones. The condition from the scalar unit is vacuous, $q_0 + iq'_0 = q_0 + iq'_0$, while each of the three vector units gives
+**The fixed space.** The two sides of $\tilde{Q}^{\natural} = \tilde{Q}$ must agree in each of the four units $e_0, e_1, e_2, e_3$, and within a unit they must agree separately in the real and the imaginary part. That is four complex conditions, hence eight real ones. The condition from the scalar unit is vacuous, $q_0 + iq'_0 = q_0 + iq'_0$, while each of the three vector units gives
 
 $$
 -(q_k + iq'_k) = q_k + iq'_k \iff q_k + iq'_k = 0 \iff q_k = q'_k = 0 \qquad (k = 1, 2, 3),
@@ -68,7 +68,7 @@ $$
 killing both the real and the imaginary part of that coefficient. The solutions are the elements with $q_1 = q_2 = q_3 = 0$ and $q'_1 = q'_2 = q'_3 = 0$, that is,
 
 $$
-\bar{\tilde{Q}} = \tilde{Q} \iff \tilde{Q} = (q_0 + iq'_0)\,e_0 = z\,e_0, \qquad z = q_0 + iq'_0 \in \mathbb{C}.
+\tilde{Q}^{\natural} = \tilde{Q} \iff \tilde{Q} = (q_0 + iq'_0)\,e_0 = z\,e_0, \qquad z = q_0 + iq'_0 \in \mathbb{C}.
 $$
 
 **Conversely**, every element of this form is fixed: quaternion conjugation leaves the unit and the coefficient alone, so $\overline{z\,e_0} = z\,e_0$ for every complex $z$. The two directions together say that the displayed set is *exactly* the fixed space. The coordinates that survive are $q_0$ and $q'_0$ alone, which is the parametrisation recorded above: the conditions $q_k = q'_k = 0$ kill the six coordinates of the vector part, and the fixed space is the two-dimensional real subspace spanned by $e_0$ and $ie_0$ — the center of the algebra.
@@ -90,7 +90,7 @@ since quaternion conjugation fixes the scalar part and leaves $z e_0$ unchanged.
 **Hermitian and anti-Hermitian parts.** Of the two basis elements, $e_0$ is Hermitian and $ie_0$ is anti-Hermitian,
 
 $$
-e_0^\dagger = e_0, \qquad (i\,e_0)^\dagger = -i\,e_0 .
+e_0^\dagger = e_0, \qquad (i\,e_0)^{*} = -i\,e_0 .
 $$
 
 So the sector separates into a Hermitian real direction and an anti-Hermitian imaginary direction, spanned by the real and imaginary parts of the complex parameter. This separation is intrinsic: it is the statement that the real part of a complex number plays the role of an observable and the imaginary part does not.

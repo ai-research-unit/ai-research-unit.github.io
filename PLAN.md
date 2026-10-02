@@ -195,4 +195,6 @@ When there are a lot of similar complex tasks to do, for example reviewing 50 ar
 
 Usually you will prepare the instruction, containing the general rules and the rules applicable to the specific task.
 
+Make sure the sub agents read the introduction and conventions (maths or physics depending the subject), and perhaps a few related articles to understand the template.
+
 After that the author will launch the sub agents, because the setup seems to limit some memory capacities when sub agents are launched automatically by an agent. In any case, 15 sub agents is the maximum the setup can do.

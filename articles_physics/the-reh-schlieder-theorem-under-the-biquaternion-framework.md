@@ -59,9 +59,9 @@ The GNS construction of the companion article associates to every state $\tilde\
 $$
 \mathcal H_{\tilde\rho}=\mathbb{B}\big/\mathcal{N}_{\tilde\rho},
 \qquad
-\mathcal{N}_{\tilde\rho}=\big\{\tilde A:\mathrm{Tr}(\tilde\rho\,\tilde A^\dagger\tilde A)=0\big\},
+\mathcal{N}_{\tilde\rho}=\big\{\tilde A:\mathrm{Tr}(\tilde\rho\,\tilde A^{*}\tilde A)=0\big\},
 \qquad
-\langle\tilde A,\tilde B\rangle_{\tilde\rho}=\mathrm{Tr}\big(\tilde\rho\,\tilde A^\dagger\tilde B\big),
+\langle\tilde A,\tilde B\rangle_{\tilde\rho}=\mathrm{Tr}\big(\tilde\rho\,\tilde A^{*}\tilde B\big),
 $$
 with representation $\pi_{\tilde\rho}(\tilde A)[\tilde B]=[\tilde A\tilde B]$ and cyclic vector $\Omega_{\tilde\rho}=[e_0]$. The vector is cyclic by construction: the classes $[\tilde A]=\pi_{\tilde\rho}(\tilde A)\Omega_{\tilde\rho}$ run over every element of the quotient, so $\pi_{\tilde\rho}(\mathbb{B})\Omega_{\tilde\rho}=\mathcal H_{\tilde\rho}$ exactly, not merely densely.
 
@@ -134,7 +134,7 @@ and the cyclic vector $\Omega_{\tilde\rho}=[e_0]$ is separating as well. The Tom
 $$
 \Delta\big(\tilde A\big)=\tilde\rho\,\tilde A\,\tilde\rho^{-1},
 \qquad
-J\big(\tilde A\big)=\tilde\rho^{1/2}\tilde A^\dagger\tilde\rho^{-1/2},
+J\big(\tilde A\big)=\tilde\rho^{1/2}\tilde A^{*}\tilde\rho^{-1/2},
 \qquad
 \Delta=S^*S,
 $$

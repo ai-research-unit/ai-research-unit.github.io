@@ -14,8 +14,8 @@ Three questions organize the discussion.
 
 The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_1e_2=e_3$, and the scalar imaginary is $i$, which commutes with the quaternion units. The anti-Hermitian and Hermitian subspaces are
 $$
-\mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^\dagger=-\tilde{Q}\},\qquad
-\mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^\dagger=\tilde{Q}\},
+\mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\},\qquad
+\mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\},
 $$
 and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the fixed-point set of complex conjugation. Throughout, $c$ denotes the speed of light in the medium, $c=1/\sqrt{\epsilon\mu}$, and $c_0$ the vacuum speed of light. The symbol $\mathbf{u}$ (or $\hat{\mathbf{u}}$) denotes a boost direction and $\psi$ a rapidity.
 
@@ -23,18 +23,18 @@ and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the fixed-point s
 
 A **Lorentz rotor** is a biquaternion of unit norm,
 $$
-\tilde{\Lambda}\in\mathbb{B},\qquad \tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0,
+\tilde{\Lambda}\in\mathbb{B},\qquad \tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0,
 $$
-where $\bar{\tilde{\Lambda}}$ is the quaternion conjugate. It acts on the material sector $\mathbb{M}_-$ by **rotor conjugation**
+where $\tilde{\Lambda}^{\natural}$ is the quaternion conjugate. It acts on the material sector $\mathbb{M}_-$ by **rotor conjugation**
 $$
-\tilde{Q}\ \longmapsto\ \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger,\qquad \tilde{Q}\in\mathbb{M}_-.
+\tilde{Q}\ \longmapsto\ \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*},\qquad \tilde{Q}\in\mathbb{M}_-.
 $$
 The set of unit-norm biquaternions is a group under biquaternion multiplication; under the algebra isomorphism $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ (with $\Phi(e_k)=-i\sigma_k$ and $\Phi(i)=iI_2$) it is exactly
 $$
-SL(2,\mathbb{C})=\{\tilde{\Lambda}\in\mathbb{B}:\tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0\}
+SL(2,\mathbb{C})=\{\tilde{\Lambda}\in\mathbb{B}:\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0\}
 \;\cong\;\{g\in M_2(\mathbb{C}):\det g=1\},
 $$
-because the biquaternion norm is the determinant, $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\det\Phi(\tilde{Q})$ (see the companion article on the biquaternion algebra and its matrix representation).
+because the biquaternion norm is the determinant, $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\det\Phi(\tilde{Q})$ (see the companion article on the biquaternion algebra and its matrix representation).
 
 Two families of rotors have a direct geometric meaning.
 
@@ -44,7 +44,7 @@ $$
 =\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\hat{\mathbf{u}},
 \qquad \tanh\psi=\frac{u}{c},
 $$
-where $u=|\mathbf{u}|$ is the speed of the boosted frame. It is Hermitian, $\tilde{\Lambda}^\dagger=\tilde{\Lambda}$, hence lies in $\mathbb{M}_+$, and it has unit norm. A **pure spatial rotation** about $\hat{\mathbf{n}}\in\mathbb{H}_{\mathbb{B}}$ by angle $\theta$ is
+where $u=|\mathbf{u}|$ is the speed of the boosted frame. It is Hermitian, $\tilde{\Lambda}^{*}=\tilde{\Lambda}$, hence lies in $\mathbb{M}_+$, and it has unit norm. A **pure spatial rotation** about $\hat{\mathbf{n}}\in\mathbb{H}_{\mathbb{B}}$ by angle $\theta$ is
 $$
 \tilde{R}=\exp\!\left(\frac{\theta}{2}\,\hat{\mathbf{n}}\right)
 =\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\,\hat{\mathbf{n}},
@@ -57,7 +57,7 @@ $$
 \qquad
 \mathcal{R}=SU(2)\subset\mathbb{H}_{\mathbb{B}}
 $$
-are the boosts and the rotations. The parametrisation of a single transformation by a rotor, its verification against the standard component formulas, and the relation $\tilde{\Lambda}=\sqrt{-(i/c)\bar{\tilde{U}}}$ between a boost rotor and a four-velocity $\tilde{U}$ are established in the companion article *The Lorentz Transformation as a Biquaternionic Rotation*; they are not repeated here.
+are the boosts and the rotations. The parametrisation of a single transformation by a rotor, its verification against the standard component formulas, and the relation $\tilde{\Lambda}=\sqrt{-(i/c)\tilde{U}^{\natural}}$ between a boost rotor and a four-velocity $\tilde{U}$ are established in the companion article *The Lorentz Transformation as a Biquaternionic Rotation*; they are not repeated here.
 
 ## The Group of Unit-Norm Biquaternions
 
@@ -69,22 +69,22 @@ N(\tilde{\Lambda}_1\tilde{\Lambda}_2)=N(\tilde{\Lambda}_1)N(\tilde{\Lambda}_2)=e
 $$
 The identity is $e_0$, and the inverse is the quaternion conjugate,
 $$
-\tilde{\Lambda}^{-1}=\bar{\tilde{\Lambda}},
+\tilde{\Lambda}^{-1}=\tilde{\Lambda}^{\natural},
 $$
-since $\tilde{\Lambda}\bar{\tilde{\Lambda}}=\bar{\tilde{\Lambda}}\tilde{\Lambda}=N(\tilde{\Lambda})=e_0$; the biquaternion norm of a biquaternion is central, so the two-sided inverse is the quaternion conjugate. For a boost this gives $\tilde{\Lambda}(\hat{\mathbf u},\psi)^{-1}=\tilde{\Lambda}(\hat{\mathbf u},-\psi)=\bar{\tilde{\Lambda}}$, and for a rotation $\tilde{R}(\hat{\mathbf n},\theta)^{-1}=\tilde{R}(\hat{\mathbf n},-\theta)$.
+since $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=\tilde{\Lambda}^{\natural}\tilde{\Lambda}=N(\tilde{\Lambda})=e_0$; the biquaternion norm of a biquaternion is central, so the two-sided inverse is the quaternion conjugate. For a boost this gives $\tilde{\Lambda}(\hat{\mathbf u},\psi)^{-1}=\tilde{\Lambda}(\hat{\mathbf u},-\psi)=\tilde{\Lambda}^{\natural}$, and for a rotation $\tilde{R}(\hat{\mathbf n},\theta)^{-1}=\tilde{R}(\hat{\mathbf n},-\theta)$.
 
 **Dimension and topology.** As a real Lie group, $SL(2,\mathbb{C})$ has real dimension $6$ (complex dimension $3$); its maximal compact subgroup is $SU(2)$, the rotation group. It is connected and simply connected. These facts belong to the companion articles on the exponential and on biquaternion topology; the relevant consequence is used below.
 
 **The action and its kernel.** Rotor conjugation defines a map
 $$
 \mathrm{Ad}:\ SL(2,\mathbb{C})\longrightarrow SO^+(1,3),\qquad
-\mathrm{Ad}(\tilde{\Lambda}):\ \tilde{Q}\longmapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger ,
+\mathrm{Ad}(\tilde{\Lambda}):\ \tilde{Q}\longmapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*} ,
 $$
 into the restricted (proper orthochronous) Lorentz group. It is well defined because the conjugate of an anti-Hermitian element is anti-Hermitian, it preserves the biquaternion norm, and it is a group homomorphism:
 $$
 \mathrm{Ad}(\tilde{\Lambda}_2\tilde{\Lambda}_1)=\mathrm{Ad}(\tilde{\Lambda}_2)\circ\mathrm{Ad}(\tilde{\Lambda}_1),
 $$
-as follows from $(\tilde{\Lambda}_2\tilde{\Lambda}_1)\tilde{Q}(\tilde{\Lambda}_2\tilde{\Lambda}_1)^\dagger=\tilde{\Lambda}_2(\tilde{\Lambda}_1\tilde{Q}\tilde{\Lambda}_1^\dagger)\tilde{\Lambda}_2^\dagger$. Its kernel is
+as follows from $(\tilde{\Lambda}_2\tilde{\Lambda}_1)\tilde{Q}(\tilde{\Lambda}_2\tilde{\Lambda}_1)^{*}=\tilde{\Lambda}_2(\tilde{\Lambda}_1\tilde{Q}\tilde{\Lambda}_1^{*})\tilde{\Lambda}_2^{*}$. Its kernel is
 $$
 \ker\mathrm{Ad}=\{\pm e_0\}\cong\mathbb{Z}/2\mathbb{Z},
 $$
@@ -107,7 +107,7 @@ The unit-norm group is the kernel of the norm inside the full group of units. Th
 $$
 \mathbb{B}^{\times}=\{\tilde{Q}:N(\tilde{Q})\neq0\}\cong GL_2(\mathbb{C}),
 $$
-the group of invertible matrices under $\Phi$, of real dimension $8$, with centre $\mathbb{C}^{\times}$; the unit-norm subgroup $SL(2,\mathbb{C})=\mathbb{B}^{\times}_1$ is the kernel of the norm, and the unitary biquaternions $\tilde{Q}^\dagger\tilde{Q}=e_0$ form the maximal compact subgroup $U(2)$.
+the group of invertible matrices under $\Phi$, of real dimension $8$, with centre $\mathbb{C}^{\times}$; the unit-norm subgroup $SL(2,\mathbb{C})=\mathbb{B}^{\times}_1$ is the kernel of the norm, and the unitary biquaternions $\tilde{Q}^{*}\tilde{Q}=e_0$ form the maximal compact subgroup $U(2)$.
 
 Physically the unit group is the whole linear group of the framework: $GL_2(\mathbb{C})$ is the group of invertible biquaternions, its centre $\mathbb{C}^{\times}$ is the complex phase that every conjugation ignores and the norm only sees through its modulus, and the unit-norm subgroup is the Lorentz group of the preceding sections.
 
@@ -321,7 +321,7 @@ The biquaternion algebra is not merely the home of the rotors; it is itself a re
 
 **As the vector representation.** Under the conjugation action
 $$
-\tilde{Q}\ \longmapsto\ \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger,
+\tilde{Q}\ \longmapsto\ \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*},
 \qquad \tilde{Q}\in\mathbb{B},\quad \tilde{\Lambda}\in SL(2,\mathbb{C}),
 $$
 the four-complex-dimensional algebra $\mathbb{B}\cong M_2(\mathbb{C})$ carries the irreducible representation
@@ -416,7 +416,7 @@ the first from one Weyl spinor with the definite pairing, the second from one We
 
 ## Summary
 
-The group of unit-norm biquaternions is $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group $SO^+(1,3)$; rotor conjugation $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$ is the covering homomorphism, with kernel $\{\pm e_0\}$. The same abstract group is known in geometry as the group of motions of hyperbolic three-space, as the Möbius group $\mathrm{PSL}(2,\mathbb{C})$, and as the Laguerre group of the plane.
+The group of unit-norm biquaternions is $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group $SO^+(1,3)$; rotor conjugation $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda^{*}$ is the covering homomorphism, with kernel $\{\pm e_0\}$. The same abstract group is known in geometry as the group of motions of hyperbolic three-space, as the Möbius group $\mathrm{PSL}(2,\mathbb{C})$, and as the Laguerre group of the plane.
 
 Within the group, the rotations form the subgroup $SU(2)\subset\mathbb{H}_{\mathbb{B}}$, while the boosts are the Hermitian unit-norm biquaternions $\mathcal{B}\subset\mathbb{M}_+$. The boosts are closed under inverse but not under multiplication: the product of two boost rotors is Hermitian exactly when the boosts are collinear, and otherwise is a boost times a rotation. The rotation angle is the Thomas–Wigner angle,
 $$
@@ -440,9 +440,9 @@ The group that carries the transformations is represented as follows. The group 
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector), home of four-vectors |
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector), home of boost rotors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, home of rotation rotors |
-| $N(\tilde Q)=\tilde Q\bar{\tilde Q}$ | Biquaternion norm |
+| $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ | Biquaternion norm |
 | $\tilde\Lambda\in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
-| $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$ | Rotor conjugation (four-vector action) |
+| $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda^{*}$ | Rotor conjugation (four-vector action) |
 | $\mathrm{Ad}:SL(2,\mathbb{C})\to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_0\}$ |
 | $\tilde\Lambda=\cosh\frac\psi2+i\sinh\frac\psi2\hat{\mathbf u}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
 | $\tilde R=\cos\frac\theta2+\sin\frac\theta2\hat{\mathbf n}$ | Rotation rotor (unit real quaternion, in $SU(2)$) |

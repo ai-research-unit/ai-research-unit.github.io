@@ -28,7 +28,7 @@ $$
 e_1^2 = e_2^2 = e_3^2 = -e_0, \qquad e_1e_2 = e_3, \qquad e_2e_3 = e_1, \qquad e_3e_1 = e_2,
 $$
 
-and $e_je_k = -e_ke_j$ for $j \neq k$. The scalar imaginary $i$ satisfies $i^2 = -1$ and commutes with every $e_\mu$. The conjugations are the ones defined in *Biquaternion Algebra*: quaternion conjugation $\bar{\cdot}$ ($e_0 \mapsto e_0$, $e_k \mapsto -e_k$), complex conjugation ${}^*$ ($i \mapsto -i$), Hermitian conjugation $\dagger = \bar{\cdot}^{\,*}$, and the anti-Hermitian conjugation $\flat = -\dagger$. Multiplication is the complex-linear extension of the quaternion product, with the scalar–vector form
+and $e_je_k = -e_ke_j$ for $j \neq k$. The scalar imaginary $i$ satisfies $i^2 = -1$ and commutes with every $e_\mu$. The conjugations are the ones defined in *Biquaternion Algebra*: quaternion conjugation ${}^{\natural}$ ($e_0 \mapsto e_0$, $e_k \mapsto -e_k$), complex conjugation $\bar{\cdot}$ ($i \mapsto -i$), Hermitian conjugation ${}^{*} = ({}^{\natural})^{\,*}$, and the anti-Hermitian conjugation $\flat = -{}^{*}$. Multiplication is the complex-linear extension of the quaternion product, with the scalar–vector form
 
 $$
 \tilde{Q}\circ\tilde{R} = Q_0R_0 - (\mathbf{Q},\mathbf{R}) + Q_0\mathbf{R} + R_0\mathbf{Q} + [\mathbf{Q},\mathbf{R}].
@@ -427,17 +427,17 @@ $$
 the sign $+$ on the scalar and the pseudoscalar following from the even number of transpositions. Under the dictionary this is exactly quaternion conjugation:
 
 $$
-\Phi(\bar{\tilde{Q}}) = \mathrm{rev}\bigl(\Phi(\tilde{Q})\bigr),
+\Phi(\tilde{Q}^{\natural}) = \mathrm{rev}\bigl(\Phi(\tilde{Q})\bigr),
 $$
 
-checked on the eight real basis elements, whose images under $\bar{\cdot}$ carry precisely the signs $+$ on $e_0, i$ and $-$ on $e_k, ie_k$ that reversal carries on $I_4, \omega$ and the bivectors.
+checked on the eight real basis elements, whose images under ${}^{\natural}$ carry precisely the signs $+$ on $e_0, i$ and $-$ on $e_k, ie_k$ that reversal carries on $I_4, \omega$ and the bivectors.
 
 ### The biquaternion norm
 
-The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. Its Clifford image is the product with the reversal,
+The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$. Its Clifford image is the product with the reversal,
 
 $$
-\Phi(\tilde{Q})\,\mathrm{rev}\bigl(\Phi(\tilde{Q})\bigr) = \Phi\bigl(\tilde{Q}\bar{\tilde{Q}}\bigr),
+\Phi(\tilde{Q})\,\mathrm{rev}\bigl(\Phi(\tilde{Q})\bigr) = \Phi\bigl(\tilde{Q}\tilde{Q}^{\natural}\bigr),
 $$
 
 which is central. When the biquaternion norm is **real** — in particular on both $\mathbb{M}_-$ and $\mathbb{M}_+$ — this is a scalar matrix,
@@ -449,7 +449,7 @@ $$
 verified with general real coefficients on each sector. For the material four-vectors this is the Minkowski interval. Writing $\tilde{V} = i v_0 e_0 + v_1e_1 + v_2e_2 + v_3e_3 \in \mathbb{M}_-$,
 
 $$
-N(\tilde{V}) = \tilde{V}\bar{\tilde{V}} = -v_0^2 + v_1^2 + v_2^2 + v_3^2 = -c^2t^2 + \mathbf{x}^2,
+N(\tilde{V}) = \tilde{V}\tilde{V}^{\natural} = -v_0^2 + v_1^2 + v_2^2 + v_3^2 = -c^2t^2 + \mathbf{x}^2,
 $$
 
 which is the invariant interval of the companion articles. So the interval is the Clifford biquaternion norm constructed with the reversal, and the minus sign in the time direction is the $ict$ metric sign $\eta^{00} = -1$ — the sign of $-g$, not of the generators' metric.
@@ -481,7 +481,7 @@ The dictionary so far has mapped objects; it is worth stating the two ways an el
 **Mechanism two: conjugation, on the algebra.** A four-vector is not in the module but in the algebra: the material sector $\mathbb{M}_- = \mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$. A Lorentz transformation acts on it by the rotor conjugation
 
 $$
-\tilde{Q} \;\mapsto\; \tilde\Lambda\,\tilde{Q}\,\tilde\Lambda^\dagger,
+\tilde{Q} \;\mapsto\; \tilde\Lambda\,\tilde{Q}\,\tilde\Lambda^{*},
 \qquad \tilde\Lambda\in\mathbb{B},\quad N(\tilde\Lambda)=1,
 $$
 
@@ -498,7 +498,7 @@ The same fact shows up as a closure failure. Left multiplication by a general el
 | chirality projectors $\tfrac12(1\pm\gamma_5)$ | central idempotents of $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$ | on the complexified module | — |
 | mass $m$, phase $\lambda$ | center $\mathbb{C}_{\mathbb{B}}$ | scalar multiplication | $0$ |
 | gradient $\tilde{\nabla}$ acting on a field | $\mathbb{B}$ | left multiplication | — |
-| four-vector (momentum, position) | $\mathbb{M}_-\subset\mathbb{B}$ | conjugation $\tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$ | $1$ |
+| four-vector (momentum, position) | $\mathbb{M}_-\subset\mathbb{B}$ | conjugation $\tilde\Lambda\tilde{Q}\tilde\Lambda^{*}$ | $1$ |
 | gauge potential, four-current | $\mathbb{M}_-$ | conjugation | $1$ |
 | field strength, Lorentz generator | the algebra's vector part | conjugation | $1$ |
 
@@ -526,7 +526,7 @@ $$
 \Phi(\tilde{\nabla})\,\mathrm{rev}\bigl(\Phi(\tilde{\nabla})\bigr) = \Box\,I_4,
 $$
 
-which is the image of $\tilde{\nabla}\bar{\tilde{\nabla}} = \Box$, since reversal corresponds to quaternion conjugation. Its symbol squares to the biquaternion norm: $\Phi(\tilde{k})\,\mathrm{rev}(\Phi(\tilde{k})) = (k_0^2 + k_1^2 + k_2^2 + k_3^2)I_4$.
+which is the image of $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$, since reversal corresponds to quaternion conjugation. Its symbol squares to the biquaternion norm: $\Phi(\tilde{k})\,\mathrm{rev}(\Phi(\tilde{k})) = (k_0^2 + k_1^2 + k_2^2 + k_3^2)I_4$.
 
 The gamma-matrix Dirac operator is the **odd** element
 
@@ -577,7 +577,7 @@ This article is a dictionary between the Dirac gamma-matrix algebra and the biqu
 | $\tilde\Pi_{L,R} = \tfrac{1}{2}(1 \pm \gamma_5)$ | Chirality projectors |
 | $\sigma^{\mu\nu} = \tfrac{1}{4}[\gamma^\mu,\gamma^\nu]$ | Lorentz generators |
 | $\mathrm{rev}$ | Clifford reversal anti-automorphism |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian and Hermitian subspaces |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion and complex subspaces |
 | $S = \mathbb{B}p$, $p=\tfrac12(e_0+ie_3)$ | The simple (spinor) module; $\mathbb{B}=\mathrm{End}(S)$ |

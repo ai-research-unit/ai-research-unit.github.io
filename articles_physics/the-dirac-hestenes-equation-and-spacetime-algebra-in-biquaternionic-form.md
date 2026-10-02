@@ -177,7 +177,7 @@ $$
 \nabla\varphi\,i\sigma_1 = m\varphi^{*}+qA\varphi ,
 $$
 
-with a cyclically permuted gradient, the star conjugation $\varphi^{*}=\sigma_2\bar\varphi\sigma_2$, and the algebra acting on the spinor from both sides. The three formulations are related by the sign of the mass, a cyclic relabelling of the space directions, and the star; and the star is the corpus's **complex conjugation** ${}^{*}$ under the identification of the Pauli algebra with $\mathbb B$. In particular the Dirac–Hestenes equation is Parra's option $\{2\}$ and the Daviau equation is Parra's option $\{1\}$, two of the four inequivalent sign conventions of one equation, permuted by the discrete group $\Gamma_{1,3}/\Gamma^+_{1,3}$. The details, the dictionary and the equivalence are in the two companion articles.
+with a cyclically permuted gradient, the star conjugation $\varphi^{*}=\sigma_2\bar\varphi\sigma_2$, and the algebra acting on the spinor from both sides. The three formulations are related by the sign of the mass, a cyclic relabelling of the space directions, and the star; and the star is the corpus's **complex conjugation** $\bar{\cdot}$ under the identification of the Pauli algebra with $\mathbb B$. In particular the Dirac–Hestenes equation is Parra's option $\{2\}$ and the Daviau equation is Parra's option $\{1\}$, two of the four inequivalent sign conventions of one equation, permuted by the discrete group $\Gamma_{1,3}/\Gamma^+_{1,3}$. The details, the dictionary and the equivalence are in the two companion articles.
 
 ## Open Questions
 

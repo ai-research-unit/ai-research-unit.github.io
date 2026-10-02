@@ -7,7 +7,7 @@ This article is the harmonic analysis slot of the octonion system and the last s
 
 The article is the octonion member of the harmonic analysis slots of this Part and follows the model of *Quaternion Harmonic Analysis*, *Split-Biquaternion Discrete Harmonic Analysis* and *Split-Biquaternion Continuous Harmonic Analysis*, together with the general theory of the written *Fourier Analysis* and *Fourier Analysis on Groups*. It takes the operator, the monogenic class and the spherical harmonics from *Octonion Analysis* and *Octonion Integration*, the axial class from *Octonion Special Functions*, and the group $G_2$ and its homogeneous sphere from *Octonions and the Exceptional Lie Groups* and *Octonion Geometry*.
 
-**Conventions.** $\mathbb{O}$ with basis $e_0,\dots,e_7$, $x = \sum_kx_ke_k$, conjugation $\bar x$, norm $\lvert x\rvert$, inner product $\langle x,y\rangle = \operatorname{Sc}(x\bar y)$; the variable is identified with a point of $\mathbb{R}^8$. The Fourier transform is taken with respect to the **scalar** imaginary unit $i$, which is adjoined to the octonions and commutes with them: the complexified algebra is $\mathbb{O}_{\mathbb{C}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{O}$, whose elements are $a + ib$ with $a,b\in\mathbb{O}$ and with $i$ central. This is the same device as in the biquaternion algebra $\mathbb{B}$, where the central unit $i$ is adjoined, and it is necessary because the octonions contain no central imaginary unit; the adjoined $i$ does not restore associativity, and $\mathbb{O}_{\mathbb{C}}$ remains a non-associative algebra of complex dimension eight. The operator $D$ is that of *Octonion Analysis*, $E$ is its kernel, and $S^6\subset\operatorname{Im}\mathbb{O}$ is the unit sphere of the imaginary part.
+**Conventions.** $\mathbb{O}$ with basis $e_0,\dots,e_7$, $x = \sum_kx_ke_k$, conjugation $x^{\natural}$, norm $\lvert x\rvert$, inner product $\langle x,y\rangle = \operatorname{Sc}(x y^{\natural})$; the variable is identified with a point of $\mathbb{R}^8$. The Fourier transform is taken with respect to the **scalar** imaginary unit $i$, which is adjoined to the octonions and commutes with them: the complexified algebra is $\mathbb{O}_{\mathbb{C}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{O}$, whose elements are $a + ib$ with $a,b\in\mathbb{O}$ and with $i$ central. This is the same device as in the biquaternion algebra $\mathbb{B}$, where the central unit $i$ is adjoined, and it is necessary because the octonions contain no central imaginary unit; the adjoined $i$ does not restore associativity, and $\mathbb{O}_{\mathbb{C}}$ remains a non-associative algebra of complex dimension eight. The operator $D$ is that of *Octonion Analysis*, $E$ is its kernel, and $S^6\subset\operatorname{Im}\mathbb{O}$ is the unit sphere of the imaginary part.
 
 ## The Fourier Transform
 
@@ -32,7 +32,7 @@ $$
 \int_{\mathbb{R}^8}\lvert f\rvert^2dx = \frac{1}{(2\pi)^8}\int_{\mathbb{R}^8}\lvert\hat f\rvert^2d\xi
 $$
 
-holds, and the Parseval form $\int f\bar g\,dx = (2\pi)^{-8}\int\hat f\overline{\hat g}\,d\xi$.
+holds, and the Parseval form $\int f g^{\natural}\,dx = (2\pi)^{-8}\int\hat f\overline{\hat g}\,d\xi$.
 
 *Proof.* The phase $e^{-i\langle\xi,x\rangle}$ is a scalar, hence central, so it may be placed anywhere in a product; the transform is therefore the componentwise complex Fourier transform of the eight components, and the classical theory applies to each of them. Linearity is componentwise, and the isometry is the classical Plancherel theorem in dimension eight.
 
@@ -91,7 +91,7 @@ and equality is attained exactly for the functions $f(x) = c\exp(-\alpha\lvert x
 
 ### The Spherical Decomposition
 
-**Definition.** For $k\geq0$ let $\mathcal{H}_k$ be the space of octonion-valued harmonic polynomials homogeneous of degree $k$ on $\mathbb{R}^8$, and let $\mathcal{P}_k\subset\mathcal{H}_k$ be the subspace of left-monogenic ones, as in *Octonion Integration*; let $L^2(S^7)$ be the space of square-integrable octonion-valued functions on the unit sphere with the inner product $\langle f,g\rangle = \int_{S^7}f\bar g\,dS$.
+**Definition.** For $k\geq0$ let $\mathcal{H}_k$ be the space of octonion-valued harmonic polynomials homogeneous of degree $k$ on $\mathbb{R}^8$, and let $\mathcal{P}_k\subset\mathcal{H}_k$ be the subspace of left-monogenic ones, as in *Octonion Integration*; let $L^2(S^7)$ be the space of square-integrable octonion-valued functions on the unit sphere with the inner product $\langle f,g\rangle = \int_{S^7}f g^{\natural}\,dS$.
 
 **Theorem.** The spaces $\mathcal{H}_k$ are finite-dimensional, mutually orthogonal in $L^2(S^7)$, and their restrictions to the sphere span a dense subspace; each $\mathcal{H}_k$ consists of eigenfunctions of the spherical Laplacian with eigenvalue $-k(k+6)$, and
 

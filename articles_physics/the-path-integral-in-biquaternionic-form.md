@@ -101,14 +101,14 @@ $$
 e^{iS/\hbar}\,\big(e^{iS/\hbar}\big)^\dagger=e_0.
 $$
 
-It is **not**, however, a **unit-norm** element. The Lorentz rotors are the biquaternions with $\tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0$ (the group $SL(2,\mathbb{C})$), and for a central element $\lambda e_0$ this condition reads $\lambda^2=1$, so $\lambda=\pm1$. For the phase,
+It is **not**, however, a **unit-norm** element. The Lorentz rotors are the biquaternions with $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$ (the group $SL(2,\mathbb{C})$), and for a central element $\lambda e_0$ this condition reads $\lambda^2=1$, so $\lambda=\pm1$. For the phase,
 
 $$
 e^{iS/\hbar}\,\overline{\big(e^{iS/\hbar}\big)}=e^{2iS/\hbar}\neq e_0
 \qquad\text{unless } S/\hbar\in\pi\mathbb{Z}.
 $$
 
-So the phase is a unitary element and not a Lorentz rotor. The two notions of "unit" — $\tilde U\tilde U^\dagger=e_0$ for $U(2)$ and $\tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0$ for $SL(2,\mathbb{C})$ — must be kept apart here, and the path-integral phase belongs to the first.
+So the phase is a unitary element and not a Lorentz rotor. The two notions of "unit" — $\tilde U\tilde U^{*}=e_0$ for $U(2)$ and $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$ for $SL(2,\mathbb{C})$ — must be kept apart here, and the path-integral phase belongs to the first.
 
 ### Consequences of centrality
 
@@ -136,8 +136,8 @@ The phase could be written with any root of $-1$ in place of $i$. The alternativ
 
 **The generator need not be anti-Hermitian.** Taking $J\tilde{H}$ in place of $i\tilde{H}$ changes the generator of the flow from $-i\tilde{H}/\hbar$ (anti-Hermitian, hence norm-preserving) to $-J\tilde{H}/\hbar$, which is anti-Hermitian only if $J$ commutes with $\tilde{H}$. With $J=e_3$ and $\tilde{H}=ie_1$ one has, using $e_3e_1=e_2$,
 $$J\tilde{H}=e_3(ie_1)=i\,e_2,$$
-which is Hermitian, not anti-Hermitian, since $(ie_2)^\dagger=ie_2$. The flow $\exp(-tJ\tilde{H}/\hbar)$ is then not unitary; at $t=\pi\hbar/2$ its exponent is $-\tfrac{i\pi}{2}e_2$ and
-$$\tilde U^\dagger\tilde U=e^{-i\pi e_2}=\cosh(\pi)\,e_0-i\sinh(\pi)\,e_2\neq e_0,$$
+which is Hermitian, not anti-Hermitian, since $(ie_2)^{*}=ie_2$. The flow $\exp(-tJ\tilde{H}/\hbar)$ is then not unitary; at $t=\pi\hbar/2$ its exponent is $-\tfrac{i\pi}{2}e_2$ and
+$$\tilde U^{*}\tilde U=e^{-i\pi e_2}=\cosh(\pi)\,e_0-i\sinh(\pi)\,e_2\neq e_0,$$
 so the norm is not preserved. A path integral built on this phase would not reproduce a unitary evolution.
 
 **The phase is not a global phase.** Even where a fixed non-central root gives a unitary one-parameter group — as $J=e_3$ does — the phase it produces is not shared by the two spin components. Under the isomorphism $e_k\mapsto-i\sigma_k$ of the companion articles, the phase $e^{e_3\theta}$ maps to

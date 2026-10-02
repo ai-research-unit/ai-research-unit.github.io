@@ -24,7 +24,7 @@ $\boldsymbol{\mathcal A} = \sqrt{\epsilon}\,\mathbf{E} + i\sqrt{\mu}\,\mathbf{H}
 biquaternion of *tension*, $\tilde{A} = i\alpha + \boldsymbol{\mathcal A}$, is that field with the
 scalar part the paper calls the density of the ether. The paper's conjugation — the vector part
 negated and the coefficients complex-conjugated, the paper's **mutual** biquaternion and the
-conjugation it uses for the energy–momentum — is the corpus's $\dagger$ throughout. The symbol
+conjugation it uses for the energy–momentum — is the corpus's ${}^{*}$ throughout. The symbol
 $\nabla$ is the **pure-vector** gradient acting by left quaternion multiplication, so that
 $\nabla\circ\nabla = -\Delta$; it is the $\nabla$ of the harmonic article, not the corpus's
 time-carrying gradient.
@@ -168,7 +168,7 @@ both recomputed. The wave is a spherical EGM wave emitted by a point charge, pro
 of the field, decaying as $r^{-1}$; its density and tension amplitudes are proportional to its
 frequency; its energy density falls as $r^{-2}$ and the vector part of its energy–momentum
 biquaternion is radial along $\mathbf{e}_{x}$, both recomputed. The paper's energy–momentum display
-for it, $\tfrac12\tilde{\Phi}^{0}\tilde{\Phi}^{0\dagger} = w + i\mathbf{P}$, is
+for it, $\tfrac12\tilde{\Phi}^{0}\tilde{\Phi}^{0{}^{*}} = w + i\mathbf{P}$, is
 $w \propto \omega^{2} + 1/(2r^{2})$ and $i\mathbf{P} \propto i\omega^{2}\mathbf{e}_{x}$ under one
 shared prefactor, and that bracket is exactly the recomputed one; the overall prefactor is the
 paper's own and is not self-consistent between its two displays of the elementary photon, so the
@@ -224,7 +224,7 @@ satisfy the free equation, and their content differs in a way the programme read
   where the longitudinal modes were built from scalar potentials; the two constructions are one
   construction, and the corpus does not count them twice.
 - **The energy density is $\omega^{2}$ and the flux is along the wave vector.** With the corpus's
-  $\dagger$, the biquaternion $\tfrac12\tilde{\Phi}\tilde{\Phi}^{\dagger}$ has the real scalar part
+  ${}^{*}$, the biquaternion $\tfrac12\tilde{\Phi}\tilde{\Phi}^{*}$ has the real scalar part
   $\omega^{2}$, independent of position, for every mode, and vector part $i\omega^{2}\mathbf{e}_{k}$;
   both are recomputed. The paper's own display instead places the vector-potential modes' flux along
   their polarisation axis, $\omega^{2}\cos\gamma_{j}\,e_{j}$, vanishing for the tensional wave, and
@@ -427,7 +427,7 @@ clearest statement of what the programme assumes.
 | $\Lambda$, $\tilde{\Xi}_{\Lambda}$ | Light and its energy–momentum, a spectral integral over the band |
 | $\mathrm{O}$, $\tilde{\Xi}_{\mathrm{O}}$ | Free-photon cloud and its energy–momentum (the paper writes omicron) |
 | $b_{j}$, $\Omega_{j}$ | Arbitrary angular weight and structural biquaternion of the $j$-th free-photon type |
-| $\tilde{\Phi}^{\dagger} = \bar{s} - \bar{\mathbf V}$ | Vector-negating, coefficient-conjugating conjugation |
+| $\tilde{\Phi}^{*} = \bar{s} - \bar{\mathbf V}$ | Vector-negating, coefficient-conjugating conjugation |
 
 ## Further Reading
 

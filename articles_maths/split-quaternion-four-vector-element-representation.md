@@ -70,7 +70,7 @@ $$
 
 **Proof.** Expand the product bilinearly and read each surviving basis product from the table; for instance the $e_1$-coefficient collects $q_0 q_1'$ from $1 \cdot e_1$, $q_0' q_1$ from $e_1 \cdot 1$, $-q_2 q_3'$ from $e_2 \cdot e_3 = -e_1$, and $q_2' q_3$ from $e_3 \cdot e_2 = e_1$.
 
-The scalar component of the product, $q_0 q_0' - q_1 q_1' + q_2 q_2' + q_3 q_3'$, is exactly the bilinear form $B(\tilde q,\bar{y})$ evaluated against the conjugate; the remaining coefficients are the antisymmetric remainder. In particular the product is **not** componentwise, and the sign pattern of the scalar component is that of the form $B$ read against the conjugated coordinates.
+The scalar component of the product, $q_0 q_0' - q_1 q_1' + q_2 q_2' + q_3 q_3'$, is exactly the bilinear form $B(\tilde q,y^{\natural})$ evaluated against the conjugate; the remaining coefficients are the antisymmetric remainder. In particular the product is **not** componentwise, and the sign pattern of the scalar component is that of the form $B$ read against the conjugated coordinates.
 
 ## The Three Involutions in Coordinates
 
@@ -78,11 +78,11 @@ The three involutions act on the four-vector by independent sign changes of the 
 
 | involution | $\tilde q^0 = q_0$ | $\tilde q^1 = q_1$ | $\tilde q^2 = q_2$ | $\tilde q^3 = q_3$ |
 |---|---|---|---|---|
-| conjugation $\bar{\cdot}$ | $+$ | $-$ | $-$ | $-$ |
+| conjugation ${}^{\natural}$ | $+$ | $-$ | $-$ | $-$ |
 | principal $\alpha$ | $+$ | $-$ | $-$ | $+$ |
 | reversal $\rho$ | $+$ | $+$ | $+$ | $-$ |
 
-Thus $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ has four-vector $(q_0,-q_1,-q_2,-q_3)$; $\alpha(\tilde q) = q_0 - q_1 e_1 - q_2 e_2 + q_3 e_3$ has $(q_0,-q_1,-q_2,q_3)$; and $\rho(\tilde q) = q_0 + q_1 e_1 + q_2 e_2 - q_3 e_3$ has $(q_0,q_1,q_2,-q_3)$. The scalar component is fixed by all three. The composition $\bar{\cdot} = \alpha\rho$ is the composition of the sign flips, and the three act on the vector triple $(q_1,q_2,q_3)$ by the sign patterns $(-,-,-)$, $(-,-,+)$, $(+,+,-)$, the subgroup of *Split-Quaternion Involution Lattice*.
+Thus $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ has four-vector $(q_0,-q_1,-q_2,-q_3)$; $\alpha(\tilde q) = q_0 - q_1 e_1 - q_2 e_2 + q_3 e_3$ has $(q_0,-q_1,-q_2,q_3)$; and $\rho(\tilde q) = q_0 + q_1 e_1 + q_2 e_2 - q_3 e_3$ has $(q_0,q_1,q_2,-q_3)$. The scalar component is fixed by all three. The composition ${}^{\natural} = \alpha\rho$ is the composition of the sign flips, and the three act on the vector triple $(q_1,q_2,q_3)$ by the sign patterns $(-,-,-)$, $(-,-,+)$, $(+,+,-)$, the subgroup of *Split-Quaternion Involution Lattice*.
 
 ## The Distinguished Subspaces in Coordinates
 
@@ -102,7 +102,7 @@ So the scalar subspace is the first coordinate axis, the vector subspace is the 
 The split-quaternion norm of $\tilde q$ is
 
 $$
-N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2 + q_1^2 - q_2^2 - q_3^2,
+N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2,
 $$
 
 of **signature $(2,2)$**, with polarisation $B(\tilde q,y) = q_0 q_0' + q_1 q_1' - q_2 q_2' - q_3 q_3'$ and matrix $G = \operatorname{diag}(1,1,-1,-1)$ in the coordinate basis. It is indefinite and non-degenerate, the scalar and $e_1$ directions being positive and the $e_2, e_3$ directions negative. Under the matrix model it is the determinant, $N(\tilde q) = \det \Phi(\tilde q)$.
@@ -126,9 +126,9 @@ $$
 N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2 \neq 0,
 $$
 
-and then $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q) = \dfrac{q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3}{q_0^2+q_1^2-q_2^2-q_3^2}$. Equivalently, the element is a unit if and only if the determinant of the matrix model is nonzero.
+and then $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q) = \dfrac{q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3}{q_0^2+q_1^2-q_2^2-q_3^2}$. Equivalently, the element is a unit if and only if the determinant of the matrix model is nonzero.
 
-**Proof.** The identity $\tilde q\bar{\tilde q} = N(\tilde q)$ gives $\tilde q \cdot (\bar{\tilde q}/N(\tilde q)) = 1$ whenever $N(\tilde q) \neq 0$; conversely, if $N(\tilde q) = 0$ with $\tilde q \neq 0$, then $\tilde q\bar{\tilde q} = 0$ with $\bar{\tilde q} \neq 0$, so $\tilde q$ is a zero divisor and cannot be a unit.
+**Proof.** The identity $\tilde q\tilde{q}^{\natural} = N(\tilde q)$ gives $\tilde q \cdot (\tilde{q}^{\natural}/N(\tilde q)) = 1$ whenever $N(\tilde q) \neq 0$; conversely, if $N(\tilde q) = 0$ with $\tilde q \neq 0$, then $\tilde q\tilde{q}^{\natural} = 0$ with $\tilde{q}^{\natural} \neq 0$, so $\tilde q$ is a zero divisor and cannot be a unit.
 
 The non-invertible nonzero four-vectors are exactly those on the **null cone** $q_0^2 + q_1^2 = q_2^2 + q_3^2$; on the vector subspace $q_0 = 0$ this is the light cone $q_1^2 = q_2^2 + q_3^2$ of the Minkowski form, and in the split-complex plane $\mathbb{D}_2$ it is the pair of isotropic lines $q_0 = \pm q_2$.
 
@@ -140,7 +140,7 @@ The biquaternion article *Biquaternion Four-Vector Element Representation* reads
 
 The four-vector realization reads a split-quaternion $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ as the quadruple $(q_0,q_1,q_2,q_3) \in \mathbb{R}^4$, an $\mathbb{R}$-linear isomorphism $\mathbb{H}_{\mathrm{s}} \to \mathbb{R}^4$ with no complex structure. The column $X$ is the quadruple written vertically and the row $X^{\mathsf{T}}$ is its dual under the non-degenerate pairing $B$ with matrix $G = \operatorname{diag}(1,1,-1,-1)$.
 
-The product is computed in components by the displayed formula, whose scalar part is $B(\tilde q,\bar{y})$ and whose vector part is the antisymmetric remainder. The three involutions act by independent sign flips of $(q_1,q_2,q_3)$: conjugation by $(-,-,-)$, the principal involution by $(-,-,+)$, and the reversal by $(+,+,-)$, with the scalar component always fixed. The distinguished subspaces are the coordinate conditions $q_0$-axis ($S$), $\tilde q^0=0$ ($V$), and the $(q_0,q_2)$-, $(q_0,q_3)$-planes ($\mathbb{D}_2, \mathbb{D}_3$). The split-quaternion norm is $q_0^2 + q_1^2 - q_2^2 - q_3^2$ of signature $(2,2)$, restricting to $q_0^2$, $q_1^2-q_2^2-q_3^2$, $q_0^2-q_2^2$ and $q_0^2-q_3^2$ on the four subspaces, and it gives the unit criterion $N \neq 0$ with $\tilde q^{-1} = \bar{\tilde q}/N$. This is the real, indefinite analogue of the complex four-vector representation of $\mathbb{B}$.
+The product is computed in components by the displayed formula, whose scalar part is $B(\tilde q,y^{\natural})$ and whose vector part is the antisymmetric remainder. The three involutions act by independent sign flips of $(q_1,q_2,q_3)$: conjugation by $(-,-,-)$, the principal involution by $(-,-,+)$, and the reversal by $(+,+,-)$, with the scalar component always fixed. The distinguished subspaces are the coordinate conditions $q_0$-axis ($S$), $\tilde q^0=0$ ($V$), and the $(q_0,q_2)$-, $(q_0,q_3)$-planes ($\mathbb{D}_2, \mathbb{D}_3$). The split-quaternion norm is $q_0^2 + q_1^2 - q_2^2 - q_3^2$ of signature $(2,2)$, restricting to $q_0^2$, $q_1^2-q_2^2-q_3^2$, $q_0^2-q_2^2$ and $q_0^2-q_3^2$ on the four subspaces, and it gives the unit criterion $N \neq 0$ with $\tilde q^{-1} = \tilde{q}^{\natural}/N$. This is the real, indefinite analogue of the complex four-vector representation of $\mathbb{B}$.
 
 ## Summary of Notation
 
@@ -154,9 +154,9 @@ The product is computed in components by the displayed formula, whose scalar par
 | $G = \operatorname{diag}(1,1,-1,-1)$ | the matrix of the polarised form in coordinates | this article |
 | $N(\tilde q) = q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
 | $B(\tilde q,y)$ | the polarised bilinear form | *Split-Quaternion Norm and Invertibility* |
-| $\bar{\cdot}, \alpha, \rho$ | the three involutions as sign flips | *Split-Quaternion Subspaces and the Involutions* |
+| ${}^{\natural}, \alpha, \rho$ | the three involutions as sign flips | *Split-Quaternion Subspaces and the Involutions* |
 | $S, V, \mathbb{D}_2, \mathbb{D}_3$ | the distinguished subspaces as coordinate conditions | *Split-Quaternion Relations Between Subspaces* |
-| $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$ | the inverse of a unit | *Split-Quaternion Norm and Invertibility* |
+| $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$ | the inverse of a unit | *Split-Quaternion Norm and Invertibility* |
 
 ## Further Reading
 

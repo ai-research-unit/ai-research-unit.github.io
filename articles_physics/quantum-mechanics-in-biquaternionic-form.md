@@ -32,7 +32,7 @@ $$
 \tilde{H} = h_0\, e_0 + i\,\mathbf{h}, \qquad \mathbf{h} = (h_1, h_2, h_3) \in \mathbb{R}^3.
 $$
 
-The subspace $\mathbb{M}_+$ is a real vector space of dimension 4. Its elements are Hermitian (fixed under the Hermitian conjugation $\dagger$).
+The subspace $\mathbb{M}_+$ is a real vector space of dimension 4. Its elements are Hermitian (fixed under the Hermitian conjugation ${}^{*}$).
 
 **Trace.** Writing $\mathrm{Sc}(\tilde{Q})$ for the scalar part of $\tilde{Q}$, the **trace** of an element of $\mathbb{M}_+$ is twice its scalar part:
 
@@ -43,7 +43,7 @@ $$
 **Biquaternion norm.** The biquaternion norm of $\mathbb{B}$ restricts to a real quadratic form of signature $(1,3)$ on $\mathbb{M}_+$:
 
 $$
-N(\tilde{H}) = \tilde{H}\bar{\tilde{H}} = (h_0^2 - |\mathbf{h}|^2) e_0.
+N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural} = (h_0^2 - |\mathbf{h}|^2) e_0.
 $$
 
 This is the form whose vanishing defines the light cone in $\mathbb{M}_+$; the nonzero elements on the cone are the zero divisors of $\mathbb{B}$ that lie in $\mathbb{M}_+$.
@@ -68,20 +68,20 @@ $$
 
 of signature $(1,3)$. It is the Lorentzian quadratic form whose future light cone defines the state space.
 
-**The polarization of the biquaternion norm.** The bilinear form associated with the biquaternion norm is obtained by symmetrizing the product $\tilde{H}\bar{\tilde{K}}$:
+**The polarization of the biquaternion norm.** The bilinear form associated with the biquaternion norm is obtained by symmetrizing the product $\tilde{H}\tilde{K}^{\natural}$:
 
 $$
-B(\tilde{H}, \tilde{K}) = \tfrac{1}{2}\left(\tilde{H}\bar{\tilde{K}} + \tilde{K}\bar{\tilde{H}}\right).
+B(\tilde{H}, \tilde{K}) = \tfrac{1}{2}\left(\tilde{H}\tilde{K}^{\natural} + \tilde{K}\tilde{H}^{\natural}\right).
 $$
 
-Computing directly, using $\bar{\tilde{H}} = h_0 e_0 - i\mathbf{h}$ and the quaternion product of pure vector parts,
+Computing directly, using $\tilde{H}^{\natural} = h_0 e_0 - i\mathbf{h}$ and the quaternion product of pure vector parts,
 
 $$
-\tilde{H}\bar{\tilde{K}} = (h_0 k_0 - \mathbf{h}\cdot\mathbf{k})\,e_0 + i(k_0\mathbf{h} - h_0\mathbf{k}) + \mathbf{h}\times\mathbf{k},
+\tilde{H}\tilde{K}^{\natural} = (h_0 k_0 - \mathbf{h}\cdot\mathbf{k})\,e_0 + i(k_0\mathbf{h} - h_0\mathbf{k}) + \mathbf{h}\times\mathbf{k},
 $$
 
 $$
-\tilde{K}\bar{\tilde{H}} = (h_0 k_0 - \mathbf{h}\cdot\mathbf{k})\,e_0 - i(k_0\mathbf{h} - h_0\mathbf{k}) - \mathbf{h}\times\mathbf{k}.
+\tilde{K}\tilde{H}^{\natural} = (h_0 k_0 - \mathbf{h}\cdot\mathbf{k})\,e_0 - i(k_0\mathbf{h} - h_0\mathbf{k}) - \mathbf{h}\times\mathbf{k}.
 $$
 
 The sum is scalar:
@@ -95,7 +95,7 @@ This is the **Lorentzian** bilinear form, of signature $(1,3)$. Its polarization
 The antisymmetric combination contains the vector part:
 
 $$
-\tfrac{1}{2}\left(\tilde{H}\bar{\tilde{K}} - \tilde{K}\bar{\tilde{H}}\right) = i(k_0\mathbf{h} - h_0\mathbf{k}) + \mathbf{h}\times\mathbf{k}.
+\tfrac{1}{2}\left(\tilde{H}\tilde{K}^{\natural} - \tilde{K}\tilde{H}^{\natural}\right) = i(k_0\mathbf{h} - h_0\mathbf{k}) + \mathbf{h}\times\mathbf{k}.
 $$
 
 This is not a symmetric bilinear form; it is the antisymmetric part of the full product, and it plays a role in the commutator structure of the algebra.
@@ -124,7 +124,7 @@ where $\hat{\mu} = \mu_1 e_1 + \mu_2 e_2 + \mu_3 e_3$ is a unit pure real quater
 
 **Properties of the idempotents:**
 
-1. **Hermitian:** $\tilde\Pi_\pm^\dagger = \tilde\Pi_\pm$.
+1. **Hermitian:** $\tilde\Pi_\pm^{*} = \tilde\Pi_\pm$.
 2. **Idempotent:** $\tilde\Pi_\pm^2 = \tilde\Pi_\pm$.
 3. **Trace one:** $\mathrm{Tr}(\tilde\Pi_\pm) = 1$.
 4. **Complementary:** $\tilde\Pi_+ + \tilde\Pi_- = e_0$, and $\tilde\Pi_+ \tilde\Pi_- = 0 = \tilde\Pi_- \tilde\Pi_+$.
@@ -308,7 +308,7 @@ $$
 \tilde\Pi(t) = \tilde{U}(t)\,\tilde\Pi(0)\,\tilde{U}(t)^\dagger,
 $$
 
-where $\tilde{U}(t)$ is a **unitary biquaternion**, $\tilde{U}\tilde{U}^\dagger = e_0$, satisfying the **Schrödinger equation**
+where $\tilde{U}(t)$ is a **unitary biquaternion**, $\tilde{U}\tilde{U}^{*} = e_0$, satisfying the **Schrödinger equation**
 
 $$
 i\hbar\, \frac{d}{dt}\tilde{U}(t) = \tilde{H}\,\tilde{U}(t), \qquad \tilde{U}(0) = e_0,
@@ -329,7 +329,7 @@ The element $\tilde{U}(t)$ is **unitary**: $\tilde{U}(t)\tilde{U}(t)^\dagger = e
 **The trace part of the Hamiltonian does not affect the state.** Since $e^{-ih_0 t/\hbar}$ is a central complex scalar, and since the conjugation
 
 $$
-\tilde{U}(t)\,\tilde{P}\,\tilde{U}(t)^\dagger = e^{-ih_0 t/\hbar}R\,\tilde{P}\,e^{+ih_0 t/\hbar}R^\dagger = R\,\tilde{P}\,R^\dagger
+\tilde{U}(t)\,\tilde{P}\,\tilde{U}(t)^\dagger = e^{-ih_0 t/\hbar}R\,\tilde{P}\,e^{+ih_0 t/\hbar}R^{*} = R\,\tilde{P}\,R^{*}
 $$
 
 (with $R = \cos(|\mathbf{h}|t/\hbar)e_0 + \sin(|\mathbf{h}|t/\hbar)\hat{\mathbf{h}}$ a unit real quaternion), the phase $e^{-ih_0 t/\hbar}$ cancels out. So only the traceless part $\mathbf{h}$ of the Hamiltonian affects the state evolution. This is the standard result: the trace part of the Hamiltonian contributes only to a global, unobservable phase.
@@ -366,13 +366,13 @@ $$
 
 where $\tilde{H}_0$ is the Hamiltonian.
 
-**Derivation.** We compute the time derivative of $\tilde{H}_{\mathrm{H}}(t) = \tilde{U}^\dagger\tilde{H}\tilde{U}$, using the Schrödinger equation $i\hbar\,\dot{\tilde{U}} = \tilde{H}_0\tilde{U}$ and its adjoint $-i\hbar\,\dot{\tilde{U}}^\dagger = \tilde{U}^\dagger\tilde{H}_0$:
+**Derivation.** We compute the time derivative of $\tilde{H}_{\mathrm{H}}(t) = \tilde{U}^{*}\tilde{H}\tilde{U}$, using the Schrödinger equation $i\hbar\,\dot{\tilde{U}} = \tilde{H}_0\tilde{U}$ and its adjoint $-i\hbar\,\dot{\tilde{U}}^{*} = \tilde{U}^{*}\tilde{H}_0$:
 
 $$
-i\hbar\, \frac{d}{dt}\tilde{H}_{\mathrm{H}} = i\hbar\left(\dot{\tilde{U}}^\dagger\tilde{H}\tilde{U} + \tilde{U}^\dagger\tilde{H}\dot{\tilde{U}}\right) = -\tilde{U}^\dagger\tilde{H}_0\tilde{H}\tilde{U} + \tilde{U}^\dagger\tilde{H}\tilde{H}_0\tilde{U} = \tilde{U}^\dagger[\tilde{H}, \tilde{H}_0]\tilde{U}.
+i\hbar\, \frac{d}{dt}\tilde{H}_{\mathrm{H}} = i\hbar\left(\dot{\tilde{U}}^{*}\tilde{H}\tilde{U} + \tilde{U}^{*}\tilde{H}\dot{\tilde{U}}\right) = -\tilde{U}^{*}\tilde{H}_0\tilde{H}\tilde{U} + \tilde{U}^{*}\tilde{H}\tilde{H}_0\tilde{U} = \tilde{U}^{*}[\tilde{H}, \tilde{H}_0]\tilde{U}.
 $$
 
-Since $\tilde{U}(t) = \exp(-i\tilde{H}_0 t/\hbar)$ is a function of $\tilde{H}_0$, it **commutes with $\tilde{H}_0$**. This is what makes the last expression equal to $[\tilde{H}_{\mathrm{H}}, \tilde{U}^\dagger\tilde{H}_0\tilde{U}] = [\tilde{H}_{\mathrm{H}}, \tilde{H}_0]$. So
+Since $\tilde{U}(t) = \exp(-i\tilde{H}_0 t/\hbar)$ is a function of $\tilde{H}_0$, it **commutes with $\tilde{H}_0$**. This is what makes the last expression equal to $[\tilde{H}_{\mathrm{H}}, \tilde{U}^{*}\tilde{H}_0\tilde{U}] = [\tilde{H}_{\mathrm{H}}, \tilde{H}_0]$. So
 
 $$
 i\hbar\, \frac{d}{dt}\tilde{H}_{\mathrm{H}}(t) = [\tilde{H}_{\mathrm{H}}(t), \tilde{H}_0].
@@ -395,15 +395,15 @@ In the standard framework, the measurement postulate is stated separately from t
 - **Probability** $p_+ = \mathrm{Tr}(\tilde\Pi_+\tilde{\rho})$, from the trace formula.
 - **Post-measurement state** $\tilde{\rho}' = \tilde\Pi_+$, from the sandwich operation.
 
-**Generalized measurement.** A general measurement is described by a set of **Kraus operators** $\{\tilde{K}_i\} \subset \mathbb{B}$ satisfying $\sum_i \tilde{K}_i^\dagger\tilde{K}_i = e_0$. The action on a state is
+**Generalized measurement.** A general measurement is described by a set of **Kraus operators** $\{\tilde{K}_i\} \subset \mathbb{B}$ satisfying $\sum_i \tilde{K}_i^{*}\tilde{K}_i = e_0$. The action on a state is
 
 $$
-\tilde{\rho} \;\longmapsto\; \sum_i \tilde{K}_i\,\tilde{\rho}\,\tilde{K}_i^\dagger,
+\tilde{\rho} \;\longmapsto\; \sum_i \tilde{K}_i\,\tilde{\rho}\,\tilde{K}_i^{*},
 $$
 
-and the probability of outcome $i$ is $p_i = \mathrm{Tr}(\tilde{K}_i^\dagger \tilde{K}_i \tilde{\rho})$. The Kraus operators are elements of $\mathbb{B}$, and the framework inherits the full POVM formalism in biquaternion language.
+and the probability of outcome $i$ is $p_i = \mathrm{Tr}(\tilde{K}_i^{*} \tilde{K}_i \tilde{\rho})$. The Kraus operators are elements of $\mathbb{B}$, and the framework inherits the full POVM formalism in biquaternion language.
 
-**A structural point.** The **reversible–irreversible distinction** is algebraic in the biquaternion framework. Unitary elements $\tilde{U}$ preserve the biquaternion norm of $\mathbb{B}$ and generate reversible evolution. Idempotent elements $\tilde{P}$ do not preserve the biquaternion norm (they satisfy $\tilde{P}^2 = \tilde{P}$ but $\tilde{P}\tilde{P}^\dagger = \tilde{P} \neq e_0$) and generate irreversible projection. The two kinds of process are distinguished by a property of the acting element, not by a separate postulate.
+**A structural point.** The **reversible–irreversible distinction** is algebraic in the biquaternion framework. Unitary elements $\tilde{U}$ preserve the biquaternion norm of $\mathbb{B}$ and generate reversible evolution. Idempotent elements $\tilde{P}$ do not preserve the biquaternion norm (they satisfy $\tilde{P}^2 = \tilde{P}$ but $\tilde{P}\tilde{P}^{*} = \tilde{P} \neq e_0$) and generate irreversible projection. The two kinds of process are distinguished by a property of the acting element, not by a separate postulate.
 
 ## Purity, Entropy, and Fidelity
 
@@ -462,7 +462,7 @@ For mixed states, the fidelity is given by the Uhlmann formula, which in the biq
 The **unitary group** $U(2)$ acts on $\mathbb{M}_+$ by conjugation:
 
 $$
-\tilde{\rho} \;\longmapsto\; \tilde{U}\,\tilde{\rho}\,\tilde{U}^\dagger, \qquad \tilde{U} \in U(2).
+\tilde{\rho} \;\longmapsto\; \tilde{U}\,\tilde{\rho}\,\tilde{U}^{*}, \qquad \tilde{U} \in U(2).
 $$
 
 This action preserves the Hermitian property and the trace, so it maps states to states and observables to observables.
@@ -514,11 +514,11 @@ Item 8 of the checklist states the compatibility with relativity as a requiremen
 **One conjugation action, two groups.** The symmetry transformations of this article and of its relativistic companions all act by **conjugation**,
 
 $$
-\tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger,
+\tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*},
 \qquad \tilde{\Lambda} \in \mathbb{B} \ \ \text{invertible},
 $$
 
-and the two theories differ only in the subgroup of the invertible elements over which $\tilde{\Lambda}$ ranges. The **quantum operations** of the Schrödinger picture are the **unitary** case, $\tilde{\Lambda}\tilde{\Lambda}^\dagger = e_0$; these elements form the group $U(2)$. The **proper orthochronous Lorentz transformations** of $\mathbb{M}_-$ are the case of **unit norm**, $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$; these elements form $SL(2,\mathbb{C})$, the double cover of that group. The two normalization conditions are genuinely different — neither group contains the other — yet both act by the same formula, on the same algebra, and their intersection is the rotation group:
+and the two theories differ only in the subgroup of the invertible elements over which $\tilde{\Lambda}$ ranges. The **quantum operations** of the Schrödinger picture are the **unitary** case, $\tilde{\Lambda}\tilde{\Lambda}^{*} = e_0$; these elements form the group $U(2)$. The **proper orthochronous Lorentz transformations** of $\mathbb{M}_-$ are the case of **unit norm**, $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$; these elements form $SL(2,\mathbb{C})$, the double cover of that group. The two normalization conditions are genuinely different — neither group contains the other — yet both act by the same formula, on the same algebra, and their intersection is the rotation group:
 
 $$
 SU(2) \subset U(2), \qquad SU(2) \subset SL(2,\mathbb{C}), \qquad U(2) \cap SL(2,\mathbb{C}) = SU(2).
@@ -529,7 +529,7 @@ The intersection is the set of unit real quaternions. Its conjugation action rot
 **What distinguishes the two groups.** The two groups are subgroups of the same invertible elements, acting by the same formula, and what separates them is the algebraic character of the transformation. For a unitary rotor the conjugation is multiplicative,
 
 $$
-\tilde{U}\left(\tilde{Q}\tilde{Y}\right)\tilde{U}^\dagger = \left(\tilde{U}\tilde{Q}\tilde{U}^\dagger\right)\left(\tilde{U}\tilde{Y}\tilde{U}^\dagger\right), \qquad \tilde{U} \in U(2),
+\tilde{U}\left(\tilde{Q}\tilde{Y}\right)\tilde{U}^{*} = \left(\tilde{U}\tilde{Q}\tilde{U}^{*}\right)\left(\tilde{U}\tilde{Y}\tilde{U}^{*}\right), \qquad \tilde{U} \in U(2),
 $$
 
 so it is an **automorphism** of $\mathbb{B}$; conjugation by a non-unitary element has no such property, and is only a **congruence**. The difference is visible in the quadratic forms each conjugation leaves invariant.
@@ -537,16 +537,16 @@ so it is an **automorphism** of $\mathbb{B}$; conjugation by a non-unitary eleme
 The **trace pairing** $\mathrm{Tr}(\tilde{H}\tilde{K})$, the Euclidean Hilbert–Schmidt form on $\mathbb{M}_+$ on which the Born rule rests, is preserved by **exactly** the unitary group:
 
 $$
-\mathrm{Tr}\!\left(\tilde{\Lambda}\tilde{H}\tilde{\Lambda}^\dagger\,\tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger\right) = \mathrm{Tr}(\tilde{H}\tilde{K}) \ \ \text{for all Hermitian } \tilde{H},\tilde{K}
+\mathrm{Tr}\!\left(\tilde{\Lambda}\tilde{H}\tilde{\Lambda}^{*}\,\tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}\right) = \mathrm{Tr}(\tilde{H}\tilde{K}) \ \ \text{for all Hermitian } \tilde{H},\tilde{K}
 \quad \Longleftrightarrow \quad \tilde{\Lambda} \in U(2),
 $$
 
-since the left-hand side is $\mathrm{Tr}\big((\tilde{\Lambda}^\dagger\tilde{\Lambda})\tilde{K}(\tilde{\Lambda}^\dagger\tilde{\Lambda})\tilde{H}\big)$, and the condition on $\tilde{\Lambda}^\dagger\tilde{\Lambda}$ is the unitarity condition. A boost fails it.
+since the left-hand side is $\mathrm{Tr}\big((\tilde{\Lambda}^{*}\tilde{\Lambda})\tilde{K}(\tilde{\Lambda}^{*}\tilde{\Lambda})\tilde{H}\big)$, and the condition on $\tilde{\Lambda}^{*}\tilde{\Lambda}$ is the unitarity condition. A boost fails it.
 
-The **biquaternion norm** $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, and with it the interval on $\mathbb{M}_-$, is invariant under the whole rotor group, by multiplicativity of the biquaternion norm together with $N(\tilde{\Lambda}^\dagger) = \overline{N(\tilde{\Lambda})} = 1$:
+The **biquaternion norm** $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$, and with it the interval on $\mathbb{M}_-$, is invariant under the whole rotor group, by multiplicativity of the biquaternion norm together with $N(\tilde{\Lambda}^{*}) = \overline{N(\tilde{\Lambda})} = 1$:
 
 $$
-N\!\left(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger\right) = N(\tilde{\Lambda})\,N(\tilde{Q})\,N(\tilde{\Lambda}^\dagger) = N(\tilde{Q}), \qquad \tilde{\Lambda} \in SL(2,\mathbb{C}).
+N\!\left(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}\right) = N(\tilde{\Lambda})\,N(\tilde{Q})\,N(\tilde{\Lambda}^{*}) = N(\tilde{Q}), \qquad \tilde{\Lambda} \in SL(2,\mathbb{C}).
 $$
 
 This form does **not**, however, separate the two groups, and the point is worth stating: since $|N(\tilde{U})| = |\det\tilde{U}| = 1$ for a unitary element, the unitary group preserves the biquaternion norm as well. In general $N$ is invariant under conjugation by every element with $|N| = 1$, of which the unitary elements and the unit-norm rotors are the two cases that occur here. The Lorentzian form is thus common to the quantum and the relativistic transformations. What separates them is the **Euclidean** trace pairing, which only the quantum operations preserve, together with the automorphism property, which only they possess. Neither group contains the other, and their common subgroup is the rotation group $SU(2)$.
@@ -560,7 +560,7 @@ $$
 It lies on the **norm-one hyperboloid** of $\mathbb{M}_+$, whereas the states lie on the trace-one slice of the future light cone, with $N(\tilde{\rho}) = \tfrac{1}{4}(1 - |\mathbf{r}|^2) \geq 0$ and pure states at $N = 0$. Boost conjugation preserves Hermiticity, positivity (a congruence preserves the inertia), and the biquaternion norm, but it preserves neither the trace nor the trace pairing. On the maximally mixed state, for instance,
 
 $$
-\tilde{\Lambda}\,\tfrac{1}{2}e_0\,\tilde{\Lambda}^\dagger = \tfrac{1}{2}\left(\cosh\psi\,e_0 + i\sinh\psi\,\hat{\mathbf{u}}\right),
+\tilde{\Lambda}\,\tfrac{1}{2}e_0\,\tilde{\Lambda}^{*} = \tfrac{1}{2}\left(\cosh\psi\,e_0 + i\sinh\psi\,\hat{\mathbf{u}}\right),
 $$
 
 whose trace is $\cosh\psi$, not $1$. A boost therefore maps the state cone into itself while moving the state off the trace-one slice; the physical state is recovered by renormalizing. This is the algebraic form of a familiar relativistic fact: the Lorentz transformation of a state is not unitary, and the quantity it preserves is the Lorentzian biquaternion norm rather than the Euclidean trace pairing.
@@ -647,13 +647,13 @@ The extension to many qubits, the second-quantized version, the connection to qu
 | $\tilde\Pi_\pm(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ | Idempotent (pure state) |
 | $\mathrm{Tr}(\tilde{H}) = 2 h_0$ | Trace |
 | $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \mathbf{r}\cdot\mathbf{h}$ | Born rule |
-| $N(\tilde{H}) = \tilde{H}\bar{\tilde{H}} = h_0^2 - |\mathbf{h}|^2$ | Biquaternion norm, signature $(1,3)$ |
+| $N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural} = h_0^2 - |\mathbf{h}|^2$ | Biquaternion norm, signature $(1,3)$ |
 | $B(\tilde{H}, \tilde{K}) = h_0 k_0 - \mathbf{h}\cdot\mathbf{k}$ | Polarization of the biquaternion norm |
 | $[\tilde{H}, \tilde{K}] = -2(\mathbf{h}\times\mathbf{k})$ | Commutator |
 | $\tilde{\rho}\mapsto\tilde{P}\tilde{\rho}\tilde{P}$ | Projective measurement |
 | $\tilde{U}(t) = e^{-ih_0t/\hbar}(\cos(|\mathbf{h}|t/\hbar)e_0 + \sin(|\mathbf{h}|t/\hbar)\hat{\mathbf{h}})$ | Unitary evolution |
 | $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}\tilde{U}(t)^\dagger$ | Von Neumann evolution |
-| $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, $\tilde{\Lambda}$ invertible | Conjugation; quantum if $\tilde{\Lambda}\tilde{\Lambda}^\dagger = e_0$ (group $U(2)$), Lorentz if $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ (group $SL(2,\mathbb{C})$) |
+| $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, $\tilde{\Lambda}$ invertible | Conjugation; quantum if $\tilde{\Lambda}\tilde{\Lambda}^{*} = e_0$ (group $U(2)$), Lorentz if $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ (group $SL(2,\mathbb{C})$) |
 | $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1+|\mathbf{r}|^2)$ | Purity |
 | $\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}(|\mathbf{r}|^2-1)e_0$ | Deviation from idempotency |
 

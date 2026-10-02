@@ -10,7 +10,7 @@ $$
 g_{rr} = \frac{1}{1-|\mathbf{r}|^2} = \frac{1}{4\,\mathrm{Sc}\,N(\tilde{\rho})},
 $$
 
-where $N(\tilde{\rho}) = \tilde{\rho}\bar{\tilde{\rho}} = \tfrac{1}{4}(1-|\mathbf{r}|^2)e_0$ is the biquaternion norm of the state. The two readings of a state are therefore reciprocal: the biquaternion norm measures how far the state lies inside the future cone, and the Fisher information measures how sharply a displacement of that position can be detected. The Fisher information is minimal at the maximally mixed state, where the biquaternion norm is largest, and it diverges on the boundary, where the biquaternion norm vanishes.
+where $N(\tilde{\rho}) = \tilde{\rho}\tilde{\rho}^{\natural} = \tfrac{1}{4}(1-|\mathbf{r}|^2)e_0$ is the biquaternion norm of the state. The two readings of a state are therefore reciprocal: the biquaternion norm measures how far the state lies inside the future cone, and the Fisher information measures how sharply a displacement of that position can be detected. The Fisher information is minimal at the maximally mixed state, where the biquaternion norm is largest, and it diverges on the boundary, where the biquaternion norm vanishes.
 
 The boundary is the **zero-divisor cone**. The reciprocity therefore says that the states of maximal information — the states in which an arbitrarily small change of the Bloch radius is detected with arbitrarily high precision — are exactly the pure states, that is, the non-invertible elements of the algebra. The analytic singularity of the logarithm used in the companion article *Coarse-Graining and the Biquaternion Entropy Functional*, the vanishing of the biquaternion norm, and the divergence of the Fisher information are three descriptions of the same locus.
 
@@ -30,7 +30,7 @@ $$
 \tilde{\rho} = \tfrac{1}{2}\left(e_0 + i\,\mathbf{r}\right), \qquad \mathbf{r} \in \mathbb{R}^3, \quad |\mathbf{r}| \le 1 ,
 $$
 
-with $\mathrm{Tr}(\tilde{\rho}) = 1$ and purity $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1+|\mathbf{r}|^2)$. Its biquaternion norm is the quadratic form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ evaluated on it,
+with $\mathrm{Tr}(\tilde{\rho}) = 1$ and purity $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1+|\mathbf{r}|^2)$. Its biquaternion norm is the quadratic form $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ evaluated on it,
 
 $$
 N(\tilde{\rho}) = \tfrac{1}{4}\left(1 - |\mathbf{r}|^2\right)e_0 .
@@ -312,7 +312,7 @@ The classical metric is the radial shadow of the full quantum Fisher information
 | $i$ | Central scalar imaginary |
 | $\tilde{\rho} = \tfrac{1}{2}(e_0+i\mathbf{r})$ | State, Bloch vector $\mathbf{r}$, $|\mathbf{r}|\le1$ |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $N(\tilde{\rho}) = \tfrac{1}{4}(1-|\mathbf{r}|^2)e_0$ | Biquaternion norm of a state |
 | $\tfrac{1}{4}(1-|\mathbf{r}|^2)$ | Biquaternion-norm defect |
 | $N(\tilde{\rho}-\tilde{\sigma}) = -\tfrac{1}{4}|\mathbf{r}-\mathbf{s}|^2 e_0$ | Biquaternion norm of a difference (metric) |

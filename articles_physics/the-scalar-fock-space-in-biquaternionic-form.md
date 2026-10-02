@@ -42,7 +42,7 @@ $$
 
 and the scalar one-particle space is a module over the center. At the level of the generators every commutator $[\tilde A,\tilde B]$ acts as zero, so only the central part of an element contributes and the spin part of the algebra is invisible on a spin-$0$ state. In the associative sense no nonzero action of the whole algebra exists, and the reason is one line: the trace-free part generates $\mathbb{B}$, so if $e_1$ acted as zero then $e_1^2=-e_0$ would force the identity to act as zero as well, and with it every element. The irreducible biquaternion modules are the spinor modules; the scalar state space is a module for the center and for the mode algebra, not for $\mathbb{B}$. This is the representation-theoretic content of "spin $0$ lives in the center", stated at the level of the state space rather than the field.
 
-The complex structure that makes $\mathcal{H}_1$ a complex vector space is the central scalar imaginary $i$; the $U(1)$ phase it generates is the internal symmetry of the charged field. In the framework's conjugation language, the Hermitian conjugation ${}^\dagger$ fixes the real subspace of the one-particle space and exchanges the particle and antiparticle branches; the algebra's real structure $\flat=-\dagger$ acts on the central values and not on the module. The one-particle space thus inherits the center's complex structure and nothing of the spinor structure.
+The complex structure that makes $\mathcal{H}_1$ a complex vector space is the central scalar imaginary $i$; the $U(1)$ phase it generates is the internal symmetry of the charged field. In the framework's conjugation language, the Hermitian conjugation ${}^{*}$ fixes the real subspace of the one-particle space and exchanges the particle and antiparticle branches; the algebra's real structure $\flat=-{}^{*}$ acts on the central values and not on the module. The one-particle space thus inherits the center's complex structure and nothing of the spinor structure.
 
 ## The Little Group and One State per Momentum
 
@@ -54,7 +54,7 @@ $$
 U(\Lambda)|\mathbf{p}\rangle=|\Lambda\mathbf{p}\rangle ,
 $$
 
-one state per momentum, with no polarization label, no discrete index and no Wigner rotation. The framework's rotor group acts through the trivial representation for the same algebraic reason as the field: the scalar is the singlet of the rotor conjugation, $\tilde\Lambda e_0\tilde\Lambda^\dagger=e_0$. The invariant measure
+one state per momentum, with no polarization label, no discrete index and no Wigner rotation. The framework's rotor group acts through the trivial representation for the same algebraic reason as the field: the scalar is the singlet of the rotor conjugation, $\tilde\Lambda e_0\tilde\Lambda^{*}=e_0$. The invariant measure
 
 $$
 \int\!\frac{d^3p}{(2\pi)^3\,2E_{\mathbf{p}}}
@@ -164,13 +164,13 @@ The number operator of a mode is obtained from the field by normal ordering, and
 
 $$
 :\!\hat{\phi}^\dagger(x)\hat{\phi}(x)\!:
-\,=\,\hat{\phi}^{(+)\dagger}(x)\,\hat{\phi}^{(+)}(x)
-+\hat{\phi}^{(-)}(x)\,\hat{\phi}^{(-)\dagger}(x)
-+\hat{\phi}^{(+)\dagger}(x)\,\hat{\phi}^{(-)}(x)
-+\hat{\phi}^{(-)\dagger}(x)\,\hat{\phi}^{(+)}(x),
+\,=\,\hat{\phi}^{(+){}^{*}}(x)\,\hat{\phi}^{(+)}(x)
++\hat{\phi}^{(-)}(x)\,\hat{\phi}^{(-){}^{*}}(x)
++\hat{\phi}^{(+){}^{*}}(x)\,\hat{\phi}^{(-)}(x)
++\hat{\phi}^{(-){}^{*}}(x)\,\hat{\phi}^{(+)}(x),
 $$
 
-the density in which every creation operator stands to the left of every annihilation operator. The first two terms are the particle and antiparticle number densities and the last two are the crossed particle–antiparticle terms; all four terms of $\hat\phi^\dagger\hat\phi$ appear, the antiparticle density displayed second being the one term whose operators are reversed relative to the unordered product $\hat\phi^{(-)\dagger}\hat\phi^{(-)}$. The normal-ordered density has vanishing vacuum expectation by construction, whereas the unordered product carries the c-number commutator $[\hat\phi^{(-)\dagger},\hat\phi^{(-)}]$; this is why the vacuum energy of the companion quantization is a contact term. Integrating the normal-ordered density over space and projecting onto a mode gives the mode number,
+the density in which every creation operator stands to the left of every annihilation operator. The first two terms are the particle and antiparticle number densities and the last two are the crossed particle–antiparticle terms; all four terms of $\hat\phi^\dagger\hat\phi$ appear, the antiparticle density displayed second being the one term whose operators are reversed relative to the unordered product $\hat\phi^{(-){}^{*}}\hat\phi^{(-)}$. The normal-ordered density has vanishing vacuum expectation by construction, whereas the unordered product carries the c-number commutator $[\hat\phi^{(-){}^{*}},\hat\phi^{(-)}]$; this is why the vacuum energy of the companion quantization is a contact term. Integrating the normal-ordered density over space and projecting onto a mode gives the mode number,
 
 $$
 \hat n_{\mathbf{p}}=\hat a_{\mathbf{p}}^\dagger\hat a_{\mathbf{p}} ,

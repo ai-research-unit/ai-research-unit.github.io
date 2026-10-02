@@ -71,13 +71,13 @@ so $i$ carries $\mathbb{M}_+$ out of itself; it is not an operator on $\mathbb{M
 
 ## The Scalar Imaginary Exchanges the Two Sectors
 
-The relation $i\,\mathbb{M}_+ = \mathbb{M}_-$ is the algebraic content of the Hermitian decomposition, and it is the whole reason the scalar imaginary is the right unit for the Schrödinger equation. Concretely, for a Hermitian element $\tilde{H} = h_0e_0 + i\mathbf{h} \in \mathbb{M}_+$, using $\tilde{H}^\dagger = \tilde{H}$, $i^\dagger = -i$, and the centrality of $i$,
+The relation $i\,\mathbb{M}_+ = \mathbb{M}_-$ is the algebraic content of the Hermitian decomposition, and it is the whole reason the scalar imaginary is the right unit for the Schrödinger equation. Concretely, for a Hermitian element $\tilde{H} = h_0e_0 + i\mathbf{h} \in \mathbb{M}_+$, using $\tilde{H}^{*} = \tilde{H}$, $i^{*} = -i$, and the centrality of $i$,
 
 $$
-(i\tilde{H})^\dagger = \tilde{H}^\dagger i^\dagger = \tilde{H}\,(-i) = -i\tilde{H}.
+(i\tilde{H})^{*} = \tilde{H}^{*} i^{*} = \tilde{H}\,(-i) = -i\tilde{H}.
 $$
 
-So $i\tilde{H} \in \mathbb{M}_-$: the map $\tilde{H} \mapsto i\tilde{H}$ is a real-linear isomorphism $\mathbb{M}_+ \to \mathbb{M}_-$ with inverse $\tilde{K} \mapsto -i\tilde{K}$, turning a Hermitian observable into an anti-Hermitian object. For example, with $\tilde{H} = i\,e_1$ (Hermitian, since $(ie_1)^\dagger = ie_1$), one has $i\tilde{H} = i\,(ie_1) = -e_1$, and $-e_1$ is anti-Hermitian because $(-e_1)^\dagger = -(-e_1)$. This is the elementary observation on which everything below rests.
+So $i\tilde{H} \in \mathbb{M}_-$: the map $\tilde{H} \mapsto i\tilde{H}$ is a real-linear isomorphism $\mathbb{M}_+ \to \mathbb{M}_-$ with inverse $\tilde{K} \mapsto -i\tilde{K}$, turning a Hermitian observable into an anti-Hermitian object. For example, with $\tilde{H} = i\,e_1$ (Hermitian, since $(ie_1)^{*} = ie_1$), one has $i\tilde{H} = i\,(ie_1) = -e_1$, and $-e_1$ is anti-Hermitian because $(-e_1)^{*} = -(-e_1)$. This is the elementary observation on which everything below rests.
 
 ## The Wave Function Is a Spinor in the State Module
 
@@ -148,11 +148,11 @@ $$
 \theta = \frac{|\mathbf{h}|t}{\hbar},
 $$
 
-and $\psi(t) = \tilde{U}(t)\psi(0)$. The element $\tilde{U}$ is unitary, $\tilde{U}\tilde{U}^\dagger = e_0$: the central phase cancels and $R = \cos\theta\,e_0 + \sin\theta\,\hat{\mathbf{h}}$ is a unit real quaternion, $R R^\dagger = e_0$. Consequently the Hermitian norm $\mathrm{Tr}(\psi^\dagger\psi)$ is preserved: with $\psi(t) = \tilde{U}\psi(0)$,
+and $\psi(t) = \tilde{U}(t)\psi(0)$. The element $\tilde{U}$ is unitary, $\tilde{U}\tilde{U}^{*} = e_0$: the central phase cancels and $R = \cos\theta\,e_0 + \sin\theta\,\hat{\mathbf{h}}$ is a unit real quaternion, $R R^{*} = e_0$. Consequently the Hermitian norm $\mathrm{Tr}(\psi^\dagger\psi)$ is preserved: with $\psi(t) = \tilde{U}\psi(0)$,
 
 $$
 \mathrm{Tr}\!\left(\psi(t)^\dagger\psi(t)\right)
-= \mathrm{Tr}\!\left(\psi(0)^\dagger \tilde{U}^\dagger\tilde{U}\,\psi(0)\right)
+= \mathrm{Tr}\!\left(\psi(0)^\dagger \tilde{U}^{*}\tilde{U}\,\psi(0)\right)
 = \mathrm{Tr}\!\left(\psi(0)^\dagger\psi(0)\right).
 $$
 
@@ -160,7 +160,7 @@ Differentiating the solution gives $i\hbar\,\partial_t\psi = i\hbar(-i\tilde{H}/
 
 **Case checked.** For $\tilde{H} = i\,e_1$ one has $h_0 = 0$, $\mathbf{h} = e_1$, and $\tilde{U}(t) = \cos(t/\hbar)e_0 + \sin(t/\hbar)e_1$. Then $\tilde{U}(t)$ is unitary, and $\tilde{H}\tilde{U} = i e_1(\cos(t/\hbar)e_0 + \sin(t/\hbar)e_1) = i\cos(t/\hbar)e_1 - i\sin(t/\hbar)e_0$ equals $i\hbar\,\dot{\tilde{U}} = i(-\sin(t/\hbar)e_0 + \cos(t/\hbar)e_1)$, term by term. This case was chosen independently of the general formula and confirms it.
 
-**Consistency with the density matrix.** The companion article's equation for $\tilde{\rho} = \psi\psi^\dagger$ follows from the spinor equation. Differentiating $\tilde{\rho} = \psi\psi^\dagger$ and using $\partial_t\psi = -i\tilde{H}\psi/\hbar$, $\partial_t\psi^\dagger = i\psi^\dagger\tilde{H}/\hbar$ (valid because $\tilde{H}^\dagger = \tilde{H}$) gives
+**Consistency with the density matrix.** The companion article's equation for $\tilde{\rho} = \psi\psi^\dagger$ follows from the spinor equation. Differentiating $\tilde{\rho} = \psi\psi^\dagger$ and using $\partial_t\psi = -i\tilde{H}\psi/\hbar$, $\partial_t\psi^\dagger = i\psi^\dagger\tilde{H}/\hbar$ (valid because $\tilde{H}^{*} = \tilde{H}$) gives
 
 $$
 \partial_t\tilde{\rho} = -\frac{i}{\hbar}\tilde{H}\tilde{\rho} + \frac{i}{\hbar}\tilde{\rho}\tilde{H}
@@ -190,7 +190,7 @@ $$
 so the generator of the flow is $\tilde{G} = -\hbar^{-1}J\tilde{H}$. The flow preserves the Hermitian form, i.e. $\exp(t\tilde{G})$ is unitary, exactly when $\tilde{G}$ is anti-Hermitian, which is the condition
 
 $$
-(J\tilde{H})^\dagger = -J\tilde{H}
+(J\tilde{H})^{*} = -J\tilde{H}
 \qquad\Longleftrightarrow\qquad
 \tilde{H}J^\dagger = -J\tilde{H}
 \quad\text{for all Hermitian } \tilde{H}.
@@ -204,10 +204,10 @@ $$
 J\tilde{H} = e_3\,(i e_1) = i\,e_3e_1 = i\,e_2,
 $$
 
-using $e_3e_1 = e_2$. Since $i\,e_2$ is Hermitian, $(ie_2)^\dagger = ie_2$, the generator $\tilde{G} = -\hbar^{-1}J\tilde{H} = -\hbar^{-1}i\,e_2$ is Hermitian, not anti-Hermitian, and $\exp(t\tilde{G})$ is not unitary. Explicitly, at $t = \pi\hbar/2$,
+using $e_3e_1 = e_2$. Since $i\,e_2$ is Hermitian, $(ie_2)^{*} = ie_2$, the generator $\tilde{G} = -\hbar^{-1}J\tilde{H} = -\hbar^{-1}i\,e_2$ is Hermitian, not anti-Hermitian, and $\exp(t\tilde{G})$ is not unitary. Explicitly, at $t = \pi\hbar/2$,
 
 $$
-\tilde{U}^\dagger\tilde{U} = \exp\!\left(-i\pi e_2\right)
+\tilde{U}^{*}\tilde{U} = \exp\!\left(-i\pi e_2\right)
 = \cosh(\pi)\,e_0 - i\sinh(\pi)\,e_2 \neq e_0,
 $$
 

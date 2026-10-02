@@ -50,9 +50,9 @@ the isomorphism sending the generators $f_1, f_2$ of $\mathrm{Cl}_{1,1}$ (with $
 |---|---|
 | principal involution $\alpha$ | the grade (main) involution, $f_i \mapsto -f_i$ on vectors |
 | reversal $\rho$ | the reversal (transpose) anti-automorphism |
-| conjugation $\bar{\cdot}$ | the Clifford conjugation $= \alpha \circ \rho$ |
+| conjugation ${}^{\natural}$ | the Clifford conjugation $= \alpha \circ \rho$ |
 
-**Proof.** The grade involution negates the degree-one part, so it sends $e_1, e_2 \mapsto -e_1, -e_2$ and fixes $e_3 = e_1 e_2$, which is exactly $\alpha$. The reversal reverses each product of vectors, so it fixes $e_1, e_2$ and sends $e_3 = e_1 e_2 \mapsto e_2 e_1 = -e_3$, which is exactly $\rho$. The Clifford conjugation $\alpha\rho$ then negates all of $e_1, e_2, e_3$ and fixes $1$, which is exactly $\bar{\cdot}$.
+**Proof.** The grade involution negates the degree-one part, so it sends $e_1, e_2 \mapsto -e_1, -e_2$ and fixes $e_3 = e_1 e_2$, which is exactly $\alpha$. The reversal reverses each product of vectors, so it fixes $e_1, e_2$ and sends $e_3 = e_1 e_2 \mapsto e_2 e_1 = -e_3$, which is exactly $\rho$. The Clifford conjugation $\alpha\rho$ then negates all of $e_1, e_2, e_3$ and fixes $1$, which is exactly ${}^{\natural}$.
 
 ### The Even Subalgebra
 
@@ -60,7 +60,7 @@ The **even subalgebra** $\mathrm{Cl}_{1,1}^+$ has basis $1, f_1 f_2 = e_2 e_1 = 
 
 ### The Split-Quaternion Norm and the Clifford Norm
 
-The **Clifford norm** $\tilde q \mapsto \tilde q\bar{\tilde q}$ is the split-quaternion norm $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$ of signature $(2,2)$; it agrees with the split-quaternion norm and is the standard norm on $\mathrm{Cl}_{1,1}$. The norm-one elements $U = \{\, g : g\bar{g} = 1 \,\}$ are the group of **versors**, of dimension three, a proper subgroup of the unit group; they act on $V$ by the Lorentz action of *Split-Quaternion Rotations and the Lorentz Group*. The Clifford condition that $g\bar{g}$ be a scalar is automatic here, since $g\bar{g} = N(g)$ for every $g$, so the whole unit group acts on $V$ and the kernel of the action is the scalar line.
+The **Clifford norm** $\tilde q \mapsto \tilde q\tilde{q}^{\natural}$ is the split-quaternion norm $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$ of signature $(2,2)$; it agrees with the split-quaternion norm and is the standard norm on $\mathrm{Cl}_{1,1}$. The norm-one elements $U = \{\, g : g g^{\natural} = 1 \,\}$ are the group of **versors**, of dimension three, a proper subgroup of the unit group; they act on $V$ by the Lorentz action of *Split-Quaternion Rotations and the Lorentz Group*. The Clifford condition that $g g^{\natural}$ be a scalar is automatic here, since $g g^{\natural} = N(g)$ for every $g$, so the whole unit group acts on $V$ and the kernel of the action is the scalar line.
 
 ## The Clifford Module Structure
 
@@ -110,7 +110,7 @@ The realizations above depend on choices, which must be recorded because they fi
 
 ## Summary
 
-The split-quaternion algebra is the Clifford algebra $\mathrm{Cl}_{1,1}$ of split signature, isomorphic to $M_2(\mathbb{R})$; the isomorphism sends the Clifford generators $f_1, f_2$ to $e_2, e_1$. Under this identification the principal involution $\alpha$ is the grade involution, the reversal $\rho$ is the reversal anti-automorphism, and the conjugation $\bar{\cdot}$ is the Clifford conjugation $\alpha\rho$. The even subalgebra $\mathrm{Cl}_{1,1}^+$ is spanned by $1$ and $-e_3$ and is the split-complex algebra $\mathbb{D}_3$; the split-quaternion norm is the Clifford norm of signature $(2,2)$.
+The split-quaternion algebra is the Clifford algebra $\mathrm{Cl}_{1,1}$ of split signature, isomorphic to $M_2(\mathbb{R})$; the isomorphism sends the Clifford generators $f_1, f_2$ to $e_2, e_1$. Under this identification the principal involution $\alpha$ is the grade involution, the reversal $\rho$ is the reversal anti-automorphism, and the conjugation ${}^{\natural}$ is the Clifford conjugation $\alpha\rho$. The even subalgebra $\mathrm{Cl}_{1,1}^+$ is spanned by $1$ and $-e_3$ and is the split-complex algebra $\mathbb{D}_3$; the split-quaternion norm is the Clifford norm of signature $(2,2)$.
 
 As a module over itself the algebra splits as the direct sum of the two minimal left ideals $\mathbb{H}_{\mathrm{s}}\tilde\pi_\pm$ built from the idempotents $\tilde\pi_\pm = \tfrac12(1\pm e_2)$, each the unique simple module of real dimension two; each split-complex plane makes the algebra a free module of rank two over $\mathbb{D}$. The Clifford, matrix and split-complex models of an element are tabulated above, and the realization differs from the biquaternion one in signature ($\mathrm{Cl}_{1,1}$ in place of $\mathrm{Cl}_{1,3}^+$), in the reality of the simple module, and in the non-centrality of the idempotents. The realizations depend on the signature convention, the naming of the generators and the matrix choice, all recorded above; the invariants are independent of the choices.
 
@@ -122,7 +122,7 @@ As a module over itself the algebra splits as the direct sum of the two minimal 
 | $\mathrm{Cl}_{1,1}$ | the Clifford algebra of signature $(1,1)$, $\cong M_2(\mathbb{R})$ | this article |
 | $f_1, f_2$ | Clifford generators, $f_1^2 = +1$, $f_2^2 = -1$ | this article |
 | $\mathrm{Cl}_{1,1}^+$ | the even subalgebra, $\cong \mathbb{D}$ | this article |
-| $\alpha, \rho, \bar{\cdot}$ | grade involution, reversal, Clifford conjugation | *Split-Quaternion Subspaces and the Involutions* |
+| $\alpha, \rho, {}^{\natural}$ | grade involution, reversal, Clifford conjugation | *Split-Quaternion Subspaces and the Involutions* |
 | $\tilde\pi_\pm = \tfrac12(1\pm e_2)$ | the two idempotents and the minimal left ideals | *Split-Quaternion Idempotents and Projections* |
 | $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$ | the minimal left ideals | *Split-Quaternion Ideals and Peirce Decomposition* |
 | $N(\tilde q)$ | the split-quaternion norm / Clifford norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |

@@ -3,13 +3,13 @@
 
 ## Introduction
 
-This article describes the orthogonal group of three-dimensional Euclidean space as it is realised by the units of the quaternion algebra $\mathbb{H}$. The starting point is the group $Sp(1)$ of unit quaternions and the identification of its adjoint action on the imaginary quaternions with the rotation group $SO(3)$; the endpoint is the full orthogonal group $O(3)$ and, more generally, the two-sided action of $Sp(1)\times Sp(1)$ on $\mathbb{H}$ that exhausts $SO(4)$. Along the way the article explains why the covering $Sp(1)\to SO(3)$ is two-to-one, why the quaternion parametrisation of a rotation has period $4\pi$ where the rotation itself has period $2\pi$, and how reflections sit inside the same algebra as the signed inner conjugation action of the unit vectors. The sandwich $S_q(x) = qx\bar{\tilde q}$ is treated beside the adjoint action: it agrees with it on the unit sphere and carries a scale everywhere else.
+This article describes the orthogonal group of three-dimensional Euclidean space as it is realised by the units of the quaternion algebra $\mathbb{H}$. The starting point is the group $Sp(1)$ of unit quaternions and the identification of its adjoint action on the imaginary quaternions with the rotation group $SO(3)$; the endpoint is the full orthogonal group $O(3)$ and, more generally, the two-sided action of $Sp(1)\times Sp(1)$ on $\mathbb{H}$ that exhausts $SO(4)$. Along the way the article explains why the covering $Sp(1)\to SO(3)$ is two-to-one, why the quaternion parametrisation of a rotation has period $4\pi$ where the rotation itself has period $2\pi$, and how reflections sit inside the same algebra as the signed inner conjugation action of the unit vectors. The sandwich $S_q(x) = qx\tilde{q}^{\natural}$ is treated beside the adjoint action: it agrees with it on the unit sphere and carries a scale everywhere else.
 
 The treatment is mathematical throughout. A rotation is an element of $SO(3)$ and a reflection is an element of $O(3)$; no physical object is introduced, no state of a physical system is named, and no physical interpretation is invoked. The group $Sp(1)$ is treated as a group of quaternions, and the maps $Sp(1)\to SO(3)$ and $Sp(1)\times Sp(1)\to SO(4)$ are treated as covering homomorphisms of Lie groups.
 
-The quaternion algebra, its basis $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, its conjugation, its quaternion norm $N(\tilde q) = \tilde q\bar{\tilde q}$ and its imaginary subspace $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$ are taken from *Quaternion Algebra*. The structure of $\mathbb{H}$ as a simple algebra is taken from *Quaternion Ideals and Simplicity*. The general construction of the Clifford, Pin and Spin groups, of which the results below are the three-dimensional instance, is the subject of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the parity of the Cartan–Dieudonné reflection length is taken from *The Rotation Group and Orientation* and from *Isometries and Orthogonal Transformations*. The complex plane, where the same questions have the degenerate answer that multiplication by a unit is already a rotation and the sandwich action is trivial, is treated in *Rotations and Reflections in the Complex Plane*.
+The quaternion algebra, its basis $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, its conjugation, its quaternion norm $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ and its imaginary subspace $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$ are taken from *Quaternion Algebra*. The structure of $\mathbb{H}$ as a simple algebra is taken from *Quaternion Ideals and Simplicity*. The general construction of the Clifford, Pin and Spin groups, of which the results below are the three-dimensional instance, is the subject of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the parity of the Cartan–Dieudonné reflection length is taken from *The Rotation Group and Orientation* and from *Isometries and Orthogonal Transformations*. The complex plane, where the same questions have the degenerate answer that multiplication by a unit is already a rotation and the sandwich action is trivial, is treated in *Rotations and Reflections in the Complex Plane*.
 
-Throughout, a general quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with scalar part $q_0$ and vector part $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3 \in \operatorname{Im}\mathbb{H}$, the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, the quaternion norm is $N(\tilde q) = \tilde q\bar{\tilde q} = |\tilde q|^2$, and the real inner product of two vectors of $\operatorname{Im}\mathbb{H}$ is $\langle x, y\rangle = \mathrm{Sc}(x\bar{y}) = \sum_{k=1}^{3} x_ky_k$. A point of $\operatorname{Im}\mathbb{H}$ is a **vector**, and $|x|^2 = \langle x,x\rangle$. The transpose of a matrix $A$ is $A^{T}$ and the conjugate transpose is $A^{\dagger}$.
+Throughout, a general quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with scalar part $q_0$ and vector part $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3 \in \operatorname{Im}\mathbb{H}$, the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, the quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = |\tilde q|^2$, and the real inner product of two vectors of $\operatorname{Im}\mathbb{H}$ is $\langle x, y\rangle = \mathrm{Sc}(x y^{\natural}) = \sum_{k=1}^{3} x_ky_k$. A point of $\operatorname{Im}\mathbb{H}$ is a **vector**, and $|x|^2 = \langle x,x\rangle$. The transpose of a matrix $A$ is $A^{T}$ and the conjugate transpose is $A^{\dagger}$.
 
 ## The Group of Unit Quaternions
 
@@ -25,9 +25,9 @@ As a subset of $\mathbb{H}\cong\mathbb{R}^4$ it is the unit sphere $S^3$.
 
 **Theorem.** $Sp(1)$ is a group under quaternion multiplication and is the kernel of the quaternion norm homomorphism $\mathbb{H}^{\times}\to\mathbb{R}_{>0}$, $\tilde q\mapsto|\tilde q|$.
 
-**Proof.** The quaternion norm is multiplicative, $N(uv) = N(u)N(v)$, because $uv\overline{uv} = uv\bar{v}\bar{u} = uN(v)\bar{u} = N(u)N(v)$; hence if $|u| = |v| = 1$ then $|uv| = 1$, and if $|u| = 1$ then $u^{-1} = \bar{u}$ has $|u^{-1}| = 1$. Associativity and the identity $1\in Sp(1)$ are inherited from $\mathbb{H}$, and multiplication is a surjective homomorphism $\mathbb{H}^{\times}\to\mathbb{R}_{>0}$ with kernel exactly $Sp(1)$.
+**Proof.** The quaternion norm is multiplicative, $N(uv) = N(u)N(v)$, because $uv(uv)^{\natural} = uvv^{\natural}u^{\natural} = uN(v)u^{\natural} = N(u)N(v)$; hence if $|u| = |v| = 1$ then $|uv| = 1$, and if $|u| = 1$ then $u^{-1} = u^{\natural}$ has $|u^{-1}| = 1$. Associativity and the identity $1\in Sp(1)$ are inherited from $\mathbb{H}$, and multiplication is a surjective homomorphism $\mathbb{H}^{\times}\to\mathbb{R}_{>0}$ with kernel exactly $Sp(1)$.
 
-For every unit quaternion $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ one has $\tilde q^{-1} = \bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, so inversion is quaternion conjugation. The group is non-abelian; its centre is the two-element group
+For every unit quaternion $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ one has $\tilde q^{-1} = \tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, so inversion is quaternion conjugation. The group is non-abelian; its centre is the two-element group
 
 $$
 Z(Sp(1)) = \{\pm 1\},
@@ -90,12 +90,12 @@ This is the standard identification of the unit sphere of the quaternion divisio
 **Definition.** For $\tilde q\in Sp(1)$ the **adjoint action** is
 
 $$
-\operatorname{Ad}_q : \mathbb{H}\longrightarrow\mathbb{H}, \qquad \operatorname{Ad}_q(x) = qxq^{-1} = qx\bar{\tilde q}.
+\operatorname{Ad}_q : \mathbb{H}\longrightarrow\mathbb{H}, \qquad \operatorname{Ad}_q(x) = qxq^{-1} = qx\tilde{q}^{\natural}.
 $$
 
 **Theorem.** For every $\tilde q\in Sp(1)$ the map $\operatorname{Ad}_q$ is an $\mathbb{R}$-algebra automorphism of $\mathbb{H}$ that preserves the quaternion norm and the scalar part. It restricts to a linear isometry of $\operatorname{Im}\mathbb{H}$, and the assignment $\tilde q\mapsto\operatorname{Ad}_q$ is a group homomorphism $Sp(1)\to GL(\operatorname{Im}\mathbb{H})$.
 
-**Proof.** Conjugation by an invertible element is an algebra automorphism: the map $x\mapsto qxq^{-1}$ is $\mathbb{R}$-linear and a bijection with inverse $x\mapsto \tilde q^{-1}xq$, and it respects multiplication because $(qaq^{-1})(qbq^{-1}) = \tilde q(ab)\tilde q^{-1}$; for $|\tilde q| = 1$ the inverse is $x\mapsto\bar{\tilde q}xq$. Norm preservation: $N(qxq^{-1}) = N(\tilde q)N(x)N(\tilde q)^{-1} = N(x)$. Scalar part: if $x\in\operatorname{Im}\mathbb{H}$ then conjugation reverses the order of the factors, so $\overline{\operatorname{Ad}_q(x)} = \overline{\tilde q^{-1}}\,\bar{x}\,\bar{\tilde q} = \tilde q\,(-x)\,\bar{\tilde q} = -qx\bar{\tilde q} = -\operatorname{Ad}_q(x)$, and the scalar part of $\operatorname{Ad}_q(x)$ vanishes. Hence $\operatorname{Ad}_q$ preserves $\operatorname{Im}\mathbb{H}$, and since it preserves the quaternion norm there it is an isometry. Finally $\operatorname{Ad}_{q_1}\circ\operatorname{Ad}_{q_2} = \operatorname{Ad}_{q_1q_2}$ and $\operatorname{Ad}_1 = \mathrm{id}$ by associativity.
+**Proof.** Conjugation by an invertible element is an algebra automorphism: the map $x\mapsto qxq^{-1}$ is $\mathbb{R}$-linear and a bijection with inverse $x\mapsto \tilde q^{-1}xq$, and it respects multiplication because $(qaq^{-1})(qbq^{-1}) = \tilde q(ab)\tilde q^{-1}$; for $|\tilde q| = 1$ the inverse is $x\mapsto\tilde{q}^{\natural}xq$. Norm preservation: $N(qxq^{-1}) = N(\tilde q)N(x)N(\tilde q)^{-1} = N(x)$. Scalar part: if $x\in\operatorname{Im}\mathbb{H}$ then conjugation reverses the order of the factors, so $\overline{\operatorname{Ad}_q(x)} = (\tilde q^{-1})^{\natural}\,x^{\natural}\,\tilde{q}^{\natural} = \tilde q\,(-x)\,\tilde{q}^{\natural} = -qx\tilde{q}^{\natural} = -\operatorname{Ad}_q(x)$, and the scalar part of $\operatorname{Ad}_q(x)$ vanishes. Hence $\operatorname{Ad}_q$ preserves $\operatorname{Im}\mathbb{H}$, and since it preserves the quaternion norm there it is an isometry. Finally $\operatorname{Ad}_{q_1}\circ\operatorname{Ad}_{q_2} = \operatorname{Ad}_{q_1q_2}$ and $\operatorname{Ad}_1 = \mathrm{id}$ by associativity.
 
 ### The Homomorphism to SO(3)
 
@@ -190,7 +190,7 @@ so $R_{q_\ast}$ is the rotation that **best fits** $Q$: among all matrices of $S
 
 **Corollary (the exact case, and the eigenvalue as a test of fit).** If $Q$ is itself a rotation, $Q = R_{q_0}$, then $\lambda_\ast = 3$, the eigenvectors for $\lambda_\ast$ are $\pm q_0$, and the best fit is exact. Equivalently, the largest eigenvalue of $\frac{1}{3}K(Q)$ is $1$ for a rotation matrix, and its eigenvector is the quaternion of the rotation; the value $\lambda_\ast$ is the achieved correlation, and the gap $3-\lambda_\ast$ measures how far $Q$ is from a rotation.
 
-*Proof.* For $Q = R_{q_0}$ one has $\operatorname{tr}(R_q^{T}Q) = \operatorname{tr}(R_q^{T}R_{q_0}) = \operatorname{tr}(R_{\bar q q_0})$, and the trace is $4(q_0')^2-1\le3$ with the scalar part $q_0' = \langle \tilde q,\tilde q_0\rangle$ of the product, so the maximum is $3$, attained exactly at $\tilde q = \pm\tilde q_0$. The factor $\frac{1}{3}$ is the normalisation of the definition. $\square$
+*Proof.* For $Q = R_{q_0}$ one has $\operatorname{tr}(R_q^{T}Q) = \operatorname{tr}(R_q^{T}R_{q_0}) = \operatorname{tr}(R_{q^{\natural} q_0})$, and the trace is $4(q_0')^2-1\le3$ with the scalar part $q_0' = \langle \tilde q,\tilde q_0\rangle$ of the product, so the maximum is $3$, attained exactly at $\tilde q = \pm\tilde q_0$. The factor $\frac{1}{3}$ is the normalisation of the definition. $\square$
 
 **Remark (why the eigenvector, and not the four square roots).** The four quantities of the preceding remark are the diagonal entries of the eigenvector problem in disguise: $1+\operatorname{tr}R_q = 4q_0^2$ and the three others are $\frac{1}{3}K(Q)$'s diagonal deviations, and when $Q$ is a rotation the eigenvector for $\lambda_\ast = 3$ has components proportional to $(\sqrt{1+\operatorname{tr}Q}, \pm\sqrt{1+R_{11}-R_{22}-R_{33}}, \dots)$. The largest-eigenvalue route is the numerically stable version of the largest-square-root route: it never divides by a component that may vanish, and it extends off the rotation matrices, where the four-branch formulas have no meaning. The problem of finding the rotation that carries one set of measured vectors to another in the least-squares sense is the same computation with $Q$ the correlation matrix of the two sets, and it is posed in that form in the attitude-determination literature cited below.
 
@@ -293,7 +293,7 @@ Thus composition of rotations is quaternion multiplication, and the failure of c
 **Definition.** The **sandwich** of an element $\tilde q$ is the map
 
 $$
-S_q : \mathbb{H}\longrightarrow\mathbb{H}, \qquad S_q(x) = qx\bar{\tilde q}.
+S_q : \mathbb{H}\longrightarrow\mathbb{H}, \qquad S_q(x) = qx\tilde{q}^{\natural}.
 $$
 
 For a unit quaternion the conjugate is the inverse, so on $Sp(1)$ the sandwich is the adjoint action of the preceding sections; off the unit sphere it differs from it by one factor.
@@ -306,7 +306,7 @@ $$
 
 so that the sandwich and the adjoint action coincide on the unit slice $N(\tilde q) = 1$; the sandwich scales the quaternion norm by $N(\tilde q)^2$, its determinant as a map of the four-dimensional space is $\det S_q = N(\tilde q)^4$, and it is invertible exactly when $\tilde q$ is a unit.
 
-**Proof.** For $\tilde q\neq0$ one has $\bar{\tilde q} = N(\tilde q)\tilde q^{-1}$, so $S_q(x) = qx\bar{\tilde q} = N(\tilde q)\,qxq^{-1} = N(\tilde q)\operatorname{Ad}_q(x)$, and the two agree when $N(\tilde q) = 1$. The adjoint action has determinant one on the four-dimensional space, being the identity on the scalar line and a rotation on the vector subspace, so the determinant of the sandwich is $N(\tilde q)^4$, and an operator with nonzero determinant is invertible.
+**Proof.** For $\tilde q\neq0$ one has $\tilde{q}^{\natural} = N(\tilde q)\tilde q^{-1}$, so $S_q(x) = qx\tilde{q}^{\natural} = N(\tilde q)\,qxq^{-1} = N(\tilde q)\operatorname{Ad}_q(x)$, and the two agree when $N(\tilde q) = 1$. The adjoint action has determinant one on the four-dimensional space, being the identity on the scalar line and a rotation on the vector subspace, so the determinant of the sandwich is $N(\tilde q)^4$, and an operator with nonzero determinant is invertible.
 
 **Theorem.** The sandwich preserves the quaternion norm up to the square of $N(\tilde q)$,
 
@@ -316,7 +316,7 @@ $$
 
 and it maps the scalar subspace to itself and the vector subspace to itself.
 
-**Proof.** By multiplicativity of the quaternion norm, $N(qx\bar{\tilde q}) = N(\tilde q)N(x)N(\bar{\tilde q}) = N(\tilde q)^2N(x)$, since $N(\bar{\tilde q}) = N(\tilde q)$. For a scalar $s$ one has $S_q(s) = qs\bar{\tilde q} = s\,q\bar{\tilde q} = sN(\tilde q)$, again a scalar, so the scalar line is preserved; for $\tilde q\neq0$ the sandwich is invertible and preserves the quaternion norm, hence it preserves the orthogonal complement of the scalar line, which is the vector subspace.
+**Proof.** By multiplicativity of the quaternion norm, $N(qx\tilde{q}^{\natural}) = N(\tilde q)N(x)N(\tilde{q}^{\natural}) = N(\tilde q)^2N(x)$, since $N(\tilde{q}^{\natural}) = N(\tilde q)$. For a scalar $s$ one has $S_q(s) = qs\tilde{q}^{\natural} = s\,q\tilde{q}^{\natural} = sN(\tilde q)$, again a scalar, so the scalar line is preserved; for $\tilde q\neq0$ the sandwich is invertible and preserves the quaternion norm, hence it preserves the orthogonal complement of the scalar line, which is the vector subspace.
 
 **Proposition.** For $\tilde q\neq0$ each of the operators $L_q(x) = qx$, $\rho_q(x) = xq$, $\operatorname{Ad}_q$ and $S_q$ is invertible, with kernel $0$ and image $\mathbb{H}$; for $\tilde q = 0$ all four are the zero operator.
 
@@ -353,7 +353,7 @@ Left and right multiplication are the operators of the regular representation, t
 
 **Proof.** The scale cancels in the adjoint action because $\tilde q$ and $\tilde q^{-1}$ contribute $|\tilde q|$ and $|\tilde q|^{-1}$, while the sandwich carries $N(\tilde q) = |\tilde q|^2$; the axis-angle identification is the polar form of *Quaternion Polar Element Representation*, where the half-angle is the angle of the unit factor.
 
-The biquaternion reading is in *Biquaternion Rotations and Lorentz Transformations*: there the sandwich is taken with the Hermitian dagger, $x\mapsto \tilde Qx\tilde Q^\dagger$, and realises Lorentz transformations rather than rotations, an indefinite possibility closed here by the definiteness of the quaternion norm.
+The biquaternion reading is in *Biquaternion Rotations and Lorentz Transformations*: there the sandwich is taken with the Hermitian dagger, $x\mapsto \tilde Qx\tilde{Q}^{*}$, and realises Lorentz transformations rather than rotations, an indefinite possibility closed here by the definiteness of the quaternion norm.
 
 ## Reflections and the Orthogonal Group
 
@@ -373,7 +373,7 @@ $$
 
 Hence $\rho_v$ is the **reflection in the plane** $v^{\perp}\subset\operatorname{Im}\mathbb{H}$: it fixes every vector perpendicular to $v$, sends $v$ to $-v$, is $\mathbb{R}$-linear, preserves the quaternion norm, is an involution, and has determinant $-1$ on $\operatorname{Im}\mathbb{H}$.
 
-**Proof.** Since $v^{-1} = \bar{v} = -v$, we have $-vxv^{-1} = -vx(-v) = vxv$. For pure imaginary $v, x$ the product is $vx = v\times x - \langle v, x\rangle$, so $xv = -v\times x - \langle v,x\rangle$ and $vx + xv = -2\langle v,x\rangle$. Therefore
+**Proof.** Since $v^{-1} = v^{\natural} = -v$, we have $-vxv^{-1} = -vx(-v) = vxv$. For pure imaginary $v, x$ the product is $vx = v\times x - \langle v, x\rangle$, so $xv = -v\times x - \langle v,x\rangle$ and $vx + xv = -2\langle v,x\rangle$. Therefore
 
 $$
 vxv = (vx)v = -xv^2 - 2\langle v,x\rangle v = x - 2\langle v,x\rangle v,
@@ -438,7 +438,7 @@ The adjoint action uses one unit quaternion. Using one on each side gives the fu
 **Definition.** For $(q_1, q_2)\in Sp(1)\times Sp(1)$ define
 
 $$
-\Phi_{(q_1,q_2)} : \mathbb{H}\longrightarrow\mathbb{H}, \qquad \Phi_{(q_1,q_2)}(x) = q_1\,x\,q_2^{-1} = q_1x\bar{\tilde q}_2 .
+\Phi_{(q_1,q_2)} : \mathbb{H}\longrightarrow\mathbb{H}, \qquad \Phi_{(q_1,q_2)}(x) = q_1\,x\,q_2^{-1} = q_1x\tilde{q}^{\natural}_2 .
 $$
 
 **Theorem.** Each $\Phi_{(q_1,q_2)}$ is an $\mathbb{R}$-linear isometry of $\mathbb{H}\cong\mathbb{R}^4$ with determinant $+1$, and
@@ -491,7 +491,7 @@ The reflection in the plane $v^{\perp}$ with unit normal $v$ is $\rho_v(x) = -vx
 
 Finally, the two-sided action $\Phi_{(q_1,q_2)}(x) = q_1xq_2^{-1}$ is a surjective homomorphism $Sp(1)\times Sp(1)\to SO(4)$ with kernel $\{\pm(1,1)\}$, so $SO(4)\cong \mathrm{Spin}(4)\cong (Sp(1)\times Sp(1))/\{\pm1\}$; the diagonal copy of $Sp(1)$ in it is the adjoint action that gives the rotations of the three-dimensional imaginary subspace.
 
-The sandwich $S_q(x) = qx\bar{\tilde q}$ is the adjoint action rescaled, $S_q = N(\tilde q)\operatorname{Ad}_q$, so the two coincide exactly on the unit slice and differ elsewhere by the factor $N(\tilde q)$; the sandwich multiplies the quaternion norm by $N(\tilde q)^2$ and has determinant $N(\tilde q)^4$. It preserves the scalar and the vector subspaces, acting by the identity, respectively by the scale $N(\tilde q)$, on the scalar line and by a rotation, respectively a scaled rotation, on the vector subspace; the action table records this beside the behaviour of the left and right multiplications $L_q$ and $\rho_q$ of the regular representation, which preserve neither subspace. For $\tilde q\neq0$ all four operators are invertible, and the fixed subspace of the adjoint action is the centraliser of $\tilde q$, with the axis line as the fixed direction on the imaginary subspace. The adjoint action depends only on the unit factor of the polar form while the sandwich carries the scale $|\tilde q|^2$; the biquaternion reading takes the sandwich with the Hermitian dagger and realises an indefinite group instead, a possibility closed here by the definiteness of the quaternion norm.
+The sandwich $S_q(x) = qx\tilde{q}^{\natural}$ is the adjoint action rescaled, $S_q = N(\tilde q)\operatorname{Ad}_q$, so the two coincide exactly on the unit slice and differ elsewhere by the factor $N(\tilde q)$; the sandwich multiplies the quaternion norm by $N(\tilde q)^2$ and has determinant $N(\tilde q)^4$. It preserves the scalar and the vector subspaces, acting by the identity, respectively by the scale $N(\tilde q)$, on the scalar line and by a rotation, respectively a scaled rotation, on the vector subspace; the action table records this beside the behaviour of the left and right multiplications $L_q$ and $\rho_q$ of the regular representation, which preserve neither subspace. For $\tilde q\neq0$ all four operators are invertible, and the fixed subspace of the adjoint action is the centraliser of $\tilde q$, with the axis line as the fixed direction on the imaginary subspace. The adjoint action depends only on the unit factor of the polar form while the sandwich carries the scale $|\tilde q|^2$; the biquaternion reading takes the sandwich with the Hermitian dagger and realises an indefinite group instead, a possibility closed here by the definiteness of the quaternion norm.
 
 ## Summary of Notation
 
@@ -500,17 +500,17 @@ The sandwich $S_q(x) = qx\bar{\tilde q}$ is the adjoint action rescaled, $S_q = 
 | $\mathbb{H}$ | Quaternion algebra |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_\mu q_\mu e_\mu$ | General quaternion, scalar part $q_0$, vector part $\mathbf{q}$ |
-| $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
-| $N(\tilde q) = \tilde q\bar{\tilde q} = \lvert \tilde q\rvert^2$ | Quaternion norm and modulus |
+| $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
+| $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \lvert \tilde q\rvert^2$ | Quaternion norm and modulus |
 | $U\tilde q = \tilde q/\lvert\tilde q\rvert$, $T\tilde q = \lvert\tilde q\rvert$ | Versor and tensor of $\tilde q$ (Hamilton); a versor is a unit quaternion, so $Sp(1)$ is the group of versors |
 | $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$ | Imaginary quaternions, the space of vectors |
-| $\langle x, y\rangle = \mathrm{Sc}(x\bar{y})$ | Real inner product on $\operatorname{Im}\mathbb{H}$ |
+| $\langle x, y\rangle = \mathrm{Sc}(x y^{\natural})$ | Real inner product on $\operatorname{Im}\mathbb{H}$ |
 | $Sp(1) = \{\tilde q : \lvert \tilde q\rvert = 1\} = S^3$ | Group of unit quaternions |
 | $Z(Sp(1)) = \{\pm1\}$ | Centre of $Sp(1)$ |
 | $\exp(u\theta) = \cos\theta + u\sin\theta$ | Exponential of a unit vector |
 | $SU(2)$ | Special unitary group, $Sp(1)\cong SU(2)$ |
 | $\operatorname{Ad}_q(x) = qxq^{-1}$ | Adjoint action |
-| $S_q(x) = qx\bar{\tilde q} = N(\tilde q)\operatorname{Ad}_q$ | Sandwich; equals the adjoint action on the unit slice |
+| $S_q(x) = qx\tilde{q}^{\natural} = N(\tilde q)\operatorname{Ad}_q$ | Sandwich; equals the adjoint action on the unit slice |
 | $L_q(x) = qx$, $\rho_q(x) = xq$ | Left and right multiplication operators of the regular representation |
 | $R_q$ | Matrix of $\operatorname{Ad}_q$ on $\operatorname{Im}\mathbb{H}$ |
 | $K(Q)$ | Fitting matrix of a real $3\times3$ matrix $Q$, with $q^{T}K(Q)q = \operatorname{tr}(R_q^{T}Q)$; its largest eigenvector is the quaternion of the rotation closest to $Q$ |

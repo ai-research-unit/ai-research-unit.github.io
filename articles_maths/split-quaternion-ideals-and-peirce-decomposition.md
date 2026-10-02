@@ -15,7 +15,7 @@ and $M_2(\mathbb{R})$ is **simple**: its only two-sided ideals are $0$ and the w
 
 The article treats, in order, the definitions of ideals; the two-sided ideals and simplicity; the artinian and semisimple structure and the length of the algebra as a module over itself; the two idempotents and their orthogonal complementarity; the explicit matrix units; the Peirce decomposition into four one-dimensional corners; the grouping of the matrix units into minimal left and minimal right ideals; and the lattice of left ideals, which is a real projective line. It closes with the contrast with the quaternions $\mathbb{H}$, where there are no proper ideals at all, and with the biquaternions $\mathbb{B}$, whose ideal theory has the same shape over $\mathbb{C}$.
 
-**Conventions.** The basis is $1, e_1, e_2, e_3$, with $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$; a general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation and the central product $N(\tilde q) = \tilde q\bar{\tilde q}$ are assumed from *Split-Quaternion Algebra*, the idempotents $\tilde\pi_\pm = \tfrac{1}{2}(1 \pm e_2)$ from *Split-Quaternion Idempotents and Projections*, and the metrical reading of $N$ from *Split-Quaternion Norm and Invertibility*. The definitions of rings and modules apply to the noncommutative algebra $\mathbb{H}_{\mathrm{s}}$, where "left" and "right" must be distinguished.
+**Conventions.** The basis is $1, e_1, e_2, e_3$, with $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$; a general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation and the central product $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ are assumed from *Split-Quaternion Algebra*, the idempotents $\tilde\pi_\pm = \tfrac{1}{2}(1 \pm e_2)$ from *Split-Quaternion Idempotents and Projections*, and the metrical reading of $N$ from *Split-Quaternion Norm and Invertibility*. The definitions of rings and modules apply to the noncommutative algebra $\mathbb{H}_{\mathrm{s}}$, where "left" and "right" must be distinguished.
 
 ## Ideals in an Algebra
 
@@ -222,7 +222,7 @@ The two columns $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$ are the minimal left ide
 | $eAe$, $eAf$, … | the Peirce spaces of an idempotent $e$ | this article |
 | $L_W$ | the minimal left ideal annihilating the line $W$ | this article |
 | $\mathbb{P}^1(\mathbb{R})$ | the real projective line, parametrising the minimal left ideals | this article |
-| $N(\tilde q) = \tilde q\bar{\tilde q}$ | the central product, formed and evaluated algebraically | this article |
+| $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ | the central product, formed and evaluated algebraically | this article |
 
 ## Further Reading
 

@@ -19,14 +19,14 @@ We therefore make no claim that the extension is canonical in the biquaternion f
 
 The article is organized as follows. The next section fixes the classical field and its conjugate momentum, and identifies the constraint that forces the canonical structure to be imposed rather than assumed. The following section states the equal-time anticommutation relations and the reasons they, rather than commutators, are the consistent choice. The next section carries out the expansion in the parent article's plane-wave solutions. The section after that derives the anticommutators of the mode operators and builds the Fock space. The next section gives the Hamiltonian, the normal-ordering constant, and the four-momentum and charge. A section on spin and statistics records why anticommutation is forced here, without developing the full spin–statistics theorem, which is the subject of a planned companion article. A section relates the result to the KMS thermal-state framework. The article closes with an explicit accounting of what is standard and what is open.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary with $i^2=-1$. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, with $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\bar{\tilde{\nabla}}\tilde{\nabla}$. The Clifford metric of the gamma matrices is $g=\mathrm{diag}(+1,-1,-1,-1)$, through $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, and the spacetime metric of the $ict$ gradient is $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$; the relative sign is the convention the companion article flags. The Dirac adjoint is $\bar\psi=\psi^\dagger\gamma^0$. In the solution and quantization sections we work in natural units $\hbar=c=1$, as the parent solution article does, restoring $\hbar$ and $c$ only where they carry meaning, namely in the mass-shell relation and in the thermal frequency.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary with $i^2=-1$. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$. The Clifford metric of the gamma matrices is $g=\mathrm{diag}(+1,-1,-1,-1)$, through $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, and the spacetime metric of the $ict$ gradient is $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$; the relative sign is the convention the companion article flags. The Dirac adjoint is $\bar\psi=\psi^\dagger\gamma^0$. In the solution and quantization sections we work in natural units $\hbar=c=1$, as the parent solution article does, restoring $\hbar$ and $c$ only where they carry meaning, namely in the mass-shell relation and in the thermal frequency.
 
 ## The Classical Field and Its Conjugate Momentum
 
 The biquaternion Dirac field of the companion article is the map $\tilde{\Psi}:\mathbb{R}^{1,3}\to\mathbb{B}$ satisfying the linear, chirality-off-diagonal pair
 
 $$
-\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L,\qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L=m\tilde{\Psi}_R,
+\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L,\qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R,
 $$
 
 with massless limit $\tilde{\nabla}\tilde{\Psi}=0$; here $\tilde{\Psi}=\tilde{\Psi}_L+\tilde{\Psi}_R$ carries one component per chirality.
@@ -69,7 +69,7 @@ Equation $\chi\approx0$ is a **second-class constraint**: the Legendre transform
 
 ### The Biquaternion Reading and the Open Point
 
-Written on the spinor module, the Lagrangian and the canonical momentum are the standard ones. Written in the algebra, they are not yet fixed. The parent article's mass term is the linear, chirality-off-diagonal coupling, whose spinor-module representative is the ordinary mass term $m\psi$; the anti-Hermitian conjugation $\flat=-\dagger$ is the algebra's real structure, not the mass. The $\mathbb{B}$-intrinsic Lagrangian — the real scalar built from $\tilde{\nabla}\tilde{\Psi}$, $\tilde{\Psi}$, their conjugates, and the trace or norm pairing of the algebra — is not determined by the algebra alone, and neither is the intrinsic conjugate momentum. Two inequivalent transcriptions are available: one may treat the operator field as $\mathbb{B}$-valued and pair it with the real part of the trace, or one may treat it as valued in the spinor module and quantize there. We adopt the second, which is the parent article's working setting, and we return to the first in the closing section on what is open. The reader should keep in mind that the mode structure below is the standard one; what is being tested here is whether the biquaternion framework naturally reproduces it.
+Written on the spinor module, the Lagrangian and the canonical momentum are the standard ones. Written in the algebra, they are not yet fixed. The parent article's mass term is the linear, chirality-off-diagonal coupling, whose spinor-module representative is the ordinary mass term $m\psi$; the anti-Hermitian conjugation $\flat=-{}^{*}$ is the algebra's real structure, not the mass. The $\mathbb{B}$-intrinsic Lagrangian — the real scalar built from $\tilde{\nabla}\tilde{\Psi}$, $\tilde{\Psi}$, their conjugates, and the trace or norm pairing of the algebra — is not determined by the algebra alone, and neither is the intrinsic conjugate momentum. Two inequivalent transcriptions are available: one may treat the operator field as $\mathbb{B}$-valued and pair it with the real part of the trace, or one may treat it as valued in the spinor module and quantize there. We adopt the second, which is the parent article's working setting, and we return to the first in the closing section on what is open. The reader should keep in mind that the mode structure below is the standard one; what is being tested here is whether the biquaternion framework naturally reproduces it.
 
 ## Equal-Time Anticommutation Relations
 
@@ -113,7 +113,7 @@ $$
 and with the covariant normalizations and spin sums established there:
 
 $$
-\bar u^{(r)}u^{(s)}=2m\,\delta^{rs},\quad \bar v^{(r)}v^{(s)}=-2m\,\delta^{rs},\quad u^{(r)\dagger}u^{(s)}=v^{(r)\dagger}v^{(s)}=2E_{\mathbf p}\,\delta^{rs},
+\bar u^{(r)}u^{(s)}=2m\,\delta^{rs},\quad \bar v^{(r)}v^{(s)}=-2m\,\delta^{rs},\quad u^{(r){}^{*}}u^{(s)}=v^{(r){}^{*}}v^{(s)}=2E_{\mathbf p}\,\delta^{rs},
 $$
 
 $$
@@ -133,16 +133,16 @@ The field and its adjoint,
 
 $$
 \hat{\psi}^\dagger(y)=\int\!\frac{d^3q}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\mathbf q}}}
-\sum_{s=1}^{2}\Big[\hat a_s^\dagger(\mathbf q)\,u^{(s)\dagger}(\mathbf q)\,e^{+iq\cdot y}
-+\hat b_s(\mathbf q)\,v^{(s)\dagger}(\mathbf q)\,e^{-iq\cdot y}\Big],
+\sum_{s=1}^{2}\Big[\hat a_s^\dagger(\mathbf q)\,u^{(s){}^{*}}(\mathbf q)\,e^{+iq\cdot y}
++\hat b_s(\mathbf q)\,v^{(s){}^{*}}(\mathbf q)\,e^{-iq\cdot y}\Big],
 $$
 
 together define the operator-valued field. The **annihilation** operators $\hat a_r(\mathbf p)$ multiply the positive-frequency solutions, and the **creation** operators $\hat b_r^\dagger(\mathbf p)$ multiply the negative-frequency solutions. The attribution of a creation operator to the negative-frequency branch is the operator form of the reinterpretation of the Dirac sea: the modes of "negative frequency" are the antiparticles of positive energy.
 
-Two structural remarks belong here. First, $\hat{\psi}$ is **not Hermitian**, and it should not be: a complex Dirac field carries a conserved charge, and particle and antiparticle are distinct. Second, the expansion is written on the spinor module, following the parent article. In the algebra, each mode function is the module representative of a biquaternion plane wave $\tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde{k}\bar{\tilde{Q}})\right)$; the two branches are the two roots of the single biquaternion mass-shell condition
+Two structural remarks belong here. First, $\hat{\psi}$ is **not Hermitian**, and it should not be: a complex Dirac field carries a conserved charge, and particle and antiparticle are distinct. Second, the expansion is written on the spinor module, following the parent article. In the algebra, each mode function is the module representative of a biquaternion plane wave $\tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde{k}\tilde{Q}^{\natural})\right)$; the two branches are the two roots of the single biquaternion mass-shell condition
 
 $$
-\tilde k\bar{\tilde k}=-\frac{m^2c^2}{\hbar^2},
+\tilde k\tilde k^{\natural}=-\frac{m^2c^2}{\hbar^2},
 $$
 
 and the polarization equation is the algebraic form of the momentum-space equation. Promoting the coefficients to operators is thus a transcription of the standard mode expansion onto the parent article's biquaternion plane waves; it is not, by itself, a derivation of the expansion from the algebra.
@@ -177,21 +177,21 @@ It is worth verifying that these relations reproduce $\{\hat\psi_a(\mathbf x,t),
 $$
 \{\hat{\psi}_a(\mathbf x,t),\hat{\psi}_b^\dagger(\mathbf y,t)\}
 =\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\mathbf p}}
-\Big[\sum_r u^{(r)}_a u^{(r)\dagger}_b\,e^{+i\mathbf p\cdot\boldsymbol\Delta}
-+\sum_r v^{(r)}_a v^{(r)\dagger}_b\,e^{-i\mathbf p\cdot\boldsymbol\Delta}\Big],
+\Big[\sum_r u^{(r)}_a u^{(r){}^{*}}_b\,e^{+i\mathbf p\cdot\boldsymbol\Delta}
++\sum_r v^{(r)}_a v^{(r){}^{*}}_b\,e^{-i\mathbf p\cdot\boldsymbol\Delta}\Big],
 $$
 
 where $\boldsymbol\Delta=\mathbf x-\mathbf y$. The two phases are **opposite**: the positive-frequency term carries $e^{+i\mathbf p\cdot\boldsymbol\Delta}$ and the negative-frequency term $e^{-i\mathbf p\cdot\boldsymbol\Delta}$. From the spin sums one obtains the two useful combinations
 
 $$
-\sum_r u^{(r)}u^{(r)\dagger}=E_{\mathbf p}I_4+m\gamma^0+\gamma^0\boldsymbol\gamma\cdot\mathbf p,\qquad
-\sum_r v^{(r)}v^{(r)\dagger}=E_{\mathbf p}I_4-m\gamma^0+\gamma^0\boldsymbol\gamma\cdot\mathbf p,
+\sum_r u^{(r)}u^{(r){}^{*}}=E_{\mathbf p}I_4+m\gamma^0+\gamma^0\boldsymbol\gamma\cdot\mathbf p,\qquad
+\sum_r v^{(r)}v^{(r){}^{*}}=E_{\mathbf p}I_4-m\gamma^0+\gamma^0\boldsymbol\gamma\cdot\mathbf p,
 $$
 
 so that, with $\theta=\mathbf p\cdot\boldsymbol\Delta$,
 
 $$
-\sum_r\Big[u^{(r)}u^{(r)\dagger}e^{+i\theta}+v^{(r)}v^{(r)\dagger}e^{-i\theta}\Big]
+\sum_r\Big[u^{(r)}u^{(r){}^{*}}e^{+i\theta}+v^{(r)}v^{(r){}^{*}}e^{-i\theta}\Big]
 =E_{\mathbf p}\cos\theta\,I_4\cdot 2
 +2\cos\theta\,\gamma^0\boldsymbol\gamma\cdot\mathbf p
 +2im\sin\theta\,\gamma^0 .
@@ -406,9 +406,9 @@ The extension is a transcription of standard canonical quantization onto the par
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$ | Biquaternionic gradient (Dirac operator) |
-| $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}$ | d'Alembertian |
+| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
 | $\tilde{\Psi}$ | Classical biquaternion Dirac field |
-| $\tilde{\Psi}^\flat=-\tilde{\Psi}^\dagger$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
+| $\tilde{\Psi}^\flat=-\tilde{\Psi}^{*}$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 
 | $\psi=(\psi_L,\psi_R)$, $\bar\psi=\psi^\dagger\gamma^0$ | Dirac spinor (spinor module) and its adjoint |
 | $\gamma^\mu$, $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$ | Gamma matrices and chirality operator |
@@ -419,7 +419,7 @@ The extension is a transcription of standard canonical quantization onto the par
 | $u^{(r)}(\mathbf p),v^{(r)}(\mathbf p)$ | Parent article's positive- and negative-frequency spinors |
 | $\bar u u=2m$, $u^\dagger u=2E_{\mathbf p}$ | Covariant and Hermitian normalizations |
 | $p^\mu=(E_{\mathbf p},\mathbf p)$, $\not p=\gamma^0E_{\mathbf p}-\boldsymbol\gamma\cdot\mathbf p$ | Four-momentum and Feynman slash |
-| $\tilde k\bar{\tilde k}=-m^2c^2/\hbar^2$ | Biquaternionic mass-shell condition |
+| $\tilde k\tilde k^{\natural}=-m^2c^2/\hbar^2$ | Biquaternionic mass-shell condition |
 | $\hat\psi$, $\hat a_r(\mathbf p)$, $\hat b_r(\mathbf p)$ | Quantized field; particle and antiparticle annihilation operators |
 | $\{\hat a_r(\mathbf p),\hat a_s^\dagger(\mathbf q)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\mathbf p-\mathbf q)$ | Mode anticommutator |
 | $\hat H$, $:\!\hat H\!:$ | Hamiltonian and its normal-ordered form |

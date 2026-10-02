@@ -33,13 +33,13 @@ $$
 
 is the **ultrahyperbolic operator** of signature $(2,2)$.
 
-**Proof.** Expand $\nabla\bar{\nabla} = \sum_{\mu,\nu}e_\mu\bar e_\nu\partial_\mu\partial_\nu$. The diagonal coefficients are $e_0\bar e_0 = e_0$, $e_1\bar e_1 = -e_1^2 = e_0$, $e_2\bar e_2 = -e_2^2 = -e_0$, $e_3\bar e_3 = -e_0$; the off-diagonal coefficients vanish by the Clifford relations $e_\mu\bar e_\nu + e_\nu\bar e_\mu = 0$ for $\mu\neq\nu$.
+**Proof.** Expand $\nabla\bar{\nabla} = \sum_{\mu,\nu}e_\mu e_\nu^{\natural}\partial_\mu\partial_\nu$. The diagonal coefficients are $e_0e_0^{\natural} = e_0$, $e_1e_1^{\natural} = -e_1^2 = e_0$, $e_2e_2^{\natural} = -e_2^2 = -e_0$, $e_3e_3^{\natural} = -e_0$; the off-diagonal coefficients vanish by the Clifford relations $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 0$ for $\mu\neq\nu$.
 
 Thus the Fueter operator is a square root not of the Laplacian but of a wave operator: it is the Cauchy–Riemann operator of the Clifford algebra $\mathrm{Cl}_{2,2}$, of signature $(2,2)$. This is the single structural sign that separates the theory from the quaternion ($\mathrm{Cl}_{0,3}$) and biquaternion ($\mathrm{Cl}_{1,3}$) cases.
 
 ### Relation to the Cauchy–Riemann Operator
 
-On the full algebra the Fueter operator is exactly the Cauchy–Riemann operator of *Split-Quaternion Regular Functions*: its symbol $s(\xi) = \xi_0 + \xi_1e_1+\xi_2e_2+\xi_3e_3$ satisfies $s(\xi)\bar s(\xi) = N(\xi)e_0$, so it is **not** elliptic and its characteristic set is the null cone $\mathcal{N}$. In Clifford language, $\mathbb{H}_{\mathrm{s}}$ is the even subalgebra of $\mathrm{Cl}_{2,2}$ up to the standard identification, and the Fueter-regular functions are its **monogenic** functions.
+On the full algebra the Fueter operator is exactly the Cauchy–Riemann operator of *Split-Quaternion Regular Functions*: its symbol $s(\xi) = \xi_0 + \xi_1e_1+\xi_2e_2+\xi_3e_3$ satisfies $s(\xi)s^{\natural}(\xi) = N(\xi)e_0$, so it is **not** elliptic and its characteristic set is the null cone $\mathcal{N}$. In Clifford language, $\mathbb{H}_{\mathrm{s}}$ is the even subalgebra of $\mathrm{Cl}_{2,2}$ up to the standard identification, and the Fueter-regular functions are its **monogenic** functions.
 
 ## Fueter-Regular Functions
 
@@ -147,7 +147,7 @@ so every Fueter-regular function on a ball has a normally convergent expansion i
 
 ## Relation to the Quaternion and Biquaternion Fueter Theories
 
-The biquaternion article *Fueter Theory for Biquaternions* develops the operator on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where $\tilde\nabla\bar{\tilde\nabla} = \Delta_4 e_0$ is the definite Laplacian; there the imaginary units form the sphere $S^2$, the axial representation and the Fueter construction are classical, the Fueter–Sce theorem holds for odd $n$ with the power $(n-1)/2$, and the Cauchy kernel is singular only at the origin. On the indefinite biquaternion subspaces $\mathbb{M}_\pm$ the second-order operator becomes a wave operator and the elliptic tools disappear, while the full algebra $\mathbb{B}$ has the six-dimensional null quadric as an obstruction.
+The biquaternion article *Fueter Theory for Biquaternions* develops the operator on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where $\tilde\nabla\tilde{\nabla}^{\natural} = \Delta_4 e_0$ is the definite Laplacian; there the imaginary units form the sphere $S^2$, the axial representation and the Fueter construction are classical, the Fueter–Sce theorem holds for odd $n$ with the power $(n-1)/2$, and the Cauchy kernel is singular only at the origin. On the indefinite biquaternion subspaces $\mathbb{M}_\pm$ the second-order operator becomes a wave operator and the elliptic tools disappear, while the full algebra $\mathbb{B}$ has the six-dimensional null quadric as an obstruction.
 
 The split-quaternion theory is the case in which **every** direction is of that indefinite kind: the second-order operator is ultrahyperbolic on the whole algebra, the imaginary units form a two-sheeted hyperboloid rather than a sphere, and the axial construction is obstructed on the null cone and replaced by a hyperbolic structure outside the timelike region. The slice statements survive because each slice restores a definite (complex) structure, and the Fischer decomposition survives because it needs only non-degeneracy; the radial Fueter construction and the Fueter–Sce parity theorem do not transfer, because they rest on spherical symmetry of a definite form. In Clifford terms the split-quaternion Fueter theory is the monogenic function theory of $\mathrm{Cl}_{2,2}$, to be compared with the $\mathrm{Cl}_{0,3}$ theory of the quaternions and the $\mathrm{Cl}_{1,3}$ theory of the biquaternions. Nothing quaternion- or biquaternion-specific — no imaginary sphere $S^2$, no definite half, no Euclidean Cauchy kernel — is imported.
 

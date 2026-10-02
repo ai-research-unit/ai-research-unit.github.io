@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The algebra article defined the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$, its basis $1, e_1, e_2, e_3$, its conjugation, its central product $\tilde q\bar{\tilde q}$ and its distinguished subspaces. This article treats the **idempotents** of $\mathbb{H}_{\mathrm{s}}$ — the elements $\tilde\pi$ with $\tilde\pi^2 = \tilde\pi$ — and the projections and direct sum decompositions they carry.
+The algebra article defined the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$, its basis $1, e_1, e_2, e_3$, its conjugation, its central product $\tilde q\tilde{q}^{\natural}$ and its distinguished subspaces. This article treats the **idempotents** of $\mathbb{H}_{\mathrm{s}}$ — the elements $\tilde\pi$ with $\tilde\pi^2 = \tilde\pi$ — and the projections and direct sum decompositions they carry.
 
 Idempotents are the algebraic form of a projection, and in $\mathbb{H}_{\mathrm{s}}$ they do four jobs at once:
 
@@ -14,12 +14,12 @@ Idempotents are the algebraic form of a projection, and in $\mathbb{H}_{\mathrm{
 
 The last two items are developed in the companion articles *Split-Quaternion Zero Divisors* and *Split-Quaternion Ideals and Peirce Decomposition*; here they enter only as forward pointers.
 
-**Placement.** The article is third in the Algebra group, after the algebra and before the roots of $-1$, the zero divisors and the ideals, because the ideals and the zero divisors both use the idempotents. Its proofs use only the algebra article and the algebraic product $\tilde q\bar{\tilde q}$; the classification of the non-scalar idempotents is proved here from the quadratic equation, so nothing is quoted from the roots of $-1$ article, which is the companion classification of the opposite sign.
+**Placement.** The article is third in the Algebra group, after the algebra and before the roots of $-1$, the zero divisors and the ideals, because the ideals and the zero divisors both use the idempotents. Its proofs use only the algebra article and the algebraic product $\tilde q\tilde{q}^{\natural}$; the classification of the non-scalar idempotents is proved here from the quadratic equation, so nothing is quoted from the roots of $-1$ article, which is the companion classification of the opposite sign.
 
-**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}} = \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$. A general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, its scalar part is $q_0 = \operatorname{Sc}(\tilde q)$ and its vector part is $\mathbf{v} = q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$. The product $\tilde q\bar{\tilde q}$ lies in the centre and is written
+**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}} = \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$. A general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, its scalar part is $q_0 = \operatorname{Sc}(\tilde q)$ and its vector part is $\mathbf{v} = q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$. The product $\tilde q\tilde{q}^{\natural}$ lies in the centre and is written
 
 $$
-N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2 + q_1^2 - q_2^2 - q_3^2 ;
+N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2 ;
 $$
 
 it is formed and evaluated here as an algebraic product, and its metrical reading — the signature of the pairings, their isotropy and the group of units — is in *Split-Quaternion Norm and Invertibility*. The scalar subspace is $S = \mathbb{R}\cdot 1$ and the vector subspace is $V = \operatorname{span}\{e_1, e_2, e_3\}$; on $V$ the square of an element is minus that product, $\mathbf{v}^2 = -N(\mathbf{v})$.
@@ -184,7 +184,7 @@ $$
 \tilde\pi \bar{\tilde\pi} = \tfrac{1}{4}(1 + \eta)(1 - \eta) = \tfrac{1}{4}(1 - \eta^2) = 0,
 $$
 
-so the whole idempotent family lies on the zero divisor set $\{\tilde q : \tilde q\bar{\tilde q} = 0\}$. The idempotents are the non-nilpotent points of that set: $\tilde\pi^2 = \tilde\pi \neq 0$, whereas the nilpotents of the algebra are exactly the nonzero vectors of $V$ whose square vanishes, treated in *Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*.
+so the whole idempotent family lies on the zero divisor set $\{\tilde q : \tilde q\tilde{q}^{\natural} = 0\}$. The idempotents are the non-nilpotent points of that set: $\tilde\pi^2 = \tilde\pi \neq 0$, whereas the nilpotents of the algebra are exactly the nonzero vectors of $V$ whose square vanishes, treated in *Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*.
 
 ## Idempotents and the Minimal Left Ideals
 
@@ -245,7 +245,7 @@ Every idempotent is either trivial ($0$ or $1$) or of the form $\tilde\pi = \tfr
 | $\tilde\pi(\eta) = \tfrac{1}{2}(1 + \eta)$ | the idempotent of the root $\eta$; $\eta \mapsto \tilde\pi(\eta)$ is a bijection | this article |
 | $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$, $\tilde\pi_\pm \mathbb{H}_{\mathrm{s}}$ | the minimal left and right ideals, each $\cong \mathbb{R}^2$ | this article |
 | $\tilde\pi_+ \mathbb{H}_{\mathrm{s}} \tilde\pi_-$ | the off-diagonal Peirce corner, nonzero | this article |
-| $N(\tilde q) = \tilde q\bar{\tilde q}$ | the central product, formed and evaluated algebraically; the metrical reading is in *Split-Quaternion Norm and Invertibility* | this article |
+| $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ | the central product, formed and evaluated algebraically; the metrical reading is in *Split-Quaternion Norm and Invertibility* | this article |
 | $S = \mathbb{R}\cdot 1$, $V = \operatorname{span}\{e_1,e_2,e_3\}$ | the scalar and vector subspaces | *Split-Quaternion Algebra* |
 | $\mathbb{D}_2 = \operatorname{span}\{1, e_2\}$ | the split-complex subalgebra carrying $\tilde\pi_\pm$ | *Split-Quaternion Algebra* |
 | $e_\pm = \tfrac{1}{2}(1 \pm j)$ | the idempotents of the split-complex algebra $\mathbb{D}$ | *Split-Complex Algebra* |

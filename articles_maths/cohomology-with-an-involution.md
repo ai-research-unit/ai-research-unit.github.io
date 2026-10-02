@@ -1,0 +1,142 @@
+
+# __Cohomology with an Involution__
+
+## Introduction
+
+A cohomology theory with an involution is a graded group $H^*(X,\mathcal{F})=\bigoplus_iH^i(X,\mathcal{F})$ together with an endomorphism $\theta$ of order two, the **involution**, the elements with $\theta\alpha=\alpha$ being the **self-adjoint** or **fixed** classes and those with $\theta\alpha=-\alpha$ the **anti-invariant** classes. The involution refines the graded group into the fixed part and, when $2$ is invertible, the two eigenspaces; when it is a ring involution, the fixed part is a subring and the anti-invariant part is a module over it; and when it comes from a group action, the fixed part is the **invariant** cohomology, which is the cohomology of the quotient under the transfer hypotheses. The involution on the cohomology of a sheaf is the element-level object of the involutive layer, and its operator-level counterpart is the involution on the differential of *The Involution on the Coboundary*, which is the structure that produces it.
+
+This article develops the involution on a graded cohomology group: the fixed part, the eigenspaces, the involutions that arise from an equivariant sheaf and from an involution of the coefficients, the compatibility with the cup product, the behaviour under the long exact sequence and the role of the invariants functor, and the identification of the fixed part with the cohomology of the quotient under the transfer hypotheses. It is the fourth article of the involutive layer of the category; the involution on the structure sheaf and its induced cohomological action are *The Involution on the Structure Sheaf*, the group action and the descent are *Equivariant Sheaves and Descent*, the conjugate-linear case is *Sheaves with a Real Structure*, and the invariant theory of a group is *Group Cohomology* of Part I.
+
+The article uses no analysis and no geometry: the coefficients are sheaves and their cohomology, the involutions are endomorphisms of order two, and the transfer is the additive map over the fibres of a finite covering. No form, no norm and no derivative occurs. Throughout, $\mathcal{F}$ is a sheaf on a space $X$, $\theta$ is an involution of the graded group $H^*(X,\mathcal{F})$, the fixed part is $H^*(X,\mathcal{F})^{\theta}$ and the eigenspaces are $H^*(X,\mathcal{F})_{\pm}$. When the involution comes from a group action, $G=\mathbb{Z}/2$ acts on $X$, the quotient map is $q:X\to X/G$, and $\Bbbk$ is a coefficient field of characteristic different from $2$ whenever the transfer is used.
+
+## Involutions of a Graded Group
+
+**Definition.** An **involution** of a graded abelian group $H^*=\bigoplus_iH^i$ is an endomorphism $\theta$ of degree zero with $\theta^2=\mathrm{id}$; the **fixed part** is $H^{\theta}=\{\alpha:\theta\alpha=\alpha\}$, the **anti-invariant part** is $H^-=\{\alpha:\theta\alpha=-\alpha\}$, and $\theta$ is **graded** if the grading is preserved, which is the case throughout this article. An involution of a graded module over a ring $R$ is $R$-linear if it is a morphism of $R$-modules; an involution of a graded ring is an involution that is a ring homomorphism.
+
+**Theorem (the eigenspace decomposition).** Let $\theta$ be an involution of a graded abelian group $H^*$. Then $H^{\theta}$ and $H^-$ are graded subgroups, and if $2$ is invertible in the coefficient ring there is a direct sum decomposition
+
+$$
+H^*=H^{\theta}\oplus H^-,\qquad \theta(\alpha^{+}+\alpha^{-})=\alpha^{+}-\alpha^{-},\qquad \alpha^{\pm}=\tfrac12(\alpha\pm\theta\alpha).
+$$
+
+If $H^*$ is a graded ring and $\theta$ a ring involution, $H^{\theta}$ is a graded subring containing the unit, $H^-$ is a module over $H^{\theta}$, and $H^-\cdot H^-\subseteq H^{\theta}$; if $H^*$ is a graded module over a ring with involution and $\theta$ is semilinear, the fixed part is a module over the fixed subring.
+
+*Proof.* The maps $\alpha\mapsto\frac12(\alpha\pm\theta\alpha)$ are the projections onto the eigenspaces of an involution when $2^{-1}$ exists, and they are additive and graded; the product statements follow from the multiplicativity of $\theta$: $\theta(\alpha\beta)=\theta(\alpha)\theta(\beta)$ gives the closure of $H^{\theta}$ under products and the module laws on $H^-$, and the product of two anti-invariant elements is fixed because $(-1)(-1)=1$.
+
+**Remark (the sign convention).** The involution is taken of degree zero, so it preserves the cohomological degree; a **graded** involution of degree $k$ with $\theta^2=(-1)^k\mathrm{id}$ is a different structure, occurring for the involution on a differential complex of *The Involution on the Coboundary*, and it is not treated here. The involution of this article is the degree-zero one on the cohomology.
+
+## Involutions from Sheaves
+
+**Proposition (from a group action).** Let $G=\mathbb{Z}/2$ act on $X$ and let $\mathcal{F}$ be a $G$-equivariant sheaf as in *Equivariant Sheaves and Descent*. Then the equivariant structure induces an involution $\theta$ of $H^*(X,\mathcal{F})$, the **action of the group on the cohomology**, and the fixed part $H^*(X,\mathcal{F})^{\theta}$ is the **invariant cohomology**.
+
+*Proof.* The equivariant structure is an isomorphism $\varphi_{\tau}:\tau_*\mathcal{F}\to\mathcal{F}$ with $\varphi_{\tau}^2=\mathrm{id}$; applying the functor $H^*(X,\tau_*\,-\,)$ and using the natural isomorphism $H^*(X,\tau_*\mathcal{F})\cong H^*(X,\mathcal{F})$ for the homeomorphism $\tau$ gives the endomorphism $\theta$, whose square is the identity because $\varphi_{\tau}^2=\mathrm{id}$.
+
+**Proposition (from an involution of the coefficients).** Let $\sigma$ be an involution of the structure sheaf $\mathcal{O}_X$ as in *The Involution on the Structure Sheaf*, and let $\mathcal{M}$ be a $\sigma$-equivariant module. Then the induced map $\sigma^*_{\mathcal{M}}$ on $H^*(X,\mathcal{M})$ of that article is an involution of the graded group, and the two constructions agree in the geometric case where $\sigma$ comes from an involution of the space.
+
+*Proof.* The induced map is an endomorphism of order two by the theorem of *The Involution on the Structure Sheaf*; the agreement in the geometric case is the fact that an equivariant structure with the coefficient involution $\sigma$ is the same datum as an involution of the coefficients.
+
+**Example (the trivial involution).** The identity action gives the identity involution, with $H^{\theta}=H^*$ and $H^-=0$; the example shows that the involution is allowed to be trivial and that the decomposition is then the trivial one.
+
+## The Involution and the Cup Product
+
+**Theorem (the ring involution).** Let $\theta$ be an involution of $H^*(X,\mathcal{F})$ that is a ring involution for the cup product of *The Cup Product on Sheaf Cohomology*: $\theta(\alpha\smile\beta)=\theta\alpha\smile\theta\beta$ and $\theta(1)=1$ in degree zero. Then:
+
+1. the fixed part $H^*(X,\mathcal{F})^{\theta}$ is a graded subring containing the unit;
+2. the anti-invariant part $H^*(X,\mathcal{F})^-$ is a graded module over the fixed subring, and its products land in the fixed part;
+3. if $2$ is invertible, $H^*(X,\mathcal{F})=H^*(X,\mathcal{F})^{\theta}\oplus H^*(X,\mathcal{F})^-$ as graded groups.
+
+*Proof.* The multiplicativity of $\theta$ and the unit statement are the hypotheses, and the closure statements are the theorem on the eigenspace decomposition; the decomposition is the same theorem.
+
+**Proposition (the fixed classes are a subring of invariants).** For the action of $\mathbb{Z}/2$ on $H^*(X,\Bbbk)$ of a free action with quotient $q$, the pullback $q^*:H^*(X/G,\Bbbk)\to H^*(X,\Bbbk)$ lands in the invariant cohomology, and it is an isomorphism when $\Bbbk$ has characteristic different from $2$.
+
+*Proof.* The pullback is equivariant for the trivial action on the quotient; the isomorphism is the transfer theorem of the next section.
+
+## Invariants and the Long Exact Sequence
+
+**Theorem (invariants of a short exact sequence).** Let $0\to\mathcal{F}'\to\mathcal{F}\to\mathcal{F}''\to0$ be a short exact sequence of $\mathbb{Z}/2$-equivariant sheaves, with the equivariant structures compatible with the morphisms. Then the long exact sequence of cohomology
+
+$$
+\cdots\to H^i(X,\mathcal{F}')\to H^i(X,\mathcal{F})\to H^i(X,\mathcal{F}'')\xrightarrow{\ \delta\ }H^i(X,\mathcal{F}')\to\cdots
+$$
+
+is equivariant for the involutions, the connecting maps $\delta$ commuting with them, and taking the fixed parts gives an exact sequence
+
+$$
+0\to H^0(X,\mathcal{F}')^{\theta}\to H^0(X,\mathcal{F})^{\theta}\to H^0(X,\mathcal{F}'')^{\theta}\xrightarrow{\ \delta_0\ }H^1(X,\mathcal{F}')^{\theta},
+$$
+
+which need not continue exactly: the failure of exactness beyond the displayed terms is measured by the cohomology of the group $\mathbb{Z}/2$, $H^1(\mathbb{Z}/2,-)$ and its higher groups.
+
+*Proof.* The long exact sequence is natural in the coefficients, so the involution acts on it and commutes with the connecting maps; the invariants functor is left exact, being the kernel of $\theta-\mathrm{id}$, hence preserves the exactness in the low degrees and fails to be right exact in general. The failure is the derived functor of the invariants, which is the group cohomology of $\mathbb{Z}/2$ with coefficients in the graded groups, as in *Group Cohomology*.
+
+**Remark (the invariant part is not the cohomology of the fixed locus).** The fixed part $H^*(X,\mathcal{F})^{\theta}$ is not in general the cohomology of the fixed locus of the action, and it is not the cohomology of the quotient without a transfer hypothesis: the two are related by the maps below, and the comparison requires the action to be free or the transfer to be available. The article keeps the three objects apart — the fixed part of the cohomology, the cohomology of the quotient, and the cohomology of the fixed locus — since they coincide only under hypotheses that must be stated.
+
+## The Transfer and the Cohomology of the Quotient
+
+**Theorem (the transfer).** Let $G=\mathbb{Z}/2$ act freely and properly discontinuously on $X$ with quotient $q:X\to X/G$, and let $\Bbbk$ be a field of characteristic different from $2$. Then for every $i$,
+
+$$
+H^i(X/G,\Bbbk)\cong H^i(X,\Bbbk)^{G},
+$$
+
+the invariants of the cohomology of $X$ under the action of the group; the isomorphism is the pullback $q^*$, and its inverse is the **transfer** $\operatorname{Tr}$, a map $H^i(X,\Bbbk)\to H^i(X/G,\Bbbk)$ with $q^*\operatorname{Tr}=1+\tau=\mathrm{id}+\theta$ and $\operatorname{Tr}q^*=2$.
+
+*Proof.* The free proper action makes $q$ a covering with deck group $\mathbb{Z}/2$, and the transfer is the composition of the inverse of the pullback along the sheets with the sum over the two sheets; on the cohomology of the quotient the composition $q^*\operatorname{Tr}$ is the sum of the identity and the involution $\theta$, and $2$ is invertible by hypothesis, so $q^*$ restricts to an isomorphism onto the invariants with inverse $\operatorname{Tr}$ on them. This is the transfer of *The Fundamental Group and Covering Spaces* and the invariant theory of *Group Cohomology*.
+
+**Corollary (the sheaf form).** With the same hypotheses and $\mathcal{F}$ a $\mathbb{Z}/2$-equivariant sheaf on $X$, the descended sheaf $q_*^{G}\mathcal{F}$ of *Equivariant Sheaves and Descent* satisfies
+
+$$
+H^i(X/G,q_*^{G}\mathcal{F})\cong H^i(X,\mathcal{F})^{G},
+$$
+
+so that the cohomology of the quotient with the descended coefficients is the invariant cohomology of the sheaf.
+
+*Proof.* The descent equivalence of *Equivariant Sheaves and Descent* matches the global sections over the quotient with the invariant sections over $X$, and the derived functors match under the equivalence; the statement is the sheaf-theoretic form of the transfer theorem.
+
+**Corollary (the Euler characteristic of the equivariant cohomology).** Under the same hypotheses the Euler characteristic of the invariants is the average $\chi(H^*(X,\Bbbk)^{G})=\frac12\bigl(\chi(H^*(X,\Bbbk))+L\bigr)$, where $L=\sum_i(-1)^i\operatorname{tr}(\theta\mid H^i)$ is the Lefschetz number of the involution; for a free involution with a finite-dimensional cohomology this gives $\chi(X/G)=\frac12\chi(X)$.
+
+*Proof.* The trace of $\theta$ on a graded group with the decomposition $H^*=H^{\theta}\oplus H^-$ is $\dim H^{\theta}-\dim H^-$ in each degree, and the Euler characteristic is additive; the second statement is the case of a free action, where the trace vanishes. This is the Lefschetz fixed point formula in the elementary case of a free involution, and the general formula for a non-free action is Part III.
+
+## Worked Cases
+
+### The Conjugation on the Projective Space
+
+On $\mathbb{CP}^n$ with the conjugation of the coordinates, the involution acts on $H^*(\mathbb{CP}^n,\underline{\mathbb{C}})=\mathbb{C}[x]/(x^{n+1})$ by $\theta(x)=-x$ or $\theta(x)=x$ according to the choice of real structure on the generator; with the sign choice conjugate-linear on the coefficients the fixed classes are those of even degree, and the fixed subring is $\mathbb{R}[x^2]/(x^{2\lfloor n/2\rfloor+2})$ in the real cohomology. The example shows how the involution cuts down a polynomial cohomology ring to its real part.
+
+### The Antipodal Involution on the Sphere
+
+On $S^n$ with the antipodal involution, the cohomology with coefficients in a field of characteristic not two is $\Bbbk$ in degrees $0$ and $n$; the involution acts by $+1$ in degree zero and by $(-1)^{n+1}$ in degree $n$. The invariants are therefore $\Bbbk$ in degree zero and, for $n$ odd, also in degree $n$; for $n$ even the degree-$n$ class is anti-invariant. This agrees with $H^*(\mathbb{RP}^n,\Bbbk)$ for $n$ odd, where the quotient is orientable, and exhibits the failure in the even case where the antipodal action reverses the orientation.
+
+### The Involution of a Complexification
+
+For a complexification $Y_{\mathbb{C}}$ of a real space $Y$ with the conjugation, the involution on $H^*(Y_{\mathbb{C}},\underline{\mathbb{C}})$ is conjugate-linear with real fixed part, and the transfer theorem gives $H^*(Y_{\mathbb{C}},\underline{\mathbb{C}})^{G}\cong H^*(Y,\underline{\mathbb{R}})\otimes_{\mathbb{R}}\mathbb{C}$ when the action is free on the complement of the real locus and the real locus is a deformation retract; the real cohomology is the fixed part of the complex cohomology, which is the sheaf-theoretic form of the comparison of *Sheaves with a Real Structure*.
+
+## Summary
+
+An involution of a graded cohomology group is a degree-zero endomorphism of order two; its fixed part and its anti-invariant part are graded subgroups spanning the group when $2$ is invertible, and for a ring involution the fixed part is a graded subring, the anti-invariant part a module over it with products in the fixed part. Involutions arise from an equivariant sheaf, as the action of a group of order two on the cohomology, and from an involution of the coefficients, as the induced map of *The Involution on the Structure Sheaf*; the two agree in the geometric case.
+
+A short exact sequence of equivariant sheaves has an equivariant long exact sequence commuting with the connecting maps, and taking fixed parts preserves the exactness only in the low degrees: the failure is measured by the group cohomology of $\mathbb{Z}/2$, the derived functor of the invariants. The three objects the fixed part of the cohomology, the cohomology of the quotient and the cohomology of the fixed locus are distinct in general; for a free proper action with coefficients in a field of characteristic different from two, the transfer identifies the invariant cohomology with the cohomology of the quotient, $\operatorname{Tr}q^*=2$ and $q^*\operatorname{Tr}=\mathrm{id}+\theta$, and the comparison gives the expectation values of the elementary Lefschetz formula. The conjugation on a projective space, the antipodal involution on a sphere and the involution of a complexification are the standard computations.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\theta$ | involution of a graded group or ring; $\theta^2=\mathrm{id}$, degree zero |
+| $H^*(X,\mathcal{F})^{\theta}$ | fixed part, the self-adjoint classes |
+| $H^*(X,\mathcal{F})^-$ | anti-invariant part, the classes with $\theta\alpha=-\alpha$ |
+| $H^*=H^{\theta}\oplus H^-$ | eigenspace decomposition when $2$ is invertible |
+| $\sigma^*_{\mathcal{M}}$ | induced involution from an involution of the coefficients (article 8) |
+| $\operatorname{Tr}:H^i(X,\Bbbk)\to H^i(X/G,\Bbbk)$ | transfer; $\operatorname{Tr}q^*=2$, $q^*\operatorname{Tr}=\mathrm{id}+\theta$ |
+| $H^i(X/G,\Bbbk)\cong H^i(X,\Bbbk)^{G}$ | transfer isomorphism for a free action, $\operatorname{char}\Bbbk\ne2$ |
+| $H^i(X/G,q_*^{G}\mathcal{F})\cong H^i(X,\mathcal{F})^{G}$ | sheaf form of the transfer |
+| $H^1(\mathbb{Z}/2,-)$ | derived functor of the invariants; measures the failure of exactness |
+| $\chi(H^*)^{G}=\frac12(\chi(H^*)+L)$ | Euler characteristic of the invariants; $L$ the Lefschetz number |
+
+## Further Reading
+
+- Kenneth S. Brown, *Cohomology of Groups* (Springer, 1982), for the invariants functor, its derived functors and the group cohomology of a finite group.
+- Glen E. Bredon, *Sheaf Theory* (Springer, second edition, 1997), for the action of a group on sheaf cohomology and the transfer.
+- Glen E. Bredon, *Introduction to Compact Transformation Groups* (Academic Press, 1972), for the fixed locus, the invariant cohomology and the Lefschetz formula.
+- Alexander Grothendieck, *Théorie des topos et cohomologie étale des schémas (SGA 4)* (Springer Lecture Notes in Mathematics 269, 270, 305, 1972–1973), for the equivariant cohomology and the descent of the invariants.
+- Allen Hatcher, *Algebraic Topology* (Cambridge University Press, 2002), for the transfer and the cohomology of a quotient by a free involution.
+- Joseph Bernstein and Valery Lunts, *Equivariant Sheaves and Functors* (Springer Lecture Notes in Mathematics 1578, 1994), for the invariants and the equivariant cohomology in the derived setting.

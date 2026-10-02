@@ -42,7 +42,7 @@ The parameter pattern is the simplest possible: **all four** coefficients are re
 
 ### The Defining Involution
 
-The subspace is the fixed space of **complex conjugation** $\tilde{Q}^*$, the antilinear map that fixes the quaternion units and negates the scalar imaginary, $e_\mu^* = e_\mu$ and $i^* = -i$. It is an involution: $(\tilde{Q}^*)^* = \tilde{Q}$. Write the general biquaternion out in full, with the real and the imaginary part of each of its four coefficients,
+The subspace is the fixed space of **complex conjugation** $\bar{\tilde{Q}}$, the antilinear map that fixes the quaternion units and negates the scalar imaginary, $\bar{e}_\mu = e_\mu$ and $\bar{i} = -i$. It is an involution: $\bar{\bar{\tilde{Q}}} = \tilde{Q}$. Write the general biquaternion out in full, with the real and the imaginary part of each of its four coefficients,
 
 $$
 \tilde{Q} = (q_0 + iq'_0)\,e_0 + (q_1 + iq'_1)\,e_1 + (q_2 + iq'_2)\,e_2 + (q_3 + iq'_3)\,e_3, \qquad q_\mu, q'_\mu \in \mathbb{R}.
@@ -92,13 +92,13 @@ The diagonal is $-e_0$ for the three vector units, $e_k^2 = -e_0$, and the off-d
 **Division algebra.** The biquaternion norm restricted to the subspace is
 
 $$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = q_0^2 + q_1^2 + q_2^2 + q_3^2,
+N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = q_0^2 + q_1^2 + q_2^2 + q_3^2,
 $$
 
 a **positive definite** quadratic form of signature $(4,0)$. Since $N(\tilde{Q}) = 0$ forces $\tilde{Q} = 0$, every nonzero element is invertible, with
 
 $$
-\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}}}{N(\tilde{Q})},
+\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{N(\tilde{Q})},
 $$
 
 and there are no zero divisors: a product $\tilde{Q}\tilde{R}$ can vanish only if one factor does. The vanishing of the biquaternion norm here cuts out only the origin: the subspace has no light cone.
@@ -108,7 +108,7 @@ and there are no zero divisors: a product $\tilde{Q}\tilde{R}$ can vanish only i
 **Hermitian parts.** Under Hermitian conjugation, which composes quaternion conjugation with complex conjugation, the unit is fixed and the three vector units change sign,
 
 $$
-e_0^\dagger = e_0, \qquad e_k^\dagger = -e_k \quad (k = 1,2,3).
+e_0^\dagger = e_0, \qquad e_k^{*} = -e_k \quad (k = 1,2,3).
 $$
 
 So the scalar direction of the subspace is Hermitian and the three vector directions are anti-Hermitian. This is the algebraic statement that a real scalar is Hermitian while a real spatial direction is not.
@@ -155,7 +155,7 @@ a unit quaternion whose scalar part is the cosine of the half-angle. The appeara
 
 ## Summary
 
-The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed-point set of complex conjugation, a four-dimensional real subspace of $\mathbb{B}$ spanned by $e_0, e_1, e_2, e_3$ with real coefficients. It is a subalgebra, and as a real algebra it is the unique four-dimensional division algebra. Its biquaternion norm is positive definite of signature $(4,0)$; numerically it is the sum of squares $q_0^2 + q_1^2 + q_2^2 + q_3^2$, which never vanishes on a nonzero element. Every nonzero element is invertible, with $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$, and there are no zero divisors and no light cone.
+The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed-point set of complex conjugation, a four-dimensional real subspace of $\mathbb{B}$ spanned by $e_0, e_1, e_2, e_3$ with real coefficients. It is a subalgebra, and as a real algebra it is the unique four-dimensional division algebra. Its biquaternion norm is positive definite of signature $(4,0)$; numerically it is the sum of squares $q_0^2 + q_1^2 + q_2^2 + q_3^2$, which never vanishes on a nonzero element. Every nonzero element is invertible, with $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$, and there are no zero divisors and no light cone.
 
 Its unit group is the sphere $S^3 \cong SU(2)$, the group of rotation rotors, which acts on the subspace by conjugation; the pure vector units $e_1, e_2, e_3$ are the rotation generators, closing under commutation as $\mathrm{SU}(2)$.
 
@@ -170,8 +170,8 @@ The physical reading of the sector is the Euclidean one: with the scalar imagina
 | $q_0, q_1, q_2, q_3$ | Real parameters of an element of $\mathbb{H}_{\mathbb{B}}$, on $e_0, e_1, e_2, e_3$ |
 | $(ct')\,e_0 + x\,e_1 + y\,e_2 + z\,e_3$ | The same element in physical coordinates; $q_0 = ct'$ and $(q_1, q_2, q_3) = (x, y, z)$ |
 | $e_k^2 = -e_0$, $e_1e_2 = e_3$ | Quaternion multiplication rules |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = q_0^2 + q_1^2 + q_2^2 + q_3^2$ | Biquaternion norm; positive definite, signature $(4,0)$ |
-| $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$ | Inverse; exists for every nonzero element |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = q_0^2 + q_1^2 + q_2^2 + q_3^2$ | Biquaternion norm; positive definite, signature $(4,0)$ |
+| $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$ | Inverse; exists for every nonzero element |
 | $S^3 \cong SU(2)$ | Unit group; the rotation rotors |
 | $\tilde{U} = \cos(\theta/2) + \sin(\theta/2)\hat{\mathbf{n}}\cdot\mathbf{e}$ | Rotation rotor through $\theta$ about $\hat{\mathbf{n}}$ |
 | $\mathrm{SU}(2)$ | Lie algebra of the pure vector units $e_k$ |

@@ -7,7 +7,7 @@ This article is about the **polar representation** of a quaternion: the statemen
 
 The subject is elementary, and that is the point. The quaternion polar representation is the simplest member of a family of four representations that this article opens and three companion articles continue: the quaternion algebra $\mathbb{H}$, the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$, the biquaternion algebra $\mathbb{B}$ and the split-biquaternion algebra $\mathbb{H}_{\mathbb{D}}$. In each algebra an element is written as a scale, possibly a central phase, possibly a hyperbolic factor, and a rotor, and the number of factors present is a property of the algebra, not a choice. In $\mathbb{H}$ exactly two of those four factors exist. Establishing that here, in the case where nothing can go wrong, fixes the vocabulary and the counting used by the three companion articles, where much can.
 
-The plan is as follows. The modulus and the unit quaternion are defined, and existence and uniqueness are proved. The exponential, or axis-angle, form of the unit factor is derived from the power series. The two degenerate cases (the real quaternions and their negatives) are separated from the generic case. The matrix counterpart of the decomposition is recorded, since the same statement in $M_2(\mathbb{C})$ is the classical polar decomposition of a matrix. Worked examples with explicit numbers close the mathematical part. The article is written under the corpus conventions of *Quaternion Algebra*: the basis is $e_0 = 1, e_1, e_2, e_3$, the multiplication is $e_k^2 = -e_0$ and $e_1e_2 = e_3$, the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, and the quaternion norm is $N(\tilde q) = \tilde q\bar{\tilde q} = \sum_{\mu} q_\mu^2$. No physics is invoked. Every numerical value displayed below was recomputed in double precision.
+The plan is as follows. The modulus and the unit quaternion are defined, and existence and uniqueness are proved. The exponential, or axis-angle, form of the unit factor is derived from the power series. The two degenerate cases (the real quaternions and their negatives) are separated from the generic case. The matrix counterpart of the decomposition is recorded, since the same statement in $M_2(\mathbb{C})$ is the classical polar decomposition of a matrix. Worked examples with explicit numbers close the mathematical part. The article is written under the corpus conventions of *Quaternion Algebra*: the basis is $e_0 = 1, e_1, e_2, e_3$, the multiplication is $e_k^2 = -e_0$ and $e_1e_2 = e_3$, the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, and the quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \sum_{\mu} q_\mu^2$. No physics is invoked. Every numerical value displayed below was recomputed in double precision.
 
 ## The Modulus and the Unit Factor
 
@@ -30,7 +30,7 @@ The definition names the two factors before anything is proved about them, so th
 The quaternion norm is
 
 $$
-N(\tilde q) = \tilde q\bar{\tilde q} = \sum_{\mu=0}^{3} q_\mu^2.
+N(\tilde q) = \tilde q\tilde{q}^{\natural} = \sum_{\mu=0}^{3} q_\mu^2.
 $$
 
 It is the sum of four squares, so $N(\tilde q) > 0$ for every $\tilde q \neq 0$, and it vanishes only at $\tilde q = 0$. The modulus is its square root:
@@ -61,7 +61,7 @@ $$
 \mathrm{Sp}(1) = \{u \in \mathbb{H} : N(u) = 1\},
 $$
 
-is the unit sphere $S^3$ of $\mathbb{H} \cong \mathbb{R}^4$, a compact three-dimensional manifold, and it is a group under multiplication: if $N(u) = N(v) = 1$ then $N(uv) = N(u)N(v) = 1$ by multiplicativity, and $u^{-1} = \bar{u}$ has the same norm. The unit factor is a group element, which is what makes it a rotor in the sense of the companion articles: it acts on the vector part of the algebra by conjugation and preserves the quaternion norm there.
+is the unit sphere $S^3$ of $\mathbb{H} \cong \mathbb{R}^4$, a compact three-dimensional manifold, and it is a group under multiplication: if $N(u) = N(v) = 1$ then $N(uv) = N(u)N(v) = 1$ by multiplicativity, and $u^{-1} = u^{\natural}$ has the same norm. The unit factor is a group element, which is what makes it a rotor in the sense of the companion articles: it acts on the vector part of the algebra by conjugation and preserves the quaternion norm there.
 
 ### Existence and Uniqueness
 
@@ -140,11 +140,11 @@ The consequence for $\mathbb{H}$ is that only the trigonometric row is occupied 
 
 One real-quaternion fact is used by the biquaternion constructions of the series without being stated here, and it belongs next to the axis.
 
-**Lemma.** Let $p, \tilde q \in \mathbb{H}$ be orthogonal as vectors of $\mathbb{R}^4$, that is $\sum_\mu p_\mu q_\mu = 0$. Then $p\bar{\tilde q}$ is pure, so the quotient $p/\tilde q$ is pure. If in addition $N(p) = N(\tilde q) = 1$ then $p/\tilde q$ is a unit pure quaternion, hence a root of $-e_0$.
+**Lemma.** Let $p, \tilde q \in \mathbb{H}$ be orthogonal as vectors of $\mathbb{R}^4$, that is $\sum_\mu p_\mu q_\mu = 0$. Then $p\tilde{q}^{\natural}$ is pure, so the quotient $p/\tilde q$ is pure. If in addition $N(p) = N(\tilde q) = 1$ then $p/\tilde q$ is a unit pure quaternion, hence a root of $-e_0$.
 
-*Proof.* The scalar part of $p\bar{\tilde q}$ is $\sum_\mu p_\mu q_\mu$, which is the Euclidean inner product, so it vanishes exactly when $p$ and $\tilde q$ are orthogonal; the quotient is $p/\tilde q = p\bar{\tilde q}/N(\tilde q)$, a real multiple of $p\bar{\tilde q}$ when $\tilde q$ is a unit, and a real multiple of a pure quaternion is pure. Finally $N(p/\tilde q) = N(p)/N(\tilde q) = 1$, and a unit pure quaternion satisfies $\mu^2 = -e_0$ by the first proposition of this section.
+*Proof.* The scalar part of $p\tilde{q}^{\natural}$ is $\sum_\mu p_\mu q_\mu$, which is the Euclidean inner product, so it vanishes exactly when $p$ and $\tilde q$ are orthogonal; the quotient is $p/\tilde q = p\tilde{q}^{\natural}/N(\tilde q)$, a real multiple of $p\tilde{q}^{\natural}$ when $\tilde q$ is a unit, and a real multiple of a pure quaternion is pure. Finally $N(p/\tilde q) = N(p)/N(\tilde q) = 1$, and a unit pure quaternion satisfies $\mu^2 = -e_0$ by the first proposition of this section.
 
-For example $p = e_1$ and $\tilde q = e_2$ are orthogonal and of norm one, and $p/\tilde q = e_1\bar{e}_2 = -e_3$, a unit pure quaternion. The lemma is the step that produces the root $\nu$ of the hyperbolic exponent in the two-exponential polar forms of the biquaternion literature, and it is quoted there as Sangwine & Hitzer's Lemma 2; with it, the construction of the biquaternion hyperbolic factor is a statement about the quaternion algebra alone, which is where it is proved.
+For example $p = e_1$ and $\tilde q = e_2$ are orthogonal and of norm one, and $p/\tilde q = e_1e_2^{\natural} = -e_3$, a unit pure quaternion. The lemma is the step that produces the root $\nu$ of the hyperbolic exponent in the two-exponential polar forms of the biquaternion literature, and it is quoted there as Sangwine & Hitzer's Lemma 2; with it, the construction of the biquaternion hyperbolic factor is a statement about the quaternion algebra alone, which is where it is proved.
 
 ### The Axis and the Angle of the Unit Factor
 
@@ -328,8 +328,8 @@ Every nonzero quaternion $\tilde q$ has exactly one polar representation $\tilde
 |---|---|
 | $\mathbb{H}$ | the quaternion algebra, basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$ |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | a quaternion, $q_0$ its scalar part, $\mathbf{q}$ its vector part |
-| $\bar{\tilde q}$ | the quaternion conjugate, $q_0 - \mathbf{q}$ |
-| $N(\tilde q) = \tilde q\bar{\tilde q} = \sum_\mu q_\mu^2$ | the quaternion norm, strictly positive on nonzero elements |
+| $\tilde{q}^{\natural}$ | the quaternion conjugate, $q_0 - \mathbf{q}$ |
+| $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \sum_\mu q_\mu^2$ | the quaternion norm, strictly positive on nonzero elements |
 | $r = \sqrt{N(\tilde q)}$ | the modulus, a positive real |
 | $u = \tilde q/r$ | the unit factor, of norm one |
 | $\mathrm{Sp}(1) = S^3$ | the group of unit quaternions |

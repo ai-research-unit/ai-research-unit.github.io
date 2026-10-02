@@ -9,7 +9,7 @@ The article depends on *Quaternion Algebra* for the basis and relations, on *Qua
 
 The corpus's default base is a commutative ring with identity. The representation by complex matrices is stated over $\mathbb{R}$ and then over $\mathbb{C}$ after scalar extension; the quaternion norm is positive definite over $\mathbb{R}$, and the determinant statements are the algebraic identities that remain valid after extending the coefficient field.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with real $q_\mu$ in the definite statements; the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and the quaternion norm is $N(\tilde q) = \tilde q\bar{\tilde q}$. The Pauli matrices are
+Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with real $q_\mu$ in the definite statements; the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and the quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural}$. The Pauli matrices are
 
 $$
 \sigma_1 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \qquad
@@ -99,7 +99,7 @@ where $SU(2)$ is the group of $2\times2$ complex unitary matrices of determinant
 
 ## The Inner Product and the Euclidean Norm
 
-**Definition.** The **inner product** of two quaternions is $\langle p,\tilde q\rangle = \mathrm{Sc}(p\bar{\tilde q})$; the **Euclidean norm** is $|\tilde q| = \sqrt{N(\tilde q)}$. The one-variable expression $\tilde q\bar{\tilde q}$ is the **Hermitian form**, which here coincides with the quaternion norm.
+**Definition.** The **inner product** of two quaternions is $\langle p,\tilde q\rangle = \mathrm{Sc}(p\tilde{q}^{\natural})$; the **Euclidean norm** is $|\tilde q| = \sqrt{N(\tilde q)}$. The one-variable expression $\tilde q\tilde{q}^{\natural}$ is the **Hermitian form**, which here coincides with the quaternion norm.
 
 **Theorem.** The matrix image intertwines the quaternion norm and the determinant and the inner product and the Frobenius form:
 
@@ -107,29 +107,29 @@ $$
 N(\tilde q) = \det\iota(\tilde q), \qquad \operatorname{tr}\bigl(\iota(p)\iota(\tilde q)^{\dagger}\bigr) = 2\,\langle p,\tilde q\rangle, \qquad \operatorname{tr}\bigl(\iota(\tilde q)\iota(\tilde q)^{\dagger}\bigr) = 2\,|\tilde q|^2,
 $$
 
-where ${}^{\dagger}$ is the conjugate transpose.
+where ${}^{*}$ is the conjugate transpose.
 
 *Proof.* The determinant identity is the determinant theorem. For the trace identities, note that for a matrix with real quaternion coefficients, transposition combined with conjugation of the entries reverses the signs of the three vector coordinates, so
 
 $$
-\iota(\tilde q)^{\dagger} = \iota(\bar{\tilde q}).
+\iota(\tilde q)^{\dagger} = \iota(\tilde{q}^{\natural}).
 $$
 
-Hence $\iota(\tilde q)^{\dagger}\iota(\tilde q) = \iota(\bar{\tilde q} \tilde q) = \iota(N(\tilde q)) = N(\tilde q)I$, whose trace is $2N(\tilde q) = 2|\tilde q|^2$; and $\iota(p)\iota(\tilde q)^{\dagger} = \iota(p\bar{\tilde q})$, whose trace is $2\mathrm{Sc}(p\bar{\tilde q}) = 2\langle p,\tilde q\rangle$.
+Hence $\iota(\tilde q)^{\dagger}\iota(\tilde q) = \iota(\tilde{q}^{\natural} \tilde q) = \iota(N(\tilde q)) = N(\tilde q)I$, whose trace is $2N(\tilde q) = 2|\tilde q|^2$; and $\iota(p)\iota(\tilde q)^{\dagger} = \iota(p\tilde{q}^{\natural})$, whose trace is $2\mathrm{Sc}(p\tilde{q}^{\natural}) = 2\langle p,\tilde q\rangle$.
 
 **Corollary.** The image $\iota(\mathbb{H})$ consists of those matrices $\iota(\tilde q)$ for which $\iota(\tilde q)^\dagger\iota(\tilde q)$ is a scalar matrix, namely $|\tilde q|^2 I$; the map $\tilde q\mapsto |\tilde q|^{-1}\iota(\tilde q)$ for $\tilde q\neq0$ is an isometric embedding of the unit sphere $Sp(1)$ into the unitary group $U(2)$.
 
-*Proof.* $\iota(\tilde q)^\dagger\iota(\tilde q) = \iota(\bar{\tilde q})\iota(\tilde q) = \iota(\bar{\tilde q} \tilde q) = \iota(N(\tilde q)) = N(\tilde q)I$, so the columns of $\iota(\tilde q)$ are orthogonal and of equal length $|\tilde q|$; after normalising, $\iota(\tilde q)$ is unitary.
+*Proof.* $\iota(\tilde q)^\dagger\iota(\tilde q) = \iota(\tilde{q}^{\natural})\iota(\tilde q) = \iota(\tilde{q}^{\natural} \tilde q) = \iota(N(\tilde q)) = N(\tilde q)I$, so the columns of $\iota(\tilde q)$ are orthogonal and of equal length $|\tilde q|$; after normalising, $\iota(\tilde q)$ is unitary.
 
 ## The Conjugations in Matrix Form
 
 **Theorem.** Quaternion conjugation is the adjugate:
 
 $$
-\iota(\bar{\tilde q}) = \operatorname{adj}\iota(\tilde q) = \begin{pmatrix} q_0+iq_3 & iq_1+q_2 \\ iq_1-q_2 & q_0-iq_3 \end{pmatrix}.
+\iota(\tilde{q}^{\natural}) = \operatorname{adj}\iota(\tilde q) = \begin{pmatrix} q_0+iq_3 & iq_1+q_2 \\ iq_1-q_2 & q_0-iq_3 \end{pmatrix}.
 $$
 
-*Proof.* For a $2\times2$ matrix $M = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ the adjugate is $\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$. Applying this to $\iota(\tilde q)$ gives the displayed matrix, which is $\iota(q_0-q_1e_1-q_2e_2-q_3e_3) = \iota(\bar{\tilde q})$.
+*Proof.* For a $2\times2$ matrix $M = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ the adjugate is $\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$. Applying this to $\iota(\tilde q)$ gives the displayed matrix, which is $\iota(q_0-q_1e_1-q_2e_2-q_3e_3) = \iota(\tilde{q}^{\natural})$.
 
 **Definition.** The **antisymmetric form** is
 
@@ -140,10 +140,10 @@ $$
 **Theorem.** Quaternion conjugation is transposition dressed with the antisymmetric form:
 
 $$
-\iota(\bar{\tilde q}) = \epsilon\,\iota(\tilde q)^{T}\,\epsilon^{-1}.
+\iota(\tilde{q}^{\natural}) = \epsilon\,\iota(\tilde q)^{T}\,\epsilon^{-1}.
 $$
 
-*Proof.* Compute $\epsilon M^{T}\epsilon^{-1}$ for $M = \iota(\tilde q)$ with $M = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$. Since $\epsilon^{-1} = -\epsilon$, one has $\epsilon M^{T}\epsilon^{-1} = -\epsilon M^{T}\epsilon$, and a direct multiplication gives $\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$, which is the adjugate of $M$ and equals $\iota(\bar{\tilde q})$ by the preceding theorem.
+*Proof.* Compute $\epsilon M^{T}\epsilon^{-1}$ for $M = \iota(\tilde q)$ with $M = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$. Since $\epsilon^{-1} = -\epsilon$, one has $\epsilon M^{T}\epsilon^{-1} = -\epsilon M^{T}\epsilon$, and a direct multiplication gives $\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$, which is the adjugate of $M$ and equals $\iota(\tilde{q}^{\natural})$ by the preceding theorem.
 
 **Remark.** Unlike the biquaternion case there is only one conjugation of the algebra to realise, namely quaternion conjugation, and it is the adjugate; the antisymmetric form is needed to write it as a dressed transposition because the matrix realisation uses the same $i$ that conjugates coefficients. Here the coefficients are real, so no complex conjugation of entries enters, and the single relation above is the whole correspondence.
 
@@ -223,7 +223,7 @@ The pattern is that a $2\times2$ matrix realisation over a commutative ring exis
 
 The complexification $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$ is a four-dimensional complex algebra isomorphic to $M_2(\mathbb{C})$, through the map sending $e_0\mapsto I$ and $e_k\mapsto-i\sigma_k$, with $\Phi(\tilde Q) = Q_0I-i\sum_k Q_k\sigma_k$; the choice is fixed once and is not canonical. The trace of an image is twice the scalar coordinate and the determinant is the quaternion norm, $N(\tilde Q) = \sum_\mu Q_\mu^2$, so invertibility over $\mathbb{R}$ is non-vanishing determinant, and the determinant is a perfect square no longer: over $\mathbb{C}$ it is an arbitrary complex number.
 
-The image of the real quaternion algebra is the four-dimensional real space of matrices $\begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$, on which the quaternion norm is the determinant and the inner product matches half the Frobenius form, $\operatorname{tr}(\iota(\tilde q)\iota(\tilde q)^\dagger) = 2|\tilde q|^2$. Quaternion conjugation is the adjugate, equivalently the antisymmetric-form-dressed transpose $\iota(\bar{\tilde q}) = \epsilon\iota(\tilde q)^{T}\epsilon^{-1}$ with $\epsilon = i\sigma_2$; the scalar subspace maps to the real scalar matrices and the vector subspace to the traceless matrices, giving $M_2(\mathbb{C}) = \mathbb{C}I\oplus\mathrm{SL}_2(\mathbb{C})$ after complexification.
+The image of the real quaternion algebra is the four-dimensional real space of matrices $\begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$, on which the quaternion norm is the determinant and the inner product matches half the Frobenius form, $\operatorname{tr}(\iota(\tilde q)\iota(\tilde q)^\dagger) = 2|\tilde q|^2$. Quaternion conjugation is the adjugate, equivalently the antisymmetric-form-dressed transpose $\iota(\tilde{q}^{\natural}) = \epsilon\iota(\tilde q)^{T}\epsilon^{-1}$ with $\epsilon = i\sigma_2$; the scalar subspace maps to the real scalar matrices and the vector subspace to the traceless matrices, giving $M_2(\mathbb{C}) = \mathbb{C}I\oplus\mathrm{SL}_2(\mathbb{C})$ after complexification.
 
 There is no injective homomorphism $\mathbb{H}\to M_2(\mathbb{R})$, because its image would be all of $M_2(\mathbb{R})$, which has zero divisors while $\mathbb{H}$ has none; the smallest real representation is the $4\times4$ regular one. The biquaternion algebra is $M_2(\mathbb{C})$ without extension of coefficients, and the split biquaternion algebra is $\mathbb{H}\oplus\mathbb{H}$, whose central idempotents rule out a $2\times2$ matrix realisation over any commutative ring.
 
@@ -233,15 +233,15 @@ There is no injective homomorphism $\mathbb{H}\to M_2(\mathbb{R})$, because its 
 |---|---|
 | $\mathbb{H}$ | The quaternion algebra |
 | $e_0 = 1, e_1, e_2, e_3$ | Basis, $e_k^2 = -e_0$ |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion, conjugate $\bar{\tilde q}$, norm $N(\tilde q)$ |
+| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion, conjugate $\tilde{q}^{\natural}$, norm $N(\tilde q)$ |
 | $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$ | Complexification, $\cong M_2(\mathbb{C})$ |
 | $\iota : \mathbb{H}\to M_2(\mathbb{C})$ | Matrix representation of the real algebra |
 | $\Phi : \mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\to M_2(\mathbb{C})$ | The $\mathbb{C}$-algebra isomorphism |
 | $\sigma_1,\sigma_2,\sigma_3$ | Pauli matrices; $\Phi(e_k) = -i\sigma_k$ |
 | $\operatorname{tr}\Phi(\tilde Q) = 2Q_0$ | Trace image of the scalar coordinate |
 | $\det\Phi(\tilde Q) = N(\tilde Q)$ | Determinant image of the quaternion norm |
-| $\dagger$ | Conjugate transpose; $\operatorname{tr}(\iota(\tilde q)\iota(\tilde q)^\dagger) = 2\lvert \tilde q\rvert^2$ |
-| $\epsilon = i\sigma_2 = -\Phi(e_2)$ | Antisymmetric form; $\iota(\bar{\tilde q}) = \epsilon\iota(\tilde q)^{T}\epsilon^{-1}$ |
+| ${}^{*}$ | Conjugate transpose; $\operatorname{tr}(\iota(\tilde q)\iota(\tilde q)^\dagger) = 2\lvert \tilde q\rvert^2$ |
+| $\epsilon = i\sigma_2 = -\Phi(e_2)$ | Antisymmetric form; $\iota(\tilde{q}^{\natural}) = \epsilon\iota(\tilde q)^{T}\epsilon^{-1}$ |
 | $\mathbb{R}_{\mathbb{H}}, \operatorname{Im}\mathbb{H}$ | Scalar matrices and traceless matrices |
 | $\mathrm{SL}_2(\mathbb{C})$ | Traceless matrices, the vector image in the complexification |
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |

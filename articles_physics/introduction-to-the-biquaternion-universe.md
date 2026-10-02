@@ -26,7 +26,7 @@ $$
 \mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+.
 $$
 
-The subspace $\mathbb{M}_-$ is the **anti-Hermitian subspace**, the fixed-point set of the anti-Hermitian conjugation $\flat$ (equivalently, the eigenspace of the Hermitian conjugation $\dagger$ with eigenvalue $-1$). The subspace $\mathbb{M}_+$ is the **Hermitian subspace**, the fixed-point set of the Hermitian conjugation $\dagger$ (equivalently, its eigenspace with eigenvalue $+1$). The two are complementary: together they span $\mathbb{B}$, and their intersection is trivial.
+The subspace $\mathbb{M}_-$ is the **anti-Hermitian subspace**, the fixed-point set of the anti-Hermitian conjugation $\flat$ (equivalently, the eigenspace of the Hermitian conjugation ${}^{*}$ with eigenvalue $-1$). The subspace $\mathbb{M}_+$ is the **Hermitian subspace**, the fixed-point set of the Hermitian conjugation ${}^{*}$ (equivalently, its eigenspace with eigenvalue $+1$). The two are complementary: together they span $\mathbb{B}$, and their intersection is trivial.
 
 The two subspaces have distinct physical roles:
 
@@ -128,7 +128,7 @@ The same biquaternion norm is read two ways, and keeping them apart prevents a r
 **The algebra's own form.** The biquaternion universe is a $\mathbb{C}$-universe over the quaternions, and its coefficients $Q_\mu$ are complex. Read as a metric on $\mathbb{C}$, the biquaternion norm is the identity,
 
 $$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2, \qquad \mathrm{diag}(+1,+1,+1,+1),
+N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2, \qquad \mathrm{diag}(+1,+1,+1,+1),
 $$
 
 with every entry positive and the four directions of $\mathbb{B}$ on an equal footing. There is no minus sign in the form itself, and none is needed. It is a *complex* bilinear form, and that is exactly what makes this possible: a complex coefficient can carry the sign, so no direction has to be singled out by the metric in advance.
@@ -151,13 +151,13 @@ The main result of the framework so far is that the biquaternion algebra **conta
 The material sector $\mathbb{M}_-$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The **proper orthochronous Lorentz group** $SO^+(1,3)$ is realized through its double cover $SL(2,\mathbb{C})$, which is the **group of biquaternions of unit norm** in $\mathbb{B}$:
 
 $$
-SL(2,\mathbb{C}) \;\cong\; \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\}.
+SL(2,\mathbb{C}) \;\cong\; \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0\}.
 $$
 
 This group **acts** on the material sector by the **rotor conjugation**
 
 $$
-\tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger.
+\tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*}.
 $$
 
 The group itself lives in the full algebra $\mathbb{B}$ (since $\mathbb{M}_-$ is not closed under multiplication and cannot carry a group structure). The four-vectors it acts on live in $\mathbb{M}_-$. The different types of Lorentz transformation have rotors in different subspaces: pure boosts have rotors in $\mathbb{M}_+$ (they are Hermitian), pure spatial rotations have rotors in $\mathbb{H}_{\mathbb{B}}$ (they are real quaternions), and general Lorentz transformations have rotors in the full algebra.
@@ -173,7 +173,7 @@ The informational sector $\mathbb{M}_+$ is, exactly, the operator algebra of a t
 - The **elements** of $\mathbb{M}_+$, of the form $\tilde{H} = h_0 e_0 + i\mathbf{h}$, are the observables (they are automatically Hermitian by definition of $\mathbb{M}_+$), with spectral decomposition in terms of idempotents.
 - The **trace pairing** $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \mathbf{r}\cdot\mathbf{h}$ gives the Born rule, as a consequence of the algebra rather than an independent postulate.
 - The **sandwich operation** $\tilde{\rho} \mapsto \tilde{P}\tilde{\rho}\tilde{P}/\mathrm{Tr}(\tilde{P}\tilde{\rho}\tilde{P})$ gives the projective measurement and state update (the trace in the denominator normalizes the post-measurement state).
-- The **unitary elements** of $\mathbb{B}$, and their conjugation action $\tilde{\rho} \mapsto \tilde{U}\tilde{\rho}\tilde{U}^\dagger$, give the reversible evolution.
+- The **unitary elements** of $\mathbb{B}$, and their conjugation action $\tilde{\rho} \mapsto \tilde{U}\tilde{\rho}\tilde{U}^{*}$, give the reversible evolution.
 - The distinction between **reversible evolution** and **irreversible measurement** is a property of the acting element (unitary vs. idempotent), not an additional postulate.
 
 The operator algebra of quantum mechanics, its state space, its Born rule, and its measurement rule are all **structural consequences** of the algebra of $\mathbb{M}_+$. They are not imposed from outside.
@@ -208,7 +208,7 @@ The framework is offered as a structural intuition: that the two natural subspac
 
 The framework is stated in one sentence: the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the common algebraic ground of relativity and quantum mechanics, and its two natural real subspaces carry the two theories. The **anti-Hermitian subspace** $\mathbb{M}_-$ carries the four-vectors of relativity, the material sector, in the coordinates $(ict,x,y,z)$; the **Hermitian subspace** $\mathbb{M}_+$ carries the operator algebra of quantum mechanics, the informational sector, in the coordinates $(ct',ix',iy',iz')$. Multiplication by $i$ exchanges the two.
 
-Both sectors are written in the one algebra. A material element is $\tilde{Q}=ict\,e_0+\mathbf{x}$ and an informational element is $\tilde{Q}=ct'\,e_0+i\mathbf{x}'$; the norm $N(\tilde{Q})=\sum_\mu Q_\mu^2$ is the interval on $\mathbb{M}_-$, of signature $(-,+,+,+)$ there, and the Hermitian form on $\mathbb{M}_+$. The Lorentz rotors are the unit-norm elements $\tilde{\Lambda}$ with $\tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0$, acting by conjugation; the idempotents $\tilde\Pi_\pm(\hat{\mu})=\tfrac12(e_0\pm i\hat{\mu})$ are the pure states of the informational sector; and the observables are the Hermitian elements $\tilde{H}=h_0e_0+i\mathbf{h}$ with $h_0$ real.
+Both sectors are written in the one algebra. A material element is $\tilde{Q}=ict\,e_0+\mathbf{x}$ and an informational element is $\tilde{Q}=ct'\,e_0+i\mathbf{x}'$; the norm $N(\tilde{Q})=\sum_\mu Q_\mu^2$ is the interval on $\mathbb{M}_-$, of signature $(-,+,+,+)$ there, and the Hermitian form on $\mathbb{M}_+$. The Lorentz rotors are the unit-norm elements $\tilde{\Lambda}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$, acting by conjugation; the idempotents $\tilde\Pi_\pm(\hat{\mu})=\tfrac12(e_0\pm i\hat{\mu})$ are the pure states of the informational sector; and the observables are the Hermitian elements $\tilde{H}=h_0e_0+i\mathbf{h}$ with $h_0$ real.
 
 The framework is a research program, not a finished theory. The algebraic identifications above are established mathematics; what is open is whether the framework has consequences beyond a reformulation of known physics. Six questions are recorded: the physical reality of the biquaternionic structure; a coupling between the sectors beyond the Lorentz conjugation; the extension to many qubits and to quantum field theory; a fully relativistic quantum theory; curved spacetime; and empirical contact. The local speed of light $c=1/\sqrt{\epsilon\mu}$ plays the role of the local scale factor of the complex structure, making the $ict$ convention the vacuum approximation of a more general local structure.
 
@@ -223,7 +223,7 @@ The framework is a research program, not a finished theory. The algebraic identi
 | $Q_\mu = q_\mu + iq'_\mu$ | Complex coefficient: $q_\mu$ its real part (the coefficient of $e_\mu$), $q'_\mu$ its imaginary part (the coefficient of $ie_\mu$) |
 | $\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 = ict\,e_0 + \mathbf{x}$ | Material element, both writings; $q'_0 = ct$, $q_k = x_k$ |
 | $\tilde{Q} = q_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 = (ct')\,e_0 + i\mathbf{x}'$ | Informational element, both writings; $q_0 = ct'$, $q'_k = x'_k$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm; the identity matrix $\mathrm{diag}(+1,+1,+1,+1)$ as a metric on $\mathbb{C}$, signature $(-,+,+,+)$ on the real material sector |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm; the identity matrix $\mathrm{diag}(+1,+1,+1,+1)$ as a metric on $\mathbb{C}$, signature $(-,+,+,+)$ on the real material sector |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): coordinates $(ict, x, y, z)$, parameters $q'_0, q_1, q_2, q_3$ |
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector): coordinates $(ct', ix', iy', iz')$, parameters $q_0, q'_1, q'_2, q'_3$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace (home of the rotation rotors): the real half, all four coefficients real, fixed points of complex conjugation; a subalgebra |
@@ -232,7 +232,7 @@ The framework is a research program, not a finished theory. The algebraic identi
 | $\tilde{H} = h_0 e_0 + i\mathbf{h}$ | Hermitian element (observable of the informational sector); $h_0 \in \mathbb{R}$ is the scalar component and $\mathbf{h} = (h_1,h_2,h_3)$ the vector components. These are the generic names used for these components throughout the series; written as a coordinate-carrying element, the same object is $q_0e_0 + iq'_ke_k$ |
 | $(t, x, y, z)$ | Real coordinates of the material sector ($c$ is a scale factor, not a coordinate) |
 | $(t', x', y', z')$ | Real coordinates of the informational sector |
-| $\tilde{\Lambda} \in \mathbb{B}$ with $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ | Lorentz rotor (unit-norm biquaternion) |
+| $\tilde{\Lambda} \in \mathbb{B}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ | Lorentz rotor (unit-norm biquaternion) |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium (local) |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum (global constant) |
 | $v$ | Particle or frame velocity |

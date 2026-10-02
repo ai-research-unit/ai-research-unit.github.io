@@ -26,7 +26,7 @@ $$
 \|\tilde{Q}\|_E = \sqrt{q_0^2 + (q'_0)^2 + q_1^2 + (q'_1)^2 + q_2^2 + (q'_2)^2 + q_3^2 + (q'_3)^2} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2}.
 $$
 
-Equivalently, this is the square root of the scalar part of the Hermitian form, $\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q}\tilde{Q}^\dagger)}$, as defined in the article on biquaternion norm and invertibility.
+Equivalently, this is the square root of the scalar part of the Hermitian form, $\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})}$, as defined in the article on biquaternion norm and invertibility.
 
 The Euclidean norm is a genuine norm on the real vector space $\mathbb{B} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one. It satisfies
 
@@ -34,7 +34,7 @@ $$
 \|\tilde{Q} + \tilde{R}\|_E \leq \|\tilde{Q}\|_E + \|\tilde{R}\|_E, \qquad \|\lambda \tilde{Q}\|_E = |\lambda| \|\tilde{Q}\|_E, \qquad \lambda \in \mathbb{R}.
 $$
 
-The biquaternion norm is **not** multiplicative with respect to the biquaternion product. The reason is structural: the product $\tilde{Q}\tilde{R}$ is not obtained by multiplying the moduli $\|\tilde{Q}\|_E$ and $\|\tilde{R}\|_E$, and the equality $\|\tilde{Q}\tilde{R}\|_E = \|\tilde{Q}\|_E\|\tilde{R}\|_E$ fails in general. (This is in contrast to the multiplicative but complex-valued norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, which satisfies $N(\tilde{Q}\tilde{R}) = N(\tilde{Q})N(\tilde{R})$ but vanishes on the zero divisors, so it cannot serve as a norm.)
+The biquaternion norm is **not** multiplicative with respect to the biquaternion product. The reason is structural: the product $\tilde{Q}\tilde{R}$ is not obtained by multiplying the moduli $\|\tilde{Q}\|_E$ and $\|\tilde{R}\|_E$, and the equality $\|\tilde{Q}\tilde{R}\|_E = \|\tilde{Q}\|_E\|\tilde{R}\|_E$ fails in general. (This is in contrast to the multiplicative but complex-valued norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, which satisfies $N(\tilde{Q}\tilde{R}) = N(\tilde{Q})N(\tilde{R})$ but vanishes on the zero divisors, so it cannot serve as a norm.)
 
 As a concrete example, take $\tilde{Q} = \tilde{R} = e_1 + ie_2$. Then $\|\tilde{Q}\|_E = \|\tilde{R}\|_E = \sqrt{2}$, but
 
@@ -167,7 +167,7 @@ These two conventions give different results in general. So the derivative would
 
 ### The Second Obstruction: Zero Divisors
 
-The quotient $\tilde{A} / \tilde{H}$ requires $\tilde{H}^{-1}$ to exist. In a division algebra, every nonzero element has an inverse, so this is automatic. In $\mathbb{B}$, however, there are nonzero elements $\tilde{H}$ with vanishing norm, $\tilde{H} \bar{\tilde{H}} = 0$, for which no inverse exists. These are the **zero divisors** of the algebra, discussed in detail in the article on biquaternion zero divisors. For such $\tilde{H}$, the quotient $\tilde{A} / \tilde{H}$ is undefined, and the limit defining the derivative cannot be evaluated along directions in which $\tilde{H}$ is a zero divisor.
+The quotient $\tilde{A} / \tilde{H}$ requires $\tilde{H}^{-1}$ to exist. In a division algebra, every nonzero element has an inverse, so this is automatic. In $\mathbb{B}$, however, there are nonzero elements $\tilde{H}$ with vanishing norm, $\tilde{H} \tilde{H}^{\natural} = 0$, for which no inverse exists. These are the **zero divisors** of the algebra, discussed in detail in the article on biquaternion zero divisors. For such $\tilde{H}$, the quotient $\tilde{A} / \tilde{H}$ is undefined, and the limit defining the derivative cannot be evaluated along directions in which $\tilde{H}$ is a zero divisor.
 
 ### The Standard Approach
 
@@ -291,13 +291,13 @@ $$
 The **quaternion conjugate** of $\tilde{\nabla}$ is obtained by negating the vector part:
 
 $$
-\bar{\tilde{\nabla}} = e_0 \frac{\partial}{\partial Q_0} - e_1 \frac{\partial}{\partial Q_1} - e_2 \frac{\partial}{\partial Q_2} - e_3 \frac{\partial}{\partial Q_3}.
+\tilde{\nabla}^{\natural} = e_0 \frac{\partial}{\partial Q_0} - e_1 \frac{\partial}{\partial Q_1} - e_2 \frac{\partial}{\partial Q_2} - e_3 \frac{\partial}{\partial Q_3}.
 $$
 
-The product $\bar{\tilde{\nabla}}\tilde{F}$ is computed in the same way:
+The product $\tilde{\nabla}^{\natural}\tilde{F}$ is computed in the same way:
 
 $$
-\bar{\tilde{\nabla}}\tilde{F} = \left(\frac{\partial F_0}{\partial Q_0} + \mathrm{div}\,\mathbf{F}\right) + \left(\frac{\partial \mathbf{F}}{\partial Q_0} - \mathrm{grad}\,F_0 - \mathrm{rot}\,\mathbf{F}\right).
+\tilde{\nabla}^{\natural}\tilde{F} = \left(\frac{\partial F_0}{\partial Q_0} + \mathrm{div}\,\mathbf{F}\right) + \left(\frac{\partial \mathbf{F}}{\partial Q_0} - \mathrm{grad}\,F_0 - \mathrm{rot}\,\mathbf{F}\right).
 $$
 
 ### The d'Alembertian
@@ -305,35 +305,35 @@ $$
 The **d'Alembertian** is the second-order operator obtained by composing the gradient with its quaternion conjugate:
 
 $$
-\Box = \tilde{\nabla} \bar{\tilde{\nabla}} = \bar{\tilde{\nabla}} \tilde{\nabla}.
+\Box = \tilde{\nabla} \tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural} \tilde{\nabla}.
 $$
 
 We compute both products and show that they are equal.
 
-**Computation of $\tilde{\nabla}\bar{\tilde{\nabla}}$.** We compute $\tilde{\nabla}\bar{\tilde{\nabla}}$ as a product of operators, using the fact that the $e_\mu$ are constants:
+**Computation of $\tilde{\nabla}\tilde{\nabla}^{\natural}$.** We compute $\tilde{\nabla}\tilde{\nabla}^{\natural}$ as a product of operators, using the fact that the $e_\mu$ are constants:
 
 $$
-\tilde{\nabla}\bar{\tilde{\nabla}} = \left(\sum_{\mu=0}^{3} e_\mu \frac{\partial}{\partial Q_\mu}\right)\left(\sum_{\nu=0}^{3} \bar{e}_\nu \frac{\partial}{\partial Q_\nu}\right),
+\tilde{\nabla}\tilde{\nabla}^{\natural} = \left(\sum_{\mu=0}^{3} e_\mu \frac{\partial}{\partial Q_\mu}\right)\left(\sum_{\nu=0}^{3} e_\nu^{\natural} \frac{\partial}{\partial Q_\nu}\right),
 $$
 
-where $\bar{e}_0 = e_0$ and $\bar{e}_k = -e_k$ for $k = 1, 2, 3$. Expanding and separating the cases, the cross terms cancel, and we obtain
+where $e_0^{\natural} = e_0$ and $e_k^{\natural} = -e_k$ for $k = 1, 2, 3$. Expanding and separating the cases, the cross terms cancel, and we obtain
 
 $$
-\tilde{\nabla}\bar{\tilde{\nabla}} = e_0 \left(\frac{\partial^2}{\partial Q_0^2} + \Delta_Q\right),
+\tilde{\nabla}\tilde{\nabla}^{\natural} = e_0 \left(\frac{\partial^2}{\partial Q_0^2} + \Delta_Q\right),
 $$
 
 where $\Delta_Q = \partial^2/\partial Q_1^2 + \partial^2/\partial Q_2^2 + \partial^2/\partial Q_3^2$ is the three-dimensional Laplacian in the remaining coordinates.
 
-**Computation of $\bar{\tilde{\nabla}}\tilde{\nabla}$.** By the same computation,
+**Computation of $\tilde{\nabla}^{\natural}\tilde{\nabla}$.** By the same computation,
 
 $$
-\bar{\tilde{\nabla}}\tilde{\nabla} = e_0 \left(\frac{\partial^2}{\partial Q_0^2} + \Delta_Q\right).
+\tilde{\nabla}^{\natural}\tilde{\nabla} = e_0 \left(\frac{\partial^2}{\partial Q_0^2} + \Delta_Q\right).
 $$
 
 **Equality.** We have shown
 
 $$
-\tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \left(\frac{\partial^2}{\partial Q_0^2} + \Delta_Q\right) e_0.
+\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \left(\frac{\partial^2}{\partial Q_0^2} + \Delta_Q\right) e_0.
 $$
 
 The operator $\partial^2/\partial Q_0^2 + \Delta_Q$ is the **four-dimensional Laplacian in the formal coordinates** $Q_0, Q_1, Q_2, Q_3$, and we write
@@ -358,7 +358,7 @@ $$
 
 which is also Lorentzian, with the opposite sign convention. On $\mathbb{H}_{\mathbb{B}}$, where all $Q_\mu$ are real, $\Box$ is the ordinary Euclidean four-dimensional Laplacian.
 
-The d'Alembertian is the **natural second-order operator** in the biquaternion framework: it is symmetric under the exchange of $\tilde{\nabla}$ and $\bar{\tilde{\nabla}}$, it is scalar-valued, and it is the operator that appears in the second-order equations, in the Cauchy integral formula, and in the factorization of the Cauchy–Riemann operator.
+The d'Alembertian is the **natural second-order operator** in the biquaternion framework: it is symmetric under the exchange of $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$, it is scalar-valued, and it is the operator that appears in the second-order equations, in the Cauchy integral formula, and in the factorization of the Cauchy–Riemann operator.
 
 ### The Square of the Gradient
 
@@ -385,13 +385,13 @@ $$
 The conjugate square satisfies the analogous identity
 
 $$
-\bar{\tilde{\nabla}}^2 = 2\,\frac{\partial}{\partial Q_0}\,\bar{\tilde{\nabla}} - \Box.
+(\tilde{\nabla}^{\natural})^2 = 2\,\frac{\partial}{\partial Q_0}\,\tilde{\nabla}^{\natural} - \Box.
 $$
 
 The two squares are related to each other and to $\Box$ by
 
 $$
-\tilde{\nabla}^2 + \bar{\tilde{\nabla}}^2 = 2\left(\frac{\partial^2}{\partial Q_0^2} - \Delta_Q\right) e_0, \qquad \tilde{\nabla}^2 - \bar{\tilde{\nabla}}^2 = 4\sum_{k=1}^{3} e_k \frac{\partial^2}{\partial Q_0 \partial Q_k}.
+\tilde{\nabla}^2 + (\tilde{\nabla}^{\natural})^2 = 2\left(\frac{\partial^2}{\partial Q_0^2} - \Delta_Q\right) e_0, \qquad \tilde{\nabla}^2 - (\tilde{\nabla}^{\natural})^2 = 4\sum_{k=1}^{3} e_k \frac{\partial^2}{\partial Q_0 \partial Q_k}.
 $$
 
 **Verification.** We compute directly:
@@ -423,10 +423,10 @@ $$
 be a biquaternion. The **biquaternionic convective derivative** is the operator
 
 $$
-\tilde{D} = \bar{\tilde{U}} \tilde{\nabla},
+\tilde{D} = \tilde{U}^{\natural} \tilde{\nabla},
 $$
 
-where $\bar{\tilde{U}} = u_0 e_0 - u_1 e_1 - u_2 e_2 - u_3 e_3$ is the quaternion conjugate.
+where $\tilde{U}^{\natural} = u_0 e_0 - u_1 e_1 - u_2 e_2 - u_3 e_3$ is the quaternion conjugate.
 
 We compute it explicitly:
 
@@ -471,7 +471,7 @@ This contains terms that couple the four components of $\tilde{U}$ to the partia
 The approach in this article is the quaternionic analysis of Fueter, generalized to the biquaternion algebra. The key features are:
 
 - The function is defined on a four-dimensional real subspace of $\mathbb{B}$, with four real parameters.
-- The differential operators are biquaternion-valued: the gradient $\tilde{\nabla}$ and its quaternion conjugate $\bar{\tilde{\nabla}}$.
+- The differential operators are biquaternion-valued: the gradient $\tilde{\nabla}$ and its quaternion conjugate $\tilde{\nabla}^{\natural}$.
 - The "regular" functions are those satisfying $\tilde{\nabla}\tilde{F} = 0$, the biquaternion analogue of the Cauchy–Riemann equations.
 
 This approach is closely related to **Clifford analysis**, which generalizes the theory to Clifford algebras over arbitrary base rings (including the real and complex numbers). The biquaternion algebra is isomorphic to the even subalgebra of the Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternion analysis developed here is the four-dimensional case of the general Clifford analysis.
@@ -504,7 +504,7 @@ A direct definition of differentiability with respect to the biquaternion variab
 
 The four subspaces used here are the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, with all complex coefficients real; the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, with all complex coefficients purely imaginary; the Hermitian subspace $\mathbb{M}_+$, with the first complex coefficient real and the three spatial complex coefficients purely imaginary; and the anti-Hermitian subspace $\mathbb{M}_-$, with the first complex coefficient purely imaginary and the three spatial complex coefficients real. In each case, the partial derivatives are taken with respect to the complex coefficients, with a factor of $-i$ when the coefficient is purely imaginary.
 
-The **biquaternionic gradient** $\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial Q_\mu$ is a biquaternion-valued first-order operator. Its quaternion conjugate $\bar{\tilde{\nabla}}$ is obtained by negating the vector part. The **d'Alembertian** $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \partial^2/\partial Q_0^2 + \Delta_Q$ is the **natural second-order operator**: it is scalar-valued, symmetric under conjugation, and it appears in the standard second-order equations. On the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ it is the ordinary four-dimensional Euclidean Laplacian; on the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ it is the negative of that Laplacian; and on the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ it takes a Lorentzian form in the underlying real coordinates. The **square of the gradient** $\tilde{\nabla}^2 = (\partial^2/\partial Q_0^2 - \Delta_Q) + 2\sum_k e_k \partial^2/(\partial Q_0 \partial Q_k)$ is a related second-order operator, expressed through the identity $\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$. The **convective derivative** $\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$ is a biquaternion-valued first-order operator whose scalar part is the four-dimensional convective derivative.
+The **biquaternionic gradient** $\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial Q_\mu$ is a biquaternion-valued first-order operator. Its quaternion conjugate $\tilde{\nabla}^{\natural}$ is obtained by negating the vector part. The **d'Alembertian** $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_0^2 + \Delta_Q$ is the **natural second-order operator**: it is scalar-valued, symmetric under conjugation, and it appears in the standard second-order equations. On the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ it is the ordinary four-dimensional Euclidean Laplacian; on the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ it is the negative of that Laplacian; and on the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ it takes a Lorentzian form in the underlying real coordinates. The **square of the gradient** $\tilde{\nabla}^2 = (\partial^2/\partial Q_0^2 - \Delta_Q) + 2\sum_k e_k \partial^2/(\partial Q_0 \partial Q_k)$ is a related second-order operator, expressed through the identity $\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$. The **convective derivative** $\tilde{D} = \tilde{U}^{\natural}\tilde{\nabla}$ is a biquaternion-valued first-order operator whose scalar part is the four-dimensional convective derivative.
 
 The approach is closely related to Fueter's quaternionic analysis and to Clifford analysis. The generalization to the biquaternion algebra includes the complex coefficients and the four conjugations, which enrich the structure.
 
@@ -523,10 +523,10 @@ The specialization to specific four-dimensional subspaces, including the quatern
 | $Q_\mu = q_\mu + i q'_\mu$ | Complex coefficient |
 | $\partial/\partial Q_\mu$ | Partial derivative with respect to $Q_\mu$ |
 | $\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial Q_\mu$ | Biquaternionic gradient |
-| $\bar{\tilde{\nabla}}$ | Quaternion conjugate of the gradient |
-| $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$ | d'Alembertian (natural second-order operator) |
+| $\tilde{\nabla}^{\natural}$ | Quaternion conjugate of the gradient |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian (natural second-order operator) |
 | $\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$ | Square of the gradient |
-| $\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$ | Convective derivative |
+| $\tilde{D} = \tilde{U}^{\natural}\tilde{\nabla}$ | Convective derivative |
 
 ## Further Reading
 

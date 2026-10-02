@@ -14,10 +14,10 @@ Both geometries are governed by the octonions: $G_2$ is the automorphism group o
 **Definition.** The **octonion algebra** $\mathbb{O}$ is the real vector space with basis $e_0 = 1, e_1, \ldots, e_7$, made into a non-associative algebra by the Cayley–Dickson doubling $\mathbb{O} = \mathbb{H}\oplus\mathbb{H}$ with multiplication
 
 $$
-(a,b)(c,d) = (ac - \bar db,\ da + b\bar c),
+(a,b)(c,d) = (ac - d^{\natural}b,\ da + b c^{\natural}),
 $$
 
-and equipped with the norm $N(x) = x\bar x = \bar x x \in \mathbb{R}$, which is positive definite and multiplicative: $N(xy) = N(x)N(y)$. Every nonzero octonion is invertible, with $x^{-1} = \bar x/N(x)$, and $\mathbb{O}$ is the last of the four normed division algebras; the automorphism group of $\mathbb{O}$ is the exceptional group $G_2$, a compact simple Lie group of dimension $14$.
+and equipped with the norm $N(x) = x x^{\natural} = x^{\natural} x \in \mathbb{R}$, which is positive definite and multiplicative: $N(xy) = N(x)N(y)$. Every nonzero octonion is invertible, with $x^{-1} = x^{\natural}/N(x)$, and $\mathbb{O}$ is the last of the four normed division algebras; the automorphism group of $\mathbb{O}$ is the exceptional group $G_2$, a compact simple Lie group of dimension $14$.
 
 **Remark.** The construction and the uniqueness of the octonions among normed division algebras are the Hurwitz theorem, and their proper development — the multiplication table, the non-associativity of the associator, the relation to the exceptional Jordan algebra — belongs, which lies's order than this article and is not available here, and to *Normed Division Algebras and the Hurwitz Theorem*, which belongs to Part I and is, where the Cayley–Dickson construction and the Hurwitz theorem are stated. What is used here is only the norm, the conjugation, the multiplication and the fact that the automorphism group is $G_2$.
 
@@ -181,7 +181,7 @@ The examples are the flat spaces with trivial holonomy, the seven-sphere with it
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{O}$ | Octonions; norm $N(x)=x\bar x$, conjugation $\bar x$; automorphism group $G_2$ |
+| $\mathbb{O}$ | Octonions; norm $N(x)=x x^{\natural}$, conjugation $x^{\natural}$; automorphism group $G_2$ |
 | $G_2$ | Exceptional compact simple Lie group, $\dim 14$, stabiliser of $\varphi_0$ in $GL(7,\mathbb{R})$ |
 | $\mathrm{Spin}(7)$ | $\dim 21$, stabiliser of $\Phi_0$ in $GL(8,\mathbb{R})$, double cover of $SO(7)$ |
 | $\varphi$, $\varphi_0$ | Associative (definite) $3$-form on a $7$-manifold and its flat model |

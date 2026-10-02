@@ -13,16 +13,16 @@ Nothing below is a physical statement. The elements are written $\tilde{Q}, \til
 **Definition.** The **centre subspace** is the fixed space of quaternion conjugation,
 
 $$
-\mathbb{C}_{\mathbb{B}} = \left\{ \tilde{Q} \in \mathbb{B} : \bar{\tilde{Q}} = \tilde{Q} \right\} ,
+\mathbb{C}_{\mathbb{B}} = \left\{ \tilde{Q} \in \mathbb{B} : \tilde{Q}^{\natural} = \tilde{Q} \right\} ,
 $$
 
-where quaternion conjugation is $\bar{\tilde{Q}} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3$.
+where quaternion conjugation is $\tilde{Q}^{\natural} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3$.
 
-Since $\bar{\cdot}$ is an involution, it has eigenvalues $\pm 1$ and $\mathbb{B}$ is the direct sum of its fixed space and its anti-fixed space; the anti-fixed space is the vector subspace $\mathrm{Vect}(\mathbb{B})$, treated in the companion article.
+Since ${}^{\natural}$ is an involution, it has eigenvalues $\pm 1$ and $\mathbb{B}$ is the direct sum of its fixed space and its anti-fixed space; the anti-fixed space is the vector subspace $\mathrm{Vect}(\mathbb{B})$, treated in the companion article.
 
 ### The Condition in Coordinates
 
-Writing $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ and comparing the two sides of $\bar{\tilde{Q}} = \tilde{Q}$ coefficient by coefficient:
+Writing $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ and comparing the two sides of $\tilde{Q}^{\natural} = \tilde{Q}$ coefficient by coefficient:
 
 - the coefficient of $e_0$ gives $Q_0 = Q_0$, which is no condition;
 - the coefficient of $e_k$ gives $-Q_k = Q_k$, that is $Q_k = 0$, for each $k = 1, 2, 3$.
@@ -57,7 +57,7 @@ $$
 \mathbb{C}_{\mathbb{B}} = \left\{ \tilde{Q} \in \mathbb{B} : \tilde{Q}\tilde{R} = \tilde{R}\tilde{Q} \ \text{for every} \ \tilde{R} \in \mathbb{B} \right\} .
 $$
 
-**Proof.** An element commutes with every other element if and only if it commutes with the basis elements $e_1, e_2, e_3$, and $Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ commutes with all three precisely when $Q_1 = Q_2 = Q_3 = 0$; the central elements are then the $\mathbb{C}$-multiples of $e_0$, which is the fixed space of $\bar{\cdot}$ computed above.
+**Proof.** An element commutes with every other element if and only if it commutes with the basis elements $e_1, e_2, e_3$, and $Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ commutes with all three precisely when $Q_1 = Q_2 = Q_3 = 0$; the central elements are then the $\mathbb{C}$-multiples of $e_0$, which is the fixed space of ${}^{\natural}$ computed above.
 
 The two names of the subspace are therefore the same object described in two ways: it is the fixed space of one involution, and it is the centre of the algebra. Its elements are the **central elements**, and in the corpus's notation a central element is written $z e_0$ with $z \in \mathbb{C}$, or $\rho e_0$ when a modulus is in play.
 
@@ -92,10 +92,10 @@ for $k = 1, 2, 3$. The table is the statement that $\mathbb{C}_{\mathbb{B}}$ mul
 **Proposition.** On the centre subspace the biquaternion norm is the square of the coefficient,
 
 $$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = Q_0^2 , \qquad \tilde{Q} = Q_0 e_0 .
+N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = Q_0^2 , \qquad \tilde{Q} = Q_0 e_0 .
 $$
 
-**Proof.** $\bar{\tilde{Q}} = \tilde{Q}$ on the subspace, so $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \tilde{Q}^2 = Q_0^2 e_0$, read as the scalar $Q_0^2$.
+**Proof.** $\tilde{Q}^{\natural} = \tilde{Q}$ on the subspace, so $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \tilde{Q}^2 = Q_0^2 e_0$, read as the scalar $Q_0^2$.
 
 Two features are worth isolating, because they differ from the other five subspaces. First, $N$ takes **complex** values on $\mathbb{C}_{\mathbb{B}}$: it is real on $\mathbb{R}e_0$ and on $i\mathbb{R}e_0$ separately, but $Q_0^2$ is not real for a general complex $Q_0$. Second, its real part on the real two-plane is the form $\operatorname{diag}(1, -1)$ in the basis $e_0, ie_0$, since $N(e_0) = 1$ and $N(ie_0) = -1$. The centre subspace is thus one of the two subspaces on which the biquaternion norm is not real-valued, the other being the vector subspace.
 
@@ -107,9 +107,9 @@ Two features are worth isolating, because they differ from the other five subspa
 2. $N(\tilde{Q}) \neq 0$;
 3. $Q_0 \neq 0$.
 
-The inverse is $\tilde{Q}^{-1} = Q_0^{-1} e_0 = \dfrac{Q_0^{*}}{|Q_0|^2} e_0$.
+The inverse is $\tilde{Q}^{-1} = Q_0^{-1} e_0 = \dfrac{\bar{Q_0}}{|Q_0|^2} e_0$.
 
-**Proof.** $N(Q_0e_0) = Q_0^2$ vanishes exactly when $Q_0 = 0$; the inverse formula is verified directly, $Q_0 e_0 \cdot (Q_0^{-1} e_0) = e_0$, and $Q_0^{-1} = Q_0^{*}/|Q_0|^2$ is the standard expression of the complex inverse.
+**Proof.** $N(Q_0e_0) = Q_0^2$ vanishes exactly when $Q_0 = 0$; the inverse formula is verified directly, $Q_0 e_0 \cdot (Q_0^{-1} e_0) = e_0$, and $Q_0^{-1} = \bar{Q_0}/|Q_0|^2$ is the standard expression of the complex inverse.
 
 **Corollary.** The only zero divisor in $\mathbb{C}_{\mathbb{B}}$ is $0$, and the only non-unit is $0$.
 
@@ -119,16 +119,16 @@ The corollary is the statement that $\mathbb{C}_{\mathbb{B}}$ is a field, and it
 
 ## The Four Involutions on It
 
-The four involutions of the algebra are quaternion conjugation $\bar{\cdot}$, complex conjugation ${}^{*}$, Hermitian conjugation ${}^{\dagger} = {}^{*} \circ \bar{\cdot} = \bar{\cdot} \circ {}^{*}$, and reversal $\flat = -\dagger$. Their action on $\mathbb{C}_{\mathbb{B}}$, in the basis $e_0, ie_0$, is diagonal:
+The four involutions of the algebra are quaternion conjugation ${}^{\natural}$, complex conjugation $\bar{\cdot}$, Hermitian conjugation ${}^{*} = \bar{\cdot} \circ {}^{\natural} = {}^{\natural} \circ \bar{\cdot}$, and reversal $\flat = -{}^{*}$. Their action on $\mathbb{C}_{\mathbb{B}}$, in the basis $e_0, ie_0$, is diagonal:
 
 | involution | $\tilde{Q} = Q_0e_0$ | matrix on $e_0, ie_0$ |
 |---|---|---|
-| $\bar{\cdot}$ | $Q_0 e_0$ | $\operatorname{diag}(1, 1)$ |
-| ${}^{*}$ | $Q_0^{*} e_0$ | $\operatorname{diag}(1, -1)$ |
-| ${}^{\dagger}$ | $Q_0^{*} e_0$ | $\operatorname{diag}(1, -1)$ |
-| $\flat$ | $-Q_0^{*} e_0$ | $\operatorname{diag}(-1, 1)$ |
+| ${}^{\natural}$ | $Q_0 e_0$ | $\operatorname{diag}(1, 1)$ |
+| $\bar{\cdot}$ | $\bar{Q_0} e_0$ | $\operatorname{diag}(1, -1)$ |
+| ${}^{*}$ | $\bar{Q_0} e_0$ | $\operatorname{diag}(1, -1)$ |
+| $\flat$ | $-\bar{Q_0} e_0$ | $\operatorname{diag}(-1, 1)$ |
 
-The subspace is invariant under all four, since each of them preserves the conditions $Q_1 = Q_2 = Q_3 = 0$; and the table has a content that is worth stating separately: **complex conjugation acts on the centre subspace as the non-trivial involution of $\mathbb{C}$**, exchanging the two real directions $e_0$ and $ie_0$. Hermitian conjugation acts on it in exactly the same way, while reversal negates $e_0$ and fixes $ie_0$. Complex conjugation is the reason ${}^{*}$ is not an inner automorphism of $\mathbb{B}$: an inner automorphism fixes the centre pointwise, while ${}^{*}$ acts on it by the Galois involution $i \mapsto -i$. The point is developed in *Biquaternion Involution Lattice* and in *Biquaternion Automorphisms and Derivations*.
+The subspace is invariant under all four, since each of them preserves the conditions $Q_1 = Q_2 = Q_3 = 0$; and the table has a content that is worth stating separately: **complex conjugation acts on the centre subspace as the non-trivial involution of $\mathbb{C}$**, exchanging the two real directions $e_0$ and $ie_0$. Hermitian conjugation acts on it in exactly the same way, while reversal negates $e_0$ and fixes $ie_0$. Complex conjugation is the reason $\bar{\cdot}$ is not an inner automorphism of $\mathbb{B}$: an inner automorphism fixes the centre pointwise, while $\bar{\cdot}$ acts on it by the Galois involution $i \mapsto -i$. The point is developed in *Biquaternion Involution Lattice* and in *Biquaternion Automorphisms and Derivations*.
 
 ## Relations to the Other Five Subspaces
 
@@ -202,7 +202,7 @@ $$
 N(\tilde{Q}) = (3+4i)^2 = -7 + 24i , \qquad |N(\tilde{Q})| = 25 = |3+4i|^2 ,
 $$
 
-so $\tilde{Q}$ is a unit, with inverse $\tilde{Q}^{-1} = \frac{3-4i}{25} e_0$. Complex conjugation acts on it by $\tilde{Q}^{*} = (3-4i)e_0$, which is a different element of the subspace; quaternion conjugation leaves it unchanged, since $Q_1 = Q_2 = Q_3 = 0$ makes $\bar{\tilde{Q}} = \tilde{Q}$, while Hermitian conjugation acts on it exactly as complex conjugation, $\tilde{Q}^{\dagger} = Q_0^{*}e_0 = (3-4i)e_0$.
+so $\tilde{Q}$ is a unit, with inverse $\tilde{Q}^{-1} = \frac{3-4i}{25} e_0$. Complex conjugation acts on it by $\bar{\tilde{Q}} = (3-4i)e_0$, which is a different element of the subspace; quaternion conjugation leaves it unchanged, since $Q_1 = Q_2 = Q_3 = 0$ makes $\tilde{Q}^{\natural} = \tilde{Q}$, while Hermitian conjugation acts on it exactly as complex conjugation, $\tilde{Q}^{*} = \bar{Q_0}e_0 = (3-4i)e_0$.
 
 ### The Unit and the Idempotents
 
@@ -229,8 +229,8 @@ The centre subspace $\mathbb{C}_{\mathbb{B}}$ is the fixed space of quaternion c
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, the anti-fixed space of quaternion conjugation |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | the quaternion and anti-quaternion subspaces |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the Hermitian and anti-Hermitian subspaces |
-| $\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$ | quaternion, complex, Hermitian conjugation and reversal |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | the biquaternion norm |
+| ${}^{\natural}, \bar{\cdot}, {}^{*}, \flat$ | quaternion, complex, Hermitian conjugation and reversal |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | the biquaternion norm |
 | $\mathbb{R}e_0$, $i\mathbb{R}e_0$ | the two coordinate lines of the centre subspace |
 | $\xi$ | a root of $-1$ in $\mathbb{B}$, $\xi^2 = -1$ |
 | $\tilde\Pi$ | an idempotent of $\mathbb{B}$; the centre contributes only $0$ and $e_0$ |

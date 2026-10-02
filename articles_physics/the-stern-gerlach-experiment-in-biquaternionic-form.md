@@ -219,12 +219,12 @@ $$
 and it acts on the observables by conjugation. Direct multiplication gives
 
 $$
-\tilde{R}(\theta)\,\tilde{S}_3\,\tilde{R}(\theta)^\dagger
+\tilde{R}(\theta)\,\tilde{S}_3\,\tilde{R}(\theta)^{*}
 = \frac{\hbar}{2}\,i\left(\sin\theta\, e_1 + \cos\theta\, e_3\right)
 = \tilde{S}(\hat{n}),
 $$
 
-and correspondingly $\tilde{R}\tilde\Pi_+(\hat{z})\tilde{R}^\dagger = \tilde\Pi_+(\hat{n})$. So the rotation of the analyser is an $SU(2)$ rotor conjugation, and the space of analyser directions is the sphere of unit vectors $\hat{n}\in S^2$, which is the Bloch sphere of the idempotents.
+and correspondingly $\tilde{R}\tilde\Pi_+(\hat{z})\tilde{R}^{*} = \tilde\Pi_+(\hat{n})$. So the rotation of the analyser is an $SU(2)$ rotor conjugation, and the space of analyser directions is the sphere of unit vectors $\hat{n}\in S^2$, which is the Bloch sphere of the idempotents.
 
 ### The $\cos^2(\theta/2)$ Law
 
@@ -302,7 +302,7 @@ The deflection of each beam is the corresponding eigenvalue, $\pm\hbar\gamma B'L
 
 The apparatus entangles the spin with the centre-of-mass coordinate, which lives in the material sector. When the position is traced out, the orthogonal spatial wavepackets erase the cross terms and the reduced spin state is $\tfrac12(e_0 + ir_3e_3)$: the transverse Bloch components are lost, and only the component along the field survives. The coherence that is destroyed is the term $\tfrac12 i(r_1e_1 + r_2e_2)$; the biquaternion form of the measurement shows this without an additional decoherence postulate.
 
-A rotated analyser measures $\tilde{S}(\hat{n}) = \tfrac{\hbar}{2}i\hat{n}$ for $\hat{n} = \sin\theta\,e_1 + \cos\theta\,e_3$, and the rotation from the $z$-axis to $\hat{n}$ is the real-quaternion rotor $\tilde{R}(\theta) = e^{\theta e_2/2}$ acting by conjugation, $\tilde{R}\tilde{S}_3\tilde{R}^\dagger = \tilde{S}(\hat{n})$. The single-beam probability is $\cos^2(\theta/2)$, and the intermediate measurement in the $z$–$x$–$z$ sequence destroys the coherence and reduces the joint probability to $1/4$, whereas a rotation without an intermediate measurement leaves it at $1$. The experiment is a physical realisation of the two primitive operations of the algebraic formalism: projective measurement onto an idempotent, and reversible evolution by a rotor.
+A rotated analyser measures $\tilde{S}(\hat{n}) = \tfrac{\hbar}{2}i\hat{n}$ for $\hat{n} = \sin\theta\,e_1 + \cos\theta\,e_3$, and the rotation from the $z$-axis to $\hat{n}$ is the real-quaternion rotor $\tilde{R}(\theta) = e^{\theta e_2/2}$ acting by conjugation, $\tilde{R}\tilde{S}_3\tilde{R}^{*} = \tilde{S}(\hat{n})$. The single-beam probability is $\cos^2(\theta/2)$, and the intermediate measurement in the $z$–$x$–$z$ sequence destroys the coherence and reduces the joint probability to $1/4$, whereas a rotation without an intermediate measurement leaves it at $1$. The experiment is a physical realisation of the two primitive operations of the algebraic formalism: projective measurement onto an idempotent, and reversible evolution by a rotor.
 
 ## Summary of Notation
 

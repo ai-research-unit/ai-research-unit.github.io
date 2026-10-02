@@ -1,0 +1,145 @@
+
+# __Operators on a C*-Algebra__
+
+## Introduction
+
+A $\mathrm{C}^*$-algebra is a Banach algebra whose norm is tied to an involution by the identity $\lVert a^*a\rVert = \lVert a\rVert^2$, and that single axiom forces the algebra to be, up to isometric ${}^*$-isomorphism, an algebra of operators on a Hilbert space. The operator theory of a $\mathrm{C}^*$-algebra is therefore the theory of its ${}^*$-**representations**: the ways the algebra acts by bounded operators on a Hilbert space. The representations are indexed by the **positive functionals** and the **states**, and every state produces one representation through the **GNS construction**. This article develops that operator layer. It fixes the $\mathrm{C}^*$-structure as it constrains the operator norm, defines the positive elements and the states, proves the Cauchy–Schwarz inequality that makes a state a bounded functional, constructs the representation a state determines on a Hilbert space, and states the Gelfand–Naimark theorem that a $\mathrm{C}^*$-algebra is the direct sum of its GNS representations, so that its norm is recovered from the operators it defines.
+
+The article assumes the Banach algebra, its norm, its spectrum, its spectral radius and the Neumann series from *Topological Algebras and Banach Algebras*; the $\mathrm{C}^*$-algebra, the involutive element $a^*$, the $\mathrm{C}^*$-identity and the isometry of the involution from *Topological Algebras and Banach Algebras* and *Involutive Topological Linear Algebras*; the bounded operators, the operator norm, the bounded operators of an algebra and the characters from *Operators on a Banach Algebra*; the Hilbert space, the inner product, the bounded operators $B(H)$, the adjoint of an operator and the ${}^*$-algebra $B(H)$ from *Banach and Hilbert Spaces* and *The Adjoint of a Bounded Operator*; and the completeness of $B(H)$ and the closed graph from *The Operator Algebra of a Banach Space*. The full theory of $\mathrm{C}^*$-algebras — the GNS construction in detail, the $\mathrm{C}^*$-modules, the von Neumann algebras and the modular theory — is *Operator Algebras*, later in this category, and the present article states the construction and its operator consequences and cites that article for the development. The element-level spectral theory of self-adjoint elements and the positive cone, the involution and the spectral radius, and the functional calculus are the `- * Theory` articles of this category, marked there; no measure, no integral and no spectral measure occurs.
+
+Throughout, $A$ is a $\mathrm{C}^*$-algebra over $\mathbb{C}$ with norm $\lVert\cdot\rVert$ and involution $a \mapsto a^*$, unital with unit $1$ where a statement names $1$; $H$ is a complex Hilbert space with inner product $\langle\cdot,\cdot\rangle$ linear in the first variable, $B(H)$ the $\mathrm{C}^*$-algebra of bounded operators, and $K(H)$ the compact operators. A **${}^*$-representation** is a ${}^*$-homomorphism $\pi : A \to B(H)$, and a **state** is a positive functional of norm one.
+
+## The C*-Structure and its Norm
+
+**Definition.** A **$\mathrm{C}^*$-algebra** is a complex Banach algebra $A$ with an involution $a \mapsto a^*$ satisfying
+
+$$
+(ab)^* = b^*a^* , \qquad (a^*)^* = a , \qquad (\lambda a + \mu b)^* = \bar\lambda a^* + \bar\mu b^* , \qquad \lVert a^*a\rVert = \lVert a\rVert^2 .
+$$
+
+**Proposition (the involution is isometric and the norm is algebraic).** In a $\mathrm{C}^*$-algebra,
+
+$$
+\lVert a^*\rVert = \lVert a\rVert , \qquad \lVert a^*a\rVert = \lVert a\rVert^2 , \qquad \lVert a\rVert = r(a^*a)^{1/2} ,
+$$
+
+where $r$ is the spectral radius; hence the norm is determined by the algebraic structure, and a $\mathrm{C}^*$-algebra carries at most one $\mathrm{C}^*$-norm.
+
+**Proof.** $\lVert a\rVert^2 = \lVert a^*a\rVert \leq \lVert a^*\rVert\lVert a\rVert$, so $\lVert a\rVert \leq \lVert a^*\rVert$, and replacing $a$ by $a^*$ gives equality. For the spectral formula, $a^*a$ is self-adjoint and $\lVert a^*a\rVert = r(a^*a)$ holds for every self-adjoint element of a $\mathrm{C}^*$-algebra by the spectral theory of self-adjoint elements; combining with the $\mathrm{C}^*$-identity gives the third display. Two $\mathrm{C}^*$-norms agree on self-adjoint elements, each being the spectral radius there, and then on all elements by the $\mathrm{C}^*$-identity applied to $a^*a$. $\square$
+
+**Theorem (${}^*$-homomorphisms are contractive).** Every ${}^*$-homomorphism $\pi : A \to B$ between $\mathrm{C}^*$-algebras is bounded with $\lVert\pi\rVert \leq 1$, and an injective ${}^*$-homomorphism is isometric.
+
+**Proof.** $\pi$ sends self-adjoint elements to self-adjoint elements and $\sigma(\pi(a)) \subseteq \sigma(a)$, so for $a$ self-adjoint $\lVert\pi(a)\rVert = r(\pi(a)) \leq r(a) = \lVert a\rVert$; for general $a$, $\lVert\pi(a)\rVert^2 = \lVert\pi(a)^*\pi(a)\rVert = \lVert\pi(a^*a)\rVert \leq r(a^*a) = \lVert a\rVert^2$. If $\pi$ is injective then $\pi(a^*a)$ and $a^*a$ have the same spectrum, so the inequalities are equalities. $\square$
+
+**Remark (the involution belongs to the involutive layer).** The involution $a \mapsto a^*$ on the elements is the structure of the `- * Theory` group of this category: the positivity, the positive cone and the states are developed there in *States and Positive Functionals on an Involutive Algebra*, and the spectral law $\lVert a\rVert = r(a^*a)^{1/2}$ is *The Involution and the Spectral Radius*. The present article uses them for the operator theory they index and marks those articles as their owners.
+
+## Positive Elements
+
+**Definition.** An element $a \in A$ is **self-adjoint** if $a^* = a$, **positive**, written $a \geq 0$, if $a = b^*b$ for some $b \in A$, and **unitary** if $a^*a = aa^* = 1$. The set of positive elements is the **positive cone** $A^+$.
+
+**Proposition (the positive cone).** Every element $b^*b$ is positive and self-adjoint; the positive elements form a convex cone, $A^+ + A^+ \subseteq A^+$ and $\mathbb{R}_{\geq0}A^+ \subseteq A^+$, closed in the norm; the sum of positive elements is positive, and $a^*a \geq 0$ for every $a$.
+
+**Proof.** $b^*b$ is self-adjoint, $(b^*b)^* = b^*b$, and it is the square of the self-adjoint $b^*b$ only in special cases; positivity is by definition $a = c^*c$, and $c_1^*c_1 + c_2^*c_2 = c^*c$ for a suitable $c$ requires the polarisation identity and is standard for $\mathrm{C}^*$-algebras. The cone is closed because the map $b \mapsto b^*b$ is continuous and the image of a closed bounded set is closed in the relevant range; the elementary case is that of $A = \mathbb{C}$, and the general statement is the positivity of a $\mathrm{C}^*$-algebra, quoted from *Operator Algebras*. $\square$
+
+**Proposition (the order).** The relation $a \leq b$ defined by $b - a \geq 0$ is a partial order on the self-adjoint elements, compatible with addition and with multiplication by positive scalars; a self-adjoint $a$ is positive exactly when $\sigma(a) \subseteq [0,+\infty)$, and then $\lVert a\rVert = \max\sigma(a)$.
+
+**Proof.** The relation is reflexive, antisymmetric and transitive because the cone is a cone. A self-adjoint $a$ with $\sigma(a) \subseteq [0,\infty)$ has $\lVert \lVert a\rVert - a\rVert < \lVert a\rVert$ when $a \neq 0$, so $\lVert a\rVert - a$ is not invertible and the standard positivity criterion applies; the converse is standard. The norm of a positive element is the largest spectral value, by the spectral radius formula for a self-adjoint element. $\square$
+
+**Remark (the boundary).** The positivity criterion, the square root of a positive element, the polar decomposition and the order structure on the self-adjoint elements are developed in *Hermitian and Self-Adjoint Elements of a Banach Algebra* and *Operator Algebras*; the present article uses only the definitions and the two propositions above, which are the operator-theoretic minimum for the states and the GNS construction.
+
+## States and Positive Functionals
+
+**Definition.** A linear functional $\omega : A \to \mathbb{C}$ is **positive** if $\omega(a^*a) \geq 0$ for all $a$, and it is a **state** if it is positive and, when $A$ is unital, $\omega(1) = 1$. A **weight** is a positive functional not normalised.
+
+**Proposition (Cauchy–Schwarz and boundedness).** For a positive functional $\omega$,
+
+$$
+\lvert\omega(b^*a)\rvert^2 \leq \omega(a^*a)\,\omega(b^*b) \qquad \text{for all } a,b ,
+$$
+
+so $\omega$ is bounded with $\lVert\omega\rVert \leq \omega(1)$ on a unital algebra, and $\lVert\omega\rVert = \omega(1)$; a state has norm one. Moreover $\omega(a^*) = \overline{\omega(a)}$, and $\omega$ is Hermitian.
+
+**Proof.** The form $[a,b] = \omega(b^*a)$ is sesquilinear and positive semidefinite, $\omega(a^*a) \geq 0$; the Cauchy–Schwarz inequality for a positive semidefinite form gives the display. For the norm, the $\mathrm{C}^*$-computation $\lvert\omega(a)\rvert^2 \leq \omega(1)\omega(a^*a)$ and the bound $\lVert a^*a\rVert \leq \lVert a\rVert^2$ give $\lvert\omega(a)\rvert \leq \omega(1)^{1/2}\lVert a\rVert$ when $\omega(1) > 0$, so $\lVert\omega\rVert \leq \omega(1)$; conversely a normalised state has $\lVert\omega\rVert \geq \omega(1) = 1$. Hermitianity follows by expanding $\omega((a + \lambda b)^*(a + \lambda b)) \geq 0$ over $\lambda \in \mathbb{C}$ and comparing. $\square$
+
+**Proposition (the state space is convex and weak-$*$ compact).** The states of a unital $\mathrm{C}^*$-algebra form a convex subset of the unit sphere of the dual, closed in the weak-$*$ topology, hence compact; the extreme points are the **pure states**, and every state is a weak-$*$ integral of pure states.
+
+**Proof.** Convexity is the convexity of the positive functionals and the normalisation, and closedness in the weak-$*$ topology is the pointwise closedness of the two conditions $\omega(a^*a) \geq 0$ and $\omega(1) = 1$; the weak-$*$ compactness follows from Banach–Alaoglu applied to the unit ball. The extreme-point statement is the Krein–Milman theorem, quoted. $\square$
+
+## The GNS Construction
+
+**Theorem (Gelfand–Naimark–Segal).** Let $A$ be a unital $\mathrm{C}^*$-algebra and let $\omega$ be a state. Then there are a Hilbert space $H_\omega$, a ${}^*$-representation $\pi_\omega : A \to B(H_\omega)$ and a cyclic unit vector $x_\omega \in H_\omega$ with
+
+$$
+\omega(a) = \langle \pi_\omega(a)x_\omega, x_\omega\rangle \qquad \text{for all } a \in A .
+$$
+
+The triple $(\pi_\omega, H_\omega, x_\omega)$ is the **GNS triple** of $\omega$, and it is unique up to unitary equivalence.
+
+**Proof (sketch).** On $A$ define the sesquilinear form $[a,b] = \omega(b^*a)$, which is positive semidefinite by the positivity of $\omega$. The set $N_\omega = \{a : \omega(a^*a) = 0\}$ is a left ideal, by the Cauchy–Schwarz inequality $\lvert\omega((ca)^*(ca))\rvert = \lvert\omega(a^*c^*ca)\rvert \leq \lVert c^*c\rVert\omega(a^*a)$; the quotient $A/N_\omega$ carries the induced positive definite inner product $[a + N_\omega, b + N_\omega] = \omega(b^*a)$, and its completion is the Hilbert space $H_\omega$. For fixed $a$, the operator $\pi_\omega(a)$ defined on the dense image of $A$ by $b + N_\omega \mapsto ab + N_\omega$ is well defined because $N_\omega$ is a left ideal, and it is bounded with $\lVert\pi_\omega(a)\rVert \leq \lVert a\rVert$ by the bound $[ab,ab] = \omega(b^*a^*ab) \leq \lVert a^*a\rVert[b,b]$; it therefore extends to a bounded operator, and $\pi_\omega(ab) = \pi_\omega(a)\pi_\omega(b)$, $\pi_\omega(a^*) = \pi_\omega(a)^*$ are the multiplicativity and the involution of $\omega$. The class of the unit, $x_\omega = 1 + N_\omega$, is cyclic and satisfies $\langle\pi_\omega(a)x_\omega,x_\omega\rangle = \omega(a)$. $\square$
+
+**Proposition (the representation is a ${}^*$-representation).** The map $\pi_\omega$ is a ${}^*$-homomorphism $A \to B(H_\omega)$ with $\lVert\pi_\omega\rVert \leq 1$, and $\pi_\omega$ is irreducible exactly when $\omega$ is a pure state.
+
+**Proof.** Multiplicativity, the involution law and the norm bound are in the sketch; the irreducibility criterion is the standard equivalence of a pure state and an irreducible GNS representation, quoted. $\square$
+
+**Corollary (the left multiplication bound).** For every $a$ and every state $\omega$, the operator $\pi_\omega(a)$ is bounded with $\lVert\pi_\omega(a)\rVert \leq \lVert a\rVert$, so the norm of $a$ dominates the norm of every operator representing it through a state.
+
+**Proof.** The bound is the estimate of the proof, $[ab,ab] \leq \lVert a\rVert^2[b,b]$. $\square$
+
+## Gelfand–Naimark
+
+**Theorem (Gelfand–Naimark).** Let $A$ be a $\mathrm{C}^*$-algebra. Then the direct sum of the GNS representations over all states,
+
+$$
+\pi = \bigoplus_{\omega \text{ state}} \pi_\omega : A \longrightarrow B\Bigl(\bigoplus_\omega H_\omega\Bigr) ,
+$$
+
+is an isometric ${}^*$-isomorphism of $A$ onto a $\mathrm{C}^*$-subalgebra of $B(H)$ for a Hilbert space $H$; in particular
+
+$$
+\lVert a\rVert = \sup_{\omega \text{ state}} \lVert\pi_\omega(a)\rVert \qquad \text{for all } a \in A .
+$$
+
+**Proof (sketch).** Each $\pi_\omega$ is a ${}^*$-homomorphism, so the direct sum is a ${}^*$-homomorphism; each $\pi_\omega$ is contractive, so $\lVert\pi(a)\rVert \leq \lVert a\rVert$. For the reverse inequality, let $a \neq 0$. The element $a^*a$ is positive, and on the commutative $\mathrm{C}^*$-subalgebra it generates there is a state $\omega_0$ with $\omega_0(a^*a) = \lVert a^*a\rVert = \lVert a\rVert^2$, by the Gelfand theory of a commutative $\mathrm{C}^*$-algebra; extending $\omega_0$ to a state $\omega$ of $A$ and forming the vector state $\omega_x(b) = \omega(x^*bx)/\omega(x^*x)$ with $x = a$ gives a state whose GNS representation satisfies $\lVert\pi_{\omega_x}(a)\rVert = \lVert a\rVert$, because $\omega_x(a^*a) = \lVert a\rVert^2$ realises the top of the spectrum of $\pi_{\omega_x}(a^*a)$. Hence the supremum attains the norm, $\pi$ is isometric, and an isometric ${}^*$-homomorphism is injective. When $A$ has no unit the construction is applied to the unitisation. $\square$
+
+**Corollary (the abstract is the concrete).** Every $\mathrm{C}^*$-algebra is isometrically ${}^*$-isomorphic to a norm-closed, adjoint-closed subalgebra of $B(H)$; the equality of the two notions is the content of the theorem, and the operator norm of the representation is the given norm.
+
+**Proof.** The theorem exhibits the isomorphism, the image is norm-closed and adjoint-closed because $\pi$ is isometric and preserves the involution. $\square$
+
+## Examples
+
+**Example (the matrix algebra).** For $A = M_n(\mathbb{C})$ with the conjugate transpose, the positive elements are the positive semidefinite matrices, the states are $\omega(a) = \mathrm{tr}(\rho a)$ with $\rho \geq 0$ a density matrix of trace one, and the GNS space of a faithful state is the Hilbert–Schmidt space with $\pi$ the defining action; the pure states are the vector states $\omega(a) = \langle a\xi,\xi\rangle$.
+
+**Example (the commutative algebra $C(X)$).** For $A = C(X)$ with $X$ compact Hausdorff and $f^*(x) = \overline{f(x)}$, the positive elements are the nonnegative functions, the states are the probability measures on $X$ by the Riesz representation theorem, and the GNS construction of a point state $\omega(f) = f(x_0)$ produces the one-dimensional representation $f \mapsto f(x_0)$; the direct sum over point states is faithful and isometric, recovering the sup norm.
+
+**Example ($B(H)$ and the vector states).** For $A = B(H)$, every unit vector $\xi$ defines a pure state $\omega_\xi(T) = \langle T\xi,\xi\rangle$ and the GNS representation of $\omega_\xi$ is the identity of $B(H)$ with cyclic vector $\xi$; the normal states are the trace-class ones, whose theory is *Operator Algebras*.
+
+**Example (the compact operators).** For $A = K(H)$ in infinite dimension the algebra has no unit, the states are the functionals $\omega(T) = \mathrm{tr}(\rho T)$ with $\rho$ trace-class positive of trace one, and the GNS construction applies to the unitisation; the identity is not in $K(H)$ and the norm is recovered from the same supremum over states, as it must be by the theorem.
+
+## Summary
+
+A $\mathrm{C}^*$-algebra $A$ is a complex Banach algebra with an involution for which $\lVert a^*a\rVert = \lVert a\rVert^2$; the involution is isometric, the norm is algebraic, $\lVert a\rVert = r(a^*a)^{1/2}$, and every ${}^*$-homomorphism is contractive and isometric when injective, so the $\mathrm{C}^*$-norm is unique. The positive elements are those of the form $b^*b$, they form a closed convex cone carrying a partial order on the self-adjoint elements, and a self-adjoint element is positive exactly when its spectrum lies in $[0,\infty)$. A positive functional satisfies the Cauchy–Schwarz inequality $\lvert\omega(b^*a)\rvert^2 \leq \omega(a^*a)\omega(b^*b)$, hence is bounded with $\lVert\omega\rVert = \omega(1)$ on a unital algebra; the states, the positive functionals of norm one, form a convex weak-$*$ compact set with the pure states as its extreme points. Every state $\omega$ carries a GNS triple $(\pi_\omega,H_\omega,x_\omega)$ with $\omega(a) = \langle\pi_\omega(a)x_\omega,x_\omega\rangle$, built from the form $[a,b] = \omega(b^*a)$ by quotienting the null ideal and completing; $\pi_\omega$ is a ${}^*$-representation with $\lVert\pi_\omega(a)\rVert \leq \lVert a\rVert$, irreducible exactly for a pure state. The direct sum of the GNS representations over all states is an isometric ${}^*$-isomorphism of $A$ onto a $\mathrm{C}^*$-subalgebra of $B(H)$, the Gelfand–Naimark theorem, so $\lVert a\rVert = \sup_\omega\lVert\pi_\omega(a)\rVert$ and every abstract $\mathrm{C}^*$-algebra is concrete. The element-level positivity, the involution and the spectral radius are the `- * Theory` articles, and the full development of the $\mathrm{C}^*$-theory, the $\mathrm{C}^*$-modules, the von Neumann algebras and the modular theory is *Operator Algebras*.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $A$, $a^*$, $\lVert a^*a\rVert = \lVert a\rVert^2$ | $\mathrm{C}^*$-algebra, involution, $\mathrm{C}^*$-identity |
+| $A^+$, $a \geq 0$ | The positive cone, $a = b^*b$; order on self-adjoint elements |
+| $r(a^*a)$, $\lVert a\rVert$ | Norm is the square root of the spectral radius of $a^*a$ |
+| $\omega$, $\omega(a^*a)\geq0$ | A positive functional |
+| State, pure state | Positive functional with $\omega(1)=1$; an extreme point |
+| $\lvert\omega(b^*a)\rvert^2 \leq \omega(a^*a)\omega(b^*b)$ | The Cauchy–Schwarz inequality for a positive functional |
+| $[a,b] = \omega(b^*a)$ | The positive semidefinite form of a state |
+| $N_\omega = \{a : \omega(a^*a)=0\}$ | The null left ideal |
+| $(\pi_\omega,H_\omega,x_\omega)$ | The GNS triple, $x_\omega$ cyclic, $\omega(a)=\langle\pi_\omega(a)x_\omega,x_\omega\rangle$ |
+| $\pi = \bigoplus_\omega\pi_\omega$ | The isometric faithful $^*$-representation (Gelfand–Naimark) |
+| $H$, $B(H)$, $K(H)$ | Hilbert space, bounded and compact operators |
+| ${}^*$-representation | A $^*$-homomorphism $\pi : A \to B(H)$ |
+
+## Further Reading
+
+- Jacques Dixmier, *$\mathrm{C}^*$-Algebras* (North-Holland, 1977), for the positive elements, the states, the GNS construction and the Gelfand–Naimark theorem.
+- Richard V. Kadison and John R. Ringrose, *Fundamentals of the Theory of Operator Algebras, Volume I* (Academic Press, 1983), for the positive cone, the states and the representation theory of a $\mathrm{C}^*$-algebra.
+- Gerard J. Murphy, *$\mathrm{C}^*$-Algebras and Operator Theory* (Academic Press, 1990), for the GNS construction, the pure states and the concrete representation theorem.
+- Masamichi Takesaki, *Theory of Operator Algebras I* (Springer, 1979), for the states, the weights and the representation theory.
+- John B. Conway, *A Course in Operator Theory*, Graduate Studies in Mathematics 21 (American Mathematical Society, 2000), for the operator-algebra background and the compact operators.

@@ -10,7 +10,7 @@ $$
 
 which identifies $\mathbb{B}$ with the coordinate space $\mathbb{C}^4$. The realization supplies a space and no action: the action is the $4 \times 4$ matrix of left multiplication in *The 4×4 Regular Matrix Element Representation of Biquaternions* and the $2 \times 2$ matrices of *The 2×2 Matrix Element Representation of Biquaternions*. This article treats the coefficient space, the column and the dual row, the component form of the product, the four conjugations in coordinates, the six distinguished subspaces as coordinate conditions, and the biquaternion norm with its two real restrictions.
 
-The conventions are those of *Conventions in the Biquaternion Universe*, and none is redefined. The basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, the scalar imaginary $i$ commutes with every unit, and the conjugations are $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger} = \bar{\cdot}\circ{}^{*}$ and ${}^{\flat} = -\dagger$. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. The physical dictionary writes a general element as a material coordinate plus an informational coordinate,
+The conventions are those of *Conventions in the Biquaternion Universe*, and none is redefined. The basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, the scalar imaginary $i$ commutes with every unit, and the conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ and ${}^{\flat} = -{}^{*}$. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. The physical dictionary writes a general element as a material coordinate plus an informational coordinate,
 
 $$
 \tilde{Q} = \underbrace{(ict)\,e_0 + \mathbf{x}}_{\in\,\mathbb{M}_-} \;+\; \underbrace{(ct')\,e_0 + i\mathbf{x}'}_{\in\,\mathbb{M}_+},
@@ -104,7 +104,7 @@ The matrix $\rho_L(\tilde{Q})$ is the matrix of left multiplication; its entries
 **The row is the dual, not a further representation.** The row $Q^{\mathsf{T}}$ is the element of the dual space paired with the column by the standard pairing, and the dual of a left module is a right module: it carries the *right* action, $(\varphi\cdot\tilde{Q})(\tilde{R}) = \varphi(\tilde{Q}\tilde{R})$. The transpose that relates the column picture to the row picture is dressed with quaternion conjugation, so that the transpose of the left matrix of $\tilde{Q}$ is the left matrix of the quaternion conjugate,
 
 $$
-\rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\bar{\tilde{Q}}),
+\rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\tilde{Q}^{\natural}),
 $$
 
 which is proved in *The 4×4 Regular Matrix Element Representation of Biquaternions*. A column and a row are the same four complex numbers written in two layouts, and a change of layout is a change of bookkeeping, not a change of representation. The corpus counts three objects in this group — the coefficient space, the algebra acting on its simple module, and the algebra acting on itself — and it does not count the two layouts separately.
@@ -152,12 +152,12 @@ The first row and the first column reproduce the basis, since $e_0$ is the ident
 
 ## The Conjugations in Coordinates
 
-The algebra carries the quaternion conjugation $\bar{\cdot}$, the complex conjugation ${}^{*}$, the Hermitian conjugation ${}^{\dagger} = \bar{\cdot}\circ{}^{*}$ and the anti-Hermitian conjugation ${}^{\flat} = -\dagger$. In coordinates, quaternion conjugation negates the vector components, complex conjugation conjugates every component, and Hermitian conjugation does both.
+The algebra carries the quaternion conjugation ${}^{\natural}$, the complex conjugation $\bar{\cdot}$, the Hermitian conjugation ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ and the anti-Hermitian conjugation ${}^{\flat} = -{}^{*}$. In coordinates, quaternion conjugation negates the vector components, complex conjugation conjugates every component, and Hermitian conjugation does both.
 
 **Proposition (conjugations in coordinates).** For a biquaternion with four-vector $Q^\mu$,
 
 $$
-(\bar{\tilde{Q}})^\mu = (Q^0, -Q^1, -Q^2, -Q^3),
+(\tilde{Q}^{\natural})^\mu = (Q^0, -Q^1, -Q^2, -Q^3),
 $$
 
 $$
@@ -165,12 +165,12 @@ $$
 $$
 
 $$
-(\tilde{Q}^{\dagger})^\mu = \big( (Q^0)^{*}, -(Q^1)^{*}, -(Q^2)^{*}, -(Q^3)^{*} \big), \qquad (\tilde{Q}^{\flat})^\mu = -(\tilde{Q}^{\dagger})^\mu .
+(\tilde{Q}^{*})^\mu = \big( (Q^0)^{*}, -(Q^1)^{*}, -(Q^2)^{*}, -(Q^3)^{*} \big), \qquad (\tilde{Q}^{\flat})^\mu = -(\tilde{Q}^{*})^\mu .
 $$
 
 **Proof.** Quaternion conjugation fixes $e_0$ and sends $e_k$ to $-e_k$ while leaving every coefficient untouched, so it acts on the coefficients by $(Q^0, Q^1, Q^2, Q^3) \mapsto (Q^0, -Q^1, -Q^2, -Q^3)$. Complex conjugation fixes every basis element and conjugates the central scalar $i$, hence conjugates each coefficient. Hermitian conjugation is their composite, and $\flat$ is its negative.
 
-The three involutions $\bar{\cdot}$, ${}^{*}$ and ${}^{\dagger}$ commute and generate a Klein four-group with the identity; the fourth involution $\flat$ is not independent of them, since $\flat = -\dagger$. This is why the fixed-point subspaces come in three pairs and not four.
+The three involutions ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ commute and generate a Klein four-group with the identity; the fourth involution $\flat$ is not independent of them, since $\flat = -{}^{*}$. This is why the fixed-point subspaces come in three pairs and not four.
 
 **Example.** For the element
 
@@ -181,16 +181,16 @@ $$
 the four conjugations have four-vectors
 
 $$
-\bar{\tilde{Q}} \leftrightarrow (2+i, \, -1+i, \, -3, \, -i), \qquad \tilde{Q}^{*} \leftrightarrow (2-i, \, 1+i, \, 3, \, -i),
+\tilde{Q}^{\natural} \leftrightarrow (2+i, \, -1+i, \, -3, \, -i), \qquad \tilde{Q}^{*} \leftrightarrow (2-i, \, 1+i, \, 3, \, -i),
 $$
 
 $$
-\tilde{Q}^{\dagger} \leftrightarrow (2-i, \, -1-i, \, -3, \, i), \qquad \tilde{Q}^{\flat} \leftrightarrow (-2+i, \, 1+i, \, 3, \, -i),
+\tilde{Q}^{*} \leftrightarrow (2-i, \, -1-i, \, -3, \, i), \qquad \tilde{Q}^{\flat} \leftrightarrow (-2+i, \, 1+i, \, 3, \, -i),
 $$
 
-and each is an involution. The Hermitian part $\tfrac12(\tilde{Q} + \tilde{Q}^{\dagger})$ has four-vector $(2, -i, 0, i)$: a real scalar component and purely imaginary vector components, as the table of subspaces requires. In physical terms this element carries the informational time $ct' = 2$ on the scalar component together with the material time $ct = 1$, and its real vector components are the material spatial coordinates $(x,y,z) = (1,3,0)$ while its imaginary ones are the informational $(x',y',z') = (-1,0,1)$.
+and each is an involution. The Hermitian part $\tfrac12(\tilde{Q} + \tilde{Q}^{*})$ has four-vector $(2, -i, 0, i)$: a real scalar component and purely imaginary vector components, as the table of subspaces requires. In physical terms this element carries the informational time $ct' = 2$ on the scalar component together with the material time $ct = 1$, and its real vector components are the material spatial coordinates $(x,y,z) = (1,3,0)$ while its imaginary ones are the informational $(x',y',z') = (-1,0,1)$.
 
-**Consequences for the physical coordinates.** The conjugation rules are the coordinate form of the statement that the material coordinates are the imaginary part of the quadruple and the informational ones its real part. Quaternion conjugation keeps the material scalar and negates the material vector; complex conjugation conjugates every coefficient and so exchanges the role of informational and material in each slot; Hermitian conjugation does both, and its fixed quadruples are exactly those with a real scalar component and purely imaginary vector components, the informational four-vectors. The anti-fixed quadruples of $\dagger$ are the material four-vectors, and this is the sense in which $\flat$ is the real structure of the framework.
+**Consequences for the physical coordinates.** The conjugation rules are the coordinate form of the statement that the material coordinates are the imaginary part of the quadruple and the informational ones its real part. Quaternion conjugation keeps the material scalar and negates the material vector; complex conjugation conjugates every coefficient and so exchanges the role of informational and material in each slot; Hermitian conjugation does both, and its fixed quadruples are exactly those with a real scalar component and purely imaginary vector components, the informational four-vectors. The anti-fixed quadruples of ${}^{*}$ are the material four-vectors, and this is the sense in which $\flat$ is the real structure of the framework.
 
 ## The Six Distinguished Subspaces
 
@@ -207,7 +207,7 @@ the unprimed slot carrying the informational time $ct'$ and the material space $
 **Definition.** The six **distinguished subspaces** are
 
 $$
-\mathbb{C}_{\mathbb{B}} = \{\tilde{Q} : \bar{\tilde{Q}} = \tilde{Q}\}, \qquad \mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : \bar{\tilde{Q}} = -\tilde{Q}\},
+\mathbb{C}_{\mathbb{B}} = \{\tilde{Q} : \tilde{Q}^{\natural} = \tilde{Q}\}, \qquad \mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : \tilde{Q}^{\natural} = -\tilde{Q}\},
 $$
 
 $$
@@ -215,7 +215,7 @@ $$
 $$
 
 $$
-\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{\dagger} = \tilde{Q}\}, \qquad \mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{\flat} = \tilde{Q}\}.
+\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\}, \qquad \mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{\flat} = \tilde{Q}\}.
 $$
 
 **Proposition (coordinate conditions).** In terms of the four-vector $Q^\mu$ the six subspaces are characterized as follows.
@@ -304,14 +304,14 @@ with $Q_0 = q_0$, $Q_k = iq'_k$, $q_0 = ct'$ and $q'_k = x'_k$, and the biquater
 **Definition.** The **biquaternion norm** of a biquaternion is the central element
 
 $$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = (Q^0)^2 + (Q^1)^2 + (Q^2)^2 + (Q^3)^2 \in \mathbb{C}.
+N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = (Q^0)^2 + (Q^1)^2 + (Q^2)^2 + (Q^3)^2 \in \mathbb{C}.
 $$
 
 In four-vector form the biquaternion norm has **all four signs positive**, and the Gram matrix of its polar form is the identity $\mathrm{diag}(+1,+1,+1,+1)$.
 
-**Proposition (why all four signs are positive).** For every biquaternion $\tilde{Q}$, $\tilde{Q}\bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2$, a complex scalar.
+**Proposition (why all four signs are positive).** For every biquaternion $\tilde{Q}$, $\tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2$, a complex scalar.
 
-**Proof.** Expand $\tilde{Q}\bar{\tilde{Q}} = \big(\sum_\mu Q_\mu e_\mu\big)\big(Q_0e_0 - \sum_k Q_k e_k\big)$. The cross terms between $e_0$ and the vector units cancel between the two orders. The remaining terms are $Q_0^2e_0$ together with $\sum_k Q_k^2 e_k^2 = -\sum_k Q_k^2e_0$ and the mixed terms $-Q_jQ_ke_je_k$ over ordered pairs with $j \neq k$. The pairs $(j,k)$ and $(k,j)$ carry the same coefficient $Q_jQ_k$ and their basis products are negatives, so the pair contributes a multiple of $e_je_k + e_ke_j = 0$ and cancels. Collecting the surviving scalar terms gives $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$.
+**Proof.** Expand $\tilde{Q}\tilde{Q}^{\natural} = \big(\sum_\mu Q_\mu e_\mu\big)\big(Q_0e_0 - \sum_k Q_k e_k\big)$. The cross terms between $e_0$ and the vector units cancel between the two orders. The remaining terms are $Q_0^2e_0$ together with $\sum_k Q_k^2 e_k^2 = -\sum_k Q_k^2e_0$ and the mixed terms $-Q_jQ_ke_je_k$ over ordered pairs with $j \neq k$. The pairs $(j,k)$ and $(k,j)$ carry the same coefficient $Q_jQ_k$ and their basis products are negatives, so the pair contributes a multiple of $e_je_k + e_ke_j = 0$ and cancels. Collecting the surviving scalar terms gives $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$.
 
 Two consequences matter. First, the biquaternion norm is a **complex bilinear** form of rank four, multiplicative, $N(\tilde{P}\tilde{Q}) = N(\tilde{P})N(\tilde{Q})$, and on the coefficient space itself it is not indefinite: the minus signs of a spacetime signature are not in it. Second, it can vanish on a nonzero element, and it does so exactly on the nonzero solutions of $\sum_\mu Q_\mu^2 = 0$, which are the zero divisors of the algebra. The biquaternion norm is therefore not a norm in the analytic sense, and the set of its zeros is the algebra's null cone.
 
@@ -337,7 +337,7 @@ a real quadratic form of signature $(1,3)$; with $a^0 = ct'$ and $a^k = x'_k$ it
 
 The real sector $\mathbb{H}_{\mathbb{B}}$ is the case in which no coefficient carries the $i$, and its biquaternion norm is the positive-definite $q_0^2 + q_1^2 + q_2^2 + q_3^2$ of signature $(4,0)$. The two forms are exchanged by multiplication by the scalar imaginary, since $N(i\tilde{Q}) = -N(\tilde{Q})$ on every element and $\mathbb{M}_+ = i\mathbb{M}_-$, $\mathbb{M}_- = i\mathbb{M}_+$. The Lorentzian signature is therefore an **output** of the framework and not an input to it: the four coefficients start on an equal footing with all four signs positive, and the minus sign of the interval appears only when a real coordinate is placed on a direction whose coefficient carries the factor $i$.
 
-**The null cone and the causal classes.** The zeros of the biquaternion norm are the light cone of the framework. On $\mathbb{M}_-$ the condition $N(\tilde{Q}) = 0$ is $-c^2t^2 + \mathbf{x}^2 = 0$, the null cone of Minkowski space, and on the algebra at large it is the set of zero divisors. The interval is invariant under the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$ with $N(\tilde{\Lambda}) = e_0$, so no element of the restricted Lorentz group can move a displacement from one causal class to another; the causal structure of the framework and the orbit decomposition of the cone are developed in the companion articles on causality and on the Lorentz group.
+**The null cone and the causal classes.** The zeros of the biquaternion norm are the light cone of the framework. On $\mathbb{M}_-$ the condition $N(\tilde{Q}) = 0$ is $-c^2t^2 + \mathbf{x}^2 = 0$, the null cone of Minkowski space, and on the algebra at large it is the set of zero divisors. The interval is invariant under the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $N(\tilde{\Lambda}) = e_0$, so no element of the restricted Lorentz group can move a displacement from one causal class to another; the causal structure of the framework and the orbit decomposition of the cone are developed in the companion articles on causality and on the Lorentz group.
 
 ### The Inverse in Coordinates
 
@@ -346,10 +346,10 @@ The invertibility criterion, that $\tilde{Q}$ is a unit exactly when $N(\tilde{Q
 **Proposition (the inverse in coordinates).** For an invertible biquaternion $\tilde{Q}$,
 
 $$
-\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}}}{N(\tilde{Q})}, \qquad \big(\tilde{Q}^{-1}\big)^\mu = \Big( \frac{Q^0}{N}, \, -\frac{Q^1}{N}, \, -\frac{Q^2}{N}, \, -\frac{Q^3}{N} \Big), \qquad N = N(\tilde{Q}).
+\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{N(\tilde{Q})}, \qquad \big(\tilde{Q}^{-1}\big)^\mu = \Big( \frac{Q^0}{N}, \, -\frac{Q^1}{N}, \, -\frac{Q^2}{N}, \, -\frac{Q^3}{N} \Big), \qquad N = N(\tilde{Q}).
 $$
 
-**Proof.** With $N \neq 0$, the element $\bar{\tilde{Q}}/N$ is a two-sided inverse because $\tilde{Q}\bar{\tilde{Q}} = \bar{\tilde{Q}}\tilde{Q} = N$ is central. Its coordinate form is the vector $\bar{\tilde{Q}}$, whose components are $(Q^0, -Q^1, -Q^2, -Q^3)$, divided by the complex scalar $N$.
+**Proof.** With $N \neq 0$, the element $\tilde{Q}^{\natural}/N$ is a two-sided inverse because $\tilde{Q}\tilde{Q}^{\natural} = \tilde{Q}^{\natural}\tilde{Q} = N$ is central. Its coordinate form is the vector $\tilde{Q}^{\natural}$, whose components are $(Q^0, -Q^1, -Q^2, -Q^3)$, divided by the complex scalar $N$.
 
 **Example.** For the element $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$ of the preceding example,
 
@@ -357,7 +357,7 @@ $$
 N(\tilde{Q}) = (2+i)^2 + (1-i)^2 + 3^2 + i^2 = (3+4i) + (-2i) + 9 - 1 = 11 + 2i \neq 0,
 $$
 
-so $\tilde{Q}$ is a unit, with four-vector inverse $\tfrac{1}{11+2i}(2+i, -1+i, -3, -i)$. Under the conjugations the biquaternion norm becomes $N(\bar{\tilde{Q}}) = 11+2i$, $N(\tilde{Q}^{*}) = 11-2i$ and $N(\tilde{Q}^{\dagger}) = 11-2i$, and multiplication by $i$ reverses its sign, $N(i\tilde{Q}) = -11-2i$.
+so $\tilde{Q}$ is a unit, with four-vector inverse $\tfrac{1}{11+2i}(2+i, -1+i, -3, -i)$. Under the conjugations the biquaternion norm becomes $N(\tilde{Q}^{\natural}) = 11+2i$, $N(\tilde{Q}^{*}) = 11-2i$ and $N(\tilde{Q}^{*}) = 11-2i$, and multiplication by $i$ reverses its sign, $N(i\tilde{Q}) = -11-2i$.
 
 ## The Four-Vectors of Relativistic Physics
 
@@ -416,7 +416,7 @@ $$
 with quadruple $(\partial_{ict}, \partial_x, \partial_y, \partial_z)$. Its biquaternion norm is the d'Alembertian,
 
 $$
-N(\tilde{\nabla}) = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \partial_x^2 + \partial_y^2 + \partial_z^2 = \Box ,
+N(\tilde{\nabla}) = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \partial_x^2 + \partial_y^2 + \partial_z^2 = \Box ,
 $$
 
 the all-plus sign of the biquaternion norm being exactly what makes the spatial part of the d'Alembertian positive with the $ict$ convention. The gradient is the case in which the material four-vector is an operator, and the wave equation $\Box\tilde{\Psi} = 0$ is the statement that the biquaternion norm of the gradient annihilates the field.
@@ -427,7 +427,7 @@ the all-plus sign of the biquaternion norm being exactly what makes the spatial 
 
 The four-vector representation reads a biquaternion $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ as its quadruple of complex coefficients $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$, with $Q^0 = Q_0$ the scalar component and $(Q^1, Q^2, Q^3) = (Q_1, Q_2, Q_3)$ the vector components. It is a $\mathbb{C}$-linear isomorphism onto $\mathbb{C}^4$, of complex dimension four and real dimension eight, and it supplies the space on which the regular operator of *The 4×4 Regular Matrix Element Representation of Biquaternions* is written. Physically, each complex coefficient carries one material and one informational coordinate: $Q^0 = ct' + ict$ and $Q^k = x_k + ix'_k$, so that the material four-vector is the quadruple $(ict, x, y, z)$ with a purely imaginary scalar entry, that is $Q^0 = iq'_0$ with $q'_0 = ct$.
 
-The product in components has scalar part $Q^0R^0 - \sum_k Q^kR^k$ and vector part $Q^0R^i + R^0Q^i + \sum_{j,k}\epsilon^{ijk}Q^jR^k$, and the Levi-Civita term is the only trace of non-commutativity; the commutator is twice the cross product of the vector parts and lies in the complex space sector. The three involutions $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$ act by negating the vector components, conjugating every component, and doing both, and the six distinguished subspaces are the resulting coordinate conditions: the informational sector is the quadruples with real scalar component and purely imaginary vector components, the material sector the transpose of that condition. The biquaternion norm is $\sum_\mu (Q^\mu)^2$, with all four signs positive on $\mathbb{C}^4$ because each quaternion unit squares to $-e_0$ and the cross terms cancel; it restricts to signature $(3,1)$ on the material sector, where it is the Minkowski interval $-c^2t^2 + \mathbf{x}^2$, and to signature $(1,3)$ on the informational sector, and it vanishes exactly on the zero divisors, which are the light cone.
+The product in components has scalar part $Q^0R^0 - \sum_k Q^kR^k$ and vector part $Q^0R^i + R^0Q^i + \sum_{j,k}\epsilon^{ijk}Q^jR^k$, and the Levi-Civita term is the only trace of non-commutativity; the commutator is twice the cross product of the vector parts and lies in the complex space sector. The three involutions ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ act by negating the vector components, conjugating every component, and doing both, and the six distinguished subspaces are the resulting coordinate conditions: the informational sector is the quadruples with real scalar component and purely imaginary vector components, the material sector the transpose of that condition. The biquaternion norm is $\sum_\mu (Q^\mu)^2$, with all four signs positive on $\mathbb{C}^4$ because each quaternion unit squares to $-e_0$ and the cross terms cancel; it restricts to signature $(3,1)$ on the material sector, where it is the Minkowski interval $-c^2t^2 + \mathbf{x}^2$, and to signature $(1,3)$ on the informational sector, and it vanishes exactly on the zero divisors, which are the light cone.
 
 The four-vectors of relativistic physics are the material elements: the four-position with biquaternion norm the interval, the four-velocity with biquaternion norm the constant $-c^2$, the four-momentum with biquaternion norm $-m^2c^2$ on the mass shell, the four-current and four-potential with their respective biquaternion norms, and the gradient, whose biquaternion norm is the d'Alembertian $\Box = \partial_{ict}^2 + \Delta$. The index on $Q^\mu$ is never raised or lowered, because the coefficient space carries no metric of its own; the $ict$ convention carries the metric in the coefficient, and the explicit metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ is the level-2 form used when a contraction is written out.
 
@@ -442,12 +442,12 @@ The four-vectors of relativistic physics are the material elements: the four-pos
 | $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$ | The four-vector; $Q^0 = Q_0$ the scalar component, $(Q^1,Q^2,Q^3) = (Q_1,Q_2,Q_3)$ the vector components |
 | $Q^\mu = q^\mu + i{q'}^\mu$ | Real and imaginary parts of each component |
 | $Q$, $Q^{\mathsf{T}}$ | The column and the dual row of the four-vector |
-| $\rho_L(\tilde{Q})$, $\rho_R(\tilde{Q})$ | Matrices of left and right multiplication, constructed in *The 4×4 Regular Matrix Element Representation of Biquaternions*; $\rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\bar{\tilde{Q}})$ |
+| $\rho_L(\tilde{Q})$, $\rho_R(\tilde{Q})$ | Matrices of left and right multiplication, constructed in *The 4×4 Regular Matrix Element Representation of Biquaternions*; $\rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\tilde{Q}^{\natural})$ |
 | $\epsilon^{ijk}$ | Levi-Civita symbol on the indices $1, 2, 3$ |
-| $\bar{\tilde{Q}}, \tilde{Q}^{*}, \tilde{Q}^{\dagger}, \tilde{Q}^{\flat} = -\tilde{Q}^{\dagger}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugation |
+| $\tilde{Q}^{\natural}, \tilde{Q}^{*}, \tilde{Q}^{*}, \tilde{Q}^{\flat} = -\tilde{Q}^{*}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugation |
 | $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ | The six distinguished subspaces; coordinate conditions in the table above |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | The biquaternion norm, complex bilinear and multiplicative; Gram matrix $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}^4$, signature $(3,1)$ on $\mathbb{M}_-$ and $(1,3)$ on $\mathbb{M}_+$ |
-| $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$ | The inverse in coordinates |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | The biquaternion norm, complex bilinear and multiplicative; Gram matrix $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}^4$, signature $(3,1)$ on $\mathbb{M}_-$ and $(1,3)$ on $\mathbb{M}_+$ |
+| $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$ | The inverse in coordinates |
 | $c$, $c_0$ | Speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and its vacuum value |
 | $ict$, $\mathbf{x} = x e_1 + y e_2 + z e_3$ | The material coordinate; the four-position is $(ict, x, y, z)$ |
 | $ct'$, $i\mathbf{x}' = i x'e_1 + iy'e_2 + iz'e_3$ | The informational coordinate |
@@ -455,7 +455,7 @@ The four-vectors of relativistic physics are the material elements: the four-pos
 | $q_0, q'_1, q'_2, q'_3$ | Real parameters of an informational four-vector, $\tilde{Q} = q_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3$; $q_0 = ct'$, $(q'_1,q'_2,q'_3) = (x',y',z')$ |
 | $\tilde{U}$, $\tilde{P}$, $\tilde{J}$, $\tilde{A}$ | Four-velocity, four-momentum, four-current, four-potential; $N(\tilde{U}) = -c^2$, $N(\tilde{P}) = -m^2c^2$ on shell |
 | $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ | Biquaternionic gradient; $N(\tilde{\nabla}) = \Box$ |
-| $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$ | d'Alembertian, series convention |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$ | d'Alembertian, series convention |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | The $ict$-coordinate metric of the explicit contractions (level 2) |
 
 ## Further Reading

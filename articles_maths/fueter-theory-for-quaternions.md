@@ -21,7 +21,7 @@ $$
 D = \partial_0+\mathbf{D} = \sum_{\mu=0}^{3}e_\mu\partial_\mu, \qquad D F = \sum_{\mu=0}^{3}e_\mu\partial_\mu F,
 $$
 
-acting on the left, with $\mathbf{D} = e_1\partial_1+e_2\partial_2+e_3\partial_3$. Its **conjugate** is $\bar D = \partial_0-\mathbf{D} = \sum_\mu\bar e_\mu\partial_\mu$, obtained by negating the vector part, $\bar e_0 = e_0$, $\bar e_k = -e_k$.
+acting on the left, with $\mathbf{D} = e_1\partial_1+e_2\partial_2+e_3\partial_3$. Its **conjugate** is $\bar D = \partial_0-\mathbf{D} = \sum_\mu e_\mu^{\natural}\partial_\mu$, obtained by negating the vector part, $e_0^{\natural} = e_0$, $e_k^{\natural} = -e_k$.
 
 **Remark.** The Fueter operator is the Cauchy–Riemann operator of *Quaternion Regular Functions*, under the name used in the Fueter tradition; it is the same operator and this article does not restate its definition independently.
 
@@ -35,7 +35,7 @@ $$
 
 so $D$ is a square root of $\Delta_4$.
 
-*Proof.* Expand $D\bar D = \sum_{\mu,\nu}e_\mu\bar e_\nu\partial_\mu\partial_\nu$. The diagonal term is $\sum_\mu e_\mu\bar e_\mu\partial_\mu^2 = \sum_\mu\partial_\mu^2$, since $e_0\bar e_0 = 1$ and $e_k\bar e_k = -e_k^2 = 1$; for $\mu\neq\nu$ the coefficient is $e_\mu\bar e_\nu+e_\nu\bar e_\mu = 0$ by the Clifford relation of *Quaternion Regular Functions*. Hence all mixed terms cancel, leaving $\Delta_4$; the same argument gives $\bar DD = \Delta_4$.
+*Proof.* Expand $D\bar D = \sum_{\mu,\nu}e_\mu e_\nu^{\natural}\partial_\mu\partial_\nu$. The diagonal term is $\sum_\mu e_\mu e_\mu^{\natural}\partial_\mu^2 = \sum_\mu\partial_\mu^2$, since $e_0e_0^{\natural} = 1$ and $e_k e_k^{\natural} = -e_k^2 = 1$; for $\mu\neq\nu$ the coefficient is $e_\mu e_\nu^{\natural}+e_\nu e_\mu^{\natural} = 0$ by the Clifford relation of *Quaternion Regular Functions*. Hence all mixed terms cancel, leaving $\Delta_4$; the same argument gives $\bar DD = \Delta_4$.
 
 ### Relation to the Cauchy–Riemann Operator
 
@@ -75,7 +75,7 @@ one quaternion equation, equivalently four real equations for the four coefficie
 
 *Proof.* Multiplication out of $e_\mu\partial_\mu(F_0+\mathbf{F})$ with $\mathbf{a}\mathbf{b} = -\langle\mathbf{a},\mathbf{b}\rangle+\mathbf{a}\times\mathbf{b}$; the right action reverses the order of $e_\mu$ and the differentiated component.
 
-**Corollary.** The system is elliptic, with principal symbol $s(\xi) = \sum_\mu\xi_\mu e_\mu$ invertible for every real $\xi\neq0$, since $s(\xi)\bar s(\xi) = |\xi|^2e_0$; hence Fueter-regular functions are real-analytic.
+**Corollary.** The system is elliptic, with principal symbol $s(\xi) = \sum_\mu\xi_\mu e_\mu$ invertible for every real $\xi\neq0$, since $s(\xi)s^{\natural}(\xi) = |\xi|^2e_0$; hence Fueter-regular functions are real-analytic.
 
 ### The Debye-Type Reformulation of the System
 

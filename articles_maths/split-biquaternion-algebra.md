@@ -187,55 +187,55 @@ This formula has the same structure as the quaternion product: scalar part, vect
 
 ### Conjugations
 
-There are **four** natural conjugations on $\mathbb{H}_{\mathbb{D}}$, obtained by composing the quaternion conjugation $\bar{\cdot}$ and the split complex conjugation ${}^*$:
+There are **four** natural conjugations on $\mathbb{H}_{\mathbb{D}}$, obtained by composing the quaternion conjugation ${}^{\natural}$ and the split complex conjugation $\bar{\cdot}$:
 
-**Quaternion conjugation** $\bar{\tilde{Q}}$:
-
-$$
-\bar{\tilde{Q}} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3.
-$$
-
-**Split complex conjugation** $\tilde{Q}^*$:
+**Quaternion conjugation** $\tilde{Q}^{\natural}$:
 
 $$
-\tilde{Q}^* = Q_0^* e_0 + Q_1^* e_1 + Q_2^* e_2 + Q_3^* e_3.
+\tilde{Q}^{\natural} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3.
 $$
 
-**Hermitian conjugation** $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$:
+**Split complex conjugation** $\bar{\tilde{Q}}$:
 
 $$
-\tilde{Q}^\dagger = Q_0^* e_0 - Q_1^* e_1 - Q_2^* e_2 - Q_3^* e_3.
+\bar{\tilde{Q}} = \bar{Q_0} e_0 + \bar{Q_1} e_1 + \bar{Q_2} e_2 + \bar{Q_3} e_3.
 $$
 
-**Anti-Hermitian conjugation** $\tilde{Q}^\flat = -\tilde{Q}^\dagger$:
+**Hermitian conjugation** $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$:
 
 $$
-\tilde{Q}^\flat = -Q_0^* e_0 + Q_1^* e_1 + Q_2^* e_2 + Q_3^* e_3.
+\tilde{Q}^{*} = \bar{Q_0} e_0 - \bar{Q_1} e_1 - \bar{Q_2} e_2 - \bar{Q_3} e_3.
+$$
+
+**Anti-Hermitian conjugation** $\tilde{Q}^\flat = -\tilde{Q}^{*}$:
+
+$$
+\tilde{Q}^\flat = -\bar{Q_0} e_0 + \bar{Q_1} e_1 + \bar{Q_2} e_2 + \bar{Q_3} e_3.
 $$
 
 Each conjugation is an involution: applying it twice returns the original split biquaternion. Each has a fixed-point set, which is a real vector subspace of $\mathbb{H}_{\mathbb{D}}$. The four subspaces are described in the following sections.
 
 ### The Group of Conjugations
 
-The two conjugations $\bar{\cdot}$ and ${}^*$ commute and generate the group $\{\mathrm{id}, \bar{\cdot}, {}^*, {}^\dagger\} \cong \mathbb{Z}/2 \times \mathbb{Z}/2$; the anti-Hermitian conjugation $\flat = -\dagger$ is an involution outside this group:
+The two conjugations ${}^{\natural}$ and $\bar{\cdot}$ commute and generate the group $\{\mathrm{id}, {}^{\natural}, \bar{\cdot}, {}^\dagger\} \cong \mathbb{Z}/2 \times \mathbb{Z}/2$; the anti-Hermitian conjugation $\flat = -{}^{*}$ is an involution outside this group:
 
 $$
-\bar{\tilde{Q}}^* = \tilde{Q}^{*\bar{}}.
+\overline{\tilde{Q}^{\natural}} = \overline{\tilde{Q}^{\natural}}.
 $$
 
 The Hermitian conjugation is the composition of the two:
 
 $$
-\tilde{Q}^\dagger = \bar{\tilde{Q}}^* = \tilde{Q}^{*\bar{}}.
+\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = \overline{\tilde{Q}^{\natural}}.
 $$
 
 The anti-Hermitian conjugation is the negative of the Hermitian conjugation:
 
 $$
-\tilde{Q}^\flat = -\tilde{Q}^\dagger.
+\tilde{Q}^\flat = -\tilde{Q}^{*}.
 $$
 
-So the four conjugations are not independent: they are determined by the two commuting involutions $\bar{\cdot}$ and ${}^*$, together with the sign choice in the definition of $\flat$.
+So the four conjugations are not independent: they are determined by the two commuting involutions ${}^{\natural}$ and $\bar{\cdot}$, together with the sign choice in the definition of $\flat$.
 
 ## The Four Fixed-Point Subspaces
 
@@ -243,7 +243,7 @@ Each of the four conjugations has a fixed-point set, i.e., a set of split biquat
 
 ### The Split Complex Subspace
 
-The fixed points of **quaternion conjugation** are the split biquaternions satisfying $\bar{\tilde{Q}} = \tilde{Q}$. In developed form,
+The fixed points of **quaternion conjugation** are the split biquaternions satisfying $\tilde{Q}^{\natural} = \tilde{Q}$. In developed form,
 
 $$
 Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3 = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
@@ -266,18 +266,18 @@ This is the **split complex subspace** $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, a
 
 ### The Quaternion Subspace
 
-The fixed points of **split complex conjugation** are the split biquaternions satisfying $\tilde{Q}^* = \tilde{Q}$. In developed form,
+The fixed points of **split complex conjugation** are the split biquaternions satisfying $\bar{\tilde{Q}} = \tilde{Q}$. In developed form,
 
 $$
-Q_0^* e_0 + Q_1^* e_1 + Q_2^* e_2 + Q_3^* e_3 = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
+\bar{Q_0} e_0 + \bar{Q_1} e_1 + \bar{Q_2} e_2 + \bar{Q_3} e_3 = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
 $$
 
 Comparing the coefficients:
 
-- $Q_0^* = Q_0$, so $Q_0$ is real.
-- $Q_1^* = Q_1$, so $Q_1$ is real.
-- $Q_2^* = Q_2$, so $Q_2$ is real.
-- $Q_3^* = Q_3$, so $Q_3$ is real.
+- $\bar{Q_0} = Q_0$, so $Q_0$ is real.
+- $\bar{Q_1} = Q_1$, so $Q_1$ is real.
+- $\bar{Q_2} = Q_2$, so $Q_2$ is real.
+- $\bar{Q_3} = Q_3$, so $Q_3$ is real.
 
 The fixed points are split biquaternions with real coefficients:
 
@@ -289,16 +289,16 @@ This is the **quaternion subspace** $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, a co
 
 ### The Hermitian Subspace
 
-The fixed points of **Hermitian conjugation** are the split biquaternions satisfying $\tilde{Q}^\dagger = \tilde{Q}$. In developed form,
+The fixed points of **Hermitian conjugation** are the split biquaternions satisfying $\tilde{Q}^{*} = \tilde{Q}$. In developed form,
 
 $$
-Q_0^* e_0 - Q_1^* e_1 - Q_2^* e_2 - Q_3^* e_3 = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
+\bar{Q_0} e_0 - \bar{Q_1} e_1 - \bar{Q_2} e_2 - \bar{Q_3} e_3 = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
 $$
 
 Comparing the coefficients:
 
-- $Q_0^* = Q_0$, so $Q_0$ is real.
-- $-Q_1^* = Q_1$, so $Q_1^* = -Q_1$, which means $Q_1$ is purely split-imaginary, i.e., $Q_1 = j r_1$ with $r_1 \in \mathbb{R}$.
+- $\bar{Q_0} = Q_0$, so $Q_0$ is real.
+- $-\bar{Q_1} = Q_1$, so $\bar{Q_1} = -Q_1$, which means $Q_1$ is purely split-imaginary, i.e., $Q_1 = j r_1$ with $r_1 \in \mathbb{R}$.
 - Similarly, $Q_2$ and $Q_3$ are purely split-imaginary.
 
 The fixed points are split biquaternions of the form
@@ -311,16 +311,16 @@ This is the **Hermitian subspace** $\mathbb{M}_+$, a real vector space of dimens
 
 ### The Anti-Hermitian Subspace
 
-The fixed points of **anti-Hermitian conjugation** are the split biquaternions satisfying $\tilde{Q}^\flat = \tilde{Q}$, or equivalently $\tilde{Q} = -\tilde{Q}^\dagger$. In developed form,
+The fixed points of **anti-Hermitian conjugation** are the split biquaternions satisfying $\tilde{Q}^\flat = \tilde{Q}$, or equivalently $\tilde{Q} = -\tilde{Q}^{*}$. In developed form,
 
 $$
--Q_0^* e_0 + Q_1^* e_1 + Q_2^* e_2 + Q_3^* e_3 = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
+-\bar{Q_0} e_0 + \bar{Q_1} e_1 + \bar{Q_2} e_2 + \bar{Q_3} e_3 = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
 $$
 
 Comparing the coefficients:
 
-- $-Q_0^* = Q_0$, so $Q_0^* = -Q_0$, which means $Q_0$ is purely split-imaginary, i.e., $Q_0 = j r_0$ with $r_0 \in \mathbb{R}$.
-- $Q_1^* = Q_1$, so $Q_1$ is real.
+- $-\bar{Q_0} = Q_0$, so $\bar{Q_0} = -Q_0$, which means $Q_0$ is purely split-imaginary, i.e., $Q_0 = j r_0$ with $r_0 \in \mathbb{R}$.
+- $\bar{Q_1} = Q_1$, so $Q_1$ is real.
 - Similarly, $Q_2$ and $Q_3$ are real.
 
 The fixed points are split biquaternions of the form
@@ -333,7 +333,7 @@ This is the **anti-Hermitian subspace** $\mathbb{M}_-$, a real vector space of d
 
 ## Quaternion Decomposition
 
-The split complex subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ and the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ are not the two eigenspaces of a single involution; they are different fixed-point sets. However, there is a natural decomposition of $\mathbb{H}_{\mathbb{D}}$ associated with the split complex conjugation ${}^*$.
+The split complex subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ and the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ are not the two eigenspaces of a single involution; they are different fixed-point sets. However, there is a natural decomposition of $\mathbb{H}_{\mathbb{D}}$ associated with the split complex conjugation $\bar{\cdot}$.
 
 Every split biquaternion can be written uniquely as
 
@@ -344,10 +344,10 @@ $$
 where $\tilde{Q}_r$ and $\tilde{Q}_i$ are **ordinary quaternions** (elements of $\mathbb{H}$ embedded in $\mathbb{H}_{\mathbb{D}}$), with real coefficients. The two components are
 
 $$
-\tilde{Q}_r = \frac{1}{2}(\tilde{Q} + \tilde{Q}^*), \qquad \tilde{Q}_i = \frac{1}{2j}(\tilde{Q} - \tilde{Q}^*).
+\tilde{Q}_r = \frac{1}{2}(\tilde{Q} + \bar{\tilde{Q}}), \qquad \tilde{Q}_i = \frac{1}{2j}(\tilde{Q} - \bar{\tilde{Q}}).
 $$
 
-Indeed, $\tilde{Q}_r$ is fixed by split complex conjugation and so is $\tilde{Q}_i$ (compute $\tilde{Q}_i^* = \tilde{Q}_i$), so both lie in the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$; equivalently, $(j\tilde{Q}_i)^* = -j\tilde{Q}_i$ exhibits $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ as the $-1$ eigenspace of ${}^*$.
+Indeed, $\tilde{Q}_r$ is fixed by split complex conjugation and so is $\tilde{Q}_i$ (compute $\bar{\tilde{Q}_i} = \tilde{Q}_i$), so both lie in the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$; equivalently, $(j\tilde{Q}_i)^* = -j\tilde{Q}_i$ exhibits $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ as the $-1$ eigenspace of $\bar{\cdot}$.
 
 This gives the direct sum decomposition
 
@@ -389,7 +389,7 @@ is an algebra isomorphism, and it is the reason the algebra is semisimple.
 
 ## Hermitian Decomposition
 
-The Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ are the two eigenspaces of the Hermitian conjugation $\dagger$. Every split biquaternion decomposes uniquely as the sum of a Hermitian part and an anti-Hermitian part:
+The Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ are the two eigenspaces of the Hermitian conjugation ${}^{*}$. Every split biquaternion decomposes uniquely as the sum of a Hermitian part and an anti-Hermitian part:
 
 $$
 \tilde{Q} = \tilde{Q}_{\mathrm{H}} + \tilde{Q}_{\mathrm{A}}, \qquad \tilde{Q}_{\mathrm{H}} \in \mathbb{M}_+, \quad \tilde{Q}_{\mathrm{A}} \in \mathbb{M}_-.
@@ -398,7 +398,7 @@ $$
 The two components are obtained from the Hermitian conjugation:
 
 $$
-\tilde{Q}_{\mathrm{H}} = \frac{1}{2}(\tilde{Q} + \tilde{Q}^\dagger), \qquad \tilde{Q}_{\mathrm{A}} = \frac{1}{2}(\tilde{Q} - \tilde{Q}^\dagger).
+\tilde{Q}_{\mathrm{H}} = \frac{1}{2}(\tilde{Q} + \tilde{Q}^{*}), \qquad \tilde{Q}_{\mathrm{A}} = \frac{1}{2}(\tilde{Q} - \tilde{Q}^{*}).
 $$
 
 This gives the direct sum decomposition
@@ -411,7 +411,7 @@ where $\mathbb{M}_+$ is the Hermitian subspace and $\mathbb{M}_-$ is the anti-He
 
 ## Relation Between the Three Decompositions
 
-The quaternion decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \oplus j \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ and the Hermitian decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{M}_+ \oplus \mathbb{M}_-$ are two different decompositions of the same eight-dimensional real vector space. They are associated with two different involutions: the quaternion decomposition is associated with the split complex conjugation ${}^*$, and the Hermitian decomposition is associated with the Hermitian conjugation $\dagger$.
+The quaternion decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \oplus j \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ and the Hermitian decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{M}_+ \oplus \mathbb{M}_-$ are two different decompositions of the same eight-dimensional real vector space. They are associated with two different involutions: the quaternion decomposition is associated with the split complex conjugation $\bar{\cdot}$, and the Hermitian decomposition is associated with the Hermitian conjugation ${}^{*}$.
 
 The two decompositions are related by multiplication by the split complex unit $j$, which maps $\mathbb{M}_+$ to $\mathbb{M}_-$ and vice versa. The idempotent decomposition is a third decomposition, associated with the idempotents $\tilde\Pi_\pm$, and it is the one that reveals the semisimple structure of the algebra.
 
@@ -453,10 +453,10 @@ The quadratic form, the inner product, the norm and the Euclidean norm are a for
 | $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient |
 | $Q_0$ | Split scalar part |
 | $\mathbf{Q}$ | Split vector part |
-| $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$ | Quaternion conjugate |
-| $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$ | Split complex conjugate |
-| $\tilde{Q}^\dagger = Q_0^* e_0 - \mathbf{Q}^*$ | Hermitian conjugate |
-| $\tilde{Q}^\flat = -\tilde{Q}^\dagger$ | Anti-Hermitian conjugate |
+| $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$ | Quaternion conjugate |
+| $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \mathbf{Q}^*$ | Split complex conjugate |
+| $\tilde{Q}^{*} = \bar{Q_0} e_0 - \mathbf{Q}^*$ | Hermitian conjugate |
+| $\tilde{Q}^\flat = -\tilde{Q}^{*}$ | Anti-Hermitian conjugate |
 | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | Split complex subspace |
 | $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | Quaternion subspace |
 | $\mathbb{M}_+$ | Hermitian subspace |

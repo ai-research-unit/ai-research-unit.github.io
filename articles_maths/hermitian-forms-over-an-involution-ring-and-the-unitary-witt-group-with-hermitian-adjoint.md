@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Over a field of characteristic not two, a non-degenerate symmetric bilinear form is classified up to congruence by its dimension, its determinant and its Hasse invariant, and the forms are added by orthogonal sum to build the Witt group. When the field is replaced by a ring with an involution, the correct objects are **Hermitian forms** and the correct group is the **unitary Witt group**, whose classification is harder and whose invariants include the discriminant and, for the forms over a central simple algebra with involution, the **Wall group**. A Clifford algebra is a ring with three involutions, and the Hermitian forms it carries — the forms of *Hermitian Forms on a Clifford Algebra with Hermitian Adjoint* — therefore live in a unitary Witt group rather than in an orthogonal one.
+Over a field of characteristic not two, a non-degenerate symmetric bilinear form is classified up to congruence by its dimension, its determinant and its Hasse invariant, and the forms are added by orthogonal sum to build the Witt group. When the field is replaced by a ring with an involution, the correct objects are **Hermitian forms** and the correct group is the **unitary Witt group**, whose classification is harder and whose invariants include the discriminant and, for the forms over a central simple algebra with involution, the **Wall group**. A Clifford algebra is a ring with three involutions, and the Hermitian forms it carries — the forms of *Hermitian Forms on a Hilbert Algebra with Hermitian Adjoint* — therefore live in a unitary Witt group rather than in an orthogonal one.
 
 This article sets out the general theory in the amount the Clifford case needs, and then reads the three forms of the algebra in it. The two structural facts are that the three forms are Hermitian over the algebra with respect to their own anti-involutions, hence represent classes in the corresponding unitary Witt groups, and that their **isometry groups** — the unitary slice for the dagger and the Pin group for Clifford conjugation — preserve the Witt classes, so that the slice and Pin act on the Witt groups by isometries of the forms rather than by arbitrary automorphisms. The classification theory of the algebra-valued quadratic forms, the Clifford invariant and the eightfold way belong to *Quadratic Forms over Algebras and Norms*, *The Brauer–Wall Group and the Eightfold Way* and *The Witt Group and the Grothendieck–Witt Ring*; the classical orthogonal theory is *Bilinear Forms* and *Quadratic Forms and Polarisation*; and the extension and cancellation theorems are *Witt's Theorems*.
 
@@ -17,13 +17,13 @@ $$
 
 for all $x, y \in M$ and $a, b \in R$. The case $\varepsilon = 1$ is a **Hermitian** form and $\varepsilon = -1$ a **skew-Hermitian** or **symplectic** form.
 
-**Remark (the Clifford forms).** For $R = \mathrm{Cl}(V,q)$ the definition is exactly the structure of *Hermitian Forms on a Clifford Algebra with Hermitian Adjoint*: with $c = {}^{\dagger}$ and $\varepsilon = 1$ one gets $h_{\dagger}(x,y) = x^{\dagger}y$; with $c = \bar\cdot$ one gets $h_{\bar\cdot}(x,y) = \bar xy$; with $c = {}^{r}$ one gets $h_r(x,y) = x^{r}y$. The three forms satisfy their own Hermitian conditions and are therefore $\varepsilon$-Hermitian forms over the algebra with the respective involution.
+**Remark (the Clifford forms).** For $R = \mathrm{Cl}(V,q)$ the definition is exactly the structure of *Hermitian Forms on a Hilbert Algebra with Hermitian Adjoint*: with $c = {}^{\dagger}$ and $\varepsilon = 1$ one gets $h_{\dagger}(x,y) = x^{\dagger}y$; with $c = \bar\cdot$ one gets $h_{\bar\cdot}(x,y) = \bar xy$; with $c = {}^{r}$ one gets $h_r(x,y) = x^{r}y$. The three forms satisfy their own Hermitian conditions and are therefore $\varepsilon$-Hermitian forms over the algebra with the respective involution.
 
 **Definition.** The **radical** of a Hermitian form is $M^{\perp} = \{x : h(x,y) = 0 \ \forall y\}$, and the form is **non-degenerate** if $M^{\perp} = 0$ and **nonsingular** if moreover the induced map $M \to M^{*}$ is an isomorphism; over a division ring, or over a field, the two conditions coincide. The **discriminant** is the class of $\det H$ in the appropriate quotient of the units, and the **unitary group** is $\mathrm{U}(h) = \{s : h(sx,sy) = h(x,y)\}$.
 
 **Theorem (Dieudonné, extension and cancellation).** Let $h$ be a nonsingular Hermitian form over a division ring with involution, and let $U \subseteq M$ be a subspace with $M = U\oplus U^{\perp}$. Then every isometry $U \to M$ extends to an isometry of $M$; and if $M = U\oplus U^{\perp}$ for another decomposition with $U' \cong U$, then the two orthogonal complements are isometric (**Witt cancellation**). The statements hold with the usual exceptions in characteristic two.
 
-**Corollary (the Clifford groups).** For $h_{\dagger}$ the unitary group is the unitary slice $U$ and for $h_{\bar\cdot}$ it is the Pin group, by the proposition of *The Unitary Slice and the Compact Real Form with Hermitian Adjoint* and the identification of *Hermitian Forms on a Clifford Algebra with Hermitian Adjoint*. So the Clifford and spin structures are exactly the unitary groups of the Hermitian forms of the algebra, and the extension and cancellation theorems apply to them.
+**Corollary (the Clifford groups).** For $h_{\dagger}$ the unitary group is the unitary slice $U$ and for $h_{\bar\cdot}$ it is the Pin group, by the proposition of *The Unitary Slice and the Compact Real Form with Hermitian Adjoint* and the identification of *Hermitian Forms on a Hilbert Algebra with Hermitian Adjoint*. So the Clifford and spin structures are exactly the unitary groups of the Hermitian forms of the algebra, and the extension and cancellation theorems apply to them.
 
 ## The Witt Group
 
@@ -41,7 +41,7 @@ $$
 [h_{r}] \in W^{1}\bigl(\mathrm{Cl}(V,q), {}^{r}\bigr),
 $$
 
-over a field of characteristic not two, since each is non-degenerate by *Hermitian Forms on a Clifford Algebra with Hermitian Adjoint* and nonsingularity follows from non-degeneracy over the algebra when the algebra is a product of matrix algebras over a field.
+over a field of characteristic not two, since each is non-degenerate by *Hermitian Forms on a Hilbert Algebra with Hermitian Adjoint* and nonsingularity follows from non-degeneracy over the algebra when the algebra is a product of matrix algebras over a field.
 
 **Remark (the $\varepsilon = -1$ companion).** The $\varepsilon$-conjugates $h_{\dagger}(x,y) - h_{\dagger}(y,x)$ and the alternating forms on the algebra give classes in $W^{-1}$, the symplectic Witt group; the two Witt groups together are the data of the Grothendieck–Witt ring, and the reader is referred to *The Witt Group and the Grothendieck–Witt Ring* for the ring structure.
 
@@ -58,7 +58,7 @@ $$
 
 and similarly for $h_r$ with the group $\{s : s^{r}s = 1\}$. So the unit form is not merely non-degenerate: it is **fixed as a Witt class** by the whole unitary slice and the whole Pin group, and the orbits of the Clifford groups in the Witt group are trivial on the unit form.
 
-**Proof.** Immediate from the isometry-group proposition of *Hermitian Forms on a Clifford Algebra with Hermitian Adjoint*: an isometry is by definition a substitution under which the form is unchanged, so its class is unchanged.
+**Proof.** Immediate from the isometry-group proposition of *Hermitian Forms on a Hilbert Algebra with Hermitian Adjoint*: an isometry is by definition a substitution under which the form is unchanged, so its class is unchanged.
 
 **Remark (discriminant and signature).** The discriminant of the unit form is the class of $1$, and the scalar reductions of *The Blade Form and the Hilbert Structure with Hermitian Adjoint* give the signature; over $\mathbb{R}$ the signature is the invariant of the form, positive definite exactly for the negative definite quadratic form in the dagger case, and the inertia is the one computed there.
 

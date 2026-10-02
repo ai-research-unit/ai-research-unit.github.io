@@ -9,26 +9,26 @@ $$
 \qquad
 \Box = -\frac{1}{c^2}\partial_t^2 + \Delta,
 $$
-<!-- CONVENTION — notation (reciprocal). This article's d'Alembertian is the series convention, □ = ∇̃∇̄̃ = ∂²_{ict} + Δ = Δ − c⁻²∂_t². It is MINUS the □ of the exercise article Chirality and the Weyl Spinors, which writes □ = ∂₀² − ∇² and therefore (□ + m²)ψ = 0. The two mass-term signs are the same equation: (□ − m²c²/ℏ²) here and (□ + m²) there have the same kernel, because □_there = −□_here. Do not "correct" either sign in isolation; the two articles differ in metric/sign convention, not in physics. -->
+<!-- CONVENTION — notation. This article's d'Alembertian is the series one, □ = ∇̃∇̃^♮ = ∂²/∂Q₀² + Δ_Q, read on the material sector as ∂²_{ict} + Δ = Δ − c⁻²∂_t², and it is the one operator of the whole series. The same □ and the same mass equation (□ − m²c²/ℏ²)ψ = 0 are used by every companion article; the Weyl-spinor exercise writes the operator in real time as −∂₀² + ∇², which is the same operator, since ∂²_{ict} = −∂₀². -->
 
-the wave equation for a relativistic scalar field. It is the equation that a spin-$0$ field obeys, and it is **second order in the time coordinate**. The companion article *Relativistic Mechanics in Biquaternionic Form* already recorded its biquaternion form in one line, $\left(\tilde{\nabla}\bar{\tilde{\nabla}} - m^2c^2/\hbar^2\right)\tilde{\Phi} = 0$, as one of the ten formulas of relativistic mechanics. The present article does not repeat that line for its own sake; it examines what the line does and does not carry.
+the wave equation for a relativistic scalar field. It is the equation that a spin-$0$ field obeys, and it is **second order in the time coordinate**. The companion article *Relativistic Mechanics in Biquaternionic Form* already recorded its biquaternion form in one line, $\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - m^2c^2/\hbar^2\right)\tilde{\Phi} = 0$, as one of the ten formulas of relativistic mechanics. The present article does not repeat that line for its own sake; it examines what the line does and does not carry.
 
 Two facts about the equation drive everything below. The first is structural: being second order in time, the Klein–Gordon equation is not a single first-order evolution. Equivalently, its general solution carries a positive-frequency and a negative-frequency branch, and both $\phi$ and its complex conjugate $\phi^*$ are needed to describe it. The second is physical, and is the standard objection to the equation as a one-particle wave equation: the two branches come with energies of both signs, the conserved density is not positive definite, and the equation does not conserve particle number. Both defects are real, and the biquaternion notation does not remove either; the honest question is whether it relocates them usefully.
 
 The framework's central algebraic fact is the decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. The parent article, *The Schrödinger Equation in Biquaternionic Form*, showed that the first-order-in-time Schrödinger equation is organized by the **scalar imaginary** $i$: the Hermitian observable $\tilde{H}\in\mathbb{M}_+$ generates a flow whose generator $\tilde{G} = -i\tilde{H}/\hbar$ lies in the material sector $\mathbb{M}_-$, and the same central $i$ supplies the complex structure of the state module. This article asks the corresponding question for the second-order equation: **does the second-order structure fit the $\mathbb{M}_-/\mathbb{M}_+$ split naturally, or does it require a doubling that the split does not supply?** The answer worked out below is that it requires a doubling, and that the doubling is *not* $\mathbb{M}_+\oplus\mathbb{M}_-$; the sector split gives two $i$-related copies of the same equation, not the particle–antiparticle pair.
 
-The conventions are those of the read list. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = \varepsilon_{jkl}e_l$, and $i$ is the scalar imaginary, central in $\mathbb{B}$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, imaginary scalar and real vector), $\mathbb{M}_+$ (Hermitian, real scalar and imaginary vector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions, the fixed points of complex conjugation), and $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_{\mathbb{R}}\{e_0, ie_0\}$ (the complex scalar line, which is the center). The gradient is $\tilde{\nabla} = e_0\partial_{ict} + \sum_k e_k\partial_k$ with $\bar{\tilde{\nabla}} = e_0\partial_{ict} - \sum_k e_k\partial_k$, so that $\tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \Box = \partial_{ict}^2 + \Delta$, and $\partial_{ict}^2 = -\partial_t^2/c^2$. The conjugations are $\bar{\cdot}$ (quaternion), ${}^*$ (complex), ${}^\dagger = \bar{\cdot}^{*}$ (Hermitian), and ${}^\flat = -\dagger$ (anti-Hermitian). Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.
+The conventions are those of the read list. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = \varepsilon_{jkl}e_l$, and $i$ is the scalar imaginary, central in $\mathbb{B}$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, imaginary scalar and real vector), $\mathbb{M}_+$ (Hermitian, real scalar and imaginary vector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions, the fixed points of complex conjugation), and $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_{\mathbb{R}}\{e_0, ie_0\}$ (the complex scalar line, which is the center). The gradient is $\tilde{\nabla} = e_0\partial_{ict} + \sum_k e_k\partial_k$ with $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - \sum_k e_k\partial_k$, so that $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Box = \partial_{ict}^2 + \Delta$, and $\partial_{ict}^2 = -\partial_t^2/c^2$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{*}$ (Hermitian), and ${}^\flat = -{}^{*}$ (anti-Hermitian). Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.
 
 ## The Equation and Its Operator
 
 Write the Klein–Gordon equation in biquaternion form as
 
 $$
-\left(\tilde{\nabla}\bar{\tilde{\nabla}} - \frac{m^2c^2}{\hbar^2}\right)\tilde{\Phi} = 0,
+\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - \frac{m^2c^2}{\hbar^2}\right)\tilde{\Phi} = 0,
 \qquad \tilde{\Phi} = \Phi_0 e_0 + \Phi_1 e_1 + \Phi_2 e_2 + \Phi_3 e_3 .
 $$
 
-The operator $\tilde{\nabla}\bar{\tilde{\nabla}} = \Box$ is a **central scalar** differential operator with real coefficients. Because $\Box$ is central and scalar, it acts on a biquaternion-valued field component by component:
+The operator $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$ is a **central scalar** differential operator with real coefficients. Because $\Box$ is central and scalar, it acts on a biquaternion-valued field component by component:
 
 $$
 \Box\tilde{\Phi} = \sum_{\mu=0}^{3}(\Box\Phi_\mu)\,e_\mu .
@@ -39,10 +39,10 @@ There is no term that mixes the four coefficients. Consequently the biquaternion
 The operator is nevertheless the natural object to name, because it is the composition of $\tilde{\nabla}$ with its quaternion conjugate,
 
 $$
-\tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \Box ,
+\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Box ,
 $$
 
-which is a genuine algebraic statement: the d'Alembertian is the **biquaternion norm** of the gradient biquaternion, exactly as $\tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is the biquaternion norm of a biquaternion. The wave operator is the square of an element of the algebra, and the mass-shell condition below is the same biquaternion norm evaluated on the four-wavevector. That is the structural content the biquaternion writing makes visible.
+which is a genuine algebraic statement: the d'Alembertian is the **biquaternion norm** of the gradient biquaternion, exactly as $\tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is the biquaternion norm of a biquaternion. The wave operator is the square of an element of the algebra, and the mass-shell condition below is the same biquaternion norm evaluated on the four-wavevector. That is the structural content the biquaternion writing makes visible.
 
 ## The Lanczos Family and the Spin-0 Member
 
@@ -68,15 +68,15 @@ $$
 
 which is the same elimination applied to the pair that carries one gradient of each kind: the conjugate gradient squares to $\Box$, and eliminating the auxiliary field leaves $\Box\tilde{A}=(m^2c^2/\hbar^2)\tilde{A}$, whose scalar restriction is the equation above.
 
-<!-- CONVENTION — the two gradients are the two square roots of □: ∇̃∇̄̃ = ∇̄̃∇̃ = □, established at the top of this article and in the companion Maxwell article. The family must therefore carry one of each for its square to be □. The companion articles write Lanczos's system with ∇̃ on both equations, as the source does; the square there is ∇̃∇̃ = ∂_{ict}² − Δ, which differs from □ = ∂_{ict}² + Δ in the sign of the spatial part. The two coincide for a spatially constant field (ΔA_0 = 0), which is exactly the degenerate case above, and are related by the Wick rotation of the time coordinate. Do not transplant the family's square between the two writings without fixing the signature. -->
+<!-- CONVENTION — the two gradients are the two square roots of □: ∇̃∇̃^♮ = ∇̃^♮∇̃ = □, established at the top of this article and in the companion Maxwell article. The family must therefore carry one of each for its square to be □. The companion articles write Lanczos's system with ∇̃ on both equations, as the source does; the square there is ∇̃∇̃ = ∂_{ict}² − Δ, which differs from □ = ∂_{ict}² + Δ in the sign of the spatial part. The two coincide for a spatially constant field (ΔA_0 = 0), which is exactly the degenerate case above, and are related by the Wick rotation of the time coordinate. Do not transplant the family's square between the two writings without fixing the signature. -->
 
 ## Second Order in Time and the Conjugate Pair
 
 An equation second order in $t$ does not determine the field from its value alone: two data, $\tilde{\Phi}$ and $\partial_t\tilde{\Phi}$, are required. Equivalently, the operator $\Box - m^2c^2/\hbar^2$ has no first-order scalar square root inside the algebra, and the obstruction is elementary. Attempt the factorisation
 
 $$
-\left(\bar{\tilde{\nabla}} + \mu\right)\left(\tilde{\nabla} - \mu\right)
-= \Box - \mu\bar{\tilde{\nabla}} + \mu\tilde{\nabla} - \mu^2
+\left(\tilde{\nabla}^{\natural} + \mu\right)\left(\tilde{\nabla} - \mu\right)
+= \Box - \mu\tilde{\nabla}^{\natural} + \mu\tilde{\nabla} - \mu^2
 = \Box + 2\mu\,\boldsymbol{\nabla} - \mu^2,
 \qquad \mu = \frac{mc}{\hbar},
 $$
@@ -84,7 +84,7 @@ $$
 where $\boldsymbol{\nabla} = e_1\partial_x + e_2\partial_y + e_3\partial_z$ is the vector part of the gradient. The cross term $2\mu\boldsymbol{\nabla}$ is a first-order differential operator and does not vanish, and general constant biquaternion coefficients do not remove it. For constant $A$ and $B$,
 
 $$
-\left(\bar{\tilde{\nabla}} + A\right)\left(\tilde{\nabla} + B\right)
+\left(\tilde{\nabla}^{\natural} + A\right)\left(\tilde{\nabla} + B\right)
 = \Box + (A + B)\,\partial_{ict} + \sum_{j=1}^{3}\left(A e_j - e_j B\right)\partial_j + AB,
 $$
 
@@ -98,13 +98,13 @@ $$
 \left(\Box - \mu^2\right)\tilde{\Phi}^* = 0 ,
 $$
 
-because $\Box$ is real and therefore commutes with ${}^*$. For the complex scalar field this is the familiar statement that $\phi$ and $\phi^*$ are independent data; the general solution is a superposition of the two frequency branches, and a complete description needs both. This conjugacy, not the sector decomposition, is what "second order" buys.
+because $\Box$ is real and therefore commutes with $\bar{\cdot}$. For the complex scalar field this is the familiar statement that $\phi$ and $\phi^*$ are independent data; the general solution is a superposition of the two frequency branches, and a complete description needs both. This conjugacy, not the sector decomposition, is what "second order" buys.
 
 It is worth separating three operations that are easy to conflate at this point, because the rest of the article turns on keeping them apart:
 
 - **Multiplication by the scalar imaginary $i$** is central and is a real-linear isomorphism exchanging the sectors, $i\mathbb{M}_+ = \mathbb{M}_-$ and $i\mathbb{M}_- = \mathbb{M}_+$.
-- **Complex conjugation ${}^*$** acts on the coefficients and is an algebra automorphism. Because ${}^*$ commutes with ${}^\dagger$ (the two generate the Klein four-group of conjugations together with $\bar{\cdot}$), it **preserves each sector**: if $\tilde{H}^\dagger = \tilde{H}$ then $(\tilde{H}^*)^\dagger = (\tilde{H}^\dagger)^* = \tilde{H}^*$, and likewise for $\mathbb{M}_-$.
-- **Hermitian conjugation ${}^\dagger$** is the conjugation whose $\pm1$ eigenspaces *define* $\mathbb{M}_\pm$; it is neither $i$-multiplication nor ${}^*$.
+- **Complex conjugation $\bar{\cdot}$** acts on the coefficients and is an algebra automorphism. Because $\bar{\cdot}$ commutes with ${}^{*}$ (the two generate the Klein four-group of conjugations together with ${}^{\natural}$), it **preserves each sector**: if $\tilde{H}^{*} = \tilde{H}$ then $(\tilde{H}^*)^{*} = (\tilde{H}^{*})^* = \tilde{H}^*$, and likewise for $\mathbb{M}_-$.
+- **Hermitian conjugation ${}^{*}$** is the conjugation whose $\pm1$ eigenspaces *define* $\mathbb{M}_\pm$; it is neither $i$-multiplication nor $\bar{\cdot}$.
 
 The distinction is concrete. Take $\tilde{\Phi} = e_0 + i e_1 \in \mathbb{M}_+$. Then
 
@@ -164,22 +164,22 @@ $$
 \tilde{Q} = ict\,e_0 + \mathbf{x}\in\mathbb{M}_- ,
 $$
 
-and the phase is the scalar part of the product of the wave biquaternion with the conjugate four-position, $\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})$, the convention of the companion articles. Using $\mathbf{k}\cdot\mathbf{x} = \sum_j k_jx_j$ and $i^2 = -1$,
+and the phase is the scalar part of the product of the wave biquaternion with the conjugate four-position, $\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})$, the convention of the companion articles. Using $\mathbf{k}\cdot\mathbf{x} = \sum_j k_jx_j$ and $i^2 = -1$,
 
 $$
-\mathrm{Sc}\!\left(\tilde{K}\bar{\tilde{Q}}\right)
+\mathrm{Sc}\!\left(\tilde{K}\tilde{Q}^{\natural}\right)
 = \left(i\frac{\omega}{c}\right)(ict) + \mathbf{k}\cdot\mathbf{x}
 = -\omega t + \mathbf{k}\cdot\mathbf{x},
 $$
 
-which is real. A plane wave of positive frequency is $\tilde{\Phi} = \tilde{\Phi}_0\,e^{\,i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})}$ with $\omega>0$; the exponent $i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})$ is a purely imaginary central element, so the exponential is central and commutes with everything. With the exponential central, differentiation is elementary: $\partial_t\tilde{\Phi} = -i\omega\,\tilde{\Phi}$ and $\partial_{x_j}\tilde{\Phi} = ik_j\,\tilde{\Phi}$, so
+which is real. A plane wave of positive frequency is $\tilde{\Phi} = \tilde{\Phi}_0\,e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})}$ with $\omega>0$; the exponent $i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})$ is a purely imaginary central element, so the exponential is central and commutes with everything. With the exponential central, differentiation is elementary: $\partial_t\tilde{\Phi} = -i\omega\,\tilde{\Phi}$ and $\partial_{x_j}\tilde{\Phi} = ik_j\,\tilde{\Phi}$, so
 
 $$
 \Box\tilde{\Phi} = \left(-\frac{1}{c^2}(-i\omega)^2 + (i\mathbf{k})^2\right)\tilde{\Phi}
 = \left(\frac{\omega^2}{c^2} - \mathbf{k}^2\right)\tilde{\Phi}.
 $$
 
-The Klein–Gordon equation therefore requires $\omega^2/c^2 - \mathbf{k}^2 = m^2c^2/\hbar^2$. Since the biquaternion norm of the four-wavevector is $N(\tilde{K}) = \tilde{K}\bar{\tilde{K}} = -\omega^2/c^2 + \mathbf{k}^2$, this is exactly the mass-shell condition
+The Klein–Gordon equation therefore requires $\omega^2/c^2 - \mathbf{k}^2 = m^2c^2/\hbar^2$. Since the biquaternion norm of the four-wavevector is $N(\tilde{K}) = \tilde{K}\tilde{K}^{\natural} = -\omega^2/c^2 + \mathbf{k}^2$, this is exactly the mass-shell condition
 
 $$
 N(\tilde{K}) = -\frac{m^2c^2}{\hbar^2}
@@ -193,7 +193,7 @@ $$
 \omega^2 = c^2\mathbf{k}^2 + \frac{m^2c^4}{\hbar^2}.
 $$
 
-This is the standard relativistic dispersion relation $E^2 = \mathbf{p}^2c^2 + m^2c^4$ under $E = \hbar\omega$, $\mathbf{p} = \hbar\mathbf{k}$, and in biquaternion language it is exactly the mass-shell condition $\tilde{K}\bar{\tilde{K}} = -m^2c^2/\hbar^2$ — the biquaternion norm of the four-wavevector fixed to a negative constant, the same statement as $\tilde{P}\bar{\tilde{P}} = -m^2c^2$ for the four-momentum. The two roots
+This is the standard relativistic dispersion relation $E^2 = \mathbf{p}^2c^2 + m^2c^4$ under $E = \hbar\omega$, $\mathbf{p} = \hbar\mathbf{k}$, and in biquaternion language it is exactly the mass-shell condition $\tilde{K}\tilde{K}^{\natural} = -m^2c^2/\hbar^2$ — the biquaternion norm of the four-wavevector fixed to a negative constant, the same statement as $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ for the four-momentum. The two roots
 
 $$
 \omega = \pm\sqrt{c^2\mathbf{k}^2 + m^2c^4/\hbar^2}
@@ -218,12 +218,12 @@ $$
 The current lies in the material sector, its imaginary scalar component being $ic\rho$ and its vector component $\mathbf{j}$, exactly as the four-current of relativistic mechanics does. Conservation takes the framework form
 
 $$
-\mathrm{Sc}\!\left(\bar{\tilde{\nabla}}\tilde{J}\right) = 0,
+\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = 0,
 \qquad\text{equivalently}\qquad
 \partial_t\rho + \nabla\cdot\mathbf{j} = 0 .
 $$
 
-Verifying the equivalence is a one-line computation: $\bar{\tilde{\nabla}}\tilde{J}$ has scalar part $\partial_{ict}(ic\rho) - \mathrm{Sc}(\boldsymbol{\nabla}\mathbf{j}) = \partial_t\rho + \nabla\cdot\mathbf{j}$, and the vector part is not set to zero. So the continuity equation is the scalar projection of the biquaternion conservation law, and it holds; numerically, on the plane wave used above the combination $\partial_t\rho + \nabla\cdot\mathbf{j}$ vanishes to finite-difference accuracy ($\sim10^{-6}$).
+Verifying the equivalence is a one-line computation: $\tilde{\nabla}^{\natural}\tilde{J}$ has scalar part $\partial_{ict}(ic\rho) - \mathrm{Sc}(\boldsymbol{\nabla}\mathbf{j}) = \partial_t\rho + \nabla\cdot\mathbf{j}$, and the vector part is not set to zero. So the continuity equation is the scalar projection of the biquaternion conservation law, and it holds; numerically, on the plane wave used above the combination $\partial_t\rho + \nabla\cdot\mathbf{j}$ vanishes to finite-difference accuracy ($\sim10^{-6}$).
 
 The current is conserved, but its time component $\rho$ is **not positive definite**. For the positive-frequency plane wave $\tilde{\Phi}=N e^{i(\mathbf{k}\cdot\mathbf{x}-\omega t)}$ with $\omega>0$, direct substitution gives
 
@@ -260,7 +260,7 @@ What, then, is the doubling that the second-order structure actually needs? Two 
 
 The first is the **Hamiltonian doubling** of the second-order equation: to write it as a first-order system one introduces the conjugate momentum, so the state becomes a pair (field, rate of change of field). This is a genuine enlargement of the state space by a factor of two, and it cannot be avoided. Its relation to the sector split is only the intertwiner of the parent article: the rate $\partial_{ict}\tilde{\Phi}\in\mathbb{M}_\pm$ stays in the sector of $\tilde{\Phi}$, while $i\partial_{ict}\tilde{\Phi}$ moves to the other sector. That is the observable/generator structure of the Schrödinger article reappearing — the central $i$ converts a Hermitian object into a generator in the material sector — and it does not produce a particle–antiparticle pair. It is the same $i$-intertwiner, not a new algebraic ingredient.
 
-The second candidate is the one the Dirac article already identifies: the **spinor-module doubling**. The scalar Klein–Gordon operator has no scalar square root (the cross term above), but it does have a first-order *spinor* square root, the biquaternion Dirac operator $\tilde{\nabla}$, whose mass term is the linear coupling of the two chiralities, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$.
+The second candidate is the one the Dirac article already identifies: the **spinor-module doubling**. The scalar Klein–Gordon operator has no scalar square root (the cross term above), but it does have a first-order *spinor* square root, the biquaternion Dirac operator $\tilde{\nabla}$, whose mass term is the linear coupling of the two chiralities, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$.
 
 The square root acts on the minimal left ideal $\mathbb{B}\tilde{P}\cong\mathbb{C}^2$ and on its complex conjugate, whose direct sum is the four-component Dirac spinor — two spin states for the particle and two for the antiparticle. *This* is the doubling that the second-order structure needs, and it is a representation-theoretic doubling of a complex module, not the real vector-space decomposition $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$.
 
@@ -296,11 +296,11 @@ Stated plainly, the biquaternion form of the scalar Klein–Gordon equation is a
 
 Three things are genuinely rearranged rather than renamed.
 
-1. **The wave operator is a biquaternion norm.** $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$ is the biquaternion norm of the gradient biquaternion, and the mass-shell condition is the same biquaternion norm on the four-wavevector, $\tilde{K}\bar{\tilde{K}} = -m^2c^2/\hbar^2$. The equation and its on-shell condition are both statements about $N(\cdot)$.
+1. **The wave operator is a biquaternion norm.** $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is the biquaternion norm of the gradient biquaternion, and the mass-shell condition is the same biquaternion norm on the four-wavevector, $\tilde{K}\tilde{K}^{\natural} = -m^2c^2/\hbar^2$. The equation and its on-shell condition are both statements about $N(\cdot)$.
 
-2. **The current's home is explicit.** The conserved four-current lies in $\mathbb{M}_-$, and conservation is $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{J})=0$, the same scalar pairing that appears in the framework's $2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ trace formula. The continuity equation is a scalar projection of a stronger biquaternion equation.
+2. **The current's home is explicit.** The conserved four-current lies in $\mathbb{M}_-$, and conservation is $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, the same scalar pairing that appears in the framework's $2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ trace formula. The continuity equation is a scalar projection of a stronger biquaternion equation.
 
-3. **The two "imaginary" operations are separated.** Making the Klein–Gordon structure explicit forces the distinction between the central $i$ (sector-exchanging, frequency-preserving, the complex structure) and complex conjugation ${}^*$ (sector-preserving, frequency-reversing, the particle–antiparticle map). The framework's trap is to read the second-order conjugate pair through the sector split; writing the equations down shows the split cannot carry it.
+3. **The two "imaginary" operations are separated.** Making the Klein–Gordon structure explicit forces the distinction between the central $i$ (sector-exchanging, frequency-preserving, the complex structure) and complex conjugation $\bar{\cdot}$ (sector-preserving, frequency-reversing, the particle–antiparticle map). The framework's trap is to read the second-order conjugate pair through the sector split; writing the equations down shows the split cannot carry it.
 
 The honest bottom line is a negative result about the framework's central structural claim in this case. The second-order relativistic equation does not organize itself by $\mathbb{M}_-/\mathbb{M}_+$; it needs the spinor doubling that the Dirac article develops, and that doubling is representation-theoretic rather than a property of the two real fixed-point subspaces. Where the sector split does appear — the $i$-intertwiner between a Hermitian object and its generator — it acts as the parent article's complex structure, and it converts the two sectors into one another rather than separating particle from antiparticle.
 
@@ -312,7 +312,7 @@ The honest bottom line is a negative result about the framework's central struct
 
 3. **Which first-order structure is canonical?** The scalar Klein–Gordon operator has no scalar square root in $\mathbb{B}$, but it has the spinor square root $\tilde{\nabla}$ with the linear chirality-off-diagonal mass term. Whether that is the *only* admissible first-order-isation, or whether a different one exists that stays closer to the sector split, is not settled here.
 
-4. **The local complex structure.** The parent article leaves open whether the $i$ of the Schrödinger equation remains global when the complex structure is made local through $c=1/\sqrt{\epsilon\mu}$. The same question attaches to the Klein–Gordon imaginary unit, since the phase $i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})$ is central while $c$ is a function of position. This is inherited from the parent, not resolved here.
+4. **The local complex structure.** The parent article leaves open whether the $i$ of the Schrödinger equation remains global when the complex structure is made local through $c=1/\sqrt{\epsilon\mu}$. The same question attaches to the Klein–Gordon imaginary unit, since the phase $i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})$ is central while $c$ is a function of position. This is inherited from the parent, not resolved here.
 
 5. **Second quantization in the biquaternion framework.** The resolution of both defects is to quantize the field, with $\tilde{\Phi}$ and $\tilde{\Phi}^*$ becoming operators. Whether the biquaternion structure adds anything to that procedure, or is again a relabelling of the complex scalar field's second quantization, is open.
 
@@ -323,14 +323,14 @@ The honest bottom line is a negative result about the framework's central struct
 The Klein–Gordon equation in biquaternionic form is
 
 $$
-\left(\tilde{\nabla}\bar{\tilde{\nabla}} - \frac{m^2c^2}{\hbar^2}\right)\tilde{\Phi} = 0,
+\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - \frac{m^2c^2}{\hbar^2}\right)\tilde{\Phi} = 0,
 \qquad
-\tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \Box = \partial_{ict}^2 + \Delta,
+\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Box = \partial_{ict}^2 + \Delta,
 $$
 
 with $\tilde{\Phi}$ a biquaternion-valued field. Because $\Box$ is central and scalar, the equation decomposes into four decoupled scalar equations, and the biquaternion writing is for the scalar field a relabelling.
 
-Being second order in time, the equation has two frequency branches and requires both $\tilde{\Phi}$ and $\tilde{\Phi}^*$. Its dispersion relation is $\omega^2 = c^2\mathbf{k}^2 + m^2c^4/\hbar^2$, which is the mass-shell condition $\tilde{K}\bar{\tilde{K}} = -m^2c^2/\hbar^2$, and the phase of a plane wave is the scalar part $\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}}) = \mathbf{k}\cdot\mathbf{x}-\omega t$. Both branches were checked on a case chosen independently of the derivation. The conserved current $\tilde{J} = ic\rho e_0 + \mathbf{j}$ lies in $\mathbb{M}_-$ and satisfies $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{J})=0$, but its scalar component $\rho$ has the sign of the frequency and is not positive definite; together with the absence of a one-particle interpretation, this is the two-fold defect the equation has always had, and the biquaternion notation neither removes nor disguises it.
+Being second order in time, the equation has two frequency branches and requires both $\tilde{\Phi}$ and $\tilde{\Phi}^*$. Its dispersion relation is $\omega^2 = c^2\mathbf{k}^2 + m^2c^4/\hbar^2$, which is the mass-shell condition $\tilde{K}\tilde{K}^{\natural} = -m^2c^2/\hbar^2$, and the phase of a plane wave is the scalar part $\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = \mathbf{k}\cdot\mathbf{x}-\omega t$. Both branches were checked on a case chosen independently of the derivation. The conserved current $\tilde{J} = ic\rho e_0 + \mathbf{j}$ lies in $\mathbb{M}_-$ and satisfies $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, but its scalar component $\rho$ has the sign of the frequency and is not positive definite; together with the absence of a one-particle interpretation, this is the two-fold defect the equation has always had, and the biquaternion notation neither removes nor disguises it.
 
 The central structural question has a negative answer. The second-order structure does **not** fit the $\mathbb{M}_-/\mathbb{M}_+$ split naturally. Since $\Box$ is central, the split decouples the equation into two sectors hosting two copies of the same real solution space, exchanged by multiplication by $i$; the $\mathbb{M}_-$ part of a solution is the $i$-image of an $\mathbb{M}_+$ solution, so the pairing is the real/imaginary-part split of a complex field, not a conjugate pair. The conjugate pair is complex conjugation, which preserves both sectors, and the doubling the equation actually needs is the spinor-module doubling of the first-order square root $\tilde{\nabla}$, whose mass term is the linear coupling of the two chiralities. That doubling is representation-theoretic, not the real fixed-point decomposition. The non-relativistic limit recovers the parent article's free Schrödinger equation with the same central scalar imaginary $i$, so the two articles use one complex structure and no competing unit.
 
@@ -346,18 +346,18 @@ One exception to the obstruction is imported from the literature and kept separa
 | $\mathbb{C}_{\mathbb{B}}$ | Complex scalar line $\operatorname{span}_{\mathbb{R}}\{e_0, ie_0\}$; the center |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material); home of the four-current $\tilde{J}$ |
 | $\mathbb{M}_+$ | Hermitian subspace (informational); home of the Hamiltonian |
-| $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace; fixed points of ${}^*$ |
-| $\bar{\cdot},\;{}^*,\;{}^\dagger,\;{}^\flat$ | Quaternion, complex, Hermitian, anti-Hermitian conjugation |
+| $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace; fixed points of $\bar{\cdot}$ |
+| ${}^{\natural},\;\bar{\cdot},\;{}^{*},\;{}^\flat$ | Quaternion, complex, Hermitian, anti-Hermitian conjugation |
 | $\tilde{\nabla} = e_0\partial_{ict} + \sum_k e_k\partial_k$ | Biquaternionic gradient |
-| $\bar{\tilde{\nabla}} = e_0\partial_{ict} - \sum_k e_k\partial_k$ | Quaternion-conjugate gradient |
-| $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$ | d'Alembertian |
+| $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - \sum_k e_k\partial_k$ | Quaternion-conjugate gradient |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$ | d'Alembertian |
 | $\tilde{\Phi}$ | Biquaternion-valued Klein–Gordon field |
 | $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | Four-position biquaternion |
 | $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$ | Four-wavevector biquaternion |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
-| $\tilde{K}\bar{\tilde{K}} = -m^2c^2/\hbar^2$ | Mass-shell condition |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
+| $\tilde{K}\tilde{K}^{\natural} = -m^2c^2/\hbar^2$ | Mass-shell condition |
 | $\tilde{J} = ic\rho\,e_0 + \mathbf{j}$ | Conserved four-current |
-| $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{J}) = 0$ | Conservation law |
+| $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ | Conservation law |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (scalar pairing) |
 | $\mu = mc/\hbar$ | Mass parameter |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |

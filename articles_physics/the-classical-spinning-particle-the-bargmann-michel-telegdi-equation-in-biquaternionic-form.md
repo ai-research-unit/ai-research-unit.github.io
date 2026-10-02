@@ -48,10 +48,10 @@ Two boundaries are respected. The **spin-0 and multipole sectors** are excluded:
 
 The article proceeds as follows. The next section fixes the spin four-vector and its reduced form. The following section assembles the covariant equation from the two available structures and fixes the coefficients. The next section transcribes it into $\mathbb{B}$ and verifies the transcription. The remaining sections treat the rest-frame limit and the meaning of $g$, the degenerate case $g=2$ in which the spin is transported exactly as the four-velocity, the laboratory-frame reduction to the Larmor term and the Thomas term, and the separation of what the algebra supplies from what is standard.
 
-**Conventions.** We use those of the foundational articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ $(j\neq k)$, and central scalar imaginary $i$, $i^{2}=-1$. The material sector is $\mathbb{M}_-$ (anti-Hermitian, the four-vectors) and the informational sector is $\mathbb{M}_+$ (Hermitian, the boost rotors), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, the quaternion conjugate is $\bar{\tilde{Q}}$, and $\tilde{Q}^{\dagger}=\bar{\tilde{Q}}^{*}$. The four-velocity is $\tilde{U}=\gamma(ic\,e_0+\mathbf{v})$, $N(\tilde{U})=-c^{2}$; the four-momentum is $\tilde{P}=m\tilde{U}=iE/c\,e_0+\mathbf{p}$; the four-force is $\tilde{K}=d\tilde{P}/d\tau\in\mathbb{M}_-$; and the material sector carries the coordinates $x^\mu=(ct,\mathbf{x})$, so that the biquaternion representative of a four-vector $a^\mu$ is $\tilde{a}=i a^{0}e_0+a_k e_k$ and the invariant pairing is
+**Conventions.** We use those of the foundational articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ $(j\neq k)$, and central scalar imaginary $i$, $i^{2}=-1$. The material sector is $\mathbb{M}_-$ (anti-Hermitian, the four-vectors) and the informational sector is $\mathbb{M}_+$ (Hermitian, the boost rotors), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate is $\tilde{Q}^{\natural}$, and \tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}. The four-velocity is $\tilde{U}=\gamma(ic\,e_0+\mathbf{v})$, $N(\tilde{U})=-c^{2}$; the four-momentum is $\tilde{P}=m\tilde{U}=iE/c\,e_0+\mathbf{p}$; the four-force is $\tilde{K}=d\tilde{P}/d\tau\in\mathbb{M}_-$; and the material sector carries the coordinates $x^\mu=(ct,\mathbf{x})$, so that the biquaternion representative of a four-vector $a^\mu$ is $\tilde{a}=i a^{0}e_0+a_k e_k$ and the invariant pairing is
 
 $$
-\langle\tilde{a},\tilde{b}\rangle=\mathrm{Sc}\!\left(\tilde{a}\,\bar{\tilde{b}}\right)
+\langle\tilde{a},\tilde{b}\rangle=\mathrm{Sc}\!\left(\tilde{a}\,\tilde{b}^{\natural}\right)
 =-a^{0}b^{0}+\mathbf{a}\cdot\mathbf{b}
 =\eta_{\mu\nu}a^\mu b^\nu .
 $$
@@ -69,7 +69,7 @@ and the charge contraction is $\tilde{K}=q\,\mathrm{F}(\tilde{U})$, the biquater
 
 <!-- CONVENTION — field-tensor components: the contraction four-vector $F^{\mu\nu}V_\nu$ and the field action $\mathrm{F}(\tilde V)$ are written here in the real time coordinate $x^0=ct$, where $F^{0k}=E_k/c$. In the corpus's $ict$ convention $x^0=ict$, the same component reads $F^{0k}=iE_k/c$, and the four-force time component is $i\gamma q\,\mathbf{E}\cdot\mathbf{v}/c$. The factor $i$ is the complex time direction; it is the same field, and a reviewer must not remove the $i$ from the $ict$ component to "match" the real-component form. -->
 
-Here $\tau$ is proper time, $t$ laboratory time, $\mathbf{v}$ the velocity, $\gamma$ the Lorentz factor, $\mathbf{E}$ and $\mathbf{B}$ the electric field and magnetic induction, and $q,m,g$ the charge, mass, and gyromagnetic factor. The projection is $P_{\mathbb{M}_-}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{\dagger})$, and the trace pairing on $\mathbb{M}_+$ is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+Here $\tau$ is proper time, $t$ laboratory time, $\mathbf{v}$ the velocity, $\gamma$ the Lorentz factor, $\mathbf{E}$ and $\mathbf{B}$ the electric field and magnetic induction, and $q,m,g$ the charge, mass, and gyromagnetic factor. The projection is $P_{\mathbb{M}_-}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$, and the trace pairing on $\mathbb{M}_+$ is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
 ## The Spin Four-Vector
 
@@ -78,7 +78,7 @@ The spin of a classical particle is a four-vector $\tilde{S}\in\mathbb{M}_-$ sub
 $$
 S_\mu u^\mu=0
 \qquad\Longleftrightarrow\qquad
-\mathrm{Sc}\!\left(\tilde{S}\bar{\tilde{U}}\right)=0 .
+\mathrm{Sc}\!\left(\tilde{S}\tilde{U}^{\natural}\right)=0 .
 $$
 
 The condition is what makes the spin a property of the particle rather than of the frame: it says that in the momentary rest frame the time component vanishes. Writing $\tilde{S}=iS^{0}e_0+\mathbf{S}_{\rm vec}$ and recalling that the boost to the rest frame is the conjugation with $\tilde{\Lambda}_{\mathbf{v}}$, the rest-frame spin is
@@ -207,7 +207,7 @@ $$
 
 Collecting the two results gives the BMT equation. The derivation shows the division of labour between the two inputs: **the algebra does not choose $g$**, which is a dynamical property of the particle; it chooses the *structure*, i.e. it exhibits the two-term family and the constraint $\alpha+\beta c^{2}=1$, and the rest-frame torque then selects the member labelled by $g$.
 
-<!-- CONVENTION — BMT sign and second-term coefficient: with $\eta=\mathrm{diag}(-1,+1,+1,+1)$ and the four-velocity normalized to $u_\mu u^\mu=-c^{2}$, the second term of the BMT equation carries the coefficient $-(g/2-1)/c^{2}$, i.e. $(1-g/2)/c^{2}=(1-\alpha)/c^{2}$ with $\alpha=g/2$. This is the coefficient that makes $d(S_\mu u^\mu)/d\tau=0$ and that gives the pure rest-frame torque. In the metric $\mathrm{diag}(+1,-1,-1,-1)$, with $u_\mu u^\mu=+c^{2}$, the same physical equation carries $+(g/2-1)/c^{2}$. The sign is tied to the trace pairing $\mathrm{Sc}(\tilde a\bar{\tilde b})=-a^{0}b^{0}+\mathbf{a}\cdot\mathbf{b}$ of the material sector; a reviewer must not flip it to match a text that uses the opposite metric. -->
+<!-- CONVENTION — BMT sign and second-term coefficient: with $\eta=\mathrm{diag}(-1,+1,+1,+1)$ and the four-velocity normalized to $u_\mu u^\mu=-c^{2}$, the second term of the BMT equation carries the coefficient $-(g/2-1)/c^{2}$, i.e. $(1-g/2)/c^{2}=(1-\alpha)/c^{2}$ with $\alpha=g/2$. This is the coefficient that makes $d(S_\mu u^\mu)/d\tau=0$ and that gives the pure rest-frame torque. In the metric $\mathrm{diag}(+1,-1,-1,-1)$, with $u_\mu u^\mu=+c^{2}$, the same physical equation carries $+(g/2-1)/c^{2}$. The sign is tied to the trace pairing $\mathrm{Sc}(\tilde a\tilde b^{\natural})=-a^{0}b^{0}+\mathbf{a}\cdot\mathbf{b}$ of the material sector; a reviewer must not flip it to match a text that uses the opposite metric. -->
 
 Two comments on the content of the equation. First, the invariant $B=S_\lambda F^{\lambda\nu}u_\nu$ vanishes when the spin, the field and the velocity are suitably aligned; it is used again, in slightly different form, in the Lorentz-force article. Second, in the absence of a field the equation reduces to $dS^\mu/d\tau=0$: the spin is parallel-transported in the flat metric, so free spinning particles carry their rest-frame orientation unchanged, and the whole of the precession is field-driven.
 
@@ -218,7 +218,7 @@ It remains to write the two structures in $\mathbb{B}$. The key object is the **
 $$
 \mathrm{F}(\tilde{V}):=-\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right),
 \qquad
-P_{\mathbb{M}_-}(\tilde{Q})=\tfrac{1}{2}\left(\tilde{Q}-\tilde{Q}^{\dagger}\right),
+P_{\mathbb{M}_-}(\tilde{Q})=\tfrac{1}{2}\left(\tilde{Q}-\tilde{Q}^{*}\right),
 $$
 
 the anti-Hermitian projection of the product of the material element $\tilde{V}$ with the field-strength biquaternion $\tilde{F}$, rescaled by $-\sqrt{\mu}$. That $\mathrm{F}(\tilde{V})$ lies in the material sector is immediate, since the projection is onto $\mathbb{M}_-$ by construction; that its four-vector components are the contraction $F^{\mu\nu}V_\nu$ is the content of the field-normalization lemma.
@@ -351,7 +351,7 @@ It is useful to separate the contribution of the biquaternion algebra from the s
 **Supplied by the algebra.**
 
 - The two covariant structures available to a material four-vector linear in $F$ and $S$ are exhausted by $(F\cdot S)^\mu$ and $u^\mu B$; the enumeration uses only the antisymmetry of $F$ and the orthogonality $S_\mu u^\mu=0$.
-- The orthogonality constraint on the spin is the invariant pairing $\mathrm{Sc}(\tilde{S}\bar{\tilde{U}})=0$, and its preservation under the evolution is the single algebraic relation $\alpha+\beta c^{2}=1$.
+- The orthogonality constraint on the spin is the invariant pairing $\mathrm{Sc}(\tilde{S}\tilde{U}^{\natural})=0$, and its preservation under the evolution is the single algebraic relation $\alpha+\beta c^{2}=1$.
 - The field coupling is the anti-Hermitian projection of the product $\tilde{V}\tilde{F}$, rescaled by $-\sqrt{\mu}$; the four Maxwell components enter through the two self-dual halves of $\tilde{F}$.
 - The invariant $B$ is the material pairing of the spin with the field action on the four-velocity, $\langle\tilde{S},\mathrm{F}(\tilde{U})\rangle$.
 - The equation is a statement inside $\mathbb{M}_-$ and is automatically sector-preserving; the reality structure that the Lorentz force made delicate, the separation of the electric and magnetic halves, is here handled by the same projection.
@@ -416,14 +416,14 @@ with the **field action**
 $$
 \mathrm{F}(\tilde{V})=-\sqrt{\mu}\,P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right),
 \qquad
-P_{\mathbb{M}_-}(\tilde{Q})=\tfrac{1}{2}\left(\tilde{Q}-\tilde{Q}^{\dagger}\right),
+P_{\mathbb{M}_-}(\tilde{Q})=\tfrac{1}{2}\left(\tilde{Q}-\tilde{Q}^{*}\right),
 $$
 
 whose four-vector components are the contraction $F^{\mu\nu}V_\nu$, and the invariant material pairing
 
 $$
 \big\langle\tilde{a},\tilde{b}\big\rangle
-=\mathrm{Sc}\!\left(\tilde{a}\,\bar{\tilde{b}}\right)
+=\mathrm{Sc}\!\left(\tilde{a}\,\tilde{b}^{\natural}\right)
 =-a^{0}b^{0}+\mathbf{a}\cdot\mathbf{b}.
 $$
 
@@ -443,9 +443,9 @@ is the subject of the companion article of this subcategory. The equation's two-
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ $(j\neq k)$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
-| $\bar{\tilde{Q}}$, $\tilde{Q}^\dagger=\bar{\tilde{Q}}^{*}$ | Quaternion conjugate, Hermitian conjugate |
-| $P_{\mathbb{M}_-}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^\dagger)$ | Projection onto the material sector |
+| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
+| $\tilde{Q}^{\natural}$, \tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}} | Quaternion conjugate, Hermitian conjugate |
+| $P_{\mathbb{M}_-}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$ | Projection onto the material sector |
 | $\tilde{U}=\gamma(ic\,e_0+\mathbf{v})$ | Four-velocity, $N(\tilde{U})=-c^2$ |
 | $\tilde{P}=m\tilde{U}=iE/c\,e_0+\mathbf{p}$ | Four-momentum |
 | $\tilde{K}=d\tilde{P}/d\tau=q\,\mathrm{F}(\tilde{U})$ | Four-force (Lorentz force), in $\mathbb{M}_-$ |
@@ -457,7 +457,7 @@ is the subject of the companion article of this subcategory. The equation's two-
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $F^{0k}=E_k/c$, $F^{jk}=\epsilon_{jkl}B_l$ | Field tensor components (real time; $ict$: $F^{0k}=iE_k/c$) |
 | $\mathrm{F}(\tilde{V})=-\sqrt{\mu}P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$ | Field action, components $F^{\mu\nu}V_\nu$ |
-| $\langle\tilde{a},\tilde{b}\rangle=\mathrm{Sc}(\tilde{a}\bar{\tilde{b}})=-a^0b^0+\mathbf{a}\cdot\mathbf{b}$ | Invariant pairing on $\mathbb{M}_-$ |
+| $\langle\tilde{a},\tilde{b}\rangle=\mathrm{Sc}(\tilde{a}\tilde{b}^{\natural})=-a^0b^0+\mathbf{a}\cdot\mathbf{b}$ | Invariant pairing on $\mathbb{M}_-$ |
 | $B=S_\lambda F^{\lambda\nu}u_\nu=\langle\tilde{S},\mathrm{F}(\tilde{U})\rangle$ | Spin–field–velocity invariant |
 | $\boldsymbol{\omega}_T=\frac{\gamma^2}{c^2(\gamma+1)}\mathbf{a}\times\mathbf{v}$ | Thomas precession angular velocity |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, trace; $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ |

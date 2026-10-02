@@ -72,7 +72,7 @@ Before the decomposition can be read correctly, it is necessary to separate thre
 
 ### As a Rotation Module: $\mathbb{B} = D^{(0)}\oplus D^{(1)}$
 
-The rotation group acts on $\mathbb{B}$ by rotor conjugation, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\bar{\tilde{\Lambda}}$ with $\tilde{\Lambda}\in\mathbb{H}_{\mathbb{B}}$ a real unit quaternion. Under this action the center $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ is pointwise fixed and the traceless part $\mathrm{SL}_2(\mathbb{C}) = \{Q_1e_1+Q_2e_2+Q_3e_3\}$ transforms as a vector:
+The rotation group acts on $\mathbb{B}$ by rotor conjugation, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\natural}$ with $\tilde{\Lambda}\in\mathbb{H}_{\mathbb{B}}$ a real unit quaternion. Under this action the center $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ is pointwise fixed and the traceless part $\mathrm{SL}_2(\mathbb{C}) = \{Q_1e_1+Q_2e_2+Q_3e_3\}$ transforms as a vector:
 
 $$
 \mathbb{B} = D^{(0)}\oplus D^{(1)} \qquad\text{(as a complex rotation module)},
@@ -269,7 +269,7 @@ The finite algebra is finite because it is the local value space; the tower is i
 | $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ | Center of $\mathbb{B}$ (the scalars) |
 | $\mathrm{Tr}(\cdot)$ | Matrix trace, $\mathrm{Tr}(e_0) = 2$ (the conventions article) |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\tilde{\Lambda}\in\mathbb{H}_{\mathbb{B}}$, $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ | Rotation rotor, acting by $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\bar{\tilde{\Lambda}}$ |
+| $\tilde{\Lambda}\in\mathbb{H}_{\mathbb{B}}$, $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ | Rotation rotor, acting by $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\natural}$ |
 | $D^{(l)}$ | Irreducible rotation representation, $\dim_{\mathbb{C}} D^{(l)} = 2l+1$ (Wigner's $D$) |
 | $L^2(S^2) = \bigoplus_l D^{(l)}$ | Angular function space (infinite-dimensional) |
 | $\operatorname{Sym}^l_0(D^{(1)})\cong D^{(l)}$ | Symmetric traceless $l$-th power of the vector part |

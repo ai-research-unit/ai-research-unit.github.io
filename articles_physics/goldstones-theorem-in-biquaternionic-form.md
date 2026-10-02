@@ -22,12 +22,12 @@ The article is organised as follows. The next section states the symmetry and it
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the construction of the current from the central scalar action.
 - Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material four-wavevector and the biquaternion norm.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ and $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$. The scalar field is $\tilde{\Phi}=\phi\,e_0$ with $\phi$ complex, written in real components as
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$. The scalar field is $\tilde{\Phi}=\phi\,e_0$ with $\phi$ complex, written in real components as
 
 $$
 \phi=\frac{1}{\sqrt2}\left(\phi_1+i\phi_2\right),
 \qquad
-\mathrm{Sc}\!\left(\tilde{\Phi}^\dagger\tilde{\Phi}\right)=\frac12\left(\phi_1^2+\phi_2^2\right),
+\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\tilde{\Phi}\right)=\frac12\left(\phi_1^2+\phi_2^2\right),
 $$
 
 so that $\phi_1,\phi_2$ are the two real scalar fields of the sector and the kinetic term is $\frac12[(\partial\phi_1)^2+(\partial\phi_2)^2]$ in natural units $\hbar=c=1$. The $U(1)$ charge and current are those of the companion Noether article; the mass parameter is $\mu=mc/\hbar$ where it appears.
@@ -41,7 +41,7 @@ $$
 \qquad
 \hat U_\alpha\,\hat{\tilde{\Phi}}\,\hat U_\alpha^{-1}=e^{-i\alpha}\,\hat{\tilde{\Phi}},
 \qquad
-\hat U_\alpha\,\hat{\tilde{\Phi}}^\dagger\,\hat U_\alpha^{-1}=e^{+i\alpha}\,\hat{\tilde{\Phi}}^\dagger ,
+\hat U_\alpha\,\hat{\tilde{\Phi}}^{*}\,\hat U_\alpha^{-1}=e^{+i\alpha}\,\hat{\tilde{\Phi}}^{*} ,
 $$
 
 with $\hat Q$ the conserved charge of the Noether current $\tilde J\in\mathbb{M}_-$. The transformation is an internal symmetry: it commutes with the Poincaré action, it does not rotate any spinor index, and its parameter multiplies the field by a **central** unitary. The group is $U(1)$, one generator, one phase.
@@ -63,17 +63,17 @@ Three consequences must be distinguished, because they are often conflated.
 
 ## The Potential, the Vacuum Manifold and the Order Parameter
 
-The renormalizable potential of a single complex scalar that respects the $U(1)$ and the reality of the action is a function of the invariant $\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})$ alone,
+The renormalizable potential of a single complex scalar that respects the $U(1)$ and the reality of the action is a function of the invariant $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$ alone,
 
 $$
-V=\frac{\lambda}{4}\left(\mathrm{Sc}\!\left(\tilde{\Phi}^\dagger\tilde{\Phi}\right)-v^2\right)^2
+V=\frac{\lambda}{4}\left(\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\tilde{\Phi}\right)-v^2\right)^2
 =\frac{\lambda}{4}\left(\frac{\phi_1^2+\phi_2^2}{2}-v^2\right)^2 ,
 $$
 
 with $\lambda>0$. The potential is bounded below, symmetric under $\phi\to e^{i\alpha}\phi$, and minimized when
 
 $$
-\mathrm{Sc}\!\left(\tilde{\Phi}^\dagger\tilde{\Phi}\right)=v^2
+\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\tilde{\Phi}\right)=v^2
 \qquad\Longleftrightarrow\qquad
 \frac{\phi_1^2+\phi_2^2}{2}=v^2 ,
 $$
@@ -195,7 +195,7 @@ $$
 
 which by translation invariance depends on the difference, and by Lorentz covariance is a sum of terms proportional to $p^\mu$ with Lorentz-invariant coefficients. Its Fourier transform carries a spectral weight $\rho(p^2)$, and the conservation of the current, $\partial_\mu F^\mu=0$, requires $p^2\rho(p^2)=0$: the spectral weight is supported at $p^2=0$, that is, on the massless shell. A massive intermediate state would give a pole at $p^2=m^2\ne0$, which conservation forbids; only a massless state can saturate the non-vanishing commutator. The particle so forced into the spectrum is the Goldstone boson, and it couples to the current with the strength measured by the matrix element $\langle0|J^\mu(0)|\theta(p)\rangle=ifp^\mu$ discussed below. This is the standard spectral argument and is transcribed rather than re-derived.
 
-**The effective-potential form.** If the symmetry is broken, the order parameter is a nonzero minimum of the effective potential. The effective potential is a function of the fields invariant under the symmetry, hence of $|\phi|^2$ alone at the renormalizable level; along the symmetry orbit it is constant, so the second derivative along the orbit vanishes. The second derivative of the effective potential is the mass-squared matrix at zero momentum, so the mode along the orbit has zero mass. This is the version verified numerically above, and it is the version that the framework's central-valued potential most directly supports: the potential is a function of the central invariant $\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})$, the orbit is the central circle of phases, and the flatness is exact.
+**The effective-potential form.** If the symmetry is broken, the order parameter is a nonzero minimum of the effective potential. The effective potential is a function of the fields invariant under the symmetry, hence of $|\phi|^2$ alone at the renormalizable level; along the symmetry orbit it is constant, so the second derivative along the orbit vanishes. The second derivative of the effective potential is the mass-squared matrix at zero momentum, so the mode along the orbit has zero mass. This is the version verified numerically above, and it is the version that the framework's central-valued potential most directly supports: the potential is a function of the central invariant $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$, the orbit is the central circle of phases, and the flatness is exact.
 
 Both forms of the proof use only the existence of the continuous symmetry, the non-invariance of the vacuum, and the conservation of the current; none uses the biquaternion structure. The framework's content is that the symmetry in question — the central phase — is the scalar sector's canonical continuous symmetry, and that its order parameter and Goldstone field are central-valued.
 
@@ -252,7 +252,7 @@ Four statements summarise what the framework contributes to Goldstone's theorem.
 
 **The order parameter is a central condensate.** The vacuum expectation value $\langle\hat{\tilde{\Phi}}\rangle=\tilde ve_0$ lies in the center and commutes with the algebra; it carries no spinor index, and the breaking is a breaking of a symmetry acting on the center. The Goldstone field inherits this: it is a scalar, not a spinor, and the framework's state module is not involved in the breaking.
 
-**The flatness is the flatness of the biquaternion norm on the phase orbit.** The potential is a function of the central invariant $\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})$, and the vacuum manifold is its level set, a circle. The radial and angular directions of the central field space are, respectively, the massive and massless directions, and the masslessness is the exact flatness of the potential along the orbit.
+**The flatness is the flatness of the biquaternion norm on the phase orbit.** The potential is a function of the central invariant $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$, and the vacuum manifold is its level set, a circle. The radial and angular directions of the central field space are, respectively, the massive and massless directions, and the masslessness is the exact flatness of the potential along the orbit.
 
 **The algebra supplies no new mechanism.** The theorem, its proof, the decay constant and the counting are standard, and the framework contributes the centrality of the symmetry, the order parameter and the Goldstone mode, plus the biquaternion-norm geometry of the invariant. The scalar sector's usual structural result persists: no native ladder in $\mathbb{B}$, and the Goldstone boson is a standard scalar constructed on the imported formalism.
 
@@ -272,7 +272,7 @@ The discrete case is worth one remark for contrast. A $\mathbb{Z}/2$ symmetry ca
 
 ## Summary
 
-The scalar sector's canonical continuous symmetry is the central phase $U(1)$ generated by the Noether charge of the current $\tilde J\in\mathbb{M}_-$, acting on the central-valued field by $\hat\phi\to e^{-i\alpha}\hat\phi$. Taking the renormalizable invariant potential $V=\frac{\lambda}{4}(\mathrm{Sc}(\tilde\Phi^\dagger\tilde\Phi)-v^2)^2$, the vacuum manifold is the circle $\mathrm{Sc}(\tilde\Phi^\dagger\tilde\Phi)=v^2$, the order parameter $\langle\hat{\tilde\Phi}\rangle=\tilde ve_0$ is a central condensate, and the symmetry breaks as $U(1)\to\{1\}$. Expanding in the two real components, $\phi_1=\sqrt2v+h$ and $\phi_2=\theta$, the kinetic term is canonical, the mass matrix is diagonal with entries $(m_h^2,m_G^2)=(\lambda v^2,0)$, and the Goldstone boson $\theta$ is exactly massless: the potential depends only on the modulus, so the angular direction is exactly flat. The values were verified numerically — radial curvature $\lambda v^2$ in the modulus coordinate, angular curvature the numerical zero of a second difference, mixed derivative identically zero.
+The scalar sector's canonical continuous symmetry is the central phase $U(1)$ generated by the Noether charge of the current $\tilde J\in\mathbb{M}_-$, acting on the central-valued field by $\hat\phi\to e^{-i\alpha}\hat\phi$. Taking the renormalizable invariant potential $V=\frac{\lambda}{4}(\mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi)-v^2)^2$, the vacuum manifold is the circle $\mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi)=v^2$, the order parameter $\langle\hat{\tilde\Phi}\rangle=\tilde ve_0$ is a central condensate, and the symmetry breaks as $U(1)\to\{1\}$. Expanding in the two real components, $\phi_1=\sqrt2v+h$ and $\phi_2=\theta$, the kinetic term is canonical, the mass matrix is diagonal with entries $(m_h^2,m_G^2)=(\lambda v^2,0)$, and the Goldstone boson $\theta$ is exactly massless: the potential depends only on the modulus, so the angular direction is exactly flat. The values were verified numerically — radial curvature $\lambda v^2$ in the modulus coordinate, angular curvature the numerical zero of a second difference, mixed derivative identically zero.
 
 The Goldstone field's current is $J^\mu=-f\partial^\mu\theta+O(\text{two fields})$ with decay constant $f=\sqrt2v\propto\langle\hat\phi\rangle$, and its defining matrix element is $\langle0|J^\mu(0)|\theta(p)\rangle=ifp^\mu$; the couplings of $\theta$ are of derivative type. Goldstone's theorem — one massless scalar per broken generator — holds, with the spectral proof and the effective-potential proof both applying, and the counting rule $n_{\mathrm{NG}}=\dim(G/H)$ giving one for $U(1)\to\{1\}$, none for $U(1)\to U(1)$, and $N-1$ for $O(N)\to O(N-1)$. The framework's contribution is the centrality of the symmetry, the order parameter and the Goldstone mode, and the biquaternion-norm geometry of the invariant potential; the theorem and its consequences are standard, and the scalar sector supplies no new mechanism, as its absence of a native ladder in $\mathbb{B}$ requires.
 
@@ -285,8 +285,8 @@ The Goldstone field's current is $J^\mu=-f\partial^\mu\theta+O(\text{two fields}
 | $i$ | Central scalar imaginary |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ | Center; value space of the order parameter and the Goldstone mode |
 | $\tilde{\Phi}=\phi\,e_0$, $\phi=(\phi_1+i\phi_2)/\sqrt2$ | Central scalar and its real components |
-| $V=\frac{\lambda}{4}(\mathrm{Sc}(\tilde\Phi^\dagger\tilde\Phi)-v^2)^2$ | Invariant potential |
-| $\mathrm{Sc}(\tilde\Phi^\dagger\tilde\Phi)=v^2$ | Vacuum manifold ($\mathbb{S}^1$) |
+| $V=\frac{\lambda}{4}(\mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi)-v^2)^2$ | Invariant potential |
+| $\mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi)=v^2$ | Vacuum manifold ($\mathbb{S}^1$) |
 | $\langle\hat{\tilde\Phi}\rangle=\tilde v e_0$ | Order parameter (central condensate) |
 | $\phi_1=\sqrt2v+h$, $\phi_2=\theta$ | Radial (Higgs) and angular (Goldstone) fields |
 | $m_h^2=\lambda v^2$, $m_G^2=0$ | Mass matrix entries; Goldstone exactly massless |

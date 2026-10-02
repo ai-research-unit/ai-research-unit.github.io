@@ -118,10 +118,10 @@ $$
 The exchange operator is therefore the algebraic carrier of the interaction. Its properties are immediate:
 
 $$
-F^2=e_0\otimes e_0,\qquad F^\dagger=F,\qquad \mathrm{Tr}(F)=2,\qquad F\ne \pm e_0\otimes e_0 .
+F^2=e_0\otimes e_0,\qquad F^{*}=F,\qquad \mathrm{Tr}(F)=2,\qquad F\ne \pm e_0\otimes e_0 .
 $$
 
-The first follows from $(e_k\otimes e_k)^2=e_k^2\otimes e_k^2=e_0\otimes e_0$ and the orthogonality of the contributions for distinct $k$; the second from $e_k^\dagger=-e_k$; the third from $\mathrm{Tr}(e_k\otimes e_k)=0$. Under $\Phi\otimes\Phi$ the exchange operator becomes $\tfrac12\left(I\otimes I+\sum_k\sigma_k\otimes\sigma_k\right)$, the standard two-qubit swap.
+The first follows from $(e_k\otimes e_k)^2=e_k^2\otimes e_k^2=e_0\otimes e_0$ and the orthogonality of the contributions for distinct $k$; the second from $e_k^{*}=-e_k$; the third from $\mathrm{Tr}(e_k\otimes e_k)=0$. Under $\Phi\otimes\Phi$ the exchange operator becomes $\tfrac12\left(I\otimes I+\sum_k\sigma_k\otimes\sigma_k\right)$, the standard two-qubit swap.
 
 ### The coupled projectors
 

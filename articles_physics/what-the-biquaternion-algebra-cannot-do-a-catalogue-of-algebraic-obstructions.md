@@ -22,7 +22,7 @@ The catalogue is not a list of defects of the framework. It is the map of the bo
 
 Each item below is given in the form **statement — proof — consequence — remedy**, and each is verified either by explicit computation or by a standard theorem cited as standard.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central $i$, $i^2=-1$. Conjugations are $\bar{\cdot}$ (quaternion), ${}^{*}$ (complex), $\dagger=\bar{\cdot}\circ{}^{*}$ (Hermitian), with $\flat=-\dagger$. The subspaces are $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ and $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, with $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. States are $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|\leq1$; pure states are $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$; the state module is the minimal left ideal $\mathbb{B}p$ with $p=\tfrac12(e_0+ie_3)$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central $i$, $i^2=-1$. Conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}={}^{\natural}\circ\bar{\cdot}$ (Hermitian), with $\flat=-{}^{*}$. The subspaces are $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ and $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, with $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. States are $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|\leq1$; pure states are $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$; the state module is the minimal left ideal $\mathbb{B}p$ with $p=\tfrac12(e_0+ie_3)$.
 
 ## How an Obstruction Is Certified
 
@@ -92,17 +92,17 @@ so the solutions are exactly $0$ and $e_0$. The corresponding two-sided ideals $
 
 **Consequence.** The biquaternion norm cannot certify that an element is non-zero, cannot define a topology, and cannot supply the positive quantity that Born probabilities require. Its physical role is the determinant — the Minkowski form on the Hermitian sector and the null cone of the pure states — not a metre.
 
-**Remedy.** Use the Hermitian form $\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Y})$ for positivity, and the biquaternion norm for the cone and the metric; the two are not interchangeable, and the companion articles of this subcategory use them accordingly.
+**Remedy.** Use the Hermitian form $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$ for positivity, and the biquaternion norm for the cone and the metric; the two are not interchangeable, and the companion articles of this subcategory use them accordingly.
 
 ### O6. The biquaternion norm vanishes on non-zero elements
 
 **Statement.** The radical of the biquaternion norm is non-trivial: there are non-zero $\tilde{Q}$ with $N(\tilde{Q})=0$, and every null element is orthogonal to itself in the associated bilinear form. In particular the whole pure-state boundary is null.
 
-**Proof.** For the pure-state projector, $\bar{\tilde{P}}(\hat{\mu})=e_0-\tilde\Pi(\hat{\mu})$ and hence
+**Proof.** For the pure-state projector, $\tilde{P}^{\natural}(\hat{\mu})=e_0-\tilde\Pi(\hat{\mu})$ and hence
 $$
-N\bigl(\tilde\Pi(\hat{\mu})\bigr)=\tilde\Pi(\hat{\mu})\,\bar{\tilde{P}}(\hat{\mu})=\tilde\Pi(\hat{\mu})\bigl(e_0-\tilde\Pi(\hat{\mu})\bigr)=0
+N\bigl(\tilde\Pi(\hat{\mu})\bigr)=\tilde\Pi(\hat{\mu})\,\tilde{P}^{\natural}(\hat{\mu})=\tilde\Pi(\hat{\mu})\bigl(e_0-\tilde\Pi(\hat{\mu})\bigr)=0
 $$
-for every $\hat{\mu}$ while $\tilde\Pi(\hat{\mu})\neq0$; indeed the defining property $\tilde{P}^2=\tilde{P}$ together with $\tilde{P}\bar{\tilde{P}}=0$ characterises the boundary of the state space. Likewise $e_0\pm ie_k$ are null non-zero vectors, since $N(e_0\pm ie_k)=(1-1)e_0=0$.
+for every $\hat{\mu}$ while $\tilde\Pi(\hat{\mu})\neq0$; indeed the defining property $\tilde{P}^2=\tilde{P}$ together with $\tilde{P}\tilde{P}^{\natural}=0$ characterises the boundary of the state space. Likewise $e_0\pm ie_k$ are null non-zero vectors, since $N(e_0\pm ie_k)=(1-1)e_0=0$.
 
 **Consequence.** The state space is the boundary of the cone of a degenerate quadratic form. One cannot speak of the "length" of a state; the metric must be obtained as the second variation on the null boundary, and not from the form's value at a point.
 
@@ -112,7 +112,7 @@ for every $\hat{\mu}$ while $\tilde\Pi(\hat{\mu})\neq0$; indeed the defining pro
 
 **Statement.** There is no quadratic form on $\mathbb{B}$ that is simultaneously positive definite and independent of an arbitrary normalization. The Hermitian form is positive definite but depends on the trace normalization; the biquaternion norm is canonical but indefinite.
 
-**Proof.** The Hermitian form is determined by the trace, and the trace is normalised by $\mathrm{Tr}(e_0)=2$, a convention fixed by the degree of the matrix model; replacing $\mathrm{Tr}$ by $c\,\mathrm{Tr}$ for positive $c$ gives another positive definite form, so the positivity is canonical but the scale is not. The biquaternion norm is determined by the algebra's product alone, $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, and is therefore canonical, but it is indefinite by O5. A form that were both would have to be intrinsic and positive simultaneously, and no such form exists on an algebra with a null cone.
+**Proof.** The Hermitian form is determined by the trace, and the trace is normalised by $\mathrm{Tr}(e_0)=2$, a convention fixed by the degree of the matrix model; replacing $\mathrm{Tr}$ by $c\,\mathrm{Tr}$ for positive $c$ gives another positive definite form, so the positivity is canonical but the scale is not. The biquaternion norm is determined by the algebra's product alone, $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$, and is therefore canonical, but it is indefinite by O5. A form that were both would have to be intrinsic and positive simultaneously, and no such form exists on an algebra with a null cone.
 
 **Consequence.** All probabilities, distances and normalizations in the framework are trace-relative. The trace normalization is a posit, and the numerical factors of the Fubini–Study metric are statements in the normalization $\mathrm{Tr}(e_0)=2$.
 
@@ -142,7 +142,7 @@ for every $\hat{\mu}$ while $\tilde\Pi(\hat{\mu})\neq0$; indeed the defining pro
 
 **Statement.** The group of invertible elements preserving the biquaternion norm under conjugation is $G_N=U(1)\cdot SL(2,\mathbb{C})$, strictly larger than the unitary group $U(2)$ that preserves the Hermitian form and acts on the state space. The algebra's quadratic form and its state-space geometry therefore have different symmetries.
 
-**Proof.** From the multiplicativity of the determinant, $N(\tilde{U}\tilde{Q}\tilde{U}^\dagger)=|N(\tilde{U})|^2N(\tilde{Q})$, so the biquaternion norm is preserved exactly by the elements with $|N(\tilde{U})|=1$; the group is seven-real-dimensional and contains $U(2)$, which is four-real-dimensional. The element $\mathrm{diag}(\lambda,\lambda^{-1})$ with real $\lambda\neq1$ is in $G_N$ but not in $U(2)$.
+**Proof.** From the multiplicativity of the determinant, $N(\tilde{U}\tilde{Q}\tilde{U}^{*})=|N(\tilde{U})|^2N(\tilde{Q})$, so the biquaternion norm is preserved exactly by the elements with $|N(\tilde{U})|=1$; the group is seven-real-dimensional and contains $U(2)$, which is four-real-dimensional. The element $\mathrm{diag}(\lambda,\lambda^{-1})$ with real $\lambda\neq1$ is in $G_N$ but not in $U(2)$.
 
 **Consequence.** One cannot identify "the symmetry group" of the framework by asking which transformations preserve the biquaternion norm: the answer is larger than the group of physical symmetries and includes transformations that change the Hermitian norm of states.
 
@@ -198,7 +198,7 @@ and under the matrix model $M_2(\mathbb{C})\otimes_\mathbb{C}M_2(\mathbb{C})\con
 
 **Statement.** There is no quantum dynamics over $\mathbb{B}$ that preserves the Hermitian norm for every Hermitian generator and whose unit is a non-central root of $-e_0$. A dynamics $i\hbar\,\partial_t\psi=J\tilde{H}\psi$ preserves the Hermitian norm for every Hermitian $\tilde{H}$ only if $J=\pm i$.
 
-**Proof.** The generator is $G=-\hbar^{-1}J\tilde{H}$, so $G^\dagger=-\hbar^{-1}\tilde{H}J^\dagger$; anti-Hermiticity of $G$ for all Hermitian $\tilde{H}$ therefore reads $-\tilde{H}J^\dagger=J\tilde{H}$ for all Hermitian $\tilde{H}$, which at $\tilde{H}=e_0$ forces $J^\dagger=-J$ (so a general root of $-e_0$, which need not be anti-Hermitian, is excluded) and then requires $\tilde{H}J=J\tilde{H}$ for all Hermitian $\tilde{H}$, hence $J$ central. The central roots of $-e_0$ are $\pm i$. The non-central root $J=e_3$ with $\tilde{H}=ie_1$ gives $G=-\hbar^{-1}ie_2$, which is Hermitian and generates a non-unitary flow.
+**Proof.** The generator is $G=-\hbar^{-1}J\tilde{H}$, so $G^{*}=-\hbar^{-1}\tilde{H}J^\dagger$; anti-Hermiticity of $G$ for all Hermitian $\tilde{H}$ therefore reads $-\tilde{H}J^\dagger=J\tilde{H}$ for all Hermitian $\tilde{H}$, which at $\tilde{H}=e_0$ forces $J^\dagger=-J$ (so a general root of $-e_0$, which need not be anti-Hermitian, is excluded) and then requires $\tilde{H}J=J\tilde{H}$ for all Hermitian $\tilde{H}$, hence $J$ central. The central roots of $-e_0$ are $\pm i$. The non-central root $J=e_3$ with $\tilde{H}=ie_1$ gives $G=-\hbar^{-1}ie_2$, which is Hermitian and generates a non-unitary flow.
 
 **Consequence.** The framework cannot realise a genuinely "biquaternionic" quantum mechanics whose evolution preserves the norm for the full class of Hermitian generators: that demand collapses the scalar field to the centre $\mathbb{C}$, and the algebra acts as a matrix algebra over that field. A non-central unit is not excluded outright, but its reach is exactly its commutant: $J=e_1$ gives $G=-\hbar^{-1}e_1\tilde{H}$, which is anti-Hermitian for precisely those Hermitian $\tilde{H}$ commuting with $e_1$, and Hermitian — hence norm-violating — for $\tilde{H}=ie_2$, say. The alternative units $e_1,e_2,e_3$, and more generally the unit pure real quaternions, are roots of $-e_0$ and are available as algebraic structures, but not as units of a norm-preserving dynamics; the elements $ie_k$ are not roots of $-e_0$ at all, since $(ie_k)^2=+e_0$.
 
@@ -363,12 +363,12 @@ Each obstruction is proved from the defining relations and is stated with its co
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_0,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $\dagger=\bar{\cdot}\circ{}^{*}$ | Hermitian conjugation |
+| ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
 | $Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | Centre of $\mathbb{B}$; the series symbol is $\mathbb{C}_{\mathbb{B}}$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm, $\mathbb{B}^{\times}=\{N\neq0\}$ |
-| $\langle\tilde{Q},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Y})$ | Hermitian form |
+| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, $\mathbb{B}^{\times}=\{N\neq0\}$ |
+| $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$ | Hermitian form |
 | $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$ | Pure state, null under $N$ |
 | $\mathbb{A}_{\hat{n}}$ | Maximal commutative subalgebra |
 | $\mathbb{B}p$, $p=\tfrac12(e_0+ie_3)$, also written $S$ | State (spinor) module, $\cong\mathbb{C}^2$; $\mathbb{B}=\mathrm{End}(S)$ |

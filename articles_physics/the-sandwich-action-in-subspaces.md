@@ -5,7 +5,7 @@
 The article *Biquaternion Rotations and Lorentz Transformations* makes a single element of the algebra act on the algebra by the sandwich
 
 $$
-\tilde S \longmapsto \tilde{Q}\,\tilde S\,\tilde{Q}^\dagger ,
+\tilde S \longmapsto \tilde{Q}\,\tilde S\,\tilde{Q}^{*} ,
 $$
 
 reads it as the action of the group of units, and computes its kernel, its invariants and its action on the six distinguished subspaces. This article restricts the **acting element** to one of the six subspaces and records what the restriction does to the operator. It is the counterpart of *The Polar Element Representation in Subspaces*, which restricts the same six subspaces in the other direction: there the question is which of the four polar factors a subspace can carry, here it is which operator an element of a subspace produces. The acting element keeps any biquaternion norm: the unit-norm slice, where the sandwich is the Lorentz action of *Biquaternion Rotations and Lorentz Transformations*, is recovered below as the special case in which the operator is an isometry, and off that slice the sandwich of a subspace element is a similarity.
@@ -14,7 +14,7 @@ The question is a physical one, and it has a physical answer. The Lorentz transf
 
 Three results organise the answer. The first is a **central invariance**: multiplying the acting element by a central scalar multiplies the sandwich by the squared modulus of that scalar. Because the scalar imaginary $i$ is central, the six subspaces collapse to four **operator classes**: the centre, the vector subspace, the two halves together, and the two sectors together; an antiquaternion acts exactly as its real quaternion, and an element of the material sector acts exactly as the corresponding informational element. The second is that the operator's **type** is decided by the subspace in a sharp way: the centre gives the dilations, the vector subspace gives the similarities, the rotations by $\pi$ among them, the two halves give the rotations, and the two sectors give the similarities, which on the unit-norm slice are the Lorentz transformations: the boosts, and the boosts composed with a rotation by $\pi$ on the negative-norm branch. The third is the answer to the question the series puts to the Hermitian subspace: **the Lorentz transformation of the corpus is the sandwich of a unit-norm element of $\mathbb{M}_+$**, so the informational sector is the home of the boosts, and the material sector reaches the same family through the central imaginary.
 
-The conventions are those of *Conventions in the Biquaternion Universe*, and the notation is that of *Biquaternion Rotations and Lorentz Transformations*: $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$; $\operatorname{H}_{\tilde{Q}}(\tilde S) = \tilde{Q}\tilde S\tilde{Q}^\dagger$ is the sandwich, which is the map the series calls rotor conjugation when $\tilde{Q}$ has unit norm; a **rotor** is an element of unit norm, so that $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ and $\tilde{\Lambda}^\dagger = \bar{\tilde{\Lambda}}^{*}$; $\hat{q}$ is a unit real quaternion; and the six subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and antiquaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the informational and material sectors $\mathbb{M}_+$ and $\mathbb{M}_-$. Every identity quoted below was recomputed in double precision on random elements, and the residuals are below $10^{-10}$.
+The conventions are those of *Conventions in the Biquaternion Universe*, and the notation is that of *Biquaternion Rotations and Lorentz Transformations*: $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$; $\operatorname{H}_{\tilde{Q}}(\tilde S) = \tilde{Q}\tilde S\tilde{Q}^{*}$ is the sandwich, which is the map the series calls rotor conjugation when $\tilde{Q}$ has unit norm; a **rotor** is an element of unit norm, so that $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ and $\tilde{\Lambda}^{*} = \overline{\tilde{\Lambda}^{\natural}}$; $\hat{q}$ is a unit real quaternion; and the six subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and antiquaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the informational and material sectors $\mathbb{M}_+$ and $\mathbb{M}_-$. Every identity quoted below was recomputed in double precision on random elements, and the residuals are below $10^{-10}$.
 
 ## The Central Factor Leaves the Operator Alone
 
@@ -26,7 +26,7 @@ $$
 \operatorname{H}_{z\tilde{Q}}(\tilde S) = |z|^2\operatorname{H}_{\tilde{Q}}(\tilde S) .
 $$
 
-**Proof.** Since $z$ is central, $(z\tilde{Q})\tilde S(z\tilde{Q})^\dagger = z\tilde{Q}\tilde S\tilde{Q}^\dagger\bar{z} = |z|^2\tilde{Q}\tilde S\tilde{Q}^\dagger$.
+**Proof.** Since $z$ is central, $(z\tilde{Q})\tilde S(z\tilde{Q})^\dagger = z\tilde{Q}\tilde S\tilde{Q}^{*}\bar{z} = |z|^2\tilde{Q}\tilde S\tilde{Q}^{*}$.
 
 Two special cases are worth stating apart. For $z = i$ the scaling factor is $|i|^2 = 1$, so
 
@@ -67,7 +67,7 @@ $$
 \operatorname{H}_{\tilde{Q}\tilde{R}} = \operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde{R}} .
 $$
 
-**Proof.** $\operatorname{H}_{\tilde{Q}\tilde{R}}(\tilde S) = \tilde{Q}\tilde{R}\tilde S\tilde{R}^\dagger\tilde{Q}^\dagger = \operatorname{H}_{\tilde{Q}}\!\left(\operatorname{H}_{\tilde{R}}(\tilde S)\right)$.
+**Proof.** $\operatorname{H}_{\tilde{Q}\tilde{R}}(\tilde S) = \tilde{Q}\tilde{R}\tilde S\tilde{R}^{*}\tilde{Q}^{*} = \operatorname{H}_{\tilde{Q}}\!\left(\operatorname{H}_{\tilde{R}}(\tilde S)\right)$.
 
 The identity is the statement that the sandwich is an action of the group of units, not merely a collection of linear maps: the individual maps are not algebra automorphisms, but they compose as their elements do. The case of rotors is stated in *Biquaternion Rotations and Lorentz Transformations*, §*Composition of Operators*; the identity holds for every unit, which is what the subspace reading needs. It is the tool that decomposes an operator whose element is a product, and it is used twice below.
 
@@ -169,10 +169,10 @@ For $\mathbf{v}$ in the vector subspace the element $i\mathbf{v}$ is again in th
 
 ### The Quaternion Subspace
 
-Let $\tilde{R}$ be a real quaternion, $\tilde{R} = a_0e_0 + a_1e_1+a_2e_2+a_3e_3$ with real coefficients. Its Hermitian conjugate is its quaternion conjugate, $\tilde{R}^\dagger = \bar{\tilde{R}} = |\tilde{R}|^2\tilde{R}^{-1}$, with $N(\tilde{R}) = |\tilde{R}|^2$ a positive real, so the central rule gives
+Let $\tilde{R}$ be a real quaternion, $\tilde{R} = a_0e_0 + a_1e_1+a_2e_2+a_3e_3$ with real coefficients. Its Hermitian conjugate is its quaternion conjugate, $\tilde{R}^{*} = \tilde{R}^{\natural} = |\tilde{R}|^2\tilde{R}^{-1}$, with $N(\tilde{R}) = |\tilde{R}|^2$ a positive real, so the central rule gives
 
 $$
-\operatorname{H}_{\tilde{R}}(\tilde S) = \tilde{R}\,\tilde S\,\bar{\tilde{R}} = |\tilde{R}|^2\,\operatorname{H}_{\hat{R}}(\tilde S) , \qquad \hat{R} = \tilde{R}/|\tilde{R}| .
+\operatorname{H}_{\tilde{R}}(\tilde S) = \tilde{R}\,\tilde S\,\tilde{R}^{\natural} = |\tilde{R}|^2\,\operatorname{H}_{\hat{R}}(\tilde S) , \qquad \hat{R} = \tilde{R}/|\tilde{R}| .
 $$
 
 A real quaternion therefore acts as the dilation by its squared modulus composed with the rotation of the unit quaternion of the same direction, and on the unit-norm slice it is the familiar rotation. Writing $\tilde{R} = |\tilde{R}|(\cos\theta + \sin\theta\,\hat{\mathbf{u}})$ with $\hat{\mathbf{u}}$ a real unit vector,
@@ -209,7 +209,7 @@ The two sectors are the fixed spaces of the dagger, so the sandwich of an elemen
 
 ### The Informational Sector: the Unit-Norm Boost
 
-Let $\tilde{Q}$ be a Hermitian element of unit norm, $\tilde{Q} = \tilde{Q}^\dagger$, $N(\tilde{Q}) = 1$. Its matrix image is Hermitian of determinant one, so its eigenvalues are $\lambda$ and $\lambda^{-1}$ with $\lambda$ real and nonzero; when both are positive the element is the boost rotor
+Let $\tilde{Q}$ be a Hermitian element of unit norm, $\tilde{Q} = \tilde{Q}^{*}$, $N(\tilde{Q}) = 1$. Its matrix image is Hermitian of determinant one, so its eigenvalues are $\lambda$ and $\lambda^{-1}$ with $\lambda$ real and nonzero; when both are positive the element is the boost rotor
 
 $$
 \tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat{\mathbf{u}} , \qquad \tanh\psi = \frac{u}{c} ,
@@ -270,7 +270,7 @@ so that $\operatorname{H}_{\tilde{Q}} = \operatorname{H}_{\tilde{\Lambda}}\circ\
 
 ### The Material Sector Gives the Same Operators
 
-Let $\tilde{Q}$ be an element of the material sector, $\tilde{Q}^\dagger = -\tilde{Q}$, so that $\tilde{Q} = ict\,e_0 + \mathbf{x}$. By the central rule with $z = i$,
+Let $\tilde{Q}$ be an element of the material sector, $\tilde{Q}^{*} = -\tilde{Q}$, so that $\tilde{Q} = ict\,e_0 + \mathbf{x}$. By the central rule with $z = i$,
 
 $$
 \operatorname{H}_{\tilde{Q}} = \operatorname{H}_{i\tilde{Q}} , \qquad i\tilde{Q}\in\mathbb{M}_+ ,
@@ -353,7 +353,7 @@ The type of the operator is therefore decided by the class of the acting element
 
 | symbol | meaning |
 |---|---|
-| $\operatorname{H}_{\tilde{Q}}(\tilde S) = \tilde{Q}\tilde S\tilde{Q}^\dagger$ | the sandwich, rotor conjugation for a rotor |
+| $\operatorname{H}_{\tilde{Q}}(\tilde S) = \tilde{Q}\tilde S\tilde{Q}^{*}$ | the sandwich, rotor conjugation for a rotor |
 | $\operatorname{H}_{z\tilde{Q}} = |z|^2\operatorname{H}_{\tilde{Q}}$ | the central rule, $z$ central |
 | $\operatorname{H}_{\tilde{Q}\tilde{R}} = \operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde{R}}$ | the composition law |
 | $\mathbb{C}_{\mathbb{B}}$ | the centre, of elements $ze_0$ |

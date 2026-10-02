@@ -49,11 +49,11 @@ one pair per line, so that every product of two distinct imaginary units is fixe
 
 **Definition (the three conjugations).** Three involutions act on an element $a=\sum_n A_ne_n$:
 
-1. the **complex conjugate** $a^*: i\mapsto-i$;
-2. the **octonionic conjugate** $\tilde a: e_n\mapsto-e_n$ for $n\ge1$;
-3. the **Hermitian conjugate** $a^\dagger=\tilde{a^*}$, applying both.
+1. the **complex conjugate** $\bar a: i\mapsto-i$;
+2. the **octonionic conjugate** $a^{\natural}: e_n\mapsto-e_n$ for $n\ge1$;
+3. the **Hermitian conjugate** $a^{*}=(\bar a)^{\natural}$, applying both.
 
-The complex and octonionic conjugations are algebra automorphisms that commute; the octonionic and Hermitian conjugations reverse the order of a product, $\widetilde{ab}=\tilde b\tilde a$ and $(ab)^\dagger=b^\dagger a^\dagger$.
+The complex and octonionic conjugations are algebra automorphisms that commute; the octonionic and Hermitian conjugations reverse the order of a product, $(ab)^{\natural}=b^{\natural}a^{\natural}$ and $(ab)^{*}=b^{*} a^{*}$.
 
 ### The Chain Algebra
 
@@ -108,45 +108,45 @@ $$
 $$
 and their Hermitian conjugates
 $$
-\alpha_1^\dagger=\tfrac12\bigl(e_5+ie_4\bigr),\qquad
-\alpha_2^\dagger=\tfrac12\bigl(e_3+ie_1\bigr),\qquad
-\alpha_3^\dagger=\tfrac12\bigl(e_6+ie_2\bigr).
+\alpha_1^{*}=\tfrac12\bigl(e_5+ie_4\bigr),\qquad
+\alpha_2^{*}=\tfrac12\bigl(e_3+ie_1\bigr),\qquad
+\alpha_3^{*}=\tfrac12\bigl(e_6+ie_2\bigr).
 $$
 
 **Proposition (anticommutation).** The ladder operators satisfy
 $$
 \{\alpha_i,\alpha_j\}=0,\qquad
-\{\alpha_i^\dagger,\alpha_j^\dagger\}=0,\qquad
-\{\alpha_i,\alpha_j^\dagger\}=\delta_{ij}I ,
+\{\alpha_i^{*},\alpha_j^{*}\}=0,\qquad
+\{\alpha_i,\alpha_j^{*}\}=\delta_{ij}I ,
 $$
-for $1\le i,j\le3$. In particular $\alpha_i^2=(\alpha_i^\dagger)^2=0$.
+for $1\le i,j\le3$. In particular $\alpha_i^2=(\alpha_i^{*})^2=0$.
 
 *Proof.* Direct expansion using the Clifford relations of the six units. All nine relations in each family were computed on matrices and vanished identically (zero residual for the vanishing anticommutators, and $\pm I$ exactly for the mixed ones).
 
-**Corollary.** $\operatorname{span}_{\mathbb C}\{\alpha_1,\alpha_2,\alpha_3\}$ is a three-dimensional maximal totally isotropic subspace, the **MTIS**; its conjugate span $\operatorname{span}_{\mathbb C}\{\alpha_1^\dagger,\alpha_2^\dagger,\alpha_3^\dagger\}$ is the conjugate MTIS; and the two are complementary, spanning the complexified six-space.
+**Corollary.** $\operatorname{span}_{\mathbb C}\{\alpha_1,\alpha_2,\alpha_3\}$ is a three-dimensional maximal totally isotropic subspace, the **MTIS**; its conjugate span $\operatorname{span}_{\mathbb C}\{\alpha_1^{*},\alpha_2^{*},\alpha_3^{*}\}$ is the conjugate MTIS; and the two are complementary, spanning the complexified six-space.
 
 **Definition.** The **number operator** is
 $$
-N=\sum_{i=1}^3\alpha_i^\dagger\alpha_i .
+N=\sum_{i=1}^3\alpha_i^{*}\alpha_i .
 $$
 
 **Proposition.** On the Fock-like basis generated below, $N$ has integer eigenvalues $0,1,2,3$, with multiplicities $1,3,3,1$.
 
-*Proof.* The mixed anticommutators give $\alpha_i\alpha_j^\dagger=\delta_{ij}-\alpha_j^\dagger\alpha_i$. Hence $N\alpha_k^\dagger=\alpha_k^\dagger+\alpha_k^\dagger N$, so each $\alpha_k^\dagger$ raises the eigenvalue of $N$ by one; the relation $\alpha_k\alpha_k^\dagger=1-\alpha_k^\dagger\alpha_k$ makes $N$ bounded above by three on the ideal buildable from the vacuum; and the ladder operators annihilate the vacuum, giving the multiplicities by the number of ways of choosing $k$ distinct raising operators from three. The values $0,1,1,1,2,2,2,3$ were confirmed on the eight ideal states of the next-but-one section.
+*Proof.* The mixed anticommutators give $\alpha_i\alpha_j^{*}=\delta_{ij}-\alpha_j^{*}\alpha_i$. Hence $N\alpha_k^{*}=\alpha_k^{*}+\alpha_k^{*} N$, so each $\alpha_k^{*}$ raises the eigenvalue of $N$ by one; the relation $\alpha_k\alpha_k^{*}=1-\alpha_k^{*}\alpha_k$ makes $N$ bounded above by three on the ideal buildable from the vacuum; and the ladder operators annihilate the vacuum, giving the multiplicities by the number of ways of choosing $k$ distinct raising operators from three. The values $0,1,1,1,2,2,2,3$ were confirmed on the eight ideal states of the next-but-one section.
 
 ## The $\mathrm{su}(3)$ of the Isotropic Structure
 
 **Definition.** With the ladder operators in hand, define the eight chains
 $$
 \begin{aligned}
-\Lambda_1&=-\alpha_2^\dagger\alpha_1-\alpha_1^\dagger\alpha_2, &
-\Lambda_2&=i\alpha_2^\dagger\alpha_1-i\alpha_1^\dagger\alpha_2, &
-\Lambda_3&=\alpha_2^\dagger\alpha_2-\alpha_1^\dagger\alpha_1,\\
-\Lambda_4&=-\alpha_1^\dagger\alpha_3-\alpha_3^\dagger\alpha_1, &
-\Lambda_5&=-i\alpha_1^\dagger\alpha_3+i\alpha_3^\dagger\alpha_1, &
-\Lambda_6&=-\alpha_3^\dagger\alpha_2-\alpha_2^\dagger\alpha_3,\\
-\Lambda_7&=i\alpha_3^\dagger\alpha_2-i\alpha_2^\dagger\alpha_3, &
-\Lambda_8&=-\tfrac1{\sqrt3}\bigl(\alpha_1^\dagger\alpha_1+\alpha_2^\dagger\alpha_2-2\alpha_3^\dagger\alpha_3\bigr). &&
+\Lambda_1&=-\alpha_2^{*}\alpha_1-\alpha_1^{*}\alpha_2, &
+\Lambda_2&=i\alpha_2^{*}\alpha_1-i\alpha_1^{*}\alpha_2, &
+\Lambda_3&=\alpha_2^{*}\alpha_2-\alpha_1^{*}\alpha_1,\\
+\Lambda_4&=-\alpha_1^{*}\alpha_3-\alpha_3^{*}\alpha_1, &
+\Lambda_5&=-i\alpha_1^{*}\alpha_3+i\alpha_3^{*}\alpha_1, &
+\Lambda_6&=-\alpha_3^{*}\alpha_2-\alpha_2^{*}\alpha_3,\\
+\Lambda_7&=i\alpha_3^{*}\alpha_2-i\alpha_2^{*}\alpha_3, &
+\Lambda_8&=-\tfrac1{\sqrt3}\bigl(\alpha_1^{*}\alpha_1+\alpha_2^{*}\alpha_2-2\alpha_3^{*}\alpha_3\bigr). &&
 \end{aligned}
 $$
 
@@ -173,7 +173,7 @@ $$
 [T_8,\alpha_2]=-\tfrac1{2\sqrt3}\alpha_2,\quad
 [T_8,\alpha_3]=+\tfrac1{\sqrt3}\alpha_3,
 $$
-with $T_a=\tfrac12\Lambda_a$, and the conjugates for $\alpha_i^\dagger$; the quadratic Casimir is
+with $T_a=\tfrac12\Lambda_a$, and the conjugates for $\alpha_i^{*}$; the quadratic Casimir is
 $$
 \sum_{a=1}^{8}T_a^2=\tfrac43\,I
 $$
@@ -191,23 +191,23 @@ where the $\mathrm{u}(1)$ is generated by $N$ and the $\mathrm{su}(3)$ acts on t
 $$
 \omega=\alpha_1\alpha_2\alpha_3 ,
 \qquad
-P=\omega\,\omega^\dagger=\alpha_1\alpha_2\alpha_3\,\alpha_3^\dagger\alpha_2^\dagger\alpha_1^\dagger .
+P=\omega\,\omega^{*}=\alpha_1\alpha_2\alpha_3\,\alpha_3^{*}\alpha_2^{*}\alpha_1^{*} .
 $$
 
-**Proposition.** $P$ is a primitive idempotent of the chain algebra: $P^2=P$, $\alpha_iP=0$ and $\omega^\dagger\alpha_i^\dagger=0$ for all $i$; as an $8\times8$ matrix it has rank one, and the left ideal
+**Proposition.** $P$ is a primitive idempotent of the chain algebra: $P^2=P$, $\alpha_iP=0$ and $\omega^{*}\alpha_i^{*}=0$ for all $i$; as an $8\times8$ matrix it has rank one, and the left ideal
 $$
 S^u=\overleftarrow{\mathbb{C}\otimes\mathbb{O}}\,P
 $$
 has complex dimension eight.
 
-*Proof.* Idempotency follows from $\alpha_i^2=0$ and the anticommutation relations; the annihilations $\alpha_iP=0$ and $\omega^\dagger\alpha_i^\dagger=0$ were verified on matrices with zero residual; and the rank of $P$ was computed to be one, so that its left ideal has dimension $8\cdot1=8$, confirmed by exhibiting the eight independent elements below.
+*Proof.* Idempotency follows from $\alpha_i^2=0$ and the anticommutation relations; the annihilations $\alpha_iP=0$ and $\omega^{*}\alpha_i^{*}=0$ were verified on matrices with zero residual; and the rank of $P$ was computed to be one, so that its left ideal has dimension $8\cdot1=8$, confirmed by exhibiting the eight independent elements below.
 
 **Proposition (basis and charges).** The left ideal has the basis
 $$
 S^u=\operatorname{span}\Bigl\{\,
-P,\ \alpha_1^\dagger P,\ \alpha_2^\dagger P,\ \alpha_3^\dagger P,\
-\alpha_3^\dagger\alpha_2^\dagger P,\ \alpha_1^\dagger\alpha_3^\dagger P,\ \alpha_2^\dagger\alpha_1^\dagger P,\
-\alpha_3^\dagger\alpha_2^\dagger\alpha_1^\dagger P
+P,\ \alpha_1^{*} P,\ \alpha_2^{*} P,\ \alpha_3^{*} P,\
+\alpha_3^{*}\alpha_2^{*} P,\ \alpha_1^{*}\alpha_3^{*} P,\ \alpha_2^{*}\alpha_1^{*} P,\
+\alpha_3^{*}\alpha_2^{*}\alpha_1^{*} P
 \Bigr\},
 $$
 whose eight elements are linearly independent, and on them the number operator $N$ takes the values $0,1,1,1,2,2,2,3$, so that the charge operator
@@ -229,11 +229,11 @@ The complex octonions $\mathbb{C}\otimes\mathbb{O}$ are non-associative, but the
 $$
 \overleftarrow{\mathbb{C}\otimes\mathbb{O}}\cong\mathrm{Cl}(6)\cong M_8(\mathbb{C}),
 $$
-of complex dimension $64$. The six units $e_1,\dots,e_6$ satisfy the Clifford relations $\{e_i,e_j\}=-2\delta_{ij}$, generate the whole algebra by their $64$ monomials, and their product is the seventh unit: $e_1e_2e_3e_4e_5e_6=e_7$, the volume element. Furey's ladder operators $\alpha_i$, $\alpha_i^\dagger$ provide a maximal totally isotropic subspace and its conjugate, with the anticommutation relations
+of complex dimension $64$. The six units $e_1,\dots,e_6$ satisfy the Clifford relations $\{e_i,e_j\}=-2\delta_{ij}$, generate the whole algebra by their $64$ monomials, and their product is the seventh unit: $e_1e_2e_3e_4e_5e_6=e_7$, the volume element. Furey's ladder operators $\alpha_i$, $\alpha_i^{*}$ provide a maximal totally isotropic subspace and its conjugate, with the anticommutation relations
 $$
-\{\alpha_i,\alpha_j\}=\{\alpha_i^\dagger,\alpha_j^\dagger\}=0,\qquad\{\alpha_i,\alpha_j^\dagger\}=\delta_{ij}I ,
+\{\alpha_i,\alpha_j\}=\{\alpha_i^{*},\alpha_j^{*}\}=0,\qquad\{\alpha_i,\alpha_j^{*}\}=\delta_{ij}I ,
 $$
-and the MTIS carries an intrinsic $\mathrm{su}(3)$ whose generators close with the standard structure constants, agree with the octonionic automorphism generators fixing $e_7$, and commute with the number operator $N$ and with the volume element. The primitive idempotent $P=\alpha_1\alpha_2\alpha_3\alpha_3^\dagger\alpha_2^\dagger\alpha_1^\dagger$ yields an eight-dimensional minimal left ideal whose basis carries the charges
+and the MTIS carries an intrinsic $\mathrm{su}(3)$ whose generators close with the standard structure constants, agree with the octonionic automorphism generators fixing $e_7$, and commute with the number operator $N$ and with the volume element. The primitive idempotent $P=\alpha_1\alpha_2\alpha_3\alpha_3^{*}\alpha_2^{*}\alpha_1^{*}$ yields an eight-dimensional minimal left ideal whose basis carries the charges
 $$
 0,\ \tfrac13,\ \tfrac13,\ \tfrac13,\ \tfrac23,\ \tfrac23,\ \tfrac23,\ 1
 $$
@@ -251,14 +251,14 @@ as eigenvalues of $Q=N/3$; the charge is quantised because it is a number operat
 | $\overleftarrow{\mathbb{C}\otimes\mathbb{O}}\cong\mathrm{Cl}(6)\cong M_8(\mathbb{C})$ | Complex octonionic chain algebra |
 | $\{e_i,e_j\}=-2\delta_{ij}$, $1\le i,j\le6$ | Clifford relations of the six units |
 | $e_1e_2e_3e_4e_5e_6=e_7$ | Volume element $\Gamma$ of $\mathrm{Cl}(6)$ |
-| $\alpha_i,\alpha_i^\dagger$ | Ladder operators spanning the MTIS and its conjugate |
-| $\{\alpha_i,\alpha_j^\dagger\}=\delta_{ij}$, $\{\alpha_i,\alpha_j\}=0$ | Ladder anticommutation relations |
-| $N=\sum_i\alpha_i^\dagger\alpha_i$ | Number operator; eigenvalues $0,1,1,1,2,2,2,3$ |
+| $\alpha_i,\alpha_i^{*}$ | Ladder operators spanning the MTIS and its conjugate |
+| $\{\alpha_i,\alpha_j^{*}\}=\delta_{ij}$, $\{\alpha_i,\alpha_j\}=0$ | Ladder anticommutation relations |
+| $N=\sum_i\alpha_i^{*}\alpha_i$ | Number operator; eigenvalues $0,1,1,1,2,2,2,3$ |
 | $Q=\tfrac13N$ | Charge operator; values $0,\tfrac13,\tfrac23,1$ |
 | $\Lambda_1,\dots,\Lambda_8$ | $\mathrm{su}(3)$ generators of the MTIS; octonionic automorphism generators fixing $e_7$ |
 | $[\tfrac12\Lambda_a,\tfrac12\Lambda_b]=if^{abc}\tfrac12\Lambda_c$ | $\mathrm{su}(3)$ commutation relations |
 | $\sum_a(\tfrac12\Lambda_a)^2=\tfrac43 I$ | Quadratic Casimir on the triplet |
-| $\omega=\alpha_1\alpha_2\alpha_3$, $P=\omega\omega^\dagger$ | Chain and primitive idempotent |
+| $\omega=\alpha_1\alpha_2\alpha_3$, $P=\omega\omega^{*}$ | Chain and primitive idempotent |
 | $S^u=\overleftarrow{\mathbb{C}\otimes\mathbb{O}}P$ | Eight-dimensional minimal left ideal |
 
 ## Further Reading

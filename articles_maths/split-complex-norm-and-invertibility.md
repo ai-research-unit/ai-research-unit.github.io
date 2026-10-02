@@ -171,13 +171,13 @@ So the Euclidean form is the sum of the norm and twice the square of the imagina
 
 ### The Absence of a Positive-Definite Hermitian Form
 
-There is no positive-definite **Hermitian form** on $\mathbb{D}$ analogous to the one on $\mathbb{C}$, because the conjugation group is too small. The single non-trivial involution $\bar{\cdot}$ produces the sesquilinear expression
+There is no positive-definite **Hermitian form** on $\mathbb{D}$ analogous to the one on $\mathbb{C}$, because the conjugation group is too small. The single non-trivial involution ${}^{\natural}$ produces the sesquilinear expression
 
 $$
 Z\bar W = (a c - b d) + (b c - a d)j, \qquad Z = a+j b, \; W = c+j d,
 $$
 
-whose real part is $g(Z,W) = a c - b d$, the polarisation of $N$, and is therefore indefinite of signature $(1,1)$; neither this form nor its negative is definite. The biquaternion article has a genuine Hermitian form $\tilde Q\tilde Q^\dagger$, because its conjugation group is the Klein four-group and supplies a positive-definite combination; here that slot is empty, and the positive-definite substitute is the Euclidean form $\langle Z,W\rangle = a c + b d$ of the preceding section, which does not depend on the algebra structure.
+whose real part is $g(Z,W) = a c - b d$, the polarisation of $N$, and is therefore indefinite of signature $(1,1)$; neither this form nor its negative is definite. The biquaternion article has a genuine Hermitian form $\tilde Q\tilde{Q}^{*}$, because its conjugation group is the Klein four-group and supplies a positive-definite combination; here that slot is empty, and the positive-definite substitute is the Euclidean form $\langle Z,W\rangle = a c + b d$ of the preceding section, which does not depend on the algebra structure.
 
 ## Invertibility
 

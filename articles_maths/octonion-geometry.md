@@ -7,7 +7,7 @@ This article is the geometry slot of the octonion system. It sets out the geomet
 
 The article takes the multiplication and the associator from *Octonion Algebra*, the norm, the inner product and the unit sphere from *Octonion Norm and Invertibility*, the operator theory from *Octonion Element Representations*, and the groups $G_2$, $F_4$ and the Cayley plane from *Octonions and the Exceptional Lie Groups*. The differential forms and their integrals are those of *Differential Forms and Stokes' Theorem*, the fibrations those of *Fibre Bundles, Connections and Curvature*, and the projective geometry of Part II is the companion *Projective Geometry*. The exceptional holonomy of Part II is the subject of *G2 and Spin(7) Manifolds* ; the geometry of the other number systems is *Quaternion Geometry* , for the split systems, *Split-Biquaternion Geometry* and *Split-Biquaternions and Hyperbolic Geometry*, written in this batch. The present article supplies the octonionic geometry that these articles use.
 
-**Conventions.** The octonions are $\mathbb{O}$ with basis $e_0,\dots,e_7$, conjugation $\bar x$, norm $\lvert x\rvert^2 = x\bar x = \langle x,x\rangle$ and inner product $\langle x,y\rangle = \operatorname{Sc}(x\bar y)$. The imaginary subspace is $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$ with orthonormal basis $e_1,\dots,e_7$, and $S^6$ denotes its unit sphere. For $u,v\in\operatorname{Im}\mathbb{O}$ the **cross product** is
+**Conventions.** The octonions are $\mathbb{O}$ with basis $e_0,\dots,e_7$, conjugation $x^{\natural}$, norm $\lvert x\rvert^2 = x x^{\natural} = \langle x,x\rangle$ and inner product $\langle x,y\rangle = \operatorname{Sc}(x y^{\natural})$. The imaginary subspace is $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$ with orthonormal basis $e_1,\dots,e_7$, and $S^6$ denotes its unit sphere. For $u,v\in\operatorname{Im}\mathbb{O}$ the **cross product** is
 
 $$
 u\times v = \operatorname{Vect}(uv) = \tfrac{1}{2}(uv - vu),
@@ -28,7 +28,7 @@ $$
 
 for all imaginary $u,v,w$. Consequently $\operatorname{Im}\mathbb{O}$ with the cross product is the seven-dimensional vector product.
 
-*Proof.* Both identities are the real-part identities of *Octonion Algebra* together with the alternation of the associator: expanding $\operatorname{Vect}(uv) = \tfrac12(uv-vu)$ and using $\langle uv,w\rangle = \operatorname{Sc}(uv\bar w)$ reduces each identity to the Fano multiplication table, checked on the basis; the first is the Lagrange identity of the norm and the second is its polarised companion.
+*Proof.* Both identities are the real-part identities of *Octonion Algebra* together with the alternation of the associator: expanding $\operatorname{Vect}(uv) = \tfrac12(uv-vu)$ and using $\langle uv,w\rangle = \operatorname{Sc}(uv w^{\natural})$ reduces each identity to the Fano multiplication table, checked on the basis; the first is the Lagrange identity of the norm and the second is its polarised companion.
 
 The first identity says that the cross product has the length of the area of the parallelogram spanned by $u$ and $v$; the second says that for orthonormal $u,w$ the map $v\mapsto u\times v$ is a complex structure on the orthogonal complement of $u$ and a rotation by a right angle in the plane spanned by $u,w$.
 
@@ -183,7 +183,7 @@ Finally the forms $\varphi$, its dual $\psi$ and the Cayley form $\Phi = e^0\wed
 |---|---|
 | $\mathbb{O}$, $e_0,\dots,e_7$ | Octonion algebra, basis with $e_k^2 = -e_0$ for $k\geq1$ |
 | $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$ | Imaginary subspace, orthonormal basis $e_1,\dots,e_7$ |
-| $\langle x,y\rangle = \operatorname{Sc}(x\bar y)$ | Inner product, Euclidean metric |
+| $\langle x,y\rangle = \operatorname{Sc}(x y^{\natural})$ | Inner product, Euclidean metric |
 | $u\times v = \operatorname{Vect}(uv)$ | Cross product on $\operatorname{Im}\mathbb{O}$ |
 | $\varphi(u,v,w) = \langle u\times v,w\rangle$ | Associative three-form, $G_2 = \operatorname{Stab}\varphi$ |
 | $\psi = *\varphi$, $\Phi = e^0\wedge\varphi+\psi$ | Coassociative four-form, Cayley four-form on $\mathbb{O}$ |

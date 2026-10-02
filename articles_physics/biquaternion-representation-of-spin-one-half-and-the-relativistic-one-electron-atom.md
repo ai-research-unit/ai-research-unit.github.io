@@ -15,7 +15,7 @@ The findings, stated before the detail.
 - The relativistic one-electron atom is the standard radial Dirac–Coulomb problem re-expressed. The system the source derives is the standard system; the quaternion wave function and the probability density are the standard solution and the sum of the squared moduli of its two spinor components. The spectrum is printed **without the square on $Za_0$**; with the square restored it is the standard Sommerfeld–Dirac formula and it reproduces the exact ground-state value, which the printed form does not.
 - The section on the Pauli-matrix algebra has one parameter appearing twice and another not at all, so the correspondence printed there cannot be one-to-one.
 
-Throughout, $e_0 = 1, e_1, e_2, e_3$ are the quaternion units, $e_k^2 = -e_0$ and $e_je_k = \epsilon_{jkl}e_l$ for $j\neq k$; $i$ is the central scalar imaginary; $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the biquaternion algebra; $\Phi$ is the corpus's isomorphism $\Phi(e_k) = -i\sigma_k$, $\Phi(ie_k) = \sigma_k$; $N(\tilde Q) = \tilde Q\bar{\tilde Q} = \sum_\mu Q_\mu^2$ is the algebra norm; $\dagger$ is Hermitian conjugation, $\bar{\ }$ quaternion conjugation and $*$ complex conjugation. The source writes its complex quaternions with the same quaternion rules, and its "square norm" $|q|^2 = \mathrm{Sc}(q\bar q^*)$ is not $N$; the difference is used below and is not a notational one.
+Throughout, $e_0 = 1, e_1, e_2, e_3$ are the quaternion units, $e_k^2 = -e_0$ and $e_je_k = \epsilon_{jkl}e_l$ for $j\neq k$; $i$ is the central scalar imaginary; $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the biquaternion algebra; $\Phi$ is the corpus's isomorphism $\Phi(e_k) = -i\sigma_k$, $\Phi(ie_k) = \sigma_k$; $N(\tilde Q) = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$ is the algebra norm; ${}^{*}$ is Hermitian conjugation, $\bar{\ }$ quaternion conjugation and $*$ complex conjugation. The source writes its complex quaternions with the same quaternion rules, and its "square norm" $|q|^2 = \mathrm{Sc}(q\bar q^*)$ is not $N$; the difference is used below and is not a notational one.
 
 ## The Proposed 2×2 Transformation
 
@@ -263,7 +263,7 @@ The source proposes a $2\times2$ complex matrix $A(q)$ for a complex quaternion 
 | $A(q)$ | The source's proposed $2\times2$ matrix, its equation (8); not multiplicative, not injective |
 | $\ker A$ | $\mathrm{span}_\mathbb{R}\{-ie_0 + e_1,\ -ie_2 + e_3,\ e_2 + ie_3\}$, contains the down-state line |
 | $\begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$, $z + we_2$ | The Kravchenko–Shapiro form; a representation of $\mathbb{H}$ over $\mathbb{C}$, not of $\mathbb{B}$ |
-| $N(\tilde Q) = \tilde Q\bar{\tilde Q} = \sum_\mu Q_\mu^2$ | The algebra norm; $0$ on both of the source's states |
+| $N(\tilde Q) = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$ | The algebra norm; $0$ on both of the source's states |
 | $\mathrm{Sc}(q\bar q^*) = \sum_\mu \left(\mathrm{Re}\,q_\mu\right)^2 + \left(\mathrm{Im}\,q_\mu\right)^2$ | The source's "square norm", the Hilbert–Schmidt norm; $1$ on both states |
 | $S_x, S_y, S_z = \tfrac{\hbar}{2}(-ie_3), \tfrac{\hbar}{2}(-ie_2), \tfrac{\hbar}{2}(-ie_1)$ | The source's spin operators; equal to $-\tilde S_{3}, -\tilde S_{2}, -\tilde S_{1}$ |
 | $\tilde S_k = \tfrac{\hbar}{2}ie_k$ | The corpus's spin operators, in $\mathbb{M}_+$ |

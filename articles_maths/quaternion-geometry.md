@@ -5,15 +5,15 @@
 
 This article is the geometry slot of the quaternion system. It describes the geometry that the algebra $\mathbb{H}$ carries once a distance is placed on it: the metric geometry of $\mathbb{H}$ as a four-dimensional Euclidean space, the metric and group geometry of the unit sphere $S^3 = Sp(1)$, the fibration of that sphere over the two-sphere, the projective geometry of the quaternionic projective spaces, and the arithmetic geometry of the lattice of integral quaternions. The article is the geometric companion of the algebraic and rotation-theoretic articles of the same system and is the quaternion entry of the ladder that Part VI traverses one number system at a time.
 
-The article assumes the quaternion algebra from *Quaternion Algebra*: its basis $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, its conjugation $\bar{\tilde q}$, its quaternion norm $N(\tilde q) = \tilde q\bar{\tilde q}$, its imaginary subspace $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$ and its decomposition into scalar and vector parts. It assumes the unit sphere $Sp(1)$, the adjoint action $\operatorname{Ad}_q(x) = qxq^{-1}$, the double cover $Sp(1)\to SO(3)$ and the two-sided action $Sp(1)\times Sp(1)\to SO(4)$ from *Quaternion Rotations and Reflections*, and it does not restate them; the rotations of the imaginary subspace are used here as the isotropy of a geometric action and not re-derived. The homogeneous-space language, the phrase *locally compact group* and the quotient topology are those of Part II, and the general theory of the manifolds that carry a quaternionic structure is the subject of *Quaternionic Geometry* in the geometry category of Part IV; the present article treats only the geometry of the algebra itself. The lattice of integral quaternions and its arithmetic are introduced in *Lattices and the Quaternion Lattice* in the linear-spaces category of Part II, and are recalled here only for their geometric content. The sphere $S^3$ is the only sphere treated; the octonionic sphere, where the same construction fails, is a different system and is not used.
+The article assumes the quaternion algebra from *Quaternion Algebra*: its basis $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, its conjugation $\tilde{q}^{\natural}$, its quaternion norm $N(\tilde q) = \tilde q\tilde{q}^{\natural}$, its imaginary subspace $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$ and its decomposition into scalar and vector parts. It assumes the unit sphere $Sp(1)$, the adjoint action $\operatorname{Ad}_q(x) = qxq^{-1}$, the double cover $Sp(1)\to SO(3)$ and the two-sided action $Sp(1)\times Sp(1)\to SO(4)$ from *Quaternion Rotations and Reflections*, and it does not restate them; the rotations of the imaginary subspace are used here as the isotropy of a geometric action and not re-derived. The homogeneous-space language, the phrase *locally compact group* and the quotient topology are those of Part II, and the general theory of the manifolds that carry a quaternionic structure is the subject of *Quaternionic Geometry* in the geometry category of Part IV; the present article treats only the geometry of the algebra itself. The lattice of integral quaternions and its arithmetic are introduced in *Lattices and the Quaternion Lattice* in the linear-spaces category of Part II, and are recalled here only for their geometric content. The sphere $S^3$ is the only sphere treated; the octonionic sphere, where the same construction fails, is a different system and is not used.
 
-Throughout, a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_\mu q_\mu e_\mu$ with $\mu$ running over $0,1,2,3$, and the conjugation is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$. The quaternion norm $N(\tilde q) = \tilde q\bar{\tilde q}$, the modulus $|\tilde q| = \sqrt{N(\tilde q)}$, the inner product $\langle p,\tilde q\rangle = \mathrm{Sc}(p\bar{\tilde q})$, the vector product $x\times y = \tfrac12(xy-yx)$ and the vector subspace $\operatorname{Im}\mathbb{H} = \{x : \bar x = -x\}\cong\mathbb{R}^3$ are those of *Quaternion Norm and Invertibility* and *Quaternion Algebra*, taken as given and not restated; the geometry below is built on that form and does not define it again. The unit sphere is $S^3 = Sp(1) = \{\tilde q : N(\tilde q) = 1\}$. The quaternion units $e_k$ are identified with the standard basis of $\mathbb{R}^4$ whenever coordinates are needed.
+Throughout, a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_\mu q_\mu e_\mu$ with $\mu$ running over $0,1,2,3$, and the conjugation is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$. The quaternion norm $N(\tilde q) = \tilde q\tilde{q}^{\natural}$, the modulus $|\tilde q| = \sqrt{N(\tilde q)}$, the inner product $\langle p,\tilde q\rangle = \mathrm{Sc}(p\tilde{q}^{\natural})$, the vector product $x\times y = \tfrac12(xy-yx)$ and the vector subspace $\operatorname{Im}\mathbb{H} = \{x : x^{\natural} = -x\}\cong\mathbb{R}^3$ are those of *Quaternion Norm and Invertibility* and *Quaternion Algebra*, taken as given and not restated; the geometry below is built on that form and does not define it again. The unit sphere is $S^3 = Sp(1) = \{\tilde q : N(\tilde q) = 1\}$. The quaternion units $e_k$ are identified with the standard basis of $\mathbb{R}^4$ whenever coordinates are needed.
 
 ## The Form the Geometry Depends On
 
 ### The Euclidean Structure
 
-The geometry of the quaternion algebra is the geometry read off the positive definite norm $N(\tilde q) = \tilde q\bar{\tilde q}$ of *Quaternion Norm and Invertibility*, taken as given together with its polarisation and the metric it induces; nothing below defines that form again. Under the identification $\mathbb{H}\cong\mathbb{R}^4$ given by the basis $(e_0, e_1, e_2, e_3)$ the form is the square of the Euclidean norm, its polarisation is the inner product $\langle p, \tilde q\rangle$, and the induced metric is $d(p,\tilde q) = |p - \tilde q|$, with the open sets, the convergence, the completeness and the compactness that follow.
+The geometry of the quaternion algebra is the geometry read off the positive definite norm $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ of *Quaternion Norm and Invertibility*, taken as given together with its polarisation and the metric it induces; nothing below defines that form again. Under the identification $\mathbb{H}\cong\mathbb{R}^4$ given by the basis $(e_0, e_1, e_2, e_3)$ the form is the square of the Euclidean norm, its polarisation is the inner product $\langle p, \tilde q\rangle$, and the induced metric is $d(p,\tilde q) = |p - \tilde q|$, with the open sets, the convergence, the completeness and the compactness that follow.
 
 **Proposition.** $\mathbb{H}$ with this metric is isometric to $\mathbb{R}^4$, hence complete, locally compact, and non-compact. The map $\tilde q\mapsto |\tilde q|$ is a norm, and the multiplication satisfies $|pq| = |p|\,|\tilde q|$; the unit sphere $S^3$ is a compact subgroup, and the multiplication is continuous.
 
@@ -42,7 +42,7 @@ The biquaternion norm is indefinite, and its zero set is the null cone, which ca
 The metric $d$ of $\mathbb{H}$ restricts to $S^3$ and equals the chordal distance. The intrinsic metric of the sphere is different: it is the **geodesic distance**
 
 $$
-d_{S^3}(u, v) = \arccos \langle u, v\rangle = \arccos \mathrm{Sc}(u\bar v), \qquad u, v \in S^3,
+d_{S^3}(u, v) = \arccos \langle u, v\rangle = \arccos \mathrm{Sc}(u v^{\natural}), \qquad u, v \in S^3,
 $$
 
 the angle between the two unit vectors as elements of $\mathbb{R}^4$, with values in $[0,\pi]$.
@@ -53,9 +53,9 @@ $$
 d_{S^3}(pu, pv) = d_{S^3}(u, v) = d_{S^3}(up, vp), \qquad p, u, v \in S^3,
 $$
 
-and it is invariant under conjugation: $d_{S^3}(\bar u, \bar v) = d_{S^3}(u, v)$.
+and it is invariant under conjugation: $d_{S^3}(u^{\natural},  v^{\natural}) = d_{S^3}(u, v)$.
 
-*Proof.* The angle $\arccos\langle u,v\rangle$ is a metric on the unit sphere of any inner product space, by the Schwarz inequality. Left invariance: $\langle pu, pv\rangle = \mathrm{Sc}(pu\overline{pv}) = \mathrm{Sc}(pu\bar v\bar p) = \mathrm{Sc}(p\,u\bar v\,\bar p)$; conjugation by a unit quaternion is an algebra automorphism preserving the scalar part, so this equals $\mathrm{Sc}(u\bar v) = \langle u,v\rangle$. Right invariance is the same computation with $\tilde q\bar p$ in place of $p\bar{\tilde q}$, or follows by conjugation. Invariance under $\tilde q\mapsto\bar{\tilde q}$ follows from $\mathrm{Sc}(\bar u v) = \mathrm{Sc}(u\bar v)$.
+*Proof.* The angle $\arccos\langle u,v\rangle$ is a metric on the unit sphere of any inner product space, by the Schwarz inequality. Left invariance: $\langle pu, pv\rangle = \mathrm{Sc}(pu(pv)^{\natural}) = \mathrm{Sc}(pu v^{\natural}p^{\natural}) = \mathrm{Sc}(p\,u v^{\natural}\, p^{\natural})$; conjugation by a unit quaternion is an algebra automorphism preserving the scalar part, so this equals $\mathrm{Sc}(u v^{\natural}) = \langle u,v\rangle$. Right invariance is the same computation with $\tilde q p^{\natural}$ in place of $p\tilde{q}^{\natural}$, or follows by conjugation. Invariance under $\tilde q\mapsto\tilde{q}^{\natural}$ follows from $\mathrm{Sc}(u^{\natural} v) = \mathrm{Sc}(u v^{\natural})$.
 
 So the metric of the sphere is **bi-invariant**: it is invariant under both the left and the right translations of the group $S^3$, and therefore under the two-sided action of $S^3\times S^3$. A bi-invariant metric on a compact Lie group is the metric induced by an invariant inner product on the Lie algebra, here $\operatorname{Im}\mathbb{H}$ with the inner product $\langle x,y\rangle$; this is why the geometric and the algebraic descriptions of the sphere agree exactly, and it is the first instance of the general phenomenon that a compact group carries a canonical geometry.
 
@@ -109,7 +109,7 @@ the quotient by the diagonal, which is the isotropy of the identity. The **isotr
 **Definition.** The **Hopf map** is
 
 $$
-\pi : S^3\longrightarrow S^2, \qquad \pi(\tilde q) = \tilde q\,e_1\,\bar{\tilde q} .
+\pi : S^3\longrightarrow S^2, \qquad \pi(\tilde q) = \tilde q\,e_1\,\tilde{q}^{\natural} .
 $$
 
 **Proposition.** For $\tilde q\in S^3$ the element $\pi(\tilde q)$ lies in $\operatorname{Im}\mathbb{H}$ and has norm one, so $\pi$ is a well-defined map $S^3\to S^2$, where $S^2 = \{x\in\operatorname{Im}\mathbb{H} : |x| = 1\}$ is the unit sphere of the imaginary quaternions. The map is invariant under right multiplication by the subgroup
@@ -120,7 +120,7 @@ $$
 
 so that $\pi(qp) = \pi(\tilde q)$ for $p\in U(1)$, and the assignment $\tilde q\mapsto\pi(\tilde q)$ is the orbit map of the action of $U(1)$ on $S^3$ by right translation.
 
-*Proof.* Since $|\tilde q| = 1$ and the conjugation preserves the scalar part, $\pi(\tilde q)$ has scalar part $\mathrm{Sc}(e_1) = 0$ and norm $N(\tilde q)N(e_1)N(\bar{\tilde q}) = 1$; hence $\pi(\tilde q)\in S^2$. For $p = e^{e_1\theta}$ one has $p e_1\bar p = e_1$ because $p$ commutes with $e_1$; hence $\pi(qp) = qp\,e_1\bar p\bar{\tilde q} = qe_1\bar{\tilde q} = \pi(\tilde q)$. Conversely, if $\pi(\tilde q) = \pi(r)$ then $\tilde q e_1\bar{\tilde q} = re_1\bar r$, so $\bar r \tilde q$ commutes with $e_1$; the commutant of $e_1$ in $\mathbb{H}$ is the two-dimensional subalgebra $\mathbb{R}\oplus\mathbb{R}e_1$, and being a unit quaternion it lies in $U(1)$. Hence $r = \tilde q p^{-1}$ for some $p\in U(1)$, and the fibres of $\pi$ are exactly the orbits of the right action.
+*Proof.* Since $|\tilde q| = 1$ and the conjugation preserves the scalar part, $\pi(\tilde q)$ has scalar part $\mathrm{Sc}(e_1) = 0$ and norm $N(\tilde q)N(e_1)N(\tilde{q}^{\natural}) = 1$; hence $\pi(\tilde q)\in S^2$. For $p = e^{e_1\theta}$ one has $p e_1p^{\natural} = e_1$ because $p$ commutes with $e_1$; hence $\pi(qp) = qp\,e_1p^{\natural}\tilde{q}^{\natural} = qe_1\tilde{q}^{\natural} = \pi(\tilde q)$. Conversely, if $\pi(\tilde q) = \pi(r)$ then $\tilde q e_1\tilde{q}^{\natural} = re_1\bar r$, so $\bar r \tilde q$ commutes with $e_1$; the commutant of $e_1$ in $\mathbb{H}$ is the two-dimensional subalgebra $\mathbb{R}\oplus\mathbb{R}e_1$, and being a unit quaternion it lies in $U(1)$. Hence $r = \tilde q p^{-1}$ for some $p\in U(1)$, and the fibres of $\pi$ are exactly the orbits of the right action.
 
 ### The Fibration
 
@@ -148,12 +148,12 @@ The relation is defined with the scalar on the right, because $\mathbb{H}$ is no
 
 $$
 \mathbb{H}P^1\longrightarrow S^4 = \{x\in\mathbb{H}\oplus\mathbb{R} : |x|^2 + t^2 = 1\},
-\qquad [x : y]\mapsto \left(2x\bar y,\ |x|^2 - |y|^2\right)\big/\!\left(|x|^2 + |y|^2\right),
+\qquad [x : y]\mapsto \left(2x y^{\natural},\ |x|^2 - |y|^2\right)\big/\!\left(|x|^2 + |y|^2\right),
 $$
 
 is a homeomorphism, so $\mathbb{H}P^1\cong S^4$.
 
-*Proof.* Choosing $\lambda = |y|^{-1}\bar y$ when $y\neq 0$ normalises the representative so that the second coordinate is the real number $|y| \geq 0$, whence every class has a representative $(u, r)$ with $r \geq 0$ real and $|u|^2 + r^2 = 1$; when $r=0$ the class is $[u:0]$ with $|u|=1$. The multiplication $\mathbb{H}^2\times\mathbb{H}\to\mathbb{H}^2$, $((x,y),\lambda)\mapsto(x\lambda,y\lambda)$, is $\mathbb{H}$-linear in the second factor and $\mathbb{R}$-bilinear, and it is continuous; assigning to $(u,r)$ the point $(2u\bar r, |u|^2 - r^2)$ in the unit five-sphere lies in the image. Allowing $u$ to range over the unit sphere $S^3$ and $r$ over $[0,1]$ produces exactly the points of $S^4$, and the identification is compatible with the equivalence relation because the normalisation is unique; the two descriptions are therefore inverse homeomorphisms.
+*Proof.* Choosing $\lambda = |y|^{-1}y^{\natural}$ when $y\neq 0$ normalises the representative so that the second coordinate is the real number $|y| \geq 0$, whence every class has a representative $(u, r)$ with $r \geq 0$ real and $|u|^2 + r^2 = 1$; when $r=0$ the class is $[u:0]$ with $|u|=1$. The multiplication $\mathbb{H}^2\times\mathbb{H}\to\mathbb{H}^2$, $((x,y),\lambda)\mapsto(x\lambda,y\lambda)$, is $\mathbb{H}$-linear in the second factor and $\mathbb{R}$-bilinear, and it is continuous; assigning to $(u,r)$ the point $(2u\bar r, |u|^2 - r^2)$ in the unit five-sphere lies in the image. Allowing $u$ to range over the unit sphere $S^3$ and $r$ over $[0,1]$ produces exactly the points of $S^4$, and the identification is compatible with the equivalence relation because the normalisation is unique; the two descriptions are therefore inverse homeomorphisms.
 
 So the quaternionic projective line is a four-sphere, and it is the base of a second fibration over the quaternion sphere: the assignment $(x,y)\mapsto$ the class of $(x,y)$ restricted to the unit five-sphere of $\mathbb{H}^2$ gives a bundle
 
@@ -283,9 +283,9 @@ Three differences carry the weight. First, the unit sphere of the plane is the w
 
 ## Summary
 
-The quaternion algebra $\mathbb{H}$ with its quaternion norm is a four-dimensional Euclidean space whose multiplication is norm-multiplicative. The radial structure is the polar decomposition $\tilde q = |\tilde q|u$ and identifies $\mathbb{H}\setminus\{0\}$ with $S^3\times\mathbb{R}_{>0}$; the geometry specific to the system lives on the unit sphere $S^3 = Sp(1)$, which is a compact non-abelian Lie group carrying a bi-invariant metric, the geodesic distance $d(u,v) = \arccos\mathrm{Sc}(u\bar v)$. Its geodesics are the one-parameter subgroups $t\mapsto\exp(tx)$, its cut locus is the antipode, and its isometry group is $O(4)$, acting through the two-sided action of $S^3\times S^3$; as a homogeneous space $S^3\cong SO(4)/SO(3)\cong(S^3\times S^3)/\Delta S^3$. Read as an algorithm, the geodesic joining two unit quaternions is the spherical linear interpolation $\mathrm{slerp}$, which turns at a constant rate and is the shortest rotation once the representative of the double cover is chosen so that the two quaternions have non-negative inner product; at the antipodal pair the formula degenerates, which is the cut locus again, and the quaternion parameterisation of the rotations has no chart degeneracy to compare with the loss of a degree of freedom in a three-angle chart.
+The quaternion algebra $\mathbb{H}$ with its quaternion norm is a four-dimensional Euclidean space whose multiplication is norm-multiplicative. The radial structure is the polar decomposition $\tilde q = |\tilde q|u$ and identifies $\mathbb{H}\setminus\{0\}$ with $S^3\times\mathbb{R}_{>0}$; the geometry specific to the system lives on the unit sphere $S^3 = Sp(1)$, which is a compact non-abelian Lie group carrying a bi-invariant metric, the geodesic distance $d(u,v) = \arccos\mathrm{Sc}(u v^{\natural})$. Its geodesics are the one-parameter subgroups $t\mapsto\exp(tx)$, its cut locus is the antipode, and its isometry group is $O(4)$, acting through the two-sided action of $S^3\times S^3$; as a homogeneous space $S^3\cong SO(4)/SO(3)\cong(S^3\times S^3)/\Delta S^3$. Read as an algorithm, the geodesic joining two unit quaternions is the spherical linear interpolation $\mathrm{slerp}$, which turns at a constant rate and is the shortest rotation once the representative of the double cover is chosen so that the two quaternions have non-negative inner product; at the antipodal pair the formula degenerates, which is the cut locus again, and the quaternion parameterisation of the rotations has no chart degeneracy to compare with the loss of a degree of freedom in a three-angle chart.
 
-The Hopf map $\pi(\tilde q) = qe_1\bar{\tilde q}$ is the orbit map of the free right action of $U(1)$ and gives the locally trivial bundle $S^1\to S^3\to S^2$, whose fibres are linked great circles. Its higher analogue is the bundle $S^3\to S^7\to S^4$ over the quaternionic projective line, and $\mathbb{H}P^n$ is the quotient of the unit sphere of $\mathbb{H}^{n+1}$ by the free right action of $S^3$, a manifold of real dimension $4n$ with a tautological quaternionic line bundle. The quaternionic Möbius group $PGL_2(\mathbb{H})$ acts on $\mathbb{H}P^1\cong S^4$ by fractional transformations and is the orientation-preserving conformal group of the four-sphere.
+The Hopf map $\pi(\tilde q) = qe_1\tilde{q}^{\natural}$ is the orbit map of the free right action of $U(1)$ and gives the locally trivial bundle $S^1\to S^3\to S^2$, whose fibres are linked great circles. Its higher analogue is the bundle $S^3\to S^7\to S^4$ over the quaternionic projective line, and $\mathbb{H}P^n$ is the quotient of the unit sphere of $\mathbb{H}^{n+1}$ by the free right action of $S^3$, a manifold of real dimension $4n$ with a tautological quaternionic line bundle. The quaternionic Möbius group $PGL_2(\mathbb{H})$ acts on $\mathbb{H}P^1\cong S^4$ by fractional transformations and is the orientation-preserving conformal group of the four-sphere.
 
 A quaternionic structure on a real vector space is a triple of complex structures satisfying the quaternion relations; over $\mathbb{R}$ its dimension is a multiple of four, and it carries a compatible inner product, the linear model of the hypercomplex and hyperkähler geometry developed in Part IV. Finally the quaternion norm defines the Lipschitz and Hurwitz orders, whose unit groups have order eight and twenty-four; the twenty-four Hurwitz units form the binary tetrahedral group and are the vertices of the regular 24-cell inscribed in the unit sphere.
 
@@ -296,16 +296,16 @@ A quaternionic structure on a real vector space is a triple of complex structure
 | $\mathbb{H}$ | The quaternion algebra |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_{\mu=0}^{3} q_\mu e_\mu$ | General quaternion, scalar part $q_0$, vector part $\mathbf{q}$ |
-| $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
-| $N(\tilde q) = \tilde q\bar{\tilde q} = \lvert \tilde q\rvert^2$ | Quaternion norm and modulus |
-| $\langle p, \tilde q\rangle = \mathrm{Sc}(p\bar{\tilde q})$ | Real inner product on $\mathbb{H}$ |
+| $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
+| $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \lvert \tilde q\rvert^2$ | Quaternion norm and modulus |
+| $\langle p, \tilde q\rangle = \mathrm{Sc}(p\tilde{q}^{\natural})$ | Real inner product on $\mathbb{H}$ |
 | $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$ | Imaginary quaternions, the space of vectors |
 | $x\times y = \tfrac{1}{2}(xy - yx)$ | Vector product on $\operatorname{Im}\mathbb{H}$ |
 | $S^3 = Sp(1) = \{\tilde q : N(\tilde q) = 1\}$ | Unit sphere, group of unit quaternions |
-| $d_{S^3}(u,v) = \arccos\mathrm{Sc}(u\bar v)$ | Geodesic distance on $S^3$ |
+| $d_{S^3}(u,v) = \arccos\mathrm{Sc}(u v^{\natural})$ | Geodesic distance on $S^3$ |
 | $\exp(x) = \cos\lvert x\rvert + \frac{x}{\lvert x\rvert}\sin\lvert x\rvert$ | Exponential of a vector, the geodesics |
 | $\Delta S^3 = \{(\tilde q,\tilde q)\}$ | Diagonal subgroup of $S^3\times S^3$ |
-| $\pi(\tilde q) = qe_1\bar{\tilde q}$ | Hopf map $S^3\to S^2$ |
+| $\pi(\tilde q) = qe_1\tilde{q}^{\natural}$ | Hopf map $S^3\to S^2$ |
 | $U(1) = \{e^{e_1\theta}\}$ | Circle subgroup, the fibre of the Hopf map |
 | $\mathbb{H}P^n$ | Quaternionic projective space, real dimension $4n$ |
 | $PGL_2(\mathbb{H}) = GL_2(\mathbb{H})/\mathbb{R}^\times$ | Quaternionic Möbius group |

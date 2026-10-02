@@ -23,7 +23,7 @@ which was verified numerically to the finite-difference error. The two-derivativ
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the matter representation and the chiral obstruction at the level of the target manifold.
 - Companion article *The Skyrme Model and the Topological Baryon in Biquaternionic Form*, for the stabilising fourth-order term that turns the three-dimensional model into a soliton theory.
 
-**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = \varepsilon_{jkl}e_l$ for distinct $j,k,l$ in cyclic order, and $i$ is the scalar imaginary, $i^2 = -1$, central in $\mathbb{B}$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the center. The trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$, and $\mathrm{Sc}(\tilde{Q}\tilde Y) = \mathrm{Sc}(\tilde Y\tilde{Q})$ for the scalar part. The gradient is $\tilde\nabla = e_0\partial_{ict} + e_k\partial_k$ and $\Box = \partial_{ict}^2 + \Delta$. The nonlinear field is $\tilde U(\tilde{Q})$, valued in $\mathbb{H}^1_{\mathbb{B}} = \{\tilde U\in\mathbb{H}_{\mathbb{B}} : \tilde U\bar{\tilde U} = e_0\}$ in the non-abelian case and in the central phase in the abelian case; the Goldstone field is $\tilde\pi = \pi^a e_a \in \mathrm{SU}(2)\subset\mathbb{M}_-$, so that $e^{\tilde\pi/f}$ is unitary. The $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the biquaternion-norm contraction $\mathrm{Sc}(\overline{\partial_\mu\tilde U}\partial_\mu\tilde U)$ carries both indices down, so it is summed over the four coordinate derivatives without a metric factor; the positive kinetic term is obtained with the overall sign exhibited below, and at quadratic order equals $\frac12[(\partial_t\pi^a)^2-(\nabla\pi^a)^2]$. Throughout, $f$ is the decay constant of the broken symmetry, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value, and the non-abelian gauge and spinor structures are not used.
+**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = \varepsilon_{jkl}e_l$ for distinct $j,k,l$ in cyclic order, and $i$ is the scalar imaginary, $i^2 = -1$, central in $\mathbb{B}$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the center. The trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$, and $\mathrm{Sc}(\tilde{Q}\tilde Y) = \mathrm{Sc}(\tilde Y\tilde{Q})$ for the scalar part. The gradient is $\tilde\nabla = e_0\partial_{ict} + e_k\partial_k$ and $\Box = \partial_{ict}^2 + \Delta$. The nonlinear field is $\tilde U(\tilde{Q})$, valued in $\mathbb{H}^1_{\mathbb{B}} = \{\tilde U\in\mathbb{H}_{\mathbb{B}} : \tilde U\tilde U^{\natural} = e_0\}$ in the non-abelian case and in the central phase in the abelian case; the Goldstone field is $\tilde\pi = \pi^a e_a \in \mathrm{SU}(2)\subset\mathbb{M}_-$, so that $e^{\tilde\pi/f}$ is unitary. The $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the biquaternion-norm contraction $\mathrm{Sc}(\overline{\partial_\mu\tilde U}\partial_\mu\tilde U)$ carries both indices down, so it is summed over the four coordinate derivatives without a metric factor; the positive kinetic term is obtained with the overall sign exhibited below, and at quadratic order equals $\frac12[(\partial_t\pi^a)^2-(\nabla\pi^a)^2]$. Throughout, $f$ is the decay constant of the broken symmetry, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value, and the non-abelian gauge and spinor structures are not used.
 
 ## The Nonlinear Realisation of a Broken Symmetry
 
@@ -68,9 +68,9 @@ The linear model is the central scalar of the framework with the invariant poten
 $$
 \tilde\Phi = \frac{1}{\sqrt2}\left(\phi_1 + i\phi_2\right)e_0 ,
 \qquad
-V = \frac{\lambda}{4}\left(\mathrm{Sc}(\tilde\Phi^\dagger\tilde\Phi) - v_0^2\right)^2 ,
+V = \frac{\lambda}{4}\left(\mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi) - v_0^2\right)^2 ,
 \qquad
-u = \mathrm{Sc}(\tilde\Phi^\dagger\tilde\Phi) = \frac12\left(\phi_1^2 + \phi_2^2\right),
+u = \mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi) = \frac12\left(\phi_1^2 + \phi_2^2\right),
 $$
 
 whose vacuum sits at $\phi_1 = \sqrt2\,v_0$, $\phi_2 = 0$, and whose two real components have the masses $m_h^2 = \lambda v_0^2$ and $m_\theta^2 = 0$. Here $v_0 = |\langle\varphi\rangle|$ is the order parameter in the normalisation $u = v_0^2$, so that $f = \sqrt2\,v_0$; the companion Higgs article writes the same potential as $\beta(u - v^2/2)^2$, with $v$ the conventional vacuum expectation value, $v = \sqrt2\,v_0$. In the electroweak case $v$ is therefore the conventional $246$ GeV value while the field's own expectation value is $174$ GeV. Writing
@@ -107,7 +107,7 @@ and that the nonlinear Lagrangian is the biquaternion norm of its derivative, up
 The framework's non-abelian compact group is the set of unit real quaternions
 
 $$
-\mathbb{H}^1_{\mathbb{B}} = \left\{\tilde U \in \mathbb{H}_{\mathbb{B}} \;:\; \tilde U\bar{\tilde U} = e_0\right\},
+\mathbb{H}^1_{\mathbb{B}} = \left\{\tilde U \in \mathbb{H}_{\mathbb{B}} \;:\; \tilde U\tilde U^{\natural} = e_0\right\},
 $$
 
 which is $SU(2)$, and whose manifold is the unit sphere $\mathbb{S}^3\subset\mathbb{H}_{\mathbb{B}}$. It is the framework's natural **group manifold**, and its Lie algebra is the span of the three anti-Hermitian generators $e_a$, so that the Goldstone field of the non-abelian case is
@@ -117,7 +117,7 @@ $$
 \qquad
 \tilde U = \exp\!\left(\frac{\tilde\pi}{f}\right),
 \qquad
-\tilde U\bar{\tilde U} = e_0 .
+\tilde U\tilde U^{\natural} = e_0 .
 $$
 
 The field lies in the material sector's compact subalgebra, but the group element $\tilde U$ itself is a general unit real quaternion, neither Hermitian nor anti-Hermitian; only its generator $\tilde\pi$ has a definite sector. The exponential is the standard one in $\mathbb{H}$: because $\tilde\pi^2 = -|\pi|^2 e_0$,
@@ -153,7 +153,7 @@ $$
 
 which is positive for a tangent displacement and is invariant under $\tilde U\mapsto g_L\tilde U g_R^{-1}$ for constant unit quaternions, because $\tilde U^{-1}d\tilde U \mapsto g_R\tilde U^{-1}d\tilde U g_R^{-1}$ and the scalar part is invariant under conjugation. On $\mathbb{H}^1_{\mathbb{B}}$ this is the round metric of $\mathbb{S}^3$: an invariant metric on a compact simple group is unique up to scale, and the scale is the one fixed by $f$. The framework's contribution to the target manifold is therefore the identification of the metric with the algebra's biquaternion norm, and the statement that the two are the same object.
 
-**Verification.** The unit-norm identity was checked numerically for a generic element: for $\tilde\pi = (0.3, -0.5, 0.8)$ and $f = 1$, the norm $\tilde U\bar{\tilde U}$ differs from $e_0$ by less than $10^{-12}$ in the representation of $\mathbb{H}$ as a four-tuple of reals. The trace identity $\mathrm{Sc}(e_ae_b) = -\delta_{ab}$ was checked from the complex $2\times2$ representation $\Phi(e_a) = -i\sigma_a$, giving $-\delta_{ab}$ exactly.
+**Verification.** The unit-norm identity was checked numerically for a generic element: for $\tilde\pi = (0.3, -0.5, 0.8)$ and $f = 1$, the norm $\tilde U\tilde U^{\natural}$ differs from $e_0$ by less than $10^{-12}$ in the representation of $\mathbb{H}$ as a four-tuple of reals. The trace identity $\mathrm{Sc}(e_ae_b) = -\delta_{ab}$ was checked from the complex $2\times2$ representation $\Phi(e_a) = -i\sigma_a$, giving $-\delta_{ab}$ exactly.
 
 ## Symmetries, Currents and the Flat Connection
 
@@ -208,7 +208,7 @@ The central phase group is $U(1) = \{e^{i\alpha}e_0\}$, and its group-valued fie
 $$
 \tilde U = \exp\!\left(\frac{i\,\pi}{f}\right)e_0 \in \mathbb{C}_{\mathbb{B}} ,
 \qquad
-\tilde U\bar{\tilde U} = e_0 ,
+\tilde U\tilde U^{\natural} = e_0 ,
 $$
 
 with $\pi$ a real central-valued scalar. The two-derivative Lagrangian is again the biquaternion norm,
@@ -299,9 +299,9 @@ The framework's contribution to the construction is the target manifold, the inv
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde U(\tilde{Q})$ | Group-valued sigma-model field |
 | $\tilde\pi = \pi^a e_a \in \mathrm{SU}(2)\subset\mathbb{M}_-$ | Goldstone field (non-abelian) |
-| $\tilde U = \exp(\tilde\pi/f)$ | Non-linear field; $\tilde U\bar{\tilde U} = e_0$ |
+| $\tilde U = \exp(\tilde\pi/f)$ | Non-linear field; $\tilde U\tilde U^{\natural} = e_0$ |
 | $f$ | Decay constant of the broken symmetry |
-| $u = \mathrm{Sc}(\tilde\Phi^\dagger\tilde\Phi)$, $V = \frac{\lambda}{4}(u-v_0^2)^2$ | Linear-model invariant and potential |
+| $u = \mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi)$, $V = \frac{\lambda}{4}(u-v_0^2)^2$ | Linear-model invariant and potential |
 | $\phi_1 = \sqrt2 v_0 + h$, $\phi_2 = \theta$ | Radial and Goldstone components; $f = \sqrt2 v_0$ |
 | $j^R_\mu = \tilde U^{-1}\partial_\mu\tilde U$, $j^L_\mu = \partial_\mu\tilde U\,\tilde U^{-1}$ | Maurer–Cartan currents |
 | $\partial_\mu j_\nu - \partial_\nu j_\mu + [j_\mu,j_\nu] = 0$ | Flatness (zero curvature) of the group-valued field |

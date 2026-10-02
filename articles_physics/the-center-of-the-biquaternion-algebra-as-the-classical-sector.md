@@ -15,7 +15,7 @@ Z(\mathbb{B})\cap\mathbb{M}_+=\mathbb{R}e_0
 $$
 of real dimension one. So the classical sector of the algebra is one-dimensional in the operator sense: the only Hermitian central element is a real multiple of the identity. Three consequences follow, and together they are the content of the article.
 
-First, **the centre is exactly the set of observables invariant under every symmetry.** The adjoint action $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^\dagger$ of the unitary group generates all conjugations, and an element is fixed by all of them precisely when it is central. Since conjugation by unitaries implements the rotations of the Bloch sphere, the only rotation-invariant Hermitian observable is the identity. The centre is the framework's answer to the question "which observables are classical?" — and, as stated, that answer is minimal.
+First, **the centre is exactly the set of observables invariant under every symmetry.** The adjoint action $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ of the unitary group generates all conjugations, and an element is fixed by all of them precisely when it is central. Since conjugation by unitaries implements the rotations of the Bloch sphere, the only rotation-invariant Hermitian observable is the identity. The centre is the framework's answer to the question "which observables are classical?" — and, as stated, that answer is minimal.
 
 Second, **the centre is the classical sector in the literal sense of $c$-numbers.** Central elements are the ones that multiply every element on the same side, so they are the scalars with respect to which all algebraic operations are linear. The framework's external parameters — $\hbar$, the speed $c$, a mass $m$, a coupling constant — enter the equations as real multiples of $e_0$, hence as central elements, and the chirality-off-diagonal mass of the linear extension enters as the central coefficient $m e_0$. The centre is where the theory's classical data live.
 
@@ -23,7 +23,7 @@ Third, and this is the honest boundary of the classical reading, **the centre is
 
 The article proceeds: the centre is defined and computed; five equivalent characterizations are given; its role as the classical sector is developed, including the superselection question; the state-dependent commuting slices are described and their non-canonicity is contrasted with the centre's canonicity; and the limitations are stated. The companion articles *The Quantum–Classical Divide in the Biquaternion Framework* and *Fundamental and Derived Elements in the Biquaternion Framework* are the companions for the physical and the structural readings respectively, and the present article supplies the algebraic identification on which both rest.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central scalar imaginary $i$, $i^2=-1$. Conjugations: $\bar{\cdot}$ (quaternion), ${}^{*}$ (complex), $\dagger=\bar{\cdot}\circ{}^{*}$ (Hermitian), $\flat=-\dagger$. The Hermitian and anti-Hermitian subspaces are
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central scalar imaginary $i$, $i^2=-1$. Conjugations: ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}={}^{\natural}\circ\bar{\cdot}$ (Hermitian), $\flat=-{}^{*}$. The Hermitian and anti-Hermitian subspaces are
 $$
 \mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\},
 \qquad
@@ -31,7 +31,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_- .
 $$
-The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, under which $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$, $|\mathbf{r}|\leq1$, and a pure state is $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.
+The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, under which $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$, $|\mathbf{r}|\leq1$, and a pure state is $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.
 
 ## The Center: Definition and Computation
 
@@ -71,7 +71,7 @@ The identification $Z(M_2(\mathbb{C}))=\mathbb{C}I_2$ is the standard statement 
 
 **The two forms on the centre.** The Hermitian form restricts to
 $$
-\langle\lambda e_0,\mu e_0\rangle_\dagger=\mathrm{Tr}\bigl((\lambda e_0)^\dagger(\mu e_0)\bigr)=2\,\lambda^{*}\mu ,
+\langle\lambda e_0,\mu e_0\rangle_{}^{*}=\mathrm{Tr}\bigl((\lambda e_0)^{*}(\mu e_0)\bigr)=2\,\lambda^{*}\mu ,
 $$
 positive definite on $\mathbb{C}$; it is the standard Hermitian form of the scalars, up to the trace normalization $\mathrm{Tr}(e_0)=2$. The biquaternion norm restricts to the **complex square**,
 $$
@@ -134,11 +134,11 @@ The check was performed numerically on the central candidates and confirms that 
 
 **The superselection consequence.** In the standard algebraic theory of superselection, a superselection sector is a central projection of the observable algebra, and a non-trivial centre is what permits a theory to be written as a direct sum of sectors with no interference between them. Because $\mathbb{B}$ is a factor, it admits no non-trivial central projection, so **the framework has no intrinsic superselection structure**. There is no classical label internal to $\mathbb{B}$ that could split the theory into non-interfering branches.
 
-**What the sector decomposition is not.** The Hermitian/anti-Hermitian split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ must not be mistaken for a superselection structure. It is the eigenspace decomposition of the involution $\dagger$; it is not a decomposition by central projections, and the subspace $\mathbb{M}_+$ is not a subalgebra — the product of two Hermitian elements is Hermitian only if they commute:
+**What the sector decomposition is not.** The Hermitian/anti-Hermitian split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ must not be mistaken for a superselection structure. It is the eigenspace decomposition of the involution ${}^{*}$; it is not a decomposition by central projections, and the subspace $\mathbb{M}_+$ is not a subalgebra — the product of two Hermitian elements is Hermitian only if they commute:
 $$
 \tilde{H},\tilde{K}\in\mathbb{M}_+
 \ \Longrightarrow\
-(\tilde{H}\tilde{K})^\dagger=\tilde{K}\tilde{H},
+(\tilde{H}\tilde{K})^{*}=\tilde{K}\tilde{H},
 $$
 which equals $\tilde{H}\tilde{K}$ if and only if $[\tilde{H},\tilde{K}]=0$. The sectors are a grading of the vector space, not a splitting of the algebra, and they are mixed by multiplication. They are the material and informational subspaces of the foundational articles, and their role is kinematic; they do not constitute superselection sectors.
 
@@ -233,7 +233,7 @@ because every element commutes with the scalars. The two statements together ide
 
 **2. Trivial action on the projective state space.** A central element acts on the state module by scalar multiplication, $\tilde{C}\psi=(\lambda e_0)\psi=\lambda\psi$. On a ray $[\psi]$ this is invisible, since $[\lambda\psi]=[\psi]$ for $\lambda\neq0$. The centre is therefore the **kernel of the action of $\mathbb{B}^\times$ on the projective state space**: its unitary part $U(1)=\{\lambda e_0:|\lambda|=1\}$ acts trivially on rays, and conversely an element that fixes every ray is a scalar and hence central, so the Hopf fibration $S^3\to S^2$ is precisely the quotient by the central unitary action. The unobservability of the global phase is thus the statement that the centre acts trivially at the level of rays, and the same fact upgrades to mixed states because a central conjugation is a scalar multiple of the identity,
 $$
-\Gamma_{\tilde{C}}(\tilde{\rho})=(\lambda e_0)\,\tilde{\rho}\,(\lambda e_0)^\dagger=|\lambda|^2\tilde{\rho},
+\Gamma_{\tilde{C}}(\tilde{\rho})=(\lambda e_0)\,\tilde{\rho}\,(\lambda e_0)^{*}=|\lambda|^2\tilde{\rho},
 $$
 a positive multiple of $\tilde{\rho}$ and hence the same state after normalization, and the identity on trace-one states exactly for the unitary central scalars, $|\lambda|=1$. The centre is the part of the algebra that the state space cannot see.
 
@@ -270,12 +270,12 @@ The centre's limitations are as exact as its properties. Because $\mathbb{B}$ is
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_0,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $\dagger=\bar{\cdot}\circ{}^{*}$ | Hermitian conjugation |
+| ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
 | $Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | Centre of $\mathbb{B}$; the series symbol is $\mathbb{C}_{\mathbb{B}}$ |
 | $Z(\mathbb{B})\cap\mathbb{M}_+=\mathbb{R}e_0$ | Hermitian central elements |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm, $N(\lambda e_0)=\lambda^2e_0$ |
+| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, $N(\lambda e_0)=\lambda^2e_0$ |
 | $\mathrm{Ad}_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{-1}$ | Adjoint (inner) action |
 | $\mathrm{ad}_{\tilde{Q}}(\tilde{Y})=[\tilde{Q},\tilde{Y}]$ | Inner derivation |
 | $\mathbb{A}_{\hat{n}}=\mathrm{span}_\mathbb{C}\{\tilde\Pi(\hat{n}),e_0-\tilde\Pi(\hat{n})\}$ | Maximal commutative subalgebra (MASA) |

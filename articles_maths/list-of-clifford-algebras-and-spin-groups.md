@@ -20,7 +20,7 @@ The Clifford algebra is the universal solution of the relation $v^2 = q(v)$, and
 | the fundamental relation | $uv + vu = 2B(u,v)\cdot 1$; the polarised form of the defining relation | *Clifford Algebras*; *Quadratic Forms and Polarisation* |
 | the parity grading $\mathrm{Cl} = \mathrm{Cl}^0 \oplus \mathrm{Cl}^1$ | the even and odd parts; $\mathrm{Cl}^0$ is a subalgebra, the even Clifford algebra | *Clifford Algebras*; *Clifford Algebras in Finite Dimensions* |
 | the grade involution $\alpha$ | $v \mapsto -v$, with $\alpha(x) = (-1)^kx$ on the degree-$k$ part | *Clifford Algebras*; *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* |
-| reversion $x \mapsto x^r$ and Clifford conjugation $\bar x = \alpha(x^r)$ | the two anti-involutions; reversion fixes the vectors, conjugation negates them | *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; *Clifford Algebras in Finite Dimensions* |
+| reversion $x \mapsto x^r$ and Clifford conjugation $x^{\natural} = \alpha(x^r)$ | the two anti-involutions; reversion fixes the vectors, conjugation negates them | *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; *Clifford Algebras in Finite Dimensions* |
 | the graded tensor product | $\mathrm{Cl}(V_1,q_1)\,\hat\otimes\,\mathrm{Cl}(V_2,q_2) \cong \mathrm{Cl}(V_1 \oplus V_2, q_1 \perp q_2)$ | *Clifford Algebras*; *Bott Periodicity and the Classification* |
 | the volume element $\omega = e_1\cdots e_n$ | $\omega^2 = (-1)^{n(n-1)/2}\prod_i q(e_i)$; it decides the centre in odd dimension | *Clifford Algebras in Finite Dimensions*; *Bott Periodicity and the Classification* |
 | the exterior algebra as the case $q = 0$ | $\Lambda(V) = \mathrm{Cl}(V,0)$; the Clifford algebra is a deformation of it | *Clifford Algebras* |
@@ -64,7 +64,7 @@ Inside the units of the Clifford algebra sit the Clifford group, the Pin group a
 | Group or statement | The property it has | Introduced in |
 |---|---|---|
 | the Clifford group $\Gamma(V,q)$ | the units preserving the space of vectors under the signed inner conjugation action $\mathrm{Ad}^{\alpha}_x(v) = \alpha(x)vx^{-1}$ | *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* |
-| the Clifford norm $N(x) = x\bar x$ | the norm on the Clifford group; the Pin group is the part with $N = \pm1$ | *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* |
+| the Clifford norm $N(x) = x x^{\natural}$ | the norm on the Clifford group; the Pin group is the part with $N = \pm1$ | *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* |
 | the Pin group $\mathrm{Pin}(V,q)$ | $\{x \in \Gamma : N(x) = \pm1\}$; it acts on the space by reflections and double covers $O(V,q)$ over $\mathbb{R}$ | *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* |
 | the Spin group $\mathrm{Spin}(V,q)$ | $\mathrm{Pin} \cap \mathrm{Cl}^0$; the double cover of $SO(V,q)$ | *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* |
 | the reflection $\rho_u$ | $\rho_u(v) = v - 2g(v,u)q(u)^{-1}u$; the signed inner conjugation action of a vector | *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* |
@@ -126,12 +126,12 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $\mathrm{Cl}(V,q)$ | the Clifford algebra of $q$ on $V$ |
 | $v^2 = q(v)\cdot1$, $uv + vu = 2B(u,v)$ | the defining and fundamental relations |
 | $\mathrm{Cl}^0$, $\mathrm{Cl}^1$ | the even and odd parts of the parity grading |
-| $\alpha$, $x^r$, $\bar x$ | the grade involution, reversion, Clifford conjugation |
+| $\alpha$, $x^r$, $x^{\natural}$ | the grade involution, reversion, Clifford conjugation |
 | $\hat\otimes$ | the graded tensor product |
 | $\mathrm{Cl}_{p,q}$ | the Clifford algebra with $p$ positive and $q$ negative squares |
 | $d = p - q$, $n = p + q$ | the signature difference and the total dimension |
 | $\omega = e_1\cdots e_n$, $\delta = \omega^2$ | the volume element and its square |
-| $\Gamma(V,q)$, $N(x) = x\bar x$ | the Clifford group and its norm |
+| $\Gamma(V,q)$, $N(x) = x x^{\natural}$ | the Clifford group and its norm |
 | $\mathrm{Pin}(V,q)$, $\mathrm{Spin}(V,q)$ | the Pin and Spin groups |
 | $\rho_u$, $\mathrm{Ad}^{\alpha}_x$ | the reflection and the signed inner conjugation action |
 | $\Delta = \Lambda^\bullet W$, $\Delta_\pm$ | the spinor module and its chiral halves |

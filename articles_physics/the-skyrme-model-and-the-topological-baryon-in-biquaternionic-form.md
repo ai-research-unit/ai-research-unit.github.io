@@ -7,7 +7,7 @@ The **Skyrme model** is the proposal that the baryon is a soliton of the pion fi
 This article constructs the Skyrme model in the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The skyrmion field is the framework's **unit real quaternion**,
 
 $$
-\tilde U(\tilde{Q}) \in \mathbb{H}^1_{\mathbb{B}} , \qquad \tilde U\bar{\tilde U} = e_0 ,
+\tilde U(\tilde{Q}) \in \mathbb{H}^1_{\mathbb{B}} , \qquad \tilde U\tilde U^{\natural} = e_0 ,
 $$
 
 which is the chiral field of the companion pion article; its target is the group manifold $\mathbb{S}^3$, whose third homotopy group is $\pi_3(\mathbb{S}^3) = \mathbb{Z}$, so the winding number is an integer. The Skyrme term is the fourth-order invariant built from the flat current $j_\mu = \tilde U^{-1}\partial_\mu\tilde U$ of the nonlinear-sigma-model article, and the topological baryon number is its winding.
@@ -49,7 +49,7 @@ $$
 \qquad
 \tilde U = \exp\!\left(\frac{\tilde\pi}{f_\pi}\right),
 \qquad
-\tilde U^{-1} = \bar{\tilde U} = \tilde U^\dagger ,
+\tilde U^{-1} = \tilde U^{\natural} = \tilde U^{*} ,
 $$
 
 where the last identities hold because $\tilde U$ is a unit real quaternion. The field takes values in the manifold $\mathbb{S}^3$, and the analyses of this article are static: the energy functional is evaluated on configurations $\tilde U(\mathbf{x})$ that are pure gauge at spatial infinity, $\tilde U(\mathbf{x})\to e_0$ as $|\mathbf{x}|\to\infty$, so that they extend to maps $\mathbb{S}^3\to\mathbb{S}^3$.
@@ -277,7 +277,7 @@ The framework supplies the target manifold, the flat current, the commutator str
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}^1_{\mathbb{B}}$ | Unit real quaternions $\cong SU(2)\cong\mathbb{S}^3$; the skyrmion target |
-| $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$ | Skyrmion field; $\tilde U = \exp(\tilde\pi/f_\pi)$, $\tilde U\bar{\tilde U} = e_0$ |
+| $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$ | Skyrmion field; $\tilde U = \exp(\tilde\pi/f_\pi)$, $\tilde U\tilde U^{\natural} = e_0$ |
 | $j_\mu = \tilde U^{-1}\partial_\mu\tilde U$ | Flat Maurer–Cartan current |
 | $\partial_\mu j_\nu - \partial_\nu j_\mu + [j_\mu,j_\nu] = 0$ | Flatness (zero curvature) |
 | $\mathcal{L}_2 = -\frac{f_\pi^2}{2}\mathrm{Sc}(\bar j_\mu j_\mu)$ | Two-derivative (chiral) term |

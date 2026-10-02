@@ -8,9 +8,9 @@ This is an exercise in the electromagnetism series. It is the exactly solvable s
 $$
 \tilde{\nabla} = e_0\,\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z,
 \qquad
-\bar{\tilde{\nabla}} = e_0\,\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z,
+\tilde{\nabla}^{\natural} = e_0\,\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z,
 $$
-with $\partial_{ict} = -\frac{i}{c}\partial_t$ and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ (pure vector), the potential $\tilde{A} = \frac{i\phi}{c}e_0 + \mathbf{A}$, and the source $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$ (here $\rho$ is the charge density, not a distance). The permittivity and permeability $\epsilon,\mu$ with $c = 1/\sqrt{\epsilon\mu}$, and $\mathbf{H} = \mathbf{B}/\mu$. The biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, the quaternion conjugate $\bar{\tilde{Q}}$, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ of the shared notation. No object of the informational sector arises below, so $\mathbb{M}_+$, the rotors, and the trace formula are recorded but the trace formula is not used; the boost rotor is invoked only in Problem 5.
+with $\partial_{ict} = -\frac{i}{c}\partial_t$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ (pure vector), the potential $\tilde{A} = \frac{i\phi}{c}e_0 + \mathbf{A}$, and the source $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$ (here $\rho$ is the charge density, not a distance). The permittivity and permeability $\epsilon,\mu$ with $c = 1/\sqrt{\epsilon\mu}$, and $\mathbf{H} = \mathbf{B}/\mu$. The biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate $\tilde{Q}^{\natural}$, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ of the shared notation. No object of the informational sector arises below, so $\mathbb{M}_+$, the rotors, and the trace formula are recorded but the trace formula is not used; the boost rotor is invoked only in Problem 5.
 
 **What is inherited from the parent.** The charge $q$ moves on the worldline $\mathbf{x}_q(t)$ with coordinate velocity $\mathbf{v}(t)$ and $\boldsymbol{\beta} = \mathbf{v}/c$. The retarded time is defined implicitly by
 $$
@@ -42,7 +42,7 @@ $$
 \qquad
 \tanh\psi_u = \frac{u}{c},
 $$
-**carries the laboratory to the frame moving with $+\mathbf{u}$**: applied to the rest four-velocity it produces velocity $-\mathbf{u}$, i.e. $\tilde{\Lambda}_{\mathbf{u}}(ic\,e_0)\tilde{\Lambda}_{\mathbf{u}}^\dagger$ has velocity $-\mathbf{u}$. This is the convention fixed by the boosting and two-body exercises of the relativity series and used by the parent. The field strength is rank two, and under this rotor it transforms by the **similarity** $\tilde{F}' = \bar{\tilde{\Lambda}}_{\mathbf{u}}\tilde{F}\tilde{\Lambda}_{\mathbf{u}}$, not by the four-vector rotor conjugation $\tilde{\Lambda}\tilde{F}\tilde{\Lambda}^\dagger$; that is the parent's Problem 5 and we use its result.
+**carries the laboratory to the frame moving with $+\mathbf{u}$**: applied to the rest four-velocity it produces velocity $-\mathbf{u}$, i.e. $\tilde{\Lambda}_{\mathbf{u}}(ic\,e_0)\tilde{\Lambda}_{\mathbf{u}}^\dagger$ has velocity $-\mathbf{u}$. This is the convention fixed by the boosting and two-body exercises of the relativity series and used by the parent. The field strength is rank two, and under this rotor it transforms by the **similarity** $\tilde{F}' = \tilde{\Lambda}^{\natural}_{\mathbf{u}}\tilde{F}\tilde{\Lambda}_{\mathbf{u}}$, not by the four-vector rotor conjugation $\tilde{\Lambda}\tilde{F}\tilde{\Lambda}^{*}$; that is the parent's Problem 5 and we use its result.
 
 **New notation for this exercise.** Since the uniform case is naturally organized around the charge's *present* position, write the **present separation**
 $$
@@ -287,18 +287,18 @@ $$
 $$
 whose velocity is $-c\tanh\psi_u\,\hat{\mathbf{u}} = -\mathbf{u}$. Verified numerically: for $\mathbf{u} = 0.6c\,\hat{\mathbf{e}}_1$, $\mathbf{u} = (0,0.5c,0.3c)$, and $\mathbf{u} = (0.3c,-0.4c,0.5c)$ the conjugated rest four-velocity had velocity exactly $-\mathbf{u}$ in each case. So the rotor built with $+\mathbf{u}$ carries the lab to the frame moving with $+\mathbf{u}$; a particle at rest in the lab appears in that frame to move with $-\mathbf{u}$.
 
-**Solution (b).** The field strength is a rank-two object, not a four-vector, so the rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ that acts on $\mathbb{M}_-$ does **not** apply. As established by the parent's Problem 5, a pure boost acts on the field by the **similarity**
+**Solution (b).** The field strength is a rank-two object, not a four-vector, so the rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ that acts on $\mathbb{M}_-$ does **not** apply. As established by the parent's Problem 5, a pure boost acts on the field by the **similarity**
 $$
-\tilde{F}' = \bar{\tilde{\Lambda}}_{\mathbf{u}}\,\tilde{F}\,\tilde{\Lambda}_{\mathbf{u}}
+\tilde{F}' = \tilde{\Lambda}^{\natural}_{\mathbf{u}}\,\tilde{F}\,\tilde{\Lambda}_{\mathbf{u}}
 = \tilde{\Lambda}_{\mathbf{u}}^{-1}\tilde{F}\,\tilde{\Lambda}_{\mathbf{u}}
 \qquad(\text{laboratory}\to\text{moving frame}),
 $$
 and inversely
 $$
-\tilde{F} = \tilde{\Lambda}_{\mathbf{u}}\,\tilde{F}'\,\bar{\tilde{\Lambda}}_{\mathbf{u}}
+\tilde{F} = \tilde{\Lambda}_{\mathbf{u}}\,\tilde{F}'\,\tilde{\Lambda}^{\natural}_{\mathbf{u}}
 \qquad(\text{moving frame}\to\text{laboratory}),
 $$
-because $\bar{\tilde{\Lambda}}_{\mathbf{u}} = \tilde{\Lambda}_{\mathbf{u}}^{-1}$ for a unit-norm rotor. We used the parent's verification that the similarity reproduces the standard component relations $\mathbf{E}_\parallel' = \mathbf{E}_\parallel$, $\mathbf{E}_\perp' = \gamma(\mathbf{E}_\perp + \mathbf{u}\times\mathbf{B}_\perp)$ and their magnetic counterparts, and checked it again here: over sixty random boosts and random test fields the similarity matched the standard formulas to $6.7\times10^{-16}$, while the rotor conjugation did not.
+because $\tilde{\Lambda}^{\natural}_{\mathbf{u}} = \tilde{\Lambda}_{\mathbf{u}}^{-1}$ for a unit-norm rotor. We used the parent's verification that the similarity reproduces the standard component relations $\mathbf{E}_\parallel' = \mathbf{E}_\parallel$, $\mathbf{E}_\perp' = \gamma(\mathbf{E}_\perp + \mathbf{u}\times\mathbf{B}_\perp)$ and their magnetic counterparts, and checked it again here: over sixty random boosts and random test fields the similarity matched the standard formulas to $6.7\times10^{-16}$, while the rotor conjugation did not.
 
 Now let the charge move with velocity $\mathbf{v} = \mathbf{u}$ in the lab, and let $\mathbf{d}$ be the lab separation from its present position. In the rest frame $S'$, where the charge is permanently at rest at the origin, the field is the static Coulomb field. The lab separation transforms to the rest-frame separation
 $$
@@ -324,7 +324,7 @@ which is exactly the closed form of Problem 2. The magnetic field carried back b
 
 **Solution (c).** Because the charge's rest frame is inertial for *all* time when the motion is strictly uniform, the rest-frame field is the static Coulomb field at every event, with no acceleration correction; the boost is therefore exact, not a near-zone or low-velocity approximation. This is why the uniform case is the solvable one: the general Liénard–Wiechert field of an accelerated charge is not a boost of any static field, but here the boost is global and the whole field follows from it.
 
-**Evidence.** (i) Rotor direction: the conjugated rest four-velocity had velocity exactly $-\mathbf{u}$ for the three boosts above. (ii) Transformation law: the similarity matched the standard component formulas to $6.7\times10^{-16}$ over sixty random boosts; the conjugation did not. (iii) Boosted Coulomb: starting from $\tilde{F}' = i\sqrt{\epsilon}\,\mathbf{E}'$ with the rest-frame Coulomb field, the lab field $\tilde{F} = \tilde{\Lambda}_{\mathbf{u}}\tilde{F}'\bar{\tilde{\Lambda}}_{\mathbf{u}}$ matched the closed form of Problem 2 to $2.1\times10^{-17}$ over twenty random configurations. Using the opposite boost sign, or the wrong transformation law, did not match.
+**Evidence.** (i) Rotor direction: the conjugated rest four-velocity had velocity exactly $-\mathbf{u}$ for the three boosts above. (ii) Transformation law: the similarity matched the standard component formulas to $6.7\times10^{-16}$ over sixty random boosts; the conjugation did not. (iii) Boosted Coulomb: starting from $\tilde{F}' = i\sqrt{\epsilon}\,\mathbf{E}'$ with the rest-frame Coulomb field, the lab field $\tilde{F} = \tilde{\Lambda}_{\mathbf{u}}\tilde{F}'\tilde{\Lambda}^{\natural}_{\mathbf{u}}$ matched the closed form of Problem 2 to $2.1\times10^{-17}$ over twenty random configurations. Using the opposite boost sign, or the wrong transformation law, did not match.
 
 ## Problem 6: Independent Checks, the Present-Position Fallacy, and the Invariants
 
@@ -351,7 +351,7 @@ I_2 = \mathbf{E}\cdot\mathbf{B} = 0 .
 $$
 In the biquaternion normalization, with $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$ and $\mathbf{H}=\mathbf{B}/\mu$,
 $$
-N(\tilde{F}) = \tilde{F}\bar{\tilde{F}} = -\epsilon\left(I_1 + 2ic\,I_2\right) = -\epsilon I_1 < 0,
+N(\tilde{F}) = \tilde{F}\tilde{F}^{\natural} = -\epsilon\left(I_1 + 2ic\,I_2\right) = -\epsilon I_1 < 0,
 \qquad
 \tilde{F}^2 = -N(\tilde{F}) = \epsilon I_1 > 0 .
 $$
@@ -368,8 +368,8 @@ The field is of electric type, is **not** null, and is not a zero divisor: $N(\t
 1. **"Purely transverse" is a statement about the pancake, not about every direction.** The exact content is: in the transverse plane the field is exactly perpendicular to $\mathbf{v}$, and at fixed impact parameter the longitudinal component is a factor $0.385/\gamma$ below the transverse peak. At a fixed direction the longitudinal fraction is $\cos\theta$, independent of $\gamma$, so the naive reading is false at every finite $\gamma$. This is a clarification, not a defect, but it is the step most easily smoothed over.
 2. **Strictly uniform motion only.** The exact reduction to the boosted Coulomb field requires $\dot{\mathbf{v}}\equiv0$, so that the charge's rest frame is inertial for all time. A charge that is only *instantaneously* unaccelerated at the emission event still carries the parent's acceleration field $\mathbf{E}_a$ at that event; the uniform-motion result is the limit in which that field is absent everywhere, and we did not attempt to bound the "almost uniform" correction.
 3. **The $\beta\to1$ behaviour of the closed-form retarded position.** The coefficient of $R^2$ in the quadratic degenerates as $\beta\to1$: for a field point ahead of the charge along the motion ($d_\parallel>0$) the closed form gives $R\sim2d_\parallel\gamma^2\to\infty$, while for one behind it ($d_\parallel<0$) $R\to(d_\parallel^2+d_\perp^2)/(2|d_\parallel|)$, finitely (checked numerically at $\beta$ up to $0.99999$). The present-position field is finite throughout, so the limit $\beta\to1$ does not commute with reading $R$ off the quadratic. We did not pursue the caustic $\kappa\to0$ or superluminal worldlines; that remains the parent's gap 3.
-4. **The similarity law is used, not derived.** We inherited $\tilde{F}' = \bar{\tilde{\Lambda}}\tilde{F}\tilde{\Lambda}$ from the parent and verified it numerically against the standard boost, but did not derive it from the biquaternion representation of the rank-two field. That derivation remains the parent's Further Problem 3.
-5. **The overall normalization of $\tilde{F} = \bar{\tilde{\nabla}}\tilde{A}$.** The Maxwell article records a normalization caveat for this identification; we used the parent's fixed normalization and did not re-examine it.
+4. **The similarity law is used, not derived.** We inherited $\tilde{F}' = \tilde{\Lambda}^{\natural}\tilde{F}\tilde{\Lambda}$ from the parent and verified it numerically against the standard boost, but did not derive it from the biquaternion representation of the rank-two field. That derivation remains the parent's Further Problem 3.
+5. **The overall normalization of $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}$.** The Maxwell article records a normalization caveat for this identification; we used the parent's fixed normalization and did not re-examine it.
 
 ## Summary
 
@@ -389,7 +389,7 @@ $$
 $$
 which is radial from the *present* position, falls as $1/d^2$ at fixed direction, and is flattened along the motion. The acceleration field vanishes identically, so the field is of electric type and not null: $I_1 = \left(\frac{q}{4\pi\epsilon}\frac{1-\beta^2}{D^2}\right)^2>0$, $I_2=0$, $N(\tilde{F})=-\epsilon I_1\neq0$, $\tilde{F}^2=\epsilon I_1\neq0$; it is never a zero divisor and never radiation.
 
-The closed form was verified by recomputation on cases that did not suggest it. The non-relativistic limit returns Coulomb with an anisotropic $O(\beta^2)$ correction — no linear term — and the retarded position converges to the present one; the ultrarelativistic limit concentrates the field into a transverse pancake of angular half-width $\approx0.766/\gamma$, with transverse enhancement $\gamma$, axial suppression $1/\gamma^2$, and a longitudinal component at fixed impact parameter that is a factor $0.385/\gamma$ below the transverse peak, so the field becomes purely transverse in that precise (pancake) sense while remaining radial from the present position. A third, algebraically independent check boosts the rest-frame Coulomb field with the rotor $\tilde{\Lambda}_{\mathbf{u}}$ and recovers the same closed form to $2.1\times10^{-17}$. The convention used throughout is that the rotor built with $+\mathbf{u}$ carries the laboratory to the frame moving with $+\mathbf{u}$, and that the field transforms by the similarity $\tilde{F}' = \bar{\tilde{\Lambda}}_{\mathbf{u}}\tilde{F}\tilde{\Lambda}_{\mathbf{u}}$, not by four-vector rotor conjugation.
+The closed form was verified by recomputation on cases that did not suggest it. The non-relativistic limit returns Coulomb with an anisotropic $O(\beta^2)$ correction — no linear term — and the retarded position converges to the present one; the ultrarelativistic limit concentrates the field into a transverse pancake of angular half-width $\approx0.766/\gamma$, with transverse enhancement $\gamma$, axial suppression $1/\gamma^2$, and a longitudinal component at fixed impact parameter that is a factor $0.385/\gamma$ below the transverse peak, so the field becomes purely transverse in that precise (pancake) sense while remaining radial from the present position. A third, algebraically independent check boosts the rest-frame Coulomb field with the rotor $\tilde{\Lambda}_{\mathbf{u}}$ and recovers the same closed form to $2.1\times10^{-17}$. The convention used throughout is that the rotor built with $+\mathbf{u}$ carries the laboratory to the frame moving with $+\mathbf{u}$, and that the field transforms by the similarity $\tilde{F}' = \tilde{\Lambda}^{\natural}_{\mathbf{u}}\tilde{F}\tilde{\Lambda}_{\mathbf{u}}$, not by four-vector rotor conjugation.
 
 Two things are recorded rather than closed. The first is a clarification: "purely transverse in the ultrarelativistic limit" is exact for the transverse plane and at fixed impact parameter, but false at every finite $\gamma$ if read as a statement about every fixed direction, where the longitudinal fraction is $\gamma$-independent. The second is that the exact reduction to the boosted Coulomb field assumes strictly uniform motion; a charge only instantaneously unaccelerated still carries an acceleration field at the emission event.
 
@@ -402,7 +402,7 @@ Two things are recorded rather than closed. The first is a clarification: "purel
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace, scalar subspace |
-| $\tilde{\nabla}, \bar{\tilde{\nabla}}, \Box = \tilde{\nabla}\bar{\tilde{\nabla}}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
+| $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
 | $\partial_{ict} = -\frac{i}{c}\partial_t$ | Temporal component of the gradient |
 | $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ | Field-strength biquaternion (pure vector) |
 | $\tilde{A} = \frac{i\phi}{c}e_0 + \mathbf{A}$ | Potential biquaternion |
@@ -422,8 +422,8 @@ Two things are recorded rather than closed. The first is a clarification: "purel
 | $\mathbf{E}, \mathbf{B}$ | Electric field and magnetic induction; $\mathbf{B} = \mathbf{v}\times\mathbf{E}/c^2$ |
 | $I_1 = \mathbf{E}^2-c^2\mathbf{B}^2$, $I_2 = \mathbf{E}\cdot\mathbf{B}$ | Field invariants |
 | $\tilde{\Lambda}_{\mathbf{u}} = \cosh\frac{\psi_u}{2}+i\sinh\frac{\psi_u}{2}\hat{\mathbf{u}}$, $\tanh\psi_u = u/c$ | Boost rotor; carries the lab to the frame moving with $+\mathbf{u}$ |
-| $\tilde{F}' = \bar{\tilde{\Lambda}}_{\mathbf{u}}\tilde{F}\tilde{\Lambda}_{\mathbf{u}}$ | Boost of the field (similarity, not rotor conjugation) |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
+| $\tilde{F}' = \tilde{\Lambda}^{\natural}_{\mathbf{u}}\tilde{F}\tilde{\Lambda}_{\mathbf{u}}$ | Boost of the field (similarity, not rotor conjugation) |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (recorded, not used) |
 
 ## Further Reading

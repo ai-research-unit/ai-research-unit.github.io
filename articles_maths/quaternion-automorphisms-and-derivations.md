@@ -9,7 +9,7 @@ The article uses *Quaternion Algebra* for the algebra and its centre, *Quaternio
 
 The results are the case of the standard structure theory of a central simple algebra: over a field $k$, every $k$-algebra automorphism of a finite-dimensional central simple algebra is inner, and every derivation is inner. Those two theorems are cited as standard; the specific computations for $\mathbb{H}$ are shown.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with centre $\mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0$, conjugate $\bar{\tilde q}$, and norm $N(\tilde q) = \tilde q\bar{\tilde q}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : N(\tilde q) = 1\}$. The scalar part of a commutator gives $\mathrm{Sc}([x,y]) = 0$, so $[x,y]\in\operatorname{Im}\mathbb{H}$ always.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with centre $\mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0$, conjugate $\tilde{q}^{\natural}$, and norm $N(\tilde q) = \tilde q\tilde{q}^{\natural}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : N(\tilde q) = 1\}$. The scalar part of a commutator gives $\mathrm{Sc}([x,y]) = 0$, so $[x,y]\in\operatorname{Im}\mathbb{H}$ always.
 
 ## Automorphisms of the Quaternion Algebra
 
@@ -29,7 +29,7 @@ $$
 
 *Proof.* The algebra $\mathbb{H}$ is central simple over $\mathbb{R}$ by *Quaternion Ideals and Simplicity*, and the Skolem–Noether theorem states that every $k$-algebra automorphism of a finite-dimensional central simple $k$-algebra is inner; quoting it as standard gives surjectivity of $u\mapsto\iota_u$ onto the automorphism group. The kernel is $\{\pm1\}$ by the proposition, so the first isomorphism theorem gives the displayed isomorphism.
 
-**Remark.** The anti-automorphism $x\mapsto\bar x$ is not an automorphism, since it reverses products, and it is not the identity $\iota_u$ for any unit; it is excluded from the automorphism group. There is no second coset of automorphisms here, because the centre of $\mathbb{H}$ is $\mathbb{R}$, which has no non-trivial field automorphism.
+**Remark.** The anti-automorphism $x\mapsto x^{\natural}$ is not an automorphism, since it reverses products, and it is not the identity $\iota_u$ for any unit; it is excluded from the automorphism group. There is no second coset of automorphisms here, because the centre of $\mathbb{H}$ is $\mathbb{R}$, which has no non-trivial field automorphism.
 
 ## The Automorphism Group as the Rotation Group
 
@@ -133,7 +133,7 @@ The biquaternion algebra, being central simple only over $\mathbb{C}$ and having
 |---|---|
 | $\mathbb{H}$ | The quaternion algebra, central simple over $\mathbb{R}$ |
 | $e_0 = 1, e_1, e_2, e_3$ | Basis, $e_k^2 = -e_0$ |
-| $\bar{\cdot}$ | Quaternion conjugation, an anti-automorphism, not in $\operatorname{Aut}$ |
+| ${}^{\natural}$ | Quaternion conjugation, an anti-automorphism, not in $\operatorname{Aut}$ |
 | $\mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0$ | Centre; kernel of every derivation |
 | $Sp(1) = \{\tilde q : N(\tilde q) = 1\}$ | Unit quaternions |
 | $\iota_u(x) = uxu^{-1}$ | Inner automorphism determined by the unit $u$ |

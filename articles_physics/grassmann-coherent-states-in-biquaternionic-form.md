@@ -191,7 +191,7 @@ is even. An even operator in the finite Fock space is an element of the observab
 $$
 \tilde\rho_\theta\in\mathbb{M}_+ ,
 \qquad
-\tilde\rho_\theta=\tilde\rho_\theta^\dagger ,
+\tilde\rho_\theta=\tilde\rho_\theta^{*} ,
 \qquad
 \mathrm{Tr}\,\tilde\rho_\theta=1 ,
 $$

@@ -7,7 +7,7 @@ This article is the hyperbolic-geometric slot of the split biquaternion system. 
 
 The two-dimensional analogue is the hyperbolic geometry of the split complex plane, treated in *Hyperbolic Rotations* and in *Hyperbolic Geometry* in Part II; the general theory of hyperbolic manifolds, of their geodesics and of their boundaries is the subject of *Hyperbolic Geometry* and of *Pseudo-Riemannian and Lorentzian Geometry*, written in parallel, and is cited rather than reproduced. The corresponding construction for the biquaternion algebra, in which hyperbolic three-space appears through Hermitian matrices and $SL_2(\mathbb{C})$, is the subject of *Biquaternion Topology* and of the written biquaternion articles; the present article is the split biquaternion realisation and not that one. The quaternion sphere $S^3$ is used as the comparison object throughout, as in *Quaternion Geometry*.
 
-**Conventions.** The split biquaternion algebra is $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ with the basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and the central split complex unit $j$, $j^2 = +e_0$. The Hermitian scalar form is $g(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\tilde Q^{\dagger})$, of signature $(4,4)$ on $\mathbb{H}_{\mathbb{D}}$; its restrictions to the Hermitian subspace $\mathbb{M}_+$ and to the anti-Hermitian subspace $\mathbb{M}_-$ have signatures $(1,3)$ and $(3,1)$. The anti-Hermitian subspace is
+**Conventions.** The split biquaternion algebra is $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ with the basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and the central split complex unit $j$, $j^2 = +e_0$. The Hermitian scalar form is $g(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\tilde{Q}^{*})$, of signature $(4,4)$ on $\mathbb{H}_{\mathbb{D}}$; its restrictions to the Hermitian subspace $\mathbb{M}_+$ and to the anti-Hermitian subspace $\mathbb{M}_-$ have signatures $(1,3)$ and $(3,1)$. The anti-Hermitian subspace is
 
 $$
 \mathbb{M}_- = \left\{a\,je_0 + v : a\in\mathbb{R},\ v\in\operatorname{Im}\mathbb{H}\right\}
@@ -209,8 +209,8 @@ The isometries are of three types: elliptic, fixing a point and rotating about i
 | $\tilde{Q} = a\,je_0 + v$ | General element of $\mathbb{M}_-$, $a\in\mathbb{R}$, $v\in\operatorname{Im}\mathbb{H}$ |
 | $\mathrm{Sc}$, $\mathrm{Vect}$ | Scalar and vector part |
 | $\operatorname{Im}\mathbb{H}$ | Pure quaternion subspace, $\cong\mathbb{R}^3$ |
-| $\tilde{Q}^{\dagger} = \bar{\tilde{Q}}^{*}$ | Hermitian conjugate |
-| $g(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\tilde Q^{\dagger})$ | Hermitian scalar form, signature $(4,4)$ |
+| $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ | Hermitian conjugate |
+| $g(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\tilde{Q}^{*})$ | Hermitian scalar form, signature $(4,4)$ |
 | $\mathbb{M}_+$ | Hermitian subspace, $g$ of signature $(1,3)$ |
 | $\mathbb{M}_- = \{a\,je_0 + v\}$ | Anti-Hermitian subspace, $g$ of signature $(3,1)$ |
 | $g(\tilde{Q},\tilde{Q}) = -a^2 + v_1^2 + v_2^2 + v_3^2$ | The Lorentzian form on $\mathbb{M}_-$ |

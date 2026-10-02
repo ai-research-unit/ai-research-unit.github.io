@@ -11,7 +11,7 @@ $$
 N(x) = x\,x = x^2 .
 $$
 
-The norm of a biquaternion is written $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, a complex-valued form, in *Biquaternion Norm and Invertibility*; here the same symbol is used for the real norm $N(x) = x^2$, and the differences between the two are stated wherever they matter.
+The norm of a biquaternion is written $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$, a complex-valued form, in *Biquaternion Norm and Invertibility*; here the same symbol is used for the real norm $N(x) = x^2$, and the differences between the two are stated wherever they matter.
 
 ## The Norm
 
@@ -83,7 +83,7 @@ $$
 x\,x = x^2 .
 $$
 
-It is a real number, non-negative, and vanishes if and only if $x = 0$. The Hermitian form coincides with the norm for the same reason it does in the complex algebra — the algebra is commutative and its involution is trivial — and the coincidence is even more complete here, since there is no second coefficient field over which the two could differ. In the biquaternion algebra the two objects separate: the Hermitian form $\tilde{Q}\tilde{Q}^\dagger$ is a biquaternion whose vector part need not vanish, and it carries information the norm does not.
+It is a real number, non-negative, and vanishes if and only if $x = 0$. The Hermitian form coincides with the norm for the same reason it does in the complex algebra — the algebra is commutative and its involution is trivial — and the coincidence is even more complete here, since there is no second coefficient field over which the two could differ. In the biquaternion algebra the two objects separate: the Hermitian form $\tilde{Q}\tilde{Q}^{*}$ is a biquaternion whose vector part need not vanish, and it carries information the norm does not.
 
 ### The Euclidean Norm
 

@@ -156,10 +156,10 @@ $$
 \omega_{m-1} = \frac{2\pi^{m/2}}{\Gamma(m/2)}
 $$
 
-be the surface area of the unit sphere in $\mathbb{R}^m$, and let $\bar x = x_0 - \sum_{k\geq1}B_kx_k$ be the conjugate of $x$ in the Clifford sense. Then
+be the surface area of the unit sphere in $\mathbb{R}^m$, and let $x^{\natural} = x_0 - \sum_{k\geq1}B_kx_k$ be the conjugate of $x$ in the Clifford sense. Then
 
 $$
-E(x) = \frac{\bar x}{\omega_{m-1}\,|x|^m}, \qquad x \neq 0,
+E(x) = \frac{x^{\natural}}{\omega_{m-1}\,|x|^m}, \qquad x \neq 0,
 $$
 
 is a fundamental solution of $D$.
@@ -167,12 +167,12 @@ is a fundamental solution of $D$.
 *Proof.* Let $\Phi$ be the fundamental solution of the Laplacian, $\Phi(x) = \frac{1}{(2-m)\omega_{m-1}}|x|^{2-m}$ for $m \geq 3$ and $\Phi(x) = \frac{1}{\omega_1}\log|x|$ for $m = 2$. In both cases $\Delta \Phi = \delta_0$. By the theorem of *Regularity and the Cauchy–Riemann Operator*, $E = \bar D \Phi$ is a fundamental solution of $D$. Now $\partial_\alpha|x|^{2-m} = (2-m)x_\alpha|x|^{-m}$ for $m\neq 2$ and $\partial_\alpha\log|x| = x_\alpha|x|^{-2}$ for $m = 2$; in both cases
 
 $$
-\bar D \Phi = \frac{1}{\omega_{m-1}}\sum_{\alpha}\bar B_\alpha\, x_\alpha\,|x|^{-m} = \frac{\bar x}{\omega_{m-1}|x|^m},
+\bar D \Phi = \frac{1}{\omega_{m-1}}\sum_{\alpha}B_\alpha^{\natural}\, x_\alpha\,|x|^{-m} = \frac{x^{\natural}}{\omega_{m-1}|x|^m},
 $$
 
 where $\bar B_0 = 1$ and $\bar B_k = -B_k$.
 
-For the complex system ($m = 2$, $\omega_1 = 2\pi$, $\bar x = \bar z$) this is $E(z) = \bar z/(2\pi|z|^2) = 1/(2\pi z)$, the classical Cauchy kernel; for a four-dimensional Clifford system it is $\bar x/(2\pi^2|x|^4)$. The explicit kernels of the individual theories are therefore all one formula, specialised by the conjugation and the dimension, and this is the concrete sense in which the general theory contains the particular ones.
+For the complex system ($m = 2$, $\omega_1 = 2\pi$, $x^{\natural} = \bar z$) this is $E(z) = \bar z/(2\pi|z|^2) = 1/(2\pi z)$, the classical Cauchy kernel; for a four-dimensional Clifford system it is $x^{\natural}/(2\pi^2|x|^4)$. The explicit kernels of the individual theories are therefore all one formula, specialised by the conjugation and the dimension, and this is the concrete sense in which the general theory contains the particular ones.
 
 ## Spherical Harmonics and the Monogenic Refinement
 
@@ -389,7 +389,7 @@ The paper is a survey-level treatment and is used here for the criterion alone; 
 
 The additive group of $A$ is $\mathbb{R}^m$, and the Euclidean **Fourier transform** $\hat f(\xi) = \int_A f(x)e^{-i\langle\xi,x\rangle}dx$ intertwines differentiation with multiplication, turns **convolution** into the algebra product, and satisfies **Plancherel**. On the Fourier side the Cauchy–Riemann operator acts as multiplication by its symbol, $\widehat{Df}(\xi) = i\sigma(\xi)\hat f(\xi)$, so a function is **left regular** exactly when $\sigma(\xi)\hat f(\xi) = 0$ for all $\xi$. The **characteristic variety** $\operatorname{Char}(D) = \{\zeta \in \mathbb{C}^m : \sum_\alpha\zeta_\alpha^2 = 0\}$ is the complex isotropic cone, independent of the finer structure of a Clifford-type system, and it is the support locus of the Fourier transforms of regular functions; by the **Ehrenpreis–Palamodov theorem**, solutions on a convex domain are limits of exponential-polynomial solutions with frequencies in $\operatorname{Char}(D)$. A compactly supported left regular function on all of $A$ is zero, by Paley–Wiener and analytic continuation.
 
-The Fourier transform of the Cauchy kernel is the inverse of the multiplier, $\hat E(\xi) = \tilde\sigma(\xi)/(i\sum_\alpha\xi_\alpha^2)$ away from $\operatorname{Char}(D)$, and inverting it gives the explicit kernel $E(x) = \bar x/(\omega_{m-1}|x|^m)$ with $\bar x = x_0 - \sum_kB_kx_k$ and $\omega_{m-1}$ the surface area of the unit sphere; for $m=2$ this is $1/(2\pi z)$, the classical Cauchy kernel.
+The Fourier transform of the Cauchy kernel is the inverse of the multiplier, $\hat E(\xi) = \tilde\sigma(\xi)/(i\sum_\alpha\xi_\alpha^2)$ away from $\operatorname{Char}(D)$, and inverting it gives the explicit kernel $E(x) = x^{\natural}/(\omega_{m-1}|x|^m)$ with $x^{\natural} = x_0 - \sum_kB_kx_k$ and $\omega_{m-1}$ the surface area of the unit sphere; for $m=2$ this is $1/(2\pi z)$, the classical Cauchy kernel.
 
 The Euclidean structure gives the **Fischer decomposition** $\mathcal{P}_\nu = \bigoplus_j |x|^{2j}\mathcal{H}_{\nu-2j}$ of homogeneous polynomials into harmonic pieces, of dimensions $\binom{\nu+m-1}{m-1} - \binom{\nu+m-3}{m-1}$; the **solid spherical monogenics** $\mathcal{M}_\nu = \mathcal{P}_\nu \cap \ker D$ refine it, they lie in $\mathcal{H}_\nu$, and $\dim\mathcal{M}_1 = m^2 - m$. A regular function on a ball has a convergent **Taylor expansion** in solid spherical monogenics, and for a Clifford-type system the traces on the sphere of different degrees are mutually orthogonal, which is the hypercomplex **Fourier series**. The **Cauchy transform** reproduces regular functions and is the projection of boundary data onto them, the harmonic-analytic counterpart of the Szegő projection.
 
@@ -417,7 +417,7 @@ In the **discrete case** the Fourier coefficients of a left regular function on 
 | $E$ | Fundamental solution / Cauchy kernel |
 | $\hat E$ | Fourier transform of the kernel, $\hat E = \tilde\sigma/(i\sum_\alpha\xi_\alpha^2)$ off $\operatorname{Char}(D)$ |
 | $\Phi$ | Fundamental solution of the Laplacian, $E = \bar D\Phi$ |
-| $\bar x = x_0 - \sum_kB_kx_k$ | Clifford conjugate of the variable |
+| $x^{\natural} = x_0 - \sum_kB_kx_k$ | Clifford conjugate of the variable |
 | $\omega_{m-1} = 2\pi^{m/2}/\Gamma(m/2)$ | Surface area of the unit sphere in $\mathbb{R}^m$ |
 | $\mathcal{L}f$ | Laplace transform, $\mathcal{L}f(s) = \int_Af(x)e^{-\langle s,x\rangle}dx$ |
 | $Hf$ | Hilbert transform on the line, $(Hf)(x) = \frac{1}{\pi}\mathrm{p.v.}\int f(y)/(x-y)\,dy$ |

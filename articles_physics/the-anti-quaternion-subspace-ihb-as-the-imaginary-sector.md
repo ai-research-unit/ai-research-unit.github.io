@@ -36,7 +36,7 @@ The parameter pattern is again the simplest possible, but inverted relative to t
 
 ### The Defining Involution
 
-The subspace is the **anti-fixed space** of **complex conjugation** $\tilde{Q}^*$: the elements with $\tilde{Q}^* = -\tilde{Q}$. Complex conjugation is the antilinear map that fixes the quaternion units and negates the scalar imaginary, $e_\mu^* = e_\mu$ and $i^* = -i$; it is an involution, $(\tilde{Q}^*)^* = \tilde{Q}$. Write the general biquaternion out in full, with the real and the imaginary part of each of its four coefficients,
+The subspace is the **anti-fixed space** of **complex conjugation** $\bar{\tilde{Q}}$: the elements with $\bar{\tilde{Q}} = -\tilde{Q}$. Complex conjugation is the antilinear map that fixes the quaternion units and negates the scalar imaginary, $\bar{e}_\mu = e_\mu$ and $\bar{i} = -i$; it is an involution, $\bar{\bar{\tilde{Q}}} = \tilde{Q}$. Write the general biquaternion out in full, with the real and the imaginary part of each of its four coefficients,
 
 $$
 \tilde{Q} = (q_0 + iq'_0)\,e_0 + (q_1 + iq'_1)\,e_1 + (q_2 + iq'_2)\,e_2 + (q_3 + iq'_3)\,e_3, \qquad q_\mu, q'_\mu \in \mathbb{R}.
@@ -95,7 +95,7 @@ because $i^2 = -e_0$ is central and $\mathbb{H}_{\mathbb{B}}$ is a subalgebra. T
 **Negative definite biquaternion norm.** The biquaternion norm restricted to the subspace is
 
 $$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = (iq'_0)^2 + (iq'_1)^2 + (iq'_2)^2 + (iq'_3)^2 = -((q'_0)^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2),
+N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = (iq'_0)^2 + (iq'_1)^2 + (iq'_2)^2 + (iq'_3)^2 = -((q'_0)^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2),
 $$
 
 a **negative definite** quadratic form of signature $(0,4)$. Every direction is negative, and the form vanishes only at the origin.
@@ -103,7 +103,7 @@ a **negative definite** quadratic form of signature $(0,4)$. Every direction is 
 **No zero divisors.** Because the form vanishes only at the origin, every nonzero element of the subspace is invertible in $\mathbb{B}$, with
 
 $$
-\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}}}{N(\tilde{Q})},
+\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{N(\tilde{Q})},
 $$
 
 and no product $\tilde{Q}\tilde{R}$ of nonzero elements of the subspace vanishes. So the subspace inherits the division property of the quaternions even though it is not itself closed under multiplication: it is a *set* of invertible elements, not an algebra.
@@ -111,7 +111,7 @@ and no product $\tilde{Q}\tilde{R}$ of nonzero elements of the subspace vanishes
 **Hermitian parts.** Under Hermitian conjugation the imaginary scalar unit is anti-Hermitian and the imaginary vector units are Hermitian,
 
 $$
-(i\,e_0)^\dagger = -i\,e_0, \qquad (i\,e_k)^\dagger = +i\,e_k \quad (k = 1,2,3),
+(i\,e_0)^{*} = -i\,e_0, \qquad (i\,e_k)^{*} = +i\,e_k \quad (k = 1,2,3),
 $$
 
 since conjugation composes quaternion conjugation, which fixes $ie_0$ and negates $ie_k$, with complex conjugation, which negates both. The assignment is the reverse of the one on the unit: here the imaginary scalar unit is anti-Hermitian and the imaginary vector units are Hermitian.
@@ -181,7 +181,7 @@ Physically it is the home of the **boost generators** $ie_1, ie_2, ie_3$ and of 
 | $(ie_k)^2 = +e_0$, $(ie_1)(ie_2) = -e_3$ | Products leave the subspace: $i\mathbb{H}_{\mathbb{B}} \cdot i\mathbb{H}_{\mathbb{B}} \subseteq \mathbb{H}_{\mathbb{B}}$ |
 | $[ie_1, ie_2] = -2e_3$ | Commutators also leave the subspace |
 | $N(\tilde{Q}) = -((q'_0)^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2)$ | Biquaternion norm; negative definite, signature $(0,4)$ |
-| $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$ | Inverse; exists for every nonzero element |
+| $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$ | Inverse; exists for every nonzero element |
 | $ie_1, ie_2, ie_3$ | Boost generators of the Lorentz algebra |
 | $ie_0$ | Complex-time axis of the $ict$ convention |
 | $\cosh(\psi/2) + i\sinh(\psi/2)\hat{\mathbf{u}}\cdot\mathbf{e}$ | Finite boost; has a real scalar part, so it is not in the subspace |

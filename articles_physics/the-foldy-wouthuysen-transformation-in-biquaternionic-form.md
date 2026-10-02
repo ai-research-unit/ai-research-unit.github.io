@@ -9,7 +9,7 @@ The transformation is worth a biquaternion article for a structural reason. The 
 The scope is the transformation itself, its generator, its free-particle closed form, the mean position operator it defines, and the reading of all this in the algebra. The quantised field, the Fock space and the fermionic path integral belong to the companion category *Biquaternion Quantum Fields*; the relativistic qubit and the informational reading belong to the subcategory *focus on informational aspects*. The Pauli equation itself, and the detailed non-relativistic expansion including the Darwin and spin–orbit terms, are worked through in the companion exercise and are only summarised here. The conventions are the series conventions: $\Box = \partial_{ict}^2 + \Delta$, the Clifford generators satisfy $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$, so that $(\gamma^0)^2 = +I_4$, and the chiral mass pair is
 
 $$
-\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R .
+\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R .
 $$
 
 ## The Dirac Hamiltonian and the Odd/Even Split
@@ -190,7 +190,7 @@ The correction $-\frac{i\hbar\beta\boldsymbol\alpha}{2mc}$ is itself worth readi
 
 The transformation can now be located in the two gradings of the algebra, and the location is the content of the article.
 
-**The chirality basis is where the biquaternion pair lives.** The massive biquaternionic Dirac equation is the off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$; in the chiral (Weyl) basis the mass term is the off-diagonal matrix $m\begin{pmatrix}0&I\\I&0\end{pmatrix}$ and the Dirac operator is block off-diagonal. This is the basis in which the two components are the two minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ and in which the mass couples them. The mass is the **off-diagonal** object in this basis.
+**The chirality basis is where the biquaternion pair lives.** The massive biquaternionic Dirac equation is the off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$; in the chiral (Weyl) basis the mass term is the off-diagonal matrix $m\begin{pmatrix}0&I\\I&0\end{pmatrix}$ and the Dirac operator is block off-diagonal. This is the basis in which the two components are the two minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ and in which the mass couples them. The mass is the **off-diagonal** object in this basis.
 
 **The frame basis is where the FW transformation works.** In the Dirac (large/small) basis, $\beta = \mathrm{diag}(I_2,-I_2)$ is diagonal and the mass term $m\beta$ is diagonal; the kinetic term $c\boldsymbol\alpha\cdot\boldsymbol\pi$ is the off-diagonal odd piece. The two bases are related by the fixed unitary that exchanges $\beta$ and $\gamma_5$, and the FW transformation is the momentum-dependent completion of that exchange: it rotates the field so that the mass — off-diagonal in chirality — becomes diagonal, while the kinetic term, which was diagonal in chirality, becomes the first-order perturbation. Removing the odd part is exactly the statement that the mass is the large term and the mixing is small.
 
@@ -262,7 +262,7 @@ The biquaternion reading turns on two gradings that must not be conflated. The f
 | $H' = UHU^\dagger - i\hbar U\partial_t U^\dagger$ | Transformed Hamiltonian |
 | $\theta = \arctan(|\mathbf{p}|/(mc))$ | Free-particle FW angle |
 | $\mathbf{Q} = \mathbf{x} - \frac{i\hbar\beta\boldsymbol\alpha}{2mc}+\cdots$ | Mean (Foldy–Wouthuysen) position |
-| $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Biquaternion mass pair (chirality grading) |
+| $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Biquaternion mass pair (chirality grading) |
 | $\Box = \partial_{ict}^2 + \Delta$ | Series d'Alembertian |
 
 ## Further Reading

@@ -17,7 +17,7 @@ with basis $ie_0, e_1, e_2, e_3$, whose biquaternion norm has signature $(3,1)$;
 $$
 \tilde{\nabla} = e_0\,\partial_{ict} + e_1\,\partial_x + e_2\,\partial_y + e_3\,\partial_z,
 \qquad
-\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta .
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta .
 $$
 
 Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ its vacuum value. The conventions are those of the companion articles:
@@ -112,10 +112,10 @@ The series is organized by increasing $l$. The potential falls off as $r^{-(l+1)
 The rotation group $SO(3)$ has, up to equivalence, exactly one irreducible real representation of each odd dimension $2l+1$, $l = 0, 1, 2, \dots$; its double cover $SU(2)$ has exactly one irreducible complex representation of each dimension $2l+1$, written $D^{(l)}$ after Wigner's rotation matrices, so that $\dim_{\mathbb{C}}D^{(l)} = 2l+1$. The label $l$ is the angular momentum and $D^{(l)}$ is the standard rotation-group representation of that angular momentum; the representation-theory companion uses the letter $V$ for the polynomial modules of the complex algebra, a different family, and the present notation is the rotation-group one. In the biquaternion framework the rotation rotors are the real unit quaternions, a group isomorphic to $SU(2)$,
 
 $$
-\mathbb{H}_{\mathbb{B}}^1 = \{\tilde{\Lambda}\in\mathbb{H}_{\mathbb{B}} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\},
+\mathbb{H}_{\mathbb{B}}^1 = \{\tilde{\Lambda}\in\mathbb{H}_{\mathbb{B}} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0\},
 $$
 
-acting on a vector by $\mathbf{v}\mapsto\tilde{\Lambda}\mathbf{v}\bar{\tilde{\Lambda}}$. The multipole moment of order $l$ is a tensor in $D^{(l)}$: the monopole is $D^{(0)}$, the dipole is $D^{(1)}$, the quadrupole is $D^{(2)}$, and so on.
+acting on a vector by $\mathbf{v}\mapsto\tilde{\Lambda}\mathbf{v}\tilde{\Lambda}^{\natural}$. The multipole moment of order $l$ is a tensor in $D^{(l)}$: the monopole is $D^{(0)}$, the dipole is $D^{(1)}$, the quadrupole is $D^{(2)}$, and so on.
 
 ### Why the Order Is an Angular Momentum
 
@@ -198,7 +198,7 @@ $$
 \tilde{p} = p_1e_1 + p_2e_2 + p_3e_3 ,
 $$
 
-a pure real quaternion with $\bar{\tilde{p}} = -\tilde{p}$. Its representative lies in the vector part, which is exactly the $D^{(1)}$ representation, so the dipole is the first non-trivial multipole that is an **element of the algebra**. Two consequences follow.
+a pure real quaternion with $\tilde{p}^{\natural} = -\tilde{p}$. Its representative lies in the vector part, which is exactly the $D^{(1)}$ representation, so the dipole is the first non-trivial multipole that is an **element of the algebra**. Two consequences follow.
 
 **The dipole potential.** With the unit radial quaternion $\hat{\mathbf{n}} = (x_1e_1 + x_2e_2 + x_3e_3)/r$, satisfying $\hat{\mathbf{n}}^2 = -e_0$, the dipole potential is
 
@@ -361,10 +361,10 @@ The multipole tower is infinite because the angular structure of a field on the 
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ | Center of $\mathbb{B}$ (the scalars) |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $\tilde{\Lambda}\in\mathbb{H}_{\mathbb{B}}^1$, $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ | Rotation rotor, acting on a vector by $\mathbf{v}\mapsto\tilde{\Lambda}\mathbf{v}\bar{\tilde{\Lambda}}$ |
+| $\tilde{\Lambda}\in\mathbb{H}_{\mathbb{B}}^1$, $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ | Rotation rotor, acting on a vector by $\mathbf{v}\mapsto\tilde{\Lambda}\mathbf{v}\tilde{\Lambda}^{\natural}$ |
 | $\tilde{\nabla} = e_0\partial_{ict} + \boldsymbol{\nabla}$ | Biquaternionic gradient |
 | $\boldsymbol{\nabla} = e_1\partial_x + e_2\partial_y + e_3\partial_z$ | Spatial vector gradient |
-| $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$ | d'Alembertian (series convention) |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$ | d'Alembertian (series convention) |
 | $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$ | Four-potential, an element of $\mathbb{M}_-$ |
 | $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ | Field-strength biquaternion |
 | $\hat{\mathbf{n}} = \mathbf{x}/r$ | Unit radial quaternion, $\hat{\mathbf{n}}^2 = -e_0$ |

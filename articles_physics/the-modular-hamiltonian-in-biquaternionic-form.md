@@ -26,7 +26,7 @@ Three features organize what follows.
 
 The article proceeds as follows. The modular Hamiltonian is defined from $\Delta$, the hypotheses are checked, and the sign convention is fixed. The finite-dimensional realization in $\mathbb{B}$ is recalled from the parents and completed with $\tilde K$'s spectral form. $\tilde K$ is then verified to generate the same flow as $\Delta^{it}$. The trace formula is used to show that the Gibbs form is a scalar extraction. The locality question is separated into its generic nonlocal answer and the wedge exception, with the boost generator recomputed in biquaternion form. A closing section separates what is established from what is a gap.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$; Hermitian conjugation $\dagger$ is the algebra involution of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_0)=2$. The modular flow is $\sigma_t(\tilde A)=\Delta^{it}\tilde A\Delta^{-it}$, and the modular Hamiltonian is defined by $\Delta=e^{-\tilde K}$, so that $\tilde K=-\log\Delta$ and $\Delta^{it}=e^{-i\tilde Kt}$. In the finite-dimensional model of the parents, $\tilde K=-\log\tilde\rho$ is a Hermitian element of $\mathbb{M}_+$. The physical Hamiltonian of a Gibbs state is written $\tilde H=h_0e_0+i\mathbf h$, and $\beta$ is the inverse temperature; we use units with $\hbar=1$.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$; Hermitian conjugation ${}^{*}$ is the algebra involution of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_0)=2$. The modular flow is $\sigma_t(\tilde A)=\Delta^{it}\tilde A\Delta^{-it}$, and the modular Hamiltonian is defined by $\Delta=e^{-\tilde K}$, so that $\tilde K=-\log\Delta$ and $\Delta^{it}=e^{-i\tilde Kt}$. In the finite-dimensional model of the parents, $\tilde K=-\log\tilde\rho$ is a Hermitian element of $\mathbb{M}_+$. The physical Hamiltonian of a Gibbs state is written $\tilde H=h_0e_0+i\mathbf h$, and $\beta$ is the inverse temperature; we use units with $\hbar=1$.
 
 ## The Generator of the Modular Flow
 
@@ -104,15 +104,15 @@ M=\mathbb{B}\cong M_2(\mathbb{C}),\qquad \Omega=e_0,\qquad
 $$
 with $\tilde\rho\in\mathbb{M}_+$ positive definite and of trace one, and the GNS inner product
 $$
-\langle\tilde A,\tilde B\rangle_{\tilde\rho}=\mathrm{Tr}\big(\tilde\rho\,\tilde A^\dagger\tilde B\big).
+\langle\tilde A,\tilde B\rangle_{\tilde\rho}=\mathrm{Tr}\big(\tilde\rho\,\tilde A^{*}\tilde B\big).
 $$
-The vector $\Omega=e_0$ is cyclic and separating exactly because $\tilde\rho>0$; the state is faithful for the same reason. The modular-theory parent computes the polar decomposition of $S_0(\tilde A)=\tilde A^\dagger$ in closed form:
+The vector $\Omega=e_0$ is cyclic and separating exactly because $\tilde\rho>0$; the state is faithful for the same reason. The modular-theory parent computes the polar decomposition of $S_0(\tilde A)=\tilde A^{*}$ in closed form:
 $$
 \Delta(\tilde A)=\tilde\rho\,\tilde A\,\tilde\rho^{-1},
 \qquad
 \Delta^{1/2}(\tilde A)=\tilde\rho^{1/2}\tilde A\,\tilde\rho^{-1/2},
 \qquad
-J(\tilde A)=\tilde\rho^{1/2}\tilde A^\dagger\tilde\rho^{-1/2},
+J(\tilde A)=\tilde\rho^{1/2}\tilde A^{*}\tilde\rho^{-1/2},
 \qquad
 \sigma_t(\tilde A)=\tilde\rho^{it}\tilde A\,\tilde\rho^{-it}.
 $$
@@ -208,7 +208,7 @@ Z=2e^{-\beta h_0}\cosh(\beta|\mathbf h|)=1.547753
 $$
 and $\tilde K-(\beta\tilde H+(\log Z)e_0)$ vanishes to $4\times10^{-39}$.
 
-**The failure when positivity is dropped.** If $\tilde\rho$ is not positive definite — say $\tilde\rho=\mathrm{diag}(1,0)$ — then $\Omega=e_0$ is not separating: there is a nonzero $\tilde A$ with $\langle\tilde A,\tilde A\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde A^\dagger\tilde A)=0$, hence $\tilde A\Omega=0$, and the Tomita rule $\tilde A\Omega\mapsto\tilde A^\dagger\Omega$ is not single-valued. Equivalently, $\Delta=S^*S$ has a kernel and is not invertible, so $-\log\Delta$ diverges along that direction and **no modular Hamiltonian exists**; the GNS inner product is degenerate and the closed form $\Delta(\tilde A)=\tilde\rho\tilde A\tilde\rho^{-1}$ is not even available. This is the same failure the modular-theory parent exhibits for the non-separating vector $\Omega=e_1$, seen from the positivity side: the state assigns zero expectation to the nonzero positive element $E_{22}$, and the logarithm has nothing to say about it. The hypothesis carried by $\tilde K$ is exactly the hypothesis carried by $\Delta$.
+**The failure when positivity is dropped.** If $\tilde\rho$ is not positive definite — say $\tilde\rho=\mathrm{diag}(1,0)$ — then $\Omega=e_0$ is not separating: there is a nonzero $\tilde A$ with $\langle\tilde A,\tilde A\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde A^{*}\tilde A)=0$, hence $\tilde A\Omega=0$, and the Tomita rule $\tilde A\Omega\mapsto\tilde A^{*}\Omega$ is not single-valued. Equivalently, $\Delta=S^*S$ has a kernel and is not invertible, so $-\log\Delta$ diverges along that direction and **no modular Hamiltonian exists**; the GNS inner product is degenerate and the closed form $\Delta(\tilde A)=\tilde\rho\tilde A\tilde\rho^{-1}$ is not even available. This is the same failure the modular-theory parent exhibits for the non-separating vector $\Omega=e_1$, seen from the positivity side: the state assigns zero expectation to the nonzero positive element $E_{22}$, and the logarithm has nothing to say about it. The hypothesis carried by $\tilde K$ is exactly the hypothesis carried by $\Delta$.
 
 The verification was run on the state that was chosen for its genericity and on a second, thermal state; no displayed identity was checked only on the case that suggested it.
 
@@ -294,7 +294,7 @@ $$
 \tilde\Lambda(\psi)=\exp\!\Big(\frac{\psi}{2}G_1\Big)
 =\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,e_1\ \in\mathbb{M}_+,
 \qquad
-\tilde\Lambda(\psi)\bar{\tilde\Lambda}(\psi)=e_0,
+\tilde\Lambda(\psi)\tilde\Lambda^{\natural}(\psi)=e_0,
 $$
 and its action on the material sector is the rotor conjugation $\tilde{Q}\mapsto\tilde\Lambda(\psi)\tilde{Q}\tilde\Lambda(\psi)$ (the rotor is Hermitian). Because Bisognano–Wichmann gives $\Delta=e^{-2\pi G_1}$, the modular Hamiltonian of the wedge is
 $$
@@ -386,7 +386,7 @@ The one structural question the finite-dimensional model cannot settle is locali
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\dagger$ | Hermitian conjugation; the Tomita involution $A^*$ |
+| ${}^{*}$ | Hermitian conjugation; the Tomita involution $A^*$ |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula; $\mathrm{Tr}(e_0)=2$ |
 | $S=J\Delta^{1/2}$ | Tomita operator and its polar decomposition |
 | $\Delta=S^*S\ge0$ | Modular operator; $\Delta>0$ iff the state is faithful |

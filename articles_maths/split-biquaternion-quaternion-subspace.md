@@ -5,23 +5,23 @@
 
 The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ carries four linear involutions, and four of the resulting fixed spaces are its distinguished real subspaces. This article treats the **quaternion subspace** $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the fixed space of split complex conjugation: its definition, its basis, its algebra structure, the restriction of the split-biquaternion norm to it, its roots of $-1$ and its commutator, the action of the four involutions upon it, and its intersections with the other subspaces. The companions are *Split-Biquaternion Split-Complex Subspace*, *Split-Biquaternion Hermitian Subspace* and *Split-Biquaternion Anti-Hermitian Subspace*; the comparative tables are in *Split-Biquaternion Relations Between Subspaces* and *Split-Biquaternion Involution Lattice*.
 
-The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article, and the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra. Throughout, elements are written $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{D}$, and the conjugations are $\bar{\cdot}$ (quaternion), ${}^{*}$ (split complex), ${}^{\dagger} = {}^{*}\circ\bar{\cdot}$ and ${}^{\flat} = -{}^{\dagger}$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$.
+The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article, and the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra. Throughout, elements are written $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{D}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and ${}^{\flat} = -{}^{*}$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$.
 
 ## Definition and Basis
 
 **Definition.** The **quaternion subspace** is the fixed space of split complex conjugation,
 
 $$
-\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} = \left\{ \tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \tilde{Q}^{*} = \tilde{Q} \right\},
+\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} = \left\{ \tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \bar{\tilde{Q}} = \tilde{Q} \right\},
 $$
 
-where split complex conjugation conjugates each coefficient, $Q_\mu \mapsto Q_\mu^{*} = q_\mu - j q'_\mu$.
+where split complex conjugation conjugates each coefficient, $Q_\mu \mapsto Q_\bar{\mu} = q_\mu - j q'_\mu$.
 
-Since ${}^{*}$ is an involution, it has eigenvalues $\pm 1$ and $\mathbb{H}_{\mathbb{D}}$ is the direct sum of its fixed space and its anti-fixed space, the anti-fixed space being $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$.
+Since $\bar{\cdot}$ is an involution, it has eigenvalues $\pm 1$ and $\mathbb{H}_{\mathbb{D}}$ is the direct sum of its fixed space and its anti-fixed space, the anti-fixed space being $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$.
 
 ### The Condition in Coordinates
 
-Comparing the two sides of $\tilde{Q}^{*} = \tilde{Q}$ coefficient by coefficient, $Q_\mu^{*} = Q_\mu$ means $q_\mu - j q'_\mu = q_\mu + j q'_\mu$, that is $q'_\mu = 0$ for each $\mu$. The subspace is therefore the set of elements with **real coefficients**,
+Comparing the two sides of $\bar{\tilde{Q}} = \tilde{Q}$ coefficient by coefficient, $Q_\bar{\mu} = Q_\mu$ means $q_\mu - j q'_\mu = q_\mu + j q'_\mu$, that is $q'_\mu = 0$ for each $\mu$. The subspace is therefore the set of elements with **real coefficients**,
 
 $$
 \tilde{Q} = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R}.
@@ -49,7 +49,7 @@ It is one of exactly two of the four distinguished subspaces that are subalgebra
 
 **Theorem.** $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is a division algebra: every nonzero element is a unit, and there are no zero divisors in the subspace.
 
-**Proof.** On the subspace the split-biquaternion norm is $N(\tilde{Q}) = \sum_\mu q_\mu^2$, a strictly positive real number for $\tilde{Q} \neq 0$; a nonzero real norm is a unit of $\mathbb{D}$, so by the invertibility criterion the element is a unit, with inverse $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$. A zero divisor would have to be a nonzero non-unit, which does not exist.
+**Proof.** On the subspace the split-biquaternion norm is $N(\tilde{Q}) = \sum_\mu q_\mu^2$, a strictly positive real number for $\tilde{Q} \neq 0$; a nonzero real norm is a unit of $\mathbb{D}$, so by the invertibility criterion the element is a unit, with inverse $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$. A zero divisor would have to be a nonzero non-unit, which does not exist.
 
 So although the ambient algebra $\mathbb{H}_{\mathbb{D}}$ has many zero divisors, the quaternion subspace contains none of them; the zero divisors all have at least one vanishing idempotent component and hence cannot have all coefficients real and nonzero in the required way. This is developed in *Split-Biquaternion Zero Divisors*.
 
@@ -111,7 +111,7 @@ Among the four distinguished subspaces, the quaternion subspace is the one on wh
 
 ### Units and Idempotents
 
-**Theorem.** For $\tilde{Q}$ in the quaternion subspace the following are equivalent: $\tilde{Q}$ is a unit; $N(\tilde{Q}) \neq 0$; $\tilde{Q} \neq 0$. The inverse is $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$.
+**Theorem.** For $\tilde{Q}$ in the quaternion subspace the following are equivalent: $\tilde{Q}$ is a unit; $N(\tilde{Q}) \neq 0$; $\tilde{Q} \neq 0$. The inverse is $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$.
 
 **Proof.** The split-biquaternion norm is positive definite, so $N(\tilde{Q}) = 0$ only at the origin; the inverse formula is the standard quaternion inverse and is verified directly.
 
@@ -133,12 +133,12 @@ Each of the four involutions preserves the condition of real coefficients, so th
 
 | involution | action | matrix |
 |---|---|---|
-| $\bar{\cdot}$ | quaternion conjugation | $\operatorname{diag}(1, -1, -1, -1)$ |
-| ${}^{*}$ | identity | $\operatorname{diag}(1, 1, 1, 1)$ |
-| ${}^{\dagger}$ | quaternion conjugation | $\operatorname{diag}(1, -1, -1, -1)$ |
+| ${}^{\natural}$ | quaternion conjugation | $\operatorname{diag}(1, -1, -1, -1)$ |
+| $\bar{\cdot}$ | identity | $\operatorname{diag}(1, 1, 1, 1)$ |
+| ${}^{*}$ | quaternion conjugation | $\operatorname{diag}(1, -1, -1, -1)$ |
 | ${}^{\flat}$ | negative quaternion conjugation | $\operatorname{diag}(-1, 1, 1, 1)$ |
 
-Split complex conjugation fixes the subspace pointwise, since it is the defining involution. Quaternion conjugation and Hermitian conjugation agree there — because $\dagger = {}^{*}\circ\bar{\cdot}$ and ${}^{*}$ acts as the identity — and both act as the quaternion conjugation $q_0 + \mathbf{u} \mapsto q_0 - \mathbf{u}$. Anti-Hermitian conjugation is the negative of that. So of the four involutions two act trivially (on the subspace) and the other two act as the quaternion conjugation, whose fixed space inside the subspace is the real line $\mathbb{R}$.
+Split complex conjugation fixes the subspace pointwise, since it is the defining involution. Quaternion conjugation and Hermitian conjugation agree there — because ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and $\bar{\cdot}$ acts as the identity — and both act as the quaternion conjugation $q_0 + \mathbf{u} \mapsto q_0 - \mathbf{u}$. Anti-Hermitian conjugation is the negative of that. So of the four involutions two act trivially (on the subspace) and the other two act as the quaternion conjugation, whose fixed space inside the subspace is the real line $\mathbb{R}$.
 
 ## Relations to the Other Subspaces
 
@@ -163,7 +163,7 @@ As the fixed space of split complex conjugation, the quaternion subspace is the 
 
 ## Summary
 
-The quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is the fixed space of split complex conjugation, the set of elements with real coefficients; it is a real vector space of dimension $4$ with basis $e_0, e_1, e_2, e_3$, a real form of the algebra. It is a subalgebra isomorphic to the real quaternion algebra $\mathbb{H}$, noncommutative and a **division algebra**: it contains no zero divisor, every nonzero element is a unit, and the split-biquaternion norm restricts to the positive definite quaternion norm $N = \sum_\mu q_\mu^2$, so $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$. Its roots of $-1$ are the unit pure quaternions $S^2$, it contains the quaternion imaginary units with $e_1 e_2 = e_3$, and its commutator is $2\,\mathbf{u}\times\mathbf{v}$, a pure quaternion, so the commutator subalgebra is the three-dimensional space of pure quaternions and the subspace is the Lie algebra $\mathrm{SO}(3)$ under the bracket. The only idempotents it contains are $0$ and $1$; the nontrivial idempotents of the algebra lie in the split complex subspace. Its image under $\varphi$ is the diagonal copy of $\mathbb{H}$ in $\mathbb{H} \oplus \mathbb{H}$. Of the four involutions, split complex conjugation fixes it pointwise and quaternion and Hermitian conjugations both act as the quaternion conjugation; the subspace meets the split complex and Hermitian subspaces in $\mathbb{R}$ and the anti-Hermitian and vector subspaces in the space of pure real quaternions.
+The quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is the fixed space of split complex conjugation, the set of elements with real coefficients; it is a real vector space of dimension $4$ with basis $e_0, e_1, e_2, e_3$, a real form of the algebra. It is a subalgebra isomorphic to the real quaternion algebra $\mathbb{H}$, noncommutative and a **division algebra**: it contains no zero divisor, every nonzero element is a unit, and the split-biquaternion norm restricts to the positive definite quaternion norm $N = \sum_\mu q_\mu^2$, so $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$. Its roots of $-1$ are the unit pure quaternions $S^2$, it contains the quaternion imaginary units with $e_1 e_2 = e_3$, and its commutator is $2\,\mathbf{u}\times\mathbf{v}$, a pure quaternion, so the commutator subalgebra is the three-dimensional space of pure quaternions and the subspace is the Lie algebra $\mathrm{SO}(3)$ under the bracket. The only idempotents it contains are $0$ and $1$; the nontrivial idempotents of the algebra lie in the split complex subspace. Its image under $\varphi$ is the diagonal copy of $\mathbb{H}$ in $\mathbb{H} \oplus \mathbb{H}$. Of the four involutions, split complex conjugation fixes it pointwise and quaternion and Hermitian conjugations both act as the quaternion conjugation; the subspace meets the split complex and Hermitian subspaces in $\mathbb{R}$ and the anti-Hermitian and vector subspaces in the space of pure real quaternions.
 
 ## Summary of Notation
 
@@ -171,9 +171,9 @@ The quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is the fixed spac
 |---|---|
 | $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ | Split biquaternion algebra, real dimension $8$ |
 | $\tilde{Q} = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Element of the quaternion subspace, $q_\mu \in \mathbb{R}$ |
-| $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | Quaternion subspace, fixed space of ${}^{*}$ |
-| $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | Anti-fixed space of ${}^{*}$ |
-| $\bar{\cdot}, {}^{*}, {}^{\dagger}, {}^{\flat}$ | The four conjugations |
+| $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | Quaternion subspace, fixed space of $\bar{\cdot}$ |
+| $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | Anti-fixed space of $\bar{\cdot}$ |
+| ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
 | $N(\tilde{Q}) = \sum_\mu q_\mu^2$ | Positive definite quaternion norm on the subspace |
 | $[\tilde{Q}, \tilde{R}] = 2\,\mathbf{u} \times \mathbf{v}$ | Commutator, a pure quaternion |
 | $S^2$ | The roots of $-1$ within the subspace, unit pure quaternions |

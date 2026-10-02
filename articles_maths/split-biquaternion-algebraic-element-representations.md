@@ -32,7 +32,7 @@ $$
 
 with $e_0 = 1$ and $e_1, e_2, e_3$ the quaternion units. The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. Each split complex coefficient is written $Q_\mu = q_\mu + j q'_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$.
 
-The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$, where $Q_\mu^* = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$.
+The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \mathbf{Q}^*$, where $Q_\bar{\mu} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$.
 
 The idempotents of the split complex algebra are $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
@@ -85,7 +85,7 @@ $$
 Split complex conjugation conjugates all components:
 
 $$
-(Q^*)^\mu = ((Q^0)^*, (Q^1)^*, (Q^2)^*, (Q^3)^*).
+(\bar{Q})^\mu = ((Q^0)^*, (Q^1)^*, (Q^2)^*, (Q^3)^*).
 $$
 
 Hermitian conjugation combines the two:
@@ -105,7 +105,7 @@ The four fixed-point subspaces have a simple characterization in the four-vector
 
 ### The Split-Biquaternion Norm in Four-Vector Form
 
-The split-biquaternion norm $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ is
+The split-biquaternion norm $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ is
 
 $$
 N(\tilde{Q}) = (Q^0)^2 + (Q^1)^2 + (Q^2)^2 + (Q^3)^2,
@@ -123,7 +123,7 @@ $$
 N(\tilde{Q}) = (q'_0)^2 + q_1^2 + q_2^2 + q_3^2,
 $$
 
-which is positive definite, of signature $(4, 0)$. The indefinite form of signature $(3, 1)$ that goes with this subspace is the scalar part of the **Hermitian** form $\tilde{Q} \tilde{Q}^\dagger = \sum_\mu Q^\mu (Q^\mu)^*$, namely $-(q'_0)^2 + q_1^2 + q_2^2 + q_3^2$.
+which is positive definite, of signature $(4, 0)$. The indefinite form of signature $(3, 1)$ that goes with this subspace is the scalar part of the **Hermitian** form $\tilde{Q} \tilde{Q}^{*} = \sum_\mu Q^\mu (Q^\mu)^*$, namely $-(q'_0)^2 + q_1^2 + q_2^2 + q_3^2$.
 
 ### Why the Four-Vector Representation Is Useful
 
@@ -211,10 +211,10 @@ $$
 
 **Conjugations.** The four conjugations act on the idempotent components as follows:
 
-- **Quaternion conjugation** $\bar{\tilde{Q}}$: acts on each component by the quaternion conjugate, $\overline{(\tilde{Q}_+, \tilde{Q}_-)} = (\bar{\tilde{Q}}_+, \bar{\tilde{Q}}_-)$.
-- **Split complex conjugation** $\tilde{Q}^*$: swaps the two components, $(\tilde{Q}_+, \tilde{Q}_-)^* = (\tilde{Q}_-, \tilde{Q}_+)$.
-- **Hermitian conjugation** $\tilde{Q}^\dagger$: acts on each component by the quaternion conjugate and swaps the two: $(\tilde{Q}_+, \tilde{Q}_-)^\dagger = (\bar{\tilde{Q}}_-, \bar{\tilde{Q}}_+)$.
-- **Anti-Hermitian conjugation** $\tilde{Q}^\flat$: $(\tilde{Q}_+, \tilde{Q}_-)^\flat = (-\bar{\tilde{Q}}_-, -\bar{\tilde{Q}}_+)$.
+- **Quaternion conjugation** $\tilde{Q}^{\natural}$: acts on each component by the quaternion conjugate, $((\tilde{Q}_+, \tilde{Q}_-))^{\natural} = (\tilde{Q}^{\natural}_+, \tilde{Q}^{\natural}_-)$.
+- **Split complex conjugation** $\bar{\tilde{Q}}$: swaps the two components, $(\tilde{Q}_+, \tilde{Q}_-)^* = (\tilde{Q}_-, \tilde{Q}_+)$.
+- **Hermitian conjugation** $\tilde{Q}^{*}$: acts on each component by the quaternion conjugate and swaps the two: $(\tilde{Q}_+, \tilde{Q}_-)^\dagger = (\tilde{Q}^{\natural}_-, \tilde{Q}^{\natural}_+)$.
+- **Anti-Hermitian conjugation** $\tilde{Q}^\flat$: $(\tilde{Q}_+, \tilde{Q}_-)^\flat = (-\tilde{Q}^{\natural}_-, -\tilde{Q}^{\natural}_+)$.
 
 The split complex conjugation is the map that swaps the two components. This is the algebraic content of the idempotent decomposition.
 
@@ -224,7 +224,7 @@ $$
 N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_+ + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_-,
 $$
 
-where $N_{\mathbb{H}}(\tilde{Q}_\pm) = \tilde{Q}_\pm \bar{\tilde{Q}}_\pm$ is the ordinary quaternion norm, which is a non-negative real number. In the standard basis, this is
+where $N_{\mathbb{H}}(\tilde{Q}_\pm) = \tilde{Q}_\pm \tilde{Q}^{\natural}_\pm$ is the ordinary quaternion norm, which is a non-negative real number. In the standard basis, this is
 
 $$
 N(\tilde{Q}) = \frac{N_{\mathbb{H}}(\tilde{Q}_+) + N_{\mathbb{H}}(\tilde{Q}_-)}{2} + j \frac{N_{\mathbb{H}}(\tilde{Q}_+) - N_{\mathbb{H}}(\tilde{Q}_-)}{2}.
@@ -320,7 +320,7 @@ because the generators satisfy $\gamma_k^2 = -1$ exactly as the quaternion units
 
 **Multiplication.** Under the isomorphism the Clifford product corresponds to the split biquaternion product, the generators multiplying as the quaternion units and the volume element commuting with them.
 
-**Split-Biquaternion norm.** The Euclidean norm of the Clifford algebra, the sum of squares of the eight real blade coordinates, is the real part $R(\tilde{Q}) = \sum_\mu(q_\mu^2 + q'^2_\mu)$ of the split biquaternion norm. The full norm $N(\tilde{Q}) = R + jI$ is $\mathbb{D}$-valued and is not the Clifford norm, which is real; it corresponds under the isomorphism to the Clifford product $\tilde{Q}\bar{\tilde{Q}}$.
+**Split-Biquaternion norm.** The Euclidean norm of the Clifford algebra, the sum of squares of the eight real blade coordinates, is the real part $R(\tilde{Q}) = \sum_\mu(q_\mu^2 + q'^2_\mu)$ of the split biquaternion norm. The full norm $N(\tilde{Q}) = R + jI$ is $\mathbb{D}$-valued and is not the Clifford norm, which is real; it corresponds under the isomorphism to the Clifford product $\tilde{Q}\tilde{Q}^{\natural}$.
 
 ### Why the Clifford Algebra Representation Is Useful
 
@@ -428,12 +428,12 @@ Unlike the biquaternion algebra, the split biquaternion algebra does **not** hav
 | $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient, $q_\mu, q'_\mu \in \mathbb{R}$ |
 | $Q^\mu = (Q^0, \mathbf{Q})$ | Four-vector components; $Q^0$ the scalar component |
 | $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | Split vector part |
-| $\bar{\tilde{Q}}$ | Quaternion conjugate |
-| $\tilde{Q}^*$ | Split complex conjugate |
-| $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$ | Hermitian conjugate |
-| $\tilde{Q}^\flat = -\tilde{Q}^\dagger$ | Anti-Hermitian conjugate |
+| $\tilde{Q}^{\natural}$ | Quaternion conjugate |
+| $\bar{\tilde{Q}}$ | Split complex conjugate |
+| $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ | Hermitian conjugate |
+| $\tilde{Q}^\flat = -\tilde{Q}^{*}$ | Anti-Hermitian conjugate |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$ | Idempotent components, in $\mathbb{H}$ |
-| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Split-Biquaternion norm |
+| $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{M}_+, \mathbb{M}_-$ | Split complex, quaternion, Hermitian, anti-Hermitian subspaces |
 | $\rho : A \to \mathrm{End}(V)$ | An algebra representation |
 | $\rho_\pm : \mathbb{H}_{\mathbb{D}} \to \mathrm{End}_{\mathbb{H}}(\mathbb{H} \tilde\Pi_\pm)$ | Module representation |

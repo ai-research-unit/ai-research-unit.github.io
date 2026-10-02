@@ -4,7 +4,7 @@
 
 This article collects the topology of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ as a space, together with the projective geometry of its null cone: the contractibility of the ambient space, the Euclidean unit sphere, the null cone and its link, the Segre embedding and the two rulings of null planes, the projective null quadric $Q^2$ with its tangency and its polarity, and the Klein–Plücker geometry of the lines of $\mathbb{P}^3$.
 
-The norm $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$ decides invertibility and vanishes exactly on the zero divisors together with the origin (*Biquaternion Norm and Invertibility*, *Biquaternion Zero Divisors*); both treatments are algebraic, and the projective sections below treat the same form geometrically, as the equation of a quadric. The article uses the algebra and fixed-point subspaces of *Biquaternion Algebra*, the zero divisor set of *Biquaternion Zero Divisors*, and *Lie Groups*. The polarisation of the norm, its real forms and its associated Clifford algebra are in *Biquaternion Norm and Invertibility*; the Lorentzian and conformal reading of the real slices is in *Biquaternion Lorentzian and Conformal Geometry*. No physics is invoked and no new result is claimed.
+The norm $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ decides invertibility and vanishes exactly on the zero divisors together with the origin (*Biquaternion Norm and Invertibility*, *Biquaternion Zero Divisors*); both treatments are algebraic, and the projective sections below treat the same form geometrically, as the equation of a quadric. The article uses the algebra and fixed-point subspaces of *Biquaternion Algebra*, the zero divisor set of *Biquaternion Zero Divisors*, and *Lie Groups*. The polarisation of the norm, its real forms and its associated Clifford algebra are in *Biquaternion Norm and Invertibility*; the Lorentzian and conformal reading of the real slices is in *Biquaternion Lorentzian and Conformal Geometry*. No physics is invoked and no new result is claimed.
 
 **Scope.** The topology of the **group of units** $\mathbb{B}^\times$ — the polar decomposition, the retractions onto its compact subgroups, the homotopy groups and the universal cover — belongs to the Lie theory of the algebra and is treated in *The Biquaternion Unit Group as a Topological Group*. This article owns the ambient space, its distinguished subsets and the projective geometry of the null cone, and takes from that article only the homotopy type of $\mathbb{B}^\times$ when a comparison is needed.
 
@@ -211,13 +211,13 @@ $$
 
 a contractible real six-dimensional subspace; its topology is trivial, and the interesting sets are the real forms cut out by a reality condition.
 
-Complex conjugation splits $P$ into two real three-dimensional subspaces. The real condition $\tilde{Q}^*=\tilde{Q}$ gives the **pure real quaternions**
+Complex conjugation splits $P$ into two real three-dimensional subspaces. The real condition $\bar{\tilde{Q}}=\tilde{Q}$ gives the **pure real quaternions**
 
 $$
 P\cap\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}\cong\mathbb{R}^3,
 $$
 
-whose unit sphere consists of the unit imaginary quaternions $\mu$ with $\mu^2=-e_0$, the family of **real roots of $-1$** classified in *Biquaternion Square Roots of Minus One, Zero and Plus One*. The imaginary condition $\tilde{Q}^*=-\tilde{Q}$ gives
+whose unit sphere consists of the unit imaginary quaternions $\mu$ with $\mu^2=-e_0$, the family of **real roots of $-1$** classified in *Biquaternion Square Roots of Minus One, Zero and Plus One*. The imaginary condition $\bar{\tilde{Q}}=-\tilde{Q}$ gives
 
 $$
 P\cap i\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}\cong\mathbb{R}^3,

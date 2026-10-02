@@ -7,10 +7,10 @@ The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H
 That article writes an element as an operator by *one* of its two multiplications, and finds the matrix of left multiplication, $\rho_L(\tilde{Q})(\tilde{R}) = \tilde{Q}\tilde{R}$, with $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^{2}$ and $\operatorname{Tr}\rho_L(\tilde{Q}) = 4Q_0$. This article writes the Hermitian sandwich of *Biquaternion Rotations and Lorentz Transformations* in the same basis,
 
 $$
-\mathrm{H}_{\tilde{Q}}(\tilde S) = \tilde{Q}\,\tilde S\,\tilde{Q}^{\dagger},
+\mathrm{H}_{\tilde{Q}}(\tilde S) = \tilde{Q}\,\tilde S\,\tilde{Q}^{*},
 $$
 
-and the first result is that the sandwich needs **both** multiplications at once: it is the left multiplication by $\tilde{Q}$ composed with the right multiplication by $\tilde{Q}^{\dagger}$. The operator is therefore a product of two matrices already in the corpus, and everything about it — the closed form, the determinant, the trace, the spectrum, the rank — is read from that product.
+and the first result is that the sandwich needs **both** multiplications at once: it is the left multiplication by $\tilde{Q}$ composed with the right multiplication by $\tilde{Q}^{*}$. The operator is therefore a product of two matrices already in the corpus, and everything about it — the closed form, the determinant, the trace, the spectrum, the rank — is read from that product.
 
 The article owns the composition identity, the closed form of the operator matrix in the coefficient basis, the spectrum $\lambda_i\bar{\lambda}_j$ with the determinant $\lvert N(\tilde{Q})\rvert^{4}$ and the trace $4\lvert Q_0\rvert^{2}$ read off it, the real $8 \times 8$ form, and the separation of the two regimes at matrix level. The component computation of the same operator is *Biquaternion Four-Vector Operator Representation*; the congruence picture in the matrix algebra and the module side belong to other coordinate systems and are not repeated here. The spectral theory of the *element* matrix $\rho_L(\tilde{Q})$ — eigenvalues, Cayley–Hamilton, eigenspaces — is *Biquaternion Spectral Theory* and is not repeated here, although the operator's spectrum is stated below because it is a different matrix.
 
@@ -33,30 +33,30 @@ with $\rho_R(\tilde{Q}) = D\rho_L(\tilde{Q})^{\mathsf T}D$ and $D = \operatornam
 **Theorem (composition identity).** For every $\tilde{Q}$,
 
 $$
-\mathrm{H}_{\tilde{Q}} = \rho_L(\tilde{Q}) \circ \rho_R(\tilde{Q}^{\dagger}) = \rho_L(\tilde{Q})\,\rho_R(\tilde{Q}^{\dagger}) ,
+\mathrm{H}_{\tilde{Q}} = \rho_L(\tilde{Q}) \circ \rho_R(\tilde{Q}^{*}) = \rho_L(\tilde{Q})\,\rho_R(\tilde{Q}^{*}) ,
 $$
 
 the product of the left regular matrix of the operand and the right regular matrix of its Hermitian conjugate.
 
-**Proof.** For every $\tilde S$, $\bigl(\rho_L(\tilde{Q}) \circ \rho_R(\tilde{Q}^{\dagger})\bigr)(\tilde S) = \rho_L(\tilde{Q})\bigl(\tilde S\tilde{Q}^{\dagger}\bigr) = \tilde{Q}\bigl(\tilde S\tilde{Q}^{\dagger}\bigr) = \tilde{Q}\tilde S\tilde{Q}^{\dagger} = \mathrm{H}_{\tilde{Q}}(\tilde S)$, the middle step being the definition of the two regular maps and the last the associativity of multiplication.
+**Proof.** For every $\tilde S$, $\bigl(\rho_L(\tilde{Q}) \circ \rho_R(\tilde{Q}^{*})\bigr)(\tilde S) = \rho_L(\tilde{Q})\bigl(\tilde S\tilde{Q}^{*}\bigr) = \tilde{Q}\bigl(\tilde S\tilde{Q}^{*}\bigr) = \tilde{Q}\tilde S\tilde{Q}^{*} = \mathrm{H}_{\tilde{Q}}(\tilde S)$, the middle step being the definition of the two regular maps and the last the associativity of multiplication.
 
 Two readings of the identity follow, and they explain the whole structure of the operator.
 
-**The operator is a congruence, not a similarity.** If the two factors were $\tilde{Q}$ and $\tilde{Q}^{-1}$ the product would be the conjugation of the regular representation, of determinant $1$ and spectrum invariant under conjugation. With $\tilde{Q}^{\dagger}$ in place of the inverse the product is a congruence: it preserves rank and it scales the determinant, and it preserves the spectrum only on the unitary slice. This is the matrix-level reason for the failure of multiplicativity recorded in *Biquaternion Rotations and Lorentz Transformations*.
+**The operator is a congruence, not a similarity.** If the two factors were $\tilde{Q}$ and $\tilde{Q}^{-1}$ the product would be the conjugation of the regular representation, of determinant $1$ and spectrum invariant under conjugation. With $\tilde{Q}^{*}$ in place of the inverse the product is a congruence: it preserves rank and it scales the determinant, and it preserves the spectrum only on the unitary slice. This is the matrix-level reason for the failure of multiplicativity recorded in *Biquaternion Rotations and Lorentz Transformations*.
 
-**The two multiplications commute, and the dagger is not the inverse.** Left and right multiplications by fixed elements commute, so the order of the two factors is immaterial and the operator is also the product $\rho_R(\tilde{Q}^{\dagger})\rho_L(\tilde{Q})$. What matters is the pairing. The one-sided products $\rho_L(\tilde{Q})\rho_L(\tilde{Q}^{\dagger})$, the operator $\tilde S \mapsto \tilde{Q}\tilde{Q}^{\dagger}\tilde S$, and $\rho_R(\tilde{Q})\rho_R(\tilde{Q}^{\dagger})$, the operator $\tilde S \mapsto \tilde S\tilde{Q}\tilde{Q}^{\dagger}$, are different from the sandwich unless $\tilde{Q}\tilde{Q}^{\dagger}$ is central, that is, unless the operand is a central multiple of a real quaternion. And with $\tilde{Q}^{-1}$ in place of $\tilde{Q}^{\dagger}$ the product is the inner automorphism $\tilde S \mapsto \tilde{Q}\tilde S\tilde{Q}^{-1}$, of determinant one. The sandwich is the congruence-shaped pairing of a left multiplication with the right multiplication by the dagger, and that is what makes its invariants real.
+**The two multiplications commute, and the dagger is not the inverse.** Left and right multiplications by fixed elements commute, so the order of the two factors is immaterial and the operator is also the product $\rho_R(\tilde{Q}^{*})\rho_L(\tilde{Q})$. What matters is the pairing. The one-sided products $\rho_L(\tilde{Q})\rho_L(\tilde{Q}^{*})$, the operator $\tilde S \mapsto \tilde{Q}\tilde{Q}^{*}\tilde S$, and $\rho_R(\tilde{Q})\rho_R(\tilde{Q}^{*})$, the operator $\tilde S \mapsto \tilde S\tilde{Q}\tilde{Q}^{*}$, are different from the sandwich unless $\tilde{Q}\tilde{Q}^{*}$ is central, that is, unless the operand is a central multiple of a real quaternion. And with $\tilde{Q}^{-1}$ in place of $\tilde{Q}^{*}$ the product is the inner automorphism $\tilde S \mapsto \tilde{Q}\tilde S\tilde{Q}^{-1}$, of determinant one. The sandwich is the congruence-shaped pairing of a left multiplication with the right multiplication by the dagger, and that is what makes its invariants real.
 
 **Lemma (the regular matrix respects the dagger).** For every $\tilde{Q}$,
 
 $$
-\rho_L(\tilde{Q}^{\dagger}) = \rho_L(\tilde{Q})^{\dagger},
+\rho_L(\tilde{Q}^{*}) = \rho_L(\tilde{Q})^{\dagger},
 $$
 
 the conjugate transpose of the regular matrix.
 
 **Proof.** Both sides are conjugate-linear in $\tilde{Q}$, so it suffices to check the eight real basis elements. On $e_0$ both sides are $I$; on $ie_0$ both are $-iI$; on $e_k$ the left side is $-\rho_L(e_k)$, whose columns are the products $-e_ke_j$, and the right side is $\rho_L(e_k)^{\dagger} = \rho_L(e_k)^{\mathsf T} = -\rho_L(e_k)$, since left multiplication by a vector unit is skew-symmetric, as the products $e_ke_j$ read off the columns show; on $ie_k$ both sides are $i\rho_L(e_k)$, the transpose identity being applied once more.
 
-**Corollary (closed form on the coefficient space).** Using $\rho_R(\tilde{Q}^{\dagger}) = D\rho_L(\tilde{Q}^{\dagger})^{\mathsf T}D$ and the lemma,
+**Corollary (closed form on the coefficient space).** Using $\rho_R(\tilde{Q}^{*}) = D\rho_L(\tilde{Q}^{*})^{\mathsf T}D$ and the lemma,
 
 $$
 \mathrm{H}_{\tilde{Q}} = \rho_L(\tilde{Q})\,D\,\rho_L(\tilde{Q})^{*}\,D ,
@@ -107,7 +107,7 @@ $$
 
 a product of one left and one right multiplication, both invertible.
 
-**Proof.** The rank statement is the rank theorem above; the invertibility is $\det\mathrm{H}_{\tilde{Q}} = \lvert N(\tilde{Q})\rvert^{4} \neq 0$; the preservation of rank is the elementary fact that a congruence by an invertible matrix has the same rank as its argument, and the invertibility of each factor follows from $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^{2} \neq 0$ and $\det\rho_R(\tilde{Q}^{\dagger}) = N(\tilde{Q}^{\dagger})^{2} = \overline{N(\tilde{Q})}^{2} \neq 0$.
+**Proof.** The rank statement is the rank theorem above; the invertibility is $\det\mathrm{H}_{\tilde{Q}} = \lvert N(\tilde{Q})\rvert^{4} \neq 0$; the preservation of rank is the elementary fact that a congruence by an invertible matrix has the same rank as its argument, and the invertibility of each factor follows from $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^{2} \neq 0$ and $\det\rho_R(\tilde{Q}^{*}) = N(\tilde{Q}^{*})^{2} = ((N(\tilde{Q}))^{\natural})^{2} \neq 0$.
 
 **Example.** For $\tilde{Q} = e_0 + e_1$ one has $N = 2$ and
 
@@ -135,7 +135,7 @@ $$
 \mathrm{H}_{\tilde{Q}} \circ \mathrm{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}\,\mathrm{H}_{\tilde{Q}} .
 $$
 
-The image is the single complex line spanned by the Hermitian element $\tilde{Q}\tilde{Q}^{\dagger}$, and its generator, normalised, is a minimal idempotent of $\mathbb{B}$. If $Q_0 = 0$ the operator is nilpotent, $\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{Q}} = 0$, so all four eigenvalues vanish; if $Q_0 \neq 0$ the operator has the single nonzero eigenvalue $4\lvert Q_0\rvert^{2}$ and is a scaled projection.
+The image is the single complex line spanned by the Hermitian element $\tilde{Q}\tilde{Q}^{*}$, and its generator, normalised, is a minimal idempotent of $\mathbb{B}$. If $Q_0 = 0$ the operator is nilpotent, $\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{Q}} = 0$, so all four eigenvalues vanish; if $Q_0 \neq 0$ the operator has the single nonzero eigenvalue $4\lvert Q_0\rvert^{2}$ and is a scaled projection.
 
 **Proof.** The rank is the rank theorem above; for the square, a rank-one endomorphism satisfies $T^{2} = (\operatorname{Tr}T)\,T$ and $\operatorname{Tr}\mathrm{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}$, so $\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}\mathrm{H}_{\tilde{Q}}$. For the eigenvalues: with $\operatorname{rank}\mathrm{H}_{\tilde{Q}} = 1$ the operator is, after a change of basis, a single nonzero entry, hence its eigenvalues are $4\lvert Q_0\rvert^{2}$ once and $0$ three times, the trace being additive. When $Q_0 = 0$ the trace vanishes and one eigenvalue of a rank-one operator is zero, so the operator is nilpotent.
 
@@ -184,11 +184,11 @@ The dimension doubles for the same reason as in the element article: $\mathbb{B}
 
 ## Summary
 
-The sandwich of an element is a product of the two regular maps: $\mathrm{H}_{\tilde{Q}} = \rho_L(\tilde{Q}) \circ \rho_R(\tilde{Q}^{\dagger})$, the left multiplication by the operand composed with the right multiplication by its Hermitian conjugate, which in the coefficient basis is the matrix $\rho_L(\tilde{Q})\,D\,\rho_L(\tilde{Q})^{*}\,D$ with $D = \operatorname{diag}(-1,1,1,1)$, the transpose of the dagger-respecting lemma turning the dagger into the entrywise complex conjugate. Every entry is sesquilinear in the coefficients, so the operator is quadratic in the operand and linear in the argument. It is a congruence and not a similarity, which is the matrix-level reason it is not multiplicative.
+The sandwich of an element is a product of the two regular maps: $\mathrm{H}_{\tilde{Q}} = \rho_L(\tilde{Q}) \circ \rho_R(\tilde{Q}^{*})$, the left multiplication by the operand composed with the right multiplication by its Hermitian conjugate, which in the coefficient basis is the matrix $\rho_L(\tilde{Q})\,D\,\rho_L(\tilde{Q})^{*}\,D$ with $D = \operatorname{diag}(-1,1,1,1)$, the transpose of the dagger-respecting lemma turning the dagger into the entrywise complex conjugate. Every entry is sesquilinear in the coefficients, so the operator is quadratic in the operand and linear in the argument. It is a congruence and not a similarity, which is the matrix-level reason it is not multiplicative.
 
 Its invariants are real and non-negative in every case. When $\Phi(\tilde{Q})$ is diagonalisable with eigenvalues $\lambda_1, \lambda_2$, the operator is diagonalisable with eigenvalues the four products $\lambda_i\bar{\lambda}_j$; hence $\operatorname{Tr}\mathrm{H}_{\tilde{Q}} = \lvert\lambda_1+\lambda_2\rvert^{2} = 4\lvert Q_0\rvert^{2}$ and $\det\mathrm{H}_{\tilde{Q}} = \lvert\lambda_1\lambda_2\rvert^{4} = \lvert N(\tilde{Q})\rvert^{4}$. Over $\mathbb{R}$ the operator is $8 \times 8$ with determinant $\lvert N(\tilde{Q})\rvert^{8}$ and trace $8\lvert Q_0\rvert^{2}$.
 
-The two regimes are separated by the vanishing of those invariants. Off the cone the determinant is nonzero, the operator lies in $GL(4,\mathbb{C})$, it is the product of two invertible regular matrices, and it preserves rank; on the unit-norm slice it is the Lorentz group. On the cone the operator has rank one, its image is the line of the Hermitian element $\tilde{Q}\tilde{Q}^{\dagger}$, whose normalisation is a minimal idempotent, and it satisfies $\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}\mathrm{H}_{\tilde{Q}}$. The single number $\operatorname{Tr}\mathrm{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}$ then separates the two faces of the collapse: it vanishes for $\tilde{Q} = e_1+ie_2$, where all four eigenvalues are zero and the operator is nilpotent, and equals $1$ for $\tilde{Q} = \tfrac12(e_0-ie_3)$, where the operator is the projection onto the idempotent that generates its image.
+The two regimes are separated by the vanishing of those invariants. Off the cone the determinant is nonzero, the operator lies in $GL(4,\mathbb{C})$, it is the product of two invertible regular matrices, and it preserves rank; on the unit-norm slice it is the Lorentz group. On the cone the operator has rank one, its image is the line of the Hermitian element $\tilde{Q}\tilde{Q}^{*}$, whose normalisation is a minimal idempotent, and it satisfies $\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}\mathrm{H}_{\tilde{Q}}$. The single number $\operatorname{Tr}\mathrm{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}$ then separates the two faces of the collapse: it vanishes for $\tilde{Q} = e_1+ie_2$, where all four eigenvalues are zero and the operator is nilpotent, and equals $1$ for $\tilde{Q} = \tfrac12(e_0-ie_3)$, where the operator is the projection onto the idempotent that generates its image.
 
 ## Summary of Notation
 
@@ -196,9 +196,9 @@ The two regimes are separated by the vanishing of those invariants. Off the cone
 |---|---|
 | $\rho_L(\tilde{Q}), \rho_R(\tilde{Q})$ | left and right regular matrices in the basis $e_0,e_1,e_2,e_3$ |
 | $D = \operatorname{diag}(-1,1,1,1)$ | fixed sign matrix, $\rho_R(\tilde{Q}) = D\rho_L(\tilde{Q})^{\mathsf T}D$ |
-| $\rho_L(\tilde{Q}^{\dagger}) = \rho_L(\tilde{Q})^{\dagger}$ | the regular matrix respects the dagger |
-| $\mathrm{H}_{\tilde{Q}}(\tilde S) = \tilde{Q}\tilde S\tilde{Q}^{\dagger}$ | the Hermitian sandwich, the operator of the operand |
-| $\mathrm{H}_{\tilde{Q}} = \rho_L(\tilde{Q})\rho_R(\tilde{Q}^{\dagger})$ | the operator as a product of the two regular maps |
+| $\rho_L(\tilde{Q}^{*}) = \rho_L(\tilde{Q})^{\dagger}$ | the regular matrix respects the dagger |
+| $\mathrm{H}_{\tilde{Q}}(\tilde S) = \tilde{Q}\tilde S\tilde{Q}^{*}$ | the Hermitian sandwich, the operator of the operand |
+| $\mathrm{H}_{\tilde{Q}} = \rho_L(\tilde{Q})\rho_R(\tilde{Q}^{*})$ | the operator as a product of the two regular maps |
 | $\mathrm{H}_{\tilde{Q}} = \rho_L(\tilde{Q})D\rho_L(\tilde{Q})^{*}D$ | closed form in the coefficient basis |
 | $\lambda_1,\lambda_2$ | eigenvalues of $\Phi(\tilde{Q})$ |
 | $\lambda_i\bar{\lambda}_j$ | eigenvalues of $\mathrm{H}_{\tilde{Q}}$ when $\Phi(\tilde{Q})$ is diagonalisable |

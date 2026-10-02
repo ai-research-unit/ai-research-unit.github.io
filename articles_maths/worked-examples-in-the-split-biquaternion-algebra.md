@@ -11,7 +11,7 @@ Throughout,
 $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu \in \mathbb{D},
 $$
-with real $q_\mu, q'_\mu$, and the four conjugations are $\bar{\cdot}$ (quaternion), ${}^{*}$ (split complex), ${}^{\dagger} = {}^{*}\circ\bar{\cdot}$ (Hermitian) and ${}^{\flat} = -{}^{\dagger}$ (anti-Hermitian).
+with real $q_\mu, q'_\mu$, and the four conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian).
 
 ## The Algebra and Its Basis
 
@@ -92,12 +92,12 @@ Both components are nonzero, so $\tilde{Q}$ is a unit.
 
 Applying the four conjugations to $\tilde{Q} = (1 + j) + 2 e_1 + (1 - j) e_2$ gives the following explicit elements:
 
-- quaternion conjugation $\bar{\tilde{Q}} = (1 + j) - 2 e_1 - (1 - j) e_2$, obtained by negating the vector part;
-- split complex conjugation $\tilde{Q}^* = (1 - j) + 2 e_1 + (1 + j) e_2$, obtained by conjugating each coefficient, $j \mapsto -j$;
-- Hermitian conjugation $\tilde{Q}^\dagger = \bar{\tilde{Q}}^* = (1 - j) - 2 e_1 - (1 + j) e_2$;
-- anti-Hermitian conjugation $\tilde{Q}^\flat = -\tilde{Q}^\dagger = -(1 - j) + 2 e_1 + (1 + j) e_2$.
+- quaternion conjugation $\tilde{Q}^{\natural} = (1 + j) - 2 e_1 - (1 - j) e_2$, obtained by negating the vector part;
+- split complex conjugation $\bar{\tilde{Q}} = (1 - j) + 2 e_1 + (1 + j) e_2$, obtained by conjugating each coefficient, $j \mapsto -j$;
+- Hermitian conjugation $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = (1 - j) - 2 e_1 - (1 + j) e_2$;
+- anti-Hermitian conjugation $\tilde{Q}^\flat = -\tilde{Q}^{*} = -(1 - j) + 2 e_1 + (1 + j) e_2$.
 
-Each is an involution: applying it twice returns $\tilde{Q}$. For instance $\bar{\bar{\tilde{Q}}} = \bar{(1 + j) - 2 e_1 - (1 - j) e_2} = (1 + j) + 2 e_1 + (1 - j) e_2 = \tilde{Q}$, and the same holds for the other three.
+Each is an involution: applying it twice returns $\tilde{Q}$. For instance $\bar{\tilde{Q}^{\natural}} = \bar{(1 + j) - 2 e_1 - (1 - j) e_2} = (1 + j) + 2 e_1 + (1 - j) e_2 = \tilde{Q}$, and the same holds for the other three.
 
 ## The Four Involution Fixed-Point Subspaces
 
@@ -105,23 +105,23 @@ Each conjugation has a fixed-point subspace, and the projection onto the fixed-p
 
 | Involution | Fixed subspace | Condition | Dimension |
 |---|---|---|---|
-| $\bar{\cdot}$ | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | $Q_1 = Q_2 = Q_3 = 0$ | $2$ |
-| ${}^{*}$ | $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | $q'_\mu = 0$ for all $\mu$ | $4$ |
-| ${}^{\dagger}$ | $\mathbb{M}_+$ | $q_0$ real and $Q_1, Q_2, Q_3$ purely split-imaginary | $4$ |
+| ${}^{\natural}$ | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | $Q_1 = Q_2 = Q_3 = 0$ | $2$ |
+| $\bar{\cdot}$ | $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | $q'_\mu = 0$ for all $\mu$ | $4$ |
+| ${}^{*}$ | $\mathbb{M}_+$ | $q_0$ real and $Q_1, Q_2, Q_3$ purely split-imaginary | $4$ |
 | ${}^{\flat}$ | $\mathbb{M}_-$ | $Q_0$ purely split-imaginary and $q_1, q_2, q_3$ real | $4$ |
 
 Projecting $\tilde{Q}$ onto the four fixed-point subspaces gives
 
 $$
-\tfrac{1}{2}(\tilde{Q} + \bar{\tilde{Q}}) = 1 + j = Q_0 \in \mathbb{D}_{\mathbb{H}_{\mathbb{D}}},
+\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{\natural}) = 1 + j = Q_0 \in \mathbb{D}_{\mathbb{H}_{\mathbb{D}}},
 $$
 
 $$
-\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^*) = 1 + 2 e_1 + e_2 = A \in \mathbb{H}_{\mathbb{H}_{\mathbb{D}}},
+\tfrac{1}{2}(\tilde{Q} + \bar{\tilde{Q}}) = 1 + 2 e_1 + e_2 = A \in \mathbb{H}_{\mathbb{H}_{\mathbb{D}}},
 $$
 
 $$
-\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^\dagger) = 1 - j e_2 \in \mathbb{M}_+,
+\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{*}) = 1 - j e_2 \in \mathbb{M}_+,
 $$
 
 $$
@@ -188,7 +188,7 @@ $$
 (2 + 2 e_1)^{-1} = \tfrac{1}{8}(2 - 2 e_1), \qquad (2 e_1 + 2 e_2)^{-1} = \tfrac{1}{8}(-2 e_1 - 2 e_2),
 $$
 
-and $\varphi(\tilde{Q}^{-1}) = \tfrac{1}{8}(2 - 2 e_1, -2 e_1 - 2 e_2)$, which agrees with the inverse $\tilde{Q}^{-1} = \tfrac{1}{8} \bar{\tilde{Q}}$. The two halves are thus not merely an abstract direct sum: on this element they are the two nonzero quaternions whose product-freeness decides invertibility.
+and $\varphi(\tilde{Q}^{-1}) = \tfrac{1}{8}(2 - 2 e_1, -2 e_1 - 2 e_2)$, which agrees with the inverse $\tilde{Q}^{-1} = \tfrac{1}{8} \tilde{Q}^{\natural}$. The two halves are thus not merely an abstract direct sum: on this element they are the two nonzero quaternions whose product-freeness decides invertibility.
 
 ## Summary
 
@@ -198,7 +198,7 @@ $$
 \tilde{Q} = (1 + j) + 2 e_1 + (1 - j) e_2
 $$
 
-the four conjugations act as $\bar{\tilde{Q}} = (1 + j) - 2 e_1 - (1 - j) e_2$, $\tilde{Q}^* = (1 - j) + 2 e_1 + (1 + j) e_2$, $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$ and $\tilde{Q}^\flat = -\tilde{Q}^\dagger$; the four fixed-point subspaces $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ have dimensions $2, 4, 4, 4$ and overlap, so their projections do not sum to the element. The idempotents $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ are central and primitive and give the two minimal left ideals $\mathbb{H} \tilde\Pi_\pm$; the element decomposes as $\tilde{Q} = (2 + 2 e_1) \tilde\Pi_+ + (2 e_1 + 2 e_2) \tilde\Pi_-$ with both components nonzero. An explicit zero-divisor pair is $\tilde P = e_1 \tilde\Pi_-$ and $\tilde{R} = (1 + e_2) \tilde\Pi_+$, with $\tilde P \tilde{R} = 0$. The isomorphism $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-) = (2 + 2 e_1, 2 e_1 + 2 e_2)$ realises the two quaternion halves, and the square $\tilde{Q}^2 = (-4 + 4 e_1) + j(4 + 4 e_1)$ agrees whether computed from the product formula or from the idempotent components.
+the four conjugations act as $\tilde{Q}^{\natural} = (1 + j) - 2 e_1 - (1 - j) e_2$, $\bar{\tilde{Q}} = (1 - j) + 2 e_1 + (1 + j) e_2$, $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ and $\tilde{Q}^\flat = -\tilde{Q}^{*}$; the four fixed-point subspaces $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ have dimensions $2, 4, 4, 4$ and overlap, so their projections do not sum to the element. The idempotents $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ are central and primitive and give the two minimal left ideals $\mathbb{H} \tilde\Pi_\pm$; the element decomposes as $\tilde{Q} = (2 + 2 e_1) \tilde\Pi_+ + (2 e_1 + 2 e_2) \tilde\Pi_-$ with both components nonzero. An explicit zero-divisor pair is $\tilde P = e_1 \tilde\Pi_-$ and $\tilde{R} = (1 + e_2) \tilde\Pi_+$, with $\tilde P \tilde{R} = 0$. The isomorphism $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-) = (2 + 2 e_1, 2 e_1 + 2 e_2)$ realises the two quaternion halves, and the square $\tilde{Q}^2 = (-4 + 4 e_1) + j(4 + 4 e_1)$ agrees whether computed from the product formula or from the idempotent components.
 
 ## Summary of Notation
 
@@ -210,7 +210,7 @@ the four conjugations act as $\bar{\tilde{Q}} = (1 + j) - 2 e_1 - (1 - j) e_2$, 
 | $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ | The idempotents, $\tilde\Pi_+ + \tilde\Pi_- = 1$ |
 | $\tilde{Q} = A + j B$ | Concrete element, $A, B \in \mathbb{H}$ |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$ | Idempotent components in $\mathbb{H}$ |
-| $\bar{\cdot}, {}^{*}, {}^{\dagger}, {}^{\flat}$ | The four conjugations |
+| ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
 | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{M}_+, \mathbb{M}_-$ | The four involution fixed-point subspaces |
 | $\mathbb{H} \tilde\Pi_\pm$ | The two minimal left ideals, each $\cong \mathbb{H}$ |
 | $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Idempotent-decomposition isomorphism |

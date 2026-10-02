@@ -29,7 +29,7 @@ $$
 L^2(\mathbb{H}_{\mathrm{s}}, \mathbb{H}_{\mathrm{s}}) \cong \big(L^2(\mathbb{R}^4)\big)^4 ,
 $$
 
-with the inner product $\langle f,g\rangle = \int \operatorname{Sc}(f\bar g)$, and the algebra acts pointwise on it by left and right multiplication.
+with the inner product $\langle f,g\rangle = \int \operatorname{Sc}(f g^{\natural})$, and the algebra acts pointwise on it by left and right multiplication.
 
 **Proof.** The identification is componentwise, and the scalar product is that of four real functions expressed in the basis.
 
@@ -125,7 +125,7 @@ $$
 
 exists exactly when $N(\tilde q-y) \neq 0$, that is off the null cone. On the null cone the reciprocal does not exist, the derivation of the inversion formula fails, and the transform is not invertible by a kernel of the same shape.
 
-**Proof.** The inverse of an element is $\bar{u}/N(u)$ by *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*, which likewise gives that $N(u) = 0$ exactly on the zero divisors. The non-multiplicativity of the kernel is immediate from the non-commutativity: $e^{-(\tilde q+y)\xi} \neq e^{-\tilde q\xi}e^{-y\xi}$ unless $\tilde q$ and $\xi$ commute, by *Split-Quaternion Elementary Functions*, §*Non-Commutativity and the One-Variable Case*.
+**Proof.** The inverse of an element is $u^{\natural}/N(u)$ by *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*, which likewise gives that $N(u) = 0$ exactly on the zero divisors. The non-multiplicativity of the kernel is immediate from the non-commutativity: $e^{-(\tilde q+y)\xi} \neq e^{-\tilde q\xi}e^{-y\xi}$ unless $\tilde q$ and $\xi$ commute, by *Split-Quaternion Elementary Functions*, §*Non-Commutativity and the One-Variable Case*.
 
 **Theorem (The Vanishing Determinant, Stated Precisely).** Let $D = e_1\partial_{q_1} + e_2\partial_{q_2} + e_3\partial_{q_3}$ be the vector operator and let the transform be the group transform of the preceding section, whose linearity allows differentiating under the integral. Then
 

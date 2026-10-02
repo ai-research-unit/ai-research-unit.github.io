@@ -6,7 +6,7 @@ An isolated body of finite size that is not perfectly spherical has a shape with
 
 This article develops the mechanics of the vibrating and rotating ellipsoid in the biquaternion framework, and follows the multipole tower it generates. The treatment is **non-relativistic** and classical: the body is described by its shape and orientation, the mode amplitudes obey ordinary harmonic-oscillator equations, and the fields it produces are read in the long-wavelength limit. The relativistic quadrupole is a separate subject.
 
-The framework's role here is specific, and it is worth stating before the details. The **shape** of the body is a scalar function on the sphere, and its modes are scalars: the amplitudes $a_{lm}(t)$ enter the algebra as the central elements $a_{lm}e_0$. The **orientation** of the body is a rotor $\tilde{\Lambda}(t)\in\mathbb{H}_{\mathbb{B}}$, a real unit quaternion acting on vectors by $\mathbf{v}\mapsto\tilde{\Lambda}\mathbf{v}\bar{\tilde{\Lambda}}$. The **velocity field** of the medium is a vector, an element of the vector part. The multipole **moments** themselves are tensors: as the preceding article established, the monopole and the dipole are algebra elements, but the quadrupole and every higher moment are symmetric traceless tensors over the vector part, not elements of $\mathbb{B}$. The result is a clean division of labour. The algebra carries the rotors and the vector fields; the tower of shape oscillations is carried by the function space, and the algebra acts on it through the rotor without containing it.
+The framework's role here is specific, and it is worth stating before the details. The **shape** of the body is a scalar function on the sphere, and its modes are scalars: the amplitudes $a_{lm}(t)$ enter the algebra as the central elements $a_{lm}e_0$. The **orientation** of the body is a rotor $\tilde{\Lambda}(t)\in\mathbb{H}_{\mathbb{B}}$, a real unit quaternion acting on vectors by $\mathbf{v}\mapsto\tilde{\Lambda}\mathbf{v}\tilde{\Lambda}^{\natural}$. The **velocity field** of the medium is a vector, an element of the vector part. The multipole **moments** themselves are tensors: as the preceding article established, the monopole and the dipole are algebra elements, but the quadrupole and every higher moment are symmetric traceless tensors over the vector part, not elements of $\mathbb{B}$. The result is a clean division of labour. The algebra carries the rotors and the vector fields; the tower of shape oscillations is carried by the function space, and the algebra acts on it through the rotor without containing it.
 
 The biquaternion conventions are those of the companion articles:
 - Companion article *Introduction to the Biquaternion Universe*, for the algebra and its two sectors.
@@ -14,7 +14,7 @@ The biquaternion conventions are those of the companion articles:
 - Companion article *Conventions in the Biquaternion Universe*, for the trace, the metric at its three levels, and the conventions of presentation.
 - Companion article *The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form*, for the multipole series, the dipole as a vector element, and the quadrupole as a symmetric traceless tensor.
 
-Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and central scalar imaginary $i$, $i^2 = -1$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the material sector is $\mathbb{M}_-$ with basis $ie_0, e_1, e_2, e_3$, and the biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + \boldsymbol{\nabla}$ with $\boldsymbol{\nabla} = e_1\partial_x + e_2\partial_y + e_3\partial_z$ and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The symbol $\rho_m$ in this article denotes a **mass** density (the corpus reserves the bare $\rho$ for the charge density, and $\tilde{\rho}$ for the density operator of the informational sector), $M$ the body's mass, and $\sigma$ a surface tension. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$ (Wigner's $D$), so the monopole is $D^{(0)}$, the dipole and every spatial vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
+Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and central scalar imaginary $i$, $i^2 = -1$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the material sector is $\mathbb{M}_-$ with basis $ie_0, e_1, e_2, e_3$, and the biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + \boldsymbol{\nabla}$ with $\boldsymbol{\nabla} = e_1\partial_x + e_2\partial_y + e_3\partial_z$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The symbol $\rho_m$ in this article denotes a **mass** density (the corpus reserves the bare $\rho$ for the charge density, and $\tilde{\rho}$ for the density operator of the informational sector), $M$ the body's mass, and $\sigma$ a surface tension. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$ (Wigner's $D$), so the monopole is $D^{(0)}$, the dipole and every spatial vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
 
 ## The Rigid-Body Rotor
 
@@ -31,13 +31,13 @@ $$
 a real quaternion of unit norm,
 
 $$
-\tilde{\Lambda}\bar{\tilde{\Lambda}} = \cos^2\frac{\theta}{2} - \sin^2\frac{\theta}{2}\,\hat{\mathbf{n}}^2 = e_0 .
+\tilde{\Lambda}\tilde{\Lambda}^{\natural} = \cos^2\frac{\theta}{2} - \sin^2\frac{\theta}{2}\,\hat{\mathbf{n}}^2 = e_0 .
 $$
 
-Because $\tilde{\Lambda}$ is a real quaternion, its Hermitian conjugate is its quaternion conjugate, $\tilde{\Lambda}^\dagger = \bar{\tilde{\Lambda}}$. The rotor acts on a vector by conjugation,
+Because $\tilde{\Lambda}$ is a real quaternion, its Hermitian conjugate is its quaternion conjugate, $\tilde{\Lambda}^{*} = \tilde{\Lambda}^{\natural}$. The rotor acts on a vector by conjugation,
 
 $$
-\mathbf{v} \;\longmapsto\; \mathbf{v}' = \tilde{\Lambda}\,\mathbf{v}\,\bar{\tilde{\Lambda}} .
+\mathbf{v} \;\longmapsto\; \mathbf{v}' = \tilde{\Lambda}\,\mathbf{v}\,\tilde{\Lambda}^{\natural} .
 $$
 
 The action has been verified against the standard rotation matrix $R(\theta,\hat{\mathbf{n}})$ on thirty random axis–angle pairs: the image of a vector equals $R\mathbf{v}$ to $10^{-10}$, and the norm $\mathbf{v}\cdot\mathbf{v}$ is preserved to machine precision. The composition law is
@@ -69,7 +69,7 @@ $$
 equivalently $Q^{(lab)} = R\,Q^{(b)}R^{\mathsf{T}}$. In rotor language the same statement is that the associated bilinear form is evaluated on body-frame components,
 
 $$
-Q^{(lab)}(\mathbf{u},\mathbf{v}) = Q^{(b)}\!\left(\bar{\tilde{\Lambda}}\,\mathbf{u}\,\tilde{\Lambda},\ \bar{\tilde{\Lambda}}\,\mathbf{v}\,\tilde{\Lambda}\right).
+Q^{(lab)}(\mathbf{u},\mathbf{v}) = Q^{(b)}\!\left(\tilde{\Lambda}^{\natural}\,\mathbf{u}\,\tilde{\Lambda},\ \tilde{\Lambda}^{\natural}\,\mathbf{v}\,\tilde{\Lambda}\right).
 $$
 
 The equivalence of the two expressions has been verified explicitly: for random symmetric traceless $Q^{(b)}$ and random axis–angle pairs, the rotor formula reproduces $R Q^{(b)}R^{\mathsf{T}}$ to $10^{-9}$, and the trace remains zero. This is the form in which the rotor acts on the quadrupole; the algebra supplies the rotor, while the tensor supplies the two vector slots.
@@ -293,7 +293,7 @@ A vibrating or rotating ellipsoid is a source of oscillating multipoles. Its sha
 
 The quadrupole moment of a homogeneous ellipsoid is $Q_{xx} = \frac{M}{5}(2a^2-b^2-c^2)$ with cyclic permutations, traceless; for a small trace-free strain it is linear, $Q_{ij} = \frac{6MR_0^2}{5}\epsilon_{ij}$. A vibrating ellipsoid therefore has a quadrupole moment oscillating at the mode frequency $\omega_2$. A triaxial ellipsoid rotating at $\Omega$ has a lab-frame quadrupole oscillating at $2\Omega$, because the body-frame moment carries azimuthal components $m' = \pm 2$; an axisymmetric body has a static moment and does not oscillate. In general, a rigidly rotating body with an $l$-pole deformation produces harmonics up to $l\Omega$.
 
-In the biquaternion framework the division of labour is exact. The shape mode amplitudes are scalars, $a_{lm}(t)e_0\in\mathbb{C}_{\mathbb{B}}$, and the multipole moments of order $l\geq2$ are tensors over the vector part, not algebra elements. The orientation is a single rotor $\tilde{\Lambda}(t)\in\mathbb{H}_{\mathbb{B}}$, a unit-norm real quaternion, which acts on every tensor of the tower at once by conjugation of its bilinear form, $Q^{(lab)}(\mathbf{u},\mathbf{v}) = Q^{(b)}(\bar{\tilde{\Lambda}}\mathbf{u}\tilde{\Lambda}, \bar{\tilde{\Lambda}}\mathbf{v}\tilde{\Lambda})$. The velocity field of the medium is a vector, an element of the vector part. The algebra thus supplies the rotors and the vector fields and acts on the tower without containing it; the tower of oscillating modes is carried by the function space. The oscillating multipole moments are the sources of a time-dependent field; in the non-relativistic long-wavelength limit the radiated power from a quadrupole scales as $\omega^6$.
+In the biquaternion framework the division of labour is exact. The shape mode amplitudes are scalars, $a_{lm}(t)e_0\in\mathbb{C}_{\mathbb{B}}$, and the multipole moments of order $l\geq2$ are tensors over the vector part, not algebra elements. The orientation is a single rotor $\tilde{\Lambda}(t)\in\mathbb{H}_{\mathbb{B}}$, a unit-norm real quaternion, which acts on every tensor of the tower at once by conjugation of its bilinear form, $Q^{(lab)}(\mathbf{u},\mathbf{v}) = Q^{(b)}(\tilde{\Lambda}^{\natural}\mathbf{u}\tilde{\Lambda}, \tilde{\Lambda}^{\natural}\mathbf{v}\tilde{\Lambda})$. The velocity field of the medium is a vector, an element of the vector part. The algebra thus supplies the rotors and the vector fields and acts on the tower without containing it; the tower of oscillating modes is carried by the function space. The oscillating multipole moments are the sources of a time-dependent field; in the non-relativistic long-wavelength limit the radiated power from a quadrupole scales as $\omega^6$.
 
 ## Summary of Notation
 
@@ -307,7 +307,7 @@ In the biquaternion framework the division of labour is exact. The shape mode am
 | $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ | Center of $\mathbb{B}$ (the scalars) |
 | $\mathrm{Sc}(\cdot)$ | Scalar (central) part |
 | $\tilde{\Lambda} = \cos(\theta/2) + \sin(\theta/2)\hat{\mathbf{n}}$ | Rotation rotor, a real unit quaternion |
-| $\mathbf{v}' = \tilde{\Lambda}\mathbf{v}\bar{\tilde{\Lambda}}$ | Rotor action on a vector |
+| $\mathbf{v}' = \tilde{\Lambda}\mathbf{v}\tilde{\Lambda}^{\natural}$ | Rotor action on a vector |
 | $R(\theta,\hat{\mathbf{n}})$ | Rotation matrix in $SO(3)$, the image of $\tilde{\Lambda}$ (distinct from the radius $R_0$) |
 | $\tilde{\omega} = \dot\theta\,\hat{\mathbf{n}}$ | Angular velocity (body-frame vector) |
 | $\dot{\tilde{\Lambda}} = \tfrac12\tilde{\Lambda}\tilde{\omega}$ | Rotor kinematic identity |
@@ -328,7 +328,7 @@ In the biquaternion framework the division of labour is exact. The shape mode am
 | $D^{(l)}$ | Irreducible rotation representation of dimension $2l+1$ (Wigner's $D$) |
 | $\Omega$ | Angular speed of rigid rotation |
 | $\tilde{\nabla} = e_0\partial_{ict}+\boldsymbol{\nabla}$ | Biquaternionic gradient |
-| $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2+\Delta$ | d'Alembertian (series convention) |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2+\Delta$ | d'Alembertian (series convention) |
 
 ## Further Reading
 

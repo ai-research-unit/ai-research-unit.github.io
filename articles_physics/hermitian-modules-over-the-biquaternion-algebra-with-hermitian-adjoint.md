@@ -7,14 +7,14 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 This article asks the metric question of that module: when does the spinor module carry a positive definite **inner product** that the algebra acts on by operators with adjoints? The answer is the axiom
 
 $$
-(\tilde R\cdot s,t)=\bigl(s,\tilde R^{\dagger}\cdot t\bigr),
+(\tilde R\cdot s,t)=\bigl(s,\tilde R^{*}\cdot t\bigr),
 $$
 
 which says exactly that the action is a $*$-representation, and it is the condition that makes the informational sector the observables, the generators skew-adjoint, and the Dirac-type operator self-adjoint. The mathematical statement, its proof and its uniqueness are in *Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint* of the mathematical series, cited here; what this article adds is the physical reading, the two traps, and the operator that the axiom produces.
 
 ## The Module Axiom as the Physicality of the Inner Product
 
-**Definition (the Hermitian form of the module).** On the spinor module $S$ a **Hermitian form** is a complex sesquilinear form, linear in the second argument and conjugate-linear in the first; the axiom of a **Hermitian Clifford module** is $(\tilde R\cdot s,t)=(s,\tilde R^{\dagger}\cdot t)$ for every element $\tilde R$ and every pair of spinors.
+**Definition (the Hermitian form of the module).** On the spinor module $S$ a **Hermitian form** is a complex sesquilinear form, linear in the second argument and conjugate-linear in the first; the axiom of a **Hermitian Clifford module** is $(\tilde R\cdot s,t)=(s,\tilde R^{*}\cdot t)$ for every element $\tilde R$ and every pair of spinors.
 
 **Physical reading.** The form is the inner product of the internal Hilbert space, and the axiom is the statement that it is the *right* inner product: with it the action of the algebra becomes a $*$-representation, so every operator of the algebra has an adjoint and the framework's linear algebra is Hilbert-space linear algebra. Without the axiom one has a vector space with an action; with it one has the operator algebra of a quantum system. The form is not an extra choice: on the irreducible module it is unique up to a positive scalar (Schur, *Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint*), so the internal inner product is canonical and the Born-rule normalisation is a choice of unit and not a choice of structure.
 
@@ -33,16 +33,16 @@ $$
 **The first trap: the interval form is not the internal form.** The form of this article is the scalar form of the dagger,
 
 $$
-(\tilde R,\tilde T)=\mathrm{Sc}(\tilde R^{\dagger}\tilde T)=\sum_{\mu=0}^{3}R_\mu^{*}T_\mu ,
+(\tilde R,\tilde T)=\mathrm{Sc}(\tilde R^{*}\tilde T)=\sum_{\mu=0}^{3}R_\mu^{*}T_\mu ,
 $$
 
 positive definite on the whole eight-dimensional real algebra. The **biquaternion norm** $N(\tilde{Q})=\sum_\mu Q_\mu^{2}$, complex and indefinite, is a different form on the same algebra, and its restriction to the material sector is the Minkowski interval (*Biquaternion Norm and Invertibility*, *The Clifford Structure of the Biquaternion Algebra*). Positivity lives on the internal space, the signature $(1,3)$ on the material space, and no statement of one form transfers to the other. Writing the interval where the inner product belongs is the error that turns the state space into a cone and the symmetry group into the Lorentz group (*Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint*).
 
-**The second trap: the naive spinor form can be isotropic, but not here.** The general theory warns that the restriction of the scalar form to a minimal left ideal can be *totally isotropic* — of Gram matrix zero — in the split signatures, so that the naive construction does not give a spinor inner product (*Hermitian Clifford Modules with Hermitian Adjoint*). In the biquaternion algebra this failure **cannot occur**: the scalar form of the dagger is positive definite, so every subspace inherits a positive definite restriction, and the standard idempotents are self-adjoint, $\tilde\Pi_1^{\dagger}=\tilde\Pi_1$, which is exactly the condition the general construction asks for. Concretely, on the ideal $S=\mathbb{C}\{\tilde\Pi_1,\tilde T\}$ the Gram matrix is $\tfrac12 I_2$ in that basis, positive definite: the spinor inner product exists and needs no correction. The framework is the resolved case, not the exceptional one.
+**The second trap: the naive spinor form can be isotropic, but not here.** The general theory warns that the restriction of the scalar form to a minimal left ideal can be *totally isotropic* — of Gram matrix zero — in the split signatures, so that the naive construction does not give a spinor inner product (*Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint*). In the biquaternion algebra this failure **cannot occur**: the scalar form of the dagger is positive definite, so every subspace inherits a positive definite restriction, and the standard idempotents are self-adjoint, $\tilde\Pi_1^{*}=\tilde\Pi_1$, which is exactly the condition the general construction asks for. Concretely, on the ideal $S=\mathbb{C}\{\tilde\Pi_1,\tilde T\}$ the Gram matrix is $\tfrac12 I_2$ in that basis, positive definite: the spinor inner product exists and needs no correction. The framework is the resolved case, not the exceptional one.
 
 ## The Spinor Module and Its Compact Symmetry
 
-**Theorem (the slice acts by unitaries).** The unitary slice $U=\{\tilde A:\tilde A^{\dagger}\tilde A=e_0\}=U(2)$ acts on the spinor module by unitary operators, $(\tilde A\cdot s,\tilde A\cdot t)=(s,t)$, so $\tilde A\mapsto\rho(\tilde A)|_S$ is a unitary representation of $U(2)$ on the internal Hilbert space.
+**Theorem (the slice acts by unitaries).** The unitary slice $U=\{\tilde A:\tilde A^{*}\tilde A=e_0\}=U(2)$ acts on the spinor module by unitary operators, $(\tilde A\cdot s,\tilde A\cdot t)=(s,t)$, so $\tilde A\mapsto\rho(\tilde A)|_S$ is a unitary representation of $U(2)$ on the internal Hilbert space.
 
 **Physical reading.** The internal symmetry group of the spinor module is the compact group $U(2)$, and it is the group of unitaries of the internal space: the internal rotations, the internal phase, and nothing else. Its Lie algebra is the material sector, $\mathbb{M}_-\cong u(2)$, whose elements are the skew-adjoint generators $e_1,e_2,e_3$ and $ie_0$; the anticommutation and commutation relations of those generators are the internal Clifford relations (*One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*).
 
@@ -78,16 +78,16 @@ The real operator $iD_S$ is self-adjoint with spectrum $\{\pm\sqrt3\}$ and ortho
 
 ## Summary
 
-The spinor module of the biquaternion algebra carries a canonical positive definite **inner product**, the scalar form of the dagger, and the algebra acts on it by a $*$-representation: the axiom $(\tilde R\cdot s,t)=(s,\tilde R^{\dagger}\cdot t)$ is equivalent to the informational sector acting by observables and the material sector by generators. The form is unique up to a positive scalar on the irreducible module, so the internal inner product is not a choice. The two traps are that the **interval form** $N$, complex and indefinite, must never be used as the internal form, and that the general warning of an *isotropic* spinor form has no instance here, because the scalar form is positive definite and the standard idempotents are self-adjoint: on the minimal left ideal the Gram matrix is $\tfrac12 I_2$. The compact group $U(2)$ acts by unitaries on the module, while the Lorentz spin group $SL(2,\mathbb{C})$ does not — only $SU(2)$ does — because the material symmetry preserves the interval and the internal symmetry preserves the inner product. The **Dirac element** $D_{\mathrm{alg}}=\sum_kL_{e_k}$ acts as $-i(\sigma_1+\sigma_2+\sigma_3)$, is skew-adjoint, has square $-3\,\mathrm{id}$ and positive Hermitian square $3\,\mathrm{id}$; the real operator $iD_{\mathrm{alg}}$ is a self-adjoint internal observable with spectrum $\{\pm\sqrt3\}$, and the module has no zero mode.
+The spinor module of the biquaternion algebra carries a canonical positive definite **inner product**, the scalar form of the dagger, and the algebra acts on it by a $*$-representation: the axiom $(\tilde R\cdot s,t)=(s,\tilde R^{*}\cdot t)$ is equivalent to the informational sector acting by observables and the material sector by generators. The form is unique up to a positive scalar on the irreducible module, so the internal inner product is not a choice. The two traps are that the **interval form** $N$, complex and indefinite, must never be used as the internal form, and that the general warning of an *isotropic* spinor form has no instance here, because the scalar form is positive definite and the standard idempotents are self-adjoint: on the minimal left ideal the Gram matrix is $\tfrac12 I_2$. The compact group $U(2)$ acts by unitaries on the module, while the Lorentz spin group $SL(2,\mathbb{C})$ does not — only $SU(2)$ does — because the material symmetry preserves the interval and the internal symmetry preserves the inner product. The **Dirac element** $D_{\mathrm{alg}}=\sum_kL_{e_k}$ acts as $-i(\sigma_1+\sigma_2+\sigma_3)$, is skew-adjoint, has square $-3\,\mathrm{id}$ and positive Hermitian square $3\,\mathrm{id}$; the real operator $iD_{\mathrm{alg}}$ is a self-adjoint internal observable with spectrum $\{\pm\sqrt3\}$, and the module has no zero mode.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $S$ | The spinor module, $\cong\mathbb{C}^2$; the internal Hilbert space |
-| $(\tilde R\cdot s,t)=(s,\tilde R^{\dagger}\cdot t)$ | The axiom; the action is a $*$-representation |
+| $(\tilde R\cdot s,t)=(s,\tilde R^{*}\cdot t)$ | The axiom; the action is a $*$-representation |
 | $\mathbb{M}_+$ self-adjoint, $\mathbb{M}_-$ skew | Observables and generators |
-| $(\tilde R,\tilde T)=\mathrm{Sc}(\tilde R^{\dagger}\tilde T)=\sum_\mu R_\mu^{*}T_\mu$ | The internal form; positive definite |
+| $(\tilde R,\tilde T)=\mathrm{Sc}(\tilde R^{*}\tilde T)=\sum_\mu R_\mu^{*}T_\mu$ | The internal form; positive definite |
 | $N(\tilde{Q})=\sum_\mu Q_\mu^{2}$ | The interval; indefinite; never the internal form |
 | Gram $=\tfrac12 I_2$ on $S=\mathbb{C}\{\tilde\Pi_1,\tilde T\}$ | The spinor inner product; not isotropic |
 | $U=U(2)$ | The internal symmetry; unitary on $S$ |

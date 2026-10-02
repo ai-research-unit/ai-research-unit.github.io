@@ -28,7 +28,7 @@ $$
 and the biquaternion norm is
 
 $$
-N(\tilde{H}) = \tilde{H}\bar{\tilde{H}} = h_0^2 - |\mathbf{h}|^2 = \det M(\tilde{H}),
+N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural} = h_0^2 - |\mathbf{h}|^2 = \det M(\tilde{H}),
 $$
 
 a real scalar. The two conditions $N(\tilde{H})\geq0$ and $h_0\geq0$ are together equivalent to $h_0\geq|\mathbf{h}|$, so the set of positive elements is the future light cone of the biquaternion norm:
@@ -134,16 +134,16 @@ A **projection-valued measure** is the special case in which every $\tilde{E}_y$
 A general measurement is specified not only by the outcome probabilities but by the state left behind. If the effect is written in a Kraus form
 
 $$
-\tilde{E}_y = \tilde{M}_y^\dagger\tilde{M}_y , \qquad \tilde{M}_y\in\mathbb{B},
+\tilde{E}_y = \tilde{M}_y^{*}\tilde{M}_y , \qquad \tilde{M}_y\in\mathbb{B},
 $$
 
-then the unnormalized post-measurement state is $\tilde{M}_y\tilde{\rho}\tilde{M}_y^\dagger$ and the normalized state is
+then the unnormalized post-measurement state is $\tilde{M}_y\tilde{\rho}\tilde{M}_y^{*}$ and the normalized state is
 
 $$
-\tilde{\rho}_y = \frac{\tilde{M}_y\tilde{\rho}\tilde{M}_y^\dagger}{\mathrm{Tr}(\tilde{M}_y\tilde{\rho}\tilde{M}_y^\dagger)} .
+\tilde{\rho}_y = \frac{\tilde{M}_y\tilde{\rho}\tilde{M}_y^{*}}{\mathrm{Tr}(\tilde{M}_y\tilde{\rho}\tilde{M}_y^{*})} .
 $$
 
-The outcome probability is $p_y = \mathrm{Tr}(\tilde{M}_y\tilde{\rho}\tilde{M}_y^\dagger) = \mathrm{Tr}(\tilde{\rho}\tilde{E}_y)$, and the resolution of the identity is $\sum_y\tilde{M}_y^\dagger\tilde{M}_y = e_0$. The measurement is therefore an **instrument**: a family of completely positive maps indexed by the outcome, one of which occurs. This is the measurement side of the channel formalism of the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy*; a measurement followed by discarding the outcome is the channel $\Phi(\tilde{\rho}) = \sum_y\tilde{M}_y\tilde{\rho}\tilde{M}_y^\dagger$.
+The outcome probability is $p_y = \mathrm{Tr}(\tilde{M}_y\tilde{\rho}\tilde{M}_y^{*}) = \mathrm{Tr}(\tilde{\rho}\tilde{E}_y)$, and the resolution of the identity is $\sum_y\tilde{M}_y^{*}\tilde{M}_y = e_0$. The measurement is therefore an **instrument**: a family of completely positive maps indexed by the outcome, one of which occurs. This is the measurement side of the channel formalism of the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy*; a measurement followed by discarding the outcome is the channel $\Phi(\tilde{\rho}) = \sum_y\tilde{M}_y\tilde{\rho}\tilde{M}_y^{*}$.
 
 ### Naimark dilation
 
@@ -208,7 +208,7 @@ Collecting the structure, a measurement in the framework is a resolution of the 
 - **Effects** are the elements of the operator interval $[0,e_0]$, i.e. the cone intersected with its reflection through $\tfrac12 e_0$; in coefficients, $|\mathbf{a}|\leq\min(a_0,1-a_0)$.
 - **POVMs** are resolutions of the identity by effects; **PVMs** are the resolutions by idempotents, i.e. by extreme effects.
 - **Probabilities** are the trace pairing $p_y = \mathrm{Tr}(\tilde{\rho}\tilde{E}_y)$, and the pairing is the one under which the cone is self-dual.
-- **Post-measurement states** are the Kraus images $\tilde{M}_y\tilde{\rho}\tilde{M}_y^\dagger$, normalized.
+- **Post-measurement states** are the Kraus images $\tilde{M}_y\tilde{\rho}\tilde{M}_y^{*}$, normalized.
 
 The general measurement is a convex decomposition of the identity into effects that are not extreme. The idempotents remain the extreme effects, and the projective measurement remains the extreme case; what the general measurement adds is the ability to have more outcomes than the dimension of the module, which is exactly what is needed for tasks such as state discrimination with more than two candidate states.
 
@@ -258,7 +258,7 @@ and the cone is self-dual with respect to the trace pairing, $\mathrm{Tr}(\tilde
 | $\mathbb{M}_+$ | Hermitian subspace (states and effects) |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion units, $e_k^2 = -e_0$ |
 | $i$ | Central scalar imaginary |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $C_+ = \{h_0e_0+i\mathbf{h}: h_0\ge|\mathbf{h}|\}$ | Positive cone (future light cone of $N$) |
 | $C_+^{*} = C_+$ | Self-duality under the trace pairing |
 | $\mathrm{Tr}(\tilde{H}\tilde{E}) = 2(h_0a_0+\mathbf{h}\cdot\mathbf{a})$ | Trace pairing |
@@ -267,8 +267,8 @@ and the cone is self-dual with respect to the trace pairing, $\mathrm{Tr}(\tilde
 | $\mathrm{ext}[0,e_0] = \{\text{idempotents}\}$ | Extreme effects |
 | $\{\tilde{E}_y\}$, $\tilde{E}_y\ge0$, $\sum_y\tilde{E}_y = e_0$ | POVM |
 | $p_y = \mathrm{Tr}(\tilde{\rho}\tilde{E}_y)$ | Born rule for a POVM |
-| $\tilde{E}_y = \tilde{M}_y^\dagger\tilde{M}_y$ | Kraus form of an effect |
-| $\tilde{\rho}_y = \tilde{M}_y\tilde{\rho}\tilde{M}_y^\dagger/p_y$ | Post-measurement state |
+| $\tilde{E}_y = \tilde{M}_y^{*}\tilde{M}_y$ | Kraus form of an effect |
+| $\tilde{\rho}_y = \tilde{M}_y\tilde{\rho}\tilde{M}_y^{*}/p_y$ | Post-measurement state |
 | $\tilde{E}_y = V^\dagger\tilde{F}_yV$ | Naimark dilation |
 | $\tilde{E}_k = \tfrac23\tilde\Pi_+(\hat{n}_k)$ | Trine POVM |
 

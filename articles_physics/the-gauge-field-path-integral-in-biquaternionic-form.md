@@ -13,7 +13,7 @@ The companion article *Canonical Quantization of the Biquaternion Maxwell Field*
 - Companion article *The Path Integral in Biquaternionic Form*, for the sum-over-paths framework of the series.
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the gauge transformation, the gauge scalar, and the covariant derivative.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The gauge potential is the material four-vector $\tilde{A}=iA_0e_0+\mathbf{A}\in\mathbb{M}_-$, the field strength is $\tilde{F}=\bar{\tilde{\nabla}}\tilde{A}-\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{A})$, the d'Alembertian is $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$, and the gauge scalar is $S=\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{A})$. The Lagrangian is $\mathcal{L}=-\tfrac14F_{\mu\nu}F^{\mu\nu}=-\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde{F}\bar{\tilde{F}})$, with $\tilde{F}$ the field-strength biquaternion of the Maxwell companion, the series metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the series momentum invariant is $p^2=\omega^2-\mathbf{p}^2$, so that $p_\mu p^\mu=-p^2$ and $p_\mu p^\mu=-\mu^2$ is the mass shell, and natural units $\hbar=c=1$ are used for the integral. The integral is over $\tilde{A}$-configurations, the measure being written $\mathcal{D}\tilde{A}$; in components it is the fourfold product of measures for $A_0,A_1,A_2,A_3$. The gauge coupling is $g$ and, where a non-abelian structure is indicated, its generators are realized in $\mathbb{M}_+$ as in the BRST construction.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The gauge potential is the material four-vector $\tilde{A}=iA_0e_0+\mathbf{A}\in\mathbb{M}_-$, the field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, the d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$, and the gauge scalar is $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. The Lagrangian is $\mathcal{L}=-\tfrac14F_{\mu\nu}F^{\mu\nu}=-\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde{F}\tilde{F}^{\natural})$, with $\tilde{F}$ the field-strength biquaternion of the Maxwell companion, the series metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the series momentum invariant is $p^2=\omega^2-\mathbf{p}^2$, so that $p_\mu p^\mu=-p^2$ and $p_\mu p^\mu=-\mu^2$ is the mass shell, and natural units $\hbar=c=1$ are used for the integral. The integral is over $\tilde{A}$-configurations, the measure being written $\mathcal{D}\tilde{A}$; in components it is the fourfold product of measures for $A_0,A_1,A_2,A_3$. The gauge coupling is $g$ and, where a non-abelian structure is indicated, its generators are realized in $\mathbb{M}_+$ as in the BRST construction.
 
 ## The Functional Integral for a Gauge Field
 
@@ -25,7 +25,7 @@ $$
 Z = \int\mathcal{D}\tilde{A}\;e^{iS[\tilde{A}]},
 \qquad
 S[\tilde{A}] = \int d^4x\left(-\tfrac14F_{\mu\nu}F^{\mu\nu}\right)
-= -\tfrac12\int d^4x\;\mathrm{Re}\,\mathrm{Sc}\!\left(\tilde{F}\bar{\tilde{F}}\right),
+= -\tfrac12\int d^4x\;\mathrm{Re}\,\mathrm{Sc}\!\left(\tilde{F}\tilde{F}^{\natural}\right),
 $$
 
 the second form being the bilinear writing of the companion article. The action depends on $\tilde{A}$ only through $\tilde{F}$, and $\tilde{F}$ is invariant under the gauge transformation
@@ -99,7 +99,7 @@ $$
 = \det\left(-\Box\right),
 $$
 
-up to a sign convention. This is **independent of $\tilde{A}$**: it is a constant functional, built from the central scalar d'Alembertian, and it can be absorbed into the normalization of the integral. For the abelian gauge field there are therefore no ghost fields in the path integral: the determinant is a constant, and the gauge-fixing delta functional is all that survives. The result is the biquaternion statement that the Faddeev–Popov determinant of the Maxwell field is a power of the central scalar operator $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}$, and that its only biquaternionic content is the centrality of that operator.
+up to a sign convention. This is **independent of $\tilde{A}$**: it is a constant functional, built from the central scalar d'Alembertian, and it can be absorbed into the normalization of the integral. For the abelian gauge field there are therefore no ghost fields in the path integral: the determinant is a constant, and the gauge-fixing delta functional is all that survives. The result is the biquaternion statement that the Faddeev–Popov determinant of the Maxwell field is a power of the central scalar operator $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$, and that its only biquaternionic content is the centrality of that operator.
 
 The delta functional is represented by introducing the Nakanishi–Lautrup field $B$ and writing
 
@@ -245,7 +245,7 @@ Second, the Faddeev–Popov determinant is a functional of the potential that is
 
 Third, the ghosts that represent the non-abelian determinant are Grassmann-odd, and the algebra has no odd elements; they live in the Grassmann envelope of the BRST construction. The path integral over the gauge field alone is an integral over $\mathbb{M}_-$-valued configurations, but the full gauge-fixed integral is over the envelope.
 
-The gauge-fixing condition itself has a natural biquaternionic form. The gauge scalar $S=\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{A})$ is what a gauge transformation shifts, $S\mapsto S-\Box\Gamma$, and the covariant condition $\partial_\mu A^\mu=0$ is the statement that this scalar vanishes. A gauge choice is therefore a choice of value for the scalar part of $\bar{\tilde{\nabla}}\tilde{A}$ at each point, and the delta functional $\delta(\partial_\mu A^\mu-\omega)$ is a delta on that scalar. The canonical companion arrives at the same condition as a constraint — the Gauss law, which is first class and generates the gauge transformations — and the path-integral route arrives at it as a gauge-fixing function; the two are the same scalar, and the choice of gauge is the choice of its value.
+The gauge-fixing condition itself has a natural biquaternionic form. The gauge scalar $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ is what a gauge transformation shifts, $S\mapsto S-\Box\Gamma$, and the covariant condition $\partial_\mu A^\mu=0$ is the statement that this scalar vanishes. A gauge choice is therefore a choice of value for the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ at each point, and the delta functional $\delta(\partial_\mu A^\mu-\omega)$ is a delta on that scalar. The canonical companion arrives at the same condition as a constraint — the Gauss law, which is first class and generates the gauge transformations — and the path-integral route arrives at it as a gauge-fixing function; the two are the same scalar, and the choice of gauge is the choice of its value.
 
 ## What the Algebra Supplies and What It Imports
 
@@ -261,7 +261,7 @@ The gauge-fixing condition itself has a natural biquaternionic form. The gauge s
 
 2. **The abelian determinant as a central operator.** For the Maxwell field the Faddeev–Popov determinant is $\det(-\Box)$, a power of a central scalar. Is there a sense in which the whole abelian gauge-fixing problem is the statement that $\Box$ is central, so that the gauge-fixing delta functional and the determinant are the only objects the algebra produces without extra input?
 
-3. **The gauge-fixing condition as a scalar part.** The natural gauge-fixing function is $G[\tilde{A}]=S=\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{A})$, the gauge scalar. Choosing a gauge is choosing a value for the scalar part of $\bar{\tilde{\nabla}}\tilde{A}$. Is there a biquaternionic characterization of the gauges that are algebraically natural, and do they include the Lorentz-covariant gauges?
+3. **The gauge-fixing condition as a scalar part.** The natural gauge-fixing function is $G[\tilde{A}]=S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, the gauge scalar. Choosing a gauge is choosing a value for the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$. Is there a biquaternionic characterization of the gauges that are algebraically natural, and do they include the Lorentz-covariant gauges?
 
 4. **The origin of the gauge parameter.** The gauge parameter multiplies the longitudinal projector and cancels in physical amplitudes. Is there an algebraic statement of the cancellation — an identity in the algebra's bilinear form — that does not require the external currents to be conserved?
 
@@ -282,7 +282,7 @@ The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator 
 | Symbol | Meaning |
 |---|---|
 | $\mathcal{D}\tilde{A}$ | Measure on $\mathbb{M}_-$-valued configurations; $\mathcal{D}A_0\,\mathcal{D}\mathbf{A}$ in components |
-| $S[\tilde{A}]=\int d^4x\,(-\tfrac14F_{\mu\nu}F^{\mu\nu})=-\tfrac12\int\mathrm{Re}\,\mathrm{Sc}(\tilde{F}\bar{\tilde{F}})$ | Gauge-field action, component and bilinear forms |
+| $S[\tilde{A}]=\int d^4x\,(-\tfrac14F_{\mu\nu}F^{\mu\nu})=-\tfrac12\int\mathrm{Re}\,\mathrm{Sc}(\tilde{F}\tilde{F}^{\natural})$ | Gauge-field action, component and bilinear forms |
 | $\tilde{A}^\Gamma=\tilde{A}-\tilde{\nabla}\Gamma$, $S[\tilde{A}^\Gamma]=S[\tilde{A}]$ | Gauge transformation and invariance of the action |
 | $\mathrm{Vol}(\mathcal{G})$ | Infinite gauge-group volume; the pathology of the naive integral |
 | $G[\tilde{A}]=\partial_\mu A^\mu-\omega$ | Gauge-fixing condition |

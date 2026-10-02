@@ -100,7 +100,7 @@ The interaction kept is the **rotating-wave** term: the mode annihilates a photo
 Restrict to the manifold with one excitation, spanned by the states $|1,\text{all down}\rangle$ (one photon, no excited spin) and $|0,\text{one excited}\rangle$ (no photon, one spin excited, in the symmetric combination). On resonance $\omega_a = \omega_c = \omega$ the two states are degenerate at energy $\hbar\omega(1-N/2)$, and the interaction couples them with the matrix element
 
 $$
-\langle 1,\text{all down}|g\,a\,\tilde{J}_+^{\vphantom\dagger}|0,\text{one excited}\rangle = \hbar g\sqrt{N},
+\langle 1,\text{all down}|g\,a\,\tilde{J}_+^{\vphantom{}^{*}}|0,\text{one excited}\rangle = \hbar g\sqrt{N},
 $$
 
 because $\tilde{J}_+|j,-j\rangle = \hbar\sqrt{N}\,|j,-j+1\rangle$ with $j = N/2$. The two eigenvalues are therefore separated by

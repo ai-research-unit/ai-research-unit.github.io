@@ -18,7 +18,7 @@ The companion article *The Klein–Gordon Equation in Biquaternionic Form* reach
 
 The article is organized as follows. The state module and the representation it carries are recalled first, together with the fact that its elements are zero divisors. Then the center is characterized, by the centralizer computation that fixes it as the rotationally invariant subspace. Then the three obstructions are stated and proved. Then the sector question is settled. Then the scalar field and its Klein–Gordon equation are written in the center. A final section records the composite route, in which a scalar is built as a bilinear in the module rather than as an element of it, which is how scalar fields actually arise in the standard model.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, and $i$ is the central scalar imaginary with $i^2=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector), and $\mathbb{H}_{\mathbb{B}}$ (real quaternions, the fixed points of complex conjugation); the center is $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$. The conjugations are $\bar{\cdot}$ (quaternion), ${}^*$ (complex), ${}^\dagger=\bar{\cdot}^{\,*}$ (Hermitian) and ${}^\flat=-\dagger$ (anti-Hermitian). The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$, with $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\bar{\tilde{\nabla}}\tilde{\nabla}=\partial_{ict}^2+\Delta$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, and $i$ is the central scalar imaginary with $i^2=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector), and $\mathbb{H}_{\mathbb{B}}$ (real quaternions, the fixed points of complex conjugation); the center is $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat=-{}^{*}$ (anti-Hermitian). The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$, with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial_{ict}^2+\Delta$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the scalar equation, its mass-term sign, and the sector analysis that this article explains.
 - Companion article *The Schrödinger Equation in Biquaternionic Form*, for the state module and the central Hamiltonian.
@@ -68,7 +68,7 @@ The Lorentz group acts on the state module by left multiplication,
 $$
 \tilde{\psi}\;\longmapsto\;\tilde{\Lambda}\tilde{\psi},
 \qquad
-\tilde{\Lambda}\in SL(2,\mathbb{C})=\{\tilde{\Lambda}\in\mathbb{B}:\tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0\},
+\tilde{\Lambda}\in SL(2,\mathbb{C})=\{\tilde{\Lambda}\in\mathbb{B}:\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0\},
 $$
 
 and the representation so obtained is the defining two-dimensional representation of $SL(2,\mathbb{C})$, the **spin-$\tfrac{1}{2}$** representation. The representation-theoretic content of the module is the content of $S=\mathbb{C}^2$ as a module over $M_2(\mathbb{C})$; its restriction to the rotation subgroup can be read off from the Lie algebra action.
@@ -101,12 +101,12 @@ Since $\tfrac{3}{4}=j(j+1)$ gives $j=\tfrac{1}{2}$, the state module carries **s
 There is a second way to see the same content, and it is the one that makes the contrast with the scalar sharp. The idempotent $\tilde\Pi(\hat{\mu})$ is built from a **direction** $\hat{\mu}$, and a rotation moves that direction. Conjugating by a unit real quaternion $\tilde{R}$,
 
 $$
-\tilde{R}\,\tilde\Pi(\hat{\mu})\,\tilde{R}^\dagger
-=\tfrac{1}{2}\left(e_0+i\,\tilde{R}\hat{\mu}\tilde{R}^\dagger\right)
+\tilde{R}\,\tilde\Pi(\hat{\mu})\,\tilde{R}^{*}
+=\tfrac{1}{2}\left(e_0+i\,\tilde{R}\hat{\mu}\tilde{R}^{*}\right)
 =\tilde\Pi(\hat{\mu}'),
 $$
 
-where $\hat{\mu}'=\tilde{R}\hat{\mu}\tilde{R}^\dagger$ is the rotated unit pure quaternion. Rotations about the axis $\hat{\mu}$ leave $\tilde{P}$ fixed; rotations about other axes do not. The orbit of the idempotent is therefore the two-sphere of unit pure quaternions, and its stabilizer is the $U(1)$ subgroup of rotations about $\hat{\mu}$. This was verified numerically: a rotor of angle $1.1$ about the normalized axis $(0.3,-0.7,0.5)$ sends $\tilde\Pi(e_3)=\tfrac{1}{2}(e_0+ie_3)$ to $\tilde\Pi(\hat{\mu}')$ with $\hat{\mu}'=(-0.586,-0.524,0.618)$, a unit vector, while a rotation about $e_3$ fixes $\tilde\Pi(e_3)$ identically. A module that is carried by an idempotent with an axis is, in this concrete sense, not rotationally invariant: its very definition singles out a direction.
+where $\hat{\mu}'=\tilde{R}\hat{\mu}\tilde{R}^{*}$ is the rotated unit pure quaternion. Rotations about the axis $\hat{\mu}$ leave $\tilde{P}$ fixed; rotations about other axes do not. The orbit of the idempotent is therefore the two-sphere of unit pure quaternions, and its stabilizer is the $U(1)$ subgroup of rotations about $\hat{\mu}$. This was verified numerically: a rotor of angle $1.1$ about the normalized axis $(0.3,-0.7,0.5)$ sends $\tilde\Pi(e_3)=\tfrac{1}{2}(e_0+ie_3)$ to $\tilde\Pi(\hat{\mu}')$ with $\hat{\mu}'=(-0.586,-0.524,0.618)$, a unit vector, while a rotation about $e_3$ fixes $\tilde\Pi(e_3)$ identically. A module that is carried by an idempotent with an axis is, in this concrete sense, not rotationally invariant: its very definition singles out a direction.
 
 A scalar field is exactly the opposite. It has no axis, and no rotation may move it. The remainder of the article makes that requirement precise inside the algebra and identifies the unique subspace that satisfies it.
 
@@ -179,7 +179,7 @@ The state module is not an exception within a richer family of modules; it is, u
 
 If one insists on locating the scalar inside the algebra rather than inside a module, the centralizer computation settles where. Under the rotation subgroup the algebra decomposes as spin $0$ (the center) plus spin $1$ (the traceless part); under the conjugation action there is no nonzero element invariant under the full Lorentz group, since the conjugation action on $\mathbb{B}$ is the irreducible complexified four-vector representation. The only rotationally invariant elements are central. A scalar field, being invariant under rotations, must therefore take its values in $\mathbb{C}_{\mathbb{B}}$, and there is nothing else it could take them in.
 
-It is worth stating plainly how the scalar relates to the rotor-conjugation action that carries the material sector. The four-vectors of $\mathbb{M}_-$ transform as $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, which is the four-vector representation; under rotations it splits into the time component (spin $0$) and the spatial vector (spin $1$). The scalar field does not transform by this rule at all. Its Lorentz transformation is the transformation of its argument, $\tilde{\Phi}'(x')=\tilde{\Phi}(x)$, with no algebraic factor acting on the value. The absence of an algebraic action is the field-theoretic statement of spin $0$, and the center is the value space in which that absence is natural.
+It is worth stating plainly how the scalar relates to the rotor-conjugation action that carries the material sector. The four-vectors of $\mathbb{M}_-$ transform as $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, which is the four-vector representation; under rotations it splits into the time component (spin $0$) and the spatial vector (spin $1$). The scalar field does not transform by this rule at all. Its Lorentz transformation is the transformation of its argument, $\tilde{\Phi}'(x')=\tilde{\Phi}(x)$, with no algebraic factor acting on the value. The absence of an algebraic action is the field-theoretic statement of spin $0$, and the center is the value space in which that absence is natural.
 
 ### The Trivial Representation Lives in the Tensor Square
 
@@ -194,7 +194,7 @@ $$
 under the rotation subgroup, where the trivial piece is the scalar channel. The trivial representation appears here, in the **bilinear** combination of two spinors, not as a submodule of either factor; the decomposition, however, is a statement about the rotation subgroup only, because under the full Lorentz group $S\otimes\bar{S}=(\tfrac{1}{2},\tfrac{1}{2})$ is irreducible and contains no invariant, and the Lorentz scalars come instead from the antisymmetric square $\Lambda^2 S$ (the symplectic contraction $\varepsilon$) and from the mixed left-right pairing $b$. A scalar is therefore not an element of the state module but a scalar-valued pairing of two module elements. The bilinear
 
 $$
-\tilde{\rho}=\tilde{\psi}\tilde{\chi}^\dagger\in\mathbb{M}_+
+\tilde{\rho}=\tilde{\psi}\tilde{\chi}^{*}\in\mathbb{M}_+
 $$
 
 is the four-vector channel; it is Hermitian, and its diagonal case $\tilde{\chi}=\tilde{\psi}$ gives the positive element whose trace is the conventional density.
@@ -226,10 +226,10 @@ and the sector decomposition of a scalar field is nothing other than the decompo
 The operations that act on that complex number must be kept distinct, and the same distinction settles the sector question completely.
 
 - **Multiplication by $i$** is central and exchanges the sectors, $i\mathbb{M}_+=\mathbb{M}_-$, $i\mathbb{M}_-=\mathbb{M}_+$. On a scalar it maps $\phi_1e_0+\phi_2ie_0$ to $-\phi_2e_0+\phi_1ie_0$: it is a quarter-turn of the complex scalar line, exchanging its two real directions.
-- **Complex conjugation ${}^*$** acts on the coefficients and preserves each sector. On a scalar it maps $\phi_1e_0+\phi_2ie_0$ to $\phi_1e_0-\phi_2ie_0$: it is reflection of the complex line, and it is the operation that produces the second solution of the second-order equation, $\tilde{\Phi}^*$.
-- **Hermitian conjugation ${}^\dagger$** is the involution whose eigenspaces define the sectors; it is neither of the other two, and on the center it agrees with ${}^*$.
+- **Complex conjugation $\bar{\cdot}$** acts on the coefficients and preserves each sector. On a scalar it maps $\phi_1e_0+\phi_2ie_0$ to $\phi_1e_0-\phi_2ie_0$: it is reflection of the complex line, and it is the operation that produces the second solution of the second-order equation, $\tilde{\Phi}^*$.
+- **Hermitian conjugation ${}^{*}$** is the involution whose eigenspaces define the sectors; it is neither of the other two, and on the center it agrees with $\bar{\cdot}$.
 
-These are three different maps with three different actions on the scalar line. The sector-exchanging map $i$ is not the conjugate-producing map ${}^*$, and reading the Klein–Gordon conjugate pair $(\tilde{\Phi},\tilde{\Phi}^*)$ as the sector pair $(\mathbb{M}_-,\mathbb{M}_+)$ is precisely the conflation the companion article warns against. The center makes the distinction visible: complex conjugation has real fixed points in the center, the direction $e_0$; multiplication by $i$ has none.
+These are three different maps with three different actions on the scalar line. The sector-exchanging map $i$ is not the conjugate-producing map $\bar{\cdot}$, and reading the Klein–Gordon conjugate pair $(\tilde{\Phi},\tilde{\Phi}^*)$ as the sector pair $(\mathbb{M}_-,\mathbb{M}_+)$ is precisely the conflation the companion article warns against. The center makes the distinction visible: complex conjugation has real fixed points in the center, the direction $e_0$; multiplication by $i$ has none.
 
 ## The Scalar Field in the Center
 
@@ -246,7 +246,7 @@ and it obeys the Klein–Gordon equation in the form of the companion article,
 $$
 \left(\Box-\frac{m^2c^2}{\hbar^2}\right)\tilde{\Phi}=0,
 \qquad
-\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta
+\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta
 =-\frac{1}{c^2}\partial_t^2+\Delta .
 $$
 
@@ -266,44 +266,44 @@ $$
 \tilde{Q}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-,
 $$
 
-the phase is the scalar part $\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})=\mathbf{k}\cdot\mathbf{x}-\omega t$, a real central element, and the positive-frequency solution is
+the phase is the scalar part $\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})=\mathbf{k}\cdot\mathbf{x}-\omega t$, a real central element, and the positive-frequency solution is
 
 $$
-\tilde{\Phi}=\phi_0\,e^{\,i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})}\,e_0
+\tilde{\Phi}=\phi_0\,e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})}\,e_0
 =\phi_0\,e^{\,i(\mathbf{k}\cdot\mathbf{x}-\omega t)}\,e_0 .
 $$
 
 The exponential is central. The mass-shell condition is the biquaternion norm of the four-wavevector fixed to a negative constant,
 
 $$
-N(\tilde{K})=\tilde{K}\bar{\tilde{K}}=-\frac{\omega^2}{c^2}+\mathbf{k}^2=-\frac{m^2c^2}{\hbar^2}
+N(\tilde{K})=\tilde{K}\tilde{K}^{\natural}=-\frac{\omega^2}{c^2}+\mathbf{k}^2=-\frac{m^2c^2}{\hbar^2}
 \quad\Longleftrightarrow\quad
 \omega^2=c^2\mathbf{k}^2+\frac{m^2c^4}{\hbar^2} ,
 $$
 
 which is the standard relativistic dispersion relation and is reproduced here only to record that the scalar field's entire algebraic content is the biquaternion norm of a four-vector, not a module structure. The conserved current $\tilde{J}=ic\rho\,e_0+\mathbf{j}$ lies in $\mathbb{M}_-$, its scalar component being the imaginary scalar direction, exactly as for the four-current of relativistic mechanics.
 
-One structural remark belongs with the equation. The first-order operators of the framework, $\tilde{\nabla}$ and the module action by $\tilde{\Lambda}$, are module-theoretic or vectorial: they act on spinors or on four-vectors and change their representation content. The scalar field has neither. The only operator the scalar equation uses is the central scalar $\Box$, whose square-root structure — the spinor factorisation $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}$ — is a statement about the *operator*, not about the field it acts on. A scalar field is annihilated by a composite of spinor operators without ever being a spinor; it is the algebra's trivial representation appearing in the composition, not a state in the module.
+One structural remark belongs with the equation. The first-order operators of the framework, $\tilde{\nabla}$ and the module action by $\tilde{\Lambda}$, are module-theoretic or vectorial: they act on spinors or on four-vectors and change their representation content. The scalar field has neither. The only operator the scalar equation uses is the central scalar $\Box$, whose square-root structure — the spinor factorisation $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ — is a statement about the *operator*, not about the field it acts on. A scalar field is annihilated by a composite of spinor operators without ever being a spinor; it is the algebra's trivial representation appearing in the composition, not a state in the module.
 
 ## Scalars from the Module: The Composite Route
 
 The three obstructions above say that a scalar is not an element of the state module. They do not say that the state module is irrelevant to scalar physics, and it is worth recording how scalars actually appear in the standard model, because the framework reproduces the mechanism.
 
-A Lorentz-invariant scalar built from module elements is a **bilinear**, but not every bilinear is one. If $\tilde{\psi},\tilde{\chi}$ are spinors in the state module, then $\tilde{\psi}\tilde{\chi}^\dagger$ is a Hermitian element, and its scalar part,
+A Lorentz-invariant scalar built from module elements is a **bilinear**, but not every bilinear is one. If $\tilde{\psi},\tilde{\chi}$ are spinors in the state module, then $\tilde{\psi}\tilde{\chi}^{*}$ is a Hermitian element, and its scalar part,
 
 $$
-\sigma=\mathrm{Sc}\!\left(\tilde{\psi}\tilde{\chi}^\dagger\right)=\tfrac{1}{2}\mathrm{Tr}\!\left(\tilde{\psi}\tilde{\chi}^\dagger\right),
+\sigma=\mathrm{Sc}\!\left(\tilde{\psi}\tilde{\chi}^{*}\right)=\tfrac{1}{2}\mathrm{Tr}\!\left(\tilde{\psi}\tilde{\chi}^{*}\right),
 $$
 
 is a complex number. Under a Lorentz transformation the module transforms by left multiplication, $\tilde{\psi}\mapsto\tilde{\Lambda}\tilde{\psi}$ and $\tilde{\chi}\mapsto\tilde{\Lambda}\tilde{\chi}$, so
 
 $$
-\tilde{\psi}\tilde{\chi}^\dagger
+\tilde{\psi}\tilde{\chi}^{*}
 \;\longmapsto\;
-\tilde{\Lambda}\,\tilde{\psi}\tilde{\chi}^\dagger\,\tilde{\Lambda}^\dagger ,
+\tilde{\Lambda}\,\tilde{\psi}\tilde{\chi}^{*}\,\tilde{\Lambda}^{*} ,
 $$
 
-which is the conjugation action on $\mathbb{M}_+$, the four-vector channel. Its scalar part is invariant under the rotation subgroup, where $\tilde{\Lambda}^\dagger=\tilde{\Lambda}^{-1}$, but **not** under boosts, where $\tilde{\Lambda}^\dagger\tilde{\Lambda}\neq e_0$. The object $\tilde{\psi}\tilde{\chi}^\dagger$ is therefore a four-vector and $\sigma$ is its time component, not a Lorentz scalar; this is the algebraic form of the standard statement that $\psi^\dagger\psi$ is the time component of the four-current $\bar{\psi}\gamma^\mu\psi$, not an invariant. A numerical check on a generic pair gives the expected behaviour: at rapidity $1.3$ the boost changes $\sigma$ by $1.36$, while a rotation leaves it unchanged to $10^{-9}$.
+which is the conjugation action on $\mathbb{M}_+$, the four-vector channel. Its scalar part is invariant under the rotation subgroup, where $\tilde{\Lambda}^{*}=\tilde{\Lambda}^{-1}$, but **not** under boosts, where $\tilde{\Lambda}^{*}\tilde{\Lambda}\neq e_0$. The object $\tilde{\psi}\tilde{\chi}^{*}$ is therefore a four-vector and $\sigma$ is its time component, not a Lorentz scalar; this is the algebraic form of the standard statement that $\psi^\dagger\psi$ is the time component of the four-current $\bar{\psi}\gamma^\mu\psi$, not an invariant. A numerical check on a generic pair gives the expected behaviour: at rapidity $1.3$ the boost changes $\sigma$ by $1.36$, while a rotation leaves it unchanged to $10^{-9}$.
 
 The Lorentz-invariant scalars are instead the two pairings developed in the companion article on the spinor module. The **symplectic pairing** of two spinors of the same chirality,
 
@@ -316,14 +316,14 @@ $$
 is invariant because $\tilde{\Lambda}^{T}\epsilon\,\tilde{\Lambda}=\epsilon$, which holds since $\det\tilde{\Lambda}=1$. The **mixed pairing** of a spinor with one in the conjugate module,
 
 $$
-b(\tilde{\psi},\tilde{\chi})=\tilde{\psi}^{\dagger}\tilde{\chi},
+b(\tilde{\psi},\tilde{\chi})=\tilde{\psi}^{*}\tilde{\chi},
 \qquad
 \tilde{\psi}\mapsto\tilde{\Lambda}\tilde{\psi},
 \qquad
 \tilde{\chi}\mapsto\Phi(\tilde{\Lambda}^{*})\tilde{\chi},
 $$
 
-is invariant because $\tilde{\Lambda}^\dagger\tilde{\Lambda}^{*}=e_0$. These are the two scalar channels of the module: $\varepsilon$ is the antisymmetric contraction of two same-chirality spinors, and $b$ is the Dirac scalar, which pairs the two chiral halves. Both take their values in the center; the Hermitian pairing, by contrast, gives the four-vector channel just described. This is the algebraic form of the standard statements that $\bar{\psi}\psi$ is a Lorentz scalar while $\psi^\dagger\psi$ is not, that a fermion condensate can break a symmetry, and that the Higgs field, being a scalar, couples to fermions through precisely such bilinears. The scalar does not live in the module; it is a *pairing of two module elements*, and the pairing takes its values in the center.
+is invariant because $\tilde{\Lambda}^{*}\tilde{\Lambda}^{*}=e_0$. These are the two scalar channels of the module: $\varepsilon$ is the antisymmetric contraction of two same-chirality spinors, and $b$ is the Dirac scalar, which pairs the two chiral halves. Both take their values in the center; the Hermitian pairing, by contrast, gives the four-vector channel just described. This is the algebraic form of the standard statements that $\bar{\psi}\psi$ is a Lorentz scalar while $\psi^\dagger\psi$ is not, that a fermion condensate can break a symmetry, and that the Higgs field, being a scalar, couples to fermions through precisely such bilinears. The scalar does not live in the module; it is a *pairing of two module elements*, and the pairing takes its values in the center.
 
 The distinction between the two routes is the distinction the title names. A field that is *in* the state module is a spinor, and it carries spin $\tfrac{1}{2}$ whether or not it is a solution of any particular equation. A field that is *built from* the state module can be a scalar, and it lives in the center. The Klein–Gordon field is of the second kind: it is the trivial sector of the module's tensor square promoted to an independent field, which is why its equation is second order, why it decouples from the module's first-order structure, and why the material/informational split applies to it only as the real/imaginary split of one complex number.
 
@@ -337,7 +337,7 @@ The distinction between the two routes is the distinction the title names. A fie
 
 4. **The relation to the informational reading.** The center is the intersection of the scalar field's value space with neither sector as a whole, but with one real direction in each. This suggests that the material/informational dichotomy, at least for the scalar, is a real/complex pair rather than a state/operator pair. Whether the informational reading of $\mathbb{M}_+$ survives the scalar case intact, or must be restricted to the non-scalar sectors, is a question for the informational articles.
 
-5. **Composite scalars and the trace formula.** The bilinear route uses the trace pairing $\mathrm{Tr}(\tilde{\psi}\tilde{\chi}^\dagger)=2\,\mathrm{Sc}(\tilde{\psi}\tilde{\chi}^\dagger)$. The symplectic pairing $\varepsilon$ and the mixed pairing $b$ supply the Lorentz-scalar channels, while the Hermitian pairing $\tilde{\psi}\tilde{\chi}^\dagger$ supplies the four-vector channel; whether every scalar-valued functional of the module reduces to these two is not settled here.
+5. **Composite scalars and the trace formula.** The bilinear route uses the trace pairing $\mathrm{Tr}(\tilde{\psi}\tilde{\chi}^{*})=2\,\mathrm{Sc}(\tilde{\psi}\tilde{\chi}^{*})$. The symplectic pairing $\varepsilon$ and the mixed pairing $b$ supply the Lorentz-scalar channels, while the Hermitian pairing $\tilde{\psi}\tilde{\chi}^{*}$ supplies the four-vector channel; whether every scalar-valued functional of the module reduces to these two is not settled here.
 
 6. **Why the algebra admits only spin $0$ and one-half.** The module carries spin $\tfrac{1}{2}$ and the algebra under rotations carries spin $0$ and $1$; there is no simple module of higher spin. The general question — which spins the biquaternion algebra admits as elementary representations — is the subject of a separate article in the series and is not answered here.
 
@@ -356,24 +356,24 @@ For the sector split, the center meets each sector in one real direction: the re
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $\bar{\cdot},\,{}^*,\,{}^\dagger=\bar{\cdot}^{\,*},\,{}^\flat=-\dagger$ | Quaternion, complex, Hermitian, anti-Hermitian conjugation |
+| ${}^{\natural},\,\bar{\cdot},\,{}^{*}=({}^{\natural})^{\,*},\,{}^\flat=-{}^{*}$ | Quaternion, complex, Hermitian, anti-Hermitian conjugation |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) sectors |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, fixed points of ${}^*$ |
+| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, fixed points of $\bar{\cdot}$ |
 | $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$ | Center of $\mathbb{B}$; the scalar field's value space |
 | $\tilde\Pi(\hat{\mu})=\tfrac{1}{2}(e_0+i\hat{\mu})$ | Primitive Hermitian idempotent, $\hat{\mu}$ a unit pure real quaternion |
 | $\mathbb{B}\tilde{P}\cong\mathbb{C}^2$ | State module (minimal left ideal) |
 | $\tilde{\psi}$ | Spinor, an element of the state module |
 | $J_k=\tfrac{i}{2}e_k$ | Rotation generators; $J_1^2+J_2^2+J_3^2=\tfrac{3}{4}e_0$ on the module |
-| $SL(2,\mathbb{C})=\{\tilde{\Lambda}:\tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0\}$ | Unit-norm biquaternions; Lorentz group |
+| $SL(2,\mathbb{C})=\{\tilde{\Lambda}:\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0\}$ | Unit-norm biquaternions; Lorentz group |
 | $\tilde{Q}=ict\,e_0+\mathbf{x}$ | Four-position biquaternion, $\in\mathbb{M}_-$ |
 | $\tilde{K}=i\omega/c\,e_0+\mathbf{k}$ | Four-wavevector, $\in\mathbb{M}_-$ |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
+| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$ | Biquaternionic gradient |
-| $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$ | d'Alembertian, central and scalar |
+| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$ | d'Alembertian, central and scalar |
 | $\tilde{\Phi}=\phi e_0$ | Scalar (spin-$0$) field, valued in the center |
-| $\sigma=\mathrm{Sc}(\tilde{\psi}\tilde{\chi}^\dagger)$ | Scalar part of the module bilinear; a four-vector component, not a Lorentz scalar |
+| $\sigma=\mathrm{Sc}(\tilde{\psi}\tilde{\chi}^{*})$ | Scalar part of the module bilinear; a four-vector component, not a Lorentz scalar |
 | $\varepsilon(\tilde{\psi},\tilde{\chi})=\tilde{\psi}^{T}\epsilon\tilde{\chi}$ | Symplectic pairing; Lorentz scalar of two same-chirality spinors |
-| $b(\tilde{\psi},\tilde{\chi})=\tilde{\psi}^{\dagger}\tilde{\chi}$ | Mixed pairing; Dirac scalar of a left–right spinor pair |
+| $b(\tilde{\psi},\tilde{\chi})=\tilde{\psi}^{*}\tilde{\chi}$ | Mixed pairing; Dirac scalar of a left–right spinor pair |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 

@@ -23,7 +23,7 @@ with $\varepsilon_x=(-1)^{|x|}$ the parity sign and $\sigma$ the involution of t
 
 The theory of versors, of the Lipschitz group, of the rotor group and of the double cover is *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*; the dagger, the slice and the compact real form are *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the operator and its action on $V$ are *Two-Sided Operators on a Clifford Algebra with Signed Hermitian Adjoint*; the Hermitian module and the adjoint of the Clifford action are *The Adjoint of the One-Sided Action with Hermitian Adjoint*; the biquaternion dictionary is *Biquaternion Versors and the Orthogonal Group* in the physics corpus. Nothing owned by those entries is reproved.
 
-**Conventions.** The coefficient involution $\sigma$ is assumed **compatible** with the form, $\sigma(q(v))=q(\sigma(v))$, so that it preserves the subspace $V$ and the quadratic form, as in the Hermitian theory of *Involutive Clifford Algebras*. $N(x)=x\bar x$ is the Clifford norm, $\Gamma(V,q)$ the Clifford group, $U$ the unitary slice, $\varepsilon_x=(-1)^{|x|}$, and $x^{\dagger}=\sigma(\alpha(x^{r}))$.
+**Conventions.** The coefficient involution $\sigma$ is assumed **compatible** with the form, $\sigma(q(v))=q(\sigma(v))$, so that it preserves the subspace $V$ and the quadratic form, as in the Hermitian theory of *Involutive Clifford Algebras*. $N(x)=x x^{\natural}$ is the Clifford norm, $\Gamma(V,q)$ the Clifford group, $U$ the unitary slice, $\varepsilon_x=(-1)^{|x|}$, and $x^{\dagger}=\sigma(\alpha(x^{r}))$.
 
 ## Versors and the Hermitian Adjoint
 
@@ -91,7 +91,7 @@ $$
 
 Then $R$ is even and $\bar R=\cos\tfrac{\theta}{2}+B\sin\tfrac{\theta}{2}=R^{-1}$, so $N(R)=1$, $R$ is real and the Hermitian sandwich is the plain sandwich $R\,v\,R^{-1}$, the rotation through $\theta$. The dagger is the inverse here, $R^{\dagger}=R^{-1}$, and the same rotation is obtained from $\Theta_R$ and from $\Theta^{\alpha}_R$, which agree because $R$ is even.
 
-**Example (the hyperbolic rotor).** Let $B$ be a bivector with $B^{2}=+1$, as for a boost in $\mathrm{Cl}_{1,3}$, and put $R=\exp\bigl(-\tfrac{\eta}{2}B\bigr)=\cosh\tfrac{\eta}{2}-B\sinh\tfrac{\eta}{2}$, with $\eta$ the rapidity. Then $\bar R=\cosh\tfrac{\eta}{2}+B\sinh\tfrac{\eta}{2}=R^{-1}$, $N(R)=1$, and the Hermitian sandwich is the Lorentz boost $R\,v\,R^{-1}$. The example is the biquaternion one in the physics corpus, where the sandwich is written $\tilde Q\,x\,\tilde Q^{\dagger}$; the Hermitian sandwich of this article is exactly that object, and the signed member is its parity-signed version.
+**Example (the hyperbolic rotor).** Let $B$ be a bivector with $B^{2}=+1$, as for a boost in $\mathrm{Cl}_{1,3}$, and put $R=\exp\bigl(-\tfrac{\eta}{2}B\bigr)=\cosh\tfrac{\eta}{2}-B\sinh\tfrac{\eta}{2}$, with $\eta$ the rapidity. Then $\bar R=\cosh\tfrac{\eta}{2}+B\sinh\tfrac{\eta}{2}=R^{-1}$, $N(R)=1$, and the Hermitian sandwich is the Lorentz boost $R\,v\,R^{-1}$. The example is the biquaternion one in the physics corpus, where the sandwich is written $\tilde Q\,x\,\tilde{Q}^{*}$; the Hermitian sandwich of this article is exactly that object, and the signed member is its parity-signed version.
 
 ## The Two Actions
 
@@ -111,7 +111,7 @@ Then $R$ is even and $\bar R=\cos\tfrac{\theta}{2}+B\sin\tfrac{\theta}{2}=R^{-1}
 
 *Proof.* The action proposition of the companion article gives $\Theta^{\alpha}_x|_V=\varepsilon_x\sigma(N(x))\chi(x)$ with $\chi(x)\in O(V,q)$, and a scalar multiple of an orthogonal map by $\lambda$ scales $q$ by $\lambda^{2}$.
 
-**Remark (the split and biquaternion cases).** In $\mathrm{Cl}_{1,1}$ the even element $x=2+3e_1e_2$ has $N(x)=-5$ and the Hermitian sandwich is a similarity of ratio $25$, as computed in *The Hermitian Sandwich on a Clifford Algebra with Hermitian Adjoint*; the signed member is the negative of it. In the biquaternion algebra the corpus sandwich $\tilde Q\,x\,\tilde Q^{\dagger}$ is an isometry exactly on the slice, which is the Lorentz group there, and a similarity off it; that is the geometric form of the statement that the Hermitian sandwich needs the unitary condition to produce a transformation of the physical slices. The dictionary is *Biquaternion Versors and the Orthogonal Group*, and the slice itself is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*.
+**Remark (the split and biquaternion cases).** In $\mathrm{Cl}_{1,1}$ the even element $x=2+3e_1e_2$ has $N(x)=-5$ and the Hermitian sandwich is a similarity of ratio $25$, as computed in *The Hermitian Sandwich on a Clifford Algebra with Hermitian Adjoint*; the signed member is the negative of it. In the biquaternion algebra the corpus sandwich $\tilde Q\,x\,\tilde{Q}^{*}$ is an isometry exactly on the slice, which is the Lorentz group there, and a similarity off it; that is the geometric form of the statement that the Hermitian sandwich needs the unitary condition to produce a transformation of the physical slices. The dictionary is *Biquaternion Versors and the Orthogonal Group*, and the slice itself is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*.
 
 ## Worked Cases
 

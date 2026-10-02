@@ -12,19 +12,19 @@ $$
 \;=\; |0\rangle\langle 0| .
 $$
 It is an element of the informational sector $\mathbb{M}_+$, it is **minimal** in the sense of the algebra, its trace is $\mathrm{Tr}(\tilde\Pi_1) = 1$, and it is the projector onto a **minimal left ideal** of $\mathbb{B}$, the two-complex-dimensional one-particle module. The complementary idempotent $\tilde N_{\mathrm{tr}} = \tfrac12(e_0 - ie_3)$ is the occupied-state projector, and the two form a resolution of the identity, $\tilde\Pi_1 + \tilde\Pi_2 = e_0$, $\tilde\Pi_1\tilde\Pi_2 = 0$. The one-mode vacuum is thus, literally, a minimal idempotent.
-- **Established, and worth separating from the above.** The vacuum idempotent is a **zero divisor**: its biquaternion norm vanishes, $N(\tilde\Pi_1) = \tilde\Pi_1\overline{\tilde\Pi_1} = 0$, and its matrix representative has vanishing determinant, $\det\Phi(\tilde\Pi_1) = 0$. The vacuum state lies on the zero-divisor cone — the framework's light cone. This is not a defect of the state; it is the algebra's statement that a rank-one projector is not invertible, and it ties the choice of vacuum to the choice of a null direction.
+- **Established, and worth separating from the above.** The vacuum idempotent is a **zero divisor**: its biquaternion norm vanishes, $N(\tilde\Pi_1) = \tilde\Pi_1\bar{\tilde\Pi_1} = 0$, and its matrix representative has vanishing determinant, $\det\Phi(\tilde\Pi_1) = 0$. The vacuum state lies on the zero-divisor cone — the framework's light cone. This is not a defect of the state; it is the algebra's statement that a rank-one projector is not invertible, and it ties the choice of vacuum to the choice of a null direction.
 - **The vacuum manifold.** The construction depends on a unit vector $\hat{\boldsymbol\mu}\in S^2$ through $\tilde\Pi(\hat{\boldsymbol\mu}) = \tfrac12(e_0 + i\hat{\boldsymbol\mu})$. Every such idempotent is a legitimate one-mode vacuum, and the family is the two-sphere — the Bloch sphere of the state space. The framework does not single one out; a global $SU(2)$ rotation moves one into another, and the orbit is the vacuum manifold.
 - **Gap, left visible.** For a **field** the vacuum is not an element of $\mathbb{B}$. The Fock space of a field is a module over the algebra, not a subalgebra of it, and the algebra contains no bosonic ladder at all: no pair $\tilde a,\tilde a^\dagger\in\mathbb{B}$ can satisfy $[\tilde a,\tilde a^\dagger]=e_0$ because a commutator has vanishing trace while $\mathrm{Tr}(e_0)=2$. So "the biquaternion vacuum" is not, in general, a biquaternion. It is an idempotent for one fermionic mode and a state in a module for a field.
 
 The article proceeds as follows. The next section recalls the standard vacuum and the sense in which it is a state. The following section fixes the idempotents of $\mathbb{B}$ and the notion of minimality. The next two sections construct the one-mode vacuum and prove that it is a minimal idempotent, and then that it is a zero divisor. The following sections describe the minimal left ideal it defines, the vacuum manifold, and the field case. A section separates what is established from what is interpretation, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_j e_k = \varepsilon_{jkl} e_l$ for distinct $j,k,l$, and scalar imaginary $i$ with $i^2=-1$, central in $\mathbb{B}$. The conjugations are $\bar{\cdot}$ (quaternion), ${}^{*}$ (complex), ${}^{\dagger} = \bar{\cdot}^{\,*}$ (Hermitian), and ${}^{\flat} = -\dagger$ (anti-Hermitian). The fixed-point subspaces are
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_j e_k = \varepsilon_{jkl} e_l$ for distinct $j,k,l$, and scalar imaginary $i$ with $i^2=-1$, central in $\mathbb{B}$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{\,*}$ (Hermitian), and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The fixed-point subspaces are
 $$
-\mathbb{M}_- = \{\tilde Q : \tilde Q^\dagger = -\tilde Q\} = \mathrm{span}_{\mathbb{R}}\{ie_0, e_1, e_2, e_3\},
+\mathbb{M}_- = \{\tilde Q : \tilde Q^{*} = -\tilde Q\} = \mathrm{span}_{\mathbb{R}}\{ie_0, e_1, e_2, e_3\},
 \qquad
-\mathbb{M}_+ = \{\tilde Q : \tilde Q^\dagger = \tilde Q\} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_1, ie_2, ie_3\},
+\mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_1, ie_2, ie_3\},
 $$
-with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,e_1,e_2,e_3\}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the center. The isomorphism is $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$, the **biquaternion norm** is $N(\tilde Q) = \tilde Q\bar{\tilde Q} = \sum_\mu Q_\mu^2$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_0)=2$. The single-mode ladder is $\tilde a_{\mathrm{tr}} = \tfrac12(ie_1-e_2)$, $\tilde a_{\mathrm{tr}}^\dagger = \tfrac12(ie_1+e_2)$, as established by *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*.
+with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,e_1,e_2,e_3\}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the center. The isomorphism is $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$, the **biquaternion norm** is $N(\tilde Q) = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_0)=2$. The single-mode ladder is $\tilde a_{\mathrm{tr}} = \tfrac12(ie_1-e_2)$, $\tilde a_{\mathrm{tr}}^\dagger = \tfrac12(ie_1+e_2)$, as established by *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*.
 
 ## The Vacuum as a State
 
@@ -42,7 +42,7 @@ $$
 $$
 The state is normalized, $\langle 0|0\rangle = 1$, and every $n$-particle state is built from it by creation operators. In this reading the vacuum is a vector in an infinite-dimensional space.
 
-**As a functional.** A state on an algebra $\mathcal{A}$ of observables is a linear functional $\omega:\mathcal{A}\to\mathbb{C}$ that is positive, $\omega(\tilde A^\dagger \tilde A)\ge 0$, and normalized, $\omega(e_0)=1$. The vacuum expectation value
+**As a functional.** A state on an algebra $\mathcal{A}$ of observables is a linear functional $\omega:\mathcal{A}\to\mathbb{C}$ that is positive, $\omega(\tilde A^{*} \tilde A)\ge 0$, and normalized, $\omega(e_0)=1$. The vacuum expectation value
 $$
 \omega_0(\tilde A) \;=\; \langle 0|\,\pi(\tilde A)\,|0\rangle
 $$
@@ -56,7 +56,7 @@ An **idempotent** of $\mathbb{B}$ is an element $\tilde P$ with
 $$
 \tilde P^2 = \tilde P .
 $$
-A **projector** is a Hermitian idempotent, $\tilde P^\dagger = \tilde P$, and a projector in $\mathbb{M}_+$ is precisely a *positive* Hermitian idempotent, hence a density matrix up to normalization. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a simple classification of its idempotents, and it is the classification of the projectors that the vacuum needs.
+A **projector** is a Hermitian idempotent, $\tilde P^{*} = \tilde P$, and a projector in $\mathbb{M}_+$ is precisely a *positive* Hermitian idempotent, hence a density matrix up to normalization. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a simple classification of its idempotents, and it is the classification of the projectors that the vacuum needs.
 
 **Rank.** Under the isomorphism $\Phi$, a projector $\tilde P$ is sent to a Hermitian projection matrix $\Phi(\tilde P)$. Such a matrix has eigenvalues in $\{0,1\}$, and its **rank** is the number of unit eigenvalues. In two dimensions the possibilities are
 $$
@@ -115,7 +115,7 @@ denotes the pair of projectors associated with the unit vector $\hat{\boldsymbol
 $$
 \tilde\Pi_1^2 = \tfrac14\big(e_0 + ie_3\big)^2 = \tfrac14\big(e_0 + 2ie_3 + (ie_3)^2\big) = \tfrac14\big(e_0 + 2ie_3 - e_0\big) = \tfrac12\big(e_0+ie_3\big) = \tilde\Pi_1,
 $$
-so it is idempotent; $\overline{\tilde\Pi_1} = \tfrac12(e_0 - ie_3)$ and $\tilde\Pi_1^\dagger = \tfrac12(e_0 + ie_3)^\dagger = \tfrac12(e_0 + ie_3) = \tilde\Pi_1$, since $e_3^\dagger = -e_3$ and $i^\dagger = i$, so it is Hermitian and lies in $\mathbb{M}_+$;
+so it is idempotent; $\bar{\tilde\Pi_1} = \tfrac12(e_0 - ie_3)$ and $\tilde\Pi_1^{*} = \tfrac12(e_0 + ie_3)^{*} = \tfrac12(e_0 + ie_3) = \tilde\Pi_1$, since $e_3^\dagger = -e_3$ and $i^{*} = i$, so it is Hermitian and lies in $\mathbb{M}_+$;
 $$
 \mathrm{Tr}\big(\tilde\Pi_1\big) = 2\,\mathrm{Sc}\big(\tilde\Pi_1\big) = 2\cdot\tfrac12 = 1,
 $$
@@ -144,7 +144,7 @@ $$
 (-1)^F \tilde a_{\mathrm{tr}}^\dagger (-1)^F = -\tilde a_{\mathrm{tr}}^\dagger .
 $$
 
-**A numerical check on the whole set.** Representing $\mathbb{B}$ by $2\times2$ complex matrices through $\Phi$ and using explicit complex arithmetic on the coefficients, one finds: $\tilde\Pi_1^2-\tilde\Pi_1=0$; $\tilde\Pi_1^\dagger-\tilde\Pi_1=0$; $\det\Phi(\tilde\Pi_1)=0$ with $\mathrm{Tr}\,\Phi(\tilde\Pi_1)=1$; $\tilde\Pi_1\tilde\Pi_2=0$ and $\tilde\Pi_1+\tilde\Pi_2=I_2$; $\Phi((-1)^F)=\sigma_3$; and $\Phi((-1)^F\tilde a_{\mathrm{tr}}(-1)^F) = -\Phi(\tilde a_{\mathrm{tr}})$, all to machine precision ($<10^{-16}$). The vacuum expectation values reproduce the mode algebra,
+**A numerical check on the whole set.** Representing $\mathbb{B}$ by $2\times2$ complex matrices through $\Phi$ and using explicit complex arithmetic on the coefficients, one finds: $\tilde\Pi_1^2-\tilde\Pi_1=0$; $\tilde\Pi_1^{*}-\tilde\Pi_1=0$; $\det\Phi(\tilde\Pi_1)=0$ with $\mathrm{Tr}\,\Phi(\tilde\Pi_1)=1$; $\tilde\Pi_1\tilde\Pi_2=0$ and $\tilde\Pi_1+\tilde\Pi_2=I_2$; $\Phi((-1)^F)=\sigma_3$; and $\Phi((-1)^F\tilde a_{\mathrm{tr}}(-1)^F) = -\Phi(\tilde a_{\mathrm{tr}})$, all to machine precision ($<10^{-16}$). The vacuum expectation values reproduce the mode algebra,
 $$
 \langle \tilde a_{\mathrm{tr}}^\dagger \tilde a_{\mathrm{tr}}\rangle_0 = \mathrm{Tr}\big(\tilde\Pi_1\tilde N_{\mathrm{tr}}\big) = 0,
 \qquad
@@ -156,9 +156,9 @@ which are the statements that the vacuum is empty and the mode anticommutator is
 
 The single most consequential algebraic property of the vacuum idempotent is that it is **not invertible**, and the framework makes this property visible through the biquaternion norm.
 
-Compute $N(\tilde\Pi_1) = \tilde\Pi_1\overline{\tilde\Pi_1}$, using $\bar e_3 = -e_3$ and $\bar i = i$:
+Compute $N(\tilde\Pi_1) = \tilde\Pi_1\bar{\tilde\Pi_1}$, using $\bar e_3 = -e_3$ and $\bar i = i$:
 $$
-\tilde\Pi_1\overline{\tilde\Pi_1} = \tfrac14\big(e_0+ie_3\big)\big(e_0-ie_3\big) = \tfrac14\Big(e_0 - ie_3 + ie_3 - i^2 e_3^2\Big) = \tfrac14\big(e_0 - e_0\big) = 0 .
+\tilde\Pi_1\bar{\tilde\Pi_1} = \tfrac14\big(e_0+ie_3\big)\big(e_0-ie_3\big) = \tfrac14\Big(e_0 - ie_3 + ie_3 - i^2 e_3^2\Big) = \tfrac14\big(e_0 - e_0\big) = 0 .
 $$
 So
 $$
@@ -208,7 +208,7 @@ is the **vacuum manifold**. Its three properties, all immediate from the definit
 
 1. **It is a two-sphere.** The projectors are labelled by unit vectors, and the correspondence is one-to-one: $\tilde\Pi(\hat{\boldsymbol\mu}) = \tilde\Pi(\hat{\boldsymbol\mu}')$ if and only if $\hat{\boldsymbol\mu} = \hat{\boldsymbol\mu}'$, since the vector part of the projector is $\tfrac{i}{2}\hat{\boldsymbol\mu}$.
 2. **It is the Bloch sphere of the state space.** Writing a general element of $\mathbb{M}_+$ of unit trace as $\tilde\rho = \tfrac12(e_0 + i\mathbf r)$ with $\mathbf r\in\mathbb{R}^3$, the projector condition $\tilde\rho^2=\tilde\rho$ forces $|\mathbf r|=1$. The minimal idempotents of unit trace are exactly the Bloch sphere, and a general state (a minimal-*trace*, not minimal-*rank*, density matrix) fills the Bloch ball $|\mathbf r|\le 1$.
-3. **It is a single rotation orbit.** The conjugation $\tilde P\mapsto \tilde R\tilde P\tilde R^\dagger$ by a unit real quaternion $\tilde R\in\mathbb{H}_{\mathbb{B}}$, $N(\tilde R)=e_0$, acts on the vector part as a rotation of $\hat{\boldsymbol\mu}$, and every unit vector is reached from every other. The rotation group of the framework acts transitively on the vacuum manifold, so the framework by itself does not distinguish a vacuum; the vacuum is a **spontaneously chosen** element, and the manifold is the order-parameter space of that choice.
+3. **It is a single rotation orbit.** The conjugation $\tilde P\mapsto \tilde R\tilde P\tilde R^{*}$ by a unit real quaternion $\tilde R\in\mathbb{H}_{\mathbb{B}}$, $N(\tilde R)=e_0$, acts on the vector part as a rotation of $\hat{\boldsymbol\mu}$, and every unit vector is reached from every other. The rotation group of the framework acts transitively on the vacuum manifold, so the framework by itself does not distinguish a vacuum; the vacuum is a **spontaneously chosen** element, and the manifold is the order-parameter space of that choice.
 
 That last point is the physical content of the manifold. A vacuum that is a minimal idempotent is a *pure state with a definite orientation*, and the orientation is not fixed by the algebra. Whether the framework provides a dynamics that selects one — a Hamiltonian whose ground projector is a particular $\tilde\Pi(\hat{\boldsymbol\mu})$ — is a question about the dynamics, not about the state, and is not settled by the algebra alone.
 
@@ -272,7 +272,7 @@ For a field the vacuum is a state in a module and not an element of the algebra:
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}},\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; center $\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ |
-| $N(\tilde Q)=\tilde Q\bar{\tilde Q}=\sum_\mu Q_\mu^2=\det\Phi(\tilde Q)$ | Biquaternion norm |
+| $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2=\det\Phi(\tilde Q)$ | Biquaternion norm |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, $\mathrm{Tr}(e_0)=2$ | Trace pairing |
 | $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$ | Matrix isomorphism |
 | $\tilde\Pi(\pm\hat{\boldsymbol\mu})=\tfrac12(e_0\pm i\hat{\boldsymbol\mu})$, $\hat{\boldsymbol\mu}\in S^2$ | Minimal idempotents; vacuum projectors |

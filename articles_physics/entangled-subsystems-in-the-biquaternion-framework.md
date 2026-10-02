@@ -97,13 +97,13 @@ This is the biquaternion expression of EPR steering. The collapse of the joint s
 The last observation is the algebraic content of the no-communication theorem. If Alice applies a local unitary operation $\tilde{U}\otimes e_0$ to the joint state, the reduced state of particle 2 is unchanged:
 
 $$
-\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_0)\,\tilde{\rho}\,(\tilde{U}^\dagger\otimes e_0)\right) = \mathrm{Tr}_1(\tilde{\rho}),
+\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_0)\,\tilde{\rho}\,(\tilde{U}^{*}\otimes e_0)\right) = \mathrm{Tr}_1(\tilde{\rho}),
 $$
 
 where $\mathrm{Tr}_1$ denotes the partial trace over particle 1. This is a direct consequence of the cyclicity of the trace: for any element $\tilde{\rho} = \sum_i a_i\otimes b_i$ of the tensor product,
 
 $$
-\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_0)\,\tilde{\rho}\,(\tilde{U}^\dagger\otimes e_0)\right) = \sum_i \mathrm{Tr}_\mathbb{B}(\tilde{U}a_i\tilde{U}^\dagger)\,b_i = \sum_i \mathrm{Tr}_\mathbb{B}(a_i)\,b_i = \mathrm{Tr}_1(\tilde{\rho}).
+\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_0)\,\tilde{\rho}\,(\tilde{U}^{*}\otimes e_0)\right) = \sum_i \mathrm{Tr}_\mathbb{B}(\tilde{U}a_i\tilde{U}^{*})\,b_i = \sum_i \mathrm{Tr}_\mathbb{B}(a_i)\,b_i = \mathrm{Tr}_1(\tilde{\rho}).
 $$
 
 No-signaling is not a dynamical theorem in this reading; it is the cyclicity of the trace, applied to the partial trace. It says that correlations are real, that they are a property of the joint state, and that no local operation on one factor can be detected by measurements on the other.
@@ -134,7 +134,7 @@ The measurement problem is the fact that standard quantum mechanics has two kind
 
 The biquaternion framework has something structural to offer here. In standard quantum mechanics, unitary evolution and projective collapse are different postulates, governing different types of process. In the biquaternion framework, both are properties of *acting elements* of the algebra:
 
-- **Unitary elements** $\tilde{U}$ satisfy $\tilde{U}\tilde{U}^\dagger = e_0$ and generate reversible evolution by rotor conjugation.
+- **Unitary elements** $\tilde{U}$ satisfy $\tilde{U}\tilde{U}^{*} = e_0$ and generate reversible evolution by rotor conjugation.
 - **Idempotent elements** $\tilde\Pi$ satisfy $\tilde\Pi^2 = \tilde\Pi$ and generate irreversible projection by the sandwich operation.
 
 The reversible/irreversible dichotomy is not an additional postulate; it is the algebraic dichotomy between two classes of elements of one algebra. This is a genuine reframing: the measurement problem is no longer "two incompatible dynamics glued together" but "one algebra with two classes of elements."
@@ -265,7 +265,7 @@ The honest position is this. The framework makes certain structural features of 
 | $\mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}_\mathbb{B}(b)$ | Partial trace over the second factor |
 | $\rho_1 = \mathrm{Tr}_2(P_{\mathrm{singlet}}) = \tfrac{1}{2}e_0$ | Reduced state of particle 1 |
 | $E(\hat{a}, \hat{b}) = \mathrm{Tr}(P_{\mathrm{singlet}}\circ((i\hat{a})\otimes(i\hat{b})))$ | Correlation function |
-| $\tilde{U}\tilde{U}^\dagger = e_0$ | Unitary element (reversible evolution) |
+| $\tilde{U}\tilde{U}^{*} = e_0$ | Unitary element (reversible evolution) |
 | $\tilde\Pi^2 = \tilde\Pi$ | Idempotent element (irreversible projection) |
 | $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Tensor-product trace |
 | $2\sqrt{2}$ | Tsirelson bound for the CHSH combination |

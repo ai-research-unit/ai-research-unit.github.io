@@ -26,7 +26,7 @@ $$
 
 The positive real factor $r$ is therefore always available: the square root of a complex number can always be taken with a non-negative modulus, and the only obstruction is the vanishing of $N(\tilde{Q})$ itself, which is the vanishing of the determinant of the $2\times2$ matrix image. The phase $e^{i\alpha}$ is one of the four factors precisely because the modulus is complex; it is not an accessory, and the partial forms of the companion article differ from this one by which factor absorbs it.
 
-The conventions are those of the corpus. The algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, an element is written $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with complex coefficients, the conjugations are the quaternion conjugation $\bar{\tilde{Q}}$, the complex conjugation $\tilde{Q}^*$, the Hermitian conjugation $\tilde{Q}^\dagger = \bar{\tilde{Q}}^{*}$, the centre is $\mathbb{C}_{\mathbb{B}}$, the quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace is $\mathbb{M}_+$, and the scalar imaginary is $i$, central. No physics is invoked. Every numerical value displayed below was recomputed in double precision.
+The conventions are those of the corpus. The algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, an element is written $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with complex coefficients, the conjugations are the quaternion conjugation $\tilde{Q}^{\natural}$, the complex conjugation $\bar{\tilde{Q}}$, the Hermitian conjugation $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, the centre is $\mathbb{C}_{\mathbb{B}}$, the quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace is $\mathbb{M}_+$, and the scalar imaginary is $i$, central. No physics is invoked. Every numerical value displayed below was recomputed in double precision.
 
 ## Why Four Factors
 
@@ -36,10 +36,10 @@ The centre of $\mathbb{B}$ is $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$, the co
 
 ### The Hermitian and the Anti-Hermitian Halves
 
-The Hermitian conjugation $\dagger$ is an involution, so the algebra splits into its fixed space and its anti-fixed space,
+The Hermitian conjugation ${}^{*}$ is an involution, so the algebra splits into its fixed space and its anti-fixed space,
 
 $$
-\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_- , \qquad \mathbb{M}_\pm = \{\tilde{Q} : \tilde{Q}^\dagger = \pm\tilde{Q}\},
+\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_- , \qquad \mathbb{M}_\pm = \{\tilde{Q} : \tilde{Q}^{*} = \pm\tilde{Q}\},
 $$
 
 with $\mathbb{M}_+$ the Hermitian subspace (real scalar part, purely imaginary vector part) and $\mathbb{M}_-$ the anti-Hermitian subspace. In the matrix model, $\mathbb{M}_+$ is the subspace of Hermitian matrices and $\mathbb{M}_-$ the subspace of anti-Hermitian ones, and this is the split that the matrix polar decomposition uses: the positive factor of a polar decomposition is a Hermitian matrix with positive eigenvalues, and the unitary factor is an element of the unitary group.
@@ -143,7 +143,7 @@ The three pairings of the companion article *Biquaternion Partial Polar Element 
 The biquaternion norm is
 
 $$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_{\mu=0}^{3}Q_\mu^2 ,
+N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu=0}^{3}Q_\mu^2 ,
 $$
 
 the sum of the squares of the four complex coefficients. It is a complex number, it is central, and it is multiplicative,
@@ -275,10 +275,10 @@ which are the half-angle identities applied to $\sigma = \cosh\psi$ and $|\mathb
 The rotor is the residual factor,
 
 $$
-\hat{q} = B^{-1}U = \bar{B}\,U ,
+\hat{q} = B^{-1}U = B^{\natural}\,U ,
 $$
 
-where $B^{-1} = \bar{B}$ because $N(B) = 1$ and $B\bar{B} = N(B)e_0 = e_0$. It is unitary in the matrix sense,
+where $B^{-1} = B^{\natural}$ because $N(B) = 1$ and $BB^{\natural} = N(B)e_0 = e_0$. It is unitary in the matrix sense,
 
 $$
 \hat{q}\,\hat{q}^{\dagger} = B^{-1}UU^{\dagger}B^{-1} = B^{-1}S\,B^{-1} = B^{-1}B^2B^{-1} = e_0 ,
@@ -383,7 +383,7 @@ The proof above is effective, and it is worth recording as a procedure. Given $\
 3. Put $U = \tilde{Q}/\rho$, of unit norm.
 4. Compute $S = UU^\dagger$, and write it as $\sigma e_0 + i\mathbf{w}$ with $\sigma\in\mathbb{R}$, $\mathbf{w}\in\mathbb{R}^3$; then put
    $B = \sqrt{\frac{1+\sigma}{2}}\,e_0 + \frac{i\mathbf{w}}{\sqrt{2(1+\sigma)}}$, and read the rapidity and axis off by $\cosh\psi = \sigma$, $\hat{\mathbf{n}} = \mathbf{w}/|\mathbf{w}|$.
-5. Put $\hat{q} = \bar{B}U$, and verify that its coefficients are real and that $N(\hat{q}) = 1$.
+5. Put $\hat{q} = B^{\natural}U$, and verify that its coefficients are real and that $N(\hat{q}) = 1$.
 
 The factors so obtained satisfy $\tilde{Q} = r e^{i\alpha}B\hat{q}$ identically. The only step that requires a convention rather than a formula is step 2, where the branch of the square root is fixed by $\alpha \in (-\pi/2,\pi/2]$; the other four steps are forced.
 
@@ -430,7 +430,7 @@ with rapidity $\psi = 2\operatorname{arccosh}(1.072349609) = 0.756273220$, corre
 *Step 5.* The rotor is
 
 $$
-\hat{q} = \bar{B}U = 0.470592172\,e_0 + 0.394599292\,e_1 + 0.789198585\,e_2 ,
+\hat{q} = B^{\natural}U = 0.470592172\,e_0 + 0.394599292\,e_1 + 0.789198585\,e_2 ,
 $$
 
 all of whose coefficients are real, with $N(\hat{q}) = 1$; its rotation angle is $2.161669$ rad about the axis $(1,2,0)/\sqrt{5}$.
@@ -488,7 +488,7 @@ The rotor is a unit real quaternion: compact, three-dimensional, an element of t
 
 ### What the Sandwich Sees
 
-The four factors are what an operator on the algebra detects, and the dagger sandwich $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{\dagger}$ reads them as follows. The scale enters through the single dilation $\lvert N(\tilde{Q})\rvert^{2}=r^{4}$ of the interval; the central phase enters through nothing at all, since the relation $\mathrm{H}_{z\tilde{Q}}=\lvert z\rvert^{2}\mathrm{H}_{\tilde{Q}}$ makes two elements differing by a unit-modulus central phase have the same operator; and the remaining two factors are the boost part and the rotation part of the action, in the order of composition $B\hat{q}$. The kernel of the operator is the phase circle, so the phase is exactly the factor the action discards, while the scale survives only through its fourth power. The operator itself is in *Biquaternion Rotations and Lorentz Transformations*.
+The four factors are what an operator on the algebra detects, and the dagger sandwich $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{*}$ reads them as follows. The scale enters through the single dilation $\lvert N(\tilde{Q})\rvert^{2}=r^{4}$ of the interval; the central phase enters through nothing at all, since the relation $\mathrm{H}_{z\tilde{Q}}=\lvert z\rvert^{2}\mathrm{H}_{\tilde{Q}}$ makes two elements differing by a unit-modulus central phase have the same operator; and the remaining two factors are the boost part and the rotation part of the action, in the order of composition $B\hat{q}$. The kernel of the operator is the phase circle, so the phase is exactly the factor the action discards, while the scale survives only through its fourth power. The operator itself is in *Biquaternion Rotations and Lorentz Transformations*.
 
 **The operator factorises through the boost and the rotor, and doubles their parameters.** With the polar word $\tilde{Q}=re^{i\alpha}B\hat{q}$ and $\tilde{\Lambda}=B\hat{q}$ of unit norm,
 
@@ -539,7 +539,7 @@ which exhibits the phase factor at its extremal value. This element is the sharp
 
 ### The Real Quaternions
 
-If all four coefficients of $\tilde{Q}$ are real then $N(\tilde{Q}) = \sum_\mu q_\mu^2$ is a positive real, so $\alpha = 0$ and $r = |\tilde{Q}|$ is the quaternion modulus of the companion article. The element $U = \tilde{Q}/r$ is a unit real quaternion, and $S = UU^\dagger = U\bar{U} = e_0$, so $B = e_0$ and $\hat{q} = U$. The real quaternions therefore have no boost: their polar representation is the quaternion polar representation, and the two representations agree term by term.
+If all four coefficients of $\tilde{Q}$ are real then $N(\tilde{Q}) = \sum_\mu q_\mu^2$ is a positive real, so $\alpha = 0$ and $r = |\tilde{Q}|$ is the quaternion modulus of the companion article. The element $U = \tilde{Q}/r$ is a unit real quaternion, and $S = UU^\dagger = UU^{\natural} = e_0$, so $B = e_0$ and $\hat{q} = U$. The real quaternions therefore have no boost: their polar representation is the quaternion polar representation, and the two representations agree term by term.
 
 ### The Null Elements
 
@@ -576,7 +576,7 @@ so that it groups the first two of the four factors into the modulus $R$ and the
 The **complex form** writes $\tilde{Q} = Q\exp(i\Psi)$ with $Q$ a real quaternion; in the present notation its two factors are
 
 $$
-Q = r\,\hat{q} , \qquad \exp(i\Psi) = e^{i\alpha}\,\bar{\hat{q}}\,B\,\hat{q} ,
+Q = r\,\hat{q} , \qquad \exp(i\Psi) = e^{i\alpha}\,\hat{q}^{\natural}\,B\,\hat{q} ,
 $$
 
 so that it groups the scale with the rotor into the quaternion modulus and the phase with a conjugated boost into the exponential. Its construction in the companion article proceeds from the real quaternion part of $\tilde{Q}$ and requires that part to be invertible, again a stronger condition than $N(\tilde{Q})\neq0$.
@@ -599,7 +599,7 @@ in which $B$ is the Hermitian positive unit-norm boost and $\hat{q}$ the unit re
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra, $\tilde{Q} = \sum_\mu Q_\mu e_\mu$, $Q_\mu\in\mathbb{C}$ |
 | $i$ | the central scalar imaginary |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | the biquaternion norm, complex and central, equal to $\det\Phi(\tilde{Q})$ |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | the biquaternion norm, complex and central, equal to $\det\Phi(\tilde{Q})$ |
 | $\rho = \sqrt{N(\tilde{Q})}$ | the complex modulus, the principal square root |
 | $r = \sqrt{|N(\tilde{Q})|}$ | the scale, a positive real |
 | $\alpha = \tfrac{1}{2}\arg N(\tilde{Q})$ | the phase angle, in $(-\pi/2,\pi/2]$ |
@@ -607,7 +607,7 @@ in which $B$ is the Hermitian positive unit-norm boost and $\hat{q}$ the unit re
 | $S = UU^\dagger = \sigma e_0 + i\mathbf{w}$ | the Hermitian positive element |
 | $B = \sqrt{S}$ | the boost, Hermitian positive, $N(B) = 1$ |
 | $\psi$, $\hat{\mathbf{n}}$ | the rapidity and axis of the boost |
-| $\hat{q} = \bar{B}U$ | the rotor, a unit real quaternion |
+| $\hat{q} = B^{\natural}U$ | the rotor, a unit real quaternion |
 | $\mathbb{M}_+$ | the Hermitian subspace, real scalar part and imaginary vector part |
 | $\mathbb{M}_-$ | the anti-Hermitian subspace, the material sector of the physics articles |
 | $\mathrm{Sp}(1)$ | the unit real quaternions, $SU(2) = S^3$ |

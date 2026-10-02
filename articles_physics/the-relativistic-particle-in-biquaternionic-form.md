@@ -18,7 +18,7 @@ The algebra therefore does not carry a metric that has to be attached to spaceti
 
 The article is organized as follows. The next section fixes the worldline and the proper time from the biquaternion norm. The third introduces the four-velocity and the rapidity. The fourth gives the four-momentum and the mass shell. The fifth treats composition of velocities. The sixth derives the free action and its equation of motion. The seventh takes the non-relativistic limit. The closing sections separate what the algebra supplies from what is transcribed, collect the open questions, and record the summary, the notation and the external literature.
 
-**Conventions.** We use those of the read list unchanged. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \varepsilon_{jkl}e_l$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar and real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar and imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ (the complex scalar line, the center). The conjugations are $\bar{\cdot}$ (quaternion), ${}^*$ (complex), ${}^\dagger = \bar{\cdot}^{\,*}$ (Hermitian) and ${}^\flat = -\dagger$ (anti-Hermitian). The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \partial_{ict}^2 + \Delta$. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value; the symbol $\mathbf{v}$ is reserved for particle and frame velocities, as in the neighbouring articles. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+**Conventions.** We use those of the read list unchanged. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \varepsilon_{jkl}e_l$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar and real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar and imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ (the complex scalar line, the center). The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat = -{}^{*}$ (anti-Hermitian). The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial_{ict}^2 + \Delta$. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value; the symbol $\mathbf{v}$ is reserved for particle and frame velocities, as in the neighbouring articles. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
 ## The Worldline and the Biquaternion Norm
 
@@ -165,7 +165,7 @@ which is the subject of the penultimate section.
 A Lorentz transformation acts on the material sector by **rotor conjugation**,
 
 $$
-\tilde{Q}\ \longmapsto\ \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger,
+\tilde{Q}\ \longmapsto\ \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*},
 \qquad
 \tilde{\Lambda}\in\mathbb{B},
 \qquad
@@ -177,10 +177,10 @@ with $\tilde{\Lambda}$ a unit-norm biquaternion. Since the action is linear and 
 $$
 \tilde{\Lambda}(\psi,\hat{\mathbf{u}}) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat{\mathbf{u}},
 \qquad
-\overline{\tilde{\Lambda}} = \tilde{\Lambda}^\dagger ,
+\tilde{\Lambda}^{\natural} = \tilde{\Lambda}^{*} ,
 $$
 
-with $\psi$ the rapidity and $\hat{\mathbf{u}}$ the boost direction. The convention for which rotor carries which frame is fixed by the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, whose rotor for a particle of four-velocity $\tilde{U}$ is $\tilde{\Lambda} = \sqrt{-\tfrac{i}{c}\bar{\tilde{U}}}$, with the boost direction aligned with the particle velocity. With that rotor, the transformation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ carries the four-velocity $\gamma(ic\,e_0+\mathbf{v})$ of a particle moving with velocity $\mathbf{v} = c\tanh\psi\,\hat{\mathbf{u}}$ to the rest four-velocity $ic\,e_0$.
+with $\psi$ the rapidity and $\hat{\mathbf{u}}$ the boost direction. The convention for which rotor carries which frame is fixed by the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, whose rotor for a particle of four-velocity $\tilde{U}$ is $\tilde{\Lambda} = \sqrt{-\tfrac{i}{c}\tilde{U}^{\natural}}$, with the boost direction aligned with the particle velocity. With that rotor, the transformation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ carries the four-velocity $\gamma(ic\,e_0+\mathbf{v})$ of a particle moving with velocity $\mathbf{v} = c\tanh\psi\,\hat{\mathbf{u}}$ to the rest four-velocity $ic\,e_0$.
 
 Composition of two boosts is composition of their rotors. For two **collinear** boosts the rotors commute and their rapidities add: if the first has rapidity $\psi_1$ and the second $\psi_2$ along the same direction, the product is the boost of rapidity $\psi_1+\psi_2$, and the composed velocity is
 
@@ -191,14 +191,14 @@ $$
 which is the standard addition law. The verification is elementary in the quaternion algebra: the boost rotor of rapidity $\psi$ along $\hat{\mathbf{u}}$ acts on the rest four-velocity as
 
 $$
-\tilde{\Lambda}\,\bigl(ic\,e_0\bigr)\,\tilde{\Lambda}^\dagger
+\tilde{\Lambda}\,\bigl(ic\,e_0\bigr)\,\tilde{\Lambda}^{*}
 = ic\,e_0\,\tilde{\Lambda}^2
 = ic\left(\cosh\psi\,e_0 + i\sinh\psi\,\hat{\mathbf{u}}\right)
 = ic\cosh\psi\,e_0 - c\sinh\psi\,\hat{\mathbf{u}}
 = \gamma\left(ic\,e_0 - \mathbf{v}\right),
 $$
 
-using that $ic\,e_0$ is central, that $\tilde{\Lambda}^\dagger = \tilde{\Lambda}$ for a pure boost, and that $\tilde{\Lambda}^2 = \cosh\psi + i\sinh\psi\,\hat{\mathbf{u}}$. The quaternion-conjugate rotor $\bar{\tilde{\Lambda}} = \cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$, which is the boost of rapidity $-\psi$, carries the rest four-velocity to $\gamma(ic\,e_0+\mathbf{v})$ instead. Composing two such rotors and reading off the resulting rapidity gives the addition law above. The rapidity is additive because it is half the logarithm of the ratio of the light-cone coordinates, and that additivity is exactly what the hyperbolic parametrization was built to display.
+using that $ic\,e_0$ is central, that $\tilde{\Lambda}^{*} = \tilde{\Lambda}$ for a pure boost, and that $\tilde{\Lambda}^2 = \cosh\psi + i\sinh\psi\,\hat{\mathbf{u}}$. The quaternion-conjugate rotor $\tilde{\Lambda}^{\natural} = \cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$, which is the boost of rapidity $-\psi$, carries the rest four-velocity to $\gamma(ic\,e_0+\mathbf{v})$ instead. Composing two such rotors and reading off the resulting rapidity gives the addition law above. The rapidity is additive because it is half the logarithm of the ratio of the light-cone coordinates, and that additivity is exactly what the hyperbolic parametrization was built to display.
 
 For **non-collinear** boosts the rotors do not commute, and their product is not a pure boost: it is a boost together with a rotation. The rotation is the Thomas–Wigner rotation, and it is the group-theoretic statement that the boosts do not form a subgroup. It is not needed for the free particle's kinematics, and it is treated in its own right in the companion article *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*; here it is enough to record that the free four-velocity composes by rotor multiplication, and that the composition is associative while the velocity addition it induces is not.
 
@@ -361,8 +361,8 @@ The interval is the biquaternion norm, the mass shell is its level set, the caus
 | $i$ | Scalar imaginary, $i^2=-1$, central |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex scalar line (center) |
-| $\bar{\cdot},\ {}^*,\ {}^\dagger=\bar{\cdot}^{\,*},\ {}^\flat=-\dagger$ | Quaternion, complex, Hermitian, anti-Hermitian conjugations |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm (level 1: identity on $\mathbb{C}$) |
+| ${}^{\natural},\ \bar{\cdot},\ {}^{*}=({}^{\natural})^{\,*},\ {}^\flat=-{}^{*}$ | Quaternion, complex, Hermitian, anti-Hermitian conjugations |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm (level 1: identity on $\mathbb{C}$) |
 | $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | Four-position, in $\mathbb{M}_-$ |
 | $d\tau^2 = -N(d\tilde{Q})/c^2$ | Proper time |
 | $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$, $N(\tilde{U}) = -c^2$ | Four-velocity, unit timelike |
@@ -371,9 +371,9 @@ The interval is the biquaternion norm, the mass shell is its level set, the caus
 | $\tilde{P} = m\tilde{U} = iE/c\,e_0 + \mathbf{p}$ | Four-momentum |
 | $E = \gamma mc^2$, $\mathbf{p} = \gamma m\mathbf{v}$ | Energy and momentum |
 | $N(\tilde{P}) = -m^2c^2$ | Mass-shell relation |
-| $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$, $\tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0$ | Boost rotor, in $\mathbb{M}_+$ |
-| $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ | Rotor conjugation on $\mathbb{M}_-$ |
-| $S = -mc\int\sqrt{-d\tilde{Q}\,d\bar{\tilde{Q}}}$, $L = -mc^2/\gamma$ | Free action and Lagrangian |
+| $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$, $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$ | Boost rotor, in $\mathbb{M}_+$ |
+| $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation on $\mathbb{M}_-$ |
+| $S = -mc\int\sqrt{-d\tilde{Q}\,d\tilde{Q}^{\natural}}$, $L = -mc^2/\gamma$ | Free action and Lagrangian |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 
 ## Further Reading

@@ -57,7 +57,7 @@ $$
 $$
 which is Hermitian by construction, as every element of $\mathbb{M}_+$ is. Its biquaternion norm is
 $$
-N(\tilde{\rho}) = \tilde{\rho}\,\bar{\tilde{\rho}}
+N(\tilde{\rho}) = \tilde{\rho}\,\tilde{\rho}^{\natural}
 = \tfrac14\bigl(S_0^2 - S_1^2 - S_2^2 - S_3^2\bigr)
 = \tfrac14 S_0^2\bigl(1 - P^2\bigr) ,
 \qquad
@@ -79,7 +79,7 @@ $$
 \qquad
 \tilde{\rho}_{\mathrm{pol}} = \frac{i}{2}\mathbf{S}\cdot\tilde{e} ,
 $$
-separates the invariant unpolarized part from the polarized part whose norm is $-\frac14|\mathbf{S}|^2$. A fully polarized beam is one whose polarized part saturates the cone, $N(\tilde{\rho}) = 0$; depolarization transfers weight from the vector part to the scalar part, which is the operation the density-matrix formalism calls the completely-positive trace-preserving map. The two invariants of the beam and the two invariants of the action — the bilinear norm and the Hermitian pairing — are thus the same two forms: the trace part is the Hermitian pairing of $\tilde{\rho}$ with $e_0$, and the biquaternion norm is the bilinear pairing $\tilde{\rho}\bar{\tilde{\rho}}$.
+separates the invariant unpolarized part from the polarized part whose norm is $-\frac14|\mathbf{S}|^2$. A fully polarized beam is one whose polarized part saturates the cone, $N(\tilde{\rho}) = 0$; depolarization transfers weight from the vector part to the scalar part, which is the operation the density-matrix formalism calls the completely-positive trace-preserving map. The two invariants of the beam and the two invariants of the action — the bilinear norm and the Hermitian pairing — are thus the same two forms: the trace part is the Hermitian pairing of $\tilde{\rho}$ with $e_0$, and the biquaternion norm is the bilinear pairing $\tilde{\rho}\tilde{\rho}^{\natural}$.
 
 ### The self-dual split and helicity
 
@@ -106,7 +106,7 @@ $$
 \bigl|\hat{\varepsilon}'\cdot\hat{\varepsilon}\bigr|^2
 = \bigl|\mathrm{Sc}\bigl(\tilde{\varepsilon}'^\dagger \tilde{\varepsilon}\bigr)\bigr|^2 ,
 $$
-since for pure vectors $\tilde{\varepsilon}^\dagger = -\tilde{\varepsilon}$ and $\mathrm{Sc}(\tilde{\varepsilon}'\tilde{\varepsilon}) = -\boldsymbol{\varepsilon}'\cdot\boldsymbol{\varepsilon}$. The amplitude's polarization dependence is therefore a single Hermitian pairing of two elements of $\mathbb{M}_-$, and the cross-section is its modulus squared, exactly as a quantum-mechanical amplitude is the modulus squared of a matrix element. Two features of the formula are worth stating. It factors: incident polarization, propagation direction, outgoing direction, and outgoing polarization enter only through the one scalar $\hat{\varepsilon}'\cdot\hat{\varepsilon}$. And it is the **square of a projector**: summing over the two outgoing polarizations by the completeness relation gives
+since for pure vectors $\tilde{\varepsilon}^{*} = -\tilde{\varepsilon}$ and $\mathrm{Sc}(\tilde{\varepsilon}'\tilde{\varepsilon}) = -\boldsymbol{\varepsilon}'\cdot\boldsymbol{\varepsilon}$. The amplitude's polarization dependence is therefore a single Hermitian pairing of two elements of $\mathbb{M}_-$, and the cross-section is its modulus squared, exactly as a quantum-mechanical amplitude is the modulus squared of a matrix element. Two features of the formula are worth stating. It factors: incident polarization, propagation direction, outgoing direction, and outgoing polarization enter only through the one scalar $\hat{\varepsilon}'\cdot\hat{\varepsilon}$. And it is the **square of a projector**: summing over the two outgoing polarizations by the completeness relation gives
 $$
 \sum_{\lambda'}\bigl|\hat{\varepsilon}\cdot\hat{\varepsilon}'^{(\lambda')}\bigr|^2
 = 1 - \bigl(\hat{\varepsilon}\cdot\hat{\mathbf{k}}'\bigr)^2 = \sin^2\Xi ,

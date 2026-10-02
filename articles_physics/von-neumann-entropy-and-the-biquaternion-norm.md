@@ -26,7 +26,7 @@ $$
 
 the entropy is a function of the single scalar by which the state fails to be idempotent. Pure states are the zero divisors of the biquaternion norm, maximally mixed is its maximum on the state space, and entropy measures the position of the state between them.
 
-This is the informational reading of a geometric fact. The article does not claim that entropy is *derived* from the biquaternion norm in the sense of being forced by it — the function $h$ is the standard one, and its form is a theorem of information theory, not of the algebra — but it makes precise which algebraic invariant the entropy sees. The biquaternion norm supplies the number; information theory supplies the function. Two invariants of the algebra are in play throughout the framework and must not be conflated: the **trace pairing** $\mathrm{Tr}(\tilde{P}\tilde{H})$, which is positive definite and gives the Born rule, and the **biquaternion norm** $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, which is indefinite of signature $(1,3)$ and gives the cone. Entropy belongs to the second.
+This is the informational reading of a geometric fact. The article does not claim that entropy is *derived* from the biquaternion norm in the sense of being forced by it — the function $h$ is the standard one, and its form is a theorem of information theory, not of the algebra — but it makes precise which algebraic invariant the entropy sees. The biquaternion norm supplies the number; information theory supplies the function. Two invariants of the algebra are in play throughout the framework and must not be conflated: the **trace pairing** $\mathrm{Tr}(\tilde{P}\tilde{H})$, which is positive definite and gives the Born rule, and the **biquaternion norm** $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$, which is indefinite of signature $(1,3)$ and gives the cone. Entropy belongs to the second.
 
 The article proceeds as follows. The state, its purity, and the biquaternion norm are recalled and the identities connecting them are derived. Then the spectral decomposition is used to compute the entropy and to write it as a function of the biquaternion norm, and the logarithm is exhibited as an element of the algebra. Then the consequences are collected: monotonicity, bounds, concavity, unitary invariance, and the behaviour at the two ends of the cone slice. Then the relation to the standard matrix formula is stated, and a section separates what the biquaternion-norm description adds from what it merely restates. Open questions and the usual closing sections follow.
 
@@ -73,7 +73,7 @@ The state is pure, $\tilde{\rho}^2 = \tilde{\rho}$, exactly when $|\mathbf{r}|=1
 
 ### The biquaternion norm on $\mathbb{M}_+$
 
-The biquaternion norm of the algebra is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. On a Hermitian element $\tilde{H} = h_0e_0 + i\mathbf{h}$ with real coefficients it is the real scalar
+The biquaternion norm of the algebra is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. On a Hermitian element $\tilde{H} = h_0e_0 + i\mathbf{h}$ with real coefficients it is the real scalar
 
 $$
 N(\tilde{H}) = h_0^2 - |\mathbf{h}|^2 ,
@@ -207,7 +207,7 @@ In the biquaternion-norm description this is the statement that the composition 
 
 ### Unitary invariance
 
-Rotor conjugation by a matrix-unitary biquaternion, $\tilde{\rho}\mapsto\tilde{U}\tilde{\rho}\tilde{U}^\dagger$ with $\tilde{U}\tilde{U}^\dagger = e_0$, rotates the Bloch vector without changing its length. It therefore preserves $N(\tilde{\rho})$, the purity, the spectrum, and the entropy. This is the statement that the entropy is a unitary invariant, as it must be; in the framework it is the statement that $S$ is a function of the biquaternion norm, which the inner automorphisms of the algebra preserve.
+Rotor conjugation by a matrix-unitary biquaternion, $\tilde{\rho}\mapsto\tilde{U}\tilde{\rho}\tilde{U}^{*}$ with $\tilde{U}\tilde{U}^{*} = e_0$, rotates the Bloch vector without changing its length. It therefore preserves $N(\tilde{\rho})$, the purity, the spectrum, and the entropy. This is the statement that the entropy is a unitary invariant, as it must be; in the framework it is the statement that $S$ is a function of the biquaternion norm, which the inner automorphisms of the algebra preserve.
 
 ## Relation to the Standard Formula
 
@@ -280,7 +280,7 @@ The description is the standard qubit entropy, and it predicts nothing new. What
 | $\tilde\Pi_\pm(\hat{\mathbf{r}}) = \tfrac12(e_0\pm i\hat{\mathbf{r}})$ | Spectral idempotents of the state |
 | $\lambda_\pm = \tfrac12(1\pm|\mathbf{r}|)$ | Eigenvalues |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $N(\tilde{H}) = h_0^2 - |\mathbf{h}|^2 = \det M(\tilde{H})$ | Biquaternion norm of a Hermitian element |
 | $N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)e_0$ | Biquaternion norm of a state |
 | $\tilde{\rho}^2 - \tilde{\rho} = -N(\tilde{\rho})e_0$ | Deviation from idempotency |

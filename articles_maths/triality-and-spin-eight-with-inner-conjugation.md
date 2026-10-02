@@ -105,7 +105,7 @@ $\mathrm{Spin}(7)$ being the isotropy in $\mathrm{Spin}(8)$ of a nonzero spinor 
 
 ### The Three Products
 
-**Theorem (the octonionic model of triality, quoted).** Let $\mathbb{O}$ be the octonions with conjugation $x\mapsto\bar x$ and inner product $\langle x,y\rangle=\mathrm{Re}(x\bar y)$. Then the trilinear form of triality is the real part of a product of three octonions,
+**Theorem (the octonionic model of triality, quoted).** Let $\mathbb{O}$ be the octonions with conjugation $x\mapsto x^{\natural}$ and inner product $\langle x,y\rangle=\mathrm{Re}(x y^{\natural})$. Then the trilinear form of triality is the real part of a product of three octonions,
 
 $$
 \Phi(x,y,z)=\langle xy,z\rangle=\mathrm{Re}\bigl((xy)\bar z\bigr),
@@ -114,7 +114,7 @@ $$
 which is invariant under cyclic permutation of its three arguments; and the three legs of the form are the three products
 
 $$
-m_1(x,y)=xy,\qquad m_2(x,y)=\bar xy,\qquad m_3(x,y)=x\bar y,
+m_1(x,y)=xy,\qquad m_2(x,y)=x^{\natural}y,\qquad m_3(x,y)=x y^{\natural},
 $$
 
 which are carried into one another by conjugating one of the two arguments.
@@ -131,9 +131,9 @@ $$
 (xx)y=x(xy),\qquad (xy)y=x(yy),\qquad (xy)z\neq x(yz)\ \text{in general}.
 $$
 
-The other two legs satisfy $m_2(x,y)=m_1(\bar x,y)$ and $m_3(x,y)=m_1(x,\bar y)$, each being obtained from the octonion product by conjugating an argument, and the alternative identities written for $m_1$ do not hold for them: for a unit imaginary $x$ one has $m_2(x,m_2(x,y))=-y$ against $m_2(m_2(x,x),y)=y$, and similarly for $m_3$.
+The other two legs satisfy $m_2(x,y)=m_1(x^{\natural},y)$ and $m_3(x,y)=m_1(x,y^{\natural})$, each being obtained from the octonion product by conjugating an argument, and the alternative identities written for $m_1$ do not hold for them: for a unit imaginary $x$ one has $m_2(x,m_2(x,y))=-y$ against $m_2(m_2(x,x),y)=y$, and similarly for $m_3$.
 
-**Proof.** The alternative laws are the defining identities of the octonions and the failure of associativity is their complement, both recorded in *Octonion Algebra*; the two relations between the legs are the definition of $m_2$ and $m_3$. For the failure, take $x$ unit imaginary, so that $\bar x=-x$ and $x^2=-1$: then $m_2(x,x)=\bar xx=1$, so $m_2(m_2(x,x),y)=y$, while $m_2(x,m_2(x,y))=\bar x(\bar xy)=x(xy)=(xx)y=-y$ by the alternative law for $m_1$.
+**Proof.** The alternative laws are the defining identities of the octonions and the failure of associativity is their complement, both recorded in *Octonion Algebra*; the two relations between the legs are the definition of $m_2$ and $m_3$. For the failure, take $x$ unit imaginary, so that $x^{\natural}=-x$ and $x^2=-1$: then $m_2(x,x)=x^{\natural}x=1$, so $m_2(m_2(x,x),y)=y$, while $m_2(x,m_2(x,y))=x^{\natural}(x^{\natural}y)=x(xy)=(xx)y=-y$ by the alternative law for $m_1$.
 
 **Remark.** Triality is the statement that the three legs are interchangeable, so the failure of associativity of the octonion product is not a defect to be repaired but the freedom that the symmetry permutes. In a setting in which the vector and the two half-spinors carry the three roles, the absence of a preferred one of the three legs is the absence of a preferred one of the three representations. The alternative laws are the part of the structure that is not symmetric among the legs, and they belong to the product $m_1$ alone: the two conjugated legs are not alternative, as the theorem records.
 
@@ -159,7 +159,7 @@ $$
 
 and that coincidence of dimensions holds for $n=8$ alone among the even dimensions. The three modules are pairwise non-isomorphic, the centre of the spin group acting trivially on the vector module and by $-1$ on the two half-spinors, and the volume element separating the two half-spinors by the sign of its eigenvalue. There is a unique invariant trilinear form $\Phi:8_v\otimes8_s\otimes8_c\to\mathbb{R}$, the Clifford action composed with the invariant pairing, and it is the coupling of the three modules.
 
-The Dynkin diagram of $D_4$ has a central node joined to three end nodes, so its automorphism group is $S_3$; consequently $\mathrm{Out}(\mathrm{Spin}(8))\cong S_3$ and there is an outer automorphism $\tau$ of order three that permutes the three eight-dimensional representations cyclically. The fixed-point subgroup of $\tau$ is the exceptional group $G_2$ of dimension $14$, obtained by folding the diagram, and the resulting chain is $\mathrm{Spin}(8)\supset\mathrm{Spin}(7)\supset G_2$, with $\mathrm{Spin}(7)$ the isotropy of a nonzero spinor and $G_2$ the isotropy of a unit octonion, so that $\mathrm{Spin}(7)/G_2$ is the unit sphere of the octonions. In the octonionic model the three legs are the three products $xy$, $\bar xy$ and $x\bar y$, the trilinear form is the real part of a product of three octonions, and the failure of associativity is exactly the freedom that triality permutes, while the alternative laws hold for the octonion product alone. The permutation carries a half-spinor to the vector module, so chirality is a matter of the choice of a leg, and it acts trivially on the centre of the spin group. Triality is confined to dimension eight: no other Dynkin diagram of a simple Lie algebra has an automorphism of order three, and no other dimension has the three modules of equal dimension.
+The Dynkin diagram of $D_4$ has a central node joined to three end nodes, so its automorphism group is $S_3$; consequently $\mathrm{Out}(\mathrm{Spin}(8))\cong S_3$ and there is an outer automorphism $\tau$ of order three that permutes the three eight-dimensional representations cyclically. The fixed-point subgroup of $\tau$ is the exceptional group $G_2$ of dimension $14$, obtained by folding the diagram, and the resulting chain is $\mathrm{Spin}(8)\supset\mathrm{Spin}(7)\supset G_2$, with $\mathrm{Spin}(7)$ the isotropy of a nonzero spinor and $G_2$ the isotropy of a unit octonion, so that $\mathrm{Spin}(7)/G_2$ is the unit sphere of the octonions. In the octonionic model the three legs are the three products $xy$, $x^{\natural}y$ and $x y^{\natural}$, the trilinear form is the real part of a product of three octonions, and the failure of associativity is exactly the freedom that triality permutes, while the alternative laws hold for the octonion product alone. The permutation carries a half-spinor to the vector module, so chirality is a matter of the choice of a leg, and it acts trivially on the centre of the spin group. Triality is confined to dimension eight: no other Dynkin diagram of a simple Lie algebra has an automorphism of order three, and no other dimension has the three modules of equal dimension.
 
 ## Summary of Notation
 
@@ -173,8 +173,8 @@ The Dynkin diagram of $D_4$ has a central node joined to three end nodes, so its
 | $D_4$ | The Dynkin diagram whose three legs are permuted |
 | $G_2=\mathrm{Spin}(8)^{\tau}$ | The fixed-point subgroup, of dimension $14$ |
 | $\mathrm{Spin}(8)\supset\mathrm{Spin}(7)\supset G_2$ | Folding of the diagram, isotropy of a spinor and of a unit octonion |
-| $\mathbb{O}$, $\bar x$, $\langle x,y\rangle$ | Octonions, conjugation and the inner product |
-| $xy$, $\bar xy$, $x\bar y$ | The three legs of the trilinear form |
+| $\mathbb{O}$, $x^{\natural}$, $\langle x,y\rangle$ | Octonions, conjugation and the inner product |
+| $xy$, $x^{\natural}y$, $x y^{\natural}$ | The three legs of the trilinear form |
 
 ## Further Reading
 

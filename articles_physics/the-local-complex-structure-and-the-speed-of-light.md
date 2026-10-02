@@ -10,7 +10,7 @@ is, in this reading, the sign of $i^2$; it is not put into the metric by hand. T
 
 The parent of this article is *Electromagnetism in Media — The Local Complex Structure at Work*, where the local structure is used in a material medium. There the medium supplies the general case and the vacuum is its limit. Here the subject is the structure itself and its relation to the speed of light; the medium appears only as the setting in which the local structure is seen to vary from point to point. The distinction between the global and the local statement is the organising theme, and every step below says which of the two is being claimed.
 
-Throughout, the notation is inherited unchanged from the read-list articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$ and scalar imaginary $i$ commuting with the quaternion units. The two complementary four-dimensional real subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector; the material sector) and $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector; the informational sector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the scalar subspace is $\mathbb{C}_{\mathbb{B}}$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; in vacuum $c=c_0$. One symbol is introduced here and used only here: $J$ denotes an abstract complex structure, and $J_{\mathbb{B}}$ the specific map $\tilde{Q}\mapsto i\tilde{Q}$ on $\mathbb{B}$.
+Throughout, the notation is inherited unchanged from the read-list articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$ and scalar imaginary $i$ commuting with the quaternion units. The two complementary four-dimensional real subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector; the material sector) and $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector; the informational sector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the scalar subspace is $\mathbb{C}_{\mathbb{B}}$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; in vacuum $c=c_0$. One symbol is introduced here and used only here: $J$ denotes an abstract complex structure, and $J_{\mathbb{B}}$ the specific map $\tilde{Q}\mapsto i\tilde{Q}$ on $\mathbb{B}$.
 
 ## Two Senses of "Complex Structure"
 
@@ -132,7 +132,7 @@ so the aperture of the local null cone is exactly $c$. These null directions are
 
 **Route 2: the characteristics of the wave operator.** The biquaternionic gradient and its quaternion conjugate multiply to the d'Alembertian,
 $$
-\Box=\tilde{\nabla}\bar{\tilde{\nabla}}
+\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}
 =\partial_{ict}^2+\Delta
 =\Delta-\frac{1}{c^2}\,\partial_t^2 ,
 $$
@@ -181,7 +181,7 @@ The reading closes no empirical gap and claims no global structure. Its content 
 | $\mathbb{C}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}$ | Scalar subspace, real-quaternion subspace |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Hermitian (informational), anti-Hermitian (material) subspaces |
 | $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ | Sector decomposition; $i\mathbb{M}_-=\mathbb{M}_+$ |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$ | Biquaternion norm; zero divisors where $N=0$ |
+| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; zero divisors where $N=0$ |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula |
 | $J^2=-I$ | Abstract complex structure |
 | $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ | Complex structure of the algebra |
@@ -189,8 +189,8 @@ The reading closes no empirical gap and claims no global structure. Its content 
 | $g_{\mu\nu}=\mathrm{diag}(-c^2,1,1,1)$ | Local metric induced by the local complex structure |
 | $ds^2=-c^2dt^2+d\mathbf x^2$ | Interval; null cone $|d\mathbf x/dt|=c$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Medium speed, vacuum speed |
-| $\tilde{\nabla}=e_0\partial_{ict}+\nabla$, $\bar{\tilde{\nabla}}$ | Biquaternionic gradient and its quaternion conjugate |
-| $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$ | d'Alembertian |
+| $\tilde{\nabla}=e_0\partial_{ict}+\nabla$, $\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
+| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$ | d'Alembertian |
 | $x^0=ict$ | Complex time coordinate |
 
 ## Further Reading

@@ -45,7 +45,7 @@ $$
 
 *Proof.* $(L_aL_b)(z)=a(bz)=(ab)z=L_{ab}(z)$; $(R_aR_b)(z)=(zb)a=z(ba)=R_{ba}(z)$; and $(L_aR_b)(z)=a(zb)=(az)b=(R_bL_a)(z)$. The last identity is associativity and needs no commutativity.
 
-So the map $L\colon a\mapsto L_a$ is an algebra **homomorphism** of $\mathbb B$ into $\operatorname{End}_{\mathbb C}(\mathbb B)$, while $R\colon a\mapsto R_a$ is an algebra **anti**-homomorphism, whose image is therefore a copy of the opposite algebra $\mathbb B^{\mathrm{op}}$. The two families commute elementwise. This is the whole content of the two-sided operator $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\dagger}}$ of the corpus, decomposed into its two factors.
+So the map $L\colon a\mapsto L_a$ is an algebra **homomorphism** of $\mathbb B$ into $\operatorname{End}_{\mathbb C}(\mathbb B)$, while $R\colon a\mapsto R_a$ is an algebra **anti**-homomorphism, whose image is therefore a copy of the opposite algebra $\mathbb B^{\mathrm{op}}$. The two families commute elementwise. This is the whole content of the two-sided operator $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde{Q}^{*}}$ of the corpus, decomposed into its two factors.
 
 **Theorem (the double centraliser).** The commutant of the left multiplications is exactly the right multiplications, and likewise with the roles exchanged:
 
@@ -104,7 +104,7 @@ so that $\mathbb B^{\mathrm e}\cong M_4(\mathbb C)$ and the left action of $\mat
 
 *Proof.* Both sides have complex dimension $16$, so it suffices that the map is injective. Let $\sum_i x_i\otimes y_i^{\mathrm{op}}$ act as zero: $\sum_i x_i z y_i=0$ for all $z\in\mathbb B$. Taking $z$ running over a basis of matrix units $E_{ab}$ of $\mathbb B\cong M_2(\mathbb C)$ and using the independence of the $E_{ab}$ gives $\sum_i x_i\otimes y_i^{\mathrm{op}}=0$, so the kernel is trivial. A linear injection between spaces of equal finite dimension is an isomorphism. The endomorphism algebra of the four-dimensional complex space $\mathbb B$ is $M_4(\mathbb C)$. Verified numerically: the $\mathbb R$-span of the $64$ operators $L_xR_y$ with $x,y$ running over a real basis of $\mathbb B$ has real dimension $32$, which is $\dim_{\mathbb R}\operatorname{End}_{\mathbb C}(\mathbb B)=2\cdot 16$, and the $64$ elements $x_i\otimes y_j^{\mathrm{op}}$ on a $\mathbb C$-basis are linearly independent.
 
-**Corollary (the two-sided operators are the elementary tensors).** The two-sided operator $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\dagger}}$ is the image of the elementary tensor $\tilde Q\otimes(\tilde Q^{\dagger})^{\mathrm{op}}$, and the mixed operators $L_aR_b$ are the images of $a\otimes b^{\mathrm{op}}$. The corpus's two-sided family is therefore the set of **rank-one** (elementary) elements of the enveloping algebra, a small subset of it.
+**Corollary (the two-sided operators are the elementary tensors).** The two-sided operator $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde{Q}^{*}}$ is the image of the elementary tensor $\tilde Q\otimes(\tilde{Q}^{*})^{\mathrm{op}}$, and the mixed operators $L_aR_b$ are the images of $a\otimes b^{\mathrm{op}}$. The corpus's two-sided family is therefore the set of **rank-one** (elementary) elements of the enveloping algebra, a small subset of it.
 
 ## The Conway Operator Basis
 
@@ -209,7 +209,7 @@ $$
 
 for $F^{\mathsf T}$ the plain matrix transpose, and the two agree exactly when $D$ acts trivially, in particular for the operators that fix $e_0$ and preserve the vector part. Verified on random operators, to machine precision.
 
-**Proposition (coefficient conjugation and the Hermitian adjoint).** Let $\bar F( )=\sum\bar z_{nm}e_n[\,]e_m$ be the function obtained by conjugating the coefficients, and let $F^{*}$ be the adjoint of $F$ with respect to the Hermitian form $(\tilde X,\tilde Y)=\mathrm{Sc}(\tilde X^{\dagger}\tilde Y)=\sum_\mu\tilde X_\mu^{*}\tilde Y_\mu$ of *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, $(\tilde F(X),Y)=(X,F^{*}(Y))$. Then
+**Proposition (coefficient conjugation and the Hermitian adjoint).** Let $\bar F( )=\sum\bar z_{nm}e_n[\,]e_m$ be the function obtained by conjugating the coefficients, and let $F^{*}$ be the adjoint of $F$ with respect to the Hermitian form $(\tilde X,\tilde Y)=\mathrm{Sc}(\tilde{X}^{*}\tilde Y)=\sum_\mu\tilde X_\bar{\mu}\tilde Y_\mu$ of *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, $(\tilde F(X),Y)=(X,F^{*}(Y))$. Then
 
 $$
 \bar F^{\approx}=D\,F^{*}D .
@@ -281,7 +281,7 @@ The two structural statements were checked numerically on the biquaternion algeb
 
 1. **The physical assignment.** Which tensor factor of $\mathbb B^{\mathrm e}$ carries the spin and which the internal quantum numbers of the physical Dirac field? The algebra settles the existence of both actions; the assignment is the remaining physical question, and the conserved-current constraint of *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* is the natural tool.
 
-2. **The two-sided operators as rank-one elements.** The corpus's two-sided operators $\Theta_{\tilde Q}$ are the elementary tensors $\tilde Q\otimes(\tilde Q^{\dagger})^{\mathrm{op}}$. Does the corpus's classification of the two-sided operators (self-adjoint, unitary, and the rest) become the classification of elementary tensors by their factors, and does the enveloping algebra give the general operator a decomposition into such elementary pieces?
+2. **The two-sided operators as rank-one elements.** The corpus's two-sided operators $\Theta_{\tilde Q}$ are the elementary tensors $\tilde Q\otimes(\tilde{Q}^{*})^{\mathrm{op}}$. Does the corpus's classification of the two-sided operators (self-adjoint, unitary, and the rest) become the classification of elementary tensors by their factors, and does the enveloping algebra give the general operator a decomposition into such elementary pieces?
 
 3. **The enveloping algebra and the trace.** The trace form $\operatorname{Tr}(\tilde Q_1\tilde Q_2)=2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$ is the algebra's $\mathbb C$-bilinear pairing. Does it extend to a trace on $\mathbb B^{\mathrm e}\cong M_4(\mathbb C)$, and is the resulting trace the one the corpus's spectral article uses on the operators?
 
@@ -312,7 +312,7 @@ The biquaternion algebra acts on itself from the left and from the right, and th
 | $(x\otimes y^{\mathrm{op}})\cdot z=xzy$ | The sandwich action |
 | $\mathbb B^{\mathrm e}\cong\operatorname{End}_{\mathbb C}(\mathbb B)$ | The main theorem |
 | ${}_{\mathbb B}\mathbb B_{\mathbb B}$ | The regular bi-module; a left $\mathbb B^{\mathrm e}$-module |
-| $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\dagger}}$ | The two-sided operator; the elementary tensor $\tilde Q\otimes(\tilde Q^{\dagger})^{\mathrm{op}}$ |
+| $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde{Q}^{*}}$ | The two-sided operator; the elementary tensor $\tilde Q\otimes(\tilde{Q}^{*})^{\mathrm{op}}$ |
 
 ## Further Reading
 

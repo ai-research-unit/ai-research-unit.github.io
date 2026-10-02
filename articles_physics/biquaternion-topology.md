@@ -2,13 +2,13 @@
 
 ## Introduction
 
-This article describes the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ as a topological space, together with the two subsets of it that the framework singles out: the Euclidean unit sphere and the null cone. It then reads the projective geometry of that cone: the Segre embedding, the two rulings of null planes, the projective null quadric $Q^2$ with its tangency and its polarity, the Klein–Plücker geometry of the lines of $\mathbb{P}^3$, and the automorphisms of the quadric. It uses the algebra and the six distinguished subspaces of *Biquaternion Algebra*, the coordinates, the $ict$ assignment and the sector split of *Conventions in the Biquaternion Universe*, and the biquaternion norm $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ and the invertibility criterion of *Biquaternion Norm and Invertibility*. The form itself is not re-derived here.
+This article describes the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ as a topological space, together with the two subsets of it that the framework singles out: the Euclidean unit sphere and the null cone. It then reads the projective geometry of that cone: the Segre embedding, the two rulings of null planes, the projective null quadric $Q^2$ with its tangency and its polarity, the Klein–Plücker geometry of the lines of $\mathbb{P}^3$, and the automorphisms of the quadric. It uses the algebra and the six distinguished subspaces of *Biquaternion Algebra*, the coordinates, the $ict$ assignment and the sector split of *Conventions in the Biquaternion Universe*, and the biquaternion norm $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ and the invertibility criterion of *Biquaternion Norm and Invertibility*. The form itself is not re-derived here.
 
 The norm vanishes exactly on the zero divisors together with the origin (*Biquaternion Norm and Invertibility*, *Biquaternion Zero Divisors*); the algebraic treatment is in those two articles, and the geometric treatment, as the equation of a quadric, is the second half of this article. Physically the null quadric is the celestial sphere of the light cone: a null direction of the material sector $\mathbb{M}_-$ is a point of $Q^2\cong\mathbb{P}^1\times\mathbb{P}^1$, and the two rulings of the quadric are the left- and right-handed Weyl spinors; its polarity is the Hodge duality of the field strengths, the map that exchanges the electric and magnetic fields.
 
 **Scope.** The topology of the **group of units** $\mathbb{B}^\times$ — the polar decomposition, the retractions onto the compact subgroups, the homotopy groups, the universal cover and the connected components — belongs to the Lie theory of the algebra and is treated in *The Biquaternion Unit Group as a Topological Group*. The differentiability statement that the null cone is smooth away from the apex belongs to *Biquaternion Analysis*, where the derivative is available. This article owns the ambient space, its distinguished subsets and the projective geometry of the null cone.
 
-**Conventions.** The units are $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, the central scalar imaginary is $i$, and $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q})=\sum_\mu Q_\mu^2$, and the Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^2)^{1/2}$, which is the square root of the scalar part of the Hermitian form $\tilde{Q}\tilde{Q}^\dagger$.
+**Conventions.** The units are $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, the central scalar imaginary is $i$, and $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q})=\sum_\mu Q_\mu^2$, and the Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^2)^{1/2}$, which is the square root of the scalar part of the Hermitian form $\tilde{Q}\tilde{Q}^{*}$.
 
 ## The Underlying Space and its Contractibility
 
@@ -196,7 +196,7 @@ $$
 \mathbb{B}^\times=\{\tilde{Q} : N(\tilde{Q})\ne 0\}=\mathbb{B}\setminus\mathcal{N},
 $$
 
-because the inverse formula $\tilde{Q}^{-1}=\bar{\tilde{Q}}/N(\tilde{Q})$ requires exactly $N(\tilde{Q})\ne0$. Since $N$ is a continuous complex-valued function, $\mathbb{B}^\times$ is open, and $\mathcal{N}$ is closed. The null cone has empty interior, because it is a proper real algebraic subvariety of an eight-dimensional space, so the group of units is dense in $\mathbb{B}$. Therefore
+because the inverse formula $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/N(\tilde{Q})$ requires exactly $N(\tilde{Q})\ne0$. Since $N$ is a continuous complex-valued function, $\mathbb{B}^\times$ is open, and $\mathcal{N}$ is closed. The null cone has empty interior, because it is a proper real algebraic subvariety of an eight-dimensional space, so the group of units is dense in $\mathbb{B}$. Therefore
 
 $$
 \partial\,\mathbb{B}^\times=\overline{\mathbb{B}^\times}\cap\overline{\mathcal{N}}=\mathbb{B}\cap\mathcal{N}=\mathcal{N},

@@ -49,7 +49,7 @@ The dual lattice is the set of vectors whose inner products with the lattice are
 |---|---|---|
 | the dual lattice $\Lambda^*$ | the vectors $y$ with $x\cdot y \in \mathbb{Z}$ for all $x \in \Lambda$ | *Lattices and the Quaternion Lattice* |
 | the discriminant of the form | the determinant of the Gram matrix up to squares, an invariant of the isometry class | *Bilinear Forms*, §Congruence and the Discriminant |
-| the integrality of the norm | the norm $N(x) = x\bar x$ is integer-valued on the Lipschitz and the Hurwitz lattice | *Lattices and the Quaternion Lattice* |
+| the integrality of the norm | the norm $N(x) = x x^{\natural}$ is integer-valued on the Lipschitz and the Hurwitz lattice | *Lattices and the Quaternion Lattice* |
 | the discriminant $d_K$ of a number field | the determinant of an integral basis of $\mathcal{O}_K$ | *Algebraic Number Theory* |
 | the ring of integers $\mathcal{O}_K$ | a lattice of rank $n = [K:\mathbb{Q}]$, with an integral basis | *Algebraic Number Theory* |
 
@@ -65,8 +65,8 @@ An integral form is a bilinear or quadratic form taking integral values on a lat
 | the polar form $g(u,v) = \tfrac12(q(u+v)-q(u)-q(v))$ | the bilinear form associated with a quadratic form | *Quadratic Forms and Polarisation* |
 | an integral bilinear form | a symmetric bilinear form with integral values on the lattice | *Bilinear Forms* |
 | the Gram matrix of a form | the matrix of an integral form, an integral matrix | *Bilinear Forms* |
-| the norm $N(x) = x\bar x$ | the quadratic form of the quaternion algebra, integral on the quaternion lattices | *Lattices and the Quaternion Lattice* |
-| the polar form $(x,y) = \operatorname{Sc}(x\bar y)$ | the Euclidean dot product, the polar form of the norm | *Lattices and the Quaternion Lattice* |
+| the norm $N(x) = x x^{\natural}$ | the quadratic form of the quaternion algebra, integral on the quaternion lattices | *Lattices and the Quaternion Lattice* |
+| the polar form $(x,y) = \operatorname{Sc}(x y^{\natural})$ | the Euclidean dot product, the polar form of the norm | *Lattices and the Quaternion Lattice* |
 | the radical of an integral form | the vectors orthogonal to the whole space, the obstruction to nondegeneracy | *Bilinear Forms*, §Rank and the Radical |
 
 The passage from an integral form to a lattice and back is the arithmetic content of the geometry: the Gram matrix of a basis is the matrix of the form, the covolume is its determinant, the dual lattice is the lattice of the inverse form, and the integrality of the form is the condition $\Lambda\subseteq\Lambda^*$. The norm of the quaternion algebra is the classical example of an integral quaternary form, and its polar form is the Euclidean dot product.
@@ -111,7 +111,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $G = (v_i\cdot v_j)$, $\operatorname{covol}(\Lambda) = \sqrt{\det G}$ | Gram matrix and covolume |
 | $\mathbb{Z}^n$, $A\mathbb{Z}^n$ | Elementary lattice and its linear images |
 | $\mathcal{O}_K$, $d_K$ | Ring of integers and discriminant of a number field |
-| $q$, $g(u,v)$, $N(x) = x\bar x$ | Quadratic form, polar form, quaternion norm |
+| $q$, $g(u,v)$, $N(x) = x x^{\natural}$ | Quadratic form, polar form, quaternion norm |
 | $\mathbb{H}(\mathbb{Z})$, $\mathbb{H}'(\mathbb{Z})$ | Lipschitz lattice, Hurwitz lattice |
 | $\omega = \tfrac12(1+e_1+e_2+e_3)$ | Half-integral generator of the Hurwitz order |
 | $\mu(G/\Gamma)$, $\operatorname{covol}(\Gamma)$ | Haar measure and covolume of a lattice in a Lie group |

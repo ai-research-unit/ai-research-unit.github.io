@@ -178,10 +178,10 @@ The reduced state $\rho_1 = \frac{1}{2} e_0$ has three notable properties.
 
 **1. It is a mixed state.** In the biquaternion framework, a general state of $\mathbb{M}_+$ has the form $\rho = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}| \leq 1$. The pure states are the ones with $|\mathbf{r}| = 1$ (the idempotents), and the maximally mixed state is the one with $\mathbf{r} = 0$. The reduced state $\rho_1 = \frac{1}{2} e_0$ corresponds to $\mathbf{r} = 0$, i.e., the center of the Bloch ball. It is a mixed state, at the maximal distance from the pure states.
 
-**2. It is invariant under all unitary transformations.** Under a rotor conjugation $\rho_1 \mapsto \tilde{U}\rho_1\tilde{U}^\dagger$ with $\tilde{U}\tilde{U}^\dagger = e_0$, the reduced state is unchanged:
+**2. It is invariant under all unitary transformations.** Under a rotor conjugation $\rho_1 \mapsto \tilde{U}\rho_1\tilde{U}^{*}$ with $\tilde{U}\tilde{U}^{*} = e_0$, the reduced state is unchanged:
 
 $$
-\tilde{U}\left(\tfrac{1}{2}e_0\right)\tilde{U}^\dagger = \tfrac{1}{2}\tilde{U}\tilde{U}^\dagger = \tfrac{1}{2}e_0.
+\tilde{U}\left(\tfrac{1}{2}e_0\right)\tilde{U}^{*} = \tfrac{1}{2}\tilde{U}\tilde{U}^{*} = \tfrac{1}{2}e_0.
 $$
 
 This invariance is a specific property of the maximally mixed state.

@@ -52,22 +52,22 @@ because $\sum_in_ie_i = n$. If $N(n) = 0$ then $n$ is a zero divisor by *Split-Q
 **Definition.** The **scalar product** of two functions is
 
 $$
-\langle f, g\rangle = \int_{\Omega} \operatorname{Sc}\big(f\, \bar{g}\big),
+\langle f, g\rangle = \int_{\Omega} \operatorname{Sc}\big(f\, g^{\natural}\big),
 $$
 
 and the associated pairing is real-valued and non-degenerate in each variable pointwise.
 
-**Theorem (The Adjoint of Left Multiplication).** For $i = 1,2,3$, left multiplication by $e_i$ has adjoint left multiplication by $-e_i$ with respect to the pointwise pairing $\operatorname{Sc}(f\bar g)$:
+**Theorem (The Adjoint of Left Multiplication).** For $i = 1,2,3$, left multiplication by $e_i$ has adjoint left multiplication by $-e_i$ with respect to the pointwise pairing $\operatorname{Sc}(f g^{\natural})$:
 
 $$
-\operatorname{Sc}\big((e_i f)\bar g\big) = -\operatorname{Sc}\big(f\,\overline{e_i g}\big) , \qquad i = 1,2,3,
+\operatorname{Sc}\big((e_i f)g^{\natural}\big) = -\operatorname{Sc}\big(f\,(e_i g)^{\natural}\big) , \qquad i = 1,2,3,
 $$
 
 while for the identity generator $e_0 = 1$ the same identity holds with the sign $+$.
 
-**Proof.** The scalar part is invariant under cyclic permutations, $\operatorname{Sc}(\tilde q yz) = \operatorname{Sc}(yz\tilde q)$, since $\operatorname{Sc}$ is the trace form of the algebra; hence $\operatorname{Sc}(e_if\bar g) = \operatorname{Sc}(f\bar g e_i) = \operatorname{Sc}(f\,\overline{\bar e_i g})$ because $\tilde q \mapsto \bar{\tilde q}$ is an anti-automorphism. Now $\bar e_i = -e_i$ for $i = 1,2,3$ and $\bar e_0 = e_0$, which gives the two signs; they are confirmed by evaluating both sides on the basis.
+**Proof.** The scalar part is invariant under cyclic permutations, $\operatorname{Sc}(\tilde q yz) = \operatorname{Sc}(yz\tilde q)$, since $\operatorname{Sc}$ is the trace form of the algebra; hence $\operatorname{Sc}(e_if g^{\natural}) = \operatorname{Sc}(f g^{\natural} e_i) = \operatorname{Sc}(f\,\overline{e_i^{\natural} g})$ because $\tilde q \mapsto \tilde{q}^{\natural}$ is an anti-automorphism. Now $e_i^{\natural} = -e_i$ for $i = 1,2,3$ and $e_0^{\natural} = e_0$, which gives the two signs; they are confirmed by evaluating both sides on the basis.
 
-**Corollary (The Formal Adjoint of the Vector Operator).** The operator $D = e_1\partial_{q_1} + e_2\partial_{q_2} + e_3\partial_{q_3}$ is formally *self-adjoint* with respect to the scalar product $\langle f,g\rangle = \int\operatorname{Sc}(f\bar g)$: the two signs cancel in
+**Corollary (The Formal Adjoint of the Vector Operator).** The operator $D = e_1\partial_{q_1} + e_2\partial_{q_2} + e_3\partial_{q_3}$ is formally *self-adjoint* with respect to the scalar product $\langle f,g\rangle = \int\operatorname{Sc}(f g^{\natural})$: the two signs cancel in
 
 $$
 (e_i\partial_i)^* = \partial_i^*\,\big(\text{left multiplication by } e_i\big)^* = (-\partial_i)(-e_i) = e_i\partial_i ,
@@ -76,7 +76,7 @@ $$
 so that $D^* = D$. With the boundary term retained, integration by parts gives
 
 $$
-\langle Df, g\rangle = \langle f, Dg\rangle + \int_{\partial\Omega}\operatorname{Sc}\big(f\,n\,\bar g\big) .
+\langle Df, g\rangle = \langle f, Dg\rangle + \int_{\partial\Omega}\operatorname{Sc}\big(f\,n\,g^{\natural}\big) .
 $$
 
 **Proof.** Integration by parts with a vanishing boundary term gives $\partial_i^* = -\partial_i$, and the adjoint of left multiplication by $e_i$ is left multiplication by $-e_i$ by the theorem, for $i = 1,2,3$; the product of the two signs is $+1$. The boundary term is the contribution of the boundary term in that integration by parts, its form taken from the divergence theorem of the first section.
@@ -220,7 +220,7 @@ for every $f$ with compact support, so that $E_D*f$ is a solution of the inhomog
 
 The singularities of the inverse on the null cone are treated distributionally, exactly as in the theory of the wave operator.
 
-**Theorem (The Principal Value of the Inverse).** The locally integrable function $1/N(\tilde q)$ on the algebra, and the distribution $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$ on the vector subspace, have well-defined principal values: for a test function $\varphi$,
+**Theorem (The Principal Value of the Inverse).** The locally integrable function $1/N(\tilde q)$ on the algebra, and the distribution $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$ on the vector subspace, have well-defined principal values: for a test function $\varphi$,
 
 $$
 \Big\langle \mathrm{pv}\frac{1}{N},\, \varphi\Big\rangle = \lim_{\varepsilon\to0}\int_{|N(\tilde q)|>\varepsilon}\frac{\varphi(\tilde q)}{N(\tilde q)}\,\mathrm{d}\tilde q ,

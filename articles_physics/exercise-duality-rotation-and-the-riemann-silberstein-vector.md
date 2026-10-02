@@ -4,7 +4,7 @@
 
 This is an exercise in the electromagnetism series. It applies *The Field-Strength Biquaternion and Its Invariants* and its parent *Maxwell's Equations in the Biquaternionic Formulation*: the field-strength biquaternion, the Riemann–Silberstein vector, the two invariants, the duality rotation, the energy density and the Poynting vector are inherited from those articles unchanged. The universal three — *Introduction to the Biquaternion Universe*, *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — supply the algebra and the fixed-point subspace names.
 
-**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and the product rule $e_je_k = -\delta_{jk}e_0 + \epsilon_{jkm}e_m$; the scalar imaginary $i$, $i^2 = -1$, commuting with the quaternion units; the anti-Hermitian subspace $\mathbb{M}_-$ (material) and the Hermitian subspace $\mathbb{M}_+$ (informational), with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the complex-scalar subspace $\mathbb{C}_{\mathbb{B}}$; the conjugations $\bar{\cdot}$ (quaternion), ${}^*$ (complex) and ${}^\dagger = \bar{\cdot}^{\,*}$; the biquaternionic gradient $\tilde\nabla = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate $\bar{\tilde\nabla}$ and the d'Alembertian $\Box = \tilde\nabla\bar{\tilde\nabla} = \bar{\tilde\nabla}\tilde\nabla$; the field-strength biquaternion
+**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and the product rule $e_je_k = -\delta_{jk}e_0 + \epsilon_{jkm}e_m$; the scalar imaginary $i$, $i^2 = -1$, commuting with the quaternion units; the anti-Hermitian subspace $\mathbb{M}_-$ (material) and the Hermitian subspace $\mathbb{M}_+$ (informational), with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the complex-scalar subspace $\mathbb{C}_{\mathbb{B}}$; the conjugations ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex) and ${}^{*} = ({}^{\natural})^{\,*}$; the biquaternionic gradient $\tilde\nabla = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate $\tilde\nabla^{\natural}$ and the d'Alembertian $\Box = \tilde\nabla\tilde\nabla^{\natural} = \tilde\nabla^{\natural}\tilde\nabla$; the field-strength biquaternion
 $$
 \tilde F = \mathbf F = i\sqrt{\epsilon}\,\mathbf E - \sqrt{\mu}\,\mathbf H,
 \qquad \mathrm{Sc}(\tilde F)=0,
@@ -19,7 +19,7 @@ $$
 W = \tfrac12\left(\epsilon\,\mathbf E^2 + \mu\,\mathbf H^2\right),
 \qquad \mathbf S = \mathbf E\times\mathbf H,
 $$
-with $\tilde F\tilde F^\dagger = 2W e_0 + \tfrac{2i}{c}\mathbf S$; and the trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$ of the informational sector. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\mathbf v$ (and $\mathbf u$) denotes a frame velocity.
+with $\tilde F\tilde F^{*} = 2W e_0 + \tfrac{2i}{c}\mathbf S$; and the trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$ of the informational sector. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\mathbf v$ (and $\mathbf u$) denotes a frame velocity.
 
 **What is to be shown.** (1) The duality rotation, in its three-vector form, is exactly the phase rotation $\mathbf V\mapsto e^{-i\theta}\mathbf V$, hence $\tilde F\mapsto e^{-i\theta}\tilde F$, and it preserves the physical reality condition on the fields. (2) Duality preserves the Hermitian form — the energy density $W$ and the Poynting vector $\mathbf S$ — while it rotates the biquaternion norm by $e^{-2i\theta}$, rotating the pair $(I_1,2cI_2)$ by the doubled angle $2\theta$ and leaving $I_1^2 + 4c^2I_2^2$ invariant. (3) Duality is a symmetry of the source-free equations; with electric sources alone it is not a symmetry, and its sourced completion rotates electric charge into magnetic charge. (4) The parent's self-dual/anti-self-dual paragraph contains a notation defect: the object paired with $\mathbf V$ is the complex conjugate $\mathbf V^*$, not the quaternion conjugate $\bar{\mathbf V}$. (5) The parent's claim that the two pieces transform independently under the Lorentz group is not backed by a biquaternion transformation law, and the natural guess — the four-vector rotor conjugation — fails on a boost.
 
@@ -95,7 +95,7 @@ by construction, so the transformed object is again a physical field strength of
 
 ## Problem 2: Duality and the Quadratic Objects
 
-**Statement.** (a) Compute $\mathbf V\cdot\mathbf V$ in terms of the invariants and derive the transformation of $I_1$ and $I_2$ under duality. (b) Derive the transformation of the biquaternion norm $N(\tilde F)=\tilde F\bar{\tilde F}$ and identify the combination of invariants that duality leaves fixed. (c) Show that the Hermitian form $\tilde F\tilde F^\dagger$, equivalently the energy density $W$ and the Poynting vector $\mathbf S$, is invariant. (d) Check all of this on two explicit fields: a generic field with nonzero $\mathbf E$ and $\mathbf B$, and a free plane wave (a null field).
+**Statement.** (a) Compute $\mathbf V\cdot\mathbf V$ in terms of the invariants and derive the transformation of $I_1$ and $I_2$ under duality. (b) Derive the transformation of the biquaternion norm $N(\tilde F)=\tilde F\tilde F^{\natural}$ and identify the combination of invariants that duality leaves fixed. (c) Show that the Hermitian form $\tilde F\tilde F^{*}$, equivalently the energy density $W$ and the Poynting vector $\mathbf S$, is invariant. (d) Check all of this on two explicit fields: a generic field with nonzero $\mathbf E$ and $\mathbf B$, and a free plane wave (a null field).
 
 **Solution (a).** Expanding the complex dot product,
 $$
@@ -115,9 +115,9 @@ I_1'^2 + 4c^2I_2'^2 = I_1^2 + 4c^2I_2^2 = \left|\mathbf V\cdot\mathbf V\right|^2
 = \frac{1}{\epsilon^2}\left|N(\tilde F)\right|^2 .
 $$
 
-**Solution (b).** Since $\tilde F = i\sqrt{\epsilon}\mathbf V$ and $\bar{\tilde F} = -\tilde F$ for a pure vector,
+**Solution (b).** Since $\tilde F = i\sqrt{\epsilon}\mathbf V$ and $\tilde F^{\natural} = -\tilde F$ for a pure vector,
 $$
-N(\tilde F) = \tilde F\bar{\tilde F} = \mathbf F\cdot\mathbf F = \left(i\sqrt{\epsilon}\right)^2\mathbf V\cdot\mathbf V
+N(\tilde F) = \tilde F\tilde F^{\natural} = \mathbf F\cdot\mathbf F = \left(i\sqrt{\epsilon}\right)^2\mathbf V\cdot\mathbf V
 = -\epsilon\left(I_1 + 2ic\,I_2\right).
 $$
 Under $\tilde F\mapsto e^{-i\theta}\tilde F$, and because the central scalar $e^{-i\theta}$ is fixed by quaternion conjugation,
@@ -126,14 +126,14 @@ N(\tilde F) \mapsto e^{-2i\theta}\,N(\tilde F),
 $$
 which reproduces the rotation of $(I_1,2cI_2)$ obtained in part (a). The quantity $I_1^2 + 4c^2I_2^2$ is invariant under duality as well as under Lorentz transformations; each of $I_1$ and $I_2$ is separately Lorentz invariant, but duality mixes them, so only this combination is invariant under both.
 
-**Solution (c).** From the parent article, $\tilde F\tilde F^\dagger = 2W e_0 + \frac{2i}{c}\mathbf S$. Under duality,
+**Solution (c).** From the parent article, $\tilde F\tilde F^{*} = 2W e_0 + \frac{2i}{c}\mathbf S$. Under duality,
 $$
-\tilde F\tilde F^\dagger \mapsto
+\tilde F\tilde F^{*} \mapsto
 \left(e^{-i\theta}\tilde F\right)\left(e^{-i\theta}\tilde F\right)^\dagger
-= e^{-i\theta}\tilde F\,\tilde F^\dagger e^{i\theta}
-= \tilde F\tilde F^\dagger,
+= e^{-i\theta}\tilde F\,\tilde F^{*} e^{i\theta}
+= \tilde F\tilde F^{*},
 $$
-because the phase is central and $\left(e^{-i\theta}\tilde F\right)^\dagger = e^{i\theta}\tilde F^\dagger$. Hence both $W$ and $\mathbf S$ are invariant. Directly, the real duality rotation is an orthogonal rotation of $(\mathbf E,c\mathbf B)$, so
+because the phase is central and $\left(e^{-i\theta}\tilde F\right)^\dagger = e^{i\theta}\tilde F^{*}$. Hence both $W$ and $\mathbf S$ are invariant. Directly, the real duality rotation is an orthogonal rotation of $(\mathbf E,c\mathbf B)$, so
 $$
 \mathbf E'^2 + c^2\mathbf B'^2 = \mathbf E^2 + c^2\mathbf B^2,
 \qquad
@@ -245,7 +245,7 @@ $$
 $$
 so the quaternion conjugate transforms with $e^{-i\theta}$, not with $e^{+i\theta}$.
 
-**Solution (b).** In the parent's conventions the symbol $\bar{\cdot}$ is the quaternion conjugate and ${}^*$ is the complex conjugate. Part (a) shows that the object whose duality image is $e^{+i\theta}$ times itself is the complex conjugate $\mathbf V^*$, not the quaternion conjugate $\bar{\mathbf V}$. As written, the parent's first displayed equation,
+**Solution (b).** In the parent's conventions the symbol ${}^{\natural}$ is the quaternion conjugate and $\bar{\cdot}$ is the complex conjugate. Part (a) shows that the object whose duality image is $e^{+i\theta}$ times itself is the complex conjugate $\mathbf V^*$, not the quaternion conjugate $\bar{\mathbf V}$. As written, the parent's first displayed equation,
 $$
 \mathbf V \mapsto e^{-i\theta}\mathbf V,
 \qquad \bar{\mathbf V} \mapsto e^{+i\theta}\bar{\mathbf V},
@@ -262,23 +262,23 @@ whose three complex components are the six real components of $(\mathbf E,c\math
 
 ## Problem 5: The Lorentz Transformation of the Field Strength — a Gap in the Parent
 
-**Statement.** The parent states that "the two pieces transform independently under the Lorentz group, in the two three-dimensional complex representations." (a) Write down the natural biquaternion candidate for the Lorentz action, by analogy with the four-vector law $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$, and test it on a pure spatial rotation. (b) Test the same candidate on a pure boost. (c) Identify a transformation that reproduces the standard boost, and state what this implies about the parent's claim.
+**Statement.** The parent states that "the two pieces transform independently under the Lorentz group, in the two three-dimensional complex representations." (a) Write down the natural biquaternion candidate for the Lorentz action, by analogy with the four-vector law $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda^{*}$, and test it on a pure spatial rotation. (b) Test the same candidate on a pure boost. (c) Identify a transformation that reproduces the standard boost, and state what this implies about the parent's claim.
 
-**Solution (a).** For a unit-norm biquaternion $\tilde\Lambda$ (so $\tilde\Lambda\bar{\tilde\Lambda} = e_0$), the four-vector law of the parents is
+**Solution (a).** For a unit-norm biquaternion $\tilde\Lambda$ (so $\tilde\Lambda\tilde\Lambda^{\natural} = e_0$), the four-vector law of the parents is
 $$
-\tilde{Q} \mapsto \tilde\Lambda\,\tilde{Q}\,\tilde\Lambda^\dagger .
+\tilde{Q} \mapsto \tilde\Lambda\,\tilde{Q}\,\tilde\Lambda^{*} .
 $$
 The natural candidate for the field strength is the same conjugation,
 $$
-\tilde F \mapsto \tilde\Lambda\,\tilde F\,\tilde\Lambda^\dagger .
+\tilde F \mapsto \tilde\Lambda\,\tilde F\,\tilde\Lambda^{*} .
 $$
-For a pure spatial rotation the rotor is a real quaternion, $\tilde\Lambda = \cos(\varphi/2) + \sin(\varphi/2)\,\hat{\mathbf u}$, with $\tilde\Lambda^\dagger = \tilde\Lambda^{-1}$. Take $\hat{\mathbf u} = e_3$ and a field with $\mathbf E = E_0 e_1$, $\mathbf B = 0$, so $\tilde F = i\sqrt{\epsilon}E_0 e_1$. The standard rotation gives $\mathbf E' = E_0(\cos\varphi\,e_1 + \sin\varphi\,e_2)$, $\mathbf B'=0$, and indeed
+For a pure spatial rotation the rotor is a real quaternion, $\tilde\Lambda = \cos(\varphi/2) + \sin(\varphi/2)\,\hat{\mathbf u}$, with $\tilde\Lambda^{*} = \tilde\Lambda^{-1}$. Take $\hat{\mathbf u} = e_3$ and a field with $\mathbf E = E_0 e_1$, $\mathbf B = 0$, so $\tilde F = i\sqrt{\epsilon}E_0 e_1$. The standard rotation gives $\mathbf E' = E_0(\cos\varphi\,e_1 + \sin\varphi\,e_2)$, $\mathbf B'=0$, and indeed
 $$
-\tilde\Lambda\,e_1\,\tilde\Lambda^\dagger = \cos\varphi\,e_1 + \sin\varphi\,e_2 ,
+\tilde\Lambda\,e_1\,\tilde\Lambda^{*} = \cos\varphi\,e_1 + \sin\varphi\,e_2 ,
 $$
 so
 $$
-\tilde\Lambda\,\tilde F\,\tilde\Lambda^\dagger = i\sqrt{\epsilon}E_0\left(\cos\varphi\,e_1 + \sin\varphi\,e_2\right) = \tilde F' .
+\tilde\Lambda\,\tilde F\,\tilde\Lambda^{*} = i\sqrt{\epsilon}E_0\left(\cos\varphi\,e_1 + \sin\varphi\,e_2\right) = \tilde F' .
 $$
 On a pure rotation the candidate works.
 
@@ -287,7 +287,7 @@ $$
 \tilde\Lambda = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,e_3,
 \qquad \tanh\psi = \frac{u}{c},
 $$
-which is Hermitian, $\tilde\Lambda^\dagger = \tilde\Lambda$. For simplicity set $\epsilon = \mu = 1$, so $c = 1$ and $\mathbf H = \mathbf B$, and take the same transverse electric field $\mathbf E = E_0 e_1$, $\mathbf B = 0$, so $\tilde F = iE_0 e_1$. The standard boost formulas of the parent give
+which is Hermitian, $\tilde\Lambda^{*} = \tilde\Lambda$. For simplicity set $\epsilon = \mu = 1$, so $c = 1$ and $\mathbf H = \mathbf B$, and take the same transverse electric field $\mathbf E = E_0 e_1$, $\mathbf B = 0$, so $\tilde F = iE_0 e_1$. The standard boost formulas of the parent give
 $$
 \mathbf E' = \gamma\left(\mathbf E + \mathbf u\times\mathbf B\right) - \frac{\gamma-1}{u^2}\left(\mathbf u\cdot\mathbf E\right)\mathbf u
 = \cosh\psi\,E_0\,e_1,
@@ -302,37 +302,37 @@ $$
 $$
 The candidate conjugation gives instead
 $$
-\tilde\Lambda\,e_1\,\tilde\Lambda^\dagger = e_1, \qquad
-\tilde\Lambda\,e_2\,\tilde\Lambda^\dagger = e_2,
+\tilde\Lambda\,e_1\,\tilde\Lambda^{*} = e_1, \qquad
+\tilde\Lambda\,e_2\,\tilde\Lambda^{*} = e_2,
 \qquad
-\tilde\Lambda\,e_3\,\tilde\Lambda^\dagger = \cosh\psi\,e_3 - i\sinh\psi,
+\tilde\Lambda\,e_3\,\tilde\Lambda^{*} = \cosh\psi\,e_3 - i\sinh\psi,
 $$
 (so the candidate does not even preserve the pure-vector subspace on $e_3$, producing a scalar part), hence
 $$
-\tilde\Lambda\,\tilde F\,\tilde\Lambda^\dagger = iE_0\,e_1,
+\tilde\Lambda\,\tilde F\,\tilde\Lambda^{*} = iE_0\,e_1,
 $$
 which is **not** $\tilde F'$: the transverse electric field is left unchanged, with no $\cosh\psi$ enhancement and no induced magnetic field. The natural candidate fails on a boost. This is the sharpest form of the gap: the four-vector conjugation, which is the only Lorentz action the parents exhibit, is not the Lorentz action of the field strength.
 
 **Solution (c).** For the same boost, the transformation
 $$
-\tilde F \mapsto \bar{\tilde\Lambda}\,\tilde F\,\tilde\Lambda = \tilde\Lambda^{-1}\,\tilde F\,\tilde\Lambda
+\tilde F \mapsto \tilde\Lambda^{\natural}\,\tilde F\,\tilde\Lambda = \tilde\Lambda^{-1}\,\tilde F\,\tilde\Lambda
 $$
 does reproduce the standard result:
 $$
-\bar{\tilde\Lambda}\,e_1\,\tilde\Lambda = \cosh\psi\,e_1 - i\sinh\psi\,e_2,
+\tilde\Lambda^{\natural}\,e_1\,\tilde\Lambda = \cosh\psi\,e_1 - i\sinh\psi\,e_2,
 \qquad
-\bar{\tilde\Lambda}\,e_2\,\tilde\Lambda = \cosh\psi\,e_2 + i\sinh\psi\,e_1,
+\tilde\Lambda^{\natural}\,e_2\,\tilde\Lambda = \cosh\psi\,e_2 + i\sinh\psi\,e_1,
 $$
 so
 $$
-\bar{\tilde\Lambda}\,\tilde F\,\tilde\Lambda
+\tilde\Lambda^{\natural}\,\tilde F\,\tilde\Lambda
 = i\cosh\psi\,E_0\,e_1 + \sinh\psi\,E_0\,e_2 = \tilde F' .
 $$
-The boost is therefore reproduced by $\tilde\Lambda^{-1}\tilde F\tilde\Lambda$, while the rotation of part (a) is reproduced by $\tilde\Lambda\tilde F\tilde\Lambda^\dagger = \tilde\Lambda\tilde F\tilde\Lambda^{-1}$. The two cases require different orderings, so no single one of these adjoint actions, with the parents' rotor conventions, is the Lorentz transformation law of $\tilde F$. The parent gives no law at all, and its claim that the two pieces "transform independently under the Lorentz group" is therefore unverified: the abstract representation-theoretic statement that the self-dual and anti-self-dual pieces carry the two complex conjugate three-dimensional representations is standard, but the biquaternion realization of that statement is not supplied, and the obvious candidate for it is false. Determining the correct biquaternion action — plausibly an adjoint action conjugated by a fixed linear map on the field-strength space — is left open. **This is the gap this exercise reports in its parent.**
+The boost is therefore reproduced by $\tilde\Lambda^{-1}\tilde F\tilde\Lambda$, while the rotation of part (a) is reproduced by $\tilde\Lambda\tilde F\tilde\Lambda^{*} = \tilde\Lambda\tilde F\tilde\Lambda^{-1}$. The two cases require different orderings, so no single one of these adjoint actions, with the parents' rotor conventions, is the Lorentz transformation law of $\tilde F$. The parent gives no law at all, and its claim that the two pieces "transform independently under the Lorentz group" is therefore unverified: the abstract representation-theoretic statement that the self-dual and anti-self-dual pieces carry the two complex conjugate three-dimensional representations is standard, but the biquaternion realization of that statement is not supplied, and the obvious candidate for it is false. Determining the correct biquaternion action — plausibly an adjoint action conjugated by a fixed linear map on the field-strength space — is left open. **This is the gap this exercise reports in its parent.**
 
 ## Further Problems
 
-1. **The general Lorentz law of $\tilde F$.** Determine the biquaternion map that reproduces the standard transformation of $\mathbf E$ and $\mathbf B$ for a general rotor (a boost composed with a rotation). Show whether it can be written as $\tilde F\mapsto T\!\left(\tilde\Lambda\,T^{-1}(\tilde F)\,\tilde\Lambda^\dagger\right)$ for a fixed invertible linear map $T$ on $\mathrm{Vect}(\mathbb B)$, and identify $T$ if it exists. The exercise above shows only that $T$ is not the identity and that no single adjoint ordering works with the parents' rotors.
+1. **The general Lorentz law of $\tilde F$.** Determine the biquaternion map that reproduces the standard transformation of $\mathbf E$ and $\mathbf B$ for a general rotor (a boost composed with a rotation). Show whether it can be written as $\tilde F\mapsto T\!\left(\tilde\Lambda\,T^{-1}(\tilde F)\,\tilde\Lambda^{*}\right)$ for a fixed invertible linear map $T$ on $\mathrm{Vect}(\mathbb B)$, and identify $T$ if it exists. The exercise above shows only that $T$ is not the identity and that no single adjoint ordering works with the parents' rotors.
 
 2. **Duality and the gauge $U(1)$.** The gauge principle article identifies the center of $\mathbb B$ as $\mathbb C_{\mathbb B}$ and its unitary part as the abelian gauge group of the biquaternionic Maxwell field. The duality rotation here is multiplication by an element $e^{-i\theta}$ of that same $U(1)$. Is the duality symmetry the same $U(1)$, a different one, or the same group acting on a different representation? The parent does not ask this; the answer is not obvious, because duality acts on the field strength and the gauge phase on the potential.
 
@@ -356,7 +356,7 @@ which is exactly $\mathbf V\mapsto e^{-i\theta}\mathbf V$ and, because $\tilde F
 
 Duality preserves the Hermitian form: the energy density $W$ and the Poynting vector $\mathbf S$ are unchanged. It rotates the biquaternion norm by the doubled phase, $N(\tilde F)\mapsto e^{-2i\theta}N(\tilde F)$, so the pair $(I_1,2cI_2)$ rotates by $2\theta$ and $I_1^2 + 4c^2I_2^2$ is invariant. It is a symmetry of the source-free Maxwell equations and of the biquaternionic equation $\tilde\nabla\tilde F = 0$; with electric sources alone it is not a symmetry, and its sourced completion requires magnetic charge, which is rotated into electric charge at $\theta = \pi/2$. The discrete ancestor of the rotation is the classical substitution symmetry — interchange of $\mathbf{E}$ and $\mathbf{H}$ together with $\epsilon$ and $\mu$ — which the absence of magnetic charge also breaks; dropping that condition makes the symmetry exact and yields the A-field $\mathcal{A} = \sqrt{\epsilon}\,\mathbf E + i\sqrt{\mu}\,\mathbf H = -i\tilde F$, in which the two source halves combine into one complex current.
 
-Two defects in the parent are recorded. First, the parent's equation $\bar{\mathbf V}\mapsto e^{+i\theta}\bar{\mathbf V}$ uses the symbol $\bar{\mathbf V}$ for the complex conjugate, although the parent declares $\bar{\cdot}$ to be quaternion conjugation; with that declaration $\bar{\mathbf V} = -\mathbf V$ and the displayed transformation is inconsistent. The object transforming as $e^{+i\theta}$ is $\mathbf V^* = \mathbf E - ic\mathbf B$, and $\mathbf V$ alone already carries the six real field components, so $\mathbf V$ and $\mathbf V^*$ are not independent. Second, the parent's claim that the two pieces transform independently under the Lorentz group has no biquaternion realization in the article; the natural candidate $\tilde F\mapsto\tilde\Lambda\tilde F\tilde\Lambda^\dagger$ works for a pure spatial rotation but fails on a pure boost, where it leaves a transverse electric field unchanged instead of producing the $\cosh\psi$ enhancement and the induced magnetic field. The boost is reproduced by $\tilde\Lambda^{-1}\tilde F\tilde\Lambda$, and the two cases require different orderings, so the correct general law is left open. This is the gap the exercise reports.
+Two defects in the parent are recorded. First, the parent's equation $\bar{\mathbf V}\mapsto e^{+i\theta}\bar{\mathbf V}$ uses the symbol $\bar{\mathbf V}$ for the complex conjugate, although the parent declares ${}^{\natural}$ to be quaternion conjugation; with that declaration $\bar{\mathbf V} = -\mathbf V$ and the displayed transformation is inconsistent. The object transforming as $e^{+i\theta}$ is $\mathbf V^* = \mathbf E - ic\mathbf B$, and $\mathbf V$ alone already carries the six real field components, so $\mathbf V$ and $\mathbf V^*$ are not independent. Second, the parent's claim that the two pieces transform independently under the Lorentz group has no biquaternion realization in the article; the natural candidate $\tilde F\mapsto\tilde\Lambda\tilde F\tilde\Lambda^{*}$ works for a pure spatial rotation but fails on a pure boost, where it leaves a transverse electric field unchanged instead of producing the $\cosh\psi$ enhancement and the induced magnetic field. The boost is reproduced by $\tilde\Lambda^{-1}\tilde F\tilde\Lambda$, and the two cases require different orderings, so the correct general law is left open. This is the gap the exercise reports.
 
 ## Summary of Notation
 
@@ -367,19 +367,19 @@ Two defects in the parent are recorded. First, the parent's equation $\bar{\math
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex-scalar subspace (center) |
-| $\bar{\cdot}, {}^*, {}^\dagger = \bar{\cdot}^{\,*}$ | Quaternion, complex, and Hermitian conjugations |
-| $\tilde\nabla, \bar{\tilde\nabla}, \Box = \tilde\nabla\bar{\tilde\nabla}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
-| $\tilde\Lambda \in \mathbb{B}$, $\tilde\Lambda\bar{\tilde\Lambda} = e_0$ | Lorentz rotor (unit-norm biquaternion) |
+| ${}^{\natural}, \bar{\cdot}, {}^{*} = ({}^{\natural})^{\,*}$ | Quaternion, complex, and Hermitian conjugations |
+| $\tilde\nabla, \tilde\nabla^{\natural}, \Box = \tilde\nabla\tilde\nabla^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
+| $\tilde\Lambda \in \mathbb{B}$, $\tilde\Lambda\tilde\Lambda^{\natural} = e_0$ | Lorentz rotor (unit-norm biquaternion) |
 | $\tilde F = i\sqrt{\epsilon}\,\mathbf E - \sqrt{\mu}\,\mathbf H$ | Field-strength biquaternion (pure vector) |
 | $\mathbf{E}, \mathbf{H}, \mathbf{B} = \mu\mathbf H$ | Electric field, magnetic field, magnetic induction |
 | $\epsilon,\mu$, $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Permittivity, permeability, medium speed of light, vacuum speed of light |
 | $\mathbf V = \mathbf E + ic\mathbf B$ | Riemann–Silberstein vector, $\tilde F = i\sqrt{\epsilon}\mathbf V$ |
 | $\mathbf V^* = \mathbf E - ic\mathbf B$ | Complex conjugate of $\mathbf V$ |
 | $\theta$ | Duality angle |
-| $N(\tilde F) = \tilde F\bar{\tilde F} = -\epsilon(I_1 + 2icI_2)$ | Biquaternion norm (complex scalar) |
+| $N(\tilde F) = \tilde F\tilde F^{\natural} = -\epsilon(I_1 + 2icI_2)$ | Biquaternion norm (complex scalar) |
 | $I_1 = \mathbf E^2 - c^2\mathbf B^2$, $I_2 = \mathbf E\cdot\mathbf B$ | Lorentz invariants (scalar, pseudoscalar) |
 | $W = \tfrac12(\epsilon\mathbf E^2 + \mu\mathbf H^2)$, $\mathbf S = \mathbf E\times\mathbf H$ | Energy density, Poynting vector |
-| $\tilde F\tilde F^\dagger = 2We_0 + \frac{2i}{c}\mathbf S$ | Hermitian form (in $\mathbb{M}_+$) |
+| $\tilde F\tilde F^{*} = 2We_0 + \frac{2i}{c}\mathbf S$ | Hermitian form (in $\mathbb{M}_+$) |
 | $\tilde R = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\mathbf J$ | Electric source biquaternion |
 | $\tilde R_m = \frac{i\rho_m}{\sqrt{\mu}}e_0 + \sqrt{\epsilon}\mathbf J_m$ | Magnetic source biquaternion |
 | $\tilde{\mathcal R} = \tilde R + i\tilde R_m$ | Combined source, duality covariant |

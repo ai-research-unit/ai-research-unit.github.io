@@ -8,11 +8,11 @@ The framework's answer is a split one, and the split is the subject of the artic
 
 This article is interpretive, and it keeps the boundary between what the algebra establishes and what is interpretation explicit in every section. The established facts are recomputed from the definitions, not inherited on authority. The interpretive readings are labelled as readings, and where a reading is not forced by the algebra, that is said rather than smoothed over.
 
-The material is inherited, unchanged, from the read list. From *Quantum Mechanics in Biquaternionic Form*: the states are the positive trace-one elements of $\mathbb{M}_+$, the pure states are the idempotents $\tilde\Pi_\pm(\hat{\mu})=\tfrac12(e_0\pm i\hat{\mu})$, the mixed states are the interior of the Bloch ball $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|<1$, and the Born rule is the trace pairing $\mathrm{Tr}(\tilde{\rho}\tilde{H})$. From *The Bloch Ball as the Trace-One Slice of the Future Light Cone*: the state space is the intersection of the trace-one hyperplane with the future light cone of the biquaternion norm $N(\tilde{H})=\tilde{H}\bar{\tilde{H}}$, and the pure states are the zero divisors at trace one. From *The Measurement Problem in Algebraic Form*: the element is **provenance-blind** and carries no index of the realised outcome. From *Decoherence as Idempotent Projection*: decoherence is the deformation of an idempotent into a non-idempotent positive trace-one element, with $\tilde{\rho}^2-\tilde{\rho}=\tfrac14(|\mathbf{r}|^2-1)e_0$. From *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*: the anti-Hermitian subspace carries the four-vectors and is complementary to $\mathbb{M}_+$.
+The material is inherited, unchanged, from the read list. From *Quantum Mechanics in Biquaternionic Form*: the states are the positive trace-one elements of $\mathbb{M}_+$, the pure states are the idempotents $\tilde\Pi_\pm(\hat{\mu})=\tfrac12(e_0\pm i\hat{\mu})$, the mixed states are the interior of the Bloch ball $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|<1$, and the Born rule is the trace pairing $\mathrm{Tr}(\tilde{\rho}\tilde{H})$. From *The Bloch Ball as the Trace-One Slice of the Future Light Cone*: the state space is the intersection of the trace-one hyperplane with the future light cone of the biquaternion norm $N(\tilde{H})=\tilde{H}\tilde{H}^{\natural}$, and the pure states are the zero divisors at trace one. From *The Measurement Problem in Algebraic Form*: the element is **provenance-blind** and carries no index of the realised outcome. From *Decoherence as Idempotent Projection*: decoherence is the deformation of an idempotent into a non-idempotent positive trace-one element, with $\tilde{\rho}^2-\tilde{\rho}=\tfrac14(|\mathbf{r}|^2-1)e_0$. From *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*: the anti-Hermitian subspace carries the four-vectors and is complementary to $\mathbb{M}_+$.
 
 The article proceeds as follows. The next four sections collect the established structure of the state as an element: its definition and geometry; its cohabitation with the observables in one space; its convex structure; and its purity as idempotence and as zero-divisorhood. Two further sections state what the element does not carry and what it is not. The last three sections separate the ontological readings the algebra permits, state the sector hypothesis under which they acquire physical content, and list the questions the algebra leaves open.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ is the center of the algebra. The Hermitian conjugation is $\dagger=\bar{\cdot}^{\,*}$, and the trace is the matrix-representation trace, $\mathrm{Tr}(\tilde{H})=2\,\mathrm{Sc}(\tilde{H})$, with the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ inherited unchanged.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ is the center of the algebra. The Hermitian conjugation is ${}^{*}=({}^{\natural})^{\,*}$, and the trace is the matrix-representation trace, $\mathrm{Tr}(\tilde{H})=2\,\mathrm{Sc}(\tilde{H})$, with the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ inherited unchanged.
 
 ## The State as an Element of $\mathbb{M}_+$
 
@@ -39,7 +39,7 @@ $$
 and the biquaternion norm is
 
 $$
-N(\tilde{\rho})=\tilde{\rho}\bar{\tilde{\rho}}=\tfrac14\left(1-|\mathbf{r}|^2\right)e_0 .
+N(\tilde{\rho})=\tilde{\rho}\tilde{\rho}^{\natural}=\tfrac14\left(1-|\mathbf{r}|^2\right)e_0 .
 $$
 
 The three are consistent: the eigenvalues of $\tilde{\rho}$ are $\lambda_\pm=\tfrac12(1\pm|\mathbf{r}|)$, so positivity is exactly $|\mathbf{r}|\leq1$, which is exactly $N(\tilde{\rho})\geq0$, which is exactly membership of the future light cone of the biquaternion norm. The state space is therefore the trace-one slice of that cone,
@@ -214,14 +214,14 @@ The article's interpretive claim is that the algebra settles the identity, the s
 | $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ | State, $|\mathbf{r}|\leq1$ (Bloch ball) |
 | $\tilde\Pi_\pm(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$ | Pure state (idempotent, rank-one projector, zero divisor) |
 | $\tilde{H} = h_0e_0 + i\mathbf{h}$ | Observable (general Hermitian element) |
-| $N(\tilde{H}) = \tilde{H}\bar{\tilde{H}}$ | Biquaternion norm, signature $(1,3)$ on $\mathbb{M}_+$ |
+| $N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural}$ | Biquaternion norm, signature $(1,3)$ on $\mathbb{M}_+$ |
 | $N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)e_0$ | Biquaternion norm of a state; positivity $\Leftrightarrow N\geq0$ |
 | $\tilde{\rho}^2 - \tilde{\rho} = \tfrac14(|\mathbf{r}|^2-1)e_0$ | Deviation from idempotency (mixedness) |
 | $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$ | Trace |
 | $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \mathbf{r}\cdot\mathbf{h}$ | Trace pairing (Born rule); positive definite |
 | $\lambda_\pm = \tfrac12(1\pm|\mathbf{r}|)$ | Eigenvalues of $\tilde{\rho}$ |
 | $\hat{\mu}, \hat{\mathbf{n}}, \hat{\mathbf{h}}, \hat{\mathbf{r}}$ | Unit pure real quaternions (directions) |
-| $\dagger = \bar{\cdot}^{\,*}$ | Hermitian conjugation |
+| ${}^{*} = ({}^{\natural})^{\,*}$ | Hermitian conjugation |
 
 ## Further Reading
 

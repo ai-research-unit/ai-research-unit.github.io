@@ -17,7 +17,7 @@ It belongs in this subcategory as the **exactly solvable external-potential prob
 The article derives the substitution, the reduction to a pair of two-component equations, the exact operator identity on squaring, and the spectrum; it then reads the result in the algebra, works the one-dimensional case for which everything is transparent, and connects the zero modes to the supersymmetric structure developed in the companion article *Supersymmetric Quantum Mechanics in the Biquaternion Framework*. The conventions are the series conventions: the Clifford generators satisfy $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$, $\beta = \gamma^0$, $\alpha^k = \gamma^0\gamma^k$, and the biquaternion mass pair is
 
 $$
-\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R .
+\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R .
 $$
 
 ## The Non-Minimal Substitution
@@ -233,7 +233,7 @@ Q = \boldsymbol\sigma\cdot(\mathbf{p} - im\omega\mathbf{r}), \qquad
 Q^\dagger = \boldsymbol\sigma\cdot(\mathbf{p} + im\omega\mathbf{r}),
 $$
 
-so that $Q^\dagger Q = \mathbf{p}^2 + m^2\omega^2\mathbf{r}^2 - 3m\hbar\omega - 2m\omega\boldsymbol\sigma\cdot\mathbf{L}$. The aligned states with $n_r = 0$ are exactly the **zero modes** $Q\phi = 0$, and their infinite degeneracy is the zero-mode degeneracy of the factorised operator. The pair $(Q,Q^\dagger)$ is the standard supersymmetric pair of quantum mechanics: $Q^\dagger Q$ and $QQ^\dagger$ are partner Hamiltonians, and the zero modes of $Q$ are the states the supersymmetry relates. The companion article *Supersymmetric Quantum Mechanics in the Biquaternion Framework* develops this correspondence; the Dirac oscillator is its exactly solvable relativistic realisation. The reader should note that the two operators here are not the two gradients $\tilde{\nabla},\bar{\tilde{\nabla}}$ of the free mass pair but their shifted, spin-projected forms; what is common to both is that the square of a first-order operator with a conjugate partner is a second-order operator whose zero modes carry the structure.
+so that $Q^\dagger Q = \mathbf{p}^2 + m^2\omega^2\mathbf{r}^2 - 3m\hbar\omega - 2m\omega\boldsymbol\sigma\cdot\mathbf{L}$. The aligned states with $n_r = 0$ are exactly the **zero modes** $Q\phi = 0$, and their infinite degeneracy is the zero-mode degeneracy of the factorised operator. The pair $(Q,Q^\dagger)$ is the standard supersymmetric pair of quantum mechanics: $Q^\dagger Q$ and $QQ^\dagger$ are partner Hamiltonians, and the zero modes of $Q$ are the states the supersymmetry relates. The companion article *Supersymmetric Quantum Mechanics in the Biquaternion Framework* develops this correspondence; the Dirac oscillator is its exactly solvable relativistic realisation. The reader should note that the two operators here are not the two gradients $\tilde{\nabla},\tilde{\nabla}^{\natural}$ of the free mass pair but their shifted, spin-projected forms; what is common to both is that the square of a first-order operator with a conjugate partner is a second-order operator whose zero modes carry the structure.
 
 ## Summary
 
@@ -284,7 +284,7 @@ with the aligned branch independent of $l$ and hence an infinitely degenerate le
 | $E^2 = m^2c^4+4m\hbar\omega c^2 n_r$ ($j=l+\tfrac12$) | Aligned branch |
 | $E^2 = m^2c^4+2m\hbar\omega c^2(2n_r+2l+1)$ ($j=l-\tfrac12$) | Anti-aligned branch |
 | $E^2 = m^2c^4+2m\hbar\omega c^2 n$ | One-dimensional spectrum |
-| $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Biquaternion mass pair |
+| $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Biquaternion mass pair |
 | $\Box = \partial_{ict}^2 + \Delta$ | Series d'Alembertian |
 
 ## Further Reading

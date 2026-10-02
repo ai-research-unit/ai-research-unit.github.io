@@ -71,7 +71,7 @@ The spectra of the operators of the framework have direct physical content: the 
 | $L_{\tilde A}$ | Charge operator; the spectrum of $\tilde A$ twice |
 | $\mathrm{ad}_{\tilde A}=L_{\tilde A}-R_{\tilde A}$ | Selection rules; the differences of the charges |
 | $L_{\tilde A}+R_{\tilde B}$ | Coupled energies; the sums of the spectra; the resonance |
-| $\tilde{Q}^{\dagger}=\omega\tilde{Q}$ | Hermitian up to phase; the self-adjoint case |
+| $\tilde{Q}^{*}=\omega\tilde{Q}$ | Hermitian up to phase; the self-adjoint case |
 | $\lVert \Theta_{\tilde{Q}}\rVert=\lVert\Phi(\tilde{Q})\rVert^{2}$ | Contraction of the Bloch ball by the amplitude norm |
 | $\tilde{Q}\in U$ | Unitary; the trace-preserving and reversible case |
 

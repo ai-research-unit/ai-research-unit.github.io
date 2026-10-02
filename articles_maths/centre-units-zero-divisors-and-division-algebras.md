@@ -120,9 +120,9 @@ The element $v$ is unique when it exists and is written $u^{-1}$; the units form
 | $\mathbb{C}$ | $z\bar z = a^2+b^2 \neq 0$ | $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$ |
 | $\mathbb{D}$ | $z\bar z = a^2-b^2 \neq 0$ | four components, $\cong \mathbb{R}^\times \times \mathbb{R}^\times$ |
 | $\mathbb{D}'$ | $a \neq 0$ | $\{a + b\varepsilon : a \neq 0\}$, an abelian group |
-| $\mathbb{H}$ | $q\bar q = q_0^2+q_1^2+q_2^2+q_3^2 \neq 0$ | $\mathbb{H}\setminus\{0\}$ |
+| $\mathbb{H}$ | $q q^{\natural} = q_0^2+q_1^2+q_2^2+q_3^2 \neq 0$ | $\mathbb{H}\setminus\{0\}$ |
 | $\mathbb{H}_{\mathbb{D}}$ | $u\bar u$ a unit of $\mathbb{D}$ | $\{u : u\bar u \in \mathbb{D}^\times\}$ |
-| $\mathbb{B}$ | $\tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2 \neq 0$ | $\mathbb{B}^\times = \{\tilde{Q} : \tilde{Q}\bar{\tilde{Q}} \neq 0\}$ |
+| $\mathbb{B}$ | $\tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 \neq 0$ | $\mathbb{B}^\times = \{\tilde{Q} : \tilde{Q}\tilde{Q}^{\natural} \neq 0\}$ |
 
 The criterion for the quaternionic cases is the standard one: in a quaternion algebra over a commutative ring $R$, an element $u$ is a unit if and only if $u\bar u$ is a unit of $R$, and then $u^{-1} = \bar{u}\,(u\bar u)^{-1}$. The identity is verified directly:
 
@@ -172,7 +172,7 @@ Since every zero divisor of $\mathbb{D}$ has $a^2 = b^2$, the zero divisors of $
 
 **Example (zero divisors in $\mathbb{D}'$).** For $z = a + b\varepsilon$ one has $z \cdot b\varepsilon = ab\varepsilon$, so if $a \neq 0$ then $z$ is a unit, and if $a = 0$ and $b \neq 0$ then $z^2 = 0$ and $z$ is a zero divisor. The zero divisors of $\mathbb{D}'$ are exactly the nonzero elements of the maximal ideal $(\varepsilon) = \mathbb{R}\varepsilon$, which is a square-zero ideal.
 
-**Example (zero divisors in $\mathbb{B}$).** For a biquaternion $\tilde{Q}$ the product $\tilde{Q}\bar{\tilde{Q}}$ is multiplicative. Hence if $\tilde{Q}\bar{\tilde{Q}} = 0$ and $\tilde{Q} \neq 0$, then $\bar{\tilde{Q}} \neq 0$ and $\tilde{Q}$ is a zero divisor; and conversely, since $\tilde{Q}\bar{\tilde{Q}} \neq 0$ makes $\tilde{Q}$ a unit, every nonzero $\tilde{Q}$ with $\tilde{Q}\bar{\tilde{Q}} = 0$ is a zero divisor. The algebra $\mathbb{B}$ is thus partitioned into $\{0\}$, the units $\tilde{Q}\bar{\tilde{Q}} \neq 0$, and the zero divisors $\tilde{Q}\bar{\tilde{Q}} = 0$. The explicit pairs are exhibited .
+**Example (zero divisors in $\mathbb{B}$).** For a biquaternion $\tilde{Q}$ the product $\tilde{Q}\tilde{Q}^{\natural}$ is multiplicative. Hence if $\tilde{Q}\tilde{Q}^{\natural} = 0$ and $\tilde{Q} \neq 0$, then $\tilde{Q}^{\natural} \neq 0$ and $\tilde{Q}$ is a zero divisor; and conversely, since $\tilde{Q}\tilde{Q}^{\natural} \neq 0$ makes $\tilde{Q}$ a unit, every nonzero $\tilde{Q}$ with $\tilde{Q}\tilde{Q}^{\natural} = 0$ is a zero divisor. The algebra $\mathbb{B}$ is thus partitioned into $\{0\}$, the units $\tilde{Q}\tilde{Q}^{\natural} \neq 0$, and the zero divisors $\tilde{Q}\tilde{Q}^{\natural} = 0$. The explicit pairs are exhibited .
 
 **Example (zero divisors in $\mathbb{H}_{\mathbb{D}}$).** The split biquaternions contain the central split complex scalars, and the zero divisors of $\mathbb{D}$ are inherited: with $j$ central and $j^2 = +1$,
 
@@ -240,7 +240,7 @@ A unital associative algebra $A$ is a **division algebra** exactly when every no
 | $\mathbb{D}$ | Split complex numbers, zero divisors $\mathbb{R}(1\pm j)$ |
 | $\mathbb{D}'$ | Dual numbers, zero divisors the maximal ideal $(\varepsilon)$ |
 | $\mathbb{H}_{\mathbb{D}}$ | Split biquaternions, zero divisors inherited from $\mathbb{D}$ |
-| $\mathbb{B}$ | Biquaternions, $\tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ |
+| $\mathbb{B}$ | Biquaternions, $\tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ |
 | $M_n(k)$ | Matrix algebra, centre $k I_n$ |
 
 

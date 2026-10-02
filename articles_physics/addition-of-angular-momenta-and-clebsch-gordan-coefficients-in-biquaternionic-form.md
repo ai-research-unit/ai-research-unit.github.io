@@ -35,7 +35,7 @@ $$
 [\tilde J_+,\tilde J_-]=2\hbar\tilde J_3 .
 $$
 
-The ladder operators are not Hermitian and do not lie in $\mathbb{M}_+$: they satisfy $\tilde J_\pm^\dagger=\tilde J_\mp$, so that $\tilde J_\pm^\dagger\ne\tilde J_\pm$ and $\tilde J_\pm$ lies in the full algebra. The Casimir may be written
+The ladder operators are not Hermitian and do not lie in $\mathbb{M}_+$: they satisfy $\tilde J_\pm^{*}=\tilde J_\mp$, so that $\tilde J_\pm^{*}\ne\tilde J_\pm$ and $\tilde J_\pm$ lies in the full algebra. The Casimir may be written
 
 $$
 \tilde J^2=\tilde J_3^2+\tfrac{1}{2}\left(\tilde J_+\tilde J_-+\tilde J_-\tilde J_+\right).
@@ -69,7 +69,7 @@ $$
 and they are **nilpotent and null in the biquaternion norm**,
 
 $$
-\tilde S_\pm^2=0,\qquad N(\tilde S_\pm)=\tilde S_\pm\bar{\tilde S}_\pm=0 ,
+\tilde S_\pm^2=0,\qquad N(\tilde S_\pm)=\tilde S_\pm\tilde S^{\natural}_\pm=0 ,
 $$
 
 so the raising and lowering operators of the fundamental module are zero divisors of $\mathbb{B}$. The Casimir is the central element
@@ -253,7 +253,7 @@ $$
 F=\tfrac{1}{2}\left(e_0\otimes e_0-\sum_{k=1}^{3}e_k\otimes e_k\right),
 $$
 
-which satisfies $F^2=e_0\otimes e_0$ and $F^\dagger=F$, and which exchanges the two factors on the product idempotents. Indeed
+which satisfies $F^2=e_0\otimes e_0$ and $F^{*}=F$, and which exchanges the two factors on the product idempotents. Indeed
 
 $$
 P_{\mathrm{sym}}=\tfrac{1}{2}\left(e_0\otimes e_0+F\right),\qquad

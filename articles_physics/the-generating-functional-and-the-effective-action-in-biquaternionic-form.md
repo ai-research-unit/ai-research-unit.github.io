@@ -22,7 +22,7 @@ W[\tilde J] = \tfrac12\big\langle \tilde J,\tilde K^{-1}\tilde J\big\rangle ,
 \qquad
 \Gamma[\tilde\phi] = \tfrac12\big\langle \tilde\phi,\tilde K\tilde\phi\big\rangle ,
 $$
-built from the real bilinear form $\langle \tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^\dagger\tilde Y)$ of the previous article, with the inverse-Hessian relation $\Gamma^{(2)}W^{(2)}=I$ and the Legendre identity $W[\tilde J]+\Gamma[\tilde\phi]=\langle \tilde J,\tilde\phi\rangle$ at $\tilde\phi=\delta W/\delta\tilde J$. These were checked in finite dimension with explicit matrices.
+built from the real bilinear form $\langle \tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde Y)$ of the previous article, with the inverse-Hessian relation $\Gamma^{(2)}W^{(2)}=I$ and the Legendre identity $W[\tilde J]+\Gamma[\tilde\phi]=\langle \tilde J,\tilde\phi\rangle$ at $\tilde\phi=\delta W/\delta\tilde J$. These were checked in finite dimension with explicit matrices.
 - **Established (algebra).** Because the source $\tilde J$, the classical field $\tilde\phi=\delta W/\delta\tilde J$, and the fluctuations all live in the same module, the effective action is a functional **on the module**, and its convexity is convexity with respect to the real form of the algebra — a real form that is positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$. For a central kinetic operator the effective action **factorizes** over the sectors,
 $$
 \Gamma[\tilde\phi] = \Gamma_-[{\tilde\phi}_-]+\Gamma_+[{\tilde\phi}_+] ,
@@ -39,9 +39,9 @@ The article proceeds as follows. The next section defines the connected function
 
 **Conventions.** We use those of the companion articles, in particular *The Functional Integral in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational). The real bilinear form is
 $$
-\langle \tilde{Q},\tilde Y\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Q}^\dagger\tilde Y\big),
+\langle \tilde{Q},\tilde Y\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Q}^{*}\tilde Y\big),
 $$
-positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$. The quadratic action is $S[\tilde\Phi]=\int d^4x\,\langle\tilde\Phi,\tilde K\tilde\Phi\rangle$ with $\tilde K=\Box-m^2$ and $\Box=\tilde\nabla\bar{\tilde\nabla}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The companion articles *The Biquaternion Vacuum as a Minimal Idempotent* and *The GNS Construction in the Biquaternion Framework* supply the vacuum state; the trace pairing and the module are those of *The Feynman Propagator in Biquaternionic Form* and *The S-Matrix in Biquaternionic Form*.
+positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$. The quadratic action is $S[\tilde\Phi]=\int d^4x\,\langle\tilde\Phi,\tilde K\tilde\Phi\rangle$ with $\tilde K=\Box-m^2$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The companion articles *The Biquaternion Vacuum as a Minimal Idempotent* and *The GNS Construction in the Biquaternion Framework* supply the vacuum state; the trace pairing and the module are those of *The Feynman Propagator in Biquaternionic Form* and *The S-Matrix in Biquaternionic Form*.
 
 ## The Connected Generating Functional
 
@@ -65,9 +65,9 @@ and the full correlators are the derivatives of $Z$ itself. The formalism is the
 $$
 W[\tilde J] = \tfrac12\big\langle \tilde J,\tilde K^{-1}\tilde J\big\rangle ,
 \qquad\text{equivalently}\qquad
-W[\tilde J] = \tfrac12\int\frac{d^4k}{(2\pi)^4}\,\frac{\big|\tilde J(k)\big|^2}{\tilde k\bar{\tilde k}+m^2},
+W[\tilde J] = \tfrac12\int\frac{d^4k}{(2\pi)^4}\,\frac{\big|\tilde J(k)\big|^2}{\tilde k\tilde k^{\natural}+m^2},
 $$
-using the wave biquaternion $\tilde k=iEe_0+\mathbf{p}$ and $\tilde k\bar{\tilde k}=-p^2$. The kernel displayed is that of the kinetic operator $-\Box+m^2$, whose symbol is the central mass-shell operator $\mathcal{M}(\tilde k)=\tilde k\bar{\tilde k}+m^2$; the action's operator is $\tilde K=\Box-m^2$, whose symbol is $-\mathcal{M}$, so the kernel of $\tilde K^{-1}$ is its negative, $-1/\mathcal{M}$. Recording this once fixes the relative sign of the source kernel and of the classical field below. Its second derivative is the propagator $D_F$, the object of *The Feynman Propagator in Biquaternionic Form*; the framework's contribution is the central scalar kinetic operator $\mathcal{M}(\tilde k)=\tilde k\bar{\tilde k}+m^2$, as before.
+using the wave biquaternion $\tilde k=iEe_0+\mathbf{p}$ and $\tilde k\tilde k^{\natural}=-p^2$. The kernel displayed is that of the kinetic operator $-\Box+m^2$, whose symbol is the central mass-shell operator $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2$; the action's operator is $\tilde K=\Box-m^2$, whose symbol is $-\mathcal{M}$, so the kernel of $\tilde K^{-1}$ is its negative, $-1/\mathcal{M}$. Recording this once fixes the relative sign of the source kernel and of the classical field below. Its second derivative is the propagator $D_F$, the object of *The Feynman Propagator in Biquaternionic Form*; the framework's contribution is the central scalar kinetic operator $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2$, as before.
 
 **A remark on the trace.** The derivative $\delta W/\delta\tilde J$ is defined through the pairing, and because the pairing is a real bilinear form on the module, it takes a module-valued source to a module-valued classical field. No privileged matrix basis is needed; the derivative is the module's own gradient. This will matter in the next section, where the Legendre transform is taken on the module and not on a coordinate vector space.
 
@@ -152,7 +152,7 @@ $$
 $$
 At one loop the same statement holds with $\Gamma_{1,\pm}=\tfrac12\mathrm{Tr}\log S_\pm''$, and the determinant factorizes, $\det S''=\det S_-''\det S_+''$.
 
-**What breaks the factorization.** Any term that is not sector-diagonal. The three candidates, in order of importance, are: an interaction that couples the sectors, such as a term built from $\mathrm{Sc}(\tilde\Phi\bar{\tilde\Phi}\tilde\Phi\bar{\tilde\Phi})$ with a non-central contraction; a kinetic operator that is not central; and the chirality-off-diagonal Dirac mass. A central scalar theory factorizes at all loops.
+**What breaks the factorization.** Any term that is not sector-diagonal. The three candidates, in order of importance, are: an interaction that couples the sectors, such as a term built from $\mathrm{Sc}(\tilde\Phi\tilde\Phi^{\natural}\tilde\Phi\tilde\Phi^{\natural})$ with a non-central contraction; a kinetic operator that is not central; and the chirality-off-diagonal Dirac mass. A central scalar theory factorizes at all loops.
 
 **The factorized one-loop structure.** For the free biquaternion scalar the one-loop effective action is the sum
 $$
@@ -176,7 +176,7 @@ The minimizer is the vacuum expectation value of the field, and the curvature at
 
 **Tree-level vacuum.** At tree level $V_{\mathrm{eff}}=V$, and for the biquaternion scalar
 $$
-V(\tilde\phi) = \tfrac12 m^2\,\mathrm{Re}\,\mathrm{Tr}\big(\tilde\phi^\dagger\tilde\phi\big)
+V(\tilde\phi) = \tfrac12 m^2\,\mathrm{Re}\,\mathrm{Tr}\big(\tilde\phi^{*}\tilde\phi\big)
 = \tfrac12 m^2\,\big\langle \tilde\phi,\tilde\phi\big\rangle ,
 $$
 whose minimum is $\tilde\phi=0$ for $m^2>0$, the symmetric vacuum. A one-mode truncation of this field is exactly the two-level structure of *The Biquaternion Vacuum as a Minimal Idempotent*: the constant mode's energy is quadratic in the norm, the number operator $\tilde N$ is a projector, and the ground state is a minimal idempotent of $\mathbb{M}_+$ selected by the sign of the quadratic term. The effective potential's minimum is the field-theoretic statement of the vacuum-selection rule that the earlier article states algebraically.
@@ -231,7 +231,7 @@ has coefficients $a_n$ built from the curvature of $S''$ and the geometry of the
 
 **Established (algebra and functional analysis of the module).**
 - The connected and effective functionals are the quadratic forms $W=\tfrac12\langle\tilde J,\tilde K^{-1}\tilde J\rangle$ and $\Gamma=\tfrac12\langle\tilde\phi,\tilde K\tilde\phi\rangle$ for a free theory, with the inverse-Hessian relation and the Legendre identity; verified in finite dimension.
-- The Legendre transform is taken on the module, and its convexity is convexity in the real form $\langle\tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^\dagger\tilde Y)$, which is positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$.
+- The Legendre transform is taken on the module, and its convexity is convexity in the real form $\langle\tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde Y)$, which is positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$.
 - For a sector-diagonal action the effective action factorizes, $\Gamma=\Gamma_-+\Gamma_+$, at tree level and at one loop, with the determinant factorizing.
 - The one-loop effective action is $\Gamma_1=\tfrac12\mathrm{Tr}\log S''[\tilde\phi]$, the logarithm of a module determinant.
 
@@ -247,7 +247,7 @@ has coefficients $a_n$ built from the curvature of $S''$ and the geometry of the
 
 ## Summary
 
-The connected functional and the effective action of a biquaternion field are functionals on the module, built from the real form $\langle\tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^\dagger\tilde Y)$. For a free theory they are the quadratics $W[\tilde J]=\tfrac12\langle\tilde J,\tilde K^{-1}\tilde J\rangle$ and $\Gamma[\tilde\phi]=\tfrac12\langle\tilde\phi,\tilde K\tilde\phi\rangle$, with $\tilde K=\Box-m^2$, the inverse-Hessian relation $\Gamma^{(2)}W^{(2)}=I$, and the Legendre identity $W+\Gamma=\langle\tilde J,\tilde\phi\rangle$ at $\tilde\phi=\delta W/\delta\tilde J$ — all verified in finite dimension. The one-loop effective action is the logarithm of the module determinant of the second variation, $\Gamma_1=\tfrac12\mathrm{Tr}\log S''[\tilde\phi]$, which the next article computes and regularizes.
+The connected functional and the effective action of a biquaternion field are functionals on the module, built from the real form $\langle\tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde Y)$. For a free theory they are the quadratics $W[\tilde J]=\tfrac12\langle\tilde J,\tilde K^{-1}\tilde J\rangle$ and $\Gamma[\tilde\phi]=\tfrac12\langle\tilde\phi,\tilde K\tilde\phi\rangle$, with $\tilde K=\Box-m^2$, the inverse-Hessian relation $\Gamma^{(2)}W^{(2)}=I$, and the Legendre identity $W+\Gamma=\langle\tilde J,\tilde\phi\rangle$ at $\tilde\phi=\delta W/\delta\tilde J$ — all verified in finite dimension. The one-loop effective action is the logarithm of the module determinant of the second variation, $\Gamma_1=\tfrac12\mathrm{Tr}\log S''[\tilde\phi]$, which the next article computes and regularizes.
 
 Because a central kinetic operator does not mix the material and informational sectors, the effective action factorizes, $\Gamma=\Gamma_-+\Gamma_+$, at tree level and at one loop, with the determinant factorizing with it; any non-central term — an interaction, a non-central kinetic operator, or the chirality-off-diagonal Dirac mass — breaks the factorization. The tree-level effective potential $V=\tfrac12 m^2\langle\tilde\phi,\tilde\phi\rangle$ has its minimum at the symmetric point and, in a one-mode truncation, at a minimal idempotent of $\mathbb{M}_+$: the field-theoretic statement of the vacuum-selection rule of *The Biquaternion Vacuum as a Minimal Idempotent*.
 
@@ -257,7 +257,7 @@ Because a central kinetic operator does not mix the material and informational s
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\langle\tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^\dagger\tilde Y)$ | Real bilinear form; positive on $\mathbb{M}_+$, negative on $\mathbb{M}_-$ |
+| $\langle\tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde Y)$ | Real bilinear form; positive on $\mathbb{M}_+$, negative on $\mathbb{M}_-$ |
 | $Z[\tilde J]=\int\mathcal{D}\tilde\Phi\,e^{iS/\hbar+\langle\tilde J,\tilde\Phi\rangle}$ | Generating functional |
 | $W[\tilde J]=-i\hbar\log Z[\tilde J]$ | Connected generating functional |
 | $\tilde\phi=\delta W/\delta\tilde J$ | Classical field (module-valued) |
@@ -270,7 +270,7 @@ Because a central kinetic operator does not mix the material and informational s
 | $V_{\mathrm{eff}}(\tilde\phi)=-\Gamma/\text{vol}$ | Effective potential |
 | $\delta V_{\mathrm{eff}}/\delta\tilde\phi=0$, $\delta^2V_{\mathrm{eff}}/\delta\tilde\phi^2\ge0$ | Vacuum condition; stability (convexity) |
 | $\tilde K=\Box-m^2$, $\Box=\partial_{ict}^2+\Delta$ | Central kinetic operator |
-| $\tilde k=iEe_0+\mathbf{p}$, $\tilde k\bar{\tilde k}=-p^2$ | Wave biquaternion |
+| $\tilde k=iEe_0+\mathbf{p}$, $\tilde k\tilde k^{\natural}=-p^2$ | Wave biquaternion |
 
 ## Further Reading
 

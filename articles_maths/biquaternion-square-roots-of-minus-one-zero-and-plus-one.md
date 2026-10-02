@@ -18,7 +18,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C}.
 $$
 
-The quaternion conjugate is denoted $\bar{\tilde{Q}}$, the complex conjugate is denoted $\tilde{Q}^*$, and the Hermitian conjugate is denoted $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$. Throughout, $\mu$ and $\nu$ denote pure real quaternions with $\mu^2 = \nu^2 = -1$, and such a pair is said to **anticommute** when $\mu\nu + \nu\mu = 0$.
+The quaternion conjugate is denoted $\tilde{Q}^{\natural}$, the complex conjugate is denoted $\bar{\tilde{Q}}$, and the Hermitian conjugate is denoted $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$. Throughout, $\mu$ and $\nu$ denote pure real quaternions with $\mu^2 = \nu^2 = -1$, and such a pair is said to **anticommute** when $\mu\nu + \nu\mu = 0$.
 
 ## The Problem and Its Reduction
 
@@ -270,7 +270,7 @@ $$
 \xi\,(-\xi) = (-\xi)\,\xi = e_0,
 $$
 
-so $\xi$ is invertible, with inverse $\xi^{-1} = -\xi$. A unit is not a zero divisor: if $\xi R = 0$ for some $R$, then $R = (-\xi)(\xi R) = 0$, and the same argument applies to $R\xi = 0$. Hence the roots of $-1$ lie in the group of units $\mathbb{B}^\times$. The central scalar $\xi\bar{\xi}$ is $-1$ for the trivial roots and $+1$ for a pure root.
+so $\xi$ is invertible, with inverse $\xi^{-1} = -\xi$. A unit is not a zero divisor: if $\xi R = 0$ for some $R$, then $R = (-\xi)(\xi R) = 0$, and the same argument applies to $R\xi = 0$. Hence the roots of $-1$ lie in the group of units $\mathbb{B}^\times$. The central scalar $\xi \xi^{\natural}$ is $-1$ for the trivial roots and $+1$ for a pure root.
 
 ## Summary
 

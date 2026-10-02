@@ -2,16 +2,16 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with its Hermitian conjugation ${}^{\dagger}$, is a $\mathbb{C}$-algebra with involution whose fixed space is the Hermitian sector $\mathbb{M}_+$ and whose anti-fixed space is the anti-Hermitian sector $\mathbb{M}_-$ (*Biquaternion Algebra*, *Biquaternion Involution Lattice*). Its module theory is that of $M_2(\mathbb{C})$: up to isomorphism there is one simple left module, the defining module $S=\mathbb{B}\tilde\Pi_1\cong\mathbb{C}^2$, and every left module is a direct sum $S^{\oplus k}$ (*Modules over the Biquaternion Algebra*). This article adds the **metric** to that module theory. A module over an algebra with a dagger can carry the corresponding Hermitian form, and the two structures are tied by a single axiom, that the action be self-adjoint:
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with its Hermitian conjugation ${}^{*}$, is a $\mathbb{C}$-algebra with involution whose fixed space is the Hermitian sector $\mathbb{M}_+$ and whose anti-fixed space is the anti-Hermitian sector $\mathbb{M}_-$ (*Biquaternion Algebra*, *Biquaternion Involution Lattice*). Its module theory is that of $M_2(\mathbb{C})$: up to isomorphism there is one simple left module, the defining module $S=\mathbb{B}\tilde\Pi_1\cong\mathbb{C}^2$, and every left module is a direct sum $S^{\oplus k}$ (*Modules over the Biquaternion Algebra*). This article adds the **metric** to that module theory. A module over an algebra with a dagger can carry the corresponding Hermitian form, and the two structures are tied by a single axiom, that the action be self-adjoint:
 
 $$
-(\tilde R\cdot s,t)=\bigl(s,\tilde R^{\dagger}\cdot t\bigr)
+(\tilde R\cdot s,t)=\bigl(s,\tilde{R}^{*}\cdot t\bigr)
 \qquad (\tilde R\in\mathbb{B},\ s,t\in S).
 $$
 
 A module carrying such a form is a **Hermitian Clifford module** in the sense of the corpus (*Hermitian Clifford Modules with Hermitian Adjoint*), and the whole content of the biquaternion case is one computation and one contrast.
 
-The computation is that the form of the algebra itself, $(\tilde R,\tilde T)=\mathrm{Sc}(\tilde R^{\dagger}\tilde T)$, restricted to the simple module is **positive definite**, with Gram matrix $\tfrac12 I_2$ in the natural basis of the minimal left ideal. The contrast is with the general Clifford algebra, where the same restriction can be **totally isotropic**: for the idempotent $\pi=\tfrac12(1+e_1)$ of the split algebra $\mathrm{Cl}_{1,1}(\mathbb{R})$ one has $\pi^{\dagger}\pi=0$, the Gram matrix on $\mathrm{Cl}\pi$ is the zero matrix, and the naive restriction is not a spinor inner product (*Hermitian Clifford Modules with Hermitian Adjoint*, §*The Isotropic Ideal*). In $\mathbb{B}$ that failure cannot occur, for the reason the general theory itself prescribes: the scalar form of the dagger is positive definite, $\mathrm{Sc}(\tilde R^{\dagger}\tilde R)=\sum_\mu\lvert R_\mu\rvert^{2}$, so every subspace inherits a positive definite restriction; and the standard idempotents are **self-adjoint**, $\tilde\Pi_1^{\dagger}=\tilde\Pi_1$, which is exactly the condition under which the general article resolves the difficulty. The biquaternion algebra is the case in which the resolution is already in force, and the spinor inner product needs no separate construction.
+The computation is that the form of the algebra itself, $(\tilde R,\tilde T)=\mathrm{Sc}(\tilde{R}^{*}\tilde T)$, restricted to the simple module is **positive definite**, with Gram matrix $\tfrac12 I_2$ in the natural basis of the minimal left ideal. The contrast is with the general Clifford algebra, where the same restriction can be **totally isotropic**: for the idempotent $\pi=\tfrac12(1+e_1)$ of the split algebra $\mathrm{Cl}_{1,1}(\mathbb{R})$ one has $\pi^{\dagger}\pi=0$, the Gram matrix on $\mathrm{Cl}\pi$ is the zero matrix, and the naive restriction is not a spinor inner product (*Hermitian Clifford Modules with Hermitian Adjoint*, §*The Isotropic Ideal*). In $\mathbb{B}$ that failure cannot occur, for the reason the general theory itself prescribes: the scalar form of the dagger is positive definite, $\mathrm{Sc}(\tilde{R}^{*}\tilde R)=\sum_\mu\lvert R_\mu\rvert^{2}$, so every subspace inherits a positive definite restriction; and the standard idempotents are **self-adjoint**, $\tilde\Pi_1^{\dagger}=\tilde\Pi_1$, which is exactly the condition under which the general article resolves the difficulty. The biquaternion algebra is the case in which the resolution is already in force, and the spinor inner product needs no separate construction.
 
 The article closes with the **Dirac element**. On a Hermitian module the Clifford action supplies an operator $D=\sum_\mu\rho(e_\mu)\partial_\mu$ whose two factors are skew-adjoint and whose formal adjoint is therefore itself (*Dirac Operators with Hermitian Adjoint*); in the finite-dimensional model, with no derivation, it is $D_{\mathrm{alg}}=\sum_k L_{e_k}$, it is skew-adjoint, its square is $-3\,\mathrm{id}$, and its Hermitian square $D_{\mathrm{alg}}^{*}D_{\mathrm{alg}}=3\,\mathrm{id}$ is positive. The model has no harmonic spinors, and the gap $3$ is the metric content of the module.
 
@@ -22,7 +22,7 @@ The module theory, the idempotents and the Peirce decomposition are *Modules ove
 **Definition (Hermitian form on a module).** Let $S$ be a left $\mathbb{B}$-module. A **Hermitian form** on $S$ is a map $(\cdot,\cdot):S\times S\to\mathbb{C}$ that is $\mathbb{C}$-linear in the second argument and conjugate-linear in the first,
 
 $$
-(s,t\lambda)=(s,t)\lambda,\qquad (s\lambda,t)=\lambda^{*}(s,t)\qquad(\lambda\in\mathbb{C}),
+(s,t\lambda)=(s,t)\lambda,\qquad (s\lambda,t)=\bar{\lambda}(s,t)\qquad(\lambda\in\mathbb{C}),
 $$
 
 and Hermitian, $(t,s)^{*}=(s,t)$. Here $\mathbb{C}$ is the centre $\mathbb{C}_{\mathbb{B}}$ of the algebra, so the scalars act on $S$ from both sides and the two linearity statements are unambiguous.
@@ -30,7 +30,7 @@ and Hermitian, $(t,s)^{*}=(s,t)$. Here $\mathbb{C}$ is the centre $\mathbb{C}_{\
 **Definition (Hermitian Clifford module).** A **Hermitian Clifford module** is a left $\mathbb{B}$-module $S$ with a Hermitian form such that
 
 $$
-(\tilde R\cdot s,t)=\bigl(s,\tilde R^{\dagger}\cdot t\bigr)
+(\tilde R\cdot s,t)=\bigl(s,\tilde{R}^{*}\cdot t\bigr)
 \qquad\text{for all } \tilde R\in\mathbb{B},\ s,t\in S .
 $$
 
@@ -42,15 +42,15 @@ $$
 (\tilde R\cdot s,t)=+(s,\tilde R\cdot t)\quad (\tilde R\in\mathbb{M}_+).
 $$
 
-*Proof.* An element with $\tilde R^{\dagger}=-\tilde R$ gives the first identity and an element with $\tilde R^{\dagger}=\tilde R$ the second; conversely the two identities, applied to the components of an arbitrary element in the direct sum $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, give the axiom. The sum is direct because $2$ is invertible in $\mathbb{C}$.
+*Proof.* An element with $\tilde{R}^{*}=-\tilde R$ gives the first identity and an element with $\tilde{R}^{*}=\tilde R$ the second; conversely the two identities, applied to the components of an arbitrary element in the direct sum $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, give the axiom. The sum is direct because $2$ is invertible in $\mathbb{C}$.
 
-**Corollary (the action is a $*$-representation).** Write $\rho(\tilde R)$ for the action of $\tilde R$ on $S$ and ${}^{*}$ for the adjoint in $\mathrm{End}_{\mathbb{C}}(S)$ with respect to the form. Then
+**Corollary (the action is a $*$-representation).** Write $\rho(\tilde R)$ for the action of $\tilde R$ on $S$ and $\bar{\cdot}$ for the adjoint in $\mathrm{End}_{\mathbb{C}}(S)$ with respect to the form. Then
 
 $$
-\rho(\tilde R^{\dagger})=\rho(\tilde R)^{*} ,
+\rho(\tilde{R}^{*})=\rho(\tilde R)^{*} ,
 $$
 
-so a Hermitian Clifford module is exactly a $*$-representation of the $*$-algebra $(\mathbb{B},{}^{\dagger})$ on a Hermitian space, and the structure theory of $*$-representations applies to it.
+so a Hermitian Clifford module is exactly a $*$-representation of the $*$-algebra $(\mathbb{B},{}^{*})$ on a Hermitian space, and the structure theory of $*$-representations applies to it.
 
 **Remark (which sector carries the generators).** In a general Clifford algebra the vectors are the elements negated by the dagger, so the vectors act skew-adjointly and generate the compact group (*Hermitian Clifford Modules with Hermitian Adjoint*). In $\mathbb{B}$ that role is played by the anti-Hermitian sector: the generators $e_1,e_2,e_3$ and the central $ie_0$ are anti-Hermitian, they act by skew-adjoint operators, and their span is the Lie algebra $u(2)$ of the internal group $U(2)$ (*One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*). The Hermitian sector $\mathbb{M}_+$ acts by self-adjoint operators; it is the observable side of the module.
 
@@ -59,20 +59,20 @@ so a Hermitian Clifford module is exactly a $*$-representation of the $*$-algebr
 **Theorem (the algebra over itself).** On the left regular module ${}_{\mathbb{B}}\mathbb{B}$ the scalar form
 
 $$
-(\tilde R,\tilde T)=\mathrm{Sc}\bigl(\tilde R^{\dagger}\tilde T\bigr)=\sum_{\mu=0}^{3}R_\mu^{*}T_\mu
+(\tilde R,\tilde T)=\mathrm{Sc}\bigl(\tilde{R}^{*}\tilde T\bigr)=\sum_{\mu=0}^{3}R_\bar{\mu}T_\mu
 $$
 
 is a Hermitian form, positive definite and non-degenerate, and it satisfies the adjointness axiom; so the algebra over itself is a Hermitian Clifford module.
 
-*Proof.* Sesquilinearity and Hermitian symmetry are assembled from the two commuting involutions: the coefficient conjugation ${}^{*}$ conjugates the scalar of the form and the quaternion conjugation $\bar{\cdot}$ negates the three vector coefficients. Positivity is $\mathrm{Sc}(\tilde R^{\dagger}\tilde R)=\sum_{\mu}\lvert R_\mu\rvert^{2}\ge0$, vanishing only at $\tilde R=0$, so the Gram matrix in the basis $e_0,e_1,e_2,e_3$ is the identity and the form is non-degenerate. For the axiom, left multiplication by $z$ gives
+*Proof.* Sesquilinearity and Hermitian symmetry are assembled from the two commuting involutions: the coefficient conjugation $\bar{\cdot}$ conjugates the scalar of the form and the quaternion conjugation ${}^{\natural}$ negates the three vector coefficients. Positivity is $\mathrm{Sc}(\tilde{R}^{*}\tilde R)=\sum_{\mu}\lvert R_\mu\rvert^{2}\ge0$, vanishing only at $\tilde R=0$, so the Gram matrix in the basis $e_0,e_1,e_2,e_3$ is the identity and the form is non-degenerate. For the axiom, left multiplication by $z$ gives
 
 $$
-(z\tilde R,\tilde T)=\mathrm{Sc}\bigl((z\tilde R)^{\dagger}\tilde T\bigr)=\mathrm{Sc}\bigl(\tilde R^{\dagger}z^{\dagger}\tilde T\bigr)=\bigl(\tilde R,z^{\dagger}\tilde T\bigr),
+(z\tilde R,\tilde T)=\mathrm{Sc}\bigl((z\tilde R)^{\dagger}\tilde T\bigr)=\mathrm{Sc}\bigl(\tilde{R}^{*}\bar{z}\tilde T\bigr)=\bigl(\tilde R,\bar{z}\tilde T\bigr),
 $$
 
 using that the dagger is an anti-involution and that the scalar part is a trace, $\mathrm{Sc}(\tilde B\tilde C)=\mathrm{Sc}(\tilde C\tilde B)$.
 
-**Remark (what is owed to the companion article).** The identity above is the adjoint theorem of *One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, §*The Form That Makes the Action Self-Adjoint*, where it is proved as the statement $L_{\tilde B}^{*}=L_{\tilde B^{\dagger}}$; the corollary there is the module picture used here, and it is not repeated.
+**Remark (what is owed to the companion article).** The identity above is the adjoint theorem of *One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, §*The Form That Makes the Action Self-Adjoint*, where it is proved as the statement $L_{\tilde B}^{*}=L_{\tilde{B}^{*}}$; the corollary there is the module picture used here, and it is not repeated.
 
 **Remark (uniqueness on the regular module).** The form is, up to a positive scalar, the only Hermitian form on $\mathbb{B}$ that is invariant in this sense and positive definite. For a form with Gram matrix $G$ the invariance reads $GA=A^{\dagger}G$ for every matrix $A$ of the algebra; letting $A$ run over the matrix units forces $G$ to be a scalar matrix, and positivity forces the scalar to be positive (*One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*).
 
@@ -106,9 +106,9 @@ $$
 
 is the simple left module, of complex dimension two; all minimal left ideals are isomorphic to it (*Modules over the Biquaternion Algebra*).
 
-**Lemma (the idempotents are self-adjoint).** $\tilde\Pi_1^{\dagger}=\tilde\Pi_1$ and $\tilde\Pi_2^{\dagger}=\tilde\Pi_2$; equivalently $ie_3$ and $e_0$ are Hermitian. Also $\tilde T^{\dagger}=\tfrac12(ie_1-e_2)$ and $\tilde T^{\dagger}\tilde T=\tilde\Pi_1$.
+**Lemma (the idempotents are self-adjoint).** $\tilde\Pi_1^{\dagger}=\tilde\Pi_1$ and $\tilde\Pi_2^{\dagger}=\tilde\Pi_2$; equivalently $ie_3$ and $e_0$ are Hermitian. Also $\tilde{T}^{*}=\tfrac12(ie_1-e_2)$ and $\tilde{T}^{*}\tilde T=\tilde\Pi_1$.
 
-*Proof.* On the basis, $e_0^{\dagger}=e_0$ and $e_k^{\dagger}=-e_k$, so $(ie_3)^{\dagger}=i^{*}e_3^{\dagger}=(-i)(-e_3)=ie_3$ and $\tilde\Pi_1^{\dagger}=\tfrac12(e_0+ie_3)=\tilde\Pi_1$; the second idempotent is $e_0-\tilde\Pi_1$ and is fixed with it. Further $\tilde T^{\dagger}=\tfrac12\bigl((ie_1)^{\dagger}+e_2^{\dagger}\bigr)=\tfrac12(ie_1-e_2)$, and multiplying out, using $e_1^2=e_2^2=-e_0$ and $e_1e_2=e_3$, gives $\tilde T^{\dagger}\tilde T=\tfrac14\bigl(e_0+ie_3+ie_3+e_0\bigr)=\tilde\Pi_1$. The sign that matters is $(ie_1)^{\dagger}=+ie_1$, which is the Hermitian sector meeting the generators.
+*Proof.* On the basis, $e_0^{\dagger}=e_0$ and $e_k^{\dagger}=-e_k$, so $(ie_3)^{\dagger}=i^{*}e_3^{\dagger}=(-i)(-e_3)=ie_3$ and $\tilde\Pi_1^{\dagger}=\tfrac12(e_0+ie_3)=\tilde\Pi_1$; the second idempotent is $e_0-\tilde\Pi_1$ and is fixed with it. Further $\tilde{T}^{*}=\tfrac12\bigl((ie_1)^{\dagger}+e_2^{\dagger}\bigr)=\tfrac12(ie_1-e_2)$, and multiplying out, using $e_1^2=e_2^2=-e_0$ and $e_1e_2=e_3$, gives $\tilde{T}^{*}\tilde T=\tfrac14\bigl(e_0+ie_3+ie_3+e_0\bigr)=\tilde\Pi_1$. The sign that matters is $(ie_1)^{\dagger}=+ie_1$, which is the Hermitian sector meeting the generators.
 
 **Theorem (the restriction is positive definite).** The restriction of the scalar form to $S=\mathbb{B}\tilde\Pi_1$ satisfies the adjointness axiom, and in the basis $(\tilde\Pi_1,\tilde T)$ its Gram matrix is
 
@@ -120,9 +120,9 @@ $$
 =\frac12\begin{pmatrix}1&0\\0&1\end{pmatrix}.
 $$
 
-*Proof.* For $s,t\in S$ and any $\tilde R$ one has $\tilde Rs\in S$ and $\tilde R^{\dagger}t\in S$, and $\mathrm{Sc}((\tilde Rs)^{\dagger}t)=\mathrm{Sc}(s^{\dagger}\tilde R^{\dagger}t)$, so the restriction inherits the axiom from the regular module and is invariant. For the entries, $\tilde\Pi_1^{\dagger}=\tilde\Pi_1$ and $\tilde\Pi_1^2=\tilde\Pi_1$ give $(\tilde\Pi_1,\tilde\Pi_1)=\mathrm{Sc}(\tilde\Pi_1)=\tfrac12$; the table gives $\tilde\Pi_1\tilde T=0$, so $(\tilde\Pi_1,\tilde T)=\mathrm{Sc}(\tilde\Pi_1^{\dagger}\tilde T)=0$ and the matrix is Hermitian; and the lemma gives $\tilde T^{\dagger}\tilde T=\tilde\Pi_1$, so $(\tilde T,\tilde T)=\mathrm{Sc}(\tilde\Pi_1)=\tfrac12$. Positivity is the restriction of the positive definite form of the regular module to a subspace.
+*Proof.* For $s,t\in S$ and any $\tilde R$ one has $\tilde Rs\in S$ and $\tilde{R}^{*}t\in S$, and $\mathrm{Sc}((\tilde Rs)^{\dagger}t)=\mathrm{Sc}(s^{\dagger}\tilde{R}^{*}t)$, so the restriction inherits the axiom from the regular module and is invariant. For the entries, $\tilde\Pi_1^{\dagger}=\tilde\Pi_1$ and $\tilde\Pi_1^2=\tilde\Pi_1$ give $(\tilde\Pi_1,\tilde\Pi_1)=\mathrm{Sc}(\tilde\Pi_1)=\tfrac12$; the table gives $\tilde\Pi_1\tilde T=0$, so $(\tilde\Pi_1,\tilde T)=\mathrm{Sc}(\tilde\Pi_1^{\dagger}\tilde T)=0$ and the matrix is Hermitian; and the lemma gives $\tilde{T}^{*}\tilde T=\tilde\Pi_1$, so $(\tilde T,\tilde T)=\mathrm{Sc}(\tilde\Pi_1)=\tfrac12$. Positivity is the restriction of the positive definite form of the regular module to a subspace.
 
-**Corollary (no isotropic ideal in $\mathbb{B}$).** The general theory warns that the restriction of the scalar form to a minimal left ideal may be totally isotropic, and exhibits the example $\pi=\tfrac12(1+e_1)$ in $\mathrm{Cl}_{1,1}(\mathbb{R})$, where $e_1^2=+1$ and the Gram matrix on $\mathrm{Cl}\pi$ is the zero matrix. No such ideal exists in $\mathbb{B}$: the scalar form $\mathrm{Sc}(\tilde R^{\dagger}\tilde R)$ is positive definite, so its restriction to every nonzero subspace is positive definite, and no minimal left ideal is isotropic. The reason is visible in the comparison of the two computations: the general failure is $\pi^{\dagger}\pi=0$ for an idempotent built from a vector that the dagger negates, whereas here $\tilde\Pi_1^{\dagger}=\tilde\Pi_1$ and $\tilde\Pi_1^{\dagger}\tilde\Pi_1=\tilde\Pi_1$ has scalar part $\tfrac12$. The standard idempotents of $\mathbb{B}$ are **self-adjoint**, which is exactly the condition the general article asks for when it prescribes a self-adjoint idempotent as the resolution.
+**Corollary (no isotropic ideal in $\mathbb{B}$).** The general theory warns that the restriction of the scalar form to a minimal left ideal may be totally isotropic, and exhibits the example $\pi=\tfrac12(1+e_1)$ in $\mathrm{Cl}_{1,1}(\mathbb{R})$, where $e_1^2=+1$ and the Gram matrix on $\mathrm{Cl}\pi$ is the zero matrix. No such ideal exists in $\mathbb{B}$: the scalar form $\mathrm{Sc}(\tilde{R}^{*}\tilde R)$ is positive definite, so its restriction to every nonzero subspace is positive definite, and no minimal left ideal is isotropic. The reason is visible in the comparison of the two computations: the general failure is $\pi^{\dagger}\pi=0$ for an idempotent built from a vector that the dagger negates, whereas here $\tilde\Pi_1^{\dagger}=\tilde\Pi_1$ and $\tilde\Pi_1^{\dagger}\tilde\Pi_1=\tilde\Pi_1$ has scalar part $\tfrac12$. The standard idempotents of $\mathbb{B}$ are **self-adjoint**, which is exactly the condition the general article asks for when it prescribes a self-adjoint idempotent as the resolution.
 
 **Remark (every idempotent, every ideal).** Nothing is special to $\tilde\Pi_1$. For any nonzero idempotent $e$ of $\mathbb{B}$ one has
 
@@ -140,17 +140,17 @@ since $e^{\dagger}e$ is a nonzero positive semidefinite matrix and its trace is 
 
 ## The Unitary Slice
 
-**Theorem (the slice acts by unitaries).** Let $U=\{\tilde E\in\mathbb{B}:\tilde E^{\dagger}\tilde E=e_0\}=U(2)$ be the unitary slice. Then left multiplication by $\tilde E$ is a unitary operator on every Hermitian Clifford module, and in particular on $S$:
+**Theorem (the slice acts by unitaries).** Let $U=\{\tilde E\in\mathbb{B}:\tilde{E}^{*}\tilde E=e_0\}=U(2)$ be the unitary slice. Then left multiplication by $\tilde E$ is a unitary operator on every Hermitian Clifford module, and in particular on $S$:
 
 $$
 (\tilde E\cdot s,\tilde E\cdot t)=(s,t)\qquad\text{for all }s,t\in S .
 $$
 
-*Proof.* By the axiom, $(\tilde E\cdot s,\tilde E\cdot t)=(s,\tilde E^{\dagger}\cdot(\tilde E\cdot t))=(s,(\tilde E^{\dagger}\tilde E)\cdot t)=(s,t)$ for $\tilde E^{\dagger}\tilde E=e_0$.
+*Proof.* By the axiom, $(\tilde E\cdot s,\tilde E\cdot t)=(s,\tilde{E}^{*}\cdot(\tilde E\cdot t))=(s,(\tilde{E}^{*}\tilde E)\cdot t)=(s,t)$ for $\tilde{E}^{*}\tilde E=e_0$.
 
 **Corollary (unitary representation and its Lie algebra).** The assignment $\tilde E\mapsto\rho(\tilde E)|_S$ is a unitary representation of $U(2)$ on the Hilbert space $S$. Its Lie algebra is the anti-Hermitian sector, $u(2)=\mathbb{M}_-$; the operators $L_{\tilde B}$ with $\tilde B\in\mathbb{M}_-$ are skew-adjoint, they satisfy $[L_{\tilde B},L_{\tilde C}]=L_{[\tilde B,\tilde C]}$, and the exponential stays in the family, $e^{L_{\tilde B}}=L_{e^{\tilde B}}$, so the correspondence is a Lie-algebra homomorphism followed by the exponential map (*One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, *Biquaternion Lie Algebra*).
 
-**Remark (the non-compact slice does not act unitarily).** The norm-one slice $\mathbb{B}^{\times}_1=\{N(\tilde E)=1\}\cong SL(2,\mathbb{C})$ is *not* a group of unitary operators of the module form: the unitary condition is $\tilde E^{\dagger}\tilde E=e_0$, which is the slice $U(2)$, and it meets $\mathbb{B}^{\times}_1$ in $SU(2)$ only. The obstruction is not an accident of the normalisation. The spinor representation of the Lorentz group preserves no positive definite form — the invariant bilinear form on $S$ is the antisymmetric $\varepsilon$, not the module form — so a positive definite invariant form can be required only of the compact part, and it is the compact part that the module form detects. This is the module-level shadow of the statement that the slice is the compact real form, and it is why the module form is used with the compact group while the interval form of $\mathbb{M}_+$ is used with the Lorentz group (*Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*).
+**Remark (the non-compact slice does not act unitarily).** The norm-one slice $\mathbb{B}^{\times}_1=\{N(\tilde E)=1\}\cong SL(2,\mathbb{C})$ is *not* a group of unitary operators of the module form: the unitary condition is $\tilde{E}^{*}\tilde E=e_0$, which is the slice $U(2)$, and it meets $\mathbb{B}^{\times}_1$ in $SU(2)$ only. The obstruction is not an accident of the normalisation. The spinor representation of the Lorentz group preserves no positive definite form — the invariant bilinear form on $S$ is the antisymmetric $\varepsilon$, not the module form — so a positive definite invariant form can be required only of the compact part, and it is the compact part that the module form detects. This is the module-level shadow of the statement that the slice is the compact real form, and it is why the module form is used with the compact group while the interval form of $\mathbb{M}_+$ is used with the Lorentz group (*Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*).
 
 ## The Dirac Element
 
@@ -190,7 +190,7 @@ so $D$ is formally self-adjoint; its Hermitian square is positive, $(D^{2}s,s)=(
 
 ## Summary
 
-A **Hermitian Clifford module** over $\mathbb{B}$ is a left $\mathbb{B}$-module with a Hermitian form satisfying the single axiom $(\tilde R\cdot s,t)=(s,\tilde R^{\dagger}\cdot t)$, equivalently with every element of $\mathbb{M}_-$ acting skew-adjointly and every element of $\mathbb{M}_+$ self-adjointly, so that the action is a $*$-representation of $(\mathbb{B},{}^{\dagger})$. The **regular module** ${}_{\mathbb{B}}\mathbb{B}$ with the form $(\tilde R,\tilde T)=\mathrm{Sc}(\tilde R^{\dagger}\tilde T)=\sum_\mu R_\mu^{*}T_\mu$ is a Hermitian Clifford module: the form is positive definite, non-degenerate, and unique up to a positive scalar, and its adjoint identity is the theorem $L_{\tilde B}^{*}=L_{\tilde B^{\dagger}}$ of the one-sided companion. The **simple module** $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde T\}$ carries the restriction of that form, with Gram matrix $\tfrac12 I_2$ in the basis $(\tilde\Pi_1,\tilde T)$: it is **positive definite**, not isotropic. The general warning that the restriction of a scalar form to a minimal left ideal can be totally isotropic has **no instance in $\mathbb{B}$**, because the scalar form of the dagger is positive definite and because the standard idempotents are **self-adjoint**, $\tilde\Pi_1^{\dagger}=\tilde\Pi_1$; the vanishing case of the general theory requires an idempotent built from a vector that the dagger negates, and $\mathbb{B}$ has none. On the irreducible module the form is unique up to a positive scalar by **Schur's lemma**, so the spinor inner product is canonical.
+A **Hermitian Clifford module** over $\mathbb{B}$ is a left $\mathbb{B}$-module with a Hermitian form satisfying the single axiom $(\tilde R\cdot s,t)=(s,\tilde{R}^{*}\cdot t)$, equivalently with every element of $\mathbb{M}_-$ acting skew-adjointly and every element of $\mathbb{M}_+$ self-adjointly, so that the action is a $*$-representation of $(\mathbb{B},{}^{*})$. The **regular module** ${}_{\mathbb{B}}\mathbb{B}$ with the form $(\tilde R,\tilde T)=\mathrm{Sc}(\tilde{R}^{*}\tilde T)=\sum_\mu R_\bar{\mu}T_\mu$ is a Hermitian Clifford module: the form is positive definite, non-degenerate, and unique up to a positive scalar, and its adjoint identity is the theorem $L_{\tilde B}^{*}=L_{\tilde{B}^{*}}$ of the one-sided companion. The **simple module** $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde T\}$ carries the restriction of that form, with Gram matrix $\tfrac12 I_2$ in the basis $(\tilde\Pi_1,\tilde T)$: it is **positive definite**, not isotropic. The general warning that the restriction of a scalar form to a minimal left ideal can be totally isotropic has **no instance in $\mathbb{B}$**, because the scalar form of the dagger is positive definite and because the standard idempotents are **self-adjoint**, $\tilde\Pi_1^{\dagger}=\tilde\Pi_1$; the vanishing case of the general theory requires an idempotent built from a vector that the dagger negates, and $\mathbb{B}$ has none. On the irreducible module the form is unique up to a positive scalar by **Schur's lemma**, so the spinor inner product is canonical.
 
 The **unitary slice** $U=U(2)$ acts on every Hermitian module by unitary operators, and its Lie algebra is the anti-Hermitian sector $\mathbb{M}_-\cong u(2)$; the non-compact slice $\mathbb{B}^{\times}_1=SL(2,\mathbb{C})$ does not act unitarily, only its compact part $SU(2)$ does, because the spinor representation preserves no positive definite form. The **Dirac element** $D_{\mathrm{alg}}=\sum_kL_{e_k}$ is skew-adjoint, with $D_S=-i(\sigma_1+\sigma_2+\sigma_3)$, $D_S^{2}=-3\,\mathrm{id}$ and positive Hermitian square $3\,\mathrm{id}$; the differential Dirac operator $D=\sum_k\rho(e_k)\partial_k$ is formally self-adjoint, its square is positive, and the finite model has no harmonic spinors — its kernel is empty and the index is not defined, because the volume element acts as a scalar and does not grade the module.
 
@@ -200,12 +200,12 @@ The **unitary slice** $U=U(2)$ acts on every Hermitian module by unitary operato
 |---|---|
 | $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde T\}$ | The simple left module, $\cong\mathbb{C}^2$; the spinor module |
 | $(\cdot,\cdot)$ | Hermitian form, $\mathbb{C}$-linear in the second argument |
-| $(\tilde R\cdot s,t)=(s,\tilde R^{\dagger}\cdot t)$ | Adjointness axiom; $\rho(\tilde R^{\dagger})=\rho(\tilde R)^{*}$ |
+| $(\tilde R\cdot s,t)=(s,\tilde{R}^{*}\cdot t)$ | Adjointness axiom; $\rho(\tilde{R}^{*})=\rho(\tilde R)^{*}$ |
 | $\mathbb{M}_-$ acts skew, $\mathbb{M}_+$ self-adjoint | The sector criterion for the axiom |
-| $(\tilde R,\tilde T)=\mathrm{Sc}(\tilde R^{\dagger}\tilde T)=\sum_\mu R_\mu^{*}T_\mu$ | Form of the regular module; positive definite |
+| $(\tilde R,\tilde T)=\mathrm{Sc}(\tilde{R}^{*}\tilde T)=\sum_\mu R_\bar{\mu}T_\mu$ | Form of the regular module; positive definite |
 | $\tilde\Pi_1^{\dagger}=\tilde\Pi_1$ | The idempotents are self-adjoint; hence no isotropic ideal |
 | Gram $=\tfrac12 I_2$ in $(\tilde\Pi_1,\tilde T)$ | Positive definite restriction to $S$ |
-| $U=U(2)=\{\tilde E^{\dagger}\tilde E=e_0\}$ | Unitary slice, acting by unitaries; Lie algebra $\mathbb{M}_-$ |
+| $U=U(2)=\{\tilde{E}^{*}\tilde E=e_0\}$ | Unitary slice, acting by unitaries; Lie algebra $\mathbb{M}_-$ |
 | $SL(2,\mathbb{C})$ | Norm-one slice; not unitary on $S$ except on $SU(2)$ |
 | $D_{\mathrm{alg}}=\sum_kL_{e_k}$, $D_S=-i(\sigma_1+\sigma_2+\sigma_3)$ | Dirac element and its restriction |
 | $D_S^{2}=-3\,\mathrm{id}$, $D_S^{*}D_S=3\,\mathrm{id}$ | Clifford square and positive Hermitian square; gap $3$ |
@@ -216,7 +216,7 @@ The **unitary slice** $U=U(2)$ acts on every Hermitian module by unitary operato
 - *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the algebra, the four conjugations, the six subspaces and the scalar form.
 - *Biquaternion Ideals and Peirce Decomposition* (`articles_maths/biquaternion-ideals-and-peirce-decomposition.md`), for the idempotents, the off-diagonal elements, the Peirce decomposition and the minimal left ideals.
 - *Modules over the Biquaternion Algebra* (`articles_maths/modules-over-the-biquaternion-algebra.md`), for the classification of the modules, the simple module, the projective-not-free dichotomy and the endomorphism algebra.
-- *One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/one-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for $L_{\tilde B}^{*}=L_{\tilde B^{\dagger}}$, the uniqueness of the invariant form and the module picture of the regular module.
+- *One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/one-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for $L_{\tilde B}^{*}=L_{\tilde{B}^{*}}$, the uniqueness of the invariant form and the module picture of the regular module.
 - *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the sandwich, the cone and the compact slice viewed as a group of operators.
 - *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the positivity of the involution that makes every restriction positive definite.
 - *Biquaternion Spin Geometry* (`articles_maths/biquaternion-spin-geometry.md`), for the spinor module, the chirality, the volume element and the Dirac operator.

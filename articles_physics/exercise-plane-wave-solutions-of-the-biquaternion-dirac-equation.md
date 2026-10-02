@@ -14,7 +14,7 @@ $$
 g=\mathrm{diag}(+1,-1,-1,-1),\qquad \{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4,
 $$
 
-so that with the four-momentum $p^\mu=(E,\mathbf p)$ and $p_\mu=(E,-\mathbf p)$, the slash is $\not p=\gamma^\mu p_\mu=\gamma^0E-\boldsymbol\gamma\cdot\mathbf p$. This $g$ is **not** the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ carried by the $ict$ gradient; the two are negatives, $g=-\eta$, and they yield the same $\Box$. The Dirac adjoint is $\bar\psi=\psi^\dagger\gamma^0$. In the solution sections we use natural units $\hbar=c=1$, restoring $\hbar$ and $c$ in Problem 6. The two-spinors are $\xi^{(1)}=(1,0)^T$, $\xi^{(2)}=(0,1)^T$, with $\xi^{(r)\dagger}\xi^{(s)}=\delta^{rs}$ and the same for $\eta^{(r)}$, and $\chi_\pm$ are the helicity eigenspinors $\boldsymbol\sigma\cdot\hat{\mathbf p}\,\chi_\pm=\pm\chi_\pm$.
+so that with the four-momentum $p^\mu=(E,\mathbf p)$ and $p_\mu=(E,-\mathbf p)$, the slash is $\not p=\gamma^\mu p_\mu=\gamma^0E-\boldsymbol\gamma\cdot\mathbf p$. This $g$ is **not** the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ carried by the $ict$ gradient; the two are negatives, $g=-\eta$, and they yield the same $\Box$. The Dirac adjoint is $\bar\psi=\psi^\dagger\gamma^0$. In the solution sections we use natural units $\hbar=c=1$, restoring $\hbar$ and $c$ in Problem 6. The two-spinors are $\xi^{(1)}=(1,0)^T$, $\xi^{(2)}=(0,1)^T$, with $\xi^{(r){}^{*}}\xi^{(s)}=\delta^{rs}$ and the same for $\eta^{(r)}$, and $\chi_\pm$ are the helicity eigenspinors $\boldsymbol\sigma\cdot\hat{\mathbf p}\,\chi_\pm=\pm\chi_\pm$.
 
 ## Problem 1: The spinors at rest and at general momentum
 
@@ -98,7 +98,7 @@ Then
 
 $$
 \bar u^{(r)}u^{(s)}
-=(E+m)\,\xi^{(r)\dagger}\xi^{(s)}-(E-m)\,\xi^{(r)\dagger}(\boldsymbol\sigma\cdot\hat{\mathbf p})^2\xi^{(s)}
+=(E+m)\,\xi^{(r){}^{*}}\xi^{(s)}-(E-m)\,\xi^{(r){}^{*}}(\boldsymbol\sigma\cdot\hat{\mathbf p})^2\xi^{(s)}
 =(E+m)\delta^{rs}-(E-m)\delta^{rs}=2m\,\delta^{rs}.
 $$
 
@@ -106,7 +106,7 @@ For the negative-frequency branch the order of the two terms is reversed,
 
 $$
 \bar v^{(r)}v^{(s)}
-=(E-m)\,\eta^{(r)\dagger}(\boldsymbol\sigma\cdot\hat{\mathbf p})^2\eta^{(s)}-(E+m)\,\eta^{(r)\dagger}\eta^{(s)}
+=(E-m)\,\eta^{(r){}^{*}}(\boldsymbol\sigma\cdot\hat{\mathbf p})^2\eta^{(s)}-(E+m)\,\eta^{(r){}^{*}}\eta^{(s)}
 =(E-m)\delta^{rs}-(E+m)\delta^{rs}=-2m\,\delta^{rs}.
 $$
 
@@ -114,26 +114,26 @@ This relative minus sign is the standard signature of the negative-frequency bra
 
 $$
 \bar u^{(r)}v^{(s)}
-=\sqrt{E^2-m^2}\,\xi^{(r)\dagger}(\boldsymbol\sigma\cdot\hat{\mathbf p})\eta^{(s)}
--\sqrt{E^2-m^2}\,\xi^{(r)\dagger}(\boldsymbol\sigma\cdot\hat{\mathbf p})\eta^{(s)}=0,
+=\sqrt{E^2-m^2}\,\xi^{(r){}^{*}}(\boldsymbol\sigma\cdot\hat{\mathbf p})\eta^{(s)}
+-\sqrt{E^2-m^2}\,\xi^{(r){}^{*}}(\boldsymbol\sigma\cdot\hat{\mathbf p})\eta^{(s)}=0,
 $$
 
 since $\boldsymbol\sigma\cdot\hat{\mathbf p}$ is Hermitian and the two terms cancel exactly. The Hermitian products follow from the same formulas without the $\gamma^0$:
 
 $$
-u^{(r)\dagger}u^{(s)}=(E+m)\delta^{rs}+(E-m)\delta^{rs}=2E\,\delta^{rs},
+u^{(r){}^{*}}u^{(s)}=(E+m)\delta^{rs}+(E-m)\delta^{rs}=2E\,\delta^{rs},
 $$
 
 $$
-v^{(r)\dagger}v^{(s)}=(E-m)\delta^{rs}+(E+m)\delta^{rs}=2E\,\delta^{rs}.
+v^{(r){}^{*}}v^{(s)}=(E-m)\delta^{rs}+(E+m)\delta^{rs}=2E\,\delta^{rs}.
 $$
 
 Finally, the mixed Hermitian product of the parent article requires opposite momenta and likewise vanishes:
 
 $$
-u^{(r)\dagger}(\mathbf p)\,v^{(s)}(-\mathbf p)
-=\sqrt{E^2-m^2}\,\xi^{(r)\dagger}(\boldsymbol\sigma\cdot\hat{\mathbf p})\eta^{(s)}
--\sqrt{E^2-m^2}\,\xi^{(r)\dagger}(\boldsymbol\sigma\cdot\hat{\mathbf p})\eta^{(s)}=0 .
+u^{(r){}^{*}}(\mathbf p)\,v^{(s)}(-\mathbf p)
+=\sqrt{E^2-m^2}\,\xi^{(r){}^{*}}(\boldsymbol\sigma\cdot\hat{\mathbf p})\eta^{(s)}
+-\sqrt{E^2-m^2}\,\xi^{(r){}^{*}}(\boldsymbol\sigma\cdot\hat{\mathbf p})\eta^{(s)}=0 .
 $$
 
 The bilinear $\bar u u$ is a Lorentz scalar, and its value $2m$ is the covariant normalisation; $\bar u u$ is not the probability density, which is the positive quantity $u^\dagger u=2E$. As a numerical check, for $m=1$, $|\mathbf p|=0.6$ (hence $E=1.16619$), direct evaluation gives $\bar u u=2.0000$, $\bar v v=-2.0000$, $\bar u v=0$, and $u^\dagger u=v^\dagger v=2.3324=2E$, all to machine precision.
@@ -142,7 +142,7 @@ The bilinear $\bar u u$ is a Lorentz scalar, and its value $2m$ is the covariant
 
 **Statement.** Verify the completeness relations (spin sums) $\sum_{r=1}^{2}u^{(r)}\bar u^{(r)}=\not p+m$ and $\sum_{r=1}^{2}v^{(r)}\bar v^{(r)}=\not p-m$.
 
-**Solution.** The spin sum is the outer product $u\bar u$, which is a $4\times4$ matrix. Using $\bar u=(u_A^\dagger,-u_B^\dagger)$ and the two-spinor completeness $\sum_r\xi^{(r)}\xi^{(r)\dagger}=I_2$,
+**Solution.** The spin sum is the outer product $u\bar u$, which is a $4\times4$ matrix. Using $\bar u=(u_A^\dagger,-u_B^\dagger)$ and the two-spinor completeness $\sum_r\xi^{(r)}\xi^{(r){}^{*}}=I_2$,
 
 $$
 u^{(r)}\bar u^{(r)}
@@ -151,7 +151,7 @@ u^{(r)}\bar u^{(r)}
 \begin{pmatrix}(E+m)I_2 & -(\boldsymbol\sigma\cdot\mathbf p)\\[2pt] \boldsymbol\sigma\cdot\mathbf p & -(E-m)I_2\end{pmatrix},
 $$
 
-where in the off-diagonal blocks we used $\sum_r\xi^{(r)}\xi^{(r)\dagger}(\boldsymbol\sigma\cdot\hat{\mathbf p})=\boldsymbol\sigma\cdot\hat{\mathbf p}$ and its Hermitian conjugate. In the Dirac basis,
+where in the off-diagonal blocks we used $\sum_r\xi^{(r)}\xi^{(r){}^{*}}(\boldsymbol\sigma\cdot\hat{\mathbf p})=\boldsymbol\sigma\cdot\hat{\mathbf p}$ and its Hermitian conjugate. In the Dirac basis,
 
 $$
 \not p+m=\gamma^0E-\boldsymbol\gamma\cdot\mathbf p+m
@@ -164,7 +164,7 @@ $$
 \sum_{r=1}^{2}u^{(r)}(\mathbf p)\,\bar u^{(r)}(\mathbf p)=\not p+m .
 $$
 
-The negative-frequency sum is identical in structure with the roles of the two blocks interchanged. Carrying it out with $\sum_r\eta^{(r)}\eta^{(r)\dagger}=I_2$,
+The negative-frequency sum is identical in structure with the roles of the two blocks interchanged. Carrying it out with $\sum_r\eta^{(r)}\eta^{(r){}^{*}}=I_2$,
 
 $$
 \sum_{r=1}^{2}v^{(r)}(\mathbf p)\,\bar v^{(r)}(\mathbf p)
@@ -295,10 +295,10 @@ $$
 \tilde K=\frac{i\omega}{c}\,e_0+\mathbf k,\qquad \mathbf k=k_1e_1+k_2e_2+k_3e_3 .
 $$
 
-This is an element of the material sector $\mathbb M_-$: imaginary scalar part, real vector part. Since the biquaternion norm of $\mathbb B$ is $N(\tilde Q)=\tilde Q\bar{\tilde Q}=\sum_\mu Q_\mu^2$,
+This is an element of the material sector $\mathbb M_-$: imaginary scalar part, real vector part. Since the biquaternion norm of $\mathbb B$ is $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$,
 
 $$
-N(\tilde K)=\tilde K\bar{\tilde K}=\left(\frac{i\omega}{c}\right)^2+k_1^2+k_2^2+k_3^2=-\frac{\omega^2}{c^2}+\mathbf k^2 .
+N(\tilde K)=\tilde K\tilde K^{\natural}=\left(\frac{i\omega}{c}\right)^2+k_1^2+k_2^2+k_3^2=-\frac{\omega^2}{c^2}+\mathbf k^2 .
 $$
 
 The relativistic dispersion relation is $\omega^2=c^2\mathbf k^2+\dfrac{m^2c^4}{\hbar^2}$, so
@@ -310,10 +310,10 @@ $$
 which is exactly the parent's condition
 
 $$
-\boxed{\;\tilde k\bar{\tilde k}=-\frac{m^2c^2}{\hbar^2}.\;}
+\boxed{\;\tilde k\tilde k^{\natural}=-\frac{m^2c^2}{\hbar^2}.\;}
 $$
 
-Equivalently, with $E=\hbar\omega$ and $\mathbf p=\hbar\mathbf k$, the wave biquaternion is the four-momentum biquaternion divided by $\hbar$, $\tilde K=\tilde P/\hbar$; the biquaternion norm being quadratic, $N(\tilde K)=N(\tilde P)/\hbar^2=-m^2c^2/\hbar^2$, exactly as $N(\tilde P)=\tilde P\bar{\tilde P}=-m^2c^2$ in the companion kinematics. The mass-shell condition is therefore not a new postulate: it is the statement that the four-wavevector is a timelike vector of $\mathbb M_-$ with the same biquaternion norm as the four-momentum.
+Equivalently, with $E=\hbar\omega$ and $\mathbf p=\hbar\mathbf k$, the wave biquaternion is the four-momentum biquaternion divided by $\hbar$, $\tilde K=\tilde P/\hbar$; the biquaternion norm being quadratic, $N(\tilde K)=N(\tilde P)/\hbar^2=-m^2c^2/\hbar^2$, exactly as $N(\tilde P)=\tilde P\tilde P^{\natural}=-m^2c^2$ in the companion kinematics. The mass-shell condition is therefore not a new postulate: it is the statement that the four-wavevector is a timelike vector of $\mathbb M_-$ with the same biquaternion norm as the four-momentum.
 
 The two roots of the dispersion relation, $\omega=\pm\sqrt{c^2\mathbf k^2+m^2c^4/\hbar^2}$, are the two frequency branches, and they are precisely the positive- and negative-frequency spinors $u$ and $v$ constructed above; the two spin labels within each branch give the four-dimensional complex solution space that the parent article quotes for the massive equation. As a numerical check, for an electron ($mc^2=0.510998950\ \mathrm{MeV}$) at $|\mathbf p|=1\ \mathrm{MeV}/c$, the dispersion relation gives $E=1.122996\ \mathrm{MeV}$ and $E^2-\mathbf p^2c^2=0.261120\ \mathrm{MeV}^2=(mc^2)^2$; the corresponding wave biquaternion has $N(\tilde K)=-6.706054\times10^{24}\ \mathrm{m}^{-2}$, agreeing with $-m^2c^2/\hbar^2$ to one part in $10^{15}$.
 
@@ -326,7 +326,7 @@ The six problems test the parent article's plane-wave solutions and confirm them
 3. **Spin sums.** The completeness relations $\sum_r u^{(r)}\bar u^{(r)}=\not p+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\not p-m$ follow from the two-spinor completeness relation, and satisfy $(\not p+m)(\not p-m)=0$ on shell.
 4. **Massless limit.** In the chiral basis each helicity eigenstate becomes a single Weyl spinor, with positive helicity locking to right-handedness and negative helicity to left-handedness; the mass term is the only term coupling the two chiralities.
 5. **Basis change.** The chiral and Dirac representations obey the same Clifford algebra with $g=\mathrm{diag}(+1,-1,-1,-1)$; the unitary $U=\tfrac{1}{\sqrt2}\left(\begin{smallmatrix}I_2&I_2\\-I_2&I_2\end{smallmatrix}\right)$ interpolates between them, and the Lorentz generators transform by conjugation, rotations acting chirality-even and boosts chirality-odd.
-6. **Mass shell.** The biquaternionic condition $\tilde k\bar{\tilde k}=-m^2c^2/\hbar^2$ is the biquaternion-norm statement $\tilde K=\tilde P/\hbar$, and reproduces $E^2=\mathbf p^2c^2+m^2c^4$.
+6. **Mass shell.** The biquaternionic condition $\tilde k\tilde k^{\natural}=-m^2c^2/\hbar^2$ is the biquaternion-norm statement $\tilde K=\tilde P/\hbar$, and reproduces $E^2=\mathbf p^2c^2+m^2c^4$.
 
 Two items needed in this exercise are not displayed in the parent article: the chiral negative-frequency spinors $v_\pm$ (constructed in Problem 4) and the explicit change-of-basis matrix $U$ (constructed in Problem 5). The parent states the existence of both but does not exhibit them; the constructions above are the ones that reproduce its stated results.
 
@@ -348,7 +348,7 @@ Two items needed in this exercise are not displayed in the parent article: the c
 | $U=\tfrac{1}{\sqrt2}\left(\begin{smallmatrix}I_2&I_2\\-I_2&I_2\end{smallmatrix}\right)$ | Unitary change of basis, $\gamma^\mu_d=U\gamma^\mu_cU^\dagger$ |
 | $S^{\mu\nu}=\tfrac i4[\gamma^\mu,\gamma^\nu]$ | Lorentz generators of the spinor representation |
 | $\tilde K=i\omega/c\,e_0+\mathbf k$ | Wave biquaternion (four-wavevector) |
-| $\tilde k\bar{\tilde k}=-m^2c^2/\hbar^2$ | Biquaternionic mass-shell condition |
+| $\tilde k\tilde k^{\natural}=-m^2c^2/\hbar^2$ | Biquaternionic mass-shell condition |
 
 ## Further Reading
 

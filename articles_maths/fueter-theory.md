@@ -11,7 +11,7 @@ $$
 
 the conjugate of which, $\partial=\partial_0-e_1\partial_1-e_2\partial_2-e_3\partial_3$, satisfies $\bar\partial\partial=\partial\bar\partial=\Delta$, the Laplacian of $\mathbb{R}^4$. The theory was introduced by Fueter in 1935 as the quaternionic analogue of complex analysis: the aim was a class of functions with a Cauchy integral formula, a power-series expansion and a Cauchy–Riemann system. The class is the quaternionic instance of the monogenic functions of *Clifford Analysis*, so the general operator theory is not repeated here; what this article develops is what is specific to the quaternionic case, and the article states at each point which of its results is an instance of the general theory and which is peculiar to four dimensions.
 
-Three features organise the article. The first is the **Cauchy–Fueter integral formula**, $f(q)=\frac{1}{2\pi^2}\int_{\partial\Omega}\frac{\overline{(p-q)}}{|p-q|^4}\,\nu_B(p)f(p)\,dS(p)$, the quaternionic form of the general Cauchy formula, whose kernel is the fundamental solution of the Fueter operator. The second is **Fueter's theorem**, the construction that produces regular functions from holomorphic functions of one complex variable: the radial extension of a holomorphic function is not regular, but its Laplacian is, and the construction shifts the homogeneity by two. This theorem is the reason the quaternionic theory is a genuine generalisation of complex analysis rather than a formal analogue, and it is the result that the per-system theories generalise. The third is the **axial** description of the functions that the construction produces: a regular function constant on the spheres about the real axis is determined by two real functions of two variables satisfying a pair of equations, and Fueter's theorem is the statement that these are the equations of a holomorphic function in disguise.
+Three features organise the article. The first is the **Cauchy–Fueter integral formula**, $f(q)=\frac{1}{2\pi^2}\int_{\partial\Omega}\frac{(p-q)^{\natural}}{|p-q|^4}\,\nu_B(p)f(p)\,dS(p)$, the quaternionic form of the general Cauchy formula, whose kernel is the fundamental solution of the Fueter operator. The second is **Fueter's theorem**, the construction that produces regular functions from holomorphic functions of one complex variable: the radial extension of a holomorphic function is not regular, but its Laplacian is, and the construction shifts the homogeneity by two. This theorem is the reason the quaternionic theory is a genuine generalisation of complex analysis rather than a formal analogue, and it is the result that the per-system theories generalise. The third is the **axial** description of the functions that the construction produces: a regular function constant on the spheres about the real axis is determined by two real functions of two variables satisfying a pair of equations, and Fueter's theorem is the statement that these are the equations of a holomorphic function in disguise.
 
 The boundaries are these. The general hypercomplex theory — left and right regularity, the symbol, ellipticity, the Cauchy transform, the per-system value spaces — is in *Hypercomplex Analysis* and *Regularity and the Cauchy–Riemann Operator*, and is cited; the integration theory of that general setting is not covered here. The Clifford-algebra formulation, the Fischer decomposition and the polymonogenic functions are in *Clifford Analysis*, the immediately preceding article, and are used there. The quaternionic analyses of the other systems — the biquaternionic case, the split-biquaternionic case, the slice theory with its own power series — belong to Part V and are cited as the places where the system-specific statements are proved. The article is mathematics: no physical reading of $\mathbb{R}^4$ is used.
 
@@ -19,7 +19,7 @@ The boundaries are these. The general hypercomplex theory — left and right reg
 
 ### The Algebra and the Operator
 
-Let $\mathbb{H}$ be the real quaternion algebra, with basis $1,e_1,e_2,e_3$ and relations $e_i^2=-1$, $e_ie_j=-e_je_i$ for $i\neq j$, and $e_1e_2=e_3$. A quaternion is written $q=q_0+\vec q$, $q_0\in\mathbb{R}$, $\vec q=q_1e_1+q_2e_2+q_3e_3$; its conjugate is $\bar q=q_0-\vec q$, its norm is $N(q)=q\bar q=|q|^2=q_0^2+q_1^2+q_2^2+q_3^2$, and every nonzero quaternion is invertible with $q^{-1}=\bar q/|q|^2$. The algebra is identified with $\mathbb{R}^4$ through the basis, and open sets of $\mathbb{H}$ with open sets of $\mathbb{R}^4$.
+Let $\mathbb{H}$ be the real quaternion algebra, with basis $1,e_1,e_2,e_3$ and relations $e_i^2=-1$, $e_ie_j=-e_je_i$ for $i\neq j$, and $e_1e_2=e_3$. A quaternion is written $q=q_0+\vec q$, $q_0\in\mathbb{R}$, $\vec q=q_1e_1+q_2e_2+q_3e_3$; its conjugate is $q^{\natural}=q_0-\vec q$, its norm is $N(q)=q q^{\natural}=|q|^2=q_0^2+q_1^2+q_2^2+q_3^2$, and every nonzero quaternion is invertible with $q^{-1}=q^{\natural}/|q|^2$. The algebra is identified with $\mathbb{R}^4$ through the basis, and open sets of $\mathbb{H}$ with open sets of $\mathbb{R}^4$.
 
 **Definition.** The **Fueter operator** and its conjugate are
 
@@ -37,9 +37,9 @@ They act on a $C^1$ function $f:\Omega\to\mathbb{H}$ on the left, $\bar\partial 
 
 ### Elementary Properties and Examples
 
-**Proposition (structure of the regular functions).** The left regular functions on a domain $\Omega$ form a real vector space and a right $\mathbb{H}$-module: if $f$ is left regular and $a\in\mathbb{H}$ then $af$ need not be regular, while $fa$ and $f+a$ are. The right regular functions form a left $\mathbb{H}$-module. Conjugation exchanges the two classes: $f$ is left regular if and only if $\bar f$ is right regular for $\bar\partial$.
+**Proposition (structure of the regular functions).** The left regular functions on a domain $\Omega$ form a real vector space and a right $\mathbb{H}$-module: if $f$ is left regular and $a\in\mathbb{H}$ then $af$ need not be regular, while $fa$ and $f+a$ are. The right regular functions form a left $\mathbb{H}$-module. Conjugation exchanges the two classes: $f$ is left regular if and only if $f^{\natural}$ is right regular for $\bar\partial$.
 
-*Proof.* The vector-space and module statements follow from the linearity of $\bar\partial$ over the constants on the right and from $\bar\partial(fa)=(\bar\partial f)a$, which holds because $a$ is constant. For the exchange of sides, apply the involution: $\overline{\bar\partial f}=\sum_i\partial_i\bar f\,\bar e_i$ for $i=0,1,2,3$ with $e_0=1$, and $\bar e_0=1$, $\bar e_i=-e_i$; this is the right-action statement of *Regularity and the Cauchy–Riemann Operator*.
+*Proof.* The vector-space and module statements follow from the linearity of $\bar\partial$ over the constants on the right and from $\bar\partial(fa)=(\bar\partial f)a$, which holds because $a$ is constant. For the exchange of sides, apply the involution: $(\bar\partial f)^{\natural}=\sum_i\partial_i f^{\natural}\,e_i^{\natural}$ for $i=0,1,2,3$ with $e_0=1$, and $e_0^{\natural}=1$, $e_i^{\natural}=-e_i$; this is the right-action statement of *Regularity and the Cauchy–Riemann Operator*.
 
 **Example (constants and the Fueter variables).** Constants are regular, and the functions
 
@@ -82,7 +82,7 @@ obtained by expanding $f=\sum_\alpha f_\alpha e_\alpha$ and $e_ie_j=e_k$ for cyc
 **Theorem (the Cauchy–Fueter kernel).** The function
 
 $$
-E(q) = \frac{1}{2\pi^2}\frac{\bar q}{|q|^4} , \qquad q\neq0 ,
+E(q) = \frac{1}{2\pi^2}\frac{q^{\natural}}{|q|^4} , \qquad q\neq0 ,
 $$
 
 is a fundamental solution of the Fueter operator, $\bar\partial E=\delta_0$, and it is the Cauchy kernel of the theory.
@@ -92,13 +92,13 @@ is a fundamental solution of the Fueter operator, $\bar\partial E=\delta_0$, and
 **Theorem (Cauchy–Fueter integral formula).** Let $\Omega\subseteq\mathbb{H}$ be a bounded domain with smooth boundary, let $\nu_B=\sum_{\alpha=0}^{3}\nu_\alpha e_\alpha$ where $(\nu_0,\dots,\nu_3)$ is the outward unit normal, and let $f$ be left regular on a neighbourhood of $\bar\Omega$. Then for $q\in\Omega$,
 
 $$
-f(q) = \frac{1}{2\pi^2}\int_{\partial\Omega}\frac{\overline{(p-q)}}{|p-q|^4}\,\nu_B(p)\,f(p)\,dS(p) .
+f(q) = \frac{1}{2\pi^2}\int_{\partial\Omega}\frac{(p-q)^{\natural}}{|p-q|^4}\,\nu_B(p)\,f(p)\,dS(p) .
 $$
 
 Moreover, for $f$ of class $C^1$ on $\bar\Omega$ the **Cauchy–Fueter–Pompeiu formula**
 
 $$
-f(q) = \frac{1}{2\pi^2}\int_{\partial\Omega}\frac{\overline{(p-q)}}{|p-q|^4}\,\nu_B(p)\,f(p)\,dS(p) - \frac{1}{2\pi^2}\int_\Omega\frac{\overline{(p-q)}}{|p-q|^4}\,(\bar\partial f)(p)\,dp
+f(q) = \frac{1}{2\pi^2}\int_{\partial\Omega}\frac{(p-q)^{\natural}}{|p-q|^4}\,\nu_B(p)\,f(p)\,dS(p) - \frac{1}{2\pi^2}\int_\Omega\frac{(p-q)^{\natural}}{|p-q|^4}\,(\bar\partial f)(p)\,dp
 $$
 
 holds, and it reduces to the preceding statement when $f$ is regular.
@@ -113,7 +113,7 @@ $$
 
 using $\int_{\partial B(q,r)}dS=2\pi^2r^3$.
 
-**Remark (the other formulæ).** The Cauchy transform $\mathcal{C}h(q)=\frac{1}{2\pi^2}\int_{\partial\Omega}\frac{\overline{(p-q)}}{|p-q|^4}\nu_B(p)h(p)dS(p)$ maps a boundary datum to a regular function inside, and the jump formula $\mathcal{C}^+h-\mathcal{C}^-h=h$ recovers the density; both are the quaternionic instances of the general statements of the hypercomplex theory, whose integration theory is the subject , with the kernel here specialised to the quaternionic case. The Hardy space of boundary values of regular functions and the projection onto it are likewise the general theory's, and the explicit kernel makes the small-sphere residues of the quaternionic theory computable: the residue of $E$ at the origin is $1$ in the normalisation of the kernel.
+**Remark (the other formulæ).** The Cauchy transform $\mathcal{C}h(q)=\frac{1}{2\pi^2}\int_{\partial\Omega}\frac{(p-q)^{\natural}}{|p-q|^4}\nu_B(p)h(p)dS(p)$ maps a boundary datum to a regular function inside, and the jump formula $\mathcal{C}^+h-\mathcal{C}^-h=h$ recovers the density; both are the quaternionic instances of the general statements of the hypercomplex theory, whose integration theory is the subject , with the kernel here specialised to the quaternionic case. The Hardy space of boundary values of regular functions and the projection onto it are likewise the general theory's, and the explicit kernel makes the small-sphere residues of the quaternionic theory computable: the residue of $E$ at the origin is $1$ in the normalisation of the kernel.
 
 ## Fueter's Theorem
 
@@ -229,7 +229,7 @@ of the Fueter variables $z_0=q_0$, $z_i=q_0e_i-q_i$ $(i=1,2,3)$, taken over the 
 
 ## Summary
 
-The Fueter operator $\bar\partial=\partial_0+e_1\partial_1+e_2\partial_2+e_3\partial_3$ and its conjugate $\partial$ factor the Laplacian of $\mathbb{R}^4$, $\bar\partial\partial=\partial\bar\partial=\Delta$, and are elliptic, with symbol $\sigma(\xi)=\xi_0+\sum_ie_i\xi_i$ and inverse $\bar\sigma(\xi)/|\xi|^2$. A function is left regular when $\bar\partial f=0$; the left regular functions form a real vector space and a right $\mathbb{H}$-module, conjugation exchanges left and right regularity, and every regular function is real-analytic with harmonic components, so the mean value property, the maximum principle, Liouville's theorem and the identity theorem hold. The linear regular functions are the Fueter variables $z_i=q_0e_i-q_i$, spanning a space of real dimension $12$. The fundamental solution is the Cauchy–Fueter kernel $E(q)=\frac{1}{2\pi^2}\bar q|q|^{-4}$, and it yields the Cauchy–Fueter formula $f(q)=\frac{1}{2\pi^2}\int_{\partial\Omega}\overline{(p-q)}|p-q|^{-4}\nu_B(p)f(p)dS(p)$, the Cauchy–Fueter–Pompeiu formula for non-regular functions, the Cauchy estimates on balls and the jump and projection statements of the general theory. **Fueter's theorem** constructs regular functions from holomorphic ones: the axial extension $\tilde f=u(q_0,r)+\frac{\vec q}{r}v(q_0,r)$ of a holomorphic $f=u+iv$ is not regular, but its Laplacian $F=\Delta\tilde f$ is, the construction shifting homogeneity by two and killing the constants and the identity. The axial regular functions $A(q_0,r)+\vec qB(q_0,r)$ are exactly those solving the pair $A_0=3B+rB_r$, $B_0=-A_r/r$, which is a Cauchy–Riemann system in the reduced variables $(q_0,r)$, and every regular function on a ball has a Taylor expansion in the homogeneous monogenic pieces $\mathcal{M}_k$, whose standard bases are the Fueter polynomials $V_\lambda$ and whose coefficients are computed by the Cauchy–Fueter formula. The class is rigid but not an algebra: products of regular functions need not be regular. The general operator theory is *Clifford Analysis* and *Regularity and the Cauchy–Riemann Operator*; the slice description and the biquaternionic, split-biquaternionic and other value algebras are Part V.
+The Fueter operator $\bar\partial=\partial_0+e_1\partial_1+e_2\partial_2+e_3\partial_3$ and its conjugate $\partial$ factor the Laplacian of $\mathbb{R}^4$, $\bar\partial\partial=\partial\bar\partial=\Delta$, and are elliptic, with symbol $\sigma(\xi)=\xi_0+\sum_ie_i\xi_i$ and inverse $\bar\sigma(\xi)/|\xi|^2$. A function is left regular when $\bar\partial f=0$; the left regular functions form a real vector space and a right $\mathbb{H}$-module, conjugation exchanges left and right regularity, and every regular function is real-analytic with harmonic components, so the mean value property, the maximum principle, Liouville's theorem and the identity theorem hold. The linear regular functions are the Fueter variables $z_i=q_0e_i-q_i$, spanning a space of real dimension $12$. The fundamental solution is the Cauchy–Fueter kernel $E(q)=\frac{1}{2\pi^2}q^{\natural}|q|^{-4}$, and it yields the Cauchy–Fueter formula $f(q)=\frac{1}{2\pi^2}\int_{\partial\Omega}(p-q)^{\natural}|p-q|^{-4}\nu_B(p)f(p)dS(p)$, the Cauchy–Fueter–Pompeiu formula for non-regular functions, the Cauchy estimates on balls and the jump and projection statements of the general theory. **Fueter's theorem** constructs regular functions from holomorphic ones: the axial extension $\tilde f=u(q_0,r)+\frac{\vec q}{r}v(q_0,r)$ of a holomorphic $f=u+iv$ is not regular, but its Laplacian $F=\Delta\tilde f$ is, the construction shifting homogeneity by two and killing the constants and the identity. The axial regular functions $A(q_0,r)+\vec qB(q_0,r)$ are exactly those solving the pair $A_0=3B+rB_r$, $B_0=-A_r/r$, which is a Cauchy–Riemann system in the reduced variables $(q_0,r)$, and every regular function on a ball has a Taylor expansion in the homogeneous monogenic pieces $\mathcal{M}_k$, whose standard bases are the Fueter polynomials $V_\lambda$ and whose coefficients are computed by the Cauchy–Fueter formula. The class is rigid but not an algebra: products of regular functions need not be regular. The general operator theory is *Clifford Analysis* and *Regularity and the Cauchy–Riemann Operator*; the slice description and the biquaternionic, split-biquaternionic and other value algebras are Part V.
 
 ## Summary of Notation
 
@@ -237,13 +237,13 @@ The Fueter operator $\bar\partial=\partial_0+e_1\partial_1+e_2\partial_2+e_3\par
 |---|---|
 | $\mathbb{H}$ | Real quaternions, basis $1,e_1,e_2,e_3$ |
 | $q=q_0+\vec q$ | Quaternionic variable; $\vec q=q_1e_1+q_2e_2+q_3e_3$ |
-| $\bar q$, $N(q)=|q|^2$ | Quaternionic conjugation and norm |
+| $q^{\natural}$, $N(q)=|q|^2$ | Quaternionic conjugation and norm |
 | $\bar\partial=\partial_0+\sum_{i=1}^3e_i\partial_i$ | Fueter operator |
 | $\partial=\partial_0-\sum_{i=1}^3e_i\partial_i$ | Conjugate; $\bar\partial\partial=\partial\bar\partial=\Delta$ |
 | $\sigma(\xi)$, $\bar\sigma(\xi)$ | Symbol and conjugate symbol of $\bar\partial$ |
 | $\bar\partial f=0$, $f\bar\partial=0$ | Left and right Fueter regularity |
 | $z_i=q_0e_i-q_i$ | Fueter variables |
-| $E(q)=\frac{1}{2\pi^2}\bar q|q|^{-4}$ | Cauchy–Fueter kernel; $\bar\partial E=\delta_0$ |
+| $E(q)=\frac{1}{2\pi^2}q^{\natural}|q|^{-4}$ | Cauchy–Fueter kernel; $\bar\partial E=\delta_0$ |
 | $\nu_B=\sum_\alpha\nu_\alpha e_\alpha$ | Conormal element |
 | $\tilde f$ | Axial (radial) extension of $f$ |
 | $F=\Delta\tilde f$ | Fueter construction |

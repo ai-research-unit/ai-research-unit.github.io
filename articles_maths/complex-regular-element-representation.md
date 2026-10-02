@@ -106,7 +106,7 @@ where the transpose is taken in the basis $1, i$.
 
 **Proof.** Transposing $\rho_L(Z) = \begin{pmatrix} a & -b \\ b & a \end{pmatrix}$ gives $\begin{pmatrix} a & b \\ -b & a \end{pmatrix}$, which is $\rho_L(a - i b) = \rho_L(\bar{Z})$.
 
-Transposition is therefore complex conjugation in the matrix picture: it is the matrix form of the involution, and the antisymmetric matrix $\rho_L(Z) - \rho_L(\bar{Z})$ changes sign under it. This is the placement, in the two-dimensional case, of the biquaternion identity $\rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\bar{\tilde{Q}})$, where the transpose corresponds to quaternion conjugation; the same theorem holds here with the single involution of the field.
+Transposition is therefore complex conjugation in the matrix picture: it is the matrix form of the involution, and the antisymmetric matrix $\rho_L(Z) - \rho_L(\bar{Z})$ changes sign under it. This is the placement, in the two-dimensional case, of the biquaternion identity $\rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\tilde{Q}^{\natural})$, where the transpose corresponds to quaternion conjugation; the same theorem holds here with the single involution of the field.
 
 ## The Module Structure: Irreducibility
 

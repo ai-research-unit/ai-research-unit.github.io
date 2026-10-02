@@ -1,0 +1,181 @@
+# __The Resolvent Operator__
+
+## Introduction
+
+The inverse of a differential operator depends on the equation it inverts, and the family of inverses obtained by shifting the equation is the **resolvent**. For a differential operator $L$ under a boundary condition, and a complex number $\lambda$, the resolvent is
+
+$$
+R(\lambda) = (L-\lambda)^{-1} ,
+$$
+
+the Green operator of the shifted expression $L-\lambda$ with the same boundary condition; it exists exactly for those $\lambda$ at which the shifted homogeneous problem has only the trivial solution, and the set of such $\lambda$ is the **resolvent set**, whose complement in the plane is the **spectrum**. The resolvent is the object in which the spectral theory of a differential equation is carried out: it is an analytic operator-valued function on an open set, it satisfies an algebraic identity that makes its values commute, and its singularities are the eigenvalues, each with the spectral projection as its residue.
+
+This article fixes the resolvent of a closed operator and of a differential operator under a boundary condition, proves the resolvent identity and the analyticity with the Neumann series, describes the resolvent as an integral operator whose kernel is the resolvent kernel, and records the two properties that make it the tool of the subject: the spectrum is a closed set, and it is open where the shifted homogeneous problem is trivial. It then specialises to the self-adjoint operator with compact resolvent, where the spectrum is a real sequence of eigenvalues tending to infinity, the resolvent is meromorphic with poles there, and the residue is the projection onto the eigenspace; and it links the estimate of the resolvent on the imaginary axis to the spectral theorem.
+
+The closed and unbounded operators on a Hilbert space, the resolvent set $\rho(T)$, the spectrum $\sigma(T)$ and the spectral measure are those of *Banach and Hilbert Spaces* and *Unbounded Operators and Spectral Measures*; the Green operator and its identity $G_\lambda=G+\lambda GG_\lambda$ are those of *The Green Operator*; the Sturm–Liouville eigenvalues and the eigenfunction expansion are those of *The Sturm–Liouville Operator*; the compactness that produces the discrete spectrum is the Rellich–Kondrachov theorem of *Sobolev Spaces and Weak Solutions*. The spectral theorem for the self-adjoint elliptic operator is *Self-Adjoint Elliptic Operators and the Spectral Theorem*, and the boundary condition that makes the operator self-adjoint is *The Adjoint Boundary Condition*, both below.
+
+## The Resolvent of a Closed Operator
+
+**Definition.** Let $L$ be a closed linear operator with dense domain $\mathcal{D}(L)$ on a Banach space $X$. A complex number $\lambda$ belongs to the **resolvent set** $\rho(L)$ if $L-\lambda$ maps $\mathcal{D}(L)$ bijectively onto $X$ with bounded inverse; the **resolvent** at $\lambda$ is that inverse,
+
+$$
+R(\lambda) = R(\lambda;L) = (L-\lambda)^{-1} ,
+$$
+
+and the **spectrum** is $\sigma(L) = \mathbb{C}\setminus\rho(L)$. The spectrum is **discrete** if it consists of isolated points of finite multiplicity, each an eigenvalue; a number $\lambda$ is an **eigenvalue** if $Lu=\lambda u$ for some nonzero $u\in\mathcal{D}(L)$, and the **geometric multiplicity** is $\dim\ker(L-\lambda)$, the whole eigenspace.
+
+**Theorem (the resolvent identity).** For $\lambda,\mu\in\rho(L)$,
+
+$$
+R(\lambda)-R(\mu) = (\lambda-\mu)\,R(\lambda)R(\mu) , \qquad R(\lambda)R(\mu)=R(\mu)R(\lambda) .
+$$
+
+*Proof.* Write $R(\lambda)-R(\mu)=R(\lambda)\bigl((L-\mu)-(L-\lambda)\bigr)R(\mu)$ and observe that $(L-\mu)-(L-\lambda)=\lambda-\mu$; the second identity follows from the first by exchanging $\lambda$ and $\mu$, since the left-hand side changes sign and so does $\lambda-\mu$. The two resolvents therefore commute.
+
+**Theorem (analyticity and the Neumann series).** The resolvent set is open, the spectrum is closed, and the resolvent is analytic on the resolvent set. If $\mu\in\rho(L)$ and $|\lambda-\mu|\,\|R(\mu)\|<1$, then $\lambda\in\rho(L)$ and
+
+$$
+R(\lambda) = \sum_{n\ge0}(\lambda-\mu)^n R(\mu)^{n+1} ,
+$$
+
+the series converging in the operator norm; in particular $\|R(\lambda)\|\to0$ as $|\lambda|\to\infty$ along a ray in the resolvent set, and $\|R(\lambda)\| = O(|\lambda|^{-1})$.
+
+*Proof.* From $L-\lambda = (L-\mu)-(\lambda-\mu) = \bigl(I-(\lambda-\mu)R(\mu)\bigr)(L-\mu)$ one inverts the first factor by the Neumann series, which converges because $\|(\lambda-\mu)R(\mu)\|<1$, and multiplies by $R(\mu)$; the same computation bounds $\|R(\lambda)\|$. The ball of radius $\|R(\mu)\|^{-1}$ about each $\mu$ of the resolvent set lies in it, so the set is open and the spectrum closed; the displayed series is a power series for $R$ and shows the analyticity. The estimate at infinity follows by taking $\mu$ with large $|\mu|$ in the resolvent set and reading the leading term.
+
+**Corollary (derivative of the resolvent).** The resolvent is differentiable on the resolvent set and
+
+$$
+R'(\lambda) = R(\lambda)^2 , \qquad R^{(n)}(\lambda) = n!\,R(\lambda)^{n+1} .
+$$
+
+*Proof.* Differentiate the identity $(L-\lambda)R(\lambda)=I$ in $\lambda$: $-R(\lambda)+(L-\lambda)R'(\lambda)=0$, so $R'(\lambda)=R(\lambda)^2$; the higher derivatives follow by induction, the resolvent being analytic.
+
+## The Resolvent of a Differential Operator
+
+**Definition.** Let $L$ be a differential operator of order $m$ on a domain $\Omega$ with a boundary condition $B$, and let $G$ be its Green operator, so that the homogeneous problem $Lu=0$, $Bu=0$ has only the trivial solution. The **resolvent of the boundary-value problem** is the Green operator of the shifted problem $(L-\lambda,B)$; it is defined for those $\lambda\in\mathbb{C}$ for which $(L-\lambda)u=0$, $Bu=0$ has only the trivial solution, and these are exactly the points of the resolvent set of the realisation of $L$ with domain $\{u : Bu=0, Lu\in L^2\}$.
+
+**Proposition (the resolvent as a shifted Green operator).** With $G$ the Green operator of $(L,B)$ and $R(\lambda)$ the resolvent,
+
+$$
+R(\lambda) = G\,(I-\lambda G)^{-1} = (I-\lambda G)^{-1}G = G + \lambda\,G\,R(\lambda) ,
+$$
+
+and $\lambda$ is in the resolvent set exactly when $I-\lambda G$ is invertible.
+
+*Proof.* These are the identities of *The Green Operator* written with $G_\lambda=R(\lambda)$; the shift $L-\lambda$ factors as $(I-\lambda G)(L)$ on the domain, so its inverse is $G$ composed with the inverse of $I-\lambda G$, and the operator $I-\lambda G$ is invertible exactly when the shifted kernel is trivial.
+
+**Theorem (the resolvent kernel).** If the resolvent is an integral operator on $L^2(\Omega)$ with kernel $R(\lambda;x,y)$, the **resolvent kernel**, then
+
+$$
+R(\lambda;x,y) = G(x,y) + \lambda\int_\Omega G(x,z)\,R(\lambda;z,y)\,dz ,
+$$
+
+the **Fredholm resolvent equation**; the kernel is the Green function of $(L-\lambda,B)$, and it is an analytic function of $\lambda$ wherever the resolvent is defined.
+
+*Proof.* The identity $R(\lambda)=G+\lambda GR(\lambda)$ written in kernels is the displayed equation, the composition of integral operators being the convolution of kernels. That the kernel is the Green function of the shifted problem is the definition, and its analyticity is that of the resolvent transported to the kernel by the identity.
+
+**Theorem (meromorphic structure).** Suppose that $G$ is compact and that $R(\lambda)$ exists in a punctured neighbourhood of an eigenvalue $\lambda_0$ of finite multiplicity $m$. Then $R(\lambda)$ has a pole of order at most $m$ at $\lambda_0$, and if $\lambda_0$ is a simple eigenvalue with orthonormal eigenfunction $\varphi_0$ and spectral projection $P_0 = \langle\cdot,\varphi_0\rangle\varphi_0$, then the residue is
+
+$$
+\lim_{\lambda\to\lambda_0}(\lambda-\lambda_0)\,R(\lambda) = -P_0 .
+$$
+
+*Proof.* The operator $G$ is compact, so $I-\lambda G$ is invertible except at the reciprocals $\mu_0=\lambda_0^{-1}$ of the nonzero eigenvalues of $G$; at such a point the singularity of $(I-\lambda G)^{-1}$ is confined to the eigenspace of $\mu_0$, of dimension $m$, and there the operator is multiplication by $(1-\lambda\mu_0)^{-1}$, so the pole has order at most $m$. For a simple eigenvalue, let $P_0$ be the orthogonal projection onto the eigenspace; on that line $(I-\lambda G)^{-1}$ is the scalar $(1-\lambda/\lambda_0)^{-1} = -\lambda_0/(\lambda-\lambda_0)$, while on the orthogonal complement it is analytic near $\lambda_0$. Since $G$ acts on the eigenspace as multiplication by $\mu_0=\lambda_0^{-1}$, the product $G(I-\lambda G)^{-1}$ restricted to the eigenspace is $\mu_0\cdot\bigl(-\lambda_0/(\lambda-\lambda_0)\bigr) = -1/(\lambda-\lambda_0)$, which is the displayed residue; the analytic part contributes nothing to it.
+
+### The Resolvent of an Interval Problem
+
+**Example.** For $L=-d^2/dx^2$ on $(0,\pi)$ with $u(0)=u(\pi)=0$ the eigenvalues and eigenfunctions are $\lambda_n=n^2$ and $\varphi_n(x)=\sqrt{2/\pi}\,\sin(nx)$, so the resolvent kernel is
+
+$$
+R(\lambda;x,y) = \frac{2}{\pi}\sum_{n\ge1}\frac{\sin(nx)\,\sin(ny)}{n^2-\lambda} \qquad (\lambda\neq n^2).
+$$
+
+For the special value $\lambda=-k^2$ with $k>0$, which lies in the resolvent set because $-k^2<0\le n^2$, the series sums in closed form to
+
+$$
+R(-k^2;x,y) = \frac{\sinh\!\bigl(k\,(x\wedge y)\bigr)\,\sinh\!\bigl(k\,(\pi-(x\vee y))\bigr)}{k\sinh(k\pi)} ,
+$$
+
+which is exactly the Green function of $-u''+k^2u=f$ with the Dirichlet conditions, as the construction of *The Green Operator* from the solutions $u_<=\sinh(kx)$ and $u_>=\sinh(k(\pi-x))$ and the Wronskian $W=k\sinh(k\pi)$ returns. The example shows the two descriptions of the resolvent agreeing: the spectral series, which displays the poles at the eigenvalues, and the closed form, which displays the analytic dependence on $\lambda$.
+
+**Example (the analytic continuation).** The closed form is an expression in $k=\sqrt{-\lambda}$; as $\lambda$ travels in the plane avoiding $(0,\infty)$, the square root is single-valued, and the formula continues the resolvent analytically. The poles at $\lambda=n^2$ appear as the zeros of $\sinh(k\pi)$ at $k=in$; the resolvent therefore has poles exactly at the eigenvalues, and between them it is analytic, which is the meromorphic structure of the general theorem.
+
+## The Self-Adjoint Case
+
+**Theorem (reality and discreteness).** Let $L$ be self-adjoint. Then the spectrum is real, and for $\lambda = \mu+i\nu$ with $\nu\neq0$,
+
+$$
+\|R(\lambda)\| \le \frac{1}{|\operatorname{Im}\lambda|} = \frac{1}{|\nu|} .
+$$
+
+If in addition the resolvent is compact, then the spectrum is discrete: it consists of real eigenvalues of finite multiplicity tending to $+\infty$ or to $-\infty$ in absolute value, there is an orthonormal basis of eigenvectors, and for every $\lambda$ outside the spectrum
+
+$$
+R(\lambda) = \sum_n \frac{1}{\lambda_n-\lambda}\,\langle\cdot,\varphi_n\rangle\,\varphi_n ,
+$$
+
+the series converging in the operator norm, with $L\varphi_n=\lambda_n\varphi_n$.
+
+*Proof.* The estimate is the standard one for a self-adjoint operator, proved by applying the Cauchy–Schwarz inequality to $\|(L-\lambda)u\|\,\|u\|\ge|\operatorname{Im}\langle(L-\lambda)u,u\rangle| = |\nu|\|u\|^2$; it gives the bound and shows that the range is closed and dense, so $\lambda$ is in the resolvent set. The compactness of the resolvent makes the spectrum discrete and the eigenvectors complete, by the spectral theorem for a compact self-adjoint operator applied to $R(\lambda_0)$ for a real $\lambda_0$ in the resolvent set, whose eigenvalues are the reciprocals of $\lambda_n-\lambda_0$; the spectral mapping gives the eigenvalues $\lambda_n$ of $L$. The series is the spectral expansion of $R(\lambda)$ in the eigenbasis.
+
+**Corollary (the spectral mapping).** For a self-adjoint $L$ and a real $\lambda$ in the resolvent set,
+
+$$
+\sigma\bigl(R(\lambda)\bigr) = \Bigl\{\frac{1}{\lambda_n-\lambda} : \lambda_n\in\sigma(L)\Bigr\} ,
+$$
+
+and the eigenvalues of $L$ are recovered from the poles of the resolvent.
+
+*Proof.* The eigenvector equation $L\varphi=\lambda_n\varphi$ reads $R(\lambda)\varphi=(\lambda_n-\lambda)^{-1}\varphi$, so every spectral value of $L$ produces a spectral value of $R(\lambda)$; conversely every eigenvector of $R(\lambda)$ is an eigenvector of $L$ because $L=R(\lambda)^{-1}+\lambda$ on the domain. The identification of the spectra follows from the spectral mapping theorem for a bounded operator, applied to $R(\lambda)$ and its inverse.
+
+## The Resolvent and the Spectral Calculus
+
+**Theorem (recovery of the spectral measure).** Let $L$ be self-adjoint with spectral measure $E$ and let $\varphi$ be a vector of the domain. Then the scalar function $\lambda\mapsto\langle R(\lambda)\varphi,\varphi\rangle$ is analytic off the real axis and
+
+$$
+\frac{1}{2\pi i}\int_{\mathbb{R}}\Bigl(\langle R(\mu+i\varepsilon)\varphi,\varphi\rangle - \langle R(\mu-i\varepsilon)\varphi,\varphi\rangle\Bigr) g(\mu)\,d\mu \longrightarrow \langle g(L)\varphi,\varphi\rangle
+$$
+
+as $\varepsilon\downarrow0$ for every continuous $g$ of compact support, the **Stieltjes inversion formula**; in particular $\langle E(B)\varphi,\varphi\rangle$ is recovered by taking $g$ to approximate the indicator of a Borel set $B$.
+
+*Proof.* By the spectral theorem the pairing is the Stieltjes transform of the measure $\mu_E = \langle E(\cdot)\varphi,\varphi\rangle$, $\langle R(\lambda)\varphi,\varphi\rangle = \int(\mu-\lambda)^{-1}d\mu_E(\mu)$, and the difference of the two boundary values of $(\mu-\lambda)^{-1}$ across the real axis has the limit $2\pi i$ times the delta at $\mu$ in the distributional sense, by the Sokhotski–Plemelj formula; integrating against $g$ gives $2\pi i\int g\,d\mu_E = 2\pi i\langle g(L)\varphi,\varphi\rangle$. Dividing by $2\pi i$ gives the displayed limit, and the identification of the spectral measure follows on approximating the indicator of $B$ by continuous functions of compact support.
+
+**Theorem (the Dunford integral).** Let $L$ generate a strongly continuous semigroup $e^{tL}$, $t\ge0$, with $\|e^{tL}\|\le Me^{\omega t}$. Then for $a>\omega$ and $t>0$,
+
+$$
+e^{tL} = \frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty} e^{t\lambda}\,R(\lambda)\,d\lambda ,
+$$
+
+the integral converging in the operator norm and defining the semigroup from the resolvent.
+
+*Proof.* The resolvent is bounded on the vertical line $\operatorname{Re}\lambda=a$, and the integral is the inverse Laplace transform of the resolvent, which is the generating relation of the semigroup; the estimate $\|R(\lambda)\|=O(|\lambda|^{-1})$ on the line makes the integral absolutely convergent, and the semigroup law follows from that of the exponential. The hypothesis that $L$ generates the semigroup is the Hille–Yosida condition on the resolvent on a half-plane, and the verification of it for a differential operator is the analytic content of the generation theorems.
+
+**Remark (the calculus and the dynamics).** The estimate on the imaginary axis is the quantitative form of the self-adjointness of $L$: it is the hypothesis of the Hille–Yosida and Stone theorems, by which $L$ generates the groups and semigroups of the dynamical problems, and it is the input of the Stieltjes inversion formula that recovers the spectral measure of $L$ from the pairing $\langle R(\lambda)\varphi,\varphi\rangle$. The spectral representation of a self-adjoint operator by a projection-valued measure, the functional calculus and the unitary groups are those of *Unbounded Operators and Spectral Measures*, and the heat and wave semigroups of a differential operator are the applications recorded there and in *Partial Differential Equations*.
+
+## Summary
+
+The resolvent of a closed operator $L$ is $R(\lambda)=(L-\lambda)^{-1}$, defined on the open resolvent set and analytic there, with the identity $R(\lambda)-R(\mu)=(\lambda-\mu)R(\lambda)R(\mu)$, the derivative $R'(\lambda)=R(\lambda)^2$ and the Neumann series about each point of the resolvent set; the complement of the resolvent set is the closed spectrum, and the resolvent is of size $O(|\lambda|^{-1})$ at infinity. For a differential operator with a boundary condition the resolvent is the Green operator of the shifted problem, it is given by $R(\lambda)=G(I-\lambda G)^{-1}=G+\lambda GR(\lambda)$, and its kernel, the resolvent kernel, satisfies the Fredholm resolvent equation.
+
+For a self-adjoint operator the spectrum is real and the resolvent obeys $\|R(\mu+i\nu)\|\le|\nu|^{-1}$; if the resolvent is compact the spectrum is discrete, the eigenvalues are real of finite multiplicity and the resolvent is meromorphic with poles at them, the residue at a simple eigenvalue being the negative of the spectral projection. The eigenvector expansion $R(\lambda)=\sum(\lambda_n-\lambda)^{-1}\langle\cdot,\varphi_n\rangle\varphi_n$ diagonalises the resolvent, the eigenvalues are recovered from the poles, and the estimate on the imaginary axis is the analytic form of self-adjointness that carries the group and semigroup theorems. The interval problem displays the two faces of the resolvent at once: the spectral series with its poles at the eigenvalues, and the closed form in $k=\sqrt{-\lambda}$, whose singularities are the zeros of $\sinh(k\pi)$. The pairing $\langle R(\lambda)\varphi,\varphi\rangle$ is the Stieltjes transform of the spectral measure, and the Sokhotski–Plemelj jump across the real axis recovers the measure; the Dunford integral $e^{tL}=\frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty}e^{t\lambda}R(\lambda)d\lambda$ recovers the semigroup from the resolvent.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $L$ | Closed operator, or the differential operator under a boundary condition |
+| $R(\lambda) = (L-\lambda)^{-1}$ | Resolvent at $\lambda$ |
+| $\rho(L)$, $\sigma(L)$ | Resolvent set, spectrum |
+| $R(\lambda;x,y)$ | Resolvent kernel |
+| $G$ | Green operator of $(L,B)$, that is $R(0)$ |
+| $\lambda_n$, $\varphi_n$ | Eigenvalues and orthonormal eigenfunctions |
+| $P_0 = \langle\cdot,\varphi_0\rangle\varphi_0$ | Projection onto a simple eigenspace |
+| $\|R(\mu+i\nu)\|\le|\nu|^{-1}$ | Resolvent estimate for self-adjoint $L$ |
+
+## Further Reading
+
+- Tosio Kato, *Perturbation Theory for Linear Operators* (Springer, 2nd ed. 1976), for the resolvent identity, the analyticity and the perturbation theory of the spectrum.
+- Frigyes Riesz and Béla Sz.-Nagy, *Functional Analysis* (Dover, 1990), for the resolvent of a closed operator and the Fredholm alternative.
+- Nelson Dunford and Jacob T. Schwartz, *Linear Operators I* (Interscience, 1958), for the analytic vector-valued theory and the spectral mapping theorem.
+- Michael S. Birman and Michael Z. Solomyak, *Spectral Theory of Self-Adjoint Operators in Hilbert Space* (Reidel, 1987), for the resolvent of a self-adjoint operator with compact resolvent.
+- Ivar Stakgold, *Green's Functions and Boundary Value Problems* (Wiley, 3rd ed. 2011), for the resolvent kernel and the Fredholm resolvent equation.
+- Einar Hille and Ralph S. Phillips, *Functional Analysis and Semi-Groups* (American Mathematical Society, 1957), for the Hille–Yosida theorem and the generation of semigroups.

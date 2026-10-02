@@ -17,7 +17,7 @@ $$
 
 Three features distinguish the case from the three previous algebras of the series, and they are the subject of the article. First, the square root that defines the modulus needs **no branch choice**: the split complex norm has non-negative real components, each of which has a unique non-negative square root, so the modulus is canonical in a way that the biquaternion modulus, with its branch of $\sqrt{N(\tilde{Q})}$, is not. Second, there is **no boost slot**: the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, its unit sphere is compact and six-dimensional, and its group of units is the direct product of that compact sphere and a central non-compact group, so every direction of non-compactness lies in the centre; the non-compact factors are exactly the scale and the hyperbolic phase. Third, the **degeneration occurs on the zero divisors and not on the null cone of the split-biquaternion norm**: the split-biquaternion norm of a split biquaternion vanishes only at the origin, and the elements on which the rotor is not determined are those with a vanishing idempotent component.
 
-The article is the fourth and last of the series on the polar representations of the four real normed and semi-normed quaternion algebras, and it is organised in parallel with the reference article of the series, *Biquaternion Polar Element Representation*: the centre and the phase, the two halves, the split-biquaternion norm, the unit group and its two counts, the counting of the four slots, the order of the factors, the modulus, the second factor, the theorem, the algorithm, the meanings of the factors and the degenerate cases run in that order there and here, with four factors in the biquaternion case and two in this one. Two further sections treat what is particular to the present algebra: the behaviour of the decomposition under the conjugations, and the exponential form, which stands in the place of the biquaternion relation to the two partial forms, since this algebra has only one polar decomposition to relate. Conventions are those of *Split-Biquaternion Algebra*: the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the split complex unit is $j$ with $j^2 = +1$, central, the idempotents are $\tilde\Pi_\pm = \tfrac12(1\pm j)$, an element is $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $Q_\mu = q_\mu + jq'_\mu \in \mathbb{D}$, and the split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. The isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ and the idempotent decomposition are used throughout. No physics is invoked. Every numerical value below was recomputed in double precision.
+The article is the fourth and last of the series on the polar representations of the four real normed and semi-normed quaternion algebras, and it is organised in parallel with the reference article of the series, *Biquaternion Polar Element Representation*: the centre and the phase, the two halves, the split-biquaternion norm, the unit group and its two counts, the counting of the four slots, the order of the factors, the modulus, the second factor, the theorem, the algorithm, the meanings of the factors and the degenerate cases run in that order there and here, with four factors in the biquaternion case and two in this one. Two further sections treat what is particular to the present algebra: the behaviour of the decomposition under the conjugations, and the exponential form, which stands in the place of the biquaternion relation to the two partial forms, since this algebra has only one polar decomposition to relate. Conventions are those of *Split-Biquaternion Algebra*: the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the split complex unit is $j$ with $j^2 = +1$, central, the idempotents are $\tilde\Pi_\pm = \tfrac12(1\pm j)$, an element is $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $Q_\mu = q_\mu + jq'_\mu \in \mathbb{D}$, and the split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. The isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ and the idempotent decomposition are used throughout. No physics is invoked. Every numerical value below was recomputed in double precision.
 
 ## Why Two Factors
 
@@ -43,14 +43,14 @@ $$
 \tilde{Q}_+ = \tilde{Q}\,\tilde\Pi_+ = \tilde\Pi_+\left(A+A'\right), \qquad \tilde{Q}_- = \tilde{Q}\,\tilde\Pi_- = \tilde\Pi_-\left(A-A'\right),
 $$
 
-and the element is recovered from them by $\tilde{Q} = \tilde{Q}_+ + \tilde{Q}_-$, since $\tilde\Pi_++\tilde\Pi_- = e_0$. The map $\tilde{Q}\mapsto(\tilde{Q}_+,\tilde{Q}_-)$ is the algebra isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ of the corpus, and the two components are the two copies. Multiplication is componentwise, so every algebraic question about a split biquaternion is a question about the pair. This split is the counterpart of the Hermitian and anti-Hermitian halves of the biquaternion algebra: there the algebra is split by the involution $\dagger$ into the fixed and the anti-fixed space, here by the central idempotents into two two-sided ideals, and the involution $\dagger$ is what exchanges the two halves.
+and the element is recovered from them by $\tilde{Q} = \tilde{Q}_+ + \tilde{Q}_-$, since $\tilde\Pi_++\tilde\Pi_- = e_0$. The map $\tilde{Q}\mapsto(\tilde{Q}_+,\tilde{Q}_-)$ is the algebra isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ of the corpus, and the two components are the two copies. Multiplication is componentwise, so every algebraic question about a split biquaternion is a question about the pair. This split is the counterpart of the Hermitian and anti-Hermitian halves of the biquaternion algebra: there the algebra is split by the involution ${}^{*}$ into the fixed and the anti-fixed space, here by the central idempotents into two two-sided ideals, and the involution ${}^{*}$ is what exchanges the two halves.
 
 ### The Split-Biquaternion Norm and the Zero Divisors
 
 The split-biquaternion norm is
 
 $$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_{\mu=0}^{3}Q_\mu^2 ,
+N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu=0}^{3}Q_\mu^2 ,
 $$
 
 a split complex number, central and multiplicative. In the component form,
@@ -471,34 +471,34 @@ For $\tilde{Q} = 0$ the modulus is $\rho = 0$ and the rotor is arbitrary: $0 = 0
 
 ### The Four Conjugations and the Two Factors
 
-The four conjugations act on the pair $(A,A')$ as follows: $\bar{\cdot}$ conjugates the two quaternion parts, $\bar{\tilde{Q}} = \bar{A} + j\bar{A}'$; ${}^{*}$ changes the sign of the split complex part, $\tilde{Q}^{*} = A - jA'$, so that $\tilde{Q}_{\pm}^{*} = \tilde{Q}_{\mp}$; $\dagger = \bar{\cdot}\circ{}^{*}$ does both; and $\flat = -\dagger$. Of these, $\bar{\cdot}$ and $\dagger$ are anti-automorphisms, ${}^{*}$ is an automorphism, and $\flat$ is neither, satisfying $(\tilde{Q}\tilde{R})^{\flat} = -\tilde{R}^{\flat}\tilde{Q}^{\flat}$ in place of an anti-automorphism law.
+The four conjugations act on the pair $(A,A')$ as follows: ${}^{\natural}$ conjugates the two quaternion parts, $\tilde{Q}^{\natural} = A^{\natural} + j A^{\natural}'$; $\bar{\cdot}$ changes the sign of the split complex part, $\bar{\tilde{Q}} = A - jA'$, so that $\bar{\tilde{Q}_{\pm}} = \tilde{Q}_{\mp}$; ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ does both; and $\flat = -{}^{*}$. Of these, ${}^{\natural}$ and ${}^{*}$ are anti-automorphisms, $\bar{\cdot}$ is an automorphism, and $\flat$ is neither, satisfying $(\tilde{Q}\tilde{R})^{\flat} = -\tilde{R}^{\flat}\tilde{Q}^{\flat}$ in place of an anti-automorphism law.
 
 On the polar data the first three act as follows. Quaternion conjugation fixes the modulus — $\rho$ has real components, so $\bar{\rho} = \rho$ — and inverts each half of the rotor,
 
 $$
-\bar{\tilde{Q}} = \rho\,\bar{\tilde{U}} , \qquad \bar{\tilde{U}} = u_+^{-1}\tilde\Pi_+ + u_-^{-1}\tilde\Pi_- = \left(\cos\theta_+ - \mu_+\sin\theta_+\right)\tilde\Pi_+ + \left(\cos\theta_- - \mu_-\sin\theta_-\right)\tilde\Pi_- ,
+\tilde{Q}^{\natural} = \rho\,\tilde{U}^{\natural} , \qquad \tilde{U}^{\natural} = u_+^{-1}\tilde\Pi_+ + u_-^{-1}\tilde\Pi_- = \left(\cos\theta_+ - \mu_+\sin\theta_+\right)\tilde\Pi_+ + \left(\cos\theta_- - \mu_-\sin\theta_-\right)\tilde\Pi_- ,
 $$
 
 so it reverses both angles and keeps both axes. The split complex conjugation exchanges the two halves of every factor,
 
 $$
-\tilde{Q}^{*} = \rho^{*}\tilde{U}^{*} , \qquad \rho^{*} = \rho_-\tilde\Pi_+ + \rho_+\tilde\Pi_- , \qquad \tilde{U}^{*} = u_-\tilde\Pi_+ + u_+\tilde\Pi_- ,
+\bar{\tilde{Q}} = \bar{\rho}\bar{\tilde{U}} , \qquad \bar{\rho} = \rho_-\tilde\Pi_+ + \rho_+\tilde\Pi_- , \qquad \bar{\tilde{U}} = u_-\tilde\Pi_+ + u_+\tilde\Pi_- ,
 $$
 
 so it exchanges the two component moduli, sends $\tau$ to $-\tau$, keeps $\lambda$, and exchanges the halves of the rotor. The Hermitian conjugation does both,
 
 $$
-\tilde{Q}^{\dagger} = \rho^{*}\,\tilde{U}^{\dagger} , \qquad \tilde{U}^{\dagger} = u_-^{-1}\tilde\Pi_+ + u_+^{-1}\tilde\Pi_- ,
+\tilde{Q}^{*} = \bar{\rho}\,\tilde{U}^{*} , \qquad \tilde{U}^{*} = u_-^{-1}\tilde\Pi_+ + u_+^{-1}\tilde\Pi_- ,
 $$
 
 reversing both angles and exchanging the halves. Where the biquaternion article records the behaviour of the phase, the boost and the rotor under the same four maps, the data here are correspondingly shorter: the modulus can only have its halves exchanged, and the rotor can only have its halves exchanged or its angles reversed. Over three thousand random elements each of these identities was verified with largest coefficient residual $3.6\times10^{-15}$, and the corresponding angle identities exactly.
 
 ### The Exponential
 
-The three conjugations pass through the exponential, being (anti-)automorphisms: if $\sigma$ is $\bar{\cdot}$, ${}^{*}$ or $\dagger$ then $\sigma(\exp\tilde{Q}) = \exp(\sigma(\tilde{Q}))$, because $\sigma$ of a power of $\tilde{Q}$ is the corresponding power of $\sigma(\tilde{Q})$. The flat conjugation does not, and it is the one exception among the four:
+The three conjugations pass through the exponential, being (anti-)automorphisms: if $\sigma$ is ${}^{\natural}$, $\bar{\cdot}$ or ${}^{*}$ then $\sigma(\exp\tilde{Q}) = \exp(\sigma(\tilde{Q}))$, because $\sigma$ of a power of $\tilde{Q}$ is the corresponding power of $\sigma(\tilde{Q})$. The flat conjugation does not, and it is the one exception among the four:
 
 $$
-\left(\exp\tilde{Q}\right)^{\flat} = -\left(\exp\tilde{Q}\right)^{\dagger} = -\exp\left(\tilde{Q}^{\dagger}\right) = -\exp\left(-\tilde{Q}^{\flat}\right) ,
+\left(\exp\tilde{Q}\right)^{\flat} = -\left(\exp\tilde{Q}\right)^{\dagger} = -\exp\left(\tilde{Q}^{*}\right) = -\exp\left(-\tilde{Q}^{\flat}\right) ,
 $$
 
 which is not $\exp(\tilde{Q}^{\flat})$. The smallest counterexample is $\tilde{Q} = j$:
@@ -632,7 +632,7 @@ $$
 
 with $u_\pm\in Sp(1)$, in which the modulus $\rho$ is the componentwise non-negative square root of the split-biquaternion norm and satisfies $\rho^2 = N(\tilde{Q})$, and the rotor lies in the unit sphere $S^3\times S^3$, of dimension six. The modulus is unique and needs no branch; the rotor is unique exactly when $\tilde{Q}$ is invertible, and on the zero divisors its vanishing-component factor is free. When both components of the modulus are positive, the modulus factors as $\rho = \lambda e^{j\tau}$ with the scale $\lambda = \sqrt{\rho_+\rho_-}$ and the hyperbolic phase $\tau = \tfrac12\ln(\rho_+/\rho_-)$; on the zero divisors $\lambda = 0$ and $\tau$ diverges, which is the sense in which a zero divisor has no scale. Among the four algebras of the series, $\mathbb{H}_{\mathbb{D}}$ is the one whose polar representation has no boost, whose phase factor is hyperbolic rather than elliptic, whose rotor is the largest, and whose domain is the whole algebra.
 
-The two factors commute, so the order of the product is not part of the statement: $\rho\tilde{U} = \tilde{U}\rho$, and the two halves of the rotor commute with each other and with the modulus. The four conjugations act on the decomposition by exchanging the halves of the modulus and of the rotor or by reversing the two rotor angles; of the four, three pass through the exponential, and the flat conjugation $\flat = -\dagger$ does not, satisfying $(\exp\tilde{Q})^{\flat} = -\exp(\tilde{Q}^{\dagger})$ in place of $\exp(\tilde{Q}^{\flat})$. The representation also has an exponential form. The exponential of an element with split complex scalar part $Q_0$ and vector part $\mathbf{Q}$ is $\exp\tilde{Q} = e^{Q_0}(\cos\theta\,e_0 + (\sin\theta/\theta)\mathbf{Q})$ with $\theta^2 = \sum_kQ_k^2$, a split complex number whose two components are non-negative, so that no hyperbolic case occurs for the vector part; and every invertible element is the exponential of a single element, $\tilde{Q} = \exp(\ln\lambda + j\tau + \theta_+\mu_+\tilde\Pi_+ + \theta_-\mu_-\tilde\Pi_-)$, which is the polar representation written as one exponential. The exponential is surjective exactly onto the invertible elements and misses the zero divisors.
+The two factors commute, so the order of the product is not part of the statement: $\rho\tilde{U} = \tilde{U}\rho$, and the two halves of the rotor commute with each other and with the modulus. The four conjugations act on the decomposition by exchanging the halves of the modulus and of the rotor or by reversing the two rotor angles; of the four, three pass through the exponential, and the flat conjugation $\flat = -{}^{*}$ does not, satisfying $(\exp\tilde{Q})^{\flat} = -\exp(\tilde{Q}^{*})$ in place of $\exp(\tilde{Q}^{\flat})$. The representation also has an exponential form. The exponential of an element with split complex scalar part $Q_0$ and vector part $\mathbf{Q}$ is $\exp\tilde{Q} = e^{Q_0}(\cos\theta\,e_0 + (\sin\theta/\theta)\mathbf{Q})$ with $\theta^2 = \sum_kQ_k^2$, a split complex number whose two components are non-negative, so that no hyperbolic case occurs for the vector part; and every invertible element is the exponential of a single element, $\tilde{Q} = \exp(\ln\lambda + j\tau + \theta_+\mu_+\tilde\Pi_+ + \theta_-\mu_-\tilde\Pi_-)$, which is the polar representation written as one exponential. The exponential is surjective exactly onto the invertible elements and misses the zero divisors.
 
 ## Summary of Notation
 
@@ -643,7 +643,7 @@ The two factors commute, so the order of the product is not part of the statemen
 | $\tilde\Pi_\pm = \tfrac12(1\pm j)$ | the idempotents, $\tilde\Pi_\pm^2 = \tilde\Pi_\pm$, $\tilde\Pi_+\tilde\Pi_- = 0$, $\tilde\Pi_++\tilde\Pi_- = e_0$ |
 | $\tilde{Q} = A + jA'$ | the quaternion and split-quaternion parts of an element |
 | $\tilde{Q}_\pm = \tilde{Q}\tilde\Pi_\pm = \tilde\Pi_\pm(A\pm A')$ | the idempotent components |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | the split-biquaternion norm, split complex, anisotropic |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | the split-biquaternion norm, split complex, anisotropic |
 | $N(\tilde{Q})_\pm = \rho_\pm^2$ | the two non-negative components of the split-biquaternion norm |
 | $\rho = \rho_+\tilde\Pi_++\rho_-\tilde\Pi_-$ | the modulus, the componentwise non-negative square root |
 | $\lambda = \sqrt{\rho_+\rho_-}$ | the scale, a positive real except on the zero divisors |

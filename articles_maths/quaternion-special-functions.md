@@ -60,10 +60,10 @@ So the exponential is the product of a real exponential and a unit quaternion. T
 **Conjugation and the image of a sphere.** Conjugation commutes with the exponential,
 
 $$
-\exp(\bar{\tilde q}) = \overline{\exp \tilde q},
+\exp(\tilde{q}^{\natural}) = (\exp \tilde q)^{\natural},
 $$
 
-because the series for $\exp \bar{\tilde q}$ is the conjugate of the series for $\exp \tilde q$ term by term. The scalar-vector form also describes the image of each sphere. For fixed $\lvert \mathbf{q}\rvert = r$, the exponential maps the sphere onto the sphere of radius $e^{q_0}\lvert \sin r\rvert$ centred at the real point $e^{q_0}\cos r$, swept out as the direction $\operatorname{sgn}(\tilde q)$ runs over the unit imaginary sphere; at $r = k\pi$ the image collapses to the single point $(-1)^k e^{q_0}$, so the whole sphere of pure quaternions of modulus $\pi$ is sent to the one point $-1$. This collapse is the geometric reason the exponential is not injective.
+because the series for $\exp \tilde{q}^{\natural}$ is the conjugate of the series for $\exp \tilde q$ term by term. The scalar-vector form also describes the image of each sphere. For fixed $\lvert \mathbf{q}\rvert = r$, the exponential maps the sphere onto the sphere of radius $e^{q_0}\lvert \sin r\rvert$ centred at the real point $e^{q_0}\cos r$, swept out as the direction $\operatorname{sgn}(\tilde q)$ runs over the unit imaginary sphere; at $r = k\pi$ the image collapses to the single point $(-1)^k e^{q_0}$, so the whole sphere of pure quaternions of modulus $\pi$ is sent to the one point $-1$. This collapse is the geometric reason the exponential is not injective.
 
 **de Moivre's formula and the sequential limit.** For every integer $n$,
 
@@ -102,7 +102,7 @@ $$
 **Conjugation.** The principal logarithm also commutes with conjugation,
 
 $$
-\log(\bar{\tilde q}) = \overline{\log \tilde q},
+\log(\tilde{q}^{\natural}) = (\log \tilde q)^{\natural},
 $$
 
 on the domain of the principal branch. The norm $\lvert \tilde q\rvert$ and the argument $\operatorname{Arg}\tilde q$ are unchanged by conjugation, while the direction $\operatorname{sgn}(\tilde q)$ changes sign, and both sides change sign in the vector part.
@@ -614,7 +614,7 @@ The quaternion Lambert W function has infinitely many branches, because the quat
 The **Cauchy kernel** is the function
 
 $$
-E(\tilde q) = \frac{\tilde q^{-1}}{|\tilde q|^2} = \frac{\bar{\tilde q}}{|\tilde q|^4}, \qquad \tilde q \neq 0.
+E(\tilde q) = \frac{\tilde q^{-1}}{|\tilde q|^2} = \frac{\tilde{q}^{\natural}}{|\tilde q|^4}, \qquad \tilde q \neq 0.
 $$
 
 It is the fundamental solution of the Cauchy–Riemann operator:
@@ -673,7 +673,7 @@ The exponential is defined by its series, and the trigonometric and hyperbolic f
 
 The exponential is single-valued and not injective; the logarithm is its multi-valued inverse, with infinitely many branches differing by a multiple of $2\pi \operatorname{sgn}(\tilde q)$, and the power functions inherit that multi-valuedness. The two compositions of the exponential and the logarithm behave differently: the logarithm inverts the exponential everywhere on its domain, while the exponential is inverted by the logarithm only on the region $\lvert \mathrm{Vect}\tilde q\rvert < \pi$, off which the value is shifted by a period.
 
-The Cauchy kernel $\bar{\tilde q}/\lvert \tilde q\rvert^4$, the fundamental solution of the Cauchy–Riemann operator, opens the last family, the monogenic special functions, and the section on the structure principle states what organises the whole collection: every quaternion special function is defined by a formula involving the quaternion algebra operations and the quaternion exponential, and the properties it has are those the non-commutativity of $\mathbb{H}$ permits.
+The Cauchy kernel $\tilde{q}^{\natural}/\lvert \tilde q\rvert^4$, the fundamental solution of the Cauchy–Riemann operator, opens the last family, the monogenic special functions, and the section on the structure principle states what organises the whole collection: every quaternion special function is defined by a formula involving the quaternion algebra operations and the quaternion exponential, and the properties it has are those the non-commutativity of $\mathbb{H}$ permits.
 
 ## Summary of Notation
 

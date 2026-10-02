@@ -27,7 +27,7 @@ The trap in this subject is to *assert* the thermality — to write down the exp
 
 The article is organized as follows. The next section fixes the wedge, the Rindler coordinates, and the boost. The section after that states the modular Hamiltonian and identifies the flow, with the parent's gap stated explicitly. The next section computes the two-point function and derives the KMS relation from its analytic strip. Two short sections recompute the temperature, one from the imaginary-time period and one from the surface gravity. A section isolates what the biquaternion framework adds and what it only transcribes, and a short section records the statistics. The article closes with the established/interpretation split, open questions, and the summary.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $e_k$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The material coordinate is $\tilde{Q}=ict\,e_0+x\,e_1+y\,e_2+z\,e_3\in\mathbb{M}_-$, with biquaternion norm $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=-c^2t^2+x^2+y^2+z^2$. The biquaternionic gradient is $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde\nabla\bar{\tilde\nabla}=\bar{\tilde\nabla}\tilde\nabla$. The trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ is inherited unchanged. Throughout, $\hbar$ and $k_B$ are the reduced Planck and Boltzmann constants, and $c$ is the speed of light. The two-point-function computation is done in units $c=1$, restoring $c$ only in the temperature.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $e_k$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The material coordinate is $\tilde{Q}=ict\,e_0+x\,e_1+y\,e_2+z\,e_3\in\mathbb{M}_-$, with biquaternion norm $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=-c^2t^2+x^2+y^2+z^2$. The biquaternionic gradient is $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla$. The trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ is inherited unchanged. Throughout, $\hbar$ and $k_B$ are the reduced Planck and Boltzmann constants, and $c$ is the speed of light. The two-point-function computation is done in units $c=1$, restoring $c$ only in the temperature.
 
 ## The Rindler Wedge and the Boost
 
@@ -51,7 +51,7 @@ $$
 N(\tilde{Q}) = 0 \quad\Longleftrightarrow\quad x = \pm ct
 $$
 
-is the light cone. In the algebra the light cone of $\mathbb{M}_-$ is the **zero-divisor cone**: a nonzero $\tilde{Q}\in\mathbb{M}_-$ satisfies $\tilde{Q}\bar{\tilde{Q}}=0$ exactly on $N(\tilde{Q})=0$ (the companion article on $\mathbb{M}_-$ establishes this and identifies its two components). The horizon of an accelerated observer is therefore not an extra geometric object imported into the algebra: it is the algebraic null cone of the material sector.
+is the light cone. In the algebra the light cone of $\mathbb{M}_-$ is the **zero-divisor cone**: a nonzero $\tilde{Q}\in\mathbb{M}_-$ satisfies $\tilde{Q}\tilde{Q}^{\natural}=0$ exactly on $N(\tilde{Q})=0$ (the companion article on $\mathbb{M}_-$ establishes this and identifies its two components). The horizon of an accelerated observer is therefore not an extra geometric object imported into the algebra: it is the algebraic null cone of the material sector.
 
 Inside $R$ the biquaternion norm is positive, $N>0$. Introduce **Rindler coordinates** $(\rho,\eta)$ by
 
@@ -89,13 +89,13 @@ $$
 \tilde\Lambda(\psi) = \exp\!\Big(\frac{\psi}{2}G_1\Big) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,e_1 \in \mathbb{M}_+,
 $$
 
-which is Hermitian and of unit norm, $\tilde\Lambda\bar{\tilde\Lambda}=e_0$. It acts on the material sector by **rotor conjugation**
+which is Hermitian and of unit norm, $\tilde\Lambda\tilde\Lambda^{\natural}=e_0$. It acts on the material sector by **rotor conjugation**
 
 $$
 \tilde{Q} \longmapsto \tilde\Lambda(\psi)\,\tilde{Q}\,\tilde\Lambda(\psi),
 $$
 
-where we have used $\tilde\Lambda^\dagger=\tilde\Lambda$. This is the two-sided action of the companion article on curved spacetime, not the commutator: for the boost generator the two differ, and it is the two-sided form that implements the boost.
+where we have used $\tilde\Lambda^{*}=\tilde\Lambda$. This is the two-sided action of the companion article on curved spacetime, not the commutator: for the boost generator the two differ, and it is the two-sided form that implements the boost.
 
 **The direction, computed.** On $\tilde{Q}=iq_0e_0+q_1e_1$ (with $q_0=ct$, $q_1=x$; we drop $q_2,q_3$, which are untouched), rotor conjugation gives
 
@@ -390,7 +390,7 @@ The framework supplies the algebraic home: the horizon as the zero-divisor cone,
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\tilde{Q}=ict\,e_0+x\,e_1+y\,e_2+z\,e_3$ | Material-sector coordinate $\in\mathbb{M}_-$ |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm, signature $(3,1)$ on $\mathbb{M}_-$ |
+| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, signature $(3,1)$ on $\mathbb{M}_-$ |
 | $R=\{x>|ct|\}$ | Right Rindler wedge; $L$ its mirror |
 | $\rho,\eta$ | Rindler radius and Rindler time, $x=\rho\cosh\eta$, $ct=\rho\sinh\eta$ |
 | $\tau$ | Proper time along the accelerated orbit, $cd\tau=\rho\,d\eta$ |

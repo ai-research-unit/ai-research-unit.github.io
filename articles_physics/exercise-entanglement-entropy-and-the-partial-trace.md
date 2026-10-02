@@ -335,7 +335,7 @@ The following problems extend the exercise. They are left to the reader; the fir
 
 **P2 (general pure state).** For arbitrary $|\psi\rangle=\sum_{ij}M_{ij}|i\rangle|j\rangle$, express $S$ in terms of $\det M$. Show $S=h\!\left(\tfrac{1+\sqrt{1-4|\det M|^2}}{2}\right)$ and hence that $S$ is determined by $|\det M|$ alone. (For two qubits $s_1^2s_2^2=|\det M|^2$.)
 
-**P3 (local invariance).** Show that under a local rotor conjugation $P\mapsto(\tilde{U}_1\otimes\tilde{U}_2)\,P\,(\tilde{U}_1^\dagger\otimes\tilde{U}_2^\dagger)$ with $\tilde{U}_j\tilde{U}_j^\dagger=e_0$, the reduced state transforms as $\rho_1\mapsto\tilde{U}_1\rho_1\tilde{U}_1^\dagger$, and hence $S$ is invariant. In the biquaternion language, identify the induced action on the Bloch vectors $\mathbf{r}_1,\mathbf{r}_2$ and check that their lengths are unchanged.
+**P3 (local invariance).** Show that under a local rotor conjugation $P\mapsto(\tilde{U}_1\otimes\tilde{U}_2)\,P\,(\tilde{U}_1^{*}\otimes\tilde{U}_2^{*})$ with $\tilde{U}_j\tilde{U}_j^{*}=e_0$, the reduced state transforms as $\rho_1\mapsto\tilde{U}_1\rho_1\tilde{U}_1^{*}$, and hence $S$ is invariant. In the biquaternion language, identify the induced action on the Bloch vectors $\mathbf{r}_1,\mathbf{r}_2$ and check that their lengths are unchanged.
 
 **P4 (the shape of the curve).** Show that $S=h(\cos^2\theta)$ is concave in $p=\cos^2\theta$, that
 

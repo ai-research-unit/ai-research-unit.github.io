@@ -7,7 +7,7 @@ This article is the second half of the representations slot of the octonion syst
 
 The article takes the multiplication, the Fano rule and the associator from *Octonion Algebra*, the norm and the inner product from *Octonion Norm and Invertibility*, and the representations of $\mathrm{G}_2$ and the triality of $\operatorname{Spin}(8)$ from *Octonion Element Representations*. The exceptional Jordan algebra and the magic square are standard constructions; their sources are listed in the Further Reading. The geometry built on the exceptional groups, and the holonomy groups $G_2$ and $\operatorname{Spin}(7)$ of Part II, are not covered here.
 
-**Conventions.** As in *Octonion Algebra*, the basis is $e_0,\dots,e_7$ with $e_k^2 = -e_0$ for $k\geq1$, the Fano lines oriented as in that article, the conjugation $\bar x$, the imaginary space $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$, the inner product $\langle x,y\rangle = \operatorname{Sc}(x\bar y)$ and the cross product $u\times v = \operatorname{Vect}(uv)$ on the imaginary space. The operators $L_x,R_x$ are left and right multiplication; the commutator of endomorphisms is written $[A,B] = AB - BA$, so that the associator and the commutator are distinct notations and must not be confused.
+**Conventions.** As in *Octonion Algebra*, the basis is $e_0,\dots,e_7$ with $e_k^2 = -e_0$ for $k\geq1$, the Fano lines oriented as in that article, the conjugation $x^{\natural}$, the imaginary space $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$, the inner product $\langle x,y\rangle = \operatorname{Sc}(x y^{\natural})$ and the cross product $u\times v = \operatorname{Vect}(uv)$ on the imaginary space. The operators $L_x,R_x$ are left and right multiplication; the commutator of endomorphisms is written $[A,B] = AB - BA$, so that the associator and the commutator are distinct notations and must not be confused.
 
 ## The Automorphism Group and the Derivation Algebra
 
@@ -35,7 +35,7 @@ $$
 
 is the exceptional simple Lie algebra $\mathrm{G}_2$, and it is contained in $\mathrm{SO}(7)$, acting trivially on $e_0$ and irreducibly on $\operatorname{Im}\mathbb{O}$.
 
-*Proof.* The verification that each $D_{x,y}$ satisfies the Leibniz rule is finite and is carried out on the basis with the Fano rule; the spanning statement is a linear computation on the $49$ operators $D_{e_i,e_j}$, whose rational rank is fourteen. That the resulting algebra is the exceptional algebra $\mathrm{G}_2$ of rank two is the standard identification, with the standard sources cited; the vanishing on $e_0$ is $D_{x,y}e_0 = x y + xy - yx - xy - xy + yx$ expanded from the definition, which is zero, and skew-adjointness follows from the derivation of the identity $\langle x,y\rangle = \operatorname{Sc}(x\bar y)$.
+*Proof.* The verification that each $D_{x,y}$ satisfies the Leibniz rule is finite and is carried out on the basis with the Fano rule; the spanning statement is a linear computation on the $49$ operators $D_{e_i,e_j}$, whose rational rank is fourteen. That the resulting algebra is the exceptional algebra $\mathrm{G}_2$ of rank two is the standard identification, with the standard sources cited; the vanishing on $e_0$ is $D_{x,y}e_0 = x y + xy - yx - xy - xy + yx$ expanded from the definition, which is zero, and skew-adjointness follows from the derivation of the identity $\langle x,y\rangle = \operatorname{Sc}(x y^{\natural})$.
 
 ### The Group $G_2$
 
@@ -68,7 +68,7 @@ The three-form $\varphi$ is the octonionic **associative calibration**: a three-
 **Definition.** The **exceptional Jordan algebra** is the real vector space
 
 $$
-\mathrm{H}_3(\mathbb{O}) = \left\{A\in M_3(\mathbb{O}) : A^* = A\right\}, \qquad A = \begin{pmatrix}\alpha & x & y\\ \bar x & \beta & z\\ \bar y & \bar z & \gamma\end{pmatrix}, \quad \alpha,\beta,\gamma\in\mathbb{R},\ x,y,z\in\mathbb{O},
+\mathrm{H}_3(\mathbb{O}) = \left\{A\in M_3(\mathbb{O}) : A^* = A\right\}, \qquad A = \begin{pmatrix}\alpha & x & y\\ x^{\natural} & \beta & z\\ y^{\natural} & z^{\natural} & \gamma\end{pmatrix}, \quad \alpha,\beta,\gamma\in\mathbb{R},\ x,y,z\in\mathbb{O},
 $$
 
 with the symmetrised product $A\circ B = \tfrac{1}{2}(AB + BA)$.

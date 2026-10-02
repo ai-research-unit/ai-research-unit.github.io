@@ -7,10 +7,10 @@ This article is the second half of the algebra slot of the octonion system: the 
 
 The article is the octonion member of the pair of algebra slots that Part V traverses one number system at a time, and it follows the model of the norm and invertibility theory of the quaternions in *Quaternion Algebra* and of the general theory of *Division Algebras*. The composition algebras over a field, the notion of the norm of an algebra and the invariance of a quadratic form under multiplication are treated in the Part I companion *Quadratic Forms over Algebras and Norms*; the present article is the octonion case and is not the general theory. The unit sphere constructed here is used, the multiplication operators, and the eight-square identity is used.
 
-**Conventions.** The octonions are $\mathbb{O} = \mathbb{H}\oplus\mathbb{H}$ with basis $e_0,\dots,e_7$, the Fano multiplication rule, and the conjugation $\bar x$ of *Octonion Algebra*; the vector part is written $\operatorname{Vect}(x)$ and the imaginary subspace $\operatorname{Im}\mathbb{O}$. The **norm** of $x = \sum_{k=0}^{7}x_ke_k$ is the real number
+**Conventions.** The octonions are $\mathbb{O} = \mathbb{H}\oplus\mathbb{H}$ with basis $e_0,\dots,e_7$, the Fano multiplication rule, and the conjugation $x^{\natural}$ of *Octonion Algebra*; the vector part is written $\operatorname{Vect}(x)$ and the imaginary subspace $\operatorname{Im}\mathbb{O}$. The **norm** of $x = \sum_{k=0}^{7}x_ke_k$ is the real number
 
 $$
-\lvert x\rvert^2 = x\bar x = \bar xx = \sum_{k=0}^{7}x_k^2 ,
+\lvert x\rvert^2 = x x^{\natural} = x^{\natural}x = \sum_{k=0}^{7}x_k^2 ,
 $$
 
 and the symbol $N(x)$ is reserved in this Part for the split complex valued norm of *Split-Biquaternion Norm and Invertibility*; the octonion norm is written $\lvert x\rvert^2$ throughout the octonion articles, and the associated bilinear form is written $\langle x,y\rangle$.
@@ -26,12 +26,12 @@ $$
 **Theorem.** The polar form is a symmetric bilinear form on $\mathbb{O}$, and for $x = \sum_kx_ke_k$, $y = \sum_ky_ke_k$,
 
 $$
-\langle x,y\rangle = \sum_{k=0}^{7}x_ky_k = \operatorname{Sc}(x\bar y) = \operatorname{Sc}(\bar xy) .
+\langle x,y\rangle = \sum_{k=0}^{7}x_ky_k = \operatorname{Sc}(x y^{\natural}) = \operatorname{Sc}(x^{\natural}y) .
 $$
 
 It is positive definite, so that $\mathbb{O}$ with $\langle\cdot,\cdot\rangle$ is a Euclidean space of dimension eight, and the basis $e_0,\dots,e_7$ is orthonormal. The norm is the quadratic form of the bilinear form, $\lvert x\rvert^2 = \langle x,x\rangle$.
 
-*Proof.* By the second and third statements of the proposition on conjugation in *Octonion Algebra*, $x\bar x = \sum x_k^2$ and $\bar xx = x\bar x$; the displayed identity for the polar form follows by expanding $\lvert x+y\rvert^2$. Bilinearity follows from the coordinate expression. Positive definiteness is the positivity of a sum of squares.
+*Proof.* By the second and third statements of the proposition on conjugation in *Octonion Algebra*, $x x^{\natural} = \sum x_k^2$ and $x^{\natural}x = x x^{\natural}$; the displayed identity for the polar form follows by expanding $\lvert x+y\rvert^2$. Bilinearity follows from the coordinate expression. Positive definiteness is the positivity of a sum of squares.
 
 The inner product is the standard Euclidean product of $\mathbb{R}^8$ under the coordinate identification; the octonion structure on $\mathbb{R}^8$ is thus a multiplication whose norm is the standard one. The automorphism group of the algebra is therefore a subgroup of the orthogonal group,
 
@@ -39,19 +39,19 @@ $$
 G_2 = \operatorname{Aut}(\mathbb{O})\subset O(8),
 $$
 
-and a single octonion automorphism is an orthogonal transformation; the proof is in the second proposition below. The verification that $\operatorname{Aut}(\mathbb{O})$ preserves $\lvert\cdot\rvert^2$ is immediate: an automorphism fixes $e_0$, hence commutes with conjugation, hence preserves $x\bar x$.
+and a single octonion automorphism is an orthogonal transformation; the proof is in the second proposition below. The verification that $\operatorname{Aut}(\mathbb{O})$ preserves $\lvert\cdot\rvert^2$ is immediate: an automorphism fixes $e_0$, hence commutes with conjugation, hence preserves $x x^{\natural}$.
 
 **Proposition.** For all $x,y,z\in\mathbb{O}$,
 
 $$
-\langle x,y\rangle = \tfrac{1}{2}\left(x\bar y + y\bar x\right) = \tfrac{1}{2}\left(\bar xy + \bar yx\right),
+\langle x,y\rangle = \tfrac{1}{2}\left(x y^{\natural} + y x^{\natural}\right) = \tfrac{1}{2}\left(x^{\natural}y + y^{\natural}x\right),
 $$
 
-and $\langle x,y\rangle e_0 = \tfrac{1}{2}(x\bar y + y\bar x)$. In particular $x\bar y + y\bar x\in\mathbb{R}e_0$ for all octonions $x,y$.
+and $\langle x,y\rangle e_0 = \tfrac{1}{2}(x y^{\natural} + y x^{\natural})$. In particular $x y^{\natural} + y x^{\natural}\in\mathbb{R}e_0$ for all octonions $x,y$.
 
-*Proof.* Expand the right-hand side in coordinates, or use the identity $\operatorname{Sc}(u) = \tfrac{1}{2}(u + \bar u)$ applied to $u = x\bar y$.
+*Proof.* Expand the right-hand side in coordinates, or use the identity $\operatorname{Sc}(u) = \tfrac{1}{2}(u + u^{\natural})$ applied to $u = x y^{\natural}$.
 
-The identity in the display is the form in which the inner product enters computations with two octonions; it holds because $\bar u + u$ is always a real scalar even though the algebra is neither commutative nor associative.
+The identity in the display is the form in which the inner product enters computations with two octonions; it holds because $u^{\natural} + u$ is always a real scalar even though the algebra is neither commutative nor associative.
 
 ## Multiplicativity of the Norm
 
@@ -89,7 +89,7 @@ $$
 
 Equivalently, for every $x\neq0$ the left multiplication $L_x$ and the right multiplication $R_x$ are **conformal** with factor $\lvert x\rvert^2$; for $\lvert x\rvert = 1$ they are orthogonal.
 
-*Proof.* The first identity follows from the second and the multiplicativity of the norm by polarisation: $\langle xy,xz\rangle = \tfrac{1}{2}(\lvert x(y+z)\rvert^2 - \lvert xy\rvert^2 - \lvert xz\rvert^2) = \tfrac{1}{2}\lvert x\rvert^2(\lvert y+z\rvert^2 - \lvert y\rvert^2 - \lvert z\rvert^2) = \lvert x\rvert^2\langle y,z\rangle$; the computation uses only multiplicativity, and no associativity is required. The second is proved in the same way from the right-hand multiplicativity of the norm, or directly from the identity $\langle xy,zy\rangle = \operatorname{Sc}((xy)(\overline{zy})) = \operatorname{Sc}((xy)(\bar y\bar z))$ together with the identities of *Octonion Algebra*. The conformality statement is the same two identities read as assertions about the operators.
+*Proof.* The first identity follows from the second and the multiplicativity of the norm by polarisation: $\langle xy,xz\rangle = \tfrac{1}{2}(\lvert x(y+z)\rvert^2 - \lvert xy\rvert^2 - \lvert xz\rvert^2) = \tfrac{1}{2}\lvert x\rvert^2(\lvert y+z\rvert^2 - \lvert y\rvert^2 - \lvert z\rvert^2) = \lvert x\rvert^2\langle y,z\rangle$; the computation uses only multiplicativity, and no associativity is required. The second is proved in the same way from the right-hand multiplicativity of the norm, or directly from the identity $\langle xy,zy\rangle = \operatorname{Sc}((xy)((zy)^{\natural})) = \operatorname{Sc}((xy)(y^{\natural} z^{\natural}))$ together with the identities of *Octonion Algebra*. The conformality statement is the same two identities read as assertions about the operators.
 
 **Corollary.** For every unit octonion $u$ the maps $L_u$ and $R_u$ belong to the orthogonal group $O(8)$, and in fact to $SO(8)$; the map $u\mapsto L_u$ is injective, with $L_ue_0 = u$, so that the unit sphere embeds in $SO(8)$ and acts simply transitively on itself by left multiplication. The group generated by all left and right multiplications by unit octonions is $SO(8)$.
 
@@ -110,12 +110,12 @@ so the map $L$ is a loop homomorphism and not a group homomorphism; this is the 
 **Theorem.** Every non-zero octonion is invertible; equivalently, $\mathbb{O}$ is a division algebra and has no zero divisors. The inverse is
 
 $$
-x^{-1} = \frac{\bar x}{\lvert x\rvert^2},
+x^{-1} = \frac{x^{\natural}}{\lvert x\rvert^2},
 $$
 
 and it is unique and two-sided. Consequently the multiplication is cancellative: $xy = xz$ with $x\neq0$ implies $y = z$, and $yx = zx$ with $x\neq0$ implies $y = z$.
 
-*Proof.* The identities $x(\bar xy) = \lvert x\rvert^2y$ and $(\bar xy)\bar x = \lvert x\rvert^2y$ of *Octonion Algebra*, together with $x\bar x = \bar xx = \lvert x\rvert^2$, give $x\bigl(\bar x/\lvert x\rvert^2\bigr) = e_0$ and $\bigl(\bar x/\lvert x\rvert^2\bigr)x = e_0$ for $x\neq0$. Uniqueness: if $xx' = e_0$ then $x' = \bar x/\lvert x\rvert^2$ by multiplying on the left by $\bar x/\lvert x\rvert^2$ and using the displayed identity; the two-sidedness follows. For cancellativity, multiply the equation by $x^{-1}$ on the left, using the alternative law $(x^{-1}x)y = x^{-1}(xy)$, which holds because $x^{-1}$ and $x$ lie in an associative subalgebra by Artin's theorem.
+*Proof.* The identities $x(x^{\natural}y) = \lvert x\rvert^2y$ and $(x^{\natural}y)x^{\natural} = \lvert x\rvert^2y$ of *Octonion Algebra*, together with $x x^{\natural} = x^{\natural}x = \lvert x\rvert^2$, give $x\bigl(x^{\natural}/\lvert x\rvert^2\bigr) = e_0$ and $\bigl(x^{\natural}/\lvert x\rvert^2\bigr)x = e_0$ for $x\neq0$. Uniqueness: if $xx' = e_0$ then $x' = x^{\natural}/\lvert x\rvert^2$ by multiplying on the left by $x^{\natural}/\lvert x\rvert^2$ and using the displayed identity; the two-sidedness follows. For cancellativity, multiply the equation by $x^{-1}$ on the left, using the alternative law $(x^{-1}x)y = x^{-1}(xy)$, which holds because $x^{-1}$ and $x$ lie in an associative subalgebra by Artin's theorem.
 
 **Proposition.** The inversion map is an anti-automorphism of the multiplicative structure: for all non-zero $x,y$,
 
@@ -123,9 +123,9 @@ $$
 (xy)^{-1} = y^{-1}x^{-1}, \qquad \overline{x^{-1}} = \overline{x}^{-1}, \qquad \lvert x^{-1}\rvert = \lvert x\rvert^{-1} .
 $$
 
-Moreover $x^{-1} = \bar x/\lvert x\rvert^2$ commutes with $x$; the pair $\{x,\bar x\}$ generates an associative subalgebra, and the inverse lies in it.
+Moreover $x^{-1} = x^{\natural}/\lvert x\rvert^2$ commutes with $x$; the pair $\{x,x^{\natural}\}$ generates an associative subalgebra, and the inverse lies in it.
 
-*Proof.* The first identity follows from $\overline{xy} = \bar y\bar x$ and $\lvert xy\rvert^2 = \lvert x\rvert^2\lvert y\rvert^2$; the second and third are immediate from the formula; the last statements are Artin's theorem applied to the two generators $x$ and $\bar x$.
+*Proof.* The first identity follows from $(xy)^{\natural} = y^{\natural} x^{\natural}$ and $\lvert xy\rvert^2 = \lvert x\rvert^2\lvert y\rvert^2$; the second and third are immediate from the formula; the last statements are Artin's theorem applied to the two generators $x$ and $x^{\natural}$.
 
 **Corollary.** For every $x$, the left and right multiplications by $x$ are invertible maps of $\mathbb{O}$ onto itself when $x\neq0$, with inverses $L_{x^{-1}}$ and $R_{x^{-1}}$; the algebra is a **division algebra**, and it is the largest such obtainable from the Cayley–Dickson process.
 
@@ -213,9 +213,9 @@ The table is the octonion entry of the register of number systems that this Part
 
 ## Summary
 
-The octonion algebra carries a positive definite quadratic form $\lvert x\rvert^2 = x\bar x = \bar xx = \sum_{k=0}^{7}x_k^2$, whose polar form is the Euclidean inner product $\langle x,y\rangle = \operatorname{Sc}(x\bar y) = \sum_kx_ky_k$ and whose associated bilinear form is invariant under multiplication: $\langle xy,xz\rangle = \lvert x\rvert^2\langle y,z\rangle$ and $\langle xy,zy\rangle = \langle x,z\rangle\lvert y\rvert^2$. The norm is multiplicative, $\lvert xy\rvert^2 = \lvert x\rvert^2\lvert y\rvert^2$, and this is the eight-square identity of Degen: the product of two sums of eight squares is again a sum of eight squares, with integral coefficients.
+The octonion algebra carries a positive definite quadratic form $\lvert x\rvert^2 = x x^{\natural} = x^{\natural}x = \sum_{k=0}^{7}x_k^2$, whose polar form is the Euclidean inner product $\langle x,y\rangle = \operatorname{Sc}(x y^{\natural}) = \sum_kx_ky_k$ and whose associated bilinear form is invariant under multiplication: $\langle xy,xz\rangle = \lvert x\rvert^2\langle y,z\rangle$ and $\langle xy,zy\rangle = \langle x,z\rangle\lvert y\rvert^2$. The norm is multiplicative, $\lvert xy\rvert^2 = \lvert x\rvert^2\lvert y\rvert^2$, and this is the eight-square identity of Degen: the product of two sums of eight squares is again a sum of eight squares, with integral coefficients.
 
-Every non-zero octonion is invertible, with $x^{-1} = \bar x/\lvert x\rvert^2$, and inversion is an anti-automorphism, $(xy)^{-1} = y^{-1}x^{-1}$; the algebra is a division algebra. The unit sphere $S^7 = \{\lvert x\rvert = 1\}$ is closed under multiplication and inversion and is a Moufang loop which is not a group, the defect of associativity on units being $2$ for the triple $e_1,e_4,e_2$; it is parallelizable, of volume $\pi^4/3$, and left multiplication embeds it in $SO(8)$ as a simply transitive family of isometries. For an imaginary octonion $u$ one has $e^u = \cos\lvert u\rvert + (u/\lvert u\rvert)\sin\lvert u\rvert$, and the exponential maps $\operatorname{Im}\mathbb{O}$ onto $S^7$. By Hurwitz's theorem the octonions are the largest real composition algebra and the largest normed division algebra; the two-square, four-square and eight-square identities exist and the sixteen-square identity does not.
+Every non-zero octonion is invertible, with $x^{-1} = x^{\natural}/\lvert x\rvert^2$, and inversion is an anti-automorphism, $(xy)^{-1} = y^{-1}x^{-1}$; the algebra is a division algebra. The unit sphere $S^7 = \{\lvert x\rvert = 1\}$ is closed under multiplication and inversion and is a Moufang loop which is not a group, the defect of associativity on units being $2$ for the triple $e_1,e_4,e_2$; it is parallelizable, of volume $\pi^4/3$, and left multiplication embeds it in $SO(8)$ as a simply transitive family of isometries. For an imaginary octonion $u$ one has $e^u = \cos\lvert u\rvert + (u/\lvert u\rvert)\sin\lvert u\rvert$, and the exponential maps $\operatorname{Im}\mathbb{O}$ onto $S^7$. By Hurwitz's theorem the octonions are the largest real composition algebra and the largest normed division algebra; the two-square, four-square and eight-square identities exist and the sixteen-square identity does not.
 
 ## Summary of Notation
 
@@ -223,11 +223,11 @@ Every non-zero octonion is invertible, with $x^{-1} = \bar x/\lvert x\rvert^2$, 
 |---|---|
 | $\mathbb{O}$ | The octonion algebra, $\dim_{\mathbb{R}} = 8$ |
 | $e_0 = 1, e_1,\dots,e_7$ | Orthonormal basis, $e_k^2 = -e_0$ for $k\geq1$ |
-| $\bar{x}$ | Conjugation, $\overline{xy} = \bar y\bar x$ |
-| $\lvert x\rvert^2 = x\bar x = \bar xx = \sum_kx_k^2$ | The octonion norm, positive definite |
-| $\langle x,y\rangle = \sum_kx_ky_k = \operatorname{Sc}(x\bar y)$ | Polar (Euclidean) form on $\mathbb{O}$ |
+| $x^{\natural}$ | Conjugation, $(xy)^{\natural} = y^{\natural} x^{\natural}$ |
+| $\lvert x\rvert^2 = x x^{\natural} = x^{\natural}x = \sum_kx_k^2$ | The octonion norm, positive definite |
+| $\langle x,y\rangle = \sum_kx_ky_k = \operatorname{Sc}(x y^{\natural})$ | Polar (Euclidean) form on $\mathbb{O}$ |
 | $L_x$, $R_x$ | Left and right multiplication by $x$ |
-| $x^{-1} = \bar x/\lvert x\rvert^2$ | Two-sided inverse |
+| $x^{-1} = x^{\natural}/\lvert x\rvert^2$ | Two-sided inverse |
 | $S^7 = \{\lvert x\rvert = 1\}$ | Unit sphere, a Moufang loop |
 | $e^x = \sum_nx^n/n!$ | Octonion exponential |
 | $\mathrm{CD}(A) = A\oplus A$ | Cayley–Dickson double; $\mathrm{CD}(\mathbb{O})$ the sedenions |

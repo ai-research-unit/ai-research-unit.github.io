@@ -20,7 +20,7 @@ $$
 \tilde{Q} = Q_0 e_0 + \mathbf{Q}, \qquad \mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
 $$
 
-The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.
+The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.
 
 **Notation.** To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the scalar imaginary $i$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the division theory article.
 
@@ -360,10 +360,10 @@ which is a biquaternion-valued multiplier. The precise form depends on the sign 
 
 ### The Convective Derivative
 
-The convective derivative $\tilde{D} = \bar{\tilde{U}} \tilde{\nabla}$ becomes multiplication by the biquaternion
+The convective derivative $\tilde{D} = \tilde{U}^{\natural} \tilde{\nabla}$ becomes multiplication by the biquaternion
 
 $$
-\bar{\tilde{U}} \cdot 2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
+\tilde{U}^{\natural} \cdot 2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
 $$
 
 which depends on the velocity biquaternion $\tilde{U}$ and on the frequency variables. The multiplier is a biquaternion, and its vanishing determines the dispersion relation of the operator.
@@ -569,10 +569,10 @@ The continuous transform is the limit of the discrete transform as the sampling 
 | $K = W_1W_2$ | Two-unit kernel, one unit per variable; the order of the factors is part of the definition, and $K(x,\omega)^{-1} = W_2(x_2,-\omega_2)W_1(x_1,-\omega_1)$ |
 | $\mu$, $G(\omega) = \int \chi_\omega \, d\mu$ | Finite positive measure and its transform; $G(0) = \mu(\mathbb{R}^n)e_0$, and $\sum_{k,l}\bar z_kz_l G(\omega_k-\omega_l) = \int N(Z) \, d\mu$ for central coefficients |
 | $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | Vector part of a biquaternion |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm; it vanishes on the zero divisors |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; it vanishes on the zero divisors |
 | $\tilde{\nabla}$ | Biquaternionic gradient on a four-dimensional subspace |
-| $\Box = \partial_0^2 + \Delta$ | d'Alembertian, the scalar part of $\tilde{\nabla}\bar{\tilde{\nabla}}$ |
-| $\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$ | Convective derivative with velocity $\tilde{U}$ |
+| $\Box = \partial_0^2 + \Delta$ | d'Alembertian, the scalar part of $\tilde{\nabla}\tilde{\nabla}^{\natural}$ |
+| $\tilde{D} = \tilde{U}^{\natural}\tilde{\nabla}$ | Convective derivative with velocity $\tilde{U}$ |
 
 ## Further Reading
 

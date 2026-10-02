@@ -6,7 +6,7 @@ The series already carries two routes into Maxwell's equations quaternionically:
 
 The source is A. Guillén-Villalobos, B. B. Delgado and H. Vargas Rodríguez, *A biquaternionic reformulation of Maxwell's equations via Fourier analysis*, arXiv:2605.21412v2 [math.AP] (22 May 2026). It studies the **parabolic Dirac operators** $D \pm i\partial_t$, where $D$ is the Moisil–Teodorescu operator and $i$ the scalar imaginary unit; characterises the kernel of $D \pm i\partial_t$ by a **generalized div-curl system** and by **Cauchy–Riemann-type relations** between the real and the imaginary parts of a biquaternion-valued function; computes the Fourier transform of a kernel of the operator, which turns out to be the **quaternionic exponential function** of unit modulus; constructs an explicit **right inverse**; and applies the inverse to the time-dependent Maxwell system, obtaining **purely vectorial** solutions. The paper follows the monograph V. V. Kravchenko, *Applied Quaternionic Analysis* (2003), to which the corpus's biquaternion Maxwell article also refers.
 
-The article is written to separate three things. First, **what the corpus already has**: the single biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$, the field-strength biquaternion and its A-field form $\mathcal{A} = -i\tilde{F}$, the second-order factorisation $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$, and the elliptic Cauchy kernel. The paper's Maxwell statement (its Proposition 12) is the corpus's single equation written in real time, in Gaussian units, for the A-field; the reformulation itself is therefore not new to the corpus. Second, **what is new to the corpus**: the real-time first-order factorisation of the wave operator (both orderings), the time-dependent div-curl characterisation of the kernel, the description of the inverse's symbol as a unit quaternionic exponential, and the operator right inverse with its explicit vectorial solutions. Third, **what the source does not settle**: the naming and existence of its "fundamental solution", a homogeneous-medium reduction whose printed constants could not be read faithfully, and the exact hypotheses of its two solution theorems.
+The article is written to separate three things. First, **what the corpus already has**: the single biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$, the field-strength biquaternion and its A-field form $\mathcal{A} = -i\tilde{F}$, the second-order factorisation $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$, and the elliptic Cauchy kernel. The paper's Maxwell statement (its Proposition 12) is the corpus's single equation written in real time, in Gaussian units, for the A-field; the reformulation itself is therefore not new to the corpus. Second, **what is new to the corpus**: the real-time first-order factorisation of the wave operator (both orderings), the time-dependent div-curl characterisation of the kernel, the description of the inverse's symbol as a unit quaternionic exponential, and the operator right inverse with its explicit vectorial solutions. Third, **what the source does not settle**: the naming and existence of its "fundamental solution", a homogeneous-medium reduction whose printed constants could not be read faithfully, and the exact hypotheses of its two solution theorems.
 
 The plan is the operator, then its kernel, then its Fourier symbol, then its inverse, then the application. The section *What Is Verified and What Is Not* collects the recomputations and the defects.
 
@@ -49,19 +49,19 @@ $$
 so that its spatial part is exactly the source's $D$, and the corpus's second-order operator is
 
 $$
-\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \partial_{ict}^2 + \Delta
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial_{ict}^2 + \Delta
 $$
 
 (*Biquaternion Analysis*, *The d'Alembertian*). With $c = 1$ one has $\partial_{ict} = -i\partial_t$, hence
 
 $$
-\tilde{\nabla} = D - i\partial_t, \qquad -\bar{\tilde{\nabla}} = D + i\partial_t,
+\tilde{\nabla} = D - i\partial_t, \qquad -\tilde{\nabla}^{\natural} = D + i\partial_t,
 $$
 
 and the two parabolic Dirac operators are the corpus's gradient and the negative of its conjugate, read in **real time**:
 
 $$
--\Delta + \partial_t^2 = (D + i\partial_t)(D - i\partial_t) = -\bar{\tilde{\nabla}}\tilde{\nabla} = -\Box.
+-\Delta + \partial_t^2 = (D + i\partial_t)(D - i\partial_t) = -\tilde{\nabla}^{\natural}\tilde{\nabla} = -\Box.
 \tag{3}
 $$
 
@@ -290,7 +290,7 @@ reduced to a single equation of the form $(D - \tfrac{i}{c}\partial_t)\Phi = -\P
 
 ## Summary
 
-The source's wave-operator factorisation $-\Delta + \partial_t^2 = (D + i\partial_t)(D - i\partial_t) = (D - i\partial_t)(D + i\partial_t)$ is exact in both orderings and is the real-time (hyperbolic) twin of the corpus's elliptic factorisation $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$: the source's two first-order operators are the corpus's biquaternionic gradient and the negative of its conjugate, read with $\partial_{ict} = -i\partial_t$. The kernel of $D \pm i\partial_t$ is exactly a generalized div-curl system, the time-dependent analogue of the corpus's Cauchy–Riemann–Fueter system, and it couples a scalar solution of the wave equation to its harmonic conjugate through the Teodorescu transform. The Fourier transform of the kernel is the quaternionic exponential of a pure vector, which is a **unit-modulus phase** — this unimodularity is the single fact that makes the parabolic Teodorescu transform an $L^2$ isometry in space, well defined for both signs, and its right-inverse property $(D \pm i\partial_t)T_{\mathcal{C},\pm}[\mp iw] = w$ follows from the symbol computation $\partial_t T = w \pm iDT$. The Maxwell application reproduces the corpus's single equation — the source's $\vec{E} + i\vec{B}$ is the corpus's A-field, and its Proposition 12 is the corpus's $\tilde{\nabla}\tilde{F} = -\tilde{R}$ up to the $4\pi$ of Gaussian units — and then goes beyond it constructively: pushing the source through the right inverse and subtracting the scalar part $u_0 - U[u_0]$ yields an explicit **purely vectorial** solution, a constructive family complementary to the retarded convolution the corpus records. The price is a set of source defects: a mislabelled fundamental solution whose homogeneous defining equation and $L^1$ requirement are inconsistent with its own unit-modulus transform, a missing factor $i$ in the §5.1 symbol equation, an SI reduction whose constants could not be read faithfully, and two solution theorems whose exact normalisations were not verifiable from the running text. The record is of a method new to the corpus and of a reformulation already in it.
+The source's wave-operator factorisation $-\Delta + \partial_t^2 = (D + i\partial_t)(D - i\partial_t) = (D - i\partial_t)(D + i\partial_t)$ is exact in both orderings and is the real-time (hyperbolic) twin of the corpus's elliptic factorisation $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$: the source's two first-order operators are the corpus's biquaternionic gradient and the negative of its conjugate, read with $\partial_{ict} = -i\partial_t$. The kernel of $D \pm i\partial_t$ is exactly a generalized div-curl system, the time-dependent analogue of the corpus's Cauchy–Riemann–Fueter system, and it couples a scalar solution of the wave equation to its harmonic conjugate through the Teodorescu transform. The Fourier transform of the kernel is the quaternionic exponential of a pure vector, which is a **unit-modulus phase** — this unimodularity is the single fact that makes the parabolic Teodorescu transform an $L^2$ isometry in space, well defined for both signs, and its right-inverse property $(D \pm i\partial_t)T_{\mathcal{C},\pm}[\mp iw] = w$ follows from the symbol computation $\partial_t T = w \pm iDT$. The Maxwell application reproduces the corpus's single equation — the source's $\vec{E} + i\vec{B}$ is the corpus's A-field, and its Proposition 12 is the corpus's $\tilde{\nabla}\tilde{F} = -\tilde{R}$ up to the $4\pi$ of Gaussian units — and then goes beyond it constructively: pushing the source through the right inverse and subtracting the scalar part $u_0 - U[u_0]$ yields an explicit **purely vectorial** solution, a constructive family complementary to the retarded convolution the corpus records. The price is a set of source defects: a mislabelled fundamental solution whose homogeneous defining equation and $L^1$ requirement are inconsistent with its own unit-modulus transform, a missing factor $i$ in the §5.1 symbol equation, an SI reduction whose constants could not be read faithfully, and two solution theorems whose exact normalisations were not verifiable from the running text. The record is of a method new to the corpus and of a reformulation already in it.
 
 ## Summary of Notation
 
@@ -301,7 +301,7 @@ The source's wave-operator factorisation $-\Delta + \partial_t^2 = (D + i\partia
 | $\mathbb{B}$ | Biquaternion algebra |
 | $\Omega$, $\mathcal{C} = \Omega \times (0,\infty)$ | Bounded spatial domain and the space-time domain of the source |
 | $D = e_1\partial_x + e_2\partial_y + e_3\partial_z$ | Moisil–Teodorescu operator (the source's); the corpus's spatial part $\vec{\nabla}$ of $\tilde{\nabla}$ |
-| $D \pm i\partial_t$ | The parabolic Dirac operators of the source; $D - i\partial_t = \tilde{\nabla}$ and $D + i\partial_t = -\bar{\tilde{\nabla}}$ at $c = 1$ |
+| $D \pm i\partial_t$ | The parabolic Dirac operators of the source; $D - i\partial_t = \tilde{\nabla}$ and $D + i\partial_t = -\tilde{\nabla}^{\natural}$ at $c = 1$ |
 | $\Delta = \partial_x^2 + \partial_y^2 + \partial_z^2$ | Three-dimensional Laplacian; $D^2 = -\Delta e_0$ |
 | $\nabla, \mathrm{div}, \mathrm{rot}$ | Gradient, divergence, curl; $\mathrm{rot}$ is the source's $\mathrm{curl}$ |
 | $w = u + iv = (u_0 + \vec{u}) + i(v_0 + \vec{v})$ | Biquaternion-valued function, split into real and imaginary quaternion parts, each scalar plus vector |
@@ -313,7 +313,7 @@ The source's wave-operator factorisation $-\Delta + \partial_t^2 = (D + i\partia
 | $T_{\mathcal{C},\pm}$, $T_{\mathcal{C},\pm,\lambda}$ | Parabolic Teodorescu transform (10) and its $\lambda$-scaled form (16) |
 | $\vec{E}, \vec{B}, \rho, \vec{\jmath}$ | Electric field, magnetic field, charge density, current density |
 | $\vec{\varphi} = \vec{E} + i\vec{B}$ | Biquaternionic field of the source; the corpus's A-field $\mathcal{A} = -i\tilde{F}$ |
-| $\tilde{F}, \tilde{R}, \tilde{\nabla}, \bar{\tilde{\nabla}}, \Box$ | Corpus field-strength biquaternion, source biquaternion, biquaternionic gradient, its conjugate, d'Alembertian |
+| $\tilde{F}, \tilde{R}, \tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box$ | Corpus field-strength biquaternion, source biquaternion, biquaternionic gradient, its conjugate, d'Alembertian |
 | $\epsilon, \mu, c = 1/\sqrt{\epsilon\mu}$ | Permittivity, permeability, speed of light in the medium (SI section) |
 | $\lambda$ | Parameter of the perturbed operator $D \pm i\lambda\partial_t$; $\lambda = \sqrt{\epsilon\mu}$ for the homogeneous medium |
 

@@ -90,7 +90,7 @@ $$
 \tilde{K}_2 = \sqrt{p}\,\tilde\Pi_-(\hat{\mathbf{n}}),
 $$
 
-whose normalization $\sum_l \tilde{K}_l^\dagger \tilde{K}_l = (1-p)e_0 + p(\tilde\Pi_+ + \tilde\Pi_-) = e_0$ holds because the idempotents are Hermitian and complementary. The channel is **unital**: it fixes the maximally mixed state $\tilde{\rho} = \tfrac12 e_0$, so it is not a depolarizing map that pushes states toward the center; it is a map that pushes them toward an *axis*.
+whose normalization $\sum_l \tilde{K}_l^{*} \tilde{K}_l = (1-p)e_0 + p(\tilde\Pi_+ + \tilde\Pi_-) = e_0$ holds because the idempotents are Hermitian and complementary. The channel is **unital**: it fixes the maximally mixed state $\tilde{\rho} = \tfrac12 e_0$, so it is not a depolarizing map that pushes states toward the center; it is a map that pushes them toward an *axis*.
 
 On the Bloch vector the channel acts by
 
@@ -198,7 +198,7 @@ $$
 A = \left\{ z_+\,\tilde\Pi_+(\hat{\mathbf{n}}) + z_-\,\tilde\Pi_-(\hat{\mathbf{n}}) \;:\; z_\pm \in \mathbb{C} \right\},
 $$
 
-a two-dimensional commutative $\dagger$-subalgebra of $\mathbb{B}$, isomorphic to $\mathbb{C} \oplus \mathbb{C}$ — the algebra of operators diagonal in the pointer basis. Then $\Phi^{\mathrm{deph}}_1$ has the following properties, all of them direct consequences of $\tilde\Pi_\pm^2 = \tilde\Pi_\pm$, $\tilde\Pi_+\tilde\Pi_- = 0$, and $\tilde\Pi_+ + \tilde\Pi_- = e_0$:
+a two-dimensional commutative ${}^{*}$-subalgebra of $\mathbb{B}$, isomorphic to $\mathbb{C} \oplus \mathbb{C}$ — the algebra of operators diagonal in the pointer basis. Then $\Phi^{\mathrm{deph}}_1$ has the following properties, all of them direct consequences of $\tilde\Pi_\pm^2 = \tilde\Pi_\pm$, $\tilde\Pi_+\tilde\Pi_- = 0$, and $\tilde\Pi_+ + \tilde\Pi_- = e_0$:
 
 1. **Idempotent:** $(\Phi^{\mathrm{deph}}_1)^2 = \Phi^{\mathrm{deph}}_1$.
 2. **Trace preserving:** $\mathrm{Tr}(\Phi^{\mathrm{deph}}_1(\tilde{Q})) = \mathrm{Tr}(\tilde{Q})$.
@@ -224,7 +224,7 @@ Two further caveats complete the honest accounting.
 
 First, the non-selective character. Full dephasing is a *measurement without selection*: it produces the mixture $p_+\tilde\Pi_+ + p_-\tilde\Pi_-$ and does not choose between the outcomes. It is a projection in the operator-algebraic sense, not a collapse onto a single idempotent. The selective update $\tilde{\rho} \mapsto \tilde\Pi_+$, discussed in *Quantum Mechanics in Biquaternionic Form*, is a different operation; decoherence as such does not perform it.
 
-Second, idempotency alone does not single out dephasing. The completely depolarizing map at full strength, $\tilde{\rho} \mapsto \tfrac12 e_0$, is also idempotent and trace preserving, and it is a conditional expectation onto the scalars. In general, a trace-preserving idempotent channel on a qubit is a conditional expectation onto a $\dagger$-subalgebra of $\mathbb{B}$ (its Hermitian part lying in $\mathbb{M}_+$), and the nontrivial possibilities are the pointer subalgebras $A = \mathbb{C}\tilde\Pi_+ \oplus \mathbb{C}\tilde\Pi_-$ (dephasing in some basis) and the scalars $\mathbb{C}e_0$ (full depolarization), together with the identity. So "idempotent projection" is a class, not a synonym for decoherence; what distinguishes dephasing within that class is that its fixed algebra is non-central, i.e., it selects a basis rather than erasing all directions alike.
+Second, idempotency alone does not single out dephasing. The completely depolarizing map at full strength, $\tilde{\rho} \mapsto \tfrac12 e_0$, is also idempotent and trace preserving, and it is a conditional expectation onto the scalars. In general, a trace-preserving idempotent channel on a qubit is a conditional expectation onto a ${}^{*}$-subalgebra of $\mathbb{B}$ (its Hermitian part lying in $\mathbb{M}_+$), and the nontrivial possibilities are the pointer subalgebras $A = \mathbb{C}\tilde\Pi_+ \oplus \mathbb{C}\tilde\Pi_-$ (dephasing in some basis) and the scalars $\mathbb{C}e_0$ (full depolarization), together with the identity. So "idempotent projection" is a class, not a synonym for decoherence; what distinguishes dephasing within that class is that its fixed algebra is non-central, i.e., it selects a basis rather than erasing all directions alike.
 
 ## Pointer Basis and Einselection
 
@@ -314,7 +314,7 @@ The title's phrase "idempotent projection" must therefore be read with care, and
 - **Full dephasing** ($p=1$) is an idempotent channel: a trace-preserving conditional expectation onto the pointer subalgebra, i.e., an orthogonal projection with respect to the trace pairing, whose image is the pointer diameter and whose Kraus rank is two.
 - **Partial dephasing** ($0<p<1$) is not idempotent: $\Phi^{\mathrm{deph}}_p \circ \Phi^{\mathrm{deph}}_p = \Phi^{\mathrm{deph}}_{2p-p^2} \neq \Phi^{\mathrm{deph}}_p$. It is a contraction, not a projection; it is mathematically invertible but physically irreversible, because its inverse is not completely positive.
 
-The pointer basis is the commutative $\dagger$-subalgebra of $\mathbb{B}$ generated by the two idempotents along $\hat{\mathbf{n}}$ (its Hermitian part lies in $\mathbb{M}_+$); its idempotents are the only pure states fixed by the channel, and the subalgebra is invariant under the $U(1)$ phase rotation they generate. The framework supplies this structure once $\hat{\mathbf{n}}$ is given, but it does not derive $\hat{\mathbf{n}}$, the environment, the rate, or the selection of an outcome. In the language of the quantum–classical divide, decoherence is the process by which a partition loses its incompatible idempotents — becoming, operationally, a classical simplex over the pointer states — while the underlying system-plus-environment state remains fundamental. That is what the algebra explains; what lies beyond it is the dynamics that the algebra does not contain.
+The pointer basis is the commutative ${}^{*}$-subalgebra of $\mathbb{B}$ generated by the two idempotents along $\hat{\mathbf{n}}$ (its Hermitian part lies in $\mathbb{M}_+$); its idempotents are the only pure states fixed by the channel, and the subalgebra is invariant under the $U(1)$ phase rotation they generate. The framework supplies this structure once $\hat{\mathbf{n}}$ is given, but it does not derive $\hat{\mathbf{n}}$, the environment, the rate, or the selection of an outcome. In the language of the quantum–classical divide, decoherence is the process by which a partition loses its incompatible idempotents — becoming, operationally, a classical simplex over the pointer states — while the underlying system-plus-environment state remains fundamental. That is what the algebra explains; what lies beyond it is the dynamics that the algebra does not contain.
 
 One many-qubit case belongs here because a source overstates it. The singlet $\lvert\Psi^-\rangle$ is a **decoherence-free** state for the part of the noise that acts collectively on the two qubits: the collective generator $\alpha\otimes e_0+e_0\otimes\alpha$ annihilates it, and it is fixed by the collective channel at every strength. It is not, however, immune to independent local dephasing, which drives it to the separable mixture $\tfrac12\lvert01\rangle\langle01\rvert+\tfrac12\lvert10\rangle\langle10\rvert$. The immunity is a property of one state under one channel, not of entanglement as such.
 
@@ -344,7 +344,7 @@ One many-qubit case belongs here because a source overstates it. The singlet $\l
 | $\lvert\Psi^-\rangle = \tfrac{1}{\sqrt2}(\lvert01\rangle-\lvert10\rangle)$ | Singlet; decoherence-free for collective dephasing |
 | $A = \mathbb{C}\tilde\Pi_+ \oplus \mathbb{C}\tilde\Pi_-$ | Pointer (commutative) subalgebra |
 | $S(\tilde{\rho}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$ | Von Neumann entropy, $\lambda_\pm = \tfrac12(1\pm|\mathbf{r}|)$ |
-| $\Phi(\tilde{\rho}) = \sum_l \tilde{K}_l\tilde{\rho}\tilde{K}_l^\dagger$ | Kraus representation of a channel |
+| $\Phi(\tilde{\rho}) = \sum_l \tilde{K}_l\tilde{\rho}\tilde{K}_l^{*}$ | Kraus representation of a channel |
 
 ## Further Reading
 

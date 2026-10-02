@@ -9,7 +9,7 @@ The article uses *Quaternion Algebra* and *Quaternion Norm and Invertibility* fo
 
 The corpus's default base is a commutative ring with identity; the analysis requires the real numbers, so the operator is defined over $\mathbb{R}$ and the results are stated for domains in $\mathbb{R}^4$. A separate section treats the three-dimensional theory of the **reduced quaternions** $\mathcal{A} = \operatorname{span}_\mathbb{R}\{e_0,e_1,e_2\}$, a real vector space that is not a subalgebra, whose operator is the reduced Cauchy–Riemann operator of the Riesz system; because that module is a subspace of codimension one, its left and right regularity coincide and the theory is two-sided.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; the variable is $x = x_0+x_1e_1+x_2e_2+x_3e_3$ with $x_\mu\in\mathbb{R}$; the conjugate is $\bar x = x_0-\mathbf{x}$ and the modulus is $|x| = \sqrt{N(x)}$. The partial derivatives are $\partial_\mu = \partial/\partial x_\mu$, and the Euclidean Laplacian is $\Delta = \sum_\mu \partial_\mu^2$. The vector operations on $\mathbf{f} = f_1e_1+f_2e_2+f_3e_3$ are $\mathrm{div}\,\mathbf{f} = \sum_k\partial_kf_k$, $\mathrm{grad}\,f_0 = \sum_k(\partial_kf_0)e_k$, and $\mathrm{rot}\,\mathbf{f} = \sum_{j,k,l}\epsilon_{jkl}(\partial_jf_k)e_l$.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; the variable is $x = x_0+x_1e_1+x_2e_2+x_3e_3$ with $x_\mu\in\mathbb{R}$; the conjugate is $x^{\natural} = x_0-\mathbf{x}$ and the modulus is $|x| = \sqrt{N(x)}$. The partial derivatives are $\partial_\mu = \partial/\partial x_\mu$, and the Euclidean Laplacian is $\Delta = \sum_\mu \partial_\mu^2$. The vector operations on $\mathbf{f} = f_1e_1+f_2e_2+f_3e_3$ are $\mathrm{div}\,\mathbf{f} = \sum_k\partial_kf_k$, $\mathrm{grad}\,f_0 = \sum_k(\partial_kf_0)e_k$, and $\mathrm{rot}\,\mathbf{f} = \sum_{j,k,l}\epsilon_{jkl}(\partial_jf_k)e_l$.
 
 ## The Cauchy–Riemann Operator and Its Conjugate
 
@@ -17,12 +17,12 @@ Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis 
 
 $$
 D = \sum_{\mu=0}^{3}e_\mu\partial_\mu = \partial_0+e_1\partial_1+e_2\partial_2+e_3\partial_3, \qquad
-\bar D = \sum_{\mu=0}^{3}\bar e_\mu\partial_\mu = \partial_0-e_1\partial_1-e_2\partial_2-e_3\partial_3,
+\bar D = \sum_{\mu=0}^{3}e_\mu^{\natural}\partial_\mu = \partial_0-e_1\partial_1-e_2\partial_2-e_3\partial_3,
 $$
 
-with $\bar e_0 = e_0$ and $\bar e_k = -e_k$; the bar conjugates the basis elements, not the derivatives.
+with $e_0^{\natural} = e_0$ and $e_k^{\natural} = -e_k$; the bar conjugates the basis elements, not the derivatives.
 
-**Proposition.** The units satisfy the Clifford relation $e_\mu\bar e_\nu+e_\nu\bar e_\mu = 2\delta_{\mu\nu}e_0$, and consequently
+**Proposition.** The units satisfy the Clifford relation $e_\mu e_\nu^{\natural}+e_\nu e_\mu^{\natural} = 2\delta_{\mu\nu}e_0$, and consequently
 
 $$
 D\bar D = \bar D D = \Delta,
@@ -30,7 +30,7 @@ $$
 
 so the Cauchy–Riemann operator factors the Laplacian, exactly as $\partial_z\partial_{\bar z} = \tfrac14\Delta$ in one complex variable.
 
-*Proof.* For $\mu = \nu$ one has $e_\mu\bar e_\mu = e_0$, since $e_0\bar e_0 = e_0$ and $e_k\bar e_k = -e_k^2 = e_0$; for $\mu\neq\nu$, $e_\mu\bar e_\nu = -e_\mu e_\nu = e_\nu e_\mu = -e_\nu\bar e_\mu$. Hence all mixed second derivatives cancel in the product, leaving $\sum_\mu\partial_\mu^2 = \Delta$.
+*Proof.* For $\mu = \nu$ one has $e_\mu e_\mu^{\natural} = e_0$, since $e_0e_0^{\natural} = e_0$ and $e_k e_k^{\natural} = -e_k^2 = e_0$; for $\mu\neq\nu$, $e_\mu e_\nu^{\natural} = -e_\mu e_\nu = e_\nu e_\mu = -e_\nu e_\mu^{\natural}$. Hence all mixed second derivatives cancel in the product, leaving $\sum_\mu\partial_\mu^2 = \Delta$.
 
 **Remark.** The pair $(D,\bar D)$ plays the role of $(\partial_z,\partial_{\bar z})$, but the two operators are not merely the two first-order factors of the Laplacian: because the algebra is non-commutative, the products $D\bar D$ and $\bar D D$ agree as differential operators on the algebra but the operators themselves act on functions by left multiplication and are not interchangeable with right multiplication by a quaternion.
 
@@ -46,15 +46,15 @@ on $\Omega$. It is **right-regular** if $fD := \sum_\mu\partial_\mu f\,e_\mu = 0
 
 **Convention.** In this article and its companions, **regular** without qualification means **left-regular**, $Df = 0$. The opposite convention $\bar Df = 0$ also occurs in the literature and merely interchanges the regular and anti-regular classes.
 
-**Proposition.** Quaternion conjugation exchanges the two regularity conventions: $f$ is left-regular if and only if $\bar f$ is right-regular with respect to the conjugate operator,
+**Proposition.** Quaternion conjugation exchanges the two regularity conventions: $f$ is left-regular if and only if $f^{\natural}$ is right-regular with respect to the conjugate operator,
 
 $$
-Df = 0\iff\bar f\,\bar D = 0,
+Df = 0\iff f^{\natural}\,\bar D = 0,
 $$
 
-and $f$ is right-regular if and only if $\bar f$ is anti-regular, $fD = 0\iff\bar D\bar f = 0$.
+and $f$ is right-regular if and only if $f^{\natural}$ is anti-regular, $fD = 0\iff\bar D f^{\natural} = 0$.
 
-*Proof.* Conjugation is an anti-automorphism, so it reverses the order of the factors in each term: $\overline{Df} = \sum_\mu(\partial_\mu\bar f)\bar e_\mu = \bar f\bar D$ and $\overline{fD} = \sum_\mu\bar e_\mu\partial_\mu\bar f = \bar D\bar f$. A quaternion vanishes exactly when its conjugate does.
+*Proof.* Conjugation is an anti-automorphism, so it reverses the order of the factors in each term: $(Df)^{\natural} = \sum_\mu(\partial_\mu f^{\natural})e_\mu^{\natural} = f^{\natural}\bar D$ and $(fD)^{\natural} = \sum_\mu e_\mu^{\natural}\partial_\mu f^{\natural} = \bar D f^{\natural}$. A quaternion vanishes exactly when its conjugate does.
 
 ## The System of Regularity Equations
 
@@ -72,9 +72,9 @@ $$
 
 *Proof.* Multiply out $e_\mu\partial_\mu(f_0+\mathbf{f})$ term by term, using $\mathbf{a}\mathbf{b} = -\langle\mathbf{a},\mathbf{b}\rangle+\mathbf{a}\times\mathbf{b}$ for pure quaternions: the scalar part collects $\partial_0f_0-\mathrm{div}\,\mathbf{f}$, and the vector part collects $\partial_0\mathbf{f}+\mathrm{grad}\,f_0+\mathrm{rot}\,\mathbf{f}$. Both parts must vanish.
 
-**Corollary.** The system is a first-order elliptic system of four equations for the four coefficients. Its principal symbol is $s(\xi) = \sum_\mu\xi_\mu e_\mu$, which satisfies $s(\xi)\bar s(\xi) = |\xi|^2e_0$ for every real covector $\xi\neq0$, so the system is elliptic and its solutions are real-analytic.
+**Corollary.** The system is a first-order elliptic system of four equations for the four coefficients. Its principal symbol is $s(\xi) = \sum_\mu\xi_\mu e_\mu$, which satisfies $s(\xi)s^{\natural}(\xi) = |\xi|^2e_0$ for every real covector $\xi\neq0$, so the system is elliptic and its solutions are real-analytic.
 
-*Proof.* The principal symbol is invertible with inverse $\bar s(\xi)/|\xi|^2$, which is the ellipticity condition; elliptic systems with smooth coefficients have real-analytic solutions.
+*Proof.* The principal symbol is invertible with inverse $s^{\natural}(\xi)/|\xi|^2$, which is the ellipticity condition; elliptic systems with smooth coefficients have real-analytic solutions.
 
 **Remark.** The ellipticity is exact, and it is the point at which the quaternion algebra differs from the biquaternion algebra: for the quaternion algebra the quaternion norm is definite, so $|\xi|^2$ never vanishes, and the operator has no characteristic set. There is therefore no analogue of the null cone of $\mathbb{B}$.
 
@@ -83,7 +83,7 @@ $$
 **Theorem.** Every constant function is regular; the coordinate function $x$ is not regular, since $Dx = \sum_\mu e_\mu e_\mu = -2e_0$; the Cauchy kernel
 
 $$
-G(x) = \frac{\bar x}{|x|^4}
+G(x) = \frac{x^{\natural}}{|x|^4}
 $$
 
 is regular on $\mathbb{H}\setminus\{0\}$; and every classical holomorphic function of the single complex variable $z = x_0+e_1x_1$, extended by constancy in $x_2,x_3$, is regular.
@@ -256,7 +256,7 @@ $$
 \mathcal{A} = \operatorname{span}_\mathbb{R}\{e_0,e_1,e_2\} = \{f_0+f_1e_1+f_2e_2 : f_0,f_1,f_2\in\mathbb{R}\},
 $$
 
-and the decisive feature is that $\mathcal{A}$ is a three-dimensional real vector space but **not** a subalgebra of $\mathbb{H}$: the product $e_1e_2 = e_3$ leaves it. The subspace is closed under conjugation and under inversion in $\mathbb{H}$, since $\bar f = f_0-f_1e_1-f_2e_2\in\mathcal{A}$ and $f^{-1} = \bar f/(f_0^2+f_1^2+f_2^2)\in\mathcal{A}$ for $f\neq 0$, and the product of two of its elements falls back into it exactly when their vector parts are parallel. The failure of closure is the source of what is distinctive in the theory.
+and the decisive feature is that $\mathcal{A}$ is a three-dimensional real vector space but **not** a subalgebra of $\mathbb{H}$: the product $e_1e_2 = e_3$ leaves it. The subspace is closed under conjugation and under inversion in $\mathbb{H}$, since $f^{\natural} = f_0-f_1e_1-f_2e_2\in\mathcal{A}$ and $f^{-1} = f^{\natural}/(f_0^2+f_1^2+f_2^2)\in\mathcal{A}$ for $f\neq 0$, and the product of two of its elements falls back into it exactly when their vector parts are parallel. The failure of closure is the source of what is distinctive in the theory.
 
 **Definition (reduced Cauchy–Riemann operator).** On $\mathcal{A}$-valued functions of $x = x_0+x_1e_1+x_2e_2$ in a domain of $\mathbb{R}^3$, the **reduced Cauchy–Riemann operator** and its conjugate are
 
@@ -266,7 +266,7 @@ $$
 
 **Proposition.** $D\bar D = \bar DD = \Delta_3 = \partial_0^2+\partial_1^2+\partial_2^2$, so the two operators factor the Laplacian of $\mathbb{R}^3$ and every monogenic function is harmonic in each component.
 
-*Proof.* As in four variables, $e_\mu\bar e_\mu = e_0$ for $\mu = 0,1,2$ and $e_\mu\bar e_\nu = -e_\mu e_\nu = e_\nu e_\mu = -e_\nu\bar e_\mu$ for $\mu\neq\nu$; the mixed second derivatives cancel in the product.
+*Proof.* As in four variables, $e_\mu e_\mu^{\natural} = e_0$ for $\mu = 0,1,2$ and $e_\mu e_\nu^{\natural} = -e_\mu e_\nu = e_\nu e_\mu = -e_\nu e_\mu^{\natural}$ for $\mu\neq\nu$; the mixed second derivatives cancel in the product.
 
 **Remark (the contrast with $D_3$).** The two three-dimensional operators are different objects. The Moisil–Theodoresco operator $D_3 = e_1\partial_1+e_2\partial_2+e_3\partial_3$ uses the three imaginary directions and squares by itself, $D_3^2 = -\Delta_3$; the reduced operator $D$ uses one real and two imaginary directions and needs its conjugate, $D\bar D = \Delta_3$. They are exchanged by the rotation that trades the coordinate $x_0$ for $x_3$ and the basis element $e_0$ for $e_3$, and they agree on the functions independent of the traded coordinate.
 
@@ -365,7 +365,7 @@ with real coefficients, where $g$ is the **main part** of $f$ and $h$ is the hyp
 
 ## The Cauchy Integral Formula
 
-**Theorem (fundamental solution).** The Cauchy kernel $G(x) = \bar x/|x|^4$ satisfies $DG = 0$ for $x\neq0$ and, in the sense of distributions,
+**Theorem (fundamental solution).** The Cauchy kernel $G(x) = x^{\natural}/|x|^4$ satisfies $DG = 0$ for $x\neq0$ and, in the sense of distributions,
 
 $$
 DG = 2\pi^2\delta_0 e_0 .
@@ -398,18 +398,18 @@ The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$
 | Coefficients of the variable | real | complex |
 | Norm | definite | indefinite |
 | Zero divisors | none | the null cone $\mathcal{N} = \{N = 0\}$ |
-| Ellipticity of $D$ | everywhere, $s(\xi)\bar s(\xi) = \lvert\xi\rvert^2$ | on indefinite subspaces $s(\xi)\bar s(\xi)$ degenerates on $\mathcal{N}$ |
-| Cauchy kernel | $G = \bar x/\lvert x\rvert^4$, regular off the origin | regular only where $N\neq0$; not a fundamental solution on indefinite subspaces |
+| Ellipticity of $D$ | everywhere, $s(\xi)s^{\natural}(\xi) = \lvert\xi\rvert^2$ | on indefinite subspaces $s(\xi)s^{\natural}(\xi)$ degenerates on $\mathcal{N}$ |
+| Cauchy kernel | $G = x^{\natural}/\lvert x\rvert^4$, regular off the origin | regular only where $N\neq0$; not a fundamental solution on indefinite subspaces |
 | Cauchy integral formula | global on every domain | asserted only on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ |
 | Maximum principle, Liouville, residue theory | available | available on $\mathbb{H}_{\mathbb{B}}$, fail on $\mathbb{M}_\pm$ |
 
-The obstruction in the biquaternion case is entirely the null cone: because $N$ is indefinite, the principal symbol $s(\xi)$ is singular on the characteristic set, the Cauchy kernel ceases to be a fundamental solution off the quaternion subspace, and the identity $\bar x x = |x|^2$ used to compute $DG = 0$ fails once the coefficients are complex and null. On the quaternion algebra the quaternion norm is definite, so all of these properties hold globally and the four-variable Cauchy theory is complete. The biquaternion account is in *Biquaternion Regular Functions*.
+The obstruction in the biquaternion case is entirely the null cone: because $N$ is indefinite, the principal symbol $s(\xi)$ is singular on the characteristic set, the Cauchy kernel ceases to be a fundamental solution off the quaternion subspace, and the identity $x^{\natural} x = |x|^2$ used to compute $DG = 0$ fails once the coefficients are complex and null. On the quaternion algebra the quaternion norm is definite, so all of these properties hold globally and the four-variable Cauchy theory is complete. The biquaternion account is in *Biquaternion Regular Functions*.
 
 ## Summary
 
-The Cauchy–Riemann operator $D = \sum_\mu e_\mu\partial_\mu$ and its conjugate $\bar D = \sum_\mu\bar e_\mu\partial_\mu$ factor the Euclidean Laplacian, $D\bar D = \bar DD = \Delta$, through the Clifford relation $e_\mu\bar e_\nu+e_\nu\bar e_\mu = 2\delta_{\mu\nu}e_0$. A function is left-regular if $Df = 0$; regularity is equivalent to the Cauchy–Riemann–Fueter system $\partial_0f_0 = \mathrm{div}\,\mathbf{f}$, $\partial_0\mathbf{f}+\mathrm{grad}\,f_0+\mathrm{rot}\,\mathbf{f} = 0$, a first-order elliptic system of four equations whose principal symbol is invertible everywhere because the quaternion norm is definite.
+The Cauchy–Riemann operator $D = \sum_\mu e_\mu\partial_\mu$ and its conjugate $\bar D = \sum_\mu e_\mu^{\natural}\partial_\mu$ factor the Euclidean Laplacian, $D\bar D = \bar DD = \Delta$, through the Clifford relation $e_\mu e_\nu^{\natural}+e_\nu e_\mu^{\natural} = 2\delta_{\mu\nu}e_0$. A function is left-regular if $Df = 0$; regularity is equivalent to the Cauchy–Riemann–Fueter system $\partial_0f_0 = \mathrm{div}\,\mathbf{f}$, $\partial_0\mathbf{f}+\mathrm{grad}\,f_0+\mathrm{rot}\,\mathbf{f} = 0$, a first-order elliptic system of four equations whose principal symbol is invertible everywhere because the quaternion norm is definite.
 
-Regular functions are closed under addition, right multiplication by constants, and real scaling, but not under left multiplication by general quaternions, so they form a right module; constants and classical holomorphic functions of a single-plane variable are regular, the coordinate function is not, and the genuine radial regular function is the Cauchy kernel $G = \bar x/|x|^4$, of homogeneity $-3$ in four variables. Every regular function is harmonic, but not conversely. The Cauchy integral formula holds on every domain in $\mathbb{H}$, with the kernel $G$ and the constant $1/(2\pi^2)$, and it yields the mean value property, the maximum principle, Liouville's theorem and the residue theory without exception.
+Regular functions are closed under addition, right multiplication by constants, and real scaling, but not under left multiplication by general quaternions, so they form a right module; constants and classical holomorphic functions of a single-plane variable are regular, the coordinate function is not, and the genuine radial regular function is the Cauchy kernel $G = x^{\natural}/|x|^4$, of homogeneity $-3$ in four variables. Every regular function is harmonic, but not conversely. The Cauchy integral formula holds on every domain in $\mathbb{H}$, with the kernel $G$ and the constant $1/(2\pi^2)$, and it yields the mean value property, the maximum principle, Liouville's theorem and the residue theory without exception.
 
 The spatial part $D_3 = e_1\partial_1+e_2\partial_2+e_3\partial_3$ is the **Moisil–Theodoresco operator** of the three-dimensional theory: it splits as $-\mathrm{div}+\mathrm{grad}+\mathrm{rot}$, it squares alone to the negative Laplacian, $D_3^2 = -\Delta_3$, and it carries the logarithmic derivative $\check\partial\phi = \phi^{-1}D_3\phi$ and the Riccati PDE $D_3\mathbf{f}+\mathbf{f}^2 = v$, which is equivalent to the three-dimensional Schrödinger equation $\Delta_3\phi+v\phi = 0$ and factorises its operator, $-\Delta_3-vI = (D_3+M_{\mathbf{f}})(D_3-M_{\mathbf{f}})$, on a scalar right factor. The four-dimensional operator needs its conjugate for the same factorisation because only the conjugate removes the mixed term $2\partial_0D_3$ of its square. The same operator carries the equation $D_3f+f\vec\alpha = 0$ with a general vectorial coefficient: for a coefficient with one function of one variable per direction, the product $(D_3+M_{\vec\alpha})(D_3-M_{\vec\alpha})$ acts componentwise as four *scalar* Schrödinger operators with the four potentials $\vec\alpha^2\pm D_3\vec\alpha^{(k)}$, the reduction is exact precisely for coefficients of skew-symmetric Jacobian, and the idempotents $\tfrac12(1\pm ie_k)$ split a scalar shift into two shifts of opposite sign.
 
@@ -425,15 +425,15 @@ The comparison with the biquaternions isolates the role of the quaternion norm: 
 | $x = x_0+\mathbf{x}$ | Variable quaternion, $x_\mu\in\mathbb{R}$, $\mathbf{x} = x_1e_1+x_2e_2+x_3e_3$ |
 | $\partial_\mu, \Delta = \sum_\mu\partial_\mu^2$ | Partial derivatives and Euclidean Laplacian |
 | $D = \sum_\mu e_\mu\partial_\mu$ | Cauchy–Riemann operator |
-| $\bar D = \sum_\mu\bar e_\mu\partial_\mu$ | Conjugate operator, $\bar e_0 = e_0$, $\bar e_k = -e_k$ |
-| $e_\mu\bar e_\nu+e_\nu\bar e_\mu = 2\delta_{\mu\nu}e_0$ | Clifford relation; gives $D\bar D = \bar DD = \Delta$ |
+| $\bar D = \sum_\mu e_\mu^{\natural}\partial_\mu$ | Conjugate operator, $e_0^{\natural} = e_0$, $e_k^{\natural} = -e_k$ |
+| $e_\mu e_\nu^{\natural}+e_\nu e_\mu^{\natural} = 2\delta_{\mu\nu}e_0$ | Clifford relation; gives $D\bar D = \bar DD = \Delta$ |
 | $Df = 0$ | Left-regularity; regular means left-regular here |
 | $fD = 0$, $\bar Df = 0$ | Right-regular and anti-regular functions |
 | $\mathrm{div}, \mathrm{grad}, \mathrm{rot}$ | Vector-calculus operators in the decomposition of $Df$ |
 | $\partial_0f_0 = \mathrm{div}\,\mathbf{f}$, $\partial_0\mathbf{f}+\mathrm{grad}\,f_0+\mathrm{rot}\,\mathbf{f} = 0$ | Cauchy–Riemann–Fueter system |
-| $s(\xi) = \sum_\mu\xi_\mu e_\mu$ | Principal symbol, $s\bar s = \lvert\xi\rvert^2$ |
+| $s(\xi) = \sum_\mu\xi_\mu e_\mu$ | Principal symbol, $s s^{\natural} = \lvert\xi\rvert^2$ |
 | $z = x_0+e_1x_1$ | Single-plane complex variable, $\partial_{\bar z} = \tfrac12(\partial_0+e_1\partial_1)$ |
-| $G(x) = \bar x/\lvert x\rvert^4$ | Cauchy kernel; $DG = 2\pi^2\delta_0e_0$ |
+| $G(x) = x^{\natural}/\lvert x\rvert^4$ | Cauchy kernel; $DG = 2\pi^2\delta_0e_0$ |
 | $\mathbb{B}, \mathbb{H}_{\mathbb{B}}$ | Biquaternion algebra and its quaternion subspace |
 | $D_3 = e_1\partial_1+e_2\partial_2+e_3\partial_3$ | Moisil–Theodoresco operator; $D_3^2 = -\Delta_3$ |
 | $\check\partial\phi = \phi^{-1}D_3\phi$ | Logarithmic derivative; $\mathbf{f} = \check\partial\phi$ solves the Riccati PDE |

@@ -159,7 +159,7 @@ $$
 b_0 = \frac{11}{3}C_2(G) - \frac{2}{3}\sum_{\text{Weyl}}T(r),
 $$
 
-with $C_2(G) = N$ and the QCD coefficient $b_0 = 11 - \tfrac{2}{3}N_f$ for $SU(3)$. But the article states plainly that the gauge group, the matter content, the action, the measure, and the regulator are **inputs**, and that the beta functions are transcriptions. The flow acts on central scalars, and the algebraically natural sharp cutoff is imposed on the central biquaternion norm $\tilde{k}\bar{\tilde{k}}$. So the framework houses the form of the flow, and the flow is the coarse-graining that degrades the partonic information, but the group and the matter that give the flow its meaning are the missing objects.
+with $C_2(G) = N$ and the QCD coefficient $b_0 = 11 - \tfrac{2}{3}N_f$ for $SU(3)$. But the article states plainly that the gauge group, the matter content, the action, the measure, and the regulator are **inputs**, and that the beta functions are transcriptions. The flow acts on central scalars, and the algebraically natural sharp cutoff is imposed on the central biquaternion norm $\tilde{k}\tilde{k}^{\natural}$. So the framework houses the form of the flow, and the flow is the coarse-graining that degrades the partonic information, but the group and the matter that give the flow its meaning are the missing objects.
 
 ### Coarse-Graining as a Channel
 

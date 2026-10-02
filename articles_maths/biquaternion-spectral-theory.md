@@ -67,7 +67,7 @@ $$
 \tilde{Q}^2 = Q_0^2 e_0 + 2Q_0\mathbf{Q} - B^2 e_0 = 2Q_0\tilde{Q} - (Q_0^2 + B^2)e_0 = 2Q_0\tilde{Q} - N(\tilde{Q})e_0.
 $$
 
-**Corollary 4.2.** If $N(\tilde{Q}) \neq 0$, then $\tilde{Q}^{-1} = (2Q_0e_0 - \tilde{Q})/N(\tilde{Q}) = \bar{\tilde{Q}}/N(\tilde{Q})$.
+**Corollary 4.2.** If $N(\tilde{Q}) \neq 0$, then $\tilde{Q}^{-1} = (2Q_0e_0 - \tilde{Q})/N(\tilde{Q}) = \tilde{Q}^{\natural}/N(\tilde{Q})$.
 
 **Proposition 4.3.** The functionals $T, D$ satisfy
 $$
@@ -136,7 +136,7 @@ In case 2, $N(\tilde{Q}) = Q_0^2$, so the non-semi-simple element is a zero divi
 
 **Proposition 7.2.** For $\lambda \notin \sigma(\tilde{Q})$,
 $$
-R(\lambda) = \frac{(Q_0-\lambda)e_0 - \mathbf{Q}}{(Q_0-\lambda)^2 + B^2} = \frac{\overline{\tilde{Q} - \lambda e_0}}{p_{\tilde{Q}}(\lambda)}.
+R(\lambda) = \frac{(Q_0-\lambda)e_0 - \mathbf{Q}}{(Q_0-\lambda)^2 + B^2} = \frac{(\tilde{Q} - \lambda e_0)^{\natural}}{p_{\tilde{Q}}(\lambda)}.
 $$
 **Proof.** $\tilde{Q} - \lambda e_0$ has conjugate $(Q_0-\lambda)e_0 - \mathbf{Q}$ and norm $(Q_0-\lambda)^2 + B^2 = p_{\tilde{Q}}(\lambda)$; apply Corollary 4.2.
 
@@ -164,7 +164,7 @@ The exponential $\exp(\tilde{Q}) = \sum_n \tilde{Q}^n/n!$ is entire and is the v
 
 ## Hermitian and Normal Elements
 
-**Definition 10.1.** $\tilde{Q}$ is **Hermitian** if $\tilde{Q}^\dagger = \tilde{Q}$, **unitary** if $\tilde{Q}^\dagger\tilde{Q} = \tilde{Q}\tilde{Q}^\dagger = e_0$, and **normal** if $\tilde{Q}\tilde{Q}^\dagger = \tilde{Q}^\dagger\tilde{Q}$. Hermitian and unitary elements are normal.
+**Definition 10.1.** $\tilde{Q}$ is **Hermitian** if $\tilde{Q}^{*} = \tilde{Q}$, **unitary** if $\tilde{Q}^{*}\tilde{Q} = \tilde{Q}\tilde{Q}^{*} = e_0$, and **normal** if $\tilde{Q}\tilde{Q}^{*} = \tilde{Q}^{*}\tilde{Q}$. Hermitian and unitary elements are normal.
 
 The Hermitian condition is a subspace condition: writing $\tilde{Q} = \sum_\mu Q_\mu e_\mu$, it says exactly that $Q_0 \in \mathbb{R}$ and $Q_k = iq'_k$ with $q'_k \in \mathbb{R}$. So the Hermitian elements of $\mathbb{B}$ are precisely the elements of the Hermitian subspace $\mathbb{M}_+$, and the anti-Hermitian elements are precisely those of $\mathbb{M}_-$; the Hermitian idempotents $\tilde\Pi_1, \tilde\Pi_2$ of Theorem 11.2 lie in $\mathbb{M}_+$.
 
@@ -180,7 +180,7 @@ The Hermitian condition is a subspace condition: writing $\tilde{Q} = \sum_\mu Q
 
 **Theorem 11.2 (biquaternion form).** $\tilde{Q}$ is normal iff there are a unitary $\tilde{U} \in \mathbb{B}$ and $\lambda_1,\lambda_2 \in \mathbb{C}$ with
 $$
-\tilde{U}\tilde{Q}\tilde{U}^\dagger = \frac{\lambda_1+\lambda_2}{2}e_0 + \frac{i(\lambda_1-\lambda_2)}{2}e_3.
+\tilde{U}\tilde{Q}\tilde{U}^{*} = \frac{\lambda_1+\lambda_2}{2}e_0 + \frac{i(\lambda_1-\lambda_2)}{2}e_3.
 $$
 Equivalently $\tilde{Q} = \lambda_1\tilde\Pi_1 + \lambda_2\tilde\Pi_2$ with Hermitian idempotents $\tilde\Pi_1,\tilde\Pi_2$ satisfying $\tilde\Pi_1+\tilde\Pi_2 = e_0$, $\tilde\Pi_1\tilde\Pi_2 = 0$, $\tilde\Pi_i^\dagger = \tilde\Pi_i$, $\tilde\Pi_i^2 = \tilde\Pi_i$; for $\lambda_1 \neq \lambda_2$,
 $$

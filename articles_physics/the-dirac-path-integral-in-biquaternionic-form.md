@@ -170,7 +170,7 @@ $$
 
 a matrix of Bessel functions whose small-$\epsilon$ expansion satisfies $(i\not\partial - mc/\hbar)K = i\delta$ in two dimensions; the standard derivations of the checkerboard (see the Further Reading) give the explicit form. The two directions are the two chiral components, and the mass is the corner operator that flips them.
 
-The biquaternion reading is then immediate. In 1+1 dimensions the biquaternion algebra reduces to the even part of $\mathrm{Cl}_{1,1}$, whose two minimal ideals are the two chiral halves; the two directions of the checkerboard are those two halves, and each corner is an insertion of the **off-diagonal mass** of the chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$. The checkerboard is thus the discrete, real-time picture of the mass pair: the free propagation is diagonal (each chirality propagates on its own), and the mass is the reversal that connects them. The continuum limit is the statement that the off-diagonal mass pair, iterated on the lattice, reproduces the flat-space Dirac propagator.
+The biquaternion reading is then immediate. In 1+1 dimensions the biquaternion algebra reduces to the even part of $\mathrm{Cl}_{1,1}$, whose two minimal ideals are the two chiral halves; the two directions of the checkerboard are those two halves, and each corner is an insertion of the **off-diagonal mass** of the chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$. The checkerboard is thus the discrete, real-time picture of the mass pair: the free propagation is diagonal (each chirality propagates on its own), and the mass is the reversal that connects them. The continuum limit is the statement that the off-diagonal mass pair, iterated on the lattice, reproduces the flat-space Dirac propagator.
 
 ### The Recurrence and Its Limit
 
@@ -186,7 +186,7 @@ $$
 
 where the first term on each right-hand side is the straight continuation and the second is the corner. Two features are visible by inspection. The **free propagation is diagonal**: the term that carries $R$ to $R$ and $L$ to $L$ involves no mixing, and each direction propagates independently. The **mass is off-diagonal**: the corner terms couple $R$ to $L$ and $L$ to $R$ with the weight $i\epsilon m/\hbar$, i.e. with an explicit factor of the mass and an explicit factor of $i$.
 
-Taylor-expanding and taking $\epsilon \to 0$ with the lattice constraint $|\dot{x}| = 1$ turns the pair into the two-component Dirac equation in 1+1 dimensions, whose two components are $R$ and $L$. The corner weight $i\epsilon m/\hbar$ becomes the mass term, and the two directions become the two chiral components. This is the discrete origin of the off-diagonal mass pair that the biquaternion algebra writes as $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$: the checkerboard is that pair before the continuum limit has identified the directions with the chirality eigenspaces. The order of the two factors in a corner is the path ordering that survives as the ordering of the operators $\tilde{\nabla}$ and $\bar{\tilde{\nabla}}$ in the continuum.
+Taylor-expanding and taking $\epsilon \to 0$ with the lattice constraint $|\dot{x}| = 1$ turns the pair into the two-component Dirac equation in 1+1 dimensions, whose two components are $R$ and $L$. The corner weight $i\epsilon m/\hbar$ becomes the mass term, and the two directions become the two chiral components. This is the discrete origin of the off-diagonal mass pair that the biquaternion algebra writes as $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$: the checkerboard is that pair before the continuum limit has identified the directions with the chirality eigenspaces. The order of the two factors in a corner is the path ordering that survives as the ordering of the operators $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$ in the continuum.
 
 ## Composition, the Propagator Equation, and the Scalar Reduction
 
@@ -231,7 +231,7 @@ A worldline carries two structures at once: a **material** trajectory $x^\mu(\ta
 
 $$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad
-\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R
+\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R
 $$
 
 is the operator statement of the same split: the two gradients act on the two chiral halves, the material trajectory is common to both, and the mass is the off-diagonal corner that turns one into the other. In the worldline language the two chiral halves are the two possible "spins" of the transport, and the mass term is the reversal; in the checkerboard the same reversal is the lattice corner. The three descriptions — the operator pair, the discretised checkerboard, and the continuous spinning worldline — are the same off-diagonal mass structure in three registers.
@@ -274,7 +274,7 @@ In the biquaternion framework, the odd variable is the generator of the Clifford
 | $\Phi[x]$ | Spin factor (Clifford-valued path-ordered weight) |
 | $K_{RR}, K_{RL}, K_{LR}, K_{LL}$ | Checkerboard propagator matrix |
 | $i\epsilon m/\hbar$ per corner | Checkerboard corner weight |
-| $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Biquaternion mass pair |
+| $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Biquaternion mass pair |
 | $\Box = \partial_{ict}^2 + \Delta$ | Series d'Alembertian |
 
 ## Further Reading

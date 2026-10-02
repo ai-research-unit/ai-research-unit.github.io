@@ -9,7 +9,7 @@ The article is the quaternion member of the family's subspace pair. Its counterp
 
 The corpus's default base is a commutative ring with identity, but the decomposition into scalar and vector subspaces uses the involution and the factor $\tfrac12$ that produces the two eigenspaces, so it needs a base in which $2$ is invertible. All statements below are therefore stated over a field $F$ of characteristic not $2$; the inner product, the cross product and the quaternion norm of the Euclidean statements are over $F = \mathbb{R}$.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with **scalar part** $\mathrm{Sc}(\tilde q) = q_0$ and **vector part** $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3$; the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and the quaternion norm is $N(\tilde q) = \tilde q\bar{\tilde q}$. The scalar subspace is written $\mathbb{R}_{\mathbb{H}} = \{\tilde q : \mathbf{q} = 0\}$ and the vector subspace $\operatorname{Im}\mathbb{H} = \{\tilde q : \bar{\tilde q} = -\tilde q\} = \{\tilde q : \mathrm{Sc}(\tilde q) = 0\}$.
+Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with **scalar part** $\mathrm{Sc}(\tilde q) = q_0$ and **vector part** $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3$; the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and the quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural}$. The scalar subspace is written $\mathbb{R}_{\mathbb{H}} = \{\tilde q : \mathbf{q} = 0\}$ and the vector subspace $\operatorname{Im}\mathbb{H} = \{\tilde q : \tilde{q}^{\natural} = -\tilde q\} = \{\tilde q : \mathrm{Sc}(\tilde q) = 0\}$.
 
 ## Definition and Basis
 
@@ -18,22 +18,22 @@ Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2
 **Definition.** The **scalar subspace** is the fixed space of quaternion conjugation,
 
 $$
-\mathbb{R}_{\mathbb{H}} = \{\tilde q\in\mathbb{H} : \bar{\tilde q} = \tilde q\},
+\mathbb{R}_{\mathbb{H}} = \{\tilde q\in\mathbb{H} : \tilde{q}^{\natural} = \tilde q\},
 $$
 
-and the **vector subspace** is the fixed space of vector conjugation $-\bar{\tilde q} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$,
+and the **vector subspace** is the fixed space of vector conjugation $-\tilde{q}^{\natural} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$,
 
 $$
-\operatorname{Im}\mathbb{H} = \{\tilde q\in\mathbb{H} : -\bar{\tilde q} = \tilde q\}.
+\operatorname{Im}\mathbb{H} = \{\tilde q\in\mathbb{H} : -\tilde{q}^{\natural} = \tilde q\}.
 $$
 
 **Proposition.** The two subspaces are the eigenspaces of quaternion conjugation, of eigenvalues $+1$ and $-1$ respectively, and they are the images of the projections
 
 $$
-\tilde q\mapsto \mathrm{Sc}(\tilde q) = \tfrac12(\tilde q+\bar{\tilde q}), \qquad \tilde q\mapsto \mathbf{q} = \tfrac12(\tilde q-\bar{\tilde q}).
+\tilde q\mapsto \mathrm{Sc}(\tilde q) = \tfrac12(\tilde q+\tilde{q}^{\natural}), \qquad \tilde q\mapsto \mathbf{q} = \tfrac12(\tilde q-\tilde{q}^{\natural}).
 $$
 
-*Proof.* A quaternion is fixed by $\bar{\cdot}$ exactly when $\mathbf{q} = 0$ and fixed by the map $\tilde q\mapsto-\tilde q$ on the vector part exactly when $q_0 = 0$; the two projections are the standard projections onto the $\pm1$ eigenspaces of an involution, and the factor $\tfrac12$ is where the invertibility of $2$ enters.
+*Proof.* A quaternion is fixed by ${}^{\natural}$ exactly when $\mathbf{q} = 0$ and fixed by the map $\tilde q\mapsto-\tilde q$ on the vector part exactly when $q_0 = 0$; the two projections are the standard projections onto the $\pm1$ eigenspaces of an involution, and the factor $\tfrac12$ is where the invertibility of $2$ enters.
 
 ### The Condition in Coordinates
 
@@ -116,7 +116,7 @@ $$
 
 an orthogonal sum, and the two subspaces are orthogonal for the associated inner product.
 
-*Proof.* For $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ the conjugate is $q_0-\mathbf{q}$ and $\tilde q\bar{\tilde q} = q_0^2+\mathbf{q}\bar{\mathbf{q}} + \text{cross terms}$; the cross terms cancel because $q_0$ is central and $\bar{\mathbf{q}} = -\mathbf{q}$, leaving $q_0^2-\mathbf{q}^2 = q_0^2+N(\mathbf{q})$. Orthogonality is $\mathrm{Sc}(s\bar{\mathbf{q}}) = s\mathrm{Sc}(\mathbf{q}) = 0$.
+*Proof.* For $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ the conjugate is $q_0-\mathbf{q}$ and $\tilde q\tilde{q}^{\natural} = q_0^2+\mathbf{q}\bar{\mathbf{q}} + \text{cross terms}$; the cross terms cancel because $q_0$ is central and $\bar{\mathbf{q}} = -\mathbf{q}$, leaving $q_0^2-\mathbf{q}^2 = q_0^2+N(\mathbf{q})$. Orthogonality is $\mathrm{Sc}(s\bar{\mathbf{q}}) = s\mathrm{Sc}(\mathbf{q}) = 0$.
 
 ### Units and the Two Subspaces
 
@@ -142,7 +142,7 @@ together with the intersections $\mathbb{R}_{\mathbb{H}}\cap\operatorname{Im}\ma
 
 **Theorem.** The full six-subspace lattice of the biquaternion algebra has no counterpart in the quaternion algebra; the lattice grows to its biquaternion size exactly when the coefficient field is enlarged to $\mathbb{C}$, bringing a central imaginary unit and an indefinite norm, and then the three complex generators $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ appear beside the three that survive.
 
-*Proof.* The biquaternion subspaces are defined by the additional involutions $\tilde q\mapsto iq$, the Hermitian conjugation $\dagger$ and the anti-Hermitian conjugation $\flat$, each of which uses the central unit $i$ of complexification. In the real quaternion algebra there is no central imaginary unit, so those maps are not defined, and the only involutions available are the two of quaternion and vector conjugation of the algebra, which produce the scalar and vector subspaces and no more.
+*Proof.* The biquaternion subspaces are defined by the additional involutions $\tilde q\mapsto iq$, the Hermitian conjugation ${}^{*}$ and the anti-Hermitian conjugation $\flat$, each of which uses the central unit $i$ of complexification. In the real quaternion algebra there is no central imaginary unit, so those maps are not defined, and the only involutions available are the two of quaternion and vector conjugation of the algebra, which produce the scalar and vector subspaces and no more.
 
 The reason the full lattice needs an indefinite form is the same statement in another guise: the Hermitian decomposition of the biquaternion case separates the elements on which the complex norm is positive from those on which it is indefinite, and that separation is meaningful only when there are elements of negative norm. In $\mathbb{H}$ the quaternion norm is definite, every element has non-negative norm, and the Hermitian decomposition collapses to the single scalar–vector decomposition described here.
 
@@ -162,12 +162,12 @@ The distinguished subspace lattice of the quaternion algebra consists of these t
 | $F$ | Base field of characteristic not $2$ |
 | $e_0 = 1, e_1, e_2, e_3$ | Basis, $e_k^2 = -e_0$ |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion, scalar part $q_0$, vector part $\mathbf{q}$ |
-| $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, $-\bar{\tilde q} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion and vector conjugation |
-| $\mathbb{R}_{\mathbb{H}} = \{\tilde q : \bar{\tilde q} = \tilde q\}$ | Scalar subspace, the centre, basis $(e_0)$ |
-| $\operatorname{Im}\mathbb{H} = \{\tilde q : -\bar{\tilde q} = \tilde q\}$ | Vector subspace, basis $(e_1,e_2,e_3)$ |
-| $\mathrm{Sc}(\tilde q) = \tfrac12(\tilde q+\bar{\tilde q})$ | Scalar-part projection |
-| $\mathbf{q} = \tfrac12(\tilde q-\bar{\tilde q})$ | Vector-part projection |
-| $N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2+\lvert\mathbf{q}\rvert^2$ | Quaternion norm, the orthogonal sum of its restrictions |
+| $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, $-\tilde{q}^{\natural} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion and vector conjugation |
+| $\mathbb{R}_{\mathbb{H}} = \{\tilde q : \tilde{q}^{\natural} = \tilde q\}$ | Scalar subspace, the centre, basis $(e_0)$ |
+| $\operatorname{Im}\mathbb{H} = \{\tilde q : -\tilde{q}^{\natural} = \tilde q\}$ | Vector subspace, basis $(e_1,e_2,e_3)$ |
+| $\mathrm{Sc}(\tilde q) = \tfrac12(\tilde q+\tilde{q}^{\natural})$ | Scalar-part projection |
+| $\mathbf{q} = \tfrac12(\tilde q-\tilde{q}^{\natural})$ | Vector-part projection |
+| $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+\lvert\mathbf{q}\rvert^2$ | Quaternion norm, the orthogonal sum of its restrictions |
 | $\langle\mathbf{p},\mathbf{q}\rangle = \sum_k p_kq_k$ | Inner product on $\operatorname{Im}\mathbb{H}$ |
 | $\mathbf{p}\times\mathbf{q} = \tfrac12(\mathbf{p}\mathbf{q}-\mathbf{q}\mathbf{p})$ | Cross product on $\operatorname{Im}\mathbb{H}$ |
 | $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_\pm$ | The six biquaternion subspaces, absent here |

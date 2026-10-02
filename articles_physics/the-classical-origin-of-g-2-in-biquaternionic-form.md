@@ -184,7 +184,7 @@ $$
 \tilde{R}(\theta + 4\pi,\hat{\mathbf{n}}) = \tilde{R}(\theta,\hat{\mathbf{n}}).
 $$
 
-A material vector is rotated by conjugation, $\mathbf{x}\mapsto\tilde{R}\mathbf{x}\tilde{R}^\dagger$, and the sign of the rotor cancels, so a vector returns after $\theta = 2\pi$. An intrinsic state is rotated by left multiplication, $\tilde{\Psi}\mapsto\tilde{R}\tilde{\Psi}$, and the sign does not cancel, so the state returns only after $\theta = 4\pi$. The material vector therefore transforms with **weight one** under the rotation — it is single-valued on the sphere of directions — while the intrinsic state transforms with **weight one half**. The rotor group is the double cover $\mathbb{H}_{\mathbb{B}}^1 = SU(2)$ of the orientation group $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_0\} = SO(3)$, and the two-to-one map is exactly the statement that the vector weight is twice the spinor weight.
+A material vector is rotated by conjugation, $\mathbf{x}\mapsto\tilde{R}\mathbf{x}\tilde{R}^{*}$, and the sign of the rotor cancels, so a vector returns after $\theta = 2\pi$. An intrinsic state is rotated by left multiplication, $\tilde{\Psi}\mapsto\tilde{R}\tilde{\Psi}$, and the sign does not cancel, so the state returns only after $\theta = 4\pi$. The material vector therefore transforms with **weight one** under the rotation — it is single-valued on the sphere of directions — while the intrinsic state transforms with **weight one half**. The rotor group is the double cover $\mathbb{H}_{\mathbb{B}}^1 = SU(2)$ of the orientation group $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_0\} = SO(3)$, and the two-to-one map is exactly the statement that the vector weight is twice the spinor weight.
 
 ### The Weights of the Two Couplings
 

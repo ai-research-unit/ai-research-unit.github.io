@@ -14,7 +14,7 @@ The temptation this article exists to resist is the opposite of that conclusion:
 
 A candidate that traces to an undetermined parameter or an unverified claim is **not a signature**, and is labelled as such below; so is a candidate whose "prediction" is the standard result rewritten. The next section fixes what a signature would have to be and identifies the structural reason none is yet available; the sections after record the standing agreement, explain why it is not evidence for the framework's distinctive content, and examine the candidates individually.
 
-Throughout, the notation is inherited from the read-list articles: the biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and scalar imaginary $i$; the material sector is the anti-Hermitian subspace $\mathbb{M}_-$ and the informational sector the Hermitian subspace $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$; the biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$; the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+Throughout, the notation is inherited from the read-list articles: the biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and scalar imaginary $i$; the material sector is the anti-Hermitian subspace $\mathbb{M}_-$ and the informational sector the Hermitian subspace $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$; the biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$; the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
 ## What Would Count as a Signature
 
@@ -41,9 +41,9 @@ The following table collects the quantitative results the series has obtained an
 | Domain | Framework result | Standard result reproduced |
 |---|---|---|
 | Single qubit | Bloch sphere and Bloch ball; $\mathrm{Tr}(\tilde{\rho}\tilde{H})=h_0+\mathbf{r}\cdot\mathbf{h}$; sandwich update | States, observables, Born rule, projective measurement |
-| Relativistic point mechanics | $N(d\tilde{Q})=-c^2dt^2+d\mathbf{x}^2$; $\tilde{P}\bar{\tilde{P}}=-m^2c^2$; $\tilde{F}\bar{\tilde{P}}+\tilde{P}\bar{\tilde{F}}=0$ | Interval, mass shell, four-force orthogonality |
-| Maxwell field | $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$; Riemann–Silberstein field; invariants | Maxwell's equations in a medium |
-| Dirac field | $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L=m\tilde{\Psi}_R$; massless case $\tilde{\nabla}\tilde{\Psi}=0$ | Dirac equation, mass term |
+| Relativistic point mechanics | $N(d\tilde{Q})=-c^2dt^2+d\mathbf{x}^2$; $\tilde{P}\tilde{P}^{\natural}=-m^2c^2$; $\tilde{F}\tilde{P}^{\natural}+\tilde{P}\tilde{F}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
+| Maxwell field | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$; Riemann–Silberstein field; invariants | Maxwell's equations in a medium |
+| Dirac field | $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; massless case $\tilde{\nabla}\tilde{\Psi}=0$ | Dirac equation, mass term |
 | Electron gyromagnetic ratio | $g=2$ at tree level; anomaly **absent** | Dirac's tree-level value; the anomaly is outside the framework |
 | Hydrogen, relativistic | Exact Dirac–Coulomb spectrum; fine structure | Standard spectrum, quoted not derived |
 | Casimir effect | $-\pi^2\hbar c/(240a^4)$, attractive | Standard Casimir force, reproduced |
@@ -103,7 +103,7 @@ Each candidate below is examined under the three questions of the Introduction a
 
 **The candidate.** The framework has two sectors, and the two sectors carry quadratic forms of opposite signature. Perhaps there are two null structures, hence a polarization-dependent propagation speed — birefringence — or a second, "informational" light cone.
 
-**The framework-specific quantity.** The biquaternion norm $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$. It is a **single** quadratic form on $\mathbb{B}$, and its zero set is a single cone. Its restrictions to $\mathbb{M}_-$ and $\mathbb{M}_+$ are the mirror quadratic forms $-q_0^2+\mathbf{q}^2$ and $q_0^2-\mathbf{q}^2$; these are restrictions of the same form to complementary subspaces, not two independent propagation structures. A field propagating in the framework obeys one d'Alembertian $\Box=\partial_{ict}^2+\Delta$, built from one $c$. There is no second cone and no splitting of polarizations.
+**The framework-specific quantity.** The biquaternion norm $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$. It is a **single** quadratic form on $\mathbb{B}$, and its zero set is a single cone. Its restrictions to $\mathbb{M}_-$ and $\mathbb{M}_+$ are the mirror quadratic forms $-q_0^2+\mathbf{q}^2$ and $q_0^2-\mathbf{q}^2$; these are restrictions of the same form to complementary subspaces, not two independent propagation structures. A field propagating in the framework obeys one d'Alembertian $\Box=\partial_{ict}^2+\Delta$, built from one $c$. There is no second cone and no splitting of polarizations.
 
 **Derived or posited.** The single cone is **derived**: it is the zero-divisor set of the algebra, a theorem of the corpus. The absence of birefringence is therefore a consequence of the algebra, not an unverified claim.
 
@@ -127,7 +127,7 @@ Each candidate below is examined under the three questions of the Introduction a
 
 **The candidate.** The framework's central interpretive claim is that $\mathbb{M}_+$ is a physical sector. A coupling between the sectors beyond the standard Lorentz action would be new physics: a fifth force, a new field, a mass mixing.
 
-**The framework-specific quantity.** Unspecified. The only operations involving both sectors are multiplication by $i$, which exchanges them, and the rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, the standard Lorentz action. The companion article on $\mathbb{M}_+$ states that no dynamics for $\mathbb{M}_+$-valued fields is specified and that there is no coupling beyond the Lorentz one; the introduction lists a coupling between the sectors as an open question.
+**The framework-specific quantity.** Unspecified. The only operations involving both sectors are multiplication by $i$, which exchanges them, and the rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, the standard Lorentz action. The companion article on $\mathbb{M}_+$ states that no dynamics for $\mathbb{M}_+$-valued fields is specified and that there is no coupling beyond the Lorentz one; the introduction lists a coupling between the sectors as an open question.
 
 **Derived or posited.** Posited as a question. There is no field equation, no action, and no coupling constant.
 
@@ -254,10 +254,10 @@ The main result is therefore negative, and meant to be: the framework currently 
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector) |
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector) |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm (single quadratic form on $\mathbb{B}$) |
+| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm (single quadratic form on $\mathbb{B}$) |
 | $c=1/\sqrt{\epsilon\mu}$ | Local speed of light in the medium |
 | $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Vacuum speed of light |
-| $\tilde{\nabla}$, $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}$ | Biquaternionic gradient, d'Alembertian |
+| $\tilde{\nabla}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, d'Alembertian |
 | $\tilde\Pi_\pm=\tfrac12(e_0\pm i\hat{\mu})$ | Idempotent (pure state) |
 | $\tilde{H}=h_0e_0+i\mathbf{h}$ | Hermitian element (observable) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |

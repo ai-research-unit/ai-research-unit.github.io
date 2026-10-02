@@ -9,7 +9,7 @@ The article uses *Quaternion Algebra* and *Quaternion Norm and Invertibility* fo
 
 The corpus's default base is a commutative ring with identity; the spectrum requires a division ring and a topology, so scalars lie in $\mathbb{H}$ or $\mathbb{C}$ and everything below is over $\mathbb{R}$.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = q_0+q_1e_1+q_2e_2+q_3e_3$, with conjugate $\bar{\tilde q}$, scalar part $\mathrm{Sc}\tilde q = q_0$, vector part $\mathrm{Vect}\tilde q = \mathbf{q}$, norm $N(\tilde q) = \tilde q\bar{\tilde q}$ and modulus $|\tilde q| = \sqrt{N(\tilde q)}$. The unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, and $M_n(\mathbb{H})$ acts on column vectors in $\mathbb{H}^n$.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = q_0+q_1e_1+q_2e_2+q_3e_3$, with conjugate $\tilde{q}^{\natural}$, scalar part $\mathrm{Sc}\tilde q = q_0$, vector part $\mathrm{Vect}\tilde q = \mathbf{q}$, norm $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ and modulus $|\tilde q| = \sqrt{N(\tilde q)}$. The unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, and $M_n(\mathbb{H})$ acts on column vectors in $\mathbb{H}^n$.
 
 ## The Spectrum of a Quaternion
 
@@ -82,7 +82,7 @@ which is a finite union of at most $n$ spheres or points.
 **Definition.** The **trace functional** and **determinant functional** — more precisely the **reduced trace** and **reduced norm** — of a quaternion are
 
 $$
-T(\tilde q) = 2\mathrm{Sc}\tilde q = 2q_0, \qquad D(\tilde q) = N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2+|\mathbf{q}|^2 .
+T(\tilde q) = 2\mathrm{Sc}\tilde q = 2q_0, \qquad D(\tilde q) = N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+|\mathbf{q}|^2 .
 $$
 
 **Theorem (Cayley–Hamilton for a quaternion).** Every quaternion satisfies
@@ -205,7 +205,7 @@ The definition rests on the identity $s^2-2\operatorname{Re}(s)s+|s|^2 = 0$, whi
 
 *Proof.* If $Mv = vs$ then $(M^2-2\operatorname{Re}(s)M+|s|^2I)v = v(s^2-2\operatorname{Re}(s)s+|s|^2) = 0$, so $\sigma_R(M)\subseteq\sigma_S(M)$; the reverse inclusion and the identification with the classes are standard (Rodman 2014). The single-quaternion statement is the sphere of eigenvalues computed above.
 
-**Definition.** $M$ is **normal** if $MM^{*} = M^{*}M$, where ${}^{*}$ is the entrywise quaternion conjugation combined with transposition; **Hermitian** if $M^{*} = M$, and **unitary** if $M^{*}M = I$.
+**Definition.** $M$ is **normal** if $MM^{*} = M^{*}M$, where $\bar{\cdot}$ is the entrywise quaternion conjugation combined with transposition; **Hermitian** if $M^{*} = M$, and **unitary** if $M^{*}M = I$.
 
 **Theorem (quaternionic spectral theorem).** If $M\in M_n(\mathbb{H})$ is normal then there is a unitary $U$ and complex numbers $\lambda_1,\dots,\lambda_n$ in a fixed slice with
 
@@ -256,7 +256,7 @@ The S-spectrum $\sigma_S(M) = \{s : M^2-2\operatorname{Re}(s)M+|s|^2I \text{ sin
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra, a division algebra; scalars non-central |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion; $q_0 = \mathrm{Sc}\tilde q$, $\mathbf{q} = \mathrm{Vect}\tilde q$ |
-| $N(\tilde q) = \tilde q\bar{\tilde q}$, $\lvert \tilde q\rvert = \sqrt{N(\tilde q)}$ | Quaternion norm and modulus |
+| $N(\tilde q) = \tilde q\tilde{q}^{\natural}$, $\lvert \tilde q\rvert = \sqrt{N(\tilde q)}$ | Quaternion norm and modulus |
 | $\sigma_{\mathbb{H}}(\tilde q) = \{\tilde q\}$ | Algebra spectrum of a single quaternion |
 | $\sigma_L(M)$, $\sigma_R(M)$ | Left and right spectra |
 | $[\lambda] = \{v^{-1}\lambda v : v\neq0\}$ | Similarity class; a point or a two-sphere |

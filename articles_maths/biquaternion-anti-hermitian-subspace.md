@@ -13,17 +13,17 @@ The article parallels *Biquaternion Hermitian Subspace*, to which it is tied by 
 **Definition.** The **anti-Hermitian subspace** is
 
 $$
-\mathbb{M}_- = \left\{ \tilde{Q} \in \mathbb{B} : \tilde{Q}^{\flat} = \tilde{Q} \right\} = \left\{ \tilde{Q} \in \mathbb{B} : \tilde{Q}^{\dagger} = -\tilde{Q} \right\} ,
+\mathbb{M}_- = \left\{ \tilde{Q} \in \mathbb{B} : \tilde{Q}^{\flat} = \tilde{Q} \right\} = \left\{ \tilde{Q} \in \mathbb{B} : \tilde{Q}^{*} = -\tilde{Q} \right\} ,
 $$
 
-where $\flat = -\dagger$ is the reversal, $\tilde{Q}^{\flat} = -Q_0^{*}e_0 + Q_1^{*}e_1 + Q_2^{*}e_2 + Q_3^{*}e_3$. Both descriptions define the same subspace because $\flat$ and $\dagger$ have the same eigenspaces with the signs exchanged.
+where $\flat = -{}^{*}$ is the reversal, $\tilde{Q}^{\flat} = -\bar{Q_0}e_0 + \bar{Q_1}e_1 + \bar{Q_2}e_2 + \bar{Q_3}e_3$. Both descriptions define the same subspace because $\flat$ and ${}^{*}$ have the same eigenspaces with the signs exchanged.
 
 ### The Condition in Coordinates
 
-Comparing $\tilde{Q}^{\dagger} = -\tilde{Q}$ coefficient by coefficient:
+Comparing $\tilde{Q}^{*} = -\tilde{Q}$ coefficient by coefficient:
 
-- $-Q_0^{*} = Q_0$, so $Q_0 = iq'_0$ is purely imaginary;
-- $Q_k^{*} = Q_k$, so each vector coefficient $Q_k = q_k$ is real.
+- $-\bar{Q_0} = Q_0$, so $Q_0 = iq'_0$ is purely imaginary;
+- $\bar{Q_k} = Q_k$, so each vector coefficient $Q_k = q_k$ is real.
 
 The subspace is therefore
 
@@ -69,9 +69,9 @@ The two conditions are independent: $e_1e_2 = e_3$ satisfies both and lies in th
 
 **Theorem.** For $\tilde{Q}, \tilde{R} \in \mathbb{M}_-$ one has $\tilde{Q}\tilde{R} + \tilde{R}\tilde{Q} \in \mathbb{M}_+$, and $\tilde{Q}\tilde{R} - \tilde{R}\tilde{Q} \in \mathbb{M}_-$.
 
-**Proof.** $\dagger$ reverses products and equals $-\mathrm{id}$ on $\mathbb{M}_-$, so $(\tilde{Q}\tilde{R})^{\dagger} = \tilde{R}^{\dagger}\tilde{Q}^{\dagger} = \tilde{Q}\tilde{R}$; hence $\tilde{Q}\tilde{R}$ is Hermitian, and the same holds for $\tilde{R}\tilde{Q}$, giving the first statement. For the second, $(\tilde{Q}\tilde{R}-\tilde{R}\tilde{Q})^{\dagger} = \tilde{Q}\tilde{R}-\tilde{R}\tilde{Q} = -(\tilde{Q}\tilde{R}-\tilde{R}\tilde{Q})$, using the anti-commutation just proved.
+**Proof.** ${}^{*}$ reverses products and equals $-\mathrm{id}$ on $\mathbb{M}_-$, so $(\tilde{Q}\tilde{R})^{\dagger} = \tilde{R}^{*}\tilde{Q}^{*} = \tilde{Q}\tilde{R}$; hence $\tilde{Q}\tilde{R}$ is Hermitian, and the same holds for $\tilde{R}\tilde{Q}$, giving the first statement. For the second, $(\tilde{Q}\tilde{R}-\tilde{R}\tilde{Q})^{\dagger} = \tilde{Q}\tilde{R}-\tilde{R}\tilde{Q} = -(\tilde{Q}\tilde{R}-\tilde{R}\tilde{Q})$, using the anti-commutation just proved.
 
-The theorem is the mirror image of the corresponding statement for $\mathbb{M}_+$: there the commutator falls into $\mathbb{M}_-$ and the symmetrized product stays, here the roles are exchanged. Both are instances of the same identity, $\dagger$ reversing products and acting on each subspace by a sign.
+The theorem is the mirror image of the corresponding statement for $\mathbb{M}_+$: there the commutator falls into $\mathbb{M}_-$ and the symmetrized product stays, here the roles are exchanged. Both are instances of the same identity, ${}^{*}$ reversing products and acting on each subspace by a sign.
 
 ### It Is a Lie Subalgebra
 
@@ -155,12 +155,12 @@ In the basis $ie_0, e_1, e_2, e_3$:
 
 | involution | matrix | effect |
 |---|---|---|
-| $\bar{\cdot}$ | $\operatorname{diag}(1,-1,-1,-1)$ | negates the real vector part |
-| ${}^{*}$ | $\operatorname{diag}(-1,1,1,1)$ | negates the central imaginary line |
-| ${}^{\dagger}$ | $-\mathrm{id}$ | minus the identity |
+| ${}^{\natural}$ | $\operatorname{diag}(1,-1,-1,-1)$ | negates the real vector part |
+| $\bar{\cdot}$ | $\operatorname{diag}(-1,1,1,1)$ | negates the central imaginary line |
+| ${}^{*}$ | $-\mathrm{id}$ | minus the identity |
 | $\flat$ | $+\mathrm{id}$ | the identity, by definition of the subspace |
 
-The subspace is invariant under all four. Reversal fixes it pointwise, which is its defining property; Hermitian conjugation acts as its negative; complex conjugation negates the central imaginary line and fixes the real vectors; and quaternion conjugation does the opposite, negating the real vectors and fixing the central line. The rows are consistent with $\dagger = {}^{*}\circ\bar{\cdot}$ and $\flat = -\dagger$.
+The subspace is invariant under all four. Reversal fixes it pointwise, which is its defining property; Hermitian conjugation acts as its negative; complex conjugation negates the central imaginary line and fixes the real vectors; and quaternion conjugation does the opposite, negating the real vectors and fixing the central line. The rows are consistent with ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and $\flat = -{}^{*}$.
 
 ## Relations to the Other Five Subspaces
 
@@ -206,7 +206,7 @@ and $\tilde\Pi$, an idempotent of $\mathbb{M}_+$, is Hermitian. The cone is of r
 
 ### The Lie Algebra Structure
 
-The subspace is one of the two Lie subalgebras among the six, as in §*It Is a Lie Subalgebra*: for anti-Hermitian $\tilde{P}, \tilde{Q}$ one has $\tilde{P}^\dagger = -\tilde{P}$ and $\tilde{Q}^\dagger = -\tilde{Q}$, whence $[\tilde{P},\tilde{Q}]^\dagger = -[\tilde{P},\tilde{Q}]$ and
+The subspace is one of the two Lie subalgebras among the six, as in §*It Is a Lie Subalgebra*: for anti-Hermitian $\tilde{P}, \tilde{Q}$ one has $\tilde{P}^{*} = -\tilde{P}$ and $\tilde{Q}^{*} = -\tilde{Q}$, whence $[\tilde{P},\tilde{Q}]^\dagger = -[\tilde{P},\tilde{Q}]$ and
 
 $$
 [\mathbb{M}_-,\mathbb{M}_-] \subseteq \mathbb{M}_- .
@@ -227,7 +227,7 @@ $$
 a Hermitian element with negative scalar part, and not a multiple of $\tilde{Q}$: the element is not an idempotent and no multiple of it is one, in contrast with the Hermitian case. Take instead $\tilde{Q} = ie_0 + e_1 + e_2$: then $N(\tilde{Q}) = 2 - 1 = 1$, a unit with
 
 $$
-\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}}}{N(\tilde{Q})} = ie_0 - e_1 - e_2 ,
+\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{N(\tilde{Q})} = ie_0 - e_1 - e_2 ,
 $$
 
 again in the subspace, since quaternion conjugation preserves it and the biquaternion norm is real.
@@ -268,10 +268,10 @@ The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed space of reversal, equiv
 | $\mathbf{q} = (q_1,q_2,q_3)$ | the real vector part |
 | $N(\tilde{Q})$ | the biquaternion norm, $|\mathbf{q}|^2-(q'_0)^2$ on the subspace |
 | $B$ | the symmetric bilinear form polarizing $N$ |
-| $\flat = -\dagger$ | the reversal |
+| $\flat = -{}^{*}$ | the reversal |
 | $\tilde\Pi$ | a Hermitian idempotent of $\mathbb{M}_+$; its $i$-image $i\tilde\Pi$ is a zero divisor of $\mathbb{M}_-$ |
 | $\mathrm{K} = \operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ | the rotation subalgebra, the derived subalgebra and intersection with $\mathbb{H}_{\mathbb{B}}$ |
-| $\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$ | the four involutions |
+| ${}^{\natural}, \bar{\cdot}, {}^{*}, \flat$ | the four involutions |
 
 ## Further Reading
 

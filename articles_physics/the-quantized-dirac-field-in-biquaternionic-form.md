@@ -13,7 +13,7 @@ This article takes up that question. It does not repeat the quantization, which 
 
 The division between what is standard and what belongs to the algebra is kept explicit throughout, as in the parents.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and scalar imaginary $i$, $i^2=-1$, central. The material and informational sectors are $\mathbb{M}_-$ (anti-Hermitian) and $\mathbb{M}_+$ (Hermitian), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$, $\mathbb{M}_-=i\,\mathbb{M}_+$, and the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed set of complex conjugation. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_k\partial_k$, with $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\bar{\tilde{\nabla}}\tilde{\nabla}$. The mass term is the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L=m\tilde{\Psi}_R$; the anti-Hermitian conjugate $\tilde{\Psi}^\flat=-\tilde{\Psi}^\dagger$ is the algebra's real structure and **not** the mass. On the spinor module the equation is $(i\gamma^\mu\partial_\mu-m)\psi=0$, with $\bar\psi=\psi^\dagger\gamma^0$, the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$ through $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, and the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ of the $ict$ gradient. We work in natural units $\hbar=c=1$ except in the mass-shell relation and the charge. The trace pairing is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and scalar imaginary $i$, $i^2=-1$, central. The material and informational sectors are $\mathbb{M}_-$ (anti-Hermitian) and $\mathbb{M}_+$ (Hermitian), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$, $\mathbb{M}_-=i\,\mathbb{M}_+$, and the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed set of complex conjugation. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_k\partial_k$, with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$. The mass term is the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; the anti-Hermitian conjugate $\tilde{\Psi}^\flat=-\tilde{\Psi}^{*}$ is the algebra's real structure and **not** the mass. On the spinor module the equation is $(i\gamma^\mu\partial_\mu-m)\psi=0$, with $\bar\psi=\psi^\dagger\gamma^0$, the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$ through $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, and the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ of the $ict$ gradient. We work in natural units $\hbar=c=1$ except in the mass-shell relation and the charge. The trace pairing is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
 ## The Operator-Valued Field
 
@@ -59,7 +59,7 @@ and it is $\hat{\psi}^\dagger$ that belongs to the module written in the dual; t
 
 ### The Conjugations of the Field
 
-The algebra carries the quaternion conjugate $\bar{\cdot}$, the complex conjugate ${}^{*}$, the Hermitian conjugate ${}^{\dagger}=\bar{\cdot}^{\,*}$, and the anti-Hermitian conjugate $\flat=-\dagger$. They lift to the field, and the lifting has two features worth recording.
+The algebra carries the quaternion conjugate ${}^{\natural}$, the complex conjugate $\bar{\cdot}$, the Hermitian conjugate ${}^{*}=({}^{\natural})^{\,*}$, and the anti-Hermitian conjugate $\flat=-{}^{*}$. They lift to the field, and the lifting has two features worth recording.
 
 First, each is an antilinear or anti-automorphic operation, so it reverses products. If $\hat A$ and $\hat B$ are two operator-valued biquaternions, then
 
@@ -78,7 +78,7 @@ $$
 \qquad
 \hat{\psi}^\dagger\ \text{contains}\ (\hat a^\dagger,\hat b),
 \qquad
-(\hat\psi^{*})\ \text{contains}\ (\hat a^{*}\!,\hat b^{\dagger*})
+(\hat\psi^{*})\ \text{contains}\ (\hat a,\hat b^{\dagger})
 =\text{the same modes, rephased}.
 $$
 
@@ -91,7 +91,7 @@ Because the mode expansion is a superposition of classical solutions with operat
 $$
 \tilde{\nabla}\hat{\tilde{\Psi}}_R=m\,\hat{\tilde{\Psi}}_L,
 \qquad
-\bar{\tilde{\nabla}}\hat{\tilde{\Psi}}_L=m\,\hat{\tilde{\Psi}}_R,
+\tilde{\nabla}^{\natural}\hat{\tilde{\Psi}}_L=m\,\hat{\tilde{\Psi}}_R,
 \qquad\text{equivalently on the module}\qquad
 (i\gamma^\mu\partial_\mu-m)\hat{\psi}=0 .
 $$
@@ -197,7 +197,7 @@ $$
 \hat{\tilde{P}}=i\hat H\,e_0+\hat P_k\,e_k\in\mathcal{A}\otimes\mathbb{M}_- ,
 $$
 
-whose square is the operator mass shell $\hat{\tilde P}\bar{\hat{\tilde P}}=-\hat P^\mu\hat P_\mu e_0$, the operator counterpart of the classical condition $\tilde k\bar{\tilde k}=-m^2$. The charge is different in kind: $\hat Q$ is a Hermitian scalar, hence central,
+whose square is the operator mass shell $\hat{\tilde P}\bar{\hat{\tilde P}}=-\hat P^\mu\hat P_\mu e_0$, the operator counterpart of the classical condition $\tilde k\tilde k^{\natural}=-m^2$. The charge is different in kind: $\hat Q$ is a Hermitian scalar, hence central,
 
 $$
 \hat Q=\hat Q^{*}=\hat Q^\dagger\in\mathcal{A}\otimes\mathbb{C}_{\mathbb{B}},
@@ -230,7 +230,7 @@ $$
 
 with $m=0.7$, $\mathbf p_1=(0.3,-0.9,1.1)$, $\mathbf p_2=(-0.5,0.2,0.45)$, and complex coefficients $c_1,c_2,d_1$, the four-divergence $\partial_\mu j^\mu$ of the bilinear was evaluated by central differences at a generic spacetime point. It vanishes to $1.1\times10^{-10}$ at step $h=10^{-5}$, which is the discretization error of the difference, and the same check on the full superposition of both frequency branches of both momenta gives $1.8\times10^{-10}$. A single plane wave would have tested only the mass-shell condition; the superposition tests the cancellation between the branches, which is the content of conservation.
 
-In biquaternion terms, $\hat J^\mu$ is the spinor-module representative of an operator-valued material-sector element $i\hat{\tilde\Psi}\hat{\tilde\Psi}^\dagger$ only in a restricted sense: the minimal-coupling companion shows that the naive algebra-valued bilinear $i\tilde\Psi\tilde\Psi^\dagger$ is gauge invariant and in $\mathbb{M}_-$ but is *not* conserved, and that the physical current needs the Clifford-odd $\gamma^0$. The quantized current inherits that: it is a module-level object, and its conservation is the module-level statement.
+In biquaternion terms, $\hat J^\mu$ is the spinor-module representative of an operator-valued material-sector element $i\hat{\tilde\Psi}\hat{\tilde\Psi}^{*}$ only in a restricted sense: the minimal-coupling companion shows that the naive algebra-valued bilinear $i\tilde\Psi\tilde\Psi^{*}$ is gauge invariant and in $\mathbb{M}_-$ but is *not* conserved, and that the physical current needs the Clifford-odd $\gamma^0$. The quantized current inherits that: it is a module-level object, and its conservation is the module-level statement.
 
 ### Spin
 
@@ -276,11 +276,11 @@ $$
 
 a modified Bessel function of the second kind, nonzero for every $\boldsymbol\Delta\ne0$. The quantized biquaternion Dirac field, like any spin-$\tfrac12$ field, therefore has a local anticommutator and a nonlocal commutator, and it is the anticommutator that is the $c$-number.
 
-**The biquaternion form.** Writing the wave biquaternion $\tilde k=iE\,e_0+\mathbf p$, so that $\tilde k\bar{\tilde k}=-p^2$, the momentum-space two-point function of the propagator companion is
+**The biquaternion form.** Writing the wave biquaternion $\tilde k=iE\,e_0+\mathbf p$, so that $\tilde k\tilde k^{\natural}=-p^2$, the momentum-space two-point function of the propagator companion is
 
 $$
 S_F(p)=\frac{i(\not p+m)}{p^2-m^2+i\epsilon}
-=-\frac{i(\not p+m)}{\tilde k\bar{\tilde k}+m^2-i\epsilon}.
+=-\frac{i(\not p+m)}{\tilde k\tilde k^{\natural}+m^2-i\epsilon}.
 $$
 
 The denominator is the deformed mass-shell scalar, and the deformation $-i\epsilon\,e_0$ lies in the center and along the $ict$ axis of the material sector. The operator field's two-point function is thus a module-valued distribution whose biquaternion form is the mass-shell condition with the Feynman shift; the companion article's finding — that the algebra supplies the axis of the deformation but not its orientation — is inherited unchanged, and this article adds nothing to it.
@@ -322,7 +322,7 @@ so the observables are the even bilinears, the operator algebra is $\mathbb{Z}/2
 
 The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $\hat H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}(\hat a_r^\dagger\hat a_r+\hat b_r^\dagger\hat b_r)$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $i\hat H e_0+\hat P_ke_k\in\mathcal{A}\otimes\mathbb{M}_-$ and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and both frequency branches to $1.1\times10^{-10}$.
 
-The covariant anticommutator is a $c$-number and vanishes for spacelike separation, $\{\hat\psi(x),\bar{\hat\psi}(y)\}=(i\not\partial_x+m)\Delta_{\mathrm{A}}(x-y)$; the commutator is not and does not. The momentum-space two-point function is the propagator companion's $S_F(p)=-i(\not p+m)/(\tilde k\bar{\tilde k}+m^2-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
+The covariant anticommutator is a $c$-number and vanishes for spacelike separation, $\{\hat\psi(x),\bar{\hat\psi}(y)\}=(i\not\partial_x+m)\Delta_{\mathrm{A}}(x-y)$; the commutator is not and does not. The momentum-space two-point function is the propagator companion's $S_F(p)=-i(\not p+m)/(\tilde k\tilde k^{\natural}+m^2-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
 
 ## Summary of Notation
 
@@ -333,9 +333,9 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; center |
-| $\tilde{Q}^\flat=-\tilde{Q}^\dagger$ | Anti-Hermitian conjugate; the algebra's real structure, not the mass |
-| $\tilde{\nabla}=e_0\partial_{ict}+e_k\partial_k$, $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}$ | Biquaternionic gradient and d'Alembertian |
-| $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L=m\tilde{\Psi}_R$ | Massive biquaternion Dirac equation (linear chiral pair) |
+| $\tilde{Q}^\flat=-\tilde{Q}^{*}$ | Anti-Hermitian conjugate; the algebra's real structure, not the mass |
+| $\tilde{\nabla}=e_0\partial_{ict}+e_k\partial_k$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and d'Alembertian |
+| $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ | Massive biquaternion Dirac equation (linear chiral pair) |
 | $\hat{\tilde{\Psi}}$ | Operator-valued biquaternion field ($\mathcal{A}\otimes\mathbb{B}$ transcription) |
 | $\hat{\psi}$, $\bar{\hat\psi}=\hat\psi^\dagger\gamma^0$ | Module-valued quantized field and its adjoint |
 | $S=\mathbb{C}^2$ | Spinor module, the unique simple left $\mathbb{B}$-module |
@@ -352,8 +352,8 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\{\hat\psi(x),\bar{\hat\psi}(y)\}=(i\not\partial_x+m)\Delta_{\mathrm{A}}(x-y)$ | Covariant anticommutator ($c$-number) |
 | $G_{\mathrm{S}}(x-y)$ | Symmetric ($c$-number part of the commutator's vacuum expectation) |
 | $F(\boldsymbol\Delta)=\frac{m}{2\pi^2|\boldsymbol\Delta|}K_1(m|\boldsymbol\Delta|)$ | Equal-time commutator kernel, nonzero at every spacelike separation |
-| $S_F(p)=-\frac{i(\not p+m)}{\tilde k\bar{\tilde k}+m^2-i\epsilon}$ | Feynman propagator amplitude |
-| $\tilde k=iE\,e_0+\mathbf p$, $\tilde k\bar{\tilde k}=-p^2$ | Wave biquaternion and mass shell |
+| $S_F(p)=-\frac{i(\not p+m)}{\tilde k\tilde k^{\natural}+m^2-i\epsilon}$ | Feynman propagator amplitude |
+| $\tilde k=iE\,e_0+\mathbf p$, $\tilde k\tilde k^{\natural}=-p^2$ | Wave biquaternion and mass shell |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing |
 
 ## Further Reading

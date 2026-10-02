@@ -7,23 +7,23 @@ The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ carries four linear inv
 
 The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article, the split complex algebra $\mathbb{D}$ from the article on split complex algebra, and the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra. The two idempotents $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ are assumed known.
 
-Throughout, elements are written $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{D}$, and the conjugations are $\bar{\cdot}$ (quaternion), ${}^{*}$ (split complex), ${}^{\dagger} = {}^{*}\circ\bar{\cdot}$ (Hermitian) and ${}^{\flat} = -{}^{\dagger}$ (anti-Hermitian). The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$.
+Throughout, elements are written $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{D}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$.
 
 ## Definition and Basis
 
 **Definition.** The **split complex subspace** is the fixed space of quaternion conjugation,
 
 $$
-\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \left\{ \tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \bar{\tilde{Q}} = \tilde{Q} \right\},
+\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \left\{ \tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \tilde{Q}^{\natural} = \tilde{Q} \right\},
 $$
 
-where quaternion conjugation is $\bar{\tilde{Q}} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3$.
+where quaternion conjugation is $\tilde{Q}^{\natural} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3$.
 
-Since $\bar{\cdot}$ is an involution, it has eigenvalues $\pm 1$ and $\mathbb{H}_{\mathbb{D}}$ is the direct sum of its fixed space and its anti-fixed space. The anti-fixed space is the **vector subspace** $\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$, the set of elements with vanishing split scalar part, of real dimension $6$; it has no dedicated article in this series, and is mentioned only where a relation requires it.
+Since ${}^{\natural}$ is an involution, it has eigenvalues $\pm 1$ and $\mathbb{H}_{\mathbb{D}}$ is the direct sum of its fixed space and its anti-fixed space. The anti-fixed space is the **vector subspace** $\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$, the set of elements with vanishing split scalar part, of real dimension $6$; it has no dedicated article in this series, and is mentioned only where a relation requires it.
 
 ### The Condition in Coordinates
 
-Comparing the two sides of $\bar{\tilde{Q}} = \tilde{Q}$ coefficient by coefficient: the coefficient of $e_0$ gives $Q_0 = Q_0$, no condition; the coefficient of $e_k$ gives $-Q_k = Q_k$, that is $Q_k = 0$, for $k = 1, 2, 3$. The subspace is therefore the set of elements with **vanishing vector part**,
+Comparing the two sides of $\tilde{Q}^{\natural} = \tilde{Q}$ coefficient by coefficient: the coefficient of $e_0$ gives $Q_0 = Q_0$, no condition; the coefficient of $e_k$ gives $-Q_k = Q_k$, that is $Q_k = 0$, for $k = 1, 2, 3$. The subspace is therefore the set of elements with **vanishing vector part**,
 
 $$
 \tilde{Q} = Q_0 e_0, \qquad Q_0 \in \mathbb{D}.
@@ -47,7 +47,7 @@ $$
 \mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \left\{ \tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \tilde{Q}\tilde{R} = \tilde{R}\tilde{Q} \ \text{for every} \ \tilde{R} \in \mathbb{H}_{\mathbb{D}} \right\}.
 $$
 
-**Proof.** An element commutes with every other element if and only if it commutes with the basis elements $e_1, e_2, e_3$, and $Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ commutes with all three precisely when $Q_1 = Q_2 = Q_3 = 0$, because $Q_k e_k$ anticommutes with the other quaternion units. The central elements are then the $\mathbb{D}$-multiples of $e_0$, which is the fixed space of $\bar{\cdot}$.
+**Proof.** An element commutes with every other element if and only if it commutes with the basis elements $e_1, e_2, e_3$, and $Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ commutes with all three precisely when $Q_1 = Q_2 = Q_3 = 0$, because $Q_k e_k$ anticommutes with the other quaternion units. The central elements are then the $\mathbb{D}$-multiples of $e_0$, which is the fixed space of ${}^{\natural}$.
 
 The subspace therefore has two descriptions: it is the fixed space of quaternion conjugation, and it is the centre of the algebra. Its elements are the **central elements**, written $z e_0$ with $z \in \mathbb{D}$.
 
@@ -83,7 +83,7 @@ $$
 N(\tilde{Q}) = Q_0^2, \qquad \tilde{Q} = Q_0 e_0.
 $$
 
-**Proof.** $\bar{\tilde{Q}} = \tilde{Q}$ on the subspace, so $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \tilde{Q}^2 = Q_0^2 e_0$, read as the split complex scalar $Q_0^2$.
+**Proof.** $\tilde{Q}^{\natural} = \tilde{Q}$ on the subspace, so $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \tilde{Q}^2 = Q_0^2 e_0$, read as the split complex scalar $Q_0^2$.
 
 Two features are worth isolating. First, $N$ takes **split complex** values on the subspace: writing $Q_0 = q_0 + j q'_0$, one has $Q_0^2 = (q_0^2 + q'^2_0) + 2 j q_0 q'_0$, real on the lines $q'_0 = 0$ and $q_0 = 0$ separately but not in general. Second, the real restriction in the basis $e_0, j$ has the matrix $\operatorname{diag}(1, 1)$ on the real part and $2 q_0 q'_0$ on the split-imaginary part, so the associated quadratic form is **not** definite: this is the form $N$ restricted to the two-dimensional centre, and its isotropic lines are the light lines $Q_0 = a \tilde\Pi_\pm$.
 
@@ -95,7 +95,7 @@ Two features are worth isolating. First, $N$ takes **split complex** values on t
 2. $N(\tilde{Q}) = Q_0^2$ is a unit of $\mathbb{D}$;
 3. $Q_0$ is a unit of $\mathbb{D}$, that is $Q_0 = q_0 + j q'_0$ with $q_0^2 \neq q'^2_0$.
 
-The inverse is $\tilde{Q}^{-1} = Q_0^{-1} e_0 = \dfrac{Q_0^*}{Q_0 Q_0^*} e_0 = \dfrac{q_0 - j q'_0}{q_0^2 - q'^2_0} e_0$.
+The inverse is $\tilde{Q}^{-1} = Q_0^{-1} e_0 = \dfrac{\bar{Q_0}}{Q_0 \bar{Q_0}} e_0 = \dfrac{q_0 - j q'_0}{q_0^2 - q'^2_0} e_0$.
 
 **Proof.** $N(Q_0 e_0) = Q_0^2$ is a unit of $\mathbb{D}$ exactly when $Q_0$ is, since $\mathbb{D}$ is commutative; a split complex number is a unit precisely when its real form norm $q_0^2 - q'^2_0$ is nonzero. The inverse formula is the standard inverse in $\mathbb{D}$.
 
@@ -129,12 +129,12 @@ Each of the four involutions preserves the condition $Q_1 = Q_2 = Q_3 = 0$, so t
 
 | involution | $\tilde{Q} = Q_0 e_0$ | matrix on $e_0, j$ |
 |---|---|---|
-| $\bar{\cdot}$ | $Q_0 e_0$ | $\operatorname{diag}(1, 1)$ |
-| ${}^{*}$ | $Q_0^{*} e_0$ | $\operatorname{diag}(1, -1)$ |
-| ${}^{\dagger}$ | $Q_0^{*} e_0$ | $\operatorname{diag}(1, -1)$ |
-| ${}^{\flat}$ | $-Q_0^{*} e_0$ | $\operatorname{diag}(-1, 1)$ |
+| ${}^{\natural}$ | $Q_0 e_0$ | $\operatorname{diag}(1, 1)$ |
+| $\bar{\cdot}$ | $\bar{Q_0} e_0$ | $\operatorname{diag}(1, -1)$ |
+| ${}^{*}$ | $\bar{Q_0} e_0$ | $\operatorname{diag}(1, -1)$ |
+| ${}^{\flat}$ | $-\bar{Q_0} e_0$ | $\operatorname{diag}(-1, 1)$ |
 
-Quaternion conjugation fixes the subspace pointwise — it is the defining involution — and Hermitian conjugation agrees with split complex conjugation there, because $\dagger = {}^{*}\circ\bar{\cdot}$ and $\bar{\cdot}$ acts as the identity. Split complex conjugation acts as the exchange $j \mapsto -j$, the non-trivial involution of $\mathbb{D}$, and anti-Hermitian conjugation is its negative. So of the four involutions only $\bar{\cdot}$ acts trivially on the centre, and ${}^{*}$ is the one that swaps the two light lines $\mathbb{R} \tilde\Pi_+$ and $\mathbb{R} \tilde\Pi_-$.
+Quaternion conjugation fixes the subspace pointwise — it is the defining involution — and Hermitian conjugation agrees with split complex conjugation there, because ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and ${}^{\natural}$ acts as the identity. Split complex conjugation acts as the exchange $j \mapsto -j$, the non-trivial involution of $\mathbb{D}$, and anti-Hermitian conjugation is its negative. So of the four involutions only ${}^{\natural}$ acts trivially on the centre, and $\bar{\cdot}$ is the one that swaps the two light lines $\mathbb{R} \tilde\Pi_+$ and $\mathbb{R} \tilde\Pi_-$.
 
 ## Relations to the Other Subspaces
 
@@ -198,11 +198,11 @@ The split complex subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is the fixed s
 | $Q_\mu = q_\mu + j q'_\mu$ | Real and split-imaginary parts of a coefficient |
 | $j$ | Split complex unit, central, $j^2 = +1$ |
 | $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ | Idempotents, giving the light lines $\mathbb{R} \tilde\Pi_\pm$ |
-| $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | Split complex subspace, the centre, fixed space of $\bar{\cdot}$ |
-| $\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ | Vector subspace, the anti-fixed space of $\bar{\cdot}$, $\dim 6$ |
+| $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | Split complex subspace, the centre, fixed space of ${}^{\natural}$ |
+| $\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ | Vector subspace, the anti-fixed space of ${}^{\natural}$, $\dim 6$ |
 | $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{M}_+, \mathbb{M}_-$ | Quaternion, Hermitian, anti-Hermitian subspaces |
-| $\bar{\cdot}, {}^{*}, {}^{\dagger}, {}^{\flat}$ | The four conjugations |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Split-Biquaternion norm, restricting to $Q_0^2$ |
+| ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Split-Biquaternion norm, restricting to $Q_0^2$ |
 | $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Idempotent-decomposition isomorphism |
 | $\mathbb{R}, j\mathbb{R}$ | The two coordinate blocks of the centre |
 | $\partial_{q_0}, \partial_{q'_0}$ | Split complex Cauchy–Riemann operator on the centre |

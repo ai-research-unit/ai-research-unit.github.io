@@ -46,13 +46,13 @@ $$
 
 ### The Defining Involution
 
-The subspace is the **anti-fixed space** of **quaternion conjugation** $\bar{\tilde{Q}}$, the map that fixes the unit and the scalar imaginary and negates the three vector units,
+The subspace is the **anti-fixed space** of **quaternion conjugation** $\tilde{Q}^{\natural}$, the map that fixes the unit and the scalar imaginary and negates the three vector units,
 
 $$
 e_0 \mapsto e_0, \qquad e_k \mapsto -e_k, \qquad i \mapsto i .
 $$
 
-It is an involution: $\overline{\bar{\tilde{Q}}} = \tilde{Q}$. Equivalently, the subspace is the kernel of the scalar part, $\mathrm{Sc}(\tilde{Q}) = 0$. Write the general biquaternion out in full, with the real and the imaginary part of each of its four coefficients,
+It is an involution: $\overline{\tilde{Q}^{\natural}} = \tilde{Q}$. Equivalently, the subspace is the kernel of the scalar part, $\mathrm{Sc}(\tilde{Q}) = 0$. Write the general biquaternion out in full, with the real and the imaginary part of each of its four coefficients,
 
 $$
 \tilde{Q} = (q_0 + iq'_0)\,e_0 + (q_1 + iq'_1)\,e_1 + (q_2 + iq'_2)\,e_2 + (q_3 + iq'_3)\,e_3, \qquad q_\mu, q'_\mu \in \mathbb{R}.
@@ -61,17 +61,17 @@ $$
 The conjugation leaves every coefficient untouched and reverses the sign of each of the three vector units,
 
 $$
-\bar{\tilde{Q}} = (q_0 + iq'_0)\,e_0 - (q_1 + iq'_1)\,e_1 - (q_2 + iq'_2)\,e_2 - (q_3 + iq'_3)\,e_3 ,
+\tilde{Q}^{\natural} = (q_0 + iq'_0)\,e_0 - (q_1 + iq'_1)\,e_1 - (q_2 + iq'_2)\,e_2 - (q_3 + iq'_3)\,e_3 ,
 $$
 
 so that the scalar coefficient is untouched and every vector coefficient changes sign. Coordinate by coordinate,
 
 | | $q_0$ | $q'_0$ | $q_1$ | $q'_1$ | $q_2$ | $q'_2$ | $q_3$ | $q'_3$ |
 |---|---|---|---|---|---|---|---|---|
-| image under $\bar{\cdot}$ | $q_0$ | $q'_0$ | $-q_1$ | $-q'_1$ | $-q_2$ | $-q'_2$ | $-q_3$ | $-q'_3$ |
-| $\bar{\tilde{Q}} = -\tilde{Q}$ requires | $q_0 = 0$ | $q'_0 = 0$ | free | free | free | free | free | free |
+| image under ${}^{\natural}$ | $q_0$ | $q'_0$ | $-q_1$ | $-q'_1$ | $-q_2$ | $-q'_2$ | $-q_3$ | $-q'_3$ |
+| $\tilde{Q}^{\natural} = -\tilde{Q}$ requires | $q_0 = 0$ | $q'_0 = 0$ | free | free | free | free | free | free |
 
-**The anti-fixed space.** The two sides of $\bar{\tilde{Q}} = -\tilde{Q}$ must agree in each of the four units $e_0, e_1, e_2, e_3$, and within a unit they must agree separately in the real and the imaginary part. That is four complex conditions, hence eight real ones. The scalar unit gives
+**The anti-fixed space.** The two sides of $\tilde{Q}^{\natural} = -\tilde{Q}$ must agree in each of the four units $e_0, e_1, e_2, e_3$, and within a unit they must agree separately in the real and the imaginary part. That is four complex conditions, hence eight real ones. The scalar unit gives
 
 $$
 q_0 + iq'_0 = -(q_0 + iq'_0) \iff q_0 + iq'_0 = 0 \iff q_0 = q'_0 = 0,
@@ -80,13 +80,13 @@ $$
 killing both the real and the imaginary part of the scalar coefficient, while the condition from each of the three vector units is vacuous, $-(q_k + iq'_k) = -(q_k + iq'_k)$. The solutions are the elements with $q_0 = q'_0 = 0$, that is,
 
 $$
-\bar{\tilde{Q}} = -\tilde{Q} \iff \tilde{Q} = (q_1 + iq'_1)\,e_1 + (q_2 + iq'_2)\,e_2 + (q_3 + iq'_3)\,e_3 = z_1e_1 + z_2e_2 + z_3e_3 .
+\tilde{Q}^{\natural} = -\tilde{Q} \iff \tilde{Q} = (q_1 + iq'_1)\,e_1 + (q_2 + iq'_2)\,e_2 + (q_3 + iq'_3)\,e_3 = z_1e_1 + z_2e_2 + z_3e_3 .
 $$
 
 **Conversely**, every element of this form is anti-fixed: its scalar coefficient vanishes, so the scalar term is absent from both sides, and each vector term is negated by the conjugation on the left and already carries the minus sign on the right,
 
 $$
-\bar{\tilde{Q}} = -(q_1 + iq'_1)\,e_1 - (q_2 + iq'_2)\,e_2 - (q_3 + iq'_3)\,e_3 = -\tilde{Q} .
+\tilde{Q}^{\natural} = -(q_1 + iq'_1)\,e_1 - (q_2 + iq'_2)\,e_2 - (q_3 + iq'_3)\,e_3 = -\tilde{Q} .
 $$
 
 The two directions together say that the displayed set is *exactly* the anti-fixed space. The coordinates that survive are the six $q_k, q'_k$ of the vector part, which is the parametrisation recorded above, and the anti-fixed space is this six-dimensional real subspace, carved out of the eight real coordinates by the two $\mathbb{R}$-linear equations $q_0 = q'_0 = 0$ — equivalently, by the single complex equation $\mathrm{Sc}(\tilde{Q}) = 0$.
@@ -101,10 +101,10 @@ $$
 
 which lies outside the subspace. More generally the product of two pure-vector biquaternions has a scalar part equal to $-\mathbf{u}\cdot\mathbf{w}$ (with signs fixed by the conventions), so the subspace is not closed under multiplication. It is closed under multiplication by $i$, and it is closed under the commutator, but not under the product.
 
-**Complex quadratic biquaternion norm.** Quaternion conjugation negates the vector part, so for a pure vector $\bar{\tilde{Q}} = -\tilde{Q}$ and the biquaternion norm is minus the square:
+**Complex quadratic biquaternion norm.** Quaternion conjugation negates the vector part, so for a pure vector $\tilde{Q}^{\natural} = -\tilde{Q}$ and the biquaternion norm is minus the square:
 
 $$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = -\tilde{Q}^2 = (z_1^2 + z_2^2 + z_3^2)\,e_0 .
+N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = -\tilde{Q}^2 = (z_1^2 + z_2^2 + z_3^2)\,e_0 .
 $$
 
 This is the **complex orthogonal form** in three variables, not the Hermitian form $|z_1|^2 + |z_2|^2 + |z_3|^2$: it is $\mathbb{C}$-linear in each argument, and it takes complex values. It vanishes on the complex cone

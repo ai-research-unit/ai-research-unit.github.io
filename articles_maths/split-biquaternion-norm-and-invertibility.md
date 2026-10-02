@@ -13,7 +13,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$, where $Q_\mu^* = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$.
+The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \mathbf{Q}^*$, where $Q_\bar{\mu} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$.
 
 The idempotents of the split complex algebra are denoted $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
@@ -30,18 +30,18 @@ with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$ ordinary quaternio
 The **split-biquaternion norm** of a split biquaternion $\tilde{Q}$ is
 
 $$
-N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2,
+N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2,
 $$
 
-where $\bar{\tilde{Q}}$ is the quaternion conjugate.
+where $\tilde{Q}^{\natural}$ is the quaternion conjugate.
 
 **Basic properties.**
 
 - $N(\tilde{Q})$ is a split complex number in general. It is real when $\tilde{Q}$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ or in the imaginary translate $j \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, and outside their union it need not be real.
 - $N(\tilde{Q})$ is **anisotropic**: it vanishes only when $\tilde{Q} = 0$, so the split-biquaternion norm does not by itself detect the zero divisors. Those are described by the idempotent criterion below, and are studied in the article on split biquaternion zero divisors.
-- $N(\tilde{Q})$ is invariant under quaternion conjugation: $N(\bar{\tilde{Q}}) = N(\tilde{Q})$.
-- $N(\tilde{Q})$ is not invariant under split complex conjugation: $N(\tilde{Q}^*) = N(\tilde{Q})^*$.
-- $N(\tilde{Q})$ is not invariant under Hermitian conjugation: $N(\tilde{Q}^\dagger) = N(\tilde{Q})^*$.
+- $N(\tilde{Q})$ is invariant under quaternion conjugation: $N(\tilde{Q}^{\natural}) = N(\tilde{Q})$.
+- $N(\tilde{Q})$ is not invariant under split complex conjugation: $N(\bar{\tilde{Q}}) = N(\tilde{Q})^*$.
+- $N(\tilde{Q})$ is not invariant under Hermitian conjugation: $N(\tilde{Q}^{*}) = N(\tilde{Q})^*$.
 
 ### Explicit Form
 
@@ -64,13 +64,13 @@ $$
 **Proof.** Compute
 
 $$
-N(\tilde{Q} \circ \tilde{R}) = (\tilde{Q} \tilde{R}) \overline{(\tilde{Q} \tilde{R})} = \tilde{Q} \tilde{R} \bar{\tilde{R}} \bar{\tilde{Q}} = \tilde{Q} N(\tilde{R}) \bar{\tilde{Q}}.
+N(\tilde{Q} \circ \tilde{R}) = (\tilde{Q} \tilde{R}) ((\tilde{Q} \tilde{R}))^{\natural} = \tilde{Q} \tilde{R} \tilde{R}^{\natural} \tilde{Q}^{\natural} = \tilde{Q} N(\tilde{R}) \tilde{Q}^{\natural}.
 $$
 
-Since $N(\tilde{R})$ is a split complex number and the split complex unit $j$ commutes with the quaternion units, $N(\tilde{R})$ commutes with $\tilde{Q}$ and with $\bar{\tilde{Q}}$. So
+Since $N(\tilde{R})$ is a split complex number and the split complex unit $j$ commutes with the quaternion units, $N(\tilde{R})$ commutes with $\tilde{Q}$ and with $\tilde{Q}^{\natural}$. So
 
 $$
-\tilde{Q} N(\tilde{R}) \bar{\tilde{Q}} = N(\tilde{R}) \tilde{Q} \bar{\tilde{Q}} = N(\tilde{R}) N(\tilde{Q}).
+\tilde{Q} N(\tilde{R}) \tilde{Q}^{\natural} = N(\tilde{R}) \tilde{Q} \tilde{Q}^{\natural} = N(\tilde{R}) N(\tilde{Q}).
 $$
 
 **Corollary.** If $N(\tilde{Q})$ and $N(\tilde{R})$ are invertible in $\mathbb{D}$, then $N(\tilde{Q} \circ \tilde{R})$ is invertible in $\mathbb{D}$.
@@ -85,7 +85,7 @@ $$
 N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_+ + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_-,
 $$
 
-where $N_{\mathbb{H}}(\tilde{Q}_\pm) = \tilde{Q}_\pm \bar{\tilde{Q}}_\pm$ is the ordinary quaternion norm of $\tilde{Q}_\pm$, which is a non-negative real number.
+where $N_{\mathbb{H}}(\tilde{Q}_\pm) = \tilde{Q}_\pm \tilde{Q}^{\natural}_\pm$ is the ordinary quaternion norm of $\tilde{Q}_\pm$, which is a non-negative real number.
 
 So the split-biquaternion norm of a split biquaternion is the pair of non-negative real numbers $(N_{\mathbb{H}}(\tilde{Q}_+), N_{\mathbb{H}}(\tilde{Q}_-))$, embedded in the split complex algebra via the idempotent basis. This is the cleanest form of the split-biquaternion norm, and it is the form in which the invertibility criterion is most transparent.
 
@@ -108,7 +108,7 @@ The **quadratic space** so defined is the split complex quadratic space of dimen
 **Proposition.** The polarisation $B$ is $\mathbb{D}$-bilinear, symmetric and non-degenerate, and the unit basis is orthonormal:
 
 $$
-B(\tilde P, \tilde{Q}) = \tfrac{1}{2}\left(\tilde P \bar{\tilde{Q}} + \tilde{Q} \bar{\tilde P}\right), \qquad B(e_\mu, e_\nu) = \delta_{\mu\nu}.
+B(\tilde P, \tilde{Q}) = \tfrac{1}{2}\left(\tilde P \tilde{Q}^{\natural} + \tilde{Q} \tilde{P}^{\natural}\right), \qquad B(e_\mu, e_\nu) = \delta_{\mu\nu}.
 $$
 
 **Proof.** Bilinearity is that of the polarisation of a quadratic form, symmetry is its defining property, and $B(e_\mu, e_\nu) = \delta_{\mu\nu}$ is immediate from the coordinate formula. Non-degeneracy follows because $B(e_\mu, e_\mu) = e_0$ is a unit of $\mathbb{D}$.
@@ -123,7 +123,7 @@ $$
 N(\tilde{Q}) = R(\tilde{Q}) + j\,I(\tilde{Q}), \qquad R(\tilde{Q}) = \sum_\mu (q_\mu^2 + q'^2_\mu), \quad I(\tilde{Q}) = 2\sum_\mu q_\mu q'_\mu.
 $$
 
-**Proposition.** The form $R$ is the Euclidean form, positive definite of signature $(8,0)$; the form $I$ is the polarisation of the pairing of each real coordinate with its split partner, non-degenerate of signature $(4,4)$. The Hermitian scalar form $g(\tilde P, \tilde{Q}) = \mathrm{Sc}(\tilde P \tilde{Q}^\dagger)$ is also non-degenerate of signature $(4,4)$.
+**Proposition.** The form $R$ is the Euclidean form, positive definite of signature $(8,0)$; the form $I$ is the polarisation of the pairing of each real coordinate with its split partner, non-degenerate of signature $(4,4)$. The Hermitian scalar form $g(\tilde P, \tilde{Q}) = \mathrm{Sc}(\tilde P \tilde{Q}^{*})$ is also non-degenerate of signature $(4,4)$.
 
 **Proof.** $R$ is a sum of squares of the eight real coordinates. $I$ has the matrix with two $4\times 4$ off-diagonal blocks $I_4$, of signature $(4,4)$. The Hermitian form is non-degenerate of signature $(4,4)$ as established in *Split-Biquaternion Rotations and the Lorentz Group*.
 
@@ -145,17 +145,17 @@ On the quaternion subspace the split-biquaternion norm is real and positive defi
 The **Hermitian form** of a split biquaternion $\tilde{Q}$ is
 
 $$
-\tilde{Q} \tilde{Q}^\dagger, \qquad \text{whose scalar part is } \sum_{\mu=0}^{3} Q_\mu Q_\mu^* = \sum_{\mu=0}^{3} (q_\mu^2 - q'^2_\mu),
+\tilde{Q} \tilde{Q}^{*}, \qquad \text{whose scalar part is } \sum_{\mu=0}^{3} Q_\mu Q_\bar{\mu} = \sum_{\mu=0}^{3} (q_\mu^2 - q'^2_\mu),
 $$
 
-where $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$ is the Hermitian conjugate and $Q_\mu^* = q_\mu - j q'_\mu$ is the split complex conjugate.
+where $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ is the Hermitian conjugate and $Q_\bar{\mu} = q_\mu - j q'_\mu$ is the split complex conjugate.
 
 **Basic properties.**
 
-- $\tilde{Q} \tilde{Q}^\dagger$ need not be real: only its **scalar part** is, and that scalar part is the difference between the sum of the squares of the real parts and the sum of the squares of the split parts.
+- $\tilde{Q} \tilde{Q}^{*}$ need not be real: only its **scalar part** is, and that scalar part is the difference between the sum of the squares of the real parts and the sum of the squares of the split parts.
 - The scalar part is **not positive-definite**: it can be positive, negative, or zero. Its signature is $(4, 4)$ on the eight-dimensional real space $\mathbb{H}_{\mathbb{D}}$.
-- The product $\tilde{Q} \tilde{Q}^\dagger$ vanishes exactly when one of the idempotent components vanishes, that is on the union of two four-dimensional subspaces; the scalar part vanishes on the quadric hypersurface $\sum_\mu q_\mu^2 = \sum_\mu q'^2_\mu$, of dimension $7$.
-- It is **not multiplicative**: $\tilde{Q} \tilde{Q}^\dagger$ does not satisfy a product formula.
+- The product $\tilde{Q} \tilde{Q}^{*}$ vanishes exactly when one of the idempotent components vanishes, that is on the union of two four-dimensional subspaces; the scalar part vanishes on the quadric hypersurface $\sum_\mu q_\mu^2 = \sum_\mu q'^2_\mu$, of dimension $7$.
+- It is **not multiplicative**: $\tilde{Q} \tilde{Q}^{*}$ does not satisfy a product formula.
 
 ### The Signature
 
@@ -181,7 +181,7 @@ This is a quadric hypersurface of dimension $7$ in $\mathbb{H}_{\mathbb{D}} \con
 The Hermitian form is polarised by the **inner product**
 
 $$
-\langle \tilde P, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_\mu^* Q_\mu,
+\langle \tilde P, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_\bar{\mu} Q_\mu,
 $$
 
 which is a split complex number in general:
@@ -196,9 +196,9 @@ Its real part is the real form of signature $(4, 4)$ above, and its split part i
 
 The three quadratic objects are related as follows.
 
-- **Norm:** $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, split complex-valued, anisotropic, multiplicative, with polarisation $B$.
-- **Hermitian form:** $\tilde{Q} \tilde{Q}^\dagger$, whose scalar part is $\sum_\mu (q_\mu^2 - q'^2_\mu)$, real, indefinite of signature $(4, 4)$, vanishing on a quadric hypersurface of dimension $7$; the full product is not multiplicative.
-- **Inner product:** $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_\mu^* Q_\mu$, split complex-valued, Hermitian, linear in the second argument.
+- **Norm:** $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, split complex-valued, anisotropic, multiplicative, with polarisation $B$.
+- **Hermitian form:** $\tilde{Q} \tilde{Q}^{*}$, whose scalar part is $\sum_\mu (q_\mu^2 - q'^2_\mu)$, real, indefinite of signature $(4, 4)$, vanishing on a quadric hypersurface of dimension $7$; the full product is not multiplicative.
+- **Inner product:** $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_\bar{\mu} Q_\mu$, split complex-valued, Hermitian, linear in the second argument.
 
 The three are distinct, and each is useful in a different context. The split-biquaternion norm controls invertibility through the reduced norm below. The zero divisors are not a condition on the split-biquaternion norm; they are the vanishing of an idempotent component. The Hermitian form is indefinite and does not control the topological structure; the Euclidean norm, defined separately, does.
 
@@ -259,7 +259,7 @@ $$
 **Proof.** Suppose $N(\tilde{Q})$ is invertible in $\mathbb{D}$. Define
 
 $$
-\tilde{R} = \bar{\tilde{Q}} \, N(\tilde{Q})^{-1}.
+\tilde{R} = \tilde{Q}^{\natural} \, N(\tilde{Q})^{-1}.
 $$
 
 This is legitimate because $N(\tilde{Q})$ is a unit of $\mathbb{D}$: mere non-vanishing would not suffice, since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors. Then
@@ -285,10 +285,10 @@ so $N(\tilde{Q})$ is invertible in $\mathbb{D}$, with inverse $N(\tilde{Q}^{-1})
 When $N(\tilde{Q})$ is invertible in $\mathbb{D}$, equivalently when $\tilde{Q}$ is invertible, the inverse is
 
 $$
-\tilde{Q}^{-1} = \bar{\tilde{Q}} \, N(\tilde{Q})^{-1}.
+\tilde{Q}^{-1} = \tilde{Q}^{\natural} \, N(\tilde{Q})^{-1}.
 $$
 
-This is the split biquaternion analogue of the formula $q^{-1} = \bar{q}/|q|^2$ for quaternions.
+This is the split biquaternion analogue of the formula $q^{-1} = q^{\natural}/|q|^2$ for quaternions.
 
 ### The Criterion in the Idempotent Basis
 
@@ -319,7 +319,7 @@ This is the cleanest form of the invertibility criterion. It is a **linear** con
 The split-biquaternion norm alone does not give an inverse. The formula
 
 $$
-\tilde{Q}^{-1} = \bar{\tilde{Q}} \, N(\tilde{Q})^{-1}
+\tilde{Q}^{-1} = \tilde{Q}^{\natural} \, N(\tilde{Q})^{-1}
 $$
 
 requires $N(\tilde{Q})$ to be invertible in $\mathbb{D}$, not merely nonzero: since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors, when $\tilde{Q}$ is a zero divisor the value $N(\tilde{Q})$ is a nonzero zero divisor of $\mathbb{D}$ and $N(\tilde{Q})^{-1}$ does not exist.
@@ -330,7 +330,7 @@ $$
 N(\tilde{Q})^{-1} = \frac{\tilde\Pi_+}{N_+} + \frac{\tilde\Pi_-}{N_-} = \frac{N(\tilde{Q})^*}{\Delta(\tilde{Q})},
 $$
 
-where $N(\tilde{Q})^* = N_- \tilde\Pi_+ + N_+ \tilde\Pi_-$ is the split complex conjugate of $N(\tilde{Q})$. Substituting into $\tilde{Q}^{-1} = \bar{\tilde{Q}} N(\tilde{Q})^{-1}$ expresses the inverse through the **reduced norm**
+where $N(\tilde{Q})^* = N_- \tilde\Pi_+ + N_+ \tilde\Pi_-$ is the split complex conjugate of $N(\tilde{Q})$. Substituting into $\tilde{Q}^{-1} = \tilde{Q}^{\natural} N(\tilde{Q})^{-1}$ expresses the inverse through the **reduced norm**
 
 $$
 \Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = N(\tilde{Q}) N(\tilde{Q})^* \in \mathbb{R},
@@ -339,10 +339,10 @@ $$
 a real quartic, the product of the two ordinary quaternion norms:
 
 $$
-\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}} \, N(\tilde{Q})^*}{\Delta(\tilde{Q})}, \qquad \Delta(\tilde{Q}) \neq 0.
+\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural} \, N(\tilde{Q})^*}{\Delta(\tilde{Q})}, \qquad \Delta(\tilde{Q}) \neq 0.
 $$
 
-The identity is forced by multiplicativity of the split-biquaternion norm: $\tilde{Q} \bar{\tilde{Q}} N(\tilde{Q})^* = N(\tilde{Q}) N(\tilde{Q})^* = \Delta(\tilde{Q}) e_0$, so the right-hand side is a two-sided inverse of $\tilde{Q}$ exactly when $\Delta(\tilde{Q}) \neq 0$.
+The identity is forced by multiplicativity of the split-biquaternion norm: $\tilde{Q} \tilde{Q}^{\natural} N(\tilde{Q})^* = N(\tilde{Q}) N(\tilde{Q})^* = \Delta(\tilde{Q}) e_0$, so the right-hand side is a two-sided inverse of $\tilde{Q}$ exactly when $\Delta(\tilde{Q}) \neq 0$.
 
 The reduced norm gives the invertibility criterion in its sharpest form:
 
@@ -363,7 +363,7 @@ $$
 Since $8 \in \mathbb{D}^\times$, the element is a unit, and
 
 $$
-\tilde{Q} \bar{\tilde{Q}} = 8 e_0, \qquad \tilde{Q}^{-1} = \tfrac{1}{8} \bar{\tilde{Q}} = \tfrac{1}{8}\big(1 - 2 e_1 - e_2\big) + \tfrac{j}{8}\big(1 + e_2\big).
+\tilde{Q} \tilde{Q}^{\natural} = 8 e_0, \qquad \tilde{Q}^{-1} = \tfrac{1}{8} \tilde{Q}^{\natural} = \tfrac{1}{8}\big(1 - 2 e_1 - e_2\big) + \tfrac{j}{8}\big(1 + e_2\big).
 $$
 
 The criterion is not the naive one $N(\tilde{Q}) \neq 0$. For $\tilde P = \tilde\Pi_+$ one has $N(\tilde\Pi_+) = \tilde\Pi_+ \neq 0$, yet $\tilde\Pi_+$ is a zero divisor, because $\tilde\Pi_+$ is a nonzero non-unit of $\mathbb{D}$ and so does not lie in $\mathbb{D}^\times$. In the idempotent basis $N_{\mathbb{H}}(\tilde{Q}_+) = N_{\mathbb{H}}(\tilde{Q}_-) = 8$, so $N(\tilde{Q}) = 8\tilde\Pi_+ + 8\tilde\Pi_- = 8$, matching the direct computation.
@@ -372,7 +372,7 @@ The criterion is not the naive one $N(\tilde{Q}) \neq 0$. For $\tilde P = \tilde
 
 **Corollary.** The inverse of an invertible element is invertible, and $(\tilde{Q}^{-1})^{-1} = \tilde{Q}$.
 
-**Corollary.** If $\tilde{Q}$ is invertible, then $\bar{\tilde{Q}}$, $\tilde{Q}^*$, $\tilde{Q}^\dagger$, and $\tilde{Q}^\flat$ are invertible, and their inverses are the corresponding conjugates of $\tilde{Q}^{-1}$.
+**Corollary.** If $\tilde{Q}$ is invertible, then $\tilde{Q}^{\natural}$, $\bar{\tilde{Q}}$, $\tilde{Q}^{*}$, and $\tilde{Q}^\flat$ are invertible, and their inverses are the corresponding conjugates of $\tilde{Q}^{-1}$.
 
 **Corollary.** The product of two invertible elements is invertible, with $(\tilde{Q} \tilde{R})^{-1} = \tilde{R}^{-1} \tilde{Q}^{-1}$.
 
@@ -526,9 +526,9 @@ Of the four fixed-point subspaces:
 
 ## Summary
 
-The split-biquaternion norm $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ is a split complex-valued multiplicative quadratic form on the split biquaternion algebra. It is anisotropic: it vanishes only at the origin, so it does not detect the zero divisors. In the idempotent basis, it is the pair of ordinary quaternion norms of the two idempotent components, which is the cleanest form of the split-biquaternion norm. Its polarisation is the symmetric split-complex-bilinear pairing $B(\tilde P, \tilde{Q}) = \sum_\mu P_\mu Q_\mu$.
+The split-biquaternion norm $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ is a split complex-valued multiplicative quadratic form on the split biquaternion algebra. It is anisotropic: it vanishes only at the origin, so it does not detect the zero divisors. In the idempotent basis, it is the pair of ordinary quaternion norms of the two idempotent components, which is the cleanest form of the split-biquaternion norm. Its polarisation is the symmetric split-complex-bilinear pairing $B(\tilde P, \tilde{Q}) = \sum_\mu P_\mu Q_\mu$.
 
-The scalar part of the Hermitian form $\tilde{Q} \tilde{Q}^\dagger$ is a real indefinite quadratic form of signature $(4, 4)$; the product itself need not be real. Its polarisation is the Hermitian inner product $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_\mu^* Q_\mu$. Neither defines a Euclidean norm. The Euclidean norm is defined separately and is positive-definite but not multiplicative.
+The scalar part of the Hermitian form $\tilde{Q} \tilde{Q}^{*}$ is a real indefinite quadratic form of signature $(4, 4)$; the product itself need not be real. Its polarisation is the Hermitian inner product $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_\bar{\mu} Q_\mu$. Neither defines a Euclidean norm. The Euclidean norm is defined separately and is positive-definite but not multiplicative.
 
 The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $N(\tilde{Q})$ is invertible in $\mathbb{D}$, equivalently if and only if the reduced norm $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-)$ is nonzero, equivalently if and only if both idempotent components are nonzero:
 
@@ -538,7 +538,7 @@ $$
 
 This is a linear condition in the idempotent basis, in contrast to the quadratic condition in the biquaternion case.
 
-The inverse is $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$. The group of units $\mathbb{H}_{\mathbb{D}}^\times$ is isomorphic to $\mathbb{H}^\times \times \mathbb{H}^\times$, and it is connected.
+The inverse is $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$. The group of units $\mathbb{H}_{\mathbb{D}}^\times$ is isomorphic to $\mathbb{H}^\times \times \mathbb{H}^\times$, and it is connected.
 
 The algebra $\mathbb{H}_{\mathbb{D}}$ is partitioned into three classes: the zero element, the invertible elements, and the zero divisors. Of the four fixed-point subspaces, the quaternion subspace is a division algebra, the split complex subspace contains zero divisors inherited from $\mathbb{D}$, and the Hermitian and anti-Hermitian subspaces are positive-definite and contain no zero divisors.
 
@@ -551,17 +551,17 @@ The zero divisors themselves are studied in the article on split biquaternion ze
 | $\mathbb{H}_{\mathbb{D}}$ | Split biquaternion algebra |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | General split biquaternion |
 | $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient |
-| $\bar{\tilde{Q}}$ | Quaternion conjugate |
-| $\tilde{Q}^*$ | Split complex conjugate |
-| $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$ | Hermitian conjugate |
-| $\tilde{Q}^\flat = -\tilde{Q}^\dagger$ | Anti-Hermitian conjugate |
-| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Split-Biquaternion norm |
+| $\tilde{Q}^{\natural}$ | Quaternion conjugate |
+| $\bar{\tilde{Q}}$ | Split complex conjugate |
+| $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ | Hermitian conjugate |
+| $\tilde{Q}^\flat = -\tilde{Q}^{*}$ | Anti-Hermitian conjugate |
+| $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $B(\tilde P, \tilde{Q}) = \sum_\mu P_\mu Q_\mu$ | Polarisation of the split-biquaternion norm |
-| $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_\mu^* Q_\mu$ | Hermitian inner product |
-| $\tilde{Q} \tilde{Q}^\dagger = \sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian form (signature $(4,4)$) |
+| $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_\bar{\mu} Q_\mu$ | Hermitian inner product |
+| $\tilde{Q} \tilde{Q}^{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian form (signature $(4,4)$) |
 | $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = N(\tilde{Q}) N(\tilde{Q})^*$ | Reduced norm (determinant) |
 | $\|\tilde{Q}\|_E = \sqrt{\sum_\mu (q_\mu^2 + q'^2_\mu)}$ | Euclidean norm |
-| $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$ | Inverse |
+| $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$ | Inverse |
 | $\mathbb{H}_{\mathbb{D}}^\times$ | Group of units |
 | $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
 | $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ | Negative idempotent |

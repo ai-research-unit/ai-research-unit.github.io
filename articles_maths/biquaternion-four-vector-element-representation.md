@@ -114,25 +114,25 @@ The first row and the first column reproduce the basis, since $e_0$ is the ident
 
 ## The Conjugations in Coordinates
 
-The biquaternion algebra carries the quaternion conjugation $\bar{\cdot}$, the complex conjugation ${}^{*}$, the Hermitian conjugation ${}^{\dagger} = \bar{\cdot} \circ {}^{*}$, and the anti-Hermitian conjugation ${}^{\flat} = -\dagger$. In coordinates, quaternion conjugation negates the vector components, complex conjugation conjugates every component, and Hermitian conjugation does both.
+The biquaternion algebra carries the quaternion conjugation ${}^{\natural}$, the complex conjugation $\bar{\cdot}$, the Hermitian conjugation ${}^{*} = {}^{\natural} \circ \bar{\cdot}$, and the anti-Hermitian conjugation ${}^{\flat} = -{}^{*}$. In coordinates, quaternion conjugation negates the vector components, complex conjugation conjugates every component, and Hermitian conjugation does both.
 
 **Proposition (conjugations in coordinates).** For a biquaternion with four-vector $Q^\mu$,
 
 $$
-(\bar{\tilde{Q}})^\mu = (Q^0, -Q^1, -Q^2, -Q^3),
+(\tilde{Q}^{\natural})^\mu = (Q^0, -Q^1, -Q^2, -Q^3),
 $$
 
 $$
-(\tilde{Q}^{*})^\mu = \bigl( (Q^0)^{*}, (Q^1)^{*}, (Q^2)^{*}, (Q^3)^{*} \bigr),
+(\bar{\tilde{Q}})^\mu = \bigl( (Q^0)^{*}, (Q^1)^{*}, (Q^2)^{*}, (Q^3)^{*} \bigr),
 $$
 
 $$
-(\tilde{Q}^{\dagger})^\mu = \bigl( (Q^0)^{*}, -(Q^1)^{*}, -(Q^2)^{*}, -(Q^3)^{*} \bigr), \qquad (\tilde{Q}^{\flat})^\mu = -(\tilde{Q}^{\dagger})^\mu .
+(\tilde{Q}^{*})^\mu = \bigl( (Q^0)^{*}, -(Q^1)^{*}, -(Q^2)^{*}, -(Q^3)^{*} \bigr), \qquad (\tilde{Q}^{\flat})^\mu = -(\tilde{Q}^{*})^\mu .
 $$
 
-**Proof.** Quaternion conjugation fixes $e_0$ and sends $e_k$ to $-e_k$, while leaving every coefficient untouched, so it acts on the coefficients by $(Q^0, Q^1, Q^2, Q^3) \mapsto (Q^0, -Q^1, -Q^2, -Q^3)$. Complex conjugation fixes every basis element $e_\mu$ and conjugates the central scalar $i$, hence conjugates each coefficient and acts componentwise by ${}^{*}$. Hermitian conjugation is their composite, and $\flat$ is its negative.
+**Proof.** Quaternion conjugation fixes $e_0$ and sends $e_k$ to $-e_k$, while leaving every coefficient untouched, so it acts on the coefficients by $(Q^0, Q^1, Q^2, Q^3) \mapsto (Q^0, -Q^1, -Q^2, -Q^3)$. Complex conjugation fixes every basis element $e_\mu$ and conjugates the central scalar $i$, hence conjugates each coefficient and acts componentwise by $\bar{\cdot}$. Hermitian conjugation is their composite, and $\flat$ is its negative.
 
-**Remark.** The three involutions $\bar{\cdot}$, ${}^{*}$ and ${}^{\dagger}$ commute and generate a Klein four-group with the identity; the fourth involution $\flat$ is not independent, since $\flat = -\dagger$ and $\dagger\flat = -1$ on each component. This is the coordinate form of the Klein group of conjugations of *Biquaternion Algebra*, and it is the reason the fixed-point subspaces below come in three pairs and not four.
+**Remark.** The three involutions ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ commute and generate a Klein four-group with the identity; the fourth involution $\flat$ is not independent, since $\flat = -{}^{*}$ and ${}^{*}\flat = -1$ on each component. This is the coordinate form of the Klein group of conjugations of *Biquaternion Algebra*, and it is the reason the fixed-point subspaces below come in three pairs and not four.
 
 **Example.** For the element
 
@@ -143,14 +143,14 @@ $$
 the four conjugations have four-vectors
 
 $$
-\bar{\tilde{Q}} \leftrightarrow (2+i, \, -1+i, \, -3, \, -i), \qquad \tilde{Q}^{*} \leftrightarrow (2-i, \, 1+i, \, 3, \, -i),
+\tilde{Q}^{\natural} \leftrightarrow (2+i, \, -1+i, \, -3, \, -i), \qquad \bar{\tilde{Q}} \leftrightarrow (2-i, \, 1+i, \, 3, \, -i),
 $$
 
 $$
-\tilde{Q}^{\dagger} \leftrightarrow (2-i, \, -1-i, \, -3, \, i), \qquad \tilde{Q}^{\flat} \leftrightarrow (-2+i, \, 1+i, \, 3, \, -i),
+\tilde{Q}^{*} \leftrightarrow (2-i, \, -1-i, \, -3, \, i), \qquad \tilde{Q}^{\flat} \leftrightarrow (-2+i, \, 1+i, \, 3, \, -i),
 $$
 
-and each is an involution. The Hermitian part $\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{\dagger})$ has four-vector $(2, \, -i, \, 0, \, i)$, a real scalar component and purely imaginary vector components, as the table of subspaces requires.
+and each is an involution. The Hermitian part $\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{*})$ has four-vector $(2, \, -i, \, 0, \, i)$, a real scalar component and purely imaginary vector components, as the table of subspaces requires.
 
 ## The Six Distinguished Subspaces
 
@@ -159,15 +159,15 @@ Each involution cuts out a fixed subspace and an anti-fixed subspace, and the th
 **Definition.** The six **distinguished subspaces** are
 
 $$
-\mathbb{C}_{\mathbb{B}} = \{\tilde{Q} : \bar{\tilde{Q}} = \tilde{Q}\}, \qquad \mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : \bar{\tilde{Q}} = -\tilde{Q}\},
+\mathbb{C}_{\mathbb{B}} = \{\tilde{Q} : \tilde{Q}^{\natural} = \tilde{Q}\}, \qquad \mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : \tilde{Q}^{\natural} = -\tilde{Q}\},
 $$
 
 $$
-\mathbb{H}_{\mathbb{B}} = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\}, \qquad i\mathbb{H}_{\mathbb{B}} = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\},
+\mathbb{H}_{\mathbb{B}} = \{\tilde{Q} : \bar{\tilde{Q}} = \tilde{Q}\}, \qquad i\mathbb{H}_{\mathbb{B}} = \{\tilde{Q} : \bar{\tilde{Q}} = -\tilde{Q}\},
 $$
 
 $$
-\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{\dagger} = \tilde{Q}\}, \qquad \mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{\flat} = \tilde{Q}\}.
+\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\}, \qquad \mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{\flat} = \tilde{Q}\}.
 $$
 
 The scalar subspace $\mathbb{C}_{\mathbb{B}}$ is the centre, $\mathrm{Vect}(\mathbb{B})$ is the vector subspace, $\mathbb{H}_{\mathbb{B}}$ is the subspace of real quaternions and $i\mathbb{H}_{\mathbb{B}}$ its multiple by the scalar imaginary.
@@ -198,14 +198,14 @@ As real vector spaces, $\mathbb{C}_{\mathbb{B}}$ and $\mathrm{Vect}(\mathbb{B})$
 **Definition.** The **biquaternion norm** of a biquaternion is the central element
 
 $$
-N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = (Q^0)^2 + (Q^1)^2 + (Q^2)^2 + (Q^3)^2 \in \mathbb{C}.
+N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = (Q^0)^2 + (Q^1)^2 + (Q^2)^2 + (Q^3)^2 \in \mathbb{C}.
 $$
 
 In four-vector form the biquaternion norm has **all four signs positive**.
 
-**Proposition (why all four signs are positive).** For every biquaternion $\tilde{Q}$, $\tilde{Q}\bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2$, a complex scalar.
+**Proposition (why all four signs are positive).** For every biquaternion $\tilde{Q}$, $\tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2$, a complex scalar.
 
-**Proof.** Expand $\tilde{Q}\bar{\tilde{Q}} = \bigl(\sum_\mu Q_\mu e_\mu\bigr)\bigl(Q_0 e_0 - \sum_k Q_k e_k\bigr)$. The cross terms between $e_0$ and $e_k$ cancel against each other in the two orders. The remaining terms are $Q_0^2 e_0$ together with $\sum_{k} Q_k^2 e_k^2 = -\sum_k Q_k^2 e_0$ and the mixed terms $-Q_j Q_k e_j e_k$ over the ordered pairs with $j \neq k$. The two ordered pairs $(j,k)$ and $(k,j)$ carry the same coefficient $Q_jQ_k$ and the two basis products are negatives of one another, so the pair contributes a multiple of $e_j e_k + e_k e_j = 0$ and cancels. Hence the only surviving terms are scalar, and collecting them gives $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$.
+**Proof.** Expand $\tilde{Q}\tilde{Q}^{\natural} = \bigl(\sum_\mu Q_\mu e_\mu\bigr)\bigl(Q_0 e_0 - \sum_k Q_k e_k\bigr)$. The cross terms between $e_0$ and $e_k$ cancel against each other in the two orders. The remaining terms are $Q_0^2 e_0$ together with $\sum_{k} Q_k^2 e_k^2 = -\sum_k Q_k^2 e_0$ and the mixed terms $-Q_j Q_k e_j e_k$ over the ordered pairs with $j \neq k$. The two ordered pairs $(j,k)$ and $(k,j)$ carry the same coefficient $Q_jQ_k$ and the two basis products are negatives of one another, so the pair contributes a multiple of $e_j e_k + e_k e_j = 0$ and cancels. Hence the only surviving terms are scalar, and collecting them gives $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$.
 
 The two consequences of this computation are the ones that matter. First, the biquaternion norm is a quadratic form on the coefficient space with all four signs positive, so it is **not** an indefinite form on $\mathbb{C}^4$; it is the determinant of the matrix model of *Biquaternion 2×2 Matrix Element Representation*, below this article, and it is multiplicative, $N(\tilde{P}\tilde{Q}) = N(\tilde{P})N(\tilde{Q})$, as proved in *Biquaternion Algebra*. Second, the biquaternion norm can vanish on a nonzero element: the zero divisors of $\mathbb{B}$ are exactly the nonzero solutions of $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$, so $N$ is a quadratic form and not a norm in the analytic sense. The invertibility criterion and the group of units are the subject of *Biquaternion Norm and Invertibility*, and the classification of the zero divisors is the subject of *Biquaternion Zero Divisors*; the coordinate form of the criterion is what the four-vector realization adds.
 
@@ -240,10 +240,10 @@ The criterion of invertibility, that $\tilde{Q}$ is a unit exactly when $N(\tild
 **Proposition (the inverse in coordinates).** For an invertible biquaternion $\tilde{Q}$,
 
 $$
-\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}}}{N(\tilde{Q})}, \qquad \bigl(\tilde{Q}^{-1}\bigr)^\mu = \Bigl( \frac{Q^0}{N}, \, -\frac{Q^1}{N}, \, -\frac{Q^2}{N}, \, -\frac{Q^3}{N} \Bigr), \qquad N = N(\tilde{Q}).
+\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{N(\tilde{Q})}, \qquad \bigl(\tilde{Q}^{-1}\bigr)^\mu = \Bigl( \frac{Q^0}{N}, \, -\frac{Q^1}{N}, \, -\frac{Q^2}{N}, \, -\frac{Q^3}{N} \Bigr), \qquad N = N(\tilde{Q}).
 $$
 
-**Proof.** With $N = N(\tilde{Q}) \neq 0$, the element $\bar{\tilde{Q}}/N$ is a two-sided inverse because $\tilde{Q}\bar{\tilde{Q}} = \bar{\tilde{Q}}\tilde{Q} = N$ is central, so $\tilde{Q}(\bar{\tilde{Q}}/N) = (\bar{\tilde{Q}}/N)\tilde{Q} = e_0$. Its coordinate form is the vector $\bar{\tilde{Q}}$, whose components are $(Q^0, -Q^1, -Q^2, -Q^3)$, divided by the complex scalar $N$.
+**Proof.** With $N = N(\tilde{Q}) \neq 0$, the element $\tilde{Q}^{\natural}/N$ is a two-sided inverse because $\tilde{Q}\tilde{Q}^{\natural} = \tilde{Q}^{\natural}\tilde{Q} = N$ is central, so $\tilde{Q}(\tilde{Q}^{\natural}/N) = (\tilde{Q}^{\natural}/N)\tilde{Q} = e_0$. Its coordinate form is the vector $\tilde{Q}^{\natural}$, whose components are $(Q^0, -Q^1, -Q^2, -Q^3)$, divided by the complex scalar $N$.
 
 **Example.** For the element $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$ of the preceding example, the biquaternion norm is
 
@@ -254,7 +254,7 @@ $$
 so $\tilde{Q}$ is a unit, with four-vector inverse $\tfrac{1}{11+2i}(2+i, -1+i, -3, -i)$. Under conjugation the biquaternion norm becomes
 
 $$
-N(\bar{\tilde{Q}}) = N(\tilde{Q}) = 11+2i, \qquad N(\tilde{Q}^{*}) = N(\tilde{Q})^{*} = 11-2i, \qquad N(\tilde{Q}^{\dagger}) = 11-2i,
+N(\tilde{Q}^{\natural}) = N(\tilde{Q}) = 11+2i, \qquad N(\bar{\tilde{Q}}) = N(\tilde{Q})^{*} = 11-2i, \qquad N(\tilde{Q}^{*}) = 11-2i,
 $$
 
 and multiplication by $i$ reverses its sign, $N(i\tilde{Q}) = -N(\tilde{Q}) = -11-2i$. The element is neither Hermitian nor anti-Hermitian, since its scalar component $2+i$ is neither real nor purely imaginary; its Hermitian part, computed above, has four-vector $(2, -i, 0, i)$ and lies in $\mathbb{M}_+$, where the restriction of the biquaternion norm is $(a^0)^2 - (a^1)^2 - (a^2)^2 - (a^3)^2$ with $(a^0, a^1, a^2, a^3) = (2, -1, 0, 1)$, that is, $4 - 1 - 0 - 1 = 2$. An element of $\mathbb{M}_-$ is written $Q^\mu = (i a^0, a^1, a^2, a^3)$ with real $a^\mu$, and on it the same restriction is the indefinite expression $- (a^0)^2 + (a^1)^2 + (a^2)^2 + (a^3)^2$ of the previous proposition.
@@ -278,12 +278,12 @@ The product in components has scalar part $Q^0 R^0 - \sum_k Q^k R^k$ and vector 
 | $a^\mu, b^\mu$ | Real and imaginary parts of the components, $Q^\mu = a^\mu + i b^\mu$ |
 | $\rho_L(\tilde{Q})$ | Matrix of left multiplication on the coefficient space, constructed in *Biquaternion 4×4 Regular Matrix Element Representation* |
 | $\epsilon^{ijk}$ | Levi-Civita symbol on the indices $1, 2, 3$ |
-| $\bar{\cdot}$ | Quaternion conjugation, negates the vector components |
-| ${}^{*}$ | Complex conjugation, conjugates every component |
-| ${}^{\dagger} = \bar{\cdot} \circ {}^{*}$ | Hermitian conjugation |
-| ${}^{\flat} = -\dagger$ | Anti-Hermitian conjugation |
+| ${}^{\natural}$ | Quaternion conjugation, negates the vector components |
+| $\bar{\cdot}$ | Complex conjugation, conjugates every component |
+| ${}^{*} = {}^{\natural} \circ \bar{\cdot}$ | Hermitian conjugation |
+| ${}^{\flat} = -{}^{*}$ | Anti-Hermitian conjugation |
 | $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ | The six distinguished subspaces |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm, multiplicative |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm, multiplicative |
 | $O(1,3)$, $O(3,1)$ | Orthogonal groups of the restrictions to $\mathbb{M}_+$, $\mathbb{M}_-$ |
 
 ## Further Reading

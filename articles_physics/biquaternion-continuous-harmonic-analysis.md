@@ -20,7 +20,7 @@ $$
 \tilde{Q} = Q_0 e_0 + \mathbf{Q}, \qquad \mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
 $$
 
-The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.
+The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.
 
 **Notation.** To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the scalar imaginary $i$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in *Biquaternion Zero Divisors*.
 
@@ -360,10 +360,10 @@ which is a biquaternion-valued multiplier. The precise form depends on the sign 
 
 ### The Convective Derivative
 
-The convective derivative $\tilde{D} = \bar{\tilde{U}} \tilde{\nabla}$ becomes multiplication by the biquaternion
+The convective derivative $\tilde{D} = \tilde{U}^{\natural} \tilde{\nabla}$ becomes multiplication by the biquaternion
 
 $$
-\bar{\tilde{U}} \cdot 2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
+\tilde{U}^{\natural} \cdot 2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
 $$
 
 which depends on the velocity biquaternion $\tilde{U}$ and on the frequency variables. The multiplier is a biquaternion, and its vanishing determines the dispersion relation of the operator.
@@ -497,7 +497,7 @@ $$
 \|Z(x)\|_E^2 = \sum_{\mu=0}^{3} \lvert Z_\mu(x) \rvert^2 \ge 0 ,
 $$
 
-so the Euclidean quadratic form is non-negative, and $\|\cdot\|_E$ is the pairing this article already uses for convergence. The Hermitian pairing of *The GNS Construction in the Biquaternion Framework*, $\mathrm{Tr}(\tilde A^\dagger \tilde B) = 2\sum_\mu \overline{A_\mu}B_\mu$, is the same definite object, and it is the pairing the framework's states are built on. What the exchange costs is the algebra: the Euclidean form is not the norm of the transform, and it does not factor through the product of $\mathbb{B}$.
+so the Euclidean quadratic form is non-negative, and $\|\cdot\|_E$ is the pairing this article already uses for convergence. The Hermitian pairing of *The GNS Construction in the Biquaternion Framework*, $\mathrm{Tr}(\tilde A^{*} \tilde B) = 2\sum_\mu \overline{A_\mu}B_\mu$, is the same definite object, and it is the pairing the framework's states are built on. What the exchange costs is the algebra: the Euclidean form is not the norm of the transform, and it does not factor through the product of $\mathbb{B}$.
 
 **Physical reading.** The measure is the distribution of the momenta of a mode, and the quadratic form of its transform is the framework's attempt to read a probability off that distribution. The attempt fails exactly where the algebra is biquaternionic: the central imaginary unit is a unit of the algebra with $N(i) = -1$, so the norm cannot be the density of a state, and a Bochner-type theorem cannot be stated with it. The framework therefore builds its states on the Hermitian pairing instead — the Hilbert–Schmidt inner product of *The GNS Construction in the Biquaternion Framework*, whose positivity is the positivity a state requires. What the definite pairing buys is a state space, and what it costs is the algebra's own norm: the pairing that makes the states exist is not the pairing that makes the algebra.
 
@@ -575,10 +575,10 @@ The continuous transform is the limit of the discrete transform as the sampling 
 | $K = W_1W_2$ | Two-unit kernel, one unit per variable; the order of the factors is part of the definition, and $K(x,\omega)^{-1} = W_2(x_2,-\omega_2)W_1(x_1,-\omega_1)$ |
 | $\mu$, $G(\omega) = \int \chi_\omega \, d\mu$ | Finite positive measure and its transform; $G(0) = \mu(\mathbb{R}^n)e_0$, and $\sum_{k,l}\bar z_kz_l G(\omega_k-\omega_l) = \int N(Z) \, d\mu$ for central coefficients |
 | $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | Vector part of a biquaternion |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm; it vanishes on the zero divisors |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; it vanishes on the zero divisors |
 | $\tilde{\nabla}$ | Biquaternionic gradient on a four-dimensional subspace |
-| $\Box = \partial_0^2 + \Delta$ | d'Alembertian, the scalar part of $\tilde{\nabla}\bar{\tilde{\nabla}}$ |
-| $\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$ | Convective derivative with velocity $\tilde{U}$ |
+| $\Box = \partial_0^2 + \Delta$ | d'Alembertian, the scalar part of $\tilde{\nabla}\tilde{\nabla}^{\natural}$ |
+| $\tilde{D} = \tilde{U}^{\natural}\tilde{\nabla}$ | Convective derivative with velocity $\tilde{U}$ |
 
 ## Further Reading
 

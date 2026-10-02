@@ -13,7 +13,7 @@ The zero divisors split into two families, and the split is the same one that or
 
 The article closes with the distribution of the zero divisors over the six distinguished subspaces — this is where the causal structure appears explicitly, as the double cones inside the two Hermitian sectors — and with the zero divisor set itself.
 
-**Conventions.** The quaternion basis is $e_0 = 1,e_1,e_2,e_3$ and the scalar imaginary is $i$; a general element is $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are $\bar{\tilde{Q}}$, $\tilde{Q}^*$ and $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. The material coordinate is $ict\,e_0+\mathbf{x}$ and the informational coordinate is $ct'\,e_0+i\mathbf{x}'$.
+**Conventions.** The quaternion basis is $e_0 = 1,e_1,e_2,e_3$ and the scalar imaginary is $i$; a general element is $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are $\tilde{Q}^{\natural}$, $\bar{\tilde{Q}}$ and \tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}, the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. The material coordinate is $ict\,e_0+\mathbf{x}$ and the informational coordinate is $ct'\,e_0+i\mathbf{x}'$.
 
 ## Definition and Criterion
 
@@ -31,7 +31,7 @@ Both elements are required to be nonzero; in particular $\tilde{Q} = 0$ is not a
 
 **Theorem.** A nonzero biquaternion $\tilde{Q}$ is a zero divisor if and only if $N(\tilde{Q}) = 0$.
 
-**Proof.** If $\tilde{Q}\neq0$ and $N(\tilde{Q}) = 0$, then $\tilde{Q}\bar{\tilde{Q}} = 0$ and $\bar{\tilde{Q}}\neq0$, so $\tilde{R} = \bar{\tilde{Q}}$ witnesses the definition.
+**Proof.** If $\tilde{Q}\neq0$ and $N(\tilde{Q}) = 0$, then $\tilde{Q}\tilde{Q}^{\natural} = 0$ and $\tilde{Q}^{\natural}\neq0$, so $\tilde{R} = \tilde{Q}^{\natural}$ witnesses the definition.
 
 Conversely, if $\tilde{Q}\circ\tilde{R} = 0$ with $\tilde{R}\neq0$ and $N(\tilde{Q})\neq0$, then $\tilde{Q}$ is invertible and left multiplication by $\tilde{Q}^{-1}$ gives $\tilde{R} = 0$, a contradiction.
 
@@ -311,7 +311,7 @@ The zero divisor set is a complex cone of complex dimension 3, real dimension 6,
 | $\mathbb{B}$ | Biquaternion algebra |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | General biquaternion |
 | $Q_\mu = q_\mu+iq'_\mu$ | Complex coefficient |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm; vanishes exactly on the zero divisors |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; vanishes exactly on the zero divisors |
 | $\mathcal{Z}$ | Zero divisor set: the null cone minus the origin |
 | $\tilde{Q}^2 = 0$ | Nilpotent equation: the pure (parabolic) zero divisors |
 | $\tilde{P} = \tilde{Q}/(2Q_0)$ | The idempotent of a non-pure zero divisor |

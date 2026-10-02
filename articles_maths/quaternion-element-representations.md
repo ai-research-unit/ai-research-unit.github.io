@@ -51,7 +51,7 @@ Because $\mathbb{H}$ is not commutative, there are two distinct regular represen
 
 **Right regular representation.** $\rho_R(\tilde q) r = r \tilde q$. This is a right action rather than a left one: $\rho_R(\tilde q) \rho_R(\tilde q') = \rho_R(\tilde q' \tilde q)$.
 
-Composing the right action with the anti-automorphism $\tilde q \mapsto \bar{\tilde q}$ gives a left representation $\rho_R(\tilde q) r = r \bar{\tilde q}$, and the map $r \mapsto \bar{r}$ intertwines it with $\rho_L$, so the two regular representations are isomorphic.
+Composing the right action with the anti-automorphism $\tilde q \mapsto \tilde{q}^{\natural}$ gives a left representation $\rho_R(\tilde q) r = r \tilde{q}^{\natural}$, and the map $r \mapsto \bar{r}$ intertwines it with $\rho_L$, so the two regular representations are isomorphic.
 
 ## Representations of the Algebra
 
@@ -219,17 +219,17 @@ So $\mathbb{H}$ is a **semisimple** algebra: every representation is a direct su
 
 ### Definition
 
-The **dual** (or contragredient) representation of a representation $\rho$ on $V$ is the representation $\rho^*$ on the dual space $V^* = \operatorname{Hom}_F(V, F)$ defined by
+The **dual** (or contragredient) representation of a representation $\rho$ on $V$ is the representation $\bar{\rho}$ on the dual space $V^* = \operatorname{Hom}_F(V, F)$ defined by
 
 $$
-(\rho^*(\tilde q) f)(v) = f(\rho(\tilde q) v), \qquad \tilde q \in \mathbb{H}, \; f \in V^*, \; v \in V.
+(\bar{\rho}(\tilde q) f)(v) = f(\rho(\tilde q) v), \qquad \tilde q \in \mathbb{H}, \; f \in V^*, \; v \in V.
 $$
 
 ### Basic Properties
 
 **Duality is an involution.** $(V^*)^* \cong V$ for finite-dimensional $V$.
 
-**Duality is exact.** It preserves direct sums: $(V \oplus W)^* \cong V^* \oplus W^*$.
+**Duality is exact.** It preserves direct sums: $(V \oplus W)^* \cong V^* \oplus \bar{W}$.
 
 **The dual of an irreducible is irreducible.** $\rho_{\mathrm{reg}}^* \cong \rho_{\mathrm{reg}}$.
 
@@ -246,7 +246,7 @@ $$
 satisfies
 
 $$
-\langle \rho^*(\tilde q) f, v \rangle = \langle f, \rho(\tilde q) v \rangle.
+\langle \bar{\rho}(\tilde q) f, v \rangle = \langle f, \rho(\tilde q) v \rangle.
 $$
 
 This is the definition of the dual representation, written as a pairing.

@@ -300,7 +300,7 @@ A norm and a norm are different objects, and the difference governs what the ana
 **Example (the biquaternions).** For $\mathbb{B}$ the quadratic form $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is complex-valued and vanishes on the nonzero zero divisors, so it is the norm of the algebra and not a norm in the analytic sense. The Euclidean norm
 
 $$
-\|\tilde{Q}\|_E = \Bigl(\sum_{\mu} |Q_\mu|^2\Bigr)^{1/2} = \Bigl(\mathrm{Sc}(\tilde{Q}\tilde{Q}^\dagger)\Bigr)^{1/2}
+\|\tilde{Q}\|_E = \Bigl(\sum_{\mu} |Q_\mu|^2\Bigr)^{1/2} = \Bigl(\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})\Bigr)^{1/2}
 $$
 
 is a genuine norm, positive definite and vanishing only at $\tilde{Q} = 0$; it is not multiplicative, and it carries no information about divisibility: an element can be a zero divisor while having large Euclidean norm. This is the reason $\mathbb{B}$ is a Banach algebra but not a normed division algebra, and it is why the analysis over $\mathbb{B}$ must work with the norm and the quadratic structure rather than with a multiplicative absolute value.
