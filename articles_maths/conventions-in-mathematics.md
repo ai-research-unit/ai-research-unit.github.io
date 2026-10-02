@@ -87,13 +87,14 @@ where the four coefficients $Q_\mu$ are complex, and each of them splits into a 
 
 The shape is the same in the quaternion systems; only the coefficient sector changes.
 
-| System | Generic element | Coefficients |
-|---|---|---|
-| $\mathbb{H}$ | $q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ | real |
-| $\mathbb{B}$ | $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ | complex, $Q_\mu = q_\mu + iq'_\mu$ |
-| $\mathbb{H}_{\mathbb{D}}$ | $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ | split-complex, $Q_\mu = q_\mu + jq'_\mu$ |
+| System | Name | Generic element | Coefficients |
+|---|---|---|---|
+| $\mathbb{R}$ | reals | $a$ | real |
+| $\mathbb{C}$ | complex numbers | $Z = a + ib$ | complex |
+| $\mathbb{H}$ | quaternions | $q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ | real |
+| $\mathbb{B}$ | biquaternions | $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ | complex, $Q_\mu = q_\mu + iq'_\mu$ |
 
-The unit $e_0$ is the identity in each of them. The real and the imaginary part of a coefficient may be read off only where the scalar sector is larger than the reals, which is the case in $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$ and not in $\mathbb{H}$.
+The unit $e_0$ is the identity in the two quaternion systems. The real and the imaginary part of a coefficient may be read off only where the scalar sector is larger than the reals, which is the case in $\mathbb{C}$ and $\mathbb{B}$ and not in $\mathbb{R}$ or $\mathbb{H}$.
 
 ### The conjugations and the adjoint
 

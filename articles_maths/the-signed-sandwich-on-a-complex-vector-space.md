@@ -23,24 +23,24 @@ Throughout, $V$ is a finite-dimensional complex vector space of dimension $n$ wi
 $$
 \Phi_{a,b}(X) = aXb, \qquad \Theta^{\alpha}_{a,b}(X) = a\,\alpha(X)\,b .
 $$
-The signed sandwich is the composite $\Theta^{\alpha}_{a,b} = \Phi_{a,\alpha(b)}\circ\alpha = \alpha\circ\Phi_{\alpha(a),b}$, and the inversion $\alpha$ is the only difference between the two families.
+The signed sandwich is the composite $\Theta^{\alpha}_{a,b} = \Phi_{a,b}\circ\alpha = \alpha\circ\Phi_{\alpha(a),\alpha(b)}$, and the involution $\alpha$ is the only difference between the two families.
 
 **Proposition (composition).** For all $a,b,c,d \in E$,
 $$
-\Theta^{\alpha}_{a,b}\,\Theta^{\alpha}_{c,d} = \Theta^{\alpha}_{a\alpha(d),\,\alpha(c)b}, \qquad
+\Theta^{\alpha}_{a,b}\,\Theta^{\alpha}_{c,d} = \Theta^{\alpha}_{a\alpha(c),\,\alpha(d)b}, \qquad
 \Phi_{a,b}\,\Theta^{\alpha}_{c,d} = \Theta^{\alpha}_{ac,\,db}, \qquad
 \Theta^{\alpha}_{a,b}\,\Phi_{c,d} = \Theta^{\alpha}_{a\alpha(d),\,\alpha(c)b}.
 $$
 Thus the set of signed sandwiches is closed under composition, and each product of a signed and an unsigned sandwich is again a signed sandwich; the unsigned sandwiches are closed among themselves, $\Phi_{a,b}\Phi_{c,d} = \Phi_{ac,db}$.
 
-**Proof.** Direct computation: $\Theta^{\alpha}_{a,b}(\Theta^{\alpha}_{c,d}(X)) = a\alpha(c\alpha(X)d)b = a\alpha(d)\,\alpha(\alpha(X))\,\alpha(c)b = a\alpha(d)X\alpha(c)b = \Theta^{\alpha}_{a\alpha(d),\alpha(c)b}(X)$, using $\alpha^2 = \mathrm{id}$; the other two are the same computation with one factor unsigned, and the unsigned law is associativity.
+**Proof.** Direct computation: $\Theta^{\alpha}_{a,b}(\Theta^{\alpha}_{c,d}(X)) = a\alpha(c\alpha(X)d)b = a\,\alpha(c)\,\alpha(\alpha(X))\,\alpha(d)\,b = a\alpha(c)X\alpha(d)b = \Theta^{\alpha}_{a\alpha(c),\alpha(d)b}(X)$, using that $\alpha$ is an algebra automorphism with $\alpha^2 = \mathrm{id}$; the other two are the same computation with one factor unsigned, and the unsigned law is associativity.
 
 **Corollary (invertibility and inverse).** $\Theta^{\alpha}_{a,b}$ is invertible if and only if $a$ and $b$ are invertible, and then
 $$
-\bigl(\Theta^{\alpha}_{a,b}\bigr)^{-1} = \Theta^{\alpha}_{\alpha(b^{-1}),\,\alpha(a^{-1})} .
+\bigl(\Theta^{\alpha}_{a,b}\bigr)^{-1} = \Theta^{\alpha}_{\alpha(a^{-1}),\,\alpha(b^{-1})} .
 $$
 
-**Proof.** Invertibility follows from the factorisation $\Theta^{\alpha}_{a,b} = \Phi_{a,\alpha(b)}\circ\alpha$ and the invertibility of $\alpha$. The inverse is checked by the composition law: with $c = \alpha(b^{-1})$ and $d = \alpha(a^{-1})$ one has $a\alpha(d) = a\alpha(\alpha(a^{-1})) = aa^{-1} = \mathrm{id}$ and $\alpha(c)b = \alpha(\alpha(b^{-1}))b = b^{-1}b = \mathrm{id}$, so the composite is $\Theta^{\alpha}_{\mathrm{id},\mathrm{id}} = \mathrm{id}$, and likewise on the other side.
+**Proof.** Invertibility follows from the factorisation $\Theta^{\alpha}_{a,b} = \Phi_{a,b}\circ\alpha$ and the invertibility of $\alpha$. The inverse is checked by the composition law: with $c = \alpha(a^{-1})$ and $d = \alpha(b^{-1})$ one has $a\alpha(c) = a\alpha(\alpha(a^{-1})) = aa^{-1} = \mathrm{id}$ and $\alpha(d)b = \alpha(\alpha(b^{-1}))b = b^{-1}b = \mathrm{id}$, so the composite is $\Theta^{\alpha}_{\mathrm{id},\mathrm{id}} = \mathrm{id}$, and likewise on the other side.
 
 **Definition.** The **inner signed sandwich** of an invertible $a$ is
 $$
@@ -81,11 +81,11 @@ and it is an involution exactly when $u\alpha(u)$ is central. If moreover $\alph
 
 **Proposition (the unsigned sandwich as the trivial involution).** The signed sandwich with $\alpha = \mathrm{id}$ is the unsigned sandwich, $\Theta^{\mathrm{id}}_{a,b} = \Phi_{a,b}$; for the general grade involution,
 $$
-\Theta^{\alpha}_{a,b} = \Phi_{a,\alpha(b)}\circ\alpha = \alpha\circ\Phi_{\alpha(a),b},
+\Theta^{\alpha}_{a,b} = \Phi_{a,b}\circ\alpha = \alpha\circ\Phi_{\alpha(a),\alpha(b)},
 $$
 so the signed family is the unsigned family composed with the involution $\alpha$, and the diagonal case $b = a^{-1}$ is the inner signed sandwich $\Theta^{\alpha}_{a,a^{-1}} = \mathrm{Ad}_a\circ\alpha$, an inner automorphism followed by the involution.
 
-**Proof.** The identity $\Theta^{\alpha}_{a,b} = \Phi_{a,\alpha(b)}\circ\alpha$ is the definition, and $\alpha\circ\Phi_{\alpha(a),b}(X) = \alpha(\alpha(a)Xb) = a\alpha(X)\alpha(b)$, which is $\Theta^{\alpha}_{a,\alpha(b)}(X)$... reading it as a two-sided multiplication by $a$ on the left and $\alpha(b)$ on the right after the involution. The diagonal case follows on setting $b = a^{-1}$.
+**Proof.** The identity $\Theta^{\alpha}_{a,b} = \Phi_{a,b}\circ\alpha$ is the definition: $\Phi_{a,b}(\alpha(X)) = a\alpha(X)b$. For the second, $\alpha\circ\Phi_{\alpha(a),\alpha(b)}(X) = \alpha(\alpha(a)X\alpha(b)) = a\alpha(X)b = \Theta^{\alpha}_{a,b}(X)$, using $\alpha^2 = \mathrm{id}$. The diagonal case follows on setting $b = a^{-1}$.
 
 **Remark (the failure in the degenerate cases).** Two degenerations break the correspondence between the signed sandwich and the geometry. When $\alpha = \mathrm{id}$ the signed and unsigned sandwiches coincide and the family carries no sign at all; this is the collapse of the $\mathbb Z/2$-grading, and the reflections are then ordinary conjugations. When the Hermitian form $h$ is degenerate, or when the vector $u$ is **isotropic**, $h(u,u) = 0$, the formula for $\rho_u$ is undefined and there is no unitary reflection in $u$; the signed sandwich by such an element still exists as an operator on $E$ but realises no reflection of $V$, so the correspondence between the elements acting by an involution and the reflections of the space fails exactly where the chosen form degenerates.
 
@@ -93,7 +93,7 @@ so the signed family is the unsigned family composed with the involution $\alpha
 
 ## Summary
 
-On the endomorphism algebra $E = \operatorname{End}_{\mathbb C}(V)$ of a complex vector space the signed sandwich $\Theta^{\alpha}_{a,b}(X) = a\alpha(X)b$ is the twist of the two-sided multiplication by the grade involution $\alpha(X) = TXT$, with the composition laws $\Theta^{\alpha}_{a,b}\Theta^{\alpha}_{c,d} = \Theta^{\alpha}_{a\alpha(d),\alpha(c)b}$, $\Phi_{a,b}\Theta^{\alpha}_{c,d} = \Theta^{\alpha}_{ac,db}$ and $\Phi_{a,b}\Phi_{c,d} = \Phi_{ac,db}$, and with inverse $(\Theta^{\alpha}_{a,b})^{-1} = \Theta^{\alpha}_{\alpha(b^{-1}),\alpha(a^{-1})}$. The inner signed sandwich $\Theta^{\alpha}_{a,a^{-1}} = \mathrm{Ad}_a\circ\alpha$ has square $\mathrm{Ad}_{a\alpha(a)}$, so it is an involution exactly when $a\alpha(a)$ is central, and when $T$ is unitary and self-adjoint and $u$ is unitary it preserves the Hermitian trace form $\langle X,Y\rangle = \operatorname{tr}(X^\dagger Y)$; the unitary reflections $\rho_u(v) = v - 2h(v,u)h(u,u)^{-1}u$ of the Hermitian space are the elements whose conjugations are the realised involutions, and each reflection is fixed by its own signed inner sandwich. The signed family is the unsigned family $\Phi_{a,b}(X) = aXb$ composed with $\alpha$, the case $\alpha = \mathrm{id}$ being the unsigned one; the correspondence with the reflections fails when $\alpha = \mathrm{id}$ and when the form is degenerate or the vector isotropic. The laws, the involutive-subspace theory and the reflections are *The Signed Sandwich on a Linear Space*, *Involutive Linear Spaces* and *Reflections as Signed Two-Sided Operators on a Complex Vector Space*; the adjoint is *The Signed Adjoint Sandwich on a Complex Vector Space*.
+On the endomorphism algebra $E = \operatorname{End}_{\mathbb C}(V)$ of a complex vector space the signed sandwich $\Theta^{\alpha}_{a,b}(X) = a\alpha(X)b$ is the twist of the two-sided multiplication by the grade involution $\alpha(X) = TXT$, with the composition laws $\Theta^{\alpha}_{a,b}\Theta^{\alpha}_{c,d} = \Theta^{\alpha}_{a\alpha(c),\alpha(d)b}$, $\Phi_{a,b}\Theta^{\alpha}_{c,d} = \Theta^{\alpha}_{ac,db}$ and $\Phi_{a,b}\Phi_{c,d} = \Phi_{ac,db}$, and with inverse $(\Theta^{\alpha}_{a,b})^{-1} = \Theta^{\alpha}_{\alpha(a^{-1}),\alpha(b^{-1})}$. The inner signed sandwich $\Theta^{\alpha}_{a,a^{-1}} = \mathrm{Ad}_a\circ\alpha$ has square $\mathrm{Ad}_{a\alpha(a)}$, so it is an involution exactly when $a\alpha(a)$ is central, and when $T$ is unitary and self-adjoint and $u$ is unitary it preserves the Hermitian trace form $\langle X,Y\rangle = \operatorname{tr}(X^\dagger Y)$; the unitary reflections $\rho_u(v) = v - 2h(v,u)h(u,u)^{-1}u$ of the Hermitian space are the elements whose conjugations are the realised involutions, and each reflection is fixed by its own signed inner sandwich. The signed family is the unsigned family $\Phi_{a,b}(X) = aXb$ composed with $\alpha$, the case $\alpha = \mathrm{id}$ being the unsigned one; the correspondence with the reflections fails when $\alpha = \mathrm{id}$ and when the form is degenerate or the vector isotropic. The laws, the involutive-subspace theory and the reflections are *The Signed Sandwich on a Linear Space*, *Involutive Linear Spaces* and *Reflections as Signed Two-Sided Operators on a Complex Vector Space*; the adjoint is *The Signed Adjoint Sandwich on a Complex Vector Space*.
 
 ## Summary of Notation
 

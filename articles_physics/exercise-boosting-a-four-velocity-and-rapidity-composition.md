@@ -10,13 +10,13 @@ $$
 \qquad
 \tanh\psi_u = \frac{u}{c},
 $$
-which is Hermitian ($\tilde{\Lambda}_{\mathbf{u}}^\dagger = \tilde{\Lambda}_{\mathbf{u}}$), lies in $\mathbb{M}_+$, and has unit norm. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; $\mathbf{v}$ is a particle velocity, and $\hat{\mathbf{u}}, \hat{\mathbf{n}}$ are unit frame or boost directions. The components of a biquaternion are taken in the basis $(e_0,e_1,e_2,e_3)$.
+which is Hermitian ($\tilde{\Lambda}_{\mathbf{u}}^{*} = \tilde{\Lambda}_{\mathbf{u}}$), lies in $\mathbb{M}_+$, and has unit norm. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; $\mathbf{v}$ is a particle velocity, and $\hat{\mathbf{u}}, \hat{\mathbf{n}}$ are unit frame or boost directions. The components of a biquaternion are taken in the basis $(e_0,e_1,e_2,e_3)$.
 
-**What is to be shown.** Problem 1 computes $\tilde{\Lambda}_{\mathbf{u}}\tilde{U}\tilde{\Lambda}_{\mathbf{u}}^\dagger$ for arbitrary $\mathbf{u},\mathbf{v}$ and shows that it is again a four-velocity of $\mathbb{M}_-$ with the standard components. Problem 2 composes two collinear boost rotors and derives rapidity addition and the velocity-addition formula. Problem 3 composes two non-collinear boosts, shows that the product is no longer a pure boost, and extracts the boost part, the total rapidity, and the Thomas–Wigner angle. Problem 4 verifies the parent's relation $\tilde{\Lambda} = \sqrt{-\tfrac{i}{c}\tilde{U}^{\natural}}$, determines the direction of the transformation it generates, and identifies what the four-velocity does and does not determine. The problems are solved in full; the reader is asked in the final section to extend them.
+**What is to be shown.** Problem 1 computes $\tilde{\Lambda}_{\mathbf{u}}\tilde{U}\tilde{\Lambda}_{\mathbf{u}}^{*}$ for arbitrary $\mathbf{u},\mathbf{v}$ and shows that it is again a four-velocity of $\mathbb{M}_-$ with the standard components. Problem 2 composes two collinear boost rotors and derives rapidity addition and the velocity-addition formula. Problem 3 composes two non-collinear boosts, shows that the product is no longer a pure boost, and extracts the boost part, the total rapidity, and the Thomas–Wigner angle. Problem 4 verifies the parent's relation $\tilde{\Lambda} = \sqrt{-\tfrac{i}{c}\tilde{U}^{\natural}}$, determines the direction of the transformation it generates, and identifies what the four-velocity does and does not determine. The problems are solved in full; the reader is asked in the final section to extend them.
 
 ## Problem 1: The Boost of a General Four-Velocity
 
-**Statement.** Let $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ be the four-velocity of a particle, and let $\tilde{\Lambda}_{\mathbf{u}} = \cosh\frac{\psi_u}{2} + i\sinh\frac{\psi_u}{2}\hat{\mathbf{u}}$, with $\tanh\psi_u = u/c$, be a boost biquaternion. Compute $\tilde{U}' = \tilde{\Lambda}_{\mathbf{u}}\tilde{U}\tilde{\Lambda}_{\mathbf{u}}^\dagger$ and show that:
+**Statement.** Let $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ be the four-velocity of a particle, and let $\tilde{\Lambda}_{\mathbf{u}} = \cosh\frac{\psi_u}{2} + i\sinh\frac{\psi_u}{2}\hat{\mathbf{u}}$, with $\tanh\psi_u = u/c$, be a boost biquaternion. Compute $\tilde{U}' = \tilde{\Lambda}_{\mathbf{u}}\tilde{U}\tilde{\Lambda}_{\mathbf{u}}^{*}$ and show that:
 
 **(a)** $\tilde{U}'$ lies in $\mathbb{M}_-$ and has $N(\tilde{U}') = -c^2$;
 
@@ -26,7 +26,7 @@ which is Hermitian ($\tilde{\Lambda}_{\mathbf{u}}^\dagger = \tilde{\Lambda}_{\ma
 
 **(d)** in the collinear case $\mathbf{v}\parallel\mathbf{u}$ the induced velocity is $v' = (v-u)/(1-uv/c^2)$, i.e. the rapidities subtract.
 
-**Solution.** Because a pure-boost rotor is Hermitian, $\tilde{\Lambda}_{\mathbf{u}}^\dagger = \tilde{\Lambda}_{\mathbf{u}}$, and the transformation is the two-sided product $\tilde{\Lambda}_{\mathbf{u}}\tilde{U}\tilde{\Lambda}_{\mathbf{u}}$. Write $a = \cosh\frac{\psi_u}{2}$, $b = \sinh\frac{\psi_u}{2}$, and $J = \hat{\mathbf{u}}$, a real unit pure quaternion with $J^2 = -e_0$. Split the velocity into parts parallel and perpendicular to $J$,
+**Solution.** Because a pure-boost rotor is Hermitian, $\tilde{\Lambda}_{\mathbf{u}}^{*} = \tilde{\Lambda}_{\mathbf{u}}$, and the transformation is the two-sided product $\tilde{\Lambda}_{\mathbf{u}}\tilde{U}\tilde{\Lambda}_{\mathbf{u}}$. Write $a = \cosh\frac{\psi_u}{2}$, $b = \sinh\frac{\psi_u}{2}$, and $J = \hat{\mathbf{u}}$, a real unit pure quaternion with $J^2 = -e_0$. Split the velocity into parts parallel and perpendicular to $J$,
 $$
 \mathbf{v} = \mathbf{v}_\parallel + \mathbf{v}_\perp, \qquad \mathbf{v}_\parallel = v_\parallel J, \qquad J\,\mathbf{v}_\parallel = -v_\parallel, \qquad J\,\mathbf{v}_\perp = J\times\mathbf{v}_\perp, \qquad \mathbf{v}_\perp J = -J\times\mathbf{v}_\perp .
 $$
@@ -37,7 +37,7 @@ $$
 $$
 Multiplying once more on the right by $\tilde{\Lambda} = a + ibJ$ and collecting the scalar and vector parts gives
 $$
-\tilde{\Lambda}_{\mathbf{u}}\tilde{U}\tilde{\Lambda}_{\mathbf{u}}^\dagger
+\tilde{\Lambda}_{\mathbf{u}}\tilde{U}\tilde{\Lambda}_{\mathbf{u}}^{*}
 = ic\,\gamma_u\gamma\left(1 - \frac{\mathbf{u}\cdot\mathbf{v}}{c^2}\right)e_0
 + \gamma\left[\mathbf{v} + (\gamma_u-1)\frac{\mathbf{u}\cdot\mathbf{v}}{u^2}\mathbf{u} - \gamma_u\mathbf{u}\right].
 \tag{1}
@@ -331,7 +331,7 @@ At $\alpha\tau = 1$ this is exactly $1$. For $\alpha\tau > 1$ it exceeds $1$, re
 
 The following are left to the reader; they extend the same tools and use the same notation.
 
-1. **Boosting a four-momentum.** Starting from $\tilde{P} = m\tilde{U}$ and Problem 1, show that $\tilde{\Lambda}_{\mathbf{u}}\tilde{P}\tilde{\Lambda}_{\mathbf{u}}^\dagger = iE'/c\,e_0 + \mathbf{p}'$ with $E' = \gamma_u(E-\mathbf{u}\cdot\mathbf{p})$ and $\mathbf{p}' = \mathbf{p} + (\gamma_u-1)\frac{\mathbf{u}\cdot\mathbf{p}}{u^2}\mathbf{u} - \gamma_u\frac{E}{c^2}\mathbf{u}$. Verify the mass shell $\tilde{P}'\tilde{P}^{\natural}' = -m^2c^2$ and recover the aberration of light by setting $m=0$.
+1. **Boosting a four-momentum.** Starting from $\tilde{P} = m\tilde{U}$ and Problem 1, show that $\tilde{\Lambda}_{\mathbf{u}}\tilde{P}\tilde{\Lambda}_{\mathbf{u}}^{*} = iE'/c\,e_0 + \mathbf{p}'$ with $E' = \gamma_u(E-\mathbf{u}\cdot\mathbf{p})$ and $\mathbf{p}' = \mathbf{p} + (\gamma_u-1)\frac{\mathbf{u}\cdot\mathbf{p}}{u^2}\mathbf{u} - \gamma_u\frac{E}{c^2}\mathbf{u}$. Verify the mass shell $\tilde{P}'\tilde{P}^{\natural}' = -m^2c^2$ and recover the aberration of light by setting $m=0$.
 
 2. **Antiparallel boosts.** For $\hat{\mathbf{n}}_2 = -\hat{\mathbf{n}}_1$, show that $\tilde{\Lambda}_2\tilde{\Lambda}_1$ is a pure boost of rapidity $|\psi_1-\psi_2|$ (with the sign determined by which rapidity is larger) and that the Wigner angle (10) vanishes. Deduce the subtraction formula $w = |u_1-u_2|/(1-u_1u_2/c^2)$ and compare with Problem 1(d).
 

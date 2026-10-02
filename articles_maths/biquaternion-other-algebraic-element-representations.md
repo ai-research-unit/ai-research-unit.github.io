@@ -226,7 +226,7 @@ Three properties carry the whole correspondence, and each is exact:
 
 1. **Products.** The map is a ring isomorphism: the image of the array product is the product of the images, $\Phi(\tilde{\mathcal{P}}\tilde{\mathcal{Q}}) = \Phi(\tilde{\mathcal{P}})\Phi(\tilde{\mathcal{Q}})$, when the sizes match. This is the explicit form of $M_n(\mathbb{B}) \cong M_{2n}(\mathbb{C})$;
 2. **Trace.** For a square array the trace of the image is twice the trace of the scalar component matrix, $\mathrm{tr}\,\Phi(\tilde{\mathcal{Q}}) = 2\,\mathrm{tr}\,Q_0$, which is the algebra trace $2\,\mathrm{Sc}$ summed over the diagonal. It is a complex number, and it vanishes for a traceless scalar component;
-3. **Dagger.** Transposing the array and applying the Hermitian conjugation to each entry, $(\tilde{\mathcal{Q}}^{\dagger})_{ij} = (\tilde Q_{ji})^{\dagger}$, carries the image to the conjugate transpose, $\Phi(\tilde{\mathcal{Q}}^{\dagger}) = \Phi(\tilde{\mathcal{Q}})^{\dagger}$.
+3. **Dagger.** Transposing the array and applying the Hermitian conjugation to each entry, $(\tilde{\mathcal{Q}}^{\dagger})_{ij} = (\tilde Q_{ji})^{*}$, carries the image to the conjugate transpose, $\Phi(\tilde{\mathcal{Q}}^{\dagger}) = \Phi(\tilde{\mathcal{Q}})^{\dagger}$.
 
 All three were checked on 100 random arrays of sizes up to $3\times3$ in exact arithmetic, with zero mismatches. The first also holds for non-square arrays whenever the sizes are conformable, and the second requires a square array.
 

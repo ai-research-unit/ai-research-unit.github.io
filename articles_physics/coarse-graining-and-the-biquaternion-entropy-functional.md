@@ -336,7 +336,7 @@ The distinction between the two values of the functional is now exact, and it is
 **Reversible flow preserves the fine-grained entropy.** A reversible evolution of the sector is a matrix-unitary rotor conjugation,
 
 $$
-\tilde{\rho}(t) = \tilde{U}(t)\,\tilde{\rho}(0)\,\tilde{U}(t)^\dagger, \qquad \tilde{U}(t)\tilde{U}(t)^\dagger = e_0 .
+\tilde{\rho}(t) = \tilde{U}(t)\,\tilde{\rho}(0)\,\tilde{U}(t)^{*}, \qquad \tilde{U}(t)\tilde{U}(t)^{*} = e_0 .
 $$
 
 Such a map is an automorphism of the algebra; it rotates the Bloch vector without changing its length, $|\mathbf{r}(t)| = |\mathbf{r}(0)|$. Consequently
@@ -347,7 +347,7 @@ $$
 
 and the biquaternion norm is likewise invariant. This is the biquaternion form of **Liouville's theorem**: the fine-grained description carries a constant amount of information, and the reversible flow merely permutes it. The companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* develops the generator-level correspondence between the rotor and the Hamiltonian flow; the conservation of the biquaternion norm is the invariant that the correspondence preserves.
 
-**Coarse-graining produces the increase.** If a fixed coarse-graining $\Phi$ is applied to the state of a reversible flow $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^\dagger$, the entropy of the coarse description,
+**Coarse-graining produces the increase.** If a fixed coarse-graining $\Phi$ is applied to the state of a reversible flow $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^{*}$, the entropy of the coarse description,
 
 $$
 \mathcal{S}_{\rm cg}(t) = \mathcal{S}\!\left(\Phi(\tilde{\rho}(t))\right) \ge \mathcal{S}\!\left(\tilde{\rho}(t)\right) = \mathcal{S}\!\left(\tilde{\rho}(0)\right),

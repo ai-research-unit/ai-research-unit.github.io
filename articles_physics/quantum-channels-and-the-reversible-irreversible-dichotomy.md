@@ -99,7 +99,7 @@ $$
 \qquad \hat{\mathbf{h}} = \frac{\mathbf{h}}{|\mathbf{h}|},
 $$
 
-the trigonometric form following from $\hat{\mathbf{h}}^2 = -e_0$. The elements satisfy $\tilde{U}(t)\tilde{U}(t)^\dagger = e_0$ and form a one-parameter group, $\tilde{U}(t+s) = \tilde{U}(t)\tilde{U}(s)$, because they are functions of the single element $\tilde{H}$ and therefore commute. The state evolves by rotor conjugation $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^\dagger$, or in differential form $i\hbar\,\tfrac{d}{dt}\tilde{\rho}(t) = [\tilde{H}, \tilde{\rho}(t)]$, the von Neumann equation.
+the trigonometric form following from $\hat{\mathbf{h}}^2 = -e_0$. The elements satisfy $\tilde{U}(t)\tilde{U}(t)^{*} = e_0$ and form a one-parameter group, $\tilde{U}(t+s) = \tilde{U}(t)\tilde{U}(s)$, because they are functions of the single element $\tilde{H}$ and therefore commute. The state evolves by rotor conjugation $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^{*}$, or in differential form $i\hbar\,\tfrac{d}{dt}\tilde{\rho}(t) = [\tilde{H}, \tilde{\rho}(t)]$, the von Neumann equation.
 
 ### The Generator Lies in $\mathbb{M}_-$
 

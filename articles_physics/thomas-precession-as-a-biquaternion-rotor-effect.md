@@ -38,15 +38,15 @@ $$
 \hat{\mathbf{u}}=\frac{\mathbf{u}}{u},
 $$
 
-which is Hermitian, $\tilde{\Lambda}_{\mathbf{u}}^{\dagger}=\tilde{\Lambda}_{\mathbf{u}}$, lies in $\mathbb{M}_+$, and has unit norm, $\tilde{\Lambda}_{\mathbf{u}}\tilde{\Lambda}^{\natural}_{\mathbf{u}}=e_0$. It acts on a four-vector by **rotor conjugation**,
+which is Hermitian, $\tilde{\Lambda}_{\mathbf{u}}^{*}=\tilde{\Lambda}_{\mathbf{u}}$, lies in $\mathbb{M}_+$, and has unit norm, $\tilde{\Lambda}_{\mathbf{u}}\tilde{\Lambda}^{\natural}_{\mathbf{u}}=e_0$. It acts on a four-vector by **rotor conjugation**,
 
 $$
-\tilde{Q}'\;=\;\tilde{\Lambda}_{\mathbf{u}}\,\tilde{Q}\,\tilde{\Lambda}_{\mathbf{u}}^{\dagger},
+\tilde{Q}'\;=\;\tilde{\Lambda}_{\mathbf{u}}\,\tilde{Q}\,\tilde{\Lambda}_{\mathbf{u}}^{*},
 $$
 
 and the conjugation preserves the material sector $\mathbb{M}_-$. When the four-vector acted upon is a four-velocity $\tilde{U}=\gamma(ic\,e_0+\mathbf{v})$, the conjugation produces the standard parallel–perpendicular Lorentz transformation (Companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*, for the composition of boosts and the frame four-velocity), and in the collinear case the rapidities subtract, $v'=c\tanh(\psi_v-\psi_u)$.
 
-<!-- CONVENTION — boost-rotor direction: the rotor $\tilde{\Lambda}_{\mathbf u}=\cosh(\psi_u/2)+i\sinh(\psi_u/2)\hat{\mathbf u}$, built from $+\mathbf u$ with positive scalar part, carries the laboratory to the frame moving with $+\mathbf u$. For the particle four-velocity $\tilde U$ it is the lab-to-rest rotor and satisfies $\tilde{\Lambda}_{\mathbf v}\tilde U\tilde{\Lambda}_{\mathbf v}^{\dagger}=ic\,e_0$. Its quaternion conjugate is the inverse and is the rest-to-lab rotor. The parent Lorentz-transformation article writes $\tilde{\Lambda}=\sqrt{-(i/c)\tilde U^{\natural}}$ without stating the direction; the direction is fixed here as in the boosting exercise and must not be reversed. -->
+<!-- CONVENTION — boost-rotor direction: the rotor $\tilde{\Lambda}_{\mathbf u}=\cosh(\psi_u/2)+i\sinh(\psi_u/2)\hat{\mathbf u}$, built from $+\mathbf u$ with positive scalar part, carries the laboratory to the frame moving with $+\mathbf u$. For the particle four-velocity $\tilde U$ it is the lab-to-rest rotor and satisfies $\tilde{\Lambda}_{\mathbf v}\tilde U\tilde{\Lambda}_{\mathbf v}^{*}=ic\,e_0$. Its quaternion conjugate is the inverse and is the rest-to-lab rotor. The parent Lorentz-transformation article writes $\tilde{\Lambda}=\sqrt{-(i/c)\tilde U^{\natural}}$ without stating the direction; the direction is fixed here as in the boosting exercise and must not be reversed. -->
 
 The rotor associated with a four-velocity is the positive Hermitian square root
 
@@ -54,7 +54,7 @@ $$
 \tilde{\Lambda}_{\mathbf{v}}=\sqrt{-\frac{i}{c}\,\tilde{U}^{\natural}}
 =\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\hat{\mathbf{v}},
 \qquad
-\tilde{\Lambda}_{\mathbf{v}}\,\tilde{U}\,\tilde{\Lambda}_{\mathbf{v}}^{\dagger}=ic\,e_0 ,
+\tilde{\Lambda}_{\mathbf{v}}\,\tilde{U}\,\tilde{\Lambda}_{\mathbf{v}}^{*}=ic\,e_0 ,
 $$
 
 and it is the **laboratory-to-rest** rotor. The four-velocity fixes the Hermitian representative uniquely only up to sign and leaves the orientation of the rest frame free: if $\tilde{Q}$ is any unit-norm rotor with $\tilde{Q}\tilde{U}\tilde{Q}^{*}=ic\,e_0$, then so is $\tilde{Q}\tilde{R}$ for every rotation $\tilde{R}\in\mathbb{H}_{\mathbb{B}}$, because a rotation fixes the rest four-velocity $ic\,e_0$. A single four-velocity therefore determines a **boost but not a rotation**, and the orientation of the rest frame is not seen by any one of them. The Thomas precession is precisely the statement that this orientation is nevertheless determined by the **worldline**: the rest frames at successive events are related by a rotation, and it is visible only in the comparison of two of them.
@@ -106,10 +106,10 @@ $$
 d\mathbf{v}=\mathbf{a}\,dt .
 $$
 
-Indeed, if $\tilde{Q}'=\tilde{\Lambda}_{\mathbf{v}}\tilde{Q}\tilde{\Lambda}_{\mathbf{v}}^{\dagger}$ are the components of a four-vector in the rest frame at $t$, then the components in the rest frame at $t+dt$ are
+Indeed, if $\tilde{Q}'=\tilde{\Lambda}_{\mathbf{v}}\tilde{Q}\tilde{\Lambda}_{\mathbf{v}}^{*}$ are the components of a four-vector in the rest frame at $t$, then the components in the rest frame at $t+dt$ are
 
 $$
-\tilde{Q}''=\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}\tilde{Q}\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}^{\dagger}
+\tilde{Q}''=\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}\tilde{Q}\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}^{*}
 =\tilde{M}\tilde{Q}'\tilde{M}^{*},
 $$
 
@@ -305,7 +305,7 @@ $$
 \qquad
 \tanh\psi=\frac{v}{c},
 \qquad
-\tilde{\Lambda}_{\mathbf{v}}\tilde{U}\tilde{\Lambda}_{\mathbf{v}}^{\dagger}=ic\,e_0 ,
+\tilde{\Lambda}_{\mathbf{v}}\tilde{U}\tilde{\Lambda}_{\mathbf{v}}^{*}=ic\,e_0 ,
 $$
 
 and a single boost contains no rotation. The composition of two non-collinear boosts is a unit-norm biquaternion with polar decomposition $\tilde{\Lambda}_1\tilde{\Lambda}_2=\tilde{B}\tilde{R}$, and the rotation factor $\tilde{R}\in\mathbb{H}_{\mathbb{B}}$ is the Thomas–Wigner rotation, of exact angle
@@ -352,7 +352,7 @@ along $\mathbf{a}\times\mathbf{v}$, with only the transverse acceleration contri
 | $\gamma=(1-\mathbf{v}^2/c^2)^{-1/2}$ | Lorentz factor |
 | $\psi$, $\tanh\psi=v/c$ | Rapidity |
 | $\tilde{\Lambda}_{\mathbf{u}}=\cosh\frac{\psi_u}{2}+i\sinh\frac{\psi_u}{2}\hat{\mathbf{u}}$ | Boost rotor, Hermitian, in $\mathbb{M}_+$ |
-| $\tilde{\Lambda}_{\mathbf{v}}$ | Lab-to-rest rotor, $\tilde{\Lambda}_{\mathbf{v}}\tilde{U}\tilde{\Lambda}_{\mathbf{v}}^\dagger=ic\,e_0$ |
+| $\tilde{\Lambda}_{\mathbf{v}}$ | Lab-to-rest rotor, $\tilde{\Lambda}_{\mathbf{v}}\tilde{U}\tilde{\Lambda}_{\mathbf{v}}^{*}=ic\,e_0$ |
 | $\tilde{\Lambda}_1\tilde{\Lambda}_2=\tilde{B}\tilde{R}$ | Polar decomposition of a composition of boosts |
 | $\tilde{R}\in\mathbb{H}_{\mathbb{B}}$ | Thomas–Wigner rotation (unit real quaternion) |
 | $\varphi$, $\theta_W$, $\omega$ | Angle between boost directions; Wigner angle |

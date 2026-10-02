@@ -183,7 +183,7 @@ $$
 Asterisks denote quantities in this frame. In the biquaternion formulation the condition is that the vector part of the total four-momentum vanishes, so that $\tilde{P}$ is a pure imaginary scalar:
 
 $$
-\tilde{P}^* = \tilde{\Lambda}_{\rm CM}\,\tilde{P}\,\tilde{\Lambda}_{\rm CM}^\dagger = iMc\,e_0.
+\tilde{P}^* = \tilde{\Lambda}_{\rm CM}\,\tilde{P}\,\tilde{\Lambda}_{\rm CM}^{*} = iMc\,e_0.
 $$
 
 The sign is fixed by the physical branch $E^* = Mc^2 > 0$, possible because a future-timelike four-vector can always be rotated to the time axis by a boost. Writing $\tilde{u}_P = \tilde{P}/(Mc)$ for the unit four-velocity of the pair, the companion article's relation $\tilde{\Lambda} = \sqrt{-i\tilde{u}^{\natural}}$ gives
@@ -342,7 +342,7 @@ $$
 \tanh\Psi = \frac{V}{c},
 $$
 
-the sign of the vector part being opposite to that of the lab-to-rest rotor. The direction resides in that sign alone, and cannot be reversed by transposing the conjugation: a pure boost rotor is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, so $\tilde{\Lambda}\tilde{P}_a^*\tilde{\Lambda}^{*}$ and $\tilde{\Lambda}^{*}\tilde{P}_a^*\tilde{\Lambda}$ are the same expression. Note also that the quaternion conjugate is *not* the Hermitian conjugate here, since $\tilde{\Lambda}^{\natural}_{\rm CM} \neq \tilde{\Lambda}_{\rm CM}^\dagger$ for a pure boost.
+the sign of the vector part being opposite to that of the lab-to-rest rotor. The direction resides in that sign alone, and cannot be reversed by transposing the conjugation: a pure boost rotor is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, so $\tilde{\Lambda}\tilde{P}_a^*\tilde{\Lambda}^{*}$ and $\tilde{\Lambda}^{*}\tilde{P}_a^*\tilde{\Lambda}$ are the same expression. Note also that the quaternion conjugate is *not* the Hermitian conjugate here, since $\tilde{\Lambda}^{\natural}_{\rm CM} \neq \tilde{\Lambda}_{\rm CM}^{*}$ for a pure boost.
 
 In components this is the standard Lorentz transformation of a four-momentum,
 

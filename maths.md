@@ -3835,12 +3835,12 @@
 
 #### Signed Two-Sided Operator with Adjoint
 
-### + <a href="articles_maths/the-signed-adjoint-of-the-conformal-operator.html">The Signed Adjoint of the Conformal Operator</a>
+### <a href="articles_maths/the-signed-adjoint-of-the-conformal-operator.html">The Signed Adjoint of the Conformal Operator</a>
 <!-- the signed adjoint of the conformal operator; the sign-reversing adjoint and the unitarity condition it defines. -->
 
 #### Signed One-Sided Operator with Adjoint
 
-### + <a href="articles_maths/the-signed-adjoint-of-the-geodesic-reflection.html">The Signed Adjoint of the Geodesic Reflection</a>
+### <a href="articles_maths/the-signed-adjoint-of-the-geodesic-reflection.html">The Signed Adjoint of the Geodesic Reflection</a>
 <!-- the signed adjoint of the geodesic reflection; the self-adjointness of the reflection and its failure in the degenerate case. -->
 
 ## Geometry on Linear Spaces
@@ -3923,42 +3923,42 @@
 ### <a href="articles_maths/real-structures-on-a-complex-manifold.html">Real Structures on a Complex Manifold</a>
 <!-- real structures on a complex manifold; the antiholomorphic involution and the real points. -->
 
-### + <a href="articles_maths/complex-manifolds-with-an-antiholomorphic-involution.html">Complex Manifolds with an Antiholomorphic Involution</a>
+### <a href="articles_maths/complex-manifolds-with-an-antiholomorphic-involution.html">Complex Manifolds with an Antiholomorphic Involution</a>
 <!-- complex manifolds with an antiholomorphic involution; the quotient and the real forms. -->
 
-### + <a href="articles_maths/kahler-manifolds-and-the-hermitian-form.html">Kähler Manifolds and the Hermitian Form</a>
+### <a href="articles_maths/kahler-manifolds-and-the-hermitian-form.html">Kähler Manifolds and the Hermitian Form</a>
 <!-- Kähler manifolds and the Hermitian form; the closedness and the Kähler identities. -->
 
-### + <a href="articles_maths/the-involution-on-a-complex-vector-space.html">The Involution on a Complex Vector Space</a>
+### <a href="articles_maths/the-involution-on-a-complex-vector-space.html">The Involution on a Complex Vector Space</a>
 <!-- the involution on a complex vector space; the real structure and the conjugation. -->
 
-### + <a href="articles_maths/hermitian-geometry-and-the-unitary-group.html">Hermitian Geometry and the Unitary Group</a>
+### <a href="articles_maths/hermitian-geometry-and-the-unitary-group.html">Hermitian Geometry and the Unitary Group</a>
 <!-- Hermitian geometry and the unitary group; the Hermitian forms and the unitary frames. -->
 
 ### - * Operator Theory
 
-### + <a href="articles_maths/the-adjoint-of-a-hermitian-operator.html">The Adjoint of a Hermitian Operator</a>
+### <a href="articles_maths/the-adjoint-of-a-hermitian-operator.html">The Adjoint of a Hermitian Operator</a>
 <!-- the adjoint of a Hermitian operator; its explicit form and the self-adjointness. -->
 
-### + <a href="articles_maths/involutions-of-the-bergman-operator.html">Involutions of the Bergman Operator</a>
+### <a href="articles_maths/involutions-of-the-bergman-operator.html">Involutions of the Bergman Operator</a>
 <!-- the involutions of the Bergman operator; the conjugate symmetry and the self-adjointness. -->
 
-### + <a href="articles_maths/the-involution-on-the-kahler-operator.html">The Involution on the Kähler Operator</a>
+### <a href="articles_maths/the-involution-on-the-kahler-operator.html">The Involution on the Kähler Operator</a>
 <!-- the involution on the Kähler operator; the Hodge star and the complex conjugation. -->
 
-### + <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-a-complex-vector-space.html">The Adjoint of the Left Multiplication on a Complex Vector Space</a>
+### <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-a-complex-vector-space.html">The Adjoint of the Left Multiplication on a Complex Vector Space</a>
 <!-- the adjoint of the left multiplication on a complex vector space with respect to the form of the category; its explicit expression and its compatibility with the involution. -->
 
-### + <a href="articles_maths/the-signed-adjoint-sandwich-on-a-complex-vector-space.html">The Signed Adjoint Sandwich on a Complex Vector Space</a>
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-a-complex-vector-space.html">The Signed Adjoint Sandwich on a Complex Vector Space</a>
 <!-- the adjoint of the signed sandwich on a complex vector space; the explicit form of the adjoint and the unitarity condition it defines. -->
 
-### + <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-a-complex-vector-space.html">The Signed Adjoint of the Reflection on a Complex Vector Space</a>
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-a-complex-vector-space.html">The Signed Adjoint of the Reflection on a Complex Vector Space</a>
 <!-- the adjoint of a reflection read as a signed operator on a complex vector space; the self-adjointness of the reflections and its failure in the degenerate case. -->
 
-### + <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-a-complex-vector-space.html">The Signed Adjoint of the Left Multiplication on a Complex Vector Space</a>
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-a-complex-vector-space.html">The Signed Adjoint of the Left Multiplication on a Complex Vector Space</a>
 <!-- the adjoint of the signed left multiplication on a complex vector space; its explicit expression and its relation to the signed sandwich. -->
 
-### + <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-complex-vector-space.html">The Graded Adjoint Action on a Module over a Complex Vector Space</a>
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-complex-vector-space.html">The Graded Adjoint Action on a Module over a Complex Vector Space</a>
 <!-- the adjoint action of a graded module over a complex vector space; its compatibility with the grading and the sign rule. -->
 
 ## Geometry on Linear Algebras
@@ -4029,16 +4029,16 @@
 ### <a href="articles_maths/twistor-spaces-and-the-hermitian-structure-of-a-conformal-manifold.html">Twistor Spaces and the Hermitian Structure of a Conformal Manifold</a>
 <!-- twistor spaces and the Hermitian structure of a conformal manifold; the twistor correspondence. -->
 
-### + <a href="articles_maths/hermitian-spin-geometry-and-the-twistor-correspondence.html">Hermitian Spin Geometry and the Twistor Correspondence</a>
+### <a href="articles_maths/hermitian-spin-geometry-and-the-twistor-correspondence.html">Hermitian Spin Geometry and the Twistor Correspondence</a>
 <!-- Hermitian spin geometry and the twistor correspondence; the Hermitian structure on the spinor bundle. -->
 
-### + <a href="articles_maths/quaternionic-geometry-and-the-conjugate-structure.html">Quaternionic Geometry and the Conjugate Structure</a>
+### <a href="articles_maths/quaternionic-geometry-and-the-conjugate-structure.html">Quaternionic Geometry and the Conjugate Structure</a>
 <!-- quaternionic geometry and the conjugate structure; the quaternionic Kähler case. -->
 
-### + <a href="articles_maths/hyperkahler-manifolds-and-the-twistor-space.html">Hyperkähler Manifolds and the Twistor Space</a>
+### <a href="articles_maths/hyperkahler-manifolds-and-the-twistor-space.html">Hyperkähler Manifolds and the Twistor Space</a>
 <!-- hyperkähler manifolds and the twistor space; the twistor family of complex structures. -->
 
-### + <a href="articles_maths/hermitian-clifford-structures.html">Hermitian Clifford Structures</a>
+### <a href="articles_maths/hermitian-clifford-structures.html">Hermitian Clifford Structures</a>
 <!-- Hermitian Clifford structures; the compatibility of the Clifford action with the Hermitian metric. -->
 
 ### - * Operator Theory
@@ -4046,25 +4046,25 @@
 ### <a href="articles_maths/the-adjoint-of-the-clifford-multiplication.html">The Adjoint of the Clifford Multiplication</a>
 <!-- the adjoint of the Clifford multiplication; the metric adjoint and its relation to the grading. -->
 
-### + <a href="articles_maths/involutions-of-the-twistor-operator.html">Involutions of the Twistor Operator</a>
+### <a href="articles_maths/involutions-of-the-twistor-operator.html">Involutions of the Twistor Operator</a>
 <!-- the involutions of the twistor operator; the conjugate symmetry and the self-adjointness. -->
 
-### + <a href="articles_maths/the-adjoint-of-the-twistor-operator.html">The Adjoint of the Twistor Operator</a>
+### <a href="articles_maths/the-adjoint-of-the-twistor-operator.html">The Adjoint of the Twistor Operator</a>
 <!-- the adjoint of the twistor operator; the formal adjoint and the twistor equation. -->
 
 ### <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-a-clifford-algebra.html">The Adjoint of the Left Multiplication on a Clifford Algebra</a>
 <!-- the adjoint of the left multiplication on a clifford algebra with respect to the form of the category; its explicit expression and its compatibility with the involution. -->
 
-### + <a href="articles_maths/the-signed-adjoint-sandwich-on-a-clifford-algebra.html">The Signed Adjoint Sandwich on a Clifford Algebra</a>
+### <a href="articles_maths/the-signed-adjoint-sandwich-on-a-clifford-algebra.html">The Signed Adjoint Sandwich on a Clifford Algebra</a>
 <!-- the adjoint of the signed sandwich on a clifford algebra; the explicit form of the adjoint and the unitarity condition it defines. -->
 
-### + <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-a-clifford-algebra.html">The Signed Adjoint of the Reflection on a Clifford Algebra</a>
+### <a href="articles_maths/the-signed-adjoint-of-the-reflection-on-a-clifford-algebra.html">The Signed Adjoint of the Reflection on a Clifford Algebra</a>
 <!-- the adjoint of a reflection read as a signed operator on a clifford algebra; the self-adjointness of the reflections and its failure in the degenerate case. -->
 
-### + <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-a-clifford-algebra.html">The Signed Adjoint of the Left Multiplication on a Clifford Algebra</a>
+### <a href="articles_maths/the-signed-adjoint-of-the-left-multiplication-on-a-clifford-algebra.html">The Signed Adjoint of the Left Multiplication on a Clifford Algebra</a>
 <!-- the adjoint of the signed left multiplication on a clifford algebra; its explicit expression and its relation to the signed sandwich. -->
 
-### + <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-clifford-algebra.html">The Graded Adjoint Action on a Module over a Clifford Algebra</a>
+### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-clifford-algebra.html">The Graded Adjoint Action on a Module over a Clifford Algebra</a>
 <!-- the adjoint action of a graded module over a clifford algebra; its compatibility with the grading and the sign rule. -->
 
 ## Synthesis of Geometry and Analysis
@@ -4125,10 +4125,10 @@
 ### <a href="articles_maths/the-adjoint-of-the-signature-operator.html">The Adjoint of the Signature Operator</a>
 <!-- the adjoint of the signature operator; the self-adjointness and the index. -->
 
-### + <a href="articles_maths/the-dirac-operator-and-its-adjoint.html">The Dirac Operator and Its Adjoint</a>
+### <a href="articles_maths/the-dirac-operator-and-its-adjoint.html">The Dirac Operator and Its Adjoint</a>
 <!-- the Dirac operator and its adjoint; the self-adjointness and the index theorem. -->
 
-### + <a href="articles_maths/hermitian-pairings-and-the-index.html">Hermitian Pairings and the Index</a>
+### <a href="articles_maths/hermitian-pairings-and-the-index.html">Hermitian Pairings and the Index</a>
 <!-- Hermitian pairings and the index; the index pairing and the Hermitian structure. -->
 
 ## PART V : CATALOGUES

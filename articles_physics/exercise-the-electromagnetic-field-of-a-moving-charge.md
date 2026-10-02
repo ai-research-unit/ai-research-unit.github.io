@@ -39,7 +39,7 @@ $$
 \qquad
 \tanh\psi_u = \frac{u}{c},
 $$
-as fixed by the boosting and two-body exercises of the relativity series, is the rotor that carries the *laboratory* to the frame moving with $+\mathbf{u}$. Equivalently, applied to the rest four-velocity it produces velocity $-\mathbf{u}$: $\tilde{\Lambda}_{\mathbf{u}}(ic\,e_0)\tilde{\Lambda}_{\mathbf{u}}^\dagger$ has velocity $-\mathbf{u}$. Problem 5 states exactly where this convention enters the field problem and why the field does *not* transform by the rotor conjugation that the four-vector calculus would suggest.
+as fixed by the boosting and two-body exercises of the relativity series, is the rotor that carries the *laboratory* to the frame moving with $+\mathbf{u}$. Equivalently, applied to the rest four-velocity it produces velocity $-\mathbf{u}$: $\tilde{\Lambda}_{\mathbf{u}}(ic\,e_0)\tilde{\Lambda}_{\mathbf{u}}^{*}$ has velocity $-\mathbf{u}$. Problem 5 states exactly where this convention enters the field problem and why the field does *not* transform by the rotor conjugation that the four-vector calculus would suggest.
 
 ## The Problem
 
@@ -290,7 +290,7 @@ $$
 $$
 carries the *laboratory* to the frame moving with $+\mathbf{u}$. Applied to the rest four-velocity $\tilde{U}_0 = ic\,e_0$ it gives
 $$
-\tilde{\Lambda}_{\mathbf{u}}\,\tilde{U}_0\,\tilde{\Lambda}_{\mathbf{u}}^\dagger
+\tilde{\Lambda}_{\mathbf{u}}\,\tilde{U}_0\,\tilde{\Lambda}_{\mathbf{u}}^{*}
 = ic\,e_0\,\tilde{\Lambda}_{\mathbf{u}}^2
 = ic\left(\cosh\psi_u + i\sinh\psi_u\,\hat{\mathbf{u}}\right)
 = ic\cosh\psi_u - c\sinh\psi_u\,\hat{\mathbf{u}},

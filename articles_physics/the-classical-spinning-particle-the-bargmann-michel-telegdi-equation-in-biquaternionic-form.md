@@ -84,7 +84,7 @@ $$
 The condition is what makes the spin a property of the particle rather than of the frame: it says that in the momentary rest frame the time component vanishes. Writing $\tilde{S}=iS^{0}e_0+\mathbf{S}_{\rm vec}$ and recalling that the boost to the rest frame is the conjugation with $\tilde{\Lambda}_{\mathbf{v}}$, the rest-frame spin is
 
 $$
-\mathbf{s}=\tilde{\Lambda}_{\mathbf{v}}\,\tilde{S}\,\tilde{\Lambda}_{\mathbf{v}}^{\dagger}\Big|_{\rm vec},
+\mathbf{s}=\tilde{\Lambda}_{\mathbf{v}}\,\tilde{S}\,\tilde{\Lambda}_{\mathbf{v}}^{*}\Big|_{\rm vec},
 $$
 
 and the orthogonality condition may be solved for the time component,

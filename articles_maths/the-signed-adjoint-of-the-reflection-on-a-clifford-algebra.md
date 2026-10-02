@@ -1,0 +1,124 @@
+
+# __The Signed Adjoint of the Reflection on a Clifford Algebra__
+
+## Introduction
+
+A **reflection** of a Clifford algebra is a reflection-shaped signed sandwich
+
+$$
+\Sigma^{\alpha}_{a,a^{-1}}(x)=a\,\alpha(x)\,a^{-1} , \qquad a\,\alpha(a)=1 ,
+$$
+
+the parameter $a$ satisfying the reflection condition; for a non-isotropic vector $u$ it is the geometric reflection $\rho_u$ of the quadratic space, and the family generates the orthogonal group by *Reflections as Signed Two-Sided Operators on a Clifford Algebra*. The adjoint formula of *The Signed Adjoint Sandwich on a Clifford Algebra* gives
+
+$$
+\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(a)} ,
+$$
+
+and the reflection condition $\alpha(a)=a^{-1}$ collapses the two parameters: **every reflection is self-adjoint**. The article proves this, generalises it to the criterion that a reflection-shaped sandwich is self-adjoint exactly when $\alpha(a)a$ is central, exhibits the failure of self-adjointness by an explicit non-central element, and reads the $\pm1$-eigenspace decomposition of a reflection as the spectral decomposition of a self-adjoint involution.
+
+**The boundaries.** The reflection-shaped signed sandwich, the reflection condition and its failure for a degenerate form are *Reflections as Signed Two-Sided Operators on a Clifford Algebra*; the geometric reflection formula $\Sigma^{\alpha}_{u,u^{-1}}=\rho_u$, the composition law and the reflection correspondence are *The Signed Sandwich on a Clifford Algebra* and *One-Sided Operators with the Signed Product*; the adjoint of the general signed sandwich and the isometry criterion are *The Signed Adjoint Sandwich on a Clifford Algebra*; the Clifford conjugation and the standard form are *The Twisted Adjoint on a Clifford Algebra*; the group generated and the Cartan–Dieudonné theorem are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*. The analytic spectral theory of a self-adjoint operator belongs to a later Part and is named only. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form with $q(u)=B(u,u)$ and $uv+vu=2B(u,v)$.
+
+## The Adjoint of a Reflection
+
+**Definition.** A **reflection** of the Clifford algebra is a signed sandwich $\Sigma^{\alpha}_{a,a^{-1}}$ with $a$ a unit satisfying the **reflection condition** $a\,\alpha(a)=1$, equivalently $\alpha(a)=a^{-1}$; the **reflection-shaped** sandwiches are those of the form $\Sigma^{\alpha}_{a,a^{-1}}$ with no condition on $a\alpha(a)$.
+
+**Theorem.** Every reflection is self-adjoint for the standard form:
+
+$$
+\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^{*}=\Sigma^{\alpha}_{a,a^{-1}} .
+$$
+
+**Proof.** The general formula gives $\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(a)}$. Since $\alpha$ is an automorphism and $\alpha(a)=a^{-1}$, one has $\alpha(a^{-1})=\alpha(a)^{-1}=a$; the adjoint is therefore $\Sigma^{\alpha}_{a,a^{-1}}$.
+
+**Corollary.** The grade involution $\alpha=\Sigma^{\alpha}_{1,1}$ is self-adjoint; the reflection attached to an orthogonal element, $\hat aa=1$, is self-adjoint by *The Adjoint of the Left Multiplication on a Clifford Algebra*; and the reflections form a family whose members are all self-adjoint, in contrast with the general signed sandwiches, whose adjoint reverses and conjugates the parameters.
+
+**Remark (the parity of the parameter).** The reflection condition reads differently according to the parity of $a$: for an even $a$ one has $\alpha(a)=a$, so the condition is $a^{2}=1$ and the reflection is the conjugation $\Sigma^{\alpha}_{a,a}=\Sigma_{a,a}$; for an odd $a$ one has $\alpha(a)=-a$, so the condition is $a\alpha(a)=-a^2=1$, that is $\hat aa=1$ with $\hat a=-a$, and the reflection is the usual reflection by a normalised vector.
+
+## The Self-Adjointness Criterion
+
+**Theorem.** Let $a$ be a unit. Then the reflection-shaped sandwich $\Sigma^{\alpha}_{a,a^{-1}}$ is self-adjoint if and only if $\alpha(a)a$ is central. In particular every reflection ($\alpha(a)a=1$) is self-adjoint, and the self-adjointness of a reflection-shaped sandwich is exactly the centrality of the product of the parameter with its grade-twisted value.
+
+**Proof.** By the adjoint formula, $\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(a)}$, which is the reflection-shaped sandwich $\Sigma^{\alpha}_{b,b^{-1}}$ with $b=\alpha(a)^{-1}$. By the injectivity-up-to-the-centre of the reflection correspondence of *Reflections as Signed Two-Sided Operators on a Clifford Algebra*, two reflection-shaped sandwiches coincide exactly when the products $b^{-1}a$ differ by a central unit; here $b^{-1}a=\alpha(a)a$. Hence self-adjointness holds exactly when $\alpha(a)a$ is central.
+
+**Corollary.** The centrality criterion is the algebraic relaxation of the reflection condition: the reflections are the case in which $\alpha(a)a=1$ is central trivially, and the wider family of reflection-shaped sandwiches is self-adjoint up to the centre of the algebra. In the central-simple case, where the centre is the scalars, $\Sigma^{\alpha}_{a,a^{-1}}$ is self-adjoint exactly when $\alpha(a)a\in F\cdot1$.
+
+## Failure in the Degenerate Case
+
+**Definition.** A reflection-shaped sandwich is **reflection-degenerate** when $a\alpha(a)$ is not central, and **totally degenerate** when $a$ is not a unit and $\Sigma^{\alpha}_{a,a^{-1}}$ is not defined.
+
+**Theorem (failure of self-adjointness).** There exist Clifford algebras and units $a$ for which $\Sigma^{\alpha}_{a,a^{-1}}$ is not self-adjoint. Concretely, in the Euclidean Clifford algebra $\mathrm{Cl}_4$ with $e_1^2=e_2^2=e_3^2=e_4^2=-1$ and the standard form, the even element $a=1+e_1e_2$ is a unit, its grade-twisted product is $\alpha(a)a=a^{2}=2e_1e_2$, which is not central, and the conjugation by $a$ has adjoint the conjugation by $a^{-1}$:
+
+$$
+\Sigma^{\alpha}_{a,a^{-1}}=T_{a,a^{-1}} , \qquad \bigl(T_{a,a^{-1}}\bigr)^{*}=T_{a^{-1},a}\neq T_{a,a^{-1}} .
+$$
+
+**Proof.** For the even element $a$ one has $\alpha(a)=a$, so $\alpha(a)a=a^2$. The square is computed from $a^2=(1+e_1e_2)^2=1+2e_1e_2+(e_1e_2)^2=1+2e_1e_2-1=2e_1e_2$, which is not central in the central-simple algebra $\mathrm{Cl}_4$; by the criterion the sandwich is not self-adjoint. The adjoint is $T_{a^{-1},a}$ by the general formula, with $a^{-1}=(1-e_1e_2)/2$, and the two conjugations differ: on the vector $e_1$,
+
+$$
+a\,e_1\,a^{-1}=e_2 , \qquad a^{-1}\,e_1\,a=-e_2 .
+$$
+
+**Corollary (the totally degenerate case).** When $a$ is not a unit the reflected sandwich does not exist; the operator $\Sigma^{\alpha}_{a,a}$ is defined for every $a$, and its square is
+
+$$
+\Sigma^{\alpha}_{a,a}\circ\Sigma^{\alpha}_{a,a}=\Sigma_{a\alpha(a),\,\alpha(a)a} ,
+$$
+
+which is the zero operator when $a\alpha(a)=0$. For an isotropic vector $u$, $q(u)=0$ and $u^2=0$, the operator $\Sigma^{\alpha}_{u,u}$ is square-zero, a degenerate limiting case of a reflection and not a reflection; the self-adjointness question does not arise because the reflection itself is not defined.
+
+## The Eigenspace Decomposition
+
+**Proposition.** A reflection $S=\Sigma^{\alpha}_{a,a^{-1}}$ satisfies $S^{2}=\mathrm{id}$ and therefore decomposes the algebra into the $\pm1$-eigenspaces
+
+$$
+A_{\pm}=\{x : Sx=\pm x\} , \qquad \tfrac12(\mathrm{id}\pm S)\ \text{the spectral projectors} ;
+$$
+
+for a self-adjoint reflection the decomposition is orthogonal for the standard form.
+
+**Proof.** With $a\alpha(a)=1$ the composition law gives $S^2=\Sigma^{\alpha}_{a,a^{-1}}\Sigma^{\alpha}_{a,a^{-1}}=\Sigma_{a\alpha(a),\,\alpha(a^{-1})a^{-1}}=\Sigma_{1,1}=\mathrm{id}$, using $\alpha(a^{-1})a^{-1}=(\alpha(a)a)^{-1}=1$. An involutive operator on a space of characteristic not two is diagonalisable with eigenvalues $\pm1$, and the projectors are as displayed; the orthogonality for a self-adjoint $S$ is the computation $\langle x,\tfrac12(\mathrm{id}-S)y\rangle$ upon moving $S$ to the other side.
+
+**Corollary.** The fixed part of the grade involution $\alpha=\Sigma^{\alpha}_{1,1}$ is the even part and the anti-fixed part the odd part; the fixed part of a general reflection is $\{x : \alpha(x)=a^{-1}xa\}$; and on the quadratic space the reflection $\rho_u$ restricts to the fixed hyperplane $u^{\perp}$ and the anti-fixed line $Fu$, its two eigenspaces.
+
+**Proof.** The statement for $\alpha$ is the definition of the grading; the fixed part is read from $a\alpha(x)a^{-1}=x$; and on $V$ the reflection formula $\rho_u(v)=v-2B(u,v)u/q(u)$ gives $\rho_u(u)=-u$ and $\rho_u(v)=v$ for $B(u,v)=0$.
+
+## Worked Cases
+
+### The Negative-Definite Plane
+
+For the plane with $e_1^2=e_2^2=-1$ and $q(e_1)=-1$, the reflection condition for $a=e_1$ reads $e_1\alpha(e_1)=e_1(-e_1)=-e_1^2=1$, so $\Sigma^{\alpha}_{e_1,e_1^{-1}}$ is a reflection; its adjoint is itself by the theorem, and on the plane it is the reflection in the line $e_2$ with $\rho(e_1)=-e_1$, $\rho(e_2)=e_2$.
+
+### The Quaternions
+
+For $\mathrm{Cl}\cong\mathbb{H}$ with the quaternionic conjugation $\hat x=\bar x$, a pure unit quaternion $u$ has $\hat uu=\bar uu=1$ and $u^{-1}=\bar u$, so $\Sigma^{\alpha}_{u,\bar u}$ is a self-adjoint reflection; the fixed part is the set of $x$ with $uxu^{-1}=x$, the line of the quaternions commuting with $u$.
+
+### The Failure: Conjugation by an Even Element
+
+In $\mathrm{Cl}_4$ with the negative-definite form and the even unit $a=1+e_1e_2$, the conjugation $\Sigma^{\alpha}_{a,a^{-1}}=T_{a,a^{-1}}$ is not self-adjoint, as displayed; it is nevertheless an isometry by the general criterion, and its adjoint is the inverse conjugation $T_{a^{-1},a}$. On the $e_1$ direction the two maps send $e_1$ to $e_2$ and $-e_2$ respectively.
+
+**Verified.** Self-adjointness of the reflection $\Sigma^{\alpha}_{e_1,e_1^{-1}}$ in the negative-definite plane was checked on the basis elements; the non-self-adjointness of the conjugation by $a=1+e_1e_2$ in $\mathrm{Cl}_4$ was checked by comparing $\langle Sx,y\rangle$ and $\langle x,S^{*}y\rangle$ at $x=e_1$, and the values $ae_1a^{-1}=e_2$, $a^{-1}e_1a=-e_2$ were computed from the Clifford relations.
+
+## Summary
+
+A **signed reflection** $\Sigma^{\alpha}_{a,a^{-1}}$ with the reflection condition $a\alpha(a)=1$ has adjoint $\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(a)}$, which equals the reflection itself because $\alpha(a)=a^{-1}$; therefore **every reflection is self-adjoint** for the standard form. More generally, a reflection-shaped sandwich is self-adjoint exactly when the product $\alpha(a)a$ is **central**, the centrality being the relaxation of the reflection normalisation, and in the central-simple case the criterion reads $\alpha(a)a\in F\cdot1$. The **degenerate** case in which $\alpha(a)a$ is not central gives a reflection-shaped sandwich that is not self-adjoint; the explicit example is the conjugation by the even unit $a=1+e_1e_2$ in $\mathrm{Cl}_4$ with the negative-definite form, whose adjoint is the conjugation by $a^{-1}$ and which differs from it on $e_1$. The **totally degenerate** case, in which $a$ is not a unit, produces no reflection; the operator $\Sigma^{\alpha}_{a,a}$ has square $\Sigma_{a\alpha(a),\alpha(a)a}$, which is zero for an isotropic vector $u$ and makes $\Sigma^{\alpha}_{u,u}$ square-zero. The $\pm1$-eigenspace decomposition of a reflection is its spectral decomposition, the fixed part being $\alpha(x)=a^{-1}xa$ and, on the quadratic space, the hyperplane $u^{\perp}$. The analytic spectral theory of the self-adjoint reflections belongs to a later Part.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\Sigma^{\alpha}_{a,b}(x)=a\alpha(x)b$ | Signed sandwich |
+| $\Sigma^{\alpha}_{a,a^{-1}}$ | Reflection-shaped sandwich |
+| $a\alpha(a)=1$ | Reflection condition; $\alpha(a)=a^{-1}$ |
+| $\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^{*}=\Sigma^{\alpha}_{a,a^{-1}}$ | Self-adjointness of every reflection |
+| $\alpha(a)a$ central | Criterion for self-adjointness of a reflection-shaped sandwich |
+| $\Sigma^{\alpha}_{u,u}$, $\Sigma_{0,0}=0$ | Square-zero limit for an isotropic vector |
+| $A_{\pm}$ | $\pm1$-eigenspaces of a reflection |
+| $u^{\perp}$, $Fu$ | Fixed hyperplane and anti-fixed line of a geometric reflection |
+
+## Further Reading
+
+- Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for reflections as signed conjugations, their self-adjointness and the generation of the orthogonal group.
+- H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the reflection operators, the pin groups and the Cartan–Dieudonné theorem.
+- Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, American Mathematical Society Colloquium Publications 44 (1998), for the centrality conditions on conjugations and the structure of the unitary and orthogonal groups.
+- Nicolas Bourbaki, *Algebra I*, Chapters 1–3 (Springer, 1989), for the spectral decomposition of an involution and the orthogonal decomposition for a self-adjoint involution.

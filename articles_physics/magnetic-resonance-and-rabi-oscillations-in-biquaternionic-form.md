@@ -138,7 +138,7 @@ a purely transverse effective Hamiltonian: the longitudinal component of the eff
 Prepare the spin in the upper eigenstate of the static field, $\tilde{\rho}(0) = \tilde\Pi_+(\hat{z})$, and ask for the probability of finding it in the lower eigenstate $\tilde\Pi_-(\hat{z})$ at time $t$. In the rotating frame the state evolves by the static Hamiltonian, so
 
 $$
-\tilde{\rho}_R(t) = \tilde{R}(t)\,\tilde{\rho}(0)\,\tilde{R}(t)^\dagger,
+\tilde{\rho}_R(t) = \tilde{R}(t)\,\tilde{\rho}(0)\,\tilde{R}(t)^{*},
 \qquad
 \tilde{R}(t) = \exp\!\left(-\frac{i\tilde{H}_R t}{\hbar}\right).
 $$

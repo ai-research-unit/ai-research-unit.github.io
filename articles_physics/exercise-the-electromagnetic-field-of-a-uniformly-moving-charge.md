@@ -42,7 +42,7 @@ $$
 \qquad
 \tanh\psi_u = \frac{u}{c},
 $$
-**carries the laboratory to the frame moving with $+\mathbf{u}$**: applied to the rest four-velocity it produces velocity $-\mathbf{u}$, i.e. $\tilde{\Lambda}_{\mathbf{u}}(ic\,e_0)\tilde{\Lambda}_{\mathbf{u}}^\dagger$ has velocity $-\mathbf{u}$. This is the convention fixed by the boosting and two-body exercises of the relativity series and used by the parent. The field strength is rank two, and under this rotor it transforms by the **similarity** $\tilde{F}' = \tilde{\Lambda}^{\natural}_{\mathbf{u}}\tilde{F}\tilde{\Lambda}_{\mathbf{u}}$, not by the four-vector rotor conjugation $\tilde{\Lambda}\tilde{F}\tilde{\Lambda}^{*}$; that is the parent's Problem 5 and we use its result.
+**carries the laboratory to the frame moving with $+\mathbf{u}$**: applied to the rest four-velocity it produces velocity $-\mathbf{u}$, i.e. $\tilde{\Lambda}_{\mathbf{u}}(ic\,e_0)\tilde{\Lambda}_{\mathbf{u}}^{*}$ has velocity $-\mathbf{u}$. This is the convention fixed by the boosting and two-body exercises of the relativity series and used by the parent. The field strength is rank two, and under this rotor it transforms by the **similarity** $\tilde{F}' = \tilde{\Lambda}^{\natural}_{\mathbf{u}}\tilde{F}\tilde{\Lambda}_{\mathbf{u}}$, not by the four-vector rotor conjugation $\tilde{\Lambda}\tilde{F}\tilde{\Lambda}^{*}$; that is the parent's Problem 5 and we use its result.
 
 **New notation for this exercise.** Since the uniform case is naturally organized around the charge's *present* position, write the **present separation**
 $$
@@ -278,9 +278,9 @@ $$
 \qquad
 \tanh\psi_u = \frac{u}{c},
 $$
-**carries the laboratory to the frame moving with $+\mathbf{u}$**. On the rest four-velocity $\tilde{U}_0 = ic\,e_0$, using $\tilde{\Lambda}_{\mathbf{u}}^\dagger = \tilde{\Lambda}_{\mathbf{u}}$ (a pure boost is Hermitian),
+**carries the laboratory to the frame moving with $+\mathbf{u}$**. On the rest four-velocity $\tilde{U}_0 = ic\,e_0$, using $\tilde{\Lambda}_{\mathbf{u}}^{*} = \tilde{\Lambda}_{\mathbf{u}}$ (a pure boost is Hermitian),
 $$
-\tilde{\Lambda}_{\mathbf{u}}\,\tilde{U}_0\,\tilde{\Lambda}_{\mathbf{u}}^\dagger
+\tilde{\Lambda}_{\mathbf{u}}\,\tilde{U}_0\,\tilde{\Lambda}_{\mathbf{u}}^{*}
 = ic\,\tilde{\Lambda}_{\mathbf{u}}^2
 = ic\left(\cosh\psi_u + i\sinh\psi_u\,\hat{\mathbf{u}}\right)
 = ic\cosh\psi_u - c\sinh\psi_u\,\hat{\mathbf{u}},

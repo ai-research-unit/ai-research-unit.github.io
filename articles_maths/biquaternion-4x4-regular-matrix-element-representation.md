@@ -443,7 +443,7 @@ $$
 N(\tilde{A}\tilde{Q}\tilde{A}^{*}) = N(\tilde{Q}) .
 $$
 
-**Proof.** If $\tilde{Q}$ is Hermitian then $(\tilde{A}\tilde{Q}\tilde{A}^{*})^{\dagger} = \tilde{A}\tilde{Q}^{*}\tilde{A}^{*} = \tilde{A}\tilde{Q}\tilde{A}^{*}$, so $\mathbb{M}_+$ is preserved. The biquaternion norm is multiplicative, $N(\tilde{A}\tilde{Q}\tilde{A}^{*}) = N(\tilde{A})N(\tilde{Q})N(\tilde{A}^{*})$, and $N(\tilde{A}) = 1$ while $N(\tilde{A}^{*}) = N(\tilde{A})^{*} = 1$. Composition holds because $\tilde{A}_1(\tilde{A}_2\tilde{Q}\tilde{A}_2^{*})\tilde{A}_1^{*} = (\tilde{A}_1\tilde{A}_2)\tilde{Q}(\tilde{A}_1\tilde{A}_2)^{\dagger}$.
+**Proof.** If $\tilde{Q}$ is Hermitian then $(\tilde{A}\tilde{Q}\tilde{A}^{*})^{\dagger} = \tilde{A}\tilde{Q}^{*}\tilde{A}^{*} = \tilde{A}\tilde{Q}\tilde{A}^{*}$, so $\mathbb{M}_+$ is preserved. The biquaternion norm is multiplicative, $N(\tilde{A}\tilde{Q}\tilde{A}^{*}) = N(\tilde{A})N(\tilde{Q})N(\tilde{A}^{*})$, and $N(\tilde{A}) = 1$ while $N(\tilde{A}^{*}) = N(\tilde{A})^{*} = 1$. Composition holds because $\tilde{A}_1(\tilde{A}_2\tilde{Q}\tilde{A}_2^{*})\tilde{A}_1^{*} = (\tilde{A}_1\tilde{A}_2)\tilde{Q}(\tilde{A}_1\tilde{A}_2)^{*}$.
 
 **Theorem (the double cover).** The action above defines a surjective group homomorphism
 

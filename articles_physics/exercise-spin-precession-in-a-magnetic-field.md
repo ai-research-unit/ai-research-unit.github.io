@@ -121,10 +121,10 @@ where we have used the identity $\exp(\theta\,e_3) = \cos\theta\,e_0 + \sin\thet
 The evolved state is
 
 $$
-\tilde{\rho}(t) = \tilde{U}(t)\,P_x\,\tilde{U}(t)^\dagger.
+\tilde{\rho}(t) = \tilde{U}(t)\,P_x\,\tilde{U}(t)^{*}.
 $$
 
-Computing the product, using $\tilde{U}(t)^\dagger = \tilde{U}^{\natural}(t) = \cos(\omega_L t/2)\,e_0 + \sin(\omega_L t/2)\,e_3$ (since $\tilde{U}$ is a real quaternion), gives
+Computing the product, using $\tilde{U}(t)^{*} = \tilde{U}^{\natural}(t) = \cos(\omega_L t/2)\,e_0 + \sin(\omega_L t/2)\,e_3$ (since $\tilde{U}$ is a real quaternion), gives
 
 $$
 \tilde{\rho}(t) = \tfrac{1}{2}\left(e_0 + i\cos(\omega_L t)\,e_1 - i\sin(\omega_L t)\,e_2\right).
@@ -167,7 +167,7 @@ The spin precesses in the $xy$-plane with angular frequency $\omega_L$, as expec
 
 **2. The evolution operator is a unit-norm biquaternion.** The exponential $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ is a unit-norm element of $\mathbb{B}$, lying in the real quaternion subspace $\mathbb{H}_\mathbb{B}$ for this particular Hamiltonian (because $\tilde{H}$ is proportional to $i e_3$, and the exponential of $e_3$ is a real quaternion). The evolution is a **rotor** in the sense of geometric algebra.
 
-**3. The state evolves by rotor conjugation.** The evolved state is $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^\dagger$. This is the standard form of the von Neumann evolution, expressed as a **rotor conjugation** on the algebra. The evolution is automatically unitary: $\tilde{U}\tilde{U}^{*} = e_0$ is preserved by the exponential form.
+**3. The state evolves by rotor conjugation.** The evolved state is $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^{*}$. This is the standard form of the von Neumann evolution, expressed as a **rotor conjugation** on the algebra. The evolution is automatically unitary: $\tilde{U}\tilde{U}^{*} = e_0$ is preserved by the exponential form.
 
 **4. The precession is a rotation of the Bloch vector.** The evolved state has the form $\tilde{\rho}(t) = \frac{1}{2}(e_0 + i\mathbf{r}(t))$ with
 
@@ -224,7 +224,7 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $\tilde{S}_x = \tfrac{\hbar}{2} ie_1$ | Spin observable along $x$ |
 | $\tilde{H} = -\tfrac{\hbar\omega_L}{2} ie_3$ | Hamiltonian |
 | $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ | Evolution biquaternion |
-| $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^\dagger$ | Evolved state |
+| $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^{*}$ | Evolved state |
 | $\langle\tilde{S}_x\rangle(t) = \mathrm{Tr}(\tilde{\rho}(t)\tilde{S}_x)$ | Expectation value |
 
 ## Further Reading

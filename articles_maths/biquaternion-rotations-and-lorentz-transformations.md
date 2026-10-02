@@ -24,7 +24,7 @@ $$
 \mathbb{B}^\times_1 \cong \mathrm{Spin}(1,3), \qquad \mathrm{B}_0 \cong \mathrm{so}(1,3).
 $$
 
-The Lorentz action is rotor conjugation, $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ for $\tilde{\Lambda} \in \mathbb{B}^\times_1$, which preserves $\mathbb{M}_-$ and $N(\tilde{Q})$; its compact part is the rotation family and its non-compact part the hyperbolic rotations, with closed forms in *Biquaternion Elementary Functions*, §*The Exponential in the Two Real Directions*.
+The Lorentz action is rotor conjugation, $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ for $\tilde{\Lambda} \in \mathbb{B}^\times_1$, which preserves $\mathbb{M}_-$ and $N(\tilde{Q})$; its compact part is the rotation family and its non-compact part the hyperbolic rotations, with closed forms in *Biquaternion Elementary Functions*, §*The Exponential in the Two Real Directions*.
 
 ## The Rotor and the Sandwich Action
 
@@ -67,7 +67,7 @@ so that a central phase does not change the operator.
 **Proof.** Let $\tilde T\in\mathbb{M}_+$, so that $\tilde{T}^{*}=\tilde T$. Then
 
 $$
-\left(\tilde{Q}\tilde T\tilde{Q}^{*}\right)^{\dagger}=\tilde{Q}^{\dagger{}^{*}}\tilde{T}^{*}\tilde{Q}^{*}=\tilde{Q}\tilde T\tilde{Q}^{*},
+\left(\tilde{Q}\tilde T\tilde{Q}^{*}\right)^{*}=\tilde{Q}^{*{}^{*}}\tilde{T}^{*}\tilde{Q}^{*}=\tilde{Q}\tilde T\tilde{Q}^{*},
 $$
 
 so the image is Hermitian and lies in $\mathbb{M}_+$; for $\tilde T\in\mathbb{M}_-$ one has $\tilde{T}^{*}=-\tilde T$, and the image is anti-Hermitian.
@@ -80,7 +80,7 @@ $$
 
 **Proof.** The biquaternion norm is multiplicative and central, $N(ab)=N(a)N(b)$, and $N(\tilde{Q}^{*})=N(\tilde{Q})^{*}$, because ${}^{*}$ is the composite of quaternion conjugation, which fixes $N$, with complex conjugation, which conjugates it. Hence $N(\tilde{Q}\tilde T\tilde{Q}^{*})=N(\tilde{Q})N(\tilde T)N(\tilde{Q})^{*}=\lvert N(\tilde{Q})\rvert^{2}N(\tilde T)$.
 
-On the unit-norm slice, where $\lvert N(\tilde{Q})\rvert=1$, the sandwich is an isometry of the biquaternion norm on both sectors: it is the action of $SL(2,\mathbb{C})$ on the Hermitian forms and on the four-vectors, and it is the covering map onto the proper orthochronous Lorentz group. The Lorentz transformation written above as $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$ is the sandwich of a norm-one element, and for it no inverse and no rotation part appear.
+On the unit-norm slice, where $\lvert N(\tilde{Q})\rvert=1$, the sandwich is an isometry of the biquaternion norm on both sectors: it is the action of $SL(2,\mathbb{C})$ on the Hermitian forms and on the four-vectors, and it is the covering map onto the proper orthochronous Lorentz group. The Lorentz transformation written above as $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ is the sandwich of a norm-one element, and for it no inverse and no rotation part appear.
 
 **The image of the unit.** Applied to $e_0$ the sandwich returns $\mathrm{H}_{\tilde{Q}}(e_0)=\tilde{Q}\tilde{Q}^{*}$, which is Hermitian and, for a general unit, not central: the centre is not preserved. The image of a traceless element need not be traceless, so the vector subspace is not preserved either.
 
@@ -103,7 +103,7 @@ The kernel is therefore the circle $U(1)=\{e^{i\theta}e_0\}$ in the centre, of o
 | operator | group | kernel | parameters lost |
 |---|---|---|---|
 | $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{*}$ | the units of $\mathbb{B}$ | $U(1)\subset\mathbb{C}_{\mathbb{B}}$ | the circle only |
-| $\mathrm{H}_{\tilde{\Lambda}}(\tilde T)=\tilde{\Lambda}\tilde T\tilde{\Lambda}^{\dagger}$, $N(\tilde{\Lambda})=1$ | the unit-norm slice $SL(2,\mathbb{C})$ | $\{\pm e_0\}$ | the sign |
+| $\mathrm{H}_{\tilde{\Lambda}}(\tilde T)=\tilde{\Lambda}\tilde T\tilde{\Lambda}^{*}$, $N(\tilde{\Lambda})=1$ | the unit-norm slice $SL(2,\mathbb{C})$ | $\{\pm e_0\}$ | the sign |
 
 The action on the six distinguished subspaces is the following. Each entry records whether the image of a general element of the row subspace lies in that same subspace, for a general unit and for a real unit quaternion.
 

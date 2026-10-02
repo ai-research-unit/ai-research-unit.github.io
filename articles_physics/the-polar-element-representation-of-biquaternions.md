@@ -118,7 +118,7 @@ The boost factor of the polar representation of a four-vector is the **square** 
 $$
 \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*} = ic\tau\,e_0 ,
 \qquad\text{hence}\qquad
-\tilde{Q} = \tilde{\Lambda}^{*}\left(ic\tau e_0\right)\tilde{\Lambda} = ic\tau\,\tilde{\Lambda}^{\dagger 2} = ic\tau\,(\tilde{\Lambda}^{\natural})^2 ,
+\tilde{Q} = \tilde{\Lambda}^{*}\left(ic\tau e_0\right)\tilde{\Lambda} = ic\tau\,\tilde{\Lambda}^{*2} = ic\tau\,(\tilde{\Lambda}^{\natural})^2 ,
 $$
 
 where the last step uses the Hermitian character of a pure boost rotor, $\tilde{\Lambda}^{*} = \tilde{\Lambda}^{\natural}$. The comparison with the representation of the same four-position,

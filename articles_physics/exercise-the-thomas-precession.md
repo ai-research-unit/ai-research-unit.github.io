@@ -13,7 +13,7 @@ $$
 $$
 which is Hermitian, lies in $\mathbb{M}_+$, and has unit norm. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; $\mathbf{v}$ is the particle velocity, $\mathbf{a}=d\mathbf{v}/dt$ its lab acceleration, and $\hat{\mathbf{u}}$ is a unit direction. Components are taken in the basis $(e_0,e_1,e_2,e_3)$.
 
-**The boost-rotor direction, stated once.** In this series the rotor $\tilde{\Lambda}_{\mathbf{u}}$ is the **lab-to-frame** rotor: acting on a four-vector by $\tilde{Q}\mapsto\tilde{\Lambda}_{\mathbf{u}}\tilde{Q}\tilde{\Lambda}_{\mathbf{u}}^\dagger$, it carries the lab to the frame moving with $+\mathbf{u}$, and for the particle four-velocity $\tilde{U}$ it is the lab-to-rest rotor that satisfies $\tilde{\Lambda}_{\mathbf{v}}\tilde{U}\tilde{\Lambda}_{\mathbf{v}}^\dagger = ic\,e_0$. Its quaternion conjugate is the inverse, $\tilde{\Lambda}^{\natural}_{\mathbf{u}}=\tilde{\Lambda}_{\mathbf{u}}^{-1}=\tilde{\Lambda}_{-\mathbf{u}}$. This direction is *not* stated in the parent article; it is the gap recorded in *Exercise: Boosting a Four-Velocity and Rapidity Composition*, Problem 4. Problem 3 below checks what that ambiguity does and does not do to the Thomas-precession sign.
+**The boost-rotor direction, stated once.** In this series the rotor $\tilde{\Lambda}_{\mathbf{u}}$ is the **lab-to-frame** rotor: acting on a four-vector by $\tilde{Q}\mapsto\tilde{\Lambda}_{\mathbf{u}}\tilde{Q}\tilde{\Lambda}_{\mathbf{u}}^{*}$, it carries the lab to the frame moving with $+\mathbf{u}$, and for the particle four-velocity $\tilde{U}$ it is the lab-to-rest rotor that satisfies $\tilde{\Lambda}_{\mathbf{v}}\tilde{U}\tilde{\Lambda}_{\mathbf{v}}^{*} = ic\,e_0$. Its quaternion conjugate is the inverse, $\tilde{\Lambda}^{\natural}_{\mathbf{u}}=\tilde{\Lambda}_{\mathbf{u}}^{-1}=\tilde{\Lambda}_{-\mathbf{u}}$. This direction is *not* stated in the parent article; it is the gap recorded in *Exercise: Boosting a Four-Velocity and Rapidity Composition*, Problem 4. Problem 3 below checks what that ambiguity does and does not do to the Thomas-precession sign.
 
 **What is to be shown.** Problem 1 identifies the rotor that relates two neighbouring instantaneous rest frames. Problem 2 takes the continuous limit and derives the Thomas precession rate $\boldsymbol{\omega}_T$. Problem 3 checks the sign on a non-collinear geometry, where alone the sign is visible, and separates the manipulations that flip it from those that do not. Problem 4 treats uniform circular motion, recovers the retrograde rotation and the "Thomas half", and connects the result to the spin–orbit coupling. Problem 5 states what the parent articles do and do not supply.
 
@@ -37,12 +37,12 @@ and identify $\tilde{R}$ as the Thomas–Wigner rotation of the interval $dt$.
 
 **(c)** Express the angle and axis of $\tilde{R}$ through the parent's Wigner-angle formula.
 
-**Solution. (a)** The rotor $\tilde{\Lambda}_{\mathbf{v}}$ carries the lab to the rest frame at time $t$: by the parent's relation $\tilde{\Lambda}_{\mathbf{v}}=\sqrt{-\tfrac{i}{c}\tilde{U}^{\natural}}$, one has $\tilde{\Lambda}_{\mathbf{v}}\tilde{U}\tilde{\Lambda}_{\mathbf{v}}^\dagger=ic\,e_0$, and every four-vector $\tilde{Q}$ has components
+**Solution. (a)** The rotor $\tilde{\Lambda}_{\mathbf{v}}$ carries the lab to the rest frame at time $t$: by the parent's relation $\tilde{\Lambda}_{\mathbf{v}}=\sqrt{-\tfrac{i}{c}\tilde{U}^{\natural}}$, one has $\tilde{\Lambda}_{\mathbf{v}}\tilde{U}\tilde{\Lambda}_{\mathbf{v}}^{*}=ic\,e_0$, and every four-vector $\tilde{Q}$ has components
 $$
-\tilde{Q}'=\tilde{\Lambda}_{\mathbf{v}}\tilde{Q}\tilde{\Lambda}_{\mathbf{v}}^\dagger
+\tilde{Q}'=\tilde{\Lambda}_{\mathbf{v}}\tilde{Q}\tilde{\Lambda}_{\mathbf{v}}^{*}
 \tag{3}
 $$
-in that rest frame. At $t+dt$ the same construction with $\mathbf{v}+d\mathbf{v}$ gives $\tilde{Q}''=\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}\tilde{Q}\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}^\dagger$. Since $\tilde{\Lambda}_{\mathbf{v}}$ is Hermitian and of unit norm, $\tilde{\Lambda}_{\mathbf{v}}^\dagger=\tilde{\Lambda}_{\mathbf{v}}$ and $\tilde{\Lambda}_{\mathbf{v}}^\dagger\tilde{\Lambda}_{\mathbf{v}}=e_0$, so
+in that rest frame. At $t+dt$ the same construction with $\mathbf{v}+d\mathbf{v}$ gives $\tilde{Q}''=\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}\tilde{Q}\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}^{*}$. Since $\tilde{\Lambda}_{\mathbf{v}}$ is Hermitian and of unit norm, $\tilde{\Lambda}_{\mathbf{v}}^{*}=\tilde{\Lambda}_{\mathbf{v}}$ and $\tilde{\Lambda}_{\mathbf{v}}^{*}\tilde{\Lambda}_{\mathbf{v}}=e_0$, so
 $$
 \tilde{Q}''=\tilde{M}\,\tilde{Q}'\,\tilde{M}^{*},
 \qquad
