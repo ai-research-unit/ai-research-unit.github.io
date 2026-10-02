@@ -39,6 +39,8 @@
 ###<a href="articles_maths/universal-properties-and-categories.html">Universal Properties and Categories</a>
 <!-- objects and morphisms; the categories of sets, of groups, of rings and of modules over a fixed ring; functors, natural transformations and equivalence of categories; initial and terminal objects; universal properties and universal objects, with existence and uniqueness formulated as a single statement; products, coproducts, free objects, quotients and localisations as universal constructions; the universal properties this corpus relies on: the free group, the tensor product, the symmetric and exterior algebras, the fraction field, the completion; adjunction in outline. -->
 
+### - * Theory
+
 ## Groups
 
 ### - Theory
@@ -76,14 +78,16 @@
 ###<a href="articles_maths/group-cohomology.html">Group Cohomology</a>
 <!-- the cohomology of a group, the standard resolution and the low-dimensional interpretations; $H^1$ and $H^2$ as derivations and as extensions; the Schur multiplier; the cohomology of finite groups. -->
 
-### <a href="articles_maths/involutive-groups.html">Involutive Groups</a>
-<!-- an involutive group, that is a group with an involution, an anti-automorphism of order two; the notion presupposes no commutativity, and unlike a ring a group always carries one, the inversion, which is the canonical isomorphism with the opposite group, so the informative object is the set of involutions, in bijection with the involutive automorphisms through $\sigma \mapsto \sigma\iota$ and with the split extensions by $C_2$, while an anti-automorphism is an automorphism exactly when the group is abelian. The general structure: the fixed set $A^\sigma$, a subgroup exactly when its elements commute pairwise, and the inverted set $I(\sigma) = G^{\sigma\iota}$, which always is one; the conjugate products $g\sigma(g)$ and $\sigma(g)g$, which are only conjugate and need not be fixed; real, strongly real and ambivalent elements, with $S_n$ and $D_n$ ambivalent and strongly real, $Q_8$ ambivalent with only $\pm 1$ as products of two elements of order two, and $A_4$ not ambivalent; $\sigma$-stable subgroups and the induced involution on a quotient, with the image of the fixed set possibly strict; products, the swap with fixed set the diagonal, and the graph of an anti-isomorphism as the fixed set of a twisted involution; the semidirect product by an involutive automorphism, the split and non-split extensions, with the dihedral and dicyclic examples and the groups of order $2p$; and the involutions read off a presentation, the inversion and the word reversal in a free group, the Coxeter inversion together with the diagram automorphisms, and the inversion and reversal automorphisms of the braid groups, which are torsion-free and have no elements of order two. **An additional structure on the group, not a rung of any chain; it stands in the Theory list immediately after *Group Cohomology*, the last article it draws on, and before *The Classification of Finite Simple Groups*, so that every article it uses precedes it and the classification still closes the category.** The geometry of the spaces built from a fixed subgroup is Part IV, and the representation-theoretic treatment of the real elements is later still. -->
-
 ###<a href="articles_maths/classification-of-finite-simple-groups.html">The Classification of Finite Simple Groups</a>
 <!-- the statement of the classification; the alternating groups; the groups of Lie type; the sporadic groups; the Feit–Thompson theorem; the classification of groups of small order. -->
 
 ###<a href="articles_maths/finite-simple-groups-of-lie-type.html">Finite Simple Groups of Lie Type</a>
 <!-- the Chevalley, Steinberg, Suzuki–Ree and twisted groups as abstract finite groups; the classification of the finite simple groups of Lie type; the orders of the groups; the algebraic-group structure, the Zariski topology and the building-theoretic constructions belong to Part II. -->
+
+### - * Theory
+
+### <a href="articles_maths/involutive-groups.html">Involutive Groups</a>
+<!-- an involutive group, that is a group with an involution, an anti-automorphism of order two; the notion presupposes no commutativity, and unlike a ring a group always carries one, the inversion, which is the canonical isomorphism with the opposite group, so the informative object is the set of involutions, in bijection with the involutive automorphisms through $\sigma \mapsto \sigma\iota$ and with the split extensions by $C_2$, while an anti-automorphism is an automorphism exactly when the group is abelian. The general structure: the fixed set $A^\sigma$, a subgroup exactly when its elements commute pairwise, and the inverted set $I(\sigma) = G^{\sigma\iota}$, which always is one; the conjugate products $g\sigma(g)$ and $\sigma(g)g$, which are only conjugate and need not be fixed; real, strongly real and ambivalent elements, with $S_n$ and $D_n$ ambivalent and strongly real, $Q_8$ ambivalent with only $\pm 1$ as products of two elements of order two, and $A_4$ not ambivalent; $\sigma$-stable subgroups and the induced involution on a quotient, with the image of the fixed set possibly strict; products, the swap with fixed set the diagonal, and the graph of an anti-isomorphism as the fixed set of a twisted involution; the semidirect product by an involutive automorphism, the split and non-split extensions, with the dihedral and dicyclic examples and the groups of order $2p$; and the involutions read off a presentation, the inversion and the word reversal in a free group, the Coxeter inversion together with the diagram automorphisms, and the inversion and reversal automorphisms of the braid groups, which are torsion-free and have no elements of order two. **An additional structure on the group, not a rung of any chain; it stands in the Theory list immediately after *Group Cohomology*, the last article it draws on, and before *The Classification of Finite Simple Groups*, so that every article it uses precedes it and the classification still closes the category.** The geometry of the spaces built from a fixed subgroup is Part IV, and the representation-theoretic treatment of the real elements is later still. -->
 
 ### - Applications
 
@@ -211,9 +215,6 @@
 ### <a href="articles_maths/algebraically-closed-fields.html">Algebraically Closed Fields</a>
 <!-- algebraic closure, the fundamental theorem of algebra, Artin–Schreier, the non-orderability of $\mathbb{C}$. -->
 
-### <a href="articles_maths/involutive-rings.html">Involutive Rings</a>
-<!-- an involutive ring, that is a ring with an involution, an anti-automorphism of order two; the notion presupposes no commutativity, and it is the same datum as an order-two isomorphism $A \to A^{\mathrm{op}}$, so every ring with an involution is isomorphic to its opposite ring, while in the commutative case the opposite ring is the ring itself and the notion degenerates to an automorphism of order dividing two. The general structure: the fixed set $A^\sigma$ and the symmetric and skew elements, with $A = \mathrm{Sym} \oplus \mathrm{Skew}$ as abelian groups when $2$ is invertible, and the failure without commutativity of the multiplicative grading and of the closedness of $A^\sigma$ under multiplication; $\sigma$-ideals, the induced involution on a quotient and on a product, and $\sigma$-prime ideals and $\sigma$-prime rings, with the sufficient elementwise condition $aAb^{*} \neq 0$, with prime implying $\sigma$-prime and with the converse failing. The commutative case: $\sigma$ an automorphism of order two, $R = R^\sigma \oplus R^-$ with the characteristic-two failure, the conjugate product $x\sigma(x)$ and the conjugate sum $x+\sigma(x)$, the monic quadratic and the integrality of $R$ over $R^\sigma$, the affine involutions of $R[x]$ and their fixed subrings, localization and $\operatorname{Frac}(R)^\sigma = \operatorname{Frac}(R^\sigma)$, fields with involution as quadratic Galois extensions, quadratic in one characteristic and Artin–Schreier in the other, the exclusion of nontrivial order-preserving involutions of an ordered field, a table of examples, and the fixed ring $k[x^2,xy,y^2]$ of $k[x,y]$ as a ring that is not a unique factorisation domain. **An additional structure on the ring, not a rung of either chain; it stands at the seam between the commutative half and the non-commutative chain, after *Algebraically Closed Fields* and before *Semiprime Rings*.** The forms attached to an involution, the classification of the involutions of a central simple algebra, and everything a form or a pairing defines, are *Involutive Clifford Algebras*, in Part II. -->
-
 ### <a href="articles_maths/semiprime-rings.html">Semiprime Rings</a>
 <!-- the non-commutative analogue of a reduced ring: a ring with no nonzero nilpotent ideal; the lower nilradical as the intersection of the prime ideals; a semiprime ring as a subdirect product of prime rings; the commutative case is *Reduced Rings and the Nilradical*. -->
 
@@ -234,6 +235,11 @@
 
 ###<a href="articles_maths/real-algebraic-geometry.html">Real Algebraic Geometry</a>
 <!-- real algebraic sets and semialgebraic sets; the Tarski–Seidenberg theorem; the relation to the real-closed fields of this part. -->
+
+### - * Theory
+
+### <a href="articles_maths/involutive-rings.html">Involutive Rings</a>
+<!-- an involutive ring, that is a ring with an involution, an anti-automorphism of order two; the notion presupposes no commutativity, and it is the same datum as an order-two isomorphism $A \to A^{\mathrm{op}}$, so every ring with an involution is isomorphic to its opposite ring, while in the commutative case the opposite ring is the ring itself and the notion degenerates to an automorphism of order dividing two. The general structure: the fixed set $A^\sigma$ and the symmetric and skew elements, with $A = \mathrm{Sym} \oplus \mathrm{Skew}$ as abelian groups when $2$ is invertible, and the failure without commutativity of the multiplicative grading and of the closedness of $A^\sigma$ under multiplication; $\sigma$-ideals, the induced involution on a quotient and on a product, and $\sigma$-prime ideals and $\sigma$-prime rings, with the sufficient elementwise condition $aAb^{*} \neq 0$, with prime implying $\sigma$-prime and with the converse failing. The commutative case: $\sigma$ an automorphism of order two, $R = R^\sigma \oplus R^-$ with the characteristic-two failure, the conjugate product $x\sigma(x)$ and the conjugate sum $x+\sigma(x)$, the monic quadratic and the integrality of $R$ over $R^\sigma$, the affine involutions of $R[x]$ and their fixed subrings, localization and $\operatorname{Frac}(R)^\sigma = \operatorname{Frac}(R^\sigma)$, fields with involution as quadratic Galois extensions, quadratic in one characteristic and Artin–Schreier in the other, the exclusion of nontrivial order-preserving involutions of an ordered field, a table of examples, and the fixed ring $k[x^2,xy,y^2]$ of $k[x,y]$ as a ring that is not a unique factorisation domain. **An additional structure on the ring, not a rung of either chain; it stands at the seam between the commutative half and the non-commutative chain, after *Algebraically Closed Fields* and before *Semiprime Rings*.** The forms attached to an involution, the classification of the involutions of a central simple algebra, and everything a form or a pairing defines, are *Involutive Clifford Algebras*, in Part II. -->
 
 ### - Applications
 
@@ -298,11 +304,13 @@
 ### <a href="articles_maths/extension-of-scalars.html">Extension of Scalars</a>
 <!-- $R\to S$, base change $M\mapsto S\otimes_R M$, change of dimension, realification and complexification. -->
 
-### <a href="articles_maths/involutive-linear-spaces.html">Involutive Linear Spaces</a>
-<!-- a linear or semilinear map of order two on a linear space, form-free: the decomposition $V = V_+ \oplus V_-$ and the type $(p,q)$, the trace $p-q$ and the determinant $(-1)^q$, the $n+1$ conjugacy classes and the orbit $\operatorname{GL}(V)/(\operatorname{GL}(V_+) \times \operatorname{GL}(V_-))$, the Gaussian-binomial count over a finite field of odd order, the collapse in characteristic two where every involution is unipotent, the induced involutions on the dual, on tensor and exterior powers and on $\operatorname{End}_F(V)$, and the semilinear and antilinear involutions with the two signs of the square. No form, no norm, no distance: the form a linear involution preserves belongs to *Involutive Clifford Algebras*, and the $\mathbb{Z}/2$-grading to *Superalgebras and Graded Structures*. **An additional structure on a linear space, not a rung of any chain; it stands in the Theory list immediately after *Extension of Scalars*, the last article it draws on.** -->
-
 ### <a href="articles_maths/localization-and-completion-of-modules.html">Localization and Completion of Modules</a>
 <!-- $S^{-1}M$, $I$-adic completion, flatness, behaviour under closure of the base. -->
+
+### - * Theory
+
+### <a href="articles_maths/involutive-linear-spaces.html">Involutive Linear Spaces</a>
+<!-- a linear or semilinear map of order two on a linear space, form-free: the decomposition $V = V_+ \oplus V_-$ and the type $(p,q)$, the trace $p-q$ and the determinant $(-1)^q$, the $n+1$ conjugacy classes and the orbit $\operatorname{GL}(V)/(\operatorname{GL}(V_+) \times \operatorname{GL}(V_-))$, the Gaussian-binomial count over a finite field of odd order, the collapse in characteristic two where every involution is unipotent, the induced involutions on the dual, on tensor and exterior powers and on $\operatorname{End}_F(V)$, and the semilinear and antilinear involutions with the two signs of the square. No form, no norm, no distance: the form a linear involution preserves belongs to *Involutive Clifford Algebras*, and the $\mathbb{Z}/2$-grading to *Superalgebras and Graded Structures*. **An additional structure on a linear space, not a rung of any chain; it stands in the Theory list immediately after *Extension of Scalars*, the last article it draws on.** -->
 
 ### - Applications
 
@@ -360,9 +368,6 @@
 
 ### <a href="articles_maths/tensor-products-of-algebras.html">Tensor Products of Algebras</a>
 <!-- the product formula $(a\otimes b)(a'\otimes b')=(aa')\otimes(bb')$, unit, commuting images, the pushout, the coproduct, the free product. -->
-### <a href="articles_maths/involutive-linear-algebras.html">Involutive Linear Algebras</a>
-<!-- an involution of an algebra, that is an anti-automorphism of order two, form-free, together with the involutive automorphism that preserves the product: the definition, the opposite algebra with the coset $\operatorname{Anti}(A)=\sigma\operatorname{Aut}(A)$, the centre, the group of units and the two conjugate elements $a+\sigma(a)$ and $a\sigma(a)$; the decomposition $A=A^+\oplus A^-$ when $2\neq0$ and its collapse in characteristic two, where the symmetric and the skew elements coincide; the skew elements as a Lie algebra under the commutator, so that $A^-\oplus A^+$ is a $\mathbb{Z}/2$-graded Lie algebra, and the symmetric elements as a Jordan algebra under $x\circ y=\tfrac12(xy+yx)$, a subalgebra exactly when its elements commute pairwise, so that the fixed set of an anti-automorphism is a Jordan algebra and may still be an algebra (the diagonal matrices inside the upper triangular ones) while the fixed set of an involutive automorphism is always a subalgebra and the algebra is $\mathbb{Z}/2$-graded; the induced involution on a quotient by a $\sigma$-stable ideal, the exchange involution on $A\times A^{\mathrm{op}}$ whose fixed set is the diagonal, whose swap on $A\times A$ is instead an involutive automorphism, and the tensor product $\sigma\otimes\tau$ with its symmetric and skew parts; and the scalars, that is the $\varsigma$-semilinear involutions, the restriction to $F\cdot1$, the first and the second kind by the centre, and the descent $(B\otimes_FK)^{\mathrm{id}\otimes\varsigma}=B\otimes1$ for a quadratic extension. No form, no norm, no distance: the adjoint involutions, the orthogonal and the symplectic type and the trace and the reduced norm belong to *Involutive Clifford Algebras*, and the graded algebra to *Superalgebras and Graded Structures*. -->
-
 ###<a href="articles_maths/hopf-algebras.html">Hopf Algebras</a>
 <!-- algebras, coalgebras and bialgebras; the antipode. -->
 
@@ -432,6 +437,11 @@
 ###<a href="articles_maths/descent-theory.html">Descent Theory</a>
 <!-- descent for sheaves and for modules; the relation to Grothendieck topologies; the geometric applications belong to Part II. -->
 
+### - * Theory
+
+### <a href="articles_maths/involutive-linear-algebras.html">Involutive Linear Algebras</a>
+<!-- an involution of an algebra, that is an anti-automorphism of order two, form-free, together with the involutive automorphism that preserves the product: the definition, the opposite algebra with the coset $\operatorname{Anti}(A)=\sigma\operatorname{Aut}(A)$, the centre, the group of units and the two conjugate elements $a+\sigma(a)$ and $a\sigma(a)$; the decomposition $A=A^+\oplus A^-$ when $2\neq0$ and its collapse in characteristic two, where the symmetric and the skew elements coincide; the skew elements as a Lie algebra under the commutator, so that $A^-\oplus A^+$ is a $\mathbb{Z}/2$-graded Lie algebra, and the symmetric elements as a Jordan algebra under $x\circ y=\tfrac12(xy+yx)$, a subalgebra exactly when its elements commute pairwise, so that the fixed set of an anti-automorphism is a Jordan algebra and may still be an algebra (the diagonal matrices inside the upper triangular ones) while the fixed set of an involutive automorphism is always a subalgebra and the algebra is $\mathbb{Z}/2$-graded; the induced involution on a quotient by a $\sigma$-stable ideal, the exchange involution on $A\times A^{\mathrm{op}}$ whose fixed set is the diagonal, whose swap on $A\times A$ is instead an involutive automorphism, and the tensor product $\sigma\otimes\tau$ with its symmetric and skew parts; and the scalars, that is the $\varsigma$-semilinear involutions, the restriction to $F\cdot1$, the first and the second kind by the centre, and the descent $(B\otimes_FK)^{\mathrm{id}\otimes\varsigma}=B\otimes1$ for a quadratic extension. No form, no norm, no distance: the adjoint involutions, the orthogonal and the symplectic type and the trace and the reduced norm belong to *Involutive Clifford Algebras*, and the graded algebra to *Superalgebras and Graded Structures*. -->
+
 ### - Applications
 
 ### <a href="articles_maths/examples-of-algebras.html">Examples of Algebras</a>
@@ -485,6 +495,8 @@
 
 ###<a href="articles_maths/macdonald-and-hall-littlewood-polynomials.html">Macdonald and Hall–Littlewood Polynomials</a>
 <!-- the Macdonald polynomials and their properties; the relation to the symmetric functions and to the double affine Hecke algebras; the Hall–Littlewood polynomials as the one-parameter deformation of the Schur functions. -->
+### - * Theory
+
 ## Anti-symmetric Linear Algebras
 
 ### - Theory
@@ -527,6 +539,8 @@
 
 ###<a href="articles_maths/poisson-and-gerstenhaber-algebras.html">Poisson and Gerstenhaber Algebras</a>
 <!-- Poisson algebras and the properties of the bracket; the relation to the symplectic and Poisson forms of Part II; the Gerstenhaber algebras and their relation to Hochschild cohomology. -->
+
+### - * Theory
 
 ### - Applications
 
@@ -585,6 +599,8 @@
 ###<a href="articles_maths/cluster-algebras.html">Cluster Algebras</a>
 <!-- cluster algebras and their seeds; the Laurent phenomenon; the relation to quiver representations. -->
 
+### - * Theory
+
 ### - Applications
 
 ### <a href="articles_maths/representations-of-groups.html">Representations of Groups</a>
@@ -632,15 +648,14 @@
 ### <a href="articles_maths/graph-theory.html">Graph Theory</a>
 <!-- graphs as sets with a relation: vertices, edges, the directed and the undirected case, morphisms, subgraphs and induced subgraphs; paths and cycles, connectedness and the components; trees and forests, spanning trees, and the characterisations of a tree; the graph distance as the number of edges on a shortest path, with the diameter, the growth and the geodesic properties that a Cayley graph is read through below; bipartite graphs, matchings and colourings, at the level the group-theoretic articles use; the standard families (the complete, the path, the cycle and the bipartite graphs, and the Dynkin diagrams as graphs); the Cayley graph, the word metric and the Bass–Serre tree are constructed in *Topology on Groups*, where the group acts on them. -->
 
+### - * Theory
+
 ## Topology on Groups
 
 ### - Theory
 
 ### <a href="articles_maths/topological-groups.html">Topological Groups</a>
 <!-- group topology (continuity of the product and the inverse), homogeneity, the topology determined by the neighbourhoods of the identity, subgroups and quotient groups, products, the left and right uniform structures, completion of a topological group, profinite groups as inverse limits of finite groups; topological vector spaces as the additive case. -->
-
-### <a href="articles_maths/involutive-topological-groups.html">Involutive Topological Groups</a>
-<!-- an involutive topological group, that is a topological group with a continuous involution, an anti-automorphism of order two; continuity is a genuine hypothesis, the inversion and the inner involutions being continuous for free and an outer one being able to fail; the fixed and the inverted sets are closed, so the inverted subgroup is a closed subgroup; a continuous involution exchanges the left and the right uniformities and therefore extends to the completion, which is again involutive; the quotient by the inverted subgroup embeds in the fixed set, and the embedding is a homeomorphism onto a closed piece of it when the group is compact; the split extension by $C_2$ is a topological group exactly when the involutive automorphism is continuous; on an abelian group the topological involutions are the continuous automorphisms of order two. -->
 
 ###<a href="articles_maths/abelian-topological-groups.html">Abelian Topological Groups</a>
 <!-- abelian topological groups; the duality of a locally compact abelian group with its character group; the relation to the harmonic analysis of Part III. -->
@@ -684,15 +699,17 @@
 ###<a href="articles_maths/bruhat-tits-theory.html">Bruhat–Tits Theory</a>
 <!-- the Bruhat–Tits building of a reductive group over a local field. -->
 
+### - * Theory
+
+### <a href="articles_maths/involutive-topological-groups.html">Involutive Topological Groups</a>
+<!-- an involutive topological group, that is a topological group with a continuous involution, an anti-automorphism of order two; continuity is a genuine hypothesis, the inversion and the inner involutions being continuous for free and an outer one being able to fail; the fixed and the inverted sets are closed, so the inverted subgroup is a closed subgroup; a continuous involution exchanges the left and the right uniformities and therefore extends to the completion, which is again involutive; the quotient by the inverted subgroup embeds in the fixed set, and the embedding is a homeomorphism onto a closed piece of it when the group is compact; the split extension by $C_2$ is a topological group exactly when the involutive automorphism is continuous; on an abelian group the topological involutions are the continuous automorphisms of order two. -->
+
 ## Topology on Rings and Fields
 
 ### - Theory
 
 ### <a href="articles_maths/topological-rings-and-fields.html">Topological Rings and Fields</a>
 <!-- the compatibility axioms, the topology determined by the neighbourhoods of zero, linear topologies generated by ideals, the $I$-adic topology, inverse limits, completion of a ring, the Krull topology, topological fields and the continuity of inversion. -->
-
-### <a href="articles_maths/involutive-topological-rings-and-fields.html">Involutive Topological Rings and Fields</a>
-<!-- an involutive topological ring, that is a topological ring with a continuous involution, an anti-automorphism of order two; continuity is a genuine hypothesis, free for the discrete and the indiscrete topology, for the identity, and for an involution that preserves the ideal of a linear topology, and failing on $\mathbb{R}[x]$ with the $(x)$-adic topology for $f(x)\mapsto f(b-x)$ with $b\neq0$ and on $\mathbb{Q}(\sqrt{2})$ with the topology from $\mathbb{R}$ for the conjugation; the fixed and the skew sets are closed, being equalizers, so a dense fixed set forces the trivial involution, and closedness is the whole gain, the fixed set of a continuous anti-automorphism being closed without being a subring; the averaging map is continuous when $2$ is invertible and makes the fixed set a retract, so that the additive group splits topologically into the fixed and the skew parts; the $I$-adic criterion $\sigma(I)^m\subseteq I$ gives continuity whenever the involution preserves the ideal defining the topology, and the involution then extends to a continuous involution of the $I$-adic completion, whose fixed set is the closure of the fixed set when $2$ is invertible, as in $\mathbb{Z}_p[i]=\mathbb{Z}_p[X]/(X^2+1)$ with $X\mapsto-X$ and $\mathbb{R}[[x]]$ with $f(x)\mapsto f(-x)$; a $\sigma$-stable closed ideal gives a Hausdorff quotient carrying the involution, whose fixed set can be strictly larger than the image of the fixed set, as $\mathbb{Z}[i]/(2)$ shows, while the completion introduces no such new fixed element; on a topological field the fixed field of a continuous involution is a closed subfield of index two and a topological field in the subspace topology with open unit group, on an ordered field the identity is the only monotone involution and every nontrivial one is non-monotone, and $\mathbb{C}$ with the usual topology and the conjugation is the model continuous case. **An additional structure on the topological ring, not a rung of any chain; it stands immediately after *Topological Rings and Fields*, whose $I$-adic topologies, linear topologies, neighbourhoods of zero and completions it uses, and before *Absolute Values, Valuations and Completions*, which owns the $p$-adic fields and the valuation topologies that are named here and not used.** -->
 
 ### <a href="articles_maths/absolute-values-valuations-and-completions.html">Absolute Values, Valuations and Completions</a>
 <!-- absolute values, the induced metric, equivalence of absolute values, Ostrowski's theorem (every nontrivial absolute value on $\mathbb{Q}$ is the real one or a $p$-adic one), valuations and non-Archimedean fields, completion with respect to a valuation, $\mathbb{Q}\to\mathbb{R}$ and $\mathbb{Q}\to\mathbb{Q}_p$, Hensel's lemma, extensions of valuations. -->
@@ -718,6 +735,11 @@
 ###<a href="articles_maths/perfectoid-spaces.html">Perfectoid Spaces</a>
 <!-- perfectoid spaces and their properties; the relation to the adic spaces of this part and to the algebraic number theory of Part I. -->
 
+### - * Theory
+
+### <a href="articles_maths/involutive-topological-rings-and-fields.html">Involutive Topological Rings and Fields</a>
+<!-- an involutive topological ring, that is a topological ring with a continuous involution, an anti-automorphism of order two; continuity is a genuine hypothesis, free for the discrete and the indiscrete topology, for the identity, and for an involution that preserves the ideal of a linear topology, and failing on $\mathbb{R}[x]$ with the $(x)$-adic topology for $f(x)\mapsto f(b-x)$ with $b\neq0$ and on $\mathbb{Q}(\sqrt{2})$ with the topology from $\mathbb{R}$ for the conjugation; the fixed and the skew sets are closed, being equalizers, so a dense fixed set forces the trivial involution, and closedness is the whole gain, the fixed set of a continuous anti-automorphism being closed without being a subring; the averaging map is continuous when $2$ is invertible and makes the fixed set a retract, so that the additive group splits topologically into the fixed and the skew parts; the $I$-adic criterion $\sigma(I)^m\subseteq I$ gives continuity whenever the involution preserves the ideal defining the topology, and the involution then extends to a continuous involution of the $I$-adic completion, whose fixed set is the closure of the fixed set when $2$ is invertible, as in $\mathbb{Z}_p[i]=\mathbb{Z}_p[X]/(X^2+1)$ with $X\mapsto-X$ and $\mathbb{R}[[x]]$ with $f(x)\mapsto f(-x)$; a $\sigma$-stable closed ideal gives a Hausdorff quotient carrying the involution, whose fixed set can be strictly larger than the image of the fixed set, as $\mathbb{Z}[i]/(2)$ shows, while the completion introduces no such new fixed element; on a topological field the fixed field of a continuous involution is a closed subfield of index two and a topological field in the subspace topology with open unit group, on an ordered field the identity is the only monotone involution and every nontrivial one is non-monotone, and $\mathbb{C}$ with the usual topology and the conjugation is the model continuous case. **An additional structure on the topological ring, not a rung of any chain; it stands immediately after *Topological Rings and Fields*, whose $I$-adic topologies, linear topologies, neighbourhoods of zero and completions it uses, and before *Absolute Values, Valuations and Completions*, which owns the $p$-adic fields and the valuation topologies that are named here and not used.** -->
+
 ### - Applications
 
 ###<a href="articles_maths/the-p-adic-numbers.html">The $p$-adic Numbers</a>
@@ -729,9 +751,6 @@
 
 ### <a href="articles_maths/topological-modules-and-vector-spaces.html">Topological Modules and Vector Spaces</a>
 <!-- linear topologies generated by submodules, the topology determined by the neighbourhoods of zero, quotients and completions, the $p$-adic integers $\mathbb{Z}_p$ as the completion of $\mathbb{Z}$, profinite and complete modules, topological vector spaces, seminorms. -->
-
-### <a href="articles_maths/involutive-topological-linear-spaces.html">Involutive Topological Linear Spaces</a>
-<!-- a topological linear space with a continuous semilinear involution $\theta$ relative to a continuous involution $\varsigma$ of the ring of scalars; the linear case $\varsigma=\mathrm{id}$ and the antilinear case over $\mathbb{C}$ with the conjugation; continuity at the origin, the homeomorphism and the uniform continuity; the criterion for a linear topology, that for every $n$ there is $m$ with $\theta(U_m)\subseteq U_n$, the automatic continuity of every linear involution for an $I$-adic topology and the criterion $\varsigma(I)^m\subseteq I$ for the semilinear ones, and the discontinuous $f(x)\mapsto f(b-x)$ with $b\neq0$ on $\mathbb{C}[x]$ with the $(x)$-adic topology and $f(x)\mapsto f(1-x)$ on the sparse linear topology of $K[x]$; the fixed and the negated subspaces as closed equalizers, the fixed subspace a topological module over the closed fixed subring $R^\varsigma$, a dense fixed subspace forcing the trivial involution, and the topological direct sum $V=V^\theta\oplus V^-$ by the continuous averaging maps when $2$ is invertible; the quotient by a closed stable subspace with the induced involution, its fixed subspace the image of the fixed subspace over a field of characteristic not two and strictly larger for the module $\mathbb{Z}[i]$ with the $(2)$-adic topology; the unique extension to the completion $\widehat V=\varprojlim_n V/U_n$, of the same kind, with fixed subspace the closure of the fixed subspace; and the semilinear case over a topological field, where the fixed field $F^\varsigma$ is a closed subfield of index two and the fixed space is a closed topological vector space over it, the real form over $\mathbb{C}$ having real dimension the complex dimension. -->
 
 ### <a href="articles_maths/normed-and-banach-spaces.html">Normed and Banach Spaces</a>
 <!-- norms, equivalence of norms in finite dimension, bounded linear maps, completeness, the Baire-based cornerstones (Hahn–Banach, open mapping, closed graph, uniform boundedness), Hilbert spaces, the dual space. -->
@@ -751,6 +770,11 @@
 ###<a href="articles_maths/topological-tensor-products.html">Topological Tensor Products</a>
 <!-- completed tensor products; the relation to the balanced product of Part I and to the nuclear spaces of this part. -->
 
+### - * Theory
+
+### <a href="articles_maths/involutive-topological-linear-spaces.html">Involutive Topological Linear Spaces</a>
+<!-- a topological linear space with a continuous semilinear involution $\theta$ relative to a continuous involution $\varsigma$ of the ring of scalars; the linear case $\varsigma=\mathrm{id}$ and the antilinear case over $\mathbb{C}$ with the conjugation; continuity at the origin, the homeomorphism and the uniform continuity; the criterion for a linear topology, that for every $n$ there is $m$ with $\theta(U_m)\subseteq U_n$, the automatic continuity of every linear involution for an $I$-adic topology and the criterion $\varsigma(I)^m\subseteq I$ for the semilinear ones, and the discontinuous $f(x)\mapsto f(b-x)$ with $b\neq0$ on $\mathbb{C}[x]$ with the $(x)$-adic topology and $f(x)\mapsto f(1-x)$ on the sparse linear topology of $K[x]$; the fixed and the negated subspaces as closed equalizers, the fixed subspace a topological module over the closed fixed subring $R^\varsigma$, a dense fixed subspace forcing the trivial involution, and the topological direct sum $V=V^\theta\oplus V^-$ by the continuous averaging maps when $2$ is invertible; the quotient by a closed stable subspace with the induced involution, its fixed subspace the image of the fixed subspace over a field of characteristic not two and strictly larger for the module $\mathbb{Z}[i]$ with the $(2)$-adic topology; the unique extension to the completion $\widehat V=\varprojlim_n V/U_n$, of the same kind, with fixed subspace the closure of the fixed subspace; and the semilinear case over a topological field, where the fixed field $F^\varsigma$ is a closed subfield of index two and the fixed space is a closed topological vector space over it, the real form over $\mathbb{C}$ having real dimension the complex dimension. -->
+
 ## Topology on Linear Algebras
 
 ### - Theory
@@ -758,17 +782,28 @@
 ### <a href="articles_maths/topological-algebras-and-banach-algebras.html">Topological Algebras and Banach Algebras</a>
 <!-- compatibility of the product with the topology, the topology determined by the neighbourhoods of zero, submultiplicative norms $\lVert xy\rVert\le\lVert x\rVert\lVert y\rVert$, Banach algebras, the spectrum and the spectral radius, the Gelfand transform and Gelfand duality (commutative C*-algebras recover compact Hausdorff spaces), C*-algebras and the continuous functional calculus. -->
 
-### <a href="articles_maths/involutive-topological-linear-algebras.html">Involutive Topological Linear Algebras</a>
-<!-- a topological algebra with a continuous semilinear involution $\sigma$ relative to a continuous involution $\varsigma$ of the ring of scalars, the involution being an anti-automorphism of order two, the linear case $\varsigma=\mathrm{id}$ and the antilinear case over $\mathbb{C}$ with the conjugation, beside the involutive topological automorphism, an automorphism of order two; continuity at the origin, the homeomorphism, the uniform continuity, determination on a dense subset, and the descent to the Hausdorff quotient by the closure of zero; the topological opposite algebra and the involution as the certificate of a topological isomorphism $A\to A^{\mathrm{op}}$ of order two; the criterion for a linear topology, that for every $n$ there is $m$ with $\sigma(I_m)\subseteq I_n$, the cofinal $\sigma$-stable system $J_n=I_n\cap\sigma(I_n)$, the $I$-adic criterion $\sigma(I)^m\subseteq I$ and the automatic continuity of a linear involution with $\sigma(I)\subseteq I$; the continuous linear involutions $f(x)\mapsto f(b-x)$ of $\mathbb{R}[x]$ with the $(x)$-adic topology, continuous exactly for $b=0$ because the constant term of $(b-x)^m$ is $b^m$, with fixed algebra $\mathbb{R}[x-x^2]$ dense and not closed, and the continuous antilinear $\theta(f)(x)=\overline{f(-x)}$ of $\mathbb{C}[x]$ extending to $\mathbb{C}[[x]]$; the extension of a continuous involution to the completion $\widehat A=\varprojlim_n A/I_n$, with symmetric part the closure of the image of $A^+$ when $2$ is invertible; the symmetric and the skew parts as closed equalizers and closed topological modules over $R^\varsigma$, the symmetric part a closed topological Jordan algebra under the symmetrised product and the skew part a closed topological Lie algebra under the commutator, a dense symmetric part forcing the trivial involution; the topological direct sum $A=A^+\oplus A^-$ by the continuous averaging maps when $2$ is invertible, the projection multiplicative only for an involutive automorphism; the quotient by a closed stable ideal with the induced involution, its symmetric part the image of $A^+$ over a field of characteristic not two and strictly larger in characteristic two, as the swap on $\mathbb{F}_2[x,y]$ modulo $(x+y)$ shows with image $\mathbb{F}_2[x^2]$; the closure of a stable set and the kernel of a continuous morphism; the product algebra with the involution $\sigma\times\tau$, and the exchange involution on $A\times A^{\mathrm{op}}$ whose symmetric part is the diagonal, a subalgebra exactly when $A$ is commutative; the $\mathrm{C}^*$-case, where the involution of a $\mathrm{C}^*$-algebra is isometric and determines the norm, $\lVert a\rVert^2=\lVert a^*a\rVert=r(a^*a)$, so that a *-algebra carries at most one $\mathrm{C}^*$-norm and a unital *-homomorphism of unital $\mathrm{C}^*$-algebras is contractive; and the semilinear case over a topological field, where the fixed field $F^\varsigma$ is a closed subfield of index two and a $\varsigma$-semilinear involution is $F^\varsigma$-linear, so that over a complete valued field a semilinear involution of a finite-dimensional algebra is continuous exactly when $\varsigma$ is, the completeness being necessary because the conjugation of $\mathbb{Q}(\sqrt{2})$ with the topology from $\mathbb{R}$ is a discontinuous semilinear involution of a one-dimensional algebra. **An additional structure on the topological algebra, not a rung of any chain; it stands immediately after *Topological Algebras and Banach Algebras*, whose topological algebra, submultiplicative norm, Banach and $\mathrm{C}^*$-algebras, Gelfand duality and spectral radius it uses, and before *Locally Convex and Fréchet Algebras*; the non-commutative $\mathrm{C}^*$-theory, the states, the positivity and the Gelfand–Naimark theorem are named and deferred to *Operator Algebras* later in this category, and the completed tensor products to *Topological Tensor Products* of the previous category.** -->
-
 ###<a href="articles_maths/locally-convex-and-frechet-algebras.html">Locally Convex and Fréchet Algebras</a>
 <!-- Fréchet algebras and their properties; the relation to the Banach algebras and to the topological algebras of this part; the locally convex algebras and the topological algebras between which the Fréchet algebras sit. -->
 
-### <a href="articles_maths/operator-algebras.html">Operator Algebras</a>
-<!-- the algebra $B(H)$ of bounded operators on a Hilbert space and its topologies; C*-algebras and the Gelfand–Naimark theorem; the Gelfand representation of a commutative C*-algebra as functions on its spectrum; states, positivity and the GNS construction; von Neumann algebras, the bicommutant theorem and the weak and strong topologies; factors and the classification into types; traces, the trace class and the Hilbert–Schmidt class; the Tomita–Takesaki modular theory, the modular operator and the modular flow; KMS states and the modular Hamiltonian; the finite-dimensional case, where the modular operator is explicit and the theory reduces to linear algebra. -->
-
 ###<a href="articles_maths/type-i-groups.html">Type I Groups</a>
 <!-- type I groups and their representation theory; the relation to the operator algebras of this part and to the harmonic analysis of Part III. -->
+
+###<a href="articles_maths/topological-k-theory.html">Topological K-Theory</a>
+<!-- topological K-theory and its properties; the relation to the operator algebras of this part and to the index theory of Part IV. -->
+
+###<a href="articles_maths/locally-compact-quantum-groups.html">Locally Compact Quantum Groups</a>
+<!-- the operator-algebraic notion of a quantum group; the relation to the Hopf algebras and quantum groups of Part I and to the operator algebras of this part. -->
+
+###<a href="articles_maths/normed-division-algebras-and-the-hurwitz-theorem.html">Normed Division Algebras and the Hurwitz Theorem</a>
+<!-- the four normed division algebras $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$; the Hurwitz theorem that there are no others; the Cayley–Dickson construction and the loss of structure at each step, from order to commutativity to associativity. -->
+
+### - * Theory
+
+### <a href="articles_maths/involutive-topological-linear-algebras.html">Involutive Topological Linear Algebras</a>
+<!-- a topological algebra with a continuous semilinear involution $\sigma$ relative to a continuous involution $\varsigma$ of the ring of scalars, the involution being an anti-automorphism of order two, the linear case $\varsigma=\mathrm{id}$ and the antilinear case over $\mathbb{C}$ with the conjugation, beside the involutive topological automorphism, an automorphism of order two; continuity at the origin, the homeomorphism, the uniform continuity, determination on a dense subset, and the descent to the Hausdorff quotient by the closure of zero; the topological opposite algebra and the involution as the certificate of a topological isomorphism $A\to A^{\mathrm{op}}$ of order two; the criterion for a linear topology, that for every $n$ there is $m$ with $\sigma(I_m)\subseteq I_n$, the cofinal $\sigma$-stable system $J_n=I_n\cap\sigma(I_n)$, the $I$-adic criterion $\sigma(I)^m\subseteq I$ and the automatic continuity of a linear involution with $\sigma(I)\subseteq I$; the continuous linear involutions $f(x)\mapsto f(b-x)$ of $\mathbb{R}[x]$ with the $(x)$-adic topology, continuous exactly for $b=0$ because the constant term of $(b-x)^m$ is $b^m$, with fixed algebra $\mathbb{R}[x-x^2]$ dense and not closed, and the continuous antilinear $\theta(f)(x)=\overline{f(-x)}$ of $\mathbb{C}[x]$ extending to $\mathbb{C}[[x]]$; the extension of a continuous involution to the completion $\widehat A=\varprojlim_n A/I_n$, with symmetric part the closure of the image of $A^+$ when $2$ is invertible; the symmetric and the skew parts as closed equalizers and closed topological modules over $R^\varsigma$, the symmetric part a closed topological Jordan algebra under the symmetrised product and the skew part a closed topological Lie algebra under the commutator, a dense symmetric part forcing the trivial involution; the topological direct sum $A=A^+\oplus A^-$ by the continuous averaging maps when $2$ is invertible, the projection multiplicative only for an involutive automorphism; the quotient by a closed stable ideal with the induced involution, its symmetric part the image of $A^+$ over a field of characteristic not two and strictly larger in characteristic two, as the swap on $\mathbb{F}_2[x,y]$ modulo $(x+y)$ shows with image $\mathbb{F}_2[x^2]$; the closure of a stable set and the kernel of a continuous morphism; the product algebra with the involution $\sigma\times\tau$, and the exchange involution on $A\times A^{\mathrm{op}}$ whose symmetric part is the diagonal, a subalgebra exactly when $A$ is commutative; the $\mathrm{C}^*$-case, where the involution of a $\mathrm{C}^*$-algebra is isometric and determines the norm, $\lVert a\rVert^2=\lVert a^*a\rVert=r(a^*a)$, so that a *-algebra carries at most one $\mathrm{C}^*$-norm and a unital *-homomorphism of unital $\mathrm{C}^*$-algebras is contractive; and the semilinear case over a topological field, where the fixed field $F^\varsigma$ is a closed subfield of index two and a $\varsigma$-semilinear involution is $F^\varsigma$-linear, so that over a complete valued field a semilinear involution of a finite-dimensional algebra is continuous exactly when $\varsigma$ is, the completeness being necessary because the conjugation of $\mathbb{Q}(\sqrt{2})$ with the topology from $\mathbb{R}$ is a discontinuous semilinear involution of a one-dimensional algebra. **An additional structure on the topological algebra, not a rung of any chain; it stands immediately after *Topological Algebras and Banach Algebras*, whose topological algebra, submultiplicative norm, Banach and $\mathrm{C}^*$-algebras, Gelfand duality and spectral radius it uses, and before *Locally Convex and Fréchet Algebras*; the non-commutative $\mathrm{C}^*$-theory, the states, the positivity and the Gelfand–Naimark theorem are named and deferred to *Operator Algebras* later in this category, and the completed tensor products to *Topological Tensor Products* of the previous category.** -->
+
+### <a href="articles_maths/operator-algebras.html">Operator Algebras</a>
+<!-- the algebra $B(H)$ of bounded operators on a Hilbert space and its topologies; C*-algebras and the Gelfand–Naimark theorem; the Gelfand representation of a commutative C*-algebra as functions on its spectrum; states, positivity and the GNS construction; von Neumann algebras, the bicommutant theorem and the weak and strong topologies; factors and the classification into types; traces, the trace class and the Hilbert–Schmidt class; the Tomita–Takesaki modular theory, the modular operator and the modular flow; KMS states and the modular Hamiltonian; the finite-dimensional case, where the modular operator is explicit and the theory reduces to linear algebra. -->
 
 ###<a href="articles_maths/toeplitz-algebras.html">Toeplitz Algebras</a>
 <!-- Toeplitz algebras and their properties; the relation to the operator algebras and to the index theory of Part IV. -->
@@ -785,22 +820,13 @@
 ### <a href="articles_maths/hilbert-and-c-modules.html">Hilbert and C*-Modules</a>
 <!-- inner products taking values in a C*-algebra, the $A$-valued norm, completeness, the module analogue of Hilbert space, Morita equivalence of C*-algebras, the link to the defining module of $\mathbb{B}\cong M_2(\mathbb{C})$. -->
 
-###<a href="articles_maths/topological-k-theory.html">Topological K-Theory</a>
-<!-- topological K-theory and its properties; the relation to the operator algebras of this part and to the index theory of Part IV. -->
-
 ###<a href="articles_maths/k-theory-of-operator-algebras.html">K-Theory of Operator Algebras</a>
 <!-- the K-groups of a C*-algebra; the six-term exact sequence; the relation to the operator algebras of this part and to the index theory. -->
 
 ###<a href="articles_maths/kk-theory.html">KK-Theory</a>
 <!-- KK-theory and its properties; the relation to the K-theory of operator algebras and to the index theory of Part IV. -->
 
-###<a href="articles_maths/locally-compact-quantum-groups.html">Locally Compact Quantum Groups</a>
-<!-- the operator-algebraic notion of a quantum group; the relation to the Hopf algebras and quantum groups of Part I and to the operator algebras of this part. -->
-
-###<a href="articles_maths/normed-division-algebras-and-the-hurwitz-theorem.html">Normed Division Algebras and the Hurwitz Theorem</a>
-<!-- the four normed division algebras $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$; the Hurwitz theorem that there are no others; the Cayley–Dickson construction and the loss of structure at each step, from order to commutativity to associativity. -->
-
-## Clifford Algebras and Operators
+## Topology on Linear Algebras with a degree-2 form
 
 ### - Theory (General)
 
@@ -833,9 +859,6 @@
 
 ### <a href="articles_maths/clifford-algebras.html">Clifford Algebras</a>
 <!-- definition $Cl(V,Q)=T(V)/(v\otimes v-Q(v)\cdot1)$, the universal property, the fundamental relation $uv+vu=2B(u,v)$, functoriality. -->
-
-### <a href="articles_maths/involutive-clifford-algebras.html">Involutive Clifford Algebras</a>
-<!-- involutions of a ring and their two kinds; sesquilinear and Hermitian forms; the trace form and reduced norm of an algebra; the intrinsic anti-involutions of a Clifford algebra, reversion and Clifford conjugation; the involution of the base and the induced dagger $x^\dagger=\sigma(\alpha(x^r))$; the Hermitian forms on the algebra and the blade form; the Hermitian sandwich $xyx^\dagger$, its domain and the unitary slice on which it is the inner conjugation; the unitary and compact geometry. -->
 
 ### <a href="articles_maths/clifford-algebras-in-finite-dimensions.html">Clifford Algebras in Finite Dimensions</a>
 <!-- the definition and universal property; the fundamental relation; the radical; the reduction; the decomposition of a degenerate Clifford algebra into its non-degenerate and nilpotent factors; rank; the grading and filtration in the degenerate case; basis; $k$-vectors and multivectors; the volume element; the centre; the square root of a multivector in the Euclidean algebra $\mathrm{Cl}_{3,0}$ — the reduction $A=s+v+(S+V)\omega$ by the central volume element, the graded linear equations, the complex quadratic $4z^2-4\beta z+\gamma=0$ with $\beta=b_0-ib_{123}$, $\gamma=Q-2iP$, the existence scalars $b_S=b_0^2-b_{123}^2-Q$ and $b_I=2(P-b_0b_{123})$ with $\Delta=b_S^2+b_I^2$, the isolated roots two or four in number, the four-parameter continuum for a complex scalar and the classification, and the source's reading of the data as a difference of squared lengths and an angle. -->
@@ -935,7 +958,12 @@
 ### <a href="articles_maths/spinors-as-minimal-left-ideals-with-signed-inner-conjugation.html">Spinors as Minimal Left Ideals with Signed Inner Conjugation</a>
 <!-- a spinor as an element of a minimal left ideal $I=\mathrm{Cl}(V,q)\pi$, with the whole Pin group acting because a left ideal is preserved by every left multiplication; the parity splitting $I=I^0\oplus I^1$ with $I^i=\mathrm{Cl}^i\pi$, the even elements preserving the two summands and the odd ones interchanging them; the signed inner conjugation realised on the ideal as $\rho(\alpha(x))\rho(v)\rho(x)^{-1}$; the reflection $\rho_u(v)\psi$ against $-\rho_u(v)\psi$; the central volume element acting by the exchange of the summands and by $-\mathrm{id}$ under the signed conjugation. -->
 
-### - Theory, Two-Sided Operator with Hermitian Adjoint
+### - * Theory
+
+### <a href="articles_maths/involutive-clifford-algebras.html">Involutive Clifford Algebras</a>
+<!-- involutions of a ring and their two kinds; sesquilinear and Hermitian forms; the trace form and reduced norm of an algebra; the intrinsic anti-involutions of a Clifford algebra, reversion and Clifford conjugation; the involution of the base and the induced dagger $x^\dagger=\sigma(\alpha(x^r))$; the Hermitian forms on the algebra and the blade form; the Hermitian sandwich $xyx^\dagger$, its domain and the unitary slice on which it is the inner conjugation; the unitary and compact geometry. -->
+
+### - * Theory, Two-Sided Operator with Hermitian Adjoint
 
 ### <a href="articles_maths/the-blade-form-and-the-hilbert-structure-with-hermitian-adjoint.html">The Blade Form and the Hilbert Structure with Hermitian Adjoint</a>
 <!-- the blade basis and the scalar forms it defines; the trace form $\mathrm{Sc}(x^{\dagger}y)$ and the Hilbert structure on the algebra; the invariance of the forms under the anti-involutions; the adjoints of the left and the right multiplication for the dagger form and for the reversion form, and the parity sign that separates them. -->
@@ -976,7 +1004,7 @@
 ### <a href="articles_maths/completely-positive-maps-of-a-clifford-algebra-with-hermitian-adjoint.html">Completely Positive Maps of a Clifford Algebra with Hermitian Adjoint</a>
 <!-- the Clifford algebra with a positive involution as a finite-dimensional $C^{*}$-algebra; Choi's theorem, the Kraus form of a completely positive map and the innerness of the automorphisms of a full matrix algebra, read in the Clifford language. -->
 
-### - Theory, One-Sided Operator with Hermitian Adjoint
+### - * Theory, One-Sided Operator with Hermitian Adjoint
 
 ### <a href="articles_maths/one-sided-operators-on-a-clifford-algebra-with-hermitian-adjoint.html">One-Sided Operators on a Clifford Algebra with Hermitian Adjoint</a>
 <!-- the left and right multiplications and their graded and anti-involution variants; the composition laws, the commutation and the two-sided operator as their product; the adjoint $L_a^{*}=L_{a^{\dagger}}$ and $R_b^{*}=R_{b^{\dagger}}$ with respect to $\mathrm{Sc}(x^{\dagger}y)$, and the self-adjoint, skew and unitary criteria; the double centraliser, the images as ideals and the annihilators as kernels. -->
@@ -1002,7 +1030,7 @@
 ### <a href="articles_maths/infinite-dimensional-hermitian-operators-and-car-with-hermitian-adjoint.html">Infinite-Dimensional Hermitian Operators and CAR with Hermitian Adjoint</a>
 <!-- the Fock space and the CAR algebra with the dagger; the CAR relations, the number operator, the vacuum and the quasi-free states with their forms $0\leq T\leq1$; the Bogoliubov transformations and the Shale–Stinespring implementability condition; the unboundedness of the number operator and of the one-particle Hamiltonian, and the replacement of the trace by the states. -->
 
-### - Theory, Two-Sided Operator with Signed Hermitian Adjoint
+### - * Theory, Two-Sided Operator with Signed Hermitian Adjoint
 
 ### <a href="articles_maths/two-sided-operators-on-a-clifford-algebra-with-signed-hermitian-adjoint.html">Two-Sided Operators on a Clifford Algebra with Signed Hermitian Adjoint</a>
 <!-- the two-sided operator $\Theta^{\alpha}_x(y)=\alpha(x)yx^{\dagger}$, the signed Hermitian member whose left factor carries the grade involution and whose right factor carries the dagger; the parity sign $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$ with $\varepsilon_x=(-1)^k$, so that it is the Hermitian sandwich on the even part and its negative on the odd part; bijectivity, the composition law and the parameter rule $\Theta^{\alpha}_{ax}=a\sigma(a)\Theta^{\alpha}_x$; the action on the Clifford group, $\Theta^{\alpha}_x=\varepsilon_x\sigma(N(x))\,x(\ )\sigma(x)^{-1}$, an isometry exactly when $\sigma(N(x))^2=1$ and otherwise a similarity of ratio $\sigma(N(x))^2$; the kernel of the invertible elements with central dagger, $F^{\times}\cap U$ on the slice against the kernel $F^{\times}$ of the signed inner conjugation; the reflection $\Theta^{\alpha}_u=-q(u)\rho_u$, which is $\rho_u$ exactly on the slice; the slice reduction $\Theta^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$ for $x^{\dagger}=x^{-1}$; the biquaternion dictionary $\tilde{Q}x\tilde{Q}^{\dagger}$ and the Lorentz group. -->
@@ -1019,7 +1047,7 @@
 ### <a href="articles_maths/reflection-groups-and-clifford-algebras-with-signed-hermitian-adjoint.html">Reflection Groups and Clifford Algebras with Signed Hermitian Adjoint</a>
 <!-- the reflection of a root as a signed Hermitian sandwich: $\Theta^{\alpha}_u=-q(u)\rho_u$, so the reflection is realised exactly on the unitary slice, by the slice-normalised root $q(u_\alpha)=-1$; the Hermitian Clifford lift $\Gamma_\Phi=\langle u_\alpha\rangle\subseteq U\cap\Gamma_{\dagger}$; its finiteness, the twofold cover $\Gamma_\Phi\to W_\Phi$, the orders $|\Gamma_\Phi|=2|W_\Phi|$ and $|\Gamma_\Phi^0|=|W_\Phi|$, and the even part covering the rotation subgroup; the cases $A_1$, $A_2$ and $A_3$, the Hurwitz units and the $24$-cell. -->
 
-### - Theory, One-Sided Operator with Signed Hermitian Adjoint
+### - * Theory, One-Sided Operator with Signed Hermitian Adjoint
 
 ### <a href="articles_maths/one-sided-operators-on-a-clifford-algebra-with-signed-hermitian-adjoint.html">One-Sided Operators on a Clifford Algebra with Signed Hermitian Adjoint</a>
 <!-- the signed left multiplication $\Lambda^{\alpha}_x(y)=\alpha(x)y$ and the dagger right multiplication $R_{x^{\dagger}}(y)=yx^{\dagger}$ as the two one-sided factors of the signed Hermitian sandwich; $\Lambda^{\alpha}_x=\varepsilon_xL_x=\alpha L_x\alpha$, the value $\alpha(x)$ at the unit and the parity; the composition laws, the commutation, and the adjoints $(\Lambda^{\alpha}_x)^{*}=\Lambda^{\alpha}_{x^{\dagger}}$ and $(R_{x^{\dagger}})^{*}=R_x$ for the form $\mathrm{Sc}(x^{\dagger}y)$; the split of linearity, the left factor linear and the right factor $\sigma$-semilinear in the parameter, giving $\Theta^{\alpha}_{ax}=a\sigma(a)\Theta^{\alpha}_x$; the reflection $\rho_u$ against $-q(u)\rho_u$; the kernels and the images, which see the involution but not the sign. -->
@@ -1087,6 +1115,8 @@
 ###<a href="articles_maths/degree-theory-and-the-brouwer-fixed-point-theorem.html">Degree Theory and the Brouwer Fixed Point Theorem</a>
 <!-- the degree of a map between spheres; the Brouwer fixed point theorem; the Jordan–Brouwer separation theorem; the hairy ball theorem; the Lefschetz fixed point theorem. -->
 
+### - * Theory
+
 ## Sheaves and Cohomology
 
 ### - Theory
@@ -1106,6 +1136,8 @@
 ###<a href="articles_maths/sheaves-in-algebraic-geometry.html">Sheaves in Algebraic Geometry</a>
 <!-- the structure sheaf of a scheme; the sheaf of Kähler differentials $\Omega^1_{X/k}$ and the algebraic de Rham complex it generates; the canonical sheaf $\omega_X$ and Serre duality. -->
 
+### - * Theory
+
 ## Algebraic Geometry
 
 ### - Theory
@@ -1124,6 +1156,8 @@
 
 ###<a href="articles_maths/stacks.html">Stacks</a>
 <!-- algebraic stacks and their moduli; the relation to the descent theory of Part I and to the moduli spaces of this part. -->
+
+### - * Theory
 
 ## Geometric Topology
 
@@ -1158,6 +1192,8 @@
 
 ## PART III : ANALYSIS
 
+### - * Theory
+
 ## Foundations of Analysis
 
 ### - Theory
@@ -1185,6 +1221,8 @@
 
 ###<a href="articles_maths/potential-theory.html">Potential Theory</a>
 <!-- harmonic functions and the Dirichlet problem; potentials and capacity. -->
+
+### - * Theory
 
 ## Analysis on Groups
 
@@ -1228,6 +1266,8 @@
 
 ###<a href="articles_maths/the-langlands-program.html">The Langlands Program</a>
 <!-- the Langlands program and its conjectures; the relation to automorphic forms and to the Galois representations of Part I. -->
+
+### - * Theory
 
 ## Analysis on Rings and Fields
 
@@ -1278,6 +1318,8 @@
 ###<a href="articles_maths/modular-forms.html">Modular Forms</a>
 <!-- modular forms and their properties; the modular group and its congruence subgroups; the relation to the elliptic curves of Part I and to the automorphic forms of this part. -->
 
+### - * Theory
+
 ## Analysis on Linear Spaces
 
 ### - Theory
@@ -1327,6 +1369,8 @@
 ### <a href="articles_maths/symmetric-tensors-and-spherical-harmonics.html">Symmetric Tensors and Spherical Harmonics</a>
 <!-- symmetric tensors and the symmetric powers; harmonic polynomials and the Laplacian; spherical harmonics as the harmonic polynomials restricted to the sphere; the decomposition of the polynomial algebra into harmonic layers and the dimensions of the layers. -->
 
+### - * Theory
+
 ## Analysis on Linear Algebras
 
 ### - Theory
@@ -1370,12 +1414,16 @@
 ###<a href="articles_maths/cyclic-cohomology.html">Cyclic Cohomology</a>
 <!-- cyclic cohomology as the dual of cyclic homology; the pairing with K-theory and the Chern character in its cyclic form; the relation to the cyclic homology of Part I and to the K-theory of Part II and the index theory of Part IV. -->
 
+### - * Theory
+
 ## Convexity and Order
 
 ### - Theory
 
 ### <a href="articles_maths/jordan-algebras-and-the-positive-cone.html">Jordan Algebras and the Positive Cone</a>
 <!-- the positive cone of a formally real Jordan algebra and the order it defines; the spectral resolution and the functional calculus; the order unit and the order-unit norm; the cone of a matrix algebra and the second-order cone of a spin factor; the JB-algebra axioms and the Jordan–Banach classification; symmetric cones, homogeneity and self-duality, and the structure group, with the Albert cone as the exceptional case. -->
+
+### - * Theory
 
 ## Smooth Manifolds and Differential Topology
 
@@ -1397,6 +1445,8 @@
 
 ###<a href="articles_maths/differential-topology.html">Differential Topology</a>
 <!-- transversality and Sard's theorem; degree theory; cobordism in outline; the relation to the algebraic topology of Part II. -->
+
+### - * Theory
 
 ## Differential Equations
 
@@ -1462,6 +1512,8 @@
 ###<a href="articles_maths/stochastic-partial-differential-equations.html">Stochastic Partial Differential Equations</a>
 <!-- stochastic partial differential equations; the relation to the stochastic differential equations of this part and to the partial differential equations. -->
 
+### - * Theory
+
 ## Lie Groups
 
 ### - Theory
@@ -1502,6 +1554,8 @@
 ###<a href="articles_maths/arithmetic-groups.html">Arithmetic Groups</a>
 <!-- arithmetic groups and their properties; the relation to lattices in Lie groups and to the algebraic number theory of Part I. -->
 
+### - * Theory
+
 ## Probability and Ergodic Theory
 
 ### - Theory
@@ -1539,6 +1593,8 @@
 ###<a href="articles_maths/random-walks-on-groups.html">Random Walks on Groups</a>
 <!-- random walks on groups and their properties; recurrence and transience; the relation to the geometric group theory of Part II and to the measure-theoretic probability of this part. -->
 
+### - * Theory
+
 ## Dynamical Systems
 
 ### - Theory
@@ -1569,6 +1625,8 @@
 
 ## PART IV : GEOMETRY
 
+### - * Theory
+
 ## Foundations of Geometry
 
 ### - Theory
@@ -1590,6 +1648,8 @@
 
 ###<a href="articles_maths/gromov-hausdorff-convergence.html">Gromov–Hausdorff Convergence</a>
 <!-- Gromov–Hausdorff convergence and its properties; the relation to the metric geometry and to the Riemannian geometry of this part. -->
+
+### - * Theory
 
 ## Geometry on Groups
 
@@ -1613,6 +1673,8 @@
 ###<a href="articles_maths/symmetry-point-and-crystallographic-groups.html">Symmetry, Point and Crystallographic Groups</a>
 <!-- the symmetry group of a figure in Euclidean space as a subgroup of the isometry group; the orthogonal group and the reflections and rotations it contains, with the distance and the measure these require; the finite point groups and their classification in two and three dimensions; the polyhedral and dihedral families and their realisation inside $O(3)$; the discrete and crystallographic groups of Euclidean space, their lattices and the Bieberbach theorems; the classical groups as the continuous families of symmetry, with forward references to the articles on $O$, $U$ and $Sp$. -->
 
+### - * Theory
+
 ## Geometry on Rings and Fields
 
 ### - Theory
@@ -1634,6 +1696,8 @@
 
 ###<a href="articles_maths/mobius-and-lie-sphere-geometry.html">Möbius and Lie Sphere Geometry</a>
 <!-- Möbius geometry and its properties; the relation to the conformal geometry and to the Lie sphere geometry of this part; the Lie sphere geometry and its relation to the Möbius geometry. -->
+
+### - * Theory
 
 ## Geometry on Linear Spaces
 
@@ -1675,6 +1739,8 @@
 ###<a href="articles_maths/calabi-yau-manifolds.html">Calabi–Yau Manifolds</a>
 <!-- Calabi–Yau manifolds and their properties; the relation to the Kähler geometry of this part. -->
 
+### - * Theory
+
 ## Geometry on Linear Algebras
 
 ### - Theory
@@ -1706,6 +1772,8 @@
 ### <a href="articles_maths/curves-and-surfaces-in-the-biquaternion-moving-frame.html">Curves and Surfaces in the Biquaternion Moving Frame</a>
 <!-- the moving frame as one rotor $r$ of the real quaternion subspace of $\mathbb{B}$ with $v_k=r\gamma_kr^{\dagger}$; the affine connection one-form $\mathrm d\iota=2r^{\dagger}\mathrm dr=\iota_1e_1+\iota_2e_2+\iota_3e_3$ and the frame equation $\mathrm dv_k=r(\mathrm Dv_k)r^{\dagger}$ with $\mathrm Dv_k=\tfrac12(\mathrm d\iota\gamma_k-\gamma_k\mathrm d\iota)$; the Frenet frame as the frame with $\mathrm dx=\mathrm ds\,v_1$ and $\iota_2=0$, the Frenet equations $\mathrm d\iota_F=\tau\mathrm ds\,e_1+\rho\mathrm ds\,e_3$ and the invariants $\rho$ and $\tau$ read from $\dot x\wedge\ddot x$ and from the trivector, with the helix worked; the coframe and the two fundamental forms of a surface, $\Pi=-\mathrm Dv_3\cdot\mathrm dx=L_{11}\omega_1^2+2L_{12}\omega_1\omega_2+L_{22}\omega_2^2$, the Gaussian and mean curvatures $K=L_{11}L_{22}-L_{12}^2$ and $H=\tfrac12(L_{11}+L_{22})$, the theorema egregium $K=(a_1b_2-a_2b_1)/(A_1B_2-A_2B_1)$; the Darboux frame with the relative torsion, the normal curvature and the geodesic curvature; the integrability of the frame, the structure equation $\partial_v\iota_1-\partial_u\iota_2=\iota_1\wedge\iota_2$ and the symmetry $L_{12}=L_{21}$ as the Gauss and Codazzi–Mainardi equations; the curvature lines, the asymptotic lines and the geodesics, with the sphere worked; the classical local theory in three dimensions, whose Riemannian generalisation is *Curvature and Geodesics* and whose exterior and contraction algebra is Part II. -->
 
+### - * Theory
+
 ## Synthesis of Geometry and Analysis
 
 ### - Theory
@@ -1732,6 +1800,8 @@
 <!-- a spectral triple $(A,H,D)$ and its axioms; the operator $D$ as the metric datum and the distance formula it defines; the real structure and the KO-dimension; the commutative case, where a spin manifold is recovered from its algebra of functions; the local index formula; the spectral dimension and the heat kernel asymptotics; the finite-dimensional examples. -->
 
 ## PART V : CATALOGUES
+
+### - * Theory
 
 ## Catalogue of Algebra
 

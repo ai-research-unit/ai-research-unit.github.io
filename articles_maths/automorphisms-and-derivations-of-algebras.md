@@ -305,7 +305,7 @@ The data of an $R$-algebra $A$ are the module structure and the product. An auto
 
 **Example.** On $\mathbb{B} \cong M_2(\mathbb{C})$ the invariant $\sum_\mu Q_\mu^2$ of the coefficients — the determinant of the corresponding matrix, an algebraic function of the coordinates — is carried along by **every** inner automorphism, conjugation by a matrix leaving the determinant unchanged; the complex conjugation $\sigma(\tilde{Q}) = \tilde{Q}^{*}$ of the coefficients moves it and is not inner. Whether one of these quantities survives is a property of the quantity and not of the automorphism.
 
-The group of transformations preserving a length or an angle is therefore a different object, generally not contained in $\operatorname{Aut}_R(A)$. Such structure-preserving maps belong to the theory of forms and Clifford algebras, and are treated in the category *Clifford Algebras and Operators*; the algebra automorphism group is the layer below them.
+The group of transformations preserving a length or an angle is therefore a different object, generally not contained in $\operatorname{Aut}_R(A)$. Such structure-preserving maps belong to the theory of forms and Clifford algebras, and are treated in the category *Topology on Linear Algebras with a degree-2 form*; the algebra automorphism group is the layer below them.
 
 ## Summary
 
